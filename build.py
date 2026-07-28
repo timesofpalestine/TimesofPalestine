@@ -669,10 +669,59 @@ def diversify(items):
         out.append(pick)
     return out
 
+# ---------- original TOP journalism ----------
+# Drop a text file into originals/ (GitHub → Add file) and the next build publishes
+# it as a Times of Palestine original — our own byline, no external link-out.
+# File name: originals/<slug>.<lang>.txt  (e.g. menaa-workshop.en.txt)
+#   title: <headline>
+#   category: humans            (any section key; default news)
+#   date: 2026-07-28T12:00:00+00:00
+#   image: https://...          (optional)
+#   maxAgeHours: 336            (optional; how long the story stays on the site)
+#   ---
+#   Body paragraphs separated by blank lines.
+
+def load_originals(lang):
+    orig = ROOT / "originals"
+    if not orig.is_dir():
+        return []
+    now = datetime.now(timezone.utc)
+    items = []
+    for path in sorted(orig.glob(f"*.{lang}.txt")):
+        try:
+            head, _, body = path.read_text(encoding="utf-8").partition("\n---\n")
+            meta = {}
+            for line in head.splitlines():
+                k, _, v = line.partition(":")
+                if v:
+                    meta[k.strip().lower()] = v.strip()
+            body = body.strip()
+            date = parse_date(meta.get("date", "")) or now
+            hours_kept = float(meta.get("maxagehours", 336))
+            if not meta.get("title") or not body or (now - date).total_seconds() / 3600 > hours_kept:
+                continue
+            item = {
+                "title": truncate(meta["title"], 200),
+                "dek": truncate(re.sub(r"\s+", " ", body.split("\n\n")[0]), 260),
+                "link": f"original:{path.stem}", "date": date,
+                "source": EXCLUSIVE_SOURCE[lang], "source_id": "top-original",
+                "image": meta.get("image") or None, "categories": [], "lang": lang,
+                "exclusive": True, "brief": body,
+                "cat": meta.get("category", "news"), "max_age_hours": hours_kept,
+            }
+            item["score"] = score_item(item) + FOCUS_BOOST  # our own journalism leads
+            item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]
+            items.append(item)
+            print(f"  ✓ original: {item['title'][:60]}")
+        except Exception as e:
+            print(f"  ✗ original {path.name}: {type(e).__name__}")
+    return items
+
 def build_lang(lang):
     print(f"\nFetching {lang.upper()} feeds…")
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
         results = list(ex.map(lambda f: fetch_feed(f, lang), FEEDS[lang]))
+    results.append(load_originals(lang))
     items = sorted(dedupe([i for r in results for i in r]), key=lambda i: i["date"], reverse=True)
     caps = {f["id"]: f.get("cap", PER_SOURCE_CAP) for f in FEEDS[lang]}
     per_source, capped = {}, []
@@ -1161,10 +1210,13 @@ def render_page(lang, items, built_at):
     hero = heroes[0] if heroes else None
     hero_subs = take(by_score, lambda i: i["cat"] not in ("opinion", "social", "research"), 4)
     # Latest rail and breaking ticker: chronological, Palestine coverage first.
+    # The rail is an index — it lists stories without claiming them from sections.
     def palestine(i):
         return bool(PALESTINE_RX.search(f"{i['title']} {i['dek']}"))
-    latest = take(items, lambda i: i["cat"] != "social" and palestine(i), 10)
-    latest += take(items, lambda i: i["cat"] != "social", 10 - len(latest))
+    latest = [i for i in items if id(i) not in used and i["cat"] != "social" and palestine(i)][:10]
+    rail_ids = {id(i) for i in latest}
+    latest += [i for i in items if id(i) not in used and i["cat"] != "social"
+               and id(i) not in rail_ids][:10 - len(latest)]
     pal_news = [i for i in items if i["cat"] != "social" and palestine(i)]
     ticker_items = (pal_news or [i for i in items if i["cat"] != "social"])[:6]
 
