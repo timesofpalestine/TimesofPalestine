@@ -1,14 +1,15 @@
 name: Build & publish Times of Palestine
 on:
   schedule:
-    - cron: "9,39 * * * *"   # rebuild with fresh news every 30 minutes (offset — GitHub deprioritizes :00 crons)
-  workflow_dispatch: {}      # manual "run now" button
+    - cron: "9,39 * * * *"   # kept for the record; GitHub's scheduler has never fired for this repo
+  workflow_dispatch: {}      # manual "run now" button + the self-scheduling chain below
   push:
     branches: [main]
 permissions:
   contents: read
   pages: write
   id-token: write
+  actions: write             # lets the run dispatch its own successor
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -41,4 +42,18 @@ jobs:
           path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
-
+      # GitHub's cron never fires for this repo, so the workflow schedules itself:
+      # wait ~25 minutes, then dispatch the next run with the built-in GITHUB_TOKEN
+      # (workflow_dispatch is an explicit exception to Actions' recursion guard).
+      # A push cancels the sleeping run and its own dispatch continues the chain.
+      - name: Wait for the next slot
+        if: always()
+        run: sleep 1500
+      - name: Chain the next run
+        if: always()
+        run: |
+          curl -sS -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/build.yml/dispatches \
+            -d '{"ref":"main"}'
