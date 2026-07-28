@@ -2,7 +2,7 @@ name: Build & publish Times of Palestine
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # rebuild with fresh news every 30 minutes, forever
+    - cron: "7,37 * * * *"   # every 30 minutes, offset to dodge GitHub's deprioritized :00 slots
   workflow_dispatch: {}      # manual "run now" button
   push:
     branches: [main]
