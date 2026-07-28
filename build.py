@@ -36,6 +36,7 @@ GAZA = ZoneInfo("Asia/Gaza")
 # is the matching scannable code, copied into dist/ at build time.
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
 SIGNAL_USERNAME = "@TOP.972"
+BASE_URL = "https://timesofpalestine.com"
 
 # Feeds marked "exclusive": true in feeds.json are partner wires TOP has standing
 # permission to publish under its own label, with no external attribution or link-out.
@@ -149,12 +150,13 @@ DIASPORA_RX = re.compile(
     r"الشتات|الجالية الفلسطينية|جاليات|مغترب|فلسطينيو الخارج|فلسطينيي الخارج|"
     r"مخيمات لبنان|مخيمات الأردن|مخيمات سوريا|اللاجئون الفلسطينيون في", re.I)
 
-# Palestinian art & artists worldwide — culture as identity and testimony.
+# Palestinian culture & arts — identity and testimony, from tatreez to cinema.
 ARTS_RX = re.compile(
     r"artist|painter|sculpt|exhibit|gallery|mural|filmmaker|documentary|"
     r"\bpoet\b|poetry|novelist|musician|singer|\bdabke\b|embroidery|tatreez|"
+    r"heritage|museum|cuisine|cinema|\bfilm\b|culture|"
     r"فنان|فنانة|تشكيلي|معرض|لوحة|جدارية|مخرج(?!ات)|وثائقي|شاعر|شاعرة|روائي|"
-    r"موسيقي|مغني|مغنية|دبكة|تطريز", re.I)
+    r"موسيقي|مغني|مغنية|دبكة|تطريز|تراث|متحف|مطبخ|سينما|فيلم|ثقافة", re.I)
 
 # Real lives — the human stories behind the headlines: profiles, testimony, memory.
 REAL_LIVES_RX = re.compile(
@@ -258,10 +260,6 @@ CATEGORY_RULES = [
         r"econom|humanitarian aid|\baid\b|reconstruction|unemploy|trade|funding|donor|"
         r"shekel|bank|crossing|"
         r"اقتصاد|مساعدات|إنساني|إعمار|بطالة|تجارة|تمويل|مانح|معبر|بنك", re.I)),
-    ("culture", re.compile(
-        r"culture|\bart\b|artist|film|cinema|book|poet|music|heritage|museum|cuisine|"
-        r"sport|football|olympi|"
-        r"ثقافة|فنان|فيلم|سينما|شاعر|موسيقى|تراث|متحف|مطبخ|رياضة|كرة القدم", re.I)),
 ]
 
 CATEGORY_RX = dict(CATEGORY_RULES)  # section key → its own relevance test
@@ -376,8 +374,6 @@ def item_link(el):
             if href and (node.get("rel") in (None, "alternate")):
                 return href
     return ""
-JUNK_TITLE_RX = re.compile(r"#\d+\s*$")  # database-row titles like "Israel 3 July 2026 #1"
-
 def finish_item(item, feed):
     """Apply per-feed relevance filters, then categorize and score. Returns item or None."""
     if JUNK_TITLE_RX.search(item["title"]):
@@ -473,8 +469,8 @@ TG_DATE_RX = re.compile(r'<time datetime="([^"]+)"')
 TG_LINK_RX = re.compile(r'class="tgme_widget_message_date"[^>]*href="([^"]+)"')
 TG_PHOTO_RX = re.compile(r"tgme_widget_message_photo_wrap[^>]*background-image:url\('([^']+)'\)")
 # Channel posts carry emoji and hashtags; neither belongs in a news headline.
-EMOJI_RX = re.compile("[\\U0001F000-\\U0001FAFF\\U0001FB00-\\U0001FBFF"
-                      "\\u2600-\\u27BF\\u2B00-\\u2BFF\\u2190-\\u21FF\\u2300-\\u23FF\\uFE0F\\u200D]")
+EMOJI_RX = re.compile("[\U0001F000-\U0001FAFF\U0001FB00-\U0001FBFF"
+                      "☀-➿⬀-⯿←-⇿⌀-⏿️‍]")
 
 def fetch_telegram(feed, lang, now, max_age):
     """Parse a public Telegram channel's t.me/s/<channel> preview page (no API needed)."""
@@ -521,13 +517,13 @@ def fetch_feed(feed, lang):
     except Exception as e:
         print(f"  ✗ {feed['name']}: {type(e).__name__}: {e}")
         return []
+
 OG_IMAGE_RXES = [
     re.compile(r'<meta[^>]+property=["\']og:image(?::url)?["\'][^>]+content=["\']([^"\']+)', re.I),
     re.compile(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image(?::url)?["\']', re.I),
     re.compile(r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)', re.I),
 ]
 EXTERNAL_LINK_RX = re.compile(r'href="(https?://(?!news\.google|accounts\.google|policies\.google)[^"]+)"')
-
 def fetch_og_image(url, hop=0):
     """Pull the article's own social-preview image so no story card goes photoless."""
     try:
@@ -624,6 +620,65 @@ def write_brief(client, item):
         item["title"] = truncate(first[len("HEADLINE:"):].strip(" *"), 200)
         text = rest.strip()
     return text if len(text) > (120 if excerpt else 60) and not REFUSAL_RX.search(text) else None
+# ---------- field-report vetting ----------
+# Adapted from Palantir for the People (palantirforthepeople.com, open source) —
+# the founder's newsroom triage tool. We do not judge truth; we grade heuristics
+# that let the strongest field reports surface first and keep abuse off the site.
+VET_SYSTEM = (
+    "You are a field-report triage assistant for an independent newsroom. Your task is "
+    "NOT to determine whether the report is true or false. Grade these heuristics from "
+    "the text alone, without speculation, and never use writing quality as a signal:\n"
+    "consistency (positive): internally coherent, no contradictions or impossible claims.\n"
+    "references (positive): concrete checkable details — places, dates, names, numbers.\n"
+    "emotive_language (negative): inflammatory rhetoric, insults, or personal attacks "
+    "instead of factual description.\n"
+    "ideology (negative): agenda-driven persuasion rather than observation.\n"
+    'Return ONLY JSON: {"consistency":"high|medium|low","references":"high|medium|low",'
+    '"emotive_language":"high|medium|low","ideology":"high|medium|low"}'
+)
+
+def vet_field(client, item):
+    """Grade a field report; return a 0-4 strength, or None to keep it off the site."""
+    msg = client.messages.create(
+        model=BRIEFS_MODEL, max_tokens=200, system=VET_SYSTEM,
+        messages=[{"role": "user", "content": f"{item['title']}\n{item['dek']}".strip()}])
+    txt = "".join(b.text for b in msg.content if b.type == "text")
+    v = json.loads(re.search(r"\{.*\}", txt, re.S).group(0))
+    pts = {"high": 2, "medium": 1, "low": 0}
+    if v["emotive_language"] == "high" or (v["consistency"] == "low" and v["references"] == "low"):
+        return None
+    return max(0, pts[v["consistency"]] + pts[v["references"]]
+               - pts[v["emotive_language"]] - pts[v["ideology"]])
+
+def vet_field_reports(client, all_items, cache, now_ts):
+    """Vet every Field Reports item once; verdicts persist in the briefs cache."""
+    todo = []
+    for it in [i for i in all_items if i["cat"] == "social"]:
+        entry = cache.get(f"vet:{it['lang']}:{it['pid']}")
+        if entry is not None:
+            it["vet"] = entry["v"]
+        else:
+            todo.append(it)
+    def safe_vet(item):
+        try:
+            return vet_field(client, item)
+        except Exception:
+            return 1  # vetting must never block the site; default to neutral
+    if todo:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+            for it, verdict in zip(todo, ex.map(safe_vet, todo)):
+                it["vet"] = -1 if verdict is None else verdict
+                cache[f"vet:{it['lang']}:{it['pid']}"] = {"v": it["vet"], "ts": now_ts}
+    kept = rejected = 0
+    for it in [i for i in all_items if i["cat"] == "social"]:
+        if it.get("vet", 1) < 0:
+            it["vetoed"] = True
+            rejected += 1
+        else:
+            it["score"] += it.get("vet", 0) * 2  # strongest reports surface first
+            kept += 1
+    print(f"Field reports: {kept} vetted in, {rejected} held back.")
+
 def generate_briefs(all_items):
     """Attach an original TOP Newsdesk brief to each story, cached across builds."""
     if not os.environ.get("ANTHROPIC_API_KEY"):
@@ -650,7 +705,10 @@ def generate_briefs(all_items):
                 it["title"] = entry["title"]
     todo = [i for i in sorted(all_items, key=lambda x: (x.get("needs_translation", False), not x["dek"], x["score"]),
                               reverse=True) if "brief" not in i][:MAX_BRIEFS_PER_RUN]
-    if not todo:
+    field_new = [i for i in all_items if i["cat"] == "social"
+                 and f"vet:{i['lang']}:{i['pid']}" not in cache]
+    if not todo and not field_new:
+        vet_field_reports(None, all_items, cache, now_ts)  # apply cached verdicts
         print("\nBriefs: cache warm — nothing new to write.")
         return
 
@@ -678,13 +736,13 @@ def generate_briefs(all_items):
                     entry["title"] = it["title"]  # keep the English headline across builds
                 cache[f"{it['lang']}:{it['pid']}"] = entry
                 written += 1
+    vet_field_reports(client, all_items, cache, now_ts)
     cache = {k: v for k, v in cache.items() if now_ts - v.get("ts", now_ts) < 60 * 86400}
     try:
         BRIEFS_CACHE.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
     except Exception:
         pass
     print(f"\nBriefs: wrote {written} new of {len(todo)} attempted; cache holds {len(cache)}.")
-
 def dedupe(items):
     seen, out = set(), []
     for it in items:
@@ -784,12 +842,12 @@ STR = {
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
                      "humans": "Real Lives",
                      "diaspora": "The Diaspora",
-                     "arts": "Art & Artists",
+                     "arts": "Culture & Arts",
                      "accountability": "Transparency & Accountability",
                      "research": "Research & Investigations",
                      "bitcoin": "Bitcoin & Financial Freedom",
                      "politics": "Politics & Diplomacy", "economy": "Economy & Aid",
-                     "culture": "Culture & Society", "social": "Social Pulse",
+                     "social": "Field Reports",
                      "opinion": "Opinion & Analysis", "news": "More News"},
         "mission_title": "Editorial Charter",
         "mission": ("Times of Palestine is an independent digital newsroom. We gather and relay "
@@ -814,8 +872,9 @@ STR = {
         "tips_nav": "Send a Tip",
         "tips_kicker": "SECURE TIP LINE",
         "tips_title": "Know something the public should know?",
-        "tips_sub": ("Corruption, abuse of power, a story no one will touch — send it to our "
-                     "newsroom on Signal. Encrypted. Anonymous. Seen by no one else."),
+        "tips_sub": ("Corruption, abuse of power, a story no one will touch — or your own "
+                     "reporting from the field. Send it to our newsroom on Signal. "
+                     "Encrypted. Anonymous if you choose."),
         "tips_cta": "Message us on Signal",
         "tips_micro": "No name. No number. Just the truth.",
         "tips_scan": "or scan with your phone",
@@ -835,12 +894,12 @@ STR = {
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
                      "humans": "حكايات فلسطينية",
                      "diaspora": "الشتات الفلسطيني",
-                     "arts": "الفن والفنانون",
+                     "arts": "الثقافة والفنون",
                      "accountability": "شفافية ومساءلة",
                      "research": "أبحاث وتحقيقات",
                      "bitcoin": "بيتكوين والحرية المالية",
                      "politics": "سياسة ودبلوماسية", "economy": "اقتصاد وإغاثة",
-                     "culture": "ثقافة ومجتمع", "social": "نبض المنصات",
+                     "social": "من الميدان",
                      "opinion": "رأي وتحليل", "news": "المزيد من الأخبار"},
         "mission_title": "الميثاق التحريري",
         "mission": ("«تايمز أوف فلسطين» غرفة أخبار رقمية مستقلة. نجمع الأخبار وننقلها من داخل فلسطين "
@@ -862,8 +921,8 @@ STR = {
         "tips_nav": "أرسل معلومة",
         "tips_kicker": "خط المعلومات الآمن",
         "tips_title": "تعرف شيئاً يستحق أن يعرفه الناس؟",
-        "tips_sub": ("فساد، تجاوز للسلطة، قصة لا يجرؤ أحد على نشرها — أرسلها إلى غرفة الأخبار عبر "
-                     "«سيغنال». مشفّرة. مجهولة الهوية. لا يطّلع عليها أحد سوانا."),
+        "tips_sub": ("فساد، تجاوز للسلطة، قصة لا يجرؤ أحد على نشرها — أو تقريرك الميداني الخاص. "
+                     "أرسله إلى غرفة الأخبار عبر «سيغنال». مشفّر، ومجهول الهوية إن اخترت."),
         "tips_cta": "راسلنا على سيغنال",
         "tips_micro": "بلا اسم. بلا رقم. فقط الحقيقة.",
         "tips_scan": "أو امسح الرمز بهاتفك",
@@ -874,10 +933,10 @@ STR = {
 # Focus sections sit high on the page; each edition leads with its editorial priority.
 # Research (think tanks / OSINT) comes first: news before it becomes news.
 SECTION_ORDER = {
-    "en": ["research", "gaza", "westbank", "humans", "diaspora", "arts", "accountability",
-           "bitcoin", "politics", "economy", "culture", "social", "opinion", "news"],
-    "ar": ["research", "gaza", "westbank", "accountability", "humans", "diaspora", "arts",
-           "bitcoin", "politics", "economy", "culture", "social", "opinion", "news"],
+    "en": ["research", "gaza", "westbank", "humans", "social", "diaspora", "arts",
+           "accountability", "bitcoin", "politics", "economy", "opinion", "news"],
+    "ar": ["research", "gaza", "westbank", "social", "accountability", "humans", "diaspora",
+           "arts", "bitcoin", "politics", "economy", "opinion", "news"],
 }
 FOCUS_SECTIONS = {"research", "humans", "diaspora", "arts", "accountability", "bitcoin", "social"}  # shown even with one story
 
@@ -919,12 +978,12 @@ def time_ago(date, lang):
     if hours < 24:
         return f"{hours}h ago"
     return f"{round(hours / 24)}d ago"
-# ---------- CSS (shared by both languages; logical properties handle RTL) ----------
 
+# ---------- CSS (shared by both languages; logical properties handle RTL) ----------
 CSS = """
 :root{
-  --red:#CE1126; --green:#007A3D; --black:#0b0b0c; --ink:#17171c; --muted:#5d5d66;
-  --paper:#fdfcf9; --card:#ffffff; --line:#e5e2d9; --line-dark:#c9c5b8;
+  --red:#C8102E; --green:#00753A; --black:#0b0b0c; --ink:#141419; --muted:#595962;
+  --paper:#faf9f4; --card:#ffffff; --line:#e6e3da; --line-dark:#c9c5b8;
   --serif:"Source Serif 4",Georgia,serif; --sans:"Libre Franklin",-apple-system,Helvetica,Arial,sans-serif;
   --max:1180px;
 }
@@ -957,8 +1016,10 @@ img{max-width:100%;display:block}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes tick-rtl{from{transform:translateX(0)}to{transform:translateX(50%)}}
 
-.masthead{background:var(--card);border-bottom:1px solid var(--line);text-align:center;padding:1.5rem 0 1rem}
+.masthead{background:var(--card);border-bottom:1px solid var(--line);text-align:center;padding:1.5rem 0 1.1rem}
 .masthead .logotype{display:inline-flex;align-items:center}
+.masthead .wrap::after{content:"";display:block;margin:.85rem auto 0;width:112px;height:4px;background:linear-gradient(90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
+[dir=rtl] .masthead .wrap::after{background:linear-gradient(-90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
 .masthead h1{font-family:var(--serif);font-weight:900;line-height:1;letter-spacing:-.01em;color:var(--black);font-size:clamp(1.6rem,4vw,2.6rem);white-space:nowrap}
 .masthead h1 .l2{color:var(--red)}
 [lang=ar] .masthead h1{letter-spacing:0;font-weight:700;line-height:1.25}
@@ -1007,6 +1068,7 @@ nav.sections a.home{color:#ff8896}
 .latest h3 a:hover{color:var(--red)}
 .latest .s{font-size:.68rem;color:var(--muted);font-weight:600;text-transform:uppercase;margin-top:.2rem;display:block}
 [lang=ar] .latest .s{text-transform:none;font-size:.75rem}
+
 section.block{padding-block:1.6rem;border-top:1px solid var(--line-dark)}
 .sec-head{display:flex;align-items:baseline;gap:.8rem;margin-bottom:1.2rem}
 .sec-head::before{content:"";width:12px;height:12px;background:var(--green);align-self:center}
@@ -1015,7 +1077,9 @@ section.block{padding-block:1.6rem;border-top:1px solid var(--line-dark)}
 [lang=ar] .sec-head h2{font-weight:700}
 .sec-head .rule{flex:1;height:1px;background:var(--line-dark)}
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.4rem}
-.card img{aspect-ratio:16/10;object-fit:cover;width:100%;background:#e8e6df;margin-bottom:.7rem}
+.card img{aspect-ratio:16/10;object-fit:cover;width:100%;background:#e8e6df;margin-bottom:.7rem;transition:opacity .18s}
+.card:hover img,.rowcard:hover img{opacity:.9}
+.card:hover h3 a,.rowcard:hover h3 a{color:var(--red)}
 .card .ph{aspect-ratio:16/10;margin-bottom:.7rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
 .card .ph svg{width:44px;height:44px;opacity:.9}
 .card .chip{font-size:.64rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
@@ -1154,6 +1218,7 @@ LOCK_SVG = ('<svg class="lock" width="54" height="54" viewBox="0 0 24 24" fill="
 FONTS = ("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800"
          "&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;0,8..60,900;1,8..60,700"
          "&family=Cairo:wght@400;600;700;800;900&family=Amiri:ital,wght@0,700;1,400&display=swap")
+
 # ---------- components ----------
 
 def href(it, pfx):
@@ -1200,7 +1265,6 @@ def latest_item(it, lang, pfx):
             f'<span class="s">{esc(it["source"])}</span></li>')
 
 # ---------- page ----------
-
 def render_page(lang, items, built_at):
     t = STR[lang]
     order = SECTION_ORDER[lang]
@@ -1321,7 +1385,6 @@ def render_page(lang, items, built_at):
 
     hero_subs_html = "".join(sub_item(it, lang, P) for it in hero_subs)
     latest_html = "".join(latest_item(it, lang, P) for it in latest)
-
     tips_band = (
         f'<section class="tipband" id="tips"><div class="wrap">{LOCK_SVG}'
         f'<div class="txt"><p class="kick">{t["tips_kicker"]}</p>'
@@ -1333,14 +1396,28 @@ def render_page(lang, items, built_at):
         f'<span>{SIGNAL_USERNAME}</span></div></div>'
         f'<p class="safety">{t["tips_safety"]}</p>'
         f'</div></section>')
+
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="refresh" content="600">
+<meta name="theme-color" content="#0b0b0c">
 <title>{t['site_name']} — {t['title_suffix']}</title>
 <meta name="description" content="{esc(t['mission'][:155])}">
+<link rel="canonical" href="{BASE_URL}/{lang}/">
+<link rel="alternate" hreflang="en" href="{BASE_URL}/en/">
+<link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/">
+<link rel="alternate" hreflang="x-default" href="{BASE_URL}/en/">
+<link rel="alternate" type="application/rss+xml" title="{t['site_name']}" href="{BASE_URL}/{lang}/rss.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{t['site_name']}">
+<meta property="og:title" content="{t['site_name']} — {t['title_suffix']}">
+<meta property="og:description" content="{esc(t['mission'][:155])}">
+<meta property="og:url" content="{BASE_URL}/{lang}/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"{t['site_name']}","url":"{BASE_URL}/{lang}/","sameAs":["{BASE_URL}/en/","{BASE_URL}/ar/"]}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
 <style>{CSS}</style>
@@ -1392,7 +1469,6 @@ def render_page(lang, items, built_at):
 </div></footer>
 </body>
 </html>"""
-
 def render_story(it, lang, related, rail, built_at):
     """Internal story page: brief, breaking ticker, Keep Reading grid, Latest rail.
     Every page links onward to many others — readers always circulate."""
@@ -1403,7 +1479,7 @@ def render_story(it, lang, related, rail, built_at):
     if brief and REFUSAL_RX.search(brief):  # hard stop: refusal text must never render
         brief = None
     if brief:  # original TOP Newsdesk brief, written by Claude, cached per story
-        clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in brief.split(chr(10))]
+        clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in brief.split("\n")]
         paras = "".join(f'<p class="summary">{esc(p)}</p>' for p in clean if p)
         summary = f'<p class="byline">{t["byline"]}</p>{paras}'
     else:
@@ -1418,13 +1494,34 @@ def render_story(it, lang, related, rail, built_at):
                f'<a href="{esc(it["link"])}" target="_blank" rel="noopener">{t["read_original"]} {esc(it["source"])} →</a>'
                f'<p class="note">{t["summary_note"]}</p></div>')
     related_cards = "".join(card(r, lang, "") for r in related)
+    page_url = f"{BASE_URL}/{lang}/story/{it['pid']}.html"
+    desc = esc((it.get("brief") or it["dek"]).replace(chr(10), " ")[:155])
+    og_image = f'<meta property="og:image" content="{esc(it["image"])}">' if it["image"] else ""
+    jsonld = json.dumps({
+        "@context": "https://schema.org", "@type": "NewsArticle",
+        "headline": it["title"], "datePublished": it["date"].isoformat(),
+        "dateModified": built_at.isoformat(), "mainEntityOfPage": page_url,
+        "image": [it["image"]] if it["image"] else [],
+        "publisher": {"@type": "NewsMediaOrganization", "name": t["site_name"], "url": f"{BASE_URL}/{lang}/"},
+        "author": {"@type": "Organization", "name": it["source"]},
+    }, ensure_ascii=False)
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0c">
 <title>{esc(it['title'])} — {t['site_name']}</title>
-<meta name="description" content="{esc((it.get('brief') or it['dek']).replace(chr(10), ' ')[:155])}">
+<meta name="description" content="{desc}">
+<link rel="canonical" href="{page_url}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{t['site_name']}">
+<meta property="og:title" content="{esc(it['title'])}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{page_url}">
+{og_image}
+<meta name="twitter:card" content="{'summary_large_image' if it['image'] else 'summary'}">
+<script type="application/ld+json">{jsonld}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
 <style>{CSS}</style>
@@ -1464,6 +1561,42 @@ def render_story(it, lang, related, rail, built_at):
 </div></footer>
 </body>
 </html>"""
+def render_rss(lang, items, built_at):
+    """Standard RSS 2.0 feed so readers, apps and other sites can syndicate TOP."""
+    t = STR[lang]
+    fmt = "%a, %d %b %Y %H:%M:%S %z"
+    entries = []
+    for it in sorted([i for i in items if i["cat"] != "social"],
+                     key=lambda i: i["date"], reverse=True)[:30]:
+        u = f"{BASE_URL}/{lang}/story/{it['pid']}.html"
+        desc = (it.get("brief") or it["dek"]).split(chr(10))[0]
+        entries.append(f"<item><title>{esc(it['title'])}</title><link>{u}</link>"
+                       f"<guid>{u}</guid><pubDate>{it['date'].strftime(fmt)}</pubDate>"
+                       f"<description>{esc(desc[:400])}</description></item>")
+    return ('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
+            f"<title>{esc(t['site_name'])}</title><link>{BASE_URL}/{lang}/</link>"
+            f"<description>{esc(t['title_suffix'])}</description><language>{lang}</language>"
+            f"<lastBuildDate>{built_at.strftime(fmt)}</lastBuildDate>"
+            + "".join(entries) + "</channel></rss>")
+
+def render_sitemap(langs_items, built_at):
+    day = built_at.strftime("%Y-%m-%d")
+    urls = []
+    for lang, items in langs_items:
+        urls.append(f"<url><loc>{BASE_URL}/{lang}/</loc><lastmod>{day}</lastmod>"
+                    "<changefreq>hourly</changefreq><priority>1.0</priority></url>")
+        for it in items:
+            urls.append(f"<url><loc>{BASE_URL}/{lang}/story/{it['pid']}.html</loc>"
+                        f"<lastmod>{it['date'].strftime('%Y-%m-%d')}</lastmod></url>")
+    return ('<?xml version="1.0" encoding="UTF-8"?>'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+            + "".join(urls) + "</urlset>")
+
+ROBOTS_TXT = f"""User-agent: *
+Allow: /
+
+Sitemap: {BASE_URL}/sitemap.xml
+"""
 
 REDIRECT_HTML = """<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><title>Times of Palestine</title>
@@ -1490,7 +1623,7 @@ def main():
         if i.get("needs_translation") and ARABIC_CHARS_RX.search(i["dek"]):
             i["dek"] = ""
 
-    en_items = [i for i in en_items if i.get("brief") or i["dek"]]; ar_items = [i for i in ar_items if i.get("brief") or i["dek"]]; dist = ROOT / "dist"
+    en_items = [i for i in en_items if not i.get("vetoed") and (i.get("brief") or i["dek"])]; ar_items = [i for i in ar_items if not i.get("vetoed") and (i.get("brief") or i["dek"])]; dist = ROOT / "dist"
     for lang, items in (("en", en_items), ("ar", ar_items)):
         import shutil
         shutil.rmtree(dist / lang / "story", ignore_errors=True)  # drop stale story pages
@@ -1505,6 +1638,10 @@ def main():
             related = diversify((same_cat + sorted(others, key=lambda r: r["score"], reverse=True))[:8])[:8]
             (dist / lang / "story" / f"{it['pid']}.html").write_text(
                 render_story(it, lang, related, rail, built_at), encoding="utf-8")
+        (dist / lang / "rss.xml").write_text(render_rss(lang, items, built_at), encoding="utf-8")
+    (dist / "sitemap.xml").write_text(
+        render_sitemap((("en", en_items), ("ar", ar_items)), built_at), encoding="utf-8")
+    (dist / "robots.txt").write_text(ROBOTS_TXT, encoding="utf-8")
     (dist / "index.html").write_text(REDIRECT_HTML, encoding="utf-8")
     (dist / ".nojekyll").write_text("")
     cname = ROOT / "CNAME"  # optional custom domain (e.g. timesofpalestine.com)
