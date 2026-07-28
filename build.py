@@ -190,6 +190,9 @@ def score_item(item):
         s += RESEARCH_BOOST
     if item["image"]:
         s += IMAGE_BOOST
+    # Palestinian outlets also carry world news; it never outranks Palestine coverage.
+    if not PALESTINE_RX.search(hay) and item["cat"] not in ("research", "bitcoin"):
+        s -= 15
     return round(s, 2)
 
 CATEGORY_RULES = [
@@ -413,6 +416,9 @@ TG_TEXT_RX = re.compile(r'class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>
 TG_DATE_RX = re.compile(r'<time datetime="([^"]+)"')
 TG_LINK_RX = re.compile(r'class="tgme_widget_message_date"[^>]*href="([^"]+)"')
 TG_PHOTO_RX = re.compile(r"background-image:url\('([^']+)'\)")
+# Channel posts carry emoji and hashtags; neither belongs in a news headline.
+EMOJI_RX = re.compile("[\\U0001F000-\\U0001FAFF\\U0001FB00-\\U0001FBFF"
+                      "\\u2600-\\u27BF\\u2B00-\\u2BFF\\u2190-\\u21FF\\u2300-\\u23FF\\uFE0F\\u200D]")
 
 def fetch_telegram(feed, lang, now, max_age):
     """Parse a public Telegram channel's t.me/s/<channel> preview page (no API needed)."""
@@ -425,7 +431,9 @@ def fetch_telegram(feed, lang, now, max_age):
         raw = strip_html(m_text.group(1))
         m_art = re.search(r"https?://(?!t\.me/)\S+", raw)  # channels often append the article URL
         link = html.unescape(m_art.group(0).rstrip(".,)…")) if m_art else m_link.group(1)
-        text = re.sub(r"https?://\S+", "", raw).strip(" .|-—·")
+        text = re.sub(r"https?://\S+", "", raw)
+        text = EMOJI_RX.sub("", text).replace("#", "")
+        text = re.sub(r"\s+", " ", text).strip(" .|-—·")
         text = re.sub(r"^\s*وكالة معا\s*[|:ـ—-]+\s*", "", text)  # agency name prefixed to some posts
         if len(text) < 25:
             continue
@@ -500,22 +508,31 @@ def enrich_images(items, limit=35):
 
 P_TAG_RX = re.compile(r"<p[^>]*>(.*?)</p>", re.S | re.I)
 
+BOT_UA = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+
 def fetch_article_text(url, hop=0):
-    """Pull readable paragraph text from the article page to ground the brief in facts."""
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
-        with urllib.request.urlopen(req, timeout=12) as r:
-            page = r.read(400000).decode("utf-8", errors="replace")
-            final_url = r.url
-        paras = [strip_html(p) for p in P_TAG_RX.findall(page)]
-        text = " ".join(p for p in paras if len(p) > 60)
-        if len(text) < 200 and hop == 0 and "news.google.com" in final_url:
-            m = EXTERNAL_LINK_RX.search(page)
-            if m:
-                return fetch_article_text(html.unescape(m.group(1)), hop=1)
-        return text[:2800]
-    except Exception:
-        return ""
+    """Pull readable paragraph text from the article page to ground the brief in facts.
+    Tries a browser agent first, then a crawler agent — outlets gate one or the other."""
+    best = ""
+    for ua in (UA, BOT_UA):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "text/html"})
+            with urllib.request.urlopen(req, timeout=12) as r:
+                page = r.read(400000).decode("utf-8", errors="replace")
+                final_url = r.url
+            paras = [strip_html(p) for p in P_TAG_RX.findall(page)]
+            text = " ".join(p for p in paras if len(p) > 60)
+            if len(text) < 200 and hop == 0 and "news.google.com" in final_url:
+                m = EXTERNAL_LINK_RX.search(page)
+                if m:
+                    text = fetch_article_text(html.unescape(m.group(1)), hop=1)
+            if len(text) > len(best):
+                best = text
+            if len(best) >= 200:
+                break
+        except Exception:
+            continue
+    return best[:2800]
 
 # A brief must never talk about itself or its sources' availability. Any output that
 # does (a model refusal / meta-commentary) is rejected and scrubbed from the cache.
@@ -1096,6 +1113,7 @@ def render_page(lang, items, built_at):
     def hero_ok(i, max_age=HERO_MAX_AGE_H):
         return (bool(i["image"]) and len(i["title"]) > 30
                 and i["cat"] not in ("social", "research", "opinion", "culture")
+                and PALESTINE_RX.search(f"{i['title']} {i['dek']}")  # the top story IS Palestine
                 and not REVIEWISH_RX.search(i["title"])
                 and (now - i["date"]).total_seconds() / 3600 <= max_age)
 
@@ -1108,11 +1126,18 @@ def render_page(lang, items, built_at):
     hero_pool = sorted(items, key=hero_rank, reverse=True)
     heroes = (take(hero_pool, hero_ok, 1)
               or take(hero_pool, lambda i: hero_ok(i, max_age=MAX_AGE_HOURS), 1)
+              or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
+                      and PALESTINE_RX.search(f"{i['title']} {i['dek']}"), 1)
               or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research"), 1))
     hero = heroes[0] if heroes else None
     hero_subs = take(by_score, lambda i: i["cat"] not in ("opinion", "social", "research"), 4)
-    latest = take(items, lambda i: i["cat"] != "social", 10)  # rail stays pure newsroom headlines
-    ticker_items = [i for i in items if i["cat"] != "social"][:6]
+    # Latest rail and breaking ticker: chronological, Palestine coverage first.
+    def palestine(i):
+        return bool(PALESTINE_RX.search(f"{i['title']} {i['dek']}"))
+    latest = take(items, lambda i: i["cat"] != "social" and palestine(i), 10)
+    latest += take(items, lambda i: i["cat"] != "social", 10 - len(latest))
+    pal_news = [i for i in items if i["cat"] != "social" and palestine(i)]
+    ticker_items = (pal_news or [i for i in items if i["cat"] != "social"])[:6]
 
     sections = {k: diversify(take(by_score, lambda i, k=k: i["cat"] == k, 8)) for k in order}
     sections["news"] += take(by_score, lambda i: True, max(0, 8 - len(sections["news"])))
@@ -1247,17 +1272,24 @@ def render_page(lang, items, built_at):
 </body>
 </html>"""
 
-def render_story(it, lang, related, built_at):
-    """Internal story page: summary + credit link out + Keep Reading grid. Readers circulate."""
+def render_story(it, lang, related, rail, built_at):
+    """Internal story page: brief, breaking ticker, Keep Reading grid, Latest rail.
+    Every page links onward to many others — readers always circulate."""
     t = STR[lang]
     credit = "" if it.get("exclusive") else f'<p class="photocredit">{t["photo_via"]} {esc(it["source"])}</p>'
     lede = (f'<img class="lede" src="{esc(it["image"])}" alt="">{credit}') if it["image"] else ""
-    if it.get("brief"):  # original TOP Newsdesk brief, written by Claude, cached per story
-        clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in it["brief"].split(chr(10))]
+    brief = it.get("brief")
+    if brief and REFUSAL_RX.search(brief):  # hard stop: refusal text must never render
+        brief = None
+    if brief:  # original TOP Newsdesk brief, written by Claude, cached per story
+        clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in brief.split(chr(10))]
         paras = "".join(f'<p class="summary">{esc(p)}</p>' for p in clean if p)
         summary = f'<p class="byline">{t["byline"]}</p>{paras}'
     else:
         summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""
+    rail_items = [r for r in rail if r is not it]
+    ticker_track = "".join(f'<a href="{href(r, "")}">{esc(r["title"])}</a>' for r in rail_items[:6])
+    latest_html = "".join(latest_item(r, lang, "") for r in rail_items[:10])
     if it.get("exclusive"):  # our own wire — no external credit or link-out
         cta = ""
     else:
@@ -1278,6 +1310,7 @@ def render_story(it, lang, related, built_at):
 </head>
 <body>
 <div class="backbar"><a href="../">{t['back_home']}</a></div>
+<div class="ticker"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="../"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
@@ -1294,6 +1327,10 @@ def render_story(it, lang, related, built_at):
   <section class="keep"><div class="wrap">
     <div class="sec-head focus"><h2>{t['keep_reading']}</h2><span class="rule"></span></div>
     <div class="grid">{related_cards}</div>
+  </div></section>
+  <section class="keep"><div class="wrap latest">
+    <h2>{t['latest']}</h2>
+    <ol>{latest_html}</ol>
   </div></section>
 </main>
 
@@ -1338,12 +1375,15 @@ def main():
         shutil.rmtree(dist / lang / "story", ignore_errors=True)  # drop stale story pages
         (dist / lang / "story").mkdir(parents=True, exist_ok=True)
         (dist / lang / "index.html").write_text(render_page(lang, items, built_at), encoding="utf-8")
+        news = [r for r in items if r["cat"] != "social"]
+        rail = ([r for r in news if PALESTINE_RX.search(f"{r['title']} {r['dek']}")] +
+                [r for r in news if not PALESTINE_RX.search(f"{r['title']} {r['dek']}")])[:11]
         for it in items:
             same_cat = [r for r in items if r is not it and r["cat"] == it["cat"]]
             others = [r for r in items if r is not it and r["cat"] != it["cat"]]
             related = diversify((same_cat + sorted(others, key=lambda r: r["score"], reverse=True))[:8])[:8]
             (dist / lang / "story" / f"{it['pid']}.html").write_text(
-                render_story(it, lang, related, built_at), encoding="utf-8")
+                render_story(it, lang, related, rail, built_at), encoding="utf-8")
     (dist / "index.html").write_text(REDIRECT_HTML, encoding="utf-8")
     (dist / ".nojekyll").write_text("")
     cname = ROOT / "CNAME"  # optional custom domain (e.g. timesofpalestine.com)
