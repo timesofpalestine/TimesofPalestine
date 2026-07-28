@@ -15,7 +15,8 @@ from datetime import datetime, timezone
 # The bot token lives ONLY in the TELEGRAM_BOT_TOKEN repo secret — never here,
 # never in logs. Without the secret this feature silently does nothing.
 TELEGRAM_CHANNEL = "@timesofpalestin"
-TELEGRAM_MAX_PER_BUILD = 8  # stay far below Telegram's per-chat rate limits TELEGRAM_MAX_AGE_H = 3      # only post stories this fresh (bounds any cache loss)
+TELEGRAM_MAX_PER_BUILD = 8  # stay far below Telegram's per-chat rate limits
+TELEGRAM_MAX_AGE_H = 3      # only post stories this fresh (bounds any cache loss)
 
 # IndexNow (indexnow.org): instant URL submission to Bing/Yandex/Seznam/naver.
 # No account needed — the key is proven by hosting <key>.txt at the site root.
@@ -188,9 +189,9 @@ def ping_indexnow(langs_items, base_url):
 def post_telegram(dist, langs_items, base_url):
     """Post new stories to the TOP Telegram channel, once each, newest first.
 
-    Posted-story markers ride in briefs-cache.json (already persisted between
-    builds by the workflow cache). The very first run with a token seeds the
-    cache silently so the channel is not flooded with the whole backlog."""
+    Posted-story markers ride in briefs-cache.json, which the workflow caches
+    between builds. That cache is best-effort — a cancelled run never saves it —
+    so eligibility is also bounded by a recency window (see below)."""
     token = "".join(os.environ.get("TELEGRAM_BOT_TOKEN", "").split())
     if not token:
         return
@@ -200,15 +201,14 @@ def post_telegram(dist, langs_items, base_url):
     except Exception:
         cache = {}
     now_ts = datetime.now(timezone.utc).timestamp()
-    now = datetime.now(timezone.utc)     items = sorted((it for _, lang_items in langs_items for it in lang_items                     if (now - it["date"]).total_seconds() <= TELEGRAM_MAX_AGE_H * 3600),
+    # Only genuinely fresh stories are eligible. This bounds the blast radius:
+    # the posted-history cache can be lost (a cancelled run never saves it), and
+    # a recency window means the worst case is a few repeats, never the backlog.
+    now = datetime.now(timezone.utc)
+    items = sorted((it for _, lang_items in langs_items for it in lang_items
+                    if (now - it["date"]).total_seconds() <= TELEGRAM_MAX_AGE_H * 3600),
                    key=lambda i: i["date"], reverse=True)
     fresh = [i for i in items if f"tg:{i['lang']}:{i['pid']}" not in cache]
-    posted = 0
-        for it in fresh:
-            cache[f"tg:{it['lang']}:{it['pid']}"] = {"ts": now_ts}
-        cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
-        print(f"  → Telegram: first run — seeded {len(fresh)} stories, posting starts next build")
-        return
     posted = 0
     for it in fresh[:TELEGRAM_MAX_PER_BUILD]:
         text = f"{it['title']}\n\n{base_url}/{it['lang']}/story/{it['pid']}.html"
@@ -219,14 +219,15 @@ def post_telegram(dist, langs_items, base_url):
                 if r.status == 200:
                     cache[f"tg:{it['lang']}:{it['pid']}"] = {"ts": now_ts}
                     posted += 1
-        except Exception:
-            break  # rate limit or outage — try again next build
+        except Exception as e:
+            print(f"  → Telegram: send failed ({type(e).__name__}) — will retry next build")
+            break
         time.sleep(3)
     try:
         cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
     except Exception:
         pass
-    print(f"  → Telegram: posted {posted} new stories to {TELEGRAM_CHANNEL}")
+    print(f"  → Telegram: posted {posted} of {len(fresh)} eligible to {TELEGRAM_CHANNEL}")
 
 
 def write_extras(dist, langs_items, built_at, base_url):
