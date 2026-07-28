@@ -88,6 +88,12 @@ BOILERPLATE_RX = re.compile(
 
 def clean_dek(text):
     t = BOILERPLATE_RX.sub("", text)
+    # HRW-style photo captions: "Click to expand Image <caption> © 2026 X/AP Photo (City) – "
+    m = re.search(r"click to expand image.{0,400}?[–—]\s", t, flags=re.I | re.S)
+    if m:
+        t = t[:m.start()] + t[m.end():]
+    t = re.sub(r"click to expand image\s*", "", t, flags=re.I)
+    t = re.sub(r"©\s?\d{4}[^.]{0,90}?(photo|images|sipa|afp|reuters|getty|anadolu)\b\.?", "", t, flags=re.I)
     t = re.sub(r"https?://\S+", "", t)                  # bare links
     t = re.sub(r"(?:#[\w؀-ۿ]+\s*){2,}", "", t)  # hashtag runs
     t = re.sub(r"watch more here:?\s*", "", t, flags=re.I)
@@ -462,7 +468,7 @@ def fetch_og_image(url, hop=0):
         pass
     return None
 
-def enrich_images(items, limit=25):
+def enrich_images(items, limit=35):
     targets = [i for i in sorted(items, key=lambda x: x["score"], reverse=True)
                if not i["image"]][:limit]
     if not targets:
@@ -534,7 +540,12 @@ def generate_briefs(all_items):
         print("\nBriefs: cache warm — nothing new to write.")
         return
 
-    key = re.sub(r"\s+", "", os.environ["ANTHROPIC_API_KEY"]); print(f"Briefs: key length {len(key)}, format {'ok' if re.fullmatch(r'sk-ant-[A-Za-z0-9_-]+', key) else 'UNEXPECTED'}"); client = anthropic.Anthropic(api_key=key)
+    # Remove ALL whitespace (including pasted line-wraps) from the secret — a broken
+    # key corrupts the auth header and surfaces as APIConnectionError. The log line
+    # prints only length + format validity, never the key (build logs are public).
+    key = re.sub(r"\s+", "", os.environ["ANTHROPIC_API_KEY"])
+    print(f"Briefs: key length {len(key)}, format {'ok' if re.fullmatch(r'sk-ant-[A-Za-z0-9_-]+', key) else 'UNEXPECTED'}")
+    client = anthropic.Anthropic(api_key=key)
 
     def safe(item):
         try:
@@ -837,9 +848,10 @@ section.block{padding-block:1.6rem;border-top:1px solid var(--line-dark)}
 .sec-head h2{font-family:var(--serif);font-weight:900;font-size:1.45rem;color:var(--black)}
 [lang=ar] .sec-head h2{font-weight:700}
 .sec-head .rule{flex:1;height:1px;background:var(--line-dark)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.4rem}
-.card{max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.4rem}
 .card img{aspect-ratio:16/10;object-fit:cover;width:100%;background:#e8e6df;margin-bottom:.7rem}
+.card .ph{aspect-ratio:16/10;margin-bottom:.7rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
+.card .ph svg{width:44px;height:44px;opacity:.9}
 .card .chip{font-size:.64rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
 [lang=ar] .card .chip{letter-spacing:0;font-size:.72rem}
 .card h3{font-family:var(--serif);font-weight:700;font-size:1.02rem;line-height:1.3;margin-top:.3rem}
@@ -847,6 +859,21 @@ section.block{padding-block:1.6rem;border-top:1px solid var(--line-dark)}
 .card h3 a:hover{color:var(--red)}
 .card .t{font-size:.68rem;color:var(--muted);font-weight:600;margin-top:.4rem}
 [lang=ar] .card .t{font-size:.75rem}
+
+/* sparse sections (<4 stories): full-width horizontal rows — no half-empty grids */
+.rowlist{display:flex;flex-direction:column}
+.rowcard{display:flex;gap:1.3rem;align-items:flex-start;padding-block:1rem;border-bottom:1px solid var(--line)}
+.rowcard:last-child{border-bottom:none}
+.rowcard>a:first-child,.rowcard>.ph{flex-shrink:0}
+.rowcard img,.rowcard .ph{width:220px;aspect-ratio:16/10;object-fit:cover;background:#e8e6df;margin:0;display:flex;align-items:center;justify-content:center}
+.rowcard .ph{background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
+.rowcard .ph svg{width:40px;height:40px;opacity:.9}
+.rowcard h3{font-family:var(--serif);font-weight:700;font-size:1.15rem;line-height:1.3;margin-top:.25rem}
+[lang=ar] .rowcard h3{line-height:1.6}
+.rowcard h3 a:hover{color:var(--red)}
+.rowcard .chip{font-size:.64rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
+[lang=ar] .rowcard .chip{letter-spacing:0;font-size:.72rem}
+.rowcard .t{font-size:.68rem;color:var(--muted);font-weight:600;margin-top:.35rem}
 
 /* featured research report — the "news before it becomes news" card */
 .research-feat{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:0;background:var(--card);border:1px solid var(--line-dark);border-inline-start:5px solid var(--red);margin-bottom:1.6rem;box-shadow:0 2px 14px rgba(0,0,0,.05)}
@@ -935,12 +962,14 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .hero-zone{grid-template-columns:1fr}
   .hero{border-inline-end:none;padding-inline-end:0}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rowcard img,.rowcard .ph{width:150px}
   .op-grid{grid-template-columns:1fr}
   footer .cols{grid-template-columns:1fr}
 }
 @media(max-width:560px){
   .grid{grid-template-columns:1fr}
   .hero-sub{grid-template-columns:1fr}
+  .rowcard img,.rowcard .ph{width:110px}
   footer ul{columns:1}
 }
 """
@@ -969,14 +998,25 @@ def meta_line(it, lang):
     return (f'<p class="meta"><span class="src">{esc(it["source"])}</span>'
             f'<span class="t">{time_ago(it["date"], lang)}</span></p>')
 
+def card_media(it, pfx):
+    """Image if we have one; otherwise a branded flag panel — never an empty column."""
+    if it["image"]:
+        return f'<a href="{href(it, pfx)}"><img src="{esc(it["image"])}" alt="" loading="lazy"></a>'
+    return f'<a href="{href(it, pfx)}"><div class="ph">{FLAG_SVG}</div></a>'
+
 def card(it, lang, pfx):
     # Uniform card: headline, source, time. Summaries belong to the hero, the
     # featured report, and the story pages — mixed previews in a grid look broken.
-    img = f'<a href="{href(it, pfx)}"><img src="{esc(it["image"])}" alt="" loading="lazy"></a>' if it["image"] else ""
-    return (f'<article class="card">{img}'
+    return (f'<article class="card">{card_media(it, pfx)}'
             f'<span class="chip">{esc(it["source"])}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<p class="t">{time_ago(it["date"], lang)}</p></article>')
+
+def rowcard(it, lang, pfx):
+    return (f'<article class="rowcard">{card_media(it, pfx)}'
+            f'<div><span class="chip">{esc(it["source"])}</span>'
+            f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
+            f'<p class="t">{time_ago(it["date"], lang)}</p></div></article>')
 
 def op_card(it, lang, pfx):
     return (f'<article class="op-card"><span class="q">“</span>'
@@ -1024,8 +1064,15 @@ def render_page(lang, items, built_at):
                 and not REVIEWISH_RX.search(i["title"])
                 and (now - i["date"]).total_seconds() / 3600 <= max_age)
 
-    heroes = (take(by_score, hero_ok, 1)
-              or take(by_score, lambda i: hero_ok(i, max_age=MAX_AGE_HOURS), 1)
+    # Freshness-weighted hero ranking: a strong new story overtakes yesterday's
+    # boosted one, so the top of the page visibly rotates through the day.
+    def hero_rank(i):
+        age = (now - i["date"]).total_seconds() / 3600
+        return i["score"] + max(0.0, HERO_MAX_AGE_H - age) * 0.9
+
+    hero_pool = sorted(items, key=hero_rank, reverse=True)
+    heroes = (take(hero_pool, hero_ok, 1)
+              or take(hero_pool, lambda i: hero_ok(i, max_age=MAX_AGE_HOURS), 1)
               or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research"), 1))
     hero = heroes[0] if heroes else None
     hero_subs = take(by_score, lambda i: i["cat"] not in ("opinion", "social", "research"), 4)
@@ -1064,8 +1111,12 @@ def render_page(lang, items, built_at):
         featured = ""
         if k == "research":  # lead report gets the full featured-summary treatment
             featured, pool = research_featured(pool[0]), pool[1:]
-        cards = "".join(card(it, lang, P) for it in pool)
-        grid = f'<div class="grid">{cards}</div>' if pool else ""
+        if not pool:
+            grid = ""
+        elif len(pool) < 4:  # too few for a grid row — full-width rows, no dead space
+            grid = f'<div class="rowlist">{"".join(rowcard(it, lang, P) for it in pool)}</div>'
+        else:
+            grid = f'<div class="grid">{"".join(card(it, lang, P) for it in pool)}</div>'
         focus_cls = " focus" if k in FOCUS_SECTIONS else ""
         section_blocks += (f'<section class="block" id="{k}"><div class="wrap">'
                            f'<div class="sec-head{focus_cls}"><h2>{t["sections"][k]}</h2><span class="rule"></span></div>'
@@ -1169,8 +1220,7 @@ def render_story(it, lang, related, built_at):
             f'<p class="photocredit">{t["photo_via"]} {esc(it["source"])}</p>') if it["image"] else ""
     if it.get("brief"):  # original TOP Newsdesk brief, written by Claude, cached per story
         clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in it["brief"].split(chr(10))]
-        paras = "".join(f'<p class="summary">{esc(p)}</p>'
-                        for p in clean if p)  #("\n") if p.strip())
+        paras = "".join(f'<p class="summary">{esc(p)}</p>' for p in clean if p)
         summary = f'<p class="byline">{t["byline"]}</p>{paras}'
     else:
         summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""
