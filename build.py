@@ -184,7 +184,7 @@ RELEVANT_RX = re.compile(
 # freedom-money track: money that cannot be frozen, censored, or occupied.
 BITCOIN_RX = re.compile(
     r"bitcoin|\bbtc\b|satoshi|lightning network|\bsats\b|"
-    r"بيتكوين|بتكوين|البيتكوين|ساتوشي|شبكة البرق", re.I)
+    r"بيتكوين|بتكوين|البيتكوين|ساتوشي|شبكة البرق", re.I); BTC_SECTION_RX = re.compile(BITCOIN_RX.pattern + r"|correspondent bank|de-?risk|cash crisis|excess (?:cash|shekel)|shekel (?:surplus|crisis|glut|pile)|cash (?:surplus|glut|pile|transfer limit)|monetary authority|فائض (?:النقد|الشيكل|السيولة)|أزمة (?:النقد|السيولة|الكاش)|البنوك المراسلة|سلطة النقد", re.I)
 
 # For Bitcoin Magazine and the radar queries: keep the freedom/rights/adoption
 # stories, drop pure market and product noise.
@@ -220,7 +220,7 @@ def score_item(item):
         s += FOCUS_BOOST
     if ACCOUNTABILITY_RX.search(hay):
         s += FOCUS_BOOST
-    if BITCOIN_RX.search(hay):
+    if BTC_SECTION_RX.search(hay):
         s += FOCUS_BOOST
     if BREAKING_RX.search(hay):
         s += BREAKING_BOOST
@@ -238,10 +238,10 @@ def score_item(item):
 # the story of Palestine and Jerusalem, not a sidebar.
 CATEGORY_RULES = [
     ("accountability", ACCOUNTABILITY_RX),
-    ("bitcoin", BITCOIN_RX),
+    ("bitcoin", BTC_SECTION_RX),
     ("diaspora", DIASPORA_RX),
     ("arts", ARTS_RX),
-    ("humans", REAL_LIVES_RX),
+ 
     ("gaza", re.compile(
         r"gaza|rafah|khan younis|deir al[- ]balah|beit lahia|jabalia|"
         r"غزة|غزّة|رفح|خان يونس|دير البلح|جباليا|بيت لاهيا", re.I)),
@@ -845,7 +845,7 @@ STR = {
                      "arts": "Culture & Arts",
                      "accountability": "Transparency & Accountability",
                      "research": "Research & Investigations",
-                     "bitcoin": "Bitcoin & Financial Freedom",
+                     "bitcoin": "Financial Freedom",
                      "politics": "Politics & Diplomacy", "economy": "Economy & Aid",
                      "social": "Field Reports",
                      "opinion": "Opinion & Analysis", "news": "More News"},
@@ -897,7 +897,7 @@ STR = {
                      "arts": "الثقافة والفنون",
                      "accountability": "شفافية ومساءلة",
                      "research": "أبحاث وتحقيقات",
-                     "bitcoin": "بيتكوين والحرية المالية",
+                     "bitcoin": "الحرية المالية",
                      "politics": "سياسة ودبلوماسية", "economy": "اقتصاد وإغاثة",
                      "social": "من الميدان",
                      "opinion": "رأي وتحليل", "news": "المزيد من الأخبار"},
@@ -933,12 +933,12 @@ STR = {
 # Focus sections sit high on the page; each edition leads with its editorial priority.
 # Research (think tanks / OSINT) comes first: news before it becomes news.
 SECTION_ORDER = {
-    "en": ["research", "gaza", "westbank", "humans", "social", "diaspora", "arts",
-           "accountability", "bitcoin", "politics", "economy", "opinion", "news"],
-    "ar": ["research", "gaza", "westbank", "social", "accountability", "humans", "diaspora",
-           "arts", "bitcoin", "politics", "economy", "opinion", "news"],
+    "en": ["research", "gaza", "westbank", "bitcoin", "social", "diaspora", "arts",
+           "accountability", "politics", "economy", "opinion", "news"],
+    "ar": ["research", "gaza", "westbank", "social", "bitcoin", "accountability", "diaspora",
+           "arts", "politics", "economy", "opinion", "news"],
 }
-FOCUS_SECTIONS = {"research", "humans", "diaspora", "arts", "accountability", "bitcoin", "social"}  # shown even with one story
+FOCUS_SECTIONS = {"research", "diaspora", "arts", "accountability", "bitcoin", "social"}  # shown even with one story
 
 WEEKDAYS_AR = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
 MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",
@@ -1308,7 +1308,7 @@ def render_page(lang, items, built_at):
                       and PALESTINE_RX.search(f"{i['title']} {i['dek']}"), 1)
               or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research"), 1))
     hero = heroes[0] if heroes else None
-    hero_subs = take(by_score, lambda i: i["cat"] not in ("opinion", "social", "research"), 4)
+    hero_subs = take(by_score, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin"), 4)
     # Latest rail and breaking ticker: chronological, Palestine coverage first.
     # The rail is an index — it lists stories without claiming them from sections.
     def palestine(i):
