@@ -129,7 +129,7 @@ esc = lambda s: html.escape(s or "", quote=True)
 PALESTINE_RX = re.compile(
     r"palestin|gaza|west bank|jerusalem|bethlehem|ramallah|rafah|khan younis|jenin|nablus|hebron|"
     r"tulkarem|unrwa|al-aqsa|aqsa|intifada|nakba|settler|"
-    r"فلسطين|الفلسطيني|غزة|غزّة|الضفة|القدس|رام الله|رفح|خان يونس|جنين|نابلس|الخليل|"
+    r"فلسطين|الفلسطيني|غزة|غزّة|الضفة|القدس(?! العربي)|رام الله|رفح|خان يونس|جنين|نابلس|الخليل|"
     r"طولكرم|أونروا|الأونروا|الأقصى|الاحتلال|مستوطن|النكبة", re.I)
 
 # ---- editorial focus topics: these get ranking boosts and dedicated sections ----
@@ -177,7 +177,7 @@ ISRAEL_CONTEXT_RX = re.compile(r"israel|settler|idf|zionis|إسرائيل|مست
 RELEVANT_RX = re.compile(
     r"palestin|gaza|west bank|jerusalem|bethlehem|ramallah|rafah|khan younis|jenin|nablus|hebron|"
     r"tulkarem|unrwa|al-aqsa|aqsa|intifada|nakba|settler|israel|\bidf\b|zionis|netanyahu|hamas|"
-    r"فلسطين|الفلسطيني|غزة|غزّة|الضفة|القدس|رام الله|رفح|خان يونس|جنين|نابلس|الخليل|"
+    r"فلسطين|الفلسطيني|غزة|غزّة|الضفة|القدس(?! العربي)|رام الله|رفح|خان يونس|جنين|نابلس|الخليل|"
     r"طولكرم|أونروا|الأونروا|الأقصى|الاحتلال|مستوطن|النكبة|إسرائيل|نتنياهو|حماس", re.I)
 
 # Bitcoin & financial freedom — adoption in Palestine, the HRF/Gladstein/Dorsey
