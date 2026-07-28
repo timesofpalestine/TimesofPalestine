@@ -1169,8 +1169,8 @@ def render_story(it, lang, related, built_at):
             f'<p class="photocredit">{t["photo_via"]} {esc(it["source"])}</p>') if it["image"] else ""
     if it.get("brief"):  # original TOP Newsdesk brief, written by Claude, cached per story
         clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in it["brief"].split(chr(10))]
-")]; paras = "".join(f'<p class="summary">{esc(p)}</p>'
-                        for p in it["brief"].split("\n") if p.strip())
+        paras = "".join(f'<p class="summary">{esc(p)}</p>'
+                        for p in clean if p)  #("\n") if p.strip())
         summary = f'<p class="byline">{t["byline"]}</p>{paras}'
     else:
         summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""
