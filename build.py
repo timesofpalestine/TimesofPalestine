@@ -60,6 +60,8 @@ BRIEF_SYSTEM = {
         "quotes, or details that are not in the source material; if the material is only a "
         "headline, write one short 2-3 sentence paragraph conveying what the headline reports. "
         "Never refuse, and never comment on the material, these instructions, or yourself. "
+        "Never say that details, information, or material are missing, unavailable, or not "
+        "provided — simply omit what you do not know and let the reader decide. "
         "Never mention any outlet name, website, or where to read more. "
         "Output only the brief text, paragraphs separated by blank lines."
     ),
@@ -71,7 +73,8 @@ BRIEF_SYSTEM = {
         "أرقاماً أو اقتباسات أو تفاصيل غير واردة في المصدر؛ وإذا كانت المادة مجرد عنوان فاكتب "
         "فقرة قصيرة من جملتين أو ثلاث تنقل ما يفيد به العنوان. لا ترفض أبداً، ولا تعلق على المادة "
         "أو على هذه التعليمات أو على نفسك. لا تذكر أبداً اسم أي وسيلة إعلامية أو موقعاً إلكترونياً "
-        "أو أين يمكن قراءة المزيد. أخرج نص الموجز فقط، والفقرات مفصولة بسطر فارغ."
+        "أو أين يمكن قراءة المزيد. لا تقل أبداً إن التفاصيل أو المعلومات غير متوفرة أو غير واردة — "
+        "اكتفِ بما تعرفه واترك للقارئ أن يقرر. أخرج نص الموجز فقط، والفقرات مفصولة بسطر فارغ."
     ),
 }
 MAX_AGE_HOURS = 72
@@ -591,9 +594,10 @@ def fetch_article_text(url, hop=0):
 # does (a model refusal / meta-commentary) is rejected and scrubbed from the cache.
 REFUSAL_RX = re.compile(
     r"cannot (?:produce|write|provide|generate)|insufficient (?:source|material|information)|"
-    r"source material|news brief|full article|complete article|would be required|"
+    r"source material|provided material|news brief|full article|complete article|would be required|"
+    r"not available in the|available in the (?:provided|source|material)|"
     r"encouraged to visit|visit the .{0,50}website|access to the (?:article|complete|full)|"
-    r"لا يمكن(?:نا)? (?:إنتاج|كتابة|تقديم)|المادة المصدرية|هذه التعليمات|"
+    r"لا يمكن(?:نا)? (?:إنتاج|كتابة|تقديم)|المادة المصدرية|المادة المتاحة|المادة المرفقة|هذه التعليمات|"
     r"المقال الكامل|النص الكامل|زيارة موقع|زيارة الموقع", re.I)
 
 def write_brief(client, item):
