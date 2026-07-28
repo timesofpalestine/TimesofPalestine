@@ -1365,7 +1365,7 @@ def render_page(lang, items, built_at):
         focus_cls = " focus" if k in FOCUS_SECTIONS else ""
         section_blocks += (f'<section class="block" id="{k}"><div class="wrap">'
                            f'<div class="sec-head{focus_cls}"><h2>{t["sections"][k]}</h2><span class="rule"></span></div>'
-                           f'{featured}{grid}</div></section>')
+                           + (('<p style="margin:-.5rem 0 1.2rem;font-size:.9rem;color:var(--muted);max-width:75ch">' + ("تقارير من صحفيين مواطنين وشهود على الأرض. يمر كل تقرير بفرز آلي للمصداقية قبل النشر. " if lang == "ar" else "Dispatches from citizen journalists and witnesses on the ground. Every report passes an automated credibility screening before publication. ") + '<a href="#tips" style="color:var(--green);font-weight:700">' + ("أرسل تقريرك عبر خط «سيغنال» الآمن ←" if lang == "ar" else "Send yours via the secure Signal line →") + "</a></p>") if k == "social" else "") + f'{featured}{grid}</div></section>')
 
     opinion_block = ""
     if len(sections["opinion"]) >= 2:
