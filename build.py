@@ -169,7 +169,7 @@ ACCOUNTABILITY_RX = re.compile(
     r"فساد|الفساد|محسوبية|رشوة|رشاوى|اختلاس|نزاهة|مساءلة|شفافية|مكافحة الفساد|"
     r"اعتقال سياسي|معتقل سياسي|معتقلي الرأي|تكميم|استبداد", re.I)
 
-ISRAEL_CONTEXT_RX = re.compile(r"israel|settler|idf|zionis|إسرائيل|مستوطن", re.I)
+ISRAEL_CONTEXT_RX = re.compile(r"israel|settler|idf|zionis|إسرائيل|مستوطن", re.I); ARAB_LEADERS_RX = re.compile(r"(?:king|emir|sultan|crown prince|president|prime minister)\s+\w+.{0,40}(?:palestin|gaza|west bank|jerusalem)|(?:abdullah ii|mohammed bin salman|\bmbs\b|el-?sisi|sheikh tamim|bin zayed|\bmbz\b|salman bin|king abdullah|king mohammed vi|tebboune|saied)|(?:jordan|egypt|saudi|emirat|qatar|kuwait|oman|bahrain|morocc|algeri|tunisia|iraqi|lebanes)\w*\s+(?:king|president|monarch|leader|premier|emir)|(?:الملك|الأمير|الشيخ|الرئيس|ولي العهد|العاهل|السلطان)\s*\S*.{0,40}(?:فلسطين|غزة|الضفة|القدس)|(?:عبدالله الثاني|عبد الله الثاني|محمد بن سلمان|بن زايد|السيسي|تميم بن حمد|محمد السادس|تبون|قيس سعيد)", re.I)
 
 # Site-wide relevance gate: every published story must concern Palestine, the
 # occupation, or Israeli politics as they bear on Palestinians. World news from
@@ -215,7 +215,7 @@ def score_item(item):
     # research reports decay over their own longer shelf life, not the 72h news cycle
     horizon = item.get("max_age_hours", MAX_AGE_HOURS)
     s = max(0.0, (horizon - hours) / horizon) * RECENCY_MAX
-    hay = f"{item['title']} {item['dek']}"
+    hay = f"{item['title']} {item['dek']}"; s += FOCUS_BOOST if ARAB_LEADERS_RX.search(hay) else 0
     if CHRISTIANS_RX.search(hay):
         s += FOCUS_BOOST
     if ACCOUNTABILITY_RX.search(hay):
@@ -270,7 +270,7 @@ OPINION_CAT_RX = re.compile(r"opinion|analysis|commentary|رأي|تحليل|مق
 def categorize(item):
     if OPINION_URL_RX.search(item["link"]) or OPINION_CAT_RX.search(" ".join(item["categories"])):
         return "opinion"
-    hay = f"{item['title']} {item['dek']}"
+    hay = f"{item['title']} {item['dek']}"; s += FOCUS_BOOST if ARAB_LEADERS_RX.search(hay) else 0
     for key, rx in CATEGORY_RULES:
         if rx.search(hay):
             return key
