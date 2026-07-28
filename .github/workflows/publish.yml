@@ -2,8 +2,8 @@ name: Build & publish Times of Palestine
 
 on:
   schedule:
-  - cron: "*/30 * * * *"
-  workflow_dispatch: {}
+    - cron: "*/30 * * * *"   # rebuild with fresh news every 30 minutes, forever
+  workflow_dispatch: {}      # manual "run now" button
   push:
     branches: [main]
 
@@ -27,7 +27,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install brief-writing dependency
+        run: pip install anthropic
+      - name: Restore TOP Briefs cache
+        uses: actions/cache@v4
+        with:
+          path: briefs-cache.json
+          key: briefs-${{ github.run_id }}
+          restore-keys: briefs-
       - name: Build site from live feeds
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python build.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
