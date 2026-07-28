@@ -262,7 +262,7 @@ CATEGORY_RULES = [
         r"اقتصاد|مساعدات|إنساني|إعمار|بطالة|تجارة|تمويل|مانح|معبر|بنك", re.I)),
 ]
 
-CATEGORY_RX = dict(CATEGORY_RULES)  # section key → its own relevance test
+JUNK_TITLE_RX = re.compile(r"#\d+\s*$"); CATEGORY_RX = dict(CATEGORY_RULES)  # section key → its own relevance test
 
 OPINION_URL_RX = re.compile(r"/(opinion|op-ed|analysis|commentary|blog|مقالات)\b", re.I)
 OPINION_CAT_RX = re.compile(r"opinion|analysis|commentary|رأي|تحليل|مقال", re.I)
