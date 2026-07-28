@@ -37,6 +37,11 @@ GAZA = ZoneInfo("Asia/Gaza")
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
 SIGNAL_USERNAME = "@TOP.972"
 
+# Feeds marked "exclusive": true in feeds.json are partner wires TOP has standing
+# permission to publish under its own label, with no external attribution or link-out.
+EXCLUSIVE_SOURCE = {"en": "Times of Palestine", "ar": "تايمز أوف فلسطين"}
+ARABIC_CHARS_RX = re.compile(r"[؀-ۿ]")
+
 # ---------- TOP Briefs: original newsdesk summaries, written by Claude ----------
 # Optional layer: runs only when ANTHROPIC_API_KEY is set (GitHub secret) and the
 # `anthropic` package is installed. Every failure falls back to the feed summary —
@@ -212,6 +217,7 @@ CATEGORY_RULES = [
         r"sport|football|olympi|"
         r"ثقافة|فنان|فيلم|سينما|شاعر|موسيقى|تراث|متحف|مطبخ|رياضة|كرة القدم", re.I)),
 ]
+
 OPINION_URL_RX = re.compile(r"/(opinion|op-ed|analysis|commentary|blog|مقالات)\b", re.I)
 OPINION_CAT_RX = re.compile(r"opinion|analysis|commentary|رأي|تحليل|مقال", re.I)
 
@@ -223,7 +229,6 @@ def categorize(item):
         if rx.search(hay):
             return key
     return "news"
-
 # ---------- fetch & parse ----------
 
 def local(tag):
@@ -323,7 +328,6 @@ def item_link(el):
             if href and (node.get("rel") in (None, "alternate")):
                 return href
     return ""
-
 JUNK_TITLE_RX = re.compile(r"#\d+\s*$")  # database-row titles like "Israel 3 July 2026 #1"
 
 def finish_item(item, feed):
@@ -340,7 +344,13 @@ def finish_item(item, feed):
             return None
     if feed.get("filterBitcoinFreedom") and not BTC_FREEDOM_RX.search(hay):
         return None
-    if feed.get("type") == "telegram":
+    if feed.get("exclusive"):  # permissioned wire published under TOP's own label
+        item["exclusive"] = True
+        item["source"] = EXCLUSIVE_SOURCE[item["lang"]]
+        if feed.get("translate"):  # Arabic-only wire feeding the English edition
+            item["needs_translation"] = True
+        item["cat"] = categorize(item)
+    elif feed.get("type") == "telegram":
         item["cat"] = "social"
     elif feed.get("research"):
         item["cat"] = "research"
@@ -352,6 +362,7 @@ def finish_item(item, feed):
     item["score"] = score_item(item)
     item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]  # stable internal page id
     return item
+
 def gnews_url(feed):
     from urllib.parse import quote
     return (f"https://news.google.com/rss/search?q={quote(feed['query'])}"
@@ -409,7 +420,11 @@ def fetch_telegram(feed, lang, now, max_age):
         m_text, m_date, m_link = TG_TEXT_RX.search(block), TG_DATE_RX.search(block), TG_LINK_RX.search(block)
         if not (m_text and m_date and m_link):
             continue
-        text = re.sub(r"https?://\S+", "", strip_html(m_text.group(1))).strip(" .|-—·")
+        raw = strip_html(m_text.group(1))
+        m_art = re.search(r"https?://(?!t\.me/)\S+", raw)  # channels often append the article URL
+        link = html.unescape(m_art.group(0).rstrip(".,)…")) if m_art else m_link.group(1)
+        text = re.sub(r"https?://\S+", "", raw).strip(" .|-—·")
+        text = re.sub(r"^\s*وكالة معا\s*[|:ـ—-]+\s*", "", text)  # agency name prefixed to some posts
         if len(text) < 25:
             continue
         date = parse_date(m_date.group(1))
@@ -418,7 +433,7 @@ def fetch_telegram(feed, lang, now, max_age):
         m_photo = TG_PHOTO_RX.search(block)
         item = {
             "title": truncate(text, 130), "dek": truncate(text, 260) if len(text) > 130 else "",
-            "link": m_link.group(1), "date": date,
+            "link": link, "date": date,
             "source": feed["name"], "source_id": feed["id"],
             "image": m_photo.group(1) if m_photo else None, "categories": [], "lang": lang,
         }
@@ -440,7 +455,6 @@ def fetch_feed(feed, lang):
     except Exception as e:
         print(f"  ✗ {feed['name']}: {type(e).__name__}: {e}")
         return []
-
 OG_IMAGE_RXES = [
     re.compile(r'<meta[^>]+property=["\']og:image(?::url)?["\'][^>]+content=["\']([^"\']+)', re.I),
     re.compile(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image(?::url)?["\']', re.I),
@@ -470,7 +484,7 @@ def fetch_og_image(url, hop=0):
 
 def enrich_images(items, limit=35):
     targets = [i for i in sorted(items, key=lambda x: x["score"], reverse=True)
-               if not i["image"]][:limit]
+               if not i["image"] and "maannews.net" not in i["link"]][:limit]  # Ma'an blocks server fetches
     if not targets:
         return
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ex:
@@ -481,6 +495,7 @@ def enrich_images(items, limit=35):
             it["image"], hits = img, hits + 1
             it["score"] = score_item(it)  # image boost now applies
     print(f"  → og:image enrichment: {hits}/{len(targets)} photos recovered")
+
 P_TAG_RX = re.compile(r"<p[^>]*>(.*?)</p>", re.S | re.I)
 
 def fetch_article_text(url, hop=0):
@@ -506,15 +521,23 @@ def write_brief(client, item):
                 f"HEADLINE: {item['title']}\n"
                 f"FEED SUMMARY: {item['dek'] or '(none)'}\n"
                 f"ARTICLE EXCERPT: {excerpt or '(unavailable)'}")
+    system = BRIEF_SYSTEM[item["lang"]]
+    if item.get("needs_translation"):  # Arabic wire copy feeding the English edition
+        system += (" The source material is in Arabic. Start your response with a single line "
+                   "beginning 'HEADLINE: ' giving a concise English news headline for this story, "
+                   "then a blank line, then the brief in English.")
     response = client.messages.create(
         model=BRIEFS_MODEL,
         max_tokens=700,
-        system=BRIEF_SYSTEM[item["lang"]],
+        system=system,
         messages=[{"role": "user", "content": material}],
     )
     text = "".join(b.text for b in response.content if b.type == "text").strip()
+    if item.get("needs_translation") and text.startswith("HEADLINE:"):
+        first, _, rest = text.partition(chr(10))
+        item["title"] = truncate(first[len("HEADLINE:"):].strip(" *"), 200)
+        text = rest.strip()
     return text if len(text) > 120 else None
-
 def generate_briefs(all_items):
     """Attach an original TOP Newsdesk brief to each story, cached across builds."""
     if not os.environ.get("ANTHROPIC_API_KEY"):
@@ -531,11 +554,15 @@ def generate_briefs(all_items):
         cache = {}
     now_ts = datetime.now(timezone.utc).timestamp()
     for it in all_items:
-        entry = cache.get(it["pid"])
+        # Keys are lang-scoped so the same wire story can carry an Arabic brief in /ar/
+        # and an English one in /en/; bare-pid entries are legacy single-language cache.
+        entry = cache.get(f"{it['lang']}:{it['pid']}") or cache.get(it["pid"])
         if entry:
             it["brief"] = entry["brief"]
-    todo = [i for i in sorted(all_items, key=lambda x: x["score"], reverse=True)
-            if "brief" not in i][:MAX_BRIEFS_PER_RUN]
+            if entry.get("title"):  # translated headline saved alongside the brief
+                it["title"] = entry["title"]
+    todo = [i for i in sorted(all_items, key=lambda x: (x.get("needs_translation", False), x["score"]),
+                              reverse=True) if "brief" not in i][:MAX_BRIEFS_PER_RUN]
     if not todo:
         print("\nBriefs: cache warm — nothing new to write.")
         return
@@ -559,7 +586,10 @@ def generate_briefs(all_items):
         for it, brief in zip(todo, ex.map(safe, todo)):
             if brief:
                 it["brief"] = brief
-                cache[it["pid"]] = {"brief": brief, "ts": now_ts}
+                entry = {"brief": brief, "ts": now_ts}
+                if it.get("needs_translation") and not ARABIC_CHARS_RX.search(it["title"]):
+                    entry["title"] = it["title"]  # keep the English headline across builds
+                cache[f"{it['lang']}:{it['pid']}"] = entry
                 written += 1
     cache = {k: v for k, v in cache.items() if now_ts - v.get("ts", now_ts) < 60 * 86400}
     try:
@@ -788,16 +818,12 @@ img{max-width:100%;display:block}
 @keyframes tick-rtl{from{transform:translateX(0)}to{transform:translateX(50%)}}
 
 .masthead{background:var(--card);border-bottom:1px solid var(--line);text-align:center;padding:1.5rem 0 1rem}
-.masthead .logotype{display:inline-flex;align-items:center;gap:.85rem}
-.masthead .flagmark{flex-shrink:0;width:38px;height:38px}
+.masthead .logotype{display:inline-flex;align-items:center}
 .masthead h1{font-family:var(--serif);font-weight:900;line-height:1;letter-spacing:-.01em;color:var(--black);font-size:clamp(1.6rem,4vw,2.6rem);white-space:nowrap}
 .masthead h1 .l2{color:var(--red)}
 [lang=ar] .masthead h1{letter-spacing:0;font-weight:700;line-height:1.25}
-.masthead .tagline{margin-top:.45rem;font-size:.84rem;color:var(--muted);font-style:italic;font-family:var(--serif)}
-[lang=ar] .masthead .tagline{font-style:normal}
 .masthead.compact{padding:.9rem 0 .7rem}
 .masthead.compact h1{font-size:1.35rem}
-.masthead.compact .flagmark{width:26px;height:26px}
 
 nav.sections{position:sticky;top:0;background:var(--black);z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
 nav.sections .wrap{display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none}
@@ -1174,8 +1200,7 @@ def render_page(lang, items, built_at):
 <div class="ticker"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
 
 <header class="masthead"><div class="wrap">
-  <a class="logotype" href="#top">{FLAG_SVG}<h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
-  <p class="tagline">{t['tagline']}</p>
+  <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
 
 <nav class="sections"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_links}<a class="tip" href="#tips">🔒 {t['tips_nav']}</a></div></nav>
@@ -1216,14 +1241,20 @@ def render_page(lang, items, built_at):
 def render_story(it, lang, related, built_at):
     """Internal story page: summary + credit link out + Keep Reading grid. Readers circulate."""
     t = STR[lang]
-    lede = (f'<img class="lede" src="{esc(it["image"])}" alt="">'
-            f'<p class="photocredit">{t["photo_via"]} {esc(it["source"])}</p>') if it["image"] else ""
+    credit = "" if it.get("exclusive") else f'<p class="photocredit">{t["photo_via"]} {esc(it["source"])}</p>'
+    lede = (f'<img class="lede" src="{esc(it["image"])}" alt="">{credit}') if it["image"] else ""
     if it.get("brief"):  # original TOP Newsdesk brief, written by Claude, cached per story
         clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in it["brief"].split(chr(10))]
         paras = "".join(f'<p class="summary">{esc(p)}</p>' for p in clean if p)
         summary = f'<p class="byline">{t["byline"]}</p>{paras}'
     else:
         summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""
+    if it.get("exclusive"):  # our own wire — no external credit or link-out
+        cta = ""
+    else:
+        cta = (f'<div class="cta">'
+               f'<a href="{esc(it["link"])}" target="_blank" rel="noopener">{t["read_original"]} {esc(it["source"])} →</a>'
+               f'<p class="note">{t["summary_note"]}</p></div>')
     related_cards = "".join(card(r, lang, "") for r in related)
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
@@ -1239,7 +1270,7 @@ def render_story(it, lang, related, built_at):
 <body>
 <div class="backbar"><a href="../">{t['back_home']}</a></div>
 <header class="masthead compact"><div class="wrap">
-  <a class="logotype" href="../">{FLAG_SVG}<h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
+  <a class="logotype" href="../"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
 
 <main>
@@ -1249,10 +1280,7 @@ def render_story(it, lang, related, built_at):
     {meta_line(it, lang)}
     {lede}
     {summary}
-    <div class="cta">
-      <a href="{esc(it['link'])}" target="_blank" rel="noopener">{t['read_original']} {esc(it['source'])} →</a>
-      <p class="note">{t['summary_note']}</p>
-    </div>
+    {cta}
   </article>
   <section class="keep"><div class="wrap">
     <div class="sec-head focus"><h2>{t['keep_reading']}</h2><span class="rule"></span></div>
@@ -1286,6 +1314,10 @@ def main():
         generate_briefs(en_items + ar_items)
     except Exception as e:  # the briefs layer must never block publication
         print(f"\nBriefs: stage failed ({type(e).__name__}) — publishing with feed summaries.")
+    # Arabic-wire stories appear in the English edition only once their headline
+    # has been translated (translation rides along with brief generation, cached).
+    en_items = [i for i in en_items
+                if not (i.get("needs_translation") and ARABIC_CHARS_RX.search(i["title"]))]
 
     dist = ROOT / "dist"
     for lang, items in (("en", en_items), ("ar", ar_items)):
