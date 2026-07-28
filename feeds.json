@@ -1,7 +1,11 @@
 {
   "en": [
     { "id": "mee", "name": "Middle East Eye", "url": "https://www.middleeasteye.net/rss", "site": "https://www.middleeasteye.net", "filterPalestine": true },
-    { "id": "972mag", "name": "+972 Magazine", "url": "https://www.972mag.com/feed/", "site": "https://www.972mag.com" },
+    { "id": "972mag", "name": "+972 Magazine", "type": "gnews",
+      "query": "site:972mag.com", "hl": "en-US", "gl": "US", "ceid": "US:en",
+      "site": "https://www.972mag.com", "cap": 6 },
+    { "id": "maan-en", "name": "Maan Wire (EN)", "type": "telegram", "channel": "maannews",
+      "site": "https://www.maannews.net", "exclusive": true, "translate": true, "cap": 6 },
     { "id": "ei", "name": "Electronic Intifada", "url": "https://electronicintifada.net/rss.xml", "site": "https://electronicintifada.net" },
     { "id": "mondoweiss", "name": "Mondoweiss", "url": "https://mondoweiss.net/feed/", "site": "https://mondoweiss.net" },
     { "id": "aje", "name": "Al Jazeera English", "url": "https://www.aljazeera.com/xml/rss/all.xml", "site": "https://www.aljazeera.com", "filterPalestine": true },
@@ -33,6 +37,8 @@
   ],
   "ar": [
     { "id": "aja", "name": "الجزيرة نت", "url": "https://www.aljazeera.net/rss", "site": "https://www.aljazeera.net", "filterPalestine": true },
+    { "id": "maan", "name": "وكالة معا (حصري)", "type": "telegram", "channel": "maannews",
+      "site": "https://www.maannews.net", "exclusive": true, "cap": 8 },
     { "id": "arab48", "name": "عرب 48", "url": "https://www.arab48.com/rss", "site": "https://www.arab48.com" },
     { "id": "shehab", "name": "وكالة شهاب", "url": "https://shehabnews.com/rss", "site": "https://shehabnews.com" },
     { "id": "felesteen", "name": "صحيفة فلسطين", "url": "https://felesteen.news/rss", "site": "https://felesteen.news" },
