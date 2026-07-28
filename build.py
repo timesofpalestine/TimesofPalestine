@@ -1168,7 +1168,8 @@ def render_story(it, lang, related, built_at):
     lede = (f'<img class="lede" src="{esc(it["image"])}" alt="">'
             f'<p class="photocredit">{t["photo_via"]} {esc(it["source"])}</p>') if it["image"] else ""
     if it.get("brief"):  # original TOP Newsdesk brief, written by Claude, cached per story
-        paras = "".join(f'<p class="summary">{esc(p.strip())}</p>'
+        clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in it["brief"].split("
+")]; paras = "".join(f'<p class="summary">{esc(p)}</p>'
                         for p in it["brief"].split("\n") if p.strip())
         summary = f'<p class="byline">{t["byline"]}</p>{paras}'
     else:
