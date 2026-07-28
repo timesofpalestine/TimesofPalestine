@@ -1184,7 +1184,7 @@ footer a{color:#e6e6ec;font-weight:600}
 footer a:hover{color:#fff;text-decoration:underline}
 footer .legal{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #2a2a30;font-size:.72rem;color:#8b8b94;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%);border-top:4px solid var(--red);max-width:200px;margin-bottom:1.5rem}
-[dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}
+[dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}@media (prefers-color-scheme:dark){:root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}.masthead h1,.sec-head h2,.latest h2,.story h1,.hero h2,.card h3,.rowcard h3,.hero-sub article h3,.research-feat h3,.op-card h3{color:var(--ink)}.hero .dek{color:#c5c5cf}.story .summary{color:#d6d6de}.research-feat .dek{color:#c5c5cf}section.opinion{background:#17171c}.card img,.hero img,.rowcard img,.story img.lede{opacity:.92}}@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}}nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:28px;margin-inline-start:-28px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none}[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}.skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}.skiplink:focus{inset-inline-start:0}.share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}.share span{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;align-self:center}.share a{border:1px solid var(--line-dark);padding:.35rem .8rem;border-radius:3px;font-size:.8rem;font-weight:700}.share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
 
 @media(max-width:960px){
   .research-feat{grid-template-columns:1fr}
@@ -1232,7 +1232,7 @@ def meta_line(it, lang):
 def card_media(it, pfx):
     """Image if we have one; otherwise a branded flag panel — never an empty column."""
     if it["image"]:
-        return f'<a href="{href(it, pfx)}"><img src="{esc(it["image"])}" alt="" loading="lazy"></a>'
+        return f'<a href="{href(it, pfx)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"></a>'
     return f'<a href="{href(it, pfx)}"><div class="ph">{FLAG_SVG}</div></a>'
 
 def card(it, lang, pfx):
@@ -1340,7 +1340,7 @@ def render_page(lang, items, built_at):
     nav_links = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in order if visible(k))
 
     def research_featured(it):
-        media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="" loading="lazy"></a>'
+        media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"></a>'
                  if it["image"] else '<div class="noimg"><span>§</span></div>')
         return (f'<article class="research-feat"><div class="body">'
                 f'<p class="kick">{t["research_kicker"]}</p>'
@@ -1378,7 +1378,7 @@ def render_page(lang, items, built_at):
     if hero:
         hero_dek = f'<p class="dek">{esc(hero["dek"])}</p>' if hero["dek"] else ""
         hero_html = (f'<p class="label">{t["hero_label"]}</p>'
-                     f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt=""></a>'
+                     f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt="{esc(hero["title"])}"></a>'
                      f'<p class="photocredit">{t["photo_via"]} {esc(hero["source"])}</p>'
                      f'<h2><a href="{href(hero, P)}">{esc(hero["title"])}</a></h2>'
                      f'{hero_dek}{meta_line(hero, lang)}')
@@ -1416,26 +1416,26 @@ def render_page(lang, items, built_at):
 <meta property="og:title" content="{t['site_name']} — {t['title_suffix']}">
 <meta property="og:description" content="{esc(t['mission'][:155])}">
 <meta property="og:url" content="{BASE_URL}/{lang}/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{BASE_URL}/og-banner.png"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"{t['site_name']}","url":"{BASE_URL}/{lang}/","sameAs":["{BASE_URL}/en/","{BASE_URL}/ar/"]}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
 <style>{CSS}</style>
 </head>
 <body>
-<div class="topbar"><div class="wrap">
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="topbar"><div class="wrap">
   <span class="date">{date_str}</span>
   <span class="upd"><span class="dot"></span>{t['updated']} {time_str} · {t['tz']}</span>
   <a class="lang" href="{t['switch_href']}">{t['switch_lang']}</a>
 </div></div>
 
-<div class="ticker"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
+<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
 
 <header class="masthead"><div class="wrap">
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
 
-<nav class="sections"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_links}<a class="tip" href="#tips">🔒 {t['tips_nav']}</a></div></nav>
+<nav class="sections" aria-label="Primary"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_links}<a class="tip" href="#tips">🔒 {t['tips_nav']}</a></div></nav>
 
 <main id="top">
   <div class="wrap hero-zone">
@@ -1474,7 +1474,7 @@ def render_story(it, lang, related, rail, built_at):
     Every page links onward to many others — readers always circulate."""
     t = STR[lang]
     credit = "" if it.get("exclusive") else f'<p class="photocredit">{t["photo_via"]} {esc(it["source"])}</p>'
-    lede = (f'<img class="lede" src="{esc(it["image"])}" alt="">{credit}') if it["image"] else f'<div class="lede">{FLAG_SVG}</div>'
+    lede = (f'<img class="lede" src="{esc(it["image"])}" alt="{esc(it["title"])}">{credit}') if it["image"] else f'<div class="lede">{FLAG_SVG}</div>'
     brief = it.get("brief")
     if brief and REFUSAL_RX.search(brief):  # hard stop: refusal text must never render
         brief = None
@@ -1494,7 +1494,7 @@ def render_story(it, lang, related, rail, built_at):
                f'<a href="{esc(it["link"])}" target="_blank" rel="noopener">{t["read_original"]} {esc(it["source"])} →</a>'
                f'<p class="note">{t["summary_note"]}</p></div>')
     related_cards = "".join(card(r, lang, "") for r in related)
-    page_url = f"{BASE_URL}/{lang}/story/{it['pid']}.html"
+    page_url = f"{BASE_URL}/{lang}/story/{it['pid']}.html"; _q = __import__("urllib.parse", fromlist=["quote"]).quote; share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a></div>')
     desc = esc((it.get("brief") or it["dek"]).replace(chr(10), " ")[:155])
     og_image = f'<meta property="og:image" content="{esc(it["image"])}">' if it["image"] else ""
     jsonld = json.dumps({
@@ -1527,8 +1527,8 @@ def render_story(it, lang, related, rail, built_at):
 <style>{CSS}</style>
 </head>
 <body>
-<div class="backbar"><a href="../">{t['back_home']}</a></div>
-<div class="ticker"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
+<div class="backbar" style="display:flex;justify-content:space-between;align-items:center"><a href="../">{t['back_home']}</a><a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
+<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="../"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
@@ -1540,7 +1540,7 @@ def render_story(it, lang, related, rail, built_at):
     {meta_line(it, lang)}
     {lede}
     {summary}
-    {cta}
+    {cta}{share_row}
   </article>
   <section class="keep"><div class="wrap">
     <div class="sec-head focus"><h2>{t['keep_reading']}</h2><span class="rule"></span></div>
@@ -1649,7 +1649,7 @@ def main():
         (dist / "CNAME").write_text(cname.read_text())
     qr = ROOT / "signal-qr.png"  # Signal tip-line QR shown in the tip band
     if qr.exists():
-        (dist / "signal-qr.png").write_bytes(qr.read_bytes())
+        (dist / "signal-qr.png").write_bytes(qr.read_bytes()); ob = ROOT / "og-banner.png"; ob.exists() and (dist / "og-banner.png").write_bytes(ob.read_bytes())
     (dist / "data.json").write_text(json.dumps(
         {"builtAt": built_at.isoformat(), "en": len(en_items), "ar": len(ar_items),
          "briefs": sum(1 for i in en_items + ar_items if i.get("brief"))}, indent=2))
