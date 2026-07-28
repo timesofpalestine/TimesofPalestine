@@ -979,7 +979,7 @@ nav.sections a.tip{color:#3fd07c;border-color:#3fd07c;margin-inline-start:auto}
 .story h1{font-family:var(--serif);font-weight:900;font-size:clamp(1.6rem,3.6vw,2.5rem);line-height:1.15}
 [lang=ar] .story h1{font-weight:700;line-height:1.5}
 .story .meta{margin-top:1rem;font-size:.8rem}
-.story img.lede{width:100%;aspect-ratio:16/9;object-fit:cover;background:#e8e6df;margin-top:1.4rem}
+.story div.lede{width:100%;aspect-ratio:16/9;margin-top:1.4rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}.story div.lede svg{width:64px;height:64px;opacity:.9}.story img.lede{width:100%;aspect-ratio:16/9;object-fit:cover;background:#e8e6df;margin-top:1.4rem}
 .story .byline{margin-top:1.4rem;font-size:.74rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.1em}
 [lang=ar] .story .byline{letter-spacing:0;text-transform:none;font-size:.85rem}
 .story .summary{margin-top:1rem;font-family:var(--serif);font-size:1.13rem;line-height:1.7;color:#26262e}
