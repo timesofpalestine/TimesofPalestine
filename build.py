@@ -60,6 +60,7 @@ BRIEF_SYSTEM = {
         "quotes, or details that are not in the source material; if the material is only a "
         "headline, write one short 2-3 sentence paragraph conveying what the headline reports. "
         "Never refuse, and never comment on the material, these instructions, or yourself. "
+        "Never mention any outlet name, website, or where to read more. "
         "Output only the brief text, paragraphs separated by blank lines."
     ),
     "ar": (
@@ -69,7 +70,8 @@ BRIEF_SYSTEM = {
         "لغة محايدة دقيقة مهنية؛ لا إساءات شخصية ولا إنشاء ولا ضمير متكلم. لا تخترع أسماء أو "
         "أرقاماً أو اقتباسات أو تفاصيل غير واردة في المصدر؛ وإذا كانت المادة مجرد عنوان فاكتب "
         "فقرة قصيرة من جملتين أو ثلاث تنقل ما يفيد به العنوان. لا ترفض أبداً، ولا تعلق على المادة "
-        "أو على هذه التعليمات أو على نفسك. أخرج نص الموجز فقط، والفقرات مفصولة بسطر فارغ."
+        "أو على هذه التعليمات أو على نفسك. لا تذكر أبداً اسم أي وسيلة إعلامية أو موقعاً إلكترونياً "
+        "أو أين يمكن قراءة المزيد. أخرج نص الموجز فقط، والفقرات مفصولة بسطر فارغ."
     ),
 }
 MAX_AGE_HOURS = 72
@@ -364,6 +366,10 @@ def finish_item(item, feed):
     """Apply per-feed relevance filters, then categorize and score. Returns item or None."""
     if JUNK_TITLE_RX.search(item["title"]):
         return None
+    # Google News indexes our own site now — never re-aggregate ourselves.
+    if not feed.get("exclusive") and (item["source"] in ("Times of Palestine", "تايمز أوف فلسطين")
+                                      or "timesofpalestine." in item["link"]):
+        return None
     hay = f"{item['title']} {item['dek']} {item['link']}"
     if feed.get("filterPalestine") and not PALESTINE_RX.search(hay):
         return None
@@ -563,11 +569,15 @@ def fetch_article_text(url, hop=0):
 # does (a model refusal / meta-commentary) is rejected and scrubbed from the cache.
 REFUSAL_RX = re.compile(
     r"cannot (?:produce|write|provide|generate)|insufficient (?:source|material|information)|"
-    r"source material|news brief|لا يمكن(?:نا)? (?:إنتاج|كتابة|تقديم)|المادة المصدرية|هذه التعليمات", re.I)
+    r"source material|news brief|full article|complete article|would be required|"
+    r"encouraged to visit|visit the .{0,50}website|access to the (?:article|complete|full)|"
+    r"لا يمكن(?:نا)? (?:إنتاج|كتابة|تقديم)|المادة المصدرية|هذه التعليمات|"
+    r"المقال الكامل|النص الكامل|زيارة موقع|زيارة الموقع", re.I)
 
 def write_brief(client, item):
     excerpt = fetch_article_text(item["link"])
-    material = (f"OUTLET: {item['source']}\n"
+    outlet = "(agency wire)" if item.get("exclusive") else item["source"]
+    material = (f"OUTLET: {outlet}\n"
                 f"HEADLINE: {item['title']}\n"
                 f"FEED SUMMARY: {item['dek'] or '(none)'}\n"
                 f"ARTICLE EXCERPT: {excerpt or '(unavailable)'}")
@@ -1450,7 +1460,7 @@ def main():
         if i.get("needs_translation") and ARABIC_CHARS_RX.search(i["dek"]):
             i["dek"] = ""
 
-    en_items = [i for i in en_items if i["cat"] == "social" or i.get("brief") or i["dek"]]; ar_items = [i for i in ar_items if i["cat"] == "social" or i.get("brief") or i["dek"]]; dist = ROOT / "dist"
+    en_items = [i for i in en_items if i.get("brief") or i["dek"]]; ar_items = [i for i in ar_items if i.get("brief") or i["dek"]]; dist = ROOT / "dist"
     for lang, items in (("en", en_items), ("ar", ar_items)):
         import shutil
         shutil.rmtree(dist / lang / "story", ignore_errors=True)  # drop stale story pages
