@@ -116,8 +116,19 @@ BTC_FREEDOM_RX = re.compile(
 
 FOCUS_BOOST = 30      # score boost for editorial focus topics
 RESEARCH_BOOST = 22   # think-tank / OSINT reports: "news before it becomes news"
+BREAKING_BOOST = 14   # hard-news urgency: casualties, strikes, raids, ceasefires
 IMAGE_BOOST = 8
 RECENCY_MAX = 50      # points for a just-published story, linear decay over MAX_AGE_HOURS
+HERO_MAX_AGE_H = 36   # the top story must be actual news, not a feature from days ago
+
+# Urgent hard-news markers — these stories are what readers check the site for.
+BREAKING_RX = re.compile(
+    r"\bkill|dead|death toll|casualt|wound|injur|strike|airstrike|bomb|shell|raid|storm|"
+    r"assassinat|ceasefire|truce|escalat|evacuat|massacre|explosion|"
+    r"شهيد|شهداء|قتل|مقتل|قصف|غارة|اقتحام|إصاب|جرحى|انفجار|مجزرة|تصعيد|عاجل|إخلاء", re.I)
+
+# Features that should never lead the page, however well they score.
+REVIEWISH_RX = re.compile(r"book review|review:|film review|مراجعة كتاب|عرض كتاب", re.I)
 
 def score_item(item):
     hours = (datetime.now(timezone.utc) - item["date"]).total_seconds() / 3600
@@ -131,6 +142,8 @@ def score_item(item):
         s += FOCUS_BOOST
     if BITCOIN_RX.search(hay):
         s += FOCUS_BOOST
+    if BREAKING_RX.search(hay):
+        s += BREAKING_BOOST
     if item["cat"] == "research":
         s += RESEARCH_BOOST
     if item["image"]:
@@ -672,15 +685,14 @@ section.block{padding-block:1.6rem;border-top:1px solid var(--line-dark)}
 .sec-head h2{font-family:var(--serif);font-weight:900;font-size:1.45rem;color:var(--black)}
 [lang=ar] .sec-head h2{font-weight:700}
 .sec-head .rule{flex:1;height:1px;background:var(--line-dark)}
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.4rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.4rem}
+.card{max-width:560px}
 .card img{aspect-ratio:16/10;object-fit:cover;width:100%;background:#e8e6df;margin-bottom:.7rem}
 .card .chip{font-size:.64rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
 [lang=ar] .card .chip{letter-spacing:0;font-size:.72rem}
 .card h3{font-family:var(--serif);font-weight:700;font-size:1.02rem;line-height:1.3;margin-top:.3rem}
 [lang=ar] .card h3{line-height:1.6}
 .card h3 a:hover{color:var(--red)}
-.card .dek{font-size:.8rem;color:var(--muted);margin-top:.35rem;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-[lang=ar] .card .dek{line-height:1.7}
 .card .t{font-size:.68rem;color:var(--muted);font-weight:600;margin-top:.4rem}
 [lang=ar] .card .t{font-size:.75rem}
 
@@ -803,13 +815,14 @@ def meta_line(it, lang):
     return (f'<p class="meta"><span class="src">{esc(it["source"])}</span>'
             f'<span class="t">{time_ago(it["date"], lang)}</span></p>')
 
-def card(it, lang, pfx, with_dek=True):
+def card(it, lang, pfx):
+    # Uniform card: headline, source, time. Summaries belong to the hero, the
+    # featured report, and the story pages — mixed previews in a grid look broken.
     img = f'<a href="{href(it, pfx)}"><img src="{esc(it["image"])}" alt="" loading="lazy"></a>' if it["image"] else ""
-    dek = f'<p class="dek">{esc(it["dek"])}</p>' if with_dek and it["dek"] else ""
     return (f'<article class="card">{img}'
             f'<span class="chip">{esc(it["source"])}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'{dek}<p class="t">{time_ago(it["date"], lang)}</p></article>')
+            f'<p class="t">{time_ago(it["date"], lang)}</p></article>')
 
 def op_card(it, lang, pfx):
     return (f'<article class="op-card"><span class="q">“</span>'
@@ -847,9 +860,19 @@ def render_page(lang, items, built_at):
         return out
 
     # Hero & second tier are chosen by score (importance); Latest rail and the
-    # breaking ticker stay strictly chronological.
-    heroes = take(by_score, lambda i: bool(i["image"]) and len(i["title"]) > 30
-                  and i["cat"] not in ("social", "research"), 1)
+    # breaking ticker stay strictly chronological. The hero must be real, recent
+    # hard news — never an opinion piece, review, or multi-day-old feature.
+    now = datetime.now(timezone.utc)
+
+    def hero_ok(i, max_age=HERO_MAX_AGE_H):
+        return (bool(i["image"]) and len(i["title"]) > 30
+                and i["cat"] not in ("social", "research", "opinion", "culture")
+                and not REVIEWISH_RX.search(i["title"])
+                and (now - i["date"]).total_seconds() / 3600 <= max_age)
+
+    heroes = (take(by_score, hero_ok, 1)
+              or take(by_score, lambda i: hero_ok(i, max_age=MAX_AGE_HOURS), 1)
+              or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research"), 1))
     hero = heroes[0] if heroes else None
     hero_subs = take(by_score, lambda i: i["cat"] not in ("opinion", "social", "research"), 4)
     latest = take(items, lambda i: i["cat"] != "social", 10)  # rail stays pure newsroom headlines
@@ -887,7 +910,7 @@ def render_page(lang, items, built_at):
         featured = ""
         if k == "research":  # lead report gets the full featured-summary treatment
             featured, pool = research_featured(pool[0]), pool[1:]
-        cards = "".join(card(it, lang, P, i < 4) for i, it in enumerate(pool))
+        cards = "".join(card(it, lang, P) for it in pool)
         grid = f'<div class="grid">{cards}</div>' if pool else ""
         focus_cls = " focus" if k in FOCUS_SECTIONS else ""
         section_blocks += (f'<section class="block" id="{k}"><div class="wrap">'
@@ -929,6 +952,7 @@ def render_page(lang, items, built_at):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="600">
 <title>{t['site_name']} — {t['title_suffix']}</title>
 <meta name="description" content="{esc(t['mission'][:155])}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -989,7 +1013,7 @@ def render_story(it, lang, related, built_at):
     t = STR[lang]
     lede = f'<img class="lede" src="{esc(it["image"])}" alt="">' if it["image"] else ""
     summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""
-    related_cards = "".join(card(r, lang, "", i < 3) for i, r in enumerate(related))
+    related_cards = "".join(card(r, lang, "") for r in related)
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
 <head>
