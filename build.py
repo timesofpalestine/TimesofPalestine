@@ -214,8 +214,8 @@ def score_item(item):
     hours = (datetime.now(timezone.utc) - item["date"]).total_seconds() / 3600
     # research reports decay over their own longer shelf life, not the 72h news cycle
     horizon = item.get("max_age_hours", MAX_AGE_HOURS)
-    s = max(0.0, (horizon - hours) / horizon) * RECENCY_MAX
-    hay = f"{item['title']} {item['dek']}"; s += FOCUS_BOOST if ARAB_LEADERS_RX.search(hay) else 0
+    s = max(0.0, (horizon - hours) / horizon) * RECENCY_MAX + (FOCUS_BOOST if ARAB_LEADERS_RX.search(f"{item['title']} {item['dek']}") else 0)
+    hay = f"{item['title']} {item['dek']}"
     if CHRISTIANS_RX.search(hay):
         s += FOCUS_BOOST
     if ACCOUNTABILITY_RX.search(hay):
@@ -270,7 +270,7 @@ OPINION_CAT_RX = re.compile(r"opinion|analysis|commentary|رأي|تحليل|مق
 def categorize(item):
     if OPINION_URL_RX.search(item["link"]) or OPINION_CAT_RX.search(" ".join(item["categories"])):
         return "opinion"
-    hay = f"{item['title']} {item['dek']}"; s += FOCUS_BOOST if ARAB_LEADERS_RX.search(hay) else 0
+    hay = f"{item['title']} {item['dek']}"
     for key, rx in CATEGORY_RULES:
         if rx.search(hay):
             return key
