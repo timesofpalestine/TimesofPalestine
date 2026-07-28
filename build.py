@@ -1277,7 +1277,7 @@ def render_story(it, lang, related, rail, built_at):
     Every page links onward to many others — readers always circulate."""
     t = STR[lang]
     credit = "" if it.get("exclusive") else f'<p class="photocredit">{t["photo_via"]} {esc(it["source"])}</p>'
-    lede = (f'<img class="lede" src="{esc(it["image"])}" alt="">{credit}') if it["image"] else ""
+    lede = (f'<img class="lede" src="{esc(it["image"])}" alt="">{credit}') if it["image"] else f'<div class="lede">{FLAG_SVG}</div>'
     brief = it.get("brief")
     if brief and REFUSAL_RX.search(brief):  # hard stop: refusal text must never render
         brief = None
