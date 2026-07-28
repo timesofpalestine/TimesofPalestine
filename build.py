@@ -1641,7 +1641,7 @@ def main():
         (dist / lang / "rss.xml").write_text(render_rss(lang, items, built_at), encoding="utf-8")
     (dist / "sitemap.xml").write_text(
         render_sitemap((("en", en_items), ("ar", ar_items)), built_at), encoding="utf-8")
-    (dist / "robots.txt").write_text(ROBOTS_TXT, encoding="utf-8")
+    (dist / "robots.txt").write_text(ROBOTS_TXT, encoding="utf-8"); __import__("seo_extras").write_extras(dist, (("en", en_items), ("ar", ar_items)), built_at, BASE_URL)
     (dist / "index.html").write_text(REDIRECT_HTML, encoding="utf-8")
     (dist / ".nojekyll").write_text("")
     cname = ROOT / "CNAME"  # optional custom domain (e.g. timesofpalestine.com)
