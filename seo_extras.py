@@ -109,7 +109,7 @@ def render_about(lang, built_at):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0b0c">
+<meta name="theme-color" content="#0b0b0c"><link rel="manifest" href="/manifest.json">
 <title>{a['title']} — {t['site_name']}</title>
 <meta name="description" content="{a['sections'][0][1][:155]}">
 <link rel="canonical" href="{b.BASE_URL}/{lang}/about.html">
@@ -234,7 +234,7 @@ def write_extras(dist, langs_items, built_at, base_url):
     try:
         (dist / "news-sitemap.xml").write_text(
             render_news_sitemap(langs_items, built_at, base_url), encoding="utf-8")
-        (dist / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8"); [(dist / f.name).write_text(f.read_text(encoding="utf-8"), encoding="utf-8") for f in dist.parent.glob("google*.html")]
+        (dist / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8"); [(dist / f.name).write_text(f.read_text(encoding="utf-8"), encoding="utf-8") for f in dist.parent.glob("google*.html")]; [(dist / n).write_bytes((dist.parent / n).read_bytes()) for n in ("manifest.json", "sw.js", "icon-512.png") if (dist.parent / n).exists()]
         robots = dist / "robots.txt"
         robots.write_text(robots.read_text(encoding="utf-8")
                           + f"Sitemap: {base_url}/news-sitemap.xml\n", encoding="utf-8")
