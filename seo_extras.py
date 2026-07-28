@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 # The bot token lives ONLY in the TELEGRAM_BOT_TOKEN repo secret — never here,
 # never in logs. Without the secret this feature silently does nothing.
 TELEGRAM_CHANNEL = "@timesofpalestin"
-TELEGRAM_MAX_PER_BUILD = 8  # stay far below Telegram's per-chat rate limits
+TELEGRAM_MAX_PER_BUILD = 8  # stay far below Telegram's per-chat rate limits TELEGRAM_MAX_AGE_H = 3      # only post stories this fresh (bounds any cache loss)
 
 # IndexNow (indexnow.org): instant URL submission to Bing/Yandex/Seznam/naver.
 # No account needed — the key is proven by hosting <key>.txt at the site root.
@@ -200,10 +200,10 @@ def post_telegram(dist, langs_items, base_url):
     except Exception:
         cache = {}
     now_ts = datetime.now(timezone.utc).timestamp()
-    items = sorted((it for _, lang_items in langs_items for it in lang_items),
+    now = datetime.now(timezone.utc)     items = sorted((it for _, lang_items in langs_items for it in lang_items                     if (now - it["date"]).total_seconds() <= TELEGRAM_MAX_AGE_H * 3600),
                    key=lambda i: i["date"], reverse=True)
     fresh = [i for i in items if f"tg:{i['lang']}:{i['pid']}" not in cache]
-    if not any(k.startswith("tg:") for k in cache):  # first run: seed, don't flood
+    posted = 0
         for it in fresh:
             cache[f"tg:{it['lang']}:{it['pid']}"] = {"ts": now_ts}
         cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
