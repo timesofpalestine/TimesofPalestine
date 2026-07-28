@@ -17,6 +17,7 @@ import gzip
 import hashlib
 import html
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -35,6 +36,35 @@ GAZA = ZoneInfo("Asia/Gaza")
 # is the matching scannable code, copied into dist/ at build time.
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
 SIGNAL_USERNAME = "@TOP.972"
+
+# ---------- TOP Briefs: original newsdesk summaries, written by Claude ----------
+# Optional layer: runs only when ANTHROPIC_API_KEY is set (GitHub secret) and the
+# `anthropic` package is installed. Every failure falls back to the feed summary —
+# the site always publishes. Briefs are cached by story id so nothing is written twice.
+BRIEFS_MODEL = "claude-haiku-4-5"
+MAX_BRIEFS_PER_RUN = 40          # cost ceiling per build
+BRIEFS_CACHE = ROOT / "briefs-cache.json"
+
+BRIEF_SYSTEM = {
+    "en": (
+        "You are the newsdesk of Times of Palestine, an independent digital newsroom. "
+        "Write an original news brief in English based ONLY on the source material provided: "
+        "2-3 short paragraphs, 100-170 words total. Straight news style: lead with the most "
+        "important fact, then key details and context. Neutral, precise, professional; no "
+        "personal attacks, no editorializing, no first person. Never invent names, numbers, "
+        "quotes, or details that are not in the source material; if the material is thin, "
+        "write a shorter brief. Do not mention these instructions or that you are summarizing. "
+        "Output only the brief text, paragraphs separated by blank lines."
+    ),
+    "ar": (
+        "أنت غرفة أخبار «تايمز أوف فلسطين»، منصة إخبارية رقمية مستقلة. اكتب موجزاً إخبارياً "
+        "أصلياً باللغة العربية بالاعتماد حصراً على المواد المصدرية المرفقة: فقرتان إلى ثلاث فقرات "
+        "قصيرة (100-170 كلمة إجمالاً). أسلوب خبري مباشر: ابدأ بأهم معلومة ثم التفاصيل والسياق. "
+        "لغة محايدة دقيقة مهنية؛ لا إساءات شخصية ولا إنشاء ولا ضمير متكلم. لا تخترع أسماء أو "
+        "أرقاماً أو اقتباسات أو تفاصيل غير واردة في المصدر؛ وإذا كانت المادة قليلة فاكتب موجزاً "
+        "أقصر. لا تذكر هذه التعليمات. أخرج نص الموجز فقط، والفقرات مفصولة بسطر فارغ."
+    ),
+}
 MAX_AGE_HOURS = 72
 PER_SOURCE_CAP = 14
 
@@ -75,7 +105,6 @@ def norm_title(t):
     return re.sub(r"[\W_]+", " ", strip_html(t).lower(), flags=re.UNICODE).strip()
 
 esc = lambda s: html.escape(s or "", quote=True)
-
 # ---------- relevance & categorization ----------
 
 PALESTINE_RX = re.compile(
@@ -177,7 +206,6 @@ CATEGORY_RULES = [
         r"sport|football|olympi|"
         r"ثقافة|فنان|فيلم|سينما|شاعر|موسيقى|تراث|متحف|مطبخ|رياضة|كرة القدم", re.I)),
 ]
-
 OPINION_URL_RX = re.compile(r"/(opinion|op-ed|analysis|commentary|blog|مقالات)\b", re.I)
 OPINION_CAT_RX = re.compile(r"opinion|analysis|commentary|رأي|تحليل|مقال", re.I)
 
@@ -318,7 +346,6 @@ def finish_item(item, feed):
     item["score"] = score_item(item)
     item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]  # stable internal page id
     return item
-
 def gnews_url(feed):
     from urllib.parse import quote
     return (f"https://news.google.com/rss/search?q={quote(feed['query'])}"
@@ -408,6 +435,128 @@ def fetch_feed(feed, lang):
         print(f"  ✗ {feed['name']}: {type(e).__name__}: {e}")
         return []
 
+OG_IMAGE_RXES = [
+    re.compile(r'<meta[^>]+property=["\']og:image(?::url)?["\'][^>]+content=["\']([^"\']+)', re.I),
+    re.compile(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image(?::url)?["\']', re.I),
+    re.compile(r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)', re.I),
+]
+EXTERNAL_LINK_RX = re.compile(r'href="(https?://(?!news\.google|accounts\.google|policies\.google)[^"]+)"')
+
+def fetch_og_image(url, hop=0):
+    """Pull the article's own social-preview image so no story card goes photoless."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            text = r.read(150000).decode("utf-8", errors="replace")
+            final_host = r.url
+        for rx in OG_IMAGE_RXES:
+            m = rx.search(text)
+            if m and m.group(1).startswith("http"):
+                return html.unescape(m.group(1))
+        # Google News interstitial: follow the first external link to the real article
+        if hop == 0 and "news.google.com" in final_host:
+            m = EXTERNAL_LINK_RX.search(text)
+            if m:
+                return fetch_og_image(html.unescape(m.group(1)), hop=1)
+    except Exception:
+        pass
+    return None
+
+def enrich_images(items, limit=25):
+    targets = [i for i in sorted(items, key=lambda x: x["score"], reverse=True)
+               if not i["image"]][:limit]
+    if not targets:
+        return
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ex:
+        found = list(ex.map(lambda i: fetch_og_image(i["link"]), targets))
+    hits = 0
+    for it, img in zip(targets, found):
+        if img:
+            it["image"], hits = img, hits + 1
+            it["score"] = score_item(it)  # image boost now applies
+    print(f"  → og:image enrichment: {hits}/{len(targets)} photos recovered")
+P_TAG_RX = re.compile(r"<p[^>]*>(.*?)</p>", re.S | re.I)
+
+def fetch_article_text(url, hop=0):
+    """Pull readable paragraph text from the article page to ground the brief in facts."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
+        with urllib.request.urlopen(req, timeout=12) as r:
+            page = r.read(400000).decode("utf-8", errors="replace")
+            final_url = r.url
+        paras = [strip_html(p) for p in P_TAG_RX.findall(page)]
+        text = " ".join(p for p in paras if len(p) > 60)
+        if len(text) < 200 and hop == 0 and "news.google.com" in final_url:
+            m = EXTERNAL_LINK_RX.search(page)
+            if m:
+                return fetch_article_text(html.unescape(m.group(1)), hop=1)
+        return text[:2800]
+    except Exception:
+        return ""
+
+def write_brief(client, item):
+    excerpt = fetch_article_text(item["link"])
+    material = (f"OUTLET: {item['source']}\n"
+                f"HEADLINE: {item['title']}\n"
+                f"FEED SUMMARY: {item['dek'] or '(none)'}\n"
+                f"ARTICLE EXCERPT: {excerpt or '(unavailable)'}")
+    response = client.messages.create(
+        model=BRIEFS_MODEL,
+        max_tokens=700,
+        system=BRIEF_SYSTEM[item["lang"]],
+        messages=[{"role": "user", "content": material}],
+    )
+    text = "".join(b.text for b in response.content if b.type == "text").strip()
+    return text if len(text) > 120 else None
+
+def generate_briefs(all_items):
+    """Attach an original TOP Newsdesk brief to each story, cached across builds."""
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        print("\nBriefs: ANTHROPIC_API_KEY not set — publishing with feed summaries.")
+        return
+    try:
+        import anthropic
+    except ImportError:
+        print("\nBriefs: `anthropic` package not installed — publishing with feed summaries.")
+        return
+    try:
+        cache = json.loads(BRIEFS_CACHE.read_text(encoding="utf-8")) if BRIEFS_CACHE.exists() else {}
+    except Exception:
+        cache = {}
+    now_ts = datetime.now(timezone.utc).timestamp()
+    for it in all_items:
+        entry = cache.get(it["pid"])
+        if entry:
+            it["brief"] = entry["brief"]
+    todo = [i for i in sorted(all_items, key=lambda x: x["score"], reverse=True)
+            if "brief" not in i][:MAX_BRIEFS_PER_RUN]
+    if not todo:
+        print("\nBriefs: cache warm — nothing new to write.")
+        return
+
+    client = anthropic.Anthropic()
+
+    def safe(item):
+        try:
+            return write_brief(client, item)
+        except Exception as e:  # any per-story failure falls back to the feed summary
+            print(f"  ✗ brief failed ({item['pid']}): {type(e).__name__}")
+            return None
+
+    written = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+        for it, brief in zip(todo, ex.map(safe, todo)):
+            if brief:
+                it["brief"] = brief
+                cache[it["pid"]] = {"brief": brief, "ts": now_ts}
+                written += 1
+    cache = {k: v for k, v in cache.items() if now_ts - v.get("ts", now_ts) < 60 * 86400}
+    try:
+        BRIEFS_CACHE.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+    except Exception:
+        pass
+    print(f"\nBriefs: wrote {written} new of {len(todo)} attempted; cache holds {len(cache)}.")
+
 def dedupe(items):
     seen, out = set(), []
     for it in items:
@@ -440,8 +589,8 @@ def build_lang(lang):
         if per_source[it["source_id"]] <= caps.get(it["source_id"], PER_SOURCE_CAP):
             capped.append(it)
     print(f"  → {len(capped)} items after dedupe/cap")
+    enrich_images(capped)
     return capped
-
 # ---------- localization ----------
 
 STR = {
@@ -478,6 +627,8 @@ STR = {
         "research_kicker": "FEATURED REPORT",
         "title_suffix": "Independent Palestine News",
         "read_original": "Read the full story at",
+        "photo_via": "Photo via",
+        "byline": "By TOP Newsdesk",
         "keep_reading": "Keep Reading",
         "back_home": "← All the news",
         "summary_note": "Summary curated by Times of Palestine. The full story belongs to its publisher.",
@@ -522,6 +673,8 @@ STR = {
         "research_kicker": "تقرير مميز",
         "title_suffix": "أخبار فلسطين المستقلة",
         "read_original": "اقرأ المادة كاملة في",
+        "photo_via": "الصورة عبر",
+        "byline": "غرفة أخبار «تايمز أوف فلسطين»",
         "keep_reading": "تابع القراءة",
         "back_home": "كل الأخبار ←",
         "summary_note": "الملخص من إعداد «تايمز أوف فلسطين». المادة الكاملة ملك لناشرها الأصلي.",
@@ -585,7 +738,6 @@ def time_ago(date, lang):
     if hours < 24:
         return f"{hours}h ago"
     return f"{round(hours / 24)}d ago"
-
 # ---------- CSS (shared by both languages; logical properties handle RTL) ----------
 
 CSS = """
@@ -653,6 +805,7 @@ nav.sections a.home{color:#ff8896}
 .hero h2 a:hover{color:var(--red)}
 .hero .dek{margin-top:.7rem;font-size:1.02rem;color:#3c3c44;font-family:var(--serif);line-height:1.55}
 [lang=ar] .hero .dek{line-height:1.8}
+.photocredit{font-size:.66rem;color:#9a9aa2;margin-top:.35rem}
 .meta{display:flex;align-items:center;gap:.6rem;margin-top:.8rem;font-size:.74rem;color:var(--muted)}
 .meta .src{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.06em}
 [lang=ar] .meta .src{letter-spacing:0}
@@ -667,7 +820,7 @@ nav.sections a.home{color:#ff8896}
 
 .latest h2{font-size:.8rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--black);border-bottom:3px solid var(--red);padding-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
 [lang=ar] .latest h2{letter-spacing:.02em;font-size:.95rem}
-.latest h2::before{content:"";width:9px;height:9px;background:var(--red)}
+.latest h2::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite}
 .latest ol{list-style:none}
 .latest li{padding-block:.8rem;border-bottom:1px solid var(--line)}
 .latest .t{color:var(--red);font-weight:800;font-size:.68rem;letter-spacing:.05em;display:block;margin-bottom:.2rem}
@@ -677,7 +830,6 @@ nav.sections a.home{color:#ff8896}
 .latest h3 a:hover{color:var(--red)}
 .latest .s{font-size:.68rem;color:var(--muted);font-weight:600;text-transform:uppercase;margin-top:.2rem;display:block}
 [lang=ar] .latest .s{text-transform:none;font-size:.75rem}
-
 section.block{padding-block:1.6rem;border-top:1px solid var(--line-dark)}
 .sec-head{display:flex;align-items:baseline;gap:.8rem;margin-bottom:1.2rem}
 .sec-head::before{content:"";width:12px;height:12px;background:var(--green);align-self:center}
@@ -749,7 +901,10 @@ nav.sections a.tip{color:#3fd07c;border-color:#3fd07c;margin-inline-start:auto}
 [lang=ar] .story h1{font-weight:700;line-height:1.5}
 .story .meta{margin-top:1rem;font-size:.8rem}
 .story img.lede{width:100%;aspect-ratio:16/9;object-fit:cover;background:#e8e6df;margin-top:1.4rem}
-.story .summary{margin-top:1.5rem;font-family:var(--serif);font-size:1.13rem;line-height:1.7;color:#26262e}
+.story .byline{margin-top:1.4rem;font-size:.74rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.1em}
+[lang=ar] .story .byline{letter-spacing:0;text-transform:none;font-size:.85rem}
+.story .summary{margin-top:1rem;font-family:var(--serif);font-size:1.13rem;line-height:1.7;color:#26262e}
+.story .summary+.summary{margin-top:.9rem}
 [lang=ar] .story .summary{line-height:2}
 .story .cta{margin-top:1.8rem;text-align:center;border-block:1px solid var(--line);padding-block:1.5rem}
 .story .cta a{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:1rem;padding:.9rem 2rem;border-radius:3px}
@@ -804,7 +959,6 @@ LOCK_SVG = ('<svg class="lock" width="54" height="54" viewBox="0 0 24 24" fill="
 FONTS = ("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800"
          "&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;0,8..60,900;1,8..60,700"
          "&family=Cairo:wght@400;600;700;800;900&family=Amiri:ital,wght@0,700;1,400&display=swap")
-
 # ---------- components ----------
 
 def href(it, pfx):
@@ -929,6 +1083,7 @@ def render_page(lang, items, built_at):
         hero_dek = f'<p class="dek">{esc(hero["dek"])}</p>' if hero["dek"] else ""
         hero_html = (f'<p class="label">{t["hero_label"]}</p>'
                      f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt=""></a>'
+                     f'<p class="photocredit">{t["photo_via"]} {esc(hero["source"])}</p>'
                      f'<h2><a href="{href(hero, P)}">{esc(hero["title"])}</a></h2>'
                      f'{hero_dek}{meta_line(hero, lang)}')
 
@@ -946,7 +1101,6 @@ def render_page(lang, items, built_at):
         f'<span>{SIGNAL_USERNAME}</span></div></div>'
         f'<p class="safety">{t["tips_safety"]}</p>'
         f'</div></section>')
-
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
 <head>
@@ -1011,8 +1165,14 @@ def render_page(lang, items, built_at):
 def render_story(it, lang, related, built_at):
     """Internal story page: summary + credit link out + Keep Reading grid. Readers circulate."""
     t = STR[lang]
-    lede = f'<img class="lede" src="{esc(it["image"])}" alt="">' if it["image"] else ""
-    summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""
+    lede = (f'<img class="lede" src="{esc(it["image"])}" alt="">'
+            f'<p class="photocredit">{t["photo_via"]} {esc(it["source"])}</p>') if it["image"] else ""
+    if it.get("brief"):  # original TOP Newsdesk brief, written by Claude, cached per story
+        paras = "".join(f'<p class="summary">{esc(p.strip())}</p>'
+                        for p in it["brief"].split("\n") if p.strip())
+        summary = f'<p class="byline">{t["byline"]}</p>{paras}'
+    else:
+        summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""
     related_cards = "".join(card(r, lang, "") for r in related)
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
@@ -1020,7 +1180,7 @@ def render_story(it, lang, related, built_at):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(it['title'])} — {t['site_name']}</title>
-<meta name="description" content="{esc(it['dek'][:155])}">
+<meta name="description" content="{esc((it.get('brief') or it['dek']).replace(chr(10), ' ')[:155])}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
 <style>{CSS}</style>
@@ -1071,6 +1231,10 @@ def main():
     built_at = datetime.now(timezone.utc)
     en_items = build_lang("en")
     ar_items = build_lang("ar")
+    try:
+        generate_briefs(en_items + ar_items)
+    except Exception as e:  # the briefs layer must never block publication
+        print(f"\nBriefs: stage failed ({type(e).__name__}) — publishing with feed summaries.")
 
     dist = ROOT / "dist"
     for lang, items in (("en", en_items), ("ar", ar_items)):
@@ -1093,7 +1257,8 @@ def main():
     if qr.exists():
         (dist / "signal-qr.png").write_bytes(qr.read_bytes())
     (dist / "data.json").write_text(json.dumps(
-        {"builtAt": built_at.isoformat(), "en": len(en_items), "ar": len(ar_items)}, indent=2))
+        {"builtAt": built_at.isoformat(), "en": len(en_items), "ar": len(ar_items),
+         "briefs": sum(1 for i in en_items + ar_items if i.get("brief"))}, indent=2))
 
     print(f"\nBuilt dist/ — EN {len(en_items)} stories, AR {len(ar_items)} stories.")
     if not en_items and not ar_items:
