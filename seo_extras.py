@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 # Public Telegram channel; posts go out via a bot the founder controls.
 # The bot token lives ONLY in the TELEGRAM_BOT_TOKEN repo secret — never here,
 # never in logs. Without the secret this feature silently does nothing.
-TELEGRAM_CHANNEL = "@timeofpalestin"
+TELEGRAM_CHANNEL = "@timesofpalestin"
 TELEGRAM_MAX_PER_BUILD = 8  # stay far below Telegram's per-chat rate limits
 
 # IndexNow (indexnow.org): instant URL submission to Bing/Yandex/Seznam/naver.
