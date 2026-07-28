@@ -562,7 +562,7 @@ def write_brief(client, item):
         first, _, rest = text.partition(chr(10))
         item["title"] = truncate(first[len("HEADLINE:"):].strip(" *"), 200)
         text = rest.strip()
-    return text if len(text) > 120 and not REFUSAL_RX.search(text) else None
+    return text if len(text) > (120 if excerpt else 60) and not REFUSAL_RX.search(text) else None
 def generate_briefs(all_items):
     """Attach an original TOP Newsdesk brief to each story, cached across builds."""
     if not os.environ.get("ANTHROPIC_API_KEY"):
