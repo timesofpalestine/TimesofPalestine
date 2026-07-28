@@ -1385,7 +1385,7 @@ def render_page(lang, items, built_at):
 
     hero_subs_html = "".join(sub_item(it, lang, P) for it in hero_subs)
     latest_html = "".join(latest_item(it, lang, P) for it in latest)
-    gaza_panel = __import__("gaza_index").panel(lang); tips_band = (
+    gaza_panel = __import__("gaza_panel").panel(lang); tips_band = (
         f'<section class="tipband" id="tips"><div class="wrap">{LOCK_SVG}'
         f'<div class="txt"><p class="kick">{t["tips_kicker"]}</p>'
         f'<h2>{t["tips_title"]}</h2><p class="sub">{t["tips_sub"]}</p></div>'
