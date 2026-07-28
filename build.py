@@ -534,7 +534,7 @@ def generate_briefs(all_items):
         print("\nBriefs: cache warm — nothing new to write.")
         return
 
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"].strip())
+    key = re.sub(r"\s+", "", os.environ["ANTHROPIC_API_KEY"]); print(f"Briefs: key length {len(key)}, format {'ok' if re.fullmatch(r'sk-ant-[A-Za-z0-9_-]+', key) else 'UNEXPECTED'}"); client = anthropic.Anthropic(api_key=key)
 
     def safe(item):
         try:
