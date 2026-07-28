@@ -136,6 +136,26 @@ CHRISTIANS_RX = re.compile(
     r"مسيحي|المسيحيين|مسيحيو|مسيحيي|كنيسة|كنائس|كنسي|رهبان|راهب|كاهن|بطريرك|بطريركية|"
     r"الأرثوذكس|الكاثوليك|اللاتينية|عيد الميلاد|كنيسة المهد|الطيبة", re.I)
 
+# The Palestinian diaspora — communities, refugees and second generations worldwide.
+DIASPORA_RX = re.compile(
+    r"diaspora|palestinian[- ](?:american|british|canadian|australian|european)s?|"
+    r"palestinian communit|palestinian expat|refugees? in (?:lebanon|jordan|syria|europe|chile|"
+    r"the us|america)|"
+    r"الشتات|الجالية الفلسطينية|جاليات|مغترب|فلسطينيو الخارج|فلسطينيي الخارج|"
+    r"مخيمات لبنان|مخيمات الأردن|مخيمات سوريا|اللاجئون الفلسطينيون في", re.I)
+
+# Palestinian art & artists worldwide — culture as identity and testimony.
+ARTS_RX = re.compile(
+    r"artist|painter|sculpt|exhibit|gallery|mural|filmmaker|documentary|"
+    r"\bpoet\b|poetry|novelist|musician|singer|\bdabke\b|embroidery|tatreez|"
+    r"فنان|فنانة|تشكيلي|معرض|لوحة|جدارية|مخرج|وثائقي|شاعر|شاعرة|روائي|"
+    r"موسيقي|مغني|مغنية|دبكة|تطريز", re.I)
+
+# Real lives — the human stories behind the headlines: profiles, testimony, memory.
+REAL_LIVES_RX = re.compile(
+    r"story of|life of|survivor|remembers|testimony|his story|her story|"
+    r"قصة|حكاية|يروي|تروي|شهادة|ناجٍ|ناجية|شاهد على|صرخة", re.I)
+
 # Corruption, transparency & democratic accountability — wherever it sits, incl. the PA.
 ACCOUNTABILITY_RX = re.compile(
     r"corrupt|nepotis|briber|embezzl|cronyis|\bgraft\b|kleptocra|"
@@ -195,10 +215,15 @@ def score_item(item):
         s -= 15
     return round(s, 2)
 
+# NOTE: Palestinian Christians deliberately have no section of their own — that
+# coverage runs through the general report (with a ranking boost) because it IS
+# the story of Palestine and Jerusalem, not a sidebar.
 CATEGORY_RULES = [
-    ("christians", CHRISTIANS_RX),
     ("accountability", ACCOUNTABILITY_RX),
     ("bitcoin", BITCOIN_RX),
+    ("diaspora", DIASPORA_RX),
+    ("arts", ARTS_RX),
+    ("humans", REAL_LIVES_RX),
     ("gaza", re.compile(
         r"gaza|rafah|khan younis|deir al[- ]balah|beit lahia|jabalia|"
         r"غزة|غزّة|رفح|خان يونس|دير البلح|جباليا|بيت لاهيا", re.I)),
@@ -672,7 +697,9 @@ STR = {
         "switch_lang": "العربية", "switch_href": "../ar/",
         "hero_label": "TOP STORY",
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
-                     "christians": "Palestinian Christians",
+                     "humans": "Real Lives",
+                     "diaspora": "The Diaspora",
+                     "arts": "Art & Artists",
                      "accountability": "Transparency & Accountability",
                      "research": "Research & Investigations",
                      "bitcoin": "Bitcoin & Financial Freedom",
@@ -721,7 +748,9 @@ STR = {
         "switch_lang": "English", "switch_href": "../en/",
         "hero_label": "الخبر الأبرز",
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
-                     "christians": "مسيحيو فلسطين",
+                     "humans": "حكايات فلسطينية",
+                     "diaspora": "الشتات الفلسطيني",
+                     "arts": "الفن والفنانون",
                      "accountability": "شفافية ومساءلة",
                      "research": "أبحاث وتحقيقات",
                      "bitcoin": "بيتكوين والحرية المالية",
@@ -760,12 +789,12 @@ STR = {
 # Focus sections sit high on the page; each edition leads with its editorial priority.
 # Research (think tanks / OSINT) comes first: news before it becomes news.
 SECTION_ORDER = {
-    "en": ["research", "gaza", "westbank", "christians", "accountability", "bitcoin",
-           "politics", "economy", "culture", "social", "opinion", "news"],
-    "ar": ["research", "gaza", "westbank", "accountability", "christians", "bitcoin",
-           "politics", "economy", "culture", "social", "opinion", "news"],
+    "en": ["research", "gaza", "westbank", "humans", "diaspora", "arts", "accountability",
+           "bitcoin", "politics", "economy", "culture", "social", "opinion", "news"],
+    "ar": ["research", "gaza", "westbank", "accountability", "humans", "diaspora", "arts",
+           "bitcoin", "politics", "economy", "culture", "social", "opinion", "news"],
 }
-FOCUS_SECTIONS = {"research", "christians", "accountability", "bitcoin", "social"}  # shown even with one story
+FOCUS_SECTIONS = {"research", "humans", "diaspora", "arts", "accountability", "bitcoin", "social"}  # shown even with one story
 
 WEEKDAYS_AR = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
 MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",
