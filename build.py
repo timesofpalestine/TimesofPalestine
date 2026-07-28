@@ -141,7 +141,7 @@ CHRISTIANS_RX = re.compile(
 # The Palestinian diaspora — communities, refugees and second generations worldwide.
 DIASPORA_RX = re.compile(
     r"diaspora|palestinian[- ](?:american|british|canadian|australian|european)s?|"
-    r"palestinian communit|palestinian expat|refugees? in (?:lebanon|jordan|syria|europe|chile|"
+    r"palestinians abroad|palestinian expat|refugees? in (?:lebanon|jordan|syria|europe|chile|"
     r"the us|america)|"
     r"الشتات|الجالية الفلسطينية|جاليات|مغترب|فلسطينيو الخارج|فلسطينيي الخارج|"
     r"مخيمات لبنان|مخيمات الأردن|مخيمات سوريا|اللاجئون الفلسطينيون في", re.I)
@@ -150,7 +150,7 @@ DIASPORA_RX = re.compile(
 ARTS_RX = re.compile(
     r"artist|painter|sculpt|exhibit|gallery|mural|filmmaker|documentary|"
     r"\bpoet\b|poetry|novelist|musician|singer|\bdabke\b|embroidery|tatreez|"
-    r"فنان|فنانة|تشكيلي|معرض|لوحة|جدارية|مخرج|وثائقي|شاعر|شاعرة|روائي|"
+    r"فنان|فنانة|تشكيلي|معرض|لوحة|جدارية|مخرج(?!ات)|وثائقي|شاعر|شاعرة|روائي|"
     r"موسيقي|مغني|مغنية|دبكة|تطريز", re.I)
 
 # Real lives — the human stories behind the headlines: profiles, testimony, memory.
@@ -172,11 +172,13 @@ BITCOIN_RX = re.compile(
     r"bitcoin|\bbtc\b|satoshi|lightning network|\bsats\b|"
     r"بيتكوين|بتكوين|البيتكوين|ساتوشي|شبكة البرق", re.I)
 
-# For Bitcoin Magazine etc.: keep the freedom/rights/adoption stories, drop pure market noise.
+# For Bitcoin Magazine and the radar queries: keep the freedom/rights/adoption
+# stories, drop pure market and product noise.
 BTC_FREEDOM_RX = re.compile(
-    r"financial freedom|human rights|gladstein|dorsey|palestin|gaza|west bank|middle east|"
+    r"financial freedom|human rights|palestin|gaza|west bank|middle east|"
     r"remittance|censorship|authoritarian|unbanked|self.?custody|circular econom|"
-    r"global south|sanction|dictator|freedom money|financial repression", re.I)
+    r"global south|sanction|dictator|freedom money|financial repression|"
+    r"فلسطين|غزة|الحرية المالية|حقوق الإنسان|عقوبات|رقابة|تحويلات|الشرق الأوسط", re.I)
 
 FOCUS_BOOST = 30      # score boost for editorial focus topics
 RESEARCH_BOOST = 22   # think-tank / OSINT reports: "news before it becomes news"
@@ -249,6 +251,8 @@ CATEGORY_RULES = [
         r"sport|football|olympi|"
         r"ثقافة|فنان|فيلم|سينما|شاعر|موسيقى|تراث|متحف|مطبخ|رياضة|كرة القدم", re.I)),
 ]
+
+CATEGORY_RX = dict(CATEGORY_RULES)  # section key → its own relevance test
 
 OPINION_URL_RX = re.compile(r"/(opinion|op-ed|analysis|commentary|blog|مقالات)\b", re.I)
 OPINION_CAT_RX = re.compile(r"opinion|analysis|commentary|رأي|تحليل|مقال", re.I)
@@ -390,8 +394,13 @@ def finish_item(item, feed):
         item["cat"] = "social"
     elif feed.get("research"):
         item["cat"] = "research"
-    elif feed.get("category"):  # query-scoped feeds (e.g. Bitcoin radar) pre-decide their section
-        item["cat"] = feed["category"]
+    elif feed.get("category"):  # feeds that pre-decide their section
+        cat = feed["category"]
+        if feed.get("type") == "gnews":  # search results must pass the section's own test
+            rx = CATEGORY_RX.get(cat)
+            if not (rx and rx.search(f"{item['title']} {item['dek']}")):
+                cat = categorize(item)
+        item["cat"] = cat
     else:
         item["cat"] = categorize(item)
     item["max_age_hours"] = feed.get("maxAgeHours", MAX_AGE_HOURS)
@@ -1230,7 +1239,11 @@ def render_page(lang, items, built_at):
     pal_news = [i for i in items if i["cat"] != "social" and palestine(i)]
     ticker_items = (pal_news or [i for i in items if i["cat"] != "social"])[:6]
 
-    sections = {k: diversify(take(by_score, lambda i, k=k: i["cat"] == k, 8)) for k in order}
+    # Topical sections carry Palestine coverage only; world items from Palestinian
+    # outlets live in More News. Research and Bitcoin are thematic by construction.
+    sections = {k: diversify(take(by_score, lambda i, k=k: i["cat"] == k
+                                  and (k in ("research", "bitcoin", "news") or palestine(i)), 8))
+                for k in order}
     sections["news"] += take(by_score, lambda i: True, max(0, 8 - len(sections["news"])))
     P = "story/"  # homepage → story pages live one level down
 
