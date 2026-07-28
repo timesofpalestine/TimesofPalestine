@@ -1369,7 +1369,7 @@ def main():
         if i.get("needs_translation") and ARABIC_CHARS_RX.search(i["dek"]):
             i["dek"] = ""
 
-    dist = ROOT / "dist"
+    en_items = [i for i in en_items if i["cat"] == "social" or i.get("brief") or i["dek"]]; ar_items = [i for i in ar_items if i["cat"] == "social" or i.get("brief") or i["dek"]]; dist = ROOT / "dist"
     for lang, items in (("en", en_items), ("ar", ar_items)):
         import shutil
         shutil.rmtree(dist / lang / "story", ignore_errors=True)  # drop stale story pages
