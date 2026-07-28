@@ -534,7 +534,7 @@ def generate_briefs(all_items):
         print("\nBriefs: cache warm — nothing new to write.")
         return
 
-    client = anthropic.Anthropic()
+    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"].strip())
 
     def safe(item):
         try:
