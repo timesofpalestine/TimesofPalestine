@@ -415,7 +415,7 @@ TG_MSG_RX = re.compile(r'class="tgme_widget_message_wrap.*?(?=class="tgme_widget
 TG_TEXT_RX = re.compile(r'class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>', re.S)
 TG_DATE_RX = re.compile(r'<time datetime="([^"]+)"')
 TG_LINK_RX = re.compile(r'class="tgme_widget_message_date"[^>]*href="([^"]+)"')
-TG_PHOTO_RX = re.compile(r"background-image:url\('([^']+)'\)")
+TG_PHOTO_RX = re.compile(r"tgme_widget_message_photo_wrap[^>]*background-image:url\('([^']+)'\)")
 # Channel posts carry emoji and hashtags; neither belongs in a news headline.
 EMOJI_RX = re.compile("[\\U0001F000-\\U0001FAFF\\U0001FB00-\\U0001FBFF"
                       "\\u2600-\\u27BF\\u2B00-\\u2BFF\\u2190-\\u21FF\\u2300-\\u23FF\\uFE0F\\u200D]")
