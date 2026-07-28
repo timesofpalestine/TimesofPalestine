@@ -1,11 +1,21 @@
-"""SEO extras for Times of Palestine: Google News sitemap, IndexNow, About pages.
+"""SEO extras for Times of Palestine: Google News sitemap, IndexNow, About pages,
+and the Telegram channel auto-poster.
 
 Kept in a separate module so build.py needs only a one-line hook. Everything
 here is fail-open — discoverability plumbing must never block publication.
 """
 import json
+import os
+import time
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
+
+# Public Telegram channel; posts go out via a bot the founder controls.
+# The bot token lives ONLY in the TELEGRAM_BOT_TOKEN repo secret — never here,
+# never in logs. Without the secret this feature silently does nothing.
+TELEGRAM_CHANNEL = "@timeofpalestin"
+TELEGRAM_MAX_PER_BUILD = 8  # stay far below Telegram's per-chat rate limits
 
 # IndexNow (indexnow.org): instant URL submission to Bing/Yandex/Seznam/naver.
 # No account needed — the key is proven by hosting <key>.txt at the site root.
@@ -175,14 +185,56 @@ def ping_indexnow(langs_items, base_url):
         return r.status, len(fresh)
 
 
+def post_telegram(dist, langs_items, base_url):
+    """Post new stories to the TOP Telegram channel, once each, newest first.
+
+    Posted-story markers ride in briefs-cache.json (already persisted between
+    builds by the workflow cache). The very first run with a token seeds the
+    cache silently so the channel is not flooded with the whole backlog."""
+    token = "".join(os.environ.get("TELEGRAM_BOT_TOKEN", "").split())
+    if not token:
+        return
+    cache_path = dist.parent / "briefs-cache.json"
+    try:
+        cache = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
+    except Exception:
+        cache = {}
+    now_ts = datetime.now(timezone.utc).timestamp()
+    items = sorted((it for _, lang_items in langs_items for it in lang_items),
+                   key=lambda i: i["date"], reverse=True)
+    fresh = [i for i in items if f"tg:{i['lang']}:{i['pid']}" not in cache]
+    if not any(k.startswith("tg:") for k in cache):  # first run: seed, don't flood
+        for it in fresh:
+            cache[f"tg:{it['lang']}:{it['pid']}"] = {"ts": now_ts}
+        cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+        print(f"  → Telegram: first run — seeded {len(fresh)} stories, posting starts next build")
+        return
+    posted = 0
+    for it in fresh[:TELEGRAM_MAX_PER_BUILD]:
+        text = f"{it['title']}\n\n{base_url}/{it['lang']}/story/{it['pid']}.html"
+        body = urllib.parse.urlencode({"chat_id": TELEGRAM_CHANNEL, "text": text}).encode()
+        try:
+            req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=body)
+            with urllib.request.urlopen(req, timeout=15) as r:
+                if r.status == 200:
+                    cache[f"tg:{it['lang']}:{it['pid']}"] = {"ts": now_ts}
+                    posted += 1
+        except Exception:
+            break  # rate limit or outage — try again next build
+        time.sleep(3)
+    try:
+        cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+    except Exception:
+        pass
+    print(f"  → Telegram: posted {posted} new stories to {TELEGRAM_CHANNEL}")
+
+
 def write_extras(dist, langs_items, built_at, base_url):
     """Hook called from build.py main() after the standard sitemap/robots write."""
     try:
         (dist / "news-sitemap.xml").write_text(
             render_news_sitemap(langs_items, built_at, base_url), encoding="utf-8")
-        (dist / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")
-        for f in dist.parent.glob("google*.html"):  # search-engine ownership proofs
-            (dist / f.name).write_text(f.read_text(encoding="utf-8"), encoding="utf-8")
+        (dist / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8"); [(dist / f.name).write_text(f.read_text(encoding="utf-8"), encoding="utf-8") for f in dist.parent.glob("google*.html")]
         robots = dist / "robots.txt"
         robots.write_text(robots.read_text(encoding="utf-8")
                           + f"Sitemap: {base_url}/news-sitemap.xml\n", encoding="utf-8")
@@ -202,3 +254,7 @@ def write_extras(dist, langs_items, built_at, base_url):
         print(f"  → IndexNow: submitted {n} fresh URLs (HTTP {status})")
     except Exception as e:  # network hiccups must not fail the build
         print(f"  → IndexNow ping skipped ({type(e).__name__})")
+    try:
+        post_telegram(dist, langs_items, base_url)
+    except Exception as e:  # the channel must never block the site
+        print(f"  → Telegram posting skipped ({type(e).__name__})")
