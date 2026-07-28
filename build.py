@@ -703,7 +703,7 @@ def generate_briefs(all_items):
             it["brief"] = entry["brief"]
             if entry.get("title"):  # translated headline saved alongside the brief
                 it["title"] = entry["title"]
-    todo = [i for i in sorted(all_items, key=lambda x: (x.get("needs_translation", False), not x["dek"], x["score"]),
+    todo = [i for i in sorted(all_items, key=lambda x: (x.get("needs_translation", False), x.get("exclusive", False), not x["dek"], x["score"]),
                               reverse=True) if "brief" not in i][:MAX_BRIEFS_PER_RUN]
     field_new = [i for i in all_items if i["cat"] == "social"
                  and f"vet:{i['lang']}:{i['pid']}" not in cache]
