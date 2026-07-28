@@ -61,7 +61,7 @@ def write_extras(dist, langs_items, built_at, base_url):
     try:
         (dist / "news-sitemap.xml").write_text(
             render_news_sitemap(langs_items, built_at, base_url), encoding="utf-8")
-        (dist / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")
+        (dist / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8"); [(dist / f.name).write_text(f.read_text(encoding="utf-8"), encoding="utf-8") for f in dist.parent.glob("google*.html")]
         robots = dist / "robots.txt"
         robots.write_text(robots.read_text(encoding="utf-8")
                           + f"Sitemap: {base_url}/news-sitemap.xml\n", encoding="utf-8")
