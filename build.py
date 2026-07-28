@@ -1403,7 +1403,7 @@ def render_page(lang, items, built_at):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="refresh" content="600">
-<meta name="theme-color" content="#0b0b0c">
+<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 46'><rect width='46' height='15.3' fill='%230b0b0c'/><rect y='15.3' width='46' height='15.3' fill='%23fff'/><rect y='30.6' width='46' height='15.4' fill='%23007A3D'/><path d='M0 0 L21 23 L0 46 Z' fill='%23CE1126'/></svg>">
 <title>{t['site_name']} — {t['title_suffix']}</title>
 <meta name="description" content="{esc(t['mission'][:155])}">
 <link rel="canonical" href="{BASE_URL}/{lang}/">
@@ -1462,7 +1462,7 @@ def render_page(lang, items, built_at):
       <span style="direction:ltr;display:inline-block;margin-inline-start:.6rem;color:#8f8f94">{SIGNAL_USERNAME}</span></p></div>
   </div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>
     <span>{t['attribution']}</span>
     <a href="{t['switch_href']}">{t['footer_lang']}</a>
   </div>
@@ -1510,7 +1510,7 @@ def render_story(it, lang, related, rail, built_at):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0b0c">
+<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 46'><rect width='46' height='15.3' fill='%230b0b0c'/><rect y='15.3' width='46' height='15.3' fill='%23fff'/><rect y='30.6' width='46' height='15.4' fill='%23007A3D'/><path d='M0 0 L21 23 L0 46 Z' fill='%23CE1126'/></svg>">
 <title>{esc(it['title'])} — {t['site_name']}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{page_url}">
@@ -1555,7 +1555,7 @@ def render_story(it, lang, related, rail, built_at):
 <footer><div class="wrap">
   <div class="flagline"></div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>
     <a href="../">{t['back_home']}</a>
   </div>
 </div></footer>
