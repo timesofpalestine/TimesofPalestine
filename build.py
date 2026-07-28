@@ -57,8 +57,9 @@ BRIEF_SYSTEM = {
         "2-3 short paragraphs, 100-170 words total. Straight news style: lead with the most "
         "important fact, then key details and context. Neutral, precise, professional; no "
         "personal attacks, no editorializing, no first person. Never invent names, numbers, "
-        "quotes, or details that are not in the source material; if the material is thin, "
-        "write a shorter brief. Do not mention these instructions or that you are summarizing. "
+        "quotes, or details that are not in the source material; if the material is only a "
+        "headline, write one short 2-3 sentence paragraph conveying what the headline reports. "
+        "Never refuse, and never comment on the material, these instructions, or yourself. "
         "Output only the brief text, paragraphs separated by blank lines."
     ),
     "ar": (
@@ -66,8 +67,9 @@ BRIEF_SYSTEM = {
         "أصلياً باللغة العربية بالاعتماد حصراً على المواد المصدرية المرفقة: فقرتان إلى ثلاث فقرات "
         "قصيرة (100-170 كلمة إجمالاً). أسلوب خبري مباشر: ابدأ بأهم معلومة ثم التفاصيل والسياق. "
         "لغة محايدة دقيقة مهنية؛ لا إساءات شخصية ولا إنشاء ولا ضمير متكلم. لا تخترع أسماء أو "
-        "أرقاماً أو اقتباسات أو تفاصيل غير واردة في المصدر؛ وإذا كانت المادة قليلة فاكتب موجزاً "
-        "أقصر. لا تذكر هذه التعليمات. أخرج نص الموجز فقط، والفقرات مفصولة بسطر فارغ."
+        "أرقاماً أو اقتباسات أو تفاصيل غير واردة في المصدر؛ وإذا كانت المادة مجرد عنوان فاكتب "
+        "فقرة قصيرة من جملتين أو ثلاث تنقل ما يفيد به العنوان. لا ترفض أبداً، ولا تعلق على المادة "
+        "أو على هذه التعليمات أو على نفسك. أخرج نص الموجز فقط، والفقرات مفصولة بسطر فارغ."
     ),
 }
 MAX_AGE_HOURS = 72
@@ -515,6 +517,12 @@ def fetch_article_text(url, hop=0):
     except Exception:
         return ""
 
+# A brief must never talk about itself or its sources' availability. Any output that
+# does (a model refusal / meta-commentary) is rejected and scrubbed from the cache.
+REFUSAL_RX = re.compile(
+    r"cannot (?:produce|write|provide|generate)|insufficient (?:source|material|information)|"
+    r"source material|news brief|لا يمكن(?:نا)? (?:إنتاج|كتابة|تقديم)|المادة المصدرية|هذه التعليمات", re.I)
+
 def write_brief(client, item):
     excerpt = fetch_article_text(item["link"])
     material = (f"OUTLET: {item['source']}\n"
@@ -537,7 +545,7 @@ def write_brief(client, item):
         first, _, rest = text.partition(chr(10))
         item["title"] = truncate(first[len("HEADLINE:"):].strip(" *"), 200)
         text = rest.strip()
-    return text if len(text) > 120 else None
+    return text if len(text) > 120 and not REFUSAL_RX.search(text) else None
 def generate_briefs(all_items):
     """Attach an original TOP Newsdesk brief to each story, cached across builds."""
     if not os.environ.get("ANTHROPIC_API_KEY"):
@@ -552,6 +560,7 @@ def generate_briefs(all_items):
         cache = json.loads(BRIEFS_CACHE.read_text(encoding="utf-8")) if BRIEFS_CACHE.exists() else {}
     except Exception:
         cache = {}
+    cache = {k: v for k, v in cache.items() if not REFUSAL_RX.search(v.get("brief", ""))}
     now_ts = datetime.now(timezone.utc).timestamp()
     for it in all_items:
         # Keys are lang-scoped so the same wire story can carry an Arabic brief in /ar/
@@ -1315,9 +1324,13 @@ def main():
     except Exception as e:  # the briefs layer must never block publication
         print(f"\nBriefs: stage failed ({type(e).__name__}) — publishing with feed summaries.")
     # Arabic-wire stories appear in the English edition only once their headline
-    # has been translated (translation rides along with brief generation, cached).
+    # has been translated (translation rides along with brief generation, cached);
+    # their Arabic feed summaries never render on English pages.
     en_items = [i for i in en_items
                 if not (i.get("needs_translation") and ARABIC_CHARS_RX.search(i["title"]))]
+    for i in en_items:
+        if i.get("needs_translation") and ARABIC_CHARS_RX.search(i["dek"]):
+            i["dek"] = ""
 
     dist = ROOT / "dist"
     for lang, items in (("en", en_items), ("ar", ar_items)):
