@@ -184,7 +184,7 @@ RELEVANT_RX = re.compile(
 # freedom-money track: money that cannot be frozen, censored, or occupied.
 BITCOIN_RX = re.compile(
     r"bitcoin|\bbtc\b|satoshi|lightning network|\bsats\b|"
-    r"بيتكوين|بتكوين|البيتكوين|ساتوشي|شبكة البرق", re.I); BTC_SECTION_RX = re.compile(BITCOIN_RX.pattern + r"|correspondent bank|de-?risk|cash crisis|excess (?:cash|shekel)|shekel (?:surplus|crisis|glut|pile)|cash (?:surplus|glut|pile|transfer limit)|monetary authority|فائض (?:النقد|الشيكل|السيولة)|أزمة (?:النقد|السيولة|الكاش)|البنوك المراسلة|سلطة النقد", re.I)
+    r"بيتكوين|بتكوين|البيتكوين|ساتوشي|شبكة البرق", re.I); BTC_SECTION_RX = re.compile(BITCOIN_RX.pattern + r"|correspondent bank|de-?risk|cash crisis|excess (?:cash|shekel)|shekel (?:surplus|crisis|glut|pile)|cash (?:surplus|glut|pile|transfer limit)|monetary authority|فائض (?:النقد|الشيكل|السيولة)|أزمة (?:النقد|السيولة|الكاش)|البنوك المراسلة|سلطة النقد|bitchat|بيتشات|ecash|إيكاش", re.I)
 
 # For Bitcoin Magazine and the radar queries: keep the freedom/rights/adoption
 # stories, drop pure market and product noise.
