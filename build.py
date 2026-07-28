@@ -166,6 +166,15 @@ ACCOUNTABILITY_RX = re.compile(
 
 ISRAEL_CONTEXT_RX = re.compile(r"israel|settler|idf|zionis|إسرائيل|مستوطن", re.I)
 
+# Site-wide relevance gate: every published story must concern Palestine, the
+# occupation, or Israeli politics as they bear on Palestinians. World news from
+# Palestinian outlets (earthquakes, sport, foreign politics) never publishes.
+RELEVANT_RX = re.compile(
+    r"palestin|gaza|west bank|jerusalem|bethlehem|ramallah|rafah|khan younis|jenin|nablus|hebron|"
+    r"tulkarem|unrwa|al-aqsa|aqsa|intifada|nakba|settler|israel|\bidf\b|zionis|netanyahu|hamas|"
+    r"فلسطين|الفلسطيني|غزة|غزّة|الضفة|القدس|رام الله|رفح|خان يونس|جنين|نابلس|الخليل|"
+    r"طولكرم|أونروا|الأونروا|الأقصى|الاحتلال|مستوطن|النكبة|إسرائيل|نتنياهو|حماس", re.I)
+
 # Bitcoin & financial freedom — adoption in Palestine, the HRF/Gladstein/Dorsey
 # freedom-money track: money that cannot be frozen, censored, or occupied.
 BITCOIN_RX = re.compile(
@@ -403,6 +412,10 @@ def finish_item(item, feed):
         item["cat"] = cat
     else:
         item["cat"] = categorize(item)
+    # This is a Palestine site. The Bitcoin-freedom track is the only thematic
+    # exemption; research feeds are already gated at the feed level.
+    if item["cat"] not in ("bitcoin", "research") and not RELEVANT_RX.search(hay):
+        return None
     item["max_age_hours"] = feed.get("maxAgeHours", MAX_AGE_HOURS)
     item["score"] = score_item(item)
     item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]  # stable internal page id
