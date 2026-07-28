@@ -933,10 +933,10 @@ STR = {
 # Focus sections sit high on the page; each edition leads with its editorial priority.
 # Research (think tanks / OSINT) comes first: news before it becomes news.
 SECTION_ORDER = {
-    "en": ["research", "gaza", "westbank", "bitcoin", "social", "diaspora", "arts",
+    "en": ["research", "gaza", "westbank", "social", "bitcoin", "diaspora", "arts",
            "accountability", "politics", "economy", "opinion", "news"],
-    "ar": ["research", "gaza", "westbank", "social", "bitcoin", "accountability", "diaspora",
-           "arts", "politics", "economy", "opinion", "news"],
+    "ar": ["research", "gaza", "westbank", "social", "bitcoin", "diaspora", "arts",
+           "accountability", "politics", "economy", "opinion", "news"],
 }
 FOCUS_SECTIONS = {"research", "diaspora", "arts", "accountability", "bitcoin", "social"}  # shown even with one story
 
@@ -1037,7 +1037,7 @@ nav.sections a.home{color:#ff8896}
 .hero{border-inline-end:1px solid var(--line);padding-inline-end:2rem}
 .hero .label{color:var(--red);font-size:.68rem;font-weight:800;letter-spacing:.2em;margin-bottom:.6rem}
 [lang=ar] .hero .label{letter-spacing:.03em;font-size:.8rem}
-.hero img{aspect-ratio:16/9;object-fit:cover;object-position:top;width:100%;background:#ddd}
+.hero img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#ddd}
 .hero h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.13;margin-top:1rem}
 [lang=ar] .hero h2{line-height:1.5;font-weight:700}
 .hero h2 a:hover{color:var(--red)}
@@ -1076,7 +1076,7 @@ section.block{padding-block:1.6rem;border-top:1px solid var(--line-dark)}
 .sec-head h2{font-family:var(--serif);font-weight:900;font-size:1.45rem;color:var(--black)}
 [lang=ar] .sec-head h2{font-weight:700}
 .sec-head .rule{flex:1;height:1px;background:var(--line-dark)}
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.4rem}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.4rem}.grid.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .card img{aspect-ratio:16/10;object-fit:cover;width:100%;background:#e8e6df;margin-bottom:.7rem;transition:opacity .18s}
 .card:hover img,.rowcard:hover img{opacity:.9}
 .card:hover h3 a,.rowcard:hover h3 a{color:var(--red)}
@@ -1358,10 +1358,10 @@ def render_page(lang, items, built_at):
             featured, pool = research_featured(pool[0]), pool[1:]
         if not pool:
             grid = ""
-        elif len(pool) < 4:  # too few for a grid row — full-width rows, no dead space
+        elif len(pool) == 1:  # a lone story reads better full width than as an orphan card
             grid = f'<div class="rowlist">{"".join(rowcard(it, lang, P) for it in pool)}</div>'
         else:
-            grid = f'<div class="grid">{"".join(card(it, lang, P) for it in pool)}</div>'
+            cols = f" g{min(len(pool), 4)}"; grid = f'<div class="grid{cols}">{"".join(card(it, lang, P) for it in pool)}</div>'
         focus_cls = " focus" if k in FOCUS_SECTIONS else ""
         section_blocks += (f'<section class="block" id="{k}"><div class="wrap">'
                            f'<div class="sec-head{focus_cls}"><h2>{t["sections"][k]}</h2><span class="rule"></span></div>'
