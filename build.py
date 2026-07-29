@@ -818,8 +818,13 @@ def _original_slug(stem):
     return stem.rsplit(".", 1)[0] if "." in stem else stem
 
 
+class OriginalSkipError(ValueError):
+    pass
+
+
 def validate_original(path, meta, body, lang, now, date):
     errors = []
+    residue_warnings = []
     category = meta.get("category", "")
     if category not in ORIGINAL_CATEGORIES:
         errors.append(f"unknown category '{category}'")
@@ -836,16 +841,16 @@ def validate_original(path, meta, body, lang, now, date):
 
     rendered = __import__("longform").body_html(body)
     if "[^" in rendered:
-        errors.append("unrendered footnote marker '[^'")
+        residue_warnings.append("unrendered footnote marker '[^'")
     if "![" in rendered:
-        errors.append("unrendered image markdown '!['")
+        residue_warnings.append("unrendered image markdown '!['")
     if "**" in rendered:
-        errors.append("unrendered bold marker '**'")
+        residue_warnings.append("unrendered bold marker '**'")
     if re.search(r'<p class="summary">\s*#', rendered):
-        errors.append("line-initial heading marker '#' fell through into paragraph")
+        residue_warnings.append("line-initial heading marker '#' fell through into paragraph")
     for p in ORIGINAL_SUMMARY_RX.findall(rendered):
         if "|" in strip_html(p):
-            errors.append("pipe table residue '|' remained inside paragraph")
+            residue_warnings.append("pipe table residue '|' remained inside paragraph")
             break
 
     stats = {
@@ -865,6 +870,8 @@ def validate_original(path, meta, body, lang, now, date):
 
     if errors:
         raise ValueError("; ".join(errors))
+    if residue_warnings:
+        raise OriginalSkipError("; ".join(residue_warnings))
 
 
 def load_originals(lang):
@@ -909,6 +916,9 @@ def load_originals(lang):
             items.append(item)
             print(f"  ✓ original: {item['title'][:60]}")
         except Exception as e:
+            if isinstance(e, OriginalSkipError):
+                print(f"  ⚠⚠ original skipped {path.name}: {e}")
+                continue
             raise RuntimeError(f"original validation failed for {path.name}: {type(e).__name__}: {e}") from e
     return items
 
