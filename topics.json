@@ -1,184 +1,41 @@
 {
-  "_comment": "The investigations queue. One topic per generated report, worked through in order and then recycled oldest-first. Add, remove or reorder freely — the generator reads this file every run. 'q' is the reporting question the desk must answer; the sharper it is, the better the piece.",
-  "topics": [
-    {"id": "who-profits-palestinian-economy", "cat": "accountability",
-     "en": "Who is actually making money in the Palestinian economy",
-     "ar": "من يجني الأموال فعلياً في الاقتصاد الفلسطيني",
-     "q": "Which families, holding companies and monopolies dominate Palestinian commerce — PADICO, Paltel/Jawwal, cement and fuel importers, the Palestine Investment Fund? Who owns them, what are their margins, how concentrated is ownership, and who sits on both the boards and the political bodies that regulate them?"},
-
-    {"id": "nizar-banat-impunity", "cat": "accountability",
-     "en": "Nizar Banat, four years on: the trial that never ended",
-     "ar": "نزار بنات بعد أربع سنوات: محاكمة بلا نهاية",
-     "q": "What is the documented status of the military trial of the security officers charged over Nizar Banat's death in June 2021? How many hearings, how many adjournments, where are the accused now, what have his family, Al-Haq, Amnesty and the Independent Commission for Human Rights said, and what did the PA's own investigative committee conclude?"},
-
-    {"id": "committees-that-vanished", "cat": "accountability",
-     "en": "The committees that were formed and never reported",
-     "ar": "لجان شُكّلت ولم تُصدر تقريراً قط",
-     "q": "Catalogue Palestinian investigative and reform committees announced since 2005 that never published findings — Banat, the 2007 events, pension and public-sector reform, electricity arrears, PIF audits. Who chaired each, what were the terms of reference, what happened?"},
-
-    {"id": "abbas-succession", "cat": "politics",
-     "en": "Who replaces Mahmoud Abbas, and who decides",
-     "ar": "من يخلف محمود عباس ومن يقرر",
-     "q": "What are the constitutional mechanisms for succession in the PA and PLO, who are the named contenders, what is the role of the PLO Executive Committee, the Fatah Central Committee and the newly created vice-presidency, and what have Palestinian jurists said about the legality of each route?"},
-
-    {"id": "abbas-family-business", "cat": "accountability",
-     "en": "The Abbas family's business and political footprint",
-     "ar": "نفوذ عائلة عباس في المال والسياسة",
-     "q": "What is documented in published reporting and corporate records about the commercial interests of Mahmoud Abbas's sons, their companies, contracts and any role in fuel, tobacco or telecoms, and about family members entering Fatah institutions? Report only what named outlets and filings have established, and record every denial."},
-
-    {"id": "palestinian-elections", "cat": "politics",
-     "en": "Will Palestinians ever vote again",
-     "ar": "هل يصوّت الفلسطينيون مرة أخرى",
-     "q": "Chronicle every postponed Palestinian election since 2006, the stated reasons, the role of Israeli restrictions on Jerusalem voting, the state of the Central Elections Commission, municipal election turnout, and what polling says Palestinians themselves want."},
-
-    {"id": "work-permit-brokers", "cat": "economy",
-     "en": "The brokers who sell Israeli work permits",
-     "ar": "سماسرة تصاريح العمل",
-     "q": "How does the Israeli work-permit market for Palestinian labourers function, what do brokers charge, how much of a worker's wage is skimmed, who profits on both sides of the Green Line, and what have the Bank of Israel, Kav LaOved and Palestinian labour ministries documented?"},
-
-    {"id": "crossings-and-airports", "cat": "westbank",
-     "en": "The crossing: what Palestinians endure to leave and return",
-     "ar": "المعابر: ما يتحمّله الفلسطينيون للسفر والعودة",
-     "q": "Document the Allenby/King Hussein Bridge bottleneck, Rafah's closure, permit regimes, average waiting times, the cost of VIP passage, the denial of an airport since 2001, and the specific rules that govern who may fly from Ben Gurion."},
-
-    {"id": "settler-violence-impunity", "cat": "westbank",
-     "en": "Settler attacks and the arithmetic of impunity",
-     "ar": "اعتداءات المستوطنين وحساب الإفلات من العقاب",
-     "q": "Using Yesh Din, OCHA and B'Tselem data, what share of Israeli investigations into settler violence end in indictment and conviction? Which outposts recur, what is the documented role of army escorts, and how have sanctions by the EU, UK and US on named settlers played out?"},
-
-    {"id": "clearance-revenues", "cat": "economy",
-     "en": "The money Israel collects and withholds",
-     "ar": "الأموال التي تجبيها إسرائيل وتحتجزها",
-     "q": "How does the Paris Protocol clearance-revenue mechanism work, how much has Israel deducted or withheld and on what legal basis, what has that done to PA salaries and the banking system, and what have the IMF, World Bank and PMA reported?"},
-
-    {"id": "gaza-reconstruction-money", "cat": "gaza",
-     "en": "Who gets paid to rebuild Gaza",
-     "ar": "من يُدفع له لإعادة إعمار غزة",
-     "q": "Trace pledged versus disbursed reconstruction funding, the contractors and intermediaries involved, the rubble and unexploded-ordnance problem, and the record of previous reconstruction mechanisms after 2014."},
-
-    {"id": "aid-economy", "cat": "economy",
-     "en": "The aid economy: who profits from Palestinian need",
-     "ar": "اقتصاد المساعدات: من يربح من الحاجة الفلسطينية",
-     "q": "Which contractors, security firms, logistics companies and consultancies capture humanitarian and development spending for Palestinians, what overheads do they take, and what have audits by donor governments found?"},
-
-    {"id": "prisoners-administrative-detention", "cat": "accountability",
-     "en": "Held without charge: administrative detention by the numbers",
-     "ar": "الاعتقال الإداري بالأرقام",
-     "q": "How many Palestinians are held without charge, including children, under what military orders, for how long on average, and what have HaMoked, Addameer, the ICRC and UN bodies documented about conditions and deaths in custody?"},
-
-    {"id": "journalists-killed", "cat": "accountability",
-     "en": "The deadliest place to be a reporter",
-     "ar": "أخطر مكان لممارسة الصحافة",
-     "q": "How many Palestinian journalists have been killed, by whom, and how many killings produced an investigation or charge? Use CPJ, RSF and IFJ counts, and cover press-freedom pressure from the PA and Hamas as well."},
-
-    {"id": "pa-cybercrime-law", "cat": "accountability",
-     "en": "The law used to arrest Palestinians for posting",
-     "ar": "القانون الذي يُعتقل به الفلسطينيون بسبب منشور",
-     "q": "How has the PA's cybercrime decree been used against journalists, students and critics, how many prosecutions, what do Palestinian bar associations and rights groups say, and how does Hamas police speech in Gaza?"},
-
-    {"id": "water-allocation", "cat": "westbank",
-     "en": "The water arithmetic of the West Bank",
-     "ar": "حساب المياه في الضفة الغربية",
-     "q": "How much water per capita do Palestinians and settlers receive, how does the Joint Water Committee and Mekorot allocation work, how many cisterns and pipelines have been demolished, and what do B'Tselem and the World Bank report?"},
-
-    {"id": "area-c-demolitions", "cat": "westbank",
-     "en": "Building permits in Area C: the paperwork of dispossession",
-     "ar": "رخص البناء في المنطقة ج",
-     "q": "What share of Palestinian permit applications in Area C are approved, how many structures — including donor-funded schools and clinics — have been demolished, and what is the documented displacement toll?"},
-
-    {"id": "jerusalem-residency", "cat": "westbank",
-     "en": "Revoked: how Jerusalemites lose the right to their city",
-     "ar": "سحب الإقامة: كيف يفقد المقدسيون حق مدينتهم",
-     "q": "How does the 'centre of life' rule work, how many residencies have been revoked since 1967, what is happening in Sheikh Jarrah and Silwan, and what is the status of family-unification restrictions?"},
-
-    {"id": "palestinian-citizens-israel", "cat": "politics",
-     "en": "Palestinian citizens of Israel: the second front",
-     "ar": "فلسطينيو الداخل: الجبهة الثانية",
-     "q": "Cover the Kaminitz Law, unrecognised Naqab/Negev villages and demolitions, the Nakba Law, policing and organised crime deaths in Arab towns, and political representation."},
-
-    {"id": "unrwa-defunding", "cat": "politics",
-     "en": "What happens if UNRWA stops",
-     "ar": "ماذا لو توقفت الأونروا",
-     "q": "Trace the defunding decisions, the Israeli legislation banning UNRWA operations, the Colonna review findings, how many schools, clinics and rations are at stake, and what contingency exists."},
-
-    {"id": "surveillance-tech", "cat": "accountability",
-     "en": "Cameras, checkpoints and code: surveillance of Palestinians",
-     "ar": "الكاميرات والحواجز والشيفرة: مراقبة الفلسطينيين",
-     "q": "Document Blue Wolf and Red Wolf facial recognition, Hebron and Jerusalem camera networks, spyware use against Palestinian rights workers, and which companies supply the systems."},
-
-    {"id": "palestinian-ngos-designation", "cat": "accountability",
-     "en": "The six NGOs Israel called terrorists",
-     "ar": "المنظمات الست التي وصفتها إسرائيل بالإرهاب",
-     "q": "What evidence was presented for the 2021 designation of Al-Haq, Addameer, DCI-P and the others, how did European donors respond after reviewing it, and what has happened to the organisations since?"},
-
-    {"id": "health-exit-permits", "cat": "gaza",
-     "en": "Waiting for a permit to survive",
-     "ar": "في انتظار تصريح للبقاء على قيد الحياة",
-     "q": "How many Gaza and West Bank patients apply for exit permits for treatment, what share are approved, delayed or ignored, how many have died waiting, and what does WHO record?"},
-
-    {"id": "education-under-fire", "cat": "gaza",
-     "en": "A generation out of school",
-     "ar": "جيل خارج المدرسة",
-     "q": "How many schools and universities have been destroyed or damaged, how many students and academics killed, what is the state of examinations and accreditation, and what is 'scholasticide' as scholars use the term?"},
-
-    {"id": "gaza-fishing-zone", "cat": "gaza",
-     "en": "The shrinking sea: Gaza's fishermen",
-     "ar": "البحر المتقلص: صيادو غزة",
-     "q": "How has the permitted fishing zone changed against the Oslo-agreed 20 nautical miles, how many fishermen have been shot at or detained, and what has happened to the catch and the livelihoods behind it?"},
-
-    {"id": "olive-harvest", "cat": "economy",
-     "en": "The olive harvest as a front line",
-     "ar": "موسم الزيتون كخط مواجهة",
-     "q": "How many olive trees have been uprooted or burned, how does the coordination system for harvest access work, what share of the rural economy depends on olives, and what do farming unions report?"},
-
-    {"id": "palestinian-football", "cat": "sports",
-     "en": "Palestinian football under occupation",
-     "ar": "الكرة الفلسطينية تحت الاحتلال",
-     "q": "How many Palestinian athletes have been killed or detained, how do travel restrictions affect national squads, what became of the Palestinian FA's case at FIFA, and how do clubs in Gaza function now?"},
-
-    {"id": "athletes-and-travel", "cat": "sports",
-     "en": "The athletes who cannot reach their own matches",
-     "ar": "رياضيون لا يصلون إلى مبارياتهم",
-     "q": "Document specific cases of Palestinian athletes denied permits or visas, the state of stadiums and training facilities, and how Palestinian sport is funded."},
-
-    {"id": "cultural-heritage-destroyed", "cat": "arts",
-     "en": "The archives, mosques and churches that no longer exist",
-     "ar": "الأرشيفات والمساجد والكنائس التي لم تعد قائمة",
-     "q": "Catalogue documented destruction of Palestinian cultural heritage — the Central Archives, Great Omari Mosque, historic churches, museums and libraries — and the status of looted or displaced Palestinian archives."},
-
-    {"id": "palestinian-cinema", "cat": "arts",
-     "en": "Palestinian cinema and the politics of the festival circuit",
-     "ar": "السينما الفلسطينية وسياسات المهرجانات",
-     "q": "How are Palestinian films funded and distributed, what happened to filmmakers and cinemas in Gaza, and what pressure have festivals and distributors faced?"},
-
-    {"id": "youth-emigration", "cat": "diaspora",
-     "en": "The ones who leave",
-     "ar": "الذين يغادرون",
-     "q": "What are youth unemployment and emigration rates, which routes and destinations do young Palestinians take, what does it cost, and what does the brain drain do to the professions left behind?"},
-
-    {"id": "refugees-in-lebanon", "cat": "diaspora",
-     "en": "Palestinians in Lebanon: barred from work, barred from home",
-     "ar": "فلسطينيو لبنان: ممنوعون من العمل والعودة",
-     "q": "Which professions remain closed to Palestinians in Lebanon, what are conditions in the camps, what is UNRWA's funding position there, and what has changed since 2024?"},
-
-    {"id": "women-and-violence", "cat": "accountability",
-     "en": "Palestinian women: war, law and the gaps between",
-     "ar": "النساء الفلسطينيات: الحرب والقانون والفجوات بينهما",
-     "q": "What is the state of the personal status law and the stalled family protection bill, what do femicide figures show, how are pregnant women and new mothers affected by the war, and how many women sit in Palestinian political bodies?"},
-
-    {"id": "security-coordination", "cat": "accountability",
-     "en": "Security coordination: the arrangement nobody campaigns on",
-     "ar": "التنسيق الأمني: ترتيب لا يخوض أحد الانتخابات باسمه",
-     "q": "What is documented about PA–Israel security coordination, how often has the PA threatened to end it, what do Palestinian polls say about it, and what happens to those arrested by PA forces on security grounds?"},
-
-    {"id": "bitcoin-financial-freedom", "cat": "bitcoin",
-     "en": "Money that cannot be closed: Palestinians and financial censorship",
-     "ar": "مال لا يمكن إغلاقه: الفلسطينيون والرقابة المالية",
-     "q": "How do correspondent banking withdrawal, PayPal exclusion, frozen accounts and the shekel cash glut restrict Palestinians, what workarounds are actually in use, and what have the PMA, HRF and researchers documented about bitcoin adoption in the territories?"},
-
-    {"id": "day-after-plans", "cat": "politics",
-     "en": "Every 'day after' plan for Gaza, and who wrote it",
-     "ar": "كل خطط 'اليوم التالي' لغزة ومن كتبها",
-     "q": "Compare the published post-war governance proposals from the US, Arab states, Israel, the PA and think tanks — who governs, who polices, who pays, and what do Palestinians say about being consulted?"}
-  ]
+ "_comment": "The investigations queue. One topic per generated report, worked through in order and then recycled oldest-first. Add, remove or reorder freely — the generator reads this file every run. 'q' is the reporting question the desk must answer; the sharper it is, the better the piece.",
+ "topics": [
+  {"id": "who-profits-palestinian-economy", "cat": "accountability", "en": "Who is actually making money in the Palestinian economy", "ar": "من يجني الأموال فعلياً في الاقتصاد الفلسطيني", "q": "Which families, holding companies and monopolies dominate Palestinian commerce — PADICO, Paltel/Jawwal, cement and fuel importers, the Palestine Investment Fund? Who owns them, what are their margins, how concentrated is ownership, and who sits on both the boards and the political bodies that regulate them?"},
+  {"id": "deaths-in-custody-accountability", "cat": "accountability", "en": "Deaths in Palestinian custody and what accountability followed", "ar": "الوفيات في مراكز الاحتجاز الفلسطينية وما تلاها من مساءلة", "q": "How many deaths in PA and Hamas custody have been documented by the Independent Commission for Human Rights and Al-Haq, and what followed each: an investigation, a published finding, a trial, a verdict? The Nizar Banat case is the best-documented example — track the procedural record of that trial as published, how long it has run and where it stands. Report the accountability gap as the finding; do not name officers or assign guilt."},
+  {"id": "committees-that-vanished", "cat": "accountability", "en": "The committees that were formed and never reported", "ar": "لجان شُكّلت ولم تُصدر تقريراً قط", "q": "Catalogue Palestinian investigative and reform committees announced since 2005 that never published findings — deaths in custody, the 2007 events, pension and public-sector reform, electricity arrears, PIF audits. Which body formed each, what were the published terms of reference and deadline, and what has been published since? The finding is the pattern of non-delivery, not any individual."},
+  {"id": "abbas-succession", "cat": "politics", "en": "Who replaces Mahmoud Abbas, and who decides", "ar": "من يخلف محمود عباس ومن يقرر", "q": "What are the constitutional mechanisms for succession in the PA and PLO, who are the named contenders, what is the role of the PLO Executive Committee, the Fatah Central Committee and the newly created vice-presidency, and what have Palestinian jurists said about the legality of each route?"},
+  {"id": "conflict-of-interest-rules", "cat": "accountability", "en": "The rules on officials and business, and whether anyone enforces them", "ar": "قواعد تضارب المصالح ومن يطبّقها", "q": "What law governs conflict of interest, asset declaration and outside business interests for Palestinian public officials? Is declaration mandatory, is it published, who audits it, and what has the Anti-Corruption Commission, the State Audit Bureau or AMAN's Transparency reports found about compliance? Report the rules and the enforcement record as a system — name no private individuals."},
+  {"id": "palestinian-elections", "cat": "politics", "en": "Will Palestinians ever vote again", "ar": "هل يصوّت الفلسطينيون مرة أخرى", "q": "Chronicle every postponed Palestinian election since 2006, the stated reasons, the role of Israeli restrictions on Jerusalem voting, the state of the Central Elections Commission, municipal election turnout, and what polling says Palestinians themselves want."},
+  {"id": "work-permit-brokers", "cat": "economy", "en": "The brokers who sell Israeli work permits", "ar": "سماسرة تصاريح العمل", "q": "How does the Israeli work-permit market for Palestinian labourers function, what do brokers charge, how much of a worker's wage is skimmed, who profits on both sides of the Green Line, and what have the Bank of Israel, Kav LaOved and Palestinian labour ministries documented?"},
+  {"id": "crossings-and-airports", "cat": "westbank", "en": "The crossing: what Palestinians endure to leave and return", "ar": "المعابر: ما يتحمّله الفلسطينيون للسفر والعودة", "q": "Document the Allenby/King Hussein Bridge bottleneck, Rafah's closure, permit regimes, average waiting times, the cost of VIP passage, the denial of an airport since 2001, and the specific rules that govern who may fly from Ben Gurion."},
+  {"id": "settler-violence-impunity", "cat": "westbank", "en": "Settler attacks and the arithmetic of impunity", "ar": "اعتداءات المستوطنين وحساب الإفلات من العقاب", "q": "Using Yesh Din, OCHA and B'Tselem data, what share of Israeli investigations into settler violence end in indictment and conviction? Which outposts recur, what is the documented role of army escorts, and how have sanctions by the EU, UK and US on named settlers played out?"},
+  {"id": "clearance-revenues", "cat": "economy", "en": "The money Israel collects and withholds", "ar": "الأموال التي تجبيها إسرائيل وتحتجزها", "q": "How does the Paris Protocol clearance-revenue mechanism work, how much has Israel deducted or withheld and on what legal basis, what has that done to PA salaries and the banking system, and what have the IMF, World Bank and PMA reported?"},
+  {"id": "gaza-reconstruction-money", "cat": "gaza", "en": "Who gets paid to rebuild Gaza", "ar": "من يُدفع له لإعادة إعمار غزة", "q": "Trace pledged versus disbursed reconstruction funding, the contractors and intermediaries involved, the rubble and unexploded-ordnance problem, and the record of previous reconstruction mechanisms after 2014."},
+  {"id": "aid-economy", "cat": "economy", "en": "The aid economy: who profits from Palestinian need", "ar": "اقتصاد المساعدات: من يربح من الحاجة الفلسطينية", "q": "Which contractors, security firms, logistics companies and consultancies capture humanitarian and development spending for Palestinians, what overheads do they take, and what have audits by donor governments found?"},
+  {"id": "prisoners-administrative-detention", "cat": "accountability", "en": "Held without charge: administrative detention by the numbers", "ar": "الاعتقال الإداري بالأرقام", "q": "How many Palestinians are held without charge, including children, under what military orders, for how long on average, and what have HaMoked, Addameer, the ICRC and UN bodies documented about conditions and deaths in custody?"},
+  {"id": "journalists-killed", "cat": "accountability", "en": "The deadliest place to be a reporter", "ar": "أخطر مكان لممارسة الصحافة", "q": "How many Palestinian journalists have been killed, by whom, and how many killings produced an investigation or charge? Use CPJ, RSF and IFJ counts, and cover press-freedom pressure from the PA and Hamas as well."},
+  {"id": "pa-cybercrime-law", "cat": "accountability", "en": "The law used to arrest Palestinians for posting", "ar": "القانون الذي يُعتقل به الفلسطينيون بسبب منشور", "q": "How has the PA's cybercrime decree been used against journalists, students and critics, how many prosecutions, what do Palestinian bar associations and rights groups say, and how does Hamas police speech in Gaza?"},
+  {"id": "water-allocation", "cat": "westbank", "en": "The water arithmetic of the West Bank", "ar": "حساب المياه في الضفة الغربية", "q": "How much water per capita do Palestinians and settlers receive, how does the Joint Water Committee and Mekorot allocation work, how many cisterns and pipelines have been demolished, and what do B'Tselem and the World Bank report?"},
+  {"id": "area-c-demolitions", "cat": "westbank", "en": "Building permits in Area C: the paperwork of dispossession", "ar": "رخص البناء في المنطقة ج", "q": "What share of Palestinian permit applications in Area C are approved, how many structures — including donor-funded schools and clinics — have been demolished, and what is the documented displacement toll?"},
+  {"id": "jerusalem-residency", "cat": "westbank", "en": "Revoked: how Jerusalemites lose the right to their city", "ar": "سحب الإقامة: كيف يفقد المقدسيون حق مدينتهم", "q": "How does the 'centre of life' rule work, how many residencies have been revoked since 1967, what is happening in Sheikh Jarrah and Silwan, and what is the status of family-unification restrictions?"},
+  {"id": "palestinian-citizens-israel", "cat": "politics", "en": "Palestinian citizens of Israel: the second front", "ar": "فلسطينيو الداخل: الجبهة الثانية", "q": "Cover the Kaminitz Law, unrecognised Naqab/Negev villages and demolitions, the Nakba Law, policing and organised crime deaths in Arab towns, and political representation."},
+  {"id": "unrwa-defunding", "cat": "politics", "en": "What happens if UNRWA stops", "ar": "ماذا لو توقفت الأونروا", "q": "Trace the defunding decisions, the Israeli legislation banning UNRWA operations, the Colonna review findings, how many schools, clinics and rations are at stake, and what contingency exists."},
+  {"id": "surveillance-tech", "cat": "accountability", "en": "Cameras, checkpoints and code: surveillance of Palestinians", "ar": "الكاميرات والحواجز والشيفرة: مراقبة الفلسطينيين", "q": "Document Blue Wolf and Red Wolf facial recognition, Hebron and Jerusalem camera networks, spyware use against Palestinian rights workers, and which companies supply the systems."},
+  {"id": "palestinian-ngos-designation", "cat": "accountability", "en": "The six NGOs Israel called terrorists", "ar": "المنظمات الست التي وصفتها إسرائيل بالإرهاب", "q": "What evidence was presented for the 2021 designation of Al-Haq, Addameer, DCI-P and the others, how did European donors respond after reviewing it, and what has happened to the organisations since?"},
+  {"id": "health-exit-permits", "cat": "gaza", "en": "Waiting for a permit to survive", "ar": "في انتظار تصريح للبقاء على قيد الحياة", "q": "How many Gaza and West Bank patients apply for exit permits for treatment, what share are approved, delayed or ignored, how many have died waiting, and what does WHO record?"},
+  {"id": "education-under-fire", "cat": "gaza", "en": "A generation out of school", "ar": "جيل خارج المدرسة", "q": "How many schools and universities have been destroyed or damaged, how many students and academics killed, what is the state of examinations and accreditation, and what is 'scholasticide' as scholars use the term?"},
+  {"id": "gaza-fishing-zone", "cat": "gaza", "en": "The shrinking sea: Gaza's fishermen", "ar": "البحر المتقلص: صيادو غزة", "q": "How has the permitted fishing zone changed against the Oslo-agreed 20 nautical miles, how many fishermen have been shot at or detained, and what has happened to the catch and the livelihoods behind it?"},
+  {"id": "olive-harvest", "cat": "economy", "en": "The olive harvest as a front line", "ar": "موسم الزيتون كخط مواجهة", "q": "How many olive trees have been uprooted or burned, how does the coordination system for harvest access work, what share of the rural economy depends on olives, and what do farming unions report?"},
+  {"id": "palestinian-football", "cat": "sports", "en": "Palestinian football under occupation", "ar": "الكرة الفلسطينية تحت الاحتلال", "q": "How many Palestinian athletes have been killed or detained, how do travel restrictions affect national squads, what became of the Palestinian FA's case at FIFA, and how do clubs in Gaza function now?"},
+  {"id": "athletes-and-travel", "cat": "sports", "en": "The athletes who cannot reach their own matches", "ar": "رياضيون لا يصلون إلى مبارياتهم", "q": "Document specific cases of Palestinian athletes denied permits or visas, the state of stadiums and training facilities, and how Palestinian sport is funded."},
+  {"id": "cultural-heritage-destroyed", "cat": "arts", "en": "The archives, mosques and churches that no longer exist", "ar": "الأرشيفات والمساجد والكنائس التي لم تعد قائمة", "q": "Catalogue documented destruction of Palestinian cultural heritage — the Central Archives, Great Omari Mosque, historic churches, museums and libraries — and the status of looted or displaced Palestinian archives."},
+  {"id": "palestinian-cinema", "cat": "arts", "en": "Palestinian cinema and the politics of the festival circuit", "ar": "السينما الفلسطينية وسياسات المهرجانات", "q": "How are Palestinian films funded and distributed, what happened to filmmakers and cinemas in Gaza, and what pressure have festivals and distributors faced?"},
+  {"id": "youth-emigration", "cat": "diaspora", "en": "The ones who leave", "ar": "الذين يغادرون", "q": "What are youth unemployment and emigration rates, which routes and destinations do young Palestinians take, what does it cost, and what does the brain drain do to the professions left behind?"},
+  {"id": "refugees-in-lebanon", "cat": "diaspora", "en": "Palestinians in Lebanon: barred from work, barred from home", "ar": "فلسطينيو لبنان: ممنوعون من العمل والعودة", "q": "Which professions remain closed to Palestinians in Lebanon, what are conditions in the camps, what is UNRWA's funding position there, and what has changed since 2024?"},
+  {"id": "women-and-violence", "cat": "accountability", "en": "Palestinian women: war, law and the gaps between", "ar": "النساء الفلسطينيات: الحرب والقانون والفجوات بينهما", "q": "What is the state of the personal status law and the stalled family protection bill, what do femicide figures show, how are pregnant women and new mothers affected by the war, and how many women sit in Palestinian political bodies?"},
+  {"id": "security-coordination", "cat": "accountability", "en": "Security coordination: the arrangement nobody campaigns on", "ar": "التنسيق الأمني: ترتيب لا يخوض أحد الانتخابات باسمه", "q": "What is documented about PA–Israel security coordination, how often has the PA threatened to end it, what do Palestinian polls say about it, and what happens to those arrested by PA forces on security grounds?"},
+  {"id": "bitcoin-financial-freedom", "cat": "bitcoin", "en": "Money that cannot be closed: Palestinians and financial censorship", "ar": "مال لا يمكن إغلاقه: الفلسطينيون والرقابة المالية", "q": "How do correspondent banking withdrawal, PayPal exclusion, frozen accounts and the shekel cash glut restrict Palestinians, what workarounds are actually in use, and what have the PMA, HRF and researchers documented about bitcoin adoption in the territories?"},
+  {"id": "day-after-plans", "cat": "politics", "en": "Every 'day after' plan for Gaza, and who wrote it", "ar": "كل خطط 'اليوم التالي' لغزة ومن كتبها", "q": "Compare the published post-war governance proposals from the US, Arab states, Israel, the PA and think tanks — who governs, who polices, who pays, and what do Palestinians say about being consulted?"}
+ ]
 }
