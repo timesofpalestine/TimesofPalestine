@@ -122,7 +122,7 @@ def render_about(lang, built_at):
 <link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/about.html">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{b.FONTS}" rel="stylesheet">
-<style>{b.CSS}</style>
+<style>{b.CSS}</style>{b.swg(lang)}
 </head>
 <body>
 <div class="backbar"><a href="./">{a['back']}</a></div>
