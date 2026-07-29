@@ -160,7 +160,7 @@ def _parse(text):
     }
 
 
-def _call(client, system, messages, tools=None, max_tokens=8000):
+def _call(client, system, messages, tools=None, max_tokens=32000):
     kwargs = dict(model=MODEL, max_tokens=max_tokens, system=system,
                   messages=messages, thinking={"type": "adaptive"})
     if tools:
@@ -227,12 +227,20 @@ def _run():
 
     parsed_en = _parse(english)
     if not parsed_en:
-        return f"investigations: '{topic['id']}' — output failed the sourcing checks; nothing published"
+        state["last_hour"] = hour   # bound the retry: try again next hour, not next build
+        STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+        return (f"investigations: '{topic['id']}' — output failed the sourcing checks; nothing published. "
+                f"[{len(english)} chars, {len(english.split())} words, "
+                f"has TITLE={'TITLE:' in english} DEK={'DEK:' in english} SOURCES={'SOURCES:' in english}] "
+                f"opens: {english[:160]!r}")
 
     arabic = _call(client, ARABIC_SYSTEM, [{"role": "user", "content": english}])
     parsed_ar = _parse(arabic)
     if not parsed_ar:
-        return f"investigations: '{topic['id']}' — English filed but Arabic failed; nothing published"
+        state["last_hour"] = hour
+        STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+        return (f"investigations: '{topic['id']}' — English filed but Arabic failed; nothing published. "
+                f"[{len(arabic)} chars, has SOURCES={'SOURCES:' in arabic}]")
 
     _write_file(topic, parsed_en, "en", now, "Sources:")
     _write_file(topic, parsed_ar, "ar", now, "المصادر:")
