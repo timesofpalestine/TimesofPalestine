@@ -632,6 +632,21 @@ REFUSAL_RX = re.compile(
     r"المادة المصدرية|المادة المتاحة|المادة المرفقة|هذه التعليمات|"
     r"المقال الكامل|النص الكامل|زيارة موقع|زيارة الموقع", re.I)
 
+# A story body must be substantial and end on a finished sentence. Feed summaries
+# arrive truncated mid-sentence ("…") and model output can stop short at the token
+# ceiling; neither may ever publish as an article.
+_TERMINALS = ('.', '!', '?', '"', '”', '»', '؟', ')', "'")
+_DANGLING = ("…", "...", ",", "،", ";", "؛", ":", "-", "—", "–")
+
+def is_complete_text(s, floor):
+    s = (s or "").strip()
+    if len(s) < floor:
+        return False
+    tail = s.rstrip("*_  ")
+    if tail.endswith(_DANGLING):
+        return False
+    return tail.endswith(_TERMINALS)
+
 def write_brief(client, item):
     excerpt = fetch_article_text(item["link"])
     outlet = "(agency wire)" if item.get("exclusive") else item["source"]
@@ -655,8 +670,8 @@ def write_brief(client, item):
         first, _, rest = text.partition(chr(10))
         item["title"] = truncate(first[len("HEADLINE:"):].strip(" *"), 200)
         text = rest.strip()
-    if REFUSAL_RX.search(text) or len(text) <= (120 if excerpt else 60):
-        item["brief_refused"] = True  # the model had nothing to report — do not publish a stub
+    if REFUSAL_RX.search(text) or not is_complete_text(text, 160):
+        item["brief_refused"] = True  # nothing to report, or the copy stops short — no stubs
         return None
     return text
 # ---------- field-report vetting ----------
@@ -719,20 +734,25 @@ def vet_field_reports(client, all_items, cache, now_ts):
     print(f"Field reports: {kept} vetted in, {rejected} held back.")
 
 def generate_briefs(all_items):
-    """Attach an original TOP Newsdesk brief to each story, cached across builds."""
+    """Attach an original TOP Newsdesk brief to each story, cached across builds.
+    Returns True when the desk is running (key + SDK present): every wire item then
+    publishes only as our own rewrite. Returns False when the desk is down."""
     if not os.environ.get("ANTHROPIC_API_KEY"):
-        print("\nBriefs: ANTHROPIC_API_KEY not set — publishing with feed summaries.")
-        return
+        print("\nBriefs: ANTHROPIC_API_KEY not set — only complete feed summaries will publish.")
+        return False
     try:
         import anthropic
     except ImportError:
-        print("\nBriefs: `anthropic` package not installed — publishing with feed summaries.")
-        return
+        print("\nBriefs: `anthropic` package not installed — only complete feed summaries will publish.")
+        return False
     try:
         cache = json.loads(BRIEFS_CACHE.read_text(encoding="utf-8")) if BRIEFS_CACHE.exists() else {}
     except Exception:
         cache = {}
-    cache = {k: v for k, v in cache.items() if not REFUSAL_RX.search(v.get("brief", ""))}
+    # Scrub refusals AND truncated briefs from the cache so both get rewritten.
+    cache = {k: v for k, v in cache.items()
+             if k.startswith("vet:") or (not REFUSAL_RX.search(v.get("brief", ""))
+                                         and is_complete_text(v.get("brief", ""), 160))}
     now_ts = datetime.now(timezone.utc).timestamp()
     for it in all_items:
         # Keys are lang-scoped so the same wire story can carry an Arabic brief in /ar/
@@ -749,7 +769,7 @@ def generate_briefs(all_items):
     if not todo and not field_new:
         vet_field_reports(None, all_items, cache, now_ts)  # apply cached verdicts
         print("\nBriefs: cache warm — nothing new to write.")
-        return
+        return True
 
     # Remove ALL whitespace (including pasted line-wraps) from the secret — a broken
     # key corrupts the auth header and surfaces as APIConnectionError. The log line
@@ -782,6 +802,7 @@ def generate_briefs(all_items):
     except Exception:
         pass
     print(f"\nBriefs: wrote {written} new of {len(todo)} attempted; cache holds {len(cache)}.")
+    return True
 def dedupe(items):
     seen, out = set(), []
     for it in items:
@@ -792,6 +813,85 @@ def dedupe(items):
         seen.update({kt, kt[:60], kl})
         out.append(it)
     return out
+
+# ---------- event-level dedupe ----------
+# Two outlets covering one incident write two different headlines, so title-string
+# dedupe misses them. Cluster on normalized title tokens instead; when a cluster
+# forms, our own copy (original, then partner wire, then score) is the one that runs.
+_AR_DIGITS = str.maketrans("٠١٢٣٤٥٦٧٨٩", "0123456789")
+_NUM_WORDS = {"one": "1", "two": "2", "three": "3", "four": "4", "five": "5", "six": "6",
+              "seven": "7", "eight": "8", "nine": "9", "ten": "10", "eleven": "11",
+              "twelve": "12"}  # "dozens" stays a word: too vague to use as a count
+_EVENT_SYN = {}
+for _canon, _words in (
+    ("forces", "army force troop soldier military occupation idf"),
+    ("strike", "strike airstrike attack raid shelling bombing bombardment assault"),
+    ("kill", "kill killed martyr martyred slain dead death"),
+    ("injure", "injure injured wound wounded hurt casualtie"),
+    ("قوات", "قوات جيش جنود احتلال"),
+    ("قصف", "قصف غارة غارات هجوم عدوان"),
+    ("قتل", "قتل مقتل استشهاد استشهد شهداء شهيد قتلى"),
+    ("جرحى", "جرحى إصابة إصابات أصيب مصابين مصابون"),
+):
+    for _w in _words.split():
+        _EVENT_SYN[_w] = _canon
+_EVENT_STOP = set(
+    "the a an in on at of to for with by from and or as after amid over under near says say said "
+    "reports report reported news update breaking least against during between about its his her "
+    "their monday tuesday wednesday thursday friday saturday sunday today yesterday dozen dozens".split()
+) | set("في على من إلى عن مع بعد خلال قرب ضد بين حتى نحو أكثر الأقل اليوم أمس "
+        "الاثنين الثلاثاء الأربعاء الخميس الجمعة السبت الأحد".split())
+_EVENT_PLACES = set(
+    "gaza rafah khan younis jenin nablus hebron jerusalem ramallah tulkarem tulkarm bethlehem "
+    "qalqilya jericho jabalia salfit tubas".split()
+) | set("غزة رفح خان يونس جنين نابلس خليل قدس رام طولكرم لحم قلقيلية أريحا جباليا سلفيت طوباس".split())
+
+def event_tokens(title):
+    toks = set()
+    for w in norm_title(title).translate(_AR_DIGITS).split():
+        w = _NUM_WORDS.get(w, w)
+        if w in _EVENT_STOP or (len(w) <= 1 and not w.isdigit()):
+            continue
+        if w.isascii():
+            w = w.rstrip("s")
+        elif w.startswith("ال") and len(w) > 3:
+            w = w[2:]
+        toks.add(_EVENT_SYN.get(w, w))
+    return toks
+
+def dedupe_events(items):
+    """One incident, one article. Conservative on purpose: different places or
+    different casualty counts in the headlines veto the match, and only stories
+    within 36 hours of each other can be the same event."""
+    kept = []
+    ranked = sorted(items, key=lambda i: (i["source_id"] == "top-original",
+                                          bool(i.get("exclusive")), i["score"]), reverse=True)
+    for it in ranked:
+        toks = event_tokens(it["title"])
+        nums = {t for t in toks if t.isdigit()}
+        places = toks & _EVENT_PLACES
+        dup = False
+        for _k, ktoks, knums, kplaces, kdate in kept:
+            inter = toks & ktoks
+            if len(inter) < 3:
+                continue
+            if len(inter) / len(toks | ktoks) < 0.42:
+                continue
+            if abs((it["date"] - kdate).total_seconds()) > 36 * 3600:
+                continue
+            if places and kplaces and not (places & kplaces):
+                continue  # different places → different events
+            if nums and knums and not (nums & knums):
+                continue  # different counts → different events
+            dup = True
+            break
+        if not dup:
+            kept.append((it, toks, nums, places, it["date"]))
+    survivors = {id(k[0]) for k in kept}
+    dropped = [i for i in items if id(i) not in survivors]
+    for d in dropped:
+        print(f"  ⊘ duplicate event dropped: {d['source']}: {d['title'][:70]}")
+    return [i for i in items if id(i) in survivors]
 
 def diversify(items):
     """Reorder so adjacent cards come from different outlets when possible."""
@@ -927,7 +1027,7 @@ def build_lang(lang):
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
         results = list(ex.map(lambda f: fetch_feed(f, lang), FEEDS[lang]))
     results.append(load_originals(lang))
-    items = sorted(dedupe([i for r in results for i in r]), key=lambda i: i["date"], reverse=True)
+    items = dedupe_events(sorted(dedupe([i for r in results for i in r]), key=lambda i: i["date"], reverse=True))
     caps = {f["id"]: f.get("cap", PER_SOURCE_CAP) for f in FEEDS[lang]}; caps["top-original"] = 200
     per_source, capped = {}, []
     for it in items:
@@ -1754,10 +1854,11 @@ def main():
     built_at = datetime.now(timezone.utc); print(__import__("originals_gen").run())
     en_items = build_lang("en")
     ar_items = build_lang("ar")
+    briefs_active = False
     try:
-        generate_briefs(en_items + ar_items)
-    except Exception as e:  # the briefs layer must never block publication
-        print(f"\nBriefs: stage failed ({type(e).__name__}) — publishing with feed summaries.")
+        briefs_active = bool(generate_briefs(en_items + ar_items))
+    except Exception as e:  # a desk outage must not blank the site — degrade, don't die
+        print(f"\nBriefs: stage failed ({type(e).__name__}) — only complete feed summaries will publish.")
     # Arabic-wire stories appear in the English edition only once their headline
     # has been translated (translation rides along with brief generation, cached);
     # their Arabic feed summaries never render on English pages.
@@ -1767,7 +1868,19 @@ def main():
         if i.get("needs_translation") and ARABIC_CHARS_RX.search(i["dek"]):
             i["dek"] = ""
 
-    keep = lambda i: not i.get("vetoed") and not i.get("brief_refused") and (i.get("brief") or i["dek"])
+    # Every source is a wire: an item publishes only once our own desk has rewritten
+    # it in full. Nothing that stops short of a finished sentence ever publishes.
+    def keep(i):
+        if i.get("vetoed") or i.get("brief_refused"):
+            return False
+        if i["source_id"] == "top-original":
+            return True  # originals are validated separately in load_originals
+        b = i.get("brief")
+        if b and not REFUSAL_RX.search(b) and is_complete_text(b, 160):
+            return True
+        if briefs_active:
+            return False  # desk running: hold the wire item until its rewrite lands
+        return is_complete_text(i.get("dek", ""), 80)  # desk down: whole summaries only
     en_items = [i for i in en_items if keep(i)]; ar_items = [i for i in ar_items if keep(i)]; dist = ROOT / "dist"
     for lang, items in (("en", en_items), ("ar", ar_items)):
         import shutil
