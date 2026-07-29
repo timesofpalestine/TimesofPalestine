@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""The investigations desk: one researched original report per hour, EN and AR.
+"""Editor-run investigation draft generator: one researched EN/AR draft.
 
-Runs inside the normal build (see .github/workflows/build.yml). Every build it
-asks: has a report already been written this UTC hour? If not, it takes the next
+This command is deliberately outside the deploy workflow. Each run checks whether
+a draft was already written this UTC hour. If not, it takes the next
 topic from topics.json, researches it with live web search, writes the report in
-English, renders it in Arabic, and drops both into originals/ — which build.py
-already publishes under the Times of Palestine byline with no external link-out.
+English, renders it in Arabic, and drops both into the gitignored
+`.editorial-drafts/` directory. An editor must inspect and promote an exact version
+with `python review.py promote <topic-id> --reviewer <name>`.
 
 Three rules make this safe enough to publish unattended:
 
@@ -16,11 +17,9 @@ Three rules make this safe enough to publish unattended:
   2. THE ISSUE, NEVER THE INDIVIDUAL. No topic is avoided for being
      uncomfortable, but the subject is always a system, a policy or a pattern —
      never a person's guilt. The desk may not assemble an accusation.
-  3. FAIL OPEN. Any error here is caught and logged; the news build continues
-     regardless. The desk is additive, never load-bearing.
+  3. DRAFT ONLY. This module cannot place content in the live originals directory.
 
 Cost: roughly one Opus research pass plus a shorter Arabic pass per report.
-Set INVESTIGATIONS=off in the workflow env to pause it without a code change.
 """
 import json
 import os
@@ -31,7 +30,8 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 TOPICS_FILE = ROOT / "topics.json"
 ORIGINALS = ROOT / "originals"
-STATE_FILE = ORIGINALS / "_state.json"
+DRAFTS = ROOT / ".editorial-drafts"
+STATE_FILE = DRAFTS / "_state.json"
 
 MODEL = "claude-opus-5"
 # Server-side search. The tool identifier has changed before, and a wrong one is a
@@ -206,7 +206,7 @@ def _call(client, system, messages, tools=None, max_tokens=32000):
 
 
 def _write_file(topic, parsed, lang, now):
-    """Emit the originals/<id>.<lang>.txt that build.py already knows how to publish."""
+    """Emit a gitignored draft that the live builder cannot discover."""
     # Sources are a reporting gate, not page furniture: the parser still requires
     # MIN_SOURCES before anything publishes, but a news article carries its
     # attribution inline ("according to OCHA figures"), never as a bibliography.
@@ -214,15 +214,15 @@ def _write_file(topic, parsed, lang, now):
     head = (f"title: {parsed['title']}\n"
             f"category: {topic['cat']}\n"
             f"date: {now.isoformat()}\n"
+            f"origin: investigation\n"
+            f"review: required\n"
             f"maxAgeHours: 720\n")
-    (ORIGINALS / f"{topic['id']}.{lang}.txt").write_text(
+    (DRAFTS / f"{topic['id']}.{lang}.txt").write_text(
         head + "---\n" + body + "\n", encoding="utf-8")
 
 
 def _run():
     """Write one report if this hour has not had one. Returns a status string."""
-    if os.environ.get("INVESTIGATIONS", "").lower() in ("off", "0", "false"):
-        return "investigations: paused by INVESTIGATIONS env"
     if not os.environ.get("ANTHROPIC_API_KEY"):
         return "investigations: no API key — skipped"
 
@@ -239,7 +239,7 @@ def _run():
     import anthropic
     client = anthropic.Anthropic(api_key=re.sub(r"\s+", "", os.environ["ANTHROPIC_API_KEY"]))
     topic = _pick_topic(topics, state)
-    ORIGINALS.mkdir(exist_ok=True)
+    DRAFTS.mkdir(exist_ok=True)
 
     brief = (f"Report this story for publication today.\n\n"
              f"WORKING TITLE: {topic['en']}\n\n"
@@ -303,20 +303,15 @@ def _record_failure(msg):
         state["last_hour"] = now.strftime("%Y-%m-%dT%H")
         state["last_attempt"] = now.isoformat()
         state["last_status"] = msg
-        ORIGINALS.mkdir(exist_ok=True)
+        DRAFTS.mkdir(exist_ok=True)
         STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
     except Exception:
         pass
 
 
 def run():
-    """Never raises. The investigations desk must never be able to stop the news."""
-    try:
-        status = _run()
-    except Exception as e:
-        status = f"investigations: stage failed ({type(e).__name__}: {e}) — news build continues"
-        _record_failure(status)
-    return status
+    """Generate a local draft; failures are explicit because this is editor-run."""
+    return _run()
 
 
 if __name__ == "__main__":

@@ -1,8 +1,9 @@
 # Times of Palestine — تايمز أوف فلسطين
 
-An independent, bilingual (English/Arabic), fully automated digital news front page for Palestine.
+An independent, bilingual (English/Arabic) static digital news front page for Palestine.
 It aggregates live reporting from outlets across Palestine and the region, links every story back
-to its original publisher, and rebuilds itself every 3 hours with **zero human management**.
+to its original publisher, and rebuilds itself every 3 hours. Sensitive claims are deliberately
+**not** fully automated: an editor must approve the exact version before it can publish.
 
 - **English edition:** `/en/` (LTR) · **Arabic edition:** `/ar/` (RTL, natively mirrored)
 - The root `/` auto-redirects visitors based on their browser language.
@@ -11,23 +12,29 @@ to its original publisher, and rebuilds itself every 3 hours with **zero human m
 
 ## How it works
 
-`build.py` (pure Python 3.9+, **no dependencies**) does everything:
+`build.py` and the stdlib-only publishing modules run on Python 3.9+ with no required dependency:
 
 1. Fetches every RSS/Atom feed in [feeds.json](feeds.json) in parallel.
 2. Keeps stories from the last 72 hours; filters general outlets (Al Jazeera, MEE) to
    Palestine-related items only.
-3. Dedupes near-identical headlines, caps any single outlet at 14 stories so no source dominates.
-4. Auto-categorizes into Gaza · West Bank & Jerusalem · Politics & Diplomacy · Economy & Aid ·
+3. Validates source attribution, canonical links, UTC dates, media rights and editorial eligibility.
+4. Clusters near-identical reports, records independent corroborating publishers, and caps any
+   single outlet at 14 stories so no source dominates.
+5. Auto-categorizes into Gaza · West Bank & Jerusalem · Politics & Diplomacy · Economy & Aid ·
    Culture & Society · Opinion & Analysis.
-5. Renders `dist/en/index.html`, `dist/ar/index.html`, and the language-detecting `dist/index.html`.
+6. Renders bilingual pages, RSS, JSON Feed, web/news sitemaps, structured data, PWA assets and
+   sanitized health output into `dist/`.
 
-A feed that is down, blocked, or rate-limited is simply skipped — the build never breaks because
-of one source. If *every* feed fails, the build exits non-zero so the last good deploy stays live.
+A feed that is down, blocked, rate-limited or emits an incomplete record is isolated and reported;
+that record never publishes. Invalid repository configuration, invalid originals, unsafe local
+media, leaked unapproved content, malformed feeds/sitemaps or broken generated links fail the
+build so the last good deploy stays live.
 
 ## Run locally
 
 ```bash
 python3 build.py
+python3 validate_build.py dist
 python3 -m http.server 8000 --directory dist
 ```
 
@@ -35,8 +42,10 @@ Then open <http://localhost:8000>.
 
 ## Deploy once — then it runs itself forever
 
-The included GitHub Actions workflow ([.github/workflows/publish.yml](.github/workflows/publish.yml))
+The included GitHub Actions workflow ([.github/workflows/build.yml](.github/workflows/build.yml))
 rebuilds the site from live feeds **every 3 hours** and publishes it to GitHub Pages (free hosting).
+It runs the offline tests and generated-site validator before deployment. The old self-chaining
+25-minute sleeping runner and unattended investigation commit path were removed.
 
 One-time setup:
 
@@ -46,8 +55,103 @@ gh repo create times-of-palestine --public --source . --push
 ```
 
 Then in the GitHub repo: **Settings → Pages → Source: "GitHub Actions"**. Done.
-The first run starts immediately (or trigger it from the Actions tab); after that it refreshes
-itself every 3 hours with no human involvement.
+The first run starts immediately (or trigger it from the Actions tab); after that low-risk,
+fully-attributed aggregation refreshes every three hours. Flagged content waits for review.
+
+## Publishing safety contract
+
+Every non-original story must carry a publisher name, publisher homepage, canonical article URL,
+source type, language and timezone-aware publication date. Current `exclusive: true` feed entries
+are treated as attributed partner inputs; the flag never replaces the upstream publisher with
+Times of Palestine and never removes the outbound source link. Google News items publish only when
+their publisher article URL can be resolved.
+
+All internal timestamps are UTC. RSS emits `GMT`; JSON Feed, health output, Google News sitemap and
+structured data emit UTC ISO-8601. Reader-facing dates remain localized to `Asia/Gaza`.
+
+### Human review
+
+The deterministic EN/AR gate holds casualty claims, serious accusations, named security or
+military subjects, public Telegram/citizen reports, repository originals, and breaking claims
+without at least two independent publishers. AI triage cannot approve or bypass a hold.
+
+```bash
+# Fetch and display full pending stories only in this terminal:
+python3 review.py list
+python3 review.py list --lang ar
+
+# Approve exactly the displayed version, then commit editorial/reviews.json:
+python3 review.py approve <64-character-fingerprint> --reviewer "Editor name"
+
+# Revoke an approval:
+python3 review.py revoke <64-character-fingerprint>
+```
+
+The public ledger stores only an opaque fingerprint, reviewer label and UTC approval time. CI,
+`health.json` and `review-queue.json` never persist pending headlines, bodies, URLs or private-tip
+data. Any change to publishable text, attribution, dates or corrections changes the fingerprint
+and requires a new approval. Sensitive external stories do not receive an AI-authored brief, so
+the approved text is the text that publishes.
+
+### Original investigations
+
+`originals_gen.py` is now an explicit editor-run draft tool. It writes only to the gitignored
+`.editorial-drafts/` directory and is not called by the build or CI:
+
+```bash
+ANTHROPIC_API_KEY=... python3 originals_gen.py
+python3 review.py promote <topic-id> --reviewer "Editor name"
+```
+
+Promotion requires a validated English/Arabic pair and records approval for both exact versions.
+Pending drafts are never included in Pages, distribution, commits or public CI output.
+
+### Image rights
+
+Remote feed, Telegram and OG images are not rendered or hotlinked by default. The branded flag
+fallback is used instead. A story image or long-form figure may render only when its exact local
+path or URL has an entry in `media-rights.json` with a rights basis, visible credit, source and
+optional license URL. Local media without that record fails the build. The repository does not
+download or rehost third-party media and has no general owned-media storage pipeline.
+
+### Updates and corrections
+
+`editorial/corrections.json` is keyed by the stable ten-character story ID shown in its generated
+URL. Entries are chronological and need both language notes when the story exists in both editions:
+
+```json
+{
+  "version": 1,
+  "stories": {
+    "0123456789": [
+      {
+        "at": "2026-07-29T18:30:00Z",
+        "type": "correction",
+        "en": "Corrected the date of the announcement.",
+        "ar": "صُحح تاريخ الإعلان."
+      }
+    ]
+  }
+}
+```
+
+The history is visible on the story page. Its latest timestamp controls `dateModified`, sitemap
+`lastmod` and JSON Feed modification metadata. A routine rebuild never changes `dateModified`.
+
+### Monitoring and distribution
+
+- `/health.json` and bilingual `/en/status.html` / `/ar/status.html` expose sanitized feed,
+  validation, review, media and connector health.
+- `validate_build.py` checks internal links, HTML/JSON-LD, RSS and sitemap XML, UTC timestamps,
+  approved images, review-data privacy and PWA assets.
+- `/en/feed.json` and `/ar/feed.json` are credential-free JSON Feed connector surfaces.
+- A validated `/distribution-outbox.json` is deployed with the site; only after Pages reports a
+  successful deployment do IndexNow, Telegram and the optional webhook receive those eligible
+  stories.
+- `DISTRIBUTION_WEBHOOK_URL` optionally enables a generic JSON webhook with stable
+  `Idempotency-Key` headers. Missing credentials are reported as `disabled`, never as success.
+- `ANTHROPIC_API_KEY`, `TELEGRAM_BOT_TOKEN` and `DISTRIBUTION_WEBHOOK_URL` remain external GitHub
+  secrets. Tests require none of them.
 
 ### Custom domain (timesofpalestine.com)
 
@@ -111,10 +215,11 @@ top of [build.py](build.py).
 
 ## Editing the source list
 
-Add or remove outlets in [feeds.json](feeds.json). Three source types:
+Add or remove outlets in [feeds.json](feeds.json). Every entry requires `id`, `name` and an HTTP(S)
+`site`. A source that can emit timezone-naive dates must declare an IANA `timezone`.
 
 ```json
-{ "id": "slug", "name": "Display Name", "url": "https://…/rss", "site": "https://…", "filterPalestine": true }
+{ "id": "slug", "name": "Display Name", "url": "https://…/rss", "site": "https://…", "timezone": "Asia/Gaza", "filterPalestine": true }
 ```
 
 ```json

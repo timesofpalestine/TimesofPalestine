@@ -43,7 +43,7 @@
   "ar": [
     {"id": "aja", "name": "الجزيرة نت", "url": "https://www.aljazeera.net/rss", "site": "https://www.aljazeera.net", "filterPalestine": true, "exclusive": true, "cap": 8},
     {"id": "maan", "name": "وكالة معا (حصري)", "type": "telegram", "channel": "maannews", "site": "https://www.maannews.net", "exclusive": true, "cap": 8},
-    {"id": "arab48", "name": "عرب 48", "url": "https://www.arab48.com/rss", "site": "https://www.arab48.com"},
+    {"id": "arab48", "name": "عرب 48", "url": "https://www.arab48.com/rss", "site": "https://www.arab48.com", "timezone": "Asia/Gaza"},
     {"id": "shehab", "name": "وكالة شهاب (حصري)", "url": "https://shehabnews.com/rss", "site": "https://shehabnews.com", "exclusive": true, "cap": 8},
     {"id": "felesteen", "name": "صحيفة فلسطين", "url": "https://felesteen.news/rss", "site": "https://felesteen.news"},
     {"id": "qudsn", "name": "شبكة قدس الإخبارية", "url": "https://qudsn.co/rss", "site": "https://qudsn.co"},

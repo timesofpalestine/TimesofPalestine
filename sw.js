@@ -1,8 +1,11 @@
 // Times of Palestine service worker — offline reading for unreliable connections.
 // Strategy: network-first for everything on our own origin, falling back to the
 // last cached copy when offline. Every page a reader visits stays readable.
-const CACHE = "top-v1";
-const SHELL = ["/", "/en/", "/ar/", "/en/about.html", "/ar/about.html"];
+const CACHE = "top-v2";
+const SHELL = [
+  "/", "/en/", "/ar/", "/en/about.html", "/ar/about.html",
+  "/en/status.html", "/ar/status.html", "/assets/site.css", "/manifest.json"
+];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(

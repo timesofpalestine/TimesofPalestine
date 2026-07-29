@@ -1,0 +1,5 @@
+dist/
+briefs-cache.json
+.editorial-drafts/
+__pycache__/
+*.pyc

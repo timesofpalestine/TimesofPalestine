@@ -1,0 +1,22 @@
+{
+  "en": [
+    {
+      "id": "fixture-en",
+      "name": "Fixture Palestine Desk",
+      "url": "https://example.com/en.xml",
+      "site": "https://example.com",
+      "fixture": "tests/fixtures/en.xml",
+      "maxAgeHours": 87600
+    }
+  ],
+  "ar": [
+    {
+      "id": "fixture-ar",
+      "name": "مكتب فلسطين التجريبي",
+      "url": "https://example.org/ar.xml",
+      "site": "https://example.org",
+      "fixture": "tests/fixtures/ar.xml",
+      "maxAgeHours": 87600
+    }
+  ]
+}

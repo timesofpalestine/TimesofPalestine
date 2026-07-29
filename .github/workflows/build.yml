@@ -1,15 +1,14 @@
 name: Build & publish Times of Palestine
 on:
   schedule:
-    - cron: "9,39 * * * *"   # kept for the record; GitHub's scheduler has never fired for this repo
-  workflow_dispatch: {}      # manual "run now" button + the self-scheduling chain below
+    - cron: "17 */3 * * *"
+  workflow_dispatch: {}
   push:
     branches: [main]
 permissions:
-  contents: write            # the investigations desk commits its reports back
+  contents: read
   pages: write
   id-token: write
-  actions: write             # lets the run dispatch its own successor
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -32,49 +31,31 @@ jobs:
           path: briefs-cache.json
           key: briefs-${{ github.run_id }}
           restore-keys: briefs-
+      - name: Run publishing safety tests
+        run: python -m unittest discover -s tests -v
       - name: Build site from live feeds
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          INVESTIGATIONS: ${{ vars.INVESTIGATIONS }}   # set this repo variable to "off" to pause the desk
         run: python build.py
-      # The desk writes at most one report an hour into originals/. Commit it back so
-      # it survives the next build; [skip ci] stops the push starting another run.
-      - name: File the investigations desk's report
+      - name: Validate generated site
+        run: python validate_build.py dist
+      - name: Publish sanitized health summary
         if: always()
-        run: |
-          git config user.name "Times of Palestine"
-          git config user.email "noreply@timesofpalestine.com"
-          git add originals topics.json
-          git diff --quiet --cached || (git commit -m "Investigations desk: file report [skip ci]" && git push)
-      # Saved HERE, not by actions/cache's post-job hook. This job ends in a
-      # sleep that the next run cancels, so a post-job save never executes —
-      # which silently threw away every brief, every translated headline and
-      # every Telegram marker on every run since the chain began.
-      - name: Save TOP Briefs cache
-        if: always()
-        uses: actions/cache/save@v4
-        with:
-          path: briefs-cache.json
-          key: briefs-${{ github.run_id }}
+        run: python validate_build.py dist --summary >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
-      # GitHub's cron never fires for this repo, so the workflow schedules itself:
-      # wait ~25 minutes, then dispatch the next run with the built-in GITHUB_TOKEN
-      # (workflow_dispatch is an explicit exception to Actions' recursion guard).
-      # A push cancels the sleeping run and its own dispatch continues the chain.
-      - name: Wait for the next slot
+      - name: Distribute validated stories
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          DISTRIBUTION_WEBHOOK_URL: ${{ secrets.DISTRIBUTION_WEBHOOK_URL }}
+        run: python distribute.py dist --summary >> "$GITHUB_STEP_SUMMARY"
+      - name: Save TOP Briefs and delivery cache
         if: always()
-        run: sleep 1500
-      - name: Chain the next run
-        if: always()
-        run: |
-          curl -sS -X POST \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${{ github.repository }}/actions/workflows/build.yml/dispatches \
-            -d '{"ref":"main"}'
+        uses: actions/cache/save@v4
+        with:
+          path: briefs-cache.json
+          key: briefs-${{ github.run_id }}
