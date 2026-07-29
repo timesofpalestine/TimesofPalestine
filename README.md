@@ -2,7 +2,7 @@
 
 An independent, bilingual (English/Arabic), fully automated digital news front page for Palestine.
 It aggregates live reporting from outlets across Palestine and the region, links every story back
-to its original publisher, and rebuilds itself roughly every 25 minutes with **zero human management**.
+to its original publisher, and rebuilds itself about every 25 minutes (subject to Actions queue delays) with **zero human management**.
 
 - **English edition:** `/en/` (LTR) · **Arabic edition:** `/ar/` (RTL, natively mirrored)
 - The root `/` auto-redirects visitors based on their browser language.
@@ -36,7 +36,7 @@ Then open <http://localhost:8000>.
 ## Deploy once — then it runs itself forever
 
 The included GitHub Actions workflow ([.github/workflows/build.yml](.github/workflows/build.yml))
-rebuilds the site from live feeds roughly **every 25 minutes** (via self-dispatch chaining) and publishes it to GitHub Pages (free hosting).
+rebuilds the site from live feeds about **every 25 minutes** (subject to queue delays) and publishes it to GitHub Pages (free hosting). It does this with self-dispatch chaining in the workflow's **Wait for the next slot** and **Chain the next run** steps.
 
 One-time setup:
 
