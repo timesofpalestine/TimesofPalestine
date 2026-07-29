@@ -23,9 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install brief-writing dependency
-        run: pip install anthropic
-      - name: Restore TOP Briefs cache
+      - name: Restore delivery cache
         uses: actions/cache/restore@v4
         with:
           path: briefs-cache.json
@@ -34,8 +32,6 @@ jobs:
       - name: Run publishing safety tests
         run: python -m unittest discover -s tests -v
       - name: Build site from live feeds
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python build.py
       - name: Validate generated site
         run: python validate_build.py dist
@@ -53,7 +49,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           DISTRIBUTION_WEBHOOK_URL: ${{ secrets.DISTRIBUTION_WEBHOOK_URL }}
         run: python distribute.py dist --summary >> "$GITHUB_STEP_SUMMARY"
-      - name: Save TOP Briefs and delivery cache
+      # This retains legacy brief entries but now serves only as delivery history.
+      - name: Save delivery cache
         if: always()
         uses: actions/cache/save@v4
         with:
