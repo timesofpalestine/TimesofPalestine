@@ -36,7 +36,7 @@ Then open <http://localhost:8000>.
 ## Deploy once — then it runs itself forever
 
 The included GitHub Actions workflow ([.github/workflows/build.yml](.github/workflows/build.yml))
-rebuilds the site from live feeds roughly **every 25 minutes** and publishes it to GitHub Pages (free hosting).
+rebuilds the site from live feeds roughly **every 25 minutes** (via self-dispatch chaining) and publishes it to GitHub Pages (free hosting).
 
 One-time setup:
 
@@ -69,7 +69,7 @@ For maximum tipster safety, consider a dedicated phone/number for the newsroom S
 
 ## Hosting at GoDaddy (timesofpalestine.com)
 
-**Recommended — keep the automation:** host the site on GitHub Pages (free, rebuilds roughly every 25 min)
+**Recommended — keep the automation:** host the site on GitHub Pages (free, rebuilds roughly every 25 minutes)
 and just point the GoDaddy **DNS** at it (README section above). GoDaddy stays your registrar;
 GitHub does the serving and refreshing. This is the only zero-management option.
 
