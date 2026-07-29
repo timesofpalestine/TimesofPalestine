@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
 permissions:
-  contents: read
+  contents: write            # the investigations desk commits its reports back
   pages: write
   id-token: write
   actions: write             # lets the run dispatch its own successor
@@ -36,7 +36,17 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          INVESTIGATIONS: ${{ vars.INVESTIGATIONS }}   # set this repo variable to "off" to pause the desk
         run: python build.py
+      # The desk writes at most one report an hour into originals/. Commit it back so
+      # it survives the next build; [skip ci] stops the push starting another run.
+      - name: File the investigations desk's report
+        if: always()
+        run: |
+          git config user.name "Times of Palestine"
+          git config user.email "noreply@timesofpalestine.com"
+          git add originals topics.json
+          git diff --quiet --cached || (git commit -m "Investigations desk: file report [skip ci]" && git push)
       # Saved HERE, not by actions/cache's post-job hook. This job ends in a
       # sleep that the next run cancels, so a post-job save never executes —
       # which silently threw away every brief, every translated headline and
