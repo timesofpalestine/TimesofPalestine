@@ -118,6 +118,7 @@ If a fact cannot stand on inline attribution, it is not ready to publish. Cut it
 rather than propping it up with apparatus.
 
 OUTPUT FORMAT — follow exactly
+Begin your reply with TITLE: — no preamble, no "I'll research this now".
 Line 1: TITLE: <a headline of at most 12 words, one sentence, no colon-subtitle>
 Line 2: DEK: <one sentence, at most 30 words, saying what the report establishes>
 Then a blank line, then the body in plain paragraphs separated by blank lines. Use no \
@@ -139,6 +140,7 @@ and dates. Every fact, figure, attribution and denial must survive exactly — a
 nothing, drop nothing, soften nothing.
 
 OUTPUT FORMAT — follow exactly
+Begin your reply with TITLE: — no preamble of any kind.
 Line 1: TITLE: <the Arabic headline, at most 12 words>
 Line 2: DEK: <one Arabic sentence, at most 30 words>
 Then a blank line, then the body in plain paragraphs separated by blank lines, no \
@@ -165,6 +167,13 @@ def _pick_topic(topics, state):
 def _parse(text):
     """Split the desk's output into title, dek, body and sources."""
     text = text.strip()
+    # The model sometimes opens with a courtesy line ("I'll research this now.") and
+    # occasionally runs it straight into TITLE: with no line break, which defeats the
+    # ^-anchored match below. Anchor on the first TITLE: instead of throwing away an
+    # otherwise complete, sourced report over a stray preamble.
+    cut = text.find("TITLE:")
+    if cut > 0:
+        text = text[cut:]
     m_title = re.search(r"^TITLE:\s*(.+)$", text, re.M)
     m_dek = re.search(r"^DEK:\s*(.+)$", text, re.M)
     m_src = re.search(r"^SOURCES:\s*(.*)$", text, re.M | re.S)
@@ -194,7 +203,11 @@ def _call(client, system, messages, tools=None, max_tokens=32000):
                   messages=messages, thinking={"type": "adaptive"})
     if tools:
         kwargs["tools"] = tools
-    resp = client.messages.create(**kwargs)
+    # Must stream. A research pass with adaptive thinking and a large max_tokens can
+    # exceed the SDK's 10-minute non-streaming ceiling, and the SDK refuses the call
+    # outright rather than letting it run — which is why the desk filed nothing at all.
+    with client.messages.stream(**kwargs) as stream:
+        resp = stream.get_final_message()
     text = "".join(b.text for b in resp.content if b.type == "text").strip()
     return text, getattr(resp, "stop_reason", None)
 
@@ -306,13 +319,14 @@ def _run():
 def run():
     """Never raises. The investigations desk must never be able to stop the news."""
     try:
-        return _run()
+        status = _run()
     except Exception as e:
         now = datetime.now(timezone.utc)
         hour = now.strftime("%Y-%m-%dT%H")
         state = _load(STATE_FILE, {})
         _save_state(state, now, hour, f"stage failed ({type(e).__name__}: {e})")
         return f"investigations: stage failed ({type(e).__name__}: {e}) — news build continues"
+    return status
 
 
 if __name__ == "__main__":
