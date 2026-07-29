@@ -2,7 +2,7 @@
 
 An independent, bilingual (English/Arabic), fully automated digital news front page for Palestine.
 It aggregates live reporting from outlets across Palestine and the region, links every story back
-to its original publisher, and rebuilds itself every 25 minutes with **zero human management**.
+to its original publisher, and rebuilds itself roughly every 25 minutes with **zero human management**.
 
 - **English edition:** `/en/` (LTR) · **Arabic edition:** `/ar/` (RTL, natively mirrored)
 - The root `/` auto-redirects visitors based on their browser language.
