@@ -399,7 +399,7 @@ def finish_item(item, feed):
             item["needs_translation"] = True
         item["cat"] = categorize(item)
     elif feed.get("type") == "telegram":
-        item["cat"] = "social"
+        item["cat"] = categorize(item) if feed.get("wire") else "social"
     elif feed.get("research"):
         item["cat"] = "research"
     elif feed.get("category"):  # feeds that pre-decide their section
@@ -488,7 +488,7 @@ def fetch_telegram(feed, lang, now, max_age):
         text = re.sub(r"https?://\S+", "", raw)
         text = EMOJI_RX.sub("", text).replace("#", "")
         text = re.sub(r"\s+", " ", text).strip(" .|-—·")
-        text = re.sub(r"^\s*وكالة معا\s*[|:ـ—-]+\s*", "", text)  # agency name prefixed to some posts
+        text = re.sub(r"^\s*وكالة معا\s*[|:ـ—-]+\s*", "", text); text = re.sub(r"\s*[ـ​-‏﻿]+\s*", "", text)  # strip the agency prefix, then stitch words split by tatweel/zero-width marks (فلسـ ـطين -> فلسطين) to evade keyword filters — otherwise the relevance gate misses the story and the headline publishes mangled
         if len(text) < 25:
             continue
         date = parse_date(m_date.group(1))
