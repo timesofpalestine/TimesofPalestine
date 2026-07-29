@@ -174,7 +174,7 @@ ARTS_RX = re.compile(
     r"\bpoet\b|poetry|novelist|musician|singer|\bdabke\b|embroidery|tatreez|"
     r"heritage|museum|cuisine|cinema|\bfilm\b|culture|"
     r"فنان|فنانة|تشكيلي|معرض|لوحة|جدارية|مخرج(?!ات)|وثائقي|شاعر|شاعرة|روائي|"
-    r"موسيقي|مغني|مغنية|دبكة|تطريز|تراث|متحف|مطبخ|سينما|فيلم|ثقافة", re.I)
+    r"موسيقي|مغني|مغنية|دبكة|تطريز|تراث|متحف|مطبخ|سينما|فيلم|ثقافة", re.I); SPORTS_RX = re.compile(r"football|soccer|\bfifa\b|\buefa\b|olympic|paralympic|stadium|league match|world cup|tournament|championship|athlete|footballer|\bcoach\b|national team|كرة القدم|كرة السلة|مباراة|منتخب|نادي رياضي|الدوري|ملعب|أولمبي|فيفا|بطولة|تصفيات|كأس العالم|لاعب|رياضي|رياضة", re.I)
 
 # Real lives — the human stories behind the headlines: profiles, testimony, memory.
 REAL_LIVES_RX = re.compile(
@@ -258,7 +258,7 @@ CATEGORY_RULES = [
     ("accountability", ACCOUNTABILITY_RX),
     ("bitcoin", BTC_SECTION_RX),
     ("diaspora", DIASPORA_RX),
-    ("arts", ARTS_RX),
+    ("arts", ARTS_RX), ("sports", SPORTS_RX),
  
     ("gaza", re.compile(
         r"gaza|rafah|khan younis|deir al[- ]balah|beit lahia|jabalia|"
@@ -849,7 +849,7 @@ def build_lang(lang):
         results = list(ex.map(lambda f: fetch_feed(f, lang), FEEDS[lang]))
     results.append(load_originals(lang))
     items = sorted(dedupe([i for r in results for i in r]), key=lambda i: i["date"], reverse=True)
-    caps = {f["id"]: f.get("cap", PER_SOURCE_CAP) for f in FEEDS[lang]}
+    caps = {f["id"]: f.get("cap", PER_SOURCE_CAP) for f in FEEDS[lang]}; caps["top-original"] = 200
     per_source, capped = {}, []
     for it in items:
         per_source[it["source_id"]] = per_source.get(it["source_id"], 0) + 1
@@ -874,7 +874,7 @@ STR = {
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
                      "humans": "Real Lives",
                      "diaspora": "The Diaspora",
-                     "arts": "Culture & Arts",
+                     "arts": "Culture & Arts", "sports": "Sport",
                      "accountability": "Transparency & Accountability",
                      "research": "Research & Investigations",
                      "bitcoin": "Financial Freedom",
@@ -929,7 +929,7 @@ STR = {
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
                      "humans": "حكايات فلسطينية",
                      "diaspora": "الشتات الفلسطيني",
-                     "arts": "الثقافة والفنون",
+                     "arts": "الثقافة والفنون", "sports": "رياضة",
                      "accountability": "شفافية ومساءلة",
                      "research": "أبحاث وتحقيقات",
                      "bitcoin": "الحرية المالية",
@@ -971,12 +971,12 @@ STR = {
 # Focus sections sit high on the page; each edition leads with its editorial priority.
 # Research (think tanks / OSINT) comes first: news before it becomes news.
 SECTION_ORDER = {
-    "en": ["research", "gaza", "westbank", "social", "bitcoin", "diaspora", "arts",
+    "en": ["research", "gaza", "westbank", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news"],
-    "ar": ["research", "gaza", "westbank", "social", "bitcoin", "diaspora", "arts",
+    "ar": ["research", "gaza", "westbank", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news"],
 }
-FOCUS_SECTIONS = {"research", "diaspora", "arts", "accountability", "bitcoin", "social"}  # shown even with one story
+FOCUS_SECTIONS = {"research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social"}  # shown even with one story
 
 WEEKDAYS_AR = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
 MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",
@@ -1655,7 +1655,7 @@ REDIRECT_HTML = """<!DOCTYPE html>
 # ---------- main ----------
 
 def main():
-    built_at = datetime.now(timezone.utc)
+    built_at = datetime.now(timezone.utc); print(__import__("originals_gen").run())
     en_items = build_lang("en")
     ar_items = build_lang("ar")
     try:
