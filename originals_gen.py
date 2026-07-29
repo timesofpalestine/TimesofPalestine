@@ -188,7 +188,11 @@ def _call(client, system, messages, tools=None, max_tokens=32000):
                   messages=messages, thinking={"type": "adaptive"})
     if tools:
         kwargs["tools"] = tools
-    resp = client.messages.create(**kwargs)
+    # Must stream. A research pass with adaptive thinking and a large max_tokens can
+    # exceed the SDK's 10-minute non-streaming ceiling, and the SDK refuses the call
+    # outright rather than letting it run — which is why the desk filed nothing at all.
+    with client.messages.stream(**kwargs) as stream:
+        resp = stream.get_final_message()
     return "".join(b.text for b in resp.content if b.type == "text").strip()
 
 
@@ -278,12 +282,32 @@ def _run():
             f"{len(parsed_ar['body'].split())} words AR, {len(parsed_en['sources'])} sources")
 
 
+def _record_failure(msg):
+    """Leave a trace on disk so a silent desk is visible without reading Actions logs.
+
+    Also stamps last_hour, which bounds the retry: without it a hard failure repeats
+    on every build (~every 25 minutes) instead of once an hour. Never raises.
+    """
+    try:
+        now = datetime.now(timezone.utc)
+        state = _load(STATE_FILE, {})
+        state["last_hour"] = now.strftime("%Y-%m-%dT%H")
+        state["last_attempt"] = now.isoformat()
+        state["last_status"] = msg
+        ORIGINALS.mkdir(exist_ok=True)
+        STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+    except Exception:
+        pass
+
+
 def run():
     """Never raises. The investigations desk must never be able to stop the news."""
     try:
-        return _run()
+        status = _run()
     except Exception as e:
-        return f"investigations: stage failed ({type(e).__name__}: {e}) — news build continues"
+        status = f"investigations: stage failed ({type(e).__name__}: {e}) — news build continues"
+        _record_failure(status)
+    return status
 
 
 if __name__ == "__main__":
