@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0c"><link rel="manifest" href="/manifest.json">
+<title>من نحن — اتصل بنا — تايمز أوف فلسطين</title>
+<meta name="description" content="«تايمز أوف فلسطين» غرفة أخبار رقمية مستقلة تغطي فلسطين بالعربية والإنجليزية على مدار الساعة. لا نتبع حكومة ولا حزباً ولا فصيلاً؛ ولاؤنا الوحيد للحقيقة المو">
+<link rel="canonical" href="https://timesofpalestine.com/ar/about.html">
+<link rel="alternate" hreflang="en" href="https://timesofpalestine.com/en/about.html">
+<link rel="alternate" hreflang="ar" href="https://timesofpalestine.com/ar/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;0,8..60,900;1,8..60,700&family=Cairo:wght@400;600;700;800;900&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#C8102E; --green:#00753A; --black:#0b0b0c; --ink:#141419; --muted:#595962;
+  --paper:#faf9f4; --card:#ffffff; --line:#e6e3da; --line-dark:#c9c5b8;
+  --serif:"Source Serif 4",Georgia,serif; --sans:"Libre Franklin",-apple-system,Helvetica,Arial,sans-serif;
+  --max:1180px;
+}
+[lang=ar]{ --serif:"Cairo",Tahoma,sans-serif; --sans:"Cairo",Tahoma,sans-serif; }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:20px}
+
+.topbar{background:var(--black);color:#cfcfd6;font-size:.75rem}
+.topbar .wrap{display:flex;align-items:center;gap:1rem;min-height:36px;flex-wrap:wrap}
+.topbar .date{color:#fff;font-weight:600;letter-spacing:.02em}
+.topbar .upd{display:flex;align-items:center;gap:.4rem}
+.topbar .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.35}}
+.topbar .lang{margin-inline-start:auto;color:#fff;font-weight:700;border:1px solid #3a3a42;padding:.2rem .7rem;border-radius:2px}
+.topbar .lang:hover{background:var(--red);border-color:var(--red)}
+.ticker{background:var(--red);color:#fff;overflow:hidden;display:flex;align-items:stretch}
+.ticker .label{background:var(--black);font-weight:800;letter-spacing:.12em;font-size:.72rem;display:flex;align-items:center;padding:.45rem .9rem;flex-shrink:0;z-index:2}
+[lang=ar] .ticker .label{letter-spacing:.02em}
+.ticker .rail{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker .track{display:flex;gap:2.5rem;white-space:nowrap;animation:tick 80s linear infinite;padding-inline:1.5rem}
+[dir=rtl] .ticker .track{animation-name:tick-rtl}
+.ticker:hover .track{animation-play-state:paused}
+.ticker a{font-size:.82rem;font-weight:600}
+.ticker a::before{content:"●";color:rgba(255,255,255,.55);margin-inline-end:.7rem;font-size:.55rem;vertical-align:2px}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes tick-rtl{from{transform:translateX(0)}to{transform:translateX(50%)}}
+
+.masthead{background:var(--card);border-bottom:1px solid var(--line);text-align:center;padding:1.5rem 0 1.1rem}
+.masthead .logotype{display:inline-flex;align-items:center}
+.masthead .wrap::after{content:"";display:block;margin:.85rem auto 0;width:112px;height:4px;background:linear-gradient(90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
+[dir=rtl] .masthead .wrap::after{background:linear-gradient(-90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
+.masthead h1,.masthead .wordmark{font-family:var(--serif);font-weight:900;line-height:1;letter-spacing:-.01em;color:var(--black);font-size:clamp(1.6rem,4vw,2.6rem);white-space:nowrap}
+.masthead h1 .l2,.masthead .wordmark .l2{color:var(--red)}
+[lang=ar] .masthead h1,[lang=ar] .masthead .wordmark{font-family:"Amiri",serif;letter-spacing:0;font-weight:700;line-height:1.25}
+.masthead.compact{padding:.9rem 0 .7rem}
+.masthead.compact h1,.masthead.compact .wordmark{font-size:1.35rem}
+
+nav.sections{position:sticky;top:0;background:var(--black);z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+nav.sections .wrap{display:flex;flex-wrap:wrap;gap:0 .1rem;padding-block:.2rem}
+nav.sections a{color:#e8e8ee;font-size:.73rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:.5rem .6rem;white-space:nowrap;border-bottom:3px solid transparent}
+[lang=ar] nav.sections a{letter-spacing:0;font-size:.8rem}
+nav.sections a:hover{color:#fff;border-color:var(--red)}
+nav.sections a.home{color:#f93549}
+
+.hero-zone{display:grid;grid-template-columns:minmax(0,2.05fr) minmax(0,1fr);gap:2rem;padding-block:1.8rem}
+.hero{border-inline-end:1px solid var(--line);padding-inline-end:2rem}
+.hero .label{color:var(--red);font-size:.68rem;font-weight:800;letter-spacing:.2em;margin-bottom:.6rem}
+[lang=ar] .hero .label{letter-spacing:.03em;font-size:.8rem}
+.hero img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#ddd}
+.hero h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.13;margin-top:1rem}
+[lang=ar] .hero h2{line-height:1.5;font-weight:800}
+.hero h2 a:hover{color:var(--red)}
+.hero .dek{margin-top:.7rem;font-size:1.02rem;color:#3c3c44;font-family:var(--serif);line-height:1.55}
+[lang=ar] .hero .dek{line-height:1.8}
+.photocredit{font-size:.66rem;color:#9a9aa2;margin-top:.35rem}
+.meta{display:flex;align-items:center;gap:.6rem;margin-top:.8rem;font-size:.74rem;color:var(--muted)}
+.meta .src{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+[lang=ar] .meta .src{letter-spacing:0}
+.meta .t{font-weight:600}
+.hero-sub{margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.hero-sub article .chip{font-size:.64rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
+[lang=ar] .hero-sub article .chip{letter-spacing:0;font-size:.72rem}
+.hero-sub article h3{font-family:var(--serif);font-weight:700;font-size:1.05rem;line-height:1.3;margin-top:.25rem}
+[lang=ar] .hero-sub article h3{line-height:1.6}
+.hero-sub article h3 a:hover{color:var(--red)}
+.hero-sub article .t{font-size:.68rem;color:var(--muted);font-weight:600;margin-top:.3rem}
+
+.latest h2{font-size:.8rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--black);border-bottom:3px solid var(--red);padding-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+[lang=ar] .latest h2{letter-spacing:.02em;font-size:.95rem}
+.latest h2::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite}
+.latest ol{list-style:none}
+.latest li{padding-block:.8rem;border-bottom:1px solid var(--line)}
+.latest .t{color:var(--red);font-weight:800;font-size:.68rem;letter-spacing:.05em;display:block;margin-bottom:.2rem}
+[lang=ar] .latest .t{letter-spacing:0;font-size:.75rem}
+.latest h3{font-size:.92rem;font-weight:600;line-height:1.35}
+[lang=ar] .latest h3{line-height:1.65;font-size:.98rem}
+.latest h3 a:hover{color:var(--red)}
+.latest .s{font-size:.68rem;color:var(--muted);font-weight:600;text-transform:uppercase;margin-top:.2rem;display:block}
+[lang=ar] .latest .s{text-transform:none;font-size:.75rem}
+
+section.block{padding-block:1.6rem;border-top:1px solid var(--line-dark)}
+.sec-head{display:flex;align-items:baseline;gap:.8rem;margin-bottom:1.2rem}
+.sec-head::before{content:"";width:12px;height:12px;background:var(--green);align-self:center}
+.sec-head.focus::before{background:var(--red)}
+.sec-head h2{font-family:var(--serif);font-weight:900;font-size:1.45rem;color:var(--black)}
+[lang=ar] .sec-head h2{font-weight:700}
+.sec-head .rule{flex:1;height:1px;background:var(--line-dark)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.4rem}.grid.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card img{aspect-ratio:16/10;object-fit:cover;width:100%;background:#e8e6df;margin-bottom:.7rem;transition:opacity .18s}
+.card:hover img,.rowcard:hover img{opacity:.9}
+.card:hover h3 a,.rowcard:hover h3 a{color:var(--red)}
+.card .ph{aspect-ratio:16/10;margin-bottom:.7rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
+.card .ph svg{width:44px;height:44px;opacity:.9}
+.card .chip{font-size:.64rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
+[lang=ar] .card .chip{letter-spacing:0;font-size:.72rem}
+.card h3{font-family:var(--serif);font-weight:700;font-size:1.02rem;line-height:1.3;margin-top:.3rem}
+[lang=ar] .card h3{line-height:1.6}
+.card h3 a:hover{color:var(--red)}
+.card .t{font-size:.68rem;color:var(--muted);font-weight:600;margin-top:.4rem}
+[lang=ar] .card .t{font-size:.75rem}
+
+/* sparse sections (<4 stories): full-width horizontal rows — no half-empty grids */
+.rowlist{display:flex;flex-direction:column}
+.rowcard{display:flex;gap:1.3rem;align-items:flex-start;padding-block:1rem;border-bottom:1px solid var(--line)}
+.rowcard:last-child{border-bottom:none}
+.rowcard>a:first-child,.rowcard>.ph{flex-shrink:0}
+.rowcard img,.rowcard .ph{width:220px;aspect-ratio:16/10;object-fit:cover;background:#e8e6df;margin:0;display:flex;align-items:center;justify-content:center}
+.rowcard .ph{background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
+.rowcard .ph svg{width:40px;height:40px;opacity:.9}
+.rowcard h3{font-family:var(--serif);font-weight:700;font-size:1.15rem;line-height:1.3;margin-top:.25rem}
+[lang=ar] .rowcard h3{line-height:1.6}
+.rowcard h3 a:hover{color:var(--red)}
+.rowcard .chip{font-size:.64rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
+[lang=ar] .rowcard .chip{letter-spacing:0;font-size:.72rem}
+.rowcard .t{font-size:.68rem;color:var(--muted);font-weight:600;margin-top:.35rem}
+
+/* featured research report — the "news before it becomes news" card */
+.research-feat{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:0;background:var(--card);border:1px solid var(--line-dark);border-inline-start:5px solid var(--red);margin-bottom:1.6rem;box-shadow:0 2px 14px rgba(0,0,0,.05)}
+.research-feat .body{padding:1.6rem 1.8rem}
+.research-feat .kick{color:var(--red);font-size:.66rem;font-weight:800;letter-spacing:.2em;margin-bottom:.55rem}
+[lang=ar] .research-feat .kick{letter-spacing:.04em;font-size:.78rem}
+.research-feat h3{font-family:var(--serif);font-weight:900;font-size:clamp(1.25rem,2.2vw,1.7rem);line-height:1.18}
+[lang=ar] .research-feat h3{font-weight:700;line-height:1.5}
+.research-feat h3 a:hover{color:var(--red)}
+.research-feat .dek{margin-top:.8rem;font-family:var(--serif);font-size:.97rem;line-height:1.6;color:#33333b}
+[lang=ar] .research-feat .dek{line-height:1.85}
+.research-feat img{width:100%;height:100%;object-fit:cover;background:#e8e6df;min-height:240px}
+.research-feat .noimg{background:linear-gradient(135deg,#0b0b0c 0 55%,#14241b 55% 100%);display:flex;align-items:center;justify-content:center;min-height:240px}
+.research-feat .noimg span{font-family:var(--serif);color:#3fd07c;font-size:3.2rem;font-weight:900}
+
+section.opinion{background:#f1efe8;border-top:4px solid var(--black);padding-block:1.8rem;margin-block:1.2rem}
+section.opinion .sec-head::before{background:var(--red)}
+.op-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.6rem}
+.op-card{border-inline-start:3px solid var(--red);padding-inline-start:1rem}
+.op-card .q{font-family:var(--serif);font-size:2.2rem;color:var(--red);line-height:.6;display:block;margin-bottom:.4rem}
+.op-card h3{font-family:var(--serif);font-style:italic;font-weight:700;font-size:1.12rem;line-height:1.35}
+[lang=ar] .op-card h3{line-height:1.65;font-style:normal}
+.op-card h3 a:hover{color:var(--red)}
+
+section.tipband{background:var(--black);color:#fff;margin-block:1.2rem;border-block:4px solid var(--green);position:relative;overflow:hidden}
+section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-end:-60px;width:280px;background:linear-gradient(120deg,transparent 0 40%,rgba(0,122,61,.35) 40% 55%,rgba(206,17,38,.30) 55% 70%,transparent 70%);pointer-events:none}
+.tipband .wrap{display:flex;align-items:center;gap:2rem;padding-block:1.8rem;flex-wrap:wrap;position:relative;z-index:1}
+.tipband .lock{flex-shrink:0}
+.tipband .txt{flex:1;min-width:260px}
+.tipband .kick{color:#3fd07c;font-size:.68rem;font-weight:800;letter-spacing:.22em;margin-bottom:.35rem}
+[lang=ar] .tipband .kick{letter-spacing:.04em;font-size:.8rem}
+.tipband h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.2}
+[lang=ar] .tipband h2{font-weight:700;line-height:1.5}
+.tipband .sub{color:#c9c9d2;font-size:.9rem;margin-top:.45rem;max-width:56ch;line-height:1.6}
+.tipband .cta{flex-shrink:0;text-align:center}
+.tipband .btn{display:inline-block;background:#2f6bff;background:var(--green);color:#fff;font-weight:800;font-size:.92rem;padding:.85rem 1.6rem;border-radius:3px;border:2px solid #3fd07c;transition:.15s}
+.tipband .btn:hover{background:#3fd07c;color:var(--black)}
+.tipband .tgbtn{display:inline-block;margin-top:.7rem;border:1px solid #3a3a42;color:#cfe9ff;font-weight:700;font-size:.82rem;padding:.5rem 1rem;border-radius:3px}.tipband .tgbtn:hover{background:#229ED9;border-color:#229ED9;color:#fff}.tipband .micro{display:block;margin-top:.55rem;font-size:.72rem;color:#8f8f99;font-style:italic}
+[lang=ar] .tipband .micro{font-style:normal}
+.tipband .qrbox{background:#fff;padding:.55rem .55rem .45rem;border-radius:8px;display:inline-block;margin-top:.8rem}
+.tipband .qrbox img{width:104px;height:104px;display:block;image-rendering:pixelated}
+.tipband .qrbox span{display:block;font-size:.7rem;font-weight:800;color:#111;margin-top:.25rem;text-align:center;direction:ltr}
+.tipband .scanhint{display:block;margin-top:.4rem;font-size:.68rem;color:#8f8f99}
+.tipband .safety{flex-basis:100%;font-size:.7rem;color:#77777f;border-top:1px solid #26262c;padding-top:.7rem}
+nav.sections a.tip{color:#3fd07c;border-color:#3fd07c}
+
+/* story page */
+.story{max-width:780px;margin-inline:auto;padding:2rem 20px 1rem}
+.story .kick{color:var(--red);font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.7rem}
+[lang=ar] .story .kick{letter-spacing:.03em;font-size:.82rem}
+.story h1{font-family:var(--serif);font-weight:900;font-size:clamp(1.6rem,3.6vw,2.5rem);line-height:1.15}
+[lang=ar] .story h1{font-weight:800;line-height:1.5}
+.story .meta{margin-top:1rem;font-size:.8rem}
+.story div.lede{width:100%;aspect-ratio:16/9;margin-top:1.4rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}.story div.lede svg{width:64px;height:64px;opacity:.9}.story img.lede{width:100%;height:auto;max-height:68vh;object-fit:cover;object-position:top;background:#e8e6df;margin-top:1.4rem}
+.story .kind{margin-top:1.4rem;display:inline-block;background:var(--red);color:#fff;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;border-radius:2px}[lang=ar] .story .kind{letter-spacing:0;font-size:.78rem}.story .based{display:block;margin-top:.3rem;font-weight:600;color:var(--muted);text-transform:none;letter-spacing:0}.story .byline{margin-top:.7rem;font-size:.74rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.1em}
+[lang=ar] .story .byline{letter-spacing:0;text-transform:none;font-size:.85rem}
+.story .summary{margin-top:1rem;font-family:var(--serif);font-size:1.13rem;line-height:1.7;color:#26262e}
+.story .summary+.summary{margin-top:.9rem}
+[lang=ar] .story .summary{line-height:2}
+.story .cta{margin-top:1.8rem;text-align:center;border-block:1px solid var(--line);padding-block:1.5rem}
+.story .cta a{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:1rem;padding:.9rem 2rem;border-radius:3px}
+.story .cta a:hover{background:#a50d1e}
+.story .note{margin-top:.8rem;font-size:.72rem;color:var(--muted)}
+.keep{padding-block:1.8rem}
+.backbar{background:var(--black)}
+.backbar a{display:block;max-width:780px;margin-inline:auto;padding:.6rem 20px;color:#fff;font-size:.8rem;font-weight:700}
+.backbar a:hover{color:#f93549}
+
+footer{background:var(--black);color:#b9b9c2;margin-top:2.5rem;padding-block:2.5rem;font-size:.85rem}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem}
+footer h2{color:#fff;font-family:var(--serif);font-size:1.2rem;margin-bottom:.8rem;display:flex;align-items:center;gap:.6rem}
+footer h2::before{content:"";width:10px;height:10px;background:var(--red)}
+footer .mission{line-height:1.75}
+[lang=ar] footer .mission{line-height:2}
+footer ul{list-style:none;columns:2;gap:2rem}
+footer li{margin-bottom:.45rem}
+footer a{color:#e6e6ec;font-weight:600}
+footer a:hover{color:#fff;text-decoration:underline}
+footer .legal{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #2a2a30;font-size:.72rem;color:#8b8b94;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%);border-top:4px solid var(--red);max-width:200px;margin-bottom:1.5rem}
+[dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}@media (prefers-color-scheme:dark){:root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}.masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.hero h2,.card h3,.rowcard h3,.hero-sub article h3,.research-feat h3,.op-card h3{color:var(--ink)}.hero .dek{color:#c5c5cf}.story .summary{color:#d6d6de}.research-feat .dek{color:#c5c5cf}section.opinion{background:#17171c}.card img,.hero img,.rowcard img,.story img.lede{opacity:.92}/* The flag palette never changes: fills, rules, markers and the masthead stay true brand red and green in dark mode. Only small red/green TEXT lifts to a lighter tint of the SAME hue, because #C8102E on near-black is 3.2:1 — fine for large type and graphics, unreadable at .66rem. */.hero .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q,.hero h2 a:hover,.card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.hero-sub article h3 a:hover{color:#f93549}.meta .src,.card .chip,.rowcard .chip,.hero-sub article .chip{color:#3fd07c}}@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}}.skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}.skiplink:focus{inset-inline-start:0}.share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}.share span{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;align-self:center}.share a{border:1px solid var(--line-dark);padding:.35rem .8rem;border-radius:3px;font-size:.8rem;font-weight:700}.share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
+
+@media(max-width:700px){nav.sections .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:26px;margin-inline-start:-26px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none;flex-shrink:0}[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}} @media(max-width:960px){
+  .research-feat{grid-template-columns:1fr}
+  .research-feat img,.research-feat .noimg{min-height:180px;order:-1}
+  .hero-zone{grid-template-columns:1fr}
+  .hero{border-inline-end:none;padding-inline-end:0}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rowcard img,.rowcard .ph{width:150px}
+  .op-grid{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .grid{grid-template-columns:1fr}
+  .hero-sub{grid-template-columns:1fr}
+  .rowcard img,.rowcard .ph{width:110px}
+  footer ul{columns:1}
+}
+</style><script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script><script>(self.SWG_BASIC = self.SWG_BASIC || []).push(basicSubscriptions => {basicSubscriptions.init({type: "NewsArticle", isPartOfType: ["Product"], isPartOfProductId: "CAowqpHhCw:openaccess", clientOptions: { theme: "light", lang: "ar" },});});</script>
+</head>
+<body>
+<div class="backbar"><a href="./">كل الأخبار ←</a></div>
+<header class="masthead compact"><div class="wrap">
+  <a class="logotype" href="./"><h1><span class="l1">تايمز أوف</span> <span class="l2">فلسطين</span></h1></a>
+</div></header>
+<main>
+  <article class="story">
+    <p class="kick">تايمز أوف فلسطين</p>
+    <h1>من نحن — اتصل بنا</h1>
+    <h2 style="font-family:var(--serif);font-size:1.25rem;margin-top:1.6rem">من نحن</h2><p class="summary">«تايمز أوف فلسطين» غرفة أخبار رقمية مستقلة تغطي فلسطين بالعربية والإنجليزية على مدار الساعة. لا نتبع حكومة ولا حزباً ولا فصيلاً؛ ولاؤنا الوحيد للحقيقة الموثّقة، ولشعب فلسطين وحقوقه الإنسانية التي وهبها الله له.</p><h2 style="font-family:var(--serif);font-size:1.25rem;margin-top:1.6rem">كيف تعمل غرفة الأخبار</h2><p class="summary">يجمع مكتبنا الأخبار باستمرار من عشرات المصادر الفلسطينية والإقليمية والدولية ومراكز الأبحاث والمصادر الأولية. كل خبر مجمّع يُنسب إلى ناشره الأصلي ويُحيل إليه مباشرة، ويحتفظ الناشرون بكامل حقوقهم. وإلى جانب التجميع ننشر تقارير أصلية وملخصات إخبارية موجزة يعدّها فريق التحرير وتُنسب إليه بوضوح.</p><h2 style="font-family:var(--serif);font-size:1.25rem;margin-top:1.6rem">التقارير الميدانية</h2><p class="summary">يرسل الصحفيون المواطنون والشهود تقاريرهم من الميدان عبر خطنا الآمن المشفّر. قبل النشر، يمر كل تقرير ميداني بفرزٍ آلي مقتبس من أدوات مفتوحة المصدر لغرف الأخبار: تُفحص التقارير من حيث التماسك الداخلي والتفاصيل القابلة للتحقق، وتُحجب حين تعتمد على الخطاب التحريضي بدل الوقائع. وتُنشر التقارير الميدانية في قسم مستقل واضح.</p><h2 style="font-family:var(--serif);font-size:1.25rem;margin-top:1.6rem">المعايير التحريرية والتصويبات</h2><p class="summary">ننقل الخبر بلا رقابة وبلا محاباة، ونحاسب السلطة أينما كانت، وننتقد بالصحافة المهنية لا بالإساءات الشخصية. وحين نخطئ نصحح فوراً. لطلب تصويب، راسل غرفة الأخبار عبر القناة أدناه مع رابط المادة وبيان الخطأ.</p><h2 style="font-family:var(--serif);font-size:1.25rem;margin-top:1.6rem">اتصل بغرفة الأخبار</h2><p class="summary">راسلنا على «سيغنال» — مشفّر، ومجهول الهوية إن اخترت: @TOP.972 أو عبر الزر أدناه. ويمكنك أيضاً مراسلة بوت غرفة الأخبار على تيليغرام: @TOPnewsdeskbot — تيليغرام أسهل، لكن «سيغنال» أكثر أماناً للمواد الحساسة. لسلامتك، استخدم أياً منهما من جهازك الشخصي ولا تشارك أي تفاصيل تكشف هويتك إلا إذا اخترت ذلك.</p>
+    <div class="cta"><a href="https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg" target="_blank" rel="noopener">🔒 راسلنا على سيغنال — @TOP.972</a>
+    <p style="margin-top:.9rem"><a href="https://t.me/TOPnewsdeskbot" target="_blank" rel="noopener" style="font-weight:700;color:var(--green)">أو راسلنا عبر تيليغرام → @TOPnewsdeskbot</a></p></div>
+  </article>
+</main>
+<footer><div class="wrap">
+  <div class="flagline"></div>
+  <div class="legal">
+    <span>© 2026 تايمز أوف فلسطين · timesofpalestine.com</span>
+    <a href="./">كل الأخبار ←</a>
+  </div>
+</div></footer>
+</body>
+</html>

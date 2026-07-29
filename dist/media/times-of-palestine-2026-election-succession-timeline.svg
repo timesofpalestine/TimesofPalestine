@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Palestinian succession and election timeline, 2025–2027</title>
+  <desc id="desc">A bilingual institutional timeline showing Hussein al-Sheikh's appointment, the October 2025 caretaker declaration, Fatah's May 2026 leadership election, and scheduled PNC, legislative and presidential elections.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .muted{fill:#aaa9a5}
+      .ivory{fill:#f2eee8}
+      .small{font-size:20px}
+      .body{font-size:23px}
+      .date{font-size:22px;font-weight:800;letter-spacing:1px}
+      .card-title{font-size:29px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="90" class="serif ivory" font-size="54" font-weight="800">Who takes power after Abbas?</text>
+  <text x="1510" y="90" class="arabic ivory" font-size="45" font-weight="800" text-anchor="end">من يتولى السلطة بعد عباس؟</text>
+  <text x="90" y="132" class="sans muted body">Published rules and announced ballots — not a forecast</text>
+  <text x="1510" y="132" class="arabic muted body" text-anchor="end">القواعد المنشورة ومواعيد الاقتراع المعلنة — ليس تنبؤاً</text>
+
+  <text x="90" y="210" class="sans" fill="#c7a86b" font-size="23" font-weight="800" letter-spacing="2">INTERIM SUCCESSION / الخلافة المؤقتة</text>
+  <line x1="110" y1="270" x2="1490" y2="270" stroke="#c7a86b" stroke-width="5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="300" width="430" height="176" rx="16" fill="#27282c" stroke="#c7a86b" stroke-width="2"/>
+    <text x="120" y="344" class="sans" fill="#c7a86b" font-size="20" font-weight="800">26 APR 2025</text>
+    <text x="120" y="385" class="sans ivory card-title">Hussein al-Sheikh appointed</text>
+    <text x="120" y="418" class="sans muted small">PLO vice-chair and vice-president</text>
+    <text x="490" y="450" class="arabic muted small" text-anchor="end">نائب رئيس اللجنة التنفيذية ونائب رئيس الدولة</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="585" y="300" width="430" height="176" rx="16" fill="#27282c" stroke="#8a1f2d" stroke-width="3"/>
+    <text x="615" y="344" class="sans" fill="#d65b69" font-size="20" font-weight="800">26 OCT 2025</text>
+    <text x="615" y="385" class="sans ivory card-title">Caretaker declaration</text>
+    <text x="615" y="418" class="sans muted small">PLO vice-chair: interim PA president</text>
+    <text x="985" y="450" class="arabic muted small" text-anchor="end">رئاسة مؤقتة حتى 90 يوماً، قابلة للتمديد مرة</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1080" y="300" width="430" height="176" rx="16" fill="#27282c" stroke="#286344" stroke-width="2"/>
+    <text x="1110" y="344" class="sans" fill="#59a97d" font-size="20" font-weight="800">14 MAY–3 JUN 2026</text>
+    <text x="1110" y="385" class="sans ivory card-title">Fatah leadership changes</text>
+    <text x="1110" y="418" class="sans muted small">Yasser Abbas wins a seat;</text>
+    <text x="1110" y="447" class="sans muted small">al-Sheikh becomes deputy chair</text>
+  </g>
+
+  <text x="90" y="555" class="sans" fill="#c7a86b" font-size="23" font-weight="800" letter-spacing="2">ELECTION CALENDAR / رزنامة الانتخابات</text>
+  <line x1="110" y1="615" x2="1490" y2="615" stroke="#f2eee8" stroke-opacity=".55" stroke-width="5"/>
+
+  <circle cx="310" cy="615" r="15" fill="#8a1f2d"/>
+  <circle cx="800" cy="615" r="15" fill="#286344"/>
+  <circle cx="1290" cy="615" r="15" fill="#c7a86b"/>
+
+  <g>
+    <text x="310" y="675" class="sans date" fill="#d65b69" text-anchor="middle">1 NOV 2026</text>
+    <text x="310" y="715" class="sans ivory card-title" text-anchor="middle">PNC election</text>
+    <text x="310" y="749" class="sans muted small" text-anchor="middle">350 seats: 200 territory + 150 diaspora</text>
+    <text x="310" y="783" class="arabic muted small" text-anchor="middle">انتخاب المجلس الوطني الفلسطيني</text>
+  </g>
+
+  <g>
+    <text x="800" y="675" class="sans date" fill="#59a97d" text-anchor="middle">28 NOV 2026</text>
+    <text x="800" y="715" class="sans ivory card-title" text-anchor="middle">Legislative election</text>
+    <text x="800" y="749" class="sans muted small" text-anchor="middle">200-seat Palestinian Legislative Council</text>
+    <text x="800" y="783" class="arabic muted small" text-anchor="middle">انتخاب المجلس التشريعي الفلسطيني</text>
+  </g>
+
+  <g>
+    <text x="1290" y="675" class="sans date" fill="#c7a86b" text-anchor="middle">Q1 2027</text>
+    <text x="1290" y="715" class="sans ivory card-title" text-anchor="middle">Presidential election</text>
+    <text x="1290" y="749" class="sans muted small" text-anchor="middle">Announced; exact date not yet published</text>
+    <text x="1290" y="783" class="arabic muted small" text-anchor="middle">انتخابات رئاسية — الموعد الدقيق غير منشور</text>
+  </g>
+
+  <text x="90" y="855" class="sans muted" font-size="17">Sources: Palestinian Basic Law; Presidency declarations; CEC; Fatah official results. Research cutoff: 29 Jul 2026.</text>
+  <text x="1510" y="855" class="arabic muted" font-size="17" text-anchor="end">المصادر: القانون الأساسي، الرئاسة، لجنة الانتخابات، ونتائج فتح الرسمية</text>
+</svg>
+
