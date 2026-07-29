@@ -57,6 +57,6 @@
     {"id": "radar-btc-ar", "name": "راصد TOP", "type": "gnews", "query": "بيتكوين (فلسطين OR غزة OR \"الحرية المالية\") OR \"سلطة النقد\" OR (الضفة (البنوك OR الشيكل OR السيولة))", "hl": "ar", "gl": "PS", "ceid": "PS:ar", "category": "bitcoin", "filterBitcoinFreedom": true, "site": "https://news.google.com", "maxAgeHours": 720, "cap": 5},
     {"id": "radar-diaspora-ar", "name": "راصد TOP", "type": "gnews", "query": "\"الجالية الفلسطينية\" OR \"الشتات الفلسطيني\" OR \"فلسطينيو الخارج\"", "hl": "ar", "gl": "PS", "ceid": "PS:ar", "category": "diaspora", "site": "https://news.google.com", "maxAgeHours": 336, "cap": 5},
     {"id": "radar-arts-ar", "name": "راصد TOP", "type": "gnews", "query": "\"فنان فلسطيني\" OR \"فيلم فلسطيني\" OR \"معرض فلسطيني\" OR \"التطريز الفلسطيني\"", "hl": "ar", "gl": "PS", "ceid": "PS:ar", "category": "arts", "site": "https://news.google.com", "maxAgeHours": 336, "cap": 5},
-    {"id": "alaraby-ar", "name": "العربي الجديد", "url": "https://www.alaraby.co.uk/rss", "site": "https://www.alaraby.co.uk", "filterPalestine": true, "cap": 6}
+    {"id": "alaraby-ar", "name": "العربي الجديد", "url": "https://www.alaraby.co.uk/rss", "site": "https://www.alaraby.co.uk", "filterPalestine": true, "cap": 6},     {"id": "tg-palinfo", "name": "المركز الفلسطيني للإعلام", "type": "telegram", "channel": "palinfo", "site": "https://t.me/palinfo", "wire": true, "cap": 6},     {"id": "tg-arabi21", "name": "عربي21", "type": "telegram", "channel": "arabi21news", "site": "https://t.me/arabi21news", "wire": true, "filterPalestine": true, "cap": 5}
   ]
 }
