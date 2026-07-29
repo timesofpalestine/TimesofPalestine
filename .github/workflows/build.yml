@@ -27,7 +27,7 @@ jobs:
       - name: Install brief-writing dependency
         run: pip install anthropic
       - name: Restore TOP Briefs cache
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: briefs-cache.json
           key: briefs-${{ github.run_id }}
@@ -37,6 +37,16 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: python build.py
+      # Saved HERE, not by actions/cache's post-job hook. This job ends in a
+      # sleep that the next run cancels, so a post-job save never executes —
+      # which silently threw away every brief, every translated headline and
+      # every Telegram marker on every run since the chain began.
+      - name: Save TOP Briefs cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: briefs-cache.json
+          key: briefs-${{ github.run_id }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
