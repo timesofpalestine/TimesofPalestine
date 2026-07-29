@@ -32,6 +32,20 @@ jobs:
           path: briefs-cache.json
           key: briefs-${{ github.run_id }}
           restore-keys: briefs-
+      - name: Validate investigations env
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INVESTIGATIONS: ${{ vars.INVESTIGATIONS }}
+        run: |
+          python - <<'PY'
+          import os, re
+          inv = (os.environ.get("INVESTIGATIONS", "") or "").strip().lower()
+          enabled = inv not in ("off", "0", "false")
+          key = (os.environ.get("ANTHROPIC_API_KEY", "") or "").strip()
+          key_ok = bool(re.match(r"^sk-ant-[A-Za-z0-9_-]{10,}$", key))
+          print(f"Investigations enabled: {enabled} (INVESTIGATIONS={inv or '<empty>'})")
+          print(f"ANTHROPIC_API_KEY present={bool(key)} length={len(key)} format_ok={key_ok}")
+          PY
       - name: Build site from live feeds
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -57,6 +71,9 @@ jobs:
         with:
           path: briefs-cache.json
           key: briefs-${{ github.run_id }}
+      - name: Cache save marker
+        if: always()
+        run: echo "TOP Briefs cache save step finished"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

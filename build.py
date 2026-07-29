@@ -35,7 +35,7 @@ GAZA = ZoneInfo("Asia/Gaza")
 # Link decoded from the official Signal share QR; signal-qr.png in the repo root
 # is the matching scannable code, copied into dist/ at build time.
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
-SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"; swg = lambda lang: '<script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script><script>(self.SWG_BASIC = self.SWG_BASIC || []).push(basicSubscriptions => {basicSubscriptions.init({type: "NewsArticle", isPartOfType: ["Product"], isPartOfProductId: "CAowqpHhCw:openaccess", clientOptions: { theme: "light", lang: "SWGLANG" },});});</script>'.replace("SWGLANG", lang)  # tips go to the bot, not the channel; swg = Subscribe with Google, the site's only third-party script
+SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"; swg = lambda lang: '<script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script><script>(function(){const theme=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";(self.SWG_BASIC=self.SWG_BASIC||[]).push(basicSubscriptions=>{basicSubscriptions.init({type:"NewsArticle",isPartOfType:["Product"],isPartOfProductId:"CAowqpHhCw:openaccess",clientOptions:{theme:theme,lang:"SWGLANG"}});});})();</script>'.replace("SWGLANG", lang)  # tips go to the bot, not the channel; swg = Subscribe with Google, the site's only third-party script
 BASE_URL = "https://timesofpalestine.com"
 
 # Feeds marked "exclusive": true in feeds.json are partner wires TOP has standing
@@ -82,6 +82,13 @@ MAX_AGE_HOURS = 72
 PER_SOURCE_CAP = 14
 
 FEEDS = json.loads((ROOT / "feeds.json").read_text(encoding="utf-8"))
+ORIGINAL_CATEGORIES = {
+    "gaza", "westbank", "politics", "economy", "accountability", "research",
+    "bitcoin", "diaspora", "arts", "sports", "social", "opinion", "news", "humans",
+}
+ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
+ORIGINAL_SUMMARY_RX = re.compile(r'<p class="summary">(.*?)</p>', re.S)
+ORIGINAL_BODY_STATS = {}
 
 # ---------- text utilities ----------
 
@@ -807,6 +814,59 @@ def diversify(items):
 #   ---
 #   Body paragraphs separated by blank lines.
 
+def _original_slug(stem):
+    return stem.rsplit(".", 1)[0] if "." in stem else stem
+
+
+def validate_original(path, meta, body, lang, now, date):
+    errors = []
+    category = meta.get("category", "")
+    if category not in ORIGINAL_CATEGORIES:
+        errors.append(f"unknown category '{category}'")
+    if date > now:
+        errors.append(f"future date '{meta.get('date', '')}'")
+
+    for m in ORIGINAL_IMG_MD_RX.finditer(body):
+        src = m.group(2).strip()
+        if src.startswith(("http://", "https://", "/")):
+            continue
+        media_path = ROOT / "originals" / "media" / src.lstrip("./")
+        if not media_path.is_file():
+            errors.append(f"missing media file '{src}'")
+
+    rendered = __import__("longform").body_html(body)
+    if "[^" in rendered:
+        errors.append("unrendered footnote marker '[^'")
+    if "![" in rendered:
+        errors.append("unrendered image markdown '!['")
+    if "**" in rendered:
+        errors.append("unrendered bold marker '**'")
+    if re.search(r'<p class="summary">\s*#', rendered):
+        errors.append("line-initial heading marker '#' fell through into paragraph")
+    for p in ORIGINAL_SUMMARY_RX.findall(rendered):
+        if "|" in strip_html(p):
+            errors.append("pipe table residue '|' remained inside paragraph")
+            break
+
+    stats = {
+        "subheads": len(re.findall(r'<h[234] class="sub">', rendered)),
+        "figures": len(re.findall(r'<figure class="lf">', rendered)),
+        "tables": len(re.findall(r'<table class="lf">', rendered)),
+        "lists": len(re.findall(r'<(?:ul|ol) class="lf">', rendered)),
+    }
+    slug = _original_slug(path.stem)
+    prev = ORIGINAL_BODY_STATS.get(slug)
+    if prev and prev["lang"] != lang:
+        parity = [k for k in ("subheads", "figures", "tables") if prev[k] != stats[k]]
+        if parity:
+            print(f"  ⚠ original parity {slug}: {prev['lang']} vs {lang} mismatch in {', '.join(parity)}")
+    ORIGINAL_BODY_STATS[slug] = {"lang": lang, **stats}
+    print(f"  → render checks {path.name}: subheads {stats['subheads']} / figures {stats['figures']} / tables {stats['tables']} / lists {stats['lists']}")
+
+    if errors:
+        raise ValueError("; ".join(errors))
+
+
 def load_originals(lang):
     orig = ROOT / "originals"
     if not orig.is_dir():
@@ -815,14 +875,23 @@ def load_originals(lang):
     items = []
     for path in sorted(orig.glob(f"*.{lang}.txt")):
         try:
-            head, _, body = path.read_text(encoding="utf-8").partition("\n---\n")
+            raw = path.read_text(encoding="utf-8")
+            head, sep, body = raw.partition("\n---\n")
+            if not sep:
+                raise ValueError("missing required header/body separator '\\n---\\n'")
             meta = {}
             for line in head.splitlines():
                 k, _, v = line.partition(":")
                 if v:
                     meta[k.strip().lower()] = v.strip()
+            required = [k for k in ("title", "category", "date") if not meta.get(k)]
+            if required:
+                raise ValueError(f"missing required header field(s): {', '.join(required)}")
             body = body.strip()
-            date = parse_date(meta.get("date", "")) or now
+            date = parse_date(meta.get("date", ""))
+            if not date:
+                raise ValueError(f"invalid date '{meta.get('date', '')}'")
+            validate_original(path, meta, body, lang, now, date)
             hours_kept = float(meta.get("maxagehours", 336))
             if not meta.get("title") or not body or (now - date).total_seconds() / 3600 > hours_kept:
                 continue
@@ -840,7 +909,7 @@ def load_originals(lang):
             items.append(item)
             print(f"  ✓ original: {item['title'][:60]}")
         except Exception as e:
-            print(f"  ✗ original {path.name}: {type(e).__name__}")
+            raise RuntimeError(f"original validation failed for {path.name}: {type(e).__name__}: {e}") from e
     return items
 
 def build_lang(lang):
@@ -1540,6 +1609,22 @@ def render_story(it, lang, related, rail, built_at):
     page_url = f"{BASE_URL}/{lang}/story/{it['pid']}.html"; _q = __import__("urllib.parse", fromlist=["quote"]).quote; share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a></div>')
     desc = esc((it.get("brief") or it["dek"]).replace(chr(10), " ")[:155])
     og_image = f'<meta property="og:image" content="{esc(it["image"])}">' if it["image"] else ""
+    hreflang = ""
+    if it["source_id"] == "top-original" and str(it.get("link", "")).startswith("original:"):
+        stem = it["link"].split(":", 1)[1]
+        if "." in stem:
+            slug, source_lang = stem.rsplit(".", 1)
+            if source_lang in ("en", "ar"):
+                other_lang = "ar" if source_lang == "en" else "en"
+                if (ROOT / "originals" / f"{slug}.{other_lang}.txt").is_file():
+                    this_pid = hashlib.md5(f"original:{slug}.{source_lang}".encode()).hexdigest()[:10]
+                    other_pid = hashlib.md5(f"original:{slug}.{other_lang}".encode()).hexdigest()[:10]
+                    this_url = f"{BASE_URL}/{source_lang}/story/{this_pid}.html"
+                    other_url = f"{BASE_URL}/{other_lang}/story/{other_pid}.html"
+                    en_url = this_url if source_lang == "en" else other_url
+                    hreflang = (f'<link rel="alternate" hreflang="{source_lang}" href="{this_url}">\n'
+                                f'<link rel="alternate" hreflang="{other_lang}" href="{other_url}">\n'
+                                f'<link rel="alternate" hreflang="x-default" href="{en_url}">')
     jsonld = json.dumps({
         "@context": "https://schema.org", "@type": "NewsArticle",
         "headline": it["title"], "datePublished": it["date"].isoformat(),
@@ -1562,6 +1647,7 @@ def render_story(it, lang, related, rail, built_at):
 <title>{esc(it['title'])} — {t['site_name']}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{page_url}">
+{hreflang}
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="{t['site_name']}">
 <meta property="og:title" content="{esc(it['title'])}">
@@ -1685,8 +1771,10 @@ def main():
             same_cat = [r for r in items if r is not it and r["cat"] == it["cat"]]
             others = [r for r in items if r is not it and r["cat"] != it["cat"]]
             related = diversify((same_cat + sorted(others, key=lambda r: r["score"], reverse=True))[:8])[:8]
-            (dist / lang / "story" / f"{it['pid']}.html").write_text(
-                render_story(it, lang, related, rail, built_at), encoding="utf-8")
+            story_html = render_story(it, lang, related, rail, built_at)
+            if it["source_id"] == "top-original" and len(re.findall(r"<h1(?:\s|>)", story_html)) != 1:
+                raise RuntimeError(f"original story {it['pid']} rendered with invalid <h1> count")
+            (dist / lang / "story" / f"{it['pid']}.html").write_text(story_html, encoding="utf-8")
         (dist / lang / "rss.xml").write_text(render_rss(lang, items, built_at), encoding="utf-8")
     (dist / "sitemap.xml").write_text(
         render_sitemap((("en", en_items), ("ar", ar_items)), built_at), encoding="utf-8")
