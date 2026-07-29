@@ -415,6 +415,7 @@ def finish_item(item, feed):
     # exemption; research feeds are already gated at the feed level.
     if item["cat"] not in ("bitcoin", "research") and not RELEVANT_RX.search(hay):
         return None
+    item["date"] = min(item["date"], datetime.now(timezone.utc))  # never publish a future timestamp
     item["max_age_hours"] = feed.get("maxAgeHours", MAX_AGE_HOURS)
     item["score"] = score_item(item)
     item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]  # stable internal page id
@@ -456,7 +457,8 @@ def fetch_rss(feed, lang, now, max_age):
             "title": truncate(title, 200), "dek": dek,
             "link": item_link(el) or feed["site"], "date": date,
             "source": source_name, "source_id": feed["id"],
-            "image": find_image(el), "categories": [c for c in cats if c], "lang": lang,
+            "image": (find_image(el) or "").replace("http://", "https://") or None,
+            "categories": [c for c in cats if c], "lang": lang,
         }
         item = finish_item(item, feed)
         if item:
@@ -503,7 +505,6 @@ def fetch_telegram(feed, lang, now, max_age):
         if item:
             items.append(item)
     return items
-
 def fetch_feed(feed, lang):
     now = datetime.now(timezone.utc)
     max_age = timedelta(hours=feed.get("maxAgeHours", MAX_AGE_HOURS))
@@ -866,6 +867,8 @@ STR = {
         "read_original": "Read the full story at",
         "photo_via": "Photo via",
         "byline": "By TOP Newsdesk",
+        "kind_original": "Original Reporting", "kind_brief": "TOP News Brief",
+        "kind_curated": "Curated Summary", "based_on": "Based on reporting by",
         "keep_reading": "Keep Reading",
         "back_home": "← All the news",
         "summary_note": "Summary curated by Times of Palestine. The full story belongs to its publisher.",
@@ -876,6 +879,7 @@ STR = {
                      "reporting from the field. Send it to our newsroom on Signal. "
                      "Encrypted. Anonymous if you choose."),
         "tips_cta": "Message us on Signal",
+        "tips_tg": "Or message us on Telegram", "tips_tg_note": "Telegram is convenient, but Signal is the safer choice for sensitive material.",
         "tips_micro": "No name. No number. Just the truth.",
         "tips_scan": "or scan with your phone",
         "tips_safety": ("For your safety: use Signal on a personal device, and share nothing that "
@@ -915,6 +919,8 @@ STR = {
         "read_original": "اقرأ المادة كاملة في",
         "photo_via": "الصورة عبر",
         "byline": "غرفة أخبار «تايمز أوف فلسطين»",
+        "kind_original": "تقرير أصلي", "kind_brief": "موجز تايمز أوف فلسطين",
+        "kind_curated": "ملخص محرَّر", "based_on": "استناداً إلى تقرير",
         "keep_reading": "تابع القراءة",
         "back_home": "كل الأخبار ←",
         "summary_note": "الملخص من إعداد «تايمز أوف فلسطين». المادة الكاملة ملك لناشرها الأصلي.",
@@ -924,6 +930,7 @@ STR = {
         "tips_sub": ("فساد، تجاوز للسلطة، قصة لا يجرؤ أحد على نشرها — أو تقريرك الميداني الخاص. "
                      "أرسله إلى غرفة الأخبار عبر «سيغنال». مشفّر، ومجهول الهوية إن اخترت."),
         "tips_cta": "راسلنا على سيغنال",
+        "tips_tg": "أو راسلنا عبر تيليغرام", "tips_tg_note": "تيليغرام أسهل، لكن «سيغنال» أكثر أماناً للمواد الحساسة.",
         "tips_micro": "بلا اسم. بلا رقم. فقط الحقيقة.",
         "tips_scan": "أو امسح الرمز بهاتفك",
         "tips_safety": "لسلامتك: استخدم «سيغنال» من جهازك الشخصي، ولا تشارك أي تفاصيل تكشف هويتك إلا إذا اخترت ذلك.",
@@ -1003,7 +1010,6 @@ img{max-width:100%;display:block}
 @keyframes pulse{50%{opacity:.35}}
 .topbar .lang{margin-inline-start:auto;color:#fff;font-weight:700;border:1px solid #3a3a42;padding:.2rem .7rem;border-radius:2px}
 .topbar .lang:hover{background:var(--red);border-color:var(--red)}
-
 .ticker{background:var(--red);color:#fff;overflow:hidden;display:flex;align-items:stretch}
 .ticker .label{background:var(--black);font-weight:800;letter-spacing:.12em;font-size:.72rem;display:flex;align-items:center;padding:.45rem .9rem;flex-shrink:0;z-index:2}
 [lang=ar] .ticker .label{letter-spacing:.02em}
@@ -1020,11 +1026,11 @@ img{max-width:100%;display:block}
 .masthead .logotype{display:inline-flex;align-items:center}
 .masthead .wrap::after{content:"";display:block;margin:.85rem auto 0;width:112px;height:4px;background:linear-gradient(90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
 [dir=rtl] .masthead .wrap::after{background:linear-gradient(-90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
-.masthead h1{font-family:var(--serif);font-weight:900;line-height:1;letter-spacing:-.01em;color:var(--black);font-size:clamp(1.6rem,4vw,2.6rem);white-space:nowrap}
-.masthead h1 .l2{color:var(--red)}
-[lang=ar] .masthead h1{letter-spacing:0;font-weight:700;line-height:1.25}
+.masthead h1,.masthead .wordmark{font-family:var(--serif);font-weight:900;line-height:1;letter-spacing:-.01em;color:var(--black);font-size:clamp(1.6rem,4vw,2.6rem);white-space:nowrap}
+.masthead h1 .l2,.masthead .wordmark .l2{color:var(--red)}
+[lang=ar] .masthead h1,[lang=ar] .masthead .wordmark{letter-spacing:0;font-weight:700;line-height:1.25}
 .masthead.compact{padding:.9rem 0 .7rem}
-.masthead.compact h1{font-size:1.35rem}
+.masthead.compact h1,.masthead.compact .wordmark{font-size:1.35rem}
 
 nav.sections{position:sticky;top:0;background:var(--black);z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
 nav.sections .wrap{display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none}
@@ -1141,7 +1147,7 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .tipband .cta{flex-shrink:0;text-align:center}
 .tipband .btn{display:inline-block;background:#2f6bff;background:var(--green);color:#fff;font-weight:800;font-size:.92rem;padding:.85rem 1.6rem;border-radius:3px;border:2px solid #3fd07c;transition:.15s}
 .tipband .btn:hover{background:#3fd07c;color:var(--black)}
-.tipband .micro{display:block;margin-top:.55rem;font-size:.72rem;color:#8f8f99;font-style:italic}
+.tipband .tgbtn{display:inline-block;margin-top:.7rem;border:1px solid #3a3a42;color:#cfe9ff;font-weight:700;font-size:.82rem;padding:.5rem 1rem;border-radius:3px}.tipband .tgbtn:hover{background:#229ED9;border-color:#229ED9;color:#fff}.tipband .micro{display:block;margin-top:.55rem;font-size:.72rem;color:#8f8f99;font-style:italic}
 [lang=ar] .tipband .micro{font-style:normal}
 .tipband .qrbox{background:#fff;padding:.55rem .55rem .45rem;border-radius:8px;display:inline-block;margin-top:.8rem}
 .tipband .qrbox img{width:104px;height:104px;display:block;image-rendering:pixelated}
@@ -1158,7 +1164,7 @@ nav.sections a.tip{color:#3fd07c;border-color:#3fd07c;margin-inline-start:auto}
 [lang=ar] .story h1{font-weight:700;line-height:1.5}
 .story .meta{margin-top:1rem;font-size:.8rem}
 .story div.lede{width:100%;aspect-ratio:16/9;margin-top:1.4rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}.story div.lede svg{width:64px;height:64px;opacity:.9}.story img.lede{width:100%;height:auto;max-height:68vh;object-fit:cover;object-position:top;background:#e8e6df;margin-top:1.4rem}
-.story .byline{margin-top:1.4rem;font-size:.74rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.1em}
+.story .kind{margin-top:1.4rem;display:inline-block;background:var(--red);color:#fff;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;border-radius:2px}[lang=ar] .story .kind{letter-spacing:0;font-size:.78rem}.story .based{display:block;margin-top:.3rem;font-weight:600;color:var(--muted);text-transform:none;letter-spacing:0}.story .byline{margin-top:.7rem;font-size:.74rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.1em}
 [lang=ar] .story .byline{letter-spacing:0;text-transform:none;font-size:.85rem}
 .story .summary{margin-top:1rem;font-family:var(--serif);font-size:1.13rem;line-height:1.7;color:#26262e}
 .story .summary+.summary{margin-top:.9rem}
@@ -1184,7 +1190,7 @@ footer a{color:#e6e6ec;font-weight:600}
 footer a:hover{color:#fff;text-decoration:underline}
 footer .legal{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #2a2a30;font-size:.72rem;color:#8b8b94;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%);border-top:4px solid var(--red);max-width:200px;margin-bottom:1.5rem}
-[dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}@media (prefers-color-scheme:dark){:root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}.masthead h1,.sec-head h2,.latest h2,.story h1,.hero h2,.card h3,.rowcard h3,.hero-sub article h3,.research-feat h3,.op-card h3{color:var(--ink)}.hero .dek{color:#c5c5cf}.story .summary{color:#d6d6de}.research-feat .dek{color:#c5c5cf}section.opinion{background:#17171c}.card img,.hero img,.rowcard img,.story img.lede{opacity:.92}}@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}}nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:28px;margin-inline-start:-28px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none}[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}.skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}.skiplink:focus{inset-inline-start:0}.share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}.share span{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;align-self:center}.share a{border:1px solid var(--line-dark);padding:.35rem .8rem;border-radius:3px;font-size:.8rem;font-weight:700}.share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
+[dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}@media (prefers-color-scheme:dark){:root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42;--red:#ff8896;--green:#3fd07c}.masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.hero h2,.card h3,.rowcard h3,.hero-sub article h3,.research-feat h3,.op-card h3{color:var(--ink)}.hero .dek{color:#c5c5cf}.story .summary{color:#d6d6de}.research-feat .dek{color:#c5c5cf}section.opinion{background:#17171c}.card img,.hero img,.rowcard img,.story img.lede{opacity:.92}}@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}}nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:28px;margin-inline-start:-28px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none}[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}.skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}.skiplink:focus{inset-inline-start:0}.share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}.share span{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;align-self:center}.share a{border:1px solid var(--line-dark);padding:.35rem .8rem;border-radius:3px;font-size:.8rem;font-weight:700}.share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
 
 @media(max-width:960px){
   .research-feat{grid-template-columns:1fr}
@@ -1391,6 +1397,8 @@ def render_page(lang, items, built_at):
         f'<h2>{t["tips_title"]}</h2><p class="sub">{t["tips_sub"]}</p></div>'
         f'<div class="cta"><a class="btn" href="{SIGNAL_URL}" target="_blank" rel="noopener">{t["tips_cta"]}</a>'
         f'<span class="micro">{t["tips_micro"]}</span>'
+        f'<a class="tgbtn" href="https://t.me/timesofpalestin" target="_blank" rel="noopener">{t["tips_tg"]} →</a>'
+        f'<span class="micro">{t["tips_tg_note"]}</span>'
         f'<span class="scanhint">{t["tips_scan"]}</span>'
         f'<div class="qrbox"><img src="../signal-qr.png" alt="Signal QR — {SIGNAL_USERNAME}">'
         f'<span>{SIGNAL_USERNAME}</span></div></div>'
@@ -1402,6 +1410,7 @@ def render_page(lang, items, built_at):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="max-image-preview:large">
 <meta http-equiv="refresh" content="600">
 <meta name="theme-color" content="#0b0b0c"><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 46'><rect width='46' height='15.3' fill='%230b0b0c'/><rect y='15.3' width='46' height='15.3' fill='%23fff'/><rect y='30.6' width='46' height='15.4' fill='%23007A3D'/><path d='M0 0 L21 23 L0 46 Z' fill='%23CE1126'/></svg>"><link rel="manifest" href="/manifest.json"><script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js")</script>
 <title>{t['site_name']} — {t['title_suffix']}</title>
@@ -1481,7 +1490,11 @@ def render_story(it, lang, related, rail, built_at):
     if brief:  # original TOP Newsdesk brief, written by Claude, cached per story
         clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in brief.split("\n")]
         paras = "".join(f'<p class="summary">{esc(p)}</p>' for p in clean if p)
-        summary = f'<p class="byline">{t["byline"]}</p>{paras}'
+        kind = (t["kind_original"] if it["source_id"] == "top-original"
+                else t["kind_brief"] if it.get("exclusive") else t["kind_curated"])
+        credit = ("" if it.get("exclusive") or it["source_id"] == "top-original"
+                  else f'<span class="based">{t["based_on"]} {esc(it["source"])}</span>')
+        summary = (f'<p class="kind">{kind}</p><p class="byline">{t["byline"]}{credit}</p>{paras}')
     else:
         summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""
     rail_items = [r for r in rail if r is not it]
@@ -1503,7 +1516,12 @@ def render_story(it, lang, related, rail, built_at):
         "dateModified": built_at.isoformat(), "mainEntityOfPage": page_url,
         "image": [it["image"]] if it["image"] else [],
         "publisher": {"@type": "NewsMediaOrganization", "name": t["site_name"], "url": f"{BASE_URL}/{lang}/"},
-        "author": {"@type": "Organization", "name": it["source"]},
+        "articleSection": t["sections"].get(it["cat"], t["sections"]["news"]),
+        "inLanguage": lang,
+        # We wrote the brief, so we are its author; the reporting it rests on is cited.
+        "author": ({"@type": "Organization", "name": t["site_name"], "url": f"{BASE_URL}/{lang}/about.html"}
+                   if brief else {"@type": "Organization", "name": it["source"]}),
+        **({"isBasedOn": it["link"], "citation": it["link"]} if brief and not it.get("exclusive") else {}),
     }, ensure_ascii=False)
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
@@ -1530,7 +1548,7 @@ def render_story(it, lang, related, rail, built_at):
 <div class="backbar" style="display:flex;justify-content:space-between;align-items:center"><a href="../">{t['back_home']}</a><a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
 <div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
 <header class="masthead compact"><div class="wrap">
-  <a class="logotype" href="../"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
+  <a class="logotype" href="../"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
 
 <main>
