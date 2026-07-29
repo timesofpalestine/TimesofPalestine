@@ -174,6 +174,33 @@ class RenderingTests(unittest.TestCase):
         self.assertEqual(
             record["brief"], "Full editor-authored investigation body.")
 
+    def test_complete_text_rejects_truncated_copy(self):
+        self.assertTrue(build.is_complete_text(
+            "A complete sourced summary that ends as a finished sentence.", 40))
+        self.assertFalse(build.is_complete_text(
+            "A feed summary that stops before completing the report…", 40))
+
+    def test_event_dedupe_preserves_related_source_provenance(self):
+        left = item()
+        left["title"] = "Israeli forces kill three Palestinians in Jenin raid"
+        right = item()
+        right.update({
+            "title": "Three Palestinians killed by army during Jenin attack",
+            "source": "Second News",
+            "source_url": "https://second.example",
+            "link": "https://second.example/report",
+            "pid": "0987654321",
+            "corroborating_sources": [{
+                "name": "Second News",
+                "url": "https://second.example",
+                "article": "https://second.example/report",
+            }],
+        })
+        deduplicated = build.dedupe_events([left, right])
+        self.assertEqual(len(deduplicated), 1)
+        self.assertEqual(
+            len(deduplicated[0]["corroborating_sources"]), 2)
+
     def test_sensitive_brief_is_purged_from_persistent_cache(self):
         with tempfile.TemporaryDirectory() as directory:
             cache = Path(directory) / "briefs-cache.json"
