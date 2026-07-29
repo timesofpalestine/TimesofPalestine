@@ -994,7 +994,7 @@ CSS = """
   --serif:"Source Serif 4",Georgia,serif; --sans:"Libre Franklin",-apple-system,Helvetica,Arial,sans-serif;
   --max:1180px;
 }
-[lang=ar]{ --serif:"Amiri",serif; --sans:"Cairo",Tahoma,sans-serif; }
+[lang=ar]{ --serif:"Cairo",Tahoma,sans-serif; --sans:"Cairo",Tahoma,sans-serif; }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5}
@@ -1028,7 +1028,7 @@ img{max-width:100%;display:block}
 [dir=rtl] .masthead .wrap::after{background:linear-gradient(-90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
 .masthead h1,.masthead .wordmark{font-family:var(--serif);font-weight:900;line-height:1;letter-spacing:-.01em;color:var(--black);font-size:clamp(1.6rem,4vw,2.6rem);white-space:nowrap}
 .masthead h1 .l2,.masthead .wordmark .l2{color:var(--red)}
-[lang=ar] .masthead h1,[lang=ar] .masthead .wordmark{letter-spacing:0;font-weight:700;line-height:1.25}
+[lang=ar] .masthead h1,[lang=ar] .masthead .wordmark{font-family:"Amiri",serif;letter-spacing:0;font-weight:700;line-height:1.25}
 .masthead.compact{padding:.9rem 0 .7rem}
 .masthead.compact h1,.masthead.compact .wordmark{font-size:1.35rem}
 
@@ -1045,7 +1045,7 @@ nav.sections a.home{color:#f93549}
 [lang=ar] .hero .label{letter-spacing:.03em;font-size:.8rem}
 .hero img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#ddd}
 .hero h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.13;margin-top:1rem}
-[lang=ar] .hero h2{line-height:1.5;font-weight:700}
+[lang=ar] .hero h2{line-height:1.5;font-weight:800}
 .hero h2 a:hover{color:var(--red)}
 .hero .dek{margin-top:.7rem;font-size:1.02rem;color:#3c3c44;font-family:var(--serif);line-height:1.55}
 [lang=ar] .hero .dek{line-height:1.8}
@@ -1161,7 +1161,7 @@ nav.sections a.tip{color:#3fd07c;border-color:#3fd07c}
 .story .kick{color:var(--red);font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.7rem}
 [lang=ar] .story .kick{letter-spacing:.03em;font-size:.82rem}
 .story h1{font-family:var(--serif);font-weight:900;font-size:clamp(1.6rem,3.6vw,2.5rem);line-height:1.15}
-[lang=ar] .story h1{font-weight:700;line-height:1.5}
+[lang=ar] .story h1{font-weight:800;line-height:1.5}
 .story .meta{margin-top:1rem;font-size:.8rem}
 .story div.lede{width:100%;aspect-ratio:16/9;margin-top:1.4rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}.story div.lede svg{width:64px;height:64px;opacity:.9}.story img.lede{width:100%;height:auto;max-height:68vh;object-fit:cover;object-position:top;background:#e8e6df;margin-top:1.4rem}
 .story .kind{margin-top:1.4rem;display:inline-block;background:var(--red);color:#fff;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;border-radius:2px}[lang=ar] .story .kind{letter-spacing:0;font-size:.78rem}.story .based{display:block;margin-top:.3rem;font-weight:600;color:var(--muted);text-transform:none;letter-spacing:0}.story .byline{margin-top:.7rem;font-size:.74rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.1em}
@@ -1223,7 +1223,7 @@ LOCK_SVG = ('<svg class="lock" width="54" height="54" viewBox="0 0 24 24" fill="
 
 FONTS = ("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800"
          "&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;0,8..60,900;1,8..60,700"
-         "&family=Cairo:wght@400;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap")
+         "&family=Cairo:wght@400;600;700;800;900&family=Amiri:wght@700&display=swap")
 
 # ---------- components ----------
 
