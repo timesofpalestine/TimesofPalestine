@@ -1033,9 +1033,9 @@ img{max-width:100%;display:block}
 .masthead.compact h1,.masthead.compact .wordmark{font-size:1.35rem}
 
 nav.sections{position:sticky;top:0;background:var(--black);z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
-nav.sections .wrap{display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none}
-nav.sections a{color:#e8e8ee;font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.75rem .85rem;white-space:nowrap;border-bottom:3px solid transparent}
-[lang=ar] nav.sections a{letter-spacing:0;font-size:.85rem}
+nav.sections .wrap{display:flex;flex-wrap:wrap;gap:0 .1rem;padding-block:.2rem}
+nav.sections a{color:#e8e8ee;font-size:.73rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:.5rem .6rem;white-space:nowrap;border-bottom:3px solid transparent}
+[lang=ar] nav.sections a{letter-spacing:0;font-size:.8rem}
 nav.sections a:hover{color:#fff;border-color:var(--red)}
 nav.sections a.home{color:#f93549}
 
@@ -1154,7 +1154,7 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .tipband .qrbox span{display:block;font-size:.7rem;font-weight:800;color:#111;margin-top:.25rem;text-align:center;direction:ltr}
 .tipband .scanhint{display:block;margin-top:.4rem;font-size:.68rem;color:#8f8f99}
 .tipband .safety{flex-basis:100%;font-size:.7rem;color:#77777f;border-top:1px solid #26262c;padding-top:.7rem}
-nav.sections a.tip{color:#3fd07c;border-color:#3fd07c;margin-inline-start:auto}
+nav.sections a.tip{color:#3fd07c;border-color:#3fd07c}
 
 /* story page */
 .story{max-width:780px;margin-inline:auto;padding:2rem 20px 1rem}
@@ -1190,9 +1190,9 @@ footer a{color:#e6e6ec;font-weight:600}
 footer a:hover{color:#fff;text-decoration:underline}
 footer .legal{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #2a2a30;font-size:.72rem;color:#8b8b94;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%);border-top:4px solid var(--red);max-width:200px;margin-bottom:1.5rem}
-[dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}@media (prefers-color-scheme:dark){:root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}.masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.hero h2,.card h3,.rowcard h3,.hero-sub article h3,.research-feat h3,.op-card h3{color:var(--ink)}.hero .dek{color:#c5c5cf}.story .summary{color:#d6d6de}.research-feat .dek{color:#c5c5cf}section.opinion{background:#17171c}.card img,.hero img,.rowcard img,.story img.lede{opacity:.92}/* The flag palette never changes: fills, rules, markers and the masthead stay true brand red and green in dark mode. Only small red/green TEXT lifts to a lighter tint of the SAME hue, because #C8102E on near-black is 3.2:1 — fine for large type and graphics, unreadable at .66rem. */.hero .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q,.hero h2 a:hover,.card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.hero-sub article h3 a:hover{color:#f93549}.meta .src,.card .chip,.rowcard .chip,.hero-sub article .chip{color:#3fd07c}}@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}}nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:28px;margin-inline-start:-28px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none}[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}.skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}.skiplink:focus{inset-inline-start:0}.share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}.share span{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;align-self:center}.share a{border:1px solid var(--line-dark);padding:.35rem .8rem;border-radius:3px;font-size:.8rem;font-weight:700}.share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
+[dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}@media (prefers-color-scheme:dark){:root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}.masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.hero h2,.card h3,.rowcard h3,.hero-sub article h3,.research-feat h3,.op-card h3{color:var(--ink)}.hero .dek{color:#c5c5cf}.story .summary{color:#d6d6de}.research-feat .dek{color:#c5c5cf}section.opinion{background:#17171c}.card img,.hero img,.rowcard img,.story img.lede{opacity:.92}/* The flag palette never changes: fills, rules, markers and the masthead stay true brand red and green in dark mode. Only small red/green TEXT lifts to a lighter tint of the SAME hue, because #C8102E on near-black is 3.2:1 — fine for large type and graphics, unreadable at .66rem. */.hero .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q,.hero h2 a:hover,.card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.hero-sub article h3 a:hover{color:#f93549}.meta .src,.card .chip,.rowcard .chip,.hero-sub article .chip{color:#3fd07c}}@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}}a.tip{color:#3fd07c;border-color:#3fd07c}.skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}.skiplink:focus{inset-inline-start:0}.share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}.share span{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;align-self:center}.share a{border:1px solid var(--line-dark);padding:.35rem .8rem;border-radius:3px;font-size:.8rem;font-weight:700}.share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
 
-@media(max-width:960px){
+@media(max-width:700px){nav.sections .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:26px;margin-inline-start:-26px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none;flex-shrink:0}[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}} @media(max-width:960px){
   .research-feat{grid-template-columns:1fr}
   .research-feat img,.research-feat .noimg{min-height:180px;order:-1}
   .hero-zone{grid-template-columns:1fr}
