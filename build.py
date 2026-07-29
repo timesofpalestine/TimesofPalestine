@@ -113,6 +113,24 @@ def clean_dek(text):
     t = re.sub(r"\s+", " ", t).strip(" .·|-—")
     return t + "." if t else ""
 
+# Arabic outlets often string several stories into one headline separated by "..",
+# which renders as five or six lines. Keep at most two sentences and always end on a
+# word boundary, so a headline is never chopped mid-word.
+SENT_END_RX = re.compile(r"\.{2,}|[.!?؟؛](?=\s|$)")
+
+def headline(text, limit=150):
+    text = re.sub(r"\s+", " ", text).strip().rstrip("…").strip()
+    ends = [m.end() for m in SENT_END_RX.finditer(text)]
+    for e in ([ends[1]] if len(ends) > 1 else []) + ([ends[0]] if ends else []):
+        if e <= limit:
+            text = text[:e]
+            break
+    if len(text) > limit:
+        cut = text[:limit]
+        sp = cut.rfind(" ")
+        return (cut[:sp] if sp > limit * 0.6 else cut).rstrip(" .،,;؛-—·") + "…"
+    return text.strip(" .،,;؛-—·")
+
 def truncate(text, n):
     if len(text) <= n:
         return text
@@ -454,7 +472,7 @@ def fetch_rss(feed, lang, now, max_age):
             dek = ""
         cats = [strip_html(n.text or n.get("term") or "") for n in el if local(n.tag) == "category"]
         item = {
-            "title": truncate(title, 200), "dek": dek,
+            "title": headline(title), "dek": dek,
             "link": item_link(el) or feed["site"], "date": date,
             "source": source_name, "source_id": feed["id"],
             "image": (find_image(el) or "").replace("http://", "https://") or None,
@@ -474,11 +492,18 @@ TG_PHOTO_RX = re.compile(r"tgme_widget_message_photo_wrap[^>]*background-image:u
 EMOJI_RX = re.compile("[\U0001F000-\U0001FAFF\U0001FB00-\U0001FBFF"
                       "☀-➿⬀-⯿←-⇿⌀-⏿️‍]")
 
+# Channel self-promotion ("follow our channel", "subscribe") is not news. It also
+# reliably makes the model refuse, so filtering it here saves an API call a build.
+PROMO_RX = re.compile(r"قناتنا|منصاتنا|تابعونا|اشتركوا|للاشتراك|رابط القناة|"
+                     r"our channel|subscribe to|follow us on", re.I)
+
 def fetch_telegram(feed, lang, now, max_age):
     """Parse a public Telegram channel's t.me/s/<channel> preview page (no API needed)."""
     html_page = fetch_bytes(f"https://t.me/s/{feed['channel']}").decode("utf-8", errors="replace")
     items = []
     for block in TG_MSG_RX.findall(html_page):
+        if "service_message" in block:  # "X pinned ..." announcements, not posts
+            continue
         m_text, m_date, m_link = TG_TEXT_RX.search(block), TG_DATE_RX.search(block), TG_LINK_RX.search(block)
         if not (m_text and m_date and m_link):
             continue
@@ -489,14 +514,14 @@ def fetch_telegram(feed, lang, now, max_age):
         text = EMOJI_RX.sub("", text).replace("#", "")
         text = re.sub(r"\s+", " ", text).strip(" .|-—·")
         text = re.sub(r"^\s*وكالة معا\s*[|:ـ—-]+\s*", "", text); text = re.sub(r"\s*[ـ​-‏﻿]+\s*", "", text)  # strip the agency prefix, then stitch words split by tatweel/zero-width marks (فلسـ ـطين -> فلسطين) to evade keyword filters — otherwise the relevance gate misses the story and the headline publishes mangled
-        if len(text) < 25:
+        if len(text) < 25 or PROMO_RX.search(text):
             continue
         date = parse_date(m_date.group(1))
         if not date or now - date > max_age:
             continue
         m_photo = TG_PHOTO_RX.search(block)
         item = {
-            "title": truncate(text, 130), "dek": truncate(text, 260) if len(text) > 130 else "",
+            "title": headline(text), "dek": truncate(text, 260) if len(text) > 130 else "",
             "link": link, "date": date,
             "source": feed["name"], "source_id": feed["id"],
             "image": m_photo.group(1) if m_photo else None, "categories": [], "lang": lang,
@@ -594,7 +619,10 @@ REFUSAL_RX = re.compile(
     r"source material|provided material|news brief|full article|complete article|would be required|"
     r"not available in the|available in the (?:provided|source|material)|"
     r"encouraged to visit|visit the .{0,50}website|access to the (?:article|complete|full)|"
-    r"لا يمكن(?:نا)? (?:إنتاج|كتابة|تقديم)|المادة المصدرية|المادة المتاحة|المادة المرفقة|هذه التعليمات|"
+    r"i (?:cannot|can.?t|am unable to)|unable to (?:produce|write|provide|generate|create|summari[sz]e)|"
+    r"لا (?:أستطيع|يمكنني|نستطيع|يمكن(?:نا)?)\s*(?:إنتاج|كتابة|تقديم|صياغة|إعداد)|يتعذر|"
+    r"بناءً? على هذه المادة|لا (?:تتضمن|تحتوي|توجد).{0,20}(?:معلومات|أخبار)|"
+    r"المادة المصدرية|المادة المتاحة|المادة المرفقة|هذه التعليمات|"
     r"المقال الكامل|النص الكامل|زيارة موقع|زيارة الموقع", re.I)
 
 def write_brief(client, item):
@@ -620,7 +648,10 @@ def write_brief(client, item):
         first, _, rest = text.partition(chr(10))
         item["title"] = truncate(first[len("HEADLINE:"):].strip(" *"), 200)
         text = rest.strip()
-    return text if len(text) > (120 if excerpt else 60) and not REFUSAL_RX.search(text) else None
+    if REFUSAL_RX.search(text) or len(text) <= (120 if excerpt else 60):
+        item["brief_refused"] = True  # the model had nothing to report — do not publish a stub
+        return None
+    return text
 # ---------- field-report vetting ----------
 # Adapted from Palantir for the People (palantirforthepeople.com, open source) —
 # the founder's newsroom triage tool. We do not judge truth; we grade heuristics
@@ -1342,7 +1373,6 @@ def render_page(lang, items, built_at):
 
     def visible(k):
         return len(sections[k]) >= (1 if k in FOCUS_SECTIONS else 2)
-
     nav_links = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in order if visible(k))
 
     def research_featured(it):
@@ -1641,7 +1671,8 @@ def main():
         if i.get("needs_translation") and ARABIC_CHARS_RX.search(i["dek"]):
             i["dek"] = ""
 
-    en_items = [i for i in en_items if not i.get("vetoed") and (i.get("brief") or i["dek"])]; ar_items = [i for i in ar_items if not i.get("vetoed") and (i.get("brief") or i["dek"])]; dist = ROOT / "dist"
+    keep = lambda i: not i.get("vetoed") and not i.get("brief_refused") and (i.get("brief") or i["dek"])
+    en_items = [i for i in en_items if keep(i)]; ar_items = [i for i in ar_items if keep(i)]; dist = ROOT / "dist"
     for lang, items in (("en", en_items), ("ar", ar_items)):
         import shutil
         shutil.rmtree(dist / lang / "story", ignore_errors=True)  # drop stale story pages
