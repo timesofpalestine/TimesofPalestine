@@ -35,7 +35,7 @@ GAZA = ZoneInfo("Asia/Gaza")
 # Link decoded from the official Signal share QR; signal-qr.png in the repo root
 # is the matching scannable code, copied into dist/ at build time.
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
-SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"  # readers cannot message a channel — tips go to the bot
+def swg(lang): return '<script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script><script>(self.SWG_BASIC = self.SWG_BASIC || []).push(basicSubscriptions => {basicSubscriptions.init({type: "NewsArticle", isPartOfType: ["Product"], isPartOfProductId: "CAowqpHhCw:openaccess", clientOptions: { theme: "light", lang: "SWGLANG" },});});</script>'.replace("SWGLANG", lang)  # Subscribe with Google, required by Publisher Center; the site's only third-party script, lang matched per edition SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"  # readers cannot message a channel — tips go to the bot
 BASE_URL = "https://timesofpalestine.com"
 
 # Feeds marked "exclusive": true in feeds.json are partner wires TOP has standing
@@ -1429,7 +1429,7 @@ def render_page(lang, items, built_at):
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"{t['site_name']}","url":"{BASE_URL}/{lang}/","sameAs":["{BASE_URL}/en/","{BASE_URL}/ar/"]}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
-<style>{CSS}</style>
+<style>{CSS}</style>{swg(lang)}
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="topbar"><div class="wrap">
@@ -1542,7 +1542,7 @@ def render_story(it, lang, related, rail, built_at):
 <script type="application/ld+json">{jsonld}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
-<style>{CSS}</style>
+<style>{CSS}</style>{swg(lang)}
 </head>
 <body>
 <div class="backbar" style="display:flex;justify-content:space-between;align-items:center"><a href="../">{t['back_home']}</a><a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
