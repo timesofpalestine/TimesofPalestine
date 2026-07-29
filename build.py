@@ -35,7 +35,7 @@ GAZA = ZoneInfo("Asia/Gaza")
 # Link decoded from the official Signal share QR; signal-qr.png in the repo root
 # is the matching scannable code, copied into dist/ at build time.
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
-SIGNAL_USERNAME = "@TOP.972"
+SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"  # readers cannot message a channel — tips go to the bot
 BASE_URL = "https://timesofpalestine.com"
 
 # Feeds marked "exclusive": true in feeds.json are partner wires TOP has standing
@@ -1397,7 +1397,7 @@ def render_page(lang, items, built_at):
         f'<h2>{t["tips_title"]}</h2><p class="sub">{t["tips_sub"]}</p></div>'
         f'<div class="cta"><a class="btn" href="{SIGNAL_URL}" target="_blank" rel="noopener">{t["tips_cta"]}</a>'
         f'<span class="micro">{t["tips_micro"]}</span>'
-        f'<a class="tgbtn" href="https://t.me/timesofpalestin" target="_blank" rel="noopener">{t["tips_tg"]} →</a>'
+        f'<a class="tgbtn" href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t["tips_tg"]} → {TELEGRAM_BOT_NAME}</a>'
         f'<span class="micro">{t["tips_tg_note"]}</span>'
         f'<span class="scanhint">{t["tips_scan"]}</span>'
         f'<div class="qrbox"><img src="../signal-qr.png" alt="Signal QR — {SIGNAL_USERNAME}">'
@@ -1468,7 +1468,7 @@ def render_page(lang, items, built_at):
     <div><h2>{t['mission_title']}</h2><p class="mission">{t['mission']}</p></div>
     <div><h2>{t['tips_kicker']}</h2><p class="mission">{t['tips_sub']}</p>
       <p style="margin-top:.9rem"><a href="{SIGNAL_URL}" target="_blank" rel="noopener">🔒 {t['tips_cta']} →</a>
-      <span style="direction:ltr;display:inline-block;margin-inline-start:.6rem;color:#8f8f94">{SIGNAL_USERNAME}</span></p></div>
+      <span style="direction:ltr;display:inline-block;margin-inline-start:.6rem;color:#8f8f94">{SIGNAL_USERNAME}</span></p><p style="margin-top:.5rem"><a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} →</a> <span style="direction:ltr;display:inline-block;margin-inline-start:.6rem;color:#8f8f94">{TELEGRAM_BOT_NAME}</span></p></div>
   </div>
   <div class="legal">
     <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>
