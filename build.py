@@ -35,7 +35,7 @@ GAZA = ZoneInfo("Asia/Gaza")
 # Link decoded from the official Signal share QR; signal-qr.png in the repo root
 # is the matching scannable code, copied into dist/ at build time.
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
-def swg(lang): return '<script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script><script>(self.SWG_BASIC = self.SWG_BASIC || []).push(basicSubscriptions => {basicSubscriptions.init({type: "NewsArticle", isPartOfType: ["Product"], isPartOfProductId: "CAowqpHhCw:openaccess", clientOptions: { theme: "light", lang: "SWGLANG" },});});</script>'.replace("SWGLANG", lang)  # Subscribe with Google, required by Publisher Center; the site's only third-party script, lang matched per edition SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"  # readers cannot message a channel — tips go to the bot
+SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"; swg = lambda lang: '<script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script><script>(self.SWG_BASIC = self.SWG_BASIC || []).push(basicSubscriptions => {basicSubscriptions.init({type: "NewsArticle", isPartOfType: ["Product"], isPartOfProductId: "CAowqpHhCw:openaccess", clientOptions: { theme: "light", lang: "SWGLANG" },});});</script>'.replace("SWGLANG", lang)  # tips go to the bot, not the channel; swg = Subscribe with Google, the site's only third-party script
 BASE_URL = "https://timesofpalestine.com"
 
 # Feeds marked "exclusive": true in feeds.json are partner wires TOP has standing
