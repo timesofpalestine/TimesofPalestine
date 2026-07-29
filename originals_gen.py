@@ -34,7 +34,11 @@ ORIGINALS = ROOT / "originals"
 STATE_FILE = ORIGINALS / "_state.json"
 
 MODEL = "claude-opus-5"
-SEARCH_TOOL = {"type": "web_search_20260209", "name": "web_search", "max_uses": 12}
+# Server-side search. The tool identifier has changed before, and a wrong one is a
+# 400 that would leave the desk silently doing nothing, so try the current one
+# first and fall back to the older identifier rather than failing shut.
+SEARCH_TOOLS = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 12},
+                {"type": "web_search_20250305", "name": "web_search", "max_uses": 12}]
 MIN_WORDS = 450          # below this it is a blurb, not a report
 MIN_SOURCES = 4          # a report resting on fewer sources is not researched
 
@@ -202,8 +206,18 @@ def _run():
              f"WORKING TITLE: {topic['en']}\n\n"
              f"THE REPORTING QUESTION: {topic['q']}\n\n"
              f"Research it now, then write the report.")
-    english = _call(client, DESK_SYSTEM, [{"role": "user", "content": brief}],
-                    tools=[SEARCH_TOOL])
+    english, last_err = None, None
+    for tool in SEARCH_TOOLS:
+        try:
+            english = _call(client, DESK_SYSTEM, [{"role": "user", "content": brief}], tools=[tool])
+            break
+        except Exception as e:
+            last_err = e
+            if "tool" not in str(e).lower():   # a real failure, not a rejected tool name
+                raise
+    if english is None:
+        # Never write from memory alone: unresearched is unpublishable.
+        return f"investigations: web search unavailable ({type(last_err).__name__}: {last_err}) — nothing published"
 
     if english.strip().upper().startswith("INSUFFICIENT"):
         state.setdefault("done", {})[topic["id"]] = now.isoformat()
