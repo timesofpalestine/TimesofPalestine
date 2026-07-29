@@ -2,7 +2,7 @@
 
 An independent, bilingual (English/Arabic), fully automated digital news front page for Palestine.
 It aggregates live reporting from outlets across Palestine and the region, links every story back
-to its original publisher, and rebuilds itself every 3 hours with **zero human management**.
+to its original publisher, and rebuilds itself roughly every 25 minutes with **zero human management**.
 
 - **English edition:** `/en/` (LTR) · **Arabic edition:** `/ar/` (RTL, natively mirrored)
 - The root `/` auto-redirects visitors based on their browser language.
@@ -35,8 +35,8 @@ Then open <http://localhost:8000>.
 
 ## Deploy once — then it runs itself forever
 
-The included GitHub Actions workflow ([.github/workflows/publish.yml](.github/workflows/publish.yml))
-rebuilds the site from live feeds **every 3 hours** and publishes it to GitHub Pages (free hosting).
+The included GitHub Actions workflow ([.github/workflows/build.yml](.github/workflows/build.yml))
+rebuilds the site from live feeds roughly **every 25 minutes** and publishes it to GitHub Pages (free hosting).
 
 One-time setup:
 
@@ -69,7 +69,7 @@ For maximum tipster safety, consider a dedicated phone/number for the newsroom S
 
 ## Hosting at GoDaddy (timesofpalestine.com)
 
-**Recommended — keep the automation:** host the site on GitHub Pages (free, rebuilds every 3 h)
+**Recommended — keep the automation:** host the site on GitHub Pages (free, rebuilds roughly every 25 min)
 and just point the GoDaddy **DNS** at it (README section above). GoDaddy stays your registrar;
 GitHub does the serving and refreshing. This is the only zero-management option.
 
