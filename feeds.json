@@ -21,7 +21,7 @@
     {"id": "radar-memo", "name": "TOP Radar", "type": "gnews", "query": "site:middleeastmonitor.com", "hl": "en-US", "gl": "US", "ceid": "US:en", "site": "https://www.middleeastmonitor.com", "cap": 5},
     {"id": "radar-leaders", "name": "TOP Radar", "type": "gnews", "query": "(king OR president OR emir OR \"crown prince\" OR \"prime minister\") (jordan OR egypt OR saudi OR qatar OR uae OR morocco OR algeria OR tunisia OR lebanon OR iraq) (palestine OR gaza OR \"west bank\" OR jerusalem)", "hl": "en-US", "gl": "US", "ceid": "US:en", "site": "https://news.google.com", "maxAgeHours": 336, "cap": 6},
     {"id": "mondoweiss", "name": "Mondoweiss", "url": "https://mondoweiss.net/feed/", "site": "https://mondoweiss.net"},
-    {"id": "aje", "name": "Al Jazeera English", "url": "https://www.aljazeera.com/xml/rss/all.xml", "site": "https://www.aljazeera.com", "filterPalestine": true},
+    {"id": "aje", "name": "Al Jazeera English", "url": "https://www.aljazeera.com/xml/rss/all.xml", "site": "https://www.aljazeera.com", "filterPalestine": true, "exclusive": true, "cap": 8},
     {"id": "palchron", "name": "Palestine Chronicle", "url": "https://www.palestinechronicle.com/feed/", "site": "https://www.palestinechronicle.com"},
     {"id": "imemc", "name": "IMEMC News", "url": "https://imemc.org/feed/", "site": "https://imemc.org"},
     {"id": "pnn", "name": "Palestine News Network", "url": "https://english.pnn.ps/feed/", "site": "https://english.pnn.ps"},
@@ -41,7 +41,7 @@
     {"id": "democracynow", "name": "Democracy Now!", "url": "https://www.democracynow.org/democracynow.rss", "site": "https://www.democracynow.org", "filterPalestine": true, "cap": 4}
   ],
   "ar": [
-    {"id": "aja", "name": "الجزيرة نت", "url": "https://www.aljazeera.net/rss", "site": "https://www.aljazeera.net", "filterPalestine": true},
+    {"id": "aja", "name": "الجزيرة نت", "url": "https://www.aljazeera.net/rss", "site": "https://www.aljazeera.net", "filterPalestine": true, "exclusive": true, "cap": 8},
     {"id": "maan", "name": "وكالة معا (حصري)", "type": "telegram", "channel": "maannews", "site": "https://www.maannews.net", "exclusive": true, "cap": 8},
     {"id": "arab48", "name": "عرب 48", "url": "https://www.arab48.com/rss", "site": "https://www.arab48.com"},
     {"id": "shehab", "name": "وكالة شهاب (حصري)", "url": "https://shehabnews.com/rss", "site": "https://shehabnews.com", "exclusive": true, "cap": 8},
