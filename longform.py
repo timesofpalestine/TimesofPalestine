@@ -29,8 +29,11 @@ H_RX = re.compile(r"^(#{2,4})\s+(.*)$")
 IMG_RX = re.compile(r"^!\[([^\]]*)\]\(([^)\s]+)\)\s*$")
 ROW_RX = re.compile(r"^\|(.+)\|\s*$")
 SEP_RX = re.compile(r"^\|[\s:|-]+\|\s*$")
-LI_RX = re.compile(r"^[-*]\s+(.*)$")
+LI_RX = re.compile(r"^-\s+(.*)$")
+OL_RX = re.compile(r"^(\d{1,2})\.\s+(.*)$")
 BOLD_RX = re.compile(r"\*\*(.+?)\*\*")
+ITALIC_RX = re.compile(r"(?<!\*)\*([^*\n]+)\*(?!\*)")
+CODE_RX = re.compile(r"`([^`\n]+)`")
 LINK_RX = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
 
 
@@ -41,8 +44,16 @@ def _esc(s):
 def _inline(text):
     """Escape first, then re-introduce the two inline marks we allow."""
     out = _esc(text)
+    code_spans = []
+    def _save_code(m):
+        code_spans.append(f"<code>{m.group(1)}</code>")
+        return f"@@CODE{len(code_spans) - 1}@@"
+    out = CODE_RX.sub(_save_code, out)
     out = LINK_RX.sub(r'<a href="\2" target="_blank" rel="noopener">\1</a>', out)
     out = BOLD_RX.sub(r"<strong>\1</strong>", out)
+    out = ITALIC_RX.sub(r"<em>\1</em>", out)
+    for i, span in enumerate(code_spans):
+        out = out.replace(f"@@CODE{i}@@", span)
     return out
 
 
@@ -107,6 +118,14 @@ def body_html(text, media_prefix="/media/"):
                 items.append(LI_RX.match(lines[i].strip()).group(1).strip())
                 i += 1
             out.append('<ul class="lf">' + "".join(f"<li>{_inline(x)}</li>" for x in items) + "</ul>")
+            continue
+
+        if OL_RX.match(line):
+            items = []
+            while i < len(lines) and OL_RX.match(lines[i].strip()):
+                items.append(OL_RX.match(lines[i].strip()).group(2).strip())
+                i += 1
+            out.append('<ol class="lf">' + "".join(f"<li>{_inline(x)}</li>" for x in items) + "</ol>")
             continue
 
         out.append(f'<p class="summary">{_inline(line)}</p>')
@@ -200,6 +219,9 @@ CSS = """
 .story ul.lf{margin:.9rem 0 1.1rem;padding-inline-start:1.3rem;font-family:var(--serif);font-size:1.06rem;line-height:1.7;color:#26262e}
 .story ul.lf li{margin-bottom:.5rem}
 [lang=ar] .story ul.lf{line-height:2}
+.story ol.lf{margin:.9rem 0 1.1rem;padding-inline-start:1.3rem;font-family:var(--serif);font-size:1.06rem;line-height:1.7;color:#26262e}
+.story ol.lf li{margin-bottom:.5rem}
+[lang=ar] .story ol.lf{line-height:2}
 .story figure.lf{margin:1.7rem 0}
 .story figure.lf img{width:100%;height:auto;background:#e8e6df;border:1px solid var(--line)}
 .story figure.lf figcaption{margin-top:.5rem;font-size:.8rem;color:var(--muted);line-height:1.5}
@@ -209,9 +231,12 @@ CSS = """
 .story table.lf th{background:rgba(0,0,0,.04);font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
 [lang=ar] .story table.lf th{letter-spacing:0;text-transform:none;font-size:.88rem}
 .story .summary a{text-decoration:underline;text-underline-offset:2px}
+.story code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,monospace;font-size:.92em;background:rgba(0,0,0,.06);padding:.08em .3em;border-radius:3px}
 @media (prefers-color-scheme:dark){
   .story .sub{color:var(--ink)}
   .story ul.lf{color:#d6d6de}
+  .story ol.lf{color:#d6d6de}
+  .story code{background:rgba(255,255,255,.12)}
   .story table.lf th{background:rgba(255,255,255,.06)}
 }
 """
