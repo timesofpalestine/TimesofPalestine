@@ -118,6 +118,7 @@ If a fact cannot stand on inline attribution, it is not ready to publish. Cut it
 rather than propping it up with apparatus.
 
 OUTPUT FORMAT — follow exactly
+Begin your reply with TITLE: — no preamble, no "I'll research this now".
 Line 1: TITLE: <a headline of at most 12 words, one sentence, no colon-subtitle>
 Line 2: DEK: <one sentence, at most 30 words, saying what the report establishes>
 Then a blank line, then the body in plain paragraphs separated by blank lines. Use no \
@@ -139,6 +140,7 @@ and dates. Every fact, figure, attribution and denial must survive exactly — a
 nothing, drop nothing, soften nothing.
 
 OUTPUT FORMAT — follow exactly
+Begin your reply with TITLE: — no preamble of any kind.
 Line 1: TITLE: <the Arabic headline, at most 12 words>
 Line 2: DEK: <one Arabic sentence, at most 30 words>
 Then a blank line, then the body in plain paragraphs separated by blank lines, no \
@@ -165,6 +167,13 @@ def _pick_topic(topics, state):
 def _parse(text):
     """Split the desk's output into title, dek, body and sources. None if malformed."""
     text = text.strip()
+    # The model sometimes opens with a courtesy line ("I'll research this now.") and
+    # occasionally runs it straight into TITLE: with no line break, which defeats the
+    # ^-anchored match below. Anchor on the first TITLE: instead of throwing away an
+    # otherwise complete, sourced report over a stray preamble.
+    cut = text.find("TITLE:")
+    if cut > 0:
+        text = text[cut:]
     m_title = re.search(r"^TITLE:\s*(.+)$", text, re.M)
     m_dek = re.search(r"^DEK:\s*(.+)$", text, re.M)
     m_src = re.search(r"^SOURCES:\s*(.*)$", text, re.M | re.S)
