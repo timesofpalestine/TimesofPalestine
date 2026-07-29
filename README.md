@@ -36,7 +36,7 @@ Then open <http://localhost:8000>.
 ## Deploy once — then it runs itself forever
 
 The included GitHub Actions workflow ([.github/workflows/build.yml](.github/workflows/build.yml))
-rebuilds the site from live feeds and publishes it to GitHub Pages (free hosting). It runs continuously through a self-dispatch chain that waits 25 minutes between runs.
+rebuilds the site from live feeds and publishes it to GitHub Pages (free hosting). Each run waits 25 minutes, then dispatches the next run to keep the cycle continuous.
 
 One-time setup:
 
