@@ -94,6 +94,29 @@ unknown. No first person, no rhetorical questions, no editorialising, no calls t
 action. Sober about atrocity: specific, sourced and exact does more work than \
 adjectives. 700-1000 words.
 
+Structure it the way a reader actually reads. Lead with the finding, not the \
+background. Keep paragraphs to one to three sentences. Prefer a concrete number to an \
+adjective, and a plain word to an institutional one. Put the attribution inside the \
+sentence that carries the claim, so a reader never has to look elsewhere to learn who \
+says it. Close on what is still unresolved or what happens next — never on a summary \
+of what you just wrote.
+
+WHAT NEVER APPEARS IN A PUBLISHED ARTICLE
+This is a news website, not a journal or a case file. The article is the reporting and \
+nothing else. Never append, and never write, any of the following:
+- a sources, references or bibliography list, or footnote markers of any kind such as \
+[1] or [^ref] — attribution goes inside the sentence, always
+- a methodology note explaining how the reporting was done
+- a right-of-reply, comment-sought or no-response notice
+- a corrections policy, editor's note or update log
+- image credits, licence notes or a visual-rights block
+- a label announcing what something is: a caption reads as a sentence, never as \
+"Visual caption:", and a summary is never headed "Summary:"
+- any sentence about the article itself — "this report makes no finding", "as noted \
+above", "this article will examine". Report the subject, never the reporting.
+If a fact cannot stand on inline attribution, it is not ready to publish. Cut it \
+rather than propping it up with apparatus.
+
 OUTPUT FORMAT — follow exactly
 Line 1: TITLE: <a headline of at most 12 words, one sentence, no colon-subtitle>
 Line 2: DEK: <one sentence, at most 30 words, saying what the report establishes>
@@ -169,9 +192,12 @@ def _call(client, system, messages, tools=None, max_tokens=32000):
     return "".join(b.text for b in resp.content if b.type == "text").strip()
 
 
-def _write_file(topic, parsed, lang, now, sources_label):
+def _write_file(topic, parsed, lang, now):
     """Emit the originals/<id>.<lang>.txt that build.py already knows how to publish."""
-    body = parsed["body"] + "\n\n" + sources_label + "\n" + "\n".join(parsed["sources"])
+    # Sources are a reporting gate, not page furniture: the parser still requires
+    # MIN_SOURCES before anything publishes, but a news article carries its
+    # attribution inline ("according to OCHA figures"), never as a bibliography.
+    body = parsed["body"]
     head = (f"title: {parsed['title']}\n"
             f"category: {topic['cat']}\n"
             f"date: {now.isoformat()}\n"
@@ -242,8 +268,8 @@ def _run():
         return (f"investigations: '{topic['id']}' — English filed but Arabic failed; nothing published. "
                 f"[{len(arabic)} chars, has SOURCES={'SOURCES:' in arabic}]")
 
-    _write_file(topic, parsed_en, "en", now, "Sources:")
-    _write_file(topic, parsed_ar, "ar", now, "المصادر:")
+    _write_file(topic, parsed_en, "en", now)
+    _write_file(topic, parsed_ar, "ar", now)
 
     state.setdefault("done", {})[topic["id"]] = now.isoformat()
     state["last_hour"] = hour
