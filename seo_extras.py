@@ -57,9 +57,11 @@ ABOUT = {
              "the story link and the error."),
             ("Contact the newsroom",
              "Reach us on Signal — encrypted, and anonymous if you choose: "
-             "message @TOP.972 or use the button below. For your safety, use Signal "
-             "on a personal device and share nothing that identifies you unless you "
-             "choose to."),
+             "message @TOP.972 or use the button below. You can also message the "
+             "newsroom bot on Telegram at @TOPnewsdeskbot; Telegram is easier, but "
+             "Signal is the safer choice for sensitive material. For your safety, use "
+             "either on a personal device and share nothing that identifies you unless "
+             "you choose to."),
         ],
         "cta": "Message us on Signal",
         "back": "← All the news",
@@ -90,8 +92,10 @@ ABOUT = {
              "تصويب، راسل غرفة الأخبار عبر القناة أدناه مع رابط المادة وبيان الخطأ."),
             ("اتصل بغرفة الأخبار",
              "راسلنا على «سيغنال» — مشفّر، ومجهول الهوية إن اخترت: "
-             "@TOP.972 أو عبر الزر أدناه. لسلامتك، استخدم «سيغنال» من جهازك "
-             "الشخصي ولا تشارك أي تفاصيل تكشف هويتك إلا إذا اخترت ذلك."),
+             "@TOP.972 أو عبر الزر أدناه. ويمكنك أيضاً مراسلة بوت غرفة الأخبار على "
+             "تيليغرام: @TOPnewsdeskbot — تيليغرام أسهل، لكن «سيغنال» أكثر أماناً "
+             "للمواد الحساسة. لسلامتك، استخدم أياً منهما من جهازك الشخصي ولا تشارك "
+             "أي تفاصيل تكشف هويتك إلا إذا اخترت ذلك."),
         ],
         "cta": "راسلنا على سيغنال",
         "back": "كل الأخبار ←",
@@ -130,7 +134,8 @@ def render_about(lang, built_at):
     <p class="kick">{t['site_name']}</p>
     <h1>{a['title']}</h1>
     {body}
-    <div class="cta"><a href="{b.SIGNAL_URL}" target="_blank" rel="noopener">🔒 {a['cta']} — @TOP.972</a></div>
+    <div class="cta"><a href="{b.SIGNAL_URL}" target="_blank" rel="noopener">🔒 {a['cta']} — @TOP.972</a>
+    <p style="margin-top:.9rem"><a href="{b.TELEGRAM_BOT_URL}" target="_blank" rel="noopener" style="font-weight:700;color:var(--green)">{t['tips_tg']} → {b.TELEGRAM_BOT_NAME}</a></p></div>
   </article>
 </main>
 <footer><div class="wrap">
