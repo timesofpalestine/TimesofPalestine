@@ -1518,7 +1518,7 @@ def render_story(it, lang, related, rail, built_at):
     if brief and REFUSAL_RX.search(brief):  # hard stop: refusal text must never render
         brief = None
     if brief:  # original TOP Newsdesk brief, written by Claude, cached per story
-        clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in brief.split("\n")]
+        paras = __import__("longform").body_html(brief)  # was: [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in brief.split("\n")]
         # long-form subset: subheads, figures with captions, tables, lists
         kind = (t["kind_original"] if it["source_id"] == "top-original"
                 else t["kind_brief"] if it.get("exclusive") else t["kind_curated"])
