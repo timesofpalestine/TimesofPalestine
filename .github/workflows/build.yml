@@ -1,12 +1,12 @@
 name: Build & publish Times of Palestine
 on:
   schedule:
-    - cron: "9,39 * * * *"   # fallback schedule; the self-scheduling chain keeps refreshes reliable
-  workflow_dispatch: {}
+    - cron: "9,39 * * * *"   # kept for the record; GitHub's scheduler has never fired for this repo
+  workflow_dispatch: {}      # manual "run now" button + the self-scheduling chain below
   push:
     branches: [main]
 permissions:
-  contents: read
+  contents: write            # the investigations desk commits its reports back
   pages: write
   id-token: write
   actions: write             # lets the run dispatch its own successor
@@ -24,32 +24,66 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Restore delivery cache
+      - name: Install brief-writing dependency
+        run: pip install anthropic
+      - name: Restore TOP Briefs cache
         uses: actions/cache/restore@v4
         with:
           path: briefs-cache.json
           key: briefs-${{ github.run_id }}
           restore-keys: briefs-
+      - name: Validate investigations env
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INVESTIGATIONS: ${{ vars.INVESTIGATIONS }}
+        run: |
+          python - <<'PY'
+          import os, re
+          inv = (os.environ.get("INVESTIGATIONS", "") or "").strip().lower()
+          enabled = inv not in ("off", "0", "false")
+          key = (os.environ.get("ANTHROPIC_API_KEY", "") or "").strip()
+          key_ok = bool(re.match(r"^sk-ant-[A-Za-z0-9_-]{10,}$", key))
+          print(f"Investigations enabled: {enabled} (INVESTIGATIONS={inv or '<empty>'})")
+          print(f"ANTHROPIC_API_KEY present={bool(key)} length={len(key)} format_ok={key_ok}")
+          PY
       - name: Build site from live feeds
         env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          INVESTIGATIONS: "off"
+          INVESTIGATIONS: ${{ vars.INVESTIGATIONS }}   # set this repo variable to "off" to pause the desk
         run: python build.py
-      # The cache currently carries both legacy brief entries and Telegram delivery markers.
-      # Brief generation is disabled because no model credential is exposed to the build.
-      - name: Save delivery cache
+      # The desk writes at most one report an hour into originals/. Commit it back so
+      # it survives the next build; [skip ci] stops the push starting another run.
+      - name: File the investigations desk's report
+        if: always()
+        run: |
+          git config user.name "Times of Palestine"
+          git config user.email "noreply@timesofpalestine.com"
+          git add originals topics.json
+          git diff --quiet --cached || (git commit -m "Investigations desk: file report [skip ci]" && git push)
+      # Saved HERE, not by actions/cache's post-job hook. This job ends in a
+      # sleep that the next run cancels, so a post-job save never executes —
+      # which silently threw away every brief, every translated headline and
+      # every Telegram marker on every run since the chain began.
+      - name: Save TOP Briefs cache
         if: always()
         uses: actions/cache/save@v4
         with:
           path: briefs-cache.json
           key: briefs-${{ github.run_id }}
+      - name: Cache save marker
+        if: always()
+        run: echo "TOP Briefs cache save step finished"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
-      # Keep the proven refresh chain until the dedicated hourly reliability workflow lands.
+      # GitHub's cron never fires for this repo, so the workflow schedules itself:
+      # wait ~25 minutes, then dispatch the next run with the built-in GITHUB_TOKEN
+      # (workflow_dispatch is an explicit exception to Actions' recursion guard).
+      # A push cancels the sleeping run and its own dispatch continues the chain.
       - name: Wait for the next slot
         if: always()
         run: sleep 1500
