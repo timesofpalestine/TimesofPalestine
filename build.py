@@ -1459,7 +1459,7 @@ def render_page(lang, items, built_at):
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"{t['site_name']}","url":"{BASE_URL}/{lang}/","sameAs":["{BASE_URL}/en/","{BASE_URL}/ar/"]}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
-<style>{CSS}</style>{swg(lang)}
+<style>{CSS}{__import__("longform").CSS}</style>{swg(lang)}
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="topbar"><div class="wrap">
@@ -1519,7 +1519,7 @@ def render_story(it, lang, related, rail, built_at):
         brief = None
     if brief:  # original TOP Newsdesk brief, written by Claude, cached per story
         clean = [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in brief.split("\n")]
-        paras = "".join(f'<p class="summary">{esc(p)}</p>' for p in clean if p)
+        # long-form subset: subheads, figures with captions, tables, lists
         kind = (t["kind_original"] if it["source_id"] == "top-original"
                 else t["kind_brief"] if it.get("exclusive") else t["kind_curated"])
         credit = ("" if it.get("exclusive") or it["source_id"] == "top-original"
@@ -1572,7 +1572,7 @@ def render_story(it, lang, related, rail, built_at):
 <script type="application/ld+json">{jsonld}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS}" rel="stylesheet">
-<style>{CSS}</style>{swg(lang)}
+<style>{CSS}{__import__("longform").CSS}</style>{swg(lang)}
 </head>
 <body>
 <div class="backbar" style="display:flex;justify-content:space-between;align-items:center"><a href="../">{t['back_home']}</a><a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
@@ -1690,7 +1690,7 @@ def main():
         (dist / lang / "rss.xml").write_text(render_rss(lang, items, built_at), encoding="utf-8")
     (dist / "sitemap.xml").write_text(
         render_sitemap((("en", en_items), ("ar", ar_items)), built_at), encoding="utf-8")
-    (dist / "robots.txt").write_text(ROBOTS_TXT, encoding="utf-8"); __import__("seo_extras").write_extras(dist, (("en", en_items), ("ar", ar_items)), built_at, BASE_URL)
+    (dist / "robots.txt").write_text(ROBOTS_TXT, encoding="utf-8"); __import__("seo_extras").write_extras(dist, (("en", en_items), ("ar", ar_items)), built_at, BASE_URL); __import__("longform").copy_media(dist)
     (dist / "index.html").write_text(REDIRECT_HTML, encoding="utf-8")
     (dist / ".nojekyll").write_text("")
     cname = ROOT / "CNAME"  # optional custom domain (e.g. timesofpalestine.com)
