@@ -240,14 +240,21 @@ def _write_file(topic, parsed, lang, now):
         head + "---\n" + body + "\n", encoding="utf-8")
 
 
+# The desk files at most one report per desk hour. Three desk hours a day keeps
+# research costs around $5/day instead of ~$40/day hourly; 05/12/19 UTC spreads
+# publication across the Palestine morning, evening, and US-afternoon news cycles.
+DESK_HOURS = (5, 12, 19)
+
 def _run():
-    """Write one report if this hour has not had one. Returns a status string."""
+    """Write one report if this desk hour has not had one. Returns a status string."""
     now = datetime.now(timezone.utc)
     hour = now.strftime("%Y-%m-%dT%H")
     state = _load(STATE_FILE, {})
 
     if os.environ.get("INVESTIGATIONS", "").lower() in ("off", "0", "false"):
         return "investigations: paused by INVESTIGATIONS env"
+    if now.hour not in DESK_HOURS:
+        return f"investigations: outside desk hours {DESK_HOURS} — next at {min((h for h in DESK_HOURS if h > now.hour), default=DESK_HOURS[0]):02d}:00 UTC"
     if not os.environ.get("ANTHROPIC_API_KEY"):
         _save_state(state, now, hour, "no API key")
         return "investigations: no API key — skipped"
