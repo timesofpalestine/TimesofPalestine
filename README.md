@@ -2,7 +2,7 @@
 
 An independent, bilingual (English/Arabic), fully automated digital news front page for Palestine.
 It aggregates live reporting from outlets across Palestine and the region, links every story back
-to its original publisher, and rebuilds itself every 3 hours with **zero human management**.
+to its original publisher, and rebuilds itself every hour with **zero human management**.
 
 - **English edition:** `/en/` (LTR) · **Arabic edition:** `/ar/` (RTL, natively mirrored)
 - The root `/` auto-redirects visitors based on their browser language.
@@ -20,6 +20,8 @@ to its original publisher, and rebuilds itself every 3 hours with **zero human m
 4. Auto-categorizes into Gaza · West Bank & Jerusalem · Politics & Diplomacy · Economy & Aid ·
    Culture & Society · Opinion & Analysis.
 5. Renders `dist/en/index.html`, `dist/ar/index.html`, and the language-detecting `dist/index.html`.
+6. After GitHub Pages confirms the deployment, posts every new live story to
+   `@timesofpalestin`, combining paired English/Arabic originals into one message.
 
 A feed that is down, blocked, or rate-limited is simply skipped — the build never breaks because
 of one source. If *every* feed fails, the build exits non-zero so the last good deploy stays live.
@@ -35,8 +37,10 @@ Then open <http://localhost:8000>.
 
 ## Deploy once — then it runs itself forever
 
-The included GitHub Actions workflow ([.github/workflows/publish.yml](.github/workflows/publish.yml))
-rebuilds the site from live feeds **every 3 hours** and publishes it to GitHub Pages (free hosting).
+The included GitHub Actions workflow ([.github/workflows/build.yml](.github/workflows/build.yml))
+rebuilds the site from live feeds **at the top of every hour** and publishes it to GitHub Pages.
+Telegram delivery runs only after a successful deploy and keeps a durable, retryable delivery
+ledger in the GitHub Actions cache so already-posted stories are not sent twice.
 
 One-time setup:
 
@@ -69,7 +73,7 @@ For maximum tipster safety, consider a dedicated phone/number for the newsroom S
 
 ## Hosting at GoDaddy (timesofpalestine.com)
 
-**Recommended — keep the automation:** host the site on GitHub Pages (free, rebuilds every 3 h)
+**Recommended — keep the automation:** host the site on GitHub Pages (free, rebuilds hourly)
 and just point the GoDaddy **DNS** at it (README section above). GoDaddy stays your registrar;
 GitHub does the serving and refreshing. This is the only zero-management option.
 
