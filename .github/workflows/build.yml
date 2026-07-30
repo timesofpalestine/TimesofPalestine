@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
 permissions:
-  contents: read
+  contents: write            # the investigations desk commits its reports back
   pages: write
   id-token: write
 concurrency:
@@ -34,11 +34,14 @@ jobs:
           restore-keys: |
             newsroom-state-
             briefs-
+      - name: Install brief-writing dependency
+        run: pip install anthropic
       - name: Test publishing pipeline
         run: python -m unittest discover -s tests
       - name: Build site from live feeds
         env:
-          INVESTIGATIONS: "off"
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INVESTIGATIONS: ${{ vars.INVESTIGATIONS }}   # set this repo variable to "off" to pause the desk
         run: python build.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
