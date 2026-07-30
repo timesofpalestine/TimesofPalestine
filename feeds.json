@@ -386,6 +386,15 @@
       "category": "humans",
       "maxAgeHours": 168,
       "cap": 3
+    },
+    {
+      "id": "gnews-health",
+      "name": "Palestine Health Wire",
+      "url": "https://news.google.com/rss/search?q=%22Gaza%22%20OR%20%22Palestinian%22%20%28hospital%20OR%20prosthetic%20OR%20amputee%20OR%20cancer%20OR%20telemedicine%20OR%20dialysis%20OR%20%22mental%20health%22%20OR%20vaccination%20OR%20maternal%29%20%28treatment%20OR%20care%20OR%20program%20OR%20initiative%20OR%20rebuild%29&hl=en-US&gl=US&ceid=US:en",
+      "site": "https://news.google.com",
+      "category": "health",
+      "maxAgeHours": 168,
+      "cap": 3
     }
   ],
   "ar": [

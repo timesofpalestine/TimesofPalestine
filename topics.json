@@ -16,6 +16,62 @@
       "q": "Work through the Palestinian Ministry of Finance's published budget and monthly fiscal reports line by line. What are total revenues — domestic tax, clearance revenue, donor grants — and where does expenditure actually go: the wage bill by sector, the security sector's share, health and education, social transfers, net lending to utilities, debt service and arrears to the private sector and the pension fund? Give every figure with the document, year and currency it came from, and say where figures are not comparable across years. How has the composition changed since budget support collapsed, and what is the deficit resting on now?"
     },
     {
+      "id": "gaza-prosthetics-pipeline",
+      "cat": "health",
+      "en": "Thousands of new amputees, and the prosthetics pipeline meant to reach them",
+      "ar": "آلاف مبتوري الأطراف الجدد.. أين وصلت سلسلة الأطراف الصناعية؟",
+      "q": "How many Gazans lost limbs in the war (OCHA/WHO/UNICEF counts)? Map the prosthetics pipeline: who fits limbs today (Hamad hospital's artificial limbs center, ICRC, Jordanian field hospitals, medical evacuation programs), waiting times, pediatric refitting needs as children grow, 3D-printed and low-cost limb initiatives, and what a scaled solution would look like. Solutions framing: what works, what it costs, who is funding it, what is missing."
+    },
+    {
+      "id": "gaza-cancer-care-corridor",
+      "cat": "health",
+      "en": "Cancer care in Gaza collapsed. Where do patients go now?",
+      "ar": "انهار علاج السرطان في غزة.. إلى أين يذهب المرضى؟",
+      "q": "Before the war, where did Gaza's cancer patients get treatment (Turkish-Palestinian Friendship Hospital, referrals to East Jerusalem/Egypt/Jordan)? What exists now: medical evacuation numbers, referral backlogs, which countries take patients, chemotherapy availability. Solutions: evacuation corridors, telemedicine oncology consults, rebuilding oncology capacity — who is proposing what and what it would take."
+    },
+    {
+      "id": "gaza-telemedicine-lifeline",
+      "cat": "health",
+      "en": "Telemedicine as a lifeline: connecting Gaza's patients to the world's doctors",
+      "ar": "الطب عن بُعد شريان حياة يصل مرضى غزة بأطباء العالم",
+      "q": "Which telemedicine programs actually operate for Gaza and the West Bank (diaspora physician networks, Sahara-style volunteer platforms, hospital twinning)? What do they treat, what are the connectivity and power constraints, what results are documented? Solutions: what infrastructure (satellite internet, solar) and licensing changes would scale it."
+    },
+    {
+      "id": "gaza-mental-health-generation",
+      "cat": "health",
+      "en": "A generation in trauma: mental health care for Gaza's children",
+      "ar": "جيل تحت الصدمة.. الصحة النفسية لأطفال غزة",
+      "q": "What do UNICEF/WHO/GCMHP assessments say about PTSD and trauma prevalence among Gaza's children? What treatment capacity exists (Gaza Community Mental Health Programme, school-based programs, remote counseling)? Solutions: community-level psychosocial models proven in other war zones, training pipelines, funding gaps."
+    },
+    {
+      "id": "gaza-dialysis-chronic-care",
+      "cat": "health",
+      "en": "Chronic illness under siege: keeping dialysis and insulin flowing",
+      "ar": "المرض المزمن تحت الحصار.. كيف يستمر الغسيل الكلوي والأنسولين؟",
+      "q": "How many dialysis patients and insulin-dependent diabetics does Gaza have, per WHO? What happened to them during the war; what is the machine/generator/supply status now? Solutions: solar-powered dialysis units, cold-chain insulin logistics, home peritoneal dialysis — who has piloted what."
+    },
+    {
+      "id": "gaza-maternal-newborn-care",
+      "cat": "health",
+      "en": "Giving birth in the rubble: maternal and newborn care in Gaza",
+      "ar": "الولادة بين الركام.. صحة الأمهات والمواليد في غزة",
+      "q": "What are current maternal and neonatal outcomes vs prewar (UNFPA/WHO data)? Functioning maternity capacity, midwife networks, incubator/NICU status. Solutions: mobile maternity units, midwife-led community birthing, kangaroo care programs — evidence and funders."
+    },
+    {
+      "id": "gaza-polio-vaccination-rebuild",
+      "cat": "health",
+      "en": "After polio's return: rebuilding Gaza's vaccination shield",
+      "ar": "بعد عودة شلل الأطفال.. إعادة بناء درع التطعيم في غزة",
+      "q": "Track the polio detection and campaign history in Gaza since 2024 (WHO/UNICEF rounds, coverage rates). What does routine immunization look like now? Solutions: cold-chain restoration, campaign logistics during access constraints, catch-up schedules."
+    },
+    {
+      "id": "gaza-rehabilitation-capacity",
+      "cat": "health",
+      "en": "Rebuilding bodies: the rehabilitation system Gaza's wounded need",
+      "ar": "إعادة بناء الأجساد.. منظومة التأهيل التي يحتاجها جرحى غزة",
+      "q": "WHO estimates of war-wounded needing long-term rehabilitation; spinal-cord and burn cases. What rehab capacity exists (Sheikh Hamad, ICRC, NGOs), physiotherapist numbers, assistive-device supply. Solutions: rehab-in-community models, training programs, regional partnerships."
+    },
+    {
       "id": "donor-aid-what-reaches-the-treasury",
       "cat": "economy",
       "en": "How much donor aid reaches Palestinians, and how much never leaves the donor",

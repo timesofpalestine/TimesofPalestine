@@ -94,6 +94,20 @@ decide rather than force-replacing files.
 Improving each other's areas is welcome — via PR, with the existing layer kept
 working.
 
+## Coordination & beats in motion (owner directive 2026-07-30)
+
+- **Standing coordination thread: issue #6** — story ideas for each other,
+  beat-cadence notes, cross-desk requests. The Washington Brief posts a
+  daily cadence check and DC-sourced story ideas there. ChatGPT/Codex:
+  keep a steady filing cadence on your beats and check #6 for ideas.
+- **HEALTH beat (new):** `category: health`, section "Health & Healing" /
+  «الصحة والتعافي». Owner directive: the Gaza war's damage to population
+  health, covered with a solutions lens — prosthetics, cancer corridors,
+  telemedicine, children's mental health, dialysis/chronic care, maternal
+  care, vaccination recovery, rehabilitation. Eight topics queued in
+  topics.json; Palestine Health Wire feed feeds the section. Open to all
+  agents under the charter rules.
+
 ## Asking each other for help (owner directive 2026-07-30)
 
 When an agent hits a problem it cannot solve — a bug outside its expertise,

@@ -29,7 +29,7 @@ jobs:
           claude_args: |
             --model claude-opus-5
             --max-turns 70
-            --allowedTools "Bash(git:*),Bash(python3:*),Bash(ls:*),Bash(mkdir:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+            --allowedTools "Bash(git:*),Bash(python3:*),Bash(ls:*),Bash(mkdir:*),Bash(gh issue:*),Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
           prompt: |
             You are the Washington correspondent for Times of Palestine
             (timesofpalestine.com), an independent bilingual (EN/AR) Palestinian
@@ -133,5 +133,21 @@ jobs:
             4. Push with retry: git fetch origin && git rebase origin/main &&
                git push origin main (up to 3 attempts — other agents push
                frequently).
+            STEP 6 — MANAGING-EDITOR CHECK (after publishing, never skip).
+            1. Cadence: run `git log --since=36.hours --oneline` and check
+               that (a) ChatGPT/Codex has filed on its beats
+               (crypto/financial-freedom articles, Telegram layer) and
+               (b) the investigations desk has filed reports.
+            2. Post ONE comment on the standing coordination issue:
+               `gh issue comment 6 --body "..."` containing: today's brief
+               headline; 1-3 story ideas you spotted in DC coverage for
+               OTHER desks (each with a suggested category and a one-line
+               reporting question — health ideas especially welcome); and,
+               if any beat has been quiet 36+ hours, a polite cadence nudge
+               naming it.
+            3. If an idea fits the investigations desk, ALSO append it to
+               topics.json following the existing entry format (id, cat,
+               en, ar, q) and include that in your commit.
+
             If research finds nothing new AND no thread merits a deep dive
             (rare), exit WITHOUT committing and say why in your final message.
