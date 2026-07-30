@@ -1,0 +1,123 @@
+import json
+import tempfile
+import unittest
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from unittest import mock
+
+import seo_extras
+import telegram_publish
+
+
+def item(lang, pid, title, link, source_id="wire", age_minutes=5):
+    return {
+        "lang": lang,
+        "pid": pid,
+        "title": title,
+        "link": link,
+        "source_id": source_id,
+        "date": datetime.now(timezone.utc) - timedelta(minutes=age_minutes),
+    }
+
+
+class OutboxTests(unittest.TestCase):
+    def test_bilingual_original_is_one_group_with_two_delivery_keys(self):
+        en = item(
+            "en", "en1", "English title", "original:feature.en", "top-original")
+        ar = item(
+            "ar", "ar1", "عنوان عربي", "original:feature.ar", "top-original")
+        outbox = seo_extras.build_telegram_outbox(
+            (("en", [en]), ("ar", [ar])), "https://example.test")
+
+        self.assertEqual(len(outbox), 1)
+        self.assertEqual(outbox[0]["group_key"], "original:feature")
+        self.assertEqual(
+            [part["delivery_key"] for part in outbox[0]["parts"]],
+            ["story:en:en1", "story:ar:ar1"],
+        )
+
+    def test_stale_story_is_not_queued(self):
+        stale = item(
+            "en",
+            "old",
+            "Old story",
+            "https://source.test/old",
+            age_minutes=seo_extras.TELEGRAM_MAX_AGE_H * 60 + 1,
+        )
+        outbox = seo_extras.build_telegram_outbox(
+            (("en", [stale]),), "https://example.test")
+        self.assertEqual(outbox, [])
+
+
+class PublisherTests(unittest.TestCase):
+    def test_public_channel_urls_recover_delivery_keys(self):
+        page = (
+            '<a href="https://timesofpalestine.com/en/story/abc123def4.html">'
+            "story</a>"
+        )
+        self.assertEqual(
+            telegram_publish.delivery_keys_from_telegram_html(page),
+            {"story:en:abc123def4"},
+        )
+
+    def test_legacy_markers_prevent_duplicate_delivery(self):
+        outbox = {
+            "entries": [{
+                "parts": [{
+                    "delivery_key": "story:en:abc",
+                    "legacy_key": "tg:en:abc",
+                }],
+            }],
+        }
+        ledger = {"version": 1, "deliveries": {}}
+        migrated = telegram_publish.migrate_legacy_markers(
+            ledger, outbox, {"tg:en:abc": {"ts": 1}})
+        self.assertEqual(migrated, 1)
+        self.assertIn("story:en:abc", ledger["deliveries"])
+
+    def test_success_is_saved_before_next_message(self):
+        outbox = {
+            "version": 1,
+            "channel": telegram_publish.EXPECTED_CHANNEL,
+            "entries": [{
+                "group_key": "story:en:abc",
+                "parts": [{
+                    "delivery_key": "story:en:abc",
+                    "legacy_key": "tg:en:abc",
+                    "title": "A title",
+                    "url": "https://example.test/en/story/abc.html",
+                }],
+            }],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            outbox_path = root / "telegram-outbox.json"
+            ledger_path = root / "telegram-delivery.json"
+            legacy_path = root / "briefs-cache.json"
+            outbox_path.write_text(json.dumps(outbox), encoding="utf-8")
+            with (
+                mock.patch.object(telegram_publish, "OUTBOX_PATH", outbox_path),
+                mock.patch.object(telegram_publish, "LEDGER_PATH", ledger_path),
+                mock.patch.object(
+                    telegram_publish, "LEGACY_CACHE_PATH", legacy_path),
+                mock.patch.dict(
+                    "os.environ", {"TELEGRAM_BOT_TOKEN": "test-token"}),
+                mock.patch.object(
+                    telegram_publish, "wait_until_live", return_value=True),
+                mock.patch.object(
+                    telegram_publish, "send_message", return_value=42),
+                mock.patch.object(
+                    telegram_publish,
+                    "scrape_recent_delivery_keys",
+                    return_value=set(),
+                ),
+                mock.patch.object(telegram_publish.time, "sleep"),
+            ):
+                self.assertEqual(telegram_publish.main(), 0)
+            ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+            self.assertEqual(
+                ledger["deliveries"]["story:en:abc"]["message_id"], 42)
+
+
+if __name__ == "__main__":
+    unittest.main()
