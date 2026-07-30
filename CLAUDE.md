@@ -148,6 +148,12 @@ it to Telegram. No human machine involved. The contract:
    (2) a house SVG illustration of the subject (`times-of-palestine-*.svg`,
    auto-owned, no manifest entry). Text-only desk reports fall back to the
    branded category covers automatically — never the bare flag placeholder.
+   **Visual-first (owner decision 2026-07-30): no article runs as dead
+   text.** Every story ships a visual — real photo, subject illustration
+   (the Bitchat-style house SVG is the model), or infographic. The
+   investigations desk auto-generates a subject illustration per report;
+   photoless wire items receive category covers; deep reports carry
+   in-body infographics.
    **Video (embeds only, never hosted):** `!video[caption](url)` on its own
    line. Whitelisted hosts ONLY: YouTube watch/shorts/youtu.be URLs (renders
    as the privacy youtube-nocookie player), public Telegram post URLs

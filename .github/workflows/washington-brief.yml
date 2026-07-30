@@ -113,7 +113,8 @@ jobs:
             (public domain, CC-licensed, official press kit, or open-source
             project assets) saved to originals/media/ WITH an entry appended
             to media-rights.json recording asset path, rightsBasis, credit
-            and licenseUrl — follow the existing entries' format. Otherwise:
+            and licenseUrl — follow the existing entries' format. Your infographic may double as the lede (point the
+            image: header at it). Otherwise:
             a house SVG illustration of the subject (named
             times-of-palestine-*.svg, no manifest needed). Never leave an
             original without a lede visual; the category cover is only the

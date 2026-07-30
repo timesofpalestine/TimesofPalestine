@@ -242,6 +242,68 @@ def _save_state(state, now, hour, error=None):
         pass
 
 
+ILLUSTRATION_SYSTEM = """You are the graphics desk of Times of Palestine. You will \
+be given a news report. Produce ONE original SVG illustration for it — the lede image \
+readers see first. Output ONLY the SVG markup, nothing else: no prose, no markdown fences.
+
+HOUSE STYLE — match the existing graphics exactly:
+- 1600x900 viewBox; dark gradient background (#111214 to #1d1e21); a 22px red \
+(#8a1f2d) bar and 8px green (#286344) bar down the left edge
+- palette: red #8a1f2d/#C8102E, green #286344/#59a97d, gold #c7a86b, ivory #f2eee8, \
+muted #aaa9a5; font stacks: "Libre Franklin",Arial for Latin, Cairo,Arial for Arabic, \
+"Source Serif 4",Georgia for display
+- SUBJECT-SPECIFIC: draw the thing the story is about — a device, a document, a \
+building, a map shape, a flow between actors, a chart of the report's own numbers. \
+Simple bold shapes, generous spacing; never clip art clutter.
+- bilingual: a short English label/title AND its Arabic counterpart on the canvas
+- accessibility: include <title> and <desc> tags
+- DATA HONESTY: any number, date or name on the canvas must appear in the report. \
+No decorative fake data.
+- TECHNICAL LIMITS (hard): pure static SVG only — no <script>, no event handlers, \
+no external references of any kind (no <image>, no href to any URL, no \
+<foreignObject>), no CSS imports; under 40KB."""
+
+
+_SVG_FORBIDDEN = ("<script", "onload=", "onerror=", "onclick=", "javascript:",
+                  "<image", "<foreignObject", "href=\"http", "href='http",
+                  "@import", "url(http")
+
+
+def _clean_svg(text):
+    """Return validated SVG markup or None. The desk never publishes active content."""
+    text = (text or "").strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```[a-z]*\s*|\s*```$", "", text, flags=re.S).strip()
+    if not text.startswith("<svg") or not text.rstrip().endswith("</svg>"):
+        return None
+    if len(text) > 60000:
+        return None
+    low = text.lower()
+    if any(marker in low for marker in _SVG_FORBIDDEN):
+        return None
+    return text
+
+
+def _make_illustration(client, parsed_en, topic, now):
+    """One extra model pass draws the report's lede. Fail-open: None on any problem."""
+    try:
+        report = f"TITLE: {parsed_en['title']}\n\n{parsed_en['body'][:6000]}"
+        raw, _stop = _call(client, ILLUSTRATION_SYSTEM,
+                           [{"role": "user", "content": report}], max_tokens=12000)
+        svg = _clean_svg(raw)
+        if not svg:
+            print("investigations: illustration pass produced unusable SVG — using category cover")
+            return None
+        name = f"times-of-palestine-{topic['id']}-{now.strftime('%Y-%m-%d-%H')}-lede.svg"
+        media = ORIGINALS / "media"
+        media.mkdir(exist_ok=True)
+        (media / name).write_text(svg, encoding="utf-8")
+        return f"/media/{name}"
+    except Exception as e:
+        print(f"investigations: illustration pass failed ({type(e).__name__}) — using category cover")
+        return None
+
+
 def _file_content(topic, parsed, now):
     # Sources are a reporting gate, not page furniture: the parser still requires
     # MIN_SOURCES before anything publishes, but a news article carries its
@@ -251,6 +313,8 @@ def _file_content(topic, parsed, now):
             f"category: {topic['cat']}\n"
             f"date: {now.isoformat()}\n"
             f"maxAgeHours: 720\n")
+    if parsed.get("image"):
+        head += f"image: {parsed['image']}\n"
     return head + "---\n" + body + "\n"
 
 
@@ -367,6 +431,10 @@ def _run():
             raise ValueError(
                 f"{lang} report contains unsafe rendered markup: "
                 f"{'; '.join(residue)}")
+    lede = _make_illustration(client, parsed_en, topic, now)
+    if lede:
+        parsed_en["image"] = lede
+        parsed_ar["image"] = lede
     publication_id = _write_pair(topic, parsed_en, parsed_ar, now)
 
     state.setdefault("done", {})[topic["id"]] = now.isoformat()

@@ -1197,6 +1197,17 @@ def build_lang(lang):
         if per_source[it["source_id"]] <= caps.get(it["source_id"], PER_SOURCE_CAP):
             capped.append(it)
     print(f"  → {len(capped)} items after dedupe/cap")
+    # Visual-first (owner decision 2026-07-30): no story runs as dead text.
+    # Anything still photoless gets its branded category cover — the flag
+    # placeholder is a last resort, not a norm.
+    for it in capped:
+        if not it.get("image"):
+            cover = f"times-of-palestine-cover-{it['cat']}.svg"
+            if (ROOT / "originals" / "media" / cover).is_file():
+                it["image"] = f"/media/{cover}"
+                it["media"] = {"credit": "Graphic: Times of Palestine",
+                               "rightsBasis": "owned",
+                               "source": "Times of Palestine", "licenseUrl": None}
     return capped
 # ---------- localization ----------
 
