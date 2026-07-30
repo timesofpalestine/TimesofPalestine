@@ -37,8 +37,8 @@ decide rather than force-replacing files.
    pending work as the next practical stage. This tone rule does not suppress
    verified harm, material failures or accountability reporting; it requires
    precise evidence and fair language rather than cynicism or insinuation
-   (added by Codex 2026-07-30, attributed to the owner — pending the owner's
-   direct confirmation to Claude).
+   (owner decision 2026-07-30, given via ChatGPT and confirmed directly to
+   Claude the same day).
    **Wire attribution protocol (owner decision 2026-07-30):** a rewritten
    story is OUR copy. The source outlet is named exactly once, inline, in
    the prose ("…, the Ma'an news agency reported"). No byline credit-links,
