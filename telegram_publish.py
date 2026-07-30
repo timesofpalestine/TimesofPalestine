@@ -100,6 +100,46 @@ def pending_parts(entry, deliveries):
     ]
 
 
+def suppress_duplicate_events(parts, deliveries, now=None):
+    """Never send the same news twice under a different story ID.
+
+    The site's event dedupe can switch which variant of a story wins between
+    builds (a partner-wire copy arriving after an agency copy was already
+    delivered), which mints a new pid for an event the channel has already
+    seen. Compare each pending headline against titles delivered in the last
+    36 hours (same language); matches are marked delivered without sending.
+    """
+    from event_dedupe import event_tokens, same_event
+    now = now or datetime.now(timezone.utc)
+    recent = []
+    for key, record in deliveries.items():
+        title, lang = record.get("title"), record.get("lang")
+        if not title or not lang:
+            continue  # entries from before titles were recorded
+        try:
+            sent = datetime.fromisoformat(record.get("sent_at", ""))
+        except ValueError:
+            continue
+        if (now - sent).total_seconds() <= 36 * 3600:
+            recent.append((lang, event_tokens(title), key))
+    fresh, suppressed = [], 0
+    for part in parts:
+        toks = event_tokens(part.get("title", ""))
+        match = next((key for lang, ktoks, key in recent
+                      if lang == part.get("lang") and same_event(toks, ktoks)), None)
+        if match:
+            deliveries[part["delivery_key"]] = {
+                "sent_at": now.isoformat(),
+                "suppressed_duplicate_of": match,
+                "title": part.get("title", ""),
+                "lang": part.get("lang", ""),
+            }
+            suppressed += 1
+        else:
+            fresh.append(part)
+    return fresh, suppressed
+
+
 def format_message(parts):
     return "\n\n".join(
         f"{part['title']}\n{part['url']}" for part in parts)
@@ -190,9 +230,15 @@ def main():
     if migrated or recovered:
         save_ledger(ledger)
 
-    delivered, failures = 0, []
+    delivered, suppressed_total, failures = 0, 0, []
     for entry in outbox["entries"]:
         parts = pending_parts(entry, ledger["deliveries"])
+        if not parts:
+            continue
+        parts, suppressed = suppress_duplicate_events(parts, ledger["deliveries"])
+        if suppressed:
+            suppressed_total += suppressed
+            save_ledger(ledger)
         if not parts:
             continue
         if not wait_until_live([part["url"] for part in parts]):
@@ -209,6 +255,8 @@ def main():
                 "sent_at": sent_at,
                 "message_id": message_id,
                 "url": part["url"],
+                "title": part.get("title", ""),
+                "lang": part.get("lang", ""),
             }
         save_ledger(ledger)
         delivered += 1
@@ -220,7 +268,8 @@ def main():
     )
     print(
         f"Telegram: delivered {delivered} group(s), migrated {migrated}, "
-        f"recovered {recovered}, {pending} pending to {channel}"
+        f"recovered {recovered}, suppressed {suppressed_total} duplicate(s), "
+        f"{pending} pending to {channel}"
     )
     if failures:
         for failure in failures:

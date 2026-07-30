@@ -816,77 +816,24 @@ def dedupe(items):
 
 # ---------- event-level dedupe ----------
 # Two outlets covering one incident write two different headlines, so title-string
-# dedupe misses them. Cluster on normalized title tokens instead; when a cluster
-# forms, our own copy (original, then partner wire, then score) is the one that runs.
-_AR_DIGITS = str.maketrans("٠١٢٣٤٥٦٧٨٩", "0123456789")
-_NUM_WORDS = {"one": "1", "two": "2", "three": "3", "four": "4", "five": "5", "six": "6",
-              "seven": "7", "eight": "8", "nine": "9", "ten": "10", "eleven": "11",
-              "twelve": "12"}  # "dozens" stays a word: too vague to use as a count
-_EVENT_SYN = {}
-for _canon, _words in (
-    ("forces", "army force troop soldier military occupation idf"),
-    ("strike", "strike airstrike attack raid shelling bombing bombardment assault"),
-    ("kill", "kill killed martyr martyred slain dead death"),
-    ("injure", "injure injured wound wounded hurt casualtie"),
-    ("قوات", "قوات جيش جنود احتلال"),
-    ("قصف", "قصف غارة غارات هجوم عدوان"),
-    ("قتل", "قتل مقتل استشهاد استشهد شهداء شهيد قتلى"),
-    ("جرحى", "جرحى إصابة إصابات أصيب مصابين مصابون"),
-):
-    for _w in _words.split():
-        _EVENT_SYN[_w] = _canon
-_EVENT_STOP = set(
-    "the a an in on at of to for with by from and or as after amid over under near says say said "
-    "reports report reported news update breaking least against during between about its his her "
-    "their monday tuesday wednesday thursday friday saturday sunday today yesterday dozen dozens".split()
-) | set("في على من إلى عن مع بعد خلال قرب ضد بين حتى نحو أكثر الأقل اليوم أمس "
-        "الاثنين الثلاثاء الأربعاء الخميس الجمعة السبت الأحد".split())
-_EVENT_PLACES = set(
-    "gaza rafah khan younis jenin nablus hebron jerusalem ramallah tulkarem tulkarm bethlehem "
-    "qalqilya jericho jabalia salfit tubas".split()
-) | set("غزة رفح خان يونس جنين نابلس خليل قدس رام طولكرم لحم قلقيلية أريحا جباليا سلفيت طوباس".split())
-
-def event_tokens(title):
-    toks = set()
-    for w in norm_title(title).translate(_AR_DIGITS).split():
-        w = _NUM_WORDS.get(w, w)
-        if w in _EVENT_STOP or (len(w) <= 1 and not w.isdigit()):
-            continue
-        if w.isascii():
-            w = w.rstrip("s")
-        elif w.startswith("ال") and len(w) > 3:
-            w = w[2:]
-        toks.add(_EVENT_SYN.get(w, w))
-    return toks
+# dedupe misses them. The similarity logic lives in event_dedupe.py, shared with
+# telegram_publish.py so the channel never re-receives the same news either.
+from event_dedupe import event_tokens, same_event
 
 def dedupe_events(items):
-    """One incident, one article. Conservative on purpose: different places or
-    different casualty counts in the headlines veto the match, and only stories
-    within 36 hours of each other can be the same event."""
+    """One incident, one article. When a cluster forms, our own copy (original,
+    then partner wire, then score) is the one that runs; only stories within
+    36 hours of each other can be the same event."""
     kept = []
     ranked = sorted(items, key=lambda i: (i["source_id"] == "top-original",
                                           bool(i.get("exclusive")), i["score"]), reverse=True)
     for it in ranked:
         toks = event_tokens(it["title"])
-        nums = {t for t in toks if t.isdigit()}
-        places = toks & _EVENT_PLACES
-        dup = False
-        for _k, ktoks, knums, kplaces, kdate in kept:
-            inter = toks & ktoks
-            if len(inter) < 3:
-                continue
-            if len(inter) / len(toks | ktoks) < 0.42:
-                continue
-            if abs((it["date"] - kdate).total_seconds()) > 36 * 3600:
-                continue
-            if places and kplaces and not (places & kplaces):
-                continue  # different places → different events
-            if nums and knums and not (nums & knums):
-                continue  # different counts → different events
-            dup = True
-            break
+        dup = any(abs((it["date"] - kdate).total_seconds()) <= 36 * 3600
+                  and same_event(toks, ktoks)
+                  for _, ktoks, kdate in kept)
         if not dup:
-            kept.append((it, toks, nums, places, it["date"]))
+            kept.append((it, toks, it["date"]))
     survivors = {id(k[0]) for k in kept}
     dropped = [i for i in items if id(i) not in survivors]
     for d in dropped:
