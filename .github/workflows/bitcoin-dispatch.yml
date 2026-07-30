@@ -1,0 +1,42 @@
+name: Bitcoin Dispatch (every 48 hours)
+# ChatGPT's beat — automated: bitcoin/financial-freedom/Palestinian-economy.
+# Runs on GitHub's servers every 48 hours so no human machine is needed.
+# The script writes bilingual originals to originals/; the main twice-hourly
+# build.yml picks them up, validates, deploys, and delivers to Telegram.
+on:
+  schedule:
+    - cron: "0 15 */2 * *"   # every other day at 15:00 UTC (afternoon Palestine time)
+  workflow_dispatch: {}
+concurrency:
+  group: bitcoin-dispatch
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  file-the-dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install openai
+      - name: Run bitcoin & financial-freedom desk
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python bitcoin_dispatch.py
+      - name: Persist new originals
+        run: |
+          git config user.name "Times of Palestine Newsdesk"
+          git config user.email "newsdesk@timesofpalestine.com"
+          git add originals/
+          if ! git diff --cached --quiet; then
+            git commit -m "Bitcoin desk: automated dispatch [skip ci]"
+            git fetch origin
+            git rebase origin/main
+            git push origin HEAD:main
+          else
+            echo "bitcoin-desk: nothing new to commit"
+          fi
