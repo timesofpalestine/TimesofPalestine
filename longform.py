@@ -80,7 +80,7 @@ def _esc(s):
 
 
 def _inline(text):
-    """Escape first, then re-introduce the two inline marks we allow."""
+    """Escape first, then re-introduce the inline marks we allow."""
     out = _esc(text)
     code_spans = []
     def _save_code(m):
@@ -93,6 +93,19 @@ def _inline(text):
     for i, span in enumerate(code_spans):
         out = out.replace(f"@@CODE{i}@@", span)
     return out
+
+
+def inline_html(text):
+    """Render the safe inline subset for deks and other single-line summaries."""
+    return _inline(text)
+
+
+def inline_text(text):
+    """Reduce the inline subset to readable plain text for metadata and feeds."""
+    out = LINK_RX.sub(r"\1", text or "")
+    out = CODE_RX.sub(r"\1", out)
+    out = BOLD_RX.sub(r"\1", out)
+    return ITALIC_RX.sub(r"\1", out)
 
 
 def _cells(row):

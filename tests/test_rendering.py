@@ -44,6 +44,55 @@ def item():
 
 
 class RenderingTests(unittest.TestCase):
+    def test_summary_markdown_renders_safely_across_reader_surfaces(self):
+        record = item()
+        record.update({
+            "cat": "research",
+            "dek": (
+                "A [corporate filing](https://example.com/filing?half=1&year=2026) "
+                "sets the timetable <script>alert('unsafe')</script>."
+            ),
+            "image": "/media/times-of-palestine-cover-research.svg",
+            "original": True,
+            "source_id": "top-original",
+            "link": "original:research.en",
+        })
+        homepage = build.render_page(
+            "en", [record], datetime(2026, 7, 29, 15, tzinfo=timezone.utc))
+        story = build.render_story(
+            record, "en", [], [record],
+            datetime(2026, 7, 29, 15, tzinfo=timezone.utc))
+
+        for rendered in (homepage, story):
+            self.assertIn(
+                '<a href="https://example.com/filing?half=1&amp;year=2026"',
+                rendered,
+            )
+            self.assertIn("&lt;script&gt;alert(&#x27;unsafe&#x27;)&lt;/script&gt;", rendered)
+            self.assertNotIn("[corporate filing](", rendered)
+            self.assertNotIn("<script>alert('unsafe')</script>", rendered)
+        self.assertIn(
+            'content="A corporate filing sets the timetable '
+            '&lt;script&gt;alert(&#x27;unsafe&#x27;)&lt;/script&gt;."',
+            story,
+        )
+
+    def test_longform_table_stays_inside_scrollable_wrapper(self):
+        rendered = longform.body_html(
+            "| Area | Partner | Period | Result |\n"
+            "| --- | --- | --- | --- |\n"
+            "| Health | Palestine | 2026–2028 | Training underway |"
+        )
+        self.assertIn('<div class="tablewrap"><table class="lf">', rendered)
+        self.assertIn(".story .tablewrap{overflow-x:auto", longform.CSS)
+
+    def test_tablet_navigation_uses_one_scrollable_row(self):
+        self.assertIn(
+            "@media(max-width:960px){nav.sections .wrap{"
+            "flex-wrap:nowrap;overflow-x:auto",
+            build.CSS,
+        )
+
     def test_google_news_resolution_returns_publisher_article(self):
         class Response:
             url = "https://publisher.test/palestine-report?utm_source=google"
