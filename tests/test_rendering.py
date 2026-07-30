@@ -155,6 +155,17 @@ class RenderingTests(unittest.TestCase):
         self.assertEqual(
             seo_extras.delivery_time(record), record["date"])
 
+    def test_telegram_recent_headline_normalization(self):
+        self.assertEqual(
+            seo_extras._telegram_normalize("  A headline \n with spacing "),
+            "A headline with spacing",
+        )
+        self.assertEqual(
+            seo_extras._telegram_extract_headline(
+                "\nhttps://example.com\nActual headline\n"),
+            "Actual headline",
+        )
+
     def test_brief_stage_preserves_reviewed_original_body(self):
         record = item()
         record.update({
