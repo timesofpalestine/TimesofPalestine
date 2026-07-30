@@ -86,6 +86,10 @@ BRIEF_SYSTEM = {
         "Begin your reply with a single line 'HEADLINE: <your headline>' — YOUR OWN "
         "headline for the story, never the source's: one short complete sentence, at "
         "most 9 words, no colon-subtitle, no trailing ellipsis, front-page register. "
+        "The headline is ACTIVE VOICE and names WHO did WHAT to WHOM — the actor the "
+        "reporting identifies is the grammatical subject. Never passive ('was killed', "
+        "'is seen'), never agentless hedges ('changes hands', 'comes under fire', "
+        "'faces pressure') when the actor is known. "
         "Then a blank line, then the brief text, paragraphs separated by blank lines."
     ),
     "ar": (
@@ -105,7 +109,9 @@ BRIEF_SYSTEM = {
         "اكتفِ بما تعرفه واترك للقارئ أن يقرر. ابدأ ردّك بسطر واحد «HEADLINE: <العنوان>» — "
         "عنوانك أنت لا عنوان المصدر: جملة واحدة قصيرة مكتملة، تسع كلمات على الأكثر، بلا نقاط "
         "حذف، بأنماط الصفحات الأولى العربية (جملة فعلية، أو الفاصل «..»، أو النسبة بنقطتين، أو "
-        "سؤال مباشر). ثم سطر فارغ، ثم نص الموجز والفقرات مفصولة بسطر فارغ."
+        "سؤال مباشر). العنوان بصيغة المبني للمعلوم دائماً ويسمّي الفاعل صراحةً: مَن فعل ماذا وبمَن — "
+        "لا مبني للمجهول أبداً («قُتل»، «استُهدف») ولا صياغات تخفي فاعلاً معروفاً؛ إذا حدّد الخبر "
+        "الفاعل فاجعله فاعل الجملة. ثم سطر فارغ، ثم نص الموجز والفقرات مفصولة بسطر فارغ."
     ),
 }
 MAX_AGE_HOURS = 72
@@ -784,6 +790,37 @@ def is_complete_text(s, floor):
 
 TITLE_MAX_WORDS = 12   # hard backstop; the desks aim for ≤9-10
 
+# Owner rule 2026-07-30: every title, EN and AR, is active voice and names who
+# did what to whom. Undiacritized Arabic passive is ambiguous (قتل reads both
+# ways), so the Arabic net only catches explicitly marked or unambiguous forms.
+_EN_PASSIVE_TITLE_RX = re.compile(
+    r"\b(?:is|are|was|were|be|been|being|get|gets|got)\s+(?:\w+ed|"
+    r"born|built|held|hit|hurt|kept|known|left|lost|made|met|paid|put|sent|"
+    r"set|shot|shut|sold|struck|torn|thrown|withdrawn|won)\b", re.I)
+_EN_AGENTLESS_TITLE_RX = re.compile(
+    r"\b(?:changes?\s+hands|comes?\s+under|faces?\s+(?:pressure|scrutiny|"
+    r"criticism|questions)|under\s+fire|remains?\s+unclear)\b", re.I)
+_AR_PASSIVE_TITLE_RX = re.compile(
+    r"(?:^|[\s:،».])(?:قُتل|اغتيل|استُشهد|أُصيب|اعتُقل|أُوقف|استُهدف|صودر|"
+    r"صودرت|أُغلق|أُغلقت|هُدم|هُدمت|دُمر|دُمرت|فُرض|فُرضت|مُنع|مُنعت|"
+    r"أُطلق|شُيّع|نُقل|أُجبر|أُخلي)(?:$|[\s:،«.])")
+
+
+def passive_title_warnings(title, lang):
+    """Titles must name the actor: no passive voice, no agentless hedges."""
+    found = []
+    if lang == "en":
+        m = _EN_PASSIVE_TITLE_RX.search(title) or _EN_AGENTLESS_TITLE_RX.search(title)
+        if m:
+            found.append(f"passive/agentless title ({m.group(0)!r}) — name who "
+                         "did what to whom")
+    else:
+        m = _AR_PASSIVE_TITLE_RX.search(title)
+        if m:
+            found.append(f"عنوان بصيغة المبني للمجهول ({m.group(0).strip()!r}) — "
+                         "سمِّ الفاعل: من فعل ماذا وبمن")
+    return found
+
 
 def write_brief(client, item):
     material = (f"OUTLET: {item['source']}\n"
@@ -807,7 +844,8 @@ def write_brief(client, item):
     # Owner rule 2026-07-30: no headline longer than one short complete
     # sentence. A missing or bloated headline means the copy is not ready.
     if (not new_title or len(new_title.split()) > TITLE_MAX_WORDS
-            or new_title.endswith(("…", "..."))):
+            or new_title.endswith(("…", "..."))
+            or passive_title_warnings(new_title, item["lang"])):
         item["brief_refused"] = True
         return None
     if REFUSAL_RX.search(text) or not is_complete_text(text, 160):
@@ -849,7 +887,7 @@ def generate_briefs(all_items):
             # Wire protocol (2026-07-30): non-partner briefs must credit the
             # outlet inline. Pre-protocol briefs keep publishing but are
             # queued for a restyle whenever the run has spare capacity.
-            if entry.get("style") != "wire2":
+            if entry.get("style") != "wire3":
                 it["brief_stale"] = True  # regenerate: wire attribution + short headline
     todo = [i for i in sorted(
         all_items,
@@ -901,7 +939,7 @@ def generate_briefs(all_items):
             if brief:
                 it["brief"] = brief
                 it.pop("brief_stale", None)
-                entry = {"brief": brief, "ts": now_ts, "style": "wire2",
+                entry = {"brief": brief, "ts": now_ts, "style": "wire3",
                          "title": it["title"]}  # the desk's own short headline
                 cache[f"{it['lang']}:{it['pid']}"] = entry
                 written += 1
@@ -1088,6 +1126,7 @@ def validate_original(path, meta, body, lang, now, date):
     rendered = longform.body_html(body)
     residue_warnings.extend(longform.rendered_residue_warnings(rendered))
     residue_warnings.extend(memo_style_warnings(body))
+    residue_warnings.extend(passive_title_warnings(meta.get("title", ""), lang))
     if len(meta.get("title", "").split()) > TITLE_MAX_WORDS:
         residue_warnings.append(
             f"headline runs {len(meta['title'].split())} words — the rule is one "

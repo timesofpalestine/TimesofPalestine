@@ -121,6 +121,11 @@ rather than propping it up with apparatus.
 OUTPUT FORMAT — follow exactly
 Begin your reply with TITLE: — no preamble, no "I'll research this now".
 Line 1: TITLE: <one short complete sentence, at most 10 words, no colon-subtitle>
+The TITLE is ACTIVE VOICE and names WHO does WHAT to WHOM — the actor your reporting \
+identifies is the grammatical subject. Never passive ("was seized", "is displaced"), \
+never agentless hedges ("changes hands", "faces pressure", "comes under scrutiny") \
+when the actor is known. "Israel registers West Bank land weekly", never "West Bank \
+land changes hands through a weekly routine".
 Line 2: DEK: <one sentence, at most 30 words, saying what the report establishes>
 Then a blank line, then the body in plain paragraphs separated by blank lines. Use no \
 markdown, no headings, no bullets, no bold.
@@ -152,7 +157,10 @@ English one. Compose it the way Arabic front pages do. The live patterns:
 - compact iḍāfa subject: «تخريب خط التغذية الرئيسي يجدد حرمان دير الزور من الكهرباء»
 Choose the pattern that fits the story. Never mirror the English headline's syntax, \
 never chain clauses with و the way English chains with "and", and never write a \
-copular headline (X هو Y) where a verbal one is possible.
+copular headline (X هو Y) where a verbal one is possible. The headline is ALWAYS \
+المبني للمعلوم and names the actor explicitly — never المبني للمجهول («قُتل»، \
+«صودرت»، «استُهدف») and never agentless wording when the reporting identifies who \
+acted: the known actor is the subject of the verbal sentence.
 
 OUTPUT FORMAT — follow exactly
 Begin your reply with TITLE: — no preamble of any kind.

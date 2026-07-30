@@ -76,7 +76,9 @@ jobs:
 
             STEP 3 — WRITE originals/diaspora-dispatch-YYYY-MM-DD.en.txt and
             .ar.txt (today's UTC date), exact format:
-              title: <one short complete sentence, max 10 words, no ellipsis>
+              title: <one short complete sentence, max 10 words, no ellipsis;
+              ACTIVE VOICE, names WHO did WHAT to WHOM — never passive, never
+              agentless wording when the actor is known>
               category: diaspora
               date: <now, ISO 8601 UTC>
               maxAgeHours: 336
