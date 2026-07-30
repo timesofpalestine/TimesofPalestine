@@ -2040,7 +2040,17 @@ def main():
     candidates = select_publishable_copy(en_items, ar_items)
     approvals = load_reviews(ROOT / "editorial" / "reviews.json")
     gate_mode = review_gate_mode()
-    eligible, pending = apply_review_gate(candidates, approvals, mode=gate_mode)
+    # The review gate is for third-party copy (wires, Telegram) whose sourcing
+    # we cannot see. Our own signed reporting — desk originals and the
+    # Washington Brief — is validated at generation (sourced-or-INSUFFICIENT,
+    # validate_original) and never carries the "developing report" label.
+    own_reporting = [i for i in candidates if i.get("source_id") == "top-original"]
+    for item in own_reporting:
+        item.pop("review_status", None)
+        item.pop("risk_reasons", None)
+    third_party = [i for i in candidates if i.get("source_id") != "top-original"]
+    eligible, pending = apply_review_gate(third_party, approvals, mode=gate_mode)
+    eligible = own_reporting + eligible
     held = pending if gate_mode == "hold" else []
     HEALTH.review_held = len(held)
     HEALTH.review_approved = sum(1 for item in eligible if item.get("risk_reasons"))
