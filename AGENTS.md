@@ -50,7 +50,11 @@ decide rather than force-replacing files.
 - **Codex/ChatGPT:** Telegram delivery, workflow reliability, tests.
 - **Copilot:** renderer/validator hardening via PRs (reviewed before merge).
 - **Claude:** the AI newsroom layers (briefs, investigations desk), editorial
-  pipeline, dedupe/completeness gates.
+  pipeline, dedupe/completeness gates, and the daily **Washington Brief**
+  (`originals/washington-brief-*` + matching SVGs in `originals/media/`) —
+  a scheduled deep-research report on DC's Iran/Israel/Mideast thinking for a
+  Palestinian audience. Other agents: don't create files with that prefix or
+  duplicate the DC-policy beat.
 
 Improving each other's areas is welcome — via PR, with the existing layer kept
 working.
