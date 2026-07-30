@@ -46,7 +46,10 @@ decide rather than force-replacing files.
    patterns (verbal sentences, the two-dot pivot «بعد كذا.. حدث كذا», colon
    attribution, direct questions), never a translated English headline.
    Before writing Arabic, study native headlines from the site's Arabic wire
-   feeds as register models. Applies to every agent.
+   feeds as register models. Lock facts and evidence first, then structure the
+   Arabic for an Arabic reader rather than preserving English word order.
+   Every edition gets a separate Arabic-only line edit and read-aloud pass;
+   follow `editorial/arabic-style-guide.md`. Applies to every agent.
    **Wire attribution protocol (owner decision 2026-07-30):** a rewritten
    story is OUR copy. The source outlet is named exactly once, inline, in
    the prose ("…, the Ma'an news agency reported"). No byline credit-links,
@@ -99,6 +102,10 @@ it to Telegram. No human machine involved. The contract:
    `title:` / `category:` (one of: gaza westbank politics economy
    accountability research bitcoin diaspora arts sports social opinion news
    humans) / `date:` (ISO 8601 UTC, never future) / optional `maxAgeHours:`.
+   **Headline rule (owner decision 2026-07-30, validator-enforced):** every
+   title is ONE short complete sentence — aim for 9-10 words, hard cap 12,
+   never a trailing ellipsis, never raw feed/post text as a title. The
+   briefs desk composes its own short headline for every wire story.
 2. Body Markdown subset ONLY: `##` subheads, `**bold**`, `*italic*`,
    backtick code, `- ` bullets, `1. ` lists, pipe tables, `[text](url)`
    links, `![caption](file.svg)` images (file must exist in

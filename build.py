@@ -83,7 +83,10 @@ BRIEF_SYSTEM = {
         "the sentence carrying the most important claim — e.g. ', the Ma'an news agency "
         "reported' or 'according to Al Jazeera'. If the OUTLET is given as '(agency wire)', "
         "name no outlet at all. Never mention websites, links, or where to read more. "
-        "Output only the brief text, paragraphs separated by blank lines."
+        "Begin your reply with a single line 'HEADLINE: <your headline>' — YOUR OWN "
+        "headline for the story, never the source's: one short complete sentence, at "
+        "most 9 words, no colon-subtitle, no trailing ellipsis, front-page register. "
+        "Then a blank line, then the brief text, paragraphs separated by blank lines."
     ),
     "ar": (
         "أنت غرفة أخبار «تايمز أوف فلسطين»، منصة إخبارية رقمية مستقلة. اكتب موجزاً إخبارياً "
@@ -99,7 +102,10 @@ BRIEF_SYSTEM = {
         "المادة مرة واحدة فقط داخل الجملة التي تحمل أهم معلومة — مثل «بحسب وكالة معاً» أو «كما أفادت "
         "الجزيرة». وإذا كان المصدر «(agency wire)» فلا تذكر أي وسيلة إعلامية. لا تذكر أبداً موقعاً إلكترونياً "
         "أو أين يمكن قراءة المزيد. لا تقل أبداً إن التفاصيل أو المعلومات غير متوفرة أو غير واردة — "
-        "اكتفِ بما تعرفه واترك للقارئ أن يقرر. أخرج نص الموجز فقط، والفقرات مفصولة بسطر فارغ."
+        "اكتفِ بما تعرفه واترك للقارئ أن يقرر. ابدأ ردّك بسطر واحد «HEADLINE: <العنوان>» — "
+        "عنوانك أنت لا عنوان المصدر: جملة واحدة قصيرة مكتملة، تسع كلمات على الأكثر، بلا نقاط "
+        "حذف، بأنماط الصفحات الأولى العربية (جملة فعلية، أو الفاصل «..»، أو النسبة بنقطتين، أو "
+        "سؤال مباشر). ثم سطر فارغ، ثم نص الموجز والفقرات مفصولة بسطر فارغ."
     ),
 }
 MAX_AGE_HOURS = 72
@@ -759,15 +765,16 @@ def is_complete_text(s, floor):
         return False
     return tail.endswith(_TERMINALS)
 
+TITLE_MAX_WORDS = 12   # hard backstop; the desks aim for ≤9-10
+
+
 def write_brief(client, item):
     material = (f"OUTLET: {item['source']}\n"
-                f"HEADLINE: {item['title']}\n"
+                f"SOURCE HEADLINE OR POST TEXT: {item['title']}\n"
                 f"FEED SUMMARY: {item['dek'] or '(none)'}")
     system = BRIEF_SYSTEM[item["lang"]]
     if item.get("needs_translation"):  # Arabic wire copy feeding the English edition
-        system += (" The source material is in Arabic. Start your response with a single line "
-                   "beginning 'HEADLINE: ' giving a concise English news headline for this story, "
-                   "then a blank line, then the brief in English.")
+        system += " The source material is in Arabic; write the headline and brief in English."
     response = client.messages.create(
         model=BRIEFS_MODEL,
         max_tokens=700,
@@ -775,13 +782,21 @@ def write_brief(client, item):
         messages=[{"role": "user", "content": material}],
     )
     text = "".join(b.text for b in response.content if b.type == "text").strip()
-    if item.get("needs_translation") and text.startswith("HEADLINE:"):
+    new_title = None
+    if text.startswith("HEADLINE:"):
         first, _, rest = text.partition(chr(10))
-        item["title"] = truncate(first[len("HEADLINE:"):].strip(" *"), 200)
+        new_title = first[len("HEADLINE:"):].strip(" *«»\"")
         text = rest.strip()
+    # Owner rule 2026-07-30: no headline longer than one short complete
+    # sentence. A missing or bloated headline means the copy is not ready.
+    if (not new_title or len(new_title.split()) > TITLE_MAX_WORDS
+            or new_title.endswith(("…", "..."))):
+        item["brief_refused"] = True
+        return None
     if REFUSAL_RX.search(text) or not is_complete_text(text, 160):
         item["brief_refused"] = True  # nothing to report, or the copy stops short — no stubs
         return None
+    item["title"] = truncate(new_title, 120)
     return text
 
 
@@ -817,8 +832,8 @@ def generate_briefs(all_items):
             # Wire protocol (2026-07-30): non-partner briefs must credit the
             # outlet inline. Pre-protocol briefs keep publishing but are
             # queued for a restyle whenever the run has spare capacity.
-            if entry.get("style") != "wire" and not it.get("partner"):
-                it["brief_stale"] = True
+            if entry.get("style") != "wire2":
+                it["brief_stale"] = True  # regenerate: wire attribution + short headline
     todo = [i for i in sorted(
         all_items,
         key=lambda x: (
@@ -869,9 +884,8 @@ def generate_briefs(all_items):
             if brief:
                 it["brief"] = brief
                 it.pop("brief_stale", None)
-                entry = {"brief": brief, "ts": now_ts, "style": "wire"}
-                if it.get("needs_translation") and not ARABIC_CHARS_RX.search(it["title"]):
-                    entry["title"] = it["title"]  # keep the English headline across builds
+                entry = {"brief": brief, "ts": now_ts, "style": "wire2",
+                         "title": it["title"]}  # the desk's own short headline
                 cache[f"{it['lang']}:{it['pid']}"] = entry
                 written += 1
     cache = {k: v for k, v in cache.items() if now_ts - v.get("ts", now_ts) < 60 * 86400}
@@ -1057,6 +1071,10 @@ def validate_original(path, meta, body, lang, now, date):
     rendered = longform.body_html(body)
     residue_warnings.extend(longform.rendered_residue_warnings(rendered))
     residue_warnings.extend(memo_style_warnings(body))
+    if len(meta.get("title", "").split()) > TITLE_MAX_WORDS:
+        residue_warnings.append(
+            f"headline runs {len(meta['title'].split())} words — the rule is one "
+            f"short complete sentence (max {TITLE_MAX_WORDS})")
 
     stats = {
         "subheads": len(re.findall(r'<h[234] class="sub">', rendered)),

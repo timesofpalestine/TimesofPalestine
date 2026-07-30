@@ -120,7 +120,7 @@ rather than propping it up with apparatus.
 
 OUTPUT FORMAT — follow exactly
 Begin your reply with TITLE: — no preamble, no "I'll research this now".
-Line 1: TITLE: <a headline of at most 12 words, one sentence, no colon-subtitle>
+Line 1: TITLE: <one short complete sentence, at most 10 words, no colon-subtitle>
 Line 2: DEK: <one sentence, at most 30 words, saying what the report establishes>
 Then a blank line, then the body in plain paragraphs separated by blank lines. Use no \
 markdown, no headings, no bullets, no bold.
@@ -156,7 +156,7 @@ copular headline (X هو Y) where a verbal one is possible.
 
 OUTPUT FORMAT — follow exactly
 Begin your reply with TITLE: — no preamble of any kind.
-Line 1: TITLE: <the Arabic headline, at most 12 words>
+Line 1: TITLE: <the Arabic headline — one short complete sentence, at most 9 words>
 Line 2: DEK: <one Arabic sentence, at most 30 words>
 Then a blank line, then the body in plain paragraphs separated by blank lines, no \
 markdown. Then a blank line, then a final block beginning SOURCES: with the same \

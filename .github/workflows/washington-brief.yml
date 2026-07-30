@@ -65,7 +65,7 @@ jobs:
 
             STEP 3 — WRITE originals/washington-brief-YYYY-MM-DD.en.txt and
             .ar.txt (today's UTC date), exact file format:
-              title: <concrete headline>
+              title: <one short complete sentence, max 10 words, no ellipsis>
               category: politics
               date: <now, ISO 8601 UTC>
               maxAgeHours: 72

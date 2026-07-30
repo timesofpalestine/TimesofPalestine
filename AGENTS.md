@@ -102,6 +102,10 @@ it to Telegram. No human machine involved. The contract:
    `title:` / `category:` (one of: gaza westbank politics economy
    accountability research bitcoin diaspora arts sports social opinion news
    humans) / `date:` (ISO 8601 UTC, never future) / optional `maxAgeHours:`.
+   **Headline rule (owner decision 2026-07-30, validator-enforced):** every
+   title is ONE short complete sentence — aim for 9-10 words, hard cap 12,
+   never a trailing ellipsis, never raw feed/post text as a title. The
+   briefs desk composes its own short headline for every wire story.
 2. Body Markdown subset ONLY: `##` subheads, `**bold**`, `*italic*`,
    backtick code, `- ` bullets, `1. ` lists, pipe tables, `[text](url)`
    links, `![caption](file.svg)` images (file must exist in
