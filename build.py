@@ -1365,6 +1365,15 @@ def ar_count(n, one, two, few, many):
         return f"{n} {few}"
     return f"{n} {many}"
 
+def new_mark(it, lang):
+    """A pulsing NEW mark on stories under 90 minutes old — the page must feel alive."""
+    mins = (datetime.now(timezone.utc) - it["date"]).total_seconds() / 60
+    if mins > 90:
+        return ""
+    label = "جديد" if lang == "ar" else "NEW"
+    return f'<span class="newmark">{label}</span>'
+
+
 def time_ago(date, lang):
     mins = max(1, round((datetime.now(timezone.utc) - date).total_seconds() / 60))
     if lang == "ar":
@@ -1587,6 +1596,7 @@ footer .legal{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #2a2a30;fo
 footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%);border-top:4px solid var(--red);max-width:200px;margin-bottom:1.5rem}
 [dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}@media (prefers-color-scheme:dark){:root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}.masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.hero h2,.card h3,.rowcard h3,.hero-sub article h3,.research-feat h3,.op-card h3{color:var(--ink)}.hero .dek{color:#c5c5cf}.story .summary{color:#d6d6de}.research-feat .dek{color:#c5c5cf}section.opinion{background:#17171c}.card img,.hero img,.rowcard img,.story img.lede{opacity:.92}/* The flag palette never changes: fills, rules, markers and the masthead stay true brand red and green in dark mode. Only small red/green TEXT lifts to a lighter tint of the SAME hue, because #C8102E on near-black is 3.2:1 — fine for large type and graphics, unreadable at .66rem. */.hero .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q,.hero h2 a:hover,.card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.hero-sub article h3 a:hover{color:#f93549}.meta .src,.card .chip,.rowcard .chip,.hero-sub article .chip{color:#3fd07c}}@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}}.skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}.skiplink:focus{inset-inline-start:0}.share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}.share span{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;align-self:center}.share a{border:1px solid var(--line-dark);padding:.35rem .8rem;border-radius:3px;font-size:.8rem;font-weight:700}.share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
 .review-note{margin:.8rem 0;padding:.7rem .9rem;border-inline-start:3px solid var(--red);background:var(--cream);font-size:.86rem;font-weight:700;line-height:1.45}
+.newmark{display:inline-block;margin-inline-end:.4rem;color:var(--red);font-size:.62rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;animation:newpulse 2s ease-in-out infinite}@keyframes newpulse{0%,100%{opacity:1}50%{opacity:.45}}@media (prefers-reduced-motion:reduce){.newmark{animation:none}}
 .review-chip{display:inline-block;margin-inline-start:.45rem;color:var(--red);font-size:.66rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
 .revisions{margin-top:2rem;padding:1rem 1.2rem;border:1px solid var(--line-dark);background:var(--card)}.revisions h2{font-family:var(--serif);font-size:1.1rem}.revisions ol{margin:.7rem 0 0;padding-inline-start:1.2rem}.revisions li{margin-top:.45rem;font-size:.86rem;line-height:1.6}.revisions time{font-variant-numeric:tabular-nums;color:var(--muted)}
 .social-note{margin:-.5rem 0 1.2rem;font-size:.9rem;color:var(--muted);max-width:75ch}.social-note a{color:var(--green);font-weight:700}
@@ -1648,7 +1658,7 @@ def meta_line(it, lang):
         source = (f'<a class="src" href="{esc(it["source_url"])}" target="_blank" '
                   f'rel="noopener">{esc(it["source"])}</a>')
     return (f'<p class="meta">{source}'
-            f'<span class="t">{time_ago(it["date"], lang)}</span></p>')
+            f'<span class="t">{new_mark(it, lang)}{time_ago(it["date"], lang)}</span></p>')
 
 
 def media_credit(it, lang):
@@ -1690,13 +1700,13 @@ def card(it, lang, pfx):
     return (f'<article class="card">{card_media(it, pfx)}'
             f'<span class="chip">{esc(display_source(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<p class="t">{time_ago(it["date"], lang)}</p></article>')
+            f'<p class="t">{new_mark(it, lang)}{time_ago(it["date"], lang)}</p></article>')
 
 def rowcard(it, lang, pfx):
     return (f'<article class="rowcard">{card_media(it, pfx)}'
             f'<div><span class="chip">{esc(display_source(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<p class="t">{time_ago(it["date"], lang)}</p></div></article>')
+            f'<p class="t">{new_mark(it, lang)}{time_ago(it["date"], lang)}</p></div></article>')
 
 def op_card(it, lang, pfx):
     return (f'<article class="op-card"><span class="q">“</span>'
@@ -1706,10 +1716,10 @@ def op_card(it, lang, pfx):
 def sub_item(it, lang, pfx):
     return (f'<article><span class="chip">{esc(display_source(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<p class="t">{time_ago(it["date"], lang)}</p></article>')
+            f'<p class="t">{new_mark(it, lang)}{time_ago(it["date"], lang)}</p></article>')
 
 def latest_item(it, lang, pfx):
-    return (f'<li><span class="t">{time_ago(it["date"], lang)}</span>'
+    return (f'<li><span class="t">{new_mark(it, lang)}{time_ago(it["date"], lang)}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<span class="s">{esc(display_source(it, lang))}</span></li>')
 

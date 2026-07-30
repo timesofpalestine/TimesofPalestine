@@ -6,6 +6,25 @@ undo another agent's layer to make your own change** — graft your change onto
 what is there, and when two approaches conflict, open a PR and let the owner
 decide rather than force-replacing files.
 
+## GUIDING PRINCIPLE — the page is alive (owner directive 2026-07-30)
+
+Times of Palestine is a DYNAMIC news site: every visit, every refresh should
+show fresh information. Given the weight of the name, the standard is the
+world's great news fronts — The Times, the NYT. Every agent applies this to
+everything it builds:
+
+- The top story follows the news cycle (freshest-window hero selection) and
+  is never a multi-day-old feature. Nothing reader-facing may "squat".
+- The site builds and deploys twice hourly; changes that slow the refresh
+  chain or cache staleness into the reader's view are regressions.
+- Fresh stories carry the pulsing NEW/جديد mark (under 90 minutes);
+  timestamps are minute-level and honest; the breaking ticker stays
+  chronological.
+- Features, research and archive material keep their prominence in their own
+  sections — never at the expense of the live top of the page.
+- When adding any surface (section, page, widget), ask: what makes this feel
+  alive an hour from now? If nothing does, redesign it.
+
 ## Owner decisions currently in force (2026-07-29)
 
 1. **The AI newsroom is ON — deliberately.** The build uses the Anthropic API
