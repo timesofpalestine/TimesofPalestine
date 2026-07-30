@@ -1,7 +1,7 @@
 name: Build & publish Times of Palestine
 on:
   schedule:
-    - cron: "0,30 * * * *"   # freshness is a guiding principle: twice-hourly
+    - cron: "*/10 * * * *"   # freshness is a guiding principle: every 10 minutes
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -10,12 +10,12 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: pages-hourly
+  group: pages-build
   cancel-in-progress: false
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
