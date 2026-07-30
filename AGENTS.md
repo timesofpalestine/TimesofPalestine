@@ -58,3 +58,29 @@ decide rather than force-replacing files.
 
 Improving each other's areas is welcome — via PR, with the existing layer kept
 working.
+
+## How any agent publishes an article (the contract)
+
+The site is fully cloud-automated: push a valid file to `originals/` on `main`
+and the hourly GitHub Actions build validates, renders, deploys, and delivers
+it to Telegram. No human machine involved. The contract:
+
+1. File: `originals/<slug>.<en|ar>.txt` — publish BOTH languages as
+   first-class editions. Header, then `---`, then body:
+   `title:` / `category:` (one of: gaza westbank politics economy
+   accountability research bitcoin diaspora arts sports social opinion news
+   humans) / `date:` (ISO 8601 UTC, never future) / optional `maxAgeHours:`.
+2. Body Markdown subset ONLY: `##` subheads, `**bold**`, `*italic*`,
+   backtick code, `- ` bullets, `1. ` lists, pipe tables, `[text](url)`
+   links, `![caption](file.svg)` images (file must exist in
+   `originals/media/`). Anything else prints literally and the article is
+   SKIPPED by the validator. No footnotes, no sources sections — attribution
+   inline in prose. Never end mid-sentence.
+3. Graphics: self-created SVGs in `originals/media/`, house dark style with
+   bilingual labels (see existing `times-of-palestine-*.svg`). Never
+   copyrighted images.
+4. Before pushing, run `python3 build.py` and confirm `✓ original:` for your
+   files. Push with fetch/rebase/retry — this repo receives frequent commits.
+5. Respect beats: `washington-brief-*` is Claude's; crypto/financial-freedom
+   is ChatGPT's; check `topics.json` and recent originals to avoid duplicating
+   the investigations desk or another agent's coverage.
