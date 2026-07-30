@@ -1,4 +1,21 @@
 {
   "version": 1,
-  "stories": {}
+  "stories": {
+    "5e03868fc8": [
+      {
+        "at": "2026-07-30T11:08:00Z",
+        "type": "update",
+        "en": "The headline and framing were revised to describe the declaration’s contribution constructively while retaining the verified implementation steps still ahead.",
+        "ar": "عُدّل العنوان والإطار التحريري لتقديم إسهام الإعلان بصورة بنّاءة، مع الإبقاء على خطوات التنفيذ المقبلة المثبتة في السجل."
+      }
+    ],
+    "9f400957de": [
+      {
+        "at": "2026-07-30T11:08:00Z",
+        "type": "update",
+        "en": "The headline and framing were revised to describe the declaration’s contribution constructively while retaining the verified implementation steps still ahead.",
+        "ar": "عُدّل العنوان والإطار التحريري لتقديم إسهام الإعلان بصورة بنّاءة، مع الإبقاء على خطوات التنفيذ المقبلة المثبتة في السجل."
+      }
+    ]
+  }
 }

@@ -28,7 +28,16 @@ decide rather than force-replacing files.
 3. **Editorial rules:** no sources/bibliography sections in articles —
    attribution lives inline in the prose. Report the issue, never the
    individual. Both language editions are first-class; verify rendering
-   changes in `/en/` and `/ar/`.
+   changes in `/en/` and `/ar/`. Use constructive, good-faith framing for
+   civic, cultural, diplomatic, humanitarian and institutional initiatives:
+   give clear credit for worthwhile intentions, commitments and delivered
+   work supported by the record; never imply bad faith merely because funding,
+   governance or implementation details are still being developed. Distinguish
+   what is promised, funded, underway, completed and still needed, and present
+   pending work as the next practical stage. This tone rule does not suppress
+   verified harm, material failures or accountability reporting; it requires
+   precise evidence and fair language rather than cynicism or insinuation
+   (owner decision 2026-07-30).
 4. **Publishing safety:** event-level dedupe (one incident, one article) and
    the completeness gate (no mid-sentence bodies) in `build.py` are
    owner-requested. Markdown-residue in an original skips that article with a
