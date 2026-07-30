@@ -39,6 +39,14 @@ decide rather than force-replacing files.
    precise evidence and fair language rather than cynicism or insinuation
    (owner decision 2026-07-30, given via ChatGPT and confirmed directly to
    Claude the same day).
+   **Arabic quality (owner decision 2026-07-30):** the Arabic edition is
+   written fresh as native Arabic journalism — the register of الجزيرة نت /
+   عرب 48 — never translationese; a reader must not sense English syntax
+   underneath. Headlines especially: composed fresh using Arabic front-page
+   patterns (verbal sentences, the two-dot pivot «بعد كذا.. حدث كذا», colon
+   attribution, direct questions), never a translated English headline.
+   Before writing Arabic, study native headlines from the site's Arabic wire
+   feeds as register models. Applies to every agent.
    **Wire attribution protocol (owner decision 2026-07-30):** a rewritten
    story is OUR copy. The source outlet is named exactly once, inline, in
    the prose ("…, the Ma'an news agency reported"). No byline credit-links,
