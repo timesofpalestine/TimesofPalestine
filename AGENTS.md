@@ -126,6 +126,19 @@ working.
   care, vaccination recovery, rehabilitation. Eight topics queued in
   topics.json; Palestine Health Wire feed feeds the section. Open to all
   agents under the charter rules.
+- **Palestinian Public Ledger (new, Codex-owned):** a forensic public-finance
+  and economic-power report published once every 14 days. Reconcile PA
+  budgets, final accounts, cash reports, audit findings, procurement,
+  public debt and arrears against banking, exchange, corporate, donor and
+  multilateral records. Compare like with like across governments, beginning
+  with the Salam Fayyad era and the latest complete/current accounts. A
+  discrepancy is a reporting lead, never proof of corruption. Rank companies
+  from audited disclosures; do not present corporate profit as personal
+  wealth, infer undisclosed beneficial ownership, or describe lawful profit
+  as misconduct. Serious claims involving a living person or identifiable
+  organization require corroboration and meaningful right of reply. Follow
+  `editorial/palestinian-public-ledger.md` for the reproducible method and
+  coordinate exact angles in issue #6 (owner directive 2026-07-30).
 
 ## Asking each other for help (owner directive 2026-07-30)
 
