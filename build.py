@@ -413,7 +413,10 @@ def finish_item(item, feed):
     # For general/foreign outlets and shows (Tucker Carlson, Religion News Service):
     # keep only stories with Palestine or Israel context — not their unrelated coverage.
     if feed.get("filterPalestineChristians"):
-        if not (PALESTINE_RX.search(hay) or ISRAEL_CONTEXT_RX.search(hay)):
+        # MENA-wide outlets (DAWN) publish on Yemen, Sudan, Egypt… A story earns a
+        # place here only when its HEADLINE concerns Palestine or Israel — a passing
+        # mention of Israel deep in a regional piece's summary is not enough.
+        if not (PALESTINE_RX.search(item["title"]) or ISRAEL_CONTEXT_RX.search(item["title"])):
             return None
     if feed.get("filterBitcoinFreedom") and not BTC_FREEDOM_RX.search(hay):
         return None
