@@ -1,5 +1,6 @@
 __pycache__/
 *.py[cod]
+.DS_Store
 dist/
 briefs-cache.json
 telegram-delivery.json

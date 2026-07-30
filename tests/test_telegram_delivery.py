@@ -151,6 +151,52 @@ class PublisherTests(unittest.TestCase):
             ):
                 self.assertEqual(telegram_publish.main(), 1)
 
+    def test_correction_is_not_suppressed_as_duplicate_of_same_story(self):
+        now = datetime.now(timezone.utc)
+        deliveries = {
+            "story:en:abc": {
+                "sent_at": (now - timedelta(hours=1)).isoformat(),
+                "title": "Three Palestinians killed during Jenin raid",
+                "lang": "en",
+            },
+        }
+        correction = {
+            "delivery_key": f"story:en:abc:{now.isoformat()}",
+            "title": "Three Palestinians killed during Jenin raid",
+            "lang": "en",
+        }
+
+        fresh, suppressed = telegram_publish.suppress_duplicate_events(
+            [correction], deliveries, now=now)
+
+        self.assertEqual(fresh, [correction])
+        self.assertEqual(suppressed, 0)
+
+    def test_same_event_under_new_story_id_is_suppressed(self):
+        now = datetime.now(timezone.utc)
+        deliveries = {
+            "story:en:old": {
+                "sent_at": (now - timedelta(hours=1)).isoformat(),
+                "title": "Israeli forces kill three Palestinians in Jenin raid",
+                "lang": "en",
+            },
+        }
+        duplicate = {
+            "delivery_key": "story:en:new",
+            "title": "Three Palestinians killed by army during Jenin attack",
+            "lang": "en",
+        }
+
+        fresh, suppressed = telegram_publish.suppress_duplicate_events(
+            [duplicate], deliveries, now=now)
+
+        self.assertEqual(fresh, [])
+        self.assertEqual(suppressed, 1)
+        self.assertEqual(
+            deliveries["story:en:new"]["suppressed_duplicate_of"],
+            "story:en:old",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
