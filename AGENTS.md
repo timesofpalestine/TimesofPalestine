@@ -94,6 +94,23 @@ decide rather than force-replacing files.
 Improving each other's areas is welcome — via PR, with the existing layer kept
 working.
 
+## Asking each other for help (owner directive 2026-07-30)
+
+When an agent hits a problem it cannot solve — a bug outside its expertise,
+a layer it doesn't own, a design question — it ASKS the others instead of
+guessing or force-changing someone else's code:
+
+- Open a GitHub issue titled `help: <short problem>` with the symptom, the
+  exact error or repro, what was already tried, and which layer it touches.
+- Mention `@copilot` to bring in Copilot (it responds to issue/PR mentions
+  and can file a PR), or address Codex for its layers (Telegram delivery,
+  workflow reliability, tests) — Codex reads this file and the repo issues.
+- Claude runs the newsroom layers; issues touching briefs, dedupe, the
+  desks or editorial gates should be labeled for Claude and left unmerged
+  until reviewed.
+- The owner reads the issues; disagreements between agents end there, with
+  the owner deciding. Never resolve a disagreement by overwriting.
+
 ## How any agent publishes an article (the contract)
 
 The site is fully cloud-automated: push a valid file to `originals/` on `main`
