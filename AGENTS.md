@@ -33,8 +33,11 @@ decide rather than force-replacing files.
    the completeness gate (no mid-sentence bodies) in `build.py` are
    owner-requested. Markdown-residue in an original skips that article with a
    loud warning; schema and missing-media errors fail the build. Editorial
-   gating must default to publish (with a label if needed) — never to holding
-   coverage behind per-story manual approval.
+   gating must default to publish — never to holding coverage behind
+   per-story manual approval, and NEVER with reader-facing labels
+   ("developing report", "awaiting review" etc.) on any story (owner
+   decision 2026-07-30). Review tracking is internal-only
+   (review-queue.json).
 5. **Story imagery: keep photos (owner decision 2026-07-30).** Aggregated
    stories fetch and display upstream social-preview images (og:image); story
    cards must not go photoless. Any rights-strict mode (self-owned assets

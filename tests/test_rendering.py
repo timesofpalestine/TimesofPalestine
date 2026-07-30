@@ -293,7 +293,8 @@ class RenderingTests(unittest.TestCase):
             self.assertEqual(status, "ok")
             self.assertEqual(record["brief"], brief)
 
-    def test_pending_review_label_is_visible_without_related_reporting_list(self):
+    def test_review_status_is_never_reader_facing(self):
+        # Owner decision 2026-07-30: no review labels or chips on any story.
         record = item()
         record["review_status"] = "pending"
         record["corroborating_sources"].append({
@@ -305,7 +306,9 @@ class RenderingTests(unittest.TestCase):
         html = build.render_story(
             record, "en", [], [record],
             datetime(2026, 7, 29, 15, tzinfo=timezone.utc))
-        self.assertIn("Developing report", html)
+        self.assertNotIn("Developing report", html)
+        self.assertNotIn("review-chip", html)
+        self.assertNotIn("Developing<", html)
         self.assertNotIn("Related reporting", html)
         self.assertIn("https://second.example/report", html)
 

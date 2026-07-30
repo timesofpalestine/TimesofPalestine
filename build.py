@@ -1520,18 +1520,13 @@ def href(it, pfx):
     return f"{pfx}{it['pid']}.html"
 
 
-def review_chip(it, lang):
-    if it.get("review_status") != "pending":
-        return ""
-    label = "قيد التدقيق" if lang == "ar" else "Developing"
-    return f'<span class="review-chip">{label}</span>'
-
-
 def meta_line(it, lang):
+    # Owner decision 2026-07-30: review status never appears on reader-facing
+    # pages (no chips, no labels). It stays internal in review-queue.json.
     source = (f'<span class="src">{esc(it["source"])}</span>' if it.get("original")
               else f'<a class="src" href="{esc(it["source_url"])}" target="_blank" '
                    f'rel="noopener">{esc(it["source"])}</a>')
-    return (f'<p class="meta">{source}{review_chip(it, lang)}'
+    return (f'<p class="meta">{source}'
             f'<span class="t">{time_ago(it["date"], lang)}</span></p>')
 
 
@@ -1837,14 +1832,9 @@ def render_story(it, lang, related, rail, built_at):
         source for source in it.get("corroborating_sources", [])
         if source.get("article") and source.get("article") != it.get("link")
     ]
+    # Owner decision 2026-07-30: no reader-facing review labels on any story.
+    # review_status stays internal (review-queue.json) for editors only.
     review_note = ""
-    if it.get("review_status") == "pending":
-        label = (
-            "تقرير متطور — بانتظار تدقيق إضافي وتأكيد مستقل."
-            if lang == "ar"
-            else "Developing report — awaiting additional review and independent corroboration."
-        )
-        review_note = f'<p class="review-note">{label}</p>'
     corrections = ""
     if it.get("corrections"):
         heading = "سجل التحديثات والتصويبات" if lang == "ar" else "Updates & corrections"
