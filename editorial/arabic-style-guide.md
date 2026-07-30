@@ -1,0 +1,74 @@
+# Times of Palestine Arabic edition standard
+
+The Arabic edition is a first-class newsroom edition. It must preserve the
+same verified facts, evidence, caveats and corrections as the English edition,
+but it must not preserve English syntax, paragraph order or idiom when those
+choices make the Arabic sound translated.
+
+## Editorial workflow
+
+1. Lock the reporting record: names, titles, dates, figures, attribution,
+   uncertainty, hyperlinks and right-of-reply language.
+2. Build a clean Arabic outline from that record. Choose the lead, section
+   order and transitions for an Arabic reader.
+3. Draft directly in Modern Standard Arabic. Prefer concrete verbs and clear
+   subjects over chains of abstract nouns.
+4. Compare the completed editions for factual parity, not sentence parity.
+   Subheads, graphics, tables and material disclosures must still correspond.
+5. Perform a separate Arabic-only line edit without looking at the English
+   sentence order.
+6. Read the full edition aloud. Rewrite any sentence that is difficult to say
+   naturally or that requires rereading.
+7. Check RTL rendering, mixed Arabic and Latin text, numerals, links, names,
+   dates, captions and alt text before publication.
+
+## House style
+
+- Lead with the event, finding or person and its significance. Avoid
+  throat-clearing such as «في خطوة من شأنها أن» when a direct verb will do.
+- Keep paragraphs purposeful and sentences of moderate length. Split a
+  sentence when several subordinate clauses obscure the main point.
+- Use active verbs where the record identifies the actor: «أقرّت الحكومات»،
+  «قالت المنظمة»، «قدّر التقرير».
+- Use natural Arabic transitions that describe the relationship between ideas:
+  «في المقابل»، «وبحسب التقرير»، «أما المرحلة التالية»، «ولهذا».
+- Prefer precise newsroom vocabulary to unnecessary foreign terms. For
+  example, use «على جدول الأعمال» or «في صدارة الاهتمام» rather than
+  «على الأجندة» when the meaning permits.
+- Use Arabic punctuation: the comma «،»، semicolon «؛» and question mark «؟».
+  Do not copy English comma placement.
+- Keep names and institutional titles consistent across the article. Introduce
+  an acronym only when it will be used again.
+- Use month pairs such as «يوليو/تموز» where the established site style calls
+  for them. Keep numerals and units legible in mixed-direction text.
+- Attribute evidence in the prose. Do not add a sources or bibliography
+  section to published articles.
+- Preserve constructive, good-faith framing while stating clearly what is
+  promised, funded, underway, completed or still to be decided.
+
+## Translation-artifact watchlist
+
+These are warnings, not automatic replacements; context decides the wording.
+
+- «المرحلة التشغيلية التالية» often reads more naturally as «مرحلة التنفيذ».
+- «خريطة للتمويل» may be «خطة تمويل واضحة» or «سجل للمساهمات».
+- «مقر إداري خاضع للمساءلة» may be «جهة إدارية تخضع للمساءلة».
+- «جعل الغاية ملموسة» may be «ترجمة الالتزام إلى برنامج» or «إظهار أثره».
+- «أمثلة أولية مفيدة» may be «مبادرات قائمة يمكن البناء عليها».
+- Repeated «وفقاً لـ» can often become a reporting verb: «أفاد»، «قدّر»،
+  «أظهر»، «ذكر».
+- Do not reproduce English headline punctuation, parallelism or explanatory
+  labels when a shorter Arabic headline is clearer.
+
+## Final Arabic-only pass
+
+Confirm that:
+
+- the opening sounds written in Arabic rather than translated into it;
+- each pronoun has an unmistakable antecedent;
+- gender, number and agreement are correct;
+- dual and plural forms are natural rather than mechanically literal;
+- quotations, allegations and uncertainty retain their exact evidentiary
+  weight;
+- no sentence follows English word order merely to mirror the paired edition;
+- the article remains smooth when the English edition is closed.
