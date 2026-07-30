@@ -22,6 +22,21 @@ choices make the Arabic sound translated.
 7. Check RTL rendering, mixed Arabic and Latin text, numerals, links, names,
    dates, captions and alt text before publication.
 
+## Headlines
+
+- Write the headline fresh in Arabic after the reporting record is locked.
+- Aim for 6–10 words and never exceed 12 unless an essential proper name
+  makes that impossible.
+- Use an active construction and name the responsible person, institution,
+  authority or other actor whenever the evidence identifies one.
+- Do not hide a known actor behind an agentless construction such as
+  «تتغيّر الأراضي» or «تم اتخاذ القرار». Write who changed the land record or
+  who made the decision.
+- State one clear news fact. Remove throat-clearing, vague abstractions,
+  duplicated context and explanatory clauses that belong in the dek or lead.
+- Read the headline by itself. It must make complete sense on the first
+  reading, without relying on the English edition or the article body.
+
 ## House style
 
 - Lead with the event, finding or person and its significance. Avoid

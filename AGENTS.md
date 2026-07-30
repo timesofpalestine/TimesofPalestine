@@ -49,7 +49,10 @@ decide rather than force-replacing files.
    feeds as register models. Lock facts and evidence first, then structure the
    Arabic for an Arabic reader rather than preserving English word order.
    Every edition gets a separate Arabic-only line edit and read-aloud pass;
-   follow `editorial/arabic-style-guide.md`. Applies to every agent.
+   follow `editorial/arabic-style-guide.md`. Arabic headlines should normally
+   be 6–10 words, use an active construction and name the responsible actor
+   or institution whenever the reporting identifies one; never hide a known
+   actor behind passive or agentless wording. Applies to every agent.
    **Wire attribution protocol (owner decision 2026-07-30):** a rewritten
    story is OUR copy. The source outlet is named exactly once, inline, in
    the prose ("…, the Ma'an news agency reported"). No byline credit-links,
