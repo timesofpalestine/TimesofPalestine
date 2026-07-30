@@ -1,6 +1,66 @@
 name: Build & publish Times of Palestine
 on:
   schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Restore delivery cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            briefs-cache.json
+            telegram-delivery.json
+          key: newsroom-state-${{ github.run_id }}
+          restore-keys: |
+            newsroom-state-
+            briefs-
+      - name: Test publishing pipeline
+        run: python -m unittest discover -s tests
+      - name: Build site from live feeds
+        env:
+          INVESTIGATIONS: "off"
+        run: python build.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Publish deployed stories to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: python telegram_publish.py
+      - name: Save delivery cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            briefs-cache.json
+            telegram-delivery.json
+          key: newsroom-state-${{ github.run_id }}
+name: Build & publish Times of Palestine
+on:
+  schedule:
     - cron: "9,39 * * * *"   # kept for the record; GitHub's scheduler has never fired for this repo
   workflow_dispatch: {}      # manual "run now" button + the self-scheduling chain below
   push:
