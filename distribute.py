@@ -9,7 +9,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import seo_extras
-from publishing import BuildHealth, PublishingError, parse_timestamp, utc_iso
+from publishing import (
+    BuildHealth, PublishingError, is_public_http_url, parse_timestamp, utc_iso,
+)
 
 
 def load_outbox(dist):
@@ -17,6 +19,9 @@ def load_outbox(dist):
     raw = json.loads(path.read_text(encoding="utf-8"))
     if raw.get("schemaVersion") != 1 or not isinstance(raw.get("items"), list):
         raise PublishingError("invalid distribution outbox")
+    base_url = raw.get("baseUrl")
+    if not isinstance(base_url, str) or not is_public_http_url(base_url):
+        raise PublishingError("distribution outbox contains invalid baseUrl")
     rows = {"en": [], "ar": []}
     for item in raw["items"]:
         if item.get("lang") not in rows:
@@ -29,7 +34,7 @@ def load_outbox(dist):
         record["modified"] = (
             parse_timestamp(item["modified"]) if item.get("modified") else None)
         rows[item["lang"]].append(record)
-    return raw["baseUrl"], (("en", rows["en"]), ("ar", rows["ar"]))
+    return base_url.rstrip("/"), (("en", rows["en"]), ("ar", rows["ar"]))
 
 
 def main():
@@ -46,8 +51,6 @@ def main():
             "completedAt": utc_iso(datetime.now(timezone.utc)),
             "connectors": health.connectors,
         }
-        (args.dist / "distribution-health.json").write_text(
-            json.dumps(report, indent=2), encoding="utf-8")
         if args.summary:
             print("## Post-deployment distribution")
             print()

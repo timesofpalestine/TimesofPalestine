@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
@@ -35,7 +36,8 @@ BREAKING_RX = re.compile(
 NAMED_SUBJECT_RX = re.compile(
     r"(?:\b[A-Z][a-z]{2,}(?:\s+[A-Z][a-z]{2,}){1,3}\b|"
     r"(?:اللواء|العقيد|العميد|الرئيس|الوزير|القائد)\s+[\u0600-\u06ff]{3,}"
-    r"(?:\s+[\u0600-\u06ff]{3,}){0,2})")
+    r"(?:\s+[\u0600-\u06ff]{3,}){0,2}|"
+    r"(?:تعيين|عيّن)\s+[\u0600-\u06ff]{3,}\s+[\u0600-\u06ff]{3,})")
 NEGATION_TOKENS = {
     "not", "no", "never", "denied", "denies", "deny", "false", "without",
     "لا", "لم", "لن", "ليس", "ليست", "ينفي", "نفت", "نفى", "دون", "غير",
@@ -107,7 +109,7 @@ def cluster_duplicates(items: Sequence[Story], threshold: float = 0.84
         )
         representative = cluster[0]
         seen: Set[Tuple[str, str]] = set()
-        sources: List[Dict[str, str]] = []
+        sources: List[Dict[str, Any]] = []
         for item in cluster:
             key = (item.get("source", ""), item.get("source_url", ""))
             if key in seen:
@@ -117,9 +119,10 @@ def cluster_duplicates(items: Sequence[Story], threshold: float = 0.84
                 "name": key[0],
                 "url": key[1],
                 "article": item.get("link", ""),
-                # Similar headlines are related reporting, not proof of corroboration.
-                "verified": False,
             })
+        independently_reported = len(sources) >= 2
+        for source in sources:
+            source["verified"] = independently_reported
         representative["corroborating_sources"] = sources
         output.append(representative)
         removed += len(cluster) - 1
@@ -132,15 +135,11 @@ def classify_risk(story: Story) -> List[str]:
     reasons: List[str] = []
     if story.get("source_type") == "telegram":
         reasons.append("citizen_or_social_source")
-    if story.get("original"):
-        reasons.append("repository_original")
     if CASUALTY_RX.search(hay):
         reasons.append("casualty_claim")
     if ACCUSATION_RX.search(hay):
         reasons.append("accusation_or_serious_allegation")
-    if SECURITY_RX.search(hay) and (
-        NAMED_SUBJECT_RX.search(hay) or story.get("lang") == "ar"
-    ):
+    if SECURITY_RX.search(hay) and NAMED_SUBJECT_RX.search(hay):
         reasons.append("named_security_or_military_subject")
     independent = len({
         (source.get("name"), source.get("url"))
@@ -187,9 +186,18 @@ def load_reviews(path: Path) -> Dict[str, Dict[str, Any]]:
     return approvals
 
 
-def apply_review_gate(stories: Sequence[Story], approvals: Dict[str, Dict[str, Any]]
-                      ) -> Tuple[List[Story], List[Story]]:
-    publishable, held = [], []
+def review_gate_mode(value: str | None = None) -> str:
+    mode = (value or os.environ.get("TOP_REVIEW_GATE", "label")).strip().lower()
+    if mode not in {"label", "hold"}:
+        raise PublishingError("TOP_REVIEW_GATE must be 'label' or 'hold'")
+    return mode
+
+
+def apply_review_gate(stories: Sequence[Story], approvals: Dict[str, Dict[str, Any]],
+                      mode: str | None = None) -> Tuple[List[Story], List[Story]]:
+    """Return publishable stories and unapproved stories awaiting review."""
+    mode = review_gate_mode(mode)
+    publishable, pending = [], []
     now = datetime.now(timezone.utc)
     for story in stories:
         reasons = classify_risk(story)
@@ -210,11 +218,15 @@ def apply_review_gate(stories: Sequence[Story], approvals: Dict[str, Dict[str, A
                     raise PublishingError(
                         f"review {fingerprint[:12]} has invalid expiry")
         story["review_approved"] = approved
+        story["review_status"] = (
+            "not_required" if not reasons else "approved" if approved else "pending")
         if reasons and not approved:
-            held.append(story)
+            pending.append(story)
+            if mode == "label":
+                publishable.append(story)
         else:
             publishable.append(story)
-    return publishable, held
+    return publishable, pending
 
 
 def sanitized_review_queue(held: Iterable[Story]) -> Dict[str, Any]:

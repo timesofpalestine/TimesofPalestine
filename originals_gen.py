@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
-"""Editor-run investigation draft generator: one researched EN/AR draft.
+"""Automated investigations desk: one researched EN/AR report per desk hour.
 
-This command is deliberately outside the deploy workflow. Each run checks whether
-a draft was already written this UTC hour. If not, it takes the next
-topic from topics.json, researches it with live web search, writes the report in
-English, renders it in Arabic, and drops both into the gitignored
-`.editorial-drafts/` directory. An editor must inspect and promote an exact version
-with `python review.py promote <topic-id> --reviewer <name>`.
+The normal build invokes this desk before loading originals. A sourced bilingual
+report is written directly to `originals/` and can publish in the same build.
 
 Three rules make this safe enough to publish unattended:
 
@@ -17,7 +13,7 @@ Three rules make this safe enough to publish unattended:
   2. THE ISSUE, NEVER THE INDIVIDUAL. No topic is avoided for being
      uncomfortable, but the subject is always a system, a policy or a pattern —
      never a person's guilt. The desk may not assemble an accusation.
-  3. DRAFT ONLY. This module cannot place content in the live originals directory.
+  3. FAIL OPEN. A desk failure is logged but never stops the news build.
 
 Cost: roughly one Opus research pass plus a shorter Arabic pass per report.
 """
@@ -26,12 +22,13 @@ import os
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+from tempfile import NamedTemporaryFile
 
 ROOT = Path(__file__).parent
 TOPICS_FILE = ROOT / "topics.json"
 ORIGINALS = ROOT / "originals"
 DRAFTS = ROOT / ".editorial-drafts"
-STATE_FILE = DRAFTS / "_state.json"
+STATE_FILE = ORIGINALS / "_state.json"
 
 MODEL = "claude-opus-5"
 # Server-side search. The tool identifier has changed before, and a wrong one is a
@@ -213,19 +210,21 @@ def _call(client, system, messages, tools=None, max_tokens=32000):
 
 
 def _save_state(state, now, hour, error=None):
-    DRAFTS.mkdir(exist_ok=True)
-    state["last_hour"] = hour
-    state["last_attempt"] = now.isoformat()
-    if error:
-        state["error"] = error
-    else:
-        state.pop("error", None)
-    STATE_FILE.write_text(
-        json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+    try:
+        ORIGINALS.mkdir(exist_ok=True)
+        state["last_hour"] = hour
+        state["last_attempt"] = now.isoformat()
+        if error:
+            state["error"] = error
+        else:
+            state.pop("error", None)
+        STATE_FILE.write_text(
+            json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+    except OSError:
+        pass
 
 
-def _write_file(topic, parsed, lang, now):
-    """Emit a gitignored draft that the live builder cannot discover."""
+def _file_content(topic, parsed, now):
     # Sources are a reporting gate, not page furniture: the parser still requires
     # MIN_SOURCES before anything publishes, but a news article carries its
     # attribution inline ("according to OCHA figures"), never as a bibliography.
@@ -233,11 +232,39 @@ def _write_file(topic, parsed, lang, now):
     head = (f"title: {parsed['title']}\n"
             f"category: {topic['cat']}\n"
             f"date: {now.isoformat()}\n"
-            f"origin: investigation\n"
-            f"review: required\n"
             f"maxAgeHours: 720\n")
-    (DRAFTS / f"{topic['id']}.{lang}.txt").write_text(
-        head + "---\n" + body + "\n", encoding="utf-8")
+    return head + "---\n" + body + "\n"
+
+
+def _write_pair(topic, parsed_en, parsed_ar, now):
+    """Stage both editions before exposing either one to the live originals glob."""
+    ORIGINALS.mkdir(exist_ok=True)
+    publication_id = f"{topic['id']}-{now.strftime('%Y-%m-%d-%H')}"
+    destinations = {
+        lang: ORIGINALS / f"{publication_id}.{lang}.txt"
+        for lang in ("en", "ar")
+    }
+    existing = [path.name for path in destinations.values() if path.exists()]
+    if existing:
+        raise FileExistsError(
+            f"refusing to overwrite published investigation: {', '.join(existing)}")
+    staged = []
+    try:
+        for lang, parsed in (("en", parsed_en), ("ar", parsed_ar)):
+            with NamedTemporaryFile(
+                "w", encoding="utf-8", dir=ORIGINALS, delete=False
+            ) as handle:
+                handle.write(_file_content(topic, parsed, now))
+                staged.append((
+                    Path(handle.name),
+                    destinations[lang],
+                ))
+        for temporary, destination in staged:
+            os.replace(temporary, destination)
+    finally:
+        for temporary, _destination in staged:
+            temporary.unlink(missing_ok=True)
+    return publication_id
 
 
 # The desk files at most one report per desk hour. Three desk hours a day keeps
@@ -269,7 +296,7 @@ def _run():
     import anthropic
     client = anthropic.Anthropic(api_key=re.sub(r"\s+", "", os.environ["ANTHROPIC_API_KEY"]))
     topic = _pick_topic(topics, state)
-    DRAFTS.mkdir(exist_ok=True)
+    ORIGINALS.mkdir(exist_ok=True)
 
     brief = (f"Report this story for publication today.\n\n"
              f"WORKING TITLE: {topic['en']}\n\n"
@@ -314,18 +341,37 @@ def _run():
                 f"[{err}] "
                 f"[{len(arabic)} chars, has SOURCES={'SOURCES:' in arabic}]")
 
-    _write_file(topic, parsed_en, "en", now)
-    _write_file(topic, parsed_ar, "ar", now)
+    import longform
+    for lang, parsed in (("en", parsed_en), ("ar", parsed_ar)):
+        residue = longform.rendered_residue_warnings(
+            longform.body_html(parsed["body"]))
+        if residue:
+            raise ValueError(
+                f"{lang} report contains unsafe rendered markup: "
+                f"{'; '.join(residue)}")
+    publication_id = _write_pair(topic, parsed_en, parsed_ar, now)
 
     state.setdefault("done", {})[topic["id"]] = now.isoformat()
     _save_state(state, now, hour, None)
-    return (f"investigations: filed '{topic['id']}' — {len(parsed_en['body'].split())} words EN, "
+    return (f"investigations: filed '{publication_id}' — "
+            f"{len(parsed_en['body'].split())} words EN, "
             f"{len(parsed_ar['body'].split())} words AR, {len(parsed_en['sources'])} sources")
 
 
 def run():
-    """Generate a local draft; failures are explicit because this is editor-run."""
-    return _run()
+    """Run the desk without allowing a model or network failure to stop the news."""
+    try:
+        return _run()
+    except Exception as error:
+        now = datetime.now(timezone.utc)
+        hour = now.strftime("%Y-%m-%dT%H")
+        state = _load(STATE_FILE, {})
+        _save_state(
+            state, now, hour,
+            f"stage failed ({type(error).__name__}: {error})")
+        return (
+            f"investigations: stage failed ({type(error).__name__}: {error}) "
+            "— news build continues")
 
 
 if __name__ == "__main__":

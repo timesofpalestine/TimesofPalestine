@@ -2,8 +2,9 @@
 
 An independent, bilingual (English/Arabic) static digital news front page for Palestine.
 It aggregates live reporting from outlets across Palestine and the region, links every story back
-to its original publisher, and rebuilds itself every hour. Sensitive claims are deliberately
-**not** fully automated: an editor must approve the exact version before it can publish.
+to its original publisher, and rebuilds itself every hour. Sensitive claims publish with a visible
+developing-report label and an opaque exact-version review queue; deployments can opt into a strict
+human-approval hold when editorial staffing is available.
 
 - **English edition:** `/en/` (LTR) · **Arabic edition:** `/ar/` (RTL, natively mirrored)
 - The root `/` auto-redirects visitors based on their browser language.
@@ -29,7 +30,7 @@ to its original publisher, and rebuilds itself every hour. Sensitive claims are 
 
 A feed that is down, blocked, rate-limited or emits an incomplete record is isolated and reported;
 that record never publishes. Invalid repository configuration, invalid originals, unsafe local
-media, leaked unapproved content, malformed feeds/sitemaps or broken generated links fail the
+media, malformed feeds/sitemaps or broken generated links fail the
 build so the last good deploy stays live.
 
 ## Run locally
@@ -46,8 +47,9 @@ Then open <http://localhost:8000>.
 
 The included GitHub Actions workflow ([.github/workflows/build.yml](.github/workflows/build.yml))
 rebuilds the site from live feeds **at the top of every hour** and publishes it to GitHub Pages.
-It runs the offline tests and generated-site validator before deployment. The old self-chaining
-25-minute sleeping runner and unattended investigation commit path were removed.
+It runs the offline tests and generated-site validator before deployment. At the three UTC desk
+hours, it may generate a sourced bilingual investigation, publish it in the same build, and commit
+the validated report back to `originals/`.
 Telegram delivery runs only after a successful deploy and keeps a durable, retryable delivery
 ledger in the GitHub Actions cache so already-posted stories are not sent twice.
 
@@ -59,8 +61,8 @@ gh repo create times-of-palestine --public --source . --push
 ```
 
 Then in the GitHub repo: **Settings → Pages → Source: "GitHub Actions"**. Done.
-The first run starts immediately (or trigger it from the Actions tab); after that low-risk,
-fully-attributed aggregation refreshes hourly. Flagged content waits for review.
+The first run starts immediately (or trigger it from the Actions tab); after that fully-attributed
+aggregation refreshes hourly. Flagged content is visibly labeled while awaiting review.
 
 ## Publishing safety contract
 
@@ -75,9 +77,10 @@ structured data emit UTC ISO-8601. Reader-facing dates remain localized to `Asia
 
 ### Human review
 
-The deterministic EN/AR gate holds casualty claims, serious accusations, named security or
-military subjects, public Telegram/citizen reports, repository originals, and breaking claims
-without at least two independent publishers. AI triage cannot approve or bypass a hold.
+The deterministic EN/AR gate flags casualty claims, serious accusations, named security or
+military subjects, public Telegram/citizen reports, and breaking claims without at least two
+independent publishers. Flagged stories publish with a developing-report label by default.
+Set `TOP_REVIEW_GATE=hold` to require exact-version human approval before they publish.
 
 ```bash
 # Fetch and display full pending stories only in this terminal:
@@ -93,30 +96,34 @@ python3 review.py revoke <64-character-fingerprint>
 
 The public ledger stores only an opaque fingerprint, reviewer label and UTC approval time. CI,
 `health.json` and `review-queue.json` never persist pending headlines, bodies, URLs or private-tip
-data. Any change to publishable text, attribution, dates or corrections changes the fingerprint
-and requires a new approval. Sensitive external stories do not receive an AI-authored brief, so
-the approved text is the text that publishes.
+data. Any change to publishable text, attribution, dates or corrections changes the fingerprint.
+All wire stories, flagged or not, publish only as complete TOP Newsdesk briefs; incomplete,
+refused, or unavailable rewrites are withheld rather than replaced with raw feed text.
 
 ### Original investigations
 
-`originals_gen.py` is now an explicit editor-run draft tool. It writes only to the gitignored
-`.editorial-drafts/` directory and is not called by the build or CI:
+`build.py` invokes `originals_gen.py` before loading repository originals. The desk runs at
+05:00, 12:00 and 19:00 UTC, writes validated bilingual reports to `originals/`, and never blocks
+the wire build if research or model access fails. Set the repository variable `INVESTIGATIONS=off`
+to pause it. CI installs Anthropic and uses the external `ANTHROPIC_API_KEY` secret.
 
 ```bash
 ANTHROPIC_API_KEY=... python3 originals_gen.py
-python3 review.py promote <topic-id> --reviewer "Editor name"
 ```
 
-Promotion requires a validated English/Arabic pair and records approval for both exact versions.
-Pending drafts are never included in Pages, distribution, commits or public CI output.
+The legacy `.editorial-drafts/` promotion command remains available for manual drafts:
+`python3 review.py promote <topic-id> --reviewer "Editor name"`. It validates both editions,
+moves them live, and records exact-version approvals so flagged drafts remain eligible in strict
+hold mode. An original with unsafe Markdown residue is skipped with a loud warning; invalid
+metadata or unsafe local media remains a fatal build error.
 
 ### Image rights
 
-Remote feed, Telegram and OG images are not rendered or hotlinked by default. The branded flag
-fallback is used instead. A story image or long-form figure may render only when its exact local
-path or URL has an entry in `media-rights.json` with a rights basis, visible credit, source and
-optional license URL. Local media without that record fails the build. The repository does not
-download or rehost third-party media and has no general owned-media storage pipeline.
+Remote feed and OG images remain source-hosted by default and render with the originating
+publisher's visible credit; the repository never downloads or rehosts them. Set
+`TOP_REMOTE_MEDIA=rights-only` to block unlisted remote images and use the existing fallback.
+Local story images and long-form figures require an exact `media-rights.json` entry with a rights
+basis, visible credit, source and optional license URL. Unsafe local media fails the build.
 
 ### Updates and corrections
 
@@ -154,7 +161,8 @@ The history is visible on the story page. Its latest timestamp controls `dateMod
 - Telegram keeps a separate durable delivery ledger and uses correction-aware revision keys, so a
   corrected story is delivered once without replaying its original revision.
 - `DISTRIBUTION_WEBHOOK_URL` optionally enables a generic JSON webhook with stable
-  `Idempotency-Key` headers. Missing credentials are reported as `disabled`, never as success.
+  `Idempotency-Key` headers and its own `webhook-delivery.json` cache ledger. Missing credentials
+  are reported as `disabled`, never as success.
 - `ANTHROPIC_API_KEY`, `TELEGRAM_BOT_TOKEN` and `DISTRIBUTION_WEBHOOK_URL` remain external GitHub
   secrets. Tests require none of them.
 

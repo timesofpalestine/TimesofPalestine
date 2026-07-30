@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from unittest import mock
 from publishing import (
-    PublishingError, canonicalize_url, is_http_url, is_public_http_url,
+    BuildHealth, PublishingError, canonicalize_url, is_http_url, is_public_http_url,
     load_media_manifest, media_rights_for,
     parse_timestamp, revision_fingerprint, safe_urlopen, validate_corrections,
     validate_feed_config,
@@ -30,6 +30,12 @@ class PublishingTests(unittest.TestCase):
         self.assertEqual(
             canonicalize_url("https://EXAMPLE.com/a/?utm_source=x&id=2#part"),
             "https://example.com/a?id=2",
+        )
+
+    def test_canonical_url_preserves_ref_identity_parameter(self):
+        self.assertEqual(
+            canonicalize_url("https://example.com/a?ref=edition&utm_source=x"),
+            "https://example.com/a?ref=edition",
         )
 
     def test_malformed_mixed_script_hostname_is_rejected(self):
@@ -96,6 +102,12 @@ class PublishingTests(unittest.TestCase):
                 [{"at": "2026-07-29T12:00:00Z", "type": "update", "ar": "تحديث"}],
                 "story", "en",
             )
+
+    def test_blocked_media_updates_health_atomically(self):
+        health = BuildHealth(datetime(2026, 7, 29, tzinfo=timezone.utc))
+        health.block_media("remote_media_disabled")
+        self.assertEqual(health.media_blocked, 1)
+        self.assertEqual(health.withheld["remote_media_disabled"], 1)
 
 
 if __name__ == "__main__":

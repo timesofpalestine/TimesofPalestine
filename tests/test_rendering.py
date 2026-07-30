@@ -8,7 +8,9 @@ from pathlib import Path
 from unittest import mock
 
 import build
+import distribute
 import longform
+import originals_gen
 import seo_extras
 import telegram_publish
 
@@ -86,9 +88,25 @@ class RenderingTests(unittest.TestCase):
         self.assertIn("GMT</pubDate>", xml)
         self.assertIn('<source url="https://example.com">Example News</source>', xml)
 
-    def test_missing_remote_image_rights_uses_fallback(self):
+    def test_source_hosted_remote_image_retains_source_credit_by_default(self):
         record = item()
-        build.attach_media(record, "https://images.example.com/photo.jpg")
+        with mock.patch("build.is_public_http_url", return_value=True):
+            build.attach_media(record, "https://images.example.com/photo.jpg")
+        self.assertEqual(record["image"], "https://images.example.com/photo.jpg")
+        self.assertEqual(record["media"]["credit"], "Example News")
+
+    def test_non_public_remote_image_is_blocked_in_source_mode(self):
+        record = item()
+        with mock.patch("build.is_public_http_url", return_value=False):
+            build.attach_media(record, "http://127.0.0.1/photo.jpg")
+        self.assertIsNone(record["image"])
+
+    def test_rights_only_mode_blocks_unlisted_remote_image(self):
+        record = item()
+        with mock.patch.dict(
+            os.environ, {"TOP_REMOTE_MEDIA": "rights-only"}, clear=True
+        ):
+            build.attach_media(record, "https://images.example.com/photo.jpg")
         self.assertIsNone(record["image"])
 
     def test_media_for_held_stories_is_not_copied(self):
@@ -136,6 +154,20 @@ class RenderingTests(unittest.TestCase):
                     Path(directory) / "dist", (("en", [record]), ("ar", [])),
                     "https://timesofpalestine.com")
                 self.assertFalse(opener.call_args.kwargs["allow_redirects"])
+                self.assertTrue(
+                    (Path(directory) / "webhook-delivery.json").is_file())
+                self.assertFalse((Path(directory) / "briefs-cache.json").exists())
+
+    def test_distribution_outbox_requires_public_base_url(self):
+        with tempfile.TemporaryDirectory() as directory:
+            dist = Path(directory)
+            (dist / "distribution-outbox.json").write_text(json.dumps({
+                "schemaVersion": 1,
+                "baseUrl": "http://127.0.0.1/private",
+                "items": [],
+            }), encoding="utf-8")
+            with self.assertRaises(build.PublishingError):
+                distribute.load_outbox(dist)
 
     def test_corrected_story_is_delivered_as_a_new_revision(self):
         record = item()
@@ -218,19 +250,97 @@ class RenderingTests(unittest.TestCase):
         self.assertEqual(len(deduplicated), 1)
         self.assertEqual(
             len(deduplicated[0]["corroborating_sources"]), 2)
+        self.assertTrue(all(
+            source["verified"]
+            for source in deduplicated[0]["corroborating_sources"]))
 
-    def test_sensitive_brief_is_purged_from_persistent_cache(self):
+    def test_sensitive_wire_story_keeps_complete_newsroom_brief(self):
         with tempfile.TemporaryDirectory() as directory:
             cache = Path(directory) / "briefs-cache.json"
+            brief = (
+                "The report describes the incident using attributed details from the "
+                "publisher and provides sufficient context for readers. It clearly "
+                "states what is known, avoids unsupported conclusions, and ends as a "
+                "complete newsroom brief."
+            )
             cache.write_text(json.dumps({
-                "en:1234567890": {"brief": "Sensitive generated prose", "ts": 1},
-                "other": {"brief": "Safe prose", "ts": 1},
+                "en:1234567890": {"brief": brief, "ts": 1},
             }), encoding="utf-8")
-            with mock.patch.object(build, "BRIEFS_CACHE", cache):
-                build.purge_held_briefs([item()])
-            remaining = json.loads(cache.read_text(encoding="utf-8"))
-            self.assertNotIn("en:1234567890", remaining)
-            self.assertIn("other", remaining)
+            record = item()
+            record["title"] = "Five people killed in Gaza strike"
+            with mock.patch.object(build, "BRIEFS_CACHE", cache), mock.patch.dict(
+                os.environ, {"ANTHROPIC_API_KEY": "sk-ant-test"}, clear=True
+            ), mock.patch.dict(sys.modules, {"anthropic": mock.MagicMock()}):
+                build.generate_briefs([record])
+            self.assertEqual(record["brief"], brief)
+
+    def test_warm_brief_cache_is_used_without_provider_credentials(self):
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory) / "briefs-cache.json"
+            brief = (
+                "This complete cached newsroom brief remains publishable during a "
+                "temporary provider outage. It preserves the attributed reporting, "
+                "includes enough context for readers, and ends with a finished sentence."
+            )
+            cache.write_text(json.dumps({
+                "en:1234567890": {"brief": brief, "ts": 1},
+            }), encoding="utf-8")
+            record = item()
+            with mock.patch.object(build, "BRIEFS_CACHE", cache), mock.patch.dict(
+                os.environ, {}, clear=True
+            ):
+                status = build.generate_briefs([record])
+            self.assertEqual(status, "ok")
+            self.assertEqual(record["brief"], brief)
+
+    def test_pending_review_label_is_visible_without_related_reporting_list(self):
+        record = item()
+        record["review_status"] = "pending"
+        record["corroborating_sources"].append({
+            "name": "Second News",
+            "url": "https://second.example",
+            "article": "https://second.example/report",
+            "verified": True,
+        })
+        html = build.render_story(
+            record, "en", [], [record],
+            datetime(2026, 7, 29, 15, tzinfo=timezone.utc))
+        self.assertIn("Developing report", html)
+        self.assertNotIn("Related reporting", html)
+        self.assertIn("https://second.example/report", html)
+
+    def test_markdown_residue_skips_only_the_invalid_original(self):
+        with self.assertRaises(build.OriginalSkipError):
+            build.validate_original(
+                Path("unsafe.en.txt"),
+                {"category": "news", "date": "2026-07-29T12:00:00Z"},
+                "A sourced paragraph with an unrendered footnote marker [^1].",
+                "en",
+                datetime(2026, 7, 29, 15, tzinfo=timezone.utc),
+                datetime(2026, 7, 29, 12, tzinfo=timezone.utc),
+            )
+
+    def test_automated_investigation_uses_immutable_desk_hour_slug(self):
+        parsed = {
+            "title": "A sourced investigation",
+            "dek": "A concise standfirst.",
+            "body": "A complete reported body.",
+            "sources": ["https://example.com/source"],
+        }
+        now = datetime(2026, 7, 29, 12, tzinfo=timezone.utc)
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(
+            originals_gen, "ORIGINALS", Path(directory)
+        ):
+            publication_id = originals_gen._write_pair(
+                {"id": "investigation", "cat": "research"},
+                parsed, parsed, now)
+            self.assertEqual(publication_id, "investigation-2026-07-29-12")
+            self.assertTrue(
+                (Path(directory) / f"{publication_id}.en.txt").is_file())
+            with self.assertRaises(FileExistsError):
+                originals_gen._write_pair(
+                    {"id": "investigation", "cat": "research"},
+                    parsed, parsed, now)
 
 
 if __name__ == "__main__":

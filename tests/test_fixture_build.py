@@ -16,6 +16,8 @@ class FixtureBuildTests(unittest.TestCase):
             "TOP_FEEDS_FILE": "tests/fixtures/feeds.json",
             "TOP_OFFLINE": "1",
             "TOP_SKIP_ORIGINALS": "1",
+            "TOP_ALLOW_RAW_SUMMARIES": "1",
+            "TOP_REMOTE_MEDIA": "rights-only",
         })
         subprocess.run(
             [sys.executable, "build.py"], cwd=ROOT, env=env,

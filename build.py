@@ -28,11 +28,11 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 from editorial import (
-    apply_review_gate, classify_risk, cluster_duplicates, load_reviews,
-    sanitized_review_queue,
+    apply_review_gate, cluster_duplicates, load_reviews,
+    review_gate_mode, sanitized_review_queue,
 )
 from publishing import (
-    BuildHealth, PublishingError, canonicalize_url, is_http_url,
+    BuildHealth, PublishingError, canonicalize_url, is_http_url, is_public_http_url,
     load_editorial_json, load_media_manifest, media_rights_for, parse_timestamp,
     safe_urlopen, utc_iso, validate_corrections, validate_feed_config, validate_story,
 )
@@ -51,6 +51,13 @@ BASE_URL = "https://timesofpalestine.com"
 
 TOP_SOURCE = {"en": "Times of Palestine", "ar": "تايمز أوف فلسطين"}
 ARABIC_CHARS_RX = re.compile(r"[؀-ۿ]")
+
+
+def remote_media_mode():
+    mode = os.environ.get("TOP_REMOTE_MEDIA", "source").strip().lower()
+    if mode not in {"source", "rights-only"}:
+        raise PublishingError("TOP_REMOTE_MEDIA must be 'source' or 'rights-only'")
+    return mode
 
 # ---------- TOP Briefs: original newsdesk summaries, written by Claude ----------
 # Optional layer: runs only when ANTHROPIC_API_KEY is set (GitHub secret) and the
@@ -106,7 +113,6 @@ ORIGINAL_CATEGORIES = {
     "bitcoin", "diaspora", "arts", "sports", "social", "opinion", "news", "humans",
 }
 ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
-ORIGINAL_SUMMARY_RX = re.compile(r'<p class="summary">(.*?)</p>', re.S)
 ORIGINAL_BODY_STATS = {}
 
 # ---------- text utilities ----------
@@ -447,11 +453,30 @@ def attach_media(item, candidate, local_original=False):
         item["media"] = None
         return
     if is_http_url(candidate):
+        if (
+            not local_original
+            and remote_media_mode() == "source"
+            and is_public_http_url(candidate)
+        ):
+            item["image"] = candidate
+            item["media"] = {
+                "credit": item.get("source", ""),
+                "rightsBasis": "source-hosted",
+                "source": item.get("link") or item.get("source_url", ""),
+                "licenseUrl": None,
+            }
+            return
         item["image"] = None
         item["media"] = None
+        if local_original:
+            raise PublishingError(
+                f"{item.get('pid', item.get('title', 'original'))}: "
+                "remote original image lacks explicit local rights handling")
         if HEALTH:
-            HEALTH.media_blocked += 1
-            HEALTH.hold("remote_media_disabled")
+            HEALTH.block_media(
+                "remote_media_not_public"
+                if remote_media_mode() == "source"
+                else "remote_media_disabled")
         return
     rights = media_rights_for(candidate, MEDIA_RIGHTS)
     if not rights:
@@ -461,8 +486,7 @@ def attach_media(item, candidate, local_original=False):
         item["image"] = None
         item["media"] = None
         if HEALTH:
-            HEALTH.media_blocked += 1
-            HEALTH.hold("media_rights_missing")
+            HEALTH.block_media("media_rights_missing")
         return
     value = candidate
     if not is_http_url(value):
@@ -737,15 +761,7 @@ def write_brief(client, item):
 
 
 def generate_briefs(all_items):
-    """Attach complete low-risk TOP Newsdesk briefs, cached across builds."""
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        print("\nBriefs: ANTHROPIC_API_KEY not set — only complete feed summaries will publish.")
-        return "disabled"
-    try:
-        import anthropic
-    except ImportError:
-        print("\nBriefs: `anthropic` package not installed — only complete feed summaries will publish.")
-        return "disabled"
+    """Attach complete TOP Newsdesk briefs to every aggregated wire item."""
     try:
         cache = json.loads(BRIEFS_CACHE.read_text(encoding="utf-8")) if BRIEFS_CACHE.exists() else {}
     except (OSError, json.JSONDecodeError) as exc:
@@ -764,15 +780,7 @@ def generate_briefs(all_items):
     cache_dirty = False
     now_ts = datetime.now(timezone.utc).timestamp()
     for it in all_items:
-        if classify_risk(it):
-            # Repository originals already contain editor-authored body copy.
-            if it.get("original"):
-                continue
-            # Sensitive aggregated items publish only the exact upstream text reviewed.
-            it.pop("brief", None)
-            for cache_key in (f"{it['lang']}:{it['pid']}", it["pid"]):
-                if cache.pop(cache_key, None) is not None:
-                    cache_dirty = True
+        if it.get("original"):
             continue
         # Keys are lang-scoped so the same wire story can carry an Arabic brief in /ar/
         # and an English one in /en/; bare-pid entries are legacy single-language cache.
@@ -781,23 +789,30 @@ def generate_briefs(all_items):
             it["brief"] = entry["brief"]
             if entry.get("title"):  # translated headline saved alongside the brief
                 it["title"] = entry["title"]
-            if classify_risk(it):
-                it.pop("brief", None)
-                cache.pop(f"{it['lang']}:{it['pid']}", None)
-                cache.pop(it["pid"], None)
-                cache_dirty = True
     todo = [i for i in sorted(
         all_items,
         key=lambda x: (
             x.get("needs_translation", False), x.get("partner", False),
             not x["dek"], x["score"]),
         reverse=True,
-    ) if "brief" not in i and not classify_risk(i)][:MAX_BRIEFS_PER_RUN]
+    ) if not i.get("original") and "brief" not in i][:MAX_BRIEFS_PER_RUN]
     if not todo:
         if cache_dirty:
             save_brief_cache(cache)
         print("\nBriefs: cache warm — nothing new to write.")
         return "ok"
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        if cache_dirty:
+            save_brief_cache(cache)
+        print("\nBriefs: ANTHROPIC_API_KEY not set — uncached wire stories will be withheld.")
+        return "disabled"
+    try:
+        import anthropic
+    except ImportError:
+        if cache_dirty:
+            save_brief_cache(cache)
+        print("\nBriefs: `anthropic` package not installed — uncached wire stories will be withheld.")
+        return "disabled"
 
     # Remove ALL whitespace (including pasted line-wraps) from the secret — a broken
     # key corrupts the auth header and surfaces as APIConnectionError. The log line
@@ -809,7 +824,7 @@ def generate_briefs(all_items):
     def safe(item):
         try:
             return write_brief(client, item)
-        except Exception as e:  # any per-story failure falls back to the feed summary
+        except Exception as e:  # isolate one provider failure; incomplete wire copy is withheld
             print(f"  ✗ brief failed ({item['pid']}): {type(e).__name__}")
             return None
 
@@ -818,11 +833,6 @@ def generate_briefs(all_items):
         for it, brief in zip(todo, ex.map(safe, todo)):
             if brief:
                 it["brief"] = brief
-                if classify_risk(it):
-                    it.pop("brief", None)
-                    if HEALTH:
-                        HEALTH.hold("generated_brief_sensitive")
-                    continue
                 entry = {"brief": brief, "ts": now_ts}
                 if it.get("needs_translation") and not ARABIC_CHARS_RX.search(it["title"]):
                     entry["title"] = it["title"]  # keep the English headline across builds
@@ -843,24 +853,32 @@ def save_brief_cache(cache):
             HEALTH.checks["brief_cache"] = "degraded"
 
 
-def purge_held_briefs(sensitive):
-    """Remove generated prose for content that requires exact human review."""
-    if not BRIEFS_CACHE.exists() or not sensitive:
-        return
-    try:
-        cache = json.loads(BRIEFS_CACHE.read_text(encoding="utf-8"))
-        changed = False
-        for item in sensitive:
-            for key in (f"{item['lang']}:{item['pid']}", item["pid"]):
-                if key in cache:
-                    del cache[key]
-                    changed = True
-        if changed:
-            save_brief_cache(cache)
-    except (OSError, json.JSONDecodeError) as exc:
-        print(f"Briefs: held-entry purge failed ({type(exc).__name__}).")
-        if HEALTH:
-            HEALTH.checks["brief_cache"] = "degraded"
+def select_publishable_copy(en_items, ar_items):
+    """Apply the same translation and complete-copy rules in builds and review."""
+    en_items = [
+        item for item in en_items
+        if not (
+            item.get("needs_translation")
+            and ARABIC_CHARS_RX.search(item["title"])
+        )
+    ]
+    for item in en_items:
+        if item.get("needs_translation") and ARABIC_CHARS_RX.search(item["dek"]):
+            item["dek"] = ""
+
+    allow_raw = os.environ.get("TOP_ALLOW_RAW_SUMMARIES") == "1"
+
+    def keep(item):
+        if item.get("vetoed") or item.get("brief_refused"):
+            return False
+        if item.get("original"):
+            return True
+        brief = item.get("brief")
+        if brief and not REFUSAL_RX.search(brief):
+            return is_complete_text(brief, 160)
+        return allow_raw and is_complete_text(item.get("dek", ""), 60)
+
+    return [item for item in en_items + ar_items if keep(item)]
 
 
 def dedupe(items):
@@ -907,6 +925,14 @@ def dedupe_events(items):
                 if key not in existing:
                     kept_item.setdefault("corroborating_sources", []).append(source)
                     existing.add(key)
+            sources = kept_item.get("corroborating_sources", [])
+            if len({
+                (source.get("name", ""), source.get("url", ""))
+                for source in sources
+                if source.get("name") and source.get("url")
+            }) >= 2:
+                for source in sources:
+                    source["verified"] = True
             break
         if not dup:
             kept.append((it, toks, it["date"]))
@@ -941,6 +967,10 @@ def _original_slug(stem):
     return stem.rsplit(".", 1)[0] if "." in stem else stem
 
 
+class OriginalSkipError(PublishingError):
+    """Unsafe original copy is skipped while the rest of the desk publishes."""
+
+
 def validate_original(path, meta, body, lang, now, date):
     errors = []
     residue_warnings = []
@@ -958,19 +988,9 @@ def validate_original(path, meta, body, lang, now, date):
         if not media_path.is_file():
             errors.append(f"missing media file '{src}'")
 
-    rendered = __import__("longform").body_html(body)
-    if "[^" in rendered:
-        residue_warnings.append("unrendered footnote marker '[^'")
-    if "![" in rendered:
-        residue_warnings.append("unrendered image markdown '!['")
-    if "**" in rendered:
-        residue_warnings.append("unrendered bold marker '**'")
-    if re.search(r'<p class="summary">\s*#', rendered):
-        residue_warnings.append("line-initial heading marker '#' fell through into paragraph")
-    for p in ORIGINAL_SUMMARY_RX.findall(rendered):
-        if "|" in strip_html(p):
-            residue_warnings.append("pipe table residue '|' remained inside paragraph")
-            break
+    longform = __import__("longform")
+    rendered = longform.body_html(body)
+    residue_warnings.extend(longform.rendered_residue_warnings(rendered))
 
     stats = {
         "subheads": len(re.findall(r'<h[234] class="sub">', rendered)),
@@ -990,7 +1010,7 @@ def validate_original(path, meta, body, lang, now, date):
     if errors:
         raise PublishingError(f"{path.name}: {'; '.join(errors)}")
     if residue_warnings:
-        raise PublishingError(
+        raise OriginalSkipError(
             f"{path.name}: unsafe rendered markup: {'; '.join(residue_warnings)}")
 
 
@@ -1023,7 +1043,11 @@ def load_originals(lang):
         if required:
             raise PublishingError(
                 f"{path.name}: missing required metadata: {', '.join(required)}")
-        validate_original(path, meta, body, lang, now, date)
+        try:
+            validate_original(path, meta, body, lang, now, date)
+        except OriginalSkipError as error:
+            print(f"  ⚠ original skipped: {error}")
+            continue
         try:
             hours_kept = float(meta.get("maxagehours", 336))
         except ValueError as exc:
@@ -1442,7 +1466,8 @@ footer a:hover{color:#fff;text-decoration:underline}
 footer .legal{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #2a2a30;font-size:.72rem;color:#8b8b94;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%);border-top:4px solid var(--red);max-width:200px;margin-bottom:1.5rem}
 [dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}@media (prefers-color-scheme:dark){:root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}.masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.hero h2,.card h3,.rowcard h3,.hero-sub article h3,.research-feat h3,.op-card h3{color:var(--ink)}.hero .dek{color:#c5c5cf}.story .summary{color:#d6d6de}.research-feat .dek{color:#c5c5cf}section.opinion{background:#17171c}.card img,.hero img,.rowcard img,.story img.lede{opacity:.92}/* The flag palette never changes: fills, rules, markers and the masthead stay true brand red and green in dark mode. Only small red/green TEXT lifts to a lighter tint of the SAME hue, because #C8102E on near-black is 3.2:1 — fine for large type and graphics, unreadable at .66rem. */.hero .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q,.hero h2 a:hover,.card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.hero-sub article h3 a:hover{color:#f93549}.meta .src,.card .chip,.rowcard .chip,.hero-sub article .chip{color:#3fd07c}}@media (prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}}.skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}.skiplink:focus{inset-inline-start:0}.share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}.share span{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;align-self:center}.share a{border:1px solid var(--line-dark);padding:.35rem .8rem;border-radius:3px;font-size:.8rem;font-weight:700}.share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
-.corroboration{margin-top:1rem;font-size:.85rem;color:var(--muted);line-height:1.6}.corroboration a{text-decoration:underline}
+.review-note{margin:.8rem 0;padding:.7rem .9rem;border-inline-start:3px solid var(--red);background:var(--cream);font-size:.86rem;font-weight:700;line-height:1.45}
+.review-chip{display:inline-block;margin-inline-start:.45rem;color:var(--red);font-size:.66rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
 .revisions{margin-top:2rem;padding:1rem 1.2rem;border:1px solid var(--line-dark);background:var(--card)}.revisions h2{font-family:var(--serif);font-size:1.1rem}.revisions ol{margin:.7rem 0 0;padding-inline-start:1.2rem}.revisions li{margin-top:.45rem;font-size:.86rem;line-height:1.6}.revisions time{font-variant-numeric:tabular-nums;color:var(--muted)}
 .social-note{margin:-.5rem 0 1.2rem;font-size:.9rem;color:var(--muted);max-width:75ch}.social-note a{color:var(--green);font-weight:700}
 .footer-contact{margin-top:.9rem}.footer-contact.secondary{margin-top:.5rem}.contact-id{direction:ltr;display:inline-block;margin-inline-start:.6rem;color:#8f8f94}
@@ -1491,11 +1516,19 @@ def href(it, pfx):
     """Internal story-page URL — readers stay on the site; the source link lives on the story page."""
     return f"{pfx}{it['pid']}.html"
 
+
+def review_chip(it, lang):
+    if it.get("review_status") != "pending":
+        return ""
+    label = "قيد التدقيق" if lang == "ar" else "Developing"
+    return f'<span class="review-chip">{label}</span>'
+
+
 def meta_line(it, lang):
     source = (f'<span class="src">{esc(it["source"])}</span>' if it.get("original")
               else f'<a class="src" href="{esc(it["source_url"])}" target="_blank" '
                    f'rel="noopener">{esc(it["source"])}</a>')
-    return (f'<p class="meta">{source}'
+    return (f'<p class="meta">{source}{review_chip(it, lang)}'
             f'<span class="t">{time_ago(it["date"], lang)}</span></p>')
 
 
@@ -1522,13 +1555,13 @@ def card(it, lang, pfx):
     # Uniform card: headline, source, time. Summaries belong to the hero, the
     # featured report, and the story pages — mixed previews in a grid look broken.
     return (f'<article class="card">{card_media(it, pfx)}'
-            f'<span class="chip">{esc(it["source"])}</span>'
+            f'<span class="chip">{esc(it["source"])}</span>{review_chip(it, lang)}'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<p class="t">{time_ago(it["date"], lang)}</p></article>')
 
 def rowcard(it, lang, pfx):
     return (f'<article class="rowcard">{card_media(it, pfx)}'
-            f'<div><span class="chip">{esc(it["source"])}</span>'
+            f'<div><span class="chip">{esc(it["source"])}</span>{review_chip(it, lang)}'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<p class="t">{time_ago(it["date"], lang)}</p></div></article>')
 
@@ -1538,14 +1571,14 @@ def op_card(it, lang, pfx):
             f'{meta_line(it, lang)}</article>')
 
 def sub_item(it, lang, pfx):
-    return (f'<article><span class="chip">{esc(it["source"])}</span>'
+    return (f'<article><span class="chip">{esc(it["source"])}</span>{review_chip(it, lang)}'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<p class="t">{time_ago(it["date"], lang)}</p></article>')
 
 def latest_item(it, lang, pfx):
     return (f'<li><span class="t">{time_ago(it["date"], lang)}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<span class="s">{esc(it["source"])}</span></li>')
+            f'<span class="s">{esc(it["source"])}</span>{review_chip(it, lang)}</li>')
 
 # ---------- page ----------
 def render_page(lang, items, built_at):
@@ -1801,13 +1834,14 @@ def render_story(it, lang, related, rail, built_at):
         source for source in it.get("corroborating_sources", [])
         if source.get("article") and source.get("article") != it.get("link")
     ]
-    corroboration = ""
-    if corroborating:
-        label = "تغطية ذات صلة" if lang == "ar" else "Related reporting"
-        links = " · ".join(
-            f'<a href="{esc(source["article"])}" target="_blank" rel="noopener">'
-            f'{esc(source["name"])}</a>' for source in corroborating)
-        corroboration = f'<p class="corroboration"><strong>{label}:</strong> {links}</p>'
+    review_note = ""
+    if it.get("review_status") == "pending":
+        label = (
+            "تقرير متطور — بانتظار تدقيق إضافي وتأكيد مستقل."
+            if lang == "ar"
+            else "Developing report — awaiting additional review and independent corroboration."
+        )
+        review_note = f'<p class="review-note">{label}</p>'
     corrections = ""
     if it.get("corrections"):
         heading = "سجل التحديثات والتصويبات" if lang == "ar" else "Updates & corrections"
@@ -1898,9 +1932,10 @@ def render_story(it, lang, related, rail, built_at):
     <p class="kick">{t['sections'].get(it['cat'], t['sections']['news'])}</p>
     <h1>{esc(it['title'])}</h1>
     {meta_line(it, lang)}
+    {review_note}
     {lede}
     {summary}
-    {cta}{corroboration}{corrections}{share_row}
+    {cta}{corrections}{share_row}
   </article>
   <section class="keep"><div class="wrap">
     <div class="sec-head focus"><h2>{t['keep_reading']}</h2><span class="rule"></span></div>
@@ -1980,53 +2015,30 @@ def main():
     global HEALTH
     built_at = datetime.now(timezone.utc)
     HEALTH = BuildHealth(built_at)
+    remote_media_mode()
+    if os.environ.get("TOP_SKIP_ORIGINALS") != "1":
+        import originals_gen
+        print(originals_gen.run())
     for lang in ("en", "ar"):
         for feed in FEEDS[lang]:
             HEALTH.register_source(feed, lang)
     en_items = build_lang("en")
     ar_items = build_lang("ar")
     all_fetched_items = en_items + ar_items
-    briefs_active = False
     try:
         brief_status = generate_briefs(all_fetched_items)
-        briefs_active = brief_status in {"ok", "degraded"}
-    except Exception as e:  # a desk outage must not blank the site
+    except Exception as e:  # a desk outage must not stop originals or cached briefs
         print(
             f"\nBriefs: stage failed ({type(e).__name__}) — "
-            "only complete feed summaries will publish.")
+            "only complete cached newsroom briefs will publish.")
         HEALTH.checks["brief_generation"] = "degraded"
     else:
         HEALTH.checks["brief_generation"] = brief_status
-    purge_held_briefs([
-        item for item in all_fetched_items if classify_risk(item)])
-    # Arabic-wire stories appear in the English edition only once their headline
-    # has been translated (translation rides along with brief generation, cached);
-    # their Arabic feed summaries never render on English pages.
-    en_items = [i for i in en_items
-                if not (i.get("needs_translation") and ARABIC_CHARS_RX.search(i["title"]))]
-    for i in en_items:
-        if i.get("needs_translation") and ARABIC_CHARS_RX.search(i["dek"]):
-            i["dek"] = ""
-
-    # Publish only complete copy. Sensitive records always retain the exact upstream
-    # summary an editor reviews; low-risk records prefer a complete newsroom brief.
-    def keep(item):
-        if item.get("vetoed") or item.get("brief_refused"):
-            return False
-        if item.get("original"):
-            return True
-        if classify_risk(item):
-            return is_complete_text(item.get("dek", ""), 60)
-        brief = item.get("brief")
-        if brief and not REFUSAL_RX.search(brief):
-            return is_complete_text(brief, 160)
-        if briefs_active:
-            return False
-        return is_complete_text(item.get("dek", ""), 60)
-
-    candidates = [i for i in en_items + ar_items if keep(i)]
+    candidates = select_publishable_copy(en_items, ar_items)
     approvals = load_reviews(ROOT / "editorial" / "reviews.json")
-    eligible, held = apply_review_gate(candidates, approvals)
+    gate_mode = review_gate_mode()
+    eligible, pending = apply_review_gate(candidates, approvals, mode=gate_mode)
+    held = pending if gate_mode == "hold" else []
     HEALTH.review_held = len(held)
     HEALTH.review_approved = sum(1 for item in eligible if item.get("risk_reasons"))
     for item in held:
@@ -2076,7 +2088,7 @@ def main():
         {"builtAt": utc_iso(built_at), "en": len(en_items), "ar": len(ar_items),
          "briefs": sum(1 for i in en_items + ar_items if i.get("brief"))}, indent=2))
     (dist / "review-queue.json").write_text(
-        json.dumps(sanitized_review_queue(held), indent=2), encoding="utf-8")
+        json.dumps(sanitized_review_queue(pending), indent=2), encoding="utf-8")
     health = HEALTH.public_dict({"en": len(en_items), "ar": len(ar_items)})
     (dist / "health.json").write_text(
         json.dumps(health, ensure_ascii=False, indent=2), encoding="utf-8")

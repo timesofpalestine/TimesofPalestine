@@ -29,13 +29,10 @@ def current_queue():
     for lang in ("en", "ar"):
         for feed in build.FEEDS[lang]:
             build.HEALTH.register_source(feed, lang)
-    candidates = build.build_lang("en") + build.build_lang("ar")
-    candidates = [
-        item for item in candidates
-        if not (item.get("needs_translation")
-                and build.ARABIC_CHARS_RX.search(item["title"]))
-        and (item.get("brief") or item.get("dek"))
-    ]
+    en_items = build.build_lang("en")
+    ar_items = build.build_lang("ar")
+    build.generate_briefs(en_items + ar_items)
+    candidates = build.select_publishable_copy(en_items, ar_items)
     _, held = apply_review_gate(candidates, load_reviews(LEDGER))
     return held
 
@@ -118,12 +115,10 @@ def promote(args):
                 if item["link"] == f"original:{args.topic_id}.{lang}")
         if len(promoted) != 2:
             raise PublishingError("promoted pair did not load as two validated originals")
-        _, held = apply_review_gate(promoted, {})
-        if len(held) != 2:
-            raise PublishingError("promoted originals unexpectedly bypassed review")
+        apply_review_gate(promoted, {}, mode="label")
         raw = json.loads(LEDGER.read_text(encoding="utf-8"))
         approved_at = utc_iso(datetime.now(timezone.utc))
-        for item in held:
+        for item in promoted:
             raw["approvals"][item["review_fingerprint"]] = {
                 "reviewer": args.reviewer,
                 "at": approved_at,

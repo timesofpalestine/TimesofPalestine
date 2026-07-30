@@ -33,6 +33,9 @@ class EditorialTests(unittest.TestCase):
         clustered, removed = cluster_duplicates([left, right])
         self.assertEqual(removed, 1)
         self.assertEqual(len(clustered[0]["corroborating_sources"]), 2)
+        self.assertTrue(all(
+            source["verified"]
+            for source in clustered[0]["corroborating_sources"]))
 
     def test_risk_rules_cover_english_and_arabic_sensitive_claims(self):
         casualty = story(
@@ -75,6 +78,12 @@ class EditorialTests(unittest.TestCase):
                 "I", "الجيش يعلن تعيين إيال زامير رئيساً جديداً للأركان",
                 "https://i.test/8", lang="ar")),
         )
+        generic_arabic_security = story(
+            "J", "الجيش يعلن تحديثاً بشأن التدريب العسكري",
+            "https://j.test/9", lang="ar")
+        self.assertNotIn(
+            "named_security_or_military_subject",
+            classify_risk(generic_arabic_security))
 
     def test_contradictory_reports_are_not_clustered_as_corroboration(self):
         ordered = story(
@@ -89,22 +98,26 @@ class EditorialTests(unittest.TestCase):
         item = story(
             "A", "Five people killed in Gaza strike", "https://a.test/1",
             "The source reports five deaths.")
-        _, held = apply_review_gate([item], {})
-        fingerprint = held[0]["review_fingerprint"]
-        approved, held = apply_review_gate(
+        publishable, pending = apply_review_gate([item], {})
+        self.assertEqual(publishable, [item])
+        self.assertEqual(item["review_status"], "pending")
+        fingerprint = pending[0]["review_fingerprint"]
+        approved, pending = apply_review_gate(
             [item], {fingerprint: {"reviewer": "Editor", "at": "2026-07-29T13:00:00Z"}})
         self.assertEqual(len(approved), 1)
         item["dek"] = "The source now reports six deaths."
-        approved, held = apply_review_gate(
-            [item], {fingerprint: {"reviewer": "Editor", "at": "2026-07-29T13:00:00Z"}})
+        approved, pending = apply_review_gate(
+            [item],
+            {fingerprint: {"reviewer": "Editor", "at": "2026-07-29T13:00:00Z"}},
+            mode="hold")
         self.assertEqual(len(approved), 0)
-        self.assertEqual(len(held), 1)
+        self.assertEqual(len(pending), 1)
 
-    def test_all_repository_originals_require_review(self):
+    def test_repository_originals_are_not_blanket_risk_flagged(self):
         item = story(
             "Times of Palestine", "A local analysis", "original:analysis",
             "Original body", original=True)
-        self.assertIn("repository_original", classify_risk(item))
+        self.assertEqual(classify_risk(item), [])
 
 
 if __name__ == "__main__":

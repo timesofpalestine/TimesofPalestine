@@ -207,11 +207,9 @@ def main():
         return 0
     try:
         outbox = load_json(OUTBOX_PATH, {})
-        ledger = load_json(LEDGER_PATH, {"version": 1, "deliveries": {}})
-        legacy = load_json(LEGACY_CACHE_PATH, {})
     except (OSError, ValueError) as error:
         print(
-            f"Telegram: delivery state is unreadable ({type(error).__name__})",
+            f"Telegram: outbox is unreadable ({type(error).__name__})",
             file=sys.stderr,
         )
         return 1
@@ -226,19 +224,36 @@ def main():
         )
         return 1
 
-    if ledger.get("version") != 1 or not isinstance(ledger.get("deliveries"), dict):
-        print("Telegram: delivery ledger is invalid", file=sys.stderr)
-        return 1
-    if not isinstance(legacy, dict):
-        print("Telegram: legacy delivery state is invalid", file=sys.stderr)
-        return 1
+    reset_ledger = False
+    try:
+        ledger = load_json(LEDGER_PATH, {"version": 1, "deliveries": {}})
+        if ledger.get("version") != 1 or not isinstance(ledger.get("deliveries"), dict):
+            raise ValueError("invalid schema")
+    except (OSError, ValueError) as error:
+        print(
+            f"Telegram: delivery ledger is unreadable ({type(error).__name__}); "
+            "resetting and recovering from public channel history",
+            file=sys.stderr,
+        )
+        ledger = {"version": 1, "deliveries": {}}
+        reset_ledger = True
+    try:
+        legacy = load_json(LEGACY_CACHE_PATH, {})
+        if not isinstance(legacy, dict):
+            raise ValueError("invalid schema")
+    except (OSError, ValueError) as error:
+        print(
+            f"Telegram: legacy delivery state ignored ({type(error).__name__})",
+            file=sys.stderr,
+        )
+        legacy = {}
     migrated = migrate_legacy_markers(ledger, outbox, legacy)
     try:
         recovered = recover_public_channel_markers(
             ledger, outbox, scrape_recent_delivery_keys())
     except (OSError, UnicodeError, ValueError):
         recovered = 0
-    if migrated or recovered:
+    if reset_ledger or migrated or recovered:
         save_ledger(ledger)
 
     delivered, suppressed_total, failures = 0, 0, []

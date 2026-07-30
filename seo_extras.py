@@ -8,6 +8,7 @@ import json
 import os
 import urllib.request
 from datetime import datetime, timezone
+from tempfile import NamedTemporaryFile
 
 from publishing import (
     canonicalize_url, is_http_url, is_public_http_url, safe_urlopen, utc_iso,
@@ -19,6 +20,7 @@ from publishing import (
 TELEGRAM_CHANNEL = "@timesofpalestin"
 TELEGRAM_MAX_AGE_H = 6
 TELEGRAM_OUTBOX = "telegram-outbox.json"
+WEBHOOK_LEDGER = "webhook-delivery.json"
 
 # IndexNow (indexnow.org): instant URL submission to Bing/Yandex/Seznam/naver.
 # No account needed — the key is proven by hosting <key>.txt at the site root.
@@ -47,8 +49,8 @@ ABOUT = {
             ("Field reports",
              "Citizen journalists and witnesses send reports from the ground through "
              "our encrypted tip line. No private tip is ingested by this public "
-             "repository. Public field reports and other sensitive claims are withheld "
-             "until a human editor approves the exact version being published. "
+             "repository. Public field reports and other sensitive claims carry a "
+             "developing-report label while awaiting additional editorial review. "
              "Field reports appear in a clearly separated section."),
             ("Editorial standards & corrections",
              "We report without censorship and without favor, we hold power to "
@@ -327,6 +329,16 @@ def needs_revision_delivery(cache, marker, item):
     return previous.get("revision") != delivery_revision(item)
 
 
+def save_delivery_ledger(path, ledger):
+    with NamedTemporaryFile(
+        "w", encoding="utf-8", dir=path.parent, delete=False
+    ) as handle:
+        json.dump(ledger, handle, ensure_ascii=False)
+        handle.write("\n")
+        temporary = handle.name
+    os.replace(temporary, path)
+
+
 def post_webhook(dist, langs_items, base_url):
     """Send a bounded outbox to an optional generic connector."""
     target = os.environ.get("DISTRIBUTION_WEBHOOK_URL", "").strip()
@@ -334,7 +346,7 @@ def post_webhook(dist, langs_items, base_url):
         return "disabled"
     if not is_public_http_url(target):
         raise ValueError("DISTRIBUTION_WEBHOOK_URL must be a public HTTP(S) URL")
-    cache_path = dist.parent / "briefs-cache.json"
+    cache_path = dist.parent / WEBHOOK_LEDGER
     cache = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
     items = sorted(
         (item for _, rows in langs_items for item in rows),
@@ -376,8 +388,10 @@ def post_webhook(dist, langs_items, base_url):
             "ts": datetime.now(timezone.utc).timestamp(),
             "revision": revision,
         }
+        save_delivery_ledger(cache_path, cache)
         posted += 1
-    cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+    if not pending:
+        save_delivery_ledger(cache_path, cache)
     print(f"  → webhook: delivered {posted} eligible stories")
     return "ok"
 

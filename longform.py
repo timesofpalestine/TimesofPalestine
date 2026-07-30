@@ -133,6 +133,26 @@ def body_html(text, media_prefix="/media/"):
     return "".join(out)
 
 
+def rendered_residue_warnings(rendered):
+    """Return unsafe Markdown tokens left behind by the supported renderer."""
+    warnings = []
+    if "[^" in rendered:
+        warnings.append("unrendered footnote marker '[^'")
+    if "![" in rendered:
+        warnings.append("unrendered image markdown '!['")
+    if "**" in rendered:
+        warnings.append("unrendered bold marker '**'")
+    if re.search(r'<p class="summary">\s*#', rendered):
+        warnings.append("line-initial heading marker '#' fell through into paragraph")
+    for paragraph in re.findall(
+        r'<p class="summary">(.*?)</p>', rendered, flags=re.S
+    ):
+        if "|" in re.sub(r"<[^>]+>", "", html.unescape(paragraph)):
+            warnings.append("pipe table residue '|' remained inside paragraph")
+            break
+    return warnings
+
+
 def validate_media_references(text, manifest, label):
     """Require a rights record for every long-form image before publication."""
     for line in (text or "").replace("\r\n", "\n").splitlines():

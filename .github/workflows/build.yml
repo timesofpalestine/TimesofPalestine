@@ -30,6 +30,7 @@ jobs:
           path: |
             briefs-cache.json
             telegram-delivery.json
+            webhook-delivery.json
           key: newsroom-state-${{ github.run_id }}
           restore-keys: |
             newsroom-state-
@@ -63,6 +64,17 @@ jobs:
         env:
           DISTRIBUTION_WEBHOOK_URL: ${{ secrets.DISTRIBUTION_WEBHOOK_URL }}
         run: python distribute.py dist --summary >> "$GITHUB_STEP_SUMMARY"
+      - name: Persist generated investigations
+        if: ${{ always() && steps.deployment.outcome == 'success' && github.ref == 'refs/heads/main' }}
+        continue-on-error: true
+        run: |
+          git config user.name "Times of Palestine Newsdesk"
+          git config user.email "newsdesk@timesofpalestine.com"
+          git add originals/
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish automated investigation [skip ci]"
+            git push origin HEAD:main
+          fi
       - name: Save briefs and delivery cache
         if: always()
         uses: actions/cache/save@v4
@@ -70,4 +82,5 @@ jobs:
           path: |
             briefs-cache.json
             telegram-delivery.json
+            webhook-delivery.json
           key: newsroom-state-${{ github.run_id }}

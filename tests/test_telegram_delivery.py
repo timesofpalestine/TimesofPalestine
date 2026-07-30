@@ -129,7 +129,7 @@ class PublisherTests(unittest.TestCase):
             self.assertEqual(
                 ledger["deliveries"]["story:en:abc"]["message_id"], 42)
 
-    def test_malformed_ledger_fails_closed(self):
+    def test_malformed_ledger_recovers_from_public_history(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             outbox_path = root / "telegram-outbox.json"
@@ -138,7 +138,12 @@ class PublisherTests(unittest.TestCase):
             outbox_path.write_text(json.dumps({
                 "version": 1,
                 "channel": telegram_publish.EXPECTED_CHANNEL,
-                "entries": [],
+                "entries": [{
+                    "parts": [{
+                        "delivery_key": "story:en:abc123def4",
+                        "legacy_key": "",
+                    }],
+                }],
             }), encoding="utf-8")
             ledger_path.write_text("{not-json", encoding="utf-8")
             with (
@@ -148,8 +153,13 @@ class PublisherTests(unittest.TestCase):
                     telegram_publish, "LEGACY_CACHE_PATH", legacy_path),
                 mock.patch.dict(
                     "os.environ", {"TELEGRAM_BOT_TOKEN": "test-token"}),
+                mock.patch.object(
+                    telegram_publish, "scrape_recent_delivery_keys",
+                    return_value={"story:en:abc123def4"}),
             ):
-                self.assertEqual(telegram_publish.main(), 1)
+                self.assertEqual(telegram_publish.main(), 0)
+            ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+            self.assertIn("story:en:abc123def4", ledger["deliveries"])
 
     def test_correction_is_not_suppressed_as_duplicate_of_same_story(self):
         now = datetime.now(timezone.utc)

@@ -4,5 +4,6 @@ __pycache__/
 dist/
 briefs-cache.json
 telegram-delivery.json
+webhook-delivery.json
 telegram-outbox.json
 .editorial-drafts/

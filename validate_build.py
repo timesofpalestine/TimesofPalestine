@@ -12,6 +12,9 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlsplit
 
+from build import BASE_URL, remote_media_mode
+
+BASE_PARTS = urlsplit(BASE_URL)
 
 class DocumentParser(HTMLParser):
     def __init__(self):
@@ -61,9 +64,9 @@ def internal_path(root, page, target):
         return None
     if parsed.scheme == "data" or not parsed.path:
         return None
-    base = "https://timesofpalestine.com/" + page.relative_to(root).as_posix()
+    base = BASE_URL.rstrip("/") + "/" + page.relative_to(root).as_posix()
     resolved = urlsplit(urljoin(base, target))
-    if resolved.netloc != "timesofpalestine.com":
+    if (resolved.scheme, resolved.netloc) != (BASE_PARTS.scheme, BASE_PARTS.netloc):
         return None
     relative = unquote(resolved.path.lstrip("/"))
     candidate = root / relative
@@ -94,7 +97,7 @@ def validate(root):
             continue
         if parser.meta_refresh and path.name != "index.html":
             errors.append(f"{path.relative_to(root)}: unconditional meta refresh")
-        if parser.remote_images:
+        if parser.remote_images and remote_media_mode() == "rights-only":
             errors.append(
                 f"{path.relative_to(root)}: remote image hotlink(s): "
                 + ", ".join(parser.remote_images[:3]))

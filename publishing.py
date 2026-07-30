@@ -22,7 +22,7 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 UTC = timezone.utc
 HTTP_SCHEMES = {"http", "https"}
 TRACKING_QUERY_KEYS = {
-    "fbclid", "gclid", "mc_cid", "mc_eid", "ref", "ref_src",
+    "fbclid", "gclid", "mc_cid", "mc_eid", "ref_src",
     "utm_campaign", "utm_content", "utm_medium", "utm_source", "utm_term",
 }
 LANGS = {"en", "ar"}
@@ -60,6 +60,7 @@ class Story(TypedDict, total=False):
     risk_reasons: List[str]
     review_fingerprint: str
     review_approved: bool
+    review_status: str
     corrections: List[Dict[str, str]]
     corroborating_sources: List[Dict[str, str]]
     vetoed: bool
@@ -481,6 +482,11 @@ class BuildHealth:
     def hold(self, code: str, count: int = 1) -> None:
         with self._lock:
             self.withheld[code] = self.withheld.get(code, 0) + count
+
+    def block_media(self, code: str) -> None:
+        with self._lock:
+            self.media_blocked += 1
+            self.withheld[code] = self.withheld.get(code, 0) + 1
 
     def public_dict(self, story_counts: Dict[str, int]) -> Dict[str, Any]:
         """Return diagnostics safe to publish from a public repository."""
