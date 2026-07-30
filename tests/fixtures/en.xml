@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Fixture</title>
+    <item>
+      <title>Palestinian artists open a new community exhibition</title>
+      <link>https://example.com/palestine-art?utm_source=test</link>
+      <pubDate>Wed, 29 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Palestinian artists opened a community exhibition with work from Gaza and the West Bank.</description>
+      <media:thumbnail url="https://images.example.com/unlicensed.jpg"/>
+    </item>
+  </channel>
+</rss>

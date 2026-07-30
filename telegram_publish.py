@@ -29,10 +29,7 @@ STORY_URL_RX = re.compile(
 
 
 def load_json(path, default):
-    try:
-        return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
-    except (OSError, ValueError):
-        return default
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
 
 def save_ledger(ledger):
@@ -125,8 +122,11 @@ def suppress_duplicate_events(parts, deliveries, now=None):
     fresh, suppressed = [], 0
     for part in parts:
         toks = event_tokens(part.get("title", ""))
+        story_key = ":".join(part.get("delivery_key", "").split(":")[:3])
         match = next((key for lang, ktoks, key in recent
-                      if lang == part.get("lang") and same_event(toks, ktoks)), None)
+                      if lang == part.get("lang")
+                      and ":".join(key.split(":")[:3]) != story_key
+                      and same_event(toks, ktoks)), None)
         if match:
             deliveries[part["delivery_key"]] = {
                 "sent_at": now.isoformat(),
@@ -160,7 +160,7 @@ def wait_until_live(urls, attempts=4):
                 with urllib.request.urlopen(request, timeout=15) as response:
                     if response.status not in (200, 206):
                         unavailable.append(url)
-            except Exception:
+            except (OSError, urllib.error.URLError):
                 unavailable.append(url)
         if not unavailable:
             return True
@@ -187,7 +187,7 @@ def send_message(token, channel, message, attempts=4):
                     delay,
                     int(payload.get("parameters", {}).get("retry_after", 0)),
                 )
-            except Exception:
+            except (AttributeError, TypeError, ValueError):
                 pass
             if attempt + 1 < attempts:
                 time.sleep(delay)
@@ -203,9 +203,16 @@ def send_message(token, channel, message, attempts=4):
 def main():
     token = "".join(os.environ.get("TELEGRAM_BOT_TOKEN", "").split())
     if not token:
-        print("Telegram: TELEGRAM_BOT_TOKEN is missing", file=sys.stderr)
+        print("Telegram: disabled (TELEGRAM_BOT_TOKEN is not configured)")
+        return 0
+    try:
+        outbox = load_json(OUTBOX_PATH, {})
+    except (OSError, ValueError) as error:
+        print(
+            f"Telegram: outbox is unreadable ({type(error).__name__})",
+            file=sys.stderr,
+        )
         return 1
-    outbox = load_json(OUTBOX_PATH, {})
     if outbox.get("version") != 1 or not isinstance(outbox.get("entries"), list):
         print("Telegram: valid telegram-outbox.json is missing", file=sys.stderr)
         return 1
@@ -217,17 +224,36 @@ def main():
         )
         return 1
 
-    ledger = load_json(LEDGER_PATH, {"version": 1, "deliveries": {}})
-    if ledger.get("version") != 1 or not isinstance(ledger.get("deliveries"), dict):
+    reset_ledger = False
+    try:
+        ledger = load_json(LEDGER_PATH, {"version": 1, "deliveries": {}})
+        if ledger.get("version") != 1 or not isinstance(ledger.get("deliveries"), dict):
+            raise ValueError("invalid schema")
+    except (OSError, ValueError) as error:
+        print(
+            f"Telegram: delivery ledger is unreadable ({type(error).__name__}); "
+            "resetting and recovering from public channel history",
+            file=sys.stderr,
+        )
         ledger = {"version": 1, "deliveries": {}}
-    migrated = migrate_legacy_markers(
-        ledger, outbox, load_json(LEGACY_CACHE_PATH, {}))
+        reset_ledger = True
+    try:
+        legacy = load_json(LEGACY_CACHE_PATH, {})
+        if not isinstance(legacy, dict):
+            raise ValueError("invalid schema")
+    except (OSError, ValueError) as error:
+        print(
+            f"Telegram: legacy delivery state ignored ({type(error).__name__})",
+            file=sys.stderr,
+        )
+        legacy = {}
+    migrated = migrate_legacy_markers(ledger, outbox, legacy)
     try:
         recovered = recover_public_channel_markers(
             ledger, outbox, scrape_recent_delivery_keys())
-    except Exception:
+    except (OSError, UnicodeError, ValueError):
         recovered = 0
-    if migrated or recovered:
+    if reset_ledger or migrated or recovered:
         save_ledger(ledger)
 
     delivered, suppressed_total, failures = 0, 0, []

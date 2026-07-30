@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "asset": "originals/media/times-of-palestine-2026-election-succession-timeline.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "originals/media/times-of-palestine-2026-succession-power-map.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "og-banner.png",
+      "rightsBasis": "owned",
+      "credit": "Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "icon-512.png",
+      "rightsBasis": "owned",
+      "credit": "Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "signal-qr.png",
+      "rightsBasis": "operational",
+      "credit": "Times of Palestine Signal contact code",
+      "source": "Times of Palestine"
+    }
+  ]
+}

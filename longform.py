@@ -14,12 +14,16 @@ Images referenced as ![alt](name.png) are looked up in originals/media/ and copi
 dist/media/, then served from /media/name.png so the path works from any page depth.
 """
 import html
+import hashlib
 import re
 import shutil
 from pathlib import Path
 
+from publishing import PublishingError, load_media_manifest, media_rights_for
+
 ROOT = Path(__file__).parent
 MEDIA_SRC = ROOT / "originals" / "media"
+MEDIA_RIGHTS = load_media_manifest(ROOT / "media-rights.json")
 
 H_RX = re.compile(r"^(#{2,4})\s+(.*)$")
 IMG_RX = re.compile(r"^!\[([^\]]*)\]\(([^)\s]+)\)\s*$")
@@ -77,9 +81,18 @@ def body_html(text, media_prefix="/media/"):
         m = IMG_RX.match(line)
         if m:
             alt, src = m.group(1).strip(), m.group(2).strip()
+            rights = media_rights_for(src, MEDIA_RIGHTS)
+            if not rights:
+                raise PublishingError(f"long-form image {src!r} lacks rights metadata")
             if not src.startswith(("http://", "https://", "/")):
                 src = media_prefix + src.lstrip("./")
-            cap = f'<figcaption>{_inline(alt)}</figcaption>' if alt else ""
+            caption = " · ".join(x for x in (alt, rights.credit) if x)
+            if rights.license_url:
+                caption += f' · <a href="{_esc(rights.license_url)}" rel="license noopener">License</a>'
+                cap = f"<figcaption>{_inline(alt)} · {rights.credit} · " \
+                      f'<a href="{_esc(rights.license_url)}" rel="license noopener">License</a></figcaption>'
+            else:
+                cap = f'<figcaption>{_inline(caption)}</figcaption>' if caption else ""
             out.append(f'<figure class="lf"><img src="{_esc(src)}" alt="{_esc(alt)}" '
                        f'loading="lazy">{cap}</figure>')
             i += 1
@@ -120,24 +133,100 @@ def body_html(text, media_prefix="/media/"):
     return "".join(out)
 
 
-def copy_media(dist):
-    """Copy originals/media/* to dist/media/ so ![alt](name.png) resolves. Fail-open."""
-    try:
-        if not MEDIA_SRC.is_dir():
-            return 0
-        dest = Path(dist) / "media"
-        dest.mkdir(parents=True, exist_ok=True)
-        n = 0
-        for f in MEDIA_SRC.iterdir():
-            if f.is_file() and not f.name.startswith("."):
-                shutil.copy2(f, dest / f.name)
-                n += 1
-        if n:
-            print(f"  → long-form media: {n} file(s) copied")
-        return n
-    except Exception as e:
-        print(f"  ✗ long-form media copy skipped ({type(e).__name__})")
+def rendered_residue_warnings(rendered):
+    """Return unsafe Markdown tokens left behind by the supported renderer."""
+    warnings = []
+    if "[^" in rendered:
+        warnings.append("unrendered footnote marker '[^'")
+    if "![" in rendered:
+        warnings.append("unrendered image markdown '!['")
+    if "**" in rendered:
+        warnings.append("unrendered bold marker '**'")
+    if re.search(r'<p class="summary">\s*#', rendered):
+        warnings.append("line-initial heading marker '#' fell through into paragraph")
+    for paragraph in re.findall(
+        r'<p class="summary">(.*?)</p>', rendered, flags=re.S
+    ):
+        if "|" in re.sub(r"<[^>]+>", "", html.unescape(paragraph)):
+            warnings.append("pipe table residue '|' remained inside paragraph")
+            break
+    return warnings
+
+
+def validate_media_references(text, manifest, label):
+    """Require a rights record for every long-form image before publication."""
+    for line in (text or "").replace("\r\n", "\n").splitlines():
+        match = IMG_RX.match(line.strip())
+        if match:
+            asset = match.group(2).strip()
+            if asset.startswith(("http://", "https://")):
+                raise PublishingError(
+                    f"{label}: remote media hotlinking is disabled")
+            if not media_rights_for(asset, manifest):
+                raise PublishingError(
+                    f"{label}: image {asset!r} lacks rights metadata")
+
+
+def media_review_evidence(text, header_image=None):
+    """Hash local media and rights records into the exact review version."""
+    assets = set()
+    if header_image:
+        assets.add(header_image)
+    for line in (text or "").replace("\r\n", "\n").splitlines():
+        match = IMG_RX.match(line.strip())
+        if match:
+            assets.add(match.group(2).strip())
+    evidence = []
+    for asset in sorted(assets):
+        rights = media_rights_for(asset, MEDIA_RIGHTS)
+        if not rights:
+            raise PublishingError(f"image {asset!r} lacks rights metadata")
+        row = {
+            "asset": asset,
+            "rightsBasis": rights.rights_basis,
+            "credit": rights.credit,
+            "source": rights.source,
+            "licenseUrl": rights.license_url,
+        }
+        if not asset.startswith(("http://", "https://", "/")):
+            source = MEDIA_SRC / Path(asset).name
+            if not source.is_file():
+                raise PublishingError(f"referenced media does not exist: {asset}")
+            row["sha256"] = hashlib.sha256(source.read_bytes()).hexdigest()
+        evidence.append(row)
+    return evidence
+
+
+def copy_media(dist, stories):
+    """Copy only media referenced by review-eligible stories."""
+    needed = set()
+    for story in stories:
+        image = story.get("image") or ""
+        if image.startswith("/media/"):
+            needed.add(Path(image).name)
+        for line in (story.get("brief") or "").replace("\r\n", "\n").splitlines():
+            match = IMG_RX.match(line.strip())
+            if match and not match.group(2).startswith(("http://", "https://", "/")):
+                needed.add(Path(match.group(2)).name)
+    dest = Path(dist) / "media"
+    if dest.exists():
+        shutil.rmtree(dest)
+    if not MEDIA_SRC.is_dir() or not needed:
         return 0
+    dest.mkdir(parents=True, exist_ok=True)
+    n = 0
+    for name in sorted(needed):
+        f = MEDIA_SRC / name
+        if not f.is_file():
+            raise PublishingError(f"referenced media does not exist: {name}")
+        relative = f"originals/media/{f.name}"
+        if relative not in MEDIA_RIGHTS:
+            raise PublishingError(f"{relative}: local media lacks rights metadata")
+        shutil.copy2(f, dest / f.name)
+        n += 1
+    if n:
+        print(f"  → long-form media: {n} file(s) copied")
+    return n
 
 
 CSS = """

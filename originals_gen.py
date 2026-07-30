@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
-"""The investigations desk: one researched original report per hour, EN and AR.
+"""Automated investigations desk: one researched EN/AR report per desk hour.
 
-Runs inside the normal build (see .github/workflows/build.yml). Every build it
-asks: has a report already been written this UTC hour? If not, it takes the next
-topic from topics.json, researches it with live web search, writes the report in
-English, renders it in Arabic, and drops both into originals/ — which build.py
-already publishes under the Times of Palestine byline with no external link-out.
+The normal build invokes this desk before loading originals. A sourced bilingual
+report is written directly to `originals/` and can publish in the same build.
 
 Three rules make this safe enough to publish unattended:
 
@@ -16,21 +13,21 @@ Three rules make this safe enough to publish unattended:
   2. THE ISSUE, NEVER THE INDIVIDUAL. No topic is avoided for being
      uncomfortable, but the subject is always a system, a policy or a pattern —
      never a person's guilt. The desk may not assemble an accusation.
-  3. FAIL OPEN. Any error here is caught and logged; the news build continues
-     regardless. The desk is additive, never load-bearing.
+  3. FAIL OPEN. A desk failure is logged but never stops the news build.
 
 Cost: roughly one Opus research pass plus a shorter Arabic pass per report.
-Set INVESTIGATIONS=off in the workflow env to pause it without a code change.
 """
 import json
 import os
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+from tempfile import NamedTemporaryFile
 
 ROOT = Path(__file__).parent
 TOPICS_FILE = ROOT / "topics.json"
 ORIGINALS = ROOT / "originals"
+DRAFTS = ROOT / ".editorial-drafts"
 STATE_FILE = ORIGINALS / "_state.json"
 
 MODEL = "claude-opus-5"
@@ -221,13 +218,13 @@ def _save_state(state, now, hour, error=None):
             state["error"] = error
         else:
             state.pop("error", None)
-        STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
-    except Exception:
+        STATE_FILE.write_text(
+            json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
+    except OSError:
         pass
 
 
-def _write_file(topic, parsed, lang, now):
-    """Emit the originals/<id>.<lang>.txt that build.py already knows how to publish."""
+def _file_content(topic, parsed, now):
     # Sources are a reporting gate, not page furniture: the parser still requires
     # MIN_SOURCES before anything publishes, but a news article carries its
     # attribution inline ("according to OCHA figures"), never as a bibliography.
@@ -236,8 +233,38 @@ def _write_file(topic, parsed, lang, now):
             f"category: {topic['cat']}\n"
             f"date: {now.isoformat()}\n"
             f"maxAgeHours: 720\n")
-    (ORIGINALS / f"{topic['id']}.{lang}.txt").write_text(
-        head + "---\n" + body + "\n", encoding="utf-8")
+    return head + "---\n" + body + "\n"
+
+
+def _write_pair(topic, parsed_en, parsed_ar, now):
+    """Stage both editions before exposing either one to the live originals glob."""
+    ORIGINALS.mkdir(exist_ok=True)
+    publication_id = f"{topic['id']}-{now.strftime('%Y-%m-%d-%H')}"
+    destinations = {
+        lang: ORIGINALS / f"{publication_id}.{lang}.txt"
+        for lang in ("en", "ar")
+    }
+    existing = [path.name for path in destinations.values() if path.exists()]
+    if existing:
+        raise FileExistsError(
+            f"refusing to overwrite published investigation: {', '.join(existing)}")
+    staged = []
+    try:
+        for lang, parsed in (("en", parsed_en), ("ar", parsed_ar)):
+            with NamedTemporaryFile(
+                "w", encoding="utf-8", dir=ORIGINALS, delete=False
+            ) as handle:
+                handle.write(_file_content(topic, parsed, now))
+                staged.append((
+                    Path(handle.name),
+                    destinations[lang],
+                ))
+        for temporary, destination in staged:
+            os.replace(temporary, destination)
+    finally:
+        for temporary, _destination in staged:
+            temporary.unlink(missing_ok=True)
+    return publication_id
 
 
 # The desk files at most one report per desk hour. Three desk hours a day keeps
@@ -314,26 +341,37 @@ def _run():
                 f"[{err}] "
                 f"[{len(arabic)} chars, has SOURCES={'SOURCES:' in arabic}]")
 
-    _write_file(topic, parsed_en, "en", now)
-    _write_file(topic, parsed_ar, "ar", now)
+    import longform
+    for lang, parsed in (("en", parsed_en), ("ar", parsed_ar)):
+        residue = longform.rendered_residue_warnings(
+            longform.body_html(parsed["body"]))
+        if residue:
+            raise ValueError(
+                f"{lang} report contains unsafe rendered markup: "
+                f"{'; '.join(residue)}")
+    publication_id = _write_pair(topic, parsed_en, parsed_ar, now)
 
     state.setdefault("done", {})[topic["id"]] = now.isoformat()
     _save_state(state, now, hour, None)
-    return (f"investigations: filed '{topic['id']}' — {len(parsed_en['body'].split())} words EN, "
+    return (f"investigations: filed '{publication_id}' — "
+            f"{len(parsed_en['body'].split())} words EN, "
             f"{len(parsed_ar['body'].split())} words AR, {len(parsed_en['sources'])} sources")
 
 
 def run():
-    """Never raises. The investigations desk must never be able to stop the news."""
+    """Run the desk without allowing a model or network failure to stop the news."""
     try:
-        status = _run()
-    except Exception as e:
+        return _run()
+    except Exception as error:
         now = datetime.now(timezone.utc)
         hour = now.strftime("%Y-%m-%dT%H")
         state = _load(STATE_FILE, {})
-        _save_state(state, now, hour, f"stage failed ({type(e).__name__}: {e})")
-        return f"investigations: stage failed ({type(e).__name__}: {e}) — news build continues"
-    return status
+        _save_state(
+            state, now, hour,
+            f"stage failed ({type(error).__name__}: {error})")
+        return (
+            f"investigations: stage failed ({type(error).__name__}: {error}) "
+            "— news build continues")
 
 
 if __name__ == "__main__":

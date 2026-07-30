@@ -5,15 +5,22 @@ Kept in a separate module so build.py needs only a one-line hook. Everything
 here is fail-open — discoverability plumbing must never block publication.
 """
 import json
+import os
 import urllib.request
 from datetime import datetime, timezone
+from tempfile import NamedTemporaryFile
+
+from publishing import (
+    canonicalize_url, is_http_url, is_public_http_url, safe_urlopen, utc_iso,
+)
 
 # Public Telegram channel; posts go out via a bot the founder controls.
-# The bot token lives ONLY in the TELEGRAM_BOT_TOKEN repo secret — never here,
-# never in logs. Without the secret this feature silently does nothing.
+# The bot token lives ONLY in the TELEGRAM_BOT_TOKEN repo secret — never here
+# and never in logs. Without the secret the publisher reports itself disabled.
 TELEGRAM_CHANNEL = "@timesofpalestin"
 TELEGRAM_MAX_AGE_H = 6
 TELEGRAM_OUTBOX = "telegram-outbox.json"
+WEBHOOK_LEDGER = "webhook-delivery.json"
 
 # IndexNow (indexnow.org): instant URL submission to Bing/Yandex/Seznam/naver.
 # No account needed — the key is proven by hosting <key>.txt at the site root.
@@ -41,11 +48,10 @@ ABOUT = {
              "written by the TOP Newsdesk, clearly bylined as such."),
             ("Field reports",
              "Citizen journalists and witnesses send reports from the ground through "
-             "our encrypted tip line. Before publication, every field report passes an "
-             "automated triage adapted from open-source newsroom tooling: reports are "
-             "screened for internal consistency and concrete, checkable detail, and "
-             "held back when they rely on inflammatory rhetoric instead of facts. "
-             "Field reports are published in a clearly separated section."),
+             "our encrypted tip line. No private tip is ingested by this public "
+             "repository. Public field reports and other sensitive claims carry a "
+             "developing-report label while awaiting additional editorial review. "
+             "Field reports appear in a clearly separated section."),
             ("Editorial standards & corrections",
              "We report without censorship and without favor, we hold power to "
              "account wherever it sits, and we criticize through journalism, never "
@@ -79,10 +85,10 @@ ABOUT = {
              "التحرير وتُنسب إليه بوضوح."),
             ("التقارير الميدانية",
              "يرسل الصحفيون المواطنون والشهود تقاريرهم من الميدان عبر خطنا الآمن "
-             "المشفّر. قبل النشر، يمر كل تقرير ميداني بفرزٍ آلي مقتبس من أدوات "
-             "مفتوحة المصدر لغرف الأخبار: تُفحص التقارير من حيث التماسك الداخلي "
-             "والتفاصيل القابلة للتحقق، وتُحجب حين تعتمد على الخطاب التحريضي بدل "
-             "الوقائع. وتُنشر التقارير الميدانية في قسم مستقل واضح."),
+             "المشفّر. لا تدخل أي معلومة خاصة إلى هذا المستودع العام. وتُحجب "
+             "التقارير الميدانية العامة وغيرها من الادعاءات الحساسة حتى يوافق "
+             "محرر بشري على النسخة المحددة التي ستُنشر. وتظهر التقارير الميدانية "
+             "في قسم مستقل واضح."),
             ("المعايير التحريرية والتصويبات",
              "ننقل الخبر بلا رقابة وبلا محاباة، ونحاسب السلطة أينما كانت، وننتقد "
              "بالصحافة المهنية لا بالإساءات الشخصية. وحين نخطئ نصحح فوراً. لطلب "
@@ -104,7 +110,7 @@ def render_about(lang, built_at):
     b = __import__("build")
     t, a = b.STR[lang], ABOUT[lang]
     body = "".join(
-        f'<h2 style="font-family:var(--serif);font-size:1.25rem;margin-top:1.6rem">{h}</h2>'
+        f'<h2 class="about-section">{h}</h2>'
         f'<p class="summary">{p}</p>' for h, p in a["sections"])
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
@@ -118,8 +124,8 @@ def render_about(lang, built_at):
 <link rel="alternate" hreflang="en" href="{b.BASE_URL}/en/about.html">
 <link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/about.html">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="{b.FONTS}" rel="stylesheet">
-<style>{b.CSS}</style>{b.swg(lang)}
+<link href="{b.FONTS[lang]}" rel="stylesheet">
+<link href="/assets/site.css" rel="stylesheet">{b.swg(lang)}
 </head>
 <body>
 <div class="backbar"><a href="./">{a['back']}</a></div>
@@ -132,13 +138,14 @@ def render_about(lang, built_at):
     <h1>{a['title']}</h1>
     {body}
     <div class="cta"><a href="{b.SIGNAL_URL}" target="_blank" rel="noopener">🔒 {a['cta']} — @TOP.972</a>
-    <p style="margin-top:.9rem"><a href="{b.TELEGRAM_BOT_URL}" target="_blank" rel="noopener" style="font-weight:700;color:var(--green)">{t['tips_tg']} → {b.TELEGRAM_BOT_NAME}</a></p></div>
+    <p class="about-telegram"><a href="{b.TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} → {b.TELEGRAM_BOT_NAME}</a></p></div>
   </article>
 </main>
 <footer><div class="wrap">
   <div class="flagline"></div>
   <div class="legal">
     <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span>
+    <a href="status.html">{"حالة النشر" if lang == "ar" else "Publishing status"}</a>
     <a href="./">{a['back']}</a>
   </div>
 </div></footer>
@@ -162,7 +169,7 @@ def render_news_sitemap(langs_items, built_at, base_url):
                 f"<news:name>{SITE_NAMES[lang]}</news:name>"
                 f"<news:language>{lang}</news:language>"
                 f"</news:publication>"
-                f"<news:publication_date>{it['date'].isoformat()}</news:publication_date>"
+                f"<news:publication_date>{utc_iso(it['date'])}</news:publication_date>"
                 f"<news:title>{title}</news:title>"
                 f"</news:news></url>")
     return ('<?xml version="1.0" encoding="UTF-8"?>'
@@ -194,7 +201,8 @@ def build_telegram_outbox(langs_items, base_url, now=None):
     groups = {}
     for _, items in langs_items:
         for it in items:
-            if (now - it["date"]).total_seconds() > TELEGRAM_MAX_AGE_H * 3600:
+            revision_time = it.get("modified") or it["date"]
+            if (now - revision_time).total_seconds() > TELEGRAM_MAX_AGE_H * 3600:
                 continue
             link = str(it.get("link", ""))
             original_slug = ""
@@ -209,18 +217,24 @@ def build_telegram_outbox(langs_items, base_url, now=None):
             )
             group = groups.setdefault(group_key, {
                 "group_key": group_key,
-                "published_at": it["date"].isoformat(),
+                "published_at": revision_time.isoformat(),
                 "parts": [],
             })
-            if it["date"].isoformat() > group["published_at"]:
-                group["published_at"] = it["date"].isoformat()
+            if revision_time.isoformat() > group["published_at"]:
+                group["published_at"] = revision_time.isoformat()
+            base_key = f"story:{it['lang']}:{it['pid']}"
+            revision = utc_iso(revision_time)
             group["parts"].append({
-                "delivery_key": f"story:{it['lang']}:{it['pid']}",
-                "legacy_key": f"tg:{it['lang']}:{it['pid']}",
+                "delivery_key": (
+                    f"{base_key}:{revision}" if it.get("modified") else base_key),
+                "legacy_key": (
+                    "" if it.get("modified")
+                    else f"tg:{it['lang']}:{it['pid']}"),
                 "lang": it["lang"],
                 "pid": it["pid"],
                 "title": it["title"],
                 "url": f"{base_url}/{it['lang']}/story/{it['pid']}.html",
+                "revision": revision,
             })
     outbox = list(groups.values())
     for entry in outbox:
@@ -242,32 +256,224 @@ def write_telegram_outbox(dist, langs_items, base_url):
     print(f"  → Telegram outbox: {len(outbox['entries'])} fresh story groups")
 
 
-def write_extras(dist, langs_items, built_at, base_url):
+def render_json_feed(lang, items, base_url):
+    """Credential-free JSON Feed containing only publication-eligible stories."""
+    title = SITE_NAMES[lang]
+    rows = []
+    for item in sorted(items, key=lambda row: row["date"], reverse=True):
+        page_url = f"{base_url}/{lang}/story/{item['pid']}.html"
+        row = {
+            "id": page_url,
+            "url": page_url,
+            "external_url": None if item.get("original") else item["link"],
+            "title": item["title"],
+            "summary": (item.get("brief") or item.get("dek") or "")[:1000],
+            "date_published": utc_iso(item["date"]),
+            "language": lang,
+            "authors": [{"name": item["source"],
+                         **({"url": item["source_url"]} if item.get("source_url") else {})}],
+            "tags": [item["cat"]],
+        }
+        if item.get("modified"):
+            row["date_modified"] = utc_iso(item["modified"])
+        if item.get("image"):
+            row["image"] = item["image"]
+        rows.append(row)
+    return {
+        "version": "https://jsonfeed.org/version/1.1",
+        "title": title,
+        "home_page_url": f"{base_url}/{lang}/",
+        "feed_url": f"{base_url}/{lang}/feed.json",
+        "language": lang,
+        "items": rows,
+    }
+
+
+def render_distribution_outbox(langs_items, base_url, built_at):
+    items = []
+    for lang, rows in langs_items:
+        for item in rows:
+            items.append({
+                "pid": item["pid"],
+                "lang": lang,
+                "title": item["title"],
+                "date": utc_iso(item["date"]),
+                "modified": utc_iso(item["modified"]) if item.get("modified") else None,
+                "source": item["source"],
+                "source_url": item.get("source_url", ""),
+                "original": bool(item.get("original")),
+                "link": item.get("link", ""),
+            })
+    return {
+        "schemaVersion": 1,
+        "generatedAt": utc_iso(built_at),
+        "baseUrl": base_url,
+        "items": items,
+    }
+
+
+def delivery_revision(item):
+    return utc_iso(delivery_time(item))
+
+
+def delivery_time(item):
+    return item.get("modified") or item["date"]
+
+
+def needs_revision_delivery(cache, marker, item):
+    previous = cache.get(marker)
+    if previous is None:
+        return True
+    if not item.get("modified"):
+        return False
+    return previous.get("revision") != delivery_revision(item)
+
+
+def save_delivery_ledger(path, ledger):
+    with NamedTemporaryFile(
+        "w", encoding="utf-8", dir=path.parent, delete=False
+    ) as handle:
+        json.dump(ledger, handle, ensure_ascii=False)
+        handle.write("\n")
+        temporary = handle.name
+    os.replace(temporary, path)
+
+
+def post_webhook(dist, langs_items, base_url):
+    """Send a bounded outbox to an optional generic connector."""
+    target = os.environ.get("DISTRIBUTION_WEBHOOK_URL", "").strip()
+    if not target:
+        return "disabled"
+    if not is_public_http_url(target):
+        raise ValueError("DISTRIBUTION_WEBHOOK_URL must be a public HTTP(S) URL")
+    cache_path = dist.parent / WEBHOOK_LEDGER
+    cache = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
+    items = sorted(
+        (item for _, rows in langs_items for item in rows),
+        key=lambda item: item["date"],
+        reverse=True,
+    )
+    pending = [
+        item for item in items
+        if needs_revision_delivery(
+            cache, f"webhook:{item['lang']}:{item['pid']}", item)
+    ][:20]
+    posted = 0
+    for item in pending:
+        page_url = f"{base_url}/{item['lang']}/story/{item['pid']}.html"
+        revision = delivery_revision(item)
+        key = f"top:{item['lang']}:{item['pid']}:{revision}"
+        payload = json.dumps({
+            "id": key,
+            "title": item["title"],
+            "url": page_url,
+            "publishedAt": utc_iso(item["date"]),
+            "modifiedAt": (
+                utc_iso(item["modified"]) if item.get("modified") else None),
+            "revision": revision,
+            "language": item["lang"],
+            "source": item["source"],
+        }, ensure_ascii=False).encode("utf-8")
+        request = urllib.request.Request(
+            target,
+            data=payload,
+            headers={"Content-Type": "application/json", "Idempotency-Key": key},
+        )
+        with safe_urlopen(
+            request, timeout=15, allow_redirects=False
+        ) as response:
+            if not 200 <= response.status < 300:
+                raise OSError(f"webhook returned HTTP {response.status}")
+        cache[f"webhook:{item['lang']}:{item['pid']}"] = {
+            "ts": datetime.now(timezone.utc).timestamp(),
+            "revision": revision,
+        }
+        save_delivery_ledger(cache_path, cache)
+        posted += 1
+    if not pending:
+        save_delivery_ledger(cache_path, cache)
+    print(f"  → webhook: delivered {posted} eligible stories")
+    return "ok"
+
+
+def render_status(lang):
+    title = "حالة النشر" if lang == "ar" else "Publishing status"
+    loading = "جارٍ تحميل حالة آخر بناء…" if lang == "ar" else "Loading latest build health…"
+    return f"""<!DOCTYPE html><html lang="{lang}" dir="{'rtl' if lang == 'ar' else 'ltr'}">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title} — {SITE_NAMES[lang]}</title><link rel="stylesheet" href="/assets/site.css"></head>
+<body><main><article class="story"><p class="kick">{SITE_NAMES[lang]}</p><h1>{title}</h1>
+<p id="health" class="summary">{loading}</p><p><a href="./">{"العودة إلى الأخبار" if lang == "ar" else "Back to the news"}</a></p>
+</article></main><script>
+fetch("/health.json",{{cache:"no-store"}}).then(r=>{{if(!r.ok)throw Error(r.status);return r.json()}})
+.then(h=>{{document.getElementById("health").textContent=`${{h.status.toUpperCase()}} · ${{h.builtAt}} · EN ${{h.stories.en}} · AR ${{h.stories.ar}} · held ${{h.reviewHeld}}`;}})
+.catch(()=>{{document.getElementById("health").textContent="Status unavailable";}});
+</script></body></html>"""
+
+
+def write_extras(dist, langs_items, built_at, base_url, health):
     """Hook called from build.py main() after the standard sitemap/robots write."""
-    try:
-        (dist / "news-sitemap.xml").write_text(
-            render_news_sitemap(langs_items, built_at, base_url), encoding="utf-8")
-        (dist / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8"); [(dist / f.name).write_text(f.read_text(encoding="utf-8"), encoding="utf-8") for f in dist.parent.glob("google*.html")]; [(dist / n).write_bytes((dist.parent / n).read_bytes()) for n in ("manifest.json", "sw.js", "icon-512.png") if (dist.parent / n).exists()]
-        robots = dist / "robots.txt"
-        robots.write_text(robots.read_text(encoding="utf-8")
-                          + f"Sitemap: {base_url}/news-sitemap.xml\n", encoding="utf-8")
-        for lang, _ in langs_items:  # About & Contact (Google News accountability)
-            (dist / lang / "about.html").write_text(
-                render_about(lang, built_at), encoding="utf-8")
-        (dist / "404.html").write_text('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — Times of Palestine</title><meta name="robots" content="noindex"><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 46 46%22><rect width=%2246%22 height=%2215.3%22 fill=%22%230b0b0c%22/><rect y=%2215.3%22 width=%2246%22 height=%2215.3%22 fill=%22%23fff%22/><rect y=%2230.6%22 width=%2246%22 height=%2215.4%22 fill=%22%23007A3D%22/><path d=%22M0 0 L21 23 L0 46 Z%22 fill=%22%23CE1126%22/></svg>"><style>*{margin:0;padding:0;box-sizing:border-box}body{background:#faf9f4;color:#141419;font-family:-apple-system,Helvetica,Arial,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:2rem}a{color:inherit}h1{font-family:Georgia,serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;line-height:1.15}.flag{width:130px;height:5px;margin:0 auto 1.6rem;background:linear-gradient(90deg,#0b0b0c 0 34%,#C8102E 34% 67%,#00753A 67% 100%)}p{margin-top:.9rem;color:#595962;line-height:1.6}.links{margin-top:1.8rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}.links a{background:#C8102E;color:#fff;font-weight:800;padding:.8rem 1.6rem;border-radius:3px;text-decoration:none}@media (prefers-color-scheme:dark){body{background:#101013;color:#e9e9ef}p{color:#a0a0aa}.links a{background:#ff8896;color:#101013}}</style></head><body><div><div class="flag"></div><h1>That page is no longer here.</h1><p>Stories rotate off the front page as the news moves. The newsroom is still publishing — pick an edition below.</p><p dir="rtl" lang="ar">تدور الأخبار وتُستبدل الصفحات باستمرار. اختر النسخة التي تريد قراءتها.</p><div class="links"><a href="/en/">English edition</a><a href="/ar/">النسخة العربية</a></div></div></body></html>', encoding="utf-8"); sm = dist / "sitemap.xml"  # about pages join the regular sitemap
-        about_urls = "".join(f"<url><loc>{base_url}/{lang}/about.html</loc></url>"
-                             for lang, _ in langs_items)
-        sm.write_text(sm.read_text(encoding="utf-8")
-                      .replace("</urlset>", about_urls + "</urlset>"), encoding="utf-8")
-    except Exception as e:
-        print(f"  ✗ seo extras (files): {type(e).__name__}")
+    (dist / "news-sitemap.xml").write_text(
+        render_news_sitemap(langs_items, built_at, base_url), encoding="utf-8")
+    (dist / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")
+    for source in dist.parent.glob("google*.html"):
+        (dist / source.name).write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
+    for name in ("manifest.json", "sw.js", "icon-512.png"):
+        source = dist.parent / name
+        if source.exists():
+            (dist / name).write_bytes(source.read_bytes())
+    robots = dist / "robots.txt"
+    robots.write_text(robots.read_text(encoding="utf-8")
+                      + f"Sitemap: {base_url}/news-sitemap.xml\n", encoding="utf-8")
+    for lang, items in langs_items:
+        (dist / lang / "about.html").write_text(
+            render_about(lang, built_at), encoding="utf-8")
+        (dist / lang / "status.html").write_text(render_status(lang), encoding="utf-8")
+        (dist / lang / "feed.json").write_text(
+            json.dumps(render_json_feed(lang, items, base_url), ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+    (dist / "distribution-outbox.json").write_text(
+        json.dumps(
+            render_distribution_outbox(langs_items, base_url, built_at),
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+    write_telegram_outbox(dist, langs_items, base_url)
+    (dist / "404.html").write_text('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — Times of Palestine</title><meta name="robots" content="noindex"><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 46 46%22><rect width=%2246%22 height=%2215.3%22 fill=%22%230b0b0c%22/><rect y=%2215.3%22 width=%2246%22 height=%2215.3%22 fill=%22%23fff%22/><rect y=%2230.6%22 width=%2246%22 height=%2215.4%22 fill=%22%23007A3D%22/><path d=%22M0 0 L21 23 L0 46 Z%22 fill=%22%23CE1126%22/></svg>"><style>*{margin:0;padding:0;box-sizing:border-box}body{background:#faf9f4;color:#141419;font-family:-apple-system,Helvetica,Arial,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:2rem}a{color:inherit}h1{font-family:Georgia,serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;line-height:1.15}.flag{width:130px;height:5px;margin:0 auto 1.6rem;background:linear-gradient(90deg,#0b0b0c 0 34%,#C8102E 34% 67%,#00753A 67% 100%)}p{margin-top:.9rem;color:#595962;line-height:1.6}.links{margin-top:1.8rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}.links a{background:#C8102E;color:#fff;font-weight:800;padding:.8rem 1.6rem;border-radius:3px;text-decoration:none}@media (prefers-color-scheme:dark){body{background:#101013;color:#e9e9ef}p{color:#a0a0aa}.links a{background:#ff8896;color:#101013}}</style></head><body><div><div class="flag"></div><h1>That page is no longer here.</h1><p>Stories rotate off the front page as the news moves. The newsroom is still publishing — pick an edition below.</p><p dir="rtl" lang="ar">تدور الأخبار وتُستبدل الصفحات باستمرار. اختر النسخة التي تريد قراءتها.</p><div class="links"><a href="/en/">English edition</a><a href="/ar/">النسخة العربية</a></div></div></body></html>', encoding="utf-8")
+    sm = dist / "sitemap.xml"
+    extra_urls = "".join(
+        f"<url><loc>{base_url}/{lang}/{page}</loc></url>"
+        for lang, _ in langs_items for page in ("about.html", "status.html"))
+    sm.write_text(sm.read_text(encoding="utf-8")
+                  .replace("</urlset>", extra_urls + "</urlset>"), encoding="utf-8")
+    health.checks["discovery_files"] = "ok"
+    connector_status = "disabled" if os.environ.get("TOP_OFFLINE") == "1" else "post_deploy"
+    health.connectors.update({
+        "indexnow": connector_status,
+        "telegram": connector_status,
+        "webhook": connector_status,
+    })
+
+
+def deliver(dist, langs_items, base_url, health):
+    """Run external side effects only after the generated site has validated."""
+    if os.environ.get("TOP_OFFLINE") == "1":
+        health.connectors.update({
+            "indexnow": "disabled", "telegram": "disabled", "webhook": "disabled"})
         return
     try:
         status, n = ping_indexnow(langs_items, base_url)
         print(f"  → IndexNow: submitted {n} fresh URLs (HTTP {status})")
+        health.connectors["indexnow"] = "ok"
     except Exception as e:  # network hiccups must not fail the build
         print(f"  → IndexNow ping skipped ({type(e).__name__})")
+        health.connectors["indexnow"] = "degraded"
+    health.connectors["telegram"] = "external_outbox"
     try:
-        write_telegram_outbox(dist, langs_items, base_url)
-    except Exception as e:  # the next hourly run can recreate a failed outbox
-        print(f"  → Telegram outbox skipped ({type(e).__name__})")
+        health.connectors["webhook"] = post_webhook(dist, langs_items, base_url)
+    except Exception as e:
+        print(f"  → webhook posting skipped ({type(e).__name__})")
+        health.connectors["webhook"] = "degraded"
