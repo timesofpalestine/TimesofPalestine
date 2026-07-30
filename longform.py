@@ -136,7 +136,8 @@ def body_html(text, media_prefix="/media/"):
                 # charter a self-created TOP graphic: default to owned rights.
                 # Only remote or missing assets still require a manifest entry.
                 local = (not src.startswith(("http://", "https://", "/"))
-                         and (MEDIA_SRC / Path(src.lstrip("./")).name).is_file())
+                         and (MEDIA_SRC / Path(src.lstrip("./")).name).is_file()
+                         and house_asset(src))
                 if local:
                     rights = MediaRights(
                         asset=f"originals/media/{Path(src.lstrip('./')).name}",
@@ -228,7 +229,7 @@ def validate_media_references(text, manifest, label):
             if asset.startswith(("http://", "https://")):
                 raise PublishingError(
                     f"{label}: remote media hotlinking is disabled")
-            if not media_rights_for(asset, manifest):
+            if not media_rights_for(asset, manifest) and not house_asset(asset):
                 raise PublishingError(
                     f"{label}: image {asset!r} lacks rights metadata")
 
@@ -245,6 +246,11 @@ def media_review_evidence(text, header_image=None):
     evidence = []
     for asset in sorted(assets):
         rights = media_rights_for(asset, MEDIA_RIGHTS)
+        if not rights and house_asset(asset):
+            rights = MediaRights(
+                asset=f"originals/media/{Path(asset).name}",
+                rights_basis="owned", credit="Graphic: Times of Palestine",
+                source="Times of Palestine")
         if not rights:
             raise PublishingError(f"image {asset!r} lacks rights metadata")
         row = {
@@ -261,6 +267,12 @@ def media_review_evidence(text, header_image=None):
             row["sha256"] = hashlib.sha256(source.read_bytes()).hexdigest()
         evidence.append(row)
     return evidence
+
+
+def house_asset(name):
+    """Self-created house graphics: owned by charter, no manifest entry needed."""
+    n = Path(name).name
+    return n.startswith("times-of-palestine-") and n.endswith(".svg")
 
 
 def copy_media(dist, stories):
@@ -286,7 +298,7 @@ def copy_media(dist, stories):
         if not f.is_file():
             raise PublishingError(f"referenced media does not exist: {name}")
         relative = f"originals/media/{f.name}"
-        if relative not in MEDIA_RIGHTS:
+        if relative not in MEDIA_RIGHTS and not house_asset(f.name):
             raise PublishingError(f"{relative}: local media lacks rights metadata")
         shutil.copy2(f, dest / f.name)
         n += 1

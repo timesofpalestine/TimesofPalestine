@@ -105,6 +105,17 @@ jobs:
             numbers behind the institution. Research data only. Reference it
             from BOTH bodies.
 
+            LEDE VISUAL: give the article an `image:` header pointing to
+            /media/<file>. Best: a rights-cleared REAL photo or screenshot
+            (public domain, CC-licensed, official press kit, or open-source
+            project assets) saved to originals/media/ WITH an entry appended
+            to media-rights.json recording asset path, rightsBasis, credit
+            and licenseUrl — follow the existing entries' format. Otherwise:
+            a house SVG illustration of the subject (named
+            times-of-palestine-*.svg, no manifest needed). Never leave an
+            original without a lede visual; the category cover is only the
+            automatic fallback.
+
             STEP 5 — VALIDATE AND PUBLISH: python3 build.py must show
             "✓ original:" for both files and no skip; git add ONLY your new
             files; commit as git -c user.name=timesofpalestine

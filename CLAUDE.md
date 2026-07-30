@@ -120,6 +120,14 @@ it to Telegram. No human machine involved. The contract:
 3. Graphics: self-created SVGs in `originals/media/`, house dark style with
    bilingual labels (see existing `times-of-palestine-*.svg`). Never
    copyrighted images.
+   **Lede visual protocol (owner decision 2026-07-30):** every original
+   carries an `image:` header. Priority: (1) a rights-cleared REAL photo or
+   screenshot of the subject (public domain, CC, official press kit,
+   open-source assets) saved to `originals/media/` with a
+   `media-rights.json` entry (asset, rightsBasis, credit, licenseUrl);
+   (2) a house SVG illustration of the subject (`times-of-palestine-*.svg`,
+   auto-owned, no manifest entry). Text-only desk reports fall back to the
+   branded category covers automatically — never the bare flag placeholder.
    **Video (embeds only, never hosted):** `!video[caption](url)` on its own
    line. Whitelisted hosts ONLY: YouTube watch/shorts/youtu.be URLs (renders
    as the privacy youtube-nocookie player), public Telegram post URLs

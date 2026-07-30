@@ -108,6 +108,17 @@ jobs:
             numbers. Reference it from BOTH language bodies with
             ![caption](filename.svg). Self-created graphics only.
 
+            LEDE VISUAL: give the article an `image:` header pointing to
+            /media/<file>. Best: a rights-cleared REAL photo or screenshot
+            (public domain, CC-licensed, official press kit, or open-source
+            project assets) saved to originals/media/ WITH an entry appended
+            to media-rights.json recording asset path, rightsBasis, credit
+            and licenseUrl — follow the existing entries' format. Otherwise:
+            a house SVG illustration of the subject (named
+            times-of-palestine-*.svg, no manifest needed). Never leave an
+            original without a lede visual; the category cover is only the
+            automatic fallback.
+
             STEP 5 — VALIDATE AND PUBLISH.
             1. Run: python3 build.py — confirm "✓ original:" appears for BOTH
                of your files and no "⚠⚠ original skipped" mentions them. Fix

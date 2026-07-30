@@ -500,6 +500,12 @@ def attach_media(item, candidate, local_original=False):
                 else "remote_media_disabled")
         return
     rights = media_rights_for(candidate, MEDIA_RIGHTS)
+    if not rights and local_original and __import__("longform").house_asset(candidate):
+        item["image"] = candidate
+        item["media"] = {"credit": "Graphic: Times of Palestine",
+                         "rightsBasis": "owned", "source": "Times of Palestine",
+                         "licenseUrl": None}
+        return
     if not rights:
         if local_original:
             raise PublishingError(
@@ -1153,6 +1159,12 @@ def load_originals(lang):
         }
         item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]
         attach_media(item, meta.get("image") or None, local_original=True)
+        if not item.get("image"):
+            # No lede should ever be the bare flag placeholder: text-only desk
+            # reports get the branded category cover (house SVG).
+            cover = f"times-of-palestine-cover-{item['cat']}.svg"
+            if (ROOT / "originals" / "media" / cover).is_file():
+                attach_media(item, f"/media/{cover}", local_original=True)
         __import__("longform").validate_media_references(
             body, MEDIA_RIGHTS, path.name)
         item["media_evidence"] = __import__("longform").media_review_evidence(
@@ -1956,7 +1968,8 @@ def render_story(it, lang, related, rail, built_at):
     related_cards = "".join(card(r, lang, "") for r in related)
     page_url = f"{BASE_URL}/{lang}/story/{it['pid']}.html"; _q = __import__("urllib.parse", fromlist=["quote"]).quote; share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a></div>')
     desc = esc((it.get("brief") or it["dek"]).replace(chr(10), " ")[:155])
-    og_image = f'<meta property="og:image" content="{esc(it["image"])}">' if it["image"] else ""
+    og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
+    og_image = f'<meta property="og:image" content="{esc(og_img_url)}">' if it["image"] else ""
     hreflang = ""
     if it["source_id"] == "top-original" and str(it.get("link", "")).startswith("original:"):
         stem = it["link"].split(":", 1)[1]
