@@ -202,6 +202,18 @@ def norm_title(t):
     return re.sub(r"[\W_]+", " ", strip_html(t).lower(), flags=re.UNICODE).strip()
 
 esc = lambda s: html.escape(s or "", quote=True)
+
+
+def summary_html(text):
+    """Render summary inline Markdown through the escape-first long-form parser."""
+    return __import__("longform").inline_html(text)
+
+
+def summary_text(text):
+    """Return readable plain text for summary metadata and syndication."""
+    return __import__("longform").inline_text(text)
+
+
 # ---------- relevance & categorization ----------
 
 PALESTINE_RX = re.compile(
@@ -1491,6 +1503,7 @@ nav.sections a.home{color:#f93549}
 [lang=ar] .hero h2{line-height:1.5;font-weight:800}
 .hero h2 a:hover{color:var(--red)}
 .hero .dek{margin-top:.7rem;font-size:1.02rem;color:#3c3c44;font-family:var(--serif);line-height:1.55}
+.hero .dek a,.research-feat .dek a{text-decoration:underline;text-underline-offset:2px}
 [lang=ar] .hero .dek{line-height:1.8}
 .photocredit{font-size:.66rem;color:#9a9aa2;margin-top:.35rem}
 .meta{display:flex;align-items:center;gap:.6rem;margin-top:.8rem;font-size:.74rem;color:var(--muted)}
@@ -1642,7 +1655,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 .footer-contact{margin-top:.9rem}.footer-contact.secondary{margin-top:.5rem}.contact-id{direction:ltr;display:inline-block;margin-inline-start:.6rem;color:#8f8f94}
 .about-section{font-family:var(--serif);font-size:1.25rem;margin-top:1.6rem}.about-telegram{margin-top:.9rem}.about-telegram a{font-weight:700;color:var(--green)}
 
-@media(max-width:700px){nav.sections .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:26px;margin-inline-start:-26px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none;flex-shrink:0}[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}} @media(max-width:960px){
+@media(max-width:960px){nav.sections .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:26px;margin-inline-start:-26px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none;flex-shrink:0}[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}
   .research-feat{grid-template-columns:1fr}
   .research-feat img,.research-feat .noimg{min-height:180px;order:-1}
   .hero-zone{grid-template-columns:1fr}
@@ -1845,7 +1858,7 @@ def render_page(lang, items, built_at):
         return (f'<article class="research-feat"><div class="body">'
                 f'<p class="kick">{t["research_kicker"]}</p>'
                 f'<h3><a href="{href(it, P)}">{esc(it["title"])}</a></h3>'
-                f'<p class="dek">{esc(it["dek"])}</p>{meta_line(it, lang)}'
+                f'<p class="dek">{summary_html(it["dek"])}</p>{meta_line(it, lang)}'
                 f'</div>{media}</article>')
 
     section_blocks = ""
@@ -1876,7 +1889,7 @@ def render_page(lang, items, built_at):
 
     hero_html = ""
     if hero:
-        hero_dek = f'<p class="dek">{esc(hero["dek"])}</p>' if hero["dek"] else ""
+        hero_dek = f'<p class="dek">{summary_html(hero["dek"])}</p>' if hero["dek"] else ""
         hero_html = (f'<p class="label">{t["hero_label"]}</p>'
                      f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt="{esc(hero["title"])}"></a>'
                      f'{media_credit(hero, lang)}'
@@ -2008,7 +2021,7 @@ def render_story(it, lang, related, rail, built_at):
                    f'{paras}{source_embed}')
     else:
         if it.get("original"):
-            summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""
+            summary = f'<p class="summary">{summary_html(it["dek"])}</p>' if it["dek"] else ""
         else:
             source_credit = (
                 f'<span class="based">{t["based_on"]} '
@@ -2017,7 +2030,7 @@ def render_story(it, lang, related, rail, built_at):
             summary = (
                 f'<p class="kind">{t["kind_curated"]}</p>'
                 f'<p class="byline">{source_credit}</p>'
-                f'<p class="summary">{esc(it["dek"])}</p>')
+                f'<p class="summary">{summary_html(it["dek"])}</p>')
     rail_items = [r for r in rail if r is not it]
     ticker_track = "".join(f'<a href="{href(r, "")}">{esc(r["title"])}</a>' for r in rail_items[:6])
     latest_html = "".join(latest_item(r, lang, "") for r in rail_items[:10])
@@ -2048,7 +2061,8 @@ def render_story(it, lang, related, rail, built_at):
             f'<h2 id="revision-title">{esc(heading)}</h2><ol>{rows}</ol></section>')
     related_cards = "".join(card(r, lang, "") for r in related)
     page_url = f"{BASE_URL}/{lang}/story/{it['pid']}.html"; _q = __import__("urllib.parse", fromlist=["quote"]).quote; share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a></div>')
-    desc = esc((it.get("brief") or it["dek"]).replace(chr(10), " ")[:155])
+    desc = esc(summary_text(
+        (it.get("brief") or it["dek"]).replace(chr(10), " "))[:155])
     og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
     og_image = f'<meta property="og:image" content="{esc(og_img_url)}">' if it["image"] else ""
     hreflang = ""
@@ -2159,7 +2173,8 @@ def render_rss(lang, items, built_at):
     for it in sorted([i for i in items if i["cat"] != "social"],
                      key=lambda i: i["date"], reverse=True)[:30]:
         u = f"{BASE_URL}/{lang}/story/{it['pid']}.html"
-        desc = (it.get("brief") or it["dek"]).split(chr(10))[0]
+        desc = summary_text(
+            (it.get("brief") or it["dek"]).split(chr(10))[0])
         modified = (
             f"<atom:updated>{utc_iso(it['modified'])}</atom:updated>"
             if it.get("modified") else "")
