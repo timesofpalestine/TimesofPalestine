@@ -1878,8 +1878,23 @@ def render_story(it, lang, related, rail, built_at):
         # Owner decision 2026-07-30, wire protocol: a rewritten story is OUR
         # copy. The source is credited once, inline, in the prose ("…, Ma'an
         # reported") — no byline credit-link and no read-at-source button.
+        # A Telegram-sourced story embeds the source post itself below our
+        # copy — video and photos play natively, like a photo with credit.
+        source_embed = ""
+        if not it.get("original"):
+            tme = re.match(r"https://t\.me/([A-Za-z0-9_]{3,40})/(\d+)$",
+                           str(it.get("link", "")))
+            if tme:
+                emb_cap = ("المنشور المصدر كما بثّته القناة" if lang == "ar"
+                           else "The source post as published on Telegram")
+                source_embed = (
+                    f'<figure class="lf video"><div class="embed tme">'
+                    f'<iframe src="https://t.me/{tme.group(1)}/{tme.group(2)}?embed=1" '
+                    f'title="{emb_cap}" loading="lazy" frameborder="0"></iframe></div>'
+                    f'<figcaption>{emb_cap}</figcaption></figure>')
         kind = t["kind_original"] if it.get("original") else t["kind_brief"]
-        summary = (f'<p class="kind">{kind}</p><p class="byline">{t["byline"]}</p>{paras}')
+        summary = (f'<p class="kind">{kind}</p><p class="byline">{t["byline"]}</p>'
+                   f'{paras}{source_embed}')
     else:
         if it.get("original"):
             summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""

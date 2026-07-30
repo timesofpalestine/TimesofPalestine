@@ -29,6 +29,42 @@ MEDIA_RIGHTS = load_media_manifest(ROOT / "media-rights.json")
 
 H_RX = re.compile(r"^(#{2,4})\s+(.*)$")
 IMG_RX = re.compile(r"^!\[([^\]]*)\]\(([^)\s]+)\)\s*$")
+# Video embeds: !video[caption](url). Whitelisted hosts only — the iframe src
+# is rebuilt from captured IDs, never echoed from the input, so a hostile URL
+# cannot smuggle markup or a javascript: scheme into the page. Anything not
+# whitelisted falls through as a literal paragraph and the residue check
+# skips the article.
+VIDEO_RX = re.compile(r"^!video\[([^\]]*)\]\(([^)\s]+)\)\s*$")
+_YT_ID_RX = re.compile(
+    r"^https://(?:www\.)?(?:youtube\.com/(?:watch\?v=|embed/|shorts/)|youtu\.be/)"
+    r"([A-Za-z0-9_-]{6,20})")
+_TME_RX = re.compile(r"^https://t\.me/([A-Za-z0-9_]{3,40})/(\d+)$")
+_MP4_RX = re.compile(r"^https://[\w.-]+/[\w./%-]+\.mp4$")
+
+
+def video_embed(caption, url):
+    """Return figure HTML for a whitelisted video URL, or None."""
+    m = _YT_ID_RX.match(url)
+    if m:
+        frame = (f'<div class="embed"><iframe '
+                 f'src="https://www.youtube-nocookie.com/embed/{m.group(1)}" '
+                 f'title="{_esc(caption) or "Video"}" loading="lazy" '
+                 f'allowfullscreen frameborder="0" '
+                 f'allow="encrypted-media; picture-in-picture"></iframe></div>')
+    else:
+        m = _TME_RX.match(url)
+        if m:
+            frame = (f'<div class="embed tme"><iframe '
+                     f'src="https://t.me/{m.group(1)}/{m.group(2)}?embed=1" '
+                     f'title="{_esc(caption) or "Video"}" loading="lazy" '
+                     f'frameborder="0"></iframe></div>')
+        elif _MP4_RX.match(url):
+            frame = (f'<video controls preload="metadata" playsinline '
+                     f'src="{_esc(url)}"></video>')
+        else:
+            return None
+    cap = f'<figcaption>{_inline(caption)}</figcaption>' if caption else ""
+    return f'<figure class="lf video">{frame}{cap}</figure>'
 ROW_RX = re.compile(r"^\|(.+)\|\s*$")
 SEP_RX = re.compile(r"^\|[\s:|-]+\|\s*$")
 LI_RX = re.compile(r"^-\s+(.*)$")
@@ -79,6 +115,16 @@ def body_html(text, media_prefix="/media/"):
             out.append(f'<h{level} class="sub">{_inline(m.group(2).strip())}</h{level}>')
             i += 1
             continue
+
+        m = VIDEO_RX.match(line)
+        if m:
+            embed = video_embed(m.group(1).strip(), m.group(2).strip())
+            if embed:
+                out.append(embed)
+                i += 1
+                continue
+            # unsupported host: fall through as a paragraph; the residue
+            # check will flag "!video[" and skip the article loudly
 
         m = IMG_RX.match(line)
         if m:
@@ -157,6 +203,9 @@ def rendered_residue_warnings(rendered):
         warnings.append("unrendered footnote marker '[^'")
     if "![" in rendered:
         warnings.append("unrendered image markdown '!['")
+    if "!video" in rendered:
+        warnings.append("unrendered or non-embeddable !video directive "
+                        "(only YouTube, t.me posts and direct .mp4 embed)")
     if "**" in rendered:
         warnings.append("unrendered bold marker '**'")
     if re.search(r'<p class="summary">\s*#', rendered):
@@ -269,6 +318,12 @@ CSS = """
 [lang=ar] .story table.lf th{letter-spacing:0;text-transform:none;font-size:.88rem}
 .story .summary a{text-decoration:underline;text-underline-offset:2px}
 .story code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,monospace;font-size:.92em;background:rgba(0,0,0,.06);padding:.08em .3em;border-radius:3px}
+.story figure.lf.video{margin:1.6rem 0}
+.story .embed{position:relative;width:100%;padding-top:56.25%;background:#0b0b0c}
+.story .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.story .embed.tme{padding-top:0;height:520px}
+.story .embed.tme iframe{position:static;height:100%}
+.story figure.lf.video video{width:100%;display:block;background:#0b0b0c}
 @media (prefers-color-scheme:dark){
   .story .sub{color:var(--ink)}
   .story ul.lf{color:#d6d6de}

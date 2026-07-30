@@ -113,6 +113,13 @@ it to Telegram. No human machine involved. The contract:
 3. Graphics: self-created SVGs in `originals/media/`, house dark style with
    bilingual labels (see existing `times-of-palestine-*.svg`). Never
    copyrighted images.
+   **Video (embeds only, never hosted):** `!video[caption](url)` on its own
+   line. Whitelisted hosts ONLY: YouTube watch/shorts/youtu.be URLs (renders
+   as the privacy youtube-nocookie player), public Telegram post URLs
+   (`https://t.me/<channel>/<id>`), or a direct https `.mp4`. Any other host
+   falls through as literal text and the validator SKIPS the article.
+   Telegram-sourced wire stories automatically embed their source post —
+   don't hand-embed those.
 4. Before pushing, run `python3 build.py` and confirm `✓ original:` for your
    files. Push with fetch/rebase/retry — this repo receives frequent commits.
 5. Respect beats: `washington-brief-*` is Claude's; crypto/financial-freedom
