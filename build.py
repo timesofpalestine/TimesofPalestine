@@ -1553,13 +1553,13 @@ def card(it, lang, pfx):
     # Uniform card: headline, source, time. Summaries belong to the hero, the
     # featured report, and the story pages — mixed previews in a grid look broken.
     return (f'<article class="card">{card_media(it, pfx)}'
-            f'<span class="chip">{esc(it["source"])}</span>{review_chip(it, lang)}'
+            f'<span class="chip">{esc(it["source"])}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<p class="t">{time_ago(it["date"], lang)}</p></article>')
 
 def rowcard(it, lang, pfx):
     return (f'<article class="rowcard">{card_media(it, pfx)}'
-            f'<div><span class="chip">{esc(it["source"])}</span>{review_chip(it, lang)}'
+            f'<div><span class="chip">{esc(it["source"])}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<p class="t">{time_ago(it["date"], lang)}</p></div></article>')
 
@@ -1569,14 +1569,14 @@ def op_card(it, lang, pfx):
             f'{meta_line(it, lang)}</article>')
 
 def sub_item(it, lang, pfx):
-    return (f'<article><span class="chip">{esc(it["source"])}</span>{review_chip(it, lang)}'
+    return (f'<article><span class="chip">{esc(it["source"])}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<p class="t">{time_ago(it["date"], lang)}</p></article>')
 
 def latest_item(it, lang, pfx):
     return (f'<li><span class="t">{time_ago(it["date"], lang)}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<span class="s">{esc(it["source"])}</span>{review_chip(it, lang)}</li>')
+            f'<span class="s">{esc(it["source"])}</span></li>')
 
 # ---------- page ----------
 def render_page(lang, items, built_at):
