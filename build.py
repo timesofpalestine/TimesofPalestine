@@ -1850,7 +1850,7 @@ def render_page(lang, items, built_at):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="max-image-preview:large">
-<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 46'><rect width='46' height='15.3' fill='%230b0b0c'/><rect y='15.3' width='46' height='15.3' fill='%23fff'/><rect y='30.6' width='46' height='15.4' fill='%23007A3D'/><path d='M0 0 L21 23 L0 46 Z' fill='%23CE1126'/></svg>"><link rel="manifest" href="/manifest.json"><script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js")</script>
+<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/icon-192.png"><rect width='46' height='15.3' fill='%230b0b0c'/><rect y='15.3' width='46' height='15.3' fill='%23fff'/><rect y='30.6' width='46' height='15.4' fill='%23007A3D'/><path d='M0 0 L21 23 L0 46 Z' fill='%23CE1126'/></svg>"><link rel="manifest" href="/manifest.json"><script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js")</script>
 <title>{t['site_name']} — {t['title_suffix']}</title>
 <meta name="description" content="{esc(t['mission'][:155])}">
 <link rel="canonical" href="{BASE_URL}/{lang}/">
@@ -2043,7 +2043,7 @@ def render_story(it, lang, related, rail, built_at):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 46'><rect width='46' height='15.3' fill='%230b0b0c'/><rect y='15.3' width='46' height='15.3' fill='%23fff'/><rect y='30.6' width='46' height='15.4' fill='%23007A3D'/><path d='M0 0 L21 23 L0 46 Z' fill='%23CE1126'/></svg>"><link rel="manifest" href="/manifest.json"><script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js")</script>
+<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/icon-192.png"><rect width='46' height='15.3' fill='%230b0b0c'/><rect y='15.3' width='46' height='15.3' fill='%23fff'/><rect y='30.6' width='46' height='15.4' fill='%23007A3D'/><path d='M0 0 L21 23 L0 46 Z' fill='%23CE1126'/></svg>"><link rel="manifest" href="/manifest.json"><script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js")</script>
 <title>{esc(it['title'])} — {t['site_name']}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{page_url}">
