@@ -281,6 +281,11 @@ def _clean_svg(text):
     low = text.lower()
     if any(marker in low for marker in _SVG_FORBIDDEN):
         return None
+    try:
+        import xml.etree.ElementTree as _ET
+        _ET.fromstring(text)
+    except Exception:
+        return None  # invalid XML renders as a broken image — cover fallback instead
     return text
 
 

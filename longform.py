@@ -300,6 +300,14 @@ def copy_media(dist, stories):
         relative = f"originals/media/{f.name}"
         if relative not in MEDIA_RIGHTS and not house_asset(f.name):
             raise PublishingError(f"{relative}: local media lacks rights metadata")
+        if f.suffix == ".svg":
+            try:
+                import xml.etree.ElementTree as _ET
+                _ET.parse(f)
+            except Exception as exc:
+                raise PublishingError(
+                    f"{f.name}: SVG is not well-formed XML and would render "
+                    f"as a broken image ({exc})")
         shutil.copy2(f, dest / f.name)
         n += 1
     if n:

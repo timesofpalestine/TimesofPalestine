@@ -88,13 +88,23 @@ def validate(root):
         if not (root / name).is_file():
             errors.append(f"missing required output {name}")
 
+    for path in root.rglob("*.svg"):
+        try:
+            ET.parse(path)
+        except ET.ParseError as exc:
+            errors.append(
+                f"{path.relative_to(root)}: SVG is not well-formed XML "
+                f"and renders as a broken image ({exc})")
+
     for path in root.rglob("*.html"):
         parser = DocumentParser()
         try:
-            parser.feed(path.read_text(encoding="utf-8"))
+            html_text = path.read_text(encoding="utf-8")
+            parser.feed(html_text)
         except (OSError, UnicodeError) as exc:
             errors.append(f"{path.relative_to(root)}: unreadable HTML ({exc})")
             continue
+        check_body_starts_clean(path.relative_to(root), html_text, errors)
         if parser.meta_refresh and path.name != "index.html":
             errors.append(f"{path.relative_to(root)}: unconditional meta refresh")
         if parser.remote_images and remote_media_mode() == "rights-only":
@@ -231,6 +241,14 @@ def summary(root):
               if row.get("status") != "ok"]
     print(f"- Degraded feeds: {len(failed)}")
     return 0
+
+
+def check_body_starts_clean(path, html, errors):
+    """Malformed head markup spills visible junk before the first element."""
+    import re as _re
+    m = _re.search(r"<body>\s*([^<\s][^<]*)", html)
+    if m:
+        errors.append(f"{path}: stray text at body start: {m.group(1)[:40]!r}")
 
 
 def main():
