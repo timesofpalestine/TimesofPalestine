@@ -271,7 +271,8 @@ RESEARCH_BOOST = 22   # think-tank / OSINT reports: "news before it becomes news
 BREAKING_BOOST = 14   # hard-news urgency: casualties, strikes, raids, ceasefires
 IMAGE_BOOST = 8
 RECENCY_MAX = 50      # points for a just-published story, linear decay over MAX_AGE_HOURS
-HERO_MAX_AGE_H = 36   # the top story must be actual news, not a feature from days ago
+HERO_MAX_AGE_H = 18   # the top story must be actual news, not a feature from days ago
+HERO_WINDOWS_H = (6, 12, HERO_MAX_AGE_H)  # prefer the freshest qualifying window
 
 # Urgent hard-news markers — these stories are what readers check the site for.
 BREAKING_RX = re.compile(
@@ -1743,14 +1744,17 @@ def render_page(lang, items, built_at):
                 and not REVIEWISH_RX.search(i["title"])
                 and (now - i["date"]).total_seconds() / 3600 <= max_age)
 
-    # Freshness-weighted hero ranking: a strong new story overtakes yesterday's
-    # boosted one, so the top of the page visibly rotates through the day.
-    def hero_rank(i):
-        age = (now - i["date"]).total_seconds() / 3600
-        return i["score"] + max(0.0, HERO_MAX_AGE_H - age) * 0.9
-
-    hero_pool = sorted(items, key=hero_rank, reverse=True)
-    heroes = (take(hero_pool, hero_ok, 1)
+    # The hero follows the news cycle: pick the strongest story from the
+    # FRESHEST window that has one (last 6h, then 12h, then 18h). A boosted
+    # multi-day original can never squat the top slot while new reporting
+    # arrives — every build, the reader sees the newest strong story.
+    hero_pool = sorted(items, key=lambda i: i["score"], reverse=True)
+    heroes = []
+    for window in HERO_WINDOWS_H:
+        heroes = take(hero_pool, lambda i, w=window: hero_ok(i, max_age=w), 1)
+        if heroes:
+            break
+    heroes = (heroes
               or take(hero_pool, lambda i: hero_ok(i, max_age=MAX_AGE_HOURS), 1)
               or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
                       and PALESTINE_RX.search(f"{i['title']} {i['dek']}"), 1)
