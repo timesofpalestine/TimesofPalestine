@@ -109,6 +109,10 @@ nothing else. Never append, and never write, any of the following:
 - image credits, licence notes or a visual-rights block
 - a label announcing what something is: a caption reads as a sentence, never as \
 "Visual caption:", and a summary is never headed "Summary:"
+- briefing-memo apparatus: no "What is unresolved", "Unanswered questions", "Key \
+takeaways", "Conclusion", "Bottom line" or similar sections, and never a list of \
+questions — what is unknown is reported in prose sentences ("It remains unclear \
+which camp the order names"), the way a newspaper writes it
 - any sentence about the article itself — "this report makes no finding", "as noted \
 above", "this article will examine". Report the subject, never the reporting.
 If a fact cannot stand on inline attribution, it is not ready to publish. Cut it \

@@ -77,7 +77,11 @@ jobs:
             and ![caption](file.svg) images — anything else prints literally
             and the build skips the article. NO footnotes, NO sources or
             related-reading sections (attribution inline only). Never end a
-            paragraph mid-sentence. Angle everything for a Palestinian reader:
+            paragraph mid-sentence. Write NEWSPAPER copy, never a briefing
+            memo: no "What is unresolved / Unanswered questions / Key
+            takeaways / Conclusion / Bottom line" sections and never a list
+            of questions — the build REJECTS these. What is unknown is
+            reported in prose sentences, wire-service register. Angle everything for a Palestinian reader:
             what does it mean for Gaza, the West Bank, Jerusalem, the
             diaspora? Explain DC jargon in one clause. The Arabic edition is a
             first-class rendition in natural Arabic news register, same facts.

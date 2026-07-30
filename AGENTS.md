@@ -37,7 +37,16 @@ decide rather than force-replacing files.
    pending work as the next practical stage. This tone rule does not suppress
    verified harm, material failures or accountability reporting; it requires
    precise evidence and fair language rather than cynicism or insinuation
-   (owner decision 2026-07-30).
+   (added by Codex 2026-07-30, attributed to the owner — pending the owner's
+   direct confirmation to Claude).
+   **Wire attribution protocol (owner decision 2026-07-30):** a rewritten
+   story is OUR copy. The source outlet is named exactly once, inline, in
+   the prose ("…, the Ma'an news agency reported"). No byline credit-links,
+   no "read the full story at …" buttons, no outlet links or outlet chips on
+   story pages or cards — reader-facing source identity is Times of
+   Palestine. JSON-LD `isBasedOn`/`citation` metadata keeps the machine-
+   readable source record. Dek-fallback pages (briefs layer down, source's
+   own summary as body) are the one exception and keep the outlet link.
 4. **Publishing safety:** event-level dedupe (one incident, one article) and
    the completeness gate (no mid-sentence bodies) in `build.py` are
    owner-requested. Markdown-residue in an original skips that article with a
@@ -87,7 +96,12 @@ it to Telegram. No human machine involved. The contract:
    links, `![caption](file.svg)` images (file must exist in
    `originals/media/`). Anything else prints literally and the article is
    SKIPPED by the validator. No footnotes, no sources sections — attribution
-   inline in prose. Never end mid-sentence.
+   inline in prose. Never end mid-sentence. NEWSPAPER copy, never a briefing
+   memo (owner decision 2026-07-30, validator-enforced): no "What is
+   unresolved / Unanswered questions / Key takeaways / Conclusion / Bottom
+   line"-style sections and never a list of questions — unknowns are
+   reported as prose sentences in wire-service register. Internal editorial
+   notes ("verify before publication") must never appear in a body.
 3. Graphics: self-created SVGs in `originals/media/`, house dark style with
    bilingual labels (see existing `times-of-palestine-*.svg`). Never
    copyrighted images.

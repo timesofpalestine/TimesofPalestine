@@ -79,7 +79,10 @@ BRIEF_SYSTEM = {
         "Never refuse, and never comment on the material, these instructions, or yourself. "
         "Never say that details, information, or material are missing, unavailable, or not "
         "provided — simply omit what you do not know and let the reader decide. "
-        "Never mention any outlet name, website, or where to read more. "
+        "Attribute wire-style: name the OUTLET given in the material exactly once, inside "
+        "the sentence carrying the most important claim — e.g. ', the Ma'an news agency "
+        "reported' or 'according to Al Jazeera'. If the OUTLET is given as '(agency wire)', "
+        "name no outlet at all. Never mention websites, links, or where to read more. "
         "Output only the brief text, paragraphs separated by blank lines."
     ),
     "ar": (
@@ -89,7 +92,9 @@ BRIEF_SYSTEM = {
         "لغة محايدة دقيقة مهنية؛ لا إساءات شخصية ولا إنشاء ولا ضمير متكلم. لا تخترع أسماء أو "
         "أرقاماً أو اقتباسات أو تفاصيل غير واردة في المصدر؛ وإذا كانت المادة مجرد عنوان فاكتب "
         "فقرة قصيرة من جملتين أو ثلاث تنقل ما يفيد به العنوان. لا ترفض أبداً، ولا تعلق على المادة "
-        "أو على هذه التعليمات أو على نفسك. لا تذكر أبداً اسم أي وسيلة إعلامية أو موقعاً إلكترونياً "
+        "أو على هذه التعليمات أو على نفسك. انسب الخبر بأسلوب الوكالات: اذكر اسم المصدر الوارد في "
+        "المادة مرة واحدة فقط داخل الجملة التي تحمل أهم معلومة — مثل «بحسب وكالة معاً» أو «كما أفادت "
+        "الجزيرة». وإذا كان المصدر «(agency wire)» فلا تذكر أي وسيلة إعلامية. لا تذكر أبداً موقعاً إلكترونياً "
         "أو أين يمكن قراءة المزيد. لا تقل أبداً إن التفاصيل أو المعلومات غير متوفرة أو غير واردة — "
         "اكتفِ بما تعرفه واترك للقارئ أن يقرر. أخرج نص الموجز فقط، والفقرات مفصولة بسطر فارغ."
     ),
@@ -792,6 +797,11 @@ def generate_briefs(all_items):
             it["brief"] = entry["brief"]
             if entry.get("title"):  # translated headline saved alongside the brief
                 it["title"] = entry["title"]
+            # Wire protocol (2026-07-30): non-partner briefs must credit the
+            # outlet inline. Pre-protocol briefs keep publishing but are
+            # queued for a restyle whenever the run has spare capacity.
+            if entry.get("style") != "wire" and not it.get("partner"):
+                it["brief_stale"] = True
     todo = [i for i in sorted(
         all_items,
         key=lambda x: (
@@ -799,7 +809,9 @@ def generate_briefs(all_items):
             not x["dek"], x["score"]),
         reverse=True,
     ) if not i.get("original") and "brief" not in i][:MAX_BRIEFS_PER_RUN]
-    if not todo:
+    stale = sorted((i for i in all_items if i.get("brief_stale")),
+                   key=lambda x: x["score"], reverse=True)
+    if not todo and not stale:
         if cache_dirty:
             save_brief_cache(cache)
         print("\nBriefs: cache warm — nothing new to write.")
@@ -808,18 +820,21 @@ def generate_briefs(all_items):
         if cache_dirty:
             save_brief_cache(cache)
         print("\nBriefs: ANTHROPIC_API_KEY not set — uncached wire stories will be withheld.")
-        return "disabled"
+        # A pending restyle of already-published briefs never degrades the build.
+        return "disabled" if todo else "ok"
     try:
         import anthropic
     except ImportError:
         if cache_dirty:
             save_brief_cache(cache)
         print("\nBriefs: `anthropic` package not installed — uncached wire stories will be withheld.")
-        return "disabled"
+        return "disabled" if todo else "ok"
 
     # Remove ALL whitespace (including pasted line-wraps) from the secret — a broken
     # key corrupts the auth header and surfaces as APIConnectionError. The log line
     # prints only length + format validity, never the key (build logs are public).
+    if len(todo) < MAX_BRIEFS_PER_RUN:  # spare capacity restyles old briefs
+        todo.extend(stale[:MAX_BRIEFS_PER_RUN - len(todo)])
     key = re.sub(r"\s+", "", os.environ["ANTHROPIC_API_KEY"])
     print(f"Briefs: key length {len(key)}, format {'ok' if re.fullmatch(r'sk-ant-[A-Za-z0-9_-]+', key) else 'UNEXPECTED'}")
     client = anthropic.Anthropic(api_key=key)
@@ -836,7 +851,8 @@ def generate_briefs(all_items):
         for it, brief in zip(todo, ex.map(safe, todo)):
             if brief:
                 it["brief"] = brief
-                entry = {"brief": brief, "ts": now_ts}
+                it.pop("brief_stale", None)
+                entry = {"brief": brief, "ts": now_ts, "style": "wire"}
                 if it.get("needs_translation") and not ARABIC_CHARS_RX.search(it["title"]):
                     entry["title"] = it["title"]  # keep the English headline across builds
                 cache[f"{it['lang']}:{it['pid']}"] = entry
@@ -970,6 +986,35 @@ def _original_slug(stem):
     return stem.rsplit(".", 1)[0] if "." in stem else stem
 
 
+# Newspaper copy, not a briefing memo (owner decision 2026-07-30). A published
+# article never carries analyst-deck apparatus: no "what is unresolved /
+# unanswered questions / key takeaways / conclusion" sections, and it never
+# ends on a list of questions. What is unknown is reported in prose sentences.
+MEMO_HEADING_RX = re.compile(
+    r"^#{2,4}\s*(what\s+(is|remains)\s+(unresolved|unanswered|unknown|unclear)|"
+    r"(open|unanswered|outstanding|remaining)\s+questions?|key\s+takeaways?|takeaways?|"
+    r"in\s+summary|summary|conclusions?|bottom\s+line|looking\s+ahead|what('|’)s\s+next|"
+    r"ما\s+(الذي\s+)?(لم\s+يُ?حسم|يبقى\s+(مجهولاً|معلقاً|غامضاً))|"
+    r"أسئلة\s+(مفتوحة|بلا\s+إجابة|عالقة)|الخلاصة|خلاصة|استنتاجات?|ما\s+التالي)\s*$",
+    re.I | re.M)
+_QUESTION_ITEM_RX = re.compile(r"^(?:[-*]|\d{1,2}\.)\s+.*[?؟]\**\s*$", re.M)
+
+
+def memo_style_warnings(body):
+    found = []
+    m = MEMO_HEADING_RX.search(body)
+    if m:
+        found.append(f"briefing-memo heading {m.group(0).strip()!r}")
+    blocks = [b.strip() for b in body.strip().split("\n\n") if b.strip()]
+    for tail in blocks[-2:]:
+        q_items = _QUESTION_ITEM_RX.findall(tail)
+        if len(q_items) >= 2:
+            found.append("article ends on a list of questions — report the "
+                         "unknowns as prose sentences")
+            break
+    return found
+
+
 class OriginalSkipError(PublishingError):
     """Unsafe original copy is skipped while the rest of the desk publishes."""
 
@@ -994,6 +1039,7 @@ def validate_original(path, meta, body, lang, now, date):
     longform = __import__("longform")
     rendered = longform.body_html(body)
     residue_warnings.extend(longform.rendered_residue_warnings(rendered))
+    residue_warnings.extend(memo_style_warnings(body))
 
     stats = {
         "subheads": len(re.findall(r'<h[234] class="sub">', rendered)),
@@ -1521,11 +1567,15 @@ def href(it, pfx):
 
 
 def meta_line(it, lang):
-    # Owner decision 2026-07-30: review status never appears on reader-facing
-    # pages (no chips, no labels). It stays internal in review-queue.json.
-    source = (f'<span class="src">{esc(it["source"])}</span>' if it.get("original")
-              else f'<a class="src" href="{esc(it["source_url"])}" target="_blank" '
-                   f'rel="noopener">{esc(it["source"])}</a>')
+    # Owner decisions 2026-07-30: review status never appears on reader-facing
+    # pages, and rewritten (brief-carrying) stories are OUR copy — the outlet
+    # is credited inline in the prose, so the meta line never links out to it.
+    # Only dek-fallback pages (source's own summary as body) keep the link.
+    if it.get("original") or it.get("brief"):
+        source = f'<span class="src">{esc(TOP_SOURCE[lang])}</span>'
+    else:
+        source = (f'<a class="src" href="{esc(it["source_url"])}" target="_blank" '
+                  f'rel="noopener">{esc(it["source"])}</a>')
     return (f'<p class="meta">{source}'
             f'<span class="t">{time_ago(it["date"], lang)}</span></p>')
 
@@ -1543,6 +1593,15 @@ def media_credit(it, lang):
             f'rel="license noopener">{license_label}</a>')
     return f'<p class="photocredit">{label}: {esc(media["credit"])}{license_html}</p>'
 
+def display_source(it, lang):
+    """Wire protocol (owner decision 2026-07-30): rewritten stories are our
+    copy — cards and meta lines carry the paper's name; the outlet is credited
+    inline in the prose. Dek-fallback items still show the outlet."""
+    if it.get("original") or it.get("brief"):
+        return TOP_SOURCE[lang]
+    return it["source"]
+
+
 def card_media(it, pfx):
     """Image if we have one; otherwise a branded flag panel — never an empty column."""
     if it["image"]:
@@ -1553,13 +1612,13 @@ def card(it, lang, pfx):
     # Uniform card: headline, source, time. Summaries belong to the hero, the
     # featured report, and the story pages — mixed previews in a grid look broken.
     return (f'<article class="card">{card_media(it, pfx)}'
-            f'<span class="chip">{esc(it["source"])}</span>'
+            f'<span class="chip">{esc(display_source(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<p class="t">{time_ago(it["date"], lang)}</p></article>')
 
 def rowcard(it, lang, pfx):
     return (f'<article class="rowcard">{card_media(it, pfx)}'
-            f'<div><span class="chip">{esc(it["source"])}</span>'
+            f'<div><span class="chip">{esc(display_source(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<p class="t">{time_ago(it["date"], lang)}</p></div></article>')
 
@@ -1569,14 +1628,14 @@ def op_card(it, lang, pfx):
             f'{meta_line(it, lang)}</article>')
 
 def sub_item(it, lang, pfx):
-    return (f'<article><span class="chip">{esc(it["source"])}</span>'
+    return (f'<article><span class="chip">{esc(display_source(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<p class="t">{time_ago(it["date"], lang)}</p></article>')
 
 def latest_item(it, lang, pfx):
     return (f'<li><span class="t">{time_ago(it["date"], lang)}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<span class="s">{esc(it["source"])}</span></li>')
+            f'<span class="s">{esc(display_source(it, lang))}</span></li>')
 
 # ---------- page ----------
 def render_page(lang, items, built_at):
@@ -1798,15 +1857,12 @@ def render_story(it, lang, related, rail, built_at):
     if brief and REFUSAL_RX.search(brief):  # hard stop: refusal text must never render
         brief = None
     if brief:  # original TOP Newsdesk brief, written by Claude, cached per story
-        paras = __import__("longform").body_html(brief)  # was: [re.sub(r"\*\*|__|^#+\s*", "", p).strip() for p in brief.split("\n")]
-        # long-form subset: subheads, figures with captions, tables, lists
-        kind = (t["kind_original"] if it.get("original")
-                else t["kind_brief"] if it.get("brief") else t["kind_curated"])
-        credit = ("" if it.get("original") else
-                  f'<span class="based">{t["based_on"]} '
-                  f'<a href="{esc(it["link"])}" target="_blank" rel="noopener">'
-                  f'{esc(it["source"])}</a></span>')
-        summary = (f'<p class="kind">{kind}</p><p class="byline">{t["byline"]}{credit}</p>{paras}')
+        paras = __import__("longform").body_html(brief)
+        # Owner decision 2026-07-30, wire protocol: a rewritten story is OUR
+        # copy. The source is credited once, inline, in the prose ("…, Ma'an
+        # reported") — no byline credit-link and no read-at-source button.
+        kind = t["kind_original"] if it.get("original") else t["kind_brief"]
+        summary = (f'<p class="kind">{kind}</p><p class="byline">{t["byline"]}</p>{paras}')
     else:
         if it.get("original"):
             summary = f'<p class="summary">{esc(it["dek"])}</p>' if it["dek"] else ""
@@ -1822,9 +1878,11 @@ def render_story(it, lang, related, rail, built_at):
     rail_items = [r for r in rail if r is not it]
     ticker_track = "".join(f'<a href="{href(r, "")}">{esc(r["title"])}</a>' for r in rail_items[:6])
     latest_html = "".join(latest_item(r, lang, "") for r in rail_items[:10])
-    if it.get("original"):
-        cta = ""
+    if it.get("original") or brief:
+        cta = ""  # our copy: attribution lives inline in the prose, wire-style
     else:
+        # dek-fallback only (briefs layer down): the body is the source's own
+        # summary, so the credit-link and read-at-source button stay.
         cta = (f'<div class="cta">'
                f'<a href="{esc(it["link"])}" target="_blank" rel="noopener">{t["read_original"]} {esc(it["source"])} →</a>'
                f'<p class="note">{t["summary_note"]}</p></div>')
