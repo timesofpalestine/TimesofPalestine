@@ -1631,14 +1631,19 @@ def media_credit(it, lang):
     media = it.get("media")
     if not media:
         return ""
-    label = "حقوق الصورة" if lang == "ar" else "Image credit"
     license_html = ""
     if media.get("licenseUrl"):
         license_label = "الترخيص" if lang == "ar" else "License"
         license_html = (
             f' · <a href="{esc(media["licenseUrl"])}" target="_blank" '
             f'rel="license noopener">{license_label}</a>')
-    return f'<p class="photocredit">{label}: {esc(media["credit"])}{license_html}</p>'
+    credit = media["credit"]
+    # A caption reads as a sentence, never as a stacked label: credits that
+    # already carry their own label ("Graphic: …", "Photo: …") render as-is.
+    if re.match(r"^(Graphic|Photo|Image|صورة|رسم|غرافيك)\s*:", credit, re.I):
+        return f'<p class="photocredit">{esc(credit)}{license_html}</p>'
+    label = "حقوق الصورة" if lang == "ar" else "Image credit"
+    return f'<p class="photocredit">{label}: {esc(credit)}{license_html}</p>'
 
 def display_source(it, lang):
     """Wire protocol (owner decision 2026-07-30): rewritten stories are our
