@@ -287,6 +287,16 @@
       "cap": 4
     },
     {
+      "id": "hrf-financial-freedom",
+      "name": "HRF Financial Freedom",
+      "url": "https://hrf.org/program/financial-freedom/feed/",
+      "site": "https://hrf.org/program/financial-freedom/",
+      "category": "bitcoin",
+      "filterBitcoinFreedom": true,
+      "maxAgeHours": 336,
+      "cap": 4
+    },
+    {
       "id": "btcmag",
       "name": "Bitcoin Magazine",
       "url": "https://bitcoinmagazine.com/.rss/full/",
