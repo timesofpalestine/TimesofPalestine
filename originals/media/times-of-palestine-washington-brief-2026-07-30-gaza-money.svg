@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Gaza reconstruction money: pledged, delivered, and Palestinian</title>
+  <desc id="desc">A bilingual chart comparing the seventeen billion dollars pledged to the US-chaired Board of Peace in February 2026 against the small sums actually transferred by July 2026, alongside the scale of the Rafah housing pilot, the police recruitment figures, and the Palestinian clearance revenue Israel has withheld since May 2025.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a1f2d"/>
+      <stop offset=".5" stop-color="#286344"/>
+      <stop offset="1" stop-color="#bd9854"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:16px}
+      .small{font-size:19px}
+      .body{font-size:22px}
+      .label{font-size:17px;font-weight:800;letter-spacing:1.1px}
+      .fig{font-size:38px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="76" class="serif ivory" font-size="46" font-weight="800">Gaza reconstruction: pledged, delivered, and Palestinian</text>
+  <text x="90" y="122" class="sans muted body">What Washington announced, what the Board of Peace actually holds, and whose money is now being asked for.</text>
+  <text x="1510" y="164" class="arabic ivory" font-size="34" font-weight="800" text-anchor="end">إعمار غزة: ما تم التعهد به وما وصل فعلاً ومال من</text>
+  <text x="1510" y="197" class="arabic muted small" text-anchor="end">ما أعلنته واشنطن وما يحتفظ به مجلس السلام فعلياً والمال المطلوب من الفلسطينيين</text>
+
+  <g class="sans">
+    <rect x="560" y="268" width="480" height="46" rx="6" fill="#26272b"/>
+    <rect x="560" y="268" width="480" height="46" rx="6" fill="#c7a86b"/>
+    <text x="90" y="292" class="ivory small" font-weight="700">Pledged to the Board of Peace</text>
+    <text x="90" y="313" class="arabic muted tiny">تعهدات لمجلس السلام، شباط 2026</text>
+    <text x="1056" y="299" class="gold" font-size="24" font-weight="800">$17.0bn</text>
+
+    <rect x="560" y="342" width="480" height="46" rx="6" fill="#26272b"/>
+    <rect x="560" y="342" width="198" height="46" rx="6" fill="#286344"/>
+    <text x="90" y="366" class="ivory small" font-weight="700">Of that, pledged by Gulf states</text>
+    <text x="90" y="387" class="arabic muted tiny">منها تعهدات دول الخليج</text>
+    <text x="774" y="373" class="green" font-size="24" font-weight="800">$7.0bn</text>
+
+    <rect x="560" y="416" width="480" height="46" rx="6" fill="#26272b"/>
+    <rect x="560" y="416" width="14" height="46" rx="6" fill="#C8102E"/>
+    <text x="90" y="440" class="ivory small" font-weight="700">Held from Gulf states, 20 July 2026</text>
+    <text x="90" y="461" class="arabic muted tiny">المحتفظ به من دول الخليج، 20 تموز 2026</text>
+    <text x="590" y="447" class="red" font-size="24" font-weight="800">$0.50bn</text>
+
+    <rect x="560" y="490" width="480" height="46" rx="6" fill="#26272b"/>
+    <rect x="560" y="490" width="5" height="46" rx="2" fill="#C8102E"/>
+    <text x="90" y="514" class="ivory small" font-weight="700">Transferred of the $17bn, mid-May 2026</text>
+    <text x="90" y="535" class="arabic muted tiny">ما حُوّل من الـ17 مليار، أيار 2026</text>
+    <text x="590" y="521" class="red" font-size="24" font-weight="800">about 1 per cent</text>
+
+    <rect x="560" y="564" width="480" height="46" rx="6" fill="#26272b"/>
+    <rect x="560" y="564" width="4" height="46" rx="2" fill="#c7a86b"/>
+    <text x="90" y="588" class="ivory small" font-weight="700">Cost of the New Rafah housing pilot</text>
+    <text x="90" y="609" class="arabic muted tiny">كلفة مشروع الإسكان التجريبي في رفح</text>
+    <text x="590" y="595" class="gold" font-size="24" font-weight="800">$0.15bn</text>
+
+    <text x="560" y="648" class="muted tiny">Bars to scale. Full track = $17bn.</text>
+    <text x="1040" y="648" class="arabic muted tiny" text-anchor="end">الأشرطة بالمقياس؛ المسار الكامل = 17 مليار دولار</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1180" y="250" width="330" height="126" rx="16" fill="#27282c" stroke="#c7a86b" stroke-width="2"/>
+    <text x="1204" y="284" class="sans gold label">RAFAH PILOT</text>
+    <text x="1204" y="326" class="sans ivory fig">50,000</text>
+    <text x="1204" y="350" class="sans muted tiny">people housed, of about 2 million in Gaza</text>
+    <text x="1486" y="370" class="arabic muted tiny" text-anchor="end">من نحو مليونَي نسمة في غزة</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1180" y="396" width="330" height="126" rx="16" fill="#27282c" stroke="#61aa80" stroke-width="2"/>
+    <text x="1204" y="430" class="sans green label">POLICE VETTING</text>
+    <text x="1204" y="472" class="sans ivory fig">5,000</text>
+    <text x="1204" y="496" class="sans muted tiny">cadets cleared, of 200,000+ applicants</text>
+    <text x="1486" y="516" class="arabic muted tiny" text-anchor="end">من أكثر من 200 ألف متقدم</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1180" y="542" width="330" height="126" rx="16" fill="#27282c" stroke="#dc6572" stroke-width="3"/>
+    <text x="1204" y="576" class="sans red label">WITHHELD SINCE MAY 2025</text>
+    <text x="1204" y="618" class="sans ivory fig">$5bn+</text>
+    <text x="1204" y="642" class="sans muted tiny">Palestinian clearance revenue, unpaid</text>
+    <text x="1486" y="662" class="arabic muted tiny" text-anchor="end">أموال المقاصة الفلسطينية المحتجزة</text>
+  </g>
+
+  <rect x="90" y="700" width="1420" height="100" rx="15" fill="url(#flow)"/>
+  <text x="122" y="734" class="sans ivory" font-size="23" font-weight="800">THE PROPOSAL ON THE TABLE</text>
+  <text x="122" y="764" class="sans ivory small">Route part of the withheld Palestinian revenue to the Board of Peace.</text>
+  <text x="122" y="788" class="sans ivory small">Israel's finance ministry refused. Ramallah wants half of any release.</text>
+  <text x="1478" y="734" class="arabic ivory" font-size="23" font-weight="800" text-anchor="end">المقترح المطروح</text>
+  <text x="1478" y="764" class="arabic ivory small" text-anchor="end">تحويل جزء من أموال المقاصة المحتجزة إلى مجلس السلام</text>
+  <text x="1478" y="788" class="arabic ivory small" text-anchor="end">وزارة المالية الإسرائيلية رفضت، ورام الله تطالب بنصف أي مبلغ يُفرج عنه</text>
+
+  <text x="90" y="858" class="sans muted tiny">Figures: Board of Peace report to the UN Security Council (15 May 2026); The Washington Post (27 July 2026); Haaretz (20 July 2026); Times of Israel (29 July 2026).</text>
+  <text x="90" y="882" class="sans muted tiny">Graphic: Times of Palestine.</text>
+</svg>
