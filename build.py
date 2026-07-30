@@ -158,9 +158,16 @@ def clean_dek(text):
 # word boundary, so a headline is never chopped mid-word.
 SENT_END_RX = re.compile(r"\.{2,}|[.!?؟؛](?=\s|$)")
 
+_ABBREV_RX = re.compile(
+    r"(?:\b(?:St|Dr|Mr|Mrs|Ms|Prof|Rev|Sen|Rep|Gen|Col|Lt|Sgt|Jr|Sr|vs|etc|Inc|Ltd|Co|"
+    r"U\.S|U\.N|U\.K|E\.U|D\.C|a\.m|p\.m|No|Vol|Fig)\.$)", re.I)
+
 def headline(text, limit=150):
     text = re.sub(r"\s+", " ", text).strip().rstrip("…").strip()
-    ends = [m.end() for m in SENT_END_RX.finditer(text)]
+    # A "sentence end" inside a headline must not be an abbreviation dot
+    # ("St. Louis", "Dr. Ahmad") and must leave a real headline behind.
+    ends = [m.end() for m in SENT_END_RX.finditer(text)
+            if m.end() >= 20 and not _ABBREV_RX.search(text[:m.end()])]
     for e in ([ends[1]] if len(ends) > 1 else []) + ([ends[0]] if ends else []):
         if e <= limit:
             text = text[:e]
@@ -512,6 +519,13 @@ def finish_item(item, feed):
     """Apply per-feed relevance filters, then categorize and score. Returns item or None."""
     if JUNK_TITLE_RX.search(item["title"]):
         return None
+    if "news.google.com" in feed.get("url", ""):
+        # Google News titles end " - Publisher". Credit the real outlet and
+        # clean the headline: wire attribution must name who actually reported,
+        # never the discovery feed's label.
+        title, sep, outlet = item["title"].rpartition(" - ")
+        if sep and 2 < len(outlet) <= 60:
+            item["title"], item["source"] = title.strip(), outlet.strip()
     # Google News indexes our own site now — never re-aggregate ourselves.
     if item["source"] in ("Times of Palestine", "تايمز أوف فلسطين") \
             or "timesofpalestine." in item["link"]:
