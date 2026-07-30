@@ -4,8 +4,10 @@ and the Telegram channel auto-poster.
 Kept in a separate module so build.py needs only a one-line hook. Everything
 here is fail-open — discoverability plumbing must never block publication.
 """
+import html
 import json
 import os
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -15,14 +17,19 @@ from datetime import datetime, timezone
 # The bot token lives ONLY in the TELEGRAM_BOT_TOKEN repo secret — never here,
 # never in logs. Without the secret this feature silently does nothing.
 TELEGRAM_CHANNEL = "@timesofpalestin"
+TELEGRAM_CHANNEL_ID = "-1003763544062"
 TELEGRAM_MAX_PER_BUILD = 8  # stay far below Telegram's per-chat rate limits
 TELEGRAM_MAX_AGE_H = 3      # only post stories this fresh (bounds any cache loss)
+TELEGRAM_RECENT_DEDUP_LIMIT = 20
 
 # IndexNow (indexnow.org): instant URL submission to Bing/Yandex/Seznam/naver.
 # No account needed — the key is proven by hosting <key>.txt at the site root.
 INDEXNOW_KEY = "b66aee352627fb0ff61f3794e4c00253"
 
 SITE_NAMES = {"en": "Times of Palestine", "ar": "تايمز أوف فلسطين"}
+
+TELEGRAM_MESSAGE_TEXT_RX = re.compile(
+    r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>', re.S)
 
 # About & Contact — Google News accountability requirements: who we are, how we
 # work, editorial standards, corrections, and a way to reach the newsroom.
@@ -191,6 +198,82 @@ def ping_indexnow(langs_items, base_url):
         return r.status, len(fresh)
 
 
+def _telegram_normalize(text):
+    return " ".join((text or "").split())
+
+
+def _telegram_extract_headline(text):
+    for line in (text or "").splitlines():
+        line = _telegram_normalize(line)
+        if line and not line.startswith(("http://", "https://")):
+            return line
+    return ""
+
+
+def _telegram_scrape_recent_headlines():
+    req = urllib.request.Request(
+        f"https://t.me/s/{TELEGRAM_CHANNEL.lstrip('@')}",
+        headers={"User-Agent": "Mozilla/5.0 TimesOfPalestine/1.0"})
+    with urllib.request.urlopen(req, timeout=15) as r:
+        page = r.read().decode("utf-8", "replace")
+    headlines = []
+    seen = set()
+    for frag in reversed(TELEGRAM_MESSAGE_TEXT_RX.findall(page)):
+        text = re.sub(r"(?i)<br\s*/?>", "\n", frag)
+        text = re.sub(r"(?s)<[^>]+>", "", text)
+        headline = _telegram_extract_headline(html.unescape(text))
+        if headline and headline not in seen:
+            seen.add(headline)
+            headlines.append(headline)
+            if len(headlines) >= TELEGRAM_RECENT_DEDUP_LIMIT:
+                break
+    return headlines
+
+
+def _telegram_getupdates_recent_headlines(token):
+    req = urllib.request.Request(
+        f"https://api.telegram.org/bot{token}/getUpdates?limit=100")
+    with urllib.request.urlopen(req, timeout=15) as r:
+        payload = json.loads(r.read().decode("utf-8"))
+    headlines = []
+    seen = set()
+    for upd in reversed(payload.get("result") or []):
+        msg = (upd.get("channel_post") or upd.get("edited_channel_post")
+               or upd.get("message") or upd.get("edited_message") or {})
+        chat = msg.get("chat") or {}
+        username = (chat.get("username") or "").lower()
+        chat_id = str(chat.get("id") or "")
+        if username != TELEGRAM_CHANNEL.lstrip("@") and chat_id != TELEGRAM_CHANNEL_ID:
+            continue
+        headline = _telegram_extract_headline(msg.get("text") or msg.get("caption") or "")
+        if headline and headline not in seen:
+            seen.add(headline)
+            headlines.append(headline)
+            if len(headlines) >= TELEGRAM_RECENT_DEDUP_LIMIT:
+                break
+    return headlines
+
+
+def _telegram_recent_headlines(token):
+    for getter in (_telegram_scrape_recent_headlines,
+                   lambda: _telegram_getupdates_recent_headlines(token)):
+        try:
+            headlines = getter()
+            if headlines:
+                return {_telegram_normalize(h) for h in headlines}
+        except Exception:
+            pass
+    return set()
+
+
+def _write_telegram_cache(cache_path, cache):
+    try:
+        cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+        return True
+    except Exception:
+        return False
+
+
 def post_telegram(dist, langs_items, base_url):
     """Post new stories to the TOP Telegram channel, once each, newest first.
 
@@ -210,10 +293,13 @@ def post_telegram(dist, langs_items, base_url):
     # the posted-history cache can be lost (a cancelled run never saves it), and
     # a recency window means the worst case is a few repeats, never the backlog.
     now = datetime.now(timezone.utc)
+    recent_headlines = _telegram_recent_headlines(token)
     items = sorted((it for _, lang_items in langs_items for it in lang_items
                     if (now - it["date"]).total_seconds() <= TELEGRAM_MAX_AGE_H * 3600),
                    key=lambda i: i["date"], reverse=True)
-    fresh = [i for i in items if f"tg:{i['lang']}:{i['pid']}" not in cache]
+    fresh = [it for it in items
+             if _telegram_normalize(it["title"]) not in recent_headlines
+             and f"tg:{it['lang']}:{it['pid']}" not in cache]
     posted = 0
     for it in fresh[:TELEGRAM_MAX_PER_BUILD]:
         text = f"{it['title']}\n\n{base_url}/{it['lang']}/story/{it['pid']}.html"
@@ -222,16 +308,13 @@ def post_telegram(dist, langs_items, base_url):
             req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=body)
             with urllib.request.urlopen(req, timeout=15) as r:
                 if r.status == 200:
-                    cache[f"tg:{it['lang']}:{it['pid']}"] = {"ts": now_ts}
-                    posted += 1
+                   cache[f"tg:{it['lang']}:{it['pid']}"] = {"ts": now_ts}
+                   _write_telegram_cache(cache_path, cache)
+                   posted += 1
         except Exception as e:
             print(f"  → Telegram: send failed ({type(e).__name__}) — will retry next build")
             break
         time.sleep(3)
-    try:
-        cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
-    except Exception:
-        pass
     print(f"  → Telegram: posted {posted} of {len(fresh)} eligible to {TELEGRAM_CHANNEL}")
 
 
