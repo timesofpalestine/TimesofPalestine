@@ -32,10 +32,16 @@ decide rather than force-replacing files.
 4. **Publishing safety:** event-level dedupe (one incident, one article) and
    the completeness gate (no mid-sentence bodies) in `build.py` are
    owner-requested. Markdown-residue in an original skips that article with a
-   loud warning; schema and missing-media errors fail the build.
-5. **Zero third-party Python deps in the build path** except `anthropic`
+   loud warning; schema and missing-media errors fail the build. Editorial
+   gating must default to publish (with a label if needed) — never to holding
+   coverage behind per-story manual approval.
+5. **Story imagery: keep photos (owner decision 2026-07-30).** Aggregated
+   stories fetch and display upstream social-preview images (og:image); story
+   cards must not go photoless. Any rights-strict mode (self-owned assets
+   only) is an opt-in flag, default OFF.
+6. **Zero third-party Python deps in the build path** except `anthropic`
    (installed in CI). `build.py`/`longform.py` stay stdlib-only otherwise.
-6. **Never commit** `__pycache__/`, `dist/`, cache/state JSON — see
+7. **Never commit** `__pycache__/`, `dist/`, cache/state JSON — see
    `.gitignore`. Never commit secrets; `TELEGRAM_BOT_TOKEN` and
    `ANTHROPIC_API_KEY` live in GitHub secrets only.
 
