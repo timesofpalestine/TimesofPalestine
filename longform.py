@@ -19,7 +19,9 @@ import re
 import shutil
 from pathlib import Path
 
-from publishing import PublishingError, load_media_manifest, media_rights_for
+from publishing import (
+    MediaRights, PublishingError, load_media_manifest, media_rights_for,
+)
 
 ROOT = Path(__file__).parent
 MEDIA_SRC = ROOT / "originals" / "media"
@@ -83,7 +85,22 @@ def body_html(text, media_prefix="/media/"):
             alt, src = m.group(1).strip(), m.group(2).strip()
             rights = media_rights_for(src, MEDIA_RIGHTS)
             if not rights:
-                raise PublishingError(f"long-form image {src!r} lacks rights metadata")
+                # The desks generate fresh house graphics daily and cannot
+                # pre-register them. A local file in originals/media/ is by
+                # charter a self-created TOP graphic: default to owned rights.
+                # Only remote or missing assets still require a manifest entry.
+                local = (not src.startswith(("http://", "https://", "/"))
+                         and (MEDIA_SRC / Path(src.lstrip("./")).name).is_file())
+                if local:
+                    rights = MediaRights(
+                        asset=f"originals/media/{Path(src.lstrip('./')).name}",
+                        rights_basis="owned",
+                        credit="Graphic: Times of Palestine",
+                        source="Times of Palestine",
+                    )
+                else:
+                    raise PublishingError(
+                        f"long-form image {src!r} lacks rights metadata")
             if not src.startswith(("http://", "https://", "/")):
                 src = media_prefix + src.lstrip("./")
             caption = " · ".join(x for x in (alt, rights.credit) if x)
