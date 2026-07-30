@@ -2,7 +2,7 @@
 
 An independent, bilingual (English/Arabic) static digital news front page for Palestine.
 It aggregates live reporting from outlets across Palestine and the region, links every story back
-to its original publisher, and rebuilds itself every 3 hours. Sensitive claims are deliberately
+to its original publisher, and rebuilds itself every hour. Sensitive claims are deliberately
 **not** fully automated: an editor must approve the exact version before it can publish.
 
 - **English edition:** `/en/` (LTR) · **Arabic edition:** `/ar/` (RTL, natively mirrored)
@@ -24,6 +24,8 @@ to its original publisher, and rebuilds itself every 3 hours. Sensitive claims a
    Culture & Society · Opinion & Analysis.
 6. Renders bilingual pages, RSS, JSON Feed, web/news sitemaps, structured data, PWA assets and
    sanitized health output into `dist/`.
+7. After GitHub Pages confirms the deployment, posts every new live story to
+   `@timesofpalestin`, combining paired English/Arabic originals into one message.
 
 A feed that is down, blocked, rate-limited or emits an incomplete record is isolated and reported;
 that record never publishes. Invalid repository configuration, invalid originals, unsafe local
@@ -43,9 +45,11 @@ Then open <http://localhost:8000>.
 ## Deploy once — then it runs itself forever
 
 The included GitHub Actions workflow ([.github/workflows/build.yml](.github/workflows/build.yml))
-rebuilds the site from live feeds **every 3 hours** and publishes it to GitHub Pages (free hosting).
+rebuilds the site from live feeds **at the top of every hour** and publishes it to GitHub Pages.
 It runs the offline tests and generated-site validator before deployment. The old self-chaining
 25-minute sleeping runner and unattended investigation commit path were removed.
+Telegram delivery runs only after a successful deploy and keeps a durable, retryable delivery
+ledger in the GitHub Actions cache so already-posted stories are not sent twice.
 
 One-time setup:
 
@@ -56,7 +60,7 @@ gh repo create times-of-palestine --public --source . --push
 
 Then in the GitHub repo: **Settings → Pages → Source: "GitHub Actions"**. Done.
 The first run starts immediately (or trigger it from the Actions tab); after that low-risk,
-fully-attributed aggregation refreshes every three hours. Flagged content waits for review.
+fully-attributed aggregation refreshes hourly. Flagged content waits for review.
 
 ## Publishing safety contract
 
@@ -145,9 +149,10 @@ The history is visible on the story page. Its latest timestamp controls `dateMod
 - `validate_build.py` checks internal links, HTML/JSON-LD, RSS and sitemap XML, UTC timestamps,
   approved images, review-data privacy and PWA assets.
 - `/en/feed.json` and `/ar/feed.json` are credential-free JSON Feed connector surfaces.
-- A validated `/distribution-outbox.json` is deployed with the site; only after Pages reports a
-  successful deployment do IndexNow, Telegram and the optional webhook receive those eligible
-  stories.
+- Validated distribution and Telegram outboxes contain only publication-eligible stories. Only
+  after Pages reports a successful deployment do IndexNow, Telegram and the optional webhook run.
+- Telegram keeps a separate durable delivery ledger and uses correction-aware revision keys, so a
+  corrected story is delivered once without replaying its original revision.
 - `DISTRIBUTION_WEBHOOK_URL` optionally enables a generic JSON webhook with stable
   `Idempotency-Key` headers. Missing credentials are reported as `disabled`, never as success.
 - `ANTHROPIC_API_KEY`, `TELEGRAM_BOT_TOKEN` and `DISTRIBUTION_WEBHOOK_URL` remain external GitHub
@@ -173,7 +178,7 @@ For maximum tipster safety, consider a dedicated phone/number for the newsroom S
 
 ## Hosting at GoDaddy (timesofpalestine.com)
 
-**Recommended — keep the automation:** host the site on GitHub Pages (free, rebuilds every 3 h)
+**Recommended — keep the automation:** host the site on GitHub Pages (free, rebuilds hourly)
 and just point the GoDaddy **DNS** at it (README section above). GoDaddy stays your registrar;
 GitHub does the serving and refreshing. This is the only zero-management option.
 

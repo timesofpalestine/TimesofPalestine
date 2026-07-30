@@ -10,6 +10,7 @@ from unittest import mock
 import build
 import longform
 import seo_extras
+import telegram_publish
 
 
 def item():
@@ -98,10 +99,13 @@ class RenderingTests(unittest.TestCase):
 
     def test_connectors_are_explicitly_disabled_without_configuration(self):
         with mock.patch.dict(os.environ, {}, clear=True):
-            self.assertEqual(
-                seo_extras.post_telegram(None, (("en", []),), "https://example.com"),
-                "disabled",
-            )
+            self.assertEqual(telegram_publish.main(), 0)
+            with tempfile.TemporaryDirectory() as directory:
+                self.assertEqual(
+                    seo_extras.post_webhook(
+                        Path(directory), (("en", []),), "https://example.com"),
+                    "disabled",
+                )
 
     def test_webhook_rejects_private_destination(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -155,16 +159,19 @@ class RenderingTests(unittest.TestCase):
         self.assertEqual(
             seo_extras.delivery_time(record), record["date"])
 
-    def test_telegram_recent_headline_normalization(self):
-        self.assertEqual(
-            seo_extras._telegram_normalize("  A headline \n with spacing "),
-            "A headline with spacing",
-        )
-        self.assertEqual(
-            seo_extras._telegram_extract_headline(
-                "\nhttps://example.com\nActual headline\n"),
-            "Actual headline",
-        )
+    def test_telegram_public_history_does_not_hide_corrected_revision(self):
+        outbox = {
+            "entries": [{
+                "parts": [{
+                    "delivery_key": "story:en:abc123def4:2026-07-29T14:00:00Z",
+                }],
+            }],
+        }
+        ledger = {"version": 1, "deliveries": {}}
+        recovered = telegram_publish.recover_public_channel_markers(
+            ledger, outbox, {"story:en:abc123def4"})
+        self.assertEqual(recovered, 0)
+        self.assertEqual(ledger["deliveries"], {})
 
     def test_brief_stage_preserves_reviewed_original_body(self):
         record = item()

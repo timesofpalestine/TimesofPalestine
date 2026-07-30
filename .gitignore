@@ -1,5 +1,7 @@
+__pycache__/
+*.py[cod]
 dist/
 briefs-cache.json
+telegram-delivery.json
+telegram-outbox.json
 .editorial-drafts/
-__pycache__/
-*.pyc

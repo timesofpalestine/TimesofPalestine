@@ -1,15 +1,11 @@
 """SEO extras for Times of Palestine: Google News sitemap, IndexNow, About pages,
-and the Telegram channel auto-poster.
+and the post-deploy Telegram delivery outbox.
 
 Kept in a separate module so build.py needs only a one-line hook. Everything
 here is fail-open — discoverability plumbing must never block publication.
 """
-import html
 import json
 import os
-import re
-import time
-import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
@@ -18,22 +14,17 @@ from publishing import (
 )
 
 # Public Telegram channel; posts go out via a bot the founder controls.
-# The bot token lives ONLY in the TELEGRAM_BOT_TOKEN repo secret — never here,
-# never in logs. Without the secret this feature silently does nothing.
+# The bot token lives ONLY in the TELEGRAM_BOT_TOKEN repo secret — never here
+# and never in logs. Without the secret the publisher reports itself disabled.
 TELEGRAM_CHANNEL = "@timesofpalestin"
-TELEGRAM_CHANNEL_ID = "-1003763544062"
-TELEGRAM_MAX_PER_BUILD = 8  # stay far below Telegram's per-chat rate limits
-TELEGRAM_MAX_AGE_H = 3      # only post stories this fresh (bounds any cache loss)
-TELEGRAM_RECENT_DEDUP_LIMIT = 20
+TELEGRAM_MAX_AGE_H = 6
+TELEGRAM_OUTBOX = "telegram-outbox.json"
 
 # IndexNow (indexnow.org): instant URL submission to Bing/Yandex/Seznam/naver.
 # No account needed — the key is proven by hosting <key>.txt at the site root.
 INDEXNOW_KEY = "b66aee352627fb0ff61f3794e4c00253"
 
 SITE_NAMES = {"en": "Times of Palestine", "ar": "تايمز أوف فلسطين"}
-
-TELEGRAM_MESSAGE_TEXT_RX = re.compile(
-    r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>', re.S)
 
 # About & Contact — Google News accountability requirements: who we are, how we
 # work, editorial standards, corrections, and a way to reach the newsroom.
@@ -202,137 +193,65 @@ def ping_indexnow(langs_items, base_url):
         return r.status, len(fresh)
 
 
-def _telegram_normalize(text):
-    return " ".join((text or "").split())
+def build_telegram_outbox(langs_items, base_url, now=None):
+    """Return fresh published stories, grouping bilingual originals into one post."""
+    now = now or datetime.now(timezone.utc)
+    groups = {}
+    for _, items in langs_items:
+        for it in items:
+            revision_time = it.get("modified") or it["date"]
+            if (now - revision_time).total_seconds() > TELEGRAM_MAX_AGE_H * 3600:
+                continue
+            link = str(it.get("link", ""))
+            original_slug = ""
+            if it.get("source_id") == "top-original" and link.startswith("original:"):
+                stem = link.split(":", 1)[1]
+                suffix = f".{it['lang']}"
+                if stem.endswith(suffix):
+                    original_slug = stem[:-len(suffix)]
+            group_key = (
+                f"original:{original_slug}"
+                if original_slug else f"story:{it['lang']}:{it['pid']}"
+            )
+            group = groups.setdefault(group_key, {
+                "group_key": group_key,
+                "published_at": revision_time.isoformat(),
+                "parts": [],
+            })
+            if revision_time.isoformat() > group["published_at"]:
+                group["published_at"] = revision_time.isoformat()
+            base_key = f"story:{it['lang']}:{it['pid']}"
+            revision = utc_iso(revision_time)
+            group["parts"].append({
+                "delivery_key": (
+                    f"{base_key}:{revision}" if it.get("modified") else base_key),
+                "legacy_key": (
+                    "" if it.get("modified")
+                    else f"tg:{it['lang']}:{it['pid']}"),
+                "lang": it["lang"],
+                "pid": it["pid"],
+                "title": it["title"],
+                "url": f"{base_url}/{it['lang']}/story/{it['pid']}.html",
+                "revision": revision,
+            })
+    outbox = list(groups.values())
+    for entry in outbox:
+        entry["parts"].sort(key=lambda part: (part["lang"] != "en", part["lang"]))
+    # Oldest first leaves the newest headline at the top of the Telegram channel.
+    outbox.sort(key=lambda entry: (entry["published_at"], entry["group_key"]))
+    return outbox
 
 
-def _telegram_extract_headline(text):
-    for line in (text or "").splitlines():
-        line = _telegram_normalize(line)
-        if line and not line.startswith(("http://", "https://")):
-            return line
-    return ""
-
-
-def _telegram_scrape_recent_headlines():
-    req = urllib.request.Request(
-        f"https://t.me/s/{TELEGRAM_CHANNEL.lstrip('@')}",
-        headers={"User-Agent": "Mozilla/5.0 TimesOfPalestine/1.0"})
-    with urllib.request.urlopen(req, timeout=15) as r:
-        page = r.read().decode("utf-8", "replace")
-    headlines = []
-    seen = set()
-    for frag in reversed(TELEGRAM_MESSAGE_TEXT_RX.findall(page)):
-        text = re.sub(r"(?i)<br\s*/?>", "\n", frag)
-        text = re.sub(r"(?s)<[^>]+>", "", text)
-        headline = _telegram_extract_headline(html.unescape(text))
-        if headline and headline not in seen:
-            seen.add(headline)
-            headlines.append(headline)
-            if len(headlines) >= TELEGRAM_RECENT_DEDUP_LIMIT:
-                break
-    return headlines
-
-
-def _telegram_getupdates_recent_headlines(token):
-    req = urllib.request.Request(
-        f"https://api.telegram.org/bot{token}/getUpdates?limit=100")
-    with urllib.request.urlopen(req, timeout=15) as r:
-        payload = json.loads(r.read().decode("utf-8"))
-    headlines = []
-    seen = set()
-    for upd in reversed(payload.get("result") or []):
-        msg = (upd.get("channel_post") or upd.get("edited_channel_post")
-               or upd.get("message") or upd.get("edited_message") or {})
-        chat = msg.get("chat") or {}
-        username = (chat.get("username") or "").lower()
-        chat_id = str(chat.get("id") or "")
-        if username != TELEGRAM_CHANNEL.lstrip("@") and chat_id != TELEGRAM_CHANNEL_ID:
-            continue
-        headline = _telegram_extract_headline(msg.get("text") or msg.get("caption") or "")
-        if headline and headline not in seen:
-            seen.add(headline)
-            headlines.append(headline)
-            if len(headlines) >= TELEGRAM_RECENT_DEDUP_LIMIT:
-                break
-    return headlines
-
-
-def _telegram_recent_headlines(token):
-    for getter in (_telegram_scrape_recent_headlines,
-                   lambda: _telegram_getupdates_recent_headlines(token)):
-        try:
-            headlines = getter()
-            if headlines:
-                return {_telegram_normalize(h) for h in headlines}
-        except Exception:
-            pass
-    return set()
-
-
-def _write_telegram_cache(cache_path, cache):
-    try:
-        cache_path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
-        return True
-    except Exception:
-        return False
-
-
-def post_telegram(dist, langs_items, base_url):
-    """Post new stories to the TOP Telegram channel, once each, newest first.
-
-    Posted-story markers ride in briefs-cache.json, which the workflow caches
-    between builds. That cache is best-effort — a cancelled run never saves it —
-    so eligibility is also bounded by a recency window (see below)."""
-    token = "".join(os.environ.get("TELEGRAM_BOT_TOKEN", "").split())
-    if not token:
-        return "disabled"
-    cache_path = dist.parent / "briefs-cache.json"
-    cache = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
-    now_ts = datetime.now(timezone.utc).timestamp()
-    # Only genuinely fresh stories are eligible. This bounds the blast radius:
-    # the posted-history cache can be lost (a cancelled run never saves it), and
-    # a recency window means the worst case is a few repeats, never the backlog.
-    now = datetime.now(timezone.utc)
-    recent_headlines = _telegram_recent_headlines(token)
-    items = sorted((it for _, lang_items in langs_items for it in lang_items
-                    if (now - delivery_time(it)).total_seconds()
-                    <= TELEGRAM_MAX_AGE_H * 3600),
-                   key=delivery_time, reverse=True)
-    fresh = [
-        item for item in items
-        if needs_revision_delivery(
-            cache, f"tg:{item['lang']}:{item['pid']}", item)
-        and (
-            item.get("modified")
-            or _telegram_normalize(item["title"]) not in recent_headlines
-        )
-    ]
-    posted = 0
-    cache_ok = True
-    for it in fresh[:TELEGRAM_MAX_PER_BUILD]:
-        text = f"{it['title']}\n\n{base_url}/{it['lang']}/story/{it['pid']}.html"
-        body = urllib.parse.urlencode({"chat_id": TELEGRAM_CHANNEL, "text": text}).encode()
-        try:
-            req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=body)
-            with urllib.request.urlopen(req, timeout=15) as r:
-                if r.status == 200:
-                   cache[f"tg:{it['lang']}:{it['pid']}"] = {
-                       "ts": now_ts,
-                       "revision": delivery_revision(it),
-                   }
-                   cache_ok = _write_telegram_cache(cache_path, cache)
-                   posted += 1
-                   if not cache_ok:
-                       print("  → Telegram: delivery cache write failed")
-                       break
-        except Exception as e:
-            print(f"  → Telegram: send failed ({type(e).__name__}) — will retry next build")
-            break
-        time.sleep(3)
-    print(f"  → Telegram: posted {posted} of {len(fresh)} eligible to {TELEGRAM_CHANNEL}")
-    expected = min(len(fresh), TELEGRAM_MAX_PER_BUILD)
-    return "ok" if cache_ok and posted == expected else "degraded"
+def write_telegram_outbox(dist, langs_items, base_url):
+    outbox = {
+        "version": 1,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "channel": TELEGRAM_CHANNEL,
+        "entries": build_telegram_outbox(langs_items, base_url),
+    }
+    (dist.parent / TELEGRAM_OUTBOX).write_text(
+        json.dumps(outbox, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"  → Telegram outbox: {len(outbox['entries'])} fresh story groups")
 
 
 def render_json_feed(lang, items, base_url):
@@ -508,6 +427,7 @@ def write_extras(dist, langs_items, built_at, base_url, health):
         ),
         encoding="utf-8",
     )
+    write_telegram_outbox(dist, langs_items, base_url)
     (dist / "404.html").write_text('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — Times of Palestine</title><meta name="robots" content="noindex"><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 46 46%22><rect width=%2246%22 height=%2215.3%22 fill=%22%230b0b0c%22/><rect y=%2215.3%22 width=%2246%22 height=%2215.3%22 fill=%22%23fff%22/><rect y=%2230.6%22 width=%2246%22 height=%2215.4%22 fill=%22%23007A3D%22/><path d=%22M0 0 L21 23 L0 46 Z%22 fill=%22%23CE1126%22/></svg>"><style>*{margin:0;padding:0;box-sizing:border-box}body{background:#faf9f4;color:#141419;font-family:-apple-system,Helvetica,Arial,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:2rem}a{color:inherit}h1{font-family:Georgia,serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;line-height:1.15}.flag{width:130px;height:5px;margin:0 auto 1.6rem;background:linear-gradient(90deg,#0b0b0c 0 34%,#C8102E 34% 67%,#00753A 67% 100%)}p{margin-top:.9rem;color:#595962;line-height:1.6}.links{margin-top:1.8rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}.links a{background:#C8102E;color:#fff;font-weight:800;padding:.8rem 1.6rem;border-radius:3px;text-decoration:none}@media (prefers-color-scheme:dark){body{background:#101013;color:#e9e9ef}p{color:#a0a0aa}.links a{background:#ff8896;color:#101013}}</style></head><body><div><div class="flag"></div><h1>That page is no longer here.</h1><p>Stories rotate off the front page as the news moves. The newsroom is still publishing — pick an edition below.</p><p dir="rtl" lang="ar">تدور الأخبار وتُستبدل الصفحات باستمرار. اختر النسخة التي تريد قراءتها.</p><div class="links"><a href="/en/">English edition</a><a href="/ar/">النسخة العربية</a></div></div></body></html>', encoding="utf-8")
     sm = dist / "sitemap.xml"
     extra_urls = "".join(
@@ -537,11 +457,7 @@ def deliver(dist, langs_items, base_url, health):
     except Exception as e:  # network hiccups must not fail the build
         print(f"  → IndexNow ping skipped ({type(e).__name__})")
         health.connectors["indexnow"] = "degraded"
-    try:
-        health.connectors["telegram"] = post_telegram(dist, langs_items, base_url)
-    except Exception as e:  # the channel must never block the site
-        print(f"  → Telegram posting skipped ({type(e).__name__})")
-        health.connectors["telegram"] = "degraded"
+    health.connectors["telegram"] = "external_outbox"
     try:
         health.connectors["webhook"] = post_webhook(dist, langs_items, base_url)
     except Exception as e:
