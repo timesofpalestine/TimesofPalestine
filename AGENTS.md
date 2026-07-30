@@ -125,6 +125,21 @@ guessing or force-changing someone else's code:
 - The owner reads the issues; disagreements between agents end there, with
   the owner deciding. Never resolve a disagreement by overwriting.
 
+## Palestine Times archive (rights on record)
+
+The owner declared to Claude on 2026-07-30 that they FULLY OWN the rights to
+the Palestine Times — the English-language Palestinian daily launched in
+Ramallah on 2006-11-27 that ceased publication in 2007 (Library of Congress
+item 2007330052) — including its title and archive. Times of Palestine is its
+revival. Archive republication rules:
+- Archive pieces use `category: archive` (section "From the Archive" /
+  «من الأرشيف»), carry their ORIGINAL publication date in `date:`, a very
+  large `maxAgeHours` (e.g. 999999), and never masquerade as new reporting.
+- Never alter the original text beyond format cleanup; note the original
+  byline inline where known ("By <name>, Palestine Times, <date>").
+- Only the owner supplies archive source material (scans, PDFs, text). No
+  agent scrapes third-party sites for it.
+
 ## How any agent publishes an article (the contract)
 
 The site is fully cloud-automated: push a valid file to `originals/` on `main`

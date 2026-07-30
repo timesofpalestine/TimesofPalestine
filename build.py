@@ -125,7 +125,7 @@ HEALTH = None
 ORIGINAL_CATEGORIES = {
     "gaza", "westbank", "politics", "economy", "accountability", "research",
     "bitcoin", "diaspora", "arts", "sports", "social", "opinion", "news", "humans",
-    "health",
+    "health", "archive",
 }
 ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 ORIGINAL_BODY_STATS = {}
@@ -1234,6 +1234,7 @@ STR = {
         "hero_label": "TOP STORY",
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
                      "humans": "Real Lives", "health": "Health & Healing",
+                     "archive": "From the Archive",
                      "diaspora": "The Diaspora",
                      "arts": "Culture & Arts", "sports": "Sport",
                      "accountability": "Transparency & Accountability",
@@ -1289,6 +1290,7 @@ STR = {
         "hero_label": "الخبر الأبرز",
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
                      "humans": "حكايات فلسطينية", "health": "الصحة والتعافي",
+                     "archive": "من الأرشيف",
                      "diaspora": "الشتات الفلسطيني",
                      "arts": "الثقافة والفنون", "sports": "رياضة",
                      "accountability": "شفافية ومساءلة",
@@ -1333,11 +1335,11 @@ STR = {
 # Research (think tanks / OSINT) comes first: news before it becomes news.
 SECTION_ORDER = {
     "en": ["research", "gaza", "westbank", "health", "social", "bitcoin", "diaspora", "arts", "sports",
-           "accountability", "politics", "economy", "opinion", "news"],
+           "accountability", "politics", "economy", "opinion", "news", "archive"],
     "ar": ["research", "gaza", "westbank", "health", "social", "bitcoin", "diaspora", "arts", "sports",
-           "accountability", "politics", "economy", "opinion", "news"],
+           "accountability", "politics", "economy", "opinion", "news", "archive"],
 }
-FOCUS_SECTIONS = {"research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health"}  # shown even with one story
+FOCUS_SECTIONS = {"research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive"}  # shown even with one story
 
 WEEKDAYS_AR = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
 MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",
