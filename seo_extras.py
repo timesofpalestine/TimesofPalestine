@@ -123,8 +123,6 @@ def render_about(lang, built_at):
 <link rel="canonical" href="{b.BASE_URL}/{lang}/about.html">
 <link rel="alternate" hreflang="en" href="{b.BASE_URL}/en/about.html">
 <link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/about.html">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="{b.FONTS[lang]}" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">{b.swg(lang)}
 </head>
 <body>

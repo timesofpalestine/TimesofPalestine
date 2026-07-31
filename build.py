@@ -1386,7 +1386,13 @@ STR = {
         "kind_original": "Original Reporting", "kind_brief": "TOP News Brief",
         "kind_curated": "Curated Summary", "based_on": "Based on reporting by",
         "keep_reading": "Keep Reading",
+        "toc": "Story guide",
         "back_home": "← All the news",
+        "breadcrumbs_home": "Home",
+        "section_latest": "Latest",
+        "section_fresh": "fresh",
+        "story_published": "Published",
+        "story_updated": "Updated",
         "summary_note": "Summary curated by Times of Palestine. The full story belongs to its publisher.",
         "tips_nav": "Send a Tip",
         "tips_kicker": "SECURE TIP LINE",
@@ -1439,7 +1445,13 @@ STR = {
         "kind_original": "تقرير أصلي", "kind_brief": "موجز تايمز أوف فلسطين",
         "kind_curated": "ملخص محرَّر", "based_on": "استناداً إلى تقرير",
         "keep_reading": "تابع القراءة",
+        "toc": "دليل القصة",
         "back_home": "كل الأخبار ←",
+        "breadcrumbs_home": "الرئيسية",
+        "section_latest": "آخر تحديث",
+        "section_fresh": "جديد",
+        "story_published": "نُشر",
+        "story_updated": "حُدّث",
         "summary_note": "الملخص من إعداد «تايمز أوف فلسطين». المادة الكاملة ملك لناشرها الأصلي.",
         "tips_nav": "أرسل معلومة",
         "tips_kicker": "خط المعلومات الآمن",
@@ -1512,18 +1524,97 @@ def time_ago(date, lang):
         return f"{hours}h ago"
     return f"{round(hours / 24)}d ago"
 
+
+def is_fresh(date):
+    return (datetime.now(timezone.utc) - date).total_seconds() / 60 <= 90
+
+
+def compact_stamp(date, lang):
+    d = date.astimezone(GAZA)
+    return f"{d.day:02d}/{d.month:02d} · {d.hour:02d}:{d.minute:02d}"
+
+
+def full_stamp(date, lang):
+    d = date.astimezone(GAZA)
+    return f"{full_date(d, lang)} · {d.hour:02d}:{d.minute:02d} {STR[lang]['tz']}"
+
+
+def time_tag(date, lang, cls="t", fresh=False):
+    prefix = new_mark({"date": date}, lang) if fresh else ""
+    return (f'<time class="{cls}" datetime="{utc_iso(date)}" '
+            f'title="{esc(full_stamp(date, lang))}">{prefix}'
+            f'{time_ago(date, lang)} · {compact_stamp(date, lang)}</time>')
+
+
+def story_count_label(n, lang):
+    if lang == "ar":
+        return ar_count(n, "قصة واحدة", "قصتان", "قصص", "قصة")
+    return f"{n} story" if n == 1 else f"{n} stories"
+
+
+def section_meta(items, lang):
+    if not items:
+        return ""
+    latest = max(items, key=lambda i: i["date"])
+    bits = [story_count_label(len(items), lang)]
+    fresh = sum(1 for item in items if is_fresh(item["date"]))
+    if fresh:
+        bits.append(
+            (f"{fresh} {STR[lang]['section_fresh']}")
+            if lang == "en" else f"{fresh} {STR[lang]['section_fresh']}"
+        )
+    bits.append(f"{STR[lang]['section_latest']} {compact_stamp(latest['date'], lang)}")
+    return f'<p class="sec-meta">{" · ".join(bits)}</p>'
+
+
+HEADING_RX = re.compile(r'<h2 class="sub">(.+?)</h2>')
+
+
+def fragment_id(text):
+    value = strip_html(text).lower()
+    value = re.sub(r"[^\w\s؀-ۿ-]", "", value, flags=re.UNICODE)
+    value = re.sub(r"[-\s]+", "-", value).strip("-")
+    return value[:64] or "section"
+
+
+def add_story_outline(rendered, lang):
+    seen = {}
+    entries = []
+    anchor_label = "Jump to this section" if lang == "en" else "انتقل إلى هذا القسم"
+
+    def repl(match):
+        title_html = match.group(1)
+        title_text = strip_html(title_html)
+        fid = fragment_id(title_text)
+        seen[fid] = seen.get(fid, 0) + 1
+        if seen[fid] > 1:
+            fid = f"{fid}-{seen[fid]}"
+        entries.append((fid, title_text))
+        return (f'<h2 class="sub" id="{fid}">{title_html}'
+                f'<a class="anchor" href="#{fid}" aria-label="{esc(anchor_label)}">#</a></h2>')
+
+    outlined = HEADING_RX.sub(repl, rendered)
+    if len(entries) < 3:
+        return outlined, ""
+    toc_items = "".join(
+        f'<li><a href="#{fid}">{esc(title)}</a></li>' for fid, title in entries
+    )
+    toc = (f'<nav class="story-toc" aria-label="{esc(STR[lang]["toc"])}">'
+           f'<p class="toc-title">{esc(STR[lang]["toc"])}</p><ol>{toc_items}</ol></nav>')
+    return outlined, toc
+
 # ---------- CSS (shared by both languages; logical properties handle RTL) ----------
 CSS = """
 :root{
   --red:#C8102E; --green:#00753A; --black:#0b0b0c; --ink:#141419; --muted:#595962;
   --paper:#f8f7f2; --card:#ffffff; --line:#e6e3da; --line-dark:#c9c5b8;
-  --serif:"Source Serif 4",Georgia,serif; --sans:"Libre Franklin",-apple-system,Helvetica,Arial,sans-serif;
+  --serif:Georgia,"Times New Roman",Times,serif; --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
   --max:1240px;
   --sh:0 2px 8px rgba(0,0,0,.07),0 1px 3px rgba(0,0,0,.05);
   --sh-h:0 6px 22px rgba(0,0,0,.11),0 2px 6px rgba(0,0,0,.06);
   --tr:.18s ease; --r:3px;
 }
-[lang=ar]{--serif:"Cairo",Tahoma,sans-serif;--sans:"Cairo",Tahoma,sans-serif}
+[lang=ar]{--serif:Tahoma,"Noto Naskh Arabic","Amiri",serif;--sans:Tahoma,"Noto Sans Arabic",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.58;text-rendering:optimizeLegibility}
@@ -1628,6 +1719,10 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .sec-head h2{font-family:var(--serif);font-weight:900;font-size:1.45rem;color:var(--black);letter-spacing:-.01em}
 [lang=ar] .sec-head h2{font-weight:700;letter-spacing:0}
 .sec-head .rule{flex:1;height:1px;background:var(--line-dark)}
+.sec-copy{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem 1.4rem;flex-wrap:wrap;margin-bottom:1.3rem}
+.sec-copy .sec-head{margin-bottom:0}
+.sec-meta{font-size:.74rem;font-weight:700;color:var(--muted);white-space:nowrap}
+[lang=ar] .sec-meta{font-size:.82rem}
 /* ── card grid ── */
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.15rem}
 .grid.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -1707,14 +1802,28 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .tipband .safety{flex-basis:100%;font-size:.7rem;color:#77777f;border-top:1px solid #26262c;padding-top:.7rem}
 /* ── story page ── */
 .story{max-width:780px;margin-inline:auto;padding:2rem 20px 1rem}
+.breadcrumbs{display:flex;flex-wrap:wrap;gap:.35rem .55rem;margin-bottom:1rem;font-size:.74rem;font-weight:700;color:var(--muted)}
+.breadcrumbs a:hover{color:var(--red)}
+.breadcrumbs .sep{color:#9a9aa2}
+.breadcrumbs [aria-current=page]{color:var(--ink)}
 .story .kick{color:var(--red);font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.7rem}
 [lang=ar] .story .kick{letter-spacing:.03em;font-size:.82rem}
 .story h1{font-family:var(--serif);font-weight:900;font-size:clamp(1.7rem,3.8vw,2.7rem);line-height:1.13;letter-spacing:-.01em}
 [lang=ar] .story h1{font-weight:800;line-height:1.5;letter-spacing:0}
 .story .meta{margin-top:1rem;font-size:.78rem;gap:.55rem}
+.story-stamp{margin-top:.55rem;font-size:.74rem;color:var(--muted);font-weight:700;display:flex;gap:.55rem;flex-wrap:wrap}
+.story-stamp time{font-variant-numeric:tabular-nums}
 .story div.lede{width:100%;aspect-ratio:16/9;margin-top:1.5rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}.story div.lede svg{width:64px;height:64px;opacity:.9}.story img.lede{width:100%;height:auto;max-height:68vh;object-fit:cover;object-position:top;background:#e8e6df;margin-top:1.5rem;border-radius:var(--r)}
 .story .kind{margin-top:1.5rem;display:inline-block;background:var(--red);color:#fff;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .65rem;border-radius:2px}[lang=ar] .story .kind{letter-spacing:0;font-size:.78rem}.story .based{display:block;margin-top:.3rem;font-weight:600;color:var(--muted);text-transform:none;letter-spacing:0}.story .byline{margin-top:.7rem;font-size:.74rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.1em}
 [lang=ar] .story .byline{letter-spacing:0;text-transform:none;font-size:.85rem}
+.story-toc{margin-top:1.35rem;padding:1rem 1.1rem;border:1px solid var(--line-dark);background:var(--card);border-radius:var(--r)}
+.story-toc .toc-title{font-size:.72rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:.7rem}
+[lang=ar] .story-toc .toc-title{letter-spacing:.03em;font-size:.82rem}
+.story-toc ol{padding-inline-start:1.2rem;display:grid;gap:.45rem}
+.story-toc a{font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.story h2.sub[id]{scroll-margin-top:84px;position:relative}
+.story h2.sub .anchor{margin-inline-start:.45rem;color:var(--muted);font-size:.8rem;opacity:0;transition:opacity var(--tr)}
+.story h2.sub:hover .anchor,.story h2.sub:focus-within .anchor{opacity:1}
 .story .summary{margin-top:1.1rem;font-family:var(--serif);font-size:1.14rem;line-height:1.82;color:#26262e}
 .story .summary+.summary{margin-top:.95rem}
 [lang=ar] .story .summary{line-height:2.05}
@@ -1815,14 +1924,6 @@ LOCK_SVG = ('<svg class="lock" width="54" height="54" viewBox="0 0 24 24" fill="
             '<path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#3fd07c" stroke-width="1.8" fill="none"/>'
             '<circle cx="12" cy="15" r="1.6" fill="#0b0b0c"/><rect x="11.3" y="15.5" width="1.4" height="2.6" rx=".7" fill="#0b0b0c"/></svg>')
 
-FONTS = {
-    "en": ("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800"
-           "&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;"
-           "0,8..60,700;0,8..60,900;1,8..60,700&display=swap"),
-    "ar": ("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900"
-           "&display=swap"),
-}
-
 # ---------- components ----------
 
 def href(it, pfx):
@@ -1841,7 +1942,7 @@ def meta_line(it, lang):
         source = (f'<a class="src" href="{esc(it["source_url"])}" target="_blank" '
                   f'rel="noopener">{esc(it["source"])}</a>')
     return (f'<p class="meta">{source}'
-            f'<span class="t">{new_mark(it, lang)}{time_ago(it["date"], lang)}</span></p>')
+            f'{time_tag(it["date"], lang, "t", fresh=True)}</p>')
 
 
 def media_credit(it, lang):
@@ -1884,14 +1985,14 @@ def card(it, lang, pfx):
             f'<div class="card-body">'
             f'<span class="chip">{esc(display_source(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<p class="t">{new_mark(it, lang)}{time_ago(it["date"], lang)}</p>'
+            f'{time_tag(it["date"], lang, "t", fresh=True)}'
             f'</div></article>')
 
 def rowcard(it, lang, pfx):
     return (f'<article class="rowcard">{card_media(it, pfx)}'
             f'<div><span class="chip">{esc(display_source(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<p class="t">{new_mark(it, lang)}{time_ago(it["date"], lang)}</p></div></article>')
+            f'{time_tag(it["date"], lang, "t", fresh=True)}</div></article>')
 
 def op_card(it, lang, pfx):
     return (f'<article class="op-card"><span class="q">“</span>'
@@ -1907,11 +2008,11 @@ def sub_item(it, lang, pfx):
             f'<div class="sub-body">'
             f'<span class="chip">{esc(display_source(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<p class="t">{new_mark(it, lang)}{time_ago(it["date"], lang)}</p>'
+            f'{time_tag(it["date"], lang, "t", fresh=True)}'
             f'</div></article>')
 
 def latest_item(it, lang, pfx):
-    return (f'<li><span class="t">{new_mark(it, lang)}{time_ago(it["date"], lang)}</span>'
+    return (f'<li>{time_tag(it["date"], lang, "t", fresh=True)}'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<span class="s">{esc(display_source(it, lang))}</span></li>')
 
@@ -2022,7 +2123,7 @@ def render_page(lang, items, built_at):
             cols = f" g{min(len(pool), 4)}"; grid = f'<div class="grid{cols}">{"".join(card(it, lang, P) for it in pool)}</div>'
         focus_cls = " focus" if k in FOCUS_SECTIONS else ""
         section_blocks += (f'<section class="block" id="{k}"><div class="wrap">'
-                           f'<div class="sec-head{focus_cls}"><h2>{t["sections"][k]}</h2><span class="rule"></span></div>'
+                           f'<div class="sec-copy"><div class="sec-head{focus_cls}"><h2>{t["sections"][k]}</h2><span class="rule"></span></div>{section_meta(sections[k], lang)}</div>'
                            + (('<p class="social-note">' + ("تقارير عامة من صحفيين مواطنين وشهود على الأرض. لا يُنشر أي تقرير حساس قبل موافقة محرر بشري على نسخته المحددة. " if lang == "ar" else "Public dispatches from citizen journalists and witnesses. Sensitive reports publish only after a human editor approves the exact version. ") + '<a href="#tips">' + ("أرسل تقريرك عبر خط «سيغنال» الآمن ←" if lang == "ar" else "Send yours via the secure Signal line →") + "</a></p>") if k == "social" else "") + f'{featured}{grid}</div></section>')
 
     opinion_block = ""
@@ -2037,7 +2138,7 @@ def render_page(lang, items, built_at):
         hero_dek = f'<p class="dek">{summary_html(hero["dek"])}</p>' if hero["dek"] else ""
         hero_html = (
             f'<div class="hero-imgwrap">'
-            f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt="{esc(hero["title"])}"></a>'
+            f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt="{esc(hero["title"])}" loading="eager" fetchpriority="high"></a>'
             f'<div class="hero-overlay">'
             f'<p class="label">{t["hero_label"]}</p>'
             f'<h2><a href="{href(hero, P)}">{esc(hero["title"])}</a></h2>'
@@ -2085,8 +2186,6 @@ def render_page(lang, items, built_at):
 <meta property="og:url" content="{BASE_URL}/{lang}/">
 <meta property="og:image" content="{BASE_URL}/og-banner.png"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"{t['site_name']}","url":"{BASE_URL}/{lang}/","sameAs":["{BASE_URL}/en/","{BASE_URL}/ar/"]}}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="{FONTS[lang]}" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">{swg(lang)}
 </head>
 <body>
@@ -2150,6 +2249,7 @@ def render_story(it, lang, related, rail, built_at):
         brief = None
     if brief:  # original TOP Newsdesk brief, written by Claude, cached per story
         paras = __import__("longform").body_html(brief)
+        paras, story_toc = add_story_outline(paras, lang)
         # Owner decision 2026-07-30, wire protocol: a rewritten story is OUR
         # copy. The source is credited once, inline, in the prose ("…, Ma'an
         # reported") — no byline credit-link and no read-at-source button.
@@ -2169,8 +2269,9 @@ def render_story(it, lang, related, rail, built_at):
                     f'<figcaption>{emb_cap}</figcaption></figure>')
         kind = t["kind_original"] if it.get("original") else t["kind_brief"]
         summary = (f'<p class="kind">{kind}</p><p class="byline">{t["byline"]}</p>'
-                   f'{paras}{source_embed}')
+                   f'{story_toc}{paras}{source_embed}')
     else:
+        story_toc = ""
         if it.get("original"):
             summary = f'<p class="summary">{summary_html(it["dek"])}</p>' if it["dek"] else ""
         else:
@@ -2210,12 +2311,27 @@ def render_story(it, lang, related, rail, built_at):
         corrections = (
             f'<section class="revisions" aria-labelledby="revision-title">'
             f'<h2 id="revision-title">{esc(heading)}</h2><ol>{rows}</ol></section>')
-    related_cards = "".join(card(r, lang, "") for r in related)
+    related_primary = [r for r in related if r is not it and r["cat"] == it["cat"]]
+    related_secondary = [r for r in related if r is not it and r["cat"] != it["cat"]]
+    related_cards = "".join(card(r, lang, "") for r in (related_primary + related_secondary)[:8])
     page_url = f"{BASE_URL}/{lang}/story/{it['pid']}.html"; _q = __import__("urllib.parse", fromlist=["quote"]).quote; share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a></div>')
     desc = esc(summary_text(
         (it.get("brief") or it["dek"]).replace(chr(10), " "))[:155])
     og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
     og_image = f'<meta property="og:image" content="{esc(og_img_url)}">' if it["image"] else ""
+    story_stamp = (
+        f'<p class="story-stamp"><time datetime="{utc_iso(it["date"])}">{t["story_published"]} {full_stamp(it["date"], lang)}</time>'
+        + (f'<time datetime="{utc_iso(it["modified"])}">{t["story_updated"]} {full_stamp(it["modified"], lang)}</time>'
+           if it.get("modified") else "")
+        + "</p>"
+    )
+    section_name = t["sections"].get(it["cat"], t["sections"]["news"])
+    breadcrumb_nav = (
+        f'<nav class="breadcrumbs" aria-label="Breadcrumb">'
+        f'<a href="../">{t["breadcrumbs_home"]}</a><span class="sep">/</span>'
+        f'<a href="../#{it["cat"]}">{section_name}</a><span class="sep">/</span>'
+        f'<span aria-current="page">{esc(it["title"])}</span></nav>'
+    )
     hreflang = ""
     if it["source_id"] == "top-original" and str(it.get("link", "")).startswith("original:"):
         stem = it["link"].split(":", 1)[1]
@@ -2276,8 +2392,6 @@ def render_story(it, lang, related, rail, built_at):
 {og_image}
 <meta name="twitter:card" content="{'summary_large_image' if it['image'] else 'summary'}">
 <script type="application/ld+json">{jsonld}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="{FONTS[lang]}" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">{swg(lang)}
 </head>
 <body>
@@ -2289,9 +2403,11 @@ def render_story(it, lang, related, rail, built_at):
 
 <main>
   <article class="story">
+    {breadcrumb_nav}
     <p class="kick">{t['sections'].get(it['cat'], t['sections']['news'])}</p>
     <h1>{esc(it['title'])}</h1>
     {meta_line(it, lang)}
+    {story_stamp}
     {review_note}
     {lede}
     {summary}
