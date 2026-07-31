@@ -168,6 +168,8 @@ class RenderingTests(unittest.TestCase):
         self.assertIn('href="https://example.com/story"', html)
         self.assertIn("Based on reporting by", html)
         self.assertNotIn('"dateModified"', html)
+        self.assertIn('datetime="2026-07-29T12:00:00Z"', html)
+        self.assertIn("Published", html)
 
     def test_correction_controls_date_modified(self):
         record = item()
@@ -179,6 +181,50 @@ class RenderingTests(unittest.TestCase):
             record, "en", [], [record], datetime(2026, 7, 29, 15, tzinfo=timezone.utc))
         self.assertIn('"dateModified": "2026-07-29T14:00:00Z"', html)
         self.assertIn("Updates &amp; corrections", html)
+        self.assertIn("Updated", html)
+
+    def test_story_pages_add_breadcrumbs_and_toc_for_long_originals(self):
+        record = item()
+        record.update({
+            "title": "Palestinian nurses rebuild trauma care across Gaza",
+            "original": True,
+            "source_id": "top-original",
+            "source": "Times of Palestine",
+            "link": "original:health-check.en",
+            "cat": "health",
+            "brief": (
+                "## First turn\n\n"
+                "Paragraph one.\n\n"
+                "## Second turn\n\n"
+                "Paragraph two.\n\n"
+                "## Third turn\n\n"
+                "Paragraph three."
+            ),
+        })
+        html = build.render_story(
+            record, "en", [], [record], datetime(2026, 7, 29, 15, tzinfo=timezone.utc))
+        self.assertIn('class="breadcrumbs"', html)
+        self.assertIn('href="../#health"', html)
+        self.assertIn('class="story-toc"', html)
+        self.assertIn('href="#first-turn"', html)
+        self.assertIn('id="second-turn"', html)
+
+    def test_rendered_pages_do_not_depend_on_google_fonts(self):
+        record = item()
+        record.update({
+            "cat": "research",
+            "original": True,
+            "source_id": "top-original",
+            "source": "Times of Palestine",
+            "link": "original:research-check.en",
+        })
+        homepage = build.render_page(
+            "en", [record], datetime(2026, 7, 29, 15, tzinfo=timezone.utc))
+        story = build.render_story(
+            record, "en", [], [record], datetime(2026, 7, 29, 15, tzinfo=timezone.utc))
+        self.assertNotIn("fonts.googleapis.com", homepage)
+        self.assertNotIn("fonts.googleapis.com", story)
+        self.assertIn("1 story", homepage)
 
     def test_rss_dates_are_gmt_and_source_is_present(self):
         xml = build.render_rss(
