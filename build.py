@@ -13,6 +13,7 @@ Palestinian flag palette as restrained accents. CSS logical properties make
 the Arabic page mirror natively (RTL).
 """
 import concurrent.futures
+import functools
 import gzip
 import hashlib
 import html
@@ -24,7 +25,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urljoin, urlsplit
 from zoneinfo import ZoneInfo
 
 from editorial import (
@@ -459,6 +460,61 @@ def item_source(el):
 
 CANONICAL_RX = re.compile(
     r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', re.I)
+HTML_TAG_META_RX = re.compile(r"<meta\b[^>]*>", re.I)
+HTML_TAG_LINK_RX = re.compile(r"<link\b[^>]*>", re.I)
+HTML_ATTR_RX = re.compile(r'([a-zA-Z_:][-a-zA-Z0-9_:.]*)\s*=\s*([\'"])(.*?)\2', re.S)
+SOCIAL_IMAGE_KEYS = {
+    "og:image", "og:image:url",
+    "twitter:image", "twitter:image:src",
+    "image",
+}
+
+
+def parse_html_attrs(tag):
+    attrs = {}
+    for key, _quote, value in HTML_ATTR_RX.findall(tag):
+        attrs[key.lower()] = html.unescape(value.strip())
+    return attrs
+
+
+def extract_social_image(page, base_url):
+    for tag in HTML_TAG_META_RX.findall(page):
+        attrs = parse_html_attrs(tag)
+        key = (attrs.get("property") or attrs.get("name") or attrs.get("itemprop") or "").lower()
+        candidate = attrs.get("content", "").strip()
+        if key in SOCIAL_IMAGE_KEYS and candidate:
+            url = urljoin(base_url, candidate)
+            if is_http_url(url):
+                return url
+    for tag in HTML_TAG_LINK_RX.findall(page):
+        attrs = parse_html_attrs(tag)
+        rel = attrs.get("rel", "").lower()
+        href = attrs.get("href", "").strip()
+        if "image_src" in rel and href:
+            url = urljoin(base_url, href)
+            if is_http_url(url):
+                return url
+    return None
+
+
+@functools.lru_cache(maxsize=1024)
+def discover_story_image(article_url):
+    if not is_http_url(article_url) or not is_public_http_url(article_url):
+        return None
+    try:
+        req = urllib.request.Request(article_url, headers={"User-Agent": UA, "Accept": "text/html, */*"})
+        with safe_urlopen(req, timeout=10) as response:
+            ctype = (response.headers.get("Content-Type") or "").lower()
+            if ctype and "html" not in ctype:
+                return None
+            page = response.read(280000).decode("utf-8", errors="replace")
+            base_url = response.url or article_url
+    except (OSError, ValueError):
+        return None
+    image = extract_social_image(page, base_url)
+    if not image:
+        return None
+    return image.replace("http://", "https://", 1)
 
 
 def resolve_article_url(url):
@@ -554,6 +610,14 @@ def attach_media(item, candidate, local_original=False):
         "rightsBasis": rights.rights_basis,
         "licenseUrl": rights.license_url,
     }
+
+
+def backfill_remote_story_image(item):
+    if item.get("original") or item.get("image"):
+        return
+    candidate = discover_story_image(item.get("link") or "")
+    if candidate:
+        attach_media(item, candidate)
 
 
 def finish_item(item, feed):
@@ -689,6 +753,7 @@ def fetch_rss(feed, lang, now, max_age):
             continue
         if item:
             attach_media(item, candidate_image)
+            backfill_remote_story_image(item)
             items.append(item)
     return items
 
@@ -749,6 +814,7 @@ def fetch_telegram(feed, lang, now, max_age):
             continue
         if item:
             attach_media(item, candidate_image)
+            backfill_remote_story_image(item)
             items.append(item)
     return items
 def fetch_feed(feed, lang):

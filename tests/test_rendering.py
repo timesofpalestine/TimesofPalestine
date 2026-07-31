@@ -44,6 +44,9 @@ def item():
 
 
 class RenderingTests(unittest.TestCase):
+    def setUp(self):
+        build.discover_story_image.cache_clear()
+
     def test_summary_markdown_renders_safely_across_reader_surfaces(self):
         record = item()
         record.update({
@@ -157,6 +160,39 @@ class RenderingTests(unittest.TestCase):
         ):
             build.attach_media(record, "https://images.example.com/photo.jpg")
         self.assertIsNone(record["image"])
+
+    def test_discover_story_image_reads_og_image_and_resolves_relative_urls(self):
+        class Response:
+            url = "https://publisher.test/world/story"
+            headers = {"Content-Type": "text/html; charset=utf-8"}
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self, _limit):
+                return (
+                    b'<html><head><meta property="og:image" '
+                    b'content="/media/hero.jpg"></head></html>'
+                )
+
+        with mock.patch("build.safe_urlopen", return_value=Response()):
+            self.assertEqual(
+                build.discover_story_image("https://publisher.test/world/story"),
+                "https://publisher.test/media/hero.jpg",
+            )
+
+    def test_backfill_remote_story_image_uses_discovered_photo(self):
+        record = item()
+        with mock.patch(
+            "build.discover_story_image",
+            return_value="https://images.example.com/auto.jpg",
+        ), mock.patch("build.is_public_http_url", return_value=True):
+            build.backfill_remote_story_image(record)
+        self.assertEqual(record["image"], "https://images.example.com/auto.jpg")
+        self.assertEqual(record["media"]["credit"], "Example News")
 
     def test_media_for_held_stories_is_not_copied(self):
         with tempfile.TemporaryDirectory() as directory:
