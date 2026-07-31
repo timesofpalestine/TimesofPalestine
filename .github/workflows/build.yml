@@ -1,19 +1,86 @@
 name: Build & publish Times of Palestine
 on:
+  schedule:
+    - cron: "*/10 * * * *"   # refresh every 10 minutes
   workflow_dispatch: {}
+  push:
+    branches: [main]
 permissions:
-  contents: read
+  contents: write            # the investigations desk commits its reports back
+  pages: write
+  id-token: write
 concurrency:
-  group: trace-diagnostic
+  group: pages-hourly
   cancel-in-progress: false
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Trace story source (no build, no deploy)
-        run: python .github/scripts/trace_story.py 7b5ecb12e4
+      - name: Restore delivery cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            briefs-cache.json
+            telegram-delivery.json
+            webhook-delivery.json
+          key: newsroom-state-${{ github.run_id }}
+          restore-keys: |
+            newsroom-state-
+            briefs-
+      - name: Install brief-writing dependency
+        run: pip install anthropic
+      - name: Run publishing safety tests
+        run: python -m unittest discover -s tests -v
+      - name: Build site from live feeds
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INVESTIGATIONS: ${{ vars.INVESTIGATIONS }}   # set this repo variable to "off" to pause the desk
+        run: python build.py
+      - name: Validate generated site
+        run: python validate_build.py dist
+      - name: Publish sanitized health summary
+        if: always()
+        run: python validate_build.py dist --summary >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Publish deployed stories to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: python telegram_publish.py
+      - name: Distribute validated stories
+        if: ${{ always() && steps.deployment.outcome == 'success' }}
+        env:
+          DISTRIBUTION_WEBHOOK_URL: ${{ secrets.DISTRIBUTION_WEBHOOK_URL }}
+        run: python distribute.py dist --summary >> "$GITHUB_STEP_SUMMARY"
+      - name: Persist generated investigations
+        if: ${{ always() && steps.deployment.outcome == 'success' && github.ref == 'refs/heads/main' }}
+        continue-on-error: true
+        run: |
+          git config user.name "Times of Palestine Newsdesk"
+          git config user.email "newsdesk@timesofpalestine.com"
+          git add originals/
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish automated investigation [skip ci]"
+            git push origin HEAD:main
+          fi
+      - name: Save briefs and delivery cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            briefs-cache.json
+            telegram-delivery.json
+            webhook-delivery.json
+          key: newsroom-state-${{ github.run_id }}
