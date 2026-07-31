@@ -2102,10 +2102,20 @@ def render_story(it, lang, related, rail, built_at):
         jsonld_record["citation"] = [it["link"]] + [
             source["article"] for source in corroborating]
     if it.get("media"):
-        jsonld_record["image"] = [{
-            "@type": "ImageObject", "url": it["image"],
-            "creditText": it["media"]["credit"],
-        }]
+        _media = it["media"]
+        _src_name = _media.get("source") or t["site_name"]
+        _img_obj: dict = {
+            "@type": "ImageObject",
+            "url": it["image"],
+            "creditText": _media["credit"],
+            "creator": {"@type": "Organization", "name": _src_name},
+            "copyrightNotice": f"\u00a9 {_src_name}",
+            "acquireLicensePage": f"{BASE_URL}/{lang}/about.html",
+        }
+        _license_url = _media.get("licenseUrl") or ""
+        if _license_url:
+            _img_obj["license"] = _license_url
+        jsonld_record["image"] = [_img_obj]
     jsonld = json.dumps(jsonld_record, ensure_ascii=False)
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">

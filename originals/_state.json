@@ -1,5 +1,5 @@
 {
- "last_hour": "2026-07-30T12",
+ "last_hour": "2026-07-31T12",
  "done": {
   "pa-budget-line-by-line": "2026-07-29T17:06:23.973916+00:00",
   "donor-aid-what-reaches-the-treasury": "2026-07-29T18:04:08.801907+00:00",
@@ -8,7 +8,7 @@
   "gaza-population-transfer-proposals": "2026-07-29T22:10:42.239479+00:00",
   "who-profits-palestinian-economy": "2026-07-30T05:01:01.282911+00:00"
  },
- "last_attempt": "2026-07-30T12:22:18.467838+00:00",
+ "last_attempt": "2026-07-31T12:00:35.336160+00:00",
  "last_status": "investigations: stage failed (APIStatusError: {'type': 'error', 'error': {'details': None, 'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CdWyHGb8AKvqnsxxBXXv5'}) — news build continues",
  "error": "no API key"
 }
