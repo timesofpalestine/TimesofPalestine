@@ -1579,10 +1579,10 @@ nav.sections a.tip{color:#3fd07c;border-color:#3fd07c}
 [lang=ar] .hero-overlay h2{line-height:1.5;font-weight:800}
 .hero-overlay h2 a{color:#fff}
 .hero-overlay h2 a:hover{color:#ffd0d4}
-.hero-overlay .dek{margin-top:.55rem;font-size:.97rem;color:rgba(255,255,255,.83);font-family:var(--serif);line-height:1.52}
-.hero-overlay .dek a,.research-feat .dek a{text-decoration:underline;text-underline-offset:2px}
-.hero-overlay .dek a{color:rgba(255,255,255,.9)}
-[lang=ar] .hero-overlay .dek{line-height:1.8}
+.hero .dek{margin-top:.7rem;font-size:.97rem;color:var(--muted);font-family:var(--serif);line-height:1.52}
+.hero .dek a,.research-feat .dek a{text-decoration:underline;text-underline-offset:2px}
+.hero .dek a{color:var(--fg)}
+[lang=ar] .hero .dek{line-height:1.8}
 .hero-overlay .meta{display:flex;align-items:center;gap:.6rem;margin-top:.65rem;font-size:.74rem;color:rgba(255,255,255,.62)}
 .hero-overlay .meta .src{color:#3fd07c;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
 [lang=ar] .hero-overlay .meta .src{letter-spacing:0}
@@ -2025,9 +2025,10 @@ def render_page(lang, items, built_at):
             f'<div class="hero-overlay">'
             f'<p class="label">{t["hero_label"]}</p>'
             f'<h2><a href="{href(hero, P)}">{esc(hero["title"])}</a></h2>'
-            f'{hero_dek}{meta_line(hero, lang)}'
+            f'{meta_line(hero, lang)}'
             f'</div></div>'
             f'{media_credit(hero, lang)}'
+            f'{hero_dek}'
         )
 
     hero_subs_html = "".join(sub_item(it, lang, P) for it in hero_subs)
