@@ -1940,12 +1940,15 @@ def render_page(lang, items, built_at):
     # hard news — never an opinion piece, review, or multi-day-old feature.
     now = datetime.now(timezone.utc)
 
+    def within_hours(i, max_age):
+        return (now - i["date"]).total_seconds() / 3600 <= max_age
+
     def hero_ok(i, max_age=HERO_MAX_AGE_H):
         return (bool(i["image"]) and len(i["title"]) > 30
                 and i["cat"] not in ("social", "research", "opinion", "culture")
                 and PALESTINE_RX.search(f"{i['title']} {i['dek']}")  # the top story IS Palestine
                 and not REVIEWISH_RX.search(i["title"])
-                and (now - i["date"]).total_seconds() / 3600 <= max_age)
+                and within_hours(i, max_age))
 
     # The hero follows the news cycle: pick the strongest story from the
     # FRESHEST window that has one (last 6h, then 12h, then 18h). A boosted
@@ -1958,10 +1961,11 @@ def render_page(lang, items, built_at):
         if heroes:
             break
     heroes = (heroes
-              or take(hero_pool, lambda i: hero_ok(i, max_age=MAX_AGE_HOURS), 1)
-              or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
-                      and PALESTINE_RX.search(f"{i['title']} {i['dek']}"), 1)
-              or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research"), 1))
+              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
+                      and PALESTINE_RX.search(f"{i['title']} {i['dek']}")
+                      and within_hours(i, HERO_MAX_AGE_H), 1)
+              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
+                      and within_hours(i, HERO_MAX_AGE_H), 1))
     hero = heroes[0] if heroes else None
     hero_subs = take(by_latest, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin"), 4)
     # Latest rail and breaking ticker: chronological, Palestine coverage first.
