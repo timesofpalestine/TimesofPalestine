@@ -267,6 +267,31 @@ def fig5(d):
 
 BUILDERS = {1: fig1, 2: fig2, 3: fig3, 4: fig4, 5: fig5}
 
+PHOTOS = {
+    "en": {
+        1: dict(file="gaza-airport-1998-arafat-clinton.jpg",
+                alt="Yasser Arafat and Bill Clinton cut the ribbon at Gaza International Airport in 1998, Suha Arafat behind them",
+                cap="Yasser Arafat and US President Bill Clinton cut the ribbon at Gaza International Airport on 14 December 1998; Suha Arafat stands behind them. The airport was the Oslo era\u2019s proudest artifact \u2014 and, like the era, did not survive. White House photograph, public domain."),
+        2: dict(file="suha-arafat-hillary-clinton-gaza-1998.jpg",
+                alt="Suha Arafat accompanies First Lady Hillary Clinton at a women's event in Gaza in 1998",
+                cap="Suha Arafat, right, accompanies First Lady Hillary Clinton at a women\u2019s event in Gaza, 14 December 1998 \u2014 five years before the Paris inquiry that never became a case. White House photograph, public domain."),
+    },
+    "ar": {
+        1: dict(file="gaza-airport-1998-arafat-clinton.jpg",
+                alt="\u064a\u0627\u0633\u0631 \u0639\u0631\u0641\u0627\u062a \u0648\u0628\u064a\u0644 \u0643\u0644\u064a\u0646\u062a\u0648\u0646 \u064a\u0642\u0635\u0651\u0627\u0646 \u0634\u0631\u064a\u0637 \u0645\u0637\u0627\u0631 \u063a\u0632\u0629 \u0627\u0644\u062f\u0648\u0644\u064a \u0639\u0627\u0645 1998 \u0648\u062e\u0644\u0641\u0647\u0645\u0627 \u0633\u0647\u0649 \u0639\u0631\u0641\u0627\u062a",
+                cap="\u064a\u0627\u0633\u0631 \u0639\u0631\u0641\u0627\u062a \u0648\u0627\u0644\u0631\u0626\u064a\u0633 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a \u0628\u064a\u0644 \u0643\u0644\u064a\u0646\u062a\u0648\u0646 \u064a\u0642\u0635\u0651\u0627\u0646 \u0634\u0631\u064a\u0637 \u0627\u0641\u062a\u062a\u0627\u062d \u0645\u0637\u0627\u0631 \u063a\u0632\u0629 \u0627\u0644\u062f\u0648\u0644\u064a \u0641\u064a 14 \u0643\u0627\u0646\u0648\u0646 \u0627\u0644\u0623\u0648\u0644 1998\u060c \u0648\u062e\u0644\u0641\u0647\u0645\u0627 \u0633\u0647\u0649 \u0639\u0631\u0641\u0627\u062a. \u0643\u0627\u0646 \u0627\u0644\u0645\u0637\u0627\u0631 \u0623\u0632\u0647\u0649 \u062b\u0645\u0627\u0631 \u0645\u0631\u062d\u0644\u0629 \u0623\u0648\u0633\u0644\u0648 \u2014 \u0648\u0644\u0645 \u064a\u0643\u062a\u0628 \u0644\u0647 \u0627\u0644\u0628\u0642\u0627\u0621 \u0645\u062b\u0644\u0647\u0627. \u062a\u0635\u0648\u064a\u0631 \u0627\u0644\u0628\u064a\u062a \u0627\u0644\u0623\u0628\u064a\u0636 \u2014 \u0645\u0644\u0643\u064a\u0629 \u0639\u0627\u0645\u0629."),
+        2: dict(file="suha-arafat-hillary-clinton-gaza-1998.jpg",
+                alt="\u0633\u0647\u0649 \u0639\u0631\u0641\u0627\u062a \u062a\u0631\u0627\u0641\u0642 \u0647\u064a\u0644\u0627\u0631\u064a \u0643\u0644\u064a\u0646\u062a\u0648\u0646 \u0641\u064a \u063a\u0632\u0629 \u0639\u0627\u0645 1998",
+                cap="\u0633\u0647\u0649 \u0639\u0631\u0641\u0627\u062a (\u0625\u0644\u0649 \u0627\u0644\u064a\u0645\u064a\u0646) \u062a\u0631\u0627\u0641\u0642 \u0627\u0644\u0633\u064a\u062f\u0629 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 \u0647\u064a\u0644\u0627\u0631\u064a \u0643\u0644\u064a\u0646\u062a\u0648\u0646 \u0641\u064a \u0644\u0642\u0627\u0621 \u0646\u0633\u0627\u0626\u064a \u0628\u063a\u0632\u0629\u060c 14 \u0643\u0627\u0646\u0648\u0646 \u0627\u0644\u0623\u0648\u0644 1998 \u2014 \u0642\u0628\u0644 \u062e\u0645\u0633 \u0633\u0646\u0648\u0627\u062a \u0645\u0646 \u062a\u062d\u0642\u064a\u0642 \u0628\u0627\u0631\u064a\u0633 \u0627\u0644\u0630\u064a \u0644\u0645 \u064a\u0635\u0631 \u0642\u0636\u064a\u0629. \u062a\u0635\u0648\u064a\u0631 \u0627\u0644\u0628\u064a\u062a \u0627\u0644\u0623\u0628\u064a\u0636 \u2014 \u0645\u0644\u0643\u064a\u0629 \u0639\u0627\u0645\u0629."),
+    },
+}
+
+
+def photo(d):
+    return ('<figure class="photo"><img src="media/%s" alt="%s" loading="lazy">'
+            '<figcaption>%s</figcaption></figure>'
+            % (esc(d["file"]), esc(d["alt"]), esc(d["cap"])))
+
 CSS = """
 :root{--paper:#F4F6F0;--card:#FFFFFF;--ink:#14201B;--ink2:#55655C;--rule:#C9D3C2;
 --rule2:#E2E8DD;--slate:#1D3A57;--slate-bg:#DCE4EC;--red:#A6291F;--red-bg:#F2DEDB;--max:1120px}
@@ -409,6 +434,11 @@ body[dir=rtl] .f4-p li{line-height:1.75}
 .f4-b{border-top:1px solid var(--rule);padding-top:12px!important}
 .f4-b li{color:var(--ink2);border-inline-start:3px solid var(--rule2)}
 
+/* photos */
+.photo{margin:44px auto;max-width:900px}
+.photo img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.photo figcaption{margin-top:10px;font-size:13px;line-height:1.55;color:var(--ink2)}
+
 /* f5 */
 .xpost{margin:0 0 8px;padding:16px 18px;background:var(--paper);border:1px solid var(--rule);
 border-inline-start:4px solid var(--red);border-radius:2px;direction:ltr;text-align:left}
@@ -509,6 +539,10 @@ def build(lang):
         key = "FIGPLACEHOLDER%d" % i
         placeholders[key] = BUILDERS[i](FIGS[lang][i])
         body_md = body_md.replace("[[FIG%d]]" % i, key)
+    for i, d in PHOTOS[lang].items():
+        key = "PHOTOPLACEHOLDER%d" % i
+        placeholders[key] = photo(d)
+        body_md = body_md.replace("[[PHOTO%d]]" % i, key)
 
     html_body = markdown.markdown(body_md, extensions=["extra"])
     html_body = '<div class="col">' + html_body + "</div>"

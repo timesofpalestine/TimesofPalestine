@@ -140,6 +140,11 @@ body[dir=rtl] .f4-p li{line-height:1.75}
 .f4-b{border-top:1px solid var(--rule);padding-top:12px!important}
 .f4-b li{color:var(--ink2);border-inline-start:3px solid var(--rule2)}
 
+/* photos */
+.photo{margin:44px auto;max-width:900px}
+.photo img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.photo figcaption{margin-top:10px;font-size:13px;line-height:1.55;color:var(--ink2)}
+
 /* f5 */
 .xpost{margin:0 0 8px;padding:16px 18px;background:var(--paper);border:1px solid var(--rule);
 border-inline-start:4px solid var(--red);border-radius:2px;direction:ltr;text-align:left}
