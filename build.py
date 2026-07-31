@@ -1920,6 +1920,7 @@ def render_page(lang, items, built_at):
     t = STR[lang]
     order = SECTION_ORDER[lang]
     by_score = sorted(items, key=lambda i: i["score"], reverse=True)  # editorial ranking
+    by_latest = sorted(items, key=lambda i: (i["date"], i["score"]), reverse=True)
     used = set()
 
     def take(pool, pred, n):
@@ -1939,40 +1940,44 @@ def render_page(lang, items, built_at):
     # hard news — never an opinion piece, review, or multi-day-old feature.
     now = datetime.now(timezone.utc)
 
+    def within_hours(i, max_age):
+        return (now - i["date"]).total_seconds() / 3600 <= max_age
+
     def hero_ok(i, max_age=HERO_MAX_AGE_H):
         return (bool(i["image"]) and len(i["title"]) > 30
                 and i["cat"] not in ("social", "research", "opinion", "culture")
                 and PALESTINE_RX.search(f"{i['title']} {i['dek']}")  # the top story IS Palestine
                 and not REVIEWISH_RX.search(i["title"])
-                and (now - i["date"]).total_seconds() / 3600 <= max_age)
+                and within_hours(i, max_age))
 
     # The hero follows the news cycle: pick the strongest story from the
     # FRESHEST window that has one (last 6h, then 12h, then 18h). A boosted
     # multi-day original can never squat the top slot while new reporting
     # arrives — every build, the reader sees the newest strong story.
-    hero_pool = sorted(items, key=lambda i: i["score"], reverse=True)
+    hero_pool = by_latest
     heroes = []
     for window in HERO_WINDOWS_H:
         heroes = take(hero_pool, lambda i, w=window: hero_ok(i, max_age=w), 1)
         if heroes:
             break
     heroes = (heroes
-              or take(hero_pool, lambda i: hero_ok(i, max_age=MAX_AGE_HOURS), 1)
-              or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
-                      and PALESTINE_RX.search(f"{i['title']} {i['dek']}"), 1)
-              or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research"), 1))
+              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
+                      and PALESTINE_RX.search(f"{i['title']} {i['dek']}")
+                      and within_hours(i, HERO_MAX_AGE_H), 1)
+              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
+                      and within_hours(i, HERO_MAX_AGE_H), 1))
     hero = heroes[0] if heroes else None
-    hero_subs = take(by_score, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin"), 4)
+    hero_subs = take(by_latest, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin"), 4)
     # Latest rail and breaking ticker: chronological, Palestine coverage first.
     # The rail is an index — it lists stories without claiming them from sections.
     def palestine(i):
         return bool(PALESTINE_RX.search(f"{i['title']} {i['dek']}"))
-    latest = [i for i in items if id(i) not in used and i["cat"] != "social" and palestine(i)][:10]
+    latest = [i for i in by_latest if id(i) not in used and i["cat"] != "social" and palestine(i)][:10]
     rail_ids = {id(i) for i in latest}
-    latest += [i for i in items if id(i) not in used and i["cat"] != "social"
+    latest += [i for i in by_latest if id(i) not in used and i["cat"] != "social"
                and id(i) not in rail_ids][:10 - len(latest)]
-    pal_news = [i for i in items if i["cat"] != "social" and palestine(i)]
-    ticker_items = (pal_news or [i for i in items if i["cat"] != "social"])[:6]
+    pal_news = [i for i in by_latest if i["cat"] != "social" and palestine(i)]
+    ticker_items = (pal_news or [i for i in by_latest if i["cat"] != "social"])[:6]
 
     # Topical sections carry Palestine coverage only; world items from Palestinian
     # outlets live in More News. Research and Bitcoin are thematic by construction.
