@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">St. Louis dabke troupe funds West Bank autism therapy</title>
+<desc id="dsc">Illustration: a linked line of six dabke dancers on a stage in St. Louis, with an arrow marked "funds" pointing to a panel for Autism Superhero Palestine — diagnosis, parent training and therapy for 350 families in the West Bank, where the group says government infrastructure "doesn't exist". A small bar chart shows Palestinian Central Bureau of Statistics disability rates for adults 18 and over: 3% in Palestine, 2.6% in the West Bank, 3.9% in Gaza, with no autism-specific figure.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="86" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="4" fill="#c7a86b">DIASPORA STAGE → WEST BANK CLINIC</text>
+<text x="90" y="146" font-family="'Source Serif 4',Georgia,serif" font-size="58" fill="#f2eee8">Dabke dancers fund autism care</text>
+<text x="90" y="194" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#c7a86b">دبكة في سانت لويس تُموّل علاج التوحّد في الضفة الغربية</text>
+<text x="90" y="234" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">“Jafra”, 4–6 p.m., 1 August — Purser Center, Logan University, 1851 Schoettler Road, Chesterfield, Missouri</text>
+
+<!-- dancers -->
+<g stroke-linecap="round">
+  <g transform="translate(140,600)">
+    <circle cx="0" cy="-158" r="21" fill="#f2eee8"/>
+    <path d="M-20 -134 h40 l-7 62 h-26 z" fill="#f2eee8"/>
+    <path d="M-20 -104 h40 v11 h-40 z" fill="#c7a86b"/>
+    <path d="M-8 -72 L-17 -4" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M8 -72 L20 -4" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M-19 -130 L-46 -150" stroke="#f2eee8" stroke-width="11"/>
+    <path d="M19 -130 L48 -146" stroke="#f2eee8" stroke-width="11"/>
+  </g>
+  <g transform="translate(236,600)">
+    <circle cx="0" cy="-158" r="21" fill="#f2eee8"/>
+    <path d="M-20 -134 h40 l-7 62 h-26 z" fill="#f2eee8"/>
+    <path d="M-20 -104 h40 v11 h-40 z" fill="#8a1f2d"/>
+    <path d="M-8 -72 L-18 -4" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M8 -72 L36 -30" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M-19 -130 L-48 -146" stroke="#f2eee8" stroke-width="11"/>
+    <path d="M19 -130 L48 -146" stroke="#f2eee8" stroke-width="11"/>
+  </g>
+  <g transform="translate(332,600)">
+    <circle cx="0" cy="-158" r="21" fill="#f2eee8"/>
+    <path d="M-20 -134 h40 l-7 62 h-26 z" fill="#f2eee8"/>
+    <path d="M-20 -104 h40 v11 h-40 z" fill="#286344"/>
+    <path d="M-8 -72 L-17 -4" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M8 -72 L21 -4" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M-19 -130 L-48 -146" stroke="#f2eee8" stroke-width="11"/>
+    <path d="M19 -130 L48 -146" stroke="#f2eee8" stroke-width="11"/>
+  </g>
+  <g transform="translate(428,600)">
+    <circle cx="0" cy="-158" r="21" fill="#f2eee8"/>
+    <path d="M-20 -134 h40 l-7 62 h-26 z" fill="#f2eee8"/>
+    <path d="M-20 -104 h40 v11 h-40 z" fill="#c7a86b"/>
+    <path d="M-8 -72 L-19 -4" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M8 -72 L19 -4" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M-19 -130 L-48 -146" stroke="#f2eee8" stroke-width="11"/>
+    <path d="M19 -130 L48 -146" stroke="#f2eee8" stroke-width="11"/>
+  </g>
+  <g transform="translate(524,600)">
+    <circle cx="0" cy="-158" r="21" fill="#f2eee8"/>
+    <path d="M-20 -134 h40 l-7 62 h-26 z" fill="#f2eee8"/>
+    <path d="M-20 -104 h40 v11 h-40 z" fill="#8a1f2d"/>
+    <path d="M-8 -72 L-18 -4" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M8 -72 L36 -32" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M-19 -130 L-48 -146" stroke="#f2eee8" stroke-width="11"/>
+    <path d="M19 -130 L48 -146" stroke="#f2eee8" stroke-width="11"/>
+  </g>
+  <g transform="translate(620,600)">
+    <circle cx="0" cy="-158" r="21" fill="#f2eee8"/>
+    <path d="M-20 -134 h40 l-7 62 h-26 z" fill="#f2eee8"/>
+    <path d="M-20 -104 h40 v11 h-40 z" fill="#286344"/>
+    <path d="M-8 -72 L-18 -4" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M8 -72 L20 -4" stroke="#f2eee8" stroke-width="13"/>
+    <path d="M-19 -130 L-48 -146" stroke="#f2eee8" stroke-width="11"/>
+    <path d="M19 -130 L44 -152" stroke="#f2eee8" stroke-width="11"/>
+  </g>
+</g>
+
+<!-- stage -->
+<rect x="86" y="602" width="620" height="14" fill="#286344"/>
+<rect x="86" y="616" width="620" height="8" fill="#8a1f2d" opacity="0.7"/>
+<text x="86" y="656" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Children’s dabke troupe, founded 2024 · 14 dances · second staging of “Jafra”</text>
+<text x="86" y="686" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5">فرقة دبكة للأطفال — ١٤ رقصة</text>
+
+<!-- flow arrow -->
+<g>
+<path d="M726 452 H832" stroke="#c7a86b" stroke-width="8"/>
+<path d="M832 430 L872 452 L832 474 Z" fill="#c7a86b"/>
+<text x="726" y="424" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="3" fill="#c7a86b">FUNDS</text>
+<text x="726" y="512" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#c7a86b">تمويل</text>
+</g>
+
+<!-- recipient card -->
+<g>
+<rect x="880" y="300" width="660" height="330" rx="14" fill="#26272b" stroke="#3a3b40"/>
+<rect x="880" y="300" width="660" height="6" rx="3" fill="#286344"/>
+<text x="912" y="348" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="3" fill="#c7a86b">RECIPIENT · WEST BANK</text>
+<text x="912" y="392" font-family="'Source Serif 4',Georgia,serif" font-size="34" fill="#f2eee8">Autism Superhero Palestine</text>
+<text x="912" y="428" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#59a97d">الضفة الغربية — تشخيص وتدريب وعلاج</text>
+<text x="912" y="470" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Diagnosis · parent training · therapy</text>
+<text x="912" y="502" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">350 families · education and direct services</text>
+<rect x="912" y="524" width="596" height="82" rx="8" fill="#8a1f2d" opacity="0.22"/>
+<rect x="912" y="524" width="596" height="82" rx="8" fill="none" stroke="#8a1f2d" stroke-width="2" stroke-dasharray="9 7"/>
+<text x="936" y="562" font-family="'Source Serif 4',Georgia,serif" font-size="34" fill="#c7a86b">?</text>
+<text x="972" y="556" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">“No official statistics” on autistic children in Palestine;</text>
+<text x="972" y="584" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">government infrastructure “doesn’t exist” — the group’s appeal</text>
+</g>
+
+<line x1="86" y1="706" x2="1540" y2="706" stroke="#f2eee8" opacity="0.12" stroke-width="2"/>
+
+<!-- chart -->
+<text x="86" y="742" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="2" fill="#c7a86b">DISABILITY RATE, AGED 18+ (PCBS, DEC 2023)</text>
+<line x1="104" y1="852" x2="470" y2="852" stroke="#aaa9a5" stroke-width="2"/>
+<rect x="120" y="762" width="72" height="90" fill="#c7a86b"/>
+<text x="156" y="750" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">3%</text>
+<text x="156" y="878" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Palestine</text>
+<rect x="230" y="774" width="72" height="78" fill="#59a97d"/>
+<text x="266" y="762" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">2.6%</text>
+<text x="266" y="878" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">West Bank</text>
+<rect x="340" y="735" width="72" height="117" fill="#8a1f2d"/>
+<text x="376" y="723" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">3.9%</text>
+<text x="376" y="878" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Gaza Strip</text>
+
+<!-- facts -->
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">
+<circle cx="620" cy="754" r="5" fill="#c7a86b"/>
+<text x="640" y="761">No autism-specific figure in either PCBS release retrieved</text>
+<circle cx="620" cy="796" r="5" fill="#c7a86b"/>
+<text x="640" y="803">24.7% of disabled people in Palestine have a learning disability (23.6% West Bank)</text>
+<circle cx="620" cy="838" r="5" fill="#c7a86b"/>
+<text x="640" y="845">Parents pay about $50 for a 45-minute visit “without receiving the attention needed”</text>
+<circle cx="620" cy="880" r="5" fill="#c7a86b"/>
+<text x="640" y="887">7 Palestine Red Crescent day centres in the West Bank, ages 4–16, not autism-specific</text>
+</g>
+</svg>

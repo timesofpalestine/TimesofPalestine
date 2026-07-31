@@ -1,14 +1,14 @@
 {
- "last_hour": "2026-07-30T12",
+ "last_hour": "2026-07-31T19",
  "done": {
   "pa-budget-line-by-line": "2026-07-29T17:06:23.973916+00:00",
   "donor-aid-what-reaches-the-treasury": "2026-07-29T18:04:08.801907+00:00",
   "dedevelopment-to-depopulation": "2026-07-29T19:03:12.469522+00:00",
   "westbank-annexation-machinery": "2026-07-29T21:17:38.006578+00:00",
   "gaza-population-transfer-proposals": "2026-07-29T22:10:42.239479+00:00",
-  "who-profits-palestinian-economy": "2026-07-30T05:01:01.282911+00:00"
+  "who-profits-palestinian-economy": "2026-07-30T05:01:01.282911+00:00",
+  "stl-dabke-autism-jafra": "2026-07-31T19:15:57.915923+00:00"
  },
- "last_attempt": "2026-07-30T12:22:18.467838+00:00",
- "last_status": "investigations: stage failed (APIStatusError: {'type': 'error', 'error': {'details': None, 'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CdWyHGb8AKvqnsxxBXXv5'}) — news build continues",
- "error": "no API key"
+ "last_attempt": "2026-07-31T19:15:57.915923+00:00",
+ "last_status": "investigations: stage failed (APIStatusError: {'type': 'error', 'error': {'details': None, 'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CdWyHGb8AKvqnsxxBXXv5'}) — news build continues"
 }
