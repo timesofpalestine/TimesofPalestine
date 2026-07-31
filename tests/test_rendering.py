@@ -178,7 +178,9 @@ class RenderingTests(unittest.TestCase):
                     b'content="/media/hero.jpg"></head></html>'
                 )
 
-        with mock.patch("build.safe_urlopen", return_value=Response()):
+        with mock.patch("build.safe_urlopen", return_value=Response()), mock.patch(
+            "build.is_public_http_url", return_value=True
+        ):
             self.assertEqual(
                 build.discover_story_image("https://publisher.test/world/story"),
                 "https://publisher.test/media/hero.jpg",
