@@ -1780,6 +1780,16 @@ section.opinion .sec-head::before{background:var(--red)}
 [lang=ar] .op-card h3{line-height:1.65;font-style:normal}
 .op-card h3 a:hover{color:var(--red)}
 /* ── tips band ── */
+section.specialband{background:var(--black);color:#fff;margin-block:1.2rem;border-block:4px solid var(--red)}
+.specialband .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.35rem;flex-wrap:wrap}
+.specialband .kick{font:700 .72rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#c7a86b;margin:0 0 .45rem}
+[dir=rtl] .specialband .kick{letter-spacing:0}
+.specialband h2{font:700 1.6rem/1.2 var(--serif);margin:0 0 .35rem}
+.specialband h2 a{color:#fff;text-decoration:none}
+.specialband h2 a:hover{text-decoration:underline}
+.specialband .dek{margin:0;font:400 .95rem/1.55 var(--serif);color:#c9c9d2;max-width:46rem}
+.specialband .cta{flex-shrink:0;font:700 .82rem/1 var(--sans);color:#fff;text-decoration:none;border:1px solid #c7a86b;color:#c7a86b;padding:.7rem 1.1rem;border-radius:2px;white-space:nowrap}
+.specialband .cta:hover{background:#c7a86b;color:var(--black)}
 section.tipband{background:var(--black);color:#fff;margin-block:1.2rem;border-block:4px solid var(--green);position:relative;overflow:hidden}
 section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-end:-60px;width:280px;background:linear-gradient(120deg,transparent 0 40%,rgba(0,122,61,.35) 40% 55%,rgba(206,17,38,.30) 55% 70%,transparent 70%);pointer-events:none}
 .tipband .wrap{display:flex;align-items:center;gap:2rem;padding-block:1.8rem;flex-wrap:wrap;position:relative;z-index:1}
@@ -2017,8 +2027,37 @@ def latest_item(it, lang, pfx):
             f'<span class="s">{esc(display_source(it, lang))}</span></li>')
 
 # ---------- page ----------
+# Standing specials featured on both front pages (owner-curated). Each entry
+# links to a standalone feature page; the band sits directly under the live
+# hero so the news cycle keeps the top slot (charter: nothing squats the hero).
+SPECIALS = [
+    {
+        "href": {"en": "/suha-arafat/index-en.html", "ar": "/suha-arafat/index-ar.html"},
+        "kicker": {"en": "Special investigation", "ar": "\u062a\u062d\u0642\u064a\u0642 \u062e\u0627\u0635"},
+        "title": {"en": "The Widow and the Ledger", "ar": "\u0627\u0644\u0623\u0631\u0645\u0644\u0629 \u0648\u0627\u0644\u062f\u0641\u062a\u0631"},
+        "dek": {"en": "How a number nobody could source became a fact everybody knows \u2014 and what it cost Palestinians.",
+                "ar": "\u0643\u064a\u0641 \u0635\u0627\u0631 \u0631\u0642\u0645\u064c \u0644\u0627 \u064a\u0633\u062a\u0637\u064a\u0639 \u0623\u062d\u062f \u0625\u0633\u0646\u0627\u062f\u0647 \u062d\u0642\u064a\u0642\u0629\u064b \u064a\u0639\u0631\u0641\u0647\u0627 \u0627\u0644\u062c\u0645\u064a\u0639 \u2014 \u0648\u0645\u0627 \u0627\u0644\u0630\u064a \u0643\u0644\u0651\u0641\u0647 \u0630\u0644\u0643 \u0627\u0644\u0641\u0644\u0633\u0637\u064a\u0646\u064a\u064a\u0646."},
+        "cta": {"en": "Read the full investigation \u2192", "ar": "\u0627\u0642\u0631\u0623 \u0627\u0644\u062a\u062d\u0642\u064a\u0642 \u0643\u0627\u0645\u0644\u0627\u064b \u2190"},
+    },
+]
+
+
+def specials_band_html(lang):
+    bands = []
+    for s in SPECIALS:
+        bands.append(
+            f'<section class="specialband"><div class="wrap">'
+            f'<div class="body"><p class="kick">{esc(s["kicker"][lang])}</p>'
+            f'<h2><a href="{esc(s["href"][lang])}">{esc(s["title"][lang])}</a></h2>'
+            f'<p class="dek">{esc(s["dek"][lang])}</p></div>'
+            f'<a class="cta" href="{esc(s["href"][lang])}">{esc(s["cta"][lang])}</a>'
+            f'</div></section>')
+    return "".join(bands)
+
+
 def render_page(lang, items, built_at):
     t = STR[lang]
+    specials_band = specials_band_html(lang)
     order = SECTION_ORDER[lang]
     by_score = sorted(items, key=lambda i: i["score"], reverse=True)  # editorial ranking
     by_latest = sorted(items, key=lambda i: (i["date"], i["score"]), reverse=True)
@@ -2214,7 +2253,7 @@ def render_page(lang, items, built_at):
       <ol>{latest_html}</ol>
     </aside>
   </div>
-  {tips_band}{gaza_panel}
+  {specials_band}{tips_band}{gaza_panel}
   {opinion_block}
   {section_blocks}
 </main>
