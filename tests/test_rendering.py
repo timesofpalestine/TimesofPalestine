@@ -90,10 +90,8 @@ class RenderingTests(unittest.TestCase):
             latest.index("Older Gaza accountability report keeps a premium slot"),
         )
         ticker = homepage.split('<div class="track">', 1)[1].split("</div>", 1)[0]
-        self.assertLess(
-            ticker.index("Israeli forces raid Gaza district as updates arrive 1"),
-            ticker.index("Older Gaza accountability report keeps a premium slot"),
-        )
+        self.assertIn("Israeli forces raid Gaza district as updates arrive 1", ticker)
+        self.assertNotIn("Older Gaza accountability report keeps a premium slot", ticker)
 
     def test_summary_markdown_renders_safely_across_reader_surfaces(self):
         record = item()
