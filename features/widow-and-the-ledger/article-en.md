@@ -24,6 +24,8 @@ The story of how that sediment formed is a Palestinian story, and it is not a si
 
 Any honest account has to begin by conceding the part that is documented, because the smear's durability comes precisely from its proximity to something true.
 
+[[PHOTO1]]
+
 Palestinian public money under Yasser Arafat was not properly accounted for. This is not an Israeli talking point; it is the finding of the institutions Palestinians themselves invited in. In September 2003 the International Monetary Fund's resident representative in the West Bank and Gaza stated publicly that some nine hundred million dollars in Palestinian Authority revenue had been routed between 1995 and 2000 into a special account under Arafat's personal control rather than into the treasury. The money came from Israeli tax transfers and from Authority monopolies on cement, fuel and cigarettes. The IMF added an important qualification that is almost never quoted alongside the headline figure: most of it had been invested in Palestinian assets, and by the time of the audit the reformist finance minister Salam Fayyad had brought it under public control.
 
 A parallel forensic audit, commissioned by Arafat's own finance ministry and led by American accountants, traced a secret investment portfolio worth close to a billion dollars — holdings in a Ramallah bottling plant, a Tunisian mobile operator, venture funds in the United States and the Cayman Islands. Fayyad published the portfolio's details rather than bury them.
@@ -63,6 +65,8 @@ The most instructive single item is the hotel. It was widely reported that she h
 ## III. The investigation that never became a case
 
 In October 2003 the Paris prosecutor's office opened a preliminary inquiry into transfers totalling around eleven and a half million dollars from a Swiss institution into two accounts held in France by Suha Arafat. It became public in February 2004 when a satirical weekly published it, and it went around the world in a day.
+
+[[PHOTO2]]
 
 Almost everything the coverage implied was wrong about what had actually happened.
 
