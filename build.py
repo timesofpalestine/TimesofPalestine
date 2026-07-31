@@ -2433,6 +2433,14 @@ def main():
     qr = ROOT / "signal-qr.png"  # Signal tip-line QR shown in the tip band
     if qr.exists():
         (dist / "signal-qr.png").write_bytes(qr.read_bytes()); ob = ROOT / "og-banner.png"; ob.exists() and (dist / "og-banner.png").write_bytes(ob.read_bytes())
+    # Standalone static features: a top-level directory with a .static-feature
+    # marker deploys verbatim at /<dir>/ (e.g. suha-arafat/). The pages inside
+    # still pass the output validator like everything else in dist/.
+    import shutil
+    for feature in sorted(ROOT.iterdir()):
+        if feature.is_dir() and (feature / ".static-feature").is_file():
+            shutil.copytree(feature, dist / feature.name, dirs_exist_ok=True,
+                            ignore=shutil.ignore_patterns(".static-feature"))
     (dist / "data.json").write_text(json.dumps(
         {"builtAt": utc_iso(built_at), "en": len(en_items), "ar": len(ar_items),
          "briefs": sum(1 for i in en_items + ar_items if i.get("brief"))}, indent=2))
