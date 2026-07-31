@@ -124,7 +124,7 @@ if not FEEDS_PATH.is_absolute():
 FEEDS = json.loads(FEEDS_PATH.read_text(encoding="utf-8"))
 # Story ids the owner has ordered removed; blocked no matter which feed or
 # radar route resurfaces the underlying link.
-RETRACTED_PIDS = {"23ffbc910f"}
+RETRACTED_PIDS = {"23ffbc910f", "7b5ecb12e4"}
 validate_feed_config(FEEDS)
 MEDIA_RIGHTS = load_media_manifest(ROOT / "media-rights.json")
 CORRECTIONS = load_editorial_json(
