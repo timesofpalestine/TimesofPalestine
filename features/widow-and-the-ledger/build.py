@@ -80,6 +80,12 @@ FIGS = {
                   ("03", "She lives in Paris", "She has lived in Malta since childhood. Wire photographs filed from her family\u2019s Malta home in 2011 and 2012; family interviews from 2009 to 2025; a degree from a Maltese university.", "False \u2014 and checkable", 1),
                   ("04", "She is eligible for UNRWA funds as a refugee", "No evidence has been offered that she has ever registered with, applied to, or received anything from UNRWA.", "Unevidenced", 0)],
             punch="If the easiest verifiable detail in a four-sentence claim is wrong, ask what standard of care was applied to the other three.",
+            post=dict(name="Israel \u05d9\u05e9\u05e8\u05d0\u05dc", handle="@Israel",
+                      date="13 January 2025",
+                      text="Billionaire, real estate owner, and eligible for UNRWA funds: Zahwa Arafat, the daughter of Yasser Arafat, is worth $8 billion, thanks to the \u201cPalestinian aid\u201d she inherited from her father. She owns prime real estate across London, lives in Paris, yet, according to UNRWA\u2019s standards, she is considered a refugee and eligible to receive funds. This is how UNRWA operates.",
+                      url="https://x.com/Israel/status/1878773406188868046",
+                      linklabel="View the original post on X",
+                      note="Reproduced verbatim as the exhibit under examination."),
             src="The post remains publicly visible. No correction has been issued."),
     },
     "ar": {
@@ -149,6 +155,12 @@ FIGS = {
                   ("\u0660\u0662", "\u062A\u0645\u0644\u0643 \u0639\u0642\u0627\u0631\u0627\u062A \u0631\u0627\u0642\u064A\u0629 \u0641\u064A \u0644\u0646\u062F\u0646", "\u0644\u0645 \u064A\u064F\u0642\u062F\u0651\u064E\u0645 \u0623\u064A\u0651 \u0633\u0646\u062F \u0645\u0644\u0643\u064A\u0629 \u0623\u0648 \u0633\u062C\u0644\u0651 \u0634\u0631\u0643\u0629 \u0623\u0648 \u0639\u0646\u0648\u0627\u0646.", "\u0628\u0644\u0627 \u062F\u0644\u064A\u0644", 0),
                   ("\u0660\u0663", "\u062A\u0639\u064A\u0634 \u0641\u064A \u0628\u0627\u0631\u064A\u0633", "\u0647\u064A \u062A\u0642\u064A\u0645 \u0641\u064A \u0645\u0627\u0644\u0637\u0627 \u0645\u0646\u0630 \u0637\u0641\u0648\u0644\u062A\u0647\u0627. \u0635\u0648\u0631 \u0648\u0643\u0627\u0644\u0627\u062A \u0645\u0646 \u0645\u0646\u0632\u0644 \u0627\u0644\u0639\u0627\u0626\u0644\u0629 \u0641\u064A \u0645\u0627\u0644\u0637\u0627 \u0662\u0660\u0661\u0661 \u0648\u0662\u0660\u0661\u0662\u061B \u0645\u0642\u0627\u0628\u0644\u0627\u062A \u0639\u0627\u0626\u0644\u064A\u0629 \u0645\u0646 \u0662\u0660\u0660\u0669 \u0625\u0644\u0649 \u0662\u0660\u0662\u0665\u061B \u0648\u0634\u0647\u0627\u062F\u0629 \u062C\u0627\u0645\u0639\u064A\u0629 \u0645\u0627\u0644\u0637\u064A\u0629.", "\u062E\u0627\u0637\u0626 \u2014 \u0648\u0642\u0627\u0628\u0644 \u0644\u0644\u062A\u062D\u0642\u0651\u0642", 1),
                   ("\u0660\u0664", "\u062A\u0633\u062A\u062D\u0642\u0651 \u0623\u0645\u0648\u0627\u0644 \u0627\u0644\u0623\u0648\u0646\u0631\u0648\u0627 \u0628\u0648\u0635\u0641\u0647\u0627 \u0644\u0627\u062C\u0626\u0629", "\u0644\u0645 \u064A\u064F\u0642\u062F\u0651\u064E\u0645 \u062F\u0644\u064A\u0644 \u0639\u0644\u0649 \u0623\u0646\u0651\u0647\u0627 \u0633\u062C\u0651\u0644\u062A \u0644\u062F\u0649 \u0627\u0644\u0623\u0648\u0646\u0631\u0648\u0627 \u0623\u0648 \u062A\u0642\u062F\u0651\u0645\u062A \u0625\u0644\u064A\u0647\u0627 \u0623\u0648 \u062A\u0644\u0642\u0651\u062A \u0645\u0646\u0647\u0627 \u0634\u064A\u0626\u0627\u064B.", "\u0628\u0644\u0627 \u062F\u0644\u064A\u0644", 0)],
+            post=dict(name="Israel ישראל", handle="@Israel",
+                      date="13 January 2025",
+                      text='Billionaire, real estate owner, and eligible for UNRWA funds: Zahwa Arafat, the daughter of Yasser Arafat, is worth $8 billion, thanks to the “Palestinian aid” she inherited from her father. She owns prime real estate across London, lives in Paris, yet, according to UNRWA’s standards, she is considered a refugee and eligible to receive funds. This is how UNRWA operates.',
+                      url="https://x.com/Israel/status/1878773406188868046",
+                      linklabel="عرض المنشور الأصلي على منصة إكس",
+                      note="نصّ المنشور مثبّت حرفياً بلغته الأصلية بوصفه الوثيقة موضع الفحص."),
             punch="\u0625\u0630\u0627 \u0643\u0627\u0646\u062A \u0623\u0633\u0647\u0644 \u062A\u0641\u0635\u064A\u0644\u0629 \u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u062A\u062D\u0642\u0642 \u0641\u064A \u0627\u062F\u0651\u0639\u0627\u0621 \u0645\u0646 \u0623\u0631\u0628\u0639 \u062C\u0645\u0644 \u062E\u0627\u0637\u0626\u0629\u060C \u0641\u0627\u0633\u0623\u0644 \u0623\u064A\u0651 \u0639\u0646\u0627\u064A\u0629 \u0628\u064F\u0630\u0644\u062A \u0641\u064A \u0627\u0644\u062B\u0644\u0627\u062B \u0627\u0644\u0623\u062E\u0631\u0649.",
             src="\u0627\u0644\u0645\u0646\u0634\u0648\u0631 \u0645\u0627 \u0632\u0627\u0644 \u0645\u062A\u0627\u062D\u0627\u064B \u0644\u0644\u0639\u0644\u0646. \u0648\u0644\u0645 \u064A\u0635\u062F\u0631 \u0623\u064A\u0651 \u062A\u0635\u062D\u064A\u062D."),
     },
@@ -234,6 +246,16 @@ def fig4(d):
 
 def fig5(d):
     h = ['<figure class="fig f5">', fighead(d)]
+    post = d.get("post")
+    if post:
+        h.append('<blockquote class="xpost" lang="en" dir="ltr">')
+        h.append('<p class="xpost-meta"><span class="xpost-name">%s</span> %s \u00b7 %s</p>'
+                 % (esc(post["name"]), esc(post["handle"]), esc(post["date"])))
+        h.append('<p class="xpost-text">%s</p>' % esc(post["text"]))
+        h.append('</blockquote>')
+        h.append('<p class="xpost-foot" dir="auto"><a href="%s" target="_blank" '
+                 'rel="noopener nofollow">%s</a> \u00b7 %s</p>'
+                 % (esc(post["url"]), esc(post["linklabel"]), esc(post["note"])))
     for num, claim, check, verdict, hot in d["rows"]:
         h.append('<div class="f5-row%s"><span class="f5-n">%s</span>'
                  '<div class="f5-b"><h4>%s</h4><p>%s</p>%s</div></div>'
@@ -388,6 +410,15 @@ body[dir=rtl] .f4-p li{line-height:1.75}
 .f4-b li{color:var(--ink2);border-inline-start:3px solid var(--rule2)}
 
 /* f5 */
+.xpost{margin:0 0 8px;padding:16px 18px;background:var(--paper);border:1px solid var(--rule);
+border-inline-start:4px solid var(--red);border-radius:2px;direction:ltr;text-align:left}
+.xpost-meta{margin:0 0 8px;font-size:12px;color:var(--ink2);letter-spacing:.04em;
+font-family:'IBM Plex Mono',ui-monospace,monospace}
+.xpost-name{font-weight:700;color:var(--ink)}
+.xpost-text{margin:0;font-size:15.5px;line-height:1.6}
+.xpost-foot{margin:0 0 20px;font-size:12px;color:var(--ink2)}
+.xpost-foot a{color:var(--slate)}
+
 .f5-row{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:16px 12px;
 border-bottom:1px solid var(--rule2);border-radius:2px}
 .f5-row.hot{background:#FBF2F1}
