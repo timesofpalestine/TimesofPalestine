@@ -256,7 +256,7 @@ def main():
     if reset_ledger or migrated or recovered:
         save_ledger(ledger)
 
-    delivered, suppressed_total, failures = 0, 0, []
+    delivered, suppressed_total, url_not_live, hard_failures = 0, 0, [], []
     for entry in outbox["entries"]:
         parts = pending_parts(entry, ledger["deliveries"])
         if not parts:
@@ -268,11 +268,11 @@ def main():
         if not parts:
             continue
         if not wait_until_live([part["url"] for part in parts]):
-            failures.append(f"{entry.get('group_key', 'unknown')}: URL not live")
+            url_not_live.append(f"{entry.get('group_key', 'unknown')}: URL not live")
             continue
         message_id = send_message(token, channel, format_message(parts))
         if message_id is None:
-            failures.append(
+            hard_failures.append(
                 f"{entry.get('group_key', 'unknown')}: Telegram send failed")
             continue
         sent_at = datetime.now(timezone.utc).isoformat()
@@ -297,9 +297,11 @@ def main():
         f"recovered {recovered}, suppressed {suppressed_total} duplicate(s), "
         f"{pending} pending to {channel}"
     )
-    if failures:
-        for failure in failures:
-            print(f"  → {failure}", file=sys.stderr)
+    for failure in url_not_live:
+        print(f"  → {failure} (pending; will retry next run)", file=sys.stderr)
+    for failure in hard_failures:
+        print(f"  → {failure}", file=sys.stderr)
+    if hard_failures:
         return 1
     return 0
 

@@ -161,6 +161,84 @@ class PublisherTests(unittest.TestCase):
             ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
             self.assertIn("story:en:abc123def4", ledger["deliveries"])
 
+    def test_url_not_live_exits_zero(self):
+        """CDN propagation lag must not paint the build red."""
+        outbox = {
+            "version": 1,
+            "channel": telegram_publish.EXPECTED_CHANNEL,
+            "entries": [{
+                "group_key": "story:ar:d7d65b319e",
+                "parts": [{
+                    "delivery_key": "story:ar:d7d65b319e",
+                    "legacy_key": "",
+                    "title": "عنوان",
+                    "url": "https://timesofpalestine.com/ar/story/d7d65b319e.html",
+                }],
+            }],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            outbox_path = root / "telegram-outbox.json"
+            ledger_path = root / "telegram-delivery.json"
+            legacy_path = root / "briefs-cache.json"
+            outbox_path.write_text(json.dumps(outbox), encoding="utf-8")
+            with (
+                mock.patch.object(telegram_publish, "OUTBOX_PATH", outbox_path),
+                mock.patch.object(telegram_publish, "LEDGER_PATH", ledger_path),
+                mock.patch.object(
+                    telegram_publish, "LEGACY_CACHE_PATH", legacy_path),
+                mock.patch.dict(
+                    "os.environ", {"TELEGRAM_BOT_TOKEN": "test-token"}),
+                mock.patch.object(
+                    telegram_publish, "wait_until_live", return_value=False),
+                mock.patch.object(
+                    telegram_publish,
+                    "scrape_recent_delivery_keys",
+                    return_value=set(),
+                ),
+            ):
+                self.assertEqual(telegram_publish.main(), 0)
+
+    def test_telegram_send_failure_exits_one(self):
+        """A Telegram API error is a hard failure and must exit 1."""
+        outbox = {
+            "version": 1,
+            "channel": telegram_publish.EXPECTED_CHANNEL,
+            "entries": [{
+                "group_key": "story:en:abc",
+                "parts": [{
+                    "delivery_key": "story:en:abc",
+                    "legacy_key": "",
+                    "title": "A title",
+                    "url": "https://timesofpalestine.com/en/story/abc0000000.html",
+                }],
+            }],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            outbox_path = root / "telegram-outbox.json"
+            ledger_path = root / "telegram-delivery.json"
+            legacy_path = root / "briefs-cache.json"
+            outbox_path.write_text(json.dumps(outbox), encoding="utf-8")
+            with (
+                mock.patch.object(telegram_publish, "OUTBOX_PATH", outbox_path),
+                mock.patch.object(telegram_publish, "LEDGER_PATH", ledger_path),
+                mock.patch.object(
+                    telegram_publish, "LEGACY_CACHE_PATH", legacy_path),
+                mock.patch.dict(
+                    "os.environ", {"TELEGRAM_BOT_TOKEN": "test-token"}),
+                mock.patch.object(
+                    telegram_publish, "wait_until_live", return_value=True),
+                mock.patch.object(
+                    telegram_publish, "send_message", return_value=None),
+                mock.patch.object(
+                    telegram_publish,
+                    "scrape_recent_delivery_keys",
+                    return_value=set(),
+                ),
+            ):
+                self.assertEqual(telegram_publish.main(), 1)
+
     def test_correction_is_not_suppressed_as_duplicate_of_same_story(self):
         now = datetime.now(timezone.utc)
         deliveries = {
