@@ -122,6 +122,9 @@ FEEDS_PATH = Path(os.environ.get("TOP_FEEDS_FILE", ROOT / "feeds.json"))
 if not FEEDS_PATH.is_absolute():
     FEEDS_PATH = ROOT / FEEDS_PATH
 FEEDS = json.loads(FEEDS_PATH.read_text(encoding="utf-8"))
+# Story ids the owner has ordered removed; blocked no matter which feed or
+# radar route resurfaces the underlying link.
+RETRACTED_PIDS = {"23ffbc910f"}
 validate_feed_config(FEEDS)
 MEDIA_RIGHTS = load_media_manifest(ROOT / "media-rights.json")
 CORRECTIONS = load_editorial_json(
@@ -674,6 +677,8 @@ def finish_item(item, feed):
     item["date"] = min(item["date"], datetime.now(timezone.utc))
     item["max_age_hours"] = feed.get("maxAgeHours", MAX_AGE_HOURS)
     item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]  # stable internal page id
+    if item["pid"] in RETRACTED_PIDS:  # owner-ordered takedowns stay down on every route
+        return None
     attach_corrections(item)
     validate_story(item)
     item["score"] = score_item(item)
