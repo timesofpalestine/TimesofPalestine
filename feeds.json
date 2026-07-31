@@ -228,15 +228,6 @@
       "cap": 4
     },
     {
-      "id": "rns",
-      "name": "Religion News Service",
-      "url": "https://religionnews.com/feed/",
-      "site": "https://religionnews.com",
-      "filterPalestineChristians": true,
-      "maxAgeHours": 168,
-      "cap": 5
-    },
-    {
       "id": "quincy",
       "name": "Quincy Institute",
       "url": "https://quincyinst.org/feed/",
