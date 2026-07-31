@@ -47,6 +47,54 @@ class RenderingTests(unittest.TestCase):
     def setUp(self):
         build.discover_story_image.cache_clear()
 
+    def test_homepage_front_page_surfaces_follow_fresh_items(self):
+        built_at = datetime(2026, 7, 29, 15, tzinfo=timezone.utc)
+        stale = item()
+        stale.update({
+            "title": "Older Gaza accountability report keeps a premium slot",
+            "link": "https://example.com/stale",
+            "date": datetime(2026, 7, 29, 9, tzinfo=timezone.utc),
+            "image": "/media/stale.jpg",
+            "score": 999,
+            "pid": "stale00001",
+        })
+        records = [stale]
+        for idx, minutes, score in (
+            (1, 5, 25),
+            (2, 15, 24),
+            (3, 25, 23),
+            (4, 35, 22),
+            (5, 45, 21),
+            (6, 55, 20),
+        ):
+            record = item()
+            record.update({
+                "title": f"Israeli forces raid Gaza district as updates arrive {idx}",
+                "link": f"https://example.com/fresh-{idx}",
+                "date": built_at - timedelta(minutes=minutes),
+                "image": f"/media/fresh-{idx}.jpg",
+                "score": score,
+                "pid": f"fresh0000{idx}",
+            })
+            records.append(record)
+
+        homepage = build.render_page("en", records, built_at)
+
+        self.assertLess(
+            homepage.index("Israeli forces raid Gaza district as updates arrive 1"),
+            homepage.index("Older Gaza accountability report keeps a premium slot"),
+        )
+        latest = homepage.split('<aside class="latest">', 1)[1].split("</aside>", 1)[0]
+        self.assertLess(
+            latest.index("Israeli forces raid Gaza district as updates arrive 6"),
+            latest.index("Older Gaza accountability report keeps a premium slot"),
+        )
+        ticker = homepage.split('<div class="track">', 1)[1].split("</div>", 1)[0]
+        self.assertLess(
+            ticker.index("Israeli forces raid Gaza district as updates arrive 1"),
+            ticker.index("Older Gaza accountability report keeps a premium slot"),
+        )
+
     def test_summary_markdown_renders_safely_across_reader_surfaces(self):
         record = item()
         record.update({
