@@ -329,35 +329,35 @@ def copy_media(dist, stories):
 
 
 CSS = """
-.story .sub{font-family:var(--serif);font-weight:800;line-height:1.25;margin:1.9rem 0 .6rem;color:var(--black)}
-.story h2.sub{font-size:1.42rem}
-.story h3.sub{font-size:1.14rem}
+.story .sub{font-family:var(--serif);font-weight:800;line-height:1.25;margin:2rem 0 .65rem;color:var(--black)}
+.story h2.sub{font-size:1.45rem}
+.story h3.sub{font-size:1.16rem}
 .story h4.sub{font-size:1rem;text-transform:uppercase;letter-spacing:.06em;font-family:var(--sans)}
 [lang=ar] .story .sub{font-weight:800;line-height:1.5}
 [lang=ar] .story h4.sub{letter-spacing:0;text-transform:none}
-.story ul.lf{margin:.9rem 0 1.1rem;padding-inline-start:1.3rem;font-family:var(--serif);font-size:1.06rem;line-height:1.7;color:#26262e}
+.story ul.lf{margin:.95rem 0 1.1rem;padding-inline-start:1.4rem;font-family:var(--serif);font-size:1.1rem;line-height:1.75;color:#26262e}
 .story ul.lf li{margin-bottom:.5rem}
 [lang=ar] .story ul.lf{line-height:2}
-.story ol.lf{margin:.9rem 0 1.1rem;padding-inline-start:1.3rem;font-family:var(--serif);font-size:1.06rem;line-height:1.7;color:#26262e}
+.story ol.lf{margin:.95rem 0 1.1rem;padding-inline-start:1.4rem;font-family:var(--serif);font-size:1.1rem;line-height:1.75;color:#26262e}
 .story ol.lf li{margin-bottom:.5rem}
 [lang=ar] .story ol.lf{line-height:2}
-.story figure.lf{margin:1.7rem 0}
-.story figure.lf img{width:100%;height:auto;background:#e8e6df;border:1px solid var(--line)}
-.story figure.lf figcaption{margin-top:.5rem;font-size:.8rem;color:var(--muted);line-height:1.5}
+.story figure.lf{margin:1.8rem 0}
+.story figure.lf img{width:100%;height:auto;background:#e8e6df;border-radius:var(--r)}
+.story figure.lf figcaption{margin-top:.55rem;font-size:.8rem;color:var(--muted);line-height:1.5}
 .story .tablewrap{overflow-x:auto;margin:1.5rem 0}
 .story table.lf{border-collapse:collapse;width:100%;font-size:.92rem}
-.story table.lf th,.story table.lf td{border:1px solid var(--line-dark);padding:.55rem .7rem;text-align:start;vertical-align:top}
+.story table.lf th,.story table.lf td{border:1px solid var(--line-dark);padding:.55rem .75rem;text-align:start;vertical-align:top}
 .story table.lf th{background:rgba(0,0,0,.04);font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
 [lang=ar] .story table.lf th{letter-spacing:0;text-transform:none;font-size:.88rem}
 .story .summary a{text-decoration:underline;text-underline-offset:2px}
 .story code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,monospace;font-size:.92em;background:rgba(0,0,0,.06);padding:.08em .3em;border-radius:3px}
-.story figure.lf.video{margin:1.6rem 0}
-.story .embed{position:relative;width:100%;padding-top:56.25%;background:#0b0b0c}
+.story figure.lf.video{margin:1.7rem 0}
+.story .embed{position:relative;width:100%;padding-top:56.25%;background:#0b0b0c;border-radius:var(--r);overflow:hidden}
 .story .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .story .embed.tme{padding-top:0;height:520px}
 .story .embed.tme iframe{position:static;height:100%}
-.story figure.lf.video video{width:100%;display:block;background:#0b0b0c}
-@media (prefers-color-scheme:dark){
+.story figure.lf.video video{width:100%;display:block;background:#0b0b0c;border-radius:var(--r)}
+@media(prefers-color-scheme:dark){
   .story .sub{color:var(--ink)}
   .story ul.lf{color:#d6d6de}
   .story ol.lf{color:#d6d6de}
