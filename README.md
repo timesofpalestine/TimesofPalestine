@@ -2,7 +2,7 @@
 
 An independent, bilingual (English/Arabic) static digital news front page for Palestine.
 It aggregates live reporting from outlets across Palestine and the region, links every story back
-to its original publisher, and rebuilds itself every hour. Sensitive claims publish with a visible
+to its original publisher, and rebuilds itself every 10 minutes. Sensitive claims publish with a visible
 developing-report label and an opaque exact-version review queue; deployments can opt into a strict
 human-approval hold when editorial staffing is available.
 
@@ -46,7 +46,7 @@ Then open <http://localhost:8000>.
 ## Deploy once — then it runs itself forever
 
 The included GitHub Actions workflow ([.github/workflows/build.yml](.github/workflows/build.yml))
-rebuilds the site from live feeds **at the top of every hour** and publishes it to GitHub Pages.
+rebuilds the site from live feeds **every 10 minutes** and publishes it to GitHub Pages.
 It runs the offline tests and generated-site validator before deployment. At the three UTC desk
 hours, it may generate a sourced bilingual investigation, publish it in the same build, and commit
 the validated report back to `originals/`.
@@ -62,7 +62,7 @@ gh repo create times-of-palestine --public --source . --push
 
 Then in the GitHub repo: **Settings → Pages → Source: "GitHub Actions"**. Done.
 The first run starts immediately (or trigger it from the Actions tab); after that fully-attributed
-aggregation refreshes hourly. Flagged content is visibly labeled while awaiting review.
+aggregation refreshes every 10 minutes. Flagged content is visibly labeled while awaiting review.
 
 ## Publishing safety contract
 
@@ -186,7 +186,7 @@ For maximum tipster safety, consider a dedicated phone/number for the newsroom S
 
 ## Hosting at GoDaddy (timesofpalestine.com)
 
-**Recommended — keep the automation:** host the site on GitHub Pages (free, rebuilds hourly)
+**Recommended — keep the automation:** host the site on GitHub Pages (free, rebuilds every 10 minutes)
 and just point the GoDaddy **DNS** at it (README section above). GoDaddy stays your registrar;
 GitHub does the serving and refreshing. This is the only zero-management option.
 

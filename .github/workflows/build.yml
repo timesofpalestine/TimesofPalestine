@@ -1,7 +1,7 @@
 name: Build & publish Times of Palestine
 on:
   schedule:
-    - cron: "0,30 * * * *"   # freshness is a guiding principle: twice-hourly
+    - cron: "*/10 * * * *"   # refresh every 10 minutes
   workflow_dispatch: {}
   push:
     branches: [main]
