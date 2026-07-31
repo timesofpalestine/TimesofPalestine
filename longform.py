@@ -222,6 +222,11 @@ def rendered_residue_warnings(rendered):
                         "(only YouTube, t.me posts and direct .mp4 embed)")
     if "**" in rendered:
         warnings.append("unrendered bold marker '**'")
+    if re.search(r"\]\((?:/|\.{1,2}/|[\w.-]+\.html)[^)\s]*\)", rendered):
+        warnings.append(
+            "unrendered link markdown '](...)' — body links must be absolute "
+            "http(s) URLs; relative and root-relative targets fall through as "
+            "literal text")
     if re.search(r'<p class="summary">\s*#', rendered):
         warnings.append("line-initial heading marker '#' fell through into paragraph")
     for paragraph in re.findall(
