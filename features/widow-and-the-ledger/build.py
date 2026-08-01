@@ -275,6 +275,12 @@ PHOTOS = {
         2: dict(file="suha-arafat-hillary-clinton-gaza-1998.jpg",
                 alt="Suha Arafat accompanies First Lady Hillary Clinton at a women's event in Gaza in 1998",
                 cap="Suha Arafat, right, accompanies First Lady Hillary Clinton at a women\u2019s event in Gaza, 14 December 1998 \u2014 five years before the Paris inquiry that never became a case. White House photograph, public domain."),
+        3: dict(file="zahwa-silla-malta-arrival.jpg",
+                alt="Zahwa Arafat carries Silla, a wounded girl evacuated from Gaza, on her arrival in Malta",
+                cap="Zahwa Arafat carries Silla \u2014 a girl wounded in Gaza who lost both her parents \u2014 on the child\u2019s arrival in Malta for treatment. Photograph obtained by Times of Palestine."),
+        4: dict(file="zahwa-silla-malta.jpg",
+                alt="Zahwa Arafat with Silla in Malta",
+                cap="Zahwa Arafat with Silla in Malta. Receiving Gaza\u2019s evacuated children for treatment in Maltese hospitals is among her duties with the Palestinian embassy. Photograph obtained by Times of Palestine."),
     },
     "ar": {
         1: dict(file="gaza-airport-1998-arafat-clinton.jpg",
@@ -283,6 +289,12 @@ PHOTOS = {
         2: dict(file="suha-arafat-hillary-clinton-gaza-1998.jpg",
                 alt="\u0633\u0647\u0649 \u0639\u0631\u0641\u0627\u062a \u062a\u0631\u0627\u0641\u0642 \u0647\u064a\u0644\u0627\u0631\u064a \u0643\u0644\u064a\u0646\u062a\u0648\u0646 \u0641\u064a \u063a\u0632\u0629 \u0639\u0627\u0645 1998",
                 cap="\u0633\u0647\u0649 \u0639\u0631\u0641\u0627\u062a (\u0625\u0644\u0649 \u0627\u0644\u064a\u0645\u064a\u0646) \u062a\u0631\u0627\u0641\u0642 \u0627\u0644\u0633\u064a\u062f\u0629 \u0627\u0644\u0623\u0645\u064a\u0631\u0643\u064a\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 \u0647\u064a\u0644\u0627\u0631\u064a \u0643\u0644\u064a\u0646\u062a\u0648\u0646 \u0641\u064a \u0644\u0642\u0627\u0621 \u0646\u0633\u0627\u0626\u064a \u0628\u063a\u0632\u0629\u060c 14 \u0643\u0627\u0646\u0648\u0646 \u0627\u0644\u0623\u0648\u0644 1998 \u2014 \u0642\u0628\u0644 \u062e\u0645\u0633 \u0633\u0646\u0648\u0627\u062a \u0645\u0646 \u062a\u062d\u0642\u064a\u0642 \u0628\u0627\u0631\u064a\u0633 \u0627\u0644\u0630\u064a \u0644\u0645 \u064a\u0635\u0631 \u0642\u0636\u064a\u0629. \u062a\u0635\u0648\u064a\u0631 \u0627\u0644\u0628\u064a\u062a \u0627\u0644\u0623\u0628\u064a\u0636 \u2014 \u0645\u0644\u0643\u064a\u0629 \u0639\u0627\u0645\u0629."),
+        3: dict(file="zahwa-silla-malta-arrival.jpg",
+                alt="زهوة عرفات تحمل سيلا، طفلة جريحة من غزة، لدى وصولها إلى مالطا",
+                cap="زهوة عرفات تحمل سيلا — طفلة جُرحت في غزة وفقدت والديها — لدى وصول الطفلة إلى مالطا للعلاج. صورة حصلت عليها تايمز أوف فلسطين."),
+        4: dict(file="zahwa-silla-malta.jpg",
+                alt="زهوة عرفات مع سيلا في مالطا",
+                cap="زهوة عرفات مع سيلا في مالطا. من مهامها مع السفارة الفلسطينية استقبال أطفال غزة القادمين للعلاج في مستشفيات مالطا. صورة حصلت عليها تايمز أوف فلسطين."),
     },
 }
 

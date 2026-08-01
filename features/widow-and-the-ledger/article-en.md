@@ -148,7 +148,15 @@ Yet she is now the subject of a viral claim, boosted by a sovereign state, that 
 
 That is the actual purpose. Not to describe Zahwa Arafat's finances, about which the people circulating the claim know nothing and care less, but to make her useful.
 
+The recycling has not stopped. During Fatah's Eighth General Conference in May 2026 — the movement's first leadership election in a decade — a campaign-style poster circulated on social media announcing "the candidate for the Revolutionary Council: Zahwa Yasser Arafat, 'Umm Yasser'," dressed in the movement's yellow and framed by her father's portrait. There was no such candidacy. She was not a candidate, did not attend the conference, and appears nowhere in its published record: not on the candidate lists reported by the official news agency WAFA, not in the results, not in any of the coverage. The portrait the poster carried does not appear to be her at all. The dynastic candidacy that actually happened that week was real and documented — Yasser Abbas, the president's 64-year-old businessman son, was elected to Fatah's Central Committee, to loud criticism inside the movement. A fabricated Arafat succession proved easier to share than the real Abbas one was to examine.
+
+What she actually does is also documented, and it is quieter. Photographs obtained by Times of Palestine show her in Malta, where she works with the Palestinian embassy; among her duties is receiving the wounded children of Gaza who arrive for treatment in Maltese hospitals — a corridor whose existence is a matter of public record, from the World Health Organization's evacuation registers to the Maltese prime minister's bedside visit to a Gaza boy at Mater Dei Hospital in December 2025. One of the children she received is Silla, a girl who was wounded in Gaza and lost both her parents.
+
+[[PHOTO3]]
+
 Those who know the family describe a life in a rented flat, ordinary work, no visible wealth of any kind. This publication has not independently verified those details and does not need to. The burden was never on her. It sits, entirely and permanently, with the people who published the number.
+
+[[PHOTO4]]
 
 ---
 
