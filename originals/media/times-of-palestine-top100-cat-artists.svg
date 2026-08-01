@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-labelledby="t">
+  <title id="t">TOP 100 — The Artists and Storytellers</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="420" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="420" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="420" fill="#286344"/>
+  <g stroke="#b58ac9" stroke-width="7" fill="none"><circle cx="760" cy="195" r="70"/><circle cx="760" cy="195" r="18" fill="#b58ac9" stroke="none"/><circle cx="760" cy="145" r="10" fill="#b58ac9" stroke="none"/><circle cx="760" cy="245" r="10" fill="#b58ac9" stroke="none"/><circle cx="710" cy="195" r="10" fill="#b58ac9" stroke="none"/><circle cx="810" cy="195" r="10" fill="#b58ac9" stroke="none"/><path d="M850 130 Q905 160 880 230 Q868 262 900 268" stroke-width="9"/></g>
+  <text x="90" y="150" class="sans ivory" font-size="58" font-weight="800">The Artists and Storytellers</text>
+  <text x="90" y="205" class="sans muted" font-size="26">Oscars, Pulitzers and the world's stages</text>
+  <text x="1510" y="150" class="arabic ivory" font-size="48" font-weight="700" text-anchor="end">الفنانون والرواة</text>
+  <text x="1510" y="205" class="arabic muted" font-size="26" text-anchor="end">أوسكار وبوليتزر ومسارح العالم</text>
+  <text x="90" y="360" class="mono" fill="#b58ac9" font-size="26">TOP 100 · 2026</text>
+  <text x="1510" y="360" class="mono" fill="#b58ac9" font-size="26" text-anchor="end">قائمة المئة</text>
+</svg>

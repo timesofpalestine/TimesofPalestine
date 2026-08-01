@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-labelledby="t">
+  <title id="t">TOP 100 — The Diaspora's Public Square</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="420" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="420" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="420" fill="#286344"/>
+  <g stroke="#c9a06a" stroke-width="6" fill="none"><circle cx="800" cy="200" r="85"/><ellipse cx="800" cy="200" rx="85" ry="34"/><path d="M800 115 L800 285 M715 200 L885 200"/><path d="M741 141 Q800 175 859 141 M741 259 Q800 225 859 259"/></g>
+  <text x="90" y="150" class="sans ivory" font-size="58" font-weight="800">The Diaspora's Public Square</text>
+  <text x="90" y="205" class="sans muted" font-size="26">From Congress to the world's parliaments</text>
+  <text x="1510" y="150" class="arabic ivory" font-size="48" font-weight="700" text-anchor="end">ساحة الشتات</text>
+  <text x="1510" y="205" class="arabic muted" font-size="26" text-anchor="end">من الكونغرس إلى برلمانات العالم</text>
+  <text x="90" y="360" class="mono" fill="#c9a06a" font-size="26">TOP 100 · 2026</text>
+  <text x="1510" y="360" class="mono" fill="#c9a06a" font-size="26" text-anchor="end">قائمة المئة</text>
+</svg>
