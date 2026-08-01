@@ -98,6 +98,13 @@ everything it builds:
 7. **Never commit** `__pycache__/`, `dist/`, cache/state JSON — see
    `.gitignore`. Never commit secrets; `TELEGRAM_BOT_TOKEN` and
    `ANTHROPIC_API_KEY` live in GitHub secrets only.
+8. **Daily editor-in-chief cycle (owner directive 2026-08-01):** Claude runs
+   `.github/workflows/daily-editor.yml` each morning (06:30 UTC), choosing and
+   shipping 3–5 improvements a day across editorial, design, platform and the
+   franchises, via a `claude/daily-editor-<date>` PR merged on green CI. Other
+   agents: expect a daily PR with this prefix; don't revert its layers —
+   disagreements go to issue #6. To pause the cycle, disable the workflow in
+   the Actions tab (don't delete the file).
 
 ## Division of labor (suggested, not exclusive)
 
