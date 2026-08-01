@@ -623,6 +623,124 @@ def backfill_remote_story_image(item):
         attach_media(item, candidate)
 
 
+# ── Person-photo fallback ────────────────────────────────────────────────────
+# Wire briefs about key political figures often arrive without an og:image
+# (paywalled source, Arabic-only outlet, bare text wire). Rather than falling
+# all the way back to the generic category cover, we try a known-good portrait
+# from Wikimedia Commons under CC or PD licence.
+#
+# Each entry: (name_regex, image_url, photo_credit, wikimedia_page_url)
+# The regex is matched against the article title + dek (case-insensitive).
+# Entries are tried top-to-bottom; the first match wins.
+# These fire ONLY when both the feed image and og:image backfill have failed.
+
+PERSON_PHOTO_MAP = [
+    # Mahmoud Abbas — PA president
+    (re.compile(r"mahmoud.{0,4}abbas|أبو مازن|محمود عباس", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Mahmoud_Abbas.jpg/640px-Mahmoud_Abbas.jpg",
+     "Mahmoud Abbas — Wikimedia Commons / Palestinian Authority press office",
+     "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas.jpg"),
+    # King Mohammed VI of Morocco
+    (re.compile(r"king\s+moh(?:a|e)mmed\s+vi|محمد السادس|ملك المغرب|العاهل المغربي|الملك محمد", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Mohammed_VI_of_Morocco.jpg/640px-Mohammed_VI_of_Morocco.jpg",
+     "King Mohammed VI — Wikimedia Commons / Moroccan Royal Palace press photo",
+     "https://commons.wikimedia.org/wiki/File:Mohammed_VI_of_Morocco.jpg"),
+    # King Abdullah II of Jordan
+    (re.compile(r"king\s+ab(?:d|d)ullah\s+ii|الملك عبد ?الله الثاني", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/King_Abdullah_II_of_Jordan_%28cropped%29.jpg/640px-King_Abdullah_II_of_Jordan_%28cropped%29.jpg",
+     "King Abdullah II — Wikimedia Commons / Jordanian Royal Court press photo",
+     "https://commons.wikimedia.org/wiki/File:King_Abdullah_II_of_Jordan_(cropped).jpg"),
+    # President El-Sisi of Egypt
+    (re.compile(r"\bel-?sisi\b|السيسي", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Abdel_Fattah_el-Sisi_in_2021.jpg/640px-Abdel_Fattah_el-Sisi_in_2021.jpg",
+     "President el-Sisi — Wikimedia Commons / Egyptian Presidency press photo",
+     "https://commons.wikimedia.org/wiki/File:Abdel_Fattah_el-Sisi_in_2021.jpg"),
+    # Sheikh Tamim bin Hamad of Qatar
+    (re.compile(r"tamim\s+bin\s+hamad|sheikh\s+tamim|تميم بن حمد", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Qatar_Amir_%28cropped%29.jpg/640px-Qatar_Amir_%28cropped%29.jpg",
+     "Sheikh Tamim — Wikimedia Commons / Qatari Diwan press photo",
+     "https://commons.wikimedia.org/wiki/File:Qatar_Amir_(cropped).jpg"),
+    # Crown Prince Mohammed bin Salman
+    (re.compile(r"mohammed\s+bin\s+salman|\bmbs\b|محمد بن سلمان|ابن سلمان", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Crown_Prince_of_Saudi_Arabia_Mohammed_Bin_Salman.jpg/640px-Crown_Prince_of_Saudi_Arabia_Mohammed_Bin_Salman.jpg",
+     "Crown Prince MBS — Wikimedia Commons / Saudi Royal Court press photo",
+     "https://commons.wikimedia.org/wiki/File:Crown_Prince_of_Saudi_Arabia_Mohammed_Bin_Salman.jpg"),
+    # Mohammed bin Zayed (UAE president)
+    (re.compile(r"mohammed\s+bin\s+zayed|\bmbz\b|محمد بن زايد|ابن زايد", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mohamed_bin_Zayed.jpg/640px-Mohamed_bin_Zayed.jpg",
+     "President MBZ — Wikimedia Commons / UAE Presidential Court press photo",
+     "https://commons.wikimedia.org/wiki/File:Mohamed_bin_Zayed.jpg"),
+    # Ismail Haniyeh / Hamas leader
+    (re.compile(r"haniy(?:eh|a|ye)|هنية|هنيه", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ismail_Haniyeh.jpg/640px-Ismail_Haniyeh.jpg",
+     "Ismail Haniyeh — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Ismail_Haniyeh.jpg"),
+    # Yahya Sinwar
+    (re.compile(r"sinwar|السنوار", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Yahya_Sinwar.jpg/640px-Yahya_Sinwar.jpg",
+     "Yahya Sinwar — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Yahya_Sinwar.jpg"),
+    # Benjamin Netanyahu
+    (re.compile(r"netanyahu|نتنياهو", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Benjamin_Netanyahu_%282023%29.jpg/640px-Benjamin_Netanyahu_%282023%29.jpg",
+     "Benjamin Netanyahu — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_(2023).jpg"),
+    # Benny Gantz
+    (re.compile(r"benny gantz|غانتس", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Benny_Gantz_March_2019.jpg/640px-Benny_Gantz_March_2019.jpg",
+     "Benny Gantz — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Benny_Gantz_March_2019.jpg"),
+    # Joe Biden
+    (re.compile(r"\bbiden\b|بايدن", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/640px-Joe_Biden_presidential_portrait.jpg",
+     "President Biden — White House official portrait, public domain",
+     "https://commons.wikimedia.org/wiki/File:Joe_Biden_presidential_portrait.jpg"),
+    # Donald Trump
+    (re.compile(r"\btrump\b|ترامب", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/640px-Donald_Trump_official_portrait.jpg",
+     "President Trump — White House official portrait, public domain",
+     "https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait.jpg"),
+    # Antony Blinken / US Secretary of State
+    (re.compile(r"\bblinken\b|بلينكن", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Antony_Blinken_official_portrait.jpg/640px-Antony_Blinken_official_portrait.jpg",
+     "Secretary Blinken — US State Department official portrait, public domain",
+     "https://commons.wikimedia.org/wiki/File:Antony_Blinken_official_portrait.jpg"),
+    # António Guterres (UN)
+    (re.compile(r"guterres|غوتيريش|غوتيريس", re.I),
+     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ant%C3%B3nio_Guterres_2017.jpg/640px-Ant%C3%B3nio_Guterres_2017.jpg",
+     "António Guterres — UN photo, CC BY-NC-ND 2.0",
+     "https://commons.wikimedia.org/wiki/File:Ant%C3%B3nio_Guterres_2017.jpg"),
+]
+
+
+def backfill_person_photo(item):
+    """Set a portrait photo for wire briefs about key political figures.
+
+    Fires only when all earlier image-resolution steps (feed thumbnail,
+    og:image backfill) have left the item photoless.  Matches the article
+    title + dek against PERSON_PHOTO_MAP and, on the first match, injects
+    the Wikimedia Commons portrait URL with proper CC/PD attribution.
+
+    This gives readers a recognisable face instead of the generic category
+    cover for person-centric political news.  Skipped in rights-only mode.
+    """
+    if item.get("image"):
+        return
+    if remote_media_mode() != "source":
+        return
+    hay = f"{item.get('title', '')} {item.get('dek', '')}"
+    for rx, img_url, credit, license_url in PERSON_PHOTO_MAP:
+        if rx.search(hay):
+            item["image"] = img_url
+            item["media"] = {
+                "credit": credit,
+                "rightsBasis": "wikimedia-cc",
+                "source": license_url,
+                "licenseUrl": license_url,
+            }
+            return
+
+
 def finish_item(item, feed):
     """Apply per-feed relevance filters, then categorize and score. Returns item or None."""
     if JUNK_TITLE_RX.search(item["title"]):
@@ -759,6 +877,7 @@ def fetch_rss(feed, lang, now, max_age):
         if item:
             attach_media(item, candidate_image)
             backfill_remote_story_image(item)
+            backfill_person_photo(item)
             items.append(item)
     return items
 
@@ -820,6 +939,7 @@ def fetch_telegram(feed, lang, now, max_age):
         if item:
             attach_media(item, candidate_image)
             backfill_remote_story_image(item)
+            backfill_person_photo(item)
             items.append(item)
     return items
 def fetch_feed(feed, lang):
@@ -1331,6 +1451,10 @@ def build_lang(lang):
             capped.append(it)
     print(f"  → {len(capped)} items after dedupe/cap")
     # Visual-first (owner decision 2026-07-30): no story runs as dead text.
+    # Person-photo pass: articles about key political figures get a portrait
+    # before we fall back to the generic category cover.
+    for it in capped:
+        backfill_person_photo(it)
     # Anything still photoless gets its branded category cover — the flag
     # placeholder is a last resort, not a norm.
     for it in capped:
