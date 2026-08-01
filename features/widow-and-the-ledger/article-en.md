@@ -142,6 +142,10 @@ The asymmetry is the tell. If the object were really the recovery of Palestinian
 
 Zahwa Arafat was born in a hospital outside Paris in July 1995. She was nine when her father died. She has lived in Malta for most of her life, with her mother and her grandmother, the writer Raymonda Tawil. She took her degree there. She has given no political interviews, held no office, run no organisation, controlled no budget, and has never been charged with anything, anywhere, by anyone.
 
+[[PHOTO5]]
+
+[[PHOTO6]]
+
 She is a private person. Whatever anyone believes about her parents, there is no theory of justice under which a child inherits an accusation.
 
 Yet she is now the subject of a viral claim, boosted by a sovereign state, that she personally holds eight billion dollars of stolen humanitarian aid. The claim is unsourced. It is wrong about where she lives. It contains an assertion about UNRWA eligibility for which no evidence has ever been offered. And it has a function: it converts an abstract argument about aid governance into a face, and it converts a private woman into a standing rebuttal to the humanitarian claims of her entire people. Every time someone argues that Palestinians in Gaza need food, this photograph is available as an answer.
@@ -153,6 +157,8 @@ The recycling has not stopped. During Fatah's Eighth General Conference in May 2
 What she actually does is also documented, and it is quieter. Photographs obtained by Times of Palestine show her in Malta, where she works with the Palestinian embassy; among her duties is receiving the wounded children of Gaza who arrive for treatment in Maltese hospitals — a corridor whose existence is a matter of public record, from the World Health Organization's evacuation registers to the Maltese prime minister's bedside visit to a Gaza boy at Mater Dei Hospital in December 2025. One of the children she received is Silla, a girl who was wounded in Gaza and lost both her parents.
 
 [[PHOTO3]]
+
+[[PHOTO7]]
 
 Those who know the family describe a life in a rented flat, ordinary work, no visible wealth of any kind. This publication has not independently verified those details and does not need to. The burden was never on her. It sits, entirely and permanently, with the people who published the number.
 
