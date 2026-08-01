@@ -138,6 +138,8 @@ The asymmetry is the tell. If the object were really the recovery of Palestinian
 
 ---
 
+[[VIDEO2]]
+
 ## VII. The daughter
 
 Zahwa Arafat was born in a hospital outside Paris in July 1995. She was nine when her father died. She has lived in Malta for most of her life, with her mother and her grandmother, the writer Raymonda Tawil. She took her degree there. She has given no political interviews, held no office, run no organisation, controlled no budget, and has never been charged with anything, anywhere, by anyone.
@@ -159,6 +161,8 @@ What she actually does is also documented, and it is quieter. Photographs obtain
 [[PHOTO3]]
 
 [[PHOTO7]]
+
+[[VIDEO1]]
 
 Those who know the family describe a life in a rented flat, ordinary work, no visible wealth of any kind. This publication has not independently verified those details and does not need to. The burden was never on her. It sits, entirely and permanently, with the people who published the number.
 
