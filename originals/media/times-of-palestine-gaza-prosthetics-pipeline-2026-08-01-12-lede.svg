@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Israeli import controls keep prosthetic limbs from Gaza's amputees</title>
+<desc id="desc">Illustration of a prosthetic leg crossed by a red hatched barrier labelled import controls, beside a bar chart showing that of 2,277 people with amputated limbs assessed in Gaza between September 2024 and May 2026, 502 have been fitted with a permanent prosthesis, with WHO figures on 18 shipments awaiting clearance, waits of 130 to 520 days, and eight prosthetists in Gaza.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<pattern id="hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<rect width="14" height="14" fill="#8a1f2d"/>
+<rect width="6" height="14" fill="#5e1520"/>
+</pattern>
+<linearGradient id="limb" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#2a2b2f"/>
+<stop offset="1" stop-color="#1a1b1e"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="120" y="88" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="4" fill="#c7a86b">GAZA · PROSTHETICS · THE BLOCKED PIPELINE</text>
+<text x="120" y="146" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">Import controls keep prosthetic limbs</text>
+<text x="120" y="196" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">from Gaza’s amputees</text>
+<text x="1500" y="146" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="27" fill="#aaa9a5" direction="rtl">قيود الاستيراد الإسرائيلية تحرم</text>
+<text x="1500" y="188" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="27" fill="#aaa9a5" direction="rtl">مبتوري الأطراف في غزة من الأطراف الصناعية</text>
+<rect x="120" y="228" width="1380" height="2" fill="#3a3b3f"/>
+
+<!-- prosthetic limb -->
+<g>
+<path d="M248,296 L392,296 C402,382 376,472 362,548 L278,548 C264,472 238,382 248,296 Z" fill="url(#limb)" stroke="#c7a86b" stroke-width="3"/>
+<rect x="292" y="548" width="56" height="18" rx="4" fill="#3a3b3f"/>
+<rect x="306" y="566" width="28" height="150" fill="#2a2b2f" stroke="#c7a86b" stroke-width="2.5"/>
+<circle cx="320" cy="592" r="6" fill="#c7a86b"/>
+<circle cx="320" cy="694" r="6" fill="#c7a86b"/>
+<rect x="290" y="716" width="60" height="26" rx="5" fill="#3a3b3f" stroke="#c7a86b" stroke-width="2"/>
+<path d="M288,742 L288,772 C288,788 300,794 316,794 L438,794 C456,794 458,766 440,762 L352,742 Z" fill="url(#limb)" stroke="#c7a86b" stroke-width="3"/>
+<!-- barrier -->
+<rect x="170" y="612" width="310" height="30" fill="url(#hatch)"/>
+<rect x="170" y="612" width="310" height="30" fill="none" stroke="#C8102E" stroke-width="2"/>
+<text x="170" y="676" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="3" fill="#C8102E">DUAL-USE IMPORT CONTROLS</text>
+<text x="170" y="704" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5" direction="rtl">قيود الاستيراد على المواد</text>
+</g>
+<text x="120" y="846" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Artificial Limbs and Polio Centre: about 2,000 patients</text>
+<text x="120" y="868" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">a year before the war, more than 5,000 now.</text>
+
+<!-- right panel -->
+<text x="560" y="286" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="3" fill="#c7a86b">ASSESSED WITH AMPUTATED LIMBS IN GAZA, SEPT 2024 – MAY 2026</text>
+
+<text x="560" y="380" font-family="'Source Serif 4',Georgia,serif" font-size="86" fill="#59a97d">502</text>
+<text x="726" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="25" fill="#f2eee8">fitted with a permanent prosthesis</text>
+<text x="726" y="384" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">of 2,277 people assessed — WHO data, reported 15 July</text>
+
+<rect x="560" y="424" width="940" height="46" fill="#26272b" stroke="#3a3b3f" stroke-width="1.5"/>
+<rect x="560" y="424" width="207" height="46" fill="#286344"/>
+<rect x="560" y="424" width="207" height="46" fill="none" stroke="#59a97d" stroke-width="2"/>
+<text x="1490" y="454" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">2,277 assessed</text>
+<text x="1500" y="506" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl">٥٠٢ فقط رُكِّبت لهم أطراف دائمة من أصل ٢٢٧٧</text>
+
+<!-- stat cards -->
+<g>
+<rect x="560" y="546" width="300" height="160" fill="#1a1b1e" stroke="#3a3b3f" stroke-width="1.5"/>
+<rect x="560" y="546" width="300" height="4" fill="#8a1f2d"/>
+<text x="584" y="624" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#c7a86b">18</text>
+<text x="584" y="660" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">shipments of rehabilitation</text>
+<text x="584" y="682" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">supplies awaiting clearance, mid-April</text>
+
+<rect x="880" y="546" width="300" height="160" fill="#1a1b1e" stroke="#3a3b3f" stroke-width="1.5"/>
+<rect x="880" y="546" width="300" height="4" fill="#8a1f2d"/>
+<text x="904" y="624" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#c7a86b">130–520</text>
+<text x="904" y="660" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">days those shipments have</text>
+<text x="904" y="682" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">waited, according to WHO</text>
+
+<rect x="1200" y="546" width="300" height="160" fill="#1a1b1e" stroke="#3a3b3f" stroke-width="1.5"/>
+<rect x="1200" y="546" width="300" height="4" fill="#8a1f2d"/>
+<text x="1224" y="624" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#c7a86b">8</text>
+<text x="1224" y="660" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">prosthetists in Gaza; standard is</text>
+<text x="1224" y="682" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">one per 250–300 amputees</text>
+</g>
+
+<rect x="560" y="736" width="940" height="66" fill="#26272b"/>
+<rect x="560" y="736" width="6" height="66" fill="#C8102E"/>
+<text x="590" y="778" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">No rehabilitation equipment entered Gaza between May 2024 and mid-April 2026 — WHO</text>
+
+<text x="560" y="846" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">Sources: WHO data reported by Euronews Arabic, 15 July; SciDev.Net; Reuters; ICRC.</text>
+<text x="560" y="868" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">Graphic: Times of Palestine</text>
+</svg>
