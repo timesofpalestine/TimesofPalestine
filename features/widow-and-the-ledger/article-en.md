@@ -10,6 +10,8 @@ The post said Zahwa Arafat is worth eight billion dollars. It said she owns prim
 
 Start with the checkable part. Zahwa Arafat does not live in Paris. She has lived in Malta since she was a child, a fact recorded in wire copy, in photo captions filed by AFP from her mother's home, and in her mother's own on-the-record interviews going back more than fifteen years. She took a bachelor's degree at a Maltese university. If the easiest verifiable detail in a four-sentence claim is wrong, the reader is entitled to ask what standard of care was applied to the other three.
 
+[[PHOTO6]]
+
 There is no public record — no filing, no registry entry, no court document, no audit, no named source — supporting an eight-billion-dollar figure attached to this woman. There is no evidence she owns property in London. There is no evidence she has ever received a dollar from UNRWA. The number appears to have entered circulation through social media, was amplified by a state account with millions of followers, and has since been reproduced in Instagram reels, Threads posts, Substack essays and search-engine "net worth" pages that exist to harvest advertising revenue from curiosity. When users have asked AI chatbots to verify it, the machines have hedged — describing the figure as unverified while gesturing at "credible estimates" in the millions, which is itself a laundering operation: the specific fabrication is downgraded, but the underlying premise, that this private person is sitting on stolen Palestinian aid, survives the correction intact.
 
 This is what a smear looks like in 2026. Not a single libel but a sediment — a claim repeated until repetition becomes its own evidence.
@@ -146,8 +148,6 @@ Zahwa Arafat was born in a hospital outside Paris in July 1995. She was nine whe
 
 [[PHOTO5]]
 
-[[PHOTO6]]
-
 She is a private person. Whatever anyone believes about her parents, there is no theory of justice under which a child inherits an accusation.
 
 Yet she is now the subject of a viral claim, boosted by a sovereign state, that she personally holds eight billion dollars of stolen humanitarian aid. The claim is unsourced. It is wrong about where she lives. It contains an assertion about UNRWA eligibility for which no evidence has ever been offered. And it has a function: it converts an abstract argument about aid governance into a face, and it converts a private woman into a standing rebuttal to the humanitarian claims of her entire people. Every time someone argues that Palestinians in Gaza need food, this photograph is available as an answer.
@@ -160,13 +160,11 @@ What she actually does is also documented, and it is quieter. Photographs obtain
 
 [[PHOTO3]]
 
-[[PHOTO7]]
-
 [[VIDEO1]]
 
 Those who know the family describe a life in a rented flat, ordinary work, no visible wealth of any kind. This publication has not independently verified those details and does not need to. The burden was never on her. It sits, entirely and permanently, with the people who published the number.
 
-[[PHOTO4]]
+[[DUO1]]
 
 ---
 

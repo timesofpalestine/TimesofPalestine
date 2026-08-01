@@ -145,6 +145,12 @@ body[dir=rtl] .f4-p li{line-height:1.75}
 .photo img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
 .photo figcaption{margin-top:10px;font-size:13px;line-height:1.55;color:var(--ink2)}
 
+/* photo pairs */
+.photo.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.photo.duo .cell img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.photo.duo figcaption{margin-top:10px;font-size:13px;line-height:1.55;color:var(--ink2)}
+@media(max-width:620px){.photo.duo{grid-template-columns:1fr}}
+
 /* video embeds */
 .vid{margin:44px auto;max-width:900px}
 .vid .vidwrap{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--rule)}
