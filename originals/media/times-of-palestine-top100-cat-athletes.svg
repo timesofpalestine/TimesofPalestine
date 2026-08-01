@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-labelledby="t">
+  <title id="t">TOP 100 — The Athletes</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="420" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="420" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="420" fill="#286344"/>
+  <g stroke="#7fc96a" stroke-width="6" fill="none"><circle cx="800" cy="200" r="78"/><path d="M800 122 L800 278 M730 165 Q800 205 870 165 M730 235 Q800 195 870 235"/></g><g fill="#7fc96a"><path d="M690 280 Q660 230 690 180 Q670 235 700 275 Z"/><path d="M910 280 Q940 230 910 180 Q930 235 900 275 Z"/></g>
+  <text x="90" y="150" class="sans ivory" font-size="58" font-weight="800">The Athletes</text>
+  <text x="90" y="205" class="sans muted" font-size="26">Carrying the flag onto the world's fields</text>
+  <text x="1510" y="150" class="arabic ivory" font-size="48" font-weight="700" text-anchor="end">الرياضيون</text>
+  <text x="1510" y="205" class="arabic muted" font-size="26" text-anchor="end">يحملون العلم إلى ملاعب العالم</text>
+  <text x="90" y="360" class="mono" fill="#7fc96a" font-size="26">TOP 100 · 2026</text>
+  <text x="1510" y="360" class="mono" fill="#7fc96a" font-size="26" text-anchor="end">قائمة المئة</text>
+</svg>

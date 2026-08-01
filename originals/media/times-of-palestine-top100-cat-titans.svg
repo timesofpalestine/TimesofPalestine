@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-labelledby="t">
+  <title id="t">TOP 100 — The Titans</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="420" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="420" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="420" fill="#286344"/>
+  <g fill="#59a97d"><polygon points="800,110 720,160 880,160"/><rect x="730" y="170" width="20" height="90"/><rect x="770" y="170" width="20" height="90"/><rect x="810" y="170" width="20" height="90"/><rect x="850" y="170" width="20" height="90"/><rect x="715" y="270" width="170" height="14" rx="4"/></g>
+  <text x="90" y="150" class="sans ivory" font-size="58" font-weight="800">The Titans</text>
+  <text x="90" y="205" class="sans muted" font-size="26">Banks, cranes and billion-dollar ledgers</text>
+  <text x="1510" y="150" class="arabic ivory" font-size="48" font-weight="700" text-anchor="end">جبابرة المال</text>
+  <text x="1510" y="205" class="arabic muted" font-size="26" text-anchor="end">مصارف ورافعات ودفاتر بالمليارات</text>
+  <text x="90" y="360" class="mono" fill="#59a97d" font-size="26">TOP 100 · 2026</text>
+  <text x="1510" y="360" class="mono" fill="#59a97d" font-size="26" text-anchor="end">قائمة المئة</text>
+</svg>
