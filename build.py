@@ -716,15 +716,17 @@ PERSON_PHOTO_MAP = [
 def backfill_person_photo(item):
     """Set a portrait photo for wire briefs about key political figures.
 
-    Fires only when all earlier image-resolution steps (feed thumbnail,
-    og:image backfill) have left the item photoless.  Matches the article
-    title + dek against PERSON_PHOTO_MAP and, on the first match, injects
-    the Wikimedia Commons portrait URL with proper CC/PD attribution.
+    Matches the article title + dek against PERSON_PHOTO_MAP and, on the
+    first match, injects the Wikimedia Commons portrait URL with proper
+    CC/PD attribution.
 
-    This gives readers a recognisable face instead of the generic category
-    cover for person-centric political news.  Skipped in rights-only mode.
+    Overrides generic source-hosted og:images (which are often unrelated
+    news graphics) with the curated portrait.  Skipped when the existing
+    image is already a deliberate curated asset (owned or wikimedia-cc),
+    and skipped entirely in rights-only mode.
     """
-    if item.get("image"):
+    existing_basis = (item.get("media") or {}).get("rightsBasis", "")
+    if item.get("image") and existing_basis in ("owned", "wikimedia-cc"):
         return
     if remote_media_mode() != "source":
         return
