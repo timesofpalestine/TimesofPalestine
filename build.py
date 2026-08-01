@@ -1394,6 +1394,7 @@ STR = {
         "story_published": "Published",
         "story_updated": "Updated",
         "summary_note": "Summary curated by Times of Palestine. The full story belongs to its publisher.",
+        "special_nav": "Special Report",
         "tips_nav": "Send a Tip",
         "tips_kicker": "SECURE TIP LINE",
         "tips_title": "Know something the public should know?",
@@ -1453,6 +1454,7 @@ STR = {
         "story_published": "نُشر",
         "story_updated": "حُدّث",
         "summary_note": "الملخص من إعداد «تايمز أوف فلسطين». المادة الكاملة ملك لناشرها الأصلي.",
+        "special_nav": "تحقيق خاص",
         "tips_nav": "أرسل معلومة",
         "tips_kicker": "خط المعلومات الآمن",
         "tips_title": "تعرف شيئاً يستحق أن يعرفه الناس؟",
@@ -1790,6 +1792,11 @@ section.specialband{background:var(--black);color:#fff;margin-block:1.2rem;borde
 .specialband .dek{margin:0;font:400 .95rem/1.55 var(--serif);color:#c9c9d2;max-width:46rem}
 .specialband .cta{flex-shrink:0;font:700 .82rem/1 var(--sans);color:#fff;text-decoration:none;border:1px solid #c7a86b;color:#c7a86b;padding:.7rem 1.1rem;border-radius:2px;white-space:nowrap}
 .specialband .cta:hover{background:#c7a86b;color:var(--black)}
+.specialband .sbimg{display:block;flex-shrink:0;width:210px;height:140px;overflow:hidden;border-radius:2px;margin-inline-start:auto}
+.specialband .sbimg img{width:100%;height:100%;object-fit:cover;opacity:.82;transition:opacity .25s}
+.specialband .sbimg:hover img{opacity:1}
+@media(max-width:640px){.specialband .sbimg{display:none}}
+nav.sections a.special{color:#c7a86b;border-color:rgba(199,168,107,.35)}
 section.tipband{background:var(--black);color:#fff;margin-block:1.2rem;border-block:4px solid var(--green);position:relative;overflow:hidden}
 section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-end:-60px;width:280px;background:linear-gradient(120deg,transparent 0 40%,rgba(0,122,61,.35) 40% 55%,rgba(206,17,38,.30) 55% 70%,transparent 70%);pointer-events:none}
 .tipband .wrap{display:flex;align-items:center;gap:2rem;padding-block:1.8rem;flex-wrap:wrap;position:relative;z-index:1}
@@ -2033,11 +2040,15 @@ def latest_item(it, lang, pfx):
 SPECIALS = [
     {
         "href": {"en": "/suha-arafat/index-en.html", "ar": "/suha-arafat/index-ar.html"},
-        "kicker": {"en": "Special investigation", "ar": "\u062a\u062d\u0642\u064a\u0642 \u062e\u0627\u0635"},
-        "title": {"en": "The Widow and the Ledger", "ar": "\u0627\u0644\u0623\u0631\u0645\u0644\u0629 \u0648\u0627\u0644\u062f\u0641\u062a\u0631"},
-        "dek": {"en": "How a number nobody could source became a fact everybody knows \u2014 and what it cost Palestinians.",
-                "ar": "\u0643\u064a\u0641 \u0635\u0627\u0631 \u0631\u0642\u0645\u064c \u0644\u0627 \u064a\u0633\u062a\u0637\u064a\u0639 \u0623\u062d\u062f \u0625\u0633\u0646\u0627\u062f\u0647 \u062d\u0642\u064a\u0642\u0629\u064b \u064a\u0639\u0631\u0641\u0647\u0627 \u0627\u0644\u062c\u0645\u064a\u0639 \u2014 \u0648\u0645\u0627 \u0627\u0644\u0630\u064a \u0643\u0644\u0651\u0641\u0647 \u0630\u0644\u0643 \u0627\u0644\u0641\u0644\u0633\u0637\u064a\u0646\u064a\u064a\u0646."},
-        "cta": {"en": "Read the full investigation \u2192", "ar": "\u0627\u0642\u0631\u0623 \u0627\u0644\u062a\u062d\u0642\u064a\u0642 \u0643\u0627\u0645\u0644\u0627\u064b \u2190"},
+        "kicker": {"en": "Special investigation", "ar": "تحقيق خاص"},
+        "title": {"en": "The Widow and the Ledger", "ar": "الأرملة والدفتر"},
+        "dek": {"en": "How a number nobody could source became a fact everybody knows — and what it cost Palestinians.",
+                "ar": "كيف صار رقمٌ لا يستطيع أحد إسناده حقيقةً يعرفها الجميع — وما الذي كلّفه ذلك الفلسطينيين."},
+        "cta": {"en": "Read the full investigation →", "ar": "اقرأ التحقيق كاملاً ←"},
+        # Image path relative to dist root — the suha-arafat/ dir is a static feature
+        "img": "/suha-arafat/media/suha-arafat-hillary-clinton-gaza-1998.jpg",
+        "img_alt": {"en": "Suha Arafat accompanies Hillary Clinton in Gaza, 1998",
+                    "ar": "سهى عرفات ترافق هيلاري كلينتون في غزة، ١٩٩٨"},
     },
 ]
 
@@ -2045,11 +2056,17 @@ SPECIALS = [
 def specials_band_html(lang):
     bands = []
     for s in SPECIALS:
+        img_html = ""
+        if s.get("img"):
+            img_html = (f'<a class="sbimg" href="{esc(s["href"][lang])}" aria-hidden="true" tabindex="-1">'
+                        f'<img src="{esc(s["img"])}" alt="{esc(s["img_alt"][lang])}" loading="lazy">'
+                        f'</a>')
         bands.append(
             f'<section class="specialband"><div class="wrap">'
             f'<div class="body"><p class="kick">{esc(s["kicker"][lang])}</p>'
             f'<h2><a href="{esc(s["href"][lang])}">{esc(s["title"][lang])}</a></h2>'
             f'<p class="dek">{esc(s["dek"][lang])}</p></div>'
+            f'{img_html}'
             f'<a class="cta" href="{esc(s["href"][lang])}">{esc(s["cta"][lang])}</a>'
             f'</div></section>')
     return "".join(bands)
@@ -2132,10 +2149,20 @@ def render_page(lang, items, built_at):
     time_str = f"{d.hour:02d}:{d.minute:02d}"
 
     ticker_track = "".join(f'<a href="{href(i, P)}">{esc(i["title"])}</a>' for i in ticker_items)
+    # Prepend the standing special investigation so it's always visible in the ticker
+    if SPECIALS:
+        sp = SPECIALS[0]
+        sp_ticker_label = {"en": "Special Investigation: The Widow and the Ledger",
+                           "ar": "تحقيق خاص: الأرملة والدفتر"}
+        ticker_track = f'<a href="{esc(sp["href"][lang])}">{esc(sp_ticker_label[lang])}</a>' + ticker_track
 
     def visible(k):
         return len(sections[k]) >= (1 if k in FOCUS_SECTIONS else 2)
     nav_links = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in order if visible(k))
+    # Special investigation link in the nav bar (gold accent, always visible)
+    if SPECIALS:
+        sp = SPECIALS[0]
+        nav_links += f'<a class="special" href="{esc(sp["href"][lang])}">{esc(t["special_nav"])}</a>'
 
     def research_featured(it):
         media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"></a>'
