@@ -1793,9 +1793,9 @@ section.specialband{background:var(--black);color:#fff;margin-block:1.2rem;borde
 .specialband .cta{flex-shrink:0;font:700 .82rem/1 var(--sans);color:#fff;text-decoration:none;border:1px solid #c7a86b;color:#c7a86b;padding:.7rem 1.1rem;border-radius:2px;white-space:nowrap}
 .specialband .cta:hover{background:#c7a86b;color:var(--black)}
 .specialband .sbimg{display:block;flex-shrink:0;width:210px;height:140px;overflow:hidden;border-radius:2px;margin-inline-start:auto}
+@media(max-width:640px){.specialband .sbimg{width:100%;height:180px;margin-inline-start:0;order:-1}}
 .specialband .sbimg img{width:100%;height:100%;object-fit:cover;opacity:.82;transition:opacity .25s}
 .specialband .sbimg:hover img{opacity:1}
-@media(max-width:640px){.specialband .sbimg{display:none}}
 nav.sections a.special{color:#c7a86b;border-color:rgba(199,168,107,.35)}
 section.tipband{background:var(--black);color:#fff;margin-block:1.2rem;border-block:4px solid var(--green);position:relative;overflow:hidden}
 section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-end:-60px;width:280px;background:linear-gradient(120deg,transparent 0 40%,rgba(0,122,61,.35) 40% 55%,rgba(206,17,38,.30) 55% 70%,transparent 70%);pointer-events:none}
