@@ -40,6 +40,11 @@ _YT_ID_RX = re.compile(
     r"([A-Za-z0-9_-]{6,20})")
 _TME_RX = re.compile(r"^https://t\.me/([A-Za-z0-9_]{3,40})/(\d+)$")
 _MP4_RX = re.compile(r"^https://[\w.-]+/[\w./%-]+\.mp4$")
+# Public Instagram reels/posts; tracking params (?igsh=…) are accepted on the
+# input but never reach the page — the embed src is rebuilt from captured IDs.
+_IG_RX = re.compile(
+    r"^https://(?:www\.)?instagram\.com/(reel|p)/([A-Za-z0-9_-]{5,20})/?"
+    r"(?:\?[^\s)]*)?$")
 
 
 def video_embed(caption, url):
@@ -64,7 +69,15 @@ def video_embed(caption, url):
             frame = (f'<video controls preload="metadata" playsinline '
                      f'src="{_esc(url)}"></video>')
         else:
-            return None
+            m = _IG_RX.match(url)
+            if m:
+                frame = (f'<div class="embed ig"><iframe '
+                         f'src="https://www.instagram.com/{m.group(1)}/{m.group(2)}/embed/captioned/" '
+                         f'title="{_esc(caption) or "Video"}" loading="lazy" '
+                         f'allowfullscreen frameborder="0" '
+                         f'referrerpolicy="strict-origin-when-cross-origin"></iframe></div>')
+            else:
+                return None
     cap = f'<figcaption>{_inline(caption)}</figcaption>' if caption else ""
     return f'<figure class="lf video">{frame}{cap}</figure>'
 ROW_RX = re.compile(r"^\|(.+)\|\s*$")
@@ -221,7 +234,8 @@ def rendered_residue_warnings(rendered):
         warnings.append("unrendered image markdown '!['")
     if "!video" in rendered:
         warnings.append("unrendered or non-embeddable !video directive "
-                        "(only YouTube, t.me posts and direct .mp4 embed)")
+                        "(only YouTube, t.me posts, Instagram reels/posts "
+                        "and direct .mp4 embed)")
     if "**" in rendered:
         warnings.append("unrendered bold marker '**'")
     if re.search(r"\]\((?:/|\.{1,2}/|[\w.-]+\.html)[^)\s]*\)", rendered):
@@ -363,6 +377,8 @@ CSS = """
 .story .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .story .embed.tme{padding-top:0;height:clamp(360px,70vh,520px)}
 .story .embed.tme iframe{position:static;height:100%}
+.story .embed.ig{padding-top:0;height:clamp(480px,78vh,660px);max-width:420px;margin-inline:auto}
+.story .embed.ig iframe{position:static;height:100%}
 .story figure.lf.video video{width:100%;display:block;background:#0b0b0c;border-radius:var(--r)}
 @media(prefers-color-scheme:dark){
   .story .sub{color:var(--ink)}
