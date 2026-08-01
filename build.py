@@ -520,6 +520,46 @@ def discover_story_image(article_url):
     return image.replace("http://", "https://", 1)
 
 
+@functools.lru_cache(maxsize=2048)
+def remote_image_ok(url):
+    """A remote lede must actually serve an image before we publish it.
+
+    Dead og:image links, soft-404 HTML pages, hotlink walls and tracking
+    pixels all render as a broken photo on the reader's side. A URL that
+    fails here is treated as photoless, so the branded category cover takes
+    over — never an empty frame.
+    """
+    if not is_http_url(url) or not is_public_http_url(url):
+        return False
+    for method in ("HEAD", "GET"):
+        req = urllib.request.Request(url, method=method, headers={
+            "User-Agent": UA, "Accept": "image/*,*/*;q=0.5"})
+        if method == "GET":
+            req.add_header("Range", "bytes=0-2047")
+        try:
+            with safe_urlopen(req, timeout=8) as r:
+                if r.status not in (200, 206):
+                    if method == "HEAD":
+                        continue  # many CDNs reject HEAD; the ranged GET decides
+                    return False
+                ctype = (r.headers.get("Content-Type") or "").split(";")[0].strip().lower()
+                if not ctype and method == "HEAD":
+                    continue
+                if not (ctype.startswith("image/") or (not ctype and IMAGEISH_RX.search(url))):
+                    return False
+                # Reject tracking-pixel-sized files when the server states a size.
+                total = r.headers.get("Content-Range", "").rpartition("/")[2] \
+                    or (r.headers.get("Content-Length") if r.status == 200 else "")
+                if total.isdigit() and int(total) < 600:
+                    return False
+                return True
+        except (OSError, ValueError, PublishingError):
+            if method == "HEAD":
+                continue
+            return False
+    return False
+
+
 def resolve_article_url(url):
     """Resolve a Google News item to the publisher article it represents."""
     if not is_http_url(url):
@@ -567,6 +607,12 @@ def attach_media(item, candidate, local_original=False):
             and remote_media_mode() == "source"
             and is_public_http_url(candidate)
         ):
+            if not remote_image_ok(candidate):
+                item["image"] = None
+                item["media"] = None
+                if HEALTH:
+                    HEALTH.block_media("remote_media_dead")
+                return
             item["image"] = candidate
             item["media"] = {
                 "credit": item.get("source", ""),
@@ -731,6 +777,8 @@ def backfill_person_photo(item):
     hay = f"{item.get('title', '')} {item.get('dek', '')}"
     for rx, img_url, credit, license_url in PERSON_PHOTO_MAP:
         if rx.search(hay):
+            if not remote_image_ok(img_url):
+                continue  # renamed/moved on Commons — try the next match
             item["image"] = img_url
             item["media"] = {
                 "credit": credit,
@@ -2111,10 +2159,24 @@ def display_source(it, lang):
     return it["source"]
 
 
+def lede_fallback_attrs(it):
+    """Remote ledes can die after publish — hotlink walls, deleted uploads,
+    CDN churn. no-referrer defeats referer-based blocking; onerror swaps a
+    dead photo for the branded category cover so readers never see a broken
+    frame. Local /media/ assets ship with the site and need neither."""
+    if not (it.get("image") or "").startswith("http"):
+        return ""
+    cover = f"times-of-palestine-cover-{it.get('cat', 'news')}.svg"
+    if not (ROOT / "originals" / "media" / cover).is_file():
+        cover = "times-of-palestine-cover-news.svg"
+    return (' referrerpolicy="no-referrer"'
+            f" onerror=\"this.onerror=null;this.src='/media/{cover}'\"")
+
 def card_media(it, pfx):
     """Image if we have one; otherwise a branded flag panel — never an empty column."""
     if it["image"]:
-        return f'<a href="{href(it, pfx)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"></a>'
+        return (f'<a href="{href(it, pfx)}"><img src="{esc(it["image"])}" '
+                f'alt="{esc(it["title"])}" loading="lazy"{lede_fallback_attrs(it)}></a>')
     return f'<a href="{href(it, pfx)}"><div class="ph">{FLAG_SVG}</div></a>'
 
 def card(it, lang, pfx):
@@ -2140,7 +2202,7 @@ def op_card(it, lang, pfx):
 
 def sub_item(it, lang, pfx):
     thumb = (f'<a class="sub-thumb" href="{href(it, pfx)}">'
-             f'<img src="{esc(it["image"])}" alt="" loading="lazy"></a>'
+             f'<img src="{esc(it["image"])}" alt="" loading="lazy"{lede_fallback_attrs(it)}></a>'
              if it["image"] else '')
     return (f'<article class="sub-item">'
             f'{thumb}'
@@ -2287,7 +2349,7 @@ def render_page(lang, items, built_at):
         nav_links += f'<a class="special" href="{esc(sp["href"][lang])}">{esc(t["special_nav"])}</a>'
 
     def research_featured(it):
-        media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"></a>'
+        media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"{lede_fallback_attrs(it)}></a>'
                  if it["image"] else '<div class="noimg"><span>§</span></div>')
         return (f'<article class="research-feat"><div class="body">'
                 f'<p class="kick">{t["research_kicker"]}</p>'
@@ -2326,7 +2388,7 @@ def render_page(lang, items, built_at):
         hero_dek = f'<p class="dek">{summary_html(hero["dek"])}</p>' if hero["dek"] else ""
         hero_html = (
             f'<div class="hero-imgwrap">'
-            f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt="{esc(hero["title"])}" loading="eager" fetchpriority="high"></a>'
+            f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt="{esc(hero["title"])}" loading="eager" fetchpriority="high"{lede_fallback_attrs(hero)}></a>'
             f'<div class="hero-overlay">'
             f'<p class="label">{t["hero_label"]}</p>'
             f'<h2><a href="{href(hero, P)}">{esc(hero["title"])}</a></h2>'
@@ -2429,7 +2491,7 @@ def render_story(it, lang, related, rail, built_at):
     Every page links onward to many others — readers always circulate."""
     t = STR[lang]
     lede = (
-        f'<img class="lede" src="{esc(it["image"])}" alt="{esc(it["title"])}">'
+        f'<img class="lede" src="{esc(it["image"])}" alt="{esc(it["title"])}"{lede_fallback_attrs(it)}>'
         f'{media_credit(it, lang)}'
     ) if it["image"] else f'<div class="lede">{FLAG_SVG}</div>'
     brief = it.get("brief")
