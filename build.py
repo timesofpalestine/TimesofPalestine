@@ -1445,6 +1445,11 @@ def validate_original(path, meta, body, lang, now, date):
     longform = __import__("longform")
     rendered = longform.body_html(body)
     residue_warnings.extend(longform.rendered_residue_warnings(rendered))
+    refusal_match = REFUSAL_RX.search(body)
+    if refusal_match:
+        residue_warnings.append(
+            f"refusal-screen match '{refusal_match.group(0)}' — rephrase the "
+            "flagged wording; refusal-pattern text never publishes")
     residue_warnings.extend(memo_style_warnings(body))
     residue_warnings.extend(passive_title_warnings(meta.get("title", ""), lang))
     if len(meta.get("title", "").split()) > TITLE_MAX_WORDS:
@@ -2602,7 +2607,11 @@ def render_story(it, lang, related, rail, built_at):
         f'{media_credit(it, lang)}'
     ) if it["image"] else f'<div class="lede">{FLAG_SVG}</div>'
     brief = it.get("brief")
-    if brief and REFUSAL_RX.search(brief):  # hard stop: refusal text must never render
+    # Hard stop: AI-refusal text must never render. Originals are exempt here —
+    # they are editor-authored and refusal-screened LOUDLY at validation time
+    # (a match skips the article with a warning), so innocent phrases like
+    # "النص الكامل" can never silently degrade a published page to its dek.
+    if brief and not it.get("original") and REFUSAL_RX.search(brief):
         brief = None
     if brief:  # original TOP Newsdesk brief, written by Claude, cached per story
         paras = __import__("longform").body_html(brief)
