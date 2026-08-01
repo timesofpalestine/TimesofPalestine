@@ -1791,6 +1791,7 @@ nav.sections a.tip{color:#3fd07c;border-color:#3fd07c;background:rgba(63,208,124
 .hero-imgwrap>a{display:block}
 .hero-imgwrap>a>img{aspect-ratio:16/9;object-fit:cover;width:100%;background:#d4d1c9;transition:transform .55s ease}
 .hero-imgwrap:hover>a>img{transform:scale(1.03)}
+.hero-imgwrap[data-noi]{background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
 .hero-overlay{position:absolute;bottom:0;inset-inline:0;padding:3.5rem 1.5rem 1.5rem;background:linear-gradient(to top,rgba(4,4,6,.93) 0%,rgba(4,4,6,.55) 45%,transparent 100%)}
 .hero-overlay .label{color:#ff606d;font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.45rem;display:block}
 [lang=ar] .hero-overlay .label{letter-spacing:.04em;font-size:.78rem}
@@ -2118,7 +2119,10 @@ def display_source(it, lang):
 def card_media(it, pfx):
     """Image if we have one; otherwise a branded flag panel — never an empty column."""
     if it["image"]:
-        return f'<a href="{href(it, pfx)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"></a>'
+        return (f'<a href="{href(it, pfx)}">'
+                f'<img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"'
+                f" onerror=\"this.onerror=null;this.style.display='none'\">"
+                f'</a>')
     return f'<a href="{href(it, pfx)}"><div class="ph">{FLAG_SVG}</div></a>'
 
 def card(it, lang, pfx):
@@ -2144,7 +2148,8 @@ def op_card(it, lang, pfx):
 
 def sub_item(it, lang, pfx):
     thumb = (f'<a class="sub-thumb" href="{href(it, pfx)}">'
-             f'<img src="{esc(it["image"])}" alt="" loading="lazy"></a>'
+             f'<img src="{esc(it["image"])}" alt="" loading="lazy"'
+             f" onerror=\"this.onerror=null;this.style.display='none'\"></a>"
              if it["image"] else '')
     return (f'<article class="sub-item">'
             f'{thumb}'
@@ -2330,7 +2335,8 @@ def render_page(lang, items, built_at):
         hero_dek = f'<p class="dek">{summary_html(hero["dek"])}</p>' if hero["dek"] else ""
         hero_html = (
             f'<div class="hero-imgwrap">'
-            f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt="{esc(hero["title"])}" loading="eager" fetchpriority="high"></a>'
+            f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt="{esc(hero["title"])}" loading="eager" fetchpriority="high"'
+            f" onerror=\"this.onerror=null;this.style.display='none';this.parentNode.parentNode.dataset.noi=1\"></a>"
             f'<div class="hero-overlay">'
             f'<p class="label">{t["hero_label"]}</p>'
             f'<h2><a href="{href(hero, P)}">{esc(hero["title"])}</a></h2>'
@@ -2433,7 +2439,9 @@ def render_story(it, lang, related, rail, built_at):
     Every page links onward to many others — readers always circulate."""
     t = STR[lang]
     lede = (
-        f'<img class="lede" src="{esc(it["image"])}" alt="{esc(it["title"])}">'
+        f'<img class="lede" src="{esc(it["image"])}" alt="{esc(it["title"])}"'
+        f" onerror=\"this.onerror=null;this.style.display='none';var n=this.nextElementSibling;if(n)n.style.display='flex'\">"
+        f'<div class="lede" style="display:none">{FLAG_SVG}</div>'
         f'{media_credit(it, lang)}'
     ) if it["image"] else f'<div class="lede">{FLAG_SVG}</div>'
     brief = it.get("brief")
