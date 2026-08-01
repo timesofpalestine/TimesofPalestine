@@ -317,6 +317,33 @@ PHOTOS = {
 }
 
 
+VIDEOS = {
+    1: dict(kind="instagram",
+            embed="https://www.instagram.com/reel/C6Wq2sjtj32/embed/",
+            link="https://www.instagram.com/reel/C6Wq2sjtj32/",
+            cap={"en": "Zahwa Arafat welcomes wounded Palestinian children arriving from Gaza for treatment in Malta.",
+                 "ar": "زهوة عرفات تستقبل أطفالاً فلسطينيين جرحى لدى وصولهم من غزة للعلاج في مالطا."},
+            watch={"en": "Watch on Instagram", "ar": "شاهد الفيديو على إنستغرام"},
+            tall=True),
+    2: dict(kind="facebook",
+            embed="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1DSzKpWHC1%2F&show_text=false",
+            link="https://www.facebook.com/share/v/1DSzKpWHC1/",
+            cap={"en": "A video discussion of the claims circulated about Suha and Zahwa Arafat.",
+                 "ar": "نقاش مصوَّر حول الادعاءات المتداولة بحق سهى وزهوة عرفات."},
+            watch={"en": "Watch on Facebook", "ar": "شاهد الفيديو على فيسبوك"},
+            tall=False),
+}
+
+
+def video(d, lang):
+    shape = "tall" if d.get("tall") else "wide"
+    return ('<figure class="vid %s"><div class="vidwrap"><iframe src="%s" '
+            'loading="lazy" allowfullscreen frameborder="0" '
+            'referrerpolicy="no-referrer-when-downgrade"></iframe></div>'
+            '<figcaption>%s · <a href="%s" target="_blank" rel="noopener nofollow">%s</a></figcaption></figure>'
+            % (shape, esc(d["embed"]), esc(d["cap"][lang]), esc(d["link"]), esc(d["watch"][lang])))
+
+
 def photo(d):
     return ('<figure class="photo"><img src="media/%s" alt="%s" loading="lazy">'
             '<figcaption>%s</figcaption></figure>'
@@ -469,6 +496,15 @@ body[dir=rtl] .f4-p li{line-height:1.75}
 .photo img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
 .photo figcaption{margin-top:10px;font-size:13px;line-height:1.55;color:var(--ink2)}
 
+/* video embeds */
+.vid{margin:44px auto;max-width:900px}
+.vid .vidwrap{background:var(--card);border:1px solid var(--rule)}
+.vid.wide .vidwrap{aspect-ratio:16/9}
+.vid.tall .vidwrap{max-width:420px;height:640px;margin-inline:auto}
+.vid iframe{width:100%;height:100%;display:block;border:0}
+.vid figcaption{margin-top:10px;font-size:13px;line-height:1.55;color:var(--ink2)}
+.vid figcaption a{color:var(--slate)}
+
 /* f5 */
 .xpost{margin:0 0 8px;padding:16px 18px;background:var(--paper);border:1px solid var(--rule);
 border-inline-start:4px solid var(--red);border-radius:2px;direction:ltr;text-align:left}
@@ -573,6 +609,10 @@ def build(lang):
         key = "PHOTOPLACEHOLDER%d" % i
         placeholders[key] = photo(d)
         body_md = body_md.replace("[[PHOTO%d]]" % i, key)
+    for i, d in VIDEOS.items():
+        key = "VIDEOPLACEHOLDER%d" % i
+        placeholders[key] = video(d, lang)
+        body_md = body_md.replace("[[VIDEO%d]]" % i, key)
 
     html_body = markdown.markdown(body_md, extensions=["extra"])
     html_body = '<div class="col">' + html_body + "</div>"
