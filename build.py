@@ -1733,6 +1733,7 @@ def add_story_outline(rendered, lang):
 CSS = """
 :root{
   --red:#C8102E; --green:#00753A; --black:#0b0b0c; --ink:#141419; --muted:#595962;
+  --fg:#141419;
   --paper:#f8f7f2; --card:#ffffff; --line:#e6e3da; --line-dark:#c9c5b8;
   --serif:Georgia,"Times New Roman",Times,serif; --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
   --max:1240px;
@@ -1767,14 +1768,17 @@ img{max-width:100%;display:block}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes tick-rtl{from{transform:translateX(0)}to{transform:translateX(50%)}}
 .masthead{background:var(--card);border-bottom:2px solid var(--line);text-align:center;padding:1.65rem 0 1.2rem}
-.masthead .logotype{display:inline-flex;align-items:center}
-.masthead .wrap::after{content:"";display:block;margin:.9rem auto 0;width:130px;height:5px;background:linear-gradient(90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
+.masthead .logotype{display:inline-flex;align-items:center;gap:.65rem}
+.masthead .wrap::after{content:"";display:block;margin:.9rem auto 0;width:200px;height:6px;background:linear-gradient(90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
 [dir=rtl] .masthead .wrap::after{background:linear-gradient(-90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
-.masthead h1,.masthead .wordmark{font-family:var(--serif);font-weight:900;line-height:1;letter-spacing:-.02em;color:var(--black);font-size:clamp(1.9rem,4.5vw,3rem);white-space:nowrap}
+.masthead .tagline{display:block;font-size:.72rem;color:var(--muted);letter-spacing:.04em;margin-top:.55rem;font-style:italic}
+[lang=ar] .masthead .tagline{letter-spacing:0;font-style:normal;font-size:.82rem}.masthead h1,.masthead .wordmark{font-family:var(--serif);font-weight:900;line-height:1;letter-spacing:-.02em;color:var(--black);font-size:clamp(1.9rem,4.5vw,3rem);white-space:nowrap}
 .masthead h1 .l2,.masthead .wordmark .l2{color:var(--red)}
 [lang=ar] .masthead h1,[lang=ar] .masthead .wordmark{font-family:"Amiri",serif;letter-spacing:0;font-weight:700;line-height:1.25}
 .masthead.compact{padding:.9rem 0 .7rem}
 .masthead.compact h1,.masthead.compact .wordmark{font-size:1.45rem}
+.masthead.compact .flagmark{width:32px;height:32px}
+.masthead.compact::after{display:none}
 nav.sections{position:sticky;top:0;background:rgba(11,11,12,.97);z-index:50;box-shadow:0 2px 12px rgba(0,0,0,.3);backdrop-filter:blur(4px)}
 nav.sections .wrap{display:flex;flex-wrap:wrap;gap:.25rem;padding-block:.3rem}
 nav.sections a{color:#d8d8e2;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.5rem .62rem;white-space:nowrap;border:1px solid transparent;border-radius:999px;transition:color var(--tr),border-color var(--tr),background var(--tr)}
@@ -1824,7 +1828,8 @@ nav.sections a.tip{color:#3fd07c;border-color:#3fd07c;background:rgba(63,208,124
 .sub-body .t{font-size:.65rem;color:var(--muted);font-weight:600;margin-top:.2rem;display:block}
 [lang=ar] .sub-body .t{font-size:.72rem}
 /* ── latest rail ── */
-.latest{background:var(--card);border:1px solid var(--line);box-shadow:var(--sh);padding:1rem .95rem;height:fit-content;position:sticky;top:58px}
+.latest{background:var(--card);border:1px solid var(--line);box-shadow:var(--sh);padding:1rem .95rem;height:fit-content}
+aside.latest{position:sticky;top:58px}
 .latest h2{font-size:.79rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--black);border-bottom:3px solid var(--red);padding-bottom:.5rem;display:flex;align-items:center;gap:.5rem;margin-bottom:.15rem}
 [lang=ar] .latest h2{letter-spacing:.02em;font-size:.94rem}
 .latest h2::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite}
@@ -1993,8 +1998,9 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 [dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}
 /* ── dark mode ── */
 @media(prefers-color-scheme:dark){
-  :root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}
+  :root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--fg:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}
   .masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.card h3,.rowcard h3,.sub-body h3,.research-feat h3,.op-card h3{color:var(--ink)}
+  .masthead .tagline{color:#6a6a74}
   .hero-overlay h2,.hero-overlay h2 a{color:#fff}
   .story .summary{color:#d6d6de}
   .research-feat .dek{color:#c5c5cf}
@@ -2388,7 +2394,8 @@ def render_page(lang, items, built_at):
 <div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
 
 <header class="masthead"><div class="wrap">
-  <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
+  <a class="logotype" href="#top">{FLAG_SVG}<h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
+  <span class="tagline">{t['tagline']}</span>
 </div></header>
 
 <nav class="sections" aria-label="Primary"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_links}<a class="tip" href="#tips">🔒 {t['tips_nav']}</a></div></nav>
@@ -2588,7 +2595,7 @@ def render_story(it, lang, related, rail, built_at):
 <div class="backbar"><a href="../">{t['back_home']}</a><a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
 <div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
 <header class="masthead compact"><div class="wrap">
-  <a class="logotype" href="../"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
+  <a class="logotype" href="../">{FLAG_SVG}<p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
 
 <main>
