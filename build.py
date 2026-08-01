@@ -2221,7 +2221,33 @@ def latest_item(it, lang, pfx):
 # Standing specials featured on both front pages (owner-curated). Each entry
 # links to a standalone feature page; the band sits directly under the live
 # hero so the news cycle keeps the top slot (charter: nothing squats the hero).
+def _original_story_href(slug):
+    """Front-page links to a published original's story pages, both editions.
+    Mirrors the pid derivation in load_originals so specials never 404."""
+    return {lang: "/" + lang + "/story/"
+            + hashlib.md5(f"original:{slug}.{lang}".encode()).hexdigest()[:10] + ".html"
+            for lang in ("en", "ar")}
+
+
 SPECIALS = [
+    {
+        # Story-page special: renders only when this original is in the build,
+        # so offline/skip-originals runs never emit broken band links.
+        "requires_original": "palestine-top100-2026",
+        "href": _original_story_href("palestine-top100-2026"),
+        "kicker": {"en": "The annual list", "ar": "القائمة السنوية"},
+        "title": {"en": "The TOP 100: the most influential Palestinians",
+                  "ar": "قائمة المئة: أكثر فلسطينيي العالم تأثيراً"},
+        "dek": {"en": "From presidents and prisoners to laureates, surgeons and strikers — the hundred Palestinians who moved the world this year.",
+                "ar": "من الرؤساء والأسرى إلى الحائزين الجوائز والجرّاحين والمهاجمين — مئة فلسطيني حرّكوا العالم هذا العام."},
+        "cta": {"en": "Meet the 100 →", "ar": "تعرّف إلى المئة ←"},
+        "img": "/media/times-of-palestine-top100-2026.svg",
+        "img_alt": {"en": "The TOP 100: the most influential Palestinians of 2026",
+                    "ar": "قائمة المئة: أكثر فلسطينيي العالم تأثيراً 2026"},
+        "ticker": {"en": "The Annual List: The TOP 100 Most Influential Palestinians",
+                   "ar": "القائمة السنوية: المئة الأكثر تأثيراً"},
+        "nav": {"en": "TOP 100", "ar": "قائمة المئة"},
+    },
     {
         "href": {"en": "/suha-arafat/index-en.html", "ar": "/suha-arafat/index-ar.html"},
         "kicker": {"en": "Special investigation", "ar": "تحقيق خاص"},
@@ -2233,13 +2259,29 @@ SPECIALS = [
         "img": "/suha-arafat/media/suha-arafat-hillary-clinton-gaza-1998.jpg",
         "img_alt": {"en": "Suha Arafat accompanies Hillary Clinton in Gaza, 1998",
                     "ar": "سهى عرفات ترافق هيلاري كلينتون في غزة، ١٩٩٨"},
+        "ticker": {"en": "Special Investigation: The Widow and the Ledger",
+                   "ar": "تحقيق خاص: الأرملة والدفتر"},
+        "nav": {"en": "Special Report", "ar": "تحقيق خاص"},
     },
 ]
 
 
-def specials_band_html(lang):
-    bands = []
+def available_specials(lang, items=()):
+    """Specials whose targets exist in this build: static features always,
+    story-page specials only when their original is among the items."""
+    out = []
     for s in SPECIALS:
+        slug = s.get("requires_original")
+        if slug and not any(
+                it.get("link") == f"original:{slug}.{lang}" for it in items):
+            continue
+        out.append(s)
+    return out
+
+
+def specials_band_html(lang, items=()):
+    bands = []
+    for s in available_specials(lang, items):
         img_html = ""
         if s.get("img"):
             img_html = (f'<a class="sbimg" href="{esc(s["href"][lang])}" aria-hidden="true" tabindex="-1">'
@@ -2258,7 +2300,7 @@ def specials_band_html(lang):
 
 def render_page(lang, items, built_at):
     t = STR[lang]
-    specials_band = specials_band_html(lang)
+    specials_band = specials_band_html(lang, items)
     order = SECTION_ORDER[lang]
     by_score = sorted(items, key=lambda i: i["score"], reverse=True)  # editorial ranking
     by_latest = sorted(items, key=lambda i: (i["date"], i["score"]), reverse=True)
@@ -2333,20 +2375,16 @@ def render_page(lang, items, built_at):
     time_str = f"{d.hour:02d}:{d.minute:02d}"
 
     ticker_track = "".join(f'<a href="{href(i, P)}">{esc(i["title"])}</a>' for i in ticker_items)
-    # Prepend the standing special investigation so it's always visible in the ticker
-    if SPECIALS:
-        sp = SPECIALS[0]
-        sp_ticker_label = {"en": "Special Investigation: The Widow and the Ledger",
-                           "ar": "تحقيق خاص: الأرملة والدفتر"}
-        ticker_track = f'<a href="{esc(sp["href"][lang])}">{esc(sp_ticker_label[lang])}</a>' + ticker_track
+    # Prepend the standing specials so they're always visible in the ticker
+    for sp in reversed(available_specials(lang, items)):
+        ticker_track = f'<a href="{esc(sp["href"][lang])}">{esc(sp["ticker"][lang])}</a>' + ticker_track
 
     def visible(k):
         return len(sections[k]) >= (1 if k in FOCUS_SECTIONS else 2)
     nav_links = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in order if visible(k))
-    # Special investigation link in the nav bar (gold accent, always visible)
-    if SPECIALS:
-        sp = SPECIALS[0]
-        nav_links += f'<a class="special" href="{esc(sp["href"][lang])}">{esc(t["special_nav"])}</a>'
+    # Standing-special links in the nav bar (gold accent, always visible)
+    for sp in available_specials(lang, items):
+        nav_links += f'<a class="special" href="{esc(sp["href"][lang])}">{esc(sp["nav"][lang])}</a>'
 
     def research_featured(it):
         media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"{lede_fallback_attrs(it)}></a>'
