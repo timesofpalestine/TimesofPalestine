@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">The largest listed Palestinian companies by market value</title>
+  <desc id="d">Bar chart of the largest companies on the Palestine Exchange by market value in US dollars: Paltel about 970 million, PADICO 497 million, Arkaan 294 million, Ooredoo Palestine 264 million, Palestine Electric 170 million and Quds Bank 141 million, with English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="110" class="sans ivory" font-size="50" font-weight="800">Palestine's stock market, stacked</text>
+  <text x="90" y="158" class="sans muted" font-size="26">Largest listed companies by market value, US$ millions — Palestine Exchange data, early 2026</text>
+  <text x="1510" y="110" class="arabic ivory" font-size="40" font-weight="700" text-anchor="end">بورصة فلسطين بالأرقام</text>
+  <text x="1510" y="158" class="arabic muted" font-size="25" text-anchor="end">أكبر الشركات المدرجة بالقيمة السوقية، بملايين الدولارات</text>
+
+  <!-- bars: scale 1M$ = 1.05px, x0=420 -->
+  <g class="sans">
+    <text x="400" y="272" class="ivory" font-size="28" font-weight="700" text-anchor="end">Paltel</text>
+    <text x="400" y="300" class="arabic muted" font-size="22" text-anchor="end">الاتصالات الفلسطينية</text>
+    <rect x="420" y="248" width="1019" height="58" rx="6" fill="#286344"/>
+    <text x="1425" y="286" class="mono ivory" font-size="26" text-anchor="end">≈970</text>
+
+    <text x="400" y="366" class="ivory" font-size="28" font-weight="700" text-anchor="end">PADICO</text>
+    <text x="400" y="394" class="arabic muted" font-size="22" text-anchor="end">باديكو القابضة</text>
+    <rect x="420" y="342" width="522" height="58" rx="6" fill="#8a1f2d"/>
+    <text x="956" y="380" class="mono ivory" font-size="26">497</text>
+
+    <text x="400" y="460" class="ivory" font-size="28" font-weight="700" text-anchor="end">Arkaan</text>
+    <text x="400" y="488" class="arabic muted" font-size="22" text-anchor="end">أركان العقارية</text>
+    <rect x="420" y="436" width="309" height="58" rx="6" fill="#286344"/>
+    <text x="743" y="474" class="mono ivory" font-size="26">294</text>
+
+    <text x="400" y="554" class="ivory" font-size="28" font-weight="700" text-anchor="end">Ooredoo</text>
+    <text x="400" y="582" class="arabic muted" font-size="22" text-anchor="end">أوريدو فلسطين</text>
+    <rect x="420" y="530" width="277" height="58" rx="6" fill="#8a1f2d"/>
+    <text x="711" y="568" class="mono ivory" font-size="26">264</text>
+
+    <text x="400" y="648" class="ivory" font-size="28" font-weight="700" text-anchor="end">Palestine Electric</text>
+    <text x="400" y="676" class="arabic muted" font-size="22" text-anchor="end">كهرباء فلسطين</text>
+    <rect x="420" y="624" width="179" height="58" rx="6" fill="#286344"/>
+    <text x="613" y="662" class="mono ivory" font-size="26">170</text>
+
+    <text x="400" y="742" class="ivory" font-size="28" font-weight="700" text-anchor="end">Quds Bank</text>
+    <text x="400" y="770" class="arabic muted" font-size="22" text-anchor="end">بنك القدس</text>
+    <rect x="420" y="718" width="148" height="58" rx="6" fill="#8a1f2d"/>
+    <text x="582" y="756" class="mono ivory" font-size="26">141</text>
+  </g>
+
+  <text x="800" y="850" class="mono" fill="#59a97d" font-size="23" text-anchor="middle">47 listed companies · total market value above US$3 billion · Paltel value converted from Jordanian dinars</text>
+</svg>
