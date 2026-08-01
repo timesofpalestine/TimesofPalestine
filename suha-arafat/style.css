@@ -168,15 +168,6 @@ body[dir=rtl] .f5-b p{line-height:1.8}
 footer.foot{border-top:2px solid var(--ink);background:var(--card);padding:28px 0 44px;
 font-size:12.5px;color:var(--ink2);line-height:1.6}
 body[dir=rtl] footer.foot{line-height:1.85}
-nav.more-from{background:var(--black);color:#fff;padding:22px 0 28px;border-top:3px solid var(--red)}
-nav.more-from .wrap{max-width:860px;margin:0 auto;padding:0 20px}
-nav.more-from .more-label{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#888;margin:0 0 14px}
-nav.more-from strong{color:#c7a86b}
-nav.more-from ul{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-wrap:wrap;gap:10px 24px}
-nav.more-from ul li a{color:#d8d8e2;font-size:13.5px;font-weight:600;text-decoration:none}
-nav.more-from ul li a:hover{color:#c7a86b;text-decoration:underline}
-nav.more-from .more-home{display:inline-block;font-size:11px;color:#555;text-decoration:none;letter-spacing:.06em}
-nav.more-from .more-home:hover{color:#c7a86b}
 
 @media(max-width:860px){
  .f3-grid{grid-template-columns:1fr 1fr}
