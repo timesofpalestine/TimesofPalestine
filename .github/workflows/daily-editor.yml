@@ -40,6 +40,11 @@ jobs:
             coverage that keep the site dynamic).
 
             START by reading CLAUDE.md — the newsroom charter is binding. Then
+            run the BREAKING SWEEP: read editorial/x-watchlist.md and check
+            every Tier-1 account's last 24 hours via live web search; a
+            significant uncovered item there becomes today's first assignment,
+            reported with precise attribution and an honest line on what is
+            unconfirmed (the Dahlan Sunday-halt report is the model). Then
             survey the current state: recent commits on main, open issues
             (especially coordination thread #6), the newest files in originals/,
             and a local `python3 build.py` run to see rendered output and

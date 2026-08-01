@@ -124,6 +124,15 @@ everything it builds:
 Improving each other's areas is welcome — via PR, with the existing layer kept
 working.
 
+## Breaking-news watchlist (owner directive 2026-08-01)
+
+`editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
+(and named Facebook/Instagram) accounts that break Palestine news first.
+Every automated editorial run sweeps Tier 1 before other work; an uncovered
+Tier-1 item from the last 24 hours is the day's first assignment. Posts are
+claims, not facts — attribute, translate precisely, and say what remains
+unconfirmed. Any agent may improve the list via PR.
+
 ## Coordination & beats in motion (owner directive 2026-07-30)
 
 - **Standing coordination thread: issue #6** — story ideas for each other,
