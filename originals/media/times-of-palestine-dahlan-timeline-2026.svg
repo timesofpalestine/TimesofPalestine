@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Mohammad Dahlan: from Khan Younis to the Kushner channel</title>
+  <desc id="d">Timeline of Mohammad Dahlan's arc: born in Khan Younis camp 1961; founds the Fatah youth movement 1981; deported by Israel 1988; returns to lead Preventive Security 1994; Hamas takes Gaza 2007; expelled from Fatah into UAE exile 2011; adviser to Mohammed bin Zayed through the 2010s; runs UAE aid operations during the war; the ceasefire 2025; the disarmament deal and halt message 2026. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="110" class="sans ivory" font-size="46" font-weight="800">From the camp to the channel</text>
+  <text x="1510" y="110" class="arabic ivory" font-size="38" font-weight="700" text-anchor="end">من المخيم إلى القناة</text>
+
+  <!-- spine -->
+  <rect x="140" y="480" width="1320" height="6" fill="#3a3a42"/>
+
+  <g class="mono" font-size="26" fill="#c7a86b" text-anchor="middle" font-weight="700">
+    <text x="180" y="440">1961</text><text x="440" y="440">1994</text><text x="700" y="440">2007</text>
+    <text x="960" y="440">2011</text><text x="1220" y="440">2023</text><text x="1440" y="440">2026</text>
+  </g>
+  <g fill="#c7a86b">
+    <circle cx="180" cy="483" r="12"/><circle cx="440" cy="483" r="12"/><circle cx="700" cy="483" r="12"/>
+    <circle cx="960" cy="483" r="12"/><circle cx="1220" cy="483" r="12"/><circle cx="1440" cy="483" r="12"/>
+  </g>
+
+  <g class="sans" font-size="21" text-anchor="middle">
+    <text x="180" y="530" class="ivory">Born, Khan Younis camp</text>
+    <text x="180" y="558" class="arabic muted" font-size="20">مولده في مخيم خان يونس</text>
+    <text x="440" y="530" class="ivory">Preventive Security chief</text>
+    <text x="440" y="558" class="arabic muted" font-size="20">قائد الأمن الوقائي في غزة</text>
+    <text x="700" y="530" class="ivory">Hamas routs his forces</text>
+    <text x="700" y="558" class="arabic muted" font-size="20">حماس تحسم غزة وتطرد قواته</text>
+    <text x="960" y="530" class="ivory">Expelled — exile in UAE</text>
+    <text x="960" y="558" class="arabic muted" font-size="20">الطرد من فتح والمنفى الإماراتي</text>
+    <text x="1220" y="530" class="ivory">Runs UAE wartime aid</text>
+    <text x="1220" y="558" class="arabic muted" font-size="20">يدير مساعدات الإمارات في الحرب</text>
+    <text x="1440" y="530" class="ivory">The Kushner channel</text>
+    <text x="1440" y="558" class="arabic muted" font-size="20">قناة كوشنر ووثيقة البنود</text>
+  </g>
+
+  <g class="sans" font-size="20" text-anchor="middle">
+    <text x="310" y="380" class="muted">1981 — founds Fatah's Shabiba; Israeli prisons, deportation 1988</text>
+    <text x="310" y="408" class="arabic muted" font-size="19">1981: تأسيس «الشبيبة».. سجون إسرائيل ثم الإبعاد 1988</text>
+    <text x="1090" y="380" class="muted">2010s — adviser to Mohammed bin Zayed; Cairo, Belgrade, the Accords</text>
+    <text x="1090" y="408" class="arabic muted" font-size="19">العشرية الإماراتية: مستشار ابن زايد.. القاهرة وبلغراد والاتفاقات</text>
+  </g>
+
+  <g class="mono" font-size="22" fill="#59a97d" text-anchor="middle">
+    <text x="800" y="700">31 Jul 2026 — Hamas accepts the disarmament plan · 1 Aug — "the attacks stop tomorrow morning"</text>
+    <text x="800" y="738" class="arabic" font-size="22">31 يوليو 2026: حماس تقبل خطة السلاح · 1 أغسطس: «وقف الاعتداءات من صباح الغد»</text>
+  </g>
+</svg>
