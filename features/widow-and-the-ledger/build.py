@@ -347,6 +347,19 @@ def video(d, lang):
                esc(d["link"]), esc(d["watch"][lang])))
 
 
+DUOS = {1: (7, 4)}  # side-by-side pairs of PHOTOS entries
+
+
+def duo(lang, ids):
+    cells = []
+    for i in ids:
+        d = PHOTOS[lang][i]
+        cells.append('<div class="cell"><img src="media/%s" alt="%s" loading="lazy">'
+                     '<figcaption>%s</figcaption></div>'
+                     % (esc(d["file"]), esc(d["alt"]), esc(d["cap"])))
+    return '<figure class="photo duo">%s</figure>' % "".join(cells)
+
+
 def photo(d):
     return ('<figure class="photo"><img src="media/%s" alt="%s" loading="lazy">'
             '<figcaption>%s</figcaption></figure>'
@@ -499,6 +512,12 @@ body[dir=rtl] .f4-p li{line-height:1.75}
 .photo img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
 .photo figcaption{margin-top:10px;font-size:13px;line-height:1.55;color:var(--ink2)}
 
+/* photo pairs */
+.photo.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.photo.duo .cell img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.photo.duo figcaption{margin-top:10px;font-size:13px;line-height:1.55;color:var(--ink2)}
+@media(max-width:620px){.photo.duo{grid-template-columns:1fr}}
+
 /* video embeds */
 .vid{margin:44px auto;max-width:900px}
 .vid .vidwrap{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--rule)}
@@ -616,6 +635,10 @@ def build(lang):
         key = "VIDEOPLACEHOLDER%d" % i
         placeholders[key] = video(d, lang)
         body_md = body_md.replace("[[VIDEO%d]]" % i, key)
+    for i, ids in DUOS.items():
+        key = "DUOPLACEHOLDER%d" % i
+        placeholders[key] = duo(lang, ids)
+        body_md = body_md.replace("[[DUO%d]]" % i, key)
 
     html_body = markdown.markdown(body_md, extensions=["extra"])
     html_body = '<div class="col">' + html_body + "</div>"
