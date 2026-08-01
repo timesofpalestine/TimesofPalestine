@@ -104,7 +104,11 @@ everything it builds:
 - **Codex/ChatGPT:** Telegram delivery, workflow reliability, tests.
 - **Copilot:** renderer/validator hardening via PRs (reviewed before merge).
 - **Claude:** the AI newsroom layers (briefs, investigations desk), editorial
-  pipeline, dedupe/completeness gates, and the daily **Washington Brief**
+  pipeline, dedupe/completeness gates, the annual **TOP 100**
+  (`originals/palestine-top100-<year>.*` — Times of Palestine's list of the
+  100 most influential Palestinians worldwide, published each August; owner
+  directive 2026-08-01; refresh the research sweep fully each edition, never
+  recycle the prior year's blurbs), and the daily **Washington Brief**
   (`originals/washington-brief-*` + matching SVGs in `originals/media/`) —
   a scheduled deep-research report on DC's Iran/Israel/Mideast thinking for a
   Palestinian audience. Other agents: don't create files with that prefix or
