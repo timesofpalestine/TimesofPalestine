@@ -234,10 +234,33 @@ class RenderingTests(unittest.TestCase):
 
     def test_source_hosted_remote_image_retains_source_credit_by_default(self):
         record = item()
-        with mock.patch("build.is_public_http_url", return_value=True):
+        with mock.patch("build.is_public_http_url", return_value=True), \
+                mock.patch("build.remote_image_ok", return_value=True):
             build.attach_media(record, "https://images.example.com/photo.jpg")
         self.assertEqual(record["image"], "https://images.example.com/photo.jpg")
         self.assertEqual(record["media"]["credit"], "Example News")
+
+    def test_dead_remote_image_is_dropped_so_category_cover_takes_over(self):
+        record = item()
+        with mock.patch("build.is_public_http_url", return_value=True), \
+                mock.patch("build.remote_image_ok", return_value=False):
+            build.attach_media(record, "https://images.example.com/gone.jpg")
+        self.assertIsNone(record["image"])
+        self.assertIsNone(record["media"])
+
+    def test_remote_lede_gets_reader_side_fallback_attributes(self):
+        record = item()
+        record["image"] = "https://images.example.com/photo.jpg"
+        record["cat"] = "gaza"
+        attrs = build.lede_fallback_attrs(record)
+        self.assertIn('referrerpolicy="no-referrer"', attrs)
+        self.assertIn("times-of-palestine-cover-gaza.svg", attrs)
+        self.assertIn("onerror=", attrs)
+
+    def test_local_lede_needs_no_fallback_attributes(self):
+        record = item()
+        record["image"] = "/media/times-of-palestine-cover-gaza.svg"
+        self.assertEqual(build.lede_fallback_attrs(record), "")
 
     def test_non_public_remote_image_is_blocked_in_source_mode(self):
         record = item()
@@ -283,7 +306,8 @@ class RenderingTests(unittest.TestCase):
         with mock.patch(
             "build.discover_story_image",
             return_value="https://images.example.com/auto.jpg",
-        ), mock.patch("build.is_public_http_url", return_value=True):
+        ), mock.patch("build.is_public_http_url", return_value=True), \
+                mock.patch("build.remote_image_ok", return_value=True):
             build.backfill_remote_story_image(record)
         self.assertEqual(record["image"], "https://images.example.com/auto.jpg")
         self.assertEqual(record["media"]["credit"], "Example News")
