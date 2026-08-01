@@ -337,11 +337,14 @@ VIDEOS = {
 
 def video(d, lang):
     shape = "tall" if d.get("tall") else "wide"
+    title = d["cap"][lang]
     return ('<figure class="vid %s"><div class="vidwrap"><iframe src="%s" '
-            'loading="lazy" allowfullscreen frameborder="0" '
-            'referrerpolicy="no-referrer-when-downgrade"></iframe></div>'
+            'title="%s" loading="lazy" allowfullscreen frameborder="0" '
+            'referrerpolicy="strict-origin-when-cross-origin" '
+            'allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share; fullscreen"></iframe></div>'
             '<figcaption>%s · <a href="%s" target="_blank" rel="noopener nofollow">%s</a></figcaption></figure>'
-            % (shape, esc(d["embed"]), esc(d["cap"][lang]), esc(d["link"]), esc(d["watch"][lang])))
+            % (shape, esc(d["embed"]), esc(title), esc(d["cap"][lang]),
+               esc(d["link"]), esc(d["watch"][lang])))
 
 
 def photo(d):
@@ -498,9 +501,9 @@ body[dir=rtl] .f4-p li{line-height:1.75}
 
 /* video embeds */
 .vid{margin:44px auto;max-width:900px}
-.vid .vidwrap{background:var(--card);border:1px solid var(--rule)}
+.vid .vidwrap{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--rule)}
 .vid.wide .vidwrap{aspect-ratio:16/9}
-.vid.tall .vidwrap{max-width:420px;height:640px;margin-inline:auto}
+.vid.tall .vidwrap{max-width:min(420px,100%);aspect-ratio:9/16;margin-inline:auto}
 .vid iframe{width:100%;height:100%;display:block;border:0}
 .vid figcaption{margin-top:10px;font-size:13px;line-height:1.55;color:var(--ink2)}
 .vid figcaption a{color:var(--slate)}

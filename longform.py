@@ -50,14 +50,16 @@ def video_embed(caption, url):
                  f'src="https://www.youtube-nocookie.com/embed/{m.group(1)}" '
                  f'title="{_esc(caption) or "Video"}" loading="lazy" '
                  f'allowfullscreen frameborder="0" '
-                 f'allow="encrypted-media; picture-in-picture"></iframe></div>')
+                 f'referrerpolicy="strict-origin-when-cross-origin" '
+                 f'allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share; fullscreen"></iframe></div>')
     else:
         m = _TME_RX.match(url)
         if m:
             frame = (f'<div class="embed tme"><iframe '
                      f'src="https://t.me/{m.group(1)}/{m.group(2)}?embed=1" '
                      f'title="{_esc(caption) or "Video"}" loading="lazy" '
-                     f'frameborder="0"></iframe></div>')
+                     f'allowfullscreen frameborder="0" '
+                     f'referrerpolicy="strict-origin-when-cross-origin"></iframe></div>')
         elif _MP4_RX.match(url):
             frame = (f'<video controls preload="metadata" playsinline '
                      f'src="{_esc(url)}"></video>')
@@ -359,7 +361,7 @@ CSS = """
 .story figure.lf.video{margin:1.7rem 0}
 .story .embed{position:relative;width:100%;padding-top:56.25%;background:#0b0b0c;border-radius:var(--r);overflow:hidden}
 .story .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.story .embed.tme{padding-top:0;height:520px}
+.story .embed.tme{padding-top:0;height:clamp(360px,70vh,520px)}
 .story .embed.tme iframe{position:static;height:100%}
 .story figure.lf.video video{width:100%;display:block;background:#0b0b0c;border-radius:var(--r)}
 @media(prefers-color-scheme:dark){

@@ -147,9 +147,9 @@ body[dir=rtl] .f4-p li{line-height:1.75}
 
 /* video embeds */
 .vid{margin:44px auto;max-width:900px}
-.vid .vidwrap{background:var(--card);border:1px solid var(--rule)}
+.vid .vidwrap{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--rule)}
 .vid.wide .vidwrap{aspect-ratio:16/9}
-.vid.tall .vidwrap{max-width:420px;height:640px;margin-inline:auto}
+.vid.tall .vidwrap{max-width:min(420px,100%);aspect-ratio:9/16;margin-inline:auto}
 .vid iframe{width:100%;height:100%;display:block;border:0}
 .vid figcaption{margin-top:10px;font-size:13px;line-height:1.55;color:var(--ink2)}
 .vid figcaption a{color:var(--slate)}
