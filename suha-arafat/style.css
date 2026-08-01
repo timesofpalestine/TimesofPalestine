@@ -180,6 +180,13 @@ body[dir=rtl] .f5-b h4{line-height:1.55}
 .f5-b p{margin:0 0 10px;font-size:13.5px;line-height:1.55;color:var(--ink2)}
 body[dir=rtl] .f5-b p{line-height:1.8}
 
+/* share bar */
+.share{display:flex;gap:.6rem;flex-wrap:wrap;max-width:680px;margin:0 auto 2rem;padding-top:1.5rem}
+.share span{font-size:.72rem;font-weight:800;color:var(--ink2);text-transform:uppercase;align-self:center;letter-spacing:.08em}
+body[dir=rtl] .share span{letter-spacing:0;text-transform:none}
+.share a{border:1px solid var(--rule);padding:.35rem .8rem;border-radius:2px;font-size:.8rem;font-weight:700;text-decoration:none;color:var(--ink)}
+.share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
+
 footer.foot{border-top:2px solid var(--ink);background:var(--card);padding:28px 0 44px;
 font-size:12.5px;color:var(--ink2);line-height:1.6}
 body[dir=rtl] footer.foot{line-height:1.85}
