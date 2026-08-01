@@ -235,7 +235,9 @@ it to Telegram. No human machine involved. The contract:
    **Video (embeds only, never hosted):** `!video[caption](url)` on its own
    line. Whitelisted hosts ONLY: YouTube watch/shorts/youtu.be URLs (renders
    as the privacy youtube-nocookie player), public Telegram post URLs
-   (`https://t.me/<channel>/<id>`), or a direct https `.mp4`. Any other host
+   (`https://t.me/<channel>/<id>`), public Instagram reels/posts
+   (`https://www.instagram.com/reel/<id>/` — tracking params are stripped),
+   or a direct https `.mp4`. Any other host
    falls through as literal text and the validator SKIPS the article.
    Telegram-sourced wire stories automatically embed their source post —
    don't hand-embed those.

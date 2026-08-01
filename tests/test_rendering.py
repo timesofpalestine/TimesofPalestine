@@ -551,3 +551,27 @@ class RenderingTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class VideoEmbedTests(unittest.TestCase):
+    def test_instagram_reel_embeds_with_rebuilt_src(self):
+        html = longform.video_embed(
+            "Reel caption",
+            "https://www.instagram.com/reel/Dbg318clIQ8/?igsh=MXU3c2pzNzdnZTNmZQ==")
+        self.assertIn('src="https://www.instagram.com/reel/Dbg318clIQ8/embed/captioned/"', html)
+        self.assertIn('class="embed ig"', html)
+        self.assertNotIn("igsh", html)  # tracking params never reach the page
+
+    def test_youtube_telegram_and_mp4_still_embed(self):
+        self.assertIn("youtube-nocookie.com/embed/dQw4w9WgXcQ",
+                      longform.video_embed("", "https://youtu.be/dQw4w9WgXcQ"))
+        self.assertIn("t.me/example/42?embed=1",
+                      longform.video_embed("", "https://t.me/example/42"))
+        self.assertIn("<video",
+                      longform.video_embed("", "https://cdn.example.com/clip.mp4"))
+
+    def test_non_whitelisted_hosts_do_not_embed(self):
+        for url in ("https://vimeo.com/12345",
+                    "https://www.instagram.com/stories/user/123/",
+                    "https://evil.example.com/reel/abc/"):
+            self.assertIsNone(longform.video_embed("", url))
