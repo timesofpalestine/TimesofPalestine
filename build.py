@@ -47,7 +47,7 @@ GAZA = ZoneInfo("Asia/Gaza")
 # Link decoded from the official Signal share QR; signal-qr.png in the repo root
 # is the matching scannable code, copied into dist/ at build time.
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
-SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"; swg = lambda lang: '<script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script><script>(function(){const theme=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";(self.SWG_BASIC=self.SWG_BASIC||[]).push(basicSubscriptions=>{basicSubscriptions.init({type:"NewsArticle",isPartOfType:["Product"],isPartOfProductId:"CAowqpHhCw:openaccess",clientOptions:{theme:theme,lang:"SWGLANG"}});});})();</script>'.replace("SWGLANG", lang)  # tips go to the bot, not the channel; swg = Subscribe with Google, the site's only third-party script
+SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"  # tips go to the bot, not the channel. Subscribe-with-Google removed 2026-08-02 (owner: no email pop-up on the site).
 BASE_URL = "https://timesofpalestine.com"
 
 TOP_SOURCE = {"en": "Times of Palestine", "ar": "تايمز أوف فلسطين"}
@@ -2548,7 +2548,7 @@ def render_page(lang, items, built_at):
 <meta property="og:url" content="{BASE_URL}/{lang}/">
 <meta property="og:image" content="{BASE_URL}/og-banner.png"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"{t['site_name']}","url":"{BASE_URL}/{lang}/","sameAs":["{BASE_URL}/en/","{BASE_URL}/ar/"]}}</script>
-<link href="/assets/site.css" rel="stylesheet">{swg(lang)}
+<link href="/assets/site.css" rel="stylesheet">
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="topbar"><div class="wrap">
@@ -2758,7 +2758,7 @@ def render_story(it, lang, related, rail, built_at):
 {og_image}
 <meta name="twitter:card" content="{'summary_large_image' if it['image'] else 'summary'}">
 <script type="application/ld+json">{jsonld}</script>
-<link href="/assets/site.css" rel="stylesheet">{swg(lang)}
+<link href="/assets/site.css" rel="stylesheet">
 </head>
 <body>
 <div class="backbar"><a href="../">{t['back_home']}</a><a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
