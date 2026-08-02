@@ -570,6 +570,20 @@ class VideoEmbedTests(unittest.TestCase):
         self.assertIn("<video",
                       longform.video_embed("", "https://cdn.example.com/clip.mp4"))
 
+    def test_self_hosted_mp4_video_is_copied_into_the_build(self):
+        # A !video directive pointing at our own /media/ path must ship the
+        # file with the build, or the embed 404s on the live site.
+        record = item()
+        record["brief"] = (
+            "A report.\n\n"
+            "!video[Inside the school](https://timesofpalestine.com/media/haya-washington-life-school-2026.mp4)"
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            longform.copy_media(directory, [record])
+            self.assertTrue(
+                (Path(directory) / "media" /
+                 "haya-washington-life-school-2026.mp4").is_file())
+
     def test_non_whitelisted_hosts_do_not_embed(self):
         for url in ("https://vimeo.com/12345",
                     "https://www.instagram.com/stories/user/123/",

@@ -45,6 +45,11 @@ _MP4_RX = re.compile(r"^https://[\w.-]+/[\w./%-]+\.mp4$")
 _IG_RX = re.compile(
     r"^https://(?:www\.)?instagram\.com/(reel|p)/([A-Za-z0-9_-]{5,20})/?"
     r"(?:\?[^\s)]*)?$")
+# A !video directive that points at this site's own /media/ path — the one
+# case where the referenced file must be copied into the build output.
+_OWN_MP4_RX = re.compile(
+    r"^!video\[[^\]]*\]"
+    r"\(https://(?:www\.)?timesofpalestine\.com(/media/[\w.-]+\.mp4)\)$")
 
 
 def video_embed(caption, url):
@@ -320,6 +325,11 @@ def copy_media(dist, stories):
             match = IMG_RX.match(line.strip())
             if match and not match.group(2).startswith(("http://", "https://", "/")):
                 needed.add(Path(match.group(2)).name)
+            # Self-hosted video: a !video directive pointing at our own /media/
+            # path is served from this build, so the file must ship with it.
+            match = _OWN_MP4_RX.match(line.strip())
+            if match:
+                needed.add(Path(match.group(1)).name)
     dest = Path(dist) / "media"
     if dest.exists():
         shutil.rmtree(dest)
