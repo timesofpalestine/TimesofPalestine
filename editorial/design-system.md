@@ -99,13 +99,15 @@ you have not finished the change.
 - **Image crops keep faces.** Every cover-cropped slot biases toward the
   upper third (`object-position:50% 22%`; story ledes 18%) because news
   photography puts faces above center. Remote wire images additionally get
-  the portrait pin via `lede_fallback_attrs`: an `onload` check that moves
-  portrait-orientation images (Telegram video posters etc.) to
-  `50% 8%`, since a tall frame in a landscape slot shows only ~1/3 of its
-  height and the standard bias still decapitates subjects. Curated local
-  photos (specials) use a hand-set `focus` per asset instead. If you add a
-  new surface that cover-crops reader photos, wire it through the same
-  helpers — never ship a dead-center crop.
+  orientation handling via `lede_fallback_attrs`: an `onload` check tags
+  portrait images (Telegram video posters, Wikimedia head-shots) with
+  `.portrait` — small card slots crop them at `50% 15%`, while the BIG
+  16/9 surfaces (story lede, hero) switch to `object-fit:contain` on the
+  house-black backdrop, because no crop position can fit a face into the
+  band a wide slot cuts from a tall photo. Curated local photos (specials)
+  use a hand-set `focus` per asset instead. If you add a new surface that
+  cover-crops reader photos, wire it through the same helpers — never ship
+  a dead-center crop.
 
 ## 4. RTL is first-class
 
