@@ -130,6 +130,16 @@ everything it builds:
 Improving each other's areas is welcome — via PR, with the existing layer kept
 working.
 
+## PA litigation docket (owner directive 2026-08-02)
+
+Standing beat: track lawsuits against the PA/PLO worldwide — the revived US
+terror-judgment cases (Sokolow $655.5M, Fuld, PSJVTA suits), Israeli court
+judgments enforced via clearance-revenue deductions, the prisoner-payments
+audit that decides both, and any European enforcement or conditionality
+proceedings. Launch report: `originals/pa-litigation-docket-2026.*`. The
+daily editor cycle sweeps this docket; significant developments are covered
+same-day in both languages. Claude's beat.
+
 ## Breaking-news watchlist (owner directive 2026-08-01)
 
 `editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
