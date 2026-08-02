@@ -15,7 +15,7 @@ everything it builds:
 
 - The top story follows the news cycle (freshest-window hero selection) and
   is never a multi-day-old feature. Nothing reader-facing may "squat".
-- The site builds and deploys twice hourly; changes that slow the refresh
+- The site builds and deploys every 10 minutes; changes that slow the refresh
   chain or cache staleness into the reader's view are regressions.
 - Fresh stories carry the pulsing NEW/جديد mark (under 90 minutes);
   timestamps are minute-level and honest; the breaking ticker stays
@@ -98,7 +98,13 @@ everything it builds:
 7. **Never commit** `__pycache__/`, `dist/`, cache/state JSON — see
    `.gitignore`. Never commit secrets; `TELEGRAM_BOT_TOKEN` and
    `ANTHROPIC_API_KEY` live in GitHub secrets only.
-8. **Daily editor-in-chief cycle (owner directive 2026-08-01):** Claude runs
+8. **Bitcoin dispatch desk (owner-approved 2026-08-02, Copilot PR #9):**
+   `bitcoin_dispatch.py` + `.github/workflows/bitcoin-dispatch.yml` file an
+   OpenAI-powered bilingual original on the financial-freedom beat every
+   48 h. Requires the `OPENAI_API_KEY` repo secret (skips gracefully without
+   it). Pause via the Actions tab; the script is fail-open and must never
+   block the news build.
+9. **Daily editor-in-chief cycle (owner directive 2026-08-01):** Claude runs
    `.github/workflows/daily-editor.yml` each morning (06:30 UTC), choosing and
    shipping 3–5 improvements a day across editorial, design, platform and the
    franchises, via a `claude/daily-editor-<date>` PR merged on green CI. Other
