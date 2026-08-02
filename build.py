@@ -2317,7 +2317,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   footer .cols{grid-template-columns:1fr}
 }
 .franchise{margin-block:1.2rem}
-.fr-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.fr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
 .fr-card{display:flex;flex-direction:column;background:var(--black);color:#f2eee8;border-radius:var(--r);overflow:hidden;border:1px solid rgba(199,168,107,.4);transition:transform .25s,box-shadow .25s}
 .fr-card:hover{transform:translateY(-2px);box-shadow:var(--sh-h)}
 .fr-card img{width:100%;aspect-ratio:16/6;object-fit:cover;opacity:.85}
@@ -2328,10 +2328,8 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 [lang=ar] .fr-card .ttl{line-height:1.55;font-weight:700}
 .fr-card .go{display:block;color:#c7a86b;font-size:.78rem;font-weight:700;margin-top:.5rem}
 @media(max-width:960px){.fr-grid{grid-template-columns:1fr}.fr-card img{aspect-ratio:16/4}}
-.votestrip{background:#10131a;border-block-end:3px solid #3d4f6b;text-align:center}
-.votestrip a{display:block;color:#dfe6f2;font-size:.82rem;font-weight:800;letter-spacing:.08em;padding:.45rem .8rem;text-transform:uppercase}
-[lang=ar] .votestrip a{letter-spacing:0;font-size:.92rem;text-transform:none}
-.votestrip a:hover{color:#fff;background:#151a24}
+.fr-card.vote{background:#10131a;border-color:rgba(101,130,175,.55)}
+.fr-card.vote .kick,.fr-card.vote .go{color:#8fa8cf}
 .latest .orig{display:inline-block;background:var(--green);color:#fff;font-size:.56rem;font-weight:800;letter-spacing:.08em;padding:.1rem .35rem;border-radius:2px;margin-inline-start:.4rem;vertical-align:middle}
 @media(max-width:560px){
   .topbar .wrap{gap:.45rem .8rem}
@@ -2544,11 +2542,12 @@ def available_specials(lang, items=()):
     return out
 
 
-def specials_band_html(lang, items=()):
+def specials_band_html(lang, items=(), extra=""):
     """The standing franchises as ONE compact row — a card per special —
     instead of stacked full-height bands (owner-approved compression,
-    2026-08-02). The row sits under the hero; news keeps the page."""
-    cards = []
+    2026-08-02). The row sits under the hero; news keeps the page.
+    `extra` is a pre-rendered card prepended to the row (the election box)."""
+    cards = [extra] if extra else []
     for s in available_specials(lang, items):
         img_html = ""
         if s.get("img"):
@@ -2566,7 +2565,6 @@ def specials_band_html(lang, items=()):
 
 def render_page(lang, items, built_at):
     t = STR[lang]
-    specials_band = specials_band_html(lang, items)
     order = SECTION_ORDER[lang]
     by_score = sorted(items, key=lambda i: i["score"], reverse=True)  # editorial ranking
     by_latest = sorted(items, key=lambda i: (i["date"], i["score"]), reverse=True)
@@ -2641,16 +2639,28 @@ def render_page(lang, items, built_at):
     time_str = f"{d.hour:02d}:{d.minute:02d}"
 
     ticker_track = "".join(f'<a href="{href(i, P)}">{esc(i["title"])}</a>' for i in ticker_items)
-    # Israel-votes countdown strip (owner beat): alive until 27 October 2026.
-    vote_strip = ""
+    # Israel-votes election box: a card in the franchise row, not a banner —
+    # important, but not the top of the paper (owner decision 2026-08-02).
+    # Alive until 27 October 2026.
+    vote_card = ""
     _eday = datetime(2026, 10, 27, tzinfo=timezone.utc)
     if now < _eday and any(
             it.get("link") == f"original:israel-election-2026-tracker.{lang}" for it in items):
         _days = (_eday - now).days
         _vhref = _original_story_href("israel-election-2026-tracker")[lang]
-        _vtxt = (f"إسرائيل تنتخب · بعد {_days} يوماً · تابع مرصد الانتخابات ←" if lang == "ar"
-                 else f"ISRAEL VOTES · {_days} DAYS · Follow the coalition tracker →")
-        vote_strip = f'<div class="votestrip"><a href="{esc(_vhref)}">🗳 {_vtxt}</a></div>'
+        if lang == "ar":
+            _vkick = f"🗳 إسرائيل تنتخب · بعد {_days} يوماً"
+            _vttl = "مرصد الانتخابات: من يتقدّم، ومن يتراجع، وأي ائتلاف يتشكّل"
+            _vcta = "تابع المرصد ←"
+        else:
+            _vkick = f"🗳 ISRAEL VOTES · {_days} DAYS"
+            _vttl = "The coalition tracker: who leads, who gains, who falls"
+            _vcta = "Follow the tracker →"
+        vote_card = (f'<a class="fr-card vote" href="{esc(_vhref)}">'
+                     f'<span class="body"><span class="kick">{esc(_vkick)}</span>'
+                     f'<span class="ttl">{esc(_vttl)}</span>'
+                     f'<span class="go">{esc(_vcta)}</span></span></a>')
+    specials_band = specials_band_html(lang, items, extra=vote_card)
     # Standing specials ride at the END of the loop — breaking news leads.
     for sp in available_specials(lang, items):
         ticker_track += f'<a href="{esc(sp["href"][lang])}">{esc(sp["ticker"][lang])}</a>'
@@ -2765,7 +2775,7 @@ def render_page(lang, items, built_at):
   <a class="lang" href="{t['switch_href']}">{t['switch_lang']}</a>
 </div></div>
 
-<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>{vote_strip}
+<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
 
 <header class="masthead"><div class="wrap">
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
