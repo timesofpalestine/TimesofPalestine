@@ -55,6 +55,13 @@
       "filterPalestine": true
     },
     {
+      "id": "almonitor",
+      "name": "Al-Monitor",
+      "url": "https://www.al-monitor.com/rss",
+      "site": "https://www.al-monitor.com",
+      "filterPalestine": true
+    },
+    {
       "id": "972mag",
       "name": "+972 Magazine",
       "type": "gnews",
