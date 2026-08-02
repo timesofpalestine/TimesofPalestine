@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">The docket against the Palestinian Authority</title>
+  <desc id="d">Illustration of the lawsuits facing the Palestinian Authority: scales of justice with a 655-million-dollar weight pressing down one pan against a small treasury on the other, with English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".4"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- scales -->
+  <g filter="url(#sh)">
+    <rect x="770" y="250" width="16" height="360" fill="#3a3a42"/>
+    <rect x="640" y="610" width="280" height="20" rx="8" fill="#3a3a42"/>
+    <rect x="530" y="290" width="500" height="14" rx="7" fill="#c7a86b" transform="rotate(9 780 297)"/>
+    <circle cx="778" cy="250" r="18" fill="#c7a86b"/>
+    <!-- heavy pan: the judgment -->
+    <g>
+      <path d="M560 340 L610 340" stroke="#c7a86b" stroke-width="4"/>
+      <path d="M540 430 Q 585 480 630 430" fill="#16161a" stroke="#c7a86b" stroke-width="4"/>
+      <path d="M560 342 L548 430 M610 342 L622 430" stroke="#c7a86b" stroke-width="3"/>
+      <rect x="548" y="360" width="76" height="56" rx="6" fill="#8a1f2d"/>
+      <text x="586" y="396" class="mono ivory" font-size="22" font-weight="700" text-anchor="middle">$655M</text>
+    </g>
+    <!-- light pan: the treasury -->
+    <g>
+      <path d="M950 258 L1000 258" stroke="#c7a86b" stroke-width="4"/>
+      <path d="M930 348 Q 975 398 1020 348" fill="#16161a" stroke="#c7a86b" stroke-width="4"/>
+      <path d="M950 260 L938 348 M1000 260 L1012 348" stroke="#c7a86b" stroke-width="3"/>
+      <g fill="#286344"><circle cx="962" cy="330" r="9"/><circle cx="984" cy="326" r="9"/><circle cx="974" cy="342" r="9"/></g>
+    </g>
+  </g>
+
+  <!-- docket stamps -->
+  <g class="mono" font-size="22">
+    <text x="1180" y="380" fill="#c96a6a">SCOTUS 9–0 · Jun 2025</text>
+    <text x="1180" y="420" fill="#c96a6a">2nd Cir. reinstates · Mar 2026</text>
+    <text x="1180" y="460" fill="#c7a86b">Emergency stay filed · Jul 30</text>
+    <text x="1180" y="500" class="muted">Israeli courts · clearance deductions</text>
+    <text x="1180" y="540" class="muted">Europe · aid audits</text>
+  </g>
+
+  <text x="90" y="120" class="sans ivory" font-size="52" font-weight="800">The docket against the Authority</text>
+  <text x="90" y="170" class="sans muted" font-size="27">Terror judgments, revived by the Supreme Court, meet a treasury already running on unpaid wages</text>
+  <text x="1510" y="120" class="arabic ivory" font-size="44" font-weight="700" text-anchor="end">لائحة الدعاوى ضد السلطة</text>
+  <text x="1510" y="170" class="arabic muted" font-size="25" text-anchor="end">أحكامٌ أحيتها المحكمة العليا تقابل خزينةً تعيش على رواتب غير مدفوعة</text>
+  <text x="800" y="850" class="mono" fill="#59a97d" font-size="23" text-anchor="middle">Sokolow · Fuld · PSJVTA · the payments reform on trial — the standing docket tracker</text>
+</svg>
