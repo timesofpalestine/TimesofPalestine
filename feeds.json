@@ -62,6 +62,16 @@
       "filterPalestine": true
     },
     {
+      "id": "citizenlab",
+      "name": "Citizen Lab",
+      "url": "https://citizenlab.ca/feed/",
+      "site": "https://citizenlab.ca",
+      "category": "accountability",
+      "filterPalestine": true,
+      "maxAgeHours": 720,
+      "cap": 3
+    },
+    {
       "id": "972mag",
       "name": "+972 Magazine",
       "type": "gnews",

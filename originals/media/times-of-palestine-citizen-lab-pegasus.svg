@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">The lab that catches Pegasus</title>
+  <desc id="d">Illustration of Citizen Lab's spyware hunting: a phone whose screen hides a winged spyware glyph, caught in the beam of a magnifying lens, with English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".4"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- the phone -->
+  <g filter="url(#sh)">
+    <rect x="560" y="240" width="250" height="460" rx="30" fill="#0b0b0c" stroke="#3a3a42" stroke-width="3"/>
+    <rect x="582" y="290" width="206" height="370" rx="10" fill="#16161a"/>
+    <circle cx="685" cy="268" r="6" fill="#3a3a42"/>
+    <!-- innocuous message rows -->
+    <rect x="600" y="312" width="130" height="30" rx="10" fill="#26262c"/>
+    <rect x="640" y="354" width="130" height="30" rx="10" fill="#286344" opacity=".8"/>
+    <rect x="600" y="396" width="110" height="30" rx="10" fill="#26262c"/>
+    <!-- the hidden wing glyph, faint -->
+    <g opacity=".5">
+      <path d="M640 520 Q 700 460 760 520 Q 730 505 700 522 Q 670 505 640 520 Z" fill="#c96a6a"/>
+      <circle cx="700" cy="545" r="16" fill="#c96a6a"/>
+    </g>
+  </g>
+
+  <!-- the lens catching it -->
+  <g filter="url(#sh)">
+    <circle cx="880" cy="560" r="150" fill="none" stroke="#c7a86b" stroke-width="10"/>
+    <circle cx="880" cy="560" r="150" fill="rgba(199,168,107,.07)"/>
+    <rect x="988" y="668" width="150" height="26" rx="13" fill="#c7a86b" transform="rotate(45 988 668)"/>
+    <!-- magnified wing, exposed in red -->
+    <g>
+      <path d="M810 555 Q 880 480 950 555 Q 915 537 880 557 Q 845 537 810 555 Z" fill="#c96a6a"/>
+      <circle cx="880" cy="588" r="20" fill="#c96a6a"/>
+      <path d="M800 630 L960 490" stroke="#c96a6a" stroke-width="9" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <text x="90" y="120" class="sans ivory" font-size="52" font-weight="800">The lab that catches Pegasus</text>
+  <text x="90" y="170" class="sans muted" font-size="27">How Citizen Lab's forensics turned mercenary spyware into a losing business</text>
+  <text x="1510" y="120" class="arabic ivory" font-size="44" font-weight="700" text-anchor="end">المختبر الذي يصطاد «بيغاسوس»</text>
+  <text x="1510" y="170" class="arabic muted" font-size="25" text-anchor="end">كيف حوّل التحليل الجنائي الرقمي تجسسَ المرتزقة إلى تجارة خاسرة</text>
+  <text x="800" y="850" class="mono" fill="#59a97d" font-size="23" text-anchor="middle">$167M verdict · permanent injunction · fresh violations caught, Feb–Apr 2026</text>
+</svg>
