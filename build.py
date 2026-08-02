@@ -2328,8 +2328,18 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 [lang=ar] .fr-card .ttl{line-height:1.55;font-weight:700}
 .fr-card .go{display:block;color:#c7a86b;font-size:.78rem;font-weight:700;margin-top:.5rem}
 @media(max-width:960px){.fr-grid{grid-template-columns:1fr}.fr-card img{aspect-ratio:16/4}}
-.fr-card.vote{background:#10131a;border-color:rgba(101,130,175,.55)}
-.fr-card.vote .kick,.fr-card.vote .go{color:#8fa8cf}
+.fr-card.vote{position:relative;isolation:isolate;background:linear-gradient(145deg,#0d121a,#141c28);border-color:rgba(101,130,175,.7)}
+.fr-card.vote::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 110% at 90% 0%,rgba(143,168,207,.24),transparent 48%);pointer-events:none;z-index:0}
+.fr-card.vote:hover{border-color:rgba(143,168,207,.95);box-shadow:0 10px 30px rgba(20,35,60,.55)}
+.fr-card.vote img{aspect-ratio:16/7;opacity:1}
+.fr-card.vote .body{position:relative;z-index:1;background:linear-gradient(180deg,rgba(10,13,20,.78),rgba(10,13,20,.95));border-top:1px solid rgba(143,168,207,.35)}
+.fr-card.vote .kick,.fr-card.vote .go{color:#b6c6e3}
+.fr-card.vote .ttl{font-size:1.03rem}
+.fr-card.vote .days{position:absolute;top:.55rem;inset-inline-end:.6rem;z-index:2;display:flex;align-items:baseline;gap:.3rem;background:rgba(8,11,17,.82);border:1px solid rgba(199,168,107,.55);border-radius:6px;padding:.28rem .55rem;backdrop-filter:blur(3px)}
+.fr-card.vote .days::before{content:"";width:7px;height:7px;border-radius:50%;background:#c7a86b;align-self:center;animation:newpulse 1.6s infinite}
+.fr-card.vote .days b{font-family:ui-monospace,Menlo,monospace;font-size:1.3rem;font-weight:700;color:#f2eee8;line-height:1}
+.fr-card.vote .days i{font-style:normal;font-size:.6rem;font-weight:800;letter-spacing:.12em;color:#c7a86b}
+[lang=ar] .fr-card.vote .days i{letter-spacing:0;font-size:.74rem}
 .latest .orig{display:inline-block;background:var(--green);color:#fff;font-size:.56rem;font-weight:800;letter-spacing:.08em;padding:.1rem .35rem;border-radius:2px;margin-inline-start:.4rem;vertical-align:middle}
 @media(max-width:560px){
   .topbar .wrap{gap:.45rem .8rem}
@@ -2649,14 +2659,20 @@ def render_page(lang, items, built_at):
         _days = (_eday - now).days
         _vhref = _original_story_href("israel-election-2026-tracker")[lang]
         if lang == "ar":
-            _vkick = f"🗳 إسرائيل تنتخب · بعد {_days} يوماً"
+            _vkick = "🗳 إسرائيل تنتخب · ٢٧ أكتوبر"
             _vttl = "مرصد الانتخابات: من يتقدّم، ومن يتراجع، وأي ائتلاف يتشكّل"
             _vcta = "تابع المرصد ←"
+            _vdays = f"<b>{_days}</b><i>يوماً</i>"
+            _valt = "خريطة مقاعد الكنيست بحسب الكتل: لا كتلة تبلغ 61 مقعداً من دون الأحزاب العربية"
         else:
-            _vkick = f"🗳 ISRAEL VOTES · {_days} DAYS"
+            _vkick = "🗳 ISRAEL VOTES · 27 OCT"
             _vttl = "The coalition tracker: who leads, who gains, who falls"
             _vcta = "Follow the tracker →"
+            _vdays = f"<b>{_days}</b><i>DAYS</i>"
+            _valt = "Knesset seat map by bloc: neither side reaches the 61-seat majority without the Arab parties"
         vote_card = (f'<a class="fr-card vote" href="{esc(_vhref)}">'
+                     f'<span class="days">{_vdays}</span>'
+                     f'<img src="/media/times-of-palestine-israel-votes-card.svg" alt="{esc(_valt)}" loading="lazy">'
                      f'<span class="body"><span class="kick">{esc(_vkick)}</span>'
                      f'<span class="ttl">{esc(_vttl)}</span>'
                      f'<span class="go">{esc(_vcta)}</span></span></a>')
@@ -3279,6 +3295,13 @@ def main():
     __import__("seo_extras").write_extras(
         dist, (("en", en_items), ("ar", ar_items)), built_at, BASE_URL, HEALTH)
     __import__("longform").copy_media(dist, en_items + ar_items)
+    # Front-page furniture referenced from index cards (not from any story
+    # file) ships explicitly — copy_media only walks story-referenced media.
+    for _furn in ("times-of-palestine-israel-votes-card.svg",):
+        _ff = ROOT / "originals" / "media" / _furn
+        if _ff.is_file():
+            (dist / "media").mkdir(parents=True, exist_ok=True)
+            (dist / "media" / _furn).write_bytes(_ff.read_bytes())
     (dist / "index.html").write_text(REDIRECT_HTML, encoding="utf-8")
     (dist / ".nojekyll").write_text("")
     cname = ROOT / "CNAME"  # optional custom domain (e.g. timesofpalestine.com)
