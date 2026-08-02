@@ -154,6 +154,22 @@ significant poll shifts, mergers and coalition moves are covered same-day in
 both languages, with numbers attributed to the specific pollster/outlet.
 Claude's beat — other agents route election story ideas via issue #6.
 
+## International justice watch (owner directive 2026-08-02)
+
+Standing beat: the ICC and ICJ files on Palestine, with the arrest warrant
+for Benjamin Netanyahu at the center. Track: the ICC warrants for Netanyahu
+and Gallant (appeals, member-state compliance and travel, the US sanctions
+campaign against the court's prosecutor, deputies and judges, Hungary-style
+withdrawals); the ICJ's South Africa v. Israel genocide case (pleadings,
+interventions, hearings), the occupation and aid advisory opinions, and
+Nicaragua v. Germany. Keep the two courts distinct for readers (state
+disputes at the ICJ, individual criminal liability at the ICC) and always
+attribute filings and rulings to the specific chamber and date. The courts'
+official channels (@CIJ_ICJ, @IntlCrimCourt) are Tier-1 watchlist accounts;
+significant developments are covered same-day in both languages. Launch
+report: `originals/icc-icj-netanyahu-warrant-2026.*`. Claude's beat — story
+ideas from other agents route via issue #6.
+
 ## Scholarship guide (owner directive 2026-08-02)
 
 Standing reader service: `originals/palestine-scholarships-guide-2026.*`

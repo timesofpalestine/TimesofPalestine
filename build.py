@@ -2192,6 +2192,11 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .card:hover{box-shadow:var(--sh-h);transform:translateY(-2px)}
 .card>a:first-child{display:block;overflow:hidden}
 .card img{aspect-ratio:16/10;object-fit:cover;object-position:50% 22%;width:100%;background:#e8e6df;transition:transform .45s ease}
+/* Portrait wire images (tagged onload): cards keep a face-friendly upper
+   crop; the big 16/9 surfaces letterbox the frame whole — no crop can fit
+   a face into the band a wide slot cuts from a tall photo. */
+.card img.portrait,.rowcard img.portrait,.sub-thumb img.portrait,.fr-card img.portrait{object-position:50% 15%}
+.hero-imgwrap>a>img.portrait,.story img.lede.portrait{object-fit:contain;background:#101013}
 .card:hover img{transform:scale(1.04)}
 .card .ph{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
 .card .ph svg{width:44px;height:44px;opacity:.9}
@@ -2484,10 +2489,12 @@ def lede_fallback_attrs(it):
     frame. Local /media/ assets ship with the site and need neither.
 
     Wire images also arrive with unpredictable framing — portrait video
-    posters (Telegram) lose ~2/3 of their height in a landscape card slot,
-    and the default upper-third bias still decapitates subjects whose faces
-    sit at the very top of the frame. onload pins portrait images near the
-    top so faces survive every slot; landscape images keep the CSS bias."""
+    posters and Wikimedia head-shots lose most of their height in a
+    landscape slot, and no crop position can fit a face into a band that
+    small on the big surfaces. onload tags portrait images with a class:
+    small card slots keep a face-friendly upper crop, while the story lede
+    and hero letterbox the portrait whole on the house-black backdrop
+    (owner report 2026-08-03). Landscape images keep the CSS bias."""
     if not (it.get("image") or "").startswith("http"):
         return ""
     cover = f"times-of-palestine-cover-{it.get('cat', 'news')}.svg"
@@ -2495,7 +2502,7 @@ def lede_fallback_attrs(it):
         cover = "times-of-palestine-cover-news.svg"
     return (' referrerpolicy="no-referrer"'
             " onload=\"if(this.naturalHeight>this.naturalWidth)"
-            "this.style.objectPosition='50% 8%'\""
+            "this.classList.add('portrait')\""
             f" onerror=\"this.onerror=null;this.src='/media/{cover}'\"")
 
 def card_media(it, pfx):

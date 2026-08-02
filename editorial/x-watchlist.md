@@ -31,6 +31,8 @@ Rules of use:
 | @UNRWA | UNRWA | Aid corridors, shelters, famine indicators |
 | @WAFANewsEnglish | WAFA (official PA agency) | PA statements and presidency readouts |
 | @Palestine_UN | Palestine's UN mission | Riyad Mansour, Security Council moves |
+| @CIJ_ICJ | International Court of Justice (official) | Owner-flagged 2026-08-02: orders, hearings and advisory-opinion steps in South Africa v. Israel and the occupation dockets — sweep every run |
+| @IntlCrimCourt | International Criminal Court (official) | Owner-flagged 2026-08-02: every move on the Netanyahu/Gallant arrest warrants — appeals, state compliance, sanctions on the court — is same-day coverage |
 | @hzomlot | Husam Zomlot | London embassy; recognition diplomacy |
 | Mohammad Dahlan — Facebook (verified page) | Exiled Fatah leader | Kushner channel; Gaza governance file |
 

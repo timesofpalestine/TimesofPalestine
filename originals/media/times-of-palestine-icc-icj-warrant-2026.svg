@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">The two courts and the warrant</title>
+  <desc id="d">A status board of the Hague files on Palestine as of August 2026: the International Criminal Court's arrest warrants for Netanyahu and Gallant with appeals rejected and eleven court officials under US sanctions, and the International Court of Justice's genocide case and advisory opinions moving toward hearings. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}.gold{fill:#c7a86b}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="70" y="78" class="sans ivory" font-size="42" font-weight="800">THE TWO COURTS AND THE WARRANT</text>
+  <text x="1530" y="78" class="arabic ivory" font-size="40" font-weight="700" text-anchor="end">محكمتان ومذكرة توقيف</text>
+  <text x="70" y="118" class="sans muted" font-size="23">The Hague's Palestine files, August 2026 · لاهاي وملفات فلسطين</text>
+
+  <!-- column divider -->
+  <rect x="797" y="150" width="3" height="640" fill="#33342f"/>
+
+  <!-- ICC column -->
+  <text x="70" y="196" class="sans gold" font-size="30" font-weight="800">ICC · CRIMINAL</text>
+  <text x="740" y="196" class="arabic muted" font-size="24" text-anchor="end">الجنائية الدولية: الأفراد</text>
+  <g class="mono gold" font-size="24" font-weight="700">
+    <text x="70" y="258">21.11.2024</text>
+    <text x="70" y="356">2025</text>
+    <text x="70" y="454">2025–26</text>
+    <text x="70" y="552">07.2026</text>
+  </g>
+  <g class="sans ivory" font-size="23">
+    <text x="70" y="290">Arrest warrants: Netanyahu and Gallant —</text>
+    <text x="70" y="318">starvation as a method of warfare; murder; persecution</text>
+    <text x="70" y="388">Israel's challenges and appeals rejected;</text>
+    <text x="70" y="416">jurisdiction covers Gaza and the West Bank</text>
+    <text x="70" y="486">Washington sanctions 11 court officials —</text>
+    <text x="70" y="514">the prosecutor, both deputies, eight judges</text>
+    <text x="70" y="584">Trump rules out an arrest; the warrant stands —</text>
+    <text x="70" y="612">~124 member states remain obliged to execute it</text>
+  </g>
+
+  <!-- ICJ column -->
+  <text x="860" y="196" class="sans gold" font-size="30" font-weight="800">ICJ · STATES</text>
+  <text x="1530" y="196" class="arabic muted" font-size="24" text-anchor="end">العدل الدولية: الدول</text>
+  <g class="mono gold" font-size="24" font-weight="700">
+    <text x="860" y="258">29.12.2023</text>
+    <text x="860" y="356">2024–25</text>
+    <text x="860" y="454">03.2026</text>
+    <text x="860" y="552">2026–27</text>
+  </g>
+  <g class="sans ivory" font-size="23">
+    <text x="860" y="290">South Africa files the genocide case;</text>
+    <text x="860" y="318">provisional measures ordered three times</text>
+    <text x="860" y="388">Advisory opinions: the occupation is unlawful (2024);</text>
+    <text x="860" y="416">aid and UN obligations (2025) · 13 states intervene</text>
+    <text x="860" y="486">Israel files its long-delayed written response</text>
+    <text x="860" y="514">after two extensions</text>
+    <text x="860" y="584">The case moves toward oral hearings</text>
+    <text x="860" y="612">in The Hague</text>
+  </g>
+
+  <!-- bottom band -->
+  <rect x="70" y="676" width="1460" height="3" fill="#33342f"/>
+  <text x="70" y="722" class="sans ivory" font-size="25" font-weight="700">One court tries men; the other judges states. Both files now run through the same city.</text>
+  <text x="1530" y="762" class="arabic ivory" font-size="23" font-weight="700" text-anchor="end">محكمة تحاكم الأفراد وأخرى تحاكم الدول.. والملفان يمران بلاهاي</text>
+  <text x="70" y="806" class="sans muted" font-size="21">The warrant obliges every ICC member state to arrest Netanyahu on its soil.</text>
+  <text x="1530" y="806" class="arabic muted" font-size="21" text-anchor="end">المذكرة تلزم كل دولة عضو باعتقاله على أرضها</text>
+
+  <text x="70" y="862" class="sans muted" font-size="19">Graphic: Times of Palestine · Record: ICC Pre-Trial Chamber I; ICJ registry; US Treasury designations 2025–26</text>
+  <text x="1530" y="862" class="arabic muted" font-size="19" text-anchor="end">غرافيك: تايمز أوف فلسطين</text>
+</svg>
