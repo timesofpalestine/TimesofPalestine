@@ -1,67 +1,83 @@
 {
-  "version": 1,
-  "stories": {
-    "5e03868fc8": [
-      {
-        "at": "2026-07-30T11:08:00Z",
-        "type": "update",
-        "en": "The headline and framing were revised to describe the declaration’s contribution constructively while retaining the verified implementation steps still ahead.",
-        "ar": "عُدّل العنوان والإطار التحريري لتقديم إسهام الإعلان بصورة بنّاءة، مع الإبقاء على خطوات التنفيذ المقبلة المثبتة في السجل."
-      }
-    ],
-    "9f400957de": [
-      {
-        "at": "2026-07-30T11:08:00Z",
-        "type": "update",
-        "en": "The headline and framing were revised to describe the declaration’s contribution constructively while retaining the verified implementation steps still ahead.",
-        "ar": "عُدّل العنوان والإطار التحريري لتقديم إسهام الإعلان بصورة بنّاءة، مع الإبقاء على خطوات التنفيذ المقبلة المثبتة في السجل."
-      },
-      {
-        "at": "2026-07-30T11:33:12Z",
-        "type": "update",
-        "en": "The Arabic edition was independently re-edited for idiomatic newsroom Arabic. The verified facts, figures and source record are unchanged.",
-        "ar": "أُعيد تحرير النسخة العربية تحريراً مستقلاً لتصبح أكثر سلاسة وطبيعية، من دون تغيير الوقائع أو الأرقام أو سجل المصادر."
-      }
-    ],
-    "18842c5f33": [
-      {
-        "at": "2026-07-30T12:20:59Z",
-        "type": "update",
-        "en": "The Arabic headline was shortened and revised to name the Israeli Civil Administration as the actor. The article body and evidence are unchanged.",
-        "ar": "اختُصر العنوان العربي وعُدّل لتسمية الإدارة المدنية الإسرائيلية بصفتها الجهة الفاعلة. لم يتغير متن التقرير أو أدلته."
-      }
-    ],
-    "793114fa62": [
-      {
-        "at": "2026-08-02T00:55:00Z",
-        "type": "update",
-        "en": "Updated: Dahlan removed his original post stating Kushner had 'agreed with the Israeli side' to halt attacks from Sunday morning, replacing it with softer wording that Kushner was 'working with the Israeli side' to stop them. Strikes continued through Saturday. The original wording is preserved, attributed, in the article, alongside the revision.",
-        "ar": "تحديث: حذف دحلان منشوره الأصلي القائل إن كوشنر «اتفق مع الجانب الإسرائيلي» على وقف الاعتداءات من صباح الأحد، واستبدله بصيغة أكثر ليونة تقول إن كوشنر «يعمل مع الجانب الإسرائيلي» لوقفها. وتواصلت الغارات طوال السبت. الصياغة الأصلية محفوظة ومنسوبة في التقرير إلى جانب الصيغة المعدّلة."
-      }
-    ],
-    "ed364f97d5": [
-      {
-        "at": "2026-08-02T00:55:00Z",
-        "type": "update",
-        "en": "Updated: Dahlan removed his original post stating Kushner had 'agreed with the Israeli side' to halt attacks from Sunday morning, replacing it with softer wording that Kushner was 'working with the Israeli side' to stop them. Strikes continued through Saturday. The original wording is preserved, attributed, in the article, alongside the revision.",
-        "ar": "تحديث: حذف دحلان منشوره الأصلي القائل إن كوشنر «اتفق مع الجانب الإسرائيلي» على وقف الاعتداءات من صباح الأحد، واستبدله بصيغة أكثر ليونة تقول إن كوشنر «يعمل مع الجانب الإسرائيلي» لوقفها. وتواصلت الغارات طوال السبت. الصياغة الأصلية محفوظة ومنسوبة في التقرير إلى جانب الصيغة المعدّلة."
-      }
-    ],
-    "58dcff80c9": [
-      {
-        "at": "2026-08-02T01:20:00Z",
-        "type": "update",
-        "en": "Updated with fuller reporting: the 2017 Dahlan-Hamas understanding brokered under Egyptian auspices — Emirati-funded diesel through Rafah, $15M/month in UAE support and a planned $100M border power plant — added as the documented precedent for the 2026 channel; Israel's position updated from an anonymous official to Netanyahu's office publicly disputing the terms.",
-        "ar": "تحديث بتغطية أوفى: أُضيف تفاهم دحلان وحماس عام 2017 برعاية مصرية — سولار بتمويل إماراتي عبر رفح، ودعم بخمسة عشر مليون دولار شهرياً، ومحطة كهرباء حدودية بمئة مليون دولار — بوصفه السابقة الموثقة لقناة 2026؛ وحُدّث موقف إسرائيل من مسؤول مجهول إلى منازعة مكتب نتنياهو العلنية في شروط الاتفاق."
-      }
-    ],
-    "75ccf0d94a": [
-      {
-        "at": "2026-08-02T01:20:00Z",
-        "type": "update",
-        "en": "Updated with fuller reporting: the 2017 Dahlan-Hamas understanding brokered under Egyptian auspices — Emirati-funded diesel through Rafah, $15M/month in UAE support and a planned $100M border power plant — added as the documented precedent for the 2026 channel; Israel's position updated from an anonymous official to Netanyahu's office publicly disputing the terms.",
-        "ar": "تحديث بتغطية أوفى: أُضيف تفاهم دحلان وحماس عام 2017 برعاية مصرية — سولار بتمويل إماراتي عبر رفح، ودعم بخمسة عشر مليون دولار شهرياً، ومحطة كهرباء حدودية بمئة مليون دولار — بوصفه السابقة الموثقة لقناة 2026؛ وحُدّث موقف إسرائيل من مسؤول مجهول إلى منازعة مكتب نتنياهو العلنية في شروط الاتفاق."
-      }
-    ]
-  }
+ "version": 1,
+ "stories": {
+  "5e03868fc8": [
+   {
+    "at": "2026-07-30T11:08:00Z",
+    "type": "update",
+    "en": "The headline and framing were revised to describe the declaration’s contribution constructively while retaining the verified implementation steps still ahead.",
+    "ar": "عُدّل العنوان والإطار التحريري لتقديم إسهام الإعلان بصورة بنّاءة، مع الإبقاء على خطوات التنفيذ المقبلة المثبتة في السجل."
+   }
+  ],
+  "9f400957de": [
+   {
+    "at": "2026-07-30T11:08:00Z",
+    "type": "update",
+    "en": "The headline and framing were revised to describe the declaration’s contribution constructively while retaining the verified implementation steps still ahead.",
+    "ar": "عُدّل العنوان والإطار التحريري لتقديم إسهام الإعلان بصورة بنّاءة، مع الإبقاء على خطوات التنفيذ المقبلة المثبتة في السجل."
+   },
+   {
+    "at": "2026-07-30T11:33:12Z",
+    "type": "update",
+    "en": "The Arabic edition was independently re-edited for idiomatic newsroom Arabic. The verified facts, figures and source record are unchanged.",
+    "ar": "أُعيد تحرير النسخة العربية تحريراً مستقلاً لتصبح أكثر سلاسة وطبيعية، من دون تغيير الوقائع أو الأرقام أو سجل المصادر."
+   }
+  ],
+  "18842c5f33": [
+   {
+    "at": "2026-07-30T12:20:59Z",
+    "type": "update",
+    "en": "The Arabic headline was shortened and revised to name the Israeli Civil Administration as the actor. The article body and evidence are unchanged.",
+    "ar": "اختُصر العنوان العربي وعُدّل لتسمية الإدارة المدنية الإسرائيلية بصفتها الجهة الفاعلة. لم يتغير متن التقرير أو أدلته."
+   }
+  ],
+  "793114fa62": [
+   {
+    "at": "2026-08-02T00:55:00Z",
+    "type": "update",
+    "en": "Updated: Dahlan removed his original post stating Kushner had 'agreed with the Israeli side' to halt attacks from Sunday morning, replacing it with softer wording that Kushner was 'working with the Israeli side' to stop them. Strikes continued through Saturday. The original wording is preserved, attributed, in the article, alongside the revision.",
+    "ar": "تحديث: حذف دحلان منشوره الأصلي القائل إن كوشنر «اتفق مع الجانب الإسرائيلي» على وقف الاعتداءات من صباح الأحد، واستبدله بصيغة أكثر ليونة تقول إن كوشنر «يعمل مع الجانب الإسرائيلي» لوقفها. وتواصلت الغارات طوال السبت. الصياغة الأصلية محفوظة ومنسوبة في التقرير إلى جانب الصيغة المعدّلة."
+   }
+  ],
+  "ed364f97d5": [
+   {
+    "at": "2026-08-02T00:55:00Z",
+    "type": "update",
+    "en": "Updated: Dahlan removed his original post stating Kushner had 'agreed with the Israeli side' to halt attacks from Sunday morning, replacing it with softer wording that Kushner was 'working with the Israeli side' to stop them. Strikes continued through Saturday. The original wording is preserved, attributed, in the article, alongside the revision.",
+    "ar": "تحديث: حذف دحلان منشوره الأصلي القائل إن كوشنر «اتفق مع الجانب الإسرائيلي» على وقف الاعتداءات من صباح الأحد، واستبدله بصيغة أكثر ليونة تقول إن كوشنر «يعمل مع الجانب الإسرائيلي» لوقفها. وتواصلت الغارات طوال السبت. الصياغة الأصلية محفوظة ومنسوبة في التقرير إلى جانب الصيغة المعدّلة."
+   }
+  ],
+  "58dcff80c9": [
+   {
+    "at": "2026-08-02T01:20:00Z",
+    "type": "update",
+    "en": "Updated with fuller reporting: the 2017 Dahlan-Hamas understanding brokered under Egyptian auspices — Emirati-funded diesel through Rafah, $15M/month in UAE support and a planned $100M border power plant — added as the documented precedent for the 2026 channel; Israel's position updated from an anonymous official to Netanyahu's office publicly disputing the terms.",
+    "ar": "تحديث بتغطية أوفى: أُضيف تفاهم دحلان وحماس عام 2017 برعاية مصرية — سولار بتمويل إماراتي عبر رفح، ودعم بخمسة عشر مليون دولار شهرياً، ومحطة كهرباء حدودية بمئة مليون دولار — بوصفه السابقة الموثقة لقناة 2026؛ وحُدّث موقف إسرائيل من مسؤول مجهول إلى منازعة مكتب نتنياهو العلنية في شروط الاتفاق."
+   }
+  ],
+  "75ccf0d94a": [
+   {
+    "at": "2026-08-02T01:20:00Z",
+    "type": "update",
+    "en": "Updated with fuller reporting: the 2017 Dahlan-Hamas understanding brokered under Egyptian auspices — Emirati-funded diesel through Rafah, $15M/month in UAE support and a planned $100M border power plant — added as the documented precedent for the 2026 channel; Israel's position updated from an anonymous official to Netanyahu's office publicly disputing the terms.",
+    "ar": "تحديث بتغطية أوفى: أُضيف تفاهم دحلان وحماس عام 2017 برعاية مصرية — سولار بتمويل إماراتي عبر رفح، ودعم بخمسة عشر مليون دولار شهرياً، ومحطة كهرباء حدودية بمئة مليون دولار — بوصفه السابقة الموثقة لقناة 2026؛ وحُدّث موقف إسرائيل من مسؤول مجهول إلى منازعة مكتب نتنياهو العلنية في شروط الاتفاق."
+   }
+  ],
+  "49c65215d4": [
+   {
+    "at": "2026-08-02T15:28:00Z",
+    "type": "update",
+    "en": "Expanded with the organization's school built for the camps' children, its daily bread distribution, and its community partnerships, as announced by the organization.",
+    "ar": "وُسّع التقرير بإضافة المدرسة التي بنتها المنظمة لأطفال المخيمات وخط الخبز اليومي وشراكاتها الأهلية، وفق إعلانات المنظمة."
+   }
+  ],
+  "7d2a3192f2": [
+   {
+    "at": "2026-08-02T15:28:00Z",
+    "type": "update",
+    "en": "Expanded with the organization's school built for the camps' children, its daily bread distribution, and its community partnerships, as announced by the organization.",
+    "ar": "وُسّع التقرير بإضافة المدرسة التي بنتها المنظمة لأطفال المخيمات وخط الخبز اليومي وشراكاتها الأهلية، وفق إعلانات المنظمة."
+   }
+  ]
+ }
 }

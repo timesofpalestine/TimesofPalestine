@@ -44,22 +44,29 @@
   <!-- payload icons on the arc -->
   <g filter="url(#sh)">
     <!-- bread -->
-    <circle cx="580" cy="345" r="58" fill="#16161a" stroke="#c7a86b" stroke-width="3"/>
-    <ellipse cx="580" cy="345" rx="30" ry="17" fill="#c7a86b"/>
-    <path d="M562 345 h36 M568 338 h24 M568 352 h24" stroke="#16161a" stroke-width="2.5"/>
-    <text x="580" y="430" class="sans ivory" font-size="22" font-weight="700" text-anchor="middle">FOOD</text>
-    <text x="580" y="458" class="arabic muted" font-size="21" text-anchor="middle">غذاء</text>
+    <circle cx="520" cy="365" r="54" fill="#16161a" stroke="#c7a86b" stroke-width="3"/>
+    <ellipse cx="520" cy="365" rx="28" ry="16" fill="#c7a86b"/>
+    <path d="M503 365 h34 M509 358 h22 M509 372 h22" stroke="#16161a" stroke-width="2.5"/>
+    <text x="520" y="445" class="sans ivory" font-size="22" font-weight="700" text-anchor="middle">FOOD</text>
+    <text x="520" y="473" class="arabic muted" font-size="21" text-anchor="middle">غذاء</text>
     <!-- water -->
-    <circle cx="800" cy="310" r="58" fill="#16161a" stroke="#c7a86b" stroke-width="3"/>
-    <path d="M800 282 C 815 305, 822 318, 822 330 a22 22 0 1 1 -44 0 c0 -12 7 -25 22 -48z" fill="#3d6b8a"/>
-    <text x="800" y="398" class="sans ivory" font-size="22" font-weight="700" text-anchor="middle">CLEAN WATER</text>
-    <text x="800" y="426" class="arabic muted" font-size="21" text-anchor="middle">مياه نظيفة</text>
+    <circle cx="705" cy="315" r="54" fill="#16161a" stroke="#c7a86b" stroke-width="3"/>
+    <path d="M705 289 C 719 311, 726 323, 726 334 a21 21 0 1 1 -42 0 c0 -11 7 -23 21 -45z" fill="#3d6b8a"/>
+    <text x="705" y="398" class="sans ivory" font-size="22" font-weight="700" text-anchor="middle">CLEAN WATER</text>
+    <text x="705" y="426" class="arabic muted" font-size="21" text-anchor="middle">مياه نظيفة</text>
     <!-- shelter -->
-    <circle cx="1020" cy="345" r="58" fill="#16161a" stroke="#c7a86b" stroke-width="3"/>
-    <path d="M990 362 L1020 322 L1050 362 z" fill="#286344"/>
-    <rect x="1012" y="346" width="16" height="16" fill="#16161a"/>
-    <text x="1020" y="430" class="sans ivory" font-size="22" font-weight="700" text-anchor="middle">SHELTER</text>
-    <text x="1020" y="458" class="arabic muted" font-size="21" text-anchor="middle">مأوى</text>
+    <circle cx="895" cy="315" r="54" fill="#16161a" stroke="#c7a86b" stroke-width="3"/>
+    <path d="M867 331 L895 294 L923 331 z" fill="#286344"/>
+    <rect x="888" y="316" width="14" height="15" fill="#16161a"/>
+    <text x="895" y="398" class="sans ivory" font-size="22" font-weight="700" text-anchor="middle">SHELTER</text>
+    <text x="895" y="426" class="arabic muted" font-size="21" text-anchor="middle">مأوى</text>
+    <!-- school -->
+    <circle cx="1080" cy="365" r="54" fill="#16161a" stroke="#c7a86b" stroke-width="3"/>
+    <path d="M1052 355 L1080 340 L1108 355 z" fill="#8a1f2d"/>
+    <rect x="1058" y="355" width="44" height="26" fill="#f2eee8"/>
+    <rect x="1074" y="362" width="12" height="19" fill="#16161a"/>
+    <text x="1080" y="445" class="sans ivory" font-size="22" font-weight="700" text-anchor="middle">A SCHOOL</text>
+    <text x="1080" y="473" class="arabic muted" font-size="21" text-anchor="middle">مدرسة</text>
   </g>
 
   <!-- children note -->
