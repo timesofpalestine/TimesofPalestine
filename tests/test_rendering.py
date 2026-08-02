@@ -618,7 +618,8 @@ class OriginalRemoteLedeTests(unittest.TestCase):
     media-rights.json entry; verification failures degrade to the fallback
     chain instead of failing the build or publishing a broken frame."""
 
-    URL = "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eizenkot.jpg?width=640"
+    URL = ("https://commons.wikimedia.org/wiki/Special:FilePath/"
+           "Gadi%20Eizenkot,%20November%202020%20(GPOMN1%209040)%20(cropped).jpg?width=640")
 
     def test_manifest_backed_remote_lede_attaches_when_image_is_live(self):
         record = item()
