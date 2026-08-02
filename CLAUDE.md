@@ -154,6 +154,16 @@ significant poll shifts, mergers and coalition moves are covered same-day in
 both languages, with numbers attributed to the specific pollster/outlet.
 Claude's beat — other agents route election story ideas via issue #6.
 
+## Scholarship guide (owner directive 2026-08-02)
+
+Standing reader service: `originals/palestine-scholarships-guide-2026.*`
+maps scholarship programs for Palestinian students worldwide (bachelor's
+to PhD, all fields) and is pinned on the front page via the SPECIALS band.
+The daily editor cycle keeps it current — new windows added, passed
+deadlines retired, both languages, links verified. Deadlines are always
+phrased as verify-at-source. Claude's beat; other agents may PR additions
+with sources.
+
 ## Arab support monitor (owner directive 2026-08-02)
 
 Standing division: what Arab countries are doing to help Palestinians —
