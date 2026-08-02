@@ -47,7 +47,7 @@ Rules of use:
 | Plestia Alaqad — Instagram (@byplestia) | Journalist-author |
 | @BarakRavid | Barak Ravid, Axios — breaks US–Israel diplomacy and election-coalition news |
 | @amit_segal | Amit Segal, Channel 12 — first on Israeli coalition/poll moves (election watch; treat as claims, attribute) |
-| Hani Almadhoun — LinkedIn (@hanifundraiser) | UNRWA USA philanthropy director; co-founded Gaza Soup Kitchen with his brother Mahmoud (killed by an Israeli drone strike, Nov 2024). First-hand family reporting from Beit Lahia + DC aid-world signal, including Dahlan-orbit aid activity. Owner-flagged 2026-08-02: his stories and posts are important — sweep his feed for story leads. |
+| Hani Almadhoun — LinkedIn (@hanifundraiser) | UNRWA USA vice president of philanthropy; co-founded Gaza Soup Kitchen with his brother Mahmoud (killed by an Israeli drone strike, Nov 2024). First-hand family reporting from Beit Lahia + DC aid-world signal, including Dahlan-orbit aid activity. Owner-flagged 2026-08-02: his stories and posts are important — sweep his feed for story leads. |
 
 ## Tier 3 — outlets, analysts and the diaspora public square
 
