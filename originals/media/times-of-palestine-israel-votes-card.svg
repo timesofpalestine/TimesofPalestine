@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350" role="img" aria-labelledby="t d">
+  <title id="t">Israel votes, 27 October 2026: the seat map</title>
+  <desc id="d">A 120-seat Knesset hemicycle by bloc: about 58 seats for the anti-Netanyahu camp, 10 for the Arab parties, about 52 for the Netanyahu bloc, with the 61-seat majority line marked in gold. Neither bloc reaches 61 without the Arab parties. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d121a"/><stop offset="1" stop-color="#141c28"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.92" r="0.75">
+      <stop offset="0" stop-color="#8fa8cf" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#8fa8cf" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+    </style>
+  </defs>
+  <rect width="800" height="350" fill="url(#bg)"/>
+  <rect width="800" height="350" fill="url(#glow)"/>
+
+  <g>
+        <circle cx="102.4" cy="307.4" r="12.5" fill="#3d4f6b"/>
+    <circle cx="139.4" cy="307.4" r="12.5" fill="#3d4f6b"/>
+    <circle cx="176.5" cy="307.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="213.6" cy="307.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="250.7" cy="307.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="105.2" cy="278.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="142.7" cy="278.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="180.3" cy="278.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="218.2" cy="278.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="110.9" cy="249.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="149.2" cy="249.7" r="12.5" fill="#3d4f6b"/>
+    <circle cx="256.5" cy="278.5" r="12.5" fill="#3d4f6b"/>
+    <circle cx="187.9" cy="250.0" r="12.5" fill="#3d4f6b"/>
+    <circle cx="119.4" cy="221.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="227.2" cy="250.4" r="12.5" fill="#3d4f6b"/>
+    <circle cx="158.9" cy="222.1" r="12.5" fill="#3d4f6b"/>
+    <circle cx="130.6" cy="194.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="199.1" cy="222.9" r="12.5" fill="#3d4f6b"/>
+    <circle cx="267.7" cy="251.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="171.6" cy="195.7" r="12.5" fill="#3d4f6b"/>
+    <circle cx="144.4" cy="168.8" r="12.5" fill="#3d4f6b"/>
+    <circle cx="240.6" cy="224.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="213.8" cy="197.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="187.1" cy="171.0" r="12.5" fill="#3d4f6b"/>
+    <circle cx="160.6" cy="144.5" r="12.5" fill="#3d4f6b"/>
+    <circle cx="284.0" cy="226.8" r="12.5" fill="#3d4f6b"/>
+    <circle cx="257.8" cy="200.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="231.6" cy="174.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="205.4" cy="148.1" r="12.5" fill="#3d4f6b"/>
+    <circle cx="179.2" cy="121.9" r="12.5" fill="#3d4f6b"/>
+    <circle cx="199.9" cy="101.2" r="12.5" fill="#3d4f6b"/>
+    <circle cx="226.1" cy="127.4" r="12.5" fill="#3d4f6b"/>
+    <circle cx="252.3" cy="153.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="278.6" cy="179.8" r="12.5" fill="#3d4f6b"/>
+    <circle cx="304.8" cy="206.0" r="12.5" fill="#3d4f6b"/>
+    <circle cx="222.5" cy="82.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="249.0" cy="109.1" r="12.5" fill="#3d4f6b"/>
+    <circle cx="275.6" cy="135.8" r="12.5" fill="#3d4f6b"/>
+    <circle cx="302.3" cy="162.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="246.8" cy="66.4" r="12.5" fill="#3d4f6b"/>
+    <circle cx="273.7" cy="93.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="329.3" cy="189.7" r="12.5" fill="#3d4f6b"/>
+    <circle cx="300.9" cy="121.1" r="12.5" fill="#3d4f6b"/>
+    <circle cx="272.6" cy="52.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="328.4" cy="149.2" r="12.5" fill="#3d4f6b"/>
+    <circle cx="300.1" cy="80.9" r="12.5" fill="#3d4f6b"/>
+    <circle cx="299.6" cy="41.4" r="12.5" fill="#3d4f6b"/>
+    <circle cx="328.0" cy="109.9" r="12.5" fill="#3d4f6b"/>
+    <circle cx="356.5" cy="178.5" r="12.5" fill="#3d4f6b"/>
+    <circle cx="327.7" cy="71.2" r="12.5" fill="#3d4f6b"/>
+    <circle cx="327.6" cy="32.9" r="12.5" fill="#3d4f6b"/>
+    <circle cx="356.3" cy="140.2" r="12.5" fill="#3d4f6b"/>
+    <circle cx="356.3" cy="102.3" r="12.5" fill="#3d4f6b"/>
+    <circle cx="356.3" cy="64.7" r="12.5" fill="#3d4f6b"/>
+    <circle cx="356.3" cy="27.2" r="12.5" fill="#3d4f6b"/>
+    <circle cx="385.3" cy="172.7" r="12.5" fill="#3d4f6b"/>
+    <circle cx="385.3" cy="135.6" r="12.5" fill="#3d4f6b"/>
+    <circle cx="385.3" cy="98.5" r="12.5" fill="#3d4f6b"/>
+    <circle cx="385.4" cy="61.4" r="12.5" fill="#286344"/>
+    <circle cx="385.4" cy="24.4" r="12.5" fill="#286344"/>
+    <circle cx="414.6" cy="24.4" r="12.5" fill="#286344"/>
+    <circle cx="414.6" cy="61.4" r="12.5" fill="#286344"/>
+    <circle cx="414.7" cy="98.5" r="12.5" fill="#286344"/>
+    <circle cx="414.7" cy="135.6" r="12.5" fill="#286344"/>
+    <circle cx="414.7" cy="172.7" r="12.5" fill="#286344"/>
+    <circle cx="443.7" cy="27.2" r="12.5" fill="#286344"/>
+    <circle cx="443.7" cy="64.7" r="12.5" fill="#286344"/>
+    <circle cx="443.7" cy="102.3" r="12.5" fill="#286344"/>
+    <circle cx="443.7" cy="140.2" r="12.5" fill="#8a1f2d"/>
+    <circle cx="472.4" cy="32.9" r="12.5" fill="#8a1f2d"/>
+    <circle cx="472.3" cy="71.2" r="12.5" fill="#8a1f2d"/>
+    <circle cx="443.5" cy="178.5" r="12.5" fill="#8a1f2d"/>
+    <circle cx="472.0" cy="109.9" r="12.5" fill="#8a1f2d"/>
+    <circle cx="500.4" cy="41.4" r="12.5" fill="#8a1f2d"/>
+    <circle cx="471.6" cy="149.2" r="12.5" fill="#8a1f2d"/>
+    <circle cx="499.9" cy="80.9" r="12.5" fill="#8a1f2d"/>
+    <circle cx="527.4" cy="52.6" r="12.5" fill="#8a1f2d"/>
+    <circle cx="499.1" cy="121.1" r="12.5" fill="#8a1f2d"/>
+    <circle cx="470.7" cy="189.7" r="12.5" fill="#8a1f2d"/>
+    <circle cx="526.3" cy="93.6" r="12.5" fill="#8a1f2d"/>
+    <circle cx="553.2" cy="66.4" r="12.5" fill="#8a1f2d"/>
+    <circle cx="497.7" cy="162.6" r="12.5" fill="#8a1f2d"/>
+    <circle cx="524.4" cy="135.8" r="12.5" fill="#8a1f2d"/>
+    <circle cx="551.0" cy="109.1" r="12.5" fill="#8a1f2d"/>
+    <circle cx="577.5" cy="82.6" r="12.5" fill="#8a1f2d"/>
+    <circle cx="495.2" cy="206.0" r="12.5" fill="#8a1f2d"/>
+    <circle cx="521.4" cy="179.8" r="12.5" fill="#8a1f2d"/>
+    <circle cx="547.7" cy="153.6" r="12.5" fill="#8a1f2d"/>
+    <circle cx="573.9" cy="127.4" r="12.5" fill="#8a1f2d"/>
+    <circle cx="600.1" cy="101.2" r="12.5" fill="#8a1f2d"/>
+    <circle cx="620.8" cy="121.9" r="12.5" fill="#8a1f2d"/>
+    <circle cx="594.6" cy="148.1" r="12.5" fill="#8a1f2d"/>
+    <circle cx="568.4" cy="174.3" r="12.5" fill="#8a1f2d"/>
+    <circle cx="542.2" cy="200.6" r="12.5" fill="#8a1f2d"/>
+    <circle cx="516.0" cy="226.8" r="12.5" fill="#8a1f2d"/>
+    <circle cx="639.4" cy="144.5" r="12.5" fill="#8a1f2d"/>
+    <circle cx="612.9" cy="171.0" r="12.5" fill="#8a1f2d"/>
+    <circle cx="586.2" cy="197.6" r="12.5" fill="#8a1f2d"/>
+    <circle cx="559.4" cy="224.3" r="12.5" fill="#8a1f2d"/>
+    <circle cx="655.6" cy="168.8" r="12.5" fill="#8a1f2d"/>
+    <circle cx="628.4" cy="195.7" r="12.5" fill="#8a1f2d"/>
+    <circle cx="532.3" cy="251.3" r="12.5" fill="#8a1f2d"/>
+    <circle cx="600.9" cy="222.9" r="12.5" fill="#8a1f2d"/>
+    <circle cx="669.4" cy="194.6" r="12.5" fill="#8a1f2d"/>
+    <circle cx="572.8" cy="250.4" r="12.5" fill="#8a1f2d"/>
+    <circle cx="641.1" cy="222.1" r="12.5" fill="#8a1f2d"/>
+    <circle cx="680.6" cy="221.6" r="12.5" fill="#8a1f2d"/>
+    <circle cx="612.1" cy="250.0" r="12.5" fill="#8a1f2d"/>
+    <circle cx="543.5" cy="278.5" r="12.5" fill="#8a1f2d"/>
+    <circle cx="650.8" cy="249.7" r="12.5" fill="#8a1f2d"/>
+    <circle cx="689.1" cy="249.6" r="12.5" fill="#8a1f2d"/>
+    <circle cx="581.8" cy="278.3" r="12.5" fill="#8a1f2d"/>
+    <circle cx="619.7" cy="278.3" r="12.5" fill="#8a1f2d"/>
+    <circle cx="657.3" cy="278.3" r="12.5" fill="#8a1f2d"/>
+    <circle cx="694.8" cy="278.3" r="12.5" fill="#8a1f2d"/>
+    <circle cx="549.3" cy="307.3" r="12.5" fill="#8a1f2d"/>
+    <circle cx="586.4" cy="307.3" r="12.5" fill="#8a1f2d"/>
+    <circle cx="623.5" cy="307.3" r="12.5" fill="#8a1f2d"/>
+    <circle cx="660.6" cy="307.4" r="12.5" fill="#8a1f2d"/>
+    <circle cx="697.6" cy="307.4" r="12.5" fill="#8a1f2d"/>
+  </g>
+
+  <path d="M400.0 194.0 L400.0 4.0" stroke="#c7a86b" stroke-width="4" stroke-dasharray="9 7" stroke-linecap="round"/>
+
+  <text x="400" y="286" class="mono" fill="#c7a86b" font-size="64" font-weight="700" text-anchor="middle">61</text>
+  <text x="400" y="316" class="sans" fill="#aab4c6" font-size="19" font-weight="700" text-anchor="middle" letter-spacing="2">TO GOVERN · للحكم</text>
+
+  <text x="18" y="338" class="sans" fill="#8fa8cf" font-size="20" font-weight="800">ANTI-NETANYAHU ≈58</text>
+  <text x="782" y="338" class="sans" fill="#c98a95" font-size="20" font-weight="800" text-anchor="end">NETANYAHU BLOC ≈52</text>
+  <text x="400" y="345" class="sans" fill="#5fae83" font-size="18" font-weight="700" text-anchor="middle">ARAB PARTIES · الأحزاب العربية 10</text>
+</svg>
