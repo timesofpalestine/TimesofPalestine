@@ -45,6 +45,8 @@ Rules of use:
 | @m7mdkurd | Mohammed El-Kurd, writer |
 | Motaz Azaiza — Instagram (@motaz_azaiza) | Photojournalist |
 | Plestia Alaqad — Instagram (@byplestia) | Journalist-author |
+| @BarakRavid | Barak Ravid, Axios — breaks US–Israel diplomacy and election-coalition news |
+| @amit_segal | Amit Segal, Channel 12 — first on Israeli coalition/poll moves (election watch; treat as claims, attribute) |
 
 ## Tier 3 — outlets, analysts and the diaspora public square
 

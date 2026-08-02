@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Israel's October election: the standings</title>
+  <desc id="d">Seat projections from Israel's Channel 12 survey in late July 2026: Eisenkot's Yashar leads with 24, Likud 23, Beyachad 15, The Democrats 11, Otzma Yehudit 8, Hadash-Ta'al and Ra'am 5 each, Religious Zionism 4 at the threshold. Bloc totals leave neither side at 61 without the Arab parties. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="70" y="78" class="sans ivory" font-size="44" font-weight="800">ISRAEL VOTES · 27 OCTOBER 2026</text>
+  <text x="1530" y="78" class="arabic ivory" font-size="40" font-weight="700" text-anchor="end">إسرائيل تنتخب · ٢٧ أكتوبر ٢٠٢٦</text>
+  <text x="70" y="118" class="sans muted" font-size="24">Seat projections, Channel 12 survey, late July · 120 seats, 61 to govern</text>
+  <text x="1530" y="118" class="arabic muted" font-size="22" text-anchor="end">إسقاطات المقاعد، استطلاع القناة 12، أواخر يوليو</text>
+
+  <!-- party bars: 1 seat = 26px, bars start x=430 -->
+  <g class="sans" font-size="25">
+    <!-- Yashar 24 -->
+    <text x="410" y="205" class="ivory" font-weight="700" text-anchor="end">Yashar · Eisenkot</text>
+    <rect x="430" y="182" width="624" height="34" rx="6" fill="#c7a86b"/>
+    <text x="1066" y="208" class="mono ivory" font-size="27" font-weight="700">24</text>
+    <text x="1130" y="208" class="arabic muted" font-size="23">يَشار · آيزنكوت</text>
+    <!-- Likud 23 -->
+    <text x="410" y="259" class="ivory" font-weight="700" text-anchor="end">Likud · Netanyahu</text>
+    <rect x="430" y="236" width="598" height="34" rx="6" fill="#8a1f2d"/>
+    <text x="1040" y="262" class="mono ivory" font-size="27" font-weight="700">23</text>
+    <text x="1104" y="262" class="arabic muted" font-size="23">الليكود · نتنياهو</text>
+    <!-- Beyachad 15 -->
+    <text x="410" y="313" class="ivory" font-weight="700" text-anchor="end">Beyachad · Bennett–Lapid</text>
+    <rect x="430" y="290" width="390" height="34" rx="6" fill="#3d4f6b"/>
+    <text x="832" y="316" class="mono ivory" font-size="27" font-weight="700">15</text>
+    <text x="896" y="316" class="arabic muted" font-size="23">بياحد · بينيت ولبيد</text>
+    <!-- Democrats 11 -->
+    <text x="410" y="367" class="ivory" font-weight="700" text-anchor="end">The Democrats · Golan</text>
+    <rect x="430" y="344" width="286" height="34" rx="6" fill="#3d4f6b"/>
+    <text x="728" y="370" class="mono ivory" font-size="27" font-weight="700">11</text>
+    <text x="792" y="370" class="arabic muted" font-size="23">الديمقراطيون · غولان</text>
+    <!-- Otzma 8 -->
+    <text x="410" y="421" class="ivory" font-weight="700" text-anchor="end">Otzma Yehudit · Ben Gvir</text>
+    <rect x="430" y="398" width="208" height="34" rx="6" fill="#8a1f2d"/>
+    <text x="650" y="424" class="mono ivory" font-size="27" font-weight="700">8</text>
+    <text x="702" y="424" class="arabic muted" font-size="23">عوتسما يهوديت · بن غفير</text>
+    <!-- Hadash-Ta'al 5 -->
+    <text x="410" y="475" class="ivory" font-weight="700" text-anchor="end">Hadash–Ta'al · Odeh, Tibi</text>
+    <rect x="430" y="452" width="130" height="34" rx="6" fill="#286344"/>
+    <text x="572" y="478" class="mono ivory" font-size="27" font-weight="700">5</text>
+    <text x="624" y="478" class="arabic muted" font-size="23">الجبهة والعربية للتغيير</text>
+    <!-- Ra'am 5 -->
+    <text x="410" y="529" class="ivory" font-weight="700" text-anchor="end">Ra'am · Mansour Abbas</text>
+    <rect x="430" y="506" width="130" height="34" rx="6" fill="#286344"/>
+    <text x="572" y="532" class="mono ivory" font-size="27" font-weight="700">5</text>
+    <text x="624" y="532" class="arabic muted" font-size="23">الموحدة · منصور عباس</text>
+    <!-- Religious Zionism 4 -->
+    <text x="410" y="583" class="ivory" font-weight="700" text-anchor="end">Religious Zionism · Smotrich</text>
+    <rect x="430" y="560" width="104" height="34" rx="6" fill="#8a1f2d"/>
+    <text x="546" y="586" class="mono ivory" font-size="27" font-weight="700">4</text>
+    <text x="598" y="586" class="arabic muted" font-size="23">الصهيونية الدينية · سموتريتش — على حافة نسبة الحسم</text>
+  </g>
+
+  <!-- threshold note -->
+  <text x="70" y="640" class="sans muted" font-size="21">Shas, UTJ, Yisrael Beytenu and Blue &amp; White fill out the remaining seats; Liberman weighs a joint run with Eisenkot.</text>
+
+  <!-- bloc meter -->
+  <g>
+    <rect x="70" y="690" width="1460" height="4" fill="#33342f"/>
+    <!-- anti-Netanyahu ~58 of 120 → width 1460*58/120=706 -->
+    <rect x="70" y="712" width="706" height="46" rx="8" fill="#3d4f6b"/>
+    <!-- arab parties 10 → 122 -->
+    <rect x="784" y="712" width="122" height="46" rx="8" fill="#286344"/>
+    <!-- netanyahu bloc ~52 → 632 -->
+    <rect x="914" y="712" width="616" height="46" rx="8" fill="#8a1f2d"/>
+    <!-- 61-seat line at 70+1460*61/120=812 -->
+    <path d="M812 676 L812 772" stroke="#c7a86b" stroke-width="4" stroke-dasharray="8 6"/>
+    <text x="812" y="666" class="mono" fill="#c7a86b" font-size="24" font-weight="700" text-anchor="middle">61</text>
+    <text x="76" y="742" class="sans ivory" font-size="23" font-weight="700">ANTI-NETANYAHU ≈58</text>
+    <text x="845" y="700" class="sans" fill="#5fae83" font-size="21" text-anchor="middle">ARAB PARTIES 10</text>
+    <text x="1524" y="742" class="sans ivory" font-size="23" font-weight="700" text-anchor="end">NETANYAHU BLOC ≈52</text>
+  </g>
+  <text x="70" y="810" class="sans muted" font-size="23">Neither bloc reaches 61 without the parties neither bloc will say it would govern with.</text>
+  <text x="1530" y="810" class="arabic muted" font-size="23" text-anchor="end">لا كتلة تبلغ 61 مقعداً من دون الأحزاب العربية التي ترفض الكتلتان إعلان الحكم معها</text>
+
+  <text x="70" y="862" class="sans muted" font-size="19">Graphic: Times of Palestine · Sources: Channel 12 survey via Haaretz; bloc estimates via wire reporting, July 2026</text>
+  <text x="1530" y="862" class="arabic muted" font-size="19" text-anchor="end">غرافيك: تايمز أوف فلسطين</text>
+</svg>

@@ -140,6 +140,20 @@ proceedings. Launch report: `originals/pa-litigation-docket-2026.*`. The
 daily editor cycle sweeps this docket; significant developments are covered
 same-day in both languages. Claude's beat.
 
+## Israeli election watch (owner directive 2026-08-02)
+
+Standing beat through the 27 October 2026 Knesset election: the coalitions
+forming and collapsing, who leads, who gains, who falls, and the names —
+Eisenkot/Yashar, Netanyahu/Likud, Bennett–Lapid/Beyachad, Golan/Democrats,
+Liberman, Gantz, Ben Gvir, Smotrich, Deri, and the Arab lists (Mansour
+Abbas/Ra'am, Odeh–Tibi/Hadash-Ta'al) whose seats both blocs need and refuse.
+Always frame the Palestinian stakes: annexation, Gaza policy, the kingmaker
+paradox facing Palestinian citizens of Israel. Launch report:
+`originals/israel-election-2026-*`. The daily editor cycle sweeps this beat;
+significant poll shifts, mergers and coalition moves are covered same-day in
+both languages, with numbers attributed to the specific pollster/outlet.
+Claude's beat — other agents route election story ideas via issue #6.
+
 ## Breaking-news watchlist (owner directive 2026-08-01)
 
 `editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
