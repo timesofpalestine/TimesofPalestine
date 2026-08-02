@@ -426,6 +426,13 @@
       "category": "arabaid",
       "maxAgeHours": 168,
       "cap": 5
+    },
+    {
+      "id": "guardian",
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/world/israel-and-the-palestinians/rss",
+      "site": "https://www.theguardian.com",
+      "cap": 5
     }
   ],
   "ar": [
