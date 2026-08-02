@@ -11,6 +11,7 @@ Deliberately conservative: different places or different casualty counts in
 the headlines veto a match, and callers should only compare stories close in
 time. Stdlib only.
 """
+import difflib
 import html
 import re
 
@@ -58,6 +59,32 @@ def event_tokens(title):
             w = w[2:]
         toks.add(_EVENT_SYN.get(w, w))
     return toks
+
+
+_NUM_RUN_RX = re.compile(r"\d+")
+
+
+def _title_key(title):
+    text = _WORD_RX.sub(" ", html.unescape(_TAG_RX.sub(" ", title or "")).lower())
+    text = re.sub(r"\s+", " ", text.translate(_AR_DIGITS)).strip()
+    # Collapse every count to one marker: a rolling story's updated toll
+    # ("kills 12" → "kills 15") must not read as a new headline.
+    return _NUM_RUN_RX.sub("#", text)
+
+
+def near_identical(title_a, title_b):
+    """True when two headlines are the same words give or take an updated
+    number — the rolling-update case that the number veto in same_event
+    deliberately keeps apart. Such pairs are one running story, not two
+    events, no matter how far apart in time they were filed."""
+    a, b = _title_key(title_a), _title_key(title_b)
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    if 2 * min(len(a), len(b)) < 0.9 * (len(a) + len(b)):
+        return False  # length gap alone caps the ratio below the bar
+    return difflib.SequenceMatcher(None, a, b).ratio() >= 0.9
 
 
 def same_event(toks_a, toks_b):

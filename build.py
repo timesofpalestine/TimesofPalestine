@@ -1330,47 +1330,60 @@ def dedupe(items):
 # Two outlets covering one incident write two different headlines, so title-string
 # dedupe misses them. The similarity logic lives in event_dedupe.py, shared with
 # telegram_publish.py so the channel never re-receives the same news either.
-from event_dedupe import event_tokens, same_event
+from event_dedupe import event_tokens, near_identical, same_event
 
 def dedupe_events(items):
     """One incident, one article. When a cluster forms, our own copy (original,
-    then partner wire, then score) is the one that runs; only stories within
-    36 hours of each other can be the same event."""
-    kept = []
+    then partner wire, then score) is the one that runs. Two rules admit an
+    item to a cluster, and both are checked against every member the cluster
+    has absorbed — not just its representative — so chains of follow-ups
+    collapse instead of leaking every other link:
+      1. near-identical headline (same words give or take an updated count):
+         one running story, no time window — a daily-repeated headline must
+         never publish twice (owner call 2026-08-02, after five same-headline
+         follow-ups ran at once);
+      2. same_event token similarity, only within 36 hours of a member.
+    Originals never fold into each other — the desk curates those."""
+    clusters = []  # [representative, [member titles], [member tokens], [member dates]]
     ranked = sorted(items, key=lambda i: (
         i["source_id"] == "top-original", bool(i.get("partner")), i["score"]
     ), reverse=True)
     for it in ranked:
         toks = event_tokens(it["title"])
-        dup = False
-        for kept_item, ktoks, kdate in kept:
-            if (
-                abs((it["date"] - kdate).total_seconds()) > 36 * 3600
-                or not same_event(toks, ktoks)
-            ):
+        home = None
+        for cluster in clusters:
+            rep, titles, token_sets, dates = cluster
+            if it.get("original") and rep.get("original"):
                 continue
-            dup = True
-            existing = {
-                (source.get("name", ""), source.get("url", ""))
-                for source in kept_item.get("corroborating_sources", [])
-            }
-            for source in it.get("corroborating_sources", []):
-                key = (source.get("name", ""), source.get("url", ""))
-                if key not in existing:
-                    kept_item.setdefault("corroborating_sources", []).append(source)
-                    existing.add(key)
-            sources = kept_item.get("corroborating_sources", [])
-            if len({
-                (source.get("name", ""), source.get("url", ""))
-                for source in sources
-                if source.get("name") and source.get("url")
-            }) >= 2:
-                for source in sources:
-                    source["verified"] = True
-            break
-        if not dup:
-            kept.append((it, toks, it["date"]))
-    survivors = {id(k[0]) for k in kept}
+            if any(near_identical(it["title"], t) for t in titles) or any(
+                abs((it["date"] - d).total_seconds()) <= 36 * 3600 and same_event(toks, m)
+                for m, d in zip(token_sets, dates)
+            ):
+                home = cluster
+                break
+        if home is None:
+            clusters.append([it, [it["title"]], [toks], [it["date"]]])
+            continue
+        kept_item, titles, token_sets, dates = home
+        titles.append(it["title"]); token_sets.append(toks); dates.append(it["date"])
+        existing = {
+            (source.get("name", ""), source.get("url", ""))
+            for source in kept_item.get("corroborating_sources", [])
+        }
+        for source in it.get("corroborating_sources", []):
+            key = (source.get("name", ""), source.get("url", ""))
+            if key not in existing:
+                kept_item.setdefault("corroborating_sources", []).append(source)
+                existing.add(key)
+        sources = kept_item.get("corroborating_sources", [])
+        if len({
+            (source.get("name", ""), source.get("url", ""))
+            for source in sources
+            if source.get("name") and source.get("url")
+        }) >= 2:
+            for source in sources:
+                source["verified"] = True
+    survivors = {id(c[0]) for c in clusters}
     dropped = [i for i in items if id(i) not in survivors]
     for d in dropped:
         print(f"  ⊘ duplicate event dropped: {d['source']}: {d['title'][:70]}")

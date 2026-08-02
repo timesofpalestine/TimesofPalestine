@@ -597,3 +597,68 @@ class SportsRelevanceTests(unittest.TestCase):
         })
         out = build.finish_item(record, {"id": "felesteen", "name": "صحيفة فلسطين"})
         self.assertIsNotNone(out)
+
+
+class RunningStoryDedupeTests(unittest.TestCase):
+    """Near-identical headlines are one running story: neither an updated
+    count nor days between filings may put the same headline on the site
+    twice (owner call 2026-08-02, after five same-headline follow-ups ran)."""
+
+    @staticmethod
+    def wire(title, hours_after=0, count=0, score=10):
+        record = item()
+        record.update({
+            "title": title,
+            "link": f"https://example.com/rolling-{count}",
+            "pid": f"rolling{count:03d}",
+            "date": datetime(2026, 7, 29, 12, tzinfo=timezone.utc)
+            + timedelta(hours=hours_after),
+            "score": score,
+            "corroborating_sources": [],
+        })
+        return record
+
+    def test_rolling_count_updates_collapse_to_one_story(self):
+        # Five follow-ups over four days: only the tolls differ, and the
+        # spacing defeats any fixed dedupe window. Exactly one survives.
+        stories = [
+            self.wire(f"Israeli strikes on Gaza City kill {n} Palestinians",
+                      hours_after=h, count=i, score=10 + i)
+            for i, (n, h) in enumerate([(12, 0), (15, 20), (18, 44), (21, 70), (24, 92)])
+        ]
+        survivors = build.dedupe_events(stories)
+        self.assertEqual(len(survivors), 1)
+
+    def test_distinct_incidents_in_different_places_both_run(self):
+        pair = [
+            self.wire("Israeli forces kill five Palestinians in Jenin raid", count=1),
+            self.wire("Israeli forces kill nine Palestinians in Rafah strike",
+                      hours_after=2, count=2),
+        ]
+        self.assertEqual(len(build.dedupe_events(pair)), 2)
+
+    def test_follow_up_chain_matches_absorbed_members_not_just_the_head(self):
+        # C paraphrases B but not A; B already folded into A's cluster, so C
+        # must match through the absorbed member instead of leaking.
+        a = self.wire("Israeli forces kill three Palestinians in Jenin raid",
+                      count=1, score=30)
+        b = self.wire("Army kills three Palestinians during Jenin attack",
+                      hours_after=30, count=2, score=20)
+        c = self.wire("Army kills 3 Palestinians during Jenin attack",
+                      hours_after=64, count=3, score=10)
+        self.assertEqual(len(build.dedupe_events([a, b, c])), 1)
+
+    def test_desk_originals_never_fold_into_each_other(self):
+        first, second = self.wire("Gaza aid convoy report", count=1), self.wire(
+            "Gaza aid convoy report", hours_after=1, count=2)
+        for record in (first, second):
+            record.update({"original": True, "source_id": "top-original"})
+        self.assertEqual(len(build.dedupe_events([first, second])), 2)
+
+    def test_arabic_rolling_headline_collapses_across_days(self):
+        stories = [
+            self.wire(f"ارتفاع حصيلة الشهداء في قصف مدينة غزة إلى {n}",
+                      hours_after=h, count=i)
+            for i, (n, h) in enumerate([(30, 0), (34, 40), (39, 80)])
+        ]
+        self.assertEqual(len(build.dedupe_events(stories)), 1)
