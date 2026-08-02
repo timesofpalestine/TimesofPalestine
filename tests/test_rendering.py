@@ -575,3 +575,25 @@ class VideoEmbedTests(unittest.TestCase):
                     "https://www.instagram.com/stories/user/123/",
                     "https://evil.example.com/reel/abc/"):
             self.assertIsNone(longform.video_embed("", url))
+
+
+class SportsRelevanceTests(unittest.TestCase):
+    def test_regional_club_sports_leaking_through_link_match_is_dropped(self):
+        record = item()
+        record.update({
+            "title": "الزمالك يعزز صفوفه بسبعة لاعبين قبل انطلاق الموسم الجديد",
+            "dek": "أعلن النادي المصري تعاقداته الصيفية استعداداً للدوري الجديد.",
+            # outlet URL satisfies the general relevance gate — the leak path
+            "link": "https://felesteen.news/palestine/589f7b5e9",
+        })
+        self.assertIsNone(build.finish_item(record, {"id": "felesteen", "name": "صحيفة فلسطين"}))
+
+    def test_palestinian_sports_story_is_kept(self):
+        record = item()
+        record.update({
+            "title": "منتخب فلسطين يفتتح تصفيات كأس العالم بفوز مهم",
+            "dek": "الفدائي يواصل مشواره في التصفيات بروح قتالية.",
+            "link": "https://example.com/fidai-win",
+        })
+        out = build.finish_item(record, {"id": "felesteen", "name": "صحيفة فلسطين"})
+        self.assertIsNotNone(out)

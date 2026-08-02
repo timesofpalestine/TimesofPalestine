@@ -910,6 +910,14 @@ def finish_item(item, feed):
     # exemption; research feeds are already gated at the feed level.
     if item["cat"] not in ("bitcoin", "research") and not RELEVANT_RX.search(hay):
         return None
+    # The Sport section is Palestinian sport. Palestinian wires also carry
+    # Egyptian and regional league coverage wholesale, and outlet URLs or
+    # boilerplate can satisfy the general gate above — so a sports item earns
+    # its place only when the story text itself has Palestine context: the
+    # national team, Palestinian players and clubs, the game under occupation
+    # (owner call 2026-08-02, after a Zamalek transfer round-up published).
+    if item["cat"] == "sports" and not PALESTINE_RX.search(f"{item['title']} {item['dek']}"):
+        return None
     item["date"] = min(item["date"], datetime.now(timezone.utc))
     item["max_age_hours"] = feed.get("maxAgeHours", MAX_AGE_HOURS)
     item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]  # stable internal page id
