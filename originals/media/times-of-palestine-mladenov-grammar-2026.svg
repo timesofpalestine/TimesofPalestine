@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">The envoy's grammar</title>
+  <desc id="d">Two columns compare what Board of Peace envoy Nickolay Mladenov wrote about two days of strikes on Gaza — with the actor missing from every sentence — against the documented record naming Israel. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}.gold{fill:#c7a86b}.red{fill:#e0808a}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="70" y="80" class="sans ivory" font-size="44" font-weight="800">THE ENVOY&#8217;S GRAMMAR</text>
+  <text x="1530" y="80" class="arabic ivory" font-size="36" font-weight="700" text-anchor="end">نحوُ المبعوث</text>
+  <text x="70" y="122" class="sans muted" font-size="22">Nickolay Mladenov on two days of strikes &#183; 2 August 2026 &#183; ملادينوف عن يومين من الغارات</text>
+
+  <!-- left column: what he wrote -->
+  <rect x="70" y="160" width="700" height="560" rx="14" fill="#16161a" stroke="#3d4f6b" stroke-width="3"/>
+  <text x="100" y="205" class="sans" fill="#8fa8cf" font-size="24" font-weight="800">WHAT THE STATEMENT SAYS &#183; ما قاله البيان</text>
+  <text x="100" y="262" class="sans ivory" font-size="23">&#8220;Two days of strikes across Gaza have killed</text>
+  <text x="100" y="292" class="sans ivory" font-size="23">civilians&#8230;&#8221;</text>
+  <text x="100" y="330" class="mono red" font-size="20">actor: [ none named ] &#183; الفاعل: لا أحد</text>
+  <text x="100" y="392" class="sans ivory" font-size="23">&#8220;&#8230;destroyed medical supplies that people</text>
+  <text x="100" y="422" class="sans ivory" font-size="23">depend on.&#8221;</text>
+  <text x="100" y="460" class="mono red" font-size="20">actor: [ none named ] &#183; الفاعل: لا أحد</text>
+  <text x="100" y="522" class="sans ivory" font-size="23">&#8220;Both parties carry obligations&#8230;&#8221;</text>
+  <text x="100" y="560" class="mono red" font-size="20">blame: split evenly &#183; اللوم: مناصفةً</text>
+  <text x="100" y="622" class="sans ivory" font-size="23">&#8220;&#8230;achievable if everyone makes their</text>
+  <text x="100" y="652" class="sans ivory" font-size="23">best efforts.&#8221;</text>
+  <text x="100" y="690" class="mono red" font-size="20">responsibility: everyone&#8217;s = no one&#8217;s &#183; الجميع</text>
+
+  <!-- right column: the record -->
+  <rect x="830" y="160" width="700" height="560" rx="14" fill="#16161a" stroke="#8a1f2d" stroke-width="3"/>
+  <text x="860" y="205" class="sans" fill="#e0808a" font-size="24" font-weight="800">WHAT THE RECORD SAYS &#183; ما يقوله السجل</text>
+  <text x="860" y="262" class="sans ivory" font-size="23">Israeli strikes killed at least 18 people in</text>
+  <text x="860" y="292" class="sans ivory" font-size="23">Gaza since Friday, medics say &#8212; Al-Monitor</text>
+  <text x="860" y="352" class="sans ivory" font-size="23">Israeli strikes destroyed a medical-supply</text>
+  <text x="860" y="382" class="sans ivory" font-size="23">warehouse &#8212; Al Jazeera, 1 August</text>
+  <text x="860" y="442" class="sans ivory" font-size="23">An Israeli minister: there is no deal to halt</text>
+  <text x="860" y="472" class="sans ivory" font-size="23">the attacks &#8212; Al-Monitor</text>
+  <text x="860" y="532" class="sans ivory" font-size="23">Even Israeli outlets&#8217; headlines wrote</text>
+  <text x="860" y="562" class="sans ivory" font-size="23">&#8220;Israeli strikes&#8221; where the envoy wrote</text>
+  <text x="860" y="592" class="sans ivory" font-size="23">&#8220;strikes&#8221; &#8212; Israel National News, JPost</text>
+  <text x="860" y="652" class="arabic muted" font-size="22">غارات إسرائيلية؛ ١٨ قتيلاً على الأقل؛ مخزن أدوية مدمَّر؛</text>
+  <text x="860" y="686" class="arabic muted" font-size="22">ووزير إسرائيلي: لا اتفاق لوقف الهجمات</text>
+
+  <path d="M70 770 H1530" stroke="#33342f" stroke-width="3"/>
+  <text x="800" y="820" class="sans gold" font-size="28" font-weight="800" text-anchor="middle">The strikes have an author. The statement does not. &#183; للغارات فاعلٌ؛ أما البيان فلا</text>
+  <text x="70" y="862" class="sans muted" font-size="19">Graphic: Times of Palestine &#183; Statement text as reported by the Times of Israel, Anadolu and the Jerusalem Post, 2 August 2026</text>
+</svg>
