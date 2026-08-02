@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Palestine's embassies around the world</title>
+  <desc id="d">Stylised world panel with flag pins marking Palestinian missions — New York, London, Paris, Brussels, Berlin, Cairo, Moscow, Ankara, Beijing, Pretoria, Santiago — with English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".4"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- abstract continents -->
+  <g fill="#26262c" filter="url(#sh)">
+    <path d="M300 340 Q 360 280 460 300 Q 520 320 500 400 Q 470 470 380 460 Q 300 440 300 340 Z"/>
+    <path d="M420 500 Q 480 480 500 560 Q 505 650 450 680 Q 410 640 415 560 Z"/>
+    <path d="M700 300 Q 780 260 860 290 Q 900 330 880 380 Q 800 400 740 380 Q 700 350 700 300 Z"/>
+    <path d="M760 420 Q 840 400 880 470 Q 900 560 840 620 Q 780 600 760 520 Z"/>
+    <path d="M920 300 Q 1060 250 1200 300 Q 1280 340 1240 420 Q 1120 460 1000 420 Q 930 380 920 300 Z"/>
+    <path d="M1220 560 Q 1290 540 1330 590 Q 1320 640 1260 640 Q 1220 610 1220 560 Z"/>
+  </g>
+
+  <!-- flag pins -->
+  <g>
+    <g transform="translate(350,320)"><path d="M0 0 L0 -34" stroke="#c7a86b" stroke-width="4"/><rect x="0" y="-34" width="30" height="7" fill="#0b0b0c"/><rect x="0" y="-27" width="30" height="7" fill="#f2eee8"/><rect x="0" y="-20" width="30" height="7" fill="#286344"/><path d="M0 -34 L11 -24 L0 -14 Z" fill="#8a1f2d"/><circle cx="0" cy="0" r="5" fill="#c7a86b"/></g>
+    <g transform="translate(756,308)"><path d="M0 0 L0 -34" stroke="#c7a86b" stroke-width="4"/><rect x="0" y="-34" width="30" height="7" fill="#0b0b0c"/><rect x="0" y="-27" width="30" height="7" fill="#f2eee8"/><rect x="0" y="-20" width="30" height="7" fill="#286344"/><path d="M0 -34 L11 -24 L0 -14 Z" fill="#8a1f2d"/><circle cx="0" cy="0" r="5" fill="#c7a86b"/></g>
+    <g transform="translate(800,340)"><circle cx="0" cy="0" r="5" fill="#c7a86b"/></g>
+    <g transform="translate(830,320)"><circle cx="0" cy="0" r="5" fill="#c7a86b"/></g>
+    <g transform="translate(840,460)"><path d="M0 0 L0 -34" stroke="#c7a86b" stroke-width="4"/><rect x="0" y="-34" width="30" height="7" fill="#0b0b0c"/><rect x="0" y="-27" width="30" height="7" fill="#f2eee8"/><rect x="0" y="-20" width="30" height="7" fill="#286344"/><path d="M0 -34 L11 -24 L0 -14 Z" fill="#8a1f2d"/><circle cx="0" cy="0" r="5" fill="#c7a86b"/></g>
+    <g transform="translate(1000,300)"><circle cx="0" cy="0" r="5" fill="#c7a86b"/></g>
+    <g transform="translate(1160,330)"><path d="M0 0 L0 -34" stroke="#c7a86b" stroke-width="4"/><rect x="0" y="-34" width="30" height="7" fill="#0b0b0c"/><rect x="0" y="-27" width="30" height="7" fill="#f2eee8"/><rect x="0" y="-20" width="30" height="7" fill="#286344"/><path d="M0 -34 L11 -24 L0 -14 Z" fill="#8a1f2d"/><circle cx="0" cy="0" r="5" fill="#c7a86b"/></g>
+    <g transform="translate(1270,600)"><circle cx="0" cy="0" r="5" fill="#c7a86b"/></g>
+    <g transform="translate(452,640)"><circle cx="0" cy="0" r="5" fill="#c7a86b"/></g>
+    <g transform="translate(820,590)"><circle cx="0" cy="0" r="5" fill="#c7a86b"/></g>
+  </g>
+
+  <text x="90" y="120" class="sans ivory" font-size="52" font-weight="800">The flag on every map</text>
+  <text x="90" y="170" class="sans muted" font-size="27">Palestine's ambassadors, embassies and missions — the directory</text>
+  <text x="1510" y="120" class="arabic ivory" font-size="44" font-weight="700" text-anchor="end">العلم على كل خريطة</text>
+  <text x="1510" y="170" class="arabic muted" font-size="25" text-anchor="end">سفراء فلسطين وسفاراتها وبعثاتها حول العالم — الدليل</text>
+  <text x="800" y="850" class="mono" fill="#59a97d" font-size="23" text-anchor="middle">150+ recognitions · delegations upgrading to embassies · London Jan 2026 · Paris Mar 2026</text>
+</svg>
