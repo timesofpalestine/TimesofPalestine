@@ -10,7 +10,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: pages-hourly
+  group: pages-build
   cancel-in-progress: false
 jobs:
   build-and-deploy:
