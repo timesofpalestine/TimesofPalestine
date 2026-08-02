@@ -2476,6 +2476,24 @@ SPECIALS = [
         "nav": {"en": "TOP 100", "ar": "قائمة المئة"},
     },
     {
+        # Standing reader service (owner directive 2026-08-02): the scholarship
+        # guide stays pinned on the front page and is updated as cycles move.
+        "requires_original": "palestine-scholarships-guide-2026",
+        "href": _original_story_href("palestine-scholarships-guide-2026"),
+        "kicker": {"en": "Standing guide for students", "ar": "دليل دائم للطلبة"},
+        "title": {"en": "The Scholarship Map: funded study for Palestinians worldwide",
+                  "ar": "خريطة المنح: دراسة ممولة للفلسطينيين حول العالم"},
+        "dek": {"en": "100+ universities in 25+ countries fund Palestinian students, bachelor's to PhD. Every major channel, every window, updated as deadlines move.",
+                "ar": "أكثر من مئة جامعة في أكثر من ٢٥ دولة تموّل الطلبة الفلسطينيين من البكالوريوس إلى الدكتوراه. كل القنوات الكبرى ونوافذها، محدّثة أولاً بأول."},
+        "cta": {"en": "Find your scholarship →", "ar": "اعثر على منحتك ←"},
+        "img": "/media/times-of-palestine-scholarships-2026.svg",
+        "img_alt": {"en": "The scholarship map: routes from Palestine to the world's universities",
+                    "ar": "خريطة المنح: طرق من فلسطين إلى جامعات العالم"},
+        "ticker": {"en": "The Scholarship Map: funded study for Palestinians, updated",
+                   "ar": "خريطة المنح الدراسية للفلسطينيين — محدّثة"},
+        "nav": {"en": "Scholarships", "ar": "المنح الدراسية"},
+    },
+    {
         "href": {"en": "/suha-arafat/index-en.html", "ar": "/suha-arafat/index-ar.html"},
         "kicker": {"en": "Special investigation", "ar": "تحقيق خاص"},
         "title": {"en": "The Widow and the Ledger", "ar": "الأرملة والدفتر"},

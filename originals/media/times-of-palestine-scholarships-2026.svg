@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Scholarships for Palestine: the world map of open doors</title>
+  <desc id="d">Illustration for the standing scholarship guide: a graduation cap at the center of radiating routes to program nodes labeled UK, Germany, Ireland, Türkiye, Japan, Qatar, US and the Arab world, with English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".4"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="70" y="82" class="sans ivory" font-size="44" font-weight="800">THE SCHOLARSHIP MAP</text>
+  <text x="1530" y="82" class="arabic ivory" font-size="40" font-weight="700" text-anchor="end">خريطة المنح الدراسية</text>
+  <text x="70" y="122" class="sans muted" font-size="24">100+ universities · 25+ countries · bachelor's to PhD · updated as deadlines move</text>
+
+  <!-- routes -->
+  <g stroke="#c7a86b" stroke-width="4" fill="none" stroke-dasharray="3 12" stroke-linecap="round" opacity=".9">
+    <path d="M800 490 C 700 380, 520 330, 380 320"/>
+    <path d="M800 490 C 740 370, 640 300, 610 250"/>
+    <path d="M800 490 C 860 370, 950 300, 990 250"/>
+    <path d="M800 490 C 900 380, 1080 330, 1220 320"/>
+    <path d="M800 490 C 680 480, 500 470, 380 480"/>
+    <path d="M800 490 C 920 480, 1100 470, 1220 480"/>
+    <path d="M800 490 C 760 580, 640 630, 520 650"/>
+    <path d="M800 490 C 840 580, 960 630, 1080 650"/>
+  </g>
+
+  <!-- graduation cap center -->
+  <g filter="url(#sh)">
+    <circle cx="800" cy="490" r="86" fill="#16161a" stroke="#c7a86b" stroke-width="5"/>
+    <path d="M740 480 L800 452 L860 480 L800 508 Z" fill="#f2eee8"/>
+    <path d="M770 492 v26 a30 14 0 0 0 60 0 v-26" fill="none" stroke="#f2eee8" stroke-width="6"/>
+    <path d="M856 482 v34" stroke="#c7a86b" stroke-width="4"/>
+    <circle cx="856" cy="522" r="5" fill="#c7a86b"/>
+  </g>
+
+  <!-- destination nodes -->
+  <g class="sans ivory" font-size="24" font-weight="700" text-anchor="middle">
+    <g filter="url(#sh)"><rect x="300" y="290" width="160" height="56" rx="10" fill="#16161a" stroke="#3d4f6b" stroke-width="3"/><text x="380" y="326">UK</text></g>
+    <g filter="url(#sh)"><rect x="530" y="196" width="160" height="56" rx="10" fill="#16161a" stroke="#3d4f6b" stroke-width="3"/><text x="610" y="232">GERMANY</text></g>
+    <g filter="url(#sh)"><rect x="910" y="196" width="160" height="56" rx="10" fill="#16161a" stroke="#3d4f6b" stroke-width="3"/><text x="990" y="232">IRELAND</text></g>
+    <g filter="url(#sh)"><rect x="1140" y="290" width="160" height="56" rx="10" fill="#16161a" stroke="#3d4f6b" stroke-width="3"/><text x="1220" y="326">TÜRKİYE</text></g>
+    <g filter="url(#sh)"><rect x="300" y="452" width="160" height="56" rx="10" fill="#16161a" stroke="#286344" stroke-width="3"/><text x="380" y="488">QATAR</text></g>
+    <g filter="url(#sh)"><rect x="1140" y="452" width="160" height="56" rx="10" fill="#16161a" stroke="#286344" stroke-width="3"/><text x="1220" y="488">JAPAN</text></g>
+    <g filter="url(#sh)"><rect x="440" y="622" width="160" height="56" rx="10" fill="#16161a" stroke="#8a1f2d" stroke-width="3"/><text x="520" y="658">US</text></g>
+    <g filter="url(#sh)"><rect x="1000" y="622" width="180" height="56" rx="10" fill="#16161a" stroke="#8a1f2d" stroke-width="3"/><text x="1090" y="658">ARAB WORLD</text></g>
+  </g>
+
+  <text x="800" y="790" class="arabic muted" font-size="26" text-anchor="middle">من البكالوريوس إلى الدكتوراه.. أبواب مفتوحة لطلبة فلسطين في العالم</text>
+  <text x="70" y="862" class="sans muted" font-size="19">Graphic: Times of Palestine · Standing guide, updated as programs open and close</text>
+</svg>
