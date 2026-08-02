@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">The empty chair: Gaza's table without the Palestinian Authority</title>
+  <desc id="d">A negotiating table with occupied seats for Washington, the Board of Peace, Cairo, Abu Dhabi and the factions — and one empty, unlit chair marked for the Palestinian Authority. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".4"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- the table -->
+  <g filter="url(#sh)">
+    <ellipse cx="800" cy="560" rx="440" ry="150" fill="#16161a" stroke="#3a3a42" stroke-width="4"/>
+    <ellipse cx="800" cy="545" rx="440" ry="150" fill="#1d1e21" stroke="#3a3a42" stroke-width="3"/>
+  </g>
+
+  <!-- occupied seats: filled figures -->
+  <g fill="#286344">
+    <circle cx="460" cy="420" r="30"/><rect x="425" y="452" width="70" height="46" rx="18"/>
+    <circle cx="660" cy="370" r="30"/><rect x="625" y="402" width="70" height="46" rx="18"/>
+    <circle cx="940" cy="370" r="30"/><rect x="905" y="402" width="70" height="46" rx="18"/>
+    <circle cx="1140" cy="420" r="30"/><rect x="1105" y="452" width="70" height="46" rx="18"/>
+    <circle cx="800" cy="740" r="30"/><rect x="765" y="772" width="70" height="46" rx="18"/>
+  </g>
+  <g class="sans muted" font-size="21" text-anchor="middle">
+    <text x="460" y="530">Washington</text>
+    <text x="660" y="345">Board of Peace</text>
+    <text x="940" y="345">Cairo</text>
+    <text x="1140" y="530">Abu Dhabi</text>
+    <text x="800" y="850">The factions · الفصائل</text>
+  </g>
+
+  <!-- the empty chair -->
+  <g filter="url(#sh)">
+    <g stroke="#8a1f2d" stroke-width="5" fill="none" stroke-dasharray="10 8">
+      <rect x="240" y="560" width="90" height="14" rx="6"/>
+      <rect x="240" y="574" width="14" height="80"/>
+      <rect x="316" y="574" width="14" height="80"/>
+      <rect x="240" y="470" width="14" height="104"/>
+      <rect x="240" y="470" width="90" height="14" rx="6"/>
+    </g>
+  </g>
+  <text x="285" y="700" class="sans" fill="#c96a6a" font-size="23" font-weight="800" text-anchor="middle">The PA</text>
+  <text x="285" y="732" class="arabic" fill="#c96a6a" font-size="22" text-anchor="middle">السلطة الفلسطينية</text>
+
+  <text x="90" y="120" class="sans ivory" font-size="52" font-weight="800">The empty chair</text>
+  <text x="90" y="170" class="sans muted" font-size="27">Everyone who decides Gaza's future has a seat — except the Palestinian state's government</text>
+  <text x="1510" y="120" class="arabic ivory" font-size="44" font-weight="700" text-anchor="end">الكرسي الفارغ</text>
+  <text x="1510" y="170" class="arabic muted" font-size="25" text-anchor="end">لكل من يقرّر مستقبل غزة مقعد.. إلا حكومة الدولة الفلسطينية</text>
+  <text x="800" y="260" class="mono" fill="#59a97d" font-size="23" text-anchor="middle">Board of Peace: zero Palestinian members · NCAG reports to Mladenov, not Ramallah</text>
+</svg>
