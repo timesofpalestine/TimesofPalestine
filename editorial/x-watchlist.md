@@ -61,6 +61,7 @@ Rules of use:
 | @RepRashida | Rep. Rashida Tlaib |
 | @YousefMunayyer | Yousef Munayyer |
 | @4noura | Noura Erakat |
+| Rashid Khalidi — رشيد خالدي (no active personal X; track via interviews, lectures and shared video clips) | Historian, Columbia's Edward Said Professor Emeritus; author of "The Hundred Years' War on Palestine"; TOP 100 honoree. Owner-flagged 2026-08-02: important name — sweep for his new interviews, lectures and essays; his interventions are coverage, not just commentary. |
 
 ## What "ahead of the curve" means operationally
 
