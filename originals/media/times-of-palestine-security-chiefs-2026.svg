@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">The Palestinian security establishment, mapped</title>
+  <desc id="d">Organisational chart of the Palestinian security services: the presidency at the top, with the General Intelligence, Preventive Security, National Security Forces, Civil Police, Military Intelligence and Presidential Guard branching beneath, with English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".4"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- presidency node -->
+  <g filter="url(#sh)">
+    <rect x="620" y="220" width="360" height="96" rx="14" fill="#8a1f2d"/>
+    <text x="800" y="262" class="sans ivory" font-size="26" font-weight="800" text-anchor="middle">THE PRESIDENCY</text>
+    <text x="800" y="296" class="arabic ivory" font-size="23" text-anchor="middle">القائد الأعلى — يعيّن بمرسوم</text>
+  </g>
+
+  <!-- connectors -->
+  <g stroke="#3a3a42" stroke-width="4" fill="none">
+    <path d="M800 316 L800 380"/>
+    <path d="M240 470 L240 420 Q240 380 300 380 L1300 380 Q1360 380 1360 420 L1360 470"/>
+    <path d="M464 470 L464 380 M688 470 L688 380 M912 470 L912 380 M1136 470 L1136 380"/>
+  </g>
+
+  <!-- six service nodes -->
+  <g filter="url(#sh)" class="sans">
+    <g>
+      <rect x="130" y="470" width="220" height="150" rx="12" fill="#16161a" stroke="#c7a86b" stroke-width="3"/>
+      <text x="240" y="516" class="ivory" font-size="20" font-weight="800" text-anchor="middle">General Intelligence</text>
+      <text x="240" y="548" class="arabic muted" font-size="20" text-anchor="middle">المخابرات العامة</text>
+      <text x="240" y="592" class="mono" fill="#c7a86b" font-size="18" text-anchor="middle">Faraj · 2009–</text>
+    </g>
+    <g>
+      <rect x="354" y="470" width="220" height="150" rx="12" fill="#16161a" stroke="#3a3a42" stroke-width="3"/>
+      <text x="464" y="516" class="ivory" font-size="20" font-weight="800" text-anchor="middle">Preventive Security</text>
+      <text x="464" y="548" class="arabic muted" font-size="20" text-anchor="middle">الأمن الوقائي</text>
+      <text x="464" y="592" class="mono" fill="#59a97d" font-size="18" text-anchor="middle">al-Aqra</text>
+    </g>
+    <g>
+      <rect x="578" y="470" width="220" height="150" rx="12" fill="#16161a" stroke="#3a3a42" stroke-width="3"/>
+      <text x="688" y="516" class="ivory" font-size="20" font-weight="800" text-anchor="middle">National Security</text>
+      <text x="688" y="548" class="arabic muted" font-size="20" text-anchor="middle">قوات الأمن الوطني</text>
+      <text x="688" y="592" class="mono" fill="#59a97d" font-size="18" text-anchor="middle">Khalil · 2025–</text>
+    </g>
+    <g>
+      <rect x="802" y="470" width="220" height="150" rx="12" fill="#16161a" stroke="#3a3a42" stroke-width="3"/>
+      <text x="912" y="516" class="ivory" font-size="20" font-weight="800" text-anchor="middle">Civil Police</text>
+      <text x="912" y="548" class="arabic muted" font-size="20" text-anchor="middle">الشرطة المدنية</text>
+      <text x="912" y="592" class="mono" fill="#c96a6a" font-size="18" text-anchor="middle">record thin</text>
+    </g>
+    <g>
+      <rect x="1026" y="470" width="220" height="150" rx="12" fill="#16161a" stroke="#3a3a42" stroke-width="3"/>
+      <text x="1136" y="516" class="ivory" font-size="20" font-weight="800" text-anchor="middle">Military Intelligence</text>
+      <text x="1136" y="548" class="arabic muted" font-size="20" text-anchor="middle">الاستخبارات العسكرية</text>
+      <text x="1136" y="592" class="mono" fill="#59a97d" font-size="18" text-anchor="middle">al-Khatib · 2026–</text>
+    </g>
+    <g>
+      <rect x="1250" y="470" width="220" height="150" rx="12" fill="#16161a" stroke="#3a3a42" stroke-width="3"/>
+      <text x="1360" y="516" class="ivory" font-size="20" font-weight="800" text-anchor="middle">Presidential Guard</text>
+      <text x="1360" y="548" class="arabic muted" font-size="20" text-anchor="middle">الحرس الرئاسي</text>
+      <text x="1360" y="592" class="mono" fill="#59a97d" font-size="18" text-anchor="middle">Daajneh</text>
+    </g>
+  </g>
+
+  <text x="90" y="120" class="sans ivory" font-size="50" font-weight="800">Who holds the guns of the Authority</text>
+  <text x="90" y="170" class="sans muted" font-size="26">Every commander appointed by decree — no parliament has reviewed one since 2007</text>
+  <text x="1510" y="120" class="arabic ivory" font-size="42" font-weight="700" text-anchor="end">من يمسك سلاح السلطة</text>
+  <text x="1510" y="170" class="arabic muted" font-size="25" text-anchor="end">كل قائد يُعيَّن بمرسوم.. ولا برلمان يراجع تعييناً منذ 2007</text>
+  <text x="800" y="840" class="mono" fill="#59a97d" font-size="23" text-anchor="middle">interior ministry: Ziad Hab al-Rih · assistant supreme commander: Lt. Gen. Ismail Jabr</text>
+</svg>
