@@ -136,7 +136,7 @@ HEALTH = None
 ORIGINAL_CATEGORIES = {
     "gaza", "westbank", "politics", "economy", "accountability", "research",
     "bitcoin", "diaspora", "arts", "sports", "social", "opinion", "news", "humans",
-    "health", "archive",
+    "health", "archive", "arabaid",
 }
 ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 ORIGINAL_BODY_STATS = {}
@@ -340,7 +340,27 @@ HEALTH_RX = re.compile(
     r"أطراف صناعية|بتر|تأهيل|غسيل الكلى|تطعيم|لقاح|شلل الأطفال|وباء|سوء التغذية|"
     r"الطب عن بعد|صدمة نفسية|صحة نفسية|ولادة|أمومة", re.I)
 
+# What Arab states and institutions are doing FOR Palestinians — politically,
+# economically, in aid, education and culture (owner directive 2026-08-02).
+# Both an Arab actor AND an act of support must appear, so ordinary regional
+# coverage doesn't leak into the section.
+_ARAB_ACTORS = (
+    r"egypt|jordan|saudi|\buae\b|emirat|qatar|kuwait|bahrain|\boman\b|morocc|"
+    r"algeria|tunisia|iraq|leban|arab league|\bgcc\b|gulf cooperation|"
+    r"مصر|المصري|الأردن|السعودية|الإمارات|قطر|الكويت|البحرين|سلطنة عمان|عُمان|"
+    r"المغرب|الجزائر|تونس|العراق|لبنان|الجامعة العربية|مجلس التعاون")
+_ARAB_SUPPORT = (
+    r"\baid\b|convoy|field hospital|reconstruct|rebuild|pledge|grant|scholarship|"
+    r"donat|fund|treat|evacuat|(?:aid|medical|humanitarian) corridor|airlift|"
+    r"air ?drop|relief|rehabilitat|"
+    r"solidarit|twinn|cultural exchange|"
+    r"مساعدات|قافلة|قوافل|مستشفى ميداني|إعمار|منحة|منح دراسية|تبرع|تمويل|علاج|"
+    r"إجلاء|ممر طبي|إنزال جوي|إغاثة|إسناد|تضامن|كفالة|توأمة")
+ARAB_AID_RX = re.compile(
+    rf"(?s)^(?=.*(?:{_ARAB_ACTORS}))(?=.*(?:{_ARAB_SUPPORT}))", re.I)
+
 CATEGORY_RULES = [
+    ("arabaid", ARAB_AID_RX),
     ("accountability", ACCOUNTABILITY_RX),
     ("health", HEALTH_RX),
     ("bitcoin", BTC_SECTION_RX),
@@ -1719,6 +1739,7 @@ STR = {
         "hero_label": "TOP STORY",
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
                      "humans": "Real Lives", "health": "Health & Healing",
+                     "arabaid": "Arab Support",
                      "archive": "From the Archive",
                      "diaspora": "The Diaspora",
                      "arts": "Culture & Arts", "sports": "Sport",
@@ -1784,6 +1805,7 @@ STR = {
         "hero_label": "الخبر الأبرز",
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
                      "humans": "حكايات فلسطينية", "health": "الصحة والتعافي",
+                     "arabaid": "الإسناد العربي",
                      "archive": "من الأرشيف",
                      "diaspora": "الشتات الفلسطيني",
                      "arts": "الثقافة والفنون", "sports": "رياضة",
@@ -1835,12 +1857,12 @@ STR = {
 # Focus sections sit high on the page; each edition leads with its editorial priority.
 # Research (think tanks / OSINT) comes first: news before it becomes news.
 SECTION_ORDER = {
-    "en": ["research", "gaza", "westbank", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "en": ["research", "gaza", "westbank", "arabaid", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
-    "ar": ["research", "gaza", "westbank", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "ar": ["research", "gaza", "westbank", "arabaid", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
 }
-FOCUS_SECTIONS = {"research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive"}  # shown even with one story
+FOCUS_SECTIONS = {"research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid"}  # shown even with one story
 
 WEEKDAYS_AR = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
 MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",

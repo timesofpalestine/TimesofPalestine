@@ -613,6 +613,35 @@ class SportsRelevanceTests(unittest.TestCase):
         self.assertIsNotNone(out)
 
 
+class ArabSupportSectionTests(unittest.TestCase):
+    """The Arab Support division (owner directive 2026-08-02): wire items
+    about Arab actors helping Palestinians land in the arabaid section."""
+
+    def test_arab_actor_plus_assistance_categorizes_as_arabaid(self):
+        record = item()
+        record.update({
+            "title": "Jordan dispatches medical aid convoy to Gaza field hospitals",
+            "dek": "The army sent ten trucks of medicines to its hospitals in the Strip.",
+        })
+        self.assertEqual(build.categorize(record), "arabaid")
+
+    def test_arabic_wire_support_story_categorizes_as_arabaid(self):
+        record = item()
+        record.update({
+            "title": "مصر ترسل قافلة مساعدات جديدة إلى قطاع غزة عبر معبر رفح",
+            "dek": "شاحنات محملة بالغذاء والدواء دخلت القطاع صباح اليوم.",
+        })
+        self.assertEqual(build.categorize(record), "arabaid")
+
+    def test_arab_actor_without_assistance_does_not_leak_in(self):
+        record = item()
+        record.update({
+            "title": "Egypt and Israel discuss security arrangements along the border",
+            "dek": "Talks in Cairo covered the Philadelphi corridor patrols.",
+        })
+        self.assertNotEqual(build.categorize(record), "arabaid")
+
+
 class OriginalRemoteLedeTests(unittest.TestCase):
     """A desk report may carry a remote lede only when the exact URL has a
     media-rights.json entry; verification failures degrade to the fallback
