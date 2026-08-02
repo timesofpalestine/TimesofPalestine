@@ -613,6 +613,37 @@ class SportsRelevanceTests(unittest.TestCase):
         self.assertIsNotNone(out)
 
 
+class OriginalRemoteLedeTests(unittest.TestCase):
+    """A desk report may carry a remote lede only when the exact URL has a
+    media-rights.json entry; verification failures degrade to the fallback
+    chain instead of failing the build or publishing a broken frame."""
+
+    URL = "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eizenkot.jpg?width=640"
+
+    def test_manifest_backed_remote_lede_attaches_when_image_is_live(self):
+        record = item()
+        record["original"] = True
+        with mock.patch.object(build, "remote_image_ok", return_value=True):
+            build.attach_media(record, self.URL, local_original=True)
+        self.assertEqual(record["image"], self.URL)
+        self.assertIn("Wikimedia", record["media"]["credit"])
+
+    def test_dead_remote_lede_leaves_original_photoless_not_broken(self):
+        record = item()
+        record["original"] = True
+        with mock.patch.object(build, "remote_image_ok", return_value=False):
+            build.attach_media(record, self.URL, local_original=True)
+        self.assertIsNone(record["image"])
+
+    def test_remote_lede_without_rights_entry_still_fails_loudly(self):
+        record = item()
+        record["original"] = True
+        with self.assertRaises(build.PublishingError):
+            build.attach_media(
+                record, "https://example.com/random-photo.jpg",
+                local_original=True)
+
+
 class RunningStoryDedupeTests(unittest.TestCase):
     """Near-identical headlines are one running story: neither an updated
     count nor days between filings may put the same headline on the site
