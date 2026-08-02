@@ -413,6 +413,19 @@
       "category": "health",
       "maxAgeHours": 168,
       "cap": 3
+    },
+    {
+      "id": "radar-arab-support",
+      "name": "TOP Radar",
+      "type": "gnews",
+      "query": "(Egypt OR Jordan OR Saudi OR UAE OR Qatar OR Kuwait OR Oman OR Bahrain OR Morocco OR Algeria OR \"Arab League\") (aid OR reconstruction OR scholarship OR scholarships OR \"field hospital\" OR pledge OR grant OR \"medical evacuation\") (Gaza OR Palestinian OR Palestinians)",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "site": "https://news.google.com",
+      "category": "arabaid",
+      "maxAgeHours": 168,
+      "cap": 5
     }
   ],
   "ar": [
@@ -588,6 +601,19 @@
       "site": "https://t.me/arabi21news",
       "wire": true,
       "filterPalestine": true,
+      "cap": 5
+    },
+    {
+      "id": "radar-arab-support-ar",
+      "name": "راصد TOP",
+      "type": "gnews",
+      "query": "(مصر OR الأردن OR السعودية OR الإمارات OR قطر OR الكويت OR عمان OR البحرين OR المغرب OR الجزائر OR \"الجامعة العربية\") (مساعدات OR إعمار OR منح OR \"مستشفى ميداني\" OR قافلة OR إغاثة OR علاج) (غزة OR فلسطين OR الفلسطينيين)",
+      "hl": "ar",
+      "gl": "PS",
+      "ceid": "PS:ar",
+      "site": "https://news.google.com",
+      "category": "arabaid",
+      "maxAgeHours": 168,
       "cap": 5
     }
   ]

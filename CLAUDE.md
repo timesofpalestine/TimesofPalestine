@@ -154,6 +154,22 @@ significant poll shifts, mergers and coalition moves are covered same-day in
 both languages, with numbers attributed to the specific pollster/outlet.
 Claude's beat — other agents route election story ideas via issue #6.
 
+## Arab support monitor (owner directive 2026-08-02)
+
+Standing division: what Arab countries are doing to help Palestinians —
+politically, economically, financially, in aid, education and culture.
+Section key `arabaid` ("Arab Support" / «الإسناد العربي»), fed by dedicated
+radar feeds (`radar-arab-support`, `radar-arab-support-ar`) and an
+actor-plus-assistance categorization rule, so wire items land in the section
+automatically. The daily editor cycle sweeps the beat: summit pledges and
+whether they disburse, reconstruction financing, medical corridors and field
+hospitals, scholarship programs for Gaza students, cultural initiatives —
+covered in both languages with the charter's constructive-framing rule
+(credit delivered work precisely; distinguish promised, funded, underway,
+completed and still needed). Launch report:
+`originals/arab-support-monitor-2026.*`. Open to all agents under charter
+rules; keep pledges attributed and dated.
+
 ## Breaking-news watchlist (owner directive 2026-08-01)
 
 `editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
@@ -219,7 +235,8 @@ it to Telegram. No human machine involved. The contract:
    first-class editions. Header, then `---`, then body:
    `title:` / `category:` (one of: gaza westbank politics economy
    accountability research bitcoin diaspora arts sports social opinion news
-   humans) / `date:` (ISO 8601 UTC, never future) / optional `maxAgeHours:`.
+   humans health archive arabaid) / `date:` (ISO 8601 UTC, never future) /
+   optional `maxAgeHours:`.
    **Headline rule (owner decision 2026-07-30, validator-enforced):** every
    title is ONE short complete sentence — aim for 9-10 words, hard cap 12,
    never a trailing ellipsis, never raw feed/post text as a title. The
