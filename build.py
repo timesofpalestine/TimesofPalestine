@@ -2328,8 +2328,12 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 [lang=ar] .fr-card .ttl{line-height:1.55;font-weight:700}
 .fr-card .go{display:block;color:#c7a86b;font-size:.78rem;font-weight:700;margin-top:.5rem}
 @media(max-width:960px){.fr-grid{grid-template-columns:1fr}.fr-card img{aspect-ratio:16/4}}
-.fr-card.vote{background:#10131a;border-color:rgba(101,130,175,.55)}
-.fr-card.vote .kick,.fr-card.vote .go{color:#8fa8cf}
+.fr-card.vote{position:relative;isolation:isolate;background:linear-gradient(145deg,#0d121a,#141c28);border-color:rgba(101,130,175,.7)}
+.fr-card.vote::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 110% at 90% 0%,rgba(143,168,207,.24),transparent 48%);pointer-events:none;z-index:0}
+.fr-card.vote img{aspect-ratio:16/7;opacity:.82;filter:saturate(1.08) contrast(1.06)}
+.fr-card.vote .body{position:relative;z-index:1;background:linear-gradient(180deg,rgba(10,13,20,.78),rgba(10,13,20,.95));border-top:1px solid rgba(143,168,207,.35)}
+.fr-card.vote .kick,.fr-card.vote .go{color:#b6c6e3}
+.fr-card.vote .ttl{font-size:1.03rem}
 .latest .orig{display:inline-block;background:var(--green);color:#fff;font-size:.56rem;font-weight:800;letter-spacing:.08em;padding:.1rem .35rem;border-radius:2px;margin-inline-start:.4rem;vertical-align:middle}
 @media(max-width:560px){
   .topbar .wrap{gap:.45rem .8rem}
@@ -2652,11 +2656,14 @@ def render_page(lang, items, built_at):
             _vkick = f"🗳 إسرائيل تنتخب · بعد {_days} يوماً"
             _vttl = "مرصد الانتخابات: من يتقدّم، ومن يتراجع، وأي ائتلاف يتشكّل"
             _vcta = "تابع المرصد ←"
+            _valt = "مرصد توازنات انتخابات إسرائيل 2026"
         else:
             _vkick = f"🗳 ISRAEL VOTES · {_days} DAYS"
             _vttl = "The coalition tracker: who leads, who gains, who falls"
             _vcta = "Follow the tracker →"
+            _valt = "Israel election coalition tracker graphic"
         vote_card = (f'<a class="fr-card vote" href="{esc(_vhref)}">'
+                     f'<img src="/media/times-of-palestine-israel-election-2026.svg" alt="{esc(_valt)}" loading="lazy">'
                      f'<span class="body"><span class="kick">{esc(_vkick)}</span>'
                      f'<span class="ttl">{esc(_vttl)}</span>'
                      f'<span class="go">{esc(_vcta)}</span></span></a>')
