@@ -2051,7 +2051,7 @@ nav.sections a.tip{color:#3fd07c;border-color:#3fd07c;background:rgba(63,208,124
 .hero-imgwrap>a{display:block}
 .hero-imgwrap>a>img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;background:#d4d1c9;transition:transform .55s ease}
 .hero-imgwrap:hover>a>img{transform:scale(1.03)}
-.hero-overlay{position:absolute;bottom:0;inset-inline:0;padding:3.5rem 1.5rem 1.5rem;background:linear-gradient(to top,rgba(4,4,6,.93) 0%,rgba(4,4,6,.55) 45%,transparent 100%)}
+.hero-overlay{position:absolute;bottom:0;inset-inline:0;padding:3.5rem 1.5rem 1.5rem;background:linear-gradient(to top,rgba(4,4,6,.96) 0%,rgba(4,4,6,.82) 42%,rgba(4,4,6,.42) 74%,transparent 100%)}
 .hero-overlay .label{color:#ff606d;font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.45rem;display:block}
 [lang=ar] .hero-overlay .label{letter-spacing:.04em;font-size:.78rem}
 .hero-overlay h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.35rem,2.5vw,2.15rem);line-height:1.14;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
@@ -3034,7 +3034,11 @@ def render_section_page(lang, cat, items, built_at):
     desc = (f"كل تغطية «{name}» في تايمز أوف فلسطين — أخبار فلسطينية مستقلة تُحدَّث باستمرار."
             if lang == "ar" else
             f"All {name} coverage from Times of Palestine — independent Palestinian news, updated continuously.")
-    count_label = f"{len(items)} قصة" if lang == "ar" else f"{len(items)} stories"
+    n = len(items)
+    if lang == "ar":
+        count_label = "قصة واحدة" if n == 1 else ("قصتان" if n == 2 else f"{n} قصص" if n <= 10 else f"{n} قصة")
+    else:
+        count_label = f"{n} story" if n == 1 else f"{n} stories"
     cards = "".join(card(it, lang, "story/") for it in items)
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
