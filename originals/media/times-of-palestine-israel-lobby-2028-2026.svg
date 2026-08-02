@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">The lobby's ledger meets the 2028 race</title>
+  <desc id="d">Bar chart of pro-Israel lobby money received by 2028 US presidential contenders per the Track AIPAC scoresheet — Harris 9 million dollars, Booker 846 thousand, Kelly 495 thousand, Buttigieg 191 thousand, Newsom zero by pledge — with a note that the lobby gave 58 million dollars to Congress in the last cycle. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}.gold{fill:#c7a86b}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="70" y="80" class="sans ivory" font-size="44" font-weight="800">THE LOBBY'S LEDGER MEETS 2028</text>
+  <text x="1530" y="80" class="arabic ivory" font-size="38" font-weight="700" text-anchor="end">دفتر اللوبي وسباق 2028</text>
+  <text x="70" y="120" class="sans muted" font-size="24">Career pro-Israel lobby money to presidential contenders · Track AIPAC scoresheet, 2026</text>
+
+  <!-- bars: log-ish visual scaling for readability, amounts printed -->
+  <g class="sans" font-size="26">
+    <text x="360" y="215" class="ivory" font-weight="700" text-anchor="end">Kamala Harris</text>
+    <rect x="390" y="190" width="900" height="36" rx="6" fill="#8a1f2d"/>
+    <text x="1305" y="217" class="mono gold" font-weight="700">$9.0m</text>
+
+    <text x="360" y="295" class="ivory" font-weight="700" text-anchor="end">Cory Booker</text>
+    <rect x="390" y="270" width="340" height="36" rx="6" fill="#8a1f2d" opacity=".85"/>
+    <text x="745" y="297" class="mono gold" font-weight="700">$846k</text>
+    <text x="905" y="297" class="muted" font-size="21">cut AIPAC funding off in 2026</text>
+
+    <text x="360" y="375" class="ivory" font-weight="700" text-anchor="end">Mark Kelly</text>
+    <rect x="390" y="350" width="240" height="36" rx="6" fill="#8a1f2d" opacity=".75"/>
+    <text x="645" y="377" class="mono gold" font-weight="700">$495k</text>
+
+    <text x="360" y="455" class="ivory" font-weight="700" text-anchor="end">Pete Buttigieg</text>
+    <rect x="390" y="430" width="140" height="36" rx="6" fill="#8a1f2d" opacity=".65"/>
+    <text x="545" y="457" class="mono gold" font-weight="700">$191k</text>
+
+    <text x="360" y="535" class="ivory" font-weight="700" text-anchor="end">Gavin Newsom</text>
+    <rect x="390" y="510" width="8" height="36" fill="#286344"/>
+    <text x="415" y="537" class="mono" fill="#5fae83" font-weight="700">$0</text>
+    <text x="480" y="537" class="muted" font-size="21">"never accepted and never will accept" AIPAC support</text>
+  </g>
+
+  <path d="M70 620 H1530" stroke="#33342f" stroke-width="3"/>
+  <text x="70" y="680" class="mono gold" font-size="46" font-weight="700">$58m</text>
+  <text x="240" y="680" class="sans muted" font-size="24">to members of Congress in one cycle — $25m of it against six progressive primary challengers</text>
+  <text x="70" y="730" class="arabic muted" font-size="23">ثمانية وخمسون مليون دولار لأعضاء الكونغرس في دورة واحدة.. منها 25 مليوناً لإسقاط التقدميين</text>
+
+  <text x="70" y="810" class="sans ivory" font-size="26" font-weight="700">The money still flows — but for the first time, candidates treat it as a liability to disown.</text>
+  <text x="1530" y="850" class="arabic muted" font-size="23" text-anchor="end">المال يتدفق.. لكن المرشحين صاروا يتبرؤون منه للمرة الأولى</text>
+  <text x="70" y="862" class="sans muted" font-size="19">Graphic: Times of Palestine · Sources: Track AIPAC, the Guardian, OpenSecrets, 2024–2026</text>
+</svg>
