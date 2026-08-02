@@ -1,128 +1,134 @@
 {
-  "version": 1,
-  "assets": [
-    {
-      "asset": "originals/media/times-of-palestine-2026-election-succession-timeline.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-2026-succession-power-map.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-france-pause-gaza-timeline.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-chile-palestinian-friendship-day-timeline.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-madrid-palestinian-culture-pact-accountability.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-washington-brief-2026-07-30-gaza-money.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-east-asia-palestine-projects-2026.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "CEAPAD Project List, Japan Ministry of Foreign Affairs, 22 July 2026"
-    },
-    {
-      "asset": "og-banner.png",
-      "rightsBasis": "owned",
-      "credit": "Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "icon-512.png",
-      "rightsBasis": "owned",
-      "credit": "Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "signal-qr.png",
-      "rightsBasis": "operational",
-      "credit": "Times of Palestine Signal contact code",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "suha-arafat/media/gaza-airport-1998-arafat-clinton.jpg",
-      "rightsBasis": "public-domain",
-      "credit": "White House photograph, public domain",
-      "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
-      "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
-      "note": "Yasser Arafat and Bill Clinton at the Gaza International Airport ribbon-cutting, 14 Dec 1998, Suha Arafat behind them"
-    },
-    {
-      "asset": "suha-arafat/media/suha-arafat-hillary-clinton-gaza-1998.jpg",
-      "rightsBasis": "public-domain",
-      "credit": "White House photograph, public domain",
-      "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
-      "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
-      "note": "Suha Arafat with First Lady Hillary Clinton at a women's event in Gaza, 14 Dec 1998"
-    },
-    {
-      "asset": "suha-arafat/media/zahwa-silla-malta-arrival.jpg",
-      "rightsBasis": "courtesy",
-      "credit": "Photograph obtained by Times of Palestine",
-      "source": "Supplied to Times of Palestine by the publisher, July 2026",
-      "licenseUrl": null,
-      "note": "Zahwa Arafat receiving Silla, a wounded Gaza child, on arrival in Malta"
-    },
-    {
-      "asset": "suha-arafat/media/zahwa-silla-malta.jpg",
-      "rightsBasis": "courtesy",
-      "credit": "Photograph obtained by Times of Palestine",
-      "source": "Supplied to Times of Palestine by the publisher, July 2026",
-      "licenseUrl": null,
-      "note": "Zahwa Arafat with Silla in Malta"
-    },
-    {
-      "asset": "suha-arafat/media/zahwa-graduation-malta-2017.jpg",
-      "rightsBasis": "courtesy",
-      "credit": "Photograph obtained by Times of Palestine",
-      "source": "Supplied to Times of Palestine by the publisher, August 2026",
-      "licenseUrl": null,
-      "note": "Zahwa Arafat's University of Malta graduation, November 2017"
-    },
-    {
-      "asset": "suha-arafat/media/zahwa-diploma-university-of-malta.jpg",
-      "rightsBasis": "courtesy",
-      "credit": "Photograph obtained by Times of Palestine",
-      "source": "Supplied to Times of Palestine by the publisher, August 2026",
-      "licenseUrl": null,
-      "note": "University of Malta diploma of Zahwa El Kodwa (al-Qudwa), 13 Nov 2017"
-    },
-    {
-      "asset": "suha-arafat/media/zahwa-gaza-child-malta.jpg",
-      "rightsBasis": "courtesy",
-      "credit": "Photograph obtained by Times of Palestine",
-      "source": "Supplied to Times of Palestine by the publisher, August 2026",
-      "licenseUrl": null,
-      "note": "Zahwa Arafat playing with a Gaza child under treatment in Malta"
-    },
-    {
-      "asset": "originals/media/mohammad-dahlan-facebook-post-2026-08-01.jpg",
-      "rightsBasis": "news-reporting screenshot",
-      "credit": "Photo: Mohammad Dahlan's verified Facebook page (screenshot)",
-      "source": "Public statement posted on Mohammad Dahlan's verified Facebook account, 1 Aug 2026; supplied to the newsroom by the owner",
-      "note": "The post is the subject of the article (Kushner halt confirmation); reproduced for news reporting and quotation of a public figure's public statement"
-    }
-  ]
+ "version": 1,
+ "assets": [
+  {
+   "asset": "originals/media/times-of-palestine-2026-election-succession-timeline.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-2026-succession-power-map.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-france-pause-gaza-timeline.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-chile-palestinian-friendship-day-timeline.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-madrid-palestinian-culture-pact-accountability.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-washington-brief-2026-07-30-gaza-money.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-east-asia-palestine-projects-2026.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "CEAPAD Project List, Japan Ministry of Foreign Affairs, 22 July 2026"
+  },
+  {
+   "asset": "og-banner.png",
+   "rightsBasis": "owned",
+   "credit": "Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "icon-512.png",
+   "rightsBasis": "owned",
+   "credit": "Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "signal-qr.png",
+   "rightsBasis": "operational",
+   "credit": "Times of Palestine Signal contact code",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "suha-arafat/media/gaza-airport-1998-arafat-clinton.jpg",
+   "rightsBasis": "public-domain",
+   "credit": "White House photograph, public domain",
+   "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
+   "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
+   "note": "Yasser Arafat and Bill Clinton at the Gaza International Airport ribbon-cutting, 14 Dec 1998, Suha Arafat behind them"
+  },
+  {
+   "asset": "suha-arafat/media/suha-arafat-hillary-clinton-gaza-1998.jpg",
+   "rightsBasis": "public-domain",
+   "credit": "White House photograph, public domain",
+   "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
+   "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
+   "note": "Suha Arafat with First Lady Hillary Clinton at a women's event in Gaza, 14 Dec 1998"
+  },
+  {
+   "asset": "suha-arafat/media/zahwa-silla-malta-arrival.jpg",
+   "rightsBasis": "courtesy",
+   "credit": "Photograph obtained by Times of Palestine",
+   "source": "Supplied to Times of Palestine by the publisher, July 2026",
+   "licenseUrl": null,
+   "note": "Zahwa Arafat receiving Silla, a wounded Gaza child, on arrival in Malta"
+  },
+  {
+   "asset": "suha-arafat/media/zahwa-silla-malta.jpg",
+   "rightsBasis": "courtesy",
+   "credit": "Photograph obtained by Times of Palestine",
+   "source": "Supplied to Times of Palestine by the publisher, July 2026",
+   "licenseUrl": null,
+   "note": "Zahwa Arafat with Silla in Malta"
+  },
+  {
+   "asset": "suha-arafat/media/zahwa-graduation-malta-2017.jpg",
+   "rightsBasis": "courtesy",
+   "credit": "Photograph obtained by Times of Palestine",
+   "source": "Supplied to Times of Palestine by the publisher, August 2026",
+   "licenseUrl": null,
+   "note": "Zahwa Arafat's University of Malta graduation, November 2017"
+  },
+  {
+   "asset": "suha-arafat/media/zahwa-diploma-university-of-malta.jpg",
+   "rightsBasis": "courtesy",
+   "credit": "Photograph obtained by Times of Palestine",
+   "source": "Supplied to Times of Palestine by the publisher, August 2026",
+   "licenseUrl": null,
+   "note": "University of Malta diploma of Zahwa El Kodwa (al-Qudwa), 13 Nov 2017"
+  },
+  {
+   "asset": "suha-arafat/media/zahwa-gaza-child-malta.jpg",
+   "rightsBasis": "courtesy",
+   "credit": "Photograph obtained by Times of Palestine",
+   "source": "Supplied to Times of Palestine by the publisher, August 2026",
+   "licenseUrl": null,
+   "note": "Zahwa Arafat playing with a Gaza child under treatment in Malta"
+  },
+  {
+   "asset": "originals/media/mohammad-dahlan-facebook-post-2026-08-01.jpg",
+   "rightsBasis": "news-reporting screenshot",
+   "credit": "Photo: Mohammad Dahlan's verified Facebook page (screenshot)",
+   "source": "Public statement posted on Mohammad Dahlan's verified Facebook account, 1 Aug 2026; supplied to the newsroom by the owner",
+   "note": "The post is the subject of the article (Kushner halt confirmation); reproduced for news reporting and quotation of a public figure's public statement"
+  },
+  {
+   "asset": "originals/media/haya-washington-life-school-2026.mp4",
+   "rightsBasis": "publisher-supplied — the organization's own published video, provided to the newsroom by the owner for news reporting",
+   "credit": "Video: Haya Washington",
+   "source": "Haya Washington"
+  }
+ ]
 }
