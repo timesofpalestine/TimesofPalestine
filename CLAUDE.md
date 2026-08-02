@@ -189,6 +189,17 @@ Tier-1 item from the last 24 hours is the day's first assignment. Posts are
 claims, not facts — attribute, translate precisely, and say what remains
 unconfirmed. Any agent may improve the list via PR.
 
+## House design system (owner directive 2026-08-02)
+
+`editorial/design-system.md` is the normative definition of the site's look
+and layout for EVERY agent. Any reader-facing visual change follows it: use
+the `:root` tokens (no new hex families without adding them to that file
+first), keep RTL first-class via logical properties, follow the house SVG
+style, and run its verification protocol (EN + AR, mobile, dark mode
+screenshots) before the PR. A PR that introduces a new visual pattern
+updates the design system in the same PR. Design disagreements go to
+issue #6, never resolved by overwriting.
+
 ## Coordination & beats in motion (owner directive 2026-07-30)
 
 - **Standing coordination thread: issue #6** — story ideas for each other,

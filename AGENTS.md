@@ -15,7 +15,7 @@ everything it builds:
 
 - The top story follows the news cycle (freshest-window hero selection) and
   is never a multi-day-old feature. Nothing reader-facing may "squat".
-- The site builds and deploys twice hourly; changes that slow the refresh
+- The site builds and deploys every 10 minutes; changes that slow the refresh
   chain or cache staleness into the reader's view are regressions.
 - Fresh stories carry the pulsing NEW/جديد mark (under 90 minutes);
   timestamps are minute-level and honest; the breaking ticker stays
@@ -98,13 +98,30 @@ everything it builds:
 7. **Never commit** `__pycache__/`, `dist/`, cache/state JSON — see
    `.gitignore`. Never commit secrets; `TELEGRAM_BOT_TOKEN` and
    `ANTHROPIC_API_KEY` live in GitHub secrets only.
+8. **Bitcoin dispatch desk (owner-approved 2026-08-02, Copilot PR #9):**
+   `bitcoin_dispatch.py` + `.github/workflows/bitcoin-dispatch.yml` file an
+   OpenAI-powered bilingual original on the financial-freedom beat every
+   48 h. Requires the `OPENAI_API_KEY` repo secret (skips gracefully without
+   it). Pause via the Actions tab; the script is fail-open and must never
+   block the news build.
+9. **Daily editor-in-chief cycle (owner directive 2026-08-01):** Claude runs
+   `.github/workflows/daily-editor.yml` each morning (06:30 UTC), choosing and
+   shipping 3–5 improvements a day across editorial, design, platform and the
+   franchises, via a `claude/daily-editor-<date>` PR merged on green CI. Other
+   agents: expect a daily PR with this prefix; don't revert its layers —
+   disagreements go to issue #6. To pause the cycle, disable the workflow in
+   the Actions tab (don't delete the file).
 
 ## Division of labor (suggested, not exclusive)
 
 - **Codex/ChatGPT:** Telegram delivery, workflow reliability, tests.
 - **Copilot:** renderer/validator hardening via PRs (reviewed before merge).
 - **Claude:** the AI newsroom layers (briefs, investigations desk), editorial
-  pipeline, dedupe/completeness gates, and the daily **Washington Brief**
+  pipeline, dedupe/completeness gates, the annual **TOP 100**
+  (`originals/palestine-top100-<year>.*` — Times of Palestine's list of the
+  100 most influential Palestinians worldwide, published each August; owner
+  directive 2026-08-01; refresh the research sweep fully each edition, never
+  recycle the prior year's blurbs), and the daily **Washington Brief**
   (`originals/washington-brief-*` + matching SVGs in `originals/media/`) —
   a scheduled deep-research report on DC's Iran/Israel/Mideast thinking for a
   Palestinian audience. Other agents: don't create files with that prefix or
@@ -112,6 +129,76 @@ everything it builds:
 
 Improving each other's areas is welcome — via PR, with the existing layer kept
 working.
+
+## PA litigation docket (owner directive 2026-08-02)
+
+Standing beat: track lawsuits against the PA/PLO worldwide — the revived US
+terror-judgment cases (Sokolow $655.5M, Fuld, PSJVTA suits), Israeli court
+judgments enforced via clearance-revenue deductions, the prisoner-payments
+audit that decides both, and any European enforcement or conditionality
+proceedings. Launch report: `originals/pa-litigation-docket-2026.*`. The
+daily editor cycle sweeps this docket; significant developments are covered
+same-day in both languages. Claude's beat.
+
+## Israeli election watch (owner directive 2026-08-02)
+
+Standing beat through the 27 October 2026 Knesset election: the coalitions
+forming and collapsing, who leads, who gains, who falls, and the names —
+Eisenkot/Yashar, Netanyahu/Likud, Bennett–Lapid/Beyachad, Golan/Democrats,
+Liberman, Gantz, Ben Gvir, Smotrich, Deri, and the Arab lists (Mansour
+Abbas/Ra'am, Odeh–Tibi/Hadash-Ta'al) whose seats both blocs need and refuse.
+Always frame the Palestinian stakes: annexation, Gaza policy, the kingmaker
+paradox facing Palestinian citizens of Israel. Launch report:
+`originals/israel-election-2026-*`. The daily editor cycle sweeps this beat;
+significant poll shifts, mergers and coalition moves are covered same-day in
+both languages, with numbers attributed to the specific pollster/outlet.
+Claude's beat — other agents route election story ideas via issue #6.
+
+## Scholarship guide (owner directive 2026-08-02)
+
+Standing reader service: `originals/palestine-scholarships-guide-2026.*`
+maps scholarship programs for Palestinian students worldwide (bachelor's
+to PhD, all fields) and is pinned on the front page via the SPECIALS band.
+The daily editor cycle keeps it current — new windows added, passed
+deadlines retired, both languages, links verified. Deadlines are always
+phrased as verify-at-source. Claude's beat; other agents may PR additions
+with sources.
+
+## Arab support monitor (owner directive 2026-08-02)
+
+Standing division: what Arab countries are doing to help Palestinians —
+politically, economically, financially, in aid, education and culture.
+Section key `arabaid` ("Arab Support" / «الإسناد العربي»), fed by dedicated
+radar feeds (`radar-arab-support`, `radar-arab-support-ar`) and an
+actor-plus-assistance categorization rule, so wire items land in the section
+automatically. The daily editor cycle sweeps the beat: summit pledges and
+whether they disburse, reconstruction financing, medical corridors and field
+hospitals, scholarship programs for Gaza students, cultural initiatives —
+covered in both languages with the charter's constructive-framing rule
+(credit delivered work precisely; distinguish promised, funded, underway,
+completed and still needed). Launch report:
+`originals/arab-support-monitor-2026.*`. Open to all agents under charter
+rules; keep pledges attributed and dated.
+
+## Breaking-news watchlist (owner directive 2026-08-01)
+
+`editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
+(and named Facebook/Instagram) accounts that break Palestine news first.
+Every automated editorial run sweeps Tier 1 before other work; an uncovered
+Tier-1 item from the last 24 hours is the day's first assignment. Posts are
+claims, not facts — attribute, translate precisely, and say what remains
+unconfirmed. Any agent may improve the list via PR.
+
+## House design system (owner directive 2026-08-02)
+
+`editorial/design-system.md` is the normative definition of the site's look
+and layout for EVERY agent. Any reader-facing visual change follows it: use
+the `:root` tokens (no new hex families without adding them to that file
+first), keep RTL first-class via logical properties, follow the house SVG
+style, and run its verification protocol (EN + AR, mobile, dark mode
+screenshots) before the PR. A PR that introduces a new visual pattern
+updates the design system in the same PR. Design disagreements go to
+issue #6, never resolved by overwriting.
 
 ## Coordination & beats in motion (owner directive 2026-07-30)
 
@@ -126,19 +213,6 @@ working.
   care, vaccination recovery, rehabilitation. Eight topics queued in
   topics.json; Palestine Health Wire feed feeds the section. Open to all
   agents under the charter rules.
-- **Palestinian Public Ledger (new, Codex-owned):** a forensic public-finance
-  and economic-power report published once every 14 days. Reconcile PA
-  budgets, final accounts, cash reports, audit findings, procurement,
-  public debt and arrears against banking, exchange, corporate, donor and
-  multilateral records. Compare like with like across governments, beginning
-  with the Salam Fayyad era and the latest complete/current accounts. A
-  discrepancy is a reporting lead, never proof of corruption. Rank companies
-  from audited disclosures; do not present corporate profit as personal
-  wealth, infer undisclosed beneficial ownership, or describe lawful profit
-  as misconduct. Serious claims involving a living person or identifiable
-  organization require corroboration and meaningful right of reply. Follow
-  `editorial/palestinian-public-ledger.md` for the reproducible method and
-  coordinate exact angles in issue #6 (owner directive 2026-07-30).
 
 ## Asking each other for help (owner directive 2026-07-30)
 
@@ -182,7 +256,8 @@ it to Telegram. No human machine involved. The contract:
    first-class editions. Header, then `---`, then body:
    `title:` / `category:` (one of: gaza westbank politics economy
    accountability research bitcoin diaspora arts sports social opinion news
-   humans) / `date:` (ISO 8601 UTC, never future) / optional `maxAgeHours:`.
+   humans health archive arabaid) / `date:` (ISO 8601 UTC, never future) /
+   optional `maxAgeHours:`.
    **Headline rule (owner decision 2026-07-30, validator-enforced):** every
    title is ONE short complete sentence — aim for 9-10 words, hard cap 12,
    never a trailing ellipsis, never raw feed/post text as a title. The
@@ -217,7 +292,12 @@ it to Telegram. No human machine involved. The contract:
    open-source assets) saved to `originals/media/` with a
    `media-rights.json` entry (asset, rightsBasis, credit, licenseUrl);
    (2) a house SVG illustration of the subject (`times-of-palestine-*.svg`,
-   auto-owned, no manifest entry). Text-only desk reports fall back to the
+   auto-owned, no manifest entry). An original's `image:` may also be a
+   remote rights-cleared URL (e.g. a Wikimedia Commons
+   `Special:FilePath/<name>?width=640` portrait) when that EXACT URL has a
+   `media-rights.json` entry — it is verified live at build time, and an
+   optional `imageFallback:` header (usually the report's house SVG) takes
+   over if the remote image is dead, before the generic category cover. Text-only desk reports fall back to the
    branded category covers automatically — never the bare flag placeholder.
    **Visual-first (owner decision 2026-07-30): no article runs as dead
    text.** Every story ships a visual — real photo, subject illustration
@@ -228,7 +308,9 @@ it to Telegram. No human machine involved. The contract:
    **Video (embeds only, never hosted):** `!video[caption](url)` on its own
    line. Whitelisted hosts ONLY: YouTube watch/shorts/youtu.be URLs (renders
    as the privacy youtube-nocookie player), public Telegram post URLs
-   (`https://t.me/<channel>/<id>`), or a direct https `.mp4`. Any other host
+   (`https://t.me/<channel>/<id>`), public Instagram reels/posts
+   (`https://www.instagram.com/reel/<id>/` — tracking params are stripped),
+   or a direct https `.mp4`. Any other host
    falls through as literal text and the validator SKIPS the article.
    Telegram-sourced wire stories automatically embed their source post —
    don't hand-embed those.
