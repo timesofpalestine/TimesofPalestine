@@ -48,6 +48,7 @@ GAZA = ZoneInfo("Asia/Gaza")
 # is the matching scannable code, copied into dist/ at build time.
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
 SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"  # tips go to the bot, not the channel. Subscribe-with-Google removed 2026-08-02 (owner: no email pop-up on the site).
+TELEGRAM_CHANNEL_URL = "https://t.me/timesofpalestin"  # public delivery channel, for reader follow links
 BASE_URL = "https://timesofpalestine.com"
 
 TOP_SOURCE = {"en": "Times of Palestine", "ar": "تايمز أوف فلسطين"}
@@ -1596,6 +1597,9 @@ STR = {
         "site_name": "Times of Palestine",
         "masthead_top": "TIMES", "masthead_bottom": "OF PALESTINE",
         "kicker": "Every outlet · Every story · No censorship",
+        "view_all": "View all →", "search_nav": "🔍 Search",
+        "search_title": "Search", "search_prompt": "Search the Times of Palestine archive…",
+        "search_none": "No results", "follow_tg": "Telegram channel →",
         "breaking": "BREAKING", "latest": "The Latest",
         "updated": "Updated", "tz": "Jerusalem time",
         "switch_lang": "العربية", "switch_href": "../ar/",
@@ -1658,6 +1662,9 @@ STR = {
         "site_name": "تايمز أوف فلسطين",
         "masthead_top": "تايمز أوف", "masthead_bottom": "فلسطين",
         "kicker": "كل المصادر · كل الأخبار · بلا رقابة",
+        "view_all": "كل التغطية ←", "search_nav": "🔍 بحث",
+        "search_title": "بحث", "search_prompt": "ابحث في أرشيف تايمز أوف فلسطين…",
+        "search_none": "لا نتائج", "follow_tg": "قناتنا على تيليغرام ←",
         "breaking": "عاجل", "latest": "آخر الأخبار",
         "updated": "آخر تحديث", "tz": "بتوقيت القدس",
         "switch_lang": "English", "switch_href": "../en/",
@@ -1863,7 +1870,7 @@ CSS = """
 [lang=ar]{--serif:Tahoma,"Noto Naskh Arabic","Amiri",serif;--sans:Tahoma,"Noto Sans Arabic",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.58;text-rendering:optimizeLegibility}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;text-rendering:optimizeLegibility}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .wrap{max-width:var(--max);margin-inline:auto;padding-inline:clamp(16px,2.5vw,26px)}
@@ -1965,6 +1972,17 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .sec-head h2{font-family:var(--serif);font-weight:900;font-size:1.45rem;color:var(--black);letter-spacing:-.01em}
 [lang=ar] .sec-head h2{font-weight:700;letter-spacing:0}
 .sec-head .rule{flex:1;height:1px;background:var(--line-dark)}
+.sec-head .viewall{font-size:.76rem;font-weight:800;letter-spacing:.03em;color:var(--red);white-space:nowrap}
+.sec-head .count{font-size:.8rem;color:var(--muted);white-space:nowrap}
+.sectionpage{padding-block:1.6rem}
+.searchpage{padding-block:1.6rem;max-width:760px}
+.searchpage h1{font-family:var(--serif);font-weight:900;font-size:1.6rem;margin-bottom:1rem}
+.searchbox{width:100%;font-size:1.05rem;padding:.7rem .9rem;border:2px solid var(--line-dark);border-radius:8px;background:var(--card);color:var(--ink)}
+.searchres{list-style:none;margin-top:1.2rem}
+.searchres li{padding:.8rem 0;border-bottom:1px solid var(--line)}
+.searchres a{font-weight:800;color:var(--black)}
+.searchres .c{font-size:.72rem;color:var(--red);font-weight:700;margin-inline-start:.6rem;text-transform:uppercase}
+.searchres p{font-size:.88rem;color:var(--muted);margin-top:.2rem}
 .sec-copy{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem 1.4rem;flex-wrap:wrap;margin-bottom:1.3rem}
 .sec-copy .sec-head{margin-bottom:0}
 .sec-meta{font-size:.74rem;font-weight:700;color:var(--muted);white-space:nowrap}
@@ -2470,6 +2488,7 @@ def render_page(lang, items, built_at):
                 f'</div>{media}</article>')
 
     section_blocks = ""
+    cats_present = {it["cat"] for it in items}  # archive pages exist only for real cats
     for k in order:
         if k == "opinion" or not visible(k):
             continue
@@ -2484,8 +2503,10 @@ def render_page(lang, items, built_at):
         else:
             cols = f" g{min(len(pool), 4)}"; grid = f'<div class="grid{cols}">{"".join(card(it, lang, P) for it in pool)}</div>'
         focus_cls = " focus" if k in FOCUS_SECTIONS else ""
+        viewall = (f'<a class="viewall" href="section-{k}.html">{t["view_all"]}</a>'
+                   if k in cats_present else "")
         section_blocks += (f'<section class="block" id="{k}"><div class="wrap">'
-                           f'<div class="sec-copy"><div class="sec-head{focus_cls}"><h2>{t["sections"][k]}</h2><span class="rule"></span></div>{section_meta(sections[k], lang)}</div>'
+                           f'<div class="sec-copy"><div class="sec-head{focus_cls}"><h2>{t["sections"][k]}</h2><span class="rule"></span>{viewall}</div>{section_meta(sections[k], lang)}</div>'
                            + (('<p class="social-note">' + ("تقارير عامة من صحفيين مواطنين وشهود على الأرض. لا يُنشر أي تقرير حساس قبل موافقة محرر بشري على نسخته المحددة. " if lang == "ar" else "Public dispatches from citizen journalists and witnesses. Sensitive reports publish only after a human editor approves the exact version. ") + '<a href="#tips">' + ("أرسل تقريرك عبر خط «سيغنال» الآمن ←" if lang == "ar" else "Send yours via the secure Signal line →") + "</a></p>") if k == "social" else "") + f'{featured}{grid}</div></section>')
 
     opinion_block = ""
@@ -2563,7 +2584,7 @@ def render_page(lang, items, built_at):
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
 
-<nav class="sections" aria-label="Primary"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_links}<a class="tip" href="#tips">🔒 {t['tips_nav']}</a></div></nav>
+<nav class="sections" aria-label="Primary"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_links}<a class="home" href="search.html">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></div></nav>
 
 <main id="top">
   <div class="wrap hero-zone">
@@ -2590,7 +2611,7 @@ def render_page(lang, items, built_at):
       <span class="contact-id">{SIGNAL_USERNAME}</span></p><p class="footer-contact secondary"><a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} →</a> <span class="contact-id">{TELEGRAM_BOT_NAME}</span></p></div>
   </div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
     <span>{t['attribution']}</span>
     <a href="{t['switch_href']}">{t['footer_lang']}</a>
   </div>
@@ -2634,7 +2655,8 @@ def render_story(it, lang, related, rail, built_at):
                     f'title="{emb_cap}" loading="lazy" frameborder="0"></iframe></div>'
                     f'<figcaption>{emb_cap}</figcaption></figure>')
         kind = t["kind_original"] if it.get("original") else t["kind_brief"]
-        summary = (f'<p class="kind">{kind}</p><p class="byline">{t["byline"]}</p>'
+        summary = (f'<p class="kind">{kind}</p>'
+                   f'<p class="byline">{t["byline"]} · {reading_time_label(brief, lang)}</p>'
                    f'{story_toc}{paras}{source_embed}')
     else:
         story_toc = ""
@@ -2826,12 +2848,115 @@ def render_rss(lang, items, built_at):
             f"<lastBuildDate>{format_datetime(built_at, usegmt=True)}</lastBuildDate>"
             + "".join(entries) + "</channel></rss>")
 
+def reading_time_label(text, lang):
+    """Honest minute-level estimate; Arabic reads slightly denser per word."""
+    words = len(re.findall(r"\S+", text or ""))
+    minutes = max(1, round(words / (180 if lang == "ar" else 200)))
+    if lang == "ar":
+        if minutes == 1:
+            return "قراءة دقيقة واحدة"
+        if minutes == 2:
+            return "قراءة دقيقتين"
+        if minutes <= 10:
+            return f"قراءة {minutes} دقائق"
+        return f"قراءة {minutes} دقيقة"
+    return f"{minutes} min read"
+
+
+def render_section_page(lang, cat, items, built_at):
+    """Real category archive page: every live story in the section, own URL,
+    own meta description — the SEO landing page the one-page front can't be."""
+    t = STR[lang]
+    name = t["sections"].get(cat, cat)
+    desc = (f"كل تغطية «{name}» في تايمز أوف فلسطين — أخبار فلسطينية مستقلة تُحدَّث باستمرار."
+            if lang == "ar" else
+            f"All {name} coverage from Times of Palestine — independent Palestinian news, updated continuously.")
+    count_label = f"{len(items)} قصة" if lang == "ar" else f"{len(items)} stories"
+    cards = "".join(card(it, lang, "story/") for it in items)
+    return f"""<!DOCTYPE html>
+<html lang="{t['lang']}" dir="{t['dir']}">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48">
+<title>{esc(name)} — {t['site_name']}</title>
+<meta name="description" content="{esc(desc)}">
+<link rel="canonical" href="{BASE_URL}/{lang}/section-{cat}.html">
+<link href="/assets/site.css" rel="stylesheet">
+</head>
+<body>
+<div class="backbar"><a href="./">{t['back_home']}</a><a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
+<header class="masthead compact"><div class="wrap">
+  <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
+</div></header>
+<main class="wrap sectionpage">
+  <div class="sec-head focus"><h2>{esc(name)}</h2><span class="rule"></span><span class="count">{count_label}</span></div>
+  <div class="grid g4">{cards}</div>
+</main>
+<footer><div class="wrap"><div class="flagline"></div>
+  <div class="legal"><span>© {built_at.year} {t['site_name']}</span> <a href="./">{t['back_home']}</a> <a href="about.html">{'من نحن' if lang == 'ar' else 'About'}</a></div>
+</div></footer>
+</body></html>"""
+
+
+_SEARCH_JS = """
+(function(){var IDX=null;var q=document.getElementById("q"),res=document.getElementById("res");
+function load(){if(IDX)return Promise.resolve(IDX);
+  return fetch("search-index.json").then(function(r){return r.json()}).then(function(d){IDX=d;return d});}
+function render(hits,none){res.textContent="";
+  if(!hits.length){var li=document.createElement("li");li.className="none";li.textContent=none;res.appendChild(li);return;}
+  hits.forEach(function(e){var li=document.createElement("li");
+    var a=document.createElement("a");a.href=e.u;a.textContent=e.t;
+    var c=document.createElement("span");c.className="c";c.textContent=e.c;
+    var p=document.createElement("p");p.textContent=e.d;
+    li.appendChild(a);li.appendChild(c);li.appendChild(p);res.appendChild(li);});}
+function go(){var v=q.value.trim().toLowerCase();if(v.length<2){res.textContent="";return;}
+  load().then(function(ix){var terms=v.split(/\\s+/);
+    var hits=ix.filter(function(e){var hay=(e.t+" "+e.d+" "+e.c).toLowerCase();
+      return terms.every(function(w){return hay.indexOf(w)!==-1});}).slice(0,40);
+    render(hits,q.dataset.none);});}
+q.addEventListener("input",go);})();
+"""
+
+
+def render_search_page(lang, built_at):
+    """Client-side archive search: fetches the build's index, filters locally.
+    No third-party code; results built with textContent, never innerHTML."""
+    t = STR[lang]
+    return f"""<!DOCTYPE html>
+<html lang="{t['lang']}" dir="{t['dir']}">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48">
+<title>{t['search_title']} — {t['site_name']}</title>
+<meta name="description" content="{esc(t['search_prompt'])}">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{BASE_URL}/{lang}/search.html">
+<link href="/assets/site.css" rel="stylesheet">
+</head>
+<body>
+<div class="backbar"><a href="./">{t['back_home']}</a><a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></div>
+<header class="masthead compact"><div class="wrap">
+  <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
+</div></header>
+<main class="wrap searchpage">
+  <h1>{t['search_title']}</h1>
+  <input id="q" class="searchbox" type="search" placeholder="{esc(t['search_prompt'])}" data-none="{esc(t['search_none'])}" autofocus autocomplete="off">
+  <ol id="res" class="searchres"></ol>
+</main>
+<script>{_SEARCH_JS}</script>
+</body></html>"""
+
+
 def render_sitemap(langs_items, built_at):
     day = built_at.strftime("%Y-%m-%d")
     urls = []
     for lang, items in langs_items:
         urls.append(f"<url><loc>{BASE_URL}/{lang}/</loc><lastmod>{day}</lastmod>"
                     "<changefreq>hourly</changefreq><priority>1.0</priority></url>")
+        for cat in sorted({it["cat"] for it in items}):
+            urls.append(f"<url><loc>{BASE_URL}/{lang}/section-{cat}.html</loc>"
+                        f"<lastmod>{day}</lastmod><changefreq>daily</changefreq>"
+                        "<priority>0.7</priority></url>")
         for it in items:
             changed = it.get("modified") or it["date"]
             urls.append(f"<url><loc>{BASE_URL}/{lang}/story/{it['pid']}.html</loc>"
@@ -2910,7 +3035,21 @@ def main():
         import shutil
         shutil.rmtree(dist / lang / "story", ignore_errors=True)  # drop stale story pages
         (dist / lang / "story").mkdir(parents=True, exist_ok=True)
+        for stale in (dist / lang).glob("section-*.html"):  # archives rebuild fresh too
+            stale.unlink()
         (dist / lang / "index.html").write_text(render_page(lang, items, built_at), encoding="utf-8")
+        for cat in sorted({it["cat"] for it in items}):
+            cat_items = sorted((i2 for i2 in items if i2["cat"] == cat),
+                               key=lambda r: r["date"], reverse=True)
+            (dist / lang / f"section-{cat}.html").write_text(
+                render_section_page(lang, cat, cat_items, built_at), encoding="utf-8")
+        (dist / lang / "search.html").write_text(
+            render_search_page(lang, built_at), encoding="utf-8")
+        (dist / lang / "search-index.json").write_text(json.dumps(
+            [{"t": it["title"], "u": f"/{lang}/story/{it['pid']}.html",
+              "d": truncate(it["dek"], 160),
+              "c": STR[lang]["sections"].get(it["cat"], it["cat"])} for it in items],
+            ensure_ascii=False), encoding="utf-8")
         news = [r for r in items if r["cat"] != "social"]
         rail = ([r for r in news if PALESTINE_RX.search(f"{r['title']} {r['dek']}")] +
                 [r for r in news if not PALESTINE_RX.search(f"{r['title']} {r['dek']}")])[:11]
