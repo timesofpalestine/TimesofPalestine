@@ -2327,7 +2327,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 .fr-card .ttl{display:block;font-family:var(--serif);font-weight:800;font-size:1rem;line-height:1.3;margin-top:.3rem}
 [lang=ar] .fr-card .ttl{line-height:1.55;font-weight:700}
 .fr-card .go{display:block;color:#c7a86b;font-size:.78rem;font-weight:700;margin-top:.5rem}
-@media(max-width:960px){.fr-grid{grid-template-columns:1fr}.fr-card img{aspect-ratio:16/4}}
+@media(max-width:960px){.fr-grid{grid-template-columns:1fr}.fr-card img{aspect-ratio:16/5}}
 .fr-card.vote{position:relative;isolation:isolate;background:linear-gradient(145deg,#0d121a,#141c28);border-color:rgba(101,130,175,.7)}
 .fr-card.vote::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 110% at 90% 0%,rgba(143,168,207,.24),transparent 48%);pointer-events:none;z-index:0}
 .fr-card.vote:hover{border-color:rgba(143,168,207,.95);box-shadow:0 10px 30px rgba(20,35,60,.55)}
@@ -2417,13 +2417,21 @@ def lede_fallback_attrs(it):
     """Remote ledes can die after publish — hotlink walls, deleted uploads,
     CDN churn. no-referrer defeats referer-based blocking; onerror swaps a
     dead photo for the branded category cover so readers never see a broken
-    frame. Local /media/ assets ship with the site and need neither."""
+    frame. Local /media/ assets ship with the site and need neither.
+
+    Wire images also arrive with unpredictable framing — portrait video
+    posters (Telegram) lose ~2/3 of their height in a landscape card slot,
+    and the default upper-third bias still decapitates subjects whose faces
+    sit at the very top of the frame. onload pins portrait images near the
+    top so faces survive every slot; landscape images keep the CSS bias."""
     if not (it.get("image") or "").startswith("http"):
         return ""
     cover = f"times-of-palestine-cover-{it.get('cat', 'news')}.svg"
     if not (ROOT / "originals" / "media" / cover).is_file():
         cover = "times-of-palestine-cover-news.svg"
     return (' referrerpolicy="no-referrer"'
+            " onload=\"if(this.naturalHeight>this.naturalWidth)"
+            "this.style.objectPosition='50% 8%'\""
             f" onerror=\"this.onerror=null;this.src='/media/{cover}'\"")
 
 def card_media(it, pfx):
@@ -2530,6 +2538,9 @@ SPECIALS = [
         "cta": {"en": "Read the full investigation →", "ar": "اقرأ التحقيق كاملاً ←"},
         # Image path relative to dist root — the suha-arafat/ dir is a static feature
         "img": "/suha-arafat/media/suha-arafat-hillary-clinton-gaza-1998.jpg",
+        # Faces sit in the upper third of this archival frame; bias the crop up
+        # so the card ribbon never decapitates the subjects.
+        "focus": "50% 28%",
         "img_alt": {"en": "Suha Arafat accompanies Hillary Clinton in Gaza, 1998",
                     "ar": "سهى عرفات ترافق هيلاري كلينتون في غزة، ١٩٩٨"},
         "ticker": {"en": "Special Investigation: The Widow and the Ledger",
@@ -2561,7 +2572,11 @@ def specials_band_html(lang, items=(), extra=""):
     for s in available_specials(lang, items):
         img_html = ""
         if s.get("img"):
-            img_html = (f'<img src="{esc(s["img"])}" alt="{esc(s["img_alt"][lang])}" loading="lazy">')
+            # Optional per-special focal point: object-position keeps faces in
+            # frame when the card ribbon crops a photo (esp. mobile 16/5).
+            _focus = f' style="object-position:{esc(s["focus"])}"' if s.get("focus") else ""
+            img_html = (f'<img src="{esc(s["img"])}" alt="{esc(s["img_alt"][lang])}"'
+                        f'{_focus} loading="lazy">')
         cards.append(
             f'<a class="fr-card" href="{esc(s["href"][lang])}">{img_html}'
             f'<span class="body"><span class="kick">{esc(s["kicker"][lang])}</span>'
