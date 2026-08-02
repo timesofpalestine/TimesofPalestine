@@ -1857,9 +1857,9 @@ STR = {
 # Focus sections sit high on the page; each edition leads with its editorial priority.
 # Research (think tanks / OSINT) comes first: news before it becomes news.
 SECTION_ORDER = {
-    "en": ["research", "gaza", "westbank", "arabaid", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "en": ["gaza", "westbank", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
-    "ar": ["research", "gaza", "westbank", "arabaid", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "ar": ["gaza", "westbank", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
 }
 FOCUS_SECTIONS = {"research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid"}  # shown even with one story
@@ -2316,8 +2316,26 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .op-grid{grid-template-columns:1fr}
   footer .cols{grid-template-columns:1fr}
 }
+.franchise{margin-block:1.2rem}
+.fr-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.fr-card{display:flex;flex-direction:column;background:var(--black);color:#f2eee8;border-radius:var(--r);overflow:hidden;border:1px solid rgba(199,168,107,.4);transition:transform .25s,box-shadow .25s}
+.fr-card:hover{transform:translateY(-2px);box-shadow:var(--sh-h)}
+.fr-card img{width:100%;aspect-ratio:16/6;object-fit:cover;opacity:.85}
+.fr-card .body{display:block;padding:.7rem .9rem .85rem}
+.fr-card .kick{display:block;color:#c7a86b;font-size:.62rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+[lang=ar] .fr-card .kick{letter-spacing:.02em;font-size:.74rem}
+.fr-card .ttl{display:block;font-family:var(--serif);font-weight:800;font-size:1rem;line-height:1.3;margin-top:.3rem}
+[lang=ar] .fr-card .ttl{line-height:1.55;font-weight:700}
+.fr-card .go{display:block;color:#c7a86b;font-size:.78rem;font-weight:700;margin-top:.5rem}
+@media(max-width:960px){.fr-grid{grid-template-columns:1fr}.fr-card img{aspect-ratio:16/4}}
+.votestrip{background:#10131a;border-block-end:3px solid #3d4f6b;text-align:center}
+.votestrip a{display:block;color:#dfe6f2;font-size:.82rem;font-weight:800;letter-spacing:.08em;padding:.45rem .8rem;text-transform:uppercase}
+[lang=ar] .votestrip a{letter-spacing:0;font-size:.92rem;text-transform:none}
+.votestrip a:hover{color:#fff;background:#151a24}
+.latest .orig{display:inline-block;background:var(--green);color:#fff;font-size:.56rem;font-weight:800;letter-spacing:.08em;padding:.1rem .35rem;border-radius:2px;margin-inline-start:.4rem;vertical-align:middle}
 @media(max-width:560px){
   .topbar .wrap{gap:.45rem .8rem}
+  .hero-overlay{padding:2.4rem 1rem .9rem}
   .topbar .lang{margin-inline-start:0}
   .hero-sub{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr}
@@ -2441,7 +2459,8 @@ def sub_item(it, lang, pfx):
             f'</div></article>')
 
 def latest_item(it, lang, pfx):
-    return (f'<li>{time_tag(it["date"], lang, "t", fresh=True)}'
+    mark = '<span class="orig">TOP</span>' if it.get("original") else ""
+    return (f'<li>{time_tag(it["date"], lang, "t", fresh=True)}{mark}'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'<span class="s">{esc(display_source(it, lang))}</span></li>')
 
@@ -2526,22 +2545,23 @@ def available_specials(lang, items=()):
 
 
 def specials_band_html(lang, items=()):
-    bands = []
+    """The standing franchises as ONE compact row — a card per special —
+    instead of stacked full-height bands (owner-approved compression,
+    2026-08-02). The row sits under the hero; news keeps the page."""
+    cards = []
     for s in available_specials(lang, items):
         img_html = ""
         if s.get("img"):
-            img_html = (f'<a class="sbimg" href="{esc(s["href"][lang])}" aria-hidden="true" tabindex="-1">'
-                        f'<img src="{esc(s["img"])}" alt="{esc(s["img_alt"][lang])}" loading="lazy">'
-                        f'</a>')
-        bands.append(
-            f'<section class="specialband"><div class="wrap">'
-            f'<div class="body"><p class="kick">{esc(s["kicker"][lang])}</p>'
-            f'<h2><a href="{esc(s["href"][lang])}">{esc(s["title"][lang])}</a></h2>'
-            f'<p class="dek">{esc(s["dek"][lang])}</p></div>'
-            f'{img_html}'
-            f'<a class="cta" href="{esc(s["href"][lang])}">{esc(s["cta"][lang])}</a>'
-            f'</div></section>')
-    return "".join(bands)
+            img_html = (f'<img src="{esc(s["img"])}" alt="{esc(s["img_alt"][lang])}" loading="lazy">')
+        cards.append(
+            f'<a class="fr-card" href="{esc(s["href"][lang])}">{img_html}'
+            f'<span class="body"><span class="kick">{esc(s["kicker"][lang])}</span>'
+            f'<span class="ttl">{esc(s["title"][lang])}</span>'
+            f'<span class="go">{esc(s["cta"][lang])}</span></span></a>')
+    if not cards:
+        return ""
+    return (f'<section class="franchise"><div class="wrap"><div class="fr-grid">'
+            + "".join(cards) + '</div></div></section>')
 
 
 def render_page(lang, items, built_at):
@@ -2621,16 +2641,29 @@ def render_page(lang, items, built_at):
     time_str = f"{d.hour:02d}:{d.minute:02d}"
 
     ticker_track = "".join(f'<a href="{href(i, P)}">{esc(i["title"])}</a>' for i in ticker_items)
-    # Prepend the standing specials so they're always visible in the ticker
-    for sp in reversed(available_specials(lang, items)):
-        ticker_track = f'<a href="{esc(sp["href"][lang])}">{esc(sp["ticker"][lang])}</a>' + ticker_track
+    # Israel-votes countdown strip (owner beat): alive until 27 October 2026.
+    vote_strip = ""
+    _eday = datetime(2026, 10, 27, tzinfo=timezone.utc)
+    if now < _eday and any(
+            it.get("link") == f"original:israel-election-2026-tracker.{lang}" for it in items):
+        _days = (_eday - now).days
+        _vhref = _original_story_href("israel-election-2026-tracker")[lang]
+        _vtxt = (f"إسرائيل تنتخب · بعد {_days} يوماً · تابع مرصد الانتخابات ←" if lang == "ar"
+                 else f"ISRAEL VOTES · {_days} DAYS · Follow the coalition tracker →")
+        vote_strip = f'<div class="votestrip"><a href="{esc(_vhref)}">🗳 {_vtxt}</a></div>'
+    # Standing specials ride at the END of the loop — breaking news leads.
+    for sp in available_specials(lang, items):
+        ticker_track += f'<a href="{esc(sp["href"][lang])}">{esc(sp["ticker"][lang])}</a>'
 
     def visible(k):
         return len(sections[k]) >= (1 if k in FOCUS_SECTIONS else 2)
-    nav_links = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in order if visible(k))
-    # Standing-special links in the nav bar (gold accent, always visible)
+    primary = [k for k in ("gaza", "westbank", "arabaid", "research", "politics") if visible(k)]
+    rest = [k for k in order if visible(k) and k not in primary]
+    nav_links = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in primary)
+    # Standing-special links (gold accent) ride with the primary set
     for sp in available_specials(lang, items):
         nav_links += f'<a class="special" href="{esc(sp["href"][lang])}">{esc(sp["nav"][lang])}</a>'
+    nav_links += "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in rest)
 
     def research_featured(it):
         media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"{lede_fallback_attrs(it)}></a>'
@@ -2646,7 +2679,7 @@ def render_page(lang, items, built_at):
     for k in order:
         if k == "opinion" or not visible(k):
             continue
-        pool = sections[k][:8]
+        pool = sections[k][:4]
         featured = ""
         if k == "research":  # lead report gets the full featured-summary treatment
             featured, pool = research_featured(pool[0]), pool[1:]
@@ -2732,7 +2765,7 @@ def render_page(lang, items, built_at):
   <a class="lang" href="{t['switch_href']}">{t['switch_lang']}</a>
 </div></div>
 
-<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
+<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>{vote_strip}
 
 <header class="masthead"><div class="wrap">
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
@@ -2751,9 +2784,10 @@ def render_page(lang, items, built_at):
       <ol>{latest_html}</ol>
     </aside>
   </div>
-  {specials_band}{tips_band}{gaza_panel}
+  {specials_band}{gaza_panel}
   {opinion_block}
   {section_blocks}
+  {tips_band}
 </main>
 
 <footer><div class="wrap">
