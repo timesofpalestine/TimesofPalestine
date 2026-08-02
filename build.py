@@ -2187,7 +2187,7 @@ section.specialband{background:var(--black);color:#fff;margin-block:1.2rem;borde
 .specialband h2 a{color:#fff;text-decoration:none}
 .specialband h2 a:hover{text-decoration:underline}
 .specialband .dek{margin:0;font:400 .95rem/1.55 var(--serif);color:#c9c9d2;max-width:46rem}
-.specialband .cta{flex-shrink:0;font:700 .82rem/1 var(--sans);color:#fff;text-decoration:none;border:1px solid #c7a86b;color:#c7a86b;padding:.7rem 1.1rem;border-radius:2px;white-space:nowrap}
+.specialband .cta{flex-shrink:0;font:700 .82rem/1 var(--sans);text-decoration:none;border:1px solid #c7a86b;color:#c7a86b;padding:.7rem 1.1rem;border-radius:2px;white-space:nowrap}
 .specialband .cta:hover{background:#c7a86b;color:var(--black)}
 .specialband .sbimg{display:block;flex-shrink:0;width:210px;height:140px;overflow:hidden;border-radius:2px;margin-inline-start:auto}
 @media(max-width:640px){.specialband .sbimg{width:100%;height:180px;margin-inline-start:0;order:-1}}
@@ -2247,8 +2247,9 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .story .cta a:hover{background:#a50d1e}
 .story .note{margin-top:.8rem;font-size:.72rem;color:var(--muted)}
 .keep{padding-block:1.8rem}
+.keep .latest{position:static;top:auto}
 .backbar{background:var(--black);display:flex;justify-content:space-between;align-items:center}
-.backbar a{display:block;max-width:800px;margin-inline:auto;padding:.6rem 20px;color:#fff;font-size:.8rem;font-weight:700}
+.backbar a{display:block;max-width:800px;padding:.6rem 20px;color:#fff;font-size:.8rem;font-weight:700}
 .backbar a:hover{color:#f93549}
 /* ── footer ── */
 footer{background:var(--black);color:#b9b9c2;margin-top:2.5rem;padding-block:2.5rem;font-size:.84rem}
@@ -2271,7 +2272,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .hero-overlay h2,.hero-overlay h2 a{color:#fff}
   .story .summary{color:#d6d6de}
   .research-feat .dek{color:#c5c5cf}
-  section.opinion{background:#17171c}
+  section.opinion{background:#17171c;border-top-color:var(--red)}
   .card{box-shadow:0 1px 4px rgba(0,0,0,.35)}
   .card:hover{box-shadow:0 5px 18px rgba(0,0,0,.5)}
   .sub-item:hover{background:rgba(255,255,255,.04)}

@@ -47,11 +47,10 @@ ABOUT = {
              "aggregation we publish original reporting and concise news briefs "
              "written by the TOP Newsdesk, clearly bylined as such."),
             ("Field reports",
-             "Citizen journalists and witnesses send reports from the ground through "
-             "our encrypted tip line. No private tip is ingested by this public "
-             "repository. Public field reports and other sensitive claims carry a "
-             "developing-report label while awaiting additional editorial review. "
-             "Field reports appear in a clearly separated section."),
+             "Citizen journalists and witnesses send dispatches from the ground through "
+             "our encrypted tip line. Field reports go through an editorial check and "
+             "appear in their own clearly labelled section of the site, so readers "
+             "always know the source and nature of what they are reading."),
             ("Editorial standards & corrections",
              "We report without censorship and without favor, we hold power to "
              "account wherever it sits, and we criticize through journalism, never "
@@ -85,10 +84,8 @@ ABOUT = {
              "التحرير وتُنسب إليه بوضوح."),
             ("التقارير الميدانية",
              "يرسل الصحفيون المواطنون والشهود تقاريرهم من الميدان عبر خطنا الآمن "
-             "المشفّر. لا تدخل أي معلومة خاصة إلى هذا المستودع العام. وتُحجب "
-             "التقارير الميدانية العامة وغيرها من الادعاءات الحساسة حتى يوافق "
-             "محرر بشري على النسخة المحددة التي ستُنشر. وتظهر التقارير الميدانية "
-             "في قسم مستقل واضح."),
+             "المشفّر. تخضع التقارير الميدانية لمراجعة تحريرية وتُنشر في قسم خاص "
+             "بها معرَّف بوضوح، حتى يعرف القراء دائماً مصدر ما يقرؤونه وطبيعته."),
             ("المعايير التحريرية والتصويبات",
              "ننقل الخبر بلا رقابة وبلا محاباة، ونحاسب السلطة أينما كانت، وننتقد "
              "بالصحافة المهنية لا بالإساءات الشخصية. وحين نخطئ نصحح فوراً. لطلب "
