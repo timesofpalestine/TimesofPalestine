@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Al-Sharaa and the intifada that shaped him</title>
+  <desc id="d">A timeline from the killing of Muhammad al-Durrah at Gaza's Netzarim junction on 30 September 2000, through Ahmed al-Sharaa's teenage years in Damascus's Mezzeh district, his departure for Iraq in 2003, to the Syrian presidency in 2025 and his account to Al Jazeera's al-Muqabala program. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}.gold{fill:#c7a86b}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="70" y="78" class="sans ivory" font-size="42" font-weight="800">AL-SHARAA AND THE INTIFADA THAT SHAPED HIM</text>
+  <text x="1530" y="78" class="arabic ivory" font-size="40" font-weight="700" text-anchor="end">الشرع والانتفاضة التي شكّلته</text>
+  <text x="70" y="118" class="sans muted" font-size="23">From the al-Durrah image, Gaza 2000, to the presidential palace, Damascus 2025</text>
+  <text x="1530" y="118" class="arabic muted" font-size="22" text-anchor="end">من صورة الدرة في غزة إلى قصر الشعب في دمشق</text>
+
+  <!-- broadcast motif over station 1: a screen radiating -->
+  <g transform="translate(210,230)">
+    <rect x="-46" y="-34" width="92" height="64" rx="6" fill="none" stroke="#c7a86b" stroke-width="3"/>
+    <rect x="-34" y="-22" width="68" height="40" rx="3" fill="#8a1f2d" opacity=".55"/>
+    <path d="M-14 42 L14 42 M0 30 L0 42" stroke="#c7a86b" stroke-width="3"/>
+    <path d="M58 -44 A74 74 0 0 1 74 -8" fill="none" stroke="#c7a86b" stroke-width="3" opacity=".65"/>
+    <path d="M74 -60 A98 98 0 0 1 96 -10" fill="none" stroke="#c7a86b" stroke-width="3" opacity=".35"/>
+  </g>
+
+  <!-- timeline -->
+  <rect x="120" y="516" width="1360" height="4" fill="#33342f"/>
+  <g>
+    <circle cx="210" cy="518" r="15" fill="#8a1f2d" stroke="#c7a86b" stroke-width="3"/>
+    <circle cx="580" cy="518" r="15" fill="#1d1e21" stroke="#c7a86b" stroke-width="3"/>
+    <circle cx="950" cy="518" r="15" fill="#1d1e21" stroke="#c7a86b" stroke-width="3"/>
+    <circle cx="1330" cy="518" r="15" fill="#286344" stroke="#c7a86b" stroke-width="3"/>
+  </g>
+
+  <g class="mono gold" font-size="27" font-weight="700" text-anchor="middle">
+    <text x="210" y="480">30.09.2000</text>
+    <text x="580" y="480">2000–2002</text>
+    <text x="950" y="480">2003</text>
+    <text x="1330" y="480">2025–2026</text>
+  </g>
+
+  <g class="sans ivory" font-size="22" font-weight="700" text-anchor="middle">
+    <text x="210" y="560">Netzarim junction, Gaza</text>
+    <text x="580" y="560">Mezzeh, Damascus</text>
+    <text x="950" y="560">The road to Iraq</text>
+    <text x="1330" y="560">The presidency</text>
+  </g>
+  <g class="sans muted" font-size="19" text-anchor="middle">
+    <text x="210" y="590">Muhammad al-Durrah, 12, killed</text>
+    <text x="210" y="614">in his father's arms — the</text>
+    <text x="210" y="638">intifada's defining image</text>
+    <text x="580" y="590">A teenager at his father's</text>
+    <text x="580" y="614">grocery follows the uprising</text>
+    <text x="580" y="638">night after night</text>
+    <text x="950" y="590">He leaves Damascus at 20,</text>
+    <text x="950" y="614">weeks before the US</text>
+    <text x="950" y="638">invasion of Iraq</text>
+    <text x="1330" y="590">President of Syria; he tells</text>
+    <text x="1330" y="614">Al Jazeera's al-Muqabala what</text>
+    <text x="1330" y="638">those years made of him</text>
+  </g>
+  <g class="arabic muted" font-size="20" text-anchor="middle">
+    <text x="210" y="672">استشهاد محمد الدرة في حضن أبيه</text>
+    <text x="580" y="672">فتى في المزة يتابع الانتفاضة ليلياً</text>
+    <text x="950" y="672">يغادر إلى العراق قبيل الغزو الأميركي</text>
+    <text x="1330" y="672">رئيساً يروي لـ«المقابلة» أثر تلك السنوات</text>
+  </g>
+
+  <!-- the record: Frontline 2021 -->
+  <rect x="70" y="716" width="1460" height="3" fill="#33342f"/>
+  <text x="70" y="762" class="sans ivory" font-size="24" font-style="italic">"I was 17 or 18 years old… I started thinking about how to fulfill my duties defending a people</text>
+  <text x="70" y="794" class="sans ivory" font-size="24" font-style="italic">who are oppressed by occupiers and invaders."</text>
+  <text x="1530" y="762" class="arabic muted" font-size="21" text-anchor="end">«كنت في السابعة عشرة أو الثامنة عشرة..</text>
+  <text x="1530" y="794" class="arabic muted" font-size="21" text-anchor="end">وبدأت أفكر كيف أدافع عن شعبٍ مظلوم»</text>
+  <text x="70" y="826" class="sans muted" font-size="20">— al-Sharaa to PBS Frontline, February 2021, four years before the presidency</text>
+
+  <text x="70" y="866" class="sans muted" font-size="19">Graphic: Times of Palestine · Record: Al Jazeera al-Muqabala, July 2026; PBS Frontline, 2021</text>
+  <text x="1530" y="866" class="arabic muted" font-size="19" text-anchor="end">غرافيك: تايمز أوف فلسطين</text>
+</svg>
