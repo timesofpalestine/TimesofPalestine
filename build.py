@@ -2417,13 +2417,21 @@ def lede_fallback_attrs(it):
     """Remote ledes can die after publish — hotlink walls, deleted uploads,
     CDN churn. no-referrer defeats referer-based blocking; onerror swaps a
     dead photo for the branded category cover so readers never see a broken
-    frame. Local /media/ assets ship with the site and need neither."""
+    frame. Local /media/ assets ship with the site and need neither.
+
+    Wire images also arrive with unpredictable framing — portrait video
+    posters (Telegram) lose ~2/3 of their height in a landscape card slot,
+    and the default upper-third bias still decapitates subjects whose faces
+    sit at the very top of the frame. onload pins portrait images near the
+    top so faces survive every slot; landscape images keep the CSS bias."""
     if not (it.get("image") or "").startswith("http"):
         return ""
     cover = f"times-of-palestine-cover-{it.get('cat', 'news')}.svg"
     if not (ROOT / "originals" / "media" / cover).is_file():
         cover = "times-of-palestine-cover-news.svg"
     return (' referrerpolicy="no-referrer"'
+            " onload=\"if(this.naturalHeight>this.naturalWidth)"
+            "this.style.objectPosition='50% 8%'\""
             f" onerror=\"this.onerror=null;this.src='/media/{cover}'\"")
 
 def card_media(it, pfx):
