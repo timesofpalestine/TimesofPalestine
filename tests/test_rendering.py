@@ -737,3 +737,47 @@ class RunningStoryDedupeTests(unittest.TestCase):
             for i, (n, h) in enumerate([(30, 0), (34, 40), (39, 80)])
         ]
         self.assertEqual(len(build.dedupe_events(stories)), 1)
+
+
+class CardImageDedupeTests(unittest.TestCase):
+    """One photo, one story: duplicate remote card images collapse to the
+    newest story; the rest step down to their category cover."""
+
+    def _item(self, pid, hours, image, cat="gaza"):
+        it = item()
+        it.update({
+            "pid": pid, "link": f"https://example.com/{pid}",
+            "date": datetime(2026, 8, 2, 12, tzinfo=timezone.utc) + timedelta(hours=hours),
+            "image": image, "cat": cat,
+        })
+        return it
+
+    def test_same_url_keeps_photo_only_on_newest(self):
+        url = "https://cdn.example.com/frame.jpg"
+        older = self._item("older00001", 0, url)
+        newer = self._item("newer00001", 2, url)
+        with mock.patch.object(build, "_card_image_hash", return_value=None):
+            build.dedupe_card_images([older, newer])
+        self.assertEqual(newer["image"], url)
+        self.assertEqual(older["image"], "/media/times-of-palestine-cover-gaza.svg")
+        self.assertEqual(older["media"]["rightsBasis"], "owned")
+
+    def test_same_bytes_under_two_urls_collapse(self):
+        older = self._item("older00002", 0, "https://cdn.example.com/a.jpg")
+        newer = self._item("newer00002", 2, "https://cdn.example.com/b.jpg")
+        with mock.patch.object(build, "_card_image_hash", return_value="samehash"):
+            build.dedupe_card_images([older, newer])
+        self.assertEqual(newer["image"], "https://cdn.example.com/b.jpg")
+        self.assertTrue(older["image"].startswith("/media/times-of-palestine-cover-"))
+
+    def test_distinct_images_and_local_covers_untouched(self):
+        a = self._item("distinct001", 0, "https://cdn.example.com/a.jpg")
+        b = self._item("distinct002", 1, "https://cdn.example.com/b.jpg")
+        c = self._item("localcover1", 2, "/media/times-of-palestine-cover-gaza.svg")
+        d = self._item("localcover2", 3, "/media/times-of-palestine-cover-gaza.svg")
+        with mock.patch.object(build, "_card_image_hash", side_effect=lambda u: None):
+            build.dedupe_card_images([a, b, c, d])
+        self.assertEqual(a["image"], "https://cdn.example.com/a.jpg")
+        self.assertEqual(b["image"], "https://cdn.example.com/b.jpg")
+        self.assertEqual(c["image"], "/media/times-of-palestine-cover-gaza.svg")
+        self.assertEqual(d["image"], "/media/times-of-palestine-cover-gaza.svg")

@@ -1688,6 +1688,50 @@ def load_originals(lang):
         print(f"  ✓ original: {item['title'][:60]}")
     return items
 
+_IMG_HASH_MEMO = {}
+
+def _card_image_hash(url):
+    """Content fingerprint for a remote card image (first 512 KB). Fails
+    open (None) — a fetch error must never block publication."""
+    if url in _IMG_HASH_MEMO:
+        return _IMG_HASH_MEMO[url]
+    digest = None
+    try:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": UA, "Accept": "image/*,*/*;q=0.5"})
+        with safe_urlopen(req, timeout=4) as r:
+            digest = hashlib.sha1(r.read(1 << 19)).hexdigest()
+    except Exception:
+        pass
+    _IMG_HASH_MEMO[url] = digest
+    return digest
+
+def dedupe_card_images(items):
+    """One photo, one story (owner report 2026-08-02): the same upstream
+    photo riding two different stories reads as a broken front. Items whose
+    remote images match — same URL, or same bytes re-uploaded under two
+    URLs — keep the photo only on the newest story; the others step down to
+    their branded category cover. Local house assets are exempt (category
+    covers repeat by design), and the content check fails open."""
+    remote = [i for i in items if is_http_url(i.get("image") or "")]
+    urls = sorted({i["image"] for i in remote})
+    if len(urls) > 1:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ex:
+            list(ex.map(_card_image_hash, urls))
+    seen = set()
+    for it in sorted(remote, key=lambda i: (i["date"], i["score"]), reverse=True):
+        key = _card_image_hash(it["image"]) or it["image"]
+        if key in seen:
+            cover = f"times-of-palestine-cover-{it['cat']}.svg"
+            if not (ROOT / "originals" / "media" / cover).is_file():
+                cover = "times-of-palestine-cover-news.svg"
+            it["image"] = f"/media/{cover}"
+            it["media"] = {"credit": "Graphic: Times of Palestine",
+                           "rightsBasis": "owned",
+                           "source": "Times of Palestine", "licenseUrl": None}
+        else:
+            seen.add(key)
+
 def build_lang(lang):
     print(f"\nFetching {lang.upper()} feeds…")
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
@@ -1721,6 +1765,7 @@ def build_lang(lang):
                 it["media"] = {"credit": "Graphic: Times of Palestine",
                                "rightsBasis": "owned",
                                "source": "Times of Palestine", "licenseUrl": None}
+    dedupe_card_images(capped)
     return capped
 # ---------- localization ----------
 
