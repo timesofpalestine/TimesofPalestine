@@ -404,7 +404,7 @@ def render_status(lang):
 <p id="health" class="summary">{loading}</p><p><a href="./">{"العودة إلى الأخبار" if lang == "ar" else "Back to the news"}</a></p>
 </article></main><script>
 fetch("/health.json",{{cache:"no-store"}}).then(r=>{{if(!r.ok)throw Error(r.status);return r.json()}})
-.then(h=>{{document.getElementById("health").textContent=`${{h.status.toUpperCase()}} · ${{h.builtAt}} · EN ${{h.stories.en}} · AR ${{h.stories.ar}} · held ${{h.reviewHeld}}`;}})
+.then(h=>{{const L={{"operational":{'"النشر منتظم"' if lang == "ar" else '"PUBLISHING NORMALLY"'},"degraded":{'"تدفق آلي مخفّض"' if lang == "ar" else '"REDUCED AUTOMATED FLOW"'},"down":{'"متوقف مؤقتاً"' if lang == "ar" else '"PAUSED"'}}};document.getElementById("health").textContent=`${{L[h.status]||h.status.toUpperCase()}} · ${{h.builtAt}} · EN ${{h.stories.en}} · AR ${{h.stories.ar}} · held ${{h.reviewHeld}}`;}})
 .catch(()=>{{document.getElementById("health").textContent="Status unavailable";}});
 </script></body></html>"""
 
