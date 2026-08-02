@@ -615,6 +615,13 @@
       "category": "arabaid",
       "maxAgeHours": 168,
       "cap": 5
+    },
+    {
+      "id": "pbc",
+      "name": "تلفزيون فلسطين",
+      "url": "https://www.pbc.ps/feed/",
+      "site": "https://www.pbc.ps",
+      "cap": 6
     }
   ]
 }
