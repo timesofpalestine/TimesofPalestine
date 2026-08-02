@@ -854,12 +854,12 @@ PERSON_PHOTO_MAP = [
     # and 404s cleanly, and duplicate regexes act as a fallback chain — a
     # renamed file skips to the next candidate instead of dropping the photo.
     (re.compile(r"ei[sz]enkot|آيزنكوت|أيزنكوت|إيزنكوت", re.I),
-     "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eizenkot.jpg?width=640",
-     "Gadi Eisenkot — Wikimedia Commons / IDF Spokesperson's Unit",
-     "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot.jpg"),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eizenkot,%20November%202020%20(GPOMN1%209040)%20(cropped).jpg?width=640",
+     "Gadi Eisenkot — Wikimedia Commons / Spokesperson unit, President of Israel",
+     "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot,_November_2020_(GPOMN1_9040)_(cropped).jpg"),
     (re.compile(r"ei[sz]enkot|آيزنكوت|أيزنكوت|إيزنكوت", re.I),
      "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eisenkot.jpg?width=640",
-     "Gadi Eisenkot — Wikimedia Commons / IDF Spokesperson's Unit",
+     "Gadi Eisenkot — Wikimedia Commons / Spokesperson unit, President of Israel",
      "https://commons.wikimedia.org/wiki/File:Gadi_Eisenkot.jpg"),
     (re.compile(r"netanyahu|نتنياهو", re.I),
      "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%202018.jpg?width=640",
