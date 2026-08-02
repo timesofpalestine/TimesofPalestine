@@ -123,7 +123,7 @@ def render_about(lang, built_at):
 <link rel="canonical" href="{b.BASE_URL}/{lang}/about.html">
 <link rel="alternate" hreflang="en" href="{b.BASE_URL}/en/about.html">
 <link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/about.html">
-<link href="/assets/site.css" rel="stylesheet">{b.swg(lang)}
+<link href="/assets/site.css" rel="stylesheet">
 </head>
 <body>
 <div class="backbar"><a href="./">{a['back']}</a></div>
