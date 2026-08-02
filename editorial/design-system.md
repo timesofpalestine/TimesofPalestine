@@ -155,10 +155,12 @@ you have not finished the change.
 
 Tracked here so agents pick these up instead of inventing new directions:
 
-- **Same-cover repetition**: two stories in one section can both fall back
-  to the identical category cover (e.g. West Bank band showing the same art
-  twice side-by-side). Wanted: per-story variation (crop offsets, numbered
-  variants, or tinted duotone alternates) within the house style.
+- ~~**Same-cover repetition**~~ — resolved 2026-08-02: every category cover
+  now has a mirrored `-b` variant (`times-of-palestine-cover-<cat>-b.svg`,
+  chevrons from the inline-end edge, text block start-aligned at x≥130 —
+  inside the 16/10 slot's side-crop safe zone). The build alternates A/B
+  per category across originals and wire backfill, so adjacent photoless
+  stories read as a designed pair. New categories must ship BOTH variants.
 - **EN-dominant hero graphics on the AR edition** (§5) — retrofit as each
   graphic is next regenerated.
 - Election hemicycle SVG (`times-of-palestine-israel-votes-card.svg`) bakes

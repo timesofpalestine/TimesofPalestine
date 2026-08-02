@@ -1614,6 +1614,7 @@ def load_originals(lang):
     orig = ROOT / "originals"
     if not orig.is_dir():
         return []
+    _orig_cover_cycle = {}
     now = datetime.now(timezone.utc)
     items = []
     for path in sorted(orig.glob(f"*.{lang}.txt")):
@@ -1670,8 +1671,13 @@ def load_originals(lang):
             attach_media(item, meta["imagefallback"], local_original=True)
         if not item.get("image"):
             # No lede should ever be the bare flag placeholder: text-only desk
-            # reports get the branded category cover (house SVG).
-            cover = f"times-of-palestine-cover-{item['cat']}.svg"
+            # reports get the branded category cover (house SVG), alternating
+            # A/B variants so adjacent reports never show twin covers.
+            _n = _orig_cover_cycle.get(item["cat"], 0)
+            _orig_cover_cycle[item["cat"]] = _n + 1
+            cover = f"times-of-palestine-cover-{item['cat']}{'-b' if _n % 2 else ''}.svg"
+            if not (ROOT / "originals" / "media" / cover).is_file():
+                cover = f"times-of-palestine-cover-{item['cat']}.svg"
             if (ROOT / "originals" / "media" / cover).is_file():
                 attach_media(item, f"/media/{cover}", local_original=True)
         __import__("longform").validate_media_references(
@@ -1756,10 +1762,21 @@ def build_lang(lang):
     for it in capped:
         backfill_person_photo(it)
     # Anything still photoless gets its branded category cover — the flag
-    # placeholder is a last resort, not a norm.
+    # placeholder is a last resort, not a norm. Covers alternate between the
+    # A and mirrored B variant per category, so two photoless stories in one
+    # section read as a designed pair, not a copy-paste artifact (owner
+    # visual audit 2026-08-02).
+    cover_cycle = {}
+    for it in capped:  # continue the A/B alternation past originals' covers
+        if (it.get("image") or "").startswith("/media/times-of-palestine-cover-"):
+            cover_cycle[it["cat"]] = cover_cycle.get(it["cat"], 0) + 1
     for it in capped:
         if not it.get("image"):
-            cover = f"times-of-palestine-cover-{it['cat']}.svg"
+            n = cover_cycle.get(it["cat"], 0)
+            cover_cycle[it["cat"]] = n + 1
+            cover = f"times-of-palestine-cover-{it['cat']}{'-b' if n % 2 else ''}.svg"
+            if not (ROOT / "originals" / "media" / cover).is_file():
+                cover = f"times-of-palestine-cover-{it['cat']}.svg"
             if (ROOT / "originals" / "media" / cover).is_file():
                 it["image"] = f"/media/{cover}"
                 it["media"] = {"credit": "Graphic: Times of Palestine",
@@ -2322,6 +2339,8 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .card:hover{box-shadow:0 5px 18px rgba(0,0,0,.5)}
   .sub-item:hover{background:rgba(255,255,255,.04)}
   .card img,.hero-imgwrap>a>img,.rowcard img,.story img.lede,.sub-thumb img{opacity:.9}
+  /* Loading/dead-image placeholders must not glare paper-gray on dark */
+  .card img,.hero-imgwrap>a>img,.rowcard img,.rowcard .ph,.story img.lede,.sub-thumb img,.research-feat img{background:#232328}
   /* Flag palette stays true — only small-text red/green lifts for legibility */
   .hero-overlay .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q{color:#f93549}
   .hero-overlay h2 a:hover{color:#ffb8be}
