@@ -603,9 +603,35 @@ def attach_media(item, candidate, local_original=False):
         item["media"] = None
         return
     if is_http_url(candidate):
+        if local_original:
+            # A desk report may carry a remote lede (e.g. a Wikimedia Commons
+            # portrait) only when the exact URL has a media-rights.json entry.
+            # The URL is verified live at build time; a dead or unreachable
+            # image degrades to the imageFallback/category-cover chain rather
+            # than failing the build or publishing a broken frame.
+            rights = media_rights_for(candidate, MEDIA_RIGHTS)
+            if rights is None:
+                raise PublishingError(
+                    f"{item.get('pid', item.get('title', 'original'))}: "
+                    "remote original image lacks explicit local rights handling")
+            if (
+                remote_media_mode() == "source"
+                and is_public_http_url(candidate)
+                and remote_image_ok(candidate)
+            ):
+                item["image"] = candidate
+                item["media"] = {
+                    "credit": rights.credit,
+                    "rightsBasis": rights.rights_basis,
+                    "source": rights.source,
+                    "licenseUrl": rights.license_url,
+                }
+            else:
+                item["image"] = None
+                item["media"] = None
+            return
         if (
-            not local_original
-            and remote_media_mode() == "source"
+            remote_media_mode() == "source"
             and is_public_http_url(candidate)
         ):
             if not remote_image_ok(candidate):
@@ -624,10 +650,6 @@ def attach_media(item, candidate, local_original=False):
             return
         item["image"] = None
         item["media"] = None
-        if local_original:
-            raise PublishingError(
-                f"{item.get('pid', item.get('title', 'original'))}: "
-                "remote original image lacks explicit local rights handling")
         if HEALTH:
             HEALTH.block_media(
                 "remote_media_not_public"
@@ -826,6 +848,71 @@ PERSON_PHOTO_MAP = [
      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Mohammad_Mustafa_2024.jpg/640px-Mohammad_Mustafa_2024.jpg",
      "PM Mohammad Mustafa — Wikimedia Commons",
      "https://commons.wikimedia.org/wiki/File:Mohammad_Mustafa_2024.jpg"),
+    # ── Israeli election watch (owner directive 2026-08-02) ─────────────────
+    # Coalition coverage runs through the 27 October vote; wire briefs about
+    # these figures get a face. Special:FilePath survives Commons re-hashing
+    # and 404s cleanly, and duplicate regexes act as a fallback chain — a
+    # renamed file skips to the next candidate instead of dropping the photo.
+    (re.compile(r"ei[sz]enkot|آيزنكوت|أيزنكوت|إيزنكوت", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eizenkot.jpg?width=640",
+     "Gadi Eisenkot — Wikimedia Commons / IDF Spokesperson's Unit",
+     "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot.jpg"),
+    (re.compile(r"ei[sz]enkot|آيزنكوت|أيزنكوت|إيزنكوت", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eisenkot.jpg?width=640",
+     "Gadi Eisenkot — Wikimedia Commons / IDF Spokesperson's Unit",
+     "https://commons.wikimedia.org/wiki/File:Gadi_Eisenkot.jpg"),
+    (re.compile(r"netanyahu|نتنياهو", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%202018.jpg?width=640",
+     "Benjamin Netanyahu — Wikimedia Commons / US State Department (public domain)",
+     "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg"),
+    (re.compile(r"naftali\s+bennett|نفتالي بينيت|بينيت", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Naftali%20Bennett%202021.jpg?width=640",
+     "Naftali Bennett — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Naftali_Bennett_2021.jpg"),
+    (re.compile(r"naftali\s+bennett|نفتالي بينيت|بينيت", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Naftali%20Bennett%20(cropped).jpg?width=640",
+     "Naftali Bennett — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Naftali_Bennett_(cropped).jpg"),
+    (re.compile(r"yair\s+lapid|يائير لبيد|لابيد", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Yair%20Lapid%202022.jpg?width=640",
+     "Yair Lapid — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Yair_Lapid_2022.jpg"),
+    (re.compile(r"yair\s+lapid|يائير لبيد|لابيد", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Yair%20Lapid%20(cropped).jpg?width=640",
+     "Yair Lapid — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Yair_Lapid_(cropped).jpg"),
+    (re.compile(r"yair\s+golan|يائير غولان", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Yair%20Golan.jpg?width=640",
+     "Yair Golan — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Yair_Golan.jpg"),
+    (re.compile(r"li[eb]+erman|ليبرمان", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Avigdor%20Liberman.jpg?width=640",
+     "Avigdor Liberman — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Avigdor_Liberman.jpg"),
+    (re.compile(r"li[eb]+erman|ليبرمان", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Avigdor%20Lieberman.jpg?width=640",
+     "Avigdor Liberman — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Avigdor_Lieberman.jpg"),
+    (re.compile(r"ben[- ]?gvir|بن غفير", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Itamar%20Ben-Gvir.jpg?width=640",
+     "Itamar Ben Gvir — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Itamar_Ben-Gvir.jpg"),
+    (re.compile(r"ben[- ]?gvir|بن غفير", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Itamar%20Ben%20Gvir.jpg?width=640",
+     "Itamar Ben Gvir — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Itamar_Ben_Gvir.jpg"),
+    (re.compile(r"smotrich|سموتريتش", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Bezalel%20Smotrich.jpg?width=640",
+     "Bezalel Smotrich — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Bezalel_Smotrich.jpg"),
+    (re.compile(r"aryeh\s+deri|arye\s+deri|أرييه درعي|درعي", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Aryeh%20Deri.jpg?width=640",
+     "Aryeh Deri — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Aryeh_Deri.jpg"),
+    (re.compile(r"jibril\s+rajoub|جبريل الرجوب|الرجوب", re.I),
+     "https://commons.wikimedia.org/wiki/Special:FilePath/Jibril%20Rajoub.jpg?width=640",
+     "Jibril Rajoub — Wikimedia Commons",
+     "https://commons.wikimedia.org/wiki/File:Jibril_Rajoub.jpg"),
 ]
 
 
@@ -1556,6 +1643,11 @@ def load_originals(lang):
         }
         item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]
         attach_media(item, meta.get("image") or None, local_original=True)
+        if not item.get("image") and meta.get("imagefallback"):
+            # Second choice when a remote lede fails verification — usually
+            # the report's own house infographic, so the story never drops
+            # to the generic category cover just because a portrait moved.
+            attach_media(item, meta["imagefallback"], local_original=True)
         if not item.get("image"):
             # No lede should ever be the bare flag placeholder: text-only desk
             # reports get the branded category cover (house SVG).

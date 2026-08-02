@@ -254,7 +254,12 @@ it to Telegram. No human machine involved. The contract:
    open-source assets) saved to `originals/media/` with a
    `media-rights.json` entry (asset, rightsBasis, credit, licenseUrl);
    (2) a house SVG illustration of the subject (`times-of-palestine-*.svg`,
-   auto-owned, no manifest entry). Text-only desk reports fall back to the
+   auto-owned, no manifest entry). An original's `image:` may also be a
+   remote rights-cleared URL (e.g. a Wikimedia Commons
+   `Special:FilePath/<name>?width=640` portrait) when that EXACT URL has a
+   `media-rights.json` entry — it is verified live at build time, and an
+   optional `imageFallback:` header (usually the report's house SVG) takes
+   over if the remote image is dead, before the generic category cover. Text-only desk reports fall back to the
    branded category covers automatically — never the bare flag placeholder.
    **Visual-first (owner decision 2026-07-30): no article runs as dead
    text.** Every story ships a visual — real photo, subject illustration
