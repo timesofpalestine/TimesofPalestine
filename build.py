@@ -2600,6 +2600,12 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .rowcard .chip{font-size:.63rem;font-weight:800;color:var(--green-deep);text-transform:uppercase;letter-spacing:.07em;display:block}
 [lang=ar] .rowcard .chip{letter-spacing:0;font-size:.72rem}
 .rowcard .t{font-size:.67rem;color:var(--muted);font-weight:600;margin-top:.32rem;display:block}
+/* solo band: one story carries the section — bigger art, headline and dek */
+.rowcard.solo img,.rowcard.solo .ph{width:clamp(220px,30vw,320px)}
+.rowcard.solo h3{font-size:1.4rem;line-height:1.3;max-width:34em}
+[lang=ar] .rowcard.solo h3{line-height:1.55}
+.rowcard.solo .dek{margin-top:.45rem;font-size:.93rem;line-height:1.55;color:var(--muted);max-width:62ch}
+[lang=ar] .rowcard.solo .dek{line-height:1.75;font-size:.98rem}
 /* ── research featured ── */
 .research-feat{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:0;background:var(--card);border:1px solid var(--line-dark);border-inline-start:5px solid var(--red);margin-bottom:1.6rem;box-shadow:var(--sh)}
 .research-feat .body{padding:1.6rem 1.8rem}
@@ -2984,10 +2990,16 @@ def card(it, lang, pfx):
             f'{time_tag(it["date"], lang, "t", fresh=True)}'
             f'</div></article>')
 
-def rowcard(it, lang, pfx):
-    return (f'<article class="rowcard">{card_media(it, pfx)}'
+def rowcard(it, lang, pfx, solo=False):
+    # A lone story carrying a whole section band gets the full treatment —
+    # bigger art, bigger headline, and its dek — so the band never reads as
+    # an orphan card floating in empty space.
+    dek = (f'<p class="dek">{summary_html(truncate(it["dek"], 220))}</p>'
+           if solo and it.get("dek") else "")
+    cls = "rowcard solo" if solo else "rowcard"
+    return (f'<article class="{cls}">{card_media(it, pfx)}'
             f'<div><span class="chip">{esc(display_source(it, lang))}</span>'
-            f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
+            f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>{dek}'
             f'{time_tag(it["date"], lang, "t", fresh=True)}</div></article>')
 
 def op_card(it, lang, pfx):
@@ -3301,7 +3313,7 @@ def render_page(lang, items, built_at):
         if not pool:
             grid = ""
         elif len(pool) == 1:  # a lone story reads better full width than as an orphan card
-            grid = f'<div class="rowlist">{"".join(rowcard(it, lang, P) for it in pool)}</div>'
+            grid = f'<div class="rowlist">{rowcard(pool[0], lang, P, solo=True)}</div>'
         else:
             cols = f" g{min(len(pool), 4)}"; grid = f'<div class="grid{cols}">{"".join(card(it, lang, P) for it in pool)}</div>'
         focus_cls = " focus" if k in FOCUS_SECTIONS else ""
@@ -3989,7 +4001,13 @@ def main():
     __import__("longform").copy_media(dist, en_items + ar_items)
     # Front-page furniture referenced from index cards (not from any story
     # file) ships explicitly — copy_media only walks story-referenced media.
-    for _furn in ("times-of-palestine-israel-votes-card.svg",):
+    # The ENTIRE category-cover family ships unconditionally: lede_fallback_attrs
+    # embeds covers inside onerror attributes as the browser-side fallback for
+    # dying remote images, and copy_media cannot see those references — a
+    # missing cover there turns a reader's failed image into a 404 white card.
+    _furniture = ["times-of-palestine-israel-votes-card.svg"] + sorted(
+        f.name for f in (ROOT / "originals" / "media").glob("times-of-palestine-cover-*.svg"))
+    for _furn in _furniture:
         _ff = ROOT / "originals" / "media" / _furn
         if _ff.is_file():
             (dist / "media").mkdir(parents=True, exist_ok=True)

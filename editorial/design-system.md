@@ -178,7 +178,14 @@ load-bearing statistic — one or two per story, never as decoration.
   "loads" (`naturalWidth<200` guard in `lede_fallback_attrs`), and the
   hero's base is dark (`#141419`) so its white overlay headline stays
   readable even if every fallback fails. Any new large image surface must
-  carry the same three layers.
+  carry the same three layers. The ENTIRE category-cover family ships in
+  every build (furniture copy in `main()`) — onerror fallbacks reference
+  covers from attribute strings `copy_media` cannot see, so a
+  reference-walked subset would 404 in the reader's browser.
+- **Solo section band** (`.rowcard.solo`): when a front-page section holds
+  exactly one story, it renders full-width with the featured treatment —
+  art at `clamp(220px,30vw,320px)`, 1.4rem serif headline, and a dek
+  excerpt — never an orphan card floating in an empty strip.
 - **Reading measure**: story body text (`.story .summary`) caps at 42.5rem
   (~75 characters per line); headlines and lede media keep the full column.
 - **CTAs**: gold, weight 700, arrow glyph — `→` in EN, `←` in AR. Never a
