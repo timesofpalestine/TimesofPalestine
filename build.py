@@ -68,12 +68,19 @@ def remote_media_mode():
 BRIEFS_MODEL = "claude-haiku-4-5"
 MAX_BRIEFS_PER_RUN = 40          # cost ceiling per build
 BRIEFS_CACHE = ROOT / "briefs-cache.json"
+# Style generations: wire3 = wire attribution + short headline (2026-07-30);
+# wire4 = human-register prompt + diction gate; wire5 = pacing rules — 2-3
+# short paragraphs, no stubs, no wall-of-text blocks (owner order 2026-08-03).
+# Bumping this queues every cached brief for a progressive restyle.
+BRIEF_STYLE = "wire5"
 
 BRIEF_SYSTEM = {
     "en": (
         "You are the newsdesk of Times of Palestine, an independent digital newsroom. "
         "Write an original news brief in English based ONLY on the source material provided: "
-        "2-3 short paragraphs, 100-170 words total. Straight news style: lead with the most "
+        "2-3 short paragraphs separated by blank lines — 2-4 sentences and at most 70 words "
+        "per paragraph, 100-170 words total; never a single-block reply and never a "
+        "two-sentence stub. Straight news style: lead with the most "
         "important fact, then key details and context. Neutral, precise, professional; no "
         "personal attacks, no editorializing, no first person. "
         "Write like a seasoned wire editor, not a language model: vary sentence rhythm, "
@@ -83,7 +90,9 @@ BRIEF_SYSTEM = {
         "on', 'a testament to'. End on a reported fact, never on a sentence assessing "
         "what the story means. Never invent names, numbers, "
         "quotes, or details that are not in the source material; if the material is only a "
-        "headline, write one short 2-3 sentence paragraph conveying what the headline reports. "
+        "headline, still write two short paragraphs (about 90-120 words) unpacking who, what, "
+        "where and the immediate context the headline itself carries — without inventing any "
+        "fact it does not imply. "
         "Never refuse, and never comment on the material, these instructions, or yourself. "
         "Never say that details, information, or material are missing, unavailable, or not "
         "provided — simply omit what you do not know and let the reader decide. "
@@ -103,7 +112,9 @@ BRIEF_SYSTEM = {
     "ar": (
         "أنت غرفة أخبار «تايمز أوف فلسطين»، منصة إخبارية رقمية مستقلة. اكتب موجزاً إخبارياً "
         "أصلياً باللغة العربية بالاعتماد حصراً على المواد المصدرية المرفقة: فقرتان إلى ثلاث فقرات "
-        "قصيرة (100-170 كلمة إجمالاً). أسلوب خبري مباشر: ابدأ بأهم معلومة ثم التفاصيل والسياق. "
+        "قصيرة يفصل بينها سطر فارغ — من جملتين إلى أربع ولا تتجاوز الفقرة 70 كلمة، "
+        "و100-170 كلمة إجمالاً؛ لا ترد أبداً بكتلة نصية واحدة ولا بموجز من جملتين. "
+        "أسلوب خبري مباشر: ابدأ بأهم معلومة ثم التفاصيل والسياق. "
         "اكتب عربيةً صحفيةً أصيلة بسجلّ الجزيرة نت وعرب 48: افتتاحات فعلية، وروابط عربية "
         "(فيما، إذ، في حين، غير أنّ) لا ترجمة حرفية لتراكيب إنجليزية، وعلامتا الاقتباس «»، "
         "ويجب ألا يشعر القارئ بجملة إنجليزية تحت النص. "
@@ -114,7 +125,8 @@ BRIEF_SYSTEM = {
         "لا بجملة تقييم ختامية. "
         "لغة محايدة دقيقة مهنية؛ لا إساءات شخصية ولا إنشاء ولا ضمير متكلم. لا تخترع أسماء أو "
         "أرقاماً أو اقتباسات أو تفاصيل غير واردة في المصدر؛ وإذا كانت المادة مجرد عنوان فاكتب "
-        "فقرة قصيرة من جملتين أو ثلاث تنقل ما يفيد به العنوان. لا ترفض أبداً، ولا تعلق على المادة "
+        "فقرتين قصيرتين (نحو 90-120 كلمة) تفكّان ما يحمله العنوان — من وماذا وأين وسياقه "
+        "المباشر — من دون اختراع أي واقعة لا يدل عليها. لا ترفض أبداً، ولا تعلق على المادة "
         "أو على هذه التعليمات أو على نفسك. انسب الخبر بأسلوب الوكالات: اذكر اسم المصدر الوارد في "
         "المادة مرة واحدة فقط داخل الجملة التي تحمل أهم معلومة — مثل «بحسب وكالة معاً» أو «كما أفادت "
         "الجزيرة». وإذا كان المصدر «(agency wire)» فلا تذكر أي وسيلة إعلامية. لا تذكر أبداً موقعاً إلكترونياً "
@@ -1316,6 +1328,64 @@ def language_quality_issues(text, lang=None):
 _TERMINALS = ('.', '!', '?', '"', '”', '»', '؟', ')', "'")
 _DANGLING = ("…", "...", ",", "،", ";", "؛", ":", "-", "—", "–")
 
+# Pacing rules (owner order 2026-08-03): neither wall-of-text paragraphs nor
+# two-line stub articles publish. A brief must clear MIN_BRIEF_WORDS to run at
+# all; anything beyond MAX_PARA_WORDS in one block is reflowed at render time.
+MIN_BRIEF_WORDS = 60     # hard publish floor (the desk aims for 100-170)
+MAX_PARA_WORDS = 70      # longest acceptable single paragraph
+_SENT_SPLIT_RX = re.compile(r"(?<=[.!?؟…])\s+")
+
+
+def reflow_paragraphs(text):
+    """Deterministic pacing guard for wire-brief prose: single newlines count
+    as paragraph breaks, and any paragraph beyond MAX_PARA_WORDS is split at
+    sentence boundaries into chunks of at most ~55 words. Applied at render
+    time so every already-cached brief is fixed without regeneration. Never
+    applied to originals (their markdown carries deliberate structure)."""
+    out = []
+    for para in re.split(r"\n+", (text or "").strip()):
+        para = para.strip()
+        if not para:
+            continue
+        if len(para.split()) <= MAX_PARA_WORDS:
+            out.append(para)
+            continue
+        chunk, count = [], 0
+        for sent in _SENT_SPLIT_RX.split(para):
+            w = len(sent.split())
+            if chunk and count + w > 55:
+                out.append(" ".join(chunk))
+                chunk, count = [], 0
+            chunk.append(sent)
+            count += w
+        if chunk:
+            out.append(" ".join(chunk))
+    return "\n\n".join(out)
+
+
+def structure_issues(text, lang):
+    """Pacing problems a desk retry can fix: stub-length copy, a single-block
+    body, or an oversized paragraph."""
+    issues = []
+    words = len(text.split())
+    paras = [p for p in re.split(r"\n\s*\n", text) if p.strip()]
+    if words < 90:
+        issues.append(
+            f"الموجز قصير جداً ({words} كلمة) — الموجز الصالح للنشر 100-170 كلمة"
+            if lang == "ar" else
+            f"too short ({words} words) — a publishable brief runs 100-170 words")
+    if len(paras) < 2:
+        issues.append(
+            "النص كتلة واحدة — قسّمه إلى فقرتين أو ثلاث قصيرة يفصل بينها سطر فارغ"
+            if lang == "ar" else
+            "single-block body — break it into 2-3 short paragraphs separated by blank lines")
+    elif any(len(p.split()) > MAX_PARA_WORDS for p in paras):
+        issues.append(
+            f"فقرة تتجاوز {MAX_PARA_WORDS} كلمة — قسّمها عند حدود الجمل"
+            if lang == "ar" else
+            f"a paragraph runs past {MAX_PARA_WORDS} words — split it at sentence boundaries")
+    return issues
+
 def is_complete_text(s, floor):
     s = (s or "").strip()
     if len(s) < floor:
@@ -1404,17 +1474,24 @@ def write_brief(client, item):
         if REFUSAL_RX.search(text) or not is_complete_text(text, 160):
             item["brief_refused"] = True  # nothing to report, or the copy stops short — no stubs
             return None
-        # Owner order 2026-08-03: machine diction gets one editor pass. If it
-        # persists, the improved draft still publishes — style alone never
-        # holds coverage — and the residue is logged for the record.
-        issues = language_quality_issues(f"{new_title}\n{text}", item["lang"])
+        # Owner orders 2026-08-03: machine diction and bad pacing (stub-length
+        # copy, wall-of-text blocks) get one editor pass. After the retry, a
+        # brief still under the hard word floor is withheld — a two-line stub
+        # never publishes as an article — while diction or paragraphing
+        # residue publishes best-effort (render-time reflow fixes blocks, and
+        # style alone never holds coverage).
+        issues = (language_quality_issues(f"{new_title}\n{text}", item["lang"])
+                  + structure_issues(text, item["lang"]))
         if not issues:
             break
         if attempt == 0:
             convo += [{"role": "assistant", "content": raw},
                       {"role": "user", "content": _diction_retry_note(issues, item["lang"])}]
         else:
-            print(f"  ⚠ brief {item['pid']}: diction persists after editor pass: {issues[:2]}")
+            if len(text.split()) < MIN_BRIEF_WORDS:
+                item["brief_refused"] = True
+                return None
+            print(f"  ⚠ brief {item['pid']}: issues persist after editor pass: {issues[:2]}")
     item["title"] = truncate(new_title, 120)
     return text
 
@@ -1429,16 +1506,19 @@ def generate_briefs(all_items):
             HEALTH.checks["brief_cache"] = "degraded"
         cache = {}
     # Keep connector markers while scrubbing refused or truncated generated copy.
-    # Pre-gate entries (style != wire4) that trip the diction nets are scrubbed
-    # too, so «أسلمت قوات»-class copy regenerates immediately under the new
-    # prompt instead of republishing until its restyle turn (owner 2026-08-03).
+    # Pre-gate entries (style != BRIEF_STYLE) that trip the diction nets or the
+    # stub floor are scrubbed too, so «أسلمت قوات»-class copy and two-line
+    # articles regenerate immediately under the current prompt instead of
+    # republishing until their restyle turn (owner orders 2026-08-03).
     def _entry_ok(key, value):
         if "brief" not in value:
             return True
         brief = value.get("brief", "")
         if REFUSAL_RX.search(brief) or not is_complete_text(brief, 160):
             return False
-        if value.get("style") != "wire4":
+        if value.get("style") != BRIEF_STYLE:
+            if len(brief.split()) < MIN_BRIEF_WORDS:
+                return False
             prefix = key.split(":", 1)[0]
             lang = prefix if prefix in ("en", "ar") else None
             if language_quality_issues(f"{value.get('title', '')}\n{brief}", lang):
@@ -1458,11 +1538,10 @@ def generate_briefs(all_items):
             it["brief"] = entry["brief"]
             if entry.get("title"):  # translated headline saved alongside the brief
                 it["title"] = entry["title"]
-            # Style generations: wire3 = wire attribution + short headline
-            # (2026-07-30); wire4 = the human-register prompt + diction gate
-            # (owner order 2026-08-03). Pre-wire4 briefs keep publishing but
-            # are queued for a restyle whenever the run has spare capacity.
-            if entry.get("style") != "wire4":
+            # Pre-BRIEF_STYLE briefs keep publishing (if they clear the hard
+            # gates) but are queued for a restyle whenever the run has spare
+            # capacity, so the whole cache converges on the current prompt.
+            if entry.get("style") != BRIEF_STYLE:
                 it["brief_stale"] = True  # regenerate under the current prompt
     todo = [i for i in sorted(
         all_items,
@@ -1514,7 +1593,7 @@ def generate_briefs(all_items):
             if brief:
                 it["brief"] = brief
                 it.pop("brief_stale", None)
-                entry = {"brief": brief, "ts": now_ts, "style": "wire4",
+                entry = {"brief": brief, "ts": now_ts, "style": BRIEF_STYLE,
                          "title": it["title"]}  # the desk's own short headline
                 cache[f"{it['lang']}:{it['pid']}"] = entry
                 written += 1
@@ -1555,7 +1634,9 @@ def select_publishable_copy(en_items, ar_items):
             return True
         brief = item.get("brief")
         if brief and not REFUSAL_RX.search(brief):
-            return is_complete_text(brief, 160)
+            # Owner order 2026-08-03: a two-line stub never runs as an article.
+            return (is_complete_text(brief, 160)
+                    and len(brief.split()) >= MIN_BRIEF_WORDS)
         return allow_raw and is_complete_text(item.get("dek", ""), 60)
 
     return [item for item in en_items + ar_items if keep(item)]
@@ -3415,6 +3496,8 @@ def render_story(it, lang, related, rail, built_at):
     if brief and not it.get("original") and REFUSAL_RX.search(brief):
         brief = None
     if brief:  # original TOP Newsdesk brief, written by Claude, cached per story
+        if not it.get("original"):  # pacing guard: no wall-of-text blocks
+            brief = reflow_paragraphs(brief)
         paras = __import__("longform").body_html(brief)
         paras, story_toc = add_story_outline(paras, lang)
         # Owner decision 2026-07-30, wire protocol: a rewritten story is OUR
