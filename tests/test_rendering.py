@@ -901,3 +901,58 @@ class LatestRailTests(unittest.TestCase):
                    "pid": "railclock1"})
         html = build.render_story(it, "en", [], [], now)
         self.assertIn("setInterval(tick,30000)", html)
+
+
+class GazaNumbersTests(unittest.TestCase):
+    """Gaza by the Numbers leads with the Ministry of Health's live toll and
+    ships the poll file + in-place update script (owner directive 2026-08-03)."""
+
+    SUMMARY = {
+        "gaza": {"last_update": "2026-08-02",
+                 "killed": {"total": 68643, "children": 20125, "women": 12500,
+                            "press": 254, "famine": 470},
+                 "injured": {"total": 170655},
+                 "famine": {"total": 470}},
+        "known_press_killed_in_gaza": {"records": 254},
+    }
+
+    def setUp(self):
+        import gaza_panel
+        self.gp = gaza_panel
+        self._moh, self._gi = dict(gaza_panel._moh_cache), dict(gaza_panel._gaza_cache)
+        gaza_panel._moh_cache.clear()
+        gaza_panel._gaza_cache.clear()
+        gaza_panel._moh_cache["data"] = self.SUMMARY
+        gaza_panel._gaza_cache["rows"] = {}
+        os.environ.pop("TOP_OFFLINE", None)
+
+    def tearDown(self):
+        self.gp._moh_cache.clear(); self.gp._moh_cache.update(self._moh)
+        self.gp._gaza_cache.clear(); self.gp._gaza_cache.update(self._gi)
+
+    def test_panel_renders_moh_lead_row_with_live_hooks(self):
+        html = self.gp.panel("en")
+        self.assertIn('data-gi-key="killed"', html)
+        self.assertIn('data-gi-val="68643"', html)
+        self.assertIn("68,643", html)
+        self.assertIn("Gaza Ministry of Health", html)
+        self.assertIn("2026-08-02", html)
+        self.assertIn("gaza-numbers.json", html)   # the polling script travels
+        self.assertIn("gi-live", html)
+
+    def test_arabic_panel_uses_arabic_digits_and_labels(self):
+        html = self.gp.panel("ar")
+        self.assertIn("٦٨،٦٤٣", html)
+        self.assertIn("شهداء", html)
+        self.assertIn("وزارة الصحة في غزة", html)
+
+    def test_payload_carries_figures_for_the_poll_file(self):
+        data = self.gp.payload()
+        self.assertEqual(data["figures"]["killed"], 68643)
+        self.assertEqual(data["figures"]["press"], 254)
+        self.assertEqual(data["asOf"], "2026-08-02")
+
+    def test_everything_fails_open_without_data(self):
+        self.gp._moh_cache["data"] = {}
+        self.assertEqual(self.gp.panel("en"), "")
+        self.assertIsNone(self.gp.payload())

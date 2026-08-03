@@ -3820,6 +3820,13 @@ def main():
     (dist / "data.json").write_text(json.dumps(
         {"builtAt": utc_iso(built_at), "en": len(en_items), "ar": len(ar_items),
          "briefs": sum(1 for i in en_items + ar_items if i.get("brief"))}, indent=2))
+    # Live figures for the Gaza by the Numbers panel: the page polls this file
+    # between rebuilds and animates any figure the Ministry has revised.
+    moh_payload = __import__("gaza_panel").payload()
+    if moh_payload:
+        (dist / "data").mkdir(exist_ok=True)
+        (dist / "data" / "gaza-numbers.json").write_text(
+            json.dumps(moh_payload, ensure_ascii=False), encoding="utf-8")
     (dist / "review-queue.json").write_text(
         json.dumps(sanitized_review_queue(pending), indent=2), encoding="utf-8")
     health = HEALTH.public_dict({"en": len(en_items), "ar": len(ar_items)})
