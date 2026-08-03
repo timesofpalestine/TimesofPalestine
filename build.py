@@ -1964,6 +1964,15 @@ def apply_image_overrides(items):
             it["media"] = {"credit": "Graphic: Times of Palestine",
                            "rightsBasis": "owned",
                            "source": "Times of Palestine", "licenseUrl": None}
+        else:
+            # An overriding photo carries ITS OWN manifest credit — never the
+            # replaced wire image's. Missing entry → no credit line at all.
+            rights = media_rights_for(it["image"], MEDIA_RIGHTS)
+            it["media"] = ({"credit": rights.credit,
+                            "rightsBasis": rights.rights_basis,
+                            "source": rights.source,
+                            "licenseUrl": rights.license_url or None}
+                           if rights else None)
 
 
 def dedupe_card_images(items):
