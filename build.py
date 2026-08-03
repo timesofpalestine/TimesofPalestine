@@ -2294,9 +2294,21 @@ nav.sections a.util:hover{border-block-end-color:#3a3a42}
 .latest h2{font-size:.79rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--black);border-bottom:3px solid var(--red);padding-bottom:.5rem;display:flex;align-items:center;gap:.5rem;margin-bottom:.15rem}
 [lang=ar] .latest h2{letter-spacing:.02em;font-size:.94rem}
 .latest h2::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite}
-.latest ol{list-style:none}
-.latest li{padding-block:.75rem;border-bottom:1px solid var(--line)}
-.latest .t{color:var(--red);font-weight:800;font-size:.67rem;letter-spacing:.04em;display:block;margin-bottom:.18rem}
+.latest ol{list-style:none;position:relative;padding-inline-start:1.1rem}
+.latest ol::before{content:"";position:absolute;inset-inline-start:3px;inset-block:1rem;width:2px;background:var(--line)}
+.latest li{position:relative;display:flex;gap:.6rem;align-items:flex-start;padding-block:.72rem;border-bottom:1px solid var(--line);transition:background var(--tr);animation:railin .5s ease backwards}
+.latest li:last-child{border-bottom:none}
+.latest li::before{content:"";position:absolute;inset-inline-start:-1.1rem;top:1rem;width:9px;height:9px;border-radius:50%;box-sizing:border-box;background:var(--card);border:2px solid var(--muted);transition:background var(--tr),border-color var(--tr),transform var(--tr)}
+.latest li.fresh::before{background:var(--red);border-color:var(--red);animation:pulse 2s infinite}
+.latest li:hover{background:rgba(0,0,0,.03)}
+.latest li:hover::before{background:var(--red);border-color:var(--red);transform:scale(1.35)}
+.latest li:nth-child(1){animation-delay:.04s}.latest li:nth-child(2){animation-delay:.1s}.latest li:nth-child(3){animation-delay:.16s}.latest li:nth-child(4){animation-delay:.22s}.latest li:nth-child(5){animation-delay:.28s}.latest li:nth-child(6){animation-delay:.34s}.latest li:nth-child(7){animation-delay:.4s}.latest li:nth-child(8){animation-delay:.46s}.latest li:nth-child(9){animation-delay:.52s}.latest li:nth-child(10){animation-delay:.58s}
+.latest .lt-body{flex:1;min-width:0}
+.latest .lt-thumb{flex-shrink:0;margin-top:.25rem}
+.latest .lt-thumb img{width:52px;height:52px;object-fit:cover;object-position:50% 25%;background:#e8e6df;border-radius:3px;transition:opacity var(--tr)}
+.latest li:hover .lt-thumb img{opacity:.82}
+@keyframes railin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.latest .t{color:var(--red);font-weight:800;font-size:.67rem;letter-spacing:.04em;display:inline-block;margin-bottom:.18rem}
 [lang=ar] .latest .t{letter-spacing:0;font-size:.74rem}
 .latest h3{font-size:.9rem;font-weight:600;line-height:1.35}
 [lang=ar] .latest h3{line-height:1.65;font-size:.96rem}
@@ -2513,7 +2525,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 /* ── dark mode ── */
 %%DARK%%
 /* ── reduced motion ── */
-@media(prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}.hero-imgwrap>a>img,.card img{transition:none}}
+@media(prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}.latest li,.latest li.fresh::before{animation:none}.hero-imgwrap>a>img,.card img{transition:none}}
 .skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}
 .skiplink:focus{inset-inline-start:0}
 .share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}
@@ -2596,8 +2608,9 @@ section.opinion{background:#17171c;border-top-color:var(--red)}
 .card{box-shadow:0 1px 4px rgba(0,0,0,.35)}
 .card:hover{box-shadow:0 5px 18px rgba(0,0,0,.5)}
 .sub-item:hover{background:rgba(255,255,255,.04)}
-.card img,.hero-imgwrap>a>img,.rowcard img,.story img.lede,.sub-thumb img{opacity:.9}
-.card img,.hero-imgwrap>a>img,.rowcard img,.rowcard .ph,.story img.lede,.sub-thumb img,.research-feat img{background:#232328}
+.latest li:hover{background:rgba(255,255,255,.04)}
+.card img,.hero-imgwrap>a>img,.rowcard img,.story img.lede,.sub-thumb img,.latest .lt-thumb img{opacity:.9}
+.card img,.hero-imgwrap>a>img,.rowcard img,.rowcard .ph,.story img.lede,.sub-thumb img,.latest .lt-thumb img,.research-feat img{background:#232328}
 .hero-overlay .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q{color:#f93549}
 .hero-overlay h2 a:hover{color:#ffb8be}
 .card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.sub-body h3 a:hover{color:#f93549}
@@ -2647,6 +2660,31 @@ def theme_btn(lang):
     label = "المظهر: تلقائي / داكن / فاتح" if lang == "ar" else "Theme: auto / dark / light"
     return (f'<button id="themetoggle" class="themetoggle" '
             f'aria-label="{label}" title="{label}">🌙</button>')
+
+
+# The page is alive between rebuilds: every <time datetime> re-renders its
+# relative half ("12m ago" / «قبل ١٢ دقيقة») each half-minute, mirroring
+# time_ago()/ar_count() exactly, and NEW marks + fresh rail dots retire
+# client-side once a story crosses the 90-minute line.
+_CLOCK_JS = """
+(function(){var AR=(document.documentElement.lang||"en")==="ar";
+function arc(n,one,two,few,many){return n===1?one:n===2?two:(n>=3&&n<=10)?n+" "+few:n+" "+many}
+function rel(m){
+ if(AR){if(m<60)return"\\u0642\\u0628\\u0644 "+arc(m,"\\u062f\\u0642\\u064a\\u0642\\u0629","\\u062f\\u0642\\u064a\\u0642\\u062a\\u064a\\u0646","\\u062f\\u0642\\u0627\\u0626\\u0642","\\u062f\\u0642\\u064a\\u0642\\u0629");
+  var h=Math.round(m/60);if(h<24)return"\\u0642\\u0628\\u0644 "+arc(h,"\\u0633\\u0627\\u0639\\u0629","\\u0633\\u0627\\u0639\\u062a\\u064a\\u0646","\\u0633\\u0627\\u0639\\u0627\\u062a","\\u0633\\u0627\\u0639\\u0629");
+  return"\\u0642\\u0628\\u0644 "+arc(Math.round(h/24),"\\u064a\\u0648\\u0645","\\u064a\\u0648\\u0645\\u064a\\u0646","\\u0623\\u064a\\u0627\\u0645","\\u064a\\u0648\\u0645\\u0627\\u064b")}
+ if(m<60)return m+"m ago";var h=Math.round(m/60);if(h<24)return h+"h ago";return Math.round(h/24)+"d ago"}
+function tick(){var now=Date.now();
+ document.querySelectorAll("time[datetime]").forEach(function(t){
+  var d=Date.parse(t.getAttribute("datetime"));if(!d)return;
+  var m=Math.max(1,Math.round((now-d)/6e4));
+  var n=t.lastChild;
+  if(n&&n.nodeType===3){var v=n.nodeValue,i=v.indexOf("\\u00b7");
+   if(i>=0)n.nodeValue=rel(m)+" "+v.slice(i)}
+  if(m>90){var nm=t.querySelector(".newmark");if(nm)nm.remove();
+   var li=t.closest("li.fresh");if(li)li.classList.remove("fresh")}})}
+tick();setInterval(tick,30000)})();
+"""
 
 FLAG_SVG = ('<svg class="flagmark" width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">'
             '<rect width="46" height="15.3" fill="#0b0b0c"/>'
@@ -2775,10 +2813,20 @@ def sub_item(it, lang, pfx):
             f'</div></article>')
 
 def latest_item(it, lang, pfx):
+    """Live-wire timeline entry: a marker dot on a vertical rule (pulsing while
+    the story is under 90 minutes old), a thumbnail when the story has art, and
+    a relative timestamp that _CLOCK_JS keeps ticking between rebuilds."""
     mark = '<span class="orig">TOP</span>' if it.get("original") else ""
-    return (f'<li>{time_tag(it["date"], lang, "t", fresh=True)}{mark}'
+    cls = ' class="fresh"' if is_fresh(it["date"]) else ""
+    thumb = (f'<a class="lt-thumb" href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
+             f'<img src="{esc(it["image"])}" alt="" loading="lazy" '
+             f'referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>'
+             if it["image"] else "")
+    return (f'<li{cls}><div class="lt-body">'
+            f'{time_tag(it["date"], lang, "t", fresh=True)}{mark}'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<span class="s">{esc(display_source(it, lang))}</span></li>')
+            f'<span class="s">{esc(display_source(it, lang))}</span></div>'
+            f'{thumb}</li>')
 
 # ---------- page ----------
 # Standing specials featured on both front pages (owner-curated). Each entry
@@ -3178,6 +3226,7 @@ def render_page(lang, items, built_at):
   </div>
 </div></footer>
 <script>(()=>{{const initial={json.dumps(utc_iso(built_at))};let timer;async function check(){{if(document.hidden||!navigator.onLine)return;try{{const r=await fetch("/data.json",{{cache:"no-store"}});if(r.ok&&((await r.json()).builtAt)!==initial)location.reload();}}catch(_error){{}}}}document.addEventListener("visibilitychange",()=>{{if(!document.hidden)check();}});timer=setInterval(check,900000);}})();</script>
+<script>{_CLOCK_JS}</script>
 {live_fab_html(lang)}
 </body>
 </html>"""
@@ -3447,6 +3496,7 @@ def render_story(it, lang, related, rail, built_at):
   </div>
 </div></footer>
 <script>{_LISTEN_JS}</script>
+<script>{_CLOCK_JS}</script>
 {live_fab_html(lang)}
 </body>
 </html>"""
@@ -3540,6 +3590,7 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 <footer><div class="wrap"><div class="flagline"></div>
   <div class="legal"><span>© {built_at.year} {t['site_name']}</span> <a href="./">{t['back_home']}</a> <a href="about.html">{'من نحن' if lang == 'ar' else 'About'}</a></div>
 </div></footer>
+<script>{_CLOCK_JS}</script>
 </body></html>"""
 
 

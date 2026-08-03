@@ -125,6 +125,20 @@ load-bearing statistic — one or two per story, never as decoration.
   countdown chip (`.fr-card.vote .days`) — dark pill, gold hairline border,
   pulsing gold dot, big mono numeral, recomputed every build. If you build a
   new "alive" element, follow this chip's anatomy.
+- **Latest rail = live wire** (`aside.latest`, also the story-page "keep"
+  rail): entries sit on a vertical timeline rule with a marker dot per item —
+  hollow/muted at rest, red and `pulse`-ing while the story is fresh
+  (`li.fresh`, <90 min), filling red + scaling on hover. Each entry is a flex
+  row: `.lt-body` (inline timestamp + TOP badge, serif title, source) with an
+  optional 52px square `.lt-thumb` inline-end that removes itself on image
+  error. Entries stagger in with `railin` (60ms steps, `backwards` fill;
+  disabled under reduced motion). Uses only logical properties — the timeline
+  mirrors in RTL for free. Relative timestamps across ALL pages are kept
+  ticking client-side by `_CLOCK_JS` (30s interval): it rewrites only the
+  relative half of each `<time>` (mirroring `time_ago`/`ar_count` exactly,
+  both languages), and retires NEW marks and fresh dots once a story crosses
+  the 90-minute line. Never let a server-rendered relative time go stale in a
+  new component — reuse the `<time datetime>` + `_CLOCK_JS` contract.
 - **No dead ends**: every secondary page leads back into the paper. Section
   pages append a "More from Times of Palestine" band (newest 8 stories from
   other sections); the search page renders section-browse chips
