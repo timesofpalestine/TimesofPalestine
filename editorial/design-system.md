@@ -72,8 +72,12 @@ load-bearing statistic — one or two per story, never as decoration.
 
 - **EN**: headlines `--serif` (Georgia stack), weight 700–900, tight
   leading (1.14–1.36 by level); UI/kickers `--sans` (system stack).
-- **AR**: `--serif` becomes Tahoma/"Noto Naskh Arabic"/Amiri; the masthead
-  uses Amiri. Arabic gets taller line-height (1.55–1.65), **zero
+- **AR**: both `--serif` and `--sans` lead with **"Noto Kufi Arabic"**
+  (self-hosted variable font in `/fonts/`, OFL) — the house Arabic face,
+  matching the modern low-contrast Kufi register of Al Jazeera's front
+  (whose own typeface is legally exclusive and must never be copied in).
+  Fallbacks: Tahoma / "Noto Naskh Arabic" / Amiri. The masthead uses Noto
+  Kufi Arabic too. Arabic gets taller line-height (1.55–1.65), **zero
   letter-spacing** (never track Arabic), no uppercase transforms, and
   slightly larger sizes than the EN equivalent of the same element.
 - **Numerals/data**: `ui-monospace,Menlo,monospace` — day counts, seat
