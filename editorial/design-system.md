@@ -153,6 +153,18 @@ load-bearing statistic — one or two per story, never as decoration.
   both languages), and retires NEW marks and fresh dots once a story crosses
   the 90-minute line. Never let a server-rendered relative time go stale in a
   new component — reuse the `<time datetime>` + `_CLOCK_JS` contract.
+- **Share surfaces**: the inline `.share` row under the story body is the
+  universal control; on ≥1200px viewports a floating `.share-rail` of round
+  compact buttons rides fixed in the story gutter (`inset-inline-start`
+  computed from the 820px column, so it mirrors to the right gutter in RTL).
+  Both use the same four targets (X, Facebook, WhatsApp, Telegram); never add
+  a network to one without the other.
+- **Directional arrows are language-scoped**: forward is `→` in English and
+  `←` in Arabic — in RTL the arrow points the way the reading flows. Arrows
+  live in the per-language string tables; a hardcoded arrow in a shared
+  template must be written `{"←" if lang == "ar" else "→"}`. The language
+  toggle carries the 🌐 glyph everywhere it appears (nav utilities, topbar,
+  backbars).
 - **No dead ends**: every secondary page leads back into the paper. Section
   pages append a "More from Times of Palestine" band (newest 8 stories from
   other sections); the search page renders section-browse chips
