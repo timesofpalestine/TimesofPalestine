@@ -96,10 +96,19 @@ load-bearing statistic — one or two per story, never as decoration.
 
 ## 3. Component grammar
 
-- **Section nav** (`nav.sections`): sticky black band; links are minimalist
-  uppercase text tabs with a 2px bottom line-indicator on hover (no pills,
-  no boxes), on a single horizontally scrollable row at every width with an
-  RTL-aware edge-fade cue — never wrapped, never clipped.
+- **Section nav** (`nav.sections`, merged design of #117 + #118): sticky
+  black band of minimalist uppercase line-tabs (2px bottom indicator on
+  hover — no pills, no boxes), organized as TWO tiers (`.n1`/`.n2`).
+  Tier 1 is the hard-news spine (THE LATEST · Gaza · West Bank · Her
+  Story · Politics · Economy · Accountability), heavier and brighter,
+  reading geography → people → power → money → accountability. Tier 2
+  carries the desks and standing features, smaller and muted, with the
+  gold specials clustered and the search/tip utilities anchored
+  inline-end. Each row is a single horizontally scrollable strip at every
+  width with an RTL-aware edge-fade cue — never wrapped, never clipped.
+  New sections join the tier lists in `render_page` deliberately — never
+  appended to the pile; anything not in a tier list still renders at the
+  end of tier 2 (nothing silently vanishes).
 - **Card** (`.card`, `.rowcard`, `.fr-card`): image on top (16/6 default
   aspect in franchise cards), then kicker → serif title → optional CTA.
   Franchise cards are dark (`--black`, gold accents); news cards are light.
