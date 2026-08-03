@@ -3044,6 +3044,7 @@ _LISTEN_JS = """
 (function(){var b=document.getElementById("listen");if(!b)return;
 if(!("speechSynthesis"in window)||!window.SpeechSynthesisUtterance)return;
 b.hidden=false;var S=speechSynthesis,L=document.documentElement.lang||"en";
+var LOC=L==="ar"?"ar-SA":L==="en"?"en-US":L;
 var parts=[],idx=0,state="idle",voice=null;
 function pick(){var vs=S.getVoices();if(!vs.length)return;
   voice=vs.find(function(v){return v.lang&&v.lang.slice(0,2)===L&&v.localService})
@@ -3054,26 +3055,26 @@ function collect(){var out=[];var h=document.querySelector(".story h1");
   var ps=document.querySelectorAll(".story p.summary, .story .summary p, .story .summary h2, .story .summary li");
   ps.forEach(function(p){var x=p.textContent.trim();if(x)out.push(x)});
   var chunks=[];function push(s){
-    while(s.length>220){var cut=s.lastIndexOf(" ",220);if(cut<80)cut=220;
+    while(s.length>170){var cut=s.lastIndexOf(" ",170);if(cut<80)cut=170;
       chunks.push(s.slice(0,cut));s=s.slice(cut)}
-    if(s.trim())chunks.push(s)}
+    if(/[A-Za-z\\u0600-\\u06FF]/.test(s))chunks.push(s)}
   out.forEach(function(txt){
     var bits=txt.split(/([.!?\\u061F\\u06D4]+["\\u00BB\\u201D']?\\s+)/),acc="";
     for(var i=0;i<bits.length;i+=2){
       var s=(bits[i]||"")+(bits[i+1]||"");if(!s.trim())continue;
-      if(acc&&(acc+s).length>220){push(acc);acc=s}else acc+=s}
+      if(acc&&(acc+s).length>170){push(acc);acc=s}else acc+=s}
     push(acc)});
   return chunks}
 function label(k){b.textContent=b.dataset[k]}
 function reset(){state="idle";idx=0;label("play")}
 function next(){if(idx>=parts.length){reset();return}
   var u=new SpeechSynthesisUtterance(parts[idx++]);
-  u.lang=L;if(voice)u.voice=voice;u.rate=1;
+  u.lang=LOC;if(voice)u.voice=voice;u.rate=1;
   u.onend=function(){if(state==="speaking")next()};
   u.onerror=function(){if(state==="speaking")next()};
   S.speak(u)}
 b.addEventListener("click",function(){
-  if(state==="idle"){parts=collect();if(!parts.length)return;
+  if(state==="idle"){pick();parts=collect();if(!parts.length)return;
     S.cancel();state="speaking";label("pause");next()}
   else if(state==="speaking"){S.pause();state="paused";label("resume")}
   else{S.resume();state="speaking";label("pause")}});
