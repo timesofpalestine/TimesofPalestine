@@ -136,7 +136,7 @@ HEALTH = None
 ORIGINAL_CATEGORIES = {
     "gaza", "westbank", "politics", "economy", "accountability", "research",
     "bitcoin", "diaspora", "arts", "sports", "social", "opinion", "news", "humans",
-    "health", "archive", "arabaid",
+    "health", "archive", "arabaid", "women",
 }
 ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 ORIGINAL_BODY_STATS = {}
@@ -359,7 +359,38 @@ _ARAB_SUPPORT = (
 ARAB_AID_RX = re.compile(
     rf"(?s)^(?=.*(?:{_ARAB_ACTORS}))(?=.*(?:{_ARAB_SUPPORT}))", re.I)
 
+# HER STORY (owner directive 2026-08-03): a story enters the section when a
+# woman or girl is its SUBJECT and the reporting is about what she lived —
+# violence and survival, detention, motherhood under siege, the work she
+# carries. Two-part gate so ordinary war copy that merely mentions women
+# stays in its geography section; the section is her account, not a tally.
+_WOMEN_SUBJECT = (
+    r"wom[ae]n|girls?|mothers?|widows?|daughters?|grandmother|"
+    r"female|maternal|midwi(?:fe|ves)|pregnan|"
+    r"نساء|امرأة|نسوة|فتاة|فتيات|أمهات|أرملة|أرامل|شقيقة|جدة|"
+    r"حامل|حوامل|قابلة|أمومة|سيدة|سيدات")
+_WOMEN_CONTEXT = (
+    r"violen|assault|rape|harass|abuse|torture|strip[- ]search|"
+    r"detain|detention|detainee|prison|interrogat|"
+    r"femicide|gender[- ]based|survivor|testimon|widow|"
+    r"childbirth|miscarriage|stillbirth|maternity|menstrual|"
+    r"breadwinner|female[- ]headed|"
+    r"عنف|اعتداء|اغتصاب|تحرش|تعذيب|تفتيش عار|"
+    r"اعتقال|معتقلة|معتقلات|أسيرة|أسيرات|"
+    r"ناجية|شهادة|إفادة|أرملة|أرامل|ولادة|إجهاض|نفاس|أمومة|معيلة")
+# Some terms are already her-story on their own — a female detainee, a
+# midwife, femicide — and need no second signal.
+_WOMEN_SOLO = (
+    r"femicide|gender[- ]based violence|midwi(?:fe|ves)|"
+    r"women'?s rights|violence against women|female detainee|"
+    r"أسيرة|أسيرات|معتقلة|معتقلات|قابلة قانونية|قابلات|"
+    r"العنف ضد النساء|قتل النساء|حقوق المرأة")
+WOMEN_RX = re.compile(
+    rf"(?s)^(?:(?=.*(?:{_WOMEN_SUBJECT}))(?=.*(?:{_WOMEN_CONTEXT}))|(?=.*(?:{_WOMEN_SOLO})))",
+    re.I)
+
 CATEGORY_RULES = [
+    ("women", WOMEN_RX),
     ("arabaid", ARAB_AID_RX),
     ("accountability", ACCOUNTABILITY_RX),
     ("health", HEALTH_RX),
@@ -1801,6 +1832,7 @@ STR = {
         "hero_label": "TOP STORY",
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
                      "humans": "Real Lives", "health": "Health & Healing",
+                     "women": "Her Story",
                      "arabaid": "Arab Support",
                      "archive": "From the Archive",
                      "diaspora": "The Diaspora",
@@ -1867,6 +1899,7 @@ STR = {
         "hero_label": "الخبر الأبرز",
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
                      "humans": "حكايات فلسطينية", "health": "الصحة والتعافي",
+                     "women": "حكايتها",
                      "arabaid": "الإسناد العربي",
                      "archive": "من الأرشيف",
                      "diaspora": "الشتات الفلسطيني",
@@ -1919,12 +1952,12 @@ STR = {
 # Focus sections sit high on the page; each edition leads with its editorial priority.
 # Research (think tanks / OSINT) comes first: news before it becomes news.
 SECTION_ORDER = {
-    "en": ["gaza", "westbank", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "en": ["gaza", "westbank", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
-    "ar": ["gaza", "westbank", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "ar": ["gaza", "westbank", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
 }
-FOCUS_SECTIONS = {"research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid"}  # shown even with one story
+FOCUS_SECTIONS = {"research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
 
 WEEKDAYS_AR = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
 MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",
@@ -2693,9 +2726,16 @@ def render_page(lang, items, built_at):
     def within_hours(i, max_age):
         return (now - i["date"]).total_seconds() / 3600 <= max_age
 
+    def evergreen(i):
+        """Standing reference pages — the scholarship map, a section's launch
+        charter — declare a very long shelf life. They are not the news cycle
+        and must never squat the top slot (owner directive: the page is alive)."""
+        return i.get("max_age_hours", MAX_AGE_HOURS) > 720
+
     def hero_ok(i, max_age=HERO_MAX_AGE_H):
         return (bool(i["image"]) and len(i["title"]) > 30
                 and i["cat"] not in ("social", "research", "opinion", "culture")
+                and not evergreen(i)
                 and PALESTINE_RX.search(f"{i['title']} {i['dek']}")  # the top story IS Palestine
                 and not REVIEWISH_RX.search(i["title"])
                 and within_hours(i, max_age))
@@ -2717,7 +2757,8 @@ def render_page(lang, items, built_at):
               or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
                       and within_hours(i, HERO_MAX_AGE_H), 1))
     hero = heroes[0] if heroes else None
-    hero_subs = take(by_latest, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin"), 4)
+    hero_subs = take(by_latest, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin")
+                     and not evergreen(i), 4)
     # Latest rail and breaking ticker: chronological, Palestine coverage first.
     # The rail is an index — it lists stories without claiming them from sections.
     def palestine(i):
