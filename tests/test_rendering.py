@@ -870,3 +870,34 @@ class StandingFlagTests(unittest.TestCase):
         overlay = homepage.split('hero-overlay', 1)[1][:400]
         self.assertIn("Israeli forces raid a Gaza district", overlay)
         self.assertNotIn("maps scholarships", overlay)
+
+
+class LatestRailTests(unittest.TestCase):
+    """The Latest is a live wire: fresh entries pulse on the timeline, stories
+    with art carry a thumbnail, and the clock script keeps timestamps ticking."""
+
+    def test_rail_marks_fresh_items_and_carries_thumbs_and_clock(self):
+        now = datetime.now(timezone.utc)
+        fresh = item()
+        fresh.update({
+            "title": "Israeli forces raid a Gaza district before dawn today",
+            "link": "https://example.com/rail-fresh", "pid": "railfresh1",
+            "date": now - timedelta(minutes=10), "image": "/media/x.svg"})
+        stale = item()
+        stale.update({
+            "title": "Older cultural festival coverage stays on the record",
+            "link": "https://example.com/rail-stale", "pid": "railstale1",
+            "date": now - timedelta(days=2), "image": None})
+        homepage = build.render_page("en", [fresh, stale], now)
+        rail = homepage.split('<aside class="latest">', 1)[1].split("</aside>", 1)[0]
+        self.assertEqual(rail.count('<li class="fresh">'), 1)
+        self.assertIn("lt-thumb", rail)
+        self.assertIn("setInterval(tick,30000)", homepage)
+
+    def test_story_page_carries_the_clock_script(self):
+        now = datetime.now(timezone.utc)
+        it = item()
+        it.update({"brief": "A first paragraph.", "image": "/media/x.svg",
+                   "pid": "railclock1"})
+        html = build.render_story(it, "en", [], [], now)
+        self.assertIn("setInterval(tick,30000)", html)
