@@ -2450,6 +2450,20 @@ nav.sections a.util{color:#d8d8e2}
 nav.sections a.util:hover{border-block-end-color:#3a3a42}
 [lang=ar] nav.sections .wrap.n1 a{font-size:.9rem}
 [lang=ar] nav.sections .wrap.n2 a{font-size:.78rem}
+/* Mobile chrome diet (outside review 2026-08-03): the desks tier folds
+   behind a More toggle on phones so readers reach the hero sooner; tap
+   targets grow toward the 44px guideline. Desktop is untouched. */
+nav.sections .nav-more{display:none;background:none;border:0;cursor:pointer;color:#c7a86b;font-family:var(--sans);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:.68rem .7rem;white-space:nowrap;flex-shrink:0}
+[lang=ar] nav.sections .nav-more{letter-spacing:0;font-size:.8rem}
+@media(max-width:740px){
+  nav.sections .nav-more{display:inline-block;position:sticky;inset-inline-end:0;background:rgba(11,11,12,.97);z-index:1}
+  nav.sections .wrap.n2{display:none}
+  nav.sections.nav-open .wrap.n2{display:flex}
+  nav.sections a{padding-block:.85rem}
+  nav.sections .wrap.n2 a{padding-block:.85rem}
+  .masthead{padding:.85rem 0 .65rem}
+  .masthead .wrap::after{margin-top:.5rem}
+}
 /* ── hero ── */
 .hero-zone{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:1.55rem;padding-block:1.5rem}
 .hero{border-inline-end:1px solid var(--line);padding-inline-end:1.6rem}
@@ -3256,6 +3270,7 @@ def render_page(lang, items, built_at):
     time_str = f"{d.hour:02d}:{d.minute:02d}"
 
     ticker_track = "".join(f'<a href="{href(i, P)}">{esc(i["title"])}</a>' for i in ticker_items)
+    ticker_track_hidden = ticker_track.replace('<a href', '<a aria-hidden="true" tabindex="-1" href')
     # Israel-votes election box: a card in the franchise row, not a banner —
     # important, but not the top of the paper (owner decision 2026-08-02).
     # Alive until 27 October 2026.
@@ -3408,13 +3423,13 @@ def render_page(lang, items, built_at):
   {theme_btn(lang)}<a class="lang" href="{t['switch_href']}">{t['switch_lang']}</a>
 </div></div>
 
-<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
+<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track_hidden}</div></div></div>
 
 <header class="masthead"><div class="wrap">
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
 
-<nav class="sections" aria-label="Primary"><div class="wrap n1"><a class="home" href="#top">{t['latest']}</a>{nav_tier1}</div><div class="wrap n2">{nav_tier2}<span class="nav-util"><a class="util" href="search.html">{t['search_nav']}</a><a class="util" href="{t['switch_href']}">{t['switch_lang']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div></nav>
+<nav class="sections" aria-label="Primary"><div class="wrap n1"><a class="home" href="#top">{t['latest']}</a>{nav_tier1}<button class="nav-more" aria-expanded="false" aria-controls="navtier2" onclick="var n=this.closest('nav');n.classList.toggle('nav-open');this.setAttribute('aria-expanded',n.classList.contains('nav-open'))">{'المزيد ▾' if lang == 'ar' else 'More ▾'}</button></div><div class="wrap n2" id="navtier2">{nav_tier2}<span class="nav-util"><a class="util" href="search.html">{t['search_nav']}</a><a class="util" href="{t['switch_href']}">{t['switch_lang']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div></nav>
 
 <main id="top">
   <div class="wrap hero-zone">
@@ -3563,6 +3578,7 @@ def render_story(it, lang, related, rail, built_at):
                 f'<p class="summary">{summary_html(it["dek"])}</p>')
     rail_items = [r for r in rail if r is not it]
     ticker_track = "".join(f'<a href="{href(r, "")}">{esc(r["title"])}</a>' for r in rail_items[:6])
+    ticker_track_hidden = ticker_track.replace('<a href', '<a aria-hidden="true" tabindex="-1" href')
     latest_html = "".join(latest_item(r, lang, "") for r in rail_items[:10])
     if it.get("original") or brief:
         cta = ""  # our copy: attribution lives inline in the prose, wire-style
@@ -3684,7 +3700,7 @@ def render_story(it, lang, related, rail, built_at):
 </head>
 <body>
 <div class="backbar"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}<a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
-<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
+<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track_hidden}</div></div></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="../"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>

@@ -112,7 +112,11 @@ load-bearing statistic — one or two per story, never as decoration.
   width with an RTL-aware edge-fade cue — never wrapped, never clipped.
   New sections join the tier lists in `render_page` deliberately — never
   appended to the pile; anything not in a tier list still renders at the
-  end of tier 2 (nothing silently vanishes).
+  end of tier 2 (nothing silently vanishes). **On phones (≤740px) the
+  desks tier folds behind a pinned More/«المزيد» toggle** (`.nav-more`,
+  sticky at the inline-end of tier 1, correct `aria-expanded`) so readers
+  reach the hero sooner; tap targets grow to ~44px in the same breakpoint
+  and the masthead slims. Desktop is untouched.
 - **Card** (`.card`, `.rowcard`, `.fr-card`): image on top (16/6 default
   aspect in franchise cards), then kicker → serif title → optional CTA.
   Franchise cards are dark (`--black`, gold accents); news cards are light.
@@ -120,7 +124,10 @@ load-bearing statistic — one or two per story, never as decoration.
   and a "View all →" link. Sections alternate light; research/investigations
   and specials ride dark bands.
 - **Breaking ticker**: red band, black BREAKING label, 80s linear loop,
-  pauses on hover, `tick-rtl` mirror for Arabic.
+  pauses on hover and keyboard focus, `tick-rtl` mirror for Arabic. The
+  seamless-loop duplicate of the track is decorative: it carries
+  `aria-hidden="true" tabindex="-1"` so screen readers and the tab order
+  see each headline once.
 - **Live markers**: the pulsing NEW/جديد mark (<90 min stories); the
   countdown chip (`.fr-card.vote .days`) — dark pill, gold hairline border,
   pulsing gold dot, big mono numeral, recomputed every build. If you build a
