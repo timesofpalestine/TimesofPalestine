@@ -852,6 +852,22 @@ class ImageOverrideTests(unittest.TestCase):
             build.apply_image_overrides([it])
         self.assertEqual(it["image"], "/media/times-of-palestine-her-story-2026.svg")
 
+    def test_local_photo_override_carries_its_own_manifest_credit(self):
+        # The Ali Al Thawadi order (2026-08-03): an owner-supplied photo must
+        # run with ITS manifest credit, never the replaced wire image's.
+        it = item()
+        it.update({"pid": "eb18db4ce2",
+                   "image": "https://cdn.example.com/wire.jpg",
+                   "media": {"credit": "Photo: Some Wire Agency",
+                             "rightsBasis": "wire", "source": "wire",
+                             "licenseUrl": None}})
+        build.apply_image_overrides([it])   # real editorial/image-overrides.json
+        self.assertEqual(it["image"], "/media/ali-al-thawadi-un-2026.jpg")
+        self.assertEqual(it["media"]["credit"], "Photo: Times of Palestine")
+        self.assertNotIn("Wire Agency", str(it["media"]))
+        self.assertTrue((Path(build.ROOT) / "originals" / "media"
+                         / "ali-al-thawadi-un-2026.jpg").is_file())
+
 
 class StandingFlagTests(unittest.TestCase):
     """Only an explicit standing flag keeps a story out of the hero tier —
