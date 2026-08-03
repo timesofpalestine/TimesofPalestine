@@ -20,6 +20,7 @@ Cost: roughly one Opus research pass plus a shorter Arabic pass per report.
 import json
 import os
 import re
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from tempfile import NamedTemporaryFile
@@ -230,6 +231,19 @@ def _parse(text):
     }, None)
 
 
+def _retryable_api_error(error):
+    """Transient provider trouble worth one more try inside the same desk
+    window — overload, rate limit, 5xx, connection drops. Anything else
+    (auth, bad request) re-raises immediately."""
+    name = type(error).__name__
+    text = str(error).lower()
+    return (name in ("APIConnectionError", "APITimeoutError", "InternalServerError",
+                     "RateLimitError", "OverloadedError")
+            or "overloaded" in text or "rate limit" in text
+            or "'status': 529" in text or "529" in text[:200]
+            or "internal server" in text)
+
+
 def _call(client, system, messages, tools=None, max_tokens=32000):
     kwargs = dict(model=MODEL, max_tokens=max_tokens, system=system,
                   messages=messages, thinking={"type": "adaptive"})
@@ -238,8 +252,22 @@ def _call(client, system, messages, tools=None, max_tokens=32000):
     # Must stream. A research pass with adaptive thinking and a large max_tokens can
     # exceed the SDK's 10-minute non-streaming ceiling, and the SDK refuses the call
     # outright rather than letting it run — which is why the desk filed nothing at all.
-    with client.messages.stream(**kwargs) as stream:
-        resp = stream.get_final_message()
+    # A transient provider error (overloaded, 429/5xx) gets two bounded retries with
+    # backoff before the window is surrendered — the 2026-08-02 19:00 window lost the
+    # telemedicine report to a single overloaded_error (issue #6 note, 2026-08-03).
+    last = None
+    for attempt in range(3):
+        if attempt:
+            time.sleep(30 * attempt)
+            print(f"  → desk retry {attempt}/2 after {type(last).__name__}")
+        try:
+            with client.messages.stream(**kwargs) as stream:
+                resp = stream.get_final_message()
+            break
+        except Exception as e:
+            last = e
+            if attempt == 2 or not _retryable_api_error(e):
+                raise
     text = "".join(b.text for b in resp.content if b.type == "text").strip()
     return text, getattr(resp, "stop_reason", None)
 
