@@ -1743,6 +1743,36 @@ def _card_image_hash(url):
     _IMG_HASH_MEMO[url] = digest
     return digest
 
+IMAGE_OVERRIDES = load_editorial_json(
+    ROOT / "editorial" / "image-overrides.json", {})
+
+
+def apply_image_overrides(items):
+    """Photo-desk kill switch (owner order 2026-08-03): a story listed in
+    editorial/image-overrides.json gets its image replaced no matter what
+    the wire supplies — "cover" for the branded category cover, a local
+    /media/ path, or a rights-cleared https URL. Keyed by pid, so the order
+    holds through every rebuild for the story's lifetime."""
+    if not IMAGE_OVERRIDES:
+        return
+    for it in items:
+        ov = IMAGE_OVERRIDES.get(it.get("pid"))
+        if not ov:
+            continue
+        target = (ov.get("image") or "cover").strip()
+        if target == "cover":
+            cover = f"times-of-palestine-cover-{it['cat']}.svg"
+            if not (ROOT / "originals" / "media" / cover).is_file():
+                cover = "times-of-palestine-cover-news.svg"
+            it["image"] = f"/media/{cover}"
+        else:
+            it["image"] = target
+        if it["image"].startswith("/media/times-of-palestine-"):
+            it["media"] = {"credit": "Graphic: Times of Palestine",
+                           "rightsBasis": "owned",
+                           "source": "Times of Palestine", "licenseUrl": None}
+
+
 def dedupe_card_images(items):
     """One photo, one story (owner report 2026-08-02): the same upstream
     photo riding two different stories reads as a broken front. Items whose
@@ -1813,6 +1843,7 @@ def build_lang(lang):
                 it["media"] = {"credit": "Graphic: Times of Palestine",
                                "rightsBasis": "owned",
                                "source": "Times of Palestine", "licenseUrl": None}
+    apply_image_overrides(capped)
     dedupe_card_images(capped)
     return capped
 # ---------- localization ----------

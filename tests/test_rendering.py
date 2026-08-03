@@ -816,3 +816,29 @@ class LiveTVTests(unittest.TestCase):
         it_en = item(); it_en.update({"image": "/media/x.svg", "pid": "live000002"})
         en_front = build.render_page("en", [it_en], built_at)
         self.assertNotIn('id="livefab"', en_front)
+
+
+class ImageOverrideTests(unittest.TestCase):
+    """The photo desk can kill a specific story's image by pid."""
+
+    def test_override_replaces_wire_image_with_category_cover(self):
+        it = item()
+        it.update({"pid": "287efd3ca4", "cat": "gaza",
+                   "image": "https://cdn.example.com/bad-frame.jpg"})
+        other = item()
+        other.update({"pid": "untouched1", "cat": "gaza",
+                      "image": "https://cdn.example.com/fine.jpg"})
+        with mock.patch.object(build, "IMAGE_OVERRIDES",
+                               {"287efd3ca4": {"image": "cover"}}):
+            build.apply_image_overrides([it, other])
+        self.assertEqual(it["image"], "/media/times-of-palestine-cover-gaza.svg")
+        self.assertEqual(it["media"]["rightsBasis"], "owned")
+        self.assertEqual(other["image"], "https://cdn.example.com/fine.jpg")
+
+    def test_override_accepts_explicit_local_asset(self):
+        it = item()
+        it.update({"pid": "abcabcabca", "image": "https://cdn.example.com/x.jpg"})
+        with mock.patch.object(build, "IMAGE_OVERRIDES",
+                               {"abcabcabca": {"image": "/media/times-of-palestine-her-story-2026.svg"}}):
+            build.apply_image_overrides([it])
+        self.assertEqual(it["image"], "/media/times-of-palestine-her-story-2026.svg")
