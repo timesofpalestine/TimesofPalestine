@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Her Story: what the war did to Palestinian women</title>
+  <desc id="d">Documented figures on Palestinian women and girls: more than 38,000 women and girls killed in Gaza between October 2023 and December 2025 according to UN Women, at least 47 a day; about 16,000 widows, one in seven families now headed by a woman; nearly 790,000 women and girls in crisis or catastrophic food insecurity; nearly 11,000 left with lifelong disabilities; and UN-documented sexual and gender-based violence in detention and at checkpoints. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}.gold{fill:#c7a86b}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="70" y="80" class="sans ivory" font-size="44" font-weight="800">HER STORY</text>
+  <text x="1530" y="80" class="arabic ivory" font-size="42" font-weight="700" text-anchor="end">حكايتها</text>
+  <text x="70" y="124" class="sans muted" font-size="24">What Palestinian women survived — and what they carry now</text>
+  <text x="1530" y="124" class="arabic muted" font-size="22" text-anchor="end">ما نجت منه الفلسطينيات.. وما يحملنه الآن</text>
+
+  <rect x="70" y="158" width="1460" height="3" fill="#33342f"/>
+
+  <!-- four figures -->
+  <g text-anchor="middle">
+    <text x="255" y="290" class="mono" fill="#e05c6b" font-size="76" font-weight="700">38,000+</text>
+    <text x="255" y="332" class="sans ivory" font-size="22" font-weight="700">women and girls killed</text>
+    <text x="255" y="362" class="sans muted" font-size="19">Gaza, Oct 2023 – Dec 2025</text>
+    <text x="255" y="392" class="arabic muted" font-size="20">شهيدة في غزة</text>
+
+    <text x="675" y="290" class="mono gold" font-size="76" font-weight="700">47</text>
+    <text x="675" y="332" class="sans ivory" font-size="22" font-weight="700">killed every day</text>
+    <text x="675" y="362" class="sans muted" font-size="19">on average, across the war</text>
+    <text x="675" y="392" class="arabic muted" font-size="20">شهيدة يومياً في المتوسط</text>
+
+    <text x="1080" y="290" class="mono" fill="#8fa8cf" font-size="76" font-weight="700">16,000</text>
+    <text x="1080" y="332" class="sans ivory" font-size="22" font-weight="700">widows</text>
+    <text x="1080" y="362" class="sans muted" font-size="19">1 in 7 families led by a woman</text>
+    <text x="1080" y="392" class="arabic muted" font-size="20">أرملة.. أسرة من كل سبع تعيلها امرأة</text>
+
+    <text x="1420" y="290" class="mono" fill="#5fae83" font-size="76" font-weight="700">790k</text>
+    <text x="1420" y="332" class="sans ivory" font-size="22" font-weight="700">facing hunger</text>
+    <text x="1420" y="362" class="sans muted" font-size="19">crisis or catastrophic levels</text>
+    <text x="1420" y="392" class="arabic muted" font-size="20">يواجهن الجوع</text>
+  </g>
+
+  <rect x="70" y="440" width="1460" height="3" fill="#33342f"/>
+
+  <text x="70" y="496" class="sans gold" font-size="27" font-weight="800">WHAT UN INVESTIGATORS DOCUMENTED · ما وثّقه محققو الأمم المتحدة</text>
+  <g class="sans ivory" font-size="23">
+    <text x="70" y="548">Sexual assault in detention — strip searches by male soldiers, reported rapes, threats of rape</text>
+    <text x="70" y="596">Invasive body searches and sexual harassment at homes and checkpoints in the West Bank</text>
+    <text x="70" y="644">Settler sexual violence, often in the presence of Israeli forces, rarely investigated</text>
+    <text x="70" y="692">Nearly 11,000 women and girls wounded into lifelong disability</text>
+  </g>
+  <g class="arabic muted" font-size="21" text-anchor="end">
+    <text x="1530" y="548">اعتداءات جنسية في الاعتقال وتفتيش عارٍ وتهديد بالاغتصاب</text>
+    <text x="1530" y="596">تفتيش جسدي مهين وتحرش على الحواجز وفي البيوت بالضفة</text>
+    <text x="1530" y="644">عنف جنسي من المستوطنين نادراً ما يُحقَّق فيه</text>
+    <text x="1530" y="692">نحو 11 ألف جريحة بإعاقات دائمة</text>
+  </g>
+
+  <text x="70" y="768" class="sans ivory" font-size="25" font-weight="700" font-style="italic">Every number here was a woman with a name. This section is where we print the names.</text>
+  <text x="1530" y="812" class="arabic ivory" font-size="23" font-weight="700" text-anchor="end">كل رقم هنا امرأة لها اسم.. وهنا نكتب الأسماء</text>
+
+  <text x="70" y="862" class="sans muted" font-size="19">Graphic: Times of Palestine · Sources: UN Women (Apr 2026); UN Commission of Inquiry (Mar 2025); UN special rapporteurs (Feb 2024, Apr 2026)</text>
+</svg>

@@ -180,6 +180,33 @@ deadlines retired, both languages, links verified. Deadlines are always
 phrased as verify-at-source. Claude's beat; other agents may PR additions
 with sources.
 
+## HER STORY — Palestinian women's accounts (owner directive 2026-08-03)
+
+Standing section, key `women` ("Her Story" / «حكايتها»), modelled on More
+to Her Story: women and girls are the SUBJECT, not the illustration. It
+covers what Palestinian women survived and what they carry — violence
+against women (UN-documented sexual and gender-based violence in
+detention, at checkpoints and by settlers), widowhood and female-headed
+households, birth and maternal care under siege, detention of women and
+girls, and the work women do to hold families and institutions together.
+Wire items route in automatically (`WOMEN_RX`: a female subject plus a
+her-story context, or a strong solo signal like أسيرة/femicide/midwife).
+
+Section rules, binding on every agent:
+- **Consent and safety first.** Never name a survivor of sexual violence
+  without explicit consent; never publish an account in a form that could
+  identify her against her wishes. An anonymous account still runs —
+  silence protects only whoever caused the harm.
+- **Report the issue, never the individual** (charter rule, enforced hard
+  here): no spectacle, no grief as raw material. Her words lead; our
+  summary follows.
+- **Attribute every finding** to the specific UN body/report and date.
+- Both editions always; Arabic is written fresh, never translated.
+- Women journalists inside Palestine are invited to file; their bylines
+  run on their own work. Launch report:
+  `originals/her-story-palestinian-women-2026.*`. Claude's beat; open to
+  all agents under these rules.
+
 ## Arab support monitor (owner directive 2026-08-02)
 
 Standing division: what Arab countries are doing to help Palestinians —
