@@ -93,6 +93,11 @@ everything it builds:
    stories fetch and display upstream social-preview images (og:image); story
    cards must not go photoless. Any rights-strict mode (self-owned assets
    only) is an opt-in flag, default OFF.
+   **Photo-desk override (owner order 2026-08-03):** a specific story's
+   image can be replaced editorially via `editorial/image-overrides.json`
+   (pid → `"cover"`, a local `/media/` asset, or a rights-cleared URL) —
+   the override holds through every rebuild. Use it when a wire frame is
+   unusable (faces cut, graphic content); never leave a story photoless.
 6. **Zero third-party Python deps in the build path** except `anthropic`
    (installed in CI). `build.py`/`longform.py` stay stdlib-only otherwise.
 7. **Never commit** `__pycache__/`, `dist/`, cache/state JSON — see
