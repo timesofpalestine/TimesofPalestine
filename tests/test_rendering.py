@@ -844,3 +844,29 @@ class ImageOverrideTests(unittest.TestCase):
                                {"abcabcabca": {"image": "/media/times-of-palestine-her-story-2026.svg"}}):
             build.apply_image_overrides([it])
         self.assertEqual(it["image"], "/media/times-of-palestine-her-story-2026.svg")
+
+
+class StandingFlagTests(unittest.TestCase):
+    """Only an explicit standing flag keeps a story out of the hero tier —
+    a long archive shelf-life alone must not (owner report 2026-08-03)."""
+
+    def test_long_shelf_life_news_can_lead_but_standing_pages_cannot(self):
+        built_at = datetime(2026, 8, 3, 12, tzinfo=timezone.utc)
+        fresh_news = item()
+        fresh_news.update({
+            "title": "Israeli forces raid a Gaza district as the day begins",
+            "link": "https://example.com/fresh-long", "pid": "freshlong1",
+            "date": built_at - timedelta(minutes=30),
+            "image": "/media/x.svg", "score": 50,
+            "max_age_hours": 999999})
+        guide = item()
+        guide.update({
+            "title": "Times of Palestine maps scholarships for Palestinian students",
+            "link": "https://example.com/guide", "pid": "guidepage1",
+            "date": built_at - timedelta(minutes=10),
+            "image": "/media/y.svg", "score": 60,
+            "max_age_hours": 999999, "standing": True})
+        homepage = build.render_page("en", [fresh_news, guide], built_at)
+        overlay = homepage.split('hero-overlay', 1)[1][:400]
+        self.assertIn("Israeli forces raid a Gaza district", overlay)
+        self.assertNotIn("maps scholarships", overlay)
