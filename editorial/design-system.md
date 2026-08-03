@@ -109,6 +109,14 @@ you have not finished the change.
 - **CTAs**: gold, weight 700, arrow glyph — `→` in EN, `←` in AR. Never a
   button-styled link inside a card; the specials band CTA (bordered pill) is
   the one standing exception.
+- **Live-TV pill** (`.livefab` + `.livedock`): a fixed, pulsing red pill
+  (bottom inline-start, RTL-aware) on editions with a configured stream
+  (`LIVE_TV` in `build.py`; Arabic carries Al Jazeera's live broadcast).
+  Tapping docks a corner mini-player — youtube-nocookie iframe created
+  only on tap, closable, pill returns on close — so during major breaking
+  news the reader watches instantly from any page while continuing to
+  read. Enable another edition by filling its stream id; never autoload
+  the iframe.
 - **Listen button** (`.listenbtn`, story pages): house pill under the
   timestamps that reads the story aloud via the Web Speech API — device
   voices only, no third-party audio service, both languages. States:
