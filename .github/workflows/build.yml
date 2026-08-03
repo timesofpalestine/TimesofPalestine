@@ -6,9 +6,10 @@ on:
     # practice (checked 2026-08-03; the site only looked alive because PR
     # merges triggered push builds). Mitigations: staggered odd minutes
     # (top-of-slot stampedes are deprioritized first) and several distinct
-    # entries so a dropped tick doesn't silence a whole cycle. If gaps
-    # persist, an external heartbeat hitting workflow_dispatch is the
-    # durable fix (discussion: issue #6, 2026-08-03).
+    # entries so a dropped tick doesn't silence a whole cycle. The durable
+    # cadence is rearm.yml: once WORKFLOW_DISPATCH_TOKEN is set, every
+    # completed build dispatches the next one ~9 minutes later, scheduler
+    # or no scheduler (owner-approved 2026-08-03).
     - cron: "7,37 * * * *"
     - cron: "17,47 * * * *"
     - cron: "27,57 * * * *"
