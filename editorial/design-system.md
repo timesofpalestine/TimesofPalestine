@@ -96,6 +96,19 @@ load-bearing statistic — one or two per story, never as decoration.
 
 ## 3. Component grammar
 
+- **Section nav** (`nav.sections`, merged design of #117 + #118): sticky
+  black band of minimalist uppercase line-tabs (2px bottom indicator on
+  hover — no pills, no boxes), organized as TWO tiers (`.n1`/`.n2`).
+  Tier 1 is the hard-news spine (THE LATEST · Gaza · West Bank · Her
+  Story · Politics · Economy · Accountability), heavier and brighter,
+  reading geography → people → power → money → accountability. Tier 2
+  carries the desks and standing features, smaller and muted, with the
+  gold specials clustered and the search/tip utilities anchored
+  inline-end. Each row is a single horizontally scrollable strip at every
+  width with an RTL-aware edge-fade cue — never wrapped, never clipped.
+  New sections join the tier lists in `render_page` deliberately — never
+  appended to the pile; anything not in a tier list still renders at the
+  end of tier 2 (nothing silently vanishes).
 - **Card** (`.card`, `.rowcard`, `.fr-card`): image on top (16/6 default
   aspect in franchise cards), then kicker → serif title → optional CTA.
   Franchise cards are dark (`--black`, gold accents); news cards are light.
@@ -104,15 +117,6 @@ load-bearing statistic — one or two per story, never as decoration.
   and specials ride dark bands.
 - **Breaking ticker**: red band, black BREAKING label, 80s linear loop,
   pauses on hover, `tick-rtl` mirror for Arabic.
-- **Two-tier section nav** (`nav.sections .n1/.n2`): tier 1 is the
-  hard-news spine (THE LATEST · Gaza · West Bank · Her Story · Politics ·
-  Economy · Accountability), heavier and brighter; tier 2 carries the desks
-  and standing features, smaller and muted, with the gold specials
-  clustered and the search/tip utilities anchored inline-end. Both rows
-  scroll horizontally under 960px. New sections join the tier lists in
-  `render_page` deliberately — never appended to the pile; anything not in
-  a tier list still renders at the end of tier 2 (nothing silently
-  vanishes).
 - **Live markers**: the pulsing NEW/جديد mark (<90 min stories); the
   countdown chip (`.fr-card.vote .days`) — dark pill, gold hairline border,
   pulsing gold dot, big mono numeral, recomputed every build. If you build a
@@ -133,14 +137,16 @@ load-bearing statistic — one or two per story, never as decoration.
 - **CTAs**: gold, weight 700, arrow glyph — `→` in EN, `←` in AR. Never a
   button-styled link inside a card; the specials band CTA (bordered pill) is
   the one standing exception.
-- **Live-TV pill** (`.livefab` + `.livedock`): a fixed, pulsing red pill
-  (bottom inline-start, RTL-aware) on editions with a configured stream
+- **Live-TV pill** (`.livefab` + `.livedock`): a fixed, compact pulsing red
+  pill (bottom inline-start, RTL-aware) on editions with a configured stream
   (`LIVE_TV` in `build.py`; Arabic carries Al Jazeera's live broadcast).
-  Tapping docks a corner mini-player — youtube-nocookie iframe created
-  only on tap, closable, pill returns on close — so during major breaking
-  news the reader watches instantly from any page while continuing to
-  read. Enable another edition by filling its stream id; never autoload
-  the iframe.
+  It carries a small ✕ that hides it for the browsing session
+  (sessionStorage) so it never squats over content against the reader's
+  will. Tapping the pill docks a corner mini-player — youtube-nocookie
+  iframe created only on tap, closable, pill returns on close — so during
+  major breaking news the reader watches instantly from any page while
+  continuing to read. Enable another edition by filling its stream id;
+  never autoload the iframe.
 - **Listen button** (`.listenbtn`, story pages): house pill under the
   timestamps that reads the story aloud via the Web Speech API — device
   voices only, no third-party audio service, both languages. States:
