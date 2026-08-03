@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">An open municipal hall with musical voices crossing its doorway</title>
+  <desc id="desc">Editorial illustration showing an open civic doorway, a line of musical notes and a balanced judicial scale, representing the French court order protecting access for a Palestine concert.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10241d"/>
+      <stop offset="1" stop-color="#193b2e"/>
+    </linearGradient>
+    <linearGradient id="door" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1e7cd"/>
+      <stop offset="1" stop-color="#c7a86b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#07110d" flood-opacity=".45"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1320" cy="155" r="255" fill="#286344" opacity=".28"/>
+  <circle cx="210" cy="745" r="330" fill="#7f1d2d" opacity=".20"/>
+  <path d="M120 690 C370 560 530 735 760 590 S1180 420 1480 565" fill="none" stroke="#59a97d" stroke-width="4" opacity=".28"/>
+
+  <g filter="url(#shadow)">
+    <rect x="405" y="175" width="610" height="600" rx="18" fill="#eadfc4"/>
+    <rect x="455" y="235" width="510" height="540" rx="10" fill="#0c1914"/>
+    <path d="M455 235 H710 V775 H455 Z" fill="url(#door)"/>
+    <path d="M710 235 L965 300 V775 H710 Z" fill="#d7c49a"/>
+    <circle cx="745" cy="520" r="13" fill="#7f1d2d"/>
+    <rect x="620" y="125" width="180" height="75" rx="10" fill="#7f1d2d"/>
+    <path d="M660 160 H760" stroke="#f4ecd9" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <g fill="none" stroke="#f4ecd9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M205 420 C315 340 405 355 520 420"/>
+    <path d="M230 500 C350 425 455 440 570 505" opacity=".72"/>
+  </g>
+  <g fill="#c7a86b">
+    <circle cx="260" cy="392" r="22"/>
+    <path d="M280 390 V290 H345" stroke="#c7a86b" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <circle cx="385" cy="445" r="22"/>
+    <path d="M405 442 V330 H475" stroke="#c7a86b" stroke-width="16" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(1100 275)" filter="url(#shadow)" stroke="#f4ecd9" fill="none" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 110 H360"/>
+    <path d="M180 45 V355"/>
+    <path d="M115 355 H245"/>
+    <path d="M145 45 H215"/>
+    <path d="M60 110 L10 240 H110 Z"/>
+    <path d="M300 110 L250 240 H350 Z"/>
+  </g>
+  <circle cx="1280" cy="385" r="12" fill="#c7a86b"/>
+  <circle cx="1460" cy="385" r="12" fill="#c7a86b"/>
+  <path d="M1050 710 H1480" stroke="#c7a86b" stroke-width="5" opacity=".65"/>
+</svg>
