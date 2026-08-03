@@ -466,7 +466,10 @@ class RenderingTests(unittest.TestCase):
                 "The report describes the incident using attributed details from the "
                 "publisher and provides sufficient context for readers. It clearly "
                 "states what is known, avoids unsupported conclusions, and ends as a "
-                "complete newsroom brief."
+                "complete newsroom brief.\n\nResidents told the publisher that rescue "
+                "crews reached the district within the hour and moved the wounded to "
+                "the nearest hospital, while municipal teams surveyed the damage and "
+                "families waited for word on relatives reported missing overnight."
             )
             cache.write_text(json.dumps({
                 "en:1234567890": {"brief": brief, "ts": 1},
@@ -485,7 +488,11 @@ class RenderingTests(unittest.TestCase):
             brief = (
                 "This complete cached newsroom brief remains publishable during a "
                 "temporary provider outage. It preserves the attributed reporting, "
-                "includes enough context for readers, and ends with a finished sentence."
+                "includes enough context for readers, and ends with a finished "
+                "sentence.\n\nThe cached copy carries the full account of the day's "
+                "events as the desk wrote it, names the outlet once inline in the "
+                "prose, and keeps every figure and attribution exactly as the "
+                "original wire report carried them for the reader."
             )
             cache.write_text(json.dumps({
                 "en:1234567890": {"brief": brief, "ts": 1},
@@ -1004,10 +1011,21 @@ class LanguageQualityTests(unittest.TestCase):
 
     AR_BAD_BODY = (
         "أسلمت قوات الاحتلال جثامين ثلاثة أسرى إلى اللجنة الدولية للصليب الأحمر "
-        "عند حاجز بيت حانون شمالي قطاع غزة، بحسب وكالة معاً. وقالت الوكالة إن "
-        "التسليم جرى بعد ظهر الأحد بحضور طواقم طبية فلسطينية استلمت الجثامين "
-        "ونقلتها إلى مجمع الشفاء الطبي لتوثيق هوياتها قبل تسليمها إلى ذويها.")
+        "عند حاجز بيت حانون شمالي قطاع غزة بعد ظهر الأحد، بحسب وكالة معاً. "
+        "وأوضحت الوكالة أن التسليم جرى بحضور طواقم طبية فلسطينية استلمت "
+        "الجثامين ونقلتها إلى مجمع الشفاء الطبي غربي مدينة غزة.\n\n"
+        "وذكرت الوكالة أن الطواقم باشرت توثيق هويات الأسرى الثلاثة تمهيداً "
+        "لتسليم الجثامين إلى ذويهم في وقت لاحق من مساء اليوم نفسه. وأشارت إلى "
+        "أن عمليات مماثلة جرت خلال الأسابيع الماضية عبر الحاجز ذاته ضمن "
+        "التفاهمات القائمة بين الجانبين برعاية اللجنة الدولية للصليب الأحمر، "
+        "فيما ينتظر ذوو أسرى آخرين إشعاراً مماثلاً بشأن أبنائهم.")
     AR_GOOD_BODY = AR_BAD_BODY.replace("أسلمت", "سلّمت")
+
+    def setUp(self):
+        # The fixtures must clear the structural gates so the diction tests
+        # exercise diction alone.
+        assert len(self.AR_BAD_BODY.split()) >= 90
+        assert len([p for p in self.AR_BAD_BODY.split("\n\n") if p.strip()]) >= 2
 
     def test_arabic_wrong_verb_and_fillers_are_flagged(self):
         self.assertTrue(build.language_quality_issues("أسلمت قوات الاحتلال الجثامين", "ar"))
@@ -1053,3 +1071,63 @@ class LanguageQualityTests(unittest.TestCase):
         self.assertIsNotNone(brief)          # charter: gating defaults to publish
         self.assertNotIn("brief_refused", it)
         self.assertEqual(len(client.calls), 2)
+
+
+class PacingTests(unittest.TestCase):
+    """Neither wall-of-text paragraphs nor two-line stub articles publish
+    (owner order 2026-08-03)."""
+
+    LONG_SENT = ("Israeli forces raided the northern district before dawn and "
+                 "residents described convoys moving through the market road. ")
+
+    def test_reflow_splits_wall_of_text_at_sentence_boundaries(self):
+        wall = self.LONG_SENT * 8                      # ~128 words, one block
+        flowed = build.reflow_paragraphs(wall)
+        paras = flowed.split("\n\n")
+        self.assertGreater(len(paras), 1)
+        for p in paras:
+            self.assertLessEqual(len(p.split()), build.MAX_PARA_WORDS)
+        self.assertEqual(flowed.replace("\n\n", " ").split(), wall.split())
+
+    def test_reflow_leaves_well_paced_copy_alone(self):
+        text = "One short paragraph here.\n\nAnd a second one after it."
+        self.assertEqual(build.reflow_paragraphs(text), text)
+
+    def test_structure_issues_flag_stub_and_single_block(self):
+        stub = "Israeli forces raided the camp at dawn. Residents counted twelve vehicles."
+        issues = build.structure_issues(stub, "en")
+        self.assertTrue(any("too short" in i for i in issues))
+        self.assertTrue(any("single-block" in i for i in issues))
+        good = (self.LONG_SENT * 3).strip() + "\n\n" + (self.LONG_SENT * 3).strip()
+        self.assertEqual(build.structure_issues(good, "en"), [])
+
+    def test_stub_brief_is_withheld_after_failed_expansion(self):
+        title = "HEADLINE: Israeli forces raid Jenin camp before dawn today"
+        stub = ("Israeli forces raided Jenin refugee camp before dawn, the "
+                "Wafa news agency reported. Residents counted twelve military "
+                "vehicles entering through the eastern road of the camp.")
+        client = _FakeBriefsClient([f"{title}\n\n{stub}", f"{title}\n\n{stub}"])
+        it = item()
+        it.update({"pid": "pacing0001"})
+        self.assertIsNone(build.write_brief(client, it))
+        self.assertTrue(it.get("brief_refused"))
+        self.assertEqual(len(client.calls), 2)     # the desk got its retry first
+
+    def test_publish_floor_drops_stubs_but_keeps_substantial_briefs(self):
+        stub_item = item()
+        stub_item["brief"] = "Two short sentences only. Nothing else was reported."
+        ok_item = item()
+        ok_item.update({"link": "https://example.com/ok", "pid": "pacing0002",
+                        "brief": (self.LONG_SENT * 3).strip() + "\n\n"
+                                 + (self.LONG_SENT * 2).strip()})
+        kept = build.select_publishable_copy([stub_item, ok_item], [])
+        self.assertEqual([k["pid"] for k in kept], ["pacing0002"])
+
+    def test_story_page_renders_reflowed_multi_paragraph_body(self):
+        it = item()
+        it.update({"brief": (self.LONG_SENT * 8).strip(), "pid": "pacing0003",
+                   "image": "/media/x.svg"})
+        html = build.render_story(it, "en", [], [],
+                                  datetime(2026, 8, 3, tzinfo=timezone.utc))
+        body = html.split('class="kind"', 1)[1]
+        self.assertGreaterEqual(body.count('<p class="summary">'), 2)
