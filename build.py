@@ -2274,6 +2274,16 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .livedock .ld-x:hover{color:#fff}
 .livedock .ld-frame{aspect-ratio:16/9;background:#000}
 .livedock .ld-frame iframe{width:100%;height:100%;border:0;display:block}
+/* Theme toggle + pull quotes (owner review 2026-08-03) */
+.themetoggle{background:none;border:0;cursor:pointer;font-size:1.02rem;line-height:1;padding:.2rem .4rem;color:inherit;opacity:.85}
+.themetoggle:hover{opacity:1}
+.topbar .themetoggle{margin-inline-start:auto}
+.topbar .lang{margin-inline-start:.3rem}
+.backbar .bb-tools{display:flex;align-items:center;gap:.6rem}
+.story blockquote.pull{margin:1.7rem 0;padding-inline-start:1.1rem;border-inline-start:4px solid #c7a86b;font-family:var(--serif);font-size:1.32rem;line-height:1.5;font-weight:700;max-width:42.5rem}
+.story blockquote.pull p{margin:0}
+.story blockquote.pull p+p{margin-top:.55rem;font-size:.9rem;font-weight:600;color:var(--muted);font-family:var(--sans)}
+[lang=ar] .story blockquote.pull{line-height:1.85;font-size:1.28rem}
 .searchbox{width:100%;font-size:1.05rem;padding:.7rem .9rem;border:2px solid var(--line-dark);border-radius:8px;background:var(--card);color:var(--ink)}
 .searchres{list-style:none;margin-top:1.2rem}
 .searchres li{padding:.8rem 0;border-bottom:1px solid var(--line)}
@@ -2389,7 +2399,7 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .breadcrumbs [aria-current=page]{color:var(--ink)}
 .story .kick{color:var(--red);font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.7rem}
 [lang=ar] .story .kick{letter-spacing:.03em;font-size:.82rem}
-.story h1{font-family:var(--serif);font-weight:900;font-size:clamp(1.7rem,3.8vw,2.7rem);line-height:1.13;letter-spacing:-.01em}
+.story h1{font-family:var(--serif);font-weight:900;font-size:clamp(1.9rem,4.4vw,3.1rem);line-height:1.12;letter-spacing:-.012em}
 [lang=ar] .story h1{font-weight:800;line-height:1.5;letter-spacing:0}
 .story .meta{margin-top:1rem;font-size:.78rem;gap:.55rem}
 .story-stamp{margin-top:.55rem;font-size:.74rem;color:var(--muted);font-weight:700;display:flex;gap:.55rem;flex-wrap:wrap}
@@ -2433,25 +2443,7 @@ footer .legal{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #2a2a30;fo
 footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%);border-top:4px solid var(--red);max-width:200px;margin-bottom:1.5rem}
 [dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}
 /* ── dark mode ── */
-@media(prefers-color-scheme:dark){
-  :root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}
-  .masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.card h3,.rowcard h3,.sub-body h3,.research-feat h3,.op-card h3{color:var(--ink)}
-  .hero-overlay h2,.hero-overlay h2 a{color:#fff}
-  .story .summary{color:#d6d6de}
-  .research-feat .dek{color:#c5c5cf}
-  section.opinion{background:#17171c;border-top-color:var(--red)}
-  .card{box-shadow:0 1px 4px rgba(0,0,0,.35)}
-  .card:hover{box-shadow:0 5px 18px rgba(0,0,0,.5)}
-  .sub-item:hover{background:rgba(255,255,255,.04)}
-  .card img,.hero-imgwrap>a>img,.rowcard img,.story img.lede,.sub-thumb img{opacity:.9}
-  /* Loading/dead-image placeholders must not glare paper-gray on dark */
-  .card img,.hero-imgwrap>a>img,.rowcard img,.rowcard .ph,.story img.lede,.sub-thumb img,.research-feat img{background:#232328}
-  /* Flag palette stays true — only small-text red/green lifts for legibility */
-  .hero-overlay .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q{color:#f93549}
-  .hero-overlay h2 a:hover{color:#ffb8be}
-  .card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.sub-body h3 a:hover{color:#f93549}
-  .meta .src,.card .chip,.rowcard .chip,.sub-body .chip{color:#3fd07c}
-}
+%%DARK%%
 /* ── reduced motion ── */
 @media(prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}.hero-imgwrap>a>img,.card img{transition:none}}
 .skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}
@@ -2522,6 +2514,71 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   footer ul{columns:1}
 }
 """
+
+# Dark rules, written once. They apply under the system's dark scheme unless
+# the reader forced light, AND whenever the reader forced dark — the theme
+# toggle stores its choice as html[data-theme] (owner request 2026-08-03).
+_DARK_RULES = """
+:root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}
+.masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.card h3,.rowcard h3,.sub-body h3,.research-feat h3,.op-card h3{color:var(--ink)}
+.hero-overlay h2,.hero-overlay h2 a{color:#fff}
+.story .summary{color:#d6d6de}
+.research-feat .dek{color:#c5c5cf}
+section.opinion{background:#17171c;border-top-color:var(--red)}
+.card{box-shadow:0 1px 4px rgba(0,0,0,.35)}
+.card:hover{box-shadow:0 5px 18px rgba(0,0,0,.5)}
+.sub-item:hover{background:rgba(255,255,255,.04)}
+.card img,.hero-imgwrap>a>img,.rowcard img,.story img.lede,.sub-thumb img{opacity:.9}
+.card img,.hero-imgwrap>a>img,.rowcard img,.rowcard .ph,.story img.lede,.sub-thumb img,.research-feat img{background:#232328}
+.hero-overlay .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q{color:#f93549}
+.hero-overlay h2 a:hover{color:#ffb8be}
+.card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.sub-body h3 a:hover{color:#f93549}
+.meta .src,.card .chip,.rowcard .chip,.sub-body .chip{color:#3fd07c}
+"""
+
+
+def _scope_dark(scope):
+    """Prefix every dark rule's selectors with a theme scope. `:root` becomes
+    the scope itself; everything else nests under it."""
+    out = []
+    for rule in _DARK_RULES.strip().split("}"):
+        if "{" not in rule:
+            continue
+        sels, body = rule.split("{", 1)
+        scoped = ",".join(
+            scope if s.strip() == ":root" else f"{scope} {s.strip()}"
+            for s in sels.split(","))
+        out.append(f"{scoped}{{{body}}}")
+    return "".join(out)
+
+
+CSS = CSS.replace("%%DARK%%",
+                  "@media(prefers-color-scheme:dark){"
+                  + _scope_dark("html:not([data-theme=light])") + "}\n"
+                  + _scope_dark("html[data-theme=dark]"))
+
+# Theme toggle (owner request 2026-08-03): restore the stored choice before
+# first paint (no flash), then cycle auto → dark → light on tap.
+_THEME_JS = (
+    '<script>(function(){try{var t=localStorage.getItem("top-theme");'
+    'if(t)document.documentElement.dataset.theme=t}catch(e){}'
+    'document.addEventListener("DOMContentLoaded",function(){'
+    'var b=document.getElementById("themetoggle");if(!b)return;'
+    'function icon(){var t=document.documentElement.dataset.theme||"";'
+    'b.textContent=t==="dark"?"☀":t==="light"?"◐":"🌙"}icon();'
+    'b.addEventListener("click",function(){'
+    'var cur=document.documentElement.dataset.theme||"";'
+    'var nxt=cur===""?"dark":cur==="dark"?"light":"";'
+    'try{if(nxt)localStorage.setItem("top-theme",nxt);'
+    'else localStorage.removeItem("top-theme")}catch(e){}'
+    'if(nxt)document.documentElement.dataset.theme=nxt;'
+    'else delete document.documentElement.dataset.theme;icon()})})})();</script>')
+
+
+def theme_btn(lang):
+    label = "المظهر: تلقائي / داكن / فاتح" if lang == "ar" else "Theme: auto / dark / light"
+    return (f'<button id="themetoggle" class="themetoggle" '
+            f'aria-label="{label}" title="{label}">🌙</button>')
 
 FLAG_SVG = ('<svg class="flagmark" width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">'
             '<rect width="46" height="15.3" fill="#0b0b0c"/>'
@@ -2989,12 +3046,13 @@ def render_page(lang, items, built_at):
 <meta property="og:image" content="{BASE_URL}/og-banner.png"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"{t['site_name']}","url":"{BASE_URL}/{lang}/","sameAs":["{BASE_URL}/en/","{BASE_URL}/ar/"]}}</script>
 <link href="/assets/site.css" rel="stylesheet">
+{_THEME_JS}
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="topbar"><div class="wrap">
   <span class="date">{date_str}</span>
   <span class="upd"><span class="dot"></span>{t['updated']} {time_str} · {t['tz']}</span>
-  <a class="lang" href="{t['switch_href']}">{t['switch_lang']}</a>
+  {theme_btn(lang)}<a class="lang" href="{t['switch_href']}">{t['switch_lang']}</a>
 </div></div>
 
 <div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
@@ -3266,9 +3324,10 @@ def render_story(it, lang, related, rail, built_at):
 <meta name="twitter:card" content="{'summary_large_image' if it['image'] else 'summary'}">
 <script type="application/ld+json">{jsonld}</script>
 <link href="/assets/site.css" rel="stylesheet">
+{_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="../">{t['back_home']}</a><a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
+<div class="backbar"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}<a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
 <div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track}</div></div></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="../"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
@@ -3383,9 +3442,10 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{BASE_URL}/{lang}/section-{cat}.html">
 <link href="/assets/site.css" rel="stylesheet">
+{_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="./">{t['back_home']}</a><a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
+<div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
@@ -3443,9 +3503,10 @@ def render_search_page(lang, built_at, cats=()):
 <meta name="robots" content="noindex">
 <link rel="canonical" href="{BASE_URL}/{lang}/search.html">
 <link href="/assets/site.css" rel="stylesheet">
+{_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="./">{t['back_home']}</a><a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></div>
+<div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>

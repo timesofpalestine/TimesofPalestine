@@ -51,11 +51,22 @@ first.
 
 ### Dark mode
 
-`@media(prefers-color-scheme:dark)` overrides the core tokens
-(`--paper:#101013`, `--card:#16161a`, `--ink:#e9e9ef`, …). The flag palette
-stays true; only small red text lifts to `#f93549` for contrast. Every new
-surface must be checked in both schemes — if you only style the light theme,
-you have not finished the change.
+Dark rules are written ONCE (`_DARK_RULES` in `build.py`) and emitted twice:
+under `@media(prefers-color-scheme:dark)` scoped to
+`html:not([data-theme=light])`, and under `html[data-theme=dark]`. A 🌙
+toggle in the topbar/backbar cycles auto → dark → light, stored in
+`localStorage` and restored before first paint. Never write dark styles
+directly into a media query — add them to `_DARK_RULES` so the toggle sees
+them. The flag palette stays true; only small red text lifts to `#f93549`
+for contrast. Every new surface must be checked in both schemes — if you
+only style the light theme, you have not finished the change.
+
+### Pull quotes & data callouts
+
+`> ` lines in a story body render as `blockquote.pull`: large serif on a
+gold inline-start rule, capped at the reading measure; a second `> ` line
+renders as the smaller sans attribution. Use for a survivor's words or one
+load-bearing statistic — one or two per story, never as decoration.
 
 ### Typography
 

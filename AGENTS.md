@@ -317,7 +317,10 @@ it to Telegram. No human machine involved. The contract:
    titles trip the passive/agentless net.
 2. Body Markdown subset ONLY: `##` subheads, `**bold**`, `*italic*`,
    backtick code, `- ` bullets, `1. ` lists, pipe tables, `[text](url)`
-   links, `![caption](file.svg)` images (file must exist in
+   links, `> ` pull quotes / data callouts (consecutive `> ` lines form one
+   quote; a second line renders as the smaller attribution — use for a
+   survivor's words or a key statistic, sparingly, 1–2 per story),
+   `![caption](file.svg)` images (file must exist in
    `originals/media/`). Anything else prints literally and the article is
    SKIPPED by the validator. No footnotes, no sources sections — attribution
    inline in prose. Never end mid-sentence. NEWSPAPER copy, never a briefing

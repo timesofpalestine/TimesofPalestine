@@ -225,6 +225,19 @@ def body_html(text, media_prefix="/media/"):
             out.append('<ol class="lf">' + "".join(f"<li>{_inline(x)}</li>" for x in items) + "</ol>")
             continue
 
+        if line.startswith("> "):
+            # Pull quote / data callout (owner review 2026-08-03): consecutive
+            # `> ` lines form one blockquote; a second line reads as the
+            # attribution/kicker and renders smaller.
+            quoted = []
+            while i < len(lines) and lines[i].strip().startswith("> "):
+                quoted.append(lines[i].strip()[2:].strip())
+                i += 1
+            out.append('<blockquote class="pull">'
+                       + "".join(f"<p>{_inline(q)}</p>" for q in quoted if q)
+                       + "</blockquote>")
+            continue
+
         out.append(f'<p class="summary">{_inline(line)}</p>')
         i += 1
     return "".join(out)
