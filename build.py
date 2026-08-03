@@ -2180,10 +2180,10 @@ def add_story_outline(rendered, lang):
 CSS = """
 @font-face{font-family:"Noto Kufi Arabic";src:url("/fonts/NotoKufiArabic-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+08A0-08FF,U+200C-200E,U+2010-2011,U+FB50-FDFF,U+FE70-FEFC}
 :root{
-  --red:#C8102E; --green:#00753A; --black:#0b0b0c; --ink:#141419; --muted:#595962;
+  --red:#C8102E; --green:#00753A; --green-deep:#00602F; --black:#0b0b0c; --ink:#141419; --muted:#595962;
   --paper:#f8f7f2; --card:#ffffff; --line:#e6e3da; --line-dark:#c9c5b8;
   --serif:Georgia,"Times New Roman",Times,serif; --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-  --max:1240px;
+  --max:1300px;
   --sh:0 2px 8px rgba(0,0,0,.07),0 1px 3px rgba(0,0,0,.05);
   --sh-h:0 6px 22px rgba(0,0,0,.11),0 2px 6px rgba(0,0,0,.06);
   --tr:.18s ease; --r:3px;
@@ -2258,7 +2258,7 @@ nav.sections a.util:hover{border-block-end-color:#3a3a42}
 .hero-overlay{position:absolute;bottom:0;inset-inline:0;padding:3.5rem 1.5rem 1.5rem;background:linear-gradient(to top,rgba(4,4,6,.96) 0%,rgba(4,4,6,.82) 42%,rgba(4,4,6,.42) 74%,transparent 100%)}
 .hero-overlay .label{color:#ff606d;font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.45rem;display:block}
 [lang=ar] .hero-overlay .label{letter-spacing:.04em;font-size:.78rem}
-.hero-overlay h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.35rem,2.5vw,2.15rem);line-height:1.14;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.hero-overlay h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.5rem,2.9vw,2.5rem);line-height:1.14;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 [lang=ar] .hero-overlay h2{line-height:1.5;font-weight:800}
 .hero-overlay h2 a{color:#fff}
 .hero-overlay h2 a:hover{color:#ffd0d4}
@@ -2282,7 +2282,7 @@ nav.sections a.util:hover{border-block-end-color:#3a3a42}
 .sub-thumb{flex-shrink:0}
 .sub-thumb img{width:82px;aspect-ratio:3/2;object-fit:cover;object-position:50% 22%;background:#e8e6df;border-radius:2px;transition:opacity var(--tr)}
 .sub-item:hover .sub-thumb img{opacity:.82}
-.sub-body .chip{font-size:.62rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.06em;display:block}
+.sub-body .chip{font-size:.62rem;font-weight:800;color:var(--green-deep);text-transform:uppercase;letter-spacing:.06em;display:block}
 [lang=ar] .sub-body .chip{letter-spacing:0;font-size:.72rem}
 .sub-body h3{font-family:var(--serif);font-weight:700;font-size:.93rem;line-height:1.28;margin-top:.18rem}
 [lang=ar] .sub-body h3{line-height:1.6}
@@ -2378,7 +2378,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .card .ph{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
 .card .ph svg{width:44px;height:44px;opacity:.9}
 .card-body{padding:.75rem .9rem .95rem}
-.card .chip{font-size:.62rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.07em;display:block}
+.card .chip{font-size:.62rem;font-weight:800;color:var(--green-deep);text-transform:uppercase;letter-spacing:.07em;display:block}
 [lang=ar] .card .chip{letter-spacing:0;font-size:.72rem}
 .card h3{font-family:var(--serif);font-weight:700;font-size:1.02rem;line-height:1.36;margin-top:.3rem}
 [lang=ar] .card h3{line-height:1.6}
@@ -2398,7 +2398,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .rowcard h3{font-family:var(--serif);font-weight:700;font-size:1.08rem;line-height:1.36;margin-top:.2rem}
 [lang=ar] .rowcard h3{line-height:1.6}
 .rowcard h3 a:hover{color:var(--red)}
-.rowcard .chip{font-size:.63rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.07em;display:block}
+.rowcard .chip{font-size:.63rem;font-weight:800;color:var(--green-deep);text-transform:uppercase;letter-spacing:.07em;display:block}
 [lang=ar] .rowcard .chip{letter-spacing:0;font-size:.72rem}
 .rowcard .t{font-size:.67rem;color:var(--muted);font-weight:600;margin-top:.32rem;display:block}
 /* ── research featured ── */
@@ -2460,7 +2460,7 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .tipband .scanhint{display:block;margin-top:.4rem;font-size:.68rem;color:#8f8f99}
 .tipband .safety{flex-basis:100%;font-size:.7rem;color:#77777f;border-top:1px solid #26262c;padding-top:.7rem}
 /* ── story page ── */
-.story{max-width:780px;margin-inline:auto;padding:2rem 20px 1rem}
+.story{max-width:820px;margin-inline:auto;padding:2rem 20px 1rem}
 .breadcrumbs{display:flex;flex-wrap:wrap;gap:.35rem .55rem;margin-bottom:1rem;font-size:.74rem;font-weight:700;color:var(--muted)}
 .breadcrumbs a:hover{color:var(--red)}
 .breadcrumbs .sep{color:#9a9aa2}
@@ -2493,7 +2493,7 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .story .note{margin-top:.8rem;font-size:.72rem;color:var(--muted)}
 .keep{padding-block:1.8rem}
 .keep .latest{position:static;top:auto}
-.backbar{background:var(--black);display:flex;justify-content:space-between;align-items:center}
+.backbar{background:var(--black);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:55}
 .backbar a{display:block;max-width:800px;padding:.6rem 20px;color:#fff;font-size:.8rem;font-weight:700}
 .backbar a:hover{color:#f93549}
 /* ── footer ── */
@@ -3144,7 +3144,7 @@ def render_page(lang, items, built_at):
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
 
-<nav class="sections" aria-label="Primary"><div class="wrap n1"><a class="home" href="#top">{t['latest']}</a>{nav_tier1}</div><div class="wrap n2">{nav_tier2}<span class="nav-util"><a class="util" href="search.html">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div></nav>
+<nav class="sections" aria-label="Primary"><div class="wrap n1"><a class="home" href="#top">{t['latest']}</a>{nav_tier1}</div><div class="wrap n2">{nav_tier2}<span class="nav-util"><a class="util" href="search.html">{t['search_nav']}</a><a class="util" href="{t['switch_href']}">{t['switch_lang']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div></nav>
 
 <main id="top">
   <div class="wrap hero-zone">

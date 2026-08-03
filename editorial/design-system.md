@@ -29,6 +29,7 @@ first.
 |---|---|---|
 | `--red` | `#C8102E` | Flag red: breaking ticker, kickers, masthead accent, hovers |
 | `--green` | `#00753A` | Flag green: tip line, ORIGINAL badge, positive accents |
+| `--green-deep` | `#00602F` | Small-text green (source chips) — extra AA contrast margin on paper |
 | `--black` | `#0b0b0c` | Dark bands, franchise cards, footer |
 | `--ink` | `#141419` | Body text |
 | `--muted` | `#595962` | Secondary text |
@@ -90,7 +91,7 @@ load-bearing statistic — one or two per story, never as decoration.
 
 ### Geometry & motion
 
-- Max content width `--max:1240px`; corner radius `--r:3px` (the house is
+- Max content width `--max:1300px`; corner radius `--r:3px` (the house is
   square-ish — do not introduce big rounded corners); shadows `--sh`
   (rest) / `--sh-h` (hover); transitions `--tr:.18s ease`.
 - Hover idiom for cards: `translateY(-2px)` + `--sh-h`.
