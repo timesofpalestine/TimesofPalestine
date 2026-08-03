@@ -927,19 +927,27 @@ class GazaNumbersTests(unittest.TestCase):
         "known_press_killed_in_gaza": {"records": 254},
     }
 
+    PRISONERS = {"asOf": "2026-04-14",
+                 "figures": {"pr_total": 9600, "pr_admin": 3532, "pr_gaza": 1251,
+                             "pr_women": 86, "pr_children": 350}}
+
     def setUp(self):
         import gaza_panel
         self.gp = gaza_panel
         self._moh, self._gi = dict(gaza_panel._moh_cache), dict(gaza_panel._gaza_cache)
+        self._pr = dict(gaza_panel._pr_cache)
         gaza_panel._moh_cache.clear()
         gaza_panel._gaza_cache.clear()
+        gaza_panel._pr_cache.clear()
         gaza_panel._moh_cache["data"] = self.SUMMARY
         gaza_panel._gaza_cache["rows"] = {}
+        gaza_panel._pr_cache["data"] = self.PRISONERS
         os.environ.pop("TOP_OFFLINE", None)
 
     def tearDown(self):
         self.gp._moh_cache.clear(); self.gp._moh_cache.update(self._moh)
         self.gp._gaza_cache.clear(); self.gp._gaza_cache.update(self._gi)
+        self.gp._pr_cache.clear(); self.gp._pr_cache.update(self._pr)
 
     def test_panel_renders_moh_lead_row_with_live_hooks(self):
         html = self.gp.panel("en")
@@ -963,6 +971,27 @@ class GazaNumbersTests(unittest.TestCase):
         self.assertIn('data-gi-asof="wb"', html)
         self.assertIn("2026-08-03", html)
 
+    def test_prisoners_row_arranged_by_age_and_gender(self):
+        html = self.gp.panel("en")
+        self.assertIn("Prisoners in Israeli jails", html)
+        self.assertIn('data-gi-key="pr_total"', html)
+        self.assertIn("9,600+", html)          # Addameer reports "more than"
+        self.assertIn('data-gi-key="pr_women"', html)
+        self.assertIn('data-gi-key="pr_children"', html)
+        self.assertIn("Administrative detention", html)
+        self.assertIn("Addameer", html)
+        self.assertIn('data-gi-asof="pr"', html)
+        self.assertIn("2026-04-14", html)
+
+    def test_composition_strips_show_shares(self):
+        html = self.gp.panel("en")
+        self.assertIn("gi-comp", html)
+        self.assertIn("Of those killed", html)
+        self.assertIn("Held without charge or trial", html)
+        # 3,532 + 1,251 of 9,600 — the strip carries both detention segments
+        self.assertIn("Children 29%", html)
+        self.assertIn("From Gaza, uncharged 13%", html)
+
     def test_arabic_panel_uses_arabic_digits_and_labels(self):
         html = self.gp.panel("ar")
         self.assertIn("فلسطين بالأرقام", html)
@@ -971,6 +1000,10 @@ class GazaNumbersTests(unittest.TestCase):
         self.assertIn("وزارة الصحة في غزة", html)
         self.assertIn("الضفة الغربية", html)
         self.assertIn("اعتداءات المستوطنين", html)
+        self.assertIn("الأسرى في سجون الاحتلال", html)
+        self.assertIn("أسيرات", html)
+        self.assertIn("٩،٦٠٠+", html)
+        self.assertIn("مؤسسة الضمير", html)
 
     def test_payload_carries_figures_for_the_poll_file(self):
         data = self.gp.payload()
@@ -978,11 +1011,15 @@ class GazaNumbersTests(unittest.TestCase):
         self.assertEqual(data["figures"]["press"], 254)
         self.assertEqual(data["figures"]["wb_killed"], 1093)
         self.assertEqual(data["figures"]["wb_attacks"], 2470)
+        self.assertEqual(data["figures"]["pr_total"], 9600)
+        self.assertEqual(data["figures"]["pr_women"], 86)
         self.assertEqual(data["asOf"], "2026-08-02")
         self.assertEqual(data["wbAsOf"], "2026-08-03")
+        self.assertEqual(data["prAsOf"], "2026-04-14")
 
     def test_everything_fails_open_without_data(self):
         self.gp._moh_cache["data"] = {}
+        self.gp._pr_cache["data"] = {}
         self.assertEqual(self.gp.panel("en"), "")
         self.assertIsNone(self.gp.payload())
 

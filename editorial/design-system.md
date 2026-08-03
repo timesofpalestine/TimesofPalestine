@@ -126,15 +126,23 @@ load-bearing statistic — one or two per story, never as decoration.
   pulsing gold dot, big mono numeral, recomputed every build. If you build a
   new "alive" element, follow this chip's anatomy.
 - **Palestine by the Numbers = live ledger** (`section.gaza-index`,
-  `gaza_panel.py`): region rows under small kicker heads (`.gi-region`) —
-  GAZA is the Ministry of Health's cumulative toll, WEST BANK is UN OCHA's
-  killed/children/wounded plus the settler-attack count — both via Tech for
-  Palestine's Palestine Datasets, refetched every build and mirrored to
-  `/data/gaza-numbers.json` (WB keys carry the `wb_` prefix, each region its
-  own `data-gi-asof` stamp); `PANEL_JS` polls that file every 5 minutes and
-  animates any revised figure in place (`.gi-flash` wash), so the numbers
-  follow the source reports without a reload. The section head carries the
-  pulsing `.gi-live` dot only when a live row is present.
+  `gaza_panel.py`): bordered region cards (`.gi-block`), each a kicker with
+  a 4px red bar (`.gi-region`), a big-numeral grid, an optional composition
+  strip, and its own attribution + as-of line — GAZA (Ministry of Health
+  toll), WEST BANK (UN OCHA killed/children/wounded + settler attacks),
+  PRISONERS (Addameer by age and gender: total `+`-suffixed, administrative,
+  Gaza-uncharged, women, children — figures live in
+  `editorial/prisoners.json`, newsroom-maintained since Addameer has no API;
+  the daily editor cycle refreshes it), then the humanitarian indicators.
+  Live figures ride `/data/gaza-numbers.json` (prefixes: none/`wb_`/`pr_`;
+  per-region `data-gi-asof` stamps); `PANEL_JS` polls every 5 minutes and
+  animates revisions in place (`.gi-flash` wash). **Composition strips**
+  (`.gi-comp` + `.gi-legend`): a quiet 7px stacked bar showing shares of a
+  total — children (gold `#c7a86b`), women (flag red), detention categories
+  (slate `#3d4f6b`), remainder neutral `var(--line)`; server-rendered
+  widths, `role="img"` with a full sentence aria-label, no animation. The
+  section head carries the pulsing `.gi-live` dot only when a live row is
+  present.
   Restraint is binding: these are casualty figures, not a scoreboard — no
   count-up from zero, no celebratory motion; the entrance settle starts at
   96.5% of the value and everything stills under `prefers-reduced-motion`.
