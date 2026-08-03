@@ -1971,7 +1971,7 @@ STR = {
         "search_none": "No results", "follow_tg": "Telegram channel →",
         "breaking": "BREAKING", "latest": "The Latest",
         "updated": "Updated", "tz": "Jerusalem time",
-        "switch_lang": "العربية", "switch_href": "../ar/",
+        "switch_lang": "🌐 العربية", "switch_href": "../ar/",
         "hero_label": "TOP STORY",
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
                      "humans": "Real Lives", "health": "Health & Healing",
@@ -2038,7 +2038,7 @@ STR = {
         "search_none": "لا نتائج", "follow_tg": "قناتنا على تيليغرام ←",
         "breaking": "عاجل", "latest": "آخر الأخبار",
         "updated": "آخر تحديث", "tz": "بتوقيت القدس",
-        "switch_lang": "English", "switch_href": "../en/",
+        "switch_lang": "🌐 English", "switch_href": "../en/",
         "hero_label": "الخبر الأبرز",
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
                      "humans": "حكايات فلسطينية", "health": "الصحة والتعافي",
@@ -2315,7 +2315,7 @@ img{max-width:100%;display:block}
 .ticker .rail{overflow:hidden;flex:1;display:flex;align-items:center}
 .ticker .track{display:flex;gap:2.5rem;white-space:nowrap;animation:tick 80s linear infinite;padding-inline:1.5rem}
 [dir=rtl] .ticker .track{animation-name:tick-rtl}
-.ticker:hover .track{animation-play-state:paused}
+.ticker:hover .track,.ticker:focus-within .track{animation-play-state:paused}
 .ticker a{font-size:.82rem;font-weight:600}
 .ticker a::before{content:"●";color:rgba(255,255,255,.55);margin-inline-end:.7rem;font-size:.55rem;vertical-align:2px}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -2638,6 +2638,14 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 .share span{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;align-self:center}
 .share a{border:1px solid var(--line-dark);padding:.35rem .8rem;border-radius:var(--r);font-size:.8rem;font-weight:700}
 .share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
+/* Floating share rail: travels with the reader in the story gutter on wide
+   desktops; the inline row above stays as the universal fallback. */
+.share-rail{display:none}
+@media(min-width:1200px){
+.share-rail{display:flex;flex-direction:column;gap:.5rem;position:fixed;top:42vh;inset-inline-start:calc(50vw - 410px - 4.6rem);z-index:40}
+.share-rail a{width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;border:1px solid var(--line-dark);border-radius:50%;background:var(--card);font-weight:800;font-size:.78rem;box-shadow:var(--sh);transition:background var(--tr),color var(--tr),border-color var(--tr)}
+.share-rail a:hover{background:var(--red);color:#fff;border-color:var(--red)}
+}
 .review-note{margin:.8rem 0;padding:.7rem .9rem;border-inline-start:3px solid var(--red);background:var(--paper);font-size:.86rem;font-weight:700;line-height:1.45}
 .newmark{display:inline-block;margin-inline-end:.4rem;color:var(--red);font-size:.62rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;animation:newpulse 2s ease-in-out infinite}
 @keyframes newpulse{0%,100%{opacity:1}50%{opacity:.45}}
@@ -3252,7 +3260,7 @@ def render_page(lang, items, built_at):
         f'<h2>{t["tips_title"]}</h2><p class="sub">{t["tips_sub"]}</p></div>'
         f'<div class="cta"><a class="btn" href="{SIGNAL_URL}" target="_blank" rel="noopener">{t["tips_cta"]}</a>'
         f'<span class="micro">{t["tips_micro"]}</span>'
-        f'<a class="tgbtn" href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t["tips_tg"]} → {TELEGRAM_BOT_NAME}</a>'
+        f'<a class="tgbtn" href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t["tips_tg"]} {"←" if lang == "ar" else "→"} {TELEGRAM_BOT_NAME}</a>'
         f'<span class="micro">{t["tips_tg_note"]}</span>'
         f'<span class="scanhint">{t["tips_scan"]}</span>'
         f'<div class="qrbox"><img src="../signal-qr.png" alt="Signal QR — {SIGNAL_USERNAME}">'
@@ -3322,8 +3330,8 @@ def render_page(lang, items, built_at):
   <div class="cols">
     <div><h2>{t['mission_title']}</h2><p class="mission">{t['mission']}</p></div>
     <div><h2>{t['tips_kicker']}</h2><p class="mission">{t['tips_sub']}</p>
-      <p class="footer-contact"><a href="{SIGNAL_URL}" target="_blank" rel="noopener">🔒 {t['tips_cta']} →</a>
-      <span class="contact-id">{SIGNAL_USERNAME}</span></p><p class="footer-contact secondary"><a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} →</a> <span class="contact-id">{TELEGRAM_BOT_NAME}</span></p></div>
+      <p class="footer-contact"><a href="{SIGNAL_URL}" target="_blank" rel="noopener">🔒 {t['tips_cta']} {"←" if lang == "ar" else "→"}</a>
+      <span class="contact-id">{SIGNAL_USERNAME}</span></p><p class="footer-contact secondary"><a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} {"←" if lang == "ar" else "→"}</a> <span class="contact-id">{TELEGRAM_BOT_NAME}</span></p></div>
   </div>
   <div class="legal">
     <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
@@ -3452,7 +3460,7 @@ def render_story(it, lang, related, rail, built_at):
         # dek-fallback only (briefs layer down): the body is the source's own
         # summary, so the credit-link and read-at-source button stay.
         cta = (f'<div class="cta">'
-               f'<a href="{esc(it["link"])}" target="_blank" rel="noopener">{t["read_original"]} {esc(it["source"])} →</a>'
+               f'<a href="{esc(it["link"])}" target="_blank" rel="noopener">{t["read_original"]} {esc(it["source"])} {"←" if lang == "ar" else "→"}</a>'
                f'<p class="note">{t["summary_note"]}</p></div>')
     corroborating = [
         source for source in it.get("corroborating_sources", [])
@@ -3474,7 +3482,7 @@ def render_story(it, lang, related, rail, built_at):
     related_primary = [r for r in related if r is not it and r["cat"] == it["cat"]]
     related_secondary = [r for r in related if r is not it and r["cat"] != it["cat"]]
     related_cards = "".join(card(r, lang, "") for r in (related_primary + related_secondary)[:8])
-    page_url = f"{BASE_URL}/{lang}/story/{it['pid']}.html"; _q = __import__("urllib.parse", fromlist=["quote"]).quote; share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a></div>')
+    page_url = f"{BASE_URL}/{lang}/story/{it['pid']}.html"; _q = __import__("urllib.parse", fromlist=["quote"]).quote; share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a></div>'); share_rail = ('<nav class="share-rail" aria-label="' + ("شارك الخبر" if lang == "ar" else "Share this story") + '"><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="X">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener" title="Facebook">f</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener" title="WhatsApp">Wa</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="Telegram">Tg</a></nav>')
     desc = esc(summary_text(
         (it.get("brief") or it["dek"]).replace(chr(10), " "))[:155])
     og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
@@ -3584,6 +3592,7 @@ def render_story(it, lang, related, rail, built_at):
     {summary}
     {cta}{corrections}{share_row}
   </article>
+  {share_rail}
   <section class="keep"><div class="wrap">
     <div class="sec-head focus"><h2>{t['keep_reading']}</h2><span class="rule"></span></div>
     <div class="grid">{related_cards}</div>
