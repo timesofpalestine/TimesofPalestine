@@ -1,0 +1,12 @@
+{
+  "_comment": "Prisoners ledger for Palestine by the Numbers. Addameer publishes no machine-readable API, so the newsroom maintains this file from Addameer's periodic updates (with the Detainees Commission and the Prisoners' Society); the daily editor cycle refreshes it when new figures publish. Keys must match PR_KEYS in gaza_panel.py.",
+  "asOf": "2026-04-14",
+  "url": "https://addameer.ps/news/5721",
+  "figures": {
+    "pr_total": 9600,
+    "pr_admin": 3532,
+    "pr_gaza": 1251,
+    "pr_women": 86,
+    "pr_children": 350
+  }
+}

@@ -13,7 +13,11 @@ the build):
 2. WEST BANK: killed, children, wounded and the settler-attack count from
    UN OCHA's record, republished in the same summary (owner directive
    2026-08-03: the ledger covers Palestine, not Gaza alone).
-3. gazaindex.org (Gaza Genocide Center) keeps the wider humanitarian
+3. PRISONERS: Addameer's count arranged by age and gender (total, women,
+   children, administrative detention, Gaza detainees held uncharged) —
+   no API exists, so editorial/prisoners.json carries the figures and the
+   daily editor cycle refreshes it when Addameer publishes.
+4. gazaindex.org (Gaza Genocide Center) keeps the wider humanitarian
    indicators — orphans, out-of-school children, hospital damage — with each
    figure attributed to the body that measured it (WHO, UNICEF, UNFPA,
    UNESCO, OCHA, the Ministry of Health).
@@ -53,6 +57,21 @@ WB_KEYS = [
      "Settler attacks", "اعتداءات المستوطنين"),
 ]
 
+# Prisoners row (owner directive 2026-08-03: the ledger carries the prisoners,
+# arranged by age and gender). Addameer publishes no API, so the figures live
+# in editorial/prisoners.json, maintained by the newsroom from Addameer's
+# periodic updates and refreshed by the daily editor cycle. The pr_total cell
+# renders with a trailing "+" — Addameer reports "more than".
+PR_KEYS = [
+    ("pr_total", "Total held", "الإجمالي"),
+    ("pr_admin", "Administrative detention", "اعتقال إداري"),
+    ("pr_gaza", "From Gaza, uncharged", "من غزة دون تهمة"),
+    ("pr_women", "Women", "أسيرات"),
+    ("pr_children", "Children under 18", "أطفال دون ١٨"),
+]
+PR_PLUS = {"pr_total"}
+PRISONERS_PATH = None  # resolved lazily so tests can inject via _pr_cache
+
 # Curated because a homepage needs the few numbers that carry the whole story,
 # not all fifty. Labels are written here so the panel reads naturally in Arabic.
 GAZA_INDEX_KEYS = [
@@ -66,7 +85,7 @@ GAZA_INDEX_KEYS = [
 
 # Styles travel with the panel. The figures declare no colour of their own so
 # they inherit the page ink and stay readable in both the light and dark themes.
-PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.2rem}.gi-cell{border-inline-start:3px solid var(--red);padding-inline-start:.8rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-moh+.gi-src{margin-bottom:1.35rem}.gi-region{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 .6rem}[lang=ar] .gi-region{letter-spacing:0;font-size:.8rem}.gi-src+.gi-region{margin-top:1.35rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb{grid-template-columns:repeat(2,minmax(0,1fr))}}"
+PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-block{border:1px solid var(--line);background:var(--card);box-shadow:var(--sh);padding:1.05rem 1.15rem .95rem;margin-bottom:1rem}.gi-block:last-child{margin-bottom:0}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.2rem}.gi-cell{border-inline-start:3px solid var(--red);padding-inline-start:.8rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:.85rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-region{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 .8rem}.gi-region::before{content:\"\";width:4px;height:.95rem;background:var(--red);border-radius:2px;flex-shrink:0}[lang=ar] .gi-region{letter-spacing:0;font-size:.82rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-grid.gi-pr{grid-template-columns:repeat(5,minmax(0,1fr))}.gi-comp{display:flex;block-size:7px;border-radius:4px;overflow:hidden;background:var(--line);margin-top:.95rem}.gi-comp .seg{display:block;block-size:100%}.gi-legend{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:.5rem;font-size:.7rem;font-weight:600;color:var(--muted)}.gi-legend .gi-lead{font-weight:800;color:var(--ink)}.gi-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:.35rem}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(2,minmax(0,1fr))}}"
 
 # The live layer: a gentle roll-up when the panel first scrolls into view,
 # then a refetch of /data/gaza-numbers.json every 5 minutes that animates any
@@ -79,7 +98,7 @@ var AR=(document.documentElement.lang||"en")==="ar";
 var RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
 function fmt(n){n=Math.round(n);var s=String(n).replace(/\\B(?=(\\d{3})+(?!\\d))/g,",");
  return AR?s.replace(/[0-9,]/g,function(c){return c===","?"\\u060c":"\\u0660\\u0661\\u0662\\u0663\\u0664\\u0665\\u0666\\u0667\\u0668\\u0669"[+c]}):s}
-function setNum(el,v){el.textContent=fmt(v);el.setAttribute("data-gi-val",Math.round(v))}
+function setNum(el,v){el.textContent=fmt(v)+(el.hasAttribute("data-gi-plus")?"+":"");el.setAttribute("data-gi-val",Math.round(v))}
 function animate(el,from,to){if(RM||from===to){setNum(el,to);return}
  var t0=performance.now(),dur=800;
  function step(t){var p=Math.min(1,(t-t0)/dur);p=1-Math.pow(1-p,3);
@@ -103,7 +122,7 @@ function refresh(){if(document.hidden||!nums.length)return;
     var c=el.closest(".gi-cell");
     if(c){c.classList.remove("gi-flash");void c.offsetWidth;c.classList.add("gi-flash")}}});
   function ard(s){return AR?String(s).replace(/[0-9]/g,function(c){return"\\u0660\\u0661\\u0662\\u0663\\u0664\\u0665\\u0666\\u0667\\u0668\\u0669"[+c]}):String(s)}
-  [["gaza",d.asOf],["wb",d.wbAsOf]].forEach(function(p){
+  [["gaza",d.asOf],["wb",d.wbAsOf],["pr",d.prAsOf]].forEach(function(p){
    if(!p[1])return;var a=g.querySelector('[data-gi-asof="'+p[0]+'"]');
    if(a)a.textContent=ard(p[1])})})
  .catch(function(){})}
@@ -114,6 +133,36 @@ document.addEventListener("visibilitychange",function(){if(!document.hidden)refr
 
 _moh_cache = {}
 _gaza_cache = {}
+_pr_cache = {}
+
+
+def _load_prisoners():
+    """editorial/prisoners.json — newsroom-maintained, fail-open."""
+    if "data" not in _pr_cache:
+        try:
+            import pathlib
+            path = PRISONERS_PATH or (pathlib.Path(__file__).resolve().parent
+                                      / "editorial" / "prisoners.json")
+            data = json.loads(pathlib.Path(path).read_text(encoding="utf-8"))
+            figs = data.get("figures") or {}
+            if not isinstance(figs, dict):
+                raise ValueError("figures must be an object")
+            _pr_cache["data"] = data
+        except Exception as e:
+            _pr_cache["data"] = {}
+            print(f"  → prisoners ledger unavailable ({type(e).__name__}) — row omitted")
+    return _pr_cache["data"]
+
+
+def prisoner_figures():
+    """(figures dict keyed like PR_KEYS, as-of date) — empty on failure."""
+    data = _load_prisoners()
+    figs = {}
+    for key, _en, _ar in PR_KEYS:
+        v = (data.get("figures") or {}).get(key)
+        if isinstance(v, (int, float)) and not isinstance(v, bool) and v > 0:
+            figs[key] = int(round(v))
+    return figs, str(data.get("asOf") or "")[:10]
 
 
 def _get_json(url):
@@ -170,12 +219,13 @@ def live_figures():
 def payload():
     """The /data/gaza-numbers.json body the live layer polls, or None."""
     gaza, gaza_asof, wb, wb_asof = live_figures()
-    figs = {**gaza, **wb}
+    prisoners, pr_asof = prisoner_figures()
+    figs = {**gaza, **wb, **prisoners}
     if not figs:
         return None
-    return {"asOf": gaza_asof, "wbAsOf": wb_asof,
+    return {"asOf": gaza_asof, "wbAsOf": wb_asof, "prAsOf": pr_asof,
             "fetchedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "source": "Gaza Ministry of Health & UN OCHA via Tech for Palestine",
+            "source": "Gaza MoH & UN OCHA via Tech for Palestine; Addameer",
             "figures": figs}
 
 
@@ -193,27 +243,60 @@ _PD_LINK = ('<a href="https://data.techforpalestine.org" target="_blank" '
             'rel="noopener">Palestine Datasets</a>')
 
 
-def _live_row(lang, keys, figs, region, src, asof, asof_key, extra_cls=""):
-    """One region's figure row: kicker, big-numeral grid with live hooks,
-    attribution line with its own as-of stamp."""
+# Composition-strip accents come from the house SVG palette (design-system §2):
+# gold for children, flag red for women, slate for detention categories.
+_COMP_GOLD, _COMP_RED, _COMP_SLATE = "#c7a86b", "#C8102E", "#3d4f6b"
+
+
+def _comp_strip(lang, total, parts, intro_en, intro_ar):
+    """A quiet stacked bar: each part's share of the total, with a legend.
+    parts: [(label_en, label_ar, value, color)] — the remainder stays neutral."""
+    if not total or not parts:
+        return ""
+    ar = lang == "ar"
+    segs, legend, described = [], [], []
+    for en, arl, value, color in parts:
+        if not value or value <= 0:
+            continue
+        pct = max(0.5, min(100, value / total * 100))
+        label = arl if ar else en
+        segs.append(f'<span class="seg" style="inline-size:{pct:.1f}%;'
+                    f'background:{color}"></span>')
+        legend.append(f'<span><i style="background:{color}"></i>{label} '
+                      f'{_fmt_date(f"{pct:.0f}", lang)}%</span>')
+        described.append(f"{label} {pct:.0f}%")
+    if not segs:
+        return ""
+    intro = intro_ar if ar else intro_en
+    aria = f'{intro}: {"، ".join(described) if ar else ", ".join(described)}'
+    return (f'<div class="gi-comp" role="img" aria-label="{aria}">{"".join(segs)}</div>'
+            f'<p class="gi-legend"><span class="gi-lead">{intro}</span>{"".join(legend)}</p>')
+
+
+def _live_row(lang, cells_def, figs, region, src, asof, asof_key,
+              extra_cls="", comp=""):
+    """One region block: kicker, big-numeral grid with live hooks, optional
+    composition strip, attribution line with its own as-of stamp."""
     if not figs:
         return ""
     ar = lang == "ar"
     cells = []
-    for key, _paths, en, arl in keys:
+    for key, en, arl in cells_def:
         if key not in figs:
             continue
+        plus = ' data-gi-plus=""' if key in PR_PLUS else ""
+        shown = _fmt(figs[key], None, lang) + ("+" if key in PR_PLUS else "")
         cells.append(f'<div class="gi-cell"><span class="gi-num" data-gi-key="{key}" '
-                     f'data-gi-val="{figs[key]}">{_fmt(figs[key], None, lang)}</span>'
+                     f'data-gi-val="{figs[key]}"{plus}>{shown}</span>'
                      f'<span class="gi-lab">{arl if ar else en}</span></div>')
     asof_html = ""
     if asof:
         asof_html = ((' · آخر تحديث ' if ar else ' · updated ')
                      + f'<span class="gi-asof" data-gi-asof="{asof_key}">'
                      + f'{_fmt_date(asof, lang)}</span>')
-    return (f'<h3 class="gi-region">{region}</h3>'
+    return (f'<div class="gi-block"><h3 class="gi-region">{region}</h3>'
             f'<div class="gi-grid gi-moh{extra_cls}">{"".join(cells)}</div>'
-            f'<p class="gi-src">{src}{asof_html}</p>')
+            f'{comp}<p class="gi-src">{src}{asof_html}</p></div>')
 
 
 def _fmt_date(iso_day, lang):
@@ -265,37 +348,55 @@ def panel(lang):
         return ""
     ar = lang == "ar"
     gaza_figs, gaza_asof, wb_figs, wb_asof = live_figures()
+    pr_figs, pr_asof = prisoner_figures()
+    gaza_comp = _comp_strip(
+        lang, gaza_figs.get("killed"),
+        [("Children", "أطفال", gaza_figs.get("children"), _COMP_GOLD),
+         ("Women", "نساء", gaza_figs.get("women"), _COMP_RED)],
+        "Of those killed", "من الشهداء")
     gaza_html = _live_row(
-        lang, MOH_KEYS, gaza_figs,
+        lang, [(k, en, arl) for k, _p, en, arl in MOH_KEYS], gaza_figs,
         "قطاع غزة" if ar else "Gaza",
         (f'المصدر: وزارة الصحة في غزة — عبر {_PD_LINK}' if ar
          else f'Source: Gaza Ministry of Health — via {_PD_LINK}'),
-        gaza_asof, "gaza")
+        gaza_asof, "gaza", comp=gaza_comp)
     wb_html = _live_row(
-        lang, WB_KEYS, wb_figs,
+        lang, [(k, en, arl) for k, _p, en, arl in WB_KEYS], wb_figs,
         "الضفة الغربية" if ar else "West Bank",
         (f'المصدر: مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية (أوتشا) — عبر {_PD_LINK}' if ar
          else f'Source: UN OCHA — via {_PD_LINK}'),
         wb_asof, "wb", extra_cls=" gi-wb")
+    pr_link = ('<a href="https://addameer.ps" target="_blank" rel="noopener">'
+               + ("مؤسسة الضمير" if ar else "Addameer Prisoner Support") + "</a>")
+    pr_comp = _comp_strip(
+        lang, pr_figs.get("pr_total"),
+        [("Administrative detention", "اعتقال إداري", pr_figs.get("pr_admin"), _COMP_SLATE),
+         ("From Gaza, uncharged", "من غزة دون تهمة", pr_figs.get("pr_gaza"), _COMP_GOLD)],
+        "Held without charge or trial", "محتجزون دون تهمة أو محاكمة")
+    pr_html = _live_row(
+        lang, PR_KEYS, pr_figs,
+        "الأسرى في سجون الاحتلال" if ar else "Prisoners in Israeli jails",
+        (f'المصدر: {pr_link} وهيئة شؤون الأسرى ونادي الأسير' if ar
+         else f'Source: {pr_link}, with the Detainees Commission and the Prisoners\' Society'),
+        pr_asof, "pr", extra_cls=" gi-pr", comp=pr_comp)
     gi_cells, gi_srcs, gi_latest = _gazaindex_rows(lang)
-    if not gaza_html and not wb_html and not gi_cells:
+    if not gaza_html and not wb_html and not pr_html and not gi_cells:
         return ""
     gi_html = ""
     if gi_cells:
-        head = ("مؤشرات إنسانية" if ar else "Humanitarian indicators") \
-            if (gaza_html or wb_html) else ""
-        head_html = f'<h3 class="gi-region">{head}</h3>' if head else ""
+        head = "مؤشرات إنسانية" if ar else "Humanitarian indicators"
         note = ("المصادر: " if ar else "Sources: ") + " · ".join(gi_srcs[:5])
         via = ("عبر " if ar else "via ")
         asof = f' — {_fmt_date(gi_latest, lang)}' if gi_latest else ""
-        gi_html = (f'{head_html}<div class="gi-grid">{"".join(gi_cells)}</div>'
+        gi_html = (f'<div class="gi-block"><h3 class="gi-region">{head}</h3>'
+                   f'<div class="gi-grid">{"".join(gi_cells)}</div>'
                    f'<p class="gi-src">{note} {via}'
                    f'<a href="https://www.gazaindex.org" target="_blank" rel="noopener">'
-                   f'GazaIndex</a>{asof}</p>')
+                   f'GazaIndex</a>{asof}</p></div>')
     title = "فلسطين بالأرقام" if ar else "Palestine by the Numbers"
     live = ('<span class="gi-live" role="presentation"></span>'
-            if (gaza_html or wb_html) else "")
+            if (gaza_html or wb_html or pr_html) else "")
     return (f'<section class="gaza-index"><div class="wrap">'
             f'<div class="sec-head focus"><h2>{live}{title}</h2><span class="rule"></span></div>'
-            f'{gaza_html}{wb_html}{gi_html}'
+            f'{gaza_html}{wb_html}{pr_html}{gi_html}'
             f'</div></section><script>{PANEL_JS}</script>')
