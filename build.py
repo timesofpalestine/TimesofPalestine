@@ -2142,9 +2142,9 @@ nav.sections a.tip{color:#3fd07c;border-color:#3fd07c;background:rgba(63,208,124
 /* ── hero ── */
 .hero-zone{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:1.55rem;padding-block:1.5rem}
 .hero{border-inline-end:1px solid var(--line);padding-inline-end:1.6rem}
-.hero-imgwrap{position:relative;overflow:hidden;border-radius:var(--r)}
+.hero-imgwrap{position:relative;overflow:hidden;border-radius:var(--r);background:#141419}
 .hero-imgwrap>a{display:block}
-.hero-imgwrap>a>img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;background:#d4d1c9;transition:transform .55s ease}
+.hero-imgwrap>a>img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;background:#141419;transition:transform .55s ease}
 .hero-imgwrap:hover>a>img{transform:scale(1.03)}
 .hero-overlay{position:absolute;bottom:0;inset-inline:0;padding:3.5rem 1.5rem 1.5rem;background:linear-gradient(to top,rgba(4,4,6,.96) 0%,rgba(4,4,6,.82) 42%,rgba(4,4,6,.42) 74%,transparent 100%)}
 .hero-overlay .label{color:#ff606d;font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.45rem;display:block}
@@ -2541,7 +2541,9 @@ def lede_fallback_attrs(it):
     if not (ROOT / "originals" / "media" / cover).is_file():
         cover = "times-of-palestine-cover-news.svg"
     return (' referrerpolicy="no-referrer"'
-            " onload=\"if(this.naturalHeight>this.naturalWidth)"
+            " onload=\"if(this.naturalWidth&&this.naturalWidth<200)"
+            f"{{this.onerror=null;this.src='/media/{cover}'}}"
+            "else if(this.naturalHeight>this.naturalWidth)"
             "this.classList.add('portrait')\""
             f" onerror=\"this.onerror=null;this.src='/media/{cover}'\"")
 
