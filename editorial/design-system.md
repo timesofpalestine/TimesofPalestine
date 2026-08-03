@@ -104,6 +104,15 @@ load-bearing statistic — one or two per story, never as decoration.
   and specials ride dark bands.
 - **Breaking ticker**: red band, black BREAKING label, 80s linear loop,
   pauses on hover, `tick-rtl` mirror for Arabic.
+- **Two-tier section nav** (`nav.sections .n1/.n2`): tier 1 is the
+  hard-news spine (THE LATEST · Gaza · West Bank · Her Story · Politics ·
+  Economy · Accountability), heavier and brighter; tier 2 carries the desks
+  and standing features, smaller and muted, with the gold specials
+  clustered and the search/tip utilities anchored inline-end. Both rows
+  scroll horizontally under 960px. New sections join the tier lists in
+  `render_page` deliberately — never appended to the pile; anything not in
+  a tier list still renders at the end of tier 2 (nothing silently
+  vanishes).
 - **Live markers**: the pulsing NEW/جديد mark (<90 min stories); the
   countdown chip (`.fr-card.vote .days`) — dark pill, gold hairline border,
   pulsing gold dot, big mono numeral, recomputed every build. If you build a

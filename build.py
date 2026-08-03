@@ -2219,6 +2219,18 @@ nav.sections a{color:#d8d8e2;font-size:.72rem;font-weight:700;letter-spacing:.04
 nav.sections a:hover{color:#fff;border-color:#3a3a42;background:#18181d}
 nav.sections a.home{color:#f93549;border-color:rgba(249,53,73,.32)}
 nav.sections a.tip{color:#3fd07c;border-color:#3fd07c;background:rgba(63,208,124,.08)}
+/* Two nav tiers: the hard-news spine reads heavier; desks and standing
+   features sit below it, smaller and quieter, utilities anchored at the end */
+nav.sections .wrap.n1{padding-block:.34rem .12rem}
+nav.sections .wrap.n1 a{font-size:.78rem;font-weight:800;color:#f2eee8}
+nav.sections .wrap.n1 a.home{color:#f93549}
+nav.sections .wrap.n2{padding-block:.1rem .34rem;border-top:1px solid rgba(255,255,255,.07)}
+nav.sections .wrap.n2 a{font-size:.67rem;color:#a9a9b4;padding-block:.4rem}
+nav.sections .wrap.n2 a:hover,nav.sections .wrap.n1 a:hover{color:#fff}
+nav.sections .nav-util{display:flex;gap:.25rem;margin-inline-start:auto}
+nav.sections a.util{color:#d8d8e2;border-color:#3a3a42}
+[lang=ar] nav.sections .wrap.n1 a{font-size:.9rem}
+[lang=ar] nav.sections .wrap.n2 a{font-size:.78rem}
 /* ── hero ── */
 .hero-zone{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:1.55rem;padding-block:1.5rem}
 .hero{border-inline-end:1px solid var(--line);padding-inline-end:1.6rem}
@@ -2983,13 +2995,22 @@ def render_page(lang, items, built_at):
 
     def visible(k):
         return len(sections[k]) >= (1 if k in FOCUS_SECTIONS else 2)
-    primary = [k for k in ("gaza", "westbank", "arabaid", "research", "politics") if visible(k)]
-    rest = [k for k in order if visible(k) and k not in primary]
-    nav_links = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in primary)
-    # Standing-special links (gold accent) ride with the primary set
-    for sp in available_specials(lang, items):
-        nav_links += f'<a class="special" href="{esc(sp["href"][lang])}">{esc(sp["nav"][lang])}</a>'
-    nav_links += "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in rest)
+    # Two deliberate nav tiers (owner order 2026-08-03) instead of one
+    # append-ordered pile. Tier 1 is the hard-news spine, read left to
+    # right as geography → people → power → money → accountability. Tier 2
+    # is the desks and standing features, with the gold specials and the
+    # search/tip utilities anchored at the end. A section missing from
+    # either list still appears (end of tier 2) — nothing silently vanishes.
+    _tier1_order = ["gaza", "westbank", "women", "politics", "economy", "accountability"]
+    _tier2_order = ["arabaid", "research", "health", "social", "diaspora",
+                    "arts", "sports", "bitcoin", "humans", "opinion", "news", "archive"]
+    tier1 = [k for k in _tier1_order if k in sections and visible(k)]
+    tier2 = ([k for k in _tier2_order if k in sections and visible(k)]
+             + [k for k in order if visible(k) and k not in _tier1_order + _tier2_order])
+    nav_tier1 = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in tier1)
+    nav_tier2 = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in tier2)
+    for sp in available_specials(lang, items):  # gold standing specials
+        nav_tier2 += f'<a class="special" href="{esc(sp["href"][lang])}">{esc(sp["nav"][lang])}</a>'
 
     def research_featured(it):
         media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"{lede_fallback_attrs(it)}></a>'
@@ -3098,7 +3119,7 @@ def render_page(lang, items, built_at):
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
 
-<nav class="sections" aria-label="Primary"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_links}<a class="home" href="search.html">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></div></nav>
+<nav class="sections" aria-label="Primary"><div class="wrap n1"><a class="home" href="#top">{t['latest']}</a>{nav_tier1}</div><div class="wrap n2">{nav_tier2}<span class="nav-util"><a class="util" href="search.html">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div></nav>
 
 <main id="top">
   <div class="wrap hero-zone">
