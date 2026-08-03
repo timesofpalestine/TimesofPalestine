@@ -1995,8 +1995,11 @@ LIVE_TV = {
 
 _LIVE_JS = """
 (function(){var f=document.getElementById("livefab");if(!f)return;
+try{if(sessionStorage.getItem("top-live-hide")){f.hidden=true;return}}catch(e){}
 var ID=f.dataset.video,TITLE=f.dataset.title,dock=null;
 function close(){if(dock){dock.remove();dock=null}f.hidden=false}
+f.querySelector(".fab-x").addEventListener("click",function(e){e.stopPropagation();
+ f.hidden=true;try{sessionStorage.setItem("top-live-hide","1")}catch(err){}});
 f.addEventListener("click",function(){f.hidden=true;
  dock=document.createElement("div");dock.className="livedock";
  var bar=document.createElement("div");bar.className="ld-bar";
@@ -2021,10 +2024,12 @@ def live_fab_html(lang):
     if not tv.get("id"):
         return ""
     close_label = "إغلاق البث" if lang == "ar" else "Close the stream"
+    hide_label = "إخفاء زر البث" if lang == "ar" else "Hide the live button"
     return (f'<button id="livefab" class="livefab" data-video="{esc(tv["id"])}" '
             f'data-title="{esc(tv["label"])}" data-close="{esc(close_label)}" '
             f'aria-label="{esc(tv["label"])}">'
-            f'<span class="dot"></span>{esc(tv["word"])}</button>'
+            f'<span class="dot"></span>{esc(tv["word"])}'
+            f'<span class="fab-x" role="button" aria-label="{esc(hide_label)}">✕</span></button>'
             f'<script>{_LIVE_JS}</script>')
 
 SECTION_ORDER = {
@@ -2213,12 +2218,17 @@ img{max-width:100%;display:block}
 .masthead.compact{padding:.9rem 0 .7rem}
 .masthead.compact h1,.masthead.compact .wordmark{font-size:1.45rem}
 nav.sections{position:sticky;top:0;background:rgba(11,11,12,.97);z-index:50;box-shadow:0 2px 12px rgba(0,0,0,.3);backdrop-filter:blur(4px)}
-nav.sections .wrap{display:flex;flex-wrap:wrap;gap:.25rem;padding-block:.3rem}
-nav.sections a{color:#d8d8e2;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.5rem .62rem;white-space:nowrap;border:1px solid transparent;border-radius:999px;transition:color var(--tr),border-color var(--tr),background var(--tr)}
+nav.sections .wrap{display:flex;flex-wrap:nowrap;gap:.15rem;padding-block:.15rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav.sections .wrap::-webkit-scrollbar{display:none}
+nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:26px;margin-inline-start:-26px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none;flex-shrink:0}
+[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}
+nav.sections a{color:#d8d8e2;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.68rem .7rem;white-space:nowrap;border-block-end:2px solid transparent;transition:color var(--tr),border-color var(--tr)}
 [lang=ar] nav.sections a{letter-spacing:0;font-size:.8rem}
-nav.sections a:hover{color:#fff;border-color:#3a3a42;background:#18181d}
-nav.sections a.home{color:#f93549;border-color:rgba(249,53,73,.32)}
-nav.sections a.tip{color:#3fd07c;border-color:#3fd07c;background:rgba(63,208,124,.08)}
+nav.sections a:hover{color:#fff;border-block-end-color:#3a3a42}
+nav.sections a.home{color:#f93549}
+nav.sections a.home:hover{border-block-end-color:#f93549}
+nav.sections a.tip{color:#3fd07c}
+nav.sections a.tip:hover{border-block-end-color:#3fd07c}
 /* ── hero ── */
 .hero-zone{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:1.55rem;padding-block:1.5rem}
 .hero{border-inline-end:1px solid var(--line);padding-inline-end:1.6rem}
@@ -2298,9 +2308,12 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .listenbtn:hover{border-color:var(--red);color:var(--red)}
 [lang=ar] .listenbtn{font-size:.9rem}
 /* Floating live-TV pill and its docked corner mini-player */
-.livefab{position:fixed;bottom:1rem;inset-inline-start:1rem;z-index:70;display:inline-flex;align-items:center;gap:.45rem;background:var(--red);color:#fff;border:0;border-radius:2rem;font:800 .85rem/1 var(--sans);letter-spacing:.06em;padding:.62rem 1.15rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35)}
-[lang=ar] .livefab{letter-spacing:0;font-size:.95rem}
-.livefab .dot{width:9px;height:9px;border-radius:50%;background:#fff;animation:pulse 1.6s infinite}
+.livefab{position:fixed;bottom:1rem;inset-inline-start:1rem;z-index:70;display:inline-flex;align-items:center;gap:.4rem;background:var(--red);color:#fff;border:0;border-radius:2rem;font:800 .74rem/1 var(--sans);letter-spacing:.06em;padding:.48rem .55rem .48rem .9rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+[dir=rtl] .livefab{padding:.48rem .9rem .48rem .55rem}
+[lang=ar] .livefab{letter-spacing:0;font-size:.84rem}
+.livefab .dot{width:8px;height:8px;border-radius:50%;background:#fff;animation:pulse 1.6s infinite}
+.livefab .fab-x{display:inline-flex;align-items:center;justify-content:center;width:1.15rem;height:1.15rem;margin-inline-start:.15rem;border-radius:50%;background:rgba(0,0,0,.25);font-size:.68rem;font-weight:400;line-height:1}
+.livefab .fab-x:hover{background:rgba(0,0,0,.45)}
 .livefab:hover{filter:brightness(1.12)}
 .livefab[hidden]{display:none}
 .livedock{position:fixed;bottom:1rem;inset-inline-start:1rem;z-index:70;width:min(420px,calc(100vw - 2rem));background:#0b0b0c;border-radius:6px;overflow:hidden;box-shadow:0 10px 34px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.14)}
@@ -2330,7 +2343,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .sec-meta{font-size:.74rem;font-weight:700;color:var(--muted);white-space:nowrap}
 [lang=ar] .sec-meta{font-size:.82rem}
 /* ── card grid ── */
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.15rem}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.4rem}
 .grid.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .card{background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);border:1px solid var(--line);transition:box-shadow var(--tr),transform var(--tr)}
@@ -2501,7 +2514,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 /* ── responsive ── */
-@media(max-width:960px){nav.sections .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:26px;margin-inline-start:-26px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none;flex-shrink:0}[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}
+@media(max-width:960px){
   .research-feat{grid-template-columns:1fr}
   .research-feat img,.research-feat .noimg{min-height:180px;order:-1}
   .hero-zone{grid-template-columns:1fr}
