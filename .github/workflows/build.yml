@@ -61,6 +61,15 @@ jobs:
         if: always()
         run: python validate_build.py dist --summary >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/configure-pages@v5
+        with:
+          # Self-heal: a repo visibility flip (private→public, 2026-08-03)
+          # erases the Pages configuration and every deploy then fails on
+          # this step. enablement re-creates the Pages site via the API so
+          # the workflow recovers on its own. NOTE: the custom domain is a
+          # Pages SETTING, not part of the artifact — after a visibility
+          # flip the owner may still need to re-enter timesofpalestine.com
+          # under Settings → Pages → Custom domain.
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
