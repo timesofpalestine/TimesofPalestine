@@ -1,0 +1,59 @@
+# Self-sustaining build cadence (owner-approved 2026-08-03).
+#
+# GitHub throttles this repo's cron schedule (observed firing every 3-4 hours
+# against a 10-minute target — see build.yml's schedule note). This workflow
+# closes the gap: every completed build starts a ~9-minute timer, after which
+# the next build is dispatched — an unbroken chain at the charter's cadence
+# that needs no scheduler at all.
+#
+# ACTIVATION — one owner step: create a fine-grained PAT scoped to THIS repo
+# with Actions read-and-write, and save it as the repo secret
+# WORKFLOW_DISPATCH_TOKEN. Until the secret exists this workflow exits
+# instantly and the cron + heartbeat carry the schedule. (The built-in
+# GITHUB_TOKEN cannot self-dispatch — GitHub blocks that to prevent loops,
+# which is why a PAT is required.)
+#
+# LOOP SAFETY:
+#   - concurrency cancel-in-progress: only ONE timer ever sleeps; a newer
+#     build completion replaces it, so the timer always measures from the
+#     most recent build.
+#   - Before dispatching, the chain stands down if any build is already
+#     queued or running (push builds, cron ticks and the heartbeat all
+#     satisfy the cadence on their own).
+#   - PAUSE: set the repo variable SELF_REARM to "off" (never edit this file
+#     to pause — charter rule), or remove the secret.
+name: Re-arm build cadence
+on:
+  workflow_run:
+    workflows: ["Build & publish Times of Palestine"]
+    types: [completed]
+permissions: {}
+concurrency:
+  group: rearm
+  cancel-in-progress: true
+jobs:
+  rearm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    if: vars.SELF_REARM != 'off'
+    steps:
+      - name: Wait out the cadence window, then dispatch if idle
+        env:
+          TOKEN: ${{ secrets.WORKFLOW_DISPATCH_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "WORKFLOW_DISPATCH_TOKEN not set — self-rearm dormant; cron and heartbeat carry the schedule."
+            exit 0
+          fi
+          sleep 540
+          count=$(curl -sf -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/$REPO/actions/workflows/build.yml/runs?per_page=5" |
+            python3 -c 'import json,sys; rs=json.load(sys.stdin)["workflow_runs"]; print(sum(1 for r in rs if r["status"] in ("queued","in_progress","waiting")))')
+          if [ "${count:-0}" -gt 0 ]; then
+            echo "A build is already queued or running — standing down."
+            exit 0
+          fi
+          curl -sf -X POST -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/$REPO/actions/workflows/build.yml/dispatches" -d '{"ref":"main"}'
+          echo "Dispatched the next build."
