@@ -1201,3 +1201,31 @@ class PacingTests(unittest.TestCase):
     def test_longform_leaves_short_paragraphs_alone(self):
         html = longform.body_html("A short paragraph that stays whole.")
         self.assertEqual(html.count('<p class="summary">'), 1)
+
+
+class MobileChromeTests(unittest.TestCase):
+    """Outside review 2026-08-03 (Gemini): the ticker's seamless-loop copy is
+    decorative and must not reach screen readers or the tab order; the desks
+    nav tier folds behind a More toggle on phones."""
+
+    def test_ticker_duplicate_copy_is_hidden_from_assistive_tech(self):
+        built_at = datetime(2026, 8, 3, 12, tzinfo=timezone.utc)
+        it = item()
+        it.update({"image": "/media/x.svg", "pid": "chrome0001"})
+        homepage = build.render_page("en", [it], built_at)
+        track = homepage.split('<div class="track">', 1)[1].split("</div>", 1)[0]
+        self.assertIn('aria-hidden="true" tabindex="-1"', track)
+        story = build.render_story(dict(it, brief="A body paragraph here."),
+                                   "en", [], [it], built_at)
+        s_track = story.split('<div class="track">', 1)[1].split("</div>", 1)[0]
+        self.assertIn('aria-hidden="true" tabindex="-1"', s_track)
+
+    def test_nav_carries_the_mobile_more_toggle(self):
+        built_at = datetime(2026, 8, 3, 12, tzinfo=timezone.utc)
+        it = item()
+        it.update({"image": "/media/x.svg", "pid": "chrome0002"})
+        for lang, label in (("en", "More"), ("ar", "المزيد")):
+            page = build.render_page(lang, [dict(it, lang=lang)], built_at)
+            self.assertIn('class="nav-more"', page)
+            self.assertIn('aria-controls="navtier2"', page)
+            self.assertIn(label, page)
