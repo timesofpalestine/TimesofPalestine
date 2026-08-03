@@ -1,7 +1,17 @@
 name: Build & publish Times of Palestine
 on:
   schedule:
-    - cron: "*/10 * * * *"   # refresh every 10 minutes
+    # Target cadence: every ~10 minutes. GitHub throttles high-frequency
+    # schedules hard — the old "*/10" line was firing every 3-4 HOURS in
+    # practice (checked 2026-08-03; the site only looked alive because PR
+    # merges triggered push builds). Mitigations: staggered odd minutes
+    # (top-of-slot stampedes are deprioritized first) and several distinct
+    # entries so a dropped tick doesn't silence a whole cycle. If gaps
+    # persist, an external heartbeat hitting workflow_dispatch is the
+    # durable fix (discussion: issue #6, 2026-08-03).
+    - cron: "7,37 * * * *"
+    - cron: "17,47 * * * *"
+    - cron: "27,57 * * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
