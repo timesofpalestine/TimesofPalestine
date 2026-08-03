@@ -61,6 +61,23 @@ choices make the Arabic sound translated.
 - Preserve constructive, good-faith framing while stating clearly what is
   promised, funded, underway, completed or still to be decided.
 
+## Verb precision — hard errors (validator-enforced, owner order 2026-08-03)
+
+These are not stylistic preferences; each is a wrong word that marks the copy
+as machine-made. The build's diction gate (`language_quality_issues` in
+`build.py`) flags them, sends the draft back for one editor rewrite, and
+scrubs any cached brief that carries them.
+
+- **«أسلم» ≠ «سلّم».** «أسلم» means embraced Islam (or, with نفسه, gave
+  oneself up in a specific idiom). The verb for handing something over is
+  «سلّم/سلّمت»: «سلّمت قوات الاحتلال الجثامين»، never «أسلمت قوات الاحتلال».
+- **«قام بـ» + مصدر.** Use the verb itself: «قصفت الطائرات» لا «قامت
+  الطائرات بقصف»؛ «اعتقل الجيش» لا «قام الجيش باعتقال».
+- **«تم/تمت» + مصدر.** Name the actor and use the active verb: «اعتقلت
+  القوات» لا «تم اعتقال»؛ «وقّع الطرفان» لا «تمّ التوقيع».
+- **Machine filler.** «يُذكر أن»، «تجدر الإشارة إلى»، «الجدير بالذكر» —
+  delete the scaffolding and state the information.
+
 ## Translation-artifact watchlist
 
 These are warnings, not automatic replacements; context decides the wording.

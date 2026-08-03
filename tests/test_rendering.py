@@ -956,3 +956,78 @@ class GazaNumbersTests(unittest.TestCase):
         self.gp._moh_cache["data"] = {}
         self.assertEqual(self.gp.panel("en"), "")
         self.assertIsNone(self.gp.payload())
+
+
+class _FakeBriefsClient:
+    """Plays back canned model replies and records every request."""
+
+    def __init__(self, replies):
+        self._replies = list(replies)
+        self.calls = []
+        outer = self
+
+        class _Messages:
+            def create(self, **kwargs):
+                outer.calls.append(kwargs)
+                text = outer._replies.pop(0)
+                block = type("Block", (), {"type": "text", "text": text})()
+                return type("Response", (), {"content": [block]})()
+
+        self.messages = _Messages()
+
+
+class LanguageQualityTests(unittest.TestCase):
+    """Machine diction never publishes unchallenged (owner order 2026-08-03,
+    after «أسلمت قوات الاحتلال» reached the Arabic front page)."""
+
+    AR_BAD_BODY = (
+        "أسلمت قوات الاحتلال جثامين ثلاثة أسرى إلى اللجنة الدولية للصليب الأحمر "
+        "عند حاجز بيت حانون شمالي قطاع غزة، بحسب وكالة معاً. وقالت الوكالة إن "
+        "التسليم جرى بعد ظهر الأحد بحضور طواقم طبية فلسطينية استلمت الجثامين "
+        "ونقلتها إلى مجمع الشفاء الطبي لتوثيق هوياتها قبل تسليمها إلى ذويها.")
+    AR_GOOD_BODY = AR_BAD_BODY.replace("أسلمت", "سلّمت")
+
+    def test_arabic_wrong_verb_and_fillers_are_flagged(self):
+        self.assertTrue(build.language_quality_issues("أسلمت قوات الاحتلال الجثامين", "ar"))
+        self.assertTrue(build.language_quality_issues("قامت الطائرات بقصف المخيم", "ar"))
+        self.assertTrue(build.language_quality_issues("تم اعتقال ثلاثة شبان", "ar"))
+        self.assertTrue(build.language_quality_issues("يذكر أن الوفد وصل أمس", "ar"))
+        self.assertFalse(build.language_quality_issues("سلّمت قوات الاحتلال الجثامين", "ar"))
+        self.assertFalse(build.language_quality_issues("قصفت الطائرات المخيم فجراً", "ar"))
+
+    def test_english_stock_ai_diction_is_flagged(self):
+        self.assertTrue(build.language_quality_issues("The report delves into the crisis.", "en"))
+        self.assertTrue(build.language_quality_issues("The strike underscores the risk.", "en"))
+        self.assertTrue(build.language_quality_issues("It is worth noting the toll rose.", "en"))
+        self.assertFalse(build.language_quality_issues(
+            "Israeli forces raided the camp at dawn, residents said.", "en"))
+
+    def test_write_brief_sends_flagged_draft_back_for_one_editor_pass(self):
+        title = "HEADLINE: الاحتلال يسلم جثامين ثلاثة أسرى للصليب الأحمر"
+        client = _FakeBriefsClient([
+            f"{title}\n\n{self.AR_BAD_BODY}",
+            f"{title}\n\n{self.AR_GOOD_BODY}",
+        ])
+        it = item()
+        it.update({"lang": "ar", "pid": "diction001"})
+        brief = build.write_brief(client, it)
+        self.assertIn("سلّمت", brief)
+        self.assertNotIn("أسلمت", brief)
+        self.assertEqual(len(client.calls), 2)
+        # The retry carries the flagged wording back to the desk as editor notes.
+        retry_convo = client.calls[1]["messages"]
+        self.assertEqual(retry_convo[1]["role"], "assistant")
+        self.assertIn("أسلم", retry_convo[2]["content"])
+
+    def test_persistent_diction_publishes_best_effort_never_holds_coverage(self):
+        title = "HEADLINE: الاحتلال يسلم جثامين ثلاثة أسرى للصليب الأحمر"
+        client = _FakeBriefsClient([
+            f"{title}\n\n{self.AR_BAD_BODY}",
+            f"{title}\n\n{self.AR_BAD_BODY}",
+        ])
+        it = item()
+        it.update({"lang": "ar", "pid": "diction002"})
+        brief = build.write_brief(client, it)
+        self.assertIsNotNone(brief)          # charter: gating defaults to publish
+        self.assertNotIn("brief_refused", it)
+        self.assertEqual(len(client.calls), 2)

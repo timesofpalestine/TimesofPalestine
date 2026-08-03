@@ -89,7 +89,11 @@ Straight, unshowy news prose — the register of a serious wire service, not an 
 Open with the single most important finding. Then evidence, context, and what remains \
 unknown. No first person, no rhetorical questions, no editorialising, no calls to \
 action. Sober about atrocity: specific, sourced and exact does more work than \
-adjectives. 700-1000 words.
+adjectives. 700-1000 words. Write like a careful human editor, never like a language \
+model: varied sentence rhythm, concrete verbs, specifics over abstractions. Stock \
+analytic diction never appears — no "delve", "underscore", "highlights the \
+importance", "it is worth noting", "serves as a reminder", "sheds light on", "a \
+testament to", "in a significant development".
 
 Structure it the way a reader actually reads. Lead with the finding, not the \
 background. Keep paragraphs to one to three sentences. Prefer a concrete number to an \
@@ -147,6 +151,11 @@ chains, Arabic quotation marks «», correct Palestinian proper nouns and place 
 (القدس، الضفة الغربية، قطاع غزة، الاحتلال), and Arabic conventions for numbers and \
 dates (تموز/يوليو). Every fact, figure, attribution and denial must survive exactly — \
 add nothing, drop nothing, soften nothing.
+
+دقة الأفعال شرط نشر: فعل التسليم «سلّم/سلّمت» وليس «أسلم» التي تعني اعتنق الإسلام. \
+ممنوع في النص كله: «قام بـ» بدل الفعل الصريح («قصف» لا «قام بقصف»)، و«تم/تمت» مع \
+المصدر («اعتقلت القوات» لا «تم اعتقال»)، وحشو «يُذكر أن» و«تجدر الإشارة» و«الجدير \
+بالذكر». نوّع إيقاع الجمل واكتب كما يكتب محرر بشري متمرس، لا كنموذج آلي.
 
 THE HEADLINE IS WRITTEN FRESH, IN ARABIC, FOR ARABS — never translated from the \
 English one. Compose it the way Arabic front pages do. The live patterns:
