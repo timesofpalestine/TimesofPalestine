@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Gaza's remote medical care runs on WhatsApp groups</title>
+<desc id="desc">Illustration of a phone showing a WhatsApp group used by Gaza surgeons to share injury images with specialists abroad, with figures from a Lancet case series of August 2024 — over 1,000 members and more than 15 specialty subgroups, from Nasser Medical Complex in Khan Younis — alongside a bar chart of Gaza's damaged telecommunications: 57% of Paltel radio sites lost early in the war, Paltel's network 80% offline, connectivity at 1–2% of pre-October levels before recovering to around 22%.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#1f2124"/>
+<stop offset="1" stop-color="#191a1d"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="80" y="86" font-family="'Source Serif 4',Georgia,serif" font-size="45" fill="#f2eee8">Gaza's remote medical care runs on a WhatsApp group</text>
+<text x="80" y="132" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#c7a86b">الرعاية الطبية عن بُعد في غزة تعتمد على مجموعة واتساب</text>
+<text x="80" y="172" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">Case series in The Lancet, August 2024 — surgeons at Nasser Medical Complex, Khan Younis, consulting specialists abroad</text>
+<line x1="80" y1="192" x2="1520" y2="192" stroke="#3a3c40" stroke-width="2"/>
+
+<!-- phone -->
+<rect x="86" y="222" width="336" height="586" rx="30" fill="#0e0f11" stroke="#3a3c40" stroke-width="3"/>
+<rect x="102" y="256" width="304" height="520" rx="12" fill="#171a1c"/>
+<rect x="228" y="236" width="52" height="7" rx="3" fill="#3a3c40"/>
+
+<!-- chat header -->
+<rect x="102" y="256" width="304" height="62" rx="12" fill="#22262a"/>
+<rect x="102" y="300" width="304" height="18" fill="#22262a"/>
+<circle cx="132" cy="287" r="17" fill="#286344"/>
+<circle cx="126" cy="283" r="5" fill="#f2eee8"/>
+<path d="M117 296a10 10 0 0 1 18 0z" fill="#f2eee8"/>
+<circle cx="141" cy="290" r="4.5" fill="#59a97d"/>
+<text x="160" y="282" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">WhatsApp group</text>
+<text x="160" y="304" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#59a97d">مجموعة واتساب</text>
+
+<!-- outgoing bubble with shared image -->
+<rect x="120" y="336" width="196" height="132" rx="12" fill="#23272b"/>
+<rect x="132" y="348" width="172" height="76" rx="6" fill="#2e3237" stroke="#c7a86b" stroke-width="1.5"/>
+<path d="M148 412l30-34 22 24 18-18 26 28z" fill="#4a4e53"/>
+<circle cx="284" cy="368" r="9" fill="#4a4e53"/>
+<rect x="132" y="434" width="130" height="8" rx="4" fill="#585c61"/>
+<rect x="132" y="450" width="96" height="8" rx="4" fill="#464a4f"/>
+
+<!-- incoming reply -->
+<rect x="188" y="484" width="200" height="86" rx="12" fill="#1c2c24" stroke="#286344" stroke-width="1.5"/>
+<rect x="202" y="502" width="168" height="8" rx="4" fill="#59a97d"/>
+<rect x="202" y="522" width="140" height="8" rx="4" fill="#3f6d55"/>
+<rect x="202" y="542" width="108" height="8" rx="4" fill="#3f6d55"/>
+
+<!-- outgoing text -->
+<rect x="120" y="586" width="178" height="66" rx="12" fill="#23272b"/>
+<rect x="134" y="604" width="148" height="8" rx="4" fill="#585c61"/>
+<rect x="134" y="624" width="112" height="8" rx="4" fill="#464a4f"/>
+
+<!-- incoming text -->
+<rect x="188" y="668" width="200" height="66" rx="12" fill="#1c2c24" stroke="#286344" stroke-width="1.5"/>
+<rect x="202" y="686" width="166" height="8" rx="4" fill="#59a97d"/>
+<rect x="202" y="706" width="124" height="8" rx="4" fill="#3f6d55"/>
+
+<text x="102" y="762" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#6f7276">Images and case details shared with consent</text>
+
+<!-- flow card -->
+<rect x="470" y="216" width="1050" height="146" rx="10" fill="url(#card)" stroke="#3a3c40" stroke-width="2"/>
+<circle cx="590" cy="290" r="42" fill="none" stroke="#8a1f2d" stroke-width="4"/>
+<rect x="574" y="272" width="32" height="10" rx="3" fill="#f2eee8"/>
+<rect x="585" y="261" width="10" height="32" rx="3" fill="#f2eee8"/>
+<text x="500" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Nasser Medical Complex</text>
+
+<line x1="646" y1="290" x2="1180" y2="290" stroke="#c7a86b" stroke-width="3" stroke-dasharray="14 10"/>
+<path d="M1180 278l26 12-26 12z" fill="#c7a86b"/>
+<text x="720" y="272" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#c7a86b">peer-to-peer telemedicine</text>
+<text x="720" y="326" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">طب عن بُعد بين الأطباء</text>
+
+<circle cx="1268" cy="290" r="42" fill="none" stroke="#286344" stroke-width="4"/>
+<circle cx="1256" cy="281" r="9" fill="#59a97d"/>
+<circle cx="1281" cy="281" r="9" fill="#59a97d"/>
+<path d="M1240 310a17 17 0 0 1 32 0z" fill="#59a97d"/>
+<path d="M1266 310a15 15 0 0 1 28 0z" fill="#3f6d55"/>
+<text x="1180" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Specialists outside Gaza</text>
+<text x="500" y="245" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">مجمع ناصر الطبي، خان يونس</text>
+<text x="1230" y="245" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">أخصائيون خارج غزة</text>
+
+<!-- stat boxes -->
+<rect x="470" y="382" width="512" height="120" rx="10" fill="url(#card)" stroke="#3a3c40" stroke-width="2"/>
+<text x="498" y="452" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">1,000+</text>
+<text x="700" y="432" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">members, no targeted</text>
+<text x="700" y="456" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">recruitment</text>
+<text x="498" y="486" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#c7a86b">أكثر من 1000 عضو</text>
+
+<rect x="1008" y="382" width="512" height="120" rx="10" fill="url(#card)" stroke="#3a3c40" stroke-width="2"/>
+<text x="1036" y="452" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">15+</text>
+<text x="1150" y="432" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">specialty and injury-</text>
+<text x="1150" y="456" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">oriented subgroups</text>
+<text x="1036" y="486" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#c7a86b">أكثر من 15 مجموعة فرعية</text>
+
+<!-- chart -->
+<text x="470" y="562" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">The network it depends on</text>
+<text x="470" y="590" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#59a97d">الشبكة التي يعتمد عليها</text>
+<line x1="470" y1="606" x2="1520" y2="606" stroke="#3a3c40" stroke-width="2"/>
+
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">
+<text x="470" y="648">Paltel radio sites lost, early in the war</text>
+<text x="470" y="700">Paltel network described as offline (7amleh, Feb 2025)</text>
+<text x="470" y="752">Gaza connectivity at its lowest, vs pre-October</text>
+<text x="470" y="804">Connectivity after partial recovery</text>
+</g>
+
+<g>
+<rect x="1060" y="630" width="256" height="24" rx="3" fill="#8a1f2d"/>
+<text x="1330" y="649" font-family="'Source Serif 4',Georgia,serif" font-size="24" fill="#f2eee8">57%</text>
+
+<rect x="1060" y="682" width="360" height="24" rx="3" fill="#C8102E"/>
+<text x="1440" y="701" font-family="'Source Serif 4',Georgia,serif" font-size="24" fill="#f2eee8">80%</text>
+
+<rect x="1060" y="734" width="9" height="24" rx="3" fill="#c7a86b"/>
+<text x="1085" y="753" font-family="'Source Serif 4',Georgia,serif" font-size="24" fill="#f2eee8">1–2%</text>
+
+<rect x="1060" y="786" width="99" height="24" rx="3" fill="#286344"/>
+<text x="1175" y="805" font-family="'Source Serif 4',Georgia,serif" font-size="24" fill="#f2eee8">~22%</text>
+</g>
+<line x1="1060" y1="618" x2="1060" y2="822" stroke="#4a4e53" stroke-width="2"/>
+<text x="1060" y="842" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#6f7276">bars scaled to 100%</text>
+
+<text x="470" y="866" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#6f7276">Sources: The Lancet (Aug 2024); Emergency Telecommunications Cluster; Internet Society Pulse; 7amleh via Al-Shabaka (Feb 2025)</text>
+<text x="86" y="866" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#6f7276">Times of Palestine</text>
+</svg>
