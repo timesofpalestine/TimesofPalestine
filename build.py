@@ -2306,7 +2306,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
    crop; the big 16/9 surfaces letterbox the frame whole — no crop can fit
    a face into the band a wide slot cuts from a tall photo. */
 .card img.portrait,.rowcard img.portrait,.sub-thumb img.portrait,.fr-card img.portrait{object-position:50% 15%}
-.hero-imgwrap>a>img.portrait,.story img.lede.portrait{object-fit:contain;background:#101013}
+.hero-imgwrap>a>img.portrait,.story img.lede.portrait,.hero-imgwrap>a>img.boxy,.story img.lede.boxy{object-fit:contain;background:#101013}
 .card:hover img{transform:scale(1.04)}
 .card .ph{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
 .card .ph svg{width:44px;height:44px;opacity:.9}
@@ -2661,7 +2661,9 @@ def lede_fallback_attrs(it):
             " onload=\"if(this.naturalWidth&&this.naturalWidth<200)"
             f"{{this.onerror=null;this.src='/media/{cover}'}}"
             "else if(this.naturalHeight>this.naturalWidth)"
-            "this.classList.add('portrait')\""
+            "this.classList.add('portrait');"
+            "else if(this.naturalWidth<1.55*this.naturalHeight)"
+            "this.classList.add('boxy')\""
             f" onerror=\"this.onerror=null;this.src='/media/{cover}'\"")
 
 def card_media(it, pfx):
@@ -3575,6 +3577,16 @@ def main():
         HEALTH.checks["brief_generation"] = "degraded"
     else:
         HEALTH.checks["brief_generation"] = brief_status
+    # Second event-dedupe pass, on the FINAL headlines (owner report
+    # 2026-08-03: two pages of one story reached readers). The first pass
+    # compares raw feed titles; the briefs desk then rewrites them, and two
+    # different source headlines for one incident can converge into
+    # near-identical house headlines. What the reader sees twice is what
+    # must be deduped — so the same gate runs again on published titles.
+    _before = len(en_items) + len(ar_items)
+    en_items = dedupe_events(en_items)
+    ar_items = dedupe_events(ar_items)
+    HEALTH.deduplicated += _before - len(en_items) - len(ar_items)
     candidates = select_publishable_copy(en_items, ar_items)
     approvals = load_reviews(ROOT / "editorial" / "reviews.json")
     gate_mode = review_gate_mode()
