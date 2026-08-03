@@ -913,6 +913,10 @@ class GazaNumbersTests(unittest.TestCase):
                             "press": 254, "famine": 470},
                  "injured": {"total": 170655},
                  "famine": {"total": 470}},
+        "west_bank": {"last_update": "2026-08-03",
+                      "killed": {"total": 1093, "children": 220},
+                      "injured": {"total": 9970},
+                      "settler_attacks": 2470},
         "known_press_killed_in_gaza": {"records": 254},
     }
 
@@ -932,6 +936,7 @@ class GazaNumbersTests(unittest.TestCase):
 
     def test_panel_renders_moh_lead_row_with_live_hooks(self):
         html = self.gp.panel("en")
+        self.assertIn("Palestine by the Numbers", html)
         self.assertIn('data-gi-key="killed"', html)
         self.assertIn('data-gi-val="68643"', html)
         self.assertIn("68,643", html)
@@ -940,17 +945,34 @@ class GazaNumbersTests(unittest.TestCase):
         self.assertIn("gaza-numbers.json", html)   # the polling script travels
         self.assertIn("gi-live", html)
 
+    def test_west_bank_row_carries_deaths_and_settler_attacks(self):
+        html = self.gp.panel("en")
+        self.assertIn("West Bank", html)
+        self.assertIn('data-gi-key="wb_killed"', html)
+        self.assertIn('data-gi-val="1093"', html)
+        self.assertIn('data-gi-key="wb_attacks"', html)
+        self.assertIn("Settler attacks", html)
+        self.assertIn("UN OCHA", html)
+        self.assertIn('data-gi-asof="wb"', html)
+        self.assertIn("2026-08-03", html)
+
     def test_arabic_panel_uses_arabic_digits_and_labels(self):
         html = self.gp.panel("ar")
+        self.assertIn("فلسطين بالأرقام", html)
         self.assertIn("٦٨،٦٤٣", html)
         self.assertIn("شهداء", html)
         self.assertIn("وزارة الصحة في غزة", html)
+        self.assertIn("الضفة الغربية", html)
+        self.assertIn("اعتداءات المستوطنين", html)
 
     def test_payload_carries_figures_for_the_poll_file(self):
         data = self.gp.payload()
         self.assertEqual(data["figures"]["killed"], 68643)
         self.assertEqual(data["figures"]["press"], 254)
+        self.assertEqual(data["figures"]["wb_killed"], 1093)
+        self.assertEqual(data["figures"]["wb_attacks"], 2470)
         self.assertEqual(data["asOf"], "2026-08-02")
+        self.assertEqual(data["wbAsOf"], "2026-08-03")
 
     def test_everything_fails_open_without_data(self):
         self.gp._moh_cache["data"] = {}

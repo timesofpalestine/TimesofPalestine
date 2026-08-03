@@ -125,13 +125,16 @@ load-bearing statistic — one or two per story, never as decoration.
   countdown chip (`.fr-card.vote .days`) — dark pill, gold hairline border,
   pulsing gold dot, big mono numeral, recomputed every build. If you build a
   new "alive" element, follow this chip's anatomy.
-- **Gaza by the Numbers = live ledger** (`section.gaza-index`,
-  `gaza_panel.py`): the lead row is the Gaza Ministry of Health's cumulative
-  toll via Tech for Palestine's Palestine Datasets, refetched every build and
-  mirrored to `/data/gaza-numbers.json`; `PANEL_JS` polls that file every
-  5 minutes and animates any revised figure in place (`.gi-flash` wash), so
-  the numbers follow the Ministry's reports without a reload. The section
-  head carries the pulsing `.gi-live` dot only when the live row is present.
+- **Palestine by the Numbers = live ledger** (`section.gaza-index`,
+  `gaza_panel.py`): region rows under small kicker heads (`.gi-region`) —
+  GAZA is the Ministry of Health's cumulative toll, WEST BANK is UN OCHA's
+  killed/children/wounded plus the settler-attack count — both via Tech for
+  Palestine's Palestine Datasets, refetched every build and mirrored to
+  `/data/gaza-numbers.json` (WB keys carry the `wb_` prefix, each region its
+  own `data-gi-asof` stamp); `PANEL_JS` polls that file every 5 minutes and
+  animates any revised figure in place (`.gi-flash` wash), so the numbers
+  follow the source reports without a reload. The section head carries the
+  pulsing `.gi-live` dot only when a live row is present.
   Restraint is binding: these are casualty figures, not a scoreboard — no
   count-up from zero, no celebratory motion; the entrance settle starts at
   96.5% of the value and everything stills under `prefers-reduced-motion`.
