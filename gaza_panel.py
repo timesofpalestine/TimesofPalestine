@@ -1,16 +1,19 @@
-"""Gaza by the Numbers — the live humanitarian ledger on the homepage.
+"""Palestine by the Numbers — the live humanitarian ledger on the homepage.
 
-Two data layers, each fail-open (a dead source omits its row, never breaks
+Three data rows, each fail-open (a dead source omits its row, never breaks
 the build):
 
-1. THE LEAD ROW is the Gaza Ministry of Health's cumulative toll, read from
-   Tech for Palestine's Palestine Datasets (data.techforpalestine.org), which
+1. GAZA: the Ministry of Health's cumulative toll, read from Tech for
+   Palestine's Palestine Datasets (data.techforpalestine.org), which
    republishes the Ministry's daily reports as JSON. The build refetches it
    every cycle (the site rebuilds every 10 minutes), so the panel follows the
    Ministry's reports as they are issued (owner directive 2026-08-03). The
    figures are also written to /data/gaza-numbers.json so the page can update
    the numbers in place between visits (see PANEL_JS).
-2. gazaindex.org (Gaza Genocide Center) keeps the wider humanitarian
+2. WEST BANK: killed, children, wounded and the settler-attack count from
+   UN OCHA's record, republished in the same summary (owner directive
+   2026-08-03: the ledger covers Palestine, not Gaza alone).
+3. gazaindex.org (Gaza Genocide Center) keeps the wider humanitarian
    indicators — orphans, out-of-school children, hospital damage — with each
    figure attributed to the body that measured it (WHO, UNICEF, UNFPA,
    UNESCO, OCHA, the Ministry of Health).
@@ -38,6 +41,18 @@ MOH_KEYS = [
      "Killed by starvation", "شهداء التجويع"),
 ]
 
+# West Bank row (owner directive 2026-08-03: the ledger covers Palestine, not
+# Gaza alone — every death and settler attack in the West Bank counts here).
+# Palestine Datasets republishes UN OCHA's West Bank casualty and settler-
+# attack record alongside the Gaza MoH reports.
+WB_KEYS = [
+    ("wb_killed", ("west_bank.killed.total",), "Killed", "شهداء"),
+    ("wb_children", ("west_bank.killed.children",), "Children killed", "شهداء أطفال"),
+    ("wb_injured", ("west_bank.injured.total",), "Wounded", "جرحى"),
+    ("wb_attacks", ("west_bank.settler_attacks", "west_bank.settler_attacks.total"),
+     "Settler attacks", "اعتداءات المستوطنين"),
+]
+
 # Curated because a homepage needs the few numbers that carry the whole story,
 # not all fifty. Labels are written here so the panel reads naturally in Arabic.
 GAZA_INDEX_KEYS = [
@@ -51,7 +66,7 @@ GAZA_INDEX_KEYS = [
 
 # Styles travel with the panel. The figures declare no colour of their own so
 # they inherit the page ink and stay readable in both the light and dark themes.
-PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.2rem}.gi-cell{border-inline-start:3px solid var(--red);padding-inline-start:.8rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-moh+.gi-src{margin-bottom:1.4rem}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}"
+PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.2rem}.gi-cell{border-inline-start:3px solid var(--red);padding-inline-start:.8rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-moh+.gi-src{margin-bottom:1.35rem}.gi-region{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 .6rem}[lang=ar] .gi-region{letter-spacing:0;font-size:.8rem}.gi-src+.gi-region{margin-top:1.35rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb{grid-template-columns:repeat(2,minmax(0,1fr))}}"
 
 # The live layer: a gentle roll-up when the panel first scrolls into view,
 # then a refetch of /data/gaza-numbers.json every 5 minutes that animates any
@@ -87,8 +102,10 @@ function refresh(){if(document.hidden||!nums.length)return;
    if(nv&&nv!==ov){animate(el,ov,nv);
     var c=el.closest(".gi-cell");
     if(c){c.classList.remove("gi-flash");void c.offsetWidth;c.classList.add("gi-flash")}}});
-  var a=g.querySelector(".gi-asof");
-  if(a&&d.asOf)a.textContent=AR?String(d.asOf).replace(/[0-9]/g,function(c){return"\\u0660\\u0661\\u0662\\u0663\\u0664\\u0665\\u0666\\u0667\\u0668\\u0669"[+c]}):d.asOf})
+  function ard(s){return AR?String(s).replace(/[0-9]/g,function(c){return"\\u0660\\u0661\\u0662\\u0663\\u0664\\u0665\\u0666\\u0667\\u0668\\u0669"[+c]}):String(s)}
+  [["gaza",d.asOf],["wb",d.wbAsOf]].forEach(function(p){
+   if(!p[1])return;var a=g.querySelector('[data-gi-asof="'+p[0]+'"]');
+   if(a)a.textContent=ard(p[1])})})
  .catch(function(){})}
 setInterval(refresh,300000);
 document.addEventListener("visibilitychange",function(){if(!document.hidden)refresh()});
@@ -127,30 +144,38 @@ def _fetch_moh():
     return _moh_cache["data"]
 
 
-def moh_figures():
-    """(figures dict keyed like MOH_KEYS, as-of date string) — both empty on failure."""
-    data = _fetch_moh()
-    if not data:
-        return {}, ""
+def _region_figures(data, keys):
     figs = {}
-    for key, paths, _en, _ar in MOH_KEYS:
+    for key, paths, _en, _ar in keys:
         for path in paths:
             v = _dig(data, path)
             if isinstance(v, (int, float)) and not isinstance(v, bool) and v > 0:
                 figs[key] = int(round(v))
                 break
-    as_of = str(_dig(data, "gaza.last_update") or "")[:10]
-    return figs, as_of
+    return figs
+
+
+def live_figures():
+    """(gaza figures, gaza as-of, west bank figures, wb as-of) — empty on failure."""
+    data = _fetch_moh()
+    if not data:
+        return {}, "", {}, ""
+    gaza = _region_figures(data, MOH_KEYS)
+    wb = _region_figures(data, WB_KEYS)
+    gaza_asof = str(_dig(data, "gaza.last_update") or "")[:10]
+    wb_asof = str(_dig(data, "west_bank.last_update") or "")[:10]
+    return gaza, gaza_asof, wb, wb_asof
 
 
 def payload():
     """The /data/gaza-numbers.json body the live layer polls, or None."""
-    figs, as_of = moh_figures()
+    gaza, gaza_asof, wb, wb_asof = live_figures()
+    figs = {**gaza, **wb}
     if not figs:
         return None
-    return {"asOf": as_of,
+    return {"asOf": gaza_asof, "wbAsOf": wb_asof,
             "fetchedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "source": "Gaza Ministry of Health via Tech for Palestine",
+            "source": "Gaza Ministry of Health & UN OCHA via Tech for Palestine",
             "figures": figs}
 
 
@@ -164,28 +189,30 @@ def _fmt(value, unit, lang):
     return n.translate(str.maketrans("0123456789,", "٠١٢٣٤٥٦٧٨٩،")) if lang == "ar" else n
 
 
-def _moh_row(lang):
-    figs, as_of = moh_figures()
+_PD_LINK = ('<a href="https://data.techforpalestine.org" target="_blank" '
+            'rel="noopener">Palestine Datasets</a>')
+
+
+def _live_row(lang, keys, figs, region, src, asof, asof_key, extra_cls=""):
+    """One region's figure row: kicker, big-numeral grid with live hooks,
+    attribution line with its own as-of stamp."""
     if not figs:
         return ""
     ar = lang == "ar"
     cells = []
-    for key, _paths, en, arl in MOH_KEYS:
+    for key, _paths, en, arl in keys:
         if key not in figs:
             continue
         cells.append(f'<div class="gi-cell"><span class="gi-num" data-gi-key="{key}" '
                      f'data-gi-val="{figs[key]}">{_fmt(figs[key], None, lang)}</span>'
                      f'<span class="gi-lab">{arl if ar else en}</span></div>')
-    link = ('<a href="https://data.techforpalestine.org" target="_blank" '
-            'rel="noopener">Palestine Datasets</a>')
-    src = (f'المصدر: وزارة الصحة في غزة — عبر {link}' if ar
-           else f'Source: Gaza Ministry of Health — via {link}')
     asof_html = ""
-    if as_of:
-        asof_txt = _fmt_date(as_of, lang)
+    if asof:
         asof_html = ((' · آخر تحديث ' if ar else ' · updated ')
-                     + f'<span class="gi-asof">{asof_txt}</span>')
-    return (f'<div class="gi-grid gi-moh">{"".join(cells)}</div>'
+                     + f'<span class="gi-asof" data-gi-asof="{asof_key}">'
+                     + f'{_fmt_date(asof, lang)}</span>')
+    return (f'<h3 class="gi-region">{region}</h3>'
+            f'<div class="gi-grid gi-moh{extra_cls}">{"".join(cells)}</div>'
             f'<p class="gi-src">{src}{asof_html}</p>')
 
 
@@ -231,26 +258,44 @@ def _gazaindex_rows(lang):
 
 
 def panel(lang):
-    """The Gaza by the Numbers section: MoH lead row + wider indicators.
-    Silent when no data layer is reachable."""
+    """The Palestine by the Numbers section: the Gaza MoH toll, the West Bank
+    toll and settler-attack count (UN OCHA), then the wider humanitarian
+    indicators. Silent when no data layer is reachable."""
     if os.environ.get("TOP_OFFLINE") == "1":
         return ""
-    moh_html = _moh_row(lang)
+    ar = lang == "ar"
+    gaza_figs, gaza_asof, wb_figs, wb_asof = live_figures()
+    gaza_html = _live_row(
+        lang, MOH_KEYS, gaza_figs,
+        "قطاع غزة" if ar else "Gaza",
+        (f'المصدر: وزارة الصحة في غزة — عبر {_PD_LINK}' if ar
+         else f'Source: Gaza Ministry of Health — via {_PD_LINK}'),
+        gaza_asof, "gaza")
+    wb_html = _live_row(
+        lang, WB_KEYS, wb_figs,
+        "الضفة الغربية" if ar else "West Bank",
+        (f'المصدر: مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية (أوتشا) — عبر {_PD_LINK}' if ar
+         else f'Source: UN OCHA — via {_PD_LINK}'),
+        wb_asof, "wb", extra_cls=" gi-wb")
     gi_cells, gi_srcs, gi_latest = _gazaindex_rows(lang)
-    if not moh_html and not gi_cells:
+    if not gaza_html and not wb_html and not gi_cells:
         return ""
     gi_html = ""
     if gi_cells:
-        note = ("المصادر: " if lang == "ar" else "Sources: ") + " · ".join(gi_srcs[:5])
-        via = ("عبر " if lang == "ar" else "via ")
+        head = ("مؤشرات إنسانية" if ar else "Humanitarian indicators") \
+            if (gaza_html or wb_html) else ""
+        head_html = f'<h3 class="gi-region">{head}</h3>' if head else ""
+        note = ("المصادر: " if ar else "Sources: ") + " · ".join(gi_srcs[:5])
+        via = ("عبر " if ar else "via ")
         asof = f' — {_fmt_date(gi_latest, lang)}' if gi_latest else ""
-        gi_html = (f'<div class="gi-grid">{"".join(gi_cells)}</div>'
+        gi_html = (f'{head_html}<div class="gi-grid">{"".join(gi_cells)}</div>'
                    f'<p class="gi-src">{note} {via}'
                    f'<a href="https://www.gazaindex.org" target="_blank" rel="noopener">'
                    f'GazaIndex</a>{asof}</p>')
-    title = "غزة بالأرقام" if lang == "ar" else "Gaza by the Numbers"
-    live = '<span class="gi-live" role="presentation"></span>' if moh_html else ""
+    title = "فلسطين بالأرقام" if ar else "Palestine by the Numbers"
+    live = ('<span class="gi-live" role="presentation"></span>'
+            if (gaza_html or wb_html) else "")
     return (f'<section class="gaza-index"><div class="wrap">'
             f'<div class="sec-head focus"><h2>{live}{title}</h2><span class="rule"></span></div>'
-            f'{moh_html}{gi_html}'
+            f'{gaza_html}{wb_html}{gi_html}'
             f'</div></section><script>{PANEL_JS}</script>')
