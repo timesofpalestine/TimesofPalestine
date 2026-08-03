@@ -2759,16 +2759,26 @@ def render_page(lang, items, built_at):
               or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
                       and within_hours(i, HERO_MAX_AGE_H), 1))
     hero = heroes[0] if heroes else None
+    # Eight items (2×4) under the hero: four left the column trailing dead
+    # space beside the taller Latest rail (owner decision 2026-08-03).
     hero_subs = take(by_latest, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin")
-                     and not evergreen(i), 4)
+                     and not evergreen(i), 8)
     # Latest rail and breaking ticker: chronological, Palestine coverage first.
     # The rail is an index — it lists stories without claiming them from sections.
     def palestine(i):
         return bool(PALESTINE_RX.search(f"{i['title']} {i['dek']}"))
-    latest = [i for i in by_latest if id(i) not in used and i["cat"] != "social" and palestine(i)][:10]
+    # Rail length pairs with the 2×4 hero-sub grid so the two columns end
+    # together — neither side trails dead space (owner decision 2026-08-03).
+    latest = [i for i in by_latest if id(i) not in used and i["cat"] != "social" and palestine(i)][:8]
     rail_ids = {id(i) for i in latest}
     latest += [i for i in by_latest if id(i) not in used and i["cat"] != "social"
-               and id(i) not in rail_ids][:10 - len(latest)]
+               and id(i) not in rail_ids][:8 - len(latest)]
+    if len(latest) < 8:
+        # Small builds: the rail is an index, not an owner of stories — it
+        # may re-list what the hero tier already shows rather than run short.
+        rail_ids = {id(i) for i in latest}
+        latest += [i for i in by_latest if i["cat"] != "social"
+                   and id(i) not in rail_ids][:8 - len(latest)]
     pal_news = [i for i in by_latest if i["cat"] != "social" and palestine(i)]
     ticker_items = (pal_news or [i for i in by_latest if i["cat"] != "social"])[:6]
 
