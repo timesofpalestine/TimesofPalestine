@@ -61,6 +61,15 @@ jobs:
         if: always()
         run: python validate_build.py dist --summary >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/configure-pages@v5
+        with:
+          # Self-heal (restored by owner order 2026-08-03): a visibility flip
+          # erases the Pages configuration and deploys then die here. With
+          # enablement the workflow re-creates the Pages site itself when the
+          # site exists but lost its config; a fully DELETED Pages site still
+          # needs one owner click (Settings → Pages → Source: GitHub Actions),
+          # as the 2026-08-03 outage proved. Custom domain is a Pages setting
+          # and may need re-entry after a flip.
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
