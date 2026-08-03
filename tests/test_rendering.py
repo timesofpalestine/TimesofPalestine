@@ -135,10 +135,12 @@ class RenderingTests(unittest.TestCase):
         self.assertIn('<div class="tablewrap"><table class="lf">', rendered)
         self.assertIn(".story .tablewrap{overflow-x:auto", longform.CSS)
 
-    def test_tablet_navigation_uses_one_scrollable_row(self):
+    def test_navigation_uses_one_scrollable_row_at_every_width(self):
+        # The section nav is a single horizontally scrollable row of text
+        # tabs at all viewport widths — never wrapped, never clipped.
         self.assertIn(
-            "@media(max-width:960px){nav.sections .wrap{"
-            "flex-wrap:nowrap;overflow-x:auto",
+            "nav.sections .wrap{display:flex;flex-wrap:nowrap;"
+            "gap:.15rem;padding-block:.15rem;overflow-x:auto",
             build.CSS,
         )
 
