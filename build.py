@@ -2214,6 +2214,9 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .browse a{border:1px solid var(--line-dark);border-radius:2rem;padding:.35rem .85rem;font-size:.82rem;font-weight:700;color:var(--ink);transition:color var(--tr),border-color var(--tr)}
 .browse a:hover{border-color:var(--red);color:var(--red)}
 .sectionpage .morehead{margin-top:2.4rem}
+.listenbtn{display:inline-flex;align-items:center;gap:.4rem;margin-block:.5rem .2rem;border:1px solid var(--line-dark);border-radius:2rem;background:transparent;color:var(--ink);font:700 .82rem/1 var(--sans);padding:.45rem 1rem;cursor:pointer;transition:color var(--tr),border-color var(--tr)}
+.listenbtn:hover{border-color:var(--red);color:var(--red)}
+[lang=ar] .listenbtn{font-size:.9rem}
 .searchbox{width:100%;font-size:1.05rem;padding:.7rem .9rem;border:2px solid var(--line-dark);border-radius:8px;background:var(--card);color:var(--ink)}
 .searchres{list-style:none;margin-top:1.2rem}
 .searchres li{padding:.8rem 0;border-bottom:1px solid var(--line)}
@@ -2979,10 +2982,64 @@ def render_page(lang, items, built_at):
 <script>(()=>{{const initial={json.dumps(utc_iso(built_at))};let timer;async function check(){{if(document.hidden||!navigator.onLine)return;try{{const r=await fetch("/data.json",{{cache:"no-store"}});if(r.ok&&((await r.json()).builtAt)!==initial)location.reload();}}catch(_error){{}}}}document.addEventListener("visibilitychange",()=>{{if(!document.hidden)check();}});timer=setInterval(check,900000);}})();</script>
 </body>
 </html>"""
+_LISTEN_JS = """
+(function(){var b=document.getElementById("listen");if(!b)return;
+if(!("speechSynthesis"in window)||!window.SpeechSynthesisUtterance)return;
+b.hidden=false;var S=speechSynthesis,L=document.documentElement.lang||"en";
+var parts=[],idx=0,state="idle",voice=null;
+function pick(){var vs=S.getVoices();if(!vs.length)return;
+  voice=vs.find(function(v){return v.lang&&v.lang.slice(0,2)===L&&v.localService})
+    ||vs.find(function(v){return v.lang&&v.lang.slice(0,2)===L})||null;}
+pick();if(S.onvoiceschanged!==undefined)S.addEventListener("voiceschanged",pick);
+function collect(){var out=[];var h=document.querySelector(".story h1");
+  if(h)out.push(h.textContent.trim());
+  var ps=document.querySelectorAll(".story p.summary, .story .summary p, .story .summary h2, .story .summary li");
+  ps.forEach(function(p){var x=p.textContent.trim();if(x)out.push(x)});
+  var chunks=[];function push(s){
+    while(s.length>220){var cut=s.lastIndexOf(" ",220);if(cut<80)cut=220;
+      chunks.push(s.slice(0,cut));s=s.slice(cut)}
+    if(s.trim())chunks.push(s)}
+  out.forEach(function(txt){
+    var bits=txt.split(/([.!?\\u061F\\u06D4]+["\\u00BB\\u201D']?\\s+)/),acc="";
+    for(var i=0;i<bits.length;i+=2){
+      var s=(bits[i]||"")+(bits[i+1]||"");if(!s.trim())continue;
+      if(acc&&(acc+s).length>220){push(acc);acc=s}else acc+=s}
+    push(acc)});
+  return chunks}
+function label(k){b.textContent=b.dataset[k]}
+function reset(){state="idle";idx=0;label("play")}
+function next(){if(idx>=parts.length){reset();return}
+  var u=new SpeechSynthesisUtterance(parts[idx++]);
+  u.lang=L;if(voice)u.voice=voice;u.rate=1;
+  u.onend=function(){if(state==="speaking")next()};
+  u.onerror=function(){if(state==="speaking")next()};
+  S.speak(u)}
+b.addEventListener("click",function(){
+  if(state==="idle"){parts=collect();if(!parts.length)return;
+    S.cancel();state="speaking";label("pause");next()}
+  else if(state==="speaking"){S.pause();state="paused";label("resume")}
+  else{S.resume();state="speaking";label("pause")}});
+window.addEventListener("pagehide",function(){S.cancel()});
+})();
+"""
+
+
 def render_story(it, lang, related, rail, built_at):
     """Internal story page: brief, breaking ticker, Keep Reading grid, Latest rail.
     Every page links onward to many others — readers always circulate."""
     t = STR[lang]
+    # Listen button (owner directive 2026-08-03, Economist/WaPo pattern):
+    # reads the story aloud with the device's own voices via the Web Speech
+    # API — no third-party audio service, nothing leaves the reader's device,
+    # works in both languages. Hidden until JS confirms support.
+    _l_play = "استمع 🎧" if lang == "ar" else "🎧 Listen"
+    _l_pause = "إيقاف مؤقت ⏸" if lang == "ar" else "⏸ Pause"
+    _l_resume = "متابعة ▶" if lang == "ar" else "▶ Resume"
+    listen_btn = (f'<button id="listen" class="listenbtn" hidden '
+                  f'data-play="{esc(_l_play)}" data-pause="{esc(_l_pause)}" '
+                  f'data-resume="{esc(_l_resume)}" '
+                  f'aria-label="{"استمع إلى هذا التقرير" if lang == "ar" else "Listen to this story"}">'
+                  f'{esc(_l_play)}</button>')
     lede = (
         f'<img class="lede" src="{esc(it["image"])}" alt="{esc(it["title"])}"{lede_fallback_attrs(it)}>'
         f'{media_credit(it, lang)}'
@@ -3165,6 +3222,7 @@ def render_story(it, lang, related, rail, built_at):
     <h1>{esc(it['title'])}</h1>
     {meta_line(it, lang)}
     {story_stamp}
+    {listen_btn}
     {review_note}
     {lede}
     {summary}
@@ -3187,6 +3245,7 @@ def render_story(it, lang, related, rail, built_at):
     <a href="../">{t['back_home']}</a>
   </div>
 </div></footer>
+<script>{_LISTEN_JS}</script>
 </body>
 </html>"""
 def render_rss(lang, items, built_at):
