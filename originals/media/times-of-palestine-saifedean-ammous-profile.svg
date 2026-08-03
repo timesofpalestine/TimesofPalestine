@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Saifedean Ammous and The Bitcoin Standard</title>
+  <desc id="desc">A bilingual Times of Palestine editorial illustration showing a book, a fixed monetary curve and routes from Nablus into a global Bitcoin debate.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".35"/></filter>
+    <style>.sans{font-family:"Libre Franklin",Arial,sans-serif}.serif{font-family:"Source Serif 4",Georgia,serif}.arabic{font-family:Cairo,Tahoma,Arial,sans-serif}.ivory{fill:#f2eee8}.gold{fill:#c7a86b}.muted{fill:#aaa9a5}</style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="22" height="900" fill="#8a1f2d"/><rect x="22" width="8" height="900" fill="#286344"/>
+  <circle cx="1280" cy="220" r="270" fill="#286344" opacity=".12"/><circle cx="1320" cy="185" r="170" fill="#8a1f2d" opacity=".12"/>
+
+  <g transform="translate(125 170)" filter="url(#shadow)">
+    <path d="M70 0h470c38 0 70 32 70 70v500c0 38-32 70-70 70H70c-38 0-70-32-70-70V70C0 32 32 0 70 0Z" fill="#17181b" stroke="#c7a86b" stroke-width="4"/>
+    <rect x="0" y="0" width="42" height="640" rx="18" fill="#8a1f2d"/>
+    <text x="88" y="120" class="sans gold" font-size="26" font-weight="800" letter-spacing="4">A PALESTINIAN ECONOMIST</text>
+    <text x="88" y="205" class="serif ivory" font-size="69" font-weight="800">The Bitcoin</text>
+    <text x="88" y="285" class="serif ivory" font-size="69" font-weight="800">Standard</text>
+    <line x1="88" y1="325" x2="505" y2="325" stroke="#c7a86b" stroke-width="4"/>
+    <text x="88" y="390" class="arabic gold" font-size="45" font-weight="700">معيار البيتكوين</text>
+    <text x="88" y="462" class="sans muted" font-size="28">Saifedean Ammous • 2018</text>
+    <g transform="translate(90 520)"><circle r="38" fill="none" stroke="#c7a86b" stroke-width="5"/><path d="M-9 -19v38M9 -19v38M-18 -10h25c14 0 14 20 0 20h-25M-18 -25h24M-18 25h24" stroke="#c7a86b" stroke-width="5" fill="none"/></g>
+  </g>
+
+  <g transform="translate(835 190)">
+    <text x="0" y="0" class="serif ivory" font-size="58" font-weight="800">From Nablus to a global</text>
+    <text x="0" y="68" class="serif ivory" font-size="58" font-weight="800">argument about money</text>
+    <text x="660" y="132" text-anchor="end" direction="rtl" class="arabic gold" font-size="42" font-weight="700">من نابلس إلى نقاش عالمي حول المال</text>
+    <path d="M10 218 C150 130 260 330 400 240 S620 290 690 185" fill="none" stroke="#c7a86b" stroke-width="5" stroke-dasharray="12 12"/>
+    <g fill="#f2eee8" stroke="#286344" stroke-width="8"><circle cx="10" cy="218" r="17"/><circle cx="225" cy="257" r="17"/><circle cx="444" cy="225" r="17"/><circle cx="690" cy="185" r="17"/></g>
+    <g class="sans muted" font-size="22"><text x="0" y="280">NABLUS</text><text x="180" y="325">BEIRUT</text><text x="408" y="292">NEW YORK</text><text x="606" y="246">39 LANGUAGES*</text></g>
+    <g transform="translate(0 390)">
+      <rect width="690" height="152" rx="3" fill="#222328" stroke="#3d4f6b" stroke-width="2"/>
+      <text x="34" y="54" class="sans gold" font-size="24" font-weight="800">SCARCITY • TIME • POLITICAL CONTROL</text>
+      <text x="650" y="102" text-anchor="end" direction="rtl" class="arabic ivory" font-size="31">الندرة • الزمن • السلطة السياسية</text>
+    </g>
+  </g>
+
+  <text x="70" y="856" class="sans muted" font-size="19">Editorial illustration: Times of Palestine • *Translation count reported by the author</text>
+  <text x="1530" y="856" text-anchor="end" direction="rtl" class="arabic muted" font-size="19">رسم تحريري: تايمز أوف فلسطين</text>
+</svg>
