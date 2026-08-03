@@ -2174,6 +2174,13 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .sectionpage{padding-block:1.6rem}
 .searchpage{padding-block:1.6rem;max-width:760px}
 .searchpage h1{font-family:var(--serif);font-weight:900;font-size:1.6rem;margin-bottom:1rem}
+.browse{margin-top:1.4rem}
+.browse .bl{display:block;font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem}
+[lang=ar] .browse .bl{letter-spacing:0;font-size:.8rem;text-transform:none}
+.browse nav{display:flex;flex-wrap:wrap;gap:.5rem}
+.browse a{border:1px solid var(--line-dark);border-radius:2rem;padding:.35rem .85rem;font-size:.82rem;font-weight:700;color:var(--ink);transition:color var(--tr),border-color var(--tr)}
+.browse a:hover{border-color:var(--red);color:var(--red)}
+.sectionpage .morehead{margin-top:2.4rem}
 .searchbox{width:100%;font-size:1.05rem;padding:.7rem .9rem;border:2px solid var(--line-dark);border-radius:8px;background:var(--card);color:var(--ink)}
 .searchres{list-style:none;margin-top:1.2rem}
 .searchres li{padding:.8rem 0;border-bottom:1px solid var(--line)}
@@ -2305,7 +2312,7 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .story h2.sub[id]{scroll-margin-top:84px;position:relative}
 .story h2.sub .anchor{margin-inline-start:.45rem;color:var(--muted);font-size:.8rem;opacity:0;transition:opacity var(--tr)}
 .story h2.sub:hover .anchor,.story h2.sub:focus-within .anchor{opacity:1}
-.story .summary{margin-top:1.1rem;font-family:var(--serif);font-size:1.14rem;line-height:1.82;color:#26262e}
+.story .summary{margin-top:1.1rem;font-family:var(--serif);font-size:1.14rem;line-height:1.82;color:#26262e;max-width:42.5rem}
 .story .summary+.summary{margin-top:.95rem}
 [lang=ar] .story .summary{line-height:2.05}
 .story .summary a{text-decoration:underline;text-underline-offset:2px}
@@ -3172,9 +3179,11 @@ def reading_time_label(text, lang):
     return f"{minutes} min read"
 
 
-def render_section_page(lang, cat, items, built_at):
+def render_section_page(lang, cat, items, built_at, more_items=()):
     """Real category archive page: every live story in the section, own URL,
-    own meta description — the SEO landing page the one-page front can't be."""
+    own meta description — the SEO landing page the one-page front can't be.
+    `more_items` (newest stories from other sections) keeps thin sections
+    from dead-ending — every page offers a way deeper into the paper."""
     t = STR[lang]
     name = t["sections"].get(cat, cat)
     desc = (f"كل تغطية «{name}» في تايمز أوف فلسطين — أخبار فلسطينية مستقلة تُحدَّث باستمرار."
@@ -3186,6 +3195,13 @@ def render_section_page(lang, cat, items, built_at):
     else:
         count_label = f"{n} story" if n == 1 else f"{n} stories"
     cards = "".join(card(it, lang, "story/") for it in items)
+    more_html = ""
+    if more_items:
+        more_label = "المزيد من تايمز أوف فلسطين" if lang == "ar" else "More from Times of Palestine"
+        more_cards = "".join(card(it, lang, "story/") for it in more_items)
+        more_html = (f'<div class="sec-head focus morehead"><h2>{more_label}</h2>'
+                     f'<span class="rule"></span></div>'
+                     f'<div class="grid g4">{more_cards}</div>')
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
 <head>
@@ -3204,6 +3220,7 @@ def render_section_page(lang, cat, items, built_at):
 <main class="wrap sectionpage">
   <div class="sec-head focus"><h2>{esc(name)}</h2><span class="rule"></span><span class="count">{count_label}</span></div>
   <div class="grid g4">{cards}</div>
+  {more_html}
 </main>
 <footer><div class="wrap"><div class="flagline"></div>
   <div class="legal"><span>© {built_at.year} {t['site_name']}</span> <a href="./">{t['back_home']}</a> <a href="about.html">{'من نحن' if lang == 'ar' else 'About'}</a></div>
@@ -3231,10 +3248,19 @@ q.addEventListener("input",go);})();
 """
 
 
-def render_search_page(lang, built_at):
+def render_search_page(lang, built_at, cats=()):
     """Client-side archive search: fetches the build's index, filters locally.
-    No third-party code; results built with textContent, never innerHTML."""
+    No third-party code; results built with textContent, never innerHTML.
+    `cats` renders browse chips so the empty page still leads somewhere."""
     t = STR[lang]
+    browse = ""
+    if cats:
+        bl = "تصفح الأقسام" if lang == "ar" else "Or browse the sections"
+        chips = "".join(
+            f'<a href="section-{c}.html">{esc(t["sections"].get(c, c))}</a>'
+            for c in cats if c in t["sections"])
+        browse = (f'<div class="browse"><span class="bl">{bl}</span>'
+                  f'<nav>{chips}</nav></div>')
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
 <head>
@@ -3255,6 +3281,7 @@ def render_search_page(lang, built_at):
   <h1>{t['search_title']}</h1>
   <input id="q" class="searchbox" type="search" placeholder="{esc(t['search_prompt'])}" data-none="{esc(t['search_none'])}" autofocus autocomplete="off">
   <ol id="res" class="searchres"></ol>
+  {browse}
 </main>
 <script>{_SEARCH_JS}</script>
 </body></html>"""
@@ -3354,10 +3381,14 @@ def main():
         for cat in sorted({it["cat"] for it in items}):
             cat_items = sorted((i2 for i2 in items if i2["cat"] == cat),
                                key=lambda r: r["date"], reverse=True)
+            more_items = sorted((i2 for i2 in items if i2["cat"] != cat),
+                                key=lambda r: r["date"], reverse=True)[:8]
             (dist / lang / f"section-{cat}.html").write_text(
-                render_section_page(lang, cat, cat_items, built_at), encoding="utf-8")
+                render_section_page(lang, cat, cat_items, built_at,
+                                    more_items=more_items), encoding="utf-8")
         (dist / lang / "search.html").write_text(
-            render_search_page(lang, built_at), encoding="utf-8")
+            render_search_page(lang, built_at,
+                               cats=sorted({it["cat"] for it in items})), encoding="utf-8")
         (dist / lang / "search-index.json").write_text(json.dumps(
             [{"t": it["title"], "u": f"/{lang}/story/{it['pid']}.html",
               "d": truncate(it["dek"], 160),
