@@ -224,8 +224,10 @@ def summary_text(text):
 PALESTINE_RX = re.compile(
     r"palestin|gaza|west bank|jerusalem|bethlehem|ramallah|rafah|khan younis|jenin|nablus|hebron|"
     r"tulkarem|unrwa|al-aqsa|aqsa|intifada|nakba|settler|"
+    r"netanyahu|\bicc\b|\bicj\b|\bhague\b|"
     r"فلسطين|الفلسطيني|غزة|غزّة|الضفة|القدس(?! العربي)|رام الله|رفح|خان يونس|جنين|نابلس|الخليل|"
-    r"طولكرم|أونروا|الأونروا|الأقصى|الاحتلال|مستوطن|النكبة", re.I)
+    r"طولكرم|أونروا|الأونروا|الأقصى|الاحتلال|مستوطن|النكبة|"
+    r"نتنياهو|الجنائية الدولية|محكمة العدل الدولية|لاهاي", re.I)
 
 # ---- editorial focus topics: these get ranking boosts and dedicated sections ----
 
@@ -1692,6 +1694,10 @@ def load_originals(lang):
             "categories": [], "lang": lang, "original": True, "partner": False,
             "brief": body, "cat": meta.get("category", "news"),
             "max_age_hours": hours_kept,
+            # standing: yes → reference page (guide, directory, section
+            # charter): stays published but never takes the hero tier.
+            "standing": str(meta.get("standing", "")).strip().lower()
+                        in ("yes", "true", "1"),
         }
         item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]
         attach_media(item, meta.get("image") or None, local_original=True)
@@ -2911,9 +2917,13 @@ def render_page(lang, items, built_at):
 
     def evergreen(i):
         """Standing reference pages — the scholarship map, a section's launch
-        charter — declare a very long shelf life. They are not the news cycle
-        and must never squat the top slot (owner directive: the page is alive)."""
-        return i.get("max_age_hours", MAX_AGE_HOURS) > 720
+        charter, directories — are not the news cycle and must never squat
+        the top slot. They declare it EXPLICITLY with a `standing: yes`
+        header. (A long maxAgeHours alone is NOT the signal: ordinary
+        reports keep long shelf lives just to stay in the archive, and the
+        earlier shelf-life heuristic wrongly locked the daily desk's fresh
+        reporting out of the hero — owner report 2026-08-03.)"""
+        return bool(i.get("standing"))
 
     def hero_ok(i, max_age=HERO_MAX_AGE_H):
         return (bool(i["image"]) and len(i["title"]) > 30
