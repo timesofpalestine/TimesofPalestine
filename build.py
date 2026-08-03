@@ -1820,6 +1820,12 @@ def validate_original(path, meta, body, lang, now, date):
             print(f"  ⚠ original parity {slug}: {prev['lang']} vs {lang} mismatch in {', '.join(parity)}")
     ORIGINAL_BODY_STATS[slug] = {"lang": lang, **stats}
     print(f"  → render checks {path.name}: subheads {stats['subheads']} / figures {stats['figures']} / tables {stats['tables']} / lists {stats['lists']}")
+    # Machine-diction watch (owner order 2026-08-03): originals publish anyway
+    # (gating defaults to publish) but the tell is logged loudly so the daily
+    # editor cycle rewrites it — same nets the briefs desk is held to.
+    diction = language_quality_issues(f"{meta.get('title', '')}\n{body}", lang)
+    if diction:
+        print(f"  ⚠ original diction {path.name}: {'; '.join(diction[:2])}")
 
     if errors:
         raise PublishingError(f"{path.name}: {'; '.join(errors)}")

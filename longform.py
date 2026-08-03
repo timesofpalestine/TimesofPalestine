@@ -238,9 +238,34 @@ def body_html(text, media_prefix="/media/"):
                        + "</blockquote>")
             continue
 
-        out.append(f'<p class="summary">{_inline(line)}</p>')
+        for chunk in _flow(line):
+            out.append(f'<p class="summary">{_inline(chunk)}</p>')
         i += 1
     return "".join(out)
+
+
+# Pacing rule (owner order 2026-08-03): no wall-of-text paragraphs anywhere —
+# originals included. A plain prose paragraph past MAX_PARA_WORDS splits at
+# sentence boundaries into ~55-word chunks at render time. Headings, quotes,
+# lists, tables and captions are untouched.
+MAX_PARA_WORDS = 70
+_SENT_RX = re.compile(r"(?<=[.!?؟…»])\s+")
+
+
+def _flow(line):
+    if len(line.split()) <= MAX_PARA_WORDS:
+        return [line]
+    chunks, cur, count = [], [], 0
+    for sent in _SENT_RX.split(line):
+        w = len(sent.split())
+        if cur and count + w > 55:
+            chunks.append(" ".join(cur))
+            cur, count = [], 0
+        cur.append(sent)
+        count += w
+    if cur:
+        chunks.append(" ".join(cur))
+    return chunks
 
 
 def rendered_residue_warnings(rendered):

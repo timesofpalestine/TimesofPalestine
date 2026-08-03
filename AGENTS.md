@@ -325,6 +325,11 @@ it to Telegram. No human machine involved. The contract:
    links, `> ` pull quotes / data callouts (consecutive `> ` lines form one
    quote; a second line renders as the smaller attribution — use for a
    survivor's words or a key statistic, sparingly, 1–2 per story),
+   **Pacing (owner order 2026-08-03): paragraphs are 1–3 sentences, never
+   past ~70 words — the renderer splits longer prose at sentence boundaries
+   on every surface, originals included — and machine diction (the briefs
+   desk's banned lists, «أسلم» for «سلّم», «قام بـ», «تم»+مصدر, "delve",
+   "underscores"…) is flagged loudly at build for the daily editor.**
    `![caption](file.svg)` images (file must exist in
    `originals/media/`). Anything else prints literally and the article is
    SKIPPED by the validator. No footnotes, no sources sections — attribution
