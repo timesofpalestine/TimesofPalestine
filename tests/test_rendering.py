@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import sys
 import tempfile
 import unittest
@@ -1184,3 +1185,19 @@ class PacingTests(unittest.TestCase):
                                   datetime(2026, 8, 3, tzinfo=timezone.utc))
         body = html.split('class="kind"', 1)[1]
         self.assertGreaterEqual(body.count('<p class="summary">'), 2)
+
+    def test_longform_splits_wall_paragraphs_in_originals_too(self):
+        # Owner order 2026-08-03: no wall paragraphs anywhere — originals
+        # included. Prose blocks split at render; structure blocks untouched.
+        wall = (self.LONG_SENT * 8).strip()
+        html = longform.body_html(f"## A subhead\n\n{wall}\n\n> A quoted line.")
+        self.assertGreaterEqual(html.count('<p class="summary">'), 2)
+        self.assertEqual(html.count('<h2 class="sub">'), 1)
+        self.assertEqual(html.count('<blockquote class="pull">'), 1)
+        text_only = re.sub(r"<[^>]+>", " ", html)
+        self.assertEqual(text_only.split()[2:2 + len(wall.split())][:5],
+                         wall.split()[:5])   # words preserved, only breaks added
+
+    def test_longform_leaves_short_paragraphs_alone(self):
+        html = longform.body_html("A short paragraph that stays whole.")
+        self.assertEqual(html.count('<p class="summary">'), 1)
