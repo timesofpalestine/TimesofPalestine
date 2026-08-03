@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">1.1 million Gaza children need mental health support; about 30,000 are reached each month</title>
+<desc id="dsc">A grid of 1,100 dots, each representing 1,000 children, stands for the 1.1 million children in Gaza that UNICEF says need mental health and psychosocial support. Thirty of the dots are highlighted in gold, representing the more than 30,000 children a month UNICEF says its play-based and recovery services reach. Side panel: 70 to 90 per cent of children meet criteria for PTSD or show significant depression and anxiety symptoms according to a review of 2024 and 2025 studies in Current Psychiatry Reports; 88 safe spaces still operating out of 222 after 134 closed or were disrupted, per the Gaza Community Mental Health Programme; and just over 10 per cent of the 4 billion dollar appeal funded four months in, per OCHA.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<pattern id="dots" patternUnits="userSpaceOnUse" x="100" y="250" width="22" height="22">
+<circle cx="11" cy="11" r="4.5" fill="#4a4b50"/>
+</pattern>
+<style>
+.en{font-family:"Libre Franklin",Arial,Helvetica,sans-serif}
+.ar{font-family:Cairo,"Noto Naskh Arabic",Arial,sans-serif}
+.dp{font-family:"Source Serif 4",Georgia,serif}
+.ivory{fill:#f2eee8}.mut{fill:#aaa9a5}.gold{fill:#c7a86b}
+</style>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text class="en gold" x="100" y="62" font-size="15" letter-spacing="4.5">GAZA · MENTAL HEALTH · THE GAP</text>
+<text class="dp ivory" x="100" y="112" font-size="40">1.1 million children need support.</text>
+<text class="dp" x="100" y="160" font-size="40" fill="#c7a86b">About 30,000 are reached each month.</text>
+
+<text class="ar ivory" x="1520" y="118" font-size="23" text-anchor="end" direction="rtl">1.1 مليون طفل في غزة بحاجة إلى دعم نفسي واجتماعي</text>
+<text class="ar mut" x="1520" y="152" font-size="20" text-anchor="end" direction="rtl">والخدمات تصل إلى نحو 30,000 طفل فقط شهرياً</text>
+
+<line x1="100" y1="192" x2="1520" y2="192" stroke="#3a3b40" stroke-width="1"/>
+
+<text class="en gold" x="100" y="226" font-size="16" font-weight="600">30,000+ reached each month — UNICEF play-based and recovery services</text>
+<path d="M100 244 L100 236 L430 236 L430 244" fill="none" stroke="#c7a86b" stroke-width="1.6"/>
+
+<rect x="100" y="250" width="968" height="550" fill="url(#dots)"/>
+
+<g fill="#c7a86b">
+<circle cx="111" cy="261" r="4.5"/><circle cx="133" cy="261" r="4.5"/><circle cx="155" cy="261" r="4.5"/><circle cx="177" cy="261" r="4.5"/><circle cx="199" cy="261" r="4.5"/><circle cx="221" cy="261" r="4.5"/><circle cx="243" cy="261" r="4.5"/><circle cx="265" cy="261" r="4.5"/><circle cx="287" cy="261" r="4.5"/><circle cx="309" cy="261" r="4.5"/><circle cx="331" cy="261" r="4.5"/><circle cx="353" cy="261" r="4.5"/><circle cx="375" cy="261" r="4.5"/><circle cx="397" cy="261" r="4.5"/><circle cx="419" cy="261" r="4.5"/>
+<circle cx="111" cy="283" r="4.5"/><circle cx="133" cy="283" r="4.5"/><circle cx="155" cy="283" r="4.5"/><circle cx="177" cy="283" r="4.5"/><circle cx="199" cy="283" r="4.5"/><circle cx="221" cy="283" r="4.5"/><circle cx="243" cy="283" r="4.5"/><circle cx="265" cy="283" r="4.5"/><circle cx="287" cy="283" r="4.5"/><circle cx="309" cy="283" r="4.5"/><circle cx="331" cy="283" r="4.5"/><circle cx="353" cy="283" r="4.5"/><circle cx="375" cy="283" r="4.5"/><circle cx="397" cy="283" r="4.5"/><circle cx="419" cy="283" r="4.5"/>
+</g>
+
+<text class="en ivory" x="100" y="828" font-size="17">Every child in Gaza now needs some form of mental health and psychosocial support — UNICEF</text>
+<text class="en mut" x="100" y="854" font-size="14">Each dot = 1,000 children · 1,100 dots</text>
+<text class="ar mut" x="470" y="855" font-size="15" direction="rtl">كل نقطة = 1,000 طفل</text>
+
+<line x1="1105" y1="250" x2="1105" y2="800" stroke="#3a3b40" stroke-width="1"/>
+
+<g>
+<rect x="1130" y="250" width="4" height="150" fill="#8a1f2d"/>
+<text class="dp gold" x="1156" y="292" font-size="42">70–90%</text>
+<text class="en ivory" x="1156" y="322" font-size="15">of children in Gaza meet criteria for PTSD</text>
+<text class="en ivory" x="1156" y="344" font-size="15">or show significant symptoms of</text>
+<text class="en ivory" x="1156" y="366" font-size="15">depression and anxiety</text>
+<text class="en mut" x="1156" y="392" font-size="13">Review of 2024–25 studies, Current Psychiatry Reports</text>
+</g>
+
+<g>
+<rect x="1130" y="430" width="4" height="150" fill="#286344"/>
+<text class="dp gold" x="1156" y="472" font-size="42">88</text>
+<text class="en ivory" x="1156" y="502" font-size="15">safe spaces still operating, and severely</text>
+<text class="en ivory" x="1156" y="524" font-size="15">overcrowded, after 134 closed or were</text>
+<text class="en ivory" x="1156" y="546" font-size="15">disrupted since March 2025</text>
+<text class="en mut" x="1156" y="572" font-size="13">Gaza Community Mental Health Programme, October</text>
+</g>
+
+<g>
+<rect x="1130" y="610" width="4" height="150" fill="#8a1f2d"/>
+<text class="dp gold" x="1156" y="652" font-size="42">10%</text>
+<text class="en ivory" x="1156" y="682" font-size="15">just over a tenth of the $4 billion appeal</text>
+<text class="en ivory" x="1156" y="704" font-size="15">for 3.6 million people had been secured</text>
+<text class="en ivory" x="1156" y="726" font-size="15">four months into the year</text>
+<text class="en mut" x="1156" y="752" font-size="13">OCHA, early May</text>
+</g>
+
+<line x1="100" y1="872" x2="1520" y2="872" stroke="#3a3b40" stroke-width="1"/>
+<text class="en mut" x="100" y="893" font-size="13">Sources: UNICEF; WHO 2026 health emergency appeal; OCHA; GCMHP; Current Psychiatry Reports</text>
+<text class="en gold" x="1520" y="893" font-size="13" text-anchor="end" letter-spacing="2">TIMES OF PALESTINE</text>
+</svg>
