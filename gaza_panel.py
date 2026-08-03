@@ -25,7 +25,7 @@ GAZA_INDEX_KEYS = [
 
 # Styles travel with the panel. The figures declare no colour of their own so
 # they inherit the page ink and stay readable in both the light and dark themes.
-PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.2rem}.gi-cell{border-inline-start:3px solid var(--red);padding-inline-start:.8rem}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1}[lang=ar] .gi-num{font-weight:700}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-src{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}@media(max-width:960px){.gi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}"
+PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.2rem}.gi-cell{border-inline-start:3px solid var(--red);padding-inline-start:.8rem}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1}[lang=ar] .gi-num{font-weight:700}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}@media(max-width:960px){.gi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}"
 
 _gaza_cache = {}
 
@@ -59,8 +59,14 @@ def panel(lang):
         row = rows.get(key)
         if not row or row.get("value_numeric") is None:
             continue
+        pct_bar = ""
+        if row.get("unit_code") == "percent":
+            pct = max(0, min(100, float(row["value_numeric"])))
+            pct_bar = (f'<span class="gi-bar" role="presentation">'
+                       f'<span style="inline-size:{pct:g}%"></span></span>')
         cells.append(f'<div class="gi-cell"><span class="gi-num">'
                      f'{_fmt(row["value_numeric"], row.get("unit_code"), lang)}</span>'
+                     f'{pct_bar}'
                      f'<span class="gi-lab">{ar if lang == "ar" else en}</span></div>')
         if row.get("provider_label"):
             providers.append(row["provider_label"])
