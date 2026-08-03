@@ -97,6 +97,13 @@ you have not finished the change.
   pages append a "More from Times of Palestine" band (newest 8 stories from
   other sections); the search page renders section-browse chips
   (`.browse`). A new page type must offer an equivalent way onward.
+- **No dead space**: a failed image must never leave a void. Remote images
+  are verified at build time (`remote_image_ok`), swapped to the category
+  cover on error AND when a hotlink wall serves a tiny placeholder that
+  "loads" (`naturalWidth<200` guard in `lede_fallback_attrs`), and the
+  hero's base is dark (`#141419`) so its white overlay headline stays
+  readable even if every fallback fails. Any new large image surface must
+  carry the same three layers.
 - **Reading measure**: story body text (`.story .summary`) caps at 42.5rem
   (~75 characters per line); headlines and lede media keep the full column.
 - **CTAs**: gold, weight 700, arrow glyph — `→` in EN, `←` in AR. Never a
