@@ -1951,6 +1951,51 @@ STR = {
 
 # Focus sections sit high on the page; each edition leads with its editorial priority.
 # Research (think tanks / OSINT) comes first: news before it becomes news.
+# WATCH LIVE (owner directive 2026-08-03): a floating «مباشر» pill on the
+# Arabic edition opens a docked corner mini-player with Al Jazeera's live
+# broadcast — when major news breaks, the reader watches instantly, from any
+# page, while continuing to read. The iframe loads only on tap. Empty id
+# disables the pill for that edition. Al Jazeera English's stream
+# (gCNeDWCI0vo) can switch the EN edition on with one line.
+LIVE_TV = {
+    "en": {"id": "", "label": "Al Jazeera English — Live", "word": "LIVE"},
+    "ar": {"id": "bNyUyrR0PHo", "label": "الجزيرة — البث الحي", "word": "مباشر"},
+}
+
+_LIVE_JS = """
+(function(){var f=document.getElementById("livefab");if(!f)return;
+var ID=f.dataset.video,TITLE=f.dataset.title,dock=null;
+function close(){if(dock){dock.remove();dock=null}f.hidden=false}
+f.addEventListener("click",function(){f.hidden=true;
+ dock=document.createElement("div");dock.className="livedock";
+ var bar=document.createElement("div");bar.className="ld-bar";
+ var cap=document.createElement("span");cap.textContent=TITLE;
+ var x=document.createElement("button");x.className="ld-x";x.textContent="\\u2715";
+ x.setAttribute("aria-label",f.dataset.close);x.addEventListener("click",close);
+ bar.appendChild(cap);bar.appendChild(x);
+ var fr=document.createElement("div");fr.className="ld-frame";
+ var i=document.createElement("iframe");
+ i.src="https://www.youtube-nocookie.com/embed/"+ID+"?autoplay=1";
+ i.title=TITLE;i.setAttribute("allow","autoplay; encrypted-media; picture-in-picture; web-share");
+ i.setAttribute("allowfullscreen","");
+ fr.appendChild(i);dock.appendChild(bar);dock.appendChild(fr);
+ document.body.appendChild(dock)});
+})();
+"""
+
+
+def live_fab_html(lang):
+    """The floating live-TV pill + its script, or empty when disabled."""
+    tv = LIVE_TV.get(lang) or {}
+    if not tv.get("id"):
+        return ""
+    close_label = "إغلاق البث" if lang == "ar" else "Close the stream"
+    return (f'<button id="livefab" class="livefab" data-video="{esc(tv["id"])}" '
+            f'data-title="{esc(tv["label"])}" data-close="{esc(close_label)}" '
+            f'aria-label="{esc(tv["label"])}">'
+            f'<span class="dot"></span>{esc(tv["word"])}</button>'
+            f'<script>{_LIVE_JS}</script>')
+
 SECTION_ORDER = {
     "en": ["gaza", "westbank", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
@@ -2217,6 +2262,18 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .listenbtn{display:inline-flex;align-items:center;gap:.4rem;margin-block:.5rem .2rem;border:1px solid var(--line-dark);border-radius:2rem;background:transparent;color:var(--ink);font:700 .82rem/1 var(--sans);padding:.45rem 1rem;cursor:pointer;transition:color var(--tr),border-color var(--tr)}
 .listenbtn:hover{border-color:var(--red);color:var(--red)}
 [lang=ar] .listenbtn{font-size:.9rem}
+/* Floating live-TV pill and its docked corner mini-player */
+.livefab{position:fixed;bottom:1rem;inset-inline-start:1rem;z-index:70;display:inline-flex;align-items:center;gap:.45rem;background:var(--red);color:#fff;border:0;border-radius:2rem;font:800 .85rem/1 var(--sans);letter-spacing:.06em;padding:.62rem 1.15rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+[lang=ar] .livefab{letter-spacing:0;font-size:.95rem}
+.livefab .dot{width:9px;height:9px;border-radius:50%;background:#fff;animation:pulse 1.6s infinite}
+.livefab:hover{filter:brightness(1.12)}
+.livefab[hidden]{display:none}
+.livedock{position:fixed;bottom:1rem;inset-inline-start:1rem;z-index:70;width:min(420px,calc(100vw - 2rem));background:#0b0b0c;border-radius:6px;overflow:hidden;box-shadow:0 10px 34px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.14)}
+.livedock .ld-bar{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.5rem .75rem;color:#f2eee8;font:700 .78rem/1.2 var(--sans);background:#141419}
+.livedock .ld-x{background:none;border:0;color:#aaa9a5;font-size:1rem;cursor:pointer;padding:.1rem .35rem}
+.livedock .ld-x:hover{color:#fff}
+.livedock .ld-frame{aspect-ratio:16/9;background:#000}
+.livedock .ld-frame iframe{width:100%;height:100%;border:0;display:block}
 .searchbox{width:100%;font-size:1.05rem;padding:.7rem .9rem;border:2px solid var(--line-dark);border-radius:8px;background:var(--card);color:var(--ink)}
 .searchres{list-style:none;margin-top:1.2rem}
 .searchres li{padding:.8rem 0;border-bottom:1px solid var(--line)}
@@ -2980,6 +3037,7 @@ def render_page(lang, items, built_at):
   </div>
 </div></footer>
 <script>(()=>{{const initial={json.dumps(utc_iso(built_at))};let timer;async function check(){{if(document.hidden||!navigator.onLine)return;try{{const r=await fetch("/data.json",{{cache:"no-store"}});if(r.ok&&((await r.json()).builtAt)!==initial)location.reload();}}catch(_error){{}}}}document.addEventListener("visibilitychange",()=>{{if(!document.hidden)check();}});timer=setInterval(check,900000);}})();</script>
+{live_fab_html(lang)}
 </body>
 </html>"""
 _LISTEN_JS = """
@@ -3246,6 +3304,7 @@ def render_story(it, lang, related, rail, built_at):
   </div>
 </div></footer>
 <script>{_LISTEN_JS}</script>
+{live_fab_html(lang)}
 </body>
 </html>"""
 def render_rss(lang, items, built_at):

@@ -797,3 +797,22 @@ class ListenButtonTests(unittest.TestCase):
             self.assertIn(play, html)
             self.assertIn("speechSynthesis", html)
             self.assertIn('data-resume', html)
+
+
+class LiveTVTests(unittest.TestCase):
+    """The Arabic edition carries the floating live pill; editions with an
+    empty stream id render nothing."""
+
+    def test_arabic_pages_carry_live_pill_english_does_not(self):
+        built_at = datetime(2026, 8, 3, tzinfo=timezone.utc)
+        it = item()
+        it.update({"brief": "فقرة أولى.", "image": "/media/x.svg", "pid": "live000001", "lang": "ar"})
+        ar_front = build.render_page("ar", [it], built_at)
+        ar_story = build.render_story(it, "ar", [], [], built_at)
+        self.assertIn('id="livefab"', ar_front)
+        self.assertIn('id="livefab"', ar_story)
+        self.assertIn("bNyUyrR0PHo", ar_front)
+        self.assertIn("مباشر", ar_front)
+        it_en = item(); it_en.update({"image": "/media/x.svg", "pid": "live000002"})
+        en_front = build.render_page("en", [it_en], built_at)
+        self.assertNotIn('id="livefab"', en_front)
