@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Gaza's ceasefire, day 294, by the numbers</title>
+  <desc id="d">Figures from the Palestinian side's day-294 ceasefire report to mediators: 1,233 Palestinians killed including 266 children; 4,034 recorded violations at 13.7 per day; aid trucks at 35.2 percent of the agreed level; fuel at 15.1 percent; the Rafah crossing at 38.2 percent of scheduled passengers; and about 34 square kilometres held beyond the agreed withdrawal lines. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}.gold{fill:#c7a86b}.red{fill:#8a1f2d}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="70" y="78" class="sans ivory" font-size="42" font-weight="800">THE CEASEFIRE LEDGER — DAY 294</text>
+  <text x="1530" y="78" class="arabic ivory" font-size="38" font-weight="700" text-anchor="end">وقف النار في غزة.. سجلّ اليوم 294</text>
+  <text x="70" y="118" class="sans muted" font-size="23">The Palestinian side's report to the mediators, Saturday 1 August 2026 · تقرير الجانب الفلسطيني إلى الوسطاء</text>
+
+  <!-- headline numbers -->
+  <g text-anchor="middle">
+    <text x="330" y="240" class="mono" fill="#e05c6b" font-size="88" font-weight="700">1,233</text>
+    <text x="330" y="286" class="sans ivory" font-size="24" font-weight="700">Palestinians killed</text>
+    <text x="330" y="318" class="arabic muted" font-size="21">شهيداً منذ وقف النار · بينهم 266 طفلاً</text>
+
+    <text x="800" y="240" class="mono gold" font-size="88" font-weight="700">4,034</text>
+    <text x="800" y="286" class="sans ivory" font-size="24" font-weight="700">recorded violations</text>
+    <text x="800" y="318" class="arabic muted" font-size="21">خرقاً موثقاً · بمعدل 13.7 يومياً</text>
+
+    <text x="1270" y="240" class="mono" fill="#8fa8cf" font-size="88" font-weight="700">34</text>
+    <text x="1270" y="286" class="sans ivory" font-size="24" font-weight="700">km² held past agreed lines</text>
+    <text x="1270" y="318" class="arabic muted" font-size="21">كيلومتراً مربعاً خلف خطوط الانسحاب</text>
+  </g>
+
+  <rect x="70" y="356" width="1460" height="3" fill="#33342f"/>
+  <text x="70" y="410" class="sans gold" font-size="27" font-weight="800">WHAT THE AGREEMENT PROMISED vs WHAT ENTERED · المتفق عليه مقابل ما دخل فعلاً</text>
+
+  <!-- bars: agreed = full track 1100px wide -->
+  <g class="sans">
+    <text x="70" y="470" class="ivory" font-size="23" font-weight="700">Aid, commercial and fuel trucks</text>
+    <text x="1530" y="470" class="arabic muted" font-size="21" text-anchor="end">الشاحنات: 35.2% من المتفق عليه</text>
+    <rect x="70" y="484" width="1100" height="34" rx="6" fill="#33342f"/>
+    <rect x="70" y="484" width="387" height="34" rx="6" fill="#c7a86b"/>
+    <text x="479" y="510" class="mono ivory" font-size="24" font-weight="700">35.2%</text>
+    <text x="1192" y="510" class="muted sans" font-size="20">agreed 600/day · actual 211.6</text>
+
+    <text x="70" y="580" class="ivory" font-size="23" font-weight="700">Fuel trucks</text>
+    <text x="1530" y="580" class="arabic muted" font-size="21" text-anchor="end">الوقود: 15.1% فقط</text>
+    <rect x="70" y="594" width="1100" height="34" rx="6" fill="#33342f"/>
+    <rect x="70" y="594" width="166" height="34" rx="6" fill="#8a1f2d"/>
+    <text x="258" y="620" class="mono ivory" font-size="24" font-weight="700">15.1%</text>
+
+    <text x="70" y="690" class="ivory" font-size="23" font-weight="700">Rafah crossing — passengers moved</text>
+    <text x="1530" y="690" class="arabic muted" font-size="21" text-anchor="end">معبر رفح: 38.2% من المقرر لهم السفر</text>
+    <rect x="70" y="704" width="1100" height="34" rx="6" fill="#33342f"/>
+    <rect x="70" y="704" width="420" height="34" rx="6" fill="#286344"/>
+    <text x="512" y="730" class="mono ivory" font-size="24" font-weight="700">38.2%</text>
+    <text x="1192" y="730" class="muted sans" font-size="20">10,169 of 26,800 scheduled</text>
+  </g>
+
+  <text x="70" y="806" class="sans muted" font-size="21">Children, women and the elderly are 35.1% of the dead and 49.1% of the 4,076 wounded. Saturday: zero trucks, Rafah closed.</text>
+  <text x="1530" y="806" class="arabic muted" font-size="20" text-anchor="end">الأطفال والنساء والمسنون 35.1% من الشهداء و49.1% من الجرحى</text>
+
+  <text x="70" y="862" class="sans muted" font-size="19">Graphic: Times of Palestine · Source: the Palestinian side's day-294 report to mediators, obtained by Drop Site News</text>
+  <text x="1530" y="862" class="arabic muted" font-size="19" text-anchor="end">غرافيك: تايمز أوف فلسطين</text>
+</svg>
