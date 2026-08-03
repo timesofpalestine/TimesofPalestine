@@ -781,3 +781,19 @@ class CardImageDedupeTests(unittest.TestCase):
         self.assertEqual(b["image"], "https://cdn.example.com/b.jpg")
         self.assertEqual(c["image"], "/media/times-of-palestine-cover-gaza.svg")
         self.assertEqual(d["image"], "/media/times-of-palestine-cover-gaza.svg")
+
+
+class ListenButtonTests(unittest.TestCase):
+    """Every story page carries the listen button and its inline player."""
+
+    def test_story_page_includes_listen_button_and_player(self):
+        it = item()
+        it.update({"brief": "A first paragraph of the story.\n\nA second paragraph.",
+                   "image": "/media/x.svg", "pid": "listen0001"})
+        for lang, play in (("en", "Listen"), ("ar", "استمع")):
+            it2 = dict(it, lang=lang)
+            html = build.render_story(it2, lang, [], [], datetime(2026, 8, 3, tzinfo=timezone.utc))
+            self.assertIn('id="listen"', html)
+            self.assertIn(play, html)
+            self.assertIn("speechSynthesis", html)
+            self.assertIn('data-resume', html)

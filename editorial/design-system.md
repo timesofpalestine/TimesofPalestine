@@ -109,6 +109,13 @@ you have not finished the change.
 - **CTAs**: gold, weight 700, arrow glyph — `→` in EN, `←` in AR. Never a
   button-styled link inside a card; the specials band CTA (bordered pill) is
   the one standing exception.
+- **Listen button** (`.listenbtn`, story pages): house pill under the
+  timestamps that reads the story aloud via the Web Speech API — device
+  voices only, no third-party audio service, both languages. States:
+  Listen → Pause → Resume, labels from `data-*`. Hidden until JS confirms
+  support; text chunks ≤220 chars to dodge long-utterance stalls. If a
+  richer narration pipeline ever lands (recorded/neural audio), it replaces
+  the engine behind this same button, not the button.
 - **Image crops keep faces.** Every cover-cropped slot biases toward the
   upper third (`object-position:50% 22%`; story ledes 18%) because news
   photography puts faces above center. Remote wire images additionally get
