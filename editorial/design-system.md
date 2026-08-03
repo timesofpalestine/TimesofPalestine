@@ -93,6 +93,12 @@ you have not finished the change.
   countdown chip (`.fr-card.vote .days`) — dark pill, gold hairline border,
   pulsing gold dot, big mono numeral, recomputed every build. If you build a
   new "alive" element, follow this chip's anatomy.
+- **No dead ends**: every secondary page leads back into the paper. Section
+  pages append a "More from Times of Palestine" band (newest 8 stories from
+  other sections); the search page renders section-browse chips
+  (`.browse`). A new page type must offer an equivalent way onward.
+- **Reading measure**: story body text (`.story .summary`) caps at 42.5rem
+  (~75 characters per line); headlines and lede media keep the full column.
 - **CTAs**: gold, weight 700, arrow glyph — `→` in EN, `←` in AR. Never a
   button-styled link inside a card; the specials band CTA (bordered pill) is
   the one standing exception.
