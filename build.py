@@ -75,7 +75,13 @@ BRIEF_SYSTEM = {
         "Write an original news brief in English based ONLY on the source material provided: "
         "2-3 short paragraphs, 100-170 words total. Straight news style: lead with the most "
         "important fact, then key details and context. Neutral, precise, professional; no "
-        "personal attacks, no editorializing, no first person. Never invent names, numbers, "
+        "personal attacks, no editorializing, no first person. "
+        "Write like a seasoned wire editor, not a language model: vary sentence rhythm, "
+        "prefer concrete verbs and specific facts, and never reach for stock analytic "
+        "diction — no 'delve', 'underscore', 'highlights the importance', 'it is worth "
+        "noting', 'in a significant development', 'serves as a reminder', 'sheds light "
+        "on', 'a testament to'. End on a reported fact, never on a sentence assessing "
+        "what the story means. Never invent names, numbers, "
         "quotes, or details that are not in the source material; if the material is only a "
         "headline, write one short 2-3 sentence paragraph conveying what the headline reports. "
         "Never refuse, and never comment on the material, these instructions, or yourself. "
@@ -101,6 +107,11 @@ BRIEF_SYSTEM = {
         "اكتب عربيةً صحفيةً أصيلة بسجلّ الجزيرة نت وعرب 48: افتتاحات فعلية، وروابط عربية "
         "(فيما، إذ، في حين، غير أنّ) لا ترجمة حرفية لتراكيب إنجليزية، وعلامتا الاقتباس «»، "
         "ويجب ألا يشعر القارئ بجملة إنجليزية تحت النص. "
+        "اكتب كمحرر وكالة متمرس لا كنموذج آلي: نوّع إيقاع الجمل، ودقّق في اختيار الأفعال — "
+        "فعل التسليم «سلّم/سلّمت» وليس «أسلم» التي تعني اعتنق الإسلام. ممنوع: «قام بـ» "
+        "(استعمل الفعل مباشرة: قصف، اعتقل، سلّم)، و«تم/تمت» مع المصدر («تم الاعتقال»)، "
+        "وحشو مثل «يُذكر أن» و«تجدر الإشارة» و«الجدير بالذكر». اختم بمعلومة مُبلّغ عنها "
+        "لا بجملة تقييم ختامية. "
         "لغة محايدة دقيقة مهنية؛ لا إساءات شخصية ولا إنشاء ولا ضمير متكلم. لا تخترع أسماء أو "
         "أرقاماً أو اقتباسات أو تفاصيل غير واردة في المصدر؛ وإذا كانت المادة مجرد عنوان فاكتب "
         "فقرة قصيرة من جملتين أو ثلاث تنقل ما يفيد به العنوان. لا ترفض أبداً، ولا تعلق على المادة "
@@ -1242,6 +1253,63 @@ REFUSAL_RX = re.compile(
     r"المادة المصدرية|المادة المتاحة|المادة المرفقة|هذه التعليمات|"
     r"المقال الكامل|النص الكامل|زيارة موقع|زيارة الموقع", re.I)
 
+# Owner order 2026-08-03, after «أسلمت قوات الاحتلال» reached the Arabic front:
+# copy that reads machine-made never publishes unchallenged. These nets are
+# deliberately conservative — each pattern is a near-certain marker of
+# translationese or stock model diction, so a hit means "rewrite", never a
+# judgment call. A flagged draft gets ONE editor retry with the offending
+# wordings quoted back; if diction alone still trips after that, the improved
+# draft publishes anyway (charter: editorial gating defaults to publish) and
+# the residue is logged. Cached pre-gate copy that trips a net is scrubbed at
+# load so it regenerates under the new prompt.
+_AR_DICTION = [
+    (re.compile(r"أسلم(?:ت|وا)?\s+(?:ال)?(?:قوات|جيش|شرطة|سلطات|احتلال|إسرائيل|"
+                r"جثامين|جثث|جثة|جثمان|نفسه|نفسها|أنفسهم)"),
+     "«أسلم» تعني اعتنق الإسلام — فعل التسليم هو «سلّم/سلّمت»"),
+    (re.compile(r"(?:^|[\s،.:«»)(])قام(?:ت|وا)?\s+(?:\S+\s+){0,3}?ب\S"),
+     "«قام بـ» ركيكة — استعمل الفعل مباشرة (قصف، اعتقل، سلّم)"),
+    (re.compile(r"(?:^|[\s،.:«»)(])تم(?:ت)?\s+\S"),
+     "«تم/تمت» مع المصدر ركيكة — استعمل الفعل المبني للمعلوم"),
+    (re.compile(r"يُ?ذكر أن|تجدر الإشارة|الجدير بالذكر|ومن الجدير"),
+     "حشو صحفي آلي — احذفه وادخل في المعلومة"),
+]
+_EN_DICTION = [
+    (re.compile(r"\bdelv(?:e|es|ed|ing)\b", re.I),
+     "'delve' — say plainly what was examined"),
+    (re.compile(r"\bunderscor(?:e|es|ed|ing)\b", re.I),
+     "'underscore' — state the fact, not its significance"),
+    (re.compile(r"\bhighlight(?:s|ed|ing)? the (?:importance|significance|need|challenges)\b", re.I),
+     "stock 'highlights the importance' framing"),
+    (re.compile(r"\bit (?:is|'s) worth noting\b|\bit should be noted\b", re.I),
+     "throat-clearing filler"),
+    (re.compile(r"\bin a significant (?:development|move|step|escalation)\b", re.I),
+     "stock significance framing"),
+    (re.compile(r"\bmarks? a significant\b", re.I),
+     "stock significance framing"),
+    (re.compile(r"\bserves? as a (?:reminder|testament)\b|\ba testament to\b", re.I),
+     "stock assessment closer"),
+    (re.compile(r"\bsheds? light on\b", re.I),
+     "'sheds light on' — name the finding"),
+]
+
+
+def language_quality_issues(text, lang=None):
+    """Wordings that read machine-made rather than newsroom-made.
+    lang=None checks both nets (used for the cache scrub, where legacy keys
+    carry no language)."""
+    nets = []
+    if lang in (None, "ar"):
+        nets += _AR_DICTION
+    if lang in (None, "en"):
+        nets += _EN_DICTION
+    found = []
+    for rx, why in nets:
+        m = rx.search(text or "")
+        if m:
+            found.append(f"{m.group(0).strip()!r}: {why}")
+    return found
+
+
 # A story body must be substantial and end on a finished sentence. Feed summaries
 # arrive truncated mid-sentence ("…") and model output can stop short at the token
 # ceiling; neither may ever publish as an article.
@@ -1291,6 +1359,19 @@ def passive_title_warnings(title, lang):
     return found
 
 
+def _diction_retry_note(issues, lang):
+    listed = "؛ ".join(issues) if lang == "ar" else "; ".join(issues)
+    if lang == "ar":
+        return ("ملاحظة المحرر: المسودة سليمة وقائعياً لكنها تستخدم صياغات يمنعها "
+                f"دليل الأسلوب: {listed}. أعد كتابة الموجز بالتنسيق نفسه تماماً "
+                "(سطر HEADLINE: ثم سطر فارغ ثم النص) مستبدلاً تلك الصياغات بعربية "
+                "صحفية طبيعية دقيقة، مع الحفاظ على كل الوقائع والإسناد كما هي.")
+    return ("EDITOR: The draft is factually fine but uses wording the house "
+            f"forbids: {listed}. Rewrite it in the same exact format (HEADLINE: "
+            "line, blank line, body), replacing that phrasing with precise, "
+            "natural news prose. Keep every fact and the attribution unchanged.")
+
+
 def write_brief(client, item):
     material = (f"OUTLET: {item['source']}\n"
                 f"SOURCE HEADLINE OR POST TEXT: {item['title']}\n"
@@ -1298,28 +1379,42 @@ def write_brief(client, item):
     system = BRIEF_SYSTEM[item["lang"]]
     if item.get("needs_translation"):  # Arabic wire copy feeding the English edition
         system += " The source material is in Arabic; write the headline and brief in English."
-    response = client.messages.create(
-        model=BRIEFS_MODEL,
-        max_tokens=700,
-        system=system,
-        messages=[{"role": "user", "content": material}],
-    )
-    text = "".join(b.text for b in response.content if b.type == "text").strip()
-    new_title = None
-    if text.startswith("HEADLINE:"):
-        first, _, rest = text.partition(chr(10))
-        new_title = first[len("HEADLINE:"):].strip(" *«»\"")
-        text = rest.strip()
-    # Owner rule 2026-07-30: no headline longer than one short complete
-    # sentence. A missing or bloated headline means the copy is not ready.
-    if (not new_title or len(new_title.split()) > TITLE_MAX_WORDS
-            or new_title.endswith(("…", "..."))
-            or passive_title_warnings(new_title, item["lang"])):
-        item["brief_refused"] = True
-        return None
-    if REFUSAL_RX.search(text) or not is_complete_text(text, 160):
-        item["brief_refused"] = True  # nothing to report, or the copy stops short — no stubs
-        return None
+    convo = [{"role": "user", "content": material}]
+    text = new_title = None
+    for attempt in (0, 1):
+        response = client.messages.create(
+            model=BRIEFS_MODEL,
+            max_tokens=700,
+            system=system,
+            messages=convo,
+        )
+        raw = "".join(b.text for b in response.content if b.type == "text").strip()
+        text, new_title = raw, None
+        if text.startswith("HEADLINE:"):
+            first, _, rest = text.partition(chr(10))
+            new_title = first[len("HEADLINE:"):].strip(" *«»\"")
+            text = rest.strip()
+        # Owner rule 2026-07-30: no headline longer than one short complete
+        # sentence. A missing or bloated headline means the copy is not ready.
+        if (not new_title or len(new_title.split()) > TITLE_MAX_WORDS
+                or new_title.endswith(("…", "..."))
+                or passive_title_warnings(new_title, item["lang"])):
+            item["brief_refused"] = True
+            return None
+        if REFUSAL_RX.search(text) or not is_complete_text(text, 160):
+            item["brief_refused"] = True  # nothing to report, or the copy stops short — no stubs
+            return None
+        # Owner order 2026-08-03: machine diction gets one editor pass. If it
+        # persists, the improved draft still publishes — style alone never
+        # holds coverage — and the residue is logged for the record.
+        issues = language_quality_issues(f"{new_title}\n{text}", item["lang"])
+        if not issues:
+            break
+        if attempt == 0:
+            convo += [{"role": "assistant", "content": raw},
+                      {"role": "user", "content": _diction_retry_note(issues, item["lang"])}]
+        else:
+            print(f"  ⚠ brief {item['pid']}: diction persists after editor pass: {issues[:2]}")
     item["title"] = truncate(new_title, 120)
     return text
 
@@ -1334,13 +1429,23 @@ def generate_briefs(all_items):
             HEALTH.checks["brief_cache"] = "degraded"
         cache = {}
     # Keep connector markers while scrubbing refused or truncated generated copy.
-    cache = {
-        key: value for key, value in cache.items()
-        if "brief" not in value or (
-            not REFUSAL_RX.search(value.get("brief", ""))
-            and is_complete_text(value.get("brief", ""), 160)
-        )
-    }
+    # Pre-gate entries (style != wire4) that trip the diction nets are scrubbed
+    # too, so «أسلمت قوات»-class copy regenerates immediately under the new
+    # prompt instead of republishing until its restyle turn (owner 2026-08-03).
+    def _entry_ok(key, value):
+        if "brief" not in value:
+            return True
+        brief = value.get("brief", "")
+        if REFUSAL_RX.search(brief) or not is_complete_text(brief, 160):
+            return False
+        if value.get("style") != "wire4":
+            prefix = key.split(":", 1)[0]
+            lang = prefix if prefix in ("en", "ar") else None
+            if language_quality_issues(f"{value.get('title', '')}\n{brief}", lang):
+                return False
+        return True
+
+    cache = {key: value for key, value in cache.items() if _entry_ok(key, value)}
     cache_dirty = False
     now_ts = datetime.now(timezone.utc).timestamp()
     for it in all_items:
@@ -1353,11 +1458,12 @@ def generate_briefs(all_items):
             it["brief"] = entry["brief"]
             if entry.get("title"):  # translated headline saved alongside the brief
                 it["title"] = entry["title"]
-            # Wire protocol (2026-07-30): non-partner briefs must credit the
-            # outlet inline. Pre-protocol briefs keep publishing but are
-            # queued for a restyle whenever the run has spare capacity.
-            if entry.get("style") != "wire3":
-                it["brief_stale"] = True  # regenerate: wire attribution + short headline
+            # Style generations: wire3 = wire attribution + short headline
+            # (2026-07-30); wire4 = the human-register prompt + diction gate
+            # (owner order 2026-08-03). Pre-wire4 briefs keep publishing but
+            # are queued for a restyle whenever the run has spare capacity.
+            if entry.get("style") != "wire4":
+                it["brief_stale"] = True  # regenerate under the current prompt
     todo = [i for i in sorted(
         all_items,
         key=lambda x: (
@@ -1408,7 +1514,7 @@ def generate_briefs(all_items):
             if brief:
                 it["brief"] = brief
                 it.pop("brief_stale", None)
-                entry = {"brief": brief, "ts": now_ts, "style": "wire3",
+                entry = {"brief": brief, "ts": now_ts, "style": "wire4",
                          "title": it["title"]}  # the desk's own short headline
                 cache[f"{it['lang']}:{it['pid']}"] = entry
                 written += 1
