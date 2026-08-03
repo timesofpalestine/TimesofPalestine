@@ -2381,7 +2381,8 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 [lang=ar] .card .t{font-size:.72rem}
 /* sparse sections (<4 stories): full-width horizontal rows */
 .rowlist{display:flex;flex-direction:column}
-.rowcard{display:flex;gap:1.1rem;align-items:flex-start;padding-block:1rem;border-bottom:1px solid var(--line)}
+.rowcard{display:flex;gap:1.1rem;align-items:flex-start;padding-block:1rem;border-bottom:1px solid var(--line);transition:transform var(--tr)}
+.rowcard:hover{transform:translateY(-2px)}
 .rowcard:last-child{border-bottom:none}
 .rowcard>a:first-child,.rowcard>.ph{flex-shrink:0}
 .rowcard img,.rowcard .ph{width:clamp(152px,23vw,220px);aspect-ratio:16/10;object-fit:cover;object-position:50% 22%;background:#e8e6df;margin:0;display:flex;align-items:center;justify-content:center;border-radius:2px;transition:opacity var(--tr)}

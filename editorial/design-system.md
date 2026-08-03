@@ -81,7 +81,10 @@ load-bearing statistic — one or two per story, never as decoration.
   letter-spacing** (never track Arabic), no uppercase transforms, and
   slightly larger sizes than the EN equivalent of the same element.
 - **Numerals/data**: `ui-monospace,Menlo,monospace` — day counts, seat
-  counts, scores.
+  counts, scores. Percentage indicators (e.g., the Gaza-in-numbers strip)
+  carry a 4px flag-red context bar under the figure (`.gi-bar`: rgba red
+  track, solid `--red` fill sized `inline-size:<pct>%`) so a critical rate
+  reads at a glance; the pattern is CSS-only and RTL-safe.
 - Kicker grammar (EN): sans 800, `.6–.75rem`, `letter-spacing:.12–.18em`,
   uppercase. The AR override drops the tracking and transform and bumps size.
 
