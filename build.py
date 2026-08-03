@@ -2132,7 +2132,11 @@ def add_story_outline(rendered, lang):
     return outlined, toc
 
 # ---------- CSS (shared by both languages; logical properties handle RTL) ----------
+# Arabic type: Noto Kufi Arabic (SIL OFL, self-hosted variable font) — the
+# closest open-licensed face to Al Jazeera's exclusive Atrissi typeface,
+# giving the Arabic edition the same modern low-contrast Kufi register.
 CSS = """
+@font-face{font-family:"Noto Kufi Arabic";src:url("/fonts/NotoKufiArabic-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+08A0-08FF,U+200C-200E,U+2010-2011,U+FB50-FDFF,U+FE70-FEFC}
 :root{
   --red:#C8102E; --green:#00753A; --black:#0b0b0c; --ink:#141419; --muted:#595962;
   --paper:#f8f7f2; --card:#ffffff; --line:#e6e3da; --line-dark:#c9c5b8;
@@ -2142,7 +2146,7 @@ CSS = """
   --sh-h:0 6px 22px rgba(0,0,0,.11),0 2px 6px rgba(0,0,0,.06);
   --tr:.18s ease; --r:3px;
 }
-[lang=ar]{--serif:Tahoma,"Noto Naskh Arabic","Amiri",serif;--sans:Tahoma,"Noto Sans Arabic",Arial,sans-serif}
+[lang=ar]{--serif:"Noto Kufi Arabic",Tahoma,"Noto Naskh Arabic","Amiri",serif;--sans:"Noto Kufi Arabic",Tahoma,"Noto Sans Arabic",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;text-rendering:optimizeLegibility}
@@ -2174,7 +2178,7 @@ img{max-width:100%;display:block}
 [dir=rtl] .masthead .wrap::after{background:linear-gradient(-90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
 .masthead h1,.masthead .wordmark{font-family:var(--serif);font-weight:900;line-height:1;letter-spacing:-.02em;color:var(--black);font-size:clamp(1.9rem,4.5vw,3rem);white-space:nowrap}
 .masthead h1 .l2,.masthead .wordmark .l2{color:var(--red)}
-[lang=ar] .masthead h1,[lang=ar] .masthead .wordmark{font-family:"Amiri",serif;letter-spacing:0;font-weight:700;line-height:1.25}
+[lang=ar] .masthead h1,[lang=ar] .masthead .wordmark{font-family:"Noto Kufi Arabic","Amiri",serif;letter-spacing:0;font-weight:700;line-height:1.25}
 .masthead.compact{padding:.9rem 0 .7rem}
 .masthead.compact h1,.masthead.compact .wordmark{font-size:1.45rem}
 nav.sections{position:sticky;top:0;background:rgba(11,11,12,.97);z-index:50;box-shadow:0 2px 12px rgba(0,0,0,.3);backdrop-filter:blur(4px)}
@@ -2988,7 +2992,7 @@ def render_page(lang, items, built_at):
 <meta property="og:url" content="{BASE_URL}/{lang}/">
 <meta property="og:image" content="{BASE_URL}/og-banner.png"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"{t['site_name']}","url":"{BASE_URL}/{lang}/","sameAs":["{BASE_URL}/en/","{BASE_URL}/ar/"]}}</script>
-<link href="/assets/site.css" rel="stylesheet">
+{'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="topbar"><div class="wrap">
@@ -3265,7 +3269,7 @@ def render_story(it, lang, related, rail, built_at):
 {og_image}
 <meta name="twitter:card" content="{'summary_large_image' if it['image'] else 'summary'}">
 <script type="application/ld+json">{jsonld}</script>
-<link href="/assets/site.css" rel="stylesheet">
+{'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
 </head>
 <body>
 <div class="backbar"><a href="../">{t['back_home']}</a><a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
@@ -3382,7 +3386,7 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 <title>{esc(name)} — {t['site_name']}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{BASE_URL}/{lang}/section-{cat}.html">
-<link href="/assets/site.css" rel="stylesheet">
+{'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
 </head>
 <body>
 <div class="backbar"><a href="./">{t['back_home']}</a><a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></div>
@@ -3442,7 +3446,7 @@ def render_search_page(lang, built_at, cats=()):
 <meta name="description" content="{esc(t['search_prompt'])}">
 <meta name="robots" content="noindex">
 <link rel="canonical" href="{BASE_URL}/{lang}/search.html">
-<link href="/assets/site.css" rel="stylesheet">
+{'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
 </head>
 <body>
 <div class="backbar"><a href="./">{t['back_home']}</a><a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></div>
@@ -3599,6 +3603,11 @@ def main():
     qr = ROOT / "signal-qr.png"  # Signal tip-line QR shown in the tip band
     if qr.exists():
         (dist / "signal-qr.png").write_bytes(qr.read_bytes()); ob = ROOT / "og-banner.png"; ob.exists() and (dist / "og-banner.png").write_bytes(ob.read_bytes())
+    fonts_src = ROOT / "fonts"  # self-hosted webfonts (Arabic: Noto Kufi Arabic, OFL)
+    if fonts_src.is_dir():
+        (dist / "fonts").mkdir(exist_ok=True)
+        for fp in sorted(fonts_src.glob("*.woff2")):
+            (dist / "fonts" / fp.name).write_bytes(fp.read_bytes())
     # Standalone static features: a top-level directory with a .static-feature
     # marker deploys verbatim at /<dir>/ (e.g. suha-arafat/). The pages inside
     # still pass the output validator like everything else in dist/.
