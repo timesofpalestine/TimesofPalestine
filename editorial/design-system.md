@@ -223,6 +223,16 @@ Tracked here so agents pick these up instead of inventing new directions:
   stories read as a designed pair. New categories must ship BOTH variants.
 - **EN-dominant hero graphics on the AR edition** (§5) — retrofit as each
   graphic is next regenerated.
+- **Covers are photographs (owner order 2026-08-03)**: story covers must be
+  photos; infographics live in-body. Converted so far: al-Sharaa (portrait),
+  ICC/ICJ (Netanyahu portrait), Abbas succession (portrait), Saifedean
+  (portrait), Dahlan backchannel (post screenshot), Washington Brief
+  (Capitol). Still on graph covers pending sourced photos — the daily cycle
+  converts as rights-cleared images are found: ceasefire ledger, Her Story
+  launch, Mladenov, PA litigation/absence/security-chiefs, Ceuta, Chile,
+  Citizen Lab, East Asia, France, Madrid, Graham, Israel lobby, Thawadi,
+  arab-support ledger, embassies, business/top-companies, health-desk
+  reports, bitcoin-desk reports (ChatGPT's layer — flagged, not touched).
 - Election hemicycle SVG (`times-of-palestine-israel-votes-card.svg`) bakes
   in the current bloc math — update it same-day when polls shift, together
   with the standings graphic (election beat: Claude).
