@@ -31,6 +31,15 @@ class FixtureBuildTests(unittest.TestCase):
         self.assertEqual(health["stories"], {"en": 1, "ar": 1})
         self.assertEqual(health["mediaBlocked"], 1)
         self.assertEqual(health["connectors"]["telegram"], "disabled")
+        # Every category cover ships in every build: lede_fallback_attrs points
+        # dying remote images at covers from inside onerror attributes, which
+        # copy_media cannot see — a missing cover 404s in the reader's browser.
+        src_covers = {f.name for f in
+                      (ROOT / "originals" / "media").glob("times-of-palestine-cover-*.svg")}
+        out_covers = {f.name for f in
+                      (ROOT / "dist" / "media").glob("times-of-palestine-cover-*.svg")}
+        self.assertTrue(src_covers)
+        self.assertEqual(src_covers - out_covers, set())
 
 
 if __name__ == "__main__":
