@@ -1291,3 +1291,50 @@ class MobileChromeTests(unittest.TestCase):
         self.assertIn("[data-lite] .litetoggle", build.CSS)
         # the hero headline must SURVIVE text-only mode — only its image goes
         self.assertIn("[data-lite] .hero-overlay{position:static", build.CSS)
+
+
+class OutbreakWatchTests(unittest.TestCase):
+    """Owner directive 2026-08-04: the newsroom monitors diseases spreading
+    in Gaza and the West Bank and posts them to SANAD automatically."""
+
+    def _items(self):
+        from datetime import datetime, timezone
+        d = datetime(2026, 8, 3, 9, tzinfo=timezone.utc)
+        return [
+            {"pid": "aaa111", "lang": "en", "date": d,
+             "title": "Cholera cases surge in Gaza shelters",
+             "dek": "Health ministry reports an outbreak in the north."},
+            {"pid": "bbb222", "lang": "ar", "date": d,
+             "title": "نفاد محلول رخيص يعطّل نصف أجهزة الغسيل الكلوي",
+             "dek": "أزمة مستلزمات في مستشفيات غزة."},
+            {"pid": "ccc333", "lang": "en", "date": d,
+             "title": "A hepatitis survivor rebuilds her bakery",
+             "dek": "A feature about recovery."},  # no spread-context: no alert
+            {"pid": "ddd444", "lang": "en", "date": d,
+             "title": "Measles cases rise in West Bank refugee camps",
+             "dek": "Vaccination coverage fell during the war."},
+        ]
+
+    def test_detects_outbreaks_and_supply_failures_not_features(self):
+        import outbreak_watch
+        evs = outbreak_watch.watch_events(self._items())
+        keys = {e["ref"].split("-")[-1] for e in evs}
+        self.assertIn("CHOLER", keys)
+        self.assertIn("DIALYS", keys)
+        self.assertIn("MEASLE", keys)
+        self.assertNotIn("HEPATI", keys)          # feature story filtered out
+        chol = next(e for e in evs if "CHOLER" in e["ref"])
+        self.assertEqual(chol["ty"], "case")
+        self.assertEqual(chol["c"]["urgency"], "red")
+        self.assertEqual(chol["c"]["zone"], "Gaza City")
+        self.assertIn("timesofpalestine.com/en/story/aaa111.html",
+                      chol["c"]["findings"])
+        self.assertIn("TOP Health Watch", chol["by"]["n"])
+        measles = next(e for e in evs if "MEASLE" in e["ref"])
+        self.assertEqual(measles["c"]["zone"], "West Bank")
+
+    def test_ids_are_deterministic_and_weekly_deduped(self):
+        import outbreak_watch
+        a = outbreak_watch.watch_events(self._items())
+        b = outbreak_watch.watch_events(self._items() + self._items())
+        self.assertEqual([e["id"] for e in a], [e["id"] for e in b])

@@ -201,6 +201,13 @@ Current surfaces:
   model; ward-team quick start (install bitchat → everyone joins `#sanad`
   → post → share); official bitchat download links with impostor warning.
   Front-page prominence is charter-protected (`.sanad-band`, tier-1 nav).
+  **Outbreak watch** (owner directive 2026-08-04): `outbreak_watch.py`
+  scans every build's wire (both languages) for diseases spreading in
+  Gaza/West Bank and population-level supply failures, and publishes
+  deterministic SANAD case events at `/sanad/watch.json` — the page pulls
+  them online, the mesh relays them offline, experts answer on the board.
+  Signal rule: the disease must be named in the headline/dek with a
+  spread/emergency context word; never break the news build (fail-open).
 - **The SANAD app** (`sanad-app/`, in build): a native app on bitchat's
   open-source design (public domain), rebuilt around the medical case —
   triage board not chat rooms, SND1 packet interop with the web board,

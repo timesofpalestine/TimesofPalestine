@@ -239,6 +239,8 @@ en:{dir:"ltr",
  carrierT:"Carrier",
  carrierSub:"One packet format, four ways to move it. Nothing is lost if you use all of them at once — every packet carries an id, and importing the same one twice changes nothing.",
  netT:"Internet",netOff:"No endpoint configured on this page. Everything else still works.",
+ watchT:"Outbreak watch (automatic)",
+ watchSub:"The Times of Palestine newsroom scans its wire every ten minutes for diseases spreading in Gaza and the West Bank — cholera, polio, measles, hepatitis, acute malnutrition, dialysis-supply failures and more. Confirmed signals arrive on this board automatically as population-level cases marked TOP Health Watch, asking one question: what works in the field? Answer them like any case; your reply reaches every device the packets reach.",
  netOn:"Sends and receives automatically whenever this device is online.",
  shareT:"Hand it to the person next to you",
  shareSub:"Opens your phone's own share sheet — AirDrop on iPhone, Quick Share on Android. That is a direct radio link between two handsets with no internet and no account. Works on every phone, including iPhones.",
@@ -299,6 +301,8 @@ ar:{dir:"rtl",
  carrierT:"الناقل",
  carrierSub:"صيغة واحدة للحزمة وأربع طرق لنقلها. لا شيء يضيع إن استخدمتها جميعًا — كل حزمة تحمل معرّفًا، واستيرادها مرتين لا يغيّر شيئًا.",
  netT:"الإنترنت",netOff:"لا يوجد خادم مهيّأ في هذه الصفحة. كل ما عداه يعمل.",
+ watchT:"مرصد الأوبئة (تلقائي)",
+ watchSub:"تمسح غرفة أخبار تايمز أوف فلسطين وكالاتها كل عشر دقائق بحثاً عن الأمراض المنتشرة في غزة والضفة — الكوليرا وشلل الأطفال والحصبة والتهاب الكبد وسوء التغذية الحاد وانقطاع مستلزمات الغسيل الكلوي وغيرها. والإشارات المؤكدة تصل هذه اللوحة تلقائياً كحالات على مستوى السكان موقَّعة «مرصد الصحة»، بسؤال واحد: ما الذي ينجح ميدانياً؟ أجيبوا عليها كأي حالة، فردّكم يبلغ كل جهاز تبلغه الحزم.",
  netOn:"يرسل ويستقبل تلقائيًا كلما كان الجهاز متصلًا.",
  shareT:"سلّمها لمن بجوارك",
  shareSub:"يفتح قائمة المشاركة في هاتفك — AirDrop في آيفون وQuick Share في أندرويد. وهي وصلة راديو مباشرة بين جهازين بلا إنترنت وبلا حساب. تعمل على كل الهواتف بما فيها آيفون.",
@@ -574,6 +578,24 @@ async function netPush(){
 
 const pushOut = () => { netPush(); blePush(); };
 
+/* Outbreak watch: the Times of Palestine newsroom scans its wire every
+   build for diseases spreading in Gaza and the West Bank and publishes
+   ready-made population-level cases at ./watch.json. Any online device
+   pulls them here; because they are ordinary events, every offline
+   carrier then relays them onward to devices with no internet at all. */
+async function watchPull(){
+  if (!navigator.onLine) return;
+  try {
+    const r = await fetch("./watch.json", { cache:"no-store" });
+    if (!r.ok) return;
+    const d = await r.json();
+    if (Array.isArray(d.events)){
+      const n = merge(d.events);
+      if (n) toast(`+${n} outbreak watch`);
+    }
+  } catch {}
+}
+
 async function bleConnect(){
   if (!navigator.bluetooth) return toast(t().bleNo);
   try {
@@ -796,6 +818,8 @@ function viewCarrier(){
   <p class="f-hint">${L.carrierSub}</p>
 
   <div class="carrier"><h3>${L.netT}</h3><p>${CONFIG.api ? L.netOn : L.netOff}</p></div>
+
+  <div class="carrier"><h3>${L.watchT}</h3><p>${L.watchSub}</p></div>
 
   <div class="carrier"><h3>${L.shareT}</h3><p>${L.shareSub}</p>
     <div class="btn-row">
@@ -1074,9 +1098,11 @@ document.querySelectorAll(".tab").forEach(tb =>
 on("lang-en", "click", () => { LANG = "en"; store.set(KEY.lang, LANG); render(); });
 on("lang-ar", "click", () => { LANG = "ar"; store.set(KEY.lang, LANG); render(); });
 
-window.addEventListener("online", () => { render(); netPull(); netPush(); });
+window.addEventListener("online", () => { render(); netPull(); netPush(); watchPull(); });
 window.addEventListener("offline", render);
-setInterval(() => { netPull(); render(); }, 30000);
+let _tick = 0;
+setInterval(() => { netPull(); if (++_tick % 10 === 0) watchPull(); render(); }, 30000);
+watchPull();
 
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js").catch(()=>{});
 
