@@ -64,6 +64,8 @@ class CaseView(val event: JSONObject) {
     val contact: String get() = c.optString("contact")
 
     var claimBy: String? = null
+    var claimPk: JSONObject? = null
+    val pk: JSONObject? = event.optJSONObject("pk")
     val thread = ArrayList<JSONObject>()
     var closed = false
 
@@ -85,8 +87,10 @@ object Board {
             val c = map[e.optString("cid")] ?: continue
             when (e.optString("ty")) {
                 "reply" -> c.thread.add(e)
-                "claim" -> if (c.claimBy == null)
+                "claim" -> if (c.claimBy == null) {
                     c.claimBy = e.optJSONObject("by")?.optString("n")
+                    c.claimPk = e.optJSONObject("pk")
+                }
                 "close" -> c.closed = true
             }
         }
