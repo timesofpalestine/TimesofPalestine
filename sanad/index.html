@@ -257,7 +257,7 @@ en:{dir:"ltr",
  roleField:"Frontline clinician",roleSpec:"Volunteer specialist",
  mName:"Name or initials",mWhere:"Country of practice",mFac:"Facility",mZone:"Zone",mSpecs:"Specialties you will take",
  mLic:"Licence number",mBody:"Issuing authority",mContact:"Contact handle",mSave:"Save",
- vet:"Licence details travel with your replies and are marked unverified. Somebody has to check them. This page cannot.",
+ vet:"This network runs on professional referral — doctors who know each other and vouch for each other, the way Gaza's volunteer medical circles already work. Licence details travel with your replies as professional identification for the colleagues who receive them.",
  none:"Nothing here yet.",wipe:"Erase everything on this device"},
 
 ar:{dir:"rtl",
@@ -302,7 +302,7 @@ ar:{dir:"rtl",
  roleField:"طبيب ميداني",roleSpec:"أخصائي متطوع",
  mName:"الاسم أو الأحرف الأولى",mWhere:"بلد الممارسة",mFac:"المرفق",mZone:"المنطقة",mSpecs:"التخصصات",
  mLic:"رقم الترخيص",mBody:"الجهة المانحة",mContact:"وسيلة التواصل",mSave:"حفظ",
- vet:"تنتقل بيانات ترخيصك مع ردودك وتُعرض كغير مُتحقَّقة. لا بد لجهة أن تدقّقها، وهذه الصفحة ليست تلك الجهة.",
+ vet:"تقوم هذه الشبكة على الإحالة المهنية — أطباء يعرف بعضهم بعضاً ويزكّي أحدهم الآخر، كما تعمل دوائر غزة الطبية التطوعية أصلاً. وتنتقل بيانات ترخيصك مع ردودك تعريفاً مهنياً للزملاء الذين يستقبلونها.",
  none:"لا شيء بعد.",wipe:"امسح كل شيء من هذا الجهاز"}
 };
 
@@ -407,9 +407,10 @@ const b64u = {
    reply between the case poster and the claiming specialist, sealed so relay
    devices along a mesh can carry the thread without reading the advice.
    What is NOT covered, deliberately: the initial case post stays cleartext —
-   it is de-identified by rule, any specialist must be able to read it to
-   claim it, and sealing it "to all vetted specialists" needs the licence
-   -verification authority (a later stage), not ciphertext theatre. */
+   it is de-identified by rule and any specialist must be able to read it to
+   claim it. Specialist trust is professional referral (owner decision,
+   2026-08-04): the volunteer circles know and vouch for their own, so no
+   verification gate stands between a case and an answer. */
 
 const CRYPTO = {
   ok: !!(window.crypto && crypto.subtle && crypto.subtle.deriveKey && window.isSecureContext),
@@ -809,7 +810,7 @@ function viewAbout(){
 
   <h3>ما المشفَّر وما الظاهر عمداً</h3>
   <p>لا حسابات، ولا خادم لنا، ولا تحليلات، ولا يغادر شيء الجهاز إلا حين ترسله أنت. ومنذ تحديث المرحلة الأولى في أغسطس/آب 2026 صار الخيط مقفلاً: كل رد بين رافع الحالة والأخصائي المتسلّم مشفّر من طرف إلى طرف على نموذج «بيتشات» — يسكّ كل جهاز مفتاحه الخاص، ويشتق طرفا الخيط مفتاحاً مشتركاً لا يملكه سواهما، عبر تشفير المتصفح نفسه المدقَّق لا شيفرة مجلوبة. فتنقل هواتف الوسطاء والجسور الخيطَ دون أن تقرأ المشورة.</p>
-  <p>أما الحالة الأولى المرفوعة فتبقى ظاهرة عمداً: فهي بلا هوية أصلاً — وهذا ما تفرضه خانتا التأكيد الإلزاميتان — ولا بد أن يقرأها أي أخصائي ليتسلّمها. وقفلها «لكل الأخصائيين الموثَّقين» يحتاج الجهة التي تتحقق من التراخيص، وهي لم توجد بعد. الأسماء ممنوعة من السفر دائماً، والتحقق من التراخيص هو المرحلة التالية، وحتى ذلك الحين تبقى بيانات الأخصائي معلَّمة بأنها غير مُتحقَّق منها.</p>
+  <p>أما الحالة الأولى المرفوعة فتبقى ظاهرة عمداً: فهي بلا هوية أصلاً — وهذا ما تفرضه خانتا التأكيد الإلزاميتان — ولا بد أن يقرأها أي أخصائي ليتسلّمها. والأسماء ممنوعة من السفر دائماً. وأما الثقة في جانب الأخصائيين فتعمل كما يعمل الطب عبر حدود غزة أصلاً: بالإحالة المهنية — زملاء يعرف بعضهم بعضاً ويزكّي أحدهم الآخر، ولا بوابة تحقق تقف بين حالة وجوابها.</p>
 
   <h3>المصادر</h3>
   <p class="src">الورقة البيضاء لتطبيق «بيتشات» ومستودعه وتغطية إطلاقه التجريبي في يوليو/تموز 2025 · مجموعة W3C المجتمعية لمواصفة Web Bluetooth التي تحصر دور الصفحة في العميل · تقرير <a href="/ar/story/2f6cc013a7.html">تايمز أوف فلسطين، 3 أغسطس/آب 2026، عن مجموعات واتساب التطوعية التي تحمل طب غزة عن بُعد</a> · دراسة الصر وزملائه في «ذا لانسيت»، 31 أغسطس/آب 2024، عن سلسلة حالات التطبيب عن بُعد في مجمع ناصر الطبي.</p>
@@ -833,7 +834,7 @@ function viewAbout(){
 
   <h3>What is encrypted, and what deliberately is not</h3>
   <p>No accounts, no server of ours, no analytics, nothing leaves the device unless you send it. Since the August 2026 stage-one update, the thread is sealed: every reply between the case poster and the claiming specialist is encrypted end-to-end on bitchat's model — each device mints its own keypair, and the two thread identities derive a shared key nobody else holds (ECDH P-256 with AES-GCM, done by the browser's own audited WebCrypto rather than shipped cipher code). Relay phones and bridges move the thread without being able to read the advice.</p>
-  <p>The initial case post stays cleartext by design. It is de-identified by rule — that is what the mandatory checkboxes enforce — and any specialist must be able to read it in order to claim it; sealing it "to all vetted specialists" needs the body that verifies consultants' licences, and that body does not exist yet. Names still must never travel. Licence verification is the next stage, and until then a specialist's credentials remain marked unverified.</p>
+  <p>The initial case post stays cleartext by design. It is de-identified by rule — that is what the mandatory checkboxes enforce — and any specialist must be able to read it in order to claim it. Names still must never travel. Trust on the specialist side works the way medicine already works across Gaza's borders: by professional referral — doctors who know each other and vouch for each other, the same word-of-mouth circles that carry the volunteer WhatsApp consults today. No verification gate stands between a case and an answer.</p>
 
   <h3>Sources</h3>
   <p class="src">Bitchat white paper and repository, and reporting on its July 2025 beta from CNBC, Cointelegraph and TechTarget, for the mesh, seven-hop relay, store-and-forward and Nostr fallback · W3C Web Bluetooth Community Group, on the specification covering the central role only and not permitting a page to act as a peripheral · MDN and caniuse, on browser support and Safari's absence · <a href="/en/story/0a9002d266.html">Times of Palestine, 3 Aug 2026, on the volunteer WhatsApp groups carrying Gaza's remote medical care</a> · Alser et al., The Lancet, 31 Aug 2024, on the telemedicine case series from Nasser Medical Complex.</p>
