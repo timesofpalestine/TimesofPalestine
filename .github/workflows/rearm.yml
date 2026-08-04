@@ -39,7 +39,9 @@ jobs:
     steps:
       - name: Wait out the cadence window, then dispatch if idle
         env:
-          TOKEN: ${{ secrets.WORKFLOW_DISPATCH_TOKEN }}
+          # The owner saved the PAT under a short name (2026-08-04) — accept
+          # the common variants so a rename is never required to arm the chain.
+          TOKEN: ${{ secrets.WORKFLOW_DISPATCH_TOKEN || secrets.WORKFLOW || secrets.WORKFLOW_TOKEN || secrets.TOKEN_WORKFLOW || secrets.TOKENWORKFLOW }}
           REPO: ${{ github.repository }}
         run: |
           if [ -z "$TOKEN" ]; then
