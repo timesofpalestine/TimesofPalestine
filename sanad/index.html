@@ -253,6 +253,10 @@ en:{dir:"ltr",
  encLocked:"Encrypted for the case participants — this device holds no key for it.",
  bcT:"Bitchat mesh",
  bcSub:"Bitchat is Jack Dorsey's open-source mesh messenger: no account, no internet — messages hop phone to phone over Bluetooth, up to seven hops, and wait for peers who are out of range. Copy Sanad packets into any bitchat channel and the mesh carries them across a hospital or a camp; whoever receives them pastes them into the import box below. Replies are already sealed end-to-end, so relay phones move the thread without reading the advice.",
+ bcGetT:"Get bitchat (official sources only)",
+ bcGetIos:"iPhone / iPad — “bitchat mesh” on the App Store",
+ bcGetAnd:"Android — APK from the official GitHub releases",
+ bcGetWarn:"Download only from these two sources. Google Play carries look-alike apps that are not Dorsey's bitchat — do not trust a case thread to an impostor.",
  meT:"Who you are",meSub:"Kept on this device only. It travels with the cases you send so a specialist knows who is asking.",
  roleField:"Frontline clinician",roleSpec:"Volunteer specialist",
  mName:"Name or initials",mWhere:"Country of practice",mFac:"Facility",mZone:"Zone",mSpecs:"Specialties you will take",
@@ -298,6 +302,10 @@ ar:{dir:"rtl",
  encLocked:"مشفّرة لطرفي الحالة — لا يملك هذا الجهاز مفتاحها.",
  bcT:"شبكة بيتشات",
  bcSub:"«بيتشات» تطبيق مفتوح المصدر من جاك دورسي للمراسلة عبر شبكة متداخلة: بلا حساب وبلا إنترنت — تقفز الرسائل من هاتف إلى هاتف عبر البلوتوث حتى سبع قفزات وتنتظر من هو خارج التغطية. انسخ حزم «سند» في أي قناة بيتشات فتحملها الشبكة عبر مستشفى أو مخيم، ومن يستلمها يلصقها في خانة الاستيراد أدناه. الردود مشفّرة أصلاً بين طرفي الحالة، فتنقل هواتف الوسطاء الخيط دون قراءة المشورة.",
+ bcGetT:"حمّل بيتشات (من المصدرين الرسميين فقط)",
+ bcGetIos:"آيفون / آيباد — تطبيق «bitchat mesh» على آب ستور",
+ bcGetAnd:"أندرويد — ملف APK من إصدارات غيتهاب الرسمية",
+ bcGetWarn:"حمّل من هذين المصدرين فقط. متجر غوغل بلاي فيه تطبيقات مقلِّدة ليست «بيتشات» دورسي — لا تأتمن دخيلاً على خيط حالة.",
  meT:"من أنت",meSub:"يُحفظ على هذا الجهاز فقط، وينتقل مع الحالات التي ترسلها ليعرف الأخصائي من يسأل.",
  roleField:"طبيب ميداني",roleSpec:"أخصائي متطوع",
  mName:"الاسم أو الأحرف الأولى",mWhere:"بلد الممارسة",mFac:"المرفق",mZone:"المنطقة",mSpecs:"التخصصات",
@@ -748,7 +756,13 @@ function viewCarrier(){
     <div class="btn-row"><button class="btn sm" data-act="import">${L.importBtn}</button></div>
   </div>
 
-  <div class="carrier"><h3>${L.bcT}</h3><p>${L.bcSub}</p></div>
+  <div class="carrier"><h3>${L.bcT}</h3><p>${L.bcSub}</p>
+    <p style="margin-top:9px;font-size:12.5px;font-weight:700">${L.bcGetT}</p>
+    <div class="btn-row">
+      <a class="btn wirebtn sm" style="text-decoration:none" href="https://apps.apple.com/app/bitchat-mesh/id6748219622" target="_blank" rel="noopener">${L.bcGetIos}</a>
+      <a class="btn ghost sm" style="text-decoration:none" href="https://github.com/permissionlesstech/bitchat-android/releases/latest" target="_blank" rel="noopener">${L.bcGetAnd}</a>
+    </div>
+    <p style="margin-top:8px;color:var(--red);font-size:12.5px">${L.bcGetWarn}</p></div>
 
   <div class="carrier"><h3>${L.bleT}</h3><p>${L.bleSub}</p>
     <div class="btn-row">
