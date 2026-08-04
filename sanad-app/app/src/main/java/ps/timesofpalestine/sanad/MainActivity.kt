@@ -17,8 +17,11 @@ import android.widget.ScrollView
 import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
+import android.content.pm.PackageManager
+import android.os.Build
 import org.json.JSONArray
 import org.json.JSONObject
+import ps.timesofpalestine.sanad.core.BleMesh
 import ps.timesofpalestine.sanad.core.Board
 import ps.timesofpalestine.sanad.core.Crypto
 import ps.timesofpalestine.sanad.core.Mesh
@@ -87,7 +90,12 @@ class MainActivity : Activity() {
             "imp" to "Paste SND1 packets here", "impBtn" to "Import",
             "imported" to "imported", "noNew" to "no new packets",
             "nothing" to "nothing to send", "advice" to "Your advice / reply",
-            "send" to "Send", "cancel" to "Cancel", "sealed" to "sealed 🔒"),
+            "send" to "Send", "cancel" to "Cancel", "sealed" to "sealed 🔒",
+            "meshOn" to "Mesh: ON", "meshOff" to "Mesh: off",
+            "meshHint" to ("The mesh relays cases phone to phone over Bluetooth " +
+                "while SANAD is open — and this phone is also the bridge for any " +
+                "browser on the Sanad web page. Store-and-forward: whoever walks " +
+                "between two wards carries the board with them.")),
         "ar" to mapOf(
             "tag" to "للحالات الطبية فقط · تعمل بلا إنترنت · ليست خدمة طبية",
             "new" to "＋ حالة جديدة", "carrier" to "الناقل ⇅", "back" to "رجوع",
@@ -125,10 +133,16 @@ class MainActivity : Activity() {
             "imp" to "الصق حزم SND1 هنا", "impBtn" to "استيراد",
             "imported" to "استُوردت", "noNew" to "لا حزم جديدة",
             "nothing" to "لا شيء للإرسال", "advice" to "مشورتك / ردك",
-            "send" to "إرسال", "cancel" to "إلغاء", "sealed" to "مشفّرة 🔒"))
+            "send" to "إرسال", "cancel" to "إلغاء", "sealed" to "مشفّرة 🔒",
+            "meshOn" to "الشبكة: تعمل", "meshOff" to "الشبكة: متوقفة",
+            "meshHint" to ("تنقل الشبكة الحالات من هاتف إلى هاتف عبر البلوتوث ما دام " +
+                "«سند» مفتوحاً — وهذا الهاتف هو أيضاً جسر أي متصفح على صفحة سند. " +
+                "خزّن ومرّر: من يمشي بين قسمين يحمل اللوحة معه.")))
 
     private lateinit var root: LinearLayout
     private lateinit var kp: KeyPair
+    private var mesh: BleMesh? = null
+    private var meshStatus = ""
     private var lang = "en"
     private fun s(k: String): String = STR[lang]!![k] ?: k
     private fun prefs() = getSharedPreferences("sanad", MODE_PRIVATE)
@@ -195,10 +209,50 @@ class MainActivity : Activity() {
 
     // ---------------- board ----------------
 
+    // ---------------- the mesh ----------------
+
+    private fun meshPerms(): Array<String> =
+        if (Build.VERSION.SDK_INT >= 31) arrayOf(
+            "android.permission.BLUETOOTH_SCAN",
+            "android.permission.BLUETOOTH_ADVERTISE",
+            "android.permission.BLUETOOTH_CONNECT")
+        else arrayOf("android.permission.ACCESS_FINE_LOCATION")
+
+    private fun havePerms(): Boolean = meshPerms().all {
+        checkSelfPermission(it) == PackageManager.PERMISSION_GRANTED }
+
+    private fun toggleMesh() {
+        val m = mesh
+        if (m != null && m.running) { m.stop(); renderBoard(); return }
+        if (!havePerms()) { requestPermissions(meshPerms(), 7); return }
+        if (mesh == null) mesh = BleMesh(this,
+            allPackets = { Snd1.encode(jsonList(log())) },
+            onPackets = { lines ->
+                val got = Snd1.decode(lines)
+                if (got.isNotEmpty()) {
+                    val a = log(); val n = Board.merge(a, got); saveLog(a)
+                    if (n > 0) { toast("+$n mesh"); renderBoard() }
+                }
+            },
+            onStatus = { st -> meshStatus = st; renderBoard() })
+        mesh?.start()
+        renderBoard()
+    }
+
+    override fun onRequestPermissionsResult(code: Int, perms: Array<out String>, res: IntArray) {
+        super.onRequestPermissionsResult(code, perms, res)
+        if (code == 7 && havePerms()) toggleMesh()
+    }
+
+    override fun onDestroy() { mesh?.stop(); super.onDestroy() }
+
     private fun renderBoard() {
         root.removeAllViews()
         chrome("SANAD · سند", s("tag"))
-        rowButtons(s("new") to { renderForm() }, s("carrier") to { renderCarrier() })
+        rowButtons(s("new") to { renderForm() }, s("carrier") to { renderCarrier() },
+            (if (mesh?.running == true) s("meshOn") else s("meshOff")) to { toggleMesh() })
+        if (mesh?.running == true) root.addView(small(
+            "⇄ $meshStatus — ${s("meshHint")}"))
 
         val cases = Board.derive(jsonList(log()))
         if (cases.isEmpty()) { para(s("empty")); return }

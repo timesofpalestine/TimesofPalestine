@@ -233,7 +233,8 @@ en:{dir:"ltr",
  contactHint:"Something you can be raised on when the network returns.",
  consent:"The patient or guardian gave verbal consent for this case to be discussed with clinicians outside Gaza.",
  deid:"I removed names, ID numbers, dates of birth and faces from everything here.",
- postBtn:"Save and queue",openCase:"Open",close:"Close",claim:"Claim",reply:"Your advice",
+ postBtn:"Save and queue",openCase:"Open case & reply",close:"Close",claim:"Claim",reply:"Reply — offer your advice",
+ replyHint:"Anyone on the board can answer. Type your advice and send.",
  send:"Send advice",order:"Order what the patient needs",record:"Record outcome",
  copyCard:"Copy readable card",
  carrierT:"Carrier",
@@ -298,7 +299,8 @@ ar:{dir:"rtl",
  contactHint:"وسيلة يمكن الوصول إليك عبرها عند عودة الشبكة.",
  consent:"أعطى المريض أو وليّه موافقة شفهية على مناقشة الحالة مع أطباء خارج غزة.",
  deid:"أزلت الأسماء وأرقام الهوية وتواريخ الميلاد والوجوه من كل ما هنا.",
- postBtn:"احفظ وأدرج في الطابور",openCase:"افتح",close:"إغلاق",claim:"تسلّم",reply:"مشورتك",
+ postBtn:"احفظ وأدرج في الطابور",openCase:"افتح الحالة وردّ",close:"إغلاق",claim:"تسلّم",reply:"ردّ — قدّم مشورتك",
+ replyHint:"يستطيع أي شخص على اللوحة أن يجيب. اكتب مشورتك وأرسِلها.",
  send:"إرسال المشورة",order:"اطلب ما يحتاجه المريض",record:"سجّل النتيجة",
  copyCard:"انسخ بطاقة مقروءة",
  carrierT:"الناقل",
@@ -773,14 +775,18 @@ function caseHTML(c, open){
       <p class="msg mono" style="font-size:13px">${esc(c.outcome.advice)} · 72h: ${esc(c.outcome.status72h)}</p>
       ${c.outcome.note?`<p class="msg">${esc(c.outcome.note)}</p>`:""}</div>`;
 
-    if (ME && c.status !== "closed"){
+    if (c.status !== "closed"){
       if (isSpec && c.status === "open") h += `<div class="btn-row"><button class="btn sm" data-act="claim" data-id="${c.id}">${L.claim}</button></div>`;
-      if (mine){
-        h += `<label class="f"><span class="f-lab">${L.reply}</span><textarea id="rep-${c.id}"></textarea></label>
-          <div class="btn-row"><button class="btn sm" data-act="reply" data-id="${c.id}">${L.send}</button>
-          ${isSpec?`<button class="btn ghost sm" data-act="order" data-id="${c.id}">${L.order}</button>`:""}
-          ${c.by.n===me.name && c.thread.length?`<button class="btn ghost sm" data-act="close" data-id="${c.id}">${L.record}</button>`:""}</div>`;
-      }
+      // Replying is open to ANYONE on the board — that is what "reply on this
+      // board" means, and it is the whole point of the outbreak-watch cases.
+      // The poster and the claiming specialist seal their thread to each other
+      // (see the reply action); anyone else replies in the clear.
+      h += `<label class="f"><span class="f-lab">${L.reply}</span>
+          <span class="f-hint">${L.replyHint}</span>
+          <textarea id="rep-${c.id}"></textarea></label>
+        <div class="btn-row"><button class="btn sm" data-act="reply" data-id="${c.id}">${L.send}</button>
+        ${mine && isSpec?`<button class="btn ghost sm" data-act="order" data-id="${c.id}">${L.order}</button>`:""}
+        ${c.by.n===me.name && c.thread.length?`<button class="btn ghost sm" data-act="close" data-id="${c.id}">${L.record}</button>`:""}</div>`;
     }
     h += `<div class="btn-row"><button class="btn ghost sm" data-act="open" data-id="${c.id}">${L.close}</button>
       <button class="btn ghost sm" data-act="card" data-id="${c.id}">${L.copyCard}</button></div>`;
@@ -962,14 +968,18 @@ document.addEventListener("click", async e => {
     const ta = document.getElementById("rep-" + id);
     if (!ta || !ta.value.trim()) return;
     const text = ta.value.trim();
-    // Seal the reply end-to-end when both thread identities have keys: to the
-    // claimant if I posted the case, to the poster otherwise. Falls back to
-    // cleartext (marked in the UI) rather than blocking advice — this board
-    // exists for a war zone, and care outranks secrecy when keys are missing.
+    // Seal the reply end-to-end only between the two thread participants: if
+    // I am the poster it seals to the claimant, if I am the claimant it seals
+    // to the poster. Anyone ELSE replying (a passer-by answering a public
+    // outbreak alert) replies in the clear — the alert is public and so is
+    // the answer. Cleartext is also the fallback when a key is missing:
+    // care outranks secrecy in a war zone.
     const c = derive().find(x => x.id === id);
     const me = await CRYPTO.me();
-    const their = c && me
-      ? (fpEq(c.pk, me.pub) ? (c.claim && c.claim.pk) : c.pk) : null;
+    const iAmPoster = c && me && fpEq(c.pk, me.pub);
+    const iAmClaimant = c && me && c.claim && fpEq(c.claim.pk, me.pub);
+    const their = iAmPoster ? (c.claim && c.claim.pk)
+                : iAmClaimant ? c.pk : null;
     if (their && !fpEq(their, me && me.pub)){
       const box = await CRYPTO.seal(text, their);
       if (box){ const ev = emit("reply", { cid:id, enc:box });

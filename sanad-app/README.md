@@ -45,13 +45,16 @@ Locally: `cd sanad-app && gradle assembleDebug` (Java 17, Android SDK 34).
 
 1. **v0.1 (shipped):** native case board — post, triage-sort, claim,
    reply, share/import SND1 packets interoperable with the web board.
-2. **v0.2 (this code):** end-to-end sealed reply threads interoperable
+2. **v0.2 (shipped):** end-to-end sealed reply threads interoperable
    with the web board (ECDH P-256 + AES-GCM via platform crypto), Arabic
    RTL UI first-class, and the patient role — doctors AND patients.
-3. **v0.3:** the bitchat mesh, ported from `permissionlesstech/
-   bitchat-android` (public domain): BLE central+peripheral, 7-hop relay,
-   store-and-forward — plus the web board's GATT bridge contract
-   (service `f0a1d000-1e5a-4d0e-9a2b-000000000001`) so any phone running
-   SANAD is also the bridge for any phone running the web page.
+3. **v0.3 (this code):** the mesh on bitchat's store-and-forward model —
+   every SANAD phone is BLE peripheral AND central at once: it advertises
+   the web board's published bridge service (so any browser on the Sanad
+   page syncs through it automatically), scans for other SANAD phones and
+   hardware bridges, and exchanges full logs at every encounter. Idempotent
+   merge makes gossip safe; whoever walks between two wards carries the
+   board with them. Mesh runs while the app is open (a foreground service
+   is the next refinement).
 4. **v1.0:** Nostr fallback for worldwide reach when any internet exists,
    patient-facing mode, F-Droid/APK distribution page on the site.
