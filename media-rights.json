@@ -229,6 +229,13 @@
       "credit": "John Kiriakou — Wikimedia Commons",
       "source": "https://commons.wikimedia.org/wiki/File:John_Kiriakou_cropped.jpg",
       "licenseUrl": "https://commons.wikimedia.org/wiki/File:John_Kiriakou_cropped.jpg"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mo%20Amer.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Mo Amer — Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mo_Amer.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   ]
 }
