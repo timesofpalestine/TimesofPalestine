@@ -875,7 +875,10 @@ class StandingFlagTests(unittest.TestCase):
     a long archive shelf-life alone must not (owner report 2026-08-03)."""
 
     def test_long_shelf_life_news_can_lead_but_standing_pages_cannot(self):
-        built_at = datetime(2026, 8, 3, 12, tzinfo=timezone.utc)
+        # Hero freshness windows are measured against the REAL clock, so the
+        # fixture dates must be relative — fixed dates turned this test into a
+        # time bomb that broke main a day later (2026-08-04 outage).
+        built_at = datetime.now(timezone.utc)
         fresh_news = item()
         fresh_news.update({
             "title": "Israeli forces raid a Gaza district as the day begins",
