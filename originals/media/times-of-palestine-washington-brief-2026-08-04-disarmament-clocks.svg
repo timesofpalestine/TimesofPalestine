@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The roadmap's clocks and the force meant to enforce them</title>
+  <desc id="desc">A bilingual board showing the Board of Peace disarmament roadmap's deadlines announced on 31 July 2026, the International Stabilization Force's planned strength against what Israel has approved, and the sequence the Board set on 4 August 2026 under which Israeli withdrawal beyond the Yellow Line follows the completion of decommissioning.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="seq" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#286344"/>
+      <stop offset=".55" stop-color="#c7a86b"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:17px}
+      .small{font-size:20px}
+      .body{font-size:23px}
+      .label{font-size:18px;font-weight:800;letter-spacing:1.2px}
+      .fig{font-size:46px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="78" class="serif ivory" font-size="48" font-weight="800">The roadmap's clocks, and the force meant to enforce them</text>
+  <text x="90" y="122" class="sans muted body">Board of Peace disarmament roadmap, announced 31 July 2026 — sequence fixed 4 August 2026</text>
+  <text x="1510" y="166" class="arabic ivory" font-size="35" font-weight="800" text-anchor="end">الجداول الزمنية للخارطة والقوة المكلّفة بتنفيذها</text>
+  <text x="1510" y="198" class="arabic muted small" text-anchor="end">خارطة نزع السلاح المعلنة في 31 تموز/يوليو 2026 — وترتيب الخطوات في 4 آب/أغسطس</text>
+
+  <!-- Clocks row -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="232" width="352" height="212" rx="16" fill="#27282c" stroke="#c7a86b" stroke-width="2"/>
+    <text x="96" y="272" class="sans gold label">FIRST DEADLINE</text>
+    <text x="96" y="330" class="sans ivory fig">14 days</text>
+    <text x="96" y="364" class="sans muted small">to inventory Gaza's weapons</text>
+    <text x="96" y="390" class="sans muted small">and set the Phase 2 timetable</text>
+    <text x="398" y="424" class="arabic muted small" text-anchor="end">14 يوماً لجرد السلاح ووضع جدول المرحلة الثانية</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="446" y="232" width="352" height="212" rx="16" fill="#27282c" stroke="#c7a86b" stroke-width="2"/>
+    <text x="472" y="272" class="sans gold label">FULL DECOMMISSIONING</text>
+    <text x="472" y="330" class="sans ivory fig">~8 months</text>
+    <text x="472" y="364" class="sans muted small">weapons, production sites</text>
+    <text x="472" y="390" class="sans muted small">and tunnels, per Reuters</text>
+    <text x="774" y="424" class="arabic muted small" text-anchor="end">نحو ثمانية أشهر لتفكيك السلاح والأنفاق</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="822" y="232" width="352" height="212" rx="16" fill="#27282c" stroke="#61aa80" stroke-width="2"/>
+    <text x="848" y="272" class="sans green label">ISF MANDATE</text>
+    <text x="848" y="330" class="sans ivory fig">2 years</text>
+    <text x="848" y="364" class="sans muted small">Resolution 2803, adopted</text>
+    <text x="848" y="390" class="sans muted small">17 November 2025</text>
+    <text x="1150" y="424" class="arabic muted small" text-anchor="end">تفويض القوة سنتان بقرار 2803</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1198" y="232" width="332" height="212" rx="16" fill="#27282c" stroke="#dc6572" stroke-width="3"/>
+    <text x="1224" y="272" class="sans red label">STILL IN CAIRO</text>
+    <text x="1224" y="330" class="sans ivory fig">15 / 0</text>
+    <text x="1224" y="364" class="sans muted small">committee members named,</text>
+    <text x="1224" y="390" class="sans muted small">none admitted into Gaza</text>
+    <text x="1506" y="424" class="arabic muted small" text-anchor="end">15 عضواً في اللجنة ولا أحد دخل غزة</text>
+  </g>
+
+  <!-- Force strength -->
+  <text x="90" y="512" class="sans gold label">THE FORCE: PLANNED AGAINST APPROVED — القوة: المخطط مقابل المصادق عليه</text>
+
+  <g>
+    <text x="90" y="562" class="sans ivory small">Planned soldiers (Maj. Gen. Jasper Jeffers, February 2026)</text>
+    <rect x="90" y="574" width="1000" height="30" rx="6" fill="#286344"/>
+    <text x="1104" y="597" class="sans ivory small">20,000</text>
+    <text x="1510" y="597" class="arabic muted small" text-anchor="end">جنود مخططون</text>
+
+    <text x="90" y="644" class="sans ivory small">Planned police officers</text>
+    <rect x="90" y="656" width="600" height="30" rx="6" fill="#3f7d57"/>
+    <text x="704" y="679" class="sans ivory small">12,000</text>
+    <text x="1510" y="679" class="arabic muted small" text-anchor="end">شرطيون مخططون</text>
+
+    <text x="90" y="726" class="sans ivory small">Indonesia's pledge, later withdrawn over coordination with the Israeli military</text>
+    <rect x="90" y="738" width="400" height="30" rx="6" fill="#6c6a64"/>
+    <text x="504" y="761" class="sans muted small">8,000</text>
+    <text x="1510" y="761" class="arabic muted small" text-anchor="end">تعهد إندونيسيا الذي تراجعت عنه</text>
+
+    <text x="90" y="808" class="sans ivory small">Approved by Israel's cabinet for initial entry, 26 July 2026</text>
+    <rect x="90" y="820" width="12" height="30" rx="4" fill="#dc6572"/>
+    <text x="120" y="843" class="sans red small">about 200</text>
+    <text x="1510" y="843" class="arabic muted small" text-anchor="end">نحو 200 عنصر أقرّها المجلس الوزاري الإسرائيلي</text>
+  </g>
+
+  <!-- Sequence bar: disarmament first, withdrawal last -->
+  <rect x="90" y="466" width="1440" height="8" rx="4" fill="url(#seq)"/>
+  <text x="90" y="884" class="sans muted tiny">Roadmap text and Board of Peace statements, Reuters, Al Jazeera — Graphic: Times of Palestine / تايمز أوف فلسطين</text>
+</svg>
