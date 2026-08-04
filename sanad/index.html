@@ -1,0 +1,878 @@
+<!--
+  ============================================================================
+  SANAD — a page, not an app.  Built to drop into timesofpalestine.com.
+
+  DEPLOYMENT (live since 2026-08-04)
+  This directory is a Times of Palestine static feature: the build deploys it
+  verbatim at timesofpalestine.com/sanad/. The page is self-contained — no
+  build, no framework, no CDN, no external font — so it keeps working after
+  the network drops. sw.js (stale-while-revalidate) and manifest.webmanifest
+  ship alongside it for offline-after-first-visit. CONFIG.api is "" until a
+  vetted relay endpoint exists; every offline carrier works without it.
+
+  ARCHITECTURE — why it looks like this
+  Everything that happens is an append-only EVENT with a random id. State is
+  derived by replaying the log. Two devices sync by exchanging events they
+  don't already have, in any order, by any means. That is what makes the page
+  carrier-agnostic: the internet, a pasted block of text, an AirDropped file
+  and a Bluetooth bridge all move the same packets, and merging is idempotent.
+  ============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sanad — teleconsult board · Times of Palestine</title>
+<meta name="description" content="Post a de-identified clinical case, get it to a named specialist, and move it by internet, by pasted text, by AirDrop or over a Bluetooth bridge.">
+<meta name="theme-color" content="#0F1D1A">
+<link rel="manifest" href="./manifest.webmanifest">
+<style>
+:root{
+  --ink:#0F1D1A; --paper:#E9EDE8; --card:#FCFCFA; --line:#CDD4CD;
+  --green:#1F5E52; --red:#A61B2B; --amber:#A8720F; --slate:#5C6B66; --sand:#DDE2DA; --wire:#3A4E8C;
+  --sans:"Helvetica Neue",Helvetica,Arial,"Segoe UI",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;line-height:1.5}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--slate)}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px 90px}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+
+/* masthead + article furniture */
+.pub{background:var(--ink);color:var(--paper)}
+.pub-in{max-width:720px;margin:0 auto;padding:9px 18px;display:flex;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.pub a{color:var(--paper);text-decoration:none}
+.langs{margin-inline-start:auto;display:flex;gap:3px}
+.langs button{background:none;border:0;color:#8FA79F;font:inherit;cursor:pointer;padding:3px 5px}
+.langs button[aria-pressed="true"]{color:var(--paper);font-weight:700}
+header.art{max-width:720px;margin:0 auto;padding:26px 18px 14px}
+h1{font-size:31px;line-height:1.12;margin:0 0 10px;font-weight:700;letter-spacing:-.015em}
+.standfirst{font-size:16px;line-height:1.55;color:#31403C;margin:0 0 12px}
+.byline{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:8px 0}
+
+/* status strip */
+.strip{position:sticky;top:0;z-index:40;background:var(--paper);border-bottom:1px solid var(--line)}
+.strip-in{max-width:720px;margin:0 auto;padding:7px 18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate)}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--slate);margin-inline-end:5px;vertical-align:baseline}
+.dot.on{background:var(--green)} .dot.off{background:var(--line)} .dot.warn{background:var(--amber)}
+nav.tabs{border-bottom:1px solid var(--line);background:var(--paper)}
+.tabs-in{max-width:720px;margin:0 auto;display:flex;gap:2px;overflow-x:auto;padding:0 10px;scrollbar-width:none}
+.tabs-in::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;background:none;border:0;border-bottom:2px solid transparent;padding:11px 10px;font-size:13px;
+  color:var(--slate);cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--green);font-weight:700}
+
+/* blocks */
+.notice{border:1px solid var(--ink);background:#F5F2E4;padding:12px 14px;margin:16px 0;font-size:13px;line-height:1.55}
+.notice h3{margin:0 0 5px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.alarm{border:2px solid var(--red);background:#F7E7E7;padding:12px 14px;margin:14px 0;font-size:13px}
+.wire{border:1px solid var(--wire);background:#EEF1F8;padding:11px 13px;margin:14px 0;font-size:13px;line-height:1.55}
+.wire h3{margin:0 0 5px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--wire)}
+
+/* triage tag */
+.tag{position:relative;background:var(--card);border:1px solid var(--line);margin:0 0 14px;overflow:hidden}
+.tag::before{content:"";position:absolute;inset-block:0;inset-inline-start:0;width:7px;background:var(--slate)}
+.tag[data-u="red"]::before{background:var(--red)}
+.tag[data-u="amber"]::before{background:var(--amber)}
+.tag[data-u="routine"]::before{background:var(--green)}
+.tag[data-s="closed"]{opacity:.72}
+.perf{height:9px;background:repeating-linear-gradient(90deg,var(--sand) 0 5px,transparent 5px 10px);border-bottom:1px solid var(--line)}
+.tag-body{padding:12px 14px 14px;padding-inline-start:20px}
+.tag-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.ref{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.05em}
+.clock{font-family:var(--mono);font-size:11.5px;color:var(--slate)}
+.clock[data-over="1"]{color:var(--red);font-weight:700}
+.spec{font-size:16px;font-weight:700;margin:6px 0 2px;line-height:1.3}
+.meta{font-family:var(--mono);font-size:11px;color:var(--slate);margin:2px 0}
+.q{margin:9px 0 0;font-size:14px;line-height:1.55;white-space:pre-wrap}
+.qlabel{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);display:block;margin-bottom:3px}
+.pill{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.10em;text-transform:uppercase;
+  border:1px solid var(--line);padding:2px 7px;color:var(--slate)}
+.pill[data-k="claimed"]{border-color:var(--amber);color:var(--amber)}
+.pill[data-k="answered"]{border-color:var(--green);color:var(--green)}
+.pill[data-k="closed"]{border-color:var(--ink);color:var(--paper);background:var(--ink)}
+.pill[data-k="unsent"]{border-color:var(--wire);color:var(--wire)}
+.thread{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
+.msg{margin:0 0 11px;font-size:14px;line-height:1.55;white-space:pre-wrap}
+.msg-who{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);display:block;margin-bottom:2px}
+
+/* forms */
+label.f{display:block;margin:15px 0 0}
+.f-lab{font-size:13px;font-weight:700;display:block;margin-bottom:2px}
+.f-hint{font-size:12px;color:var(--slate);display:block;margin-bottom:6px;line-height:1.45}
+input[type=text],input[type=number],select,textarea{width:100%;font:inherit;font-size:16px;padding:9px 10px;
+  background:var(--card);border:1px solid var(--line);border-radius:0;color:var(--ink)}
+textarea{min-height:84px;resize:vertical;line-height:1.5}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.row>*{flex:1 1 150px}
+.check{display:flex;gap:9px;align-items:flex-start;margin:13px 0;font-size:13px;line-height:1.5;cursor:pointer}
+.check input{margin-top:3px;width:17px;height:17px;flex:0 0 auto;accent-color:var(--green)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip{font-size:12px;padding:5px 9px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--slate)}
+.chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.btn{font-size:14px;font-weight:700;padding:11px 16px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.wirebtn{background:var(--wire);border-color:var(--wire);color:#fff}
+.btn.sm{font-size:13px;padding:7px 12px}
+.btn-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;align-items:center}
+
+/* carrier */
+.carrier{border:1px solid var(--line);background:var(--card);padding:13px 14px;margin-bottom:12px}
+.carrier h3{margin:0 0 3px;font-size:14px}
+.carrier p{margin:0;font-size:12.5px;color:var(--slate);line-height:1.5}
+.packet{width:100%;font-family:var(--mono);font-size:11px;min-height:120px;word-break:break-all}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:14px 0}
+.cell{background:var(--card);padding:13px}
+.cell .n{font-family:var(--mono);font-size:24px;line-height:1}
+.cell .l{font-size:12px;color:var(--slate);margin-top:5px}
+.prose{font-size:14.5px;line-height:1.68}
+.prose h3{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:24px 0 6px}
+.prose p{margin:0 0 11px}
+.prose ul{margin:0 0 11px;padding-inline-start:20px}
+.prose li{margin-bottom:8px}
+.src{font-size:12px;color:var(--slate);line-height:1.6}
+.empty{text-align:center;padding:40px 12px;color:var(--slate);font-size:14px}
+.toast{position:fixed;inset-inline:0;bottom:0;background:var(--ink);color:var(--paper);padding:12px 18px;
+  font-size:13.5px;text-align:center;transform:translateY(100%);transition:transform .2s;z-index:80}
+.toast.show{transform:none}
+[hidden]{display:none !important}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
+</style>
+</head>
+<body>
+
+<div class="pub"><div class="pub-in">
+  <a href="/">Times of Palestine</a><span>· Sanad</span>
+  <span class="langs">
+    <button id="lang-en" aria-pressed="true">EN</button>
+    <button id="lang-ar" aria-pressed="false">ع</button>
+  </span>
+</div></div>
+
+<header class="art">
+  <h1 id="h1">A consult board that does not need the internet to work</h1>
+  <p class="standfirst" id="standfirst">Post a de-identified case. A named specialist claims it and answers. When the network is down, the same case travels as a block of text you can paste into any messaging app, hand over by AirDrop, or push through a Bluetooth bridge — and merges cleanly at the other end.</p>
+  <p class="byline" id="byline">Open tool · Times of Palestine · Not a medical service</p>
+</header>
+
+<div class="strip"><div class="strip-in">
+  <span id="s-net"><span class="dot off"></span>internet</span>
+  <span id="s-ble"><span class="dot off"></span>bluetooth</span>
+  <span id="s-out"><span class="dot off"></span>outbox 0</span>
+  <span id="s-me" style="margin-inline-start:auto"></span>
+</div></div>
+
+<nav class="tabs"><div class="tabs-in" role="tablist">
+  <button class="tab" role="tab" data-v="board" aria-selected="true">Cases</button>
+  <button class="tab" role="tab" data-v="post" aria-selected="false">New case</button>
+  <button class="tab" role="tab" data-v="carrier" aria-selected="false">Carrier</button>
+  <button class="tab" role="tab" data-v="me" aria-selected="false">Who you are</button>
+  <button class="tab" role="tab" data-v="about" aria-selected="false">How it works</button>
+</div></nav>
+
+<main class="wrap" id="main"></main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+"use strict";
+
+/* ========================== configuration ========================== */
+
+const CONFIG = {
+  // Leave "" to run offline-only. Set to your endpoint to enable the internet
+  // carrier. Contract: GET  {api}?since=<ms>  -> {events:[...]}
+  //                    POST {api}  body {events:[...]} -> {ok:true}
+  api: "",
+
+  // Bridge contract for the Bluetooth carrier. Any peripheral advertising this
+  // service works: an ESP32, a laptop running bleno, or a phone app in
+  // peripheral mode. The browser is always the central — see "How it works".
+  ble: {
+    service: "f0a1d000-1e5a-4d0e-9a2b-000000000001",
+    inbox:   "f0a1d000-1e5a-4d0e-9a2b-000000000002", // browser writes here
+    outbox:  "f0a1d000-1e5a-4d0e-9a2b-000000000003", // browser subscribes here
+    chunk: 180
+  }
+};
+
+const SPECIALTIES = ["General surgery","Orthopaedics / trauma","Plastics & burns","Vascular","Neurosurgery",
+  "Paediatrics","Paediatric surgery","Obstetrics","Anaesthesia / ICU","Infectious disease","Wound & stoma care",
+  "Nephrology / dialysis","Ophthalmology","Maxillofacial","Radiology","Internal medicine","Nutrition",
+  "Mental health","Physiotherapy / rehab"];
+const ZONES = ["North Gaza","Gaza City","Deir al-Balah","Khan Younis","Rafah","West Bank","Displaced / outside"];
+const URG = { red:{h:1,en:"Red · 1h",ar:"أحمر · ساعة"}, amber:{h:6,en:"Amber · 6h",ar:"برتقالي · ٦ ساعات"},
+              routine:{h:48,en:"Routine · 48h",ar:"عادي · ٤٨ ساعة"} };
+
+/* ========================== i18n ========================== */
+
+const T = {
+en:{dir:"ltr",
+ h1:"A consult board that does not need the internet to work",
+ stand:"Post a de-identified case. A named specialist claims it and answers. When the network is down, the same case travels as a block of text you can paste into any messaging app, hand over by AirDrop, or push through a Bluetooth bridge — and merges cleanly at the other end.",
+ byline:"Open tool · Times of Palestine · Not a medical service",
+ tabs:{board:"Cases",post:"New case",carrier:"Carrier",me:"Who you are",about:"How it works"},
+ noticeT:"Read before using",
+ notice:"Not a medical service and not an emergency line. Nothing here is monitored. Everything you type is stored on this device and travels to whoever you send it to — so no names, no ID numbers, no faces. If this is an emergency, do not wait for this board.",
+ open:"Open",claimed:"Claimed",answered:"Answered",closed:"Closed",unsent:"Not yet sent",
+ waiting:"Unanswered",target:"target",
+ fSpec:"Specialty",fUrg:"Urgency",fAge:"Age band",fSex:"Sex",fZone:"Zone",fFac:"Facility or medical point",
+ fDays:"Days since onset",fPres:"What happened and what you see",fFind:"Findings, vitals, what you have done",
+ fRes:"What you have and what you lack",fQ:"The one question you need answered",fContact:"How the specialist reaches you",
+ presHint:"Mechanism and course. Plain words are fine.",
+ resHint:"Theatre time, imaging, antibiotics, oxygen, blood, fixators, dressings — and what has run out.",
+ qHint:"A specialist answers a question faster than a story.",
+ contactHint:"Something you can be raised on when the network returns.",
+ consent:"The patient or guardian gave verbal consent for this case to be discussed with clinicians outside Gaza.",
+ deid:"I removed names, ID numbers, dates of birth and faces from everything here.",
+ postBtn:"Save and queue",openCase:"Open",close:"Close",claim:"Claim",reply:"Your advice",
+ send:"Send advice",order:"Order what the patient needs",record:"Record outcome",
+ copyCard:"Copy readable card",
+ carrierT:"Carrier",
+ carrierSub:"One packet format, four ways to move it. Nothing is lost if you use all of them at once — every packet carries an id, and importing the same one twice changes nothing.",
+ netT:"Internet",netOff:"No endpoint configured on this page. Everything else still works.",
+ netOn:"Sends and receives automatically whenever this device is online.",
+ shareT:"Hand it to the person next to you",
+ shareSub:"Opens your phone's own share sheet — AirDrop on iPhone, Quick Share on Android. That is a direct radio link between two handsets with no internet and no account. Works on every phone, including iPhones.",
+ pasteT:"Paste into any messaging app",
+ pasteSub:"Copy the packet and send it however you already send things: WhatsApp, Signal, SMS, email. Whoever receives it pastes it back in below.",
+ fileT:"File",fileSub:"Save the packets as a file to move by Bluetooth file transfer, cable, or a USB stick carried by hand.",
+ bleT:"Bluetooth bridge",
+ bleSub:"A web page can only act as a Bluetooth client, so it cannot mesh with another phone by itself. It can talk to a bridge — a small device or companion app in peripheral mode — which then carries packets onto a real mesh.",
+ bleGo:"Connect to a bridge",bleNo:"This browser has no Web Bluetooth. Chrome or Edge on Android, ChromeOS, Windows or macOS. Safari and Firefox do not support it on any platform.",
+ exportAll:"Everything",exportNew:"Only what is new",copy:"Copy",share:"Share",save:"Save file",
+ importLab:"Paste packets you received",importBtn:"Import",
+ meT:"Who you are",meSub:"Kept on this device only. It travels with the cases you send so a specialist knows who is asking.",
+ roleField:"Frontline clinician",roleSpec:"Volunteer specialist",
+ mName:"Name or initials",mWhere:"Country of practice",mFac:"Facility",mZone:"Zone",mSpecs:"Specialties you will take",
+ mLic:"Licence number",mBody:"Issuing authority",mContact:"Contact handle",mSave:"Save",
+ vet:"Licence details travel with your replies and are marked unverified. Somebody has to check them. This page cannot.",
+ none:"Nothing here yet.",wipe:"Erase everything on this device"},
+
+ar:{dir:"rtl",
+ h1:"لوحة استشارات لا تحتاج إنترنت لتعمل",
+ stand:"ارفع حالة بلا هوية. يتسلّمها أخصائي بالاسم ويجيب. وحين تنقطع الشبكة تنتقل الحالة نفسها ككتلة نص تلصقها في أي تطبيق مراسلة، أو تسلّمها عبر AirDrop، أو تدفعها عبر جسر بلوتوث — وتندمج سليمة في الطرف الآخر.",
+ byline:"أداة مفتوحة · تايمز أوف فلسطين · ليست خدمة طبية",
+ tabs:{board:"الحالات",post:"حالة جديدة",carrier:"الناقل",me:"من أنت",about:"كيف تعمل"},
+ noticeT:"اقرأ قبل الاستخدام",
+ notice:"ليست خدمة طبية ولا خط طوارئ. لا أحد يراقب هذه اللوحة. كل ما تكتبه يُحفظ على جهازك وينتقل إلى من ترسله إليه — فلا أسماء ولا أرقام هوية ولا وجوه. إن كانت حالة طارئة فلا تنتظر هذه اللوحة.",
+ open:"مفتوحة",claimed:"مُتسلَّمة",answered:"أُجيبت",closed:"مغلقة",unsent:"لم تُرسل بعد",
+ waiting:"بلا رد منذ",target:"المهلة",
+ fSpec:"التخصص",fUrg:"الاستعجال",fAge:"الفئة العمرية",fSex:"الجنس",fZone:"المنطقة",fFac:"المرفق أو النقطة الطبية",
+ fDays:"الأيام منذ البدء",fPres:"ماذا حدث وماذا ترى",fFind:"الفحص والعلامات وما فعلته",
+ fRes:"ما يتوفر وما ينقص",fQ:"السؤال الواحد الذي تحتاج إجابته",fContact:"كيف يصل إليك الأخصائي",
+ presHint:"آلية الإصابة ومسارها. الكلمات البسيطة تكفي.",
+ resHint:"وقت العمليات، التصوير، المضادات، الأكسجين، الدم، المثبتات، الضمادات — وما نفد.",
+ qHint:"الأخصائي يجيب على سؤال أسرع من إجابته على سرد.",
+ contactHint:"وسيلة يمكن الوصول إليك عبرها عند عودة الشبكة.",
+ consent:"أعطى المريض أو وليّه موافقة شفهية على مناقشة الحالة مع أطباء خارج غزة.",
+ deid:"أزلت الأسماء وأرقام الهوية وتواريخ الميلاد والوجوه من كل ما هنا.",
+ postBtn:"احفظ وأدرج في الطابور",openCase:"افتح",close:"إغلاق",claim:"تسلّم",reply:"مشورتك",
+ send:"إرسال المشورة",order:"اطلب ما يحتاجه المريض",record:"سجّل النتيجة",
+ copyCard:"انسخ بطاقة مقروءة",
+ carrierT:"الناقل",
+ carrierSub:"صيغة واحدة للحزمة وأربع طرق لنقلها. لا شيء يضيع إن استخدمتها جميعًا — كل حزمة تحمل معرّفًا، واستيرادها مرتين لا يغيّر شيئًا.",
+ netT:"الإنترنت",netOff:"لا يوجد خادم مهيّأ في هذه الصفحة. كل ما عداه يعمل.",
+ netOn:"يرسل ويستقبل تلقائيًا كلما كان الجهاز متصلًا.",
+ shareT:"سلّمها لمن بجوارك",
+ shareSub:"يفتح قائمة المشاركة في هاتفك — AirDrop في آيفون وQuick Share في أندرويد. وهي وصلة راديو مباشرة بين جهازين بلا إنترنت وبلا حساب. تعمل على كل الهواتف بما فيها آيفون.",
+ pasteT:"الصقها في أي تطبيق مراسلة",
+ pasteSub:"انسخ الحزمة وأرسلها بالطريقة التي تستخدمها أصلًا: واتساب، سيغنال، رسالة نصية، بريد. ومن يستلمها يلصقها هنا أدناه.",
+ fileT:"ملف",fileSub:"احفظ الحزم كملف لنقله عبر بلوتوث أو كابل أو ذاكرة يحملها شخص.",
+ bleT:"جسر بلوتوث",
+ bleSub:"صفحة الويب لا تعمل إلا كعميل بلوتوث، فلا تستطيع بناء شبكة مع هاتف آخر بنفسها. لكنها تستطيع مخاطبة جسر — جهاز صغير أو تطبيق مرافق في وضع الطرف — ينقل الحزم إلى شبكة حقيقية.",
+ bleGo:"اتصل بجسر",bleNo:"هذا المتصفح لا يدعم Web Bluetooth. استخدم كروم أو إيدج على أندرويد أو ويندوز أو ماك. سفاري وفَيَرفُكس لا يدعمانه إطلاقًا.",
+ exportAll:"كل شيء",exportNew:"الجديد فقط",copy:"نسخ",share:"مشاركة",save:"حفظ ملف",
+ importLab:"الصق الحزم التي استلمتها",importBtn:"استيراد",
+ meT:"من أنت",meSub:"يُحفظ على هذا الجهاز فقط، وينتقل مع الحالات التي ترسلها ليعرف الأخصائي من يسأل.",
+ roleField:"طبيب ميداني",roleSpec:"أخصائي متطوع",
+ mName:"الاسم أو الأحرف الأولى",mWhere:"بلد الممارسة",mFac:"المرفق",mZone:"المنطقة",mSpecs:"التخصصات",
+ mLic:"رقم الترخيص",mBody:"الجهة المانحة",mContact:"وسيلة التواصل",mSave:"حفظ",
+ vet:"تنتقل بيانات ترخيصك مع ردودك وتُعرض كغير مُتحقَّقة. لا بد لجهة أن تدقّقها، وهذه الصفحة ليست تلك الجهة.",
+ none:"لا شيء بعد.",wipe:"امسح كل شيء من هذا الجهاز"}
+};
+
+/* ========================== storage ========================== */
+
+const mem = {};
+const store = {
+  get(k){ try{ const v = localStorage.getItem(k); return v===null ? (k in mem ? mem[k] : null) : v; }
+          catch{ return k in mem ? mem[k] : null; } },
+  set(k,v){ mem[k]=v; try{ localStorage.setItem(k,v); }catch{} },
+  del(k){ delete mem[k]; try{ localStorage.removeItem(k); }catch{} }
+};
+
+const KEY = { ev:"sanad.events", me:"sanad.me", sent:"sanad.sent", lang:"sanad.lang" };
+
+let EVENTS = JSON.parse(store.get(KEY.ev) || "[]");
+let ME = JSON.parse(store.get(KEY.me) || "null");
+let SENT = new Set(JSON.parse(store.get(KEY.sent) || "[]"));   // event ids already pushed out
+let LANG = store.get(KEY.lang) || "en";
+let VIEW = "board";
+let OPENID = null;
+let BLE = { device:null, inbox:null, buffer:"" };
+
+const t = () => T[LANG];
+const saveEvents = () => store.set(KEY.ev, JSON.stringify(EVENTS));
+const saveSent = () => store.set(KEY.sent, JSON.stringify([...SENT]));
+
+/* ========================== event log ========================== */
+
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2,8);
+
+function emit(type, payload){
+  const ev = { id:uid(), ty:type, ts:Date.now(), by:ME ? {n:ME.name,r:ME.role,c:ME.country||ME.facility||""} : {n:"anon",r:"field",c:""}, ...payload };
+  EVENTS.push(ev); saveEvents(); pushOut(); render();
+  return ev;
+}
+
+function merge(incoming){
+  const have = new Set(EVENTS.map(e=>e.id));
+  let n = 0;
+  for (const e of incoming){
+    if (!e || !e.id || !e.ty || have.has(e.id)) continue;
+    have.add(e.id); EVENTS.push(e); n++;
+    // Deliberately NOT marked sent: this device now relays it onward, which is
+    // what makes a chain of handsets a mesh. Loops terminate on their own —
+    // a packet is only ever sent once from any given device.
+  }
+  if (n){ EVENTS.sort((a,b)=>a.ts-b.ts); saveEvents(); render(); }
+  return n;
+}
+
+// Replay the log into case state. Order-independent by construction:
+// later events only add, and status is recomputed from what exists.
+function derive(){
+  const map = new Map();
+  for (const e of EVENTS){
+    if (e.ty === "case"){
+      map.set(e.id, { id:e.id, ref:e.ref, createdAt:e.ts, by:e.by, ...e.c,
+                      thread:[], orders:[], claim:null, outcome:null });
+    }
+  }
+  for (const e of EVENTS){
+    const c = map.get(e.cid); if (!c) continue;
+    if (e.ty === "reply") c.thread.push({ id:e.id, ts:e.ts, by:e.by, text:e.text });
+    else if (e.ty === "claim"){ if (!c.claim || e.ts < c.claim.ts) c.claim = { ts:e.ts, by:e.by }; }
+    else if (e.ty === "order") c.orders.push({ id:e.id, ts:e.ts, ...e.o, status:"pending" });
+    else if (e.ty === "ostat"){ const o = c.orders.find(x=>x.id===e.oid); if (o) o.status = e.status; }
+    else if (e.ty === "close") c.outcome = { ts:e.ts, ...e.out };
+  }
+  for (const c of map.values()){
+    c.thread.sort((a,b)=>a.ts-b.ts);
+    const specReply = c.thread.find(m => m.by.r === "specialist");
+    c.firstAnswerAt = specReply ? specReply.ts : null;
+    c.status = c.outcome ? "closed" : specReply ? "answered" : c.claim ? "claimed" : "open";
+  }
+  return [...map.values()];
+}
+
+/* ========================== packets ========================== */
+/* One event per line: "SND1." + base64url(JSON). Base64 because a packet has
+   to survive being pasted through WhatsApp, SMS and email without a single
+   character being mangled. Readability is handled separately by the card. */
+
+const b64u = {
+  enc(s){ return btoa(String.fromCharCode(...new TextEncoder().encode(s))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,""); },
+  dec(s){ const b = atob(s.replace(/-/g,"+").replace(/_/g,"/")); return new TextDecoder().decode(Uint8Array.from(b, ch=>ch.charCodeAt(0))); }
+};
+
+const packetize = evs => evs.map(e => "SND1." + b64u.enc(JSON.stringify(e))).join("\n");
+
+function depacketize(text){
+  const out = [];
+  for (const line of String(text).split(/[\s]+/)){
+    const m = line.trim();
+    if (!m.startsWith("SND1.")) continue;
+    try { out.push(JSON.parse(b64u.dec(m.slice(5)))); } catch {}
+  }
+  return out;
+}
+
+const unsent = () => EVENTS.filter(e => !SENT.has(e.id));
+
+function markSent(evs){ evs.forEach(e => SENT.add(e.id)); saveSent(); render(); }
+
+// Human-readable version for pasting straight into an existing WhatsApp group.
+function card(c){
+  return [`SANAD ${c.ref} · ${c.specialty} · ${LANG==="ar"?URG[c.urgency].ar:URG[c.urgency].en}`,
+    `${c.ageBand} ${c.sex} · ${c.zone} · ${c.facility}${c.days!=null&&c.days!==""?` · day ${c.days}`:""}`,
+    `PRESENTATION: ${c.presentation}`, `FINDINGS: ${c.findings}`,
+    `HAVE/LACK: ${c.resources}`, `QUESTION: ${c.question}`, `Reply to: ${c.contact}`].join("\n");
+}
+
+/* ========================== carriers ========================== */
+
+async function netPull(){
+  if (!CONFIG.api || !navigator.onLine) return;
+  try {
+    const since = Number(store.get("sanad.since") || 0);
+    const r = await fetch(`${CONFIG.api}?since=${since}`, { headers:{ "accept":"application/json" } });
+    if (!r.ok) return;
+    const d = await r.json();
+    if (Array.isArray(d.events) && d.events.length){
+      merge(d.events);
+      store.set("sanad.since", String(Math.max(...d.events.map(e=>e.ts||0))));
+    }
+  } catch {}
+}
+
+async function netPush(){
+  if (!CONFIG.api || !navigator.onLine) return;
+  const q = unsent(); if (!q.length) return;
+  try {
+    const r = await fetch(CONFIG.api, { method:"POST", headers:{ "content-type":"application/json" },
+      body: JSON.stringify({ events:q }) });
+    if (r.ok) markSent(q);
+  } catch {}
+}
+
+const pushOut = () => { netPush(); blePush(); };
+
+async function bleConnect(){
+  if (!navigator.bluetooth) return toast(t().bleNo);
+  try {
+    const d = await navigator.bluetooth.requestDevice({ filters:[{ services:[CONFIG.ble.service] }] });
+    d.addEventListener("gattserverdisconnected", () => { BLE = { device:null, inbox:null, buffer:"" }; render(); });
+    const server = await d.gatt.connect();
+    const svc = await server.getPrimaryService(CONFIG.ble.service);
+    const inbox = await svc.getCharacteristic(CONFIG.ble.inbox);
+    const outbox = await svc.getCharacteristic(CONFIG.ble.outbox);
+    await outbox.startNotifications();
+    outbox.addEventListener("characteristicvaluechanged", ev => {
+      BLE.buffer += new TextDecoder().decode(ev.target.value);
+      const lines = BLE.buffer.split("\n");
+      BLE.buffer = lines.pop();                       // keep the partial line
+      const got = merge(depacketize(lines.join("\n")));
+      if (got) toast(`+${got}`);
+    });
+    BLE = { device:d, inbox, buffer:"" };
+    toast(d.name || "bridge");
+    blePush(); render();
+  } catch(e){ if (e && e.name !== "NotFoundError") toast(String(e.message || e)); }
+}
+
+async function blePush(){
+  if (!BLE.inbox) return;
+  const q = unsent(); if (!q.length) return;
+  const bytes = new TextEncoder().encode(packetize(q) + "\n");
+  try {
+    for (let i = 0; i < bytes.length; i += CONFIG.ble.chunk)
+      await BLE.inbox.writeValueWithResponse(bytes.slice(i, i + CONFIG.ble.chunk));
+    markSent(q);
+  } catch(e){ toast("bridge write failed"); }
+}
+
+async function handOff(text, filename){
+  const file = new File([text], filename, { type:"text/plain" });
+  if (navigator.canShare && navigator.canShare({ files:[file] })){
+    try { await navigator.share({ files:[file], title:"Sanad packets" }); return true; } catch { return false; }
+  }
+  if (navigator.share){ try { await navigator.share({ text }); return true; } catch { return false; } }
+  return copy(text);
+}
+
+async function copy(text){
+  try { await navigator.clipboard.writeText(text); toast("copied"); return true; }
+  catch {
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    const ok = document.execCommand("copy"); ta.remove();
+    toast(ok ? "copied" : "copy failed"); return ok;
+  }
+}
+
+function saveFile(text, name){
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([text], { type:"text/plain" }));
+  a.download = name; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+}
+
+/* ========================== small helpers ========================== */
+
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g, ch => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[ch]));
+function elapsed(from, to = Date.now()){
+  const ms = Math.max(0, to - from), h = Math.floor(ms/3600000), m = Math.floor((ms%3600000)/60000);
+  return h >= 48 ? `${Math.floor(h/24)}d` : `${String(h).padStart(2,"0")}h ${String(m).padStart(2,"0")}m`;
+}
+let toastTimer;
+function toast(msg){
+  const el = document.getElementById("toast");
+  el.textContent = msg; el.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(()=>el.classList.remove("show"), 2400);
+}
+const val = id => (document.getElementById(id) || {}).value || "";
+const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.addEventListener(ev, fn); };
+
+/* ========================== views ========================== */
+
+function viewBoard(){
+  const cases = derive().sort((a,b)=>{
+    const r = { red:0, amber:1, routine:2 };
+    if ((a.status==="closed") !== (b.status==="closed")) return a.status==="closed" ? 1 : -1;
+    if (r[a.urgency] !== r[b.urgency]) return r[a.urgency] - r[b.urgency];
+    return a.createdAt - b.createdAt;
+  });
+  const L = t();
+  let h = `<div class="notice"><h3>${L.noticeT}</h3>${esc(L.notice)}</div>`;
+  if (!cases.length) return h + `<div class="empty">${L.none}</div>`;
+  h += cases.map(c => caseHTML(c, c.id === OPENID)).join("");
+  return h;
+}
+
+function caseHTML(c, open){
+  const L = t(), me = ME || {};
+  const over = !c.firstAnswerAt && Date.now() - c.createdAt > URG[c.urgency].h * 3600000;
+  const mine = c.by.n === me.name || (c.claim && c.claim.by.n === me.name);
+  const isSpec = me.role === "specialist";
+  const clock = c.status === "closed" ? L.closed
+    : c.firstAnswerAt ? `${L.answered} · ${elapsed(c.createdAt, c.firstAnswerAt)}`
+    : `${L.waiting} ${elapsed(c.createdAt)} / ${L.target} ${URG[c.urgency].h}h`;
+
+  let h = `<article class="tag" data-u="${c.urgency}" data-s="${c.status}"><div class="perf"></div><div class="tag-body">
+    <div class="tag-top"><span class="ref">${esc(c.ref)}</span><span class="clock" data-over="${over?1:0}">${esc(clock)}</span></div>
+    <h2 class="spec">${esc(c.specialty)}</h2>
+    <p class="meta">${esc(c.ageBand)} · ${esc(c.sex)} · ${esc(c.zone)} · ${esc(c.facility)}${c.days!=null&&c.days!==""?` · day ${esc(c.days)}`:""}</p>
+    <p style="margin:8px 0 0"><span class="pill" data-k="${c.status}">${esc(L[c.status])}</span>
+      ${c.claim?`<span class="meta"> ${esc(c.claim.by.n)}${c.claim.by.c?", "+esc(c.claim.by.c):""}</span>`:""}
+      ${!SENT.has(c.id)?`<span class="pill" data-k="unsent">${esc(L.unsent)}</span>`:""}</p>
+    <p class="q"><span class="qlabel">${L.fQ}</span>${esc(c.question)}</p>`;
+
+  if (!open){
+    h += `<div class="btn-row"><button class="btn ghost sm" data-act="open" data-id="${c.id}">${L.openCase}</button>
+      ${isSpec && c.status==="open" ? `<button class="btn sm" data-act="claim" data-id="${c.id}">${L.claim}</button>` : ""}</div>`;
+  } else {
+    h += `<p class="q"><span class="qlabel">${L.fPres}</span>${esc(c.presentation)}</p>
+      <p class="q"><span class="qlabel">${L.fFind}</span>${esc(c.findings)}</p>
+      <p class="q"><span class="qlabel">${L.fRes}</span>${esc(c.resources)}</p>
+      <p class="q"><span class="qlabel">${L.fContact}</span><span class="mono" style="font-size:13px">${esc(c.contact)}</span></p>`;
+
+    if (c.thread.length) h += `<div class="thread">` + c.thread.map(m =>
+      `<p class="msg"><span class="msg-who">${esc(m.by.n)} · ${m.by.r==="specialist"?"specialist":"field"} · ${new Date(m.ts).toISOString().slice(5,16).replace("T"," ")}</span>${esc(m.text)}</p>`).join("") + `</div>`;
+
+    if (c.orders.length) h += `<div class="thread"><span class="qlabel">orders</span>` + c.orders.map(o =>
+      `<p class="msg mono" style="font-size:12.5px">${esc(o.type)} · ${esc(o.items)} · ${esc(o.point)} · <strong>${esc(o.code)}</strong> · ${esc(o.status)}
+        ${o.status==="pending"?`<br><button class="btn ghost sm" data-act="ofill" data-id="${c.id}" data-oid="${o.id}">collected</button>
+        <button class="btn ghost sm" data-act="ounav" data-id="${c.id}" data-oid="${o.id}">not available</button>`:""}</p>`).join("") + `</div>`;
+
+    if (c.outcome) h += `<div class="thread"><span class="qlabel">outcome</span>
+      <p class="msg mono" style="font-size:13px">${esc(c.outcome.advice)} · 72h: ${esc(c.outcome.status72h)}</p>
+      ${c.outcome.note?`<p class="msg">${esc(c.outcome.note)}</p>`:""}</div>`;
+
+    if (ME && c.status !== "closed"){
+      if (isSpec && c.status === "open") h += `<div class="btn-row"><button class="btn sm" data-act="claim" data-id="${c.id}">${L.claim}</button></div>`;
+      if (mine){
+        h += `<label class="f"><span class="f-lab">${L.reply}</span><textarea id="rep-${c.id}"></textarea></label>
+          <div class="btn-row"><button class="btn sm" data-act="reply" data-id="${c.id}">${L.send}</button>
+          ${isSpec?`<button class="btn ghost sm" data-act="order" data-id="${c.id}">${L.order}</button>`:""}
+          ${c.by.n===me.name && c.thread.length?`<button class="btn ghost sm" data-act="close" data-id="${c.id}">${L.record}</button>`:""}</div>`;
+      }
+    }
+    h += `<div class="btn-row"><button class="btn ghost sm" data-act="open" data-id="${c.id}">${L.close}</button>
+      <button class="btn ghost sm" data-act="card" data-id="${c.id}">${L.copyCard}</button></div>`;
+  }
+  return h + `</div></article>`;
+}
+
+function viewPost(){
+  const L = t();
+  const opt = (a, sel) => a.map(x => `<option${x===sel?" selected":""}>${esc(x)}</option>`).join("");
+  return `<div class="notice"><h3>${L.noticeT}</h3>${esc(L.notice)}</div>
+  <div class="row">
+    <label class="f"><span class="f-lab">${L.fSpec}</span><select id="p-spec">${opt(SPECIALTIES)}</select></label>
+    <label class="f"><span class="f-lab">${L.fUrg}</span><select id="p-urg">
+      ${Object.entries(URG).map(([k,v])=>`<option value="${k}"${k==="amber"?" selected":""}>${LANG==="ar"?v.ar:v.en}</option>`).join("")}
+    </select></label>
+  </div>
+  <div class="row">
+    <label class="f"><span class="f-lab">${L.fAge}</span><select id="p-age">${opt(["under 1","1–4","5–11","12–17","adult 18–49","50+"],"adult 18–49")}</select></label>
+    <label class="f"><span class="f-lab">${L.fSex}</span><select id="p-sex">${opt(["F","M","unknown"])}</select></label>
+    <label class="f"><span class="f-lab">${L.fDays}</span><input type="number" min="0" id="p-days"></label>
+  </div>
+  <div class="row">
+    <label class="f"><span class="f-lab">${L.fZone}</span><select id="p-zone">${opt(ZONES, ME&&ME.zone)}</select></label>
+    <label class="f"><span class="f-lab">${L.fFac}</span><input type="text" id="p-fac" value="${esc(ME&&ME.facility||"")}"></label>
+  </div>
+  <label class="f"><span class="f-lab">${L.fPres}</span><span class="f-hint">${L.presHint}</span><textarea id="p-pres"></textarea></label>
+  <label class="f"><span class="f-lab">${L.fFind}</span><textarea id="p-find" style="min-height:70px"></textarea></label>
+  <label class="f"><span class="f-lab">${L.fRes}</span><span class="f-hint">${L.resHint}</span><textarea id="p-res" style="min-height:64px"></textarea></label>
+  <label class="f"><span class="f-lab">${L.fQ}</span><span class="f-hint">${L.qHint}</span><textarea id="p-q" style="min-height:56px"></textarea></label>
+  <label class="f"><span class="f-lab">${L.fContact}</span><span class="f-hint">${L.contactHint}</span><input type="text" id="p-contact" value="${esc(ME&&ME.contact||"")}"></label>
+  <label class="check"><input type="checkbox" id="p-consent"><span>${L.consent}</span></label>
+  <label class="check"><input type="checkbox" id="p-deid"><span>${L.deid}</span></label>
+  <div class="btn-row"><button class="btn" data-act="savecase">${L.postBtn}</button></div>`;
+}
+
+function viewCarrier(){
+  const L = t(), q = unsent().length;
+  const bleOK = !!navigator.bluetooth;
+  return `<h2 class="spec" style="font-size:20px;margin-top:18px">${L.carrierT}</h2>
+  <p class="f-hint">${L.carrierSub}</p>
+
+  <div class="carrier"><h3>${L.netT}</h3><p>${CONFIG.api ? L.netOn : L.netOff}</p></div>
+
+  <div class="carrier"><h3>${L.shareT}</h3><p>${L.shareSub}</p>
+    <div class="btn-row">
+      <button class="btn sm" data-act="share" data-scope="new">${L.share} · ${L.exportNew} (${q})</button>
+      <button class="btn ghost sm" data-act="share" data-scope="all">${L.exportAll}</button>
+    </div></div>
+
+  <div class="carrier"><h3>${L.pasteT}</h3><p>${L.pasteSub}</p>
+    <div class="btn-row">
+      <button class="btn sm" data-act="copy" data-scope="new">${L.copy} · ${L.exportNew} (${q})</button>
+      <button class="btn ghost sm" data-act="copy" data-scope="all">${L.exportAll}</button>
+      <button class="btn ghost sm" data-act="file" data-scope="new">${L.save}</button>
+    </div>
+    <label class="f"><span class="f-lab">${L.importLab}</span>
+      <textarea id="imp" class="packet" placeholder="SND1.…"></textarea></label>
+    <div class="btn-row"><button class="btn sm" data-act="import">${L.importBtn}</button></div>
+  </div>
+
+  <div class="carrier"><h3>${L.bleT}</h3><p>${L.bleSub}</p>
+    <div class="btn-row">
+      <button class="btn wirebtn sm" data-act="ble"${bleOK?"":" disabled"}>${BLE.device ? (BLE.device.name||"connected") : L.bleGo}</button>
+    </div>
+    ${bleOK ? "" : `<p style="margin-top:8px;color:var(--red);font-size:12.5px">${L.bleNo}</p>`}
+    <p class="mono" style="margin-top:10px;font-size:11px">service ${CONFIG.ble.service}<br>write ${CONFIG.ble.inbox}<br>notify ${CONFIG.ble.outbox}</p>
+  </div>
+
+  <div class="grid">
+    <div class="cell"><div class="n">${EVENTS.length}</div><div class="l">packets held</div></div>
+    <div class="cell"><div class="n">${q}</div><div class="l">not yet sent</div></div>
+    <div class="cell"><div class="n">${(sz => sz < 1024 ? sz + " B" : (sz/1024).toFixed(1) + " KB")(new Blob([JSON.stringify(EVENTS)]).size)}</div><div class="l">on this device</div></div>
+  </div>
+  <div class="btn-row"><button class="btn ghost sm" data-act="wipe">${L.wipe}</button></div>`;
+}
+
+function viewMe(){
+  const L = t(), m = ME || { role:"field" };
+  const opt = (a, sel) => a.map(x => `<option${x===sel?" selected":""}>${esc(x)}</option>`).join("");
+  return `<h2 class="spec" style="font-size:20px;margin-top:18px">${L.meT}</h2>
+  <p class="f-hint">${L.meSub}</p>
+  <div class="chips">
+    <button class="chip" data-act="role" data-role="field" aria-pressed="${m.role==="field"}">${L.roleField}</button>
+    <button class="chip" data-act="role" data-role="specialist" aria-pressed="${m.role==="specialist"}">${L.roleSpec}</button>
+  </div>
+  <div class="row">
+    <label class="f"><span class="f-lab">${L.mName}</span><input type="text" id="m-name" value="${esc(m.name||"")}"></label>
+    ${m.role==="specialist"
+      ? `<label class="f"><span class="f-lab">${L.mWhere}</span><input type="text" id="m-country" value="${esc(m.country||"")}"></label>`
+      : `<label class="f"><span class="f-lab">${L.mZone}</span><select id="m-zone">${opt(ZONES, m.zone)}</select></label>`}
+  </div>
+  ${m.role==="specialist"
+    ? `<div class="row">
+         <label class="f"><span class="f-lab">${L.mLic}</span><input type="text" id="m-lic" value="${esc(m.lic||"")}"></label>
+         <label class="f"><span class="f-lab">${L.mBody}</span><input type="text" id="m-body" value="${esc(m.body||"")}"></label>
+       </div><p class="f-hint" style="margin-top:8px">${L.vet}</p>`
+    : `<label class="f"><span class="f-lab">${L.mFac}</span><input type="text" id="m-fac" value="${esc(m.facility||"")}"></label>`}
+  <label class="f"><span class="f-lab">${L.mContact}</span><input type="text" id="m-contact" value="${esc(m.contact||"")}"></label>
+  <div class="btn-row"><button class="btn" data-act="saveme">${L.mSave}</button></div>`;
+}
+
+function viewAbout(){
+  if (LANG === "ar") return `<div class="prose">
+  <h3>لماذا صفحة لا تطبيق</h3>
+  <p>التطبيق يحتاج أن يُعثر عليه ويُثبَّت ويُحدَّث ويُوثق به، والمتجر الذي يأتي منه يمكن أن يُسحب منه. أما الصفحة فرابط. وهذه الصفحة ملف واحد بلا إطار برمجي ولا خطوط تُجلب ولا سكربتات من طرف ثالث، فمتى حُمّلت واصلت العمل بعد انقطاع الشبكة. وملف الخدمة المرفق يجعلها تنجو من إعادة التحميل أيضاً.</p>
+
+  <h3>ما الذي أُخذ من «بيتشات»</h3>
+  <p>«بيتشات» هو تطبيق المراسلة عبر شبكة بلوتوث المتداخلة الذي أطلقه جاك دورسي تجريبياً في يوليو/تموز 2025. كل هاتف فيه مستقبِل وناقل معاً؛ تقفز الرسالة من جهاز إلى جهاز حتى سبع قفزات، متجاوزةً مدى وصلة البلوتوث الواحدة. والرسائل الموجهة لمن هو خارج التغطية تخزّنها الأجهزة القريبة وتسلّمها له حين يعود.</p>
+  <p>الفكرة القابلة للنقل ليست الراديو، بل أن الرسالة حزمة مكتفية بذاتها ينقلها أي ناقل ويحملها أي جهاز، فتكون الشبكة هي أياً كان ما يعمل في تلك اللحظة. هذه الصفحة مبنية بالطريقة نفسها: كل فعل حزمة تُلحق بسجل ولا تُعدَّل، والحالة تُعاد قراءتها من الحزم، واستيراد الحزمة نفسها مرتين لا يغيّر شيئاً. هذا ما يتيح تشغيل أربعة نواقل معاً دون أن تتكرر حالة واحدة.</p>
+
+  <h3>لماذا لا تستطيع الصفحة بناء شبكة بلوتوث بنفسها</h3>
+  <p>هذا حدّ تقني صارم لا ميزة ناقصة: واجهة Web Bluetooth تتيح للصفحة دور العميل فقط — تتصل بطرف وتقرأ وتكتب — ولا تتيح لها البثّ، فلا يمكن لصفحتين أن تريا بعضهما عبر البلوتوث إطلاقاً. وسفاري وفَيَرفُكس لا يدعمان الواجهة أصلاً، ما يستبعد كل أجهزة آيفون. لذلك تفعل الصفحة ما تستطيعه فعلاً:</p>
+  <ul>
+    <li><strong>تخاطب جسراً.</strong> أي طرف يبث معرّف الخدمة المطبوع في تبويب «الناقل» — لوحة ESP32 أو حاسوب أو تطبيق مرافق في وضع الطرف — يستقبل الحزم على خاصية ويعيدها على أخرى، وهو الذي يصلها بشبكة حقيقية.</li>
+    <li><strong>تستخدم الراديو الذي يمنحه نظام التشغيل أصلاً.</strong> قائمة المشاركة تصل إلى AirDrop في آيفون وQuick Share في أندرويد — وصلة مباشرة بين جهازين بلا إنترنت وبلا حساب، تعمل على كل الهواتف بلمسة واحدة.</li>
+  </ul>
+  <p>وفوق ذلك: انسخ الحزمة إلى أي تطبيق مراسلة يعمل أصلاً، أو احفظها ملفاً يُحمل باليد. الحالة التي تصل أخصائياً على ذاكرة محمولة حالةٌ وصلت أخصائياً.</p>
+
+  <h3>ما الغائب عمداً</h3>
+  <p>لا حسابات، ولا خادم لنا، ولا تحليلات، ولا يغادر شيء الجهاز إلا حين ترسله أنت. ولا تشفير أيضاً: الحزم مقروءة لمن يحملها، ولهذا ترفض الصفحة أن تكون مكاناً تسافر فيه الأسماء. النشر الجاد لهذه الأداة يحتاج تشفيراً كالذي في «بيتشات»، وجهةً تتحقق من ترخيص كل استشاري قبل أن يُعتدّ بمشورته. وكلاهما لم يوجد بعد. اقرأ ما هنا بوصفه رسماً عاملاً لقنوات النقل، لا خدمة يُعتمد عليها.</p>
+
+  <h3>المصادر</h3>
+  <p class="src">الورقة البيضاء لتطبيق «بيتشات» ومستودعه وتغطية إطلاقه التجريبي في يوليو/تموز 2025 · مجموعة W3C المجتمعية لمواصفة Web Bluetooth التي تحصر دور الصفحة في العميل · تقرير <a href="/ar/story/2f6cc013a7.html">تايمز أوف فلسطين، 3 أغسطس/آب 2026، عن مجموعات واتساب التطوعية التي تحمل طب غزة عن بُعد</a> · دراسة الصر وزملائه في «ذا لانسيت»، 31 أغسطس/آب 2024، عن سلسلة حالات التطبيب عن بُعد في مجمع ناصر الطبي.</p>
+  </div>`;
+  return `<div class="prose">
+  <h3>Why a page and not an app</h3>
+  <p>An app has to be found, installed, updated and trusted, and the store it comes from can be pulled. A page is a link. This one is a single file with no framework, no fonts to fetch and no third-party scripts, so once it has loaded it keeps working with the network gone. Add the service worker described at the top of the source and it survives a reload too.</p>
+
+  <h3>What was taken from bitchat</h3>
+  <p>Bitchat is Jack Dorsey's Bluetooth mesh messenger, released in beta in July 2025. Each phone is both recipient and relay; a message hops device to device, up to seven hops, well past the thirty-metre reach of a single Bluetooth link. Messages for someone who is not currently reachable are cached by nearby devices and delivered when they reappear. When the internet is available, it can route over Nostr instead, and Bluetooth is preferred when both exist.</p>
+  <p>The transferable idea is not the radio. It is that the message is a self-contained packet that any carrier can move and any node can hold, so the network is whatever happens to be working. This page is built the same way: every action is an append-only packet with an id, state is replayed from the packets, and importing the same packet twice changes nothing. That is what lets four different carriers run at once without duplicating a case.</p>
+
+  <h3>Why the page cannot do Bluetooth mesh by itself</h3>
+  <p>This is the part worth being precise about, because it is a hard limit and not a missing feature. The Web Bluetooth API lets a page act only in the central role — it can connect to a peripheral, read and write. It cannot advertise, so it cannot be discovered by another page. Two browsers therefore cannot see each other over Bluetooth at all. Safari and Firefox do not implement it on any platform, which rules out every iPhone. A web page cannot be a mesh node, today, on any device.</p>
+  <p>So the page does the two things it actually can:</p>
+  <ul>
+    <li><strong>It talks to a bridge.</strong> Any peripheral advertising the service UUID printed on the Carrier tab — an ESP32, a laptop running bleno, a companion app in peripheral mode — receives packets on one characteristic and pushes them back on another. The bridge is what joins a real mesh. The page just feeds it.</li>
+    <li><strong>It uses the radio the operating system already gives it.</strong> The share sheet reaches AirDrop on iPhone and Quick Share on Android — a direct device-to-device link with no internet and no account. That is the one offline transfer that works on every phone, including the ones with no Web Bluetooth, and it is a single tap.</li>
+  </ul>
+  <p>Beyond that: copy the packet into whatever messaging app already works, or save it as a file and carry it. A case that reaches a specialist on a memory stick is still a case that reached a specialist.</p>
+
+  <h3>What is deliberately not here</h3>
+  <p>No accounts, no server of ours, no analytics, nothing leaves the device unless you send it. Also no encryption: packets are readable by anyone holding them, which is why the page refuses to be a place where names travel. Bitchat encrypts with the Noise protocol and rotates identity keys on the device; a serious deployment of this needs the same, plus a body that verifies a consultant's licence before their advice carries any weight. Neither exists yet. Read what is here as a working sketch of the plumbing, not a service anyone should rely on.</p>
+
+  <h3>Sources</h3>
+  <p class="src">Bitchat white paper and repository, and reporting on its July 2025 beta from CNBC, Cointelegraph and TechTarget, for the mesh, seven-hop relay, store-and-forward and Nostr fallback · W3C Web Bluetooth Community Group, on the specification covering the central role only and not permitting a page to act as a peripheral · MDN and caniuse, on browser support and Safari's absence · <a href="/en/story/0a9002d266.html">Times of Palestine, 3 Aug 2026, on the volunteer WhatsApp groups carrying Gaza's remote medical care</a> · Alser et al., The Lancet, 31 Aug 2024, on the telemedicine case series from Nasser Medical Complex.</p>
+  </div>`;
+}
+
+/* ========================== actions ========================== */
+
+document.addEventListener("click", async e => {
+  const b = e.target.closest("[data-act]"); if (!b) return;
+  const act = b.dataset.act, id = b.dataset.id, L = t();
+
+  if (act === "open"){ OPENID = OPENID === id ? null : id; render(); return; }
+
+  if (act === "claim"){ emit("claim", { cid:id }); return; }
+
+  if (act === "reply"){
+    const ta = document.getElementById("rep-" + id);
+    if (!ta || !ta.value.trim()) return;
+    emit("reply", { cid:id, text:ta.value.trim() }); return;
+  }
+
+  if (act === "order"){
+    const items = prompt("What is needed?"); if (!items) return;
+    const type = prompt("Type (Medication / Dressing / Laboratory / Imaging / Referral / Nutrition)", "Medication") || "Medication";
+    const point = prompt("Dispensing point", "any dispensing point") || "any";
+    emit("order", { cid:id, o:{ type, items, point, code: Math.random().toString(36).slice(2,8).toUpperCase() } });
+    return;
+  }
+  if (act === "ofill" || act === "ounav"){
+    emit("ostat", { cid:id, oid:b.dataset.oid, status: act === "ofill" ? "collected" : "unavailable" }); return;
+  }
+
+  if (act === "close"){
+    const advice = prompt("Could the advice be followed? (Followed / Partly / Not possible)", "Followed"); if (!advice) return;
+    const status72h = prompt("Patient at 72 hours (improved / unchanged / worse / died / lost to follow-up)", "improved") || "unknown";
+    const note = prompt("Anything the next clinician should know") || "";
+    emit("close", { cid:id, out:{ advice, status72h, note } }); return;
+  }
+
+  if (act === "card"){
+    const c = derive().find(x => x.id === id); if (c) copy(card(c)); return;
+  }
+
+  if (act === "savecase"){
+    if (!ME) { toast("Set who you are first"); VIEW = "me"; render(); return; }
+    if (!document.getElementById("p-consent").checked || !document.getElementById("p-deid").checked)
+      return toast("Both boxes have to be ticked");
+    if (!val("p-q").trim() || !val("p-pres").trim()) return toast("Presentation and question are required");
+    const n = derive().length + 1, d = new Date();
+    // Device tag: two handsets working offline must not mint the same ref.
+    let dev = store.get("sanad.dev");
+    if (!dev){ dev = Math.random().toString(36).slice(2,4).toUpperCase(); store.set("sanad.dev", dev); }
+    const ref = `GZ-${String(d.getMonth()+1).padStart(2,"0")}${String(d.getDate()).padStart(2,"0")}-${dev}${String(n).padStart(2,"0")}`;
+    emit("case", { ref, c:{
+      specialty: val("p-spec"), urgency: val("p-urg"), ageBand: val("p-age"), sex: val("p-sex"),
+      days: val("p-days"), zone: val("p-zone"), facility: val("p-fac"),
+      presentation: val("p-pres").trim(), findings: val("p-find").trim(),
+      resources: val("p-res").trim(), question: val("p-q").trim(), contact: val("p-contact").trim()
+    }});
+    VIEW = "board"; render(); toast("saved · queued to send");
+    return;
+  }
+
+  if (act === "role"){
+    ME = Object.assign({ name:"", contact:"" }, ME, { role: b.dataset.role });
+    render(); return;
+  }
+
+  if (act === "saveme"){
+    const role = (ME && ME.role) || "field";
+    const name = val("m-name").trim();
+    if (!name) return toast("A name or initials is required");
+    ME = { role, name, contact: val("m-contact").trim(),
+           country: val("m-country").trim(), zone: val("m-zone"), facility: val("m-fac").trim(),
+           lic: val("m-lic").trim(), body: val("m-body").trim() };
+    store.set(KEY.me, JSON.stringify(ME)); toast("saved"); VIEW = "board"; render(); return;
+  }
+
+  if (act === "copy" || act === "share" || act === "file"){
+    const evs = b.dataset.scope === "all" ? EVENTS : unsent();
+    if (!evs.length) return toast("nothing to send");
+    const text = packetize(evs);
+    let ok = false;
+    if (act === "copy") ok = await copy(text);
+    else if (act === "share") ok = await handOff(text, "sanad-packets.txt");
+    else { saveFile(text, "sanad-packets.txt"); ok = true; }
+    if (ok) markSent(evs);
+    return;
+  }
+
+  if (act === "import"){
+    const got = merge(depacketize(val("imp")));
+    toast(got ? `imported ${got}` : "no packets found");
+    const ta = document.getElementById("imp"); if (ta) ta.value = "";
+    return;
+  }
+
+  if (act === "ble"){ bleConnect(); return; }
+
+  if (act === "wipe"){
+    if (!confirm("Erase every case and reply held on this device?")) return;
+    EVENTS = []; SENT = new Set(); ME = null;
+    store.del(KEY.ev); store.del(KEY.sent); store.del(KEY.me);
+    render(); toast("erased"); return;
+  }
+});
+
+/* ========================== shell ========================== */
+
+function render(){
+  const L = t();
+  document.documentElement.lang = LANG;
+  document.documentElement.dir = L.dir;
+  document.getElementById("h1").textContent = L.h1;
+  document.getElementById("standfirst").textContent = L.stand;
+  document.getElementById("byline").textContent = L.byline;
+  document.getElementById("lang-en").setAttribute("aria-pressed", LANG === "en");
+  document.getElementById("lang-ar").setAttribute("aria-pressed", LANG === "ar");
+
+  document.querySelectorAll(".tab").forEach(tb => {
+    tb.textContent = L.tabs[tb.dataset.v];
+    tb.setAttribute("aria-selected", tb.dataset.v === VIEW);
+  });
+
+  const q = unsent().length;
+  document.getElementById("s-net").innerHTML =
+    `<span class="dot ${CONFIG.api && navigator.onLine ? "on" : "off"}"></span>internet`;
+  document.getElementById("s-ble").innerHTML =
+    `<span class="dot ${BLE.device ? "on" : navigator.bluetooth ? "warn" : "off"}"></span>bluetooth`;
+  document.getElementById("s-out").innerHTML =
+    `<span class="dot ${q ? "warn" : "on"}"></span>outbox ${q}`;
+  document.getElementById("s-me").textContent = ME ? `${ME.name} · ${ME.role === "specialist" ? "specialist" : "field"}` : "—";
+
+  document.getElementById("main").innerHTML =
+    VIEW === "board" ? viewBoard() :
+    VIEW === "post" ? viewPost() :
+    VIEW === "carrier" ? viewCarrier() :
+    VIEW === "me" ? viewMe() : viewAbout();
+}
+
+document.querySelectorAll(".tab").forEach(tb =>
+  tb.addEventListener("click", () => { VIEW = tb.dataset.v; render(); }));
+on("lang-en", "click", () => { LANG = "en"; store.set(KEY.lang, LANG); render(); });
+on("lang-ar", "click", () => { LANG = "ar"; store.set(KEY.lang, LANG); render(); });
+
+window.addEventListener("online", () => { render(); netPull(); netPush(); });
+window.addEventListener("offline", render);
+setInterval(() => { netPull(); render(); }, 30000);
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js").catch(()=>{});
+
+render(); netPull();
+</script>
+</body>
+</html>

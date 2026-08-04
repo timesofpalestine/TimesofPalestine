@@ -3150,6 +3150,24 @@ SPECIALS = [
         "nav": {"en": "Scholarships", "ar": "المنح الدراسية"},
     },
     {
+        # Sanad teleconsult board (owner directive 2026-08-04): a standing
+        # service to the Palestinian health sector, Gaza especially. Static
+        # feature at /sanad/ — one bilingual page, offline-first by design.
+        "href": {"en": "/sanad/", "ar": "/sanad/"},
+        "kicker": {"en": "A service for Gaza's clinicians", "ar": "خدمة لأطباء غزة"},
+        "title": {"en": "Sanad: the consult board that works without internet",
+                  "ar": "سند: لوحة الاستشارات التي تعمل بلا إنترنت"},
+        "dek": {"en": "Post a de-identified case; a named specialist answers. When the network dies, the case travels by pasted text, AirDrop or a Bluetooth bridge.",
+                "ar": "ارفع حالة بلا هوية يجيب عنها أخصائي بالاسم. وحين تنقطع الشبكة تنتقل الحالة نصاً ملصقاً أو عبر AirDrop أو جسر بلوتوث."},
+        "cta": {"en": "Open Sanad →", "ar": "افتح سند ←"},
+        "img": "/media/times-of-palestine-sanad-2026.svg",
+        "img_alt": {"en": "Sanad: a clinical case travels hand to hand until it reaches a specialist",
+                    "ar": "سند: حالة سريرية تنتقل يداً بيد حتى تبلغ أخصائياً"},
+        "ticker": {"en": "Sanad: the teleconsult board that works without internet",
+                   "ar": "سند: لوحة استشارات طبية تعمل بلا إنترنت"},
+        "nav": {"en": "Sanad", "ar": "سند"},
+    },
+    {
         "href": {"en": "/suha-arafat/index-en.html", "ar": "/suha-arafat/index-ar.html"},
         "kicker": {"en": "Special investigation", "ar": "تحقيق خاص"},
         "title": {"en": "The Widow and the Ledger", "ar": "الأرملة والدفتر"},
@@ -4072,7 +4090,8 @@ def main():
     # embeds covers inside onerror attributes as the browser-side fallback for
     # dying remote images, and copy_media cannot see those references — a
     # missing cover there turns a reader's failed image into a 404 white card.
-    _furniture = ["times-of-palestine-israel-votes-card.svg"] + sorted(
+    _furniture = ["times-of-palestine-israel-votes-card.svg",
+                  "times-of-palestine-sanad-2026.svg"] + sorted(
         f.name for f in (ROOT / "originals" / "media").glob("times-of-palestine-cover-*.svg"))
     for _furn in _furniture:
         _ff = ROOT / "originals" / "media" / _furn

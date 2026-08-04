@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Sanad: a clinical case travels hand to hand — phone to phone to bridge — until it reaches a specialist">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <rect x="0" y="0" width="1600" height="6" fill="#8a1f2d"/>
+  <text x="800" y="88" text-anchor="middle" fill="#c7a86b" font-family="Georgia,serif" font-size="30" letter-spacing="6">TIMES OF PALESTINE · HEALTH SERVICE</text>
+  <text x="800" y="168" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="86" font-weight="bold">سَنَد</text>
+  <text x="800" y="228" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="42" font-weight="bold">SANAD</text>
+  <text x="800" y="278" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="26">لوحة استشارات تعمل بلا إنترنت · the consult board that works without internet</text>
+
+  <!-- relay: clinic phone → hand → hand → bridge → specialist -->
+  <path d="M 220 560 H 1380" stroke="#c7a86b" stroke-width="4" stroke-dasharray="1 14" stroke-linecap="round" fill="none"/>
+
+  <!-- node 1: clinic phone -->
+  <g transform="translate(220,560)">
+    <rect x="-34" y="-64" width="68" height="112" rx="10" fill="#17181b" stroke="#3fd07c" stroke-width="4"/>
+    <rect x="-22" y="-46" width="44" height="8" rx="3" fill="#8a1f2d"/>
+    <rect x="-22" y="-28" width="44" height="8" rx="3" fill="#3d4f6b"/>
+    <rect x="-22" y="-10" width="30" height="8" rx="3" fill="#3d4f6b"/>
+  </g>
+  <text x="220" y="670" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="26" font-weight="bold">نقطة طبية في غزة</text>
+  <text x="220" y="704" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="21">a Gaza medical point</text>
+
+  <!-- node 2: paste / message -->
+  <circle cx="560" cy="560" r="18" fill="#286344"/>
+  <text x="560" y="510" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="24" font-weight="bold">نص ملصق</text>
+  <text x="560" y="480" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="20">pasted text</text>
+
+  <!-- node 3: airdrop / hand to hand -->
+  <circle cx="800" cy="560" r="18" fill="#c7a86b"/>
+  <text x="800" y="626" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="24" font-weight="bold">يداً بيد · AirDrop</text>
+
+  <!-- node 4: bluetooth bridge -->
+  <circle cx="1040" cy="560" r="18" fill="#3d4f6b"/>
+  <text x="1040" y="510" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="24" font-weight="bold">جسر بلوتوث</text>
+  <text x="1040" y="480" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="20">bluetooth bridge</text>
+
+  <!-- node 5: specialist -->
+  <g transform="translate(1380,560)">
+    <circle cx="0" cy="-34" r="26" fill="none" stroke="#3fd07c" stroke-width="4"/>
+    <path d="M -38 48 a 38 38 0 0 1 76 0" fill="none" stroke="#3fd07c" stroke-width="4"/>
+    <line x1="-14" y1="-34" x2="14" y2="-34" stroke="#3fd07c" stroke-width="4"/>
+    <line x1="0" y1="-48" x2="0" y2="-20" stroke="#3fd07c" stroke-width="4"/>
+  </g>
+  <text x="1380" y="670" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="26" font-weight="bold">أخصائي بالاسم</text>
+  <text x="1380" y="704" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="21">a named specialist</text>
+
+  <text x="800" y="822" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="22">بلا أسماء · بلا خادم · لا شيء يغادر الجهاز إلا حين ترسله — No names · no server · nothing leaves the device until you send it</text>
+  <rect x="0" y="894" width="1600" height="6" fill="#286344"/>
+</svg>
