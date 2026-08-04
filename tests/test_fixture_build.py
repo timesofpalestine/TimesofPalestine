@@ -58,6 +58,12 @@ class FixtureBuildTests(unittest.TestCase):
         for lang in ("en", "ar"):
             front = (ROOT / "dist" / lang / "index.html").read_text(encoding="utf-8")
             self.assertIn('href="/sanad/"', front)
+            # Prominence (owner order 2026-08-04): the Sanad band sits under
+            # the nav, and the gold Sanad link lives in the always-visible
+            # tier-1 row — never folded behind the mobile More toggle.
+            self.assertIn('class="sanad-band"', front)
+            n1 = front.split('<div class="wrap n1"', 1)[1].split('</div>', 1)[0]
+            self.assertIn('/sanad/', n1)
 
 
 if __name__ == "__main__":
