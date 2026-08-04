@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Mo Amer, one night only at Radio City Music Hall, 2 October 2026 — a theater marquee in the house style">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <rect x="0" y="0" width="1600" height="6" fill="#8a1f2d"/>
+  <text x="800" y="84" text-anchor="middle" fill="#c7a86b" font-family="Georgia,serif" font-size="30" letter-spacing="6">TIMES OF PALESTINE · ARTS</text>
+
+  <!-- marquee -->
+  <g transform="translate(300,170)">
+    <rect x="0" y="0" width="1000" height="420" rx="10" fill="#17181b" stroke="#c7a86b" stroke-width="4"/>
+    <rect x="26" y="26" width="948" height="368" rx="6" fill="#0b0b0c"/>
+    <!-- marquee bulbs -->
+    <g fill="#c7a86b">
+      <circle cx="0" cy="0" r="7"/><circle cx="100" cy="0" r="7"/><circle cx="200" cy="0" r="7"/><circle cx="300" cy="0" r="7"/><circle cx="400" cy="0" r="7"/><circle cx="500" cy="0" r="7"/><circle cx="600" cy="0" r="7"/><circle cx="700" cy="0" r="7"/><circle cx="800" cy="0" r="7"/><circle cx="900" cy="0" r="7"/><circle cx="1000" cy="0" r="7"/>
+      <circle cx="0" cy="420" r="7"/><circle cx="100" cy="420" r="7"/><circle cx="200" cy="420" r="7"/><circle cx="300" cy="420" r="7"/><circle cx="400" cy="420" r="7"/><circle cx="500" cy="420" r="7"/><circle cx="600" cy="420" r="7"/><circle cx="700" cy="420" r="7"/><circle cx="800" cy="420" r="7"/><circle cx="900" cy="420" r="7"/><circle cx="1000" cy="420" r="7"/>
+      <circle cx="0" cy="105" r="7"/><circle cx="0" cy="210" r="7"/><circle cx="0" cy="315" r="7"/>
+      <circle cx="1000" cy="105" r="7"/><circle cx="1000" cy="210" r="7"/><circle cx="1000" cy="315" r="7"/>
+    </g>
+    <text x="500" y="120" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="76" font-weight="bold">MO AMER</text>
+    <text x="500" y="185" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="44">محمد عامر</text>
+    <text x="500" y="255" text-anchor="middle" fill="#c7a86b" font-family="Tahoma,sans-serif" font-size="30" letter-spacing="4">ONE NIGHT ONLY · ليلة واحدة فقط</text>
+    <text x="500" y="325" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="34" font-weight="bold">RADIO CITY MUSIC HALL · 02.10.2026</text>
+  </g>
+
+  <text x="800" y="700" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="26">من الكويت إلى هيوستن إلى نيويورك — لاجئ فلسطيني على أشهر مسارح العالم</text>
+  <text x="800" y="742" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="22">From Kuwait to Houston to New York — a Palestinian refugee on the world's most famous stage</text>
+
+  <rect x="0" y="894" width="1600" height="6" fill="#286344"/>
+</svg>
