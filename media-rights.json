@@ -249,6 +249,13 @@
       "rightsBasis": "owned",
       "credit": "Graphic: Times of Palestine",
       "source": "Times of Palestine"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Khalaf%20Ahmad%20Al%20Habtoor.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Khalaf Al Habtoor — Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Khalaf_Ahmad_Al_Habtoor.jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Khalaf_Ahmad_Al_Habtoor.jpg"
     }
   ]
 }
