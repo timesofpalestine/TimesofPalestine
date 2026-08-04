@@ -1,0 +1,40 @@
+title: Times of Palestine launches Sanad, a consult board needing no internet
+image: /media/times-of-palestine-sanad-2026.svg
+category: health
+date: 2026-08-04T14:10:00+00:00
+maxAgeHours: 999999
+---
+Times of Palestine today opens [Sanad](https://timesofpalestine.com/sanad/) — سند, "support" — a free teleconsult board built for the clinicians of Palestine's health sector, and for Gaza's above all: the medics working where the network fails exactly when a case can least wait.
+
+The idea fits in one sentence. A frontline clinician posts a de-identified case; a named volunteer specialist claims it and answers; and when the internet is down, the same case travels any way a message can physically move.
+
+## Built for the network Gaza actually has
+
+Gaza's remote medicine already runs on improvisation. Volunteer doctors' WhatsApp groups carry consults across the border every day, [as this paper reported on Sunday](https://timesofpalestine.com/en/story/0a9002d266.html) — and a Lancet case series from Nasser Medical Complex documented the same lifeline under siege.
+
+Sanad takes that reality as its starting point instead of assuming a connection. Every case is a small self-contained packet, and the board moves packets four ways at once.
+
+- **Internet**, when there is any — the board syncs on its own.
+- **Pasted text** — a case becomes a block of text that survives WhatsApp, Signal, SMS or email, and merges cleanly when pasted at the other end.
+- **Hand to hand** — the phone's own share sheet: AirDrop on iPhone, Quick Share on Android. A direct radio link between two handsets, no internet, no account.
+- **A Bluetooth bridge** — a small device or companion app that carries packets onto a real device-to-device mesh, the architecture Jack Dorsey's Bitchat proved in 2025.
+
+Because every packet carries its own identity, receiving the same case twice changes nothing. A chain of handsets becomes a working network; a case that reaches a specialist on a USB stick has still reached a specialist.
+
+## The rules the board enforces on itself
+
+Sanad is a tool, not a medical service, and it says so on every screen. Nothing is monitored; it is never a substitute for emergency care.
+
+Its discipline is written into the form itself. No names, no ID numbers, no faces — a case cannot be posted without confirming it carries none, and that the patient or guardian gave verbal consent for discussion beyond Gaza. Cases are triaged red, amber or routine, each with a visible answer-time target, and the one required field is the question a specialist can actually answer.
+
+Specialists answer under their own names, with licence details attached and marked unverified — the board is honest that verification needs a medical body, not a web page. Everything lives on the clinician's own device: no accounts, no server, no analytics, and nothing leaves the phone until its owner sends it.
+
+> No names travel. No server holds the cases. Nothing leaves the device until the clinician sends it.
+
+## An open tool, and an open invitation
+
+Sanad stands at [timesofpalestine.com/sanad](https://timesofpalestine.com/sanad/) in Arabic and English, works on any phone, and — once opened — keeps working with the network gone.
+
+The paper now invites two groups to put it to work. Frontline clinicians in Gaza and the West Bank: open the board, set who you are, and try a case through the carrier that matches your day. Specialists in the diaspora and beyond, in surgery, burns, paediatrics, nephrology, obstetrics and every discipline the board lists: enrol, claim, and answer.
+
+Sanad will grow in public — encryption and licence verification are the next stages, and the health desk will report each one as it lands. Improvements and clinical feedback reach the newsroom through the [contact page](https://timesofpalestine.com/en/about.html); the board itself never carries a patient's name.

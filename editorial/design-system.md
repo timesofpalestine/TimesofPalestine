@@ -246,6 +246,18 @@ load-bearing statistic — one or two per story, never as decoration.
   use a hand-set `focus` per asset instead. If you add a new surface that
   cover-crops reader photos, wire it through the same helpers — never ship
   a dead-center crop.
+- **Standalone service pages** (static features with reader-facing UI —
+  `/sanad/` is the model): a self-contained single file, everything inline,
+  no external fetches, deliberately NOT on the house tokens — the page must
+  survive with the network gone, and its design budget is spent on that.
+  Requirements that DO bind: bilingual EN/AR with `dir` switching, the
+  Times of Palestine masthead link home, and a SPECIALS row entry so the
+  service is reachable from the front page, nav and ticker. Sanad
+  (`sanad/index.html`, owner directive 2026-08-04) is the health-sector
+  teleconsult board: append-only event packets, four carriers (net, pasted
+  text, share-sheet, BLE bridge), stale-while-revalidate `sw.js`. Its
+  launch report is `originals/sanad-teleconsult-board-2026.*`; changes to
+  the board route through Claude's health beat.
 - **Reader chrome preferences** (`_THEME_JS`, applied from `<head>` on every
   template): theme (`#themetoggle`, `data-theme` on `<html>`, localStorage
   `top-theme`) and **text-only mode** (`#litetoggle` "Aa", `data-lite`,

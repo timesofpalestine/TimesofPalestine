@@ -40,6 +40,18 @@ class FixtureBuildTests(unittest.TestCase):
                       (ROOT / "dist" / "media").glob("times-of-palestine-cover-*.svg")}
         self.assertTrue(src_covers)
         self.assertEqual(src_covers - out_covers, set())
+        # Sanad (owner directive 2026-08-04) is a standing service: the static
+        # feature must deploy at /sanad/ with its offline files, its brand art
+        # must ship for the specials row, and both front pages must link it.
+        self.assertTrue((ROOT / "dist" / "sanad" / "index.html").is_file())
+        self.assertTrue((ROOT / "dist" / "sanad" / "sw.js").is_file())
+        self.assertTrue((ROOT / "dist" / "sanad" / "manifest.webmanifest").is_file())
+        self.assertFalse((ROOT / "dist" / "sanad" / ".static-feature").exists())
+        self.assertTrue(
+            (ROOT / "dist" / "media" / "times-of-palestine-sanad-2026.svg").is_file())
+        for lang in ("en", "ar"):
+            front = (ROOT / "dist" / lang / "index.html").read_text(encoding="utf-8")
+            self.assertIn('href="/sanad/"', front)
 
 
 if __name__ == "__main__":
