@@ -2,6 +2,27 @@
   "_comment": "The investigations queue. One topic per generated report, worked through in order and then recycled oldest-first. Add, remove or reorder freely — the generator reads this file every run. 'q' is the reporting question the desk must answer; the sharper it is, the better the piece.",
   "topics": [
     {
+      "id": "saint-levant-gaza-rap",
+      "cat": "arts",
+      "en": "Saint Levant raps for a Gaza he cannot enter",
+      "ar": "سان ليفانت يغني الراب لغزةٍ لا يستطيع دخولها",
+      "q": "Report Saint Levant's story for the Palestinian-rise series: Gaza birth, Jerusalem and Amman upbringing, trilingual rap, From Gaza and 5am in Paris, the Coachella performances with Palestinian imagery, his Gaza fundraising. Attribute streams/charts and quotes to outlets."
+    },
+    {
+      "id": "elyanna-nazareth-coachella",
+      "cat": "arts",
+      "en": "Elyanna carries Nazareth's voice to Coachella's main stages",
+      "ar": "إليانا تحمل صوت الناصرة إلى مسارح كوتشيلا",
+      "q": "Report Elyanna's arc for the arts desk's Palestinian-rise series (launched with the Mohammed Assaf profile): Nazareth childhood, the move to LA, becoming the first artist to perform a full Arabic-language set at Coachella, her albums and collaborations, how she carries Palestinian identity on global stages during the war. Attribute chart facts and quotes to specific outlets."
+    },
+    {
+      "id": "sama-abdulhadi-techno",
+      "cat": "arts",
+      "en": "Sama' Abdulhadi takes Ramallah's techno underground to the world's festivals",
+      "ar": "سما عبد الهادي تنقل تكنو رام الله إلى مهرجانات العالم",
+      "q": "Report Sama' Abdulhadi's arc for the Palestinian-rise series: Ramallah scene origins, the Boiler Room set that traveled the world, the 2020 Nabi Musa arrest controversy and release, international festival career, what performing as 'Palestine's techno queen' means during the war. Attribute precisely."
+    },
+    {
       "id": "stl-dabke-autism-jafra",
       "cat": "diaspora",
       "en": "In St. Louis, a Palestinian dance troupe turns dabke into support for autistic children in the West Bank",
@@ -350,27 +371,6 @@
       "en": "Every 'day after' plan for Gaza, and who wrote it",
       "ar": "كل خطط 'اليوم التالي' لغزة ومن كتبها",
       "q": "Compare the published post-war governance proposals from the US, Arab states, Israel, the PA and think tanks — who governs, who polices, who pays, and what do Palestinians say about being consulted?"
-    },
-    {
-      "id": "elyanna-nazareth-coachella",
-      "cat": "arts",
-      "en": "Elyanna carries Nazareth's voice to Coachella's main stages",
-      "ar": "إليانا تحمل صوت الناصرة إلى مسارح كوتشيلا",
-      "q": "Report Elyanna's arc for the arts desk's Palestinian-rise series (launched with the Mohammed Assaf profile): Nazareth childhood, the move to LA, becoming the first artist to perform a full Arabic-language set at Coachella, her albums and collaborations, how she carries Palestinian identity on global stages during the war. Attribute chart facts and quotes to specific outlets."
-    },
-    {
-      "id": "sama-abdulhadi-techno",
-      "cat": "arts",
-      "en": "Sama' Abdulhadi takes Ramallah's techno underground to the world's festivals",
-      "ar": "سما عبد الهادي تنقل تكنو رام الله إلى مهرجانات العالم",
-      "q": "Report Sama' Abdulhadi's arc for the Palestinian-rise series: Ramallah scene origins, the Boiler Room set that traveled the world, the 2020 Nabi Musa arrest controversy and release, international festival career, what performing as 'Palestine's techno queen' means during the war. Attribute precisely."
-    },
-    {
-      "id": "saint-levant-gaza-rap",
-      "cat": "arts",
-      "en": "Saint Levant raps for a Gaza he cannot enter",
-      "ar": "سان ليفانت يغني الراب لغزةٍ لا يستطيع دخولها",
-      "q": "Report Saint Levant's story for the Palestinian-rise series: Gaza birth, Jerusalem and Amman upbringing, trilingual rap, From Gaza and 5am in Paris, the Coachella performances with Palestinian imagery, his Gaza fundraising. Attribute streams/charts and quotes to outlets."
     },
     {
       "id": "roadmap-400m-suppliers",

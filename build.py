@@ -4143,6 +4143,18 @@ def main():
         if feature.is_dir() and (feature / ".static-feature").is_file():
             shutil.copytree(feature, dist / feature.name, dirs_exist_ok=True,
                             ignore=shutil.ignore_patterns(".static-feature"))
+    # SANAD outbreak watch (owner directive 2026-08-04): the newsroom's
+    # disease monitor over this build's wire items, published as ready-made
+    # case events the SANAD page pulls and the mesh then carries offline.
+    try:
+        _watch = __import__("outbreak_watch").watch_events(en_items + ar_items)
+        if (dist / "sanad").is_dir():
+            (dist / "sanad" / "watch.json").write_text(
+                json.dumps({"events": _watch}, ensure_ascii=False),
+                encoding="utf-8")
+            print(f"  → SANAD outbreak watch: {len(_watch)} alert(s)")
+    except Exception as e:   # the watch must never break the news build
+        print(f"  ⚠ outbreak watch failed open: {type(e).__name__}: {e}")
     (dist / "data.json").write_text(json.dumps(
         {"builtAt": utc_iso(built_at), "en": len(en_items), "ar": len(ar_items),
          "briefs": sum(1 for i in en_items + ar_items if i.get("brief"))}, indent=2))
