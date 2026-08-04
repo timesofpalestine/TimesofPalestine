@@ -7,6 +7,13 @@ name: SANAD release
 on:
   push:
     tags: ["sanad-v*"]
+  # The session git proxy only pushes the work branch, never tags — so the
+  # release can also be cut by dispatch: the run creates the tag itself.
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release tag, e.g. sanad-v0.2.0"
+        required: true
 permissions:
   contents: write
 concurrency:
@@ -28,8 +35,10 @@ jobs:
       - name: Publish release with the evergreen asset name
         env:
           GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.version || github.ref_name }}
         run: |
           cp sanad-app/app/build/outputs/apk/debug/app-debug.apk sanad.apk
-          gh release create "$GITHUB_REF_NAME" sanad.apk \
-            --title "SANAD ${GITHUB_REF_NAME#sanad-} — bitchat for medicine" \
+          gh release create "$TAG" sanad.apk \
+            --target "$GITHUB_SHA" \
+            --title "SANAD ${TAG#sanad-} — bitchat for medicine" \
             --notes "The SANAD app: a triage board for medical cases that works without internet. Android alpha (debug-signed — allow the install when Android asks). iPhones use the web board at https://timesofpalestine.com/sanad/. Packets interoperate with the web board; replies between case participants are sealed end-to-end."
