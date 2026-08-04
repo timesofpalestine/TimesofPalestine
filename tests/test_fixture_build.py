@@ -49,6 +49,12 @@ class FixtureBuildTests(unittest.TestCase):
         self.assertFalse((ROOT / "dist" / "sanad" / ".static-feature").exists())
         self.assertTrue(
             (ROOT / "dist" / "media" / "times-of-palestine-sanad-2026.svg").is_file())
+        # Stage 1 (bitchat adoption): thread encryption + the bitchat carrier
+        # must ship inside the deployed page.
+        board = (ROOT / "dist" / "sanad" / "index.html").read_text(encoding="utf-8")
+        for marker in ("deriveKey", "AES-GCM", "P-256", "Bitchat mesh",
+                       "شبكة بيتشات", "encLocked"):
+            self.assertIn(marker, board)
         for lang in ("en", "ar"):
             front = (ROOT / "dist" / lang / "index.html").read_text(encoding="utf-8")
             self.assertIn('href="/sanad/"', front)
