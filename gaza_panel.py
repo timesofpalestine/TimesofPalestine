@@ -72,6 +72,34 @@ PR_KEYS = [
 PR_PLUS = {"pr_total"}
 PRISONERS_PATH = None  # resolved lazily so tests can inject via _pr_cache
 
+# Methodology notes for the figures whose terms carry legal or statistical
+# weight a lay reader can't be assumed to know. Rendered as a focusable "?"
+# beside the label with a hover/focus tooltip — the note is the marker's
+# aria-label, so screen readers hear it directly (owner-forwarded review,
+# 2026-08-04: contextual tooltips for complex figures).
+TERM_NOTES = {
+    "pr_admin": (
+        "Detention by Israeli military order without charge or trial, "
+        "renewable indefinitely; the detainee never sees the evidence.",
+        "اعتقال بأمر عسكري إسرائيلي دون تهمة أو محاكمة، قابل للتجديد "
+        "إلى ما لا نهاية، ودون اطّلاع المعتقل على الأدلة."),
+    "pr_gaza": (
+        "Gazans held under Israel's Unlawful Combatants Law, which allows "
+        "detention without charge or judicial review.",
+        "غزّيون محتجزون بموجب قانون «المقاتلين غير الشرعيين» الإسرائيلي "
+        "الذي يجيز الاحتجاز دون تهمة أو مراجعة قضائية."),
+    "famine": (
+        "Deaths from malnutrition and dehydration recorded by Gaza's "
+        "Ministry of Health since October 2023.",
+        "وفيات سوء التغذية والجفاف التي سجّلتها وزارة الصحة في غزة "
+        "منذ أكتوبر/تشرين الأول 2023."),
+    "wb_attacks": (
+        "Settler incidents recorded by UN OCHA that caused Palestinian "
+        "casualties or property damage.",
+        "اعتداءات مستوطنين وثّقها مكتب أوتشا الأممي وأسفرت عن إصابات "
+        "فلسطينية أو أضرار في الممتلكات."),
+}
+
 # Curated because a homepage needs the few numbers that carry the whole story,
 # not all fifty. Labels are written here so the panel reads naturally in Arabic.
 GAZA_INDEX_KEYS = [
@@ -85,7 +113,7 @@ GAZA_INDEX_KEYS = [
 
 # Styles travel with the panel. The figures declare no colour of their own so
 # they inherit the page ink and stay readable in both the light and dark themes.
-PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-block{border:1px solid var(--line);background:var(--card);box-shadow:var(--sh);padding:1.05rem 1.15rem .95rem;margin-bottom:1rem}.gi-block:last-child{margin-bottom:0}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.2rem}.gi-cell{border-inline-start:3px solid var(--red);padding-inline-start:.8rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:.85rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-region{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 .8rem}.gi-region::before{content:\"\";width:4px;height:.95rem;background:var(--red);border-radius:2px;flex-shrink:0}[lang=ar] .gi-region{letter-spacing:0;font-size:.82rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-grid.gi-pr{grid-template-columns:repeat(5,minmax(0,1fr))}.gi-comp{display:flex;block-size:7px;border-radius:4px;overflow:hidden;background:var(--line);margin-top:.95rem}.gi-comp .seg{display:block;block-size:100%}.gi-legend{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:.5rem;font-size:.7rem;font-weight:600;color:var(--muted)}.gi-legend .gi-lead{font-weight:800;color:var(--ink)}.gi-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:.35rem}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(2,minmax(0,1fr))}}"
+PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-block{border:1px solid var(--line);background:var(--card);box-shadow:var(--sh);padding:1.05rem 1.15rem .95rem;margin-bottom:1rem}.gi-block:last-child{margin-bottom:0}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.2rem}.gi-cell{border-inline-start:3px solid var(--red);padding-inline-start:.8rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:.85rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-region{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 .8rem}.gi-region::before{content:\"\";width:4px;height:.95rem;background:var(--red);border-radius:2px;flex-shrink:0}[lang=ar] .gi-region{letter-spacing:0;font-size:.82rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-grid.gi-pr{grid-template-columns:repeat(5,minmax(0,1fr))}.gi-comp{display:flex;block-size:7px;border-radius:4px;overflow:hidden;background:var(--line);margin-top:.95rem}.gi-comp .seg{display:block;block-size:100%}.gi-legend{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:.5rem;font-size:.7rem;font-weight:600;color:var(--muted)}.gi-legend .gi-lead{font-weight:800;color:var(--ink)}.gi-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:.35rem}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(2,minmax(0,1fr))}}.gi-help{position:relative;display:inline-block;margin-inline-start:.35rem;inline-size:15px;block-size:15px;border-radius:50%;background:var(--line);color:var(--muted);font-size:.62rem;font-weight:800;line-height:15px;text-align:center;cursor:help;vertical-align:middle}.gi-help:focus-visible{outline:2px solid var(--green);outline-offset:1px}.gi-help .gi-tip{position:absolute;inset-block-end:calc(100% + 8px);inset-inline-end:-8px;inline-size:min(240px,58vw);background:#0b0b0c;color:#f2eee8;font-size:.7rem;font-weight:500;line-height:1.55;padding:.55rem .7rem;border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,.35);opacity:0;visibility:hidden;transition:opacity .15s;z-index:30;text-align:start;pointer-events:none;cursor:auto}.gi-help:hover .gi-tip,.gi-help:focus .gi-tip{opacity:1;visibility:visible}.gi-dl{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-dl a{color:var(--green);font-weight:700}"
 
 # The live layer: a gentle roll-up when the panel first scrolls into view,
 # then a refetch of /data/gaza-numbers.json every 5 minutes that animates any
@@ -229,6 +257,34 @@ def payload():
             "figures": figs}
 
 
+def payload_csv(p):
+    """/data/gaza-numbers.csv — the same ledger as the JSON, one row per
+    indicator with bilingual labels and per-region sourcing, so journalists
+    and researchers can cite or chart the figures without scraping the page."""
+    import csv
+    import io
+    meta = {}
+    for key, _paths, en, arl in MOH_KEYS:
+        meta[key] = (en, arl, "gaza", p.get("asOf", ""),
+                     "Gaza Ministry of Health via Tech for Palestine")
+    for key, _paths, en, arl in WB_KEYS:
+        meta[key] = (en, arl, "west_bank", p.get("wbAsOf", ""),
+                     "UN OCHA via Tech for Palestine")
+    for key, en, arl in PR_KEYS:
+        meta[key] = (en, arl, "prisoners", p.get("prAsOf", ""),
+                     "Addameer, with the Detainees Commission and the Prisoners' Society")
+    out = io.StringIO()
+    w = csv.writer(out, lineterminator="\n")
+    w.writerow(["region", "key", "indicator_en", "indicator_ar",
+                "value", "as_of", "source", "fetched_at"])
+    figures = p.get("figures", {})
+    for key, (en, arl, region, asof, src) in meta.items():
+        if key in figures:
+            w.writerow([region, key, en, arl, figures[key], asof, src,
+                        p.get("fetchedAt", "")])
+    return out.getvalue()
+
+
 def _fmt(value, unit, lang):
     if unit == "percent":
         n = f"{value:g}%"
@@ -286,9 +342,15 @@ def _live_row(lang, cells_def, figs, region, src, asof, asof_key,
             continue
         plus = ' data-gi-plus=""' if key in PR_PLUS else ""
         shown = _fmt(figs[key], None, lang) + ("+" if key in PR_PLUS else "")
+        help_html = ""
+        if key in TERM_NOTES:
+            note = TERM_NOTES[key][1 if ar else 0]
+            help_html = (f'<span class="gi-help" tabindex="0" aria-label="{note}">'
+                         f'{"؟" if ar else "?"}'
+                         f'<span class="gi-tip" aria-hidden="true">{note}</span></span>')
         cells.append(f'<div class="gi-cell"><span class="gi-num" data-gi-key="{key}" '
                      f'data-gi-val="{figs[key]}"{plus}>{shown}</span>'
-                     f'<span class="gi-lab">{arl if ar else en}</span></div>')
+                     f'<span class="gi-lab">{arl if ar else en}{help_html}</span></div>')
     asof_html = ""
     if asof:
         asof_html = ((' · آخر تحديث ' if ar else ' · updated ')
@@ -396,7 +458,19 @@ def panel(lang):
     title = "فلسطين بالأرقام" if ar else "Palestine by the Numbers"
     live = ('<span class="gi-live" role="presentation"></span>'
             if (gaza_html or wb_html or pr_html) else "")
+    # Open data: the ledger's own JSON/CSV, for the journalists, academics and
+    # NGOs who cite it. Only offered when the live rows rendered — the files
+    # are written from the same payload, so they exist exactly then.
+    dl = ""
+    if gaza_html or wb_html or pr_html:
+        dl = ('<p class="gi-dl">'
+              + ("بيانات مفتوحة — حمّل هذا السجل: " if ar
+                 else "Open data — download this ledger: ")
+              + '<a href="/data/gaza-numbers.json" download>JSON</a> · '
+              + '<a href="/data/gaza-numbers.csv" download>CSV</a>'
+              + (" · تُنسب الأرقام إلى مصادرها الأولية المذكورة أعلاه" if ar
+                 else " · cite the primary sources named above") + "</p>")
     return (f'<section class="gaza-index"><div class="wrap">'
             f'<div class="sec-head focus"><h2>{live}{title}</h2><span class="rule"></span></div>'
-            f'{gaza_html}{wb_html}{pr_html}{gi_html}'
+            f'{gaza_html}{wb_html}{pr_html}{gi_html}{dl}'
             f'</div></section><script>{PANEL_JS}</script>')

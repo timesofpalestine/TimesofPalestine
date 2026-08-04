@@ -157,6 +157,17 @@ load-bearing statistic — one or two per story, never as decoration.
   server render and every JS rewrite. All layers fail open: an unreachable
   source omits its row, never a broken panel. GazaIndex's wider humanitarian
   indicators remain as the second row with their own attribution line.
+  **Methodology tooltips** (`.gi-help` + `.gi-tip`): figures whose terms
+  carry legal/statistical weight (administrative detention, the Unlawful
+  Combatants Law, starvation deaths, settler-attack counting) get a 15px
+  focusable "?" beside the label — tooltip on hover AND focus, note text
+  duplicated as the marker's `aria-label` so screen readers hear it without
+  the tooltip; notes live in `gaza_panel.TERM_NOTES`, bilingual, each naming
+  its defining body. **Open data line** (`.gi-dl`): the ledger closes with
+  download links to its own `/data/gaza-numbers.json` and `.csv` (CSV:
+  region/key/bilingual labels/value/as-of/source per row, written by
+  `payload_csv` beside the JSON every build) plus a cite-the-primary-sources
+  note — the ledger is a research surface, readers may take the data.
 - **Latest rail = live wire** (`aside.latest`, also the story-page "keep"
   rail): entries sit on a vertical timeline rule with a marker dot per item —
   hollow/muted at rest, red and `pulse`-ing while the story is fresh
@@ -235,6 +246,18 @@ load-bearing statistic — one or two per story, never as decoration.
   use a hand-set `focus` per asset instead. If you add a new surface that
   cover-crops reader photos, wire it through the same helpers — never ship
   a dead-center crop.
+- **Reader chrome preferences** (`_THEME_JS`, applied from `<head>` on every
+  template): theme (`#themetoggle`, `data-theme` on `<html>`, localStorage
+  `top-theme`) and **text-only mode** (`#litetoggle` "Aa", `data-lite`,
+  localStorage `top-lite`) ride together on every chrome bar — the topbar
+  and every backbar. Lite mode is for unstable connections (much of the
+  readership): `[data-lite]` CSS hides all imagery, embeds, the live dock
+  and the QR box; because the preference is applied before the body parses,
+  below-the-fold `loading="lazy"` images are never requested. The active
+  toggle shows green with a green border (`aria-pressed` kept in sync). Any
+  new image-bearing surface must add itself to the `[data-lite]` hide list
+  in `build.py` — a surface that still downloads imagery in lite mode is a
+  bug against the mode's promise.
 
 ## 4. RTL is first-class
 
