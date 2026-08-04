@@ -1,221 +1,228 @@
 {
- "version": 1,
- "assets": [
-  {
-   "asset": "originals/media/times-of-palestine-2026-election-succession-timeline.svg",
-   "rightsBasis": "owned",
-   "credit": "Graphic: Times of Palestine",
-   "source": "Times of Palestine"
-  },
-  {
-   "asset": "originals/media/times-of-palestine-2026-succession-power-map.svg",
-   "rightsBasis": "owned",
-   "credit": "Graphic: Times of Palestine",
-   "source": "Times of Palestine"
-  },
-  {
-   "asset": "originals/media/times-of-palestine-france-pause-gaza-timeline.svg",
-   "rightsBasis": "owned",
-   "credit": "Graphic: Times of Palestine",
-   "source": "Times of Palestine"
-  },
-  {
-   "asset": "originals/media/times-of-palestine-chile-palestinian-friendship-day-timeline.svg",
-   "rightsBasis": "owned",
-   "credit": "Graphic: Times of Palestine",
-   "source": "Times of Palestine"
-  },
-  {
-   "asset": "originals/media/times-of-palestine-madrid-palestinian-culture-pact-accountability.svg",
-   "rightsBasis": "owned",
-   "credit": "Graphic: Times of Palestine",
-   "source": "Times of Palestine"
-  },
-  {
-   "asset": "originals/media/times-of-palestine-washington-brief-2026-07-30-gaza-money.svg",
-   "rightsBasis": "owned",
-   "credit": "Graphic: Times of Palestine",
-   "source": "Times of Palestine"
-  },
-  {
-   "asset": "originals/media/times-of-palestine-east-asia-palestine-projects-2026.svg",
-   "rightsBasis": "owned",
-   "credit": "Graphic: Times of Palestine",
-   "source": "CEAPAD Project List, Japan Ministry of Foreign Affairs, 22 July 2026"
-  },
-  {
-   "asset": "og-banner.png",
-   "rightsBasis": "owned",
-   "credit": "Times of Palestine",
-   "source": "Times of Palestine"
-  },
-  {
-   "asset": "icon-512.png",
-   "rightsBasis": "owned",
-   "credit": "Times of Palestine",
-   "source": "Times of Palestine"
-  },
-  {
-   "asset": "signal-qr.png",
-   "rightsBasis": "operational",
-   "credit": "Times of Palestine Signal contact code",
-   "source": "Times of Palestine"
-  },
-  {
-   "asset": "suha-arafat/media/gaza-airport-1998-arafat-clinton.jpg",
-   "rightsBasis": "public-domain",
-   "credit": "White House photograph, public domain",
-   "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
-   "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
-   "note": "Yasser Arafat and Bill Clinton at the Gaza International Airport ribbon-cutting, 14 Dec 1998, Suha Arafat behind them"
-  },
-  {
-   "asset": "suha-arafat/media/suha-arafat-hillary-clinton-gaza-1998.jpg",
-   "rightsBasis": "public-domain",
-   "credit": "White House photograph, public domain",
-   "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
-   "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
-   "note": "Suha Arafat with First Lady Hillary Clinton at a women's event in Gaza, 14 Dec 1998"
-  },
-  {
-   "asset": "suha-arafat/media/zahwa-silla-malta-arrival.jpg",
-   "rightsBasis": "courtesy",
-   "credit": "Photograph obtained by Times of Palestine",
-   "source": "Supplied to Times of Palestine by the publisher, July 2026",
-   "licenseUrl": null,
-   "note": "Zahwa Arafat receiving Silla, a wounded Gaza child, on arrival in Malta"
-  },
-  {
-   "asset": "suha-arafat/media/zahwa-silla-malta.jpg",
-   "rightsBasis": "courtesy",
-   "credit": "Photograph obtained by Times of Palestine",
-   "source": "Supplied to Times of Palestine by the publisher, July 2026",
-   "licenseUrl": null,
-   "note": "Zahwa Arafat with Silla in Malta"
-  },
-  {
-   "asset": "suha-arafat/media/zahwa-graduation-malta-2017.jpg",
-   "rightsBasis": "courtesy",
-   "credit": "Photograph obtained by Times of Palestine",
-   "source": "Supplied to Times of Palestine by the publisher, August 2026",
-   "licenseUrl": null,
-   "note": "Zahwa Arafat's University of Malta graduation, November 2017"
-  },
-  {
-   "asset": "suha-arafat/media/zahwa-diploma-university-of-malta.jpg",
-   "rightsBasis": "courtesy",
-   "credit": "Photograph obtained by Times of Palestine",
-   "source": "Supplied to Times of Palestine by the publisher, August 2026",
-   "licenseUrl": null,
-   "note": "University of Malta diploma of Zahwa El Kodwa (al-Qudwa), 13 Nov 2017"
-  },
-  {
-   "asset": "suha-arafat/media/zahwa-gaza-child-malta.jpg",
-   "rightsBasis": "courtesy",
-   "credit": "Photograph obtained by Times of Palestine",
-   "source": "Supplied to Times of Palestine by the publisher, August 2026",
-   "licenseUrl": null,
-   "note": "Zahwa Arafat playing with a Gaza child under treatment in Malta"
-  },
-  {
-   "asset": "originals/media/mohammad-dahlan-facebook-post-2026-08-01.jpg",
-   "rightsBasis": "news-reporting screenshot",
-   "credit": "Photo: Mohammad Dahlan's verified Facebook page (screenshot)",
-   "source": "Public statement posted on Mohammad Dahlan's verified Facebook account, 1 Aug 2026; supplied to the newsroom by the owner",
-   "note": "The post is the subject of the article (Kushner halt confirmation); reproduced for news reporting and quotation of a public figure's public statement"
-  },
-  {
-   "asset": "originals/media/haya-washington-life-school-2026.mp4",
-   "rightsBasis": "publisher-supplied — the organization's own published video, provided to the newsroom by the owner for news reporting",
-   "credit": "Video: Haya Washington",
-   "source": "Haya Washington"
-  },
-  {
-   "asset": "originals/media/haya-washington-life-school-triptych-2026.jpg",
-   "rightsBasis": "publisher-supplied — stills from the organization's own published video, provided to the newsroom by the owner for news reporting",
-   "credit": "Photo triptych: stills from Haya Washington's video",
-   "source": "Haya Washington"
-  },
-  {
-   "asset": "originals/media/haya-washington-life-school-entrance-2026.jpg",
-   "rightsBasis": "publisher-supplied — stills from the organization's own published video, provided to the newsroom by the owner for news reporting",
-   "credit": "Photo: still from Haya Washington's video",
-   "source": "Haya Washington"
-  },
-  {
-   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eizenkot,%20November%202020%20(GPOMN1%209040)%20(cropped).jpg?width=640",
-   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-   "credit": "Gadi Eisenkot — Wikimedia Commons / Spokesperson unit, President of Israel",
-   "source": "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot,_November_2020_(GPOMN1_9040)_(cropped).jpg",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot,_November_2020_(GPOMN1_9040)_(cropped).jpg"
-  },
-  {
-   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jibril%20Rajoub.jpg?width=640",
-   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-   "credit": "Jibril Rajoub — Wikimedia Commons",
-   "source": "https://commons.wikimedia.org/wiki/File:Jibril_Rajoub.jpg",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Jibril_Rajoub.jpg"
-  },
-  {
-   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Saifedean-ammous-portrait.jpg?width=640",
-   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
-   "credit": "Saifedean Ammous — Nadezhda Hope Boginya / Wikimedia Commons",
-   "source": "https://commons.wikimedia.org/wiki/File:Saifedean-ammous-portrait.jpg",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "note": "Portrait dated 18 July 2020; permission confirmed through Wikimedia Commons VRT"
-  },
-  {
-   "asset": "https://img.youtube.com/vi/MqNDO0FjZxs/hqdefault.jpg",
-   "rightsBasis": "news-reporting thumbnail — still of Palestine TV's own published report, used to identify the report this feature covers and embeds",
-   "credit": "Photo: Palestine TV report (thumbnail)",
-   "source": "https://youtu.be/MqNDO0FjZxs"
-  },
-  {
-   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Admiral%20Brad%20Cooper%20(Charles%20B.%20Cooper%20II),%20Commander%20of%20United%20States%20Central%20Command%20on%20August%208,%202025%20(cropped).jpg?width=640",
-   "rightsBasis": "public domain — official US Department of Defense photograph, served from Wikimedia Commons and verified at build time",
-   "credit": "Adm. Brad Cooper — US Department of Defense photo via Wikimedia Commons",
-   "source": "https://commons.wikimedia.org/wiki/File:Admiral_Brad_Cooper_(Charles_B._Cooper_II),_Commander_of_United_States_Central_Command_on_August_8,_2025_(cropped).jpg",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Admiral_Brad_Cooper_(Charles_B._Cooper_II),_Commander_of_United_States_Central_Command_on_August_8,_2025_(cropped).jpg"
-  },
-  {
-   "asset": "originals/media/mohammad-dahlan-facebook-post-2026-08-02.jpg",
-   "rightsBasis": "news-reporting screenshot — the public statement this story reports, as posted on the subject's verified page",
-   "credit": "Photo: Mohammad Dahlan's verified Facebook page (screenshot)",
-   "source": "https://www.facebook.com"
-  },
-  {
-   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ahmed%20al-Sharaa,%20President%20of%20Syria,%20in%20March%202026.jpg?width=640",
-   "rightsBasis": "wikimedia-cc — free-licensed official portrait served from Wikimedia Commons, verified at build time",
-   "credit": "Ahmed al-Sharaa — Wikimedia Commons / Syrian Presidency",
-   "source": "https://commons.wikimedia.org/wiki/File:Ahmed_al-Sharaa,_President_of_Syria,_in_March_2026.jpg",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ahmed_al-Sharaa,_President_of_Syria,_in_March_2026.jpg"
-  },
-  {
-   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%20(2023).jpg?width=640",
-   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-   "credit": "Benjamin Netanyahu — Wikimedia Commons",
-   "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_(2023).jpg",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_(2023).jpg"
-  },
-  {
-   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahmoud%20Abbas.jpg?width=640",
-   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-   "credit": "Mahmoud Abbas — Wikimedia Commons / Palestinian Authority press office",
-   "source": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas.jpg",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas.jpg"
-  },
-  {
-   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Capitol%20west%20front%20edit2.jpg?width=800",
-   "rightsBasis": "wikimedia-cc — free-licensed featured picture served from Wikimedia Commons, verified at build time",
-   "credit": "US Capitol — Martin Falbisoner / Wikimedia Commons, CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_west_front_edit2.jpg",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
-  },
-  {
-   "asset": "originals/media/ali-al-thawadi-un-2026.jpg",
-   "rightsBasis": "owner-supplied — cover art provided directly by the publisher for this story (2026-08-03)",
-   "credit": "Photo: Times of Palestine",
-   "source": "Publisher upload, 2026-08-03"
-  }
- ]
+  "version": 1,
+  "assets": [
+    {
+      "asset": "originals/media/times-of-palestine-2026-election-succession-timeline.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "originals/media/times-of-palestine-2026-succession-power-map.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "originals/media/times-of-palestine-france-pause-gaza-timeline.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "originals/media/times-of-palestine-chile-palestinian-friendship-day-timeline.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "originals/media/times-of-palestine-madrid-palestinian-culture-pact-accountability.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "originals/media/times-of-palestine-washington-brief-2026-07-30-gaza-money.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "originals/media/times-of-palestine-east-asia-palestine-projects-2026.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "CEAPAD Project List, Japan Ministry of Foreign Affairs, 22 July 2026"
+    },
+    {
+      "asset": "og-banner.png",
+      "rightsBasis": "owned",
+      "credit": "Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "icon-512.png",
+      "rightsBasis": "owned",
+      "credit": "Times of Palestine",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "signal-qr.png",
+      "rightsBasis": "operational",
+      "credit": "Times of Palestine Signal contact code",
+      "source": "Times of Palestine"
+    },
+    {
+      "asset": "suha-arafat/media/gaza-airport-1998-arafat-clinton.jpg",
+      "rightsBasis": "public-domain",
+      "credit": "White House photograph, public domain",
+      "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
+      "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
+      "note": "Yasser Arafat and Bill Clinton at the Gaza International Airport ribbon-cutting, 14 Dec 1998, Suha Arafat behind them"
+    },
+    {
+      "asset": "suha-arafat/media/suha-arafat-hillary-clinton-gaza-1998.jpg",
+      "rightsBasis": "public-domain",
+      "credit": "White House photograph, public domain",
+      "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
+      "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
+      "note": "Suha Arafat with First Lady Hillary Clinton at a women's event in Gaza, 14 Dec 1998"
+    },
+    {
+      "asset": "suha-arafat/media/zahwa-silla-malta-arrival.jpg",
+      "rightsBasis": "courtesy",
+      "credit": "Photograph obtained by Times of Palestine",
+      "source": "Supplied to Times of Palestine by the publisher, July 2026",
+      "licenseUrl": null,
+      "note": "Zahwa Arafat receiving Silla, a wounded Gaza child, on arrival in Malta"
+    },
+    {
+      "asset": "suha-arafat/media/zahwa-silla-malta.jpg",
+      "rightsBasis": "courtesy",
+      "credit": "Photograph obtained by Times of Palestine",
+      "source": "Supplied to Times of Palestine by the publisher, July 2026",
+      "licenseUrl": null,
+      "note": "Zahwa Arafat with Silla in Malta"
+    },
+    {
+      "asset": "suha-arafat/media/zahwa-graduation-malta-2017.jpg",
+      "rightsBasis": "courtesy",
+      "credit": "Photograph obtained by Times of Palestine",
+      "source": "Supplied to Times of Palestine by the publisher, August 2026",
+      "licenseUrl": null,
+      "note": "Zahwa Arafat's University of Malta graduation, November 2017"
+    },
+    {
+      "asset": "suha-arafat/media/zahwa-diploma-university-of-malta.jpg",
+      "rightsBasis": "courtesy",
+      "credit": "Photograph obtained by Times of Palestine",
+      "source": "Supplied to Times of Palestine by the publisher, August 2026",
+      "licenseUrl": null,
+      "note": "University of Malta diploma of Zahwa El Kodwa (al-Qudwa), 13 Nov 2017"
+    },
+    {
+      "asset": "suha-arafat/media/zahwa-gaza-child-malta.jpg",
+      "rightsBasis": "courtesy",
+      "credit": "Photograph obtained by Times of Palestine",
+      "source": "Supplied to Times of Palestine by the publisher, August 2026",
+      "licenseUrl": null,
+      "note": "Zahwa Arafat playing with a Gaza child under treatment in Malta"
+    },
+    {
+      "asset": "originals/media/mohammad-dahlan-facebook-post-2026-08-01.jpg",
+      "rightsBasis": "news-reporting screenshot",
+      "credit": "Photo: Mohammad Dahlan's verified Facebook page (screenshot)",
+      "source": "Public statement posted on Mohammad Dahlan's verified Facebook account, 1 Aug 2026; supplied to the newsroom by the owner",
+      "note": "The post is the subject of the article (Kushner halt confirmation); reproduced for news reporting and quotation of a public figure's public statement"
+    },
+    {
+      "asset": "originals/media/haya-washington-life-school-2026.mp4",
+      "rightsBasis": "publisher-supplied — the organization's own published video, provided to the newsroom by the owner for news reporting",
+      "credit": "Video: Haya Washington",
+      "source": "Haya Washington"
+    },
+    {
+      "asset": "originals/media/haya-washington-life-school-triptych-2026.jpg",
+      "rightsBasis": "publisher-supplied — stills from the organization's own published video, provided to the newsroom by the owner for news reporting",
+      "credit": "Photo triptych: stills from Haya Washington's video",
+      "source": "Haya Washington"
+    },
+    {
+      "asset": "originals/media/haya-washington-life-school-entrance-2026.jpg",
+      "rightsBasis": "publisher-supplied — stills from the organization's own published video, provided to the newsroom by the owner for news reporting",
+      "credit": "Photo: still from Haya Washington's video",
+      "source": "Haya Washington"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eizenkot,%20November%202020%20(GPOMN1%209040)%20(cropped).jpg?width=640",
+      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Gadi Eisenkot — Wikimedia Commons / Spokesperson unit, President of Israel",
+      "source": "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot,_November_2020_(GPOMN1_9040)_(cropped).jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot,_November_2020_(GPOMN1_9040)_(cropped).jpg"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jibril%20Rajoub.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Jibril Rajoub — Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Jibril_Rajoub.jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Jibril_Rajoub.jpg"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Saifedean-ammous-portrait.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Saifedean Ammous — Nadezhda Hope Boginya / Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Saifedean-ammous-portrait.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "note": "Portrait dated 18 July 2020; permission confirmed through Wikimedia Commons VRT"
+    },
+    {
+      "asset": "https://img.youtube.com/vi/MqNDO0FjZxs/hqdefault.jpg",
+      "rightsBasis": "news-reporting thumbnail — still of Palestine TV's own published report, used to identify the report this feature covers and embeds",
+      "credit": "Photo: Palestine TV report (thumbnail)",
+      "source": "https://youtu.be/MqNDO0FjZxs"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Admiral%20Brad%20Cooper%20(Charles%20B.%20Cooper%20II),%20Commander%20of%20United%20States%20Central%20Command%20on%20August%208,%202025%20(cropped).jpg?width=640",
+      "rightsBasis": "public domain — official US Department of Defense photograph, served from Wikimedia Commons and verified at build time",
+      "credit": "Adm. Brad Cooper — US Department of Defense photo via Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Admiral_Brad_Cooper_(Charles_B._Cooper_II),_Commander_of_United_States_Central_Command_on_August_8,_2025_(cropped).jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Admiral_Brad_Cooper_(Charles_B._Cooper_II),_Commander_of_United_States_Central_Command_on_August_8,_2025_(cropped).jpg"
+    },
+    {
+      "asset": "originals/media/mohammad-dahlan-facebook-post-2026-08-02.jpg",
+      "rightsBasis": "news-reporting screenshot — the public statement this story reports, as posted on the subject's verified page",
+      "credit": "Photo: Mohammad Dahlan's verified Facebook page (screenshot)",
+      "source": "https://www.facebook.com"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ahmed%20al-Sharaa,%20President%20of%20Syria,%20in%20March%202026.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — free-licensed official portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Ahmed al-Sharaa — Wikimedia Commons / Syrian Presidency",
+      "source": "https://commons.wikimedia.org/wiki/File:Ahmed_al-Sharaa,_President_of_Syria,_in_March_2026.jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ahmed_al-Sharaa,_President_of_Syria,_in_March_2026.jpg"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%20(2023).jpg?width=640",
+      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Benjamin Netanyahu — Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_(2023).jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_(2023).jpg"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahmoud%20Abbas.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Mahmoud Abbas — Wikimedia Commons / Palestinian Authority press office",
+      "source": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas.jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas.jpg"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Capitol%20west%20front%20edit2.jpg?width=800",
+      "rightsBasis": "wikimedia-cc — free-licensed featured picture served from Wikimedia Commons, verified at build time",
+      "credit": "US Capitol — Martin Falbisoner / Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_west_front_edit2.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "asset": "originals/media/ali-al-thawadi-un-2026.jpg",
+      "rightsBasis": "owner-supplied — cover art provided directly by the publisher for this story (2026-08-03)",
+      "credit": "Photo: Times of Palestine",
+      "source": "Publisher upload, 2026-08-03"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohammed%20Assaf%202014.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Mohammed Assaf — Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Mohammed_Assaf_2014.jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mohammed_Assaf_2014.jpg"
+    }
+  ]
 }
