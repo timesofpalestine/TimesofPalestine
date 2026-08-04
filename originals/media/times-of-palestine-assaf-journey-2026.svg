@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Mohammed Assaf's journey: Khan Younis camp, Rafah crossing, the Cairo wall, a borrowed number, the Arab Idol title, the world's stages">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- masthead strip -->
+  <rect x="0" y="0" width="1600" height="6" fill="#8a1f2d"/>
+  <text x="800" y="84" text-anchor="middle" fill="#c7a86b" font-family="Georgia,serif" font-size="30" letter-spacing="6">TIMES OF PALESTINE · ARTS</text>
+  <text x="800" y="150" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="54" font-weight="bold">The Voice That Climbed the Wall</text>
+  <text x="800" y="204" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="40">الصوت الذي تسلّق السور</text>
+
+  <!-- journey line -->
+  <path d="M 170 560 C 420 470, 560 640, 800 545 C 1040 450, 1180 630, 1430 520" fill="none" stroke="#c7a86b" stroke-width="4" stroke-dasharray="1 14" stroke-linecap="round"/>
+
+  <!-- station 1: Khan Younis -->
+  <circle cx="170" cy="560" r="16" fill="#286344"/>
+  <text x="170" y="620" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="28" font-weight="bold">مخيم خانيونس</text>
+  <text x="170" y="656" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="22">Khan Younis camp</text>
+  <text x="170" y="690" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="20">مغني أعراس · wedding singer</text>
+
+  <!-- station 2: Rafah -->
+  <circle cx="450" cy="520" r="16" fill="#8a1f2d"/>
+  <text x="450" y="450" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="28" font-weight="bold">معبر رفح</text>
+  <text x="450" y="486" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="22">Rafah crossing · يومان عالقاً</text>
+
+  <!-- station 3: the wall -->
+  <g transform="translate(760,545)">
+    <rect x="-30" y="-90" width="60" height="90" fill="none" stroke="#c7a86b" stroke-width="4"/>
+    <line x1="-30" y1="-60" x2="30" y2="-60" stroke="#c7a86b" stroke-width="3"/>
+    <line x1="-30" y1="-30" x2="30" y2="-30" stroke="#c7a86b" stroke-width="3"/>
+    <line x1="0" y1="-90" x2="0" y2="0" stroke="#c7a86b" stroke-width="3"/>
+  </g>
+  <circle cx="800" cy="545" r="16" fill="#c7a86b"/>
+  <text x="800" y="620" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="28" font-weight="bold">سور القاهرة · the Cairo wall</text>
+  <text x="800" y="656" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="22">لا رقم؟ متسابق غزّي يمنحه رقمه</text>
+
+  <!-- station 4: Beirut title -->
+  <circle cx="1120" cy="520" r="16" fill="#286344"/>
+  <text x="1120" y="446" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="28" font-weight="bold">بيروت 2013 · اللقب</text>
+  <text x="1120" y="482" text-anchor="middle" fill="#c7a86b" font-family="Tahoma,sans-serif" font-size="24">«علّي الكوفية»</text>
+
+  <!-- station 5: world stages -->
+  <circle cx="1430" cy="520" r="16" fill="#8a1f2d"/>
+  <text x="1430" y="590" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="28" font-weight="bold">مسارح العالم 2026</text>
+  <text x="1430" y="626" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="22">Sydney · Cincinnati · beyond</text>
+
+  <!-- microphone mark -->
+  <g transform="translate(800,330)">
+    <rect x="-8" y="-64" width="16" height="52" rx="8" fill="#f2eee8"/>
+    <path d="M -26 -30 a 26 26 0 0 0 52 0" fill="none" stroke="#c7a86b" stroke-width="5"/>
+    <line x1="0" y1="-4" x2="0" y2="26" stroke="#c7a86b" stroke-width="5"/>
+    <line x1="-18" y1="26" x2="18" y2="26" stroke="#c7a86b" stroke-width="5"/>
+  </g>
+
+  <text x="800" y="836" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="22">أول فلسطيني يفوز بلقب «آراب آيدول» · The first Palestinian to win Arab Idol · 22.06.2013</text>
+  <rect x="0" y="894" width="1600" height="6" fill="#286344"/>
+</svg>
