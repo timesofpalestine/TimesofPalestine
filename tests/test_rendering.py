@@ -1043,6 +1043,45 @@ class GazaNumbersTests(unittest.TestCase):
         self.assertEqual(self.gp.panel("en"), "")
         self.assertIsNone(self.gp.payload())
 
+    def test_panel_offers_open_data_downloads_in_both_languages(self):
+        html = self.gp.panel("en")
+        self.assertIn('href="/data/gaza-numbers.json" download', html)
+        self.assertIn('href="/data/gaza-numbers.csv" download', html)
+        self.assertIn("Open data", html)
+        ar = self.gp.panel("ar")
+        self.assertIn("حمّل هذا السجل", ar)
+        self.assertIn('href="/data/gaza-numbers.csv" download', ar)
+
+    def test_complex_figures_carry_focusable_methodology_tooltips(self):
+        html = self.gp.panel("en")
+        self.assertIn('class="gi-help" tabindex="0"', html)
+        self.assertIn("renewable indefinitely", html)          # pr_admin
+        self.assertIn("Unlawful Combatants Law", html)         # pr_gaza
+        self.assertIn("malnutrition and dehydration", html)    # famine
+        self.assertIn("casualties or property damage", html)   # wb_attacks
+        ar = self.gp.panel("ar")
+        self.assertIn("المقاتلين غير الشرعيين", ar)
+        # the note reaches screen readers via the marker's aria-label
+        self.assertIn('aria-label="اعتقال بأمر عسكري إسرائيلي', ar)
+
+    def test_csv_export_mirrors_the_payload_with_bilingual_labels(self):
+        import csv as _csv
+        import io as _io
+        data = self.gp.payload()
+        rows = list(_csv.reader(_io.StringIO(self.gp.payload_csv(data))))
+        self.assertEqual(rows[0][:5],
+                         ["region", "key", "indicator_en", "indicator_ar", "value"])
+        by_key = {r[1]: r for r in rows[1:]}
+        self.assertEqual(by_key["killed"][0], "gaza")
+        self.assertEqual(by_key["killed"][4], "68643")
+        self.assertEqual(by_key["killed"][5], "2026-08-02")
+        self.assertEqual(by_key["wb_attacks"][2], "Settler attacks")
+        self.assertEqual(by_key["wb_attacks"][3], "اعتداءات المستوطنين")
+        self.assertEqual(by_key["pr_total"][0], "prisoners")
+        self.assertIn("Addameer", by_key["pr_total"][6])
+        # every published figure has a CSV row — nothing silently dropped
+        self.assertEqual(set(by_key), set(data["figures"]))
+
 
 class _FakeBriefsClient:
     """Plays back canned model replies and records every request."""
@@ -1232,3 +1271,23 @@ class MobileChromeTests(unittest.TestCase):
             self.assertIn('class="nav-more"', page)
             self.assertIn('aria-controls="navtier2"', page)
             self.assertIn(label, page)
+
+    def test_text_only_mode_toggle_rides_every_chrome_bar(self):
+        """Owner-forwarded review 2026-08-04: a low-data text-only mode for
+        readers on unstable connections. The preference applies from <head>
+        so hidden lazy images are never fetched."""
+        built_at = datetime(2026, 8, 3, 12, tzinfo=timezone.utc)
+        it = item()
+        it.update({"image": "/media/x.svg", "pid": "chrome0003"})
+        for lang in ("en", "ar"):
+            page = build.render_page(lang, [dict(it, lang=lang)], built_at)
+            self.assertIn('id="litetoggle"', page)
+            self.assertIn('top-lite', page)          # head script reads the pref
+            story = build.render_story(dict(it, lang=lang, brief="A body."),
+                                       lang, [], [dict(it, lang=lang)], built_at)
+            self.assertIn('id="litetoggle"', story)
+        self.assertIn("[data-lite] .hero-imgwrap>a", build.CSS)
+        self.assertIn("[data-lite] .embed", build.CSS)
+        self.assertIn("[data-lite] .litetoggle", build.CSS)
+        # the hero headline must SURVIVE text-only mode — only its image goes
+        self.assertIn("[data-lite] .hero-overlay{position:static", build.CSS)

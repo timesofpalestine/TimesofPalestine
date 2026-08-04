@@ -2573,6 +2573,17 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .themetoggle{background:none;border:0;cursor:pointer;font-size:1.02rem;line-height:1;padding:.2rem .4rem;color:inherit;opacity:.85}
 .themetoggle:hover{opacity:1}
 .topbar .themetoggle{margin-inline-start:auto}
+.litetoggle{background:none;border:1px solid transparent;border-radius:3px;cursor:pointer;font-family:var(--sans);font-size:.74rem;font-weight:800;line-height:1;padding:.24rem .4rem;color:inherit;opacity:.85}
+.litetoggle:hover{opacity:1}
+[data-lite] .litetoggle{color:var(--green);border-color:var(--green);opacity:1}
+[data-lite] .hero-imgwrap>a,[data-lite] .sub-thumb,[data-lite] .lt-thumb,[data-lite] .card>a:first-child,[data-lite] .card .ph,[data-lite] .rowcard img,[data-lite] .rowcard .ph,[data-lite] .research-feat img,[data-lite] .research-feat .noimg,[data-lite] .fr-card img,[data-lite] .livedock,[data-lite] .story img.lede,[data-lite] .story div.lede,[data-lite] .photocredit,[data-lite] .embed,[data-lite] .qrbox,[data-lite] .live-fab{display:none!important}
+[data-lite] .hero-imgwrap{background:none;border-radius:0}
+[data-lite] .hero-overlay{position:static;padding:0;background:none}
+[data-lite] .hero-overlay .label{color:var(--red)}
+[data-lite] .hero-overlay h2,[data-lite] .hero-overlay h2 a{color:var(--ink);text-shadow:none}
+[data-lite] .hero-overlay .meta{color:var(--muted)}
+[data-lite] .hero-overlay .meta .t{color:var(--muted)}
+[data-lite] .hero-overlay .meta .src{color:var(--green)}
 .topbar .lang{margin-inline-start:.3rem}
 .backbar .bb-tools{display:flex;align-items:center;gap:.6rem}
 .story blockquote.pull{margin:1.7rem 0;padding-inline-start:1.1rem;border-inline-start:4px solid #c7a86b;font-family:var(--serif);font-size:1.32rem;line-height:1.5;font-weight:700;max-width:42.5rem}
@@ -2873,6 +2884,11 @@ CSS = CSS.replace("%%DARK%%",
 _THEME_JS = (
     '<script>(function(){try{var t=localStorage.getItem("top-theme");'
     'if(t)document.documentElement.dataset.theme=t}catch(e){}'
+    # Reader chrome preferences run from <head> so they apply before the body
+    # parses — for lite mode that matters twice: no flash of imagery, and
+    # display:none lazy images below the fold are never requested at all.
+    'try{if(localStorage.getItem("top-lite")==="1")'
+    'document.documentElement.dataset.lite="1"}catch(e){}'
     'document.addEventListener("DOMContentLoaded",function(){'
     'var b=document.getElementById("themetoggle");if(!b)return;'
     'function icon(){var t=document.documentElement.dataset.theme||"";'
@@ -2883,13 +2899,33 @@ _THEME_JS = (
     'try{if(nxt)localStorage.setItem("top-theme",nxt);'
     'else localStorage.removeItem("top-theme")}catch(e){}'
     'if(nxt)document.documentElement.dataset.theme=nxt;'
-    'else delete document.documentElement.dataset.theme;icon()})})})();</script>')
+    'else delete document.documentElement.dataset.theme;icon()});'
+    'var l=document.getElementById("litetoggle");if(!l)return;'
+    'function lst(){l.setAttribute("aria-pressed",'
+    'document.documentElement.dataset.lite==="1"?"true":"false")}lst();'
+    'l.addEventListener("click",function(){'
+    'var on=document.documentElement.dataset.lite==="1";'
+    'try{if(on)localStorage.removeItem("top-lite");'
+    'else localStorage.setItem("top-lite","1")}catch(e){}'
+    'if(on)delete document.documentElement.dataset.lite;'
+    'else document.documentElement.dataset.lite="1";lst()})})})();</script>')
 
 
 def theme_btn(lang):
     label = "المظهر: تلقائي / داكن / فاتح" if lang == "ar" else "Theme: auto / dark / light"
     return (f'<button id="themetoggle" class="themetoggle" '
             f'aria-label="{label}" title="{label}">🌙</button>')
+
+
+def lite_btn(lang):
+    # Text-only mode for unstable connections (owner-forwarded review,
+    # 2026-08-04). The toggle rides beside the theme button on every chrome
+    # bar; the preference persists in localStorage and is applied from <head>
+    # (see _THEME_JS), so below-the-fold lazy images are never fetched at all.
+    label = ("وضع النص فقط — يوفّر البيانات على الاتصال الضعيف" if lang == "ar"
+             else "Text-only mode — saves data on weak connections")
+    return (f'<button id="litetoggle" class="litetoggle" aria-pressed="false" '
+            f'aria-label="{label}" title="{label}">Aa</button>')
 
 
 # The page is alive between rebuilds: every <time datetime> re-renders its
@@ -3420,7 +3456,7 @@ def render_page(lang, items, built_at):
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="topbar"><div class="wrap">
   <span class="date">{date_str}</span>
   <span class="upd"><span class="dot"></span>{t['updated']} {time_str} · {t['tz']}</span>
-  {theme_btn(lang)}<a class="lang" href="{t['switch_href']}">{t['switch_lang']}</a>
+  {theme_btn(lang)}{lite_btn(lang)}<a class="lang" href="{t['switch_href']}">{t['switch_lang']}</a>
 </div></div>
 
 <div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track_hidden}</div></div></div>
@@ -3699,7 +3735,7 @@ def render_story(it, lang, related, rail, built_at):
 {_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}<a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
+<div class="backbar"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
 <div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track_hidden}</div></div></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="../"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
@@ -3819,7 +3855,7 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 {_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
+<div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
@@ -3881,7 +3917,7 @@ def render_search_page(lang, built_at, cats=()):
 {_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></span></div>
+<div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
@@ -4069,11 +4105,15 @@ def main():
          "briefs": sum(1 for i in en_items + ar_items if i.get("brief"))}, indent=2))
     # Live figures for the Gaza by the Numbers panel: the page polls this file
     # between rebuilds and animates any figure the Ministry has revised.
-    moh_payload = __import__("gaza_panel").payload()
+    _gp = __import__("gaza_panel")
+    moh_payload = _gp.payload()
     if moh_payload:
         (dist / "data").mkdir(exist_ok=True)
         (dist / "data" / "gaza-numbers.json").write_text(
             json.dumps(moh_payload, ensure_ascii=False), encoding="utf-8")
+        # The same ledger as CSV — the panel's "Open data" line links both.
+        (dist / "data" / "gaza-numbers.csv").write_text(
+            _gp.payload_csv(moh_payload), encoding="utf-8")
     (dist / "review-queue.json").write_text(
         json.dumps(sanitized_review_queue(pending), indent=2), encoding="utf-8")
     health = HEALTH.public_dict({"en": len(en_items), "ar": len(ar_items)})
