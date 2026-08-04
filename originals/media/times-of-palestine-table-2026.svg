@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="The Palestinian Table: the weekly restaurant feature — a shared plate under the series name">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="6" fill="#8a1f2d"/>
+  <text x="800" y="92" text-anchor="middle" fill="#c7a86b" font-family="Georgia,serif" font-size="30" letter-spacing="6">TIMES OF PALESTINE · THE WEEKLY FEATURE</text>
+  <text x="800" y="200" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="76" font-weight="bold">المائدة الفلسطينية</text>
+  <text x="800" y="268" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="44" font-weight="bold">THE PALESTINIAN TABLE</text>
+  <!-- shared plate -->
+  <circle cx="800" cy="540" r="180" fill="none" stroke="#c7a86b" stroke-width="5"/>
+  <circle cx="800" cy="540" r="140" fill="#17181b" stroke="#3d4f6b" stroke-width="2"/>
+  <circle cx="800" cy="540" r="60" fill="#8a1f2d"/>
+  <circle cx="740" cy="500" r="12" fill="#c7a86b"/><circle cx="860" cy="500" r="12" fill="#c7a86b"/>
+  <circle cx="760" cy="590" r="12" fill="#286344"/><circle cx="845" cy="585" r="12" fill="#286344"/>
+  <line x1="540" y1="430" x2="540" y2="650" stroke="#aaa9a5" stroke-width="6" stroke-linecap="round"/>
+  <g stroke="#aaa9a5" stroke-width="6" stroke-linecap="round">
+    <line x1="1060" y1="440" x2="1060" y2="650"/><line x1="1046" y1="440" x2="1046" y2="490"/><line x1="1074" y1="440" x2="1074" y2="490"/>
+  </g>
+  <text x="800" y="800" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="26">مطعم فلسطيني شهير في العالم كل جمعة · a famous Palestinian restaurant of the world, every Friday</text>
+  <rect x="0" y="894" width="1600" height="6" fill="#286344"/>
+</svg>

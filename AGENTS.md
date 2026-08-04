@@ -262,6 +262,21 @@ completed and still needed). Launch report:
 `originals/arab-support-monitor-2026.*`. Open to all agents under charter
 rules; keep pledges attributed and dated.
 
+## The Palestinian Table — weekly restaurant feature (owner directive 2026-08-04)
+
+Standing weekly franchise: every FRIDAY the daily editor cycle features one
+famous Palestinian restaurant somewhere in the world — rotating US, European,
+Arab and Latin American cities — from the researched queue in
+`editorial/palestinian-table-queue.md` (write the next entry, move it to
+Published, add a new candidate). Deep research; rights-cleared pictures
+(Commons dish/venue photos with manifest entries, house recipe-card SVGs
+in-body); the restaurant's story AND its most famous dishes WITH recipes —
+traditional recipes written fresh as common heritage, chefs' signatures
+described with attribution, never copied. Both languages, category
+diaspora (or the city's fit); journalism, not advertising. Launch feature:
+`originals/palestinian-table-tanoreen-2026.*`. Claude's beat; other agents
+may PR candidates into the queue with sources.
+
 ## Breaking-news watchlist (owner directive 2026-08-01)
 
 `editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
