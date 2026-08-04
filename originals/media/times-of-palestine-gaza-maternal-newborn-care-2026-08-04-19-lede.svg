@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Gaza: 3,958 miscarriages recorded in six months, as monthly live births fall</title>
+  <desc id="dsc">Dark editorial graphic. At left, the figure 3,958 miscarriages recorded in the first half of 2026, reported by the Palestinian Medical Relief Society in Gaza, with OCHA's figure of 82 severe maternal morbidity cases per 1,000 deliveries. At right, a bar chart of recorded live births logged by Gaza's health ministry: 5,210 in January, 3,433 in February, 3,233 in March, 2,004 in April and 1,701 in May. Labels appear in English and Arabic.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="barfade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8102E"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- headline -->
+  <text x="80" y="98" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Gaza: 3,958 miscarriages in six months</text>
+  <text x="80" y="142" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#c7a86b" direction="rtl">غزة: 3,958 حالة إجهاض في ستة أشهر</text>
+  <line x1="80" y1="170" x2="1520" y2="170" stroke="#8a1f2d" stroke-width="3"/>
+
+  <!-- left stat block -->
+  <text x="80" y="238" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="2" fill="#aaa9a5">MISCARRIAGES RECORDED</text>
+  <text x="80" y="266" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl">حالات إجهاض مسجَّلة</text>
+
+  <text x="80" y="396" font-family="'Source Serif 4',Georgia,serif" font-size="128" fill="#c7a86b">3,958</text>
+  <text x="80" y="440" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">first half of 2026 · النصف الأول من 2026</text>
+  <text x="80" y="478" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Palestinian Medical Relief Society, Gaza — Bassam Zaqout</text>
+  <text x="80" y="506" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">OCHA (23 July) puts the same six months at nearly 4,000</text>
+
+  <rect x="80" y="556" width="580" height="132" fill="#286344" fill-opacity="0.16" stroke="#59a97d" stroke-width="2"/>
+  <text x="108" y="608" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#59a97d">82</text>
+  <text x="190" y="596" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">severe maternal morbidity cases</text>
+  <text x="190" y="622" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">per 1,000 deliveries — OCHA, 23 July</text>
+  <text x="108" y="662" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b" direction="rtl">اعتلال الأمومة الشديد لكل 1,000 حالة ولادة</text>
+
+  <line x1="740" y1="215" x2="740" y2="700" stroke="#aaa9a5" stroke-opacity="0.28" stroke-width="2"/>
+
+  <!-- chart -->
+  <text x="820" y="238" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="2" fill="#aaa9a5">RECORDED LIVE BIRTHS, 2026</text>
+  <text x="820" y="266" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl">المواليد الأحياء المسجَّلون، 2026</text>
+
+  <line x1="820" y1="700" x2="1520" y2="700" stroke="#f2eee8" stroke-opacity="0.5" stroke-width="2"/>
+
+  <!-- January 5210 -->
+  <rect x="840" y="380" width="100" height="320" fill="url(#barfade)"/>
+  <text x="890" y="362" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#f2eee8">5,210</text>
+  <text x="890" y="730" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">Jan</text>
+  <text x="890" y="758" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">يناير</text>
+
+  <!-- February 3433 -->
+  <rect x="975" y="489" width="100" height="211" fill="url(#barfade)"/>
+  <text x="1025" y="471" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#f2eee8">3,433</text>
+  <text x="1025" y="730" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">Feb</text>
+  <text x="1025" y="758" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">فبراير</text>
+
+  <!-- March 3233 -->
+  <rect x="1110" y="501" width="100" height="199" fill="url(#barfade)"/>
+  <text x="1160" y="483" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#f2eee8">3,233</text>
+  <text x="1160" y="730" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">Mar</text>
+  <text x="1160" y="758" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">مارس</text>
+
+  <!-- April 2004 -->
+  <rect x="1245" y="577" width="100" height="123" fill="url(#barfade)"/>
+  <text x="1295" y="559" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#f2eee8">2,004</text>
+  <text x="1295" y="730" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">Apr</text>
+  <text x="1295" y="758" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">أبريل</text>
+
+  <!-- May 1701 -->
+  <rect x="1380" y="595" width="100" height="105" fill="url(#barfade)"/>
+  <text x="1430" y="577" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#f2eee8">1,701</text>
+  <text x="1430" y="730" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">May</text>
+  <text x="1430" y="758" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">مايو</text>
+
+  <text x="820" y="806" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#c7a86b">Annual births: about 57,000 (2022) · 54,000 (2023) · 38,000 (2024)</text>
+
+  <!-- footer -->
+  <line x1="80" y1="836" x2="1520" y2="836" stroke="#aaa9a5" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="80" y="868" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: PMRS Gaza; OCHA, 23 July; Gaza health ministry figures compiled by the Gaza Centre for Human Rights. Reproductive health data are likely undercounts.</text>
+</svg>
