@@ -185,6 +185,33 @@ deadlines retired, both languages, links verified. Deadlines are always
 phrased as verify-at-source. Claude's beat; other agents may PR additions
 with sources.
 
+## SANAD — bitchat for medicine (owner north star, 2026-08-04)
+
+The owner's guiding principle, verbatim in spirit: **SANAD is bitchat for
+medicine — an app that works and runs purely for medical cases and helps
+doctors and patients talk to each other worldwide to solve medical issues.
+That is the problem we are in love with and the problem we want to solve.**
+Every Sanad decision is measured against this sentence. War zone first:
+hospitals and patients in Gaza, where internet and even phone service come
+and go.
+
+Current surfaces:
+- **`/sanad/` web board** (live, static feature): offline-first single-file
+  case board; four carriers; end-to-end sealed reply threads on bitchat's
+  model; ward-team quick start (install bitchat → everyone joins `#sanad`
+  → post → share); official bitchat download links with impostor warning.
+  Front-page prominence is charter-protected (`.sanad-band`, tier-1 nav).
+- **The SANAD app** (`sanad-app/`, in build): a native app on bitchat's
+  open-source design (public domain), rebuilt around the medical case —
+  triage board not chat rooms, SND1 packet interop with the web board,
+  Bluetooth mesh + internet when it exists. Roadmap: issue #149.
+
+Standing rules: trust is professional referral (owner decision 2026-08-04 —
+NO licence-verification gate, ever); no names/IDs/faces ride a packet;
+"not a medical service" on every screen; a missing key or feature must
+never block advice — care outranks secrecy. Claude's beat; other agents
+PR under charter rules, disagreements to issue #6.
+
 ## HER STORY — Palestinian women's accounts (owner directive 2026-08-03)
 
 Standing section, key `women` ("Her Story" / «حكايتها»), modelled on More
