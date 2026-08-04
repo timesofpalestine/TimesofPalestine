@@ -250,6 +250,9 @@ en:{dir:"ltr",
  bleGo:"Connect to a bridge",bleNo:"This browser has no Web Bluetooth. Chrome or Edge on Android, ChromeOS, Windows or macOS. Safari and Firefox do not support it on any platform.",
  exportAll:"Everything",exportNew:"Only what is new",copy:"Copy",share:"Share",save:"Save file",
  importLab:"Paste packets you received",importBtn:"Import",
+ encLocked:"Encrypted for the case participants — this device holds no key for it.",
+ bcT:"Bitchat mesh",
+ bcSub:"Bitchat is Jack Dorsey's open-source mesh messenger: no account, no internet — messages hop phone to phone over Bluetooth, up to seven hops, and wait for peers who are out of range. Copy Sanad packets into any bitchat channel and the mesh carries them across a hospital or a camp; whoever receives them pastes them into the import box below. Replies are already sealed end-to-end, so relay phones move the thread without reading the advice.",
  meT:"Who you are",meSub:"Kept on this device only. It travels with the cases you send so a specialist knows who is asking.",
  roleField:"Frontline clinician",roleSpec:"Volunteer specialist",
  mName:"Name or initials",mWhere:"Country of practice",mFac:"Facility",mZone:"Zone",mSpecs:"Specialties you will take",
@@ -292,6 +295,9 @@ ar:{dir:"rtl",
  bleGo:"اتصل بجسر",bleNo:"هذا المتصفح لا يدعم Web Bluetooth. استخدم كروم أو إيدج على أندرويد أو ويندوز أو ماك. سفاري وفَيَرفُكس لا يدعمانه إطلاقًا.",
  exportAll:"كل شيء",exportNew:"الجديد فقط",copy:"نسخ",share:"مشاركة",save:"حفظ ملف",
  importLab:"الصق الحزم التي استلمتها",importBtn:"استيراد",
+ encLocked:"مشفّرة لطرفي الحالة — لا يملك هذا الجهاز مفتاحها.",
+ bcT:"شبكة بيتشات",
+ bcSub:"«بيتشات» تطبيق مفتوح المصدر من جاك دورسي للمراسلة عبر شبكة متداخلة: بلا حساب وبلا إنترنت — تقفز الرسائل من هاتف إلى هاتف عبر البلوتوث حتى سبع قفزات وتنتظر من هو خارج التغطية. انسخ حزم «سند» في أي قناة بيتشات فتحملها الشبكة عبر مستشفى أو مخيم، ومن يستلمها يلصقها في خانة الاستيراد أدناه. الردود مشفّرة أصلاً بين طرفي الحالة، فتنقل هواتف الوسطاء الخيط دون قراءة المشورة.",
  meT:"من أنت",meSub:"يُحفظ على هذا الجهاز فقط، وينتقل مع الحالات التي ترسلها ليعرف الأخصائي من يسأل.",
  roleField:"طبيب ميداني",roleSpec:"أخصائي متطوع",
  mName:"الاسم أو الأحرف الأولى",mWhere:"بلد الممارسة",mFac:"المرفق",mZone:"المنطقة",mSpecs:"التخصصات",
@@ -330,6 +336,7 @@ const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2,8
 
 function emit(type, payload){
   const ev = { id:uid(), ty:type, ts:Date.now(), by:ME ? {n:ME.name,r:ME.role,c:ME.country||ME.facility||""} : {n:"anon",r:"field",c:""}, ...payload };
+  if (PK) ev.pk = PK;   // travel with our public key so threads can be sealed
   EVENTS.push(ev); saveEvents(); pushOut(); render();
   return ev;
 }
@@ -354,14 +361,15 @@ function derive(){
   const map = new Map();
   for (const e of EVENTS){
     if (e.ty === "case"){
-      map.set(e.id, { id:e.id, ref:e.ref, createdAt:e.ts, by:e.by, ...e.c,
+      map.set(e.id, { id:e.id, ref:e.ref, createdAt:e.ts, by:e.by, pk:e.pk||null, ...e.c,
                       thread:[], orders:[], claim:null, outcome:null });
     }
   }
   for (const e of EVENTS){
     const c = map.get(e.cid); if (!c) continue;
-    if (e.ty === "reply") c.thread.push({ id:e.id, ts:e.ts, by:e.by, text:e.text });
-    else if (e.ty === "claim"){ if (!c.claim || e.ts < c.claim.ts) c.claim = { ts:e.ts, by:e.by }; }
+    if (e.ty === "reply") c.thread.push({ id:e.id, ts:e.ts, by:e.by, pk:e.pk||null,
+                                          text:e.text, enc:e.enc||null });
+    else if (e.ty === "claim"){ if (!c.claim || e.ts < c.claim.ts) c.claim = { ts:e.ts, by:e.by, pk:e.pk||null }; }
     else if (e.ty === "order") c.orders.push({ id:e.id, ts:e.ts, ...e.o, status:"pending" });
     else if (e.ty === "ostat"){ const o = c.orders.find(x=>x.id===e.oid); if (o) o.status = e.status; }
     else if (e.ty === "close") c.outcome = { ts:e.ts, ...e.out };
@@ -381,9 +389,106 @@ function derive(){
    character being mangled. Readability is handled separately by the card. */
 
 const b64u = {
-  enc(s){ return btoa(String.fromCharCode(...new TextEncoder().encode(s))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,""); },
-  dec(s){ const b = atob(s.replace(/-/g,"+").replace(/_/g,"/")); return new TextDecoder().decode(Uint8Array.from(b, ch=>ch.charCodeAt(0))); }
+  enc(s){ return b64u.encBytes(new TextEncoder().encode(s)); },
+  dec(s){ return new TextDecoder().decode(b64u.decBytes(s)); },
+  encBytes(u8){ let bin = ""; for (const b of u8) bin += String.fromCharCode(b);
+    return btoa(bin).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,""); },
+  decBytes(s){ const b = atob(String(s).replace(/-/g,"+").replace(/_/g,"/"));
+    return Uint8Array.from(b, ch=>ch.charCodeAt(0)); }
 };
+
+/* ========================== encryption ========================== */
+/* Stage 1 of the bitchat adoption (owner-ordered staged rollout, Aug 2026).
+   Bitchat's model: each device holds its own keypair, and a private thread is
+   encrypted end-to-end between two known keys. This page implements that with
+   the platform's own audited WebCrypto (ECDH P-256 + HKDF-free AES-GCM via
+   deriveKey) instead of shipping third-party cipher code — the single-file,
+   no-CDN rule is what keeps the page alive offline. What is covered: every
+   reply between the case poster and the claiming specialist, sealed so relay
+   devices along a mesh can carry the thread without reading the advice.
+   What is NOT covered, deliberately: the initial case post stays cleartext —
+   it is de-identified by rule, any specialist must be able to read it to
+   claim it, and sealing it "to all vetted specialists" needs the licence
+   -verification authority (a later stage), not ciphertext theatre. */
+
+const CRYPTO = {
+  ok: !!(window.crypto && crypto.subtle && crypto.subtle.deriveKey && window.isSecureContext),
+  _me: null,          // { pub: slim JWK, priv: CryptoKey }
+  _shared: {},        // fingerprint(theirPub) -> AES-GCM CryptoKey
+
+  async me(){
+    if (!CRYPTO.ok) return null;
+    if (CRYPTO._me) return CRYPTO._me;
+    try {
+      const j = store.get("sanad.keys");
+      if (j){
+        const k = JSON.parse(j);
+        const priv = await crypto.subtle.importKey("jwk", k.priv,
+          { name:"ECDH", namedCurve:"P-256" }, true, ["deriveKey"]);
+        return CRYPTO._me = { pub:k.pub, priv };
+      }
+      const kp = await crypto.subtle.generateKey(
+        { name:"ECDH", namedCurve:"P-256" }, true, ["deriveKey"]);
+      const pub = await crypto.subtle.exportKey("jwk", kp.publicKey);
+      const priv = await crypto.subtle.exportKey("jwk", kp.privateKey);
+      const slim = { kty:pub.kty, crv:pub.crv, x:pub.x, y:pub.y };
+      store.set("sanad.keys", JSON.stringify({ pub:slim, priv }));
+      return CRYPTO._me = { pub:slim, priv: kp.privateKey };
+    } catch { return null; }
+  },
+
+  async shared(theirPub){
+    const me = await CRYPTO.me(); if (!me || !theirPub) return null;
+    const fp = theirPub.x + "." + theirPub.y;
+    if (CRYPTO._shared[fp]) return CRYPTO._shared[fp];
+    try {
+      const pk = await crypto.subtle.importKey("jwk",
+        { kty:"EC", crv:"P-256", x:theirPub.x, y:theirPub.y, ext:true },
+        { name:"ECDH", namedCurve:"P-256" }, true, []);
+      const key = await crypto.subtle.deriveKey({ name:"ECDH", public:pk }, me.priv,
+        { name:"AES-GCM", length:256 }, false, ["encrypt","decrypt"]);
+      return CRYPTO._shared[fp] = key;
+    } catch { return null; }
+  },
+
+  async seal(text, theirPub){
+    const key = await CRYPTO.shared(theirPub); if (!key) return null;
+    try {
+      const iv = crypto.getRandomValues(new Uint8Array(12));
+      const ct = await crypto.subtle.encrypt({ name:"AES-GCM", iv }, key,
+        new TextEncoder().encode(text));
+      return { iv: b64u.encBytes(iv), ct: b64u.encBytes(new Uint8Array(ct)) };
+    } catch { return null; }
+  },
+
+  async open(box, theirPub){
+    const key = await CRYPTO.shared(theirPub); if (!key || !box) return null;
+    try {
+      const pt = await crypto.subtle.decrypt(
+        { name:"AES-GCM", iv: b64u.decBytes(box.iv) }, key, b64u.decBytes(box.ct));
+      return new TextDecoder().decode(pt);
+    } catch { return null; }
+  }
+};
+
+const DEC = new Map();   // reply event id -> decrypted text (or null = cannot)
+let PK = null;           // my slim public JWK once keys exist
+
+async function decryptPending(c){
+  if (!CRYPTO.ok || !c) return;
+  let touched = false;
+  for (const m of c.thread){
+    if (!m.enc || DEC.has(m.id)) continue;
+    // The counterpart key: whichever of the two thread identities is not mine.
+    const me = await CRYPTO.me(); if (!me) return;
+    const mine = fpEq(m.pk, me.pub);
+    const their = mine ? (fpEq(c.pk, me.pub) ? (c.claim && c.claim.pk) : c.pk) : m.pk;
+    DEC.set(m.id, await CRYPTO.open(m.enc, their));
+    touched = true;
+  }
+  if (touched) render();
+}
+const fpEq = (a, b) => !!(a && b && a.x === b.x && a.y === b.y);
 
 const packetize = evs => evs.map(e => "SND1." + b64u.enc(JSON.stringify(e))).join("\n");
 
@@ -556,8 +661,13 @@ function caseHTML(c, open){
       <p class="q"><span class="qlabel">${L.fRes}</span>${esc(c.resources)}</p>
       <p class="q"><span class="qlabel">${L.fContact}</span><span class="mono" style="font-size:13px">${esc(c.contact)}</span></p>`;
 
-    if (c.thread.length) h += `<div class="thread">` + c.thread.map(m =>
-      `<p class="msg"><span class="msg-who">${esc(m.by.n)} · ${m.by.r==="specialist"?"specialist":"field"} · ${new Date(m.ts).toISOString().slice(5,16).replace("T"," ")}</span>${esc(m.text)}</p>`).join("") + `</div>`;
+    if (c.thread.length) h += `<div class="thread">` + c.thread.map(m => {
+      const body = m.enc ? DEC.get(m.id) : m.text;
+      const lock = m.enc ? " 🔒" : "";
+      const shown = body != null ? esc(body)
+        : `<em style="color:var(--slate)">${esc(L.encLocked)}</em>`;
+      return `<p class="msg"><span class="msg-who">${esc(m.by.n)} · ${m.by.r==="specialist"?"specialist":"field"} · ${new Date(m.ts).toISOString().slice(5,16).replace("T"," ")}${lock}</span>${shown}</p>`;
+    }).join("") + `</div>`;
 
     if (c.orders.length) h += `<div class="thread"><span class="qlabel">orders</span>` + c.orders.map(o =>
       `<p class="msg mono" style="font-size:12.5px">${esc(o.type)} · ${esc(o.items)} · ${esc(o.point)} · <strong>${esc(o.code)}</strong> · ${esc(o.status)}
@@ -637,6 +747,8 @@ function viewCarrier(){
     <div class="btn-row"><button class="btn sm" data-act="import">${L.importBtn}</button></div>
   </div>
 
+  <div class="carrier"><h3>${L.bcT}</h3><p>${L.bcSub}</p></div>
+
   <div class="carrier"><h3>${L.bleT}</h3><p>${L.bleSub}</p>
     <div class="btn-row">
       <button class="btn wirebtn sm" data-act="ble"${bleOK?"":" disabled"}>${BLE.device ? (BLE.device.name||"connected") : L.bleGo}</button>
@@ -695,8 +807,9 @@ function viewAbout(){
   </ul>
   <p>وفوق ذلك: انسخ الحزمة إلى أي تطبيق مراسلة يعمل أصلاً، أو احفظها ملفاً يُحمل باليد. الحالة التي تصل أخصائياً على ذاكرة محمولة حالةٌ وصلت أخصائياً.</p>
 
-  <h3>ما الغائب عمداً</h3>
-  <p>لا حسابات، ولا خادم لنا، ولا تحليلات، ولا يغادر شيء الجهاز إلا حين ترسله أنت. ولا تشفير أيضاً: الحزم مقروءة لمن يحملها، ولهذا ترفض الصفحة أن تكون مكاناً تسافر فيه الأسماء. النشر الجاد لهذه الأداة يحتاج تشفيراً كالذي في «بيتشات»، وجهةً تتحقق من ترخيص كل استشاري قبل أن يُعتدّ بمشورته. وكلاهما لم يوجد بعد. اقرأ ما هنا بوصفه رسماً عاملاً لقنوات النقل، لا خدمة يُعتمد عليها.</p>
+  <h3>ما المشفَّر وما الظاهر عمداً</h3>
+  <p>لا حسابات، ولا خادم لنا، ولا تحليلات، ولا يغادر شيء الجهاز إلا حين ترسله أنت. ومنذ تحديث المرحلة الأولى في أغسطس/آب 2026 صار الخيط مقفلاً: كل رد بين رافع الحالة والأخصائي المتسلّم مشفّر من طرف إلى طرف على نموذج «بيتشات» — يسكّ كل جهاز مفتاحه الخاص، ويشتق طرفا الخيط مفتاحاً مشتركاً لا يملكه سواهما، عبر تشفير المتصفح نفسه المدقَّق لا شيفرة مجلوبة. فتنقل هواتف الوسطاء والجسور الخيطَ دون أن تقرأ المشورة.</p>
+  <p>أما الحالة الأولى المرفوعة فتبقى ظاهرة عمداً: فهي بلا هوية أصلاً — وهذا ما تفرضه خانتا التأكيد الإلزاميتان — ولا بد أن يقرأها أي أخصائي ليتسلّمها. وقفلها «لكل الأخصائيين الموثَّقين» يحتاج الجهة التي تتحقق من التراخيص، وهي لم توجد بعد. الأسماء ممنوعة من السفر دائماً، والتحقق من التراخيص هو المرحلة التالية، وحتى ذلك الحين تبقى بيانات الأخصائي معلَّمة بأنها غير مُتحقَّق منها.</p>
 
   <h3>المصادر</h3>
   <p class="src">الورقة البيضاء لتطبيق «بيتشات» ومستودعه وتغطية إطلاقه التجريبي في يوليو/تموز 2025 · مجموعة W3C المجتمعية لمواصفة Web Bluetooth التي تحصر دور الصفحة في العميل · تقرير <a href="/ar/story/2f6cc013a7.html">تايمز أوف فلسطين، 3 أغسطس/آب 2026، عن مجموعات واتساب التطوعية التي تحمل طب غزة عن بُعد</a> · دراسة الصر وزملائه في «ذا لانسيت»، 31 أغسطس/آب 2024، عن سلسلة حالات التطبيب عن بُعد في مجمع ناصر الطبي.</p>
@@ -718,8 +831,9 @@ function viewAbout(){
   </ul>
   <p>Beyond that: copy the packet into whatever messaging app already works, or save it as a file and carry it. A case that reaches a specialist on a memory stick is still a case that reached a specialist.</p>
 
-  <h3>What is deliberately not here</h3>
-  <p>No accounts, no server of ours, no analytics, nothing leaves the device unless you send it. Also no encryption: packets are readable by anyone holding them, which is why the page refuses to be a place where names travel. Bitchat encrypts with the Noise protocol and rotates identity keys on the device; a serious deployment of this needs the same, plus a body that verifies a consultant's licence before their advice carries any weight. Neither exists yet. Read what is here as a working sketch of the plumbing, not a service anyone should rely on.</p>
+  <h3>What is encrypted, and what deliberately is not</h3>
+  <p>No accounts, no server of ours, no analytics, nothing leaves the device unless you send it. Since the August 2026 stage-one update, the thread is sealed: every reply between the case poster and the claiming specialist is encrypted end-to-end on bitchat's model — each device mints its own keypair, and the two thread identities derive a shared key nobody else holds (ECDH P-256 with AES-GCM, done by the browser's own audited WebCrypto rather than shipped cipher code). Relay phones and bridges move the thread without being able to read the advice.</p>
+  <p>The initial case post stays cleartext by design. It is de-identified by rule — that is what the mandatory checkboxes enforce — and any specialist must be able to read it in order to claim it; sealing it "to all vetted specialists" needs the body that verifies consultants' licences, and that body does not exist yet. Names still must never travel. Licence verification is the next stage, and until then a specialist's credentials remain marked unverified.</p>
 
   <h3>Sources</h3>
   <p class="src">Bitchat white paper and repository, and reporting on its July 2025 beta from CNBC, Cointelegraph and TechTarget, for the mesh, seven-hop relay, store-and-forward and Nostr fallback · W3C Web Bluetooth Community Group, on the specification covering the central role only and not permitting a page to act as a peripheral · MDN and caniuse, on browser support and Safari's absence · <a href="/en/story/0a9002d266.html">Times of Palestine, 3 Aug 2026, on the volunteer WhatsApp groups carrying Gaza's remote medical care</a> · Alser et al., The Lancet, 31 Aug 2024, on the telemedicine case series from Nasser Medical Complex.</p>
@@ -739,7 +853,21 @@ document.addEventListener("click", async e => {
   if (act === "reply"){
     const ta = document.getElementById("rep-" + id);
     if (!ta || !ta.value.trim()) return;
-    emit("reply", { cid:id, text:ta.value.trim() }); return;
+    const text = ta.value.trim();
+    // Seal the reply end-to-end when both thread identities have keys: to the
+    // claimant if I posted the case, to the poster otherwise. Falls back to
+    // cleartext (marked in the UI) rather than blocking advice — this board
+    // exists for a war zone, and care outranks secrecy when keys are missing.
+    const c = derive().find(x => x.id === id);
+    const me = await CRYPTO.me();
+    const their = c && me
+      ? (fpEq(c.pk, me.pub) ? (c.claim && c.claim.pk) : c.pk) : null;
+    if (their && !fpEq(their, me && me.pub)){
+      const box = await CRYPTO.seal(text, their);
+      if (box){ const ev = emit("reply", { cid:id, enc:box });
+        DEC.set(ev.id, text); render(); return; }
+    }
+    emit("reply", { cid:id, text }); return;
   }
 
   if (act === "order"){
@@ -859,6 +987,10 @@ function render(){
     VIEW === "post" ? viewPost() :
     VIEW === "carrier" ? viewCarrier() :
     VIEW === "me" ? viewMe() : viewAbout();
+
+  // Sealed replies decrypt off the render path; a fresh decrypt re-renders.
+  if (VIEW === "board" && OPENID)
+    setTimeout(() => decryptPending(derive().find(x => x.id === OPENID)), 0);
 }
 
 document.querySelectorAll(".tab").forEach(tb =>
@@ -873,6 +1005,9 @@ setInterval(() => { netPull(); render(); }, 30000);
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js").catch(()=>{});
 
 render(); netPull();
+// Device keys are minted eagerly (identity-independent): a phone that later
+// becomes a case's poster or claimant must already have a key to be sealed to.
+CRYPTO.me().then(k => { if (k){ PK = k.pub; } });
 </script>
 </body>
 </html>
