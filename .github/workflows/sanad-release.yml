@@ -1,0 +1,35 @@
+# SANAD app releases (owner order 2026-08-04: share it).
+# Push a tag like sanad-v0.2.0 and this builds the APK and publishes it as a
+# GitHub Release with a FIXED asset name, so the site can link the evergreen
+# URL .../releases/latest/download/sanad.apk — one tap, no GitHub login.
+# Alpha builds are debug-signed: Android asks to allow the install source.
+name: SANAD release
+on:
+  push:
+    tags: ["sanad-v*"]
+permissions:
+  contents: write
+concurrency:
+  group: sanad-release
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Build APK
+        working-directory: sanad-app
+        run: gradle assembleDebug --no-daemon
+      - name: Publish release with the evergreen asset name
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp sanad-app/app/build/outputs/apk/debug/app-debug.apk sanad.apk
+          gh release create "$GITHUB_REF_NAME" sanad.apk \
+            --title "SANAD ${GITHUB_REF_NAME#sanad-} — bitchat for medicine" \
+            --notes "The SANAD app: a triage board for medical cases that works without internet. Android alpha (debug-signed — allow the install when Android asks). iPhones use the web board at https://timesofpalestine.com/sanad/. Packets interoperate with the web board; replies between case participants are sealed end-to-end."
