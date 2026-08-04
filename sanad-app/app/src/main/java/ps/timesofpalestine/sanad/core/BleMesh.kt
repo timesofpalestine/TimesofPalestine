@@ -95,8 +95,8 @@ class BleMesh(
         status("mesh off")
     }
 
-    private fun status(s: String) = ui.post { onStatus(s) }
-    private fun deliver(lines: String) = ui.post { onPackets(lines) }
+    private fun status(s: String) { ui.post { onStatus(s) } }
+    private fun deliver(lines: String) { ui.post { onPackets(lines) } }
 
     private fun feed(key: String, chunk: ByteArray) {
         val buf = inBuffers.getOrPut(key) { StringBuilder() }
