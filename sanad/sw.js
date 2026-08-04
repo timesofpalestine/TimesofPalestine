@@ -2,7 +2,7 @@
 // network comes and goes. Strategy: serve from cache immediately (the page
 // must open with the network gone), refresh the cache in the background so
 // the next open picks up a newer deploy (stale-while-revalidate).
-const C = 'sanad-v5';
+const C = 'sanad-v6';
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(C).then(c => c.addAll(['./'])).then(() => self.skipWaiting()));
 });

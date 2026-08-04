@@ -251,8 +251,19 @@ en:{dir:"ltr",
  exportAll:"Everything",exportNew:"Only what is new",copy:"Copy",share:"Share",save:"Save file",
  importLab:"Paste packets you received",importBtn:"Import",
  encLocked:"Encrypted for the case participants — this device holds no key for it.",
+ startT:"Start here — it works with no internet",
+ start1:"Install bitchat on every phone in the ward (one time, official sources only):",
+ start2:"In bitchat, everyone joins the same channel: #sanad. That channel is where cases travel when there is no internet — phone to phone, up to seven hops.",
+ start3:"Post your case here. Plain words, no names, one clear question.",
+ start4:"Tap Share when it saves and choose bitchat (or any app that still works). Whoever receives the packet pastes it into this page on their phone — and the case is on their board.",
+ startPost:"Post your first case",
+ sentT:"Saved. Now move it — pick whatever still works:",
+ sentShare:"Share → choose bitchat",
+ sentCopy:"Copy the packet",
+ sentHint:"In bitchat, paste it into the channel #sanad. Anyone in radio range relays it onward; whoever receives it pastes it back into this page and replies from there.",
+ sentDone:"Done",
  bcT:"Bitchat mesh",
- bcSub:"Bitchat is Jack Dorsey's open-source mesh messenger: no account, no internet — messages hop phone to phone over Bluetooth, up to seven hops, and wait for peers who are out of range. Copy Sanad packets into any bitchat channel and the mesh carries them across a hospital or a camp; whoever receives them pastes them into the import box below. Replies are already sealed end-to-end, so relay phones move the thread without reading the advice.",
+ bcSub:"Bitchat is Jack Dorsey's open-source mesh messenger: no account, no internet — messages hop phone to phone over Bluetooth, up to seven hops, and wait for peers who are out of range. Sanad's meeting point on the mesh is the channel #sanad — copy packets there and the mesh carries them across a hospital or a camp; whoever receives them pastes them into the import box below. Replies are already sealed end-to-end, so relay phones move the thread without reading the advice.",
  bcGetT:"Get bitchat (official sources only)",
  bcGetIos:"iPhone / iPad — “bitchat mesh” on the App Store",
  bcGetAnd:"Android — APK from the official GitHub releases",
@@ -300,8 +311,19 @@ ar:{dir:"rtl",
  exportAll:"كل شيء",exportNew:"الجديد فقط",copy:"نسخ",share:"مشاركة",save:"حفظ ملف",
  importLab:"الصق الحزم التي استلمتها",importBtn:"استيراد",
  encLocked:"مشفّرة لطرفي الحالة — لا يملك هذا الجهاز مفتاحها.",
+ startT:"ابدأ من هنا — تعمل بلا إنترنت",
+ start1:"ثبّتوا «بيتشات» على كل هاتف في القسم (مرة واحدة، ومن المصدرين الرسميين فقط):",
+ start2:"في بيتشات ينضم الجميع إلى القناة نفسها: ‎#sanad. هذه القناة هي طريق الحالات حين لا إنترنت — من هاتف إلى هاتف حتى سبع قفزات.",
+ start3:"ارفع حالتك هنا: كلمات بسيطة، بلا أسماء، وسؤال واحد واضح.",
+ start4:"اضغط «مشاركة» بعد الحفظ واختر بيتشات (أو أي تطبيق ما زال يعمل). ومن تصله الحزمة يلصقها في هذه الصفحة على هاتفه — فتظهر الحالة على لوحته.",
+ startPost:"ارفع حالتك الأولى",
+ sentT:"حُفظت. الآن حرّكها — اختر ما يعمل:",
+ sentShare:"شارك ← اختر بيتشات",
+ sentCopy:"انسخ الحزمة",
+ sentHint:"في بيتشات، الصقها في القناة ‎#sanad. من في مدى الراديو ينقلها أبعد، ومن تصله يلصقها في هذه الصفحة ويرد من هناك.",
+ sentDone:"تم",
  bcT:"شبكة بيتشات",
- bcSub:"«بيتشات» تطبيق مفتوح المصدر من جاك دورسي للمراسلة عبر شبكة متداخلة: بلا حساب وبلا إنترنت — تقفز الرسائل من هاتف إلى هاتف عبر البلوتوث حتى سبع قفزات وتنتظر من هو خارج التغطية. انسخ حزم «سند» في أي قناة بيتشات فتحملها الشبكة عبر مستشفى أو مخيم، ومن يستلمها يلصقها في خانة الاستيراد أدناه. الردود مشفّرة أصلاً بين طرفي الحالة، فتنقل هواتف الوسطاء الخيط دون قراءة المشورة.",
+ bcSub:"«بيتشات» تطبيق مفتوح المصدر من جاك دورسي للمراسلة عبر شبكة متداخلة: بلا حساب وبلا إنترنت — تقفز الرسائل من هاتف إلى هاتف عبر البلوتوث حتى سبع قفزات وتنتظر من هو خارج التغطية. ملتقى «سند» على الشبكة هو القناة ‎#sanad — انسخ الحزم إليها فتحملها الشبكة عبر مستشفى أو مخيم، ومن يستلمها يلصقها في خانة الاستيراد أدناه. الردود مشفّرة أصلاً بين طرفي الحالة، فتنقل هواتف الوسطاء الخيط دون قراءة المشورة.",
  bcGetT:"حمّل بيتشات (من المصدرين الرسميين فقط)",
  bcGetIos:"آيفون / آيباد — تطبيق «bitchat mesh» على آب ستور",
  bcGetAnd:"أندرويد — ملف APK من إصدارات غيتهاب الرسمية",
@@ -332,6 +354,7 @@ let SENT = new Set(JSON.parse(store.get(KEY.sent) || "[]"));   // event ids alre
 let LANG = store.get(KEY.lang) || "en";
 let VIEW = "board";
 let OPENID = null;
+let JUSTSAVED = null;   // case id just posted → the send-now panel shows
 let BLE = { device:null, inbox:null, buffer:"" };
 
 const t = () => T[LANG];
@@ -629,6 +652,40 @@ const on = (id, ev, fn) => { const el = document.getElementById(id); if (el) el.
 
 /* ========================== views ========================== */
 
+const BITCHAT_LINKS = () => {
+  const L = t();
+  return `<div class="btn-row">
+    <a class="btn wirebtn sm" style="text-decoration:none" href="https://apps.apple.com/app/bitchat-mesh/id6748219622" target="_blank" rel="noopener">${L.bcGetIos}</a>
+    <a class="btn ghost sm" style="text-decoration:none" href="https://github.com/permissionlesstech/bitchat-android/releases/latest" target="_blank" rel="noopener">${L.bcGetAnd}</a>
+  </div>`;
+};
+
+// The ward-team quick start (owner order 2026-08-04): the empty board IS the
+// guide — install bitchat once, everyone meets in #sanad, post, share. The
+// full carrier menu stays one tab away; this is the path of least thought.
+function startHTML(){
+  const L = t();
+  return `<div class="wire"><h3>${L.startT}</h3>
+    <p style="margin:8px 0 4px"><strong>1.</strong> ${esc(L.start1)}</p>${BITCHAT_LINKS()}
+    <p style="margin:10px 0 0"><strong>2.</strong> ${esc(L.start2)}</p>
+    <p style="margin:8px 0 0"><strong>3.</strong> ${esc(L.start3)}</p>
+    <p style="margin:8px 0 0"><strong>4.</strong> ${esc(L.start4)}</p>
+    <div class="btn-row"><button class="btn" data-act="gopost">${L.startPost}</button></div></div>`;
+}
+
+// Shown once right after a case is saved: the hand-off is the moment that
+// decides whether a case leaves the building, so it gets its own panel.
+function sendPanelHTML(){
+  const L = t(), q = unsent().length;
+  return `<div class="wire"><h3>${L.sentT}</h3>
+    <div class="btn-row">
+      <button class="btn wirebtn sm" data-act="share" data-scope="new">${L.sentShare} (${q})</button>
+      <button class="btn ghost sm" data-act="copy" data-scope="new">${L.sentCopy}</button>
+      <button class="btn ghost sm" data-act="sentdone">${L.sentDone}</button>
+    </div>
+    <p style="margin:9px 0 0;font-size:12.5px;color:var(--slate)">${esc(L.sentHint)}</p></div>`;
+}
+
 function viewBoard(){
   const cases = derive().sort((a,b)=>{
     const r = { red:0, amber:1, routine:2 };
@@ -638,7 +695,8 @@ function viewBoard(){
   });
   const L = t();
   let h = `<div class="notice"><h3>${L.noticeT}</h3>${esc(L.notice)}</div>`;
-  if (!cases.length) return h + `<div class="empty">${L.none}</div>`;
+  if (JUSTSAVED) h += sendPanelHTML();
+  if (!cases.length) return h + startHTML();
   h += cases.map(c => caseHTML(c, c.id === OPENID)).join("");
   return h;
 }
@@ -917,15 +975,18 @@ document.addEventListener("click", async e => {
     let dev = store.get("sanad.dev");
     if (!dev){ dev = Math.random().toString(36).slice(2,4).toUpperCase(); store.set("sanad.dev", dev); }
     const ref = `GZ-${String(d.getMonth()+1).padStart(2,"0")}${String(d.getDate()).padStart(2,"0")}-${dev}${String(n).padStart(2,"0")}`;
-    emit("case", { ref, c:{
+    const cev = emit("case", { ref, c:{
       specialty: val("p-spec"), urgency: val("p-urg"), ageBand: val("p-age"), sex: val("p-sex"),
       days: val("p-days"), zone: val("p-zone"), facility: val("p-fac"),
       presentation: val("p-pres").trim(), findings: val("p-find").trim(),
       resources: val("p-res").trim(), question: val("p-q").trim(), contact: val("p-contact").trim()
     }});
-    VIEW = "board"; render(); toast("saved · queued to send");
+    JUSTSAVED = cev.id; VIEW = "board"; render(); toast("saved · queued to send");
     return;
   }
+
+  if (act === "gopost"){ VIEW = "post"; render(); return; }
+  if (act === "sentdone"){ JUSTSAVED = null; render(); return; }
 
   if (act === "role"){
     ME = Object.assign({ name:"", contact:"" }, ME, { role: b.dataset.role });
@@ -950,7 +1011,7 @@ document.addEventListener("click", async e => {
     if (act === "copy") ok = await copy(text);
     else if (act === "share") ok = await handOff(text, "sanad-packets.txt");
     else { saveFile(text, "sanad-packets.txt"); ok = true; }
-    if (ok) markSent(evs);
+    if (ok){ markSent(evs); if (JUSTSAVED){ JUSTSAVED = null; render(); } }
     return;
   }
 
