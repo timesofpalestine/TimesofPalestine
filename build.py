@@ -148,7 +148,7 @@ if not FEEDS_PATH.is_absolute():
 FEEDS = json.loads(FEEDS_PATH.read_text(encoding="utf-8"))
 # Story ids the owner has ordered removed; blocked no matter which feed or
 # radar route resurfaces the underlying link.
-RETRACTED_PIDS = {"23ffbc910f", "7b5ecb12e4", "4b6ac6121b"}
+RETRACTED_PIDS = {"23ffbc910f", "7b5ecb12e4", "4b6ac6121b", "33a0debafc"}
 validate_feed_config(FEEDS)
 MEDIA_RIGHTS = load_media_manifest(ROOT / "media-rights.json")
 CORRECTIONS = load_editorial_json(
@@ -1673,7 +1673,7 @@ def dedupe(items):
 # Two outlets covering one incident write two different headlines, so title-string
 # dedupe misses them. The similarity logic lives in event_dedupe.py, shared with
 # telegram_publish.py so the channel never re-receives the same news either.
-from event_dedupe import event_tokens, near_identical, same_event
+from event_dedupe import event_tokens, near_identical, same_event, same_story
 
 def dedupe_events(items):
     """One incident, one article. When a cluster forms, our own copy (original,
@@ -1685,30 +1685,38 @@ def dedupe_events(items):
          one running story, no time window — a daily-repeated headline must
          never publish twice (owner call 2026-08-02, after five same-headline
          follow-ups ran at once);
-      2. same_event token similarity, only within 36 hours of a member.
+      2. same_event token similarity, only within 36 hours of a member;
+      3. same_story headline-in-dek containment, same 36-hour window — the
+         cross-desk net: an original and a wire brief on one event write
+         unlike headlines, but the names one headline omits appear in the
+         other's dek (owner call 2026-08-05, after a wire brief on the
+         Dabbour arrest published beside the original covering it).
     Originals never fold into each other — the desk curates those."""
-    clusters = []  # [representative, [member titles], [member tokens], [member dates]]
+    clusters = []  # [representative, [titles], [tokens], [title+dek tokens], [dates]]
     ranked = sorted(items, key=lambda i: (
         i["source_id"] == "top-original", bool(i.get("partner")), i["score"]
     ), reverse=True)
     for it in ranked:
         toks = event_tokens(it["title"])
+        ext = event_tokens(f"{it['title']} {(it.get('dek') or '')[:240]}")
         home = None
         for cluster in clusters:
-            rep, titles, token_sets, dates = cluster
+            rep, titles, token_sets, ext_sets, dates = cluster
             if it.get("original") and rep.get("original"):
                 continue
             if any(near_identical(it["title"], t) for t in titles) or any(
-                abs((it["date"] - d).total_seconds()) <= 36 * 3600 and same_event(toks, m)
-                for m, d in zip(token_sets, dates)
+                abs((it["date"] - d).total_seconds()) <= 36 * 3600
+                and (same_event(toks, m) or same_story(toks, x) or same_story(m, ext))
+                for m, x, d in zip(token_sets, ext_sets, dates)
             ):
                 home = cluster
                 break
         if home is None:
-            clusters.append([it, [it["title"]], [toks], [it["date"]]])
+            clusters.append([it, [it["title"]], [toks], [ext], [it["date"]]])
             continue
-        kept_item, titles, token_sets, dates = home
-        titles.append(it["title"]); token_sets.append(toks); dates.append(it["date"])
+        kept_item, titles, token_sets, ext_sets, dates = home
+        titles.append(it["title"]); token_sets.append(toks)
+        ext_sets.append(ext); dates.append(it["date"])
         existing = {
             (source.get("name", ""), source.get("url", ""))
             for source in kept_item.get("corroborating_sources", [])
