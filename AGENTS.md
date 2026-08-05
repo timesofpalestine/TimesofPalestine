@@ -58,6 +58,22 @@ everything it builds:
    precise evidence and fair language rather than cynicism or insinuation
    (owner decision 2026-07-30, given via ChatGPT and confirmed directly to
    Claude the same day).
+   **Features celebrate their subject (owner order 2026-08-05, binding on
+   every agent and every desk):** a profile or feature — arts, culture,
+   sports, diaspora, humans, any piece whose subject is a person's work and
+   journey — is written to CELEBRATE that person. The achievement is the
+   story; the register is the culture pages of a great newspaper, never an
+   audit. Exile and distance from Palestine are told with empathy from the
+   subject's side (the war and the closure keep Palestinians from home) —
+   NEVER framed as contradiction, hypocrisy or a gap in sincerity, and never
+   a gotcha headline ("…books forty dates, none in Gaza" is the banned
+   pattern). A genuine, well-sourced controversy may appear briefly as fair
+   body context with the subject's answer beside it — never the lede,
+   headline or closing note. This order came after the desk turned the
+   owner-requested Saint Levant feature critical; the rewrite is
+   `saint-levant-gaza-rap-2026-08-05-05.*` and the desk prompt now carries
+   the same rule. Accountability reporting on office-holders and
+   institutions is unaffected.
    **Arabic quality (owner decision 2026-07-30):** the Arabic edition is
    written fresh as native Arabic journalism — the register of الجزيرة نت /
    عرب 48 — never translationese; a reader must not sense English syntax
