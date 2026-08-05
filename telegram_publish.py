@@ -22,9 +22,11 @@ LEDGER_PATH = ROOT / "telegram-delivery.json"
 LEGACY_CACHE_PATH = ROOT / "briefs-cache.json"
 EXPECTED_CHANNEL = "@timesofpalestin"
 SEND_INTERVAL_SECONDS = 3
+# Matches both URL generations: the legacy bare-pid pages and the current
+# slugged pages (<headline-slug>-<pid>.html) — the pid is the delivery identity.
 STORY_URL_RX = re.compile(
     r"https?://(?:www\.)?timesofpalestine\.com/(en|ar)/story/"
-    r"([0-9a-f]{10})\.html"
+    r"(?:[^\s\"'<>/]*-)?([0-9a-f]{10})\.html"
 )
 
 

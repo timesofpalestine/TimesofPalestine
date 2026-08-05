@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -105,7 +106,12 @@ def validate(root):
             errors.append(f"{path.relative_to(root)}: unreadable HTML ({exc})")
             continue
         check_body_starts_clean(path.relative_to(root), html_text, errors)
-        if parser.meta_refresh and path.name != "index.html":
+        # Legitimate redirects: the root language splash, and the bare-pid
+        # story stubs that keep every previously shared link resolving now
+        # that story filenames carry a headline slug ahead of the pid.
+        is_pid_stub = (path.parent.name == "story"
+                       and re.fullmatch(r"[0-9a-f]{10}\.html", path.name))
+        if parser.meta_refresh and path.name != "index.html" and not is_pid_stub:
             errors.append(f"{path.relative_to(root)}: unconditional meta refresh")
         if parser.remote_images and remote_media_mode() == "rights-only":
             errors.append(
@@ -216,7 +222,10 @@ def validate(root):
             if feed_path.exists():
                 feed = json.loads(feed_path.read_text(encoding="utf-8"))
                 for item in feed.get("items", []):
-                    feed_ids.add((lang, Path(urlsplit(item["id"]).path).stem))
+                    # Filenames are <headline-slug>-<pid>.html; the trailing
+                    # pid is the story identity shared with the outbox.
+                    stem = Path(urlsplit(item["id"]).path).stem
+                    feed_ids.add((lang, stem.rsplit("-", 1)[-1]))
         if outbox_ids != feed_ids:
             errors.append("distribution outbox does not match eligible JSON Feed stories")
     return errors

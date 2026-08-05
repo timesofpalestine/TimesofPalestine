@@ -11,7 +11,8 @@ from datetime import datetime, timezone
 from tempfile import NamedTemporaryFile
 
 from publishing import (
-    canonicalize_url, is_http_url, is_public_http_url, safe_urlopen, utc_iso,
+    canonicalize_url, is_http_url, is_public_http_url, safe_urlopen,
+    story_url_path, utc_iso,
 )
 
 # Public Telegram channel; posts go out via a bot the founder controls.
@@ -42,10 +43,14 @@ ABOUT = {
             ("How the newsroom works",
              "Our desk continuously gathers reporting from dozens of Palestinian, "
              "regional and international outlets, research institutes and primary "
-             "sources. Every aggregated story names its original publisher and links "
-             "directly to it; publishers retain all rights to their work. Alongside "
-             "aggregation we publish original reporting and concise news briefs "
-             "written by the TOP Newsdesk, clearly bylined as such."),
+             "sources, and rewrites each wire item in-house before publication. "
+             "Every rewritten story names the outlet whose reporting it draws on "
+             "inline in the text, and each page's machine-readable metadata "
+             "preserves the source record; publishers retain all rights to their "
+             "work, and pages that carry a source's own summary link to it "
+             "directly. Alongside the wire we publish original reporting and "
+             "researched investigations written by the TOP Newsdesk, clearly "
+             "bylined as such."),
             ("Field reports",
              "Citizen journalists and witnesses send dispatches from the ground through "
              "our encrypted tip line. Field reports go through an editorial check and "
@@ -54,9 +59,10 @@ ABOUT = {
             ("Editorial standards & corrections",
              "We report without censorship and without favor, we hold power to "
              "account wherever it sits, and we criticize through journalism, never "
-             "personal attacks. When we get something wrong we correct it promptly. "
-             "To request a correction, contact the newsroom on the channel below with "
-             "the story link and the error."),
+             "personal attacks. When we get something wrong we correct it promptly, "
+             "note the change on the story itself, and record it in our public "
+             "corrections log. To request a correction, contact the newsroom on the "
+             "channel below with the story link and the error."),
             ("Contact the newsroom",
              "Reach us on Signal — encrypted, and anonymous if you choose: "
              "message @TOP.972 or use the button below. You can also message the "
@@ -78,17 +84,20 @@ ABOUT = {
              "وهبها الله له."),
             ("كيف تعمل غرفة الأخبار",
              "يجمع مكتبنا الأخبار باستمرار من عشرات المصادر الفلسطينية والإقليمية "
-             "والدولية ومراكز الأبحاث والمصادر الأولية. كل خبر مجمّع يُنسب إلى "
-             "ناشره الأصلي ويُحيل إليه مباشرة، ويحتفظ الناشرون بكامل حقوقهم. وإلى "
-             "جانب التجميع ننشر تقارير أصلية وملخصات إخبارية موجزة يعدّها فريق "
-             "التحرير وتُنسب إليه بوضوح."),
+             "والدولية ومراكز الأبحاث والمصادر الأولية، ويعيد فريق التحرير صياغة "
+             "كل خبر قبل نشره. يسمّي كل تقرير الوسيلة التي استند إلى تغطيتها "
+             "داخل النص، وتحفظ البيانات الوصفية لكل صفحة سجل المصدر، ويحتفظ "
+             "الناشرون بكامل حقوقهم؛ أما الصفحات التي تنقل ملخص المصدر نفسه "
+             "فتُحيل إليه مباشرة. وإلى جانب أخبار الوكالات ننشر تقارير أصلية "
+             "وتحقيقات معمّقة يعدّها فريق التحرير وتُنسب إليه بوضوح."),
             ("التقارير الميدانية",
              "يرسل الصحفيون المواطنون والشهود تقاريرهم من الميدان عبر خطنا الآمن "
              "المشفّر. تخضع التقارير الميدانية لمراجعة تحريرية وتُنشر في قسم خاص "
              "بها معرَّف بوضوح، حتى يعرف القراء دائماً مصدر ما يقرؤونه وطبيعته."),
             ("المعايير التحريرية والتصويبات",
              "ننقل الخبر بلا رقابة وبلا محاباة، ونحاسب السلطة أينما كانت، وننتقد "
-             "بالصحافة المهنية لا بالإساءات الشخصية. وحين نخطئ نصحح فوراً. لطلب "
+             "بالصحافة المهنية لا بالإساءات الشخصية. وحين نخطئ نصحح فوراً، ونثبّت "
+             "التعديل على المادة نفسها ونقيّده في سجل التصويبات العلني. لطلب "
              "تصويب، راسل غرفة الأخبار عبر القناة أدناه مع رابط المادة وبيان الخطأ."),
             ("اتصل بغرفة الأخبار",
              "راسلنا على «سيغنال» — مشفّر، ومجهول الهوية إن اخترت: "
@@ -140,8 +149,90 @@ def render_about(lang, built_at):
   <div class="flagline"></div>
   <div class="legal">
     <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span>
+    <a href="corrections.html">{"سجل التصويبات" if lang == "ar" else "Corrections log"}</a>
     <a href="status.html">{"حالة النشر" if lang == "ar" else "Publishing status"}</a>
     <a href="./">{a['back']}</a>
+  </div>
+</div></footer>
+</body>
+</html>"""
+
+
+def render_corrections_log(lang, langs_items, built_at):
+    """Public, dated record of every update and correction the newsroom has
+    made — built from editorial/corrections.json, the same ledger that stamps
+    the notes onto individual story pages. Entries for stories still in the
+    build link to them; older entries keep their date, note and story id."""
+    b = __import__("build")
+    t = b.STR[lang]
+    ledger = json.loads(
+        (b.ROOT / "editorial" / "corrections.json").read_text(encoding="utf-8"))
+    live = {it["pid"]: it
+            for item_lang, items in langs_items for it in items
+            if item_lang == lang}
+    rows = []
+    for pid, entries in ledger.get("stories", {}).items():
+        for entry in entries:
+            note = entry.get(lang, "")
+            if not note:
+                continue
+            rows.append((entry.get("at", ""), entry.get("type", "update"), pid, note))
+    rows.sort(reverse=True)
+    title = "سجل التصويبات والتحديثات" if lang == "ar" else "Corrections & updates log"
+    intro = ("حين نصحح مادة أو نحدّثها نثبّت التعديل على صفحتها ونقيّده هنا، "
+             "بتاريخه، في سجل علني دائم."
+             if lang == "ar" else
+             "When we correct or update a story, the change is noted on the story "
+             "itself and recorded here, dated, in one permanent public log.")
+    empty = ("لا قيود في السجل بعد." if lang == "ar" else "No entries yet.")
+    items_html = []
+    for at, kind, pid, note in rows:
+        kind_label = ("تصويب" if kind == "correction" else "تحديث") if lang == "ar" \
+            else kind.title()
+        it = live.get(pid)
+        story_ref = (
+            f'<a href="{b.BASE_URL}{story_url_path(it["title"], it["pid"], lang)}">'
+            f'{b.esc(it["title"])}</a>' if it else
+            f'<span class="cl-gone">{"مادة خرجت من الأرشيف الحي" if lang == "ar" else "Story no longer in the live archive"}</span>')
+        items_html.append(
+            f'<li><time datetime="{b.esc(at)}">{b.esc(at[:10])}</time> '
+            f'<strong>{kind_label}:</strong> {b.esc(note)}<br>{story_ref}</li>')
+    body = (f'<ol class="corrections-log">{"".join(items_html)}</ol>'
+            if items_html else f'<p class="summary">{empty}</p>')
+    back = "كل الأخبار ←" if lang == "ar" else "← All the news"
+    return f"""<!DOCTYPE html>
+<html lang="{t['lang']}" dir="{t['dir']}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0c"><link rel="manifest" href="/manifest.json">
+<title>{title} — {t['site_name']}</title>
+<meta name="description" content="{intro[:155]}">
+<link rel="canonical" href="{b.BASE_URL}/{lang}/corrections.html">
+<link rel="alternate" hreflang="en" href="{b.BASE_URL}/en/corrections.html">
+<link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/corrections.html">
+<link href="/assets/site.css" rel="stylesheet">
+<style>.corrections-log{{list-style:none;padding:0}}.corrections-log li{{margin:1.1rem 0;line-height:1.6}}.corrections-log time{{font-weight:700}}.cl-gone{{color:var(--muted,#595962)}}</style>
+</head>
+<body>
+<div class="backbar"><a href="./">{back}</a></div>
+<header class="masthead compact"><div class="wrap">
+  <a class="logotype" href="./"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
+</div></header>
+<main>
+  <article class="story">
+    <p class="kick">{t['site_name']}</p>
+    <h1>{title}</h1>
+    <p class="summary">{intro}</p>
+    {body}
+  </article>
+</main>
+<footer><div class="wrap">
+  <div class="flagline"></div>
+  <div class="legal">
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span>
+    <a href="about.html">{"من نحن — اتصل بنا" if lang == "ar" else "About & Contact"}</a>
+    <a href="./">{back}</a>
   </div>
 </div></footer>
 </body>
@@ -159,7 +250,7 @@ def render_news_sitemap(langs_items, built_at, base_url):
             title = (it["title"].replace("&", "&amp;").replace("<", "&lt;")
                      .replace(">", "&gt;"))
             urls.append(
-                f"<url><loc>{base_url}/{lang}/story/{it['pid']}.html</loc>"
+                f"<url><loc>{base_url}{story_url_path(it['title'], it['pid'], lang)}</loc>"
                 f"<news:news><news:publication>"
                 f"<news:name>{SITE_NAMES[lang]}</news:name>"
                 f"<news:language>{lang}</news:language>"
@@ -176,7 +267,7 @@ def render_news_sitemap(langs_items, built_at, base_url):
 def ping_indexnow(langs_items, base_url):
     """Submit the freshest story URLs (last 24h) so search engines index them now."""
     now = datetime.now(timezone.utc)
-    fresh = [f"{base_url}/{lang}/story/{it['pid']}.html"
+    fresh = [f"{base_url}{story_url_path(it['title'], it['pid'], lang)}"
              for lang, items in langs_items for it in items
              if (now - it["date"]).total_seconds() <= 24 * 3600]
     fresh += [f"{base_url}/en/", f"{base_url}/ar/"]
@@ -228,7 +319,7 @@ def build_telegram_outbox(langs_items, base_url, now=None):
                 "lang": it["lang"],
                 "pid": it["pid"],
                 "title": it["title"],
-                "url": f"{base_url}/{it['lang']}/story/{it['pid']}.html",
+                "url": f"{base_url}{story_url_path(it['title'], it['pid'], it['lang'])}",
                 "revision": revision,
             })
     outbox = list(groups.values())
@@ -256,7 +347,7 @@ def render_json_feed(lang, items, base_url):
     title = SITE_NAMES[lang]
     rows = []
     for item in sorted(items, key=lambda row: row["date"], reverse=True):
-        page_url = f"{base_url}/{lang}/story/{item['pid']}.html"
+        page_url = f"{base_url}{story_url_path(item['title'], item['pid'], lang)}"
         row = {
             "id": page_url,
             "url": page_url,
@@ -355,7 +446,7 @@ def post_webhook(dist, langs_items, base_url):
     ][:20]
     posted = 0
     for item in pending:
-        page_url = f"{base_url}/{item['lang']}/story/{item['pid']}.html"
+        page_url = f"{base_url}{story_url_path(item['title'], item['pid'], item['lang'])}"
         revision = delivery_revision(item)
         key = f"top:{item['lang']}:{item['pid']}:{revision}"
         payload = json.dumps({
@@ -424,6 +515,8 @@ def write_extras(dist, langs_items, built_at, base_url, health):
         (dist / lang / "about.html").write_text(
             render_about(lang, built_at), encoding="utf-8")
         (dist / lang / "status.html").write_text(render_status(lang), encoding="utf-8")
+        (dist / lang / "corrections.html").write_text(
+            render_corrections_log(lang, langs_items, built_at), encoding="utf-8")
         (dist / lang / "feed.json").write_text(
             json.dumps(render_json_feed(lang, items, base_url), ensure_ascii=False, indent=2),
             encoding="utf-8",
@@ -441,7 +534,8 @@ def write_extras(dist, langs_items, built_at, base_url, health):
     sm = dist / "sitemap.xml"
     extra_urls = "".join(
         f"<url><loc>{base_url}/{lang}/{page}</loc></url>"
-        for lang, _ in langs_items for page in ("about.html", "status.html"))
+        for lang, _ in langs_items
+        for page in ("about.html", "status.html", "corrections.html"))
     sm.write_text(sm.read_text(encoding="utf-8")
                   .replace("</urlset>", extra_urls + "</urlset>"), encoding="utf-8")
     health.checks["discovery_files"] = "ok"

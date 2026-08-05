@@ -25,7 +25,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import quote, urljoin, urlsplit
 from zoneinfo import ZoneInfo
 
 from editorial import (
@@ -35,7 +35,8 @@ from editorial import (
 from publishing import (
     BuildHealth, PublishingError, canonicalize_url, is_http_url, is_public_http_url,
     load_editorial_json, load_media_manifest, media_rights_for, parse_timestamp,
-    safe_urlopen, utc_iso, validate_corrections, validate_feed_config, validate_story,
+    safe_urlopen, story_file_name, story_url_path, utc_iso, validate_corrections,
+    validate_feed_config, validate_story,
 )
 
 ROOT = Path(__file__).parent
@@ -2435,7 +2436,9 @@ img{max-width:100%;display:block}
 .ticker .rail{overflow:hidden;flex:1;display:flex;align-items:center}
 .ticker .track{display:flex;gap:2.5rem;white-space:nowrap;animation:tick 80s linear infinite;padding-inline:1.5rem}
 [dir=rtl] .ticker .track{animation-name:tick-rtl}
-.ticker:hover .track,.ticker:focus-within .track{animation-play-state:paused}
+.ticker:hover .track,.ticker:focus-within .track,.ticker.paused .track{animation-play-state:paused}
+.tick-pause{background:transparent;border:0;color:#fff;cursor:pointer;font-size:.8rem;padding:.45rem .7rem;flex-shrink:0;z-index:2;opacity:.85}
+.tick-pause:hover,.tick-pause:focus-visible{opacity:1}
 .ticker a{font-size:.82rem;font-weight:600}
 .ticker a::before{content:"●";color:rgba(255,255,255,.55);margin-inline-end:.7rem;font-size:.55rem;vertical-align:2px}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -2991,7 +2994,25 @@ LOCK_SVG = ('<svg class="lock" width="54" height="54" viewBox="0 0 24 24" fill="
 
 def href(it, pfx):
     """Internal story-page URL — readers stay on the site; the source link lives on the story page."""
-    return f"{pfx}{it['pid']}.html"
+    return f"{pfx}{quote(story_file_name(it['title'], it['pid']))}"
+
+
+def story_url(it, lang=None):
+    """Absolute, percent-encoded story-page URL (slug + pid filename)."""
+    return BASE_URL + story_url_path(
+        it["title"], it["pid"], lang or it.get("lang", "en"))
+
+
+def ticker_html(t, lang, ticker_track, ticker_track_hidden):
+    """Breaking ticker with an explicit pause control (WCAG 2.2.2 — hover-pause
+    alone leaves touch and keyboard readers without a way to stop the motion)."""
+    pause_label = "أوقف شريط الأخبار العاجلة" if lang == "ar" else "Pause breaking-news ticker"
+    return (f'<div class="ticker" role="region" aria-label="{t["breaking"]}">'
+            f'<span class="label">{t["breaking"]}</span>'
+            f'<button class="tick-pause" aria-pressed="false" aria-label="{pause_label}" '
+            'onclick="var k=this.closest(\'.ticker\'),p=k.classList.toggle(\'paused\');'
+            'this.setAttribute(\'aria-pressed\',p);this.textContent=p?\'▶\':\'⏸\'">⏸</button>'
+            f'<div class="rail"><div class="track">{ticker_track}{ticker_track_hidden}</div></div></div>')
 
 
 def meta_line(it, lang):
@@ -3097,7 +3118,7 @@ def op_card(it, lang, pfx):
             f'{meta_line(it, lang)}</article>')
 
 def sub_item(it, lang, pfx):
-    thumb = (f'<a class="sub-thumb" href="{href(it, pfx)}">'
+    thumb = (f'<a class="sub-thumb" href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
              f'<img src="{esc(it["image"])}" alt="" loading="lazy"{lede_fallback_attrs(it)}></a>'
              if it["image"] else '')
     return (f'<article class="sub-item">'
@@ -3128,11 +3149,28 @@ def latest_item(it, lang, pfx):
 # Standing specials featured on both front pages (owner-curated). Each entry
 # links to a standalone feature page; the band sits directly under the live
 # hero so the news cycle keeps the top slot (charter: nothing squats the hero).
+def _original_header_title(slug, lang):
+    """The title: header of an originals source file — the same value the
+    loader publishes, so slugs derived here match the rendered page name."""
+    path = ROOT / "originals" / f"{slug}.{lang}.txt"
+    try:
+        head = path.read_text(encoding="utf-8").partition("\n---\n")[0]
+    except OSError:
+        return ""
+    for line in head.splitlines():
+        key, separator, value = line.partition(":")
+        if separator and key.strip().lower() == "title":
+            return value.strip()
+    return ""
+
+
 def _original_story_href(slug):
     """Front-page links to a published original's story pages, both editions.
     Mirrors the pid derivation in load_originals so specials never 404."""
-    return {lang: "/" + lang + "/story/"
-            + hashlib.md5(f"original:{slug}.{lang}".encode()).hexdigest()[:10] + ".html"
+    return {lang: story_url_path(
+                _original_header_title(slug, lang),
+                hashlib.md5(f"original:{slug}.{lang}".encode()).hexdigest()[:10],
+                lang)
             for lang in ("en", "ar")}
 
 
@@ -3488,7 +3526,7 @@ def render_page(lang, items, built_at):
   {theme_btn(lang)}{lite_btn(lang)}<a class="lang" href="{t['switch_href']}">{t['switch_lang']}</a>
 </div></div>
 
-<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track_hidden}</div></div></div>
+{ticker_html(t, lang, ticker_track, ticker_track_hidden)}
 
 <header class="masthead"><div class="wrap">
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
@@ -3522,7 +3560,7 @@ def render_page(lang, items, built_at):
       <span class="contact-id">{SIGNAL_USERNAME}</span></p><p class="footer-contact secondary"><a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} {"←" if lang == "ar" else "→"}</a> <span class="contact-id">{TELEGRAM_BOT_NAME}</span></p></div>
   </div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="corrections.html">{'سجل التصويبات' if lang == 'ar' else 'Corrections log'}</a> <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
     <span>{t['attribution']}</span>
     <a href="{t['switch_href']}">{t['footer_lang']}</a>
   </div>
@@ -3673,7 +3711,7 @@ def render_story(it, lang, related, rail, built_at):
     related_primary = [r for r in related if r is not it and r["cat"] == it["cat"]]
     related_secondary = [r for r in related if r is not it and r["cat"] != it["cat"]]
     related_cards = "".join(card(r, lang, "") for r in (related_primary + related_secondary)[:8])
-    page_url = f"{BASE_URL}/{lang}/story/{it['pid']}.html"; _q = __import__("urllib.parse", fromlist=["quote"]).quote; share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a></div>'); share_rail = ('<nav class="share-rail" aria-label="' + ("شارك الخبر" if lang == "ar" else "Share this story") + '"><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="X">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener" title="Facebook">f</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener" title="WhatsApp">Wa</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="Telegram">Tg</a></nav>')
+    page_url = story_url(it, lang); _q = __import__("urllib.parse", fromlist=["quote"]).quote; share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a></div>'); share_rail = ('<nav class="share-rail" aria-label="' + ("شارك الخبر" if lang == "ar" else "Share this story") + '"><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="X">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener" title="Facebook">f</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener" title="WhatsApp">Wa</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="Telegram">Tg</a></nav>')
     desc = esc(summary_text(
         (it.get("brief") or it["dek"]).replace(chr(10), " "))[:155])
     og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
@@ -3692,18 +3730,23 @@ def render_story(it, lang, related, rail, built_at):
         f'<span aria-current="page">{esc(it["title"])}</span></nav>'
     )
     hreflang = ""
+    # Default language switch lands on the other edition's front page; when a
+    # bilingual pair exists it deep-links to the story's own translation.
+    switch_href = f"../../{'en' if lang == 'ar' else 'ar'}/"
     if it["source_id"] == "top-original" and str(it.get("link", "")).startswith("original:"):
         stem = it["link"].split(":", 1)[1]
         if "." in stem:
             slug, source_lang = stem.rsplit(".", 1)
             if source_lang in ("en", "ar"):
                 other_lang = "ar" if source_lang == "en" else "en"
-                if (ROOT / "originals" / f"{slug}.{other_lang}.txt").is_file():
+                other_title = _original_header_title(slug, other_lang)
+                if other_title:
                     this_pid = hashlib.md5(f"original:{slug}.{source_lang}".encode()).hexdigest()[:10]
                     other_pid = hashlib.md5(f"original:{slug}.{other_lang}".encode()).hexdigest()[:10]
-                    this_url = f"{BASE_URL}/{source_lang}/story/{this_pid}.html"
-                    other_url = f"{BASE_URL}/{other_lang}/story/{other_pid}.html"
+                    this_url = BASE_URL + story_url_path(it["title"], this_pid, source_lang)
+                    other_url = BASE_URL + story_url_path(other_title, other_pid, other_lang)
                     en_url = this_url if source_lang == "en" else other_url
+                    switch_href = other_url
                     hreflang = (f'<link rel="alternate" hreflang="{source_lang}" href="{this_url}">\n'
                                 f'<link rel="alternate" hreflang="{other_lang}" href="{other_url}">\n'
                                 f'<link rel="alternate" hreflang="x-default" href="{en_url}">')
@@ -3764,8 +3807,8 @@ def render_story(it, lang, related, rail, built_at):
 {_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
-<div class="ticker" role="region" aria-label="{t['breaking']}"><span class="label">{t['breaking']}</span><div class="rail"><div class="track">{ticker_track}{ticker_track_hidden}</div></div></div>
+<div class="backbar"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="{switch_href}">{t['switch_lang']}</a></span></div>
+{ticker_html(t, lang, ticker_track, ticker_track_hidden)}
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="../"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
@@ -3797,7 +3840,7 @@ def render_story(it, lang, related, rail, built_at):
 <footer><div class="wrap">
   <div class="flagline"></div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="../status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="../corrections.html">{'سجل التصويبات' if lang == 'ar' else 'Corrections log'}</a> <a href="../status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
     <a href="../">{t['back_home']}</a>
   </div>
 </div></footer>
@@ -3806,6 +3849,20 @@ def render_story(it, lang, related, rail, built_at):
 {live_fab_html(lang)}
 </body>
 </html>"""
+def story_redirect_stub(it, lang):
+    """Tiny page at the legacy bare-pid URL forwarding to the slugged page.
+    Slugs follow the headline, so a shared or Telegram-delivered link from any
+    earlier build lands on the story it pointed to."""
+    target = story_url(it, lang)
+    return (f'<!DOCTYPE html><html lang="{lang}"><head><meta charset="utf-8">'
+            f'<title>{esc(it["title"])}</title>'
+            f'<link rel="canonical" href="{target}">'
+            '<meta name="robots" content="noindex">'
+            f'<meta http-equiv="refresh" content="0;url={target}">'
+            f'<script>location.replace({json.dumps(target)});</script>'
+            f'</head><body><p><a href="{target}">{esc(it["title"])}</a></p></body></html>')
+
+
 def render_rss(lang, items, built_at):
     """Standard RSS 2.0 feed so readers, apps and other sites can syndicate TOP."""
     t = STR[lang]
@@ -3813,7 +3870,7 @@ def render_rss(lang, items, built_at):
     entries = []
     for it in sorted([i for i in items if i["cat"] != "social"],
                      key=lambda i: i["date"], reverse=True)[:30]:
-        u = f"{BASE_URL}/{lang}/story/{it['pid']}.html"
+        u = story_url(it, lang)
         desc = summary_text(
             (it.get("brief") or it["dek"]).split(chr(10))[0])
         modified = (
@@ -3972,7 +4029,7 @@ def render_sitemap(langs_items, built_at):
                         "<priority>0.7</priority></url>")
         for it in items:
             changed = it.get("modified") or it["date"]
-            urls.append(f"<url><loc>{BASE_URL}/{lang}/story/{it['pid']}.html</loc>"
+            urls.append(f"<url><loc>{story_url(it, lang)}</loc>"
                         f"<lastmod>{utc_iso(changed)}</lastmod></url>")
     return ('<?xml version="1.0" encoding="UTF-8"?>'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
@@ -4073,7 +4130,7 @@ def main():
             render_search_page(lang, built_at,
                                cats=sorted({it["cat"] for it in items})), encoding="utf-8")
         (dist / lang / "search-index.json").write_text(json.dumps(
-            [{"t": it["title"], "u": f"/{lang}/story/{it['pid']}.html",
+            [{"t": it["title"], "u": story_url_path(it["title"], it["pid"], lang),
               "d": truncate(it["dek"], 160),
               "c": STR[lang]["sections"].get(it["cat"], it["cat"])} for it in items],
             ensure_ascii=False), encoding="utf-8")
@@ -4087,7 +4144,11 @@ def main():
             story_html = render_story(it, lang, related, rail, built_at)
             if it["source_id"] == "top-original" and len(re.findall(r"<h1(?:\s|>)", story_html)) != 1:
                 raise RuntimeError(f"original story {it['pid']} rendered with invalid <h1> count")
-            (dist / lang / "story" / f"{it['pid']}.html").write_text(story_html, encoding="utf-8")
+            (dist / lang / "story" / story_file_name(it["title"], it["pid"])).write_text(
+                story_html, encoding="utf-8")
+            # Every link ever shared used the bare-pid path — keep it resolving.
+            (dist / lang / "story" / f"{it['pid']}.html").write_text(
+                story_redirect_stub(it, lang), encoding="utf-8")
         (dist / lang / "rss.xml").write_text(render_rss(lang, items, built_at), encoding="utf-8")
     (dist / "sitemap.xml").write_text(
         render_sitemap((("en", en_items), ("ar", ar_items)), built_at), encoding="utf-8")

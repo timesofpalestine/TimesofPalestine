@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Set, Tuple, TypedDict
-from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
+from urllib.parse import parse_qsl, quote, urlencode, urljoin, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 UTC = timezone.utc
@@ -283,6 +283,32 @@ def parse_timestamp(value: str, naive_timezone: Optional[str] = None) -> Optiona
 
 def utc_iso(value: datetime) -> str:
     return utc_datetime(value).isoformat().replace("+00:00", "Z")
+
+
+# Story-page URLs carry a headline slug ahead of the pid so links are readable
+# and search engines see the story's words, not a hash. The pid stays in the
+# filename as the stable identity — a retitled story keeps its pid, and the
+# build writes a redirect stub at the bare-pid path so every previously shared
+# link keeps resolving.
+_SLUG_WORD_RX = re.compile(r"[^\W_]+")
+
+
+def slugify_title(title: str, max_words: int = 8, max_len: int = 64) -> str:
+    """Unicode-aware slug — Arabic headlines keep Arabic words in the URL."""
+    words = _SLUG_WORD_RX.findall((title or "").lower())
+    slug = "-".join(words[:max_words])
+    if len(slug) > max_len:
+        slug = slug[:max_len].rsplit("-", 1)[0]
+    return slug.strip("-") or "story"
+
+
+def story_file_name(title: str, pid: str) -> str:
+    return f"{slugify_title(title)}-{pid}.html"
+
+
+def story_url_path(title: str, pid: str, lang: str) -> str:
+    """Site-absolute story path, percent-encoded for feeds/sitemaps/href use."""
+    return f"/{lang}/story/{quote(story_file_name(title, pid))}"
 
 
 def validate_feed_config(feeds: Dict[str, Any]) -> None:
