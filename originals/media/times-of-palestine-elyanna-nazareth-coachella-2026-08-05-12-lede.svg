@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Elyanna's route: from Nazareth to Coachella to the World Cup opening ceremony</title>
+<desc id="dsc">A dark editorial graphic. A rising curve marks six milestones in the career of Palestinian singer Elyanna: born in Nazareth on January 22, 2002; Coachella's Gobi Tent in 2023 as the first Arabic-language act; debut album Woledto on April 12, 2024; Governors Ball in Queens on June 9, 2024, singing Ghosn Zeytoun; first Arab artist at Wembley in 2025 opening for Coldplay; and the World Cup opening ceremony in Toronto on June 12, singing Illuminate with Jessie Reyez. Below, three figures: 7.2 million US streams for her debut EP, more than 25 million global streams for Ana Lahale, and a 1.3 billion dollar Coldplay tour gross.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="curve" x1="0" y1="1" x2="1" y2="0">
+<stop offset="0" stop-color="#286344"/>
+<stop offset="0.45" stop-color="#c7a86b"/>
+<stop offset="1" stop-color="#C8102E"/>
+</linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#c7a86b" stop-opacity="0.28"/>
+<stop offset="1" stop-color="#c7a86b" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="1420" cy="280" r="300" fill="url(#glow)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- sound arcs radiating from the final stage -->
+<g fill="none" stroke="#59a97d" stroke-opacity="0.35" stroke-width="3">
+<path d="M1330 170 A 150 150 0 0 1 1330 390"/>
+<path d="M1288 128 A 210 210 0 0 1 1288 432"/>
+</g>
+<g fill="none" stroke="#c7a86b" stroke-opacity="0.22" stroke-width="3">
+<path d="M1246 86 A 272 272 0 0 1 1246 474"/>
+</g>
+
+<!-- header -->
+<text x="90" y="96" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="6" fill="#C8102E">ELYANNA · NAZARETH</text>
+<text x="90" y="158" font-family="'Source Serif 4',Georgia,serif" font-size="54" font-weight="700" fill="#f2eee8">Carrying Arabic from Coachella</text>
+<text x="90" y="216" font-family="'Source Serif 4',Georgia,serif" font-size="54" font-weight="700" fill="#f2eee8">to the World Cup</text>
+<text x="90" y="272" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#c7a86b">من كوتشيلا إلى كأس العالم — بالعربية</text>
+<text x="90" y="316" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">“I carry my roots wherever I go” — Elyanna to Billboard Arabia</text>
+<rect x="90" y="338" width="120" height="4" fill="#286344"/>
+
+<!-- the rising route -->
+<path d="M200,700 C300,706 360,690 440,660 C540,622 610,610 700,570 C790,530 850,522 930,480 C1020,432 1090,425 1170,380 C1260,328 1340,318 1420,280"
+fill="none" stroke="url(#curve)" stroke-width="6" stroke-linecap="round"/>
+
+<!-- nodes -->
+<g>
+<circle cx="200" cy="700" r="13" fill="#1d1e21" stroke="#59a97d" stroke-width="5"/>
+<circle cx="440" cy="660" r="13" fill="#1d1e21" stroke="#c7a86b" stroke-width="5"/>
+<circle cx="700" cy="570" r="13" fill="#1d1e21" stroke="#c7a86b" stroke-width="5"/>
+<circle cx="930" cy="480" r="13" fill="#1d1e21" stroke="#c7a86b" stroke-width="5"/>
+<circle cx="1170" cy="380" r="13" fill="#1d1e21" stroke="#C8102E" stroke-width="5"/>
+<circle cx="1420" cy="280" r="18" fill="#C8102E" stroke="#f2eee8" stroke-width="5"/>
+</g>
+
+<!-- connectors -->
+<g stroke="#aaa9a5" stroke-opacity="0.45" stroke-width="2">
+<line x1="200" y1="716" x2="200" y2="742"/>
+<line x1="440" y1="644" x2="440" y2="602"/>
+<line x1="700" y1="586" x2="700" y2="612"/>
+<line x1="930" y1="464" x2="930" y2="424"/>
+<line x1="1170" y1="396" x2="1170" y2="422"/>
+<line x1="1420" y1="260" x2="1420" y2="232"/>
+</g>
+
+<!-- 1 Nazareth -->
+<g font-family="'Libre Franklin',Arial,sans-serif">
+<text x="164" y="768" font-size="22" font-weight="700" fill="#f2eee8">Born in Nazareth</text>
+<text x="164" y="794" font-size="16" fill="#aaa9a5">January 22, 2002 · Elian Amer Marjieh</text>
+<text x="164" y="822" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#59a97d">الناصرة</text>
+<text x="164" y="738" font-size="16" font-weight="700" letter-spacing="2" fill="#c7a86b">2002</text>
+</g>
+
+<!-- 2 Coachella -->
+<g font-family="'Libre Franklin',Arial,sans-serif">
+<text x="404" y="546" font-size="16" font-weight="700" letter-spacing="2" fill="#c7a86b">2023</text>
+<text x="404" y="576" font-size="22" font-weight="700" fill="#f2eee8">Coachella — Gobi Tent</text>
+<text x="404" y="598" font-size="16" fill="#aaa9a5">first Palestinian artist; full set in Arabic</text>
+<text x="404" y="524" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b">كوتشيلا</text>
+</g>
+
+<!-- 3 Woledto -->
+<g font-family="'Libre Franklin',Arial,sans-serif">
+<text x="662" y="638" font-size="16" font-weight="700" letter-spacing="2" fill="#c7a86b">2024</text>
+<text x="662" y="668" font-size="22" font-weight="700" fill="#f2eee8">Woledto — “I am born”</text>
+<text x="662" y="690" font-size="16" fill="#aaa9a5">debut album, April 12, 2024 · 9 tracks</text>
+<text x="662" y="718" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b">وُلدت</text>
+</g>
+
+<!-- 4 Governors Ball -->
+<g font-family="'Libre Franklin',Arial,sans-serif">
+<text x="828" y="368" font-size="16" font-weight="700" letter-spacing="2" fill="#c7a86b">2024</text>
+<text x="828" y="398" font-size="22" font-weight="700" fill="#f2eee8">Governors Ball, Queens</text>
+<text x="828" y="420" font-size="16" fill="#aaa9a5">“Ghosn Zeytoun” · June 9, 2024</text>
+<text x="828" y="346" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b">غصن زيتون</text>
+</g>
+
+<!-- 5 Wembley -->
+<g font-family="'Libre Franklin',Arial,sans-serif">
+<text x="1186" y="448" font-size="16" font-weight="700" letter-spacing="2" fill="#C8102E">2025</text>
+<text x="1186" y="478" font-size="22" font-weight="700" fill="#f2eee8">First Arab artist at Wembley</text>
+<text x="1186" y="500" font-size="16" fill="#aaa9a5">opening for Coldplay, stadium tour</text>
+<text x="1186" y="528" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b">ويمبلي</text>
+</g>
+
+<!-- 6 World Cup -->
+<g font-family="'Libre Franklin',Arial,sans-serif" text-anchor="end">
+<text x="1480" y="128" font-size="16" font-weight="700" letter-spacing="2" fill="#C8102E">JUNE 12</text>
+<text x="1480" y="164" font-size="26" font-weight="700" fill="#f2eee8">World Cup opening ceremony</text>
+<text x="1480" y="190" font-size="17" fill="#aaa9a5">“Illuminate” with Jessie Reyez · Toronto Stadium</text>
+<text x="1480" y="222" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#c7a86b">كأس العالم — تورونتو</text>
+</g>
+
+<!-- stats -->
+<line x1="360" y1="852" x2="1490" y2="852" stroke="#aaa9a5" stroke-opacity="0.25" stroke-width="2"/>
+<g font-family="'Libre Franklin',Arial,sans-serif">
+<text x="400" y="836" font-size="44" font-weight="700" fill="#c7a86b">7.2M</text>
+<text x="530" y="820" font-size="15" fill="#f2eee8">US streams, debut EP</text>
+<text x="530" y="840" font-size="14" fill="#aaa9a5">Luminate, before Coachella</text>
+
+<text x="820" y="836" font-size="44" font-weight="700" fill="#c7a86b">25M+</text>
+<text x="960" y="820" font-size="15" fill="#f2eee8">global streams, “Ana Lahale”</text>
+<text x="960" y="840" font-size="14" fill="#aaa9a5">breakout single</text>
+
+<text x="1250" y="836" font-size="44" font-weight="700" fill="#59a97d">$1.3B</text>
+<text x="1370" y="820" font-size="15" fill="#f2eee8">Coldplay tour gross</text>
+<text x="1370" y="840" font-size="14" fill="#aaa9a5">Music of the Spheres</text>
+</g>
+
+<text x="90" y="876" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">تايمز أوف فلسطين</text>
+<text x="90" y="848" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#8a1f2d">TIMES OF PALESTINE</text>
+</svg>
