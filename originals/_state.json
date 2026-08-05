@@ -1,5 +1,5 @@
 {
- "last_hour": "2026-08-05T12",
+ "last_hour": "2026-08-05T19",
  "done": {
   "pa-budget-line-by-line": "2026-07-29T17:06:23.973916+00:00",
   "donor-aid-what-reaches-the-treasury": "2026-07-29T18:04:08.801907+00:00",
@@ -15,8 +15,9 @@
   "gaza-dialysis-chronic-care": "2026-08-04T12:05:23.161085+00:00",
   "gaza-maternal-newborn-care": "2026-08-04T19:05:45.248574+00:00",
   "saint-levant-gaza-rap": "2026-08-05T05:03:49.045860+00:00",
-  "elyanna-nazareth-coachella": "2026-08-05T12:13:08.823256+00:00"
+  "elyanna-nazareth-coachella": "2026-08-05T12:13:08.823256+00:00",
+  "sama-abdulhadi-techno": "2026-08-05T19:00:09.253715+00:00"
  },
- "last_attempt": "2026-08-05T12:13:08.823256+00:00",
+ "last_attempt": "2026-08-05T19:00:09.253715+00:00",
  "last_status": "investigations: stage failed (APIStatusError: {'type': 'error', 'error': {'details': None, 'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CdWyHGb8AKvqnsxxBXXv5'}) — news build continues"
 }

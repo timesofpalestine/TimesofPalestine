@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Sama' Abdulhadi: from Boiler Room in Ramallah to global festival stages</title>
+<desc id="desc">Dark editorial graphic. A large vinyl record with a red centre label reading "58-min set, 10M+ views" sits at right, with a tonearm and a sound waveform beneath it. At left, bilingual English and Arabic headlines about Ramallah's techno scene and four data cards: 7.3M views by June 2021 as reported by DJ Mag; 40 booking requests in one day; the 100th edition of Mixmag's Mix series in April; 12,500 people at Wembley Arena on 17 September 2025.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<radialGradient id="disc" cx="0.42" cy="0.36" r="0.75">
+<stop offset="0" stop-color="#2a2c30"/>
+<stop offset="0.6" stop-color="#1a1b1e"/>
+<stop offset="1" stop-color="#101113"/>
+</radialGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#f2eee8" stop-opacity="0.10"/>
+<stop offset="0.5" stop-color="#f2eee8" stop-opacity="0"/>
+<stop offset="1" stop-color="#f2eee8" stop-opacity="0.05"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- RECORD -->
+<g transform="translate(1150,430)">
+<circle r="284" fill="url(#disc)" stroke="#33363a" stroke-width="2"/>
+<circle r="284" fill="url(#sheen)"/>
+<g fill="none" stroke="#3a3d42" stroke-width="1.2" opacity="0.9">
+<circle r="268"/><circle r="252"/><circle r="236"/><circle r="220"/><circle r="204"/>
+<circle r="188"/><circle r="172"/><circle r="156"/><circle r="140"/><circle r="124"/>
+</g>
+<g fill="none" stroke="#59a97d" stroke-width="2.4" opacity="0.75">
+<circle r="244"/>
+</g>
+<g fill="none" stroke="#c7a86b" stroke-width="2.4" opacity="0.7">
+<circle r="180"/>
+</g>
+<circle r="98" fill="#8a1f2d"/>
+<circle r="98" fill="none" stroke="#c7a86b" stroke-width="2"/>
+<text x="0" y="-24" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="2.4" fill="#f2eee8" opacity="0.85">BOILER ROOM</text>
+<text x="0" y="10" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="30" font-weight="700" fill="#f2eee8">58 MIN</text>
+<text x="0" y="38" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="1.2" fill="#f2eee8" opacity="0.9">10M+ VIEWS</text>
+<circle r="6" fill="#111214"/>
+<circle r="6" fill="none" stroke="#f2eee8" stroke-width="1" opacity="0.5"/>
+</g>
+
+<!-- TONEARM -->
+<g>
+<circle cx="1436" cy="152" r="18" fill="#2a2c30" stroke="#c7a86b" stroke-width="2"/>
+<circle cx="1436" cy="152" r="5" fill="#c7a86b"/>
+<line x1="1436" y1="152" x2="1214" y2="352" stroke="#aaa9a5" stroke-width="7" stroke-linecap="round"/>
+<line x1="1436" y1="152" x2="1214" y2="352" stroke="#f2eee8" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+<rect x="1188" y="336" width="34" height="22" rx="4" transform="rotate(-42 1205 347)" fill="#8a1f2d" stroke="#c7a86b" stroke-width="1.5"/>
+</g>
+
+<text x="1150" y="768" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="1.2" fill="#aaa9a5">BOILER ROOM'S FIRST RAMALLAH EVENT &#183; 22 JUNE 2018</text>
+<text x="1150" y="800" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#c7a86b" direction="rtl">بويلر روم في رام الله &#183; 22 حزيران 2018</text>
+
+<!-- WAVEFORM -->
+<g fill="#59a97d" opacity="0.75">
+<rect x="780" y="852" width="10" height="14"/><rect x="806" y="840" width="10" height="26"/>
+<rect x="832" y="826" width="10" height="40"/><rect x="858" y="844" width="10" height="22"/>
+</g>
+<g fill="#c7a86b" opacity="0.8">
+<rect x="884" y="812" width="10" height="54"/><rect x="910" y="832" width="10" height="34"/>
+<rect x="936" y="848" width="10" height="18"/><rect x="962" y="820" width="10" height="46"/>
+<rect x="988" y="804" width="10" height="62"/><rect x="1014" y="836" width="10" height="30"/>
+</g>
+<g fill="#f2eee8" opacity="0.55">
+<rect x="1040" y="846" width="10" height="20"/><rect x="1066" y="828" width="10" height="38"/>
+<rect x="1092" y="810" width="10" height="56"/><rect x="1118" y="822" width="10" height="44"/>
+<rect x="1144" y="842" width="10" height="24"/><rect x="1170" y="798" width="10" height="68"/>
+<rect x="1196" y="830" width="10" height="36"/><rect x="1222" y="850" width="10" height="16"/>
+</g>
+<g fill="#8a1f2d">
+<rect x="1248" y="818" width="10" height="48"/><rect x="1274" y="808" width="10" height="58"/>
+<rect x="1300" y="838" width="10" height="28"/><rect x="1326" y="824" width="10" height="42"/>
+</g>
+<g fill="#286344">
+<rect x="1352" y="846" width="10" height="20"/><rect x="1378" y="814" width="10" height="52"/>
+<rect x="1404" y="834" width="10" height="32"/><rect x="1430" y="806" width="10" height="60"/>
+<rect x="1456" y="842" width="10" height="24"/><rect x="1482" y="848" width="10" height="18"/>
+</g>
+
+<!-- TEXT COLUMN -->
+<text x="92" y="120" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="4.5" fill="#c7a86b">SAMA' ABDULHADI</text>
+<text x="92" y="152" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#59a97d" direction="rtl">سماء عبد الهادي</text>
+
+<text x="92" y="228" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#f2eee8">Ramallah's techno,</text>
+<text x="92" y="286" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#f2eee8">on the world's stages</text>
+<text x="92" y="336" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#c7a86b" direction="rtl">تكنو رام الله على مسارح العالم</text>
+
+<rect x="92" y="366" width="120" height="4" fill="#8a1f2d"/>
+<text x="92" y="412" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">From Boiler Room in Ramallah to Coachella's Yuma Tent</text>
+
+<!-- DATA CARDS -->
+<g>
+<rect x="92" y="446" width="258" height="132" rx="10" fill="#f2eee8" fill-opacity="0.045" stroke="#3a3d42"/>
+<rect x="92" y="446" width="5" height="132" rx="2.5" fill="#c7a86b"/>
+<text x="118" y="510" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#c7a86b">7.3M</text>
+<text x="118" y="538" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">views of the set</text>
+<text x="118" y="560" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">DJ Mag, June 2021</text>
+
+<rect x="372" y="446" width="258" height="132" rx="10" fill="#f2eee8" fill-opacity="0.045" stroke="#3a3d42"/>
+<rect x="372" y="446" width="5" height="132" rx="2.5" fill="#59a97d"/>
+<text x="398" y="510" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#59a97d">40</text>
+<text x="398" y="538" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">booking requests</text>
+<text x="398" y="560" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">in one day</text>
+
+<rect x="92" y="598" width="258" height="132" rx="10" fill="#f2eee8" fill-opacity="0.045" stroke="#3a3d42"/>
+<rect x="92" y="598" width="5" height="132" rx="2.5" fill="#C8102E"/>
+<text x="118" y="662" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">100th</text>
+<text x="118" y="690" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">Mixmag Mix edition</text>
+<text x="118" y="712" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">April</text>
+
+<rect x="372" y="598" width="258" height="132" rx="10" fill="#f2eee8" fill-opacity="0.045" stroke="#3a3d42"/>
+<rect x="372" y="598" width="5" height="132" rx="2.5" fill="#c7a86b"/>
+<text x="398" y="662" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">12,500</text>
+<text x="398" y="690" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">at Wembley Arena</text>
+<text x="398" y="712" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">17 September 2025</text>
+</g>
+
+<text x="92" y="798" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="1.5" fill="#aaa9a5">UNION, RAMALLAH &#183; A HUB THAT INCUBATES DJs, PRODUCERS AND CREATIVES</text>
+<text x="92" y="828" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#59a97d" direction="rtl">يونيون &#8212; رام الله</text>
+
+<text x="1570" y="60" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" letter-spacing="3" fill="#aaa9a5">TIMES OF PALESTINE</text>
+</svg>
