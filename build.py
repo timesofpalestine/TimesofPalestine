@@ -291,6 +291,19 @@ ACCOUNTABILITY_RX = re.compile(
 
 ISRAEL_CONTEXT_RX = re.compile(r"israel|settler|idf|zionis|إسرائيل|مستوطن", re.I); ARAB_LEADERS_RX = re.compile(r"(?:king|emir|sultan|crown prince|president|prime minister)\s+\w+.{0,40}(?:palestin|gaza|west bank|jerusalem)|(?:abdullah ii|mohammed bin salman|\bmbs\b|el-?sisi|sheikh tamim|bin zayed|\bmbz\b|salman bin|king abdullah|king mohammed vi|tebboune|saied)|(?:jordan|egypt|saudi|emirat|qatar|kuwait|oman|bahrain|morocc|algeri|tunisia|iraqi|lebanes)\w*\s+(?:king|president|monarch|leader|premier|emir)|(?:الملك|الأمير|الشيخ|الرئيس|ولي العهد|العاهل|السلطان)\s*\S*.{0,40}(?:فلسطين|غزة|الضفة|القدس)|(?:عبدالله الثاني|عبد الله الثاني|محمد بن سلمان|بن زايد|السيسي|تميم بن حمد|محمد السادس|تبون|قيس سعيد)", re.I)
 
+# Advertising is not news (owner takedown 2026-08-05: a Tucker Carlson Network
+# feed item that was a paid Ethos life-insurance promotion — clickbait Israel
+# headline over ad copy — published as a brief). An item whose own text carries
+# unambiguous promo markers is a commercial, whatever its headline says, and is
+# dropped before categorization. Markers are kept narrow on purpose: reporting
+# ABOUT sponsorship deals or ad campaigns ("a bill sponsored by", "AIPAC ad
+# spending") must keep publishing.
+AD_RX = re.compile(
+    r"paid partnership|sponsored (?:content|post|segment|episode)|promo code|"
+    r"use code|discount code|coupon code|\b\d{1,2}% off\b|affiliate link|"
+    r"limited.time offer|sign up at|free trial|\$[\d,.]+ ?(?:million|m)? in coverage"
+    r"|شراكة مدفوعة|إعلان مموَّ?ل|محتوى مموَّ?ل|كود (?:خصم|الخصم)|رمز الخصم", re.I)
+
 # Site-wide relevance gate: every published story must concern Palestine, the
 # occupation, or Israeli politics as they bear on Palestinians. World news from
 # Palestinian outlets (earthquakes, sport, foreign politics) never publishes.
@@ -1038,6 +1051,9 @@ def finish_item(item, feed):
             or "timesofpalestine." in item["link"]:
         return None
     hay = f"{item['title']} {item['dek']} {item['link']}"
+    if AD_RX.search(f"{item['title']} {item['dek']}"):
+        print(f"  ⊘ ad/promo dropped: {item.get('source', feed.get('name', '?'))}: {item['title'][:70]}")
+        return None
     if feed.get("filterPalestine") and not PALESTINE_RX.search(hay):
         return None
     # For general/foreign outlets and shows (Tucker Carlson, Religion News Service):
