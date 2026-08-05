@@ -2116,8 +2116,9 @@ STR = {
                     "attacks. We answer to no government, party or faction. Our only allegiance is "
                     "to verified truth, and to the people of Palestine and their God-given human "
                     "rights."),
-        "attribution": ("Headlines and summaries are aggregated automatically and link directly to "
-                        "the original publishers, who retain all rights to their work."),
+        "attribution": ("Wire reporting is rewritten in-house before publication; every story "
+                        "names its source outlet in the text, and publishers retain all rights "
+                        "to their work."),
         "footer_lang": "اقرأ بالعربية ←",
         "research_kicker": "FEATURED REPORT",
         "title_suffix": "Independent Palestine News",
@@ -2181,7 +2182,7 @@ STR = {
                     "يستحق النقد — بالصحافة المهنية لا بالإساءات الشخصية. لا نتبع حكومة ولا حزباً "
                     "ولا فصيلاً. ولاؤنا الوحيد للحقيقة الموثّقة، ولشعب فلسطين وحقوقه الإنسانية التي "
                     "وهبها الله له."),
-        "attribution": "تُجمَع العناوين والملخصات تلقائياً وتُحيل مباشرة إلى الناشرين الأصليين الذين يحتفظون بكامل حقوقهم.",
+        "attribution": "تُعاد صياغة أخبار الوكالات داخل غرفة التحرير قبل نشرها؛ ويسمّي كل تقرير مصدره داخل النص، ويحتفظ الناشرون بكامل حقوقهم.",
         "footer_lang": "→ Read in English",
         "research_kicker": "تقرير مميز",
         "title_suffix": "أخبار فلسطين المستقلة",

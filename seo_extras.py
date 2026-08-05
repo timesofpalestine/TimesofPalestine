@@ -31,6 +31,10 @@ SITE_NAMES = {"en": "Times of Palestine", "ar": "تايمز أوف فلسطين"
 
 # About & Contact — Google News accountability requirements: who we are, how we
 # work, editorial standards, corrections, and a way to reach the newsroom.
+# Rewritten 2026-08-05 (owner request): the page now tells the whole story —
+# the living front page, the automated newsroom and its binding rules, the
+# standing beats and reader services, the two-editions standard, the Palestine
+# Times inheritance — in a register worthy of the masthead.
 ABOUT = {
     "en": {
         "title": "About & Contact",
@@ -39,18 +43,65 @@ ABOUT = {
              "Times of Palestine is an independent digital newsroom covering Palestine "
              "in English and Arabic, around the clock. We answer to no government, "
              "party or faction. Our only allegiance is to verified truth, and to the "
-             "people of Palestine and their God-given human rights."),
-            ("How the newsroom works",
-             "Our desk continuously gathers reporting from dozens of Palestinian, "
+             "people of Palestine and their God-given human rights. The name carries "
+             "an inheritance: our publisher holds the title and archive of the "
+             "Palestine Times, the English-language daily launched in Ramallah in "
+             "2006, and this newsroom is its revival — the same duty, rebuilt for a "
+             "new era."),
+            ("A living front page",
+             "News here is never parked. The site rebuilds and republishes "
+             "continuously, day and night: the lead story follows the news cycle, "
+             "the freshest reporting carries a pulsing NEW mark, the breaking ticker "
+             "runs in strict chronological order, and every timestamp is honest to "
+             "the minute. When the story moves, the page moves with it."),
+            ("How our journalism is made",
+             "Our desk gathers reporting continuously from dozens of Palestinian, "
              "regional and international outlets, research institutes and primary "
-             "sources, and rewrites each wire item in-house before publication. "
-             "Every rewritten story names the outlet whose reporting it draws on "
-             "inline in the text, and each page's machine-readable metadata "
-             "preserves the source record; publishers retain all rights to their "
-             "work, and pages that carry a source's own summary link to it "
-             "directly. Alongside the wire we publish original reporting and "
-             "researched investigations written by the TOP Newsdesk, clearly "
-             "bylined as such."),
+             "sources, and rewrites every wire item in-house before it publishes — "
+             "no story runs until its rewrite is complete. Each story names the "
+             "outlet whose reporting it draws on inline in the text; the page's "
+             "machine-readable record preserves the full source trail, publishers "
+             "retain all rights to their work, and pages that carry a source's own "
+             "summary link to it directly. Alongside the wire, our investigations "
+             "desk researches and files original in-depth reports in both languages."),
+            ("An automated newsroom, under binding rules",
+             "Much of this newsroom runs on purpose-built editorial systems working "
+             "under a binding house charter, supervised by the publisher. The rules "
+             "are enforced in the publishing pipeline itself: one incident becomes "
+             "one article, incomplete copy never runs, a headline must say who did "
+             "what, and every correction or update is stamped on the story and "
+             "recorded in a public corrections log. Automation sets our pace; the "
+             "charter sets our standards."),
+            ("What we cover",
+             "Beyond the day's news we keep standing files. Transparency & "
+             "Accountability follows public money and unaccountable power, at "
+             "volume, in both languages. Her Story reports what Palestinian women "
+             "survive and carry, on their own terms. Arab Support tracks what Arab "
+             "states actually deliver for Palestinians — promised, funded, underway "
+             "or still needed. Health & Healing covers the war's toll on bodies and "
+             "minds with a solutions lens, and Financial Freedom examines money "
+             "that cannot be frozen at a border. The culture, sport and diaspora "
+             "pages celebrate Palestinian lives and work worldwide — from the "
+             "annual TOP 100 of the most influential Palestinians to the weekly "
+             "Palestinian Table — and From the Archive republishes the Palestine "
+             "Times under its original dates."),
+            ("Data and reader services",
+             "Palestine by the Numbers is our live data ledger on the front page: "
+             "sourced, dated figures, downloadable as JSON and CSV. The scholarship "
+             "guide maps funded study for Palestinian students worldwide and is "
+             "kept current, and the Washington Brief reads the American capital "
+             "with Palestinian eyes. To follow us: on-site search, RSS and JSON "
+             "feeds for each edition, and the newsroom's Telegram channel."),
+            ("Two editions, one newsroom",
+             "English and Arabic are both first editions — neither translates the "
+             "other. The facts and evidence are locked first; then each edition is "
+             "written fresh, with its own headlines and its own line edit, the way "
+             "great journalism sounds in that language."),
+            ("Built for Palestine's connections",
+             "Readers on damaged, throttled or vanishing networks come first. Pages "
+             "are light by design, a text-only lite mode is one tap away, and a "
+             "page you have opened stays readable offline in your browser. News "
+             "about Palestine must remain reachable inside Palestine."),
             ("Field reports",
              "Citizen journalists and witnesses send dispatches from the ground through "
              "our encrypted tip line. Field reports go through an editorial check and "
@@ -59,10 +110,12 @@ ABOUT = {
             ("Editorial standards & corrections",
              "We report without censorship and without favor, we hold power to "
              "account wherever it sits, and we criticize through journalism, never "
-             "personal attacks. When we get something wrong we correct it promptly, "
-             "note the change on the story itself, and record it in our public "
-             "corrections log. To request a correction, contact the newsroom on the "
-             "channel below with the story link and the error."),
+             "personal attacks. We report the issue, never the individual, and we "
+             "credit good-faith work precisely: what is promised, funded, underway, "
+             "completed and still needed. When we get something wrong we correct it "
+             "promptly, note the change on the story itself, and record it in our "
+             "public corrections log. To request a correction, contact the newsroom "
+             "on the channel below with the story link and the error."),
             ("Contact the newsroom",
              "Reach us on Signal — encrypted, and anonymous if you choose: "
              "message @TOP.972 or use the button below. You can also message the "
@@ -81,24 +134,67 @@ ABOUT = {
              "«تايمز أوف فلسطين» غرفة أخبار رقمية مستقلة تغطي فلسطين بالعربية "
              "والإنجليزية على مدار الساعة. لا نتبع حكومة ولا حزباً ولا فصيلاً؛ "
              "ولاؤنا الوحيد للحقيقة الموثّقة، ولشعب فلسطين وحقوقه الإنسانية التي "
-             "وهبها الله له."),
-            ("كيف تعمل غرفة الأخبار",
-             "يجمع مكتبنا الأخبار باستمرار من عشرات المصادر الفلسطينية والإقليمية "
-             "والدولية ومراكز الأبحاث والمصادر الأولية، ويعيد فريق التحرير صياغة "
-             "كل خبر قبل نشره. يسمّي كل تقرير الوسيلة التي استند إلى تغطيتها "
-             "داخل النص، وتحفظ البيانات الوصفية لكل صفحة سجل المصدر، ويحتفظ "
+             "وهبها الله له. ويحمل الاسم إرثاً صحفياً: يملك ناشرنا حقوق صحيفة "
+             "«فلسطين تايمز» وأرشيفها — اليومية الصادرة بالإنجليزية من رام الله "
+             "عام 2006 — وهذه الغرفة إحياءٌ لها: الرسالة نفسها بعُدّة عصر جديد."),
+            ("صفحة أولى حيّة",
+             "الخبر عندنا لا يُركن. يُعاد بناء الموقع ونشره باستمرار ليل نهار: "
+             "الخبر الأول يتبع دورة الأخبار، والتغطية الأحدث تحمل علامة «جديد» "
+             "النابضة، وشريط العاجل يلتزم التسلسل الزمني، وكل توقيت صادق حتى "
+             "الدقيقة. حين يتحرك الحدث تتحرك الصفحة معه."),
+            ("كيف نصنع صحافتنا",
+             "يجمع مكتبنا التغطيات باستمرار من عشرات المصادر الفلسطينية "
+             "والإقليمية والدولية ومراكز الأبحاث والمصادر الأولية، ويعيد صياغة "
+             "كل خبر داخل غرفة التحرير قبل نشره — فلا يُنشر خبر قبل اكتمال "
+             "صياغته. يسمّي كل تقرير الوسيلةَ التي استند إلى تغطيتها داخل النص، "
+             "وتحفظ البيانات الوصفية لكل صفحة سجلَّ المصدر كاملاً، ويحتفظ "
              "الناشرون بكامل حقوقهم؛ أما الصفحات التي تنقل ملخص المصدر نفسه "
-             "فتُحيل إليه مباشرة. وإلى جانب أخبار الوكالات ننشر تقارير أصلية "
-             "وتحقيقات معمّقة يعدّها فريق التحرير وتُنسب إليه بوضوح."),
+             "فتُحيل إليه مباشرة. وإلى جانب أخبار الوكالات ينشر مكتب التحقيقات "
+             "تقارير أصلية معمّقة باللغتين."),
+            ("غرفة أخبار مؤتمتة بقواعد ملزمة",
+             "تؤدي أنظمةُ تحرير مبنية خصيصاً جانباً كبيراً من عمل هذه الغرفة، "
+             "بإشراف الناشر ووفق ميثاق تحريري ملزم تفرضه منظومة النشر نفسها: "
+             "الحادثة الواحدة تقريرٌ واحد، والنص الناقص لا يُنشر، والعنوان "
+             "يسمّي مَن فعل ماذا، وكل تصويب أو تحديث يُثبَّت على المادة ويُقيَّد "
+             "في سجل تصويبات علني. الأتمتة تضبط إيقاعنا، والميثاق يضبط معاييرنا."),
+            ("ما نغطيه",
+             "إلى جانب أخبار اليوم نُمسك ملفات دائمة: «شفافية ومساءلة» يتتبع "
+             "المال العام والسلطة التي لا رقيب عليها باللغتين؛ و«حكايتها» يروي "
+             "ما تعيشه المرأة الفلسطينية وما تحمله بشروطها هي؛ و«الإسناد "
+             "العربي» يرصد ما تقدّمه الدول العربية فعلاً لفلسطين — ما وُعد به "
+             "وما مُوّل وما يجري وما ينتظر؛ و«الصحة والتعافي» يغطي أثر الحرب في "
+             "الأجساد والنفوس بعين الحلول؛ و«الحرية المالية» يتناول مالاً لا "
+             "يُجمَّد على معبر. وتحتفي صفحات الثقافة والرياضة والشتات "
+             "بالفلسطينيين وأعمالهم حول العالم — من قائمة المئة السنوية لأكثر "
+             "فلسطينيي العالم تأثيراً إلى «المائدة الفلسطينية» الأسبوعية — "
+             "ويعيد قسم «من الأرشيف» نشر مواد «فلسطين تايمز» بتواريخها الأصلية."),
+            ("البيانات وخدمات القراء",
+             "«فلسطين بالأرقام» سجلُّنا الحي على الصفحة الأولى: أرقام موثّقة "
+             "منسوبة إلى مصادرها بتواريخها، قابلة للتنزيل بصيغتي JSON وCSV. "
+             "ودليل المنح الدراسية يجمع فرص الدراسة الممولة للطلبة الفلسطينيين "
+             "حول العالم ويُحدَّث باستمرار، و«موجز واشنطن» يقرأ عاصمة القرار "
+             "الأميركي بعين فلسطينية. وللمتابعة: بحث داخل الموقع، وخلاصات RSS "
+             "وJSON لكل نسخة، وقناة غرفة الأخبار على تيليغرام."),
+            ("نسختان بمعيار واحد",
+             "العربية والإنجليزية طبعتان أوليان — لا تترجم إحداهما الأخرى. "
+             "تُثبَّت الوقائع والأدلة أولاً، ثم تُكتب كل نسخة كتابةً أصيلة "
+             "بعناوينها وتحريرها الخاص، كما يليق بالصحافة الكبرى في لغتها."),
+            ("مبنيّ لاتصالات فلسطين",
+             "القارئ على شبكة مقطوعة أو مخنوقة أو زائلة أولويتنا الأولى. "
+             "الصفحات خفيفة بالتصميم، والوضع النصي الخفيف على بُعد لمسة، "
+             "والصفحة التي فتحتها مرة تبقى مقروءة دون اتصال من متصفحك. أخبار "
+             "فلسطين يجب أن تبقى في متناول أهلها داخل فلسطين."),
             ("التقارير الميدانية",
              "يرسل الصحفيون المواطنون والشهود تقاريرهم من الميدان عبر خطنا الآمن "
              "المشفّر. تخضع التقارير الميدانية لمراجعة تحريرية وتُنشر في قسم خاص "
              "بها معرَّف بوضوح، حتى يعرف القراء دائماً مصدر ما يقرؤونه وطبيعته."),
             ("المعايير التحريرية والتصويبات",
              "ننقل الخبر بلا رقابة وبلا محاباة، ونحاسب السلطة أينما كانت، وننتقد "
-             "بالصحافة المهنية لا بالإساءات الشخصية. وحين نخطئ نصحح فوراً، ونثبّت "
-             "التعديل على المادة نفسها ونقيّده في سجل التصويبات العلني. لطلب "
-             "تصويب، راسل غرفة الأخبار عبر القناة أدناه مع رابط المادة وبيان الخطأ."),
+             "بالصحافة المهنية لا بالإساءات الشخصية. نتناول القضية لا الشخص، "
+             "ونمنح العمل الجاد حقّه بدقة: ما وُعد به، وما مُوّل، وما يجري، وما "
+             "اكتمل، وما ينتظر. وحين نخطئ نصحح فوراً، ونثبّت التعديل على المادة "
+             "نفسها، ونقيّده في سجل التصويبات العلني. لطلب تصويب، راسل غرفة "
+             "الأخبار عبر القناة أدناه مع رابط المادة وبيان الخطأ."),
             ("اتصل بغرفة الأخبار",
              "راسلنا على «سيغنال» — مشفّر، ومجهول الهوية إن اخترت: "
              "@TOP.972 أو عبر الزر أدناه. ويمكنك أيضاً مراسلة بوت غرفة الأخبار على "
