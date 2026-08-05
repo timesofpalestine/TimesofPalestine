@@ -58,8 +58,11 @@ under `@media(prefers-color-scheme:dark)` scoped to
 toggle in the topbar/backbar cycles auto → dark → light, stored in
 `localStorage` and restored before first paint. Never write dark styles
 directly into a media query — add them to `_DARK_RULES` so the toggle sees
-them. The flag palette stays true; only small red text lifts to `#f93549`
-for contrast. Every new surface must be checked in both schemes — if you
+them. The flag palette stays true in light mode. Dark mode (design pass
+2026-08-06) is charcoal-slate, not near-black: `--paper:#121417`,
+`--card:#1a1d22`, `--ink:#e8eaed`, `--muted:#a3a8b2`, `--line:#2a2e35`,
+`--line-dark:#3f454e`, and `--red` lifts/warms to `#d43049` on dark
+surfaces (small red text may lift further to `#f93549` for contrast). Every new surface must be checked in both schemes — if you
 only style the light theme, you have not finished the change.
 
 ### Pull quotes & data callouts
@@ -119,12 +122,26 @@ load-bearing statistic — one or two per story, never as decoration.
   **On phones (≤740px)** the same bar wraps to tap-height rows (~44px)
   and panels become full-width sheets under the bar (`.nav-group` loses
   its anchor so the sticky nav positions them); the masthead slims.
-- **Card** (`.card`, `.rowcard`, `.fr-card`): image on top (16/6 default
-  aspect in franchise cards), then kicker → serif title → optional CTA.
+- **Card** (`.card`, `.rowcard`, `.fr-card`): image on top (16:9 in
+  standard story cards, 16/6 default in franchise cards), then kicker →
+  serif title → optional CTA. The card kicker is the SECTION tag
+  (`card_kicker`), not a source chip — rewritten wire is our copy, so the
+  masthead name repeated on every card said nothing; the story page's meta
+  line keeps the source per the wire-attribution protocol. Card timestamps
+  are a single relative time (`8m ago` / «قبل ٨ دقائق»), with the full
+  minute-level stamp in the `title` tooltip and `datetime` attr — story
+  pages carry complete published/updated stamps (design pass 2026-08-06).
   Franchise cards are dark (`--black`, gold accents); news cards are light.
 - **Section head** (`.sec-head`): serif 900 title with red underline accent
   and a "View all →" link. Sections alternate light; research/investigations
   and specials ride dark bands.
+- **Tip band** (`.tipband`): one primary action (the Signal button);
+  Telegram is a single quiet inline line (`.alt`) under the sub text, the
+  QR sits small (84px) beside the button, and the safety note keeps its
+  full-width hairline row (condensed 2026-08-06 — no competing buttons).
+- **Palestine by the Numbers cells** (`.gi-cell`): bordered stat cards —
+  `--paper` ground on the `--card` block, 1px `--line` border, 6px radius,
+  the 3px red inline-start rule kept as the accent (2026-08-06).
 - **Breaking ticker**: red band, black BREAKING label, 80s linear loop,
   pauses on hover and keyboard focus, `tick-rtl` mirror for Arabic. The
   seamless-loop duplicate of the track is decorative: it carries
