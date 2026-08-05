@@ -65,6 +65,7 @@ Rules of use:
 | @4noura | Noura Erakat |
 | Rashid Khalidi — رشيد خالدي (no active personal X; track via interviews, lectures and shared video clips) | Historian, Columbia's Edward Said Professor Emeritus; author of "The Hundred Years' War on Palestine"; TOP 100 honoree. Owner-flagged 2026-08-02: important name — sweep for his new interviews, lectures and essays; his interventions are coverage, not just commentary. |
 | @JohnKiriakou (verify handle before each citation; track primarily via his shows and interviews) | John Kiriakou, ex-CIA officer and torture whistleblower. Owner-flagged 2026-08-04: pay close attention — sweep his interviews (The Tucker Carlson Show, Rogan, Judging Freedom circuit) and his own programs (DEEP FOCUS, DeProgram with Ted Rall) plus columns for Israel/Palestine material; his Iran-intel, Israel-lobby and Gaza Tribunal threads feed the accountability file. Launch profile: `originals/john-kiriakou-palestine-2026.*`. |
+| @KenRoth | Kenneth Roth, Human Rights Watch executive director 1993–2022, now Princeton visiting professor. Owner-flagged 2026-08-05: pay attention to everything he says on Israel and Palestine — his X feed runs daily legal-accountability commentary (apartheid findings, the ICC file, Gaza starvation, settlement expansion) with three decades of institutional authority behind it. Significant posts are same-day coverage in both languages; quote precisely per the claims-not-facts rule and identify him by his HRW tenure on first reference. |
 
 ## What "ahead of the curve" means operationally
 
