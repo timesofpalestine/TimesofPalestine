@@ -2067,8 +2067,6 @@ STR = {
         "search_none": "No results", "follow_tg": "Telegram channel →",
         "breaking": "BREAKING", "latest": "The Latest",
         "updated": "Updated", "tz": "Jerusalem time",
-        "sanad_name": "SANAD", "sanad_cta": "Open →",
-        "sanad_line": "The medical consult board that works without internet — post a case, reach a specialist",
         "switch_lang": "🌐 العربية", "switch_href": "../ar/",
         "hero_label": "TOP STORY",
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
@@ -2136,8 +2134,6 @@ STR = {
         "search_none": "لا نتائج", "follow_tg": "قناتنا على تيليغرام ←",
         "breaking": "عاجل", "latest": "آخر الأخبار",
         "updated": "آخر تحديث", "tz": "بتوقيت القدس",
-        "sanad_name": "سند", "sanad_cta": "افتح ←",
-        "sanad_line": "لوحة الاستشارات الطبية التي تعمل بلا إنترنت — ارفع حالة يصلها أخصائي",
         "switch_lang": "🌐 English", "switch_href": "../en/",
         "hero_label": "الخبر الأبرز",
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
@@ -2688,15 +2684,6 @@ section.specialband{background:var(--black);color:#fff;margin-block:1.2rem;borde
 .specialband .sbimg img{width:100%;height:100%;object-fit:cover;opacity:.82;transition:opacity .25s}
 .specialband .sbimg:hover img{opacity:1}
 nav.sections a.special{color:#c7a86b;border-color:rgba(199,168,107,.35)}
-.sanad-band{display:flex;align-items:center;gap:.65rem;background:var(--green);color:#fff;padding:.55rem 1rem;text-decoration:none;font-size:.88rem;line-height:1.35;max-width:100%;box-sizing:border-box;justify-content:center}
-.sanad-band:hover{background:var(--green-deep,#00602f)}
-.sanad-band .sb-ico{font-size:1.05rem;flex-shrink:0}
-.sanad-band .sb-txt{min-width:0}
-.sanad-band .sb-txt b{font-weight:900;letter-spacing:.06em}
-[lang=ar] .sanad-band .sb-txt b{letter-spacing:0}
-.sanad-band .sb-go{flex-shrink:0;border:1.5px solid rgba(255,255,255,.85);border-radius:3px;padding:.22rem .65rem;font-weight:800;font-size:.8rem;white-space:nowrap}
-@media(max-width:740px){.sanad-band{font-size:.8rem;padding:.5rem .7rem;gap:.5rem}}
-[data-lite] .sanad-band .sb-ico{display:none}
 section.tipband{background:var(--black);color:#fff;margin-block:1.2rem;border-block:4px solid var(--green);position:relative;overflow:hidden}
 section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-end:-60px;width:280px;background:linear-gradient(120deg,transparent 0 40%,rgba(0,122,61,.35) 40% 55%,rgba(206,17,38,.30) 55% 70%,transparent 70%);pointer-events:none}
 .tipband .wrap{display:flex;align-items:center;gap:2rem;padding-block:1.8rem;flex-wrap:wrap;position:relative;z-index:1}
@@ -3127,28 +3114,6 @@ def _original_story_href(slug):
 
 SPECIALS = [
     {
-        # Sanad teleconsult board (owner directive 2026-08-04): a standing
-        # service to the Palestinian health sector, Gaza especially. Static
-        # feature at /sanad/ — one bilingual page, offline-first by design.
-        # Owner order 2026-08-04 (prominence): FIRST card in the franchise
-        # row, and nav_primary puts the gold link in the always-visible
-        # tier-1 nav; the front page also carries the .sanad-band strip.
-        "nav_primary": True,
-        "href": {"en": "/sanad/", "ar": "/sanad/"},
-        "kicker": {"en": "A service for Gaza's clinicians", "ar": "خدمة لأطباء غزة"},
-        "title": {"en": "Sanad: the consult board that works without internet",
-                  "ar": "سند: لوحة الاستشارات التي تعمل بلا إنترنت"},
-        "dek": {"en": "Post a de-identified case; a named specialist answers. When the network dies, the case travels by pasted text, AirDrop or a Bluetooth bridge.",
-                "ar": "ارفع حالة بلا هوية يجيب عنها أخصائي بالاسم. وحين تنقطع الشبكة تنتقل الحالة نصاً ملصقاً أو عبر AirDrop أو جسر بلوتوث."},
-        "cta": {"en": "Open Sanad →", "ar": "افتح سند ←"},
-        "img": "/media/times-of-palestine-sanad-2026.svg",
-        "img_alt": {"en": "Sanad: a clinical case travels hand to hand until it reaches a specialist",
-                    "ar": "سند: حالة سريرية تنتقل يداً بيد حتى تبلغ أخصائياً"},
-        "ticker": {"en": "Sanad: the teleconsult board that works without internet",
-                   "ar": "سند: لوحة استشارات طبية تعمل بلا إنترنت"},
-        "nav": {"en": "Sanad", "ar": "سند"},
-    },
-    {
         # Story-page special: renders only when this original is in the build,
         # so offline/skip-originals runs never emit broken band links.
         "requires_original": "palestine-top100-2026",
@@ -3506,8 +3471,6 @@ def render_page(lang, items, built_at):
 </div></header>
 
 <nav class="sections" aria-label="Primary"><div class="wrap n1"><a class="home" href="#top">{t['latest']}</a>{nav_tier1}<button class="nav-more" aria-expanded="false" aria-controls="navtier2" onclick="var n=this.closest('nav');n.classList.toggle('nav-open');this.setAttribute('aria-expanded',n.classList.contains('nav-open'))">{'المزيد ▾' if lang == 'ar' else 'More ▾'}</button></div><div class="wrap n2" id="navtier2">{nav_tier2}<span class="nav-util"><a class="util" href="search.html">{t['search_nav']}</a><a class="util" href="{t['switch_href']}">{t['switch_lang']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div></nav>
-
-<a class="sanad-band" href="/sanad/"><span class="sb-ico" aria-hidden="true">🩺</span><span class="sb-txt"><b>{t['sanad_name']}</b> · {t['sanad_line']}</span><span class="sb-go">{t['sanad_cta']}</span></a>
 
 <main id="top">
   <div class="wrap hero-zone">
@@ -4114,8 +4077,7 @@ def main():
     # embeds covers inside onerror attributes as the browser-side fallback for
     # dying remote images, and copy_media cannot see those references — a
     # missing cover there turns a reader's failed image into a 404 white card.
-    _furniture = ["times-of-palestine-israel-votes-card.svg",
-                  "times-of-palestine-sanad-2026.svg"] + sorted(
+    _furniture = ["times-of-palestine-israel-votes-card.svg"] + sorted(
         f.name for f in (ROOT / "originals" / "media").glob("times-of-palestine-cover-*.svg"))
     for _furn in _furniture:
         _ff = ROOT / "originals" / "media" / _furn

@@ -258,12 +258,10 @@ load-bearing statistic — one or two per story, never as decoration.
   text, share-sheet, BLE bridge), stale-while-revalidate `sw.js`. Its
   launch report is `originals/sanad-teleconsult-board-2026.*`; changes to
   the board route through Claude's health beat.
-  **Prominence (owner order 2026-08-04):** Sanad is never hidden — the
-  front page carries the `.sanad-band` strip (green `var(--green)` bar
-  under the nav, bilingual, with an outlined Open button), the gold Sanad
-  nav link is `nav_primary` (tier-1 spine, never behind the mobile More ▾
-  fold), and the Sanad card leads the franchise row. Any nav redesign must
-  keep a visible one-tap Sanad entry at every viewport width.
+  **Status:** UNPUBLISHED (owner decision 2026-08-04 evening) — all
+  reader-facing Sanad surfaces (band, nav, specials card, /sanad/ page)
+  are removed pending redeployment; the `nav_primary` SPECIALS mechanism
+  remains available for whatever earns tier-1 prominence next.
 - **Reader chrome preferences** (`_THEME_JS`, applied from `<head>` on every
   template): theme (`#themetoggle`, `data-theme` on `<html>`, localStorage
   `top-theme`) and **text-only mode** (`#litetoggle` "Aa", `data-lite`,

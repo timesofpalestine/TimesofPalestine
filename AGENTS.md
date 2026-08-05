@@ -195,29 +195,37 @@ Every Sanad decision is measured against this sentence. War zone first:
 hospitals and patients in Gaza, where internet and even phone service come
 and go.
 
-Current surfaces:
-- **`/sanad/` web board** (live, static feature): offline-first single-file
-  case board; four carriers; end-to-end sealed reply threads on bitchat's
-  model; ward-team quick start (install bitchat → everyone joins `#sanad`
-  → post → share); official bitchat download links with impostor warning.
-  Front-page prominence is charter-protected (`.sanad-band`, tier-1 nav).
-  **Outbreak watch** (owner directive 2026-08-04): `outbreak_watch.py`
-  scans every build's wire (both languages) for diseases spreading in
-  Gaza/West Bank and population-level supply failures, and publishes
-  deterministic SANAD case events at `/sanad/watch.json` — the page pulls
-  them online, the mesh relays them offline, experts answer on the board.
-  Signal rule: the disease must be named in the headline/dek with a
-  spread/emergency context word; never break the news build (fail-open).
-- **The SANAD app** (`sanad-app/`, in build): a native app on bitchat's
-  open-source design (public domain), rebuilt around the medical case —
-  triage board not chat rooms, SND1 packet interop with the web board,
-  Bluetooth mesh + internet when it exists. Roadmap: issue #149.
+**STATUS — NOT READER-FACING (owner decision 2026-08-04 evening):** the
+owner unpublished Sanad from the website pending better planning. The
+`/sanad/` static-feature marker is removed (the page no longer deploys),
+the front-page band/nav/specials presence and the launch report are gone,
+and the fixture test asserts the absence. Development continues PRIVATELY
+in-repo — `sanad/` (the board source), `sanad-app/` (the native app:
+v0.1-0.3 built, mesh awaiting field test), `outbreak_watch.py` (dormant:
+writes only if /sanad/ deploys) — tracked on issue #149. NO agent re-adds
+any reader-facing Sanad surface until the owner green-lights redeployment.
 
 Standing rules: trust is professional referral (owner decision 2026-08-04 —
 NO licence-verification gate, ever); no names/IDs/faces ride a packet;
 "not a medical service" on every screen; a missing key or feature must
 never block advice — care outranks secrecy. Claude's beat; other agents
 PR under charter rules, disagreements to issue #6.
+
+## Bitchat watch (owner directive 2026-08-04)
+
+Standing beat: cover bitchat news worldwide — releases, features, adoption,
+mesh deployments in disasters and blackouts — to promote mesh communication
+in Palestinian areas, where connectivity is a weapon used against the
+population. Significant developments are covered same-day in both languages;
+every piece carries the practical Palestinian angle (what this means when
+Gaza's internet dies) and the official-download-only guidance: iPhone =
+"bitchat mesh" on the App Store (id 6748219622, Permissionless Technology);
+Android = the permissionlesstech GitHub releases APK; Google Play hosts
+impostors — warn readers every time. The financial-freedom/ecash angle of
+bitchat stays with ChatGPT's Financial Freedom section (the launch piece
+`originals/bitchat.*` is that desk's layer — graft, don't rewrite).
+The daily editor sweeps this beat; a researched worldwide adoption report
+is queued in topics.json (`bitchat-mesh-adoption-2026`).
 
 ## HER STORY — Palestinian women's accounts (owner directive 2026-08-03)
 

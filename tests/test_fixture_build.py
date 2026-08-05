@@ -11,6 +11,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class FixtureBuildTests(unittest.TestCase):
     def test_offline_fixture_build_and_validator(self):
+        # CI always builds into a fresh workspace; locally, stale dist/
+        # leftovers (e.g. an unpublished static feature) would haunt the
+        # absence assertions below. Start from scratch like the real deploy.
+        import shutil
+        shutil.rmtree(ROOT / "dist", ignore_errors=True)
         env = os.environ.copy()
         env.update({
             "TOP_FEEDS_FILE": "tests/fixtures/feeds.json",
@@ -40,30 +45,14 @@ class FixtureBuildTests(unittest.TestCase):
                       (ROOT / "dist" / "media").glob("times-of-palestine-cover-*.svg")}
         self.assertTrue(src_covers)
         self.assertEqual(src_covers - out_covers, set())
-        # Sanad (owner directive 2026-08-04) is a standing service: the static
-        # feature must deploy at /sanad/ with its offline files, its brand art
-        # must ship for the specials row, and both front pages must link it.
-        self.assertTrue((ROOT / "dist" / "sanad" / "index.html").is_file())
-        self.assertTrue((ROOT / "dist" / "sanad" / "sw.js").is_file())
-        self.assertTrue((ROOT / "dist" / "sanad" / "manifest.webmanifest").is_file())
-        self.assertFalse((ROOT / "dist" / "sanad" / ".static-feature").exists())
-        self.assertTrue(
-            (ROOT / "dist" / "media" / "times-of-palestine-sanad-2026.svg").is_file())
-        # Stage 1 (bitchat adoption): thread encryption + the bitchat carrier
-        # must ship inside the deployed page.
-        board = (ROOT / "dist" / "sanad" / "index.html").read_text(encoding="utf-8")
-        for marker in ("deriveKey", "AES-GCM", "P-256", "Bitchat mesh",
-                       "شبكة بيتشات", "encLocked"):
-            self.assertIn(marker, board)
+        # Sanad is UNPUBLISHED (owner decision 2026-08-04): development
+        # continues privately in sanad/ and sanad-app/, but no reader-facing
+        # surface may ship until the owner green-lights redeployment.
+        self.assertFalse((ROOT / "dist" / "sanad").exists())
         for lang in ("en", "ar"):
             front = (ROOT / "dist" / lang / "index.html").read_text(encoding="utf-8")
-            self.assertIn('href="/sanad/"', front)
-            # Prominence (owner order 2026-08-04): the Sanad band sits under
-            # the nav, and the gold Sanad link lives in the always-visible
-            # tier-1 row — never folded behind the mobile More toggle.
-            self.assertIn('class="sanad-band"', front)
-            n1 = front.split('<div class="wrap n1"', 1)[1].split('</div>', 1)[0]
-            self.assertIn('/sanad/', n1)
+            self.assertNotIn('/sanad/', front)
+            self.assertNotIn('sanad-band', front)
 
 
 if __name__ == "__main__":
