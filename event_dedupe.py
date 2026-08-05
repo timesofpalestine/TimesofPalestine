@@ -27,10 +27,23 @@ for _canon, _words in (
     ("strike", "strike airstrike attack raid shelling bombing bombardment assault"),
     ("kill", "kill killed martyr martyred slain dead death"),
     ("injure", "injure injured wound wounded hurt casualtie"),
+    # Diplomatic beat: two desks compose one meeting into disjoint headlines
+    # ("officials demand" vs "ministers meet to discuss") — fold the ranks,
+    # the gathering verbs and the appeal verbs so the tokens can meet.
+    ("official", "official minister diplomat"),
+    ("meet", "meet meeting met summit talk convene convened gathering gathered "
+             "discus discussed"),
+    ("urge", "urge urged demand demanded call called press appeal"),
+    ("tension", "tension escalation escalating unrest"),
     ("قوات", "قوات جيش جنود احتلال"),
     ("قصف", "قصف غارة غارات هجوم عدوان"),
     ("قتل", "قتل مقتل استشهاد استشهد شهداء شهيد قتلى"),
     ("جرحى", "جرحى إصابة إصابات أصيب مصابين مصابون"),
+    ("مسؤول", "مسؤول مسؤولون مسؤولين وزير وزراء دبلوماسيون"),
+    ("اجتماع", "اجتماع اجتمع يجتمع قمة لقاء مباحثات محادثات مشاورات "
+               "ناقش يناقش بحث يبحث"),
+    ("دعا", "دعا يدعو دعوا طالب يطالب طالبوا ناشد حث"),
+    ("توتر", "توتر توترات تصعيد"),
 ):
     for _w in _words.split():
         _EVENT_SYN[_w] = _canon
@@ -106,6 +119,23 @@ def same_event(toks_a, toks_b):
     if len(inter) / len(toks_a | toks_b) < 0.42:
         return False
     return not _place_or_count_veto(toks_a, toks_b)
+
+
+def same_coverage(ext_a, ext_b):
+    """True when two items' full title+dek token sets tell one event under
+    unlike headlines. This is the diplomatic-meeting case the other nets miss:
+    two desks compose disjoint headlines for one gathering ("Arab officials
+    demand action on Jerusalem tensions" vs "Arab ministers meet in Amman to
+    discuss occupied Jerusalem"), but the deks share the actors, the venue and
+    the subject (owner call 2026-08-05, after both ran side by side)."""
+    if len(ext_a) < 6 or len(ext_b) < 6:
+        return False  # too little text to judge safely
+    inter = ext_a & ext_b
+    if len(inter) < 7:
+        return False
+    if len(inter) / min(len(ext_a), len(ext_b)) < 0.55:
+        return False
+    return not _place_or_count_veto(ext_a, ext_b)
 
 
 def same_story(title_toks, extended_toks):

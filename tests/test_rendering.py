@@ -1417,6 +1417,56 @@ class CrossDeskDedupeTests(unittest.TestCase):
         self.assertEqual(len(survivors), 1)
         self.assertTrue(survivors[0]["original"])
 
+    def test_disjoint_headlines_on_one_meeting_fold_by_coverage(self):
+        # The Amman case (owner call 2026-08-05): two desks composed fully
+        # different headlines for one gathering, and title-level nets missed
+        # them. The title+dek coverage net must fold them to one story.
+        first = self.story(
+            "Arab officials demand action on Jerusalem tensions",
+            "Foreign ministers from Jordan, Egypt and the Arab League met in "
+            "Amman on Tuesday to demand international action over escalating "
+            "tensions at Al-Aqsa Mosque in occupied Jerusalem.",
+            n=7, score=40)
+        second = self.story(
+            "Arab ministers meet in Amman to discuss occupied Jerusalem",
+            "Arab foreign ministers gathered in the Jordanian capital Amman "
+            "to discuss rising tensions in occupied Jerusalem and Israeli "
+            "restrictions at Al-Aqsa Mosque.",
+            hours_after=1, n=8, score=30)
+        survivors = build.dedupe_events([first, second])
+        self.assertEqual(len(survivors), 1)
+
+    def test_arabic_disjoint_headlines_on_one_meeting_fold_by_coverage(self):
+        first = self.story(
+            "وزراء عرب يطالبون بتحرك دولي إزاء التوتر في القدس",
+            "اجتمع وزراء خارجية الأردن ومصر والجامعة العربية في عمّان "
+            "للمطالبة بتحرك دولي إزاء التصعيد في المسجد الأقصى بالقدس المحتلة.",
+            n=9, score=40)
+        second = self.story(
+            "اجتماع عربي في عمّان يبحث الأوضاع في القدس المحتلة",
+            "عقد وزراء الخارجية العرب اجتماعاً في العاصمة الأردنية عمّان "
+            "لبحث التوتر المتصاعد في القدس المحتلة والاعتداءات على المسجد الأقصى.",
+            hours_after=1, n=10, score=30)
+        survivors = build.dedupe_events([first, second])
+        self.assertEqual(len(survivors), 1)
+
+    def test_two_different_jerusalem_stories_both_run(self):
+        # Same city, same day, different events: a diplomatic meeting and a
+        # court decision must not fold into each other.
+        meeting = self.story(
+            "Arab ministers meet in Amman to discuss occupied Jerusalem",
+            "Arab foreign ministers gathered in the Jordanian capital Amman "
+            "to discuss rising tensions in occupied Jerusalem and Israeli "
+            "restrictions at Al-Aqsa Mosque.",
+            n=11, score=40)
+        court = self.story(
+            "Israeli court approves settler takeover of Silwan homes",
+            "An Israeli court in Jerusalem ruled that twelve Palestinian "
+            "families in Silwan can be evicted from their homes in favor of "
+            "a settler organization.",
+            hours_after=2, n=12, score=30)
+        self.assertEqual(len(build.dedupe_events([meeting, court])), 2)
+
     def test_different_stories_about_the_same_person_both_run(self):
         congress = self.story(
             "Fatah's eighth congress elevates Barghouti, Faraj and the president's son",

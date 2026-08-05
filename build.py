@@ -1674,7 +1674,9 @@ def dedupe(items):
 # Two outlets covering one incident write two different headlines, so title-string
 # dedupe misses them. The similarity logic lives in event_dedupe.py, shared with
 # telegram_publish.py so the channel never re-receives the same news either.
-from event_dedupe import event_tokens, near_identical, same_event, same_story
+from event_dedupe import (
+    event_tokens, near_identical, same_coverage, same_event, same_story,
+)
 
 def dedupe_events(items):
     """One incident, one article. When a cluster forms, our own copy (original,
@@ -1691,7 +1693,12 @@ def dedupe_events(items):
          cross-desk net: an original and a wire brief on one event write
          unlike headlines, but the names one headline omits appear in the
          other's dek (owner call 2026-08-05, after a wire brief on the
-         Dabbour arrest published beside the original covering it).
+         Dabbour arrest published beside the original covering it);
+      4. same_coverage title+dek similarity, same 36-hour window — the
+         diplomatic-meeting net: two desks compose fully disjoint headlines
+         for one gathering, but the deks share actors, venue and subject
+         (owner call 2026-08-05, after "Arab officials demand action on
+         Jerusalem tensions" ran beside "Arab ministers meet in Amman…").
     Originals never fold into each other — the desk curates those."""
     clusters = []  # [representative, [titles], [tokens], [title+dek tokens], [dates]]
     ranked = sorted(items, key=lambda i: (
@@ -1707,7 +1714,8 @@ def dedupe_events(items):
                 continue
             if any(near_identical(it["title"], t) for t in titles) or any(
                 abs((it["date"] - d).total_seconds()) <= 36 * 3600
-                and (same_event(toks, m) or same_story(toks, x) or same_story(m, ext))
+                and (same_event(toks, m) or same_story(toks, x)
+                     or same_story(m, ext) or same_coverage(ext, x))
                 for m, x, d in zip(token_sets, ext_sets, dates)
             ):
                 home = cluster
