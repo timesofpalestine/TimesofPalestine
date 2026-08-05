@@ -2116,8 +2116,9 @@ STR = {
                     "attacks. We answer to no government, party or faction. Our only allegiance is "
                     "to verified truth, and to the people of Palestine and their God-given human "
                     "rights."),
-        "attribution": ("Headlines and summaries are aggregated automatically and link directly to "
-                        "the original publishers, who retain all rights to their work."),
+        "attribution": ("Wire reporting is rewritten in-house before publication; every story "
+                        "names its source outlet in the text, and publishers retain all rights "
+                        "to their work."),
         "footer_lang": "اقرأ بالعربية ←",
         "research_kicker": "FEATURED REPORT",
         "title_suffix": "Independent Palestine News",
@@ -2181,7 +2182,7 @@ STR = {
                     "يستحق النقد — بالصحافة المهنية لا بالإساءات الشخصية. لا نتبع حكومة ولا حزباً "
                     "ولا فصيلاً. ولاؤنا الوحيد للحقيقة الموثّقة، ولشعب فلسطين وحقوقه الإنسانية التي "
                     "وهبها الله له."),
-        "attribution": "تُجمَع العناوين والملخصات تلقائياً وتُحيل مباشرة إلى الناشرين الأصليين الذين يحتفظون بكامل حقوقهم.",
+        "attribution": "تُعاد صياغة أخبار الوكالات داخل غرفة التحرير قبل نشرها؛ ويسمّي كل تقرير مصدره داخل النص، ويحتفظ الناشرون بكامل حقوقهم.",
         "footer_lang": "→ Read in English",
         "research_kicker": "تقرير مميز",
         "title_suffix": "أخبار فلسطين المستقلة",
@@ -3560,7 +3561,7 @@ def render_page(lang, items, built_at):
       <span class="contact-id">{SIGNAL_USERNAME}</span></p><p class="footer-contact secondary"><a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} {"←" if lang == "ar" else "→"}</a> <span class="contact-id">{TELEGRAM_BOT_NAME}</span></p></div>
   </div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="corrections.html">{'سجل التصويبات' if lang == 'ar' else 'Corrections log'}</a> <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
     <span>{t['attribution']}</span>
     <a href="{t['switch_href']}">{t['footer_lang']}</a>
   </div>
@@ -3840,7 +3841,7 @@ def render_story(it, lang, related, rail, built_at):
 <footer><div class="wrap">
   <div class="flagline"></div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="../corrections.html">{'سجل التصويبات' if lang == 'ar' else 'Corrections log'}</a> <a href="../status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="../status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
     <a href="../">{t['back_home']}</a>
   </div>
 </div></footer>
