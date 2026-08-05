@@ -2462,10 +2462,7 @@ img{max-width:100%;display:block}
 .masthead.compact{padding:.9rem 0 .7rem}
 .masthead.compact h1,.masthead.compact .wordmark{font-size:1.45rem}
 nav.sections{position:sticky;top:0;background:rgba(11,11,12,.97);z-index:50;box-shadow:0 2px 12px rgba(0,0,0,.3);backdrop-filter:blur(4px)}
-nav.sections .wrap{display:flex;flex-wrap:nowrap;gap:.15rem;padding-block:.15rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-nav.sections .wrap::-webkit-scrollbar{display:none}
-nav.sections .wrap::after{content:"";position:sticky;inset-inline-end:0;min-width:26px;margin-inline-start:-26px;background:linear-gradient(to left,var(--black),transparent);pointer-events:none;flex-shrink:0}
-[dir=rtl] nav.sections .wrap::after{background:linear-gradient(to right,var(--black),transparent)}
+nav.sections .wrap{display:flex;flex-wrap:wrap;align-items:stretch;gap:.15rem;padding-block:.15rem}
 nav.sections a{color:#d8d8e2;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.68rem .7rem;white-space:nowrap;border-block-end:2px solid transparent;transition:color var(--tr),border-color var(--tr)}
 [lang=ar] nav.sections a{letter-spacing:0;font-size:.8rem}
 nav.sections a:hover{color:#fff;border-block-end-color:#3a3a42}
@@ -2473,30 +2470,36 @@ nav.sections a.home{color:#f93549}
 nav.sections a.home:hover{border-block-end-color:#f93549}
 nav.sections a.tip{color:#3fd07c}
 nav.sections a.tip:hover{border-block-end-color:#3fd07c}
-/* Two nav tiers (owner order 2026-08-03), in the line-tab language merged
-   from Codex's #117: the hard-news spine reads heavier; the desks row sits
-   below it, smaller and quieter, gold specials clustered and the
-   search/tip utilities anchored at the inline end. */
-nav.sections .wrap.n1 a{font-size:.78rem;font-weight:800;color:#f2eee8}
-nav.sections .wrap.n1 a.home{color:#f93549}
-nav.sections .wrap.n2{border-top:1px solid rgba(255,255,255,.07)}
-nav.sections .wrap.n2 a{font-size:.67rem;color:#a9a9b4;padding-block:.55rem}
+/* Grouped nav (owner order 2026-08-05, after the two-tier bar reached ~19
+   visible links): one line-tab bar — THE LATEST, four dropdown groups, the
+   gold nav-primary specials, and the search/tip utilities inline-end. The
+   line-tab language of #117/#118 is kept: no pills, 2px indicator, black
+   band. Dropdowns open on hover/focus on pointer devices and on tap
+   everywhere (button carries aria-expanded; opening one closes the rest). */
+nav.sections .nav-group{position:relative}
+nav.sections .nav-gbtn{background:none;border:0;cursor:pointer;color:#f2eee8;font-family:var(--sans);font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:.68rem .7rem;white-space:nowrap;border-block-end:2px solid transparent;transition:color var(--tr),border-color var(--tr)}
+[lang=ar] nav.sections .nav-gbtn{letter-spacing:0;font-size:.9rem}
+nav.sections a.home{font-size:.78rem;font-weight:800}
+[lang=ar] nav.sections a.home{font-size:.9rem}
+nav.sections .nav-gbtn .chev{font-size:.6em;opacity:.7;margin-inline-start:.25rem;vertical-align:2px}
+nav.sections .nav-gbtn:hover,nav.sections .nav-group.open .nav-gbtn{color:#fff;border-block-end-color:var(--red)}
+nav.sections .nav-drop{display:none;position:absolute;inset-inline-start:0;top:100%;min-width:15rem;background:#0b0b0c;border:1px solid rgba(255,255,255,.12);border-top:2px solid var(--red);box-shadow:0 10px 24px rgba(0,0,0,.45);padding:.3rem 0;z-index:60}
+nav.sections .nav-group.open .nav-drop{display:block}
+@media(hover:hover){nav.sections .nav-group:hover .nav-drop,nav.sections .nav-group:focus-within .nav-drop{display:block}}
+nav.sections .nav-drop a{display:block;padding:.6rem 1rem;border-block-end:0;font-size:.7rem}
+[lang=ar] nav.sections .nav-drop a{font-size:.8rem}
+nav.sections .nav-drop a:hover{background:rgba(255,255,255,.07);color:#fff}
+nav.sections a.special{color:#c7a86b}
 nav.sections .nav-util{display:flex;gap:.15rem;margin-inline-start:auto}
 nav.sections a.util{color:#d8d8e2}
 nav.sections a.util:hover{border-block-end-color:#3a3a42}
-[lang=ar] nav.sections .wrap.n1 a{font-size:.9rem}
-[lang=ar] nav.sections .wrap.n2 a{font-size:.78rem}
-/* Mobile chrome diet (outside review 2026-08-03): the desks tier folds
-   behind a More toggle on phones so readers reach the hero sooner; tap
-   targets grow toward the 44px guideline. Desktop is untouched. */
-nav.sections .nav-more{display:none;background:none;border:0;cursor:pointer;color:#c7a86b;font-family:var(--sans);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:.68rem .7rem;white-space:nowrap;flex-shrink:0}
-[lang=ar] nav.sections .nav-more{letter-spacing:0;font-size:.8rem}
+/* Phones: same bar, ~44px tap targets; dropdowns become full-width panels
+   under the bar (group loses its anchor so the sticky nav positions them). */
 @media(max-width:740px){
-  nav.sections .nav-more{display:inline-block;position:sticky;inset-inline-end:0;background:rgba(11,11,12,.97);z-index:1}
-  nav.sections .wrap.n2{display:none}
-  nav.sections.nav-open .wrap.n2{display:flex}
   nav.sections a{padding-block:.85rem}
-  nav.sections .wrap.n2 a{padding-block:.85rem}
+  nav.sections .nav-gbtn{padding-block:.85rem}
+  nav.sections .nav-group{position:static}
+  nav.sections .nav-drop{inset-inline:0;top:100%;min-width:0;border-inline:0}
   .masthead{padding:.85rem 0 .65rem}
   .masthead .wrap::after{margin-top:.5rem}
 }
@@ -3414,27 +3417,53 @@ def render_page(lang, items, built_at):
 
     def visible(k):
         return len(sections[k]) >= (1 if k in FOCUS_SECTIONS else 2)
-    # Two deliberate nav tiers (owner order 2026-08-03) instead of one
-    # append-ordered pile. Tier 1 is the hard-news spine, read left to
-    # right as geography → people → power → money → accountability. Tier 2
-    # is the desks and standing features, with the gold specials and the
-    # search/tip utilities anchored at the end. A section missing from
-    # either list still appears (end of tier 2) — nothing silently vanishes.
-    _tier1_order = ["gaza", "westbank", "women", "politics", "economy", "accountability"]
-    _tier2_order = ["arabaid", "research", "health", "social", "diaspora",
-                    "arts", "sports", "bitcoin", "humans", "opinion", "news", "archive"]
-    tier1 = [k for k in _tier1_order if k in sections and visible(k)]
-    tier2 = ([k for k in _tier2_order if k in sections and visible(k)]
-             + [k for k in order if visible(k) and k not in _tier1_order + _tier2_order])
-    nav_tier1 = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in tier1)
-    nav_tier2 = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in tier2)
+    # Grouped nav (owner order 2026-08-05, after the two-tier bar reached
+    # ~19 visible links): THE LATEST plus four dropdown groups, in the
+    # spine's reading order — regions and power, depth, people, money.
+    # A section missing from every group still appears (end of the first
+    # group) — nothing silently vanishes. Gold specials ride inside
+    # In-Depth; nav_primary specials (Sanad — owner order 2026-08-04)
+    # stay top-level on the bar itself, never folded into a dropdown.
+    _nav_groups = [
+        ("regions", {"en": "News & Regions", "ar": "الأخبار والمناطق"},
+         ["gaza", "westbank", "politics", "diaspora", "news"]),
+        ("depth", {"en": "In-Depth", "ar": "في العمق"},
+         ["accountability", "research", "social", "opinion", "archive"]),
+        ("society", {"en": "Society & Culture", "ar": "المجتمع والثقافة"},
+         ["women", "health", "humans", "arts", "sports"]),
+        ("economy", {"en": "Economy & Aid", "ar": "الاقتصاد والإسناد"},
+         ["economy", "arabaid", "bitcoin"]),
+    ]
+    _grouped_keys = {k for _, _, keys in _nav_groups for k in keys}
+    _leftovers = [k for k in order if visible(k) and k not in _grouped_keys]
+    nav_specials_top = ""
+    _specials_depth = ""
     for sp in available_specials(lang, items):  # gold standing specials
-        # nav_primary specials (Sanad — owner order 2026-08-04) sit in the
-        # always-visible tier-1 spine, never folded behind More ▾ on phones.
+        _sp_link = f'<a class="special" href="{esc(sp["href"][lang])}">{esc(sp["nav"][lang])}</a>'
         if sp.get("nav_primary"):
-            nav_tier1 += f'<a class="special" href="{esc(sp["href"][lang])}">{esc(sp["nav"][lang])}</a>'
+            nav_specials_top += _sp_link
         else:
-            nav_tier2 += f'<a class="special" href="{esc(sp["href"][lang])}">{esc(sp["nav"][lang])}</a>'
+            _specials_depth += _sp_link
+    _gbtn_js = (
+        "var g=this.parentNode,v=!g.classList.contains('open'),n=this.closest('nav');"
+        "n.querySelectorAll('.nav-group.open').forEach(function(x){x.classList.remove('open');"
+        "x.querySelector('button').setAttribute('aria-expanded','false')});"
+        "if(v){g.classList.add('open');this.setAttribute('aria-expanded','true')}")
+    nav_groups = ""
+    for _gid, _label, _keys in _nav_groups:
+        _keys = [k for k in _keys if k in sections and visible(k)]
+        if _gid == "regions":
+            _keys += _leftovers
+        _links = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in _keys)
+        if _gid == "depth":
+            _links += _specials_depth
+        if not _links:
+            continue
+        nav_groups += (
+            f'<div class="nav-group"><button class="nav-gbtn" type="button" '
+            f'aria-expanded="false" aria-controls="navg-{_gid}" aria-haspopup="true" '
+            f'onclick="{_gbtn_js}">{_label[lang]} <span class="chev" aria-hidden="true">▾</span></button>'
+            f'<div class="nav-drop" id="navg-{_gid}">{_links}</div></div>')
 
     def research_featured(it):
         media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"{lede_fallback_attrs(it)}></a>'
@@ -3543,7 +3572,8 @@ def render_page(lang, items, built_at):
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
 
-<nav class="sections" aria-label="Primary"><div class="wrap n1"><a class="home" href="#top">{t['latest']}</a>{nav_tier1}<button class="nav-more" aria-expanded="false" aria-controls="navtier2" onclick="var n=this.closest('nav');n.classList.toggle('nav-open');this.setAttribute('aria-expanded',n.classList.contains('nav-open'))">{'المزيد ▾' if lang == 'ar' else 'More ▾'}</button></div><div class="wrap n2" id="navtier2">{nav_tier2}<span class="nav-util"><a class="util" href="search.html">{t['search_nav']}</a><a class="util" href="{t['switch_href']}">{t['switch_lang']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div></nav>
+<nav class="sections" aria-label="Primary"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_groups}{nav_specials_top}<span class="nav-util"><a class="util" href="search.html">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div></nav>
+<script>document.addEventListener("click",function(e){{if(e.target.closest("nav.sections .nav-drop a")||!e.target.closest("nav.sections"))document.querySelectorAll("nav.sections .nav-group.open").forEach(function(x){{x.classList.remove("open");x.querySelector("button").setAttribute("aria-expanded","false")}})}});document.addEventListener("keydown",function(e){{if(e.key==="Escape")document.querySelectorAll("nav.sections .nav-group.open").forEach(function(x){{x.classList.remove("open");x.querySelector("button").setAttribute("aria-expanded","false")}})}})</script>
 
 <main id="top">
   <div class="wrap hero-zone">
