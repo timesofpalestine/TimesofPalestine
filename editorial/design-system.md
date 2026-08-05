@@ -100,23 +100,25 @@ load-bearing statistic — one or two per story, never as decoration.
 
 ## 3. Component grammar
 
-- **Section nav** (`nav.sections`, merged design of #117 + #118): sticky
-  black band of minimalist uppercase line-tabs (2px bottom indicator on
-  hover — no pills, no boxes), organized as TWO tiers (`.n1`/`.n2`).
-  Tier 1 is the hard-news spine (THE LATEST · Gaza · West Bank · Her
-  Story · Politics · Economy · Accountability), heavier and brighter,
-  reading geography → people → power → money → accountability. Tier 2
-  carries the desks and standing features, smaller and muted, with the
-  gold specials clustered and the search/tip utilities anchored
-  inline-end. Each row is a single horizontally scrollable strip at every
-  width with an RTL-aware edge-fade cue — never wrapped, never clipped.
-  New sections join the tier lists in `render_page` deliberately — never
-  appended to the pile; anything not in a tier list still renders at the
-  end of tier 2 (nothing silently vanishes). **On phones (≤740px) the
-  desks tier folds behind a pinned More/«المزيد» toggle** (`.nav-more`,
-  sticky at the inline-end of tier 1, correct `aria-expanded`) so readers
-  reach the hero sooner; tap targets grow to ~44px in the same breakpoint
-  and the masthead slims. Desktop is untouched.
+- **Section nav** (`nav.sections`, grouped design — owner order 2026-08-05,
+  after the two-tier bar reached ~19 visible links; line-tab language of
+  #117 + #118 kept): ONE sticky black band. Inline order: THE LATEST (red),
+  four dropdown groups — News & Regions / «الأخبار والمناطق», In-Depth /
+  «في العمق», Society & Culture / «المجتمع والثقافة», Economy & Aid /
+  «الاقتصاد والإسناد» — then the gold `nav_primary` specials as top-level
+  links, then the search/tip utilities anchored inline-end. Group buttons
+  (`.nav-gbtn`) are uppercase line-tabs with the 2px red indicator — no
+  pills, no boxes; panels (`.nav-drop`) are solid `--black` with a 2px red
+  top rule, section links stacked. Panels open on hover/focus-within on
+  pointer devices and on tap everywhere; the button carries
+  `aria-expanded` + `aria-controls`, opening one group closes the others,
+  and Escape or an outside click closes all. Non-primary gold specials
+  ride at the end of the In-Depth panel. New sections join the group
+  lists in `render_page` deliberately; anything not in a group still
+  renders at the end of News & Regions (nothing silently vanishes).
+  **On phones (≤740px)** the same bar wraps to tap-height rows (~44px)
+  and panels become full-width sheets under the bar (`.nav-group` loses
+  its anchor so the sticky nav positions them); the masthead slims.
 - **Card** (`.card`, `.rowcard`, `.fr-card`): image on top (16/6 default
   aspect in franchise cards), then kicker → serif title → optional CTA.
   Franchise cards are dark (`--black`, gold accents); news cards are light.

@@ -136,14 +136,15 @@ class RenderingTests(unittest.TestCase):
         self.assertIn('<div class="tablewrap"><table class="lf">', rendered)
         self.assertIn(".story .tablewrap{overflow-x:auto", longform.CSS)
 
-    def test_navigation_uses_one_scrollable_row_at_every_width(self):
-        # The section nav is a single horizontally scrollable row of text
-        # tabs at all viewport widths — never wrapped, never clipped.
+    def test_navigation_bar_wraps_and_drops_open_grouped_panels(self):
+        # Grouped nav (owner order 2026-08-05): one wrapping line-tab bar,
+        # with dropdown panels that are solid black and open via the
+        # .nav-group.open state (hover/focus covered separately by CSS).
         self.assertIn(
-            "nav.sections .wrap{display:flex;flex-wrap:nowrap;"
-            "gap:.15rem;padding-block:.15rem;overflow-x:auto",
-            build.CSS,
-        )
+            "nav.sections .wrap{display:flex;flex-wrap:wrap;", build.CSS)
+        self.assertIn("nav.sections .nav-drop{display:none;", build.CSS)
+        self.assertIn(
+            "nav.sections .nav-group.open .nav-drop{display:block}", build.CSS)
 
     def test_google_news_resolution_returns_publisher_article(self):
         class Response:
@@ -1262,15 +1263,24 @@ class MobileChromeTests(unittest.TestCase):
         s_track = story.split('<div class="track">', 1)[1].split("</div>", 1)[0]
         self.assertIn('aria-hidden="true" tabindex="-1"', s_track)
 
-    def test_nav_carries_the_mobile_more_toggle(self):
+    def test_nav_groups_sections_into_labelled_dropdowns(self):
+        # Grouped nav (owner order 2026-08-05): THE LATEST plus dropdown
+        # groups whose buttons carry aria-expanded/aria-controls, section
+        # links inside the panels — and no legacy two-tier chrome.
         built_at = datetime(2026, 8, 3, 12, tzinfo=timezone.utc)
         it = item()
-        it.update({"image": "/media/x.svg", "pid": "chrome0002"})
-        for lang, label in (("en", "More"), ("ar", "المزيد")):
-            page = build.render_page(lang, [dict(it, lang=lang)], built_at)
-            self.assertIn('class="nav-more"', page)
-            self.assertIn('aria-controls="navtier2"', page)
-            self.assertIn(label, page)
+        it.update({"image": "/media/x.svg"})
+        for lang, label in (("en", "News &amp; Regions"), ("ar", "الأخبار والمناطق")):
+            rows = [dict(it, lang=lang, cat="gaza", pid=f"chrome100{i}",
+                         title=f"Gaza artists open community exhibition number {i}",
+                         link=f"https://example.com/nav-{i}") for i in range(12)]
+            page = build.render_page(lang, rows, built_at)
+            self.assertIn('class="nav-gbtn"', page)
+            self.assertIn('aria-controls="navg-regions"', page)
+            self.assertIn('aria-expanded="false"', page)
+            self.assertIn(label.replace("&amp;", "&"), page)
+            self.assertNotIn('class="nav-more"', page)
+            self.assertNotIn('navtier2', page)
 
     def test_text_only_mode_toggle_rides_every_chrome_bar(self):
         """Owner-forwarded review 2026-08-04: a low-data text-only mode for
