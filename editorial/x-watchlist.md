@@ -34,6 +34,7 @@ Rules of use:
 | @CIJ_ICJ | International Court of Justice (official) | Owner-flagged 2026-08-02: orders, hearings and advisory-opinion steps in South Africa v. Israel and the occupation dockets — sweep every run |
 | @IntlCrimCourt | International Criminal Court (official) | Owner-flagged 2026-08-02: every move on the Netanyahu/Gallant arrest warrants — appeals, state compliance, sanctions on the court — is same-day coverage |
 | @hzomlot | Husam Zomlot | London embassy; recognition diplomacy |
+| @BarakRavid | Barak Ravid, Axios | Owner-flagged 2026-08-05: very important source — his Axios reporting breaks US–Israel–Iran diplomacy (Hormuz talks, ceasefire mechanics, White House readouts) hours ahead of the wires. Sweep every run; significant reports are same-day coverage in both languages, always crediting him and Axios by name for the reporting. |
 | Mohammad Dahlan — Facebook (verified page) | Exiled Fatah leader | Kushner channel; Gaza governance file |
 
 ## Tier 2 — journalists and witnesses on the ground
@@ -47,7 +48,6 @@ Rules of use:
 | @m7mdkurd | Mohammed El-Kurd, writer |
 | Motaz Azaiza — Instagram (@motaz_azaiza) | Photojournalist |
 | Plestia Alaqad — Instagram (@byplestia) | Journalist-author |
-| @BarakRavid | Barak Ravid, Axios — breaks US–Israel diplomacy and election-coalition news |
 | @amit_segal | Amit Segal, Channel 12 — first on Israeli coalition/poll moves (election watch; treat as claims, attribute) |
 | Hani Almadhoun — LinkedIn (@hanifundraiser) | UNRWA USA vice president of philanthropy; co-founded Gaza Soup Kitchen with his brother Mahmoud (killed by an Israeli drone strike, Nov 2024). First-hand family reporting from Beit Lahia + DC aid-world signal, including Dahlan-orbit aid activity. Owner-flagged 2026-08-02: his stories and posts are important — sweep his feed for story leads. |
 

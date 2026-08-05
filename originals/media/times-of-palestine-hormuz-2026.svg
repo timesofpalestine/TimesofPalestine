@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="The Strait of Hormuz: the emerging two-route arrangement — in through an Iranian-controlled lane, out through an Omani one">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <rect x="0" y="0" width="1600" height="6" fill="#8a1f2d"/>
+  <text x="800" y="88" text-anchor="middle" fill="#c7a86b" font-family="Georgia,serif" font-size="30" letter-spacing="6">TIMES OF PALESTINE · POLITICS</text>
+  <text x="800" y="156" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="54" font-weight="bold">Reopening the Strait</text>
+  <text x="800" y="212" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="40">إعادة فتح المضيق</text>
+
+  <!-- stylized strait: Iranian coast above, Musandam below, two lanes -->
+  <g transform="translate(240,300)">
+    <rect x="0" y="0" width="1120" height="400" rx="6" fill="#17181b" stroke="#2a2b2f" stroke-width="2"/>
+    <!-- coasts -->
+    <path d="M0 90 Q 280 30 560 80 Q 840 130 1120 70 L 1120 0 L 0 0 Z" fill="#22231f"/>
+    <path d="M0 330 Q 300 380 620 320 Q 900 270 1120 340 L 1120 400 L 0 400 Z" fill="#22231f"/>
+    <text x="70" y="56" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="24">إيران · Iran</text>
+    <text x="880" y="378" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="24">عُمان · Oman</text>
+    <!-- inbound lane (Iranian-controlled) -->
+    <path d="M60 160 Q 560 120 1060 165" fill="none" stroke="#8a1f2d" stroke-width="8" stroke-dasharray="26 16"/>
+    <path d="M1060 165 l -30 -16 l 6 20 l -20 10 Z" fill="#8a1f2d"/>
+    <text x="560" y="120" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="24">دخول عبر ممرّ تديره إيران · In: Iranian-run lane</text>
+    <!-- outbound lane (Omani-controlled) -->
+    <path d="M1060 250 Q 560 300 60 255" fill="none" stroke="#286344" stroke-width="8" stroke-dasharray="26 16"/>
+    <path d="M60 255 l 30 -14 l -6 20 l 20 8 Z" fill="#286344"/>
+    <text x="560" y="345" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="24">خروج عبر ممرّ تديره عُمان · Out: Omani-run lane</text>
+  </g>
+
+  <text x="800" y="812" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="22">الترتيب الانتقالي كما أوردته «أكسيوس» · The interim arrangement as reported by Axios, 5 August 2026</text>
+  <rect x="0" y="894" width="1600" height="6" fill="#286344"/>
+</svg>
