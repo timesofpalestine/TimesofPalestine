@@ -1338,3 +1338,28 @@ class OutbreakWatchTests(unittest.TestCase):
         a = outbreak_watch.watch_events(self._items())
         b = outbreak_watch.watch_events(self._items() + self._items())
         self.assertEqual([e["id"] for e in a], [e["id"] for e in b])
+
+
+class AdScreenTests(unittest.TestCase):
+    """Advertising is not news: promo items drop before categorization
+    (owner takedown 2026-08-05 — a TCN paid life-insurance segment with an
+    Israel clickbait headline published as a brief)."""
+
+    def test_paid_partnership_item_is_flagged(self):
+        self.assertTrue(build.AD_RX.search(
+            "Israel Supported This. Here's Why "
+            "paid partnership advertisement for Ethos life insurance — "
+            "up to $3 million in coverage in ten minutes"))
+
+    def test_promo_code_and_arabic_markers_flagged(self):
+        self.assertTrue(build.AD_RX.search("Subscribe with promo code TUCKER for 20% off"))
+        self.assertTrue(build.AD_RX.search("بالشراكة مع الراعي — شراكة مدفوعة مع كود خصم خاص"))
+
+    def test_reporting_about_ads_still_publishes(self):
+        for text in (
+            "AIPAC's ad spending more than doubled to $67.2M in Democratic primaries",
+            "A bill sponsored by Senator Sanders would condition military aid to Israel",
+            "Israeli ministry buys sponsored ads targeting European voters, report finds",
+            "Gaza health coverage collapses as hospitals lose insurance reimbursements",
+        ):
+            self.assertFalse(build.AD_RX.search(text), text)
