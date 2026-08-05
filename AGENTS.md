@@ -401,7 +401,13 @@ it to Telegram. No human machine involved. The contract:
    optional `maxAgeHours:`.
    **Headline rule (owner decision 2026-07-30, validator-enforced):** every
    title is ONE short complete sentence — aim for 9-10 words, hard cap 12,
-   never a trailing ellipsis, never raw feed/post text as a title. The
+   never a trailing ellipsis, never raw feed/post text as a title.
+   **Titles carry the complete idea (owner order 2026-08-05):** a headline
+   must leave no essential question hanging — "X accused Y" is not a title
+   until it says accused OF WHAT; "court rules on Z" is not a title until it
+   says ruled WHICH WAY. The key predicate and object belong in the title,
+   in both languages ("Lebanon arrests envoy who accused Abbas's son of
+   turning security on him", never "…who accused Abbas's son"). The
    briefs desk composes its own short headline for every wire story.
    **NO PASSIVE TITLES — EVER (owner decision 2026-07-30,
    validator-enforced, both languages):** every title is active voice and
