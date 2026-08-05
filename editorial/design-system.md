@@ -122,8 +122,20 @@ load-bearing statistic — one or two per story, never as decoration.
   **On phones (≤740px)** the same bar wraps to tap-height rows (~44px)
   and panels become full-width sheets under the bar (`.nav-group` loses
   its anchor so the sticky nav positions them); the masthead slims.
+  **Quick search** (`.nav-search`, evaluation pass 2026-08-05): the SEARCH
+  utility toggles a full-width query bar that slides down from the sticky
+  band — a plain GET form to the search page (`?q=` prefills and runs the
+  client-side search there), red top rule, dark input, red submit. The
+  toggle carries `aria-expanded`/`aria-controls`; Escape and outside
+  clicks close it (shared with the group dropdowns); without JS the link
+  still navigates to the search page. Opening search closes open groups
+  and vice versa.
+  **Tap targets (a11y):** on touch widths every utility control (theme,
+  Aa, ticker pause, language pill) reaches the house ~44px tap height —
+  a new chrome control must meet the same floor.
 - **Card** (`.card`, `.rowcard`, `.fr-card`): image on top (16:9 in
-  standard story cards, 16/6 default in franchise cards), then kicker →
+  standard story cards AND rowcard side art — aligned 2026-08-05 so mixed
+  grids sit on one ratio; 16/6 default in franchise cards), then kicker →
   serif title → optional CTA. The card kicker is the SECTION tag
   (`card_kicker`), not a source chip — rewritten wire is our copy, so the
   masthead name repeated on every card said nothing; the story page's meta
@@ -131,6 +143,8 @@ load-bearing statistic — one or two per story, never as decoration.
   are a single relative time (`8m ago` / «قبل ٨ دقائق»), with the full
   minute-level stamp in the `title` tooltip and `datetime` attr — story
   pages carry complete published/updated stamps (design pass 2026-08-06).
+  Timestamp/meta micro-text keeps a ≥.7rem floor (legibility pass
+  2026-08-05) — don't shrink card metadata below it.
   Franchise cards are dark (`--black`, gold accents); news cards are light.
 - **Section head** (`.sec-head`): serif 900 title with red underline accent
   and a "View all →" link. Sections alternate light; research/investigations
