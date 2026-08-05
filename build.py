@@ -35,8 +35,8 @@ from editorial import (
 from publishing import (
     BuildHealth, PublishingError, canonicalize_url, is_http_url, is_public_http_url,
     load_editorial_json, load_media_manifest, media_rights_for, parse_timestamp,
-    safe_urlopen, story_file_name, story_url_path, utc_iso, validate_corrections,
-    validate_feed_config, validate_story,
+    safe_urlopen, story_file_name, story_short_path, story_url_path, utc_iso,
+    validate_corrections, validate_feed_config, validate_story,
 )
 
 ROOT = Path(__file__).parent
@@ -2801,6 +2801,8 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 .share span{font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;align-self:center}
 .share a{border:1px solid var(--line-dark);padding:.35rem .8rem;border-radius:var(--r);font-size:.8rem;font-weight:700}
 .share a:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.share .copybtn{border:1px solid var(--line-dark);background:transparent;color:inherit;font-family:inherit;cursor:pointer;padding:.35rem .8rem;border-radius:var(--r);font-size:.8rem;font-weight:700}
+.share .copybtn:hover{background:var(--red);color:#fff;border-color:var(--red)}
 /* Floating share rail: travels with the reader in the story gutter on wide
    desktops; the inline row above stays as the universal fallback. */
 .share-rail{display:none}
@@ -3720,7 +3722,17 @@ def render_story(it, lang, related, rail, built_at):
     related_primary = [r for r in related if r is not it and r["cat"] == it["cat"]]
     related_secondary = [r for r in related if r is not it and r["cat"] != it["cat"]]
     related_cards = "".join(card(r, lang, "") for r in (related_primary + related_secondary)[:8])
-    page_url = story_url(it, lang); _q = __import__("urllib.parse", fromlist=["quote"]).quote; share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a></div>'); share_rail = ('<nav class="share-rail" aria-label="' + ("شارك الخبر" if lang == "ar" else "Share this story") + '"><a href="https://twitter.com/intent/tweet?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="X">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(page_url) + '" target="_blank" rel="noopener" title="Facebook">f</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + page_url) + '" target="_blank" rel="noopener" title="WhatsApp">Wa</a><a href="https://t.me/share/url?url=' + _q(page_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="Telegram">Tg</a></nav>')
+    page_url = story_url(it, lang)
+    # What readers copy and send is the SHORT link (owner call 2026-08-05):
+    # an Arabic slug percent-encodes to hundreds of characters, while the
+    # bare-pid stub URL stays tweet-length and forwards to this canonical.
+    share_url = BASE_URL + story_short_path(it["pid"], lang)
+    _q = __import__("urllib.parse", fromlist=["quote"]).quote
+    copy_btn = ('<button class="copybtn" data-copied="' + ("تم النسخ ✓" if lang == "ar" else "Copied ✓")
+                + '" onclick="var b=this;navigator.clipboard.writeText(b.dataset.url).then(function(){var t=b.textContent;b.textContent=b.dataset.copied;setTimeout(function(){b.textContent=t},1600)})" data-url="'
+                + share_url + '">' + ("انسخ الرابط" if lang == "ar" else "Copy link") + "</button>")
+    share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(share_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + share_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a>' + copy_btn + '</div>')
+    share_rail = ('<nav class="share-rail" aria-label="' + ("شارك الخبر" if lang == "ar" else "Share this story") + '"><a href="https://twitter.com/intent/tweet?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="X">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(share_url) + '" target="_blank" rel="noopener" title="Facebook">f</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + share_url) + '" target="_blank" rel="noopener" title="WhatsApp">Wa</a><a href="https://t.me/share/url?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="Telegram">Tg</a></nav>')
     desc = esc(summary_text(
         (it.get("brief") or it["dek"]).replace(chr(10), " "))[:155])
     og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
@@ -3859,14 +3871,28 @@ def render_story(it, lang, related, rail, built_at):
 </body>
 </html>"""
 def story_redirect_stub(it, lang):
-    """Tiny page at the legacy bare-pid URL forwarding to the slugged page.
-    Slugs follow the headline, so a shared or Telegram-delivered link from any
-    earlier build lands on the story it pointed to."""
+    """Tiny page at the bare-pid URL forwarding to the slugged canonical.
+    This IS the share link (owner call 2026-08-05 — an Arabic slug
+    percent-encodes to hundreds of characters), so it carries the full
+    OpenGraph set: Telegram, WhatsApp and Facebook build their link previews
+    from THIS page's meta and do not follow the meta refresh."""
     target = story_url(it, lang)
+    desc = esc(summary_text(
+        (it.get("brief") or it["dek"]).replace(chr(10), " "))[:155])
+    og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
+    og_image = f'<meta property="og:image" content="{esc(og_img_url)}">' if it["image"] else ""
     return (f'<!DOCTYPE html><html lang="{lang}"><head><meta charset="utf-8">'
             f'<title>{esc(it["title"])}</title>'
             f'<link rel="canonical" href="{target}">'
             '<meta name="robots" content="noindex">'
+            f'<meta name="description" content="{desc}">'
+            '<meta property="og:type" content="article">'
+            f'<meta property="og:site_name" content="{STR[lang]["site_name"]}">'
+            f'<meta property="og:title" content="{esc(it["title"])}">'
+            f'<meta property="og:description" content="{desc}">'
+            f'<meta property="og:url" content="{BASE_URL}{story_short_path(it["pid"], lang)}">'
+            f'{og_image}'
+            f'<meta name="twitter:card" content="{"summary_large_image" if it["image"] else "summary"}">'
             f'<meta http-equiv="refresh" content="0;url={target}">'
             f'<script>location.replace({json.dumps(target)});</script>'
             f'</head><body><p><a href="{target}">{esc(it["title"])}</a></p></body></html>')
