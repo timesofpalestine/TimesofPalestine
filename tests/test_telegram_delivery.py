@@ -35,6 +35,13 @@ class OutboxTests(unittest.TestCase):
             [part["delivery_key"] for part in outbox[0]["parts"]],
             ["story:en:en1", "story:ar:ar1"],
         )
+        # The channel gets the SHORT bare-pid link (owner call 2026-08-05):
+        # an Arabic slug percent-encodes to hundreds of characters.
+        self.assertEqual(
+            [part["url"] for part in outbox[0]["parts"]],
+            ["https://example.test/en/story/en1.html",
+             "https://example.test/ar/story/ar1.html"],
+        )
 
     def test_stale_story_is_not_queued(self):
         stale = item(

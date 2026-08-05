@@ -311,6 +311,15 @@ def story_url_path(title: str, pid: str, lang: str) -> str:
     return f"/{lang}/story/{quote(story_file_name(title, pid))}"
 
 
+def story_short_path(pid: str, lang: str) -> str:
+    """Bare-pid share path — short, ASCII and permanent. It serves the stub
+    that forwards to the slugged canonical, so it is the link that goes OUT
+    (Telegram, share buttons, webhooks): an Arabic slug percent-encodes to
+    hundreds of characters, while this form stays tweet-length in any script
+    (owner call 2026-08-05)."""
+    return f"/{lang}/story/{pid}.html"
+
+
 def validate_feed_config(feeds: Dict[str, Any]) -> None:
     """Fail on local feed configuration that cannot produce attributed records."""
     if set(feeds) != LANGS:

@@ -12,7 +12,7 @@ from tempfile import NamedTemporaryFile
 
 from publishing import (
     canonicalize_url, is_http_url, is_public_http_url, safe_urlopen,
-    story_url_path, utc_iso,
+    story_short_path, story_url_path, utc_iso,
 )
 
 # Public Telegram channel; posts go out via a bot the founder controls.
@@ -333,7 +333,7 @@ def build_telegram_outbox(langs_items, base_url, now=None):
                 "lang": it["lang"],
                 "pid": it["pid"],
                 "title": it["title"],
-                "url": f"{base_url}{story_url_path(it['title'], it['pid'], it['lang'])}",
+                "url": f"{base_url}{story_short_path(it['pid'], it['lang'])}",
                 "revision": revision,
             })
     outbox = list(groups.values())
@@ -460,7 +460,7 @@ def post_webhook(dist, langs_items, base_url):
     ][:20]
     posted = 0
     for item in pending:
-        page_url = f"{base_url}{story_url_path(item['title'], item['pid'], item['lang'])}"
+        page_url = f"{base_url}{story_short_path(item['pid'], item['lang'])}"
         revision = delivery_revision(item)
         key = f"top:{item['lang']}:{item['pid']}:{revision}"
         payload = json.dumps({
