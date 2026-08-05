@@ -2346,10 +2346,14 @@ def full_stamp(date, lang):
 
 
 def time_tag(date, lang, cls="t", fresh=False):
+    """Card timestamp: one relative time only (design pass 2026-08-06 —
+    '8m ago · 06/08 · 01:18' was three clocks saying one thing). The full
+    minute-level stamp stays honest in the title tooltip and datetime attr;
+    story pages carry the complete published/updated stamps."""
     prefix = new_mark({"date": date}, lang) if fresh else ""
     return (f'<time class="{cls}" datetime="{utc_iso(date)}" '
             f'title="{esc(full_stamp(date, lang))}">{prefix}'
-            f'{time_ago(date, lang)} · {compact_stamp(date, lang)}</time>')
+            f'{time_ago(date, lang)}</time>')
 
 
 def story_count_label(n, lang):
@@ -2640,20 +2644,20 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .sec-meta{font-size:.74rem;font-weight:700;color:var(--muted);white-space:nowrap}
 [lang=ar] .sec-meta{font-size:.82rem}
 /* ── card grid ── */
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.4rem}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.65rem}
 .grid.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .card{background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);border:1px solid var(--line);transition:box-shadow var(--tr),transform var(--tr)}
 .card:hover{box-shadow:var(--sh-h);transform:translateY(-2px)}
 .card>a:first-child{display:block;overflow:hidden}
-.card img{aspect-ratio:16/10;object-fit:cover;object-position:50% 22%;width:100%;background:#e8e6df;transition:transform .45s ease}
+.card img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;background:#e8e6df;transition:transform .45s ease}
 /* Portrait wire images (tagged onload): cards keep a face-friendly upper
    crop; the big 16/9 surfaces letterbox the frame whole — no crop can fit
    a face into the band a wide slot cuts from a tall photo. */
 .card img.portrait,.rowcard img.portrait,.sub-thumb img.portrait,.fr-card img.portrait{object-position:50% 15%}
 .hero-imgwrap>a>img.portrait,.story img.lede.portrait,.hero-imgwrap>a>img.boxy,.story img.lede.boxy{object-fit:contain;background:#101013}
 .card:hover img{transform:scale(1.04)}
-.card .ph{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
+.card .ph{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
 .card .ph svg{width:44px;height:44px;opacity:.9}
 .card-body{padding:.75rem .9rem .95rem}
 .card .chip{font-size:.62rem;font-weight:800;color:var(--green-deep);text-transform:uppercase;letter-spacing:.07em;display:block}
@@ -2725,7 +2729,7 @@ section.specialband{background:var(--black);color:#fff;margin-block:1.2rem;borde
 nav.sections a.special{color:#c7a86b;border-color:rgba(199,168,107,.35)}
 section.tipband{background:var(--black);color:#fff;margin-block:1.2rem;border-block:4px solid var(--green);position:relative;overflow:hidden}
 section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-end:-60px;width:280px;background:linear-gradient(120deg,transparent 0 40%,rgba(0,122,61,.35) 40% 55%,rgba(206,17,38,.30) 55% 70%,transparent 70%);pointer-events:none}
-.tipband .wrap{display:flex;align-items:center;gap:2rem;padding-block:1.8rem;flex-wrap:wrap;position:relative;z-index:1}
+.tipband .wrap{display:flex;align-items:center;gap:1.8rem;padding-block:1.5rem;flex-wrap:wrap;position:relative;z-index:1}
 .tipband .lock{flex-shrink:0}
 .tipband .txt{flex:1;min-width:260px}
 .tipband .kick{color:#3fd07c;font-size:.68rem;font-weight:800;letter-spacing:.22em;margin-bottom:.35rem}
@@ -2736,12 +2740,11 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .tipband .cta{flex-shrink:0;text-align:center}
 .tipband .btn{display:inline-block;background:var(--green);color:#fff;font-weight:800;font-size:.92rem;padding:.85rem 1.6rem;border-radius:var(--r);border:2px solid #3fd07c;transition:var(--tr)}
 .tipband .btn:hover{background:#3fd07c;color:var(--black)}
-.tipband .tgbtn{display:inline-block;margin-top:.7rem;border:1px solid #3a3a42;color:#cfe9ff;font-weight:700;font-size:.82rem;padding:.5rem 1rem;border-radius:var(--r)}.tipband .tgbtn:hover{background:#229ED9;border-color:#229ED9;color:#fff}.tipband .micro{display:block;margin-top:.55rem;font-size:.72rem;color:#8f8f99;font-style:italic}
+.tipband .alt{margin-top:.65rem;font-size:.76rem;color:#9a9aa4;line-height:1.55}.tipband .alt a{color:#cfe9ff;font-weight:700}.tipband .alt a:hover{color:#fff}.tipband .micro{display:block;margin-top:.55rem;font-size:.72rem;color:#8f8f99}
 [lang=ar] .tipband .micro{font-style:normal}
-.tipband .qrbox{background:#fff;padding:.55rem .55rem .45rem;border-radius:8px;display:inline-block;margin-top:.8rem}
-.tipband .qrbox img{width:104px;height:104px;display:block;image-rendering:pixelated}
+.tipband .qrbox{background:#fff;padding:.45rem .45rem .35rem;border-radius:8px;display:inline-block;margin-top:.7rem}
+.tipband .qrbox img{width:84px;height:84px;display:block;image-rendering:pixelated}
 .tipband .qrbox span{display:block;font-size:.7rem;font-weight:800;color:#111;margin-top:.25rem;text-align:center;direction:ltr}
-.tipband .scanhint{display:block;margin-top:.4rem;font-size:.68rem;color:#8f8f99}
 .tipband .safety{flex-basis:100%;font-size:.7rem;color:#77777f;border-top:1px solid #26262c;padding-top:.7rem}
 /* ── story page ── */
 .story{max-width:820px;margin-inline:auto;padding:2rem 20px 1rem}
@@ -2881,7 +2884,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 # the reader forced light, AND whenever the reader forced dark — the theme
 # toggle stores its choice as html[data-theme] (owner request 2026-08-03).
 _DARK_RULES = """
-:root{--paper:#101013;--card:#16161a;--ink:#e9e9ef;--muted:#a0a0aa;--line:#26262c;--line-dark:#3a3a42}
+:root{--paper:#121417;--card:#1a1d22;--ink:#e8eaed;--muted:#a3a8b2;--line:#2a2e35;--line-dark:#3f454e;--red:#d43049}
 .masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.card h3,.rowcard h3,.sub-body h3,.research-feat h3,.op-card h3{color:var(--ink)}
 .hero-overlay h2,.hero-overlay h2 a{color:#fff}
 .story .summary{color:#d6d6de}
@@ -2986,8 +2989,10 @@ function tick(){var now=Date.now();
   var d=Date.parse(t.getAttribute("datetime"));if(!d)return;
   var m=Math.max(1,Math.round((now-d)/6e4));
   var n=t.lastChild;
-  if(n&&n.nodeType===3){var v=n.nodeValue,i=v.indexOf("\\u00b7");
-   if(i>=0)n.nodeValue=rel(m)+" "+v.slice(i)}
+  if(n&&n.nodeType===3){
+   if(t.classList.contains("t")){n.nodeValue=rel(m)}
+   else{var v=n.nodeValue,i=v.indexOf("\\u00b7");
+    if(i>=0)n.nodeValue=rel(m)+" "+v.slice(i)}}
   if(m>90){var nm=t.querySelector(".newmark");if(nm)nm.remove();
    var li=t.closest("li.fresh");if(li)li.classList.remove("fresh")}})}
 tick();setInterval(tick,30000)})();
@@ -3070,6 +3075,14 @@ def display_source(it, lang):
     return it["source"]
 
 
+def card_kicker(it, lang):
+    """Card kicker: the section tag (design pass 2026-08-06). Rewritten wire
+    is our copy, so a masthead chip repeated on every card said nothing —
+    the section name orients the reader instead. The story page's meta line
+    keeps display_source per the wire-attribution protocol."""
+    return STR[lang]["sections"].get(it["cat"], STR[lang]["sections"]["news"])
+
+
 def lede_fallback_attrs(it):
     """Remote ledes can die after publish — hotlink walls, deleted uploads,
     CDN churn. no-referrer defeats referer-based blocking; onerror swaps a
@@ -3109,7 +3122,7 @@ def card(it, lang, pfx):
     # featured report, and the story pages — mixed previews in a grid look broken.
     return (f'<article class="card">{card_media(it, pfx)}'
             f'<div class="card-body">'
-            f'<span class="chip">{esc(display_source(it, lang))}</span>'
+            f'<span class="chip">{esc(card_kicker(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'{time_tag(it["date"], lang, "t", fresh=True)}'
             f'</div></article>')
@@ -3122,7 +3135,7 @@ def rowcard(it, lang, pfx, solo=False):
            if solo and it.get("dek") else "")
     cls = "rowcard solo" if solo else "rowcard"
     return (f'<article class="{cls}">{card_media(it, pfx)}'
-            f'<div><span class="chip">{esc(display_source(it, lang))}</span>'
+            f'<div><span class="chip">{esc(card_kicker(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>{dek}'
             f'{time_tag(it["date"], lang, "t", fresh=True)}</div></article>')
 
@@ -3138,7 +3151,7 @@ def sub_item(it, lang, pfx):
     return (f'<article class="sub-item">'
             f'{thumb}'
             f'<div class="sub-body">'
-            f'<span class="chip">{esc(display_source(it, lang))}</span>'
+            f'<span class="chip">{esc(card_kicker(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'{time_tag(it["date"], lang, "t", fresh=True)}'
             f'</div></article>')
@@ -3156,7 +3169,7 @@ def latest_item(it, lang, pfx):
     return (f'<li{cls}><div class="lt-body">'
             f'{time_tag(it["date"], lang, "t", fresh=True)}{mark}'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<span class="s">{esc(display_source(it, lang))}</span></div>'
+            f'<span class="s">{esc(card_kicker(it, lang))}</span></div>'
             f'{thumb}</li>')
 
 # ---------- page ----------
@@ -3523,12 +3536,10 @@ def render_page(lang, items, built_at):
     gaza_panel = __import__("gaza_panel").panel(lang); tips_band = (
         f'<section class="tipband" id="tips"><div class="wrap">{LOCK_SVG}'
         f'<div class="txt"><p class="kick">{t["tips_kicker"]}</p>'
-        f'<h2>{t["tips_title"]}</h2><p class="sub">{t["tips_sub"]}</p></div>'
+        f'<h2>{t["tips_title"]}</h2><p class="sub">{t["tips_sub"]}</p>'
+        f'<p class="alt">{t["tips_tg"]} <a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{TELEGRAM_BOT_NAME}</a> — {t["tips_tg_note"]}</p></div>'
         f'<div class="cta"><a class="btn" href="{SIGNAL_URL}" target="_blank" rel="noopener">{t["tips_cta"]}</a>'
         f'<span class="micro">{t["tips_micro"]}</span>'
-        f'<a class="tgbtn" href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t["tips_tg"]} {"←" if lang == "ar" else "→"} {TELEGRAM_BOT_NAME}</a>'
-        f'<span class="micro">{t["tips_tg_note"]}</span>'
-        f'<span class="scanhint">{t["tips_scan"]}</span>'
         f'<div class="qrbox"><img src="../signal-qr.png" alt="Signal QR — {SIGNAL_USERNAME}">'
         f'<span>{SIGNAL_USERNAME}</span></div></div>'
         f'<p class="safety">{t["tips_safety"]}</p>'
