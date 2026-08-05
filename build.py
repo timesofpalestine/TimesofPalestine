@@ -2096,6 +2096,7 @@ STR = {
         "masthead_top": "TIMES", "masthead_bottom": "OF PALESTINE",
         "kicker": "Every outlet · Every story · No censorship",
         "view_all": "View all →", "search_nav": "🔍 Search",
+        "search_go": "Search",
         "search_title": "Search", "search_prompt": "Search the Times of Palestine archive…",
         "search_none": "No results", "follow_tg": "Telegram channel →",
         "breaking": "BREAKING", "latest": "The Latest",
@@ -2164,6 +2165,7 @@ STR = {
         "masthead_top": "تايمز أوف", "masthead_bottom": "فلسطين",
         "kicker": "كل المصادر · كل الأخبار · بلا رقابة",
         "view_all": "كل التغطية ←", "search_nav": "🔍 بحث",
+        "search_go": "ابحث",
         "search_title": "بحث", "search_prompt": "ابحث في أرشيف تايمز أوف فلسطين…",
         "search_none": "لا نتائج", "follow_tg": "قناتنا على تيليغرام ←",
         "breaking": "عاجل", "latest": "آخر الأخبار",
@@ -2497,6 +2499,18 @@ nav.sections a.special{color:#c7a86b}
 nav.sections .nav-util{display:flex;gap:.15rem;margin-inline-start:auto}
 nav.sections a.util{color:#d8d8e2}
 nav.sections a.util:hover{border-block-end-color:#3a3a42}
+/* Quick search (evaluation 2026-08-05): the SEARCH utility slides a query
+   bar down from the sticky band; the form submits to the search page, which
+   reads ?q=. No-JS fallback: the link itself still goes to the search page. */
+nav.sections .nav-search{background:#0b0b0c;border-top:2px solid var(--red);box-shadow:0 10px 24px rgba(0,0,0,.45)}
+nav.sections .nav-search[hidden]{display:none}
+nav.sections .nav-search form{display:flex;gap:.55rem;max-width:var(--max);margin-inline:auto;padding:.65rem clamp(16px,2.5vw,26px)}
+nav.sections .nav-search input{flex:1;min-width:0;font-size:1rem;padding:.55rem .8rem;border:1px solid #3a3a42;border-radius:var(--r);background:#141419;color:#f2eee8}
+nav.sections .nav-search input::placeholder{color:#8f8f99}
+nav.sections .nav-search input:focus{outline:2px solid var(--red);outline-offset:1px}
+nav.sections .nav-search button{background:var(--red);color:#fff;border:0;border-radius:var(--r);font:800 .8rem/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:.55rem 1.1rem;cursor:pointer;min-width:44px}
+[lang=ar] nav.sections .nav-search button{letter-spacing:0;font-size:.9rem}
+nav.sections .nav-search button:hover{filter:brightness(1.12)}
 /* Phones: same bar, ~44px tap targets; dropdowns become full-width panels
    under the bar (group loses its anchor so the sticky nav positions them). */
 @media(max-width:740px){
@@ -2506,6 +2520,10 @@ nav.sections a.util:hover{border-block-end-color:#3a3a42}
   nav.sections .nav-drop{inset-inline:0;top:100%;min-width:0;border-inline:0}
   .masthead{padding:.85rem 0 .65rem}
   .masthead .wrap::after{margin-top:.5rem}
+  /* Tap targets (a11y, evaluation 2026-08-05): utility controls reach the
+     house ~44px tap height on touch widths, matching the nav rows above. */
+  .themetoggle,.litetoggle,.tick-pause{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}
+  .topbar .lang{display:inline-flex;align-items:center;min-height:38px;padding-inline:.9rem}
 }
 /* ── hero ── */
 .hero-zone{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:1.55rem;padding-block:1.5rem}
@@ -2546,7 +2564,7 @@ nav.sections a.util:hover{border-block-end-color:#3a3a42}
 .sub-body h3{font-family:var(--serif);font-weight:700;font-size:.93rem;line-height:1.28;margin-top:.18rem}
 [lang=ar] .sub-body h3{line-height:1.6}
 .sub-body h3 a:hover{color:var(--red)}
-.sub-body .t{font-size:.65rem;color:var(--muted);font-weight:600;margin-top:.2rem;display:block}
+.sub-body .t{font-size:.7rem;color:var(--muted);font-weight:600;margin-top:.2rem;display:block}
 [lang=ar] .sub-body .t{font-size:.72rem}
 /* ── latest rail ── */
 .latest{background:var(--card);border:1px solid var(--line);box-shadow:var(--sh);padding:1rem .95rem;height:fit-content;position:sticky;top:58px}
@@ -2567,12 +2585,12 @@ nav.sections a.util:hover{border-block-end-color:#3a3a42}
 .latest .lt-thumb img{width:52px;height:52px;object-fit:cover;object-position:50% 25%;background:#e8e6df;border-radius:3px;transition:opacity var(--tr)}
 .latest li:hover .lt-thumb img{opacity:.82}
 @keyframes railin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.latest .t{color:var(--red);font-weight:800;font-size:.67rem;letter-spacing:.04em;display:inline-block;margin-bottom:.18rem}
+.latest .t{color:var(--red);font-weight:800;font-size:.72rem;letter-spacing:.04em;display:inline-block;margin-bottom:.18rem}
 [lang=ar] .latest .t{letter-spacing:0;font-size:.74rem}
 .latest h3{font-size:.9rem;font-weight:600;line-height:1.35}
 [lang=ar] .latest h3{line-height:1.65;font-size:.96rem}
 .latest h3 a:hover{color:var(--red)}
-.latest .s{font-size:.66rem;color:var(--muted);font-weight:600;text-transform:uppercase;margin-top:.18rem;display:block}
+.latest .s{font-size:.7rem;color:var(--muted);font-weight:600;text-transform:uppercase;margin-top:.18rem;display:block}
 [lang=ar] .latest .s{text-transform:none;font-size:.72rem}
 /* ── section headers ── */
 section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
@@ -2665,7 +2683,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .card h3{font-family:var(--serif);font-weight:700;font-size:1.02rem;line-height:1.36;margin-top:.3rem}
 [lang=ar] .card h3{line-height:1.6}
 .card h3 a:hover{color:var(--red)}
-.card .t{font-size:.67rem;color:var(--muted);font-weight:600;margin-top:.38rem;display:block}
+.card .t{font-size:.72rem;color:var(--muted);font-weight:600;margin-top:.38rem;display:block}
 [lang=ar] .card .t{font-size:.72rem}
 /* sparse sections (<4 stories): full-width horizontal rows */
 .rowlist{display:flex;flex-direction:column}
@@ -2673,7 +2691,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .rowcard:hover{transform:translateY(-2px)}
 .rowcard:last-child{border-bottom:none}
 .rowcard>a:first-child,.rowcard>.ph{flex-shrink:0}
-.rowcard img,.rowcard .ph{width:clamp(152px,23vw,220px);aspect-ratio:16/10;object-fit:cover;object-position:50% 22%;background:#e8e6df;margin:0;display:flex;align-items:center;justify-content:center;border-radius:2px;transition:opacity var(--tr)}
+.rowcard img,.rowcard .ph{width:clamp(152px,23vw,220px);aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;background:#e8e6df;margin:0;display:flex;align-items:center;justify-content:center;border-radius:2px;transition:opacity var(--tr)}
 .rowcard:hover img{opacity:.87}
 .rowcard .ph{background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
 .rowcard .ph svg{width:40px;height:40px;opacity:.9}
@@ -2682,7 +2700,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .rowcard h3 a:hover{color:var(--red)}
 .rowcard .chip{font-size:.63rem;font-weight:800;color:var(--green-deep);text-transform:uppercase;letter-spacing:.07em;display:block}
 [lang=ar] .rowcard .chip{letter-spacing:0;font-size:.72rem}
-.rowcard .t{font-size:.67rem;color:var(--muted);font-weight:600;margin-top:.32rem;display:block}
+.rowcard .t{font-size:.72rem;color:var(--muted);font-weight:600;margin-top:.32rem;display:block}
 /* solo band: one story carries the section — bigger art, headline and dek */
 .rowcard.solo img,.rowcard.solo .ph{width:clamp(220px,30vw,320px)}
 .rowcard.solo h3{font-size:1.4rem;line-height:1.3;max-width:34em}
@@ -3583,8 +3601,13 @@ def render_page(lang, items, built_at):
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
 
-<nav class="sections" aria-label="Primary"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_groups}{nav_specials_top}<span class="nav-util"><a class="util" href="search.html">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div></nav>
-<script>document.addEventListener("click",function(e){{if(e.target.closest("nav.sections .nav-drop a")||!e.target.closest("nav.sections"))document.querySelectorAll("nav.sections .nav-group.open").forEach(function(x){{x.classList.remove("open");x.querySelector("button").setAttribute("aria-expanded","false")}})}});document.addEventListener("keydown",function(e){{if(e.key==="Escape")document.querySelectorAll("nav.sections .nav-group.open").forEach(function(x){{x.classList.remove("open");x.querySelector("button").setAttribute("aria-expanded","false")}})}})</script>
+<nav class="sections" aria-label="Primary"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_groups}{nav_specials_top}<span class="nav-util"><a class="util" id="searchtoggle" href="search.html" aria-expanded="false" aria-controls="navsearch">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div><div class="nav-search" id="navsearch" hidden><form action="search.html" method="get" role="search"><input name="q" type="search" placeholder="{esc(t['search_prompt'])}" aria-label="{esc(t['search_title'])}" autocomplete="off"><button type="submit">{t['search_go']}</button></form></div></nav>
+<script>(function(){{function closeGroups(){{document.querySelectorAll("nav.sections .nav-group.open").forEach(function(x){{x.classList.remove("open");x.querySelector("button").setAttribute("aria-expanded","false")}})}}
+var st=document.getElementById("searchtoggle"),sp=document.getElementById("navsearch");
+function closeSearch(){{if(sp&&!sp.hidden){{sp.hidden=true;st.setAttribute("aria-expanded","false")}}}}
+if(st&&sp)st.addEventListener("click",function(e){{e.preventDefault();var open=!sp.hidden;closeGroups();if(open)closeSearch();else{{sp.hidden=false;st.setAttribute("aria-expanded","true");sp.querySelector("input").focus()}}}});
+document.addEventListener("click",function(e){{if(e.target.closest("nav.sections .nav-drop a")||!e.target.closest("nav.sections")){{closeGroups();closeSearch()}}}});
+document.addEventListener("keydown",function(e){{if(e.key==="Escape"){{closeGroups();if(sp&&!sp.hidden){{closeSearch();st.focus()}}}}}})}})()</script>
 
 <main id="top">
   <div class="wrap hero-zone">
@@ -4049,7 +4072,9 @@ function go(){var v=q.value.trim().toLowerCase();if(v.length<2){res.textContent=
     var hits=ix.filter(function(e){var hay=(e.t+" "+e.d+" "+e.c).toLowerCase();
       return terms.every(function(w){return hay.indexOf(w)!==-1});}).slice(0,40);
     render(hits,q.dataset.none);});}
-q.addEventListener("input",go);})();
+q.addEventListener("input",go);
+var init=new URLSearchParams(location.search).get("q");
+if(init){q.value=init;go();}})();
 """
 
 
