@@ -87,6 +87,17 @@ def near_identical(title_a, title_b):
     return difflib.SequenceMatcher(None, a, b).ratio() >= 0.9
 
 
+def _place_or_count_veto(toks_a, toks_b):
+    places_a, places_b = toks_a & _EVENT_PLACES, toks_b & _EVENT_PLACES
+    if places_a and places_b and not (places_a & places_b):
+        return True  # different places → different events
+    nums_a = {t for t in toks_a if t.isdigit()}
+    nums_b = {t for t in toks_b if t.isdigit()}
+    if nums_a and nums_b and not (nums_a & nums_b):
+        return True  # different counts → different events
+    return False
+
+
 def same_event(toks_a, toks_b):
     """True when two token sets plausibly describe the same incident."""
     inter = toks_a & toks_b
@@ -94,11 +105,22 @@ def same_event(toks_a, toks_b):
         return False
     if len(inter) / len(toks_a | toks_b) < 0.42:
         return False
-    places_a, places_b = toks_a & _EVENT_PLACES, toks_b & _EVENT_PLACES
-    if places_a and places_b and not (places_a & places_b):
-        return False  # different places → different events
-    nums_a = {t for t in toks_a if t.isdigit()}
-    nums_b = {t for t in toks_b if t.isdigit()}
-    if nums_a and nums_b and not (nums_a & nums_b):
-        return False  # different counts → different events
-    return True
+    return not _place_or_count_veto(toks_a, toks_b)
+
+
+def same_story(title_toks, extended_toks):
+    """True when one item's headline sits substantially inside another item's
+    headline-plus-dek token set. This is the cross-desk case Jaccard misses:
+    an original and a wire brief describe one event under unlike headlines
+    ("Lebanon arrests envoy who accused Abbas's son…" vs "Lebanon detains
+    ex-ambassador Dabbour for extradition") — the names each headline omits
+    appear in the other's dek (owner call 2026-08-05, after a wire brief on
+    the Dabbour arrest published beside the original covering it)."""
+    if not title_toks or not extended_toks:
+        return False
+    inter = title_toks & extended_toks
+    if len(inter) < 4:
+        return False
+    if len(inter) / len(title_toks) < 0.6:
+        return False
+    return not _place_or_count_veto(title_toks, extended_toks)

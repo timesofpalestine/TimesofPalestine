@@ -1363,3 +1363,69 @@ class AdScreenTests(unittest.TestCase):
             "Gaza health coverage collapses as hospitals lose insurance reimbursements",
         ):
             self.assertFalse(build.AD_RX.search(text), text)
+
+
+class CrossDeskDedupeTests(unittest.TestCase):
+    """One event, one article — across desks. A wire brief and an original
+    describe the same event under unlike headlines; the names each headline
+    omits appear in the other's dek, and the original survives (owner call
+    2026-08-05, after a wire brief on the Dabbour arrest published beside
+    the original covering it)."""
+
+    @staticmethod
+    def story(title, dek, hours_after=0, n=0, original=False, score=10):
+        record = item()
+        record.update({
+            "title": title, "dek": dek,
+            "link": f"https://example.com/cross-{n}",
+            "pid": f"cross{n:04d}",
+            "date": datetime(2026, 8, 4, 12, tzinfo=timezone.utc)
+            + timedelta(hours=hours_after),
+            "score": score, "corroborating_sources": [],
+        })
+        if original:
+            record.update({"original": True, "source_id": "top-original"})
+        return record
+
+    def test_wire_brief_folds_into_the_original_covering_the_event(self):
+        original = self.story(
+            "Lebanon arrests envoy who accused Abbas's son of turning security on him",
+            "Lebanese authorities arrested Ashraf Dabbour, the Palestinian "
+            "Authority's former ambassador in Beirut, at the city's airport "
+            "on Monday ahead of extradition on embezzlement charges.",
+            original=True, n=1, score=90)
+        brief = self.story(
+            "Lebanon detains former Palestinian ambassador Ashraf Dabbour for extradition",
+            "The former envoy was held at Beirut airport at Ramallah's "
+            "request over embezzlement charges back home.",
+            hours_after=3, n=2)
+        survivors = build.dedupe_events([original, brief])
+        self.assertEqual(len(survivors), 1)
+        self.assertTrue(survivors[0]["original"])
+
+    def test_arabic_wire_brief_folds_into_the_arabic_original(self):
+        original = self.story(
+            "لبنان يوقف السفير الذي اتهم نجل عباس بتسليط الأمن عليه",
+            "أوقفت السلطات اللبنانية أشرف دبّور، سفير السلطة الفلسطينية "
+            "السابق في بيروت، في مطار المدينة تمهيداً لتسليمه على ذمة تهم اختلاس.",
+            original=True, n=3, score=90)
+        brief = self.story(
+            "لبنان يوقف السفير الفلسطيني السابق أشرف دبور تمهيداً لتسليمه بتهم اختلاس",
+            "أوقف القضاء اللبناني السفير السابق في مطار بيروت بطلب من رام الله.",
+            hours_after=5, n=4)
+        survivors = build.dedupe_events([original, brief])
+        self.assertEqual(len(survivors), 1)
+        self.assertTrue(survivors[0]["original"])
+
+    def test_different_stories_about_the_same_person_both_run(self):
+        congress = self.story(
+            "Fatah's eighth congress elevates Barghouti, Faraj and the president's son",
+            "Marwan Barghouti topped the vote from prison and Yasser Abbas "
+            "entered the Central Committee eighth of eighteen.",
+            original=True, n=5, score=90)
+        arrest = self.story(
+            "Lebanon detains former Palestinian ambassador Ashraf Dabbour for extradition",
+            "The former envoy was held at Beirut airport at Ramallah's "
+            "request over embezzlement charges back home.",
+            hours_after=6, n=6)
+        self.assertEqual(len(build.dedupe_events([congress, arrest])), 2)
