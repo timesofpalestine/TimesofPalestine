@@ -69,9 +69,9 @@ ABOUT = {
              "under a binding house charter, supervised by the publisher. The rules "
              "are enforced in the publishing pipeline itself: one incident becomes "
              "one article, incomplete copy never runs, a headline must say who did "
-             "what, and every correction or update is stamped on the story and "
-             "recorded in a public corrections log. Automation sets our pace; the "
-             "charter sets our standards."),
+             "what, and every correction or update is stamped, dated, on the "
+             "story itself. Automation sets our pace; the charter sets our "
+             "standards."),
             ("What we cover",
              "Beyond the day's news we keep standing files. Transparency & "
              "Accountability follows public money and unaccountable power, at "
@@ -113,8 +113,8 @@ ABOUT = {
              "personal attacks. We report the issue, never the individual, and we "
              "credit good-faith work precisely: what is promised, funded, underway, "
              "completed and still needed. When we get something wrong we correct it "
-             "promptly, note the change on the story itself, and record it in our "
-             "public corrections log. To request a correction, contact the newsroom "
+             "promptly and note the change, dated, on the story itself. To "
+             "request a correction, contact the newsroom "
              "on the channel below with the story link and the error."),
             ("Contact the newsroom",
              "Reach us on Signal — encrypted, and anonymous if you choose: "
@@ -155,8 +155,8 @@ ABOUT = {
              "تؤدي أنظمةُ تحرير مبنية خصيصاً جانباً كبيراً من عمل هذه الغرفة، "
              "بإشراف الناشر ووفق ميثاق تحريري ملزم تفرضه منظومة النشر نفسها: "
              "الحادثة الواحدة تقريرٌ واحد، والنص الناقص لا يُنشر، والعنوان "
-             "يسمّي مَن فعل ماذا، وكل تصويب أو تحديث يُثبَّت على المادة ويُقيَّد "
-             "في سجل تصويبات علني. الأتمتة تضبط إيقاعنا، والميثاق يضبط معاييرنا."),
+             "يسمّي مَن فعل ماذا، وكل تصويب أو تحديث يُثبَّت بتاريخه على "
+             "المادة نفسها. الأتمتة تضبط إيقاعنا، والميثاق يضبط معاييرنا."),
             ("ما نغطيه",
              "إلى جانب أخبار اليوم نُمسك ملفات دائمة: «شفافية ومساءلة» يتتبع "
              "المال العام والسلطة التي لا رقيب عليها باللغتين؛ و«حكايتها» يروي "
@@ -192,9 +192,9 @@ ABOUT = {
              "ننقل الخبر بلا رقابة وبلا محاباة، ونحاسب السلطة أينما كانت، وننتقد "
              "بالصحافة المهنية لا بالإساءات الشخصية. نتناول القضية لا الشخص، "
              "ونمنح العمل الجاد حقّه بدقة: ما وُعد به، وما مُوّل، وما يجري، وما "
-             "اكتمل، وما ينتظر. وحين نخطئ نصحح فوراً، ونثبّت التعديل على المادة "
-             "نفسها، ونقيّده في سجل التصويبات العلني. لطلب تصويب، راسل غرفة "
-             "الأخبار عبر القناة أدناه مع رابط المادة وبيان الخطأ."),
+             "اكتمل، وما ينتظر. وحين نخطئ نصحح فوراً ونثبّت التعديل بتاريخه على "
+             "المادة نفسها. لطلب تصويب، راسل غرفة الأخبار عبر القناة أدناه مع "
+             "رابط المادة وبيان الخطأ."),
             ("اتصل بغرفة الأخبار",
              "راسلنا على «سيغنال» — مشفّر، ومجهول الهوية إن اخترت: "
              "@TOP.972 أو عبر الزر أدناه. ويمكنك أيضاً مراسلة بوت غرفة الأخبار على "
@@ -245,90 +245,8 @@ def render_about(lang, built_at):
   <div class="flagline"></div>
   <div class="legal">
     <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span>
-    <a href="corrections.html">{"سجل التصويبات" if lang == "ar" else "Corrections log"}</a>
     <a href="status.html">{"حالة النشر" if lang == "ar" else "Publishing status"}</a>
     <a href="./">{a['back']}</a>
-  </div>
-</div></footer>
-</body>
-</html>"""
-
-
-def render_corrections_log(lang, langs_items, built_at):
-    """Public, dated record of every update and correction the newsroom has
-    made — built from editorial/corrections.json, the same ledger that stamps
-    the notes onto individual story pages. Entries for stories still in the
-    build link to them; older entries keep their date, note and story id."""
-    b = __import__("build")
-    t = b.STR[lang]
-    ledger = json.loads(
-        (b.ROOT / "editorial" / "corrections.json").read_text(encoding="utf-8"))
-    live = {it["pid"]: it
-            for item_lang, items in langs_items for it in items
-            if item_lang == lang}
-    rows = []
-    for pid, entries in ledger.get("stories", {}).items():
-        for entry in entries:
-            note = entry.get(lang, "")
-            if not note:
-                continue
-            rows.append((entry.get("at", ""), entry.get("type", "update"), pid, note))
-    rows.sort(reverse=True)
-    title = "سجل التصويبات والتحديثات" if lang == "ar" else "Corrections & updates log"
-    intro = ("حين نصحح مادة أو نحدّثها نثبّت التعديل على صفحتها ونقيّده هنا، "
-             "بتاريخه، في سجل علني دائم."
-             if lang == "ar" else
-             "When we correct or update a story, the change is noted on the story "
-             "itself and recorded here, dated, in one permanent public log.")
-    empty = ("لا قيود في السجل بعد." if lang == "ar" else "No entries yet.")
-    items_html = []
-    for at, kind, pid, note in rows:
-        kind_label = ("تصويب" if kind == "correction" else "تحديث") if lang == "ar" \
-            else kind.title()
-        it = live.get(pid)
-        story_ref = (
-            f'<a href="{b.BASE_URL}{story_url_path(it["title"], it["pid"], lang)}">'
-            f'{b.esc(it["title"])}</a>' if it else
-            f'<span class="cl-gone">{"مادة خرجت من الأرشيف الحي" if lang == "ar" else "Story no longer in the live archive"}</span>')
-        items_html.append(
-            f'<li><time datetime="{b.esc(at)}">{b.esc(at[:10])}</time> '
-            f'<strong>{kind_label}:</strong> {b.esc(note)}<br>{story_ref}</li>')
-    body = (f'<ol class="corrections-log">{"".join(items_html)}</ol>'
-            if items_html else f'<p class="summary">{empty}</p>')
-    back = "كل الأخبار ←" if lang == "ar" else "← All the news"
-    return f"""<!DOCTYPE html>
-<html lang="{t['lang']}" dir="{t['dir']}">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0b0c"><link rel="manifest" href="/manifest.json">
-<title>{title} — {t['site_name']}</title>
-<meta name="description" content="{intro[:155]}">
-<link rel="canonical" href="{b.BASE_URL}/{lang}/corrections.html">
-<link rel="alternate" hreflang="en" href="{b.BASE_URL}/en/corrections.html">
-<link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/corrections.html">
-<link href="/assets/site.css" rel="stylesheet">
-<style>.corrections-log{{list-style:none;padding:0}}.corrections-log li{{margin:1.1rem 0;line-height:1.6}}.corrections-log time{{font-weight:700}}.cl-gone{{color:var(--muted,#595962)}}</style>
-</head>
-<body>
-<div class="backbar"><a href="./">{back}</a></div>
-<header class="masthead compact"><div class="wrap">
-  <a class="logotype" href="./"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
-</div></header>
-<main>
-  <article class="story">
-    <p class="kick">{t['site_name']}</p>
-    <h1>{title}</h1>
-    <p class="summary">{intro}</p>
-    {body}
-  </article>
-</main>
-<footer><div class="wrap">
-  <div class="flagline"></div>
-  <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span>
-    <a href="about.html">{"من نحن — اتصل بنا" if lang == "ar" else "About & Contact"}</a>
-    <a href="./">{back}</a>
   </div>
 </div></footer>
 </body>
@@ -611,8 +529,6 @@ def write_extras(dist, langs_items, built_at, base_url, health):
         (dist / lang / "about.html").write_text(
             render_about(lang, built_at), encoding="utf-8")
         (dist / lang / "status.html").write_text(render_status(lang), encoding="utf-8")
-        (dist / lang / "corrections.html").write_text(
-            render_corrections_log(lang, langs_items, built_at), encoding="utf-8")
         (dist / lang / "feed.json").write_text(
             json.dumps(render_json_feed(lang, items, base_url), ensure_ascii=False, indent=2),
             encoding="utf-8",
@@ -631,7 +547,7 @@ def write_extras(dist, langs_items, built_at, base_url, health):
     extra_urls = "".join(
         f"<url><loc>{base_url}/{lang}/{page}</loc></url>"
         for lang, _ in langs_items
-        for page in ("about.html", "status.html", "corrections.html"))
+        for page in ("about.html", "status.html"))
     sm.write_text(sm.read_text(encoding="utf-8")
                   .replace("</urlset>", extra_urls + "</urlset>"), encoding="utf-8")
     health.checks["discovery_files"] = "ok"
