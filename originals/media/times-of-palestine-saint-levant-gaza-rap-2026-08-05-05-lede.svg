@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
-<title id="ttl">Saint Levant's Afandi World Tour: forty-plus dates, none in Gaza</title>
-<desc id="dsc">A timeline of the announced Afandi World Tour running from Boston on 12 September to Muscat on 12 December, with stops including Dublin on 29 October and Istanbul on 10 December. Below the line, a dashed box marks Gaza as absent from the itinerary, with no announced date.</desc>
+<title id="ttl">Saint Levant's Afandi World Tour: Gaza's name across four continents</title>
+<desc id="dsc">A timeline of the announced Afandi World Tour running from Boston on 12 September to Muscat on 12 December, with stops including Dublin on 29 October and Istanbul on 10 December. Below the line, a golden box carries the name Gaza — the name the tour carries to every stage, through the album DEIRA named for the family's seafront hotel.</desc>
 
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -20,8 +20,8 @@
 
 <!-- header -->
 <text x="110" y="78" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="5" fill="#c7a86b">AFANDI WORLD TOUR · SAINT LEVANT</text>
-<text x="110" y="152" font-family="'Source Serif 4',Georgia,serif" font-size="62" fill="#f2eee8">Forty dates, none in Gaza</text>
-<text x="110" y="204" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#c7a86b">أربعون موعداً على أربع قارات… ولا موعد في غزة</text>
+<text x="110" y="152" font-family="'Source Serif 4',Georgia,serif" font-size="62" fill="#f2eee8">Gaza's name, on the world's stages</text>
+<text x="110" y="204" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#c7a86b">اسم غزة على مسارح العالم — أربعون حفلاً في أربع قارات</text>
 
 <text x="1520" y="78" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="3" fill="#f2eee8">40+ DATES · 4 CONTINENTS</text>
 <text x="1520" y="112" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">أكثر من ٤٠ حفلاً في أربع قارات</text>
@@ -29,7 +29,7 @@
 
 <line x1="110" y1="240" x2="1520" y2="240" stroke="#3a3b3f" stroke-width="2"/>
 
-<text x="110" y="286" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Announced itinerary also includes Brooklyn · Toronto · Chicago · Los Angeles · San Francisco — no dates given in the report</text>
+<text x="110" y="286" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Announced itinerary also includes Brooklyn · Toronto · Chicago · Los Angeles · San Francisco</text>
 
 <!-- timeline -->
 <line x1="200" y1="430" x2="1440" y2="430" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
@@ -57,22 +57,22 @@
 <circle cx="1440" cy="430" r="13" fill="#286344"/>
 <line x1="1440" y1="443" x2="1440" y2="500" stroke="#3a3b3f" stroke-width="2"/>
 <text x="1440" y="528" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" fill="#f2eee8">MUSCAT</text>
-<text x="1440" y="556" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#59a97d">12 Dec — final date</text>
+<text x="1440" y="556" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#59a97d">12 Dec — home to the Arab world</text>
 
 <text x="140" y="486" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="3" fill="#aaa9a5">SEPTEMBER</text>
 <text x="880" y="486" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="3" fill="#aaa9a5">DECEMBER</text>
 
-<!-- absent stop -->
-<circle cx="700" cy="500" r="13" fill="none" stroke="#c7a86b" stroke-width="3" stroke-dasharray="5 6"/>
-<line x1="700" y1="513" x2="700" y2="596" stroke="#c7a86b" stroke-width="2" stroke-dasharray="6 8"/>
+<!-- the name every stage carries -->
+<circle cx="700" cy="500" r="13" fill="#c7a86b"/>
+<line x1="700" y1="513" x2="700" y2="596" stroke="#c7a86b" stroke-width="2"/>
 
-<rect x="410" y="596" width="580" height="184" rx="10" fill="#161719" stroke="#c7a86b" stroke-width="3" stroke-dasharray="12 9"/>
+<rect x="410" y="596" width="580" height="184" rx="10" fill="#161719" stroke="#c7a86b" stroke-width="3"/>
 <text x="700" y="668" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="58" letter-spacing="6" fill="#f2eee8">GAZA</text>
-<text x="700" y="712" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#c7a86b">غزة — لا موعد في الجدول المعلن</text>
-<text x="700" y="752" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">No Palestinian city appears on the announced itinerary</text>
+<text x="700" y="712" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#c7a86b">غزة — الاسم الذي تحمله كل ليلة من الجولة</text>
+<text x="700" y="752" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">DEIRA — the seafront hotel his father built, kept standing in song</text>
 
 <!-- quote -->
 <line x1="110" y1="812" x2="1520" y2="812" stroke="#3a3b3f" stroke-width="2"/>
-<text x="110" y="852" font-family="'Source Serif 4',Georgia,serif" font-size="26" font-style="italic" fill="#f2eee8">“When we were 7, we went to Jordan, and I haven’t returned to Gaza since.” — Saint Levant, Doha Film Festival</text>
-<text x="1520" y="852" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: Arab News · The Music Universe · Türkiye Today · Daily Sabah</text>
+<text x="110" y="852" font-family="'Source Serif 4',Georgia,serif" font-size="26" font-style="italic" fill="#f2eee8">“My name is Saint Levant and I was born in Jerusalem and raised in Gaza.” — Coachella, 2024</text>
+<text x="1520" y="852" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: Arab News · The Music Universe · Türkiye Today · Middle East Eye</text>
 </svg>
