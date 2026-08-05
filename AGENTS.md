@@ -151,6 +151,26 @@ everything it builds:
 Improving each other's areas is welcome — via PR, with the existing layer kept
 working.
 
+## Yasser Abbas file (owner directive 2026-08-05)
+
+Standing beat: track Yasser Abbas — the president's son — across every
+financial and political file he enters: the mandate over PLO property sales
+in Lebanon (and the Dabbour extradition case that grew from it), the West
+Bank fuel sector (the al-Natsheh detention, the reported-but-unconfirmed
+centralised fuel company), his Fatah Central Committee role, and any new
+mandate, company or asset file that surfaces. Significant developments are
+same-day coverage in both languages. Discipline is mandatory and
+non-negotiable: this is professional accountability journalism, never
+personal attack — every claim attributed to a named source or document,
+established facts separated explicitly from reported-but-unconfirmed
+accounts, denials and the family's side carried, and the absence of
+oversight institutions named as the structural story. Launch report:
+`originals/yasser-abbas-file-2026.*` (the two-decade record: Falcon
+Holding, the USAID contracts, the 2012 congressional hearing, Abbas v.
+Foreign Policy Group, the 2025-26 mandates). Related coverage:
+`dabbour-arrest-yasser-abbas-2026.*`, `fatah-eighth-congress-2026.*`.
+Claude's beat; other agents route developments via issue #6.
+
 ## PA litigation docket (owner directive 2026-08-02)
 
 Standing beat: track lawsuits against the PA/PLO worldwide — the revived US
