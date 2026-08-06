@@ -49,13 +49,31 @@ jobs:
             exit 0
           fi
           sleep 540
-          count=$(curl -sf -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+          # Retries + fail-open (2026-08-06): during that afternoon's GitHub
+          # outage a single no-retry curl failure here killed the dispatch
+          # chain and froze the site for hours. If the idle-check cannot be
+          # read, DISPATCH ANYWAY — a duplicate dispatch just queues behind
+          # the pages-build concurrency group; a missed one goes dark.
+          count=$(curl -s --retry 6 --retry-all-errors --max-time 60 \
+            -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/$REPO/actions/workflows/build.yml/runs?per_page=5" |
-            python3 -c 'import json,sys; rs=json.load(sys.stdin)["workflow_runs"]; print(sum(1 for r in rs if r["status"] in ("queued","in_progress","waiting")))')
+            python3 -c 'import json,sys
+          try: rs=json.load(sys.stdin)["workflow_runs"]
+          except Exception: print(0); raise SystemExit
+          print(sum(1 for r in rs if r["status"] in ("queued","in_progress","waiting")))')
           if [ "${count:-0}" -gt 0 ]; then
             echo "A build is already queued or running — standing down."
             exit 0
           fi
-          curl -sf -X POST -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/$REPO/actions/workflows/build.yml/dispatches" -d '{"ref":"main"}'
-          echo "Dispatched the next build."
+          for attempt in 1 2 3 4 5 6; do
+            if curl -sf --retry 3 --retry-all-errors --max-time 60 -X POST \
+              -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/$REPO/actions/workflows/build.yml/dispatches" -d '{"ref":"main"}'; then
+              echo "Dispatched the next build."
+              exit 0
+            fi
+            echo "Dispatch attempt $attempt failed — retrying in 45s."
+            sleep 45
+          done
+          echo "::error::Could not dispatch the next build after 6 attempts — the heartbeat workflow is now the safety net."
+          exit 1

@@ -1,6 +1,146 @@
 {
- "_comment": "The investigations queue. One topic per generated report, worked through in order and then recycled oldest-first. Add, remove or reorder freely — the generator reads this file every run. 'q' is the reporting question the desk must answer; the sharper it is, the better the piece.",
+ "_comment": "The investigations queue. One topic per generated report, worked through in order and then recycled oldest-first. Add, remove or reorder freely — the generator reads this file every run. 'q' is the reporting question the desk must answer; the sharper it is, the better the piece. Queue order set per editorial/content-audit-2026-08-06.md: health-series completion first, then the elections desk, the reconstruction-money tracker, the West Bank displacement ledger and the sports buildout. Calendar-pegged pieces (UNGA recognition audit, ceasefire day-365, olive harvest) are deliberately NOT queued here — the daily editor adds each one when its window opens, per the audit's calendar table.",
  "topics": [
+  {
+   "id": "gaza-polio-vaccination-rebuild",
+   "cat": "health",
+   "en": "After polio's return: rebuilding Gaza's vaccination shield",
+   "ar": "بعد عودة شلل الأطفال.. إعادة بناء درع التطعيم في غزة",
+   "q": "Track the polio detection and campaign history in Gaza since 2024 (WHO/UNICEF rounds, coverage rates). What does routine immunization look like now? Solutions: cold-chain restoration, campaign logistics during access constraints, catch-up schedules."
+  },
+  {
+   "id": "gaza-rehabilitation-capacity",
+   "cat": "health",
+   "en": "Rebuilding bodies: the rehabilitation system Gaza's wounded need",
+   "ar": "إعادة بناء الأجساد.. منظومة التأهيل التي يحتاجها جرحى غزة",
+   "q": "WHO estimates of war-wounded needing long-term rehabilitation; spinal-cord and burn cases. What rehab capacity exists (Sheikh Hamad, ICRC, NGOs), physiotherapist numbers, assistive-device supply. Solutions: rehab-in-community models, training programs, regional partnerships."
+  },
+  {
+   "id": "palestinian-elections",
+   "cat": "politics",
+   "en": "Palestinians vote on November 28 for the first time in two decades",
+   "ar": "الفلسطينيون ينتخبون في 28 نوفمبر لأول مرة منذ عقدين",
+   "q": "Launch report for the Palestinian elections desk (content audit 2026-08-06, rec. A): the PLC election set for 28 November 2026 and the PNC vote the same month, with a presidential vote promised for early 2027. Cover the legal framework and the decrees behind it, voter registration in the West Bank, Gaza and East Jerusalem, the deliberate exclusion of Hamas and Islamic Jihad and the controversy around it with every side carried, the Central Elections Commission's preparations, and the legitimacy question: what an election under occupation and without Gaza's full participation can and cannot confer while the statehood-recognition wave demands one. Attribute every date and rule to the CEC, the specific decree, or the named outlet. This launches a standing desk mirroring the Israeli election watch — same tracker treatment through November."
+  },
+  {
+   "id": "gaza-reconstruction-money",
+   "cat": "accountability",
+   "en": "Where is the money? Gaza's reconstruction pledges, tracked line by line",
+   "ar": "أين الأموال؟.. تعهدات إعمار غزة تحت التدقيق بنداً بنداً",
+   "q": "Launch of the recurring reconstruction-money tracker (content audit 2026-08-06, rec. B): pledges announced vs money actually transferred to the World Bank-administered fund vs rubble actually cleared (about 0.5% per UN Security Council briefings, May 2026) vs shelters actually built. Name which donors disbursed and which have not, with each figure attributed to the specific UNSC briefing, World Bank report or donor statement and date. Include a house dashboard SVG designed for reuse — this becomes a franchise refreshed as numbers move, in the charter's constructive framing: credit what is delivered precisely, present pending transfers as the next practical stage."
+  },
+  {
+   "id": "west-bank-displacement-ledger",
+   "cat": "westbank",
+   "en": "The ledger of emptied villages: settler violence by name and number",
+   "ar": "سجلّ القرى المهجَّرة.. عنف المستوطنين بالاسم والرقم",
+   "q": "Launch of a monthly West Bank displacement ledger (content audit 2026-08-06, rec. C): OCHA's 1,330+ settler-involved attacks since January, the ~1,988 Palestinians displaced in the first four months of 2026, the communities emptied — each by name, date and what stood there — the security cabinet's 1.3-billion-shekel decision for 34 new settlements, and the impunity record (complaints vs indictments, per Yesh Din). Every figure attributed to OCHA, OHCHR, B'Tselem or Yesh Din by report and date; titles and prose name the responsible actors in active voice."
+  },
+  {
+   "id": "board-of-peace-watch",
+   "cat": "politics",
+   "en": "Six months on, the Board of Peace still governs Gaza only on paper",
+   "ar": "بعد ستة أشهر.. «مجلس السلام» يحكم غزة على الورق فقط",
+   "q": "Standing watch on Gaza's transitional governance (content audit 2026-08-06, rec. B companion): the Board of Peace chaired by President Trump with Nikolay Mladenov as Director-General/High Representative, and the Palestinian technocratic committee (NCAG), both named in January 2026 and neither operational on the ground per UN Security Council briefings. Who sits on each body, what they have actually decided, what authority Palestinians hold inside them, and what fills the vacuum meanwhile. Attribute to the specific UNSC session, named officials and outlets; distinguish established fact from reported-but-unconfirmed."
+  },
+  {
+   "id": "settlement-budget-34-outposts",
+   "cat": "westbank",
+   "en": "Israel budgets 1.3 billion shekels to plant 34 new settlements",
+   "ar": "إسرائيل ترصد 1.3 مليار شيكل لزرع 34 مستوطنة جديدة",
+   "q": "Follow the money of the security cabinet's July 2026 decision: 1.3 billion shekels for 34 new settlements — where each is planned, whose land it sits on, which ministries move the funds, and how it connects to the displacement the UN calls an all-time high. Attribute the decision text, budget lines and locations to named documents and outlets; name the deciding officials."
+  },
+  {
+   "id": "east-jerusalem-vote-2026",
+   "cat": "politics",
+   "en": "East Jerusalem's ballot boxes again decide whether Palestinians vote",
+   "ar": "صناديق القدس الشرقية تقرر مجدداً هل ينتخب الفلسطينيون",
+   "q": "Elections desk: the question that cancelled the 2021 election returns. The Oslo-era arrangements for East Jerusalem voting (post offices, the numbers allowed), Israel's current position, the CEC's plans and fallbacks, what Jerusalemite candidates and voters say, and how each scenario plays into the 28 November vote's legitimacy. Attribute positions to named officials and documents; carry all sides."
+  },
+  {
+   "id": "palestinian-football",
+   "cat": "sports",
+   "en": "Palestinian football builds on its historic World Cup qualifying run",
+   "ar": "كرة القدم الفلسطينية تبني على مشوارها المونديالي التاريخي",
+   "q": "First piece of the sports-section buildout (content audit 2026-08-06, rec. F): where Palestinian football stands after the 2026 World Cup qualification cycle — verify the campaign's final results and records at writing time before stating them — the federation's plans, the West Bank Premier League's attempt to run a season under closure, and Gaza's players a year into the ceasefire. The diaspora's game: what the national team means to Palestinians who have never seen Palestine."
+  },
+  {
+   "id": "athletes-and-travel",
+   "cat": "sports",
+   "en": "The athletes who cannot reach their own matches",
+   "ar": "رياضيون لا يصلون إلى مبارياتهم",
+   "q": "Document specific cases of Palestinian athletes denied permits or visas, the state of stadiums and training facilities, and how Palestinian sport is funded."
+  },
+  {
+   "id": "world-bank-gaza-fund-pledges",
+   "cat": "arabaid",
+   "en": "Which Arab pledges for Gaza actually reached the reconstruction fund",
+   "ar": "أيُّ التعهدات العربية لغزة وصلت فعلاً إلى صندوق الإعمار؟",
+   "q": "Arab Support edition of the money tracker: summit by summit, which Arab pledges for Gaza reconstruction have actually transferred to the World Bank-administered fund or disbursed bilaterally, which are pending, and what each donor government says about timing. Charter framing applies: precise credit for what is delivered and funded, pending transfers presented as the next practical stage, never insinuation — and every figure attributed to the donor statement, fund report or UNSC briefing that carries it."
+  },
+  {
+   "id": "palestine-draft-constitution",
+   "cat": "research",
+   "en": "The draft constitution redraws the Palestinian political system",
+   "ar": "مسودة الدستور تعيد رسم النظام السياسي الفلسطيني",
+   "q": "Explainer for the elections desk: the new draft constitution clause by clause — what changes from the Basic Law, presidential vs parliamentary powers, the judiciary, rights provisions, how it handles the PLO-PA relationship and statehood, and who wrote it under what mandate. What critics and supporters each say, attributed by name. Written as a reader's guide: what each clause means in practice."
+  },
+  {
+   "id": "education-under-fire",
+   "cat": "gaza",
+   "en": "Gaza's children begin a third school year without schools",
+   "ar": "أطفال غزة يدخلون عامهم الدراسي الثالث بلا مدارس",
+   "q": "The September 1 school-year package (content audit 2026-08-06, rec. D): 658,000 school-age children, 60% with no in-person learning, 92% of schools needing reconstruction or major rehabilitation, UNICEF's Back to Learning reaching 336,000, and 335,000 under-fives at risk of severe developmental delay — every number attributed to UNICEF, PCHR or the ETF by report and date. Solutions lens per the health-series model: the tent classrooms, the remote-degree workarounds, who teaches and how teachers are paid. Cross-link the scholarship guide as the service layer."
+  },
+  {
+   "id": "gaza-university-students-stranded",
+   "cat": "gaza",
+   "en": "Gaza's university students fight to finish degrees frozen by war",
+   "ar": "طلبة جامعات غزة يقاتلون لإتمام شهادات جمّدتها الحرب",
+   "q": "The higher-education layer of the lost-school-years story: students mid-degree when the universities were destroyed — what remote and partnership programs exist, which foreign universities took transfers, what the scholarship guide's programs cover, and the students rebuilding study circles in the rubble. Solutions lens; names and campuses verified; cross-link the scholarship guide."
+  },
+  {
+   "id": "pnc-diaspora-vote-2026",
+   "cat": "diaspora",
+   "en": "Nine million diaspora Palestinians wait to learn how they vote",
+   "ar": "تسعة ملايين فلسطيني في الشتات ينتظرون معرفة كيف سيقترعون",
+   "q": "Elections desk: the Palestine National Council vote planned for November is the diaspora's first chance at representation in decades. How PNC seats are meant to be filled, whether refugees in Lebanon, Jordan, Syria and the wider diaspora actually get ballots, what registration exists, and what diaspora communities say. The launch report's diaspora companion; attribute the rules to the specific PLO/PNC decisions and carry the skeptics."
+  },
+  {
+   "id": "rafah-returns-family",
+   "cat": "humans",
+   "en": "One family returns to Rafah between a war and a peace",
+   "ar": "عائلة تعود إلى رفح بين حربٍ لم تنتهِ وسلامٍ لم يبدأ",
+   "q": "Real Lives: follow one family's return to Rafah through the ceasefire's 'neither war nor peace' — what they found, what they rebuilt first, where water and school and work come from now. Their words lead; our summary follows (charter rule). The piece that gives the tracker numbers a face without spectacle."
+  },
+  {
+   "id": "gaza-tent-economy",
+   "cat": "economy",
+   "en": "Commerce returns to Gaza's tent cities one stall at a time",
+   "ar": "التجارة تعود إلى مدن الخيام في غزة بسطةً بعد بسطة",
+   "q": "The shelter-city economy: markets among the tents — prices, cash scarcity and damaged banknotes, who extends credit, what work pays, remittances' role. Ground reporting register with numbers attributed to named traders, the PCBS or UN assessments. Pairs with the humans Rafah piece and the money tracker."
+  },
+  {
+   "id": "gaza-under-fives-development",
+   "cat": "health",
+   "en": "A developmental emergency stalks Gaza's 335,000 youngest children",
+   "ar": "طوارئ نمائية تهدد 335 ألف طفل دون الخامسة في غزة",
+   "q": "Health series follow-on flagged in the September education package: UNICEF's warning that 335,000 children under five risk severe developmental delay after early-childhood services collapsed. What early-childhood care existed before the war, what remains, the science of the first thousand days told plainly, and the interventions working now — attribute to UNICEF and named clinicians; solutions lens per the series."
+  },
+  {
+   "id": "election-machinery-2026",
+   "cat": "politics",
+   "en": "The machinery that must deliver a Palestinian election in November",
+   "ar": "الآلة الانتخابية التي يجب أن تنجز اقتراع نوفمبر",
+   "q": "Follow-up to the elections-desk launch: the nuts and bolts. Voter rolls and how current they are, polling infrastructure in a destroyed Gaza, the courts that adjudicate disputes, election observation (who is invited, who is barred), campaign finance rules, and what the CEC says it still lacks. Compare against what broke in the cancelled 2021 cycle. Attribute to the CEC, named officials and outlets."
+  },
+  {
+   "id": "sending-money-home-guide",
+   "cat": "economy",
+   "en": "How the diaspora actually gets money into Gaza and the West Bank",
+   "ar": "كيف يوصل المغتربون أموالهم فعلاً إلى غزة والضفة؟",
+   "q": "Service guide (content audit 2026-08-06, rec. H — evergreen reference the daily editor keeps current): the remittance channels that actually work into Gaza and the West Bank in 2026, fees and limits, bank vs exchange-house vs aid-platform routes, and reader protection: how to verify a channel before sending. Everything phrased verify-at-source. The crypto/ecash angle belongs to the Financial Freedom desk's layer — reference its coverage inline rather than duplicating it."
+  },
   {
    "id": "saint-levant-gaza-rap",
    "cat": "arts",
@@ -86,20 +226,6 @@
    "q": "What are current maternal and neonatal outcomes vs prewar (UNFPA/WHO data)? Functioning maternity capacity, midwife networks, incubator/NICU status. Solutions: mobile maternity units, midwife-led community birthing, kangaroo care programs — evidence and funders."
   },
   {
-   "id": "gaza-polio-vaccination-rebuild",
-   "cat": "health",
-   "en": "After polio's return: rebuilding Gaza's vaccination shield",
-   "ar": "بعد عودة شلل الأطفال.. إعادة بناء درع التطعيم في غزة",
-   "q": "Track the polio detection and campaign history in Gaza since 2024 (WHO/UNICEF rounds, coverage rates). What does routine immunization look like now? Solutions: cold-chain restoration, campaign logistics during access constraints, catch-up schedules."
-  },
-  {
-   "id": "gaza-rehabilitation-capacity",
-   "cat": "health",
-   "en": "Rebuilding bodies: the rehabilitation system Gaza's wounded need",
-   "ar": "إعادة بناء الأجساد.. منظومة التأهيل التي يحتاجها جرحى غزة",
-   "q": "WHO estimates of war-wounded needing long-term rehabilitation; spinal-cord and burn cases. What rehab capacity exists (Sheikh Hamad, ICRC, NGOs), physiotherapist numbers, assistive-device supply. Solutions: rehab-in-community models, training programs, regional partnerships."
-  },
-  {
    "id": "donor-aid-what-reaches-the-treasury",
    "cat": "economy",
    "en": "How much donor aid reaches Palestinians, and how much never leaves the donor",
@@ -149,25 +275,11 @@
    "q": "Catalogue Palestinian investigative and reform committees announced since 2005 that never published findings — deaths in custody, the 2007 events, pension and public-sector reform, electricity arrears, PIF audits. Which body formed each, what were the published terms of reference and deadline, and what has been published since? The finding is the pattern of non-delivery, not any individual."
   },
   {
-   "id": "election-machinery-2026",
-   "cat": "politics",
-   "en": "Can the 2026 Palestinian elections actually be held",
-   "ar": "هل يمكن فعلاً إجراء الانتخابات الفلسطينية 2026",
-   "q": "Not who succeeds Abbas — that ground is already covered by our own reporting. Report the operational and legal machinery of the announced 2026-27 ballots: where voters in Gaza, East Jerusalem and each diaspora constituency can physically vote; how the 27-day gap between the PNC and PLC votes will be reconciled; what evidence triggers replacing direct diaspora voting with appointment or consensus; how the elections are funded and who observes them; and what happens to results if a ballot is cancelled or postponed. Ground every part of it in what this means for ordinary voters trying to cast a ballot."
-  },
-  {
    "id": "conflict-of-interest-rules",
    "cat": "accountability",
    "en": "The rules on officials and business, and whether anyone enforces them",
    "ar": "قواعد تضارب المصالح ومن يطبّقها",
    "q": "What law governs conflict of interest, asset declaration and outside business interests for Palestinian public officials? Is declaration mandatory, is it published, who audits it, and what has the Anti-Corruption Commission, the State Audit Bureau or AMAN's Transparency reports found about compliance? Report the rules and the enforcement record as a system — name no private individuals."
-  },
-  {
-   "id": "palestinian-elections",
-   "cat": "politics",
-   "en": "Will Palestinians ever vote again",
-   "ar": "هل يصوّت الفلسطينيون مرة أخرى",
-   "q": "Chronicle every postponed Palestinian election since 2006, the stated reasons, the role of Israeli restrictions on Jerusalem voting, the state of the Central Elections Commission, municipal election turnout, and what polling says Palestinians themselves want."
   },
   {
    "id": "work-permit-brokers",
@@ -196,13 +308,6 @@
    "en": "The money Israel collects and withholds",
    "ar": "الأموال التي تجبيها إسرائيل وتحتجزها",
    "q": "How does the Paris Protocol clearance-revenue mechanism work, how much has Israel deducted or withheld and on what legal basis, what has that done to PA salaries and the banking system, and what have the IMF, World Bank and PMA reported?"
-  },
-  {
-   "id": "gaza-reconstruction-money",
-   "cat": "gaza",
-   "en": "Who gets paid to rebuild Gaza",
-   "ar": "من يُدفع له لإعادة إعمار غزة",
-   "q": "Trace pledged versus disbursed reconstruction funding, the contractors and intermediaries involved, the rubble and unexploded-ordnance problem, and the record of previous reconstruction mechanisms after 2014."
   },
   {
    "id": "aid-economy",
@@ -283,24 +388,17 @@
   },
   {
    "id": "health-exit-permits",
-   "cat": "gaza",
-   "en": "Waiting for a permit to survive",
-   "ar": "في انتظار تصريح للبقاء على قيد الحياة",
-   "q": "How many Gaza and West Bank patients apply for exit permits for treatment, what share are approved, delayed or ignored, how many have died waiting, and what does WHO record?"
-  },
-  {
-   "id": "education-under-fire",
-   "cat": "gaza",
-   "en": "A generation out of school",
-   "ar": "جيل خارج المدرسة",
-   "q": "How many schools and universities have been destroyed or damaged, how many students and academics killed, what is the state of examinations and accreditation, and what is 'scholasticide' as scholars use the term?"
+   "cat": "health",
+   "en": "Medical evacuation from Gaza now runs through new gatekeepers",
+   "ar": "الإخلاء الطبي من غزة يمر اليوم عبر بوابات جديدة",
+   "q": "Reframed for the ceasefire era: how medical evacuation from Gaza actually works now — which corridors function, who decides (COGAT, WHO, host states), how many patients WHO says are still waiting, what happened to the war-era backlog, and the cancer/dialysis caseload the health series documented. Attribute numbers to WHO and named hospitals; solutions lens on the corridors that do work."
   },
   {
    "id": "gaza-fishing-zone",
    "cat": "gaza",
-   "en": "The shrinking sea: Gaza's fishermen",
-   "ar": "البحر المتقلص: صيادو غزة",
-   "q": "How has the permitted fishing zone changed against the Oslo-agreed 20 nautical miles, how many fishermen have been shot at or detained, and what has happened to the catch and the livelihoods behind it?"
+   "en": "Gaza's fishermen test the sea the ceasefire gave back",
+   "ar": "صيادو غزة يختبرون البحر الذي أعاده وقف النار",
+   "q": "Reframed for the ceasefire era: what fishing zone applies now, whether it is honored on the water, the state of the fleet after the war, catch volumes vs pre-war, and what fish means for a food-insecure strip. A humans-forward economy piece: one crew's day at sea carries the reporting. Attribute zone limits and incidents to named sources."
   },
   {
    "id": "olive-harvest",
@@ -308,20 +406,6 @@
    "en": "The olive harvest as a front line",
    "ar": "موسم الزيتون كخط مواجهة",
    "q": "How many olive trees have been uprooted or burned, how does the coordination system for harvest access work, what share of the rural economy depends on olives, and what do farming unions report?"
-  },
-  {
-   "id": "palestinian-football",
-   "cat": "sports",
-   "en": "Palestinian football under occupation",
-   "ar": "الكرة الفلسطينية تحت الاحتلال",
-   "q": "How many Palestinian athletes have been killed or detained, how do travel restrictions affect national squads, what became of the Palestinian FA's case at FIFA, and how do clubs in Gaza function now?"
-  },
-  {
-   "id": "athletes-and-travel",
-   "cat": "sports",
-   "en": "The athletes who cannot reach their own matches",
-   "ar": "رياضيون لا يصلون إلى مبارياتهم",
-   "q": "Document specific cases of Palestinian athletes denied permits or visas, the state of stadiums and training facilities, and how Palestinian sport is funded."
   },
   {
    "id": "cultural-heritage-destroyed",
