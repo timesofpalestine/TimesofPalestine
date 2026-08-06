@@ -2175,7 +2175,7 @@ STR = {
     "ar": {
         "dir": "rtl", "lang": "ar",
         "site_name": "تايمز أوف فلسطين",
-        "masthead_top": "تايمز أوف", "masthead_bottom": "فلسطين",
+        "masthead_top": "تايمز", "masthead_bottom": "أوف فلسطين",
         "kicker": "كل المصادر · كل الأخبار · بلا رقابة",
         "view_all": "كل التغطية ←", "search_nav": "🔍 بحث",
         "search_go": "ابحث",
@@ -2471,15 +2471,26 @@ img{max-width:100%;display:block}
 .ticker a::before{content:"●";color:rgba(255,255,255,.55);margin-inline-end:.7rem;font-size:.55rem;vertical-align:2px}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes tick-rtl{from{transform:translateX(0)}to{transform:translateX(50%)}}
-.masthead{background:var(--card);border-bottom:2px solid var(--line);text-align:center;padding:1.65rem 0 1.2rem}
-.masthead .logotype{display:inline-flex;align-items:center}
-.masthead .wrap::after{content:"";display:block;margin:.9rem auto 0;width:130px;height:5px;background:linear-gradient(90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
+/* Masthead — the newsweekly register (owner orders 2026-08-06): a towering
+   flag-red Roman-serif TIMES with OF PALESTINE in spaced caps beneath —
+   frameless on the site, the way the great newsweekly runs its own web
+   masthead; the red cover FRAME is reserved for brand art (og-banner, app
+   icons). The Palestinian flag rule stays under the wordmark — the red
+   serif carries the authority, the flag says whose. House --red only. */
+.masthead{background:var(--card);border-bottom:2px solid var(--line);text-align:center;padding:1.5rem 0 1.1rem}
+.masthead .logotype{display:inline-block}
+.masthead .wrap::after{content:"";display:block;margin:.75rem auto 0;width:130px;height:5px;background:linear-gradient(90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
 [dir=rtl] .masthead .wrap::after{background:linear-gradient(-90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
-.masthead h1,.masthead .wordmark{font-family:var(--serif);font-weight:900;line-height:1;letter-spacing:-.02em;color:var(--black);font-size:clamp(1.9rem,4.5vw,3rem);white-space:nowrap}
-.masthead h1 .l2,.masthead .wordmark .l2{color:var(--red)}
-[lang=ar] .masthead h1,[lang=ar] .masthead .wordmark{font-family:"Noto Kufi Arabic","Amiri",serif;letter-spacing:0;font-weight:700;line-height:1.25}
-.masthead.compact{padding:.9rem 0 .7rem}
-.masthead.compact h1,.masthead.compact .wordmark{font-size:1.45rem}
+.masthead h1,.masthead .wordmark{display:flex;flex-direction:column;align-items:center;gap:.3rem;line-height:1;white-space:nowrap}
+.masthead .l1{font-family:"Times New Roman",Times,var(--serif);font-weight:700;letter-spacing:-.02em;color:var(--red);font-size:clamp(2.7rem,7.6vw,4.4rem);transform:scaleY(1.05)}
+.masthead .l2{font-family:var(--serif);font-weight:700;color:var(--ink);font-size:clamp(.68rem,1.8vw,.98rem);letter-spacing:.42em;text-indent:.42em}
+[lang=ar] .masthead .l1{font-family:"Noto Kufi Arabic","Amiri",serif;font-weight:800;letter-spacing:0;transform:none;font-size:clamp(2.2rem,6.8vw,3.5rem);line-height:1.2}
+[lang=ar] .masthead .l2{letter-spacing:0;text-indent:0;font-family:"Noto Kufi Arabic","Amiri",serif;font-size:clamp(.95rem,2.3vw,1.2rem);line-height:1.45}
+.masthead.compact{padding:.8rem 0 .6rem}
+.masthead.compact .l1{font-size:1.6rem}
+.masthead.compact .l2{font-size:.52rem;letter-spacing:.34em;text-indent:.34em}
+[lang=ar] .masthead.compact .l1{font-size:1.4rem}
+[lang=ar] .masthead.compact .l2{font-size:.66rem}
 nav.sections{position:sticky;top:0;background:rgba(11,11,12,.97);z-index:50;box-shadow:0 2px 12px rgba(0,0,0,.3);backdrop-filter:blur(4px)}
 nav.sections .wrap{display:flex;flex-wrap:wrap;align-items:stretch;gap:.15rem;padding-block:.15rem}
 nav.sections a{color:#d8d8e2;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.68rem .7rem;white-space:nowrap;border-block-end:2px solid transparent;transition:color var(--tr),border-color var(--tr)}
