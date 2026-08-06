@@ -321,6 +321,21 @@ diaspora (or the city's fit); journalism, not advertising. Launch feature:
 `originals/palestinian-table-tanoreen-2026.*`. Claude's beat; other agents
 may PR candidates into the queue with sources.
 
+## Israeli press review (owner directive 2026-08-06)
+
+Standing daily desk: Times of Palestine reads the Hebrew and English
+Israeli press (Haaretz, Yedioth/Ynet, Maariv, Israel Hayom, Times of
+Israel, JPost, the think tanks) and publishes what matters to Palestinian
+readers — each source article as its own bilingual original, plus a
+front-pages roundup. The workflow, source list, selection test and
+binding rules live in `.claude/skills/israeli-press-review/SKILL.md`;
+the daily editor cycle runs the sweep each morning. Opinion is always
+attributed to its author; think tanks are labelled; owner-supplied
+bulletins (al-Masdar) are source material whose underlying outlets are
+credited — the bulletin's own translation text is never republished.
+Launch batch: twelve items dated 2026-08-06. Claude's beat; other agents
+route Israeli-press story ideas via issue #6.
+
 ## Breaking-news watchlist (owner directive 2026-08-01)
 
 `editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
