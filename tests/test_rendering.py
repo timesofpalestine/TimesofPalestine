@@ -1328,24 +1328,31 @@ class MobileChromeTests(unittest.TestCase):
         s_track = story.split('<div class="track">', 1)[1].split("</div>", 1)[0]
         self.assertIn('aria-hidden="true" tabindex="-1"', s_track)
 
-    def test_nav_groups_sections_into_labelled_dropdowns(self):
-        # Grouped nav (owner order 2026-08-05): THE LATEST plus dropdown
-        # groups whose buttons carry aria-expanded/aria-controls, section
-        # links inside the panels — and no legacy two-tier chrome.
+    def test_nav_flat_priority_row_plus_single_all_sections_index(self):
+        # Flat-priority nav (owner decision 2026-08-06, replacing the four
+        # per-group dropdowns): flagship sections are DIRECT links — Gaza
+        # never hides behind a menu — and ONE All-Sections button opens the
+        # full index whose columns are the old groups as .mhead headings.
         built_at = datetime(2026, 8, 3, 12, tzinfo=timezone.utc)
         it = item()
         it.update({"image": "/media/x.svg"})
-        for lang, label in (("en", "News &amp; Regions"), ("ar", "الأخبار والمناطق")):
+        for lang, col_label, all_label in (
+                ("en", "News & Regions", "All Sections"),
+                ("ar", "الأخبار والمناطق", "كل الأقسام")):
             rows = [dict(it, lang=lang, cat="gaza", pid=f"chrome100{i}",
                          title=f"Gaza artists open community exhibition number {i}",
                          link=f"https://example.com/nav-{i}") for i in range(12)]
             page = build.render_page(lang, rows, built_at)
-            self.assertIn('class="nav-gbtn"', page)
-            self.assertIn('aria-controls="navg-regions"', page)
-            self.assertIn('aria-expanded="false"', page)
-            self.assertIn(label.replace("&amp;", "&"), page)
-            self.assertNotIn('class="nav-more"', page)
-            self.assertNotIn('navtier2', page)
+            nav = page.split('<nav class="sections"', 1)[1].split("</nav>", 1)[0]
+            self.assertIn('href="#gaza"', nav)               # flagship = direct link
+            self.assertIn('aria-controls="navg-all"', nav)   # exactly one index…
+            self.assertNotIn('aria-controls="navg-regions"', nav)  # …no group buttons
+            self.assertEqual(nav.count('class="nav-gbtn"'), 1)
+            self.assertIn('class="nav-drop mega"', nav)
+            self.assertIn(f'<p class="mhead">{col_label}</p>', nav)
+            self.assertIn(all_label, nav)
+            self.assertNotIn('class="nav-more"', nav)
+            self.assertNotIn('navtier2', nav)
 
     def test_text_only_mode_toggle_rides_every_chrome_bar(self):
         """Owner-forwarded review 2026-08-04: a low-data text-only mode for
