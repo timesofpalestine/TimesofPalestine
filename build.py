@@ -722,11 +722,7 @@ def attach_media(item, candidate, local_original=False):
                 raise PublishingError(
                     f"{item.get('pid', item.get('title', 'original'))}: "
                     "remote original image lacks explicit local rights handling")
-            if (
-                remote_media_mode() == "source"
-                and is_public_http_url(candidate)
-                and remote_image_ok(candidate)
-            ):
+            if remote_image_ok(candidate):
                 item["image"] = candidate
                 item["media"] = {
                     "credit": rights.credit,
