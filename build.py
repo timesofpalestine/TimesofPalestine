@@ -3464,7 +3464,7 @@ def render_page(lang, items, built_at):
 
     def hero_ok(i, max_age=HERO_MAX_AGE_H):
         return (bool(i["image"]) and len(i["title"]) > 30
-                and i["cat"] not in ("social", "research", "opinion", "culture")
+                and i["cat"] not in ("social", "research", "opinion", "culture", "israelipress")
                 and not evergreen(i)
                 and PALESTINE_RX.search(f"{i['title']} {i['dek']}")  # the top story IS Palestine
                 and not REVIEWISH_RX.search(i["title"])
@@ -3481,15 +3481,15 @@ def render_page(lang, items, built_at):
         if heroes:
             break
     heroes = (heroes
-              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
+              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress")
                       and PALESTINE_RX.search(f"{i['title']} {i['dek']}")
                       and within_hours(i, HERO_MAX_AGE_H), 1)
-              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research")
+              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress")
                       and within_hours(i, HERO_MAX_AGE_H), 1))
     hero = heroes[0] if heroes else None
     # Eight items (2×4) under the hero: four left the column trailing dead
     # space beside the taller Latest rail (owner decision 2026-08-03).
-    hero_subs = take(by_latest, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin")
+    hero_subs = take(by_latest, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin", "israelipress")
                      and not evergreen(i), 8)
     # Latest rail and breaking ticker: chronological, Palestine coverage first.
     # The rail is an index — it lists stories without claiming them from sections.
@@ -3507,8 +3507,9 @@ def render_page(lang, items, built_at):
         rail_ids = {id(i) for i in latest}
         latest += [i for i in by_latest if i["cat"] != "social"
                    and id(i) not in rail_ids][:8 - len(latest)]
-    pal_news = [i for i in by_latest if i["cat"] != "social" and palestine(i)]
-    ticker_items = (pal_news or [i for i in by_latest if i["cat"] != "social"])[:6]
+    _tickerable = [i for i in by_latest if i["cat"] not in ("social", "israelipress")]
+    pal_news = [i for i in _tickerable if palestine(i)]
+    ticker_items = (pal_news or _tickerable)[:6]
 
     # Topical sections carry Palestine coverage only; world items from Palestinian
     # outlets live in More News. Research and Bitcoin are thematic by construction.
@@ -3659,7 +3660,7 @@ def render_page(lang, items, built_at):
         viewall = (f'<a class="viewall" href="section-{k}.html">{t["view_all"]}</a>'
                    if k in cats_present else "")
         section_blocks += (f'<section class="block" id="{k}"><div class="wrap">'
-                           f'<div class="sec-copy"><div class="sec-head{focus_cls}"><h2>{t["sections"][k]}</h2><span class="rule"></span>{viewall}</div>{section_meta(sections[k], lang)}</div>'
+                           f'<div class="sec-copy"><div class="sec-head{focus_cls}"><h2>{esc(t["sections"][k])}</h2><span class="rule"></span>{viewall}</div>{section_meta(sections[k], lang)}</div>'
                            + (('<p class="social-note">' + ("تقارير عامة من صحفيين مواطنين وشهود على الأرض. لا يُنشر أي تقرير حساس قبل موافقة محرر بشري على نسخته المحددة. " if lang == "ar" else "Public dispatches from citizen journalists and witnesses. Sensitive reports publish only after a human editor approves the exact version. ") + '<a href="#tips">' + ("أرسل تقريرك عبر خط «سيغنال» الآمن ←" if lang == "ar" else "Send yours via the secure Signal line →") + "</a></p>") if k == "social" else "") + f'{featured}{grid}</div></section>')
 
     opinion_block = ""
