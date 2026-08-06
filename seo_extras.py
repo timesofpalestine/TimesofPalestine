@@ -48,7 +48,7 @@ ABOUT = {
              "Palestine Times, the English-language daily launched in Ramallah in "
              "2006, and this newsroom is its revival — the same duty, rebuilt for a "
              "new era."),
-            ("Ownership & funding",
+            ("Ownership &amp; funding",
              "Times of Palestine is privately owned and funded by its publisher, "
              "who also holds the title and archive of the Palestine Times. The "
              "site carries no advertising and no sponsored content, and accepts "
@@ -115,7 +115,7 @@ ABOUT = {
              "our encrypted tip line. Field reports go through an editorial check and "
              "appear in their own clearly labelled section of the site, so readers "
              "always know the source and nature of what they are reading."),
-            ("Editorial standards & corrections",
+            ("Editorial standards &amp; corrections",
              "We report without censorship and without favor, we hold power to "
              "account wherever it sits, and we criticize through journalism, never "
              "personal attacks. We report the issue, never the individual, and we "
@@ -228,31 +228,41 @@ ABOUT = {
 def render_about(lang, built_at):
     b = __import__("build")
     t, a = b.STR[lang], ABOUT[lang]
+    esc = b.esc
     body = "".join(
         f'<h2 class="about-section">{h}</h2>'
         f'<p class="summary">{p}</p>' for h, p in a["sections"])
+    # meta_desc strips no HTML — the intro section is plain text by contract.
+    desc = esc(b.meta_desc(a["sections"][0][1]))
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0b0c"><link rel="manifest" href="/manifest.json">
-<title>{a['title']} — {t['site_name']}</title>
-<meta name="description" content="{b.meta_desc(a['sections'][0][1])}">
+<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/icon-192.png"><link rel="manifest" href="/manifest.json">
+<title>{esc(a['title'])} — {t['site_name']}</title>
+<meta name="description" content="{desc}">
 <link rel="canonical" href="{b.BASE_URL}/{lang}/about.html">
 <link rel="alternate" hreflang="en" href="{b.BASE_URL}/en/about.html">
 <link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/about.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{t['site_name']}">
+<meta property="og:title" content="{esc(a['title'])} — {t['site_name']}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{b.BASE_URL}/{lang}/about.html">
+<meta property="og:image" content="{b.BASE_URL}/og-banner.png">
 <link href="/assets/site.css" rel="stylesheet">
+{b._THEME_JS}
 </head>
 <body>
 <div class="backbar"><a href="./">{a['back']}</a></div>
 <header class="masthead compact"><div class="wrap">
-  <a class="logotype" href="./"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
+  <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
 <main>
   <article class="story">
     <p class="kick">{t['site_name']}</p>
-    <h1>{a['title']}</h1>
+    <h1>{esc(a['title'])}</h1>
     {body}
     <div class="cta"><a href="{b.SIGNAL_URL}" target="_blank" rel="noopener">🔒 {a['cta']} — @TOP.972</a>
     <p class="about-telegram"><a href="{b.TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} → {b.TELEGRAM_BOT_NAME}</a></p></div>
@@ -514,11 +524,23 @@ def post_webhook(dist, langs_items, base_url):
 
 
 def render_status(lang):
+    b = __import__("build")
     title = "حالة النشر" if lang == "ar" else "Publishing status"
+    desc = ("حالة النشر الآلي لغرفة أخبار «تايمز أوف فلسطين»: آخر بناء وعدد القصص المنشورة."
+            if lang == "ar" else
+            "Live publishing health for the Times of Palestine newsroom: last build time and story counts.")
     loading = "جارٍ تحميل حالة آخر بناء…" if lang == "ar" else "Loading latest build health…"
     return f"""<!DOCTYPE html><html lang="{lang}" dir="{'rtl' if lang == 'ar' else 'ltr'}">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title} — {SITE_NAMES[lang]}</title><link rel="stylesheet" href="/assets/site.css"></head>
+<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48">
+<title>{title} — {SITE_NAMES[lang]}</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="{b.BASE_URL}/{lang}/status.html">
+<link rel="alternate" hreflang="en" href="{b.BASE_URL}/en/status.html">
+<link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/status.html">
+<link rel="stylesheet" href="/assets/site.css">
+{b._THEME_JS}
+</head>
 <body><main><article class="story"><p class="kick">{SITE_NAMES[lang]}</p><h1>{title}</h1>
 <p id="health" class="summary">{loading}</p><p><a href="./">{"العودة إلى الأخبار" if lang == "ar" else "Back to the news"}</a></p>
 </article></main><script>
