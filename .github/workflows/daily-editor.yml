@@ -50,6 +50,20 @@ jobs:
             and a local `python3 build.py` run to see rendered output and
             warnings.
 
+            Then run the ISRAELI PRESS REVIEW (owner directive 2026-08-06,
+            daily, non-optional): follow
+            .claude/skills/israeli-press-review/SKILL.md to the letter —
+            sweep today's Hebrew and English Israeli press (Haaretz, Ynet,
+            Maariv, Israel Hayom, Times of Israel, JPost, the think tanks)
+            via live web search and fetch, select what matters to
+            Palestinian readers by the skill's relevance test, and publish
+            each selected article as its own bilingual original plus the
+            front-pages roundup — outlet and author attributed inline,
+            opinion reported as its author's argument, think tanks
+            labelled, Arabic composed fresh. On a normal day this is 3-8
+            items; never zero unless the sweep genuinely finds nothing
+            relevant, and then say so in the cadence note.
+
             Then choose THREE to FIVE concrete improvements for today, spanning
             at least two of these fronts, and implement them:
             1. EDITORIAL — a fresh researched bilingual original (live web
