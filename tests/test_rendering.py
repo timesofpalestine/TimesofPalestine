@@ -208,7 +208,8 @@ class RenderingTests(unittest.TestCase):
         html = build.render_story(
             record, "en", [], [record], datetime(2026, 7, 29, 15, tzinfo=timezone.utc))
         self.assertIn('class="breadcrumbs"', html)
-        self.assertIn('href="../#health"', html)
+        self.assertIn('href="../section-health.html"', html)
+        self.assertIn('"@type": "BreadcrumbList"', html)
         self.assertIn('class="story-toc"', html)
         self.assertIn('href="#first-turn"', html)
         self.assertIn('id="second-turn"', html)
