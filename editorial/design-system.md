@@ -103,19 +103,22 @@ load-bearing statistic — one or two per story, never as decoration.
 
 ## 3. Component grammar
 
-- **Masthead** (`.masthead`, newsweekly register — owner order 2026-08-06):
-  the wordmark is a stacked mini-cover inside a slim `--red` frame
-  (`.logotype`, 3px; 2px in `.compact`). Line one (`.l1`) is the towering
-  flag-red Roman-serif TIMES — `"Times New Roman"` first, `--serif`
-  fallback, weight 700, `-.02em` tracking, `scaleY(1.05)`; Arabic
-  «تايمز» uses the house Noto Kufi Arabic at 800, no tracking, no
+- **Masthead** (`.masthead`, newsweekly register — owner orders
+  2026-08-06): a stacked wordmark, FRAMELESS on the site the way the
+  great newsweekly runs its own web masthead. Line one (`.l1`) is the
+  towering flag-red Roman-serif TIMES — `"Times New Roman"` first,
+  `--serif` fallback, weight 700, `-.02em` tracking, `scaleY(1.05)`;
+  Arabic «تايمز» uses the house Noto Kufi Arabic at 800, no tracking, no
   transform. Line two (`.l2`) runs OF PALESTINE in spaced serif caps
   (`.42em`, matching `text-indent` to re-center) in `--ink`; Arabic
   «أوف فلسطين» drops the tracking. The Palestinian flag rule
-  (`.wrap::after`) stays under the frame — the frame carries the
-  newsweekly authority, the flag says whose. House `--red` only (it is
-  the same red family as the great newsweekly covers); never introduce
-  a second red for the mark, and never letter-space the Arabic.
+  (`.wrap::after`) stays under the wordmark — the red serif carries the
+  newsweekly authority, the flag says whose. The slim red COVER FRAME
+  around the same stacked mark is the brand-art device, reserved for
+  og-banner, app icons and social cards — never on the site masthead.
+  House `--red` only (it is the same red family as the great newsweekly
+  covers); never introduce a second red for the mark, and never
+  letter-space the Arabic.
 
 - **Section nav** (`nav.sections`, grouped design — owner order 2026-08-05,
   after the two-tier bar reached ~19 visible links; line-tab language of
