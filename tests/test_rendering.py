@@ -94,6 +94,42 @@ class RenderingTests(unittest.TestCase):
         self.assertIn("Israeli forces raid Gaza district as updates arrive 1", ticker)
         self.assertNotIn("Older Gaza accountability report keeps a premium slot", ticker)
 
+    def test_press_review_never_squats_hero_or_breaking_ticker(self):
+        # Owner scan 2026-08-06: israelipress writeups are secondary coverage —
+        # they live in their section and the Latest rail, never as the paper's
+        # top story or in the breaking ticker, however fresh or high-scoring.
+        built_at = datetime(2026, 8, 6, 15, tzinfo=timezone.utc)
+        press = item()
+        press.update({
+            "title": "Israeli think tank calls Hamas election exclusion a strategic defeat",
+            "link": "original:israelipress-besa.en",
+            "date": built_at - timedelta(minutes=3),
+            "image": "/media/times-of-palestine-cover-israelipress.svg",
+            "cat": "israelipress",
+            "original": True,
+            "score": 999,
+            "pid": "press00001",
+        })
+        wire = item()
+        wire.update({
+            "title": "Israeli forces raid Jenin refugee camp before dawn on Thursday",
+            "link": "https://example.com/jenin-raid",
+            "date": built_at - timedelta(minutes=20),
+            "image": "/media/jenin.jpg",
+            "cat": "westbank",
+            "score": 25,
+            "pid": "wire000001",
+        })
+
+        homepage = build.render_page("en", [press, wire], built_at)
+
+        overlay = homepage.split("hero-overlay", 1)[1][:400]
+        self.assertIn("Jenin", overlay)
+        self.assertNotIn("think tank", overlay)
+        ticker = homepage.split('<div class="track">', 1)[1].split("</div>", 1)[0]
+        self.assertIn("Jenin", ticker)
+        self.assertNotIn("think tank", ticker)
+
     def test_summary_markdown_renders_safely_across_reader_surfaces(self):
         record = item()
         record.update({
