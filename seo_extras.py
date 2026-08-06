@@ -48,6 +48,14 @@ ABOUT = {
              "Palestine Times, the English-language daily launched in Ramallah in "
              "2006, and this newsroom is its revival — the same duty, rebuilt for a "
              "new era."),
+            ("Ownership & funding",
+             "Times of Palestine is privately owned and funded by its publisher, "
+             "who also holds the title and archive of the Palestine Times. The "
+             "site carries no advertising and no sponsored content, and accepts "
+             "no funding from any government, party or faction. The publisher "
+             "pays the newsroom's operating costs directly, and no funder — the "
+             "publisher included — directs the coverage of any story: reporting "
+             "decisions are made under the house editorial charter alone."),
             ("A living front page",
              "News here is never parked. The site rebuilds and republishes "
              "continuously, day and night: the lead story follows the news cycle, "
@@ -113,8 +121,9 @@ ABOUT = {
              "personal attacks. We report the issue, never the individual, and we "
              "credit good-faith work precisely: what is promised, funded, underway, "
              "completed and still needed. When we get something wrong we correct it "
-             "promptly and note the change, dated, on the story itself. To "
-             "request a correction, contact the newsroom "
+             "promptly and note the change, dated, on the story itself; the full "
+             "record is public on our <a href=\"corrections.html\">corrections "
+             "ledger</a>. To request a correction, contact the newsroom "
              "on the channel below with the story link and the error."),
             ("Contact the newsroom",
              "Reach us on Signal — encrypted, and anonymous if you choose: "
@@ -137,6 +146,13 @@ ABOUT = {
              "وهبها الله له. ويحمل الاسم إرثاً صحفياً: يملك ناشرنا حقوق صحيفة "
              "«فلسطين تايمز» وأرشيفها — اليومية الصادرة بالإنجليزية من رام الله "
              "عام 2006 — وهذه الغرفة إحياءٌ لها: الرسالة نفسها بعُدّة عصر جديد."),
+            ("الملكية والتمويل",
+             "«تايمز أوف فلسطين» ملكية خاصة يموّلها ناشرها مباشرة، وهو نفسه "
+             "مالك حقوق صحيفة «فلسطين تايمز» وأرشيفها. لا يعرض الموقع أي "
+             "إعلانات ولا محتوى مموّلاً، ولا يقبل تمويلاً من أي حكومة أو حزب "
+             "أو فصيل. يتحمّل الناشر تكاليف تشغيل غرفة الأخبار بنفسه، ولا "
+             "يوجّه أي مموّل — بمن في ذلك الناشر — تغطية أي مادة: القرار "
+             "التحريري يخضع للميثاق التحريري وحده."),
             ("صفحة أولى حيّة",
              "الخبر عندنا لا يُركن. يُعاد بناء الموقع ونشره باستمرار ليل نهار: "
              "الخبر الأول يتبع دورة الأخبار، والتغطية الأحدث تحمل علامة «جديد» "
@@ -193,8 +209,9 @@ ABOUT = {
              "بالصحافة المهنية لا بالإساءات الشخصية. نتناول القضية لا الشخص، "
              "ونمنح العمل الجاد حقّه بدقة: ما وُعد به، وما مُوّل، وما يجري، وما "
              "اكتمل، وما ينتظر. وحين نخطئ نصحح فوراً ونثبّت التعديل بتاريخه على "
-             "المادة نفسها. لطلب تصويب، راسل غرفة الأخبار عبر القناة أدناه مع "
-             "رابط المادة وبيان الخطأ."),
+             "المادة نفسها، والسجل الكامل علني في "
+             "<a href=\"corrections.html\">سجل التصويبات</a>. لطلب تصويب، راسل "
+             "غرفة الأخبار عبر القناة أدناه مع رابط المادة وبيان الخطأ."),
             ("اتصل بغرفة الأخبار",
              "راسلنا على «سيغنال» — مشفّر، ومجهول الهوية إن اخترت: "
              "@TOP.972 أو عبر الزر أدناه. ويمكنك أيضاً مراسلة بوت غرفة الأخبار على "
@@ -221,7 +238,7 @@ def render_about(lang, built_at):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0b0b0c"><link rel="manifest" href="/manifest.json">
 <title>{a['title']} — {t['site_name']}</title>
-<meta name="description" content="{a['sections'][0][1][:155]}">
+<meta name="description" content="{b.meta_desc(a['sections'][0][1])}">
 <link rel="canonical" href="{b.BASE_URL}/{lang}/about.html">
 <link rel="alternate" hreflang="en" href="{b.BASE_URL}/en/about.html">
 <link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/about.html">
@@ -547,7 +564,7 @@ def write_extras(dist, langs_items, built_at, base_url, health):
     extra_urls = "".join(
         f"<url><loc>{base_url}/{lang}/{page}</loc></url>"
         for lang, _ in langs_items
-        for page in ("about.html", "status.html"))
+        for page in ("about.html", "corrections.html", "status.html"))
     sm.write_text(sm.read_text(encoding="utf-8")
                   .replace("</urlset>", extra_urls + "</urlset>"), encoding="utf-8")
     health.checks["discovery_files"] = "ok"

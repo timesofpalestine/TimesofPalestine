@@ -230,6 +230,19 @@ def truncate(text, n):
 def norm_title(t):
     return re.sub(r"[\W_]+", " ", strip_html(t).lower(), flags=re.UNICODE).strip()
 
+
+def meta_desc(text, limit=155):
+    """Meta/OG description cut at a word boundary — a hard slice ships
+    'without cen' to every search snippet and link preview."""
+    text = " ".join(str(text or "").split())
+    if len(text) <= limit:
+        return text
+    cut = text[:limit - 1]
+    sp = cut.rfind(" ")
+    if sp > limit - 40:
+        cut = cut[:sp]
+    return cut.rstrip(" ,;:·—–-") + "…"
+
 esc = lambda s: html.escape(s or "", quote=True)
 
 
@@ -2840,7 +2853,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 @keyframes newpulse{0%,100%{opacity:1}50%{opacity:.45}}
 @media(prefers-reduced-motion:reduce){.newmark{animation:none}}
 .review-chip{display:inline-block;margin-inline-start:.45rem;color:var(--red);font-size:.66rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
-.revisions{margin-top:2rem;padding:1rem 1.2rem;border:1px solid var(--line-dark);background:var(--card);border-radius:var(--r)}.revisions h2{font-family:var(--serif);font-size:1.1rem}.revisions ol{margin:.7rem 0 0;padding-inline-start:1.2rem}.revisions li{margin-top:.45rem;font-size:.86rem;line-height:1.6}.revisions time{font-variant-numeric:tabular-nums;color:var(--muted)}
+.revisions{margin-top:2rem;padding:1rem 1.2rem;border:1px solid var(--line-dark);background:var(--card);border-radius:var(--r)}.revisions h2{font-family:var(--serif);font-size:1.1rem}.revisions ol{margin:.7rem 0 0;padding-inline-start:1.2rem}.revisions li{margin-top:.45rem;font-size:.86rem;line-height:1.6}.revisions time{font-variant-numeric:tabular-nums;color:var(--muted)}.revisions .ledgerlink{margin-top:.7rem;font-size:.82rem}.revisions .ref{color:var(--muted);font-size:.8rem}
 .social-note{margin:-.5rem 0 1.2rem;font-size:.9rem;color:var(--muted);max-width:75ch}.social-note a{color:var(--green);font-weight:700}
 .footer-contact{margin-top:.9rem}.footer-contact.secondary{margin-top:.5rem}.contact-id{direction:ltr;display:inline-block;margin-inline-start:.6rem;color:#8f8f94}
 .about-section{font-family:var(--serif);font-size:1.25rem;margin-top:1.6rem}.about-telegram{margin-top:.9rem}.about-telegram a{font-weight:700;color:var(--green)}
@@ -3038,6 +3051,34 @@ def story_url(it, lang=None):
     """Absolute, percent-encoded story-page URL (slug + pid filename)."""
     return BASE_URL + story_url_path(
         it["title"], it["pid"], lang or it.get("lang", "en"))
+
+
+def jsonld_dump(record):
+    """Serialize JSON-LD for inline <script> embedding. A literal '</script>'
+    inside any string value (a hostile dek or headline) would otherwise close
+    the block and inject markup — escaping '<' keeps the JSON identical to
+    parsers and inert to the HTML tokenizer."""
+    return json.dumps(record, ensure_ascii=False).replace("<", "\\u003c")
+
+
+def org_jsonld(lang):
+    """NewsMediaOrganization record with the trust-signal links Google's
+    quality raters and NewsGuard-style checkers look for: logo, publishing
+    principles, corrections policy, ownership/funding disclosure, and the
+    newsroom's off-site presence."""
+    t = STR[lang]
+    return jsonld_dump({
+        "@context": "https://schema.org",
+        "@type": "NewsMediaOrganization",
+        "name": t["site_name"],
+        "url": f"{BASE_URL}/{lang}/",
+        "logo": {"@type": "ImageObject", "url": f"{BASE_URL}/icon-512.png"},
+        "sameAs": [f"{BASE_URL}/en/", f"{BASE_URL}/ar/", TELEGRAM_CHANNEL_URL],
+        "publishingPrinciples": f"{BASE_URL}/{lang}/about.html",
+        "correctionsPolicy": f"{BASE_URL}/{lang}/corrections.html",
+        "ownershipFundingInfo": f"{BASE_URL}/{lang}/about.html",
+        "actionableFeedbackPolicy": f"{BASE_URL}/{lang}/about.html",
+    })
 
 
 def ticker_html(t, lang, ticker_track, ticker_track_hidden):
@@ -3413,7 +3454,6 @@ def render_page(lang, items, built_at):
     time_str = f"{d.hour:02d}:{d.minute:02d}"
 
     ticker_track = "".join(f'<a href="{href(i, P)}">{esc(i["title"])}</a>' for i in ticker_items)
-    ticker_track_hidden = ticker_track.replace('<a href', '<a aria-hidden="true" tabindex="-1" href')
     # Israel-votes election box: a card in the franchise row, not a banner —
     # important, but not the top of the paper (owner decision 2026-08-02).
     # Alive until 27 October 2026.
@@ -3445,6 +3485,10 @@ def render_page(lang, items, built_at):
     # Standing specials ride at the END of the loop — breaking news leads.
     for sp in available_specials(lang, items):
         ticker_track += f'<a href="{esc(sp["href"][lang])}">{esc(sp["ticker"][lang])}</a>'
+    # The marquee's second copy is cloned AFTER the specials join the loop —
+    # a shorter clone makes the loop jump, and it must stay hidden from
+    # screen readers and the tab order (it repeats every headline).
+    ticker_track_hidden = ticker_track.replace('<a href', '<a aria-hidden="true" tabindex="-1" href')
 
     def visible(k):
         return len(sections[k]) >= (1 if k in FOCUS_SECTIONS else 2)
@@ -3571,7 +3615,7 @@ def render_page(lang, items, built_at):
 <meta name="robots" content="max-image-preview:large">
 <meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/icon-192.png"><link rel="manifest" href="/manifest.json"><script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js")</script>
 <title>{t['site_name']} — {t['title_suffix']}</title>
-<meta name="description" content="{esc(t['mission'][:155])}">
+<meta name="description" content="{esc(meta_desc(t['mission']))}">
 <link rel="canonical" href="{BASE_URL}/{lang}/">
 <link rel="alternate" hreflang="en" href="{BASE_URL}/en/">
 <link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/">
@@ -3581,10 +3625,10 @@ def render_page(lang, items, built_at):
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{t['site_name']}">
 <meta property="og:title" content="{t['site_name']} — {t['title_suffix']}">
-<meta property="og:description" content="{esc(t['mission'][:155])}">
+<meta property="og:description" content="{esc(meta_desc(t['mission']))}">
 <meta property="og:url" content="{BASE_URL}/{lang}/">
 <meta property="og:image" content="{BASE_URL}/og-banner.png"><meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"{t['site_name']}","url":"{BASE_URL}/{lang}/","sameAs":["{BASE_URL}/en/","{BASE_URL}/ar/"]}}</script>
+<script type="application/ld+json">{org_jsonld(lang)}</script>
 {'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
 {_THEME_JS}
 </head>
@@ -3635,7 +3679,7 @@ document.addEventListener("keydown",function(e){{if(e.key==="Escape"){{closeGrou
       <span class="contact-id">{SIGNAL_USERNAME}</span></p><p class="footer-contact secondary"><a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} {"←" if lang == "ar" else "→"}</a> <span class="contact-id">{TELEGRAM_BOT_NAME}</span></p></div>
   </div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="corrections.html">{'التصويبات' if lang == 'ar' else 'Corrections'}</a> <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
     <span>{t['attribution']}</span>
     <a href="{t['switch_href']}">{t['footer_lang']}</a>
   </div>
@@ -3780,9 +3824,12 @@ def render_story(it, lang, related, rail, built_at):
             f'<li><time datetime="{esc(row["at"])}">{esc(row["at"][:10])}</time> '
             f'<strong>{"تصويب" if lang == "ar" and row["type"] == "correction" else "تحديث" if lang == "ar" else row["type"].title()}:</strong> '
             f'{esc(row["note"])}</li>' for row in it["corrections"])
+        ledger_label = ("سجل التصويبات الكامل ←" if lang == "ar"
+                        else "Full corrections ledger →")
         corrections = (
             f'<section class="revisions" aria-labelledby="revision-title">'
-            f'<h2 id="revision-title">{esc(heading)}</h2><ol>{rows}</ol></section>')
+            f'<h2 id="revision-title">{esc(heading)}</h2><ol>{rows}</ol>'
+            f'<p class="ledgerlink"><a href="../corrections.html">{ledger_label}</a></p></section>')
     related_primary = [r for r in related if r is not it and r["cat"] == it["cat"]]
     related_secondary = [r for r in related if r is not it and r["cat"] != it["cat"]]
     related_cards = "".join(card(r, lang, "") for r in (related_primary + related_secondary)[:8])
@@ -3797,8 +3844,9 @@ def render_story(it, lang, related, rail, built_at):
                 + share_url + '">' + ("انسخ الرابط" if lang == "ar" else "Copy link") + "</button>")
     share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(share_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + share_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a>' + copy_btn + '</div>')
     share_rail = ('<nav class="share-rail" aria-label="' + ("شارك الخبر" if lang == "ar" else "Share this story") + '"><a href="https://twitter.com/intent/tweet?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="X">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(share_url) + '" target="_blank" rel="noopener" title="Facebook">f</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + share_url) + '" target="_blank" rel="noopener" title="WhatsApp">Wa</a><a href="https://t.me/share/url?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="Telegram">Tg</a></nav>')
-    desc = esc(summary_text(
-        (it.get("brief") or it["dek"]).replace(chr(10), " "))[:155])
+    plain_desc = meta_desc(summary_text(
+        (it.get("brief") or it["dek"]).replace(chr(10), " ")))
+    desc = esc(plain_desc)
     og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
     og_image = f'<meta property="og:image" content="{esc(og_img_url)}">' if it["image"] else ""
     story_stamp = (
@@ -3808,12 +3856,24 @@ def render_story(it, lang, related, rail, built_at):
         + "</p>"
     )
     section_name = t["sections"].get(it["cat"], t["sections"]["news"])
+    # Breadcrumbs land on the real section archive, not a homepage anchor —
+    # the archive is the crawlable, linkable landing page for the section.
+    section_href = f"section-{it['cat']}.html"
     breadcrumb_nav = (
         f'<nav class="breadcrumbs" aria-label="Breadcrumb">'
         f'<a href="../">{t["breadcrumbs_home"]}</a><span class="sep">/</span>'
-        f'<a href="../#{it["cat"]}">{section_name}</a><span class="sep">/</span>'
+        f'<a href="../{section_href}">{section_name}</a><span class="sep">/</span>'
         f'<span aria-current="page">{esc(it["title"])}</span></nav>'
     )
+    breadcrumb_jsonld = jsonld_dump({
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1,
+             "name": t["breadcrumbs_home"], "item": f"{BASE_URL}/{lang}/"},
+            {"@type": "ListItem", "position": 2, "name": section_name,
+             "item": f"{BASE_URL}/{lang}/{section_href}"},
+            {"@type": "ListItem", "position": 3, "name": it["title"]},
+        ]})
     hreflang = ""
     # Default language switch lands on the other edition's front page; when a
     # bilingual pair exists it deep-links to the story's own translation.
@@ -3839,8 +3899,13 @@ def render_story(it, lang, related, rail, built_at):
         "@context": "https://schema.org", "@type": "NewsArticle",
         "headline": it["title"], "datePublished": utc_iso(it["date"]),
         "mainEntityOfPage": page_url,
-        "image": [it["image"]] if it["image"] else [],
-        "publisher": {"@type": "NewsMediaOrganization", "name": t["site_name"], "url": f"{BASE_URL}/{lang}/"},
+        "url": page_url,
+        "description": plain_desc,
+        "image": [og_img_url] if it["image"] else [],
+        "publisher": {"@type": "NewsMediaOrganization", "name": t["site_name"],
+                      "url": f"{BASE_URL}/{lang}/",
+                      "logo": {"@type": "ImageObject",
+                               "url": f"{BASE_URL}/icon-512.png"}},
         "articleSection": t["sections"].get(it["cat"], t["sections"]["news"]),
         "inLanguage": lang,
         "author": ({"@type": "Organization", "name": t["site_name"],
@@ -3860,7 +3925,7 @@ def render_story(it, lang, related, rail, built_at):
         _src_name = _media.get("source") or t["site_name"]
         _img_obj = {
             "@type": "ImageObject",
-            "url": it["image"],
+            "url": og_img_url,
             "creditText": _media["credit"],
             "creator": {"@type": "Organization", "name": _src_name},
             "copyrightNotice": f"© {_src_name}",
@@ -3869,7 +3934,7 @@ def render_story(it, lang, related, rail, built_at):
         if _media.get("licenseUrl"):
             _img_obj["license"] = _media["licenseUrl"]
         jsonld_record["image"] = [_img_obj]
-    jsonld = json.dumps(jsonld_record, ensure_ascii=False)
+    jsonld = jsonld_dump(jsonld_record)
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}" dir="{t['dir']}">
 <head>
@@ -3888,6 +3953,7 @@ def render_story(it, lang, related, rail, built_at):
 {og_image}
 <meta name="twitter:card" content="{'summary_large_image' if it['image'] else 'summary'}">
 <script type="application/ld+json">{jsonld}</script>
+<script type="application/ld+json">{breadcrumb_jsonld}</script>
 {'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
 {_THEME_JS}
 </head>
@@ -3925,7 +3991,7 @@ def render_story(it, lang, related, rail, built_at):
 <footer><div class="wrap">
   <div class="flagline"></div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="../status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="../corrections.html">{'التصويبات' if lang == 'ar' else 'Corrections'}</a> <a href="../status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
     <a href="../">{t['back_home']}</a>
   </div>
 </div></footer>
@@ -3941,8 +4007,8 @@ def story_redirect_stub(it, lang):
     OpenGraph set: Telegram, WhatsApp and Facebook build their link previews
     from THIS page's meta and do not follow the meta refresh."""
     target = story_url(it, lang)
-    desc = esc(summary_text(
-        (it.get("brief") or it["dek"]).replace(chr(10), " "))[:155])
+    desc = esc(meta_desc(summary_text(
+        (it.get("brief") or it["dek"]).replace(chr(10), " "))))
     og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
     og_image = f'<meta property="og:image" content="{esc(og_img_url)}">' if it["image"] else ""
     return (f'<!DOCTYPE html><html lang="{lang}"><head><meta charset="utf-8">'
@@ -4048,6 +4114,84 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
   <div class="sec-head focus"><h2>{esc(name)}</h2><span class="rule"></span><span class="count">{count_label}</span></div>
   <div class="grid g4">{cards}</div>
   {more_html}
+</main>
+<footer><div class="wrap"><div class="flagline"></div>
+  <div class="legal"><span>© {built_at.year} {t['site_name']}</span> <a href="./">{t['back_home']}</a> <a href="about.html">{'من نحن' if lang == 'ar' else 'About'}</a></div>
+</div></footer>
+<script>{_CLOCK_JS}</script>
+</body></html>"""
+
+
+def render_corrections_page(lang, items, built_at):
+    """Public corrections & updates ledger — every dated revision note from
+    editorial/corrections.json on one page, newest first. The per-story
+    stamps already run on the articles themselves; this page is the standing
+    trust signal (NewsGuard/JTI checklist) that the practice is systematic.
+    Entries whose story has rotated off the live site keep their note and
+    reference id — the record does not expire with the page."""
+    t = STR[lang]
+    title = "التصويبات والتحديثات" if lang == "ar" else "Corrections & updates"
+    intro = (
+        "حين نخطئ نصحّح فوراً ونثبّت التعديل بتاريخه على المادة نفسها. "
+        "هذه الصفحة تجمع سجل التصويبات والتحديثات التحريرية كاملاً. "
+        "لطلب تصويب راسل غرفة الأخبار عبر صفحة «من نحن» مع رابط المادة وبيان الخطأ."
+        if lang == "ar" else
+        "When we get something wrong we correct it promptly and note the change, "
+        "dated, on the story itself. This page carries the full ledger of those "
+        "corrections and editorial updates. To request a correction, contact the "
+        "newsroom via the About page with the story link and the error.")
+    live = {it["pid"]: it for it in items}
+    rows = []
+    for pid, raw in CORRECTIONS["stories"].items():
+        for note in validate_corrections(raw, pid, lang):
+            rows.append((note["at"], note["type"], note["note"], pid))
+    rows.sort(reverse=True)
+    if rows:
+        entries = []
+        for at, kind, note, pid in rows:
+            kind_label = (("تصويب" if kind == "correction" else "تحديث")
+                          if lang == "ar" else kind.title())
+            it = live.get(pid)
+            if it:
+                story_ref = (f'<a href="story/{quote(story_file_name(it["title"], it["pid"]))}">'
+                             f'{esc(it["title"])}</a>')
+            else:
+                archived = ("المادة خرجت من الموقع الحي · مرجع "
+                            if lang == "ar" else "Story rotated off the live site · ref ")
+                story_ref = f'<span class="ref">{archived}{esc(pid)}</span>'
+            entries.append(
+                f'<li><time datetime="{esc(at)}">{esc(at[:10])}</time> '
+                f'<strong>{kind_label}:</strong> {esc(note)}<br>{story_ref}</li>')
+        body = f'<ol class="corrections-log">{"".join(entries)}</ol>'
+    else:
+        body = ('<p class="summary">' + (
+            "لا توجد تصويبات مسجّلة حالياً." if lang == "ar"
+            else "No corrections are currently on the record.") + "</p>")
+    return f"""<!DOCTYPE html>
+<html lang="{t['lang']}" dir="{t['dir']}">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48">
+<title>{esc(title)} — {t['site_name']}</title>
+<meta name="description" content="{esc(meta_desc(intro))}">
+<link rel="canonical" href="{BASE_URL}/{lang}/corrections.html">
+<link rel="alternate" hreflang="en" href="{BASE_URL}/en/corrections.html">
+<link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/corrections.html">
+{'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
+{_THEME_JS}
+</head>
+<body>
+<div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/corrections.html">{t['switch_lang']}</a></span></div>
+<header class="masthead compact"><div class="wrap">
+  <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
+</div></header>
+<main>
+  <article class="story">
+    <p class="kick">{t['site_name']}</p>
+    <h1>{esc(title)}</h1>
+    <p class="summary">{intro}</p>
+    <section class="revisions">{body}</section>
+  </article>
 </main>
 <footer><div class="wrap"><div class="flagline"></div>
   <div class="legal"><span>© {built_at.year} {t['site_name']}</span> <a href="./">{t['back_home']}</a> <a href="about.html">{'من نحن' if lang == 'ar' else 'About'}</a></div>
@@ -4230,6 +4374,8 @@ def main():
         (dist / lang / "search.html").write_text(
             render_search_page(lang, built_at,
                                cats=sorted({it["cat"] for it in items})), encoding="utf-8")
+        (dist / lang / "corrections.html").write_text(
+            render_corrections_page(lang, items, built_at), encoding="utf-8")
         (dist / lang / "search-index.json").write_text(json.dumps(
             [{"t": it["title"], "u": story_url_path(it["title"], it["pid"], lang),
               "d": truncate(it["dek"], 160),
