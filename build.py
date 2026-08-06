@@ -2554,12 +2554,20 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
    search panel anchor to the sticky nav itself, so they stay full-width and
    unclipped by the scrolling row. ~44px tap targets throughout. */
 @media(max-width:740px){
-  nav.sections .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  nav.sections .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
   nav.sections .wrap::-webkit-scrollbar{display:none}
   nav.sections a{padding-block:.85rem}
   nav.sections .nav-gbtn{padding-block:.85rem}
   nav.sections .nav-group{position:static}
   nav.sections .nav-drop{inset-inline:0;top:100%;min-width:0;border-inline:0}
+  /* iOS Safari clips absolutely-positioned panels inside a composited
+     scroll row even though their anchor (the sticky nav) sits outside it —
+     the tap toggled .open but nothing ever painted (owner report
+     2026-08-06). An OPEN panel therefore goes position:fixed, pinned
+     under the bar at the offset the toggle JS measures into
+     --navdrop-top; fixed boxes escape every scroll container by
+     construction. Scrolling closes open panels (see nav script). */
+  nav.sections .nav-group.open .nav-drop{position:fixed;inset-inline:0;top:var(--navdrop-top,0px)}
   .masthead{padding:.85rem 0 .65rem}
   .masthead .wrap::after{margin-top:.5rem}
   /* Tap targets (a11y, evaluation 2026-08-05): utility controls reach the
@@ -3571,6 +3579,8 @@ def render_page(lang, items, built_at):
             _specials_depth += _sp_link
     _gbtn_js = (
         "var g=this.parentNode,v=!g.classList.contains('open'),n=this.closest('nav');"
+        "n.style.setProperty('--navdrop-top',n.getBoundingClientRect().bottom+'px');"
+        "n.dataset.oy=window.scrollY;"
         "n.querySelectorAll('.nav-group.open').forEach(function(x){x.classList.remove('open');"
         "x.querySelector('button').setAttribute('aria-expanded','false')});"
         "if(v){g.classList.add('open');this.setAttribute('aria-expanded','true')}")
@@ -3702,7 +3712,9 @@ var st=document.getElementById("searchtoggle"),sp=document.getElementById("navse
 function closeSearch(){{if(sp&&!sp.hidden){{sp.hidden=true;st.setAttribute("aria-expanded","false")}}}}
 if(st&&sp)st.addEventListener("click",function(e){{e.preventDefault();var open=!sp.hidden;closeGroups();if(open)closeSearch();else{{sp.hidden=false;st.setAttribute("aria-expanded","true");sp.querySelector("input").focus()}}}});
 document.addEventListener("click",function(e){{if(e.target.closest("nav.sections .nav-drop a")||!e.target.closest("nav.sections")){{closeGroups();closeSearch()}}}});
-document.addEventListener("keydown",function(e){{if(e.key==="Escape"){{closeGroups();if(sp&&!sp.hidden){{closeSearch();st.focus()}}}}}})}})()</script>
+document.addEventListener("keydown",function(e){{if(e.key==="Escape"){{closeGroups();if(sp&&!sp.hidden){{closeSearch();st.focus()}}}}}});
+addEventListener("scroll",function(){{var n=document.querySelector("nav.sections");
+if(n&&n.querySelector(".nav-group.open")&&Math.abs(window.scrollY-(+n.dataset.oy||0))>32)closeGroups()}},{{passive:true}})}})()</script>
 
 <main id="top">
   <div class="wrap hero-zone">
