@@ -658,7 +658,7 @@ def remote_image_ok(url):
                     return False
                 # Reject tracking-pixel-sized files when the server states a size.
                 total = r.headers.get("Content-Range", "").rpartition("/")[2] \
-                    or (r.headers.get("Content-Length") if r.status == 200 else "")
+                    or (r.headers.get("Content-Length") or "" if r.status == 200 else "")
                 if total.isdigit() and int(total) < 600:
                     return False
                 return True
