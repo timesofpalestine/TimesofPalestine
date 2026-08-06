@@ -51,6 +51,11 @@ SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawIm
 SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"  # tips go to the bot, not the channel. Subscribe-with-Google removed 2026-08-02 (owner: no email pop-up on the site).
 TELEGRAM_CHANNEL_URL = "https://t.me/timesofpalestin"  # public delivery channel, for reader follow links
 BASE_URL = "https://timesofpalestine.com"
+# Public corrections-ledger page (owner decision 2026-08-06): the page goes
+# live only once a READER-REQUESTED correction is on the record — none has
+# been yet, so it stays down. Flip to True to publish /{lang}/corrections.html
+# and restore every link to it (footers, story stamps, sitemap, schema).
+CORRECTIONS_PAGE_LIVE = False
 
 TOP_SOURCE = {"en": "Times of Palestine", "ar": "تايمز أوف فلسطين"}
 ARABIC_CHARS_RX = re.compile(r"[؀-ۿ]")
@@ -3118,7 +3123,9 @@ def org_jsonld(lang):
         "logo": {"@type": "ImageObject", "url": f"{BASE_URL}/icon-512.png"},
         "sameAs": [f"{BASE_URL}/en/", f"{BASE_URL}/ar/", TELEGRAM_CHANNEL_URL],
         "publishingPrinciples": f"{BASE_URL}/{lang}/about.html",
-        "correctionsPolicy": f"{BASE_URL}/{lang}/corrections.html",
+        "correctionsPolicy": (f"{BASE_URL}/{lang}/corrections.html"
+                              if CORRECTIONS_PAGE_LIVE else
+                              f"{BASE_URL}/{lang}/about.html"),
         "ownershipFundingInfo": f"{BASE_URL}/{lang}/about.html",
         "actionableFeedbackPolicy": f"{BASE_URL}/{lang}/about.html",
     })
@@ -3723,7 +3730,7 @@ document.addEventListener("keydown",function(e){{if(e.key==="Escape"){{closeGrou
       <span class="contact-id">{SIGNAL_USERNAME}</span></p><p class="footer-contact secondary"><a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} {"←" if lang == "ar" else "→"}</a> <span class="contact-id">{TELEGRAM_BOT_NAME}</span></p></div>
   </div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="corrections.html">{'التصويبات' if lang == 'ar' else 'Corrections'}</a> <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com · timesofpalestine.tv</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>{('<a href="corrections.html">' + ('التصويبات' if lang == 'ar' else 'Corrections') + '</a>') if CORRECTIONS_PAGE_LIVE else ''} <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
     <span>{t['attribution']}</span>
     <a href="{t['switch_href']}">{t['footer_lang']}</a>
   </div>
@@ -3868,12 +3875,16 @@ def render_story(it, lang, related, rail, built_at):
             f'<li><time datetime="{esc(row["at"])}">{esc(row["at"][:10])}</time> '
             f'<strong>{"تصويب" if lang == "ar" and row["type"] == "correction" else "تحديث" if lang == "ar" else row["type"].title()}:</strong> '
             f'{esc(row["note"])}</li>' for row in it["corrections"])
-        ledger_label = ("سجل التصويبات الكامل ←" if lang == "ar"
-                        else "Full corrections ledger →")
+        ledger_link = ""
+        if CORRECTIONS_PAGE_LIVE:
+            ledger_label = ("سجل التصويبات الكامل ←" if lang == "ar"
+                            else "Full corrections ledger →")
+            ledger_link = (f'<p class="ledgerlink">'
+                           f'<a href="../corrections.html">{ledger_label}</a></p>')
         corrections = (
             f'<section class="revisions" aria-labelledby="revision-title">'
             f'<h2 id="revision-title">{esc(heading)}</h2><ol>{rows}</ol>'
-            f'<p class="ledgerlink"><a href="../corrections.html">{ledger_label}</a></p></section>')
+            f'{ledger_link}</section>')
     related_primary = [r for r in related if r is not it and r["cat"] == it["cat"]]
     related_secondary = [r for r in related if r is not it and r["cat"] != it["cat"]]
     related_cards = "".join(card(r, lang, "") for r in (related_primary + related_secondary)[:8])
@@ -4037,7 +4048,7 @@ def render_story(it, lang, related, rail, built_at):
 <footer><div class="wrap">
   <div class="flagline"></div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a> <a href="../corrections.html">{'التصويبات' if lang == 'ar' else 'Corrections'}</a> <a href="../status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>{('<a href="../corrections.html">' + ('التصويبات' if lang == 'ar' else 'Corrections') + '</a>') if CORRECTIONS_PAGE_LIVE else ''} <a href="../status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
     <a href="../">{t['back_home']}</a>
   </div>
 </div></footer>
@@ -4435,8 +4446,9 @@ def main():
         (dist / lang / "search.html").write_text(
             render_search_page(lang, built_at,
                                cats=sorted({it["cat"] for it in items})), encoding="utf-8")
-        (dist / lang / "corrections.html").write_text(
-            render_corrections_page(lang, items, built_at), encoding="utf-8")
+        if CORRECTIONS_PAGE_LIVE:
+            (dist / lang / "corrections.html").write_text(
+                render_corrections_page(lang, items, built_at), encoding="utf-8")
         (dist / lang / "search-index.json").write_text(json.dumps(
             [{"t": it["title"], "u": story_url_path(it["title"], it["pid"], lang),
               "d": truncate(it["dek"], 160),

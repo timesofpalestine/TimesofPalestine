@@ -121,9 +121,8 @@ ABOUT = {
              "personal attacks. We report the issue, never the individual, and we "
              "credit good-faith work precisely: what is promised, funded, underway, "
              "completed and still needed. When we get something wrong we correct it "
-             "promptly and note the change, dated, on the story itself; the full "
-             "record is public on our <a href=\"corrections.html\">corrections "
-             "ledger</a>. To request a correction, contact the newsroom "
+             "promptly and note the change, dated, on the story itself. "
+             "To request a correction, contact the newsroom "
              "on the channel below with the story link and the error."),
             ("Contact the newsroom",
              "Reach us on Signal — encrypted, and anonymous if you choose: "
@@ -209,9 +208,8 @@ ABOUT = {
              "بالصحافة المهنية لا بالإساءات الشخصية. نتناول القضية لا الشخص، "
              "ونمنح العمل الجاد حقّه بدقة: ما وُعد به، وما مُوّل، وما يجري، وما "
              "اكتمل، وما ينتظر. وحين نخطئ نصحح فوراً ونثبّت التعديل بتاريخه على "
-             "المادة نفسها، والسجل الكامل علني في "
-             "<a href=\"corrections.html\">سجل التصويبات</a>. لطلب تصويب، راسل "
-             "غرفة الأخبار عبر القناة أدناه مع رابط المادة وبيان الخطأ."),
+             "المادة نفسها. لطلب تصويب، راسل غرفة الأخبار عبر القناة أدناه مع "
+             "رابط المادة وبيان الخطأ."),
             ("اتصل بغرفة الأخبار",
              "راسلنا على «سيغنال» — مشفّر، ومجهول الهوية إن اخترت: "
              "@TOP.972 أو عبر الزر أدناه. ويمكنك أيضاً مراسلة بوت غرفة الأخبار على "
@@ -587,7 +585,9 @@ def write_extras(dist, langs_items, built_at, base_url, health):
     extra_urls = "".join(
         f"<url><loc>{base_url}/{lang}/{page}</loc></url>"
         for lang, _ in langs_items
-        for page in ("about.html", "corrections.html", "status.html"))
+        for page in (("about.html", "corrections.html", "status.html")
+                     if __import__("build").CORRECTIONS_PAGE_LIVE
+                     else ("about.html", "status.html")))
     sm.write_text(sm.read_text(encoding="utf-8")
                   .replace("</urlset>", extra_urls + "</urlset>"), encoding="utf-8")
     health.checks["discovery_files"] = "ok"
