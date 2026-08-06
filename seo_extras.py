@@ -557,7 +557,8 @@ def write_extras(dist, langs_items, built_at, base_url, health):
     (dist / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")
     for source in dist.parent.glob("google*.html"):
         (dist / source.name).write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
-    for name in ("manifest.json", "sw.js", "icon-512.png", "icon-192.png", "favicon.ico"):
+    for name in ("manifest.json", "sw.js", "icon-512.png", "icon-512-maskable.png",
+                 "icon-192.png", "favicon.ico"):
         source = dist.parent / name
         if source.exists():
             (dist / name).write_bytes(source.read_bytes())
