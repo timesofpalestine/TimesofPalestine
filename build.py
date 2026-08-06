@@ -165,7 +165,7 @@ HEALTH = None
 ORIGINAL_CATEGORIES = {
     "gaza", "westbank", "politics", "economy", "accountability", "research",
     "bitcoin", "diaspora", "arts", "sports", "social", "opinion", "news", "humans",
-    "health", "archive", "arabaid", "women",
+    "health", "archive", "arabaid", "women", "israelipress",
 }
 ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 ORIGINAL_BODY_STATS = {}
@@ -2122,6 +2122,7 @@ STR = {
         "switch_lang": "🌐 العربية", "switch_href": "../ar/",
         "hero_label": "TOP STORY",
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
+                     "israelipress": "Israeli Press",
                      "humans": "Real Lives", "health": "Health & Healing",
                      "women": "Her Story",
                      "arabaid": "Arab Support",
@@ -2191,6 +2192,7 @@ STR = {
         "switch_lang": "🌐 English", "switch_href": "../en/",
         "hero_label": "الخبر الأبرز",
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
+                     "israelipress": "الصحافة الإسرائيلية",
                      "humans": "حكايات فلسطينية", "health": "الصحة والتعافي",
                      "women": "حكايتها",
                      "arabaid": "الإسناد العربي",
@@ -2295,12 +2297,12 @@ def live_fab_html(lang):
             f'<script>{_LIVE_JS}</script>')
 
 SECTION_ORDER = {
-    "en": ["gaza", "westbank", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "en": ["gaza", "westbank", "israelipress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
-    "ar": ["gaza", "westbank", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "ar": ["gaza", "westbank", "israelipress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
 }
-FOCUS_SECTIONS = {"research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
+FOCUS_SECTIONS = {"israelipress", "research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
 
 WEEKDAYS_AR = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
 MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",
@@ -2532,6 +2534,16 @@ nav.sections .nav-group.open .nav-drop{display:block}
 nav.sections .nav-drop a{display:block;padding:.6rem 1rem;border-block-end:0;font-size:.7rem}
 [lang=ar] nav.sections .nav-drop a{font-size:.8rem}
 nav.sections .nav-drop a:hover{background:rgba(255,255,255,.07);color:#fff}
+/* The All-Sections index (owner decision 2026-08-06): one full-width panel,
+   the old four groups as scannable column headings. Anchors to the nav on
+   every width so the flat row's scroll never clips it. */
+nav.sections .nav-group.all{position:static}
+nav.sections .nav-drop.mega{inset-inline:0;min-width:0;border-inline:0;padding:1rem clamp(16px,2.5vw,26px) 1.2rem}
+nav.sections .nav-group.open .nav-drop.mega{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.2rem 1.6rem;align-items:start}
+@media(hover:hover){nav.sections .nav-group.all:hover .nav-drop.mega,nav.sections .nav-group.all:focus-within .nav-drop.mega{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.2rem 1.6rem;align-items:start}}
+nav.sections .mcol{min-width:0}
+nav.sections .mhead{color:#c7a86b;font-size:.62rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:.5rem 1rem .2rem;border-block-end:1px solid rgba(255,255,255,.12);margin-block-end:.25rem}
+[lang=ar] nav.sections .mhead{letter-spacing:0;font-size:.76rem}
 nav.sections a.special{color:#c7a86b}
 nav.sections .nav-util{display:flex;gap:.15rem;margin-inline-start:auto}
 nav.sections a.util{color:#d8d8e2}
@@ -2568,6 +2580,9 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
      --navdrop-top; fixed boxes escape every scroll container by
      construction. Scrolling closes open panels (see nav script). */
   nav.sections .nav-group.open .nav-drop{position:fixed;inset-inline:0;top:var(--navdrop-top,0px)}
+  nav.sections .nav-group.open .nav-drop.mega,
+  nav.sections .nav-group.all:hover .nav-drop.mega,
+  nav.sections .nav-group.all:focus-within .nav-drop.mega{grid-template-columns:1fr;max-height:72vh;overflow-y:auto;gap:.1rem}
   .masthead{padding:.85rem 0 .65rem}
   .masthead .wrap::after{margin-top:.5rem}
   /* Tap targets (a11y, evaluation 2026-08-05): utility controls reach the
@@ -3557,17 +3572,17 @@ def render_page(lang, items, built_at):
     # group) — nothing silently vanishes. Gold specials ride inside
     # In-Depth; nav_primary specials (Sanad — owner order 2026-08-04)
     # stay top-level on the bar itself, never folded into a dropdown.
-    _nav_groups = [
+    _nav_groups_def = [
         ("regions", {"en": "News & Regions", "ar": "الأخبار والمناطق"},
          ["gaza", "westbank", "politics", "diaspora", "news"]),
         ("depth", {"en": "In-Depth", "ar": "في العمق"},
-         ["accountability", "research", "social", "opinion", "archive"]),
+         ["accountability", "research", "israelipress", "social", "opinion", "archive"]),
         ("society", {"en": "Society & Culture", "ar": "المجتمع والثقافة"},
          ["women", "health", "humans", "arts", "sports"]),
         ("economy", {"en": "Economy & Aid", "ar": "الاقتصاد والإسناد"},
          ["economy", "arabaid", "bitcoin"]),
     ]
-    _grouped_keys = {k for _, _, keys in _nav_groups for k in keys}
+    _grouped_keys = {k for _, _, keys in _nav_groups_def for k in keys}
     _leftovers = [k for k in order if visible(k) and k not in _grouped_keys]
     nav_specials_top = ""
     _specials_depth = ""
@@ -3584,8 +3599,25 @@ def render_page(lang, items, built_at):
         "n.querySelectorAll('.nav-group.open').forEach(function(x){x.classList.remove('open');"
         "x.querySelector('button').setAttribute('aria-expanded','false')});"
         "if(v){g.classList.add('open');this.setAttribute('aria-expanded','true')}")
-    nav_groups = ""
-    for _gid, _label, _keys in _nav_groups:
+    # Flat priority row + ONE All-Sections index (owner decision 2026-08-06,
+    # replacing the four per-group dropdowns): the flagship sections are
+    # direct one-tap links — Gaza and the West Bank never hide behind a
+    # menu — and the full paper lives in a single full-width panel whose
+    # columns are the old groups. One behavior on desktop and phone alike.
+    _nav_short = {
+        "en": {"gaza": "Gaza", "westbank": "West Bank",
+               "israelipress": "Israeli Press", "politics": "Politics",
+               "women": "Her Story", "economy": "Economy"},
+        "ar": {"gaza": "غزة", "westbank": "الضفة",
+               "israelipress": "الصحافة الإسرائيلية", "politics": "سياسة",
+               "women": "حكايتها", "economy": "اقتصاد"},
+    }
+    _priority = ["gaza", "westbank", "israelipress", "politics", "women", "economy"]
+    nav_groups = "".join(
+        f'<a href="#{k}">{_nav_short[lang].get(k, t["sections"][k])}</a>'
+        for k in _priority if k in sections and visible(k))
+    _mega_cols = ""
+    for _gid, _label, _keys in _nav_groups_def:
         _keys = [k for k in _keys if k in sections and visible(k)]
         if _gid == "regions":
             _keys += _leftovers
@@ -3594,11 +3626,14 @@ def render_page(lang, items, built_at):
             _links += _specials_depth
         if not _links:
             continue
-        nav_groups += (
-            f'<div class="nav-group"><button class="nav-gbtn" type="button" '
-            f'aria-expanded="false" aria-controls="navg-{_gid}" aria-haspopup="true" '
-            f'onclick="{_gbtn_js}">{_label[lang]} <span class="chev" aria-hidden="true">▾</span></button>'
-            f'<div class="nav-drop" id="navg-{_gid}">{_links}</div></div>')
+        _mega_cols += (f'<div class="mcol"><p class="mhead">{_label[lang]}</p>'
+                       f'{_links}</div>')
+    _all_label = "كل الأقسام" if lang == "ar" else "All Sections"
+    nav_groups += (
+        f'<div class="nav-group all"><button class="nav-gbtn" type="button" '
+        f'aria-expanded="false" aria-controls="navg-all" aria-haspopup="true" '
+        f'onclick="{_gbtn_js}">{_all_label} <span class="chev" aria-hidden="true">▾</span></button>'
+        f'<div class="nav-drop mega" id="navg-all">{_mega_cols}</div></div>')
 
     def research_featured(it):
         media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"{lede_fallback_attrs(it)}></a>'

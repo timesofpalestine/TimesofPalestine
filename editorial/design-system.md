@@ -120,22 +120,25 @@ load-bearing statistic — one or two per story, never as decoration.
   covers); never introduce a second red for the mark, and never
   letter-space the Arabic.
 
-- **Section nav** (`nav.sections`, grouped design — owner order 2026-08-05,
-  after the two-tier bar reached ~19 visible links; line-tab language of
-  #117 + #118 kept): ONE sticky black band. Inline order: THE LATEST (red),
-  four dropdown groups — News & Regions / «الأخبار والمناطق», In-Depth /
-  «في العمق», Society & Culture / «المجتمع والثقافة», Economy & Aid /
-  «الاقتصاد والإسناد» — then the gold `nav_primary` specials as top-level
-  links, then the search/tip utilities anchored inline-end. Group buttons
-  (`.nav-gbtn`) are uppercase line-tabs with the 2px red indicator — no
-  pills, no boxes; panels (`.nav-drop`) are solid `--black` with a 2px red
-  top rule, section links stacked. Panels open on hover/focus-within on
-  pointer devices and on tap everywhere; the button carries
-  `aria-expanded` + `aria-controls`, opening one group closes the others,
-  and Escape or an outside click closes all. Non-primary gold specials
-  ride at the end of the In-Depth panel. New sections join the group
-  lists in `render_page` deliberately; anything not in a group still
-  renders at the end of News & Regions (nothing silently vanishes).
+- **Section nav** (`nav.sections`, flat-priority design — owner decision
+  2026-08-06, replacing the four per-group dropdowns; line-tab language of
+  #117 + #118 kept): ONE sticky black band. Inline order: THE LATEST
+  (red), then DIRECT one-tap links for the flagship sections — Gaza, West
+  Bank, Israeli Press, Politics, Her Story, Economy (short labels from
+  `_nav_short`; flagships never hide behind a menu) — then ONE
+  **All Sections / «كل الأقسام»** button, then the gold `nav_primary`
+  specials, then the search/tip utilities anchored inline-end. The
+  All-Sections panel (`.nav-drop.mega`) is the paper's full index: a
+  full-width solid-`--black` sheet under the bar whose columns are the
+  old four groups as gold `.mhead` headings (News & Regions, In-Depth,
+  Society & Culture, Economy & Aid); 4 columns on desktop, 2 on phones
+  with its own vertical scroll. It opens on hover/focus-within on pointer
+  devices and on tap everywhere; the button carries `aria-expanded` +
+  `aria-controls`, and Escape, an outside click or a real scroll closes
+  it. Non-primary gold specials ride at the end of the In-Depth column.
+  New sections join `_nav_groups_def` (columns) and, if flagship-rank,
+  `_priority` in `render_page`; anything not in a group still renders at
+  the end of News & Regions (nothing silently vanishes).
   **On phones (≤740px)** the bar is ONE horizontally swipeable line of
   tap-height (~44px) tabs — never a wrapped multi-row block (owner report
   2026-08-06) — and panels become full-width sheets under the bar

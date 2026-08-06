@@ -327,7 +327,8 @@ Standing daily desk: Times of Palestine reads the Hebrew and English
 Israeli press (Haaretz, Yedioth/Ynet, Maariv, Israel Hayom, Times of
 Israel, JPost, the think tanks) and publishes what matters to Palestinian
 readers — each source article as its own bilingual original, plus a
-front-pages roundup. The workflow, source list, selection test and
+front-pages roundup, all in the dedicated section `israelipress`
+("Israeli Press" / «الصحافة الإسرائيلية», owner decision 2026-08-06). The workflow, source list, selection test and
 binding rules live in `.claude/skills/israeli-press-review/SKILL.md`;
 the daily editor cycle runs the sweep each morning. Opinion is always
 attributed to its author; think tanks are labelled; owner-supplied
