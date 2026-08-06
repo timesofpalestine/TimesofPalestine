@@ -37,7 +37,7 @@ GAZA_INDEX_URL = "https://www.gazaindex.org/api/v1/public/indicators"
 MOH_KEYS = [
     ("killed", ("gaza.killed.total",), "Killed", "شهداء"),
     ("children", ("gaza.killed.children",), "Children killed", "شهداء أطفال"),
-    ("women", ("gaza.killed.women",), "Women killed", "شهيدات"),
+    ("women", ("gaza.killed.women",), "Women killed", "شهيدة"),
     ("injured", ("gaza.injured.total",), "Wounded", "جرحى"),
     ("press", ("gaza.killed.press", "known_press_killed_in_gaza.records"),
      "Journalists killed", "صحفيون شهداء"),
