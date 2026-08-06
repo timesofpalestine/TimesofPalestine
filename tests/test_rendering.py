@@ -938,6 +938,22 @@ class LatestRailTests(unittest.TestCase):
         self.assertIn('t.closest(".revisions")', build._CLOCK_JS)
 
 
+class StaticFeatureTests(unittest.TestCase):
+    """Static features ship self-hosted assets only: a Google Fonts link
+    leaks every reader's IP to a third party and dies on blocked networks —
+    the same rule the main site already enforces on itself."""
+
+    def test_static_features_do_not_depend_on_third_party_fonts(self):
+        for feature in Path(build.ROOT).iterdir():
+            if not (feature.is_dir() and (feature / ".static-feature").is_file()):
+                continue
+            for asset in feature.rglob("*"):
+                if asset.suffix in (".html", ".css"):
+                    text = asset.read_text(encoding="utf-8")
+                    self.assertNotIn("fonts.googleapis.com", text, asset)
+                    self.assertNotIn("fonts.gstatic.com", text, asset)
+
+
 class CorrectionsPageTests(unittest.TestCase):
     """The public ledger: one editorial event renders once, live stories are
     linked, and expired stories keep their note with a reference id."""
