@@ -50,6 +50,16 @@ jobs:
             and a local `python3 build.py` run to see rendered output and
             warnings.
 
+            Then check the EDITORIAL CALENDAR (owner-approved 2026-08-06):
+            read editorial/calendar-2026.md; any assignment whose window
+            includes today and is not yet marked ✅ is a same-day assignment —
+            ship it in this cycle and mark it ✅ with slug and date in the
+            same PR. The calendar's standing cadence targets (one humans
+            original per week, the sports buildout through September, 2-3
+            Arabic-first originals per month, the monthly tracker refreshes)
+            count toward today's three-to-five improvements whenever they are
+            behind pace.
+
             Then run the ISRAELI PRESS REVIEW (owner directive 2026-08-06,
             daily, non-optional): follow
             .claude/skills/israeli-press-review/SKILL.md to the letter —

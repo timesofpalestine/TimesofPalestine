@@ -314,10 +314,26 @@ Owner approved implementation. Done in this PR:
   `heartbeat.yml`, plus a manually dispatched build to unfreeze the site
   the same hour.
 
-Remaining for the daily editor cycle: the calendar pegs as their windows
-open (rec. E), the archive fixture pending owner-supplied scans (rec. F),
-Arabic feed additions (rec. G), further service guides (rec. H), and the
-weekly humans/sports cadence targets.
+Second wave (same day, owner order "implement all recommendations"):
+
+- **Rec. E:** `editorial/calendar-2026.md` created — every dated window
+  (UNGA recognition audit, ceasefire day-365, olive harvest, both election
+  stretches, the monthly tracker refreshes, the standing cadence targets)
+  now lives in one file, and the daily editor's workflow prompt reads it
+  every morning and ships any assignment whose window includes today.
+- **Rec. G:** Arabic radar feeds added for the health and women beats
+  (`radar-health-ar`, `radar-women-ar`), closing the largest AR wire gaps;
+  Arabic-first commissioning (2–3/month) is a calendar standing target.
+- **Recs. F/H:** four more topics queued — the donation-verification and
+  Palestinian-documents service guides, and two Her Story pieces
+  (women-headed households, the tent-school teachers).
+
+Still open, by design: the archive fixture (blocked on owner-supplied
+scans — listed in the calendar as dormant until then), and an
+outside-GitHub freshness watchdog, deliberately NOT built: during a total
+GitHub outage (like 2026-08-06's) the dispatch API itself returns errors,
+so an external watchdog could only alert, not heal — the in-GitHub
+heartbeat already covers every recoverable case within minutes.
 
 ## Sources consulted (2026-08-06)
 
