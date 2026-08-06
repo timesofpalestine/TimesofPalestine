@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Governments target bitchat as mesh messaging spreads through blackouts</title>
+<desc id="dsc">Diagram of a Bluetooth mesh of phones split into two pockets joined by a bridge node that needs an internet connection, beside a bar chart of bitchat download spikes during shutdowns: more than 48,000 in Nepal in September 2025 (up from about 3,300), 12,581 in Indonesia, 8,749 in Russia and 8,211 in the United States. Footnotes record India's I4C order giving GitHub three hours on 23 July to delete three repositories under Section 79(3)(b), Uganda's threatened block, and version 1.7.1 encryption changes.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="56" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="4" fill="#c7a86b">MESH MESSAGING · OFF-GRID</text>
+<text x="90" y="106" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">Governments target bitchat as blackouts spread it</text>
+<text x="90" y="146" font-family="Cairo,Arial,sans-serif" font-size="27" fill="#aaa9a5">الحكومات تستهدف «بيتشات» بينما ينتشر مع قطع الإنترنت</text>
+<rect x="90" y="168" width="1430" height="2" fill="#2f3034"/>
+
+<!-- MESH PANEL -->
+<rect x="90" y="200" width="730" height="520" rx="10" fill="#17181b" stroke="#2a2b2f" stroke-width="2"/>
+<text x="118" y="246" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8" font-weight="700">Bluetooth mesh — works with no internet</text>
+<text x="118" y="274" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#59a97d">شبكة بلوتوث متشابكة — تعمل دون إنترنت</text>
+
+<!-- links cluster A -->
+<g stroke="#59a97d" stroke-width="2" stroke-dasharray="5 7" opacity="0.85">
+<line x1="200" y1="520" x2="300" y2="400"/>
+<line x1="300" y1="400" x2="430" y2="480"/>
+<line x1="200" y1="520" x2="330" y2="600"/>
+<line x1="330" y1="600" x2="430" y2="480"/>
+<line x1="300" y1="400" x2="330" y2="600"/>
+<line x1="620" y1="360" x2="760" y2="470"/>
+<line x1="620" y1="360" x2="650" y2="560"/>
+<line x1="650" y1="560" x2="760" y2="470"/>
+</g>
+<!-- bridge links -->
+<g stroke="#c7a86b" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round">
+<line x1="430" y1="480" x2="490" y2="430"/>
+<line x1="490" y1="430" x2="620" y2="360"/>
+</g>
+
+<!-- range circle -->
+<circle cx="200" cy="520" r="74" fill="none" stroke="#8a1f2d" stroke-width="1.6" stroke-dasharray="4 6"/>
+<text x="200" y="622" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#aaa9a5">≈ 33 feet</text>
+
+<!-- nodes -->
+<g>
+<g>
+<circle cx="200" cy="520" r="25" fill="#1d1e21" stroke="#59a97d" stroke-width="2"/>
+<rect x="192" y="507" width="16" height="26" rx="3" fill="none" stroke="#f2eee8" stroke-width="1.5"/>
+</g>
+<g>
+<circle cx="300" cy="400" r="25" fill="#1d1e21" stroke="#59a97d" stroke-width="2"/>
+<rect x="292" y="387" width="16" height="26" rx="3" fill="none" stroke="#f2eee8" stroke-width="1.5"/>
+</g>
+<g>
+<circle cx="330" cy="600" r="25" fill="#1d1e21" stroke="#59a97d" stroke-width="2"/>
+<rect x="322" y="587" width="16" height="26" rx="3" fill="none" stroke="#f2eee8" stroke-width="1.5"/>
+</g>
+<g>
+<circle cx="430" cy="480" r="25" fill="#1d1e21" stroke="#59a97d" stroke-width="2"/>
+<rect x="422" y="467" width="16" height="26" rx="3" fill="none" stroke="#f2eee8" stroke-width="1.5"/>
+</g>
+<g>
+<circle cx="620" cy="360" r="25" fill="#1d1e21" stroke="#59a97d" stroke-width="2"/>
+<rect x="612" y="347" width="16" height="26" rx="3" fill="none" stroke="#f2eee8" stroke-width="1.5"/>
+</g>
+<g>
+<circle cx="650" cy="560" r="25" fill="#1d1e21" stroke="#59a97d" stroke-width="2"/>
+<rect x="642" y="547" width="16" height="26" rx="3" fill="none" stroke="#f2eee8" stroke-width="1.5"/>
+</g>
+<g>
+<circle cx="760" cy="470" r="25" fill="#1d1e21" stroke="#59a97d" stroke-width="2"/>
+<rect x="752" y="457" width="16" height="26" rx="3" fill="none" stroke="#f2eee8" stroke-width="1.5"/>
+</g>
+<!-- bridge node -->
+<g>
+<circle cx="490" cy="430" r="31" fill="#1d1e21" stroke="#c7a86b" stroke-width="3"/>
+<rect x="481" y="415" width="18" height="30" rx="3" fill="none" stroke="#c7a86b" stroke-width="1.8"/>
+</g>
+</g>
+
+<text x="490" y="384" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#c7a86b">bridge · needs internet</text>
+<text x="490" y="366" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#c7a86b">جسر يحتاج إنترنت</text>
+
+<text x="250" y="330" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5" letter-spacing="2">MESH POCKET A</text>
+<text x="690" y="640" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5" letter-spacing="2">MESH POCKET B</text>
+
+<!-- blackout marker -->
+<g transform="translate(700,270)">
+<path d="M0 34 L12 0 L24 34" fill="none" stroke="#8a1f2d" stroke-width="2.5"/>
+<path d="M5 22 H19" stroke="#8a1f2d" stroke-width="2.5"/>
+<line x1="-6" y1="40" x2="30" y2="-4" stroke="#C8102E" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text x="694" y="336" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#C8102E">network down</text>
+
+<text x="118" y="678" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">In a total blackout only the Bluetooth layer carries traffic — typical range about 33 feet,</text>
+<text x="118" y="700" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">extended by relaying through intervening phones.</text>
+
+<!-- CHART PANEL -->
+<rect x="850" y="200" width="670" height="520" rx="10" fill="#17181b" stroke="#2a2b2f" stroke-width="2"/>
+<text x="880" y="246" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8" font-weight="700">Downloads during shutdowns</text>
+<text x="880" y="274" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#59a97d">التنزيلات أثناء عمليات الحجب</text>
+
+<line x1="1010" y1="310" x2="1010" y2="640" stroke="#2f3034" stroke-width="2"/>
+
+<!-- Nepal -->
+<text x="998" y="352" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Nepal</text>
+<rect x="1010" y="332" width="360" height="26" fill="#59a97d"/>
+<text x="1382" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8" font-weight="700">48,000+</text>
+<rect x="1010" y="366" width="25" height="10" fill="#286344"/>
+<text x="1045" y="376" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#aaa9a5">≈3,300 in early September 2025, before the ban</text>
+
+<!-- Indonesia -->
+<text x="998" y="442" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Indonesia</text>
+<rect x="1010" y="422" width="94" height="26" fill="#286344"/>
+<text x="1116" y="442" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">12,581</text>
+<text x="1010" y="466" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#aaa9a5">August 2025, during protests</text>
+
+<!-- Russia -->
+<text x="998" y="522" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Russia</text>
+<rect x="1010" y="502" width="65" height="26" fill="#286344"/>
+<text x="1087" y="522" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">8,749</text>
+
+<!-- United States -->
+<text x="998" y="592" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">United States</text>
+<rect x="1010" y="572" width="62" height="26" fill="#286344"/>
+<text x="1084" y="592" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">8,211</text>
+
+<text x="880" y="678" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">Reported by Decrypt (Nepal) and BeInCrypto (Indonesia, Russia, United States).</text>
+<text x="880" y="700" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">No public account records bitchat being used inside Gaza or the West Bank.</text>
+
+<!-- FOOTER CELLS -->
+<g>
+<rect x="90" y="752" width="463" height="112" rx="8" fill="#17181b" stroke="#8a1f2d" stroke-width="2"/>
+<text x="112" y="784" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" letter-spacing="2" fill="#C8102E">INDIA · 23 JULY, 11:16 PM</text>
+<text x="112" y="810" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">I4C gave GitHub three hours to delete three</text>
+<text x="112" y="832" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">repositories, under Section 79(3)(b), IT Act.</text>
+<text x="112" y="854" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">أمر بحذف ثلاثة مستودعات خلال ثلاث ساعات</text>
+</g>
+<g>
+<rect x="573" y="752" width="463" height="112" rx="8" fill="#17181b" stroke="#c7a86b" stroke-width="2"/>
+<text x="595" y="784" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" letter-spacing="2" fill="#c7a86b">UGANDA · BEFORE JANUARY VOTE</text>
+<text x="595" y="810" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">The Uganda Communications Commission</text>
+<text x="595" y="832" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">threatened to block the app before the election.</text>
+<text x="595" y="854" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">تهديد بحجب التطبيق قبل الانتخابات</text>
+</g>
+<g>
+<rect x="1056" y="752" width="464" height="112" rx="8" fill="#17181b" stroke="#286344" stroke-width="2"/>
+<text x="1078" y="784" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" letter-spacing="2" fill="#59a97d">VERSION 1.7.1 · SECURITY RELEASE</text>
+<text x="1078" y="810" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">Photos and voice notes encrypted over Bluetooth;</text>
+<text x="1078" y="832" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">identity keys tied to the device, not synced.</text>
+<text x="1078" y="854" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">تشفير الصور والرسائل الصوتية عبر بلوتوث</text>
+</g>
+
+<text x="90" y="890" font-family="'Libre Franklin',Arial,sans-serif" font-size="12" fill="#6a6a68">TIMES OF PALESTINE · GRAPHICS DESK</text>
+</svg>

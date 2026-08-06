@@ -1,0 +1,39 @@
+title: Governments target bitchat as mesh messaging spreads through blackouts
+category: news
+date: 2026-08-06T05:12:21.126064+00:00
+maxAgeHours: 720
+image: /media/times-of-palestine-bitchat-mesh-adoption-2026-2026-08-06-05-lede.svg
+---
+India's Indian Cyber Crime Coordination Centre, part of the Ministry of Home Affairs, gave GitHub three hours on 23 July to delete three code repositories for bitchat, the Bluetooth mesh messaging app, according to reporting by MediaNama, which dated the order at 11:16 pm, and by crypto.news and CoinGape, which reported the demand was issued under Section 79(3)(b) of India's Information Technology Act.
+
+The stated reason went to the app's design. NEXT IAS reported that I4C told GitHub the app could be exploited to coordinate unlawful assemblies and to get around restrictions imposed by competent authorities.
+
+The order landed during a mobile internet suspension. Crypto.news, citing a Home Ministry order, reported that mobile internet was cut within a 1.5-kilometre radius of Jantar Mantar in Delhi from 4 pm until midnight on 23 July, during student protests over the NEET examination.
+
+Jack Dorsey posted the notice publicly. In the words crypto.news quoted from his post on X, "the Government of India does not like technologies like Bitchat and wants it taken down".
+
+The Internet Freedom Foundation called the order unconstitutional, CoinGape and The Defiant reported, and made a technical point about its limits: deleting repositories does not disable copies of the app already installed on phones. MediaNama reported roughly a week after the deadline that GitHub had not removed the links.
+
+India is the second government this year to move against the app. Crypto.news reported that the Uganda Communications Commission threatened to block bitchat ahead of the country's January general election, and that bitchat developer Calle dismissed the threat, saying the app could not be stopped. Crypto.news separately reported a spike in Ugandan searches for bitchat before that vote.
+
+Adoption has consistently tracked shutdowns rather than marketing. Decrypt reported that downloads in Nepal rose from about 3,300 in early September 2025 to more than 48,000 within days, after the government banned multiple social media platforms during the Gen Z protests. BeInCrypto reported 12,581 downloads in Indonesia that August during protests over parliamentary allowances and police violence, 8,749 in Russia and 8,211 in the United States.
+
+What the app now does has changed since those spikes. The App Store listing for bitchat mesh describes version 1.7.1 as a security release in which private photos and voice notes are encrypted before travelling over Bluetooth, identity verification during encrypted handshakes is strengthened against impersonation, and identity keys are tied to the device rather than synced, so that a seized backup or cloned storage "no longer yields your keys".
+
+The same listing describes push-to-talk voice in private chats and the public mesh channel, and a feature called mesh bridging: separate mesh pockets in one area can find each other, and a user who has internet can flip a switch to relay chat between them, with each bridged message signed by its sender.
+
+The public release notes on the permissionlesstech repository list further additions, among them a geohash bulletin board carrying signed notices over mesh sync, an opt-in gateway mode linking mesh to Nostr relays for location channels, mesh diagnostics commands including ping and trace, and redemption of Cashu ecash tokens.
+
+That split matters where the network is down. The Android repository describes a dual transport: Bluetooth mesh for offline messaging, Nostr relays for anything internet-based. Location channels and bridging need somebody with a connection. In a total blackout, only the Bluetooth layer carries traffic, and only between devices close enough to hear one another — TechTarget put typical Bluetooth range at about 33 feet, extended by relaying through intervening phones.
+
+For Gaza, the documented pattern is repeated collapse rather than steady service. Paltel announced a complete severance of communications and internet in October 2023, Anadolu Agency and NBC News reported, and TechCrunch reported that the operator NetStream went offline days after warning subscribers that a severe fuel shortage would end its service. NetBlocks confirmed in June 2025 a disruption across the central and southern governorates, with Paltel attributing it to a cut on one of the main routes. Fuel and charge are the same constraint a phone mesh runs on.
+
+No public account records bitchat being used inside Gaza or the West Bank. The download surges named in the reporting are Nepal, Indonesia, Uganda, Russia and the United States.
+
+Where the app should be obtained is itself part of the story. The official iOS listing is bitchat mesh on the App Store, requiring iOS 16.0 or later, according to Gizmodo, which puts the Android floor at 8.0; the Android build is published as an APK on the permissionlesstech GitHub releases page. A maintainer note pinned to a GitHub issue in July 2025 states in capitals that there is no official Play Store release and that all unofficial ones should be avoided, and TechTarget reported the same month that copycat apps on Play were not the real thing.
+
+The Play position has since shifted, and the record is not clean. Mirror sites APKCombo and APKPure list a Play package, com.bitchat.droid, at version 1.7.4 with over a million installs, published under the name Verse Communication PBC, and the Android repository's own documentation now refers to Google Play verification procedures alongside GitHub ones. The independent guide bit-chat.xyz advises confirming that package name, and says the project's official site is bitchat.free.
+
+Versions listed do not agree: that guide recorded iOS 1.7.0 as current on 26 July while the App Store page carries 1.7.1 notes. The repository's stated remedy is to check any build against the per-release hash manifest, warning that a build compiled elsewhere cannot be verified — advice it links directly to the takedown demands aimed at the project.
+
+Whether GitHub will comply with the Indian order is still open, as is what happens to the Android download path if a releases page is pulled while a shutdown is running.
