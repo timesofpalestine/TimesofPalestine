@@ -3017,6 +3017,7 @@ function rel(m){
  if(m<60)return m+"m ago";var h=Math.round(m/60);if(h<24)return h+"h ago";return Math.round(h/24)+"d ago"}
 function tick(){var now=Date.now();
  document.querySelectorAll("time[datetime]").forEach(function(t){
+  if(t.closest(".story-stamp")||t.closest(".revisions"))return; // absolute record stays absolute
   var d=Date.parse(t.getAttribute("datetime"));if(!d)return;
   var m=Math.max(1,Math.round((now-d)/6e4));
   var n=t.lastChild;
@@ -3623,6 +3624,7 @@ def render_page(lang, items, built_at):
 <link rel="alternate" type="application/rss+xml" title="{t['site_name']}" href="{BASE_URL}/{lang}/rss.xml">
 <link rel="alternate" type="application/feed+json" title="{t['site_name']}" href="{BASE_URL}/{lang}/feed.json">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="{'ar_AR' if lang == 'ar' else 'en_US'}">
 <meta property="og:site_name" content="{t['site_name']}">
 <meta property="og:title" content="{t['site_name']} — {t['title_suffix']}">
 <meta property="og:description" content="{esc(meta_desc(t['mission']))}">
@@ -3943,9 +3945,11 @@ def render_story(it, lang, related, rail, built_at):
 <meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/icon-192.png"><link rel="manifest" href="/manifest.json"><script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js")</script>
 <title>{esc(it['title'])} — {t['site_name']}</title>
 <meta name="description" content="{desc}">
+<meta name="robots" content="max-image-preview:large">
 <link rel="canonical" href="{page_url}">
 {hreflang}
 <meta property="og:type" content="article">
+<meta property="og:locale" content="{'ar_AR' if lang == 'ar' else 'en_US'}">
 <meta property="og:site_name" content="{t['site_name']}">
 <meta property="og:title" content="{esc(it['title'])}">
 <meta property="og:description" content="{desc}">
@@ -4101,7 +4105,15 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 <meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48">
 <title>{esc(name)} — {t['site_name']}</title>
 <meta name="description" content="{esc(desc)}">
+<meta name="robots" content="max-image-preview:large">
 <link rel="canonical" href="{BASE_URL}/{lang}/section-{cat}.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{t['site_name']}">
+<meta property="og:title" content="{esc(name)} — {t['site_name']}">
+<meta property="og:description" content="{esc(desc)}">
+<meta property="og:url" content="{BASE_URL}/{lang}/section-{cat}.html">
+<meta property="og:image" content="{BASE_URL}/og-banner.png">
+<meta name="twitter:card" content="summary_large_image">
 {'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
 {_THEME_JS}
 </head>
@@ -4141,11 +4153,17 @@ def render_corrections_page(lang, items, built_at):
         "corrections and editorial updates. To request a correction, contact the "
         "newsroom via the About page with the story link and the error.")
     live = {it["pid"]: it for it in items}
-    rows = []
+    # One editorial event, one entry: the ledger stores the same note under
+    # each edition's story id, so identical (date, note) pairs collapse —
+    # keeping the id that is live in THIS edition when there is one.
+    by_event = {}
     for pid, raw in CORRECTIONS["stories"].items():
         for note in validate_corrections(raw, pid, lang):
-            rows.append((note["at"], note["type"], note["note"], pid))
-    rows.sort(reverse=True)
+            key = (note["at"], note["type"], note["note"])
+            if key not in by_event or (pid in live and by_event[key] not in live):
+                by_event[key] = pid
+    rows = sorted(((at, kind, note, pid) for (at, kind, note), pid
+                   in by_event.items()), reverse=True)
     if rows:
         entries = []
         for at, kind, note, pid in rows:
@@ -4287,7 +4305,8 @@ Sitemap: {BASE_URL}/sitemap.xml
 """
 
 REDIRECT_HTML = """<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><title>Times of Palestine</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Times of Palestine</title>
+<meta name="description" content="Independent Palestine news, in English and Arabic — updated continuously.">
 <script>location.replace((navigator.language||"").toLowerCase().indexOf("ar")===0?"ar/":"en/");</script>
 <meta http-equiv="refresh" content="1;url=en/">
 </head><body><p><a href="en/">English</a> · <a href="ar/">العربية</a></p></body></html>"""
