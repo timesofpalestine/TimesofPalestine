@@ -1,0 +1,87 @@
+# Freshness watchdog (owner order 2026-08-06: the front page is never hours old).
+#
+# The 10-minute cadence is carried by rearm.yml's dispatch chain. That chain
+# has one failure mode: if a rearm run itself fails (observed 2026-08-06,
+# 15:37–16:46 UTC GitHub outage — "Service Unavailable" resolving actions,
+# then rearm's curl died with no retry), nothing dispatches the next build
+# and the site freezes until a throttled cron tick finally lands (4+ hours
+# that day). This workflow is the independent second thread that revives a
+# dead chain:
+#
+#   - Its own cron entries fire on GitHub's throttled scheduler — sparse,
+#     but a SEPARATE stream from build.yml's schedule, so one dropped
+#     schedule doesn't silence both.
+#   - It also runs after every completion of the other scheduled workflows
+#     (daily editor, Washington Brief, bitcoin dispatch) — guaranteed
+#     revival points spread through every day at zero extra cost.
+#   - Each run checks: any build queued or running? newest build started
+#     less than STALE_MINUTES ago? If both no → dispatch build.yml.
+#
+# Requires the same fine-grained PAT as rearm.yml (Actions read-and-write,
+# saved as WORKFLOW_DISPATCH_TOKEN or a variant below) — the built-in
+# GITHUB_TOKEN cannot dispatch workflows. Without the secret it exits
+# quietly. PAUSE: set the repo variable SELF_REARM to "off" (same switch as
+# the rearm chain; never edit this file to pause — charter rule).
+name: Freshness heartbeat
+on:
+  schedule:
+    - cron: "11,41 * * * *"
+    - cron: "23,53 * * * *"
+  workflow_run:
+    workflows:
+      - "Daily editor-in-chief cycle"
+      - "Washington Brief (daily deep report)"
+      - "Bitcoin Dispatch (every 48 hours)"
+      - "Diaspora Dispatch (weekly feature)"
+    types: [completed]
+  workflow_dispatch: {}
+permissions: {}
+concurrency:
+  group: heartbeat
+  cancel-in-progress: true
+jobs:
+  revive-if-stale:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    if: vars.SELF_REARM != 'off'
+    env:
+      TOKEN: ${{ secrets.WORKFLOW_DISPATCH_TOKEN || secrets.WORKFLOW || secrets.WORKFLOW_TOKEN || secrets.TOKEN_WORKFLOW || secrets.TOKENWORKFLOW }}
+      REPO: ${{ github.repository }}
+      STALE_MINUTES: "20"
+    steps:
+      - name: Dispatch a build if the chain has gone quiet
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "WORKFLOW_DISPATCH_TOKEN not set — heartbeat dormant."
+            exit 0
+          fi
+          runs=$(curl -s --retry 6 --retry-all-errors --max-time 60 \
+            -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/$REPO/actions/workflows/build.yml/runs?per_page=10") || runs=""
+          verdict=$(printf '%s' "$runs" | python3 -c '
+          import json, sys, os
+          from datetime import datetime, timezone
+          try:
+              rs = json.load(sys.stdin)["workflow_runs"]
+          except Exception:
+              # API unreadable: assume stale — a duplicate dispatch is queued
+              # behind the concurrency group and is harmless; a missed one
+              # freezes the site.
+              print("stale"); raise SystemExit
+          if any(r["status"] in ("queued", "in_progress", "waiting") for r in rs):
+              print("active"); raise SystemExit
+          stale_s = int(os.environ.get("STALE_MINUTES", "20")) * 60
+          now = datetime.now(timezone.utc)
+          newest = max(
+              (datetime.fromisoformat(r["run_started_at"].replace("Z", "+00:00")) for r in rs),
+              default=None,
+          )
+          print("stale" if newest is None or (now - newest).total_seconds() > stale_s else "fresh")
+          ')
+          echo "verdict: $verdict"
+          if [ "$verdict" = "stale" ]; then
+            curl -sf --retry 6 --retry-all-errors --max-time 60 -X POST \
+              -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/$REPO/actions/workflows/build.yml/dispatches" -d '{"ref":"main"}'
+            echo "Chain was dead — dispatched a fresh build."
+          fi

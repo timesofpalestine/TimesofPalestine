@@ -191,6 +191,41 @@ reader-protection accountability); **medical evacuation pathways** (who
 qualifies, which corridors function — grafts onto the health series).
 Deadlines and eligibility always verify-at-source, per charter.
 
+### I′. Freshness is a hard product guarantee (owner order 2026-08-06, added same day)
+
+The owner observed the front page's latest item sitting at **seven hours
+old** — a direct violation of the charter's guiding principle. Diagnosis
+(Actions history, 2026-08-06): a GitHub-side outage from ~15:30 UTC
+("Service Unavailable" resolving actions) failed three builds in a row,
+then killed the 16:46 `rearm.yml` run — whose single no-retry `curl` was
+the whole cadence chain. With rearm dead and the cron schedule throttled
+to one tick every 3–4 hours, **no build ran from 16:18 to ~20:15**, and
+the site froze at the 15:14 deploy.
+
+Standing rule going forward: **"Latest" is minutes old, never hours.**
+The machinery that guarantees it (implemented with this audit):
+
+- `rearm.yml` hardened — retries on every API call, and fail-open: if the
+  idle-check can't be read, dispatch anyway (a duplicate dispatch queues
+  harmlessly behind the `pages-build` concurrency group; a missed one
+  freezes the site). Dispatch itself retries 6× over ~5 minutes.
+- New `heartbeat.yml` — an independent watchdog on its own cron stream
+  that also fires after every scheduled desk workflow (daily editor,
+  Washington Brief, Bitcoin/Diaspora dispatches). If no build is queued,
+  running, or started in the last 20 minutes, it dispatches one. A dead
+  chain now revives at the next heartbeat tick instead of staying dark.
+- Both respect the existing `SELF_REARM=off` pause switch and the same
+  `WORKFLOW_DISPATCH_TOKEN` secret; without the token they exit quietly
+  and say so in the log.
+
+Residual risk, stated honestly: during a **full** GitHub Actions outage
+nothing inside GitHub can run, and staleness lasts until GitHub recovers —
+the heartbeat then catches it within minutes of recovery. If the owner
+wants a watchdog outside GitHub entirely (an external scheduler pinging
+the dispatch API, or a scheduled Claude Routine checking site freshness
+hourly), that is a small add but carries its own recurring cost —
+owner's call; say the word and it ships.
+
 ### I. Queue hygiene (topics.json)
 
 The 55-topic queue predates the ceasefire era in places. Recommend a pass
@@ -260,6 +295,29 @@ Abbas, PA-litigation, ICC/ICJ and Israeli-election files as they move.
 - No pace increase on the investigations desk (3/day is owner-set); the
   recommendations above mostly re-aim existing capacity via topics.json and
   the daily editor cycle rather than adding spend.
+
+## Implementation status (2026-08-06, same day)
+
+Owner approved implementation. Done in this PR:
+
+- **Recs A–D, F (queue side) + I:** `topics.json` restructured — 12 new
+  topics added (displacement ledger, Board of Peace watch, East Jerusalem
+  vote, PNC diaspora vote, draft constitution, World Bank pledges,
+  settlement budget, stranded students, under-fives, Rafah returns, tent
+  economy, remittance guide) and 8 stale entries rewritten in place
+  (elections desk launch on the announced Nov 28 date, the money tracker,
+  the Sept 1 education package, ceasefire-era reframes of the fishing-zone
+  and exit-permit topics, the football buildout). Unwritten queue reordered
+  so the desk's 3/day cadence works the priorities first; calendar-pegged
+  pieces deliberately left to the daily editor per the table in rec. E.
+- **Rec I′:** freshness machinery — hardened `rearm.yml`, new
+  `heartbeat.yml`, plus a manually dispatched build to unfreeze the site
+  the same hour.
+
+Remaining for the daily editor cycle: the calendar pegs as their windows
+open (rec. E), the archive fixture pending owner-supplied scans (rec. F),
+Arabic feed additions (rec. G), further service guides (rec. H), and the
+weekly humans/sports cadence targets.
 
 ## Sources consulted (2026-08-06)
 
