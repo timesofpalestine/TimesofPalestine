@@ -20,6 +20,17 @@ body[dir=rtl] .mast{letter-spacing:0}
 .lang{font-size:12px;text-decoration:none;color:var(--ink);border:1px solid var(--rule);
 padding:5px 12px;border-radius:2px}
 .lang:hover{background:var(--paper)}
+/* Ways out of the report (owner order 2026-08-06): the masthead links home,
+   a back-home pill rides beside the language switch, and the footer carries
+   a site nav — a reader is never locked inside the feature. */
+a.mast{text-decoration:none;color:var(--ink)}
+a.mast:hover{color:var(--red)}
+.topnav{display:flex;align-items:center;gap:8px}
+.lang.home{color:var(--red);border-color:var(--red)}
+.lang.home:hover{background:var(--red-bg)}
+.foot-nav{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;padding-top:18px;border-top:1px solid var(--rule)}
+.foot-nav a{font-size:13px;font-style:normal;text-decoration:none;color:var(--ink);font-weight:600}
+.foot-nav a:hover{color:var(--red)}
 
 /* hero */
 header.hero{padding:56px 0 32px}
@@ -211,7 +222,7 @@ body[dir=rtl] footer.foot{line-height:1.85}
 }
 @media print{
  body{background:#fff;font-size:11pt}
- .top,.lang{display:none}
+ .top,.lang,.foot-nav{display:none}
  .fig{break-inside:avoid;page-break-inside:avoid}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
