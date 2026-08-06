@@ -2524,9 +2524,14 @@ nav.sections .nav-search input:focus{outline:2px solid var(--red);outline-offset
 nav.sections .nav-search button{background:var(--red);color:#fff;border:0;border-radius:var(--r);font:800 .8rem/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:.55rem 1.1rem;cursor:pointer;min-width:44px}
 [lang=ar] nav.sections .nav-search button{letter-spacing:0;font-size:.9rem}
 nav.sections .nav-search button:hover{filter:brightness(1.12)}
-/* Phones: same bar, ~44px tap targets; dropdowns become full-width panels
-   under the bar (group loses its anchor so the sticky nav positions them). */
+/* Phones: ONE swipeable line of tabs (the app pattern readers know), never
+   a two-or-three-row block eating the viewport (owner report 2026-08-06 —
+   the wrapped bar pushed the lead story below the fold). Dropdowns and the
+   search panel anchor to the sticky nav itself, so they stay full-width and
+   unclipped by the scrolling row. ~44px tap targets throughout. */
 @media(max-width:740px){
+  nav.sections .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  nav.sections .wrap::-webkit-scrollbar{display:none}
   nav.sections a{padding-block:.85rem}
   nav.sections .nav-gbtn{padding-block:.85rem}
   nav.sections .nav-group{position:static}
@@ -2629,7 +2634,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .listenbtn:hover{border-color:var(--red);color:var(--red)}
 [lang=ar] .listenbtn{font-size:.9rem}
 /* Floating live-TV pill and its docked corner mini-player */
-.livefab{position:fixed;bottom:1rem;inset-inline-start:1rem;z-index:70;display:inline-flex;align-items:center;gap:.4rem;background:var(--red);color:#fff;border:0;border-radius:2rem;font:800 .74rem/1 var(--sans);letter-spacing:.06em;padding:.48rem .55rem .48rem .9rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.livefab{position:fixed;bottom:calc(1rem + env(safe-area-inset-bottom,0px));inset-inline-start:1rem;z-index:70;display:inline-flex;align-items:center;gap:.4rem;background:var(--red);color:#fff;border:0;border-radius:2rem;font:800 .74rem/1 var(--sans);letter-spacing:.06em;padding:.48rem .55rem .48rem .9rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35)}
 [dir=rtl] .livefab{padding:.48rem .9rem .48rem .55rem}
 [lang=ar] .livefab{letter-spacing:0;font-size:.84rem}
 .livefab .dot{width:8px;height:8px;border-radius:50%;background:#fff;animation:pulse 1.6s infinite}
@@ -2899,9 +2904,27 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 [lang=ar] .fr-card.vote .days i{letter-spacing:0;font-size:.74rem}
 .latest .orig{display:inline-block;background:var(--green);color:#fff;font-size:.56rem;font-weight:800;letter-spacing:.08em;padding:.1rem .35rem;border-radius:2px;margin-inline-start:.4rem;vertical-align:middle}
 @media(max-width:560px){
-  .topbar .wrap{gap:.45rem .8rem}
-  .hero-overlay{padding:2.4rem 1rem .9rem}
-  .topbar .lang{margin-inline-start:0}
+  /* Topbar: one tidy utility row (owner report 2026-08-06 — the wrapped
+     date + toggles read as two ragged lines). The pulsing updated-at stamp
+     IS the alive signal and stays; the long weekday date and timezone
+     suffix yield the room. */
+  .topbar .wrap{gap:.45rem .6rem;flex-wrap:nowrap}
+  .topbar .date{display:none}
+  .topbar .tz{display:none}
+  .topbar .upd{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  .topbar .lang,.topbar .themetoggle,.topbar .litetoggle{flex-shrink:0}
+  /* Hero: the headline sits UNDER the photo, newspaper-app style — an
+     overlay atop a letterboxed portrait frame buried both photo and text.
+     Mirrors the lite-mode static hero, tokens keep light/dark honest. */
+  .hero-imgwrap{background:none;overflow:visible}
+  .hero-imgwrap>a{background:#141419;border-radius:var(--r);overflow:hidden}
+  .hero-overlay{position:static;padding:.85rem 0 0;background:none}
+  .hero-overlay .label{color:var(--red)}
+  .hero-overlay h2,.hero-overlay h2 a{color:var(--ink);text-shadow:none}
+  .hero-overlay h2 a:hover{color:var(--red)}
+  .hero-overlay .meta{color:var(--muted)}
+  .hero-overlay .meta .t{color:var(--muted)}
+  .hero-overlay .meta .src{color:var(--green)}
   .hero-sub{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr}
   .latest{padding:.9rem .8rem}
@@ -3637,7 +3660,7 @@ def render_page(lang, items, built_at):
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="topbar"><div class="wrap">
   <span class="date">{date_str}</span>
-  <span class="upd"><span class="dot"></span>{t['updated']} {time_str} · {t['tz']}</span>
+  <span class="upd"><span class="dot"></span>{t['updated']} {time_str}<span class="tz"> · {t['tz']}</span></span>
   {theme_btn(lang)}{lite_btn(lang)}<a class="lang" href="{t['switch_href']}">{t['switch_lang']}</a>
 </div></div>
 
