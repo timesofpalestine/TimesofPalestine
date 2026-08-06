@@ -40,8 +40,9 @@ their lives?
 
 1. **One source article → one story**, `originals/<slug>.en.txt` +
    `<slug>.ar.txt`, header `title:` / `category:` / `date:` (ISO UTC, never
-   future), then `---`, then body. Categories: usually `westbank`, `gaza`,
-   `politics`, `economy`, `accountability`.
+   future), then `---`, then body. Category: `israelipress` — the
+   dedicated "Israeli Press" / «الصحافة الإسرائيلية» section (owner
+   decision 2026-08-06) is the desk's home on the site.
 2. **Titles**: ONE active sentence, ≤12 words, actor first, complete idea,
    both languages; Arabic verbal sentence naming the actor (or the
    colon-attribution pattern «هآرتس: …»). Never a translated EN headline.

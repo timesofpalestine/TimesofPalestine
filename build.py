@@ -165,7 +165,7 @@ HEALTH = None
 ORIGINAL_CATEGORIES = {
     "gaza", "westbank", "politics", "economy", "accountability", "research",
     "bitcoin", "diaspora", "arts", "sports", "social", "opinion", "news", "humans",
-    "health", "archive", "arabaid", "women",
+    "health", "archive", "arabaid", "women", "israelipress",
 }
 ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 ORIGINAL_BODY_STATS = {}
@@ -2122,6 +2122,7 @@ STR = {
         "switch_lang": "🌐 العربية", "switch_href": "../ar/",
         "hero_label": "TOP STORY",
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
+                     "israelipress": "Israeli Press",
                      "humans": "Real Lives", "health": "Health & Healing",
                      "women": "Her Story",
                      "arabaid": "Arab Support",
@@ -2191,6 +2192,7 @@ STR = {
         "switch_lang": "🌐 English", "switch_href": "../en/",
         "hero_label": "الخبر الأبرز",
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
+                     "israelipress": "الصحافة الإسرائيلية",
                      "humans": "حكايات فلسطينية", "health": "الصحة والتعافي",
                      "women": "حكايتها",
                      "arabaid": "الإسناد العربي",
@@ -2295,12 +2297,12 @@ def live_fab_html(lang):
             f'<script>{_LIVE_JS}</script>')
 
 SECTION_ORDER = {
-    "en": ["gaza", "westbank", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "en": ["gaza", "westbank", "israelipress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
-    "ar": ["gaza", "westbank", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "ar": ["gaza", "westbank", "israelipress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
 }
-FOCUS_SECTIONS = {"research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
+FOCUS_SECTIONS = {"israelipress", "research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
 
 WEEKDAYS_AR = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
 MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",
@@ -3561,7 +3563,7 @@ def render_page(lang, items, built_at):
         ("regions", {"en": "News & Regions", "ar": "الأخبار والمناطق"},
          ["gaza", "westbank", "politics", "diaspora", "news"]),
         ("depth", {"en": "In-Depth", "ar": "في العمق"},
-         ["accountability", "research", "social", "opinion", "archive"]),
+         ["accountability", "research", "israelipress", "social", "opinion", "archive"]),
         ("society", {"en": "Society & Culture", "ar": "المجتمع والثقافة"},
          ["women", "health", "humans", "arts", "sports"]),
         ("economy", {"en": "Economy & Aid", "ar": "الاقتصاد والإسناد"},
