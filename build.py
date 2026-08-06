@@ -2445,10 +2445,18 @@ CSS = """
 }
 [lang=ar]{--serif:"Noto Kufi Arabic",Tahoma,"Noto Naskh Arabic","Amiri",serif;--sans:"Noto Kufi Arabic",Tahoma,"Noto Sans Arabic",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;text-rendering:optimizeLegibility}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
+/* Typographic finish: multi-line headlines balance their rag; running
+   story copy avoids orphans. Progressive — older engines ignore both. */
+h1,h2,h3{text-wrap:balance}
+.story .summary p,.dek,.hero .dek{text-wrap:pretty}
+::selection{background:var(--red);color:#fff}
+/* One house focus ring for keyboard readers, everywhere — links, buttons,
+   controls; replaces the browser's inconsistent defaults. */
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
 .wrap{max-width:var(--max);margin-inline:auto;padding-inline:clamp(16px,2.5vw,26px)}
 .topbar{background:var(--black);color:#cfcfd6;font-size:.75rem}
 .topbar .wrap{display:flex;align-items:center;gap:.8rem 1.1rem;min-height:40px;flex-wrap:wrap;padding-block:.25rem}
