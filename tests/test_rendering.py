@@ -145,6 +145,16 @@ class RenderingTests(unittest.TestCase):
         self.assertIn("nav.sections .nav-drop{display:none;", build.CSS)
         self.assertIn(
             "nav.sections .nav-group.open .nav-drop{display:block}", build.CSS)
+        # Phones: an OPEN panel is position:fixed under the bar — iOS Safari
+        # clips absolutely-positioned panels inside the composited scroll row
+        # (owner report 2026-08-06), and fixed boxes escape by construction.
+        self.assertIn(
+            "nav.sections .nav-group.open .nav-drop{position:fixed;"
+            "inset-inline:0;top:var(--navdrop-top,0px)}", build.CSS)
+        homepage = build.render_page(
+            "en", [item()], datetime(2026, 7, 29, 15, tzinfo=timezone.utc))
+        self.assertIn("--navdrop-top", homepage)   # toggle JS measures the bar
+        self.assertNotIn("-webkit-overflow-scrolling", build.CSS)
 
     def test_google_news_resolution_returns_publisher_article(self):
         class Response:
