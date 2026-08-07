@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">SLV: the diss track and the debate over who represents Palestine</title>
+<desc id="dsc">Two microphones face each other across a dividing line, one marked Shabjdeed and Kufr Aqab, the other Saint Levant and the diaspora stages, beneath the question the song ignited: who speaks for Palestine in music.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+<text x="110" y="78" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="5" fill="#c7a86b">THE SLV DEBATE · ARTS</text>
+<text x="110" y="152" font-family="'Source Serif 4',Georgia,serif" font-size="58" fill="#f2eee8">Who speaks for Palestine in music?</text>
+<text x="110" y="204" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#c7a86b">من يمثّل فلسطين في الغناء؟ — سجال «سلڤ»</text>
+<line x1="110" y1="240" x2="1490" y2="240" stroke="#3a3b3f" stroke-width="2"/>
+<!-- center divide -->
+<line x1="800" y1="300" x2="800" y2="800" stroke="#3a3b3f" stroke-width="3" stroke-dasharray="10 12"/>
+<!-- left mic: Shabjdeed -->
+<g>
+<rect x="330" y="380" width="60" height="170" rx="30" fill="#8a1f2d"/>
+<rect x="336" y="392" width="48" height="60" rx="24" fill="none" stroke="#f2eee8" stroke-width="3"/>
+<line x1="345" y1="410" x2="375" y2="410" stroke="#f2eee8" stroke-width="2"/>
+<line x1="345" y1="426" x2="375" y2="426" stroke="#f2eee8" stroke-width="2"/>
+<rect x="352" y="550" width="16" height="120" fill="#3a3b3f"/>
+<text x="360" y="726" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" letter-spacing="2" fill="#f2eee8">SHABJDEED</text>
+<text x="360" y="764" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#c7a86b">شب جديد · كفر عقب</text>
+<text x="360" y="800" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">BLTNM · Ramallah · the scene under occupation</text>
+</g>
+<!-- right mic: Saint Levant -->
+<g>
+<rect x="1210" y="380" width="60" height="170" rx="30" fill="#286344"/>
+<rect x="1216" y="392" width="48" height="60" rx="24" fill="none" stroke="#f2eee8" stroke-width="3"/>
+<line x1="1225" y1="410" x2="1255" y2="410" stroke="#f2eee8" stroke-width="2"/>
+<line x1="1225" y1="426" x2="1255" y2="426" stroke="#f2eee8" stroke-width="2"/>
+<rect x="1232" y="550" width="16" height="120" fill="#3a3b3f"/>
+<text x="1240" y="726" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" letter-spacing="2" fill="#f2eee8">SAINT LEVANT</text>
+<text x="1240" y="764" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#c7a86b">سانت ليفانت · غزة والمهجر</text>
+<text x="1240" y="800" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">DEIRA · a 40-city world tour · the global stage</text>
+</g>
+<!-- sound waves toward center -->
+<g stroke="#c7a86b" stroke-width="3" fill="none" opacity="0.85">
+<path d="M430 465 q30 0 30 0"/>
+<path d="M450 445 q45 20 45 20 q0 0 -45 20" opacity="0.9"/>
+<path d="M500 430 q65 35 65 35 q0 0 -65 35" opacity="0.6"/>
+<path d="M560 415 q85 50 85 50 q0 0 -85 50" opacity="0.35"/>
+<path d="M1170 445 q-45 20 -45 20 q0 0 45 20" opacity="0.9"/>
+<path d="M1100 430 q-65 35 -65 35 q0 0 65 35" opacity="0.6"/>
+<path d="M1040 415 q-85 50 -85 50 q0 0 85 50" opacity="0.35"/>
+</g>
+<text x="800" y="330" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="4" fill="#c7a86b">«SLV» · 1 AUGUST 2026 · BLTNM</text>
+<text x="800" y="860" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">أغنية واحدة فتحت أوسع نقاش في الموسيقى العربية هذا العام · One song, the year's widest debate in Arab music</text>
+</svg>
