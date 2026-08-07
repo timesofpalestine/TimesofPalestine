@@ -470,7 +470,46 @@ def panel(lang):
               + '<a href="/data/gaza-numbers.csv" download>CSV</a>'
               + (" · تُنسب الأرقام إلى مصادرها الأولية المذكورة أعلاه" if ar
                  else " · cite the primary sources named above") + "</p>")
+    # Machine-readable record of the ledger, emitted only when the download
+    # links are — the JSON/CSV come from the same payload, so advertising a
+    # dataset the build didn't write would be a lie to the crawler.
+    # Dataset, not DataFeed: DataFeed describes a stream of items, while this
+    # is a citable table with two distributions, and Dataset is what Google
+    # Dataset Search actually indexes.
+    ld = ""
+    if dl:
+        as_of = max([d for d in (gaza_asof, wb_asof, pr_asof, gi_latest) if d] or [""])
+        ds = {
+            "@context": "https://schema.org",
+            "@type": "Dataset",
+            "name": title,
+            "description": (
+                "السجل الإنساني الحي لتايمز أوف فلسطين: حصيلة وزارة الصحة في غزة، "
+                "وأرقام مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية عن الضفة الغربية "
+                "واعتداءات المستوطنين، وأعداد الأسرى — منسوبة إلى مصادرها الأولية."
+                if ar else
+                "Times of Palestine's live humanitarian ledger: the Gaza Ministry of "
+                "Health casualty toll, UN OCHA West Bank casualty and settler-attack "
+                "figures, and Palestinian prisoner counts, each attributed to the "
+                "primary source that published it."),
+            "url": f"https://timesofpalestine.com/{lang}/",
+            "inLanguage": lang,
+            "isAccessibleForFree": True,
+            "creator": {"@type": "NewsMediaOrganization",
+                        "name": "Times of Palestine",
+                        "url": "https://timesofpalestine.com/"},
+            "distribution": [
+                {"@type": "DataDownload", "encodingFormat": "application/json",
+                 "contentUrl": "https://timesofpalestine.com/data/gaza-numbers.json"},
+                {"@type": "DataDownload", "encodingFormat": "text/csv",
+                 "contentUrl": "https://timesofpalestine.com/data/gaza-numbers.csv"}],
+        }
+        if as_of:
+            ds["dateModified"] = as_of
+        ld = ('<script type="application/ld+json">'
+              + json.dumps(ds, ensure_ascii=False, separators=(",", ":"))
+              + "</script>")
     return (f'<section class="gaza-index"><div class="wrap">'
             f'<div class="sec-head focus"><h2>{live}{title}</h2><span class="rule"></span></div>'
             f'{gaza_html}{wb_html}{pr_html}{gi_html}{dl}'
-            f'</div></section><script>{PANEL_JS}</script>')
+            f'</div></section>{ld}<script>{PANEL_JS}</script>')

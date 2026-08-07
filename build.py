@@ -3242,7 +3242,7 @@ def card_media(it, pfx):
     """Image if we have one; otherwise a branded flag panel — never an empty column."""
     if it["image"]:
         return (f'<a href="{href(it, pfx)}"><img src="{esc(it["image"])}" '
-                f'alt="{esc(it["title"])}" loading="lazy"{lede_fallback_attrs(it)}></a>')
+                f'alt="{esc(it["title"])}" loading="lazy" decoding="async"{lede_fallback_attrs(it)}></a>')
     return f'<a href="{href(it, pfx)}"><div class="ph">{FLAG_SVG}</div></a>'
 
 def card(it, lang, pfx):
@@ -3274,7 +3274,7 @@ def op_card(it, lang, pfx):
 
 def sub_item(it, lang, pfx):
     thumb = (f'<a class="sub-thumb" href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
-             f'<img src="{esc(it["image"])}" alt="" loading="lazy"{lede_fallback_attrs(it)}></a>'
+             f'<img src="{esc(it["image"])}" alt="" loading="lazy" decoding="async"{lede_fallback_attrs(it)}></a>'
              if it["image"] else '')
     return (f'<article class="sub-item">'
             f'{thumb}'
@@ -3291,7 +3291,7 @@ def latest_item(it, lang, pfx):
     mark = '<span class="orig">TOP</span>' if it.get("original") else ""
     cls = ' class="fresh"' if is_fresh(it["date"]) else ""
     thumb = (f'<a class="lt-thumb" href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
-             f'<img src="{esc(it["image"])}" alt="" loading="lazy" '
+             f'<img src="{esc(it["image"])}" alt="" loading="lazy" decoding="async" '
              f'referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>'
              if it["image"] else "")
     return (f'<li{cls}><div class="lt-body">'
@@ -3413,7 +3413,7 @@ def specials_band_html(lang, items=(), extra=""):
             # frame when the card ribbon crops a photo (esp. mobile 16/5).
             _focus = f' style="object-position:{esc(s["focus"])}"' if s.get("focus") else ""
             img_html = (f'<img src="{esc(s["img"])}" alt="{esc(s["img_alt"][lang])}"'
-                        f'{_focus} loading="lazy">')
+                        f'{_focus} loading="lazy" decoding="async">')
         cards.append(
             f'<a class="fr-card" href="{esc(s["href"][lang])}">{img_html}'
             f'<span class="body"><span class="kick">{esc(s["kicker"][lang])}</span>'
@@ -3547,7 +3547,7 @@ def render_page(lang, items, built_at):
             _valt = "Knesset seat map by bloc: neither side reaches the 61-seat majority without the Arab parties"
         vote_card = (f'<a class="fr-card vote" href="{esc(_vhref)}">'
                      f'<span class="days">{_vdays}</span>'
-                     f'<img src="/media/times-of-palestine-israel-votes-card.svg" alt="{esc(_valt)}" loading="lazy">'
+                     f'<img src="/media/times-of-palestine-israel-votes-card.svg" alt="{esc(_valt)}" loading="lazy" decoding="async">'
                      f'<span class="body"><span class="kick">{esc(_vkick)}</span>'
                      f'<span class="ttl">{esc(_vttl)}</span>'
                      f'<span class="go">{esc(_vcta)}</span></span></a>')
@@ -3633,7 +3633,7 @@ def render_page(lang, items, built_at):
         f'<div class="nav-drop mega" id="navg-all">{_mega_cols}</div></div>')
 
     def research_featured(it):
-        media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy"{lede_fallback_attrs(it)}></a>'
+        media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy" decoding="async"{lede_fallback_attrs(it)}></a>'
                  if it["image"] else '<div class="noimg"><span>§</span></div>')
         return (f'<article class="research-feat"><div class="body">'
                 f'<p class="kick">{t["research_kicker"]}</p>'
