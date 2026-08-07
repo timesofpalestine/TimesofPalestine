@@ -3465,8 +3465,10 @@ def render_page(lang, items, built_at):
         return bool(i.get("standing"))
 
     def hero_ok(i, max_age=HERO_MAX_AGE_H):
+        # arts joined the exclusions 2026-08-07: a fresh profile took the top
+        # slot on a quiet wire — features celebrate, they don't lead the page.
         return (bool(i["image"]) and len(i["title"]) > 30
-                and i["cat"] not in ("social", "research", "opinion", "culture", "israelipress")
+                and i["cat"] not in ("social", "research", "opinion", "culture", "israelipress", "arts")
                 and not evergreen(i)
                 and PALESTINE_RX.search(f"{i['title']} {i['dek']}")  # the top story IS Palestine
                 and not REVIEWISH_RX.search(i["title"])
@@ -3483,10 +3485,12 @@ def render_page(lang, items, built_at):
         if heroes:
             break
     heroes = (heroes
-              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress")
+              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress", "arts")
+                      and not evergreen(i)
                       and PALESTINE_RX.search(f"{i['title']} {i['dek']}")
                       and within_hours(i, HERO_MAX_AGE_H), 1)
               or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress")
+                      and not evergreen(i)
                       and within_hours(i, HERO_MAX_AGE_H), 1))
     hero = heroes[0] if heroes else None
     # Eight items (2×4) under the hero: four left the column trailing dead
@@ -3499,17 +3503,44 @@ def render_page(lang, items, built_at):
         return bool(PALESTINE_RX.search(f"{i['title']} {i['dek']}"))
     # Rail length pairs with the 2×4 hero-sub grid so the two columns end
     # together — neither side trails dead space (owner decision 2026-08-03).
-    latest = [i for i in by_latest if id(i) not in used and i["cat"] != "social" and palestine(i)][:8]
-    rail_ids = {id(i) for i in latest}
-    latest += [i for i in by_latest if id(i) not in used and i["cat"] != "social"
-               and id(i) not in rail_ids][:8 - len(latest)]
+    # One desk may not flood the rail (owner audit 2026-08-07: the press
+    # review took 9 of 9 slots). Chronology holds; a section past its cap
+    # simply yields its slot to the next-freshest story from another desk.
+    RAIL_SECTION_CAP = 4
+
+    def rail_take(pred, want, counts, chosen):
+        out = []
+        for i in by_latest:
+            if len(out) >= want:
+                break
+            if id(i) in chosen or not pred(i):
+                continue
+            if counts.get(i["cat"], 0) >= RAIL_SECTION_CAP:
+                continue
+            counts[i["cat"]] = counts.get(i["cat"], 0) + 1
+            chosen.add(id(i))
+            out.append(i)
+        return out
+
+    _counts, _chosen = {}, set()
+    latest = rail_take(lambda i: id(i) not in used and i["cat"] != "social" and palestine(i), 8, _counts, _chosen)
+    latest += rail_take(lambda i: id(i) not in used and i["cat"] != "social", 8 - len(latest), _counts, _chosen)
     if len(latest) < 8:
         # Small builds: the rail is an index, not an owner of stories — it
         # may re-list what the hero tier already shows rather than run short.
-        rail_ids = {id(i) for i in latest}
-        latest += [i for i in by_latest if i["cat"] != "social"
-                   and id(i) not in rail_ids][:8 - len(latest)]
-    _tickerable = [i for i in by_latest if i["cat"] not in ("social", "israelipress")]
+        latest += rail_take(lambda i: i["cat"] != "social", 8 - len(latest), _counts, _chosen)
+    if len(latest) < 8:
+        # Tiny corpora: an index short of items lists what exists, cap waived.
+        latest += [i for i in by_latest if i["cat"] != "social" and id(i) not in _chosen][:8 - len(latest)]
+    # The breaking ticker is HARD NEWS only (owner audit 2026-08-07: a music
+    # profile ran as "breaking"). Features, reviews, desks and evergreens
+    # never scroll here; if the hard-news pool is empty the ticker falls back
+    # to the old behaviour rather than rendering blank.
+    TICKER_CATS = ("gaza", "westbank", "politics", "news", "accountability",
+                   "economy", "health", "women", "arabaid")
+    _tickerable = [i for i in by_latest if i["cat"] in TICKER_CATS and not evergreen(i)]
+    if not _tickerable:
+        _tickerable = [i for i in by_latest if i["cat"] not in ("social", "israelipress")]
     pal_news = [i for i in _tickerable if palestine(i)]
     ticker_items = (pal_news or _tickerable)[:6]
 

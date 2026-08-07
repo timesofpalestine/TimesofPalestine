@@ -267,21 +267,25 @@ def _call(client, system, messages, tools=None, max_tokens=32000):
     # Must stream. A research pass with adaptive thinking and a large max_tokens can
     # exceed the SDK's 10-minute non-streaming ceiling, and the SDK refuses the call
     # outright rather than letting it run — which is why the desk filed nothing at all.
-    # A transient provider error (overloaded, 429/5xx) gets two bounded retries with
-    # backoff before the window is surrendered — the 2026-08-02 19:00 window lost the
-    # telemedicine report to a single overloaded_error (issue #6 note, 2026-08-03).
+    # A transient provider error (overloaded, 429/5xx) gets bounded retries with
+    # exponential backoff before the window is surrendered. Two 30/60s retries
+    # proved too shallow — the 2026-08-07 12:03 window died to an overload that
+    # outlasted them (site audit, same day), as the 2026-08-02 19:00 window had
+    # before. Five attempts across ~7.5 minutes ride out a real overload spike
+    # while still finishing well inside the desk window.
     last = None
-    for attempt in range(3):
+    for attempt in range(5):
         if attempt:
-            time.sleep(30 * attempt)
-            print(f"  → desk retry {attempt}/2 after {type(last).__name__}")
+            wait = min(240, 30 * (2 ** (attempt - 1)))
+            time.sleep(wait)
+            print(f"  → desk retry {attempt}/4 after {type(last).__name__} (waited {wait}s)")
         try:
             with client.messages.stream(**kwargs) as stream:
                 resp = stream.get_final_message()
             break
         except Exception as e:
             last = e
-            if attempt == 2 or not _retryable_api_error(e):
+            if attempt == 4 or not _retryable_api_error(e):
                 raise
     text = "".join(b.text for b in resp.content if b.type == "text").strip()
     return text, getattr(resp, "stop_reason", None)

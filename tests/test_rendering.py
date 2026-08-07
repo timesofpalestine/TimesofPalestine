@@ -932,7 +932,7 @@ class StandingFlagTests(unittest.TestCase):
             "title": "Israeli forces raid a Gaza district as the day begins",
             "link": "https://example.com/fresh-long", "pid": "freshlong1",
             "date": built_at - timedelta(minutes=30),
-            "image": "/media/x.svg", "score": 50,
+            "image": "/media/x.svg", "score": 50, "cat": "gaza",
             "max_age_hours": 999999})
         guide = item()
         guide.update({
@@ -1597,3 +1597,60 @@ class CrossDeskDedupeTests(unittest.TestCase):
             "request over embezzlement charges back home.",
             hours_after=6, n=6)
         self.assertEqual(len(build.dedupe_events([congress, arrest])), 2)
+
+
+class FrontPageDisciplineTests(unittest.TestCase):
+    """Owner audit 2026-08-07: features never lead, the ticker is hard news
+    only, and no single desk floods the Latest rail."""
+
+    def _item(self, **kw):
+        it = item()
+        it.update({"image": "/media/x.jpg", "pid": kw.get("pid", "p%08d" % (abs(hash(kw.get("title", "x"))) % 10**8))})
+        it.update(kw)
+        return it
+
+    def test_arts_feature_never_takes_the_hero(self):
+        built_at = datetime(2026, 8, 7, 15, tzinfo=timezone.utc)
+        feature = self._item(
+            title="A Palestinian musician rebuilds Gaza's oldest song archive",
+            cat="arts", original=True, score=999,
+            date=built_at - timedelta(minutes=5), pid="artfeat001")
+        wire = self._item(
+            title="Israeli forces raid Nablus in Palestine overnight on Friday",
+            cat="westbank", score=20,
+            date=built_at - timedelta(minutes=40), pid="wirenb0001")
+        homepage = build.render_page("en", [feature, wire], built_at)
+        overlay = homepage.split("hero-overlay", 1)[1][:400]
+        self.assertIn("Nablus", overlay)
+        self.assertNotIn("song archive", overlay)
+
+    def test_ticker_is_hard_news_only(self):
+        built_at = datetime(2026, 8, 7, 15, tzinfo=timezone.utc)
+        feature = self._item(
+            title="A Palestinian musician rebuilds Gaza's oldest song archive",
+            cat="arts", date=built_at - timedelta(minutes=5), pid="tickart001")
+        wire = self._item(
+            title="Israeli forces raid Nablus in Palestine overnight on Friday",
+            cat="westbank", date=built_at - timedelta(minutes=40), pid="ticknb0001")
+        homepage = build.render_page("en", [feature, wire], built_at)
+        ticker = homepage.split('<div class="track">', 1)[1].split("</div>", 1)[0]
+        self.assertIn("Nablus", ticker)
+        self.assertNotIn("song archive", ticker)
+
+    def test_latest_rail_caps_a_single_section(self):
+        built_at = datetime(2026, 8, 7, 15, tzinfo=timezone.utc)
+        flood = [self._item(
+            title=f"Israeli daily says the Palestine file shifts again number {n}",
+            cat="israelipress", original=True,
+            link=f"original:ip{n}.en",
+            date=built_at - timedelta(minutes=3 + n), pid=f"ipflood{n:03d}")
+            for n in range(8)]
+        others = [self._item(
+            title=f"Gaza hospitals in Palestine report new shortage figures {n}",
+            cat="health",
+            date=built_at - timedelta(minutes=90 + n), pid=f"hlthx{n:04d}")
+            for n in range(4)]
+        homepage = build.render_page("en", flood + others, built_at)
+        rail = homepage.split('<aside class="latest">', 1)[1].split("</aside>", 1)[0]
+        self.assertLessEqual(rail.count("Israeli daily says"), 4)
+        self.assertIn("Gaza hospitals", rail)
