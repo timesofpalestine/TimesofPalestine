@@ -1,0 +1,74 @@
+"""The Hebrew-first wire must parse both feed dialects and never crash the sweep."""
+import json
+import subprocess
+import sys
+import unittest
+from datetime import datetime, timezone
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import israeli_press_fetch as wire  # noqa: E402
+
+RSS = """<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>חדשות</title>
+<item>
+ <title><![CDATA[הקבינט יתכנס הערב לדיון על מתווה עזה]]></title>
+ <link>https://example.co.il/article/1</link>
+ <pubDate>Fri, 07 Aug 2026 06:10:00 +0300</pubDate>
+ <description><![CDATA[<p>דיון על <b>המתווה</b> בן 15 הנקודות.</p>]]></description>
+</item>
+<item>
+ <title>כותרת ישנה מאוד</title>
+ <link>https://example.co.il/article/2</link>
+ <pubDate>Mon, 01 Jan 2024 00:00:00 +0200</pubDate>
+ <description>ארכיון</description>
+</item>
+</channel></rss>"""
+
+ATOM = """<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>English wire</title>
+<entry>
+ <title>Cabinet convenes on Gaza roadmap</title>
+ <link href="https://example.com/a/1"/>
+ <updated>2026-08-07T05:00:00Z</updated>
+ <summary>The fifteen-point plan discussion.</summary>
+</entry>
+</feed>"""
+
+
+class ParseTests(unittest.TestCase):
+    def test_rss_hebrew_items_parse_with_clean_text(self):
+        items = wire.parse_feed(RSS.encode("utf-8"))
+        self.assertEqual(len(items), 2)
+        self.assertEqual(items[0]["title"], "הקבינט יתכנס הערב לדיון על מתווה עזה")
+        self.assertNotIn("<", items[0]["summary"])
+        self.assertEqual(items[0]["when"].tzinfo, timezone.utc)
+
+    def test_atom_items_parse(self):
+        items = wire.parse_feed(ATOM.encode("utf-8"))
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["link"], "https://example.com/a/1")
+        self.assertEqual(items[0]["when"],
+                         datetime(2026, 8, 7, 5, 0, tzinfo=timezone.utc))
+
+    def test_malformed_feed_raises_and_is_survivable(self):
+        with self.assertRaises(Exception):
+            wire.parse_feed(b"this is not xml")
+
+    def test_cli_exits_zero_even_with_unreachable_feeds(self, ):
+        feeds = {"feeds": [{"outlet": "Dead", "lang": "he",
+                            "url": "http://127.0.0.1:1/none.xml"}]}
+        tmp = Path(__file__).parent / "fixtures" / "_press_feeds_tmp.json"
+        tmp.write_text(json.dumps(feeds), encoding="utf-8")
+        try:
+            proc = subprocess.run(
+                [sys.executable, str(Path(wire.__file__)), "--feeds", str(tmp)],
+                capture_output=True, text=True, timeout=60)
+            self.assertEqual(proc.returncode, 0)
+            self.assertIn("Israeli press wire", proc.stdout)
+        finally:
+            tmp.unlink(missing_ok=True)
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -11,17 +11,35 @@ in BOTH editions, plus one front-pages roundup. Owner directive 2026-08-06;
 launch batch: `originals/*-2026-08-06.*` (twelve items from issue 11535 of
 the al-Masdar bulletin).
 
-## Sources to sweep
+## Sources to sweep — HEBREW FIRST (owner order 2026-08-07)
 
-**Hebrew dailies/sites** (read via their RSS or homepage; translate yourself):
-Haaretz (haaretz.co.il), Ynet/Yedioth (ynet.co.il), Maariv (maariv.co.il),
-Israel Hayom (israelhayom.co.il), Walla News, Kan 11, N12/Mako, Calcalist,
-Globes.
-**English editions:** Haaretz English, Times of Israel, Jerusalem Post.
-**Think tanks** (label them as such, always): INSS, BESA (Begin-Sadat),
-JISS, Misgav. **Owner-supplied bulletins** (al-Masdar and similar): treat
-as source material pointing at the underlying outlets — never republish
-the bulletin's translation text itself; it is someone's copyrighted work.
+The desk reads the Hebrew press in Hebrew and translates in-house. Never
+depend on anyone else's translation layer — not a bulletin's, not an
+aggregator's. The sweep starts with the in-repo wire:
+
+```
+python3 israeli_press_fetch.py --hours 36
+```
+
+It pulls the Hebrew (and English) RSS feeds listed in
+`editorial/israeli-press-feeds.json` — Ynet, Maariv, Israel Hayom, Walla,
+Haaretz Hebrew, plus the English editions — and prints headline, timestamp,
+summary and link per outlet, in the source language. From that digest,
+select per the relevance test below, then WebFetch each chosen article's
+URL and work from the full Hebrew text: lock the facts, then compose
+fresh English and fresh Arabic — never chain-translate through a third
+language. (The wire is fail-open; if a feed dies, WebFetch the outlet's
+homepage or fall back to WebSearch. In sandboxes whose egress blocks
+Israeli domains, WebSearch is the fallback and the item notes nothing —
+CI runners have open egress and the wire works there.)
+
+Also sweep the **think tanks** (label them as such, always): INSS, BESA
+(Begin-Sadat), JISS, Misgav, the Moshe Dayan Center.
+
+**Owner-supplied bulletins** (al-Masdar and similar) are a CROSS-CHECK,
+not a source: use them to catch stories the wire missed, then find and
+read the underlying Hebrew article and write from it. Never republish the
+bulletin's translation text itself; it is someone's copyrighted work.
 
 ## What is relevant
 

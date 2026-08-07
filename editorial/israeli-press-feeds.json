@@ -1,0 +1,15 @@
+{
+  "comment": "Hebrew-first source list for the Israeli press desk. israeli_press_fetch.py reads this; edit here, not in code. Every feed is fetched fail-open — a dead URL warns and is skipped, never blocks.",
+  "feeds": [
+    { "outlet": "Ynet", "lang": "he", "url": "https://www.ynet.co.il/Integration/StoryRss2.xml" },
+    { "outlet": "Ynet — politics", "lang": "he", "url": "https://www.ynet.co.il/Integration/StoryRss3082.xml" },
+    { "outlet": "Maariv — diplomacy", "lang": "he", "url": "https://www.maariv.co.il/Rss/RssFeedsPolitiMedini" },
+    { "outlet": "Maariv — breaking", "lang": "he", "url": "https://www.maariv.co.il/Rss/RssFeedsMivzakiChadashot" },
+    { "outlet": "Israel Hayom", "lang": "he", "url": "https://www.israelhayom.co.il/rss.xml" },
+    { "outlet": "Walla News", "lang": "he", "url": "https://rss.walla.co.il/feed/22" },
+    { "outlet": "Haaretz (Hebrew)", "lang": "he", "url": "https://www.haaretz.co.il/srv/htz---all-articles" },
+    { "outlet": "Haaretz English", "lang": "en", "url": "https://www.haaretz.com/srv/haaretz-latestnews" },
+    { "outlet": "Times of Israel", "lang": "en", "url": "https://www.timesofisrael.com/feed/" },
+    { "outlet": "Jerusalem Post", "lang": "en", "url": "https://www.jpost.com/rss/rssfeedsfrontpage.aspx" }
+  ]
+}
