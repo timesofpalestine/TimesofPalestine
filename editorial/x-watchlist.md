@@ -36,6 +36,7 @@ Rules of use:
 | @hzomlot | Husam Zomlot | London embassy; recognition diplomacy |
 | @BarakRavid | Barak Ravid, Axios | Owner-flagged 2026-08-05: very important source — his Axios reporting breaks US–Israel–Iran diplomacy (Hormuz talks, ceasefire mechanics, White House readouts) hours ahead of the wires. Sweep every run; significant reports are same-day coverage in both languages, always crediting him and Axios by name for the reporting. |
 | Mohammad Dahlan — Facebook (verified page) | Exiled Fatah leader | Kushner channel; Gaza governance file |
+| @joekent16jan19 | Joe Kent, ex-NCTC director | Owner-flagged 2026-08-07: important voice on Israel's role in American policy — resigned over the Iran war blaming Israeli pressure, now campaigns against deeper US-Israel military integration (NDAA Section 219). Track what he says on Israel and its role in America; significant statements are same-day coverage in both languages, always as attributed claims with the counter-voices (McConnell, mainstream pushback) carried beside them. |
 
 ## Tier 2 — journalists and witnesses on the ground
 

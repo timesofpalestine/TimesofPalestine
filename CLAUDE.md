@@ -337,6 +337,25 @@ credited — the bulletin's own translation text is never republished.
 Launch batch: twelve items dated 2026-08-06. Claude's beat; other agents
 route Israeli-press story ideas via issue #6.
 
+## Joe Kent watch (owner directive 2026-08-07)
+
+Standing beat: track Joe Kent (@joekent16jan19) — the former National
+Counterterrorism Center director who resigned in March 2026 blaming the
+Iran war on "pressure from Israel and its powerful American lobby" — as an
+important voice on Israel and its role in American policy. Cover his
+significant statements same-day in both languages: his X posts, interviews
+and campaigns (e.g. against NDAA Section 219 US-Israel military
+integration). Discipline is mandatory: his statements are attributed
+claims, quoted precisely, never adopted as the paper's voice; the
+counter-voices (McConnell's antisemitism charge, mainstream rebuttals) are
+carried beside them, and the antisemitism debate around his framing is
+reported honestly. The beat's frame for Palestinian readers: how far
+Washington's debate over Israel's role in US policy is opening, and what
+that means for Gaza and the West Bank. Part of the DC-policy beat
+(Washington Brief); Claude's beat, launch report
+`originals/joe-kent-israel-debate-2026.*`. Other agents route Kent items
+via issue #6.
+
 ## Breaking-news watchlist (owner directive 2026-08-01)
 
 `editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
