@@ -3447,7 +3447,9 @@ def render_page(lang, items, built_at):
     # Hero & second tier are chosen by score (importance); Latest rail and the
     # breaking ticker stay strictly chronological. The hero must be real, recent
     # hard news — never an opinion piece, review, or multi-day-old feature.
-    now = datetime.now(timezone.utc)
+    # Freshness is measured against built_at (the wall clock in production),
+    # so a page renders identically for a given input set and build moment.
+    now = built_at
 
     def within_hours(i, max_age):
         return (now - i["date"]).total_seconds() / 3600 <= max_age
