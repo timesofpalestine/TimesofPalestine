@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Gaza immunisation: routine coverage falls below 70 per cent as UN agencies restart catch-up rounds</title>
+  <desc id="dsc">Chart comparing routine childhood immunisation coverage in the Gaza Strip — 98 per cent before the war against below 70 per cent in November 2025 — alongside a grid showing 31 of 54 immunisation facilities no longer functioning, and a summary of the three catch-up rounds targeting 44,000 children under three, with more than 14,000 reached in round one (9 to 20 November 2025), round two from 18 to 29 January 2026 delivered by 170 teams at 129 health facilities, and round three from 5 to 9 April 2026 targeting about 6,000 children under three. Sources: UNICEF, WHO, Palestinian Ministry of Health via WAFA.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="barOld" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#59a97d"/>
+      <stop offset="1" stop-color="#286344"/>
+    </linearGradient>
+    <linearGradient id="barNew" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8102E"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- header -->
+  <text x="70" y="76" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="4.5" fill="#c7a86b">GAZA · PUBLIC HEALTH</text>
+  <text x="70" y="134" font-family="'Source Serif 4',Georgia,serif" font-size="43" fill="#f2eee8">UN agencies restart Gaza immunisation as coverage falls below 70%</text>
+  <text x="70" y="180" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#c7a86b" direction="rtl">وكالات أممية تستأنف حملات التطعيم في غزة مع تراجع التغطية دون 70٪</text>
+  <line x1="70" y1="212" x2="1540" y2="212" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2"/>
+
+  <!-- PANEL A -->
+  <rect x="70" y="242" width="430" height="562" rx="10" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/>
+  <text x="100" y="292" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8" font-weight="600">Routine childhood coverage</text>
+  <text x="100" y="324" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" direction="rtl">تغطية التطعيم الروتيني للأطفال</text>
+
+  <line x1="100" y1="750" x2="470" y2="750" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+  <rect x="140" y="400" width="110" height="350" fill="url(#barOld)"/>
+  <text x="195" y="382" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="42" fill="#59a97d">98%</text>
+  <text x="195" y="782" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Before the war</text>
+
+  <rect x="310" y="500" width="110" height="250" fill="url(#barNew)"/>
+  <text x="365" y="482" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="42" fill="#C8102E">&#60;70%</text>
+  <text x="365" y="782" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">November 2025</text>
+
+  <text x="100" y="368" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">UNICEF estimate, Gaza Strip</text>
+
+  <!-- PANEL B -->
+  <rect x="530" y="242" width="470" height="562" rx="10" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/>
+  <text x="560" y="292" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8" font-weight="600">Immunisation facilities</text>
+  <text x="560" y="324" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" direction="rtl">مراكز التطعيم في القطاع</text>
+
+  <g>
+    <!-- 54 units: first 31 damaged/destroyed (red outline), remaining 23 functioning (green) -->
+    <g fill="#8a1f2d" fill-opacity="0.35" stroke="#C8102E" stroke-width="2">
+      <circle cx="575" cy="390" r="15"/><circle cx="621" cy="390" r="15"/><circle cx="667" cy="390" r="15"/><circle cx="713" cy="390" r="15"/><circle cx="759" cy="390" r="15"/><circle cx="805" cy="390" r="15"/><circle cx="851" cy="390" r="15"/><circle cx="897" cy="390" r="15"/><circle cx="943" cy="390" r="15"/>
+      <circle cx="575" cy="436" r="15"/><circle cx="621" cy="436" r="15"/><circle cx="667" cy="436" r="15"/><circle cx="713" cy="436" r="15"/><circle cx="759" cy="436" r="15"/><circle cx="805" cy="436" r="15"/><circle cx="851" cy="436" r="15"/><circle cx="897" cy="436" r="15"/><circle cx="943" cy="436" r="15"/>
+      <circle cx="575" cy="482" r="15"/><circle cx="621" cy="482" r="15"/><circle cx="667" cy="482" r="15"/><circle cx="713" cy="482" r="15"/><circle cx="759" cy="482" r="15"/><circle cx="805" cy="482" r="15"/><circle cx="851" cy="482" r="15"/><circle cx="897" cy="482" r="15"/><circle cx="943" cy="482" r="15"/>
+      <circle cx="575" cy="528" r="15"/><circle cx="621" cy="528" r="15"/><circle cx="667" cy="528" r="15"/><circle cx="713" cy="528" r="15"/>
+    </g>
+    <g stroke="#C8102E" stroke-width="2.4" stroke-linecap="round" opacity="0.9">
+      <path d="M568 383 l14 14 M582 383 l-14 14"/><path d="M614 383 l14 14 M628 383 l-14 14"/><path d="M660 383 l14 14 M674 383 l-14 14"/><path d="M706 383 l14 14 M720 383 l-14 14"/><path d="M752 383 l14 14 M766 383 l-14 14"/><path d="M798 383 l14 14 M812 383 l-14 14"/><path d="M844 383 l14 14 M858 383 l-14 14"/><path d="M890 383 l14 14 M904 383 l-14 14"/><path d="M936 383 l14 14 M950 383 l-14 14"/>
+      <path d="M568 429 l14 14 M582 429 l-14 14"/><path d="M614 429 l14 14 M628 429 l-14 14"/><path d="M660 429 l14 14 M674 429 l-14 14"/><path d="M706 429 l14 14 M720 429 l-14 14"/><path d="M752 429 l14 14 M766 429 l-14 14"/><path d="M798 429 l14 14 M812 429 l-14 14"/><path d="M844 429 l14 14 M858 429 l-14 14"/><path d="M890 429 l14 14 M904 429 l-14 14"/><path d="M936 429 l14 14 M950 429 l-14 14"/>
+      <path d="M568 475 l14 14 M582 475 l-14 14"/><path d="M614 475 l14 14 M628 475 l-14 14"/><path d="M660 475 l14 14 M674 475 l-14 14"/><path d="M706 475 l14 14 M720 475 l-14 14"/><path d="M752 475 l14 14 M766 475 l-14 14"/><path d="M798 475 l14 14 M812 475 l-14 14"/><path d="M844 475 l14 14 M858 475 l-14 14"/><path d="M890 475 l14 14 M904 475 l-14 14"/><path d="M936 475 l14 14 M950 475 l-14 14"/>
+      <path d="M568 521 l14 14 M582 521 l-14 14"/><path d="M614 521 l14 14 M628 521 l-14 14"/><path d="M660 521 l14 14 M674 521 l-14 14"/><path d="M706 521 l14 14 M720 521 l-14 14"/>
+    </g>
+    <g fill="#286344" stroke="#59a97d" stroke-width="2">
+      <circle cx="759" cy="528" r="15"/><circle cx="805" cy="528" r="15"/><circle cx="851" cy="528" r="15"/><circle cx="897" cy="528" r="15"/><circle cx="943" cy="528" r="15"/>
+      <circle cx="575" cy="574" r="15"/><circle cx="621" cy="574" r="15"/><circle cx="667" cy="574" r="15"/><circle cx="713" cy="574" r="15"/><circle cx="759" cy="574" r="15"/><circle cx="805" cy="574" r="15"/><circle cx="851" cy="574" r="15"/><circle cx="897" cy="574" r="15"/><circle cx="943" cy="574" r="15"/>
+      <circle cx="575" cy="620" r="15"/><circle cx="621" cy="620" r="15"/><circle cx="667" cy="620" r="15"/><circle cx="713" cy="620" r="15"/><circle cx="759" cy="620" r="15"/><circle cx="805" cy="620" r="15"/><circle cx="851" cy="620" r="15"/><circle cx="897" cy="620" r="15"/><circle cx="943" cy="620" r="15"/>
+    </g>
+  </g>
+  <text x="560" y="710" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#C8102E">31 of 54</text>
+  <text x="560" y="744" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">no longer functioning after damage or destruction</text>
+  <text x="560" y="776" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Facilities operating before October 2023 — UNICEF</text>
+
+  <!-- PANEL C -->
+  <rect x="1030" y="242" width="510" height="562" rx="10" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/>
+  <text x="1060" y="292" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8" font-weight="600">Catch-up campaign, children under three</text>
+  <text x="1060" y="324" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" direction="rtl">جولات حملة التطعيم التعويضية</text>
+
+  <text x="1060" y="378" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Target across three rounds</text>
+  <rect x="1060" y="392" width="450" height="28" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="1060" y="392" width="143" height="28" rx="6" fill="#59a97d"/>
+  <text x="1060" y="452" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#f2eee8">14,000<tspan font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5"> reached in round 1 of </tspan>44,000</text>
+
+  <g font-family="'Libre Franklin',Arial,sans-serif">
+    <circle cx="1082" cy="516" r="20" fill="none" stroke="#c7a86b" stroke-width="2"/>
+    <text x="1082" y="523" text-anchor="middle" font-size="19" fill="#c7a86b">1</text>
+    <text x="1120" y="510" font-size="21" fill="#f2eee8">9–20 November 2025</text>
+    <text x="1120" y="536" font-size="17" fill="#aaa9a5">more than 14,000 children reached</text>
+
+    <circle cx="1082" cy="608" r="20" fill="none" stroke="#c7a86b" stroke-width="2"/>
+    <text x="1082" y="615" text-anchor="middle" font-size="19" fill="#c7a86b">2</text>
+    <text x="1120" y="602" font-size="21" fill="#f2eee8">18–29 January 2026</text>
+    <text x="1120" y="628" font-size="17" fill="#aaa9a5">170 teams at 129 health facilities</text>
+
+    <circle cx="1082" cy="700" r="20" fill="#c7a86b" fill-opacity="0.18" stroke="#c7a86b" stroke-width="2"/>
+    <text x="1082" y="707" text-anchor="middle" font-size="19" fill="#c7a86b">3</text>
+    <text x="1120" y="694" font-size="21" fill="#f2eee8">5–9 April 2026</text>
+    <text x="1120" y="720" font-size="17" fill="#aaa9a5">about 6,000 children under three</text>
+  </g>
+  <text x="1060" y="776" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">One in five children under three is zero-dose or has missed doses</text>
+
+  <!-- footer -->
+  <line x1="70" y1="836" x2="1540" y2="836" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="70" y="868" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: UNICEF, WHO, Palestinian Ministry of Health via WAFA</text>
+  <text x="1540" y="868" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#c7a86b" direction="rtl">تايمز أوف فلسطين</text>
+</svg>
