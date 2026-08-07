@@ -17,6 +17,11 @@ land in a specific window.
   least two more from: Gaza's athletes a year into the ceasefire, the West
   Bank Premier League season under closure, a diaspora player profile
   (celebratory register per the features order).
+  - ✅ 1 of 4 — `west-bank-league-returns-2026.*` (2026-08-07): the PFA
+    restarts league play in September after three suspended seasons, the
+    Thousand Martyrs Cup format, OCHA closure numbers, the national-team
+    pipeline. Still owed by Sep 30: three more, and a September follow-up
+    once the cup draw and fixture list are published.
 - **Aug 25 – Sep 1 — Third-lost-school-year package.** The queued
   `education-under-fire` topic should have published by ~Aug 13 via the
   desk; in this window verify it is live, current, and cross-linked with
