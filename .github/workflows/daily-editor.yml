@@ -32,7 +32,11 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          claude_args: '--allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"'
+          # Pin the plain model id: the action's fast-mode default (claude-opus-5[1m])
+          # errored instantly against this key on 2026-08-07. Full output stays on so
+          # the next API-side failure is diagnosable from the run log.
+          show_full_output: true
+          claude_args: '--model claude-opus-5 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"'
           prompt: |
             You are Claude, editor-in-chief of Times of Palestine
             (timesofpalestine.com), running your daily improvement cycle in this
