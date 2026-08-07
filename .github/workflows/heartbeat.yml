@@ -68,10 +68,27 @@ jobs:
               # behind the concurrency group and is harmless; a missed one
               # freezes the site.
               print("stale"); raise SystemExit
-          if any(r["status"] in ("queued", "in_progress", "waiting") for r in rs):
+          now = datetime.now(timezone.utc)
+          def age_min(r):
+              t = datetime.fromisoformat(r["run_started_at"].replace("Z", "+00:00"))
+              return (now - t).total_seconds() / 60
+          # WEDGE GUARD (2026-08-07): a run stuck in waiting/pending/queued is
+          # NOT a live chain — it is the chain frozen. That evening one push
+          # build sat in "waiting" for five hours; it held the concurrency
+          # group, every later run queued behind it and was culled, and this
+          # watchdog stood down each tick because "waiting" counted as
+          # active. Nothing in this repo legitimately waits: there are no
+          # environment approval rules, and a healthy build runs ~7 minutes.
+          # So: waiting/pending/queued beyond STALE_MINUTES, or in_progress
+          # beyond 45 minutes, is a wedge — cancel it and dispatch fresh.
+          wedged = [str(r["id"]) for r in rs
+                    if (r["status"] in ("waiting", "pending", "queued") and age_min(r) > int(os.environ.get("STALE_MINUTES", "20")))
+                    or (r["status"] == "in_progress" and age_min(r) > 45)]
+          if wedged:
+              print("wedged " + " ".join(wedged)); raise SystemExit
+          if any(r["status"] in ("queued", "in_progress", "waiting", "pending") for r in rs):
               print("active"); raise SystemExit
           stale_s = int(os.environ.get("STALE_MINUTES", "20")) * 60
-          now = datetime.now(timezone.utc)
           newest = max(
               (datetime.fromisoformat(r["run_started_at"].replace("Z", "+00:00")) for r in rs),
               default=None,
@@ -79,9 +96,23 @@ jobs:
           print("stale" if newest is None or (now - newest).total_seconds() > stale_s else "fresh")
           ')
           echo "verdict: $verdict"
-          if [ "$verdict" = "stale" ]; then
-            curl -sf --retry 6 --retry-all-errors --max-time 60 -X POST \
-              -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
-              "https://api.github.com/repos/$REPO/actions/workflows/build.yml/dispatches" -d '{"ref":"main"}'
-            echo "Chain was dead — dispatched a fresh build."
-          fi
+          case "$verdict" in
+            wedged*)
+              for run_id in ${verdict#wedged }; do
+                curl -s --retry 6 --retry-all-errors --max-time 60 -X POST \
+                  -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+                  "https://api.github.com/repos/$REPO/actions/runs/$run_id/cancel" || true
+                echo "Cancelled wedged run $run_id."
+              done
+              curl -sf --retry 6 --retry-all-errors --max-time 60 -X POST \
+                -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/$REPO/actions/workflows/build.yml/dispatches" -d '{"ref":"main"}'
+              echo "Chain was wedged — cleared it and dispatched a fresh build."
+              ;;
+            stale)
+              curl -sf --retry 6 --retry-all-errors --max-time 60 -X POST \
+                -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/$REPO/actions/workflows/build.yml/dispatches" -d '{"ref":"main"}'
+              echo "Chain was dead — dispatched a fresh build."
+              ;;
+          esac
