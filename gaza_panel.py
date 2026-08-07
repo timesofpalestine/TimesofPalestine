@@ -113,7 +113,7 @@ GAZA_INDEX_KEYS = [
 
 # Styles travel with the panel. The figures declare no colour of their own so
 # they inherit the page ink and stay readable in both the light and dark themes.
-PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-block{border:1px solid var(--line);background:var(--card);box-shadow:var(--sh);padding:1.05rem 1.15rem .95rem;margin-bottom:1rem}.gi-block:last-child{margin-bottom:0}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.9rem}.gi-cell{background:var(--paper);border:1px solid var(--line);border-inline-start:3px solid var(--red);border-radius:6px;padding:.7rem .8rem .6rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:.85rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-region{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 .8rem}.gi-region::before{content:\"\";width:4px;height:.95rem;background:var(--red);border-radius:2px;flex-shrink:0}[lang=ar] .gi-region{letter-spacing:0;font-size:.82rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-grid.gi-pr{grid-template-columns:repeat(5,minmax(0,1fr))}.gi-comp{display:flex;block-size:7px;border-radius:4px;overflow:hidden;background:var(--line);margin-top:.95rem}.gi-comp .seg{display:block;block-size:100%}.gi-legend{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:.5rem;font-size:.7rem;font-weight:600;color:var(--muted)}.gi-legend .gi-lead{font-weight:800;color:var(--ink)}.gi-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:.35rem}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(2,minmax(0,1fr))}}.gi-help{position:relative;display:inline-block;margin-inline-start:.35rem;inline-size:15px;block-size:15px;border-radius:50%;background:var(--line);color:var(--muted);font-size:.62rem;font-weight:800;line-height:15px;text-align:center;cursor:help;vertical-align:middle}.gi-help:focus-visible{outline:2px solid var(--green);outline-offset:1px}.gi-help .gi-tip{position:absolute;inset-block-end:calc(100% + 8px);inset-inline-end:-8px;inline-size:min(240px,58vw);background:#0b0b0c;color:#f2eee8;font-size:.7rem;font-weight:500;line-height:1.55;padding:.55rem .7rem;border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,.35);opacity:0;visibility:hidden;transition:opacity .15s;z-index:30;text-align:start;pointer-events:none;cursor:auto}.gi-help:hover .gi-tip,.gi-help:focus .gi-tip{opacity:1;visibility:visible}.gi-dl{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-dl a{color:var(--green);font-weight:700}"
+PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-block{border:1px solid var(--line);background:var(--card);box-shadow:var(--sh);padding:1.05rem 1.15rem .95rem;margin-bottom:1rem}.gi-block:last-child{margin-bottom:0}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.9rem}.gi-cell{background:var(--paper);border:1px solid var(--line);border-inline-start:3px solid var(--red);border-radius:6px;padding:.7rem .8rem .6rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:.85rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-region{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 .8rem}.gi-region::before{content:\"\";width:4px;height:.95rem;background:var(--red);border-radius:2px;flex-shrink:0}[lang=ar] .gi-region{letter-spacing:0;font-size:.82rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-grid.gi-pr{grid-template-columns:repeat(5,minmax(0,1fr))}.gi-comp{display:flex;block-size:7px;border-radius:4px;overflow:hidden;background:var(--line);margin-top:.95rem}.gi-comp .seg{display:block;block-size:100%}.gi-legend{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:.5rem;font-size:.7rem;font-weight:600;color:var(--muted)}.gi-legend .gi-lead{font-weight:800;color:var(--ink)}.gi-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:.35rem}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(2,minmax(0,1fr))}}.gi-help{position:relative;display:inline-block;margin-inline-start:.35rem;inline-size:15px;block-size:15px;border-radius:50%;background:var(--line);color:var(--muted);font-size:.62rem;font-weight:800;line-height:15px;text-align:center;cursor:help;vertical-align:middle}.gi-help:focus-visible{outline:2px solid var(--green);outline-offset:1px}.gi-help .gi-tip{position:absolute;inset-block-end:calc(100% + 8px);inset-inline-end:-8px;inline-size:min(240px,58vw);background:#0b0b0c;color:#f2eee8;font-size:.7rem;font-weight:500;line-height:1.55;padding:.55rem .7rem;border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,.35);opacity:0;visibility:hidden;transition:opacity .15s;z-index:30;text-align:start;pointer-events:none;cursor:auto}.gi-help:hover .gi-tip,.gi-help:focus .gi-tip{opacity:1;visibility:visible}.gi-dl{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-dl a{color:var(--green);font-weight:700}.toll-chart{margin:.9rem 0 0;padding-top:.9rem;border-top:1px solid var(--line)}.toll-chart figcaption{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:.5rem}.tc-head{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}[lang=ar] .tc-head{letter-spacing:0;font-size:.8rem}.tc-now{font-family:var(--serif);font-weight:900;font-size:1.3rem;color:var(--red);font-variant-numeric:tabular-nums}[lang=ar] .tc-now{font-weight:700}.toll-chart svg{display:block;inline-size:100%;block-size:120px}.tc-area{fill:rgba(200,16,46,.14)}.tc-line{fill:none;stroke:var(--red);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linejoin:round}.tc-grid{stroke:var(--line);stroke-width:1;vector-effect:non-scaling-stroke}.tc-tick{fill:var(--muted);font-size:9px;font-weight:700}.tc-foot{margin:.35rem 0 0;font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}@media(prefers-color-scheme:dark){.tc-area{fill:rgba(249,53,73,.16)}}"
 
 # The live layer: a gentle roll-up when the panel first scrolls into view,
 # then a refetch of /data/gaza-numbers.json every 5 minutes that animates any
@@ -365,6 +365,85 @@ def _fmt_date(iso_day, lang):
     return iso_day.translate(str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")) if lang == "ar" else iso_day
 
 
+DAILY_URL = "https://data.techforpalestine.org/api/v2/casualties_daily.min.json"
+
+
+def _num(n, lang):
+    s = f"{n:,}"
+    return s.translate(str.maketrans("0123456789,", "٠١٢٣٤٥٦٧٨٩،")) if lang == "ar" else s
+
+
+def _daily_series():
+    """(iso_day, cumulative killed) pairs from the Gaza MoH daily record.
+
+    Same provenance as the toll above it — Tech for Palestine relaying the
+    Ministry of Health — so the curve and the counter can never disagree.
+    Silent on any failure: a chart is a bonus, never a reason to lose the panel.
+    """
+    if os.environ.get("TOP_OFFLINE") == "1":
+        return []
+    try:
+        rows = _get_json(DAILY_URL)
+    except Exception:
+        return []
+    out = []
+    for r in rows if isinstance(rows, list) else []:
+        day, cum = r.get("report_date"), r.get("killed_cum")
+        if isinstance(day, str) and isinstance(cum, (int, float)) and cum > 0:
+            out.append((day[:10], int(cum)))
+    return out
+
+
+def _toll_chart(lang):
+    """A cumulative-death curve for Gaza, drawn server-side as inline SVG.
+
+    Deliberately no chart library and no client JS: the site ships almost none
+    of either, and a static path renders instantly on a phone over a bad link.
+    Colours come from currentColor and the site's own vars so it follows the
+    reader's theme without a second stylesheet.
+    """
+    pts = _daily_series()
+    if len(pts) < 30:
+        return ""
+    ar = lang == "ar"
+    # One point per ~week keeps the path short without flattening the shape.
+    step = max(1, len(pts) // 150)
+    pts = pts[::step] + [pts[-1]]
+    W, H, PAD_T, PAD_B = 720.0, 150.0, 12.0, 22.0
+    peak = max(v for _d, v in pts)
+    span = len(pts) - 1
+    plot = H - PAD_T - PAD_B
+
+    def xy(i, v):
+        return (i / span * W, PAD_T + plot - (v / peak * plot))
+
+    line = " ".join(("M" if i == 0 else "L") + f"{x:.1f},{y:.1f}"
+                    for i, (x, y) in enumerate(xy(i, v) for i, (_d, v) in enumerate(pts)))
+    area = f"{line} L{W:.1f},{H - PAD_B:.1f} L0,{H - PAD_B:.1f} Z"
+    first_day, last_day = pts[0][0], pts[-1][0]
+    last_val = pts[-1][1]
+    head = "الشهداء في غزة تراكمياً" if ar else "Gaza deaths, cumulative"
+    note = (f"من {_fmt_date(first_day, lang)} إلى {_fmt_date(last_day, lang)}" if ar
+            else f"{first_day} to {last_day}")
+    # Marks every 20k so the eye gets a scale without a cluttered axis.
+    grid = ""
+    tick = 20000
+    lvl = tick
+    while lvl < peak:
+        gy = PAD_T + plot - (lvl / peak * plot)
+        grid += (f'<line x1="0" y1="{gy:.1f}" x2="{W:.0f}" y2="{gy:.1f}" class="tc-grid"/>'
+                 f'<text x="4" y="{gy - 3:.1f}" class="tc-tick">{_num(lvl, lang)}</text>')
+        lvl += tick
+    return (
+        f'<figure class="toll-chart" dir="ltr">'
+        f'<figcaption><span class="tc-head">{head}</span>'
+        f'<span class="tc-now">{_num(last_val, lang)}</span></figcaption>'
+        f'<svg viewBox="0 0 {W:.0f} {H:.0f}" role="img" preserveAspectRatio="none" '
+        f'aria-label="{head}: {_num(last_val, lang)} — {note}">'
+        f'{grid}<path d="{area}" class="tc-area"/><path d="{line}" class="tc-line"/>'
+        f'</svg><p class="tc-foot">{note}</p></figure>')
+
+
 def _gazaindex_rows(lang):
     """(cells html list, sources list, latest as-of) from gazaindex — all empty on failure."""
     if os.environ.get("TOP_OFFLINE") == "1":
@@ -441,6 +520,8 @@ def panel(lang):
         (f'المصدر: {pr_link} وهيئة شؤون الأسرى ونادي الأسير' if ar
          else f'Source: {pr_link}, with the Detainees Commission and the Prisoners\' Society'),
         pr_asof, "pr", extra_cls=" gi-pr", comp=pr_comp)
+    # The curve sits directly under the Gaza counters it is drawn from.
+    chart_html = _toll_chart(lang) if gaza_html else ""
     gi_cells, gi_srcs, gi_latest = _gazaindex_rows(lang)
     if not gaza_html and not wb_html and not pr_html and not gi_cells:
         return ""
@@ -511,5 +592,5 @@ def panel(lang):
               + "</script>")
     return (f'<section class="gaza-index"><div class="wrap">'
             f'<div class="sec-head focus"><h2>{live}{title}</h2><span class="rule"></span></div>'
-            f'{gaza_html}{wb_html}{pr_html}{gi_html}{dl}'
+            f'{gaza_html}{chart_html}{wb_html}{pr_html}{gi_html}{dl}'
             f'</div></section>{ld}<script>{PANEL_JS}</script>')
