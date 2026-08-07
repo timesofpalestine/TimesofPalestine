@@ -21,12 +21,13 @@ the food's Palestinian roots.
 1. **Tanoreen — Brooklyn, USA** (launch, 2026-08-04):
    `originals/palestinian-table-tanoreen-2026.*` — Rawia Bishara's
    Bay Ridge institution since 1998.
+2. **Reem's California — Oakland, USA** (2026-08-07):
+   `originals/palestinian-table-reems-california-2026.*` — Reem Assil's
+   Arab street-corner bakery, freshly reopened 26 June 2026 as a
+   worker-owned flagship at Jack London Square.
 
 ## Up next (rotate regions, verify before writing)
 
-2. **Reem's California — San Francisco/Oakland, USA.** Reem Assil's
-   Arab street-corner bakery; James Beard finalist; mana'eesh and
-   muhammara; her cookbook "Arabiyya".
 3. **Akub — London, UK.** Fadi Kattan's Notting Hill restaurant; the
    Bethlehem chef of "Bethlehem: A Celebration of Palestinian Food".
 4. **Habibah — Amman, Jordan.** The Nabulsi family knafeh institution
@@ -44,3 +45,6 @@ the food's Palestinian roots.
    Palestinians eat their grandmothers' food.
 9. **Abu Shukri — Jerusalem (Old City).** The hummus house of Via
    Dolorosa; an institution of the Palestinian Old City.
+10. **Sufra — Amman, Jordan.** Romero group's heritage-house restaurant on
+   Rainbow Street; musakhan and maqluba in a restored 1940s villa; a
+   window on Ammani-Palestinian family cooking.
