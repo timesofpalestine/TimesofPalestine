@@ -1237,7 +1237,7 @@ def fetch_telegram(feed, lang, now, max_age):
         if len(text) < 25 or PROMO_RX.search(text):
             continue
         date = parse_date(m_date.group(1), feed.get("timezone"))
-        if not date or now - date > max_age:
+        if not date or now - date > max_age or date > now + timedelta(hours=2):
             continue
         m_photo = TG_PHOTO_RX.search(block)
         candidate_image = m_photo.group(1) if m_photo else None
