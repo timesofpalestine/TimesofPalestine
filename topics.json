@@ -2,6 +2,55 @@
  "_comment": "The investigations queue. One topic per generated report, worked through in order and then recycled oldest-first. Add, remove or reorder freely — the generator reads this file every run. 'q' is the reporting question the desk must answer; the sharper it is, the better the piece. Queue order set per editorial/content-audit-2026-08-06.md: health-series completion first, then the elections desk, the reconstruction-money tracker, the West Bank displacement ledger and the sports buildout. Calendar-pegged pieces (UNGA recognition audit, ceasefire day-365, olive harvest) are deliberately NOT queued here — the daily editor adds each one when its window opens, per the audit's calendar table.",
  "topics": [
   {
+   "id": "west-bank-displacement-ledger",
+   "cat": "westbank",
+   "en": "The ledger of emptied villages: settler violence by name and number",
+   "ar": "سجلّ القرى المهجَّرة.. عنف المستوطنين بالاسم والرقم",
+   "q": "Launch of a monthly West Bank displacement ledger (content audit 2026-08-06, rec. C): OCHA's 1,330+ settler-involved attacks since January, the ~1,988 Palestinians displaced in the first four months of 2026, the communities emptied — each by name, date and what stood there — the security cabinet's 1.3-billion-shekel decision for 34 new settlements, and the impunity record (complaints vs indictments, per Yesh Din). Every figure attributed to OCHA, OHCHR, B'Tselem or Yesh Din by report and date; titles and prose name the responsible actors in active voice."
+  },
+  {
+   "id": "settlement-budget-34-outposts",
+   "cat": "westbank",
+   "en": "Israel budgets 1.3 billion shekels to plant 34 new settlements",
+   "ar": "إسرائيل ترصد 1.3 مليار شيكل لزرع 34 مستوطنة جديدة",
+   "q": "Follow the money of the security cabinet's July 2026 decision: 1.3 billion shekels for 34 new settlements — where each is planned, whose land it sits on, which ministries move the funds, and how it connects to the displacement the UN calls an all-time high. Attribute the decision text, budget lines and locations to named documents and outlets; name the deciding officials."
+  },
+  {
+   "id": "crossings-and-airports",
+   "cat": "westbank",
+   "en": "The crossing: what Palestinians endure to leave and return",
+   "ar": "المعابر: ما يتحمّله الفلسطينيون للسفر والعودة",
+   "q": "Document the Allenby/King Hussein Bridge bottleneck, Rafah's closure, permit regimes, average waiting times, the cost of VIP passage, the denial of an airport since 2001, and the specific rules that govern who may fly from Ben Gurion."
+  },
+  {
+   "id": "settler-violence-impunity",
+   "cat": "westbank",
+   "en": "Settler attacks and the arithmetic of impunity",
+   "ar": "اعتداءات المستوطنين وحساب الإفلات من العقاب",
+   "q": "Using Yesh Din, OCHA and B'Tselem data, what share of Israeli investigations into settler violence end in indictment and conviction? Which outposts recur, what is the documented role of army escorts, and how have sanctions by the EU, UK and US on named settlers played out?"
+  },
+  {
+   "id": "water-allocation",
+   "cat": "westbank",
+   "en": "The water arithmetic of the West Bank",
+   "ar": "حساب المياه في الضفة الغربية",
+   "q": "How much water per capita do Palestinians and settlers receive, how does the Joint Water Committee and Mekorot allocation work, how many cisterns and pipelines have been demolished, and what do B'Tselem and the World Bank report?"
+  },
+  {
+   "id": "area-c-demolitions",
+   "cat": "westbank",
+   "en": "Building permits in Area C: the paperwork of dispossession",
+   "ar": "رخص البناء في المنطقة ج",
+   "q": "What share of Palestinian permit applications in Area C are approved, how many structures — including donor-funded schools and clinics — have been demolished, and what is the documented displacement toll?"
+  },
+  {
+   "id": "jerusalem-residency",
+   "cat": "westbank",
+   "en": "Revoked: how Jerusalemites lose the right to their city",
+   "ar": "سحب الإقامة: كيف يفقد المقدسيون حق مدينتهم",
+   "q": "How does the 'centre of life' rule work, how many residencies have been revoked since 1967, what is happening in Sheikh Jarrah and Silwan, and what is the status of family-unification restrictions?"
+  },
+  {
    "id": "gaza-polio-vaccination-rebuild",
    "cat": "health",
    "en": "After polio's return: rebuilding Gaza's vaccination shield",
@@ -30,25 +79,11 @@
    "q": "Launch of the recurring reconstruction-money tracker (content audit 2026-08-06, rec. B): pledges announced vs money actually transferred to the World Bank-administered fund vs rubble actually cleared (about 0.5% per UN Security Council briefings, May 2026) vs shelters actually built. Name which donors disbursed and which have not, with each figure attributed to the specific UNSC briefing, World Bank report or donor statement and date. Include a house dashboard SVG designed for reuse — this becomes a franchise refreshed as numbers move, in the charter's constructive framing: credit what is delivered precisely, present pending transfers as the next practical stage."
   },
   {
-   "id": "west-bank-displacement-ledger",
-   "cat": "westbank",
-   "en": "The ledger of emptied villages: settler violence by name and number",
-   "ar": "سجلّ القرى المهجَّرة.. عنف المستوطنين بالاسم والرقم",
-   "q": "Launch of a monthly West Bank displacement ledger (content audit 2026-08-06, rec. C): OCHA's 1,330+ settler-involved attacks since January, the ~1,988 Palestinians displaced in the first four months of 2026, the communities emptied — each by name, date and what stood there — the security cabinet's 1.3-billion-shekel decision for 34 new settlements, and the impunity record (complaints vs indictments, per Yesh Din). Every figure attributed to OCHA, OHCHR, B'Tselem or Yesh Din by report and date; titles and prose name the responsible actors in active voice."
-  },
-  {
    "id": "board-of-peace-watch",
    "cat": "politics",
    "en": "Six months on, the Board of Peace still governs Gaza only on paper",
    "ar": "بعد ستة أشهر.. «مجلس السلام» يحكم غزة على الورق فقط",
    "q": "Standing watch on Gaza's transitional governance (content audit 2026-08-06, rec. B companion): the Board of Peace chaired by President Trump with Nikolay Mladenov as Director-General/High Representative, and the Palestinian technocratic committee (NCAG), both named in January 2026 and neither operational on the ground per UN Security Council briefings. Who sits on each body, what they have actually decided, what authority Palestinians hold inside them, and what fills the vacuum meanwhile. Attribute to the specific UNSC session, named officials and outlets; distinguish established fact from reported-but-unconfirmed."
-  },
-  {
-   "id": "settlement-budget-34-outposts",
-   "cat": "westbank",
-   "en": "Israel budgets 1.3 billion shekels to plant 34 new settlements",
-   "ar": "إسرائيل ترصد 1.3 مليار شيكل لزرع 34 مستوطنة جديدة",
-   "q": "Follow the money of the security cabinet's July 2026 decision: 1.3 billion shekels for 34 new settlements — where each is planned, whose land it sits on, which ministries move the funds, and how it connects to the displacement the UN calls an all-time high. Attribute the decision text, budget lines and locations to named documents and outlets; name the deciding officials."
   },
   {
    "id": "east-jerusalem-vote-2026",
@@ -289,20 +324,6 @@
    "q": "How does the Israeli work-permit market for Palestinian labourers function, what do brokers charge, how much of a worker's wage is skimmed, who profits on both sides of the Green Line, and what have the Bank of Israel, Kav LaOved and Palestinian labour ministries documented?"
   },
   {
-   "id": "crossings-and-airports",
-   "cat": "westbank",
-   "en": "The crossing: what Palestinians endure to leave and return",
-   "ar": "المعابر: ما يتحمّله الفلسطينيون للسفر والعودة",
-   "q": "Document the Allenby/King Hussein Bridge bottleneck, Rafah's closure, permit regimes, average waiting times, the cost of VIP passage, the denial of an airport since 2001, and the specific rules that govern who may fly from Ben Gurion."
-  },
-  {
-   "id": "settler-violence-impunity",
-   "cat": "westbank",
-   "en": "Settler attacks and the arithmetic of impunity",
-   "ar": "اعتداءات المستوطنين وحساب الإفلات من العقاب",
-   "q": "Using Yesh Din, OCHA and B'Tselem data, what share of Israeli investigations into settler violence end in indictment and conviction? Which outposts recur, what is the documented role of army escorts, and how have sanctions by the EU, UK and US on named settlers played out?"
-  },
-  {
    "id": "clearance-revenues",
    "cat": "economy",
    "en": "The money Israel collects and withholds",
@@ -336,27 +357,6 @@
    "en": "The law used to arrest Palestinians for posting",
    "ar": "القانون الذي يُعتقل به الفلسطينيون بسبب منشور",
    "q": "How has the PA's cybercrime decree been used against journalists, students and critics, how many prosecutions, what do Palestinian bar associations and rights groups say, and how does Hamas police speech in Gaza?"
-  },
-  {
-   "id": "water-allocation",
-   "cat": "westbank",
-   "en": "The water arithmetic of the West Bank",
-   "ar": "حساب المياه في الضفة الغربية",
-   "q": "How much water per capita do Palestinians and settlers receive, how does the Joint Water Committee and Mekorot allocation work, how many cisterns and pipelines have been demolished, and what do B'Tselem and the World Bank report?"
-  },
-  {
-   "id": "area-c-demolitions",
-   "cat": "westbank",
-   "en": "Building permits in Area C: the paperwork of dispossession",
-   "ar": "رخص البناء في المنطقة ج",
-   "q": "What share of Palestinian permit applications in Area C are approved, how many structures — including donor-funded schools and clinics — have been demolished, and what is the documented displacement toll?"
-  },
-  {
-   "id": "jerusalem-residency",
-   "cat": "westbank",
-   "en": "Revoked: how Jerusalemites lose the right to their city",
-   "ar": "سحب الإقامة: كيف يفقد المقدسيون حق مدينتهم",
-   "q": "How does the 'centre of life' rule work, how many residencies have been revoked since 1967, what is happening in Sheikh Jarrah and Silwan, and what is the status of family-unification restrictions?"
   },
   {
    "id": "palestinian-citizens-israel",
