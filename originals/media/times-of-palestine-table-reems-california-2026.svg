@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">The Palestinian Table: Reem's California, Oakland</title>
+<desc id="dsc">The weekly Palestinian Table franchise card for Reem's California in Oakland: a round mana'oushe marked with za'atar beside the restaurant's milestones — Fruitvale 2017, the Ferry Building years, and the worker-owned flagship opened at Jack London Square in June 2026.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+<text x="110" y="78" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="5" fill="#c7a86b">THE PALESTINIAN TABLE · المائدة الفلسطينية</text>
+<text x="110" y="152" font-family="'Source Serif 4',Georgia,serif" font-size="58" fill="#f2eee8">Reem's California — Oakland</text>
+<text x="110" y="204" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#c7a86b">مخبز ريم كاليفورنيا في أوكلاند — عائدٌ إلى بيته</text>
+<line x1="110" y1="240" x2="1490" y2="240" stroke="#3a3b3f" stroke-width="2"/>
+<!-- mana'oushe -->
+<g>
+<circle cx="450" cy="560" r="230" fill="#c99c56"/>
+<circle cx="450" cy="560" r="196" fill="#b8863f"/>
+<circle cx="450" cy="560" r="170" fill="#5d5133"/>
+<g fill="#3f3a25">
+<circle cx="390" cy="510" r="9"/><circle cx="480" cy="490" r="8"/><circle cx="530" cy="560" r="9"/>
+<circle cx="430" cy="600" r="8"/><circle cx="370" cy="590" r="7"/><circle cx="500" cy="630" r="8"/>
+<circle cx="455" cy="545" r="7"/><circle cx="405" cy="555" r="6"/>
+</g>
+<g fill="#e8e3d5">
+<circle cx="410" cy="480" r="4"/><circle cx="505" cy="525" r="4"/><circle cx="465" cy="590" r="4"/>
+<circle cx="360" cy="545" r="4"/><circle cx="520" cy="600" r="4"/><circle cx="430" cy="525" r="3"/>
+</g>
+<text x="450" y="845" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#c7a86b">منقوشة زعتر على الحطب · wood-fired za'atar mana'oushe</text>
+</g>
+<!-- milestones -->
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">
+<text x="820" y="360">2017 · First bakery opens in Fruitvale, Oakland</text>
+<text x="820" y="450">2022 · "Arabiyya" — the cookbook of an Arab in diaspora</text>
+<text x="820" y="540">San Francisco years · the Ferry Building counter</text>
+<text x="820" y="630">26 June 2026 · worker-owned flagship, Jack London Square</text>
+</g>
+<g font-family="Cairo,Arial,sans-serif" font-size="20" fill="#c7a86b">
+<text x="820" y="388">أول مخبز في حي فروتفيل بأوكلاند</text>
+<text x="820" y="478">كتاب «عربيّة» — وصفات حياة عربية في الشتات</text>
+<text x="820" y="568">سنوات سان فرانسيسكو في مبنى فيري</text>
+<text x="820" y="658">المخبز الرئيسي بملكية عمالية في ساحة جاك لندن</text>
+</g>
+<text x="820" y="740" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Reem Assil, James Beard finalist, with co-founder Zaynah Hindi · No. 81, SF Chronicle Top 100, 2026</text>
+</svg>
