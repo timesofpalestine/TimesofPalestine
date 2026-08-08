@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Tomorrow's Youth Organization in Nablus: eight years of Qatar Fund for Development partnership, more than 27,000 children, youth and women directly supported and over 135,000 people reached, with 46 four-year scholarships and 109 businesses funded">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#286344"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="6" fill="#8a1f2d"/>
+
+  <text x="800" y="80" text-anchor="middle" fill="#c7a86b" font-family="Georgia,serif" font-size="26" letter-spacing="6">TIMES OF PALESTINE · REAL LIVES</text>
+
+  <text x="800" y="164" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="54" font-weight="700">Tomorrow&#8217;s Youth Organization</text>
+  <text x="800" y="216" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,Arial,sans-serif" font-size="34">منظمة شباب الغد &#183; نابلس</text>
+  <text x="800" y="266" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="25">Khallet al-Amood, Nablus &#183; serving Balata, Askar and El-Ain camps</text>
+
+  <line x1="150" y1="316" x2="1450" y2="316" stroke="url(#rule)" stroke-width="4"/>
+
+  <text x="330" y="410" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="66" font-weight="700">27,000+</text>
+  <text x="330" y="452" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="23">directly supported</text>
+  <text x="330" y="484" text-anchor="middle" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="21">مستفيد مباشر</text>
+
+  <text x="800" y="410" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="66" font-weight="700">135,000+</text>
+  <text x="800" y="452" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="23">people reached</text>
+  <text x="800" y="484" text-anchor="middle" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="21">أثر غير مباشر</text>
+
+  <text x="1270" y="410" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="66" font-weight="700">$8m+</text>
+  <text x="1270" y="452" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="23">invested since 2017</text>
+  <text x="1270" y="484" text-anchor="middle" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="21">منذ 2017</text>
+
+  <rect x="150" y="548" width="1300" height="196" rx="10" fill="#16171a" stroke="#2a2c31" stroke-width="2"/>
+  <text x="196" y="602" fill="#c7a86b" font-family="Georgia,serif" font-size="21" letter-spacing="3">WHAT THE MONEY BOUGHT</text>
+
+  <text x="196" y="654" fill="#f2eee8" font-family="Georgia,serif" font-size="27">13,052 children in learning and social-emotional programmes</text>
+  <text x="196" y="694" fill="#f2eee8" font-family="Georgia,serif" font-size="27">4,807 people in therapy, home rehabilitation and case management</text>
+  <text x="196" y="734" fill="#f2eee8" font-family="Georgia,serif" font-size="27">109 businesses funded &#183; 46 four-year university scholarships</text>
+
+  <text x="800" y="822" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="24">Founded in 2007 by Hani Hikmat Masri, born in Nablus</text>
+  <text x="800" y="864" text-anchor="middle" fill="#6f6b64" font-family="Georgia,serif" font-size="19">Figures: Tomorrow&#8217;s Youth Organization and the Qatar Fund for Development</text>
+</svg>
