@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Ten Palestinian communities emptied this year: OCHA figures on settler attacks and displacement in the occupied West Bank</title>
+  <desc id="dsc">Chart of settler attacks recorded by OCHA: 1,291 in 2023, 1,449 in 2024, 1,835 in 2025 and 761 in the first four months of 2026. Key figures: 10 communities emptied of residents this year; 123 communities displaced fully or partly since January 2023, 47 of them entirely; more than 6,200 Palestinians displaced including over 3,000 children; more than 1,330 documented incidents since January across 250 communities. Attacks by governorate January 2025 to June 2026: Ramallah and al-Bireh 881, Nablus 660, Hebron 497.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="barRed" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8a1f2d"/>
+      <stop offset="1" stop-color="#C8102E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- HEADER -->
+  <text x="100" y="80" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="4" fill="#c7a86b">OCCUPIED WEST BANK</text>
+  <text x="1520" y="80" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#c7a86b">الضفة الغربية المحتلة</text>
+
+  <text x="100" y="134" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Ten communities emptied this year</text>
+  <text x="1520" y="134" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#f2eee8">عشرة تجمعات فلسطينية أُفرغت من سكانها هذا العام</text>
+
+  <line x1="100" y1="172" x2="1520" y2="172" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- LEFT: yearly attacks chart -->
+  <text x="100" y="222" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Settler attacks recorded, per year</text>
+  <text x="100" y="250" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">اعتداءات المستوطنين المسجّلة سنوياً</text>
+
+  <!-- gridlines -->
+  <line x1="140" y1="633" x2="810" y2="633" stroke="#2c2d31" stroke-width="1"/>
+  <line x1="140" y1="546" x2="810" y2="546" stroke="#2c2d31" stroke-width="1"/>
+  <line x1="140" y1="459" x2="810" y2="459" stroke="#2c2d31" stroke-width="1"/>
+  <text x="128" y="638" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#6d6e71">500</text>
+  <text x="128" y="551" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#6d6e71">1,000</text>
+  <text x="128" y="464" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#6d6e71">1,500</text>
+  <line x1="140" y1="720" x2="810" y2="720" stroke="#5a5b5f" stroke-width="2"/>
+
+  <!-- bars -->
+  <rect x="140" y="495" width="120" height="225" fill="url(#barRed)"/>
+  <rect x="320" y="467" width="120" height="253" fill="url(#barRed)"/>
+  <rect x="500" y="400" width="120" height="320" fill="url(#barRed)"/>
+  <rect x="680" y="587" width="120" height="133" fill="#5c2029" stroke="#c7a86b" stroke-width="2" stroke-dasharray="7 5"/>
+
+  <text x="200" y="478" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#f2eee8">1,291</text>
+  <text x="380" y="450" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#f2eee8">1,449</text>
+  <text x="560" y="383" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#f2eee8">1,835</text>
+  <text x="740" y="570" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#c7a86b">761</text>
+
+  <text x="200" y="752" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">2023</text>
+  <text x="380" y="752" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">2024</text>
+  <text x="560" y="752" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">2025</text>
+  <text x="740" y="752" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">2026*</text>
+
+  <text x="140" y="790" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">*2026 covers January–April only — about 190 attacks a month, against 153 a month in 2025</text>
+  <text x="140" y="814" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5">*أرقام 2026 تشمل كانون الثاني – نيسان فقط: نحو 190 اعتداءً شهرياً مقابل 153 في 2025</text>
+
+  <line x1="862" y1="200" x2="862" y2="820" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- RIGHT: key figures -->
+  <text x="1060" y="238" text-anchor="end" font-family="'Source Serif 4',Georgia,serif" font-size="56" fill="#c7a86b">10</text>
+  <text x="1090" y="222" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">communities emptied of their residents this year</text>
+  <text x="1090" y="248" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">تجمعات أُفرغت من سكانها هذا العام</text>
+
+  <line x1="900" y1="278" x2="1520" y2="278" stroke="#2c2d31" stroke-width="1"/>
+
+  <text x="1060" y="342" text-anchor="end" font-family="'Source Serif 4',Georgia,serif" font-size="56" fill="#59a97d">123</text>
+  <text x="1090" y="326" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">communities displaced fully or in part since January 2023 — 47 entirely</text>
+  <text x="1090" y="352" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">تجمعاً هُجّر كلياً أو جزئياً منذ 2023 — 47 منها بالكامل</text>
+
+  <line x1="900" y1="382" x2="1520" y2="382" stroke="#2c2d31" stroke-width="1"/>
+
+  <text x="1060" y="446" text-anchor="end" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">6,200+</text>
+  <text x="1090" y="430" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Palestinians displaced, over 3,000 of them children</text>
+  <text x="1090" y="456" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">فلسطيني نزحوا، بينهم أكثر من 3,000 طفل</text>
+
+  <line x1="900" y1="486" x2="1520" y2="486" stroke="#2c2d31" stroke-width="1"/>
+
+  <text x="1060" y="550" text-anchor="end" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#C8102E">1,330+</text>
+  <text x="1090" y="534" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">incidents documented since January, across 250 communities</text>
+  <text x="1090" y="560" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">اعتداء موثّق منذ كانون الثاني في 250 تجمعاً</text>
+
+  <line x1="900" y1="592" x2="1520" y2="592" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- governorate bars -->
+  <text x="900" y="632" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Attacks by governorate, Jan 2025 – Jun 2026</text>
+  <text x="900" y="658" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">الاعتداءات بحسب المحافظة</text>
+
+  <text x="900" y="694" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">Ramallah &amp; al-Bireh</text>
+  <text x="900" y="713" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">رام الله والبيرة</text>
+  <rect x="1090" y="682" width="380" height="26" fill="#8a1f2d"/>
+  <text x="1482" y="702" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">881</text>
+
+  <text x="900" y="748" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">Nablus</text>
+  <text x="900" y="767" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">نابلس</text>
+  <rect x="1090" y="736" width="285" height="26" fill="#8a1f2d"/>
+  <text x="1387" y="756" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">660</text>
+
+  <text x="900" y="802" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">Hebron</text>
+  <text x="900" y="821" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">الخليل</text>
+  <rect x="1090" y="790" width="214" height="26" fill="#8a1f2d"/>
+  <text x="1316" y="810" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">497</text>
+
+  <!-- FOOTER -->
+  <line x1="100" y1="846" x2="1520" y2="846" stroke="#3a3b3f" stroke-width="1"/>
+  <text x="100" y="874" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Source: UN OCHA humanitarian situation reports, 3 and 23 July; OCHA data compiled by Al Jazeera</text>
+  <text x="1520" y="874" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5">المصدر: مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية</text>
+</svg>
