@@ -66,9 +66,11 @@ class FeedConfigTest(unittest.TestCase):
     def test_google_news_feeds_declare_gnews_type(self):
         # A gnews search declared as plain RSS attributes every story to
         # Google's redirect URL instead of the outlet that reported it.
+        from urllib.parse import urlsplit
         for lang, feeds in self.feeds.items():
             for feed in feeds:
-                if "news.google.com" in (feed.get("url") or ""):
+                host = urlsplit(feed.get("url") or "").netloc.lower()
+                if host == "news.google.com" or host.endswith(".news.google.com"):
                     self.assertEqual(
                         feed.get("type"), "gnews",
                         f"{lang}:{feed['id']} must declare type 'gnews'")

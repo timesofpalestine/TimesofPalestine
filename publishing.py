@@ -349,7 +349,10 @@ def validate_feed_config(feeds: Dict[str, Any]) -> None:
                 raise PublishingError(f"{where}.{required} is required")
             if required == "url" and not is_http_url(feed["url"]):
                 raise PublishingError(f"{where}.url must be an HTTP(S) URL")
-            if "news.google.com" in (feed.get("url") or "") and source_type != "gnews":
+            feed_host = urlsplit(feed.get("url") or "").netloc.lower()
+            if (feed_host == "news.google.com"
+                    or feed_host.endswith(".news.google.com")) \
+                    and source_type != "gnews":
                 # A Google News search declared as plain RSS attributes every
                 # story to Google's redirect instead of the real outlet.
                 raise PublishingError(
