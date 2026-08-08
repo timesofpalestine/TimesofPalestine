@@ -259,6 +259,14 @@ def _retryable_api_error(error):
             or "internal server" in text)
 
 
+_DESK_DEADLINE = None  # monotonic instant after which the desk stops retrying
+
+
+def _desk_time_left():
+    return (float("inf") if _DESK_DEADLINE is None
+            else _DESK_DEADLINE - time.monotonic())
+
+
 def _call(client, system, messages, tools=None, max_tokens=32000):
     kwargs = dict(model=MODEL, max_tokens=max_tokens, system=system,
                   messages=messages, thinking={"type": "adaptive"})
@@ -277,6 +285,11 @@ def _call(client, system, messages, tools=None, max_tokens=32000):
     for attempt in range(5):
         if attempt:
             wait = min(240, 30 * (2 ** (attempt - 1)))
+            if _desk_time_left() < wait + 60:
+                # The window is a bonus; the news build is the job. Surrender
+                # the pass rather than backing off past the desk's budget.
+                print(f"  → desk budget exhausted — giving up after {type(last).__name__}")
+                raise last
             time.sleep(wait)
             print(f"  → desk retry {attempt}/4 after {type(last).__name__} (waited {wait}s)")
         try:
@@ -300,6 +313,7 @@ def _save_state(state, now, hour, error=None):
             state["error"] = error
         else:
             state.pop("error", None)
+        state.pop("last_status", None)  # legacy field, no longer written
         STATE_FILE.write_text(
             json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
     except OSError:
@@ -380,7 +394,7 @@ def _file_content(topic, parsed, now):
     body = parsed["body"]
     head = (f"title: {parsed['title']}\n"
             f"category: {topic['cat']}\n"
-            f"date: {now.isoformat()}\n"
+            f"date: {now.replace(microsecond=0).isoformat()}\n"
             f"maxAgeHours: 720\n")
     if parsed.get("image"):
         head += f"image: {parsed['image']}\n"
@@ -515,6 +529,8 @@ def _run():
 
 def run():
     """Run the desk without allowing a model or network failure to stop the news."""
+    global _DESK_DEADLINE
+    _DESK_DEADLINE = time.monotonic() + 8 * 60  # three passes + retries, bounded
     try:
         return _run()
     except Exception as error:

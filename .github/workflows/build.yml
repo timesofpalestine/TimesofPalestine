@@ -91,14 +91,25 @@ jobs:
         run: python distribute.py dist --summary >> "$GITHUB_STEP_SUMMARY"
       - name: Persist generated investigations
         if: ${{ always() && steps.deployment.outcome == 'success' && github.ref == 'refs/heads/main' }}
-        continue-on-error: true
         run: |
           git config user.name "Times of Palestine Newsdesk"
           git config user.email "newsdesk@timesofpalestine.com"
           git add originals/
           if ! git diff --cached --quiet; then
             git commit -m "Publish automated investigation [skip ci]"
-            git push origin HEAD:main
+            # Fetch/rebase/retry (charter publishing contract): this repo
+            # receives frequent commits, and a silently lost push here loses
+            # a finished, already-deployed investigation from the repo.
+            ok=0
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main || true
+              if git push origin HEAD:main; then ok=1; break; fi
+              sleep $((i * 5))
+            done
+            if [ "$ok" != "1" ]; then
+              echo "::error::failed to persist generated investigations after 3 attempts"
+              exit 1
+            fi
           fi
       - name: Save briefs and delivery cache
         if: always()

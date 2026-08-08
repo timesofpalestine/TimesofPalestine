@@ -45,7 +45,7 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           if [ -z "$TOKEN" ]; then
-            echo "WORKFLOW_DISPATCH_TOKEN not set — self-rearm dormant; cron and heartbeat carry the schedule."
+            echo "::warning::WORKFLOW_DISPATCH_TOKEN not set or expired — self-rearm dormant; the 10-minute cadence falls back to cron only."
             exit 0
           fi
           sleep 540
