@@ -106,6 +106,8 @@ def validate(root):
             errors.append(f"{path.relative_to(root)}: unreadable HTML ({exc})")
             continue
         check_body_starts_clean(path.relative_to(root), html_text, errors)
+        if path.parent.name == "story":
+            check_editorial_hygiene(path.relative_to(root), html_text, errors)
         # Legitimate redirects: the root language splash, and the bare-pid
         # story stubs that keep every previously shared link resolving now
         # that story filenames carry a headline slug ahead of the pid.
@@ -259,6 +261,41 @@ def summary(root):
           + ("rendered in both editions" if not missing
              else f"**MISSING** in {', '.join(missing)} — daily series unreachable?"))
     return 0
+
+
+# The charter's editorial rules are enforced at ingest, on the source file. This
+# re-checks the RENDERED page, which is the only thing a reader ever sees: a rule
+# that regresses, or copy arriving by a path that skips the ingest gate, would
+# otherwise publish unnoticed. Anchored on subheads and on phrases that can only
+# be leaked scaffolding, so ordinary prose ("sources differ", "the bottom line is
+# that…") does not trip it.
+_BANNED_SUBHEADS = (
+    "sources", "source list", "references", "bibliography", "further reading",
+    "methodology", "right of reply", "corrections", "visual credits",
+    "key takeaways", "bottom line", "unanswered questions", "what is unresolved",
+    "what remains unanswered", "conclusion",
+    "المصادر", "المصادر والوثائق", "المراجع", "المنهجية", "حق الرد",
+    "التصحيحات", "حقوق المواد البصرية", "الخلاصة السريعة", "ما لم يُحسم",
+)
+_LEAKED_NOTE_RX = re.compile(
+    r"verify before publication|before publication,? the newsroom|"
+    r"this is an unpublished draft|awaiting review|pending review|"
+    r"developing report|\[placeholder\]|\bTODO\b|\bTK\b|lorem ipsum|"
+    r"تحقق قبل النشر|مسودة غير منشورة|قيد المراجعة", re.I)
+
+
+def check_editorial_hygiene(path, html, errors):
+    """Charter rules, re-checked on what actually shipped."""
+    for raw in re.findall(r'<h[234][^>]*class="sub"[^>]*>(.*?)</h[234]>', html, re.S):
+        text = re.sub(r"<[^>]+>", "", raw).strip().rstrip(":：").casefold()
+        if text in _BANNED_SUBHEADS:
+            errors.append(
+                f"{path}: article carries a '{text}' section — attribution belongs "
+                f"inline in the prose (charter: no sources/methodology/memo sections)")
+    body = " ".join(re.findall(r'<p class="summary">(.*?)</p>', html, re.S))
+    hit = _LEAKED_NOTE_RX.search(re.sub(r"<[^>]+>", "", body))
+    if hit:
+        errors.append(f"{path}: internal editorial note reached the page: {hit.group(0)!r}")
 
 
 def check_body_starts_clean(path, html, errors):
