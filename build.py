@@ -21,6 +21,9 @@ import json
 import os
 import re
 import sys
+import threading
+import time
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -659,6 +662,163 @@ def discover_story_image(article_url):
     return image.replace("http://", "https://", 1)
 
 
+# ---------- Remote lede verification: memory, pacing, transient failures ----------
+# Owner report 2026-08-08: story cover PHOTOS were flickering to house SVGs at
+# random between builds. Nothing was dead — the build checked twenty Wikimedia
+# portraits in one burst and Commons answered HTTP 429 for a varying subset,
+# which the verifier read as "no image". Three defences, in order:
+#   1. A verification is remembered on disk and reused for a few hours, so the
+#      site does not re-check the same twenty portraits 144 times a day — that
+#      burst is what earns the 429 in the first place.
+#   2. Requests to a rate-limiting host are serialised and spaced.
+#   3. A 429/5xx/timeout is retried once, politely, before it counts — and if
+#      it still fails, a verification inside the TTL keeps the photo published.
+# A DEFINITIVE failure (404/410/403, HTML body, tracking-pixel size) still
+# demotes on the spot and forgets the entry — a genuinely dead file must never
+# survive behind the cache, so a removed portrait leaves the front page within
+# the freshness window at worst.
+REMOTE_IMAGE_CACHE = ROOT / "remote-image-cache.json"   # build state, never committed
+REMOTE_IMAGE_FRESH = 6 * 3600       # re-verify at most every six hours
+REMOTE_IMAGE_TTL = 3 * 86400        # a verified image stays trusted three days
+REMOTE_IMAGE_MAX = 4000             # newest verifications kept, oldest dropped
+REMOTE_IMAGE_TIMEOUT = 8
+# Hosts that answer a rapid burst with 429. Commons is also slow under load,
+# so it gets a longer timeout as well as a pacer.
+THROTTLED_HOSTS = ("wikimedia.org", "wikipedia.org")
+THROTTLED_TIMEOUT = 20
+THROTTLE_INTERVAL = 0.5             # seconds between two requests to one host
+THROTTLE_BACKOFF = 2.0              # pause before the single retry after a 429
+TRANSIENT_STATUS = {408, 425, 429, 500, 502, 503, 504}
+
+_remote_image_lock = threading.Lock()
+_remote_image_seen = None           # url -> epoch of last successful verification
+_remote_image_dirty = False
+_throttle_lock = threading.Lock()
+_throttle_next = {}                 # host -> monotonic clock of its next free slot
+
+
+def _remote_image_entries():
+    """Load the on-disk verification memory once per build. Caller holds the lock."""
+    global _remote_image_seen
+    if _remote_image_seen is not None:
+        return _remote_image_seen
+    entries, now = {}, time.time()
+    try:
+        raw = json.loads(REMOTE_IMAGE_CACHE.read_text(encoding="utf-8"))
+        for url, stamp in (raw.get("verified") or {}).items():
+            # A stamp from the future is a corrupt or skewed state file, not a
+            # verification: one hour of tolerance, then the entry is dropped.
+            if isinstance(url, str) and isinstance(stamp, (int, float)) \
+                    and -3600 < now - stamp < REMOTE_IMAGE_TTL:
+                entries[url] = float(stamp)
+    except (OSError, ValueError, AttributeError):
+        entries = {}   # unreadable state is not a build problem — verify live
+    _remote_image_seen = entries
+    return entries
+
+
+def remote_image_verified_within(url, window):
+    with _remote_image_lock:
+        stamp = _remote_image_entries().get(url)
+    return stamp is not None and time.time() - stamp < window
+
+
+def remember_remote_image(url, verified):
+    """Record a verification, or forget one the host has definitively refused."""
+    global _remote_image_dirty
+    with _remote_image_lock:
+        entries = _remote_image_entries()
+        if verified:
+            entries[url] = time.time()
+        elif entries.pop(url, None) is None:
+            return
+        _remote_image_dirty = True
+
+
+def save_remote_image_cache():
+    global _remote_image_dirty
+    with _remote_image_lock:
+        if _remote_image_seen is None or not _remote_image_dirty:
+            return
+        if len(_remote_image_seen) > REMOTE_IMAGE_MAX:
+            keep = sorted(_remote_image_seen.items(),
+                          key=lambda kv: kv[1], reverse=True)[:REMOTE_IMAGE_MAX]
+            _remote_image_seen.clear()
+            _remote_image_seen.update(keep)
+        payload = {"verified": dict(_remote_image_seen)}
+        _remote_image_dirty = False
+    try:
+        REMOTE_IMAGE_CACHE.write_text(
+            json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    except OSError as exc:
+        print(f"::warning::remote image cache write failed ({type(exc).__name__})")
+
+
+def throttle_key(url):
+    """The pacing bucket for a URL, or "" when the host needs no pacing."""
+    host = (urlsplit(url).hostname or "").lower()
+    for base in THROTTLED_HOSTS:
+        if host == base or host.endswith("." + base):
+            return base
+    return ""
+
+
+def pace_request(key):
+    """Space requests to a rate-limiting host so a build never bursts at it."""
+    if not key:
+        return
+    with _throttle_lock:
+        slot = max(time.monotonic(), _throttle_next.get(key, 0.0))
+        _throttle_next[key] = slot + THROTTLE_INTERVAL
+    delay = slot - time.monotonic()
+    if delay > 0:
+        time.sleep(delay)
+
+
+def probe_remote_image(url, timeout, pace=""):
+    """One HEAD-then-GET probe. Returns (serves_an_image, failure_was_transient)."""
+    transient = False
+    for method in ("HEAD", "GET"):
+        pace_request(pace)
+        req = urllib.request.Request(url, method=method, headers={
+            "User-Agent": UA, "Accept": "image/*,*/*;q=0.5"})
+        if method == "GET":
+            req.add_header("Range", "bytes=0-2047")
+        try:
+            with safe_urlopen(req, timeout=timeout) as r:
+                if r.status not in (200, 206):
+                    if method == "HEAD":
+                        continue  # many CDNs reject HEAD; the ranged GET decides
+                    return False, False
+                ctype = (r.headers.get("Content-Type") or "").split(";")[0].strip().lower()
+                if not ctype and method == "HEAD":
+                    continue
+                if not (ctype.startswith("image/") or (not ctype and IMAGEISH_RX.search(url))):
+                    return False, False
+                # Reject tracking-pixel-sized files when the server states a size.
+                total = r.headers.get("Content-Range", "").rpartition("/")[2] \
+                    or (r.headers.get("Content-Length") or "" if r.status == 200 else "")
+                if total.isdigit() and int(total) < 600:
+                    return False, False
+                return True, False
+        except urllib.error.HTTPError as exc:
+            # 429 and the 5xx family say the host is busy, not that the file is
+            # gone; 404/403/410 say the file is gone. The ranged GET is the
+            # decisive probe, so its own verdict stands whatever HEAD answered.
+            transient = exc.code in TRANSIENT_STATUS
+            if method == "HEAD":
+                continue
+            return False, transient
+        except (OSError, ValueError, PublishingError):
+            # Resets, DNS blips and read timeouts say nothing about whether the
+            # file exists — never demote a photo on their word alone.
+            transient = True
+            if method == "HEAD":
+                continue
+            return False, True
+    return False, transient
+
+
 @functools.lru_cache(maxsize=2048)
 def remote_image_ok(url):
     """A remote lede must actually serve an image before we publish it.
@@ -666,36 +826,32 @@ def remote_image_ok(url):
     Dead og:image links, soft-404 HTML pages, hotlink walls and tracking
     pixels all render as a broken photo on the reader's side. A URL that
     fails here is treated as photoless, so the branded category cover takes
-    over — never an empty frame.
+    over — never an empty frame. A host that is merely rate-limiting or
+    unreachable is not evidence of a dead image: when the URL verified on a
+    recent build, the photo stays published (see the section note above).
     """
     if not is_http_url(url) or not is_public_http_url(url):
         return False
-    for method in ("HEAD", "GET"):
-        req = urllib.request.Request(url, method=method, headers={
-            "User-Agent": UA, "Accept": "image/*,*/*;q=0.5"})
-        if method == "GET":
-            req.add_header("Range", "bytes=0-2047")
-        try:
-            with safe_urlopen(req, timeout=8) as r:
-                if r.status not in (200, 206):
-                    if method == "HEAD":
-                        continue  # many CDNs reject HEAD; the ranged GET decides
-                    return False
-                ctype = (r.headers.get("Content-Type") or "").split(";")[0].strip().lower()
-                if not ctype and method == "HEAD":
-                    continue
-                if not (ctype.startswith("image/") or (not ctype and IMAGEISH_RX.search(url))):
-                    return False
-                # Reject tracking-pixel-sized files when the server states a size.
-                total = r.headers.get("Content-Range", "").rpartition("/")[2] \
-                    or (r.headers.get("Content-Length") or "" if r.status == 200 else "")
-                if total.isdigit() and int(total) < 600:
-                    return False
-                return True
-        except (OSError, ValueError, PublishingError):
-            if method == "HEAD":
-                continue
-            return False
+    if remote_image_verified_within(url, REMOTE_IMAGE_FRESH):
+        return True
+    pace = throttle_key(url)
+    timeout = THROTTLED_TIMEOUT if pace else REMOTE_IMAGE_TIMEOUT
+    ok, transient = probe_remote_image(url, timeout, pace)
+    if not ok and transient and pace:
+        # The paced hosts are the ones that answer a burst with 429; give them
+        # one slow retry rather than adding seconds to every wire image check.
+        time.sleep(THROTTLE_BACKOFF)
+        ok, transient = probe_remote_image(url, timeout, pace)
+    if ok:
+        remember_remote_image(url, True)
+        return True
+    if transient:
+        if remote_image_verified_within(url, REMOTE_IMAGE_TTL):
+            print(f"::warning::remote image check failed transiently — keeping the "
+                  f"photo verified on an earlier build: {url}")
+            return True
+        return False
+    remember_remote_image(url, False)
     return False
 
 
@@ -4598,6 +4754,9 @@ def main():
             HEALTH.register_source(feed, lang)
     en_items = build_lang("en")
     ar_items = build_lang("ar")
+    # Persist what verified this run before anything downstream can fail: the
+    # next build's photos depend on this memory surviving.
+    save_remote_image_cache()
     # Both editions are first-class (charter §3): a one-language validator
     # skip must never publish a story monolingual in silence.
     for slug in sorted(ORIGINALS_LOADED.get("en", set())
@@ -4793,6 +4952,7 @@ def main():
     (dist / "health.json").write_text(
         json.dumps(health, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    save_remote_image_cache()   # image overrides and covers verify late in the run
     print(f"\nBuilt dist/ — EN {len(en_items)} stories, AR {len(ar_items)} stories.")
     if not en_items and not ar_items:
         print("No items fetched from any feed — failing so the last good deploy stays live.")

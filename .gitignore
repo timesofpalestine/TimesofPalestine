@@ -3,6 +3,7 @@ __pycache__/
 .DS_Store
 dist/
 briefs-cache.json
+remote-image-cache.json
 telegram-delivery.json
 webhook-delivery.json
 telegram-outbox.json
