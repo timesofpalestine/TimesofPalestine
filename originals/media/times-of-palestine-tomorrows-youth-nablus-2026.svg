@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tomorrow's Youth Organization — the centre on the hill in Nablus</title>
+  <desc id="desc">A house illustration of the Tomorrow's Youth Organization centre in Khallet al-Amoud, Nablus: a lit centre on a hillside above the old city, a child's kite rising, and the organization's four program strands named in English and Arabic.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071018"/>
+      <stop offset="1" stop-color="#142333"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12283b"/>
+      <stop offset="1" stop-color="#1d3a52"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="64" y="54" width="1472" height="792" rx="30" fill="#0d1a26" stroke="#30485a" stroke-width="2" filter="url(#shadow)"/>
+
+  <text x="110" y="130" fill="#ffffff" font-family="Arial, sans-serif" font-size="46" font-weight="700">Tomorrow's Youth Organization</text>
+  <text x="1490" y="130" text-anchor="start" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-family="Arial, sans-serif" font-size="38" font-weight="700">منظمة شباب الغد</text>
+  <text x="110" y="178" fill="#89a8ba" font-family="Arial, sans-serif" font-size="23">The centre on the hill — Khallet al-Amoud, Nablus, since 2008</text>
+
+  <!-- hillside scene -->
+  <g>
+    <rect x="110" y="210" width="1380" height="420" rx="18" fill="url(#sky)" stroke="#30485a" stroke-width="2"/>
+    <!-- moon-sun disc -->
+    <circle cx="1310" cy="300" r="46" fill="#e0a928" opacity="0.9"/>
+    <!-- far hill with old-city silhouette -->
+    <path d="M110 560 Q 380 430 640 500 T 1490 520 L 1490 630 L 110 630 Z" fill="#16324a"/>
+    <g fill="#0f2436">
+      <rect x="330" y="492" width="26" height="30"/>
+      <rect x="366" y="480" width="22" height="42"/>
+      <circle cx="404" cy="486" r="12"/>
+      <rect x="398" y="486" width="12" height="36"/>
+      <rect x="424" y="496" width="24" height="28"/>
+    </g>
+    <!-- near hill -->
+    <path d="M110 630 Q 470 480 830 560 T 1490 570 L 1490 630 L 110 630 Z" fill="#1b3d5a"/>
+    <!-- the centre -->
+    <g filter="url(#shadow)">
+      <rect x="700" y="392" width="300" height="170" rx="10" fill="#24455f" stroke="#89a8ba" stroke-width="3"/>
+      <rect x="700" y="362" width="300" height="42" rx="10" fill="#26a269"/>
+      <g fill="#ffd97a">
+        <rect x="726" y="428" width="52" height="44" rx="6"/>
+        <rect x="800" y="428" width="52" height="44" rx="6"/>
+        <rect x="874" y="428" width="52" height="44" rx="6"/>
+        <rect x="812" y="496" width="76" height="66" rx="6"/>
+      </g>
+      <rect x="948" y="496" width="30" height="66" rx="4" fill="#e74c3c"/>
+    </g>
+    <!-- kite -->
+    <g>
+      <path d="M540 300 l 34 44 l -34 44 l -34 -44 Z" fill="#e74c3c" stroke="#ffffff" stroke-width="3"/>
+      <path d="M540 388 C 560 470, 640 500, 700 540" fill="none" stroke="#dce9f1" stroke-width="3" stroke-dasharray="2 8"/>
+    </g>
+    <!-- children figures -->
+    <g fill="#dce9f1">
+      <circle cx="668" cy="576" r="10"/><rect x="660" y="586" width="16" height="26" rx="6"/>
+      <circle cx="636" cy="582" r="9"/><rect x="629" y="591" width="14" height="23" rx="6"/>
+      <circle cx="1030" cy="580" r="10"/><rect x="1022" y="590" width="16" height="26" rx="6"/>
+    </g>
+  </g>
+
+  <!-- four program strands -->
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="668" width="330" height="104" rx="16" fill="#122536" stroke="#26a269" stroke-width="2"/>
+    <text x="275" y="712" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="700">Early childhood</text>
+    <text x="275" y="748" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#b8cbd6" font-size="21">التعليم المبكر</text>
+
+    <rect x="460" y="668" width="330" height="104" rx="16" fill="#122536" stroke="#e0a928" stroke-width="2"/>
+    <text x="625" y="712" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="700">Mental health</text>
+    <text x="625" y="748" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#b8cbd6" font-size="21">الصحة النفسية</text>
+
+    <rect x="810" y="668" width="330" height="104" rx="16" fill="#122536" stroke="#e74c3c" stroke-width="2"/>
+    <text x="975" y="712" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="700">Women's empowerment</text>
+    <text x="975" y="748" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#b8cbd6" font-size="21">تمكين المرأة</text>
+
+    <rect x="1160" y="668" width="330" height="104" rx="16" fill="#122536" stroke="#6d8798" stroke-width="2"/>
+    <text x="1325" y="712" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="700">Youth livelihoods</text>
+    <text x="1325" y="748" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#b8cbd6" font-size="21">سبل عيش الشباب</text>
+  </g>
+
+  <text x="110" y="812" fill="#6d8798" font-family="Arial, sans-serif" font-size="20">Illustration: Times of Palestine</text>
+  <text x="1490" y="812" text-anchor="start" direction="rtl" unicode-bidi="bidi-override" fill="#6d8798" font-family="Arial, sans-serif" font-size="20">رسم: تايمز أوف فلسطين</text>
+</svg>

@@ -13,3 +13,5 @@ credit, licenseUrl). Remove an entry when the photo ships.
 | 3 | palestinian-table-reems-california-2026 | house franchise card | Commons/press-kit photo of Reem's Jack London Square or a mana'oushe, with manifest entry |
 | 4 | shabjdeed-kufr-aqab-arab-rap-2026-08-07 | house SVG lede | rights-cleared performance photo (BLTNM press kit / Commons) |
 | 5 | washington-brief franchise | Mladenov Commons portrait (healthy) | rotate per-edition subject portraits from Commons as briefs change subject |
+| 6 | tomorrows-youth-organization-nablus-2026 | house SVG (centre-on-the-hill illustration) | rights-cleared photo of the TYO centre or a program session — ask the organization's press contact, or Commons; manifest entry required |
+| 7 | masri-britain-owes-palestine-2026 | OGL Downing Street door photo (healthy) | upgrade: the family's own Downing Street photo (grandfather and grandson at the gates), rights-cleared from Munib al-Masri or the BOP campaign |
