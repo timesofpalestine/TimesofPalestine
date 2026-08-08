@@ -1,14 +1,17 @@
 {
-  "comment": "Hebrew-first source list for the Israeli press desk. israeli_press_fetch.py reads this; edit here, not in code. Every feed is fetched fail-open — a dead URL warns and is skipped, never blocks.",
+  "comment": "Hebrew-first source list for the Israeli press desk. israeli_press_fetch.py reads this; edit here, not in code. Every feed is fetched fail-open — a dead URL warns and is skipped, never blocks. Haaretz English has no working public RSS path (the old /srv/haaretz-latestnews returns 404); the desk reads Haaretz in Hebrew instead. Israel Hayom and Times of Israel answer 403 to server-side fetches from some networks — they stay listed because they work from other runners, and a 403 only costs a warning line.",
   "feeds": [
     { "outlet": "Ynet", "lang": "he", "url": "https://www.ynet.co.il/Integration/StoryRss2.xml" },
-    { "outlet": "Ynet — politics", "lang": "he", "url": "https://www.ynet.co.il/Integration/StoryRss3082.xml" },
     { "outlet": "Maariv — diplomacy", "lang": "he", "url": "https://www.maariv.co.il/Rss/RssFeedsPolitiMedini" },
     { "outlet": "Maariv — breaking", "lang": "he", "url": "https://www.maariv.co.il/Rss/RssFeedsMivzakiChadashot" },
     { "outlet": "Israel Hayom", "lang": "he", "url": "https://www.israelhayom.co.il/rss.xml" },
     { "outlet": "Walla News", "lang": "he", "url": "https://rss.walla.co.il/feed/22" },
     { "outlet": "Haaretz (Hebrew)", "lang": "he", "url": "https://www.haaretz.co.il/srv/htz---all-articles" },
-    { "outlet": "Haaretz English", "lang": "en", "url": "https://www.haaretz.com/srv/haaretz-latestnews" },
+    { "outlet": "N12 (Channel 12) — Israel", "lang": "he", "url": "https://rcs.mako.co.il/rss/news-israel.xml" },
+    { "outlet": "N12 (Channel 12) — military", "lang": "he", "url": "https://rcs.mako.co.il/rss/news-military.xml" },
+    { "outlet": "Arutz Sheva — settlement movement", "lang": "he", "url": "https://www.inn.co.il/Rss.aspx?scat=0kh" },
+    { "outlet": "Globes — business", "lang": "he", "url": "https://www.globes.co.il/webservice/rss/rssfeeder.asmx/FeederNode?iID=1725" },
+    { "outlet": "Ynet English", "lang": "en", "url": "https://www.ynet.co.il/Integration/StoryRss3082.xml" },
     { "outlet": "Times of Israel", "lang": "en", "url": "https://www.timesofisrael.com/feed/" },
     { "outlet": "Jerusalem Post", "lang": "en", "url": "https://www.jpost.com/rss/rssfeedsfrontpage.aspx" }
   ]

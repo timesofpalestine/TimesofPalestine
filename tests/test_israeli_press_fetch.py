@@ -70,5 +70,32 @@ class ParseTests(unittest.TestCase):
             tmp.unlink(missing_ok=True)
 
 
+class FeedManifestTests(unittest.TestCase):
+    """The shipped source list is editorial config — keep it well formed."""
+
+    def setUp(self):
+        path = Path(__file__).resolve().parents[1] / "editorial" / "israeli-press-feeds.json"
+        self.feeds = json.loads(path.read_text(encoding="utf-8"))["feeds"]
+
+    def test_every_feed_has_outlet_lang_and_https_url(self):
+        for feed in self.feeds:
+            self.assertTrue(feed.get("outlet"), feed)
+            self.assertIn(feed.get("lang"), {"he", "en"}, feed)
+            self.assertTrue(feed.get("url", "").startswith("https://"), feed)
+
+    def test_outlet_labels_and_urls_are_unique(self):
+        labels = [f["outlet"] for f in self.feeds]
+        urls = [f["url"] for f in self.feeds]
+        self.assertEqual(len(labels), len(set(labels)))
+        self.assertEqual(len(urls), len(set(urls)))
+
+    def test_hebrew_sources_lead_the_list(self):
+        """Owner order 2026-08-07: the desk reads Hebrew first."""
+        langs = [f["lang"] for f in self.feeds]
+        self.assertEqual(langs[0], "he")
+        self.assertGreater(langs.count("he"), langs.count("en"))
+        self.assertNotIn("he", langs[langs.index("en"):])
+
+
 if __name__ == "__main__":
     unittest.main()
