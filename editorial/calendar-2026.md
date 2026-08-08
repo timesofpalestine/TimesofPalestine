@@ -51,15 +51,22 @@ land in a specific window.
 
 - **Displacement ledger refresh** (`west-bank-displacement-ledger` after
   its launch): new OCHA/OHCHR month numbers, villages added by name.
+  Launched 2026-08-08 as `west-bank-displacement-ledger-2026-08-08-05.*`;
+  first monthly refresh due in the first week of September.
 - **Reconstruction-money tracker refresh** (`gaza-reconstruction-money`
   after its launch): pledges vs transfers vs rubble, dashboard updated.
 
 ## Standing cadence targets (audit recs. F–G)
 
 - **Real Lives:** at least one humans original per week.
+  - ✅ week of Aug 3–9 — `nasrallah-neustadt-laureate-2026.*` (2026-08-08):
+    Ibrahim Nasrallah, the Wehdat camp and the Neustadt Prize.
 - **Arabic-first commissioning:** 2–3 originals per month reported for the
   Arabic reader first (Arab Support and Her Story are the natural homes),
   then rendered into English.
+  - ✅ 1 of 3 for August — `turkey-indonesia-palestinian-student-funds-2026.*`
+    (2026-08-08): the YTB–Baykar and BAZNAS scholarship funds, written in
+    Arabic first and then into English.
 - **Her Story pipeline:** keep at least one women-section topic in the
   active queue at all times (two added 2026-08-06).
 
