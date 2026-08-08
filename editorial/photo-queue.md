@@ -17,3 +17,4 @@ credit, licenseUrl). Remove an entry when the photo ships.
 | 7 | masri-britain-owes-palestine-2026 | OGL Downing Street door photo (healthy) | upgrade: the family's own Downing Street photo (grandfather and grandson at the gates), rights-cleared from Munib al-Masri or the BOP campaign |
 | 8 | pa-prime-ministers-record-2026 | house timeline SVG | rights-cleared photo cover — a Commons frame of a PA cabinet sitting or the Muqata'a, with manifest entry |
 | 9 | tareq-abbas-businessman-2026 / tarek-aggad-apic-2026 | house board SVGs | rights-cleared portraits (Commons or press-kit) for both profiles, with manifest entries |
+| 10 | palestine-banks-owners-2026 / paltel-ooredoo-spectrum-2026 | house diagram SVGs | rights-cleared photos (a bank branch / a Jawwal or Ooredoo storefront or tower, Commons), with manifest entries |
