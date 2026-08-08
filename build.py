@@ -50,6 +50,16 @@ GAZA = ZoneInfo("Asia/Gaza")
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
 SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"  # tips go to the bot, not the channel. Subscribe-with-Google removed 2026-08-02 (owner: no email pop-up on the site).
 TELEGRAM_CHANNEL_URL = "https://t.me/timesofpalestin"  # public delivery channel, for reader follow links
+# Reader-growth hooks (owner approval 2026-08-08). All OFF until the repo
+# variables exist — no third-party request and no footer link is emitted
+# without them. No pop-ups ever (owner rule 2026-08-02); these are quiet
+# footer links and a cookieless counter.
+#   ANALYTICS_GOATCOUNTER  e.g. "timesofpalestine" → GoatCounter site code
+#   NEWSLETTER_URL         e.g. a Buttondown/Listmonk subscribe page
+#   SUPPORT_URL            e.g. a support/donate page
+GOATCOUNTER_CODE = os.environ.get("ANALYTICS_GOATCOUNTER", "").strip()
+NEWSLETTER_URL = os.environ.get("NEWSLETTER_URL", "").strip()
+SUPPORT_URL = os.environ.get("SUPPORT_URL", "").strip()
 BASE_URL = "https://timesofpalestine.com"
 # Public corrections-ledger page (owner decision 2026-08-06): the page goes
 # live only once a READER-REQUESTED correction is on the record — none has
@@ -1941,6 +1951,13 @@ def load_originals(lang):
         }
         item["pid"] = hashlib.md5(item["link"].encode()).hexdigest()[:10]
         attach_media(item, meta.get("image") or None, local_original=True)
+        if item["lang"] == "ar" and (item.get("image") or "").endswith(".svg"):
+            # Arabic edition leads with Arabic-first art (owner evaluation
+            # 2026-08-07): a house SVG named <lede>-ar.svg, with the text
+            # hierarchy flipped, replaces the shared lede on AR pages only.
+            _arv = item["image"][:-4] + "-ar.svg"
+            if (ROOT / "originals" / "media" / _arv.rsplit("/", 1)[-1]).is_file():
+                attach_media(item, _arv, local_original=True)
         if not item.get("image") and meta.get("imagefallback"):
             # Second choice when a remote lede fails verification — usually
             # the report's own house infographic, so the story never drops
@@ -1950,9 +1967,14 @@ def load_originals(lang):
             # No lede should ever be the bare flag placeholder: text-only desk
             # reports get the branded category cover (house SVG), alternating
             # A/B variants so adjacent reports never show twin covers.
+            _variants = [""]
+            for _suf in ("-b", "-c", "-d"):
+                if (ROOT / "originals" / "media"
+                        / f"times-of-palestine-cover-{item['cat']}{_suf}.svg").is_file():
+                    _variants.append(_suf)
             _n = _orig_cover_cycle.get(item["cat"], 0)
             _orig_cover_cycle[item["cat"]] = _n + 1
-            cover = f"times-of-palestine-cover-{item['cat']}{'-b' if _n % 2 else ''}.svg"
+            cover = f"times-of-palestine-cover-{item['cat']}{_variants[_n % len(_variants)]}.svg"
             if not (ROOT / "originals" / "media" / cover).is_file():
                 cover = f"times-of-palestine-cover-{item['cat']}.svg"
             if (ROOT / "originals" / "media" / cover).is_file():
@@ -3745,7 +3767,7 @@ def render_page(lang, items, built_at):
 <link rel="alternate" hreflang="en" href="{BASE_URL}/en/">
 <link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/">
 <link rel="alternate" hreflang="x-default" href="{BASE_URL}/en/">
-<link rel="alternate" type="application/rss+xml" title="{t['site_name']}" href="{BASE_URL}/{lang}/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="{t['site_name']}" href="{BASE_URL}/{lang}/rss.xml">{f'<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>' if GOATCOUNTER_CODE else ''}
 <link rel="alternate" type="application/feed+json" title="{t['site_name']}" href="{BASE_URL}/{lang}/feed.json">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="{'ar_AR' if lang == 'ar' else 'en_US'}">
@@ -3807,7 +3829,7 @@ if(n&&n.querySelector(".nav-group.open")&&Math.abs(window.scrollY-(+n.dataset.oy
       <span class="contact-id">{SIGNAL_USERNAME}</span></p><p class="footer-contact secondary"><a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} {"←" if lang == "ar" else "→"}</a> <span class="contact-id">{TELEGRAM_BOT_NAME}</span></p></div>
   </div>
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>{('<a href="corrections.html">' + ('التصويبات' if lang == 'ar' else 'Corrections') + '</a>') if CORRECTIONS_PAGE_LIVE else ''} <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>{('<a href="corrections.html">' + ('التصويبات' if lang == 'ar' else 'Corrections') + '</a>') if CORRECTIONS_PAGE_LIVE else ''} <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>{f'<a href="{NEWSLETTER_URL}" target="_blank" rel="noopener">' + ('النشرة البريدية' if lang == 'ar' else 'Email newsletter') + '</a>' if NEWSLETTER_URL else ''}{f'<a href="{SUPPORT_URL}" target="_blank" rel="noopener">' + ('ادعمنا' if lang == 'ar' else 'Support us') + '</a>' if SUPPORT_URL else ''}
     <span>{t['attribution']}</span>
     <a href="{t['switch_href']}">{t['footer_lang']}</a>
   </div>

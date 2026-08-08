@@ -399,3 +399,13 @@ Tracked here so agents pick these up instead of inventing new directions:
 - Election hemicycle SVG (`times-of-palestine-israel-votes-card.svg`) bakes
   in the current bloc math — update it same-day when polls shift, together
   with the standings graphic (election beat: Claude).
+
+## Arabic-first artwork (owner approval 2026-08-08)
+
+The Arabic edition leads with Arabic. Any house lede SVG whose text
+hierarchy puts the English title first gets a sibling `<name>-ar.svg`
+with the hierarchy flipped (Arabic display line, English deck); the
+build prefers the `-ar` variant automatically on Arabic pages. New
+bilingual ledes should ship both variants from day one. Category
+covers may carry any number of variants (`-b`, `-c`, `-d`) — the build
+cycles through all that exist, so adjacent photoless cards never twin.

@@ -53,6 +53,11 @@ jobs:
       - name: Build site from live feeds
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Reader-growth hooks — all optional, all off until the repo
+          # variables exist (owner approval 2026-08-08).
+          ANALYTICS_GOATCOUNTER: ${{ vars.ANALYTICS_GOATCOUNTER }}
+          NEWSLETTER_URL: ${{ vars.NEWSLETTER_URL }}
+          SUPPORT_URL: ${{ vars.SUPPORT_URL }}
           INVESTIGATIONS: ${{ vars.INVESTIGATIONS }}   # set this repo variable to "off" to pause the desk
         run: python build.py
       - name: Validate generated site
