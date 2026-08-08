@@ -117,8 +117,10 @@ def suppress_duplicate_events(parts, deliveries, now=None):
             continue  # entries from before titles were recorded
         try:
             sent = datetime.fromisoformat(record.get("sent_at", ""))
-        except ValueError:
+        except (TypeError, ValueError):
             continue
+        if sent.tzinfo is None:  # a naive stamp would crash the aware subtraction
+            sent = sent.replace(tzinfo=timezone.utc)
         if (now - sent).total_seconds() <= 36 * 3600:
             recent.append((lang, event_tokens(title), key))
     fresh, suppressed = [], 0

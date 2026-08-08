@@ -179,6 +179,8 @@ ORIGINAL_CATEGORIES = {
 }
 ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 ORIGINAL_BODY_STATS = {}
+ORIGINAL_SKIPS = {}      # lang -> {slug}: validator skips, for the parity gate
+ORIGINALS_LOADED = {}    # lang -> {slug}: published originals, for the parity gate
 
 # ---------- text utilities ----------
 
@@ -1473,10 +1475,19 @@ TITLE_MAX_WORDS = 12   # hard backstop; the desks aim for ≤9-10
 _EN_PASSIVE_TITLE_RX = re.compile(
     r"\b(?:is|are|was|were|be|been|being|get|gets|got)\s+(?:\w+ed|"
     r"born|built|held|hit|hurt|kept|known|left|lost|made|met|paid|put|sent|"
-    r"set|shot|shut|sold|struck|torn|thrown|withdrawn|won)\b", re.I)
+    r"set|shot|shut|sold|struck|torn|thrown|withdrawn|won)\b"
+    # auxiliary-less passives (owner review 2026-08-08): a title opening on a
+    # bare past participle, or "X financed/run/blocked by Y", hides the actor
+    # from the subject slot just as surely as "was killed" does.
+    r"|^(?:locked|killed|detained|arrested|jailed|targeted|renamed|trapped|"
+    r"forced|displaced|wounded|injured|banned|barred|blocked|expelled)\b"
+    r"|\b(?:now\s+|newly\s+)?(?:financed|funded|backed|owned|run|held|"
+    r"blocked|banned|approved|controlled)\s+by\b", re.I)
 _EN_AGENTLESS_TITLE_RX = re.compile(
     r"\b(?:changes?\s+hands|comes?\s+under|faces?\s+(?:pressure|scrutiny|"
-    r"criticism|questions)|under\s+fire|remains?\s+unclear)\b", re.I)
+    r"criticism|questions)|under\s+fire|remains?\s+unclear|"
+    r"(?:is|are|remains?|stays?)\s+(?:stuck|trapped|frozen|unresolved|"
+    r"in\s+limbo|on\s+hold))\b", re.I)
 _AR_PASSIVE_TITLE_RX = re.compile(
     r"(?:^|[\s:،».])(?:قُتل|اغتيل|استُشهد|أُصيب|اعتُقل|أُوقف|استُهدف|صودر|"
     r"صودرت|أُغلق|أُغلقت|هُدم|هُدمت|دُمر|دُمرت|فُرض|فُرضت|مُنع|مُنعت|"
@@ -1595,8 +1606,9 @@ def generate_briefs(all_items):
                 return False
         return True
 
+    _pre_scrub = len(cache)
     cache = {key: value for key, value in cache.items() if _entry_ok(key, value)}
-    cache_dirty = False
+    cache_dirty = len(cache) != _pre_scrub  # persist the scrub even on warm runs
     now_ts = datetime.now(timezone.utc).timestamp()
     for it in all_items:
         if it.get("original"):
@@ -1648,7 +1660,9 @@ def generate_briefs(all_items):
         todo.extend(stale[:MAX_BRIEFS_PER_RUN - len(todo)])
     key = re.sub(r"\s+", "", os.environ["ANTHROPIC_API_KEY"])
     print(f"Briefs: key length {len(key)}, format {'ok' if re.fullmatch(r'sk-ant-[A-Za-z0-9_-]+', key) else 'UNEXPECTED'}")
-    client = anthropic.Anthropic(api_key=key)
+    # Bounded per-call: the SDK default (600 s × retries) could push the whole
+    # build past its job timeout during a provider outage and stall the site.
+    client = anthropic.Anthropic(api_key=key, timeout=45.0, max_retries=1)
 
     def safe(item):
         try:
@@ -1667,7 +1681,7 @@ def generate_briefs(all_items):
                          "title": it["title"]}  # the desk's own short headline
                 cache[f"{it['lang']}:{it['pid']}"] = entry
                 written += 1
-    cache = {k: v for k, v in cache.items() if now_ts - v.get("ts", now_ts) < 60 * 86400}
+    cache = {k: v for k, v in cache.items() if now_ts - v.get("ts", 0) < 14 * 86400}
     save_brief_cache(cache)
     print(f"\nBriefs: wrote {written} new of {len(todo)} attempted; cache holds {len(cache)}.")
     return "ok" if written == len(todo) else "degraded"
@@ -1834,11 +1848,17 @@ def _original_slug(stem):
 MEMO_HEADING_RX = re.compile(
     r"^#{2,4}\s*(what\s+(is|remains)\s+(unresolved|unanswered|unknown|unclear)|"
     r"(open|unanswered|outstanding|remaining)\s+questions?|key\s+takeaways?|takeaways?|"
+    r"key\s+findings?|at\s+a\s+glance|what\s+to\s+watch|why\s+(this|it)\s+matters|"
     r"in\s+summary|summary|conclusions?|bottom\s+line|looking\s+ahead|what('|’)s\s+next|"
+    r"sources?(\s+and\s+documents)?|bibliograph\w+|references|further\s+reading|"
+    r"methodolog\w+[^\n]{0,30}|corrections?|"
     r"ما\s+(الذي\s+)?(لم\s+يُ?حسم|يبقى\s+(مجهولاً|معلقاً|غامضاً))|"
-    r"أسئلة\s+(مفتوحة|بلا\s+إجابة|عالقة)|الخلاصة|خلاصة|استنتاجات?|ما\s+التالي)\s*$",
+    r"أسئلة\s+(مفتوحة|بلا\s+إجابة|عالقة)|الخلاصة|خلاصة[^\n]{0,20}|استنتاجات?|ما\s+التالي|"
+    r"المصادر(\s+والوثائق)?|المراجع|المنهجية[^\n]{0,30}|التصحيحات|"
+    r"أبرز\s+النتائج|النقاط\s+الرئيسية)\s*$",
     re.I | re.M)
 _QUESTION_ITEM_RX = re.compile(r"^(?:[-*]|\d{1,2}\.)\s+.*[?؟]\**\s*$", re.M)
+_QUESTION_HEADING_RX = re.compile(r"^#{2,4}\s*[^\n]*[?؟]\s*$", re.M)
 
 
 def memo_style_warnings(body):
@@ -1846,11 +1866,17 @@ def memo_style_warnings(body):
     m = MEMO_HEADING_RX.search(body)
     if m:
         found.append(f"briefing-memo heading {m.group(0).strip()!r}")
+    qh = _QUESTION_HEADING_RX.search(body)
+    if qh:
+        found.append(f"question-form heading {qh.group(0).strip()!r} — "
+                     "subheads state findings, they don't ask")
+    # Owner review 2026-08-08: question lists used to hide mid-article, so the
+    # scan covers the whole body, not just the closing blocks.
     blocks = [b.strip() for b in body.strip().split("\n\n") if b.strip()]
-    for tail in blocks[-2:]:
-        q_items = _QUESTION_ITEM_RX.findall(tail)
+    for block in blocks:
+        q_items = _QUESTION_ITEM_RX.findall(block)
         if len(q_items) >= 2:
-            found.append("article ends on a list of questions — report the "
+            found.append("list of questions — report the "
                          "unknowns as prose sentences")
             break
     return found
@@ -1912,6 +1938,17 @@ def validate_original(path, meta, body, lang, now, date):
     diction = language_quality_issues(f"{meta.get('title', '')}\n{body}", lang)
     if diction:
         print(f"  ⚠ original diction {path.name}: {'; '.join(diction[:2])}")
+    # Pacing watch (owner order 2026-08-03): originals are hand-paced, so the
+    # renderer never reflows them — instead any paragraph past ~70 words is
+    # flagged loudly here for the daily editor cycle to split.
+    long_paras = sum(
+        1 for p in re.split(r"\n\s*\n", body)
+        if not p.lstrip().startswith(("#", "-", "*", ">", "|", "!", "1", "2",
+                                      "3", "4", "5", "6", "7", "8", "9"))
+        and len(p.split()) > 70)
+    if long_paras:
+        print(f"  ⚠ original pacing {path.name}: {long_paras} paragraph(s) "
+              "over 70 words — split at sentence boundaries")
 
     if errors:
         raise PublishingError(f"{path.name}: {'; '.join(errors)}")
@@ -1950,10 +1987,16 @@ def load_originals(lang):
         if required:
             raise PublishingError(
                 f"{path.name}: missing required metadata: {', '.join(required)}")
+        if not meta.get("image"):
+            print(f"  ⚠ original {path.name}: no image: header — every original "
+                  "carries a lede visual (photo-conversion queue)")
         try:
             validate_original(path, meta, body, lang, now, date)
         except OriginalSkipError as error:
-            print(f"  ⚠ original skipped: {error}")
+            print(f"::warning::original skipped: {error}")
+            if HEALTH:
+                HEALTH.hold("original_skipped")
+            ORIGINAL_SKIPS.setdefault(lang, set()).add(_original_slug(path.stem))
             continue
         try:
             hours_kept = float(meta.get("maxagehours", 336))
@@ -2019,6 +2062,7 @@ def load_originals(lang):
         validate_story(item, local=True)
         item["score"] = score_item(item) + FOCUS_BOOST
         items.append(item)
+        ORIGINALS_LOADED.setdefault(lang, set()).add(_original_slug(path.stem))
         print(f"  ✓ original: {item['title'][:60]}")
     return items
 
@@ -2057,6 +2101,28 @@ def apply_image_overrides(items):
         if not ov:
             continue
         target = (ov.get("image") or "cover").strip()
+        # A bad override must never freeze the build (rights error downstream)
+        # or publish a dead frame — it degrades to the category cover, loudly.
+        if target != "cover":
+            problem = None
+            if is_http_url(target):
+                if not media_rights_for(target, MEDIA_RIGHTS):
+                    problem = "remote URL has no media-rights.json entry"
+                elif not remote_image_ok(target):
+                    problem = "remote image failed live verification"
+            else:
+                _name = target.rsplit("/", 1)[-1]
+                if not (ROOT / "originals" / "media" / _name).is_file():
+                    problem = "local media file missing"
+                elif (not __import__("longform").house_asset(_name)
+                      and not media_rights_for(target, MEDIA_RIGHTS)):
+                    problem = "local media lacks rights metadata"
+            if problem:
+                print(f"::warning::image override {it.get('pid')}: {problem} "
+                      "— falling back to the category cover")
+                if HEALTH:
+                    HEALTH.hold("image_override_invalid")
+                target = "cover"
         if target == "cover":
             cover = f"times-of-palestine-cover-{it['cat']}.svg"
             if not (ROOT / "originals" / "media" / cover).is_file():
@@ -2305,13 +2371,13 @@ LIVE_TV = {
 }
 
 _LIVE_JS = """
-(function(){var f=document.getElementById("livefab");if(!f)return;
-try{if(sessionStorage.getItem("top-live-hide")){f.hidden=true;return}}catch(e){}
+(function(){var f=document.getElementById("livefab"),w=document.getElementById("livewrap");if(!f||!w)return;
+try{if(sessionStorage.getItem("top-live-hide")){w.hidden=true;return}}catch(e){}
 var ID=f.dataset.video,TITLE=f.dataset.title,dock=null;
-function close(){if(dock){dock.remove();dock=null}f.hidden=false}
-f.querySelector(".fab-x").addEventListener("click",function(e){e.stopPropagation();
- f.hidden=true;try{sessionStorage.setItem("top-live-hide","1")}catch(err){}});
-f.addEventListener("click",function(){f.hidden=true;
+function close(){if(dock){dock.remove();dock=null}w.hidden=false}
+document.getElementById("livehide").addEventListener("click",function(){
+ w.hidden=true;try{sessionStorage.setItem("top-live-hide","1")}catch(err){}});
+f.addEventListener("click",function(){w.hidden=true;
  dock=document.createElement("div");dock.className="livedock";
  var bar=document.createElement("div");bar.className="ld-bar";
  var cap=document.createElement("span");cap.textContent=TITLE;
@@ -2336,11 +2402,15 @@ def live_fab_html(lang):
         return ""
     close_label = "إغلاق البث" if lang == "ar" else "Close the stream"
     hide_label = "إخفاء زر البث" if lang == "ar" else "Hide the live button"
-    return (f'<button id="livefab" class="livefab" data-video="{esc(tv["id"])}" '
+    # Two sibling buttons (owner review 2026-08-08): a dismiss control nested
+    # inside the open-stream button was unreachable by keyboard.
+    return (f'<div id="livewrap" class="livewrap">'
+            f'<button id="livefab" class="livefab" data-video="{esc(tv["id"])}" '
             f'data-title="{esc(tv["label"])}" data-close="{esc(close_label)}" '
             f'aria-label="{esc(tv["label"])}">'
-            f'<span class="dot"></span>{esc(tv["word"])}'
-            f'<span class="fab-x" role="button" aria-label="{esc(hide_label)}">✕</span></button>'
+            f'<span class="dot"></span>{esc(tv["word"])}</button>'
+            f'<button id="livehide" class="fab-x" aria-label="{esc(hide_label)}">'
+            f'<span>✕</span></button></div>'
             f'<script>{_LIVE_JS}</script>')
 
 SECTION_ORDER = {
@@ -2499,7 +2569,7 @@ CSS = """
 }
 [lang=ar]{--serif:"Noto Kufi Arabic",Tahoma,"Noto Naskh Arabic","Amiri",serif;--sans:"Noto Kufi Arabic",Tahoma,"Noto Sans Arabic",Arial,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html{scroll-behavior:smooth;scroll-padding-top:64px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;text-rendering:optimizeLegibility}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
@@ -2527,6 +2597,8 @@ h1,h2,h3{text-wrap:balance}
 .ticker .track{display:flex;gap:2.5rem;white-space:nowrap;animation:tick 80s linear infinite;padding-inline:1.5rem}
 [dir=rtl] .ticker .track{animation-name:tick-rtl}
 .ticker:hover .track,.ticker:focus-within .track,.ticker.paused .track{animation-play-state:paused}
+.ticker.paused .rail{overflow-x:auto}
+.ticker.paused .track{animation:none;white-space:normal;flex-wrap:wrap}
 .tick-pause{background:transparent;border:0;color:#fff;cursor:pointer;font-size:.8rem;padding:.45rem .7rem;flex-shrink:0;z-index:2;opacity:.85}
 .tick-pause:hover,.tick-pause:focus-visible{opacity:1}
 .ticker a{font-size:.82rem;font-weight:600}
@@ -2653,13 +2725,13 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
 .hero-overlay h2 a:hover{color:#ffd0d4}
 .hero .dek{margin-top:.8rem;font-size:1rem;color:var(--muted);font-family:var(--serif);line-height:1.6;max-width:64ch}
 .hero .dek a,.research-feat .dek a{text-decoration:underline;text-underline-offset:2px}
-.hero .dek a{color:var(--fg)}
+.hero .dek a{color:var(--ink)}
 [lang=ar] .hero .dek{line-height:1.8}
 .hero-overlay .meta{display:flex;align-items:center;gap:.6rem;margin-top:.65rem;font-size:.74rem;color:rgba(255,255,255,.62)}
 .hero-overlay .meta .src{color:#3fd07c;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
 [lang=ar] .hero-overlay .meta .src{letter-spacing:0}
 .hero-overlay .meta .t{font-weight:600;color:rgba(255,255,255,.7)}
-.photocredit{font-size:.66rem;color:#9a9aa2;margin-top:.35rem}
+.photocredit{font-size:.66rem;color:var(--muted);margin-top:.35rem}
 .meta{display:flex;align-items:center;gap:.6rem;margin-top:.8rem;font-size:.74rem;color:var(--muted)}
 .meta .src{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.06em}
 [lang=ar] .meta .src{letter-spacing:0}
@@ -2728,12 +2800,13 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .listenbtn:hover{border-color:var(--red);color:var(--red)}
 [lang=ar] .listenbtn{font-size:.9rem}
 /* Floating live-TV pill and its docked corner mini-player */
-.livefab{position:fixed;bottom:calc(1rem + env(safe-area-inset-bottom,0px));inset-inline-start:1rem;z-index:70;display:inline-flex;align-items:center;gap:.4rem;background:var(--red);color:#fff;border:0;border-radius:2rem;font:800 .74rem/1 var(--sans);letter-spacing:.06em;padding:.48rem .55rem .48rem .9rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35)}
-[dir=rtl] .livefab{padding:.48rem .9rem .48rem .55rem}
+.livewrap{position:fixed;bottom:calc(1rem + env(safe-area-inset-bottom,0px));inset-inline-start:1rem;z-index:70;display:inline-flex;align-items:center}
+.livefab{display:inline-flex;align-items:center;gap:.4rem;background:var(--red);color:#fff;border:0;border-radius:2rem;font:800 .74rem/1 var(--sans);letter-spacing:.06em;padding:.48rem .9rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35)}
 [lang=ar] .livefab{letter-spacing:0;font-size:.84rem}
 .livefab .dot{width:8px;height:8px;border-radius:50%;background:#fff;animation:pulse 1.6s infinite}
-.livefab .fab-x{display:inline-flex;align-items:center;justify-content:center;width:1.15rem;height:1.15rem;margin-inline-start:.15rem;border-radius:50%;background:rgba(0,0,0,.25);font-size:.68rem;font-weight:400;line-height:1}
-.livefab .fab-x:hover{background:rgba(0,0,0,.45)}
+.livewrap .fab-x{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;background:none;border:0;padding:0;cursor:pointer}
+.livewrap .fab-x span{display:inline-flex;align-items:center;justify-content:center;width:1.35rem;height:1.35rem;border-radius:50%;background:rgba(0,0,0,.38);color:#fff;font-size:.68rem;line-height:1}
+.livewrap .fab-x:hover span,.livewrap .fab-x:focus-visible span{background:rgba(0,0,0,.6)}
 .livefab:hover{filter:brightness(1.12)}
 .livefab[hidden]{display:none}
 .livedock{position:fixed;bottom:1rem;inset-inline-start:1rem;z-index:70;width:min(420px,calc(100vw - 2rem));background:#0b0b0c;border-radius:6px;overflow:hidden;box-shadow:0 10px 34px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.14)}
@@ -2748,8 +2821,8 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .topbar .themetoggle{margin-inline-start:auto}
 .litetoggle{background:none;border:1px solid transparent;border-radius:3px;cursor:pointer;font-family:var(--sans);font-size:.74rem;font-weight:800;line-height:1;padding:.24rem .4rem;color:inherit;opacity:.85}
 .litetoggle:hover{opacity:1}
-[data-lite] .litetoggle{color:var(--green);border-color:var(--green);opacity:1}
-[data-lite] .hero-imgwrap>a,[data-lite] .sub-thumb,[data-lite] .lt-thumb,[data-lite] .card>a:first-child,[data-lite] .card .ph,[data-lite] .rowcard img,[data-lite] .rowcard .ph,[data-lite] .research-feat img,[data-lite] .research-feat .noimg,[data-lite] .fr-card img,[data-lite] .livedock,[data-lite] .story img.lede,[data-lite] .story div.lede,[data-lite] .photocredit,[data-lite] .embed,[data-lite] .qrbox,[data-lite] .live-fab{display:none!important}
+[data-lite] .litetoggle{color:#3fd07c;border-color:#3fd07c;opacity:1}
+[data-lite] .hero-imgwrap>a,[data-lite] .sub-thumb,[data-lite] .lt-thumb,[data-lite] .card>a:first-child,[data-lite] .card .ph,[data-lite] .rowcard img,[data-lite] .rowcard .ph,[data-lite] .research-feat img,[data-lite] .research-feat .noimg,[data-lite] .fr-card img,[data-lite] .livedock,[data-lite] .story img.lede,[data-lite] .story div.lede,[data-lite] .photocredit,[data-lite] .embed,[data-lite] .qrbox,[data-lite] .livewrap,[data-lite] .story figure.lf{display:none!important}
 [data-lite] .hero-imgwrap{background:none;border-radius:0}
 [data-lite] .hero-overlay{position:static;padding:0;background:none}
 [data-lite] .hero-overlay .label{color:var(--red)}
@@ -2766,7 +2839,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .searchbox{width:100%;font-size:1.05rem;padding:.7rem .9rem;border:2px solid var(--line-dark);border-radius:8px;background:var(--card);color:var(--ink)}
 .searchres{list-style:none;margin-top:1.2rem}
 .searchres li{padding:.8rem 0;border-bottom:1px solid var(--line)}
-.searchres a{font-weight:800;color:var(--black)}
+.searchres a{font-weight:800;color:var(--ink)}
 .searchres .c{font-size:.72rem;color:var(--red);font-weight:700;margin-inline-start:.6rem;text-transform:uppercase}
 .searchres p{font-size:.88rem;color:var(--muted);margin-top:.2rem}
 .sec-copy{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem 1.4rem;flex-wrap:wrap;margin-bottom:1.3rem}
@@ -2880,7 +2953,7 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .story{max-width:820px;margin-inline:auto;padding:2rem 20px 1rem}
 .breadcrumbs{display:flex;flex-wrap:wrap;gap:.35rem .55rem;margin-bottom:1rem;font-size:.74rem;font-weight:700;color:var(--muted)}
 .breadcrumbs a:hover{color:var(--red)}
-.breadcrumbs .sep{color:#9a9aa2}
+.breadcrumbs .sep{color:var(--muted)}
 .breadcrumbs [aria-current=page]{color:var(--ink)}
 .story .kick{color:var(--red);font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.7rem}
 [lang=ar] .story .kick{letter-spacing:.03em;font-size:.82rem}
@@ -2930,7 +3003,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 /* ── dark mode ── */
 %%DARK%%
 /* ── reduced motion ── */
-@media(prefers-reduced-motion:reduce){.ticker .track{animation:none}.topbar .dot,.latest h2::before{animation:none}.latest li,.latest li.fresh::before{animation:none}.hero-imgwrap>a>img,.card img{transition:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker .rail{overflow-x:auto}.ticker .track{animation:none;white-space:normal;flex-wrap:wrap}.topbar .dot,.latest h2::before{animation:none}.latest li,.latest li.fresh::before{animation:none}.hero-imgwrap>a>img,.card img{transition:none}}
 .skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}
 .skiplink:focus{inset-inline-start:0}
 .share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}
@@ -3047,7 +3120,11 @@ section.opinion{background:#17171c;border-top-color:var(--red)}
 .hero-overlay .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q{color:#f93549}
 .hero-overlay h2 a:hover{color:#ffb8be}
 .card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.sub-body h3 a:hover{color:#f93549}
-.meta .src,.card .chip,.rowcard .chip,.sub-body .chip{color:#3fd07c}
+.meta .src,.card .chip,.rowcard .chip,.sub-body .chip,.gi-src a,.gi-dl a,.social-note a,.about-telegram a{color:#3fd07c}
+.story ul.lf,.story ol.lf{color:#d6d6de}
+.story code{background:rgba(255,255,255,.12)}
+.story table.lf th{background:rgba(255,255,255,.06)}
+.tc-area{fill:rgba(249,53,73,.16)}
 """
 
 
@@ -3292,9 +3369,10 @@ def lede_fallback_attrs(it):
 def card_media(it, pfx):
     """Image if we have one; otherwise a branded flag panel — never an empty column."""
     if it["image"]:
-        return (f'<a href="{href(it, pfx)}"><img src="{esc(it["image"])}" '
-                f'alt="{esc(it["title"])}" loading="lazy" decoding="async"{lede_fallback_attrs(it)}></a>')
-    return f'<a href="{href(it, pfx)}"><div class="ph">{FLAG_SVG}</div></a>'
+        return (f'<a href="{href(it, pfx)}" tabindex="-1" aria-hidden="true"><img src="{esc(it["image"])}" '
+                f'alt="" loading="lazy" decoding="async"{lede_fallback_attrs(it)}></a>')
+    return (f'<a href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
+            f'<div class="ph">{FLAG_SVG}</div></a>')
 
 def card(it, lang, pfx):
     # Uniform card: headline, source, time. Summaries belong to the hero, the
@@ -3319,7 +3397,8 @@ def rowcard(it, lang, pfx, solo=False):
             f'{time_tag(it["date"], lang, "t", fresh=True)}</div></article>')
 
 def op_card(it, lang, pfx):
-    return (f'<article class="op-card"><span class="q">“</span>'
+    q = "«" if lang == "ar" else "“"
+    return (f'<article class="op-card"><span class="q">{q}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'{meta_line(it, lang)}</article>')
 
@@ -3822,7 +3901,7 @@ def render_page(lang, items, built_at):
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
 </div></header>
 
-<nav class="sections" aria-label="Primary"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_groups}{nav_specials_top}<span class="nav-util"><a class="util" id="searchtoggle" href="search.html" aria-expanded="false" aria-controls="navsearch">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div><div class="nav-search" id="navsearch" hidden><form action="search.html" method="get" role="search"><input name="q" type="search" placeholder="{esc(t['search_prompt'])}" aria-label="{esc(t['search_title'])}" autocomplete="off"><button type="submit">{t['search_go']}</button></form></div></nav>
+<nav class="sections" aria-label="{"التصفح الرئيسي" if lang == "ar" else "Primary"}"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_groups}{nav_specials_top}<span class="nav-util"><a class="util" id="searchtoggle" href="search.html" aria-expanded="false" aria-controls="navsearch">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div><div class="nav-search" id="navsearch" hidden><form action="search.html" method="get" role="search"><input name="q" type="search" placeholder="{esc(t['search_prompt'])}" aria-label="{esc(t['search_title'])}" autocomplete="off"><button type="submit">{t['search_go']}</button></form></div></nav>
 <script>(function(){{function closeGroups(){{document.querySelectorAll("nav.sections .nav-group.open").forEach(function(x){{x.classList.remove("open");x.querySelector("button").setAttribute("aria-expanded","false")}})}}
 var st=document.getElementById("searchtoggle"),sp=document.getElementById("navsearch");
 function closeSearch(){{if(sp&&!sp.hidden){{sp.hidden=true;st.setAttribute("aria-expanded","false")}}}}
@@ -3863,7 +3942,7 @@ if(n&&n.querySelector(".nav-group.open")&&Math.abs(window.scrollY-(+n.dataset.oy
     <a href="{t['switch_href']}">{t['footer_lang']}</a>
   </div>
 </div></footer>
-<script>(()=>{{const initial={json.dumps(utc_iso(built_at))};let timer;async function check(){{if(document.hidden||!navigator.onLine)return;try{{const r=await fetch("/data.json",{{cache:"no-store"}});if(r.ok&&((await r.json()).builtAt)!==initial)location.reload();}}catch(_error){{}}}}document.addEventListener("visibilitychange",()=>{{if(!document.hidden)check();}});timer=setInterval(check,900000);}})();</script>
+<script>(()=>{{const initial={json.dumps(utc_iso(built_at))};let timer;async function check(){{if(document.hidden||!navigator.onLine)return;try{{const r=await fetch("/data.json",{{cache:"no-store"}});if(r.ok&&((await r.json()).builtAt)!==initial)location.reload();}}catch(_error){{}}}}document.addEventListener("visibilitychange",()=>{{if(!document.hidden)check();}});timer=setInterval(check,300000);}})();</script>
 <script>{_CLOCK_JS}</script>
 {live_fab_html(lang)}
 </body>
@@ -4043,7 +4122,8 @@ def render_story(it, lang, related, rail, built_at):
     # the archive is the crawlable, linkable landing page for the section.
     section_href = f"section-{it['cat']}.html"
     breadcrumb_nav = (
-        f'<nav class="breadcrumbs" aria-label="Breadcrumb">'
+        f'<nav class="breadcrumbs" aria-label='
+        f'"{"مسار التنقل" if lang == "ar" else "Breadcrumb"}">'
         f'<a href="../">{t["breadcrumbs_home"]}</a><span class="sep">/</span>'
         f'<a href="../{section_href}">{section_name}</a><span class="sep">/</span>'
         f'<span aria-current="page">{esc(it["title"])}</span></nav>'
@@ -4143,13 +4223,13 @@ def render_story(it, lang, related, rail, built_at):
 {_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="{switch_href}">{t['switch_lang']}</a></span></div>
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="{switch_href}">{t['switch_lang']}</a></span></div>
 {ticker_html(t, lang, ticker_track, ticker_track_hidden)}
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="../"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
 
-<main>
+<main id="top">
   <article class="story">
     {breadcrumb_nav}
     <p class="kick">{t['sections'].get(it['cat'], t['sections']['news'])}</p>
@@ -4226,7 +4306,10 @@ def render_rss(lang, items, built_at):
         modified = (
             f"<atom:updated>{utc_iso(it['modified'])}</atom:updated>"
             if it.get("modified") else "")
-        source = ("" if it.get("original") else
+        # Wire attribution protocol: a rewritten brief is OUR copy — feed
+        # readers see Times of Palestine, not the wire outlet. Only
+        # dek-fallback items (no brief) keep the outlet credit.
+        source = ("" if it.get("original") or it.get("brief") else
                   f'<source url="{esc(it["source_url"])}">{esc(it["source"])}</source>')
         entries.append(f"<item><title>{esc(it['title'])}</title><link>{u}</link>"
                        f'<guid isPermaLink="true">{u}</guid>'
@@ -4288,7 +4371,11 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 <meta name="description" content="{esc(desc)}">
 <meta name="robots" content="max-image-preview:large">
 <link rel="canonical" href="{BASE_URL}/{lang}/section-{cat}.html">
+<link rel="alternate" hreflang="en" href="{BASE_URL}/en/section-{cat}.html">
+<link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/section-{cat}.html">
+<link rel="alternate" hreflang="x-default" href="{BASE_URL}/en/section-{cat}.html">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="{'ar_PS' if lang == 'ar' else 'en_US'}">
 <meta property="og:site_name" content="{t['site_name']}">
 <meta property="og:title" content="{esc(name)} — {t['site_name']}">
 <meta property="og:description" content="{esc(desc)}">
@@ -4299,11 +4386,11 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 {_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
-<main class="wrap sectionpage">
+<main class="wrap sectionpage" id="top">
   <div class="sec-head focus"><h2>{esc(name)}</h2><span class="rule"></span><span class="count">{count_label}</span></div>
   <div class="grid g4">{cards}</div>
   {more_html}
@@ -4380,11 +4467,11 @@ def render_corrections_page(lang, items, built_at):
 {_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/corrections.html">{t['switch_lang']}</a></span></div>
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/corrections.html">{t['switch_lang']}</a></span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
-<main>
+<main id="top">
   <article class="story">
     <p class="kick">{t['site_name']}</p>
     <h1>{esc(title)}</h1>
@@ -4447,11 +4534,11 @@ def render_search_page(lang, built_at, cats=()):
 {_THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></span></div>
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
-<main class="wrap searchpage">
+<main class="wrap searchpage" id="top">
   <h1>{t['search_title']}</h1>
   <input id="q" class="searchbox" type="search" placeholder="{esc(t['search_prompt'])}" data-none="{esc(t['search_none'])}" autofocus autocomplete="off">
   <ol id="res" class="searchres"></ol>
@@ -4488,6 +4575,10 @@ Sitemap: {BASE_URL}/sitemap.xml
 REDIRECT_HTML = """<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Times of Palestine</title>
 <meta name="description" content="Independent Palestine news, in English and Arabic — updated continuously.">
+<link rel="canonical" href="https://timesofpalestine.com/en/">
+<link rel="alternate" hreflang="en" href="https://timesofpalestine.com/en/">
+<link rel="alternate" hreflang="ar" href="https://timesofpalestine.com/ar/">
+<link rel="alternate" hreflang="x-default" href="https://timesofpalestine.com/en/">
 <script>location.replace((navigator.language||"").toLowerCase().indexOf("ar")===0?"ar/":"en/");</script>
 <meta http-equiv="refresh" content="1;url=en/">
 </head><body><p><a href="en/">English</a> · <a href="ar/">العربية</a></p></body></html>"""
@@ -4507,6 +4598,26 @@ def main():
             HEALTH.register_source(feed, lang)
     en_items = build_lang("en")
     ar_items = build_lang("ar")
+    # Both editions are first-class (charter §3): a one-language validator
+    # skip must never publish a story monolingual in silence.
+    for slug in sorted(ORIGINALS_LOADED.get("en", set())
+                       ^ ORIGINALS_LOADED.get("ar", set())):
+        only = "en" if slug in ORIGINALS_LOADED.get("en", set()) else "ar"
+        print(f"::warning::original {slug} is publishing {only}-only — "
+              "both language editions are first-class")
+        HEALTH.hold("original_monolingual")
+    # A wire blackout must not be masked by long-lived originals: with zero
+    # aggregated items the front page would quietly go archive-only.
+    wire_total = sum(1 for i in en_items + ar_items if not i.get("original"))
+    if wire_total == 0:
+        print("::error::0 wire items survived fetching across all feeds — "
+              "failing so the last good deploy stays live.")
+        HEALTH.checks["wire"] = "down"
+        sys.exit(1)
+    elif wire_total < 10:
+        print(f"::warning::only {wire_total} wire items fetched — "
+              "possible large-scale feed outage")
+        HEALTH.checks["wire"] = "degraded"
     all_fetched_items = en_items + ar_items
     try:
         brief_status = generate_briefs(all_fetched_items)
@@ -4523,11 +4634,15 @@ def main():
     # different source headlines for one incident can converge into
     # near-identical house headlines. What the reader sees twice is what
     # must be deduped — so the same gate runs again on published titles.
-    _before = len(en_items) + len(ar_items)
-    en_items = dedupe_events(en_items)
-    ar_items = dedupe_events(ar_items)
-    HEALTH.deduplicated += _before - len(en_items) - len(ar_items)
+    # Publishability first (owner review 2026-08-08): the dedupe rank knows
+    # nothing about briefs, so a refused/incomplete cluster winner could
+    # absorb — and then take down — siblings whose briefs were publishable.
     candidates = select_publishable_copy(en_items, ar_items)
+    _before = len(candidates)
+    en_items = dedupe_events([i for i in candidates if i["lang"] == "en"])
+    ar_items = dedupe_events([i for i in candidates if i["lang"] == "ar"])
+    HEALTH.deduplicated += _before - len(en_items) - len(ar_items)
+    candidates = en_items + ar_items
     approvals = load_reviews(ROOT / "editorial" / "reviews.json")
     gate_mode = review_gate_mode()
     # The review gate is for third-party copy (wires, Telegram) whose sourcing

@@ -113,7 +113,11 @@ def validate(root):
         # that story filenames carry a headline slug ahead of the pid.
         is_pid_stub = (path.parent.name == "story"
                        and re.fullmatch(r"[0-9a-f]{10}\.html", path.name))
-        if parser.meta_refresh and path.name != "index.html" and not is_pid_stub:
+        # The root splash and static-feature landings may redirect; the two
+        # edition fronts (en/, ar/) never may — a refresh there is a regression.
+        is_splash = (path.name == "index.html"
+                     and path.parent.name not in ("en", "ar"))
+        if parser.meta_refresh and not is_splash and not is_pid_stub:
             errors.append(f"{path.relative_to(root)}: unconditional meta refresh")
         if parser.remote_images and remote_media_mode() == "rights-only":
             errors.append(

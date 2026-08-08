@@ -32,8 +32,15 @@ def current_queue():
     en_items = build.build_lang("en")
     ar_items = build.build_lang("ar")
     build.generate_briefs(en_items + ar_items)
+    # Mirror main(): publishability filter, then the final-headline dedupe
+    # pass, then the gate — over third-party copy only (desk originals are
+    # never held, so listing them as pending was noise).
     candidates = build.select_publishable_copy(en_items, ar_items)
-    _, held = apply_review_gate(candidates, load_reviews(LEDGER))
+    candidates = (
+        build.dedupe_events([i for i in candidates if i["lang"] == "en"])
+        + build.dedupe_events([i for i in candidates if i["lang"] == "ar"]))
+    third_party = [i for i in candidates if i.get("source_id") != "top-original"]
+    _, held = apply_review_gate(third_party, load_reviews(LEDGER))
     return held
 
 

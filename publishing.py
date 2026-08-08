@@ -349,6 +349,14 @@ def validate_feed_config(feeds: Dict[str, Any]) -> None:
                 raise PublishingError(f"{where}.{required} is required")
             if required == "url" and not is_http_url(feed["url"]):
                 raise PublishingError(f"{where}.url must be an HTTP(S) URL")
+            feed_host = urlsplit(feed.get("url") or "").netloc.lower()
+            if (feed_host == "news.google.com"
+                    or feed_host.endswith(".news.google.com")) \
+                    and source_type != "gnews":
+                # A Google News search declared as plain RSS attributes every
+                # story to Google's redirect instead of the real outlet.
+                raise PublishingError(
+                    f"{where}: news.google.com feeds must declare type 'gnews'")
             if "timezone" in feed:
                 try:
                     ZoneInfo(feed["timezone"])
@@ -542,9 +550,13 @@ class BuildHealth:
             return {
                 "schemaVersion": 1,
                 "builtAt": utc_iso(self.built_at),
+                # Thresholded (owner review 2026-08-08): a couple of flaky
+                # feeds or routine withheld items fired "degraded" on every
+                # build, so the status could never signal a real problem.
                 "status": "degraded" if (
-                    any(row.status != "ok" for row in self.sources.values())
-                    or self.withheld
+                    (len(self.sources)
+                     and sum(1 for row in self.sources.values()
+                             if row.status != "ok") > len(self.sources) * 0.2)
                     or any(v not in {"ok", "disabled"} for v in self.checks.values())
                     or any(v not in {"ok", "disabled", "post_deploy"}
                            for v in self.connectors.values())
