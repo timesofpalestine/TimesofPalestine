@@ -249,6 +249,15 @@ def summary(root):
     failed = [row["id"] for row in payload.get("sources", [])
               if row.get("status") != "ok"]
     print(f"- Degraded feeds: {len(failed)}")
+    # The Gaza toll curve fails open by design, so its absence is silent in the
+    # page itself. Report it here or a dead upstream goes unnoticed for weeks.
+    missing = [lang for lang in ("en", "ar")
+               if (health.parent / lang / "index.html").exists()
+               and 'class="toll-chart"' not in
+               (health.parent / lang / "index.html").read_text(encoding="utf-8")]
+    print("- Gaza toll curve: "
+          + ("rendered in both editions" if not missing
+             else f"**MISSING** in {', '.join(missing)} — daily series unreachable?"))
     return 0
 
 

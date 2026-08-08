@@ -366,6 +366,7 @@ def _fmt_date(iso_day, lang):
 
 
 DAILY_URL = "https://data.techforpalestine.org/api/v2/casualties_daily.min.json"
+_chart_warned = False  # the panel renders twice per build (en, ar); warn once
 
 
 def _num(n, lang):
@@ -380,17 +381,27 @@ def _daily_series():
     Ministry of Health — so the curve and the counter can never disagree.
     Silent on any failure: a chart is a bonus, never a reason to lose the panel.
     """
+    global _chart_warned
     if os.environ.get("TOP_OFFLINE") == "1":
         return []
     try:
         rows = _get_json(DAILY_URL)
-    except Exception:
+    except Exception as e:
+        # Say so in the build log. The chart failing open is correct, but a
+        # silent disappearance is how a dead upstream goes unnoticed for weeks.
+        if not _chart_warned:
+            _chart_warned = True
+            print(f"  → toll chart: daily series unavailable ({type(e).__name__}) — curve omitted")
         return []
     out = []
     for r in rows if isinstance(rows, list) else []:
         day, cum = r.get("report_date"), r.get("killed_cum")
         if isinstance(day, str) and isinstance(cum, (int, float)) and cum > 0:
             out.append((day[:10], int(cum)))
+    if len(out) < 30:
+        if not _chart_warned:
+            _chart_warned = True
+            print(f"  → toll chart: series too short ({len(out)} points) — curve omitted")
     return out
 
 

@@ -356,6 +356,24 @@ BTC_FREEDOM_RX = re.compile(
     r"global south|sanction|dictator|freedom money|financial repression|"
     r"فلسطين|غزة|الحرية المالية|حقوق الإنسان|عقوبات|رقابة|تحويلات|الشرق الأوسط", re.I)
 
+# Owner decision 2026-08-06: this section covers Palestinian economic survival —
+# banking access, remittances, cash and payment rails under closure — not the
+# crypto industry. The freedom filter alone was too loose: a hardware-wallet
+# breach story matches "self-custody" and reached the front page, which reads as
+# product news under a Palestinian masthead. Anything matching the noise pattern
+# is dropped unless it also carries a Palestine/region nexus, so "Gaza traders
+# move to ecash after the banks close" stays and "Coldcard breach" does not.
+BTC_NOISE_RX = re.compile(
+    r"hardware wallet|cold ?card|ledger nano|trezor|seed phrase|firmware|"
+    r"price (?:target|prediction|analysis)|all.?time high|rally|rebound|sell.?off|"
+    r"bull(?:ish)?|bear(?:ish)?|market cap|etf|halving|mining (?:rig|profit|difficulty)|"
+    r"hash ?rate|altcoin|memecoin|token launch|airdrop|exchange listing|"
+    r"محفظة (?:أجهزة|صلبة)|سعر البيتكوين|تحليل فني|صناديق المؤشرات", re.I)
+BTC_NEXUS_RX = re.compile(
+    r"palestin|gaza|west bank|jerusalem|israel|middle east|arab|jordan|egypt|lebanon|"
+    r"remittance|unbanked|correspondent bank|de-?risk|sanction|closure|blockade|"
+    r"فلسطين|غزة|الضفة|القدس|الشرق الأوسط|تحويلات|حصار|إغلاق|عقوبات|البنوك المراسلة", re.I)
+
 FOCUS_BOOST = 30      # score boost for editorial focus topics
 RESEARCH_BOOST = 22   # think-tank / OSINT reports: "news before it becomes news"
 BREAKING_BOOST = 14   # hard-news urgency: casualties, strikes, raids, ceasefires
@@ -1089,8 +1107,12 @@ def finish_item(item, feed):
         # mention of Israel deep in a regional piece's summary is not enough.
         if not (PALESTINE_RX.search(item["title"]) or ISRAEL_CONTEXT_RX.search(item["title"])):
             return None
-    if feed.get("filterBitcoinFreedom") and not BTC_FREEDOM_RX.search(hay):
-        return None
+    if feed.get("filterBitcoinFreedom"):
+        if not BTC_FREEDOM_RX.search(hay):
+            return None
+        # Product and market copy needs a Palestine/region nexus to earn the slot.
+        if BTC_NOISE_RX.search(hay) and not BTC_NEXUS_RX.search(hay):
+            return None
     if feed.get("exclusive"):
         # Historical name retained in feeds.json, but the source is still attributed.
         item["partner"] = True
@@ -2149,7 +2171,7 @@ STR = {
                      "arts": "Culture & Arts", "sports": "Sport",
                      "accountability": "Transparency & Accountability",
                      "research": "Research & Investigations",
-                     "bitcoin": "Financial Freedom",
+                     "bitcoin": "Money & Access",
                      "politics": "Politics & Diplomacy", "economy": "Economy & Aid",
                      "social": "Field Reports",
                      "opinion": "Opinion & Analysis", "news": "More News"},
@@ -2219,7 +2241,7 @@ STR = {
                      "arts": "الثقافة والفنون", "sports": "رياضة",
                      "accountability": "شفافية ومساءلة",
                      "research": "أبحاث وتحقيقات",
-                     "bitcoin": "الحرية المالية",
+                     "bitcoin": "المال والوصول",
                      "politics": "سياسة ودبلوماسية", "economy": "اقتصاد وإغاثة",
                      "social": "من الميدان",
                      "opinion": "رأي وتحليل", "news": "المزيد من الأخبار"},
