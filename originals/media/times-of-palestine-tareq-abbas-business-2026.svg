@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tareq Abbas — the business record</title>
+  <desc id="desc">A bilingual board of Tareq Abbas's business roles: chairman of Sky Advertising, board member and corporate-affairs executive of APIC, vice chairman of Arab Palestinian Shopping Centers, and president of the Palestinian Advertising Association, with the 2006 USAID contract and the 2016 one-state remark noted.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071018"/>
+      <stop offset="1" stop-color="#142333"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="64" y="54" width="1472" height="792" rx="30" fill="#0d1a26" stroke="#30485a" stroke-width="2" filter="url(#shadow)"/>
+
+  <text x="110" y="128" fill="#ffffff" font-family="Arial, sans-serif" font-size="46" font-weight="700">Tareq Abbas — the business record</text>
+  <text x="1490" y="176" text-anchor="start" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-family="Arial, sans-serif" font-size="34" font-weight="700">طارق عباس — السجل التجاري</text>
+  <text x="110" y="176" fill="#89a8ba" font-family="Arial, sans-serif" font-size="23">The president's quieter son: advertising, retail boards, and one famous sentence</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="228" width="675" height="180" rx="16" fill="#122536" stroke="#26a269" stroke-width="2"/>
+    <text x="150" y="290" fill="#ffffff" font-size="28" font-weight="700">Sky Advertising — chairman</text>
+    <text x="150" y="330" fill="#b8cbd6" font-size="21">The territory's leading ad, PR and events house</text>
+    <text x="745" y="374" text-anchor="end" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="21">«سكاي» للدعاية — رئيس مجلس الإدارة</text>
+
+    <rect x="815" y="228" width="675" height="180" rx="16" fill="#122536" stroke="#e0a928" stroke-width="2"/>
+    <text x="855" y="290" fill="#ffffff" font-size="28" font-weight="700">APIC — board, corporate affairs</text>
+    <text x="855" y="330" fill="#b8cbd6" font-size="21">~$1m shareholding reported in 2016</text>
+    <text x="1450" y="374" text-anchor="end" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="21">«أيبك» — عضوية المجلس وإدارة الشؤون</text>
+
+    <rect x="110" y="438" width="675" height="180" rx="16" fill="#122536" stroke="#6d8798" stroke-width="2"/>
+    <text x="150" y="500" fill="#ffffff" font-size="28" font-weight="700">Arab Palestinian Shopping Centers</text>
+    <text x="150" y="540" fill="#b8cbd6" font-size="21">Vice chairman — the group's retail-property arm</text>
+    <text x="745" y="584" text-anchor="end" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="21">المراكز التجارية — نائب رئيس المجلس</text>
+
+    <rect x="815" y="438" width="675" height="180" rx="16" fill="#122536" stroke="#e74c3c" stroke-width="2"/>
+    <text x="855" y="500" fill="#ffffff" font-size="28" font-weight="700">USAID, 2006 — $659,600</text>
+    <text x="855" y="540" fill="#b8cbd6" font-size="21">Sky's aid-image campaign; favoritism denied</text>
+    <text x="1450" y="584" text-anchor="end" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="21">عقد المعونة الأميركية 2006 — والنفي مُسجَّل</text>
+
+    <rect x="110" y="648" width="1380" height="130" rx="16" fill="#0f2436" stroke="#30485a" stroke-width="2"/>
+    <text x="800" y="702" text-anchor="middle" fill="#dce9f1" font-size="26" font-style="italic">"If you don't want to give me independence, at least give me civil rights." — to The New York Times, 2016</text>
+    <text x="800" y="748" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#89a8ba" font-size="21">«إن كنتم لا تريدون منحي الاستقلال فامنحوني حقوقي المدنية» — 2016</text>
+  </g>
+
+  <text x="110" y="818" fill="#6d8798" font-family="Arial, sans-serif" font-size="20">Graphic: Times of Palestine</text>
+</svg>

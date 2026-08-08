@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">APIC under Tarek Aggad — the household map</title>
+  <desc id="desc">A bilingual board of the Arab Palestinian Investment Company under chairman Tarek Aggad: Unipal distribution, Siniora foods, NAPCO aluminum, Palestine Automobile, medical supplies, Sky Advertising, shopping centres and Reema paper, with 2025 record sales of 1.31 billion dollars.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071018"/>
+      <stop offset="1" stop-color="#142333"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="64" y="54" width="1472" height="792" rx="30" fill="#0d1a26" stroke="#30485a" stroke-width="2" filter="url(#shadow)"/>
+
+  <text x="110" y="128" fill="#ffffff" font-family="Arial, sans-serif" font-size="46" font-weight="700">APIC — the household map</text>
+  <text x="1490" y="128" text-anchor="start" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-family="Arial, sans-serif" font-size="36" font-weight="700">«أيبك» — خريطة البيت الفلسطيني</text>
+  <text x="110" y="176" fill="#89a8ba" font-family="Arial, sans-serif" font-size="23">Founded 1994 by Omar Aggad and partners; chaired and run today by Tarek Aggad</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="220" width="440 " height="150" rx="16" fill="#122536" stroke="#26a269" stroke-width="2"/>
+    <text x="330" y="278" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="700">Unipal — distribution</text>
+    <text x="330" y="316" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">«يونيبال» للتجارة والتوزيع</text>
+
+    <rect x="580" y="220" width="440" height="150" rx="16" fill="#122536" stroke="#e0a928" stroke-width="2"/>
+    <text x="800" y="278" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="700">Siniora — foods</text>
+    <text x="800" y="316" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">«سنيورة» للصناعات الغذائية</text>
+
+    <rect x="1050" y="220" width="440" height="150" rx="16" fill="#122536" stroke="#e74c3c" stroke-width="2"/>
+    <text x="1270" y="278" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="700">NAPCO — aluminum</text>
+    <text x="1270" y="316" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">«نابكو» للألمنيوم</text>
+
+    <rect x="110" y="400" width="440" height="150" rx="16" fill="#122536" stroke="#6d8798" stroke-width="2"/>
+    <text x="330" y="458" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="700">Palestine Automobile</text>
+    <text x="330" y="496" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">شركة فلسطين للسيارات</text>
+
+    <rect x="580" y="400" width="440" height="150" rx="16" fill="#122536" stroke="#26a269" stroke-width="2"/>
+    <text x="800" y="458" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="700">Medical Supplies &amp; Services</text>
+    <text x="800" y="496" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">شركة التموين الطبي</text>
+
+    <rect x="1050" y="400" width="440" height="150" rx="16" fill="#122536" stroke="#e0a928" stroke-width="2"/>
+    <text x="1270" y="450" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="700">Sky, malls &amp; Reema paper</text>
+    <text x="1270" y="496" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">«سكاي» والمراكز و«ريما» للورق</text>
+
+    <rect x="110" y="590" width="1380" height="160" rx="16" fill="#0f2436" stroke="#30485a" stroke-width="2"/>
+    <text x="800" y="654" text-anchor="middle" fill="#ffffff" font-size="42" font-weight="700">$1.31bn sales in 2025 — listed on the Palestine Exchange since 2014</text>
+    <text x="800" y="712" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="24">مبيعات قياسية 1.31 مليار دولار في 2025 — مدرجة في بورصة فلسطين منذ 2014</text>
+  </g>
+
+  <text x="110" y="812" fill="#6d8798" font-family="Arial, sans-serif" font-size="20">Graphic: Times of Palestine — figures: APIC 2025 results</text>
+</svg>
