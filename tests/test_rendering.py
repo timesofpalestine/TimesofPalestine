@@ -904,13 +904,19 @@ class ImageOverrideTests(unittest.TestCase):
     def test_local_photo_override_carries_its_own_manifest_credit(self):
         # The Ali Al Thawadi order (2026-08-03): an owner-supplied photo must
         # run with ITS manifest credit, never the replaced wire image's.
+        # (The eb18db4ce2 entry has since retired from image-overrides.json —
+        # the story now carries the photo in its own image: header — so the
+        # behaviour is pinned here with an explicit override mapping.)
         it = item()
         it.update({"pid": "eb18db4ce2",
                    "image": "https://cdn.example.com/wire.jpg",
                    "media": {"credit": "Photo: Some Wire Agency",
                              "rightsBasis": "wire", "source": "wire",
                              "licenseUrl": None}})
-        build.apply_image_overrides([it])   # real editorial/image-overrides.json
+        with mock.patch.object(
+                build, "IMAGE_OVERRIDES",
+                {"eb18db4ce2": {"image": "/media/ali-al-thawadi-un-2026.jpg"}}):
+            build.apply_image_overrides([it])
         self.assertEqual(it["image"], "/media/ali-al-thawadi-un-2026.jpg")
         self.assertEqual(it["media"]["credit"], "Photo: Times of Palestine")
         self.assertNotIn("Wire Agency", str(it["media"]))
