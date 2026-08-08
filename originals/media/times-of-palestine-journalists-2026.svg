@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+  <title id="t">Palestinian journalists and the international prizes their work has won</title>
+  <desc id="d">A board listing prizes won by Palestinian journalists between 2021 and 2026: the 2024 UNESCO Guillermo Cano World Press Freedom Prize and the 2024 IPI-IMS World Press Freedom Hero award to Palestinian journalists covering Gaza collectively; Bisan Owda's 2024 Emmy and Peabody; Motaz Azaiza on the 2024 Time 100; Maha Hussaini's 2024 IWMF Courage in Journalism Award; Wael Al-Dahdouh's 2025 Amnesty International Human Rights Defender Award; Mohammed El-Kurd on the 2021 Time 100; and Rula Jebreal's Ischia International Journalism Award.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#286344"/>
+      <stop offset="0.55" stop-color="#7a5a3c"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="6" fill="#8a1f2d"/>
+
+  <text x="800" y="74" text-anchor="middle" fill="#c7a86b" font-family="Georgia,serif" font-size="25" letter-spacing="6">TIMES OF PALESTINE &#183; THE PRESS</text>
+  <text x="800" y="142" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="50" font-weight="700">What Palestinian journalism has won</text>
+  <text x="800" y="192" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,Arial,sans-serif" font-size="32">ما نالته الصحافة الفلسطينية من جوائز</text>
+
+  <line x1="120" y1="232" x2="1480" y2="232" stroke="url(#rule)" stroke-width="4"/>
+
+  <rect x="120" y="272" width="1360" height="132" rx="10" fill="#16171a" stroke="#8a1f2d" stroke-width="2"/>
+  <text x="164" y="322" fill="#c7a86b" font-family="Georgia,serif" font-size="20" letter-spacing="3">AWARDED COLLECTIVELY &#183; 2024</text>
+  <text x="164" y="366" fill="#f2eee8" font-family="Georgia,serif" font-size="29">UNESCO Guillermo Cano World Press Freedom Prize &#183; IPI&#8211;IMS World Press Freedom Hero</text>
+  <text x="1436" y="392" text-anchor="end" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="22">للصحفيين الفلسطينيين الذين غطّوا غزة</text>
+
+  <g font-family="Georgia,serif">
+    <text x="164" y="470" fill="#f2eee8" font-size="27" font-weight="700">Bisan Owda</text>
+    <text x="164" y="506" fill="#a9a49b" font-size="22">Emmy, Peabody and Murrow awards, 2024</text>
+    <text x="1436" y="470" text-anchor="end" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="25">بيسان عودة</text>
+    <line x1="164" y1="532" x2="1436" y2="532" stroke="#2a2c31" stroke-width="2"/>
+
+    <text x="164" y="586" fill="#f2eee8" font-size="27" font-weight="700">Wael Al-Dahdouh</text>
+    <text x="164" y="622" fill="#a9a49b" font-size="22">Amnesty International Human Rights Defender, 2025</text>
+    <text x="1436" y="586" text-anchor="end" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="25">وائل الدحدوح</text>
+    <line x1="164" y1="648" x2="1436" y2="648" stroke="#2a2c31" stroke-width="2"/>
+
+    <text x="164" y="702" fill="#f2eee8" font-size="27" font-weight="700">Motaz Azaiza</text>
+    <text x="164" y="738" fill="#a9a49b" font-size="22">Time 100, 2024 &#183; Normandy Freedom Prize</text>
+    <text x="1436" y="702" text-anchor="end" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="25">معتز عزايزة</text>
+    <line x1="164" y1="764" x2="1436" y2="764" stroke="#2a2c31" stroke-width="2"/>
+
+    <text x="164" y="818" fill="#f2eee8" font-size="27" font-weight="700">Maha Hussaini</text>
+    <text x="164" y="854" fill="#a9a49b" font-size="22">IWMF Courage in Journalism Award, 2024</text>
+    <text x="1436" y="818" text-anchor="end" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="25">مها حسيني</text>
+    <line x1="164" y1="880" x2="1436" y2="880" stroke="#2a2c31" stroke-width="2"/>
+
+    <text x="164" y="934" fill="#f2eee8" font-size="27" font-weight="700">Mohammed El-Kurd &#183; Rula Jebreal</text>
+    <text x="1436" y="934" text-anchor="end" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="25">محمد الكرد &#183; رولا جبريل</text>
+    <text x="164" y="970" fill="#a9a49b" font-size="22">Time 100, 2021 &#183; Ischia International Journalism Award</text>
+    <text x="1436" y="972" text-anchor="end" fill="#6f6b64" font-size="19">Graphic: Times of Palestine</text>
+  </g>
+</svg>
