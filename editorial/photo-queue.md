@@ -18,3 +18,4 @@ credit, licenseUrl). Remove an entry when the photo ships.
 | 8 | pa-prime-ministers-record-2026 | house timeline SVG | rights-cleared photo cover — a Commons frame of a PA cabinet sitting or the Muqata'a, with manifest entry |
 | 9 | tareq-abbas-businessman-2026 / tarek-aggad-apic-2026 | house board SVGs | rights-cleared portraits (Commons or press-kit) for both profiles, with manifest entries |
 | 10 | palestine-banks-owners-2026 / paltel-ooredoo-spectrum-2026 | house diagram SVGs | rights-cleared photos (a bank branch / a Jawwal or Ooredoo storefront or tower, Commons), with manifest entries |
+| 11 | sherry-sabbagh-dearborn-cook-2026 | house SVG lede (one-pot stew, apron 59) | rights-cleared portrait or kitchen photo — her Instagram (@sherryhour) and Food Network promo shots are copyrighted; ask her directly or the Food Network press room, or an owner-supplied photo, with manifest entry |

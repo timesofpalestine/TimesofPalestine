@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">One hundred aprons, seven weeks: the 100 Cooks stage</title>
+<desc id="dsc">A bilingual figures board for Food Network's 100 Cooks: one hundred home cooks, a seven-week gauntlet, apron number 59 for Sherry Sabbagh, a grand prize of up to 250,000 dollars, the finale on 19 July 2026, host Terry Crews and judges Alex Guarnaschelli and Nick DiGiovanni.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="110" y="78" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="5" fill="#c7a86b">100 COOKS · FOOD NETWORK · SUMMER 2026</text>
+<text x="110" y="150" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">One hundred aprons, seven weeks</text>
+<text x="110" y="200" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#c7a86b">مئة مئزر وسبعة أسابيع — مسرح «مئة طاهٍ»</text>
+<line x1="110" y1="238" x2="1520" y2="238" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- figures row 1 -->
+<rect x="110" y="286" width="440" height="220" rx="12" fill="#161719" stroke="#3a3b3f" stroke-width="2"/>
+<text x="330" y="386" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="84" fill="#f2eee8">100</text>
+<text x="330" y="432" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b">home cooks from across the US</text>
+<text x="330" y="466" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">مئة طاهٍ منزلي من أنحاء أمريكا</text>
+
+<rect x="580" y="286" width="440" height="220" rx="12" fill="#161719" stroke="#c7a86b" stroke-width="3"/>
+<text x="800" y="386" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="84" fill="#c7a86b">#59</text>
+<text x="800" y="432" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Sherry Sabbagh, Dearborn Heights</text>
+<text x="800" y="466" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">شيري صبّاغ — ديربورن هايتس</text>
+
+<rect x="1050" y="286" width="470" height="220" rx="12" fill="#161719" stroke="#3a3b3f" stroke-width="2"/>
+<text x="1285" y="386" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="76" fill="#f2eee8">$250K</text>
+<text x="1285" y="432" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b">grand prize at stake</text>
+<text x="1285" y="466" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">جائزة كبرى تصل إلى ربع مليون دولار</text>
+
+<!-- figures row 2 -->
+<rect x="110" y="546" width="440" height="220" rx="12" fill="#161719" stroke="#3a3b3f" stroke-width="2"/>
+<text x="330" y="646" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="84" fill="#f2eee8">7</text>
+<text x="330" y="692" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b">weeks · 99 eliminations</text>
+<text x="330" y="726" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">سبعة أسابيع وتسع وتسعون جولة إقصاء</text>
+
+<rect x="580" y="546" width="440" height="220" rx="12" fill="#161719" stroke="#3a3b3f" stroke-width="2"/>
+<text x="800" y="640" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="56" fill="#f2eee8">19 JULY</text>
+<text x="800" y="692" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b">season finale, 2026</text>
+<text x="800" y="726" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">حلقة الختام — 19 تموز/يوليو 2026</text>
+
+<rect x="1050" y="546" width="470" height="220" rx="12" fill="#161719" stroke="#3a3b3f" stroke-width="2"/>
+<text x="1285" y="628" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">Terry Crews, host</text>
+<text x="1285" y="672" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#c7a86b">Judges: Alex Guarnaschelli · Nick DiGiovanni</text>
+<text x="1285" y="726" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">تقديم تيري كروز وتحكيم غوارناشيلي وديجوفاني</text>
+
+<!-- footer -->
+<line x1="110" y1="812" x2="1520" y2="812" stroke="#3a3b3f" stroke-width="2"/>
+<text x="110" y="852" font-family="'Source Serif 4',Georgia,serif" font-size="24" font-style="italic" fill="#f2eee8">"Comforting one-pot stews and Lebanese dishes" — Food Network's own words for apron 59.</text>
+<text x="1520" y="852" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: Food Network · NBC Montana · FOX 2 Detroit</text>
+</svg>
