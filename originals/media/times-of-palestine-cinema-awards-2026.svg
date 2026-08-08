@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Palestinian cinema's award record, 1987 to 2026</title>
+  <desc id="d">From Michel Khleifi's Wedding in Galilee winning the critics' prize at Cannes in 1987, through Elia Suleiman's Cannes Jury Prize in 2002, Paradise Now's Golden Globe in 2006, Farah Nabulsi's BAFTA in 2021, No Other Land becoming the first Palestinian film to win an Academy Award in 2025, to three Palestine-centred films on the 2026 Oscar shortlist.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#286344"/>
+      <stop offset="0.55" stop-color="#7a5a3c"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="6" fill="#8a1f2d"/>
+
+  <text x="800" y="76" text-anchor="middle" fill="#c7a86b" font-family="Georgia,serif" font-size="25" letter-spacing="6">TIMES OF PALESTINE &#183; CULTURE</text>
+  <text x="800" y="152" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="54" font-weight="700">Thirty-eight years to an Oscar</text>
+  <text x="800" y="206" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,Arial,sans-serif" font-size="34">ثمانية وثلاثون عامًا حتى الأوسكار</text>
+
+  <line x1="120" y1="300" x2="1480" y2="300" stroke="url(#rule)" stroke-width="4"/>
+
+  <circle cx="180" cy="300" r="11" fill="#286344"/>
+  <text x="180" y="356" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="27" font-weight="700">1987</text>
+  <text x="180" y="392" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="20">Wedding in Galilee</text>
+  <text x="180" y="418" text-anchor="middle" fill="#8f8b83" font-family="Georgia,serif" font-size="18">Cannes critics&#8217; prize</text>
+
+  <circle cx="440" cy="300" r="11" fill="#3f7a53"/>
+  <text x="440" y="356" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="27" font-weight="700">2002</text>
+  <text x="440" y="392" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="20">Divine Intervention</text>
+  <text x="440" y="418" text-anchor="middle" fill="#8f8b83" font-family="Georgia,serif" font-size="18">Cannes Jury Prize</text>
+
+  <circle cx="700" cy="300" r="11" fill="#6b5a40"/>
+  <text x="700" y="356" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="27" font-weight="700">2006</text>
+  <text x="700" y="392" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="20">Paradise Now</text>
+  <text x="700" y="418" text-anchor="middle" fill="#8f8b83" font-family="Georgia,serif" font-size="18">Golden Globe</text>
+
+  <circle cx="960" cy="300" r="11" fill="#8a5a3c"/>
+  <text x="960" y="356" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="27" font-weight="700">2021</text>
+  <text x="960" y="392" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="20">The Present</text>
+  <text x="960" y="418" text-anchor="middle" fill="#8f8b83" font-family="Georgia,serif" font-size="18">BAFTA</text>
+
+  <circle cx="1220" cy="300" r="14" fill="#8a1f2d"/>
+  <text x="1220" y="356" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="27" font-weight="700">2025</text>
+  <text x="1220" y="392" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="20">No Other Land</text>
+  <text x="1220" y="418" text-anchor="middle" fill="#e0a0a8" font-family="Georgia,serif" font-size="18">first Oscar</text>
+
+  <circle cx="1440" cy="300" r="11" fill="#c7a86b"/>
+  <text x="1440" y="356" text-anchor="middle" fill="#f2eee8" font-family="Georgia,serif" font-size="27" font-weight="700">2026</text>
+  <text x="1440" y="392" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="20">Palestine 36</text>
+  <text x="1440" y="418" text-anchor="middle" fill="#8f8b83" font-family="Georgia,serif" font-size="18">shortlisted</text>
+
+  <rect x="140" y="520" width="1320" height="212" rx="10" fill="#16171a" stroke="#2a2c31" stroke-width="2"/>
+  <text x="190" y="576" fill="#c7a86b" font-family="Georgia,serif" font-size="21" letter-spacing="3">WHERE IT STANDS NOW</text>
+  <text x="190" y="632" fill="#f2eee8" font-family="Georgia,serif" font-size="30">Three Palestine-centred films sit on the 2026 Oscar shortlist</text>
+  <text x="190" y="676" fill="#a9a49b" font-family="Georgia,serif" font-size="26">Palestine 36 &#183; All That&#8217;s Left of You &#183; The Voice of Hind Rajab</text>
+  <text x="1410" y="712" text-anchor="end" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="24">ثلاثة أفلام عن فلسطين في القائمة القصيرة</text>
+
+  <text x="800" y="812" text-anchor="middle" fill="#a9a49b" font-family="Georgia,serif" font-size="23">Two Oscar nominations before the first win: Paradise Now, 2006 &#183; Omar, 2014</text>
+  <text x="800" y="860" text-anchor="middle" fill="#6f6b64" font-family="Georgia,serif" font-size="19">Graphic: Times of Palestine</text>
+</svg>
