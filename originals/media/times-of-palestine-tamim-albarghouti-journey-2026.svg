@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">From Cairo to Jerusalem: the journey of Tamim al-Barghouti</title>
+<desc id="dsc">A bilingual timeline of Tamim al-Barghouti's life: born in Cairo in 1977 to Mourid Barghouti and Radwa Ashour; his father expelled from Egypt five months later; first journey to the family's village in the 1990s; deported to Amman for protesting the Iraq war in 2003; doctorate from Boston University in 2004; the poem In Jerusalem on Prince of Poets in 2007; verses on Tahrir Square's screens in 2011; the English collection In Jerusalem and Other Poems in 2017.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#8a1f2d"/>
+<stop offset="0.55" stop-color="#c7a86b"/>
+<stop offset="1" stop-color="#286344"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="110" y="78" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="5" fill="#c7a86b">TAMIM AL-BARGHOUTI · A LIFE IN VERSE</text>
+<text x="110" y="150" font-family="'Source Serif 4',Georgia,serif" font-size="56" fill="#f2eee8">From Cairo to Jerusalem</text>
+<text x="110" y="200" font-family="Cairo,Arial,sans-serif" font-size="33" fill="#c7a86b">من القاهرة إلى القدس — رحلة تميم البرغوثي</text>
+<line x1="110" y1="238" x2="1520" y2="238" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- timeline spine -->
+<line x1="170" y1="560" x2="1460" y2="560" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+
+<!-- 1977 -->
+<circle cx="190" cy="560" r="13" fill="#8a1f2d"/>
+<line x1="190" y1="547" x2="190" y2="330" stroke="#3a3b3f" stroke-width="2"/>
+<text x="190" y="300" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">1977</text>
+<text x="190" y="352" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">Born in Cairo to two writers</text>
+<text x="190" y="380" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">مولود في القاهرة لمريد ورضوى</text>
+<text x="190" y="626" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">His father is expelled</text>
+<text x="190" y="652" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">five months later</text>
+<text x="190" y="680" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">يُبعد أبوه بعد خمسة أشهر</text>
+
+<!-- 2003 -->
+<circle cx="470" cy="560" r="11" fill="#f2eee8"/>
+<line x1="470" y1="571" x2="470" y2="620" stroke="#3a3b3f" stroke-width="2"/>
+<text x="470" y="522" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">2003</text>
+<text x="470" y="650" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">Deported to Amman for</text>
+<text x="470" y="676" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">protesting the Iraq war</text>
+<text x="470" y="706" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">يُرحَّل إلى عمّان لرفضه حرب العراق</text>
+
+<!-- 2004 -->
+<circle cx="660" cy="560" r="11" fill="#f2eee8"/>
+<line x1="660" y1="547" x2="660" y2="368" stroke="#3a3b3f" stroke-width="2"/>
+<text x="660" y="338" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">2004</text>
+<text x="660" y="392" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">PhD in political science,</text>
+<text x="660" y="418" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">Boston University</text>
+<text x="660" y="448" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">دكتوراه العلوم السياسية من بوسطن</text>
+
+<!-- 2007 -->
+<circle cx="900" cy="560" r="16" fill="#c7a86b"/>
+<line x1="900" y1="576" x2="900" y2="628" stroke="#c7a86b" stroke-width="3"/>
+<text x="900" y="522" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="34" fill="#c7a86b">2007</text>
+<rect x="740" y="628" width="320" height="130" rx="10" fill="#161719" stroke="#c7a86b" stroke-width="3"/>
+<text x="900" y="678" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#f2eee8">«في القدس»</text>
+<text x="900" y="712" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">“In Jerusalem”, Prince of Poets</text>
+<text x="900" y="740" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">The street's own prize: “Poet of Jerusalem”</text>
+
+<!-- 2011 -->
+<circle cx="1160" cy="560" r="11" fill="#f2eee8"/>
+<line x1="1160" y1="547" x2="1160" y2="368" stroke="#3a3b3f" stroke-width="2"/>
+<text x="1160" y="338" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">2011</text>
+<text x="1160" y="392" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">“Ya Masr Hanet” plays on</text>
+<text x="1160" y="418" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">Tahrir Square's screens</text>
+<text x="1160" y="448" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">«يا مصر هانت» على شاشات التحرير</text>
+
+<!-- 2017 -->
+<circle cx="1440" cy="560" r="13" fill="#286344"/>
+<line x1="1440" y1="571" x2="1440" y2="620" stroke="#3a3b3f" stroke-width="2"/>
+<text x="1440" y="522" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">2017</text>
+<text x="1418" y="650" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">In Jerusalem and Other Poems,</text>
+<text x="1418" y="676" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">translated with Radwa Ashour</text>
+<text x="1418" y="706" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">الديوان بالإنجليزية بترجمة شاركت فيها رضوى عاشور</text>
+
+<!-- footer -->
+<line x1="110" y1="812" x2="1520" y2="812" stroke="#3a3b3f" stroke-width="2"/>
+<text x="110" y="852" font-family="'Source Serif 4',Georgia,serif" font-size="24" font-style="italic" fill="#f2eee8">Five collections, two dialects and the classical tongue — one city at the center.</text>
+<text x="1520" y="852" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: Interlink Books · Kennedy Center · Georgetown CCAS · Fanack</text>
+</svg>

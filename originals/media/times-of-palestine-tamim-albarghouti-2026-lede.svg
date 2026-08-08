@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Tamim al-Barghouti — the Poet of Jerusalem</title>
+<desc id="dsc">A house illustration for the profile of Tamim al-Barghouti: the golden dome and old wall of Jerusalem drawn in the paper's dark style, beneath the closing line of his 2007 poem In Jerusalem — in Jerusalem is everyone in Jerusalem, but I see no one in Jerusalem but you.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#e0c688"/>
+<stop offset="1" stop-color="#a9834a"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="110" y="82" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="5" fill="#c7a86b">THE POET OF JERUSALEM · TAMIM AL-BARGHOUTI</text>
+<text x="110" y="156" font-family="'Source Serif 4',Georgia,serif" font-size="60" fill="#f2eee8">The poem a city knows by heart</text>
+<text x="110" y="208" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#c7a86b">تميم البرغوثي — شاعر القدس، والقصيدة التي تحفظها المدينة</text>
+
+<text x="1520" y="82" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="3" fill="#f2eee8">ABU DHABI · 2007</text>
+<text x="1520" y="116" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">«في القدس» — أمير الشعراء</text>
+
+<line x1="110" y1="244" x2="1520" y2="244" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- Jerusalem: dome, drum, wall -->
+<g>
+<!-- crescent finial -->
+<line x1="800" y1="352" x2="800" y2="322" stroke="#e0c688" stroke-width="5" stroke-linecap="round"/>
+<circle cx="800" cy="312" r="12" fill="none" stroke="#e0c688" stroke-width="5"/>
+<!-- dome -->
+<path d="M 655 500 A 145 145 0 0 1 945 500 Z" fill="url(#dome)"/>
+<!-- drum -->
+<rect x="640" y="500" width="320" height="56" fill="#20447a"/>
+<rect x="640" y="500" width="320" height="56" fill="none" stroke="#2c5aa0" stroke-width="3"/>
+<g fill="#c7a86b">
+<rect x="668" y="512" width="14" height="32" rx="7"/>
+<rect x="720" y="512" width="14" height="32" rx="7"/>
+<rect x="772" y="512" width="14" height="32" rx="7"/>
+<rect x="824" y="512" width="14" height="32" rx="7"/>
+<rect x="876" y="512" width="14" height="32" rx="7"/>
+<rect x="928" y="512" width="14" height="32" rx="7"/>
+</g>
+<!-- octagon base -->
+<path d="M 590 556 L 1010 556 L 1052 606 L 1052 640 L 548 640 L 548 606 Z" fill="#274a72"/>
+<path d="M 590 556 L 1010 556 L 1052 606 L 1052 640 L 548 640 L 548 606 Z" fill="none" stroke="#2c5aa0" stroke-width="3"/>
+<!-- old city wall -->
+<path d="M 180 720 L 180 668 L 220 668 L 220 692 L 268 692 L 268 668 L 308 668 L 308 692 L 356 692 L 356 668 L 396 668 L 396 720 Z" fill="#3a3b3f"/>
+<path d="M 1204 720 L 1204 668 L 1244 668 L 1244 692 L 1292 692 L 1292 668 L 1332 668 L 1332 692 L 1380 692 L 1380 668 L 1420 668 L 1420 720 Z" fill="#3a3b3f"/>
+<rect x="180" y="700" width="1240" height="20" fill="#3a3b3f"/>
+<!-- the wall that turns the visitor away, and the road outside it -->
+<line x1="110" y1="720" x2="1520" y2="720" stroke="#8a1f2d" stroke-width="6" stroke-linecap="round"/>
+</g>
+
+<!-- the closing line -->
+<text x="800" y="788" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="40" fill="#f2eee8">«في القدسِ مَن في القدسِ، لكنْ لا أرى في القدسِ إلا أنت»</text>
+<text x="800" y="832" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="24" font-style="italic" fill="#c7a86b">“In Jerusalem is everyone in Jerusalem — yet I see no one in Jerusalem but you.”</text>
+<text x="800" y="870" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Tamim al-Barghouti, “In Jerusalem”, 2007 — تميم البرغوثي، «في القدس»</text>
+</svg>
