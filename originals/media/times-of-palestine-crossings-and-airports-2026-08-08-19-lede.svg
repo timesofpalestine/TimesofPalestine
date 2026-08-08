@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Allenby / King Hussein crossing: new operating hours after Israeli court order</title>
+<desc id="d">Chart of the new opening hours at the Allenby (King Hussein) crossing, the only exit route abroad for West Bank Palestinians. From Thursday 30 July the terminal runs 8am to 6.30pm on Sundays and Thursdays and 8am to 5pm on Mondays, Tuesdays and Wednesdays — 90 extra minutes on two days a week. Side panels note the court-ordered report deadline of 1 November and about 1.5 million travellers through the crossing in 2025.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- headline -->
+<text x="90" y="96" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Allenby crossing: the new working day</text>
+<text x="90" y="140" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#c7a86b" direction="rtl">معبر الكرامة (اللنبي) — ساعات العمل الجديدة</text>
+<text x="90" y="182" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">The only route out of the occupied West Bank for Palestinians · in effect from Thursday 30 July</text>
+
+<line x1="90" y1="212" x2="1540" y2="212" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- chart frame -->
+<text x="120" y="268" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8" letter-spacing="2">OPENING HOURS, BOTH DIRECTIONS</text>
+
+<!-- gridlines -->
+<g stroke="#33343a" stroke-width="1">
+<line x1="360" y1="290" x2="360" y2="680"/>
+<line x1="509" y1="290" x2="509" y2="680"/>
+<line x1="658" y1="290" x2="658" y2="680"/>
+<line x1="807" y1="290" x2="807" y2="680"/>
+<line x1="956" y1="290" x2="956" y2="680"/>
+<line x1="1105" y1="290" x2="1105" y2="680"/>
+</g>
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5" text-anchor="middle">
+<text x="360" y="712">8:00</text>
+<text x="509" y="712">10:00</text>
+<text x="658" y="712">12:00</text>
+<text x="807" y="712">14:00</text>
+<text x="956" y="712">16:00</text>
+<text x="1105" y="712">18:00</text>
+</g>
+
+<!-- Sunday -->
+<text x="340" y="356" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Sunday</text>
+<text x="340" y="380" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" direction="rtl">الأحد</text>
+<rect x="360" y="325" width="670" height="42" fill="#286344"/>
+<rect x="1030" y="325" width="112" height="42" fill="#c7a86b"/>
+<text x="1160" y="354" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">18:30</text>
+
+<!-- Monday -->
+<text x="340" y="426" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Monday</text>
+<text x="340" y="450" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" direction="rtl">الاثنين</text>
+<rect x="360" y="395" width="670" height="42" fill="#286344"/>
+<text x="1048" y="424" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">17:00</text>
+
+<!-- Tuesday -->
+<text x="340" y="496" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Tuesday</text>
+<text x="340" y="520" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" direction="rtl">الثلاثاء</text>
+<rect x="360" y="465" width="670" height="42" fill="#286344"/>
+<text x="1048" y="494" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">17:00</text>
+
+<!-- Wednesday -->
+<text x="340" y="566" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Wednesday</text>
+<text x="340" y="590" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" direction="rtl">الأربعاء</text>
+<rect x="360" y="535" width="670" height="42" fill="#286344"/>
+<text x="1048" y="564" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">17:00</text>
+
+<!-- Thursday -->
+<text x="340" y="636" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Thursday</text>
+<text x="340" y="660" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" direction="rtl">الخميس</text>
+<rect x="360" y="605" width="670" height="42" fill="#286344"/>
+<rect x="1030" y="605" width="112" height="42" fill="#c7a86b"/>
+<text x="1160" y="634" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">18:30</text>
+
+<!-- legend -->
+<rect x="360" y="748" width="26" height="14" fill="#286344"/>
+<text x="396" y="761" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">8:00–17:00</text>
+<rect x="530" y="748" width="26" height="14" fill="#c7a86b"/>
+<text x="566" y="761" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">extra 90 minutes</text>
+
+<!-- right stat panel -->
+<rect x="1230" y="290" width="310" height="128" fill="#191a1d" stroke="#3a3b3f"/>
+<text x="1255" y="352" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#c7a86b">1 Nov</text>
+<text x="1255" y="380" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">deadline for the authority's report</text>
+<text x="1515" y="404" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" direction="rtl">موعد تقديم التقرير للمحكمة</text>
+
+<rect x="1230" y="438" width="310" height="128" fill="#191a1d" stroke="#3a3b3f"/>
+<text x="1255" y="500" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">1.5m</text>
+<text x="1255" y="528" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">travellers through Allenby in 2025</text>
+<text x="1515" y="552" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" direction="rtl">مسافر عبر الجسر في 2025</text>
+
+<rect x="1230" y="586" width="310" height="128" fill="#191a1d" stroke="#3a3b3f"/>
+<text x="1255" y="648" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#c7a86b">+90 min</text>
+<text x="1255" y="676" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">on two days a week</text>
+<text x="1515" y="700" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" direction="rtl">يومان في الأسبوع</text>
+
+<line x1="90" y1="800" x2="1540" y2="800" stroke="#3a3b3f" stroke-width="2"/>
+<text x="90" y="836" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Court told the Israel Airports Authority to report by 1 November on hiring staff and lengthening the working day. Petition by the coordinating council of Palestinian private-sector institutions.</text>
+<text x="90" y="866" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#7d7c79">Sources: Raya, Sawaleif, Haaretz, Srugim, Sada News, Al-Quds · Times of Palestine</text>
+<text x="1540" y="866" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#7d7c79" direction="rtl">تايمز أوف فلسطين</text>
+</svg>
