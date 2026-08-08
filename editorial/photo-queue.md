@@ -16,3 +16,4 @@ credit, licenseUrl). Remove an entry when the photo ships.
 | 6 | tomorrows-youth-organization-nablus-2026 | house SVG (centre-on-the-hill illustration) | rights-cleared photo of the TYO centre or a program session — ask the organization's press contact, or Commons; manifest entry required |
 | 7 | masri-britain-owes-palestine-2026 | OGL Downing Street door photo (healthy) | upgrade: the family's own Downing Street photo (grandfather and grandson at the gates), rights-cleared from Munib al-Masri or the BOP campaign |
 | 8 | pa-prime-ministers-record-2026 | house timeline SVG | rights-cleared photo cover — a Commons frame of a PA cabinet sitting or the Muqata'a, with manifest entry |
+| 9 | tareq-abbas-businessman-2026 / tarek-aggad-apic-2026 | house board SVGs | rights-cleared portraits (Commons or press-kit) for both profiles, with manifest entries |
