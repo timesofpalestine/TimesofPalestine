@@ -52,7 +52,7 @@ jobs:
       - name: Dispatch a build if the chain has gone quiet
         run: |
           if [ -z "$TOKEN" ]; then
-            echo "WORKFLOW_DISPATCH_TOKEN not set — heartbeat dormant."
+            echo "::warning::WORKFLOW_DISPATCH_TOKEN not set or expired — heartbeat dormant; a stalled build chain will NOT be restarted."
             exit 0
           fi
           runs=$(curl -s --retry 6 --retry-all-errors --max-time 60 \

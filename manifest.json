@@ -1,10 +1,14 @@
 {
+  "id": "/",
   "name": "Times of Palestine",
   "short_name": "TOP News",
   "description": "Independent Palestine news, in English and Arabic. Works offline.",
   "start_url": "/",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
   "display": "standalone",
-  "background_color": "#faf9f4",
+  "background_color": "#f8f7f2",
   "theme_color": "#0b0b0c",
   "icons": [
     {
@@ -22,6 +26,18 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "English edition",
+      "url": "/en/",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "الطبعة العربية",
+      "url": "/ar/",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

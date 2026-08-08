@@ -398,7 +398,7 @@ def copy_media(dist, stories):
 
 
 CSS = """
-.story .sub{font-family:var(--serif);font-weight:800;line-height:1.25;margin:2rem 0 .65rem;color:var(--black)}
+.story .sub{font-family:var(--serif);font-weight:800;line-height:1.25;margin:2rem 0 .65rem;color:var(--ink)}
 .story h2.sub{font-size:1.45rem}
 .story h3.sub{font-size:1.16rem}
 .story h4.sub{font-size:1rem;text-transform:uppercase;letter-spacing:.06em;font-family:var(--sans)}
@@ -428,11 +428,4 @@ CSS = """
 .story .embed.ig{padding-top:0;height:clamp(480px,78vh,660px);max-width:420px;margin-inline:auto}
 .story .embed.ig iframe{position:static;height:100%}
 .story figure.lf.video video{width:100%;display:block;background:#0b0b0c;border-radius:var(--r)}
-@media(prefers-color-scheme:dark){
-  .story .sub{color:var(--ink)}
-  .story ul.lf{color:#d6d6de}
-  .story ol.lf{color:#d6d6de}
-  .story code{background:rgba(255,255,255,.12)}
-  .story table.lf th{background:rgba(255,255,255,.06)}
-}
 """

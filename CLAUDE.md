@@ -104,7 +104,7 @@ everything it builds:
    per-story manual approval, and NEVER with reader-facing labels
    ("developing report", "awaiting review" etc.) on any story (owner
    decision 2026-07-30). Review tracking is internal-only
-   (review-queue.json).
+   (dist/review-queue.json, a build output — never committed).
 5. **Story imagery: keep photos (owner decision 2026-07-30).** Aggregated
    stories fetch and display upstream social-preview images (og:image); story
    cards must not go photoless. Any rights-strict mode (self-owned assets
@@ -432,7 +432,7 @@ it to Telegram. No human machine involved. The contract:
    first-class editions. Header, then `---`, then body:
    `title:` / `category:` (one of: gaza westbank politics economy
    accountability research bitcoin diaspora arts sports social opinion news
-   humans health archive arabaid) / `date:` (ISO 8601 UTC, never future) /
+   humans health archive arabaid women israelipress) / `date:` (ISO 8601 UTC, never future) /
    optional `maxAgeHours:`.
    **Headline rule (owner decision 2026-07-30, validator-enforced):** every
    title is ONE short complete sentence — aim for 9-10 words, hard cap 12,
@@ -465,7 +465,8 @@ it to Telegram. No human machine involved. The contract:
    desk's banned lists, «أسلم» for «سلّم», «قام بـ», «تم»+مصدر, "delve",
    "underscores"…) is flagged loudly at build for the daily editor.**
    `![caption](file.svg)` images (file must exist in
-   `originals/media/`). Anything else prints literally and the article is
+   `originals/media/`; a rights-cleared raster (.jpg/.png) with a
+   `media-rights.json` entry is also accepted in-body). Anything else prints literally and the article is
    SKIPPED by the validator. No footnotes, no sources sections — attribution
    inline in prose. Never end mid-sentence. NEWSPAPER copy, never a briefing
    memo (owner decision 2026-07-30, validator-enforced): no "What is

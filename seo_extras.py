@@ -253,7 +253,7 @@ def render_about(lang, built_at):
 {b._THEME_JS}
 </head>
 <body>
-<div class="backbar"><a href="./">{a['back']}</a></div>
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{a['back']}</a><span class="bb-tools">{b.theme_btn(lang)}{b.lite_btn(lang)}</span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
@@ -395,14 +395,20 @@ def render_json_feed(lang, items, base_url):
             "summary": (item.get("brief") or item.get("dek") or "")[:1000],
             "date_published": utc_iso(item["date"]),
             "language": lang,
-            "authors": [{"name": item["source"],
-                         **({"url": item["source_url"]} if item.get("source_url") else {})}],
+            # Wire attribution protocol: rewritten briefs are our copy — the
+            # outlet credit rides only dek-fallback items (no brief).
+            "authors": [
+                {"name": title} if item.get("original") or item.get("brief")
+                else {"name": item["source"],
+                      **({"url": item["source_url"]}
+                         if item.get("source_url") else {})}],
             "tags": [item["cat"]],
         }
         if item.get("modified"):
             row["date_modified"] = utc_iso(item["modified"])
         if item.get("image"):
-            row["image"] = item["image"]
+            img = item["image"]
+            row["image"] = img if img.startswith("http") else f"{base_url}{img}"
         rows.append(row)
     return {
         "version": "https://jsonfeed.org/version/1.1",
@@ -539,7 +545,11 @@ def render_status(lang):
 <link rel="stylesheet" href="/assets/site.css">
 {b._THEME_JS}
 </head>
-<body><main><article class="story"><p class="kick">{SITE_NAMES[lang]}</p><h1>{title}</h1>
+<body><div class="backbar"><a href="./">{"العودة إلى الأخبار" if lang == "ar" else "Back to the news"}</a><span class="bb-tools">{b.theme_btn(lang)}{b.lite_btn(lang)}</span></div>
+<header class="masthead compact"><div class="wrap">
+  <a class="logotype" href="./"><p class="wordmark"><span class="l1">{b.STR[lang]['masthead_top']}</span> <span class="l2">{b.STR[lang]['masthead_bottom']}</span></p></a>
+</div></header>
+<main><article class="story"><p class="kick">{SITE_NAMES[lang]}</p><h1>{title}</h1>
 <p id="health" class="summary">{loading}</p><p><a href="./">{"العودة إلى الأخبار" if lang == "ar" else "Back to the news"}</a></p>
 </article></main><script>
 fetch("/health.json",{{cache:"no-store"}}).then(r=>{{if(!r.ok)throw Error(r.status);return r.json()}})
@@ -580,7 +590,7 @@ def write_extras(dist, langs_items, built_at, base_url, health):
         encoding="utf-8",
     )
     write_telegram_outbox(dist, langs_items, base_url)
-    (dist / "404.html").write_text('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — Times of Palestine</title><meta name="robots" content="noindex"><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/icon-192.png"><style>*{margin:0;padding:0;box-sizing:border-box}body{background:#faf9f4;color:#141419;font-family:-apple-system,Helvetica,Arial,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:2rem}a{color:inherit}h1{font-family:Georgia,serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;line-height:1.15}.flag{width:130px;height:5px;margin:0 auto 1.6rem;background:linear-gradient(90deg,#0b0b0c 0 34%,#C8102E 34% 67%,#00753A 67% 100%)}p{margin-top:.9rem;color:#595962;line-height:1.6}.links{margin-top:1.8rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}.links a{background:#C8102E;color:#fff;font-weight:800;padding:.8rem 1.6rem;border-radius:3px;text-decoration:none}@media (prefers-color-scheme:dark){body{background:#101013;color:#e9e9ef}p{color:#a0a0aa}.links a{background:#ff8896;color:#101013}}</style></head><body><div><div class="flag"></div><h1>That page is no longer here.</h1><p>Stories rotate off the front page as the news moves. The newsroom is still publishing — pick an edition below.</p><p dir="rtl" lang="ar">تدور الأخبار وتُستبدل الصفحات باستمرار. اختر النسخة التي تريد قراءتها.</p><div class="links"><a href="/en/">English edition</a><a href="/ar/">النسخة العربية</a></div></div></body></html>', encoding="utf-8")
+    (dist / "404.html").write_text('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found — Times of Palestine</title><meta name="robots" content="noindex"><link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/icon-192.png"><script>try{var t=localStorage.getItem("top-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script><style>*{margin:0;padding:0;box-sizing:border-box}:root{--paper:#f8f7f2;--ink:#141419;--muted:#595962;--red:#C8102E}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#121417;--ink:#e8eaed;--muted:#a3a8b2;--red:#d43049}}:root[data-theme=dark]{--paper:#121417;--ink:#e8eaed;--muted:#a3a8b2;--red:#d43049}body{background:var(--paper);color:var(--ink);font-family:-apple-system,Helvetica,Arial,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:2rem}a{color:inherit}h1{font-family:Georgia,serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;line-height:1.15}.flag{width:130px;height:5px;margin:0 auto 1.6rem;background:linear-gradient(90deg,#0b0b0c 0 34%,#C8102E 34% 67%,#00753A 67% 100%)}p{margin-top:.9rem;color:var(--muted);line-height:1.6}.links{margin-top:1.8rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}.links a{background:var(--red);color:#fff;font-weight:800;padding:.8rem 1.6rem;border-radius:3px;text-decoration:none}</style></head><body><div><div class="flag"></div><h1>That page is no longer here.</h1><p>Stories rotate off the front page as the news moves. The newsroom is still publishing — pick an edition below.</p><p dir="rtl" lang="ar">تدور الأخبار وتُستبدل الصفحات باستمرار. اختر النسخة التي تريد قراءتها.</p><div class="links"><a href="/en/">English edition</a><a href="/ar/">النسخة العربية</a></div></div></body></html>', encoding="utf-8")
     sm = dist / "sitemap.xml"
     extra_urls = "".join(
         f"<url><loc>{base_url}/{lang}/{page}</loc></url>"
