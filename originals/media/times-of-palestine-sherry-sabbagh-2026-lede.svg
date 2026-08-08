@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Sherry Sabbagh — Dearborn's Arab kitchen on the 100 Cooks stage</title>
+<desc id="dsc">A house illustration for the profile of Sherry Sabbagh: a steaming one-pot stew over a flame, the apron number 59, and the Dearborn skyline line, in the paper's dark style with bilingual labels.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="pot" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#4a4b50"/>
+<stop offset="1" stop-color="#2c2d31"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="110" y="82" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="5" fill="#c7a86b">THE ARAB KITCHEN IN AMERICA · SHERRY SABBAGH</text>
+<text x="110" y="156" font-family="'Source Serif 4',Georgia,serif" font-size="60" fill="#f2eee8">Dearborn, at America's biggest table</text>
+<text x="110" y="208" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#c7a86b">شيري صبّاغ — مطبخ ديربورن العربي على مسرح «مئة طاهٍ»</text>
+
+<text x="1520" y="82" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="3" fill="#f2eee8">FOOD NETWORK · SUMMER 2026</text>
+<text x="1520" y="116" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">«فود نتوورك» — صيف 2026</text>
+
+<line x1="110" y1="244" x2="1520" y2="244" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- the one-pot stew -->
+<g>
+<!-- steam -->
+<path d="M 700 350 q -22 -34 0 -66 q 22 -30 0 -60" fill="none" stroke="#aaa9a5" stroke-width="7" stroke-linecap="round" opacity="0.75"/>
+<path d="M 800 336 q -24 -38 0 -72 q 24 -32 0 -64" fill="none" stroke="#c7a86b" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+<path d="M 900 350 q -22 -34 0 -66 q 22 -30 0 -60" fill="none" stroke="#aaa9a5" stroke-width="7" stroke-linecap="round" opacity="0.75"/>
+<!-- lid -->
+<ellipse cx="800" cy="392" rx="230" ry="34" fill="#4a4b50"/>
+<rect x="770" y="352" width="60" height="18" rx="9" fill="#c7a86b"/>
+<!-- body -->
+<path d="M 570 392 L 570 520 Q 570 588 660 606 L 940 606 Q 1030 588 1030 520 L 1030 392 Z" fill="url(#pot)"/>
+<!-- handles -->
+<path d="M 570 430 q -56 22 0 46" fill="none" stroke="#c7a86b" stroke-width="12" stroke-linecap="round"/>
+<path d="M 1030 430 q 56 22 0 46" fill="none" stroke="#c7a86b" stroke-width="12" stroke-linecap="round"/>
+<!-- apron number -->
+<rect x="722" y="440" width="156" height="112" rx="12" fill="#161719" stroke="#c7a86b" stroke-width="3"/>
+<text x="800" y="522" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="72" fill="#f2eee8">59</text>
+<!-- flame -->
+<path d="M 760 660 q 12 -34 40 -46 q -8 26 12 34 q 18 -8 16 -30 q 30 20 22 48 q -8 30 -45 30 q -38 0 -45 -36" fill="#8a1f2d"/>
+<path d="M 782 668 q 8 -20 24 -26 q -2 16 10 20 q 12 -6 10 -18 q 16 14 10 30 q -6 18 -27 18 q -22 0 -27 -24" fill="#c7a86b"/>
+</g>
+
+<!-- captions -->
+<text x="800" y="756" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#f2eee8">يخنة القِدر الواحدة — طعام الطمأنينة الذي عرّفت به المائدة الشامية</text>
+<text x="800" y="798" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="24" font-style="italic" fill="#c7a86b">One pot, one hundred aprons — comforting stews and Lebanese dishes, prime time</text>
+
+<line x1="110" y1="826" x2="1520" y2="826" stroke="#3a3b3f" stroke-width="2"/>
+<text x="110" y="864" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">@sherryhour · Dearborn Heights, Michigan</text>
+<text x="1520" y="864" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: Food Network · SEEN Magazine · FOX 2 Detroit</text>
+</svg>
