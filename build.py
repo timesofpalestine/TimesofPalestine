@@ -713,13 +713,20 @@ def resolve_article_url(url):
         canonical = CANONICAL_RX.search(page)
         if canonical and "news.google.com" not in canonical.group(1):
             return canonicalize_url(html.unescape(canonical.group(1)))
-        external = re.search(
-            r'href=["\'](https?://(?!news\.google|accounts\.google|policies\.google)[^"\']+)',
-            page,
-            re.I,
-        )
-        if external:
-            return canonicalize_url(html.unescape(external.group(1)))
+        # Last resort, and the riskiest: the first external href on a Google News
+        # interstitial is usually googleusercontent's thumbnail, not the article.
+        # Publishing that as the source URL is worse than publishing nothing —
+        # it puts a CDN image in isBasedOn and misattributes the story. Exclude
+        # every Google-owned host and anything that is plainly an asset.
+        for candidate in re.findall(r'href=["\'](https?://[^"\']+)', page, re.I):
+            host = urlsplit(candidate).netloc.lower()
+            if host.endswith("google.com") or host.endswith("googleusercontent.com") \
+                    or host.endswith("gstatic.com") or host.endswith("googleapis.com") \
+                    or host.endswith("youtube.com") or host.endswith("youtu.be"):
+                continue
+            if re.search(r"\.(?:jpe?g|png|gif|webp|avif|svg|ico|css|js)(?:$|\?)", candidate, re.I):
+                continue
+            return canonicalize_url(html.unescape(candidate))
     except (OSError, ValueError):
         return ""
     return ""
