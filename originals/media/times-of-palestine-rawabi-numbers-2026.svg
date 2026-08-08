@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Rawabi by the numbers</title>
+  <desc id="desc">A bilingual figures board for Rawabi, the first planned Palestinian city: 1.4 billion dollars of private investment, 22 neighbourhoods and about 6,000 homes, more than 25,000 planned residents, a 15,000-seat amphitheatre, first families in 2015, and the West Bank's largest private job creator — above a stylised hilltop skyline.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071018"/>
+      <stop offset="1" stop-color="#142333"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="64" y="54" width="1472" height="792" rx="30" fill="#0d1a26" stroke="#30485a" stroke-width="2" filter="url(#shadow)"/>
+
+  <text x="110" y="128" fill="#ffffff" font-family="Arial, sans-serif" font-size="46" font-weight="700">Rawabi by the numbers</text>
+  <text x="1490" y="128" text-anchor="start" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-family="Arial, sans-serif" font-size="38" font-weight="700">روابي بالأرقام</text>
+  <text x="110" y="176" fill="#89a8ba" font-family="Arial, sans-serif" font-size="23">The first planned Palestinian city, on a hilltop nine kilometres north of Ramallah</text>
+
+  <!-- skyline band -->
+  <g>
+    <rect x="110" y="206" width="1380" height="180" rx="16" fill="#12283b" stroke="#30485a" stroke-width="2"/>
+    <path d="M110 366 Q 400 300 700 340 T 1490 330 L 1490 386 L 110 386 Z" fill="#1b3d5a"/>
+    <g fill="#24455f" stroke="#89a8ba" stroke-width="2">
+      <rect x="560" y="266" width="52" height="100" rx="4"/>
+      <rect x="626" y="240" width="58" height="126" rx="4"/>
+      <rect x="698" y="256" width="52" height="110" rx="4"/>
+      <rect x="764" y="228" width="62" height="138" rx="4"/>
+      <rect x="840" y="252" width="54" height="114" rx="4"/>
+      <rect x="908" y="272" width="48" height="94" rx="4"/>
+    </g>
+    <g fill="#ffd97a">
+      <rect x="642" y="258" width="10" height="12"/><rect x="662" y="284" width="10" height="12"/>
+      <rect x="780" y="246" width="10" height="12"/><rect x="800" y="272" width="10" height="12"/>
+      <rect x="856" y="268" width="10" height="12"/><rect x="576" y="284" width="10" height="12"/>
+    </g>
+    <circle cx="1350" cy="256" r="30" fill="#e0a928" opacity="0.9"/>
+  </g>
+
+  <!-- figures grid: 2 rows x 3 -->
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="416" width="440" height="170" rx="16" fill="#122536" stroke="#26a269" stroke-width="2"/>
+    <text x="330" y="486" text-anchor="middle" fill="#ffffff" font-size="46" font-weight="700">$1.4bn</text>
+    <text x="330" y="524" text-anchor="middle" fill="#b8cbd6" font-size="20">private investment</text>
+    <text x="330" y="556" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">استثمار خاص</text>
+
+    <rect x="580" y="416" width="440" height="170" rx="16" fill="#122536" stroke="#e0a928" stroke-width="2"/>
+    <text x="800" y="486" text-anchor="middle" fill="#ffffff" font-size="46" font-weight="700">22 / 6,000</text>
+    <text x="800" y="524" text-anchor="middle" fill="#b8cbd6" font-size="20">neighbourhoods / homes planned</text>
+    <text x="800" y="556" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">حيًا / مسكن في المخطط</text>
+
+    <rect x="1050" y="416" width="440" height="170" rx="16" fill="#122536" stroke="#e74c3c" stroke-width="2"/>
+    <text x="1270" y="486" text-anchor="middle" fill="#ffffff" font-size="46" font-weight="700">25,000+</text>
+    <text x="1270" y="524" text-anchor="middle" fill="#b8cbd6" font-size="20">planned residents</text>
+    <text x="1270" y="556" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">ساكن في المخطط</text>
+
+    <rect x="110" y="606" width="440" height="170" rx="16" fill="#122536" stroke="#6d8798" stroke-width="2"/>
+    <text x="330" y="676" text-anchor="middle" fill="#ffffff" font-size="46" font-weight="700">15,000</text>
+    <text x="330" y="714" text-anchor="middle" fill="#b8cbd6" font-size="20">amphitheatre seats</text>
+    <text x="330" y="746" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">مقعدًا في المدرّج</text>
+
+    <rect x="580" y="606" width="440" height="170" rx="16" fill="#122536" stroke="#26a269" stroke-width="2"/>
+    <text x="800" y="676" text-anchor="middle" fill="#ffffff" font-size="46" font-weight="700">2015</text>
+    <text x="800" y="714" text-anchor="middle" fill="#b8cbd6" font-size="20">first families move in</text>
+    <text x="800" y="746" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">انتقال أولى العائلات</text>
+
+    <rect x="1050" y="606" width="440" height="170" rx="16" fill="#122536" stroke="#e0a928" stroke-width="2"/>
+    <text x="1270" y="668" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="700">No. 1 private</text>
+    <text x="1270" y="708" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="700">job creator, West Bank</text>
+    <text x="1270" y="746" text-anchor="middle" direction="rtl" unicode-bidi="bidi-override" fill="#dce9f1" font-size="20">أكبر مشغّل خاص في الضفة</text>
+  </g>
+
+  <text x="110" y="818" fill="#6d8798" font-family="Arial, sans-serif" font-size="20">Graphic: Times of Palestine — figures: Rawabi plan, TIME, CBS 60 Minutes</text>
+</svg>
