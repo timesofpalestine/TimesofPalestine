@@ -18,3 +18,4 @@ credit, licenseUrl). Remove an entry when the photo ships.
 | 8 | pa-prime-ministers-record-2026 | house timeline SVG | rights-cleared photo cover — a Commons frame of a PA cabinet sitting or the Muqata'a, with manifest entry |
 | 9 | tareq-abbas-businessman-2026 / tarek-aggad-apic-2026 | house board SVGs | rights-cleared portraits (Commons or press-kit) for both profiles, with manifest entries |
 | 10 | palestine-banks-owners-2026 / paltel-ooredoo-spectrum-2026 | house diagram SVGs | rights-cleared photos (a bank branch / a Jawwal or Ooredoo storefront or tower, Commons), with manifest entries |
+| 11 | tamim-albarghouti-in-jerusalem-2026 | house SVG lede (dome and closing verse) | rights-cleared portrait — Commons Category:Tamim al-Barghouti holds only a 159×186 px file, too small for a cover; seek a press/event photo (Kennedy Center, Georgetown CCAS, festival press kits) or a larger Commons upload, with manifest entry |
