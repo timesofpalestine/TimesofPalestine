@@ -97,7 +97,7 @@ def watch_events(items, now=None):
                 eid = "epi" + hashlib.md5(dedupe.encode()).hexdigest()[:9]
                 ts = int((it.get("date") or now).timestamp() * 1000)
                 pid, lang = it.get("pid"), it.get("lang", "en")
-                url = (f"https://timesofpalestine.com/{lang}/story/{pid}.html"
+                url = (f"https://www.timesofpalestine.com/{lang}/story/{pid}.html"
                        if pid else "")
                 headline = str(it.get("title") or "")
                 dek = str(it.get("dek") or "")[:400]

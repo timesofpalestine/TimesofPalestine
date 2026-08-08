@@ -60,7 +60,7 @@ TELEGRAM_CHANNEL_URL = "https://t.me/timesofpalestin"  # public delivery channel
 GOATCOUNTER_CODE = os.environ.get("ANALYTICS_GOATCOUNTER", "").strip()
 NEWSLETTER_URL = os.environ.get("NEWSLETTER_URL", "").strip()
 SUPPORT_URL = os.environ.get("SUPPORT_URL", "").strip()
-BASE_URL = "https://timesofpalestine.com"
+BASE_URL = "https://www.timesofpalestine.com"
 # Public corrections-ledger page (owner decision 2026-08-06): the page goes
 # live only once a READER-REQUESTED correction is on the record — none has
 # been yet, so it stays down. Flip to True to publish /{lang}/corrections.html

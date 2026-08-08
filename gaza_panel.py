@@ -584,17 +584,17 @@ def panel(lang):
                 "Health casualty toll, UN OCHA West Bank casualty and settler-attack "
                 "figures, and Palestinian prisoner counts, each attributed to the "
                 "primary source that published it."),
-            "url": f"https://timesofpalestine.com/{lang}/",
+            "url": f"https://www.timesofpalestine.com/{lang}/",
             "inLanguage": lang,
             "isAccessibleForFree": True,
             "creator": {"@type": "NewsMediaOrganization",
                         "name": "Times of Palestine",
-                        "url": "https://timesofpalestine.com/"},
+                        "url": "https://www.timesofpalestine.com/"},
             "distribution": [
                 {"@type": "DataDownload", "encodingFormat": "application/json",
-                 "contentUrl": "https://timesofpalestine.com/data/gaza-numbers.json"},
+                 "contentUrl": "https://www.timesofpalestine.com/data/gaza-numbers.json"},
                 {"@type": "DataDownload", "encodingFormat": "text/csv",
-                 "contentUrl": "https://timesofpalestine.com/data/gaza-numbers.csv"}],
+                 "contentUrl": "https://www.timesofpalestine.com/data/gaza-numbers.csv"}],
         }
         if as_of:
             ds["dateModified"] = as_of
