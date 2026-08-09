@@ -70,6 +70,27 @@ land in a specific window.
 - **Her Story pipeline:** keep at least one women-section topic in the
   active queue at all times (two added 2026-08-06).
 
+## Production backlogs (worked down by the daily editor cycle)
+
+- ✅ **Photoless originals — cleared 2026-08-09.** All 17 originals that
+  carried no `image:` header now have an explicit lede visual (subject art
+  where the house library had a match: the lobby ledger for
+  `joe-kent-israel-debate-2026`, the spectrum board for
+  `palestinian-4g-rollout-2027-gaza-2g`, the listed-companies board for
+  `who-profits-palestinian-economy-2026-07-30-05`, the scholarship map for
+  `turkey-indonesia-palestinian-student-funds-2026`; branded category
+  covers elsewhere). `build.py` now reports zero "no image: header"
+  warnings — keep it there: any new original ships with its own `image:`.
+  These stopgap SVG covers stay in the photo-conversion queue below.
+- **Photo conversion (open).** The charter's covers-are-photographs rule
+  (owner order 2026-08-03) still wants rights-cleared photographs on the
+  stories now carrying house SVGs. Convert opportunistically, always with a
+  `media-rights.json` entry.
+- **Paragraph pacing (open).** The build flags 152 paragraphs over ~70
+  words across the older originals. The renderer already splits them at
+  sentence boundaries for the reader, so this is a copy-desk backlog, not a
+  reader-facing fault — work a few files down per cycle, newest first.
+
 ## Blocked on the owner
 
 - **From the Archive weekly fixture (Sundays):** ready to launch the first
