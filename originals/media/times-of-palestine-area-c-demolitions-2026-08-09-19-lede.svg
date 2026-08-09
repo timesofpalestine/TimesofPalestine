@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Zero of 1,022: Palestinian housing permits refused in Area C in 2025</title>
+<desc id="dsc">Chart comparing 1,022 Palestinian housing applications in Area C of the occupied West Bank in 2025, of which none were approved, with 27,350 settlement housing units approved in the same year. A second chart shows demolition orders issued and carried out against Palestinian buildings: 376 of 1,175 in 2023, 862 of 946 in 2024, and 962 of 1,005 in 2025. Source data from Bimkom, OCHA and Peace Now.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="redbar" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#8a1f2d"/><stop offset="1" stop-color="#C8102E"/>
+</linearGradient>
+<linearGradient id="redbar2" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#6d1824"/><stop offset="1" stop-color="#8a1f2d"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="82" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="4" fill="#c7a86b">AREA C · OCCUPIED WEST BANK · 2025</text>
+<text x="90" y="148" font-family="'Source Serif 4',Georgia,serif" font-size="58" font-weight="700" fill="#f2eee8">None of 1,022 permits approved</text>
+<text x="90" y="192" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">Israeli planning authorities approved 0 Palestinian housing applications — and 27,350 settlement units</text>
+<text x="1530" y="82" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#59a97d">المنطقة (ج) — الضفة الغربية المحتلة</text>
+<text x="1530" y="192" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#f2eee8">لم يُعتمد أي من 1,022 طلب بناء فلسطيني</text>
+
+<line x1="90" y1="222" x2="1530" y2="222" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- LEFT SECTION: approvals -->
+<text x="90" y="268" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" font-weight="700" fill="#f2eee8">HOUSING APPROVED, 2025</text>
+<text x="90" y="296" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">الموافقات على البناء، 2025</text>
+
+<!-- Palestinian -->
+<text x="90" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">Palestinian applications in Area C</text>
+<rect x="90" y="366" width="23" height="54" fill="none" stroke="#c7a86b" stroke-width="2" stroke-dasharray="6 5"/>
+<line x1="90" y1="393" x2="113" y2="393" stroke="#c7a86b" stroke-width="1.5"/>
+<text x="132" y="400" font-family="'Source Serif 4',Georgia,serif" font-size="40" font-weight="700" fill="#c7a86b">1,022 filed</text>
+<text x="400" y="400" font-family="'Source Serif 4',Georgia,serif" font-size="40" font-weight="700" fill="#C8102E">0 approved</text>
+<text x="90" y="440" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">طلبات فلسطينية: 1,022 — الموافقات: صفر</text>
+
+<!-- Settlements -->
+<text x="90" y="500" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">Settlement housing units approved</text>
+<rect x="90" y="514" width="620" height="54" fill="url(#redbar)"/>
+<text x="106" y="552" font-family="'Source Serif 4',Georgia,serif" font-size="38" font-weight="700" fill="#f2eee8">27,350</text>
+<text x="90" y="596" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">وحدات سكنية استيطانية مصادق عليها</text>
+<text x="710" y="552" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8" opacity="0.75">bars to scale</text>
+
+<line x1="790" y1="252" x2="790" y2="612" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- RIGHT SECTION: demolitions -->
+<text x="850" y="268" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" font-weight="700" fill="#f2eee8">DEMOLITION ORDERS ISSUED / CARRIED OUT</text>
+<text x="850" y="296" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">أوامر الهدم الصادرة / المنفذة</text>
+
+<!-- legend -->
+<rect x="850" y="316" width="26" height="14" fill="none" stroke="#aaa9a5" stroke-width="2"/>
+<text x="886" y="328" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">orders issued</text>
+<rect x="1010" y="316" width="26" height="14" fill="#8a1f2d"/>
+<text x="1046" y="328" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">carried out</text>
+
+<!-- 2023 -->
+<text x="850" y="378" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#f2eee8">2023</text>
+<rect x="930" y="352" width="420" height="34" fill="none" stroke="#6a6a68" stroke-width="2"/>
+<rect x="930" y="352" width="134" height="34" fill="url(#redbar2)"/>
+<text x="1370" y="378" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">376 of 1,175</text>
+
+<!-- 2024 -->
+<text x="850" y="448" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#f2eee8">2024</text>
+<rect x="930" y="422" width="338" height="34" fill="none" stroke="#6a6a68" stroke-width="2"/>
+<rect x="930" y="422" width="308" height="34" fill="url(#redbar2)"/>
+<text x="1370" y="448" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">862 of 946 · 91%</text>
+
+<!-- 2025 -->
+<text x="850" y="518" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#c7a86b">2025</text>
+<rect x="930" y="492" width="359" height="34" fill="none" stroke="#6a6a68" stroke-width="2"/>
+<rect x="930" y="492" width="344" height="34" fill="url(#redbar)"/>
+<text x="1370" y="518" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">962 of 1,005 · 96%</text>
+
+<text x="850" y="580" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Palestinian buildings, Area C — Bimkom data</text>
+
+<line x1="90" y1="628" x2="1530" y2="628" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- BOTTOM CALLOUTS -->
+<g>
+<rect x="90" y="660" width="335" height="152" fill="#17181b" stroke="#2e2f33" stroke-width="2"/>
+<rect x="90" y="660" width="6" height="152" fill="#8a1f2d"/>
+<text x="118" y="722" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">1,151</text>
+<text x="118" y="752" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">structures demolished, West Bank,</text>
+<text x="118" y="772" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">1 Jan – 1 Sep 2025 (OCHA)</text>
+<text x="118" y="798" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">منشأة هُدمت</text>
+</g>
+
+<g>
+<rect x="450" y="660" width="335" height="152" fill="#17181b" stroke="#2e2f33" stroke-width="2"/>
+<rect x="450" y="660" width="6" height="152" fill="#8a1f2d"/>
+<text x="478" y="722" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">274</text>
+<text x="478" y="752" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">of them inhabited homes;</text>
+<text x="478" y="772" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">nearly 1,300 people displaced</text>
+<text x="478" y="798" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">منها منازل مأهولة</text>
+</g>
+
+<g>
+<rect x="810" y="660" width="335" height="152" fill="#17181b" stroke="#2e2f33" stroke-width="2"/>
+<rect x="810" y="660" width="6" height="152" fill="#c7a86b"/>
+<text x="838" y="722" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">84</text>
+<text x="838" y="752" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">schools under demolition orders,</text>
+<text x="838" y="772" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">serving nearly 13,000 students</text>
+<text x="838" y="798" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">مدرسة مهددة بالهدم</text>
+</g>
+
+<g>
+<rect x="1170" y="660" width="335" height="152" fill="#17181b" stroke="#2e2f33" stroke-width="2"/>
+<rect x="1170" y="660" width="6" height="152" fill="#286344"/>
+<text x="1198" y="722" font-family="'Source Serif 4',Georgia,serif" font-size="42" font-weight="700" fill="#f2eee8">27 of ~240</text>
+<text x="1198" y="752" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Area C villages have master plans,</text>
+<text x="1198" y="772" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">covering about 0.5% of Area C</text>
+<text x="1198" y="798" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">قرية لديها مخططات هيكلية</text>
+</g>
+
+<text x="90" y="862" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#6a6a68">Sources: Bimkom; OCHA; Peace Now · Graphic: Times of Palestine</text>
+<text x="1530" y="862" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#6a6a68">المصدر: بمكوم، أوتشا، السلام الآن</text>
+</svg>
