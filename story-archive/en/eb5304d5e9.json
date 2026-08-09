@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2166609.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/three-palestinians-killed-in-ongoing-israeli-violations-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-09T07:17:07+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "eb5304d5e9",
- "score": 56.54,
+ "score": 56.41,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
