@@ -28,6 +28,7 @@ from pathlib import Path
 from urllib.parse import quote, urljoin, urlsplit
 from zoneinfo import ZoneInfo
 
+import story_archive
 from editorial import (
     apply_review_gate, cluster_duplicates, load_reviews,
     review_gate_mode, sanitized_review_queue,
@@ -4671,18 +4672,73 @@ def main():
         CSS + __import__("longform").CSS + __import__("gaza_panel").PANEL_CSS,
         encoding="utf-8",
     )
+    archived_all = []  # both languages, for copy_media below
     for lang, items in (("en", en_items), ("ar", ar_items)):
         import shutil
         shutil.rmtree(dist / lang / "story", ignore_errors=True)  # drop stale story pages
         (dist / lang / "story").mkdir(parents=True, exist_ok=True)
+        news = [r for r in items if r["cat"] != "social"]
+        rail = ([r for r in news if PALESTINE_RX.search(f"{r['title']} {r['dek']}")] +
+                [r for r in news if not PALESTINE_RX.search(f"{r['title']} {r['dek']}")])[:11]
+        # Permalink permanence (owner order 2026-08-09): stories that left the
+        # live feeds keep their published URLs — re-rendered from the committed
+        # story-archive/ ledger, never re-entering the live surfaces. Rendered
+        # first so sections and the search index only reference pages that
+        # actually shipped. Fail-open per story: one stale record must never
+        # stop the live newsroom, and a page that would trip today's
+        # validators is skipped loudly, not shipped.
+        arch_related = diversify(sorted(
+            items, key=lambda r: r["score"], reverse=True)[:8])[:8]
+        archived = []
+        for it in story_archive.load(
+                lang, exclude={i["pid"] for i in items} | RETRACTED_PIDS):
+            try:
+                attach_corrections(it)  # late corrections reach archived pages too
+                # Rights-strict mode (opt-in, default OFF) never ships
+                # unrighted remote hotlinks — mirror the live pipeline for
+                # archived pages, without re-fetching every old image.
+                if (remote_media_mode() != "source"
+                        and is_http_url(it.get("image") or "")
+                        and media_rights_for(it["image"], MEDIA_RIGHTS) is None):
+                    it["image"] = None
+                    it["media"] = None
+                story_html = render_story(it, lang, arch_related, rail, built_at)
+                errors = []
+                _vb = __import__("validate_build")
+                rel = f"{lang}/story/{it['pid']}"
+                _vb.check_editorial_hygiene(rel, story_html, errors)
+                _vb.check_body_starts_clean(rel, story_html, errors)
+                if errors:
+                    raise PublishingError("; ".join(errors))
+                (dist / lang / "story" / story_file_name(it["title"], it["pid"])).write_text(
+                    story_html, encoding="utf-8")
+                # The bare-pid path IS the link that went out — keep it resolving.
+                (dist / lang / "story" / f"{it['pid']}.html").write_text(
+                    story_redirect_stub(it, lang), encoding="utf-8")
+                archived.append(it)
+            except Exception as exc:
+                print(f"::warning::story archive: could not re-render "
+                      f"{lang}:{it['pid']} ({type(exc).__name__}: {exc})")
+        if archived:
+            print(f"  ✓ archive: {len(archived)} past {lang} story pages kept resolving")
+        archived_all.extend(archived)
         for stale in (dist / lang).glob("section-*.html"):  # archives rebuild fresh too
             stale.unlink()
         (dist / lang / "index.html").write_text(render_page(lang, items, built_at), encoding="utf-8")
-        for cat in sorted({it["cat"] for it in items}):
+        live_cats = {it["cat"] for it in items}
+        for cat in sorted(live_cats):
             cat_items = sorted((i2 for i2 in items if i2["cat"] == cat),
                                key=lambda r: r["date"], reverse=True)
             more_items = sorted((i2 for i2 in items if i2["cat"] != cat),
                                 key=lambda r: r["date"], reverse=True)[:8]
+            (dist / lang / f"section-{cat}.html").write_text(
+                render_section_page(lang, cat, cat_items, built_at,
+                                    more_items=more_items), encoding="utf-8")
+        # Archived stories breadcrumb to their section page; a section that no
+        # longer has live coverage still renders, filled from the archive.
+        for cat in sorted({a["cat"] for a in archived} - live_cats):
+            cat_items = [a for a in archived if a["cat"] == cat]
+            more_items = sorted(items, key=lambda r: r["date"], reverse=True)[:8]
             (dist / lang / f"section-{cat}.html").write_text(
                 render_section_page(lang, cat, cat_items, built_at,
                                     more_items=more_items), encoding="utf-8")
@@ -4694,12 +4750,10 @@ def main():
                 render_corrections_page(lang, items, built_at), encoding="utf-8")
         (dist / lang / "search-index.json").write_text(json.dumps(
             [{"t": it["title"], "u": story_url_path(it["title"], it["pid"], lang),
-              "d": truncate(it["dek"], 160),
-              "c": STR[lang]["sections"].get(it["cat"], it["cat"])} for it in items],
+              "d": truncate(it.get("dek") or "", 160),
+              "c": STR[lang]["sections"].get(it["cat"], it["cat"])}
+             for it in items + archived],
             ensure_ascii=False), encoding="utf-8")
-        news = [r for r in items if r["cat"] != "social"]
-        rail = ([r for r in news if PALESTINE_RX.search(f"{r['title']} {r['dek']}")] +
-                [r for r in news if not PALESTINE_RX.search(f"{r['title']} {r['dek']}")])[:11]
         for it in items:
             same_cat = [r for r in items if r is not it and r["cat"] == it["cat"]]
             others = [r for r in items if r is not it and r["cat"] != it["cat"]]
@@ -4712,13 +4766,16 @@ def main():
             # Every link ever shared used the bare-pid path — keep it resolving.
             (dist / lang / "story" / f"{it['pid']}.html").write_text(
                 story_redirect_stub(it, lang), encoding="utf-8")
+            story_archive.save(it)  # the permalink outlives the news cycle
         (dist / lang / "rss.xml").write_text(render_rss(lang, items, built_at), encoding="utf-8")
     (dist / "sitemap.xml").write_text(
         render_sitemap((("en", en_items), ("ar", ar_items)), built_at), encoding="utf-8")
     (dist / "robots.txt").write_text(ROBOTS_TXT, encoding="utf-8")
     __import__("seo_extras").write_extras(
         dist, (("en", en_items), ("ar", ar_items)), built_at, BASE_URL, HEALTH)
-    __import__("longform").copy_media(dist, en_items + ar_items)
+    # Archived stories count too: their pages still reference their /media/
+    # assets, and a kept permalink with a dead infographic is half a page.
+    __import__("longform").copy_media(dist, en_items + ar_items + archived_all)
     # Front-page furniture referenced from index cards (not from any story
     # file) ships explicitly — copy_media only walks story-referenced media.
     # The ENTIRE category-cover family ships unconditionally: lede_fallback_attrs
