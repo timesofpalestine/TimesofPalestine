@@ -1861,6 +1861,49 @@ class FrontPageDisciplineTests(unittest.TestCase):
         top_block = homepage.split('<aside class="latest">', 1)[0]
         self.assertNotIn("power cuts", top_block.split("hero-overlay", 1)[1])
 
+    def test_hero_rotates_among_comparable_top_stories_across_builds(self):
+        # Owner report 2026-08-09: the same lead sat on top for hours while
+        # the site rebuilt every 10 minutes. Among fresh stories of comparable
+        # weight the lead advances with the build clock — and stays
+        # deterministic for a given build moment.
+        base = datetime(2026, 8, 9, 15, 0, tzinfo=timezone.utc)
+        a = self._item(
+            title="Israeli airstrike kills twelve Palestinians in Gaza City homes",
+            cat="gaza", score=80,
+            date=base - timedelta(hours=2), pid="rotgaza001")
+        b = self._item(
+            title="Israeli forces raid Nablus in Palestine overnight on Friday",
+            cat="westbank", score=70,
+            date=base - timedelta(hours=3), pid="rotwb00001")
+        leads = set()
+        for n in range(3):
+            page = build.render_page("en", [a, b], base + timedelta(minutes=10 * n))
+            overlay = page.split("hero-overlay", 1)[1][:400]
+            leads.add("airstrike" if "airstrike" in overlay else "Nablus")
+        self.assertEqual(leads, {"airstrike", "Nablus"})
+        first = build.render_page("en", [a, b], base)
+        again = build.render_page("en", [a, b], base)
+        self.assertEqual(first.split("hero-overlay", 1)[1][:400],
+                         again.split("hero-overlay", 1)[1][:400])
+
+    def test_minor_story_never_rotates_into_the_lead(self):
+        # Rotation is among comparable stories only: an item under half the
+        # leader's score must not take the top slot on any build.
+        base = datetime(2026, 8, 9, 15, 0, tzinfo=timezone.utc)
+        major = self._item(
+            title="Israeli airstrike kills twelve Palestinians in Gaza City homes",
+            cat="gaza", score=80,
+            date=base - timedelta(hours=2), pid="rotmaj0001")
+        minor = self._item(
+            title="Ramallah municipality opens Palestine flower show for the season",
+            cat="westbank", score=15,
+            date=base - timedelta(minutes=10), pid="rotmin0001")
+        for n in range(4):
+            page = build.render_page("en", [major, minor], base + timedelta(minutes=10 * n))
+            overlay = page.split("hero-overlay", 1)[1][:400]
+            self.assertIn("airstrike", overlay)
+            self.assertNotIn("flower show", overlay)
+
     def test_hero_prefers_strongest_story_in_freshest_window(self):
         # Within the freshest window the hero ranks by editorial score —
         # importance leads, not simply the last item off the wire.
