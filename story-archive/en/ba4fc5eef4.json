@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-rejects-trumps-15-point-plan-gaza-says-netanyahu",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/08/israel-rejects-trumps-15-point-plan-gaza-pm-netanyahu-says",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "ba4fc5eef4",
- "score": 49.88,
+ "score": 49.77,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
