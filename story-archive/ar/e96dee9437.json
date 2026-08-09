@@ -1,0 +1,44 @@
+{
+ "brief": "استهدف قصف مدفعي محيط شارع الطينة في الجزء الجنوبي من مدينة خانيونس بقطاع غزة، بحسب مصادر محلية. وتأتي هذه الضربات في سياق التصعيد العسكري المستمر على المحافظات الجنوبية للقطاع.\n\nوتشهد منطقة خانيونس وما حولها قصفاً متكرراً منذ فترة، طال سكاناً مدنيين في عدة مناسبات سابقة. ولم تُعلن حتى الآن حصيلة واضحة للقصف أو تفاصيل عن حجم الأضرار والإصابات من جراء الاستهداف.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82336",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314307",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/727930",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-09T22:01:29+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82336",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e96dee9437",
+ "score": 63.89,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "قصف مدفعي يستهدف محيط شارع الطينة جنوبي خانيونس"
+}
