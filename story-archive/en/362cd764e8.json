@@ -6,19 +6,13 @@
    "article": "original:settler-attacks-week-westbank-2026-08-07.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/colonizer-attacks-escalate-across-west-bank-saturday",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.972mag.com/tuba-pogrom-israeli-settlers-masafer-yatta",
    "name": "+972 Magazine",
    "url": "https://www.972mag.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-07T23:50:00+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "362cd764e8",
- "score": 95.16,
+ "score": 95.13,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
