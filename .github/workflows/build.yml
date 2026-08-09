@@ -40,6 +40,7 @@ jobs:
         with:
           path: |
             briefs-cache.json
+            remote-image-cache.json
             telegram-delivery.json
             webhook-delivery.json
           key: newsroom-state-${{ github.run_id }}
@@ -117,6 +118,7 @@ jobs:
         with:
           path: |
             briefs-cache.json
+            remote-image-cache.json
             telegram-delivery.json
             webhook-delivery.json
           key: newsroom-state-${{ github.run_id }}

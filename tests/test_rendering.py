@@ -3,7 +3,9 @@ import json
 import re
 import sys
 import tempfile
+import time
 import unittest
+import urllib.error
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest import mock
@@ -730,6 +732,156 @@ class OriginalRemoteLedeTests(unittest.TestCase):
             build.attach_media(
                 record, "https://example.com/random-photo.jpg",
                 local_original=True)
+
+
+class _FakeImageResponse:
+    """Minimal stand-in for the ranged-GET response remote_image_ok reads."""
+
+    def __init__(self, status=206, ctype="image/jpeg", length="184000"):
+        self.status = status
+        self.headers = {"Content-Type": ctype, "Content-Range": f"bytes 0-2047/{length}"}
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *_exc):
+        return False
+
+
+class RemoteImageVerificationTests(unittest.TestCase):
+    """Wikimedia answers a burst of portrait checks with 429 for a varying
+    subset each run (owner report 2026-08-08). A rate limit is not a dead
+    image: a URL that verified on a recent build keeps its photo, while a
+    genuinely missing file still demotes to the fallback chain at once."""
+
+    URL = ("https://commons.wikimedia.org/wiki/Special:FilePath/"
+           "Mahmoud%20Abbas%20May%202018.jpg?width=640")
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.cache = Path(self._tmp.name) / "remote-image-cache.json"
+        patches = [
+            mock.patch.object(build, "REMOTE_IMAGE_CACHE", self.cache),
+            mock.patch.object(build, "is_public_http_url", return_value=True),
+            mock.patch.object(build.time, "sleep"),   # no real backoff in tests
+        ]
+        for patch in patches:
+            patch.start()
+            self.addCleanup(patch.stop)
+        self._reset_state()
+        self.addCleanup(self._reset_state)
+
+    def _reset_state(self):
+        build.remote_image_ok.cache_clear()
+        build._remote_image_seen = None
+        build._remote_image_dirty = False
+        build._throttle_next.clear()
+
+    def _warm_cache(self, url=None, age=None):
+        # Default age is past the freshness window, so the probe still runs and
+        # the memory is exercised as a fallback rather than a short-circuit.
+        if age is None:
+            age = build.REMOTE_IMAGE_FRESH + 60
+        self.cache.write_text(json.dumps(
+            {"verified": {url or self.URL: time.time() - age}}), encoding="utf-8")
+
+    @staticmethod
+    def _raises(status):
+        def opener(request, timeout=8):
+            raise urllib.error.HTTPError(
+                request.full_url, status, "rate limited", {}, None)
+        return opener
+
+    def test_rate_limited_url_keeps_the_photo_verified_on_an_earlier_build(self):
+        self._warm_cache()
+        with mock.patch.object(build, "safe_urlopen", self._raises(429)):
+            self.assertTrue(build.remote_image_ok(self.URL))
+
+    def test_timeout_keeps_the_photo_verified_on_an_earlier_build(self):
+        self._warm_cache()
+
+        def opener(request, timeout=8):
+            raise TimeoutError("read timed out")
+
+        with mock.patch.object(build, "safe_urlopen", opener):
+            self.assertTrue(build.remote_image_ok(self.URL))
+
+    def test_recent_verification_skips_the_network_check_entirely(self):
+        # The burst of repeat checks is what earns the 429: a portrait verified
+        # minutes ago is not re-fetched by the next ten-minute build.
+        self._warm_cache(age=120)
+
+        def opener(request, timeout=8):
+            raise AssertionError("a fresh verification must not hit the network")
+
+        with mock.patch.object(build, "safe_urlopen", opener):
+            self.assertTrue(build.remote_image_ok(self.URL))
+
+    def test_rate_limited_url_with_no_memory_still_falls_back(self):
+        with mock.patch.object(build, "safe_urlopen", self._raises(429)):
+            self.assertFalse(build.remote_image_ok(self.URL))
+
+    def test_expired_verification_no_longer_covers_a_rate_limit(self):
+        self._warm_cache(age=build.REMOTE_IMAGE_TTL + 60)
+        with mock.patch.object(build, "safe_urlopen", self._raises(429)):
+            self.assertFalse(build.remote_image_ok(self.URL))
+
+    def test_rate_limited_head_does_not_rescue_a_missing_file(self):
+        # The ranged GET is the decisive probe: a 404 there demotes even when
+        # HEAD was rate-limited a moment earlier.
+        self._warm_cache()
+        calls = {"n": 0}
+
+        def opener(request, timeout=8):
+            calls["n"] += 1
+            raise urllib.error.HTTPError(
+                request.full_url, 429 if calls["n"] % 2 else 404, "mixed", {}, None)
+
+        with mock.patch.object(build, "safe_urlopen", opener):
+            self.assertFalse(build.remote_image_ok(self.URL))
+
+    def test_missing_file_demotes_at_once_and_forgets_the_verification(self):
+        self._warm_cache()
+        with mock.patch.object(build, "safe_urlopen", self._raises(404)):
+            self.assertFalse(build.remote_image_ok(self.URL))
+        build.save_remote_image_cache()
+        self.assertEqual(
+            json.loads(self.cache.read_text(encoding="utf-8"))["verified"], {})
+
+    def test_live_image_is_remembered_for_the_next_build(self):
+        with mock.patch.object(build, "safe_urlopen",
+                               lambda request, timeout=8: _FakeImageResponse()):
+            self.assertTrue(build.remote_image_ok(self.URL))
+        build.save_remote_image_cache()
+        self.assertIn(
+            self.URL, json.loads(self.cache.read_text(encoding="utf-8"))["verified"])
+
+    def test_rate_limited_check_is_retried_once_before_it_counts(self):
+        # HEAD and GET both 429 on the first probe; the retry finds the image,
+        # so a cold URL survives a passing rate limit without any memory.
+        calls = {"n": 0}
+
+        def opener(request, timeout=8):
+            calls["n"] += 1
+            if calls["n"] <= 2:
+                raise urllib.error.HTTPError(
+                    request.full_url, 429, "slow down", {}, None)
+            return _FakeImageResponse()
+
+        with mock.patch.object(build, "safe_urlopen", opener):
+            self.assertTrue(build.remote_image_ok(self.URL))
+        self.assertGreater(calls["n"], 2)
+
+    def test_wikimedia_hosts_are_paced_and_given_a_longer_timeout(self):
+        self.assertEqual(build.throttle_key(self.URL), "wikimedia.org")
+        self.assertEqual(build.throttle_key("https://images.example.com/a.jpg"), "")
+        seen = []
+        with mock.patch.object(build, "safe_urlopen",
+                               lambda request, timeout=8: seen.append(timeout)
+                               or _FakeImageResponse()):
+            build.remote_image_ok(self.URL)
+        self.assertEqual(seen[0], build.THROTTLED_TIMEOUT)
 
 
 class RunningStoryDedupeTests(unittest.TestCase):
