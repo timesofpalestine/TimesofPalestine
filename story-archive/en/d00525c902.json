@@ -1,0 +1,32 @@
+{
+ "brief": "The Palestinian Journalists Syndicate recorded 108 attacks on Palestinian journalists during July, Al Jazeera English reported. The assaults—spanning arrests, detention, and physical violence—mark an escalation in threats against media workers documenting the conflict across Gaza and the West Bank.\n\nThe syndicate's latest tally underscores the deteriorating safety conditions for press coverage. More than 270 journalists have been killed in Gaza since October 2023, with numerous others wounded or displaced. The systematic targeting of reporters has severely restricted press freedom and limited documentation of the humanitarian crisis and battlefield developments on the ground.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/9/union-reports-108-attacks-on-palestinian-journalists-in-july?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-09T23:01:25+00:00",
+ "dek": "Palestinian Journalists Syndicate exposes rising threats, with over 270 journalists killed in Gaza since October 2023.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a2a690d89d2-1781164301.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/9/union-reports-108-attacks-on-palestinian-journalists-in-july?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/9/union-reports-108-attacks-on-palestinian-journalists-in-july?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d00525c902",
+ "score": 63.64,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinian Journalists Syndicate documents 108 attacks on reporters in July"
+}
