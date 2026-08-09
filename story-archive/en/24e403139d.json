@@ -7,6 +7,12 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://pchrgaza.org/israeli-extermination-of-palestinian-families-continues-by-targeting-homes-and-civilian-gatherings-in-gaza-strip",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": false
   }
  ],
  "date": "2026-08-02T20:45:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "24e403139d",
- "score": 83.97999999999999,
+ "score": 83.87,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
