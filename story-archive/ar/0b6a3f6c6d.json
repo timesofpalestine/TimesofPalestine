@@ -1,0 +1,38 @@
+{
+ "brief": "أطلقت القوات الإسرائيلية نيراناً في منطقة قرب مسجد المحطة بشارع يافا في حي التفاح بشمال شرقي مدينة غزة، فأصابت عدداً من الأشخاص بحسب \"غزة الآن\".\n\nجاء الحادث في منطقة سكنية مأهولة بالسكان، وسط استمرار الاشتباكات في أنحاء متفرقة من المدينة. ولم تُحدّد التقارير الأولية عدد الجرحى بدقة أو درجات الإصابات.\n\nوشهدت مناطق متعددة من غزة خلال الأيام الأخيرة عمليات إطلاق نار واشتباكات بين القوات الإسرائيلية والمدنيين.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82329",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/727903",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-09T19:45:20+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82329",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0b6a3f6c6d",
+ "score": 63.88,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "قوات إسرائيلية تطلق نيراناً على منطقة سكنية بشمال شرقي غزة"
+}

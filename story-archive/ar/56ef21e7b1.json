@@ -1,0 +1,44 @@
+{
+ "brief": "قصفت مدفعية الاحتلال الإسرائيلي شرقي مخيم البريج وسط قطاع غزة، حسبما أفادت شبكة قدس. ولم تتوفر معلومات فورية عن الخسائر البشرية أو الأضرار الناجمة عن القصف.\n\nيأوي المخيم عشرات آلاف النازحين من سكان محافظات غزة الذين فرّوا من القصف المكثّف الذي يستمر على مناطق أخرى من القطاع. والبريج يشهد منذ أسابع تصعيداً في الغارات والقصف المدفعي على مناطق سكنية مختلفة.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/QudsN/727896",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314285",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/184623/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%A8%D8%A7%D9%84%D8%B1%D8%B5%D8%A7%D8%B5-%D9%88%D8%B3%D8%B7-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%AA%D8%B7%D8%A7%D9%84-%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D9%85%D8%AA%D9%81%D8%B1%D9%82%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-09T18:39:57+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social.svg",
+ "lang": "ar",
+ "link": "https://t.me/QudsN/727896",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "56ef21e7b1",
+ "score": 63.13,
+ "source": "شبكة قدس · تيليغرام",
+ "source_id": "tg-qudsn",
+ "source_url": "https://t.me/QudsN",
+ "title": "مدفعية الاحتلال تقصف شرقي مخيم البريج"
+}
