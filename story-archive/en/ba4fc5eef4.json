@@ -1,0 +1,44 @@
+{
+ "brief": "Israel has rejected Donald Trump's 15-point Board of Peace plan for Gaza, according to Al Jazeera English. The proposal represents one of the latest international diplomatic efforts aimed at resolving the ongoing conflict in the territory.\n\nThe rejection marks a significant moment in discussions surrounding potential pathways forward for Gaza. Israeli officials have not yet publicly detailed their specific objections to the individual points within Trump's framework, leaving the precise grounds for the dismissal unclear at this stage.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/9/israel-rejects-donald-trumps-gaza-board-of-peace-plan?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israel-rejects-trumps-15-point-plan-gaza-pm-netanyahu-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/161902/%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%8A%D8%AA%D8%AD%D8%AF%D9%89-%D8%AE%D8%B7%D8%A9-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%84%D8%A7-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D9%88%D9%84%D8%A7-%D8%AF%D9%88%D9%84%D8%A9-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%B9%D9%87%D8%AF%D9%8A",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-09T12:51:34+00:00",
+ "dek": "Israel has rejected Donald Trump’s 15-point Board of Peace plan for Gaza.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786279862.jpg?resize=1647%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/9/israel-rejects-donald-trumps-gaza-board-of-peace-plan?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/9/israel-rejects-donald-trumps-gaza-board-of-peace-plan?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ba4fc5eef4",
+ "score": 49.88,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel rejects Trump's 15-point Gaza peace plan"
+}

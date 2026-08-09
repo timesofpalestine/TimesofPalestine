@@ -1,0 +1,32 @@
+{
+ "brief": "In forty-one minutes before dawn on Wednesday, an attacker emptied 1,196 bitcoin addresses belonging to users of the Coldcard — one of the most trusted hardware wallets in bitcoin — sweeping roughly 1,082 bitcoin, around 70 million dollars at current prices, in a single automated run between 01:10 and 01:51 UTC on 30 July, according to on-chain analyses reported by CoinDesk and The Hacker News. The theft is among the largest ever traced to a hardware-wallet defect, and its cause was not a hack of any single device but a mathematical failure quietly shipped in firmware more than five years ago.\n\n![The Coldcard entropy failure](times-of-palestine-coldcard-entropy-2026.svg)\n\nThe flaw, disclosed in a security advisory by Coldcard's maker Coinkite, sat in the way affected devices generated the \"seed\" — the master secret from which every key and address in a wallet is derived. Beginning with firmware version 4.0.0, released in March 2021, affected devices could skip their dedicated hardware randomness chip and fall back to a predictable software substitute, producing seeds with roughly 72 bits of effective randomness instead of the intended 128. In cryptography that difference is not a detail: it moved the cost of guessing a wallet's keys from physically impossible to merely industrial. Someone did the industrial work, precomputed the vulnerable key space, and took everything reachable in one sweep — with security researchers cited by Bitcoin Magazine suggesting AI-assisted tooling likely accelerated the search.\n\nCoinkite's advisory covers seeds generated on Mk3 devices running firmware 4.0.1 through 4.1.9, and on Mk4, Mk5 and Q devices before versions 5.6.0 and 1.5.0Q respectively. The company's chief executive, Rodolfo Novak, accepted full responsibility in a statement on 31 July: \"I'm sorry and I'm devastated. Our team is heartbroken.\" Fixed firmware is out, but the advisory is blunt on the point every affected user must understand: what matters is the firmware that existed when your seed was created, not the firmware on the device today. Updating does not repair a seed that was born weak. The only remedy is to update, generate an entirely new seed on the fixed firmware — or with the device's dice-roll option, which takes randomness from physical dice you throw yourself — and move all funds to the new wallet.\n\nThis section has reported for months on why self-custody matters in Palestine specifically: banks in Gaza that froze accounts and died with their branches, cash brokers taking forty per cent, a West Bank drowning in shekels it cannot deposit. For Palestinians who answered that failure by holding their own keys — some of them on Coldcards — this week's theft is not an argument to hand money back to intermediaries; it is an operational instruction. Check which device and firmware generated your seed. If it falls in the affected ranges, treat the wallet as compromised, create a new seed on updated firmware, and move your balance now, before someone else's precomputation reaches it. Wallets whose seeds were created outside the affected ranges, or with dice rolls, are not implicated.\n\nThe larger lesson cuts both ways, and honest reporting owes readers both halves. Skeptics, CoinDesk notes, are already arguing the episode will push savers toward custodial products and ETFs. But the failure here was not the idea of self-custody — it was a vendor's broken randomness, found, disclosed and fixed in the open, with every affected address auditable on a public ledger. No Palestinian bank depositor whose branch was destroyed got an advisory, a firmware fix and a public accounting within forty-eight hours. Self-custody survived its worst week in years the way open systems do: visibly. The people it protects — including the people this newspaper serves — are safest when they treat it as a discipline, not a device.",
+ "cat": "bitcoin",
+ "corroborating_sources": [
+  {
+   "article": "original:coldcard-entropy-theft-2026-08.en",
+   "name": "Times of Palestine",
+   "url": "",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-01T22:40:00+00:00",
+ "dek": "In forty-one minutes before dawn on Wednesday, an attacker emptied 1,196 bitcoin addresses belonging to users of the Coldcard — one of the most trusted hardware wallets in bitcoin — sweeping roughly 1,082 bitcoin, around 70 million dollars at current prices,…",
+ "image": "/media/times-of-palestine-coldcard-entropy-2026.svg",
+ "lang": "en",
+ "link": "original:coldcard-entropy-theft-2026-08.en",
+ "max_age_hours": 720.0,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": true,
+ "pid": "c1d37f9e61",
+ "score": 105.33,
+ "source": "Times of Palestine",
+ "source_id": "top-original",
+ "source_url": "",
+ "title": "A single attacker drains 1,082 bitcoin from flawed Coldcard wallets"
+}

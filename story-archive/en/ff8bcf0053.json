@@ -1,0 +1,32 @@
+{
+ "brief": "Palestinians know better than almost anyone on earth what it means for the internet to disappear. Gaza has endured repeated communications blackouts — telecom infrastructure destroyed or switched off, families unable to learn whether relatives were alive, paramedics unable to be dispatched, journalists unable to file. In the West Bank, connectivity runs through infrastructure Palestinians do not control. When the network is a weapon, the ability to communicate without it becomes a matter of survival.\n\nThat is why a small app called Bitchat deserves Palestinian attention. Launched in July 2025 by Jack Dorsey, the co-founder of Twitter, Bitchat is an encrypted messaging app that works with no internet, no SIM card, no phone number, no account, and no servers. Phones connect directly to each other over Bluetooth, forming a mesh: each device relays messages to the next, hop by hop, across a range of roughly 100 to 300 meters per link. The more people run it, the farther the mesh reaches.\n\nThe design has two properties that matter in a blackout. First, there is nothing to shut down — no tower, no cable, no company that can be ordered to switch off service. As long as phones have battery, the network exists wherever people are gathered. Second, there is nothing to subpoena — no phone number, no email, no central log. Users appear only as a chosen nickname, and messages are end-to-end encrypted. A store-and-forward system means a message can wait, encrypted, on nearby devices until its recipient comes into range.\n\nThe limitations are real and worth stating plainly. A Bluetooth mesh is a neighborhood technology, not a replacement for the internet: it works where people are dense — a refugee camp, a market street, a protest, a university — and thins out where they are not. It is young software, and no tool should be treated as unbreakable; careful users layer their protections. But in the moments Palestinians know too well — the blackout, the raid, the severed cable — a neighborhood network is precisely what is missing.\n\nBitchat also carries a seed of the financial-freedom story this section follows. The app has experimented with sending bitcoin over the mesh itself, using a privacy technology called ecash — value moving phone to phone, over Bluetooth, with no bank and no connection. It is early and experimental. But set it beside Gaza's collapsed banks, frozen accounts, and 40 percent cash-broker fees, and the direction is unmistakable: tools that let people communicate and transact when every official system has failed them.\n\nFreedom technology is a family: money that cannot be frozen, messages that cannot be silenced, networks that cannot be switched off. Bitchat is free, open source, and runs on ordinary phones. For a people whose connectivity has been used against them, it belongs in the toolkit — before the next blackout, not after.\n\n## Get it from the official sources only\n\nBitchat is a free download, and for a tool readers may stake safety on, the source matters. On iPhone and iPad it is [\"bitchat mesh\" on the App Store](https://apps.apple.com/app/bitchat-mesh/id6748219622), published by Permissionless Technology. On Android it is [the APK from the official GitHub releases](https://github.com/permissionlesstech/bitchat-android/releases/latest) — not Google Play, which hosts look-alike apps that are not Dorsey's bitchat. Download from these two sources only, and pass the same warning along when you share the app. Times of Palestine now follows bitchat's development worldwide as a standing beat, and the guidance in these pages will stay current as the app evolves.",
+ "cat": "bitcoin",
+ "corroborating_sources": [
+  {
+   "article": "original:bitchat.en",
+   "name": "Times of Palestine",
+   "url": "",
+   "verified": false
+  }
+ ],
+ "date": "2026-07-28T18:30:00+00:00",
+ "dek": "Palestinians know better than almost anyone on earth what it means for the internet to disappear. Gaza has endured repeated communications blackouts — telecom infrastructure destroyed or switched off, families unable to learn whether relatives were alive,…",
+ "image": "/media/times-of-palestine-bitchat-app.svg",
+ "lang": "en",
+ "link": "original:bitchat.en",
+ "max_age_hours": 720.0,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": true,
+ "pid": "ff8bcf0053",
+ "score": 128.38,
+ "source": "Times of Palestine",
+ "source_id": "top-original",
+ "source_url": "",
+ "title": "Bitchat keeps Palestinians talking when the internet goes dark"
+}

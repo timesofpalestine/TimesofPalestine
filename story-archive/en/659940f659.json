@@ -1,0 +1,32 @@
+{
+ "brief": "Israel is training artificial intelligence chatbots to craft messaging about Gaza, the Quincy Institute reported. The effort involves developing automated systems capable of generating and distributing communications across platforms, apparently aimed at influencing public discourse surrounding the conflict.\n\nThe scope of the initiative, including funding sources and specific platforms targeted, remains unclear from available reporting. The development reflects a broader trend toward deploying algorithmic systems to manage narratives in conflict zones. AI-generated messaging has become an increasingly common tool in information campaigns, raising questions about authenticity and transparency in online spaces where discussions of the conflict take place.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://www.youtube.com/watch?v=5B2GPDx3X-Y",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-03T17:46:14+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-research-b.svg",
+ "lang": "en",
+ "link": "https://www.youtube.com/watch?v=5B2GPDx3X-Y",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "659940f659",
+ "score": 65.55,
+ "source": "Quincy Institute",
+ "source_id": "quincy",
+ "source_url": "https://quincyinst.org/",
+ "title": "Israel trains AI chatbots to shape Gaza messaging."
+}
