@@ -168,7 +168,11 @@ if not FEEDS_PATH.is_absolute():
 FEEDS = json.loads(FEEDS_PATH.read_text(encoding="utf-8"))
 # Story ids the owner has ordered removed; blocked no matter which feed or
 # radar route resurfaces the underlying link.
-RETRACTED_PIDS = {"23ffbc910f", "7b5ecb12e4", "4b6ac6121b", "33a0debafc"}
+RETRACTED_PIDS = {"23ffbc910f", "7b5ecb12e4", "4b6ac6121b", "33a0debafc",
+                  # 2026-08-09 owner order: two Ma'an items covered the same
+                  # JDECO announcement; the winter-maintenance framing goes,
+                  # the power-cut schedule (times, areas) stays.
+                  "7eb4993857"}
 validate_feed_config(FEEDS)
 MEDIA_RIGHTS = load_media_manifest(ROOT / "media-rights.json")
 CORRECTIONS = load_editorial_json(
