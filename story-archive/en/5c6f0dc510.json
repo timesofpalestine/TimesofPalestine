@@ -7,6 +7,12 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-says-ready-go-ahead-gaza-plan",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-09T13:09:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "5c6f0dc510",
- "score": 49.12,
+ "score": 48.94,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

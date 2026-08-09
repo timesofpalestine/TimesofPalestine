@@ -1,0 +1,44 @@
+{
+ "brief": "Israel's government has rejected a 15-point plan for Gaza presented by the Trump administration, according to Al Jazeera English. Prime Minister Benjamin Netanyahu said Israel would not withdraw from the territory until Hamas undergoes what he called \"genuine\" disarmament, effectively conditioning any Israeli pullout on security measures he has set.\n\nThe rejection puts the Israeli government at odds with the incoming U.S. administration over next steps in Gaza. Netanyahu's insistence on Hamas disarmament as a precondition for withdrawal suggests Israel intends to maintain a military presence in the enclave for an extended period. The divergence between Netanyahu's position and Trump's proposal leaves unclear the timeline and terms under which Israeli forces might eventually leave Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/9/what-now-as-israel-rejects-trumps-15-point-plan-for-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/netanyahu-rejects-gaza-plan-new-break-trump",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-rejects-trumps-15-point-plan-gaza-says-netanyahu",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-09T14:26:30+00:00",
+ "dek": "As Netanyahu demands 'genuine' Hamas disarmament before considering pull-out from Gaza, a look at what happens next.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2025/12/getty_694ecb8d1e-1766771597.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/9/what-now-as-israel-rejects-trumps-15-point-plan-for-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/9/what-now-as-israel-rejects-trumps-15-point-plan-for-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "64bd6f3d0c",
+ "score": 49.84,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu rejects Trump's Gaza plan, demands Hamas disarmament first"
+}
