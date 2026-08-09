@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Mohammed El-Kurd, writer and Palestine correspondent</title>
+  <desc id="d">A house illustration in woodcut style: a young writer seated with a book, the outline of the Sheikh Jarrah house behind him, representing Mohammed El-Kurd, poet, author of Rifqa and Perfect Victims, and the first Palestine correspondent of The Nation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#286344"/>
+      <stop offset="0.55" stop-color="#7a5a3c"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+    <pattern id="hatchB" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-42)">
+      <rect width="8" height="8" fill="#1a1c1f"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#3b4048" stroke-width="2.4"/>
+    </pattern>
+    <pattern id="hatchB2" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(26)">
+      <rect width="7" height="7" fill="#20242a"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#4d535c" stroke-width="2"/>
+    </pattern>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#286344" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#286344" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="6" fill="#8a1f2d"/>
+  <circle cx="470" cy="470" r="330" fill="url(#glowB)"/>
+
+  <text x="800" y="76" text-anchor="middle" fill="#c7a86b" font-family="Georgia,serif" font-size="25" letter-spacing="6">TIMES OF PALESTINE &#183; PROFILE</text>
+
+  <!-- the house behind him: Sheikh Jarrah -->
+  <g transform="translate(250,196)" opacity="0.5">
+    <path d="M40 300 l190 -132 l190 132 v256 h-380 z" fill="none" stroke="#3f7a53" stroke-width="5"/>
+    <rect x="130" y="384" width="76" height="76" fill="none" stroke="#3f7a53" stroke-width="4"/>
+    <rect x="266" y="384" width="76" height="76" fill="none" stroke="#3f7a53" stroke-width="4"/>
+    <rect x="190" y="470" width="92" height="86" fill="none" stroke="#3f7a53" stroke-width="4"/>
+  </g>
+
+  <g transform="translate(310,214)">
+    <!-- shoulders -->
+    <path d="M18 596 q0 -184 168 -216 l58 -20 l58 20 q168 32 168 216 z" fill="url(#hatchB)" stroke="#5a6069" stroke-width="3"/>
+    <!-- collar -->
+    <path d="M186 380 l58 66 l58 -66 l30 14 l-88 106 l-88 -106 z" fill="#2b3038" stroke="#5a6069" stroke-width="3"/>
+    <!-- neck -->
+    <path d="M208 340 h72 v56 q-36 22 -72 0 z" fill="#3a4048"/>
+    <!-- head -->
+    <ellipse cx="244" cy="254" rx="94" ry="110" fill="url(#hatchB2)" stroke="#6a707a" stroke-width="3"/>
+    <!-- hair -->
+    <path d="M148 236 q4 -122 96 -122 q92 0 96 122 q-30 -66 -96 -66 q-66 0 -96 66 z" fill="#2a2f36" stroke="#7d838d" stroke-width="3"/>
+    <!-- abstract features -->
+    <path d="M192 272 q24 -14 48 0" stroke="#aab0ba" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M258 272 q22 -12 42 2" stroke="#aab0ba" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M224 330 q24 12 48 -4" stroke="#8f959f" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- book held at the chest -->
+    <g transform="rotate(-8 250 560)">
+      <rect x="150" y="500" width="200" height="128" rx="6" fill="#14161a" stroke="#c7a86b" stroke-width="4"/>
+      <line x1="250" y1="500" x2="250" y2="628" stroke="#c7a86b" stroke-width="3"/>
+      <g stroke="#6f7681" stroke-width="3" stroke-linecap="round">
+        <line x1="172" y1="530" x2="230" y2="530"/><line x1="172" y1="552" x2="230" y2="552"/>
+        <line x1="172" y1="574" x2="212" y2="574"/>
+        <line x1="270" y1="530" x2="328" y2="530"/><line x1="270" y1="552" x2="328" y2="552"/>
+        <line x1="270" y1="574" x2="308" y2="574"/>
+      </g>
+    </g>
+  </g>
+
+  <line x1="900" y1="250" x2="1470" y2="250" stroke="url(#rule)" stroke-width="4"/>
+  <text x="900" y="336" fill="#f2eee8" font-family="Georgia,serif" font-size="52" font-weight="700">Mohammed El-Kurd</text>
+  <text x="900" y="392" fill="#f2eee8" font-family="Tahoma,Arial,sans-serif" font-size="34">محمد الكرد</text>
+
+  <text x="900" y="478" fill="#c7a86b" font-family="Georgia,serif" font-size="21" letter-spacing="3">FIRST IN 160 YEARS</text>
+  <text x="900" y="530" fill="#f2eee8" font-family="Georgia,serif" font-size="30">Palestine correspondent, <tspan font-style="italic">The Nation</tspan></text>
+  <text x="900" y="574" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="24">أول مراسل لفلسطين في تاريخ المجلة</text>
+
+  <line x1="900" y1="616" x2="1470" y2="616" stroke="#2a2c31" stroke-width="2"/>
+  <text x="900" y="664" fill="#a9a49b" font-family="Georgia,serif" font-size="24">Born Sheikh Jarrah, 1998 &#183; <tspan font-style="italic">Time</tspan> 100, 2021</text>
+  <text x="900" y="704" fill="#a9a49b" font-family="Georgia,serif" font-size="24"><tspan font-style="italic">Rifqa</tspan>, 2021 &#183; <tspan font-style="italic">Perfect Victims</tspan>, 2025</text>
+  <text x="900" y="744" fill="#8f8b83" font-family="Georgia,serif" font-size="24">Co-founder of the Sheikh Jarrah campaign</text>
+
+  <text x="800" y="862" text-anchor="middle" fill="#6f6b64" font-family="Georgia,serif" font-size="19">Illustration: Times of Palestine &#183; a house drawing, not a portrait likeness</text>
+</svg>

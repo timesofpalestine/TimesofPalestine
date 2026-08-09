@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Plestia Alaqad, reporting from Gaza</title>
+  <desc id="d">A house illustration in woodcut style: a young reporter in a press helmet and vest holding a phone up to film, representing Plestia Alaqad, who documented forty-five days of the war in Gaza on her phone and later published the diaries as The Eyes of Gaza.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#286344"/>
+      <stop offset="0.55" stop-color="#7a5a3c"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+      <rect width="8" height="8" fill="#1a1c1f"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#3b4048" stroke-width="2.4"/>
+    </pattern>
+    <pattern id="hatch2" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <rect width="7" height="7" fill="#20242a"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#4d535c" stroke-width="2"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c7a86b" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#c7a86b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1600" height="6" fill="#8a1f2d"/>
+  <circle cx="470" cy="470" r="330" fill="url(#glow)"/>
+
+  <text x="800" y="76" text-anchor="middle" fill="#c7a86b" font-family="Georgia,serif" font-size="25" letter-spacing="6">TIMES OF PALESTINE &#183; PROFILE</text>
+
+  <g transform="translate(300,170)">
+    <!-- shoulders and vest -->
+    <path d="M14 620 q0 -196 176 -228 l60 -22 l60 22 q176 32 176 228 z" fill="url(#hatch)" stroke="#5a6069" stroke-width="3"/>
+    <!-- vest panel -->
+    <path d="M150 620 q0 -150 100 -178 q100 28 100 178 z" fill="#2b3038" stroke="#5a6069" stroke-width="3"/>
+    <rect x="196" y="470" width="108" height="42" rx="5" fill="#c7a86b"/>
+    <text x="250" y="501" text-anchor="middle" fill="#14161a" font-family="Georgia,serif" font-size="27" font-weight="700" letter-spacing="3">PRESS</text>
+    <!-- neck -->
+    <path d="M214 356 h72 v58 q-36 22 -72 0 z" fill="#3a4048"/>
+    <!-- head -->
+    <ellipse cx="250" cy="266" rx="96" ry="112" fill="url(#hatch2)" stroke="#6a707a" stroke-width="3"/>
+    <!-- helmet -->
+    <path d="M142 254 q0 -128 108 -128 q108 0 108 128 q-108 -40 -216 0 z" fill="#33383f" stroke="#7d838d" stroke-width="4"/>
+    <path d="M138 252 q112 -44 224 0 l6 26 q-118 -46 -236 0 z" fill="#c7a86b" opacity="0.85"/>
+    <!-- brow / eye line, kept abstract -->
+    <path d="M196 288 q26 -14 52 0" stroke="#aab0ba" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M268 288 q22 -12 44 2" stroke="#aab0ba" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M228 344 q26 14 52 -2" stroke="#8f959f" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- raised arm holding phone -->
+    <path d="M366 560 q86 -34 118 -128 l52 20 q-40 116 -142 158 z" fill="url(#hatch)" stroke="#5a6069" stroke-width="3"/>
+    <rect x="470" y="330" width="86" height="150" rx="12" fill="#14161a" stroke="#c7a86b" stroke-width="4" transform="rotate(15 513 405)"/>
+    <rect x="482" y="348" width="62" height="114" rx="5" fill="#3d444d" transform="rotate(15 513 405)"/>
+    <circle cx="500" cy="330" r="9" fill="#8a1f2d"/>
+  </g>
+
+  <line x1="900" y1="250" x2="1470" y2="250" stroke="url(#rule)" stroke-width="4"/>
+  <text x="900" y="336" fill="#f2eee8" font-family="Georgia,serif" font-size="52" font-weight="700">Plestia Alaqad</text>
+  <text x="900" y="392" fill="#f2eee8" font-family="Tahoma,Arial,sans-serif" font-size="34">بلستيا العقاد</text>
+
+  <text x="900" y="478" fill="#c7a86b" font-family="Georgia,serif" font-size="21" letter-spacing="3">THE EYES OF GAZA</text>
+  <text x="900" y="546" fill="#f2eee8" font-family="Georgia,serif" font-size="76" font-weight="700">45</text>
+  <text x="900" y="590" fill="#a9a49b" font-family="Georgia,serif" font-size="25">days reporting before she was evacuated</text>
+  <text x="900" y="630" fill="#8f8b83" font-family="Tahoma,Arial,sans-serif" font-size="24">خمسة وأربعون يومًا من التغطية قبل الإجلاء</text>
+
+  <line x1="900" y1="670" x2="1470" y2="670" stroke="#2a2c31" stroke-width="2"/>
+  <text x="900" y="718" fill="#a9a49b" font-family="Georgia,serif" font-size="24">Born Gaza, 2001 &#183; author of <tspan font-style="italic">The Eyes of Gaza</tspan></text>
+  <text x="900" y="758" fill="#8f8b83" font-family="Georgia,serif" font-size="24">Little, Brown &#183; Pan Macmillan, 2025</text>
+
+  <text x="800" y="862" text-anchor="middle" fill="#6f6b64" font-family="Georgia,serif" font-size="19">Illustration: Times of Palestine &#183; a house drawing, not a portrait likeness</text>
+</svg>
