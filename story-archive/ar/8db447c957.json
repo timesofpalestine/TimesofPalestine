@@ -1,0 +1,32 @@
+{
+ "brief": "يعاني معلمون في قطاع غزة من أزمة رواتب حادة استمرت عدة أشهر، حيث انقطعت مستحقاتهم بالكامل أو تراجعت إلى نسب لا تتجاوز 60% من قيمتها الأصلية. بحسب الجزيرة نت، يرجع تفاقم الأزمة إلى الحصار المفروض على القطاع والخصم المتكرر من أموال المقاصة، ما ترك آلاف المعلمين دون موارد مالية كافية لسداد احتياجاتهم الأساسية.\n\nتأتي هذه الأزمة في وقت تواجه فيه المؤسسات التعليمية في غزة ضغوطاً متزايدة، فيما يؤثر انقطاع الرواتب مباشرة على استقرار العملية التعليمية والقطاع التربوي بشكل عام.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.net/video/2026/8/9/%d8%b1%d8%ba%d9%85-%d8%a7%d9%86%d9%82%d8%b7%d8%a7%d8%b9-%d8%a7%d9%84%d8%b1%d9%88%d8%a7%d8%aa%d8%a8-%d8%a7%d9%84%d8%b9%d8%a7%d9%85%d9%84%d9%88%d9%86-%d9%81%d9%8a-%d9%82%d8%b7%d8%a7%d8%b9%d9%8a?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-09T09:51:03+00:00",
+ "dek": "تعاني أزمة رواتب المعلمين في قطاع غزة من تفاقم حاد نتيجة الحصار والخصم من أموال المقاصة، مما أدى إلى انقطاع الرواتب كليا أو صرف نسب متدنية لا تتجاوز 60% عدة أشهر.",
+ "image": "https://www.aljazeera.net/wp-content/uploads/2026/08/image-1786276515.jpg?resize=1920%2C1080&quality=80",
+ "lang": "ar",
+ "link": "https://www.aljazeera.net/video/2026/8/9/%d8%b1%d8%ba%d9%85-%d8%a7%d9%86%d9%82%d8%b7%d8%a7%d8%b9-%d8%a7%d9%84%d8%b1%d9%88%d8%a7%d8%aa%d8%a8-%d8%a7%d9%84%d8%b9%d8%a7%d9%85%d9%84%d9%88%d9%86-%d9%81%d9%8a-%d9%82%d8%b7%d8%a7%d8%b9%d9%8a?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "الجزيرة نت",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.net/video/2026/8/9/%d8%b1%d8%ba%d9%85-%d8%a7%d9%86%d9%82%d8%b7%d8%a7%d8%b9-%d8%a7%d9%84%d8%b1%d9%88%d8%a7%d8%aa%d8%a8-%d8%a7%d9%84%d8%b9%d8%a7%d9%85%d9%84%d9%88%d9%86-%d9%81%d9%8a-%d9%82%d8%b7%d8%a7%d8%b9%d9%8a?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8db447c957",
+ "score": 47.35,
+ "source": "الجزيرة نت",
+ "source_id": "aja",
+ "source_url": "https://www.aljazeera.net/",
+ "title": "معلمو غزة يواجهون انقطاعاً كاملاً للرواتب"
+}

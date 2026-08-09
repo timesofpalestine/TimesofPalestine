@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/8/9/israel-announces-tender-for-627-settler-units-in-occupied-west-bank?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israel-issues-tender-for-627-new-colony-units-in-kochav-yaakov",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-09T06:57:56+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "de1baad7dc",
- "score": 45.68,
+ "score": 45.39,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

@@ -9,6 +9,18 @@
    "verified": true
   },
   {
+   "article": "https://t.me/Palinfo/314233",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82316",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
    "article": "https://t.me/AlQastalps/389635",
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
@@ -18,12 +30,6 @@
    "article": "https://t.me/QudsN/727845",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/82316",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
    "verified": true
   }
  ],
@@ -42,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "5c6f0dc510",
- "score": 49.93,
+ "score": 49.64,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
