@@ -1743,6 +1743,65 @@ class CrossDeskDedupeTests(unittest.TestCase):
             hours_after=2, n=12, score=30)
         self.assertEqual(len(build.dedupe_events([meeting, court])), 2)
 
+    def test_state_and_leader_headlines_on_one_decision_fold(self):
+        # Owner report 2026-08-09: "Netanyahu rejects Trump peace plan…" and
+        # "Israel rejects Trump's 15-point Gaza plan" ran as adjacent cards.
+        # The leader is the state's voice, and the shorter headline sits
+        # inside the longer one — one decision, one card.
+        first = self.story(
+            "Netanyahu rejects Trump peace plan, vows no Gaza withdrawal "
+            "or Palestinian state", "", n=13, score=40)
+        second = self.story(
+            "Israel rejects Trump's 15-point Gaza plan", "",
+            hours_after=1, n=14, score=30)
+        survivors = build.dedupe_events([first, second])
+        self.assertEqual(len(survivors), 1)
+
+    def test_arabic_state_and_leader_headlines_on_one_decision_fold(self):
+        first = self.story(
+            "نتنياهو يرفض خطة ترامب ويتعهد بمواصلة حرب غزة", "",
+            n=17, score=40)
+        second = self.story(
+            "إسرائيل ترفض خطة ترامب لوقف حرب غزة", "",
+            hours_after=1, n=18, score=30)
+        survivors = build.dedupe_events([first, second])
+        self.assertEqual(len(survivors), 1)
+
+    def test_rewritten_headlines_on_one_announcement_fold_by_brief(self):
+        # Owner report 2026-08-09: two rewrites of one JDECO announcement ran
+        # side by side in The Latest. Their house headlines share only
+        # "Jerusalem", and the translated item's dek was blanked — the brief
+        # bodies are what tell the same story, so the coverage net reads them.
+        first = self.story(
+            "Jerusalem Electric prepares grid for winter storms", "",
+            n=15, score=40)
+        first["brief"] = (
+            "The Jerusalem District Electricity Company said its crews are "
+            "preparing the grid for winter storms, with scheduled power cuts "
+            "across parts of Ramallah and Al-Bireh through the afternoon "
+            "while maintenance teams reinforce lines.")
+        second = self.story(
+            "Jerusalem electricity company schedules power cuts through "
+            "afternoon", "", hours_after=1, n=16, score=30)
+        second["brief"] = (
+            "The Jerusalem District Electricity Company announced scheduled "
+            "power cuts through the afternoon across parts of Ramallah and "
+            "Al-Bireh as maintenance crews reinforce the grid ahead of "
+            "winter storms.")
+        survivors = build.dedupe_events([first, second])
+        self.assertEqual(len(survivors), 1)
+
+    def test_unrelated_netanyahu_and_israel_stories_both_run(self):
+        # The metonymy fold must not glue every Netanyahu item to every
+        # Israel item: different subjects share only the actor token.
+        trial = self.story(
+            "Netanyahu appears in court for corruption trial hearing", "",
+            n=19, score=40)
+        settlements = self.story(
+            "Israel approves thousands of new settlement units in the "
+            "West Bank", "", hours_after=2, n=20, score=30)
+        self.assertEqual(len(build.dedupe_events([trial, settlements])), 2)
+
     def test_different_stories_about_the_same_person_both_run(self):
         congress = self.story(
             "Fatah's eighth congress elevates Barghouti, Faraj and the president's son",

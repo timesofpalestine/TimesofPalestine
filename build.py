@@ -1952,7 +1952,13 @@ def dedupe_events(items):
     ), reverse=True)
     for it in ranked:
         toks = event_tokens(it["title"])
-        ext = event_tokens(f"{it['title']} {(it.get('dek') or '')[:240]}")
+        # The house brief, once written, is the richest same-language account
+        # of the story — and for wire items translated from Arabic feeds the
+        # dek was blanked, leaving the coverage nets nothing to compare
+        # (owner report 2026-08-09: two rewrites of one JDECO announcement
+        # ran side by side in The Latest). Prefer it over the feed dek.
+        body = it.get("brief") or it.get("dek") or ""
+        ext = event_tokens(f"{it['title']} {body[:240]}")
         home = None
         for cluster in clusters:
             rep, titles, token_sets, ext_sets, dates = cluster

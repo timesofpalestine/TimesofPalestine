@@ -35,6 +35,11 @@ for _canon, _words in (
              "discus discussed"),
     ("urge", "urge urged demand demanded call called press appeal"),
     ("tension", "tension escalation escalating unrest"),
+    # State-leader metonymy: one desk writes "Netanyahu rejects", the other
+    # "Israel rejects" — one decision, two front-page cards (owner report
+    # 2026-08-09). Fold the head of government into the state he speaks for.
+    ("israel", "israel israeli netanyahu"),
+    ("reject", "reject rejected rejecting refuse refused rebuff rebuffed"),
     ("قوات", "قوات جيش جنود احتلال"),
     ("قصف", "قصف غارة غارات هجوم عدوان"),
     ("قتل", "قتل مقتل استشهاد استشهد شهداء شهيد قتلى"),
@@ -44,6 +49,10 @@ for _canon, _words in (
                "ناقش يناقش بحث يبحث"),
     ("دعا", "دعا يدعو دعوا طالب يطالب طالبوا ناشد حث"),
     ("توتر", "توتر توترات تصعيد"),
+    # نتنياهو/إسرائيل: قرار واحد لا يصدر مرتين — والفعل يتصرف بجنس الفاعل
+    # (نتنياهو يرفض / إسرائيل ترفض) فتُطوى تصريفات الرفض معاً.
+    ("إسرائيل", "إسرائيل إسرائيلي إسرائيلية إسرائيليون إسرائيليين نتنياهو"),
+    ("رفض", "رفض يرفض ترفض رفضت رفضوا مرفوض"),
 ):
     for _w in _words.split():
         _EVENT_SYN[_w] = _canon
@@ -116,9 +125,17 @@ def same_event(toks_a, toks_b):
     inter = toks_a & toks_b
     if len(inter) < 3:
         return False
-    if len(inter) / len(toks_a | toks_b) < 0.42:
+    if _place_or_count_veto(toks_a, toks_b):
         return False
-    return not _place_or_count_veto(toks_a, toks_b)
+    if len(inter) / len(toks_a | toks_b) >= 0.42:
+        return True
+    # Jaccard punishes a long headline beside a short one: "Netanyahu rejects
+    # Trump peace plan, vows no Gaza withdrawal or Palestinian state" shares
+    # its whole core with "Israel rejects Trump's 15-point Gaza plan", yet the
+    # union drowns the overlap (owner report 2026-08-09, both cards ran).
+    # When the shorter headline sits mostly inside the longer one, that
+    # containment is the match — the vetoes above still separate real pairs.
+    return len(inter) >= 4 and len(inter) / min(len(toks_a), len(toks_b)) >= 0.6
 
 
 def same_coverage(ext_a, ext_b):
