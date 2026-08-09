@@ -1926,7 +1926,8 @@ def dedupe(items):
 # dedupe misses them. The similarity logic lives in event_dedupe.py, shared with
 # telegram_publish.py so the channel never re-receives the same news either.
 from event_dedupe import (
-    event_tokens, near_identical, same_coverage, same_event, same_story,
+    event_tokens, near_identical, place_or_count_veto, same_coverage,
+    same_event, same_story,
 )
 
 def dedupe_events(items):
@@ -1999,6 +2000,141 @@ def dedupe_events(items):
     for d in dropped:
         print(f"  ⊘ duplicate event dropped: {d['source']}: {d['title'][:70]}")
     return [i for i in items if id(i) in survivors]
+
+
+# ---------- AI duplicate judge (owner order 2026-08-09) ----------
+# Root cause of every "double article" the owner has reported: the lexical
+# nets above decide "same event?" by counting shared WORDS, and one event
+# written two ways often shares almost none ("Jerusalem Electricity readies
+# grid for winter" vs "Jerusalem electricity company cuts power across West
+# Bank areas" — one JDECO announcement, two words in common). Each past fix
+# added another word-matching net tuned to the last incident; the next
+# paraphrase slipped through the gaps by construction. Judging event identity
+# is a language-understanding task, so the newsroom model adjudicates it:
+# after the lexical nets, suspect pairs (close in time, some shared
+# substance, no place/count contradiction) go to the briefs model with one
+# question — one story or two? Verdicts are cached by story-pair in the
+# briefs cache (14-day prune covers the 72h item lifetime many times over),
+# so each pair costs one small call EVER, and the judge is fail-open: no
+# key, no package, or a provider outage simply leaves the lexical verdict
+# standing.
+DEDUPE_JUDGE_SYSTEM = (
+    "You are the duplicate desk of a serious newspaper. You are shown two "
+    "published news items, each as a headline and summary. Decide whether a "
+    "careful newspaper would run them as ONE article or TWO. Answer DUPLICATE "
+    "only when both items report the same underlying event, announcement or "
+    "development — the same actor taking the same action on the same occasion, "
+    "even under different framing (a utility announcing maintenance work and "
+    "the outages that work causes is ONE announcement; an updated casualty "
+    "toll of the same incident is ONE story). Answer SEPARATE when they are "
+    "distinct events, even if related, on the same topic, or involving the "
+    "same actor: two different strikes, a statement and a later vote, two "
+    "separate announcements. When uncertain, answer SEPARATE. Reply with "
+    "exactly one word: DUPLICATE or SEPARATE."
+)
+MAX_DEDUPE_VERDICTS_PER_RUN = 40   # per build; the pair cache carries the rest
+DEDUPE_PAIR_WINDOW_H = 36          # matches the lexical nets' window
+
+
+def _judge_pair_key(lang, pid_a, pid_b):
+    return f"dupe:{lang}:" + ":".join(sorted((pid_a, pid_b)))
+
+
+def _duplicate_verdict(client, a, b):
+    """One story or two, per the newsroom model. None = no usable verdict."""
+    def block(it):
+        body = (it.get("brief") or it.get("dek") or "")[:400]
+        return f"HEADLINE: {it['title']}\nSUMMARY: {body or '(none)'}"
+    try:
+        response = client.messages.create(
+            model=BRIEFS_MODEL, max_tokens=8, system=DEDUPE_JUDGE_SYSTEM,
+            messages=[{"role": "user",
+                       "content": f"ITEM ONE\n{block(a)}\n\nITEM TWO\n{block(b)}"}])
+        word = "".join(
+            bk.text for bk in response.content if bk.type == "text").strip().upper()
+    except Exception as exc:  # provider outage: the lexical verdict stands
+        print(f"  ✗ dedupe verdict failed ({type(exc).__name__})")
+        return None
+    if word.startswith("DUPLICATE"):
+        return True
+    if word.startswith("SEPARATE"):
+        return False
+    return None  # unparseable — not cached, so the next build asks again
+
+
+def adjudicate_duplicates(en_items, ar_items, client=None):
+    """Fold paraphrase-level duplicates the lexical nets cannot see.
+
+    Runs on FINAL published copy (post-briefs), per language. Candidate
+    pairs share at least two meaningful tokens across title+summary, sit
+    within the lexical window, and pass the place/count veto — the same
+    conservative guard the lexical nets use, so items the record already
+    contradicts are never even asked about. Two originals never fold (the
+    desk curates those). Returns (en, ar, dropped_count)."""
+    try:
+        cache = json.loads(BRIEFS_CACHE.read_text(encoding="utf-8")) \
+            if BRIEFS_CACHE.exists() else {}
+    except (OSError, json.JSONDecodeError):
+        cache = {}
+    budget = MAX_DEDUPE_VERDICTS_PER_RUN
+    dirty, dropped_total, out = False, 0, {}
+    for lang, items in (("en", en_items), ("ar", ar_items)):
+        ranked = sorted(items, key=lambda i: (
+            i["source_id"] == "top-original", bool(i.get("partner")), i["score"]
+        ), reverse=True)
+        ext = {id(i): event_tokens(
+            f"{i['title']} {(i.get('brief') or i.get('dek') or '')[:240]}")
+            for i in items}
+        pairs = []
+        for x in range(len(ranked)):
+            for y in range(x + 1, len(ranked)):
+                a, b = ranked[x], ranked[y]
+                if a.get("original") and b.get("original"):
+                    continue
+                if abs((a["date"] - b["date"]).total_seconds()) > DEDUPE_PAIR_WINDOW_H * 3600:
+                    continue
+                shared = ext[id(a)] & ext[id(b)]
+                if len(shared) < 2:
+                    continue
+                if place_or_count_veto(ext[id(a)], ext[id(b)]):
+                    continue
+                pairs.append((len(shared), x, y))
+        pairs.sort(reverse=True)  # judge the most suspicious pairs first
+        drop = set()
+        for _, x, y in pairs:
+            a, b = ranked[x], ranked[y]
+            if id(a) in drop or id(b) in drop:
+                continue
+            key = _judge_pair_key(lang, a["pid"], b["pid"])
+            entry = cache.get(key)
+            verdict = entry.get("same") if isinstance(entry, dict) else None
+            if verdict is None:
+                if client is None or budget <= 0:
+                    continue
+                budget -= 1
+                verdict = _duplicate_verdict(client, a, b)
+                if verdict is None:
+                    continue
+                cache[key] = {"same": verdict,
+                              "ts": datetime.now(timezone.utc).timestamp()}
+                dirty = True
+            if verdict:
+                existing = {(s.get("name", ""), s.get("url", ""))
+                            for s in a.get("corroborating_sources", [])}
+                for source in b.get("corroborating_sources", []):
+                    skey = (source.get("name", ""), source.get("url", ""))
+                    if skey not in existing:
+                        a.setdefault("corroborating_sources", []).append(source)
+                        existing.add(skey)
+                drop.add(id(b))
+                dropped_total += 1
+                print(f"  ⊘ duplicate event dropped (AI judge): "
+                      f"{b['source']}: {b['title'][:70]}")
+        out[lang] = [i for i in items if id(i) not in drop]
+    if dirty:
+        save_brief_cache(cache)
+    return out["en"], out["ar"], dropped_total
+
 
 def diversify(items):
     """Reorder so adjacent cards come from different outlets when possible."""
@@ -4839,6 +4975,26 @@ def main():
     en_items = dedupe_events([i for i in candidates if i["lang"] == "en"])
     ar_items = dedupe_events([i for i in candidates if i["lang"] == "ar"])
     HEALTH.deduplicated += _before - len(en_items) - len(ar_items)
+    # AI duplicate judge (owner order 2026-08-09): paraphrase-level duplicates
+    # share too few words for the lexical nets — the newsroom model settles
+    # them. Runs here, on final published copy, so what it judges is exactly
+    # what the reader would see twice. Fail-open on every route.
+    judge = None
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        try:
+            import anthropic
+            judge = anthropic.Anthropic(
+                api_key=re.sub(r"\s+", "", os.environ["ANTHROPIC_API_KEY"]),
+                timeout=30.0, max_retries=1)
+        except ImportError:
+            pass
+    try:
+        en_items, ar_items, _ai_dropped = adjudicate_duplicates(
+            en_items, ar_items, judge)
+        HEALTH.deduplicated += _ai_dropped
+    except Exception as exc:  # a judge outage never stops the paper
+        print(f"  dedupe judge stage failed ({type(exc).__name__}) — "
+              "lexical dedupe only this build.")
     candidates = en_items + ar_items
     approvals = load_reviews(ROOT / "editorial" / "reviews.json")
     gate_mode = review_gate_mode()

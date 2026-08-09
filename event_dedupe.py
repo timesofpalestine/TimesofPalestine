@@ -57,6 +57,11 @@ _EVENT_PLACES = set(
     "gaza rafah khan younis jenin nablus hebron jerusalem ramallah tulkarem tulkarm bethlehem "
     "qalqilya jericho jabalia salfit tubas".split()
 ) | set("غزة رفح خان يونس جنين نابلس خليل قدس رام طولكرم لحم قلقيلية أريحا جباليا سلفيت طوباس".split())
+# event_tokens strips a trailing "s" from ASCII words, so the place list must
+# hold the stripped forms too — without this, "Nablus"→"nablu" never matched
+# and the place veto silently skipped Nablus, Tubas and Khan Younis in English
+# (found 2026-08-09 while pre-screening pairs for the AI duplicate judge).
+_EVENT_PLACES |= {w.rstrip("s") for w in _EVENT_PLACES if w.isascii()}
 
 
 def event_tokens(title):
@@ -109,6 +114,12 @@ def _place_or_count_veto(toks_a, toks_b):
     if nums_a and nums_b and not (nums_a & nums_b):
         return True  # different counts → different events
     return False
+
+
+def place_or_count_veto(toks_a, toks_b):
+    """Public form of the guard, for callers that pre-screen candidate pairs
+    (the AI duplicate judge asks about no pair the record already contradicts)."""
+    return _place_or_count_veto(toks_a, toks_b)
 
 
 def same_event(toks_a, toks_b):

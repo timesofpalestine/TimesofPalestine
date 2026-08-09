@@ -1849,3 +1849,85 @@ class FrontPageDisciplineTests(unittest.TestCase):
         rail = homepage.split('<aside class="latest">', 1)[1].split("</aside>", 1)[0]
         self.assertLessEqual(rail.count("Israeli daily says"), 4)
         self.assertIn("Gaza hospitals", rail)
+
+
+class AIDedupeJudgeTests(unittest.TestCase):
+    """Owner order 2026-08-09: paraphrase-level duplicates (one event, almost
+    no shared words) are settled by the newsroom model, not another lexical
+    net. The judge is conservative, cached, and fail-open."""
+
+    def _jdeco_pair(self):
+        base = datetime(2026, 8, 9, 12, tzinfo=timezone.utc)
+        a = item()
+        a.update({
+            "title": "Jerusalem electricity company cuts power across West Bank areas",
+            "dek": "The company announced planned outages from 9 a.m. to 2 p.m. "
+                   "across Bethlehem governorate, the Ma'an wire reported.",
+            "cat": "westbank", "lang": "en", "score": 30, "pid": "jdecocuts1",
+            "date": base, "link": "https://example.com/a"})
+        b = item()
+        b.update({
+            "title": "Jerusalem Electricity readies grid for winter with maintenance push",
+            "dek": "The utility is washing and reinforcing its electrical networks "
+                   "ahead of winter storms, the Ma'an wire reported.",
+            "cat": "westbank", "lang": "en", "score": 20, "pid": "jdecomaint",
+            "date": base - timedelta(hours=2), "link": "https://example.com/b"})
+        return a, b
+
+    def _run(self, en, ar, client, cache_dir):
+        with mock.patch.object(build, "BRIEFS_CACHE", Path(cache_dir) / "briefs-cache.json"):
+            return build.adjudicate_duplicates(en, ar, client)
+
+    def test_judge_folds_a_paraphrase_duplicate_and_caches_the_verdict(self):
+        a, b = self._jdeco_pair()
+        client = _FakeBriefsClient(["DUPLICATE"])
+        with tempfile.TemporaryDirectory() as td:
+            en, ar, dropped = self._run([a, b], [], client, td)
+            cache = json.loads((Path(td) / "briefs-cache.json").read_text())
+        self.assertEqual(dropped, 1)
+        self.assertEqual([i["pid"] for i in en], ["jdecocuts1"])  # higher score survives
+        self.assertEqual(len(client.calls), 1)
+        key = "dupe:en:" + ":".join(sorted(("jdecocuts1", "jdecomaint")))
+        self.assertTrue(cache[key]["same"])
+
+    def test_separate_verdict_keeps_both_stories(self):
+        a, b = self._jdeco_pair()
+        client = _FakeBriefsClient(["SEPARATE"])
+        with tempfile.TemporaryDirectory() as td:
+            en, ar, dropped = self._run([a, b], [], client, td)
+        self.assertEqual(dropped, 0)
+        self.assertEqual(len(en), 2)
+
+    def test_no_client_is_fail_open(self):
+        a, b = self._jdeco_pair()
+        with tempfile.TemporaryDirectory() as td:
+            en, ar, dropped = self._run([a, b], [], None, td)
+        self.assertEqual(dropped, 0)
+        self.assertEqual(len(en), 2)
+
+    def test_cached_verdict_never_asks_the_model_again(self):
+        a, b = self._jdeco_pair()
+        client = _FakeBriefsClient([])  # any call would raise IndexError
+        key = "dupe:en:" + ":".join(sorted(("jdecocuts1", "jdecomaint")))
+        with tempfile.TemporaryDirectory() as td:
+            (Path(td) / "briefs-cache.json").write_text(
+                json.dumps({key: {"same": True, "ts": 0}}))
+            en, ar, dropped = self._run([a, b], [], client, td)
+        self.assertEqual(dropped, 1)
+        self.assertEqual(len(client.calls), 0)
+
+    def test_contradicting_places_are_never_even_asked_about(self):
+        base = datetime(2026, 8, 9, 12, tzinfo=timezone.utc)
+        a, b = item(), item()
+        a.update({"title": "Israeli forces raid Jenin refugee camp at dawn injuring residents",
+                  "dek": "", "cat": "westbank", "lang": "en", "score": 30,
+                  "pid": "jeninraid1", "date": base})
+        b.update({"title": "Israeli forces raid Nablus old city at dawn injuring residents",
+                  "dek": "", "cat": "westbank", "lang": "en", "score": 20,
+                  "pid": "nablusraid", "date": base})
+        client = _FakeBriefsClient([])  # any call would raise IndexError
+        with tempfile.TemporaryDirectory() as td:
+            en, ar, dropped = self._run([a, b], [], client, td)
+        self.assertEqual(dropped, 0)
+        self.assertEqual(len(en), 2)
+        self.assertEqual(len(client.calls), 0)

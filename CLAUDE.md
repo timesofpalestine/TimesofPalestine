@@ -98,7 +98,15 @@ everything it builds:
    own summary as body) are the one exception and keep the outlet link.
 4. **Publishing safety:** event-level dedupe (one incident, one article) and
    the completeness gate (no mid-sentence bodies) in `build.py` are
-   owner-requested. Markdown-residue in an original skips that article with a
+   owner-requested. **AI duplicate judge (owner order 2026-08-09, after
+   repeated double-article reports):** lexical similarity cannot see
+   paraphrase-level duplicates, so after the lexical nets the briefs model
+   adjudicates suspect pairs (close in time, shared substance, no
+   place/count contradiction) with one question — one story or two.
+   Verdicts cache per story-pair in briefs-cache.json (each pair costs one
+   small call ever, ≤40/build); fail-open on every route. Layer:
+   `adjudicate_duplicates` in `build.py`. Don't replace it with another
+   word-matching net — that approach is the documented root cause. Markdown-residue in an original skips that article with a
    loud warning; schema and missing-media errors fail the build. Editorial
    gating must default to publish — never to holding coverage behind
    per-story manual approval, and NEVER with reader-facing labels
