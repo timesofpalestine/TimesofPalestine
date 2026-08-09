@@ -125,7 +125,18 @@ everything it builds:
    48 h. Requires the `OPENAI_API_KEY` repo secret (skips gracefully without
    it). Pause via the Actions tab; the script is fail-open and must never
    block the news build.
-9. **Daily editor-in-chief cycle (owner directive 2026-08-01):** Claude runs
+9. **Permalink permanence (owner order 2026-08-09):** a published story link
+   never dies. Every rendered story persists to `story-archive/` (one JSON
+   per story+language, committed by the workflow's post-deploy persist
+   step) and is re-rendered at its original URL on every future build after
+   it leaves the live feeds — links shared to Telegram and beyond keep
+   resolving forever. Archived stories keep their page, bare-pid stub,
+   section-archive card and search entry, but never re-enter the front
+   page, feeds, sitemaps or delivery outboxes ("the page is alive" is
+   untouched). Retractions (`RETRACTED_PIDS`) always win. No agent deletes
+   `story-archive/` or drops the `git add story-archive/` line from
+   `build.yml`. Layer: `story_archive.py` + hooks in `build.py`.
+10. **Daily editor-in-chief cycle (owner directive 2026-08-01):** Claude runs
    `.github/workflows/daily-editor.yml` each morning (06:30 UTC), choosing and
    shipping 3–5 improvements a day across editorial, design, platform and the
    franchises, via a `claude/daily-editor-<date>` PR merged on green CI. Other

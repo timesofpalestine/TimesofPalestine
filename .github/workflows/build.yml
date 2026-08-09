@@ -90,14 +90,17 @@ jobs:
         env:
           DISTRIBUTION_WEBHOOK_URL: ${{ secrets.DISTRIBUTION_WEBHOOK_URL }}
         run: python distribute.py dist --summary >> "$GITHUB_STEP_SUMMARY"
-      - name: Persist generated investigations
+      - name: Persist generated investigations and story archive
         if: ${{ always() && steps.deployment.outcome == 'success' && github.ref == 'refs/heads/main' }}
         run: |
           git config user.name "Times of Palestine Newsdesk"
           git config user.email "newsdesk@timesofpalestine.com"
-          git add originals/
+          # story-archive/ is the permalink-permanence ledger (owner order
+          # 2026-08-09): every published story page persists here so links
+          # already shared on Telegram keep resolving on every future build.
+          git add originals/ story-archive/
           if ! git diff --cached --quiet; then
-            git commit -m "Publish automated investigation [skip ci]"
+            git commit -m "Persist investigations and published-story archive [skip ci]"
             # Fetch/rebase/retry (charter publishing contract): this repo
             # receives frequent commits, and a silently lost push here loses
             # a finished, already-deployed investigation from the repo.
@@ -108,7 +111,7 @@ jobs:
               sleep $((i * 5))
             done
             if [ "$ok" != "1" ]; then
-              echo "::error::failed to persist generated investigations after 3 attempts"
+              echo "::error::failed to persist investigations/story archive after 3 attempts"
               exit 1
             fi
           fi
