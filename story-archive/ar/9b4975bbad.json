@@ -6,13 +6,7 @@
    "article": "https://shehabnews.com/post/161927/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%82%D8%AA%D8%AD%D9%85-%D8%A8%D9%8A%D8%B1%D8%B2%D9%8A%D8%AA-%D9%88%D8%A8%D8%B1%D9%87%D8%A7%D9%85-%D9%88%D8%AA%D8%B1%D9%85%D8%B3%D8%B9%D9%8A%D8%A7-%D9%81%D9%8A-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%84%D9%87",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/314280",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-09T18:42:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "9b4975bbad",
- "score": 48.5,
+ "score": 48.3,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
