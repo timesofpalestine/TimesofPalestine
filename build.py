@@ -393,6 +393,25 @@ BREAKING_RX = re.compile(
 # Features that should never lead the page, however well they score.
 REVIEWISH_RX = re.compile(r"book review|review:|film review|مراجعة كتاب|عرض كتاب", re.I)
 
+# Routine utility service notices — a distribution company announcing scheduled
+# power cuts, grid maintenance, winter preparations. Useful reader service,
+# never the lead of a serious front page (owner report 2026-08-09: a JDECO
+# power-cut schedule ran as the main headline). The patterns require the
+# UTILITY AS ACTOR doing scheduled work, so weaponized cuts — "Israel cuts
+# electricity to Gaza" — stay hard news and keep their full rank.
+ROUTINE_NOTICE_RX = re.compile(
+    r"(?:electric(?:ity)?|power|water|telecom|internet)\s+"
+    r"(?:compan(?:y|ies)|corporation|authority|distribut\w*|provider)"
+    r"[^.]{0,80}?\b(?:schedul\w*|maintenance|maintain\w*|upgrad\w*|prepar\w*|"
+    r"outage|cuts?|interrupt\w*|works)|"
+    r"\b(?:jerusalem|gaza|hebron|nablus) electric\b"
+    r"[^.]{0,80}?\b(?:schedul\w*|maintenance|prepar\w*|upgrad\w*|grid|network)|"
+    r"scheduled (?:power|electricity|water) (?:cut|outage|interruption)|"
+    r"load[- ]?shedding|"
+    r"شركة (?:ال)?كهرباء[^.]{0,80}?(?:قطع|فصل|صيانة|جدول|أعمال)|"
+    r"كهرباء (?:القدس|محافظة)[^.]{0,80}?(?:تصون|صيانة|قطع|فصل|جدول|شبك)|"
+    r"قطع مبرمج|فصل التيار[^.]{0,40}?(?:المبرمج|مبرمج|مجدول)", re.I)
+
 def score_item(item):
     hours = (datetime.now(timezone.utc) - item["date"]).total_seconds() / 3600
     # research reports decay over their own longer shelf life, not the 72h news cycle
@@ -411,6 +430,9 @@ def score_item(item):
         s += RESEARCH_BOOST
     if item["image"]:
         s += IMAGE_BOOST
+    # Service notices inform; they don't compete with the news of the day.
+    if ROUTINE_NOTICE_RX.search(hay):
+        s -= 25
     # Palestinian outlets also carry world news; it never outranks Palestine coverage.
     if not PALESTINE_RX.search(hay) and item["cat"] not in ("research", "bitcoin"):
         s -= 15
@@ -3597,26 +3619,33 @@ def render_page(lang, items, built_at):
     def hero_ok(i, max_age=HERO_MAX_AGE_H):
         # arts joined the exclusions 2026-08-07: a fresh profile took the top
         # slot on a quiet wire — features celebrate, they don't lead the page.
+        # Routine service notices joined 2026-08-09: a power-cut schedule ran
+        # as the main headline — reader service, never the lead.
         return (bool(i["image"]) and len(i["title"]) > 30
                 and i["cat"] not in ("social", "research", "opinion", "culture", "israelipress", "arts")
                 and not evergreen(i)
                 and PALESTINE_RX.search(f"{i['title']} {i['dek']}")  # the top story IS Palestine
                 and not REVIEWISH_RX.search(i["title"])
+                and not ROUTINE_NOTICE_RX.search(f"{i['title']} {i['dek']}")
                 and within_hours(i, max_age))
 
     # The hero follows the news cycle: pick the strongest story from the
-    # FRESHEST window that has one (last 6h, then 12h, then 18h). A boosted
-    # multi-day original can never squat the top slot while new reporting
-    # arrives — every build, the reader sees the newest strong story.
-    hero_pool = by_latest
+    # FRESHEST window that has one (last 6h, then 12h, then 18h). Within a
+    # window the candidates rank by editorial score, so the most IMPORTANT
+    # qualifying story leads — not simply whichever wire item arrived last
+    # (owner report 2026-08-09: a utility notice led the page purely because
+    # it was newest). A boosted multi-day original still can never squat the
+    # top slot while new reporting arrives — the windows guarantee freshness.
+    hero_pool = by_score
     heroes = []
     for window in HERO_WINDOWS_H:
         heroes = take(hero_pool, lambda i, w=window: hero_ok(i, max_age=w), 1)
         if heroes:
             break
     heroes = (heroes
-              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress", "arts")
+              or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress", "arts")
                       and not evergreen(i)
+                      and not ROUTINE_NOTICE_RX.search(f"{i['title']} {i['dek']}")
                       and PALESTINE_RX.search(f"{i['title']} {i['dek']}")
                       and within_hours(i, HERO_MAX_AGE_H), 1)
               or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress")
@@ -3625,8 +3654,11 @@ def render_page(lang, items, built_at):
     hero = heroes[0] if heroes else None
     # Eight items (2×4) under the hero: four left the column trailing dead
     # space beside the taller Latest rail (owner decision 2026-08-03).
+    # Routine service notices don't take top-block slots either — they still
+    # run in their section and the chronological Latest rail.
     hero_subs = take(by_latest, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin", "israelipress")
-                     and not evergreen(i), 8)
+                     and not evergreen(i)
+                     and not ROUTINE_NOTICE_RX.search(f"{i['title']} {i['dek']}"), 8)
     # Latest rail and breaking ticker: chronological, Palestine coverage first.
     # The rail is an index — it lists stories without claiming them from sections.
     def palestine(i):

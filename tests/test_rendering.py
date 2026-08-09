@@ -1630,6 +1630,43 @@ class FrontPageDisciplineTests(unittest.TestCase):
         self.assertIn("Nablus", overlay)
         self.assertNotIn("song archive", overlay)
 
+    def test_routine_utility_notice_never_takes_the_hero(self):
+        # Owner report 2026-08-09: a JDECO power-cut schedule led the paper
+        # purely because it was the newest wire item.
+        built_at = datetime(2026, 8, 9, 15, tzinfo=timezone.utc)
+        notice = self._item(
+            title="Jerusalem electricity company schedules power cuts through afternoon",
+            cat="westbank", score=40,
+            date=built_at - timedelta(minutes=5), pid="jdeco00001")
+        wire = self._item(
+            title="Israeli forces raid Nablus in Palestine overnight on Friday",
+            cat="westbank", score=20,
+            date=built_at - timedelta(hours=3), pid="wirenb0002")
+        homepage = build.render_page("en", [notice, wire], built_at)
+        overlay = homepage.split("hero-overlay", 1)[1][:400]
+        self.assertIn("Nablus", overlay)
+        self.assertNotIn("power cuts", overlay)
+        # The notice stays off the top block entirely — the sub grid too.
+        top_block = homepage.split('<aside class="latest">', 1)[0]
+        self.assertNotIn("power cuts", top_block.split("hero-overlay", 1)[1])
+
+    def test_hero_prefers_strongest_story_in_freshest_window(self):
+        # Within the freshest window the hero ranks by editorial score —
+        # importance leads, not simply the last item off the wire.
+        built_at = datetime(2026, 8, 9, 15, tzinfo=timezone.utc)
+        minor = self._item(
+            title="Ramallah municipality opens Palestine flower show for the season",
+            cat="westbank", score=15,
+            date=built_at - timedelta(minutes=10), pid="minorx0001")
+        major = self._item(
+            title="Israeli airstrike kills twelve Palestinians in Gaza City homes",
+            cat="gaza", score=80,
+            date=built_at - timedelta(hours=4), pid="majorx0001")
+        homepage = build.render_page("en", [minor, major], built_at)
+        overlay = homepage.split("hero-overlay", 1)[1][:400]
+        self.assertIn("airstrike", overlay)
+        self.assertNotIn("flower show", overlay)
+
     def test_ticker_is_hard_news_only(self):
         built_at = datetime(2026, 8, 7, 15, tzinfo=timezone.utc)
         feature = self._item(
