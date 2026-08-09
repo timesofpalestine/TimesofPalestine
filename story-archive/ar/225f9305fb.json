@@ -1,0 +1,38 @@
+{
+ "brief": "القوات الإسرائيلية قصفت شمال شرق مخيم البريج وسط قطاع غزة بنيران مدفعية، بحسب شبكة قدس. ولم تتضح حتى الآن تفاصيل دقيقة حول حجم الأضرار المادية أو الخسائر البشرية الناجمة عن القصف.\n\nيأتي هذا القصف في سياق التصعيد العسكري المستمر في القطاع منذ بدء العملية العسكرية الإسرائيلية. مخيم البريج، أحد أكبر التجمعات السكانية في وسط غزة، يشهد منذ أشهر قصفاً متكرراً استهدف مناطق سكنية وخدمات أساسية فيه.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/QudsN/727913",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314285",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-09T20:26:59+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social.svg",
+ "lang": "ar",
+ "link": "https://t.me/QudsN/727913",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "225f9305fb",
+ "score": 63.71,
+ "source": "شبكة قدس · تيليغرام",
+ "source_id": "tg-qudsn",
+ "source_url": "https://t.me/QudsN",
+ "title": "قصف مدفعي يستهدف شمال شرق مخيم البريج"
+}
