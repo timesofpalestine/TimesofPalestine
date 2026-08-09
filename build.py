@@ -391,6 +391,13 @@ IMAGE_BOOST = 8
 RECENCY_MAX = 50      # points for a just-published story, linear decay over MAX_AGE_HOURS
 HERO_MAX_AGE_H = 18   # the top story must be actual news, not a feature from days ago
 HERO_WINDOWS_H = (6, 12, HERO_MAX_AGE_H)  # prefer the freshest qualifying window
+# The page is alive (owner order 2026-08-09): the lead ROTATES with the build
+# clock instead of squatting for hours. Every 10-minute deploy advances the
+# hero among the strongest fresh stories — but only among stories of
+# comparable weight, so a minor item never displaces a major one.
+HERO_ROTATE_MIN = 10     # rotation step, matched to the build cadence
+HERO_ROTATE_POOL = 3     # at most this many candidates share the top slot
+HERO_ROTATE_FLOOR = 0.5  # a candidate needs at least half the leader's score
 
 # Urgent hard-news markers — these stories are what readers check the site for.
 BREAKING_RX = re.compile(
@@ -1958,7 +1965,13 @@ def dedupe_events(items):
     ), reverse=True)
     for it in ranked:
         toks = event_tokens(it["title"])
-        ext = event_tokens(f"{it['title']} {(it.get('dek') or '')[:240]}")
+        # The house brief, once written, is the richest same-language account
+        # of the story — and for wire items translated from Arabic feeds the
+        # dek was blanked, leaving the coverage nets nothing to compare
+        # (owner report 2026-08-09: two rewrites of one JDECO announcement
+        # ran side by side in The Latest). Prefer it over the feed dek.
+        body = it.get("brief") or it.get("dek") or ""
+        ext = event_tokens(f"{it['title']} {body[:240]}")
         home = None
         for cluster in clusters:
             rep, titles, token_sets, ext_sets, dates = cluster
@@ -3927,18 +3940,29 @@ def render_page(lang, items, built_at):
                 and not ROUTINE_NOTICE_RX.search(f"{i['title']} {i['dek']}")
                 and within_hours(i, max_age))
 
-    # The hero follows the news cycle: pick the strongest story from the
-    # FRESHEST window that has one (last 6h, then 12h, then 18h). Within a
-    # window the candidates rank by editorial score, so the most IMPORTANT
-    # qualifying story leads — not simply whichever wire item arrived last
-    # (owner report 2026-08-09: a utility notice led the page purely because
-    # it was newest). A boosted multi-day original still can never squat the
-    # top slot while new reporting arrives — the windows guarantee freshness.
+    # The hero follows the news cycle: pick from the FRESHEST window that has
+    # candidates (last 6h, then 12h, then 18h). Within a window the candidates
+    # rank by editorial score, so importance leads — not simply whichever wire
+    # item arrived last (owner report 2026-08-09: a utility notice led purely
+    # because it was newest). And the lead ROTATES (owner order 2026-08-09,
+    # after one story sat on top for hours through dozens of deploys): among
+    # the strongest comparable candidates, each 10-minute build moment
+    # advances the pick, so every refresh cycle shows a live front page.
+    # Deterministic for a given input set and build moment; the score floor
+    # keeps a minor story from ever displacing a major one mid-rotation.
     hero_pool = by_score
     heroes = []
     for window in HERO_WINDOWS_H:
-        heroes = take(hero_pool, lambda i, w=window: hero_ok(i, max_age=w), 1)
-        if heroes:
+        candidates = [i for i in hero_pool if id(i) not in used
+                      and hero_ok(i, max_age=window)][:HERO_ROTATE_POOL]
+        if candidates:
+            floor = candidates[0]["score"] * HERO_ROTATE_FLOOR
+            candidates = [i for i in candidates
+                          if i is candidates[0] or i["score"] >= floor]
+            step = int(now.timestamp() // (HERO_ROTATE_MIN * 60))
+            pick = candidates[step % len(candidates)]
+            used.add(id(pick))
+            heroes = [pick]
             break
     heroes = (heroes
               or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress", "arts")
