@@ -6,19 +6,7 @@
    "article": "https://shehabnews.com/post/161956/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%AE%D8%B7%D8%B1-%D8%A8%D9%87%D8%AF%D9%85-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D9%81%D9%8A-%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%AD%D9%85%D8%B5-%D9%88%D8%B5%D9%88%D8%B1-%D8%A8%D8%A7%D9%87%D8%B1-%D8%AC%D9%86%D9%88%D8%A8-%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D9%82%D8%AF%D8%B3",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/israeli-military-closes-palestinian-christian-village-taybeh-citing-settler",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/eyesonpal/53707",
-   "name": "Eye on Palestine",
-   "url": "https://t.me/eyesonpal",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-10T09:05:00+00:00",
@@ -36,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "f49cb5c929",
- "score": 48.71,
+ "score": 48.57,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
