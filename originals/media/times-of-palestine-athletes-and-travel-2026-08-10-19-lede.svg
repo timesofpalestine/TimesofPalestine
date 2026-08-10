@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Israel's war and US visa denials strand Palestinian sport</title>
+<desc id="dsc">Dark editorial graphic. Left: a plan view of a wrecked stadium — Yarmouk Stadium in Gaza City — its stands broken, a crater on one half of the pitch and tents for displaced families on the other. Right: the Palestinian Olympic Committee count of 265 sports facilities hit, split into 184 destroyed and 81 partially damaged, and 1,007 athletes and sports workers killed since October 2023, among them 45 women. Below, an accreditation card for Jibril Rajoub, president of the Palestinian Football Association, stamped "visa not granted".</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- HEADER -->
+<text x="90" y="86" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" letter-spacing="3.4" fill="#c7a86b">SPORT · GAZA AND WASHINGTON</text>
+<text x="90" y="142" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">Israel&#8217;s war and US visa denials</text>
+<text x="90" y="192" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">strand Palestinian sport</text>
+<text x="1540" y="132" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#aaa9a5">الحرب الإسرائيلية ومنع التأشيرات الأمريكية</text>
+<text x="1540" y="168" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#aaa9a5">يحاصران الرياضة الفلسطينية</text>
+<line x1="90" y1="230" x2="1540" y2="230" stroke="#2c2d31" stroke-width="2"/>
+
+<!-- LEFT: STADIUM PLAN -->
+<text x="90" y="292" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" letter-spacing="3" fill="#c7a86b">ON THE GROUND</text>
+<text x="770" y="292" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#59a97d">على الأرض</text>
+
+<rect x="110" y="330" width="620" height="380" rx="110" fill="#191a1d" stroke="#4a4b50" stroke-width="6" stroke-dasharray="230 38 96 30 170 46"/>
+<rect x="155" y="362" width="530" height="316" rx="92" fill="none" stroke="#c7a86b" stroke-width="7" opacity="0.22"/>
+<rect x="190" y="392" width="460" height="256" rx="6" fill="#1a3a2a" stroke="#286344" stroke-width="3"/>
+<line x1="420" y1="392" x2="420" y2="648" stroke="#286344" stroke-width="3"/>
+<circle cx="420" cy="520" r="44" fill="none" stroke="#286344" stroke-width="3"/>
+<rect x="190" y="458" width="56" height="124" fill="none" stroke="#286344" stroke-width="3"/>
+<rect x="594" y="458" width="56" height="124" fill="none" stroke="#286344" stroke-width="3"/>
+
+<!-- crater / destruction on one half -->
+<polygon points="498,464 548,448 596,472 626,516 604,572 546,592 502,562 484,510" fill="#8a1f2d" opacity="0.62"/>
+<polygon points="524,492 566,482 592,516 570,552 530,548 514,518" fill="#141517"/>
+<polygon points="642,398 690,382 706,414 660,432" fill="#55565a" opacity="0.8"/>
+<polygon points="654,612 700,600 712,634 664,646" fill="#55565a" opacity="0.8"/>
+<polygon points="600,352 646,340 654,368 606,380" fill="#55565a" opacity="0.6"/>
+
+<!-- tents on the other half -->
+<polygon points="212,584 236,540 260,584" fill="#f2eee8" opacity="0.88"/>
+<polygon points="266,556 290,512 314,556" fill="#f2eee8" opacity="0.88"/>
+<polygon points="252,634 276,590 300,634" fill="#f2eee8" opacity="0.78"/>
+<polygon points="320,616 344,572 368,616" fill="#f2eee8" opacity="0.78"/>
+<polygon points="334,524 356,484 378,524" fill="#f2eee8" opacity="0.68"/>
+
+<text x="110" y="748" font-family="'Source Serif 4',Georgia,serif" font-size="22" fill="#f2eee8">Yarmouk Stadium, Gaza City</text>
+<text x="110" y="776" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Pitch, stands, running track and lighting wrecked; the ground was later</text>
+<text x="110" y="798" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">covered in tents for displaced families.</text>
+<text x="110" y="828" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#59a97d">ملعب اليرموك — مدينة غزة</text>
+<text x="110" y="856" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#8a8985">Seven major stadiums destroyed, among them Beit Hanoun, Beit Lahia, Jabalia and Rafah; 45 sports clubs.</text>
+
+<!-- RIGHT: THE COUNT -->
+<text x="830" y="292" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" letter-spacing="3" fill="#c7a86b">PALESTINIAN OLYMPIC COMMITTEE COUNT</text>
+<text x="1540" y="292" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#59a97d">حصيلة اللجنة الأولمبية الفلسطينية</text>
+
+<text x="830" y="378" font-family="'Source Serif 4',Georgia,serif" font-size="66" fill="#c7a86b">265</text>
+<text x="962" y="356" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">sports facilities in the Gaza Strip hit</text>
+<text x="962" y="382" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">منشأة رياضية في قطاع غزة تضررت</text>
+
+<rect x="830" y="404" width="700" height="36" fill="#232427"/>
+<rect x="830" y="404" width="486" height="36" fill="#8a1f2d"/>
+<rect x="1316" y="404" width="214" height="36" fill="#c7a86b" opacity="0.55"/>
+<line x1="1316" y1="404" x2="1316" y2="440" stroke="#111214" stroke-width="3"/>
+<text x="830" y="468" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">184 destroyed outright</text>
+<text x="1530" y="468" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">81 partially damaged</text>
+<text x="830" y="492" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5">184 مدمّرة بالكامل</text>
+<text x="1530" y="492" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5">81 متضررة جزئيًا</text>
+
+<text x="830" y="566" font-family="'Source Serif 4',Georgia,serif" font-size="66" fill="#f2eee8">1,007</text>
+<text x="1000" y="544" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">athletes and sports workers killed</text>
+<text x="1000" y="570" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">since October 2023 — among them 45 women</text>
+<text x="1000" y="598" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">رياضيًا وعاملًا في القطاع الرياضي قُتلوا منذ أكتوبر 2023</text>
+
+<!-- ACCREDITATION CARD -->
+<rect x="830" y="632" width="710" height="180" rx="10" fill="#17181b" stroke="#c7a86b" stroke-width="2" opacity="0.95"/>
+<rect x="830" y="632" width="8" height="180" fill="#286344"/>
+<text x="862" y="668" font-family="'Libre Franklin',Arial,sans-serif" font-size="12" letter-spacing="2.6" fill="#c7a86b">ACCREDITED · FIFA WORLD CUP 2026</text>
+<text x="862" y="708" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#f2eee8">Jibril Rajoub</text>
+<text x="862" y="736" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">President, Palestinian Football Association</text>
+<text x="862" y="762" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Watched the opener from Mexico City, awaiting a US visa</text>
+<text x="862" y="792" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#59a97d">جبريل الرجوب — رئيس الاتحاد الفلسطيني لكرة القدم</text>
+
+<g transform="rotate(-10 1398 722)">
+<rect x="1284" y="682" width="228" height="80" rx="5" fill="none" stroke="#C8102E" stroke-width="4" opacity="0.9"/>
+<text x="1398" y="716" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="1.4" fill="#C8102E">VISA NOT GRANTED</text>
+<text x="1398" y="744" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#C8102E">لم تُمنح تأشيرة</text>
+</g>
+
+<!-- FOOTER -->
+<line x1="90" y1="866" x2="1540" y2="866" stroke="#2c2d31" stroke-width="2"/>
+<text x="90" y="888" font-family="'Libre Franklin',Arial,sans-serif" font-size="12" fill="#8a8985">Sources: Palestinian Olympic Committee and Palestinian Football Association; ESPN, 12 June; The New Arab; Gaza Municipality</text>
+<text x="1540" y="888" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="12" letter-spacing="2.6" fill="#c7a86b">TIMES OF PALESTINE</text>
+</svg>
