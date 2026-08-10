@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Mona Miari: the voice that refuses to go numb</title>
+  <desc id="d">House illustration for the Mona Miari feature: a singer at a standing microphone before a cracked wall with light breaking through, her voice drawn as a sound wave that becomes a red tatreez embroidery band. English and Arabic titles.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101114"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c7a86b" stop-opacity=".5"/><stop offset="1" stop-color="#c7a86b" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}.gold{fill:#c7a86b}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- the wall, cracked, light breaking through -->
+  <g opacity=".8">
+    <g fill="#232428" stroke="#2e2f34" stroke-width="2">
+      <rect x="920" y="180" width="150" height="90"/><rect x="1080" y="180" width="150" height="90"/><rect x="1240" y="180" width="150" height="90"/><rect x="1400" y="180" width="130" height="90"/>
+      <rect x="845" y="280" width="150" height="90"/><rect x="1005" y="280" width="150" height="90"/><rect x="1330" y="280" width="150" height="90"/>
+      <rect x="920" y="380" width="150" height="90"/><rect x="1240" y="380" width="150" height="90"/><rect x="1400" y="380" width="130" height="90"/>
+      <rect x="845" y="480" width="150" height="90"/><rect x="1165" y="480" width="150" height="90"/><rect x="1330" y="480" width="150" height="90"/>
+      <rect x="920" y="580" width="150" height="90"/><rect x="1080" y="580" width="150" height="90"/><rect x="1240" y="580" width="150" height="90"/>
+    </g>
+    <path d="M1180 180 L1150 300 L1205 420 L1160 540 L1210 670" stroke="#101114" stroke-width="26" fill="none" stroke-linecap="round"/>
+    <path d="M1180 180 L1150 300 L1205 420 L1160 540 L1210 670" stroke="url(#light)" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- singer at the microphone -->
+  <g filter="url(#sh)">
+    <circle cx="420" cy="360" r="58" fill="#2a2b30"/>
+    <path d="M420 418 C 330 430, 300 520, 295 670 L545 670 C 540 520, 510 430, 420 418 Z" fill="#2a2b30"/>
+    <path d="M362 340 C 350 260, 490 260, 478 340 C 482 390, 460 410, 420 414 C 380 410, 358 390, 362 340 Z" fill="#1a1b1f"/>
+    <rect x="588" y="330" width="10" height="340" rx="5" fill="#3a3b40"/>
+    <circle cx="593" cy="312" r="26" fill="#c7a86b"/>
+    <path d="M593 670 L545 700 L641 700 Z" fill="#3a3b40"/>
+  </g>
+
+  <!-- the voice: sound wave becoming tatreez -->
+  <path d="M470 330 Q 530 300 590 315" stroke="#e8d9b8" stroke-width="4" fill="none" opacity=".9"/>
+  <g stroke="#8a1f2d" stroke-width="7" fill="none" stroke-linejoin="round">
+    <path d="M620 300 L660 260 L700 300 L740 260 L780 300 L820 260 L860 300 L900 260 L940 300 L980 260 L1020 300 L1060 260 L1100 300 L1140 260 L1180 300"/>
+    <path d="M620 330 L660 290 L700 330 L740 290 L780 330 L820 290 L860 330 L900 290 L940 330 L980 290 L1020 330 L1060 290 L1100 330 L1140 290 L1180 330" opacity=".55"/>
+  </g>
+  <g fill="#286344">
+    <circle cx="660" cy="315" r="6"/><circle cx="740" cy="315" r="6"/><circle cx="820" cy="315" r="6"/>
+    <circle cx="900" cy="315" r="6"/><circle cx="980" cy="315" r="6"/><circle cx="1060" cy="315" r="6"/><circle cx="1140" cy="315" r="6"/>
+  </g>
+
+  <!-- title lockup -->
+  <text x="70" y="110" class="sans ivory" font-size="64" font-weight="800" letter-spacing="2">MONA MIARI</text>
+  <text x="70" y="168" class="arabic gold" font-size="46" font-weight="700">منى ميعاري</text>
+  <text x="70" y="806" class="sans muted" font-size="27">The voice that will never go comfortably numb</text>
+  <text x="70" y="850" class="arabic muted" font-size="24">الصوت الذي يأبى أن يعتاد الخدر</text>
+  <text x="1530" y="850" class="sans muted" font-size="19" text-anchor="end">Illustration: Times of Palestine</text>
+</svg>
