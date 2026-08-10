@@ -1,0 +1,32 @@
+{
+ "brief": "ذكرت قناة «غزة الآن» على تيليغرام تنويهاً حول جهد استخباري يجري في أجواء وسط مدينة غزة، في إشارة إلى عمليات أمنية جارية في المنطقة. ولم تفصح المصادر عن طبيعة هذا الجهد أو الجهات المسؤولة عن تنفيذه، مما يضفي غموضاً على تفاصيل ما يحدث على أرض الواقع.\n\nيأتي التنويه وسط تطورات أمنية متسارعة تشهدها مدينة غزة، إذ تشير مثل هذه الإجراءات عادة إلى عمليات استخباراتية موجهة أو أنشطة أمنية مكثفة. ولم تُرفق القناة معلومات إضافية حول الإطار الزمني للعملية أو نطاقها الجغرافي.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82349",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-10T10:16:51+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82349",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b75fc718ce",
+ "score": 49.68,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "جهود استخباراتية في وسط مدينة غزة"
+}
