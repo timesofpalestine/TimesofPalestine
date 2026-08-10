@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Palestinian football restarts in September after three years without a domestic season</title>
+<desc id="d">Times of Palestine graphic. Left: a diagram of a football pitch, with only the left half drawn as playable turf inside a dashed full-size outline, labelled as the half-sized Palestine Pitch in Tal al-Hawa, Gaza City. Right: two stacked bars from the Palestinian Football Association's own report of 2 March 2026 — 1,007 members of Gaza's sports community killed between 7 October 2023 and 12 February 2026 (565 recorded by the football association, 317 by Olympic federations, 125 by the scouts association) and 265 sports facilities damaged (184 destroyed, 81 partially destroyed). Notes record that Gaza football has been suspended since October 2023 and that FIFA pledged $50 million for a stadium with no date or site announced.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="turf" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#286344" stop-opacity="0.55"/>
+<stop offset="1" stop-color="#286344" stop-opacity="0.18"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="86" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4.5" fill="#c7a86b">PALESTINIAN FOOTBALL ASSOCIATION</text>
+<text x="90" y="150" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#f2eee8">The domestic season restarts in September</text>
+<text x="90" y="200" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#59a97d" direction="rtl">استئناف المنافسات المحلية في سبتمبر</text>
+<text x="90" y="240" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">First phase “activational only” — no promotion or relegation. Opening competition: the Cup of the Thousand Martyrs <tspan fill="#c7a86b">كأس الألف شهيد</tspan></text>
+<rect x="90" y="266" width="1420" height="2" fill="#8a1f2d" opacity="0.75"/>
+
+<!-- LEFT: pitch diagram -->
+<text x="90" y="322" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3" fill="#c7a86b">A FRACTION OF A PITCH</text>
+
+<!-- full-size outline, lost -->
+<rect x="110" y="360" width="700" height="400" fill="none" stroke="#aaa9a5" stroke-opacity="0.35" stroke-width="3" stroke-dasharray="12 12"/>
+<text x="640" y="392" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5" opacity="0.75">full-size pitch</text>
+
+<!-- playable half -->
+<rect x="110" y="360" width="350" height="400" fill="url(#turf)"/>
+<rect x="110" y="360" width="350" height="400" fill="none" stroke="#f2eee8" stroke-width="3"/>
+<rect x="110" y="450" width="105" height="220" fill="none" stroke="#f2eee8" stroke-width="2.5" opacity="0.9"/>
+<rect x="110" y="500" width="42" height="120" fill="none" stroke="#f2eee8" stroke-width="2.5" opacity="0.9"/>
+<path d="M460 490 A70 70 0 0 0 460 630" fill="none" stroke="#f2eee8" stroke-width="2.5" opacity="0.9"/>
+<circle cx="460" cy="560" r="6" fill="#f2eee8" opacity="0.9"/>
+
+<!-- ball -->
+<circle cx="300" cy="560" r="30" fill="#f2eee8"/>
+<path d="M300 542 l17 12 -6 20 h-22 l-6 -20 z" fill="#1d1e21"/>
+<path d="M300 530 v12 M317 554 l12 -6 M311 574 l7 14 M289 574 l-7 14 M283 554 l-12 -6" stroke="#1d1e21" stroke-width="3" fill="none"/>
+
+<!-- rubble on the unplayable half -->
+<g fill="#8a1f2d" opacity="0.7">
+<path d="M520 700 l34 -22 20 26 -30 18 z"/>
+<path d="M600 730 l40 -14 12 26 -38 12 z"/>
+<path d="M690 690 l30 -20 22 22 -28 22 z"/>
+</g>
+<g fill="#aaa9a5" opacity="0.45">
+<path d="M560 640 l28 -16 14 20 -26 14 z"/>
+<path d="M650 610 l26 -12 12 20 -26 10 z"/>
+<path d="M730 640 l30 -12 10 22 -30 10 z"/>
+</g>
+
+<text x="110" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Palestine Pitch, Tal al-Hawa, Gaza City — half-sized field, rubble cleared</text>
+<text x="110" y="832" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#c7a86b" direction="rtl">ملعب فلسطين – تل الهوا، مدينة غزة</text>
+<text x="110" y="864" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Football in the Gaza Strip has been suspended since October 2023.</text>
+
+<line x1="870" y1="300" x2="870" y2="864" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- RIGHT: data -->
+<text x="910" y="322" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3" fill="#c7a86b">THE FEDERATION’S OWN COUNT</text>
+<text x="910" y="352" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" direction="rtl">حصيلة الاتحاد الفلسطيني لكرة القدم</text>
+
+<text x="910" y="416" font-family="'Source Serif 4',Georgia,serif" font-size="42" font-weight="700" fill="#f2eee8">1,007</text>
+<text x="1030" y="416" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">members of Gaza’s sports community killed</text>
+<text x="1030" y="442" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">7 October 2023 – 12 February 2026 · 962 men, 45 women</text>
+
+<rect x="910" y="460" width="314" height="44" fill="#C8102E"/>
+<rect x="1224" y="460" width="176" height="44" fill="#c7a86b"/>
+<rect x="1400" y="460" width="70" height="44" fill="#59a97d"/>
+<text x="918" y="490" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" font-weight="700" fill="#f2eee8">565</text>
+<text x="1232" y="490" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" font-weight="700" fill="#1d1e21">317</text>
+<text x="1408" y="490" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" font-weight="700" fill="#111214">125</text>
+<text x="910" y="530" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">football association</text>
+<text x="1224" y="530" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Olympic federations</text>
+<text x="1372" y="530" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">scouts</text>
+
+<text x="910" y="612" font-family="'Source Serif 4',Georgia,serif" font-size="42" font-weight="700" fill="#f2eee8">265</text>
+<text x="1010" y="612" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">stadiums, halls and administrative buildings damaged</text>
+<rect x="910" y="632" width="389" height="44" fill="#8a1f2d"/>
+<rect x="1299" y="632" width="171" height="44" fill="#c7a86b"/>
+<text x="918" y="662" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" font-weight="700" fill="#f2eee8">184 destroyed</text>
+<text x="1307" y="662" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" font-weight="700" fill="#1d1e21">81 partial</text>
+
+<text x="910" y="722" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Source: PFA report, 2 March 2026, via WAFA. No independent audit has been published.</text>
+<line x1="910" y1="742" x2="1470" y2="742" stroke="#3a3b3f" stroke-width="2"/>
+<text x="910" y="780" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">FIFA pledge: $50m for a Gaza stadium of 20,000–25,000 seats,</text>
+<text x="910" y="806" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">$15m academy, $2.5m for 50 mini-pitches. No date or site made public.</text>
+<text x="910" y="842" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Yarmouk Stadium, Gaza City, capacity 9,000 — destroyed during the war.</text>
+</svg>
