@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Who moves first: the sequencing argument over Gaza, 9-10 August 2026</title>
+  <desc id="desc">Three columns setting out what Israel demands, what the American-chaired Board of Peace says the roadmap requires, and what Hamas has accepted, with the disputed figures for Israeli control of Gaza, the three-year disarmament horizon and the unbuilt stabilization force and police beneath.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a1f2d"/>
+      <stop offset=".5" stop-color="#286344"/>
+      <stop offset="1" stop-color="#c7a86b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#a9a8a4}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:17px}
+      .small{font-size:19px}
+      .body{font-size:22px}
+      .label{font-size:18px;font-weight:800;letter-spacing:1.2px}
+      .fig{font-size:52px;font-weight:800}
+      .figs{font-size:34px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="80" class="serif ivory" font-size="50" font-weight="800">Who moves first: the Gaza sequencing argument</text>
+  <text x="90" y="124" class="sans muted body">Three positions on the same American document, 9-10 August 2026</text>
+  <text x="1520" y="80" class="arabic ivory" font-size="36" font-weight="800" text-anchor="end">من يتحرك أولاً: خلاف الترتيب في غزة</text>
+  <text x="1520" y="120" class="arabic muted small" text-anchor="end">ثلاثة مواقف من وثيقة أمريكية واحدة</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="172" width="452" height="392" rx="18" fill="#26272b" stroke="#dc6572" stroke-width="3"/>
+    <text x="102" y="216" class="sans red label">ISRAEL — نتنياهو</text>
+    <text x="102" y="262" class="serif ivory" font-size="27" font-weight="800">Disarm completely,</text>
+    <text x="102" y="296" class="serif ivory" font-size="27" font-weight="800">then we discuss leaving</text>
+    <text x="102" y="342" class="sans muted small">Netanyahu to the cabinet, Sunday:</text>
+    <text x="102" y="372" class="sans ivory small">&#171;Israel rejects the 15-point document.&#187;</text>
+    <text x="102" y="402" class="sans muted small">No withdrawal from any part of Gaza</text>
+    <text x="102" y="430" class="sans muted small">until Hamas gives up every weapon.</text>
+    <text x="490" y="478" class="arabic gold small" text-anchor="end">نزع كامل للسلاح أولاً</text>
+    <text x="490" y="508" class="arabic muted small" text-anchor="end">ثم البحث في الانسحاب</text>
+    <text x="490" y="538" class="arabic muted tiny" text-anchor="end">«إسرائيل ترفض وثيقة الخمس عشرة نقطة»</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="574" y="172" width="452" height="392" rx="18" fill="#26272b" stroke="#c7a86b" stroke-width="3"/>
+    <text x="606" y="216" class="sans gold label">BOARD OF PEACE — مجلس السلام</text>
+    <text x="606" y="262" class="serif ivory" font-size="27" font-weight="800">Verify sector by sector,</text>
+    <text x="606" y="296" class="serif ivory" font-size="27" font-weight="800">then Israel steps back</text>
+    <text x="606" y="342" class="sans muted small">Mladenov, Channel 12:</text>
+    <text x="606" y="372" class="sans ivory small">&#171;Nobody is required to do anything</text>
+    <text x="606" y="400" class="sans ivory small">— last of all Israel — before we</text>
+    <text x="606" y="428" class="sans ivory small">have verified steps on the ground.&#187;</text>
+    <text x="994" y="478" class="arabic gold small" text-anchor="end">تحقّق ميداني قطاعاً بقطاع</text>
+    <text x="994" y="508" class="arabic muted small" text-anchor="end">ثم انسحاب تدريجي حتى السياج</text>
+    <text x="994" y="538" class="arabic muted tiny" text-anchor="end">الخطة مبنية على التحقق لا على الثقة</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1078" y="172" width="452" height="392" rx="18" fill="#26272b" stroke="#61aa80" stroke-width="3"/>
+    <text x="1110" y="216" class="sans green label">HAMAS — حماس</text>
+    <text x="1110" y="262" class="serif ivory" font-size="27" font-weight="800">Committed to the roadmap,</text>
+    <text x="1110" y="296" class="serif ivory" font-size="27" font-weight="800">disarmament over three years</text>
+    <text x="1110" y="342" class="sans muted small">Accepted 6 August; reaffirmed Sunday,</text>
+    <text x="1110" y="372" class="sans muted small">demanding a full ceasefire, withdrawal,</text>
+    <text x="1110" y="400" class="sans muted small">open crossings and reconstruction.</text>
+    <text x="1110" y="428" class="sans ivory small">Reads decommissioning as storage inside Gaza.</text>
+    <text x="1498" y="478" class="arabic gold small" text-anchor="end">التزام بخارطة الطريق</text>
+    <text x="1498" y="508" class="arabic muted small" text-anchor="end">ونزع سلاح على ثلاث سنوات</text>
+    <text x="1498" y="538" class="arabic muted tiny" text-anchor="end">تخزين السلاح داخل غزة لا نقله خارجها</text>
+  </g>
+
+  <rect x="70" y="600" width="1460" height="6" fill="url(#band)"/>
+
+  <text x="90" y="650" class="sans gold label">THE NUMBERS UNDER THE ARGUMENT — أرقام تحت الخلاف</text>
+
+  <g>
+    <text x="90" y="722" class="sans red fig">60%</text>
+    <text x="90" y="756" class="sans muted small">of Gaza under Israeli control,</text>
+    <text x="90" y="782" class="sans muted small">Mladenov told Channel 12</text>
+    <text x="90" y="812" class="arabic muted tiny">نسبة السيطرة الإسرائيلية بحسب ملادينوف</text>
+  </g>
+
+  <g>
+    <text x="380" y="722" class="sans gold fig">53%</text>
+    <text x="380" y="756" class="sans muted small">the same board's officials</text>
+    <text x="380" y="782" class="sans muted small">told Ynet on Monday</text>
+    <text x="380" y="812" class="arabic muted tiny">الرقم الذي قدّمه المجلس نفسه لـ«واينت»</text>
+  </g>
+
+  <g>
+    <text x="670" y="722" class="sans ivory fig">3</text>
+    <text x="710" y="722" class="sans muted figs">yrs</text>
+    <text x="670" y="756" class="sans muted small">to full disarmament, with an</text>
+    <text x="670" y="782" class="sans muted small">eight-month first phase</text>
+    <text x="670" y="812" class="arabic muted tiny">ثلاث سنوات لنزع السلاح كاملاً</text>
+  </g>
+
+  <g>
+    <text x="960" y="722" class="sans green fig">20k</text>
+    <text x="960" y="756" class="sans muted small">stabilization troops planned,</text>
+    <text x="960" y="782" class="sans muted small">plus 12,000 Palestinian police</text>
+    <text x="960" y="812" class="arabic muted tiny">قوة الاستقرار المقررة وشرطة فلسطينية</text>
+  </g>
+
+  <g>
+    <text x="1250" y="722" class="sans ivory fig">36%</text>
+    <text x="1250" y="756" class="sans muted small">of Gaza still held by Hamas,</text>
+    <text x="1250" y="782" class="sans muted small">down from 47% in October 2025</text>
+    <text x="1250" y="812" class="arabic muted tiny">تراجع سيطرة حماس من 47% إلى 36%</text>
+  </g>
+
+  <text x="90" y="866" class="sans muted tiny">Times of Palestine — Washington Brief, 10 August 2026. Figures as stated by the named officials and analysts.</text>
+  <text x="1520" y="866" class="arabic muted tiny" text-anchor="end">تايمز أوف فلسطين — الموجز الأمريكي، 10 آب/أغسطس 2026</text>
+</svg>
