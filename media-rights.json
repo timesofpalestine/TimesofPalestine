@@ -371,6 +371,18 @@
       "rightsBasis": "owned",
       "credit": "Graphic: Times of Palestine",
       "source": "Times of Palestine"
+    },
+    {
+      "asset": "https://img.youtube.com/vi/WBmrT3uqmeM/hqdefault.jpg",
+      "rightsBasis": "news-reporting thumbnail — still of the official Comfortably Numb Re-Imagined music video this feature covers and embeds",
+      "credit": "Photo: Roger Waters & Mona Miari — Comfortably Numb Re-Imagined (official video thumbnail)",
+      "source": "https://www.youtube.com/watch?v=WBmrT3uqmeM"
+    },
+    {
+      "asset": "originals/media/times-of-palestine-mona-miari-2026.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
     }
   ]
 }
