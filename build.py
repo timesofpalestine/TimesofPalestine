@@ -2558,6 +2558,7 @@ STR = {
         "dir": "ltr", "lang": "en",
         "site_name": "Times of Palestine",
         "masthead_top": "TIMES", "masthead_bottom": "OF PALESTINE",
+        "tagline": "Independent Palestine news in English and Arabic — sourced, data-driven, updated continuously",
         "kicker": "Every outlet · Every story · No censorship",
         "view_all": "View all →", "search_nav": "🔍 Search",
         "search_go": "Search",
@@ -2598,7 +2599,7 @@ STR = {
         "title_suffix": "Independent Palestine News",
         "read_original": "Read the full story at",
         "photo_via": "Photo via",
-        "byline": "By TOP Newsdesk",
+        "byline": "By the Times of Palestine Newsdesk",
         "kind_original": "Original Reporting", "kind_brief": "TOP News Brief",
         "kind_curated": "Curated Summary", "based_on": "Based on reporting by",
         "keep_reading": "Keep Reading",
@@ -2628,6 +2629,7 @@ STR = {
         "dir": "rtl", "lang": "ar",
         "site_name": "تايمز أوف فلسطين",
         "masthead_top": "تايمز", "masthead_bottom": "أوف فلسطين",
+        "tagline": "صحافة فلسطينية مستقلة بالعربية والإنجليزية — موثّقة بالبيانات وتتجدد على مدار الساعة",
         "kicker": "كل المصادر · كل الأخبار · بلا رقابة",
         "view_all": "كل التغطية ←", "search_nav": "🔍 بحث",
         "search_go": "ابحث",
@@ -2953,6 +2955,10 @@ h1,h2,h3{text-wrap:balance}
 .masthead .l2{font-family:var(--serif);font-weight:700;color:var(--ink);font-size:clamp(.68rem,1.8vw,.98rem);letter-spacing:.42em;text-indent:.42em}
 [lang=ar] .masthead .l1{font-family:"Noto Kufi Arabic","Amiri",serif;font-weight:800;letter-spacing:0;transform:none;font-size:clamp(2.2rem,6.8vw,3.5rem);line-height:1.2}
 [lang=ar] .masthead .l2{letter-spacing:0;text-indent:0;font-family:"Noto Kufi Arabic","Amiri",serif;font-size:clamp(.95rem,2.3vw,1.2rem);line-height:1.45}
+/* One-line positioning statement under the wordmark (owner-forwarded review,
+   2026-08-10): what the paper is, before the About page. Front page only. */
+.masthead .tagline{margin-top:.6rem;font-size:.72rem;font-weight:600;color:var(--muted);letter-spacing:.02em}
+[lang=ar] .masthead .tagline{font-size:.84rem;letter-spacing:0}
 .masthead.compact{padding:.8rem 0 .6rem}
 .masthead.compact .l1{font-size:1.6rem}
 .masthead.compact .l2{font-size:.52rem;letter-spacing:.34em;text-indent:.34em}
@@ -3037,6 +3043,8 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
   nav.sections .nav-group.all:focus-within .nav-drop.mega{grid-template-columns:1fr;max-height:72vh;overflow-y:auto;gap:.1rem}
   .masthead{padding:.85rem 0 .65rem}
   .masthead .wrap::after{margin-top:.5rem}
+  .masthead .tagline{margin-top:.4rem;font-size:.62rem;padding-inline:1rem}
+  [lang=ar] .masthead .tagline{font-size:.74rem}
   /* Tap targets (a11y, evaluation 2026-08-05): utility controls reach the
      house ~44px tap height on touch widths, matching the nav rows above. */
   .themetoggle,.litetoggle,.tick-pause{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}
@@ -3298,6 +3306,9 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .story div.lede{width:100%;aspect-ratio:16/9;margin-top:1.5rem;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}.story div.lede svg{width:64px;height:64px;opacity:.9}.story img.lede{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 18%;background:#e8e6df;margin-top:1.5rem;border-radius:var(--r)}
 .story .kind{margin-top:1.5rem;display:inline-block;background:var(--red);color:#fff;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .65rem;border-radius:2px}[lang=ar] .story .kind{letter-spacing:0;font-size:.78rem}.story .based{display:block;margin-top:.3rem;font-weight:600;color:var(--muted);text-transform:none;letter-spacing:0}.story .byline{margin-top:.7rem;font-size:.74rem;font-weight:800;color:var(--green);text-transform:uppercase;letter-spacing:.1em}
 [lang=ar] .story .byline{letter-spacing:0;text-transform:none;font-size:.85rem}
+.story .desk-note{margin-top:.4rem;font-size:.72rem;color:var(--muted);line-height:1.6}
+.story .desk-note a{color:var(--green-deep);font-weight:700}
+[lang=ar] .story .desk-note{font-size:.82rem}
 .story-toc{margin-top:1.35rem;padding:1rem 1.1rem;border:1px solid var(--line-dark);background:var(--card);border-radius:var(--r)}
 .story-toc .toc-title{font-size:.72rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:.7rem}
 [lang=ar] .story-toc .toc-title{letter-spacing:.03em;font-size:.82rem}
@@ -3453,7 +3464,7 @@ section.opinion{background:#17171c;border-top-color:var(--red)}
 .hero-overlay .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q{color:#f93549}
 .hero-overlay h2 a:hover{color:#ffb8be}
 .card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.sub-body h3 a:hover{color:#f93549}
-.meta .src,.card .chip,.rowcard .chip,.sub-body .chip,.gi-src a,.gi-dl a,.social-note a,.about-telegram a{color:#3fd07c}
+.meta .src,.card .chip,.rowcard .chip,.sub-body .chip,.gi-src a,.gi-dl a,.gi-method summary,.story .desk-note a,.social-note a,.about-telegram a{color:#3fd07c}
 .story ul.lf,.story ol.lf{color:#d6d6de}
 .story code{background:rgba(255,255,255,.12)}
 .story table.lf th{background:rgba(255,255,255,.06)}
@@ -4204,7 +4215,34 @@ def render_page(lang, items, built_at):
 
     hero_subs_html = "".join(sub_item(it, lang, P) for it in hero_subs)
     latest_html = "".join(latest_item(it, lang, P) for it in latest)
-    gaza_panel = __import__("gaza_panel").panel(lang); tips_band = (
+    # Machine-readable front page (audit 2026-08-07 P2; owner-forwarded review
+    # 2026-08-10): an ItemList of the top stories exactly as the page ranks
+    # them — hero, then the top block, then the Latest rail — for rich-result
+    # eligibility. Alive by construction: it re-ranks with every build.
+    _li_seen, _li = set(), []
+    for _it in ([hero] if hero else []) + hero_subs + latest:
+        _u = story_url(_it, lang)
+        if _u in _li_seen:
+            continue
+        _li_seen.add(_u)
+        _li.append({"@type": "ListItem", "position": len(_li) + 1,
+                    "url": _u, "name": _it["title"]})
+        if len(_li) >= 10:
+            break
+    itemlist_script = ""
+    if _li:
+        itemlist_script = ('<script type="application/ld+json">' + jsonld_dump({
+            "@context": "https://schema.org", "@type": "ItemList",
+            "name": ("أبرز أخبار تايمز أوف فلسطين" if lang == "ar"
+                     else "Times of Palestine — top stories"),
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "itemListElement": _li}) + "</script>")
+    _gp = __import__("gaza_panel")
+    gaza_panel = _gp.panel(lang)
+    # Key figures surfaced before the first scroll (owner-forwarded review,
+    # 2026-08-10) — the strip and the full ledger revise together (PANEL_JS).
+    gaza_strip = _gp.strip(lang) if gaza_panel else ""
+    tips_band = (
         f'<section class="tipband" id="tips"><div class="wrap">{LOCK_SVG}'
         f'<div class="txt"><p class="kick">{t["tips_kicker"]}</p>'
         f'<h2>{t["tips_title"]}</h2><p class="sub">{t["tips_sub"]}</p>'
@@ -4238,7 +4276,7 @@ def render_page(lang, items, built_at):
 <meta property="og:description" content="{esc(meta_desc(t['mission']))}">
 <meta property="og:url" content="{BASE_URL}/{lang}/">
 <meta property="og:image" content="{BASE_URL}/og-banner.png"><meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{org_jsonld(lang)}</script>
+<script type="application/ld+json">{org_jsonld(lang)}</script>{itemlist_script}
 {'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
 {_THEME_JS}
 </head>
@@ -4253,6 +4291,7 @@ def render_page(lang, items, built_at):
 
 <header class="masthead"><div class="wrap">
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
+  <p class="tagline">{t['tagline']}</p>
 </div></header>
 
 <nav class="sections" aria-label="{"التصفح الرئيسي" if lang == "ar" else "Primary"}"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_groups}{nav_specials_top}<span class="nav-util"><a class="util" id="searchtoggle" href="search.html" aria-expanded="false" aria-controls="navsearch">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div><div class="nav-search" id="navsearch" hidden><form action="search.html" method="get" role="search"><input name="q" type="search" placeholder="{esc(t['search_prompt'])}" aria-label="{esc(t['search_title'])}" autocomplete="off"><button type="submit">{t['search_go']}</button></form></div></nav>
@@ -4266,6 +4305,7 @@ addEventListener("scroll",function(){{var n=document.querySelector("nav.sections
 if(n&&n.querySelector(".nav-group.open")&&Math.abs(window.scrollY-(+n.dataset.oy||0))>32)closeGroups()}},{{passive:true}})}})()</script>
 
 <main id="top">
+  {gaza_strip}
   <div class="wrap hero-zone">
     <div class="hero">
       {hero_html}
@@ -4394,9 +4434,22 @@ def render_story(it, lang, related, rail, built_at):
                     f'title="{emb_cap}" loading="lazy" frameborder="0"></iframe></div>'
                     f'<figcaption>{emb_cap}</figcaption></figure>')
         kind = t["kind_original"] if it.get("original") else t["kind_brief"]
+        # One-line desk note under the byline (owner-forwarded review,
+        # 2026-08-10): who the Newsdesk is, in a sentence, with the full
+        # account one tap away on the About page.
+        desk_note = (
+            '<p class="desk-note">'
+            + ("تجمع غرفة الأخبار التغطيات من الوكالات والمصادر الأولية "
+               "وتعيد صياغة كل مادة داخلياً قبل النشر. "
+               '<a href="../about.html">كيف نصنع صحافتنا ←</a>'
+               if lang == "ar" else
+               "The Newsdesk gathers reporting from wire services and primary "
+               "sources and rewrites every story in-house before publication. "
+               '<a href="../about.html">How our journalism is made →</a>')
+            + "</p>")
         summary = (f'<p class="kind">{kind}</p>'
                    f'<p class="byline">{t["byline"]} · {reading_time_label(brief, lang)}</p>'
-                   f'{story_toc}{paras}{source_embed}')
+                   f'{desk_note}{story_toc}{paras}{source_embed}')
     else:
         story_toc = ""
         if it.get("original"):

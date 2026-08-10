@@ -124,6 +124,13 @@ ABOUT = {
              "promptly and note the change, dated, on the story itself. "
              "To request a correction, contact the newsroom "
              "on the channel below with the story link and the error."),
+            ("Why there are no comments",
+             "We do not host a comments section, by deliberate policy: moderating "
+             "one safely, in two languages, on coverage of a war, would take "
+             "resources we put into reporting instead — and readers pay the price "
+             "when abuse takes a page over. The conversation lives on our Telegram "
+             "channel, and the newsroom reads every message that arrives through "
+             "the channels below: corrections, tips and criticism alike."),
             ("Contact the newsroom",
              "Reach us on Signal — encrypted, and anonymous if you choose: "
              "message @TOP.972 or use the button below. You can also message the "
@@ -210,6 +217,12 @@ ABOUT = {
              "اكتمل، وما ينتظر. وحين نخطئ نصحح فوراً ونثبّت التعديل بتاريخه على "
              "المادة نفسها. لطلب تصويب، راسل غرفة الأخبار عبر القناة أدناه مع "
              "رابط المادة وبيان الخطأ."),
+            ("لماذا لا توجد تعليقات؟",
+             "لا نستضيف قسماً للتعليقات، وهذا خيار تحريري مقصود: إدارتُه بأمان، "
+             "وبلغتين، وعلى تغطية حرب، تستهلك موارد نضعها في التغطية نفسها — "
+             "والقارئ هو من يدفع الثمن حين تستولي الإساءات على الصفحة. النقاش "
+             "يجري في قناتنا على تيليغرام، وتقرأ غرفة الأخبار كل رسالة تصل عبر "
+             "القنوات أدناه: تصويباً كانت أم معلومة أم نقداً."),
             ("اتصل بغرفة الأخبار",
              "راسلنا على «سيغنال» — مشفّر، ومجهول الهوية إن اخترت: "
              "@TOP.972 أو عبر الزر أدناه. ويمكنك أيضاً مراسلة بوت غرفة الأخبار على "
