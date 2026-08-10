@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/08/german-foreign-ministry-says-gaza-plan-could-lead-towards-disarmament-hamas",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-599",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-10T12:46:39+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "70b0cee6a5",
- "score": 77.11,
+ "score": 76.92,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
