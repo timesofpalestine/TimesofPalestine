@@ -27,11 +27,11 @@ below.
 2. **Emoji icons (🌐 🔒)** — NOT CHANGED. The 🌐 glyph on the language
    toggle is a documented house convention (design-system §3). Swapping to a
    custom icon set is a design-direction change → issue #6 for the owner.
-3. **Most read / trending module** — BLOCKED on analytics. The site ships
-   no tracking; a privacy-first counter hook exists (`ANALYTICS_GOATCOUNTER`
-   env var, one script tag) but the owner has not chosen a provider
-   (also 2026-08-07 audit D2). Without it, any "most read" list would be
-   fabricated. Owner decision needed.
+3. **Most read / trending module** — analytics UNBLOCKED 2026-08-10 (owner
+   ordered analytics on; GoatCounter tag now emitted on every page template
+   once the `ANALYTICS_GOATCOUNTER` repo variable carries the site code —
+   the owner creates the free GoatCounter account). A "most read" module
+   can follow once real counts accumulate.
 4. **Condensed live-stats strip near the top** — ✅ SHIPPED. `.gi-strip`
    (`gaza_panel.strip()`): Gaza killed/wounded + prisoners held at the very
    top of the front page, live-updating on the ledger's existing 5-minute
@@ -52,11 +52,13 @@ below.
    to "By the Times of Palestine Newsdesk" (AR already correct; 2026-08-07
    audit item C7), plus a one-line `.desk-note` under every Newsdesk byline
    linking to the About page's how-our-journalism-is-made section.
-8. **Newsletter signup** — BLOCKED on provider. The build already renders a
-   footer link when `NEWSLETTER_URL` is set (owner decision on
-   Buttondown/Listmonk/etc. pending — 2026-08-07 audit D1). No form is
-   faked in the meantime; RSS/JSON feeds and the Telegram channel are the
-   live follow paths and are linked in the footer.
+8. **Newsletter signup** — ✅ BUILT 2026-08-10 (owner order): the
+   `.newsband` inline signup rides above the footer on the front page and
+   story pages, with a real Buttondown embed-subscribe form when
+   `NEWSLETTER_URL` is a Buttondown page and a plain subscribe link for
+   any other provider. Goes live the moment the owner creates the
+   newsletter account and sets the repo variable; until then nothing
+   renders — no fake form.
 9. **Positioning one-liner near the masthead** — ✅ SHIPPED. `.tagline`
    under the front-page wordmark, bilingual, from the string tables.
 
