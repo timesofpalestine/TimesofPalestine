@@ -1,0 +1,38 @@
+{
+ "brief": "The death toll in Gaza has reached 73,386 people since the onset of the conflict, Ma'an Wire reported. The cumulative figure reflects casualties across the territory over the course of the offensive, which has stretched across multiple months and affected civilian and combatant populations alike.\n\nThe updated count underscores the scale of destruction and loss of life documented throughout the military operations in the enclave. Health authorities and humanitarian organizations have continued to track casualty figures as conditions on the ground remain fluid and access to affected areas remains constrained in many sectors.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2166668.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/161934/73-386-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7-%D9%88174-250-%D9%85%D8%B5%D8%A7%D8%A8%D8%A7-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-10T08:17:00+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2166668.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a1111d9464",
+ "score": 63.91,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gaza death toll reaches 73,386 since war began"
+}

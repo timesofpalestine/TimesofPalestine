@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli occupation forces carried out widespread attacks across the Gaza Strip on Sunday, according to medical and journalist sources cited by IMEMC News. The assault included artillery shelling, tank and naval fire, drone strikes, home demolitions, and assaults on displacement camps stretching from Rafah northward across the territory.\n\nThe operations spanned multiple weaponry types and targeted both residential structures and populated encampments. Medical sources reported casualties from the strikes, while displacement camps housing civilians fleeing earlier violence came under direct fire. Journalist accounts described homes leveled in several locations as the military campaign continued across the densely populated coastal strip.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/gaza-ongoing-israeli-violations-amid-dire-conditions",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-09T22:44:43+00:00",
+ "dek": "Medical and journalist sources in Gaza said Israeli occupation forces carried out attacks across the Gaza Strip on Sunday, including artillery shelling, tank and naval fire, drone strikes, home demolitions, and assaults on displacement camps from Rafah to…",
+ "image": "https://imemc.org/wp-content/uploads/2026/08/GazaBombing-e1786315107666.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/gaza-ongoing-israeli-violations-amid-dire-conditions",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/gaza-ongoing-israeli-violations-amid-dire-conditions"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5ec3259f83",
+ "score": 57.28,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces attack Gaza Strip with artillery, drones, naval fire"
+}
