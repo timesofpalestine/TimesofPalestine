@@ -61,6 +61,9 @@ land in a specific window.
 - **Real Lives:** at least one humans original per week.
   - ✅ week of Aug 3–9 — `nasrallah-neustadt-laureate-2026.*` (2026-08-08):
     Ibrahim Nasrallah, the Wehdat camp and the Neustadt Prize.
+  - ✅ week of Aug 10–16 — `lahore-gaza-dentistry-graduates-2026.*`
+    (2026-08-10): the 51 al-Azhar dentistry students who finished their
+    degrees at the University of Lahore under the G-HOPE scholarships.
 - **Arabic-first commissioning:** 2–3 originals per month reported for the
   Arabic reader first (Arab Support and Her Story are the natural homes),
   then rendered into English.
@@ -69,6 +72,14 @@ land in a specific window.
     Arabic first and then into English.
 - **Her Story pipeline:** keep at least one women-section topic in the
   active queue at all times (two added 2026-08-06).
+
+## Standing services kept current
+
+- **Scholarship guide** (`palestine-scholarships-guide-2026.*`): last swept
+  2026-08-10 — added Pakistan's G-HOPE / Alkhidmat medical pathway (288
+  Gaza students enrolled, 51 dentistry graduates in July 2026) to both
+  editions. Next sweep: retire passed windows and check the Türkiye
+  Bursları and Chevening openings when the autumn cycles publish.
 
 ## Production backlogs (worked down by the daily editor cycle)
 
