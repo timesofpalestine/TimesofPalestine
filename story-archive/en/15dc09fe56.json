@@ -15,16 +15,22 @@
    "verified": false
   },
   {
-   "article": "https://www.theguardian.com/world/2026/aug/10/benjamin-netanyahu-rejection-us-deal-gaza-risky-gamble",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": false
-  },
-  {
    "article": "https://www.aljazeera.com/features/2026/8/10/we-have-no-one-palestinians-react-to-israels-rejection-of-gaza-plan?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/pleasing-no-one-netanyahu-puts-election-first-gaza-decision",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/aug/10/benjamin-netanyahu-rejection-us-deal-gaza-risky-gamble",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   },
   {
    "article": "https://imemc.org/article/netanyahu-rejects-gaza-roadmap",
@@ -48,7 +54,7 @@
  "modified": null,
  "original": true,
  "pid": "15dc09fe56",
- "score": 86.83,
+ "score": 86.8,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
