@@ -1,0 +1,32 @@
+{
+ "brief": "The Palestinian Journalists Syndicate documented 108 attacks by Israeli forces against Palestinian journalists and media workers during July, according to Middle East Eye. The recorded incidents included detentions of news personnel alongside other forms of assault and interference with journalistic activity.\n\nThe documentation represents a significant concentration of incidents against the press in a single month. The syndicate's tally encompasses attacks on both individual journalists and broader media operations, though the union did not break down the specific nature of each incident or distinguish between physical violence, arrest, and other forms of obstruction.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/union-documents-108-israeli-attacks-against-palestinian-journalists-july",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-10T06:04:35+00:00",
+ "dek": "Union documents 108 Israeli attacks against Palestinian journalists in July The Palestinian Journalists Syndicate documented 108 attacks by the Israeli occupation against Palestinian journalists and media workers in July. The attacks include detentions,…",
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/union-documents-108-israeli-attacks-against-palestinian-journalists-july",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0f77a698e9",
+ "score": 47.6,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Palestinian Journalists Syndicate documents 108 Israeli attacks in July"
+}
