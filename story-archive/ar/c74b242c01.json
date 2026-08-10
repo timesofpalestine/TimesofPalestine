@@ -7,6 +7,12 @@
    "name": "تايمز أوف فلسطين",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://t.me/gazaalannet/82347",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
   }
  ],
  "date": "2026-08-10T08:20:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "c74b242c01",
- "score": 87.31,
+ "score": 87.25999999999999,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
