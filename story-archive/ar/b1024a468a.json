@@ -27,15 +27,15 @@
    "verified": true
   },
   {
-   "article": "https://www.alquds.co.uk/%d9%86%d8%aa%d9%86%d9%8a%d8%a7%d9%87%d9%88-%d9%8a%d8%b1%d9%81%d8%b9-%d8%a7%d9%84%d9%82%d9%86%d8%a7%d8%b9-%d9%84%d8%a7-%d8%a3%d8%b1%d9%8a%d8%af-%d8%b3%d9%84%d8%a7%d9%85%d8%a7-%d9%81%d9%8a-%d8%ba%d8%b2",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
    "article": "https://t.me/gazaalannet/82317",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%ba%d8%b2%d8%a9-%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-7-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-%d8%a8%d8%a5%d8%b7%d9%84%d8%a7%d9%82-%d9%86%d8%a7%d8%b1-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
    "verified": true
   }
  ],
@@ -54,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "b1024a468a",
- "score": 60.77,
+ "score": 60.58,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",

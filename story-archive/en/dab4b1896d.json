@@ -1,0 +1,50 @@
+{
+ "brief": "The United States will rely on mounting economic pressure rather than immediate military action against Iran, according to Al Jazeera English. President Trump characterized the approach as \"semi-negotiating\" with Tehran, signaling a strategy centered on financial leverage over direct confrontation at this stage.\n\nIsrael has formally rejected a 15-point Gaza peace plan, according to the report. The rejection underscores deepening rifts over any potential agreement governing the territory's future. The move comes amid elevated regional tensions spanning multiple fronts, with diplomacy facing significant obstacles from key parties involved in ongoing conflicts.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/liveblog/2026/8/10/iran-war-live-us-semi-negotiating-with-tehran-israel-rejects-gaza-plan?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-rejects-trumps-15-point-plan-gaza-says-netanyahu-0",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/netanyahu-rejects-gaza-plan-new-break-trump",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/netanyahu-rejects-gaza-roadmap",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-10T00:00:00+00:00",
+ "dek": "Trump says US will wait for economic pressure to mount on Iran, as Israel formally rejects 15-point Gaza peace plan.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/AP26220552236900-1786319193.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/liveblog/2026/8/10/iran-war-live-us-semi-negotiating-with-tehran-israel-rejects-gaza-plan?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/liveblog/2026/8/10/iran-war-live-us-semi-negotiating-with-tehran-israel-rejects-gaza-plan?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dab4b1896d",
+ "score": 49.14,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Trump opts for economic pressure on Iran as Israel rejects Gaza plan"
+}
