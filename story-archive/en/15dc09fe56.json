@@ -6,30 +6,24 @@
    "article": "original:board-of-peace-fifteen-points-2026-08-10.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/10/trump-says-relationship-is-good-even-as-netanyahu-rejects-gaza-peace-plan?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
   },
   {
    "article": "http://www.democracynow.org/2026/8/10/headlines",
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
-   "verified": false
-  },
-  {
-   "article": "https://www.aljazeera.com/features/2026/8/10/we-have-no-one-palestinians-react-to-israels-rejection-of-gaza-plan?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
   },
   {
    "article": "https://www.al-monitor.com/originals/2026/08/pleasing-no-one-netanyahu-puts-election-first-gaza-decision",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
-  },
-  {
-   "article": "https://imemc.org/article/netanyahu-rejects-gaza-roadmap",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
    "verified": false
   }
  ],
@@ -48,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "15dc09fe56",
- "score": 86.24000000000001,
+ "score": 86.19,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
