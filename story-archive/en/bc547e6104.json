@@ -6,31 +6,19 @@
    "article": "original:dardik-westbank-removal-order-2026-08-10.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://shehabnews.com/post/161986/%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D9%82%D8%AA%D8%AD%D9%85-%D9%82%D8%B1%D9%8A%D8%A9-%D8%AA%D9%84-%D8%AC%D9%86%D9%88%D8%A8-%D8%BA%D8%B1%D8%A8-%D9%86%D8%A7%D8%A8%D9%84%D8%B3-%D8%AA%D9%85%D9%87%D9%8A%D8%AF%D8%A7-%D9%84%D9%87%D8%AF%D9%85-%D9%85%D9%86%D8%B2%D9%84-%D8%A7%D9%84%D8%B4%D9%87%D9%8A%D8%AF-%D9%81%D8%A7%D8%B1%D9%88%D9%82-%D8%B1%D9%85%D8%B6%D8%A7%D9%86",
-   "name": "Shehab Wire (EN)",
-   "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/maannews/36161",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://mondoweiss.net/2026/08/is-this-how-our-story-ends-palestinian-refugees-live-in-fear-as-israel-takes-aim-at-west-bank-camps",
-   "name": "Mondoweiss",
-   "url": "https://mondoweiss.net/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://imemc.org/article/colonizer-violations-intensify-across-west-bank-districts",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
+  },
+  {
+   "article": "https://t.me/maannews/36167",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-10T08:50:00+00:00",
@@ -48,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "bc547e6104",
- "score": 86.24000000000001,
+ "score": 86.2,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
