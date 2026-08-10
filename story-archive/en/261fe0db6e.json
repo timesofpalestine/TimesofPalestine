@@ -1,0 +1,44 @@
+{
+ "brief": "Drop Site News reported that Trump has adopted a lower-profile approach to Iran, stepping back from more confrontational rhetoric on the relationship between the two countries. The strategic shift represents a notable change in how the administration is publicly framing its stance toward Tehran.\n\nIsraeli Prime Minister Netanyahu rejected a proposed balance-of-power arrangement aimed at resolving the conflict in Gaza, according to Drop Site News. The rebuff came as Ukrainian forces conducted a strike on a Russian oil refinery, killing at least 13 workers in an attack on the energy facility. The operation underscores Ukraine's continued targeting of Russian industrial infrastructure supporting the war effort.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.dropsitenews.com/p/trump-iran-hormuz-netanyahu-gaza-board-peace-ukraine-russia-refinery",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/netanyahu-rejects-gaza-plan-new-break-trump",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/8/10/headlines",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-10T15:31:41+00:00",
+ "dek": "Drop Site Daily: August 10, 2026.",
+ "image": "https://substackcdn.com/image/fetch/$s_!7wqO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4809df0f-3576-4bbe-8ad9-c7f602a23735_6000x4000.heic",
+ "lang": "en",
+ "link": "https://www.dropsitenews.com/p/trump-iran-hormuz-netanyahu-gaza-board-peace-ukraine-russia-refinery",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Drop Site News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.dropsitenews.com/p/trump-iran-hormuz-netanyahu-gaza-board-peace-ukraine-russia-refinery"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "261fe0db6e",
+ "score": 63.85,
+ "source": "Drop Site News",
+ "source_id": "dropsite",
+ "source_url": "https://www.dropsitenews.com/",
+ "title": "Trump downplays Iran tensions as Netanyahu blocks Gaza peace plan"
+}
