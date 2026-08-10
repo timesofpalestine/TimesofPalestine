@@ -1,0 +1,56 @@
+{
+ "brief": "بحسب وكالة معا، ارتفع عدد الشهداء في قطاع غزة إلى 73,386 منذ انطلاق العدوان على المنطقة. يأتي هذا الرقم في سياق استمرار العمليات العسكرية التي شنتها إسرائيل على القطاع، مخلّفة خسائر فادحة في الأرواح بين السكان.\n\nتعكس هذه الأرقام حجم الدمار الإنساني الذي شهده قطاع غزة على مدار فترة العدوان، حيث استهدفت العمليات العسكرية مناطق سكنية وبنية تحتية مختلفة. وسجّلت الأيام الأخيرة من العدوان استمراراً في القصف والعمليات العسكرية على أراضي القطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2166668.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/161934/73-386-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7-%D9%88174-250-%D9%85%D8%B5%D8%A7%D8%A8%D8%A7-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "وكالة شهاب (حصري)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314346",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/389713",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/184640/%D8%B4%D9%87%D9%8A%D8%AF%D8%A7%D9%86-%D9%888-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%AE%D9%84%D8%A7%D9%84-%D8%A7%D9%8424-%D8%B3%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D9%85%D8%A7%D8%B6%D9%8A%D8%A9-%D8%A8%D8%BA%D8%B2%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-10T08:17:00+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-b.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2166668.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a1111d9464",
+ "score": 63.68,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "الشهداء في غزة يتجاوزون 73 ألفاً منذ بدء العدوان"
+}
