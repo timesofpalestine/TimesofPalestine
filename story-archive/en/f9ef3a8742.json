@@ -7,6 +7,12 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://imemc.org/article/gaza-ongoing-israeli-violations-amid-dire-conditions",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
   }
  ],
  "date": "2026-08-09T07:13:24+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "f9ef3a8742",
- "score": 33.89,
+ "score": 33.7,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
