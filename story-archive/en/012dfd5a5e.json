@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli forces killed one Palestinian in Gaza, the Al Jazeera English reported, as the territory's Health Ministry documented the arrival of two bodies at hospitals, one recovered from rubble. The death toll came as Prime Minister Benjamin Netanyahu rejected a Trump administration proposal to end the conflict.\n\nBodies continued to arrive at Gaza hospitals from collapsed structures as the military campaign persisted. Netanyahu's rejection of ceasefire terms signals the Israeli government's intention to maintain current military operations despite international pressure for a settlement.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/10/israeli-forces-kill-one-in-gaza-as-another-body-recovered-from-rubble?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/netanyahu-rejects-gaza-plan-new-break-trump",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-10T07:43:01+00:00",
+ "dek": "Gaza Health Ministry says hospitals receive bodies of two Palestinians as Netanyahu rejects Trump plan to end war.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/03/AFP__20260227__996Q6CQ__v1__HighRes__PalestinianIsraelConflict-1772949809.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/10/israeli-forces-kill-one-in-gaza-as-another-body-recovered-from-rubble?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/10/israeli-forces-kill-one-in-gaza-as-another-body-recovered-from-rubble?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "012dfd5a5e",
+ "score": 63.73,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces kill Palestinian in Gaza amid war stalemate"
+}
