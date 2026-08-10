@@ -119,6 +119,12 @@ load-bearing statistic — one or two per story, never as decoration.
   House `--red` only (it is the same red family as the great newsweekly
   covers); never introduce a second red for the mark, and never
   letter-space the Arabic.
+  **Tagline** (`.masthead .tagline`, owner-forwarded review 2026-08-10):
+  one muted line under the wordmark on the FRONT PAGE only — the paper's
+  positioning statement ("Independent Palestine news in English and
+  Arabic — sourced, data-driven, updated continuously"), from the
+  per-language string tables. Compact mastheads (story/service pages)
+  never carry it; keep it one line, never a second sentence.
 
 - **Section nav** (`nav.sections`, flat-priority design — owner decision
   2026-08-06, replacing the four per-group dropdowns; line-tab language of
@@ -223,6 +229,24 @@ load-bearing statistic — one or two per story, never as decoration.
   region/key/bilingual labels/value/as-of/source per row, written by
   `payload_csv` beside the JSON every build) plus a cite-the-primary-sources
   note — the ledger is a research surface, readers may take the data.
+  **Inline methodology** (`.gi-method`, owner-forwarded review 2026-08-10):
+  a collapsed `<details>` directly under the ledger's section head — "How
+  these figures are compiled" — naming each row's source, the refresh
+  cadence, and what the `+` and `?` marks mean. It renders only when live
+  rows do, bilingual, prose not bullets; the per-term `.gi-help` tooltips
+  stay as the figure-level layer.
+  **Key-figures strip** (`.gi-strip` in `gaza_panel.strip()`,
+  owner-forwarded review 2026-08-10): a single-line house-black band at
+  the very top of `<main>` on the front page — kicker "Palestine by the
+  Numbers", the three defining figures (Gaza killed and wounded,
+  prisoners held), and a "Full ledger" link to the `#numbers` anchor on
+  `section.gaza-index`. The cells reuse the ledger's `data-gi-key`/
+  `data-gi-val` contract, so `PANEL_JS`'s five-minute poll revises strip
+  and ledger together (its number scan is document-wide for this reason).
+  Casualty restraint binds here exactly as on the ledger: no pulsing, no
+  motion of its own, ivory numerals on black, horizontal swipe on phones.
+  It renders only when the ledger itself does, and never grows beyond one
+  line — it is a pointer to the ledger, not a second dashboard.
 - **Latest rail = live wire** (`aside.latest`, also the story-page "keep"
   rail): entries sit on a vertical timeline rule with a marker dot per item —
   hollow/muted at rest, red and `pulse`-ing while the story is fresh
@@ -237,6 +261,12 @@ load-bearing statistic — one or two per story, never as decoration.
   both languages), and retires NEW marks and fresh dots once a story crosses
   the 90-minute line. Never let a server-rendered relative time go stale in a
   new component — reuse the `<time datetime>` + `_CLOCK_JS` contract.
+- **Desk note** (`.desk-note`, story pages — owner-forwarded review
+  2026-08-10): one muted line under the byline of every Newsdesk-written
+  story ("The Newsdesk gathers reporting from wire services and primary
+  sources and rewrites every story in-house before publication") with a
+  green link to the About page's how-our-journalism-is-made account.
+  Bilingual, one sentence plus the link, never a bio box.
 - **Share surfaces**: the inline `.share` row under the story body is the
   universal control; on ≥1200px viewports a floating `.share-rail` of round
   compact buttons rides fixed in the story gutter (`inset-inline-start`

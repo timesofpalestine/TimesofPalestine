@@ -113,7 +113,7 @@ GAZA_INDEX_KEYS = [
 
 # Styles travel with the panel. The figures declare no colour of their own so
 # they inherit the page ink and stay readable in both the light and dark themes.
-PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-block{border:1px solid var(--line);background:var(--card);box-shadow:var(--sh);padding:1.05rem 1.15rem .95rem;margin-bottom:1rem}.gi-block:last-child{margin-bottom:0}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.9rem}.gi-cell{background:var(--paper);border:1px solid var(--line);border-inline-start:3px solid var(--red);border-radius:6px;padding:.7rem .8rem .6rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:.85rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-region{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 .8rem}.gi-region::before{content:\"\";width:4px;height:.95rem;background:var(--red);border-radius:2px;flex-shrink:0}[lang=ar] .gi-region{letter-spacing:0;font-size:.82rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-grid.gi-pr{grid-template-columns:repeat(5,minmax(0,1fr))}.gi-comp{display:flex;block-size:7px;border-radius:4px;overflow:hidden;background:var(--line);margin-top:.95rem}.gi-comp .seg{display:block;block-size:100%}.gi-legend{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:.5rem;font-size:.7rem;font-weight:600;color:var(--muted)}.gi-legend .gi-lead{font-weight:800;color:var(--ink)}.gi-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:.35rem}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(2,minmax(0,1fr))}}.gi-help{position:relative;display:inline-block;margin-inline-start:.35rem;inline-size:15px;block-size:15px;border-radius:50%;background:var(--line);color:var(--muted);font-size:.62rem;font-weight:800;line-height:15px;text-align:center;cursor:help;vertical-align:middle}.gi-help:focus-visible{outline:2px solid var(--green);outline-offset:1px}.gi-help .gi-tip{position:absolute;inset-block-end:calc(100% + 8px);inset-inline-end:-8px;inline-size:min(240px,58vw);background:#0b0b0c;color:#f2eee8;font-size:.7rem;font-weight:500;line-height:1.55;padding:.55rem .7rem;border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,.35);opacity:0;visibility:hidden;transition:opacity .15s;z-index:30;text-align:start;pointer-events:none;cursor:auto}.gi-help:hover .gi-tip,.gi-help:focus .gi-tip{opacity:1;visibility:visible}.gi-dl{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-dl a{color:var(--green);font-weight:700}.toll-chart{margin:.9rem 0 0;padding-top:.9rem;border-top:1px solid var(--line)}.toll-chart figcaption{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:.5rem}.tc-head{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}[lang=ar] .tc-head{letter-spacing:0;font-size:.8rem}.tc-now{font-family:var(--serif);font-weight:900;font-size:1.3rem;color:var(--red);font-variant-numeric:tabular-nums}[lang=ar] .tc-now{font-weight:700}.toll-chart svg{display:block;inline-size:100%;block-size:120px}.tc-area{fill:rgba(200,16,46,.14)}.tc-line{fill:none;stroke:var(--red);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linejoin:round}.tc-grid{stroke:var(--line);stroke-width:1;vector-effect:non-scaling-stroke}.tc-tick{fill:var(--muted);font-size:9px;font-weight:700}.tc-foot{margin:.35rem 0 0;font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}"
+PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-block{border:1px solid var(--line);background:var(--card);box-shadow:var(--sh);padding:1.05rem 1.15rem .95rem;margin-bottom:1rem}.gi-block:last-child{margin-bottom:0}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.9rem}.gi-cell{background:var(--paper);border:1px solid var(--line);border-inline-start:3px solid var(--red);border-radius:6px;padding:.7rem .8rem .6rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:.85rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-region{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 .8rem}.gi-region::before{content:\"\";width:4px;height:.95rem;background:var(--red);border-radius:2px;flex-shrink:0}[lang=ar] .gi-region{letter-spacing:0;font-size:.82rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-grid.gi-pr{grid-template-columns:repeat(5,minmax(0,1fr))}.gi-comp{display:flex;block-size:7px;border-radius:4px;overflow:hidden;background:var(--line);margin-top:.95rem}.gi-comp .seg{display:block;block-size:100%}.gi-legend{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:.5rem;font-size:.7rem;font-weight:600;color:var(--muted)}.gi-legend .gi-lead{font-weight:800;color:var(--ink)}.gi-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:.35rem}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(2,minmax(0,1fr))}}.gi-help{position:relative;display:inline-block;margin-inline-start:.35rem;inline-size:15px;block-size:15px;border-radius:50%;background:var(--line);color:var(--muted);font-size:.62rem;font-weight:800;line-height:15px;text-align:center;cursor:help;vertical-align:middle}.gi-help:focus-visible{outline:2px solid var(--green);outline-offset:1px}.gi-help .gi-tip{position:absolute;inset-block-end:calc(100% + 8px);inset-inline-end:-8px;inline-size:min(240px,58vw);background:#0b0b0c;color:#f2eee8;font-size:.7rem;font-weight:500;line-height:1.55;padding:.55rem .7rem;border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,.35);opacity:0;visibility:hidden;transition:opacity .15s;z-index:30;text-align:start;pointer-events:none;cursor:auto}.gi-help:hover .gi-tip,.gi-help:focus .gi-tip{opacity:1;visibility:visible}.gi-dl{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-dl a{color:var(--green);font-weight:700}.toll-chart{margin:.9rem 0 0;padding-top:.9rem;border-top:1px solid var(--line)}.toll-chart figcaption{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:.5rem}.tc-head{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}[lang=ar] .tc-head{letter-spacing:0;font-size:.8rem}.tc-now{font-family:var(--serif);font-weight:900;font-size:1.3rem;color:var(--red);font-variant-numeric:tabular-nums}[lang=ar] .tc-now{font-weight:700}.toll-chart svg{display:block;inline-size:100%;block-size:120px}.tc-area{fill:rgba(200,16,46,.14)}.tc-line{fill:none;stroke:var(--red);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linejoin:round}.tc-grid{stroke:var(--line);stroke-width:1;vector-effect:non-scaling-stroke}.tc-tick{fill:var(--muted);font-size:9px;font-weight:700}.tc-foot{margin:.35rem 0 0;font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}.gi-strip{background:var(--black);border-block-end:1px solid #26262c}.gi-strip .wrap{display:flex;align-items:baseline;gap:1.4rem;padding-block:.5rem;overflow-x:auto;scrollbar-width:none}.gi-strip .wrap::-webkit-scrollbar{display:none}.gs-kick{flex-shrink:0;font-size:.62rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#f93549;white-space:nowrap}[lang=ar] .gs-kick{letter-spacing:0;font-size:.74rem}.gs-cell{white-space:nowrap}.gs-num{font-family:var(--serif);font-weight:900;font-size:1rem;color:#f2eee8;font-variant-numeric:tabular-nums}[lang=ar] .gs-num{font-weight:700}.gs-lab{margin-inline-start:.35rem;font-size:.68rem;font-weight:600;color:#a3a8b2}[lang=ar] .gs-lab{font-size:.78rem}.gs-more{flex-shrink:0;margin-inline-start:auto;font-size:.68rem;font-weight:700;color:#3fd07c;white-space:nowrap}[lang=ar] .gs-more{font-size:.78rem}.gi-method{margin:-.3rem 0 1rem;font-size:.74rem;color:var(--muted)}[lang=ar] .gi-method{font-size:.84rem}.gi-method summary{cursor:pointer;font-weight:700;color:var(--green-deep)}.gi-method p{margin:.45rem 0 0;line-height:1.65;max-inline-size:60rem}"
 
 # The live layer: a gentle roll-up when the panel first scrolls into view,
 # then a refetch of /data/gaza-numbers.json every 5 minutes that animates any
@@ -132,7 +132,7 @@ function animate(el,from,to){if(RM||from===to){setNum(el,to);return}
  function step(t){var p=Math.min(1,(t-t0)/dur);p=1-Math.pow(1-p,3);
   setNum(el,from+(to-from)*p);if(p<1)requestAnimationFrame(step);else setNum(el,to)}
  requestAnimationFrame(step)}
-var nums=[].slice.call(g.querySelectorAll("[data-gi-key]"));
+var nums=[].slice.call(document.querySelectorAll("[data-gi-key]"));
 if("IntersectionObserver"in window&&!RM){
  var io=new IntersectionObserver(function(es){es.forEach(function(e){
   if(!e.isIntersecting)return;io.unobserve(e.target);
@@ -550,6 +550,38 @@ def panel(lang):
     title = "فلسطين بالأرقام" if ar else "Palestine by the Numbers"
     live = ('<span class="gi-live" role="presentation"></span>'
             if (gaza_html or wb_html or pr_html) else "")
+    # Inline methodology (owner-forwarded review, 2026-08-10): contested,
+    # high-stakes figures carry their own how-we-compile note right on the
+    # ledger — not only in the per-term tooltips and the About page.
+    method = ""
+    if gaza_html or wb_html or pr_html:
+        if ar:
+            m_sum = "كيف تُجمَع هذه الأرقام؟"
+            m_body = ("حصيلة غزة هي العدّ التراكمي لوزارة الصحة في غزة كما تنشره "
+                      "تقاريرها اليومية عبر «بيانات فلسطين»، ويُعاد جلبه مع كل دورة "
+                      "بناء للموقع. أرقام الضفة الغربية واعتداءات المستوطنين سجلُّ "
+                      "مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية (أوتشا)، وأعداد "
+                      "الأسرى أرقام مؤسسة الضمير المنشورة وتحدّثها غرفة الأخبار "
+                      "يدوياً لغياب أي واجهة بيانات حية لديها. علامة «+» تعني أن "
+                      "المصدر يقول «أكثر من»، وعلامة «؟» بجوار بعض البنود تشرح "
+                      "مصطلحاتها القانونية، وتُراجع الصفحة الأرقام تلقائياً كل خمس "
+                      "دقائق تقريباً. السجل كاملاً قابل للتنزيل أسفل هذا القسم، "
+                      "وتُنسب كل الأرقام إلى مصادرها الأولية.")
+        else:
+            m_sum = "How these figures are compiled"
+            m_body = ("The Gaza toll is the Ministry of Health's cumulative count, "
+                      "read from its daily reports as republished by Palestine "
+                      "Datasets and refetched on every build cycle. West Bank "
+                      "casualties and settler attacks are UN OCHA's record; "
+                      "prisoner counts are Addameer's published figures, maintained "
+                      "by the newsroom because no live feed exists. A “+” "
+                      "marks a figure its source reports as “more than”, "
+                      "the “?” markers explain terms that carry legal "
+                      "weight, and the page re-checks the numbers about every five "
+                      "minutes. The full ledger is downloadable at the end of this "
+                      "section, with every figure attributed to its primary source.")
+        method = (f'<details class="gi-method"><summary>{m_sum}</summary>'
+                  f'<p>{m_body}</p></details>')
     # Open data: the ledger's own JSON/CSV, for the journalists, academics and
     # NGOs who cite it. Only offered when the live rows rendered — the files
     # are written from the same payload, so they exist exactly then.
@@ -601,7 +633,44 @@ def panel(lang):
         ld = ('<script type="application/ld+json">'
               + json.dumps(ds, ensure_ascii=False, separators=(",", ":"))
               + "</script>")
-    return (f'<section class="gaza-index"><div class="wrap">'
+    return (f'<section class="gaza-index" id="numbers"><div class="wrap">'
             f'<div class="sec-head focus"><h2>{live}{title}</h2><span class="rule"></span></div>'
-            f'{gaza_html}{chart_html}{wb_html}{pr_html}{gi_html}{dl}'
+            f'{method}{gaza_html}{chart_html}{wb_html}{pr_html}{gi_html}{dl}'
             f'</div></section>{ld}<script>{PANEL_JS}</script>')
+
+
+# The condensed key-figures strip at the top of the front page (owner-forwarded
+# review, 2026-08-10): the ledger's three defining numbers — Gaza killed and
+# wounded, prisoners held — surfaced before the first scroll, linking down to
+# the full #numbers ledger. Same data, same live hooks: the cells carry
+# data-gi-key, so PANEL_JS's five-minute poll revises the strip and the ledger
+# together. Restraint binds here too — no pulsing, no motion of its own.
+def strip(lang):
+    if os.environ.get("TOP_OFFLINE") == "1":
+        return ""
+    ar = lang == "ar"
+    gaza_figs, _ga, _wb, _wba = live_figures()
+    pr_figs, _pra = prisoner_figures()
+    cells_def = [
+        ("killed", gaza_figs.get("killed"), "killed in Gaza", "شهداء غزة"),
+        ("injured", gaza_figs.get("injured"), "wounded", "الجرحى"),
+        ("pr_total", pr_figs.get("pr_total"), "prisoners held", "الأسرى"),
+    ]
+    cells = []
+    for key, val, en, arl in cells_def:
+        if not val:
+            continue
+        plus = ' data-gi-plus=""' if key in PR_PLUS else ""
+        shown = _fmt(val, None, lang) + ("+" if key in PR_PLUS else "")
+        cells.append(f'<span class="gs-cell"><b class="gs-num" data-gi-key="{key}" '
+                     f'data-gi-val="{val}"{plus}>{shown}</b>'
+                     f'<span class="gs-lab">{arl if ar else en}</span></span>')
+    if not cells:
+        return ""
+    kick = "فلسطين بالأرقام" if ar else "Palestine by the Numbers"
+    more = "السجل الكامل ←" if ar else "Full ledger →"
+    label = ("فلسطين بالأرقام — أبرز المؤشرات" if ar
+             else "Palestine by the Numbers — key figures")
+    return (f'<aside class="gi-strip" aria-label="{label}"><div class="wrap">'
+            f'<a class="gs-kick" href="#numbers">{kick}</a>{"".join(cells)}'
+            f'<a class="gs-more" href="#numbers">{more}</a></div></aside>')
