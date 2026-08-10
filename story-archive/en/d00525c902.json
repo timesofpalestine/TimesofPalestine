@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/8/9/union-reports-108-attacks-on-palestinian-journalists-in-july?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/union-documents-108-israeli-attacks-against-palestinian-journalists-july",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-09T23:01:25+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "d00525c902",
- "score": 59.23,
+ "score": 59.05,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
