@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli occupation forces conducted a raid on Balata refugee camp, the Ma'an news agency reported. During the operation, a young man was injured and several residents were detained by troops.\n\nThe circumstances surrounding the raid and the identities of those arrested remained unclear. No immediate statement was issued regarding the military's stated objectives or the full scope of detentions carried out during the incursion into the camp.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2166662.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-10T08:56:07+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2166662.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e68e60a465",
+ "score": 63.98,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces raid Balata camp, injure youth and detain residents"
+}
