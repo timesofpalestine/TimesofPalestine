@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+  <title id="t">Emirates Loves Palestine: the day at a glance</title>
+  <desc id="d">Practical details of the Emirates Loves Palestine festival: Saturday 29 August, noon to midnight, South Halls 1 and 2 of the Dubai Exhibition Centre at Expo City Dubai, free entry with advance registration, with heritage displays, the Palestinian kitchen and folk performance. English and Arabic labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".4"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin",Arial,sans-serif}
+      .arabic{font-family:Cairo,Arial,sans-serif}
+      .mono{font-family:ui-monospace,Menlo,monospace}
+      .muted{fill:#aaa9a5}.ivory{fill:#f2eee8}.gold{fill:#c7a86b}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="70" y="80" class="sans ivory" font-size="44" font-weight="800">THE DAY AT A GLANCE</text>
+  <text x="1530" y="80" class="arabic ivory" font-size="38" font-weight="700" text-anchor="end">اليوم في سطور</text>
+  <text x="70" y="120" class="sans muted" font-size="24">Emirates Loves Palestine · as announced by the organisers and reported by Khaleej Times</text>
+
+  <g filter="url(#sh)">
+    <rect x="70" y="170" width="700" height="280" rx="14" fill="#16161a" stroke="#c7a86b" stroke-width="3"/>
+    <text x="100" y="225" class="sans gold" font-size="24" font-weight="800">WHEN · الموعد</text>
+    <text x="100" y="300" class="mono ivory" font-size="56" font-weight="700">SAT · AUG 29</text>
+    <text x="100" y="355" class="sans muted" font-size="24">Twelve hours: noon to midnight</text>
+    <text x="100" y="415" class="arabic muted" font-size="22">السبت 29 أغسطس/آب.. من الظهر حتى منتصف الليل</text>
+  </g>
+  <g filter="url(#sh)">
+    <rect x="830" y="170" width="700" height="280" rx="14" fill="#16161a" stroke="#286344" stroke-width="3"/>
+    <text x="860" y="225" class="sans gold" font-size="24" font-weight="800">WHERE · المكان</text>
+    <text x="860" y="295" class="sans ivory" font-size="34" font-weight="700">Dubai Exhibition Centre</text>
+    <text x="860" y="340" class="sans muted" font-size="24">South Halls 1 and 2 · Expo City Dubai</text>
+    <text x="860" y="415" class="arabic muted" font-size="22">مركز دبي للمعارض.. القاعتان الجنوبيتان 1 و2 في مدينة إكسبو دبي</text>
+  </g>
+  <g filter="url(#sh)">
+    <rect x="70" y="490" width="700" height="280" rx="14" fill="#16161a" stroke="#8a1f2d" stroke-width="3"/>
+    <text x="100" y="545" class="sans gold" font-size="24" font-weight="800">ENTRY · الدخول</text>
+    <text x="100" y="615" class="mono ivory" font-size="56" font-weight="700">FREE</text>
+    <text x="290" y="615" class="sans muted" font-size="24">with advance registration</text>
+    <text x="100" y="665" class="sans muted" font-size="24">via the organisers' site, emiratesloves.com</text>
+    <text x="100" y="730" class="arabic muted" font-size="22">الدخول مجاني بتسجيل مسبق عبر موقع المنظمين</text>
+  </g>
+  <g filter="url(#sh)">
+    <rect x="830" y="490" width="700" height="280" rx="14" fill="#16161a" stroke="#3d4f6b" stroke-width="3"/>
+    <text x="860" y="545" class="sans gold" font-size="24" font-weight="800">WHAT · البرنامج</text>
+    <text x="860" y="605" class="sans ivory" font-size="28" font-weight="700">Heritage displays · the Palestinian kitchen</text>
+    <text x="860" y="645" class="sans ivory" font-size="28" font-weight="700">Folk singers and performing artists</text>
+    <text x="860" y="730" class="arabic muted" font-size="22">عروض تراثية ومطبخ فلسطيني وفنانون وأغانٍ شعبية</text>
+  </g>
+
+  <text x="70" y="850" class="sans muted" font-size="23">Billed by its organisers as one of the largest Palestinian cultural gatherings the UAE has hosted.</text>
+  <text x="1530" y="850" class="arabic muted" font-size="23" text-anchor="end">يقدّمه منظموه بوصفه أكبر تجمّع للجالية الفلسطينية في الإمارات</text>
+</svg>
