@@ -119,10 +119,11 @@ load-bearing statistic — one or two per story, never as decoration.
   House `--red` only (it is the same red family as the great newsweekly
   covers); never introduce a second red for the mark, and never
   letter-space the Arabic.
-  **Tagline** (`.masthead .tagline`, owner-forwarded review 2026-08-10):
-  one muted line under the wordmark on the FRONT PAGE only — the paper's
-  positioning statement ("Independent Palestine news in English and
-  Arabic — sourced, data-driven, updated continuously"), from the
+  **Tagline** (`.masthead .tagline`, owner-forwarded review 2026-08-10;
+  wording set by owner order 2026-08-10): one muted line under the
+  wordmark on the FRONT PAGE only — the paper's positioning statement
+  ("Independent news — sourced, data-driven, updated continuously" /
+  «صحافة مستقلة — موثّقة بالبيانات وتتجدد على مدار الساعة»), from the
   per-language string tables. Compact mastheads (story/service pages)
   never carry it; keep it one line, never a second sentence.
 
@@ -267,6 +268,18 @@ load-bearing statistic — one or two per story, never as decoration.
   sources and rewrites every story in-house before publication") with a
   green link to the About page's how-our-journalism-is-made account.
   Bilingual, one sentence plus the link, never a bio box.
+- **Newsletter band** (`.newsband`, owner order 2026-08-10): a quiet
+  centered signup band directly above the footer on the front page and
+  story pages — green top rule on the card surface, kicker, serif title,
+  inline email form (input + red submit), one muted honesty line ("free,
+  no tracking, unsubscribe any time"). NEVER a pop-up (owner rule
+  2026-08-02) and never mid-content. Renders only when the
+  `NEWSLETTER_URL` repo variable is set; a Buttondown newsletter URL gets
+  the real embed-subscribe form (new tab), any other provider URL a plain
+  subscribe link. All colors are tokens, so dark mode is automatic.
+  Analytics is the invisible sibling (owner order 2026-08-10): GoatCounter
+  (cookieless, no banner needed) via `analytics_tag()` on EVERY page
+  template, off until the `ANALYTICS_GOATCOUNTER` repo variable is set.
 - **Share surfaces**: the inline `.share` row under the story body is the
   universal control; on ≥1200px viewports a floating `.share-rail` of round
   compact buttons rides fixed in the story gutter (`inset-inline-start`

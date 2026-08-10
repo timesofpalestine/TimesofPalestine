@@ -54,12 +54,15 @@ GAZA = ZoneInfo("Asia/Gaza")
 SIGNAL_URL = "https://signal.me/#eu/0_b-q0RDCIq5joH5eX1lR_jVWkiLrah-MdXuqpiCawImwuEDAfdN1Z14HJk-6mRg"
 SIGNAL_USERNAME = "@TOP.972"; TELEGRAM_BOT_URL = "https://t.me/TOPnewsdeskbot"; TELEGRAM_BOT_NAME = "@TOPnewsdeskbot"  # tips go to the bot, not the channel. Subscribe-with-Google removed 2026-08-02 (owner: no email pop-up on the site).
 TELEGRAM_CHANNEL_URL = "https://t.me/timesofpalestin"  # public delivery channel, for reader follow links
-# Reader-growth hooks (owner approval 2026-08-08). All OFF until the repo
-# variables exist — no third-party request and no footer link is emitted
-# without them. No pop-ups ever (owner rule 2026-08-02); these are quiet
-# footer links and a cookieless counter.
+# Reader-growth hooks (owner approval 2026-08-08; newsletter + analytics
+# ordered ON 2026-08-10). All OFF until the repo variables exist — no
+# third-party request, no signup band and no footer link is emitted without
+# them. No pop-ups ever (owner rule 2026-08-02): the newsletter is a quiet
+# inline band above the footer (newsletter_band), analytics a cookieless
+# GoatCounter tag on every template (analytics_tag).
 #   ANALYTICS_GOATCOUNTER  e.g. "timesofpalestine" → GoatCounter site code
-#   NEWSLETTER_URL         e.g. a Buttondown/Listmonk subscribe page
+#   NEWSLETTER_URL         e.g. https://buttondown.com/<name> (real inline
+#                          form) or any provider's subscribe page (link)
 #   SUPPORT_URL            e.g. a support/donate page
 GOATCOUNTER_CODE = os.environ.get("ANALYTICS_GOATCOUNTER", "").strip()
 NEWSLETTER_URL = os.environ.get("NEWSLETTER_URL", "").strip()
@@ -2558,7 +2561,7 @@ STR = {
         "dir": "ltr", "lang": "en",
         "site_name": "Times of Palestine",
         "masthead_top": "TIMES", "masthead_bottom": "OF PALESTINE",
-        "tagline": "Independent Palestine news in English and Arabic — sourced, data-driven, updated continuously",
+        "tagline": "Independent news — sourced, data-driven, updated continuously",
         "kicker": "Every outlet · Every story · No censorship",
         "view_all": "View all →", "search_nav": "🔍 Search",
         "search_go": "Search",
@@ -2629,7 +2632,7 @@ STR = {
         "dir": "rtl", "lang": "ar",
         "site_name": "تايمز أوف فلسطين",
         "masthead_top": "تايمز", "masthead_bottom": "أوف فلسطين",
-        "tagline": "صحافة فلسطينية مستقلة بالعربية والإنجليزية — موثّقة بالبيانات وتتجدد على مدار الساعة",
+        "tagline": "صحافة مستقلة — موثّقة بالبيانات وتتجدد على مدار الساعة",
         "kicker": "كل المصادر · كل الأخبار · بلا رقابة",
         "view_all": "كل التغطية ←", "search_nav": "🔍 بحث",
         "search_go": "ابحث",
@@ -3290,6 +3293,21 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .tipband .qrbox img{width:84px;height:84px;display:block;image-rendering:pixelated}
 .tipband .qrbox span{display:block;font-size:.7rem;font-weight:800;color:#111;margin-top:.25rem;text-align:center;direction:ltr}
 .tipband .safety{flex-basis:100%;font-size:.7rem;color:#77777f;border-top:1px solid #26262c;padding-top:.7rem}
+/* Newsletter band (owner order 2026-08-10): a quiet inline signup above the
+   footer — never a pop-up (owner rule 2026-08-02). All tokens, so both
+   themes come for free. */
+.newsband{background:var(--card);border-top:3px solid var(--green);border-bottom:1px solid var(--line);text-align:center;padding-block:1.9rem 1.7rem}
+.newsband .kick{font-size:.66rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep)}
+[lang=ar] .newsband .kick{letter-spacing:0;font-size:.8rem}
+.newsband h2{font-family:var(--serif);font-weight:900;font-size:1.45rem;margin-top:.45rem;color:var(--ink)}
+[lang=ar] .newsband h2{font-weight:700;font-size:1.5rem}
+.newsband .nb-form{margin-top:1rem;display:flex;justify-content:center;align-items:stretch;gap:.5rem;flex-wrap:wrap}
+.newsband .nb-form input{inline-size:min(340px,72vw);padding:.7rem .9rem;font-size:.9rem;font-family:var(--sans);color:var(--ink);background:var(--paper);border:1px solid var(--line-dark);border-radius:var(--r)}
+.newsband .nb-form input:focus-visible{outline:2px solid var(--green);outline-offset:1px}
+.newsband .nb-form button,.newsband .nb-link{display:inline-block;background:var(--red);color:#fff;font-family:var(--sans);font-weight:800;font-size:.85rem;padding:.7rem 1.5rem;border:0;border-radius:var(--r);cursor:pointer;transition:opacity var(--tr)}
+.newsband .nb-form button:hover,.newsband .nb-link:hover{opacity:.88}
+.newsband .nb-sub{margin-top:.7rem;font-size:.72rem;color:var(--muted)}
+[lang=ar] .newsband .nb-sub{font-size:.82rem}
 /* ── story page ── */
 .story{max-width:820px;margin-inline:auto;padding:2rem 20px 1rem}
 .breadcrumbs{display:flex;flex-wrap:wrap;gap:.35rem .55rem;margin-bottom:1rem;font-size:.74rem;font-weight:700;color:var(--muted)}
@@ -3567,6 +3585,62 @@ function tick(){var now=Date.now();
    var li=t.closest("li.fresh");if(li)li.classList.remove("fresh")}})}
 tick();setInterval(tick,30000)})();
 """
+
+def analytics_tag():
+    """Privacy-first, cookieless page counting (owner order 2026-08-10):
+    GoatCounter, one async script tag, no cookies, no personal data, emitted
+    on EVERY page template — a homepage-only counter undercounts a news site
+    whose traffic lands on story pages. Off until ANALYTICS_GOATCOUNTER is
+    set; the code is public by nature (it ships in the HTML)."""
+    if not GOATCOUNTER_CODE:
+        return ""
+    return (f'<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
+            'async src="https://gc.zgo.at/count.js"></script>')
+
+
+# Buttondown newsletter page → its embed-subscribe endpoint. Accepts the
+# canonical page URL on either domain generation (buttondown.com /
+# buttondown.email), with or without the @ prefix.
+_BUTTONDOWN_RX = re.compile(
+    r"^https://buttondown\.(?:com|email)/@?([A-Za-z0-9_.-]+)/?$")
+
+
+def newsletter_band(lang):
+    """Inline email signup above the footer (owner order 2026-08-10) —
+    a quiet band, never a pop-up (owner rule 2026-08-02). Renders only when
+    NEWSLETTER_URL is configured. A Buttondown newsletter page gets the real
+    inline form (POST to its embed-subscribe endpoint, new tab); any other
+    provider URL gets a plain subscribe link, so the band never breaks on a
+    provider change."""
+    if not NEWSLETTER_URL:
+        return ""
+    ar = lang == "ar"
+    kicker = "النشرة البريدية" if ar else "THE NEWSLETTER"
+    title = ("تصلك أبرز تغطياتنا إلى بريدك" if ar
+             else "Get Times of Palestine in your inbox")
+    sub = ("مجاناً، من دون تتبّع، ويمكنك إلغاء الاشتراك متى شئت. "
+           "لا نستخدم بريدك إلا لإرسال النشرة." if ar else
+           "Free, no tracking, unsubscribe any time. Your address is used "
+           "for the newsletter and nothing else.")
+    cta = "اشترك" if ar else "Subscribe"
+    m = _BUTTONDOWN_RX.match(NEWSLETTER_URL)
+    if m:
+        action = f"https://buttondown.com/api/emails/embed-subscribe/{m.group(1)}"
+        control = (
+            f'<form class="nb-form" action="{esc(action)}" method="post" target="_blank">'
+            f'<input type="email" name="email" required '
+            f'placeholder="{"بريدك الإلكتروني" if ar else "Your email address"}" '
+            f'aria-label="{"البريد الإلكتروني" if ar else "Email address"}" '
+            f'autocomplete="email" inputmode="email">'
+            f'<button type="submit">{cta}</button></form>')
+    else:
+        control = (f'<p class="nb-form"><a class="nb-link" href="{esc(NEWSLETTER_URL)}" '
+                   f'target="_blank" rel="noopener">{cta} {"←" if ar else "→"}</a></p>')
+    return (f'<section class="newsband" aria-label="{title}"><div class="wrap">'
+            f'<p class="kick">{kicker}</p><h2>{title}</h2>'
+            f'{control}<p class="nb-sub">{sub}</p>'
+            f'</div></section>')
+
 
 FLAG_SVG = ('<svg class="flagmark" width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">'
             '<rect width="46" height="15.3" fill="#0b0b0c"/>'
@@ -4267,7 +4341,7 @@ def render_page(lang, items, built_at):
 <link rel="alternate" hreflang="en" href="{BASE_URL}/en/">
 <link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/">
 <link rel="alternate" hreflang="x-default" href="{BASE_URL}/en/">
-<link rel="alternate" type="application/rss+xml" title="{t['site_name']}" href="{BASE_URL}/{lang}/rss.xml">{f'<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>' if GOATCOUNTER_CODE else ''}
+<link rel="alternate" type="application/rss+xml" title="{t['site_name']}" href="{BASE_URL}/{lang}/rss.xml">
 <link rel="alternate" type="application/feed+json" title="{t['site_name']}" href="{BASE_URL}/{lang}/feed.json">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="{'ar_AR' if lang == 'ar' else 'en_US'}">
@@ -4278,7 +4352,7 @@ def render_page(lang, items, built_at):
 <meta property="og:image" content="{BASE_URL}/og-banner.png"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{org_jsonld(lang)}</script>{itemlist_script}
 {'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
-{_THEME_JS}
+{_THEME_JS}{analytics_tag()}
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="topbar"><div class="wrap">
@@ -4319,7 +4393,7 @@ if(n&&n.querySelector(".nav-group.open")&&Math.abs(window.scrollY-(+n.dataset.oy
   {specials_band}{gaza_panel}
   {opinion_block}
   {section_blocks}
-  {tips_band}
+  {tips_band}{newsletter_band(lang)}
 </main>
 
 <footer><div class="wrap">
@@ -4627,7 +4701,7 @@ def render_story(it, lang, related, rail, built_at):
 <script type="application/ld+json">{jsonld}</script>
 <script type="application/ld+json">{breadcrumb_jsonld}</script>
 {'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
-{_THEME_JS}
+{_THEME_JS}{analytics_tag()}
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="{switch_href}">{t['switch_lang']}</a></span></div>
@@ -4658,6 +4732,7 @@ def render_story(it, lang, related, rail, built_at):
     <h2>{t['latest']}</h2>
     <ol>{latest_html}</ol>
   </div></section>
+  {newsletter_band(lang)}
 </main>
 
 <footer><div class="wrap">
@@ -4790,7 +4865,7 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 <meta property="og:image" content="{BASE_URL}/og-banner.png">
 <meta name="twitter:card" content="summary_large_image">
 {'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
-{_THEME_JS}
+{_THEME_JS}{analytics_tag()}
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
@@ -4871,7 +4946,7 @@ def render_corrections_page(lang, items, built_at):
 <link rel="alternate" hreflang="en" href="{BASE_URL}/en/corrections.html">
 <link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/corrections.html">
 {'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
-{_THEME_JS}
+{_THEME_JS}{analytics_tag()}
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/corrections.html">{t['switch_lang']}</a></span></div>
@@ -4938,7 +5013,7 @@ def render_search_page(lang, built_at, cats=()):
 <meta name="robots" content="noindex">
 <link rel="canonical" href="{BASE_URL}/{lang}/search.html">
 {'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
-{_THEME_JS}
+{_THEME_JS}{analytics_tag()}
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></span></div>

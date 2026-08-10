@@ -2033,3 +2033,53 @@ class AIDedupeJudgeTests(unittest.TestCase):
         self.assertEqual(dropped, 0)
         self.assertEqual(len(en), 2)
         self.assertEqual(len(client.calls), 0)
+
+
+class ReaderGrowthHooksTests(unittest.TestCase):
+    """Newsletter band + analytics tag (owner order 2026-08-10): both are OFF
+    without their repo variables, and go live everywhere when set."""
+
+    def setUp(self):
+        self._nl, self._gc = build.NEWSLETTER_URL, build.GOATCOUNTER_CODE
+
+    def tearDown(self):
+        build.NEWSLETTER_URL, build.GOATCOUNTER_CODE = self._nl, self._gc
+
+    def test_everything_off_without_the_variables(self):
+        build.NEWSLETTER_URL, build.GOATCOUNTER_CODE = "", ""
+        self.assertEqual(build.newsletter_band("en"), "")
+        self.assertEqual(build.analytics_tag(), "")
+        built_at = datetime(2026, 8, 10, 12, tzinfo=timezone.utc)
+        homepage = build.render_page("en", [item()], built_at)
+        self.assertNotIn("newsband", homepage)
+        self.assertNotIn("goatcounter", homepage)
+
+    def test_buttondown_url_renders_the_real_inline_form(self):
+        build.NEWSLETTER_URL = "https://buttondown.com/timesofpalestine"
+        for lang, cta in (("en", "Subscribe"), ("ar", "اشترك")):
+            band = build.newsletter_band(lang)
+            self.assertIn(
+                'action="https://buttondown.com/api/emails/embed-subscribe/'
+                'timesofpalestine"', band)
+            self.assertIn('type="email"', band)
+            self.assertIn(cta, band)
+        self.assertIn("newsband", build.render_story(
+            item(), "en", [], [], datetime(2026, 8, 10, tzinfo=timezone.utc)))
+
+    def test_other_provider_url_falls_back_to_a_link(self):
+        build.NEWSLETTER_URL = "https://example-letters.com/subscribe"
+        band = build.newsletter_band("en")
+        self.assertNotIn("<form", band)
+        self.assertIn('class="nb-link"', band)
+        self.assertIn("https://example-letters.com/subscribe", band)
+
+    def test_analytics_tag_rides_every_template(self):
+        build.GOATCOUNTER_CODE = "timesofpalestine"
+        tag = 'data-goatcounter="https://timesofpalestine.goatcounter.com/count"'
+        built_at = datetime(2026, 8, 10, 12, tzinfo=timezone.utc)
+        self.assertIn(tag, build.render_page("en", [item()], built_at))
+        self.assertIn(tag, build.render_story(item(), "en", [], [], built_at))
+        self.assertIn(tag, build.render_section_page("en", "arts", [item()], built_at))
+        self.assertIn(tag, build.render_search_page("en", built_at))
+        self.assertIn(tag, seo_extras.render_about("en", built_at))
+        self.assertIn(tag, seo_extras.render_status("en"))

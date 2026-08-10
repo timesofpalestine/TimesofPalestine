@@ -263,7 +263,7 @@ def render_about(lang, built_at):
 <meta property="og:url" content="{b.BASE_URL}/{lang}/about.html">
 <meta property="og:image" content="{b.BASE_URL}/og-banner.png">
 <link href="/assets/site.css" rel="stylesheet">
-{b._THEME_JS}
+{b._THEME_JS}{b.analytics_tag()}
 </head>
 <body>
 <a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{a['back']}</a><span class="bb-tools">{b.theme_btn(lang)}{b.lite_btn(lang)}</span></div>
@@ -556,7 +556,7 @@ def render_status(lang):
 <link rel="alternate" hreflang="en" href="{b.BASE_URL}/en/status.html">
 <link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/status.html">
 <link rel="stylesheet" href="/assets/site.css">
-{b._THEME_JS}
+{b._THEME_JS}{b.analytics_tag()}
 </head>
 <body><div class="backbar"><a href="./">{"العودة إلى الأخبار" if lang == "ar" else "Back to the news"}</a><span class="bb-tools">{b.theme_btn(lang)}{b.lite_btn(lang)}</span></div>
 <header class="masthead compact"><div class="wrap">
