@@ -21,6 +21,12 @@
    "verified": true
   },
   {
+   "article": "http://67.228.192.88:3000/2026/8/10/headlines",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
    "article": "https://imemc.org/article/netanyahu-rejects-gaza-roadmap",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "15dc09fe56",
- "score": 87.24000000000001,
+ "score": 87.2,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
