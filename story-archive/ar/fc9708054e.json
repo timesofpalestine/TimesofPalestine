@@ -1,0 +1,32 @@
+{
+ "brief": "أفاد الإعلام العبري بانتحار جندي في الجيش الإسرائيلي أمس في قاعدة عسكرية بجنوب الأراضي المحتلة. ولم تكشف وسائل الإعلام الإسرائيلية عن هوية الجندي أو ظروف تفصيلية للحادثة في الساعات الأولى.\n\nيأتي الحادث وسط ضغوط نفسية متزايدة على الجنود الإسرائيليين في أعقاب العمليات العسكرية المستمرة. ولم تصدر القيادة العسكرية الإسرائيلية بيانات رسمية موسعة حول الواقعة حتى الآن.\n\nتشير التقارير الإعلامية إلى أن الحادثة وقعت في إحدى القواعد العسكرية بمنطقة النقب جنوب الأراضي المحتلة، في وقت يشهد فيه الجيش الإسرائيلي ضغوطاً عملياتية مستمرة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/314339",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-10T06:54:38+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/314339",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fc9708054e",
+ "score": 34.91,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "جندي إسرائيلي ينتحر في قاعدة عسكرية بالنقب"
+}
