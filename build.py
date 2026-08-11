@@ -3049,6 +3049,7 @@ nav.sections a.home{color:#f93549}
 nav.sections a.home:hover{border-block-end-color:#f93549}
 nav.sections a.tip{color:#3fd07c}
 nav.sections a.tip:hover{border-block-end-color:#3fd07c}
+nav.sections a.tip .signal-glyph{vertical-align:-2.5px;margin-inline-end:.15rem}
 /* Grouped nav (owner order 2026-08-05, after the two-tier bar reached ~19
    visible links): one line-tab bar — THE LATEST, four dropdown groups, the
    gold nav-primary specials, and the search/tip utilities inline-end. The
@@ -3766,6 +3767,13 @@ LOCK_SVG = ('<svg class="lock" width="54" height="54" viewBox="0 0 24 24" fill="
             '<path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#3fd07c" stroke-width="1.8" fill="none"/>'
             '<circle cx="12" cy="15" r="1.6" fill="#0b0b0c"/><rect x="11.3" y="15.5" width="1.4" height="2.6" rx=".7" fill="#0b0b0c"/></svg>')
 
+# Signal glyph for the nav tip link (owner order 2026-08-11: the app's icon,
+# not a padlock — the tip line IS the newsroom's Signal account). A simplified
+# speech-bubble silhouette in Signal blue, inline so it needs no asset fetch.
+SIGNAL_GLYPH = ('<svg class="signal-glyph" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true">'
+                '<path fill="#3A76F0" d="M8 1.1a6.9 6.9 0 1 1-3.32 12.95l-3.02.86a.4.4 0 0 1-.5-.5l.86-2.98A6.9 6.9 0 0 1 8 1.1z"/>'
+                '</svg>')
+
 # ---------- components ----------
 
 def href(it, pfx):
@@ -4286,7 +4294,7 @@ def sections_nav_html(lang, keys, link_for, home_href, specials_top="",
     return (f'<nav class="sections" aria-label="{"التصفح الرئيسي" if lang == "ar" else "Primary"}">'
             f'<div class="wrap"><a class="home" href="{home_href}">{t["latest"]}</a>{row}{specials_top}'
             f'<span class="nav-util">{search_link}'
-            f'<a class="tip" href="{tips_href}">🔒 {t["tips_nav"]}</a></span></div>{search_panel}</nav>'
+            f'<a class="tip" href="{tips_href}">{SIGNAL_GLYPH} {t["tips_nav"]}</a></span></div>{search_panel}</nav>'
             f'<script>{NAV_SUPPORT_JS}</script>')
 
 
