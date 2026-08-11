@@ -19,6 +19,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/video/inside-story/2026/8/11/can-netanyahu-defy-trump-on-his-gaza-peace-plan?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
   }
  ],
  "date": "2026-08-10T19:05:00+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "5a9cc50f3f",
- "score": 81.87,
+ "score": 81.7,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
