@@ -33,12 +33,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/QudsN/728254",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
    "article": "https://qudsn.co/post?id=216987&slug=%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88l-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%81%D8%AC%D9%91%D8%B1-%D9%85%D9%86%D8%B2%D9%84-%D8%A7%D9%84%D8%B4%D9%87%D9%8A%D8%AF-%D9%81%D8%A7%D8%B1%D9%88%D9%82-%D8%B1%D9%85%D8%B6%D8%A7%D9%86-%D9%81%D9%8A-%D9%82%D8%B1%D9%8A%D8%A9-%D8%AA%D9%84",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
@@ -54,6 +48,12 @@
    "article": "https://felesteen.news/post/184716/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%81%D8%AC%D8%B1-%D9%85%D9%86%D8%B2%D9%84-%D8%A7%D9%84%D8%B4%D9%87%D9%8A%D8%AF-%D9%81%D8%A7%D8%B1%D9%88%D9%82-%D8%B1%D9%85%D8%B6%D8%A7%D9%86-%D9%81%D9%8A-%D9%86%D8%A7%D8%A8%D9%84%D8%B3",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728276",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
    "verified": true
   }
  ],
@@ -72,7 +72,7 @@
  "modified": null,
  "original": false,
  "pid": "577e18feb3",
- "score": 62.32,
+ "score": 62.14,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
