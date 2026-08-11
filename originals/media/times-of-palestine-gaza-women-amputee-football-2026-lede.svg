@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Gaza's women amputees built the Strip's first football team</title>
+<desc id="dsc">A small artificial-turf pitch at Deir al-Balah drawn as a team sheet: eleven players marked out, nine outfield on crutches and two goalkeepers, beside the counts that frame them — 265 sports facilities destroyed, 1,009 of Gaza's sporting community killed, more than 5,000 amputations, and FIFA's 67.5 million dollars still at the pledge stage.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="110" y="78" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="5" fill="#c7a86b">SPORT · AMPUTEE FOOTBALL · كرة قدم المبتورين</text>
+<text x="110" y="152" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">Eleven players on a pitch in Deir al-Balah</text>
+<text x="110" y="204" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#c7a86b">إحدى عشرة لاعبة على ملعب في دير البلح</text>
+<line x1="110" y1="240" x2="1490" y2="240" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- the pitch -->
+<rect x="150" y="300" width="780" height="440" fill="#17251c" stroke="#3a3b3f" stroke-width="3"/>
+<line x1="540" y1="300" x2="540" y2="740" stroke="#3a3b3f" stroke-width="3"/>
+<circle cx="540" cy="520" r="74" fill="none" stroke="#3a3b3f" stroke-width="3"/>
+<rect x="150" y="420" width="66" height="200" fill="none" stroke="#3a3b3f" stroke-width="3"/>
+<rect x="864" y="420" width="66" height="200" fill="none" stroke="#3a3b3f" stroke-width="3"/>
+
+<!-- nine outfield players, each marked with a crutch stroke -->
+<g>
+<g stroke="#c7a86b" stroke-width="3" stroke-linecap="round">
+<line x1="300" y1="366" x2="288" y2="396"/><line x1="300" y1="366" x2="312" y2="396"/>
+<line x1="300" y1="506" x2="288" y2="536"/><line x1="300" y1="506" x2="312" y2="536"/>
+<line x1="300" y1="646" x2="288" y2="676"/><line x1="300" y1="646" x2="312" y2="676"/>
+<line x1="470" y1="416" x2="458" y2="446"/><line x1="470" y1="416" x2="482" y2="446"/>
+<line x1="470" y1="596" x2="458" y2="626"/><line x1="470" y1="596" x2="482" y2="626"/>
+<line x1="660" y1="366" x2="648" y2="396"/><line x1="660" y1="366" x2="672" y2="396"/>
+<line x1="660" y1="506" x2="648" y2="536"/><line x1="660" y1="506" x2="672" y2="536"/>
+<line x1="660" y1="646" x2="648" y2="676"/><line x1="660" y1="646" x2="672" y2="676"/>
+<line x1="800" y1="506" x2="788" y2="536"/><line x1="800" y1="506" x2="812" y2="536"/>
+</g>
+<g fill="#c7a86b">
+<circle cx="300" cy="356" r="11"/><circle cx="300" cy="496" r="11"/><circle cx="300" cy="636" r="11"/>
+<circle cx="470" cy="406" r="11"/><circle cx="470" cy="586" r="11"/>
+<circle cx="660" cy="356" r="11"/><circle cx="660" cy="496" r="11"/><circle cx="660" cy="636" r="11"/>
+<circle cx="800" cy="496" r="11"/>
+</g>
+</g>
+
+<!-- the two goalkeepers -->
+<g fill="#f2eee8">
+<circle cx="183" cy="510" r="12"/>
+<circle cx="897" cy="510" r="12"/>
+</g>
+<g stroke="#f2eee8" stroke-width="3" stroke-linecap="round">
+<line x1="183" y1="524" x2="205" y2="548"/>
+<line x1="897" y1="524" x2="875" y2="548"/>
+</g>
+
+<text x="540" y="782" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">9 outfield on crutches · 2 goalkeepers · تسع لاعبات على عكّازين وحارستان</text>
+
+<!-- the counters -->
+<g font-family="'Libre Franklin',Arial,sans-serif" fill="#f2eee8">
+<text x="1000" y="352" font-size="56" fill="#c7a86b">265</text>
+<text x="1000" y="386" font-size="20">sports facilities damaged or destroyed since Oct 2023</text>
+<text x="1000" y="470" font-size="56" fill="#c7a86b">1,009</text>
+<text x="1000" y="504" font-size="20">of Gaza's sporting community killed, PFA count</text>
+<text x="1000" y="588" font-size="56" fill="#c7a86b">5,000+</text>
+<text x="1000" y="622" font-size="20">amputations in Gaza, WHO and health ministry estimate</text>
+<text x="1000" y="706" font-size="56" fill="#c7a86b">$67.5m</text>
+<text x="1000" y="740" font-size="20">FIFA's Gaza pledge, February 2026 — not yet built</text>
+</g>
+<g font-family="Cairo,Arial,sans-serif" font-size="18" fill="#c7a86b">
+<text x="1000" y="414">منشأة رياضية متضرّرة أو مدمّرة منذ تشرين الأول 2023</text>
+<text x="1000" y="532">من الوسط الرياضي في غزة قُتلوا، بإحصاء الاتحاد</text>
+<text x="1000" y="650">حالة بتر في غزة، بتقدير الصحة العالمية ووزارة الصحة</text>
+<text x="1000" y="768">تعهّد «فيفا» لغزة في شباط 2026 — لم يُنفَّذ بعد</text>
+</g>
+
+<text x="800" y="856" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">«بترَ الاحتلال أجسادنا، لكنه لم يستطع أن يبتر أحلامنا» · "It could not amputate our dreams"</text>
+</svg>
