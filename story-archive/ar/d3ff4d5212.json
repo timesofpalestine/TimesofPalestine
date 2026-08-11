@@ -6,7 +6,19 @@
    "article": "original:taybeh-closure-mughayyir-land-2026-08-10.ar",
    "name": "تايمز أوف فلسطين",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728283",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314498",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   },
   {
    "article": "https://www.pbc.ps/987-36",
@@ -30,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "d3ff4d5212",
- "score": 114.21,
+ "score": 114.17,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

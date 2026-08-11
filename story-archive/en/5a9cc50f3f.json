@@ -12,13 +12,7 @@
    "article": "https://www.al-monitor.com/originals/2026/08/trump-insists-netanyahu-relationship-very-good-despite-gaza-rift",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-insists-relationship-netanyahu-very-good-despite-gaza-rift",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.theguardian.com/world/2026/aug/10/benjamin-netanyahu-rejection-us-deal-gaza-risky-gamble",
@@ -54,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "5a9cc50f3f",
- "score": 78.53999999999999,
+ "score": 78.35,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
