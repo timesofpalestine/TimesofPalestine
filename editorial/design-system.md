@@ -170,7 +170,9 @@ load-bearing statistic — one or two per story, never as decoration.
   **Back to top** (`.totop`, 2026-08-11): a fixed ~44px circular ↑ at
   `inset-inline-end` (opposite the live dock), chrome-black in both
   themes, fading in after ~two screens of scroll on every page;
-  `prefers-reduced-motion` gets no transition.
+  `prefers-reduced-motion` gets no transition. It switches OFF when the
+  footer rises into its zone (owner report 2026-08-11) — once the
+  footer's own links are visible the arrow only covers them.
   **On phones (≤740px)** the bar is ONE horizontally swipeable line of
   tap-height (~44px) tabs — never a wrapped multi-row block (owner report
   2026-08-06) — and panels become full-width sheets under the bar
