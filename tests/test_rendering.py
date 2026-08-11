@@ -1829,6 +1829,14 @@ class MobileChromeTests(unittest.TestCase):
             self.assertRegex(
                 row, r'href="#israelipress">[^<]+</a><a href="#uspress"')
 
+    def test_methodology_tooltips_become_bottom_sheets_on_phones(self):
+        # Owner report 2026-08-11: edge-cell "?" tooltips rendered partly
+        # off-screen on phones — they pin as a fixed bottom sheet instead.
+        import gaza_panel
+        self.assertIn(
+            "@media(max-width:560px){.gi-help .gi-tip{position:fixed",
+            gaza_panel.PANEL_CSS)
+
     def test_text_only_mode_toggle_rides_every_chrome_bar(self):
         """Owner-forwarded review 2026-08-04: a low-data text-only mode for
         readers on unstable connections. The preference applies from <head>
