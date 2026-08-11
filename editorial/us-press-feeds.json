@@ -14,14 +14,17 @@
     {"outlet": "The Atlantic", "lang": "en", "url": "https://www.theatlantic.com/feed/all/"},
     {"outlet": "The Intercept", "lang": "en", "url": "https://theintercept.com/feed/?rss"},
     {"outlet": "Foreign Affairs", "lang": "en", "url": "https://www.foreignaffairs.com/rss.xml"},
-    {"outlet": "Brookings (think tank)", "lang": "en", "url": "https://www.brookings.edu/feed/"},
     {"outlet": "Carnegie Endowment (think tank)", "lang": "en", "url": "https://carnegieendowment.org/rss/solr?fltr=all"},
     {"outlet": "Quincy Institute — Responsible Statecraft (think tank)", "lang": "en", "url": "https://responsiblestatecraft.org/feed/"},
     {"outlet": "Middle East Institute (think tank)", "lang": "en", "url": "https://www.mei.edu/rss.xml"},
-    {"outlet": "Washington Institute / WINEP (think tank)", "lang": "en", "url": "https://www.washingtoninstitute.org/rss.xml"},
-    {"outlet": "Council on Foreign Relations (think tank)", "lang": "en", "url": "https://www.cfr.org/rss-feeds/publications-and-updates.xml"},
+    {"outlet": "Council on Foreign Relations (think tank)", "lang": "en", "url": "https://www.cfr.org/feed"},
     {"outlet": "FDD (think tank)", "lang": "en", "url": "https://www.fdd.org/feed/"},
     {"outlet": "Arab Center Washington DC (think tank)", "lang": "en", "url": "https://arabcenterdc.org/feed/"},
-    {"outlet": "CSIS (think tank)", "lang": "en", "url": "https://www.csis.org/rss/analysis"}
+    {"outlet": "CSIS (think tank)", "lang": "en", "url": "https://www.csis.org/rss.xml"}
+  ],
+  "noFeedComment": "Sources the desk still sweeps every morning, by WebFetch of the index page rather than RSS. Checked 2026-08-11: neither serves a usable feed to a server-side client, so they sit here instead of in feeds[] and the wire stops printing a dead-feed warning every run. Re-test occasionally and move an outlet back up when its feed returns.",
+  "noFeed": [
+    {"outlet": "Washington Institute / WINEP (think tank)", "url": "https://www.washingtoninstitute.org/policy-analysis", "note": "Every documented RSS path 404s and the homepage advertises none."},
+    {"outlet": "Brookings (think tank)", "url": "https://www.brookings.edu/topic/middle-east-north-africa/", "note": "All /feed/ paths return an HTML interstitial to non-browser clients, not XML."}
   ]
 }

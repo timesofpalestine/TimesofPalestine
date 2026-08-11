@@ -51,6 +51,21 @@ class ParseTests(unittest.TestCase):
         self.assertEqual(items[0]["when"],
                          datetime(2026, 8, 7, 5, 0, tzinfo=timezone.utc))
 
+    def test_html_entities_in_xml_do_not_kill_the_feed(self):
+        """Think-tank feeds ship WordPress entities XML rejects — parse anyway."""
+        raw = ('<?xml version="1.0"?><rss version="2.0"><channel><item>'
+               '<title>Gaza&nbsp;file &amp; the &rsquo;deal&rsquo;</title>'
+               '<link>https://example.org/1</link>'
+               '<pubDate>Mon, 10 Aug 2026 10:00:00 +0000</pubDate>'
+               '<description>Brookings &mdash; analysis</description>'
+               '</item></channel></rss>').encode("utf-8")
+        items = wire.parse_feed(raw)
+        self.assertEqual(len(items), 1)
+        self.assertIn("&", items[0]["title"])
+        self.assertNotIn("&amp;", items[0]["title"])
+        self.assertNotIn("&nbsp;", items[0]["title"])
+        self.assertIn("—", items[0]["summary"])
+
     def test_malformed_feed_raises_and_is_survivable(self):
         with self.assertRaises(Exception):
             wire.parse_feed(b"this is not xml")

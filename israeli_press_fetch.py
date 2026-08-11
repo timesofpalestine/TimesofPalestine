@@ -25,6 +25,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
+from html.entities import name2codepoint
 from pathlib import Path
 
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -63,9 +64,35 @@ def first_text(node, *paths):
     return ""
 
 
+def resolve_html_entities(raw):
+    """Turn HTML entities XML rejects (&nbsp;, &rsquo;, …) into plain characters.
+
+    Several think-tank feeds publish WordPress HTML entities inside otherwise
+    valid XML, which ExpatError rejects as an undefined entity and which used
+    to kill the whole feed. Named entities XML already defines are left alone;
+    anything else unknown is dropped rather than guessed at.
+    """
+    text = raw.decode("utf-8", "replace") if isinstance(raw, bytes) else raw
+
+    def sub(m):
+        name = m.group(1)
+        if name in ("amp", "lt", "gt", "quot", "apos"):
+            return m.group(0)
+        cp = name2codepoint.get(name)
+        if cp is None:
+            return ""
+        ch = chr(cp)
+        return {"&": "&amp;", "<": "&lt;", ">": "&gt;"}.get(ch, ch)
+
+    return re.sub(r"&([A-Za-z][A-Za-z0-9]*);", sub, text)
+
+
 def parse_feed(raw):
     """RSS 2.0 or Atom → list of {title, link, when, summary} dicts."""
-    root = ET.fromstring(raw)
+    try:
+        root = ET.fromstring(raw)
+    except ET.ParseError:
+        root = ET.fromstring(resolve_html_entities(raw))
     items = []
     for it in root.iter("item"):  # RSS
         items.append({
