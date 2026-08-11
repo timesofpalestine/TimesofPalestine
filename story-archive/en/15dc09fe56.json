@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/08/netanyahu-rejects-trumps-gaza-plan-while-quietly-implementing-it",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.aljazeera.com/news/2026/8/11/palestine-weekly-netanyahu-hedges-on-gaza-roadmap?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "15dc09fe56",
- "score": 83.67,
+ "score": 83.64,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
