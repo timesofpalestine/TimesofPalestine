@@ -6,25 +6,13 @@
    "article": "original:board-of-peace-fifteen-points-2026-08-10.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/news/2026/8/11/palestine-weekly-netanyahu-hedges-on-gaza-roadmap?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.dropsitenews.com/p/trump-iran-hormuz-netanyahu-gaza-board-peace-ukraine-russia-refinery",
-   "name": "Drop Site News",
-   "url": "https://www.dropsitenews.com/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.theguardian.com/commentisfree/2026/aug/10/the-guardian-view-on-the-failed-gaza-peace-plan-trumps-hollow-claims-are-ignored-in-jerusalem",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-10T09:40:00+00:00",
@@ -42,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "15dc09fe56",
- "score": 83.32,
+ "score": 83.28999999999999,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
