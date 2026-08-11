@@ -7,6 +7,12 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168113",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": false
   }
  ],
  "date": "2026-08-11T12:10:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "e8dd227b85",
- "score": 87.72999999999999,
+ "score": 87.69,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
