@@ -684,6 +684,31 @@ class PressDeskFreshnessTests(unittest.TestCase):
     """Owner order 2026-08-11: the press-review sections front the NEWEST
     items — a daily review showing five-day-old cards reads as dead."""
 
+    def test_topical_sections_list_newest_first_regardless_of_score(self):
+        # Every section fronts the day's coverage (owner order 2026-08-11,
+        # second round — the press-desk rule extended to the whole paper).
+        # 12 economy items: the hero tier consumes the newest nine, the
+        # section shows the remainder — still in date order, not score order.
+        built_at = datetime(2026, 8, 11, 12, tzinfo=timezone.utc)
+        rows = []
+        for n in range(12):
+            it2 = item()
+            it2.update({"cat": "economy", "pid": f"econ{n:04d}", "image": "/media/x.svg",
+                        "score": n,  # older items score HIGHER under this order
+                        "date": datetime(2026, 8, 11, 11, tzinfo=timezone.utc)
+                        - timedelta(hours=n),
+                        "title": f"Gaza merchants report market shift number {n} today",
+                        "link": f"https://example.com/econ-{n}"})
+            rows.append(it2)
+        page = build.render_page("en", rows, built_at)
+        block = page.split('id="economy"', 1)[1].split("</section>", 1)[0]
+        present = sorted((block.index(f"market shift number {n} today"), n)
+                         for n in range(12)
+                         if f"market shift number {n} today" in block)
+        self.assertTrue(present)
+        order = [n for _, n in present]
+        self.assertEqual(order, sorted(order))  # lower n = newer = first
+
     def test_press_sections_list_newest_first_regardless_of_score(self):
         built_at = datetime(2026, 8, 11, 12, tzinfo=timezone.utc)
         for cat in ("israelipress", "uspress"):
