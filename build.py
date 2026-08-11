@@ -2634,7 +2634,6 @@ STR = {
         "dir": "ltr", "lang": "en",
         "site_name": "Times of Palestine",
         "masthead_top": "TIMES", "masthead_bottom": "OF PALESTINE",
-        "tagline": "Independent news — sourced, data-driven, updated continuously",
         "kicker": "Every outlet · Every story · No censorship",
         "view_all": "View all →", "search_nav": "🔍 Search",
         "search_go": "Search",
@@ -2707,7 +2706,6 @@ STR = {
         "dir": "rtl", "lang": "ar",
         "site_name": "تايمز أوف فلسطين",
         "masthead_top": "تايمز", "masthead_bottom": "أوف فلسطين",
-        "tagline": "صحافة مستقلة — موثّقة بالبيانات وتتجدد على مدار الساعة",
         "kicker": "كل المصادر · كل الأخبار · بلا رقابة",
         "view_all": "كل التغطية ←", "search_nav": "🔍 بحث",
         "search_go": "ابحث",
@@ -3026,19 +3024,17 @@ h1,h2,h3{text-wrap:balance}
    masthead; the red cover FRAME is reserved for brand art (og-banner, app
    icons). The Palestinian flag rule stays under the wordmark — the red
    serif carries the authority, the flag says whose. House --red only. */
-.masthead{background:var(--card);border-bottom:2px solid var(--line);text-align:center;padding:1.5rem 0 1.1rem}
+.masthead{background:var(--card);border-bottom:2px solid var(--line);text-align:center;padding:1.1rem 0 .8rem}
 .masthead .logotype{display:inline-block}
-.masthead .wrap::after{content:"";display:block;margin:.75rem auto 0;width:130px;height:5px;background:linear-gradient(90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
+.masthead .wrap::after{content:"";display:block;margin:.55rem auto 0;width:130px;height:5px;background:linear-gradient(90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
 [dir=rtl] .masthead .wrap::after{background:linear-gradient(-90deg,var(--black) 0 34%,var(--red) 34% 67%,var(--green) 67% 100%)}
 .masthead h1,.masthead .wordmark{display:flex;flex-direction:column;align-items:center;gap:.3rem;line-height:1;white-space:nowrap}
 .masthead .l1{font-family:"Times New Roman",Times,var(--serif);font-weight:700;letter-spacing:-.02em;color:var(--red);font-size:clamp(2.7rem,7.6vw,4.4rem);transform:scaleY(1.05)}
 .masthead .l2{font-family:var(--serif);font-weight:700;color:var(--ink);font-size:clamp(.68rem,1.8vw,.98rem);letter-spacing:.42em;text-indent:.42em}
 [lang=ar] .masthead .l1{font-family:"Noto Kufi Arabic","Amiri",serif;font-weight:800;letter-spacing:0;transform:none;font-size:clamp(2.2rem,6.8vw,3.5rem);line-height:1.2}
 [lang=ar] .masthead .l2{letter-spacing:0;text-indent:0;font-family:"Noto Kufi Arabic","Amiri",serif;font-size:clamp(.95rem,2.3vw,1.2rem);line-height:1.45}
-/* One-line positioning statement under the wordmark (owner-forwarded review,
-   2026-08-10): what the paper is, before the About page. Front page only. */
-.masthead .tagline{margin-top:.6rem;font-size:.72rem;font-weight:600;color:var(--muted);letter-spacing:.02em}
-[lang=ar] .masthead .tagline{font-size:.84rem;letter-spacing:0}
+/* Tagline removed from the masthead (owner order 2026-08-11: the top of the
+   page stays sharp and tight — the About page carries the mission line). */
 .masthead.compact{padding:.8rem 0 .6rem}
 .masthead.compact .l1{font-size:1.6rem}
 .masthead.compact .l2{font-size:.52rem;letter-spacing:.34em;text-indent:.34em}
@@ -3129,8 +3125,6 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
   nav.sections .nav-group.all:focus-within .nav-drop.mega{grid-template-columns:1fr;max-height:72vh;overflow-y:auto;gap:.1rem}
   .masthead{padding:.85rem 0 .65rem}
   .masthead .wrap::after{margin-top:.5rem}
-  .masthead .tagline{margin-top:.4rem;font-size:.62rem;padding-inline:1rem}
-  [lang=ar] .masthead .tagline{font-size:.74rem}
   /* Tap targets (a11y, evaluation 2026-08-05): utility controls reach the
      house ~44px tap height on touch widths, matching the nav rows above. */
   .themetoggle,.litetoggle,.tick-pause{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}
@@ -4725,7 +4719,6 @@ def render_page(lang, items, built_at):
 
 <header class="masthead"><div class="wrap">
   <a class="logotype" href="#top"><h1><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></h1></a>
-  <p class="tagline">{t['tagline']}</p>
 </div></header>
 
 {sections_nav}

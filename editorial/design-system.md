@@ -119,13 +119,12 @@ load-bearing statistic — one or two per story, never as decoration.
   House `--red` only (it is the same red family as the great newsweekly
   covers); never introduce a second red for the mark, and never
   letter-space the Arabic.
-  **Tagline** (`.masthead .tagline`, owner-forwarded review 2026-08-10;
-  wording set by owner order 2026-08-10): one muted line under the
-  wordmark on the FRONT PAGE only — the paper's positioning statement
-  ("Independent news — sourced, data-driven, updated continuously" /
-  «صحافة مستقلة — موثّقة بالبيانات وتتجدد على مدار الساعة»), from the
-  per-language string tables. Compact mastheads (story/service pages)
-  never carry it; keep it one line, never a second sentence.
+  **No tagline** (owner order 2026-08-11, superseding the 2026-08-10
+  tagline note): the masthead carries the wordmark and the flag rule,
+  nothing else — the top of the page stays sharp and tight, and the
+  About page carries the paper's positioning statement. Masthead
+  padding is 1.1rem/.8rem with the flag rule .55rem under the wordmark;
+  don't reopen that air without an owner order.
 
 - **Section nav** (`nav.sections`, flat-priority design — owner decision
   2026-08-06, replacing the four per-group dropdowns; line-tab language of
