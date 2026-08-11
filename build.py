@@ -1894,14 +1894,27 @@ def select_publishable_copy(en_items, ar_items):
     """Apply the same translation and complete-copy rules in builds and review."""
     en_items = [
         item for item in en_items
-        if not (
-            item.get("needs_translation")
-            and ARABIC_CHARS_RX.search(item["title"])
-        )
+        if not ARABIC_CHARS_RX.search(item["title"])
     ]
-    for item in en_items:
-        if item.get("needs_translation") and ARABIC_CHARS_RX.search(item["dek"]):
-            item["dek"] = ""
+    # Wrong-script deks never render (owner report 2026-08-11: an Arabic feed
+    # summary ran under an English hero headline). The old scrub trusted the
+    # feed's needs_translation flag, but mixed-language sources ship without
+    # it — so the guard reads the text itself, both editions. When the house
+    # brief exists, its opening paragraph becomes the dek (our copy, right
+    # language); otherwise the dek drops rather than leak.
+    def _dek_fits(item):
+        dek = item.get("dek") or ""
+        if not dek:
+            return True
+        if item["lang"] == "en":
+            return not ARABIC_CHARS_RX.search(dek)
+        return bool(ARABIC_CHARS_RX.search(dek)) or not re.search(r"[A-Za-z]", dek)
+    for item in en_items + ar_items:
+        if item.get("original") or _dek_fits(item):
+            continue
+        brief = item.get("brief") or ""
+        item["dek"] = (truncate(brief.split("\n")[0].strip(), 220)
+                       if brief and not REFUSAL_RX.search(brief) else "")
 
     allow_raw = os.environ.get("TOP_ALLOW_RAW_SUMMARIES") == "1"
 

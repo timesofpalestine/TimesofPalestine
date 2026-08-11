@@ -613,6 +613,34 @@ if __name__ == "__main__":
     unittest.main()
 
 
+class WrongScriptDekTests(unittest.TestCase):
+    """Owner report 2026-08-11: an Arabic feed summary rendered under an
+    English hero headline. The scrub reads the text itself — no reliance on
+    the feed's needs_translation flag — and swaps in the brief's opening."""
+
+    def test_wrong_script_deks_replaced_from_brief_or_dropped(self):
+        en = item()
+        en.update({"pid": "dksc00en01",
+                   "dek": "نظّمت البطريركية اللاتينية دورة تدريبية لموظفيها",
+                   "brief": "The Latin Patriarchate trained its Jerusalem staff "
+                            "on ethical decision-making, the church said. " * 6})
+        en_no_brief = item()
+        en_no_brief.update({"pid": "dksc00en02", "dek": "ملخص عربي بلا موجز"})
+        ar = item()
+        ar.update({"lang": "ar", "pid": "dksc00ar01",
+                   "dek": "An English summary leaking into the Arabic edition",
+                   "brief": "نظّمت البطريركية اللاتينية في القدس دورة تدريبية "
+                            "لموظفيها حول أخلاقيات القرار، حسب بيان الكنيسة. " * 6})
+        ar_ok = item()
+        ar_ok.update({"lang": "ar", "pid": "dksc00ar02",
+                      "dek": "ملخص عربي سليم يذكر مقاتلات F-35 بالاسم"})
+        build.select_publishable_copy([en, en_no_brief], [ar, ar_ok])
+        self.assertTrue(en["dek"].startswith("The Latin Patriarchate"))
+        self.assertEqual(en_no_brief["dek"], "")
+        self.assertIn("البطريركية", ar["dek"])
+        self.assertIn("F-35", ar_ok["dek"])  # Latin acronyms in Arabic deks survive
+
+
 class VideoEmbedTests(unittest.TestCase):
     def test_instagram_reel_embeds_with_rebuilt_src(self):
         html = longform.video_embed(
