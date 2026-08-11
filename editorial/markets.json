@@ -1,0 +1,4 @@
+{
+  "comment": "Markets watch fallback (owner directive 2026-08-11). When the live Al-Quds fetch fails (PEX publishes no API), the strip renders this value with its date. The daily editor refreshes it each cycle from pex.ps / Investing.com PLE — always the latest CLOSE, always dated, never invented.",
+  "alquds": {"level": 615.24, "date": "2026-08-11", "source": "Palestine Exchange"}
+}
