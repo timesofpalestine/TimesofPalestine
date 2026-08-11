@@ -354,6 +354,13 @@ muted #aaa9a5; font stacks: "Libre Franklin",Arial for Latin, Cairo,Arial for Ar
 building, a map shape, a flow between actors, a chart of the report's own numbers. \
 Simple bold shapes, generous spacing; never clip art clutter.
 - bilingual: a short English label/title AND its Arabic counterpart on the canvas
+- TEXT MUST FIT THE CANVAS (owner order 2026-08-11 — a headline once ran off \
+the edge mid-word): budget roughly 0.55x the font-size per Latin character and \
+0.6x per Arabic character from the x position; a 46px line from x=90 holds only \
+about 55 Latin characters. Break long titles onto two lines instead of shrinking. \
+Anchor Arabic runs from the LEFT (small x, text-anchor start) exactly like the \
+Latin lines — never place an Arabic run near the right edge expecting it to flow \
+leftwards, because SVG engines disagree on bidi direction and it clips.
 - accessibility: include <title> and <desc> tags
 - DATA HONESTY: any number, date or name on the canvas must appear in the report. \
 No decorative fake data.
@@ -384,6 +391,14 @@ def _clean_svg(text):
         _ET.fromstring(text)
     except Exception:
         return None  # invalid XML renders as a broken image — cover fallback instead
+    # Text-overflow clamp (owner report 2026-08-11: a desk headline ran off
+    # the canvas mid-word). Any run the estimator says leaves the viewBox is
+    # capped with textLength — compressed type beats clipped words.
+    try:
+        import build as _b
+        text = _b.clamp_svg_text(text)
+    except Exception:
+        pass  # the clamp is best-effort; validated SVG still publishes
     return text
 
 

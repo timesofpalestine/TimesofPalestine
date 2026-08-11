@@ -23,7 +23,7 @@
 
   <!-- header -->
   <text x="70" y="76" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="4.5" fill="#c7a86b">GAZA · PUBLIC HEALTH</text>
-  <text x="70" y="134" font-family="'Source Serif 4',Georgia,serif" font-size="43" fill="#f2eee8">UN agencies restart Gaza immunisation as coverage falls below 70%</text>
+  <text x="70" y="134" font-family="'Source Serif 4',Georgia,serif" font-size="43" fill="#f2eee8" textLength="1514" lengthAdjust="spacingAndGlyphs">UN agencies restart Gaza immunisation as coverage falls below 70%</text>
   <text x="70" y="180" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#c7a86b" direction="rtl">وكالات أممية تستأنف حملات التطعيم في غزة مع تراجع التغطية دون 70٪</text>
   <line x1="70" y1="212" x2="1540" y2="212" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2"/>
 
@@ -98,7 +98,7 @@
     <text x="1120" y="694" font-size="21" fill="#f2eee8">5–9 April 2026</text>
     <text x="1120" y="720" font-size="17" fill="#aaa9a5">about 6,000 children under three</text>
   </g>
-  <text x="1060" y="776" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">One in five children under three is zero-dose or has missed doses</text>
+  <text x="1060" y="776" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5" textLength="524" lengthAdjust="spacingAndGlyphs">One in five children under three is zero-dose or has missed doses</text>
 
   <!-- footer -->
   <line x1="70" y1="836" x2="1540" y2="836" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>

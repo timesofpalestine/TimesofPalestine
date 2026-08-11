@@ -50,7 +50,7 @@
   <!-- ledger -->
   <path d="M70 700 H1530" stroke="#33342f" stroke-width="3"/>
   <text x="70" y="740" class="sans ivory" font-size="22" font-weight="800">DOCUMENTED:</text>
-  <text x="245" y="740" class="sans muted" font-size="21">absent guards · US House report: Ceuta "in Moroccan territory" + $40m, 15 July · Danon: "colonial enclaves" · Pegasus on Madrid's phones</text>
+  <text x="245" y="740" class="sans muted" font-size="21" textLength="1339" lengthAdjust="spacingAndGlyphs">absent guards · US House report: Ceuta "in Moroccan territory" + $40m, 15 July · Danon: "colonial enclaves" · Pegasus on Madrid's phones</text>
   <text x="70" y="782" class="sans ivory" font-size="22" font-weight="800">NOT DOCUMENTED:</text>
   <text x="290" y="782" class="sans muted" font-size="21">evidence that Rabat and Tel Aviv coordinated the surge itself — the question this file stays open on</text>
   <text x="1530" y="827" class="arabic muted" font-size="21" text-anchor="end">الموثّق: تقرير الكونغرس، تصريح دانون، «بيغاسوس» على هواتف مدريد · غير الموثّق: تنسيق الموجة ذاتها</text>

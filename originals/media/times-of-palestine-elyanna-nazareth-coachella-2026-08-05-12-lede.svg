@@ -107,8 +107,8 @@ fill="none" stroke="url(#curve)" stroke-width="6" stroke-linecap="round"/>
 <!-- 6 World Cup -->
 <g font-family="'Libre Franklin',Arial,sans-serif" text-anchor="end">
 <text x="1480" y="128" font-size="16" font-weight="700" letter-spacing="2" fill="#C8102E">JUNE 12</text>
-<text x="1480" y="164" font-size="26" font-weight="700" fill="#f2eee8">World Cup opening ceremony</text>
-<text x="1480" y="190" font-size="17" fill="#aaa9a5">“Illuminate” with Jessie Reyez · Toronto Stadium</text>
+<text x="1480" y="164" font-size="26" font-weight="700" fill="#f2eee8" textLength="104" lengthAdjust="spacingAndGlyphs">World Cup opening ceremony</text>
+<text x="1480" y="190" font-size="17" fill="#aaa9a5" textLength="104" lengthAdjust="spacingAndGlyphs">“Illuminate” with Jessie Reyez · Toronto Stadium</text>
 <text x="1480" y="222" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#c7a86b">كأس العالم — تورونتو</text>
 </g>
 

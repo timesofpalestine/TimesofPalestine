@@ -41,7 +41,7 @@
     <text x="1090" y="285" class="sans muted" font-size="22">patients at Jordan's Khan Younis</text>
     <text x="1090" y="313" class="sans muted" font-size="22">field hospital since July</text>
     <text x="860" y="360" class="mono ivory" font-size="52" font-weight="700">10</text>
-    <text x="950" y="360" class="sans muted" font-size="22">groups of Gaza children evacuated on Amman's medical corridor</text>
+    <text x="950" y="360" class="sans muted" font-size="22" textLength="634" lengthAdjust="spacingAndGlyphs">groups of Gaza children evacuated on Amman's medical corridor</text>
     <text x="860" y="425" class="arabic muted" font-size="22">مستشفيات الأردن الميدانية وممرّه الطبي.. ومدد عُماني بالدواء</text>
   </g>
   <g filter="url(#sh)">

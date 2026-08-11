@@ -4070,6 +4070,88 @@ def specials_band_html(lang, items=(), extra=""):
             + "".join(cards) + '</div></div></section>')
 
 
+# SVG text-overflow guard (owner report 2026-08-11: a desk graphic's headline
+# ran off the right edge of the canvas mid-word). LATIN text only: glyph runs
+# are estimated at ≈0.55×font-size per character plus letter-spacing against
+# the viewBox, honouring text-anchor. Findings are loud warnings at build time
+# and a test failure in CI, so a graphic with clipped Latin text can neither
+# merge nor ship silently. Arabic runs are deliberately NOT automated: SVG
+# bidi (anchor + direction) varies by engine, and measured overflow there
+# needs an editorial redraw, not a blind clamp — tracked per-file in the
+# repo issues, never auto-mutated.
+_SVG_TEXT_TAG_RX = re.compile(r"<text\b([^>]*)>(.*?)</text>", re.S)
+_SVG_ARABIC_RX = re.compile(r"[؀-ۿ]")
+
+
+def _svg_text_nodes(svg_src):
+    """Yield (match, attrs, plain_text, x, font_size, anchor, est_width) for
+    every measurable LATIN <text> node. Nodes that carry textLength are
+    skipped — the attribute forces the glyphs to fit by construction."""
+    for m in _SVG_TEXT_TAG_RX.finditer(svg_src):
+        attrs, inner = m.group(1), m.group(2)
+        if "textLength" in attrs or "<tspan" in inner:
+            continue
+        text = html.unescape(re.sub(r"<[^>]+>", "", inner)).strip()
+        if not text or _SVG_ARABIC_RX.search(text):
+            continue
+        xm = re.search(r'\bx="([\d.-]+)"', attrs)
+        fm = re.search(r'font-size="([\d.]+)"', attrs)
+        if not xm or not fm:
+            continue
+        x, fs = float(xm.group(1)), float(fm.group(1))
+        ls = re.search(r'letter-spacing="([\d.]+)"', attrs)
+        est = len(text) * (fs * 0.55 + (float(ls.group(1)) if ls else 0))
+        anchor_m = re.search(r'text-anchor="(\w+)"', attrs)
+        anchor = anchor_m.group(1) if anchor_m else "start"
+        if anchor in ("middle", "end") and x <= 0:
+            continue  # local coords inside a transform group — not measurable here
+        yield m, attrs, text, x, fs, anchor, est
+
+
+def svg_text_overflows(svg_src):
+    m = re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', svg_src)
+    if not m:
+        return []
+    width = float(m.group(1))
+    findings = []
+    for _m, _attrs, text, x, _fs, anchor, est in _svg_text_nodes(svg_src):
+        start = {"end": x - est, "middle": x - est / 2}.get(anchor, x)
+        end = start + est
+        margin = width * 0.02
+        if end > width + margin or start < -margin:
+            findings.append(
+                f"~{max(end - width, -start):.0f}px off canvas ({width:.0f}w): {text[:60]!r}")
+    return findings
+
+
+def clamp_svg_text(svg_src):
+    """Repair pass: any text node whose estimated run leaves the canvas gets
+    textLength capped to the space it actually has (spacingAndGlyphs), so the
+    worst case is compressed type — never clipped words. Used on desk-
+    generated illustrations before they are written to disk."""
+    m = re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', svg_src)
+    if not m:
+        return svg_src
+    width = float(m.group(1))
+    pad = width * 0.01
+    out, last = [], 0
+    for tm, attrs, _text, x, _fs, anchor, est in _svg_text_nodes(svg_src):
+        if anchor == "end":
+            avail = x - pad
+        elif anchor == "middle":
+            avail = 2 * min(x - pad, width - pad - x)
+        else:
+            avail = width - pad - x
+        if est <= avail or avail <= 0:
+            continue
+        tag_end = tm.start(1) + len(attrs)
+        out.append(svg_src[last:tag_end])
+        out.append(f' textLength="{avail:.0f}" lengthAdjust="spacingAndGlyphs"')
+        last = tag_end
+    out.append(svg_src[last:])
+    return "".join(out)
+
+
 # On This Day in Palestine (owner directive 2026-08-11): a daily memory line
 # on both fronts — the settled historical record, keyed to the Jerusalem
 # date from editorial/on-this-day.json. Renders nothing on days without an

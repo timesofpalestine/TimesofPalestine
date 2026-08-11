@@ -40,9 +40,9 @@
     <text x="1080" y="362" class="sans muted" font-size="19">1 in 7 families led by a woman</text>
     <text x="1080" y="392" class="arabic muted" font-size="20">أرملة.. أسرة من كل سبع تعيلها امرأة</text>
 
-    <text x="1420" y="290" class="mono" fill="#5fae83" font-size="76" font-weight="700">790k</text>
+    <text x="1420" y="290" class="mono" fill="#5fae83" font-size="76" font-weight="700" textLength="164" lengthAdjust="spacingAndGlyphs">790k</text>
     <text x="1420" y="332" class="sans ivory" font-size="22" font-weight="700">facing hunger</text>
-    <text x="1420" y="362" class="sans muted" font-size="19">crisis or catastrophic levels</text>
+    <text x="1420" y="362" class="sans muted" font-size="19" textLength="164" lengthAdjust="spacingAndGlyphs">crisis or catastrophic levels</text>
     <text x="1420" y="392" class="arabic muted" font-size="20">يواجهن الجوع</text>
   </g>
 
