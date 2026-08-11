@@ -186,7 +186,7 @@ HEALTH = None
 ORIGINAL_CATEGORIES = {
     "gaza", "westbank", "politics", "economy", "accountability", "research",
     "bitcoin", "diaspora", "arts", "sports", "social", "opinion", "news", "humans",
-    "health", "archive", "arabaid", "women", "israelipress",
+    "health", "archive", "arabaid", "women", "israelipress", "uspress",
 }
 ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 ORIGINAL_BODY_STATS = {}
@@ -2573,6 +2573,7 @@ STR = {
         "hero_label": "TOP STORY",
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
                      "israelipress": "Israeli Press",
+                     "uspress": "US Press",
                      "humans": "Real Lives", "health": "Health & Healing",
                      "women": "Her Story",
                      "arabaid": "Arab Support",
@@ -2644,6 +2645,7 @@ STR = {
         "hero_label": "الخبر الأبرز",
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
                      "israelipress": "الصحافة الإسرائيلية",
+                     "uspress": "الصحافة الأميركية",
                      "humans": "حكايات فلسطينية", "health": "الصحة والتعافي",
                      "women": "حكايتها",
                      "arabaid": "الإسناد العربي",
@@ -2752,12 +2754,12 @@ def live_fab_html(lang):
             f'<script>{_LIVE_JS}</script>')
 
 SECTION_ORDER = {
-    "en": ["gaza", "westbank", "israelipress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "en": ["gaza", "westbank", "israelipress", "uspress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
-    "ar": ["gaza", "westbank", "israelipress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "ar": ["gaza", "westbank", "israelipress", "uspress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
 }
-FOCUS_SECTIONS = {"israelipress", "research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
+FOCUS_SECTIONS = {"israelipress", "uspress", "research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
 
 WEEKDAYS_AR = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
 MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",
@@ -4018,7 +4020,7 @@ def render_page(lang, items, built_at):
         # Routine service notices joined 2026-08-09: a power-cut schedule ran
         # as the main headline — reader service, never the lead.
         return (bool(i["image"]) and len(i["title"]) > 30
-                and i["cat"] not in ("social", "research", "opinion", "culture", "israelipress", "arts")
+                and i["cat"] not in ("social", "research", "opinion", "culture", "israelipress", "uspress", "arts")
                 and not evergreen(i)
                 and PALESTINE_RX.search(f"{i['title']} {i['dek']}")  # the top story IS Palestine
                 and not REVIEWISH_RX.search(i["title"])
@@ -4050,12 +4052,12 @@ def render_page(lang, items, built_at):
             heroes = [pick]
             break
     heroes = (heroes
-              or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress", "arts")
+              or take(by_score, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress", "uspress", "arts")
                       and not evergreen(i)
                       and not ROUTINE_NOTICE_RX.search(f"{i['title']} {i['dek']}")
                       and PALESTINE_RX.search(f"{i['title']} {i['dek']}")
                       and within_hours(i, HERO_MAX_AGE_H), 1)
-              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress")
+              or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress", "uspress")
                       and not evergreen(i)
                       and within_hours(i, HERO_MAX_AGE_H), 1))
     hero = heroes[0] if heroes else None
@@ -4063,7 +4065,7 @@ def render_page(lang, items, built_at):
     # space beside the taller Latest rail (owner decision 2026-08-03).
     # Routine service notices don't take top-block slots either — they still
     # run in their section and the chronological Latest rail.
-    hero_subs = take(by_latest, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin", "israelipress")
+    hero_subs = take(by_latest, lambda i: i["cat"] not in ("opinion", "social", "research", "bitcoin", "israelipress", "uspress")
                      and not evergreen(i)
                      and not ROUTINE_NOTICE_RX.search(f"{i['title']} {i['dek']}"), 8)
     # Latest rail and breaking ticker: chronological, Palestine coverage first.
@@ -4109,7 +4111,7 @@ def render_page(lang, items, built_at):
                    "economy", "health", "women", "arabaid")
     _tickerable = [i for i in by_latest if i["cat"] in TICKER_CATS and not evergreen(i)]
     if not _tickerable:
-        _tickerable = [i for i in by_latest if i["cat"] not in ("social", "israelipress")]
+        _tickerable = [i for i in by_latest if i["cat"] not in ("social", "israelipress", "uspress")]
     pal_news = [i for i in _tickerable if palestine(i)]
     ticker_items = (pal_news or _tickerable)[:6]
 
@@ -4175,7 +4177,7 @@ def render_page(lang, items, built_at):
         ("regions", {"en": "News & Regions", "ar": "الأخبار والمناطق"},
          ["gaza", "westbank", "politics", "diaspora", "news"]),
         ("depth", {"en": "In-Depth", "ar": "في العمق"},
-         ["accountability", "research", "israelipress", "social", "opinion", "archive"]),
+         ["accountability", "research", "israelipress", "uspress", "social", "opinion", "archive"]),
         ("society", {"en": "Society & Culture", "ar": "المجتمع والثقافة"},
          ["women", "health", "humans", "arts", "sports"]),
         ("economy", {"en": "Economy & Aid", "ar": "الاقتصاد والإسناد"},

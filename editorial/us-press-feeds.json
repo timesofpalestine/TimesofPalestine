@@ -1,0 +1,27 @@
+{
+  "comment": "Source list for the US press desk (owner directive 2026-08-11). israeli_press_fetch.py reads this via --feeds; edit here, not in code. Every feed is fetched fail-open — a dead URL warns and is skipped, never blocks. Papers first, then the think tanks (the desk labels think-tank material as such, with the institution's lean stated). Some outlets 403 server-side fetches from some networks; they stay listed because they work from other runners, and a 403 only costs a warning line. WSJ and NYT full text sit behind paywalls — the desk works from what the feed and the open web carry, and attributes precisely.",
+  "feeds": [
+    {"outlet": "New York Times — Middle East", "lang": "en", "url": "https://rss.nytimes.com/services/xml/rss/nyt/MiddleEast.xml"},
+    {"outlet": "New York Times — Politics", "lang": "en", "url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml"},
+    {"outlet": "Washington Post — World", "lang": "en", "url": "https://feeds.washingtonpost.com/rss/world"},
+    {"outlet": "Washington Post — Politics", "lang": "en", "url": "https://feeds.washingtonpost.com/rss/politics"},
+    {"outlet": "Wall Street Journal — World", "lang": "en", "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml"},
+    {"outlet": "Politico", "lang": "en", "url": "https://rss.politico.com/politics-news.xml"},
+    {"outlet": "Politico — Defense", "lang": "en", "url": "https://rss.politico.com/defense.xml"},
+    {"outlet": "The Hill — International", "lang": "en", "url": "https://thehill.com/policy/international/feed/"},
+    {"outlet": "Axios", "lang": "en", "url": "https://api.axios.com/feed/"},
+    {"outlet": "Foreign Policy", "lang": "en", "url": "https://foreignpolicy.com/feed/"},
+    {"outlet": "The Atlantic", "lang": "en", "url": "https://www.theatlantic.com/feed/all/"},
+    {"outlet": "The Intercept", "lang": "en", "url": "https://theintercept.com/feed/?rss"},
+    {"outlet": "Foreign Affairs", "lang": "en", "url": "https://www.foreignaffairs.com/rss.xml"},
+    {"outlet": "Brookings (think tank)", "lang": "en", "url": "https://www.brookings.edu/feed/"},
+    {"outlet": "Carnegie Endowment (think tank)", "lang": "en", "url": "https://carnegieendowment.org/rss/solr?fltr=all"},
+    {"outlet": "Quincy Institute — Responsible Statecraft (think tank)", "lang": "en", "url": "https://responsiblestatecraft.org/feed/"},
+    {"outlet": "Middle East Institute (think tank)", "lang": "en", "url": "https://www.mei.edu/rss.xml"},
+    {"outlet": "Washington Institute / WINEP (think tank)", "lang": "en", "url": "https://www.washingtoninstitute.org/rss.xml"},
+    {"outlet": "Council on Foreign Relations (think tank)", "lang": "en", "url": "https://www.cfr.org/rss-feeds/publications-and-updates.xml"},
+    {"outlet": "FDD (think tank)", "lang": "en", "url": "https://www.fdd.org/feed/"},
+    {"outlet": "Arab Center Washington DC (think tank)", "lang": "en", "url": "https://arabcenterdc.org/feed/"},
+    {"outlet": "CSIS (think tank)", "lang": "en", "url": "https://www.csis.org/rss/analysis"}
+  ]
+}
