@@ -3399,11 +3399,12 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 .share .copybtn:hover{background:var(--red);color:#fff;border-color:var(--red)}
 /* Floating share rail: travels with the reader in the story gutter on wide
    desktops; the inline row above stays as the universal fallback. Owner
-   report 2026-08-11: fixed positioning kept it floating over Keep Reading
-   and Latest titles after the article ended — it now shows only while the
-   article itself is on screen (.on toggled by an IntersectionObserver
-   shipped with the rail; without JS it stays hidden and the inline row
-   carries sharing). */
+   reports 2026-08-11 (two rounds): fixed positioning kept it floating over
+   the Keep Reading/Latest titles below the article — .on (toggled by the
+   scroll check shipped with the rail) now tracks geometry, keeping the rail
+   only while the END of the article is still safely below the rail's
+   bottom edge; it switches off as the story's end approaches the buttons.
+   Without JS it stays hidden and the inline row carries sharing. */
 .share-rail{display:none}
 @media(min-width:1200px){
 .share-rail{display:flex;flex-direction:column;gap:.5rem;position:fixed;top:42vh;inset-inline-start:calc(50vw - 410px - 4.6rem);z-index:40;opacity:0;visibility:hidden;transition:opacity var(--tr),visibility var(--tr)}
@@ -4716,15 +4717,20 @@ def render_story(it, lang, related, rail, built_at):
                 + share_url + '">' + ("انسخ الرابط" if lang == "ar" else "Copy link") + "</button>")
     share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(share_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + share_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a>' + copy_btn + '</div>')
     share_rail = ('<nav class="share-rail" aria-label="' + ("شارك الخبر" if lang == "ar" else "Share this story") + '"><a href="https://twitter.com/intent/tweet?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="X">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(share_url) + '" target="_blank" rel="noopener" title="Facebook">f</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + share_url) + '" target="_blank" rel="noopener" title="WhatsApp">Wa</a><a href="https://t.me/share/url?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="Telegram">Tg</a></nav>'
-                  # Owner report 2026-08-11: the fixed rail floated over the
-                  # Keep Reading/Latest titles below the article. It shows
-                  # only while the article itself is on screen; without JS it
-                  # stays hidden and the inline share row carries sharing.
+                  # Owner reports 2026-08-11 (two rounds): the fixed rail
+                  # floated over the Keep Reading/Latest titles below the
+                  # article. Visibility now tracks GEOMETRY, not article
+                  # visibility — the rail shows only while the article's END
+                  # is still safely below the rail's bottom edge, so it
+                  # switches off the moment the end of the story approaches
+                  # the buttons. Without JS it stays hidden and the inline
+                  # share row carries sharing.
                   '<script>(function(){var r=document.querySelector(".share-rail"),'
-                  'a=document.querySelector("article.story");'
-                  'if(!r||!a||!("IntersectionObserver"in window))return;'
-                  'new IntersectionObserver(function(es){r.classList.toggle("on",es[0].isIntersecting)})'
-                  '.observe(a)})()</script>')
+                  'a=document.querySelector("article.story");if(!r||!a)return;var on=false;'
+                  'function chk(){var s=a.getBoundingClientRect().bottom>innerHeight*.42+r.offsetHeight+28;'
+                  'if(s!==on){on=s;r.classList.toggle("on",s)}}'
+                  'addEventListener("scroll",chk,{passive:true});'
+                  'addEventListener("resize",chk,{passive:true});chk()})()</script>')
     plain_desc = meta_desc(summary_text(
         (it.get("brief") or it["dek"]).replace(chr(10), " ")))
     desc = esc(plain_desc)
