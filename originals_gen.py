@@ -21,7 +21,7 @@ import json
 import os
 import re
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 
@@ -204,8 +204,28 @@ def _load(path, default):
 
 
 def _pick_topic(topics, state):
-    """Next unwritten topic; once all are written, the least recently written."""
+    """Freshness-first (owner order 2026-08-11): the desk's next report goes
+    to the stalest section that has a topic in the queue, so no section of
+    the paper sits still while the desk writes elsewhere. A section topic
+    already written is only recycled after a week. Falls back to the
+    original rotation (first unwritten, else least recently written) when
+    the freshness ledger is unavailable or no stale section has a topic —
+    fail-open, never fail-stopped."""
     done = state.get("done", {})
+    try:
+        import section_freshness
+        week_ago = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
+        for cat, _age in section_freshness.stale_sections():
+            cands = [t for t in topics if t.get("cat") == cat]
+            unwritten = [t for t in cands if t["id"] not in done]
+            if unwritten:
+                return unwritten[0]
+            if cands:
+                oldest = min(cands, key=lambda t: done.get(t["id"], ""))
+                if done.get(oldest["id"], "") < week_ago:
+                    return oldest
+    except Exception:
+        pass
     for t in topics:
         if t["id"] not in done:
             return t

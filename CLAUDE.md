@@ -24,6 +24,16 @@ everything it builds:
   sections — never at the expense of the live top of the page.
 - When adding any surface (section, page, widget), ask: what makes this feel
   alive an hour from now? If nothing does, redesign it.
+- **Every section, both editions, updates at least daily (owner order
+  2026-08-11).** `section_freshness.py` is the measure: the build writes
+  `dist/section-freshness.json` and announces stale sections; the
+  investigations desk (`originals_gen._pick_topic`) targets the stalest
+  section's queued topic first; dedicated category-pinned wire feeds keep
+  sports/economy/women/prisoners supplied; and the daily editor treats every
+  STALE line as a same-day assignment. Thresholds are tuned in
+  `section_freshness.py` (archive is exempt — owner-supplied only). No agent
+  removes these hooks; a starving section means "add feeds and topics",
+  never "hide the section".
 
 ## Owner decisions currently in force (2026-07-29)
 
@@ -88,6 +98,13 @@ everything it builds:
    be 6–10 words, use an active construction and name the responsible actor
    or institution whenever the reporting identifies one; never hide a known
    actor behind passive or agentless wording. Applies to every agent.
+   **Transliterated names are verified, never guessed (owner order
+   2026-08-11):** before an Arabic edition uses a name that arrived through
+   English or Hebrew, check its spelling against Arabic-language sources on
+   the same story and record it in `editorial/arabic-names.json` (see the
+   style guide's names section); `build.py` flags the lexicon's known wrong
+   variants like machine diction. The order came after «الهدالين» ran for
+   «الهذالين».
    **Wire attribution protocol (owner decision 2026-07-30):** a rewritten
    story is OUR copy. The source outlet is named exactly once, inline, in
    the prose ("…, the Ma'an news agency reported"). No byline credit-links,
