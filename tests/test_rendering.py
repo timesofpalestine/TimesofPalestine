@@ -1548,6 +1548,25 @@ class MobileChromeTests(unittest.TestCase):
             self.assertNotIn('class="nav-more"', nav)
             self.assertNotIn('navtier2', nav)
 
+    def test_us_press_tab_rides_beside_israeli_press_in_priority_row(self):
+        # Owner order 2026-08-11: the two press desks are one-tap neighbours
+        # on the bar — US Press immediately after Israeli Press, both editions.
+        built_at = datetime(2026, 8, 3, 12, tzinfo=timezone.utc)
+        base = item()
+        base.update({"image": "/media/x.svg"})
+        titles = {
+            "israelipress": "Haaretz reports army knew West Bank outpost plans",
+            "uspress": "Washington Post details Gaza aid corridor talks",
+        }
+        for lang in ("en", "ar"):
+            rows = [dict(base, lang=lang, cat=cat, pid=f"pressnav{n}",
+                         title=title, link=f"https://example.com/pressnav-{n}")
+                    for n, (cat, title) in enumerate(titles.items())]
+            page = build.render_page(lang, rows, built_at)
+            row = page.split('<nav class="sections"', 1)[1].split("nav-group", 1)[0]
+            self.assertRegex(
+                row, r'href="#israelipress">[^<]+</a><a href="#uspress"')
+
     def test_text_only_mode_toggle_rides_every_chrome_bar(self):
         """Owner-forwarded review 2026-08-04: a low-data text-only mode for
         readers on unstable connections. The preference applies from <head>
