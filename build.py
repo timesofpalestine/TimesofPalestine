@@ -4207,13 +4207,17 @@ def render_page(lang, items, built_at):
     # columns are the old groups. One behavior on desktop and phone alike.
     _nav_short = {
         "en": {"gaza": "Gaza", "westbank": "West Bank",
-               "israelipress": "Israeli Press", "politics": "Politics",
+               "israelipress": "Israeli Press", "uspress": "US Press",
+               "politics": "Politics",
                "women": "Her Story", "economy": "Economy"},
         "ar": {"gaza": "غزة", "westbank": "الضفة",
-               "israelipress": "الصحافة الإسرائيلية", "politics": "سياسة",
+               "israelipress": "الصحافة الإسرائيلية",
+               "uspress": "الصحافة الأميركية", "politics": "سياسة",
                "women": "حكايتها", "economy": "اقتصاد"},
     }
-    _priority = ["gaza", "westbank", "israelipress", "politics", "women", "economy"]
+    # US Press rides beside Israeli Press as a one-tap link (owner order
+    # 2026-08-11): the two press desks read as a pair on the bar.
+    _priority = ["gaza", "westbank", "israelipress", "uspress", "politics", "women", "economy"]
     nav_groups = "".join(
         f'<a href="#{k}">{_nav_short[lang].get(k, t["sections"][k])}</a>'
         for k in _priority if k in sections and visible(k))
