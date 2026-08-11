@@ -1543,6 +1543,12 @@ class MobileChromeTests(unittest.TestCase):
             self.assertNotIn('aria-controls="navg-regions"', nav)  # …no group buttons
             self.assertEqual(nav.count('class="nav-gbtn"'), 1)
             self.assertIn('class="nav-drop mega"', nav)
+            # Gold specials strip leads the panel (owner order 2026-08-11):
+            # visible on open, never below the fold of the phone scroll.
+            mega = nav.split('class="nav-drop mega"', 1)[1]
+            self.assertIn('class="mspecials"', mega)
+            self.assertLess(mega.index('class="mspecials"'),
+                            mega.index('class="mcol"'))
             self.assertIn(f'<p class="mhead">{col_label}</p>', nav)
             self.assertIn(all_label, nav)
             self.assertNotIn('class="nav-more"', nav)

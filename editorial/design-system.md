@@ -131,8 +131,9 @@ load-bearing statistic — one or two per story, never as decoration.
   2026-08-06, replacing the four per-group dropdowns; line-tab language of
   #117 + #118 kept): ONE sticky black band. Inline order: THE LATEST
   (red), then DIRECT one-tap links for the flagship sections — Gaza, West
-  Bank, Israeli Press, Politics, Her Story, Economy (short labels from
-  `_nav_short`; flagships never hide behind a menu) — then ONE
+  Bank, Israeli Press, US Press, Politics, Her Story, Economy (short
+  labels from `_nav_short`; flagships never hide behind a menu; the two
+  press desks read as a pair, owner order 2026-08-11) — then ONE
   **All Sections / «كل الأقسام»** button, then the gold `nav_primary`
   specials, then the search/tip utilities anchored inline-end. The
   All-Sections panel (`.nav-drop.mega`) is the paper's full index: a
@@ -142,7 +143,12 @@ load-bearing statistic — one or two per story, never as decoration.
   with its own vertical scroll. It opens on hover/focus-within on pointer
   devices and on tap everywhere; the button carries `aria-expanded` +
   `aria-controls`, and Escape, an outside click or a real scroll closes
-  it. Non-primary gold specials ride at the end of the In-Depth column.
+  it. Non-primary gold specials lead the panel as a full-width strip
+  (`.mspecials`, owner order 2026-08-11): inline gold chips above the
+  columns, spanning the grid, closed by a gold hairline — visible the
+  moment the panel opens, never below the fold of the phone scroll
+  (they previously sat at the end of the In-Depth column and needed
+  scrolling to reach).
   New sections join `_nav_groups_def` (columns) and, if flagship-rank,
   `_priority` in `render_page`; anything not in a group still renders at
   the end of News & Regions (nothing silently vanishes).
