@@ -270,7 +270,7 @@ def render_about(lang, built_at):
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
-<main>
+<main id="top">
   <article class="story">
     <p class="kick">{t['site_name']}</p>
     <h1>{esc(a['title'])}</h1>
