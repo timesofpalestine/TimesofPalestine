@@ -613,6 +613,28 @@ if __name__ == "__main__":
     unittest.main()
 
 
+class PressDeskFreshnessTests(unittest.TestCase):
+    """Owner order 2026-08-11: the press-review sections front the NEWEST
+    items — a daily review showing five-day-old cards reads as dead."""
+
+    def test_press_sections_list_newest_first_regardless_of_score(self):
+        built_at = datetime(2026, 8, 11, 12, tzinfo=timezone.utc)
+        for cat in ("israelipress", "uspress"):
+            old = item()
+            old.update({"cat": cat, "pid": f"pf1{cat[:4]}", "score": 99,
+                        "image": "/media/x.svg",
+                        "date": datetime(2026, 8, 6, 9, tzinfo=timezone.utc),
+                        "title": "Haaretz reviews five days of Gaza coverage"})
+            new = item()
+            new.update({"cat": cat, "pid": f"pf2{cat[:4]}", "score": 1,
+                        "image": "/media/x.svg",
+                        "date": datetime(2026, 8, 11, 9, tzinfo=timezone.utc),
+                        "title": "Maariv leads with the Gaza corridor talks today"})
+            page = build.render_page("en", [old, new], built_at)
+            block = page.split(f'id="{cat}"', 1)[1].split("</section>", 1)[0]
+            self.assertLess(block.index("Maariv leads"), block.index("Haaretz reviews"))
+
+
 class WrongScriptDekTests(unittest.TestCase):
     """Owner report 2026-08-11: an Arabic feed summary rendered under an
     English hero headline. The scrub reads the text itself — no reliance on
