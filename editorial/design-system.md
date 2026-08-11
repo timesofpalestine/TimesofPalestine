@@ -134,7 +134,10 @@ load-bearing statistic — one or two per story, never as decoration.
   labels from `_nav_short`; flagships never hide behind a menu; the two
   press desks read as a pair, owner order 2026-08-11) — then ONE
   **All Sections / «كل الأقسام»** button, then the gold `nav_primary`
-  specials, then the search/tip utilities anchored inline-end. The
+  specials, then the search/tip utilities anchored inline-end. The tip
+  link leads with the inline Signal speech-bubble glyph in Signal blue
+  (`SIGNAL_GLYPH`, owner order 2026-08-11 — the tip line IS the
+  newsroom's Signal account; never a padlock there). The
   All-Sections panel (`.nav-drop.mega`) is the paper's full index: a
   full-width solid-`--black` sheet under the bar whose columns are the
   old four groups as gold `.mhead` headings (News & Regions, Economy &
