@@ -114,7 +114,7 @@ GAZA_INDEX_KEYS = [
 
 # Styles travel with the panel. The figures declare no colour of their own so
 # they inherit the page ink and stay readable in both the light and dark themes.
-PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-block{border:1px solid var(--line);background:var(--card);box-shadow:var(--sh);padding:1.05rem 1.15rem .95rem;margin-bottom:1rem}.gi-block:last-child{margin-bottom:0}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.9rem}.gi-cell{background:var(--paper);border:1px solid var(--line);border-inline-start:3px solid var(--red);border-radius:6px;padding:.7rem .8rem .6rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:.85rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-region{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 .8rem}.gi-region::before{content:\"\";width:4px;height:.95rem;background:var(--red);border-radius:2px;flex-shrink:0}[lang=ar] .gi-region{letter-spacing:0;font-size:.82rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-grid.gi-pr{grid-template-columns:repeat(5,minmax(0,1fr))}.gi-comp{display:flex;block-size:7px;border-radius:4px;overflow:hidden;background:var(--line);margin-top:.95rem}.gi-comp .seg{display:block;block-size:100%}.gi-legend{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:.5rem;font-size:.7rem;font-weight:600;color:var(--muted)}.gi-legend .gi-lead{font-weight:800;color:var(--ink)}.gi-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:.35rem}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(2,minmax(0,1fr))}}.gi-help{position:relative;display:inline-block;margin-inline-start:.35rem;inline-size:15px;block-size:15px;border-radius:50%;background:var(--line);color:var(--muted);font-size:.62rem;font-weight:800;line-height:15px;text-align:center;cursor:help;vertical-align:middle}.gi-help:focus-visible{outline:2px solid var(--green);outline-offset:1px}.gi-help .gi-tip{position:absolute;inset-block-end:calc(100% + 8px);inset-inline-end:-8px;inline-size:min(240px,58vw);background:#0b0b0c;color:#f2eee8;font-size:.7rem;font-weight:500;line-height:1.55;padding:.55rem .7rem;border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,.35);opacity:0;visibility:hidden;transition:opacity .15s;z-index:30;text-align:start;pointer-events:none;cursor:auto}.gi-help:hover .gi-tip,.gi-help:focus .gi-tip{opacity:1;visibility:visible}.gi-dl{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-dl a{color:var(--green);font-weight:700}.toll-chart{margin:.9rem 0 0;padding-top:.9rem;border-top:1px solid var(--line)}.toll-chart figcaption{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:.5rem}.tc-head{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}[lang=ar] .tc-head{letter-spacing:0;font-size:.8rem}.tc-now{font-family:var(--serif);font-weight:900;font-size:1.3rem;color:var(--red);font-variant-numeric:tabular-nums}[lang=ar] .tc-now{font-weight:700}.toll-chart svg{display:block;inline-size:100%;block-size:120px}.tc-area{fill:rgba(200,16,46,.14)}.tc-line{fill:none;stroke:var(--red);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linejoin:round}.tc-grid{stroke:var(--line);stroke-width:1;vector-effect:non-scaling-stroke}.tc-tick{fill:var(--muted);font-size:9px;font-weight:700}.tc-foot{margin:.35rem 0 0;font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}.gi-strip{background:var(--black);border-block-end:1px solid #26262c}.gi-strip .wrap{display:flex;align-items:baseline;gap:1.4rem;padding-block:.5rem;overflow-x:auto;scrollbar-width:none}.gi-strip .wrap::-webkit-scrollbar{display:none}.gs-kick{flex-shrink:0;font-size:.62rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#f93549;white-space:nowrap}[lang=ar] .gs-kick{letter-spacing:0;font-size:.74rem}.gs-cell{white-space:nowrap}.gs-num{font-family:var(--serif);font-weight:900;font-size:1rem;color:#f2eee8;font-variant-numeric:tabular-nums}[lang=ar] .gs-num{font-weight:700}.gs-lab{margin-inline-start:.35rem;font-size:.68rem;font-weight:600;color:#a3a8b2}[lang=ar] .gs-lab{font-size:.78rem}.gs-more{flex-shrink:0;margin-inline-start:auto;font-size:.68rem;font-weight:700;color:#3fd07c;white-space:nowrap}[lang=ar] .gs-more{font-size:.78rem}.gi-method{margin:-.3rem 0 1rem;font-size:.74rem;color:var(--muted)}[lang=ar] .gi-method{font-size:.84rem}.gi-method summary{cursor:pointer;font-weight:700;color:var(--green-deep)}.gi-method p{margin:.45rem 0 0;line-height:1.65;max-inline-size:60rem}"
+PANEL_CSS = "section.gaza-index{padding-block:1.6rem;border-top:1px solid var(--line-dark)}.gi-block{border:1px solid var(--line);background:var(--card);box-shadow:var(--sh);padding:1.05rem 1.15rem .95rem;margin-bottom:1rem}.gi-block:last-child{margin-bottom:0}.gi-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.9rem}.gi-cell{background:var(--paper);border:1px solid var(--line);border-inline-start:3px solid var(--red);border-radius:6px;padding:.7rem .8rem .6rem;transition:background var(--tr)}.gi-num{display:block;font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.1;font-variant-numeric:tabular-nums}[lang=ar] .gi-num{font-weight:700}.gi-moh .gi-num{font-size:2.05rem}.gi-lab{display:block;margin-top:.3rem;font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.35}.gi-bar{display:block;margin-top:.42rem;block-size:4px;border-radius:2px;background:rgba(200,16,46,.18);overflow:hidden}.gi-bar>span{display:block;block-size:100%;background:var(--red);border-radius:2px}.gi-src{margin-top:.85rem;font-size:.72rem;color:var(--muted)}.gi-src a{color:var(--green);font-weight:700}.gi-region{display:flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 .8rem}.gi-region::before{content:\"\";width:4px;height:.95rem;background:var(--red);border-radius:2px;flex-shrink:0}[lang=ar] .gi-region{letter-spacing:0;font-size:.82rem}.gi-grid.gi-wb{grid-template-columns:repeat(4,minmax(0,1fr))}.gi-grid.gi-pr{grid-template-columns:repeat(5,minmax(0,1fr))}.gi-comp{display:flex;block-size:7px;border-radius:4px;overflow:hidden;background:var(--line);margin-top:.95rem}.gi-comp .seg{display:block;block-size:100%}.gi-legend{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin-top:.5rem;font-size:.7rem;font-weight:600;color:var(--muted)}.gi-legend .gi-lead{font-weight:800;color:var(--ink)}.gi-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:.35rem}.gi-live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 2s infinite;flex-shrink:0;margin-inline-end:.15rem;vertical-align:middle}.gi-flash{animation:giflash 1.8s ease}@keyframes giflash{0%{background:rgba(200,16,46,.16)}100%{background:transparent}}@media(prefers-reduced-motion:reduce){.gi-live{animation:none}.gi-flash{animation:none}}@media(max-width:960px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:560px){.gi-grid,.gi-grid.gi-wb,.gi-grid.gi-pr{grid-template-columns:repeat(2,minmax(0,1fr))}}.gi-help{position:relative;display:inline-block;margin-inline-start:.35rem;inline-size:15px;block-size:15px;border-radius:50%;background:var(--line);color:var(--muted);font-size:.62rem;font-weight:800;line-height:15px;text-align:center;cursor:help;vertical-align:middle}.gi-help:focus-visible{outline:2px solid var(--green);outline-offset:1px}.gi-help .gi-tip{position:absolute;inset-block-end:calc(100% + 8px);inset-inline-end:-8px;inline-size:min(240px,58vw);background:#0b0b0c;color:#f2eee8;font-size:.7rem;font-weight:500;line-height:1.55;padding:.55rem .7rem;border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,.35);opacity:0;visibility:hidden;transition:opacity .15s;z-index:30;text-align:start;pointer-events:none;cursor:auto}.gi-help:hover .gi-tip,.gi-help:focus .gi-tip{opacity:1;visibility:visible}.gi-dl{margin-top:1rem;font-size:.72rem;color:var(--muted)}.gi-dl a{color:var(--green);font-weight:700}.toll-chart{margin:.9rem 0 0;padding-top:.9rem;border-top:1px solid var(--line)}.toll-chart figcaption{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:.5rem}.tc-head{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}[lang=ar] .tc-head{letter-spacing:0;font-size:.8rem}.tc-now{font-family:var(--serif);font-weight:900;font-size:1.3rem;color:var(--red);font-variant-numeric:tabular-nums}[lang=ar] .tc-now{font-weight:700}.toll-chart svg{display:block;inline-size:100%;block-size:120px}.tc-area{fill:rgba(200,16,46,.14)}.tc-line{fill:none;stroke:var(--red);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linejoin:round}.tc-grid{stroke:var(--line);stroke-width:1;vector-effect:non-scaling-stroke}.tc-tick{fill:var(--muted);font-size:9px;font-weight:700}.tc-foot{margin:.35rem 0 0;font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}.gi-strip{background:var(--black);border-block-end:1px solid #26262c}.gi-strip .wrap{display:flex;align-items:baseline;gap:1.1rem;padding-block:.5rem;overflow-x:auto;scrollbar-width:none}@media(min-width:961px){.gi-strip .wrap{flex-wrap:wrap;overflow-x:visible;row-gap:.1rem}}.gi-strip .wrap::-webkit-scrollbar{display:none}.gs-kick{flex-shrink:0;font-size:.62rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#f93549;white-space:nowrap}[lang=ar] .gs-kick{letter-spacing:0;font-size:.74rem}.gs-cell{white-space:nowrap}.gs-num{font-family:var(--serif);font-weight:900;font-size:1rem;color:#f2eee8;font-variant-numeric:tabular-nums}[lang=ar] .gs-num{font-weight:700}.gs-lab{margin-inline-start:.35rem;font-size:.68rem;font-weight:600;color:#a3a8b2}[lang=ar] .gs-lab{font-size:.78rem}.gs-more{flex-shrink:0;margin-inline-start:auto;font-size:.68rem;font-weight:700;color:#3fd07c;white-space:nowrap}[lang=ar] .gs-more{font-size:.78rem}.gi-method{margin:-.3rem 0 1rem;font-size:.74rem;color:var(--muted)}[lang=ar] .gi-method{font-size:.84rem}.gi-method summary{cursor:pointer;font-weight:700;color:var(--green-deep)}.gi-method p{margin:.45rem 0 0;line-height:1.65;max-inline-size:60rem}"
 
 # The live layer: a gentle roll-up when the panel first scrolls into view,
 # then a refetch of /data/gaza-numbers.json every 5 minutes that animates any
@@ -702,16 +702,32 @@ def market_figures():
                 "pct": (closes[-1] - closes[-2]) / closes[-2] * 100}
     except Exception as e:  # noqa: BLE001
         print(f"  → TA-125 unavailable ({type(e).__name__}) — strip omits it")
-    try:  # Al-Quds index — first decimal number near the index's name
-        req = urllib.request.Request(
-            "https://www.pex.ps/", headers={"User-Agent": "Mozilla/5.0 (TimesofPalestine newsroom)"})
-        with urllib.request.urlopen(req, timeout=10) as r:
-            html = r.read().decode("utf-8", errors="replace")
-        m = re.search(r"(?:Al[- ]Quds|القدس)(?:(?!\d)[\s\S]){0,240}?(\d{3,4}\.\d{1,2})", html)
-        if m:
-            _MARKETS_CACHE["alquds"] = {"level": float(m.group(1))}
-    except Exception as e:  # noqa: BLE001
-        print(f"  → Al-Quds index unavailable ({type(e).__name__}) — strip omits it")
+    for url in ("https://www.pex.ps/en/al-quds-index/", "https://www.pex.ps/"):
+        try:  # Al-Quds index — first decimal number near the index's name
+            req = urllib.request.Request(
+                url, headers={"User-Agent": "Mozilla/5.0 (TimesofPalestine newsroom)"})
+            with urllib.request.urlopen(req, timeout=10) as r:
+                html = r.read().decode("utf-8", errors="replace")
+            m = re.search(r"(?:Al[- ]Quds|القدس)(?:(?!\d)[\s\S]){0,240}?(\d{3,4}\.\d{1,2})", html)
+            if m:
+                _MARKETS_CACHE["alquds"] = {"level": float(m.group(1))}
+                break
+        except Exception as e:  # noqa: BLE001
+            print(f"  → Al-Quds fetch failed at {url} ({type(e).__name__})")
+    if "alquds" not in _MARKETS_CACHE:
+        # Editorial fallback (owner order 2026-08-11: the Ramallah ticker must
+        # SHOW): the daily editor maintains the latest close in
+        # editorial/markets.json; the strip renders it with its date.
+        try:
+            import pathlib
+            data = json.loads((pathlib.Path(__file__).resolve().parent
+                               / "editorial" / "markets.json").read_text(encoding="utf-8"))
+            aq = data.get("alquds") or {}
+            if aq.get("level"):
+                _MARKETS_CACHE["alquds"] = {"level": float(aq["level"]),
+                                            "asof": str(aq.get("date", ""))}
+        except Exception as e:  # noqa: BLE001
+            print(f"  → Al-Quds editorial fallback unavailable ({type(e).__name__}) — strip omits it")
     return _MARKETS_CACHE
 
 
@@ -737,29 +753,30 @@ def strip(lang):
                      f'<span class="gs-lab">{arl if ar else en}</span></span>')
     if not cells:
         return ""
+    # Money block, kept COMPACT (owner report 2026-08-11: the strip crowded
+    # the markets off-screen): ONE combined dollar/dinar cell, then the two
+    # indexes with short labels. The euro moved to the cell title — dollars
+    # and dinars are what Palestinian households are paid in.
     rates = shekel_rates()
     if rates:
-        src_note = (f"سعر مرجعي · {rates['date']}" if ar
-                    else f"reference rate · {rates['date']}")
-        for val, en, arl, note in (
-                (rates["usd"], "to the dollar", "للدولار", src_note),
-                (rates["jod"], "to the dinar", "للدينار",
-                 ("محتسب من ربط الدينار بالدولار · " if ar
-                  else "derived from the dinar's dollar peg · ") + src_note),
-                (rates["eur"], "to the euro", "لليورو", src_note)):
-            cells.append(
-                f'<span class="gs-cell" title="{note}"><b class="gs-num">'
-                f'₪{val:.2f}</b><span class="gs-lab">{arl if ar else en}</span></span>')
-    # Market watch (owner directive 2026-08-11): the Al-Quds index and TA-125
-    # ride the strip so readers see both markets at a glance; the economy
-    # desk covers significant moves same-day with the exchange attributed.
+        note = ((f"سعر مرجعي {rates['date']} · اليورو ₪{rates['eur']:.2f} · "
+                 "الدينار محتسب من ربطه بالدولار") if ar else
+                (f"reference {rates['date']} · euro ₪{rates['eur']:.2f} · "
+                 "dinar derived from its dollar peg"))
+        jd = "د.أ" if ar else "JD"
+        cells.append(
+            f'<span class="gs-cell" title="{note}"><b class="gs-num">'
+            f'₪{rates["usd"]:.2f}/$ · ₪{rates["jod"]:.2f}/{jd}</b></span>')
     mkt = market_figures()
     if mkt.get("alquds"):
+        aq = mkt["alquds"]
+        asof = f' · {aq["asof"]}' if aq.get("asof") else ""
         cells.append(
             '<span class="gs-cell" title="'
-            + ("مؤشر القدس — بورصة فلسطين" if ar else "Al-Quds index — Palestine Exchange")
-            + f'"><b class="gs-num">{mkt["alquds"]["level"]:,.1f}</b>'
-            f'<span class="gs-lab">{"مؤشر القدس" if ar else "Al-Quds index"}</span></span>')
+            + (f"مؤشر القدس — بورصة فلسطين{asof}" if ar
+               else f"Al-Quds index — Palestine Exchange{asof}")
+            + f'"><b class="gs-num">{aq["level"]:,.1f}</b>'
+            f'<span class="gs-lab">{"القدس" if ar else "Al-Quds"}</span></span>')
     if mkt.get("ta125"):
         t = mkt["ta125"]
         arrow = "▲" if t.get("pct", 0) >= 0 else "▼"
@@ -767,7 +784,7 @@ def strip(lang):
             '<span class="gs-cell" title="'
             + ("تل أبيب 125 — بورصة تل أبيب" if ar else "TA-125 — Tel Aviv Stock Exchange")
             + f'"><b class="gs-num">{t["level"]:,.0f} {arrow}{abs(t.get("pct", 0)):.1f}%</b>'
-            f'<span class="gs-lab">{"تل أبيب 125" if ar else "TA-125"}</span></span>')
+            f'<span class="gs-lab">{"تل أبيب" if ar else "TA-125"}</span></span>')
     kick = "فلسطين بالأرقام" if ar else "Palestine by the Numbers"
     more = "السجل الكامل ←" if ar else "Full ledger →"
     label = ("فلسطين بالأرقام — أبرز المؤشرات" if ar

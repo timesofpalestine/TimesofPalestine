@@ -340,8 +340,11 @@ prices Israeli politics — is an economy story the SAME DAY in both
 languages, numbers always attributed to the exchange and dated;
 market levels are facts, never advice, and no story recommends buying
 or selling anything. The daily editor sweeps the beat; PEX publishes no
-API, so if the Al-Quds fetch pattern breaks, repair it from a runner
-with open egress (the strip omits the cell until then, never blocks).
+API, so `editorial/markets.json` carries the latest Al-Quds CLOSE with
+its date as the strip's fallback — the daily editor refreshes it every
+cycle from pex.ps / Investing.com PLE, and the cell renders the file's
+date when live fetching fails (never a stale number undated, never a
+blocked build).
 Claude's beat; other agents route market story ideas via issue #6.
 
 ## Prisoners & Detainees (owner directive 2026-08-11)

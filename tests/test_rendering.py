@@ -650,14 +650,19 @@ class SvgTextOverflowTests(unittest.TestCase):
 class MarketWatchTests(unittest.TestCase):
     """Owner directive 2026-08-11: Al-Quds and TA-125 in the strip, fail-open."""
 
-    def test_market_figures_fail_open_without_network(self):
+    def test_market_figures_fail_open_and_editorial_fallback(self):
+        # Without network the fetches fail silently, and the Al-Quds cell
+        # still fills from editorial/markets.json WITH its as-of date —
+        # the Ramallah ticker must show (owner order 2026-08-11).
         import gaza_panel
         old = dict(gaza_panel._MARKETS_CACHE)
         gaza_panel._MARKETS_CACHE.clear()
         gaza_panel._MARKETS_CACHE["done"] = False
         try:
             out = gaza_panel.market_figures()  # no network in tests
-            self.assertNotIn("crash", out)  # returns, never raises
+            self.assertIn("alquds", out)
+            self.assertTrue(out["alquds"]["level"] > 0)
+            self.assertTrue(out["alquds"].get("asof"))
         finally:
             gaza_panel._MARKETS_CACHE.clear()
             gaza_panel._MARKETS_CACHE.update(old)
