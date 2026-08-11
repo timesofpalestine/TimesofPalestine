@@ -189,6 +189,20 @@ load-bearing statistic — one or two per story, never as decoration.
   **Tap targets (a11y):** on touch widths every utility control (theme,
   Aa, ticker pause, language pill) reaches the house ~44px tap height —
   a new chrome control must meet the same floor.
+- **On This Day band** (`.otd`, owner directive 2026-08-11): a slim
+  `--black` memory band on both fronts — gold uppercase kicker («حدث في
+  مثل هذا اليوم» / ON THIS DAY), mono gold year, serif one-liner capped at
+  the reading measure; max two events, keyed to the Jerusalem date from
+  `editorial/on-this-day.json`; renders nothing on days without an entry.
+  Same face in both themes, like the rest of the chrome. Extending the
+  dataset: settled historical record only, dates verified before adding.
+
+- **Numbers-strip rates cells** (2026-08-11): shekel reference rates ride
+  the end of the `.gi-strip` as ordinary `gs-cell`s (₪ + two decimals);
+  USD/EUR from the ECB daily reference, JOD derived from the dollar peg
+  and labelled as such in the cell title; the whole group is omitted
+  silently when the fetch fails — never a placeholder.
+
 - **Card** (`.card`, `.rowcard`, `.fr-card`): image on top (16:9 in
   standard story cards AND rowcard side art — aligned 2026-08-05 so mixed
   grids sit on one ratio; 16/6 default in franchise cards), then kicker →

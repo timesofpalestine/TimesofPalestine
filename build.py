@@ -187,6 +187,7 @@ ORIGINAL_CATEGORIES = {
     "gaza", "westbank", "politics", "economy", "accountability", "research",
     "bitcoin", "diaspora", "arts", "sports", "social", "opinion", "news", "humans",
     "health", "archive", "arabaid", "women", "israelipress", "uspress",
+    "prisoners",
 }
 ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 ORIGINAL_BODY_STATS = {}
@@ -517,8 +518,22 @@ WOMEN_RX = re.compile(
     rf"(?s)^(?:(?=.*(?:{_WOMEN_SUBJECT}))(?=.*(?:{_WOMEN_CONTEXT}))|(?=.*(?:{_WOMEN_SOLO})))",
     re.I)
 
+# Prisoners & Detainees (owner directive 2026-08-11): the أسرى file is a
+# first-class standing section of the Palestinian press — prisoner counts,
+# administrative detention, hunger strikes, releases and exchanges, prison
+# conditions, the prisoners' institutions (نادي الأسير, هيئة شؤون الأسرى).
+# Routed AFTER Her Story: a female prisoner's account (أسيرة/معتقلة) stays
+# a Her Story lead per that section's charter rules.
+PRISONERS_RX = re.compile(
+    r"prisoner|detainee|administrative detention|hunger strike|"
+    r"prison(?:er)?s'? (?:club|society|affairs)|prisoner (?:swap|exchange|release)|"
+    r"أسير|أسرى|الأسير|الأسرى|معتقل|نادي الأسير|هيئة شؤون الأسرى|"
+    r"الاعتقال الإداري|اعتقال إداري|إضراب عن الطعام|"
+    r"سجون الاحتلال|السجون الإسرائيلية|تبادل أسرى|صفقة تبادل", re.I)
+
 CATEGORY_RULES = [
     ("women", WOMEN_RX),
+    ("prisoners", PRISONERS_RX),
     ("arabaid", ARAB_AID_RX),
     ("accountability", ACCOUNTABILITY_RX),
     ("health", HEALTH_RX),
@@ -2585,6 +2600,7 @@ STR = {
         "switch_lang": "🌐 العربية", "switch_href": "../ar/",
         "hero_label": "TOP STORY",
         "sections": {"gaza": "Gaza", "westbank": "West Bank & Jerusalem",
+                     "prisoners": "Prisoners & Detainees",
                      "israelipress": "Israeli Press",
                      "uspress": "US Press",
                      "humans": "Real Lives", "health": "Health & Healing",
@@ -2657,6 +2673,7 @@ STR = {
         "switch_lang": "🌐 English", "switch_href": "../en/",
         "hero_label": "الخبر الأبرز",
         "sections": {"gaza": "غزة", "westbank": "الضفة والقدس",
+                     "prisoners": "الأسرى",
                      "israelipress": "الصحافة الإسرائيلية",
                      "uspress": "الصحافة الأميركية",
                      "humans": "حكايات فلسطينية", "health": "الصحة والتعافي",
@@ -2767,12 +2784,12 @@ def live_fab_html(lang):
             f'<script>{_LIVE_JS}</script>')
 
 SECTION_ORDER = {
-    "en": ["gaza", "westbank", "israelipress", "uspress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "en": ["gaza", "westbank", "prisoners", "israelipress", "uspress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
-    "ar": ["gaza", "westbank", "israelipress", "uspress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "ar": ["gaza", "westbank", "prisoners", "israelipress", "uspress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
 }
-FOCUS_SECTIONS = {"israelipress", "uspress", "research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
+FOCUS_SECTIONS = {"prisoners", "israelipress", "uspress", "research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
 
 WEEKDAYS_AR = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
 MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",
@@ -3390,6 +3407,16 @@ footer .legal{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #2a2a30;fo
 footer .foot-sections{margin-top:1.6rem;padding-top:1.1rem;border-top:1px solid #2a2a30;display:flex;flex-wrap:wrap;gap:.1rem .35rem}
 footer .foot-sections a{color:#b9b9c2;font-size:.72rem;font-weight:700;padding:.5rem .55rem;white-space:nowrap;border-radius:3px}
 footer .foot-sections a:hover{color:#fff;background:rgba(255,255,255,.07)}
+/* On This Day (owner directive 2026-08-11): a slim dark memory band, gold
+   kicker, mono year — same face in both themes like the rest of the chrome. */
+.otd{background:var(--black);padding-block:.9rem;margin-block:1.1rem}
+.otd .wrap{display:flex;flex-wrap:wrap;gap:.45rem 2.2rem;align-items:baseline}
+.otd-kick{color:#c7a86b;font:800 .66rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
+[lang=ar] .otd-kick{letter-spacing:0;font-size:.8rem}
+.otd-ev{display:flex;gap:.7rem;align-items:baseline;min-width:0}
+.otd-ev .y{font:800 .95rem/1 ui-monospace,Menlo,monospace;color:#c7a86b}
+.otd-ev p{font-family:var(--serif);font-size:.92rem;line-height:1.5;color:#e6e6ec;max-width:72ch}
+[lang=ar] .otd-ev p{font-size:1.02rem;line-height:1.7}
 /* Back-to-top (owner order 2026-08-11): floats opposite the live dock after
    two screens of scroll; house chrome black in both themes, ~44px tap. */
 .totop{position:fixed;bottom:1rem;inset-inline-end:1rem;z-index:65;width:44px;height:44px;border-radius:50%;background:rgba(11,11,12,.92);color:#f2eee8;border:1px solid rgba(255,255,255,.28);display:flex;align-items:center;justify-content:center;font:800 1.15rem/1 var(--sans);text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.35);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity var(--tr),visibility var(--tr),transform var(--tr)}
@@ -4016,6 +4043,27 @@ def specials_band_html(lang, items=(), extra=""):
             + "".join(cards) + '</div></div></section>')
 
 
+# On This Day in Palestine (owner directive 2026-08-11): a daily memory line
+# on both fronts — the settled historical record, keyed to the Jerusalem
+# date from editorial/on-this-day.json. Renders nothing on days without an
+# entry (never invented filler); fail-open on a broken data file.
+def on_this_day_html(lang, built_at):
+    try:
+        data = json.loads((ROOT / "editorial" / "on-this-day.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return ""
+    events = data.get(built_at.astimezone(GAZA).strftime("%m-%d")) or []
+    events = [ev for ev in events if ev.get(lang)][:2]
+    if not events:
+        return ""
+    label = "حدث في مثل هذا اليوم" if lang == "ar" else "On this day"
+    rows = "".join(
+        f'<div class="otd-ev"><span class="y">{int(ev["y"])}</span>'
+        f'<p>{esc(ev[lang])}</p></div>' for ev in events)
+    return (f'<section class="otd" aria-label="{label}"><div class="wrap">'
+            f'<p class="otd-kick">{label}</p>{rows}</div></section>')
+
+
 # ---------- shared section navigation (owner order 2026-08-11) ----------
 # EVERY page carries the front page's wayfinding: most readers land on a
 # story from a shared link, and they must be able to reach any desk and the
@@ -4028,7 +4076,7 @@ def specials_band_html(lang, items=(), extra=""):
 # below the fold of the phone panel's single scrolling column.
 NAV_GROUPS_DEF = [
     ("regions", {"en": "News & Regions", "ar": "الأخبار والمناطق"},
-     ["gaza", "westbank", "politics", "diaspora", "news"]),
+     ["gaza", "westbank", "prisoners", "politics", "diaspora", "news"]),
     ("economy", {"en": "Economy & Aid", "ar": "الاقتصاد والإسناد"},
      ["economy", "arabaid", "bitcoin"]),
     ("depth", {"en": "In-Depth", "ar": "في العمق"},
@@ -4306,7 +4354,7 @@ def render_page(lang, items, built_at):
     # profile ran as "breaking"). Features, reviews, desks and evergreens
     # never scroll here; if the hard-news pool is empty the ticker falls back
     # to the old behaviour rather than rendering blank.
-    TICKER_CATS = ("gaza", "westbank", "politics", "news", "accountability",
+    TICKER_CATS = ("gaza", "westbank", "prisoners", "politics", "news", "accountability",
                    "economy", "health", "women", "arabaid")
     _tickerable = [i for i in by_latest if i["cat"] in TICKER_CATS and not evergreen(i)]
     if not _tickerable:
@@ -4542,6 +4590,7 @@ def render_page(lang, items, built_at):
     </aside>
   </div>
   {specials_band}{gaza_panel}
+  {on_this_day_html(lang, built_at)}
   {opinion_block}
   {section_blocks}
   {tips_band}{newsletter_band(lang)}

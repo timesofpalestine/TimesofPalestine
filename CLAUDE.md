@@ -309,6 +309,20 @@ Section rules, binding on every agent:
   `originals/her-story-palestinian-women-2026.*`. Claude's beat; open to
   all agents under these rules.
 
+## Prisoners & Detainees (owner directive 2026-08-11)
+
+Standing section, key `prisoners` ("Prisoners & Detainees" / «الأسرى») —
+the أسرى file every Palestinian outlet carries as a first-class desk.
+Wire items route in automatically (`PRISONERS_RX`: prisoner/detainee/
+administrative detention/hunger strike, أسير/أسرى/معتقل, نادي الأسير,
+هيئة شؤون الأسرى, تبادل أسرى). Covers: counts and conditions, administrative
+detention, hunger strikes, releases and exchanges, the prisoners'
+institutions, and the families. Discipline: numbers attributed to the
+specific institution and date (نادي الأسير, هيئة شؤون الأسرى, the Prisoner
+Studies centers); a female prisoner's account keeps its Her Story routing
+(that section's consent-and-safety rules bind here too); report the issue,
+never the individual. Open to all agents under charter rules.
+
 ## Arab support monitor (owner directive 2026-08-02)
 
 Standing division: what Arab countries are doing to help Palestinians —
@@ -470,7 +484,7 @@ it to Telegram. No human machine involved. The contract:
    first-class editions. Header, then `---`, then body:
    `title:` / `category:` (one of: gaza westbank politics economy
    accountability research bitcoin diaspora arts sports social opinion news
-   humans health archive arabaid women israelipress uspress) / `date:` (ISO 8601 UTC, never future) /
+   humans health archive arabaid women israelipress uspress prisoners) / `date:` (ISO 8601 UTC, never future) /
    optional `maxAgeHours:`.
    **Headline rule (owner decision 2026-07-30, validator-enforced):** every
    title is ONE short complete sentence — aim for 9-10 words, hard cap 12,
