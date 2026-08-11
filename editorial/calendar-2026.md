@@ -70,6 +70,10 @@ land in a specific window.
   - ✅ 1 of 3 for August — `turkey-indonesia-palestinian-student-funds-2026.*`
     (2026-08-08): the YTB–Baykar and BAZNAS scholarship funds, written in
     Arabic first and then into English.
+  - ✅ 2 of 3 for August — `gaza-police-training-egypt-jordan-2026.*`
+    (2026-08-11): Egypt and Jordan training the Palestinian police force for
+    Gaza — what has been delivered, funded and left unsettled, written in
+    Arabic first and then into English.
 - **Her Story pipeline:** keep at least one women-section topic in the
   active queue at all times (two added 2026-08-06).
 
@@ -105,10 +109,18 @@ land in a specific window.
   to a documented `noFeed` list in `editorial/us-press-feeds.json`, swept
   by direct fetch instead. The wire now runs with zero dead-feed warnings;
   re-test the two occasionally and move them back when their feeds return.
-- **Paragraph pacing (open).** The build flags 152 paragraphs over ~70
-  words across the older originals. The renderer already splits them at
+- **Paragraph pacing (open, 150 files left).** The build flags originals
+  carrying paragraphs over ~70 words. The renderer already splits them at
   sentence boundaries for the reader, so this is a copy-desk backlog, not a
-  reader-facing fault — work a few files down per cycle, newest first.
+  reader-facing fault — work a batch down per cycle, worst first.
+  `tools/pace_originals.py <files>` applies the renderer's own rule
+  (`longform._flow`) back into the source, so the copy on disk matches the
+  copy on the page and nothing reader-facing moves; headings, quotes, lists,
+  tables and media directives are left untouched. Worked 2026-08-11: 14 files,
+  137 paragraphs (the business-leaders and de-development reports, both
+  Washington Briefs of 2026-07-30, the PA budget pair, the donor-aid Arabic
+  edition, the who-profits report, and the Ammous, Elyanna, Sama Abdulhadi
+  and STL-dabke features). 158 flagged files → 150.
 
 ## Blocked on the owner
 
