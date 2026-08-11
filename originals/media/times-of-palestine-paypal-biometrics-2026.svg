@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t">
+  <title id="t">Times of Palestine — PayPal, Palestinians and the biometrics gate</title>
+  <desc>A payment card blocked at a barrier while a fingerprint is scanned</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/></linearGradient>
+  <style>.serif{font-family:"Source Serif 4",Georgia,serif}.arabic{font-family:Cairo,Arial,sans-serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}</style></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+  <text x="90" y="120" class="sans" fill="#c7a86b" font-size="18" letter-spacing="4">ACCOUNTABILITY · المساءلة</text>
+  <text x="90" y="200" class="serif" fill="#f2eee8" font-size="40" font-weight="800">PayPal, Palestinians, and the</text>
+  <text x="90" y="252" class="serif" fill="#f2eee8" font-size="40" font-weight="800">biometrics gate</text>
+  <text x="90" y="310" class="arabic" fill="#aaa9a5" font-size="26">«باي بال» والفلسطينيون وبوابة القياسات الحيوية</text>
+  <g transform="translate(240,560)">
+    <rect x="-110" y="-70" width="300" height="180" rx="14" fill="#1a1d22" stroke="#3d4f6b" stroke-width="4"/>
+    <rect x="-110" y="-30" width="300" height="34" fill="#3d4f6b"/>
+    <rect x="-80" y="40" width="120" height="18" rx="4" fill="#aaa9a5" opacity=".5"/>
+    <line x1="230" y1="-90" x2="230" y2="130" stroke="#8a1f2d" stroke-width="12"/>
+    <line x1="270" y1="-90" x2="270" y2="130" stroke="#8a1f2d" stroke-width="12"/>
+  </g>
+  <text x="130" y="720" class="sans" fill="#aaa9a5" font-size="17">no service in the West Bank and Gaza</text>
+  <g transform="translate(1050,540)" fill="none" stroke="#c7a86b" stroke-width="7" stroke-linecap="round">
+    <path d="M0 -80 A80 80 0 0 1 80 0"/><path d="M-30 -60 A65 65 0 0 1 60 10"/>
+    <path d="M-55 -35 A50 50 0 0 1 40 25"/><path d="M-70 -5 A38 38 0 0 1 18 38"/>
+    <path d="M-72 30 A26 26 0 0 1 -5 48"/>
+  </g>
+  <text x="940" y="680" class="sans" fill="#aaa9a5" font-size="17">identity checks routed through AU10TIX</text>
+  <text x="90" y="840" class="sans" fill="#aaa9a5" font-size="14">Reporting: 7amleh · ArabicPost · Watan · 404 Media · Reuters</text>
+  <text x="1510" y="840" text-anchor="end" class="sans" fill="#c7a86b" font-size="14" font-weight="700" letter-spacing="4">TIMES OF PALESTINE</text>
+</svg>
