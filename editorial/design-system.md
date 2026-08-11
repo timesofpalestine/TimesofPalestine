@@ -138,8 +138,10 @@ load-bearing statistic — one or two per story, never as decoration.
   specials, then the search/tip utilities anchored inline-end. The
   All-Sections panel (`.nav-drop.mega`) is the paper's full index: a
   full-width solid-`--black` sheet under the bar whose columns are the
-  old four groups as gold `.mhead` headings (News & Regions, In-Depth,
-  Society & Culture, Economy & Aid); 4 columns on desktop, 2 on phones
+  old four groups as gold `.mhead` headings (News & Regions, Economy &
+  Aid, In-Depth, Society & Culture — Economy & Aid rides second, owner
+  order 2026-08-11: last place put it below the fold of the phone
+  panel's single scrolling column); 4 columns on desktop, 2 on phones
   with its own vertical scroll. It opens on hover/focus-within on pointer
   devices and on tap everywhere; the button carries `aria-expanded` +
   `aria-controls`, and Escape, an outside click or a real scroll closes
