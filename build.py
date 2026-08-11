@@ -3354,6 +3354,10 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .keep{padding-block:1.8rem}
 .keep .latest{position:static;top:auto}
 .backbar{background:var(--black);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:55}
+/* Pages that carry the shared section bar (2026-08-11 UX study) let IT be
+   the sticky chrome: the backbar scrolls away — two stacked sticky bars at
+   top:0 fought for the same pixel row and hid the nav. */
+.backbar.static{position:static}
 .backbar a{display:block;max-width:800px;padding:.6rem 20px;color:#fff;font-size:.8rem;font-weight:700}
 .backbar a:hover{color:#f93549}
 /* ── footer ── */
@@ -3368,6 +3372,17 @@ footer li{margin-bottom:.45rem}
 footer a{color:#e6e6ec;font-weight:600}
 footer a:hover{color:#fff;text-decoration:underline}
 footer .legal{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #2a2a30;font-size:.72rem;color:#8b8b94;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+/* Footer section index (owner order 2026-08-11): every page ends with the
+   full paper — the bottom of a long read is a junction, not a wall. */
+footer .foot-sections{margin-top:1.6rem;padding-top:1.1rem;border-top:1px solid #2a2a30;display:flex;flex-wrap:wrap;gap:.1rem .35rem}
+footer .foot-sections a{color:#b9b9c2;font-size:.72rem;font-weight:700;padding:.5rem .55rem;white-space:nowrap;border-radius:3px}
+footer .foot-sections a:hover{color:#fff;background:rgba(255,255,255,.07)}
+/* Back-to-top (owner order 2026-08-11): floats opposite the live dock after
+   two screens of scroll; house chrome black in both themes, ~44px tap. */
+.totop{position:fixed;bottom:1rem;inset-inline-end:1rem;z-index:65;width:44px;height:44px;border-radius:50%;background:rgba(11,11,12,.92);color:#f2eee8;border:1px solid rgba(255,255,255,.28);display:flex;align-items:center;justify-content:center;font:800 1.15rem/1 var(--sans);text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.35);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity var(--tr),visibility var(--tr),transform var(--tr)}
+.totop.show{opacity:1;visibility:visible;transform:none}
+.totop:hover{background:#1c1c22;color:#fff}
+@media(prefers-reduced-motion:reduce){.totop{transition:none;transform:none}}
 footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%);border-top:4px solid var(--red);max-width:200px;margin-bottom:1.5rem}
 [dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}
 /* ── dark mode ── */
@@ -3383,10 +3398,16 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 .share .copybtn{border:1px solid var(--line-dark);background:transparent;color:inherit;font-family:inherit;cursor:pointer;padding:.35rem .8rem;border-radius:var(--r);font-size:.8rem;font-weight:700}
 .share .copybtn:hover{background:var(--red);color:#fff;border-color:var(--red)}
 /* Floating share rail: travels with the reader in the story gutter on wide
-   desktops; the inline row above stays as the universal fallback. */
+   desktops; the inline row above stays as the universal fallback. Owner
+   report 2026-08-11: fixed positioning kept it floating over Keep Reading
+   and Latest titles after the article ended — it now shows only while the
+   article itself is on screen (.on toggled by an IntersectionObserver
+   shipped with the rail; without JS it stays hidden and the inline row
+   carries sharing). */
 .share-rail{display:none}
 @media(min-width:1200px){
-.share-rail{display:flex;flex-direction:column;gap:.5rem;position:fixed;top:42vh;inset-inline-start:calc(50vw - 410px - 4.6rem);z-index:40}
+.share-rail{display:flex;flex-direction:column;gap:.5rem;position:fixed;top:42vh;inset-inline-start:calc(50vw - 410px - 4.6rem);z-index:40;opacity:0;visibility:hidden;transition:opacity var(--tr),visibility var(--tr)}
+.share-rail.on{opacity:1;visibility:visible}
 .share-rail a{width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;border:1px solid var(--line-dark);border-radius:50%;background:var(--card);font-weight:800;font-size:.78rem;box-shadow:var(--sh);transition:background var(--tr),color var(--tr),border-color var(--tr)}
 .share-rail a:hover{background:var(--red);color:#fff;border-color:var(--red)}
 }
@@ -3981,6 +4002,158 @@ def specials_band_html(lang, items=(), extra=""):
             + "".join(cards) + '</div></div></section>')
 
 
+# ---------- shared section navigation (owner order 2026-08-11) ----------
+# EVERY page carries the front page's wayfinding: most readers land on a
+# story from a shared link, and they must be able to reach any desk and the
+# search from where they stand — never forced through the homepage first.
+# The homepage links its in-page section anchors; interior pages link the
+# section archives. Flat priority row + ONE All-Sections panel (owner
+# decision 2026-08-06); gold specials lead the panel as the .mspecials
+# strip; US Press rides beside Israeli Press (owner orders 2026-08-11).
+# Economy & Aid rides second (owner order 2026-08-11): last place put it
+# below the fold of the phone panel's single scrolling column.
+NAV_GROUPS_DEF = [
+    ("regions", {"en": "News & Regions", "ar": "الأخبار والمناطق"},
+     ["gaza", "westbank", "politics", "diaspora", "news"]),
+    ("economy", {"en": "Economy & Aid", "ar": "الاقتصاد والإسناد"},
+     ["economy", "arabaid", "bitcoin"]),
+    ("depth", {"en": "In-Depth", "ar": "في العمق"},
+     ["accountability", "research", "israelipress", "uspress", "social", "opinion", "archive"]),
+    ("society", {"en": "Society & Culture", "ar": "المجتمع والثقافة"},
+     ["women", "health", "humans", "arts", "sports"]),
+]
+NAV_SHORT = {
+    "en": {"gaza": "Gaza", "westbank": "West Bank",
+           "israelipress": "Israeli Press", "uspress": "US Press",
+           "politics": "Politics",
+           "women": "Her Story", "economy": "Economy"},
+    "ar": {"gaza": "غزة", "westbank": "الضفة",
+           "israelipress": "الصحافة الإسرائيلية",
+           "uspress": "الصحافة الأميركية", "politics": "سياسة",
+           "women": "حكايتها", "economy": "اقتصاد"},
+}
+NAV_PRIORITY = ["gaza", "westbank", "israelipress", "uspress", "politics", "women", "economy"]
+NAV_GBTN_JS = (
+    "var g=this.parentNode,v=!g.classList.contains('open'),n=this.closest('nav');"
+    "n.style.setProperty('--navdrop-top',n.getBoundingClientRect().bottom+'px');"
+    "n.dataset.oy=window.scrollY;"
+    "n.querySelectorAll('.nav-group.open').forEach(function(x){x.classList.remove('open');"
+    "x.querySelector('button').setAttribute('aria-expanded','false')});"
+    "if(v){g.classList.add('open');this.setAttribute('aria-expanded','true')}")
+NAV_ARCHIVE_CATS = {}  # lang -> cats with a section-*.html this build (set in main)
+# Support script shipped WITH the bar on every page (it was homepage-only
+# until the 2026-08-11 UX study): outside click / Escape / a real scroll
+# close open panels, and the search toggle opens the inline query bar
+# where the page carries one.
+NAV_SUPPORT_JS = (
+    '(function(){function closeGroups(){document.querySelectorAll("nav.sections .nav-group.open")'
+    '.forEach(function(x){x.classList.remove("open");x.querySelector("button").setAttribute("aria-expanded","false")})}\n'
+    'var st=document.getElementById("searchtoggle"),sp=document.getElementById("navsearch");\n'
+    'function closeSearch(){if(sp&&!sp.hidden){sp.hidden=true;st.setAttribute("aria-expanded","false")}}\n'
+    'if(st&&sp)st.addEventListener("click",function(e){e.preventDefault();var open=!sp.hidden;closeGroups();'
+    'if(open)closeSearch();else{sp.hidden=false;st.setAttribute("aria-expanded","true");sp.querySelector("input").focus()}});\n'
+    'document.addEventListener("click",function(e){if(e.target.closest("nav.sections .nav-drop a")'
+    '||!e.target.closest("nav.sections")){closeGroups();closeSearch()}});\n'
+    'document.addEventListener("keydown",function(e){if(e.key==="Escape"){closeGroups();'
+    'if(sp&&!sp.hidden){closeSearch();st.focus()}}});\n'
+    'addEventListener("scroll",function(){var n=document.querySelector("nav.sections");\n'
+    'if(n&&n.querySelector(".nav-group.open")&&Math.abs(window.scrollY-(+n.dataset.oy||0))>32)closeGroups()},{passive:true})})()')
+
+
+def sections_nav_html(lang, keys, link_for, home_href, specials_top="",
+                      specials_depth="", search_href="search.html",
+                      search_toggle=False, tips_href="#tips", search_panel=""):
+    """The sticky primary bar. keys = section keys allowed to render;
+    link_for(k) -> that section's href on this page."""
+    t = STR[lang]
+    row = "".join(
+        f'<a href="{link_for(k)}">{NAV_SHORT[lang].get(k, t["sections"][k])}</a>'
+        for k in NAV_PRIORITY if k in keys)
+    grouped = {k for _, _, ks in NAV_GROUPS_DEF for k in ks}
+    leftovers = [k for k in SECTION_ORDER[lang] if k in keys and k not in grouped]
+    mega_cols = ""
+    for gid, label, gkeys in NAV_GROUPS_DEF:
+        gkeys = [k for k in gkeys if k in keys]
+        if gid == "regions":
+            gkeys += leftovers
+        links = "".join(f'<a href="{link_for(k)}">{t["sections"][k]}</a>' for k in gkeys)
+        if not links:
+            continue
+        mega_cols += (f'<div class="mcol"><p class="mhead">{label[lang]}</p>'
+                      f'{links}</div>')
+    # Gold specials lead the panel (owner order 2026-08-11): visible the
+    # moment it opens, never below the fold of the phone scroll column.
+    if specials_depth:
+        mega_cols = f'<div class="mspecials">{specials_depth}</div>' + mega_cols
+    all_label = "كل الأقسام" if lang == "ar" else "All Sections"
+    row += (
+        f'<div class="nav-group all"><button class="nav-gbtn" type="button" '
+        f'aria-expanded="false" aria-controls="navg-all" aria-haspopup="true" '
+        f'onclick="{NAV_GBTN_JS}">{all_label} <span class="chev" aria-hidden="true">▾</span></button>'
+        f'<div class="nav-drop mega" id="navg-all">{mega_cols}</div></div>')
+    if search_toggle:
+        search_link = (f'<a class="util" id="searchtoggle" href="{search_href}" '
+                       f'aria-expanded="false" aria-controls="navsearch">{t["search_nav"]}</a>')
+    else:
+        search_link = f'<a class="util" href="{search_href}">{t["search_nav"]}</a>'
+    return (f'<nav class="sections" aria-label="{"التصفح الرئيسي" if lang == "ar" else "Primary"}">'
+            f'<div class="wrap"><a class="home" href="{home_href}">{t["latest"]}</a>{row}{specials_top}'
+            f'<span class="nav-util">{search_link}'
+            f'<a class="tip" href="{tips_href}">🔒 {t["tips_nav"]}</a></span></div>{search_panel}</nav>'
+            f'<script>{NAV_SUPPORT_JS}</script>')
+
+
+def interior_nav_html(lang, prefix=""):
+    """The shared bar for pages outside the front page: section links go to
+    the archive pages. prefix walks up to the edition root ("" at /<lang>/,
+    "../" from /<lang>/story/). Specials gate on ORIGINALS_LOADED — the
+    published-this-build signal available outside render_page — so the bar
+    never links a special whose page did not render."""
+    loaded = ORIGINALS_LOADED.get(lang, set())
+    sp_top = sp_depth = ""
+    for sp in SPECIALS:
+        slug = sp.get("requires_original")
+        if slug and slug not in loaded:
+            continue
+        link = f'<a class="special" href="{esc(sp["href"][lang])}">{esc(sp["nav"][lang])}</a>'
+        if sp.get("nav_primary"):
+            sp_top += link
+        else:
+            sp_depth += link
+    keys = NAV_ARCHIVE_CATS.get(lang) or set(SECTION_ORDER[lang])
+    return sections_nav_html(
+        lang, keys, lambda k: f"{prefix}section-{k}.html",
+        home_href=prefix or "./", specials_top=sp_top, specials_depth=sp_depth,
+        search_href=f"{prefix}search.html",
+        tips_href=f"{prefix or './'}#tips")
+
+
+def foot_sections_html(lang, prefix=""):
+    """Footer section index (owner order 2026-08-11): the bottom of a long
+    read is a junction, not a wall — every page ends with the full paper."""
+    t = STR[lang]
+    have = NAV_ARCHIVE_CATS.get(lang) or set(SECTION_ORDER[lang])
+    links = "".join(f'<a href="{prefix}section-{k}.html">{t["sections"][k]}</a>'
+                    for k in SECTION_ORDER[lang] if k in have)
+    label = "أقسام الصحيفة" if lang == "ar" else "Sections"
+    return f'<nav class="foot-sections" aria-label="{label}">{links}</nav>'
+
+
+# Back-to-top (owner order 2026-08-11): the front page runs tens of screens
+# on a phone — a floating ↑ appears after two screens of scroll, opposite
+# the live dock, house ~44px tap size, and rides every page.
+_TOTOP_JS = (
+    'var tt=document.querySelector(".totop");if(tt){var v=false;'
+    'addEventListener("scroll",function(){var s=scrollY>1400;'
+    'if(s!==v){v=s;tt.classList.toggle("show",s)}},{passive:true})}')
+
+
+def totop_html(lang):
+    label = "العودة إلى الأعلى" if lang == "ar" else "Back to top"
+    return (f'<a class="totop" href="#top" aria-label="{label}" title="{label}">↑</a>'
+            f'<script>{_TOTOP_JS}</script>')
+
+
 def render_page(lang, items, built_at):
     t = STR[lang]
     order = SECTION_ORDER[lang]
@@ -4172,25 +4345,10 @@ def render_page(lang, items, built_at):
 
     def visible(k):
         return len(sections[k]) >= (1 if k in FOCUS_SECTIONS else 2)
-    # Grouped nav (owner order 2026-08-05, after the two-tier bar reached
-    # ~19 visible links): THE LATEST plus four dropdown groups, in the
-    # spine's reading order — regions and power, depth, people, money.
-    # A section missing from every group still appears (end of the first
-    # group) — nothing silently vanishes. Gold specials lead the panel as
-    # a top strip; nav_primary specials (Sanad — owner order 2026-08-04)
-    # stay top-level on the bar itself, never folded into a dropdown.
-    _nav_groups_def = [
-        ("regions", {"en": "News & Regions", "ar": "الأخبار والمناطق"},
-         ["gaza", "westbank", "politics", "diaspora", "news"]),
-        ("depth", {"en": "In-Depth", "ar": "في العمق"},
-         ["accountability", "research", "israelipress", "uspress", "social", "opinion", "archive"]),
-        ("society", {"en": "Society & Culture", "ar": "المجتمع والثقافة"},
-         ["women", "health", "humans", "arts", "sports"]),
-        ("economy", {"en": "Economy & Aid", "ar": "الاقتصاد والإسناد"},
-         ["economy", "arabaid", "bitcoin"]),
-    ]
-    _grouped_keys = {k for _, _, keys in _nav_groups_def for k in keys}
-    _leftovers = [k for k in order if visible(k) and k not in _grouped_keys]
+    # The sticky bar is built by the shared sections_nav_html (owner order
+    # 2026-08-11) so interior pages carry identical wayfinding. Homepage
+    # links are in-page anchors; nav_primary specials (Sanad — owner order
+    # 2026-08-04) stay top-level on the bar, never folded into a dropdown.
     nav_specials_top = ""
     _specials_depth = ""
     for sp in available_specials(lang, items):  # gold standing specials
@@ -4199,56 +4357,17 @@ def render_page(lang, items, built_at):
             nav_specials_top += _sp_link
         else:
             _specials_depth += _sp_link
-    _gbtn_js = (
-        "var g=this.parentNode,v=!g.classList.contains('open'),n=this.closest('nav');"
-        "n.style.setProperty('--navdrop-top',n.getBoundingClientRect().bottom+'px');"
-        "n.dataset.oy=window.scrollY;"
-        "n.querySelectorAll('.nav-group.open').forEach(function(x){x.classList.remove('open');"
-        "x.querySelector('button').setAttribute('aria-expanded','false')});"
-        "if(v){g.classList.add('open');this.setAttribute('aria-expanded','true')}")
-    # Flat priority row + ONE All-Sections index (owner decision 2026-08-06,
-    # replacing the four per-group dropdowns): the flagship sections are
-    # direct one-tap links — Gaza and the West Bank never hide behind a
-    # menu — and the full paper lives in a single full-width panel whose
-    # columns are the old groups. One behavior on desktop and phone alike.
-    _nav_short = {
-        "en": {"gaza": "Gaza", "westbank": "West Bank",
-               "israelipress": "Israeli Press", "uspress": "US Press",
-               "politics": "Politics",
-               "women": "Her Story", "economy": "Economy"},
-        "ar": {"gaza": "غزة", "westbank": "الضفة",
-               "israelipress": "الصحافة الإسرائيلية",
-               "uspress": "الصحافة الأميركية", "politics": "سياسة",
-               "women": "حكايتها", "economy": "اقتصاد"},
-    }
-    # US Press rides beside Israeli Press as a one-tap link (owner order
-    # 2026-08-11): the two press desks read as a pair on the bar.
-    _priority = ["gaza", "westbank", "israelipress", "uspress", "politics", "women", "economy"]
-    nav_groups = "".join(
-        f'<a href="#{k}">{_nav_short[lang].get(k, t["sections"][k])}</a>'
-        for k in _priority if k in sections and visible(k))
-    _mega_cols = ""
-    for _gid, _label, _keys in _nav_groups_def:
-        _keys = [k for k in _keys if k in sections and visible(k)]
-        if _gid == "regions":
-            _keys += _leftovers
-        _links = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in _keys)
-        if not _links:
-            continue
-        _mega_cols += (f'<div class="mcol"><p class="mhead">{_label[lang]}</p>'
-                       f'{_links}</div>')
-    # Gold specials lead the panel (owner order 2026-08-11): a full-width
-    # strip at the very top of the All-Sections index, visible the moment
-    # the panel opens — never below the fold of the phone's scroll column,
-    # where they sat when they rode the end of the In-Depth column.
-    if _specials_depth:
-        _mega_cols = f'<div class="mspecials">{_specials_depth}</div>' + _mega_cols
-    _all_label = "كل الأقسام" if lang == "ar" else "All Sections"
-    nav_groups += (
-        f'<div class="nav-group all"><button class="nav-gbtn" type="button" '
-        f'aria-expanded="false" aria-controls="navg-all" aria-haspopup="true" '
-        f'onclick="{_gbtn_js}">{_all_label} <span class="chev" aria-hidden="true">▾</span></button>'
-        f'<div class="nav-drop mega" id="navg-all">{_mega_cols}</div></div>')
+    _search_panel = (
+        f'<div class="nav-search" id="navsearch" hidden>'
+        f'<form action="search.html" method="get" role="search">'
+        f'<input name="q" type="search" placeholder="{esc(t["search_prompt"])}" '
+        f'aria-label="{esc(t["search_title"])}" autocomplete="off">'
+        f'<button type="submit">{t["search_go"]}</button></form></div>')
+    sections_nav = sections_nav_html(
+        lang, {k for k in order if visible(k)}, lambda k: f"#{k}",
+        home_href="#top", specials_top=nav_specials_top,
+        specials_depth=_specials_depth, search_toggle=True,
+        search_panel=_search_panel)
 
     def research_featured(it):
         media = (f'<a href="{href(it, P)}"><img src="{esc(it["image"])}" alt="{esc(it["title"])}" loading="lazy" decoding="async"{lede_fallback_attrs(it)}></a>'
@@ -4384,15 +4503,7 @@ def render_page(lang, items, built_at):
   <p class="tagline">{t['tagline']}</p>
 </div></header>
 
-<nav class="sections" aria-label="{"التصفح الرئيسي" if lang == "ar" else "Primary"}"><div class="wrap"><a class="home" href="#top">{t['latest']}</a>{nav_groups}{nav_specials_top}<span class="nav-util"><a class="util" id="searchtoggle" href="search.html" aria-expanded="false" aria-controls="navsearch">{t['search_nav']}</a><a class="tip" href="#tips">🔒 {t['tips_nav']}</a></span></div><div class="nav-search" id="navsearch" hidden><form action="search.html" method="get" role="search"><input name="q" type="search" placeholder="{esc(t['search_prompt'])}" aria-label="{esc(t['search_title'])}" autocomplete="off"><button type="submit">{t['search_go']}</button></form></div></nav>
-<script>(function(){{function closeGroups(){{document.querySelectorAll("nav.sections .nav-group.open").forEach(function(x){{x.classList.remove("open");x.querySelector("button").setAttribute("aria-expanded","false")}})}}
-var st=document.getElementById("searchtoggle"),sp=document.getElementById("navsearch");
-function closeSearch(){{if(sp&&!sp.hidden){{sp.hidden=true;st.setAttribute("aria-expanded","false")}}}}
-if(st&&sp)st.addEventListener("click",function(e){{e.preventDefault();var open=!sp.hidden;closeGroups();if(open)closeSearch();else{{sp.hidden=false;st.setAttribute("aria-expanded","true");sp.querySelector("input").focus()}}}});
-document.addEventListener("click",function(e){{if(e.target.closest("nav.sections .nav-drop a")||!e.target.closest("nav.sections")){{closeGroups();closeSearch()}}}});
-document.addEventListener("keydown",function(e){{if(e.key==="Escape"){{closeGroups();if(sp&&!sp.hidden){{closeSearch();st.focus()}}}}}});
-addEventListener("scroll",function(){{var n=document.querySelector("nav.sections");
-if(n&&n.querySelector(".nav-group.open")&&Math.abs(window.scrollY-(+n.dataset.oy||0))>32)closeGroups()}},{{passive:true}})}})()</script>
+{sections_nav}
 
 <main id="top">
   {gaza_strip}
@@ -4420,12 +4531,14 @@ if(n&&n.querySelector(".nav-group.open")&&Math.abs(window.scrollY-(+n.dataset.oy
       <p class="footer-contact"><a href="{SIGNAL_URL}" target="_blank" rel="noopener">🔒 {t['tips_cta']} {"←" if lang == "ar" else "→"}</a>
       <span class="contact-id">{SIGNAL_USERNAME}</span></p><p class="footer-contact secondary"><a href="{TELEGRAM_BOT_URL}" target="_blank" rel="noopener">{t['tips_tg']} {"←" if lang == "ar" else "→"}</a> <span class="contact-id">{TELEGRAM_BOT_NAME}</span></p></div>
   </div>
+  {foot_sections_html(lang)}
   <div class="legal">
     <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>{('<a href="corrections.html">' + ('التصويبات' if lang == 'ar' else 'Corrections') + '</a>') if CORRECTIONS_PAGE_LIVE else ''} <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>{f'<a href="{NEWSLETTER_URL}" target="_blank" rel="noopener">' + ('النشرة البريدية' if lang == 'ar' else 'Email newsletter') + '</a>' if NEWSLETTER_URL else ''}{f'<a href="{SUPPORT_URL}" target="_blank" rel="noopener">' + ('ادعمنا' if lang == 'ar' else 'Support us') + '</a>' if SUPPORT_URL else ''}
     <span>{t['attribution']}</span>
     <a href="{t['switch_href']}">{t['footer_lang']}</a>
   </div>
 </div></footer>
+{totop_html(lang)}
 <script>(()=>{{const initial={json.dumps(utc_iso(built_at))};let timer;async function check(){{if(document.hidden||!navigator.onLine)return;try{{const r=await fetch("/data.json",{{cache:"no-store"}});if(r.ok&&((await r.json()).builtAt)!==initial)location.reload();}}catch(_error){{}}}}document.addEventListener("visibilitychange",()=>{{if(!document.hidden)check();}});timer=setInterval(check,300000);}})();</script>
 <script>{_CLOCK_JS}</script>
 {live_fab_html(lang)}
@@ -4602,7 +4715,16 @@ def render_story(it, lang, related, rail, built_at):
                 + '" onclick="var b=this;navigator.clipboard.writeText(b.dataset.url).then(function(){var t=b.textContent;b.textContent=b.dataset.copied;setTimeout(function(){b.textContent=t},1600)})" data-url="'
                 + share_url + '">' + ("انسخ الرابط" if lang == "ar" else "Copy link") + "</button>")
     share_row = ('<div class="share"><span>' + ("شارك" if lang == "ar" else "Share") + '</span><a href="https://twitter.com/intent/tweet?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(share_url) + '" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + share_url) + '" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/share/url?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener">Telegram</a>' + copy_btn + '</div>')
-    share_rail = ('<nav class="share-rail" aria-label="' + ("شارك الخبر" if lang == "ar" else "Share this story") + '"><a href="https://twitter.com/intent/tweet?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="X">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(share_url) + '" target="_blank" rel="noopener" title="Facebook">f</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + share_url) + '" target="_blank" rel="noopener" title="WhatsApp">Wa</a><a href="https://t.me/share/url?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="Telegram">Tg</a></nav>')
+    share_rail = ('<nav class="share-rail" aria-label="' + ("شارك الخبر" if lang == "ar" else "Share this story") + '"><a href="https://twitter.com/intent/tweet?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="X">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=' + _q(share_url) + '" target="_blank" rel="noopener" title="Facebook">f</a><a href="https://wa.me/?text=' + _q(it["title"] + " " + share_url) + '" target="_blank" rel="noopener" title="WhatsApp">Wa</a><a href="https://t.me/share/url?url=' + _q(share_url) + '&text=' + _q(it["title"]) + '" target="_blank" rel="noopener" title="Telegram">Tg</a></nav>'
+                  # Owner report 2026-08-11: the fixed rail floated over the
+                  # Keep Reading/Latest titles below the article. It shows
+                  # only while the article itself is on screen; without JS it
+                  # stays hidden and the inline share row carries sharing.
+                  '<script>(function(){var r=document.querySelector(".share-rail"),'
+                  'a=document.querySelector("article.story");'
+                  'if(!r||!a||!("IntersectionObserver"in window))return;'
+                  'new IntersectionObserver(function(es){r.classList.toggle("on",es[0].isIntersecting)})'
+                  '.observe(a)})()</script>')
     plain_desc = meta_desc(summary_text(
         (it.get("brief") or it["dek"]).replace(chr(10), " ")))
     desc = esc(plain_desc)
@@ -4720,12 +4842,12 @@ def render_story(it, lang, related, rail, built_at):
 {_THEME_JS}{analytics_tag()}
 </head>
 <body>
-<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="{switch_href}">{t['switch_lang']}</a></span></div>
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar static"><a href="../">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="{switch_href}">{t['switch_lang']}</a></span></div>
 {ticker_html(t, lang, ticker_track, ticker_track_hidden)}
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="../"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
-
+{interior_nav_html(lang, "../")}
 <main id="top">
   <article class="story">
     {breadcrumb_nav}
@@ -4753,6 +4875,7 @@ def render_story(it, lang, related, rail, built_at):
 
 <footer><div class="wrap">
   <div class="flagline"></div>
+  {foot_sections_html(lang, "../")}
   <div class="legal">
     <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>{('<a href="../corrections.html">' + ('التصويبات' if lang == 'ar' else 'Corrections') + '</a>') if CORRECTIONS_PAGE_LIVE else ''} <a href="../status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
     <a href="../">{t['back_home']}</a>
@@ -4761,6 +4884,7 @@ def render_story(it, lang, related, rail, built_at):
 <script>{_LISTEN_JS}</script>
 <script>{_CLOCK_JS}</script>
 {live_fab_html(lang)}
+{totop_html(lang)}
 </body>
 </html>"""
 def story_redirect_stub(it, lang):
@@ -4884,19 +5008,22 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 {_THEME_JS}{analytics_tag()}
 </head>
 <body>
-<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar static"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
+{interior_nav_html(lang)}
 <main class="wrap sectionpage" id="top">
   <div class="sec-head focus"><h2>{esc(name)}</h2><span class="rule"></span><span class="count">{count_label}</span></div>
   <div class="grid g4">{cards}</div>
   {more_html}
 </main>
 <footer><div class="wrap"><div class="flagline"></div>
+  {foot_sections_html(lang)}
   <div class="legal"><span>© {built_at.year} {t['site_name']}</span> <a href="./">{t['back_home']}</a> <a href="about.html">{'من نحن' if lang == 'ar' else 'About'}</a></div>
 </div></footer>
 <script>{_CLOCK_JS}</script>
+{totop_html(lang)}
 </body></html>"""
 
 
@@ -4965,10 +5092,11 @@ def render_corrections_page(lang, items, built_at):
 {_THEME_JS}{analytics_tag()}
 </head>
 <body>
-<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/corrections.html">{t['switch_lang']}</a></span></div>
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar static"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/corrections.html">{t['switch_lang']}</a></span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
+{interior_nav_html(lang)}
 <main id="top">
   <article class="story">
     <p class="kick">{t['site_name']}</p>
@@ -5014,9 +5142,13 @@ def render_search_page(lang, built_at, cats=()):
     browse = ""
     if cats:
         bl = "تصفح الأقسام" if lang == "ar" else "Or browse the sections"
+        # Chips follow the paper's section order (owner order 2026-08-11) —
+        # Gaza and the West Bank first, never an arbitrary alphabet.
+        ordered = ([k for k in SECTION_ORDER[lang] if k in cats]
+                   + [c for c in cats if c not in SECTION_ORDER[lang]])
         chips = "".join(
             f'<a href="section-{c}.html">{esc(t["sections"].get(c, c))}</a>'
-            for c in cats if c in t["sections"])
+            for c in ordered if c in t["sections"])
         browse = (f'<div class="browse"><span class="bl">{bl}</span>'
                   f'<nav>{chips}</nav></div>')
     return f"""<!DOCTYPE html>
@@ -5032,10 +5164,11 @@ def render_search_page(lang, built_at, cats=()):
 {_THEME_JS}{analytics_tag()}
 </head>
 <body>
-<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></span></div>
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar static"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/search.html">{t['switch_lang']}</a></span></div>
 <header class="masthead compact"><div class="wrap">
   <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
 </div></header>
+{interior_nav_html(lang)}
 <main class="wrap searchpage" id="top">
   <h1>{t['search_title']}</h1>
   <input id="q" class="searchbox" type="search" placeholder="{esc(t['search_prompt'])}" data-none="{esc(t['search_none'])}" autofocus autocomplete="off">
@@ -5210,8 +5343,14 @@ def main():
         arch_related = diversify(sorted(
             items, key=lambda r: r["score"], reverse=True)[:8])[:8]
         archived = []
-        for it in story_archive.load(
-                lang, exclude={i["pid"] for i in items} | RETRACTED_PIDS):
+        _arch_pool = list(story_archive.load(
+            lang, exclude={i["pid"] for i in items} | RETRACTED_PIDS))
+        # Every section that will get an archive page this build — the shared
+        # nav and footer index on interior pages link only these (owner order
+        # 2026-08-11), so no bar ever links a section that didn't render.
+        NAV_ARCHIVE_CATS[lang] = ({i["cat"] for i in items}
+                                  | {a["cat"] for a in _arch_pool})
+        for it in _arch_pool:
             try:
                 attach_corrections(it)  # late corrections reach archived pages too
                 # Rights-strict mode (opt-in, default OFF) never ships
