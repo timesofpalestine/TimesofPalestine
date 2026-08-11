@@ -613,6 +613,40 @@ if __name__ == "__main__":
     unittest.main()
 
 
+class SvgTextOverflowTests(unittest.TestCase):
+    """Owner report 2026-08-11: a desk graphic's headline ran off the canvas
+    mid-word. The estimator guards LATIN runs; the whole shipped library must
+    stay clean, and the clamp caps an overflowing run with textLength."""
+
+    def test_estimator_flags_an_overflowing_latin_headline(self):
+        svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">'
+               '<text x="90" y="128" font-size="46">'
+               'Donors bypass World Bank fund for Gaza and it has received nothing'
+               '</text></svg>')
+        self.assertTrue(build.svg_text_overflows(svg))
+        clamped = build.clamp_svg_text(svg)
+        self.assertIn('textLength="1494"', clamped)
+        self.assertFalse(build.svg_text_overflows(clamped))
+
+    def test_arabic_runs_are_left_to_editorial_judgment(self):
+        svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">'
+               '<text x="1520" y="128" font-size="46">'
+               'إسرائيل تمنع مرضى السرطان في غزة من مستشفيات الضفة الغربية'
+               '</text></svg>')
+        self.assertEqual(build.svg_text_overflows(svg), [])
+        self.assertEqual(build.clamp_svg_text(svg), svg)  # never auto-mutated
+
+    def test_shipped_media_library_is_clean(self):
+        from pathlib import Path
+        media = Path(build.__file__).resolve().parent / "originals" / "media"
+        findings = {}
+        for p in sorted(media.glob("*.svg")):
+            f = build.svg_text_overflows(p.read_text(encoding="utf-8"))
+            if f:
+                findings[p.name] = f
+        self.assertEqual(findings, {})
+
+
 class MarketWatchTests(unittest.TestCase):
     """Owner directive 2026-08-11: Al-Quds and TA-125 in the strip, fail-open."""
 

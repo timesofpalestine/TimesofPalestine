@@ -46,7 +46,7 @@
   <!-- station 5: world stages -->
   <circle cx="1430" cy="520" r="16" fill="#8a1f2d"/>
   <text x="1430" y="590" text-anchor="middle" fill="#f2eee8" font-family="Tahoma,sans-serif" font-size="28" font-weight="bold">مسارح العالم 2026</text>
-  <text x="1430" y="626" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="22">Sydney · Cincinnati · beyond</text>
+  <text x="1430" y="626" text-anchor="middle" fill="#aaa9a5" font-family="Tahoma,sans-serif" font-size="22" textLength="308" lengthAdjust="spacingAndGlyphs">Sydney · Cincinnati · beyond</text>
 
   <!-- microphone mark -->
   <g transform="translate(800,330)">

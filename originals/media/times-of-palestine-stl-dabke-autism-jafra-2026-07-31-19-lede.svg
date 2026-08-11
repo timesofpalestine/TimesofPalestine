@@ -103,8 +103,8 @@
 <rect x="912" y="524" width="596" height="82" rx="8" fill="#8a1f2d" opacity="0.22"/>
 <rect x="912" y="524" width="596" height="82" rx="8" fill="none" stroke="#8a1f2d" stroke-width="2" stroke-dasharray="9 7"/>
 <text x="936" y="562" font-family="'Source Serif 4',Georgia,serif" font-size="34" fill="#c7a86b">?</text>
-<text x="972" y="556" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">“No official statistics” on autistic children in Palestine;</text>
-<text x="972" y="584" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">government infrastructure “doesn’t exist” — the group’s appeal</text>
+<text x="972" y="556" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8" textLength="612" lengthAdjust="spacingAndGlyphs">“No official statistics” on autistic children in Palestine;</text>
+<text x="972" y="584" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8" textLength="612" lengthAdjust="spacingAndGlyphs">government infrastructure “doesn’t exist” — the group’s appeal</text>
 </g>
 
 <line x1="86" y1="706" x2="1540" y2="706" stroke="#f2eee8" opacity="0.12" stroke-width="2"/>

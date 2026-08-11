@@ -31,7 +31,7 @@
     <text x="800" y="318" class="arabic muted" font-size="21">خرقاً موثقاً · بمعدل 13.7 يومياً</text>
 
     <text x="1270" y="240" class="mono" fill="#8fa8cf" font-size="88" font-weight="700">34</text>
-    <text x="1270" y="286" class="sans ivory" font-size="24" font-weight="700">km² held past agreed lines</text>
+    <text x="1270" y="286" class="sans ivory" font-size="24" font-weight="700" textLength="314" lengthAdjust="spacingAndGlyphs">km² held past agreed lines</text>
     <text x="1270" y="318" class="arabic muted" font-size="21">كيلومتراً مربعاً خلف خطوط الانسحاب</text>
   </g>
 

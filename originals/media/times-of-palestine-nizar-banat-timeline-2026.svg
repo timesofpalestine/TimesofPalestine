@@ -50,7 +50,7 @@
   <g>
     <circle cx="1450" cy="462" r="32" fill="#d1ae6b"/><circle cx="1450" cy="462" r="11" fill="#101216"/>
     <text x="1450" y="308" class="en go" font-size="30" font-weight="800" text-anchor="middle">29 SEP 2025</text>
-    <text x="1450" y="350" class="en iv" font-size="24" text-anchor="middle">Latest traced hearing</text>
+    <text x="1450" y="350" class="en iv" font-size="24" text-anchor="middle" textLength="268" lengthAdjust="spacingAndGlyphs">Latest traced hearing</text>
     <text x="1450" y="384" class="en iv" font-size="24" text-anchor="middle">postponed again</text>
     <text x="1450" y="570" class="ar iv" font-size="24" text-anchor="middle">آخر جلسة متاحة</text>
     <text x="1450" y="606" class="ar iv" font-size="24" text-anchor="middle">تؤجَّل مجدداً</text>

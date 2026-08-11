@@ -54,7 +54,7 @@
     <rect x="970" y="510" width="380" height="150" rx="12" fill="#16161a" stroke="#8a1f2d" stroke-width="3"/>
     <text x="1160" y="558" class="ivory" font-size="25" font-weight="800">CEASEFIRE WATCH</text>
     <text x="1160" y="592" class="arabic muted" font-size="22">مراقبة وقف النار</text>
-    <text x="1160" y="628" class="muted" font-size="19">Real-time operations floor, incident tracking</text>
+    <text x="1160" y="628" class="muted" font-size="19" textLength="424" lengthAdjust="spacingAndGlyphs">Real-time operations floor, incident tracking</text>
   </g>
 
   <text x="800" y="740" class="sans ivory" font-size="26" font-weight="700" text-anchor="middle">Every stream runs through one headquarters — and no Palestinian sits in its chain of command</text>
