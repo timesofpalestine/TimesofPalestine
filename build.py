@@ -3008,6 +3008,12 @@ nav.sections .mcol{min-width:0}
 nav.sections .mhead{color:#c7a86b;font-size:.62rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:.5rem 1rem .2rem;border-block-end:1px solid rgba(255,255,255,.12);margin-block-end:.25rem}
 [lang=ar] nav.sections .mhead{letter-spacing:0;font-size:.76rem}
 nav.sections a.special{color:#c7a86b}
+/* Gold specials strip: first row of the All-Sections panel, spanning every
+   column, so the three gold taps show without scrolling (owner order
+   2026-08-11). Links sit inline as chips, not stacked like column links. */
+nav.sections .nav-drop.mega .mspecials{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:.1rem .4rem;padding:.15rem .4rem .5rem;border-block-end:1px solid rgba(199,168,107,.35);margin-block-end:.3rem}
+nav.sections .nav-drop.mega .mspecials a{display:inline-block;padding:.45rem .6rem;border-block-end:0;font-size:.7rem}
+[lang=ar] nav.sections .nav-drop.mega .mspecials a{font-size:.8rem}
 nav.sections .nav-util{display:flex;gap:.15rem;margin-inline-start:auto}
 nav.sections a.util{color:#d8d8e2}
 nav.sections a.util:hover{border-block-end-color:#3a3a42}
@@ -4170,8 +4176,8 @@ def render_page(lang, items, built_at):
     # ~19 visible links): THE LATEST plus four dropdown groups, in the
     # spine's reading order — regions and power, depth, people, money.
     # A section missing from every group still appears (end of the first
-    # group) — nothing silently vanishes. Gold specials ride inside
-    # In-Depth; nav_primary specials (Sanad — owner order 2026-08-04)
+    # group) — nothing silently vanishes. Gold specials lead the panel as
+    # a top strip; nav_primary specials (Sanad — owner order 2026-08-04)
     # stay top-level on the bar itself, never folded into a dropdown.
     _nav_groups_def = [
         ("regions", {"en": "News & Regions", "ar": "الأخبار والمناطق"},
@@ -4227,12 +4233,16 @@ def render_page(lang, items, built_at):
         if _gid == "regions":
             _keys += _leftovers
         _links = "".join(f'<a href="#{k}">{t["sections"][k]}</a>' for k in _keys)
-        if _gid == "depth":
-            _links += _specials_depth
         if not _links:
             continue
         _mega_cols += (f'<div class="mcol"><p class="mhead">{_label[lang]}</p>'
                        f'{_links}</div>')
+    # Gold specials lead the panel (owner order 2026-08-11): a full-width
+    # strip at the very top of the All-Sections index, visible the moment
+    # the panel opens — never below the fold of the phone's scroll column,
+    # where they sat when they rode the end of the In-Depth column.
+    if _specials_depth:
+        _mega_cols = f'<div class="mspecials">{_specials_depth}</div>' + _mega_cols
     _all_label = "كل الأقسام" if lang == "ar" else "All Sections"
     nav_groups += (
         f'<div class="nav-group all"><button class="nav-gbtn" type="button" '
