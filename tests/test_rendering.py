@@ -1554,6 +1554,37 @@ class MobileChromeTests(unittest.TestCase):
             self.assertNotIn('class="nav-more"', nav)
             self.assertNotIn('navtier2', nav)
 
+    def test_interior_pages_carry_the_sections_nav_and_totop(self):
+        # UX study (owner order 2026-08-11): a reader landing on a story from
+        # a shared link gets the same wayfinding as the front page — the
+        # sticky bar links the section archives, the footer indexes every
+        # section, and a back-to-top floats after two screens of scroll.
+        built_at = datetime(2026, 8, 3, 12, tzinfo=timezone.utc)
+        it = item()
+        it.update({"image": "/media/x.svg", "brief": "A body paragraph here."})
+        for lang in ("en", "ar"):
+            it2 = dict(it, lang=lang)
+            story = build.render_story(it2, lang, [], [it2], built_at)
+            self.assertIn('<nav class="sections"', story)
+            self.assertIn('href="../section-gaza.html"', story)
+            self.assertIn('href="../search.html"', story)
+            self.assertIn('class="foot-sections"', story)
+            self.assertIn('class="totop"', story)
+            section = build.render_section_page(lang, "gaza", [it2], built_at)
+            self.assertIn('<nav class="sections"', section)
+            self.assertIn('href="section-westbank.html"', section)
+            self.assertIn('class="foot-sections"', section)
+            self.assertIn('class="totop"', section)
+            home = build.render_page(lang, [it2], built_at)
+            self.assertIn('class="foot-sections"', home)
+            self.assertIn('class="totop"', home)
+            search = build.render_search_page(lang, built_at,
+                                              cats=["arts", "gaza", "westbank"])
+            self.assertIn('<nav class="sections"', search)
+            # chips follow the paper's order — Gaza first, never the alphabet
+            self.assertLess(search.index("section-gaza.html"),
+                            search.index("section-arts.html"))
+
     def test_us_press_tab_rides_beside_israeli_press_in_priority_row(self):
         # Owner order 2026-08-11: the two press desks are one-tap neighbours
         # on the bar — US Press immediately after Israeli Press, both editions.

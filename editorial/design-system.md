@@ -149,9 +149,26 @@ load-bearing statistic — one or two per story, never as decoration.
   moment the panel opens, never below the fold of the phone scroll
   (they previously sat at the end of the In-Depth column and needed
   scrolling to reach).
-  New sections join `_nav_groups_def` (columns) and, if flagship-rank,
-  `_priority` in `render_page`; anything not in a group still renders at
-  the end of News & Regions (nothing silently vanishes).
+  **Every page carries the bar (2026-08-11 UX study):** story, section,
+  search and corrections pages render the same nav via the shared
+  `sections_nav_html`/`interior_nav_html` builders — links go to the
+  section archive pages (only sections that rendered this build,
+  `NAV_ARCHIVE_CATS`), the search utility links the search page, and the
+  support script (outside click / Escape / scroll closes panels) ships
+  with the bar. On those pages the backbar is `.backbar.static` — the
+  section bar is the one sticky chrome; two stacked sticky bars fight
+  for the same pixel row and hide each other.
+  New sections join `NAV_GROUPS_DEF` (columns) and, if flagship-rank,
+  `NAV_PRIORITY` (module level, shared by every page); anything not in a
+  group still renders at the end of News & Regions (nothing silently
+  vanishes).
+  **Footer section index** (`.foot-sections`, 2026-08-11): every footer
+  ends with the full section list in spine order — the bottom of a long
+  read is a junction, not a wall.
+  **Back to top** (`.totop`, 2026-08-11): a fixed ~44px circular ↑ at
+  `inset-inline-end` (opposite the live dock), chrome-black in both
+  themes, fading in after ~two screens of scroll on every page;
+  `prefers-reduced-motion` gets no transition.
   **On phones (≤740px)** the bar is ONE horizontally swipeable line of
   tap-height (~44px) tabs — never a wrapped multi-row block (owner report
   2026-08-06) — and panels become full-width sheets under the bar
