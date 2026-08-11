@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Israeli banks cut Palestinian lenders off from the shekel system</title>
+<desc id="dsc">Diagram: two Israeli correspondent banks, Israel Discount Bank (terminating 1 September) and Bank Hapoalim (terminating 1 October), are linked by pipes to Palestinian banks; the link is severed in the middle. A side panel lists 51 billion shekels, about 16.5 billion dollars, in annual Palestinian transactions, 90 percent of exports routed through Israel, about 15 billion shekels of cash stuck in West Bank vaults, and 240 percent inflation in Gaza.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="70" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#c7a86b">WEST BANK · SHEKEL CLEARING</text>
+
+<text x="90" y="126" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">Israeli banks cut Palestinian lenders</text>
+<text x="90" y="178" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">off from the shekel system</text>
+<text x="90" y="226" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#c7a86b" text-anchor="start">قطع الشيكل عن المصارف الفلسطينية</text>
+<text x="90" y="266" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Correspondent banking ends in weeks; the replacement law has not passed.</text>
+
+<line x1="90" y1="292" x2="1540" y2="292" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- pipes -->
+<line x1="410" y1="400" x2="606" y2="400" stroke="#c7a86b" stroke-width="16"/>
+<line x1="704" y1="400" x2="880" y2="400" stroke="#c7a86b" stroke-width="16"/>
+<line x1="410" y1="560" x2="606" y2="560" stroke="#c7a86b" stroke-width="16"/>
+<line x1="704" y1="560" x2="880" y2="560" stroke="#c7a86b" stroke-width="16"/>
+
+<rect x="600" y="386" width="8" height="28" fill="#C8102E"/>
+<rect x="702" y="386" width="8" height="28" fill="#C8102E"/>
+<rect x="600" y="546" width="8" height="28" fill="#C8102E"/>
+<rect x="702" y="546" width="8" height="28" fill="#C8102E"/>
+
+<line x1="655" y1="318" x2="655" y2="628" stroke="#C8102E" stroke-width="3" stroke-dasharray="10 9"/>
+<path d="M643,388 L667,412 M667,388 L643,412" stroke="#C8102E" stroke-width="6"/>
+<path d="M643,548 L667,572 M667,548 L643,572" stroke="#C8102E" stroke-width="6"/>
+
+<text x="655" y="312" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="2" fill="#C8102E">SERVICE ENDS</text>
+<text x="588" y="658" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#C8102E" text-anchor="start">انقطاع الخدمة</text>
+
+<!-- left nodes -->
+<rect x="110" y="350" width="300" height="100" rx="8" fill="#191a1d" stroke="#8a1f2d" stroke-width="3"/>
+<text x="132" y="388" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" font-weight="700" fill="#f2eee8">Israel Discount Bank</text>
+<text x="132" y="414" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" text-anchor="start">بنك ديسكونت</text>
+<text x="132" y="440" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" fill="#c7a86b">ends 1 September 2026</text>
+
+<rect x="110" y="510" width="300" height="100" rx="8" fill="#191a1d" stroke="#8a1f2d" stroke-width="3"/>
+<text x="132" y="548" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" font-weight="700" fill="#f2eee8">Bank Hapoalim</text>
+<text x="132" y="574" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" text-anchor="start">بنك هبوعليم</text>
+<text x="132" y="600" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" fill="#c7a86b">ends 1 October 2026</text>
+
+<!-- right node -->
+<rect x="880" y="350" width="270" height="260" rx="8" fill="#191a1d" stroke="#286344" stroke-width="3"/>
+<text x="905" y="420" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" font-weight="700" fill="#59a97d">Palestinian banks</text>
+<text x="905" y="452" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#f2eee8" text-anchor="start">المصارف الفلسطينية</text>
+<text x="905" y="505" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">No direct access to Israel's</text>
+<text x="905" y="527" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">payment system: wages, fuel,</text>
+<text x="905" y="549" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">electricity, food imports and</text>
+<text x="905" y="571" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">trade all settle in shekels.</text>
+
+<text x="110" y="655" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Finance Ministry indemnity runs to end of 2026; replacement law not passed.</text>
+
+<!-- stats panel -->
+<line x1="1180" y1="318" x2="1180" y2="668" stroke="#3a3b3f" stroke-width="2"/>
+<text x="1206" y="332" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="2" fill="#c7a86b">BY THE NUMBERS</text>
+<text x="1206" y="362" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5" text-anchor="start">بالأرقام</text>
+
+<text x="1206" y="418" font-family="'Source Serif 4',Georgia,serif" font-size="34" font-weight="700" fill="#f2eee8">51 bn ₪</text>
+<text x="1206" y="442" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">≈ $16.5 bn a year in transactions</text>
+
+<text x="1206" y="496" font-family="'Source Serif 4',Georgia,serif" font-size="34" font-weight="700" fill="#f2eee8">90%</text>
+<text x="1206" y="520" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">of Palestinian exports go via Israel</text>
+
+<text x="1206" y="574" font-family="'Source Serif 4',Georgia,serif" font-size="34" font-weight="700" fill="#f2eee8">~15 bn ₪</text>
+<text x="1206" y="598" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">cash stuck in vaults, Oct 2025</text>
+
+<text x="1206" y="652" font-family="'Source Serif 4',Georgia,serif" font-size="34" font-weight="700" fill="#C8102E">240%</text>
+<text x="1206" y="676" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">inflation in Gaza, Sept 2025</text>
+
+<!-- quote and footnotes -->
+<line x1="90" y1="700" x2="1150" y2="700" stroke="#3a3b3f" stroke-width="2"/>
+<text x="90" y="748" font-family="'Source Serif 4',Georgia,serif" font-size="30" font-style="italic" fill="#c7a86b">“This is not a slope, it's a cliff.”</text>
+<text x="90" y="778" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Yahya Shunnar, Governor, Palestine Monetary Authority</text>
+<text x="90" y="820" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Dates in circulation differ: five banks using Hapoalim lose access 13 August, per AFP. Neither bank has published a schedule.</text>
+<text x="90" y="852" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Sources: J Street · AFP / Al Jazeera · Reuters · Ynet · AP · JNS · Times of Israel</text>
+</svg>
