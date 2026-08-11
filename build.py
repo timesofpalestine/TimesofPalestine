@@ -4364,14 +4364,16 @@ def render_page(lang, items, built_at):
 
     # Topical sections carry Palestine coverage only; world items from Palestinian
     # outlets live in More News. Research and Bitcoin are thematic by construction.
-    # The press-review desks read newest-first (owner order 2026-08-11: a daily
-    # review section fronting five-day-old items reads as dead — "the page is
-    # alive"); every other section keeps the editorial score ranking.
-    sections = {k: diversify(take(by_latest if k in ("israelipress", "uspress") else by_score,
+    # EVERY section reads newest-first (owner order 2026-08-11, extending the
+    # press-desk rule of the same day to the whole paper): a section fronting
+    # days-old cards while fresher coverage hides behind View-all reads as
+    # dead — "the page is alive". Editorial score still ranks the hero tier;
+    # the section blocks are the day's paper, in the order the day happened.
+    sections = {k: diversify(take(by_latest,
                                   lambda i, k=k: i["cat"] == k
                                   and (k in ("research", "bitcoin", "news") or palestine(i)), 8))
                 for k in order}
-    sections["news"] += take(by_score, lambda i: True, max(0, 8 - len(sections["news"])))
+    sections["news"] += take(by_latest, lambda i: True, max(0, 8 - len(sections["news"])))
     P = "story/"  # homepage → story pages live one level down
 
     date_str = full_date(built_at, lang)
