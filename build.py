@@ -4142,11 +4142,17 @@ def foot_sections_html(lang, prefix=""):
 
 # Back-to-top (owner order 2026-08-11): the front page runs tens of screens
 # on a phone — a floating ↑ appears after two screens of scroll, opposite
-# the live dock, house ~44px tap size, and rides every page.
+# the live dock, house ~44px tap size, and rides every page. Owner report
+# 2026-08-11: at the very bottom it covered the footer's own links and
+# duplicated their job — the arrow now switches off the moment the footer
+# rises into its zone (footer top < viewport bottom - button reserve).
 _TOTOP_JS = (
-    'var tt=document.querySelector(".totop");if(tt){var v=false;'
-    'addEventListener("scroll",function(){var s=scrollY>1400;'
-    'if(s!==v){v=s;tt.classList.toggle("show",s)}},{passive:true})}')
+    'var tt=document.querySelector(".totop");if(tt){var v=false,'
+    'f=document.querySelector("footer");'
+    'function c(){var s=scrollY>1400&&(!f||f.getBoundingClientRect().top>innerHeight-76);'
+    'if(s!==v){v=s;tt.classList.toggle("show",s)}}'
+    'addEventListener("scroll",c,{passive:true});'
+    'addEventListener("resize",c,{passive:true});c()}')
 
 
 def totop_html(lang):
