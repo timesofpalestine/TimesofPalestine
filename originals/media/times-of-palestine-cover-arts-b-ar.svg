@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t">
+  <title id="t">Times of Palestine — Culture &amp; Arts</title>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/></linearGradient>
+  <style>.serif{font-family:"Source Serif 4",Georgia,serif}.arabic{font-family:Cairo,Arial,sans-serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}</style></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M1600 0 L1040 450 L1600 900 Z" fill="#286344" opacity=".9"/>
+  <path d="M1600 120 L1190 450 L1600 780 Z" fill="#111214"/>
+  <path d="M1600 240 L1335 450 L1600 660 Z" fill="#8a1f2d" opacity=".92"/>
+  <rect x="130" y="404" width="120" height="7" fill="#c7a86b"/>
+  <text x="130" y="388" class="arabic" fill="#f2eee8" font-size="84" font-weight="700">الثقافة والفنون</text>
+  <text x="130" y="516" class="serif" fill="#c7a86b" font-size="44" font-weight="700">Culture &amp; Arts</text>
+  <text x="130" y="600" class="sans" fill="#aaa9a5" font-size="26" letter-spacing="4">TIMES OF PALESTINE</text>
+</svg>

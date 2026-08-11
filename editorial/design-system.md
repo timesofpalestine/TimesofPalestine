@@ -493,3 +493,29 @@ build prefers the `-ar` variant automatically on Arabic pages. New
 bilingual ledes should ship both variants from day one. Category
 covers may carry any number of variants (`-b`, `-c`, `-d`) — the build
 cycles through all that exist, so adjacent photoless cards never twin.
+
+As of the 2026-08-11 visual sweep this is fully wired: every category
+cover ships an `-ar` sibling (Arabic display line first, English deck
+under it), and `build.py`'s single `category_cover()` helper does the
+variant cycling AND the `-ar` preference at every fallback site —
+originals, photoless wire items, image-override and duplicate-image
+fallbacks. New category covers must ship base + `-b` + both `-ar`
+siblings, and cover pickers must go through `category_cover()`, never
+hand-build the filename.
+
+## Graphic-hero treatment & de-twin pass (visual sweep 2026-08-11)
+
+- **Graphic heroes.** A house SVG carries its own internal title; at
+  hero size that text fights the page headline (and on `/ar/` the
+  artwork's English reads first). When the hero image is a `/media/`
+  SVG the renderer adds `.graphic` to `.hero-imgwrap`: the image dims
+  to a texture (`brightness(.52) saturate(.85)`) under a deepened
+  full-height scrim so the overlay headline owns the frame. Never
+  remove the dimming to "show the graphic" — the story page shows it
+  in full.
+- **De-twin pass.** `_DETWIN_JS` (rides `totop_html` on every page)
+  gives the 2nd, 3rd… consecutive card sharing one cover a faint
+  alternating tone shift (`.dupvar1`/`.dupvar2`, ±12° hue) so a batch
+  that shares one house cover — an Israeli-press run is the standing
+  case — reads as a designed series. Presentation-only and no-JS safe;
+  keep any new card image inside the selector list in `_DETWIN_JS`.
