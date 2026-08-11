@@ -1,0 +1,50 @@
+{
+ "brief": "أعلنت وزارة الصحة في غزة ارتفاع عدد الشهداء إلى 73,387 والمصابين إلى 174,257 منذ بدء العدوان الإسرائيلي في السابع من أكتوبر 2023. وتتضمن الأرقام الضحايا والإصابات المسجلة عبر جميع المستشفيات والمراكز الطبية العاملة في القطاع.\n\nشهد القطاع الطبي في غزة انهياراً متدرجاً منذ بدء النزاع، إذ تعرضت معظم المرافق الصحية للقصف المباشر أو توقفت عن الخدمات بفعل نقص الوقود والإمدادات الطبية. وتواجه وزارة الصحة تحديات كبيرة في توثيق الأرقام الدقيقة في ظل استمرار العمليات العسكرية والانقطاعات المتكررة للكهرباء والاتصالات، مما يعرقل جهودها في تسجيل كل الضحايا والإصابات الناجمة عن القصف.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/314522",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728308",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/389820",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/184731/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%B4%D9%87%D9%8A%D8%AF-%D9%88%D9%85%D8%B5%D8%A7%D8%A8-%D8%A8%D8%BA%D8%B2%D8%A9-%D9%81%D9%8A-%D8%A2%D8%AE%D8%B1-24-%D8%B3%D8%A7%D8%B9%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-11T10:30:10+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/TUMAg2D747jfu-8dFOeUU7wppVRUFQF32iYNcqb468E_TREcol5P1pZ6XfwnGNpq286k0SVckhq2TG3rSo-lESAjw3P6TLju3NenGnWDu8TTlYJ0Gwag7n2SBvOqmu7mHSd9njrWOy5qASl8i9hC95ygDiKYfPGnS0E8n1golFJ97ykfN6UCdH8g59TUySquIiDh9zT_wAAAnkoY_A-4EQm9KN8-5YEh9dxnxxSiex3oRM9a6OEWJiv2ejh8c1PphKjn0NPj-DoIwZviCREsoY292mCTCE5zm0em4idsbwKBrvUVZBPn0M1PEC-tB3s3Kfq5s3RxBwMIHjsLmnCtDw.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/314522",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/314522"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9e4042d249",
+ "score": 63.99,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "وزارة الصحة بغزة تُحدّث الحصيلة إلى 73 ألف شهيد و174 ألف مصاب"
+}
