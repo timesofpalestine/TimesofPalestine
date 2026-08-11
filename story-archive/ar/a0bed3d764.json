@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/36173",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314497",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-08-11T06:02:08+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "a0bed3d764",
- "score": 49.39,
+ "score": 49.23,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",

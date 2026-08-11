@@ -6,19 +6,13 @@
    "article": "original:dardik-westbank-removal-order-2026-08-10.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://shehabnews.com/post/162008/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%82%D8%AA%D8%AD%D9%85-%D8%B7%D9%85%D9%88%D9%86-%D9%88%D9%8A%D8%AF%D9%85%D8%B1-%D8%AE%D8%B7%D9%88%D8%B7-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87-%D9%88%D9%8A%D9%85%D9%87-%D8%AF-%D9%84%D9%87%D8%AF%D9%85-%D9%85%D9%86%D8%B2%D9%84-%D8%B4%D9%87%D9%8A%D8%AF-%D9%81%D9%8A-%D9%82%D8%B1%D9%8A%D8%A9-%D8%AA%D9%84",
-   "name": "Shehab Wire (EN)",
-   "url": "https://shehabnews.com/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://imemc.org/article/army-intensifies-west-bank-invasions-abductions",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://t.me/maannews/36167",
@@ -42,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "bc547e6104",
- "score": 84.72,
+ "score": 84.68,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
