@@ -521,3 +521,32 @@ hand-build the filename.
   that shares one house cover — an Israeli-press run is the standing
   case — reads as a designed series. Presentation-only and no-JS safe;
   keep any new card image inside the selector list in `_DETWIN_JS`.
+
+## Story-page polish (owner directive 2026-08-11)
+
+`STORY_POLISH_JS` rides every story page; all three flourishes are
+pure enhancement (no-JS pages read exactly as before):
+
+- **Reading-progress bar** — `.readbar`, 3px house red fixed at the
+  very top, anchored inline-start so it fills LTR on /en/ and RTL on
+  /ar/; hidden under prefers-reduced-motion.
+- **Drop cap** — the story's first paragraph (`.opener`, tagged by the
+  script because briefs use `p.summary` and originals `.lf p`) opens
+  with a red serif `::first-letter` cap on the ENGLISH edition only.
+  Arabic typography carries no drop-cap tradition; the `[lang=ar]`
+  override disables it — never re-enable it there.
+- **End slug** — every story closes with a small red ■ (`.closer::after`),
+  the classic magazine end mark, both editions.
+
+## Visual polish queue (running; daily editor may pick from here)
+
+- Photo-conversion queue for house-SVG covers stays the top lever
+  (`editorial/photo-queue.md`) — real photography beats every filter.
+- Footer: echo the wordmark + flag rule above the link columns so the
+  page closes with the brand, not a bare link wall.
+- Scroll rhythm: consider alternating `--paper`/`--card` backgrounds
+  for consecutive light section bands on the front page.
+- Section pages: a compact "band header" with the section's house
+  cover art as a thin banner behind the title.
+- Live dock and NEW pulse are good; don't add more motion without
+  removing some elsewhere — the page should never blink twice at once.
