@@ -7,6 +7,18 @@
    "name": "تايمز أوف فلسطين",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://t.me/Palinfo/314586",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728409",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-11T09:55:00+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "e0da1f20a9",
- "score": 86.85,
+ "score": 86.8,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
