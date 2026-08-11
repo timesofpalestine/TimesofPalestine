@@ -97,6 +97,14 @@ land in a specific window.
   (owner order 2026-08-03) still wants rights-cleared photographs on the
   stories now carrying house SVGs. Convert opportunistically, always with a
   `media-rights.json` entry.
+- ✅ **US-press wire feeds repaired 2026-08-11.** Four of the desk's
+  think-tank feeds were dying on every sweep. CSIS and CFR now point at
+  working endpoints, `israeli_press_fetch.py` resolves the HTML entities
+  that killed otherwise-valid XML (covered by a new test), and Brookings
+  and WINEP — which serve no usable feed to a server-side client — moved
+  to a documented `noFeed` list in `editorial/us-press-feeds.json`, swept
+  by direct fetch instead. The wire now runs with zero dead-feed warnings;
+  re-test the two occasionally and move them back when their feeds return.
 - **Paragraph pacing (open).** The build flags 152 paragraphs over ~70
   words across the older originals. The renderer already splits them at
   sentence boundaries for the reader, so this is a copy-desk backlog, not a
