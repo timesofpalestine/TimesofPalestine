@@ -22,15 +22,22 @@ python3 israeli_press_fetch.py --feeds editorial/us-press-feeds.json --hours 36
 
 It pulls the papers — NYT, Washington Post, WSJ, Politico, The Hill,
 Axios, Foreign Policy, The Atlantic, The Intercept, Foreign Affairs — and
-the **think tanks**: Brookings, Carnegie, CSIS, the Washington Institute
-(WINEP), the Quincy Institute/Responsible Statecraft, CFR, FDD, the
-Middle East Institute, the Arab Center Washington DC. From the digest,
-select per the relevance test below, then WebFetch each chosen piece and
-work from the full text: lock the facts, then compose fresh English and
-fresh Arabic. (The wire is fail-open; if a feed dies, WebFetch the
-outlet's site or fall back to WebSearch. Paywalled full text: work from
-what is openly available and attribute precisely — never fabricate what
-sits behind a wall.)
+the **think tanks**: Carnegie, CSIS, the Quincy Institute/Responsible
+Statecraft, CFR, FDD, the Middle East Institute, the Arab Center
+Washington DC. From the digest, select per the relevance test below, then
+WebFetch each chosen piece and work from the full text: lock the facts,
+then compose fresh English and fresh Arabic. (The wire is fail-open; if a
+feed dies, WebFetch the outlet's site or fall back to WebSearch.
+Paywalled full text: work from what is openly available and attribute
+precisely — never fabricate what sits behind a wall.)
+
+**Brookings and the Washington Institute (WINEP) serve no usable feed**
+(WINEP's documented RSS paths 404; Brookings returns an HTML interstitial
+instead of XML) and sit in the `noFeed` list of
+`editorial/us-press-feeds.json` with a landing page each. Sweep those two
+by WebFetching their listed landing pages on every run so their output is
+never quietly lost; re-test their feeds occasionally and move them back
+into `feeds` if they return (issue #249).
 
 **Label think tanks as think tanks, every time**, with their institutional
 identity and lean stated plainly in the body ("the Washington Institute,
