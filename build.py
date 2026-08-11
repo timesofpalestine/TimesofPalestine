@@ -2348,6 +2348,35 @@ def validate_original(path, meta, body, lang, now, date):
             f"{path.name}: unsafe rendered markup: {'; '.join(residue_warnings)}")
 
 
+def category_cover(cat, lang=None, n=0):
+    """Branded category-cover filename for a photoless story.
+
+    Alternates the A/B(/C/D) variants by n so adjacent cards never show twin
+    covers, and on the Arabic edition prefers the Arabic-primary `-ar`
+    sibling when one exists (owner visual sweep 2026-08-11: house artwork
+    must not speak English first on /ar/). Falls back through the base
+    category cover to the news cover; always returns a filename, which the
+    caller existence-checks before attaching."""
+    variants = [""]
+    for suf in ("-b", "-c", "-d"):
+        if (ROOT / "originals" / "media"
+                / f"times-of-palestine-cover-{cat}{suf}.svg").is_file():
+            variants.append(suf)
+    cover = f"times-of-palestine-cover-{cat}{variants[(n or 0) % len(variants)]}.svg"
+    if not (ROOT / "originals" / "media" / cover).is_file():
+        cover = f"times-of-palestine-cover-{cat}.svg"
+    if not (ROOT / "originals" / "media" / cover).is_file():
+        cover = "times-of-palestine-cover-news.svg"
+    if lang == "ar":
+        ar = cover.replace(".svg", "-ar.svg")
+        if (ROOT / "originals" / "media" / ar).is_file():
+            cover = ar
+    return cover
+
+
+_shared_cover_cycle = {}
+
+
 def load_originals(lang):
     if os.environ.get("TOP_SKIP_ORIGINALS") == "1":
         return []
@@ -2430,16 +2459,9 @@ def load_originals(lang):
             # No lede should ever be the bare flag placeholder: text-only desk
             # reports get the branded category cover (house SVG), alternating
             # A/B variants so adjacent reports never show twin covers.
-            _variants = [""]
-            for _suf in ("-b", "-c", "-d"):
-                if (ROOT / "originals" / "media"
-                        / f"times-of-palestine-cover-{item['cat']}{_suf}.svg").is_file():
-                    _variants.append(_suf)
             _n = _orig_cover_cycle.get(item["cat"], 0)
             _orig_cover_cycle[item["cat"]] = _n + 1
-            cover = f"times-of-palestine-cover-{item['cat']}{_variants[_n % len(_variants)]}.svg"
-            if not (ROOT / "originals" / "media" / cover).is_file():
-                cover = f"times-of-palestine-cover-{item['cat']}.svg"
+            cover = category_cover(item["cat"], item.get("lang"), _n)
             if (ROOT / "originals" / "media" / cover).is_file():
                 attach_media(item, f"/media/{cover}", local_original=True)
         __import__("longform").validate_media_references(
@@ -2515,10 +2537,9 @@ def apply_image_overrides(items):
                     HEALTH.hold("image_override_invalid")
                 target = "cover"
         if target == "cover":
-            cover = f"times-of-palestine-cover-{it['cat']}.svg"
-            if not (ROOT / "originals" / "media" / cover).is_file():
-                cover = "times-of-palestine-cover-news.svg"
-            it["image"] = f"/media/{cover}"
+            _n = _shared_cover_cycle.get(it["cat"], 0)
+            _shared_cover_cycle[it["cat"]] = _n + 1
+            it["image"] = f"/media/{category_cover(it['cat'], it.get('lang'), _n)}"
         else:
             it["image"] = target
         if it["image"].startswith("/media/times-of-palestine-"):
@@ -2552,10 +2573,9 @@ def dedupe_card_images(items):
     for it in sorted(remote, key=lambda i: (i["date"], i["score"]), reverse=True):
         key = _card_image_hash(it["image"]) or it["image"]
         if key in seen:
-            cover = f"times-of-palestine-cover-{it['cat']}.svg"
-            if not (ROOT / "originals" / "media" / cover).is_file():
-                cover = "times-of-palestine-cover-news.svg"
-            it["image"] = f"/media/{cover}"
+            _n = _shared_cover_cycle.get(it["cat"], 0)
+            _shared_cover_cycle[it["cat"]] = _n + 1
+            it["image"] = f"/media/{category_cover(it['cat'], it.get('lang'), _n)}"
             it["media"] = {"credit": "Graphic: Times of Palestine",
                            "rightsBasis": "owned",
                            "source": "Times of Palestine", "licenseUrl": None}
@@ -2598,9 +2618,7 @@ def build_lang(lang):
         if not it.get("image"):
             n = cover_cycle.get(it["cat"], 0)
             cover_cycle[it["cat"]] = n + 1
-            cover = f"times-of-palestine-cover-{it['cat']}{'-b' if n % 2 else ''}.svg"
-            if not (ROOT / "originals" / "media" / cover).is_file():
-                cover = f"times-of-palestine-cover-{it['cat']}.svg"
+            cover = category_cover(it["cat"], lang, n)
             if (ROOT / "originals" / "media" / cover).is_file():
                 it["image"] = f"/media/{cover}"
                 it["media"] = {"credit": "Graphic: Times of Palestine",
@@ -3126,6 +3144,10 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
 .hero-imgwrap>a>img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;background:#141419;transition:transform .55s ease}
 .hero-imgwrap:hover>a>img{transform:scale(1.03)}
 .hero-overlay{position:absolute;bottom:0;inset-inline:0;padding:3.5rem 1.5rem 1.5rem;background:linear-gradient(to top,rgba(4,4,6,.96) 0%,rgba(4,4,6,.82) 42%,rgba(4,4,6,.42) 74%,transparent 100%)}
+.hero-imgwrap.graphic>a>img{filter:brightness(.52) saturate(.85)}
+.hero-imgwrap.graphic .hero-overlay{background:linear-gradient(to top,rgba(4,4,6,.97) 0%,rgba(4,4,6,.9) 45%,rgba(4,4,6,.62) 78%,rgba(4,4,6,.32) 100%)}
+.dupvar1{filter:hue-rotate(12deg) brightness(1.05)}
+.dupvar2{filter:hue-rotate(-12deg) saturate(1.1)}
 .hero-overlay .label{color:#ff606d;font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.45rem;display:block}
 [lang=ar] .hero-overlay .label{letter-spacing:.04em;font-size:.78rem}
 .hero-overlay h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.5rem,2.9vw,2.5rem);line-height:1.14;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
@@ -4324,11 +4346,23 @@ _TOTOP_JS = (
     'addEventListener("scroll",c,{passive:true});'
     'addEventListener("resize",c,{passive:true});c()}')
 
+# De-twin pass (owner visual sweep 2026-08-11): when one house cover rides a
+# run of adjacent cards — an Israeli-press batch is the standing case — the
+# repeats get a faint, alternating tone shift so the run reads as a designed
+# series instead of a copy-paste artifact. Presentation only, no-JS safe.
+_DETWIN_JS = (
+    'var dp=null,dn=0;'
+    'document.querySelectorAll(".card>a>img,.lt-thumb img,.sub-thumb img,'
+    '.fr-card img,.rowcard img,.kr img").forEach(function(im){'
+    'var s=im.getAttribute("src")||"";'
+    'if(s&&s===dp){dn++;im.classList.add(dn%2?"dupvar1":"dupvar2")}'
+    'else{dp=s;dn=0}});')
+
 
 def totop_html(lang):
     label = "العودة إلى الأعلى" if lang == "ar" else "Back to top"
     return (f'<a class="totop" href="#top" aria-label="{label}" title="{label}">↑</a>'
-            f'<script>{_TOTOP_JS}</script>')
+            f'<script>{_TOTOP_JS}{_DETWIN_JS}</script>')
 
 
 def render_page(lang, items, built_at):
@@ -4593,8 +4627,16 @@ def render_page(lang, items, built_at):
     hero_html = ""
     if hero:
         hero_dek = f'<p class="dek">{summary_html(hero["dek"])}</p>' if hero["dek"] else ""
+        # House graphics carry their own internal titles; at hero size that
+        # text fights the page headline (and on /ar/ the artwork's English
+        # reads first). The .graphic treatment dims the image to a texture
+        # and deepens the scrim so the overlay headline owns the frame
+        # (owner visual sweep 2026-08-11).
+        _hero_graphic = (" graphic"
+                         if str(hero.get("image", "")).startswith("/media/")
+                         and str(hero.get("image", "")).endswith(".svg") else "")
         hero_html = (
-            f'<div class="hero-imgwrap">'
+            f'<div class="hero-imgwrap{_hero_graphic}">'
             f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt="{esc(hero["title"])}" loading="eager" fetchpriority="high"{lede_fallback_attrs(hero)}></a>'
             f'<div class="hero-overlay">'
             f'<p class="label">{t["hero_label"]}</p>'

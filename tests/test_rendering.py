@@ -1194,7 +1194,10 @@ class CardImageDedupeTests(unittest.TestCase):
         with mock.patch.object(build, "_card_image_hash", return_value=None):
             build.dedupe_card_images([older, newer])
         self.assertEqual(newer["image"], url)
-        self.assertEqual(older["image"], "/media/times-of-palestine-cover-gaza.svg")
+        # The fallback alternates the branded gaza cover's A/B(/AR) variants
+        # (owner visual sweep 2026-08-11) — any of them is the correct outcome.
+        self.assertRegex(older["image"],
+                         r"^/media/times-of-palestine-cover-gaza(-b)?(-ar)?\.svg$")
         self.assertEqual(older["media"]["rightsBasis"], "owned")
 
     def test_same_bytes_under_two_urls_collapse(self):
