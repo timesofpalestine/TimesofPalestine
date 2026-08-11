@@ -2811,9 +2811,9 @@ def live_fab_html(lang):
             f'<script>{_LIVE_JS}</script>')
 
 SECTION_ORDER = {
-    "en": ["gaza", "westbank", "prisoners", "israelipress", "uspress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "en": ["gaza", "westbank", "prisoners", "israelipress", "uspress", "women", "arabaid", "research", "health", "humans", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
-    "ar": ["gaza", "westbank", "prisoners", "israelipress", "uspress", "women", "arabaid", "research", "health", "social", "bitcoin", "diaspora", "arts", "sports",
+    "ar": ["gaza", "westbank", "prisoners", "israelipress", "uspress", "women", "arabaid", "research", "health", "humans", "social", "bitcoin", "diaspora", "arts", "sports",
            "accountability", "politics", "economy", "opinion", "news", "archive"],
 }
 FOCUS_SECTIONS = {"prisoners", "israelipress", "uspress", "research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
