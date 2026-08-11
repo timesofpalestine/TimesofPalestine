@@ -1,0 +1,57 @@
+{
+  "_readme": [
+    "Canonical Arabic spellings of transliterated names (owner order 2026-08-11,",
+    "after «الهدالين» reached the Arabic edition for الهذالين). RULE, binding on",
+    "every agent and desk: before an Arabic edition uses a personal name that",
+    "arrived through English or Hebrew, VERIFY the spelling against Arabic-language",
+    "sources covering the same story (الجزيرة نت، وفا، معا، عرب 48، العربي الجديد،",
+    "CNN بالعربية…) and record the verified form here with its source. build.py",
+    "loads this file and flags any listed wrong variant in briefs and originals",
+    "exactly like machine diction. Fail-open: a broken lexicon disables the net,",
+    "never the build.",
+    "Entry fields: latin (as the wires spell it), ar (verified Arabic form),",
+    "wrong (DISTINCTIVE strings matched as substrings — never list a string that",
+    "is also an ordinary Arabic word on its own), verified (source + date).",
+    "Grow this file with every name the desks verify; never delete an entry —",
+    "supersede it by editing in place."
+  ],
+  "names": [
+    {
+      "latin": "Awdah Hathaleen",
+      "ar": "عودة الهذالين",
+      "wrong": ["هدالين", "الحذالين"],
+      "verified": "ar.wikipedia + wafa.ps + maannews + alaraby, 2026-08-11"
+    },
+    {
+      "latin": "Sayfollah (Saif) Musallet",
+      "ar": "سيف الله مصلط",
+      "wrong": ["سيف الله مسلت", "سيف الله مسلّت", "سيف الله مصلت", "سيف مسلت"],
+      "verified": "aljazeera.net + arabic.cnn + al-watan.com, 2026-08-11"
+    },
+    {
+      "latin": "Yinon Levy",
+      "ar": "يانون ليفي",
+      "wrong": ["ينون ليفي"],
+      "verified": "alaraby.co.uk (usage also split in Arabic press; house form fixed for consistency), 2026-08-11"
+    },
+    {
+      "latin": "Nasrallah Abu Siyam",
+      "ar": "نصر الله أبو صيام",
+      "wrong": ["نصرالله أبو صيام"],
+      "verified": "house usage consistent since 2026-02; recheck against wafa on next story",
+      "note": "«نصر الله» separated, matching Arabic press convention for the given name"
+    },
+    {
+      "latin": "Khamis Ayyad",
+      "ar": "خميس عياد",
+      "wrong": ["خميس عياض"],
+      "verified": "Arabic wire coverage of the Silwad fire, 2026-08; shadda form عيّاد acceptable"
+    },
+    {
+      "latin": "Awdah Hathaleen village – Umm al-Khair",
+      "ar": "أم الخير",
+      "wrong": ["أم الخيّر"],
+      "verified": "wafa.ps, 2026-08-11"
+    }
+  ]
+}

@@ -1586,13 +1586,40 @@ _EN_DICTION = [
 ]
 
 
+# Name-spelling net (owner order 2026-08-11, after «الهدالين» reached the
+# Arabic edition for «الهذالين»): names transliterated from English or Hebrew
+# are verified against Arabic-language sources and the verified forms live in
+# editorial/arabic-names.json; each recorded wrong variant is flagged here
+# exactly like machine diction. Variants are matched as plain substrings, so
+# the lexicon only lists DISTINCTIVE strings. Fail-open: a missing or invalid
+# lexicon disables the net, never the build.
+def _load_arabic_name_nets():
+    try:
+        data = json.loads((ROOT / "editorial" / "arabic-names.json")
+                          .read_text(encoding="utf-8"))
+        nets = []
+        for entry in data.get("names", []):
+            right = (entry.get("ar") or "").strip()
+            for wrong in entry.get("wrong", []):
+                wrong = (wrong or "").strip()
+                if wrong and right and wrong not in right and right not in wrong:
+                    nets.append((re.compile(re.escape(wrong)),
+                                 f"الإملاء المعتمد «{right}» — راجع editorial/arabic-names.json"))
+        return nets
+    except Exception:
+        return []
+
+
+_AR_NAME_NETS = _load_arabic_name_nets()
+
+
 def language_quality_issues(text, lang=None):
     """Wordings that read machine-made rather than newsroom-made.
     lang=None checks both nets (used for the cache scrub, where legacy keys
     carry no language)."""
     nets = []
     if lang in (None, "ar"):
-        nets += _AR_DICTION
+        nets += _AR_DICTION + _AR_NAME_NETS
     if lang in (None, "en"):
         nets += _EN_DICTION
     found = []

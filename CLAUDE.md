@@ -88,6 +88,13 @@ everything it builds:
    be 6–10 words, use an active construction and name the responsible actor
    or institution whenever the reporting identifies one; never hide a known
    actor behind passive or agentless wording. Applies to every agent.
+   **Transliterated names are verified, never guessed (owner order
+   2026-08-11):** before an Arabic edition uses a name that arrived through
+   English or Hebrew, check its spelling against Arabic-language sources on
+   the same story and record it in `editorial/arabic-names.json` (see the
+   style guide's names section); `build.py` flags the lexicon's known wrong
+   variants like machine diction. The order came after «الهدالين» ran for
+   «الهذالين».
    **Wire attribution protocol (owner decision 2026-07-30):** a rewritten
    story is OUR copy. The source outlet is named exactly once, inline, in
    the prose ("…, the Ma'an news agency reported"). No byline credit-links,

@@ -92,6 +92,26 @@ These are warnings, not automatic replacements; context decides the wording.
 - Do not reproduce English headline punctuation, parallelism or explanatory
   labels when a shorter Arabic headline is clearer.
 
+## Names arriving through English or Hebrew (owner order 2026-08-11)
+
+A transliterated personal or place name is never spelled by ear. Before an
+Arabic edition uses a name that reached the desk through English or Hebrew
+(a wire story, a bulletin, an Israeli paper), VERIFY the Arabic spelling
+against Arabic-language sources covering the same story — الجزيرة نت، وفا،
+معا، عرب 48، العربي الجديد، CNN بالعربية — and prefer the form the person's
+own community uses (a Palestinian family name has one correct form:
+الهذالين، مصلط، دعدرة…; the order came after «الهدالين» ran for الهذالين).
+
+- Record every verified name in `editorial/arabic-names.json` with its
+  source, and add any wrong variant you corrected — `build.py` loads that
+  lexicon and flags the wrong variants in briefs and originals like machine
+  diction, so a mistake can never recur silently.
+- When Arabic usage is genuinely split (Hebrew names often are), pick one
+  form, record it as the house form, and keep it consistent across editions.
+- A name you cannot verify in any Arabic source is transliterated by the
+  rules of the Arabic press register, flagged in the lexicon with
+  `"verified": "unverified — recheck"`, and rechecked on the next story.
+
 ## Final Arabic-only pass
 
 Confirm that:
