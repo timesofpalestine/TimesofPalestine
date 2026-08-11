@@ -613,6 +613,73 @@ if __name__ == "__main__":
     unittest.main()
 
 
+class PrisonersSectionTests(unittest.TestCase):
+    """Owner directive 2026-08-11: the أسرى file is a standing section —
+    prisoner items route in automatically; female prisoners stay Her Story."""
+
+    def test_prisoner_items_route_to_the_section_in_both_languages(self):
+        en = item()
+        en.update({"title": "Prisoners' Club says detainees began a hunger strike",
+                   "dek": "Administrative detention numbers keep rising.",
+                   "categories": []})
+        ar = item()
+        ar.update({"lang": "ar", "categories": [],
+                   "title": "نادي الأسير: الأسرى يبدؤون إضراباً مفتوحاً عن الطعام",
+                   "dek": "أعداد الاعتقال الإداري تواصل الارتفاع."})
+        self.assertEqual(build.categorize(en), "prisoners")
+        self.assertEqual(build.categorize(ar), "prisoners")
+
+    def test_female_prisoner_account_keeps_her_story_routing(self):
+        it = item()
+        it.update({"lang": "ar", "categories": [],
+                   "title": "أسيرة محررة تروي شهادتها عن الاعتقال",
+                   "dek": "شهادة من داخل سجن الدامون."})
+        self.assertEqual(build.categorize(it), "women")
+
+    def test_prisoners_section_renders_on_the_front(self):
+        built_at = datetime(2026, 8, 11, 12, tzinfo=timezone.utc)
+        base = item()
+        base.update({"image": "/media/x.svg"})
+        subjects = [
+            "Red Cross visits Palestinian prisoners in Gaza jails",
+            "Prisoners' Club counts the detainees taken from Jenin",
+            "Administrative detention of Palestinians reaches a record",
+            "Freed Palestinian prisoners reach Khan Younis families",
+            "Hunger strike spreads through Palestinian prisoners' wings",
+            "Israel moves Palestinian detainees out of Ofer prison",
+            "Lawyers document prison conditions for Palestinian detainees",
+            "Families rally in Nablus for the Palestinian prisoners",
+            "Court extends detention of Palestinian journalists again",
+            "Doctors warn over sick Palestinian prisoners in Ramla",
+            "Children held in Israeli jails reach a new Palestinian record",
+            "Prisoner exchange list grows in Gaza ceasefire talks",
+        ]
+        for lang in ("en", "ar"):
+            rows = [dict(base, lang=lang, cat="prisoners", pid=f"pris{n:04d}",
+                         title=t, link=f"https://example.com/pris-{n}")
+                    for n, t in enumerate(subjects)]
+            page = build.render_page(lang, rows, built_at)
+            self.assertIn('id="prisoners"', page)
+
+
+class OnThisDayTests(unittest.TestCase):
+    """Owner directive 2026-08-11: a daily memory line on both fronts,
+    keyed to the Jerusalem date; silent on days without an entry."""
+
+    def test_band_renders_on_a_dated_day_and_not_otherwise(self):
+        it = item()
+        it.update({"image": "/media/x.svg"})
+        nakba_day = datetime(2026, 5, 15, 12, tzinfo=timezone.utc)
+        for lang, needle in (("en", "Nakba"), ("ar", "النكبة")):
+            page = build.render_page(lang, [dict(it, lang=lang)], nakba_day)
+            self.assertIn('class="otd"', page)
+            self.assertIn("1948", page.split('class="otd"', 1)[1][:600])
+            self.assertIn(needle, page)
+        quiet_day = datetime(2026, 1, 2, 12, tzinfo=timezone.utc)
+        page = build.render_page("en", [it], quiet_day)
+        self.assertNotIn('class="otd"', page)
+
+
 class PressDeskFreshnessTests(unittest.TestCase):
     """Owner order 2026-08-11: the press-review sections front the NEWEST
     items — a daily review showing five-day-old cards reads as dead."""

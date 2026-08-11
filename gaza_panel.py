@@ -645,6 +645,35 @@ def panel(lang):
 # the full #numbers ledger. Same data, same live hooks: the cells carry
 # data-gi-key, so PANEL_JS's five-minute poll revises the strip and the ledger
 # together. Restraint binds here too — no pulsing, no motion of its own.
+_RATES_CACHE = {}
+
+
+def shekel_rates():
+    """Shekel reference rates for the strip (owner directive 2026-08-11:
+    the exchange rate is a daily-paper staple for readers paid in dollars
+    or dinars and spending in shekels). USD/EUR→ILS come from the ECB
+    daily reference via the keyless frankfurter API; JOD→ILS is derived
+    from the dinar's fixed USD peg (1 USD = 0.709 JOD) and labelled as a
+    reference. Fail-open: any error returns {} and the strip simply omits
+    the rates. Cached per build."""
+    if _RATES_CACHE:
+        return _RATES_CACHE
+    try:
+        req = urllib.request.Request(
+            "https://api.frankfurter.dev/v1/latest?base=USD&symbols=ILS,EUR",
+            headers={"User-Agent": "TimesofPalestine/1.0"})
+        with urllib.request.urlopen(req, timeout=8) as r:
+            data = json.loads(r.read().decode("utf-8"))
+        usd_ils = float(data["rates"]["ILS"])
+        usd_eur = float(data["rates"]["EUR"])
+        _RATES_CACHE.update({
+            "usd": usd_ils, "eur": usd_ils / usd_eur, "jod": usd_ils / 0.709,
+            "date": data.get("date", "")})
+    except Exception as e:  # noqa: BLE001 — a rates outage never marks the paper
+        print(f"  → shekel rates unavailable ({type(e).__name__}) — strip omits them")
+    return _RATES_CACHE
+
+
 def strip(lang):
     if os.environ.get("TOP_OFFLINE") == "1":
         return ""
@@ -667,6 +696,19 @@ def strip(lang):
                      f'<span class="gs-lab">{arl if ar else en}</span></span>')
     if not cells:
         return ""
+    rates = shekel_rates()
+    if rates:
+        src_note = (f"سعر مرجعي · {rates['date']}" if ar
+                    else f"reference rate · {rates['date']}")
+        for val, en, arl, note in (
+                (rates["usd"], "to the dollar", "للدولار", src_note),
+                (rates["jod"], "to the dinar", "للدينار",
+                 ("محتسب من ربط الدينار بالدولار · " if ar
+                  else "derived from the dinar's dollar peg · ") + src_note),
+                (rates["eur"], "to the euro", "لليورو", src_note)):
+            cells.append(
+                f'<span class="gs-cell" title="{note}"><b class="gs-num">'
+                f'₪{val:.2f}</b><span class="gs-lab">{arl if ar else en}</span></span>')
     kick = "فلسطين بالأرقام" if ar else "Palestine by the Numbers"
     more = "السجل الكامل ←" if ar else "Full ledger →"
     label = ("فلسطين بالأرقام — أبرز المؤشرات" if ar
