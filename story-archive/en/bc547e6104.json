@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/news/israeli-settler-who-took-part-brutal-assault-Palestinian-village-released-house-arrest",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://mondoweiss.net/2026/08/is-this-how-our-story-ends-palestinian-refugees-live-in-fear-as-israel-takes-aim-at-west-bank-camps",
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "bc547e6104",
- "score": 83.86,
+ "score": 83.83,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
