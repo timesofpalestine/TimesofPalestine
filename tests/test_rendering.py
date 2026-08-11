@@ -613,6 +613,50 @@ if __name__ == "__main__":
     unittest.main()
 
 
+class MarketWatchTests(unittest.TestCase):
+    """Owner directive 2026-08-11: Al-Quds and TA-125 in the strip, fail-open."""
+
+    def test_market_figures_fail_open_without_network(self):
+        import gaza_panel
+        old = dict(gaza_panel._MARKETS_CACHE)
+        gaza_panel._MARKETS_CACHE.clear()
+        gaza_panel._MARKETS_CACHE["done"] = False
+        try:
+            out = gaza_panel.market_figures()  # no network in tests
+            self.assertNotIn("crash", out)  # returns, never raises
+        finally:
+            gaza_panel._MARKETS_CACHE.clear()
+            gaza_panel._MARKETS_CACHE.update(old)
+
+    def test_strip_renders_market_cells_when_figures_exist(self):
+        import gaza_panel
+        old_mk = dict(gaza_panel._MARKETS_CACHE)
+        old_rt = dict(gaza_panel._RATES_CACHE)
+        gaza_panel._MARKETS_CACHE.clear()
+        gaza_panel._MARKETS_CACHE.update(
+            {"done": True, "alquds": {"level": 641.3},
+             "ta125": {"level": 2104.0, "pct": -0.42}})
+        gaza_panel._RATES_CACHE.clear()
+        gaza_panel._RATES_CACHE.update(
+            {"usd": 3.41, "eur": 3.96, "jod": 4.81, "date": "2026-08-11"})
+        try:
+            with mock.patch.object(gaza_panel, "live_figures",
+                                   return_value=({"killed": 60000}, "", {}, "")), \
+                 mock.patch.object(gaza_panel, "prisoner_figures",
+                                   return_value=({"pr_total": 9600}, "")):
+                html = gaza_panel.strip("en")
+                self.assertIn("Al-Quds index", html)
+                self.assertIn("TA-125", html)
+                self.assertIn("▼0.4%", html)
+                self.assertIn("₪3.41", html)
+                html_ar = gaza_panel.strip("ar")
+                self.assertIn("مؤشر القدس", html_ar)
+                self.assertIn("تل أبيب 125", html_ar)
+        finally:
+            gaza_panel._MARKETS_CACHE.clear(); gaza_panel._MARKETS_CACHE.update(old_mk)
+            gaza_panel._RATES_CACHE.clear(); gaza_panel._RATES_CACHE.update(old_rt)
+
+
 class PrisonersSectionTests(unittest.TestCase):
     """Owner directive 2026-08-11: the أسرى file is a standing section —
     prisoner items route in automatically; female prisoners stay Her Story."""

@@ -24,6 +24,7 @@ the build):
 """
 import json
 import os
+import re
 import urllib.request
 from datetime import datetime, timezone
 
@@ -674,6 +675,46 @@ def shekel_rates():
     return _RATES_CACHE
 
 
+_MARKETS_CACHE = {"done": False}
+
+
+def market_figures():
+    """Market watch (owner directive 2026-08-11): the Al-Quds index from the
+    Palestine Exchange and TA-125 from Tel Aviv, for the strip and for the
+    economy desk's same-day coverage of significant moves. TA-125 reads the
+    keyless Yahoo Finance chart API; Al-Quds reads the Palestine Exchange's
+    own page with a tolerant pattern (the exchange publishes no API).
+    Fail-open per index: whatever cannot be fetched is simply omitted."""
+    if _MARKETS_CACHE["done"]:
+        return _MARKETS_CACHE
+    _MARKETS_CACHE["done"] = True
+    try:  # TA-125 — level and day change from the last two closes
+        req = urllib.request.Request(
+            "https://query1.finance.yahoo.com/v8/finance/chart/%5ETA125.TA"
+            "?range=5d&interval=1d",
+            headers={"User-Agent": "Mozilla/5.0 (TimesofPalestine newsroom)"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            chart = json.loads(r.read().decode("utf-8"))["chart"]["result"][0]
+        closes = [c for c in chart["indicators"]["quote"][0]["close"] if c]
+        if len(closes) >= 2:
+            _MARKETS_CACHE["ta125"] = {
+                "level": closes[-1],
+                "pct": (closes[-1] - closes[-2]) / closes[-2] * 100}
+    except Exception as e:  # noqa: BLE001
+        print(f"  → TA-125 unavailable ({type(e).__name__}) — strip omits it")
+    try:  # Al-Quds index — first decimal number near the index's name
+        req = urllib.request.Request(
+            "https://www.pex.ps/", headers={"User-Agent": "Mozilla/5.0 (TimesofPalestine newsroom)"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            html = r.read().decode("utf-8", errors="replace")
+        m = re.search(r"(?:Al[- ]Quds|القدس)(?:(?!\d)[\s\S]){0,240}?(\d{3,4}\.\d{1,2})", html)
+        if m:
+            _MARKETS_CACHE["alquds"] = {"level": float(m.group(1))}
+    except Exception as e:  # noqa: BLE001
+        print(f"  → Al-Quds index unavailable ({type(e).__name__}) — strip omits it")
+    return _MARKETS_CACHE
+
+
 def strip(lang):
     if os.environ.get("TOP_OFFLINE") == "1":
         return ""
@@ -709,6 +750,24 @@ def strip(lang):
             cells.append(
                 f'<span class="gs-cell" title="{note}"><b class="gs-num">'
                 f'₪{val:.2f}</b><span class="gs-lab">{arl if ar else en}</span></span>')
+    # Market watch (owner directive 2026-08-11): the Al-Quds index and TA-125
+    # ride the strip so readers see both markets at a glance; the economy
+    # desk covers significant moves same-day with the exchange attributed.
+    mkt = market_figures()
+    if mkt.get("alquds"):
+        cells.append(
+            '<span class="gs-cell" title="'
+            + ("مؤشر القدس — بورصة فلسطين" if ar else "Al-Quds index — Palestine Exchange")
+            + f'"><b class="gs-num">{mkt["alquds"]["level"]:,.1f}</b>'
+            f'<span class="gs-lab">{"مؤشر القدس" if ar else "Al-Quds index"}</span></span>')
+    if mkt.get("ta125"):
+        t = mkt["ta125"]
+        arrow = "▲" if t.get("pct", 0) >= 0 else "▼"
+        cells.append(
+            '<span class="gs-cell" title="'
+            + ("تل أبيب 125 — بورصة تل أبيب" if ar else "TA-125 — Tel Aviv Stock Exchange")
+            + f'"><b class="gs-num">{t["level"]:,.0f} {arrow}{abs(t.get("pct", 0)):.1f}%</b>'
+            f'<span class="gs-lab">{"تل أبيب 125" if ar else "TA-125"}</span></span>')
     kick = "فلسطين بالأرقام" if ar else "Palestine by the Numbers"
     more = "السجل الكامل ←" if ar else "Full ledger →"
     label = ("فلسطين بالأرقام — أبرز المؤشرات" if ar
