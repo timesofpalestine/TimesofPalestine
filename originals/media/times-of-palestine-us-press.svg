@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t">
+  <title id="t">Times of Palestine — US Press Review — مراجعة الصحافة الأميركية</title>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/></linearGradient>
+  <style>.serif{font-family:"Source Serif 4",Georgia,serif}.arabic{font-family:Cairo,Arial,sans-serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}</style></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M0 0 L560 450 L0 900 Z" fill="#8a1f2d" opacity=".92"/>
+  <path d="M0 120 L410 450 L0 780 Z" fill="#111214"/>
+  <path d="M0 240 L265 450 L0 660 Z" fill="#3d4f6b" opacity=".9"/>
+  <!-- stacked newspaper pages motif, slate accents for the American desk -->
+  <g transform="translate(1120,150)" opacity=".85">
+    <rect x="26" y="26" width="330" height="430" rx="6" fill="#1d1e21" stroke="#3a3b3f" stroke-width="3"/>
+    <rect x="13" y="13" width="330" height="430" rx="6" fill="#232427" stroke="#3a3b3f" stroke-width="3"/>
+    <rect x="0" y="0" width="330" height="430" rx="6" fill="#2a2b2f" stroke="#c7a86b" stroke-width="3"/>
+    <rect x="28" y="34" width="274" height="16" fill="#c7a86b"/>
+    <rect x="28" y="72" width="274" height="8" fill="#55565a"/>
+    <rect x="28" y="92" width="274" height="8" fill="#55565a"/>
+    <rect x="28" y="112" width="196" height="8" fill="#55565a"/>
+    <rect x="28" y="146" width="128" height="96" fill="#3d4f6b" opacity=".85"/>
+    <rect x="172" y="146" width="130" height="8" fill="#55565a"/>
+    <rect x="172" y="166" width="130" height="8" fill="#55565a"/>
+    <rect x="172" y="186" width="130" height="8" fill="#55565a"/>
+    <rect x="172" y="206" width="96" height="8" fill="#55565a"/>
+    <rect x="28" y="268" width="274" height="8" fill="#55565a"/>
+    <rect x="28" y="288" width="274" height="8" fill="#55565a"/>
+    <rect x="28" y="308" width="274" height="8" fill="#55565a"/>
+    <rect x="28" y="328" width="204" height="8" fill="#55565a"/>
+    <rect x="28" y="362" width="274" height="10" fill="#8a1f2d" opacity=".9"/>
+    <rect x="28" y="386" width="220" height="8" fill="#55565a"/>
+  </g>
+  <rect x="640" y="404" width="120" height="7" fill="#c7a86b"/>
+  <text x="640" y="330" class="serif" fill="#f2eee8" font-size="80" font-weight="800">US Press</text>
+  <text x="640" y="386" class="serif" fill="#f2eee8" font-size="52" font-weight="700">what Washington is reading</text>
+  <text x="640" y="520" class="arabic" fill="#c7a86b" font-size="60" font-weight="700">الصحافة الأميركية — ماذا تقرأ واشنطن</text>
+  <text x="640" y="600" class="sans" fill="#aaa9a5" font-size="26" letter-spacing="4">TIMES OF PALESTINE</text>
+</svg>

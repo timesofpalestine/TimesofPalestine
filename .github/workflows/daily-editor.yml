@@ -79,6 +79,26 @@ jobs:
             items; never zero unless the sweep genuinely finds nothing
             relevant, and then say so in the cadence note.
 
+            Then run the US PRESS REVIEW (owner directive 2026-08-11, daily,
+            non-optional, beside the Israeli sweep): follow
+            .claude/skills/us-press-review/SKILL.md to the letter — sweep
+            the American papers and Washington's think tanks (NYT,
+            Washington Post, WSJ, Politico, The Hill, Axios, Foreign
+            Policy, The Atlantic, Foreign Affairs; Brookings, Carnegie,
+            CSIS, WINEP, Quincy, CFR, FDD, MEI, the Arab Center DC) via
+            `python3 israeli_press_fetch.py --feeds
+            editorial/us-press-feeds.json --hours 36` plus live web search
+            and fetch, select what matters to Palestinian readers by the
+            skill's relevance test, and publish each selected piece as its
+            own bilingual original in the uspress section plus the
+            "what Washington is reading" roundup — outlet and author
+            attributed inline, opinion reported as its author's argument,
+            think tanks labelled with their lean, Arabic composed fresh.
+            On a normal day this is 2-6 items; never zero unless the sweep
+            genuinely finds nothing relevant, and then say so in the
+            cadence note. The Washington Brief franchise is unchanged and
+            separate.
+
             Then choose THREE to FIVE concrete improvements for today, spanning
             at least two of these fronts, and implement them:
             1. EDITORIAL — a fresh researched bilingual original (live web

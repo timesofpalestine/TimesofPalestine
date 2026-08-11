@@ -356,6 +356,25 @@ credited — the bulletin's own translation text is never republished.
 Launch batch: twelve items dated 2026-08-06. Claude's beat; other agents
 route Israeli-press story ideas via issue #6.
 
+## US press review (owner directive 2026-08-11)
+
+Standing daily desk, sibling to the Israeli press review: Times of
+Palestine reads the American papers (NYT, Washington Post, WSJ, Politico,
+The Hill, Axios, Foreign Policy, The Atlantic, Foreign Affairs) and
+Washington's think tanks (Brookings, Carnegie, CSIS, WINEP, Quincy, CFR,
+FDD, MEI, the Arab Center DC) and publishes what matters to Palestinian
+readers — each source piece as its own bilingual original, plus a
+"what Washington is reading" roundup, all in the dedicated section
+`uspress` ("US Press" / «الصحافة الأميركية»). The workflow, source list
+(`editorial/us-press-feeds.json`), selection test and binding rules live
+in `.claude/skills/us-press-review/SKILL.md`; the daily editor cycle runs
+the sweep each morning beside the Israeli one. Opinion is always
+attributed to its author; think tanks are labelled with their
+institutional lean; the Washington Brief remains a separate synthesized
+franchise, the Joe Kent watch keeps its own discipline, and
+crypto/financial-freedom stays ChatGPT's. Claude's beat; other agents
+route US-press story ideas via issue #6.
+
 ## Joe Kent watch (owner directive 2026-08-07)
 
 Standing beat: track Joe Kent (@joekent16jan19) — the former National
@@ -451,7 +470,7 @@ it to Telegram. No human machine involved. The contract:
    first-class editions. Header, then `---`, then body:
    `title:` / `category:` (one of: gaza westbank politics economy
    accountability research bitcoin diaspora arts sports social opinion news
-   humans health archive arabaid women israelipress) / `date:` (ISO 8601 UTC, never future) /
+   humans health archive arabaid women israelipress uspress) / `date:` (ISO 8601 UTC, never future) /
    optional `maxAgeHours:`.
    **Headline rule (owner decision 2026-07-30, validator-enforced):** every
    title is ONE short complete sentence — aim for 9-10 words, hard cap 12,
