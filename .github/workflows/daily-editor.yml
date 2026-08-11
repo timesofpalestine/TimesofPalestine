@@ -55,6 +55,19 @@ jobs:
             and a local `python3 build.py` run to see rendered output and
             warnings.
 
+            Then run the SECTION FRESHNESS CHECK (owner order 2026-08-11:
+            every section of the paper, in BOTH editions, updates at least
+            daily): run `python3 section_freshness.py` and read its table
+            (the build also writes dist/section-freshness.json and prints
+            "⚠ stale section" lines). EVERY section it marks STALE is a
+            same-day assignment ranked above the optional improvements:
+            file a fresh bilingual item for that section — from the wire,
+            from live research, or by writing the stalest section's queued
+            topic in topics.json — until no section is stale. A section
+            with no coverable news gets a researched evergreen-with-a-news-
+            peg, not silence. Note the before/after freshness state in the
+            PR body.
+
             Then check the EDITORIAL CALENDAR (owner-approved 2026-08-06):
             read editorial/calendar-2026.md; any assignment whose window
             includes today and is not yet marked ✅ is a same-day assignment —

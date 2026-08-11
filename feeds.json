@@ -435,6 +435,58 @@
       "url": "https://www.theguardian.com/world/palestinian-territories/rss",
       "site": "https://www.theguardian.com",
       "cap": 5
+    },
+    {
+      "id": "gnews-sports",
+      "name": "Palestine Sports Wire",
+      "type": "gnews",
+      "query": "Palestinian (football OR \"national team\" OR athlete OR olympic OR club OR championship OR marathon OR boxing)",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "category": "sports",
+      "site": "https://news.google.com",
+      "maxAgeHours": 168,
+      "cap": 4
+    },
+    {
+      "id": "gnews-economy",
+      "name": "Palestine Economy Wire",
+      "type": "gnews",
+      "query": "\"Palestinian economy\" OR \"Palestine Monetary Authority\" OR \"clearance revenues\" OR (\"West Bank\" OR Gaza) (unemployment OR banks OR shekel OR trade OR exports OR reconstruction funding)",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "category": "economy",
+      "site": "https://news.google.com",
+      "maxAgeHours": 168,
+      "cap": 4
+    },
+    {
+      "id": "gnews-women",
+      "name": "Her Story Wire",
+      "type": "gnews",
+      "query": "Palestinian (women OR woman OR mother OR midwife OR widow OR \"women prisoners\" OR \"female detainees\") (Gaza OR \"West Bank\" OR Jerusalem OR detention OR birth)",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "category": "women",
+      "site": "https://news.google.com",
+      "maxAgeHours": 168,
+      "cap": 4
+    },
+    {
+      "id": "gnews-prisoners",
+      "name": "Palestine Prisoners Wire",
+      "type": "gnews",
+      "query": "Palestinian (prisoners OR prisoner OR detainees OR \"administrative detention\" OR \"hunger strike\" OR \"prisoner exchange\" OR \"Prisoner's Club\")",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "category": "prisoners",
+      "site": "https://news.google.com",
+      "maxAgeHours": 168,
+      "cap": 4
     }
   ],
   "ar": [
@@ -657,6 +709,45 @@
       "site": "https://news.google.com",
       "maxAgeHours": 168,
       "cap": 5
+    },
+    {
+      "id": "radar-sports-ar",
+      "name": "راصد TOP",
+      "type": "gnews",
+      "query": "(فلسطين OR غزة OR الضفة OR القدس) (\"كرة القدم\" OR المنتخب OR رياضة OR بطولة OR أولمبياد OR \"الدوري الفلسطيني\" OR رياضيون)",
+      "hl": "ar",
+      "gl": "PS",
+      "ceid": "PS:ar",
+      "category": "sports",
+      "site": "https://news.google.com",
+      "maxAgeHours": 168,
+      "cap": 4
+    },
+    {
+      "id": "radar-economy-ar",
+      "name": "راصد TOP",
+      "type": "gnews",
+      "query": "(\"الاقتصاد الفلسطيني\" OR \"سلطة النقد الفلسطينية\" OR \"أموال المقاصة\" OR \"إعمار غزة\" OR (فلسطين (البطالة OR البنوك OR التجارة OR الشيكل)))",
+      "hl": "ar",
+      "gl": "PS",
+      "ceid": "PS:ar",
+      "category": "economy",
+      "site": "https://news.google.com",
+      "maxAgeHours": 168,
+      "cap": 4
+    },
+    {
+      "id": "radar-prisoners-ar",
+      "name": "راصد TOP",
+      "type": "gnews",
+      "query": "(\"نادي الأسير\" OR \"هيئة شؤون الأسرى\" OR \"الاعتقال الإداري\" OR \"الأسرى الفلسطينيون\" OR \"إضراب عن الطعام\" OR \"سجون الاحتلال\")",
+      "hl": "ar",
+      "gl": "PS",
+      "ceid": "PS:ar",
+      "category": "prisoners",
+      "site": "https://news.google.com",
+      "maxAgeHours": 168,
+      "cap": 4
     }
   ]
 }

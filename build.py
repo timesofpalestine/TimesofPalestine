@@ -5617,6 +5617,21 @@ def main():
         json.dumps(health, ensure_ascii=False, indent=2), encoding="utf-8")
 
     save_remote_image_cache()   # image overrides and covers verify late in the run
+    # Section-freshness ledger (owner order 2026-08-11): every section, both
+    # editions, updates at least daily. The ledger is written for the desks
+    # and the daily editor, and stale sections are announced loudly on every
+    # build. Fail-open — the monitor never stops the paper.
+    try:
+        _sf = __import__("section_freshness")
+        _fresh = _sf.report()
+        (dist / "section-freshness.json").write_text(
+            json.dumps(_fresh, ensure_ascii=False, indent=2), encoding="utf-8")
+        for s in _fresh["stale"]:
+            age = "no story yet" if s["ageHours"] is None else f"newest {s['ageHours']:.0f}h old"
+            print(f"  ⚠ stale section {s['lang']}/{s['cat']}: {age} "
+                  f"(target {s['staleAfterHours']}h) — assign coverage")
+    except Exception as e:
+        print(f"  ⚠ section freshness ledger failed open: {type(e).__name__}: {e}")
     print(f"\nBuilt dist/ — EN {len(en_items)} stories, AR {len(ar_items)} stories.")
     if not en_items and not ar_items:
         print("No items fetched from any feed — failing so the last good deploy stays live.")

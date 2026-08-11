@@ -24,6 +24,16 @@ everything it builds:
   sections — never at the expense of the live top of the page.
 - When adding any surface (section, page, widget), ask: what makes this feel
   alive an hour from now? If nothing does, redesign it.
+- **Every section, both editions, updates at least daily (owner order
+  2026-08-11).** `section_freshness.py` is the measure: the build writes
+  `dist/section-freshness.json` and announces stale sections; the
+  investigations desk (`originals_gen._pick_topic`) targets the stalest
+  section's queued topic first; dedicated category-pinned wire feeds keep
+  sports/economy/women/prisoners supplied; and the daily editor treats every
+  STALE line as a same-day assignment. Thresholds are tuned in
+  `section_freshness.py` (archive is exempt — owner-supplied only). No agent
+  removes these hooks; a starving section means "add feeds and topics",
+  never "hide the section".
 
 ## Owner decisions currently in force (2026-07-29)
 
