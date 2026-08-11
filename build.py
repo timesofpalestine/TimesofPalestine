@@ -3418,6 +3418,13 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .story h2.sub .anchor{margin-inline-start:.45rem;color:var(--muted);font-size:.8rem;opacity:0;transition:opacity var(--tr)}
 .story h2.sub:hover .anchor,.story h2.sub:focus-within .anchor{opacity:1}
 .story .summary{margin-top:1.1rem;font-family:var(--serif);font-size:1.14rem;line-height:1.82;color:#26262e;max-width:42.5rem}
+/* Story polish (owner directive 2026-08-11): progress bar, drop cap, end slug */
+.readbar{position:fixed;top:0;inset-inline:0;height:3px;z-index:120;pointer-events:none}
+.readbar span{display:block;height:100%;width:0;margin-inline-end:auto;background:var(--red)}
+.story .opener::first-letter{font-family:var(--serif);font-weight:900;font-size:3.2em;line-height:.82;float:inline-start;padding:.06em .12em 0 0;color:var(--red)}
+[lang=ar] .story .opener::first-letter{font-size:inherit;font-weight:inherit;font-family:inherit;line-height:inherit;float:none;padding:0;color:inherit}
+.story .closer::after{content:"■";color:var(--red);font-size:.55em;margin-inline-start:.45rem;vertical-align:.15em}
+@media(prefers-reduced-motion:reduce){.readbar{display:none}}
 .story .summary+.summary{margin-top:.95rem}
 [lang=ar] .story .summary{line-height:2.05}
 .story .summary a{text-decoration:underline;text-underline-offset:2px}
@@ -3773,6 +3780,24 @@ LOCK_SVG = ('<svg class="lock" width="54" height="54" viewBox="0 0 24 24" fill="
 SIGNAL_GLYPH = ('<svg class="signal-glyph" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true">'
                 '<path fill="#3A76F0" d="M8 1.1a6.9 6.9 0 1 1-3.32 12.95l-3.02.86a.4.4 0 0 1-.5-.5l.86-2.98A6.9 6.9 0 0 1 8 1.1z"/>'
                 '</svg>')
+
+# Story-page polish (owner directive 2026-08-11: keep making the site
+# visually better): a thin red reading-progress bar, a drop cap opening the
+# English body (Arabic typography carries no drop-cap tradition — CSS
+# disables it under [lang=ar]), and the classic end-slug ■ closing every
+# story. The opener/closer paragraphs are tagged here because briefs
+# (p.summary) and originals (longform .lf) shape their bodies differently.
+# Pure enhancement: without JS the story reads exactly as before.
+STORY_POLISH_JS = (
+    '(function(){var a=document.querySelector("article.story");if(!a)return;'
+    'var ps=a.querySelectorAll("p.summary,.lf p");'
+    'if(ps.length){ps[0].classList.add("opener");ps[ps.length-1].classList.add("closer")}'
+    'var b=document.createElement("div");b.className="readbar";'
+    'var s=document.createElement("span");b.appendChild(s);document.body.appendChild(b);'
+    'function u(){var d=document.documentElement,m=d.scrollHeight-innerHeight;'
+    's.style.width=(m>0?Math.min(100,scrollY/m*100):0)+"%"}'
+    'addEventListener("scroll",u,{passive:true});'
+    'addEventListener("resize",u,{passive:true});u()})();')
 
 # ---------- components ----------
 
@@ -5093,6 +5118,7 @@ def render_story(it, lang, related, rail, built_at):
     {summary}
     {cta}{corrections}{share_row}
   </article>
+  <script>{STORY_POLISH_JS}</script>
   {share_rail}
   <section class="keep"><div class="wrap">
     <div class="sec-head focus"><h2>{t['keep_reading']}</h2><span class="rule"></span></div>
