@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Palestinian election registration opens in the West Bank, with no published mechanism for Gaza or East Jerusalem</title>
+<desc id="dsc">Dark editorial graphic. Three panels compare the status of voter registration: the West Bank, where centres open 15 to 19 August and online registration for new voters aged 17 and above runs 28 July to 19 August; Gaza, where no mechanism has been published and the spokesman Farid Taamallah says voting would rest on the updated civil registry; and East Jerusalem, where no mechanism has been published. A badge marks election day, Saturday 28 November 2026. A lower band summarises Decree-Law No. 10 of 2026, gazetted 18 June: Legislative Council seats rise from 132 to 200, candidacy age 23, at least one woman among every three consecutive names, and a minimum of 20 candidates per list.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- kicker -->
+<text x="90" y="72" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="4" fill="#c7a86b">PALESTINE · LEGISLATIVE ELECTIONS</text>
+
+<!-- headline -->
+<text x="90" y="126" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Registration opens — with no rules yet</text>
+<text x="90" y="176" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">for <tspan fill="#C8102E">Gaza</tspan> or <tspan fill="#C8102E">East Jerusalem</tspan></text>
+<text x="90" y="214" font-family="Cairo,Arial,sans-serif" font-size="25" fill="#aaa9a5">لجنة الانتخابات تفتح التسجيل دون آليات مُعلَنة لغزة والقدس</text>
+
+<!-- election day badge -->
+<rect x="1156" y="56" width="384" height="132" rx="8" fill="#17181b" stroke="#c7a86b" stroke-width="2"/>
+<text x="1348" y="92" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" letter-spacing="3.5" fill="#c7a86b">ELECTION DAY · يوم الاقتراع</text>
+<text x="1348" y="138" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="38" fill="#f2eee8">28 November 2026</text>
+<text x="1348" y="170" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">السبت 28 تشرين الثاني 2026</text>
+
+<!-- ============ CARD 1 : WEST BANK ============ -->
+<rect x="90" y="250" width="460" height="330" rx="6" fill="#17181b" stroke="#2a2c30" stroke-width="1.5"/>
+<rect x="90" y="250" width="460" height="7" rx="3" fill="#59a97d"/>
+<text x="118" y="308" font-family="'Libre Franklin',Arial,sans-serif" font-size="29" fill="#f2eee8">West Bank</text>
+<text x="522" y="308" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="25" fill="#59a97d">الضفة الغربية</text>
+<rect x="118" y="328" width="212" height="32" rx="16" fill="#286344"/>
+<text x="224" y="350" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="1.6" fill="#f2eee8">CENTRES OPEN</text>
+<text x="118" y="404" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#f2eee8">Centres open in cities, villages and</text>
+<text x="118" y="429" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#f2eee8">refugee camps, <tspan fill="#c7a86b">15 – 19 August</tspan>.</text>
+<text x="118" y="466" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#aaa9a5">Online registration for new voters</text>
+<text x="118" y="491" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#aaa9a5">aged 17 and above opened 28 July</text>
+<text x="118" y="516" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#aaa9a5">and closes 19 August.</text>
+<text x="522" y="553" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">مراكز التسجيل مفتوحة 15 – 19 آب</text>
+
+<!-- ============ CARD 2 : GAZA ============ -->
+<rect x="585" y="250" width="460" height="330" rx="6" fill="#17181b" stroke="#2a2c30" stroke-width="1.5"/>
+<rect x="585" y="250" width="460" height="7" rx="3" fill="#8a1f2d"/>
+<text x="613" y="308" font-family="'Libre Franklin',Arial,sans-serif" font-size="29" fill="#f2eee8">Gaza Strip</text>
+<text x="1017" y="308" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="25" fill="#C8102E">قطاع غزة</text>
+<rect x="613" y="328" width="262" height="32" rx="16" fill="none" stroke="#8a1f2d" stroke-width="2"/>
+<text x="744" y="350" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="1.6" fill="#C8102E">NO MECHANISM PUBLISHED</text>
+<text x="613" y="404" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#f2eee8">Right to vote and to stand preserved;</text>
+<text x="613" y="429" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#f2eee8">no entry in the voters' roll required.</text>
+<text x="613" y="466" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#aaa9a5">Spokesman Farid Taamallah: voting</text>
+<text x="613" y="491" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#aaa9a5">on the updated civil registry, aged 18</text>
+<text x="613" y="516" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#aaa9a5">and listed. Displaced Gazans in the</text>
+<text x="613" y="541" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#aaa9a5">West Bank on residence documents.</text>
+<text x="1017" y="566" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">لا آلية مُعلَنة حتى الآن</text>
+
+<!-- ============ CARD 3 : EAST JERUSALEM ============ -->
+<rect x="1080" y="250" width="460" height="330" rx="6" fill="#17181b" stroke="#2a2c30" stroke-width="1.5"/>
+<rect x="1080" y="250" width="460" height="7" rx="3" fill="#8a1f2d"/>
+<text x="1108" y="308" font-family="'Libre Franklin',Arial,sans-serif" font-size="29" fill="#f2eee8">East Jerusalem</text>
+<text x="1512" y="308" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="25" fill="#C8102E">القدس الشرقية</text>
+<rect x="1108" y="328" width="262" height="32" rx="16" fill="none" stroke="#8a1f2d" stroke-width="2"/>
+<text x="1239" y="350" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="1.6" fill="#C8102E">NO MECHANISM PUBLISHED</text>
+<text x="1108" y="404" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#f2eee8">Right to vote and to stand preserved;</text>
+<text x="1108" y="429" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#f2eee8">procedures to be announced later.</text>
+<text x="1108" y="466" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#aaa9a5">Time reported in July that voting in</text>
+<text x="1108" y="491" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#aaa9a5">occupied East Jerusalem would</text>
+<text x="1108" y="516" font-family="'Libre Franklin',Arial,sans-serif" font-size="16.5" fill="#aaa9a5">require Israeli permission.</text>
+<text x="1512" y="553" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">لا آلية مُعلَنة حتى الآن</text>
+
+<!-- ============ LOWER BAND ============ -->
+<line x1="90" y1="618" x2="1540" y2="618" stroke="#2a2c30" stroke-width="2"/>
+<text x="90" y="658" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="3" fill="#c7a86b">DECREE-LAW No. 10 OF 2026, GAZETTED 18 JUNE — WHAT CHANGED</text>
+<text x="1540" y="658" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#c7a86b">مرسوم بقانون رقم 10 لسنة 2026</text>
+
+<rect x="90" y="676" width="340" height="140" rx="5" fill="#151619" stroke="#2a2c30"/>
+<text x="112" y="742" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#aaa9a5">132<tspan fill="#c7a86b" font-size="34"> → </tspan><tspan fill="#59a97d">200</tspan></text>
+<text x="112" y="774" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">Legislative Council seats</text>
+<text x="112" y="800" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">مقاعد المجلس التشريعي</text>
+
+<rect x="460" y="676" width="340" height="140" rx="5" fill="#151619" stroke="#2a2c30"/>
+<text x="482" y="742" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">23</text>
+<text x="482" y="774" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">Candidacy age, lowered</text>
+<text x="482" y="800" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">خفض سن الترشح</text>
+
+<rect x="830" y="676" width="340" height="140" rx="5" fill="#151619" stroke="#2a2c30"/>
+<text x="852" y="742" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">1 in 3</text>
+<text x="852" y="774" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">At least one woman in every</text>
+<text x="852" y="793" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">three consecutive names</text>
+<text x="1148" y="742" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">امرأة بين كل ثلاثة أسماء</text>
+
+<rect x="1200" y="676" width="340" height="140" rx="5" fill="#151619" stroke="#2a2c30"/>
+<text x="1222" y="742" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">20</text>
+<text x="1222" y="774" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">Minimum candidates per list</text>
+<text x="1222" y="800" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">حد أدنى للمرشحين في القائمة</text>
+
+<!-- footer -->
+<text x="90" y="862" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">Sources: Central Elections Commission; presidential decree of 9 July; Decree-Law No. 10 of 2026. Candidates must also commit to the PLO as sole legitimate representative.</text>
+<text x="1540" y="862" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5">تايمز أوف فلسطين</text>
+</svg>

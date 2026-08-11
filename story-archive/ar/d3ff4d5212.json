@@ -9,6 +9,12 @@
    "verified": false
   },
   {
+   "article": "https://t.me/Palinfo/314509",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  },
+  {
    "article": "https://www.pbc.ps/987-36",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "d3ff4d5212",
- "score": 114.98,
+ "score": 114.02,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

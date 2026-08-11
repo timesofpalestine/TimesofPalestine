@@ -6,19 +6,13 @@
    "article": "original:dardik-westbank-removal-order-2026-08-10.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://imemc.org/article/army-intensifies-west-bank-invasions-abductions",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://mondoweiss.net/2026/08/is-this-how-our-story-ends-palestinian-refugees-live-in-fear-as-israel-takes-aim-at-west-bank-camps",
-   "name": "Mondoweiss",
-   "url": "https://mondoweiss.net/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://t.me/maannews/36167",
@@ -42,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "bc547e6104",
- "score": 85.22,
+ "score": 84.25999999999999,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

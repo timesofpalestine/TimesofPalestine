@@ -20,7 +20,16 @@ land in a specific window.
   - ✅ 1 of 4 — `west-bank-league-returns-2026.*` (2026-08-07): the PFA
     restarts league play in September after three suspended seasons, the
     Thousand Martyrs Cup format, OCHA closure numbers, the national-team
-    pipeline. Still owed by Sep 30: three more, and a September follow-up
+    pipeline.
+  - ✅ 2 of 4 — `gaza-women-amputee-football-2026.*` (2026-08-11): the
+    Strip's first women's amputee football team — eleven players on the
+    artificial turf at Deir al-Balah, nine outfield on crutches and two
+    goalkeepers — written in the celebratory register the features order
+    requires. Carries the PFA's counts (265 facilities damaged or
+    destroyed, 1,007 rising to 1,009 of the sporting community killed),
+    the WHO/health-ministry amputation estimate, and FIFA's $67.5m
+    February pledge stated precisely as a pledge with no published
+    timetable. Still owed by Sep 30: two more, and a September follow-up
     once the cup draw and fixture list are published.
 - **Aug 25 – Sep 1 — Third-lost-school-year package.** The queued
   `education-under-fire` topic should have published by ~Aug 13 via the
@@ -109,7 +118,7 @@ land in a specific window.
   to a documented `noFeed` list in `editorial/us-press-feeds.json`, swept
   by direct fetch instead. The wire now runs with zero dead-feed warnings;
   re-test the two occasionally and move them back when their feeds return.
-- **Paragraph pacing (open, 150 files left).** The build flags originals
+- **Paragraph pacing (open, 136 files left).** The build flags originals
   carrying paragraphs over ~70 words. The renderer already splits them at
   sentence boundaries for the reader, so this is a copy-desk backlog, not a
   reader-facing fault — work a batch down per cycle, worst first.
@@ -120,7 +129,17 @@ land in a specific window.
   137 paragraphs (the business-leaders and de-development reports, both
   Washington Briefs of 2026-07-30, the PA budget pair, the donor-aid Arabic
   edition, the who-profits report, and the Ammous, Elyanna, Sama Abdulhadi
-  and STL-dabke features). 158 flagged files → 150.
+  and STL-dabke features). 158 flagged files → 150. Worked again in the
+  third cycle of 2026-08-11: 14 files, 105 paragraphs (the STL-dabke
+  Arabic edition, both palestinian-football editions, the top-companies
+  and PA-security-chiefs reports, the population-transfer file, the
+  dialysis Arabic edition, both Dahlan-backchannel editions, the Yasser
+  Abbas file, the annexation-machinery report, the water-allocation and
+  Tamim al-Barghouti pieces, and the PA-absence report). Measured against
+  `main`: 152 flagged files → 145. Note the tool only splits at sentence
+  boundaries, so a file whose over-length paragraph is a single long
+  sentence stays flagged — seven of the fourteen did. Those need a copy
+  edit (split the sentence), not another tool pass.
 
 ## Blocked on the owner
 

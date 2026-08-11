@@ -1,0 +1,32 @@
+{
+ "brief": "A United Nations expert has characterized Israeli settler violence as \"clear state terrorism,\" Al Jazeera English reported. The designation reflects escalating concerns about attacks by settlers against Palestinians in the occupied West Bank, often occurring with limited accountability or intervention from Israeli security forces.\n\nThe expert's statement comes as settler assaults on Palestinian communities, property, and infrastructure across occupied territories have intensified. The UN expert also criticized the Israeli government's handling of settler violence and its alleged failure to adequately prosecute perpetrators.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/11/israeli-settler-violence-is-clear-state?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-11T09:30:17+00:00",
+ "dek": "Israeli settler violence is ‘clear state terrorism’.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/ofer-horizontal-thumb-1786440410.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/11/israeli-settler-violence-is-clear-state?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/11/israeli-settler-violence-is-clear-state?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ed18627d30",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN expert calls Israeli settler violence state terrorism"
+}
