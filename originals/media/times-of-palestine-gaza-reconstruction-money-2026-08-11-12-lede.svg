@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Donors bypass the World Bank fund for Gaza, which has received nothing</title>
+<desc id="desc">Diagram showing donors' $17 billion in pledges announced on 19 February flowing to a JPMorgan account set up by the Board of Peace, said to hold hundreds of millions of dollars, while the World Bank-administered Gaza Reconstruction and Development Fund has received zero dollars. A bar chart compares $71.4 billion in assessed recovery needs, $17 billion pledged and $0 deposited in the fund, alongside figures on rubble clearance and building damage.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 Z" fill="#c7a86b"/>
+</marker>
+<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 Z" fill="#8a1f2d"/>
+</marker>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="72" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#C8102E">GAZA RECONSTRUCTION FUND</text>
+<text x="1520" y="72" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#c7a86b">صندوق إعمار غزة</text>
+<text x="90" y="128" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">Donors bypass World Bank fund for Gaza — it has received nothing</text>
+<text x="90" y="170" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#aaa9a5">المانحون يتجاوزون صندوق البنك الدولي لغزة ولم يصله أي مبلغ</text>
+<line x1="90" y1="196" x2="1520" y2="196" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- LEFT PANEL : flow -->
+<text x="90" y="240" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3" fill="#59a97d">WHERE THE MONEY WENT</text>
+<text x="90" y="266" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">أين ذهبت الأموال</text>
+
+<rect x="90" y="300" width="222" height="116" rx="8" fill="#191a1d" stroke="#c7a86b" stroke-width="2"/>
+<text x="201" y="342" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#f2eee8">DONORS</text>
+<text x="201" y="370" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b">المانحون</text>
+<text x="201" y="396" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">$17bn pledged · 19 Feb</text>
+
+<path d="M312 340 C 380 340 380 300 430 300" fill="none" stroke="#c7a86b" stroke-width="3" marker-end="url(#ar)"/>
+<path d="M312 380 C 380 380 380 470 430 470" fill="none" stroke="#8a1f2d" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#arr)"/>
+
+<rect x="440" y="248" width="330" height="118" rx="8" fill="#16211b" stroke="#286344" stroke-width="2"/>
+<text x="462" y="282" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" fill="#f2eee8">Board of Peace’s own</text>
+<text x="462" y="306" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" fill="#f2eee8">JPMorgan account</text>
+<text x="462" y="332" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#59a97d">“hundreds of millions of dollars”</text>
+<text x="462" y="354" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">حساب مجلس السلام في جي بي مورغان</text>
+
+<rect x="440" y="412" width="330" height="118" rx="8" fill="#231416" stroke="#8a1f2d" stroke-width="2"/>
+<text x="462" y="446" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" fill="#f2eee8">World Bank-administered</text>
+<text x="462" y="470" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" fill="#f2eee8">Gaza Reconstruction Fund</text>
+<text x="462" y="496" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#C8102E">nothing received</text>
+<text x="462" y="518" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">صندوق البنك الدولي لإعمار غزة</text>
+
+<text x="90" y="578" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Confirmed movements: Morocco ~$20m to the High Representative’s office and</text>
+<text x="90" y="600" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">committee salaries · UAE $100m for police training, frozen in late May</text>
+
+<line x1="90" y1="628" x2="770" y2="628" stroke="#3a3b3f" stroke-width="2"/>
+<text x="90" y="742" font-family="'Source Serif 4',Georgia,serif" font-size="122" font-weight="700" fill="#f2eee8">$0</text>
+<text x="270" y="702" font-family="'Source Serif 4',Georgia,serif" font-size="26" font-style="italic" fill="#c7a86b">“Zero dollars have been</text>
+<text x="270" y="736" font-family="'Source Serif 4',Georgia,serif" font-size="26" font-style="italic" fill="#c7a86b">deposited.”</text>
+<text x="270" y="768" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">لم يُودَع أي دولار في الصندوق</text>
+
+<!-- RIGHT PANEL : bars -->
+<line x1="820" y1="220" x2="820" y2="790" stroke="#3a3b3f" stroke-width="2"/>
+<text x="860" y="240" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3" fill="#59a97d">THE GAP</text>
+<text x="860" y="266" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">الفجوة بين الاحتياجات والتعهدات</text>
+
+<text x="860" y="308" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Recovery &amp; reconstruction needs, 10 years (RDNA, 20 April)</text>
+<rect x="860" y="318" width="640" height="52" fill="#c7a86b"/>
+<text x="1484" y="353" text-anchor="end" font-family="'Source Serif 4',Georgia,serif" font-size="30" font-weight="700" fill="#1d1e21">$71.4bn</text>
+
+<text x="860" y="412" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Pledged by donors at the Board of Peace meeting, 19 February</text>
+<rect x="860" y="422" width="152" height="52" fill="#59a97d"/>
+<text x="1030" y="457" font-family="'Source Serif 4',Georgia,serif" font-size="30" font-weight="700" fill="#f2eee8">$17bn</text>
+
+<text x="860" y="516" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Deposited in the World Bank fund, as of 27 May</text>
+<rect x="860" y="526" width="640" height="52" fill="none" stroke="#8a1f2d" stroke-width="2" stroke-dasharray="7 8"/>
+<rect x="860" y="526" width="6" height="52" fill="#C8102E"/>
+<text x="886" y="561" font-family="'Source Serif 4',Georgia,serif" font-size="30" font-weight="700" fill="#C8102E">$0</text>
+
+<line x1="860" y1="614" x2="1500" y2="614" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="860" y="650" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" fill="#f2eee8">Rubble cleared: 310,000 of 68 million tonnes — under 0.5%</text>
+<rect x="860" y="662" width="380" height="16" fill="#2a2b2f"/>
+<rect x="860" y="662" width="4" height="16" fill="#c7a86b"/>
+<text x="1256" y="676" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">الركام المُزال</text>
+
+<text x="860" y="722" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" fill="#f2eee8">80% of buildings damaged or destroyed · more than 1 million</text>
+<text x="860" y="746" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" fill="#f2eee8">people with no permanent shelter · 70 flat-pack units installed</text>
+<text x="860" y="774" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">لا وجود لأي تعافٍ في غزة</text>
+
+<line x1="90" y1="822" x2="1520" y2="822" stroke="#3a3b3f" stroke-width="2"/>
+<text x="90" y="856" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">Sources: Financial Times, 27 May · Board of Peace report to the UN Security Council, S/2026/418, 22 May · World Bank–UN–EU Rapid Damage and Needs Assessment, 20 April · Al Jazeera citing UN, 2 July · OCHA, 20 February</text>
+<text x="1520" y="856" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" font-weight="700" fill="#c7a86b">TIMES OF PALESTINE</text>
+</svg>
