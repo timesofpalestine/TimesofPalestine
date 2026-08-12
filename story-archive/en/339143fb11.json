@@ -1,0 +1,32 @@
+{
+ "brief": "An analysis of 3,520 cases by the Palestinian digital rights group 7amleh and Utrecht University found systematic takedowns of Palestinian activist content on Meta platforms, according to Al Jazeera English. The report characterizes the pattern as \"platformicide,\" describing how Palestinian voices face disproportionate content moderation that silences political expression and documentation of conditions in occupied territories.\n\nThe study examined digital rights violations spanning Meta's Facebook and Instagram services. Researchers documented removals of posts, accounts, and material related to Palestinian activism, resistance documentation, and political speech, raising concerns about how the platforms' moderation policies affect Palestinian ability to communicate and organize online.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/12/platformicide-of-palestine-activists-struggle-to-be-heard-on-meta?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-12T20:15:38+00:00",
+ "dek": "Report by NGO 7amleh, Utrecht University analyses 3,520 cases of digital rights violations against Palestinians.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/d3417aa7-0d0e-4078-947c-69d9d14abd38-1786565589.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/12/platformicide-of-palestine-activists-struggle-to-be-heard-on-meta?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/12/platformicide-of-palestine-activists-struggle-to-be-heard-on-meta?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "339143fb11",
+ "score": 49.7,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "NGO documents Meta's removal of Palestinian content as 'platformicide'"
+}
