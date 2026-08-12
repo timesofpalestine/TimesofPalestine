@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The bill for Gaza: needed, pledged, moved, appropriated</title>
+  <desc id="desc">A bilingual comparison of the $70 billion the UN and World Bank estimate Gaza needs, the $17 billion pledged to the Board of Peace, the $1.25 billion the State Department transferred from other accounts, and the nothing Congress has appropriated — beside Gaza's rubble and shelter figures and the $6 billion in Palestinian clearance revenues Israel withholds.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7e1e2b"/>
+      <stop offset=".52" stop-color="#286344"/>
+      <stop offset="1" stop-color="#bd9854"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#d4b36e}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:17px}
+      .small{font-size:20px}
+      .body{font-size:23px}
+      .label{font-size:18px;font-weight:800;letter-spacing:1.2px}
+      .fig{font-size:31px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="76" class="serif ivory" font-size="47" font-weight="800">The bill for Gaza: promised in Washington, unpaid</text>
+  <text x="90" y="120" class="sans muted body">Reconstruction money, from the estimate to the appropriation</text>
+  <text x="1510" y="164" class="arabic ivory" font-size="35" font-weight="800" text-anchor="end">فاتورة إعمار غزة: وُعِدت في واشنطن ولم تُدفع</text>
+  <text x="1510" y="197" class="arabic muted small" text-anchor="end">من التقدير إلى الاعتماد المالي: أين تحرّك المال فعلاً</text>
+
+  <g>
+    <text x="90" y="252" class="sans gold label">NEEDED — UN AND WORLD BANK ESTIMATE</text>
+    <text x="1090" y="252" class="arabic muted small" text-anchor="end">ما تحتاجه غزة بتقدير الأمم المتحدة والبنك الدولي</text>
+    <rect x="90" y="264" width="1000" height="44" rx="8" fill="#d4b36e"/>
+    <text x="112" y="295" class="sans" font-size="27" font-weight="800" fill="#171719">$70 billion</text>
+    <text x="1068" y="295" class="arabic" font-size="24" font-weight="800" fill="#171719" text-anchor="end">70 مليار دولار</text>
+  </g>
+
+  <g>
+    <text x="90" y="372" class="sans green label">PLEDGED TO THE BOARD OF PEACE — 19 FEBRUARY 2026</text>
+    <text x="1090" y="372" class="arabic muted small" text-anchor="end">تعهّدات مجلس السلام: 10 مليارات أميركية و7 من تسع دول</text>
+    <rect x="90" y="384" width="243" height="44" rx="8" fill="#286344"/>
+    <text x="355" y="415" class="sans ivory" font-size="27" font-weight="800">$17 billion</text>
+    <text x="520" y="414" class="sans muted small">$10bn United States + $7bn nine other governments</text>
+  </g>
+
+  <g>
+    <text x="90" y="492" class="sans red label">MOVED BY THE STATE DEPARTMENT — REPORTED MARCH 2026</text>
+    <text x="1090" y="492" class="arabic muted small" text-anchor="end">حوّلته الخارجية من حسابات أخرى بلا اعتماد جديد</text>
+    <rect x="90" y="504" width="18" height="44" rx="4" fill="#dc6572"/>
+    <text x="130" y="535" class="sans ivory" font-size="27" font-weight="800">$1.25 billion</text>
+    <text x="320" y="534" class="sans muted small">$1bn disaster assistance · $200m peacekeeping · $50m international organisations</text>
+  </g>
+
+  <g>
+    <text x="90" y="612" class="sans muted label">APPROPRIATED BY CONGRESS FOR THE BOARD OF PEACE</text>
+    <text x="1090" y="612" class="arabic muted small" text-anchor="end">ما أقرّه الكونغرس للمجلس: لا شيء حتى الآن</text>
+    <rect x="90" y="624" width="240" height="44" rx="8" fill="none" stroke="#72747a" stroke-width="3" stroke-dasharray="12 10"/>
+    <text x="112" y="655" class="sans ivory" font-size="27" font-weight="800">Nothing</text>
+    <text x="352" y="654" class="sans muted small">No treaty ratified, no authorisation voted</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1140" y="240" width="370" height="428" rx="18" fill="#27282c" stroke="#3a3c41" stroke-width="2"/>
+    <text x="1170" y="284" class="sans gold label">WHAT THE MONEY MEETS</text>
+    <text x="1480" y="313" class="arabic muted small" text-anchor="end">ما ينتظر هذا المال</text>
+
+    <text x="1170" y="372" class="sans ivory fig">68m tonnes</text>
+    <text x="1170" y="400" class="sans muted small">of rubble across Gaza</text>
+    <text x="1480" y="428" class="arabic muted small" text-anchor="end">68 مليون طن من الركام</text>
+
+    <text x="1170" y="490" class="sans ivory fig">9 in 10</text>
+    <text x="1170" y="518" class="sans muted small">residents in tents or shelters</text>
+    <text x="1480" y="546" class="arabic muted small" text-anchor="end">تسعة من كل عشرة في الخيام</text>
+
+    <text x="1170" y="608" class="sans red fig">$6 billion</text>
+    <text x="1170" y="636" class="sans muted small">Palestinian revenues Israel holds</text>
+    <text x="1480" y="662" class="arabic muted small" text-anchor="end">أموال مقاصّة تحتجزها إسرائيل</text>
+  </g>
+
+  <rect x="90" y="712" width="1420" height="108" rx="15" fill="url(#band)"/>
+  <text x="122" y="750" class="sans ivory" font-size="24" font-weight="800">WHO WASHINGTON SAYS PAYS</text>
+  <text x="122" y="781" class="sans ivory small">10 August: Trump named Iran responsible for the damage in Gaza, Lebanon, Syria and Yemen.</text>
+  <text x="122" y="806" class="sans ivory small">19 July 2024: the International Court of Justice ruled Israel must make full reparation.</text>
+  <text x="1478" y="750" class="arabic ivory" font-size="24" font-weight="800" text-anchor="end">مَن تقول واشنطن إنه يدفع</text>
+  <text x="1478" y="781" class="arabic ivory small" text-anchor="end">10 آب/أغسطس: ترامب يحمّل إيران مسؤولية الضرر في غزة ولبنان وسوريا واليمن</text>
+  <text x="1478" y="806" class="arabic ivory small" text-anchor="end">19 تموز/يوليو 2024: محكمة العدل الدولية تُلزم إسرائيل بجبر الضرر كاملاً</text>
+
+  <text x="90" y="862" class="sans muted tiny">Figures: UN and World Bank reconstruction estimate; Board of Peace pledges announced 19 February 2026; State Department transfer reported by Semafor, 26 March 2026; rubble and shelter data via Carnegie, 30 July 2026; clearance revenues from the UN Security Council briefing of 11 August 2026.</text>
+  <text x="90" y="886" class="sans muted tiny">Graphic: Times of Palestine — رسم: تايمز أوف فلسطين</text>
+</svg>
