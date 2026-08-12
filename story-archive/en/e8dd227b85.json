@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168113",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  },
+  {
    "article": "https://imemc.org/article/colonizers-destroy-water-line-assault-villages",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "e8dd227b85",
- "score": 84.32,
+ "score": 84.28,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
