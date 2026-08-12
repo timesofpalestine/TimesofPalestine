@@ -19,6 +19,12 @@
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314657",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
   }
  ],
  "date": "2026-08-11T09:35:00+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "5c091191e6",
- "score": 84.78,
+ "score": 84.74000000000001,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
