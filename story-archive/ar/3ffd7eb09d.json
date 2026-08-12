@@ -6,7 +6,19 @@
    "article": "original:arraba-eviction-emek-dotan-2026-08-11.ar",
    "name": "تايمز أوف فلسطين",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728528",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314633",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-08-11T10:56:00+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "3ffd7eb09d",
- "score": 85.31,
+ "score": 85.24000000000001,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

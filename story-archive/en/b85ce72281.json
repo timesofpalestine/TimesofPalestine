@@ -1,0 +1,44 @@
+{
+ "brief": "Israeli forces demolished the home of a Palestinian man killed during a July confrontation with Israeli settlers and arrested 23 others in separate operations across the West Bank, Al Jazeera English reported. The demolition targeted the residence of the man whose death occurred in the earlier clash with settlers.\n\nThe raids and home destruction represent a continuation of intensified military operations in the territory. United Nations officials have warned that the West Bank is approaching a breaking point as Israeli operations escalate alongside mounting tensions between Palestinians and settlers.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/12/israeli-raids-demolitions-continue-as-un-warns-west-bank-at-breaking-point?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168113",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-issue-new-demolition-land-clearing-orders",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-12T04:59:19+00:00",
+ "dek": "Israeli forces arrest 23 Palestinians and demolish home of man killed in confrontation with Israeli settlers in July.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/AP26223358462796-1786494475.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/12/israeli-raids-demolitions-continue-as-un-warns-west-bank-at-breaking-point?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/12/israeli-raids-demolitions-continue-as-un-warns-west-bank-at-breaking-point?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b85ce72281",
+ "score": 93.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel demolishes home, arrests 23 Palestinians in West Bank operations"
+}

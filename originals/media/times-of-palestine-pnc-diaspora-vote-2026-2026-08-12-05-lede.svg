@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl desc">
+<title id="ttl">How the Palestinian National Council's 350 seats are filled, and the three routes for the 150 diaspora seats</title>
+<desc id="desc">Chart: a bar of 350 PNC seats split into 200 for the Palestinian territory constituency and 150 for Palestinians abroad, branching into three routes for the diaspora seats — direct vote, electoral college, or consensus and appointment. Vote set for 1 November; system ratified 4 June.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#c7a86b"/>
+<stop offset="1" stop-color="#b0904f"/>
+</linearGradient>
+<linearGradient id="grn" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#286344"/>
+<stop offset="1" stop-color="#59a97d"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- kicker -->
+<text x="90" y="72" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="4.5" fill="#c7a86b">PLO &#183; PALESTINIAN NATIONAL COUNCIL ELECTIONS</text>
+
+<!-- date pill -->
+<rect x="1206" y="40" width="304" height="92" rx="8" fill="#191a1d" stroke="#8a1f2d" stroke-width="2"/>
+<text x="1230" y="72" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="3" fill="#aaa9a5">POLLING DAY</text>
+<text x="1230" y="112" font-family="'Source Serif 4',Georgia,serif" font-size="34" fill="#f2eee8">1 November</text>
+
+<!-- title -->
+<text x="90" y="134" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">350 council seats. 150 for the diaspora.</text>
+<text x="90" y="188" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Where voting fails, the PLO appoints.</text>
+<text x="90" y="238" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#c7a86b" direction="rtl" text-anchor="start">350 مقعداً للمجلس الوطني، 150 منها للشتات</text>
+
+<!-- bar -->
+<text x="90" y="300" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="2" fill="#aaa9a5">COUNCIL SET AT 350 MEMBERS &#183; 2026 ELECTORAL SYSTEM RATIFIED 4 JUNE</text>
+<rect x="90" y="320" width="571" height="96" fill="url(#grn)"/>
+<rect x="661" y="320" width="429" height="96" fill="url(#gold)"/>
+<rect x="90" y="320" width="1000" height="96" fill="none" stroke="#2c2d31" stroke-width="2"/>
+
+<text x="118" y="362" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#f2eee8">200</text>
+<text x="118" y="392" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Territory constituency</text>
+<text x="690" y="362" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#17181a">150</text>
+<text x="690" y="392" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#17181a">Palestinians abroad</text>
+
+<text x="90" y="446" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Filled automatically by elected legislators if the</text>
+<text x="90" y="468" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Legislative Council vote (28 November) is held with it</text>
+<text x="1120" y="352" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#c7a86b" direction="rtl" text-anchor="start">الشتات</text>
+<text x="1120" y="384" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">may not be</text>
+<text x="1120" y="406" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">reduced</text>
+
+<!-- bracket -->
+<polyline points="875,416 875,500 310,500 310,560" fill="none" stroke="#c7a86b" stroke-width="2"/>
+<polyline points="875,500 790,500 790,560" fill="none" stroke="#c7a86b" stroke-width="2"/>
+<polyline points="875,500 1270,500 1270,560" fill="none" stroke="#c7a86b" stroke-width="2"/>
+<text x="90" y="530" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="2" fill="#c7a86b">THREE ROUTES FOR A DIASPORA SEAT</text>
+
+<!-- boxes -->
+<g>
+<rect x="90" y="560" width="440" height="204" rx="6" fill="#191a1d" stroke="#286344" stroke-width="2"/>
+<text x="114" y="606" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#59a97d">1 &#183; Direct vote</text>
+<text x="114" y="638" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#f2eee8" direction="rtl" text-anchor="start">اقتراع مباشر</text>
+<text x="114" y="678" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Embassy draws up a voters' register</text>
+<text x="114" y="704" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">in one week; polling two weeks after</text>
+<text x="114" y="730" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">nominations close.</text>
+</g>
+
+<g>
+<rect x="570" y="560" width="440" height="204" rx="6" fill="#191a1d" stroke="#c7a86b" stroke-width="2"/>
+<text x="594" y="606" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#c7a86b">2 &#183; Electoral college</text>
+<text x="594" y="638" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#f2eee8" direction="rtl" text-anchor="start">هيئة ناخبة</text>
+<text x="594" y="678" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Formed where direct voting is not</text>
+<text x="594" y="704" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">possible; it votes the following</text>
+<text x="594" y="730" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">week.</text>
+</g>
+
+<g>
+<rect x="1050" y="560" width="440" height="204" rx="6" fill="#191a1d" stroke="#8a1f2d" stroke-width="2"/>
+<text x="1074" y="606" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#C8102E">3 &#183; Consensus, appointment</text>
+<text x="1074" y="638" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#f2eee8" direction="rtl" text-anchor="start">توافق وتعيين</text>
+<text x="1074" y="678" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Seats settled among factions and</text>
+<text x="1074" y="704" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">community bodies in that country.</text>
+<text x="1074" y="730" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Selection has already begun.</text>
+</g>
+
+<!-- footer -->
+<line x1="90" y1="798" x2="1490" y2="798" stroke="#2c2d31" stroke-width="2"/>
+<text x="90" y="836" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">PCBS: 8.1 million Palestinians in the diaspora, end of 2025. No country-by-country</text>
+<text x="90" y="862" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">breakdown of the 150 seats has been published.</text>
+<text x="1050" y="836" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Source: WAFA, Presidency statement of 4 June,</text>
+<text x="1050" y="860" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">PNC Speaker Rawhi Fattouh, 23 June &#183; PCBS</text>
+</svg>
