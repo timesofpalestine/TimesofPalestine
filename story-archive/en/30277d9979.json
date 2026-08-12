@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli Defence Minister Israel Katz declared that Israel \"will under no circumstances\" withdraw its troops from Lebanon, Gaza and Syria, according to Al Jazeera English. The statement represents a significant hardening of Israel's position on its military deployments across the region and suggests the country intends to resist pressure for troop withdrawals.\n\nKatz's remarks come amid ongoing military operations in multiple theaters. The defence minister's vow to keep forces in place signals Israel's commitment to sustaining its presence in Lebanon, where recent operations have targeted Hezbollah positions, in Gaza where ground troops remain engaged, and in Syria where Israeli forces have conducted strikes against Iranian-linked targets.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/12/israel-vows-to-keep-troops-in-lebanon-gaza-and-syria?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/defence-minister-says-israeli-military-indefinitely-remain-lebanon-syria",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-12T20:26:07+00:00",
+ "dek": "Israeli defence minister Israel Katz has said that Israel “will under no circumstances” withdraw its troops.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786566348.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/12/israel-vows-to-keep-troops-in-lebanon-gaza-and-syria?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/12/israel-vows-to-keep-troops-in-lebanon-gaza-and-syria?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "30277d9979",
+ "score": 49.62,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel vows to maintain military presence in three countries"
+}
