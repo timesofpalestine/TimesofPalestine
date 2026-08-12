@@ -6,19 +6,13 @@
    "article": "original:east-jerusalem-3400-units-2026-08-11.ar",
    "name": "تايمز أوف فلسطين",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://qudsn.co/post?id=216982&slug=%D9%82%D8%A8%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-3400-%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D8%B3%D8%AA%D9%8A%D8%B7%D8%A7%D9%86%D9%8A%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%AF%D8%B3",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
-   "verified": true
-  },
-  {
-   "article": "https://felesteen.news/post/184694/%D9%82%D8%A8%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%AF%D9%81%D8%B9-%D8%A83400-%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D8%B3%D8%AA%D9%8A%D8%B7%D8%A7%D9%86%D9%8A%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%AF%D8%B3",
-   "name": "صحيفة فلسطين",
-   "url": "https://felesteen.news/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-11T13:10:00+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "e5f767297e",
- "score": 84.9,
+ "score": 84.86,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

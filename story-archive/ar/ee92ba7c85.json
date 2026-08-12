@@ -9,6 +9,18 @@
    "verified": true
   },
   {
+   "article": "https://www.pbc.ps/58282-2",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314695",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
    "article": "https://t.me/AlQastalps/389937",
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
@@ -30,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "ee92ba7c85",
- "score": 49.76,
+ "score": 49.55,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
