@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli forces shot an 11-year-old boy in the head and leg in Khan Younis, Gaza, according to the child's father, Al Jazeera English reported. The shooting took place in the southern Gaza city, where the boy sustained wounds to both the head and leg.\n\nThe father's account marks the initial public report of the incident. The circumstances that preceded the shooting—including whether the boy was near a military operation, checkpoint, or other location—remain undescribed. Israeli military officials have not yet issued a statement addressing the incident or the father's allegations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/12/11-year-old-boy-shot-by-israeli-forces-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-12T21:06:12+00:00",
+ "dek": "The father of an 11-year-old boy says Israeli forces shot his son in the head and leg in Khan Younis.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786568721.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/12/11-year-old-boy-shot-by-israeli-forces-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/12/11-year-old-boy-shot-by-israeli-forces-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "43c8b01aa2",
+ "score": 49.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces shoot 11-year-old boy in Khan Younis"
+}
