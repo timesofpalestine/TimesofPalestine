@@ -1,0 +1,56 @@
+{
+ "brief": "بحسب وكالة معاً، يوجد 40 صحفياً وصحفية في سجون الاحتلال الإسرائيلي. وتعكس هذه الأرقام استمرار حملة اعتقالات واسعة موجهة ضد الإعلاميين والعاملين في القطاع الصحفي، في فترة شهدت تصعيداً في العمليات العسكرية والأمنية.\n\nلم تحدّد الوكالة معلومات إضافية عن هويات المعتقلين أو الأماكن التي يقبعون فيها أو ملابسات اعتقالهم. وتندرج هذه الحالات ضمن انتهاكات موثقة بحق حرية الصحافة والتعبير في المناطق المحتلة.\n\nتعتبر اعتقالات الصحفيين من القضايا التي تثير قلق المنظمات الدولية المعنية بحقوق الإنسان وحرية الإعلام حول العالم.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2166815.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162081/%D9%86%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%A3%D8%B3%D9%8A%D8%B1-40-%D8%B5%D8%AD%D9%81%D9%8A%D8%A7-%D9%81%D9%8A-%D8%B3%D8%AC%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%88%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-250-%D8%AA%D8%B9%D8%B1%D8%B6%D9%88%D8%A7-%D9%84%D9%84%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84",
+   "name": "وكالة شهاب (حصري)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/58282-2",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314695",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/389937",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-12T10:33:41+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/kQc4fe1cx93tkrnGI57l9SRWhtPbDQmV-7DbpDF_K3aVlMx30bHA3CFekbkKYg6qoIaYtDty1F0wxBZyrx_FlKgAwZ00nOlkFOmncykRzBf2lup2zGEbI9IlTCDOS8UeN6WmRUszGkOyi--sTJksWl9Di4LST4TiWZTBDtPzRBvAJKzNqw1a8ClmJqlzlq3_gy2cTaXGBAW04vIb2sKlIES5dsTgj39artrabGtgddzHFZmTdvmeqq8zgjlTIaGQa-0d0wVH-epnxvazzYjx2cCHRRVnGrQyfO7mkvvAh3Lce7R-4d0tgzgjf4AdY-75HtGU2jPVcrgMHPR7ITpGzg.jpg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2166815.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "وكالة معا (حصري)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2166815.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e587328cd6",
+ "score": 49.8,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "قوات الاحتلال تحتجز 40 صحفياً في السجون"
+}
