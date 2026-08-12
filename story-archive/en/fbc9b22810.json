@@ -19,12 +19,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-forces-issue-new-demolition-land-clearing-orders",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
   }
  ],
  "date": "2026-08-11T10:56:00+00:00",
@@ -42,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "fbc9b22810",
- "score": 82.58,
+ "score": 82.52000000000001,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
