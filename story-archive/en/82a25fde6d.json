@@ -1,0 +1,38 @@
+{
+ "brief": "Gaza's confirmed death toll has climbed to 73,388 since the start of the military offensive, the Ma'an news agency reported. The figure reflects cumulative casualties documented throughout the conflict period in the densely populated territory.\n\nHealth authorities in Gaza have been tracking fatalities as fighting continues across multiple areas of the enclave. The updated count represents deaths recorded from the beginning of the offensive through the reporting period. Casualty figures in conflict zones often face challenges in verification, though Gaza's health ministry has maintained detailed records of confirmed deaths.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2166805.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162079/%D8%B4%D9%87%D9%8A%D8%AF-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%AA%D8%A7%D9%86-%D8%AE%D9%84%D8%A7%D9%84-24-%D8%B3%D8%A7%D8%B9%D8%A9-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%AD%D8%B5%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%81%D9%8A-%D9%82%D8%B7%D8%A7%D8%B9-%D8%BA%D8%B2%D8%A9-%D8%A5%D9%84%D9%89-73-388",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-12T09:45:17+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/sSf4TIYlFJeTYCj2MKmI4NYPqAvZRQFSxfOU-83AC1MidTUbYorRTH81CafVtP3TSIwpOFu5mX6IiH30XIuQhvMlazFlCgsKxqTP50GjYCtPfL6dcVqHDsZxq4T3uMynJ6DnKJknmkIGqQGrvuD8IzzWYGC_h3wrMw7XgmlOZFSHzBRgLC7LSaO8n4nWJYE9eQNYEQkbSypzsVjdmjgImVMyAfjGvp7oS8_s2r4DrmrzUAkPopVkUM30F6enKNy5cLc6PGx_Uu7xwB5goeiancQ3FbhjOHyjj0AYmocInjDrVZkOzRxx1NVRb43wPy592zU99DP_ose90CKvAD9R_g.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2166805.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2166805.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "82a25fde6d",
+ "score": 63.88,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gaza death toll rises to 73,388 since offensive began"
+}
