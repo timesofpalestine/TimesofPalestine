@@ -1,0 +1,32 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، هدمت إسرائيل مدارس في مسافر يطا بجنوب الضفة الغربية، الأمر الذي أوقف الدراسة لمئات الطلاب. تندرج هذه الخطوة في سياق متكرر من استهداف المنشآت التعليمية الفلسطينية والذي يؤثر على عشرات المدارس في مناطق متفرقة.\n\nتقع مسافر يطا في المنطقة ج من الضفة الغربية، وهي منطقة تخضع للسيطرة الأمنية الإسرائيلية الكاملة. يشكل هدم المدارس حرماناً مباشراً للطلاب من حقهم في التعليم، في ظل استمرار الضغوط على السكان المحليين في هذه المناطق.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/08/12/1115304",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-12T07:51:46+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/08/12/1115304",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "58a3b087e0",
+ "score": 34.87,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "إسرائيل تهدم مدارس في مسافر يطا جنوب الضفة"
+}
