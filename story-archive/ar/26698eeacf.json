@@ -15,16 +15,10 @@
    "verified": false
   },
   {
-   "article": "https://shehabnews.com/post/162066/%D8%B1%D8%BA%D9%85-%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D8%B1%D9%81%D8%B6%D9%87%D8%A7-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%A8%D9%84%D8%BA-%D9%82%D9%88%D8%A9-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%82%D8%B1%D8%A7%D8%B1-%D8%A8%D8%A7%D9%84%D8%AA%D8%B2%D8%A7%D9%85%D9%87%D8%A7-%D8%A8%D8%AE%D8%B7%D8%A9-%D8%A7%D9%84%D9%8015-%D8%A8%D9%86%D8%AF%D8%A7",
-   "name": "وكالة شهاب (حصري)",
-   "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.aljazeera.net/news/2026/8/12/%d9%87%d9%8a%d8%a6%d8%a9-%d8%a7%d9%84%d8%a8%d8%ab-%d9%88%d8%a7%d8%b4%d9%86%d8%b7%d9%86-%d8%aa%d8%a8%d9%84%d8%ba-%d9%82%d9%88%d8%a9-%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d9%82%d8%b1%d8%a7%d8%b1?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-10T19:05:00+00:00",
@@ -42,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "26698eeacf",
- "score": 62.33,
+ "score": 62.11,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
