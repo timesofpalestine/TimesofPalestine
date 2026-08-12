@@ -25,6 +25,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728571",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
   }
  ],
  "date": "2026-08-11T02:40:00+00:00",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "9ab8784ec0",
- "score": 83.43,
+ "score": 83.4,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
