@@ -1,0 +1,44 @@
+{
+ "brief": "أعلنت وكالة معاً ارتفاع حصيلة الشهداء في قطاع غزة إلى 73,388 منذ بدء العدوان. ويعكس الرقم تصاعداً مستمراً في الخسائر البشرية في القطاع الذي يشهد منذ أسابيع عمليات عسكرية متواصلة.\n\nتأتي هذه الحصيلة في ظل استمرار الأوضاع الإنسانية المتدهورة في غزة، إذ يعاني السكان من نقص الموارد الأساسية والخدمات الطبية والحد الأدنى من سبل العيش. وتشير الأرقام المتصاعدة للشهداء إلى استمرار التأثيرات الكارثية للعدوان على السكان المدنيين في القطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2166805.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162079/%D8%B4%D9%87%D9%8A%D8%AF-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%AA%D8%A7%D9%86-%D8%AE%D9%84%D8%A7%D9%84-24-%D8%B3%D8%A7%D8%B9%D8%A9-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%AD%D8%B5%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%81%D9%8A-%D9%82%D8%B7%D8%A7%D8%B9-%D8%BA%D8%B2%D8%A9-%D8%A5%D9%84%D9%89-73-388",
+   "name": "وكالة شهاب (حصري)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/184777/73388-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7-%D9%88174259-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D9%85%D9%86%D8%B0-%D8%A8%D8%AF%D8%A1-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-12T09:45:17+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/sSf4TIYlFJeTYCj2MKmI4NYPqAvZRQFSxfOU-83AC1MidTUbYorRTH81CafVtP3TSIwpOFu5mX6IiH30XIuQhvMlazFlCgsKxqTP50GjYCtPfL6dcVqHDsZxq4T3uMynJ6DnKJknmkIGqQGrvuD8IzzWYGC_h3wrMw7XgmlOZFSHzBRgLC7LSaO8n4nWJYE9eQNYEQkbSypzsVjdmjgImVMyAfjGvp7oS8_s2r4DrmrzUAkPopVkUM30F6enKNy5cLc6PGx_Uu7xwB5goeiancQ3FbhjOHyjj0AYmocInjDrVZkOzRxx1NVRb43wPy592zU99DP_ose90CKvAD9R_g.jpg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2166805.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "وكالة معا (حصري)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2166805.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "82a25fde6d",
+ "score": 63.43,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "غزة: حصيلة الشهداء تتجاوز 73 ألفاً منذ بدء العدوان"
+}
