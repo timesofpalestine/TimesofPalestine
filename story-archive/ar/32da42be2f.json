@@ -1,0 +1,32 @@
+{
+ "brief": "شنّت إسرائيل حملة قصف مكثفة على جنوب لبنان، بحسب المركز الفلسطيني للإعلام، في تصعيد يحول دون قدرة الجيش اللبناني على نشر قواته في المنطقة. ويستهدف القصف الإسرائيلي المناطق الجنوبية الحدودية، مما يفرض قيوداً على حركة الأجهزة الأمنية اللبنانية.\n\nيندرج التصعيد الإسرائيلي ضمن سلسلة من الاشتباكات والقصف المتبادل على الحدود بين البلدين، حيث يعمل القصف على تعطيل محاولات الجيش اللبناني لاستعادة السيطرة الأمنية على الأراضي القريبة من الحدود الشمالية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/08/12/1115353",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-12T16:49:00+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/08/12/1115353",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "32da42be2f",
+ "score": 63.81,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "إسرائيل تكثف قصفها على جنوب لبنان وتعرقل انتشار الجيش"
+}
