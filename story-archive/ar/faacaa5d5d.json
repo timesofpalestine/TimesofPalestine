@@ -6,7 +6,25 @@
    "article": "original:turmus-ayya-flag-home-seizure-2026-08-12.ar",
    "name": "تايمز أوف فلسطين",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314738",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728610",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/878-147",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-08-12T07:15:00+00:00",
@@ -24,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "faacaa5d5d",
- "score": 86.97,
+ "score": 86.92,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

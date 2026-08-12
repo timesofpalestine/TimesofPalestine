@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli settlers in the West Bank have spray-painted racist messages on Palestinian homes and schools, according to Al Jazeera English. The graffiti includes inflammatory phrases such as \"Burn in hell\" directed at Palestinian residents. The campaign reflects what observers characterize as a brazen ideological drive to displace Palestinians from occupied territories through systematic intimidation.\n\nThe attacks extend beyond written messages to physical confrontations and direct violence against Palestinian communities. Settlers have combined the vandalism with assaults on residents and their property across multiple locations in the West Bank. The pattern demonstrates a coordinated effort to drive Palestinians from their homes through both psychological pressure and tangible threats to their safety and livelihoods.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/8/12/burn-in-hell-israeli-settlers-spread-hate-through-graffiti-attacks?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/dawn-invasions-abductions-demolitions-colonizer-attacks-across-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-12T13:58:02+00:00",
+ "dek": "Racist settler graffiti on West Bank homes and schools reveals a brazen ideological drive for Palestinian displacement.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/2-1786428649-copy-1786528577.jpg?resize=1920%2C1280&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/8/12/burn-in-hell-israeli-settlers-spread-hate-through-graffiti-attacks?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/8/12/burn-in-hell-israeli-settlers-spread-hate-through-graffiti-attacks?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "36a086f9b4",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers target Palestinian homes with racist graffiti and attacks"
+}
