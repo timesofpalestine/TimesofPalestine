@@ -9,15 +9,9 @@
    "verified": false
   },
   {
-   "article": "http://67.228.192.88:3000/2026/8/10/headlines",
+   "article": "http://www.democracynow.org/2026/8/10/headlines",
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
-   "verified": false
-  },
-  {
-   "article": "https://shehabnews.com/post/162109/%D8%AE%D8%A7%D8%B5-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%8A-%D9%84%D9%80-%D8%B4%D9%87%D8%A7%D8%A8-%D8%B1%D9%81%D8%B6-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%84%D9%80-%D8%AE%D8%B7%D8%A9-%D8%BA%D8%B2%D8%A9-%D8%A5%D9%87%D8%A7%D9%86%D8%A9-%D9%84%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D9%88%D8%AA%D8%B9%D8%B7%D9%8A%D9%84-%D9%85%D8%AA%D8%B9%D9%85-%D8%AF-%D9%84%D9%84%D8%AD%D9%84%D9%88%D9%84",
-   "name": "Shehab Wire (EN)",
-   "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
@@ -36,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "0a3b3e4168",
- "score": 83.18,
+ "score": 83.13,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

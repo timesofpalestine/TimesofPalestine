@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Gaza's Central Archives and the Omari Mosque library destroyed: UNESCO's rising count of damaged cultural sites</title>
+<desc id="dsc">Left: a bar chart of UNESCO-verified damaged cultural sites in Gaza — 22 in January 2024, 43 on 8 April 2024, 50 on 10 June 2024, 69 on 17 September 2024, 75 on 29 November 2024 and 164 on 24 March 2026. Right: an illustration of charred documents in an archive box, captioned for the Central Archives at Gaza City Hall, and the surviving lower half of the Great Omari Mosque minaret with the missing upper half drawn as a dashed outline, captioned for the mosque library. Bilingual English and Arabic labels.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="72" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="2.5" fill="#c7a86b">UNESCO: 164 CULTURAL SITES DAMAGED, VERIFIED 24 MARCH 2026</text>
+<text x="90" y="128" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Israel destroyed Gaza's Central Archives</text>
+<text x="90" y="180" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">and the Omari Mosque library</text>
+<text x="90" y="226" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d">إسرائيل تدمّر الأرشيف المركزي ومكتبة الجامع العمري</text>
+
+<!-- chart -->
+<text x="90" y="332" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">UNESCO-verified damaged cultural sites</text>
+<text x="90" y="364" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5">مواقع ثقافية متضررة موثقة</text>
+
+<line x1="90" y1="790" x2="650" y2="790" stroke="#55565a" stroke-width="2"/>
+
+<rect x="110" y="739" width="60" height="51" fill="#8a1f2d"/>
+<rect x="200" y="690" width="60" height="100" fill="#8a1f2d"/>
+<rect x="290" y="674" width="60" height="116" fill="#8a1f2d"/>
+<rect x="380" y="630" width="60" height="160" fill="#8a1f2d"/>
+<rect x="470" y="616" width="60" height="174" fill="#8a1f2d"/>
+<rect x="560" y="410" width="60" height="380" fill="#C8102E"/>
+
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8" text-anchor="middle">
+<text x="140" y="729">22</text>
+<text x="230" y="680">43</text>
+<text x="320" y="664">50</text>
+<text x="410" y="620">69</text>
+<text x="500" y="606">75</text>
+<text x="590" y="398" font-size="26" fill="#c7a86b">164</text>
+</g>
+
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#aaa9a5" text-anchor="middle">
+<text x="140" y="812">Jan</text><text x="140" y="829">2024</text>
+<text x="230" y="812">8 Apr</text><text x="230" y="829">2024</text>
+<text x="320" y="812">10 Jun</text><text x="320" y="829">2024</text>
+<text x="410" y="812">17 Sep</text><text x="410" y="829">2024</text>
+<text x="500" y="812">29 Nov</text><text x="500" y="829">2024</text>
+<text x="590" y="812" fill="#c7a86b">24 Mar</text><text x="590" y="829" fill="#c7a86b">2026</text>
+</g>
+
+<line x1="700" y1="250" x2="700" y2="830" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- card 1: archives -->
+<rect x="720" y="250" width="800" height="260" rx="10" fill="#16171a" fill-opacity="0.6" stroke="#2c2d31"/>
+
+<g opacity="0.55" fill="#aaa9a5">
+<rect x="826" y="296" width="11" height="11" transform="rotate(22 831 301)"/>
+<rect x="872" y="282" width="9" height="9" transform="rotate(-18 876 286)"/>
+<rect x="798" y="326" width="8" height="8" transform="rotate(35 802 330)"/>
+<rect x="906" y="316" width="10" height="10" transform="rotate(-30 911 321)"/>
+<rect x="856" y="262" width="7" height="7" transform="rotate(14 859 265)"/>
+</g>
+
+<!-- charred documents -->
+<g>
+<rect x="784" y="352" width="44" height="90" fill="#f2eee8"/>
+<rect x="836" y="336" width="44" height="106" fill="#f2eee8"/>
+<rect x="888" y="366" width="44" height="76" fill="#f2eee8"/>
+<g fill="#aaa9a5" opacity="0.55">
+<rect x="791" y="392" width="30" height="3"/><rect x="791" y="402" width="24" height="3"/><rect x="791" y="412" width="30" height="3"/>
+<rect x="843" y="382" width="30" height="3"/><rect x="843" y="392" width="22" height="3"/><rect x="843" y="402" width="30" height="3"/>
+<rect x="895" y="400" width="30" height="3"/><rect x="895" y="410" width="20" height="3"/>
+</g>
+<path d="M784,352 L795,342 L806,354 L816,340 L828,352 L828,372 L784,372 Z" fill="#1a1b1e"/>
+<path d="M836,336 L848,326 L858,340 L868,324 L880,338 L880,358 L836,358 Z" fill="#1a1b1e"/>
+<path d="M888,366 L899,356 L910,368 L921,354 L932,366 L932,384 L888,384 Z" fill="#1a1b1e"/>
+</g>
+<path d="M768,442 L948,442 L936,500 L780,500 Z" fill="#1a1b1e" stroke="#c7a86b" stroke-width="2.5"/>
+<line x1="800" y1="462" x2="916" y2="462" stroke="#8a1f2d" stroke-width="6"/>
+
+<text x="1010" y="322" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="2" fill="#c7a86b">CENTRAL ARCHIVES, GAZA CITY HALL</text>
+<text x="1010" y="368" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Thousands of documents, 150 years of</text>
+<text x="1010" y="398" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">records, burned by direct shelling</text>
+<text x="1010" y="428" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">"turning them into ashes" - Yahya al-Sarraj</text>
+<text x="1010" y="470" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#59a97d">الأرشيف المركزي في بلدية غزة</text>
+
+<!-- card 2: mosque library -->
+<rect x="720" y="560" width="800" height="270" rx="10" fill="#16171a" fill-opacity="0.6" stroke="#2c2d31"/>
+
+<path d="M805,680 L805,600 L862,600 M805,600 Q833,566 862,600 L862,680" fill="none" stroke="#c7a86b" stroke-width="2" stroke-dasharray="7 7" opacity="0.45"/>
+<path d="M805,805 L805,700 L818,682 L832,708 L846,684 L862,700 L862,805 Z" fill="#1a1b1e" stroke="#c7a86b" stroke-width="2.5"/>
+<line x1="805" y1="740" x2="862" y2="740" stroke="#c7a86b" stroke-width="2" opacity="0.7"/>
+<path d="M880,805 L932,805 L922,787 L890,790 Z" fill="#4a4b4f"/>
+<path d="M756,805 L800,805 L794,791 L764,795 Z" fill="#4a4b4f"/>
+<line x1="750" y1="805" x2="980" y2="805" stroke="#55565a" stroke-width="3"/>
+
+<text x="1010" y="632" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="2" fill="#c7a86b">GREAT OMARI MOSQUE LIBRARY</text>
+<text x="1010" y="678" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Wrecked 8 December 2023; rare books</text>
+<text x="1010" y="708" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">including 14th-century works</text>
+<text x="1010" y="738" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">200+ manuscripts digitised in 2022</text>
+<text x="1010" y="780" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#59a97d">مكتبة الجامع العمري الكبير</text>
+
+<text x="90" y="864" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Sources: UNESCO preliminary assessment, 24 March 2026; Museums Association and ICOM UK; Anadolu; LAP, 1 Feb 2024</text>
+</svg>
