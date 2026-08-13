@@ -43,6 +43,12 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%af%d8%a7%d8%ae%d9%84%d9%8a%d8%a9-%d8%ba%d8%b2%d8%a9-%d8%a7%d8%ba%d8%aa%d9%8a%d8%a7%d9%84-%d9%85%d8%af%d9%8a%d8%b1-%d8%b4%d8%b1%d8%b7%d8%a9-%d9%85%d8%ad%d8%a7%d9%81%d8%b8%d8%a9-%d8%ba%d8%b2%d8%a9",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
   }
  ],
  "date": "2026-08-13T14:46:00+00:00",
@@ -60,7 +66,7 @@
  "modified": null,
  "original": false,
  "pid": "f51770904f",
- "score": 63.59,
+ "score": 63.49,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
