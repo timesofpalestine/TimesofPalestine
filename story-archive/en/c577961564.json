@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli checkpoints and closures are severely hampering ambulance operations across the West Bank, +972 Magazine reported. Palestinian medics describe routine emergency journeys as increasingly perilous, with proliferating roadblocks forcing dangerous delays in patient transport. Settler attacks compound the crisis, forcing ambulances to navigate hostile terrain while ferrying critical patients.\n\nThe obstacles transform standard medical response into a high-risk endeavor. Ambulance crews face unpredictable wait times at checkpoints, reroutes around settler-controlled areas, and security threats that disrupt time-sensitive emergency care. Palestinian health officials say the cumulative effect threatens patient survival rates across the territory.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.972mag.com/west-bank-checkpoints-roadblocks-ambulances",
+   "name": "+972 Magazine",
+   "url": "https://www.972mag.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-13T18:47:42+00:00",
+ "dek": "With proliferating closures, checkpoints, and settler attacks, Palestinian medics say routine ambulance journeys have become life-or-death ordeals.",
+ "image": "/media/times-of-palestine-cover-health-b.svg",
+ "lang": "en",
+ "link": "https://www.972mag.com/west-bank-checkpoints-roadblocks-ambulances",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c577961564",
+ "score": 79.94,
+ "source": "+972 Magazine",
+ "source_id": "972mag",
+ "source_url": "https://www.972mag.com/",
+ "title": "Israeli roadblocks obstruct West Bank emergency medical transport."
+}

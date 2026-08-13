@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli forces detained three Palestinians during a raid on the village of Burqa, east of Ramallah in the occupied West Bank, Middle East Eye reported. The operation also saw Israeli settlers seize a tractor belonging to a Palestinian resident during the incursion.\n\nThe incident marks another flashpoint in escalating tensions across the region. Raids by Israeli forces combined with settler actions have become increasingly frequent in areas surrounding Ramallah, with Palestinian communities reporting regular disruptions to daily life and livelihoods. The seizure of agricultural equipment and detention of residents reflect the broader pattern of friction between Israeli forces, settler groups, and Palestinian civilians in occupied territories.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-three-palestinians-settlers-seize-tractor-near",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/thursday-dawn-israeli-invasions-and-abductions-in-the-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-13T17:03:21+00:00",
+ "dek": "Israeli forces detain three Palestinians as settlers seize tractor near Ramallah Israeli forces detained three Palestinians during a raid on the village of Burqa, east of Ramallah in the occupied West Bank, while Israeli settlers seized a tractor owned by the…",
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-three-palestinians-settlers-seize-tractor-near",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f9c5325b68",
+ "score": 62.73,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli forces detain three Palestinians, settlers seize tractor near Ramallah"
+}
