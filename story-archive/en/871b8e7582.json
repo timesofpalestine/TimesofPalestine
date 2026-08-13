@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://imemc.org/article/israeli-army-kills-two-palestinians-in-gaza-2",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-killed-head-police-force-gazas-ministry-interior-says",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -21,9 +27,9 @@
    "verified": true
   },
   {
-   "article": "https://imemc.org/article/gaza-israeli-attacks-kill-palestinian-and-injure-several-others",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168138",
+   "name": "UN News",
+   "url": "https://news.un.org/",
    "verified": true
   },
   {
@@ -48,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "871b8e7582",
- "score": 62.65,
+ "score": 62.46,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
