@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://imemc.org/article/gaza-israeli-attacks-kill-palestinian-and-injure-several-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-condemns-israeli-strike-gaza",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "0bde1e658e",
- "score": 61.39,
+ "score": 61.19,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
