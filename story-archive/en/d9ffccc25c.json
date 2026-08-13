@@ -7,6 +7,12 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-defence-minister-inaugurates-new-illegal-settlement-jenin",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-13T07:05:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "d9ffccc25c",
- "score": 99.71,
+ "score": 99.65,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
