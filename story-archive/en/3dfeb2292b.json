@@ -15,21 +15,9 @@
    "verified": true
   },
   {
-   "article": "https://www.dropsitenews.com/p/taybeh-west-bank-closed-military-zone-settlers",
-   "name": "Drop Site News",
-   "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/west-bank-under-intensifying-military-colonizer-assaults",
+   "article": "https://imemc.org/article/btselem-warns-of-escalating-colonizer-seizures-in-qusra",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://mondoweiss.net/2026/08/understanding-israels-campaign-to-destroy-palestinian-refugee-camps-in-the-west-bank",
-   "name": "Mondoweiss",
-   "url": "https://mondoweiss.net/",
    "verified": true
   },
   {
@@ -42,7 +30,25 @@
    "article": "https://t.me/maannews/36222",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/palestinian-christians-taybeh-face-continuing-settler-attacks-despite-military-closure",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/taybeh-west-bank-closed-military-zone-settlers",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/understanding-israels-campaign-to-destroy-palestinian-refugee-camps-in-the-west-bank",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-13T06:40:00+00:00",
@@ -60,7 +66,7 @@
  "modified": null,
  "original": true,
  "pid": "3dfeb2292b",
- "score": 87.25999999999999,
+ "score": 87.22,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
