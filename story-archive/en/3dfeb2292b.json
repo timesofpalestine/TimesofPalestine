@@ -6,13 +6,25 @@
    "article": "original:huckabee-qusra-israeli-terrorists-2026-08-13.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/13/israeli-forces-order-families-to-evacuate-homes-in-qusra?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
   },
   {
    "article": "https://imemc.org/article/btselem-warns-of-escalating-colonizer-seizures-in-qusra",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   },
   {
    "article": "https://t.me/maannews/36222",
@@ -37,18 +49,6 @@
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/13/report-from-scene-of-palestinian-homes-besieged-by-settlers?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
   }
  ],
  "date": "2026-08-13T06:40:00+00:00",
@@ -66,7 +66,7 @@
  "modified": null,
  "original": true,
  "pid": "3dfeb2292b",
- "score": 86.07,
+ "score": 86.00999999999999,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
