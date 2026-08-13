@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Arab states pledged $4.2 billion; the Gaza reconstruction fund holds nothing</title>
+<desc id="d">Chart showing four Arab pledges made in Washington on 19 February — Qatar, Saudi Arabia and Kuwait $1 billion each and the United Arab Emirates $1.2 billion, totalling $4.2 billion — as bars that stop short of a vault representing the World Bank-administered Gaza Reconstruction and Development Fund, which shows $0 deposited as of late May.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="barg" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#286344"/>
+<stop offset="1" stop-color="#59a97d"/>
+</linearGradient>
+<marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+<path d="M0 0 L12 6 L0 12 Z" fill="#aaa9a5"/>
+</marker>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="66" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="4.5" fill="#c7a86b">GAZA RECONSTRUCTION · THE LEDGER</text>
+<text x="1540" y="66" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="3" fill="#aaa9a5">TIMES OF PALESTINE</text>
+
+<text x="90" y="132" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">Arab states pledged $4.2 billion;</text>
+<text x="90" y="190" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#C8102E">the Gaza fund holds nothing</text>
+<text x="92" y="238" font-family="Cairo,Arial,sans-serif" font-size="27" fill="#c7a86b">دول عربية تعهدت بـ 4.2 مليار دولار — وصندوق غزة لا يحمل شيئاً</text>
+
+<line x1="90" y1="268" x2="1500" y2="268" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- pledge bars -->
+<text x="112" y="308" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="2" fill="#aaa9a5">PLEDGED, WASHINGTON, 19 FEBRUARY</text>
+
+<g font-family="'Libre Franklin',Arial,sans-serif">
+  <g>
+    <text x="112" y="358" font-size="24" fill="#f2eee8">Qatar</text>
+    <text x="290" y="358" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">قطر</text>
+    <rect x="400" y="333" width="200" height="32" fill="url(#barg)"/>
+    <text x="614" y="358" font-size="23" fill="#c7a86b">$1bn</text>
+  </g>
+  <g>
+    <text x="112" y="428" font-size="24" fill="#f2eee8">Saudi Arabia</text>
+    <text x="290" y="428" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">السعودية</text>
+    <rect x="400" y="403" width="200" height="32" fill="url(#barg)"/>
+    <text x="614" y="428" font-size="23" fill="#c7a86b">$1bn</text>
+  </g>
+  <g>
+    <text x="112" y="498" font-size="24" fill="#f2eee8">Kuwait</text>
+    <text x="290" y="498" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">الكويت</text>
+    <rect x="400" y="473" width="200" height="32" fill="url(#barg)"/>
+    <text x="614" y="498" font-size="23" fill="#c7a86b">$1bn</text>
+  </g>
+  <g>
+    <text x="112" y="568" font-size="24" fill="#f2eee8">United Arab Emirates</text>
+    <text x="290" y="596" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">الإمارات</text>
+    <rect x="400" y="543" width="240" height="32" fill="url(#barg)"/>
+    <text x="654" y="568" font-size="23" fill="#c7a86b">$1.2bn</text>
+  </g>
+</g>
+
+<text x="112" y="644" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">Total pledged by the four states: <tspan fill="#59a97d">$4.2 billion</tspan></text>
+
+<!-- broken flow -->
+<line x1="700" y1="452" x2="790" y2="452" stroke="#aaa9a5" stroke-width="3" stroke-dasharray="9 11"/>
+<line x1="830" y1="452" x2="940" y2="452" stroke="#aaa9a5" stroke-width="3" stroke-dasharray="9 11" marker-end="url(#ah)"/>
+<text x="700" y="424" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="1.5" fill="#aaa9a5">NO DEPOSITS</text>
+
+<!-- vault -->
+<rect x="960" y="300" width="430" height="300" rx="10" fill="#16171a" stroke="#c7a86b" stroke-width="3"/>
+<rect x="960" y="300" width="430" height="8" rx="4" fill="#8a1f2d"/>
+<text x="988" y="348" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Gaza Reconstruction and</text>
+<text x="988" y="374" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Development Fund (World Bank)</text>
+<text x="988" y="486" font-family="'Source Serif 4',Georgia,serif" font-size="112" fill="#C8102E">$0</text>
+<text x="988" y="534" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">deposited as of late May</text>
+<text x="988" y="572" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#c7a86b">لا إيداعات حتى أواخر أيار/مايو</text>
+
+<line x1="90" y1="690" x2="1500" y2="690" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="112" y="732" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">$17 billion pledged to the Board of Peace; about 1% transferred as of 20 May</text>
+<text x="112" y="766" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Total recovery and reconstruction needs: $71.4 billion over the next decade</text>
+<text x="112" y="812" font-family="'Source Serif 4',Georgia,serif" font-size="24" font-style="italic" fill="#c7a86b">“The gap between commitment and disbursement must be closed with urgency.”</text>
+<text x="112" y="840" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">— Board of Peace report, 15 May, transmitted to the Security Council</text>
+<text x="112" y="872" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#8b8a86">Sources: Financial Times, 27 May; AFP; Middle East Eye; Times of Israel, 20 May; World Bank; UN document S/2026/418</text>
+</svg>
