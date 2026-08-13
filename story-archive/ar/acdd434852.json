@@ -1,0 +1,38 @@
+{
+ "brief": "ألقت طائرات مسيرة إسرائيلية قنبلة صوتية على منزل مأهول بالسكان في بلدة كفرا بجنوب لبنان، بحسب المركز الفلسطيني للإعلام. وطالت القنيبلة منزلاً سكنياً مباشرة في البلدة القريبة من الحدود.\n\nلم تشر التقارير الأولية إلى وقوع ضحايا من جراء الحادث، لكن القصف أثار ذعراً بين السكان في المنطقة المكتظة بالسكان.\n\nيعكس هذا الحادث استمرار التصعيد العسكري في المناطق الحدودية بين لبنان والأراضي المحتلة، إذ شهدت جنوب لبنان توتراً متزايداً خلال الفترة الراهنة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/314990",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728934",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-13T20:21:13+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/314990",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "acdd434852",
+ "score": 63.74,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الطيران المسير الإسرائيلي يلقي قنبلة صوتية على منزل في جنوب لبنان"
+}
