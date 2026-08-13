@@ -31,6 +31,17 @@ land in a specific window.
     February pledge stated precisely as a pledge with no published
     timetable. Still owed by Sep 30: two more, and a September follow-up
     once the cup draw and fixture list are published.
+  - ✅ 3 of 4 — `hala-alqadi-asian-games-2026.*` (2026-08-13): the karate
+    fighter from Deir Istiya who took Palestine's only medal at the last
+    Asian Games — bronze in the women's 68kg kumite at Hangzhou on
+    5 October, the first won by a Palestinian woman — pegged to the
+    twentieth Games opening at Nagoya on 19 September, written in the
+    celebratory register the features order requires. Carries the
+    Hangzhou delegation's composition (70 athletes, 15 sports, 62 men and
+    8 women), the PFA's facility and casualty counts, and the Olympic
+    Solidarity scholarships, with the honest line that the Nagoya
+    delegation is not yet published. Still owed by Sep 30: one more, plus
+    the delegation list and the cup-draw follow-up when they publish.
 - **Aug 25 – Sep 1 — Third-lost-school-year package.** The queued
   `education-under-fire` topic should have published by ~Aug 13 via the
   desk; in this window verify it is live, current, and cross-linked with
