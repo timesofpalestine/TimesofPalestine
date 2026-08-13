@@ -9,21 +9,9 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/314925",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
    "article": "https://t.me/Arabi21News/428105",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/728887",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
    "verified": true
   },
   {
@@ -36,6 +24,12 @@
    "article": "https://qudsn.co/post?id=217025&slug=%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%BA%D8%AA%D8%A7%D9%84-%D9%85%D8%AF%D9%8A%D8%B1-%D8%B4%D8%B1%D8%B7%D8%A9-%D8%BA%D8%B2%D8%A9%C2%A0",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728896",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
    "verified": true
   },
   {
@@ -60,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "f51770904f",
- "score": 62.82,
+ "score": 62.62,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
