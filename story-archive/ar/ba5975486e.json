@@ -7,6 +7,12 @@
    "name": "تايمز أوف فلسطين",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://t.me/Arabi21News/428076",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": false
   }
  ],
  "date": "2026-08-13T07:55:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "ba5975486e",
- "score": 87.75,
+ "score": 87.71000000000001,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

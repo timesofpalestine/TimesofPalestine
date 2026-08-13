@@ -6,7 +6,19 @@
    "article": "https://shehabnews.com/post/162143/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%B9%D8%AF%D8%AF-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D8%AD%D8%B1%D8%A8-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-%D8%B9%D9%84%D9%89-%D8%BA%D8%B2%D8%A9-%D8%A5%D9%84%D9%89-73-%D8%A3%D9%84%D9%81%D8%A7-%D9%88389",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-reaches-73389",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-israeli-attacks-kill-palestinian-and-injure-several-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-13T08:11:00+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "ff869c652d",
- "score": 63.06,
+ "score": 62.87,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
