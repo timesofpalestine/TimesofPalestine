@@ -1,0 +1,50 @@
+{
+ "brief": "استشهد فلسطيني وأصيب آخر في غارة شنتها مسيرة إسرائيلية استهدفت دراجة كهربائية بمدينة خان يونس في قطاع غزة، وفقاً لما أفادت به القدس العربي.\n\nووقعت الحادثة في أحد شوارع المدينة، إذ كان الفلسطينيان على الدراجة الكهربائية وقت تنفيذ الضربة الجوية. ولم تتضح حتى الآن تفاصيل كاملة بشأن هوية الضحايا أو الظروف المحيطة بالقصف.\n\nيأتي هذا الحادث ضمن سلسلة عمليات عسكرية إسرائيلية متواصلة على قطاع غزة استخدمت فيها الطائرات بدون طيار في استهداف أفراد ومواقع مختلفة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a-%d9%88%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-%d8%a2%d8%ae%d8%b1-%d8%a8%d9%82%d8%b5%d9%81-%d8%b4",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728829",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/314875",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/390103",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-13T12:29:55+00:00",
+ "dek": "",
+ "image": "https://www.alquds.co.uk/wp-content/uploads/2024/08/br-20082024.jpg",
+ "lang": "ar",
+ "link": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a-%d9%88%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-%d8%a2%d8%ae%d8%b1-%d8%a8%d9%82%d8%b5%d9%81-%d8%b4",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "القدس العربي",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a-%d9%88%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-%d8%a2%d8%ae%d8%b1-%d8%a8%d9%82%d8%b5%d9%81-%d8%b4"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4c3626544d",
+ "score": 63.88,
+ "source": "القدس العربي",
+ "source_id": "alqudsuk",
+ "source_url": "https://www.alquds.co.uk/",
+ "title": "مسيرة إسرائيلية تقتل فلسطينياً وتصيب آخر في خان يونس"
+}
