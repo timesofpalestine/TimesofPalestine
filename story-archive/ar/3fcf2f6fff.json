@@ -1,0 +1,32 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، يواجه النازحون في غزة أوضاعاً صعبة جداً، فانتقلوا من منازلهم إلى مناطق مكتظة بالسكان وسط أنقاض المباني. تتسم حياتهم الجديدة بالضغط الشديد والاكتظاظ البشري الذي يفاقم معاناتهم اليومية.\n\nتتفاقم الأزمة الإنسانية بنقص حاد في الخدمات الأساسية، خاصة المياه النظيفة، ما يرتب أعباء إضافية على النازحين في ظل ظروف معيشية قاسية. تعكس هذه الحالة الواقع الصعب الذي يعيشه آلاف السكان المشردين في قطاع غزة جراء الأحداث الأخيرة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/08/12/1115335",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-13T00:26:04+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/08/12/1115335",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3fcf2f6fff",
+ "score": 49.86,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "النازحون في غزة يعيشون في ظروف إنسانية حرجة"
+}
