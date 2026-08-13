@@ -1,0 +1,50 @@
+{
+ "brief": "The death toll from the war on Gaza has reached 73,389, according to Maan Wire. The figure reflects casualties accumulated since the conflict began, with numbers continuing to climb as military operations persist across the Palestinian territory.\n\nThe toll includes deaths from airstrikes, ground operations, and related violence. Medical facilities and rescue services have documented the casualties as they mount, though exact circumstances and timing of individual deaths vary across different regions of Gaza. International humanitarian organizations continue to track the figures as the conflict unfolds.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2166891.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162143/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%B9%D8%AF%D8%AF-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D8%AD%D8%B1%D8%A8-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-%D8%B9%D9%84%D9%89-%D8%BA%D8%B2%D8%A9-%D8%A5%D9%84%D9%89-73-%D8%A3%D9%84%D9%81%D8%A7-%D9%88389",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-reaches-73389",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-israeli-attacks-kill-palestinian-and-injure-several-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-13T09:57:32+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/M_SChe9HFpgvyUbBMDQOJs4Cj6b7ZpI00W9UxY6QwxAnyJ86rtJl9cjfLWOVdpka7UbmrNX4Jq6B7OUyquzntzeb3kzk6FySRGFw_CHLSlAeq-Hlo4WGNmWHuxGPphm_eqJUS5awxkeC2omUfWiym_gwpnK59zz9XO1l3RIM0Oa4xuNSsMion2EKmNo9lzdoTVWzPHAC_veSBnRwC0lMvLLHzyzGUShjMSrGeU4iLolCum2Bsc_uXRncK47hXXWUVde5J9Zz0u_tk6bdVfuVEiHpDBpZMNgiOSWM5ZHe8DcZBkSvVKHgrcYAENjrwuuPWi1A4FRGnx7fJALBrRuhaQ.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2166891.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2166891.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "534517d4fe",
+ "score": 63.92,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gaza death toll rises to 73,389"
+}
