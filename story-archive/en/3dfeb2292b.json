@@ -37,12 +37,6 @@
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
    "verified": true
-  },
-  {
-   "article": "https://mondoweiss.net/2026/08/understanding-israels-campaign-to-destroy-palestinian-refugee-camps-in-the-west-bank",
-   "name": "Mondoweiss",
-   "url": "https://mondoweiss.net/",
-   "verified": true
   }
  ],
  "date": "2026-08-13T06:40:00+00:00",
@@ -60,7 +54,7 @@
  "modified": null,
  "original": true,
  "pid": "3dfeb2292b",
- "score": 85.59,
+ "score": 85.53999999999999,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
