@@ -1541,7 +1541,12 @@ REFUSAL_RX = re.compile(
     r"not available in the|available in the (?:provided|source|material)|"
     r"encouraged to visit|visit the .{0,50}website|access to the (?:article|complete|full)|"
     r"i (?:cannot|can.?t|am unable to)|unable to (?:produce|write|provide|generate|create|summari[sz]e)|"
-    r"لا (?:أستطيع|يمكنني|نستطيع|يمكن(?:نا)?)\s*(?:إنتاج|كتابة|تقديم|صياغة|إعداد)|يتعذر|"
+    r"لا (?:أستطيع|يمكنني|نستطيع|يمكن(?:نا)?)\s*(?:إنتاج|كتابة|تقديم|صياغة|إعداد)|"
+    # «يتعذر» alone is an ordinary Arabic verb ("cannot be done") that belongs in
+    # news prose — it once cost the PNC diaspora report its whole Arabic edition
+    # (daily editor 2026-08-13). Only the refusal shape counts: the verb aimed at
+    # the act of producing copy, with or without «عليّ/علينا».
+    r"يتعذّ?ر\s*(?:علي(?:ّ|نا|نَا)?\s*)?(?:إنتاج|كتابة|تقديم|صياغة|إعداد|تلخيص)|"
     r"بناءً? على هذه المادة|لا (?:تتضمن|تحتوي|توجد).{0,20}(?:معلومات|أخبار)|"
     r"المادة المصدرية|المادة المتاحة|المادة المرفقة|هذه التعليمات|"
     r"المقال الكامل|النص الكامل|زيارة موقع|زيارة الموقع", re.I)

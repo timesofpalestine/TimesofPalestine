@@ -2375,3 +2375,33 @@ class ReaderGrowthHooksTests(unittest.TestCase):
         self.assertIn(tag, build.render_search_page("en", built_at))
         self.assertIn(tag, seo_extras.render_about("en", built_at))
         self.assertIn(tag, seo_extras.render_status("en"))
+
+
+class RefusalScreenTest(unittest.TestCase):
+    """The refusal screen catches model refusals, not ordinary Arabic prose.
+
+    Regression: «يتعذر» ("cannot be done") is an everyday Arabic verb. Matched
+    bare, it silently withheld the Arabic edition of a published report while
+    the English one ran (daily editor 2026-08-13). Both directions are asserted
+    so nobody restores the loose form.
+    """
+
+    def test_arabic_refusals_are_still_caught(self):
+        for refusal in [
+            "يتعذر عليّ إنتاج خبر من هذه المادة",
+            "يتعذّر تقديم ملخص كامل",
+            "يتعذر إعداد المادة المطلوبة",
+            "لا أستطيع كتابة الخبر",
+            "I cannot produce a brief from this material",
+        ]:
+            self.assertTrue(
+                build.REFUSAL_RX.search(refusal), f"missed refusal: {refusal}")
+
+    def test_ordinary_arabic_prose_publishes(self):
+        for prose in [
+            "أما حيث يتعذر إجراء انتخابات مباشرة، فتُشكَّل هيئة ناخبة",
+            "يتعذر على المرضى الوصول إلى المستشفى بسبب الحواجز",
+            "يتعذّر إصلاح شبكة الكهرباء قبل رفع الحصار",
+        ]:
+            self.assertIsNone(
+                build.REFUSAL_RX.search(prose), f"false refusal hit: {prose}")
