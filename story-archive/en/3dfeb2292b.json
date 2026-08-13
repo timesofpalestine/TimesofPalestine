@@ -21,18 +21,6 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/news/2026/8/13/us-diplomat-calls-israeli-settler-siege-of-west-bank-homes-act-of-terror?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/israel-sends-troops-settler-siege-us-ambassador-slams-act-terror",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
    "article": "https://t.me/maannews/36222",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
@@ -42,6 +30,18 @@
    "article": "https://www.dropsitenews.com/p/taybeh-west-bank-closed-military-zone-settlers",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/13/report-from-scene-of-palestinian-homes-besieged-by-settlers?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israel-sends-troops-west-bank-homes-besieged-jewish-settlers",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
    "verified": true
   },
   {
@@ -66,7 +66,7 @@
  "modified": null,
  "original": true,
  "pid": "3dfeb2292b",
- "score": 86.89,
+ "score": 86.82,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

@@ -1,0 +1,32 @@
+{
+ "brief": "AI systems with documented failure rates are already operational in military targeting decisions across Ukraine, Gaza, and Iran, according to a joint report by the AI Now Institute and Airwars. Heidy Khlaaf, chief AI scientist at the AI Now Institute, characterized global military development as an \"AI arms race,\" where nations are rapidly fielding autonomous systems without adequate safeguards or testing protocols.\n\nThe report, titled \"Anatomy of an AI Kill Chain,\" examines how AI algorithms guide military operations from target identification through strike execution. The researchers documented recurring errors in these systems, raising concerns about civilian casualties and the lack of human oversight at critical decision points in active combat zones, Democracy Now! reported.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "http://www.democracynow.org/2026/8/13/heidy_khlaaf",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-13T12:26:09+00:00",
+ "dek": "Militaries across the world are in an “AI arms race,” says Heidy Khlaaf, a chief AI scientist at the AI Now Institute, which just released a joint report with Airwars titled “Anatomy of an AI Kill Chain.” “What it is is a series of different types of AI…",
+ "image": "https://www.democracynow.org/images/story/50/83150/w320/SEG2-Military-AI_Maven-Heidy-Split.jpg",
+ "lang": "en",
+ "link": "http://www.democracynow.org/2026/8/13/heidy_khlaaf",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Democracy Now!",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "http://www.democracynow.org/2026/8/13/heidy_khlaaf"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6419e29da9",
+ "score": 62.53,
+ "source": "Democracy Now!",
+ "source_id": "democracynow",
+ "source_url": "https://www.democracynow.org/",
+ "title": "Militaries deploy error-prone AI systems in active conflicts worldwide"
+}
