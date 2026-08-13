@@ -1,0 +1,32 @@
+{
+ "brief": "أدانت حركة حماس اغتيال الاحتلال الإسرائيلي مدير شرطة غزة، معتبرة الخطوة بحسب المركز الفلسطيني للإعلام استمراراً للجرائم وسعياً لنشر الفوضى في القطاع. ولم توضح الحركة في بيانها هوية الضابط المقتول أو الظروف التفصيلية للعملية.\n\nيندرج الاغتيال ضمن سياق من العمليات الاستهدافية التي طالت عناصر أمنية فلسطينية خلال الحرب الجارية منذ أكتوبر 2023. وشهد قطاع غزة تصعيداً عسكرياً مستمراً بين القوات الإسرائيلية والفصائل الفلسطينية على مدى أشهر الصراع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/08/13/1115410",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-13T16:57:12+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/08/13/1115410",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0df2bc5691",
+ "score": 49.69,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "حماس تندد باغتيال مدير شرطة غزة"
+}
