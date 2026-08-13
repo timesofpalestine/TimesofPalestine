@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img">
+  <title>Israel blocks new banknotes as Gaza's tent markets reopen</title>
+  <desc>Illustration of a worn, torn and stitched Gaza banknote beside key figures: 93 per cent of bank branches damaged or inoperative, 91 ATMs out of service, cash-out commissions up to 55 per cent, and 77 per cent of households unable to reach markets in July 2026, with a bar chart of the WFP minimum expenditure basket at 11,984 shekels in July 2025, 1,989 shekels in November and a pre-October 2023 baseline of 1,717 shekels.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2eee8"/>
+      <stop offset="1" stop-color="#d9d3c6"/>
+    </linearGradient>
+    <linearGradient id="barGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c7a86b"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- header -->
+  <text x="90" y="68" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="3.5" fill="#c7a86b">GAZA · THE CASH ECONOMY</text>
+  <text x="90" y="128" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">Israel blocks new banknotes</text>
+  <text x="90" y="184" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">as Gaza's tent markets reopen</text>
+  <text x="90" y="228" font-family="Cairo,Arial,sans-serif" font-size="27" fill="#aaa9a5">إسرائيل تمنع الأوراق النقدية وأسواق الخيام تعود</text>
+  <line x1="90" y1="256" x2="1520" y2="256" stroke="#33353a" stroke-width="2"/>
+
+  <!-- LEFT: the banknote -->
+  <g>
+    <path d="M110,300 H640 L668,338 L628,376 L672,414 L630,452 L670,490 L626,528 L662,566 H110 Z"
+          fill="url(#paper)" stroke="#c7a86b" stroke-width="3"/>
+    <rect x="132" y="322" width="470" height="222" fill="none" stroke="#c7a86b" stroke-width="1.6" opacity="0.8"/>
+    <circle cx="215" cy="433" r="52" fill="none" stroke="#8a1f2d" stroke-width="2" opacity="0.8"/>
+    <circle cx="215" cy="433" r="38" fill="none" stroke="#286344" stroke-width="1.5" opacity="0.75"/>
+    <text x="215" y="447" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="42" fill="#8a1f2d">10</text>
+    <text x="320" y="392" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#3a3a3a">عشرة شواكل</text>
+    <text x="320" y="428" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#5a5a58" letter-spacing="1.5">10-SHEKEL NOTE</text>
+    <line x1="320" y1="452" x2="580" y2="452" stroke="#aaa9a5" stroke-width="1.2"/>
+    <line x1="320" y1="470" x2="540" y2="470" stroke="#aaa9a5" stroke-width="1.2"/>
+    <line x1="320" y1="488" x2="565" y2="488" stroke="#aaa9a5" stroke-width="1.2"/>
+
+    <!-- tear and repair stitches -->
+    <path d="M430,300 L408,352 L438,404 L410,458 L432,510 L414,566" fill="none" stroke="#8a8781" stroke-width="3" stroke-dasharray="9 7"/>
+    <g stroke="#8a1f2d" stroke-width="2.6">
+      <path d="M404,330 L436,346 M436,330 L404,346"/>
+      <path d="M410,392 L440,408 M440,392 L410,408"/>
+      <path d="M404,452 L434,468 M434,452 L404,468"/>
+      <path d="M410,512 L440,528 M440,512 L410,528"/>
+    </g>
+  </g>
+
+  <text x="110" y="618" font-family="'Libre Franklin',Arial,sans-serif" font-size="25" fill="#f2eee8">Worn notes are a screening device</text>
+  <text x="110" y="652" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#59a97d">الأوراق التالفة تُرفض في الأسواق</text>
+  <text x="110" y="692" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Note-repair stalls earn about 5 shekels per note restored.</text>
+  <text x="110" y="718" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Worn paper carries a lower commission than clean paper.</text>
+
+  <rect x="110" y="748" width="560" height="52" rx="6" fill="#16171a" stroke="#2b2d31"/>
+  <text x="130" y="781" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">Approved importers set the terms:  5 &#8594; 10 &#8594; 13</text>
+
+  <!-- RIGHT: stat cards -->
+  <g font-family="'Libre Franklin',Arial,sans-serif">
+    <g>
+      <rect x="830" y="290" width="320" height="150" rx="8" fill="#16171a" stroke="#2b2d31"/>
+      <text x="852" y="358" font-size="52" fill="#c7a86b">93%</text>
+      <text x="852" y="388" font-size="16" fill="#f2eee8">of bank branches damaged</text>
+      <text x="852" y="408" font-size="16" fill="#f2eee8">or inoperative</text>
+      <text x="852" y="430" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">من فروع البنوك خارج الخدمة</text>
+    </g>
+    <g>
+      <rect x="1180" y="290" width="320" height="150" rx="8" fill="#16171a" stroke="#2b2d31"/>
+      <text x="1202" y="358" font-size="52" fill="#c7a86b">91</text>
+      <text x="1202" y="388" font-size="16" fill="#f2eee8">ATMs out of service after</text>
+      <text x="1202" y="408" font-size="16" fill="#f2eee8">being destroyed</text>
+      <text x="1202" y="430" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">صرافاً آلياً خارج الخدمة</text>
+    </g>
+    <g>
+      <rect x="830" y="460" width="320" height="150" rx="8" fill="#16171a" stroke="#2b2d31"/>
+      <text x="852" y="528" font-size="52" fill="#C8102E">55%</text>
+      <text x="852" y="558" font-size="16" fill="#f2eee8">top cash-out commission</text>
+      <text x="852" y="578" font-size="16" fill="#f2eee8">in 2025 (takyeesh)</text>
+      <text x="852" y="600" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">عمولة تسييل النقد (تكييش)</text>
+    </g>
+    <g>
+      <rect x="1180" y="460" width="320" height="150" rx="8" fill="#16171a" stroke="#2b2d31"/>
+      <text x="1202" y="528" font-size="52" fill="#C8102E">77%</text>
+      <text x="1202" y="558" font-size="16" fill="#f2eee8">of households could not</text>
+      <text x="1202" y="578" font-size="16" fill="#f2eee8">reach markets, July 2026</text>
+      <text x="1202" y="600" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">من الأسر تعذّر وصولها للأسواق</text>
+    </g>
+  </g>
+
+  <!-- chart -->
+  <g font-family="'Libre Franklin',Arial,sans-serif">
+    <text x="830" y="660" font-size="20" fill="#f2eee8">Minimum expenditure basket, shekels</text>
+    <text x="830" y="684" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#59a97d">سلة النفقات الدنيا بالشيكل</text>
+
+    <rect x="1010" y="700" width="480" height="22" fill="url(#barGold)"/>
+    <text x="830" y="717" font-size="15" fill="#aaa9a5">Jul 2025 peak</text>
+    <text x="1478" y="717" text-anchor="end" font-size="15" fill="#f2eee8" font-weight="bold">11,984</text>
+
+    <rect x="1010" y="734" width="80" height="22" fill="#286344"/>
+    <text x="830" y="751" font-size="15" fill="#aaa9a5">Nov 2025</text>
+    <text x="1102" y="751" font-size="15" fill="#f2eee8">1,989</text>
+
+    <rect x="1010" y="768" width="69" height="22" fill="#4a4c50"/>
+    <text x="830" y="785" font-size="15" fill="#aaa9a5">Pre-Oct 2023</text>
+    <text x="1091" y="785" font-size="15" fill="#f2eee8">1,717</text>
+
+    <text x="830" y="815" font-size="15" fill="#aaa9a5">November basket still 16% above the pre-October 2023 baseline.</text>
+  </g>
+
+  <line x1="90" y1="845" x2="1520" y2="845" stroke="#33353a" stroke-width="2"/>
+  <text x="90" y="872" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Sources: OCHA situation reports; PCBS; Palestine Monetary Authority; WFP; Prism Reports; Mada Masr; +972 Magazine</text>
+</svg>
