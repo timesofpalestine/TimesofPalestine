@@ -1,0 +1,56 @@
+{
+ "brief": "Israel's military killed Jamal Abu Kamil, the police chief of Gaza City, in an airstrike, Al Jazeera English reported. The strike marked another casualty among Gaza's security leadership as Israeli operations continued across the enclave. Abu Kamil held the senior police position in Gaza's largest city at the time of his death.\n\nA second person was killed in a separate strike on Khan Younis in the southern part of the territory. The attacks underscored the scope of Israeli military action, which has extended to targets across multiple Gaza locations and claimed lives among both officials and civilians in recent operations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/13/gaza-city-police-chief-killed-as-israel-pushes-on-with-deadly-strikes?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-kills-two-palestinians-in-gaza-2",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-killed-head-police-force-gazas-ministry-interior-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168138",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162175/%D9%86%D8%B9%D9%8A%D9%85-%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%B1%D8%B3%D8%A7%D9%84%D8%A9-%D8%A8%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D9%84%D8%B6%D8%A7%D9%85%D9%86%D9%8A-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-13T23:09:15+00:00",
+ "dek": "Latest Israeli attacks kill police official Jamal Abu Kamil in Gaza City and another person in Khan Younis.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/2026-08-13T154029Z_991999610_RC2NXMAAT6P0_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-1786661111.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/13/gaza-city-police-chief-killed-as-israel-pushes-on-with-deadly-strikes?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/13/gaza-city-police-chief-killed-as-israel-pushes-on-with-deadly-strikes?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "77ee309f16",
+ "score": 63.63,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strikes kill Gaza police chief in fresh attacks"
+}
