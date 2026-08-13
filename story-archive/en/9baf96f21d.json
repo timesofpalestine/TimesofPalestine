@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli occupation forces carried out multiple attacks across the Gaza Strip on Wednesday, killing one Palestinian and injuring several others, IMEMC News reported. The operations involved artillery strikes, tank fire, drone strikes, and naval bombardment across different areas of the territory.\n\nThe military campaign marked a continuation of violence despite an agreement billed as a ceasefire. The attacks targeted multiple locations throughout Gaza, according to the outlet's account of the day's events.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/gaza-israeli-attacks-kill-palestinian-and-injure-several-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-condemns-israeli-strike-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-13T00:52:29+00:00",
+ "dek": "Israeli occupation forces carried out several attacks across the Gaza Strip on Wednesday, killing one Palestinian and injuring several others in continued violations of the “ceasefire” agreement. Israeli artillery, tanks, drones, and naval vessels targeted…",
+ "image": "https://imemc.org/wp-content/uploads/2026/08/Gaza-e1786582302307.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/gaza-israeli-attacks-kill-palestinian-and-injure-several-others",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/gaza-israeli-attacks-kill-palestinian-and-injure-several-others"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9baf96f21d",
+ "score": 59.93,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces kill Palestinian, wound others in Gaza"
+}
