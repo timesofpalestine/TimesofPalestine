@@ -1,0 +1,56 @@
+{
+ "brief": "Israeli drone strikes killed at least two people in Gaza on Thursday, including a senior police official, Al Jazeera English reported. The strikes also wounded several others, though exact casualty figures were not immediately confirmed.\n\nThe identity of the second fatality and the specific locations targeted in the operation remained unclear. Gaza's security forces have faced repeated Israeli military operations in recent months as fighting continues in the enclave.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/13/israeli-strikes-in-gaza-kill-two-including-police-chief?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-killed-head-police-force-gazas-ministry-interior-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-strikes-gaza-kill-two-people-first-fatalities-more-week-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-israeli-attacks-kill-palestinian-and-injure-several-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162175/%D9%86%D8%B9%D9%8A%D9%85-%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%B1%D8%B3%D8%A7%D9%84%D8%A9-%D8%A8%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D9%84%D8%B6%D8%A7%D9%85%D9%86%D9%8A-%D8%A7%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-13T21:10:47+00:00",
+ "dek": "Israeli drone strikes killed at least 2 people and wounded several others in Gaza on Thursday.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786655382.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/13/israeli-strikes-in-gaza-kill-two-including-police-chief?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/13/israeli-strikes-in-gaza-kill-two-including-police-chief?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "871b8e7582",
+ "score": 63.56,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strikes in Gaza kill police chief, one other"
+}
