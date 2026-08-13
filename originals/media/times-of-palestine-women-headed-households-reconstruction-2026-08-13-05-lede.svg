@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Gaza: 58,600 households now headed by women</title>
+  <desc id="d">Dark editorial graphic. Left column: UN Women advocacy brief of 17 April 2026 reports more than 58,600 women-headed households in Gaza, about 14 per cent of all households, up from 9 per cent before October 2023. Supporting figures: 22,057 women widowed since October 2023 per PCBS; 1,250 shekels, about 378 dollars, in cash to more than 5,000 households between 5 and 8 January 2026; up to 83 per cent of women in Khan Younis and Rafah lost ownership documents. Right panel: bar chart comparing the two estimates of the share of households headed by women — UN Women 9 per cent before October 2023 rising to 14 per cent, and PCBS 12 per cent rising to 18 per cent.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- eyebrow -->
+  <text x="90" y="92" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="2.4" fill="#c7a86b">UN WOMEN ADVOCACY BRIEF · 17 APRIL 2026</text>
+
+  <!-- headline -->
+  <text x="90" y="158" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Widowed and rebuilding:</text>
+  <text x="90" y="208" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Gaza's women-headed homes</text>
+  <text x="90" y="256" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#59a97d" text-anchor="start" direction="rtl">الأسر التي ترأسها نساء في غزة</text>
+
+  <line x1="90" y1="292" x2="640" y2="292" stroke="#8a1f2d" stroke-width="3"/>
+
+  <!-- big number -->
+  <text x="90" y="410" font-family="'Libre Franklin',Arial,sans-serif" font-weight="700" font-size="112" fill="#c7a86b">58,600</text>
+  <text x="90" y="448" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">households headed by women — 14% of all households</text>
+  <text x="90" y="482" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="start" direction="rtl">أسرة يرأسها نساء</text>
+
+  <line x1="90" y1="518" x2="640" y2="518" stroke="#ffffff" stroke-opacity="0.14" stroke-width="2"/>
+
+  <!-- stat rows -->
+  <text x="90" y="583" font-family="'Libre Franklin',Arial,sans-serif" font-weight="700" font-size="34" fill="#59a97d">22,057</text>
+  <text x="250" y="578" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">women widowed since October 2023</text>
+  <text x="250" y="600" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">PCBS, March 2026</text>
+
+  <text x="90" y="663" font-family="'Libre Franklin',Arial,sans-serif" font-weight="700" font-size="34" fill="#59a97d">1,250</text>
+  <text x="250" y="658" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">shekels (about $378) cash per household</text>
+  <text x="250" y="680" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">to over 5,000 households, 5–8 January 2026</text>
+
+  <text x="90" y="743" font-family="'Libre Franklin',Arial,sans-serif" font-weight="700" font-size="34" fill="#59a97d">83%</text>
+  <text x="250" y="738" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">of women in Khan Younis and Rafah</text>
+  <text x="250" y="760" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">lost ownership documents (May–July 2025)</text>
+
+  <text x="90" y="866" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="1.6" fill="#c7a86b">TIMES OF PALESTINE</text>
+
+  <!-- chart panel -->
+  <rect x="720" y="110" width="830" height="730" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.10"/>
+
+  <text x="760" y="172" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Share of households headed by women</text>
+  <text x="760" y="208" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" text-anchor="start" direction="rtl">نسبة الأسر التي ترأسها نساء</text>
+
+  <!-- legend -->
+  <rect x="760" y="238" width="26" height="14" fill="#4b4d51"/>
+  <text x="796" y="250" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Before October 2023</text>
+  <rect x="1010" y="238" width="26" height="14" fill="#C8102E"/>
+  <text x="1046" y="250" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Latest estimate</text>
+
+  <!-- gridlines -->
+  <line x1="810" y1="649" x2="1500" y2="649" stroke="#ffffff" stroke-opacity="0.08"/>
+  <line x1="810" y1="538" x2="1500" y2="538" stroke="#ffffff" stroke-opacity="0.08"/>
+  <line x1="810" y1="427" x2="1500" y2="427" stroke="#ffffff" stroke-opacity="0.08"/>
+  <line x1="810" y1="316" x2="1500" y2="316" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="800" y="654" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">5%</text>
+  <text x="800" y="543" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">10%</text>
+  <text x="800" y="432" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">15%</text>
+  <text x="800" y="321" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">20%</text>
+
+  <!-- baseline -->
+  <line x1="810" y1="760" x2="1500" y2="760" stroke="#ffffff" stroke-opacity="0.30" stroke-width="2"/>
+
+  <!-- group A: UN Women 9% -> 14% -->
+  <rect x="830" y="560" width="90" height="200" fill="#4b4d51"/>
+  <rect x="945" y="449" width="90" height="311" fill="#C8102E"/>
+  <text x="875" y="544" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">9%</text>
+  <text x="990" y="433" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-weight="700" font-size="24" fill="#f2eee8">14%</text>
+  <text x="932" y="792" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#c7a86b">UN Women · April 2026</text>
+
+  <!-- group B: PCBS 12% -> 18% -->
+  <rect x="1180" y="494" width="90" height="266" fill="#4b4d51"/>
+  <rect x="1295" y="360" width="90" height="400" fill="#C8102E"/>
+  <text x="1225" y="478" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">12%</text>
+  <text x="1340" y="344" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-weight="700" font-size="24" fill="#f2eee8">18%</text>
+  <text x="1282" y="792" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#c7a86b">PCBS · March 2026</text>
+
+  <text x="760" y="826" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">The two estimates use different baselines and reference periods.</text>
+  <text x="720" y="866" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Sources: UN Women brief, 17 April 2026; PCBS; OCHA situation reports.</text>
+</svg>

@@ -1,0 +1,38 @@
+{
+ "brief": "Three Palestinian families in Qusra, occupied West Bank, are trapped inside their homes under siege by Israeli settlers, Al Jazeera English reported. The blockade confines residents to their compounds and restricts their ability to move in and out of the dwellings, cutting off access to supplies and services.\n\nThe families remain confined as tensions between Palestinians and settlers persist in the village. Such confrontations have become increasingly common in Qusra, where clashes between the two communities have intensified in recent months amid the broader instability gripping the occupied territory. Israeli settler expansion and Palestinian resistance to land seizures have fueled recurring disputes in the area.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/13/three-palestinian-families-besieged-in-their-homes-by-israeli-settlers?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/btselem-warns-of-escalating-colonizer-seizures-in-qusra",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-13T04:34:46+00:00",
+ "dek": "Three Palestinian families in Qusra, occupied West Bank, are being besieged inside their homes.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786595622.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/13/three-palestinian-families-besieged-in-their-homes-by-israeli-settlers?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/13/three-palestinian-families-besieged-in-their-homes-by-israeli-settlers?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2950c0c95f",
+ "score": 49.41,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers besiege three Palestinian families in West Bank village"
+}
