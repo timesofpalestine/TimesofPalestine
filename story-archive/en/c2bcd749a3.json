@@ -6,7 +6,19 @@
    "article": "original:israeli-front-pages-2026-08-13.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-colonists-escalate-attacks-across-the-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-three-palestinians-settlers-seize-tractor-near",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-13T08:15:00+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "c2bcd749a3",
- "score": 85.97999999999999,
+ "score": 85.93,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
