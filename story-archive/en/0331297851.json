@@ -1,0 +1,44 @@
+{
+ "brief": "What Washington is reading this morning, from the American front pages and the think tanks that brief them.\n\nThe New York Times put the occupied West Bank at the top of its Middle East file. Two Palestinian families trapped in their homes by settlers, it reported, have cast a spotlight on the army's failure to curtail settler violence — the Qusra siege, arriving in the paper that Congress reads over breakfast.\n\nBelow it the Times ran the Gulf's response to the Hormuz crisis: exporters spending billions to build routes around the strait, on the reasoning that a ceasefire would not make the chokepoint safe again.\n\nThe Washington Post's world lead was Lebanon, and the distance between an American president calling the ceasefire a success and residents of the Israeli-held zone calling it a prison. Its national security desk published the Pentagon's own accounting of last year's Yemen campaign: close to 400 civilians killed or wounded, in the first operation run after the office that existed to reduce such harm was dismantled.\n\nThe Hill gave its international page to the clock on Gaza. Nine months into the effort to remake the Strip, it wrote, Netanyahu's rejection of the fifteen-point roadmap is the latest blow to a plan with no successor drafted. Its Hormuz item was Richard Haass, the former diplomat, contradicting Trump flatly: nobody is in total control of the strait.\n\nAxios and Politico spent the day on Wisconsin, where a moderate Democrat beat a democratic socialist by roughly three thousand votes after trailing by twenty points in his own polling.\n\nThat result lands on a fresh think-tank argument. The Arab Center Washington DC, the capital's Arab-perspective research institute, published Gregory Aftandilian's case that the Gaza war has moved Democratic voters on Israel and Palestine and lifted democratic socialist candidates with it. His thesis now has a counter-example in it, which is what makes the coming primaries worth watching from here.",
+ "cat": "uspress",
+ "corroborating_sources": [
+  {
+   "article": "original:washington-reading-2026-08-13.en",
+   "name": "Times of Palestine",
+   "url": "",
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/13/israeli-settlers-besiege-three-palestinian-families-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/aug/12/israeli-militants-besiege-two-palestinian-families-in-their-west-bank-homes",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-13T08:20:00+00:00",
+ "dek": "What Washington is reading this morning, from the American front pages and the think tanks that brief them.",
+ "image": "/media/times-of-palestine-us-press.svg",
+ "lang": "en",
+ "link": "original:washington-reading-2026-08-13.en",
+ "max_age_hours": 336.0,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": true,
+ "pid": "0331297851",
+ "score": 87.88,
+ "source": "Times of Palestine",
+ "source_id": "top-original",
+ "source_url": "",
+ "title": "Washington reads a settler siege and argues about its own socialists"
+}

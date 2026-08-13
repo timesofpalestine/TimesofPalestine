@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/QudsN/728781",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
    "article": "https://t.me/AlQastalps/390065",
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
@@ -36,6 +30,12 @@
    "article": "https://www.maannews.net/news/2166885.html",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/8/13/%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d9%8a%d9%82%d8%aa%d8%ad%d9%85%d9%88%d9%86-%d8%a7%d9%84%d8%a3%d9%82%d8%b5%d9%89-%d9%88%d8%a7%d8%b9%d8%aa%d9%82%d8%a7%d9%84-33?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
    "verified": true
   }
  ],
@@ -54,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "dfb2404b5c",
- "score": 49.67,
+ "score": 49.36,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
