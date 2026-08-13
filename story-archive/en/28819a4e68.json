@@ -6,19 +6,13 @@
    "article": "original:washington-brief-2026-08-12.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.al-monitor.com/originals/2026/08/israeli-strikes-gaza-kill-two-people-first-fatalities-more-week-medics-say",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/gaza-israeli-attacks-kill-palestinian-and-injure-several-others",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-12T13:05:00+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "28819a4e68",
- "score": 82.21000000000001,
+ "score": 82.02000000000001,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
