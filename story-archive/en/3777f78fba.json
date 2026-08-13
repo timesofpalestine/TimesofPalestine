@@ -21,6 +21,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-settlers-keep-siege-palestinian-homes-despite-army-intervention",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.dropsitenews.com/p/taybeh-west-bank-closed-military-zone-settlers",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
@@ -54,7 +60,7 @@
  "modified": null,
  "original": false,
  "pid": "3777f78fba",
- "score": 49.61,
+ "score": 49.4,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
