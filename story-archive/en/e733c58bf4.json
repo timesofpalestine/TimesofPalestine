@@ -13,6 +13,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/btselem-warns-of-escalating-colonizer-seizures-in-qusra",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-13T06:32:07+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "e733c58bf4",
- "score": 49.44,
+ "score": 49.25,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
