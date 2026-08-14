@@ -12,10 +12,10 @@
    "article": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-%d8%a7%d8%ab%d9%86%d9%8a%d9%86-%d8%a8%d8%a7%d9%84%d8%b1%d8%b5%d8%a7%d8%b5-%d9%81%d9%8a",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": true
+   "verified": false
   },
   {
-   "article": "https://t.me/Palinfo/315122",
+   "article": "https://t.me/Palinfo/315125",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
    "verified": true
@@ -42,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "c560605c60",
- "score": 63.43,
+ "score": 63.14,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
