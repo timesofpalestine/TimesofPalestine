@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli soldiers prevented humanitarian aid from reaching Palestinians in a besieged area, according to Al Jazeera English. The blockade disrupted supply lines to the affected population at a time when residents already face severe shortages of essential resources including food, medicine, and other necessities.\n\nThe intervention halted what appeared to be a planned delivery operation. The specific location of the blockade, the volume of aid involved, and the soldiers' stated justification for stopping the convoy remain unclear from available reports.\n\nThe incident adds to a pattern of restrictions on movement and goods flowing into Palestinian territories, limiting access to humanitarian assistance in areas facing acute need.",
+ "cat": "economy",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/14/israeli-soldiers-prevent-aid-delivery-to-besieged-palestinians?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-14T12:11:56+00:00",
+ "dek": "Israeli soldiers prevent aid delivery to besieged Palestinians.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/Qusra-activist-horizontal-thumb-1786709377.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/14/israeli-soldiers-prevent-aid-delivery-to-besieged-palestinians?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/14/israeli-soldiers-prevent-aid-delivery-to-besieged-palestinians?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fa27d4582c",
+ "score": 49.83,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli soldiers block aid delivery to besieged Palestinians"
+}
