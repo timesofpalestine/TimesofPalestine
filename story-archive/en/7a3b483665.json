@@ -1,0 +1,32 @@
+{
+ "brief": "A new documentary titled \"American Doctor\" follows U.S. physicians working in Gaza's hospitals as Israel conducts military operations targeting medical facilities, Democracy Now! reported. The film examines how besieged hospitals have continued treating patients despite the conflict, with local medical staff risking their lives to provide care.\n\nThe documentary captures the conditions facing healthcare workers in Gaza during what the outlet characterizes as Israel's war on the Palestinian territory. It documents both the challenges of operating under bombardment and the commitment of medical professionals to continue their work amid widespread destruction.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "http://67.228.192.88:3000/2026/8/14/american_doctor_documentary",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-14T12:42:52+00:00",
+ "dek": "The new documentary American Doctor tells the story of how the besieged hospitals of Gaza have continued to treat the sick and wounded throughout Israel’s genocidal war on the Palestinian territory, with local medical staff risking their own lives in the…",
+ "image": "https://www.democracynow.org/images/story/71/83171/w320/SEG3-poster-promo-pic-split.jpg",
+ "lang": "en",
+ "link": "http://67.228.192.88:3000/2026/8/14/american_doctor_documentary",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Democracy Now!",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "http://67.228.192.88:3000/2026/8/14/american_doctor_documentary"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7a3b483665",
+ "score": 62.74,
+ "source": "Democracy Now!",
+ "source_id": "democracynow",
+ "source_url": "https://www.democracynow.org/",
+ "title": "Documentary follows U.S. doctors treating Gaza's wounded amid hospital strikes."
+}
