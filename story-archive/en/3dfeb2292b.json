@@ -6,18 +6,30 @@
    "article": "original:huckabee-qusra-israeli-terrorists-2026-08-13.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": false
+   "verified": true
   },
   {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/france-condemns-israeli-settlers-seizure-palestinian-homes-qusra",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/us-wants-netanyahu-condemn-settler-siege-palestinian-village-officials-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   },
   {
    "article": "https://t.me/maannews/36222",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53764",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
    "verified": true
   },
   {
@@ -42,7 +54,7 @@
  "modified": null,
  "original": true,
  "pid": "3dfeb2292b",
- "score": 82.50999999999999,
+ "score": 82.47,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
