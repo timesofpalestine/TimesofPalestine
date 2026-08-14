@@ -6,7 +6,19 @@
    "article": "https://pchrgaza.org/depriving-gazas-population-of-life-essentials-and-making-forced-displacement-a-constant-reality-growing-indicators-of-plan-to-displace-palestinians-outside-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-kills-two-palestinians-in-gaza-2",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168138",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-13T17:38:04+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "d8eafa227a",
- "score": 71.19,
+ "score": 71.15,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
