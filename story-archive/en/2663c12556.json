@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli soldiers stand accused of supporting settlers during an assault on the Palestinian village of Qusra, according to Al Jazeera English. The allegations suggest military personnel provided assistance to settlers engaged in what observers characterize as \"terrorist\" activities against the community.\n\nThe incident in Qusra reflects longstanding tensions between Palestinian residents and Israeli settlers across the occupied West Bank. Villages in the region have experienced repeated raids, property destruction, and confrontations attributed to settler groups. The accusations against soldiers underscore wider disputes over military conduct and the role of armed forces in areas where settler activity occurs.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/14/israeli-soldiers-accused-of-supporting-terrorist-settlers-in-qusra?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53764",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-14T21:45:20+00:00",
+ "dek": "Israeli soldiers accused of supporting ‘terrorist’ settlers in Qusra.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786743909.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/14/israeli-soldiers-accused-of-supporting-terrorist-settlers-in-qusra?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/14/israeli-soldiers-accused-of-supporting-terrorist-settlers-in-qusra?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2663c12556",
+ "score": 49.77,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli soldiers accused of backing settlers in Qusra attack"
+}

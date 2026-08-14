@@ -6,19 +6,7 @@
    "article": "original:kushner-blair-mladenov-gaza-mission-2026-08-14.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/news/2026/8/14/kushner-to-visit-israel-after-netanyahu-rejects-gaza-board-of-peace-plan?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/kushner-visit-israel-discuss-trumps-gaza-plan",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-14T06:40:00+00:00",
@@ -36,7 +24,7 @@
  "modified": null,
  "original": true,
  "pid": "8d6419d581",
- "score": 85.74000000000001,
+ "score": 85.7,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
