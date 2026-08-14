@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Israel limits weekly Gaza exits to 400 visa holders and documented medical cases</title>
+  <desc id="dsc">Diagram of the exit route from Gaza through the Kerem Shalom crossing, capped at 400 people a week and restricted to visa holders or documented medical need, onward to the Allenby bridge or Ramon airport and a third country. Below, bars show unemployment reported by the Palestinian Central Bureau of Statistics: 69 percent in Gaza and 80 percent among ages 15 to 29 in the fourth quarter of 2024, and 27.5 percent in the West Bank in the fourth quarter of 2025.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <marker id="arw" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0 1 L11 6 L0 11 Z" fill="#c7a86b"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- Title -->
+  <text x="110" y="112" font-family="'Source Serif 4',Georgia,serif" font-size="50" fill="#f2eee8">Israel caps Gaza exits at 400 a week —</text>
+  <text x="110" y="168" font-family="'Source Serif 4',Georgia,serif" font-size="50" fill="#f2eee8">visa holders and documented medical cases</text>
+  <text x="110" y="214" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#c7a86b">إسرائيل تحصر مغادرة غزة بـ400 أسبوعياً: تأشيرة أو حالة طبية</text>
+
+  <line x1="110" y1="245" x2="1520" y2="245" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- Flow eyebrow -->
+  <text x="110" y="278" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="3" fill="#aaa9a5">WEEKLY EXIT ROUTE</text>
+  <text x="430" y="278" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">مسار الخروج الأسبوعي</text>
+
+  <!-- Node: Gaza -->
+  <rect x="110" y="325" width="220" height="150" rx="10" fill="#17181b" stroke="#8a1f2d" stroke-width="3"/>
+  <text x="140" y="390" font-family="'Libre Franklin',Arial,sans-serif" font-size="34" fill="#f2eee8">GAZA</text>
+  <text x="140" y="428" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#c7a86b">غزة</text>
+
+  <!-- Node: Kerem Shalom gate -->
+  <rect x="430" y="300" width="300" height="200" rx="10" fill="#17181b" stroke="#c7a86b" stroke-width="3"/>
+  <text x="460" y="340" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" fill="#f2eee8">KEREM SHALOM</text>
+  <text x="460" y="368" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">معبر كرم أبو سالم</text>
+  <rect x="460" y="382" width="120" height="4" fill="#8a1f2d"/>
+  <text x="460" y="452" font-family="'Source Serif 4',Georgia,serif" font-size="66" font-weight="700" fill="#c7a86b">400</text>
+  <text x="600" y="452" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">people</text>
+  <text x="600" y="428" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">per week</text>
+  <text x="460" y="484" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">حد أقصى أسبوعياً</text>
+
+  <!-- Node: Allenby -->
+  <rect x="880" y="300" width="290" height="100" rx="10" fill="#17181b" stroke="#286344" stroke-width="3"/>
+  <text x="910" y="342" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">ALLENBY BRIDGE</text>
+  <text x="910" y="374" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d">جسر اللنبي</text>
+
+  <!-- Node: Ramon -->
+  <rect x="880" y="410" width="290" height="100" rx="10" fill="#17181b" stroke="#286344" stroke-width="3"/>
+  <text x="910" y="452" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">RAMON AIRPORT</text>
+  <text x="910" y="484" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d">مطار رامون</text>
+
+  <!-- Node: third country -->
+  <rect x="1290" y="330" width="230" height="130" rx="10" fill="#17181b" stroke="#c7a86b" stroke-width="3"/>
+  <text x="1318" y="390" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">THIRD COUNTRY</text>
+  <text x="1318" y="424" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#c7a86b">دولة ثالثة</text>
+
+  <!-- Arrows -->
+  <line x1="340" y1="400" x2="418" y2="400" stroke="#c7a86b" stroke-width="3" marker-end="url(#arw)"/>
+  <path d="M740 368 C 800 350, 830 348, 868 348" fill="none" stroke="#c7a86b" stroke-width="3" marker-end="url(#arw)"/>
+  <path d="M740 432 C 800 452, 830 458, 868 458" fill="none" stroke="#c7a86b" stroke-width="3" marker-end="url(#arw)"/>
+  <path d="M1180 350 C 1225 356, 1245 366, 1278 376" fill="none" stroke="#c7a86b" stroke-width="3" marker-end="url(#arw)"/>
+  <path d="M1180 458 C 1225 452, 1245 440, 1278 428" fill="none" stroke="#c7a86b" stroke-width="3" marker-end="url(#arw)"/>
+
+  <!-- Conditions -->
+  <text x="110" y="560" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="2" fill="#aaa9a5">CONDITIONS</text>
+  <text x="110" y="588" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">الشروط</text>
+
+  <rect x="430" y="530" width="280" height="76" rx="8" fill="#1a1b1f" stroke="#3a3b3f" stroke-width="2"/>
+  <text x="456" y="562" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">VISA HOLDER</text>
+  <text x="456" y="590" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#c7a86b">حامل تأشيرة</text>
+
+  <rect x="740" y="530" width="360" height="76" rx="8" fill="#1a1b1f" stroke="#3a3b3f" stroke-width="2"/>
+  <text x="766" y="562" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">DOCUMENTED MEDICAL NEED</text>
+  <text x="766" y="590" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#c7a86b">حالة طبية موثقة</text>
+
+  <line x1="110" y1="632" x2="1520" y2="632" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- Chart -->
+  <text x="110" y="666" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="3" fill="#aaa9a5">UNEMPLOYMENT (PCBS)</text>
+  <text x="500" y="666" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">البطالة</text>
+
+  <text x="110" y="703" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">Gaza, overall — Q4 2024</text>
+  <rect x="620" y="686" width="500" height="22" fill="#26272b"/>
+  <rect x="620" y="686" width="345" height="22" fill="#C8102E"/>
+  <text x="1136" y="704" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">69%</text>
+
+  <text x="110" y="759" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">Gaza, ages 15–29 — Q4 2024</text>
+  <rect x="620" y="742" width="500" height="22" fill="#26272b"/>
+  <rect x="620" y="742" width="400" height="22" fill="#C8102E"/>
+  <text x="1136" y="760" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">80%</text>
+
+  <text x="110" y="815" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">West Bank — Q4 2025</text>
+  <rect x="620" y="798" width="500" height="22" fill="#26272b"/>
+  <rect x="620" y="798" width="138" height="22" fill="#59a97d"/>
+  <text x="1136" y="816" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">27.5%</text>
+
+  <!-- Footnotes -->
+  <text x="110" y="858" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">COGAT said in May it moved about 130 visa holders through Kerem Shalom to Jordan · Rafah: about 2,500 exits, 2,300 entries</text>
+  <text x="110" y="882" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#7d7c79">Sources: Israel Hayom (April), COGAT via CGTN, PCBS labour force surveys — Times of Palestine</text>
+</svg>
