@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/8/14/analysis-israels-government-cant-disown-west-bank-settler-violence?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/surrounded-israels-new-west-bank-settlements-bring-chaos-palestinians",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-14T16:46:30+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "91024aea6a",
- "score": 48.57,
+ "score": 48.24,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

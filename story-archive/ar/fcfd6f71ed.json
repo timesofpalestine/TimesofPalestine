@@ -1,0 +1,32 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، شنّ مستوطنون اعتداءات على فلسطينيين في مناطق متعددة بالضفة الغربية، أسفرت عن إصابات في صفوفهم وأدّت إلى مواجهات عنيفة بين الطرفين. وكانت هذه الاعتداءات موزّعة على مواقع مختلفة من الضفة الغربية المحتلة.\n\nوتأتي هذه الحوادث في سياق تصعيد مستمر للعنف الاستيطاني ضد الفلسطينيين في الأراضي المحتلة، حيث تشهد الضفة الغربية موجات متكررة من الاعتداءات والمواجهات بين السكان الفلسطينيين والمستوطنين الإسرائيليين.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/08/14/1115474",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-14T18:50:03+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-westbank-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/08/14/1115474",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fcfd6f71ed",
+ "score": 63.64,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "مستوطنون يعتدون على فلسطينيين بالضفة الغربية"
+}
