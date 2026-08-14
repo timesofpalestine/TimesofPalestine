@@ -13,30 +13,24 @@
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
    "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/315029",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": false
   }
  ],
  "date": "2026-08-14T06:31:00+00:00",
  "dek": "",
- "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "image": "https://cdn4.telesco.pe/file/cST6d8iWUHIZTYTD7cTzzNyVuVzZGgqn9HQmwvyuNTxxaJVgJpRZxwvD5dlQWTNpsvTCvSrqbAw8YqbTl30MuTeOveF1EGf55CIv5V8BEIlpKkHEiWIEPRORkX2gey4zprLsA4G3UgDzidlopRdLY8aCgIMRAYkmOv-f4Gx0Sw0vR8W1yde6uPOdeM1gYWX3ltHMTaonxg1c_EBWQRIaoXtZXpBUjLekDCdQnimeGNZaquSTIo9EgaWRNrttuEdjXp7ZJRLk6ZLo2ZNY9eZILKnrC4kHSM7l00JSNAWW-3j45oZfMIushjlV0AXSeHvjI3Zemu4FNlofUMLKyne3Ag",
  "lang": "ar",
  "link": "https://t.me/AlQastalps/390188",
  "max_age_hours": 72,
  "media": {
-  "credit": "Graphic: Times of Palestine",
+  "credit": "القسطل · تيليغرام",
   "licenseUrl": null,
-  "rightsBasis": "owned",
-  "source": "Times of Palestine"
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/AlQastalps/390188"
  },
  "modified": null,
  "original": false,
  "pid": "7d303e787b",
- "score": 63.3,
+ "score": 63.11,
  "source": "القسطل · تيليغرام",
  "source_id": "tg-qastal",
  "source_url": "https://t.me/AlQastalps",
