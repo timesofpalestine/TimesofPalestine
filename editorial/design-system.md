@@ -515,6 +515,19 @@ hand-build the filename.
   full-height scrim so the overlay headline owns the frame. Never
   remove the dimming to "show the graphic" — the story page shows it
   in full.
+  **Static heroes neutralize every skin (owner rule 2026-08-12,
+  after the graphic gradient faded the mobile headline on both
+  editions):** on phones and in lite mode the headline leaves the
+  image and renders static below it, and any `.hero-imgwrap.<skin>
+  .hero-overlay` rule OUTRANKS the static block's bare `.hero-overlay`
+  reset. Every overlay skin therefore ships with two same-specificity
+  neutralizers — one in the phone media block, one under
+  `[data-lite]` — resetting `background` (and `filter` on the image).
+  `tests/test_hero_static_neutralizers.py` enforces this: a new skin
+  without both neutralizers fails CI. And the verification protocol
+  is literal: a hero/overlay change is not verified until the MOBILE
+  screenshots of BOTH editions have been taken AND read — shooting
+  without reading is how this one shipped.
 - **De-twin pass.** `_DETWIN_JS` (rides `totop_html` on every page)
   gives the 2nd, 3rd… consecutive card sharing one cover a faint
   alternating tone shift (`.dupvar1`/`.dupvar2`, ±12° hue) so a batch

@@ -3256,6 +3256,8 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 [data-lite] .hero-imgwrap>a,[data-lite] .sub-thumb,[data-lite] .lt-thumb,[data-lite] .card>a:first-child,[data-lite] .card .ph,[data-lite] .rowcard img,[data-lite] .rowcard .ph,[data-lite] .research-feat img,[data-lite] .research-feat .noimg,[data-lite] .fr-card img,[data-lite] .livedock,[data-lite] .story img.lede,[data-lite] .story div.lede,[data-lite] .photocredit,[data-lite] .embed,[data-lite] .qrbox,[data-lite] .livewrap,[data-lite] .story figure.lf{display:none!important}
 [data-lite] .hero-imgwrap{background:none;border-radius:0}
 [data-lite] .hero-overlay{position:static;padding:0;background:none}
+[data-lite] .hero-imgwrap.graphic .hero-overlay{background:none}
+[data-lite] .hero-imgwrap.graphic>a>img{filter:none}
 [data-lite] .hero-overlay .label{color:var(--red)}
 [data-lite] .hero-overlay h2,[data-lite] .hero-overlay h2 a{color:var(--ink);text-shadow:none}
 [data-lite] .hero-overlay .meta{color:var(--muted)}
@@ -3574,6 +3576,12 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .hero-imgwrap{background:none;overflow:visible}
   .hero-imgwrap>a{background:#141419;border-radius:var(--r);overflow:hidden}
   .hero-overlay{position:static;padding:.85rem 0 0;background:none}
+  /* Static hero MUST neutralize every overlay skin at higher specificity
+     (owner report 2026-08-12: the .graphic gradient bled into the static
+     headline and faded it). Any future .hero-overlay skin needs its
+     neutralizer added here AND in the [data-lite] block. */
+  .hero-imgwrap.graphic .hero-overlay{background:none}
+  .hero-imgwrap.graphic>a>img{filter:none}
   .hero-overlay .label{color:var(--red)}
   .hero-overlay h2,.hero-overlay h2 a{color:var(--ink);text-shadow:none}
   .hero-overlay h2 a:hover{color:var(--red)}
