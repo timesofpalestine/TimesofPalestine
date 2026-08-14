@@ -13,6 +13,12 @@
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
    "verified": false
+  },
+  {
+   "article": "https://www.pbc.ps/6757-50",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": false
   }
  ],
  "date": "2026-08-14T06:55:00+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "673d9b654d",
- "score": 87.63,
+ "score": 87.59,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
