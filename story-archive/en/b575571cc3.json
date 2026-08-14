@@ -1,0 +1,32 @@
+{
+ "brief": "Rights groups have accused the CIA of carrying out drone strikes, enforced disappearances, and torture operations in areas near Ecuador's coast, Democracy Now! reported. The allegations suggest covert U.S. military involvement in the region spanning multiple incidents that remain largely undocumented in public records.\n\nThe accusations emerge amid broader scrutiny of U.S. counterterrorism practices across Latin America. The rights groups did not specify the exact locations, dates, or number of individuals affected by the alleged operations. No official response from the CIA or U.S. State Department was included in the initial reporting of the claims.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "http://67.228.192.88:3000/2026/8/14/headlines",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-14T12:00:00+00:00",
+ "dek": "CIA Carried Out Drone Strikes, Disappearances and Torture Near Ecuador’s Coast, Rights Groups Say Israel Is Covering Up War Crimes Evidence as It Clears Gaza’s Rubble, Israeli Settlers’ Siege of Palestinian Homes Draws Rare Rebuke from U.S. Ambassador,…",
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "http://67.228.192.88:3000/2026/8/14/headlines",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b575571cc3",
+ "score": 61.63,
+ "source": "Democracy Now!",
+ "source_id": "democracynow",
+ "source_url": "https://www.democracynow.org/",
+ "title": "CIA conducted drone strikes, disappearances near Ecuador coast"
+}

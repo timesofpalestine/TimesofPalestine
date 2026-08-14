@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/8/14/israeli-pm-netanyahu-calls-uk-the-islamic-republic-of?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/netanyahu-brands-britain-islamic-republic-despite-prepares-israel-sanctions",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-14T11:57:56+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "11764e0092",
- "score": 47.92,
+ "score": 47.61,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

@@ -6,13 +6,7 @@
    "article": "https://www.hrw.org/news/2026/08/11/rights-groups-sue-trump-administration-over-targeting-icc",
    "name": "Human Rights Watch",
    "url": "https://www.hrw.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/us-news/2026/aug/11/human-rights-groups-trump-lawsuit-icc-sanctions",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-11T14:30:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "7f57747f65",
- "score": 66.97,
+ "score": 66.94,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",
