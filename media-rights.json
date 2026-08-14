@@ -396,6 +396,19 @@
       "rightsBasis": "owner-supplied — commemorative artwork provided directly by the publisher for the Darwish anniversary report",
       "credit": "Artwork: supplied by the publisher, Times of Palestine",
       "source": "Times of Palestine (owner upload, 2026-08-10)"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Embroidery%20from%20Beersheba%20Dress%20(Palestinian%20Thobe).jpg?width=640",
+      "rightsBasis": "wikimedia-cc — free-licensed photograph of Palestinian tatreez (embroidery from a Beersheba-area dress) served from Wikimedia Commons, verified at build time",
+      "credit": "Photo: Ma'moun Othman / Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Embroidery_from_Beersheba_Dress_(Palestinian_Thobe).jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "asset": "originals/media/times-of-palestine-diaspora-dispatch-2026-08-14-madison-hebron-tatreez.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
     }
   ]
 }
