@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/36227",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-shoot-and-wound-two-palestinians-east-hebron",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-14T16:41:19+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "c560605c60",
- "score": 59.94,
+ "score": 59.74,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
