@@ -6,7 +6,7 @@
    "article": "https://www.alquds.co.uk/%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d9%8a%d8%b9%d9%8a%d8%af%d9%88%d9%86-%d8%a8%d9%86%d8%a7%d8%a1-%d8%a8%d8%a4%d8%b1%d8%a9-%d8%a7%d8%b3%d8%aa%d9%8a%d8%b7%d8%a7%d9%86%d9%8a%d8%a9-%d8%a3",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": false
+   "verified": true
   },
   {
    "article": "https://t.me/AlQastalps/390188",
@@ -15,14 +15,20 @@
    "verified": true
   },
   {
-   "article": "https://t.me/QudsN/728984",
+   "article": "https://t.me/Palinfo/315040",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/728997",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
    "verified": true
   }
  ],
  "date": "2026-08-14T07:52:01+00:00",
- "dek": "“القدس العربي”: أظهر مقطع فيديو أن مستوطنين أعادوا بناء بؤرة استيطانية أمام منزل فلسطيني في قصرة جنوب نابلس. وكان جيش الاحتلال زعم أنه أرسل كتيبة كاملة لإخلاء المستوطنين من المكان.",
+ "dek": "“القدس العربي”: أظهر مقطع فيديو أن مستوطنين أعادوا بناء بؤرة استيطانية أمام 3 منازل فلسطينية محاصرة في قصرة جنوب نابلس، ووضعوا خيمة أمامها. وكان جيش الاحتلال زعم أنه أرسل كتيبة كاملة لإخلاء المستوطنين من المكان. وذكر شهود عيان أن المستوطنين لا يزالون يفرضون…",
  "image": "https://www.alquds.co.uk/wp-content/uploads/2026/08/settlers-bo2ra.jpg",
  "lang": "ar",
  "link": "https://www.alquds.co.uk/%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d9%8a%d8%b9%d9%8a%d8%af%d9%88%d9%86-%d8%a8%d9%86%d8%a7%d8%a1-%d8%a8%d8%a4%d8%b1%d8%a9-%d8%a7%d8%b3%d8%aa%d9%8a%d8%b7%d8%a7%d9%86%d9%8a%d8%a9-%d8%a3",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "f16afdfb49",
- "score": 63.86,
+ "score": 63.66,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",
