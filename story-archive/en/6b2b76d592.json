@@ -1,0 +1,44 @@
+{
+ "brief": "What Washington is reading this morning, from the American front pages and the think tanks that brief them.\n\nAxios had the day's scoop and the week's diplomacy in one item: Jared Kushner is set to travel to Israel and then Egypt next week, with the Board of Peace's high representative and Tony Blair, to push the next phase of the Gaza plan. It is his first trip to Israel since January, and it comes after Benjamin Netanyahu declined to carry out the roadmap as written.\n\nThe New York Times kept the occupied West Bank at the top of its Middle East file for a third day, reporting that settlers had resumed the siege of Palestinian homes after soldiers removed them, and calling the army's failure to keep them away a mark of the chaos in the territory.\n\nThe Hill's international page carried the American ambassador's own words on that siege, his statement that the police and army had gone at his request to remove the Israeli terrorists responsible — an unusually blunt phrase from a US envoy who has spent his tenure defending the settlement enterprise.\n\nForeign Policy devoted its Middle East brief to the same village and its magazine argument to Doha. Israel will not make an enemy of Qatar, the piece reasons, because Israel has used the emirate as its channel to Hamas for more than a decade and the October 2023 attack made that channel controversial without making it dispensable.\n\nThat argument is the one Gaza has the largest stake in, since Qatari money and Qatari mediation sit underneath both the ceasefire and whatever reconstruction follows it.\n\nThe Washington Post spent its national security page on the cost of the Iran war to the American arsenal, reporting that roughly a quarter of the military's Reaper drones have been lost, many of them around the Strait of Hormuz. The Times ran the commercial version of the same story: Gulf exporters spending billions to build routes that avoid the strait entirely.\n\nThe Hill also gave space to the retired general Jack Keane predicting on television that Iran will escalate as the November midterms approach.\n\nAnd Politico published Adam Schiff on what he calls his party's losing message, a conversation that took in AIPAC and the left's rise within the Democratic caucus — the slow argument in Washington about who is allowed to say what on Israel, which decides more here than any single vote.",
+ "cat": "uspress",
+ "corroborating_sources": [
+  {
+   "article": "original:washington-reading-2026-08-14.en",
+   "name": "Times of Palestine",
+   "url": "",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/kushner-expected-travel-israel-gaza-talks-next-week-report",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/jared-kushner-may-visit-israel-next-week-talks-gaza-source-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-14T07:40:00+00:00",
+ "dek": "What Washington is reading this morning, from the American front pages and the think tanks that brief them.",
+ "image": "/media/times-of-palestine-us-press.svg",
+ "lang": "en",
+ "link": "original:washington-reading-2026-08-14.en",
+ "max_age_hours": 336.0,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": true,
+ "pid": "6b2b76d592",
+ "score": 87.86,
+ "source": "Times of Palestine",
+ "source_id": "top-original",
+ "source_url": "",
+ "title": "Washington reads a Gaza mission and a siege that came back"
+}
