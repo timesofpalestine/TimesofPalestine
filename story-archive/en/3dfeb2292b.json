@@ -6,19 +6,13 @@
    "article": "original:huckabee-qusra-israeli-terrorists-2026-08-13.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.aljazeera.com/video/newsfeed/2026/8/13/israeli-forces-order-families-to-evacuate-homes-in-qusra?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://t.me/maannews/36222",
@@ -48,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "3dfeb2292b",
- "score": 85.05,
+ "score": 85.00999999999999,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
