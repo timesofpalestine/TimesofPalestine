@@ -748,6 +748,32 @@
       "site": "https://news.google.com",
       "maxAgeHours": 168,
       "cap": 4
+    },
+    {
+      "id": "radar-opinion-ar",
+      "name": "راصد TOP",
+      "type": "gnews",
+      "query": "\"مقال رأي\" OR \"وجهة نظر\" OR \"زاوية رأي\" (فلسطين OR غزة OR \"الضفة الغربية\" OR القدس)",
+      "hl": "ar",
+      "gl": "PS",
+      "ceid": "PS:ar",
+      "category": "opinion",
+      "site": "https://news.google.com",
+      "maxAgeHours": 336,
+      "cap": 5
+    },
+    {
+      "id": "radar-humans-ar",
+      "name": "راصد TOP",
+      "type": "gnews",
+      "query": "(\"قصة نجاة\" OR \"شهادة حية\" OR \"نجا من\" OR حكاية) (غزة OR فلسطين OR \"الضفة الغربية\")",
+      "hl": "ar",
+      "gl": "PS",
+      "ceid": "PS:ar",
+      "category": "humans",
+      "site": "https://news.google.com",
+      "maxAgeHours": 336,
+      "cap": 5
     }
   ]
 }
