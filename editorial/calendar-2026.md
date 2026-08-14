@@ -42,6 +42,16 @@ land in a specific window.
     Solidarity scholarships, with the honest line that the Nagoya
     delegation is not yet published. Still owed by Sep 30: one more, plus
     the delegation list and the cup-draw follow-up when they publish.
+  - ✅ 4 of 4 — `oday-dabbagh-zamalek-palestine-2026.*` (2026-08-14): the
+    diaspora-player profile the window called for, in the celebratory
+    register the features order requires — Palestine's all-time leading
+    scorer (51 caps, 17 goals to Dec 2025), from Shabab Al-Ram and Hilal
+    Al-Quds through Arouca, Charleroi and the Aberdeen loan that won the
+    Scottish Cup, to the 20 May 2026 goal that took Zamalek its fifteenth
+    Egyptian title. Carries the third-round World Cup qualifying context,
+    Algeria hosting Palestine's home fixtures, and the players who cannot
+    reach camps. **Target met with six weeks to spare** — the delegation
+    list and cup-draw follow-ups remain open for September.
 - **Aug 25 – Sep 1 — Third-lost-school-year package.** The queued
   `education-under-fire` topic should have published by ~Aug 13 via the
   desk; in this window verify it is live, current, and cross-linked with
@@ -151,6 +161,18 @@ land in a specific window.
   boundaries, so a file whose over-length paragraph is a single long
   sentence stays flagged — seven of the fourteen did. Those need a copy
   edit (split the sentence), not another tool pass.
+
+- ✅ **Arabic section starvation fixed structurally 2026-08-14.** `ar/opinion`
+  (34h) and `ar/humans` (44h) went stale on most cycles for a simple reason:
+  the English side carries seven category-pinned feeds for those two
+  sections (five opinion Substacks, We Are Not Numbers, the Palestinian
+  Voices wire) and the Arabic side carried **none** — `feeds.json` pinned
+  Arabic feeds only for women, sports, economy and prisoners. Added
+  `radar-opinion-ar` and `radar-humans-ar` (Google News Arabic, PS edition,
+  verified live at 75 and 100 items respectively before commit). This is the
+  charter's prescribed remedy — a starving section means "add feeds", never
+  "hide the section". Watch both sections for a week; if Arabic opinion
+  still lags, add named Arabic op-ed feeds by outlet.
 
 ## Blocked on the owner
 
