@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli soldiers shot a Palestinian child in Bethlehem on Friday evening, according to IMEMC News. The shooting marked one of two separate incidents that left Palestinians injured across the southern West Bank within hours of each other.\n\nIn Hebron, Israeli settlers opened fire on Palestinians, wounding two people including a woman. The shootings underscored the pattern of violence affecting civilians in the occupied territory. No additional details were immediately available regarding the specific circumstances surrounding the incidents or the medical condition of those struck by gunfire.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/army-shoots-a-palestinian-in-bethlehem-colonizers-shoot-two-in-hebron",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-settlers-divert-palestinian-water-fill-west-bank-pool",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-14T18:00:32+00:00",
+ "dek": "In two separate incidents, three Palestinians sustained live gunshot injuries in the southern West Bank governorates of Bethlehem, where soldiers shot a child, and Hebron, where colonizers shot two others, including a woman. On Friday evening, Israeli forces…",
+ "image": "https://imemc.org/wp-content/uploads/2026/08/Sair-cover.png",
+ "lang": "en",
+ "link": "https://imemc.org/article/army-shoots-a-palestinian-in-bethlehem-colonizers-shoot-two-in-hebron",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/army-shoots-a-palestinian-in-bethlehem-colonizers-shoot-two-in-hebron"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "867ef5018f",
+ "score": 61.53,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces and settlers wound three Palestinians in West Bank incidents."
+}
