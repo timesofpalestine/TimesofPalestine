@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Israel bars Gaza's named Palestinian administrators from entering Gaza</title>
+<desc id="desc">Diagram: a panel in Cairo holds the fifteen named members of the National Committee for the Administration of Gaza; an arrow toward a map shape of the Gaza Strip is stopped by a red barrier marked "entry denied". The Gaza shape is crossed by a dashed Yellow Line. Below, three figures from the report: 5,000 police pledged within 60 days, 200 stabilisation troops approved on 26 July, and 1.2 million people in crisis-level hunger.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<marker id="arw" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L9,5 L0,10 Z" fill="#aaa9a5"/>
+</marker>
+<pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<rect width="12" height="12" fill="#8a1f2d"/>
+<rect width="5" height="12" fill="#C8102E"/>
+</pattern>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="76" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="3" fill="#c7a86b">TIMES OF PALESTINE  ·  GAZA TRANSITION</text>
+<text x="90" y="140" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Israel bars Gaza&#8217;s named administrators</text>
+<text x="90" y="192" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">from entering the Strip</text>
+<text x="90" y="236" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#59a97d" text-anchor="start">&#1573;&#1587;&#1585;&#1575;&#1574;&#1610;&#1604; &#1578;&#1605;&#1606;&#1593; &#1571;&#1593;&#1590;&#1575;&#1569; &#1604;&#1580;&#1606;&#1577; &#1573;&#1583;&#1575;&#1585;&#1577; &#1594;&#1586;&#1577; &#1605;&#1606; &#1583;&#1582;&#1608;&#1604; &#1575;&#1604;&#1602;&#1591;&#1575;&#1593;</text>
+
+<!-- Cairo panel -->
+<rect x="90" y="300" width="400" height="366" rx="10" fill="#17181b" stroke="#3a3b3f" stroke-width="2"/>
+<rect x="90" y="300" width="400" height="6" rx="3" fill="#c7a86b"/>
+<text x="118" y="348" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="2" fill="#c7a86b">CAIRO  ·  &#1575;&#1604;&#1602;&#1575;&#1607;&#1585;&#1577;</text>
+<text x="118" y="390" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">National Committee for the</text>
+<text x="118" y="414" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Administration of Gaza (NCAG)</text>
+<text x="118" y="448" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">15 members named in Cairo, January</text>
+<text x="118" y="472" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">chaired by Ali Shaath  ·  still based abroad</text>
+
+<g fill="#286344" stroke="#59a97d" stroke-width="2">
+<circle cx="140" cy="524" r="17"/><circle cx="202" cy="524" r="17"/><circle cx="264" cy="524" r="17"/><circle cx="326" cy="524" r="17"/><circle cx="388" cy="524" r="17"/>
+<circle cx="140" cy="578" r="17"/><circle cx="202" cy="578" r="17"/><circle cx="264" cy="578" r="17"/><circle cx="326" cy="578" r="17"/><circle cx="388" cy="578" r="17"/>
+<circle cx="140" cy="632" r="17"/><circle cx="202" cy="632" r="17"/><circle cx="264" cy="632" r="17"/><circle cx="326" cy="632" r="17"/><circle cx="388" cy="632" r="17"/>
+</g>
+
+<!-- arrow to Gaza -->
+<line x1="500" y1="500" x2="672" y2="500" stroke="#aaa9a5" stroke-width="4" stroke-dasharray="14 9" marker-end="url(#arw)"/>
+
+<!-- barrier -->
+<rect x="700" y="318" width="26" height="360" fill="url(#hatch)" opacity="0.9"/>
+<g stroke="#C8102E" stroke-width="7" stroke-linecap="round">
+<line x1="676" y1="470" x2="750" y2="530"/><line x1="750" y1="470" x2="676" y2="530"/>
+</g>
+<text x="640" y="290" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="2" fill="#C8102E">ENTRY DENIED</text>
+<text x="640" y="716" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#C8102E" text-anchor="start">&#1583;&#1582;&#1608;&#1604; &#1605;&#1605;&#1606;&#1608;&#1593;</text>
+
+<!-- Gaza strip shape -->
+<g transform="translate(1120,470) rotate(28)">
+<rect x="-72" y="-208" width="144" height="416" rx="26" fill="#1b2b22" stroke="#59a97d" stroke-width="3"/>
+<line x1="-10" y1="-196" x2="-10" y2="196" stroke="#c7a86b" stroke-width="4" stroke-dasharray="16 12"/>
+</g>
+<text x="1230" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" letter-spacing="2" fill="#f2eee8">GAZA STRIP</text>
+<text x="1230" y="386" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#59a97d" text-anchor="start">&#1602;&#1591;&#1575;&#1593; &#1594;&#1586;&#1577;</text>
+<text x="1230" y="428" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">no committee staff on the ground</text>
+
+<line x1="1178" y1="536" x2="1268" y2="536" stroke="#c7a86b" stroke-width="2"/>
+<text x="1278" y="530" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#c7a86b">Yellow Line</text>
+<text x="1278" y="560" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b" text-anchor="start">&#1575;&#1604;&#1582;&#1591; &#1575;&#1604;&#1571;&#1589;&#1601;&#1585;</text>
+<text x="1178" y="608" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Israeli withdrawal beyond it</text>
+<text x="1178" y="630" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">&#8220;only once decommissioning is complete&#8221;</text>
+
+<!-- bottom band -->
+<line x1="90" y1="756" x2="1510" y2="756" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="90" y="816" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#c7a86b">5,000</text>
+<text x="90" y="846" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">police pledged to deploy within 60 days at the</text>
+<text x="90" y="868" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">19 February board meeting; none confirmed</text>
+
+<text x="620" y="816" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#c7a86b">200</text>
+<text x="620" y="846" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">International Stabilization Force troops</text>
+<text x="620" y="868" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">approved by Israel&#8217;s cabinet, 26 July</text>
+
+<text x="1090" y="816" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#C8102E">1.2m</text>
+<text x="1090" y="846" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">people, 59% of Gaza, in crisis-level food</text>
+<text x="1090" y="868" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">insecurity or worse (IPC snapshot, 23 July)</text>
+</svg>
