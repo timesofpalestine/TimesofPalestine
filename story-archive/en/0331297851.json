@@ -6,25 +6,13 @@
    "article": "original:washington-reading-2026-08-13.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/news/2026/8/14/un-palestinian-ministry-condemn-israeli-settler-siege-of-west-bank-homes?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://news.un.org/feed/view/en/story/2026/08/1168130",
    "name": "UN News",
    "url": "https://news.un.org/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://shehabnews.com/post/162187/%D9%85%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85%D9%8A-%D8%AA%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%AE%D8%B7%D9%88%D8%B1%D8%A9-%D8%AA%D8%B5%D8%A7%D8%B9%D8%AF-%D8%AC%D8%B1%D8%A7%D8%A6%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9",
@@ -48,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "0331297851",
- "score": 84.22999999999999,
+ "score": 84.17,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

@@ -19,6 +19,12 @@
    "name": "UN News",
    "url": "https://news.un.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-13T17:38:04+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "d8eafa227a",
- "score": 70.89,
+ "score": 70.86,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
