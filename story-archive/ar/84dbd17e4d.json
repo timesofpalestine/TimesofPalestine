@@ -7,6 +7,18 @@
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/Palinfo/315089",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217035&slug=%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-%D9%8A%D8%AD%D8%A7%D8%B5%D8%B1%D9%88%D9%86-3-%D8%B9%D8%A7%D8%A6%D9%84%D8%A7%D8%AA-%D9%81%D9%8A-%D9%82%D8%B5%D8%B1%D8%A9-%D9%84%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
   }
  ],
  "date": "2026-08-13T11:20:07+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "84dbd17e4d",
- "score": 32.52,
+ "score": 32.23,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
