@@ -9,15 +9,21 @@
    "verified": true
   },
   {
-   "article": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/15/15-08-reported-nour-west-bank-ps?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
    "verified": true
   },
   {
    "article": "https://imemc.org/article/colonizer-attacks-injure-palestinians-across-occupied-west-bank",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
    "verified": true
   },
   {
@@ -54,7 +60,7 @@
  "modified": null,
  "original": true,
  "pid": "ad36ec091c",
- "score": 86.56,
+ "score": 86.52000000000001,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

@@ -6,6 +6,18 @@
    "article": "https://t.me/maannews/36228",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/390370",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/315299",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
    "verified": false
   }
  ],
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "a48081e07f",
- "score": 35.02,
+ "score": 34.82,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
