@@ -1,0 +1,44 @@
+{
+ "brief": "أعلنت وزارة الصحة في غزة خروج 22 محطة أكسجين عن الخدمة، وحذّرت من احتمال توقف الـ12 محطة المتبقية في القطاع. عزت الوزارة الأعطال إلى استنزاف الطاقة الكهربائية والافتقار إلى قطع الغيار اللازمة في ظل الحصار الإسرائيلي.\n\nيعمّق النقص في محطات الأكسجين الأزمة الصحية الحادة في غزة، إذ توفر هذه المحطات خدمة حيوية للمرضى في المستشفيات والمراكز الطبية بمختلف أنواعها. وتؤثر أعطال المحطات على قدرة المنشآت الطبية على علاج المصابين والحالات الحرجة، في وقت يشهد القطاع أزمة إنسانية متفاقمة.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/315227",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%b5%d8%ad%d8%a9-%d8%ba%d8%b2%d8%a9-%d8%aa%d8%b9%d9%84%d9%86-%d8%aa%d9%88%d9%82%d9%81-22-%d9%85%d8%ad%d8%b7%d8%a9-%d8%a3%d9%83%d8%b3%d8%ac%d9%8a%d9%86-%d9%88%d8%aa%d8%ad%d8%b0%d9%8a%d8%b1-%d9%85",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428138",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-15T08:15:32+00:00",
+ "dek": "عاجل | الصحة في غزة تعلن خروج 22 محطة أكسجين عن الخدمة وتحذر من تعطل ال12 المتبقية بسبب استنزاف طاقتها ونقص قطع الغيار في ظل الحصار \"الإسرائيلي\"",
+ "image": "https://cdn4.telesco.pe/file/ozKkU9fL4OMQ6LNup4uBQab_OOw1t4UHr_o1c1nfhowHvOgjGp1m6ChOduI-htmT5Qb_fdWEfLcm60S5V7--iIuT1SLkkHgiSgmvWG7ig-G4rMF4jhPHxVfx2IBf9Bm1l3nLk2wgO5soYK7uPwiPkerzCnyOGJCSDu9x58d_TAZZ_bafdTeNDCz2i31S4oYT39DRwG3tHytJEI03kWJln-VNBLYvg2UT-9tbrDy2rkbNfVjFB5pm5bWcf4NyunikEvglR1Q8mPX2RtGMDX0fj-4LR5LtoChFuVbYfcHjHDBizYIeNw3U5QJK-47Noq_VSw7AUE-XkWmLHZjS4pc3qQ.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/315227",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/315227"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d377c706c7",
+ "score": 63.91,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الصحة في غزة تحذر من توقف محطات أكسجين بسبب نقص قطع الغيار"
+}
