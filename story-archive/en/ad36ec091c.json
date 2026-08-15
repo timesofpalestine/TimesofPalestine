@@ -1,0 +1,68 @@
+{
+ "brief": "The Washington Post reported from Qusra on Friday that Israeli troops stood by while settlers besieged Palestinian homes in the northern West Bank village.\n\nThe paper's account turns on what the residents expected. When Israeli extremists arrived to force families out of their houses, the Post wrote, those families hoped the Israeli army would come to their aid. It did not.\n\nThat sentence is the whole argument the American coverage of this village has been building for a week. The army's own defence — that protecting Palestinians from settlers is a policing task it should not be carrying — was made for it on Thursday by Defence Minister Israel Katz, who instructed the military to hand the job to the police.\n\nFor readers in the occupied West Bank the reporting confirms a rule they live under rather than revealing one. Under the occupation the army is the sovereign authority in Area B and Area C, and its soldiers are the only armed force present when settlers arrive; a decision not to intervene is a decision.\n\nWashington has already spoken on Qusra once. The US ambassador to Israel, Mike Huckabee, called the men besieging the village Israeli terrorists and said the United States had asked Israeli security forces to remove them. The families were still inside their houses when the Post's report ran.",
+ "cat": "uspress",
+ "corroborating_sources": [
+  {
+   "article": "original:wapo-qusra-soldiers-stood-by-2026-08-15.en",
+   "name": "Times of Palestine",
+   "url": "",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168130",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/colonizer-attacks-injure-palestinians-across-occupied-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinian-injured-firing-israeli-army-settlers",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53764",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
+  },
+  {
+   "article": "https://www.972mag.com/al-mughayyir-west-bank-israeli-ethnic-cleansing-laboratory",
+   "name": "+972 Magazine",
+   "url": "https://www.972mag.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-15T06:40:00+00:00",
+ "dek": "The Washington Post reported from Qusra on Friday that Israeli troops stood by while settlers besieged Palestinian homes in the northern West Bank village.",
+ "image": "/media/times-of-palestine-cover-uspress.svg",
+ "lang": "en",
+ "link": "original:wapo-qusra-soldiers-stood-by-2026-08-15.en",
+ "max_age_hours": 336.0,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": true,
+ "pid": "ad36ec091c",
+ "score": 87.81,
+ "source": "Times of Palestine",
+ "source_id": "top-original",
+ "source_url": "",
+ "title": "The Washington Post finds Israeli soldiers stood by at Qusra"
+}

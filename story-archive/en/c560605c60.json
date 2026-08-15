@@ -6,25 +6,7 @@
    "article": "https://t.me/maannews/36227",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/colonizer-attacks-injure-palestinians-across-occupied-west-bank",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinian-injured-firing-israeli-army-settlers",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/eyesonpal/53764",
-   "name": "Eye on Palestine",
-   "url": "https://t.me/eyesonpal",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-14T16:41:19+00:00",
@@ -42,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "c560605c60",
- "score": 53.74,
+ "score": 53.42,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

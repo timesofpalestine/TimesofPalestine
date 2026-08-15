@@ -1,0 +1,32 @@
+{
+ "brief": "The mesh messenger that works when the internet does not has learned to carry a voice.\n\nThe two most recent releases listed on the bitchat project's GitHub page, v1.7.0 and v1.7.1, add live push-to-talk to direct messages — the audio streams while the speaker talks, and if the other phone is out of range it lands as a voice note instead. Public mesh channels get push-to-talk too, in signed bursts.\n\nThe same releases harden what the phone is trusting. Private media is now encrypted before it is fragmented for Bluetooth transmission, and the encrypted handshake binds a session to the identity the other side claims, which is the fix that stops one phone impersonating another on a mesh.\n\nA third change matters most where the network is deliberate. Mesh bridging stitches nearby mesh islands together over the internet where any internet exists, so a neighbourhood with one working connection can relay for the streets around it.\n\nBitchat runs over Bluetooth Low Energy at ten to thirty metres a hop, and the project has said Wi-Fi Direct support would raise that to a hundred metres and more.\n\nFor Gaza the arithmetic is plain enough. When the fibre is cut and the towers are down, thirty metres a hop across a dense camp is the difference between a family knowing and not knowing.\n\nDownload from the official channels only. On iPhone the app is \"bitchat mesh\" on the App Store, id 6748219622, published by Permissionless Technology. On Android take the APK from the permissionlesstech releases page on GitHub. Google Play carries impostor builds that are not this project.",
+ "cat": "bitcoin",
+ "corroborating_sources": [
+  {
+   "article": "original:bitchat-voice-mesh-release-2026-08-15.en",
+   "name": "Times of Palestine",
+   "url": "",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-15T06:15:00+00:00",
+ "dek": "The mesh messenger that works when the internet does not has learned to carry a voice.",
+ "image": "/media/times-of-palestine-cover-bitcoin.svg",
+ "lang": "en",
+ "link": "original:bitchat-voice-mesh-release-2026-08-15.en",
+ "max_age_hours": 720.0,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": true,
+ "pid": "632356417e",
+ "score": 117.88,
+ "source": "Times of Palestine",
+ "source_id": "top-original",
+ "source_url": "",
+ "title": "Bitchat's newest release carries voice across a Bluetooth mesh"
+}
