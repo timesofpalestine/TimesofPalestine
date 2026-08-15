@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://www.pbc.ps/8785-123",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/gazaalannet/82371",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "4e17df518c",
- "score": 63.52,
+ "score": 63.36,
  "source": "المركز الفلسطيني للإعلام",
  "source_id": "tg-palinfo",
  "source_url": "https://t.me/palinfo",
