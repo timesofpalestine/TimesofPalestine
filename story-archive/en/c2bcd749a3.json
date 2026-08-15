@@ -7,6 +7,12 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://www.972mag.com/al-mughayyir-west-bank-israeli-ethnic-cleansing-laboratory",
+   "name": "+972 Magazine",
+   "url": "https://www.972mag.com/",
+   "verified": false
   }
  ],
  "date": "2026-08-13T08:15:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "c2bcd749a3",
- "score": 81.7,
+ "score": 81.66,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

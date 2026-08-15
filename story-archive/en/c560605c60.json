@@ -9,9 +9,27 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-shoot-and-wound-two-palestinians-east-hebron",
+   "article": "https://imemc.org/article/colonizer-attacks-injure-palestinians-across-occupied-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinian-injured-firing-israeli-army-settlers",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53764",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/us-wants-netanyahu-condemn-settler-siege-palestinian-village-officials-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
    "verified": true
   }
  ],
@@ -30,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "c560605c60",
- "score": 57.16,
+ "score": 56.96,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
