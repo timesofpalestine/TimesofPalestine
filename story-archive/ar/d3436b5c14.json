@@ -6,13 +6,7 @@
    "article": "https://www.pbc.ps/8785-123",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/82370",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-15T09:37:06+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "d3436b5c14",
- "score": 56.78,
+ "score": 56.67,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
