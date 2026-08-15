@@ -1,0 +1,19 @@
+title: Bitchat's newest release carries voice across a Bluetooth mesh
+image: /media/times-of-palestine-cover-bitcoin.svg
+category: bitcoin
+date: 2026-08-15T06:15:00Z
+maxAgeHours: 720
+---
+The mesh messenger that works when the internet does not has learned to carry a voice.
+
+The two most recent releases listed on the bitchat project's GitHub page, v1.7.0 and v1.7.1, add live push-to-talk to direct messages — the audio streams while the speaker talks, and if the other phone is out of range it lands as a voice note instead. Public mesh channels get push-to-talk too, in signed bursts.
+
+The same releases harden what the phone is trusting. Private media is now encrypted before it is fragmented for Bluetooth transmission, and the encrypted handshake binds a session to the identity the other side claims, which is the fix that stops one phone impersonating another on a mesh.
+
+A third change matters most where the network is deliberate. Mesh bridging stitches nearby mesh islands together over the internet where any internet exists, so a neighbourhood with one working connection can relay for the streets around it.
+
+Bitchat runs over Bluetooth Low Energy at ten to thirty metres a hop, and the project has said Wi-Fi Direct support would raise that to a hundred metres and more.
+
+For Gaza the arithmetic is plain enough. When the fibre is cut and the towers are down, thirty metres a hop across a dense camp is the difference between a family knowing and not knowing.
+
+Download from the official channels only. On iPhone the app is "bitchat mesh" on the App Store, id 6748219622, published by Permissionless Technology. On Android take the APK from the permissionlesstech releases page on GitHub. Google Play carries impostor builds that are not this project.

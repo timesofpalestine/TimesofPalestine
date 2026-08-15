@@ -104,6 +104,14 @@ land in a specific window.
     (2026-08-11): Egypt and Jordan training the Palestinian police force for
     Gaza — what has been delivered, funded and left unsettled, written in
     Arabic first and then into English.
+  - ✅ 3 of 3 for August — `uae-convoys-gaza-chivalrous-knight-2026-08-15.*`
+    (2026-08-15): the Emirati convoys measured in trucks and tonnes (five
+    convoys, 75 trucks, 663 tonnes in one week, per Emarat Al Youm of
+    9 August, via the El-Arish logistics centre) beside the 200-bed Emirati
+    field hospital — delivery stated precisely and separated from the
+    pledges the World Bank-administered Gaza fund has not yet received.
+    Written for the Arabic reader first, then into English. **August target
+    met.**
 - **Her Story pipeline:** keep at least one women-section topic in the
   active queue at all times (two added 2026-08-06).
 
