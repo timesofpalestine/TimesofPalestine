@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/army-shoots-a-palestinian-in-bethlehem-colonizers-shoot-two-in-hebron",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/israeli-settlers-divert-palestinian-water-fill-west-bank-pool",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-14T18:00:32+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "867ef5018f",
- "score": 59.43,
+ "score": 59.25,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
