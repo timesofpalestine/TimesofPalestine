@@ -487,6 +487,15 @@
       "site": "https://news.google.com",
       "maxAgeHours": 168,
       "cap": 4
+    },
+    {
+      "id": "amnesty",
+      "name": "Amnesty International",
+      "url": "https://www.amnesty.org/en/latest/feed/",
+      "site": "https://www.amnesty.org",
+      "filterPalestine": true,
+      "maxAgeHours": 168,
+      "cap": 4
     }
   ],
   "ar": [
@@ -774,6 +783,15 @@
       "site": "https://news.google.com",
       "maxAgeHours": 336,
       "cap": 5
+    },
+    {
+      "id": "amnesty-ar",
+      "name": "منظمة العفو الدولية",
+      "url": "https://www.amnesty.org/ar/latest/feed/",
+      "site": "https://www.amnesty.org/ar",
+      "filterPalestine": true,
+      "maxAgeHours": 168,
+      "cap": 4
     }
   ]
 }
