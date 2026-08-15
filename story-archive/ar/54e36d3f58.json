@@ -1,0 +1,32 @@
+{
+ "brief": "أفادت قناة غزة الآن على تيليغرام بقصف دراجة نارية في منطقة قريبة من مستشفى الأقصى بمدينة دير البلح وسط قطاع غزة. ولم توضح القناة في نشرتها معلومات إضافية عن الحادثة أو ملابساتها أو الخسائر الناجمة عنها.\n\nجاء الاستهداف في سياق التصعيد المستمر في القطاع، حيث تشهد المناطق المأهولة بالسكان قصفاً متكراً يطال مواقع مختلفة بما فيها المناطق القريبة من المنشآت الطبية.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82370",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-15T09:04:51+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82370",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "54e36d3f58",
+ "score": 62.59,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "قصف دراجة نارية قرب مستشفى الأقصى بدير البلح"
+}
