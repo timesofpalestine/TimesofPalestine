@@ -17,6 +17,15 @@
   ],
   "names": [
     {
+      "latin": "Scott Bessent",
+      "ar": "سكوت بيسنت",
+      "wrong": [
+        "بيسينت",
+        "بسنت"
+      ],
+      "verified": "arabic.cnn + alquds.co.uk + emaratalyoum, 2026-08-15"
+    },
+    {
       "latin": "Awdah Hathaleen",
       "ar": "عودة الهذالين",
       "wrong": [

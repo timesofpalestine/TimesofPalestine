@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">One Treasury, two files: isolating Iran and clearing Palestinian shekels</title>
+  <desc id="desc">A bilingual comparison of the two financial files the United States Treasury is running in August 2026 — the Economic Fury sanctions campaign against Iran, and the Israeli correspondent-banking channel through which Palestinian shekel transactions clear.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101114"/>
+      <stop offset="1" stop-color="#1c1d21"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7e1e2b"/>
+      <stop offset=".5" stop-color="#286344"/>
+      <stop offset="1" stop-color="#bd9854"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f3efe8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#d4b36e}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:17px}
+      .small{font-size:19px}
+      .body{font-size:23px}
+      .label{font-size:18px;font-weight:800;letter-spacing:1.2px}
+      .fig{font-size:40px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="78" class="serif ivory" font-size="50" font-weight="800">One Treasury, two files on the same instrument</text>
+  <text x="90" y="126" class="sans muted body">Access to a banking channel is the weapon in both. Only one is called a sanction.</text>
+  <text x="1510" y="169" class="arabic ivory" font-size="35" font-weight="800" text-anchor="end">خزانة واحدة وملفّان بالأداة نفسها</text>
+  <text x="1510" y="203" class="arabic muted small" text-anchor="end">قناة مصرفية تُغلق هنا وهناك، وتُسمّى عقوبة في حالة واحدة</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="240" width="700" height="470" rx="18" fill="#27282c" stroke="#dc6572" stroke-width="3"/>
+    <text x="100" y="296" class="sans red label">IRAN — OPERATION ECONOMIC FURY</text>
+    <text x="740" y="296" class="arabic muted small" text-anchor="end">إيران — عملية الغضب الاقتصادي</text>
+    <path d="M100 320H740" stroke="#4a4c52" stroke-width="2"/>
+
+    <text x="100" y="392" class="sans gold fig">2,200</text>
+    <text x="300" y="378" class="sans ivory small">US sanctions on Iran since 2018</text>
+    <text x="300" y="404" class="arabic muted tiny">عقوبة أمريكية على إيران منذ 2018</text>
+
+    <text x="100" y="474" class="sans gold fig">350</text>
+    <text x="300" y="460" class="sans ivory small">of them under the current campaign</text>
+    <text x="300" y="486" class="arabic muted tiny">منها ضمن الحملة الجارية</text>
+
+    <text x="100" y="556" class="sans gold fig">$4.8bn</text>
+    <text x="300" y="542" class="sans ivory small">oil revenue the blockade cost Tehran</text>
+    <text x="300" y="568" class="arabic muted tiny">عائدات نفطية خسرتها طهران بفعل الحصار</text>
+
+    <text x="100" y="638" class="sans gold fig">77%</text>
+    <text x="300" y="624" class="sans ivory small">year-on-year Iranian inflation</text>
+    <text x="300" y="650" class="arabic muted tiny">تضخّم سنوي في إيران</text>
+
+    <text x="100" y="686" class="sans muted tiny">A further package was promised for the week of 17 August.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="830" y="240" width="700" height="470" rx="18" fill="#27282c" stroke="#61aa80" stroke-width="3"/>
+    <text x="860" y="296" class="sans green label">PALESTINE — THE CLEARING CHANNEL</text>
+    <text x="1500" y="296" class="arabic muted small" text-anchor="end">فلسطين — قناة المقاصّة</text>
+    <path d="M860 320H1500" stroke="#4a4c52" stroke-width="2"/>
+
+    <text x="860" y="392" class="sans gold fig">NIS 51bn</text>
+    <text x="1120" y="378" class="sans ivory small">cleared a year through two Israeli banks</text>
+    <text x="1120" y="404" class="arabic muted tiny">تُقاصّ سنوياً عبر مصرفين إسرائيليين</text>
+
+    <text x="860" y="474" class="sans gold fig">90%</text>
+    <text x="1120" y="460" class="sans ivory small">of Palestinian trade passes through Israel</text>
+    <text x="1120" y="486" class="arabic muted tiny">من التجارة الفلسطينية تمر عبر إسرائيل</text>
+
+    <text x="860" y="556" class="sans red fig">1 SEP</text>
+    <text x="1120" y="542" class="sans ivory small">Israel Discount Bank ends the service</text>
+    <text x="1120" y="568" class="arabic muted tiny">بنك ديسكونت يوقف الخدمة</text>
+
+    <text x="860" y="638" class="sans red fig">1 OCT</text>
+    <text x="1120" y="624" class="sans ivory small">Bank Hapoalim ends the service</text>
+    <text x="1120" y="650" class="arabic muted tiny">بنك هبوعليم يوقف الخدمة</text>
+
+    <text x="860" y="686" class="sans muted tiny">Israel's indemnity waiver runs to 31 December; the banks' notices stand.</text>
+  </g>
+
+  <rect x="90" y="750" width="1420" height="100" rx="15" fill="url(#band)"/>
+  <text x="122" y="787" class="sans ivory" font-size="24" font-weight="800">THE SAME DEPARTMENT DECIDES BOTH</text>
+  <text x="122" y="818" class="sans ivory small">Treasury is building the most complete financial isolation ever attempted against Iran.</text>
+  <text x="122" y="842" class="sans ivory small">On the Palestinian channel it has asked, in private, and the closing dates have not moved.</text>
+  <text x="1478" y="787" class="arabic ivory" font-size="24" font-weight="800" text-anchor="end">الوزارة نفسها تقرّر الملفين</text>
+  <text x="1478" y="818" class="arabic ivory small" text-anchor="end">تبني الخزانة أشد عزل مالي جرت محاولته ضد دولة</text>
+  <text x="1478" y="842" class="arabic ivory small" text-anchor="end">وتطلب في الملف الفلسطيني بهدوء، فلا تتغيّر المواعيد</text>
+
+  <text x="90" y="882" class="sans muted tiny">Sanctions counts: Jeremy Paner, cited by Fortune. Blockade and inflation figures: Scott Bessent and Fortune. Clearing figures: Reuters. Graphic: Times of Palestine.</text>
+</svg>
