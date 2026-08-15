@@ -7,6 +7,12 @@
    "name": "تايمز أوف فلسطين",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.net/politics/2026/8/15/%d8%a8%d9%8a%d8%aa%d9%8a-%d8%a3%d9%85%d8%a7%d9%85%d9%8a-%d9%88%d9%84%d8%a7-%d8%a3%d8%b5%d9%84%d9%87-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%8a%d8%ad%d8%a7%d8%b5%d8%b1?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-15T06:50:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "df6565a5ee",
- "score": 72.18,
+ "score": 72.14,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
