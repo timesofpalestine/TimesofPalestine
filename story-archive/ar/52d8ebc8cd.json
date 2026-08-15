@@ -6,12 +6,18 @@
    "article": "https://www.pbc.ps/985-16",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/729285",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-15T05:55:23+00:00",
  "dek": "أصيب عدد من المواطنين بحالات اختناق، صباح اليوم السبت، خلال اقتحام قوات الاحتلال قرية المغير، شمال شرق رام الله. وأفادت ظهرت المقالة إصابات بالاختناق خلال اقتحام الاحتلال قرية المغير عقب هجوم للمستوطنين أولاً على تلفزيون فلسطين.",
- "image": "/media/times-of-palestine-cover-westbank-b-ar.svg",
+ "image": "/media/times-of-palestine-cover-westbank-ar.svg",
  "lang": "ar",
  "link": "https://www.pbc.ps/985-16",
  "max_age_hours": 72,
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "52d8ebc8cd",
- "score": 57.99,
+ "score": 57.81,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
