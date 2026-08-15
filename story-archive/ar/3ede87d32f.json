@@ -1,0 +1,44 @@
+{
+ "brief": "اعتدى مستوطنون إسرائيليون على فلسطينيين في منطقة مسافِر يطّا جنوبي الضفة الغربية، بحسب القدس العربي، فأصابوا سيدتين وشاباً في الحادثة. ولم توفر الأنباء الأولى تفاصيل حول درجة الإصابات أو الملابسات المباشرة للاعتداء.\n\nتقع منطقة مسافِر يطّا في محافظة الخليل جنوبي الضفة الغربية، وهي منطقة تشهد منذ سنوات توترات مستمرة بين السكان الفلسطينيين والمستوطنين الإسرائيليين، إذ تشتهر بحوادث اعتداءات متكررة على السكان والممتلكات الفلسطينية.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d9%88%d9%86-%d9%8a%d8%b5%d9%8a%d8%a8%d9%88%d9%86-%d8%b3%d9%8a%d8%af%d8%aa",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/729310",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/315303",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-15T17:05:08+00:00",
+ "dek": "",
+ "image": "https://www.alquds.co.uk/wp-content/uploads/2024/08/br-20082024.jpg",
+ "lang": "ar",
+ "link": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d9%88%d9%86-%d9%8a%d8%b5%d9%8a%d8%a8%d9%88%d9%86-%d8%b3%d9%8a%d8%af%d8%aa",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "القدس العربي",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d9%88%d9%86-%d9%8a%d8%b5%d9%8a%d8%a8%d9%88%d9%86-%d8%b3%d9%8a%d8%af%d8%aa"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3ede87d32f",
+ "score": 64.0,
+ "source": "القدس العربي",
+ "source_id": "alqudsuk",
+ "source_url": "https://www.alquds.co.uk/",
+ "title": "مستوطنون يصيبون ثلاثة فلسطينيين في مسافِر يطّا"
+}
