@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://news.un.org/feed/view/en/story/2026/08/1168130",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
-  },
-  {
    "article": "https://imemc.org/article/colonizer-attacks-injure-palestinians-across-occupied-west-bank",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
@@ -60,7 +54,7 @@
  "modified": null,
  "original": true,
  "pid": "ad36ec091c",
- "score": 86.64,
+ "score": 86.6,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
