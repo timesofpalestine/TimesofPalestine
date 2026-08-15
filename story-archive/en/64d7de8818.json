@@ -6,37 +6,25 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-says-it-killed-two-palestinians-gaza",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-attacks-injure-five-palestinians-in-gaza",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "http://www.democracynow.org/2026/8/14/american_doctor_documentary",
-   "name": "Democracy Now!",
-   "url": "https://www.democracynow.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-15T17:53:33+00:00",
  "dek": "Israeli army says it killed two Palestinians in Gaza The Israeli military has said its Paratroopers Brigade killed two Palestinians in Gaza. The military said the Palestinians crossed the so-called “yellow line.\" Under the US-brokered agreement reached with…",
- "image": "https://www.middleeasteye.net/sites/default/files/2026-08/IMG_0443.jpeg",
+ "image": "/media/times-of-palestine-cover-gaza.svg",
  "lang": "en",
  "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-says-it-killed-two-palestinians-gaza",
  "max_age_hours": 72,
  "media": {
-  "credit": "Middle East Eye",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-says-it-killed-two-palestinians-gaza"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "64d7de8818",
- "score": 61.81,
+ "score": 61.61,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
