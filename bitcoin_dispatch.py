@@ -351,6 +351,12 @@ def _run():
 
     api_key = os.environ.get("OPENAI_API_KEY", "").strip()
     if not api_key:
+        # Silent-outage guard (site sweep 2026-08-15, issue #286): a missing
+        # key skipped every run green since Aug 3 with nobody the wiser —
+        # surface it on the Actions page. Still fail-open, never a red build.
+        print("::warning::bitcoin-dispatch: OPENAI_API_KEY is not set — the "
+              "desk is skipping every run; add the repo secret or pause the "
+              "workflow from the Actions tab")
         return "bitcoin-desk: no OPENAI_API_KEY — skipped"
 
     hours_since = _hours_since_last_dispatch(state, now)
