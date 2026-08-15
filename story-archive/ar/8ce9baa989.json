@@ -1,0 +1,38 @@
+{
+ "brief": "أفاد الهلال الأحمر الفلسطيني بإصابة ثلاثة فلسطينيين جراء اعتداء المستوطنين على الأهالي في قرية مسافر يطا جنوب الخليل. لم تُحدّد بيانات الهلال الأحمر طبيعة الإصابات أو ظروف الحادثة بالتفصيل.\n\nوتقع مسافر يطا في منطقة جنوب الخليل التي تشهد توترات متكررة بين السكان الفلسطينيين والمستوطنين، فيما تتعرض قرى المنطقة لاعتداءات دورية من قبل المستوطنين. وتشكل هذه الاعتداءات جزءاً من نمط متواصل من العنف الذي يستهدف المجتمعات الفلسطينية في جنوب الضفة الغربية.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/QudsN/729310",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/315303",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-15T16:55:48+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/QudsN/729310",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8ce9baa989",
+ "score": 63.6,
+ "source": "شبكة قدس · تيليغرام",
+ "source_id": "tg-qudsn",
+ "source_url": "https://t.me/QudsN",
+ "title": "المستوطنون يصيبون 3 فلسطينيين في مسافر يطا بالخليل"
+}
