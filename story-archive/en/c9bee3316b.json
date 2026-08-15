@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli forces carried out extensive military operations across Gaza on Saturday, including artillery shelling, live fire, drone strikes, and intensive surveillance flights, IMEMC News reported. The attacks killed at least one Palestinian and wounded several others in various locations throughout the enclave.\n\nThe strikes coincided with a deepening oxygen crisis affecting Gaza's health infrastructure. Hospitals and medical facilities across the territory face critical shortages of oxygen supplies, compounding existing humanitarian challenges as the health system struggles to treat wounded civilians and maintain essential services amid the ongoing military operations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/gaza-attacks-continue-amid-deepening-oxygen-crisis",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-15T22:28:30+00:00",
+ "dek": "Israeli violation continued across the Gaza Strip on Saturday, with artillery shelling, live fire, drone strikes, and intensive surveillance flights reported across the enclave. The attacks killed at least one Palestinian and wounded several others across the…",
+ "image": "https://imemc.org/wp-content/uploads/2026/08/Gaza-1-e1786831735569.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/gaza-attacks-continue-amid-deepening-oxygen-crisis",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/gaza-attacks-continue-amid-deepening-oxygen-crisis"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c9bee3316b",
+ "score": 63.98,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces strike Gaza as oxygen shortage worsens"
+}
