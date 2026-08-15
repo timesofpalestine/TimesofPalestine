@@ -6,7 +6,19 @@
    "article": "https://shehabnews.com/post/162249/11-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7-%D9%81%D9%8A-%D9%85%D8%AC%D8%A7%D8%B2%D8%B1-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%A8%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%88%D9%86%D8%B2%D9%88%D8%AD-%D9%88%D8%A7%D8%B3%D8%B9-%D9%84%D9%84%D8%B3%D9%83%D8%A7%D9%86",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/315362",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/729351",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-15T20:25:00+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "c8ec0e7d40",
- "score": 47.53,
+ "score": 47.34,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
