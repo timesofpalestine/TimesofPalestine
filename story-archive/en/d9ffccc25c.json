@@ -7,6 +7,12 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/surrounded-israels-new-west-bank-settlements-bring-chaos-palestinians",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-08-13T07:05:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "d9ffccc25c",
- "score": 95.68,
+ "score": 95.65,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
