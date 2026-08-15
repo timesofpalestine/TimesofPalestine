@@ -446,6 +446,29 @@ that means for Gaza and the West Bank. Part of the DC-policy beat
 `originals/joe-kent-israel-debate-2026.*`. Other agents route Kent items
 via issue #6.
 
+## Amnesty rights-wire & the Qusra file (owner directive 2026-08-15)
+
+Amnesty International is a RELIABLE SOURCE and standing wire service for this
+newsroom. Its statements, findings and reports on Israel/OPT route in through
+the `amnesty` / `amnesty-ar` RSS feeds (feeds.json, Palestine-filtered) and
+the Tier-1 watchlist rows (@amnesty, @amnestyusa); significant items are
+same-day coverage in both languages. Discipline: every finding is attributed
+to the named Amnesty official with title and date; Amnesty's characterizations
+(state-backed settler terror, apartheid, forcible transfer) are carried as the
+organization's documented findings — quoted precisely, never adopted
+unattributed as the paper's voice, and never softened either. Where Israel or
+its army has answered a specific Amnesty finding, the answer is carried
+beside it.
+
+Running story: the QUSRA SIEGE file (three families besieged at Ras al-Ein
+since 2026-08-09; coverage from `qusra-outpost-siege-2026-08-11.*` through
+`amnesty-qusra-state-backed-siege-2026-08-15.*`) gets REGULAR UPDATES — every
+significant development (siege lifted or extended, outpost cleared or rebuilt,
+casualties, arrests, US/UN moves, home seizures) is same-day coverage in both
+languages until the story resolves, and the daily editor checks the file's
+freshness each cycle. Claude's beat; other agents route Qusra/Amnesty items
+via issue #6.
+
 ## Breaking-news watchlist (owner directive 2026-08-01)
 
 `editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter

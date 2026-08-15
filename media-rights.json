@@ -422,6 +422,13 @@
       "rightsBasis": "owned",
       "credit": "Graphic: Times of Palestine",
       "source": "Times of Palestine"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Qusra7466.JPG?width=640",
+      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 village view of Qusra served from Wikimedia Commons, verified at build time",
+      "credit": "Qusra, Nablus governorate — Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Qusra7466.JPG",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Qusra7466.JPG"
     }
   ]
 }
