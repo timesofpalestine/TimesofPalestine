@@ -19,6 +19,18 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/390385",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/8785-122",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-08-14T06:55:00+00:00",
@@ -36,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "673d9b654d",
- "score": 82.81,
+ "score": 82.77000000000001,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
