@@ -6,7 +6,19 @@
    "article": "https://shehabnews.com/post/162211/%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%81%D8%B1%D9%8A%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D8%A6%D8%AF%D9%8A%D9%86-%D8%A5%D9%84%D9%89-%D8%BA%D8%B2%D8%A9-%D9%8A%D8%AA%D8%B9%D8%B1%D8%B6%D9%88%D9%86-%D9%84%D9%84%D8%B9%D9%86%D9%81-%D8%A7%D9%84%D8%AC%D8%B3%D8%AF%D9%8A-%D9%88%D8%A7%D9%84%D8%AA%D9%87%D8%AF%D9%8A%D8%AF%D8%A7%D8%AA",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-attacks-injure-five-palestinians-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/8/14/american_doctor_documentary",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-14T20:22:00+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "098f342dd7",
- "score": 46.03,
+ "score": 45.83,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
