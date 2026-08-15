@@ -193,6 +193,7 @@ ORIGINAL_IMG_MD_RX = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
 ORIGINAL_BODY_STATS = {}
 ORIGINAL_SKIPS = {}      # lang -> {slug}: validator skips, for the parity gate
 ORIGINALS_LOADED = {}    # lang -> {slug}: published originals, for the parity gate
+STORY_PAGES_RENDERED = {}  # lang -> {href}: story pages this build ships (live + archive)
 
 # ---------- text utilities ----------
 
@@ -1566,7 +1567,10 @@ _AR_DICTION = [
      "«أسلم» تعني اعتنق الإسلام — فعل التسليم هو «سلّم/سلّمت»"),
     (re.compile(r"(?:^|[\s،.:«»)(])قام(?:ت|وا)?\s+(?:\S+\s+){0,3}?ب\S"),
      "«قام بـ» ركيكة — استعمل الفعل مباشرة (قصف، اعتقل، سلّم)"),
-    (re.compile(r"(?:^|[\s،.:«»)(])تم(?:ت)?\s+\S"),
+    # تم كفعل تام («تم دون علم العائلة»، «تمت قبل عام») سليمة — الركيك هو
+    # «تم» + المصدر. تُستثنى أدوات وظروف شائعة بعد تم كي لا يُتَّهم نصٌّ سليم.
+    (re.compile(r"(?:^|[\s،.:«»)(])تم(?:ت)?\s+"
+                r"(?!دون|بدون|ذلك|هذا|بالفعل|فعلاً|رغم|قبل|بعد|خلال|عبر|بموجب|بنجاح|أمس|اليوم)\S"),
      "«تم/تمت» مع المصدر ركيكة — استعمل الفعل المبني للمعلوم"),
     (re.compile(r"يُ?ذكر أن|تجدر الإشارة|الجدير بالذكر|ومن الجدير"),
      "حشو صحفي آلي — احذفه وادخل في المعلومة"),
@@ -1595,9 +1599,13 @@ _EN_DICTION = [
 # Arabic edition for «الهذالين»): names transliterated from English or Hebrew
 # are verified against Arabic-language sources and the verified forms live in
 # editorial/arabic-names.json; each recorded wrong variant is flagged here
-# exactly like machine diction. Variants are matched as plain substrings, so
-# the lexicon only lists DISTINCTIVE strings. Fail-open: a missing or invalid
-# lexicon disables the net, never the build.
+# exactly like machine diction. Variants match on Arabic word boundaries —
+# a single attached prefix (و/ف/ب/ل/ك) still matches, but a variant buried
+# inside a longer word does not («ادنا» must never flag «أجسادنا»).
+# Fail-open: a missing or invalid lexicon disables the net, never the build.
+_AR_LETTER = "ء-ي"
+
+
 def _load_arabic_name_nets():
     try:
         data = json.loads((ROOT / "editorial" / "arabic-names.json")
@@ -1608,7 +1616,9 @@ def _load_arabic_name_nets():
             for wrong in entry.get("wrong", []):
                 wrong = (wrong or "").strip()
                 if wrong and right and wrong not in right and right not in wrong:
-                    nets.append((re.compile(re.escape(wrong)),
+                    rx = (f"(?<![{_AR_LETTER}])(?:[وفبلك]?ال|لل|[وفبلك])?"
+                          f"{re.escape(wrong)}(?![{_AR_LETTER}ً-ْ])")
+                    nets.append((re.compile(rx),
                                  f"الإملاء المعتمد «{right}» — راجع editorial/arabic-names.json"))
         return nets
     except Exception:
@@ -4343,10 +4353,16 @@ def interior_nav_html(lang, prefix=""):
     published-this-build signal available outside render_page — so the bar
     never links a special whose page did not render."""
     loaded = ORIGINALS_LOADED.get(lang, set())
+    rendered = STORY_PAGES_RENDERED.get(lang)
     sp_top = sp_depth = ""
     for sp in SPECIALS:
         slug = sp.get("requires_original")
         if slug and slug not in loaded:
+            continue
+        # When the build has settled which story pages ship (main sets
+        # STORY_PAGES_RENDERED before any interior page renders), that is
+        # the gate — parse-time "loaded" is only the pre-render fallback.
+        if slug and rendered is not None and sp["href"][lang] not in rendered:
             continue
         link = f'<a class="special" href="{esc(sp["href"][lang])}">{esc(sp["nav"][lang])}</a>'
         if sp.get("nav_primary"):
@@ -5621,6 +5637,14 @@ def main():
         # 2026-08-11), so no bar ever links a section that didn't render.
         NAV_ARCHIVE_CATS[lang] = ({i["cat"] for i in items}
                                   | {a["cat"] for a in _arch_pool})
+        # The interior nav's specials gate (2026-08-15): a special is linkable
+        # only when its story page ships THIS build — live items or archive
+        # re-renders. ORIGINALS_LOADED is a parse-time signal; an original the
+        # pipeline later drops (or an archive skipped offline) must not leave
+        # nav links to a page that never rendered.
+        STORY_PAGES_RENDERED[lang] = {
+            story_url_path(it["title"], it["pid"], lang)
+            for it in list(items) + _arch_pool}
         for it in _arch_pool:
             try:
                 attach_corrections(it)  # late corrections reach archived pages too
