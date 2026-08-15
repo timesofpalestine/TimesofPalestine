@@ -1,0 +1,44 @@
+{
+ "brief": "وزارة الصحة في غزة أعلنت أن 12 محطة أكسجين من أصل 34 محطة في القطاع تعمل حالياً، فيما توقفت الأخرى بسبب ظروف فنية وميكانيكية بالغة التعقيد. يشكل هذا توقفاً لنحو ثلثي محطات الأكسجين الأساسية في المنشآت الطبية بغزة.\n\nالأعطال المتكررة والنقص الحاد في قطع الغيار والوقود يزيدان من حدة أزمة توفير الأكسجين للمستشفيات والعيادات. وتأتي هذه الحالة في وقت تشهد فيه غزة أزمة صحية حادة تستدعي توفير خدمات طبية مكثفة، مما يرفع الضغط على المنشآت الصحية المتبقية وقدرتها على الاستجابة لاحتياجات السكان الطبية الملحة.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/315321",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/729317",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217053&slug=%D8%B5%D8%AD%D8%A9-%D8%BA%D8%B2%D8%A9-%D8%A3%D8%B2%D9%85%D8%A9-%D8%A7%D9%84%D8%A3%D9%83%D8%B3%D8%AC%D9%8A%D9%86-%D8%AA%D9%87%D8%AF%D8%AF-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%8A%D8%A7%D8%AA-%D9%85%D8%B9-%D8%A7%D8%B3%D8%AA%D9%85%D8%B1%D8%A7%D8%B1-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-15T18:43:41+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/C9cvxLapv8yriTN7HFpYm9U4Fpa65JL4l7llvJ-02icC2yNLLzVl2ioyxQ1t1QsKNXGXAVmyqxB5WDx1CCqK9HbNsH5q9ZiJyA_w1OvkaWrqVCfzQP-nmAN1_eXCk1jRfJ1PvTJ2M3yj0gLqQXxmNq8KqWKjtiindEVDryfbMLILaBuBvkqw1YesXQYuNRJhCnqhuzGac0rQRaFpuLVb3-KX5o43VrCikWVYlmZRoQnYTko55Glb7bX-r8Xpld4NMvuxwemwixG1AQFM3EDbQhNnGgROWxMlU3eq3GXWdLj6vRbGvGbwQWFnhxHOOu5BEmWYHFXucLdcJngW_kTf-Q.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/315321",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/315321"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "038bbe4155",
+ "score": 49.8,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "وزارة الصحة بغزة: 12 محطة أكسجين فقط تعمل من أصل 34"
+}
