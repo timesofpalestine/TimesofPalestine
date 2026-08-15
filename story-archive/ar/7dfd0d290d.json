@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/315213",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
    "article": "https://t.me/AlQastalps/390288",
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
@@ -30,6 +24,12 @@
    "article": "https://t.me/QudsN/729182",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/315225",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
    "verified": true
   }
  ],
@@ -48,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "7dfd0d290d",
- "score": 62.79,
+ "score": 62.59,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",

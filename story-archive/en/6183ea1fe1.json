@@ -1,0 +1,44 @@
+{
+ "brief": "Israeli occupation forces pursued violations in Gaza, with demolition operations and artillery strikes continuing across multiple areas of the strip, Shehab Wire reported. The military campaign has affected scattered zones throughout the territory.\n\nWitnesses documented extensive damage from the ongoing strikes. Infrastructure and civilian areas bore the brunt of the bombardment, which showed no signs of abating across the enclave.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.com/post/162216/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%88%D8%A7%D8%B5%D9%84-%D8%AE%D8%B1%D9%88%D9%82%D8%A7%D8%AA%D9%87-%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%86%D8%B3%D9%81-%D9%88%D9%82%D8%B5%D9%81-%D9%85%D8%AF%D9%81%D8%B9%D9%8A-%D8%A8%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D9%85%D8%AA%D9%81%D8%B1%D9%82%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-attacks-injure-five-palestinians-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/8/14/american_doctor_documentary",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-15T09:39:00+00:00",
+ "dek": "Israeli occupation forces pursued violations in Gaza, with demolition operations and artillery strikes continuing across multiple areas of the strip, Shehab Wire reported. The military campaign has affected scattered…",
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://shehabnews.com/post/162216/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%88%D8%A7%D8%B5%D9%84-%D8%AE%D8%B1%D9%88%D9%82%D8%A7%D8%AA%D9%87-%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%86%D8%B3%D9%81-%D9%88%D9%82%D8%B5%D9%81-%D9%85%D8%AF%D9%81%D8%B9%D9%8A-%D8%A8%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D9%85%D8%AA%D9%81%D8%B1%D9%82%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6183ea1fe1",
+ "score": 63.87,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "Israeli forces continue bombardment across Gaza Strip"
+}
