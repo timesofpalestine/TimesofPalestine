@@ -15,18 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/08/israel-calls-police-replace-military-handling-west-bank-settlers",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/08/1168130",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
-  },
-  {
    "article": "https://t.me/eyesonpal/53762",
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
@@ -48,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "ad530e774a",
- "score": 84.58,
+ "score": 84.53,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
