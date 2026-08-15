@@ -31,6 +31,12 @@
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428152",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": false
   }
  ],
  "date": "2026-08-14T06:55:00+00:00",
@@ -48,7 +54,7 @@
  "modified": null,
  "original": true,
  "pid": "673d9b654d",
- "score": 82.75,
+ "score": 82.71000000000001,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
