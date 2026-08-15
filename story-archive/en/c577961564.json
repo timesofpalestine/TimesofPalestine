@@ -6,7 +6,13 @@
    "article": "https://www.972mag.com/west-bank-checkpoints-roadblocks-ambulances",
    "name": "+972 Magazine",
    "url": "https://www.972mag.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-says-900-physical-obstacles-delay-limit-aid-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-13T18:47:42+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "c577961564",
- "score": 55.14,
+ "score": 54.96,
  "source": "+972 Magazine",
  "source_id": "972mag",
  "source_url": "https://www.972mag.com/",
