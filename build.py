@@ -1522,14 +1522,25 @@ def fetch_feed(feed, lang):
         else:
             items = fetch_rss(feed, lang, now, max_age)
         print(f"  ✓ {feed['name']}: {len(items)} items")
+        observed = int(feed.get("_observed", len(items)))
+        if observed == 0:
+            # Feed-health visibility (site sweep 2026-08-15, issue #286): a
+            # feed that yields nothing at all — before any age or Palestine
+            # filter — is a dead URL or an empty source, and a section can
+            # starve silently behind it. Say so where the Actions page shows
+            # it. Filter-trimmed feeds (observed > 0, kept 0) stay quiet.
+            print(f"::warning::feed '{feed['id']}' returned zero items — "
+                  "dead URL, moved feed, or empty source; check feeds.json")
         if HEALTH:
-            observed = int(feed.get("_observed", len(items)))
             HEALTH.source_result(
                 feed["id"], "ok", fetched=observed, accepted=len(items),
                 withheld=max(0, observed - len(items)))
         return items
     except Exception as e:
         print(f"  ✗ {feed['name']}: {type(e).__name__}: {e}")
+        print(f"::warning::feed '{feed['id']}' fetch failed "
+              f"({type(e).__name__}) — the section it supplies gets nothing "
+              "this build")
         if HEALTH:
             HEALTH.source_result(feed["id"], "error", error=type(e).__name__)
         return []
