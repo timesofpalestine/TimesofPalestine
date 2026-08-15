@@ -1,0 +1,38 @@
+{
+ "brief": "قصفت طائرات إسرائيلية دراجة نارية على شارع صلاح الدين بالقرب من مدخل مستشفى شهداء الأقصى وسط قطاع غزة، بحسب المركز الفلسطيني للإعلام. ولم يُعلن حتى الآن عن تفاصيل الإصابات التي خلّفتها الغارة.\n\nوقطاع غزة يشهد منذ أشهر غارات جوية إسرائيلية متكررة على مناطق سكنية وعسكرية، إذ تستهدف الطائرات تجمعات وأفراداً في مختلف أنحاء القطاع. والمستشفيات في غزة تتعرض بشكل متكرر للقصف والحصار، ما أثّر بشكل كبير على قدرتها على تقديم الخدمات الطبية.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/315231",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82371",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-15T09:05:21+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/jjVb_LtIKngwf6nn5sHZXOsF0ntzpyuZujv_v6wRyLBmwRWS0mHm8hgw8RvVr5-8M1OM6L-wVSLQIjUx3anT6QFS8BtjbkkkoBiijAqBHllmSlkJ2vOV3rSyMDWdkSXVcfrIU1jYVM7wx4zuw0uhqeB7L4XM0exumi-KR7S_Quf-5vFXxV8hojjf561VlS2gbxCGKjiw3dzmJZruhHJfOKct5uaQPU51sKlD8cRrJJYJSjAlZ2WJOE1J0FaI2Ir7bvs6TruTtIhvTTVMmc2oKHa_ivnz-EhXaoOVDhCp2dPbKoaOEHHo2SYzvEBTDgWhfv3YhydpqPg8g12rvcYQxg.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/315231",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/315231"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cff6f26a95",
+ "score": 63.78,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "طائرات إسرائيلية تقصف دراجة نارية وسط غزة"
+}
