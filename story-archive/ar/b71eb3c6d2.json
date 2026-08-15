@@ -1,0 +1,32 @@
+{
+ "brief": "سُمعت دوي انفجارات في المناطق الجنوبية من قطاع غزة، بحسب ما أفادت حسابات مراقبة محلية على منصة تيليغرام. ولم تتضح فوراً طبيعة الانفجارات أو مصادرها، إذ اقتصرت التقارير الأولية على تسجيل الأصوات دون معلومات تفصيلية عن الحادثة.\n\nتأتي هذه الانفجارات في سياق الأوضاع الأمنية المتوترة التي تشهدها مناطق متفرقة من القطاع، حيث تتكرر حوادث مماثلة بشكل دوري في مختلف المحافظات.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82372",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-15T20:30:52+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82372",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b71eb3c6d2",
+ "score": 48.6,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "انفجارات تهز جنوب قطاع غزة"
+}
