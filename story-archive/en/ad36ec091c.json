@@ -27,6 +27,12 @@
    "verified": true
   },
   {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israel-shoots",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
    "article": "https://news.un.org/feed/view/en/story/2026/08/1168147",
    "name": "UN News",
    "url": "https://news.un.org/",
@@ -36,6 +42,12 @@
    "article": "https://www.theguardian.com/world/2026/aug/13/israeli-troops-force-families-from-homes-amid-settler-terror-campaign-in-west-bank",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162239/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%82%D8%AA%D8%AD%D9%85-%D8%B9%D8%AF%D8%A9-%D9%82%D8%B1%D9%89-%D8%BA%D8%B1%D8%A8-%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%84%D9%87",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
    "verified": true
   },
   {
@@ -72,7 +84,7 @@
  "modified": null,
  "original": true,
  "pid": "ad36ec091c",
- "score": 86.45,
+ "score": 86.41,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
