@@ -6,18 +6,18 @@
    "article": "https://t.me/QudsN/729301",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/315296",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   },
   {
    "article": "https://www.pbc.ps/985-16",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/315294",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
    "verified": true
   }
  ],
@@ -36,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "465899fcb6",
- "score": 63.9,
+ "score": 63.71,
  "source": "شبكة قدس · تيليغرام",
  "source_id": "tg-qudsn",
  "source_url": "https://t.me/QudsN",
