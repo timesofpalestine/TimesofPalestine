@@ -6,7 +6,25 @@
    "article": "https://www.aljazeera.net/politics/2026/8/16/%d9%84%d9%85-%d8%aa%d8%b3%d9%84%d9%85-%d8%a7%d9%84%d8%a3%d8%b4%d8%ac%d8%a7%d8%b1-%d9%88%d8%a7%d9%84%d8%b7%d9%8a%d9%88%d8%b1-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%8a%d9%87%d8%af%d9%85?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/184939/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%87%D8%AF%D9%85-%D9%85%D9%86%D8%B2%D9%84%D8%A7-%D9%88%D9%8A%D8%AE%D8%B7%D8%B1-3-%D8%A3%D8%AE%D8%B1%D9%89-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%AF%D8%B3",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/58885-2",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/390428",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
   }
  ],
  "date": "2026-08-16T03:53:55+00:00",
@@ -24,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "9f33ed18b6",
- "score": 46.45,
+ "score": 46.16,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
