@@ -3381,6 +3381,8 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .card:hover{box-shadow:var(--sh-h);transform:translateY(-2px)}
 .card>a:first-child{display:block;overflow:hidden}
 .card img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;background:#e8e6df;transition:transform .45s ease}
+.card img[src$=".svg"],.rowcard img[src$=".svg"],.research-feat img[src$=".svg"]{object-fit:contain;background:#101013}
+@media(hover:none){h3 a:hover,.card h3 a:hover,.hero-overlay h2 a:hover{color:inherit}}
 /* Portrait wire images (tagged onload): cards keep a face-friendly upper
    crop; the big 16/9 surfaces letterbox the frame whole — no crop can fit
    a face into the band a wide slot cuts from a tall photo. */
@@ -3624,7 +3626,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .hero-zone{grid-template-columns:1fr}
   .hero{border-inline-end:none;padding-inline-end:0}
   .latest{position:static;top:auto}
-  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid,.grid.g3{grid-template-columns:repeat(2,minmax(0,1fr))}
   .rowcard img,.rowcard .ph{width:150px}
   .op-grid{grid-template-columns:1fr}
   footer .cols{grid-template-columns:1fr}
@@ -3684,7 +3686,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .hero-overlay .meta .t{color:var(--muted)}
   .hero-overlay .meta .src{color:var(--green)}
   .hero-sub{grid-template-columns:1fr}
-  .grid{grid-template-columns:1fr}
+  .grid,.grid.g2,.grid.g3{grid-template-columns:1fr}
   .latest{padding:.9rem .8rem}
   .sub-thumb img{width:72px}
   .rowcard img,.rowcard .ph{width:110px}
