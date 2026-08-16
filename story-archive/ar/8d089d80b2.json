@@ -1,0 +1,44 @@
+{
+ "brief": "قصفت مدفعية الجيش الإسرائيلي مناطق في شمال البريج بوسط قطاع غزة، وفقاً لما أفادت به غزة الآن عبر تطبيق تيليغرام. وطالت الضربات مواقع متعددة في المنطقة، غير أن التقارير الأولية لم تتضمن بيانات مفصلة حول عدد الإصابات أو حجم الأضرار المادية الناجمة عن القصف.\n\nوتأتي هذه الغارات ضمن سياق التصعيد العسكري المستمر في قطاع غزة، إذ تتعرض مناطق متفرقة من القطاع لقصف متكرر من القوات الإسرائيلية.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82379",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/315520",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/729544",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-16T20:33:26+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82379",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8d089d80b2",
+ "score": 63.81,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "مدفعية إسرائيلية تقصف شمال البريج وسط غزة"
+}
