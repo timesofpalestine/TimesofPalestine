@@ -1,0 +1,32 @@
+{
+ "brief": "قصفت طائرات إسرائيلية منزل رافت أبو خبيزة في المخيم الجديد برفح، ما أسفر عن إصابات بين السكان، بحسب صفحة غزة الآن على تيليغرام.\n\nولم توضح الصفحة أعداد الإصابات أو حالتهم الصحية، كما لم تقدم تفاصيل إضافية بشأن حجم الضربة أو الأضرار المادية الناجمة عن الاستهداف.\n\nيأتي هذا الاستهداف وسط مستمر للعمليات العسكرية الإسرائيلية في قطاع غزة، إذ تشهد مناطق مختلفة غارات متكررة تستهدف المباني السكنية والمنشآت.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82377",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-16T12:43:59+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82377",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cef7e20c4d",
+ "score": 34.47,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "قصف إسرائيلي يستهدف منزل برفح يسفر عن إصابات"
+}
