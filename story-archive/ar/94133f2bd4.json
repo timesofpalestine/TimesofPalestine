@@ -7,6 +7,18 @@
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://felesteen.news/post/184939/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%87%D8%AF%D9%85-%D9%85%D9%86%D8%B2%D9%84%D8%A7-%D9%88%D9%8A%D8%AE%D8%B7%D8%B1-3-%D8%A3%D8%AE%D8%B1%D9%89-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%AF%D8%B3",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/58885-2",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-08-16T06:43:10+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "94133f2bd4",
- "score": 61.94,
+ "score": 61.78,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
