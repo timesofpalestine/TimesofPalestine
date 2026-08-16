@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.net/news/2026/8/16/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d9%84%d8%a5%d8%b3%d8%b9%d8%a7%d9%81-%d9%88%d8%a7%d9%84%d8%b7%d9%88%d8%a7%d8%b1%d8%a6-%d9%85%d8%b5%d8%a7%d8%a8%d9%88%d9%86-%d9%81%d9%8a-%d8%ba%d8%a7%d8%b1%d8%a9?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/Arabi21News/428182",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
@@ -18,6 +24,12 @@
    "article": "https://t.me/AlQastalps/390465",
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82369",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
    "verified": true
   }
  ],
@@ -36,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "634f3a7dea",
- "score": 62.48,
+ "score": 62.29,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
