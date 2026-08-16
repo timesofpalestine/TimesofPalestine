@@ -73,7 +73,7 @@ BASE_URL = "https://www.timesofpalestine.com"
 # live only once a READER-REQUESTED correction is on the record — none has
 # been yet, so it stays down. Flip to True to publish /{lang}/corrections.html
 # and restore every link to it (footers, story stamps, sitemap, schema).
-CORRECTIONS_PAGE_LIVE = False
+CORRECTIONS_PAGE_LIVE = True  # public corrections log, both editions (owner order 2026-08-16)
 
 TOP_SOURCE = {"en": "Times of Palestine", "ar": "تايمز أوف فلسطين"}
 ARABIC_CHARS_RX = re.compile(r"[؀-ۿ]")
@@ -195,6 +195,7 @@ ORIGINAL_BODY_STATS = {}
 ORIGINAL_SKIPS = {}      # lang -> {slug}: validator skips, for the parity gate
 ORIGINALS_LOADED = {}    # lang -> {slug}: published originals, for the parity gate
 STORY_PAGES_RENDERED = {}  # lang -> {href}: story pages this build ships (live + archive)
+TOPIC_HUBS_LIVE = {}     # lang -> [(file-config, matched stories)]: running-file hub pages
 
 # ---------- text utilities ----------
 
@@ -2551,6 +2552,11 @@ def _card_image_hash(url):
 IMAGE_OVERRIDES = load_editorial_json(
     ROOT / "editorial" / "image-overrides.json", {})
 
+# Running-file hub definitions (owner order 2026-08-16): slug, bilingual
+# name/dek, and the case-insensitive pattern that collects a file's stories.
+TOPIC_FILES = load_editorial_json(
+    ROOT / "editorial" / "topic-files.json", {}).get("files", [])
+
 
 def apply_image_overrides(items):
     """Photo-desk kill switch (owner order 2026-08-03): a story listed in
@@ -4421,7 +4427,18 @@ def foot_sections_html(lang, prefix=""):
     links = "".join(f'<a href="{prefix}section-{k}.html">{t["sections"][k]}</a>'
                     for k in SECTION_ORDER[lang] if k in have)
     label = "أقسام الصحيفة" if lang == "ar" else "Sections"
-    return f'<nav class="foot-sections" aria-label="{label}">{links}</nav>'
+    out = f'<nav class="foot-sections" aria-label="{label}">{links}</nav>'
+    # Running files ride the same index (owner order 2026-08-16): the hubs
+    # that shipped this build, on every page's footer, both editions.
+    hubs = TOPIC_HUBS_LIVE.get(lang) or []
+    if hubs:
+        h_label = "الملفات المتجددة" if lang == "ar" else "Running files"
+        h_links = "".join(
+            f'<a href="{prefix}topic-{tf["slug"]}.html">{esc(tf[lang]["name"])}</a>'
+            for tf, _ in hubs)
+        out += (f'<nav class="foot-sections foot-files" '
+                f'aria-label="{h_label}">{h_links}</nav>')
+    return out
 
 
 # Back-to-top (owner order 2026-08-11): the front page runs tens of screens
@@ -5448,13 +5465,79 @@ function render(hits,none){res.textContent="";
     li.appendChild(a);li.appendChild(c);li.appendChild(p);res.appendChild(li);});}
 function go(){var v=q.value.trim().toLowerCase();if(v.length<2){res.textContent="";return;}
   load().then(function(ix){var terms=v.split(/\\s+/);
-    var hits=ix.filter(function(e){var hay=(e.t+" "+e.d+" "+e.c).toLowerCase();
+    var hits=ix.filter(function(e){var hay=(e.t+" "+e.d+" "+(e.b||"")+" "+e.c).toLowerCase();
       return terms.every(function(w){return hay.indexOf(w)!==-1});}).slice(0,40);
     render(hits,q.dataset.none);});}
 q.addEventListener("input",go);
 var init=new URLSearchParams(location.search).get("q");
 if(init){q.value=init;go();}})();
 """
+
+
+def render_topic_page(lang, tf, items, built_at, more_items=()):
+    """A running file's living page (owner order 2026-08-16): newest
+    development first, the whole documented trail beneath — the page a
+    reader follows for Qusra or The Hague the way they follow a section."""
+    t = STR[lang]
+    name, dek = tf[lang]["name"], tf[lang]["dek"]
+    slug = tf["slug"]
+    n = len(items)
+    if lang == "ar":
+        count_label = "قصة واحدة" if n == 1 else ("قصتان" if n == 2 else f"{n} قصص" if n <= 10 else f"{n} قصة")
+        kicker = "ملف متجدد"
+    else:
+        count_label = f"{n} story" if n == 1 else f"{n} stories"
+        kicker = "Running file"
+    cards = "".join(card(it, lang, "story/") for it in items)
+    more_html = ""
+    if more_items:
+        more_label = "المزيد من تايمز أوف فلسطين" if lang == "ar" else "More from Times of Palestine"
+        more_cards = "".join(card(it, lang, "story/") for it in more_items)
+        more_html = (f'<div class="sec-head focus morehead"><h2>{more_label}</h2>'
+                     f'<span class="rule"></span></div>'
+                     f'<div class="grid g4">{more_cards}</div>')
+    return f"""<!DOCTYPE html>
+<html lang="{t['lang']}" dir="{t['dir']}">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48">
+<title>{esc(name)} — {t['site_name']}</title>
+<meta name="description" content="{esc(dek)}">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="{BASE_URL}/{lang}/topic-{slug}.html">
+<link rel="alternate" hreflang="en" href="{BASE_URL}/en/topic-{slug}.html">
+<link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/topic-{slug}.html">
+<link rel="alternate" hreflang="x-default" href="{BASE_URL}/en/topic-{slug}.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="{'ar_PS' if lang == 'ar' else 'en_US'}">
+<meta property="og:site_name" content="{t['site_name']}">
+<meta property="og:title" content="{esc(name)} — {t['site_name']}">
+<meta property="og:description" content="{esc(dek)}">
+<meta property="og:url" content="{BASE_URL}/{lang}/topic-{slug}.html">
+<meta property="og:image" content="{BASE_URL}/og-banner.png">
+<meta name="twitter:card" content="summary_large_image">
+{'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
+{_THEME_JS}{analytics_tag()}
+</head>
+<body>
+<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar static"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/">{t['switch_lang']}</a></span></div>
+<header class="masthead compact"><div class="wrap">
+  <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
+</div></header>
+{interior_nav_html(lang)}
+<main class="wrap sectionpage" id="top">
+  <div class="sec-head focus"><h2>{esc(name)}</h2><span class="rule"></span><span class="count">{esc(kicker)} · {count_label}</span></div>
+  <p class="summary" style="max-inline-size:52rem">{esc(dek)}</p>
+  <div class="grid g4">{cards}</div>
+  {more_html}
+</main>
+<footer><div class="wrap"><div class="flagline"></div>
+  {foot_sections_html(lang)}
+  <div class="legal"><span>© {built_at.year} {t['site_name']}</span> <a href="./">{t['back_home']}</a> <a href="about.html">{'من نحن' if lang == 'ar' else 'About'}</a></div>
+</div></footer>
+<script>{_CLOCK_JS}</script>
+{totop_html(lang)}
+</body></html>"""
 
 
 def render_search_page(lang, built_at, cats=()):
@@ -5681,6 +5764,32 @@ def main():
         STORY_PAGES_RENDERED[lang] = {
             story_url_path(it["title"], it["pid"], lang)
             for it in list(items) + _arch_pool}
+        # Running-file topic hubs (owner order 2026-08-16, site audit rec 6):
+        # the paper's spine is its standing files — give each a living page
+        # collecting every matching live and archived story. Selected here,
+        # before any interior page renders, so footers only link hubs that
+        # ship this build. Fail-open: a bad pattern drops one hub, loudly.
+        TOPIC_HUBS_LIVE[lang] = []
+        for _tf in TOPIC_FILES:
+            try:
+                _rx = re.compile(_tf["pattern"], re.I)
+                _hits = [h for h in list(items) + _arch_pool
+                         if _rx.search(f"{h.get('title', '')} "
+                                       f"{h.get('link', '') or ''}")]
+                if len(_hits) >= int(_tf.get("min", 2)):
+                    try:
+                        _hits.sort(key=lambda r: r.get("date"), reverse=True)
+                    except TypeError:  # datetime/str mix across live+archive
+                        _hits.sort(key=lambda r: str(r.get("date") or ""),
+                                   reverse=True)
+                    TOPIC_HUBS_LIVE[lang].append((_tf, _hits))
+            except Exception as exc:
+                print(f"::warning::topic hub "
+                      f"'{_tf.get('slug', '?')}' failed open "
+                      f"({type(exc).__name__}: {exc})")
+        if TOPIC_HUBS_LIVE[lang]:
+            print(f"  ✓ topic hubs {lang}: " + ", ".join(
+                f"{tf['slug']}({len(h)})" for tf, h in TOPIC_HUBS_LIVE[lang]))
         for it in _arch_pool:
             try:
                 attach_corrections(it)  # late corrections reach archived pages too
@@ -5732,6 +5841,13 @@ def main():
             (dist / lang / f"section-{cat}.html").write_text(
                 render_section_page(lang, cat, cat_items, built_at,
                                     more_items=more_items), encoding="utf-8")
+        # Running-file hub pages — selected earlier alongside the nav gate,
+        # written here so their footers see the full section index.
+        for _tf, _hits in TOPIC_HUBS_LIVE.get(lang, []):
+            _more = sorted(items, key=lambda r: r["date"], reverse=True)[:8]
+            (dist / lang / f"topic-{_tf['slug']}.html").write_text(
+                render_topic_page(lang, _tf, _hits, built_at, _more),
+                encoding="utf-8")
         (dist / lang / "search.html").write_text(
             render_search_page(lang, built_at,
                                cats=sorted({it["cat"] for it in items})), encoding="utf-8")
@@ -5741,6 +5857,12 @@ def main():
         (dist / lang / "search-index.json").write_text(json.dumps(
             [{"t": it["title"], "u": story_url_path(it["title"], it["pid"], lang),
               "d": truncate(it.get("dek") or "", 160),
+              # Body excerpt so a name mentioned mid-story is findable
+              # (site audit 2026-08-16) — plain text, capped to keep the
+              # whole index a lightweight single fetch.
+              "b": truncate(re.sub(r"<[^>]+>|[#*>`\[\]|]", " ",
+                                   str(it.get("brief") or ""))
+                            .replace("\n", " "), 400),
               "c": STR[lang]["sections"].get(it["cat"], it["cat"])}
              for it in items + archived],
             ensure_ascii=False), encoding="utf-8")
@@ -5848,6 +5970,22 @@ def main():
     try:
         _sf = __import__("section_freshness")
         _fresh = _sf.report()
+        # Photo-led ratio (site audit 2026-08-16): the charter says covers
+        # are photographs; branded category art is the stopgap. Measure the
+        # front's reality on every build so the daily editor works the
+        # photo-conversion queue against a number, not an impression.
+        _orig = [i for i in en_items + ar_items
+                 if i.get("source_id") == "top-original"]
+        _cover_led = [i for i in _orig if str(i.get("image") or "").startswith(
+            "/media/times-of-palestine-cover-")]
+        if _orig:
+            _fresh["photoLed"] = {
+                "originals": len(_orig), "coverLed": len(_cover_led),
+                "photoLedShare": round(1 - len(_cover_led) / len(_orig), 3),
+                "coverLedPids": sorted({i["pid"] for i in _cover_led})[:40]}
+            print(f"  photo-led originals: {len(_orig) - len(_cover_led)}"
+                  f"/{len(_orig)} — {len(_cover_led)} still on category "
+                  "covers (photo-conversion queue)")
         (dist / "section-freshness.json").write_text(
             json.dumps(_fresh, ensure_ascii=False, indent=2), encoding="utf-8")
         # Queue-depth check (owner order 2026-08-16, "keep the machinery

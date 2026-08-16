@@ -80,6 +80,18 @@ ABOUT = {
              "what, and every correction or update is stamped, dated, on the "
              "story itself. Automation sets our pace; the charter sets our "
              "standards."),
+            ("The desks",
+             "The paper is organized as desks, each with its own method and rules. "
+             "The Briefs Desk rewrites every wire item in-house before publication "
+             "— nothing runs as raw feed copy. The Investigations Desk researches "
+             "and files original in-depth reports in both languages, three times a "
+             "day at most. The Washington Desk reads official Washington daily for "
+             "a Palestinian audience; the Israeli Press Desk reads the Hebrew and "
+             "English Israeli papers, and the US Press Desk the American ones — "
+             "always attributing opinion to its author and labeling think tanks. "
+             "The Photo Desk clears every image's rights before it runs. Each desk "
+             "works under the same charter: attribute everything, name the actor, "
+             "publish in both languages, and correct on the page."),
             ("What we cover",
              "Beyond the day's news we keep standing files. Transparency & "
              "Accountability follows public money and unaccountable power, at "
@@ -179,6 +191,18 @@ ABOUT = {
              "الحادثة الواحدة تقريرٌ واحد، والنص الناقص لا يُنشر، والعنوان "
              "يسمّي مَن فعل ماذا، وكل تصويب أو تحديث يُثبَّت بتاريخه على "
              "المادة نفسها. الأتمتة تضبط إيقاعنا، والميثاق يضبط معاييرنا."),
+            ("المكاتب",
+             "تعمل الصحيفة بنظام المكاتب، ولكلٍّ منهجه وقواعده: مكتب الموجزات "
+             "يعيد كتابة كل خبر وكالات داخلياً قبل النشر — لا ينشر شيء بنصّ "
+             "التغذية الخام؛ ومكتب التحقيقات يبحث ويكتب تقارير أصلية معمّقة "
+             "باللغتين بواقع ثلاثة تقارير يومياً كحد أقصى؛ ومكتب واشنطن يقرأ "
+             "واشنطن الرسمية يومياً بعين القارئ الفلسطيني؛ ومكتب الصحافة "
+             "الإسرائيلية يقرأ الصحف العبرية والإنجليزية، ومكتب الصحافة "
+             "الأميركية صحفَ أميركا ومراكز أبحاثها — وينسب الرأي دوماً إلى "
+             "كاتبه ويسمّي توجه المركز البحثي؛ ومكتب الصور يتحقق من حقوق كل "
+             "صورة قبل نشرها. وتحكم المكاتبَ جميعاً قواعدُ الميثاق ذاتها: "
+             "انسب كل معلومة، وسمِّ الفاعل، وانشر باللغتين، وصوّب على الصفحة "
+             "نفسها."),
             ("ما نغطيه",
              "إلى جانب أخبار اليوم نُمسك ملفات دائمة: «شفافية ومساءلة» يتتبع "
              "المال العام والسلطة التي لا رقيب عليها باللغتين؛ و«حكايتها» يروي "
