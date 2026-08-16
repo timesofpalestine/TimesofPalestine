@@ -49,6 +49,12 @@
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
    "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d9%88%d9%81%d8%af-%d8%ad%d9%85%d8%a7%d8%b3-%d9%8a%d8%a8%d8%ad%d8%ab-%d8%a7%d9%84%d9%85%d8%b1%d8%ad%d9%84%d8%a9-%d8%a7%d9%84%d8%ab%d8%a7%d9%86%d9%8a%d8%a9-%d9%85%d8%b9-%d9%85%d8%af%d9%8a%d8%b1",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
   }
  ],
  "date": "2026-08-16T07:30:00+00:00",
@@ -66,7 +72,7 @@
  "modified": null,
  "original": true,
  "pid": "1ec00385eb",
- "score": 86.83,
+ "score": 86.8,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
