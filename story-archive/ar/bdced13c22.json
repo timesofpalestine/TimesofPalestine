@@ -1,0 +1,38 @@
+{
+ "brief": "ذكرت وسائل إعلام إسرائيلية وقوع حدث أمني استهدف جنود الاحتلال في جنوب لبنان، بحسب المركز الفلسطيني للإعلام. غير أنّ التفاصيل المتعلقة بطبيعة الحادثة ونطاق تأثيرها ظلّت غير محددة في التقارير الأولية.\n\nلم تصدر السلطات الإسرائيلية بيانات رسمية توضح ملابسات الواقعة أو تحدد عدد المصابين بين الجنود، في حين بقيت الأنباء الواردة مقتصرة على التأكيد على استهدافهم دون معطيات إضافية عن المسؤول عن الحادثة أو الأسلحة المستخدمة فيها.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/315374",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/729363",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-15T23:51:45+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/HAOOW2zdoMoA8RFDsz0JhkbeN9imH6MqNJOml1i3L2GzgNEE1bZnz9J5P4Bk2Gr1CFpzZv5q0ABqt2Ra5kQmUC6CEm5vHksVH5iKrvOjXo714o9BhZvKIuSr-mSkAfwg2JNTWYj-NsqEIEzmWfUjRznZ3Z3UWOtOqkMiN6Vh53CUkPFQ229OINXTU2Avlc9tL6an5Vg-WN11ChJSTCe7ZlLy1WL1Kvf4ydNHyUod74ZKBdbPPDeyxH8Pf6dbUhik0T2Z0ql8yyghq99oZjRdJ4zGmUa6xkeuvg65yh_mqhAJAp8ZfzeOYOoizqUEZBgiaHoMKt6wH855H8f5mTrNrw.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/315374",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/315374"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bdced13c22",
+ "score": 63.92,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "حدث أمني يستهدف جنود الاحتلال في جنوب لبنان"
+}
