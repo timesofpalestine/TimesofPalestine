@@ -4,5 +4,7 @@
     "level": 670.56,
     "date": "2026-08-10",
     "source": "Palestine Exchange"
-  }
+  },
+  "lastChecked": "2026-08-16",
+  "lastCheckedNote": "Daily-editor sweep 2026-08-16: pex.ps returned HTTP 403 and Investing.com's PLE page was serving a 2025 quote; no session close later than 2026-08-10 could be verified against an Arabic-language exchange report. Value left at the last VERIFIED close rather than replaced with an unconfirmed number. Verified run this month: 648.69 (Aug 4), 664.06 (Aug 9), 670.56 (Aug 10) — Raya Media Network daily exchange reports."
 }
