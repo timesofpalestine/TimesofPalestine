@@ -6,7 +6,19 @@
    "article": "original:wapo-qusra-soldiers-stood-by-2026-08-15.ar",
    "name": "تايمز أوف فلسطين",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/315403",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/390433",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
   },
   {
    "article": "https://qudsn.co/share/217063",
@@ -36,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "a0a765dcaa",
- "score": 84.33,
+ "score": 84.28999999999999,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

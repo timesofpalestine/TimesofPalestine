@@ -1,0 +1,38 @@
+{
+ "brief": "وكالة معاً ذكرت حدوث تصعيد إسرائيلي كبير في جنوب قطاع غزة، أسفر عن وقوع شهداء وإصابات في الصفوف الفلسطينية. ولم تحدد الوكالة الأعداد الدقيقة للقتلى والمصابين جراء العملية العسكرية.\n\nيندرج التصعيد ضمن سلسلة من الضربات العسكرية التي تشنها إسرائيل بشكل متكرر في المنطقة، حيث تستهدف مواقع مختلفة جنوب القطاع. وبقيت تفاصيل العملية ونطاقها محدودة، إذ لم تُفصح السلطات الإسرائيلية عن معلومات دقيقة بشأن أهداف الضربات أو مداها الجغرافي.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167018.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82373",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-16T06:54:11+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/U9eglNGsSNmwxL0mS3tX3vAzz1G1ONrF3osvkOleBOY74-kqPFMiJiIPFfjnKZCVjlhKTJLPJyokNfIJxZbcG8aPpDIBqsdIhGl3gMf6T7PmRpTnDB5fpTjD8qibRsnZy5d7MQjRNfB0ioo1zzZLx4Nd7aeS41EeT4OeiuENbN56ySPKA3Jwrta4qozRPott5b0SAlZ-gWE978jqFiTmDkNJJ0-GbGrc6OxYCEW_kjLYKQ_pqWexzYQDoAAMnEdBgW21hI69PUudNCnQwVZ2H3NHBMqfi1O1QzzZZ6PBW16rY0Nk79NJiuJp9KzBkd7szWA2K7PwZSByg3FfIC29NA.jpg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2167018.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "وكالة معا (حصري)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167018.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a123df5b8f",
+ "score": 63.55,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "إسرائيل تشن عملية عسكرية واسعة جنوب غزة"
+}
