@@ -169,6 +169,14 @@ land in a specific window.
   boundaries, so a file whose over-length paragraph is a single long
   sentence stays flagged — seven of the fourteen did. Those need a copy
   edit (split the sentence), not another tool pass.
+  Worked 2026-08-16: the eighteen worst-flagged files, 140 paragraphs —
+  the World Bank Gaza-fund pledges report, the draft-constitution file,
+  both cultural-heritage editions, both financial-freedom editions, the
+  youth-emigration and Rafah-returns reports, both tent-economy editions,
+  the deaths-in-custody file, both tent-schools editions, the who-profits
+  and Sama Abdulhadi Arabic editions, the PA-absence Arabic edition, the
+  Graham memory-debate piece and the telemedicine report. Baseline before
+  the pass: 173 flagged files.
 
 - ✅ **Arabic section starvation fixed structurally 2026-08-14.** `ar/opinion`
   (34h) and `ar/humans` (44h) went stale on most cycles for a simple reason:

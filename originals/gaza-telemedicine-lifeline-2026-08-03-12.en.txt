@@ -6,29 +6,49 @@ image: /media/times-of-palestine-gaza-telemedicine-lifeline-2026-08-03-12-lede.s
 ---
 The most substantial documented telemedicine link between Gaza's hospitals and specialists abroad during the war was not a funded platform or a hospital-twinning agreement. It was a WhatsApp group.
 
-That is the finding of a case series published in The Lancet in August 2024, written by clinicians led by Khaled Alser, which describes how the surgical team at Nasser Medical Complex in Khan Younis shared images and details of weapon-inflicted injuries with specialists outside Gaza for advice. The paper states that the group grew into a community with more than 15 specialty and injury-oriented subgroups and over 1,000 members who joined without targeted recruitment, and that all cases were discussed after verbal consent from patients.
+That is the finding of a case series published in The Lancet in August 2024, written by clinicians led by Khaled Alser, which describes how the surgical team at Nasser Medical Complex in Khan Younis shared images and details of weapon-inflicted injuries with specialists outside Gaza for advice.
+
+The paper states that the group grew into a community with more than 15 specialty and injury-oriented subgroups and over 1,000 members who joined without targeted recruitment, and that all cases were discussed after verbal consent from patients.
 
 The authors' own conclusion is cautious. Peer-to-peer telemedicine "holds promise" for surgeons in high-risk, low-resource settings, the paper says, but may be of reduced utility in extremely austere ones — the options open to a health system that is understaffed and under siege remain constrained regardless of remote expertise. By the time the article appeared, the paper notes, Nasser Hospital was no longer functioning.
 
 Before that study, almost nothing had been published. The authors searched for prior literature on trauma telemedicine in Gaza and found two articles: one on remote teaching of burn care to surgeons, one on tele-mental health. Neither dealt with specialist support during a military assault.
 
-A systematic review of telemedicine in six conflict-affected countries of the WHO Eastern Mediterranean region, published in 2022, describes the same pattern more widely. Most interventions were run by humanitarian or academic bodies, mostly initiated in the United States or Europe and mostly by physicians; the in-country users were mainly health workers seeking specialties not locally available rather than patients. In Gaza, the review identified a tele-rehabilitation project that linked local rehabilitation hospitals to each other by videoconference. Its authors concluded that such interventions are feasible using low-cost technology, but that most published accounts were observational or descriptive and few built in any measure of clinical quality.
+A systematic review of telemedicine in six conflict-affected countries of the WHO Eastern Mediterranean region, published in 2022, describes the same pattern more widely.
+
+Most interventions were run by humanitarian or academic bodies, mostly initiated in the United States or Europe and mostly by physicians; the in-country users were mainly health workers seeking specialties not locally available rather than patients. In Gaza, the review identified a tele-rehabilitation project that linked local rehabilitation hospitals to each other by videoconference.
+
+Its authors concluded that such interventions are feasible using low-cost technology, but that most published accounts were observational or descriptive and few built in any measure of clinical quality.
 
 Outcome data, in other words, is largely absent from the record.
 
-A separate strand serves civilians directly. A study of Gaza's temporary medical points, published in PLOS Global Public Health in September 2025, reports that volunteer teams built WhatsApp-based services, citing Gxza Health as providing thousands of teleconsultations along with psychosocial support and coordination of medicine deliveries. Gxza Health describes itself as offering free consultations with Arabic-speaking volunteer doctors, specialists and therapists, and some free medication, to displaced civilians and health staff. The PLOS authors recommend expanding telemedicine, remote training for Gaza-based providers and psychosocial support for frontline staff, while stating plainly that these are stopgaps for a system under attack.
+A separate strand serves civilians directly. A study of Gaza's temporary medical points, published in PLOS Global Public Health in September 2025, reports that volunteer teams built WhatsApp-based services, citing Gxza Health as providing thousands of teleconsultations along with psychosocial support and coordination of medicine deliveries.
+
+Gxza Health describes itself as offering free consultations with Arabic-speaking volunteer doctors, specialists and therapists, and some free medication, to displaced civilians and health staff. The PLOS authors recommend expanding telemedicine, remote training for Gaza-based providers and psychosocial support for frontline staff, while stating plainly that these are stopgaps for a system under attack.
 
 UNRWA has run remote consultation lines of its own. The Palestinian agency Safa published in October 2024 a list of UNRWA general-medicine and dermatology consultation providers in Gaza reachable over WhatsApp.
 
-Institutional links exist but are narrow. Starlink satellite internet was activated at the Emirati field hospital in Rafah in July 2024, announced by SpaceX chief executive Elon Musk and reported by Haaretz and The Jerusalem Post, with the support of the UAE and Israel; the Israeli government had approved the hospital's use of the service more than five months earlier. The hospital's director, Sultan Al Kaabi, told Orbital Today the connection would allow real-time consultations with Emirati hospitals and specialists in other countries for cases the field hospital could not handle alone. The arrangement covers one facility.
+Institutional links exist but are narrow.
 
-Longer-standing programmes are educational. Anera reported in 2019 that 20 Gaza doctors were attending videoconference classes taught by Johns Hopkins faculty — 12 sessions over six months, with certification for those passing at least seven subjects — extending a project begun in the West Bank with Palestinian health ministry cooperation. The Italian group GSI Italia says its Health Campaign for Palestine is funding remote training of nurses and rehabilitation specialists and video consultations with Palestinian doctors, with Khan Younis as the pilot site and two further hospitals in Gaza and the West Bank having applied to join.
+Starlink satellite internet was activated at the Emirati field hospital in Rafah in July 2024, announced by SpaceX chief executive Elon Musk and reported by Haaretz and The Jerusalem Post, with the support of the UAE and Israel; the Israeli government had approved the hospital's use of the service more than five months earlier.
 
-Everything here depends on a network that has been repeatedly destroyed. The Emergency Telecommunications Cluster recorded that Paltel lost 57% of its radio sites early in the war and that airstrikes destroyed two of the three main fibre-optic lines by 10 October 2023. Internet Society Pulse measurements put Gaza's connectivity at 1–2% of pre-October levels before recovering to around 22%. Al-Shabaka reported in February 2025 that the digital rights group 7amleh estimated more than half of Gaza's telecommunications infrastructure destroyed and a further quarter damaged, and that Paltel described its network as 80% offline, with repair materials blocked from entry.
+The hospital's director, Sultan Al Kaabi, told Orbital Today the connection would allow real-time consultations with Emirati hospitals and specialists in other countries for cases the field hospital could not handle alone. The arrangement covers one facility.
+
+Longer-standing programmes are educational. Anera reported in 2019 that 20 Gaza doctors were attending videoconference classes taught by Johns Hopkins faculty — 12 sessions over six months, with certification for those passing at least seven subjects — extending a project begun in the West Bank with Palestinian health ministry cooperation.
+
+The Italian group GSI Italia says its Health Campaign for Palestine is funding remote training of nurses and rehabilitation specialists and video consultations with Palestinian doctors, with Khan Younis as the pilot site and two further hospitals in Gaza and the West Bank having applied to join.
+
+Everything here depends on a network that has been repeatedly destroyed. The Emergency Telecommunications Cluster recorded that Paltel lost 57% of its radio sites early in the war and that airstrikes destroyed two of the three main fibre-optic lines by 10 October 2023.
+
+Internet Society Pulse measurements put Gaza's connectivity at 1–2% of pre-October levels before recovering to around 22%.
+
+Al-Shabaka reported in February 2025 that the digital rights group 7amleh estimated more than half of Gaza's telecommunications infrastructure destroyed and a further quarter damaged, and that Paltel described its network as 80% offline, with repair materials blocked from entry.
 
 Fuel is the other constraint: the ETC timeline links restoration of services in November 2023 to fuel deliveries, and Paltel warned that a blackout was imminent without them.
 
-In June 2025 the ETC reported that fibre cuts severed Gaza City and the north from 10 June and the whole Strip from 12 June, with partial restoration on 14 June only after telecom technicians were granted access, followed by a fresh cut in the south and centre and mobile networks at risk of shutting down within days. The Electronic Frontier Foundation, citing 7amleh, called it the third near-total blackout since October 2023.
+In June 2025 the ETC reported that fibre cuts severed Gaza City and the north from 10 June and the whole Strip from 12 June, with partial restoration on 14 June only after telecom technicians were granted access, followed by a fresh cut in the south and centre and mobile networks at risk of shutting down within days.
+
+The Electronic Frontier Foundation, citing 7amleh, called it the third near-total blackout since October 2023.
 
 In the West Bank the barrier is movement rather than bandwidth. WHO found that 84% of West Bank patient permit applications were approved between 2019 and 2021, a higher rate than for Gaza, and that most West Bank referrals did not require permits at all. MSF says its telemedicine hub is intended to overcome geographic barriers to specialist care.
 
