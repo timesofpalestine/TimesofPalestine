@@ -2639,6 +2639,33 @@ def dedupe_card_images(items):
         else:
             seen.add(key)
 
+def break_cover_twins(seq):
+    """Adjacent cards must never show identical cover art (visual audit
+    2026-08-16: two same-variant Gaza covers ran side by side — the
+    assignment-order cycle can't see display adjacency). Walk a display
+    sequence; when an item repeats the previous card's house cover, step it
+    to the next variant that exists on disk. Mutates items — harmless, every
+    variant is correct art for its category."""
+    prev = None
+    for it in seq:
+        img = it.get("image") or ""
+        if img == prev and img.startswith("/media/times-of-palestine-cover-"):
+            m = re.match(r"(/media/times-of-palestine-cover-[a-z]+?)"
+                         r"(-b|-c|-d)?((?:-ar)?\.svg)$", img)
+            if m:
+                base, var, tail = m.group(1), m.group(2) or "", m.group(3)
+                order = ["", "-b", "-c", "-d"]
+                i = order.index(var) if var in order else 0
+                for k in range(1, len(order)):
+                    cand = f"{base}{order[(i + k) % len(order)]}{tail}"
+                    if (ROOT / "originals" / "media"
+                            / cand.rsplit("/", 1)[-1]).is_file():
+                        it["image"] = cand
+                        break
+        prev = it.get("image") or ""
+    return seq
+
+
 def build_lang(lang):
     print(f"\nFetching {lang.upper()} feeds…")
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
@@ -3097,7 +3124,9 @@ h1,h2,h3{text-wrap:balance}
 .masthead.compact .l2{font-size:.52rem;letter-spacing:.34em;text-indent:.34em}
 [lang=ar] .masthead.compact .l1{font-size:1.4rem}
 [lang=ar] .masthead.compact .l2{font-size:.66rem}
-nav.sections{position:sticky;top:0;background:rgba(11,11,12,.97);z-index:50;box-shadow:0 2px 12px rgba(0,0,0,.3);backdrop-filter:blur(4px)}
+nav.sections{position:sticky;top:0;background:rgba(11,11,12,.97);z-index:50;box-shadow:0 2px 12px rgba(0,0,0,.3);backdrop-filter:blur(4px);transition:transform .22s ease}
+nav.sections.navhide{transform:translateY(-110%)}
+@media (prefers-reduced-motion:reduce){nav.sections{transition:none}}
 nav.sections .wrap{display:flex;flex-wrap:wrap;align-items:stretch;gap:.15rem;padding-block:.15rem}
 nav.sections a{color:#d8d8e2;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.68rem .7rem;white-space:nowrap;border-block-end:2px solid transparent;transition:color var(--tr),border-color var(--tr)}
 [lang=ar] nav.sections a{letter-spacing:0;font-size:.8rem}
@@ -3302,7 +3331,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .themetoggle{background:none;border:0;cursor:pointer;font-size:1.02rem;line-height:1;padding:.2rem .4rem;color:inherit;opacity:.85}
 .themetoggle:hover{opacity:1}
 .topbar .themetoggle{margin-inline-start:auto}
-.litetoggle{background:none;border:1px solid transparent;border-radius:3px;cursor:pointer;font-family:var(--sans);font-size:.74rem;font-weight:800;line-height:1;padding:.24rem .4rem;color:inherit;opacity:.85}
+.litetoggle{background:none;border:1px solid rgba(128,128,128,.55);border-radius:3px;cursor:pointer;font-family:var(--sans);font-size:.74rem;font-weight:800;line-height:1;padding:.24rem .4rem;color:inherit;opacity:1}
 .litetoggle:hover{opacity:1}
 [data-lite] .litetoggle{color:#3fd07c;border-color:#3fd07c;opacity:1}
 [data-lite] .hero-imgwrap>a,[data-lite] .sub-thumb,[data-lite] .lt-thumb,[data-lite] .card>a:first-child,[data-lite] .card .ph,[data-lite] .rowcard img,[data-lite] .rowcard .ph,[data-lite] .research-feat img,[data-lite] .research-feat .noimg,[data-lite] .fr-card img,[data-lite] .livedock,[data-lite] .story img.lede,[data-lite] .story div.lede,[data-lite] .photocredit,[data-lite] .embed,[data-lite] .qrbox,[data-lite] .livewrap,[data-lite] .story figure.lf{display:none!important}
@@ -3861,7 +3890,16 @@ STORY_POLISH_JS = (
     'var s=document.createElement("span");b.appendChild(s);document.body.appendChild(b);'
     'function u(){var d=document.documentElement,m=d.scrollHeight-innerHeight;'
     's.style.width=(m>0?Math.min(100,scrollY/m*100):0)+"%"}'
-    'addEventListener("scroll",u,{passive:true});'
+    # Phones reclaim the sticky nav while reading (visual audit 2026-08-16):
+    # scrolling down past the opener hides the bar, any upward scroll brings
+    # it back — the standard reading pattern, story pages only.
+    'var nav=document.querySelector("nav.sections");var ly=scrollY;'
+    'function nv(){if(!nav)return;if(innerWidth>700){nav.classList.remove("navhide");ly=scrollY;return}'
+    'var dy=scrollY-ly;'
+    'if(scrollY>360&&dy>8)nav.classList.add("navhide");'
+    'else if(dy<-8||scrollY<120)nav.classList.remove("navhide");'
+    'if(Math.abs(dy)>8)ly=scrollY}'
+    'addEventListener("scroll",function(){u();nv()},{passive:true});'
     'addEventListener("resize",u,{passive:true});u()})();')
 
 # ---------- components ----------
@@ -3999,7 +4037,7 @@ def card_media(it, pfx):
     """Image if we have one; otherwise a branded flag panel — never an empty column."""
     if it["image"]:
         return (f'<a href="{href(it, pfx)}" tabindex="-1" aria-hidden="true"><img src="{esc(it["image"])}" '
-                f'alt="" loading="lazy" decoding="async"{lede_fallback_attrs(it)}></a>')
+                f'alt="" width="640" height="360" loading="lazy" decoding="async"{lede_fallback_attrs(it)}></a>')
     return (f'<a href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
             f'<div class="ph">{FLAG_SVG}</div></a>')
 
@@ -4545,6 +4583,14 @@ def render_page(lang, items, built_at):
             floor = candidates[0]["score"] * HERO_ROTATE_FLOOR
             candidates = [i for i in candidates
                           if i is candidates[0] or i["score"] >= floor]
+            # Covers are photographs (owner order 2026-08-03; visual audit
+            # 2026-08-16): among comparable candidates the hero prefers a
+            # story leading with a real image over branded category art —
+            # rotation then runs within the photo-led subset.
+            _photo = [i for i in candidates if not str(i.get("image") or "")
+                      .startswith("/media/times-of-palestine-cover-")]
+            if _photo:
+                candidates = _photo
             step = int(now.timestamp() // (HERO_ROTATE_MIN * 60))
             pick = candidates[step % len(candidates)]
             used.add(id(pick))
@@ -4709,7 +4755,7 @@ def render_page(lang, items, built_at):
     for k in order:
         if k == "opinion" or not visible(k):
             continue
-        pool = sections[k][:4]
+        pool = break_cover_twins(sections[k][:4])
         featured = ""
         if k == "research":  # lead report gets the full featured-summary treatment
             featured, pool = research_featured(pool[0]), pool[1:]
@@ -4744,9 +4790,16 @@ def render_page(lang, items, built_at):
         _hero_graphic = (" graphic"
                          if str(hero.get("image", "")).startswith("/media/")
                          and str(hero.get("image", "")).endswith(".svg") else "")
+        # When category art does lead (no photo-led candidate), the hero uses
+        # the TEXT-FREE plate of the same cover — the art's big section word
+        # otherwise repeats the kicker right above the headline (visual audit
+        # 2026-08-16). Plates are generated for every cover at deploy time.
+        _hsrc = str(hero.get("image") or "")
+        if re.match(r"^/media/times-of-palestine-cover-[a-z-]+\.svg$", _hsrc):
+            _hsrc = _hsrc[:-4] + "-hero.svg"
         hero_html = (
             f'<div class="hero-imgwrap{_hero_graphic}">'
-            f'<a href="{href(hero, P)}"><img src="{esc(hero["image"])}" alt="{esc(hero["title"])}" loading="eager" fetchpriority="high"{lede_fallback_attrs(hero)}></a>'
+            f'<a href="{href(hero, P)}"><img src="{esc(_hsrc)}" alt="{esc(hero["title"])}" width="1200" height="675" loading="eager" fetchpriority="high"{lede_fallback_attrs(hero)}></a>'
             f'<div class="hero-overlay">'
             f'<p class="label">{t["hero_label"]}</p>'
             f'<h2><a href="{href(hero, P)}">{esc(hero["title"])}</a></h2>'
@@ -5316,11 +5369,11 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
         count_label = "قصة واحدة" if n == 1 else ("قصتان" if n == 2 else f"{n} قصص" if n <= 10 else f"{n} قصة")
     else:
         count_label = f"{n} story" if n == 1 else f"{n} stories"
-    cards = "".join(card(it, lang, "story/") for it in items)
+    cards = "".join(card(it, lang, "story/") for it in break_cover_twins(list(items)))
     more_html = ""
     if more_items:
         more_label = "المزيد من تايمز أوف فلسطين" if lang == "ar" else "More from Times of Palestine"
-        more_cards = "".join(card(it, lang, "story/") for it in more_items)
+        more_cards = "".join(card(it, lang, "story/") for it in break_cover_twins(list(more_items)))
         more_html = (f'<div class="sec-head focus morehead"><h2>{more_label}</h2>'
                      f'<span class="rule"></span></div>'
                      f'<div class="grid g4">{more_cards}</div>')
@@ -5367,7 +5420,7 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 </body></html>"""
 
 
-def render_corrections_page(lang, items, built_at):
+def render_corrections_page(lang, items, built_at, archived_pids=frozenset()):
     """Public corrections & updates ledger — every dated revision note from
     editorial/corrections.json on one page, newest first. The per-story
     stamps already run on the articles themselves; this page is the standing
@@ -5407,9 +5460,19 @@ def render_corrections_page(lang, items, built_at):
                 story_ref = (f'<a href="story/{quote(story_file_name(it["title"], it["pid"]))}">'
                              f'{esc(it["title"])}</a>')
             else:
-                archived = ("المادة خرجت من الموقع الحي · مرجع "
-                            if lang == "ar" else "Story rotated off the live site · ref ")
-                story_ref = f'<span class="ref">{archived}{esc(pid)}</span>'
+                # Permalinks never die (owner order 2026-08-09): when this
+                # build re-renders the story from the archive, its bare-pid
+                # stub resolves — link the ref. Pre-archive-era pids (no
+                # stored record, no stub) keep the plain reference.
+                if pid in archived_pids:
+                    label = ("المادة في الأرشيف الدائم · مرجع "
+                             if lang == "ar" else "Story in the permanent archive · ref ")
+                    story_ref = (f'<span class="ref">{label}'
+                                 f'<a href="story/{esc(pid)}.html">{esc(pid)}</a></span>')
+                else:
+                    label = ("المادة خرجت من الموقع الحي · مرجع "
+                             if lang == "ar" else "Story rotated off the live site · ref ")
+                    story_ref = f'<span class="ref">{label}{esc(pid)}</span>'
             entries.append(
                 f'<li><time datetime="{esc(at)}">{esc(at[:10])}</time> '
                 f'<strong>{kind_label}:</strong> {esc(note)}<br>{story_ref}</li>')
@@ -5488,11 +5551,11 @@ def render_topic_page(lang, tf, items, built_at, more_items=()):
     else:
         count_label = f"{n} story" if n == 1 else f"{n} stories"
         kicker = "Running file"
-    cards = "".join(card(it, lang, "story/") for it in items)
+    cards = "".join(card(it, lang, "story/") for it in break_cover_twins(list(items)))
     more_html = ""
     if more_items:
         more_label = "المزيد من تايمز أوف فلسطين" if lang == "ar" else "More from Times of Palestine"
-        more_cards = "".join(card(it, lang, "story/") for it in more_items)
+        more_cards = "".join(card(it, lang, "story/") for it in break_cover_twins(list(more_items)))
         more_html = (f'<div class="sec-head focus morehead"><h2>{more_label}</h2>'
                      f'<span class="rule"></span></div>'
                      f'<div class="grid g4">{more_cards}</div>')
@@ -5853,7 +5916,9 @@ def main():
                                cats=sorted({it["cat"] for it in items})), encoding="utf-8")
         if CORRECTIONS_PAGE_LIVE:
             (dist / lang / "corrections.html").write_text(
-                render_corrections_page(lang, items, built_at), encoding="utf-8")
+                render_corrections_page(
+                    lang, items, built_at,
+                    archived_pids={a["pid"] for a in archived}), encoding="utf-8")
         (dist / lang / "search-index.json").write_text(json.dumps(
             [{"t": it["title"], "u": story_url_path(it["title"], it["pid"], lang),
               "d": truncate(it.get("dek") or "", 160),
@@ -5888,6 +5953,22 @@ def main():
     # Archived stories count too: their pages still reference their /media/
     # assets, and a kept permalink with a dead infographic is half a page.
     __import__("longform").copy_media(dist, en_items + ar_items + archived_all)
+    # Text-free hero plates (visual audit 2026-08-16): every category cover
+    # gets a companion <name>-hero.svg with its <text> layers stripped, so a
+    # cover-led hero shows pure art under the overlay headline instead of
+    # repeating the section word. Generated fresh each build; fail-open.
+    try:
+        (dist / "media").mkdir(parents=True, exist_ok=True)
+        for _cv in sorted((ROOT / "originals" / "media")
+                          .glob("times-of-palestine-cover-*.svg")):
+            if _cv.stem.endswith("-hero"):
+                continue
+            _svg = re.sub(r"<text\b.*?</text>", "",
+                          _cv.read_text(encoding="utf-8"), flags=re.S)
+            (dist / "media" / f"{_cv.stem}-hero.svg").write_text(
+                _svg, encoding="utf-8")
+    except Exception as exc:
+        print(f"  ⚠ hero plates failed open: {type(exc).__name__}: {exc}")
     # Front-page furniture referenced from index cards (not from any story
     # file) ships explicitly — copy_media only walks story-referenced media.
     # The ENTIRE category-cover family ships unconditionally: lede_fallback_attrs
