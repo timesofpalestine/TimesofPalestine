@@ -6,7 +6,13 @@
    "article": "https://shehabnews.com/post/162264/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%B1%D8%B5%D8%A7%D8%B5-%D9%88%D8%A7%D9%84%D8%B6%D8%B1%D8%A8-%D8%AE%D9%84%D8%A7%D9%84-%D9%87%D8%AC%D9%88%D9%85-%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A3%D8%B3-%D8%A8%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-colonizers-soldiers-shoot-two-palestinians-assault-eight-in-hebron",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-16T05:29:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "7b76312f7d",
- "score": 63.68,
+ "score": 63.38,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
