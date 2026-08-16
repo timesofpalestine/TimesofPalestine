@@ -362,7 +362,8 @@
       "url": "https://www.democracynow.org/democracynow.rss",
       "site": "https://www.democracynow.org",
       "filterPalestine": true,
-      "cap": 4
+      "cap": 4,
+      "skipUrl": "/headlines"
     },
     {
       "id": "gnews-diaspora-culture",
