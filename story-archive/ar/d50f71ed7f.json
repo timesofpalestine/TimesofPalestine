@@ -7,6 +7,18 @@
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
    "verified": false
+  },
+  {
+   "article": "https://t.me/QudsN/729516",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d8%ae%d8%aa%d8%b1%d8%a7%d9%82-%d9%81%d9%8a-%d9%85%d8%b3%d8%a7%d8%b1-%d8%ba%d8%b2%d8%a9-%d9%88%d9%81%d8%af-%d8%ad%d9%85%d8%a7%d8%b3-%d9%8a%d9%84%d8%aa%d9%82%d9%8a-%d9%83%d9%88%d8%b4",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
   }
  ],
  "date": "2026-08-16T17:32:39+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "d50f71ed7f",
- "score": 79.5,
+ "score": 79.34,
  "source": "عربي21",
  "source_id": "tg-arabi21",
  "source_url": "https://t.me/arabi21news",

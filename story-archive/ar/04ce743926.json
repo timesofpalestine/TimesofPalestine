@@ -31,6 +31,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/8/16/%d8%a8%d9%8a%d8%a7%d9%86-8-%d8%af%d9%88%d9%84-%d8%b9%d8%b1%d8%a8%d9%8a%d8%a9-%d9%88%d8%a5%d8%b3%d9%84%d8%a7%d9%85%d9%8a%d8%a9-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d8%aa%d8%aa%d8%ad%d9%85%d9%84?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-16T17:30:41+00:00",
@@ -48,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "04ce743926",
- "score": 49.48,
+ "score": 49.32,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
