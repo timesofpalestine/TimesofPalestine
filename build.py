@@ -173,6 +173,12 @@ FEEDS = json.loads(FEEDS_PATH.read_text(encoding="utf-8"))
 # Story ids the owner has ordered removed; blocked no matter which feed or
 # radar route resurfaces the underlying link.
 RETRACTED_PIDS = {"23ffbc910f", "7b5ecb12e4", "4b6ac6121b", "33a0debafc",
+                  # 2026-08-16 owner order: six Arabic briefs published desk
+                  # meta-commentary («المادة المرسلة تتضمن عنواناً فقط…») as
+                  # article bodies — headline-only Telegram items the refusal
+                  # screen missed in Arabic. Net extended the same day.
+                  "53ab09a3cc", "0b27c584e6", "bb71af3551",
+                  "cdbc2183ca", "8e66be8ab8", "cb2e25be5e",
                   # 2026-08-16 owner order: Democracy Now! daily-headlines
                   # DIGEST entries published as stories (Ecuador/CIA item
                   # categorized gaza — the bundle's tail mentioned Palestine,
@@ -1598,6 +1604,12 @@ REFUSAL_RX = re.compile(
     # the act of producing copy, with or without «عليّ/علينا».
     r"يتعذّ?ر\s*(?:علي(?:ّ|نا|نَا)?\s*)?(?:إنتاج|كتابة|تقديم|صياغة|إعداد|تلخيص)|"
     r"بناءً? على هذه المادة|لا (?:تتضمن|تحتوي|توجد).{0,20}(?:معلومات|أخبار)|"
+    # Desk-voice meta about the source material itself (owner takedown
+    # 2026-08-16: six Arabic briefs narrated «المادة المرسلة…» as bodies).
+    # These phrasings are newsroom-referential and never occur in news prose.
+    r"المادة المرسلة|عنوانا?ً? (?:فقط|واحد)|دون نص (?:خبري|توضيحي)|"
+    r"لا تتوفر في المصدر|(?:يستلزم|تستلزم|يتطلب) معلومات إضافية|"
+    r"كموجز (?:صحفي|إخباري)|عنوان إشاري|"
     r"المادة المصدرية|المادة المتاحة|المادة المرفقة|هذه التعليمات|"
     r"المقال الكامل|النص الكامل|زيارة موقع|زيارة الموقع", re.I)
 
