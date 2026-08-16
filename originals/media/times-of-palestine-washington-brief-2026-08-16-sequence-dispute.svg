@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Three versions of the same Gaza sequence</title>
+  <desc id="desc">A bilingual comparison of the 15-point plan agreed between the Board of Peace and Hamas in late July 2026, the board's revised sequencing of 4 August, and Benjamin Netanyahu's rejection of 9 August, with the Yellow Line's expansion from 53 to 64.9 per cent of the Gaza Strip.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101114"/>
+      <stop offset="1" stop-color="#1c1d21"/>
+    </linearGradient>
+    <linearGradient id="creep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#286344"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f3efe8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#d4b36e}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:17px}
+      .small{font-size:20px}
+      .body{font-size:22px}
+      .label{font-size:17px;font-weight:800;letter-spacing:1.2px}
+      .name{font-size:27px;font-weight:800}
+      .figure{font-size:52px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="76" class="serif ivory" font-size="50" font-weight="800">Three versions of the same sequence</text>
+  <text x="90" y="122" class="sans muted body">Who disarms first, who withdraws first — and who rewrote the answer.</text>
+  <text x="1510" y="166" class="arabic ivory" font-size="36" font-weight="800" text-anchor="end">ثلاث صيغ لتسلسل واحد</text>
+  <text x="1510" y="200" class="arabic muted small" text-anchor="end">من ينزع سلاحه أولاً ومن ينسحب أولاً.. ومن أعاد كتابة الجواب</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="238" width="450" height="336" rx="18" fill="#27282c" stroke="#61aa80" stroke-width="2"/>
+    <text x="98" y="284" class="sans green label">AGREED — LATE JULY</text>
+    <text x="98" y="316" class="sans ivory name">Board of Peace + Hamas</text>
+    <text x="98" y="348" class="arabic muted small">الصيغة المتفق عليها أواخر تموز/يوليو</text>
+    <line x1="98" y1="372" x2="492" y2="372" stroke="#3a3b40" stroke-width="2"/>
+    <text x="98" y="410" class="sans ivory body">Disarmament "gradual, sequential</text>
+    <text x="98" y="438" class="sans ivory body">and time-bound"</text>
+    <text x="98" y="474" class="sans ivory body">Israeli withdrawal runs alongside</text>
+    <text x="98" y="510" class="sans muted small">Weapons held by the Gaza committee</text>
+    <text x="98" y="544" class="arabic green small">نزع السلاح والانسحاب معاً على مراحل</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="562" y="238" width="450" height="336" rx="18" fill="#27282c" stroke="#d4b36e" stroke-width="2"/>
+    <text x="590" y="284" class="sans gold label">REVISED — 4 AUGUST</text>
+    <text x="590" y="316" class="sans ivory name">Board of Peace statement</text>
+    <text x="590" y="348" class="arabic muted small">تعديل مجلس السلام في 4 آب/أغسطس</text>
+    <line x1="590" y1="372" x2="984" y2="372" stroke="#3a3b40" stroke-width="2"/>
+    <text x="590" y="410" class="sans ivory body">Withdrawal beyond the Yellow Line</text>
+    <text x="590" y="438" class="sans ivory body">"only once decommissioning</text>
+    <text x="590" y="466" class="sans ivory body">is complete"</text>
+    <text x="590" y="502" class="sans muted small">Light and heavy weapons, and tunnels</text>
+    <text x="590" y="544" class="arabic gold small">الانسحاب بعد اكتمال نزع السلاح</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1054" y="238" width="450" height="336" rx="18" fill="#27282c" stroke="#dc6572" stroke-width="3"/>
+    <text x="1082" y="284" class="sans red label">REJECTED — 9 AUGUST</text>
+    <text x="1082" y="316" class="sans ivory name">Benjamin Netanyahu</text>
+    <text x="1082" y="348" class="arabic muted small">رفض نتنياهو في 9 آب/أغسطس</text>
+    <line x1="1082" y1="372" x2="1476" y2="372" stroke="#3a3b40" stroke-width="2"/>
+    <text x="1082" y="410" class="sans ivory body">"The IDF will not make any</text>
+    <text x="1082" y="438" class="sans ivory body">withdrawal until Hamas is</text>
+    <text x="1082" y="466" class="sans ivory body">truly disarmed"</text>
+    <text x="1082" y="502" class="sans muted small">"Real disarmament, not a fictitious" one</text>
+    <text x="1082" y="544" class="arabic red small">لا انسحاب قبل نزع سلاح حقيقي</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="616" width="1434" height="212" rx="18" fill="#232428" stroke="#3a3b40" stroke-width="2"/>
+    <text x="98" y="662" class="sans gold label">WHILE THE SEQUENCE WAS NEGOTIATED — خلال التفاوض على التسلسل</text>
+
+    <text x="98" y="732" class="sans ivory figure">53%</text>
+    <text x="98" y="764" class="sans muted small">of Gaza behind the Yellow Line</text>
+    <text x="98" y="790" class="sans muted small">at the October ceasefire</text>
+    <text x="98" y="816" class="arabic muted tiny">من القطاع خلف الخط الأصفر عند وقف إطلاق النار</text>
+
+    <rect x="470" y="706" width="300" height="14" rx="7" fill="url(#creep)"/>
+    <text x="470" y="694" class="sans muted tiny">JUNE 2026 — OCHA</text>
+
+    <text x="812" y="732" class="sans red figure">64.9%</text>
+    <text x="812" y="764" class="sans muted small">restricted-access zone by June,</text>
+    <text x="812" y="790" class="sans muted small">the UN humanitarian office reported</text>
+    <text x="812" y="816" class="arabic muted tiny">منطقة الوصول المقيّد وفق أوتشا في حزيران/يونيو</text>
+
+    <line x1="1204" y1="650" x2="1204" y2="800" stroke="#3a3b40" stroke-width="2"/>
+    <text x="1240" y="732" class="sans ivory figure">1,260</text>
+    <text x="1240" y="764" class="sans muted small">Palestinians killed since</text>
+    <text x="1240" y="790" class="sans muted small">the ceasefire began</text>
+    <text x="1240" y="816" class="arabic muted tiny">شهيداً منذ بدء وقف إطلاق النار</text>
+  </g>
+
+  <text x="90" y="868" class="sans muted tiny">Sources as reported: Reuters, Al Jazeera, Haaretz, CNN, NPR, Times of Israel, UN OCHA, Gaza health ministry</text>
+  <text x="1510" y="868" class="sans muted tiny" text-anchor="end">Times of Palestine</text>
+</svg>
