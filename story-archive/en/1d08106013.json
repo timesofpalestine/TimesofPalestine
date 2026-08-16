@@ -6,7 +6,31 @@
    "article": "https://www.maannews.net/news/2167043.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-injured-settlers-continue-attacks-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/palestinians-qusra-say-they-have-faced-militant-settler-attacks-months",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israel-shoots",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53764",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
   }
  ],
  "date": "2026-08-16T09:05:02+00:00",
@@ -24,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "1d08106013",
- "score": 49.45,
+ "score": 49.14,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
