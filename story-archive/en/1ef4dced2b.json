@@ -1,0 +1,44 @@
+{
+ "brief": "Israeli settlers launched a new round of assaults across the occupied West Bank, injuring several Palestinians in the process, Middle East Eye reported. The attacks targeted both people and property in communities throughout the territory, continuing a pattern of settler violence that has persisted across the region.\n\nThe incidents marked the latest in an ongoing cycle of confrontations between Palestinian residents and Israeli settlers in the West Bank. Authorities documented injuries among Palestinians caught in the clashes, though specific details about the number of wounded and the exact locations of the attacks were not immediately disclosed in initial reports.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-injured-settlers-continue-attacks-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/palestinians-qusra-say-they-have-faced-militant-settler-attacks-months",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israel-shoots",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-16T03:58:02+00:00",
+ "dek": "Several Palestinians injured as settlers continue attacks in West Bank Israeli settlers continued their assaults on Palestinians and their property in the occupied West Bank, injuring several people. Here are the details of some of these attacks, reported by…",
+ "image": "https://www.middleeasteye.net/sites/default/files/000_C4N48XZ.jpg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-injured-settlers-continue-attacks-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-injured-settlers-continue-attacks-west-bank"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1ef4dced2b",
+ "score": 56.47,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Settlers injure Palestinians in fresh West Bank attacks"
+}

@@ -21,6 +21,12 @@
    "verified": true
   },
   {
+   "article": "https://qudsn.co/post?id=217077&slug=%D9%88%D9%81%D8%AF-%D9%85%D9%86-%D9%82%D9%8A%D8%A7%D8%AF%D8%A7%D8%AA-%D8%AD%D9%85%D8%A7%D8%B3-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9-%D9%87%D8%B0%D8%A7-%D9%85%D8%A7-%D8%A8%D8%AD%D8%AB%D9%87%C2%A0",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/Arabi21News/428184",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
@@ -39,15 +45,15 @@
    "verified": true
   },
   {
-   "article": "https://t.me/QudsN/729445",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
    "article": "https://t.me/gazaalannet/82375",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/share/217077",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
    "verified": true
   }
  ],
@@ -66,7 +72,7 @@
  "modified": null,
  "original": true,
  "pid": "1ec00385eb",
- "score": 86.95,
+ "score": 86.9,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
