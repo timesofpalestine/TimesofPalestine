@@ -9,6 +9,12 @@
    "verified": false
   },
   {
+   "article": "https://qudsn.co/post?id=217063&slug=%D9%82%D8%B5%D8%B1%D8%A9-%D9%85%D9%86-%D8%AD%D8%B5%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D8%A5%D9%84%D9%89-%D8%A5%D8%AE%D9%84%D8%A7%D8%A1-%D8%A3%D8%B5%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A8%D9%8A%D9%88%D8%AA",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
    "article": "https://www.alquds.co.uk/%d9%84%d9%84%d9%8a%d9%88%d9%85-%d8%a7%d9%84%d8%ab%d8%a7%d9%85%d9%86-%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d9%88%d9%86-%d9%8a%d8%ad%d8%a7",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
@@ -18,24 +24,6 @@
    "article": "https://t.me/Palinfo/315427",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
-   "article": "https://qudsn.co/post?id=217067&slug=%D8%AD%D8%B5%D8%A7%D8%B1-%D9%82%D8%B5%D8%B1%D8%A9-%D9%8A%D8%AF%D8%AE%D9%84-%D9%8A%D9%88%D9%85%D9%87-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D9%88%D8%B3%D8%B7-%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2%D8%A7%D8%AA-%D9%84%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%88%D9%82%D8%B7%D8%B9-%D9%84%D9%84%D9%85%D9%8A%D8%A7%D9%87",
-   "name": "شبكة قدس الإخبارية",
-   "url": "https://qudsn.co/",
-   "verified": false
-  },
-  {
-   "article": "https://t.me/QudsN/729419",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Arabi21News/428177",
-   "name": "عربي21",
-   "url": "https://t.me/arabi21news",
    "verified": true
   }
  ],
@@ -54,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "a0a765dcaa",
- "score": 83.8,
+ "score": 83.77000000000001,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

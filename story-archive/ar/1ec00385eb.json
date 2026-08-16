@@ -9,18 +9,6 @@
    "verified": false
   },
   {
-   "article": "https://www.maannews.net/news/2167029.html",
-   "name": "وكالة معا (حصري)",
-   "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/82375",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": true
-  },
-  {
    "article": "https://shehabnews.com/post/162277/%D8%AD%D9%85%D8%A7%D8%B3-%D9%86%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA-%D9%85%D8%B9-%D8%A7%D9%84%D9%88%D8%B3%D8%B7%D8%A7%D8%A1-%D9%84%D8%B6%D9%85%D8%A7%D9%86-%D8%A5%D9%84%D8%B2%D8%A7%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D8%AE%D8%A7%D8%B1%D8%B7%D8%A9-%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
@@ -30,12 +18,6 @@
    "article": "https://t.me/Palinfo/315414",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/729404",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
    "verified": true
   }
  ],
@@ -54,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "1ec00385eb",
- "score": 87.5,
+ "score": 87.46000000000001,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

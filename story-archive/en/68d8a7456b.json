@@ -1,0 +1,32 @@
+{
+ "brief": "A doctor in Gaza performed an amputation on a girl without anesthesia due to the unavailability of painkillers, according to Al Jazeera English. The medical professional described the procedure, saying the medical team was praying for the patient to lose consciousness during surgery. The account emerged amid reports of severe medical supply shortages across the territory's healthcare system.\n\nGaza's hospitals have faced critical shortages of essential medications and anesthetic agents, forcing medical staff to make difficult choices about emergency procedures. Surgeons have reported performing life-saving operations under extreme resource constraints, including amputations and other interventions that would normally require full anesthetic protocols. The conditions reflect the broader collapse of medical infrastructure in the enclave.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/16/doctor-describes-amputating-girls-leg-in-gaza-without-anaesthesia?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-16T10:32:42+00:00",
+ "dek": "‘We were praying for her to faint’.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786876313.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/16/doctor-describes-amputating-girls-leg-in-gaza-without-anaesthesia?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/16/doctor-describes-amputating-girls-leg-in-gaza-without-anaesthesia?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "68d8a7456b",
+ "score": 49.63,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Surgeon amputates girl's leg in Gaza without anesthesia"
+}
