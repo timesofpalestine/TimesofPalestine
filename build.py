@@ -173,6 +173,11 @@ FEEDS = json.loads(FEEDS_PATH.read_text(encoding="utf-8"))
 # Story ids the owner has ordered removed; blocked no matter which feed or
 # radar route resurfaces the underlying link.
 RETRACTED_PIDS = {"23ffbc910f", "7b5ecb12e4", "4b6ac6121b", "33a0debafc",
+                  # 2026-08-16 owner order: Democracy Now! daily-headlines
+                  # DIGEST entries published as stories (Ecuador/CIA item
+                  # categorized gaza — the bundle's tail mentioned Palestine,
+                  # its head did not). The skipUrl net now blocks the class.
+                  "85db8d3f64", "b575571cc3",
                   # 2026-08-09 owner order: two Ma'an items covered the same
                   # JDECO announcement; the winter-maintenance framing goes,
                   # the power-cut schedule (times, areas) stays.
@@ -1326,6 +1331,13 @@ def backfill_person_photo(item):
 def finish_item(item, feed):
     """Apply per-feed relevance filters, then categorize and score. Returns item or None."""
     if JUNK_TITLE_RX.search(item["title"]):
+        return None
+    # Digest/roundup entries are bundles, not stories (owner report
+    # 2026-08-16: a Democracy Now! daily-headlines digest published as an
+    # Ecuador story categorized gaza, because Palestine appeared further
+    # down the bundle). A feed's `skipUrl` regex drops such items before
+    # any relevance filter can be fooled by the bundle's mixed contents.
+    if feed.get("skipUrl") and re.search(feed["skipUrl"], item.get("link") or ""):
         return None
     if "news.google.com" in feed.get("url", ""):
         # Google News titles end " - Publisher". Credit the real outlet and
