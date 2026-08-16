@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Gaza's fourth school year opens mostly in tents</title>
+<desc id="d">Illustration of a tent classroom beside key figures from the report: 92 percent of Gaza schools need full reconstruction or major rehabilitation, 60 percent of school-age children have no in-person learning, more than 637,000 children out of school, and a bar chart comparing 109,310 children in 78 learning centres in November 2025, 135,462 children in 111 temporary learning spaces in January 2026, and a 2026 target of 336,000.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="tent" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#2b2d31"/>
+<stop offset="1" stop-color="#1a1b1e"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="98" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="3.5" fill="#c7a86b">EDUCATION · GAZA STRIP</text>
+
+<text x="90" y="162" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">Gaza's fourth school year opens</text>
+<text x="90" y="222" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">mostly in tents</text>
+<text x="90" y="274" font-family="Cairo,Arial,sans-serif" font-size="31" fill="#59a97d" text-anchor="start" direction="rtl">العام الدراسي الرابع في غزة يبدأ في الخيام</text>
+
+<rect x="90" y="304" width="1450" height="2" fill="#3a3b3f"/>
+
+<!-- LEFT: tent classroom -->
+<g>
+  <line x1="110" y1="690" x2="672" y2="690" stroke="#4a4b4f" stroke-width="3"/>
+  <polygon points="380,352 612,690 148,690" fill="url(#tent)" stroke="#f2eee8" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="380,352 430,690 330,690" fill="#0e0f11" stroke="#286344" stroke-width="3"/>
+  <rect x="345" y="560" width="70" height="52" rx="4" fill="#1c2a22" stroke="#59a97d" stroke-width="3"/>
+  <line x1="356" y1="578" x2="404" y2="578" stroke="#59a97d" stroke-width="3"/>
+  <line x1="356" y1="594" x2="392" y2="594" stroke="#59a97d" stroke-width="3"/>
+  <line x1="380" y1="352" x2="380" y2="322" stroke="#c7a86b" stroke-width="4"/>
+  <line x1="148" y1="690" x2="112" y2="690" stroke="#8a1f2d" stroke-width="4"/>
+  <line x1="612" y1="690" x2="668" y2="690" stroke="#8a1f2d" stroke-width="4"/>
+  <line x1="240" y1="690" x2="330" y2="640" stroke="#4a4b4f" stroke-width="2"/>
+  <line x1="520" y1="690" x2="430" y2="640" stroke="#4a4b4f" stroke-width="2"/>
+  <text x="196" y="440" font-family="'Libre Franklin',Arial,sans-serif" font-size="44" fill="#c7a86b">80%</text>
+  <text x="196" y="468" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">of schools out</text>
+  <text x="196" y="490" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">of service</text>
+  <text x="196" y="512" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#6f6e6b">Felesteen forum</text>
+</g>
+
+<text x="90" y="742" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">Tents and prefab rooms without windows; cardboard</text>
+<text x="90" y="768" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">boxes and planks for desks; rotating shifts three days</text>
+<text x="90" y="794" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">a week; three subjects: maths, reading and writing.</text>
+<text x="90" y="824" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d" text-anchor="start" direction="rtl">دروس في الخيام: ثلاثة أيام أسبوعياً وثلاث مواد</text>
+
+<!-- RIGHT: figures -->
+<line x1="740" y1="330" x2="740" y2="800" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="780" y="394" font-family="'Libre Franklin',Arial,sans-serif" font-size="50" fill="#C8102E">92%</text>
+<text x="920" y="378" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">of Gaza schools need full reconstruction</text>
+<text x="920" y="402" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">or major rehabilitation — UNICEF</text>
+
+<text x="780" y="474" font-family="'Libre Franklin',Arial,sans-serif" font-size="50" fill="#C8102E">60%</text>
+<text x="920" y="458" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">of school-age children have no access</text>
+<text x="920" y="482" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">to in-person learning</text>
+
+<text x="780" y="554" font-family="'Libre Franklin',Arial,sans-serif" font-size="50" fill="#C8102E">637,000</text>
+<text x="1010" y="538" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">children remain out of school, their</text>
+<text x="1010" y="562" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">education set back up to five years</text>
+
+<text x="780" y="618" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="1.5" fill="#c7a86b">CHILDREN IN TEMPORARY LEARNING SPACES</text>
+<text x="780" y="645" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#59a97d" text-anchor="start" direction="rtl">أطفال في مساحات تعلّم مؤقتة</text>
+
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="17">
+  <text x="780" y="686" fill="#aaa9a5">Nov 2025 · 78 centres</text>
+  <rect x="1010" y="666" width="130" height="26" fill="#286344"/>
+  <text x="1152" y="686" fill="#f2eee8">109,310</text>
+
+  <text x="780" y="736" fill="#aaa9a5">Jan 2026 · 111 spaces</text>
+  <rect x="1010" y="716" width="161" height="26" fill="#59a97d"/>
+  <text x="1183" y="736" fill="#f2eee8">135,462</text>
+
+  <text x="780" y="786" fill="#aaa9a5">2026 target</text>
+  <rect x="1010" y="766" width="400" height="26" fill="none" stroke="#c7a86b" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="1422" y="786" fill="#c7a86b">336,000</text>
+</g>
+
+<line x1="90" y1="842" x2="1540" y2="842" stroke="#3a3b3f" stroke-width="2"/>
+<text x="90" y="872" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Year begins Sunday 6 September · $280 places one child in a learning centre for a year · $86m needed for the 336,000 target</text>
+</svg>
