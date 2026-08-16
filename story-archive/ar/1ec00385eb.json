@@ -19,6 +19,12 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://www.alaraby.co.uk/politics/%D9%85%D8%B5%D8%B1-%D8%AA%D8%AA%D8%AD%D8%B1%D9%83-%D8%B9%D9%84%D9%89-%D9%85%D8%B3%D8%A7%D8%B1%D9%8A%D9%86-%D9%85%D8%B9-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D9%88%D8%AD%D9%85%D8%A7%D8%B3-%D9%84%D8%A7%D8%B3%D8%AA%D9%83%D9%85%D8%A7%D9%84-%D8%AA%D8%B1%D8%AA%D9%8A%D8%A8%D8%A7%D8%AA-%D8%BA%D8%B2%D8%A9",
+   "name": "العربي الجديد",
+   "url": "https://www.alaraby.co.uk/",
+   "verified": false
   }
  ],
  "date": "2026-08-16T07:30:00+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "1ec00385eb",
- "score": 85.8,
+ "score": 85.75,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
