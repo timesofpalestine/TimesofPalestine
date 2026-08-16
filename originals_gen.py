@@ -215,7 +215,8 @@ def _pick_topic(topics, state):
     try:
         import section_freshness
         week_ago = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
-        for cat, _age in section_freshness.stale_sections():
+        stale = list(section_freshness.stale_sections())
+        for cat, _age in stale:
             cands = [t for t in topics if t.get("cat") == cat]
             unwritten = [t for t in cands if t["id"] not in done]
             if unwritten:
@@ -223,6 +224,20 @@ def _pick_topic(topics, state):
             if cands:
                 oldest = min(cands, key=lambda t: done.get(t["id"], ""))
                 if done.get(oldest["id"], "") < week_ago:
+                    return oldest
+        # A stale section must never lose its desk slot to the rotation just
+        # because its queue ran dry (2026-08-16: humans starved at 45h while
+        # its lone written topic sat under the 7-day recycle guard). Second
+        # pass, stalest first: recycle the section's least-recent topic once
+        # 48 hours have passed — the desk researches fresh developments each
+        # run and the dedupe gates catch any true repeat.
+        two_days_ago = (datetime.now(timezone.utc)
+                        - timedelta(hours=48)).isoformat()
+        for cat, _age in stale:
+            cands = [t for t in topics if t.get("cat") == cat]
+            if cands:
+                oldest = min(cands, key=lambda t: done.get(t["id"], ""))
+                if done.get(oldest["id"], "") < two_days_ago:
                     return oldest
     except Exception:
         pass
