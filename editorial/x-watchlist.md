@@ -52,6 +52,7 @@ Rules of use:
 | Plestia Alaqad — Instagram (@byplestia) | Journalist-author |
 | @amit_segal | Amit Segal, Channel 12 — first on Israeli coalition/poll moves (election watch; treat as claims, attribute) |
 | Hani Almadhoun — LinkedIn (@hanifundraiser) | UNRWA USA vice president of philanthropy; co-founded Gaza Soup Kitchen with his brother Mahmoud (killed by an Israeli drone strike, Nov 2024). First-hand family reporting from Beit Lahia + DC aid-world signal, including Dahlan-orbit aid activity. Owner-flagged 2026-08-02: his stories and posts are important — sweep his feed for story leads. |
+| Taqarob podcast — Instagram (@taqarobpodcast) + YouTube | Palestinian dialogue program, host Ahmad al-Beqawi (أحمد البيقاوي) | Owner-flagged 2026-08-16: standing wire source. Long-form interviews with Palestinian decision-makers, experts and witnesses regularly break newsworthy first-person accounts (the Shuaibi corruption file is the model). Sweep new episodes and clips; a newsworthy claim by a named guest is a story — attributed to the guest, on the episode, with the record checked around it and counter-voices carried. The program's framing is never adopted as the paper's voice. |
 
 ## Tier 3 — outlets, analysts and the diaspora public square
 

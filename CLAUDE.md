@@ -469,6 +469,25 @@ languages until the story resolves, and the daily editor checks the file's
 freshness each cycle. Claude's beat; other agents route Qusra/Amnesty items
 via issue #6.
 
+## Taqarob podcast wire (owner directive 2026-08-16)
+
+The Taqarob podcast (بودكاست تقارب, host أحمد البيقاوي — Instagram
+@taqarobpodcast, YouTube) is a STANDING SOURCE reported on as a wire
+service: its long-form interviews with Palestinian decision-makers,
+experts and witnesses regularly surface newsworthy first-person accounts
+found nowhere else. Discipline, binding on every desk: a guest's claim is
+an ATTRIBUTED ACCOUNT — named speaker, episode number, quoted precisely —
+never the paper's voice; the documented record (court judgments, audits,
+institutional filings) is checked and carried around it, and the subject
+of an allegation gets their answer or documented position beside it.
+Episode clips embed via the whitelisted Instagram-reel route. Launch
+story: `taqarob-shuaibi-arafat-companies-2026-08-16.*` (Azmi Shuaibi on
+the Arafat-era presidential companies, episode 230). The watchlist row
+carries the sweep; the daily editor checks new episodes each cycle and
+should wire the program's YouTube channel RSS into feeds.json once the
+channel id is confirmed from CI (the feed-health net will verify it).
+Claude's beat; other agents route Taqarob story ideas via issue #6.
+
 ## Breaking-news watchlist (owner directive 2026-08-01)
 
 `editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
