@@ -1,0 +1,44 @@
+{
+ "brief": "Israeli forces conducted a major escalation in southern Gaza, killing and wounding Palestinians, the Ma'an news agency reported. The operation unfolded in the southern region of the enclave, where military activity has persisted since the conflict began.\n\nThe scale and scope of the casualties remained unclear from initial reports. Residents in affected areas described heavy bombardment and gunfire across multiple locations in the south. The escalation followed weeks of sustained operations throughout Gaza's territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167018.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-attacks-continue-amid-deepening-oxygen-crisis",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-says-it-killed-two-palestinians-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-16T06:54:11+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/U9eglNGsSNmwxL0mS3tX3vAzz1G1ONrF3osvkOleBOY74-kqPFMiJiIPFfjnKZCVjlhKTJLPJyokNfIJxZbcG8aPpDIBqsdIhGl3gMf6T7PmRpTnDB5fpTjD8qibRsnZy5d7MQjRNfB0ioo1zzZLx4Nd7aeS41EeT4OeiuENbN56ySPKA3Jwrta4qozRPott5b0SAlZ-gWE978jqFiTmDkNJJ0-GbGrc6OxYCEW_kjLYKQ_pqWexzYQDoAAMnEdBgW21hI69PUudNCnQwVZ2H3NHBMqfi1O1QzzZZ6PBW16rY0Nk79NJiuJp9KzBkd7szWA2K7PwZSByg3FfIC29NA.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2167018.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167018.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a123df5b8f",
+ "score": 63.75,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces kill Palestinians in southern Gaza escalation"
+}

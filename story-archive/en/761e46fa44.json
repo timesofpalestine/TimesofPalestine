@@ -1,0 +1,68 @@
+{
+ "brief": "Settlers launched an attack on a Palestinian area near Hebron known as al-Ras, the Ma'an news agency reported. The assault left several residents injured. The incident is the latest in an ongoing pattern of violence by Israeli settlers against Palestinian communities across the West Bank.\n\nDetails on the exact number of those wounded and the severity of their injuries remain unclear. Settler attacks on Palestinian areas have intensified in recent months, frequently targeting villages and agricultural land in the occupied territory. Palestinian officials have repeatedly called for international intervention to halt the violence and protect civilians from such assaults.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167025.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162264/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%B1%D8%B5%D8%A7%D8%B5-%D9%88%D8%A7%D9%84%D8%B6%D8%B1%D8%A8-%D8%AE%D9%84%D8%A7%D9%84-%D9%87%D8%AC%D9%88%D9%85-%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A3%D8%B3-%D8%A8%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-violence-60-year-old-man-among-two-palestinians-shot-eight",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-colonizers-soldiers-shoot-two-palestinians-assault-eight-in-hebron",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/palestinians-qusra-say-they-have-faced-militant-settler-attacks-months",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israel-shoots",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53764",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-16T07:05:59+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/GE7qiQCHRcCIMM01LylXGplp1f39FhLkT1OKTfM2Db77YpV0-Is_KsjknWk_ZuFxKlG_sle6pm_YK_kyX6L0XUoAwjxRUjAS3VrBMgwRXHWj-CsJkn-rP5Y5RlTcRckZZ4R8AYqvDWV90xPP71S3Eo4T4okuNKMzx2AClHpRTb-Y9Zov9S4CxAviLEYg8a2bvz8x4T-FnyzSNsmaGFiiPdvsbFP2_abGIaj4gg0r36YOKnFo8OAtDlgEqaMoaYSrU9M7H0KH3w3ZdJGiloQO1awgnmVpx5jy30mWhAO4Y2_oX8WwJRMNNSTs0cHWW-dU6W-ytK9RGtRGq_qadGaQnw.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2167025.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167025.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "761e46fa44",
+ "score": 63.88,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settlers attack Hebron area, injuring Palestinians."
+}

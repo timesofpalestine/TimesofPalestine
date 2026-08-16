@@ -1,0 +1,38 @@
+{
+ "brief": "A Hamas delegation has arrived in Cairo to discuss a ceasefire agreement for Gaza, according to the Ma'an news agency. The delegation is being led by Yahya Sinwar, the Palestinian faction's political chief, underscoring the high-level nature of the negotiations.\n\nThe visit represents the latest diplomatic effort to resolve the ongoing conflict in the territory. Egyptian mediators are facilitating the talks between Hamas and other parties involved in the dispute. The discussions center on establishing terms for a potential truce that would halt fighting and allow humanitarian access to civilians in Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167029.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-delegation-hold-talks-gaza-agreement-cairo-report-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-16T06:59:12+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/Hj0at9AGvP2jkXd4rBgc4VPDmysai6pYFh8zFV9Caa128OpYwBkv3cXubcrrl2elbHRfk32QPagEK3_dzt9zV8t9T9ludPHcvv5596NzcFiVkWPs1bQHai8v4z__eZpSkVWOp3qzrpRCFacum2CtL45Er-Nne2KExfTXT45wZ8hU427znA2JWpvZsyXGpJUdIu5dWmnYkG5ur5oEK70MRQeZl4uJ1v1DrHYciJ0qJ3SMyvr91v1m9Crk6aPcTMJwdyu_whbWykEY8KFM9u6KbOfummPpiDXfR29brlpZ0z0EloFMIxsuwNZEpMKOk3TECY9ozRHx7sVZtOrIcT7V6g.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2167029.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167029.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9425fe5775",
+ "score": 49.8,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Hamas delegation arrives in Cairo for Gaza truce talks"
+}
