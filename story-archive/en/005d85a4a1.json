@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/8/16/hamas-leader-heads-to-cairo-for-gaza-talks-ahead-of-kushner-visit?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-delegation-hold-talks-gaza-agreement-cairo-report-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-16T00:44:59+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "005d85a4a1",
- "score": 47.77,
+ "score": 47.6,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

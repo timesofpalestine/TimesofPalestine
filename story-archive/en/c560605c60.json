@@ -9,9 +9,21 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-five-palestinians-masafer-yatta-attacks",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-injured-settlers-continue-attacks-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/palestinians-qusra-say-they-have-faced-militant-settler-attacks-months",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israel-shoots",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
    "verified": true
   },
   {
@@ -36,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "c560605c60",
- "score": 39.5,
+ "score": 39.34,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
