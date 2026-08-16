@@ -13,30 +13,24 @@
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
    "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/315520",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
   }
  ],
  "date": "2026-08-16T21:45:37+00:00",
  "dek": "",
- "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "image": "https://cdn4.telesco.pe/file/qiRpa0ElBHbVVulQwRjan8Vu0TlLEvmqXYxzYoFht_MdrhwREFsWwqV4hyn1kW-r05hssFsMSv6cYcL0rxPFdqKgFmEjbqAyUvLBJN_wXR7aCizkP4smXXhwimc0xfYzWuzpTdbTRUCyvPfdYC70JWVPDSds9F7sTOwFQK89Y-kvg9xQ41dLj0e80jJoyZcDTXzBKiefhuDuJaLE5g4pj3QxdqZSOB0DQHUQDDSAUZJI518XWTetPHV8P_F3FTH0aReuP5sIXw8BeMXvrHfBRjADauqIV8--IRfmtEqujR6kSib6_vbaxvDjOP9-MZND49_mqLOcnSgni08HbcwOEg.jpg",
  "lang": "ar",
  "link": "https://t.me/QudsN/729565",
  "max_age_hours": 72,
  "media": {
-  "credit": "Graphic: Times of Palestine",
+  "credit": "شبكة قدس · تيليغرام",
   "licenseUrl": null,
-  "rightsBasis": "owned",
-  "source": "Times of Palestine"
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/QudsN/729565"
  },
  "modified": null,
  "original": false,
  "pid": "368de757a6",
- "score": 63.43,
+ "score": 63.25,
  "source": "شبكة قدس · تيليغرام",
  "source_id": "tg-qudsn",
  "source_url": "https://t.me/QudsN",

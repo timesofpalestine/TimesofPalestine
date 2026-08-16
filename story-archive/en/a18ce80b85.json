@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli forces continued military operations in Gaza on Sunday, IMEMC News reported, as a Palestinian child died from injuries sustained during attacks the previous day. The death marked the latest casualty amid ongoing violence in the territory, where displaced families and residential areas have faced repeated strikes.\n\nSeveral other Palestinians were wounded in the Sunday attacks, according to the outlet. The incidents occurred amid what IMEMC characterized as violations of a ceasefire agreement meant to halt hostilities in the Gaza Strip. Local medical officials documented the casualties as operations persisted across multiple areas of the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/child-dies-of-injuries-as-israeli-attacks-continue-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/remains-palestinian-teen-shot-israeli-forces-recovered-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-16T22:33:00+00:00",
+ "dek": "Israeli forces continued violating the “ceasefire” agreement in the Gaza Strip on Sunday, as a Palestinian child died from wounds sustained a day earlier and several other Palestinians were injured in attacks on displaced families and residential areas in…",
+ "image": "https://imemc.org/wp-content/uploads/2026/08/gazzakilled-e1786919049480.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/child-dies-of-injuries-as-israeli-attacks-continue-in-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/child-dies-of-injuries-as-israeli-attacks-continue-in-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a18ce80b85",
+ "score": 63.83,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Palestinian child dies from Israeli attack wounds in Gaza"
+}

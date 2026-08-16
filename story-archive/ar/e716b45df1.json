@@ -6,13 +6,7 @@
    "article": "https://www.alquds.co.uk/%d8%a7%d9%84%d8%af%d9%8a%d9%85%d9%82%d8%b1%d8%a7%d8%b7%d9%8a%d8%a9-%d8%a7%d9%84%d8%a5%d8%a8%d8%a7%d8%af%d9%8a%d8%a9-%d8%aa%d9%81%d8%b3%d9%8a%d8%b1-%d8%a3%d8%ad%d9%84%d8%a7%d9%85-%d8%a8",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
-   "article": "https://www.alaraby.co.uk/politics/%D8%A8%D9%86-%D8%BA%D9%81%D9%8A%D8%B1-%D9%8A%D8%B9%D8%AF-%D9%85%D8%AD%D8%AA%D8%AC%D8%B2%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A7-%D8%B3%D8%A7%D8%A8%D9%82%D8%A7-%D8%A8%D8%A5%D8%B4%D8%B1%D8%A7%D9%83%D9%87-%D9%81%D9%8A-%D8%A5%D8%B9%D8%AF%D8%A7%D9%85-%D8%A3%D8%B3%D8%B1%D9%89-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86",
-   "name": "العربي الجديد",
-   "url": "https://www.alaraby.co.uk/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-16T20:15:15+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "e716b45df1",
- "score": 48.39,
+ "score": 48.21,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",
