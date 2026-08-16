@@ -6,7 +6,19 @@
    "article": "https://www.maannews.net/news/2167024.html",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/58885-2",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/390428",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
   }
  ],
  "date": "2026-08-16T06:43:10+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "94133f2bd4",
- "score": 62.77,
+ "score": 62.63,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
