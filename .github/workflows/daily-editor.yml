@@ -77,8 +77,23 @@ jobs:
             appended in the same PR (append-only, keep the file's indent=1
             format, follow the existing id/cat/en/ar/q entry shape). The
             evergreen keeper topics (gaza-water-run, gaza-night-workers,
-            arab-aid-disbursement-check, prisoners-family-visits) are
-            recyclable by design — never delete them.
+            arab-aid-disbursement-check, prisoners-family-visits, and the
+            2026-08-16 additions across westbank/diaspora/arabaid/arts/
+            prisoners) are recyclable by design — never delete them.
+
+            MARKETS WATCH (owner directive 2026-08-11, wired into this
+            cycle 2026-08-16 after the fallback sat four days stale):
+            refresh editorial/markets.json EVERY cycle. Web-search the
+            latest Palestine Exchange Al-Quds index CLOSE (pex.ps, the
+            exchange's Arabic wire coverage on raya.ps/urdupoint, or
+            Investing.com PLE), and update level/date/source with the
+            newest close you can attribute to the exchange — always the
+            latest CLOSE, always dated, never invented, never left more
+            than one trading day behind without noting why in the PR. A
+            significant move (war/ceasefire swing, a Palestinian listing's
+            results, a TASE reaction pricing Israeli politics) is a
+            same-day economy story in both languages per the charter's
+            Markets watch section.
 
             Then check the EDITORIAL CALENDAR (owner-approved 2026-08-06):
             read editorial/calendar-2026.md; any assignment whose window
