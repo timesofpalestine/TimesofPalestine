@@ -19,12 +19,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/08/1168130",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
   }
  ],
  "date": "2026-08-15T18:05:00+00:00",
@@ -42,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "8ca6c93b11",
- "score": 85.37,
+ "score": 85.31,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

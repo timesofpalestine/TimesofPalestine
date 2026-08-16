@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Timeline of the Palestinian legislative election, with Jerusalem voting rules still undecided</title>
+  <desc id="dsc">A dark timeline graphic. Markers show Mahmoud Abbas's 9 July decree, field registration at 467 centres running to 19 August, Israel's general election on 27 October and the Palestinian legislative vote on 28 November. A dashed red panel over the later stretch of the timeline notes that Jerusalem identity card holders are not required to register and that arrangements for standing and voting are to be announced later. Four figures below: 467 registration centres, 11 polling stations proposed in Kufr Aqab and Shuafat in 2021, about 150,000 Jerusalemites beyond the separation barrier, and 6,300 voters inside the city described as symbolic.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c7a86b" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#c7a86b" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- header -->
+  <text x="90" y="92" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="3" fill="#c7a86b">PALESTINIAN LEGISLATIVE ELECTION · 28 NOVEMBER</text>
+  <text x="90" y="156" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">Jerusalem voting rules deferred</text>
+  <text x="90" y="214" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">as West Bank registration opens</text>
+  <text x="90" y="264" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#aaa9a5">تأجيل ترتيبات التصويت في القدس مع بدء التسجيل</text>
+  <line x1="90" y1="296" x2="1480" y2="296" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- Jerusalem unresolved panel -->
+  <rect x="620" y="330" width="860" height="140" rx="6" fill="#8a1f2d" fill-opacity="0.14" stroke="#C8102E" stroke-width="2.5" stroke-dasharray="12 9"/>
+  <text x="650" y="425" font-family="'Source Serif 4',Georgia,serif" font-size="86" fill="#c7a86b">?</text>
+  <text x="716" y="372" font-family="'Libre Franklin',Arial,sans-serif" font-size="25" fill="#f2eee8">Jerusalem ID holders are not required to register.</text>
+  <text x="716" y="404" font-family="'Libre Franklin',Arial,sans-serif" font-size="25" fill="#f2eee8">Rules to stand and to vote: announced at a later stage.</text>
+  <text x="716" y="444" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#aaa9a5">حاملو هوية القدس: الترتيبات تُعلن لاحقًا</text>
+  <line x1="1050" y1="470" x2="1050" y2="545" stroke="#C8102E" stroke-width="2" stroke-dasharray="6 7"/>
+  <line x1="1430" y1="470" x2="1430" y2="545" stroke="#C8102E" stroke-width="2" stroke-dasharray="6 7"/>
+
+  <!-- timeline -->
+  <line x1="150" y1="560" x2="1480" y2="560" stroke="url(#axis)" stroke-width="4"/>
+
+  <!-- registration window bar -->
+  <rect x="330" y="548" width="310" height="24" rx="4" fill="#286344"/>
+  <rect x="330" y="548" width="310" height="24" rx="4" fill="none" stroke="#59a97d" stroke-width="2"/>
+  <text x="330" y="522" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#59a97d">Field registration · 467 centres</text>
+  <text x="330" y="608" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" font-weight="700" fill="#f2eee8">to 19 August</text>
+  <text x="330" y="638" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">فتح التسجيل الميداني</text>
+
+  <!-- decree marker -->
+  <circle cx="250" cy="560" r="11" fill="#c7a86b"/>
+  <text x="200" y="522" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b">Abbas decree</text>
+  <text x="200" y="608" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" font-weight="700" fill="#f2eee8">9 July</text>
+  <text x="200" y="638" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">مرسوم رئاسي</text>
+
+  <!-- Israeli election marker -->
+  <circle cx="1050" cy="560" r="11" fill="#aaa9a5"/>
+  <text x="960" y="522" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">Israeli general election</text>
+  <text x="960" y="608" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" font-weight="700" fill="#f2eee8">27 October</text>
+  <text x="960" y="638" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">انتخابات إسرائيلية</text>
+
+  <!-- polling day marker -->
+  <circle cx="1430" cy="560" r="14" fill="#C8102E"/>
+  <text x="1480" y="522" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#C8102E">Palestinians vote</text>
+  <text x="1480" y="608" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" font-weight="700" fill="#f2eee8">28 November</text>
+  <text x="1480" y="638" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">يوم الاقتراع</text>
+
+  <!-- stat cards -->
+  <g>
+    <rect x="180" y="680" width="300" height="150" rx="6" fill="#f2eee8" fill-opacity="0.04" stroke="#3a3b3f" stroke-width="1.5"/>
+    <text x="204" y="748" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#59a97d">467</text>
+    <text x="204" y="782" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">registration centres, West Bank</text>
+    <text x="204" y="810" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">مركز تسجيل</text>
+
+    <rect x="513" y="680" width="300" height="150" rx="6" fill="#f2eee8" fill-opacity="0.04" stroke="#3a3b3f" stroke-width="1.5"/>
+    <text x="537" y="748" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#c7a86b">11</text>
+    <text x="537" y="782" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">stations proposed, 2021 plan</text>
+    <text x="537" y="810" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">مراكز اقتراع مقترحة</text>
+
+    <rect x="846" y="680" width="300" height="150" rx="6" fill="#f2eee8" fill-opacity="0.04" stroke="#3a3b3f" stroke-width="1.5"/>
+    <text x="870" y="748" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#c7a86b">150,000</text>
+    <text x="870" y="782" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">beyond the barrier, 2021 plan</text>
+    <text x="870" y="810" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">مقدسيون خلف الجدار</text>
+
+    <rect x="1179" y="680" width="300" height="150" rx="6" fill="#f2eee8" fill-opacity="0.04" stroke="#3a3b3f" stroke-width="1.5"/>
+    <text x="1203" y="748" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#C8102E">6,300</text>
+    <text x="1203" y="782" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">inside the city, called symbolic</text>
+    <text x="1203" y="810" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">ناخبون داخل المدينة</text>
+  </g>
+
+  <text x="180" y="866" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Sources: Central Elections Commission; 1995 Interim Agreement, Annex II; 2021 commission statements</text>
+</svg>
