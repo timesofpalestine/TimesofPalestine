@@ -5825,10 +5825,32 @@ def main():
         _fresh = _sf.report()
         (dist / "section-freshness.json").write_text(
             json.dumps(_fresh, ensure_ascii=False, indent=2), encoding="utf-8")
+        # Queue-depth check (owner order 2026-08-16, "keep the machinery
+        # fresh permanently"): the desk can only steer to a stale section
+        # if topics.json still holds an unwritten topic for it — a dry
+        # queue is the failure mode that starved humans at 45h. Count the
+        # unwritten queue per category so starvation warns with its cause.
+        _queue = None
+        try:
+            _tp = json.loads((ROOT / "topics.json").read_text(encoding="utf-8"))
+            _done = json.loads((ROOT / "originals" / "_state.json")
+                               .read_text(encoding="utf-8")).get("done", {})
+            _queue = {}
+            for _t in _tp.get("topics", []):
+                if _t.get("id") not in _done:
+                    _queue[_t.get("cat")] = _queue.get(_t.get("cat"), 0) + 1
+        except Exception:
+            pass
         for s in _fresh["stale"]:
             age = "no story yet" if s["ageHours"] is None else f"newest {s['ageHours']:.0f}h old"
             print(f"  ⚠ stale section {s['lang']}/{s['cat']}: {age} "
                   f"(target {s['staleAfterHours']}h) — assign coverage")
+            print(f"::warning::stale section {s['lang']}/{s['cat']}: {age} "
+                  f"(target {s['staleAfterHours']}h) — assign coverage")
+            if _queue is not None and not _queue.get(s["cat"]):
+                print(f"::warning::topics.json holds no unwritten topic for "
+                      f"'{s['cat']}' — the desk cannot steer there beyond its "
+                      "48h recycle fallback; queue new topics")
     except Exception as e:
         print(f"  ⚠ section freshness ledger failed open: {type(e).__name__}: {e}")
     print(f"\nBuilt dist/ — EN {len(en_items)} stories, AR {len(ar_items)} stories.")

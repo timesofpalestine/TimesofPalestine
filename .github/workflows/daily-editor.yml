@@ -68,6 +68,18 @@ jobs:
             peg, not silence. Note the before/after freshness state in the
             PR body.
 
+            QUEUE DEPTH (owner order 2026-08-16, permanent): the desk can
+            only steer to a stale section while topics.json holds an
+            unwritten topic for it — a dry queue is how a section starves.
+            Check the unwritten count per category (compare topics.json ids
+            against originals/_state.json "done"); any publishing category
+            below TWO unwritten topics gets fresh researched topics
+            appended in the same PR (append-only, keep the file's indent=1
+            format, follow the existing id/cat/en/ar/q entry shape). The
+            evergreen keeper topics (gaza-water-run, gaza-night-workers,
+            arab-aid-disbursement-check, prisoners-family-visits) are
+            recyclable by design — never delete them.
+
             Then check the EDITORIAL CALENDAR (owner-approved 2026-08-06):
             read editorial/calendar-2026.md; any assignment whose window
             includes today and is not yet marked ✅ is a same-day assignment —
