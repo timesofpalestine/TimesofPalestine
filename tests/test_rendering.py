@@ -2405,3 +2405,44 @@ class RefusalScreenTest(unittest.TestCase):
         ]:
             self.assertIsNone(
                 build.REFUSAL_RX.search(prose), f"false refusal hit: {prose}")
+
+
+class FeedEntityTests(unittest.TestCase):
+    """Wire feeds publish the HTML entity set inside otherwise valid XML.
+
+    XML defines only five named entities. Before this, `parse_xml`'s
+    bare-ampersand repair rewrote `&rsquo;` to `&amp;rsquo;`, so the feed
+    parsed but the literal string "&rsquo;" reached headlines and card decks
+    (daily editor 2026-08-16, found while checking why the `amnesty-ar` feed
+    fails in CI). Entities now resolve to real characters; the ampersand
+    repair and the XML-defined names must keep working beside it.
+    """
+
+    def _title(self, raw):
+        return build.parse_xml(raw).find(".//title").text
+
+    def _feed(self, title):
+        return ('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0">'
+                "<channel><item><title>" + title
+                + "</title></item></channel></rss>").encode()
+
+    def test_html_entities_become_characters(self):
+        # &nbsp; is U+00A0, &rsquo; is U+2019 — real characters, not literals.
+        self.assertEqual(self._title(self._feed("A&nbsp;B&rsquo;s")),
+                         "A\u00a0B\u2019s")
+
+    def test_xml_named_entities_survive(self):
+        self.assertEqual(self._title(self._feed("Fish &amp; Chips &lt;x&gt;")),
+                         "Fish & Chips <x>")
+
+    def test_bare_ampersand_still_repaired(self):
+        self.assertEqual(self._title(self._feed("Fish & Chips")),
+                         "Fish & Chips")
+
+    def test_unknown_entity_is_dropped_not_guessed(self):
+        self.assertEqual(self._title(self._feed("X&bogus;Y")), "XY")
+
+    def test_arabic_feed_text_is_preserved(self):
+        self.assertEqual(
+            self._title(self._feed("\u0642\u0635\u0631\u0629&nbsp;\u062a\u062d\u062a \u0627\u0644\u062d\u0635\u0627\u0631")),
+            "\u0642\u0635\u0631\u0629\u00a0\u062a\u062d\u062a \u0627\u0644\u062d\u0635\u0627\u0631")

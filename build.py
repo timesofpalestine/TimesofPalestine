@@ -27,6 +27,7 @@ import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from html.entities import name2codepoint
 from pathlib import Path
 from urllib.parse import quote, urljoin, urlsplit
 from zoneinfo import ZoneInfo
@@ -618,12 +619,36 @@ def fetch_bytes(url):
             raw = gzip.decompress(raw)
         return raw
 
+def resolve_html_entities(text):
+    """Turn WordPress HTML entities (&nbsp;, &rsquo;, …) into real characters.
+
+    XML defines only five named entities, so a feed that publishes the HTML
+    set either kills the parse outright or — because the bare-ampersand
+    escape below rewrites `&rsquo;` to `&amp;rsquo;` — survives the parse and
+    puts the literal string "&rsquo;" into a headline. Both are wrong. The
+    five XML names are left alone; an unknown name is dropped rather than
+    guessed at. Fail-open: this only ever runs over already-fetched text.
+    """
+    def sub(m):
+        name = m.group(1)
+        if name in ("amp", "lt", "gt", "quot", "apos"):
+            return m.group(0)
+        cp = name2codepoint.get(name)
+        if cp is None:
+            return ""
+        ch = chr(cp)
+        return {"&": "&amp;", "<": "&lt;", ">": "&gt;"}.get(ch, ch)
+
+    return re.sub(r"&([A-Za-z][A-Za-z0-9]*);", sub, text)
+
+
 def parse_xml(raw):
+    text = raw.decode("utf-8", errors="replace") if isinstance(raw, bytes) else raw
+    resolved = resolve_html_entities(text)
     try:
-        return ET.fromstring(raw)
+        return ET.fromstring(resolved.encode("utf-8"))
     except ET.ParseError:
-        text = raw.decode("utf-8", errors="replace")
-        text = re.sub(r"^.*?<\?xml", "<?xml", text, count=1, flags=re.S)
+        text = re.sub(r"^.*?<\?xml", "<?xml", resolved, count=1, flags=re.S)
         text = re.sub(r"&(?!amp;|lt;|gt;|quot;|apos;|#)", "&amp;", text)
         text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", text)
         text = re.sub(r'encoding="[^"]+"', 'encoding="utf-8"', text, count=1)
