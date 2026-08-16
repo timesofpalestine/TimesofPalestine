@@ -45,6 +45,17 @@ class HeroStaticNeutralizerTest(unittest.TestCase):
                     f"hero image filter for '.{variant}' must be reset in "
                     f"both static contexts")
 
+    def test_static_hero_image_height_stays_natural(self):
+        # 2026-08-16 regression: explicit width/height attributes on the
+        # hero <img> (CLS belt) applied literally in the static contexts,
+        # which have no CSS height rule — a 675px portrait crop ate the
+        # art on phones. Both static contexts must pin height:auto.
+        self.assertGreaterEqual(
+            build.CSS.count(".hero-imgwrap>a>img{height:auto}"), 2,
+            "static hero contexts (phone media block and [data-lite]) must "
+            "reset the hero image to height:auto so dimension attributes "
+            "never dictate layout there")
+
     def test_the_graphic_skin_exists(self):
         # Guard the guard: if the skin is renamed, the variant scan above
         # must still see it — this catches a rename that would silently

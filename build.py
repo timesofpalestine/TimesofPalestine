@@ -3339,6 +3339,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 [data-lite] .hero-overlay{position:static;padding:0;background:none}
 [data-lite] .hero-imgwrap.graphic .hero-overlay{background:none}
 [data-lite] .hero-imgwrap.graphic>a>img{filter:none}
+[data-lite] .hero-imgwrap>a>img{height:auto}
 [data-lite] .hero-overlay .label{color:var(--red)}
 [data-lite] .hero-overlay h2,[data-lite] .hero-overlay h2 a{color:var(--ink);text-shadow:none}
 [data-lite] .hero-overlay .meta{color:var(--muted)}
@@ -3663,6 +3664,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
      neutralizer added here AND in the [data-lite] block. */
   .hero-imgwrap.graphic .hero-overlay{background:none}
   .hero-imgwrap.graphic>a>img{filter:none}
+  .hero-imgwrap>a>img{height:auto}
   .hero-overlay .label{color:var(--red)}
   .hero-overlay h2,.hero-overlay h2 a{color:var(--ink);text-shadow:none}
   .hero-overlay h2 a:hover{color:var(--red)}
