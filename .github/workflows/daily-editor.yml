@@ -95,6 +95,22 @@ jobs:
             same-day economy story in both languages per the charter's
             Markets watch section.
 
+            PHOTO-LED FRONT (site audit 2026-08-16): the build writes a
+            photoLed block into dist/section-freshness.json (originals
+            count, coverLed count, coverLedPids). Covers are photographs
+            (owner order 2026-08-03) — each cycle, convert at least two
+            pids from coverLedPids to rights-cleared real photos (Wikimedia
+            Commons / official press kits, with media-rights.json entries)
+            via image: headers or editorial/image-overrides.json, until the
+            photo-led share holds above 0.8.
+
+            RUNNING FILES (site audit 2026-08-16): editorial/topic-files.json
+            drives the /topic-<slug>.html hub pages. Keep each file's dek
+            current as its story moves (Qusra's dek must never lag the
+            siege's actual state), and when a story becomes a file — three
+            or more pieces and clearly continuing — append a new entry with
+            bilingual name/dek and a tested pattern.
+
             Then check the EDITORIAL CALENDAR (owner-approved 2026-08-06):
             read editorial/calendar-2026.md; any assignment whose window
             includes today and is not yet marked ✅ is a same-day assignment —

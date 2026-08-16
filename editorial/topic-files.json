@@ -1,0 +1,59 @@
+{
+ "_readme": [
+  "Running-file topic hubs (owner order 2026-08-16, site audit rec 6).",
+  "Each entry becomes /en/topic-<slug>.html + /ar/topic-<slug>.html — a living",
+  "page collecting every live and archived story whose title or original slug",
+  "matches `pattern` (case-insensitive regex, matched against both editions'",
+  "titles plus the original file slug). A hub renders only when it matches at",
+  "least `min` stories in that language, so a new file never ships empty.",
+  "Hubs are linked from the footer section index on every page. Add a file by",
+  "appending an entry; the daily editor keeps deks current as stories move."
+ ],
+ "files": [
+  {
+   "slug": "qusra",
+   "pattern": "qusra|قصرة",
+   "min": 2,
+   "en": {"name": "The Qusra File",
+          "dek": "Three families besieged at Ras al-Ein since 9 August — every development in the siege the world is watching, as we reported it."},
+   "ar": {"name": "ملف قصرة",
+          "dek": "ثلاث عائلات محاصرة في رأس العين منذ 9 آب/أغسطس — كل تطورات الحصار الذي يتابعه العالم، كما غطيناه أولاً بأول."}
+  },
+  {
+   "slug": "icc-icj",
+   "pattern": "\\bicc\\b|\\bicj\\b|arrest warrant|international criminal court|international court of justice|world court|الجنائية الدولية|العدل الدولية|مذكرة (?:اعتقال|توقيف)",
+   "min": 2,
+   "en": {"name": "The Hague Files",
+          "dek": "The ICC warrants and the ICJ cases on Palestine — every filing, ruling, sanction and state response, with the two courts kept distinct."},
+   "ar": {"name": "ملفات لاهاي",
+          "dek": "مذكرات الجنائية الدولية وقضايا العدل الدولية بشأن فلسطين — كل مرافعة وحكم وعقوبة وموقف دولة، مع التمييز الدائم بين المحكمتين."}
+  },
+  {
+   "slug": "israeli-election",
+   "pattern": "knesset|israeli election|likud primar|إسرائيل.*انتخابات|انتخابات.*إسرائيل|الكنيست|الليكود",
+   "min": 2,
+   "en": {"name": "Israel Votes 2026",
+          "dek": "The 27 October Knesset election through Palestinian eyes: the blocs, the polls, the kingmaker paradox — and what each outcome means for Gaza and the West Bank."},
+   "ar": {"name": "إسرائيل تنتخب 2026",
+          "dek": "انتخابات الكنيست في 27 تشرين الأول/أكتوبر بعين فلسطينية: الكتل والاستطلاعات ومفارقة صانع الملوك — وما يعنيه كل احتمال لغزة والضفة."}
+  },
+  {
+   "slug": "yasser-abbas",
+   "pattern": "yasser abbas|ياسر عباس",
+   "min": 2,
+   "en": {"name": "The Yasser Abbas File",
+          "dek": "The president's son across every financial and political file he enters — documented, attributed, with the family's side carried."},
+   "ar": {"name": "ملف ياسر عباس",
+          "dek": "نجل الرئيس في كل ملف مالي وسياسي يدخله — توثيقٌ منسوب المصادر، مع رواية العائلة إلى جانبه."}
+  },
+  {
+   "slug": "pa-litigation",
+   "pattern": "sokolow|psjvta|terror judgment|pa litigation|clearance revenue|أموال المقاصة|دعاوى.*السلطة|السلطة.*قضائي",
+   "min": 2,
+   "en": {"name": "The Litigation Docket",
+          "dek": "The lawsuits against the PA and PLO worldwide — the revived US terror judgments, the clearance-revenue deductions, and the audits that decide both."},
+   "ar": {"name": "ملف الدعاوى القضائية",
+          "dek": "الدعاوى ضد السلطة والمنظمة حول العالم — أحكام الإرهاب الأميركية المستعادة، واقتطاعات المقاصة، والتدقيقات التي تحسم الاثنين."}
+  }
+ ]
+}
