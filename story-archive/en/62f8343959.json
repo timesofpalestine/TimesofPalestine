@@ -6,7 +6,13 @@
    "article": "https://dawnmena.org/the-gaza-model-in-lebanon-is-a-list-of-israeli-war-crimes-the-media-is-still-whitewashing-them",
    "name": "DAWN",
    "url": "https://dawnmena.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/08/06/lebanon-israels-killing-of-journalist-an-apparent-war-crime",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-05T19:24:56+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "62f8343959",
- "score": 73.81,
+ "score": 73.8,
  "source": "DAWN",
  "source_id": "dawn",
  "source_url": "https://dawnmena.org/",
