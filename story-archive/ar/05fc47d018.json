@@ -9,15 +9,21 @@
    "verified": false
   },
   {
-   "article": "https://palinfo.com/news/2026/08/16/1115575",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": false
+   "article": "https://felesteen.news/post/184964/%D9%88%D8%AC%D9%87-%D8%B3%D8%B1%D9%82%D8%AA%D9%87-%D8%A7%D9%84%D8%B9%D8%AA%D9%85%D8%A9-%D8%B5%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%81%D9%8A-%D9%85%D8%AD%D9%85%D8%AF-%D8%B9%D8%B1%D8%A8-%D8%AA%D8%AE%D8%AA%D8%B5%D8%B1-%D9%85%D8%B9%D8%A7%D9%86%D8%A7%D8%A9-%D8%A7%D9%84%D8%A3%D8%B3%D8%B1%D9%89",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   },
   {
    "article": "https://qudsn.co/post?id=217076&slug=%D8%A7%D9%84%D8%B5%D8%AD%D9%81%D9%8A-%D9%85%D8%AD%D9%85%D8%AF-%D8%B9%D8%B1%D8%A8-%D8%B9%D8%A7%D9%85%D8%A7%D9%86-%D8%AF%D9%88%D9%86-%D9%85%D8%AD%D8%A7%D9%83%D9%85%D8%A9-%D9%81%D9%8A-%D8%B3%D8%AC%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84%C2%A0",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://palinfo.com/news/2026/08/16/1115575",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
    "verified": false
   }
  ],
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "05fc47d018",
- "score": 43.52,
+ "score": 43.34,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
