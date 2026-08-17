@@ -25,6 +25,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/settler-violence-and-settlement-expansion-israels-tools-to-impose-annexation-of-the-west-bank",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": false
   }
  ],
  "date": "2026-08-17T07:29:00+00:00",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "f30e71f52e",
- "score": 62.96,
+ "score": 62.74,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
