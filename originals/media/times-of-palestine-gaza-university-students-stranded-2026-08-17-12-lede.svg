@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Gaza universities restart degrees online while student travel stays blocked</title>
+<desc id="dsc">Left: a screen representing UNESCO's federated Gaza Virtual Campus, with notes on temporary learning spaces and the makeshift University City at al-Mawasi. Right: a bar chart of reported figures — 88,000 students forced to suspend studies, 20,000 supported on the virtual campus in phase one, more than 10,000 reached in temporary learning spaces, and about 1,000 scholarship holders unable to leave Gaza, marked by a blocked-travel symbol. Footer cards carry damage-assessment numbers: 38 campuses at 21 institutions, 22 campuses completely destroyed and 14 damaged, 195 of 206 buildings destroyed or severely damaged, and 120,000 computers and laptops destroyed or severely damaged plus 105 servers.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="scr" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#141518"/>
+<stop offset="1" stop-color="#0d0e10"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="64" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="3" fill="#c7a86b">HIGHER EDUCATION · GAZA</text>
+<text x="90" y="116" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">Gaza universities restart degrees online</text>
+<text x="90" y="164" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">as Israel blocks student travel</text>
+<text x="90" y="206" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#aaa9a5" direction="rtl">جامعات غزة تستأنف الدراسة عبر الإنترنت والسفر ما زال ممنوعاً</text>
+
+<!-- LEFT PANEL: virtual campus -->
+<rect x="90" y="250" width="740" height="450" rx="12" fill="#17181b" stroke="#2c2e32"/>
+<text x="120" y="288" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="2" fill="#c7a86b">GAZA VIRTUAL CAMPUS</text>
+<text x="120" y="316" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" direction="rtl">الحرم الجامعي الافتراضي في غزة</text>
+
+<rect x="250" y="340" width="420" height="220" rx="8" fill="url(#scr)" stroke="#c7a86b" stroke-width="2"/>
+<line x1="250" y1="366" x2="670" y2="366" stroke="#2c2e32" stroke-width="2"/>
+<circle cx="268" cy="353" r="4" fill="#8a1f2d"/>
+<circle cx="284" cy="353" r="4" fill="#c7a86b"/>
+<circle cx="300" cy="353" r="4" fill="#286344"/>
+
+<g stroke="#3a3d42">
+<rect x="275" y="382" width="110" height="76" rx="5" fill="#286344" fill-opacity="0.35"/>
+<rect x="405" y="382" width="110" height="76" rx="5" fill="#8a1f2d" fill-opacity="0.35"/>
+<rect x="535" y="382" width="110" height="76" rx="5" fill="#c7a86b" fill-opacity="0.28"/>
+<rect x="275" y="470" width="110" height="76" rx="5" fill="#c7a86b" fill-opacity="0.28"/>
+<rect x="405" y="470" width="110" height="76" rx="5" fill="#286344" fill-opacity="0.35"/>
+<rect x="535" y="470" width="110" height="76" rx="5" fill="#8a1f2d" fill-opacity="0.35"/>
+</g>
+<g stroke="#f2eee8" stroke-opacity="0.5" stroke-width="2">
+<line x1="290" y1="440" x2="350" y2="440"/><line x1="290" y1="450" x2="330" y2="450"/>
+<line x1="420" y1="440" x2="480" y2="440"/><line x1="420" y1="450" x2="460" y2="450"/>
+<line x1="550" y1="440" x2="610" y2="440"/><line x1="550" y1="450" x2="590" y2="450"/>
+<line x1="290" y1="528" x2="350" y2="528"/><line x1="290" y1="538" x2="330" y2="538"/>
+<line x1="420" y1="528" x2="480" y2="528"/><line x1="420" y1="538" x2="460" y2="538"/>
+<line x1="550" y1="528" x2="610" y2="528"/><line x1="550" y1="538" x2="590" y2="538"/>
+</g>
+<path d="M430 560 H490 L512 586 H408 Z" fill="#2c2e32"/>
+<rect x="398" y="586" width="124" height="9" rx="4" fill="#3a3d42"/>
+
+<text x="120" y="632" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Federated platform: each university keeps its own digital space</text>
+<text x="120" y="660" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Temporary learning spaces in Gaza City, Khan Younis, Deir al-Balah</text>
+<text x="120" y="688" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">University City, al-Mawasi: six halls, up to 600 students a day</text>
+
+<!-- RIGHT PANEL: chart -->
+<rect x="880" y="250" width="640" height="450" rx="12" fill="#17181b" stroke="#2c2e32"/>
+<text x="910" y="288" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="2" fill="#c7a86b">REPORTED NUMBERS OF STUDENTS</text>
+<text x="910" y="316" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" direction="rtl">أعداد الطلبة كما وردت في التقارير</text>
+
+<line x1="910" y1="330" x2="910" y2="610" stroke="#3a3d42" stroke-width="2"/>
+
+<text x="910" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">88,000 students forced to suspend studies (UNESCO)</text>
+<rect x="910" y="360" width="560" height="28" fill="#8a1f2d"/>
+
+<text x="910" y="422" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">20,000 supported on Gaza Virtual Campus, phase one</text>
+<rect x="910" y="430" width="127" height="28" fill="#59a97d"/>
+
+<text x="910" y="492" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">10,000+ reached in temporary learning spaces</text>
+<rect x="910" y="500" width="64" height="28" fill="#286344"/>
+
+<text x="910" y="562" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">About 1,000 scholarship holders unable to leave Gaza</text>
+<rect x="910" y="570" width="7" height="28" fill="#c7a86b"/>
+
+<line x1="930" y1="584" x2="1086" y2="584" stroke="#c7a86b" stroke-width="3" stroke-dasharray="9 8"/>
+<rect x="1096" y="562" width="10" height="44" fill="#C8102E"/>
+<g stroke="#C8102E" stroke-width="4">
+<line x1="1116" y1="570" x2="1146" y2="600"/>
+<line x1="1146" y1="570" x2="1116" y2="600"/>
+</g>
+<text x="1164" y="580" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#C8102E">travel blocked</text>
+<text x="1164" y="604" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" direction="rtl">منع السفر</text>
+
+<text x="910" y="656" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Bars drawn to a single scale; teaching has restarted, movement has not.</text>
+
+<!-- FOOTER CARDS: damage assessment -->
+<g font-family="'Libre Franklin',Arial,sans-serif">
+<rect x="90" y="720" width="340" height="106" rx="10" fill="#1a1b1e" stroke="#2c2e32"/>
+<text x="108" y="766" font-size="34" fill="#c7a86b" font-weight="bold">38</text>
+<text x="108" y="792" font-size="14" fill="#f2eee8">campuses assessed at 21 higher-</text>
+<text x="108" y="812" font-size="14" fill="#aaa9a5">education institutions</text>
+
+<rect x="450" y="720" width="340" height="106" rx="10" fill="#1a1b1e" stroke="#2c2e32"/>
+<text x="468" y="766" font-size="34" fill="#c7a86b" font-weight="bold">22</text>
+<text x="468" y="792" font-size="14" fill="#f2eee8">campuses completely destroyed,</text>
+<text x="468" y="812" font-size="14" fill="#aaa9a5">14 damaged to varying degrees</text>
+
+<rect x="810" y="720" width="340" height="106" rx="10" fill="#1a1b1e" stroke="#2c2e32"/>
+<text x="828" y="766" font-size="34" fill="#c7a86b" font-weight="bold">195 / 206</text>
+<text x="828" y="792" font-size="14" fill="#f2eee8">buildings destroyed or severely</text>
+<text x="828" y="812" font-size="14" fill="#aaa9a5">damaged and non-operational</text>
+
+<rect x="1170" y="720" width="340" height="106" rx="10" fill="#1a1b1e" stroke="#2c2e32"/>
+<text x="1188" y="766" font-size="34" fill="#c7a86b" font-weight="bold">120,000</text>
+<text x="1188" y="792" font-size="14" fill="#f2eee8">computers and laptops destroyed</text>
+<text x="1188" y="812" font-size="14" fill="#aaa9a5">or severely damaged; 105 servers</text>
+</g>
+
+<text x="90" y="868" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#aaa9a5">Sources: UNESCO; AWRAD–UNESCO–Palestinian Ministry of Education damage assessment, Ramallah, 17 November 2025; Al Jazeera; Unicorn Riot</text>
+</svg>
