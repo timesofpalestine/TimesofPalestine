@@ -230,6 +230,32 @@
         "خليل حية"
       ],
       "verified": "aljazeera.net + wafa.ps, 2026-08-17"
+    },
+    {
+      "latin": "Mohammed Samhouri (Palestinian economist)",
+      "ar": "محمد السمهوري",
+      "wrong": [
+        "محمد سمحوري",
+        "محمد السمحوري"
+      ],
+      "verified": "washingtoninstitute.org Arabic expert page for the same economist, 2026-08-17"
+    },
+    {
+      "latin": "Jasper Jeffers (ISF commander)",
+      "ar": "جاسبر جيفرز",
+      "wrong": [
+        "جاسبر جفرز",
+        "جاسبر جيفرس"
+      ],
+      "verified": "aljazeera.net encyclopedia entry + samanews.ps, 2026-08-17"
+    },
+    {
+      "latin": "Kiryat Gat",
+      "ar": "كريات غات",
+      "wrong": [
+        "كريات جات"
+      ],
+      "verified": "aljazeera.net encyclopedia entry on the CMCC + ultrapal, 2026-08-17"
     }
   ]
 }

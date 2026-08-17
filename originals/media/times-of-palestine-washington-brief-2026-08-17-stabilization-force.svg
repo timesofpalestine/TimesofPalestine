@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The force meant to replace Israel's army in Gaza: planned, pledged, approved</title>
+  <desc id="desc">A bilingual chart of the International Stabilization Force: the 20,000 soldiers its American commander planned, the contingents six countries pledged, the 200 troops Israel's security cabinet approved for entry, Israel's two eligibility rules, and the American Civil-Military Coordination Center that Congress would keep in southern Israel until the end of 2027.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="planned" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#286344"/>
+      <stop offset="1" stop-color="#2f4a3c"/>
+    </linearGradient>
+    <linearGradient id="lawband" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7e1e2b"/>
+      <stop offset=".52" stop-color="#3a2b2c"/>
+      <stop offset="1" stop-color="#bd9854"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="9" stdDeviation="13" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:16px}
+      .small{font-size:19px}
+      .body{font-size:22px}
+      .label{font-size:17px;font-weight:800;letter-spacing:1.2px}
+      .num{font-size:34px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="80" y="76" class="serif ivory" font-size="50" font-weight="800">The force meant to replace Israel's army in Gaza</text>
+  <text x="80" y="118" class="sans muted body">Planned by its American commander, pledged by six governments, approved by Israel's cabinet at one per cent.</text>
+  <text x="1524" y="162" class="arabic ivory" font-size="35" font-weight="800" text-anchor="end">القوة التي يُفترض أن تحلّ محل الجيش الإسرائيلي في غزة</text>
+  <text x="1524" y="194" class="arabic muted small" text-anchor="end">خطّط قائدها الأميركي لعشرين ألفاً.. وأذنت إسرائيل بمئتين</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="228" width="1454" height="196" rx="18" fill="#25262a" stroke="#3a3b40" stroke-width="2"/>
+
+    <text x="102" y="266" class="sans gold label">PLANNED — الحجم المخطَّط</text>
+    <rect x="102" y="280" width="1180" height="34" rx="6" fill="url(#planned)"/>
+    <text x="1300" y="306" class="sans green num">20,000</text>
+    <text x="102" y="340" class="sans muted small">Maj. Gen. Jasper Jeffers, ISF commander, February 2026 — plus 12,000 Palestinian police to be trained</text>
+
+    <text x="102" y="378" class="sans red label">APPROVED TO ENTER — المصرَّح بدخولهم</text>
+    <rect x="102" y="390" width="14" height="24" rx="4" fill="#C8102E"/>
+    <path d="M126 402h188" stroke="#67696f" stroke-width="2" stroke-dasharray="5 5"/>
+    <text x="326" y="410" class="sans ivory num">200</text>
+    <text x="428" y="409" class="sans muted small">Israeli security cabinet, 26 July 2026 — «قوات من دول صديقة» — one per cent of the plan</text>
+  </g>
+
+  <text x="80" y="470" class="sans gold label">WHAT SIX GOVERNMENTS PLEDGED — ما تعهّدت به ست حكومات</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="490" width="232" height="172" rx="16" fill="#27282c" stroke="#dc6572" stroke-width="3"/>
+    <text x="92" y="528" class="sans ivory" font-size="24" font-weight="800">Indonesia</text>
+    <text x="92" y="556" class="arabic muted small">إندونيسيا</text>
+    <text x="92" y="600" class="sans red num">8,000</text>
+    <text x="92" y="626" class="sans muted tiny">Deputy commander</text>
+    <text x="92" y="648" class="sans red tiny">Barred by Israel's rules</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="318" y="490" width="232" height="172" rx="16" fill="#27282c" stroke="#61aa80" stroke-width="2"/>
+    <text x="340" y="528" class="sans ivory" font-size="24" font-weight="800">Morocco</text>
+    <text x="340" y="556" class="arabic muted small">المغرب</text>
+    <text x="340" y="600" class="sans green num">400</text>
+    <text x="340" y="626" class="sans muted tiny">Rabat accord, July 2026</text>
+    <text x="340" y="648" class="sans green tiny">Expected to deploy first</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="566" y="490" width="232" height="172" rx="16" fill="#27282c" stroke="#72747a" stroke-width="2"/>
+    <text x="588" y="528" class="sans ivory" font-size="24" font-weight="800">Kosovo</text>
+    <text x="588" y="556" class="arabic muted small">كوسوفو</text>
+    <text x="588" y="600" class="sans ivory num">20</text>
+    <text x="588" y="626" class="sans muted tiny">Reported contingent</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="814" y="490" width="232" height="172" rx="16" fill="#27282c" stroke="#72747a" stroke-width="2"/>
+    <text x="836" y="528" class="sans ivory" font-size="24" font-weight="800">Uganda</text>
+    <text x="836" y="556" class="arabic muted small">أوغندا</text>
+    <text x="836" y="597" class="sans muted" font-size="22" font-weight="800">not disclosed</text>
+    <text x="836" y="624" class="arabic muted tiny">العدد غير معلن</text>
+    <text x="836" y="648" class="sans muted tiny">Parliament voted 6 Aug</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1062" y="490" width="232" height="172" rx="16" fill="#27282c" stroke="#72747a" stroke-width="2"/>
+    <text x="1084" y="528" class="sans ivory" font-size="24" font-weight="800">Albania</text>
+    <text x="1084" y="556" class="arabic muted small">ألبانيا</text>
+    <text x="1084" y="597" class="sans muted" font-size="22" font-weight="800">not disclosed</text>
+    <text x="1084" y="624" class="arabic muted tiny">العدد غير معلن</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1310" y="490" width="214" height="172" rx="16" fill="#27282c" stroke="#72747a" stroke-width="2"/>
+    <text x="1332" y="528" class="sans ivory" font-size="24" font-weight="800">Kazakhstan</text>
+    <text x="1332" y="556" class="arabic muted small">كازاخستان</text>
+    <text x="1332" y="597" class="sans muted" font-size="22" font-weight="800">not disclosed</text>
+    <text x="1332" y="624" class="arabic muted tiny">العدد غير معلن</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="686" width="700" height="150" rx="16" fill="#221f21" stroke="#8a1f2d" stroke-width="2"/>
+    <text x="94" y="722" class="sans red label">ISRAEL'S TWO ENTRY RULES — شرطا إسرائيل للدخول</text>
+    <text x="94" y="756" class="sans ivory small">1. A formal peace agreement with Israel</text>
+    <text x="94" y="782" class="sans ivory small">2. No legal or diplomatic action against Israel abroad</text>
+    <text x="94" y="812" class="arabic muted tiny">قرار المجلس الوزاري المصغّر، 26 تموز/يوليو 2026 — يستثني إندونيسيا وتركيا</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="794" y="686" width="730" height="150" rx="16" fill="url(#lawband)"/>
+    <text x="818" y="722" class="sans ivory label">THE AMERICAN CENTRE CONGRESS WOULD KEEP</text>
+    <text x="818" y="754" class="sans ivory small">Civil-Military Coordination Center, Kiryat Gat — opened 17 Oct 2025</text>
+    <text x="818" y="780" class="sans ivory small">About 200 US troops, 20-plus countries, no Palestinian seat</text>
+    <text x="818" y="806" class="sans gold small">Section 925 would fund it to 31 December 2027</text>
+    <text x="1500" y="828" class="arabic ivory tiny" text-anchor="end">مركز التنسيق المدني العسكري في كريات جات — البند 925 يمدّده حتى نهاية 2027</text>
+  </g>
+
+  <text x="80" y="874" class="sans muted tiny">Figures: ISF commander's February 2026 briefing; Israeli security cabinet decision of 26 July 2026; national pledges as reported; Senate NDAA S.4784, Section 925. Graphic: Times of Palestine.</text>
+</svg>
