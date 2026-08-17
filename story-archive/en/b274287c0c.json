@@ -1,0 +1,32 @@
+{
+ "brief": "Israel released 35 Palestinian prisoners into Gaza, according to Al Jazeera English. The detainees crossed into the territory to emotional reunions with relatives and supporters who gathered to greet them after their detention in Israeli facilities.\n\nThe release represents one phase in an ongoing arrangement governing prisoner exchanges between the two sides. Such transfers have periodically occurred throughout years of conflict, with each release drawing families to border crossings and entry points where prisoners are handed over. The 35 prisoners' arrival added to the list of detainees returned to Gaza under the terms of agreements negotiated between Israeli and Palestinian authorities.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/17/08-17-26-pal-prisoners-release-sv-mp4?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-17T00:05:34+00:00",
+ "dek": "Emotional reunions greeted 35 Palestinians prisoners released by Israel into Gaza.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786924991.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/17/08-17-26-pal-prisoners-release-sv-mp4?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/17/08-17-26-pal-prisoners-release-sv-mp4?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b274287c0c",
+ "score": 49.89,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel releases 35 Palestinian prisoners to Gaza"
+}
