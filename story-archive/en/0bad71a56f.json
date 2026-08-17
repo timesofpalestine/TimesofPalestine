@@ -13,6 +13,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/recap-latest-developments-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-17T03:41:30+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "0bad71a56f",
- "score": 45.52,
+ "score": 45.32,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
