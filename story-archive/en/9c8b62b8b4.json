@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli settlers have pitched tents to establish a new illegal outpost in the occupied West Bank, Al Jazeera English reported. The development marks another expansion of unauthorized Jewish settlements in Palestinian territory, which Israel's government does not formally recognize but has long tolerated.\n\nUN Special Rapporteur Albanese characterized the settlement activity as part of a broader strategy, warning that Israel is \"using settlers to advance ethnic cleansing\" in the West Bank. The allegation reflects escalating international concerns over Israeli settlement expansion and its impact on Palestinians living in the territory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/17/israeli-settlers-pitch-tents-for-new-illegal-outpost-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://t.me/maannews/36257",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-17T01:28:13+00:00",
+ "dek": "UN Special Rapporteur Albanese warns that Israel is 'using settlers to advance ethnic cleansing' in the West Bank.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/afp_6a8246ad7834-1786922669.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/17/israeli-settlers-pitch-tents-for-new-illegal-outpost-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/17/israeli-settlers-pitch-tents-for-new-illegal-outpost-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9c8b62b8b4",
+ "score": 49.49,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers establish new illegal outpost in occupied West Bank"
+}
