@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.maannews.net/news/2167097.html",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/recap-latest-developments-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -48,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "f30e71f52e",
- "score": 62.74,
+ "score": 62.53,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
