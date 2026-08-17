@@ -1,0 +1,44 @@
+{
+ "brief": "Violence by Israeli settlers against Palestinians in the occupied West Bank has intensified significantly under Prime Minister Benjamin Netanyahu's far-right government, according to Al Jazeera English. The escalation marks a sharp increase in attacks targeting Palestinian communities and their property across the territory in recent months.\n\nThe surge reflects deepening tensions in the West Bank, where Palestinian residents face both organized settler aggression and military operations. Security forces have struggled to contain the attacks despite growing international concern over the deteriorating situation. Palestinian communities report repeated incidents of property damage, intimidation, and physical confrontations as settler actions go largely unchecked.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/inside-story/2026/8/16/what-could-stop-israeli-settler-attacks-on-palestinians?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/pope-calls-end-israeli-violence-against-palestinians-occupied-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/pope-calls-end-west-bank-violence-against-palestinians",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-16T21:54:58+00:00",
+ "dek": "Violence in the occupied West Bank has intensified under Israel's far-right Netanyahu government.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/ap_6a81c3e78437b-1786889191.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/inside-story/2026/8/16/what-could-stop-israeli-settler-attacks-on-palestinians?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/inside-story/2026/8/16/what-could-stop-israeli-settler-attacks-on-palestinians?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "66f49e0cc5",
+ "score": 46.38,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "West Bank settler violence surges under Netanyahu government"
+}
