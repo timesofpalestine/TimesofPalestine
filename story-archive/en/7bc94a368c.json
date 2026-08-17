@@ -6,25 +6,19 @@
    "article": "original:washington-brief-2026-08-16.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.aljazeera.com/video/newsfeed/2026/8/17/palestinians-israelis-sceptical-of-gaza-plan-as-kushner-visits-region?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
+   "verified": false
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/kushner-netanyahu-agree-path-forward-gaza-board-peace-official-says",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-talks-trumps-board-peace-deep-and-constructive",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/kushner-netanyahu-agree-path-forward-gaza-board-peace-official-says",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-16T12:35:00+00:00",
@@ -42,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "7bc94a368c",
- "score": 65.49000000000001,
+ "score": 65.28,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
