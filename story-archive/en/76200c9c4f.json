@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/8/16/israeli-minister-calls-for-killing-30-to-40-palestinians-in-gaza-nightly?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-official-says-israel-setting-nightly-quota-killing-palestinians",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-16T23:58:34+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "76200c9c4f",
- "score": 59.78,
+ "score": 59.57,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
