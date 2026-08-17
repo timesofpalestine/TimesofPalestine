@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli forces launched a broad campaign of arrests and raids across the West Bank, the Ma'an news agency reported. The operation swept through multiple locations across the Palestinian territory, though specific details on the scale and scope remained unclear in initial reports.\n\nThe exact number of Palestinians detained in the sweeping operation was not immediately disclosed. Similarly, the specific locations targeted and the stated military objectives behind the campaign were not yet available. Ma'an did not provide additional details on how long the raids continued or whether the operation was ongoing.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167097.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162317/%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%82%D8%AA%D8%AD%D9%85-%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%88%D9%8A%D9%88%D8%B2%D8%B9-%D8%A5%D8%AE%D8%B7%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D9%87%D8%AF%D9%85-%D9%85%D9%86%D8%A7%D8%B2%D9%84",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-17T07:04:22+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/W7AVFRdC05AsjkmF5w0c0bhChftJugX0hxCW0-mgxBjpsWe1uCiMJxoQrVBYv7G9xSxrWWwft0KU8uiMhetpKIjNgeECItlEnaqM3TBUHUz3S6WFbQFt3NjrcWDBfpC5m_I6mI2FsdnCe31NShSIn2j52n5pM7CYErHvKh-tm7MPd8LSSj7kxATQiKsND3yOi3ECeGTBVmeCnhDHvPVzyaMozgQm602xMSN7zwIH3XYvn_rYXmWc5u7FEon18TtYW2k9E7nkiTHQcDVNkRacCGo_MAxvPhyeCCQAPVAANi9ndjfqojuuG6RPr8Gx8xKe4VGW834EMuira_Bo3XRw1Q.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2167097.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167097.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fd3c482126",
+ "score": 49.93,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces conduct widespread arrests and raids across West Bank"
+}
