@@ -31,12 +31,6 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": true
-  },
-  {
-   "article": "https://t.me/maannews/36258",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
-   "verified": true
   }
  ],
  "date": "2026-08-16T12:35:00+00:00",
@@ -54,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "7bc94a368c",
- "score": 74.74000000000001,
+ "score": 74.58,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
