@@ -15,9 +15,9 @@
    "pattern": "qusra|قصرة",
    "min": 2,
    "en": {"name": "The Qusra File",
-          "dek": "Three families besieged at Ras al-Ein since 9 August — every development in the siege the world is watching, as we reported it."},
+          "dek": "Fifteen people sealed into three houses at Ras al-Ein since 9 August, without water or power since the 10th, inside a closed military zone the army declared and does not enforce against settlers — every development, as we reported it."},
    "ar": {"name": "ملف قصرة",
-          "dek": "ثلاث عائلات محاصرة في رأس العين منذ 9 آب/أغسطس — كل تطورات الحصار الذي يتابعه العالم، كما غطيناه أولاً بأول."}
+          "dek": "خمسة عشر شخصاً محتجزون في ثلاثة منازل في رأس العين منذ 9 آب/أغسطس، بلا ماء ولا كهرباء منذ العاشر منه، داخل منطقة عسكرية مغلقة أعلنها الجيش ولا ينفّذها على المستوطنين — كل التطورات كما غطيناها أولاً بأول."}
   },
   {
    "slug": "icc-icj",
@@ -54,6 +54,15 @@
           "dek": "The lawsuits against the PA and PLO worldwide — the revived US terror judgments, the clearance-revenue deductions, and the audits that decide both."},
    "ar": {"name": "ملف الدعاوى القضائية",
           "dek": "الدعاوى ضد السلطة والمنظمة حول العالم — أحكام الإرهاب الأميركية المستعادة، واقتطاعات المقاصة، والتدقيقات التي تحسم الاثنين."}
+  },
+  {
+   "slug": "gaza-roadmap",
+   "pattern": "roadmap|board of peace|kushner|mladenov|خريطة الطريق|مجلس السلام|كوشنر|ملادينوف",
+   "min": 3,
+   "en": {"name": "The Gaza Roadmap",
+          "dek": "The fifteen-point plan and the second phase that has not begun — the Cairo rounds, the Board of Peace, Israel's refusal, and what each move changes on the ground."},
+   "ar": {"name": "ملف خريطة طريق غزة",
+          "dek": "خطة النقاط الخمس عشرة والمرحلة الثانية التي لم تبدأ — جولات القاهرة، ومجلس السلام، ورفض إسرائيل، وما تغيّره كل خطوة على الأرض."}
   }
  ]
 }

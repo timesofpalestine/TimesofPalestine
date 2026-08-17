@@ -1,10 +1,10 @@
 {
   "comment": "Markets watch fallback (owner directive 2026-08-11). When the live Al-Quds fetch fails (PEX publishes no API), the strip renders this value with its date. The daily editor refreshes it each cycle from pex.ps / Investing.com PLE — always the latest CLOSE, always dated, never invented.",
   "alquds": {
-    "level": 670.56,
-    "date": "2026-08-10",
-    "source": "Palestine Exchange"
+    "level": 673.7,
+    "date": "2026-08-16",
+    "source": "Palestine Exchange (session report)"
   },
-  "lastChecked": "2026-08-16",
-  "lastCheckedNote": "Daily-editor sweep 2026-08-16: pex.ps returned HTTP 403 and Investing.com's PLE page was serving a 2025 quote; no session close later than 2026-08-10 could be verified against an Arabic-language exchange report. Value left at the last VERIFIED close rather than replaced with an unconfirmed number. Verified run this month: 648.69 (Aug 4), 664.06 (Aug 9), 670.56 (Aug 10) — Raya Media Network daily exchange reports."
+  "lastChecked": "2026-08-17",
+  "lastCheckedNote": "Daily-editor sweep 2026-08-17: Sunday 16 August close carried at 673.70 (+0.21%, +1.41 points) on turnover of $313,268, 136,987 shares and 89 deals, from the exchange's session report on the WAFA-fed Arabic wire. pex.ps still returns HTTP 403 to server-side clients and urdupoint 403s the same way, so that close was read through the search index rather than fetched directly; the newest close verified by direct fetch is 675.12 on 2026-08-12 (Raya Media Network daily exchange report). Verified run this month: 648.69 (Aug 4), 664.06 (Aug 9), 670.56 (Aug 10), 675.12 (Aug 12), 673.70 (Aug 16). Nothing invented; every level carries its date."
 }
