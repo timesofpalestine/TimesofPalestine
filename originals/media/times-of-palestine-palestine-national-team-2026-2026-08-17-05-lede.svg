@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Palestine reach the 2027 Asian Cup without a home ground</title>
+<desc id="dsc">A ghosted football pitch represents the Faisal al-Husseini International Stadium in al-Ram, crossed by a red band reading "No home match since October 2019". A panel lists the neutral hosts — Qatar, Jordan, Kuwait, Malaysia — and a footer gives the opening fixture: 7 January 2027 in Riyadh, Palestine versus Saudi Arabia, Group A.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="78" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="3.4" fill="#c7a86b">TIMES OF PALESTINE · ASIAN CUP 2027</text>
+
+<text x="90" y="142" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Palestine reach the Asian Cup</text>
+<text x="90" y="194" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">without a home ground</text>
+<text x="90" y="240" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#59a97d" text-anchor="start">فلسطين إلى كأس آسيا بلا ملعب في الوطن</text>
+
+<line x1="90" y1="266" x2="1540" y2="266" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- LEFT: the unused home ground -->
+<text x="90" y="312" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" letter-spacing="2" fill="#c7a86b">FAISAL AL-HUSSEINI STADIUM · AL-RAM</text>
+<text x="90" y="344" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="start">ملعب فيصل الحسيني الدولي — الرام</text>
+
+<g stroke="#59a97d" stroke-width="2.5" fill="none" opacity="0.55">
+<rect x="90" y="376" width="670" height="300" stroke-dasharray="12 9"/>
+<line x1="425" y1="376" x2="425" y2="676" stroke-dasharray="12 9"/>
+<circle cx="425" cy="526" r="56" stroke-dasharray="10 8"/>
+<rect x="90" y="446" width="86" height="160" stroke-dasharray="10 8"/>
+<rect x="674" y="446" width="86" height="160" stroke-dasharray="10 8"/>
+<rect x="90" y="486" width="34" height="80" stroke-dasharray="8 7"/>
+<rect x="726" y="486" width="34" height="80" stroke-dasharray="8 7"/>
+</g>
+<circle cx="425" cy="526" r="17" fill="#f2eee8" opacity="0.12"/>
+
+<rect x="90" y="500" width="670" height="54" fill="#8a1f2d"/>
+<text x="425" y="536" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" letter-spacing="1.5" fill="#f2eee8">NO HOME MATCH SINCE OCTOBER 2019</text>
+
+<text x="90" y="716" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">First home match on Palestinian soil: 26 October 2008, v Jordan</text>
+<text x="90" y="748" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">Never beaten there in a competitive fixture</text>
+
+<!-- RIGHT: neutral venues -->
+<line x1="800" y1="290" x2="800" y2="748" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="840" y="312" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" letter-spacing="2" fill="#c7a86b">HOME FIXTURES STAGED ABROAD</text>
+<text x="840" y="344" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="start">مبارياته على أرضه تُقام في الخارج</text>
+
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">
+<circle cx="856" cy="410" r="9" fill="#59a97d"/><text x="890" y="420">Qatar</text>
+<circle cx="856" cy="470" r="9" fill="#59a97d"/><text x="890" y="480">Jordan</text>
+<circle cx="856" cy="530" r="9" fill="#59a97d"/><text x="890" y="540">Kuwait</text>
+<circle cx="856" cy="590" r="9" fill="#59a97d"/><text x="890" y="600">Malaysia</text>
+</g>
+<g font-family="Cairo,Arial,sans-serif" font-size="28" fill="#c7a86b" text-anchor="start">
+<text x="1180" y="420">قطر</text>
+<text x="1180" y="480">الأردن</text>
+<text x="1180" y="540">الكويت</text>
+<text x="1180" y="600">ماليزيا</text>
+</g>
+
+<line x1="840" y1="632" x2="1540" y2="632" stroke="#3a3b3f" stroke-width="2"/>
+<text x="840" y="672" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">August 2024: FIFA rejects al-Ram for World Cup qualifiers.</text>
+<text x="840" y="702" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">September 2024: conditional approval, logistics unresolved.</text>
+<text x="840" y="738" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b">PFA: “our right to play in Jerusalem”</text>
+
+<!-- FOOTER: the fixture -->
+<rect x="90" y="776" width="1450" height="86" fill="#ffffff0d" stroke="#286344" stroke-width="2"/>
+<rect x="90" y="776" width="10" height="86" fill="#c7a86b"/>
+<text x="124" y="814" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" fill="#f2eee8">7 JANUARY 2027 · RIYADH — PALESTINE v SAUDI ARABIA, GROUP A OPENER</text>
+<text x="124" y="848" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#59a97d" text-anchor="start">7 يناير 2027 — الرياض: فلسطين ضد السعودية في المجموعة الأولى</text>
+
+<text x="90" y="886" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: AFC, WAFA, ESPN, Inside World Football, Doha News, Al Jazeera</text>
+</svg>
