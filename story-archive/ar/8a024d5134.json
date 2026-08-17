@@ -7,6 +7,12 @@
    "name": "تايمز أوف فلسطين",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://www.pbc.ps/878-150",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": false
   }
  ],
  "date": "2026-08-16T12:01:10+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "8a024d5134",
- "score": 86.28,
+ "score": 86.25999999999999,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
