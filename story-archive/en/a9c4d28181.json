@@ -9,9 +9,15 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/fire-breaks-out-town-near-jerusalem-following-israeli-military-raid",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-town-bulldoze-palestinian-land-west-ramallah",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-demolish-palestinian-home-structures-in-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
    "verified": true
   }
  ],
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "a9c4d28181",
- "score": 62.73,
+ "score": 62.51,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
