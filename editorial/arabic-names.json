@@ -256,6 +256,33 @@
         "كريات جات"
       ],
       "verified": "aljazeera.net encyclopedia entry on the CMCC + ultrapal, 2026-08-17"
+    },
+    {
+      "latin": "Donald Trump",
+      "ar": "ترامب",
+      "wrong": [
+        "ترامป",
+        "ترامپ"
+      ],
+      "verified": "الإملاء المعتمد في البيت «ترامب» (استخدام الجزيرة نت)؛ الخاطئان محرفان دخيلان: ป تايلاندية (U+0E1B) وپ فارسية — ضبط 2026-08-17 بعد عنوان منشور حمل الحرف التايلاندي",
+      "note": "net catches homoglyph leaks; the foreign-script net below it catches every other script"
+    },
+    {
+      "latin": "Gisha (Israeli rights group)",
+      "ar": "جيشاه",
+      "wrong": [
+        "چيشاه"
+      ],
+      "verified": "موسوعة مدار للمصطلحات (جيشا/جيشاه), 2026-08-17"
+    },
+    {
+      "latin": "Abbas Araghchi (Iran FM)",
+      "ar": "عباس عراقجي",
+      "wrong": [
+        "عراقچي",
+        "عراقتشي"
+      ],
+      "verified": "aljazeera.net + aawsat usage «عراقجي», 2026-08-17 — الصيغة الفارسية عراقچی لا تُنشر"
     }
   ]
 }
