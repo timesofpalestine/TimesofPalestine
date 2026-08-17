@@ -1,0 +1,38 @@
+{
+ "brief": "Loui Ridi, a Palestinian-American, is traveling from the United States to Qusra in the West Bank, where his family's home has been encircled by Israeli settlers, Al Jazeera English reported. The visit marks a return to property that remains accessible only through territory now controlled by settler presence.\n\nRidi's journey occurs amid escalating tensions over land access in the West Bank. Israeli settlers have established a perimeter around his family's residence, restricting movement to and from the property. The situation reflects patterns of settlement expansion that have complicated Palestinian land ownership and residence in contested areas of the occupied territory.",
+ "cat": "diaspora",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/17/08-17-26-pal-american-qusra-sv-mp4?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://t.me/maannews/36250",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-17T03:41:30+00:00",
+ "dek": "Palestinian-American Loui Ridi is flying from the US to Qusra, where Israeli settlers have encircled his family’s home.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1786937980.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/17/08-17-26-pal-american-qusra-sv-mp4?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/17/08-17-26-pal-american-qusra-sv-mp4?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0bad71a56f",
+ "score": 49.58,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinian-American returns to West Bank home surrounded by Israeli settlers"
+}
