@@ -13,6 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/8/17/%d8%b9%d8%a7%d8%ac%d9%84-%d8%ad%d9%85%d8%a7%d8%b3-%d8%a7%d9%84%d8%ad%d9%8a%d8%a9-%d8%a3%d8%b7%d9%84%d8%b9-%d9%82%d8%a7%d8%af%d8%a9-%d9%88%d9%85%d9%85%d8%ab%d9%84%d9%8a?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-17T20:36:00+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "07df7c1542",
- "score": 48.79,
+ "score": 48.59,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
