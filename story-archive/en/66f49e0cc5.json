@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/video/inside-story/2026/8/16/what-could-stop-israeli-settler-attacks-on-palestinians?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/settler-violence-and-settlement-expansion-israels-tools-to-impose-annexation-of-the-west-bank",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-16T21:54:58+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "66f49e0cc5",
- "score": 43.09,
+ "score": 42.98,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

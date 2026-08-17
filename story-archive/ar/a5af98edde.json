@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.net/news/2026/8/17/%d8%a7%d9%84%d8%b6%d9%81%d8%a9-%d8%a7%d8%b9%d8%aa%d9%82%d8%a7%d9%84-%d8%a7%d9%82%d8%aa%d8%ad%d8%a7%d9%85-%d9%87%d8%af%d9%85-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/315572",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-17T04:27:03+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "a5af98edde",
- "score": 47.6,
+ "score": 47.49,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
