@@ -700,6 +700,62 @@
    "en": "Gaza's chronic patients lose clinics to the restricted-access zone",
    "ar": "مرضى غزة المزمنون يفقدون عياداتهم داخل منطقة الوصول المقيّد",
    "q": "OCHA put Gaza's restricted-access zone at 64.9 per cent of the Strip by June 2026, up from about 53 per cent at the October ceasefire. Report the health consequence with a solutions lens: which dialysis units, cancer and diabetes clinics and pharmacies now sit east of the Yellow Line, how many patients that strands (attribute to the health ministry, WHO and MSF by statement and date), and what the workarounds are — mobile units, relocated dialysis chairs, medicine runs, telemedicine consults. Name what is delivered, funded, underway and still needed."
+  },
+  {
+   "id": "israelipress-hebrew-annexation-debate",
+   "cat": "israelipress",
+   "en": "Israeli commentators argue over annexation before the October vote",
+   "ar": "معلقون إسرائيليون يتجادلون حول الضم قبل انتخابات أكتوبر",
+   "q": "Read the Hebrew commentariat on annexation as an election issue: who in Ynet, Maariv, Israel Hayom and Haaretz argues for sovereignty over Area C, who warns of the cost, and which party platforms carry it. Attribute every argument to its named author and outlet, label think tanks (INSS, JISS, Misgav) with their lean, and keep house language — the occupied West Bank, never Judea and Samaria outside a quote. Frame the Palestinian stake: what each position would do to permits, land registration and movement."
+  },
+  {
+   "id": "israelipress-security-sourcing-audit",
+   "cat": "israelipress",
+   "en": "Israeli newsrooms audit their own anonymous security sourcing",
+   "ar": "غرف أخبار إسرائيلية تراجع اعتمادها على مصادر أمنية مجهولة",
+   "q": "Ynet's self-audit counted alarming stories sourced to anonymous security officials, most of which resurfaced in Netanyahu's speeches. Report the media-accountability file: which claims were published, which were later contradicted, what the Press Council and the army spokesman say about access and embargoes (the Qusra access complaint is the recent case), and what it means for Palestinian readers reading Israeli reporting about their own towns. Attribute each item to author, outlet and date."
+  },
+  {
+   "id": "uspress-appropriations-israel-aid-lines",
+   "cat": "uspress",
+   "en": "Congress writes Israel's aid lines into the next spending bill",
+   "ar": "الكونغرس يكتب بنود المساعدات لإسرائيل في موازنته المقبلة",
+   "q": "Track the appropriations and NDAA text as the American papers and think tanks report it: the military-aid lines, the UNRWA restrictions, any Gaza reconstruction money, and the Iran-war supplemental competing with all of it. Name each outlet and author inline, label think tanks with their lean (WINEP, FDD, Quincy, Arab Center DC), and convert every figure into what it funds or withholds on the ground. Attribute all numbers to the bill text or a named official."
+  },
+  {
+   "id": "uspress-recognition-washington-reaction",
+   "cat": "uspress",
+   "en": "Washington's papers weigh what recognition of Palestine changed",
+   "ar": "صحف واشنطن تقيس ما غيّرته الاعترافات بدولة فلسطين",
+   "q": "A year after the wave of recognitions, read how the American press and Washington's think tanks assess them ahead of UNGA week: what changed in law, trade, embassies and aid, what the administration did in response, and which arguments each shop makes. One source piece per story, opinion attributed to its author, think tanks labelled. Pair with the paper's own recognition audit rather than repeating it."
+  },
+  {
+   "id": "bitchat-mesh-blackout-drill",
+   "cat": "bitcoin",
+   "en": "Palestinian users test mesh messaging for the next blackout",
+   "ar": "مستخدمون فلسطينيون يجرّبون الشبكات المتشابكة لانقطاع الإنترنت المقبل",
+   "q": "Practical bitchat reporting for a connectivity war: what the current release adds, how the mesh behaves in dense urban blocks and camps, battery cost, range in real tests worldwide, and documented disaster and blackout deployments. Every piece carries the official-download-only guidance (App Store 'bitchat mesh', id 6748219622, Permissionless Technology; the permissionlesstech GitHub APK for Android; Google Play hosts impostors). The ecash/Cashu side stays with the Financial Freedom desk."
+  },
+  {
+   "id": "bitcoin-remittance-costs-palestine",
+   "cat": "bitcoin",
+   "en": "Palestinian families count what sending money home costs them",
+   "ar": "عائلات فلسطينية تحسب كلفة إرسال المال إلى الوطن",
+   "q": "Report the actual cost of moving money into the West Bank and Gaza: bank and exchange-house spreads, transfer fees, the shekel-dollar conversion, delays and refusals, and the compliance rules that produce them, attributed to the Palestine Monetary Authority, World Bank data and named operators with dates. Then the alternatives, described plainly and without advocacy — mobile wallets, stablecoins, ecash — with the legal and volatility risks stated in the same breath. No investment advice, ever."
+  },
+  {
+   "id": "news-week-in-numbers",
+   "cat": "news",
+   "en": "Palestine's week in numbers holds the record institutions publish",
+   "ar": "أسبوع فلسطين بالأرقام يجمع ما تنشره المؤسسات",
+   "q": "A weekly numbers piece built only from published institutional records: OCHA's displacement and settler-violence counts, the health ministry's casualty and hospital figures, the prisoners' institutions' tallies, PCBS economic releases and the Palestine Exchange close. Every figure carries the body that published it and the date, movements are compared with the previous week's release, and nothing is estimated. Say plainly which institution did not publish that week."
+  },
+  {
+   "id": "news-crossings-and-permits-weekly",
+   "cat": "news",
+   "en": "Crossings and permits decide who moves in Palestine this week",
+   "ar": "المعابر والتصاريح تحدد من يتحرك في فلسطين هذا الأسبوع",
+   "q": "The movement file as a standing news service: which crossings opened and for whom (Rafah, Kerem Shalom, Allenby, the West Bank checkpoints), the weekly medical-exit and student-exit quotas, permit approvals and refusals, and the closures announced for holidays or operations. Attribute each figure to COGAT statements, WHO and OCHA updates, the crossings authority or named officials, with dates, and report the human consequence in wire-service register."
   }
  ]
 }

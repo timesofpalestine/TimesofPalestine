@@ -94,6 +94,14 @@ land in a specific window.
   - ✅ week of Aug 10–16 — `lahore-gaza-dentistry-graduates-2026.*`
     (2026-08-10): the 51 al-Azhar dentistry students who finished their
     degrees at the University of Lahore under the G-HOPE scholarships.
+  - ✅ week of Aug 17–23 — `saher-alghorra-pulitzer-2026-08-17.*`
+    (2026-08-17): the photographer from Gaza City who bought his first
+    camera in 2017 and won the 2026 Pulitzer for breaking news photography
+    on 4 May, written in the celebratory register the features order
+    requires — the Lucie Impact Award (2023), the ICRC Humanitarian Visa
+    d'or (2025) and the Prix Bayeux first prize for war photography beside
+    it, with the post-prize attacks answered by the New York Times's own
+    finding that they were baseless.
 - **Arabic-first commissioning:** 2–3 originals per month reported for the
   Arabic reader first (Arab Support and Her Story are the natural homes),
   then rendered into English.
@@ -177,6 +185,13 @@ land in a specific window.
   and Sama Abdulhadi Arabic editions, the PA-absence Arabic edition, the
   Graham memory-debate piece and the telemedicine report. Baseline before
   the pass: 173 flagged files.
+  Worked 2026-08-17: the sixteen worst-flagged files, 108 paragraphs — the
+  East Jerusalem vote report, both editions of today's national-team piece
+  and of the Ceuta narrative and Area C demolitions files, the
+  reconstruction-money tracker, the population-transfer and mental-health
+  Arabic editions, the dialysis report, the financial-freedom piece, the
+  Elyanna Arabic edition, the donor-aid and crossings reports and the
+  Board of Peace watch. Baseline before the pass: 168 flagged files.
 
 - ✅ **Arabic section starvation fixed structurally 2026-08-14.** `ar/opinion`
   (34h) and `ar/humans` (44h) went stale on most cycles for a simple reason:

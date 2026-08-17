@@ -203,6 +203,33 @@
         "ياسمين ابو حسون"
       ],
       "verified": "حسابها الرسمي + سيدتي + زاد الأردن (أبو حسّان), 2026-08-16"
+    },
+    {
+      "latin": "Saher Alghorra (Pulitzer photographer)",
+      "ar": "ساهر الغرة",
+      "wrong": [
+        "ساهر الغرا",
+        "صاهر الغرة"
+      ],
+      "verified": "aljazeera.net + alquds.com + palinfo, 2026-08-17"
+    },
+    {
+      "latin": "Hana Tahayneh (administrative detainee, Jenin)",
+      "ar": "هناء طحاينة",
+      "wrong": [
+        "هناء طحاينه",
+        "هناء طحاينا"
+      ],
+      "verified": "raya.ps + pnn.ps coverage of the Commission of Detainees' statement, 2026-08-17"
+    },
+    {
+      "latin": "Khalil al-Hayya",
+      "ar": "خليل الحية",
+      "wrong": [
+        "خليل الحيا",
+        "خليل حية"
+      ],
+      "verified": "aljazeera.net + wafa.ps, 2026-08-17"
     }
   ]
 }
