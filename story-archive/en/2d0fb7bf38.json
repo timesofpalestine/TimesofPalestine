@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli forces raided a hospital in Bethlehem, the Shehab wire agency reported. The operation occurred in the occupied West Bank city, though specific details about which hospital was targeted and the stated purpose of the raid remained unclear from initial reports.\n\nThe incursion adds to a pattern of military operations affecting Palestinian healthcare facilities in the West Bank. Such raids have periodically disrupted medical services and raised international concern over access to healthcare during periods of heightened Israeli-Palestinian tensions. The circumstances surrounding this particular operation and any casualties or damage were not immediately documented.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.com/post/162366/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%82%D8%AA%D8%AD%D9%85-%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89-%D9%81%D9%8A-%D8%A8%D9%8A%D8%AA-%D9%84%D8%AD%D9%85",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/fire-breaks-out-town-near-jerusalem-following-israeli-military-raid",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-17T18:30:00+00:00",
+ "dek": "Israeli forces raided a hospital in Bethlehem, the Shehab wire agency reported. The operation occurred in the occupied West Bank city, though specific details about which hospital was targeted and the stated purpose of…",
+ "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/08/iZ3pR.jpg?v=1",
+ "lang": "en",
+ "link": "https://shehabnews.com/post/162366/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%82%D8%AA%D8%AD%D9%85-%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89-%D9%81%D9%8A-%D8%A8%D9%8A%D8%AA-%D9%84%D8%AD%D9%85",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Shehab Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.com/post/162366/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%82%D8%AA%D8%AD%D9%85-%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89-%D9%81%D9%8A-%D8%A8%D9%8A%D8%AA-%D9%84%D8%AD%D9%85"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2d0fb7bf38",
+ "score": 49.88,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "Israeli forces raid Bethlehem hospital"
+}
