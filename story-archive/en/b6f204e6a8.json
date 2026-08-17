@@ -1,0 +1,56 @@
+{
+ "brief": "The international community has issued widespread condemnation of Israeli settler violence targeting Palestinians, Al Jazeera English reported. The denouncements underscore mounting concern over escalating confrontations in occupied territories, where Palestinian communities face attacks from settlers.\n\nThe condemnations reflect a pattern of tensions that have drawn scrutiny from governments and international organizations monitoring the situation. Specific incidents, casualty figures, and formal statements from individual nations and bodies remain to be detailed as responses continue to emerge from capitals worldwide.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/17/global-condemnation-of-israeli-settler-violence-against-palestinians?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/settler-violence-and-settlement-expansion-israels-tools-to-impose-annexation-of-the-west-bank",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israeli-settlers-paralyse-palestinian-nurse-west-bank-shooting",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/colonizers-escalate-attacks-across-occupied-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/pope-calls-end-west-bank-violence-against-palestinians",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-17T14:01:51+00:00",
+ "dek": "Global condemnation of Israeli settler violence against Palestinians.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/settler-violence-Horizontal-thumb-1786975126.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/17/global-condemnation-of-israeli-settler-violence-against-palestinians?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/17/global-condemnation-of-israeli-settler-violence-against-palestinians?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b6f204e6a8",
+ "score": 49.59,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "World condemns Israeli settler violence against Palestinians"
+}

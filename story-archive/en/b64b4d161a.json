@@ -1,0 +1,32 @@
+{
+ "brief": "A vessel named Kate departed Bristol on Tuesday carrying twelve people, including its captain, in an attempt to break Israel's naval siege of Gaza and deliver humanitarian aid to the territory. The departure marks the latest effort by activists to circumvent the blockade, according to Al Jazeera English. The boat's journey comes amid persistent shortages of food, medicine, and fuel across Gaza.\n\nPrevious attempts to deliver aid by sea have encountered Israeli interception. The blockade, maintained by Israel since 2007, has restricted the flow of goods and supplies into the Palestinian territory. The Kate's mission reflects ongoing efforts by humanitarian organizations and activists to find alternative routes for delivering assistance to civilians in Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/17/boat-sets-sail-from-bristol-aiming-to-break-israels-siege-of-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-17T14:12:08+00:00",
+ "dek": "Twelve people including the captain are on board the vessel named Kate, in the latest attempt to deliver aid.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/%D9%81%D8%B1%D8%A7%D9%86%D9%83-%D8%B1%D9%88%D9%85%D8%A7%D9%86%D9%88-%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1-%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9-%D9%86%D8%AA-%D9%A3-1786972046.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/17/boat-sets-sail-from-bristol-aiming-to-break-israels-siege-of-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/17/boat-sets-sail-from-bristol-aiming-to-break-israels-siege-of-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b64b4d161a",
+ "score": 49.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Aid boat departs Bristol for Gaza amid Israeli blockade"
+}
