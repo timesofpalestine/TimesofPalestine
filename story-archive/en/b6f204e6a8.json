@@ -19,18 +19,6 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/israeli-settlers-paralyse-palestinian-nurse-west-bank-shooting",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/palestinian-americans-journey-his-west-bank-home-under-settler-siege",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-08-17T14:01:51+00:00",
@@ -48,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "b6f204e6a8",
- "score": 46.65,
+ "score": 46.29,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
