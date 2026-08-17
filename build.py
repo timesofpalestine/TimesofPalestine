@@ -1635,6 +1635,15 @@ _AR_DICTION = [
      "«تم/تمت» مع المصدر ركيكة — استعمل الفعل المبني للمعلوم"),
     (re.compile(r"يُ?ذكر أن|تجدر الإشارة|الجدير بالذكر|ومن الجدير"),
      "حشو صحفي آلي — احذفه وادخل في المعلومة"),
+    # Foreign-script homoglyphs (owner report 2026-08-17: a published title
+    # carried «ترامป» with THAI ป U+0E1B for ب). Model output sometimes
+    # substitutes a lookalike letter from another script; no Arabic news
+    # sentence legitimately contains Thai, CJK, Cyrillic, Devanagari, Kana,
+    # Hangul — or the Persian-only letters پ/چ/ژ/گ (house style writes
+    # foreign names with Arabic letters: ترامب never ترامپ).
+    (re.compile(r"[฀-๿ऀ-ॿЀ-ӿ぀-ヿ"
+                r"一-鿿가-힯پچژگ]"),
+     "محرف من أبجدية أجنبية داخل النص العربي — استبدل الحرف الدخيل بحرف عربي"),
 ]
 _EN_DICTION = [
     (re.compile(r"\bdelv(?:e|es|ed|ing)\b", re.I),
