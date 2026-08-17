@@ -1,0 +1,44 @@
+{
+ "brief": "Jared Kushner, US envoy, said the United States will not permit Gaza's reconstruction until Hamas disarms, according to Al Jazeera English. He added that Washington will not \"restrict Israel's right to defend itself\" as Israeli strikes on Gaza continue.\n\nKushner's statement links postwar recovery efforts in the Palestinian territory to political demands regarding the armed group's weapons capabilities. The remarks reflect the Trump administration's position on conditions for rebuilding Gaza following the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/17/we-will-not-allow-gaza-to-be-rebuilt-until-hamas-disarms-kushner-says?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/aug/17/netanyahu-kushner-talks-gaza-israel-us-board-of-peace",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-could-disarm-month-kushner-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-17T23:25:17+00:00",
+ "dek": "Trump's son-in-law and envoy says US will not 'restrict Israel's right to defend itself' as strikes on Gaza continue.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/AP26213324967077-1787000120.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/17/we-will-not-allow-gaza-to-be-rebuilt-until-hamas-disarms-kushner-says?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/17/we-will-not-allow-gaza-to-be-rebuilt-until-hamas-disarms-kushner-says?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e772ce3509",
+ "score": 63.9,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Kushner ties Gaza reconstruction to Hamas disarmament"
+}
