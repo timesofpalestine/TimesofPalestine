@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/settler-violence-and-settlement-expansion-israels-tools-to-impose-annexation-of-the-west-bank",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/recap-latest-developments-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-17T07:55:35+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "a7acf419e8",
- "score": 85.71,
+ "score": 85.68,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
