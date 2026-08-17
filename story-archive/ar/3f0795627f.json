@@ -1,0 +1,44 @@
+{
+ "brief": "أفادت إذاعة جيش الاحتلال بأن عبوة استهدفت عناصر من ميليشيا يشغلها الجيش الإسرائيلي في قطاع غزة، ما أسفر عن إصابة عدد منهم. ولم تحدد الإذاعة في بيانها عدد المصابين أو درجات خطورة الإصابات التي لحقت بهم.\n\nيأتي الحادث في سياق العمليات المتكررة ضد القوات الإسرائيلية والفصائل التي تعمل بتنسيق معها داخل قطاع غزة، حيث يشهد الإقليم منذ أكثر من عام توترات أمنية متواصلة وعمليات مقاومة متعددة الأشكال.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82385",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/390611",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/729694",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-17T15:02:53+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82385",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3f0795627f",
+ "score": 63.73,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "عبوة تصيب عناصر ميليشيا إسرائيلية في غزة"
+}
