@@ -1,0 +1,32 @@
+{
+ "brief": "A vessel has left Bristol as part of a campaign to deliver aid to Gaza and challenge Israel's blockade, Al Jazeera English reported. The flotilla aims to reach the territory despite the ongoing restrictions on maritime access imposed by Israeli authorities. The departure marks the latest in a series of attempts by activists and aid organizations to breach the restrictions.\n\nThe blockade has limited the flow of supplies and restricted movement in and out of Gaza for years. Maritime aid missions have periodically attempted to reach the coastal territory, drawing international attention to conditions on the ground. Israel maintains the blockade citing security concerns, while humanitarian groups argue it has created a severe shortage of essential goods and services across Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/17/gaza-flotilla-sets-sail-from-the-uk-in-bid-to-break-israeli-siege?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-17T19:32:06+00:00",
+ "dek": "A boat has left Bristol as part of a wider campaign to break Israel’s blockade and deliver aid to Gaza.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/Screenshot-2026-08-17-at-20.27.54-1786995028.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/17/gaza-flotilla-sets-sail-from-the-uk-in-bid-to-break-israeli-siege?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/17/gaza-flotilla-sets-sail-from-the-uk-in-bid-to-break-israeli-siege?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b260c3c407",
+ "score": 49.45,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Boat departs UK to challenge Israeli blockade of Gaza"
+}

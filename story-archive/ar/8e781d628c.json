@@ -1,0 +1,32 @@
+{
+ "brief": "أفادت قناة غزة الآن بدخول طائرة استطلاع أجواء وسط مدينة غزة. ولم توضح القناة في تنويهها نوع الطائرة أو جهة تشغيلها، كما لم تشر إلى الأهداف المحتملة لعملية الاستطلاع أو مدة تحليقها فوق المنطقة.\n\nيأتي هذا التنويه في سياق التوترات الأمنية المستمرة في القطاع، حيث تشهد أجواء غزة نشاطاً متكرراً لطائرات الاستطلاع، غير أن تفاصيل إضافية عن هذه الحادثة لم تتوفر حتى الآن.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82386",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-17T19:44:40+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82386",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8e781d628c",
+ "score": 49.55,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "طائرة استطلاع تحوم فوق وسط مدينة غزة"
+}
