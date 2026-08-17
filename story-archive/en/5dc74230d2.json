@@ -1,0 +1,32 @@
+{
+ "brief": "The Hanover Institute for Public Policy looks like any other research shop writing about Israel and Palestine. Responsible Statecraft reports that it is an advertising product paid for by the Israeli government.\n\nNick Cleveland-Stout wrote on Monday for the magazine of the Quincy Institute — the Washington think tank that argues for American military restraint — that Hanover was created by the production firm Piro, Inc. on behalf of the Israeli Government Advertising Agency.\n\nPiro received $900,000 from the Israeli government, subcontracted through the French media group Havas. A small disclaimer on the site does disclose the affiliation for anyone who looks for it.\n\nSince 6 August the institute has published more than a hundred reports without bylines, dressed as neutral academic inquiry, with footnotes and tables of contents. Their titles include \"Does AIPAC Use 'Dark Money' in Elections?\", \"Is the IDF the World's Most Moral Army?\" and \"Is Israel Carrying out a Deliberate Campaign of Starvation in Gaza?\"\n\n## The audience is not human\n\nThe papers are not really written for readers. Piro sells what it calls AI story optimisation — material engineered for the way chatbots judge which sources are credible. Its co-founder Daniel Rosenberg framed the pitch as a question of making sure \"AI knows how to tell them\".\n\nCleveland-Stout ran twelve of the reports through the detection tool GPTZero, which flagged eleven as machine-written with high confidence.\n\nThe Palestinian stake is direct. Starvation in Gaza is documented by UN agencies, and the question of whether it was deliberate sits in front of the International Court of Justice. A hundred anonymous papers built to teach chatbots that the question is open are an attempt to move the answer where no court can review it.\n\nThe article carried no response from Israeli officials.",
+ "cat": "uspress",
+ "corroborating_sources": [
+  {
+   "article": "original:hanover-fake-think-tank-2026-08-17.en",
+   "name": "Times of Palestine",
+   "url": "",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-17T07:44:00+00:00",
+ "dek": "The Hanover Institute for Public Policy looks like any other research shop writing about Israel and Palestine. Responsible Statecraft reports that it is an advertising product paid for by the Israeli government.",
+ "image": "/media/times-of-palestine-cover-uspress-b.svg",
+ "lang": "en",
+ "link": "original:hanover-fake-think-tank-2026-08-17.en",
+ "max_age_hours": 336.0,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": true,
+ "pid": "5dc74230d2",
+ "score": 87.89,
+ "source": "Times of Palestine",
+ "source_id": "top-original",
+ "source_url": "",
+ "title": "Quincy Institute finds Israel's government funded a fake American think tank"
+}

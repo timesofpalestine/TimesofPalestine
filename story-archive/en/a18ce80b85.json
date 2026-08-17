@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/child-dies-of-injuries-as-israeli-attacks-continue-in-gaza",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/remains-palestinian-teen-shot-israeli-forces-recovered-gaza",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-16T22:33:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "a18ce80b85",
- "score": 58.02,
+ "score": 57.13,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",

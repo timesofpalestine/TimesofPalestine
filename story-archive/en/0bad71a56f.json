@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/8/17/08-17-26-pal-american-qusra-sv-mp4?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/recap-latest-developments-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-17T03:41:30+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "0bad71a56f",
- "score": 46.99,
+ "score": 46.7,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
