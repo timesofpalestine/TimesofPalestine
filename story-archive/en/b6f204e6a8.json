@@ -25,6 +25,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/us-palestinian-says-terrified-he-returns-property-besieged-settlers",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-17T14:01:51+00:00",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "b6f204e6a8",
- "score": 48.66,
+ "score": 48.2,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

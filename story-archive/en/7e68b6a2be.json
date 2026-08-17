@@ -7,12 +7,6 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
-  },
-  {
-   "article": "https://www.theguardian.com/news/audio/2026/aug/17/can-trumps-peace-plan-for-gaza-be-saved-the-latest",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": false
   }
  ],
  "date": "2026-08-17T12:40:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": true,
  "pid": "7e68b6a2be",
- "score": 85.68,
+ "score": 85.22,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
