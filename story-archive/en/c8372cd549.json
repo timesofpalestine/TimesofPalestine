@@ -6,13 +6,7 @@
    "article": "https://www.al-monitor.com/originals/2026/08/uae-billionaire-habtoor-takes-aim-ben-gvirs-gaza-rhetoric",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/uae-billionaire-questions-peace-israel-after-ben-gvir-calls-nightly-killing-palestinians",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-17T16:16:17+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "c8372cd549",
- "score": 61.7,
+ "score": 61.49,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
