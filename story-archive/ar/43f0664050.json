@@ -1,0 +1,38 @@
+{
+ "brief": "أفادت مصادر محلية بأن قوات الاحتلال الإسرائيلي اقتحمت بلدة عقابا شمال طوباس في الضفة الغربية، حيث داهمت عناصر القوات منزلاً خلال العملية. ولم تُعلن السلطات الإسرائيلية رسمياً تفاصيل عن الهدف من الاقتحام أو نطاق العملية.\n\nتشهد بلدة عقابا، الواقعة في منطقة طوباس بالضفة الغربية المحتلة، عمليات اقتحام متكررة من قِبل الجيش والقوات الأمنية الإسرائيلية. وتأتي هذه العملية ضمن سلسلة من الاقتحامات التي تنفذها قوات الاحتلال في مناطق الضفة الغربية بشكل منتظم.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/QudsN/729787",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/315739",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-17T22:42:56+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/QudsN/729787",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "43f0664050",
+ "score": 63.86,
+ "source": "شبكة قدس · تيليغرام",
+ "source_id": "tg-qudsn",
+ "source_url": "https://t.me/QudsN",
+ "title": "قوات الاحتلال تقتحم بلدة عقابا شمال طوباس"
+}
