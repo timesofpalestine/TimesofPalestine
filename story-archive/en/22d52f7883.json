@@ -6,31 +6,25 @@
    "article": "https://www.maannews.net/news/2167158.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-forces-demolish-homes-water-wells-near-hebron",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-18T07:25:05+00:00",
  "dek": "",
- "image": "https://cdn4.telesco.pe/file/uwLHHQlsVUxEdrlqO6G_g34sU5_kUTsdKh1xtBSWnvPPdancpBlgUR2tVmne5asWp4UOCmd4pLy9f3kB0_bSG5OVY-FlNUJS10bQAHWOfPfjFaaS2dSwb-xSc1LaaHaVA7YjvPCgZtfJBpNFRKOs_JHbC8MSX-gPH5ZZUwgg0nJXVgPBl1fmRdgyBD1CC7Nnk6KiimN1tJuohsmLsqmpyGKbbwe1Uej_DEsFteHPI7owmAMwWtL8ssEwoTB-ygmUSYsarxVut_DTgxlHkSTJWGFnJ92W6JNrvZEk9Sc1aji_ZVIGHtLjN4nahLIN9gE3StCKqIl-FLaJAg8M6_GYgw.jpg",
+ "image": "/media/times-of-palestine-cover-westbank.svg",
  "lang": "en",
  "link": "https://www.maannews.net/news/2167158.html",
  "max_age_hours": 72,
  "media": {
-  "credit": "Maan Wire (EN)",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://www.maannews.net/news/2167158.html"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "22d52f7883",
- "score": 49.66,
+ "score": 49.44,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
