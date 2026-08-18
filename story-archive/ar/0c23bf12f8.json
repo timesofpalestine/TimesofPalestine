@@ -1,0 +1,44 @@
+{
+ "brief": "قوات الاحتلال الإسرائيلي شنّت قصفاً مدفعياً على مواقع في جنوب مدينة خانيونس بمحافظة الوسطى جنوب قطاع غزة، وفقاً للمركز الفلسطيني للإعلام. ولم يرد في البيان الأولي تفاصيل حول عدد القتلى أو الجرحى أو طبيعة المنشآت المستهدفة بالقصف.\n\nيأتي هذا الهجوم في سياق التصعيد العسكري المستمر في المحافظات الجنوبية، إذ تشهد خانيونس اشتباكات متكررة بين القوات الإسرائيلية والفصائل الفلسطينية المسلحة. وتُعتبر المدينة من أكثر المناطق تضررّاً من العمليات العسكرية الإسرائيلية منذ بداية الحرب الحالية على غزة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/315804",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/729847",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82388",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-18T09:00:07+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/vrXm2kJeii5i453YQ3etteVOiQrBoFKJi1zWWOEf4AI7Np21skx9mMUZKtF_lYbU4x5gZUmzecfMkfMfNiZH40ARzBZcyGh-cz--bnyy31sj_puuD0PFLIkt5EX5vKaG8otoGqV81ikKL-K47bY8Sqa0ZkI7r4OmWg8EXLglRUohVrFlRV5BRQwu1AGPoEamLxO7pdHWMy4ZR11oOJZax1vNJdWzArszDk0BLhzN8i8XnQrL5VtVgtVi0r-cl6YJszQ9miAdub7Gp5d0Lf473aIkow5V4OY7VIs7WVM5RiRufa35bvmQiO6lKlu5jAC1h6uK66eKh24FWYyjQbHmgA.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/315804",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/315804"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0c23bf12f8",
+ "score": 63.82,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قوات الاحتلال تقصف مواقع جنوب خانيونس"
+}
