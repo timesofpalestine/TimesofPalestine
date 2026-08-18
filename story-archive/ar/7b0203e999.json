@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://felesteen.news/post/185055/%D9%81%D8%B5%D8%A7%D8%A6%D9%84-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A9-%D8%AA%D8%AF%D9%8A%D9%86-%D9%85%D8%AC%D8%B2%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D9%8A%D9%86%D8%A7%D8%A1-%D9%88%D8%AA%D8%AA%D9%87%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D9%86%D8%B3%D9%81-%D8%AC%D9%87%D9%88%D8%AF-%D8%A7%D9%84%D8%AA%D9%87%D8%AF%D8%A6",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
    "article": "https://www.pbc.ps/87-120",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
@@ -17,7 +23,7 @@
  ],
  "date": "2026-08-18T17:24:28+00:00",
  "dek": "8 شهداء في قصف ومجزرة ميناء الصيادين بغزة عرف منهم : ١. عزالدين سالم ديب ٢. جهاد محمد حمدي المصدي ٣. محمد حمدي احمد المصري ٤. عصام محمد موسى مرتجى ٥. محمد فتحي حسين ناصر ٦. صامد سمير حرب ابو حبل",
- "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
  "lang": "ar",
  "link": "https://t.me/gazaalannet/82393",
  "max_age_hours": 72,
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "7b0203e999",
- "score": 60.55,
+ "score": 60.33,
  "source": "غزة الآن · تيليغرام",
  "source_id": "tg-gazanow",
  "source_url": "https://t.me/gazaalannet",

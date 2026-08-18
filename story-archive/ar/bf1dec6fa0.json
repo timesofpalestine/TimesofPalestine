@@ -6,7 +6,13 @@
    "article": "https://www.alquds.co.uk/%d9%85%d9%83%d8%aa%d8%a8-%d9%86%d8%aa%d9%86%d9%8a%d8%a7%d9%87%d9%88-%d9%82%d8%a8%d9%88%d9%84-%d8%b3%d9%88%d8%b1%d9%8a%d8%a7-%d8%a8%d9%86%d8%b4%d8%b1-%d9%82%d9%88%d8%a7%d8%aa-%d8%aa%d8%b1%d9%83%d9%8a",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185015/%D8%BA%D8%A7%D8%B1%D8%A7%D8%AA-%D9%8A%D8%B1%D8%AC%D8%AD-%D8%A3%D9%86%D9%87%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%AA%D8%B3%D8%AA%D9%87%D8%AF%D9%81-%D9%85%D8%B7%D8%A7%D8%B1-%D8%A3%D8%A8%D9%88-%D8%A7%D9%84%D8%B8%D9%87%D9%88%D8%B1-%D8%B4%D9%85%D8%A7%D9%84-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   },
   {
    "article": "https://t.me/Arabi21News/428252",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "bf1dec6fa0",
- "score": 49.43,
+ "score": 49.2,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",

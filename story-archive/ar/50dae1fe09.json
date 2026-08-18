@@ -6,7 +6,13 @@
    "article": "https://qudsn.co/post?id=217111&slug=%D9%85%D8%AC%D8%B2%D8%B1%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A8%D9%82%D8%B5%D9%81-%D9%85%D9%82%D9%87%D9%89-%D9%81%D9%8A-%D9%85%D9%8A%D9%86%D8%A7%D8%A1-%D8%BA%D8%B2%D8%A9%C2%A0",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82392",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-08-18T16:25:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "50dae1fe09",
- "score": 62.09,
+ "score": 59.64,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
