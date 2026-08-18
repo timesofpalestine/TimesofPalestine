@@ -13,6 +13,12 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/soldiers-shoot-palestinians-abduct-several-across-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-18T11:05:16+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "53c7ff5867",
- "score": 43.24,
+ "score": 43.0,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
