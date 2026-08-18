@@ -1,0 +1,50 @@
+{
+ "brief": "An Israeli military strike hit a cafe in the port area west of Gaza City, killing six Palestinians, including a child, Al Jazeera English reported. The strike struck the establishment in one of the territory's densely populated urban zones.\n\nThe incident adds to the civilian toll from ongoing military operations in Gaza. Port-area cafes in Gaza City have been targets in previous strikes during periods of heightened conflict. The identities and ages of those killed have not yet been detailed in initial reports.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/18/israeli-strike-on-gaza-city-cafe-kills-six-including-child?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/child-among-six-killed-israeli-air-strike-gazas-port",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israel-kills-six-gaza-day-after-kushner-meeting-netanyahu-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-attacks-continue-across-gaza-amid-rising-deaths",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-18T18:32:24+00:00",
+ "dek": "An Israeli strike hit a cafe in the port area west of Gaza City, killing six Palestinians, including a child.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/Screenshot-2026-08-18-at-19.03.39-1787077859.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/18/israeli-strike-on-gaza-city-cafe-kills-six-including-child?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/18/israeli-strike-on-gaza-city-cafe-kills-six-including-child?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "50775e4cb3",
+ "score": 63.6,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike kills six Palestinians at Gaza City cafe"
+}
