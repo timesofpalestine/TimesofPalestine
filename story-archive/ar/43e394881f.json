@@ -25,6 +25,12 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82390",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
   }
  ],
  "date": "2026-08-18T19:19:00+00:00",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "43e394881f",
- "score": 62.69,
+ "score": 62.53,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",

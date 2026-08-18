@@ -6,25 +6,7 @@
    "article": "original:jeffries-lawbreaking-settlers-2026-08-18.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/18/i-fear-for-my-familys-lives-says-loui-ridi-as-settlers-besiege-home?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.972mag.com/qusra-siege-israeli-army-settlers",
-   "name": "+972 Magazine",
-   "url": "https://www.972mag.com/",
-   "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/08/1168155",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-18T07:15:00+00:00",
@@ -42,7 +24,7 @@
  "modified": null,
  "original": true,
  "pid": "f0523d5b02",
- "score": 85.92,
+ "score": 85.89,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

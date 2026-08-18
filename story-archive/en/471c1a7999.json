@@ -1,0 +1,38 @@
+{
+ "brief": "Settlers have surrounded a Palestinian family's residence in Qusra for ten days in an attempt to forcibly take the property, +972 Magazine reported. The blockade marks an escalation in a pattern of land seizures by settlers in the West Bank, with the family unable to leave or receive supplies during the siege.\n\nIsraeli military forces have not intervened to break the blockade or remove the settlers from the property. The army's inaction during the ten-day siege stands in contrast to its stated commitment to preventing settler violence. The case illustrates how Palestinian families face threats of displacement while state security forces remain largely absent from confrontations with settlers attempting to seize their homes.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.972mag.com/qusra-siege-israeli-army-settlers",
+   "name": "+972 Magazine",
+   "url": "https://www.972mag.com/",
+   "verified": false
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168155",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-18T17:30:48+00:00",
+ "dek": "Settlers have been besieging a Palestinian family for 10 days in an effort to seize their home. The army’s unwillingness to stop them tells the whole story.",
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.972mag.com/qusra-siege-israeli-army-settlers",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "471c1a7999",
+ "score": 47.32,
+ "source": "+972 Magazine",
+ "source_id": "972mag",
+ "source_url": "https://www.972mag.com/",
+ "title": "Israeli settlers besiege Palestinian family for ten days to seize home"
+}

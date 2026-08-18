@@ -7,6 +7,12 @@
    "name": "UN News",
    "url": "https://news.un.org/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-says-only-3-percent-gazas-cropland-remains-accessible-and-undamaged",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-18T12:00:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "fa07e258d5",
- "score": 57.64,
+ "score": 57.49,
  "source": "UN News",
  "source_id": "unnews",
  "source_url": "https://news.un.org/",
