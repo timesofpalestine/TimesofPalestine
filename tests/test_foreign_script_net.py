@@ -19,6 +19,18 @@ class ForeignScriptNetTest(unittest.TestCase):
     def test_persian_peh_variant_is_caught(self):
         self.assertTrue(build.language_quality_issues("زيارة ترامپ", "ar"))
 
+    def test_hard_gate_regex_exists_and_catches_both_live_leaks(self):
+        # 2026-08-17 follow-up: the advisory net alone let a SECOND Thai
+        # headline publish («تحليل: المفاوضات بين ترامప ونتنياهو») because
+        # generation publishes best-effort after one retry and the cache
+        # scrub exempted current-style entries. FOREIGN_SCRIPT_RX is the
+        # hard gate both paths now share.
+        for title in ("التايمز: هجمات مستوطنين قد تعمّق الخلاف بين ترامప ونتنياهو",
+                      "تحليل: المفاوضات بين ترامప ونتنياهو أداة مراوغة"):
+            self.assertIsNotNone(build.FOREIGN_SCRIPT_RX.search(title))
+        self.assertIsNone(build.FOREIGN_SCRIPT_RX.search(
+            "الخلاف بين ترامب ونتنياهو يتسع"))
+
     def test_correct_spelling_and_digits_pass(self):
         for text in ("الخلاف بين ترامب ونتنياهو يتسع",
                      "قالت وزارة الصحة إن 20 جريحاً وصلوا المستشفى.",
