@@ -15,9 +15,15 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/18/palestinian-american-confronts-israeli-settler-at-his-besieged-home?traffic_source=rss",
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/18/i-fear-for-my-familys-lives-says-loui-ridi-as-settlers-besiege-home?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168155",
+   "name": "UN News",
+   "url": "https://news.un.org/",
    "verified": true
   }
  ],
@@ -36,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "f0523d5b02",
- "score": 86.67,
+ "score": 86.62,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
