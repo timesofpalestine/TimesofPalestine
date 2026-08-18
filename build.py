@@ -1635,16 +1635,30 @@ _AR_DICTION = [
      "«تم/تمت» مع المصدر ركيكة — استعمل الفعل المبني للمعلوم"),
     (re.compile(r"يُ?ذكر أن|تجدر الإشارة|الجدير بالذكر|ومن الجدير"),
      "حشو صحفي آلي — احذفه وادخل في المعلومة"),
-    # Foreign-script homoglyphs (owner report 2026-08-17: a published title
-    # carried «ترامป» with THAI ป U+0E1B for ب). Model output sometimes
-    # substitutes a lookalike letter from another script; no Arabic news
-    # sentence legitimately contains Thai, CJK, Cyrillic, Devanagari, Kana,
-    # Hangul — or the Persian-only letters پ/چ/ژ/گ (house style writes
-    # foreign names with Arabic letters: ترامب never ترامپ).
-    (re.compile(r"[฀-๿ऀ-ॿЀ-ӿ぀-ヿ"
-                r"一-鿿가-힯پچژگ]"),
-     "محرف من أبجدية أجنبية داخل النص العربي — استبدل الحرف الدخيل بحرف عربي"),
 ]
+
+# Foreign-script homoglyphs (owner report 2026-08-17: a published title
+# carried «ترامప» with THAI ป U+0E1B for ب — and a second brief shipped the
+# same character hours after the advisory net went live). Model output
+# sometimes substitutes a lookalike letter from another script; no Arabic
+# news sentence legitimately contains Thai, CJK, Cyrillic, Devanagari,
+# Kana, Hangul — or the Persian-only letters پ/چ/ژ/گ (house style writes
+# foreign names with Arabic letters: ترامب never ترامپ). Unlike style
+# diction this is text CORRUPTION, so it gates HARD: a fresh brief that
+# still carries one after the editor retry is refused (it regenerates next
+# build), and a cached brief carrying one is scrubbed regardless of its
+# style era.
+# Ranges: Cyrillic (+supplement), Thaana, all Indic scripts through Sinhala
+# (the second live leak was TELUGU ప U+0C2A), Thai, Lao, Myanmar, Georgian,
+# Hangul jamo, Kana, CJK, Hangul syllables — plus the Persian-only letters.
+FOREIGN_SCRIPT_RX = re.compile(
+    "[Ѐ-ԯހ-޿ऀ-෿฀-໿"
+    "က-႟Ⴀ-ჿᄀ-ᇿ぀-ヿ"
+    "㄰-㆏一-鿿가-힯"
+    "پچژگ]")
+_AR_DICTION.append(
+    (FOREIGN_SCRIPT_RX,
+     "محرف من أبجدية أجنبية داخل النص العربي — استبدل الحرف الدخيل بحرف عربي"))
 _EN_DICTION = [
     (re.compile(r"\bdelv(?:e|es|ed|ing)\b", re.I),
      "'delve' — say plainly what was examined"),
@@ -1894,6 +1908,14 @@ def write_brief(client, item):
                 item["brief_refused"] = True
                 return None
             print(f"  ⚠ brief {item['pid']}: issues persist after editor pass: {issues[:2]}")
+    # Corruption gate (2026-08-17): a homoglyph that survived the retry is
+    # never "style residue" — refuse the brief; the item regenerates fresh
+    # on the next build rather than publishing a corrupted headline.
+    if FOREIGN_SCRIPT_RX.search(f"{new_title}\n{text}"):
+        print(f"  ⊘ brief {item['pid']}: foreign-script character survived "
+              "the retry — refused, will regenerate next build")
+        item["brief_refused"] = True
+        return None
     item["title"] = truncate(new_title, 120)
     return text
 
@@ -1917,6 +1939,11 @@ def generate_briefs(all_items):
             return True
         brief = value.get("brief", "")
         if REFUSAL_RX.search(brief) or not is_complete_text(brief, 160):
+            return False
+        # Corruption trumps style-era exemptions (2026-08-17: the cached
+        # «ترامప» headline kept republishing because current-style entries
+        # skipped the quality nets). A homoglyph scrubs unconditionally.
+        if FOREIGN_SCRIPT_RX.search(f"{value.get('title', '')}\n{brief}"):
             return False
         if value.get("style") != BRIEF_STYLE:
             if len(brief.split()) < MIN_BRIEF_WORDS:
