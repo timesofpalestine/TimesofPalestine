@@ -7,6 +7,12 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/report-kushner-opposes-netanyahus-plans-ongoing-targeted-killings-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-17T13:52:13+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "17f9b772b1",
- "score": 42.2,
+ "score": 41.88,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
