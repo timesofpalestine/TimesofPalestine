@@ -7,6 +7,24 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.maannews.net/news/2167163.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  },
+  {
+   "article": "https://felesteen.news/post/185024/%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A8%D9%84%D8%AF%D9%8A%D8%A7%D8%AA-%D8%BA%D8%B2%D8%A9-%D9%8A%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%AA%D9%8A-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87-%D9%88%D8%A7%D9%84%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": false
+  },
+  {
+   "article": "https://palinfo.com/news/2026/08/18/1115695",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
   }
  ],
  "date": "2026-08-18T18:12:29+00:00",
@@ -24,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "d50e055391",
- "score": 46.89,
+ "score": 46.72,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
