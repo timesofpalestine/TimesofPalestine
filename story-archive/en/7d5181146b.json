@@ -6,13 +6,7 @@
    "article": "https://shehabnews.com/post/162380/%D8%B1%D8%AC%D9%84-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%8A-%D8%AE%D9%84%D9%81-%D8%A7%D9%84%D8%AD%D8%A8%D8%AA%D9%88%D8%B1-%D9%8A%D9%87%D8%A7%D8%AC%D9%85-%D8%A8%D9%86-%D8%BA%D9%81%D9%8A%D8%B1-%D8%A3%D9%87%D9%84-%D8%BA%D8%B2%D8%A9-%D8%A8%D8%B4%D8%B1-%D8%B9%D9%86-%D8%A3%D9%8A-%D8%B3%D9%84%D8%A7%D9%85-%D9%86%D8%AA%D8%AD%D8%AF%D8%AB",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/uae-billionaire-habtoor-takes-aim-ben-gvirs-gaza-rhetoric",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-18T04:30:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "7d5181146b",
- "score": 49.49,
+ "score": 49.33,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
