@@ -67,10 +67,20 @@ class LeakedNoteTests(unittest.TestCase):
             with self.subTest(note=note):
                 self.assertTrue(hygiene(f'<p class="summary">{note} fix this.</p>'))
 
-    def test_reader_facing_review_labels_are_caught(self):
-        for label in ("developing report", "awaiting review", "pending review"):
+    def test_self_referential_review_labels_are_caught(self):
+        # The charter bans status labels ON THE STORY — self-reference is the
+        # tell ("this report is awaiting review"), not the words themselves.
+        for sentence in ("This developing report continues.",
+                         "This report is awaiting review.",
+                         "This story is pending review by editors.",
+                         "هذا التقرير قيد المراجعة."):
+            with self.subTest(sentence=sentence):
+                self.assertTrue(hygiene(f'<p class="summary">{sentence}</p>'))
+
+    def test_bare_status_label_paragraph_is_caught(self):
+        for label in ("Developing report", "Awaiting review", "قيد المراجعة"):
             with self.subTest(label=label):
-                self.assertTrue(hygiene(f'<p class="summary">This {label} continues.</p>'))
+                self.assertTrue(hygiene(f'<p class="summary">{label}</p>'))
 
 
 class NoFalsePositiveTests(unittest.TestCase):
@@ -97,6 +107,17 @@ class NoFalsePositiveTests(unittest.TestCase):
         self.assertEqual(hygiene(
             '<p class="summary">The Carter Center found the commission retained '
             'capacity, according to its July assessment.</p>'), [])
+
+    def test_subject_under_review_passes(self):
+        # Production stoppage 2026-08-18: a Sydney library kept a withdrawn
+        # book «قيد المراجعة» and the whole paper stopped publishing. Review
+        # status of a SUBJECT is news; only the story labelling itself fails.
+        self.assertEqual(hygiene(
+            '<p class="summary">وقالت المكتبة إن الكتاب سيبقى قيد المراجعة '
+            'حتى صدور قرار نهائي.</p>'), [])
+        self.assertEqual(hygiene(
+            '<p class="summary">The court said the appeal is pending review '
+            'until September.</p>'), [])
 
     def test_empty_page_passes(self):
         self.assertEqual(hygiene(""), [])

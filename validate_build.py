@@ -283,9 +283,21 @@ _BANNED_SUBHEADS = (
 )
 _LEAKED_NOTE_RX = re.compile(
     r"verify before publication|before publication,? the newsroom|"
-    r"this is an unpublished draft|awaiting review|pending review|"
-    r"developing report|\[placeholder\]|\bTODO\b|\bTK\b|lorem ipsum|"
-    r"تحقق قبل النشر|مسودة غير منشورة|قيد المراجعة", re.I)
+    r"this is an unpublished draft|"
+    r"this (?:developing|preliminary) report|"
+    r"this (?:story|report|article|brief) (?:is |remains )?"
+    r"(?:awaiting|pending|under) review|"
+    r"\[placeholder\]|\bTODO\b|\bTK\b|lorem ipsum|"
+    r"تحقق قبل النشر|مسودة غير منشورة|"
+    r"هذ[اه] (?:التقرير|الموجز|المقال|المادة|القصة) قيد المراجعة", re.I)
+# The charter's banned status labels ("developing report", "awaiting review",
+# «قيد المراجعة») are only violations when they label THE STORY — the words
+# themselves are ordinary journalism about a subject: a library keeps a
+# withdrawn book «قيد المراجعة» (production build stopped on exactly that
+# sentence, 2026-08-18). Mid-prose uses pass; a bare label paragraph fails.
+_STATUS_LABEL_RX = re.compile(
+    r"^(?:developing report|awaiting review|pending review|under review|"
+    r"قيد المراجعة|بانتظار المراجعة|تقرير قيد الإعداد)\s*[.…:]?$", re.I)
 
 
 def check_editorial_hygiene(path, html, errors):
@@ -296,8 +308,14 @@ def check_editorial_hygiene(path, html, errors):
             errors.append(
                 f"{path}: article carries a '{text}' section — attribution belongs "
                 f"inline in the prose (charter: no sources/methodology/memo sections)")
-    body = " ".join(re.findall(r'<p class="summary">(.*?)</p>', html, re.S))
-    hit = _LEAKED_NOTE_RX.search(re.sub(r"<[^>]+>", "", body))
+    paragraphs = [re.sub(r"<[^>]+>", "", p)
+                  for p in re.findall(r'<p class="summary">(.*?)</p>', html, re.S)]
+    for text in paragraphs:
+        if _STATUS_LABEL_RX.match(text.strip()):
+            errors.append(
+                f"{path}: reader-facing status label on the story: {text.strip()!r} "
+                f"(charter: no 'developing report'/'awaiting review'-style labels)")
+    hit = _LEAKED_NOTE_RX.search(" ".join(paragraphs))
     if hit:
         errors.append(f"{path}: internal editorial note reached the page: {hit.group(0)!r}")
 

@@ -1607,7 +1607,13 @@ REFUSAL_RX = re.compile(
     # Desk-voice meta about the source material itself (owner takedown
     # 2026-08-16: six Arabic briefs narrated «المادة المرسلة…» as bodies).
     # These phrasings are newsroom-referential and never occur in news prose.
-    r"المادة المرسلة|عنوانا?ً? (?:فقط|واحد)|دون نص (?:خبري|توضيحي)|"
+    # «عنوان واحد/فقط» needs its desk-voice verb: bare «في عنوان واحد» is
+    # ordinary prose ("summed it up in one headline") and once cost a feature
+    # its whole Arabic edition (2026-08-18).
+    r"المادة المرسلة|"
+    r"(?:تتضمن|يتضمن|تقتصر على|يقتصر على|تحتوي على|يحتوي على)\s*"
+    r"عنوانا?ً? (?:فقط|واحدا?ً?)|"
+    r"دون نص (?:خبري|توضيحي)|"
     r"لا تتوفر في المصدر|(?:يستلزم|تستلزم|يتطلب) معلومات إضافية|"
     r"كموجز (?:صحفي|إخباري)|عنوان إشاري|"
     r"المادة المصدرية|المادة المتاحة|المادة المرفقة|هذه التعليمات|"
