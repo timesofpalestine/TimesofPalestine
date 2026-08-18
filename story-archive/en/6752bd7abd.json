@@ -19,6 +19,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168155",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-17T21:48:00+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "6752bd7abd",
- "score": 48.29,
+ "score": 48.1,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
