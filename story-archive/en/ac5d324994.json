@@ -1,0 +1,50 @@
+{
+ "brief": "Video released by the Palestinian Red Crescent shows Israeli settler children attacking and blocking an ambulance in the occupied West Bank, according to Al Jazeera English. The footage documented the children interfering with the vehicle's movement and preventing it from passing.\n\nThe incident occurred amid a pattern of obstructions facing ambulances operating in the territory. Palestinian medical personnel have reported repeated incidents in which vehicles have been stopped or delayed during emergency operations. The Red Crescent's release of the video brought the latest attack into public view and added to documentation of such incidents in the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/18/israeli-settler-children-attack-ambulance-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/settler-violence-and-settlement-expansion-israels-tools-to-impose-annexation-of-the-west-bank",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-colonizer-attacks-escalate-across-the-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-two-palestinians-set-fire-agricultural-lands",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-18T07:20:35+00:00",
+ "dek": "Video released by the Palestinian Red Crescent shows Israeli settler children attacking and blocking an ambulance.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787037591.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/18/israeli-settler-children-attack-ambulance-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/18/israeli-settler-children-attack-ambulance-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ac5d324994",
+ "score": 49.61,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settler children attack ambulance in West Bank"
+}

@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2167158.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-demolish-homes-water-wells-near-hebron",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-18T07:25:05+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "22d52f7883",
- "score": 49.86,
+ "score": 49.66,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
