@@ -13,18 +13,6 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/israel-kills-six-gaza-day-after-kushner-meeting-netanyahu-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-attacks-continue-across-gaza-amid-rising-deaths",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
   }
  ],
  "date": "2026-08-18T18:32:24+00:00",
@@ -42,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "50775e4cb3",
- "score": 63.6,
+ "score": 63.39,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
