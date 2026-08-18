@@ -1,0 +1,38 @@
+{
+ "brief": "سجّل الهلال الأحمر الفلسطيني إصابة 11 فلسطينياً جراء اعتداء عناصر من جيش الاحتلال عليهم بالضرب في محافظة سلفيت بالضفة الغربية.\n\nلم تُحدّد المعلومات المتاحة من المركز الفلسطيني للإعلام ساعة وقوع الحادثة أو الموقع المحدّد داخل المحافظة، كما لم يرد فيها تفصيل حول درجات الإصابات التي لحقت بالمصابين أو الظروف المباشرة للاعتداء. وتأتي هذه الحادثة في سياق التوترات المستمرة بين الفلسطينيين وقوات الاحتلال في أنحاء الضفة الغربية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/315826",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428234",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-18T10:15:40+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/Y16RJ7rzKVXljxukgXNQV5VHmuc3fxjEX6O9Yhz3s8niW7vNClSboBOdWU5GAgGCAjqLgCExAcJPv9Blzn5xi3r-0BWHgzpIBG6TFy5wx9yMTN0Y9lGJMV_0Jd4blaV4gfCO6ttMSUAM-YAFGuPUwF_TU-Ba9DbLgXNIgAVkSehovqVp1cAig2ekJe0g55nwrgJnOBwmILzh0p7J1hnFnC21jaAYcFbbB7ka8olEDbq61owctfwxBAIkalUmffKu_iVqgN4JGYg70jJpkUlbvg3o9XTr1pCS7N0XA5Q36OUbi-N9CXF0_qXzV5NUP3EgsF8So0lJCckCrU4-jGye6A.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/315826",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/315826"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bc38a24350",
+ "score": 63.86,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الهلال الأحمر يوثّق إصابة 11 فلسطينياً بضرب من جنود الاحتلال بسلفيت"
+}

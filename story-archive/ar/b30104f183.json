@@ -1,0 +1,44 @@
+{
+ "brief": "حذّر اتحاد بلديات غزة من انهيار وشيك لمنظومة المياه والصرف الصحي بسبب نقص الزيوت والوقود اللازمين لتشغيل المولدات والآبار ومحطات الضخ. وأوضح الاتحاد أن 40 مولداً فقط من أصل 700 تعمل حالياً، مما يعرّض السكان لخطر العطش ويفتح الباب أمام كارثة صحية وبيئية متراكمة.\n\nتعكس الأزمة الحالة الإنسانية الحرجة في القطاع، إذ تعاني الخدمات الأساسية من انقطاعات متكررة بسبب شح الموارد والوقود. وتشكل منظومة المياه والصرف الصحي من أولويات البقاء الأساسية، والتأخير في معالجة هذه الأزمة قد يفاقم الأوضاع الصحية للسكان بشكل كبير.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.net/news/2026/8/18/gaza-municipalities-water-sewage-collapse-warning?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185024/%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A8%D9%84%D8%AF%D9%8A%D8%A7%D8%AA-%D8%BA%D8%B2%D8%A9-%D9%8A%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%AA%D9%8A-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87-%D9%88%D8%A7%D9%84%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428230",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-18T06:39:18+00:00",
+ "dek": "حذر اتحاد بلديات غزة من انهيار وشيك لمنظومة المياه والصرف الصحي، بسبب نقص الزيوت والوقود اللازمين لتشغيل المولدات والآبار ومحطات الضخ، وهو ما يهدد السكان بالعطش وينذر بكارثة صحية وبيئية متفاقمة.",
+ "image": "https://www.aljazeera.net/wp-content/uploads/2026/08/image-1787039347.jpg?resize=1920%2C1080&quality=80",
+ "lang": "ar",
+ "link": "https://www.aljazeera.net/news/2026/8/18/gaza-municipalities-water-sewage-collapse-warning?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "الجزيرة نت",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.net/news/2026/8/18/gaza-municipalities-water-sewage-collapse-warning?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b30104f183",
+ "score": 47.36,
+ "source": "الجزيرة نت",
+ "source_id": "aja",
+ "source_url": "https://www.aljazeera.net/",
+ "title": "غزة.. انهيار منظومة المياه يهدد السكان بالعطش والأمراض"
+}
