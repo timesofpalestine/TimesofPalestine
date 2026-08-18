@@ -146,7 +146,17 @@ land in a specific window.
 - **Photo conversion (open).** The charter's covers-are-photographs rule
   (owner order 2026-08-03) still wants rights-cleared photographs on the
   stories now carrying house SVGs. Convert opportunistically, always with a
-  `media-rights.json` entry.
+  `media-rights.json` entry. Measure the position from the build's
+  `photoLed` block in `dist/section-freshness.json`.
+  - 2026-08-18: baseline 122 cover-led of 400 originals (photo-led share
+    0.695). Four stories converted to manifest-cleared Commons photographs,
+    each keeping its old house cover as `imageFallback:` —
+    `netanyahu-turkey-f35-campaign-2026-08-11` (Netanyahu, Feb 2023),
+    `kushner-blair-mladenov-gaza-mission-2026-08-14` (Kushner, June 2019),
+    and both Qusra siege reports (`qusra-water-tanker-blocked-2026-08-17`,
+    `qusra-utility-crews-detained-2026-08-16`) onto the Commons photograph
+    of Qusra village itself. No new manifest entries were needed; all four
+    URLs were already rights-cleared in `media-rights.json`.
 - ✅ **US-press wire feeds repaired 2026-08-11.** Four of the desk's
   think-tank feeds were dying on every sweep. CSIS and CFR now point at
   working endpoints, `israeli_press_fetch.py` resolves the HTML entities
@@ -192,6 +202,13 @@ land in a specific window.
   Arabic editions, the dialysis report, the financial-freedom piece, the
   Elyanna Arabic edition, the donor-aid and crossings reports and the
   Board of Peace watch. Baseline before the pass: 168 flagged files.
+  Worked 2026-08-18: the eighteen worst-flagged files, 116 paragraphs — both
+  editions of the stranded-students, under-fives-development, displacement-
+  ledger and PA-litigation-docket reports, the water-allocation, Rafah-
+  returns, top-companies, draft-constitution and PA-security-chiefs Arabic
+  editions, and the Lebanon-refugees, Rajoub, PALTEL-Ooredoo, elections-desk
+  and Her Story English editions. Baseline before the pass: 159 flagged
+  files.
 
 - ✅ **Arabic section starvation fixed structurally 2026-08-14.** `ar/opinion`
   (34h) and `ar/humans` (44h) went stale on most cycles for a simple reason:

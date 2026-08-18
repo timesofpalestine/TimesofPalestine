@@ -1,0 +1,37 @@
+title: Bloomsbury institute finds bitchat hides messages but not who is talking
+image: /media/times-of-palestine-cover-bitcoin.svg
+category: bitcoin
+date: 2026-08-18T07:28:00Z
+maxAgeHours: 720
+---
+The mesh messenger Palestinians are being told to keep on their phones for the next blackout has been examined by security researchers, and their verdict is worth reading before the towers go down again.
+
+The Bloomsbury Intelligence and Security Institute in London published an assessment of bitchat's Bluetooth Low Energy mesh, the design that lets a message hop from phone to phone with no cell tower and no internet in between.
+
+Its practical finding first: the app works up to roughly 300 metres a hop in the researchers' account, better than standard Bluetooth's hundred, and it cannot do anything at all outside a dense, physically close crowd. A camp block, a protest, a hospital courtyard — yes. A message from Rafah to Jabalia — no.
+
+## The warning that matters under occupation
+
+The institute's central caution is about metadata. The content of a bitchat message is encrypted, but the fact that two devices met, when and where, is the kind of pattern an authority with the right equipment can map — which means a network of who talks to whom can be drawn without a single message being read.
+
+The researchers also flag weak identity authentication, opening the door to interception by a device posing as someone else, and encryption keys established once per session rather than renewed per message.
+
+Two further risks are situational rather than technical. Real-world testing in hostile environments remains limited, and blackouts are exactly when people download whatever is offered, which is when fake and tampered builds circulate.
+
+The institute's conclusion is not that the app fails. It is that treating any mesh messenger as a silver bullet against a state that controls the network is a mistake.
+
+## What the project shipped this month
+
+The Android app crossed a version line on 11 August with releases 2.0.0 and 2.0.1, according to the project's own release page: support for Wear OS with mesh connectivity, live push-to-talk voice for channels and direct messages, persistent private conversations with clearer deletion controls, Cashu ecash tokens, and the project's first reproducible full-app build with verified binaries.
+
+Reproducible builds are the answer to one of the institute's warnings. When anyone can compile the published source and get byte-for-byte the file being distributed, a tampered copy stops being invisible.
+
+The app has drawn its heaviest use where governments cut the network: Uganda before the January 2026 presidential election, Iran during this year's protests, and Nepal during the Gen-Z demonstrations.
+
+## For readers in Gaza and the West Bank
+
+Take the honest version. In a blackout, bitchat gives a street, a shelter or a camp block a way to pass messages that needs no operator's permission, and it does not give a family in Gaza City a line to relatives in Khan Younis.
+
+Download from the official channels only. On iPhone the app is "bitchat mesh" on the App Store, id 6748219622, published by Permissionless Technology. On Android take the APK from the permissionlesstech releases page on GitHub. Google Play carries impostor builds that are not this project.
+
+Assume the network around you is legible even when your words are not, and choose what you send accordingly. That is the researchers' advice, and in a place where connectivity has been switched off as a matter of policy, it is the part worth memorising.

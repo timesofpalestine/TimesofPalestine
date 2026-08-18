@@ -770,6 +770,41 @@
    "en": "Gaza's reconstruction ledger: what actually got rebuilt this month",
    "ar": "دفتر إعمار غزة.. ما الذي أعيد بناؤه فعلاً هذا الشهر",
    "q": "Evergreen keeper topic — recyclable monthly. The rebuild-by-the-numbers file: housing units repaired or rebuilt vs the assessed need (UN-Habitat/UNDP shelter cluster by report and date), rubble cleared vs the estimated tonnage, schools and clinics reopened, materials that entered via each crossing this month, and one named neighborhood's before/after carried as ground truth. Constructive framing per charter: credit delivered work precisely; distinguish promised, funded, underway, completed and still needed."
+  },
+  {
+   "id": "gaza-orphans-guardianship-file",
+   "cat": "social",
+   "en": "Who becomes a guardian in Gaza, and who registers it",
+   "ar": "من يصير وصيّاً في غزة.. ومن يسجّل ذلك؟",
+   "q": "Evergreen keeper topic — recyclable; research fresh each run. The guardianship file behind the orphan counts: the Ministry of Social Development's registry and its latest figure with date, UNICEF's unaccompanied-and-separated caseload, the IRC's identification/tracing/registration gap, how kafala and kinship care are documented when the registries were destroyed, what allowance (if any) a host household receives, and whether adolescents are placed at all. Report the issue, never the individual; never name or identify a child. Every number attributed to its ministry, agency or report with a date."
+  },
+  {
+   "id": "palestinian-camp-social-fabric",
+   "cat": "social",
+   "en": "What holds a Palestinian refugee camp together when its services fail",
+   "ar": "ما الذي يمسك مخيماً فلسطينياً حين تتعطّل خدماته؟",
+   "q": "Evergreen keeper topic — recyclable across camps in the West Bank, Gaza, Lebanon, Syria and Jordan. The social institutions that carry a camp when UNRWA funding, municipal services or clinics fail: popular committees, mutual-aid funds, the women's centres, the schools' parent bodies, and the youth clubs. Verify UNRWA's current funding and service position at writing (by statement and date), name the camp and its committee, and credit delivered work precisely per the constructive-framing rule while stating plainly what has stopped."
+  },
+  {
+   "id": "gaza-marriage-and-households",
+   "cat": "social",
+   "en": "Marriage, birth and household formation under Gaza's ceasefire",
+   "ar": "الزواج والولادة وتكوين الأسرة في ظلّ وقف النار",
+   "q": "Evergreen keeper topic — recyclable. The demographic and social record the war rewrote: PCBS marriage, divorce and birth registrations before and after October 2023 (by release and date), what a wedding costs now, where couples live when the housing stock is rubble, maternal-care capacity for the births that follow, and the female-headed-household share. Numbers attributed to PCBS, the health ministry, UNFPA or UN Women with their dates; issue-not-individual discipline throughout."
+  },
+  {
+   "id": "palestinian-op-ed-voices",
+   "cat": "opinion",
+   "en": "Palestinian writers argue the questions their institutions avoid",
+   "ar": "كتّاب فلسطينيون يجادلون في ما تتجنّبه مؤسساتهم",
+   "q": "Evergreen keeper topic — recyclable. A signed argument on a live Palestinian question, written for this paper and labelled as opinion: the argument is the writer's, made on the documented record, with the counter-case stated fairly and in its strongest form. Rotating subject territory — representation and the PLO's institutions, the shape of any post-war administration in Gaza, what recognition changed, the diaspora's political role. Never anonymous, never the paper's voice, never an attack on an individual; office-holders are argued with on their record."
+  },
+  {
+   "id": "gaza-plan-fine-print-opinion",
+   "cat": "opinion",
+   "en": "The Gaza roadmap's fine print deserves a Palestinian reading",
+   "ar": "البنود الصغيرة في خارطة غزة تستحق قراءة فلسطينية",
+   "q": "Evergreen keeper topic — recyclable as the roadmap moves. A signed analytical argument reading the current text of the Board of Peace roadmap, the stabilisation-force mandate and the reconstruction-fund rules from a Palestinian legal and political standpoint: what each clause obliges, who verifies it, what it omits, and which Palestinian body has standing anywhere in it. Quote the document, date the version being read, attribute every reading to its author, and carry the strongest counter-argument."
   }
  ]
 }
