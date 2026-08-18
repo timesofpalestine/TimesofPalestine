@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">UNICEF: 335,000 Gaza children under five at risk of severe developmental delay</title>
+<desc id="dsc">Dark editorial graphic. Left panel shows the figure 335,000 — children under five UNICEF says are at risk of severe developmental delay — with a long bar whose almost invisible red sliver marks the 700 children reached by twelve new temporary early learning centres. Right panel is a three-column chart of children under five screened with acute malnutrition: 14,363 in August 2025, 11,746 in September and almost 9,300 in October. Bilingual English and Arabic labels.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="86" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="4" fill="#c7a86b">GAZA · EARLY CHILDHOOD</text>
+<text x="90" y="150" font-family="'Source Serif 4',Georgia,serif" font-size="48" fill="#f2eee8">UNICEF: 335,000 Gaza under-fives at risk</text>
+<text x="90" y="202" font-family="'Source Serif 4',Georgia,serif" font-size="48" fill="#f2eee8">of severe developmental delay</text>
+<text x="90" y="248" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#aaa9a5" text-anchor="start" direction="rtl">يونيسف: ٣٣٥ ألف طفل دون الخامسة في غزة مهددون بتأخر نمائي حاد</text>
+
+<rect x="90" y="272" width="1450" height="2" fill="#2f3135"/>
+
+<!-- LEFT PANEL -->
+<rect x="90" y="300" width="700" height="480" rx="10" fill="#17181b" stroke="#2a2b2e" stroke-width="2"/>
+<rect x="90" y="300" width="700" height="6" rx="3" fill="#8a1f2d"/>
+
+<text x="126" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="3" fill="#c7a86b">AT RISK · UNICEF, 27 JANUARY</text>
+<text x="126" y="470" font-family="'Source Serif 4',Georgia,serif" font-size="112" fill="#f2eee8">335,000</text>
+<text x="126" y="508" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">children under five at risk of severe developmental delay</text>
+<text x="126" y="544" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="start" direction="rtl">أطفال دون الخامسة معرضون لتأخر نمائي حاد</text>
+
+<rect x="126" y="576" width="628" height="1" fill="#2f3135"/>
+
+<text x="126" y="618" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="3" fill="#59a97d">REACHED THIS MONTH · THEIRWORLD, 4 AUGUST</text>
+
+<!-- proportional bar: 700 of 335,000 -->
+<rect x="126" y="642" width="628" height="46" fill="#22242a" stroke="#3a3d43" stroke-width="1.5"/>
+<rect x="126" y="642" width="4" height="46" fill="#C8102E"/>
+<path d="M132 642 L132 622 L210 622" fill="none" stroke="#C8102E" stroke-width="2"/>
+<text x="218" y="628" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">700 children · 12 temporary early learning centres</text>
+<text x="126" y="722" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">Full bar = 335,000. Red sliver = the 700 now served.</text>
+<text x="126" y="756" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" text-anchor="start" direction="rtl">٧٠٠ طفل في ١٢ مركزاً مؤقتاً للتعلّم المبكر</text>
+
+<!-- RIGHT PANEL -->
+<rect x="840" y="300" width="700" height="480" rx="10" fill="#17181b" stroke="#2a2b2e" stroke-width="2"/>
+<rect x="840" y="300" width="700" height="6" rx="3" fill="#286344"/>
+
+<text x="876" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="3" fill="#c7a86b">ACUTE MALNUTRITION, UNDER FIVE · SCREENINGS 2025</text>
+<text x="876" y="384" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" text-anchor="start" direction="rtl">سوء التغذية الحاد لدى الأطفال دون الخامسة ٢٠٢٥</text>
+
+<line x1="876" y1="690" x2="1500" y2="690" stroke="#3a3d43" stroke-width="2"/>
+
+<rect x="920" y="418" width="96" height="272" fill="#8a1f2d"/>
+<rect x="1076" y="468" width="96" height="222" fill="#a83a44"/>
+<rect x="1232" y="514" width="96" height="176" fill="#59a97d"/>
+
+<text x="920" y="404" font-family="'Source Serif 4',Georgia,serif" font-size="34" fill="#f2eee8">14,363</text>
+<text x="1076" y="454" font-family="'Source Serif 4',Georgia,serif" font-size="34" fill="#f2eee8">11,746</text>
+<text x="1232" y="500" font-family="'Source Serif 4',Georgia,serif" font-size="34" fill="#f2eee8">9,300</text>
+
+<text x="920" y="722" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">August</text>
+<text x="1076" y="722" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">September</text>
+<text x="1232" y="722" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">October</text>
+
+<text x="876" y="758" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">Still nearly five times the February 2025 level — UNICEF, 28 Nov</text>
+
+<!-- footer -->
+<rect x="90" y="822" width="1450" height="1" fill="#2f3135"/>
+<text x="90" y="862" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Sources: UNICEF, 27 January and 28 November 2025; Theirworld, 4 August. October figure reported as "almost 9,300".</text>
+</svg>
