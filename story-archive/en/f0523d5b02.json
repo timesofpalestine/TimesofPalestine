@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://www.972mag.com/qusra-siege-israeli-army-settlers",
+   "name": "+972 Magazine",
+   "url": "https://www.972mag.com/",
+   "verified": true
+  },
+  {
    "article": "https://news.un.org/feed/view/en/story/2026/08/1168155",
    "name": "UN News",
    "url": "https://news.un.org/",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "f0523d5b02",
- "score": 86.46000000000001,
+ "score": 86.41,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/08/israel-kills-six-gaza-day-after-kushner-meeting-netanyahu-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/five-killed-israeli-airstrike-gaza-city-including-child",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "125d9149c4",
- "score": 62.98,
+ "score": 62.75,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

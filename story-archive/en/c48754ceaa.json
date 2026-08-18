@@ -7,6 +7,12 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/opinion/world-fixates-hamas-who-will-disarm-israeli-settlers-storming-west-bank-villages",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-18T07:12:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "c48754ceaa",
- "score": 86.45,
+ "score": 86.4,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
