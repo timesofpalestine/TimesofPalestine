@@ -6,7 +6,19 @@
    "article": "https://www.maannews.net/news/2167158.html",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%aa%d9%87%d8%ac%d9%8a%d8%b1-%d9%85%d8%b3%d8%aa%d9%85%d8%b1-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d8%aa%d9%87%d8%af%d9%85-%d9%85%d8%b3%d8%a7%d9%83%d9%86-%d9%88%d8%a2%d8%a8%d8%a7%d8%b1-%d9%85",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/729835",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-18T07:25:05+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "22d52f7883",
- "score": 48.3,
+ "score": 48.09,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
