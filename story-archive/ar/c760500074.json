@@ -6,7 +6,13 @@
    "article": "https://shehabnews.com/post/162375/%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-%D9%8A%D9%87%D8%A7%D8%AC%D9%85%D9%88%D9%86-%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA-%D9%85%D9%88%D8%A7%D8%B7%D9%86%D9%8A%D9%86-%D9%88%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85%D8%A7%D8%AA-%D9%84%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%81%D9%8A-%D8%A8%D9%8A%D8%AA-%D9%84%D8%AD%D9%85",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/390663",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
   }
  ],
  "date": "2026-08-17T21:25:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "c760500074",
- "score": 61.61,
+ "score": 61.41,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
