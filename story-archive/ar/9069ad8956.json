@@ -25,6 +25,12 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/315844",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
   }
  ],
  "date": "2026-08-17T07:10:00+00:00",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "9069ad8956",
- "score": 83.94,
+ "score": 83.89,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
