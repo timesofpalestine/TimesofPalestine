@@ -541,6 +541,14 @@
       "source": "https://commons.wikimedia.org/wiki/File:Ofer_prison_entrance.jpg",
       "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ofer_prison_entrance.jpg",
       "note": "Cover for the Dima Barakat file; Commons hosts only free-licensed media and the build verifies the URL live, falling back to the campaign SVG if it dies"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Ambassador%20to%20Turkey%20Thomas%20Joseph%20Barrack%20Jr%20%28cropped%29.jpg?width=640",
+      "rightsBasis": "public-domain — official US State Department portrait (a work of the United States federal government), served from Wikimedia Commons and verified live at build time",
+      "credit": "Tom Barrack, US ambassador to Turkey and special envoy for Syria — US State Department via Wikimedia Commons (public domain)",
+      "source": "https://commons.wikimedia.org/wiki/File:United_States_Ambassador_to_Turkey_Thomas_Joseph_Barrack_Jr_(cropped).jpg",
+      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+      "note": "Lede for the Washington Brief of 2026-08-19; falls back to the brief's house SVG if the remote file dies"
     }
   ]
 }
