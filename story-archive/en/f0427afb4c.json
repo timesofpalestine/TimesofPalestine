@@ -6,19 +6,13 @@
    "article": "original:haaretz-qabatiya-numbering-2026-08-19.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://imemc.org/article/israeli-army-abducts-several-palestinians-across-west-bank",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/news/2026/8/19/israel-numbers-palestinian-detainee-foreheads-what-we-know?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-19T13:30:00+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "f0427afb4c",
- "score": 86.89,
+ "score": 86.82,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

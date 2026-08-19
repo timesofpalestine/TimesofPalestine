@@ -1,0 +1,38 @@
+{
+ "brief": "أفاد المركز الفلسطيني للإعلام بقصف مدفعي استهدف شمال مخيم البريج في وسط قطاع غزة. ولم تتضح حتى الآن تفاصيل عن حجم الأضرار الناجمة عن القصف أو عدد الإصابات إن وجدت.\n\nيأتي القصف في سياق التصعيد المستمر في قطاع غزة، حيث تشهد المخيمات والمناطق السكنية قصفاً متكرراً منذ فترة. مخيم البريج، الواقع وسط القطاع، يضم آلاف السكان من اللاجئين الفلسطينيين وعائلاتهم.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316174",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730249",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T21:07:49+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/W4RbEWf1y11D-0jMNF7oelVICQXu_53kvH00TW8tcwxah4auQ_pn6pWJgJsRVHjiNwhfh7azSyLl-2iQLl_n930rHVKCUixkdg4hSuS1yJI7Y4NdZPAqRiGJikCanSf-3KZTMIdR4P4ISdAcxqL_Z_tIXRbachaGMDcFCxrh9Eu4oSFCEV3mq4pT0Ttt1JUDnGJUtcMLVrUZugXNk7coO7YSLlqRGa6QfN-cOrJm52vItG43EabBjW0d7q8q8k_dDETXp8OZpd3xlKgCPHmucseOKQdhtjY9LyFmUVpCo1kleTkjFsXgJCo6j3_7At9P37UTK28xTBZDOyTSVM2RIw.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316174",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/316174"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "807ad6a6a7",
+ "score": 63.79,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قصف مدفعي يستهدف شمال مخيم البريج وسط غزة"
+}

@@ -1,6 +1,6 @@
 {
  "brief": "Israel's military announced a criminal investigation into the firing on a car carrying Hind Rajab, a child whose death became a symbol of civilian suffering in Gaza, Al Jazeera English reported. The move marked an acknowledgment of responsibility for the strike that drew international attention and scrutiny.\n\nThe military did not specify when the investigation was launched or provide details about what circumstances prompted the decision to examine the operation. Rajab's death had generated widespread criticism of Israeli military conduct during the Gaza conflict, with rights groups and international observers calling for accountability over the circumstances surrounding the incident.",
- "cat": "gaza",
+ "cat": "news",
  "corroborating_sources": [
   {
    "article": "https://www.aljazeera.com/news/2026/8/19/israel-admits-firing-on-car-carrying-hind-rajab-symbol-of-gazas-suffering?traffic_source=rss",
@@ -36,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "b026b5d77a",
- "score": 60.39,
+ "score": 45.09,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

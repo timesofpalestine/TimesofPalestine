@@ -6,13 +6,7 @@
    "article": "https://www.maannews.net/news/2167227.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.hrw.org/news/2026/08/19/west-bank-illegal-e1-settlement-tender-opens-for-bids",
-   "name": "Human Rights Watch",
-   "url": "https://www.hrw.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-19T08:40:59+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "5266b80fa0",
- "score": 26.49,
+ "score": 26.19,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
