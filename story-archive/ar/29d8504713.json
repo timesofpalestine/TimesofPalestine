@@ -1,0 +1,44 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، ارتفع إلى سبعة عدد القتلى في القصف الإسرائيلي الذي طال مقهى في ميناء غزة أمس. وأفاد مصدر في مستشفى الشفاء بأن الحصيلة ارتفعت عن الأرقام الأولية التي أُعلنت بعيد الحادثة مباشرة.\n\nلم تصدر السلطات الإسرائيلية حتى الآن أي تصريح بشأن العملية أو الجهة التي استهدفتها أو الأسباب التي دفعتها لاستهداف الموقع. وجاء القصف وسط تصعيد عسكري متواصل في قطاع غزة.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316029",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730069",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185054/7-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D8%A8%D9%8A%D9%86%D9%87%D9%85-%D8%B7%D9%81%D9%84-%D9%81%D9%8A-%D8%BA%D8%A7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D9%85%D9%8A%D9%86%D8%A7%D8%A1-%D8%BA%D8%B2%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T06:29:48+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/eqbgLmYbikiU4mjAO-i_pA6n6tOWO7oUZ2nENBCPyKPDrQfVDTWosA6_afbFjgQpHj6oxbqrojRahYiOATQQdsCn6qvnzYSzLmHFJWgsJJ912rjfnp0WLi144qToRZGe19DmCrUpjVMtNEs1AeNMR5iTy0MGs2AHO0NDr8aNEzHnoLWCzrj4OJy8Y7eyVGkWcuWTpbRD7dYRk_RGC1yEUHNM3Uq7KE4sODpCaNucJPOYKNwAbmV8JPCtek0K-13Dm-IffBd_NA7kGn_IK19s5epBa6Rg3EaYulHeIxb81HFS7medHKbcYTHa4T9kM-lympw4r5TFI3mKXPBNaAXc_g.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316029",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/316029"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "29d8504713",
+ "score": 63.84,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "القصف الإسرائيلي على مقهى بميناء غزة يسفر عن 7 شهداء"
+}
