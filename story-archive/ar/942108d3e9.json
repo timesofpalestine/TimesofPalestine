@@ -6,25 +6,31 @@
    "article": "https://shehabnews.com/post/162436/%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85%D8%A7%D8%AA-%D9%88%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D9%88%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D8%B5%D8%B9-%D8%AF-%D9%85%D8%AF%D8%A7%D9%87%D9%85%D8%A7%D8%AA%D9%87%D8%A7-%D9%81%D9%8A-%D9%85%D8%AF%D9%86-%D9%88%D8%A8%D9%84%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/share/217114",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-19T05:19:00+00:00",
  "dek": "اقتحمت قوات الاحتلال الإسرائيلي، فجر اليوم الأربعاء، مناطق واسعة في الضفة الغربية، ونفذت عمليات دهم وتفتيش طالت منازل ومبانٍ سكنية، واعتقلت عددًا من الفلسطينيين، وسط انتشار عسكري وإغلاق طرق واندلاع مو.",
- "image": "/media/times-of-palestine-cover-westbank-b-ar.svg",
+ "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/08/nXjlE.jpg?v=1",
  "lang": "ar",
  "link": "https://shehabnews.com/post/162436/%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85%D8%A7%D8%AA-%D9%88%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D9%88%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D8%B5%D8%B9-%D8%AF-%D9%85%D8%AF%D8%A7%D9%87%D9%85%D8%A7%D8%AA%D9%87%D8%A7-%D9%81%D9%8A-%D9%85%D8%AF%D9%86-%D9%88%D8%A8%D9%84%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
  "max_age_hours": 72,
  "media": {
-  "credit": "Graphic: Times of Palestine",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
-  "rightsBasis": "owned",
-  "source": "Times of Palestine"
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.com/post/162436/%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85%D8%A7%D8%AA-%D9%88%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D9%88%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D8%B5%D8%B9-%D8%AF-%D9%85%D8%AF%D8%A7%D9%87%D9%85%D8%A7%D8%AA%D9%87%D8%A7-%D9%81%D9%8A-%D9%85%D8%AF%D9%86-%D9%88%D8%A8%D9%84%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%B6%D9%81%D8%A9"
  },
  "modified": null,
  "original": false,
  "pid": "942108d3e9",
- "score": 63.74,
+ "score": 63.45,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
