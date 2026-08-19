@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/36313",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162486/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%87%D8%AF%D9%85-%D8%AB%D9%84%D8%A7%D8%AB%D8%A9-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D9%84%D8%B9%D8%A7%D8%A6%D9%84%D8%A9-%D8%B9%D9%84%D9%82%D9%85-%D9%81%D9%8A-%D8%A8%D9%8A%D8%AA-%D8%AD%D9%86%D9%8A%D9%86%D8%A7-%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%AF%D8%B3",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-19T10:18:25+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "03cd63feb9",
- "score": 57.42,
+ "score": 57.21,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

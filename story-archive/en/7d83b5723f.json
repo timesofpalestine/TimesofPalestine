@@ -1,0 +1,44 @@
+{
+ "brief": "Israeli military fire wounded two Palestinians during a raid on a home in Qusra, a village in the occupied West Bank, the Palestinian Red Crescent said. Those struck were aged 70 and 15. The circumstances surrounding the operation and what prompted the military action remain unclear from available reports.\n\nIsraeli settlers have conducted repeated operations in the area, according to Middle East Eye. The incident adds to a pattern of armed confrontations affecting Palestinian communities across the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-fire-wounds-two-palestinians-west-banks-qusra",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-critically-injure-a-palestinian-in-al-amari-camp",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T18:52:55+00:00",
+ "dek": "Israeli military fire wounds two Palestinians in West Bank's Qusra Israeli forces wounded two Palestinians, aged 70 and 15, during a raid on a home in the occupied West Bank village of Qusra, the Palestinian Red Crescent said. Israeli settlers have repeatedly…",
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-fire-wounds-two-palestinians-west-banks-qusra",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7d83b5723f",
+ "score": 63.17,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli forces wound two Palestinians during West Bank home raid"
+}
