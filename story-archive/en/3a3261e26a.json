@@ -1,0 +1,32 @@
+{
+ "brief": "The Israeli blockade severely restricts the movement of aid trucks into Gaza, creating a critical bottleneck that prevents supplies from reaching distribution centers, according to Al Jazeera English. Drivers who manage to navigate the crossing face additional obstacles in accessing warehouses where humanitarian aid is stored, compounding delivery delays across the territory.\n\nThe logistical constraints intensify an already acute shortage of supplies. Even when shipments successfully enter Gaza, the combination of restricted truck passage and warehouse access difficulties means aid frequently fails to reach populations facing urgent need. Aid organizations operating in the territory report that these twin barriers—entry restrictions and internal distribution challenges—significantly limit their capacity to serve vulnerable communities across the enclave.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/19/why-aid-entering-gaza-may-not-reach-those-who-need-it?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-19T13:01:39+00:00",
+ "dek": "It is extremely difficult for trucks to get through the Israeli blockade, let alone for drivers to reach aid warehouses.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/AP25324744620661-1787137266.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/19/why-aid-entering-gaza-may-not-reach-those-who-need-it?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/19/why-aid-entering-gaza-may-not-reach-those-who-need-it?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3a3261e26a",
+ "score": 49.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli blockade obstructs aid trucks reaching Gaza warehouses"
+}
