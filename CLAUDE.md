@@ -560,6 +560,18 @@ guessing or force-changing someone else's code:
   until reviewed.
 - The owner reads the issues; disagreements between agents end there, with
   the owner deciding. Never resolve a disagreement by overwriting.
+- **Codex is the standing first call (owner order 2026-08-19, binding on
+  Claude and every agent):** whenever help is needed — a fix that didn't
+  hold on the first try, a production failure outside the agent's own
+  layer, a diagnosis the agent isn't sure of, or simply a second pair of
+  eyes on a risky change — ASK CODEX rather than pushing on alone. The
+  mechanics: open or reuse a `help:` issue (or post on the standing
+  coordination thread #6) addressed to Codex with the symptom, repro and
+  what was tried; Codex reads this file and the repo issues. Asking is
+  never a failure and never optional when stuck: two failed attempts at
+  the same problem means the next step is a help issue, not a third
+  attempt. Urgent production breakage still gets an immediate mitigation
+  first — then the ask.
 
 ## Palestine Times archive (rights on record)
 
