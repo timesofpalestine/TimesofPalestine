@@ -469,6 +469,28 @@ languages until the story resolves, and the daily editor checks the file's
 freshness each cycle. Claude's beat; other agents route Qusra/Amnesty items
 via issue #6.
 
+## Dima Barakat release campaign (owner order 2026-08-19)
+
+Times of Palestine campaigns for the release of Dr. Dima Muhammad Amin
+Barakat — the 54-year-old Ramallah gynecological-oncology surgeon (Dunya
+Specialized Center for Women's Cancer) whom Israeli forces seized from her
+al-Tira home on 2026-08-18 with no charge announced. The campaign's form:
+the case LEADS the front-page SPECIALS row (first card, `build.py
+SPECIALS`, requires_original `dima-barakat-file-2026`) and keeps the
+running-file hub `topic-dima-barakat` until she is released; every
+development — hearing, detention extension, charge, statement by the army
+or by the institutions demanding her freedom — is same-day coverage in
+both languages. Discipline is mandatory: the campaign voice lives ONLY in
+clearly-labelled campaign surfaces (the band card, the campaign SVG); the
+news copy itself stays attributed wire-register journalism — witness
+accounts attributed, the absence of an announced charge stated as the
+central fact, any Israeli statement carried when one exists. The verified
+Arabic spelling is «ديما بركات» (arabic-names.json). Related standing
+context: the Mazen al-Rantisi case (same neighborhood, June arrest) rides
+this file. When she is released, the pin comes down and the file closes
+with a final report; NO agent removes the pin before that without the
+owner's word. Claude's beat; other agents route developments via issue #6.
+
 ## Taqarob podcast wire (owner directive 2026-08-16)
 
 The Taqarob podcast (بودكاست تقارب, host أحمد البيقاوي — Instagram
