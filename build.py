@@ -6041,7 +6041,16 @@ def main():
         dist, (("en", en_items), ("ar", ar_items)), built_at, BASE_URL, HEALTH)
     # Archived stories count too: their pages still reference their /media/
     # assets, and a kept permalink with a dead infographic is half a page.
-    __import__("longform").copy_media(dist, en_items + ar_items + archived_all)
+    # The SPECIALS band's own art must ship as well: it renders on every
+    # index page independently of any story's lede, so a card SVG that only
+    # a story's unused imageFallback names would otherwise never be copied
+    # (production failure 2026-08-19: the campaign card 404'd its SVG the
+    # moment the story's remote cover verified live).
+    _specials_media = [
+        {"image": s["img"]} for s in SPECIALS
+        if str(s.get("img", "")).startswith("/media/")]
+    __import__("longform").copy_media(
+        dist, en_items + ar_items + archived_all + _specials_media)
     # Text-free hero plates (visual audit 2026-08-16): every category cover
     # gets a companion <name>-hero.svg with its <text> layers stripped, so a
     # cover-led hero shows pure art under the overlay headline instead of
