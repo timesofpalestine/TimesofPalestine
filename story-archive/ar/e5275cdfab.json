@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.alquds.co.uk/%d8%ba%d8%b2%d8%a9-%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a-%d8%a8%d9%82%d8%b5%d9%81-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d8%a7%d8%b3%d8%aa",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
    "article": "https://felesteen.news/post/185097/%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D8%A9-%D8%AA%D9%86%D8%B9%D9%89-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%85%D8%AC%D8%B2%D8%B1%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D8%B7%D8%A9-%D8%A8%D8%BA%D8%B2%D8%A9",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
@@ -33,15 +27,21 @@
    "verified": true
   },
   {
-   "article": "https://qudsn.co/post?id=217122&slug=%D9%85%D8%AC%D8%B2%D8%B1%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D9%81%D9%8A-%D9%82%D8%B5%D9%81-%D9%85%D9%82%D8%B1-%D8%B4%D8%B1%D8%B7%D8%A9-%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A%D8%A7%D8%AA%C2%A0",
-   "name": "شبكة قدس الإخبارية",
-   "url": "https://qudsn.co/",
+   "article": "https://t.me/Palinfo/316131",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
    "verified": true
   },
   {
-   "article": "https://t.me/Arabi21News/428265",
+   "article": "https://t.me/Arabi21News/428273",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217122&slug=%D9%85%D8%AC%D8%B2%D8%B1%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D9%81%D9%8A-%D9%82%D8%B5%D9%81-%D9%85%D9%82%D8%B1-%D8%B4%D8%B1%D8%B7%D8%A9-%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D9%8A%D8%A7%D8%AA%C2%A0",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
    "verified": true
   }
  ],
@@ -60,7 +60,7 @@
  "modified": null,
  "original": false,
  "pid": "e5275cdfab",
- "score": 63.32,
+ "score": 63.11,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
