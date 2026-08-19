@@ -6,13 +6,7 @@
    "article": "https://www.pbc.ps/%d8%a5%d8%b5%d8%a7%d8%a8%d8%a7%d8%aa-%d8%a8%d8%a7%d9%84%d8%a7%d8%ae%d8%aa%d9%86%d8%a7%d9%82-%d9%81%d9%8a-%d8%a8%d9%8a%d8%aa-%d9%81%d8%ac%d8%a7%d8%b1",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/730005",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-18T20:59:34+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "e4312b6841",
- "score": 61.47,
+ "score": 61.27,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
