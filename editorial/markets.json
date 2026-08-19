@@ -1,10 +1,10 @@
 {
   "comment": "Markets watch fallback (owner directive 2026-08-11). When the live Al-Quds fetch fails (PEX publishes no API), the strip renders this value with its date. The daily editor refreshes it each cycle from pex.ps / Investing.com PLE — always the latest CLOSE, always dated, never invented.",
   "alquds": {
-    "level": 673.7,
-    "date": "2026-08-16",
+    "level": 672.43,
+    "date": "2026-08-18",
     "source": "Palestine Exchange (session report)"
   },
-  "lastChecked": "2026-08-18",
-  "lastCheckedNote": "Daily-editor sweep 2026-08-18: re-verified the Sunday 16 August close at 673.70 (+0.21%, +1.41 points, turnover $313,268, 136,987 shares, 89 deals) from the exchange's session report on the Arabic wire — the level and date in this file are unchanged and correct. The Monday 17 August session report had not surfaced in any reachable source at sweep time: pex.ps and urdupoint still return HTTP 403 to server-side clients, raya.ps's economy index page 404s to fetch, and Investing.com's PLE historical page 404s; the newest raya session report reachable by direct fetch remains 2026-08-12 at 675.12 (-0.21%, -1.44 points, turnover $420,958, 181,672 shares, 132 deals). The file is therefore one trading day behind by source availability, not by neglect. Verified run this month: 646.15 (Aug 2), 648.69 (Aug 4), 650.22 (Aug 5), 664.06 (Aug 9), 670.56 (Aug 10), 675.12 (Aug 12), 673.70 (Aug 16). Nothing invented; every level carries its date."
+  "lastChecked": "2026-08-19",
+  "lastCheckedNote": "Daily-editor sweep 2026-08-19: advanced the fallback to the Tuesday 18 August close at 672.43 (+0.72%, +4.80 points, turnover $648,978, 329,756 shares, 164 deals), from the exchange's own session report carried on the Arabic wire (UrduPoint Arabic, story 2239066) and confirmed by a second independent search of the same figure. Direct fetching of that page returns HTTP 403 to server-side clients, as pex.ps still does; raya.ps's newest directly fetchable session report remains 2026-08-12 at 675.12. The Monday 17 August session did not surface in any reachable source, so the run is not continuous between 16 and 18 August — the 18 August close is nonetheless the latest attributable CLOSE and is dated as such. Verified run this month: 646.15 (Aug 2), 648.69 (Aug 4), 650.22 (Aug 5), 664.06 (Aug 9), 670.56 (Aug 10), 675.12 (Aug 12), 673.70 (Aug 16), 672.43 (Aug 18). Nothing invented; every level carries its date."
 }

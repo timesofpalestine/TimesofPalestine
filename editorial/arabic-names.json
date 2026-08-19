@@ -301,6 +301,47 @@
         "كارول دانييل كسبري"
       ],
       "verified": "alquds.co.uk byline + palestineforum.net tag pages, checked 2026-08-18"
+    },
+    {
+      "latin": "Loui Ridi / Louay Abu Rida",
+      "ar": "لؤي أبو ريدة",
+      "wrong": [
+        "لوي ريدي",
+        "أبو ريده"
+      ],
+      "verified": "aljazeera.net + mc-doualiya + rtarabic + skynewsarabia, 2026-08-18"
+    },
+    {
+      "latin": "Ras al-Ahmar (northern Jordan Valley)",
+      "ar": "الرأس الأحمر",
+      "wrong": [
+        "راس الاحمر"
+      ],
+      "verified": "alquds.co.uk + qudspress + akhbarna, 2026-08"
+    },
+    {
+      "latin": "at-Tha'ala (northern Jordan Valley)",
+      "ar": "الثعلة",
+      "wrong": [
+        "الثعالة"
+      ],
+      "verified": "alquds.co.uk + msad.ps, 2026-08"
+    },
+    {
+      "latin": "Eli Cohen",
+      "ar": "إيلي كوهين",
+      "wrong": [
+        "إيلي كوهن"
+      ],
+      "verified": "alaraby.co.uk + alquds.co.uk + arabic.euronews Likud primary coverage, 2026-08-18"
+    },
+    {
+      "latin": "Oren Dobronsky",
+      "ar": "أورين دوفرونسكي",
+      "wrong": [
+        "دوبرونسكي"
+      ],
+      "verified": "arabic.euronews + alquds.co.uk Likud list coverage, 2026-08-18"
     }
   ]
 }

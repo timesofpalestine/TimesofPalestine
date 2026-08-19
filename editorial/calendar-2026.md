@@ -102,6 +102,13 @@ land in a specific window.
     d'or (2025) and the Prix Bayeux first prize for war photography beside
     it, with the post-prize attacks answered by the New York Times's own
     finding that they were baseless.
+    A second Real Lives original ran the same week to clear a stale humans
+    section: `omar-yaghi-water-from-air-2026-08-19.*` — the chemist born to
+    refugees from Masmiya who founded reticular chemistry, built the
+    metal-organic frameworks that harvest water from desert air, and shared
+    the 2025 Nobel Prize in Chemistry. Celebratory register, pegged to the
+    Gaza water-run report of 18 August, and honest that his materials do not
+    repair a pipeline an army has broken.
 - **Arabic-first commissioning:** 2–3 originals per month reported for the
   Arabic reader first (Arab Support and Her Story are the natural homes),
   then rendered into English.
@@ -157,6 +164,19 @@ land in a specific window.
     `qusra-utility-crews-detained-2026-08-16`) onto the Commons photograph
     of Qusra village itself. No new manifest entries were needed; all four
     URLs were already rights-cleared in `media-rights.json`.
+  - 2026-08-19: 144 cover-led of 400 originals (photo-led share 0.64 — the
+    share moves down as well as up, because every new desk report ships on a
+    category cover until a photograph is found for it). Three more converted,
+    each keeping its old house cover as `imageFallback:` —
+    `axios-trump-netanyahu-endorsement-2026-08-15` (Netanyahu, Feb 2023,
+    already cleared), `maariv-poll-likud-21-eisenkot-lead-2026-08-14`
+    (Eizenkot, Nov 2020, already cleared) and
+    `smotrich-bank-waiver-settlements-2026-08-15` (new manifest entry,
+    CC BY-SA 3.0). Three new Commons portraits were also cleared into
+    `media-rights.json` for today's originals: Eli Cohen (CC BY-SA 2.0,
+    Hellenic MFA), Israel Katz (CC BY-SA 4.0, Itzhak Harari) and Khirbet
+    Ibziq in the northern Jordan Valley (CC BY-SA 4.0, Aref Daraghmeh /
+    B'Tselem).
 - ✅ **US-press wire feeds repaired 2026-08-11.** Four of the desk's
   think-tank feeds were dying on every sweep. CSIS and CFR now point at
   working endpoints, `israeli_press_fetch.py` resolves the HTML entities
