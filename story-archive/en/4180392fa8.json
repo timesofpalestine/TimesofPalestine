@@ -6,7 +6,25 @@
    "article": "https://shehabnews.com/post/162480/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%B7%D9%81%D9%84%D8%A9-%D9%88%D9%85%D8%B3%D9%86%D8%A9-%D8%A8%D8%B4%D8%B8%D8%A7%D9%8A%D8%A7-%D8%B1%D8%B5%D8%A7%D8%B5-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%81%D9%8A-%D9%82%D8%B5%D8%B1%D8%A9-%D8%AC%D9%86%D9%88%D8%A8-%D9%86%D8%A7%D8%A8%D9%84%D8%B3",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-fire-wounds-two-palestinians-west-banks-qusra",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-critically-injure-a-palestinian-in-al-amari-camp",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-19T18:14:00+00:00",
@@ -24,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "4180392fa8",
- "score": 63.62,
+ "score": 63.21,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

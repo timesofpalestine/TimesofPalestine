@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Board of Peace charter gives Trump veto over Gaza reconstruction</title>
+<desc id="d">Diagram of the chain of authority over Gaza reconstruction: an indefinite chairman whose approval is required for Board of Peace decisions, above the Board itself created by Security Council Resolution 2803, above the National Committee for the Administration of Gaza, above the World Bank-hosted reconstruction fund. A side panel lists the 13 to 0 Council vote of 17 November 2025, the charter ratified at Davos on 22 January 2026, the roadmap dated 30 July 2026, and more than 190 civil society groups demanding the World Bank withdraw.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+<stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<marker id="ar" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 Z" fill="#8a1f2d"/>
+</marker>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="110" y="88" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#c7a86b">GAZA · WHO GOVERNS THE REBUILD</text>
+<text x="110" y="158" font-family="'Source Serif 4',Georgia,serif" font-size="48" font-weight="700" fill="#f2eee8">Board of Peace charter gives Trump</text>
+<text x="110" y="212" font-family="'Source Serif 4',Georgia,serif" font-size="48" font-weight="700" fill="#f2eee8">veto over Gaza reconstruction</text>
+<text x="110" y="262" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#aaa9a5">ميثاق مجلس السلام يمنح ترامب حق النقض على إعمار غزة</text>
+<line x1="110" y1="296" x2="1490" y2="296" stroke="#ffffff" stroke-opacity="0.14"/>
+
+<!-- veto seal -->
+<g transform="translate(1392,150) rotate(-11)" opacity="0.95">
+<circle r="72" fill="none" stroke="#8a1f2d" stroke-width="6"/>
+<circle r="60" fill="none" stroke="#8a1f2d" stroke-width="2"/>
+<text y="-4" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#C8102E">VETO</text>
+<text y="30" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#C8102E">نقض</text>
+</g>
+
+<!-- section labels -->
+<text x="110" y="345" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3" fill="#59a97d">CHAIN OF AUTHORITY</text>
+<text x="110" y="372" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">تسلسل السلطة</text>
+
+<line x1="790" y1="330" x2="790" y2="800" stroke="#ffffff" stroke-opacity="0.10"/>
+
+<text x="850" y="345" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3" fill="#59a97d">FOUR FIXED POINTS</text>
+<text x="850" y="372" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">أربع نقاط ثابتة</text>
+
+<!-- chain boxes -->
+<g font-family="'Libre Franklin',Arial,sans-serif">
+
+<rect x="110" y="392" width="620" height="94" rx="6" fill="#8a1f2d" fill-opacity="0.20" stroke="#C8102E" stroke-width="2"/>
+<text x="136" y="426" font-size="21" font-weight="700" fill="#f2eee8">CHAIRMAN — indefinite term</text>
+<text x="136" y="452" font-size="16" fill="#d8d5cf">Article 3.1(e): decisions taken by majority,</text>
+<text x="136" y="474" font-size="16" fill="#d8d5cf">&#8220;subject to the approval of the Chairman&#8221;</text>
+<text x="600" y="426" font-size="19" font-family="Cairo,Arial,sans-serif" fill="#c7a86b">الرئيس</text>
+
+<line x1="170" y1="490" x2="170" y2="502" stroke="#8a1f2d" stroke-width="3" marker-end="url(#ar)"/>
+
+<rect x="110" y="510" width="620" height="94" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.18"/>
+<text x="136" y="544" font-size="21" font-weight="700" fill="#f2eee8">BOARD OF PEACE</text>
+<text x="136" y="570" font-size="16" fill="#aaa9a5">Transitional administration with international legal</text>
+<text x="136" y="592" font-size="16" fill="#aaa9a5">personality — Security Council Resolution 2803</text>
+<text x="580" y="544" font-size="19" font-family="Cairo,Arial,sans-serif" fill="#c7a86b">مجلس السلام</text>
+
+<line x1="170" y1="608" x2="170" y2="620" stroke="#8a1f2d" stroke-width="3" marker-end="url(#ar)"/>
+
+<rect x="110" y="628" width="620" height="94" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.18"/>
+<text x="136" y="662" font-size="21" font-weight="700" fill="#f2eee8">NCAG — GAZA ADMINISTRATION</text>
+<text x="136" y="688" font-size="16" fill="#aaa9a5">Chaired by Ali Shaath, reporting to the Board;</text>
+<text x="136" y="710" font-size="16" fill="#aaa9a5">still unable to enter the Strip</text>
+<text x="600" y="662" font-size="19" font-family="Cairo,Arial,sans-serif" fill="#c7a86b">اللجنة</text>
+
+<line x1="170" y1="726" x2="170" y2="738" stroke="#8a1f2d" stroke-width="3" marker-end="url(#ar)"/>
+
+<rect x="110" y="746" width="620" height="94" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.18"/>
+<text x="136" y="780" font-size="21" font-weight="700" fill="#f2eee8">RECONSTRUCTION FUND</text>
+<text x="136" y="806" font-size="16" fill="#aaa9a5">World Bank as limited trustee: &#8220;no responsibility or</text>
+<text x="136" y="828" font-size="16" fill="#aaa9a5">accountability, fiduciary or otherwise&#8221; for the funds</text>
+<text x="600" y="780" font-size="19" font-family="Cairo,Arial,sans-serif" fill="#c7a86b">الصندوق</text>
+
+</g>
+
+<!-- facts column -->
+<g font-family="'Libre Franklin',Arial,sans-serif">
+
+<rect x="850" y="392" width="4" height="70" fill="#286344"/>
+<text x="874" y="424" font-family="'Source Serif 4',Georgia,serif" font-size="38" font-weight="700" fill="#c7a86b">13–0</text>
+<text x="874" y="450" font-size="16" fill="#aaa9a5">Council vote on Resolution 2803, 17 November 2025;</text>
+<text x="874" y="470" font-size="16" fill="#aaa9a5">China and Russia abstained</text>
+
+<rect x="850" y="502" width="4" height="70" fill="#286344"/>
+<text x="874" y="534" font-family="'Source Serif 4',Georgia,serif" font-size="38" font-weight="700" fill="#c7a86b">22 JAN 2026</text>
+<text x="874" y="560" font-size="16" fill="#aaa9a5">Charter ratified at Davos; it names Trump chairman</text>
+<text x="874" y="580" font-size="16" fill="#aaa9a5">indefinitely and does not mention Gaza</text>
+
+<rect x="850" y="612" width="4" height="70" fill="#286344"/>
+<text x="874" y="644" font-family="'Source Serif 4',Georgia,serif" font-size="38" font-weight="700" fill="#c7a86b">30 JULY 2026</text>
+<text x="874" y="670" font-size="16" fill="#aaa9a5">Date of the roadmap — &#8220;One Authority, One Weapon,</text>
+<text x="874" y="690" font-size="16" fill="#aaa9a5">One Law&#8221;; it sets no withdrawal line</text>
+
+<rect x="850" y="722" width="4" height="70" fill="#286344"/>
+<text x="874" y="754" font-family="'Source Serif 4',Georgia,serif" font-size="38" font-weight="700" fill="#c7a86b">190+</text>
+<text x="874" y="780" font-size="16" fill="#aaa9a5">Civil society groups demanding the World Bank</text>
+<text x="874" y="800" font-size="16" fill="#aaa9a5">withdraw from the arrangement (via Al-Haq)</text>
+
+</g>
+
+<line x1="110" y1="858" x2="1490" y2="858" stroke="#ffffff" stroke-opacity="0.12"/>
+<text x="110" y="882" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">Sources: Resolution 2803 · Board of Peace charter · S/2026/418 · Just Security · Carnegie Endowment · Al-Haq</text>
+</svg>
