@@ -6,7 +6,25 @@
    "article": "https://www.aljazeera.net/news/2026/8/19/%d8%ad%d8%aa%d9%89-%d8%a7%d9%84%d8%a8%d8%ad%d8%b1-%d9%84%d8%a7%d8%ad%d9%82%d9%86%d8%a7-%d9%85%d8%b3%d9%86%d8%a9-%d8%ac%d8%b1%d9%8a%d8%ad%d8%a9-%d9%81%d9%8a-%d9%85%d8%ac%d8%b2%d8%b1%d8%a9?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/316063",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185054/7-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D8%A8%D9%8A%D9%86%D9%87%D9%85-%D8%B7%D9%81%D9%84-%D9%81%D9%8A-%D8%BA%D8%A7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D9%85%D9%8A%D9%86%D8%A7%D8%A1-%D8%BA%D8%B2%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82390",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-08-19T05:21:45+00:00",
@@ -24,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "025216447d",
- "score": 61.72,
+ "score": 61.21,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",

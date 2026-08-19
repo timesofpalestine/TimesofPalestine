@@ -7,6 +7,12 @@
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/8/19/%d8%ba%d8%b2%d8%a9-%d9%88%d8%a7%d9%84%d8%b3%d9%88%d8%af%d8%a7%d9%86-%d8%aa%d8%aa%d8%b5%d8%af%d8%b1%d8%a7%d9%86-%d9%82%d8%a7%d8%a6%d9%85%d8%a9-%d8%a7%d9%84%d9%85%d9%86%d8%a7%d8%b7%d9%82?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-19T08:13:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "6f4c6f33e5",
- "score": 63.55,
+ "score": 63.2,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",

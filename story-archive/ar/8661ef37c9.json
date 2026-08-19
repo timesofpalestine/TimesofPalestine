@@ -13,6 +13,24 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/Palinfo/316052",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/390826",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730090",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-19T06:46:00+00:00",
@@ -30,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "8661ef37c9",
- "score": 48.54,
+ "score": 48.19,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
