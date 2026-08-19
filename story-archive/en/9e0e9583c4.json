@@ -1,0 +1,44 @@
+{
+ "brief": "Israeli forces carried out a sweeping arrest operation across the West Bank that resulted in the detention of dozens of Palestinians, including a sitting government minister, the Ma'an news agency reported. The campaign targeted multiple locations throughout the occupied territory over what appeared to be a coordinated security action.\n\nThe identities of those arrested beyond the ministerial official remain unclear. Authorities have not disclosed the specific charges against detainees or publicly stated the stated justification for the broad operation. The scale of arrests underscores ongoing tensions between Israeli security forces and Palestinian communities across the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167233.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-arrest-23-palestinians-sweeping-west-bank-raids",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-abducts-several-palestinians-across-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T11:01:50+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/Xqe-qUf-L7D2rJpd7r8I1A9Tz3-JIBX0z7TIEzFYzds4hiJeTYNP11IwHVCzrBvhJZejMLx2ene-ZDpsF_T8AHhFTTFTzhtPMGAr1makqq6I2Tfq03uZpYJUCjePz3Anow_AdPlqQsjYgQ_VlTOB6BU9r03pnVibj87VIUunqAVGL4Ta3sJOdeUKc15QtGk6I2zJ7yFglFGsSFX1wi9Ab0ma59NJY5gbwqCqKtndWUNm_fzC8gsWDMzepyVufq0r0p0vSNUx8owto-03ybm_RPqOr5yvnYnY25sfXciUfpi6dlaB5apptJlgLnHFNT5uEL8zkOxFCqF5C84Ct-FGYQ.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2167233.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167233.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9e0e9583c4",
+ "score": 49.71,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces arrest dozens in West Bank sweep, including minister"
+}
