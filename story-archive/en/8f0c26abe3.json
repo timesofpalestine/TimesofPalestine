@@ -1,0 +1,38 @@
+{
+ "brief": "US Ambassador to Israel Mike Huckabee characterized Israeli settler violence in the occupied West Bank as \"terror,\" Al Jazeera English reported. The statement represents a rare public condemnation of the settler movement by a senior American diplomat stationed in the country.\n\nHuckabee's remarks signal friction over policy toward Israeli settlements, which are considered illegal under international law and a major obstacle to peace negotiations. The ambassador's comments are notable given his long history of support for pro-Israel advocacy groups and his previous positions within conservative American political circles.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/19/us-ambassador-to-israel-calls-settler-violence?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-envoy-calls-out-israeli-settler-terrorism-interview",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T00:49:10+00:00",
+ "dek": "US Ambassador to Israel Mike Huckabee says Israeli settler violence in the occupied West Bank.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787100496.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/19/us-ambassador-to-israel-calls-settler-violence?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/19/us-ambassador-to-israel-calls-settler-violence?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8f0c26abe3",
+ "score": 49.56,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "US ambassador to Israel condemns settler violence as terrorism"
+}
