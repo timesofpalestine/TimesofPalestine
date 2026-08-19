@@ -27,18 +27,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Arabi21News/428265",
-   "name": "عربي21",
-   "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/316088",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
    "article": "https://www.alquds.co.uk/%d8%ba%d8%b2%d8%a9-%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a-%d8%a8%d9%82%d8%b5%d9%81-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d8%a7%d8%b3%d8%aa",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
@@ -55,6 +43,12 @@
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/316103",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
   }
  ],
  "date": "2026-08-19T13:04:00+00:00",
@@ -72,7 +66,7 @@
  "modified": null,
  "original": false,
  "pid": "3012d22b86",
- "score": 63.68,
+ "score": 63.53,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",

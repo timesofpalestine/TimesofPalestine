@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/36311",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/19/israeli-forces-mark-palestinians-with-numbers-amid-mass-arrests?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-19T08:03:32+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "81cc95b5f3",
- "score": 60.26,
+ "score": 60.08,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
