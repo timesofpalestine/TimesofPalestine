@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">How much of a $500 transfer to Gaza reaches a family in cash</title>
+<desc id="dsc">Chart: of $500 sent to a family in Gaza, between $225 and $425 arrives as banknotes; the remainder is taken by cash brokers. A second chart compares commission rates: UN Sustainable Development Goal target 3 percent, global average cost of sending $200 6.4 percent in the last quarter of 2023, Gaza brokers about 5 percent when the war began, about 40 percent in July 2025, and a peak takyeesh cash-out rate of 55 percent in 2025.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<pattern id="fee" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<rect width="14" height="14" fill="#8a1f2d"/>
+<rect width="6" height="14" fill="#C8102E" opacity="0.55"/>
+</pattern>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- torn banknote motif -->
+<g opacity="0.85">
+<path d="M1185 78 H1345 V232 H1185 Z" fill="none" stroke="#c7a86b" stroke-width="3"/>
+<path d="M1345 78 l14 12 -14 14 14 13 -14 14 14 13 -14 14 14 13 -14 14 14 13 -14 12 V232 H1500 V78 Z" fill="none" stroke="#c7a86b" stroke-width="3" opacity="0.35"/>
+<circle cx="1268" cy="155" r="34" fill="none" stroke="#c7a86b" stroke-width="2.5" opacity="0.8"/>
+<path d="M1205 100 H1250 M1205 210 H1290" stroke="#c7a86b" stroke-width="2.5" opacity="0.6"/>
+<path d="M1345 78 l14 12 -14 14 14 13 -14 14 14 13 -14 14 14 13 -14 14 14 13 -14 12" fill="none" stroke="#C8102E" stroke-width="3"/>
+</g>
+
+<text x="90" y="72" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="4" fill="#c7a86b">GAZA · THE LIQUIDITY CRISIS</text>
+
+<text x="90" y="136" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">Israel's cash blockade takes half of</text>
+<text x="90" y="194" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">every Gaza transfer</text>
+<text x="90" y="240" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#aaa9a5">الحصار النقدي يبتلع نصف كل حوالة إلى غزة</text>
+
+<line x1="90" y1="266" x2="1500" y2="266" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="90" y="306" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">$500 sent to a family in Gaza arrives as banknotes worth:</text>
+<text x="90" y="336" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5">٥٠٠ دولار تصل إلى العائلة نقداً بهذه القيمة</text>
+
+<!-- best case -->
+<text x="90" y="386" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#59a97d" letter-spacing="2">BEST CASE</text>
+<text x="90" y="414" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">أفضل حالة</text>
+<rect x="430" y="356" width="1070" height="64" fill="url(#fee)"/>
+<rect x="430" y="356" width="909" height="64" fill="#f2eee8"/>
+<text x="452" y="397" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#111214">$425 in banknotes</text>
+<text x="1352" y="394" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">$75 taken</text>
+
+<!-- worst case -->
+<text x="90" y="480" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#C8102E" letter-spacing="2">WORST CASE</text>
+<text x="90" y="508" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">أسوأ حالة</text>
+<rect x="430" y="450" width="1070" height="64" fill="url(#fee)"/>
+<rect x="430" y="450" width="482" height="64" fill="#f2eee8"/>
+<text x="452" y="491" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#111214">$225 in banknotes</text>
+<text x="934" y="488" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">$275 taken by intermediaries</text>
+
+<line x1="90" y1="552" x2="1500" y2="552" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="90" y="592" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">Commission taken on a cash transfer, per cent</text>
+<text x="90" y="620" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5">نسبة العمولة على تحويل نقدي</text>
+
+<!-- rate rows -->
+<g font-family="'Libre Franklin',Arial,sans-serif">
+<text x="90" y="664" font-size="19" fill="#aaa9a5">UN Sustainable Development Goal target</text>
+<rect x="560" y="648" width="48" height="20" fill="#59a97d"/>
+<text x="622" y="665" font-size="20" fill="#59a97d">3%</text>
+
+<text x="90" y="706" font-size="19" fill="#aaa9a5">Global average, sending $200 (Q4 2023)</text>
+<rect x="560" y="690" width="102" height="20" fill="#59a97d"/>
+<text x="676" y="707" font-size="20" fill="#59a97d">6.4%</text>
+
+<text x="90" y="748" font-size="19" fill="#aaa9a5">Gaza brokers when the war began</text>
+<rect x="560" y="732" width="80" height="20" fill="#c7a86b"/>
+<text x="654" y="749" font-size="20" fill="#c7a86b">5%</text>
+
+<text x="90" y="790" font-size="19" fill="#f2eee8">Gaza brokers, July 2025</text>
+<rect x="560" y="774" width="640" height="20" fill="#8a1f2d"/>
+<text x="1214" y="791" font-size="20" fill="#f2eee8">40%</text>
+
+<text x="90" y="832" font-size="19" fill="#f2eee8">Peak "takyeesh" cash-out rate, 2025</text>
+<rect x="560" y="816" width="880" height="20" fill="#C8102E"/>
+<text x="1454" y="833" font-size="20" fill="#f2eee8">55%</text>
+</g>
+
+<text x="90" y="874" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: Institute for Palestine Studies · Prism Reports · Associated Press · World Bank Migration and Development Brief 40</text>
+</svg>
