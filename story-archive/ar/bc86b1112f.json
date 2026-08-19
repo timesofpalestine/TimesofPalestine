@@ -9,15 +9,21 @@
    "verified": false
   },
   {
-   "article": "https://www.alquds.co.uk/%d8%ad%d8%b3%d8%a7%d8%a8%d8%a7%d8%aa-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d8%ae%d9%84%d9%81-%d8%a7%d9%84%d8%b6%d8%b1%d8%a8%d8%a9-%d8%a7%d9%84%d8%ac%d9%88%d9%8a%d8%a9-%d9%81%d9%8a-%d8%b3%d9%88",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
-   "verified": false
-  },
-  {
    "article": "https://t.me/Arabi21News/428252",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
+   "verified": false
+  },
+  {
+   "article": "https://qudsn.co/post?id=217117&slug=%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%88%D8%B3%D8%B9-%D9%82%D9%88%D8%A7%D8%B9%D8%AF-%D8%A7%D8%B4%D8%AA%D8%A8%D8%A7%D9%83%D9%87-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%A7%D9%84%D8%AA%D9%85%D9%88%D8%B6%D8%B9-%D9%82%D8%A8%D9%84-%D8%AA%D8%AD%D9%88%D9%84%D9%87-%D8%A5%D9%84%D9%89-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": false
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d9%84%d8%ac%d8%a7%d9%85%d8%b9%d8%a9-%d8%a7%d9%84%d8%b9%d8%b1%d8%a8%d9%8a%d8%a9-%d8%aa%d8%af%d9%8a%d9%86-%d8%a7%d8%b3%d8%aa%d9%87%d8%af%d8%a7%d9%81-%d9%85%d8%b7%d8%a7%d8%b1-%d8%b3%d9%88%d8%b1",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
    "verified": false
   }
  ],
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "bc86b1112f",
- "score": 61.52,
+ "score": 61.4,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
