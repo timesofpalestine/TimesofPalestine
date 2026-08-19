@@ -514,6 +514,10 @@ Claude's beat; other agents route Taqarob story ideas via issue #6.
 
 `editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
 (and named Facebook/Instagram) accounts that break Palestine news first.
+When the owner sends an X post link that the working sandbox cannot open
+(x.com is egress-blocked there), dispatch the `x-fetch.yml` workflow with
+the URL and read the post's text back from the job log (`x_fetch.py`,
+owner request 2026-08-19) — never write coverage from a guessed post.
 Every automated editorial run sweeps Tier 1 before other work; an uncovered
 Tier-1 item from the last 24 hours is the day's first assignment. Posts are
 claims, not facts — attribute, translate precisely, and say what remains

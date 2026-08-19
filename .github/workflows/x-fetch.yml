@@ -1,0 +1,25 @@
+# The newsroom's X-post resolver (owner request 2026-08-19).
+#
+# The editorial sandbox cannot reach x.com; these runners can. The owner
+# sends Claude a post link, Claude dispatches this workflow with it, and
+# reads the post's author, date and full text back from the job log —
+# no screenshots needed. Fetches public posts only, no secrets involved.
+name: Fetch X post text
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "X/Twitter post URL(s) or status ID(s) — space/comma separated"
+        required: true
+        type: string
+permissions: {}
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch post text
+        env:
+          X_URLS: ${{ inputs.url }}
+        run: python3 x_fetch.py "$X_URLS"
