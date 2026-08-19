@@ -13,18 +13,6 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.dropsitenews.com/p/israel-gaza-strikes-tuesday-primary-florida-liberia-us-deportees",
-   "name": "Drop Site News",
-   "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-kills-nine-gaza-city",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-08-19T19:49:00+00:00",
@@ -42,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "56c60a3dc7",
- "score": 63.59,
+ "score": 63.33,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

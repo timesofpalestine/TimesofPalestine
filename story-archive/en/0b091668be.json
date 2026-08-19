@@ -7,6 +7,12 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/election-looms-netanyahu-puts-turkey-israels-crosshairs",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-08-19T12:50:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "0b091668be",
- "score": 96.71,
+ "score": 96.45,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
