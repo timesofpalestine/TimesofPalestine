@@ -1,0 +1,32 @@
+{
+ "brief": "كشفت أجهزة أمن المقاومة في غزة اعترافات عناصر متورطة في التخابر مع الاحتلال، بحسب المركز الفلسطيني للإعلام. غير أن البيان الصادر عن الأجهزة الأمنية لم يتضمن تفاصيل حول طبيعة المعلومات المزعوم تمريرها أو الأهداف المستهدفة من قبل هذه الشبكات.\n\nلم يُفصح البيان أيضاً عن حجم عدد المتهمين أو مدة نشاطهم التخابري أو الإجراءات الأمنية والقانونية المتخذة بحقهم، في حين أشارت الأجهزة إلى متابعة التحقيقات مع المتورطين في هذه القضايا.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/08/19/1115773",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-19T20:51:59+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/08/19/1115773",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "af21abca17",
+ "score": 49.93,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "أجهزة أمنية بغزة تكشف اعترافات متخابرين مع الاحتلال"
+}
