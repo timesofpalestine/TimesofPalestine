@@ -4198,6 +4198,25 @@ def _original_story_href(slug):
 
 SPECIALS = [
     {
+        # Campaign pin (owner order 2026-08-19): the Dima Barakat case leads
+        # the specials row until she is released. Clearly labelled as the
+        # paper's campaign; the story itself stays attributed news copy.
+        "requires_original": "dima-barakat-file-2026",
+        "href": _original_story_href("dima-barakat-file-2026"),
+        "kicker": {"en": "Times of Palestine campaign", "ar": "حملة تايمز أوف فلسطين"},
+        "title": {"en": "Release Dr. Dima Barakat",
+                  "ar": "أطلقوا سراح الطبيبة ديما بركات"},
+        "dek": {"en": "Israeli forces seized Ramallah's women's-cancer surgeon from her home on 18 August and have announced no charge. We follow her case, both languages, until she is home.",
+                "ar": "اقتادت قوات الاحتلال جرّاحة أورام النساء من منزلها في رام الله في 18 آب/أغسطس ولم تعلن أي تهمة. نتابع قضيتها باللغتين حتى تعود إلى بيتها ومريضاتها."},
+        "cta": {"en": "Read her file →", "ar": "اقرأ ملفها ←"},
+        "img": "/media/times-of-palestine-dima-barakat-2026.svg",
+        "img_alt": {"en": "Release Dr. Dima Barakat — the Times of Palestine campaign",
+                    "ar": "أطلقوا سراح الطبيبة ديما بركات — حملة تايمز أوف فلسطين"},
+        "ticker": {"en": "Campaign: release Dr. Dima Barakat, held without announced charge",
+                   "ar": "حملة: أطلقوا سراح الطبيبة ديما بركات المحتجزة بلا تهمة معلنة"},
+        "nav": {"en": "Dr. Barakat", "ar": "قضية د. بركات"},
+    },
+    {
         # Story-page special: renders only when this original is in the build,
         # so offline/skip-originals runs never emit broken band links.
         "requires_original": "palestine-top100-2026",

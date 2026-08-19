@@ -533,6 +533,14 @@
       "credit": "Bezalel Smotrich — Eitan Fold via Wikimedia Commons (CC BY-SA 3.0)",
       "source": "https://commons.wikimedia.org/wiki/File:Bezalel_Smotrich_(cropped).jpg",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ofer%20prison%20entrance.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — free-licensed photo served from Wikimedia Commons (Category:Ofer Prison), verified live at build time with house-SVG fallback",
+      "credit": "The entrance of Ofer military prison — Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:Ofer_prison_entrance.jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ofer_prison_entrance.jpg",
+      "note": "Cover for the Dima Barakat file; Commons hosts only free-licensed media and the build verifies the URL live, falling back to the campaign SVG if it dies"
     }
   ]
 }
