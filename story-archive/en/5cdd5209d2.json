@@ -1,0 +1,44 @@
+{
+ "brief": "Israeli settlers and military forces are systematically displacing Palestinians from al-Mughayyir, a West Bank village long caught between encroaching settlement blocs and state control, according to Mondoweiss. The campaign has intensified dramatically in recent months, marked by the killing of a teenager who died defending his neighbors from settler attacks, the destruction of thousands of olive trees belonging to village families, and the confiscation of nearly all of al-Mughayyir's agricultural lands.\n\nThe combined pressure of settler violence and army raids has effectively besieged the community, eroding the economic and social structures that have sustained Palestinian life there. Residents face mounting losses of property, livelihood, and security as the dual assault continues unchecked.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-arrest-23-palestinians-sweeping-west-bank-raids",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-abducts-several-palestinians-across-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T11:58:34+00:00",
+ "dek": "Settler violence and army raids are erasing the West Bank village of al-Mughayyir. In recent months, villagers have seen a teenager killed defending his neighbors, thousands of olive trees uprooted, and nearly all the village's lands stolen.",
+ "image": "https://mondoweiss.net/wp-content/uploads/2026/08/IMG_7813-1024x768.jpg",
+ "lang": "en",
+ "link": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Mondoweiss",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5cdd5209d2",
+ "score": 63.28,
+ "source": "Mondoweiss",
+ "source_id": "mondoweiss",
+ "source_url": "https://mondoweiss.net/",
+ "title": "Settlers and army raids depopulate West Bank village of al-Mughayyir"
+}
