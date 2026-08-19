@@ -1,0 +1,44 @@
+{
+ "brief": "The Israeli military announced criminal investigations into the killing of six-year-old Hind Rajab in Gaza, according to Al Jazeera English. The child died during Israeli operations in the enclave, drawing international attention to civilian casualties in the conflict.\n\nThe announcement of the inquiry came as the military faced mounting scrutiny over deaths of non-combatants. The investigation will examine the circumstances surrounding Rajab's death, though specific details about the probe's scope, timeline, and the soldiers involved remain unclear. Such military investigations into operational incidents have become routine amid the ongoing fighting in Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/19/israel-orders-inquiry-into-killing-of-6-year-old-hind-rajab-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/aug/19/israel-admits-it-soldiers-fired-at-car-in-which-hind-rajab-was-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-admits-it-fired-vehicle-carrying-five-year-old-hind-rajab",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T21:09:15+00:00",
+ "dek": "The Israeli military announced criminal investigations into the killings of six-year-old Hind Rajab.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787173584.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/19/israel-orders-inquiry-into-killing-of-6-year-old-hind-rajab-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/19/israel-orders-inquiry-into-killing-of-6-year-old-hind-rajab-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "88a34f43c3",
+ "score": 63.48,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel launches inquiry into military killing of 6-year-old Hind Rajab"
+}
