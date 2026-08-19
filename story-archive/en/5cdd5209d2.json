@@ -6,13 +6,7 @@
    "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-arrest-23-palestinians-sweeping-west-bank-raids",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-19T11:58:34+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "5cdd5209d2",
- "score": 61.44,
+ "score": 61.16,
  "source": "Mondoweiss",
  "source_id": "mondoweiss",
  "source_url": "https://mondoweiss.net/",

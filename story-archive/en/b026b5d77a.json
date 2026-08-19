@@ -1,0 +1,44 @@
+{
+ "brief": "Israel's military announced a criminal investigation into the firing on a car carrying Hind Rajab, a child whose death became a symbol of civilian suffering in Gaza, Al Jazeera English reported. The move marked an acknowledgment of responsibility for the strike that drew international attention and scrutiny.\n\nThe military did not specify when the investigation was launched or provide details about what circumstances prompted the decision to examine the operation. Rajab's death had generated widespread criticism of Israeli military conduct during the Gaza conflict, with rights groups and international observers calling for accountability over the circumstances surrounding the incident.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/19/israel-admits-firing-on-car-carrying-hind-rajab-symbol-of-gazas-suffering?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israel-army-admits-firing-car-death-five-year-old-hind-rajab",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/israel-gaza-strikes-tuesday-primary-florida-liberia-us-deportees",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T15:44:02+00:00",
+ "dek": "The Israeli military has announced a criminal investigation into the killing that shook the world.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/2025-09-03T155148Z_851274364_RC2FKGAAHC2Y_RTRMADP_3_FILMFESTIVAL-VENICE-THE-VOICE-OF-HIND-RAJAB-1787149476.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/19/israel-admits-firing-on-car-carrying-hind-rajab-symbol-of-gazas-suffering?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/19/israel-admits-firing-on-car-carrying-hind-rajab-symbol-of-gazas-suffering?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b026b5d77a",
+ "score": 63.77,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel opens criminal probe into strike that killed Hind Rajab"
+}
