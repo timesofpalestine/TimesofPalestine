@@ -7,12 +7,6 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/palestinian-american-hoists-us-flag-home-besieged-settlers",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": false
   }
  ],
  "date": "2026-08-19T05:40:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": true,
  "pid": "ee23654ef4",
- "score": 86.24000000000001,
+ "score": 86.19,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
