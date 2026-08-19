@@ -1,0 +1,38 @@
+{
+ "brief": "نفقت عدة أغنام لمزارع فلسطيني بعد شربها من بئر مياه في محيط جبل عيبال شمال نابلس، وفق المركز الفلسطيني للإعلام. واتهم المركز مستوطنين بتسميم البئر، في حادثة تعكس الاعتداءات المتكررة على الموارد الزراعية الفلسطينية في الضفة الغربية.\n\nتأتي الحادثة في سياق توتر مستمر بين الفلسطينيين والمستوطنين في مناطق الضفة الغربية، حيث تشهد المنطقة المحيطة بجبل عيبال اشتباكات دورية على الموارد المائية والأراضي الزراعية. ولم توضح المتابعة الحصول على تعليق من السلطات الإسرائيلية بشأن الاتهامات.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316107",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730155",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T13:49:11+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-westbank-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316107",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8654a704ba",
+ "score": 49.82,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "مستوطنون يسممون بئر مياه فتنفق أغنام فلسطينية في نابلس"
+}

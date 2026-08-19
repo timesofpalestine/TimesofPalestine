@@ -13,12 +13,6 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-army-abducts-several-palestinians-across-west-bank",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
   }
  ],
  "date": "2026-08-19T11:58:34+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "5cdd5209d2",
- "score": 62.8,
+ "score": 62.58,
  "source": "Mondoweiss",
  "source_id": "mondoweiss",
  "source_url": "https://mondoweiss.net/",
