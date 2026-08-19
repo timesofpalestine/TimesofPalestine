@@ -1,0 +1,32 @@
+{
+ "brief": "An Israeli drone strike on central Gaza City killed nine people, according to an ambulance official who spoke to Al Jazeera correspondents. The fatality count represents an increase from initial reports that cited six deaths from the strike.\n\nThe incident marks another attack in the densely populated enclave amid ongoing hostilities. Details about the specific location within Gaza City, the time of the strike, and the circumstances surrounding the operation remained unclear at the time of reporting.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-kills-nine-gaza-city",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-19T12:57:42+00:00",
+ "dek": "Israeli drone strike kills nine in Gaza City The number of people killed in an Israeli drone strike on central Gaza City has increased to nine, an ambulance official has told Al Jazeera correspondents. The latest update raises the death toll from six reported…",
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-kills-nine-gaza-city",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "569bdd9440",
+ "score": 60.24,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli drone strike kills nine in Gaza City"
+}
