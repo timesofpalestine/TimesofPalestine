@@ -1,0 +1,44 @@
+{
+ "brief": "قصفت إسرائيل، بحسب المركز الفلسطيني للإعلام، المناطق الشمالية لمخيم البريج وسط قطاع غزة بنيران مدفعية. ولم يتضح في الساعات الأولى عدد الضحايا أو حجم الأضرار المادية التي خلّفها القصف.\n\nيقع مخيم البريج في وسط القطاع ويضم آلاف السكان من أصول لاجئة، وقد شهد على مدى سنوات استهدافات متكررة خلال فترات التصعيد. يأتي هذا الاستهداف ضمن عمليات عسكرية إسرائيلية مستمرة في القطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316116",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730168",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82388",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T14:49:54+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316116",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "189a6a435d",
+ "score": 63.64,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قصف إسرائيلي يستهدف شمال مخيم البريج وسط غزة"
+}
