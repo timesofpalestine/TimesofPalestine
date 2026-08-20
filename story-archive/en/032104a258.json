@@ -7,6 +7,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-block-ramallah-governor-following-slain-teens-funeral",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-20T10:07:12+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "032104a258",
- "score": 56.65,
+ "score": 56.45,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
