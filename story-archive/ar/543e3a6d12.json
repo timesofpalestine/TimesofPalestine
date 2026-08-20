@@ -1,0 +1,32 @@
+{
+ "brief": "قال المركز الفلسطيني للإعلام إن قطاع غزة لا يتوفر فيه أي مكان آمن للسكان المدنيين، في إشارة إلى تفاقم الأوضاع الأمنية والإنسانية في القطاع. يعني هذا أن المدنيين يواجهون أخطاراً متواصلة بغض النظر عن مكان تواجدهم.\n\nيعكس الوضع المأساوي في غزة تدهوراً حاداً في الأمان الشخصي والاستقرار، مع تأثر معظم جوانب الحياة اليومية. واستمرار هذه الأزمة يرك السكان في حالة من الخوف والعدم الاستقرار الدائم، فيما تتفاقم المعاناة الإنسانية على جميع المستويات.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/08/19/1115731",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-20T00:43:54+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/08/19/1115731",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "543e3a6d12",
+ "score": 49.85,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "غزة بلا مناطق آمنة للمدنيين"
+}

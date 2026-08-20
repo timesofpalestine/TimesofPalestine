@@ -15,6 +15,18 @@
    "verified": true
   },
   {
+   "article": "https://imemc.org/article/israeli-attacks-kill-10-palestinians-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
    "article": "https://pchrgaza.org/no-safe-place-as-genocide-continues-mass-killings-and-intimidation-besiege-civilians-across-the-gaza-strip",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
@@ -36,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "69885c8210",
- "score": 61.91,
+ "score": 61.7,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
