@@ -1,0 +1,50 @@
+{
+ "brief": "A Jewish-American activist said Israel prevented him from re-entering the country because of his work with Palestinians in the occupied West Bank, according to Al Jazeera English. The man described the ban as retaliation for his advocacy efforts and characterized settler violence in the territory as \"state terror.\"\n\nIsraeli authorities have increasingly restricted entry to individuals involved in Palestinian solidarity activities and human rights work. The case reflects broader tensions over freedom of movement and political expression in relation to Israeli-Palestinian affairs, particularly regarding activism that challenges Israeli government policy or supports Palestinian causes in occupied territories.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/20/08-20-208-20-2026-jewish-american-banned-sv-mp4?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/08/20/west-bank-israel-backed-settler-violence-drives-displacement",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48242",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-20T19:09:33+00:00",
+ "dek": "Jewish-American activist says Israel barred his re-entry over his work with Palestinians in the occupied West Bank.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787252723.jpg?resize=1440%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/08-20-208-20-2026-jewish-american-banned-sv-mp4?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/20/08-20-208-20-2026-jewish-american-banned-sv-mp4?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0b6b4ef635",
+ "score": 49.76,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel bars Jewish-American activist over Palestinian rights work"
+}
