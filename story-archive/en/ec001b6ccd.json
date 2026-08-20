@@ -13,12 +13,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hind-rajabs-grandmother-rejects-israeli-army-probe-killing-calls",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-08-19T23:56:47+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "ec001b6ccd",
- "score": 58.53,
+ "score": 58.28,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

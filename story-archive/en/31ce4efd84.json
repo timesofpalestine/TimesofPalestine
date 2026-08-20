@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli Prime Minister Benjamin Netanyahu declared that Israel will not accept a Turkish military presence in Syria, according to Al Jazeera English. The warning comes as regional tensions remain high over military deployments near Israeli borders and shifting geopolitical alignments in the Middle East.\n\nNetanyahu's statement underscores Israeli concerns about foreign military activities in neighboring Syria, a country where multiple armed groups and international powers maintain a presence. The prime minister did not specify what actions Israel might take in response to any Turkish military deployment in Syrian territory.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/20/20-08-clip-netanyahu-turkey-sot-il?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/36318",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-20T07:50:07+00:00",
+ "dek": "Israeli Prime Minister Benjamin Netanyahu says Israel will not tolerate a Turkish military presence in Syria.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787212143.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/20/20-08-clip-netanyahu-turkey-sot-il?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/20/20-08-clip-netanyahu-turkey-sot-il?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "31ce4efd84",
+ "score": 49.76,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu warns Israel will not tolerate Turkish military in Syria"
+}
