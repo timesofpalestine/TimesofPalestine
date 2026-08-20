@@ -1,0 +1,50 @@
+{
+ "brief": "An Israeli strike on Gaza City's police headquarters killed the women's police chief and several officers, Al Jazeera English reported. The attack targeted the security facility in the densely populated coastal enclave, resulting in multiple casualties among law enforcement personnel stationed there.\n\nThe strike represents another instance of Israeli military operations targeting Gaza's institutional infrastructure. Police headquarters and security installations have faced repeated strikes throughout the ongoing conflict. The identity of other officers killed in the attack and the full scope of casualties remained unclear in immediate reports from the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/19/israeli-strike-on-gaza-city-police-headquarters-kills-womens-police-chief?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-attacks-kill-10-palestinians-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/no-safe-place-as-genocide-continues-mass-killings-and-intimidation-besiege-civilians-across-the-gaza-strip",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T21:22:17+00:00",
+ "dek": "An Israeli strike on Gaza City’s police headquarters has killed the women’s police chief and several officers.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/Screenshot-2026-08-19-at-22.13.06-1787174111.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/19/israeli-strike-on-gaza-city-police-headquarters-kills-womens-police-chief?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/19/israeli-strike-on-gaza-city-police-headquarters-kills-womens-police-chief?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "17a3a451ac",
+ "score": 58.14,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike kills Gaza City women's police chief"
+}
