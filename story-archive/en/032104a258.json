@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/israel-returns-body-of-slain-child-held-since-march",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/israel-gaza-strikes-tuesday-primary-florida-liberia-us-deportees",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
   },
   {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-block-ramallah-governor-following-slain-teens-funeral",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "032104a258",
- "score": 56.45,
+ "score": 56.12,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
