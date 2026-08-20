@@ -6,19 +6,13 @@
    "article": "original:qusra-day-twelve-wounded-2026-08-20.ar",
    "name": "تايمز أوف فلسطين",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.pbc.ps/45643-50",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/730431",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-20T07:05:00+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "d3c4de8893",
- "score": 86.1,
+ "score": 86.06,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

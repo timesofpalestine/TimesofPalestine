@@ -15,9 +15,21 @@
    "verified": true
   },
   {
+   "article": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
    "article": "https://english.pnn.ps/news/48242",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/army-demolishes-three-homes-in-occupied-jerusalem",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
    "verified": true
   },
   {
@@ -42,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "0b6b4ef635",
- "score": 49.53,
+ "score": 49.38,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
