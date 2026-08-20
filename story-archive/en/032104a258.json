@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/israel-returns-body-of-slain-child-held-since-march",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/israel-gaza-strikes-tuesday-primary-florida-liberia-us-deportees",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-20T10:07:12+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "032104a258",
- "score": 57.11,
+ "score": 56.87,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",

@@ -1,0 +1,44 @@
+{
+ "brief": "Israeli settlers and soldiers are escalating operations in Area B of the occupied West Bank, targeting Palestinian families to displace them from their homes, Drop Site News reported. The siege of Palestinian families in Qusra represents part of a broader, intensifying tactic aimed at depopulating Palestinian communities in the region.\n\nThe campaign combines settler pressure with military operations, concentrating efforts on areas nominally under Palestinian administrative control but subject to Israeli security authority. Palestinians in affected communities face systematic pressure designed to make continued residence untenable, forcing departure and enabling settlement expansion.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/we-are-starving-palestinians-besieged-settlers-west-bank-homes-run-out",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-demolish-two-palestinian-homes-near-hebron",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-20T19:48:07+00:00",
+ "dek": "Israeli settlers and soldiers are increasingly targeting Palestinians in Area B of the occupied West Bank to force them from their homes.",
+ "image": "https://substackcdn.com/image/fetch/$s_!26pc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1771fbd6-1748-4833-bd44-6cf42f7ef089_5472x3648.jpeg",
+ "lang": "en",
+ "link": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Drop Site News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bd72bc2d2f",
+ "score": 63.6,
+ "source": "Drop Site News",
+ "source_id": "dropsite",
+ "source_url": "https://www.dropsitenews.com/",
+ "title": "Israeli settlers intensify campaign to force Palestinians from West Bank homes"
+}
