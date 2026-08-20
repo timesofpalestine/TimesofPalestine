@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://english.pnn.ps/news/48242",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
    "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "9d2b663955",
- "score": 85.75,
+ "score": 85.73,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",
