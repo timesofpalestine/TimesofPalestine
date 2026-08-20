@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.alquds.co.uk/%d9%82%d8%b7%d8%b1-%d9%88%d9%85%d8%b5%d8%b1-%d9%88%d8%aa%d8%b1%d9%83%d9%8a%d8%a7-%d8%aa%d8%af%d9%8a%d9%86-%d8%a7%d9%84%d9%87%d8%ac%d9%85%d8%a7%d8%aa-%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/QudsN/730404",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
@@ -24,18 +30,6 @@
    "article": "https://felesteen.news/post/185123/%D9%85%D8%B5%D8%B1-%D9%88%D8%AA%D8%B1%D9%83%D9%8A%D8%A7-%D9%88%D9%82%D8%B7%D8%B1-%D8%AA%D8%AF%D9%8A%D9%86-%D8%AE%D8%B1%D9%88%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%88%D8%AA%D8%B7%D8%A7%D9%84%D8%A8%D9%87-%D8%A8%D8%A7%D9%84%D8%A7%D9%84%D8%AA%D8%B2%D8%A7%D9%85-%D8%A8%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%BA%D8%B2%D8%A9",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/AlQastalps/390958",
-   "name": "القسطل · تيليغرام",
-   "url": "https://t.me/AlQastalps",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/82408",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
    "verified": true
   }
  ],
@@ -54,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "d4178bd4c7",
- "score": 48.78,
+ "score": 48.53,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
