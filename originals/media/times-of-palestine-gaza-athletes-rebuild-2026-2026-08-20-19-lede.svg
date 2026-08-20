@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Gaza's football league restarts on 4 September</title>
+<desc id="dsc">Dark graphic for Times of Palestine. A bar chart shows the more than 200 clubs entered in the opening tournament: 146 from the West Bank, 44 from Gaza and 36 from Palestinian refugee camps in Lebanon. Beside it a simple football pitch diagram carries the kick-off date, 4 September at six in the evening, under the tournament's name, the Thousand Martyrs' Cup, named for the 1,014 Palestinian athletes the association says Israel killed. A note records that the Gaza grounds hosting the fixtures have not been published.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="barG" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#286344"/>
+<stop offset="1" stop-color="#59a97d"/>
+</linearGradient>
+<linearGradient id="barR" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#8a1f2d"/>
+<stop offset="1" stop-color="#C8102E"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="92" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="4" fill="#c7a86b">TIMES OF PALESTINE  ·  FOOTBALL</text>
+<text x="90" y="122" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">تايمز أوف فلسطين — كرة القدم</text>
+
+<text x="90" y="200" font-family="'Source Serif 4',Georgia,serif" font-size="60" fill="#f2eee8">Palestinian football restarts</text>
+<text x="90" y="264" font-family="'Source Serif 4',Georgia,serif" font-size="60" fill="#f2eee8">in Gaza on 4 September</text>
+<text x="90" y="312" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#c7a86b">استئناف الدوري في غزة في 4 سبتمبر</text>
+
+<line x1="90" y1="346" x2="1510" y2="346" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- LEFT: club chart -->
+<text x="90" y="400" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" letter-spacing="2" fill="#c7a86b">MORE THAN 200 CLUBS ENTERED</text>
+<text x="90" y="430" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">أكثر من 200 نادٍ في البطولة الافتتاحية</text>
+
+<!-- row 1 West Bank -->
+<text x="90" y="486" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">West Bank</text>
+<text x="90" y="510" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">الضفة الغربية</text>
+<rect x="90" y="522" width="423" height="32" fill="url(#barG)"/>
+<text x="529" y="547" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" font-weight="700" fill="#c7a86b">146</text>
+
+<!-- row 2 Gaza -->
+<text x="90" y="592" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">Gaza</text>
+<text x="90" y="616" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">قطاع غزة</text>
+<rect x="90" y="628" width="128" height="32" fill="url(#barR)"/>
+<text x="234" y="653" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" font-weight="700" fill="#c7a86b">44</text>
+
+<!-- row 3 Lebanon camps -->
+<text x="90" y="698" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">Refugee camps in Lebanon</text>
+<text x="90" y="722" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">مخيمات اللاجئين في لبنان</text>
+<rect x="90" y="734" width="104" height="32" fill="#c7a86b"/>
+<text x="210" y="759" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" font-weight="700" fill="#c7a86b">36</text>
+
+<text x="90" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Play begins simultaneously in all three places</text>
+
+<!-- RIGHT: pitch -->
+<text x="880" y="400" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" letter-spacing="2" fill="#c7a86b">THOUSAND MARTYRS&#8217; CUP</text>
+<text x="880" y="430" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">كأس الألف شهيد</text>
+
+<rect x="880" y="452" width="600" height="300" fill="#16241c" stroke="#59a97d" stroke-width="3"/>
+<line x1="1180" y1="452" x2="1180" y2="752" stroke="#59a97d" stroke-width="3"/>
+<rect x="880" y="532" width="86" height="140" fill="none" stroke="#59a97d" stroke-width="3"/>
+<rect x="1394" y="532" width="86" height="140" fill="none" stroke="#59a97d" stroke-width="3"/>
+<rect x="880" y="572" width="34" height="60" fill="none" stroke="#3f7a58" stroke-width="2"/>
+<rect x="1446" y="572" width="34" height="60" fill="none" stroke="#3f7a58" stroke-width="2"/>
+<circle cx="1180" cy="602" r="86" fill="#16241c" stroke="#59a97d" stroke-width="3"/>
+<text x="1180" y="596" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">4 SEP</text>
+<text x="1180" y="630" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">6pm kick-off</text>
+<text x="1180" y="658" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">4 سبتمبر — السادسة مساءً</text>
+
+<text x="880" y="790" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Named for 1,014 athletes the association says Israel killed</text>
+<text x="880" y="816" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">لم يُعلن عن ملاعب غزة المستضيفة للمباريات</text>
+<text x="880" y="842" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#8f8e8a">Which Gaza grounds will host has not been published</text>
+
+<line x1="90" y1="862" x2="1510" y2="862" stroke="#3a3b3f" stroke-width="2"/>
+<text x="90" y="886" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#8f8e8a">Source: Palestinian Football Association, announced by Jibril Rajoub in Ramallah, 10 August</text>
+</svg>

@@ -6,7 +6,13 @@
    "article": "https://www.hrw.org/news/2026/08/19/west-bank-illegal-e1-settlement-tender-opens-for-bids",
    "name": "Human Rights Watch",
    "url": "https://www.hrw.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/france-germany-uk-and-italy-condemn-israels-e1-west-bank-settlement-plan",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-19T20:00:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "db853a92a8",
- "score": 84.42,
+ "score": 84.39,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",

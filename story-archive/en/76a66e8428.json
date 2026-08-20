@@ -6,13 +6,7 @@
    "article": "https://t.me/maannews/36334",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/20/funeral-for-50-palestinians-recovered-from-gaza-rubble?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-20T11:54:43+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "76a66e8428",
- "score": 59.25,
+ "score": 58.91,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
