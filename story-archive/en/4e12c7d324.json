@@ -13,12 +13,6 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/aug/19/israel-admits-it-soldiers-fired-at-car-in-which-hind-rajab-was-killed",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": false
   }
  ],
  "date": "2026-08-20T10:46:03+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "4e12c7d324",
- "score": 59.32,
+ "score": 59.1,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
