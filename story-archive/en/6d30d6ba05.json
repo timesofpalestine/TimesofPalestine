@@ -1,0 +1,56 @@
+{
+ "brief": "Settler violence in the West Bank is intensifying, driving Palestinians toward forced displacement, according to Maan Wire. The escalating attacks by settlers have become a systematic pressure tactic contributing to the displacement crisis facing Palestinian communities across the occupied territory. Residents report repeated incidents of property destruction, threats, and physical assaults targeting their homes and livelihoods.\n\nThe reported surge in settler assaults comes as Palestinians navigate occupation, military restrictions, and competing land claims over territory. Displacement through violence represents a distinct mechanism of population pressure operating alongside administrative orders, home demolitions, and legal barriers that have long shaped Palestinian life in the West Bank. The combination of these forces has accelerated the pace at which families abandon their communities.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167284.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  },
+  {
+   "article": "https://shehabnews.com/post/162515/%D9%87%D9%8A%D9%88%D9%85%D9%86-%D8%B1%D8%A7%D9%8A%D8%AA%D8%B3-%D9%88%D9%88%D8%AA%D8%B4-%D8%B9%D9%86%D9%81-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D9%8A%D8%AA%D8%AD%D9%88%D9%84-%D8%A5%D9%84%D9%89-%D8%A3%D8%AF%D8%A7%D8%A9-%D9%84%D8%AA%D9%87%D8%AC%D9%8A%D8%B1-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86-%D9%85%D9%86-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/08/20/west-bank-israel-backed-settler-violence-drives-displacement",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48242",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-20T08:32:02+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/MoU8UsW-mJ_JvPqBLKOT91WLdURYNNUnPAj0XtNBBNlxMEyJ4At3LRUrpPJ2q7FGFA_QGczPhtyGQG7cXOWu9JF7TFt5X55c08E_xRTiNmmYzq5hMmXj-kqDhv1dsX0z98KkMzBNJ2Z6fg6fHDOxUL4P_tsbR3v936Ht99Qj8FyacWGYBlVndNvRXE3GrCVgtZK0VJd5jYBEmfYOAHMJLglIv_BBN4GZRVzpoSC_qoN73ascUx7gn44ET2X1wQwwD1hm4IpOW8I2rvdYyS4al75lTx28XZGb1Ytz1KNAvzgKSRB30U1g8ajESxsdlq4H_keAp0cFJd6sDptffIvhbQ.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2167284.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167284.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6d30d6ba05",
+ "score": 49.79,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settler attacks in West Bank escalate forced displacement"
+}
