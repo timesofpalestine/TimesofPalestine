@@ -19,6 +19,12 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/316308",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
   }
  ],
  "date": "2026-08-20T11:54:43+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "76a66e8428",
- "score": 60.68,
+ "score": 60.43,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
