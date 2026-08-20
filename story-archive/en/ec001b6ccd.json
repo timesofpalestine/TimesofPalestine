@@ -1,0 +1,44 @@
+{
+ "brief": "The grandmother of Hind Rajab, a five-year-old Palestinian girl killed in her family's car by Israeli forces in Gaza, has declared she does not trust the Israeli judiciary, Al Jazeera English reported. Her statement underscores deep skepticism about whether Israeli institutions can fairly investigate or prosecute cases involving Palestinian civilians.\n\nRajab died during an Israeli military operation in Gaza. Her killing in the vehicle drew international scrutiny and sparked broader questions about civilian casualties and mechanisms for accountability in military operations throughout the territory. The grandmother's public rejection of Israeli legal proceedings reflects Palestinian concerns about the impartiality of investigations conducted by the state responsible for the military actions.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/19/we-do-not-trust-israeli-judiciary-says-hind-rajabs-grandmother?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/aug/19/israel-admits-it-soldiers-fired-at-car-in-which-hind-rajab-was-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-admits-it-fired-vehicle-carrying-five-year-old-hind-rajab",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-19T23:56:47+00:00",
+ "dek": "The grandmother of Hind Rajab, a five-year-old Palestinian girl killed in her family’s car by Israeli forces in Gaza.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787183786.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/19/we-do-not-trust-israeli-judiciary-says-hind-rajabs-grandmother?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/19/we-do-not-trust-israeli-judiciary-says-hind-rajabs-grandmother?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ec001b6ccd",
+ "score": 63.76,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Hind Rajab's grandmother rejects Israeli judicial process"
+}
