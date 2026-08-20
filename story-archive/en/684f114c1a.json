@@ -6,13 +6,7 @@
    "article": "https://www.maannews.net/news/2167287.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-10-palestinians-killed-last-24-hours",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-20T08:55:42+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "684f114c1a",
- "score": 55.02,
+ "score": 54.69,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
