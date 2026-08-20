@@ -1,0 +1,32 @@
+{
+ "brief": "كشفت تحقيقات عن محاولات إسرائيلية ممولة بملايين الدولارات لتطوير حملات رقمية موجهة نحو التأثير على أنظمة الذكاء الاصطناعي. تستهدف هذه الحملات تلويث البيانات التي تغذي تلك الأنظمة، بما يسمح بتوجيه إجاباتها وفقاً للسرديات الإسرائيلية حول أحداث غزة.\n\nيعكس هذا المسعى جهوداً منهجية للتدخل في الخوارزميات والمدخلات البيانية لأدوات الذكاء الاصطناعي على نطاق واسع. يثير الكشف عن هذه المحاولات أسئلة حول موثوقية المعلومات التي يحصل عليها ملايين المستخدمين عبر هذه الأدوات، خاصة فيما يتعلق بالقضايا الجدلية مثل الصراع الفلسطيني الإسرائيلي.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Arabi21News/428291",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-20T12:47:25+00:00",
+ "dek": "بتمويل ملايين الدولارات.. كشف محاولات إسرائيلية لتطوير \"حملات رقمية\" تهدف إلى \"تسميم\" بيانات الذكاء الاصطناعي وتوجيه إجاباته بشأن غزة. عربي21",
+ "image": "https://cdn4.telesco.pe/file/GdVcKS7Kz21npLk7uRI9_OWaJL6RY2q5tI4AW39RQIt9qpkL7sQ2e6uEiJv_L48iCnRHRUO6GnTUY4xxqIyvKP1eCXIqzkm5k9tJ-8c43igocIFj0yjKatwHvPP3k_taPfrMIQoHXEyNa2RwexzZr4WLRcujbcPCpQTNbIDsCts_lKE8ebatDcAdEKNQC_hATzH6Q9FCGIvQx4zxSv8_CKJB8DvZfD8uZqNVP-GRSZpFwTwpungsxGd-xEznrehlfytkeUrh-3B-48W4gId0hhYbuQM-8hbIvIm3AB-U2dfkanC-tVDEBw0VI0qtEb1AhNnCkmkmOd8PMYxfk_Lh9Q.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Arabi21News/428291",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "عربي21",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Arabi21News/428291"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2a85e2ad85",
+ "score": 49.97,
+ "source": "عربي21",
+ "source_id": "tg-arabi21",
+ "source_url": "https://t.me/arabi21news",
+ "title": "إسرائيل تمول حملات لتلويث بيانات الذكاء الاصطناعي بشأن غزة"
+}
