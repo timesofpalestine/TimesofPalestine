@@ -6,7 +6,13 @@
    "article": "https://www.hrw.org/news/2026/08/20/west-bank-israel-backed-settler-violence-drives-displacement",
    "name": "Human Rights Watch",
    "url": "https://www.hrw.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-20T04:00:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "9d2b663955",
- "score": 85.79,
+ "score": 85.76,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",

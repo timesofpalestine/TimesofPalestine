@@ -7,6 +7,12 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://www.maannews.net/news/2167269.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-19T05:40:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "ee23654ef4",
- "score": 84.22999999999999,
+ "score": 84.15,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
