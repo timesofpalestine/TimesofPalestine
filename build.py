@@ -625,11 +625,23 @@ def fetch_bytes(url):
         "User-Agent": UA,
         "Accept": "application/rss+xml, application/xml, text/xml, */*",
     })
-    with safe_urlopen(req, timeout=25) as r:
-        raw = r.read()
-        if r.headers.get("Content-Encoding") == "gzip" or raw[:2] == b"\x1f\x8b":
-            raw = gzip.decompress(raw)
-        return raw
+    # One quiet retry after a pause: Cloudflare/Substack hosts throw
+    # transient 403/429/5xx at CI runner IPs, and a feed dropped for one
+    # build starves its section for ten minutes (sweep 2026-08-19: eight
+    # outlets 403'd in a single run). Hard failures still raise on the
+    # second try and land in the feed-health warning.
+    for attempt in (0, 1):
+        try:
+            with safe_urlopen(req, timeout=25) as r:
+                raw = r.read()
+                if r.headers.get("Content-Encoding") == "gzip" or raw[:2] == b"\x1f\x8b":
+                    raw = gzip.decompress(raw)
+                return raw
+        except urllib.error.HTTPError as e:
+            if attempt == 0 and e.code in (403, 408, 429, 500, 502, 503, 504):
+                time.sleep(3)
+                continue
+            raise
 
 def resolve_html_entities(text):
     """Turn WordPress HTML entities (&nbsp;, &rsquo;, …) into real characters.
@@ -663,6 +675,10 @@ def parse_xml(raw):
         text = re.sub(r"^.*?<\?xml", "<?xml", resolved, count=1, flags=re.S)
         text = re.sub(r"&(?!amp;|lt;|gt;|quot;|apos;|#)", "&amp;", text)
         text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", text)
+        # A bare '<' inside text ("a < b", "<3") is an "invalid token" the
+        # scrubs above miss — it cost the Amnesty AR feed a whole build
+        # (sweep 2026-08-19). Escape any '<' that cannot open real markup.
+        text = re.sub(r"<(?![A-Za-z/?!])", "&lt;", text)
         text = re.sub(r'encoding="[^"]+"', 'encoding="utf-8"', text, count=1)
         return ET.fromstring(text.encode("utf-8"))
 
