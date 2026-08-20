@@ -6,7 +6,19 @@
    "article": "original:gaza-plan-fine-print-opinion-2026-08-19-19.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/8/18/rabbani_middle_east",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/news/audio/2026/aug/17/can-trumps-peace-plan-for-gaza-be-saved-the-latest",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-19T19:15:30+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "1364217f44",
- "score": 101.52,
+ "score": 101.49,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
