@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/08/uk-summons-israeli-envoy-over-west-bank-settlement-project",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-condemns-israels-e1-settlement-expansion-occupied-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "5266b80fa0",
- "score": 22.63,
+ "score": 22.33,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
