@@ -12,7 +12,7 @@
    "article": "https://shehabnews.com/post/162519/%D9%84%D9%86%D8%AF%D9%86-%D8%AA%D8%B3%D8%AA%D8%AF%D8%B9%D9%8A-%D8%A7%D9%84%D9%82%D8%A7%D8%A6%D9%85-%D8%A8%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D9%88%D8%AA%D9%84%D9%88-%D8%AD-%D8%A8%D8%B9%D9%82%D9%88%D8%A8%D8%A7%D8%AA-%D8%A8%D8%B3%D8%A8%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-E1",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.hrw.org/news/2026/08/19/west-bank-illegal-e1-settlement-tender-opens-for-bids",
@@ -21,16 +21,16 @@
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/08/uk-summons-israeli-envoy-over-west-bank-settlement-project",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-condemns-israels-e1-settlement-expansion-occupied-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israel-slams-uk-demand-halt-west-bank-settlement-project",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-08-20T07:20:00+00:00",
@@ -48,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "823494e8fb",
- "score": 87.69,
+ "score": 87.63,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
