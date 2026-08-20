@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+  <title id="t">West Bank voters registered, Gaza and Jerusalem mechanism still unannounced</title>
+  <desc id="d">Dark editorial graphic. Three panels: a solid panel for the West Bank showing 467 field registration centres open 15 to 19 August; dashed panels for the Gaza Strip and Jerusalem marked "mechanism not announced". A timeline runs from the 9 July 2026 election decree through online registration on 28 July and the West Bank field drive of 15 to 19 August to polling day on 28 November.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.055"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.015"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- eyebrow -->
+  <text x="90" y="76" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="4.5" fill="#c7a86b">LEGISLATIVE ELECTIONS · POLLING 28 NOVEMBER 2026</text>
+
+  <!-- title -->
+  <text x="90" y="140" font-family="'Source Serif 4',Georgia,serif" font-size="44" font-weight="700" fill="#f2eee8">Election commission registers West Bank voters,</text>
+  <text x="90" y="192" font-family="'Source Serif 4',Georgia,serif" font-size="44" font-weight="700" fill="#f2eee8">delays the mechanism for Gaza and Jerusalem</text>
+  <text x="90" y="240" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#aaa9a5" text-anchor="start" direction="rtl">لجنة الانتخابات المركزية تسجّل ناخبي الضفة الغربية وتؤجّل آلية غزة والقدس</text>
+
+  <!-- PANEL A : WEST BANK -->
+  <rect x="90" y="290" width="440" height="300" rx="6" fill="url(#panel)" stroke="#59a97d" stroke-width="2.5"/>
+  <rect x="90" y="290" width="440" height="6" fill="#286344"/>
+  <text x="120" y="342" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="3" fill="#f2eee8">WEST BANK</text>
+  <text x="120" y="374" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#59a97d" text-anchor="start" direction="rtl">الضفة الغربية</text>
+  <text x="120" y="470" font-family="'Source Serif 4',Georgia,serif" font-size="92" font-weight="700" fill="#c7a86b">467</text>
+  <text x="120" y="506" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">field registration centres</text>
+  <text x="120" y="536" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">open 15–19 August</text>
+  <text x="120" y="563" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">cities, villages and refugee camps</text>
+
+  <!-- PANEL B : GAZA -->
+  <rect x="570" y="290" width="440" height="300" rx="6" fill="url(#panel)" stroke="#c7a86b" stroke-width="2.5" stroke-dasharray="12 9"/>
+  <text x="600" y="342" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="3" fill="#f2eee8">GAZA STRIP</text>
+  <text x="600" y="374" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#c7a86b" text-anchor="start" direction="rtl">قطاع غزة</text>
+  <text x="600" y="470" font-family="'Source Serif 4',Georgia,serif" font-size="86" font-weight="700" fill="#8a1f2d">?</text>
+  <text x="600" y="506" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">mechanism not announced</text>
+  <text x="600" y="536" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">right to vote and to stand preserved</text>
+  <text x="600" y="563" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">no entry on the voter roll required</text>
+
+  <!-- PANEL C : JERUSALEM -->
+  <rect x="1050" y="290" width="440" height="300" rx="6" fill="url(#panel)" stroke="#c7a86b" stroke-width="2.5" stroke-dasharray="12 9"/>
+  <text x="1080" y="342" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="3" fill="#f2eee8">JERUSALEM</text>
+  <text x="1080" y="374" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#c7a86b" text-anchor="start" direction="rtl">القدس</text>
+  <text x="1080" y="470" font-family="'Source Serif 4',Georgia,serif" font-size="86" font-weight="700" fill="#8a1f2d">?</text>
+  <text x="1080" y="506" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">mechanism not announced</text>
+  <text x="1080" y="536" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">not part of the field drive</text>
+  <text x="1080" y="563" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">no published Israeli commitment</text>
+
+  <!-- timeline -->
+  <line x1="150" y1="700" x2="1410" y2="700" stroke="#3a3b3f" stroke-width="4"/>
+  <line x1="150" y1="700" x2="990" y2="700" stroke="#59a97d" stroke-width="4"/>
+
+  <circle cx="150" cy="700" r="10" fill="#59a97d"/>
+  <text x="150" y="668" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#f2eee8">9 July 2026</text>
+  <text x="150" y="738" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">presidential decree</text>
+  <text x="150" y="762" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">calls the vote</text>
+
+  <circle cx="570" cy="700" r="10" fill="#59a97d"/>
+  <text x="570" y="668" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#f2eee8">28 July</text>
+  <text x="570" y="738" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">online registration opens</text>
+  <text x="570" y="762" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">for citizens aged 17 and above</text>
+
+  <circle cx="990" cy="700" r="10" fill="#59a97d"/>
+  <text x="990" y="668" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#f2eee8">15–19 August</text>
+  <text x="990" y="738" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">five-day field drive,</text>
+  <text x="990" y="762" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">West Bank only</text>
+
+  <circle cx="1410" cy="700" r="12" fill="#111214" stroke="#C8102E" stroke-width="4"/>
+  <text x="1410" y="668" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#C8102E">28 November</text>
+  <text x="1410" y="738" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">polling day</text>
+  <text x="1410" y="762" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">third legislative election</text>
+
+  <line x1="90" y1="806" x2="1490" y2="806" stroke="#3a3b3f" stroke-width="1.5"/>
+  <text x="90" y="842" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Single electoral district; candidacy by list only, minimum 16 candidates, one woman in every three.</text>
+  <text x="90" y="868" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#8a8985">Source: Central Elections Commission statements carried by WAFA, Najah News and Raya. Last legislative vote: 2006.</text>
+</svg>
