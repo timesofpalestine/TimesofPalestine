@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The Gaza ledger: what Washington notified against what Gaza needs</title>
+  <desc id="desc">A bilingual proportional comparison of four figures on Gaza's financing as of 20 August 2026. Gaza's assessed reconstruction need is upwards of 71 billion dollars over five years, according to the joint World Bank, United Nations and European Union assessment published on 20 April 2026, of which housing alone accounts for more than 16 billion dollars across 371,888 damaged or destroyed homes. Board of Peace member states pledged 17 billion dollars at the inaugural meeting in Washington on 19 February 2026. About one per cent of those pledges had been transferred as of 20 May 2026, roughly 170 million dollars on that arithmetic. The State Department notified Congress on 30 July 2026 of 206 million dollars for the International Stabilization Force, reported by Reuters on 19 August 2026. The lower panel sets out what the 206 million dollars buys: 200 million for the force's equipment, infrastructure, vehicles and operating costs, and 6 million to repurpose nine armoured personnel carriers first destined for Nepal, with Albania and Kosovo as the first recipients.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a1f2d"/>
+      <stop offset=".5" stop-color="#286344"/>
+      <stop offset="1" stop-color="#c7a86b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#a9a8a4}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:17px}
+      .small{font-size:20px}
+      .body{font-size:22px}
+      .label{font-size:17px;font-weight:800;letter-spacing:1.4px}
+      .figure{font-size:34px;font-weight:800}
+      .name{font-size:25px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="88" y="80" class="serif ivory" font-size="50" font-weight="800">The Gaza ledger: the force is funded, the houses are not</text>
+  <text x="88" y="122" class="sans muted body">Four figures drawn to the same scale — one bar length equals one dollar amount</text>
+  <text x="1516" y="166" class="arabic ivory" font-size="35" font-weight="800" text-anchor="end">دفتر غزة.. القوة مموّلة والبيوت لا</text>
+  <text x="1516" y="200" class="arabic muted small" text-anchor="end">أربعة أرقام بمقياس واحد — طول العمود يساوي المبلغ</text>
+
+  <rect x="88" y="222" width="1428" height="4" fill="url(#spine)"/>
+
+  <!-- Row A: assessed need -->
+  <text x="120" y="286" class="sans gold label">WHAT GAZA NEEDS — ما تحتاجه غزة</text>
+  <text x="120" y="320" class="sans ivory name">Assessed reconstruction cost over five years</text>
+  <rect x="120" y="334" width="1300" height="32" rx="4" fill="#2b2c30" stroke="#c7a86b" stroke-width="2"/>
+  <text x="140" y="357" class="sans gold figure">more than $71bn</text>
+  <text x="1420" y="357" class="arabic muted small" text-anchor="end">كلفة إعادة الإعمار على خمس سنوات</text>
+  <text x="120" y="394" class="sans muted tiny">World Bank, United Nations and European Union joint assessment, published 20 April 2026 — housing alone $16bn, 371,888 homes damaged or destroyed</text>
+
+  <!-- Row B: pledged -->
+  <text x="120" y="446" class="sans green label">WHAT STATES PLEDGED — ما تعهّدت به الدول</text>
+  <rect x="120" y="460" width="310" height="32" rx="4" fill="#286344" stroke="#61aa80" stroke-width="2"/>
+  <text x="450" y="483" class="sans green figure">$17bn</text>
+  <text x="1420" y="483" class="arabic muted small" text-anchor="end">تعهدات مجلس السلام في واشنطن</text>
+  <text x="120" y="520" class="sans muted tiny">Board of Peace inaugural meeting, Washington, 19 February 2026 — including $10bn announced by President Trump for the United States</text>
+
+  <!-- Row C: transferred -->
+  <text x="120" y="572" class="sans gold label">WHAT ACTUALLY ARRIVED — ما وصل فعلاً</text>
+  <rect x="120" y="586" width="6" height="32" rx="2" fill="#c7a86b"/>
+  <text x="146" y="609" class="sans gold figure">about $170m</text>
+  <text x="392" y="609" class="sans muted small">— roughly one per cent of the pledges</text>
+  <text x="1420" y="609" class="arabic muted small" text-anchor="end">نحو 1% من التعهدات حتى 20 أيار/مايو</text>
+  <text x="120" y="646" class="sans muted tiny">Board of Peace report to the Security Council, 15 May 2026, as reported on 20 May; the Financial Times reported on 27 May that the World Bank-administered fund held no deposits</text>
+
+  <!-- Row D: notified for the force -->
+  <text x="120" y="698" class="sans red label">WHAT WASHINGTON NOTIFIED — ما أبلغت به واشنطن الكونغرس</text>
+  <rect x="120" y="712" width="6" height="32" rx="2" fill="#dc6572"/>
+  <text x="146" y="735" class="sans red figure">$206m</text>
+  <text x="278" y="735" class="sans muted small">— all of it for the International Stabilization Force</text>
+  <text x="1420" y="735" class="arabic muted small" text-anchor="end">206 مليون دولار كلها لقوة الاستقرار الدولية</text>
+
+  <!-- Footer band -->
+  <g filter="url(#shadow)">
+    <rect x="88" y="762" width="1428" height="92" rx="16" fill="#1a1b1e" stroke="#3a3b3f" stroke-width="2"/>
+    <text x="118" y="798" class="sans gold label">WHAT THE $206 MILLION BUYS — ماذا تشتري الـ206 ملايين</text>
+    <text x="118" y="834" class="sans ivory body">$200m for the force's equipment, infrastructure, vehicles and operating costs — $6m to repurpose nine armoured personnel carriers first destined for Nepal.</text>
+  </g>
+
+  <text x="88" y="880" class="sans muted tiny">Graphic: Times of Palestine — figures from the State Department notifications dated 30 July 2026 reported by Reuters, the World Bank–UN–EU assessment, and Board of Peace statements</text>
+  <text x="1516" y="880" class="arabic muted tiny" text-anchor="end">رسم: تايمز أوف فلسطين</text>
+</svg>

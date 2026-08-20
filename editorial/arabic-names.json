@@ -368,6 +368,42 @@
         "عبدالله سايي"
       ],
       "verified": "aljazeera.net + arabic.cnn ICC sanctions coverage write عبد الله سي, checked 2026-08-20"
+    },
+    {
+      "latin": "Tommy Piggott (State Department spokesman)",
+      "ar": "تومي بيغوت",
+      "wrong": [
+        "تومي بيغوث",
+        "تومي بيجوت"
+      ],
+      "verified": "state.gov Arabic translations page + skynewsarabia + nidaalwatan, 2026-08-20"
+    },
+    {
+      "latin": "Jared Kushner",
+      "ar": "جاريد كوشنر",
+      "wrong": [
+        "جارد كوشنير",
+        "جاريد كوشنير"
+      ],
+      "verified": "arabic.cnn + alquds.co.uk + skynewsarabia + arabic.euronews, 2026-08-20"
+    },
+    {
+      "latin": "Nickolay Mladenov (Board of Peace CEO)",
+      "ar": "نيكولاي ملادينوف",
+      "wrong": [
+        "ملادينوفتش",
+        "نقولاي ملادينوف"
+      ],
+      "verified": "arabic.cnn + alquds.co.uk + dostor.org, 2026-08-20"
+    },
+    {
+      "latin": "Zaha Hassan (Carnegie Endowment)",
+      "ar": "زها حسن",
+      "wrong": [
+        "زاها حسن",
+        "ضحى حسن"
+      ],
+      "verified": "ar.wikipedia entry + carnegie-mec.org, 2026-08-20"
     }
   ]
 }

@@ -572,6 +572,14 @@
       "source": "https://commons.wikimedia.org/wiki/File:Skyline_Turmus_Ayya_2023.jpg",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "note": "Cover for turmus-ayya-flag-home-seizure-2026-08-12; falls back to the West Bank category cover if the remote file dies"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20United%20States%20State%20Department%20Headquarters%20Building.jpg?width=640",
+      "rightsBasis": "public-domain — official US Department of State photograph, PD-USGov, served from Wikimedia Commons and verified at build time",
+      "credit": "The Harry S. Truman Building, State Department headquarters, Washington — Wikimedia Commons / US Department of State, public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:The_United_States_State_Department_Headquarters_Building.jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+      "note": "Cover for washington-brief-2026-08-20; falls back to the report's own ledger SVG if the remote file dies"
     }
   ]
 }
