@@ -7,6 +7,12 @@
    "name": "تايمز أوف فلسطين",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d9%84%d9%88%d9%85%d9%88%d9%86%d8%af-%d9%86%d8%aa%d9%86%d9%8a%d8%a7%d9%87%d9%88-%d8%a8%d9%8a%d9%86-%d9%85%d8%b9%d8%b1%d9%83%d8%aa%d9%8a-%d8%a7%d9%84%d9%84%d9%8a%d9%83%d9%88%d8%af-%d9%88%d8%a7%d9%84",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
   }
  ],
  "date": "2026-08-19T05:55:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "ca03f900a4",
- "score": 84.50999999999999,
+ "score": 84.47999999999999,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
