@@ -1,0 +1,38 @@
+{
+ "brief": "اقتحمت قوات الاحتلال الإسرائيلي مدينة أريحا، بحسب المركز الفلسطيني للإعلام. ونشر المركز مقاطع فيديو توثق جوانب من العملية العسكرية في المدينة، إذ ظهرت آليات عسكرية تتحرك في الشوارع وسط انتشار القوات الأمنية.\n\nولم توفر المصادر المتاحة تفاصيل إضافية حول أهداف الاقتحام أو نطاقه أو عدد القوات المشاركة فيه. وتشهد الضفة الغربية عمليات عسكرية متكررة تنفذها قوات الاحتلال، فيما تعتبر السلطات الفلسطينية هذه الاقتحامات انتهاكاً للسيادة الفلسطينية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316377",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730470",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-20T22:40:36+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316377",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "19e68f9542",
+ "score": 63.84,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قوات الاحتلال تقتحم مدينة أريحا"
+}
