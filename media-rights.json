@@ -549,6 +549,29 @@
       "source": "https://commons.wikimedia.org/wiki/File:United_States_Ambassador_to_Turkey_Thomas_Joseph_Barrack_Jr_(cropped).jpg",
       "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
       "note": "Lede for the Washington Brief of 2026-08-19; falls back to the brief's house SVG if the remote file dies"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/International%20Criminal%20Court%20Headquarters%2C%20Netherlands.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph served from Wikimedia Commons, verified at build time",
+      "credit": "International Criminal Court headquarters, The Hague — Wikimedia Commons / Hypergio, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:International_Criminal_Court_Headquarters,_Netherlands.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Fishermen%20in%20Gaza.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — CC BY 2.0 photograph served from Wikimedia Commons, verified at build time",
+      "credit": "Fishermen at Gaza's port — Wikimedia Commons / Trócaire, CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fishermen_in_Gaza.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "note": "Cover for gaza-fishermen-return-to-sea-2026; falls back to the humans category cover if the remote file dies"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Skyline%20Turmus%20Ayya%202023.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph served from Wikimedia Commons, verified at build time",
+      "credit": "Turmus Ayya, occupied West Bank — Wikimedia Commons / Amerhaddad, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Skyline_Turmus_Ayya_2023.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "note": "Cover for turmus-ayya-flag-home-seizure-2026-08-12; falls back to the West Bank category cover if the remote file dies"
     }
   ]
 }

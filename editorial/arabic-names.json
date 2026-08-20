@@ -350,6 +350,24 @@
         "ديمة بركات"
       ],
       "verified": "palinfo.com + alwatanvoice.com + samanews.ps arrest coverage all write ديما محمد أمين بركات, checked 2026-08-19"
+    },
+    {
+      "latin": "Tomoko Akane",
+      "ar": "توموكو أكاني",
+      "wrong": [
+        "توموكو أكانه",
+        "توموكو أكانى"
+      ],
+      "verified": "aljazeera.net + arabic.cnn + mc-doualiya sanctions coverage all write توموكو أكاني, checked 2026-08-20"
+    },
+    {
+      "latin": "Abdoulaye Seye",
+      "ar": "عبد الله سي",
+      "wrong": [
+        "عبد الله سيي",
+        "عبدالله سايي"
+      ],
+      "verified": "aljazeera.net + arabic.cnn ICC sanctions coverage write عبد الله سي, checked 2026-08-20"
     }
   ]
 }
