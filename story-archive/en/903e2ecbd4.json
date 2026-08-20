@@ -7,12 +7,6 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
-  },
-  {
-   "article": "https://www.theguardian.com/us-news/2026/aug/16/jared-kushner-hamas-gaza-meeting",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": false
   }
  ],
  "date": "2026-08-17T07:48:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": true,
  "pid": "903e2ecbd4",
- "score": 90.53999999999999,
+ "score": 90.50999999999999,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
