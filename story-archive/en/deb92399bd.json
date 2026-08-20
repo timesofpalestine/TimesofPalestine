@@ -6,13 +6,7 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-egypt-qatar-condemn-israeli-attacks-gaza",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/gaza-mediators-say-latest-israeli-strikes-undermine-efforts-end-conflict-critical",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-20T14:38:39+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "deb92399bd",
- "score": 62.82,
+ "score": 62.61,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
