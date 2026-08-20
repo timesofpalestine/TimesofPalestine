@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2167279.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/colonizers-burn-palestinian-family-home-near-hebron",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-20T07:11:42+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "56266beecd",
- "score": 49.32,
+ "score": 49.1,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
