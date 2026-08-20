@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/we-are-starving-palestinians-besieged-settlers-west-bank-homes-run-out",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/colonizers-burn-palestinian-family-home-near-hebron",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-20T14:50:19+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "7c3e09bbca",
- "score": 49.82,
+ "score": 49.59,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
