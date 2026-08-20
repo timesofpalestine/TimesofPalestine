@@ -31,6 +31,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217138&slug=%D8%B4%D8%A7%D9%87%D8%AFl-%D8%A8%D8%B9%D8%AF-3-%D8%B3%D9%86%D9%88%D8%A7%D8%AA-%D8%AA%D8%AD%D8%AA-%D8%A7%D9%84%D8%B1%D9%83%D8%A7%D9%85-%D8%AA%D8%B4%D9%8A%D9%8A%D8%B9-%D8%AC%D8%AB%D8%A7%D9%85%D9%8A%D9%86-50-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7-%D8%AA%D9%85-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D9%84%D9%87%D9%85-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
   }
  ],
  "date": "2026-08-20T08:53:00+00:00",
@@ -48,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "7ca192e79a",
- "score": 63.36,
+ "score": 63.01,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",

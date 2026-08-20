@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/8/20/20-08-clip-netanyahu-turkey-sot-il?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/maannews/36318",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-20T07:50:07+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "31ce4efd84",
- "score": 48.67,
+ "score": 48.31,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
