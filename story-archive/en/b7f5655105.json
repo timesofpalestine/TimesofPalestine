@@ -1,0 +1,68 @@
+{
+ "brief": "Human Rights Watch documented state-backed Israeli settler violence forcing Palestinian displacement across the West Bank, with dozens of communities at risk of erasure, Al Jazeera English reported. The organization called for international sanctions and suspension of military aid to Israel in response to the documented attacks on Palestinian communities.\n\nHRW said the settler operations operate with state support, targeting Palestinian population centers. The group's demands for sanctions and aid suspension reflect mounting international pressure over the systematic nature of the displacement. Palestinian communities across multiple areas of the West Bank face the threat of forced removal as settler violence intensifies.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/20/state-backed-israeli-settler-violence-forces-west-bank-displacement-hrw?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/08/20/west-bank-israel-backed-settler-violence-drives-displacement",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48242",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/162515/%D9%87%D9%8A%D9%88%D9%85%D9%86-%D8%B1%D8%A7%D9%8A%D8%AA%D8%B3-%D9%88%D9%88%D8%AA%D8%B4-%D8%B9%D9%86%D9%81-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D9%8A%D8%AA%D8%AD%D9%88%D9%84-%D8%A5%D9%84%D9%89-%D8%A3%D8%AF%D8%A7%D8%A9-%D9%84%D8%AA%D9%87%D8%AC%D9%8A%D8%B1-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86-%D9%85%D9%86-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/colonizers-burn-palestinian-family-home-near-hebron",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.maannews.net/news/2167284.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-20T09:08:58+00:00",
+ "dek": "HRW calls for sanctions and suspension of military aid as dozens of Palestinian communities are at risk of erasure.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/ap_6a81c3e78437b-1786889191.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/20/state-backed-israeli-settler-violence-forces-west-bank-displacement-hrw?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/20/state-backed-israeli-settler-violence-forces-west-bank-displacement-hrw?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b7f5655105",
+ "score": 49.85,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settler violence displaces Palestinians across West Bank, HRW says"
+}

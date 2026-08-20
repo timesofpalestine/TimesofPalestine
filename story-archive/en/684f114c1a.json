@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli military operations killed 10 people and wounded 25 others across Gaza in a single day, according to the Ma'an news agency. The casualties marked another spike in the cycle of violence gripping the territory.\n\nThe dead and injured were distributed across multiple locations within the enclave. No immediate breakdown of the casualties by location or circumstances was available. Gaza has faced repeated waves of military strikes that have claimed hundreds of lives over recent months, with civilian areas regularly affected by the operations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167287.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-attacks-kill-10-palestinians-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-20T08:55:42+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/c6ete4RplMutnGXdoBWIVbOtUNkjIInJMc37ktoF19pDQeuHUgQqN8tZNvbmR0ROHGPisV2s6A7Q2ITmlA46NfvJD9PBX5VBXOblOwCDd4m3GKIC2Pr_8xsB3hEgk82ellcOzoWlK97iS_ikv0N_ZFjgOjMJcRanA0nc7oVR9LmB5eP7PSFNPp_WDiZ7tJqI98UcHLSTdg1R-z6Baxc6c99Oub_XZD9noJJiZpQN_ipN6foiuSQkjJYjMckkrDlYKeE8_7KNlq3qIQGautWnZC7Y2Tt-fH8RICMPu9BaVyZRbRk-xdJK67Y4oII8yKxJsW5bfrLpB10GCCY2wf9nnA.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2167287.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167287.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "684f114c1a",
+ "score": 63.7,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Ten killed, 25 wounded in Gaza strike"
+}

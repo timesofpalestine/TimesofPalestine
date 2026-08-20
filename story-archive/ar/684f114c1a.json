@@ -1,0 +1,50 @@
+{
+ "brief": "أسفرت العمليات العسكرية خلال يوم واحد في قطاع غزة عن مقتل 10 أشخاص وإصابة 25 آخرين، بحسب وكالة معاً. ولم تتوفر معلومات إضافية حول توزيع الإصابات الجغرافي أو الظروف المحددة التي أدت إلى هذه الخسائر في الأرواح.\n\nيندرج هذا الحادث ضمن سياق الأوضاع الأمنية المتوترة التي يشهدها القطاع، حيث تتكرر حوادث القتل والإصابات بين السكان بشكل منتظم. وتعكس الأرقام الواردة استمرار التصعيد العسكري وتأثيره المباشر على المدنيين في المنطقة خلال الفترة الأخيرة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167287.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185112/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-10-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%8825-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-24-%D8%B3%D8%A7%D8%B9%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217137&slug=%D8%B5%D8%AD%D8%A9-%D8%BA%D8%B2%D8%A9-10-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%8823-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-24-%D8%B3%D8%A7%D8%B9%D8%A9",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-10-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-%d8%ae%d9%84%d8%a7%d9%84-24-%d8%b3%d8%a7%d8%b9%d8%a9-%d9%81%d9%8a-%d8%ba%d8%b2%d8%a9",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-20T08:55:42+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/c6ete4RplMutnGXdoBWIVbOtUNkjIInJMc37ktoF19pDQeuHUgQqN8tZNvbmR0ROHGPisV2s6A7Q2ITmlA46NfvJD9PBX5VBXOblOwCDd4m3GKIC2Pr_8xsB3hEgk82ellcOzoWlK97iS_ikv0N_ZFjgOjMJcRanA0nc7oVR9LmB5eP7PSFNPp_WDiZ7tJqI98UcHLSTdg1R-z6Baxc6c99Oub_XZD9noJJiZpQN_ipN6foiuSQkjJYjMckkrDlYKeE8_7KNlq3qIQGautWnZC7Y2Tt-fH8RICMPu9BaVyZRbRk-xdJK67Y4oII8yKxJsW5bfrLpB10GCCY2wf9nnA.jpg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2167287.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "وكالة معا (حصري)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167287.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "684f114c1a",
+ "score": 63.65,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "غزة تسجل 10 شهداء و25 مصاباً في يوم واحد"
+}
