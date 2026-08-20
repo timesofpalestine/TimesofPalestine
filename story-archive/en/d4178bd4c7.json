@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-egypt-qatar-condemn-israeli-attacks-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/08/turkey-egypt-qatar-condemn-israeli-attacks-gaza-call-israel-comply-ceasefire",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "d4178bd4c7",
- "score": 48.33,
+ "score": 48.19,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
