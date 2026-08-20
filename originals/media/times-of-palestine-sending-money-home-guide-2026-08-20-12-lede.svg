@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Gaza cash brokers take up to half of each remittance</title>
+<desc id="dsc">Chart of reported cash-out commissions charged by brokers in Gaza: 15 to 50 percent (Institute for Palestine Studies), up to 55 percent at peak in 2025 (Prism Reports citing Sada News and Al-Araby Al-Jadeed), about 5 percent at the start of the war rising to 40 percent in some cases (AP via Daily Sabah, July 2025), and 18 to 20 percent for a Palestinian Authority salary in November 2025 (Asharq Al-Awsat). Side figures: 93 percent of Gaza bank branches destroyed by end 2024, fewer than five of about 90 to 95 cash machines working, 3,500 PalPay authorised agents.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="cut" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#8a1f2d"/>
+<stop offset="1" stop-color="#C8102E"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- headline -->
+<text x="90" y="102" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Gaza cash brokers take up to half</text>
+<text x="90" y="154" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">of each remittance</text>
+<text x="90" y="204" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#c7a86b" text-anchor="start">سماسرة النقد في غزة يقتطعون حتى نصف قيمة الحوالة</text>
+
+<line x1="90" y1="234" x2="1510" y2="234" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- chart header -->
+<text x="90" y="278" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Cash-out commission (takyeesh) as a share of the transfer</text>
+<text x="90" y="310" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" text-anchor="start">عمولة التكييش: نسبة من قيمة الحوالة</text>
+
+<!-- gridlines -->
+<line x1="520" y1="340" x2="520" y2="666" stroke="#3a3b3f" stroke-width="2"/>
+<line x1="760" y1="340" x2="760" y2="666" stroke="#2a2b2f" stroke-width="1"/>
+<line x1="1000" y1="340" x2="1000" y2="666" stroke="#2a2b2f" stroke-width="1"/>
+<line x1="1240" y1="340" x2="1240" y2="666" stroke="#2a2b2f" stroke-width="1"/>
+<text x="520" y="692" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="middle">0%</text>
+<text x="760" y="692" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="middle">20%</text>
+<text x="1000" y="692" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="middle">40%</text>
+<text x="1240" y="692" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="middle">60%</text>
+
+<!-- row 1: IPS 15-50 -->
+<text x="90" y="374" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Institute for Palestine Studies</text>
+<text x="90" y="396" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">reported range across brokers</text>
+<rect x="520" y="367" width="720" height="24" fill="#26272b" rx="3"/>
+<rect x="700" y="367" width="420" height="24" fill="url(#cut)" rx="3"/>
+<text x="1136" y="386" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b">15–50%</text>
+
+<!-- row 2: Prism peak 55 -->
+<text x="90" y="454" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Prism Reports, peak in 2025</text>
+<text x="90" y="476" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">citing Sada News, Al-Araby Al-Jadeed</text>
+<rect x="520" y="447" width="720" height="24" fill="#26272b" rx="3"/>
+<rect x="520" y="447" width="660" height="24" fill="url(#cut)" rx="3"/>
+<text x="1196" y="466" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b">up to 55%</text>
+
+<!-- row 3: AP 5 to 40 -->
+<text x="90" y="534" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">AP, via Daily Sabah, July 2025</text>
+<text x="90" y="556" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">start of the war, then some cases</text>
+<rect x="520" y="527" width="720" height="24" fill="#26272b" rx="3"/>
+<rect x="580" y="527" width="420" height="24" fill="url(#cut)" rx="3"/>
+<circle cx="580" cy="539" r="7" fill="#c7a86b"/>
+<text x="1016" y="546" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b">5% to 40%</text>
+
+<!-- row 4: Asharq 18-20 -->
+<text x="90" y="614" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Asharq Al-Awsat, Nov 2025</text>
+<text x="90" y="636" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">PA salary, after branches reopened</text>
+<rect x="520" y="607" width="720" height="24" fill="#26272b" rx="3"/>
+<rect x="736" y="607" width="24" height="24" fill="url(#cut)" rx="3"/>
+<text x="776" y="626" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b">18–20%</text>
+
+<!-- why: banknote shortage strip -->
+<rect x="90" y="716" width="440" height="120" fill="#191a1d" stroke="#3a3b3f"/>
+<rect x="90" y="716" width="6" height="120" fill="#286344"/>
+<text x="118" y="772" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">93%</text>
+<text x="118" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">of Gaza bank branches destroyed by end-2024</text>
+<text x="118" y="822" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">World Bank, quoted by 7iber</text>
+
+<rect x="570" y="716" width="440" height="120" fill="#191a1d" stroke="#3a3b3f"/>
+<rect x="570" y="716" width="6" height="120" fill="#286344"/>
+<text x="598" y="772" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">under 5</text>
+<text x="598" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">of some 90–95 cash machines still working</text>
+<text x="598" y="822" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">TRT Arabi correspondent, August 2025</text>
+
+<rect x="1050" y="716" width="460" height="120" fill="#191a1d" stroke="#3a3b3f"/>
+<rect x="1050" y="716" width="6" height="120" fill="#286344"/>
+<text x="1078" y="772" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">3,500</text>
+<text x="1078" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">authorised PalPay agents — the electronic leg</text>
+<text x="1078" y="822" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">PalPay website</text>
+
+<text x="90" y="872" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Israel has barred cash entry to Gaza since October 2023 (Asharq Al-Awsat). Graphic: Times of Palestine</text>
+</svg>
