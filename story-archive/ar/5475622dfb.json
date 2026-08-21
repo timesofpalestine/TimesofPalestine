@@ -15,9 +15,15 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/316433",
+   "article": "https://t.me/Palinfo/316437",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428322",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
    "verified": true
   },
   {
@@ -36,12 +42,6 @@
    "article": "https://www.pbc.ps/76579-21",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Arabi21News/428317",
-   "name": "عربي21",
-   "url": "https://t.me/arabi21news",
    "verified": true
   },
   {
@@ -78,7 +78,7 @@
  "modified": null,
  "original": false,
  "pid": "5475622dfb",
- "score": 63.51,
+ "score": 63.29,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
