@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli settlers entered a stone quarry in Wadi Al-Rakheem near Hebron overnight and set fire to heavy machinery, Al Jazeera English reported. The attack destroyed equipment at the site in the southern occupied territory, adding to a pattern of property damage targeting Palestinian economic assets across the West Bank.\n\nWadi Al-Rakheem has experienced repeated incidents of settler violence. The quarry attack reflects broader tensions over resource extraction and land access in areas where Palestinian and Israeli communities overlap, with settlers frequently targeting Palestinian commercial operations and infrastructure in volatile pockets of the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-settlers-set-fire-to-heavy-machinery-at-west-bank-quarry?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-21T16:00:02+00:00",
+ "dek": "Israeli settlers entered a stone quarry in Wadi Al-Rakheem near Hebron overnight and set fire to heavy machinery.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787327992.jpg?resize=1920%2C1079&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-settlers-set-fire-to-heavy-machinery-at-west-bank-quarry?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-settlers-set-fire-to-heavy-machinery-at-west-bank-quarry?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "eab257f795",
+ "score": 49.88,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers torch equipment at West Bank quarry"
+}
