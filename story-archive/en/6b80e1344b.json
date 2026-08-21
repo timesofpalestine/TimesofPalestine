@@ -1,0 +1,38 @@
+{
+ "brief": "The United Nations reported Thursday that four of every five families sheltering across Gaza face critical or catastrophic hunger levels, IMEMC News said. The agency's assessment covered displaced Palestinians throughout the territory, where severe food insecurity has become widespread among those dependent on aid.\n\nThe UN also documented that 94 percent of Palestinians in Gaza require shelter assistance and basic household items. The finding reflects acute shortages in housing and essential goods across the population. Families in shelters face compounding challenges: inadequate food supplies coincide with lack of safe housing and fundamental necessities for daily survival.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/un-4-in-5-families-in-gaza-shelters-face-critical-or-catastrophic-hunger",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/four-out-every-five-families-gaza-face-critical-or-catastrophic-hunger",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-21T02:56:21+00:00",
+ "dek": "The United Nations said Thursday that four out of five families living in shelters across the Gaza Strip face critical or catastrophic levels of hunger, while 94 percent of Palestinians in the territory require shelter assistance and basic household items…",
+ "image": "https://imemc.org/wp-content/uploads/2026/08/Screenshot-2026-08-20-195014.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/un-4-in-5-families-in-gaza-shelters-face-critical-or-catastrophic-hunger",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/un-4-in-5-families-in-gaza-shelters-face-critical-or-catastrophic-hunger"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6b80e1344b",
+ "score": 49.86,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "UN finds four in five Gaza shelter families facing critical hunger"
+}
