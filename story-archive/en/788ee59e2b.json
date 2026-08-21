@@ -1,0 +1,32 @@
+{
+ "brief": "Tucker Carlson Network posted video content addressing conduct by Israeli settlers in Palestinian communities, the outlet reported. The network characterized the behavior as terrorism but did not specify incidents, locations, dates, or the identities of affected communities in the summary text provided.\n\nThe post directed viewers to a full conversation segment without disclosing the guest participant, specific allegations made during the discussion, or documentation presented as evidence. The outlet did not clarify whether the segment featured first-hand accounts, investigative reporting, or commentary on previously documented incidents.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.youtube.com/watch?v=ne-deYY_2IU",
+   "name": "Tucker Carlson Network",
+   "url": "https://www.youtube.com/@TuckerCarlson",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-21T23:00:37+00:00",
+ "dek": "Tucker on the Israeli settlers who are terrorizing communities. Watch the full conversation here:.",
+ "image": "https://i3.ytimg.com/vi/ne-deYY_2IU/hqdefault.jpg",
+ "lang": "en",
+ "link": "https://www.youtube.com/watch?v=ne-deYY_2IU",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "Tucker Carlson Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.youtube.com/watch?v=ne-deYY_2IU"
+ },
+ "modified": "2026-08-21T23:04:52+00:00",
+ "original": false,
+ "pid": "788ee59e2b",
+ "score": 49.95,
+ "source": "Tucker Carlson Network",
+ "source_id": "tucker",
+ "source_url": "https://www.youtube.com/@TuckerCarlson",
+ "title": "Tucker Carlson Network examines Israeli settler conduct in Palestinian areas"
+}
