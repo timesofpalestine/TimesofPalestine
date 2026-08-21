@@ -1,0 +1,44 @@
+{
+ "brief": "Turkey has accused Israeli Prime Minister Benjamin Netanyahu of genocide and requested an international arrest warrant through Interpol, according to Al Jazeera English. The legal action marks an escalation in diplomatic hostilities between Ankara and Jerusalem over Israel's military campaign and its treatment of aid efforts.\n\nThe warrant request follows Israel's attack on the Global Sumud Flotilla, an activist-led aid convoy attempting to deliver humanitarian assistance to Gaza. Turkish officials have cited the incident as evidence of war crimes and crimes against humanity. Netanyahu and Turkish President Recep Tayyip Erdogan have engaged in increasingly hostile rhetoric, with each accusing the other of aggression and misconduct in recent weeks.",
+ "cat": "economy",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/21/turkiye-accuses-israels-netanyahu-of-genocide-seeks-interpol-warrant?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/turkey-requests-interpol-red-notice-netanyahu-over-sumud-flotilla",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/turkey-seek-interpol-notice-netanyahu-gaza-flotilla-case",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-21T19:08:30+00:00",
+ "dek": "Netanyahu and Erdogan trade insults as Ankara seeks warrant for Israel's attacks on Global Sumud Flotilla activists.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/reuters_6a889d7c-1787338108.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/21/turkiye-accuses-israels-netanyahu-of-genocide-seeks-interpol-warrant?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/21/turkiye-accuses-israels-netanyahu-of-genocide-seeks-interpol-warrant?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5f84af47fc",
+ "score": 49.48,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Turkey seeks Interpol warrant against Netanyahu over Gaza operations"
+}
