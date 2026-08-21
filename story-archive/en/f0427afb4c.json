@@ -6,19 +6,7 @@
    "article": "original:haaretz-qabatiya-numbering-2026-08-19.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-forces-abduct-and-assault-palestinians-across-west-bank",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/08/1168171",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-19T13:30:00+00:00",
@@ -36,7 +24,7 @@
  "modified": null,
  "original": true,
  "pid": "f0427afb4c",
- "score": 82.59,
+ "score": 82.50999999999999,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

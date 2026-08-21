@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/exclusive-uk-condemns-abhorrent-ben-gvir-comments-killing-palestinians",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168171",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-20T16:21:12+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "77e37edb7e",
- "score": 57.42,
+ "score": 57.09,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
