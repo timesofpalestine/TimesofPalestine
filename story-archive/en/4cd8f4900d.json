@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "http://www.democracynow.org/2026/8/21/west_bank_settlers",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
    "article": "https://mondoweiss.net/2026/08/besieged-by-israeli-settlers-and-cut-off-from-the-outside-world-palestinian-families-on-a-west-bank-hilltop-refuse-to-leave",
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "4cd8f4900d",
- "score": 49.04,
+ "score": 48.81,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
