@@ -21,12 +21,6 @@
    "verified": true
   },
   {
-   "article": "https://imemc.org/article/israeli-attacks-kill-10-palestinians-in-gaza",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/world/2026/aug/19/israel-admits-it-soldiers-fired-at-car-in-which-hind-rajab-was-killed",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -48,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "d8658855fe",
- "score": 83.62,
+ "score": 83.59,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",

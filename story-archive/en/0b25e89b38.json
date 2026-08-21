@@ -7,6 +7,12 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://imemc.org/article/hebron-colonizers-kill-a-palestinian-child-injure-an-elderly-man",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
   }
  ],
  "date": "2026-08-21T13:07:22+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "0b25e89b38",
- "score": 57.42,
+ "score": 57.2,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
