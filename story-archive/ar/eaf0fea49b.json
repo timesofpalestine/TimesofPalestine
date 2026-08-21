@@ -21,15 +21,15 @@
    "verified": true
   },
   {
-   "article": "https://www.alquds.co.uk/%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d8%aa%d8%ad%d9%8a-%d8%ae%d8%a7%d8%b2%d9%85-%d9%88%d8%a7%d9%84%d8%af-%d8%a7%d9%84%d8%b4%d9%87%d9%8a%d8%af%d9%8a%d9%86-%d8%b1%d8%b9%d8%af-%d9%88%d8%b9",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
+   "article": "https://t.me/Palinfo/316408",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/316405",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
+   "article": "https://www.alquds.co.uk/%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d8%aa%d8%ad%d9%8a-%d8%ae%d8%a7%d8%b2%d9%85-%d9%88%d8%a7%d9%84%d8%af-%d8%a7%d9%84%d8%b4%d9%87%d9%8a%d8%af%d9%8a%d9%86-%d8%b1%d8%b9%d8%af-%d9%88%d8%b9",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
    "verified": true
   },
   {
@@ -49,6 +49,12 @@
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
    "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/564e4",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-08-21T01:12:51+00:00",
@@ -66,7 +72,7 @@
  "modified": null,
  "original": false,
  "pid": "eaf0fea49b",
- "score": 60.16,
+ "score": 59.9,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",

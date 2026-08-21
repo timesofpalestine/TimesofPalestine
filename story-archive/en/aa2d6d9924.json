@@ -13,6 +13,12 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/malaysia-denounces-israels-e1-settlement-expansion-occupied-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-20T07:10:00+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "aa2d6d9924",
- "score": 84.49000000000001,
+ "score": 84.44,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
