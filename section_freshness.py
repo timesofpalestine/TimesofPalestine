@@ -33,7 +33,7 @@ SECTIONS = [
     "gaza", "westbank", "politics", "economy", "accountability", "research",
     "bitcoin", "diaspora", "arts", "sports", "social", "opinion", "news",
     "humans", "health", "archive", "arabaid", "women", "israelipress",
-    "uspress", "prisoners",
+    "uspress", "prisoners", "pal48",
 ]
 
 DEFAULT_STALE_HOURS = 24

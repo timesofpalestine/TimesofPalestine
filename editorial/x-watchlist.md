@@ -28,6 +28,8 @@ Rules of use:
 | @AvichayAdraee | IDF Arabic spokesman | Strike and evacuation announcements affecting Gaza |
 | @StateDept | US State Department | US policy moves, envoy readouts |
 | @ochaopt | UN OCHA oPt | Casualty, aid and displacement data |
+| @AdalahRights | Adalah legal center (Haifa) | Speech prosecutions, Naqab demolitions, rights of Palestinian citizens of Israel — the pal48 section's Tier-1 documentation source |
+| @arab48website | عرب 48 | The community's own wire: crime-wave killings, Follow-Up Committee, Naqab — first source for the pal48 section |
 | @UNRWA | UNRWA | Aid corridors, shelters, famine indicators |
 | @WAFANewsEnglish | WAFA (official PA agency) | PA statements and presidency readouts |
 | @Palestine_UN | Palestine's UN mission | Riyad Mansour, Security Council moves |

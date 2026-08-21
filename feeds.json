@@ -497,6 +497,19 @@
       "filterPalestine": true,
       "maxAgeHours": 168,
       "cap": 4
+    },
+    {
+      "id": "radar-pal48",
+      "name": "راصد TOP",
+      "type": "gnews",
+      "query": "(\"Palestinian citizens of Israel\" OR \"Arab citizens of Israel\" OR \"Arab society in Israel\" OR \"Umm al-Fahm\" OR \"Negev Bedouin\" OR \"unrecognized villages\" OR \"Higher Follow-Up Committee\")",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "category": "pal48",
+      "site": "https://news.google.com",
+      "maxAgeHours": 168,
+      "cap": 5
     }
   ],
   "ar": [
@@ -793,6 +806,19 @@
       "filterPalestine": true,
       "maxAgeHours": 168,
       "cap": 4
+    },
+    {
+      "id": "radar-pal48-ar",
+      "name": "راصد TOP",
+      "type": "gnews",
+      "query": "(\"فلسطينيو الداخل\" OR \"عرب 48\" OR \"المجتمع العربي في إسرائيل\" OR \"الجريمة في المجتمع العربي\" OR \"لجنة المتابعة العليا\" OR \"أم الفحم\" OR \"بدو النقب\" OR \"القرى غير المعترف بها\")",
+      "hl": "ar",
+      "gl": "PS",
+      "ceid": "PS:ar",
+      "category": "pal48",
+      "site": "https://news.google.com",
+      "maxAgeHours": 168,
+      "cap": 5
     }
   ]
 }
