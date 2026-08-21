@@ -19,18 +19,6 @@
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
    "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48242",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
-   "name": "Mondoweiss",
-   "url": "https://mondoweiss.net/",
-   "verified": true
   }
  ],
  "date": "2026-08-20T19:13:00+00:00",
@@ -48,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "a704cfd18f",
- "score": 44.37,
+ "score": 44.14,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
