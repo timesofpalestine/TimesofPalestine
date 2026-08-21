@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2167287.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-attacks-kill-10-palestinians-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-20T08:55:42+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "684f114c1a",
- "score": 51.93,
+ "score": 51.69,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

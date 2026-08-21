@@ -19,6 +19,12 @@
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
    "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/43532-16",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": false
   }
  ],
  "date": "2026-08-20T07:10:00+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "623a3c4a67",
- "score": 85.14,
+ "score": 85.09,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
