@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli settlers set fire to a Palestinian home while a mother and her children slept inside, Al Jazeera English reported. The attack occurred in the occupied West Bank, where such incidents have become increasingly common.\n\nThe family was asleep when the fire was set. No immediate details emerged about whether anyone was injured, the extent of damage to the structure, or the identities of those responsible for the arson. The incident is among dozens of documented cases of settler violence targeting Palestinian homes and property across the West Bank in recent months.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-settlers-set-fire-to-palestinian-home-while-family-asleep?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-21T07:58:41+00:00",
+ "dek": "Israeli settlers set fire to a Palestinian home while a mother and her children were sleeping inside.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-08.55.08-1787299037.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-settlers-set-fire-to-palestinian-home-while-family-asleep?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-settlers-set-fire-to-palestinian-home-while-family-asleep?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0c15a039c2",
+ "score": 49.54,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers set fire to Palestinian home with family inside"
+}
