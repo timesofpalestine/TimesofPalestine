@@ -21,6 +21,18 @@
    "verified": true
   },
   {
+   "article": "https://www.alquds.co.uk/%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d8%aa%d8%ad%d9%8a-%d8%ae%d8%a7%d8%b2%d9%85-%d9%88%d8%a7%d9%84%d8%af-%d8%a7%d9%84%d8%b4%d9%87%d9%8a%d8%af%d9%8a%d9%86-%d8%b1%d8%b9%d8%af-%d9%88%d8%b9",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/316405",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
    "article": "https://t.me/AlQastalps/391040",
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
@@ -36,12 +48,6 @@
    "article": "https://t.me/QudsN/730507",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/316394",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
    "verified": true
   }
  ],
@@ -60,7 +66,7 @@
  "modified": null,
  "original": false,
  "pid": "eaf0fea49b",
- "score": 60.52,
+ "score": 60.16,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
