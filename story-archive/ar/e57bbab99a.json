@@ -25,6 +25,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/316572",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-08-21T16:30:00+00:00",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "e57bbab99a",
- "score": 47.25,
+ "score": 47.01,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
