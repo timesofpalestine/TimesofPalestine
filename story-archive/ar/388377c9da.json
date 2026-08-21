@@ -9,6 +9,18 @@
    "verified": true
   },
   {
+   "article": "https://t.me/Palinfo/316426",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730525",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
    "article": "https://www.pbc.ps/45643-51",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
@@ -25,6 +37,12 @@
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
    "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217149&slug=%D9%84%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%8013-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-%D9%8A%D8%AD%D8%A7%D8%B5%D8%B1%D9%88%D9%86-3-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D9%81%D9%8A-%D9%82%D8%B5%D8%B1%D8%A9",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": false
   }
  ],
  "date": "2026-08-21T06:14:00+00:00",
@@ -42,7 +60,7 @@
  "modified": null,
  "original": false,
  "pid": "388377c9da",
- "score": 48.95,
+ "score": 48.62,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
