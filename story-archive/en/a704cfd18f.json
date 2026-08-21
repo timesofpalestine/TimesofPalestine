@@ -15,6 +15,18 @@
    "verified": true
   },
   {
+   "article": "https://english.pnn.ps/news/48242",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/we-are-starving-palestinians-besieged-settlers-west-bank-homes-run-out",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -42,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "a704cfd18f",
- "score": 46.16,
+ "score": 45.94,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

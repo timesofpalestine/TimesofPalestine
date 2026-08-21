@@ -6,25 +6,7 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/8/20/08-20-208-20-2026-jewish-american-banned-sv-mp4?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.hrw.org/news/2026/08/20/west-bank-israel-backed-settler-violence-drives-displacement",
-   "name": "Human Rights Watch",
-   "url": "https://www.hrw.org/",
-   "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48242",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
-   "name": "Mondoweiss",
-   "url": "https://mondoweiss.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-20T19:09:33+00:00",
@@ -42,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "0b6b4ef635",
- "score": 46.12,
+ "score": 45.9,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
