@@ -6,7 +6,25 @@
    "article": "https://t.me/maannews/36339",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/jenin-israeli-army-kills-a-palestinian-man-shoots-a-child",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-man-during-raid-jenin",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-21T01:12:51+00:00",
@@ -24,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "eaf0fea49b",
- "score": 59.49,
+ "score": 58.19,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

@@ -9,33 +9,9 @@
    "verified": true
   },
   {
-   "article": "https://shehabnews.com/post/162559/%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84-%D8%A3%D8%A8%D9%88-%D8%B1%D8%B9%D8%AF-%D8%AE%D8%A7%D8%B2%D9%85-%D9%88%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%B2-%D8%AC%D8%AB%D9%85%D8%A7%D9%86%D9%87-%D9%81%D9%8A-%D8%AC%D9%86%D9%8A%D9%86",
-   "name": "وكالة شهاب (حصري)",
-   "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://qudsn.co/share/217147",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Arabi21News/428317",
-   "name": "عربي21",
-   "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/316408",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
-   "article": "https://www.alquds.co.uk/%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d8%aa%d8%ad%d9%8a-%d8%ae%d8%a7%d8%b2%d9%85-%d9%88%d8%a7%d9%84%d8%af-%d8%a7%d9%84%d8%b4%d9%87%d9%8a%d8%af%d9%8a%d9%86-%d8%b1%d8%b9%d8%af-%d9%88%d8%b9",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
+   "article": "https://qudsn.co/post?id=217147&slug=%D9%88%D8%A7%D9%84%D8%AF-%D8%A7%D9%84%D8%B4%D9%87%D9%8A%D8%AF%D9%8A%D9%86-%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%A7%D8%AF-%D9%81%D8%AA%D8%AD%D9%8A-%D8%AE%D8%A7%D8%B2%D9%85-%D8%A8%D8%B1%D8%B5%D8%A7%D8%B5-%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%81%D9%8A-%D8%AC%D9%86%D9%8A%D9%86",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
    "verified": true
   },
   {
@@ -61,6 +37,24 @@
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428322",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/316433",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730542",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-21T03:55:29+00:00",
@@ -78,7 +72,7 @@
  "modified": null,
  "original": false,
  "pid": "df2a94b42f",
- "score": 61.35,
+ "score": 60.06,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
