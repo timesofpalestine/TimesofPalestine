@@ -6,19 +6,7 @@
    "article": "https://www.aljazeera.net/politics/2026/8/21/%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d8%aa%d8%b3%d8%b1%d9%82-%d8%a8%d8%b7%d9%8a%d8%ae-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86-%d9%81%d9%8a%d8%af%d9%8a%d9%88-%d9%84%d8%ac%d9%86%d9%88%d8%af?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/316456",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/730554",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-21T06:59:00+00:00",
@@ -36,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "c56322e200",
- "score": 47.17,
+ "score": 46.89,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
