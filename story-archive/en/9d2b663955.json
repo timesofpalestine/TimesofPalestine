@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.theguardian.com/world/2026/aug/21/israeli-settler-attacks-shift-to-heart-of-territory-earmarked-for-palestinian-state",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
    "article": "https://english.pnn.ps/news/48242",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "9d2b663955",
- "score": 84.21,
+ "score": 84.18,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",
