@@ -1,0 +1,50 @@
+{
+ "brief": "Israeli soldiers were filmed throwing belongings from Palestinian homes in Qusra, according to Al Jazeera English. The video documented the soldiers removing and discarding residents' possessions during operations in the village.\n\nThe footage shows military personnel systematically emptying household items from multiple dwellings. Qusra, located in the occupied West Bank, has experienced repeated Israeli military incursions. The incident adds to longstanding complaints from Palestinian residents about property damage and displacement during security operations in the territory.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-soldiers-throw-belongings-from-besieged-palestinian-home?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/besieged-by-israeli-settlers-and-cut-off-from-the-outside-world-palestinian-families-on-a-west-bank-hilltop-refuse-to-leave",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/soldiers-abduct-ten-palestinians-colonizers-torch-equipment",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-21T13:01:54+00:00",
+ "dek": "Israeli soldiers were filmed throwing belongings from Palestinian homes in Qusra.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-13.55.51-1787317231.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-soldiers-throw-belongings-from-besieged-palestinian-home?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-soldiers-throw-belongings-from-besieged-palestinian-home?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4cd8f4900d",
+ "score": 49.9,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli soldiers throw belongings from Palestinian homes in Qusra"
+}

@@ -18,13 +18,7 @@
    "article": "https://imemc.org/article/jenin-israeli-army-kills-a-palestinian-man-shoots-a-child",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-man-during-raid-jenin",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-21T09:13:00+00:00",
@@ -42,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "d4d7903891",
- "score": 61.48,
+ "score": 61.25,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

@@ -19,18 +19,6 @@
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank",
-   "name": "Drop Site News",
-   "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/soldiers-abduct-ten-palestinians-colonizers-torch-equipment",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
   }
  ],
  "date": "2026-08-21T11:12:32+00:00",
@@ -48,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "75d2dcb20c",
- "score": 48.87,
+ "score": 48.64,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
