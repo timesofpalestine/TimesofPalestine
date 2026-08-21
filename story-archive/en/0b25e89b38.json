@@ -6,19 +6,7 @@
    "article": "https://t.me/maannews/36342",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://shehabnews.com/post/162573/%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%A7%D8%AF-%D9%81%D8%AA%D9%89-%D8%A8%D8%B1%D8%B5%D8%A7%D8%B5-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D8%AE%D9%84%D8%A7%D9%84-%D9%87%D8%AC%D9%88%D9%85-%D9%85%D8%B3%D9%84%D8%AD-%D8%B9%D9%84%D9%89-%D8%A8%D9%84%D8%AF%D8%A9-%D8%B3%D8%B9%D9%8A%D8%B1-%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84",
-   "name": "Shehab Wire (EN)",
-   "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settler-kills-palestinian-youth-and-wounds-elderly-man-near",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-21T13:07:22+00:00",
@@ -36,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "0b25e89b38",
- "score": 63.53,
+ "score": 63.33,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
