@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/36339",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-man-during-raid-jenin",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-21T01:12:51+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "eaf0fea49b",
- "score": 61.64,
+ "score": 61.45,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
