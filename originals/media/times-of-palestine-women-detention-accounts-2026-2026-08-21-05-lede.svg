@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Ninety Palestinian women held in Israeli prisons, April 2026</title>
+  <desc id="dsc">A grid of 90 figures represents the number of Palestinian women held by Israel, reported by the Palestinian Prisoners' Club on 22 April 2026. Highlighted subsets show 25 administrative detainees, 3 journalists, 2 girls, and 3 women in medical danger — 2 with cancer and 1 pregnant in her third month. Most are held in Damon prison in northern Israel. A quote from Khalida Jarrar, released 19 January 2025, reads: "I was shut inside a grave."</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <g id="w">
+      <circle cx="15" cy="9" r="8.5"/>
+      <path d="M15 21c-8.5 0-13 5.5-13 13.5V45h26V34.5C28 26.5 23.5 21 15 21z"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="66" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" letter-spacing="3.5" fill="#c7a86b">PRISONERS &#183; 22 APRIL 2026</text>
+
+  <text x="90" y="126" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">Israel holds 90 Palestinian women</text>
+  <text x="90" y="184" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#aaa9a5">as freed detainees describe abuse</text>
+  <text x="90" y="234" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#59a97d" text-anchor="start">&#1573;&#1587;&#1585;&#1575;&#1574;&#1610;&#1604; &#1578;&#1581;&#1578;&#1580;&#1586; 90 &#1571;&#1587;&#1610;&#1585;&#1577; &#1601;&#1604;&#1587;&#1591;&#1610;&#1606;&#1610;&#1577; &#1608;&#1605;&#1581;&#1585;&#1617;&#1585;&#1575;&#1578; &#1610;&#1585;&#1608;&#1610;&#1606; &#1575;&#1604;&#1575;&#1606;&#1578;&#1607;&#1575;&#1603;&#1575;&#1578;</text>
+
+  <line x1="90" y1="258" x2="1500" y2="258" stroke="#33353a" stroke-width="2"/>
+
+  <text x="90" y="290" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Each figure = one woman held</text>
+  <text x="410" y="290" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5" text-anchor="start">&#1603;&#1604; &#1585;&#1605;&#1586; = &#1571;&#1587;&#1610;&#1585;&#1577; &#1608;&#1575;&#1581;&#1583;&#1577;</text>
+
+  <!-- grid of 90 -->
+  <g fill="#c7a86b">
+    <use href="#w" x="110" y="300"/><use href="#w" x="164" y="300"/><use href="#w" x="218" y="300"/><use href="#w" x="272" y="300"/><use href="#w" x="326" y="300"/><use href="#w" x="380" y="300"/><use href="#w" x="434" y="300"/><use href="#w" x="488" y="300"/><use href="#w" x="542" y="300"/><use href="#w" x="596" y="300"/>
+    <use href="#w" x="110" y="352"/><use href="#w" x="164" y="352"/><use href="#w" x="218" y="352"/><use href="#w" x="272" y="352"/><use href="#w" x="326" y="352"/><use href="#w" x="380" y="352"/><use href="#w" x="434" y="352"/><use href="#w" x="488" y="352"/><use href="#w" x="542" y="352"/><use href="#w" x="596" y="352"/>
+    <use href="#w" x="110" y="404"/><use href="#w" x="164" y="404"/><use href="#w" x="218" y="404"/><use href="#w" x="272" y="404"/><use href="#w" x="326" y="404"/>
+  </g>
+  <g fill="#C8102E">
+    <use href="#w" x="380" y="404"/><use href="#w" x="434" y="404"/><use href="#w" x="488" y="404"/>
+  </g>
+  <g fill="#59a97d">
+    <use href="#w" x="542" y="404"/><use href="#w" x="596" y="404"/>
+  </g>
+  <g fill="#f2eee8">
+    <use href="#w" x="110" y="456"/><use href="#w" x="164" y="456"/><use href="#w" x="218" y="456"/>
+  </g>
+  <g fill="#3c3f45">
+    <use href="#w" x="272" y="456"/><use href="#w" x="326" y="456"/><use href="#w" x="380" y="456"/><use href="#w" x="434" y="456"/><use href="#w" x="488" y="456"/><use href="#w" x="542" y="456"/><use href="#w" x="596" y="456"/>
+    <use href="#w" x="110" y="508"/><use href="#w" x="164" y="508"/><use href="#w" x="218" y="508"/><use href="#w" x="272" y="508"/><use href="#w" x="326" y="508"/><use href="#w" x="380" y="508"/><use href="#w" x="434" y="508"/><use href="#w" x="488" y="508"/><use href="#w" x="542" y="508"/><use href="#w" x="596" y="508"/>
+    <use href="#w" x="110" y="560"/><use href="#w" x="164" y="560"/><use href="#w" x="218" y="560"/><use href="#w" x="272" y="560"/><use href="#w" x="326" y="560"/><use href="#w" x="380" y="560"/><use href="#w" x="434" y="560"/><use href="#w" x="488" y="560"/><use href="#w" x="542" y="560"/><use href="#w" x="596" y="560"/>
+    <use href="#w" x="110" y="612"/><use href="#w" x="164" y="612"/><use href="#w" x="218" y="612"/><use href="#w" x="272" y="612"/><use href="#w" x="326" y="612"/><use href="#w" x="380" y="612"/><use href="#w" x="434" y="612"/><use href="#w" x="488" y="612"/><use href="#w" x="542" y="612"/><use href="#w" x="596" y="612"/>
+    <use href="#w" x="110" y="664"/><use href="#w" x="164" y="664"/><use href="#w" x="218" y="664"/><use href="#w" x="272" y="664"/><use href="#w" x="326" y="664"/><use href="#w" x="380" y="664"/><use href="#w" x="434" y="664"/><use href="#w" x="488" y="664"/><use href="#w" x="542" y="664"/><use href="#w" x="596" y="664"/>
+    <use href="#w" x="110" y="716"/><use href="#w" x="164" y="716"/><use href="#w" x="218" y="716"/><use href="#w" x="272" y="716"/><use href="#w" x="326" y="716"/><use href="#w" x="380" y="716"/><use href="#w" x="434" y="716"/><use href="#w" x="488" y="716"/><use href="#w" x="542" y="716"/><use href="#w" x="596" y="716"/>
+  </g>
+
+  <line x1="700" y1="296" x2="700" y2="800" stroke="#33353a" stroke-width="2"/>
+
+  <!-- legend -->
+  <text x="750" y="316" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="2.5" fill="#c7a86b">WHO THEY ARE</text>
+  <text x="1000" y="316" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#c7a86b" text-anchor="start">&#1605;&#1614;&#1606; &#1607;&#1606;&#1617;</text>
+
+  <g fill="#c7a86b"><use href="#w" x="750" y="348"/></g>
+  <text x="800" y="372" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">25 held in administrative detention, no charge</text>
+  <text x="800" y="400" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" text-anchor="start">25 &#1585;&#1607;&#1606; &#1575;&#1604;&#1575;&#1593;&#1578;&#1602;&#1575;&#1604; &#1575;&#1604;&#1573;&#1583;&#1575;&#1585;&#1610; &#1576;&#1604;&#1575; &#1578;&#1607;&#1605;&#1577;</text>
+
+  <g fill="#C8102E"><use href="#w" x="750" y="426"/></g>
+  <text x="800" y="450" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">3 journalists</text>
+  <text x="800" y="478" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" text-anchor="start">3 &#1589;&#1581;&#1601;&#1610;&#1575;&#1578;</text>
+
+  <g fill="#59a97d"><use href="#w" x="750" y="504"/></g>
+  <text x="800" y="528" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">2 girls</text>
+  <text x="800" y="556" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" text-anchor="start">&#1591;&#1601;&#1604;&#1578;&#1575;&#1606;</text>
+
+  <g fill="#f2eee8"><use href="#w" x="750" y="582"/></g>
+  <text x="800" y="606" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">2 with cancer, 1 pregnant (three months)</text>
+  <text x="800" y="634" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" text-anchor="start">&#1571;&#1587;&#1610;&#1585;&#1578;&#1575;&#1606; &#1605;&#1589;&#1575;&#1576;&#1578;&#1575;&#1606; &#1576;&#1575;&#1604;&#1587;&#1585;&#1591;&#1575;&#1606; &#1608;&#1581;&#1575;&#1605;&#1604; &#1601;&#1610; &#1588;&#1607;&#1585;&#1607;&#1575; &#1575;&#1604;&#1579;&#1575;&#1604;&#1579;</text>
+
+  <line x1="750" y1="664" x2="1500" y2="664" stroke="#33353a" stroke-width="2"/>
+
+  <text x="750" y="698" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">Most are held in Damon prison, northern Israel</text>
+  <text x="750" y="726" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" text-anchor="start">&#1605;&#1593;&#1592;&#1605;&#1607;&#1606; &#1601;&#1610; &#1587;&#1580;&#1606; &#1575;&#1604;&#1583;&#1575;&#1605;&#1608;&#1606; &#1588;&#1605;&#1575;&#1604;&#1610; &#1573;&#1587;&#1585;&#1575;&#1574;&#1610;&#1604;</text>
+
+  <rect x="750" y="752" width="6" height="88" fill="#8a1f2d"/>
+  <text x="778" y="786" font-family="'Source Serif 4',Georgia,serif" font-size="30" font-style="italic" fill="#f2eee8">&#8220;I was shut inside a grave.&#8221;</text>
+  <text x="778" y="816" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">Khalida Jarrar, released 19 January 2025</text>
+  <text x="778" y="840" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5" text-anchor="start">&#1582;&#1575;&#1604;&#1583;&#1577; &#1580;&#1585;&#1575;&#1585;&#1548; &#1571;&#1601;&#1585;&#1580; &#1593;&#1606;&#1607;&#1575; &#1601;&#1610; 19 &#1610;&#1606;&#1575;&#1610;&#1585; 2025</text>
+
+  <text x="90" y="826" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Source: Palestinian Prisoners&#8217; Club statement, 22 April 2026</text>
+  <text x="90" y="854" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Total Palestinian and Arab prisoners: more than 9,600, early April 2026</text>
+  <text x="90" y="882" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" text-anchor="start">&#1575;&#1604;&#1605;&#1589;&#1583;&#1585;: &#1606;&#1575;&#1583;&#1610; &#1575;&#1604;&#1571;&#1587;&#1610;&#1585; &#1575;&#1604;&#1601;&#1604;&#1587;&#1591;&#1610;&#1606;&#1610;&#1548; 22 &#1606;&#1610;&#1587;&#1575;&#1606; 2026</text>
+</svg>
