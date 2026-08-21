@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.net/news/2026/8/21/%d8%ae%d8%b3%d8%a7%d8%b1%d8%a9-%d8%ab%d9%82%d9%8a%d9%84%d8%a9-%d9%84%d9%84%d9%8a%d9%83%d9%88%d8%af-%d9%86%d8%aa%d9%86%d9%8a%d8%a7%d9%87%d9%88-%d8%a3%d9%85%d8%a7%d9%85-%d8%aa%d8%b1%d8%a7%d8%ac%d8%b9?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428327",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
   }
  ],
  "date": "2026-08-21T08:05:22+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "ed6e3a380a",
- "score": 46.89,
+ "score": 46.67,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
