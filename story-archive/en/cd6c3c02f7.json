@@ -6,13 +6,7 @@
    "article": "https://www.youtube.com/watch?v=0egQk2XZbmI",
    "name": "Quincy Institute",
    "url": "https://quincyinst.org/",
-   "verified": true
-  },
-  {
-   "article": "https://mondoweiss.net/2026/08/destroying-agriculture-is-the-purpose-how-israel-is-drying-up-the-west-banks-most-fertile-farmlands",
-   "name": "Mondoweiss",
-   "url": "https://mondoweiss.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-18T21:22:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "cd6c3c02f7",
- "score": 69.13,
+ "score": 69.11,
  "source": "Quincy Institute",
  "source_id": "quincy",
  "source_url": "https://quincyinst.org/",

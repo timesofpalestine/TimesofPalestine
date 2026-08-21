@@ -15,6 +15,18 @@
    "verified": true
   },
   {
+   "article": "https://www.alquds.co.uk/%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d9%8a%d9%82%d8%aa%d9%84%d9%88%d9%86-%d9%81%d8%aa%d9%89-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d8%a7-%d8%a3%d9%85%d8%a7%d9%85-%d9%85%d9%86%d8%b2",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185157/%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%A7%D8%AF-%D9%81%D8%AA%D9%89-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-6-%D9%85%D9%88%D8%A7%D8%B7%D9%86%D9%8A%D9%86-%D9%81%D9%8A-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA-%D9%84%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D8%A8%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/QudsN/730561",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
@@ -27,15 +39,15 @@
    "verified": true
   },
   {
-   "article": "https://t.me/AlQastalps/391081",
-   "name": "القسطل · تيليغرام",
-   "url": "https://t.me/AlQastalps",
+   "article": "https://t.me/Palinfo/316482",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/316462",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
+   "article": "https://t.me/AlQastalps/391081",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
    "verified": true
   }
  ],
@@ -54,7 +66,7 @@
  "modified": null,
  "original": false,
  "pid": "746c768c81",
- "score": 63.16,
+ "score": 62.93,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
