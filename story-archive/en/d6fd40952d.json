@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/8/21/europe-canada-condemn-israeli-plans-for-new-west-bank-settlement?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/belgium-condemns-israels-e1-settlement-expansion",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-21T07:56:21+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "d6fd40952d",
- "score": 47.03,
+ "score": 46.82,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
