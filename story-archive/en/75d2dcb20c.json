@@ -1,0 +1,56 @@
+{
+ "brief": "Israeli settlers carry out approximately six attacks per day against Palestinians in the occupied West Bank, according to Al Jazeera English. The attacks occur across multiple locations and frequently involve confrontations over land and resources in the territory.\n\nAJLabs, the network's investigative unit, examined the mechanics of how Palestinian land is seized through settler violence and associated legal and administrative processes. The investigation tracked patterns of attack and dispossession affecting Palestinian communities. Researchers documented the frequency, locations, and methods used in the incidents spanning the occupied territory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/by-the-numbers-3/2026/8/21/who-does-the-law-serve-in-the-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48242",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/inside-the-slow-ethnic-cleansing-of-al-mughayyir-a-palestinian-village-besieged-by-israeli-settlers",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/soldiers-abduct-ten-palestinians-colonizers-torch-equipment",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-21T11:12:32+00:00",
+ "dek": "Israeli settlers attack six times a day in the occupied West Bank. AJLabs looks at how Palestinian land is taken.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/BTN_Thumbnail_Landscape_V07-1787310699.png?resize=1920%2C1008&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/8/21/who-does-the-law-serve-in-the-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/by-the-numbers-3/2026/8/21/who-does-the-law-serve-in-the-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "75d2dcb20c",
+ "score": 49.3,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers attack Palestinians six times daily in West Bank"
+}

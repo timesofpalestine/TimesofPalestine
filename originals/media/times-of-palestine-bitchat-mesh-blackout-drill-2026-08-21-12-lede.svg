@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Bluetooth mesh messaging tested by Palestinians during Gaza communications blackouts</title>
+<desc id="dsc">Diagram of four phones in a chain, each ringed by a dashed circle marking Bluetooth Low Energy range of 10 to 30 metres per hop. The overlapping rings form a working mesh; a fifth, distant phone sits outside the chain, its link broken, marked "beyond a few hundred metres the mesh falters". Below, figures from the report: 430,000 daily active users in India on 26 July, 48,781 downloads in Nepal on 8 September 2025, 12,581 installs in Indonesia by 3 September 2025, and a planned Wi-Fi Direct range of 100 to 200 metres.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="link" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#59a97d" stop-opacity=".35"/>
+<stop offset=".5" stop-color="#59a97d" stop-opacity="1"/>
+<stop offset="1" stop-color="#59a97d" stop-opacity=".35"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="72" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#c7a86b">GAZA · COMMUNICATIONS BLACKOUTS</text>
+<text x="90" y="136" font-family="'Source Serif 4',Georgia,serif" font-size="54" font-weight="700" fill="#f2eee8">Palestinians test Bluetooth mesh</text>
+<text x="90" y="192" font-family="'Source Serif 4',Georgia,serif" font-size="54" font-weight="700" fill="#f2eee8">messaging as blackouts cut Gaza</text>
+<text x="90" y="238" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#aaa9a5" direction="rtl">رسائل عبر شبكة بلوتوث مع انقطاع الاتصالات في غزة</text>
+
+<rect x="1252" y="46" width="258" height="58" rx="6" fill="#8a1f2d" fill-opacity=".22" stroke="#8a1f2d" stroke-width="2"/>
+<text x="1381" y="83" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" font-weight="700" fill="#f2eee8">bitchat mesh v1.7.1</text>
+
+<line x1="90" y1="268" x2="1510" y2="268" stroke="#f2eee8" stroke-opacity=".18" stroke-width="2"/>
+
+<!-- range rings -->
+<g fill="none" stroke="#59a97d" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 8">
+<circle cx="200" cy="430" r="115"/>
+<circle cx="430" cy="430" r="115"/>
+<circle cx="660" cy="430" r="115"/>
+<circle cx="890" cy="430" r="115"/>
+</g>
+<circle cx="1350" cy="430" r="115" fill="none" stroke="#8a1f2d" stroke-opacity=".55" stroke-width="2" stroke-dasharray="6 8"/>
+
+<!-- links -->
+<g stroke="url(#link)" stroke-width="5" stroke-linecap="round">
+<line x1="236" y1="430" x2="394" y2="430"/>
+<line x1="466" y1="430" x2="624" y2="430"/>
+<line x1="696" y1="430" x2="854" y2="430"/>
+</g>
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" fill="#c7a86b" text-anchor="middle">
+<text x="315" y="298">10–30 m</text>
+<text x="545" y="298">10–30 m</text>
+<text x="775" y="298">10–30 m</text>
+</g>
+
+<!-- broken link -->
+<line x1="930" y1="430" x2="1310" y2="430" stroke="#8a1f2d" stroke-width="4" stroke-dasharray="10 12"/>
+<g stroke="#C8102E" stroke-width="6" stroke-linecap="round">
+<line x1="1102" y1="412" x2="1138" y2="448"/>
+<line x1="1138" y1="412" x2="1102" y2="448"/>
+</g>
+<text x="1120" y="356" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" fill="#C8102E">beyond a few hundred metres,</text>
+<text x="1120" y="380" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" font-weight="700" fill="#C8102E">the mesh falters</text>
+
+<!-- phones -->
+<g>
+<g>
+<rect x="168" y="372" width="64" height="116" rx="11" fill="#1a1b1e" stroke="#c7a86b" stroke-width="3"/>
+<rect x="177" y="384" width="46" height="86" rx="4" fill="#f2eee8" fill-opacity=".14"/>
+<circle cx="200" cy="479" r="3.5" fill="#c7a86b"/>
+</g>
+<g>
+<rect x="398" y="372" width="64" height="116" rx="11" fill="#1a1b1e" stroke="#c7a86b" stroke-width="3"/>
+<rect x="407" y="384" width="46" height="86" rx="4" fill="#f2eee8" fill-opacity=".14"/>
+<circle cx="430" cy="479" r="3.5" fill="#c7a86b"/>
+</g>
+<g>
+<rect x="628" y="372" width="64" height="116" rx="11" fill="#1a1b1e" stroke="#c7a86b" stroke-width="3"/>
+<rect x="637" y="384" width="46" height="86" rx="4" fill="#f2eee8" fill-opacity=".14"/>
+<circle cx="660" cy="479" r="3.5" fill="#c7a86b"/>
+</g>
+<g>
+<rect x="858" y="372" width="64" height="116" rx="11" fill="#1a1b1e" stroke="#c7a86b" stroke-width="3"/>
+<rect x="867" y="384" width="46" height="86" rx="4" fill="#f2eee8" fill-opacity=".14"/>
+<circle cx="890" cy="479" r="3.5" fill="#c7a86b"/>
+</g>
+<g opacity=".55">
+<rect x="1318" y="372" width="64" height="116" rx="11" fill="#1a1b1e" stroke="#aaa9a5" stroke-width="3"/>
+<rect x="1327" y="384" width="46" height="86" rx="4" fill="#f2eee8" fill-opacity=".08"/>
+<circle cx="1350" cy="479" r="3.5" fill="#aaa9a5"/>
+</g>
+</g>
+
+<text x="90" y="578" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">dashed ring = Bluetooth Low Energy range of one phone · Wi-Fi Direct support is planned, not shipped</text>
+<text x="90" y="616" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#f2eee8">Density, not distance: every relay must be a phone with bitchat installed, awake, Bluetooth on.</text>
+<text x="90" y="648" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" direction="rtl">الكثافة لا المسافة: كل هاتف في السلسلة يجب أن يكون فعّالاً والبلوتوث مفتوحاً</text>
+
+<!-- stats -->
+<g>
+<rect x="90" y="676" width="330" height="140" rx="8" fill="#f2eee8" fill-opacity=".04" stroke="#f2eee8" stroke-opacity=".12"/>
+<text x="112" y="736" font-family="'Source Serif 4',Georgia,serif" font-size="40" font-weight="700" fill="#c7a86b">430,000</text>
+<text x="112" y="770" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">daily active users in India,</text>
+<text x="112" y="794" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">26 July (Sensor Tower)</text>
+
+<rect x="445" y="676" width="330" height="140" rx="8" fill="#f2eee8" fill-opacity=".04" stroke="#f2eee8" stroke-opacity=".12"/>
+<text x="467" y="736" font-family="'Source Serif 4',Georgia,serif" font-size="40" font-weight="700" fill="#c7a86b">48,781</text>
+<text x="467" y="770" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">downloads in Nepal on</text>
+<text x="467" y="794" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">8 September 2025</text>
+
+<rect x="800" y="676" width="330" height="140" rx="8" fill="#f2eee8" fill-opacity=".04" stroke="#f2eee8" stroke-opacity=".12"/>
+<text x="822" y="736" font-family="'Source Serif 4',Georgia,serif" font-size="40" font-weight="700" fill="#c7a86b">12,581</text>
+<text x="822" y="770" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">installs in Indonesia by</text>
+<text x="822" y="794" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">3 September 2025</text>
+
+<rect x="1155" y="676" width="330" height="140" rx="8" fill="#286344" fill-opacity=".18" stroke="#59a97d" stroke-opacity=".45"/>
+<text x="1177" y="736" font-family="'Source Serif 4',Georgia,serif" font-size="40" font-weight="700" fill="#59a97d">100–200 m</text>
+<text x="1177" y="770" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">planned Wi-Fi Direct range,</text>
+<text x="1177" y="794" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">not yet released</text>
+</g>
+
+<text x="90" y="862" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Sources: bitchat mesh App Store release notes 1.7.1 and 1.6.0 · Gizmodo · Rest of World / Sensor Tower · No field test inside Gaza has been published.</text>
+</svg>

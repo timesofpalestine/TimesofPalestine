@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/un-4-in-5-families-in-gaza-shelters-face-critical-or-catastrophic-hunger",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/four-out-every-five-families-gaza-face-critical-or-catastrophic-hunger",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-21T02:56:21+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "6b80e1344b",
- "score": 43.88,
+ "score": 43.56,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
