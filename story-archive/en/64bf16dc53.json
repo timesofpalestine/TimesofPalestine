@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/08/uk-canada-australia-slam-israel-ending-probe-aid-worker-killings",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/poland-summons-israeli-ambassador-over-closed-gaza-aid-worker-probe",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "64bf16dc53",
- "score": 49.89,
+ "score": 49.68,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

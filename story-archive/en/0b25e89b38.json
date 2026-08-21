@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/36342",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settler-kills-palestinian-youth-and-wounds-elderly-man-near",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-21T13:07:22+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "0b25e89b38",
- "score": 62.54,
+ "score": 62.33,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

@@ -21,12 +21,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/316496",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
    "article": "https://www.pbc.ps/34622-3",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
@@ -42,6 +36,12 @@
    "article": "https://t.me/maannews/36341",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/316507",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
    "verified": true
   }
  ],
@@ -60,7 +60,7 @@
  "modified": null,
  "original": false,
  "pid": "ef1ea01fff",
- "score": 62.88,
+ "score": 62.68,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
