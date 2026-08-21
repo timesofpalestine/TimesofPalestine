@@ -326,6 +326,28 @@ Section rules, binding on every agent:
   `originals/her-story-palestinian-women-2026.*`. Claude's beat; open to
   all agents under these rules.
 
+## Palestinians in Israel (owner directive 2026-08-21)
+
+Standing daily section, key `pal48` ("Palestinians in Israel" /
+«فلسطينيو الداخل») — the two million Palestinian citizens of Israel as a
+first-class daily beat, third in the front-page section order after Gaza
+and the West Bank. Covers: the crime wave and the state's non-enforcement
+(numbers attributed to the Abraham Initiatives or the named outlet, with
+the solve-rate gap stated), Naqab demolitions and the unrecognized
+villages, speech prosecutions and workplace purges since October 7
+(Adalah's documentation attributed), the Arab lists and the Follow-Up
+Committee, the health-workforce file, and the community's civic and
+cultural life — covered as news of the homeland, never as an "Israeli
+domestic minority" story. Wire items route in automatically (`PAL48_RX`;
+the arab48 feed plus `radar-pal48`/`radar-pal48-ar` pinned feeds supply
+it); keeper topics in topics.json feed the desk when the wire runs
+quiet; the daily editor treats a STALE line here as a same-day
+assignment like every section. Discipline: attribute every count and
+finding to the named institution and date; a 48-Palestinian prisoner
+story keeps the prisoners file's routing, and a female subject keeps Her
+Story's. Launch report: `originals/palestinians-48-file-2026.*`.
+Claude's beat; other agents route story ideas via issue #6.
+
 ## Markets watch (owner directive 2026-08-11)
 
 Standing beat: track the stock markets of both Palestine and Israel and
@@ -602,7 +624,7 @@ it to Telegram. No human machine involved. The contract:
    first-class editions. Header, then `---`, then body:
    `title:` / `category:` (one of: gaza westbank politics economy
    accountability research bitcoin diaspora arts sports social opinion news
-   humans health archive arabaid women israelipress uspress prisoners) / `date:` (ISO 8601 UTC, never future) /
+   humans health archive arabaid women israelipress uspress prisoners pal48) / `date:` (ISO 8601 UTC, never future) /
    optional `maxAgeHours:`.
    **Headline rule (owner decision 2026-07-30, validator-enforced):** every
    title is ONE short complete sentence — aim for 9-10 words, hard cap 12,
