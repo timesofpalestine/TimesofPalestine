@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/news/turkey-requests-interpol-red-notice-netanyahu-over-sumud-flotilla",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/turkey-seeks-interpol-red-notices-netanyahu-over-gaza-flotilla",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-21T11:58:44+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "6161d3a0be",
- "score": 62.54,
+ "score": 62.31,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
