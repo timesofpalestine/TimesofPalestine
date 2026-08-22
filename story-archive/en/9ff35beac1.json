@@ -1,0 +1,38 @@
+{
+ "brief": "An Israeli drone strike killed one Palestinian and injured several others Saturday after targeting a civilian home in Deir al-Balah, a city in the central Gaza Strip, IMEMC News reported. The strike destroyed or damaged the residence and left multiple people wounded, though specific casualty figures were not immediately available.\n\nIn a separate incident the same day, a Palestinian child was shot with live ammunition in Beit Lahia, located in northern Gaza. Details on the child's condition were not provided.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/gaza-israeli-drone-strike-kills-a-palestinian-injures-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-palestinian-home-kills-least-one-central-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-22T16:00:30+00:00",
+ "dek": "An Israeli drone strike killed one Palestinian and injured others on Saturday, after targeting a citizen’s home in the central Gaza Strip city of Deir al-Balah, while a Palestinian child was shot with live ammunition in Beit Lahia, in the north. Al-Jazeera…",
+ "image": "https://imemc.org/wp-content/uploads/2026/08/2026-08-22-13.36.16-e1787421478795.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/gaza-israeli-drone-strike-kills-a-palestinian-injures-others",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/gaza-israeli-drone-strike-kills-a-palestinian-injures-others"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9ff35beac1",
+ "score": 62.41,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli drone strike kills Palestinian in central Gaza"
+}

@@ -9,6 +9,18 @@
    "verified": true
   },
   {
+   "article": "https://www.alquds.co.uk/%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-17-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d8%a7-%d8%a8%d8%b1%d8%b5%d8%a7%d8%b5-%d8%a7%d9%84%d8%ac%d9%8a%d8%b4-%d9%88%d8%a7%d8%b9%d8%aa%d8%af%d8%a7%d8%a1%d8%a7%d8%aa",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185215/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A8%D8%B1%D8%B5%D8%A7%D8%B5-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%88%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/Arabi21News/428365",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
@@ -42,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "bd77864a38",
- "score": 62.46,
+ "score": 62.23,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
