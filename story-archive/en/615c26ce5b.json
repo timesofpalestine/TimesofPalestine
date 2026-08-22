@@ -7,6 +7,12 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://shehabnews.com/post/162666/%D9%82%D8%A7%D8%B3%D9%85-%D9%86%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D8%A3%D9%88%D8%B3%D8%B9-%D8%AA%D9%88%D8%A7%D9%81%D9%82-%D9%88%D8%B7%D9%86%D9%8A-%D9%85%D9%85%D9%83%D9%86-%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": false
   }
  ],
  "date": "2026-08-22T06:15:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "615c26ce5b",
- "score": 85.91,
+ "score": 85.86,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
