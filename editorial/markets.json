@@ -1,10 +1,10 @@
 {
   "comment": "Markets watch fallback (owner directive 2026-08-11). When the live Al-Quds fetch fails (PEX publishes no API), the strip renders this value with its date. The daily editor refreshes it each cycle from pex.ps / Investing.com PLE — always the latest CLOSE, always dated, never invented.",
   "alquds": {
-    "level": 670.48,
-    "date": "2026-08-19",
-    "source": "Palestine Exchange — Al-Quds index previous close (Investing.com PLE)"
+    "level": 673.5,
+    "date": "2026-08-20",
+    "source": "Palestine Exchange — Al-Quds index close (Investing.com PLE)"
   },
-  "lastChecked": "2026-08-20",
-  "lastCheckedNote": "Daily-editor sweep 2026-08-20: advanced the fallback to the Wednesday 19 August close at 670.48, read as the previous-close field on Investing.com's Al-Quds (PLE) quote while the 20 August session was trading (670.01 intraday at 07:20 UTC). pex.ps still returns HTTP 403 to server-side clients and raya.ps's newest directly fetchable session report remains 2026-08-12 at 675.12, so the Arabic wire could not confirm the 19 August figure independently; it is carried as the latest attributable CLOSE and dated as such, one trading day behind at most. Verified run this month: 646.15 (Aug 2), 648.69 (Aug 4), 650.22 (Aug 5), 664.06 (Aug 9), 670.56 (Aug 10), 675.12 (Aug 12), 673.70 (Aug 16), 672.43 (Aug 18), 670.48 (Aug 19). Nothing invented; every level carries its date."
+  "lastChecked": "2026-08-22",
+  "lastCheckedNote": "Daily-editor sweep 2026-08-22: advanced the fallback to the Thursday 20 August close at 673.50, read from Investing.com's Al-Quds (PLE) quote page, whose previous-close field carried 670.48 — the 19 August level this file already held, which corroborates the sequence. PEX trades Sunday to Thursday, so 20 August was the last completed session before the weekend and this is a settled close, not an intraday print. pex.ps still returns HTTP 403 to server-side clients and raya.ps's newest directly fetchable session report remains 2026-08-12 at 675.12, so the Arabic wire could not confirm the figure independently. Verified run this month: 646.15 (Aug 2), 648.69 (Aug 4), 650.22 (Aug 5), 664.06 (Aug 9), 670.56 (Aug 10), 675.12 (Aug 12), 673.70 (Aug 16), 672.43 (Aug 18), 670.48 (Aug 19), 673.50 (Aug 20). Nothing invented; every level carries its date."
 }
