@@ -37,12 +37,6 @@
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
    "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/soldiers-abduct-ten-palestinians-colonizers-torch-equipment",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
   }
  ],
  "date": "2026-08-20T04:00:00+00:00",
@@ -60,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "9d2b663955",
- "score": 82.7,
+ "score": 82.64,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",
