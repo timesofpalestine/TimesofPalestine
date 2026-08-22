@@ -14,64 +14,105 @@
    "slug": "qusra",
    "pattern": "qusra|قصرة",
    "min": 2,
-   "en": {"name": "The Qusra File",
-          "dek": "Day twelve at Ras al-Ein: the settlers' camp still stands over three houses and fifteen people, soldiers raided a home in the village on 19 August and wounded a 15-year-old girl and a 70-year-old woman according to the Red Crescent, sixteen other homes have been taken as barracks, and on 20 August the army cleared an unauthorised outpost near Deir Istiya while leaving this one in place — every development, as we reported it."},
-   "ar": {"name": "ملف قصرة",
-          "dek": "اليوم الثاني عشر في رأس العين: مخيم المستوطنين ما زال فوق ثلاثة منازل وخمسة عشر إنساناً، وجنود اقتحموا منزلاً في البلدة في 19 آب/أغسطس فأصابوا فتاة في الخامسة عشرة وسيدة في السبعين بحسب الهلال الأحمر، وستة عشر منزلاً آخر تحوّلت إلى ثكنات، وفي 20 آب أخلى الجيش بؤرة غير مرخّصة قرب دير استيا وترك هذه في مكانها — كل التطورات كما غطيناها أولاً بأول."}
+   "en": {
+    "name": "The Qusra File",
+    "dek": "Day fourteen at Ras al-Ein: no lifting of the siege has been reported, the settlers' camp still stands over three houses and fifteen people of the Abu Rida and Hassan families, the municipality restored the water and power the settlers had cut after eight days but food and medicine still reach the hill only when they are let through, sixteen other homes have been taken as barracks, and the army that cleared an unauthorised outpost near Deir Istiya on 20 August has left this one in place — every development, as we reported it."
+   },
+   "ar": {
+    "name": "ملف قصرة",
+    "dek": "اليوم الرابع عشر في رأس العين: لم يُعلن رفع الحصار، ومخيم المستوطنين ما زال فوق ثلاثة منازل وخمسة عشر إنساناً من عائلتي أبو ريدة وحسن، وأعادت البلدية الماء والكهرباء اللتين قطعهما المستوطنون بعد ثمانية أيام، لكن الغذاء والدواء لا يصلان التلة إلا حين يُسمح لهما، وستة عشر منزلاً آخر تحوّلت إلى ثكنات، والجيش الذي أخلى بؤرة غير مرخّصة قرب دير استيا في 20 آب ترك هذه في مكانها — كل التطورات كما غطيناها أولاً بأول."
+   }
   },
   {
    "slug": "icc-icj",
    "pattern": "\\bicc\\b|\\bicj\\b|arrest warrant|international criminal court|international court of justice|world court|الجنائية الدولية|العدل الدولية|مذكرة (?:اعتقال|توقيف)",
    "min": 2,
-   "en": {"name": "The Hague Files",
-          "dek": "The ICC warrants and the ICJ cases on Palestine — every filing, ruling, sanction and state response, with the two courts kept distinct."},
-   "ar": {"name": "ملفات لاهاي",
-          "dek": "مذكرات الجنائية الدولية وقضايا العدل الدولية بشأن فلسطين — كل مرافعة وحكم وعقوبة وموقف دولة، مع التمييز الدائم بين المحكمتين."}
+   "en": {
+    "name": "The Hague Files",
+    "dek": "The ICC warrants and the ICJ cases on Palestine — every filing, ruling, sanction and state response, with the two courts kept distinct."
+   },
+   "ar": {
+    "name": "ملفات لاهاي",
+    "dek": "مذكرات الجنائية الدولية وقضايا العدل الدولية بشأن فلسطين — كل مرافعة وحكم وعقوبة وموقف دولة، مع التمييز الدائم بين المحكمتين."
+   }
   },
   {
    "slug": "israeli-election",
    "pattern": "knesset|israeli election|likud primar|إسرائيل.*انتخابات|انتخابات.*إسرائيل|الكنيست|الليكود",
    "min": 2,
-   "en": {"name": "Israel Votes 2026",
-          "dek": "The 27 October Knesset election through Palestinian eyes: the blocs, the polls, the kingmaker paradox — and what each outcome means for Gaza and the West Bank."},
-   "ar": {"name": "إسرائيل تنتخب 2026",
-          "dek": "انتخابات الكنيست في 27 تشرين الأول/أكتوبر بعين فلسطينية: الكتل والاستطلاعات ومفارقة صانع الملوك — وما يعنيه كل احتمال لغزة والضفة."}
+   "en": {
+    "name": "Israel Votes 2026",
+    "dek": "The 27 October Knesset election through Palestinian eyes: the blocs, the polls, the kingmaker paradox — and what each outcome means for Gaza and the West Bank."
+   },
+   "ar": {
+    "name": "إسرائيل تنتخب 2026",
+    "dek": "انتخابات الكنيست في 27 تشرين الأول/أكتوبر بعين فلسطينية: الكتل والاستطلاعات ومفارقة صانع الملوك — وما يعنيه كل احتمال لغزة والضفة."
+   }
   },
   {
    "slug": "yasser-abbas",
    "pattern": "yasser abbas|ياسر عباس",
    "min": 2,
-   "en": {"name": "The Yasser Abbas File",
-          "dek": "The president's son across every financial and political file he enters — documented, attributed, with the family's side carried."},
-   "ar": {"name": "ملف ياسر عباس",
-          "dek": "نجل الرئيس في كل ملف مالي وسياسي يدخله — توثيقٌ منسوب المصادر، مع رواية العائلة إلى جانبه."}
+   "en": {
+    "name": "The Yasser Abbas File",
+    "dek": "The president's son across every financial and political file he enters — documented, attributed, with the family's side carried."
+   },
+   "ar": {
+    "name": "ملف ياسر عباس",
+    "dek": "نجل الرئيس في كل ملف مالي وسياسي يدخله — توثيقٌ منسوب المصادر، مع رواية العائلة إلى جانبه."
+   }
   },
   {
    "slug": "pa-litigation",
    "pattern": "sokolow|psjvta|terror judgment|pa litigation|clearance revenue|أموال المقاصة|دعاوى.*السلطة|السلطة.*قضائي",
    "min": 2,
-   "en": {"name": "The Litigation Docket",
-          "dek": "The lawsuits against the PA and PLO worldwide — the revived US terror judgments, the clearance-revenue deductions, and the audits that decide both."},
-   "ar": {"name": "ملف الدعاوى القضائية",
-          "dek": "الدعاوى ضد السلطة والمنظمة حول العالم — أحكام الإرهاب الأميركية المستعادة، واقتطاعات المقاصة، والتدقيقات التي تحسم الاثنين."}
+   "en": {
+    "name": "The Litigation Docket",
+    "dek": "The lawsuits against the PA and PLO worldwide — the revived US terror judgments, the clearance-revenue deductions, and the audits that decide both."
+   },
+   "ar": {
+    "name": "ملف الدعاوى القضائية",
+    "dek": "الدعاوى ضد السلطة والمنظمة حول العالم — أحكام الإرهاب الأميركية المستعادة، واقتطاعات المقاصة، والتدقيقات التي تحسم الاثنين."
+   }
   },
   {
    "slug": "dima-barakat",
    "pattern": "dima barakat|ديما بركات|ديمة بركات",
    "min": 1,
-   "en": {"name": "The Dima Barakat Case",
-          "dek": "Ramallah's women's-cancer surgeon, seized from her home on 18 August with no charge announced — every hearing, extension and demand for her release, until she is home."},
-   "ar": {"name": "قضية ديما بركات",
-          "dek": "جرّاحة أورام النساء في رام الله، اقتيدت من منزلها في 18 آب/أغسطس بلا تهمة معلنة — كل جلسة وتمديد ومطالبة بالإفراج عنها، حتى تعود إلى بيتها."}
+   "en": {
+    "name": "The Dima Barakat Case",
+    "dek": "Ramallah's women's-cancer surgeon, seized from her home on 18 August with no charge announced — every hearing, extension and demand for her release, until she is home."
+   },
+   "ar": {
+    "name": "قضية ديما بركات",
+    "dek": "جرّاحة أورام النساء في رام الله، اقتيدت من منزلها في 18 آب/أغسطس بلا تهمة معلنة — كل جلسة وتمديد ومطالبة بالإفراج عنها، حتى تعود إلى بيتها."
+   }
   },
   {
    "slug": "gaza-roadmap",
    "pattern": "roadmap|board of peace|kushner|mladenov|خريطة الطريق|مجلس السلام|كوشنر|ملادينوف",
    "min": 3,
-   "en": {"name": "The Gaza Roadmap",
-          "dek": "The fifteen-point plan and the second phase that has not begun — the Cairo rounds, the Board of Peace, Israel's refusal, and the thirty-day clock Kushner started on 17 August over Hamas's weapons."},
-   "ar": {"name": "ملف خريطة طريق غزة",
-          "dek": "خطة النقاط الخمس عشرة والمرحلة الثانية التي لم تبدأ — جولات القاهرة، ومجلس السلام، ورفض إسرائيل، ومهلة الثلاثين يوماً التي أطلقها كوشنر في 17 آب/أغسطس بشأن سلاح حماس."}
+   "en": {
+    "name": "The Gaza Roadmap",
+    "dek": "The fifteen-point plan and the second phase that has not begun — the Cairo rounds, the Board of Peace, Israel's refusal, and the thirty-day clock Kushner started on 17 August over Hamas's weapons."
+   },
+   "ar": {
+    "name": "ملف خريطة طريق غزة",
+    "dek": "خطة النقاط الخمس عشرة والمرحلة الثانية التي لم تبدأ — جولات القاهرة، ومجلس السلام، ورفض إسرائيل، ومهلة الثلاثين يوماً التي أطلقها كوشنر في 17 آب/أغسطس بشأن سلاح حماس."
+   }
+  },
+  {
+   "slug": "palestine-votes",
+   "pattern": "palestinian election|election commission|legislative council|palestinian-elections|election-machinery|pnc-diaspora-vote|east-jerusalem-vote|لجنة الانتخابات|الانتخابات الفلسطينية|الانتخابات التشريعية|المجلس التشريعي",
+   "min": 3,
+   "en": {
+    "name": "Palestine Votes 2026",
+    "dek": "The first Legislative Council election since 2006, set for late November: the registration drive, the missing Gaza and Jerusalem mechanisms, the PLO-recognition clause that shapes who may stand, and the succession question behind all of it."
+   },
+   "ar": {
+    "name": "فلسطين تنتخب 2026",
+    "dek": "أول انتخابات للمجلس التشريعي منذ 2006، وموعدها أواخر تشرين الثاني/نوفمبر: حملة التسجيل، وآليتا غزة والقدس الغائبتان، وشرط الاعتراف بمنظمة التحرير الذي يحدّد من يحق له الترشح، وسؤال الخلافة الكامن خلف ذلك كله."
+   }
   }
  ]
 }

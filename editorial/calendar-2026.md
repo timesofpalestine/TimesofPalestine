@@ -109,6 +109,14 @@ land in a specific window.
     the 2025 Nobel Prize in Chemistry. Celebratory register, pegged to the
     Gaza water-run report of 18 August, and honest that his materials do not
     repair a pipeline an army has broken.
+    A third Real Lives original ran on 2026-08-22 to clear the humans section
+    again: `gaza-prosthetists-eight-remain-2026-08-22.*` — the eight
+    prosthetists the WHO counts as still working in Gaza, the craft they
+    practise, the roughly five thousand war amputees (a quarter of them
+    children) they serve, the plaster of Paris and plastic components held on
+    the dual-use lists, and the hundred and eighteen temporary limbs Humanity
+    & Inclusion fitted from early 2025. Written as a trade profile, not a
+    grief piece.
 - **Arabic-first commissioning:** 2–3 originals per month reported for the
   Arabic reader first (Arab Support and Her Story are the natural homes),
   then rendered into English.
@@ -177,6 +185,20 @@ land in a specific window.
     Hellenic MFA), Israel Katz (CC BY-SA 4.0, Itzhak Harari) and Khirbet
     Ibziq in the northern Jordan Valley (CC BY-SA 4.0, Aref Daraghmeh /
     B'Tselem).
+  - 2026-08-22: 184 cover-led of 400 originals before the cycle's work
+    (photo-led share 0.54 — the share keeps sliding as the press-review
+    desks file several category-cover items a day). Four of today's own
+    originals shipped straight onto rights-cleared Commons photographs
+    instead of category covers, each keeping the cover as `imageFallback:`,
+    and all four URLs were already in `media-rights.json` so no new manifest
+    entries were needed: `ynet-barrack-israel-turkey-election-2026-08-22`
+    (Tom Barrack), `turkey-interpol-netanyahu-red-notice-2026-08-22`
+    (Netanyahu, Feb 2023), `axios-state-department-annexation-e1-2026-08-22`
+    (the Truman Building) and `ynet-washington-bars-abbas-un-podium-2026-08-22`
+    (Mahmoud Abbas). Standing note for the desks: converting after the fact
+    never keeps pace with the press reviews' daily volume — the cheaper fix
+    is to check `media-rights.json` for a cleared portrait of the subject
+    while writing, which costs nothing and lands the story photo-led.
 - ✅ **US-press wire feeds repaired 2026-08-11.** Four of the desk's
   think-tank feeds were dying on every sweep. CSIS and CFR now point at
   working endpoints, `israeli_press_fetch.py` resolves the HTML entities
