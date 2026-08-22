@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli settlers stole a donkey belonging to a Palestinian farmer and dragged it to death, Al Jazeera English reported. The incident marks the latest in a pattern of confrontations between Palestinian residents and Israeli settlers in the occupied West Bank, where tensions over land and resources remain acute.\n\nThe European Union has imposed sanctions targeting Israeli settler activities in Palestinian territories. The killing of the animal occurred as these restrictions took effect, though the exact timing of the donkey's death relative to the EU action remains unclear from available reports.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-22T16:41:43+00:00",
+ "dek": "A donkey belonging to a Palestinian farmer was reportedly stolen and dragged to death by Israeli settlers.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787416878.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f30cb43d3b",
+ "score": 63.76,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers steal and kill Palestinian farmer's donkey"
+}
