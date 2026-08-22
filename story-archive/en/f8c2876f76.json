@@ -1,0 +1,32 @@
+{
+ "brief": "An Israeli strike on a Palestinian home in Deir el-Balah, central Gaza, killed at least one person and wounded others, Al Jazeera Arabic reported. The attack struck a residential structure in the densely populated area of the coastal territory, where hundreds of thousands of Palestinians remain displaced by the conflict.\n\nThe incident adds to the mounting civilian toll in Gaza, where residential neighborhoods have faced repeated military operations. Casualties continue to mount amid the ongoing hostilities, though complete casualty figures remain difficult to verify due to limited access and communications disruptions across the territory. The attack occurred as fighting persists across multiple areas of Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-palestinian-home-kills-least-one-central-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-22T11:22:30+00:00",
+ "dek": "Israeli strike on Palestinian home kills at least one in central Gaza At least one person has been killed and others wounded in an Israeli attack on a home in central Gaza's Deir el-Balah, Al Jazeera Arabic is reporting. The report cited Al-Aqsa Martyrs…",
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-palestinian-home-kills-least-one-central-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f8c2876f76",
+ "score": 63.78,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli strike kills at least one in central Gaza home"
+}

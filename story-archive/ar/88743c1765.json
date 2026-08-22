@@ -1,0 +1,44 @@
+{
+ "brief": "نفّذ جيش الاحتلال الإسرائيلي تفجيراً بين بلدتي ميس الجبل وطلوسة في جنوب لبنان، بحسب وكالة معا. ولم تتضمن التقارير الأولية معلومات عن حجم الأضرار أو الخسائر الناجمة عن العملية، فيما لم توضح التفاصيل الدقيقة لطبيعة الهدف أو نطاق التفجير.\n\nيأتي التفجير في سياق التصعيد الأمني المتكرر على الحدود بين الكيان الإسرائيلي ولبنان، حيث شهدت المنطقة جنوب لبنان تبادلات نارية وعمليات عسكرية متزايدة خلال الفترة الأخيرة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/36346",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730787",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/316667",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-22T11:29:59+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/U1GgLEhGB8eb1zrILK3NbSXK1Ybek1G7IotBtT9N4rkFENWcUHr2m1ugd5KqYCRmDQQvMDhB-2OazrLuJMxaUShlc9_WjQagAPBgnEBaFMGJ367-_OwmEHwiSNrXGKoWNYJANKT-N1_NZRu_HjfG2Ov19nLc6ZFlNZz1deBAyKH-kFq19WidgPzu7W-Rs3zaD0e5Bnnx3iQPqPRe1kKUFFei5zDWauvxZKS7rAWbj0bJY7uFaOBGwqk3zKyRcuNlev_VERkPfBJFGCX6UPm-YDc-X_B7L3kCKSjE1ePlFb30CNyjblsPmKaCWTucEFgWBCawhQ9YQh4brSVHDWigbg",
+ "lang": "ar",
+ "link": "https://t.me/maannews/36346",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "وكالة معا (حصري)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/36346"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "88743c1765",
+ "score": 63.83,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "جيش الاحتلال ينفذ تفجيراً جنوب لبنان"
+}
