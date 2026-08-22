@@ -1,0 +1,62 @@
+{
+ "brief": "A 17-year-old Palestinian was killed and another person critically injured in a settler attack in the occupied West Bank, Al Jazeera English reported. The shooting represents the latest deadly confrontation in a territory where violence between Palestinians and Israeli settlers has accelerated over recent months.\n\nThe attack drew immediate response from United Nations officials, who addressed the incident as part of broader concerns over settler conduct in the West Bank. Such violence has become a recurring flashpoint, with international organizations repeatedly calling for investigations and accountability measures against those responsible for attacks on Palestinian civilians and communities.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/22/palestinian-teen-shot-and-killed-in-west-bank-attack-un-responds?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/36342",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/hebron-colonizers-kill-a-palestinian-child-injure-an-elderly-man",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/8/21/west_bank_settlers",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/besieged-by-israeli-settlers-and-cut-off-from-the-outside-world-palestinian-families-on-a-west-bank-hilltop-refuse-to-leave",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-22T04:30:20+00:00",
+ "dek": "A 17-year-old Palestinian was killed and another person critically injured in a settler attack in the occupied West Bank.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787372978.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/22/palestinian-teen-shot-and-killed-in-west-bank-attack-un-responds?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/22/palestinian-teen-shot-and-killed-in-west-bank-attack-un-responds?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "35589752f7",
+ "score": 63.48,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settler shoots Palestinian teen dead in West Bank"
+}

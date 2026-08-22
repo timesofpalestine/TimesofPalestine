@@ -25,18 +25,6 @@
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.dropsitenews.com/p/qusra-siege-israeli-settlers-soldiers-palestinians-west-bank",
-   "name": "Drop Site News",
-   "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "http://www.democracynow.org/2026/8/21/west_bank_settlers",
-   "name": "Democracy Now!",
-   "url": "https://www.democracynow.org/",
-   "verified": true
   }
  ],
  "date": "2026-08-20T04:00:00+00:00",
@@ -54,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "9d2b663955",
- "score": 82.62,
+ "score": 82.58,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",

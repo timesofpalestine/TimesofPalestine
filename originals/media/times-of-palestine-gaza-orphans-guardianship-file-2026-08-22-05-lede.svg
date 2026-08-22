@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Gaza's orphan registry counts children, not guardians</title>
+  <desc id="dsc">A bar chart of the Palestinian Ministry of Social Development's Gaza orphan registry totals — 57,000 in October 2025, 64,616 in April 2026 and 65,279 at the end of June 2026, with the war-related subtotal shown in red — beside a registry card listing 65,279 orphans and 28,224 widows, and a third field for a named guardian that is not published.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- Headline -->
+  <text x="90" y="100" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Gaza's orphan registry counts children,</text>
+  <text x="90" y="152" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">not the guardians they need</text>
+  <text x="90" y="205" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#c7a86b">سجل الأيتام في غزة يحصي الأطفال لا الأوصياء</text>
+  <line x1="90" y1="232" x2="1510" y2="232" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- LEFT PANEL: chart -->
+  <text x="90" y="286" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#c7a86b" letter-spacing="1.5">ORPHAN REGISTRY TOTAL, GAZA</text>
+  <text x="90" y="314" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">إجمالي سجل الأيتام في غزة</text>
+
+  <rect x="160" y="340" width="14" height="14" fill="#8a1f2d"/>
+  <text x="182" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">lost one or both parents in the war</text>
+  <rect x="470" y="340" width="14" height="14" fill="#59a97d"/>
+  <text x="492" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">registry total</text>
+
+  <!-- bars -->
+  <rect x="160" y="447" width="120" height="293" fill="#59a97d" opacity="0.75"/>
+  <text x="220" y="437" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">57,000</text>
+  <text x="220" y="768" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Oct 2025</text>
+
+  <rect x="350" y="408" width="120" height="332" fill="#59a97d" opacity="0.75"/>
+  <rect x="350" y="457" width="120" height="283" fill="#8a1f2d"/>
+  <text x="410" y="398" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">64,616</text>
+  <text x="410" y="730" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">55,000+</text>
+  <text x="410" y="768" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Apr 2026</text>
+
+  <rect x="540" y="404" width="120" height="336" fill="#59a97d" opacity="0.75"/>
+  <rect x="540" y="460" width="120" height="280" fill="#8a1f2d"/>
+  <text x="600" y="394" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">65,279</text>
+  <text x="600" y="730" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">54,468</text>
+  <text x="600" y="768" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Jun 2026</text>
+
+  <line x1="120" y1="740" x2="740" y2="740" stroke="#5a5b5f" stroke-width="2"/>
+
+  <text x="90" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">April 2026: war-related subtotal above 55,000. June 2026: 54,468 —</text>
+  <text x="90" y="822" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">a lower subtotal inside a higher total. The gap is unexplained.</text>
+
+  <!-- RIGHT PANEL: registry card -->
+  <rect x="880" y="300" width="630" height="420" rx="6" fill="#191a1d" stroke="#c7a86b" stroke-width="2"/>
+  <text x="910" y="348" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#c7a86b" letter-spacing="1.2">WHAT THE MINISTRY PUBLISHES</text>
+  <text x="910" y="376" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">ما تنشره وزارة التنمية الاجتماعية</text>
+  <line x1="910" y1="396" x2="1480" y2="396" stroke="#3a3b3f" stroke-width="2"/>
+
+  <text x="910" y="446" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Orphaned children on the registry</text>
+  <text x="910" y="472" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">الأطفال الأيتام في السجل</text>
+  <text x="1480" y="462" text-anchor="end" font-family="'Source Serif 4',Georgia,serif" font-size="38" fill="#59a97d">65,279</text>
+  <line x1="910" y1="496" x2="1480" y2="496" stroke="#2c2d31" stroke-width="2"/>
+
+  <text x="910" y="546" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Widows</text>
+  <text x="910" y="572" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">الأرامل</text>
+  <text x="1480" y="562" text-anchor="end" font-family="'Source Serif 4',Georgia,serif" font-size="38" fill="#59a97d">28,224</text>
+  <line x1="910" y1="596" x2="1480" y2="596" stroke="#2c2d31" stroke-width="2"/>
+
+  <text x="910" y="646" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Named guardian for each child</text>
+  <text x="910" y="672" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">اسم الوصي لكل طفل</text>
+  <text x="1480" y="650" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#8a1f2d">not published</text>
+  <line x1="1230" y1="672" x2="1480" y2="672" stroke="#8a1f2d" stroke-width="3" stroke-dasharray="10 8"/>
+
+  <text x="880" y="762" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">384 unaccompanied children identified, registered and placed in</text>
+  <text x="880" y="784" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">alternative care, Jan–Feb 2024. UNICEF estimated 17,000</text>
+  <text x="880" y="806" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">unaccompanied or separated from parents, February 2024.</text>
+
+  <line x1="90" y1="842" x2="1510" y2="842" stroke="#3a3b3f" stroke-width="2"/>
+  <text x="90" y="872" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: Ministry of Social Development statements (Oct 2025, Apr 2026, Jun 2026); IRC report, January 2025; UNICEF, February 2024</text>
+</svg>
