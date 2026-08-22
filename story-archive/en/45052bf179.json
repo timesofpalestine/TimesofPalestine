@@ -7,6 +7,18 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/08/19/us-sanctions-icc-president-tomoko-akane",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/pchr-condemns-new-sanctions-against-icc-officials",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-20T07:25:00+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "45052bf179",
- "score": 93.2,
+ "score": 93.17,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

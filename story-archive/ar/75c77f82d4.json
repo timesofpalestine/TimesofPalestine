@@ -13,6 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.net/politics/2026/8/22/qusra-jabal-ras-al-ain-settler-escalation?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-22T16:07:00+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "75c77f82d4",
- "score": 48.33,
+ "score": 48.18,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
