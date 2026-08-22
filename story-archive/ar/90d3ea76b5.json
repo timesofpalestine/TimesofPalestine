@@ -1,0 +1,38 @@
+{
+ "brief": "سجّل المركز الفلسطيني للإعلام إصابات بين صفوف الفلسطينيين جراء اعتداءات شنتها قوات الاحتلال الإسرائيلي والمستوطنون على مناطق في الضفة الغربية والقدس المحتلة.\n\nشملت الاعتداءات مناطق سكنية متعددة، فيما لم تُحدّد الجهات الموثّقة للحادثة أعداداً دقيقة للمصابين أو تفاصيل شاملة عن الحوادث المنفصلة.\n\nويأتي هذا ضمن سياق مستمر من العنف الموجّه ضد الفلسطينيين في الأراضي المحتلة، إذ تتكرر هذه الاعتداءات بشكل دوري في مختلف مناطق الضفة والقدس.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/08/22/1115957",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185215/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A8%D8%B1%D8%B5%D8%A7%D8%B5-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%88%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-22T19:35:27+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-westbank-b-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/08/22/1115957",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "90d3ea76b5",
+ "score": 63.85,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "اعتداءات الاحتلال والمستوطنين تُصيب فلسطينيين بالضفة والقدس"
+}

@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/36350",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/8785-131",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-08-22T14:11:06+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "bbe9da88e9",
- "score": 46.4,
+ "score": 46.1,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",

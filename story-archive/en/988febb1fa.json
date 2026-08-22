@@ -1,0 +1,44 @@
+{
+ "brief": "An Israeli drone attack targeted a family in Deir el-Balah, a central Gaza city, killing one person and wounding others, Al Jazeera English reported. The strike was part of continuing Israeli military operations across the territory.\n\nThe incident marks another casualty toll from the prolonged conflict between Israeli forces and armed groups in Gaza. Deir el-Balah, situated in the middle of the coastal enclave, has witnessed repeated military operations throughout the fighting. The extent of injuries and full identities of those affected were not immediately disclosed by authorities or rescue services responding to the attack.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/22/israeli-strikes-kill-two-and-injure-others-as-gaza-attacks-continue?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-israeli-drone-strike-kills-a-palestinian-injures-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-palestinian-home-kills-least-one-central-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-22T19:24:51+00:00",
+ "dek": "Israeli drone attack targeted a family in the central city of Deir el-Balah, killing one person and wounding others.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/afp_6a89db06771c-1787419398.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/22/israeli-strikes-kill-two-and-injure-others-as-gaza-attacks-continue?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/22/israeli-strikes-kill-two-and-injure-others-as-gaza-attacks-continue?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "988febb1fa",
+ "score": 63.77,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli drone strike kills one in Gaza's Deir el-Balah"
+}

@@ -6,19 +6,7 @@
    "article": "https://www.pbc.ps/76579-22",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/316707",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/AlQastalps/391246",
-   "name": "القسطل · تيليغرام",
-   "url": "https://t.me/AlQastalps",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-22T17:04:02+00:00",
@@ -36,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "fb1e8a4252",
- "score": 63.34,
+ "score": 62.1,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
