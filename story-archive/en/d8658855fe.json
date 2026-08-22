@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://imemc.org/article/gaza-occupation-army-kills-a-palestinian-man-shoots-a-woman",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
    "article": "http://www.democracynow.org/2026/8/21/israel_hind_rajab",
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "d8658855fe",
- "score": 83.34,
+ "score": 83.31,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
