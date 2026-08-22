@@ -1,0 +1,44 @@
+{
+ "brief": "سجّلت وزارة الصحة في غزة، بحسب المركز الفلسطيني للإعلام، مقتل شهيدين وإصابة 4 آخرين خلال الـ48 ساعة الأخيرة. ولم تفصح الوزارة عن ملابسات الحالات أو الأسباب المباشرة لها، إذ اقتصرت على الإفادة بالأرقام دون تقديم سياق إضافي عن الظروف المحيطة بهذه الوقائع.\n\nوتأتي هذه الأرقام وسط الأوضاع الأمنية المتوترة التي تشهدها قطاع غزة، حيث تواصل الوزارة توثيق الإصابات والوفيات على نحو منتظم.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316648",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185194/%D8%B4%D9%87%D9%8A%D8%AF%D8%A7%D9%86-%D9%884-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-48-%D8%B3%D8%A7%D8%B9%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730755",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-22T08:54:24+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/gguJG067dy7iMV73Y3gA4sRSuCMXJStwPigkRVbw0szV-KvJREME9D3WMPtXMHbY-qElg02y5NEXFLzFDwMRojidkgwXM12huJYNa6aS42n7YxP8bLLilgRDshvHCYoAmHT0piOWD2uxglUGLX2p2Lf8TZCs9GLObTHieawuw8TWGZf404-6lldGizV23h4prCmpUFvbKQdo5mpzrIn-4lRYPr4g06uJ-foSSwWEJI8uqUmoB8tvJAudJVf2fMC7FdgTiybLhL6BZwfJF36dobafKIkbVtB-WzFL4-hUczOWWHUwo1ItXZjsTD7Ht4T60FTxrqoYV6zgW-XGnM3Atw.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316648",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/316648"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "07112c1f30",
+ "score": 63.37,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "وزارة الصحة بغزة تسجل شهيدين و4 إصابات في يومين"
+}
