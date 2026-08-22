@@ -19,6 +19,12 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://palinfo.com/news/2026/08/22/1115899",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-08-22T05:09:00+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "b452c94cfb",
- "score": 63.91,
+ "score": 63.66,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
