@@ -6,13 +6,7 @@
    "article": "https://www.alquds.co.uk/%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d8%aa%d8%ba%d9%84%d9%82-%d8%a7%d9%84%d9%85%d9%86%d9%81%d8%b0-%d8%a7%d9%84%d9%88%d8%ad%d9%8a%d8%af-%d9%84%d9%82%d8%b1%d9%8a%d8%a9-%d8%a7%d9%84%d9%85%d8%ba",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
-   "article": "https://www.pbc.ps/8785-131",
-   "name": "تلفزيون فلسطين",
-   "url": "https://www.pbc.ps/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-22T11:11:11+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "e3675928bd",
- "score": 48.03,
+ "score": 47.55,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",
