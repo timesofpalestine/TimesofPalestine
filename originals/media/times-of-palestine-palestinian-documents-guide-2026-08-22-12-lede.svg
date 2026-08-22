@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Israel decides who holds a Palestinian identity card</title>
+<desc id="d">Diagram: every change to the Palestinian population registry — birth, marriage, divorce, death or address change — must pass through an Israeli-controlled registry before the Palestinian Authority may issue an ID card or passport. Most categories have been frozen since 29 September 2000. Statistics shown: 14,929 East Jerusalem Palestinians stripped of status 1967–2024; 60 in 2024 and 61 in 2023; a peak of 4,577 revocations in 2008; and 40,000 to 50,000 Gaza residents holding no recognised ID.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<marker id="arw" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+<path d="M0 0 L12 6 L0 12 Z" fill="#c7a86b"/>
+</marker>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="98" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Israel decides who holds a Palestinian identity card</text>
+<text x="90" y="148" font-family="Cairo,Arial,sans-serif" font-size="31" fill="#c7a86b">إسرائيل تقرر من يحمل بطاقة الهوية الفلسطينية</text>
+<text x="90" y="192" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Every change to the Palestinian population registry requires Israeli approval — Gisha</text>
+<line x1="90" y1="220" x2="1510" y2="220" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- Box 1 -->
+<rect x="90" y="265" width="380" height="215" rx="8" fill="#191a1d" stroke="#4a4b50" stroke-width="2"/>
+<rect x="90" y="265" width="380" height="6" rx="3" fill="#286344"/>
+<text x="114" y="312" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" letter-spacing="2" fill="#59a97d">STEP 1 · PALESTINIAN FAMILY</text>
+<text x="114" y="356" font-family="'Source Serif 4',Georgia,serif" font-size="25" fill="#f2eee8">Birth, marriage, divorce,</text>
+<text x="114" y="388" font-family="'Source Serif 4',Georgia,serif" font-size="25" fill="#f2eee8">death, address change</text>
+<text x="114" y="424" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">ولادة، زواج، طلاق، وفاة، تغيير عنوان</text>
+<text x="114" y="456" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Application filed with the PA</text>
+
+<line x1="482" y1="372" x2="546" y2="372" stroke="#c7a86b" stroke-width="3" marker-end="url(#arw)"/>
+
+<!-- Box 2 -->
+<rect x="560" y="265" width="420" height="215" rx="8" fill="#20161a" stroke="#8a1f2d" stroke-width="2.5"/>
+<rect x="560" y="265" width="420" height="6" rx="3" fill="#C8102E"/>
+<text x="584" y="312" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" letter-spacing="2" fill="#C8102E">STEP 2 · ISRAELI APPROVAL</text>
+<g transform="translate(584,332)">
+<rect x="0" y="18" width="34" height="26" rx="4" fill="#c7a86b"/>
+<path d="M6 18 v-8 a11 11 0 0 1 22 0 v8" fill="none" stroke="#c7a86b" stroke-width="4"/>
+<rect x="15" y="27" width="4" height="9" rx="2" fill="#20161a"/>
+</g>
+<text x="638" y="360" font-family="'Source Serif 4',Georgia,serif" font-size="25" fill="#f2eee8">Israeli-controlled</text>
+<text x="638" y="390" font-family="'Source Serif 4',Georgia,serif" font-size="25" fill="#f2eee8">population registry</text>
+<text x="584" y="424" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">سجل السكان الخاضع للسيطرة الإسرائيلية</text>
+<rect x="584" y="438" width="372" height="28" rx="14" fill="#8a1f2d"/>
+<text x="600" y="457" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">Most categories frozen since 29 September 2000</text>
+
+<line x1="992" y1="372" x2="1056" y2="372" stroke="#c7a86b" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#arw)"/>
+
+<!-- Box 3 -->
+<rect x="1070" y="265" width="380" height="215" rx="8" fill="#191a1d" stroke="#4a4b50" stroke-width="2"/>
+<rect x="1070" y="265" width="380" height="6" rx="3" fill="#c7a86b"/>
+<text x="1094" y="312" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" letter-spacing="2" fill="#c7a86b">STEP 3 · ONLY IF APPROVED</text>
+<g transform="translate(1094,330)">
+<rect x="0" y="0" width="72" height="48" rx="6" fill="none" stroke="#f2eee8" stroke-width="2.5"/>
+<circle cx="19" cy="20" r="9" fill="#59a97d"/>
+<rect x="34" y="14" width="28" height="4" rx="2" fill="#aaa9a5"/>
+<rect x="34" y="24" width="28" height="4" rx="2" fill="#aaa9a5"/>
+<rect x="10" y="36" width="52" height="4" rx="2" fill="#aaa9a5"/>
+</g>
+<text x="1180" y="360" font-family="'Source Serif 4',Georgia,serif" font-size="25" fill="#f2eee8">PA issues ID card</text>
+<text x="1180" y="390" font-family="'Source Serif 4',Georgia,serif" font-size="25" fill="#f2eee8">and passport</text>
+<text x="1094" y="424" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">السلطة تصدر الهوية وجواز السفر</text>
+<text x="1094" y="456" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Passports only to those in the registry</text>
+
+<!-- Stats -->
+<text x="90" y="522" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="2" fill="#c7a86b">THE PEOPLE LEFT OUTSIDE THE FILE · من هم خارج السجل</text>
+
+<rect x="90" y="545" width="335" height="195" rx="8" fill="#191a1d" stroke="#3a3b3f" stroke-width="2"/>
+<text x="112" y="612" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">14,929</text>
+<text x="112" y="646" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">East Jerusalem Palestinians</text>
+<text x="112" y="668" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">stripped of status, 1967–2024</text>
+<text x="112" y="694" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">Interior Ministry to HaMoked</text>
+<text x="112" y="722" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">سحب الإقامة في القدس الشرقية</text>
+
+<rect x="450" y="545" width="335" height="195" rx="8" fill="#191a1d" stroke="#3a3b3f" stroke-width="2"/>
+<text x="472" y="612" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">60</text>
+<text x="472" y="646" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">lost permanent residency in 2024</text>
+<text x="472" y="668" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">— 33 women, three minors; 61 in 2023</text>
+<text x="472" y="694" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">Ministry reply, 1 September 2025</text>
+<text x="472" y="722" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">حالة سحب إقامة في عام 2024</text>
+
+<rect x="810" y="545" width="335" height="195" rx="8" fill="#191a1d" stroke="#3a3b3f" stroke-width="2"/>
+<text x="832" y="612" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">4,577</text>
+<text x="832" y="646" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">revocations in 2008, the peak year</text>
+<text x="832" y="668" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">of "centre of life" enforcement</text>
+<text x="832" y="694" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">Ministry figures, via HaMoked</text>
+<text x="832" y="722" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">ذروة عمليات السحب عام 2008</text>
+
+<rect x="1170" y="545" width="335" height="195" rx="8" fill="#191a1d" stroke="#8a1f2d" stroke-width="2"/>
+<text x="1192" y="612" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#c7a86b">40,000–50,000</text>
+<text x="1192" y="646" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">residents of Gaza with no recognised</text>
+<text x="1192" y="668" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#f2eee8">ID card and no status anywhere</text>
+<text x="1192" y="694" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5">B'Tselem estimate</text>
+<text x="1192" y="722" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">بلا هوية معترف بها في غزة</text>
+
+<line x1="90" y1="776" x2="1510" y2="776" stroke="#3a3b3f" stroke-width="2"/>
+<text x="90" y="806" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: Gisha · HaMoked · B'Tselem · Human Rights Watch (2012) · Israeli Interior Ministry</text>
+<text x="90" y="836" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">المصادر: جيشاه، هموكيد، بتسيلم، هيومن رايتس ووتش، وزارة الداخلية الإسرائيلية</text>
+<text x="90" y="866" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" letter-spacing="2" fill="#8a1f2d">TIMES OF PALESTINE</text>
+</svg>
