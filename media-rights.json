@@ -580,6 +580,14 @@
       "source": "https://commons.wikimedia.org/wiki/File:The_United_States_State_Department_Headquarters_Building.jpg",
       "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
       "note": "Cover for washington-brief-2026-08-20; falls back to the report's own ledger SVG if the remote file dies"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mike%20Huckabee,%20official%20portrait%20(2025)%20(cropped).jpg?width=640",
+      "rightsBasis": "public-domain — official US Department of State portrait, PD-USGov, served from Wikimedia Commons and verified at build time",
+      "credit": "Mike Huckabee, US ambassador to Israel, official portrait 2025 — Wikimedia Commons / US Embassy Jerusalem, public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Mike_Huckabee,_official_portrait_(2025)_(cropped).jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+      "note": "Cover for washington-brief-2026-08-22; falls back to the report's own settler-sanctions SVG if the remote file dies"
     }
   ]
 }
