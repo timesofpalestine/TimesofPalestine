@@ -1,0 +1,38 @@
+{
+ "brief": "قصفت طائرات إسرائيلية منزلاً في بلدة صربين بجنوب لبنان، بحسب المركز الفلسطيني للإعلام. وجاءت الغارة في سياق التصعيد المستمر على الحدود اللبنانية الإسرائيلية، حيث تشهد المنطقة توترات متكررة منذ فترة.\n\nلم تُعلن حتى الآن معلومات تفصيلية حول عدد الإصابات أو حجم الأضرار المترتبة على القصف. وتندرج الغارة ضمن سلسلة عمليات عسكرية إسرائيلية استهدفت مناطق في جنوب لبنان خلال الأسابيع الماضية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316714",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730912",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-22T18:14:19+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/sXGxriD4gP46dwXi39qFL_HoGyneFgDfrW_uIc3_0OFt_DkzKqosOCBwoaykJyoMo7AplgJy9cfr8sKclhDek9zlSzhZphgHW9bm6KrDJwvB-7u8AYh_CrpGQFKar0Vdcz8Apu3lpIrsFzthWDc1mwRTh7KRwxnbIPKQ8r5xf118bE6hniq8Yat71nxFkiYA5vYEAZ-pJ57PMBglIdtKKtYEqeGGD_7fAw2JhbfCKdudqcMGj67bFQoB5-BmfDsxvT1dI-by8llk70EfLWrNTdGxu73ShD3Jk-qBACY-EaaaoUTt-h4_z1whz4LumL0NDtGTENq7jh6z1T02cbaTwA.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316714",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/316714"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "edc87259bf",
+ "score": 63.8,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "طائرات إسرائيلية تقصف منزلاً في صربين جنوب لبنان"
+}
