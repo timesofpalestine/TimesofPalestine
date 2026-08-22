@@ -9,15 +9,9 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/22/palestinian-teen-shot-and-killed-in-west-bank-attack-un-responds?traffic_source=rss",
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/22/jewish-activists-push-back-against-israeli-settlers?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/maannews/36342",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
    "verified": true
   },
   {
@@ -49,6 +43,12 @@
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/36342",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-22T05:45:00+00:00",
@@ -66,7 +66,7 @@
  "modified": null,
  "original": true,
  "pid": "dbe7fd3283",
- "score": 100.85,
+ "score": 100.8,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
