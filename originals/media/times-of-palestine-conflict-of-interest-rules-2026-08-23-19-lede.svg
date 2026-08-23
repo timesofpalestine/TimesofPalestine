@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Four of 2,542 asset declarations examined by the Palestinian Anti-Corruption Commission in 2024</title>
+  <desc id="dsc">A grid of 2,542 small squares, one for each asset declaration the Palestinian Anti-Corruption Commission received in 2024, with only four squares marked in red to show the four declarations it examined. Alongside are the commission's 2024 enforcement figures: 1,006 complaints under follow-up, 32 referrals to the attorney general, 68 suspects named, and a fine of 100 to 1,000 Jordanian dinars for false data.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <pattern id="cells" patternUnits="userSpaceOnUse" x="900" y="372" width="10" height="10">
+      <rect x="0" y="0" width="7" height="7" fill="#3d4046"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- Header -->
+  <text x="90" y="102" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="2.6" fill="#c7a86b">PALESTINIAN ANTI-CORRUPTION COMMISSION — 2024 ANNUAL REPORT</text>
+  <text x="90" y="176" font-family="'Source Serif 4',Georgia,serif" font-size="58" fill="#f2eee8">Four asset declarations examined</text>
+  <text x="90" y="240" font-family="'Source Serif 4',Georgia,serif" font-size="58" fill="#f2eee8">out of 2,542 filed in 2024</text>
+  <text x="90" y="288" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#c7a86b" text-anchor="start" direction="rtl">فُحصت أربعة إقرارات ذمة مالية فقط من إجمالي ما استلمته الهيئة</text>
+
+  <!-- Grid panel -->
+  <rect x="874" y="300" width="672" height="562" rx="6" fill="#17181b" stroke="#2a2c30" stroke-width="1"/>
+  <text x="900" y="336" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">2,542 declarations received — each square is one</text>
+  <text x="900" y="366" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" text-anchor="start" direction="rtl">كل مربع يمثل إقرار ذمة مالية واحداً</text>
+
+  <g transform="translate(0,20)">
+    <rect x="900" y="372" width="620" height="410" fill="url(#cells)"/>
+    <g fill="#C8102E">
+      <rect x="970" y="422" width="7" height="7"/>
+      <rect x="1230" y="512" width="7" height="7"/>
+      <rect x="1410" y="642" width="7" height="7"/>
+      <rect x="1090" y="732" width="7" height="7"/>
+    </g>
+    <g fill="none" stroke="#c7a86b" stroke-width="1.6">
+      <circle cx="973.5" cy="425.5" r="12"/>
+      <circle cx="1233.5" cy="515.5" r="12"/>
+      <circle cx="1413.5" cy="645.5" r="12"/>
+      <circle cx="1093.5" cy="735.5" r="12"/>
+    </g>
+  </g>
+
+  <rect x="900" y="820" width="13" height="13" fill="#C8102E"/>
+  <text x="924" y="832" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">the four declarations the commission examined</text>
+  <text x="900" y="862" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5" text-anchor="start" direction="rtl">الإقرارات الأربعة التي جرى فحصها</text>
+
+  <!-- Left figures -->
+  <text x="90" y="372" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="2.4" fill="#59a97d">EXAMINED IN 2024</text>
+  <text x="90" y="512" font-family="'Source Serif 4',Georgia,serif" font-size="168" fill="#c7a86b">4</text>
+  <text x="236" y="432" font-family="'Libre Franklin',Arial,sans-serif" font-size="27" fill="#f2eee8">declarations, belonging to three people</text>
+  <text x="236" y="470" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#c7a86b" text-anchor="start" direction="rtl">أربعة إقرارات تعود لثلاثة أشخاص</text>
+  <text x="236" y="508" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">checked because they were tied to complaints</text>
+  <text x="236" y="534" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">and investigations already open</text>
+
+  <line x1="90" y1="580" x2="820" y2="580" stroke="#2f3237" stroke-width="2"/>
+
+  <g font-family="'Libre Franklin',Arial,sans-serif">
+    <text x="90" y="638" font-size="38" fill="#f2eee8">1,006</text>
+    <text x="290" y="636" font-size="21" fill="#aaa9a5">complaints and reports under follow-up</text>
+    <text x="90" y="700" font-size="38" fill="#f2eee8">32</text>
+    <text x="290" y="698" font-size="21" fill="#aaa9a5">referral decisions to the attorney general</text>
+    <text x="90" y="762" font-size="38" fill="#f2eee8">68</text>
+    <text x="290" y="760" font-size="21" fill="#aaa9a5">suspects named, 52 complaints closed</text>
+    <text x="90" y="824" font-size="38" fill="#8a1f2d">100–1,000</text>
+    <text x="290" y="822" font-size="21" fill="#aaa9a5">JD fine for deliberately false data</text>
+  </g>
+
+  <text x="90" y="872" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#7d7c79">Source: Palestinian Anti-Corruption Commission, 2024 annual report · Anti-Corruption Law No. 1 of 2005</text>
+</svg>
