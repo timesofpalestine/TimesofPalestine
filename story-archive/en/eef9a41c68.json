@@ -1,0 +1,32 @@
+{
+ "brief": "Israel's military operations in Gaza have severely degraded sanitation infrastructure, leaving displaced Palestinians without access to safe or private toilet facilities, Al Jazeera English reported. Those sheltering in camps and temporary shelters face a deepening health crisis as they resort to inadequate and unhygienic alternatives, struggling to find discreet places to meet basic needs.\n\nThe sanitation collapse has created conditions conducive to disease spread among a vulnerable population already facing food shortages and limited medical care. Aid organizations warn that the deteriorating conditions pose acute risks to children and the elderly, with waterborne illnesses and infections rising as a result.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/8/23/israels-war-on-gaza-forces-palestinians-to-rely-on-stone-age-toilets?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-23T11:00:18+00:00",
+ "dek": "The displaced in Gaza are struggling to find safe, discreet and sanitary toilets amid health crisis.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/05b483f5-7f1c-4c6a-bf92-469538c33fb6-1787469834.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/8/23/israels-war-on-gaza-forces-palestinians-to-rely-on-stone-age-toilets?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/8/23/israels-war-on-gaza-forces-palestinians-to-rely-on-stone-age-toilets?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "eef9a41c68",
+ "score": 49.32,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "War forces Gaza Palestinians to use unsafe, unsanitary toilets"
+}
