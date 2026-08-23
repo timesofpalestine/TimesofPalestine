@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Israel renews the ban keeping Palestinian prisoners from their families</title>
+<desc id="d">A diagram showing a family group separated from a prisoner by prison bars, with the two channels of contact — family visits and phone calls — cut off. A panel gives Addameer and HaMoked counts of Palestinians held, and a timeline runs from October 2023 to the renewed order of 7 August 2026.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- headline block -->
+<text x="90" y="78" font-family="'Libre Franklin',Arial,Helvetica,sans-serif" font-size="18" letter-spacing="3.5" fill="#c7a86b">OCCUPATION PRISONS &#183; 7 AUGUST 2026</text>
+<text x="90" y="136" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#f2eee8">Israel renews ban keeping Palestinian</text>
+<text x="90" y="190" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#f2eee8">prisoners from their families</text>
+<text x="90" y="238" font-family="Cairo,Arial,sans-serif" font-size="31" fill="#aaa9a5">&#1573;&#1587;&#1585;&#1575;&#1574;&#1610;&#1604; &#1578;&#1580;&#1583;&#1583; &#1602;&#1585;&#1575;&#1585; &#1605;&#1606;&#1593; &#1586;&#1610;&#1575;&#1585;&#1575;&#1578; &#1584;&#1608;&#1610; &#1575;&#1604;&#1571;&#1587;&#1585;&#1609;</text>
+
+<line x1="90" y1="264" x2="1520" y2="264" stroke="#2c2d31" stroke-width="2"/>
+
+<!-- ===== diagram: family cut off from prisoner ===== -->
+<!-- family group -->
+<g fill="#f2eee8">
+<circle cx="180" cy="396" r="18"/>
+<path d="M154,470 v-16 a26,26 0 0 1 52,0 v16 z"/>
+<circle cx="250" cy="396" r="18"/>
+<path d="M224,470 v-16 a26,26 0 0 1 52,0 v16 z"/>
+<circle cx="315" cy="424" r="13"/>
+<path d="M296,470 v-11 a19,19 0 0 1 38,0 v11 z"/>
+</g>
+<text x="150" y="512" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="2" fill="#c7a86b">FAMILIES</text>
+<text x="150" y="538" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">&#1575;&#1604;&#1593;&#1575;&#1574;&#1604;&#1575;&#1578;</text>
+
+<!-- prison wall / bars -->
+<rect x="548" y="298" width="164" height="12" fill="#8a1f2d"/>
+<rect x="548" y="578" width="164" height="12" fill="#8a1f2d"/>
+<g fill="#4a4b50">
+<rect x="560" y="298" width="12" height="292"/>
+<rect x="592" y="298" width="12" height="292"/>
+<rect x="624" y="298" width="12" height="292"/>
+<rect x="656" y="298" width="12" height="292"/>
+<rect x="688" y="298" width="12" height="292"/>
+</g>
+
+<!-- prisoner -->
+<g fill="#c7a86b">
+<circle cx="790" cy="396" r="18"/>
+<path d="M764,470 v-16 a26,26 0 0 1 52,0 v16 z"/>
+</g>
+<text x="742" y="512" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="2" fill="#c7a86b">PRISONER</text>
+<text x="742" y="538" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">&#1575;&#1604;&#1571;&#1587;&#1610;&#1585;</text>
+
+<!-- severed channel 1: visits -->
+<line x1="350" y1="390" x2="750" y2="390" stroke="#59a97d" stroke-width="4" stroke-dasharray="12 10" opacity="0.75"/>
+<circle cx="630" cy="390" r="27" fill="#15161a"/>
+<g stroke="#C8102E" stroke-width="7" stroke-linecap="round">
+<line x1="616" y1="376" x2="644" y2="404"/>
+<line x1="644" y1="376" x2="616" y2="404"/>
+</g>
+<text x="358" y="372" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="1.5" fill="#f2eee8">FAMILY VISITS</text>
+<text x="358" y="416" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">&#1586;&#1610;&#1575;&#1585;&#1575;&#1578; &#1575;&#1604;&#1571;&#1607;&#1604;</text>
+
+<!-- severed channel 2: phone calls -->
+<line x1="350" y1="500" x2="750" y2="500" stroke="#59a97d" stroke-width="4" stroke-dasharray="12 10" opacity="0.75"/>
+<circle cx="630" cy="500" r="27" fill="#15161a"/>
+<g stroke="#C8102E" stroke-width="7" stroke-linecap="round">
+<line x1="616" y1="486" x2="644" y2="514"/>
+<line x1="644" y1="486" x2="616" y2="514"/>
+</g>
+<text x="358" y="482" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="1.5" fill="#f2eee8">PHONE CALLS</text>
+<text x="358" y="526" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">&#1575;&#1604;&#1605;&#1603;&#1575;&#1604;&#1605;&#1575;&#1578; &#1575;&#1604;&#1607;&#1575;&#1578;&#1601;&#1610;&#1577;</text>
+
+<text x="90" y="620" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">No family visit and no phone call since October 2023.</text>
+
+<!-- ===== counts panel ===== -->
+<rect x="980" y="290" width="540" height="312" rx="10" fill="#17181b" stroke="#2c2d31" stroke-width="2"/>
+<text x="1012" y="330" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="2.5" fill="#c7a86b">WHO IS INSIDE</text>
+<text x="1300" y="332" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">&#1605;&#1606; &#1601;&#1610; &#1575;&#1604;&#1587;&#1580;&#1608;&#1606;</text>
+
+<text x="1012" y="406" font-family="'Source Serif 4',Georgia,serif" font-size="62" font-weight="700" fill="#f2eee8">9,400</text>
+<text x="1200" y="382" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">Palestinian political</text>
+<text x="1200" y="406" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">prisoners</text>
+
+<line x1="1012" y1="430" x2="1490" y2="430" stroke="#2c2d31" stroke-width="2"/>
+<text x="1012" y="464" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">3,198 administrative detainees &#8212; no charge</text>
+<text x="1012" y="500" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">370 children &#183; 92 women &#183; 130 from Gaza</text>
+<text x="1012" y="536" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">1,358 under the Unlawful Combatants Law</text>
+<text x="1012" y="576" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#7d7c79">Addameer, 17 Aug 2026 &#183; HaMoked, prison service data, Aug 2026</text>
+
+<!-- ===== timeline ===== -->
+<text x="90" y="676" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="2.5" fill="#c7a86b">TIMELINE</text>
+<text x="230" y="678" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">&#1575;&#1604;&#1580;&#1583;&#1608;&#1604; &#1575;&#1604;&#1586;&#1605;&#1606;&#1610;</text>
+
+<line x1="140" y1="744" x2="1490" y2="744" stroke="#3a3b3f" stroke-width="3"/>
+
+<g font-family="'Libre Franklin',Arial,sans-serif" text-anchor="middle">
+<circle cx="190" cy="744" r="9" fill="#C8102E"/>
+<text x="190" y="722" font-size="16" fill="#c7a86b">OCT 2023</text>
+<text x="190" y="776" font-size="15" fill="#f2eee8">Family visits halted</text>
+
+<circle cx="500" cy="744" r="9" fill="#c7a86b"/>
+<text x="500" y="722" font-size="16" fill="#c7a86b">NOV 2025</text>
+<text x="500" y="776" font-size="15" fill="#f2eee8">Petition on visits filed</text>
+
+<circle cx="810" cy="744" r="9" fill="#59a97d"/>
+<text x="810" y="722" font-size="16" fill="#c7a86b">3 JUN 2026</text>
+<text x="810" y="776" font-size="15" fill="#f2eee8">HCJ 1537/24: ICRC ban unlawful</text>
+
+<circle cx="1130" cy="744" r="9" fill="#c7a86b"/>
+<text x="1130" y="722" font-size="16" fill="#c7a86b">9 JUN 2026</text>
+<text x="1130" y="776" font-size="15" fill="#f2eee8">Knesset bill later defeated</text>
+
+<circle cx="1430" cy="744" r="9" fill="#C8102E"/>
+<text x="1430" y="722" font-size="16" fill="#c7a86b">7 AUG 2026</text>
+<text x="1430" y="776" font-size="15" fill="#f2eee8">Ban renewed again</text>
+</g>
+
+<line x1="90" y1="826" x2="1520" y2="826" stroke="#2c2d31" stroke-width="2"/>
+<text x="90" y="862" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#7d7c79">Times of Palestine &#183; Sources: WAFA, Times of Israel, Addameer, HaMoked, Al Jazeera, Al Mezan</text>
+</svg>
