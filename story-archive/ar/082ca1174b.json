@@ -6,7 +6,13 @@
    "article": "https://shehabnews.com/post/162664/%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D8%B9%D8%AA%D9%82%D9%84-%D8%B4%D8%A7%D8%A8-%D8%A7-%D9%88%D8%B3%D8%B7-%D8%B7%D9%88%D9%84%D9%83%D8%B1%D9%85",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/730979",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-22T18:08:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "082ca1174b",
- "score": 45.42,
+ "score": 45.21,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
