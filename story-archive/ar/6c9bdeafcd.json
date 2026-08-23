@@ -1,0 +1,32 @@
+{
+ "brief": "أطلق جيش الاحتلال الرصاص الحي خلال اقتحام قرية العوجا شمال أريحا، بحسب المركز الفلسطيني للإعلام. وشهدت القرية الواقعة في محافظة أريحا بالضفة الغربية عملية عسكرية استخدمت فيها القوات الإسرائيلية الذخيرة الحية ضد السكان.\n\nيأتي الاقتحام في سياق التصعيد الأمني المستمر في الضفة الغربية، حيث تنفذ قوات الاحتلال عمليات عسكرية متكررة في مناطق مختلفة. ولم تتضح حتى الآن معلومات دقيقة بشأن عدد الضحايا أو الإصابات من إطلاق النار.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316782",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-23T07:44:20+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316782",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6c9bdeafcd",
+ "score": 63.3,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "جيش الاحتلال يطلق الرصاص الحي على قرية العوجا شمال أريحا"
+}

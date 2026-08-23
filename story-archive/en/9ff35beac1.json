@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/gaza-israeli-drone-strike-kills-a-palestinian-injures-others",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-palestinian-home-kills-least-one-central-gaza",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-22T16:00:30+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "9ff35beac1",
- "score": 61.71,
+ "score": 52.42,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
