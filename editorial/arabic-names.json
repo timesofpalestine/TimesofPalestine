@@ -404,6 +404,15 @@
         "ضحى حسن"
       ],
       "verified": "ar.wikipedia entry + carnegie-mec.org, 2026-08-20"
+    },
+    {
+      "latin": "Zohran Mamdani",
+      "ar": "زهران ممداني",
+      "wrong": [
+        "زهران مملداني",
+        "زوهران ممداني"
+      ],
+      "verified": "aljazeera.net + alarabiya coverage of the NYC mayoralty, checked 2026-08-22"
     }
   ]
 }

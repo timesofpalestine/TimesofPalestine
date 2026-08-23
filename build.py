@@ -187,7 +187,14 @@ RETRACTED_PIDS = {"23ffbc910f", "7b5ecb12e4", "4b6ac6121b", "33a0debafc",
                   # 2026-08-09 owner order: two Ma'an items covered the same
                   # JDECO announcement; the winter-maintenance framing goes,
                   # the power-cut schedule (times, areas) stays.
-                  "7eb4993857"}
+                  "7eb4993857",
+                  # 2026-08-22 owner order: the Netanyahu/Mamdani billboard
+                  # brief misidentified New York's mayor as a "Palestinian-
+                  # American legislator" — he is neither Palestinian nor a
+                  # legislator. Replaced by the original
+                  # netanyahu-mamdani-billboard-2026-08-22, which carries
+                  # the correction note.
+                  "b29d35926d"}
 validate_feed_config(FEEDS)
 MEDIA_RIGHTS = load_media_manifest(ROOT / "media-rights.json")
 CORRECTIONS = load_editorial_json(
