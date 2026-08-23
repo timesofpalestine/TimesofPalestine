@@ -1,0 +1,44 @@
+{
+ "brief": "An Israeli air strike near Gaza's Maghazi refugee camp killed one person and wounded two others, Al Jazeera English reported. The attack struck the area in the central Gaza Strip where the densely populated camp is situated, home to thousands of Palestinian displaced persons.\n\nThe circumstances surrounding the strike remain unclear. No immediate statement was issued by Israeli military officials regarding the operation or its intended target. The identities of the casualty and the two wounded individuals were not disclosed in initial reports of the incident.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/23/israeli-air-strike-near-gaza-refugee-camp-kills-one-person-and-injures-two?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strike-central-gaza-kills-one-wounds-two",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-israeli-drone-strike-kills-a-palestinian-injures-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-23T09:43:47+00:00",
+ "dek": "Israeli air attack near Gaza's Maghazi camp kills one person and injures two others.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/ap_6a8ab3a702f69-1787474855.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/23/israeli-air-strike-near-gaza-refugee-camp-kills-one-person-and-injures-two?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/23/israeli-air-strike-near-gaza-refugee-camp-kills-one-person-and-injures-two?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "467e398644",
+ "score": 63.64,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli air strike near Gaza camp kills one, injures two"
+}
