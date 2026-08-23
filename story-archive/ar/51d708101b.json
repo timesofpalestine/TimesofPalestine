@@ -1,0 +1,38 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، أحرقت قوات الاحتلال الإسرائيلي منازل في بلدة حداثا جنوب لبنان. وأفاد المصدر بتنفيذ العملية دون تحديد عدد المنازل المتضررة أو حجم الأضرار المادية والبشرية الناجمة عنها.\n\nوتقع بلدة حداثا بالقرب من الحدود اللبنانية الإسرائيلية في منطقة جنوب لبنان التي شهدت توترات أمنية متكررة بين الطرفين. يندرج هذا الحادث ضمن سلسلة من التصعيدات الأمنية التي تطال المناطق الحدودية بين البلدين.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316944",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/731165",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-23T20:10:06+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/YGmZZT9vp3q81-1HSxgQhGdpcsNDXUUd48MedoiWsX24NMkidXQA49jOFYrW1RDvs4MXtRmh99xjONIKc1mrA4hznr-jbo-Im2X9FwmkiSToOGQrj23cNsHcV-Hwp0aPVyVFY31__FOE8TiukQI-I37yEPUAOQWtG4oUH-CqtlTYvdH1xZ5X2umds26IPfZDG3Kfb4dKmlfPAXqjUvJqDVjzcinoLhSfiNA4VAQOljL15eYdaz-Idjpm2WINJngN2KwPj4cJJngCXnC5dLczVF7tvabLV2LeBHhyjkL4ducfwpFvZcXMa3XrRdHxk2ZN9DHvYsXuJzOwZqIZ9dyfCw.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316944",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/316944"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "51d708101b",
+ "score": 63.59,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "إسرائيل تحرق منازل في حداثا جنوب لبنان"
+}
