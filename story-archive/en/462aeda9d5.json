@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/disabled-elderly-palestinian-beaten-club-israeli-settler",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48252",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-08-23T04:46:48+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "462aeda9d5",
- "score": 47.29,
+ "score": 44.34,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
