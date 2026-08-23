@@ -1,0 +1,32 @@
+{
+ "brief": "قصفت مسيرة إسرائيلية مخيم اللحام بالقرب من مسجد الألباني غربي مدينة خانيونس بجنوب قطاع غزة، بحسب المركز الفلسطيني للإعلام. أسفرت الغارة عن سقوط عدد من الجرحى في الموقع.\n\nلم تُحدَّد أعداد الضحايا أو درجات إصابتهم بدقة في اللحظات الأولى للحادثة. يأتي القصف وسط الحرب الدائرة على قطاع غزة منذ أكثر من شهر، حيث تشن إسرائيل غارات جوية متتالية على مناطق متفرقة بالقطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316881",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-23T14:13:47+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316881",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a5bc275629",
+ "score": 63.65,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "مسيرة إسرائيلية تقصف مخيم اللحام غرب خانيونس"
+}
