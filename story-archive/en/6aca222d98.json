@@ -6,7 +6,43 @@
    "article": "original:palestinian-documents-guide-2026-08-22-12.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israeli-forces-kill-three-palestinians-gaza-shoot-child-death-nablus",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-airstrikes-gaza-kill-two-people-including-4-year-old-boy-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/west-bank-colonizers-assault-four-palestinians-ram-a-citizens-vehicle",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48252",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/8/21/west_bank_settlers",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/besieged-by-israeli-settlers-and-cut-off-from-the-outside-world-palestinian-families-on-a-west-bank-hilltop-refuse-to-leave",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-22T12:21:05+00:00",
@@ -24,7 +60,7 @@
  "modified": null,
  "original": true,
  "pid": "6aca222d98",
- "score": 108.07,
+ "score": 108.05,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
