@@ -6,7 +6,19 @@
    "article": "https://shehabnews.com/post/162678/%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85%D8%A7%D8%AA-%D9%88%D8%B6%D8%B1%D8%A8-%D9%88%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%B5%D8%B9-%D8%AF-%D8%B9%D8%AF%D9%88%D8%A7%D9%86%D9%87-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.maannews.net/news/2167422.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-close-only-entrance-west-bank-village-report-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-23T05:47:00+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "949fa72110",
- "score": 62.78,
+ "score": 62.59,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

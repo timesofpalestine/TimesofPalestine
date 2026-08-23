@@ -13,12 +13,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48242",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
   }
  ],
  "date": "2026-08-20T04:00:00+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "9d2b663955",
- "score": 80.75,
+ "score": 80.73,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",
