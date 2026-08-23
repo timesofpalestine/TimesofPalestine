@@ -1,0 +1,44 @@
+{
+ "brief": "A heavy Israeli air strike hit a warehouse in central Gaza, according to Al Jazeera English. The strike's timing, precise location within the central region, and full scope of damage were not immediately detailed in initial reports.\n\nThe operation added to ongoing Israeli military activity across Gaza. The warehouse's function, contents, and whether the structure was destroyed entirely remained unclear from available information at the time of reporting.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/23/heavy-israeli-air-strike-hits-warehouse-in-central-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strike-central-gaza-kills-one-wounds-two",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-israeli-drone-strike-kills-a-palestinian-injures-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-23T13:20:57+00:00",
+ "dek": "Heavy Israeli air strike hits warehouse in central Gaza.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787491242.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/23/heavy-israeli-air-strike-hits-warehouse-in-central-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/23/heavy-israeli-air-strike-hits-warehouse-in-central-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5a3b7ce8ef",
+ "score": 63.89,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli air strike destroys warehouse in central Gaza"
+}
