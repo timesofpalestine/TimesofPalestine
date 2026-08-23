@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli occupation forces launched raids and arrest operations across the West Bank, the Ma'an news agency reported. The campaign included closures of roads in multiple areas as military units moved through Palestinian towns and villages. The operations were part of broader security activity by Israeli authorities in the territory.\n\nThe scope of the arrests and the specific locations targeted in the sweep were not immediately detailed. Roadblocks were established at checkpoints controlling access to several Palestinian communities. Residents reported heightened military presence in affected areas as forces continued their operations.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167422.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-close-only-entrance-west-bank-village-report-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-23T07:35:48+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/AShiBpTHT1PtLJG1qjbNGnDDFHCjGSzKXuXismPFkALyssF-Vcl03a1AqHeuRLe7pPGnhVxLiWLmmTBnoyDv3x2J31_qrDbbxLi2mAxO7StGnHRS2xV8EVdRDAxhXmDfHVT-v4LgOesasOXfd36CIMQ6oyxWnIawDuw5W8876yfSfFRbFrzpxzGMb0kUVrUIxA3tQjYxzH_pBVaEsN3-y3iqDmCVDfz6waS7ErI6kRSGlAItzrsB5h4jmbMM2hxUzIx_UrKD8pA4zSF6tSuG77Tm2tYBIiOU0HU-2S2NL8mQIAdjZBPMYTQoNf4CrMQzEL0GjeYF-O_Mr9z__CHtIA.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2167422.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167422.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "068259a6f2",
+ "score": 49.69,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces conduct arrest sweeps across West Bank, seal roads"
+}
