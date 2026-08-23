@@ -13,6 +13,18 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/731172",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d9%84%d8%b7%d8%a7%d8%a6%d8%b1%d8%a7%d8%aa-%d8%a7%d9%84%d9%88%d8%b1%d9%82%d9%8a%d8%a9-%d8%aa%d9%87%d8%af%d8%af-%d8%aa%d8%b1%d8%b3%d8%a7%d9%86%d8%a9-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
   }
  ],
  "date": "2026-08-23T17:51:28+00:00",
@@ -30,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "498b2170c0",
- "score": 61.54,
+ "score": 61.28,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
