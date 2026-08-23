@@ -19,6 +19,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-airstrikes-gaza-kill-two-people-including-4-year-old-boy-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-23T13:20:57+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "5a3b7ce8ef",
- "score": 63.89,
+ "score": 63.68,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
