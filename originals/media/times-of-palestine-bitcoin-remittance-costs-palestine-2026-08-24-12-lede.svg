@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Israel's cash cap leaves Gazans paying brokers up to 55 percent</title>
+<desc id="dsc">Bar chart comparing the World Bank global average remittance cost of 6.36 percent in the third quarter of 2025 with the cost of getting cash in Gaza: an extra 15 to 20 percent to collect a transfer from abroad, 15 to 50 percent of value lost turning a bank balance into banknotes, and cash-out commissions known as takyeesh reaching up to 55 percent during 2025. A footer strip notes 20 billion shekels of cash flowing into the West Bank and Gaza each year against 18 billion permitted back out, leaving a trapped surplus worth about 4 billion dollars by the end of 2025.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="70" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="4.5" fill="#c7a86b">GAZA · THE COST OF CASH</text>
+
+<text x="90" y="130" font-family="'Source Serif 4',Georgia,serif" font-size="47" fill="#f2eee8">Israel&#8217;s cash cap leaves Gazans</text>
+<text x="90" y="183" font-family="'Source Serif 4',Georgia,serif" font-size="47" fill="#f2eee8">paying brokers up to 55%</text>
+<text x="90" y="228" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#aaa9a5">سقف النقد الإسرائيلي: عمولات التكييش تصل إلى 55%</text>
+
+<!-- axis -->
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">
+<line x1="620" y1="288" x2="620" y2="672" stroke="#3a3b3e" stroke-width="2"/>
+<line x1="760" y1="288" x2="760" y2="672" stroke="#2a2b2e"/>
+<line x1="900" y1="288" x2="900" y2="672" stroke="#2a2b2e"/>
+<line x1="1040" y1="288" x2="1040" y2="672" stroke="#2a2b2e"/>
+<line x1="1180" y1="288" x2="1180" y2="672" stroke="#2a2b2e"/>
+<line x1="1320" y1="288" x2="1320" y2="672" stroke="#2a2b2e"/>
+<line x1="1460" y1="288" x2="1460" y2="672" stroke="#2a2b2e"/>
+<text x="620" y="281" text-anchor="middle">0%</text>
+<text x="760" y="281" text-anchor="middle">10</text>
+<text x="900" y="281" text-anchor="middle">20</text>
+<text x="1040" y="281" text-anchor="middle">30</text>
+<text x="1180" y="281" text-anchor="middle">40</text>
+<text x="1320" y="281" text-anchor="middle">50</text>
+<text x="1460" y="281" text-anchor="middle">60</text>
+</g>
+
+<!-- row 1: world bank benchmark -->
+<g>
+<rect x="620" y="307" width="89" height="46" fill="#286344"/>
+<rect x="620" y="307" width="89" height="46" fill="none" stroke="#59a97d" stroke-width="1.5"/>
+<text x="723" y="330" font-family="'Libre Franklin',Arial,sans-serif" font-size="25" fill="#59a97d" dominant-baseline="middle">6.36%</text>
+<text x="600" y="323" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">World Bank global average</text>
+<text x="600" y="348" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">cost of sending remittances, Q3 2025</text>
+</g>
+
+<!-- row 2: 15-20% collection fee -->
+<g>
+<rect x="620" y="402" width="210" height="46" fill="#5a1620"/>
+<rect x="830" y="402" width="70" height="46" fill="#C8102E"/>
+<text x="916" y="425" font-family="'Libre Franklin',Arial,sans-serif" font-size="25" fill="#f2eee8" dominant-baseline="middle">15&#8211;20%</text>
+<text x="600" y="418" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Extra charge to collect a</text>
+<text x="600" y="443" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">transfer sent from abroad</text>
+</g>
+
+<!-- row 3: 15-50% value lost -->
+<g>
+<rect x="620" y="497" width="210" height="46" fill="#5a1620"/>
+<rect x="830" y="497" width="490" height="46" fill="#C8102E"/>
+<text x="1336" y="520" font-family="'Libre Franklin',Arial,sans-serif" font-size="25" fill="#f2eee8" dominant-baseline="middle">15&#8211;50%</text>
+<text x="600" y="513" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Value lost turning a bank</text>
+<text x="600" y="538" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">balance into usable banknotes</text>
+</g>
+
+<!-- row 4: 55% peak -->
+<g>
+<rect x="620" y="592" width="770" height="46" fill="#8a1f2d"/>
+<rect x="1386" y="586" width="4" height="58" fill="#c7a86b"/>
+<text x="1404" y="615" font-family="'Libre Franklin',Arial,sans-serif" font-size="25" fill="#c7a86b" dominant-baseline="middle">55%</text>
+<text x="600" y="608" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Cash-out peak in 2025 &#8212; takyeesh</text>
+<text x="600" y="633" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">التكييش &#8212; بيع النقد الورقي بعمولة</text>
+</g>
+
+<!-- footer stat strip -->
+<line x1="90" y1="712" x2="1460" y2="712" stroke="#3a3b3e" stroke-width="2"/>
+
+<g>
+<text x="90" y="768" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#c7a86b">20bn shekels</text>
+<text x="90" y="798" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">cash flowing into the West Bank</text>
+<text x="90" y="820" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">and Gaza each year</text>
+</g>
+
+<line x1="560" y1="730" x2="560" y2="828" stroke="#3a3b3e" stroke-width="2"/>
+<g>
+<text x="600" y="768" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#f2eee8">18bn shekels</text>
+<text x="600" y="798" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">the ceiling the Bank of Israel</text>
+<text x="600" y="820" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">permits back out per year</text>
+</g>
+
+<line x1="1070" y1="730" x2="1070" y2="828" stroke="#3a3b3e" stroke-width="2"/>
+<g>
+<text x="1110" y="768" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#C8102E">$4 billion</text>
+<text x="1110" y="798" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">estimated trapped cash surplus</text>
+<text x="1110" y="820" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">by the end of 2025</text>
+</g>
+
+<text x="90" y="872" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Sources: World Bank Remittance Prices Worldwide; Institute for Palestine Studies; Prism Reports (March 2026); Atlantic Council issue brief</text>
+</svg>
