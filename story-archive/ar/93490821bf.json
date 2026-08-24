@@ -9,9 +9,21 @@
    "verified": true
   },
   {
+   "article": "https://www.alquds.co.uk/%d9%86%d8%aa%d9%86%d9%8a%d8%a7%d9%87%d9%88-%d9%8a%d8%b2%d8%b9%d9%85-%d9%85%d8%ad%d8%a7%d9%88%d9%84%d8%a9-%d8%a5%d9%8a%d8%b1%d8%a7%d9%86-%d8%a7%d8%ba%d8%aa%d9%8a%d8%a7%d9%84-%d8%a3%d8%ad%d8%af-%d8%a3",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/QudsN/731373",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428421",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
    "verified": true
   }
  ],
@@ -30,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "93490821bf",
- "score": 61.25,
+ "score": 61.0,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
