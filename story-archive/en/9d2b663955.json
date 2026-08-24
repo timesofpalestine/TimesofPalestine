@@ -6,13 +6,7 @@
    "article": "https://www.hrw.org/news/2026/08/20/west-bank-israel-backed-settler-violence-drives-displacement",
    "name": "Human Rights Watch",
    "url": "https://www.hrw.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/aug/21/israeli-settler-attacks-shift-to-heart-of-territory-earmarked-for-palestinian-state",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-20T04:00:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "9d2b663955",
- "score": 79.21,
+ "score": 79.19,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",
