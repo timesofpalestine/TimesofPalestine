@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://imemc.org/article/army-kills-a-child-in-nablus-shoots-and-abducts-one-in-ramallah",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
    "article": "https://pchrgaza.org/palestinian-child-killed-by-settler-gunfire-in-hebron-attack",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
@@ -18,12 +24,6 @@
    "article": "https://www.middleeasteye.net/news/israeli-forces-kill-three-palestinians-gaza-shoot-child-death-nablus",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/pchr-palestinian-child-killed-by-settler-gunfire-in-hebron-attack",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
    "verified": true
   },
   {
@@ -60,7 +60,7 @@
  "modified": null,
  "original": false,
  "pid": "d3d39b7cfd",
- "score": 58.75,
+ "score": 58.52,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
