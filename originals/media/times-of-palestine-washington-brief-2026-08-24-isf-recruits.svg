@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Who is actually filling Gaza's International Stabilization Force, and what Washington pays for African peacekeepers elsewhere</title>
+  <desc id="desc">A bilingual chart of troop pledges to the International Stabilization Force for Gaza as of 24 August 2026, drawn to a single scale in which the full bar equals the authorised force size of 20,000 soldiers set by its commander, Major General Jasper Jeffers, at the Board of Peace's inaugural meeting in Washington on 19 February 2026. Indonesia's pledge of 8,000 has been on indefinite hold since about a week after the United States and Israel attacked Iran on 28 February 2026. Uganda has pledged about 1,200 after its parliament approved the deployment on 6 August 2026; Morocco up to 500; Kosovo, Kazakhstan and Albania about 80 between them. Israel's security cabinet voted on 26 July 2026 to admit about 200 troops to begin with. The lower panel sets the Gaza money beside the Somalia ledger: the State Department notified Congress on 30 July 2026 of 206 million dollars for the Gaza force, while the United States notified the African Union on 1 July 2026 that it will not fund the AU Support and Stabilization Mission in Somalia beyond 31 December 2026, a mission in which Uganda holds 4,500 of the places and in which each soldier's government is paid 1,000 dollars a month.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a1f2d"/>
+      <stop offset=".5" stop-color="#286344"/>
+      <stop offset="1" stop-color="#c7a86b"/>
+    </linearGradient>
+    <pattern id="hold" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="12" fill="#2b2c30"/>
+      <rect width="5" height="12" fill="#5a2b33"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#a9a8a4}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:16px}
+      .small{font-size:19px}
+      .body{font-size:22px}
+      .label{font-size:17px;font-weight:800;letter-spacing:1.4px}
+      .figure{font-size:30px;font-weight:800}
+      .big{font-size:40px;font-weight:800}
+      .name{font-size:23px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="88" y="78" class="serif ivory" font-size="46" font-weight="800">The force on paper, and the soldiers actually pledged</text>
+  <text x="88" y="118" class="sans muted body">One scale throughout — the full bar is the 20,000 soldiers the force was authorised to field</text>
+  <text x="1516" y="160" class="arabic ivory" font-size="33" font-weight="800" text-anchor="end">القوة على الورق.. والجنود المتعهَّد بهم فعلا</text>
+  <text x="1516" y="192" class="arabic muted small" text-anchor="end">مقياس واحد — العمود الكامل يساوي عشرين ألف جندي</text>
+
+  <rect x="88" y="214" width="1428" height="4" fill="url(#spine)"/>
+
+  <text x="120" y="258" class="sans gold label">PLEDGES AGAINST THE AUTHORISED SIZE — التعهدات مقابل القوام المعتمد</text>
+
+  <!-- Row 1: authorised size -->
+  <text x="120" y="300" class="sans ivory name">Authorised force size</text>
+  <text x="120" y="324" class="arabic muted tiny">القوام المعتمد للقوة</text>
+  <rect x="420" y="284" width="1000" height="30" rx="4" fill="none" stroke="#c7a86b" stroke-width="2" stroke-dasharray="9 7"/>
+  <text x="440" y="306" class="sans gold figure">20,000</text>
+  <text x="1400" y="306" class="sans muted tiny" text-anchor="end">Maj. Gen. Jasper Jeffers, Board of Peace, Washington, 19 February 2026</text>
+
+  <!-- Row 2: Indonesia on hold -->
+  <text x="120" y="368" class="sans ivory name">Indonesia — on hold</text>
+  <text x="120" y="392" class="arabic muted tiny">إندونيسيا — مجمّد</text>
+  <rect x="420" y="352" width="400" height="30" rx="4" fill="url(#hold)" stroke="#8a1f2d" stroke-width="2"/>
+  <text x="838" y="374" class="sans red figure">8,000</text>
+  <text x="1400" y="374" class="sans muted tiny" text-anchor="end">frozen indefinitely about a week after the 28 February 2026 attack on Iran</text>
+
+  <!-- Row 3: Uganda -->
+  <text x="120" y="436" class="sans ivory name">Uganda</text>
+  <text x="120" y="460" class="arabic muted tiny">أوغندا</text>
+  <rect x="420" y="420" width="60" height="30" rx="4" fill="#286344" stroke="#61aa80" stroke-width="2"/>
+  <text x="498" y="442" class="sans green figure">1,200</text>
+  <text x="1400" y="442" class="sans muted tiny" text-anchor="end">parliament approved the deployment on 6 August 2026 after a request from Washington in July</text>
+
+  <!-- Row 4: Morocco -->
+  <text x="120" y="504" class="sans ivory name">Morocco</text>
+  <text x="120" y="528" class="arabic muted tiny">المغرب</text>
+  <rect x="420" y="488" width="25" height="30" rx="3" fill="#286344" stroke="#61aa80" stroke-width="2"/>
+  <text x="463" y="510" class="sans green figure">up to 500</text>
+  <text x="1400" y="510" class="sans muted tiny" text-anchor="end">planning officers reported on the ground; no full contingent deployed</text>
+
+  <!-- Row 5: Kosovo, Kazakhstan, Albania -->
+  <text x="120" y="572" class="sans ivory name">Kosovo, Kazakhstan, Albania</text>
+  <text x="120" y="596" class="arabic muted tiny">كوسوفو وكازاخستان وألبانيا</text>
+  <rect x="420" y="556" width="6" height="30" rx="2" fill="#286344" stroke="#61aa80" stroke-width="2"/>
+  <text x="444" y="578" class="sans green figure">about 80</text>
+  <text x="1400" y="578" class="sans muted tiny" text-anchor="end">combined, by the count the Associated Press reported on 23 August 2026</text>
+
+  <!-- Row 6: Israel-approved entry -->
+  <text x="120" y="640" class="sans ivory name">Cleared by Israel to enter</text>
+  <text x="120" y="664" class="arabic muted tiny">المصرّح لهم بالدخول</text>
+  <rect x="420" y="624" width="10" height="30" rx="2" fill="#c7a86b" stroke="#c7a86b" stroke-width="2"/>
+  <text x="448" y="646" class="sans gold figure">about 200</text>
+  <text x="1400" y="646" class="sans muted tiny" text-anchor="end">security cabinet, 26 July 2026 — to the edge of a pilot zone in Rafah</text>
+
+  <rect x="88" y="690" width="1428" height="2" fill="#3a3b3f"/>
+
+  <text x="120" y="726" class="sans gold label">THE SAME WASHINGTON, TWO LEDGERS — واشنطن نفسها.. دفتران</text>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="742" width="320" height="126" rx="8" fill="#2b2c30" stroke="#286344" stroke-width="2"/>
+    <rect x="466" y="742" width="320" height="126" rx="8" fill="#2b2c30" stroke="#8a1f2d" stroke-width="2"/>
+    <rect x="812" y="742" width="320" height="126" rx="8" fill="#2b2c30" stroke="#3a3b3f" stroke-width="2"/>
+    <rect x="1158" y="742" width="320" height="126" rx="8" fill="#2b2c30" stroke="#3a3b3f" stroke-width="2"/>
+  </g>
+
+  <text x="144" y="792" class="sans green big">$206m</text>
+  <text x="144" y="820" class="sans ivory tiny">notified to Congress for the Gaza force, 30 July 2026</text>
+  <text x="144" y="848" class="arabic muted tiny">إخطار للكونغرس لتمويل قوة غزة</text>
+
+  <text x="490" y="792" class="sans red big">31 Dec 2026</text>
+  <text x="490" y="820" class="sans ivory tiny">US funding for the AU mission in Somalia ends</text>
+  <text x="490" y="848" class="arabic muted tiny">نهاية التمويل الأميركي لبعثة الصومال</text>
+
+  <text x="836" y="792" class="sans ivory big">4,500</text>
+  <text x="836" y="820" class="sans ivory tiny">Uganda's places in that Somalia mission</text>
+  <text x="836" y="848" class="arabic muted tiny">حصة أوغندا في بعثة الصومال</text>
+
+  <text x="1182" y="792" class="sans ivory big">$1,000</text>
+  <text x="1182" y="820" class="sans ivory tiny">paid per soldier each month in Somalia</text>
+  <text x="1182" y="848" class="arabic muted tiny">ما يُدفع شهريا عن كل جندي في الصومال</text>
+
+  <text x="1516" y="884" class="sans muted tiny" text-anchor="end">Times of Palestine — Washington Brief, 24 August 2026 · تايمز أوف فلسطين — موجز واشنطن</text>
+</svg>
