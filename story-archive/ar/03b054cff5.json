@@ -1,0 +1,38 @@
+{
+ "brief": "قصفت مدفعية الاحتلال الإسرائيلي شرق مخيم البريج وسط قطاع غزة، بحسب المركز الفلسطيني للإعلام. وطالت القذائف المنطقة المحيطة بالمخيم الذي يضم آلاف اللاجئين الفلسطينيين.\n\nلم تُفصح المصادر عن حجم الأضرار المادية الناجمة عن القصف أو عدد الإصابات في الأرواح فوراً، غير أن القصف أضيف إلى سلسلة عمليات عسكرية متواصلة تطال مناطق مختلفة من غزة.\n\nيعاني قطاع غزة من حملة عسكرية مكثفة تشمل قصفاً جوياً ومدفعياً منذ أسابع، ما أسفر عن خسائر فادحة في الأرواح والبنية التحتية.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/317077",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/731343",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-24T15:11:36+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/A2zKnkTFNFzalotLa7GLJE4nIgiWHgjHh3rvuPWSsgb659C9vinAEgHu8nNVRATurAy-zan6tkt6qP1hQ4QT0d7JRtiYx54PJ9YfvNNaITTWEn5DWcWU6K5NyfgCdFT6I2oC8cB-LKfEzCfMPSJkWwJ7BxTbM-cRjrda6Tpw5w-2eEvzL2vM2dC8r62gk_gPp4RiF7Isyy2Ls6y8ltO4_cBnzD0UMcdetiVdDLdBDOQZ_QT5PU77C_4BgMT5qYPlJvXm4f7nCzM5ncilh2TdZHdJP1_i3oYxJmoJWkF6FVkfspyZIhue0GJHNMGEJcoa-krR7q3znciWjhCKfk8udg.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/317077",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/317077"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "03b054cff5",
+ "score": 63.95,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "مدفعية الاحتلال تقصف شرق مخيم البريج بغزة"
+}
