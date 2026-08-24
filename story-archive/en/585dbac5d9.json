@@ -1,0 +1,44 @@
+{
+ "brief": "An Israeli drone strike killed two Palestinians in Deir al-Balah early Monday morning, according to medical sources cited by Anadolu Agency. The strike struck an area in central Gaza where displaced residents had gathered, part of the territory's ongoing humanitarian crisis as fighting continues across the enclave.\n\nMedical personnel at local facilities confirmed the identities of the two killed, though their names were not immediately released in initial reports. The strike added to the mounting civilian toll in Gaza's central region, where displacement camps and shelters have become frequent targets during the conflict.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-kills-two-central-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-israeli-airstrikes-kill-two-palestinians-injure-many-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-airstrikes-gaza-kill-two-people-including-4-year-old-boy-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-24T01:37:28+00:00",
+ "dek": "Israeli drone strike kills two in central Gaza An Israeli drone strike targeting displaced Palestinians in central Gaza's Deir al-Balah killed two early on Monday, Anadolu Agency reported citing medical sources. The two killed were identified as Mohammed…",
+ "image": "https://www.middleeasteye.net/sites/default/files/2026-08/kite-gaza-israel-palestine-children.jpg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-kills-two-central-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-kills-two-central-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "585dbac5d9",
+ "score": 63.85,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli drone strike kills two Palestinians in central Gaza"
+}

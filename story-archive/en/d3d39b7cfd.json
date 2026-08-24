@@ -37,18 +37,6 @@
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.maannews.net/news/2167422.html",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/israeli-airstrikes-gaza-kill-two-people-including-4-year-old-boy-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-08-23T18:47:11+00:00",
@@ -66,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "d3d39b7cfd",
- "score": 59.33,
+ "score": 59.1,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
