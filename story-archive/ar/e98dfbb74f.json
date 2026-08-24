@@ -1,0 +1,38 @@
+{
+ "brief": "شنّت طائرات الاحتلال غارة على مخيم الشاطئ في غرب مدينة غزة، بحسب المركز الفلسطيني للإعلام. أسفرت الغارة عن تصاعد دخان كثيف من الموقع المستهدف، في إشارة إلى حجم الضررار الذي لحق بالمنطقة.\n\nولم تُعلن جهات رسمية فلسطينية فوراً عن حصيلة من الإصابات أو تقييم شامل للأضرار المادية التي ألحقتها الغارة بالمخيم والمباني المحيطة به.\n\nيأتي القصف في سياق التصعيد العسكري المستمر على قطاع غزة منذ أكثر من عام، حيث يستهدف الاحتلال مناطق مأهولة بالسكان بشكل متكرر.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/317061",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/731321",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-24T14:29:18+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/H-CFWr_8PDE3KBW3JammUR5R2Vs-Mv9xAGA5VgVdarWBy5A_XonbqxzIymlbUenrPQ771AlP_2hORHWTHnuuvpmbL4Ujfd-m1DdQZ0uM-Jb-LgettxGdtZCRGR3b5ard0GIIyGVraEOWrSt4WqOnLVxajp_d7BDd7lyC7o8c5hYw5HTm6p0GEtmEq6cgW04iLwhqDp6G4VjhWSnf5sTbeGIRqO6xfl_9e5dXiPdFAHzdCiZwJ3-h5ZMXMSrh4MqZekveRukEf1s3aiMocdqPf8GSstA8gA-0_JWtddQfqOcXT6e7KDF3B2hqtUBUs7so8RL28VMYijgQXvCuukNUbg.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/317061",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/317061"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e98dfbb74f",
+ "score": 63.95,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يقصف مخيم الشاطئ غرب غزة"
+}
