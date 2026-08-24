@@ -9,21 +9,9 @@
    "verified": true
   },
   {
-   "article": "https://t.me/maannews/36377",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
    "article": "https://imemc.org/article/army-kills-a-child-in-nablus-shoots-and-abducts-one-in-ramallah",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/eyesonpal/53770",
-   "name": "Eye on Palestine",
-   "url": "https://t.me/eyesonpal",
    "verified": true
   }
  ],
@@ -42,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "1278cba28f",
- "score": 49.88,
+ "score": 49.46,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

@@ -1,0 +1,32 @@
+{
+ "brief": "Al Jazeera English argues that Israeli settler violence in the occupied West Bank constitutes pogroms rather than isolated clashes. The outlet contends that the systematic nature and scale of attacks by settlers against Palestinian communities meet the formal definition of organized, violent persecution targeting a specific group.\n\nThe characterization challenges mainstream media framing that often depicts the incidents as sporadic confrontations between opposing sides. Al Jazeera's analysis suggests the attacks reflect a coordinated pattern of violence targeting Palestinian civilians and property across the territory, rather than random acts of aggression tied to specific disputes.\n\nThe outlet's terminology carries significant weight in describing the nature of settler conduct in the West Bank, where Palestinians face recurring waves of attacks on homes, land, and infrastructure.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/24/why-pogrom-best-describes-whats-happening-in-the-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-24T19:09:45+00:00",
+ "dek": "Israeli settler attacks in the occupied West Bank aren’t just ‘clashes’, they fit the definition of pogroms.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787598614.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/24/why-pogrom-best-describes-whats-happening-in-the-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/24/why-pogrom-best-describes-whats-happening-in-the-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0ed30df667",
+ "score": 49.78,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settler attacks in West Bank fit pogrom definition, Al Jazeera says"
+}
