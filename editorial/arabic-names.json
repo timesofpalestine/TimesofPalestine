@@ -432,6 +432,42 @@
         "زوهران ممداني"
       ],
       "verified": "aljazeera.net + alarabiya coverage of the NYC mayoralty, checked 2026-08-22"
+    },
+    {
+      "latin": "Abdul El-Sayed (Michigan Senate nominee)",
+      "ar": "عبد الرحمن السيد",
+      "wrong": [
+        "عبدل السيد",
+        "عبد السايد"
+      ],
+      "verified": "aljazeera.net + ajnet encyclopedia entry + almodon + arabic.euronews, 2026-08-24"
+    },
+    {
+      "latin": "Mike Huckabee (US ambassador to Israel)",
+      "ar": "مايك هاكابي",
+      "wrong": [
+        "هاكابى",
+        "مايك هكابي"
+      ],
+      "verified": "aljazeera.net + asharq.com + il.usembassy.gov Arabic page, 2026-08-24"
+    },
+    {
+      "latin": "Gadi Eisenkot (Yashar leader)",
+      "ar": "غادي آيزنكوت",
+      "wrong": [
+        "آيزنكوط",
+        "إيزنكوط"
+      ],
+      "verified": "arab48 + raya.ps + sonara.net election polling coverage, 2026-08-24"
+    },
+    {
+      "latin": "Ofer Winter (new right-wing party)",
+      "ar": "عوفر فينتر",
+      "wrong": [
+        "عوفير فينتر",
+        "عوفر وينتر"
+      ],
+      "verified": "raya.ps + arab48 coverage of the Channel 12 poll scenarios, 2026-08-24"
     }
   ]
 }
