@@ -6,7 +6,25 @@
    "article": "original:ynet-army-settler-crime-westbank-2026-08-23.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/features/2026/8/24/why-israeli-settler-attacks-on-palestinians-in-west-bank-are-pogroms?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/palestinian-american-determined-defend-his-home-israeli-settlers",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/pchr-palestinian-child-killed-by-settler-gunfire-in-hebron-attack",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-23T06:30:00+00:00",
@@ -24,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "dc73b03022",
- "score": 83.12,
+ "score": 83.07,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
