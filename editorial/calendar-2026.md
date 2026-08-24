@@ -117,6 +117,18 @@ land in a specific window.
     the dual-use lists, and the hundred and eighteen temporary limbs Humanity
     & Inclusion fitted from early 2025. Written as a trade profile, not a
     grief piece.
+  - ✅ week of Aug 24–30 — `reem-ghanayem-book-of-wills-2026-08-24.*`
+    (2026-08-24): the poet, translator and scholar from the Triangle —
+    born in Jaljulia on 19 May 1982, a doctorate on the theatre of the
+    absurd from the University of Haifa — who compiled "Book of Wills"
+    (Akoya, 112 pages), the last wills and testaments of eighteen Gazan
+    writers including Refaat Alareer's "If I Must Die", with forewords by
+    Judith Butler and Alberto Manguel. Longlisted on 21 August for the
+    fifteenth Palestine Book Awards. Celebratory register per the features
+    order, built on her fifteen-year translation shelf (Joyce, Bukowski
+    twice, Burroughs twice, Richard Wright's 817 haiku, the African
+    American poetry anthology) and her own three collections. Filed the
+    same day the humans section went stale at 25 hours.
 - **Arabic-first commissioning:** 2–3 originals per month reported for the
   Arabic reader first (Arab Support and Her Story are the natural homes),
   then rendered into English.
@@ -213,6 +225,27 @@ land in a specific window.
     (Eizenkot) and `hrw-settler-displacement-107-communities-2026-08-23`
     (Turmus Ayya). No new manifest entries were needed; every URL was
     already rights-cleared in `media-rights.json`.
+  - 2026-08-24: 202 cover-led of 400 originals at the start of the cycle
+    (photo-led share 0.495 — the merge of the stranded 23 August PR added
+    sixteen press-review items, most of them on category covers). Four
+    already published reports were converted to manifest-cleared Commons
+    photographs, each keeping its category cover as `imageFallback:` —
+    `channel-13-poll-eisenkot-ahead-2026-08-13` (Eizenkot),
+    `katz-lebanon-long-stay-us-rebuke-2026-08-13` (Israel Katz),
+    `smotrich-zehut-merger-poll-2026-08-09` (Bezalel Smotrich) and
+    `iran-rejects-hormuz-claim-2026-08-16` (the Strait of Hormuz from
+    Terra/MODIS). Six of today's eight originals shipped photo-led from the
+    first build: the Ynet siege-method report (Turmus Ayya), the Maariv
+    bloc-fracture item (Eizenkot), the Quincy defense-treaty piece (the
+    United States Institute of Peace), the AIPAC item (the US Capitol), the
+    visa-ruling piece (the Truman Building) and the Al-Quds index report,
+    which needed the one new manifest entry of the day — the Palestine
+    Trade Tower in Ramallah, Mohammad Hijjawi / Wikimedia Commons,
+    CC BY-SA 4.0, now cleared for the whole markets-watch beat. Closing
+    position 200 cover-led of 400 (share 0.50): the two roundups and the
+    Real Lives profile shipped on category covers, so the share moved two
+    points despite six conversions — the standing note holds, checking
+    `media-rights.json` while writing is what lands a story photo-led.
 - ✅ **US-press wire feeds repaired 2026-08-11.** Four of the desk's
   think-tank feeds were dying on every sweep. CSIS and CFR now point at
   working endpoints, `israeli_press_fetch.py` resolves the HTML entities
