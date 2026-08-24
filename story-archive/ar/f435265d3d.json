@@ -1,0 +1,44 @@
+{
+ "brief": "أطلقت قوات الاحتلال النار على فلسطيني شمال مدينة خان يونس، ما أسفر عن إصابته، بحسب المركز الفلسطيني للإعلام. نقلت مستشفى ناصر الطبي الجريح للعلاج عقب وصوله إلى المنشأة الطبية.\n\nلم تتضح حتى الآن الملابسات الدقيقة للحادثة، بما في ذلك ظروف إطلاق النار والموقع المحدد للواقعة. كما لم تُعلن مستشفى ناصر حتى اللحظة عن التفاصيل الطبية لحالة الفلسطيني أو درجة خطورة إصابته.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316991",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/731254",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185238/%D9%88%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%85%D8%BA%D8%A7%D8%B1%D9%8A-%D8%A7%D9%84%D9%85%D8%B3%D8%B9%D9%81-%D8%A7%D9%84%D8%B0%D9%8A-%D8%A7%D8%AE%D8%AA%D8%B7%D9%81%D8%AA%D9%87-%D9%85%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1-%D9%88%D8%B3%D9%84%D9%85%D8%AA%D9%87-%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-24T09:09:33+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/aqOtbDkSpVYiCrqHJCBnHcJMBBLiQZxyjk-nMFfRKrbJplxZMWK-tFA97YbCJm7bbVsjX3nKjR6YCMi0PYxqkNZyBh2906soNu79qUUHetj98WxvmmMOfOB5yHRDhw1LukfUtTGSGn-sWobV_wKKuRoXgzj0wV9b42XY_2DFq9Hxo-k3MM87UgOy2HsbLBRHNMDQroNn-SYIPnLNXVDTQKDh6cROMedVJ4HWDvSgxA_rTuVQwhAwyICjg6ZYt_6K2KmyuaLDZGxIY9GGrd0NDwJxlaHl656NcEfIzK8X7I4IWgzT7lJrPy7kMSzEncmBelBenfwaMrmizkXJnGyjVQ.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316991",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/316991"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f435265d3d",
+ "score": 63.92,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يطلق النار على فلسطيني شمال خان يونس"
+}
