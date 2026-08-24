@@ -13,6 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/Arabi21News/428390",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": false
   }
  ],
  "date": "2026-08-23T06:50:00+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "3d1bfb862f",
- "score": 83.92,
+ "score": 83.87,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
