@@ -6,31 +6,31 @@
    "article": "https://t.me/maannews/36391",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
   },
   {
-   "article": "https://www.pbc.ps/dd",
-   "name": "تلفزيون فلسطين",
-   "url": "https://www.pbc.ps/",
-   "verified": false
+   "article": "https://t.me/Palinfo/317113",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-08-24T14:26:34+00:00",
  "dek": "",
- "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "image": "https://cdn4.telesco.pe/file/Q1A3hF2FesekUkEJ3rmqJHCvwr4mABVSo1-A-fO51u_XBnjzPscWY8xg9TpVJMM6s7jm28G2XuIT7_jsVLPcc_bA9SCEfffvwcVyXbXT2A2JK5Uscjl-j7qUL-qi4axlP6sjdq7CLqt3mPTRkli41J5_OU0yO6MFzmzMM9qhkD48_jQPXOKinmzDi8XxTQub06gJffco25M4JTCA2UPgEuwbXzeoD--FNBn-GHK6DCccGuBeqMXAVTatf3UFPBo_PuSiE7TNFgtyhryHu71hL1SlzlahvHK4c3PF9eNyNks0w-ccO7l1FPaIX1vnwxI91ZfEVYdTdA6leqab3egT6Q",
  "lang": "ar",
  "link": "https://t.me/maannews/36391",
  "max_age_hours": 72,
  "media": {
-  "credit": "Graphic: Times of Palestine",
+  "credit": "وكالة معا (حصري)",
   "licenseUrl": null,
-  "rightsBasis": "owned",
-  "source": "Times of Palestine"
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/36391"
  },
  "modified": null,
  "original": false,
  "pid": "f3bd595404",
- "score": 92.41,
+ "score": 92.14,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
