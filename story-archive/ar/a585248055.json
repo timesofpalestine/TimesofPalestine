@@ -6,7 +6,25 @@
    "article": "https://www.maannews.net/news/2167491.html",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/731285",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/391411",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/317008",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-08-24T11:17:15+00:00",
@@ -24,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "a585248055",
- "score": 49.73,
+ "score": 49.48,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
