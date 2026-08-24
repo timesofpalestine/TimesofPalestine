@@ -6,7 +6,19 @@
    "article": "https://www.pbc.ps/z",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217208&slug=%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-5-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%88%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D9%88%D9%85%D9%86%D8%B4%D8%A2%D8%AA-%D8%AE%D8%AF%D9%85%D9%8A%D8%A9-%D9%88%D9%85%D8%B3%D8%A7%D8%AC%D8%AF",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82427",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-08-24T16:15:38+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "226c86f7b1",
- "score": 60.57,
+ "score": 60.3,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
