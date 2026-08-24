@@ -1,0 +1,32 @@
+{
+ "brief": "بحسب وسائل إعلام لبنانية، أحرقت قوات الاحتلال حقولاً زراعية وممتلكات في بلدة الخيام جنوبي لبنان. وأفادت الوسائل الإعلامية بتدمير ممتلكات مدنية في البلدة، فيما لم تصرح بتفاصيل محددة حول حجم الخسائر الناجمة عن الحريق أو الظروف المحيطة بالحادثة.\n\nتقع الخيام على بُعد كيلومترات من الحدود الإسرائيلية، وتشهد المنطقة الحدودية بين لبنان والأراضي المحتلة توترات متكررة. وتُعتبر بلدات جنوب لبنان الحدودية منطقة حساسة شهدت عمليات عسكرية وتبادل إطلاق نار متقطع في الآونة الأخيرة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/316983",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-24T08:03:59+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/316983",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "10e286a2c0",
+ "score": 49.78,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قوات الاحتلال تحرق حقولاً وممتلكات في الخيام اللبنانية"
+}
