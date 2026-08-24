@@ -1,0 +1,32 @@
+{
+ "brief": "An Israeli airstrike struck a makeshift tent sheltering displaced Palestinians in Deir al-Balah, killing one man, Al Jazeera English reported. The strike targeted a shelter housing civilians who have fled their homes amid ongoing military operations in Gaza.\n\nThe incident underscores the vulnerability of displacement camps across the territory, where thousands of Palestinians forced from their residences live in improvised structures. Makeshift shelters offer limited protection against airstrikes as military operations continue to intensify in various areas of Gaza. Many displaced Palestinians lack access to permanent housing or reinforced facilities, leaving them exposed to strikes in the densely populated enclave.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/24/displaced-palestinians-in-gaza-face-intensifying-israeli-strikes?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-24T21:12:06+00:00",
+ "dek": "Israel struck a makeshift tent sheltering displaced Palestinians in Deir al-Balah, killing one man.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787605914.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/24/displaced-palestinians-in-gaza-face-intensifying-israeli-strikes?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/24/displaced-palestinians-in-gaza-face-intensifying-israeli-strikes?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "27a329ecec",
+ "score": 63.48,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli airstrike kills man sheltering in Deir al-Balah displacement camp"
+}
