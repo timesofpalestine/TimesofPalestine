@@ -13,18 +13,6 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/gaza-israeli-airstrikes-kill-two-palestinians-injure-many-others",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/israeli-airstrikes-gaza-kill-two-people-including-4-year-old-boy-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-08-24T12:31:00+00:00",
@@ -42,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "1d0c80e0e1",
- "score": 63.82,
+ "score": 63.45,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

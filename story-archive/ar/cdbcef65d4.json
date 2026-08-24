@@ -1,0 +1,38 @@
+{
+ "brief": "أسفرت العمليات العسكرية للاحتلال الإسرائيلي عن مقتل أربعة فلسطينيين بينهم طفلة منذ ساعات الفجر، وفقاً للمركز الفلسطيني للإعلام. وأضافت المادة الإخبارية أن الضحايا سقطوا برصاص القوات الإسرائيلية في قطاع غزة.\n\nلم تتضمن المادة الأصلية معلومات تفصيلية إضافية عن ملابسات العملية أو أسماء الضحايا أو المناطق الجغرافية المحددة التي وقعت فيها الحادثة. كما لم يرد في النص المصدر أي معلومات حول ظروف القصف أو الأسباب المعلنة من الجانب الإسرائيلي.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/317038",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/731298",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-24T12:52:19+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/317038",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cdbcef65d4",
+ "score": 63.66,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يقتل 4 فلسطينيين بينهم طفلة في غزة"
+}
