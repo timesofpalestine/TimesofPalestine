@@ -6,7 +6,19 @@
    "article": "https://t.me/maannews/36391",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/24/video-israel-attacks-desalination-plant-and-mosque-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/gary-indiana-power-us-iran-sanctions-israel-gaza-mosque-desalination",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-24T14:26:34+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "f3bd595404",
- "score": 90.51,
+ "score": 90.22,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

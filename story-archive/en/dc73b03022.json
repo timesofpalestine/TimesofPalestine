@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/news/palestinian-american-determined-defend-his-home-israeli-settlers",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://imemc.org/article/pchr-palestinian-child-killed-by-settler-gunfire-in-hebron-attack",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
@@ -42,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "dc73b03022",
- "score": 82.49000000000001,
+ "score": 82.43,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli restrictions are causing a fuel shortage across the occupied West Bank, according to Al Jazeera English. The disruptions have left residents and businesses struggling to secure adequate supplies for essential needs, from heating homes to powering vehicles and generators that provide electricity to communities across the territory.\n\nThe shortage has compounded existing hardship for Palestinians already facing economic constraints. Local officials have warned that prolonged fuel scarcity threatens to worsen conditions for hospitals, schools, water systems, and other critical infrastructure that depend on steady energy supplies to operate.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/24/israeli-restrictions-cause-fuel-shortage-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-24T19:18:00+00:00",
+ "dek": "Israeli restrictions are disrupting fuel supplies across the occupied West Bank.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/Screenshot-2026-08-24-at-20.12.03-1787598970.png?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/24/israeli-restrictions-cause-fuel-shortage-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/24/israeli-restrictions-cause-fuel-shortage-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "23bd0ea245",
+ "score": 49.59,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli restrictions disrupt West Bank fuel supplies"
+}
