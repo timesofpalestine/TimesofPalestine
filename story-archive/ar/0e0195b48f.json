@@ -7,6 +7,18 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/AlQastalps/391392",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/731207",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-24T00:26:18+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "0e0195b48f",
- "score": 60.67,
+ "score": 60.3,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",

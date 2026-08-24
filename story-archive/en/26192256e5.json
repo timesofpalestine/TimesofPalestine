@@ -6,19 +6,13 @@
    "article": "original:israelipress-hebrew-annexation-debate-2026-08-24-05.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.aljazeera.com/video/newsfeed/2026/8/23/occupied-west-bank-division-ps?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://mondoweiss.net/2026/08/an-american-citizen-was-abducted-by-israeli-forces-his-release-doesnt-mean-the-violence-stopped",
-   "name": "Mondoweiss",
-   "url": "https://mondoweiss.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-24T05:05:27+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "26192256e5",
- "score": 87.99000000000001,
+ "score": 87.95,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
