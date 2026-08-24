@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Israel budgets Area C land registration as parties debate sovereignty</title>
+  <desc id="dsc">Dark infographic in three panels: the 15 February cabinet decision allocating NIS 244.1 million over four years and up to 35 staff to update Area C land records; INSS arithmetic for any annexation map, roughly 10 percent for settlement jurisdiction areas, about 22 percent for the Jordan Valley and some 30 percent under the Trump plan's half of Area C; and Knesset votes of 71 to 13 on 23 July 2025, 32 to 9 on the Ma'ale Adumim bill and 25 to 24 on the Maoz sovereignty bill on 22 October 2025.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- headline -->
+  <text x="90" y="98" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Israel budgets Area C land registration</text>
+  <text x="90" y="150" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#c7a86b">as parties debate sovereignty</text>
+  <text x="90" y="196" font-family="Cairo,Arial,sans-serif" font-size="27" fill="#59a97d">ميزانية لتسجيل أراضي المنطقة ج والسيادة في النقاش</text>
+
+  <line x1="90" y1="232" x2="1470" y2="232" stroke="#3a3b40" stroke-width="2"/>
+
+  <!-- PANEL A -->
+  <rect x="90" y="270" width="440" height="460" rx="10" fill="#17181b" stroke="#2c2d32" stroke-width="2"/>
+  <text x="120" y="312" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="2" fill="#c7a86b">CABINET DECISION — 15 FEBRUARY</text>
+  <text x="120" y="356" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">West Bank land registry</text>
+  <text x="120" y="384" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">publication approved</text>
+
+  <text x="120" y="462" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#c7a86b">NIS 244.1m</text>
+  <text x="120" y="494" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">about $78 million, four years</text>
+
+  <line x1="120" y1="524" x2="500" y2="524" stroke="#3a3b40" stroke-width="2"/>
+
+  <text x="120" y="570" font-family="'Source Serif 4',Georgia,serif" font-size="34" fill="#f2eee8">Up to 35 staff</text>
+  <text x="120" y="598" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">to update Area C records</text>
+  <text x="120" y="638" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Justice Ministry given the</text>
+  <text x="120" y="662" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">registration task</text>
+  <text x="120" y="706" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d">تسجيل الأراضي في المنطقة ج</text>
+
+  <!-- PANEL B -->
+  <rect x="560" y="270" width="440" height="460" rx="10" fill="#17181b" stroke="#2c2d32" stroke-width="2"/>
+  <text x="590" y="312" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="2" fill="#c7a86b">ANNEXATION MAP ARITHMETIC</text>
+  <text x="590" y="342" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Share of the West Bank (INSS)</text>
+
+  <text x="590" y="392" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Settlement jurisdiction areas</text>
+  <rect x="590" y="402" width="113" height="26" fill="#8a1f2d"/>
+  <text x="715" y="422" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#c7a86b">~10%</text>
+
+  <text x="590" y="472" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Jordan Valley, broad sense</text>
+  <rect x="590" y="482" width="249" height="26" fill="#C8102E"/>
+  <text x="851" y="502" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#c7a86b">~22%</text>
+
+  <text x="590" y="552" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Trump plan: half of Area C</text>
+  <rect x="590" y="562" width="340" height="26" fill="#c7a86b"/>
+  <text x="940" y="582" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#c7a86b">~30%</text>
+
+  <text x="590" y="644" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">INSS: no planned annexation</text>
+  <text x="590" y="666" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">map has been publicly presented.</text>
+  <text x="590" y="706" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d">لم تُعرض خريطة ضم علناً</text>
+
+  <!-- PANEL C -->
+  <rect x="1030" y="270" width="440" height="460" rx="10" fill="#17181b" stroke="#2c2d32" stroke-width="2"/>
+  <text x="1060" y="312" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="2" fill="#c7a86b">KNESSET VOTES</text>
+
+  <text x="1060" y="360" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">23 July 2025 — declaration</text>
+  <rect x="1060" y="372" width="287" height="22" fill="#8a1f2d"/>
+  <rect x="1347" y="372" width="53" height="22" fill="#4a4b50"/>
+  <text x="1060" y="416" font-family="'Source Serif 4',Georgia,serif" font-size="22" fill="#c7a86b">71–13</text>
+
+  <text x="1060" y="470" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">22 Oct — Ma'ale Adumim bill</text>
+  <rect x="1060" y="482" width="130" height="22" fill="#8a1f2d"/>
+  <rect x="1190" y="482" width="36" height="22" fill="#4a4b50"/>
+  <text x="1060" y="526" font-family="'Source Serif 4',Georgia,serif" font-size="22" fill="#c7a86b">32–9</text>
+
+  <text x="1060" y="580" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">22 Oct — Maoz sovereignty bill</text>
+  <rect x="1060" y="592" width="101" height="22" fill="#8a1f2d"/>
+  <rect x="1161" y="592" width="97" height="22" fill="#4a4b50"/>
+  <text x="1060" y="636" font-family="'Source Serif 4',Georgia,serif" font-size="22" fill="#c7a86b">25–24</text>
+
+  <rect x="1060" y="662" width="16" height="16" fill="#8a1f2d"/>
+  <text x="1084" y="676" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">in favour</text>
+  <rect x="1188" y="662" width="16" height="16" fill="#4a4b50"/>
+  <text x="1212" y="676" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">against</text>
+  <text x="1060" y="712" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d">تصويتات الكنيست</text>
+
+  <!-- footer -->
+  <line x1="90" y1="766" x2="1470" y2="766" stroke="#3a3b40" stroke-width="2"/>
+  <text x="90" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Sources: FMEP, Israel Policy Forum, INSS, Ynet, Davar — election 27 October</text>
+  <text x="90" y="836" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#59a97d">الانتخابات في 27 تشرين الأول</text>
+  <text x="90" y="870" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="2" fill="#c7a86b">TIMES OF PALESTINE</text>
+</svg>
