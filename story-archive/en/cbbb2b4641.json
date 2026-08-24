@@ -1,0 +1,44 @@
+{
+ "brief": "An investigation into an Israeli strike on a Gaza hospital found that Israel probably committed war crimes in a double-tap attack that killed 20 people, including journalists and medics, Middle East Eye reported. The strike involved two successive bombardments of the same target, a tactic typically designed to kill rescuers who respond to the initial blast.\n\nUK Members of Parliament urged their government to hold Israel accountable following the attack. The hospital strike claimed the lives of medical personnel and journalists who were working at the facility when the bombardment occurred.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/news/israel-likely-committed-war-crimes-gaza-hospital-double-tap-investigation-finds",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-israeli-airstrikes-kill-two-palestinians-injure-many-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-airstrikes-gaza-kill-two-people-including-4-year-old-boy-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-24T09:27:58+00:00",
+ "dek": "Israel probably committed war crimes in Gaza hospital double-tap, investigation finds Submitted by MEE staff on Mon, 08/24/2026 - 09:12 MPs urge UK to hold Israel to account after attack killed 20, including journalists and medics A man holds the equipment…",
+ "image": "https://www.middleeasteye.net/sites/default/files/styles/crop_16_9/public/images-story/palestine-gaza-journalists-killed-nasser-hospital-khan-younis-25-aug-2025-reuters.jpg.jpg?itok=phOuNGhK",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/news/israel-likely-committed-war-crimes-gaza-hospital-double-tap-investigation-finds",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/news/israel-likely-committed-war-crimes-gaza-hospital-double-tap-investigation-finds"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cbbb2b4641",
+ "score": 63.66,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Investigation finds Israel likely committed war crimes in Gaza hospital attack"
+}
