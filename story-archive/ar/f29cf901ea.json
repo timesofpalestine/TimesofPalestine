@@ -1,0 +1,44 @@
+{
+ "brief": "توغلت قوات الاحتلال الإسرائيلي في قرية معرية بريف درعا الغربي، وفقاً للجزيرة نت. اقترن التوغل بوقفة احتجاجية نظمها أهالي معتقلين سوريين يقبعون في سجون إسرائيلية، حيث طالبوا الدول والمنظمات الدولية بالتدخل لتحرير أبنائهم.\n\nلم تُعلن قوات الاحتلال عن أسباب محددة للتوغل العسكري في المنطقة، فيما لا تزال حالة المعتقلين السوريين في السجون الإسرائيلية قضية معلقة منذ سنوات، دون وصول واضح لأسرهم أو توفر معلومات رسمية عن أحوالهم.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.net/news/2026/8/24/%d8%aa%d9%88%d8%ba%d9%84-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d9%81%d9%8a-%d8%af%d8%b1%d8%b9%d8%a7-%d9%88%d8%a3%d9%87%d8%a7%d9%84%d9%8a?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185272/%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%AA%D9%88%D8%BA%D9%84-%D8%AC%D9%86%D9%88%D8%A8%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-%D8%BA%D8%AF%D8%A7%D8%A9-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D9%84%D8%AE%D9%81%D8%B6-%D8%A7%D9%84%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217193&slug=%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D8%B1%D9%8A-%D9%8A%D9%84%D8%AA%D9%82%D9%8A-%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D8%A7%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-24T11:21:19+00:00",
+ "dek": "توغلت قوات الاحتلال الإسرائيلي في قرية معرية بريف درعا الغربي، بالتزامن مع وقفة لأهالي المعتقلين السوريين في سجون الاحتلال، طالبوا خلالها المجتمع الدولي بالضغط للإفراج عن أبنائهم.",
+ "image": "https://www.aljazeera.net/wp-content/uploads/2026/08/wqft-amam-alamm-almthdt-1787568558.jpg?resize=1920%2C1440",
+ "lang": "ar",
+ "link": "https://www.aljazeera.net/news/2026/8/24/%d8%aa%d9%88%d8%ba%d9%84-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d9%81%d9%8a-%d8%af%d8%b1%d8%b9%d8%a7-%d9%88%d8%a3%d9%87%d8%a7%d9%84%d9%8a?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "الجزيرة نت",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.net/news/2026/8/24/%d8%aa%d9%88%d8%ba%d9%84-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d9%81%d9%8a-%d8%af%d8%b1%d8%b9%d8%a7-%d9%88%d8%a3%d9%87%d8%a7%d9%84%d9%8a?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f29cf901ea",
+ "score": 47.56,
+ "source": "الجزيرة نت",
+ "source_id": "aja",
+ "source_url": "https://www.aljazeera.net/",
+ "title": "قوات إسرائيلية تتوغل في قرية درعا السورية"
+}

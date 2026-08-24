@@ -13,6 +13,12 @@
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d8%aa%d9%85%d9%86%d8%b9-%d9%86%d8%a7%d8%a6%d8%a8%d9%8a%d9%86-%d8%b3%d9%88%d9%8a%d8%af%d9%8a%d9%8a%d9%86-%d9%85%d9%86-%d8%af%d8%ae%d9%88%d9%84-%d8%a7%d9%84",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
   }
  ],
  "date": "2026-08-24T13:13:00+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "1890b3a6ba",
- "score": 49.07,
+ "score": 48.85,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
