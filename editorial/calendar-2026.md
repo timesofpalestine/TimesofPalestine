@@ -199,6 +199,20 @@ land in a specific window.
     never keeps pace with the press reviews' daily volume — the cheaper fix
     is to check `media-rights.json` for a cleared portrait of the subject
     while writing, which costs nothing and lands the story photo-led.
+  - 2026-08-23: 184 cover-led of 400 originals at the start of the cycle
+    (photo-led share 0.54). The desk worked both ends today. Four already
+    published reports were converted to manifest-cleared Commons
+    photographs, each keeping its category cover as `imageFallback:` —
+    `likud-primaries-2026-08-16` (Netanyahu, Feb 2023),
+    `thousand-martyrs-cup-2026-08-15` (Jibril Rajoub),
+    `gaza-fishermen-ceasefire-fire-2026-08-16` (Fishermen in Gaza) and
+    `us-pressure-qusra-condemnation-2026-08-15` (Qusra village). Three of
+    today's own originals shipped photo-led from the first build:
+    `ynet-army-settler-crime-westbank-2026-08-23` (Khirbet Ibziq, northern
+    Jordan Valley), `maariv-mansour-abbas-eisenkot-state-2026-08-23`
+    (Eizenkot) and `hrw-settler-displacement-107-communities-2026-08-23`
+    (Turmus Ayya). No new manifest entries were needed; every URL was
+    already rights-cleared in `media-rights.json`.
 - ✅ **US-press wire feeds repaired 2026-08-11.** Four of the desk's
   think-tank feeds were dying on every sweep. CSIS and CFR now point at
   working endpoints, `israeli_press_fetch.py` resolves the HTML entities
@@ -251,6 +265,13 @@ land in a specific window.
   editions, and the Lebanon-refugees, Rajoub, PALTEL-Ooredoo, elections-desk
   and Her Story English editions. Baseline before the pass: 159 flagged
   files.
+  Worked 2026-08-23: the nine worst-flagged reports in both editions —
+  eighteen files, 107 paragraphs: the Gaza-plan fine-print opinion, the
+  Palestinian documents guide, the op-ed voices roundup, the election-
+  machinery file, the women's detention accounts, the sending-money-home
+  guide, the prisoners' family-visits report filed by the desk this
+  morning, the Gaza midwives report and the Gaza athletes report. Baseline
+  before the pass: 164 flagged files.
 
 - ✅ **Arabic section starvation fixed structurally 2026-08-14.** `ar/opinion`
   (34h) and `ar/humans` (44h) went stale on most cycles for a simple reason:

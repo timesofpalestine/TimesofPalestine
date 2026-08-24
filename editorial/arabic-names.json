@@ -232,6 +232,25 @@
       "verified": "aljazeera.net + wafa.ps, 2026-08-17"
     },
     {
+      "latin": "Bashar Alhroub (Palestinian artist)",
+      "ar": "بشار الحروب",
+      "wrong": [
+        "بشار الهروب",
+        "بشار الخروب"
+      ],
+      "verified": "rommanmag.com feature on his 'Land of Salt' + aajqa.com culture report on the London 'Resurrection' show, 2026-08-23. The English romanisation 'Alhroub' invites الهروب; the family name is الحروب."
+    },
+    {
+      "latin": "Mtanes Shihadeh (Mada al-Carmel, former Balad MK)",
+      "ar": "إمطانس شحادة",
+      "wrong": [
+        "متانس شحادة",
+        "متنس شحادة",
+        "ميتانس شحادة"
+      ],
+      "verified": "ar.wikipedia.org entry + alaraby.co.uk author page for the same scholar, 2026-08-23. The English 'Mtanes' invites متانس; the Arabic form is إمطانس (also written امطانس)."
+    },
+    {
       "latin": "Mohammed Samhouri (Palestinian economist)",
       "ar": "محمد السمهوري",
       "wrong": [
