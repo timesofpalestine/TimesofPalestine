@@ -6,7 +6,13 @@
    "article": "https://qudsn.co/share/217206",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217206&slug=%D8%B5%D9%8A%D9%81-%D8%A8%D9%84%D8%A7-%D9%85%D8%A7%D8%A1-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
   }
  ],
  "date": "2026-08-24T15:10:58+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "ddb1ea235c",
- "score": 49.53,
+ "score": 49.25,
  "source": "شبكة قدس · تيليغرام",
  "source_id": "tg-qudsn",
  "source_url": "https://t.me/QudsN",

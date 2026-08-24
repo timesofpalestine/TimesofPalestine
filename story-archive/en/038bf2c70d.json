@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/as-part-of-ongoing-genocide-israel-continues-to-kill-and-forcibly-displace-palestinians-in-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/four-palestinians-killed-israeli-forces-gaza-including-young-girl",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-24T15:45:35+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "038bf2c70d",
- "score": 86.0,
+ "score": 85.97,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
