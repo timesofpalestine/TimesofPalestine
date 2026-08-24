@@ -1,0 +1,56 @@
+{
+ "brief": "Israel has threatened intensified military attacks and forced displacement in Gaza in response to children's kites, according to Al Jazeera English. The threat represents an escalation of tensions over the use of kites, which Palestinians have increasingly employed as protest tools during demonstrations and confrontations with Israeli forces.\n\nThe kites have emerged as a focal point of friction between Israeli military and Gaza residents over recent months. Israel has previously responded to kite-flying activities with targeted military operations in the territory, citing security concerns. The threat of renewed attacks underscores the volatile nature of the conflict and the range of tactics that have become flashpoints for confrontation along the Gaza border.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/2026/8/24/israel-threatens-attacks-in-gaza-over-childrens-kites?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-fire-kills-two-young-children-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-8-0",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-israeli-airstrikes-kill-two-palestinians-injure-many-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/as-part-of-ongoing-genocide-israel-continues-to-kill-and-forcibly-displace-palestinians-in-gaza",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-24T19:00:55+00:00",
+ "dek": "Israel has threatened intensified attacks and forced displacement in Gaza over children’s kites.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1787598046.jpg?resize=1560%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/2026/8/24/israel-threatens-attacks-in-gaza-over-childrens-kites?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/2026/8/24/israel-threatens-attacks-in-gaza-over-childrens-kites?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9cc818be98",
+ "score": 49.07,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel threatens Gaza attacks over children's kites"
+}
