@@ -1,0 +1,44 @@
+{
+ "brief": "Senior Israeli officers told the news site Ynet that the occupied West Bank is slipping out of the army's control, and the cause they name is not Palestinian attacks but the violence of Israeli settlers.\n\n\"The district is exiting control,\" one senior official said in the report, published on Sunday by the military correspondent Elisha Ben Kimon, who wrote that commanders describe the territory as on the brink of exploding.\n\nThe account is unusual for what it concedes. Palestinian attacks, in the officers' own telling, are in decline. What has risen is what the Israeli security establishment calls nationalist crime — arson, assault and the seizure of land by settlers — and the officers say the bodies charged with stopping it cannot coordinate well enough to do so.\n\nThey also say the army is stretched to its limit, running enforcement and settlement expansion at once, and that building inside Area B has produced what the report calls significant security tension.\n\nThe political line is the plainest in the piece. Security officials have warned the political echelon, Ben Kimon wrote, and the political echelon does not want to be entangled before the 27 October election.\n\nIsrael's Channel 12 carried a similar warning on Friday night, quoting an unnamed senior official saying there is a group here that wants chaos, and that support from part of the local leadership and parts of the government makes enforcement difficult.",
+ "cat": "israelipress",
+ "corroborating_sources": [
+  {
+   "article": "original:ynet-army-settler-crime-westbank-2026-08-23.en",
+   "name": "Times of Palestine",
+   "url": "",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/36376",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53770",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-23T06:30:00+00:00",
+ "dek": "Senior Israeli officers told the news site Ynet that the occupied West Bank is slipping out of the army's control, and the cause they name is not Palestinian attacks but the violence of Israeli settlers.",
+ "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Khirbet%20Ibziq%206.jpg?width=640",
+ "lang": "en",
+ "link": "original:ynet-army-settler-crime-westbank-2026-08-23.en",
+ "max_age_hours": 336.0,
+ "media": {
+  "credit": "Khirbet Ibziq, northern Jordan Valley — Aref Daraghmeh / B'Tselem via Wikimedia Commons (CC BY-SA 4.0)",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph of a northern Jordan Valley herding community (Aref Daraghmeh / B'Tselem) served from Wikimedia Commons, verified at build time",
+  "source": "https://commons.wikimedia.org/wiki/File:Khirbet_Ibziq_6.jpg"
+ },
+ "modified": null,
+ "original": true,
+ "pid": "dc73b03022",
+ "score": 84.25999999999999,
+ "source": "Times of Palestine",
+ "source_id": "top-original",
+ "source_url": "",
+ "title": "Ynet reports Israeli commanders fear settler crime will ignite the West Bank"
+}
