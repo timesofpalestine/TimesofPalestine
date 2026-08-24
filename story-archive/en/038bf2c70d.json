@@ -13,6 +13,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-israeli-airstrikes-kill-two-palestinians-injure-many-others",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-24T15:45:35+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "038bf2c70d",
- "score": 85.91,
+ "score": 85.87,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
