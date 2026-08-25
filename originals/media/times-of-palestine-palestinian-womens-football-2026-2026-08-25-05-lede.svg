@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Palestinian women footballers win West Asian honours far from home</title>
+<desc id="dsc">Dark editorial graphic listing four away venues for Palestine's women's national teams: Amman 2005 (first international, lost 9–0 to Jordan), Aqaba 12 April 2025 (under-20 WAFF title after a 1–1 draw and 4–2 penalty win over Jordan), Jeddah 24 November to 2 December 2025 (runners-up at the ninth WAFF Women's Championship) and Dushanbe 2 July 2025 (Asian Cup qualifying, lost 10–0 to North Korea). A footer notes 269 sports facilities destroyed wholly or partly in Gaza and 20 in the West Bank.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- ball watermark -->
+<g opacity="0.30" fill="none" stroke="#59a97d" stroke-width="3">
+<circle cx="1432" cy="152" r="78"/>
+<polygon points="1432,110 1472,139 1457,186 1407,186 1392,139"/>
+<line x1="1432" y1="110" x2="1432" y2="74"/>
+<line x1="1472" y1="139" x2="1506" y2="128"/>
+<line x1="1457" y1="186" x2="1478" y2="216"/>
+<line x1="1407" y1="186" x2="1386" y2="216"/>
+<line x1="1392" y1="139" x2="1358" y2="128"/>
+</g>
+
+<text x="90" y="66" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="5" fill="#c7a86b">FOOTBALL · WEST ASIA · AWAY GROUNDS</text>
+
+<text x="90" y="126" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Palestine's women footballers win in West Asia</text>
+<text x="90" y="178" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">every match played far from home</text>
+<text x="90" y="228" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#aaa9a5">لاعبات فلسطين يفزن في غرب آسيا وكل مبارياتهن بعيدا عن الوطن</text>
+
+<!-- CARD 1 -->
+<g>
+<rect x="110" y="300" width="335" height="370" rx="10" fill="#161719" stroke="#3a3b3e" stroke-width="2"/>
+<g transform="translate(134,330)">
+<rect x="0" y="0" width="287" height="110" rx="4" fill="#14251b" stroke="#286344" stroke-width="2"/>
+<line x1="143.5" y1="0" x2="143.5" y2="110" stroke="#286344" stroke-width="2"/>
+<circle cx="143.5" cy="55" r="22" fill="none" stroke="#286344" stroke-width="2"/>
+<rect x="0" y="30" width="34" height="50" fill="none" stroke="#286344" stroke-width="2"/>
+<rect x="253" y="30" width="34" height="50" fill="none" stroke="#286344" stroke-width="2"/>
+</g>
+<text x="134" y="486" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" fill="#c7a86b" letter-spacing="2">AMMAN</text>
+<text x="134" y="518" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#8f8d89">عمان</text>
+<line x1="134" y1="536" x2="421" y2="536" stroke="#3a3b3e" stroke-width="2"/>
+<text x="134" y="570" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">September 2005</text>
+<text x="134" y="604" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Jordan 9–0 Palestine</text>
+<text x="134" y="638" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#8a1f2d">First international</text>
+</g>
+
+<!-- CARD 2 (win) -->
+<g>
+<rect x="473" y="300" width="335" height="370" rx="10" fill="#191713" stroke="#c7a86b" stroke-width="2"/>
+<g transform="translate(497,330)">
+<rect x="0" y="0" width="287" height="110" rx="4" fill="#14251b" stroke="#59a97d" stroke-width="2"/>
+<line x1="143.5" y1="0" x2="143.5" y2="110" stroke="#59a97d" stroke-width="2"/>
+<circle cx="143.5" cy="55" r="22" fill="none" stroke="#59a97d" stroke-width="2"/>
+<rect x="0" y="30" width="34" height="50" fill="none" stroke="#59a97d" stroke-width="2"/>
+<rect x="253" y="30" width="34" height="50" fill="none" stroke="#59a97d" stroke-width="2"/>
+</g>
+<text x="497" y="486" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" fill="#c7a86b" letter-spacing="2">AQABA</text>
+<text x="497" y="518" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#8f8d89">العقبة</text>
+<line x1="497" y1="536" x2="784" y2="536" stroke="#4a423089" stroke-width="2"/>
+<text x="497" y="570" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">12 April 2025 · under-20</text>
+<text x="497" y="604" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">1–1, won 4–2 on penalties</text>
+<text x="497" y="638" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#59a97d">WAFF youth champions</text>
+</g>
+
+<!-- CARD 3 -->
+<g>
+<rect x="836" y="300" width="335" height="370" rx="10" fill="#161719" stroke="#3a3b3e" stroke-width="2"/>
+<g transform="translate(860,330)">
+<rect x="0" y="0" width="287" height="110" rx="4" fill="#14251b" stroke="#286344" stroke-width="2"/>
+<line x1="143.5" y1="0" x2="143.5" y2="110" stroke="#286344" stroke-width="2"/>
+<circle cx="143.5" cy="55" r="22" fill="none" stroke="#286344" stroke-width="2"/>
+<rect x="0" y="30" width="34" height="50" fill="none" stroke="#286344" stroke-width="2"/>
+<rect x="253" y="30" width="34" height="50" fill="none" stroke="#286344" stroke-width="2"/>
+</g>
+<text x="860" y="486" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" fill="#c7a86b" letter-spacing="2">JEDDAH</text>
+<text x="860" y="518" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#8f8d89">جدة</text>
+<line x1="860" y1="536" x2="1147" y2="536" stroke="#3a3b3e" stroke-width="2"/>
+<text x="860" y="570" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">24 Nov – 2 Dec 2025</text>
+<text x="860" y="604" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">9th WAFF Championship</text>
+<text x="860" y="638" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#59a97d">Runners-up, six teams</text>
+</g>
+
+<!-- CARD 4 -->
+<g>
+<rect x="1199" y="300" width="335" height="370" rx="10" fill="#161719" stroke="#3a3b3e" stroke-width="2"/>
+<g transform="translate(1223,330)">
+<rect x="0" y="0" width="287" height="110" rx="4" fill="#14251b" stroke="#286344" stroke-width="2"/>
+<line x1="143.5" y1="0" x2="143.5" y2="110" stroke="#286344" stroke-width="2"/>
+<circle cx="143.5" cy="55" r="22" fill="none" stroke="#286344" stroke-width="2"/>
+<rect x="0" y="30" width="34" height="50" fill="none" stroke="#286344" stroke-width="2"/>
+<rect x="253" y="30" width="34" height="50" fill="none" stroke="#286344" stroke-width="2"/>
+</g>
+<text x="1223" y="486" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" fill="#c7a86b" letter-spacing="2">DUSHANBE</text>
+<text x="1223" y="518" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#8f8d89">دوشنبه</text>
+<line x1="1223" y1="536" x2="1510" y2="536" stroke="#3a3b3e" stroke-width="2"/>
+<text x="1223" y="570" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">2 July 2025 · Asian Cup</text>
+<text x="1223" y="604" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">North Korea 10–0 Palestine</text>
+<text x="1223" y="638" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#8a1f2d">Group winner only qualified</text>
+</g>
+
+<line x1="90" y1="712" x2="1534" y2="712" stroke="#3a3b3e" stroke-width="2"/>
+
+<text x="90" y="760" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">269 sports facilities in Gaza destroyed wholly or partly; 20 in the West Bank</text>
+<text x="90" y="800" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5">منشآت رياضية دمرت كليا أو جزئيا في غزة والضفة الغربية — وفا</text>
+<text x="90" y="846" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#8f8d89">Sources: WAFF, Palestinian Football Association, WAFA, Petra, ABC News · Times of Palestine</text>
+</svg>
