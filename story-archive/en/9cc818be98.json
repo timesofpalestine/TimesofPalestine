@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://imemc.org/article/eight-killed-including-children-in-israeli-bombings-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/08/israeli-fire-kills-two-young-children-gaza-medics-say",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -18,12 +24,6 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-8-0",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/in-gaza-when-a-paper-kite-rises-from-the-rubble",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
    "verified": true
   },
   {
@@ -48,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "9cc818be98",
- "score": 46.2,
+ "score": 45.97,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
