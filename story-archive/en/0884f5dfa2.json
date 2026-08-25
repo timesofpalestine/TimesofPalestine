@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/solafah-abu-kweik-a-mothers-double-loss-losing-her-daughter-without-farewell-and-her-son-while-helping-the-injured",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/eight-killed-including-children-in-israeli-bombings-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-24T13:59:16+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "0884f5dfa2",
- "score": 85.19,
+ "score": 85.15,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
