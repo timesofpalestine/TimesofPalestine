@@ -1,0 +1,38 @@
+{
+ "brief": "Prime Minister Benjamin Netanyahu said Iran tried to kill one of his sons, the Israeli leader claimed on social media. He did not provide evidence or specify which son was targeted, nor did he elaborate on when the alleged attempt occurred. Netanyahu's assertion follows a pattern of escalating rhetoric between Israel and Iran.\n\nThe claim emerged days after the United States and Israel killed Iran's supreme leader Ayatollah Ali Khamenei and four family members in Tehran, according to Al Jazeera English. The strike marked a significant escalation in regional tensions between the two countries.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/25/israels-netanyahu-claims-iran-tried-to-kill-one-of-his-sons?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israels-netanyahu-says-iran-tried-kill-one-his-sons",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-25T02:54:40+00:00",
+ "dek": "Netanyahu's claim comes after US and Israel killed Iran's supreme leader and four members of his family in Tehran.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/ap_6a8cd5bcee0b9-1787614652.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/25/israels-netanyahu-claims-iran-tried-to-kill-one-of-his-sons?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/25/israels-netanyahu-claims-iran-tried-to-kill-one-of-his-sons?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "543465de3a",
+ "score": 63.89,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu claims Iran attempted to assassinate his son"
+}
