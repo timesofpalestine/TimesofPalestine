@@ -5259,8 +5259,7 @@ def render_story(it, lang, related, rail, built_at):
     plain_desc = meta_desc(summary_text(
         (it.get("brief") or it["dek"]).replace(chr(10), " ")))
     desc = esc(plain_desc)
-    og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
-    og_image = f'<meta property="og:image" content="{esc(og_img_url)}">' if it["image"] else ""
+    og_image, _og_card, og_img_url = og_image_tags(it)
     story_stamp = (
         f'<p class="story-stamp"><time datetime="{utc_iso(it["date"])}">{t["story_published"]} {full_stamp(it["date"], lang)}</time>'
         + (f'<time datetime="{utc_iso(it["modified"])}">{t["story_updated"]} {full_stamp(it["modified"], lang)}</time>'
@@ -5419,6 +5418,31 @@ def render_story(it, lang, related, rail, built_at):
 {totop_html(lang)}
 </body>
 </html>"""
+
+def og_image_tags(it):
+    """OpenGraph image tags that social crawlers can actually use.
+
+    Facebook and friends REJECT SVG og:images outright and then scrape the
+    page for any large image — which on a story page is the Keep Reading
+    rail, i.e. a DIFFERENT story's art (owner report 2026-08-24: a
+    remittance-costs share card showed the bitchat drill infographic).
+    House SVGs therefore advertise their build-rasterized .png sibling
+    (the workflow's rsvg step writes one for every dist/media SVG), with
+    the site banner as a second og:image so a failed raster still shows
+    OUR branding, never a neighboring story's graphic. Raster ledes pass
+    through unchanged; photoless stories get the banner alone.
+    """
+    image = it.get("image") or ""
+    url = (BASE_URL + image) if image.startswith("/") else image
+    banner = f'<meta property="og:image" content="{BASE_URL}/og-banner.png">'
+    if not image:
+        return banner, "summary", f"{BASE_URL}/og-banner.png"
+    if image.lower().endswith(".svg"):
+        raster = url[:-4] + ".png"
+        return (f'<meta property="og:image" content="{esc(raster)}">' + banner,
+                "summary_large_image", raster)
+    return f'<meta property="og:image" content="{esc(url)}">', "summary_large_image", url
+
 def story_redirect_stub(it, lang):
     """Tiny page at the bare-pid URL forwarding to the slugged canonical.
     This IS the share link (owner call 2026-08-05 — an Arabic slug
@@ -5428,8 +5452,7 @@ def story_redirect_stub(it, lang):
     target = story_url(it, lang)
     desc = esc(meta_desc(summary_text(
         (it.get("brief") or it["dek"]).replace(chr(10), " "))))
-    og_img_url = (BASE_URL + it["image"]) if (it.get("image") or "").startswith("/") else it.get("image")
-    og_image = f'<meta property="og:image" content="{esc(og_img_url)}">' if it["image"] else ""
+    og_image, _og_card, og_img_url = og_image_tags(it)
     return (f'<!DOCTYPE html><html lang="{lang}"><head><meta charset="utf-8">'
             f'<title>{esc(it["title"])}</title>'
             f'<link rel="canonical" href="{target}">'
