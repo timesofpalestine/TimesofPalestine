@@ -61,6 +61,20 @@ jobs:
           SUPPORT_URL: ${{ vars.SUPPORT_URL }}
           INVESTIGATIONS: ${{ vars.INVESTIGATIONS }}   # set this repo variable to "off" to pause the desk
         run: python build.py
+      # Social crawlers (Facebook first among them) reject SVG og:images and
+      # then scrape the page for ANY large image — which put a neighboring
+      # story's infographic on a share card (owner report 2026-08-24). Every
+      # house SVG in dist/media gets a PNG sibling here so the og:image the
+      # renderer advertises actually exists. Fail-open per file: a failed
+      # raster leaves the og-banner fallback tag to carry the card.
+      - name: Rasterize house SVGs for social cards
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq librsvg2-bin fonts-noto-core fonts-noto-naskh-arabic >/dev/null
+          shopt -s nullglob
+          for f in dist/media/*.svg; do
+            rsvg-convert -w 1200 -h 675 --keep-aspect-ratio "$f" -o "${f%.svg}.png" 2>/dev/null || true
+          done
+          ls dist/media/*.png 2>/dev/null | wc -l | xargs echo "social rasters written:"
       - name: Validate generated site
         run: python validate_build.py dist
       - name: Publish sanitized health summary
