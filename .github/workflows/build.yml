@@ -67,9 +67,20 @@ jobs:
       # house SVG in dist/media gets a PNG sibling here so the og:image the
       # renderer advertises actually exists. Fail-open per file: a failed
       # raster leaves the og-banner fallback tag to carry the card.
+      # The step is an ENHANCEMENT and must never stop the paper: every
+      # og:image already carries the og-banner fallback tag, so if the
+      # tooling is missing the cards degrade to branding, not to a
+      # neighboring story's art. First run failed on a wrong package name
+      # (fonts-noto-naskh-arabic absent on the runner) — hence every line
+      # here is fail-open.
       - name: Rasterize house SVGs for social cards
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq librsvg2-bin fonts-noto-core fonts-noto-naskh-arabic >/dev/null
+          sudo apt-get update -qq >/dev/null 2>&1 || true
+          sudo apt-get install -y -qq librsvg2-bin fonts-noto-core >/dev/null 2>&1 || true
+          if ! command -v rsvg-convert >/dev/null; then
+            echo "::warning::rsvg-convert unavailable — social rasters skipped; og-banner fallback carries the share cards this build"
+            exit 0
+          fi
           shopt -s nullglob
           for f in dist/media/*.svg; do
             rsvg-convert -w 1200 -h 675 --keep-aspect-ratio "$f" -o "${f%.svg}.png" 2>/dev/null || true
