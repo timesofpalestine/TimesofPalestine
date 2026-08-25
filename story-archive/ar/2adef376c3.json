@@ -1,0 +1,32 @@
+{
+ "brief": "قصفت إسرائيل بلدة مركبا جنوب لبنان بنيران مدفعية، بحسب المركز الفلسطيني للإعلام. ولم تتضح حتى الآن تفاصيل الأضرار الناجمة عن القصف أو عدد الإصابات إن وجدت.\n\nيندرج هذا الاستهداف ضمن سلسلة التصعيد الأمني المتكرر على الحدود اللبنانية الإسرائيلية، حيث شهدت المنطقة جنوب لبنان توترات متصاعدة خلال الأشهر الماضية. وتشكل بلدة مركبا من البلدات الجنوبية القريبة من الخط الفاصل بين البلدين.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/317176",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-25T05:41:21+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/317176",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2adef376c3",
+ "score": 48.8,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قصف إسرائيلي يستهدف بلدة مركبا جنوب لبنان"
+}
