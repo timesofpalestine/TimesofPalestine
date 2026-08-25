@@ -6,7 +6,13 @@
    "article": "https://shehabnews.com/post/162813/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-3-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86-%D9%88%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D9%85%D9%85%D8%AA%D9%84%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%87%D8%A7%D9%84%D9%8A-%D9%81%D9%8A-%D8%A8%D8%B1%D9%8A%D8%A9-%D8%B2%D8%B9%D8%AA%D8%B1%D8%A9",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/3661-2",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-08-25T06:11:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "e51dbd394d",
- "score": 62.73,
+ "score": 62.48,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
