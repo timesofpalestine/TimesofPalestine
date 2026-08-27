@@ -6,7 +6,25 @@
    "article": "original:uk-settlement-trade-ban-2026-08-26.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/escalating-israeli-violations-in-occupied-west-bank-2",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-two-brothers-during-nablus-raid",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168204",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-26T12:30:00+00:00",
@@ -24,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "196c21555d",
- "score": 86.31,
+ "score": 86.25999999999999,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
