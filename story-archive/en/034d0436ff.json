@@ -1,0 +1,38 @@
+{
+ "brief": "Three Palestinians died in Israeli strikes on Gaza, Al Jazeera English reported, as the defence minister renewed threats to forcibly remove residents from areas where kites or balloons are being flown. The strikes marked the latest escalation in a pattern of violence tied to incendiary devices.\n\nIsraeli officials have repeatedly warned of severe consequences for communities involved in launching kites and balloons across the border into Israeli territory. The defence minister's renewed threat to expel Palestinians from affected areas represents an intensification of Israel's stated response to the practice, which has caused fires and damage in southern Israeli communities over recent months.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/27/three-killed-in-strikes-on-gaza-as-israel-renews-threats-over-kite-flying?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/36439",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-27T18:56:08+00:00",
+ "dek": "Israeli defence minister renews threat to expel Palestinians from areas where kites or balloons are being flown in Gaza.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/epa_6a90881a67bb-1787856922.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/27/three-killed-in-strikes-on-gaza-as-israel-renews-threats-over-kite-flying?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/27/three-killed-in-strikes-on-gaza-as-israel-renews-threats-over-kite-flying?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "034d0436ff",
+ "score": 60.91,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel threatens expulsion over Gaza kite attacks"
+}

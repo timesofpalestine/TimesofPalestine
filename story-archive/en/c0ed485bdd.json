@@ -1,0 +1,32 @@
+{
+ "brief": "Israel set up and funded a fraudulent American think tank designed to exploit artificial intelligence for propaganda purposes, the Quincy Institute reported. The operation represents an effort to use algorithmic systems to amplify messaging at scale and shape online narratives through automated channels.\n\nThe scheme involved creating a bogus research institution with the appearance of independent American credibility while operating under Israeli direction and financing. Such operations raise questions about how state actors can weaponize AI tools to distribute disinformation across platforms and audiences at unprecedented volume and speed.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-26T11:29:00+00:00",
+ "dek": "",
+ "image": "https://i.guim.co.uk/img/media/4c5be9b6f1682a9aafe9cbdc94c89a258fa5cec5/999_0_5001_4000/master/5001.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e4f8b5b0eb4778568ef5affd89f99ad4",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Quincy Institute",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c0ed485bdd",
+ "score": 70.34,
+ "source": "Quincy Institute",
+ "source_id": "quincy",
+ "source_url": "https://quincyinst.org/",
+ "title": "Israel funded fake US think tank to manipulate AI systems."
+}
