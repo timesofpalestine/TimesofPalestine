@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">UN verifies Israeli sexual violence against Palestinian detainees: 31 cases</title>
+<desc id="dsc">Dark graphic panel. A bar chart of the 31 cases of conflict-related sexual violence verified by the United Nations Secretary-General's report S/2026/321 of 21 April 2026: 14 men, 9 boys, 7 women and 1 girl from Gaza and the West Bank, 2023 to 2025. A side panel lists the three Israeli bodies added to the report's annex of parties credibly suspected of patterns of sexual violence — the Israel Defense Forces, the Israel Prison Service and the border police Counter-Terrorism Unit — and notes no indictment in Israel for sexual violence against a Palestinian detainee. A footer lists the detention sites recorded and the report's caveat that its count is indicative, not comprehensive.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- faint cell-bars motif -->
+<g opacity="0.07" fill="#f2eee8">
+<rect x="1150" y="55" width="10" height="215"/>
+<rect x="1200" y="55" width="10" height="215"/>
+<rect x="1250" y="55" width="10" height="215"/>
+<rect x="1300" y="55" width="10" height="215"/>
+<rect x="1350" y="55" width="10" height="215"/>
+<rect x="1400" y="55" width="10" height="215"/>
+<rect x="1450" y="55" width="10" height="215"/>
+<rect x="1500" y="55" width="10" height="215"/>
+<rect x="1150" y="55" width="360" height="9"/>
+<rect x="1150" y="261" width="360" height="9"/>
+</g>
+
+<!-- kicker -->
+<text x="90" y="80" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#c7a86b">UN SECRETARY-GENERAL'S REPORT  S/2026/321  ·  21 APRIL 2026</text>
+
+<!-- headline -->
+<text x="90" y="142" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">UN verifies Israeli sexual violence</text>
+<text x="90" y="194" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">against Palestinian detainees</text>
+<text x="90" y="244" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#59a97d" text-anchor="start" direction="rtl">الأمم المتحدة توثّق عنفاً جنسياً بحق محتجزين فلسطينيين</text>
+
+<line x1="90" y1="286" x2="1520" y2="286" stroke="#c7a86b" stroke-opacity="0.35" stroke-width="2"/>
+
+<!-- LEFT: chart -->
+<text x="90" y="374" font-family="'Source Serif 4',Georgia,serif" font-size="64" font-weight="700" fill="#c7a86b">31</text>
+<text x="180" y="348" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">verified cases of conflict-related sexual violence,</text>
+<text x="180" y="372" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Gaza and the West Bank — 13 in 2025, 18 in 2023–2024</text>
+<text x="180" y="398" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5" text-anchor="start" direction="rtl">حالات موثّقة من العنف الجنسي المرتبط بالنزاع</text>
+
+<line x1="210" y1="428" x2="210" y2="672" stroke="#aaa9a5" stroke-opacity="0.35" stroke-width="2"/>
+
+<!-- Men 14 -->
+<rect x="210" y="448" width="480" height="24" fill="#8a1f2d"/>
+<text x="90" y="458" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="600" fill="#f2eee8">Men</text>
+<text x="90" y="478" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="start" direction="rtl">رجال</text>
+<text x="704" y="469" font-family="'Source Serif 4',Georgia,serif" font-size="26" font-weight="700" fill="#f2eee8">14</text>
+
+<!-- Boys 9 -->
+<rect x="210" y="510" width="309" height="24" fill="#C8102E"/>
+<text x="90" y="520" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="600" fill="#f2eee8">Boys</text>
+<text x="90" y="540" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="start" direction="rtl">فتيان</text>
+<text x="533" y="531" font-family="'Source Serif 4',Georgia,serif" font-size="26" font-weight="700" fill="#f2eee8">9</text>
+
+<!-- Women 7 -->
+<rect x="210" y="572" width="240" height="24" fill="#8a1f2d"/>
+<text x="90" y="582" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="600" fill="#f2eee8">Women</text>
+<text x="90" y="602" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="start" direction="rtl">نساء</text>
+<text x="464" y="593" font-family="'Source Serif 4',Georgia,serif" font-size="26" font-weight="700" fill="#f2eee8">7</text>
+
+<!-- Girl 1 -->
+<rect x="210" y="634" width="34" height="24" fill="#C8102E"/>
+<text x="90" y="644" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="600" fill="#f2eee8">Girl</text>
+<text x="90" y="664" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="start" direction="rtl">فتاة</text>
+<text x="258" y="655" font-family="'Source Serif 4',Georgia,serif" font-size="26" font-weight="700" fill="#f2eee8">1</text>
+
+<!-- RIGHT: annex panel -->
+<rect x="860" y="318" width="660" height="356" fill="#ffffff" fill-opacity="0.035" stroke="#c7a86b" stroke-opacity="0.4" stroke-width="2"/>
+<text x="890" y="358" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="1.2" fill="#c7a86b">ADDED TO THE UN ANNEX OF SUSPECTED PARTIES</text>
+<text x="890" y="386" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#59a97d" text-anchor="start" direction="rtl">أُضيفت إلى ملحق الأمم المتحدة</text>
+
+<rect x="890" y="416" width="14" height="14" fill="#C8102E"/>
+<text x="918" y="429" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Israel Defense Forces</text>
+<rect x="890" y="456" width="14" height="14" fill="#C8102E"/>
+<text x="918" y="469" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Israel Prison Service</text>
+<rect x="890" y="496" width="14" height="14" fill="#C8102E"/>
+<text x="918" y="509" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Border police Counter-Terrorism Unit</text>
+
+<line x1="890" y1="540" x2="1490" y2="540" stroke="#aaa9a5" stroke-opacity="0.3" stroke-width="1.5"/>
+
+<text x="890" y="600" font-family="'Source Serif 4',Georgia,serif" font-size="54" font-weight="700" fill="#c7a86b">0</text>
+<text x="945" y="580" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">indictments reported in Israel for sexual</text>
+<text x="945" y="602" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">violence against a Palestinian detainee</text>
+<text x="890" y="640" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">5 reserve soldiers were indicted on 19 Feb 2025 over the</text>
+<text x="890" y="660" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Sde Teiman assault — all charges dropped in March 2026</text>
+
+<!-- FOOTER band -->
+<rect x="90" y="704" width="1430" height="152" fill="#ffffff" fill-opacity="0.03" stroke="#286344" stroke-opacity="0.5" stroke-width="2"/>
+<text x="118" y="742" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Detention and interrogation sites recorded: Sde Teiman · Etzion · Majnunah camp · Gush Etzion police station</text>
+<text x="118" y="770" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Israel Prison Service: Megiddo · Ofer · Ramla · Hasharon · Shatta · Nafha · Damon, where Palestinian women are held</text>
+<text x="118" y="806" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#c7a86b">Indicative, not comprehensive: Israel denies UN bodies access to detention facilities and to Gaza.</text>
+<text x="118" y="836" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5" text-anchor="start" direction="rtl">إسرائيل تمنع وصول الأمم المتحدة إلى مرافق الاحتجاز وإلى غزة</text>
+</svg>
