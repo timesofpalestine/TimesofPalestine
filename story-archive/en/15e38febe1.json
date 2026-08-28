@@ -1,0 +1,38 @@
+{
+ "brief": "Palestinian activists face terrorism charges following a demonstration at Donald Trump's golf resort in Ayrshire, Scotland, according to Al Jazeera English. Protesters targeted the facility with red paint and displayed slogans reading \"Gaza is not 4 sale\" during the action against the property.\n\nThe charges represent a significant legal escalation tied to protest activity related to the Gaza conflict. Police and prosecutors classified the incident under terrorism statutes rather than pursuing standard property damage charges, a decision that underscores heightened tensions surrounding demonstrations connected to Middle Eastern geopolitics on British soil.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/28/pa-activists-face-terror-charges-over-trump-golf-resort-protest-report?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/prosecutors-say-seven-charged-damaging-trump-scottish-golf-course-had-terrorism",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-28T11:25:55+00:00",
+ "dek": "Protesters targeted Trump’s Ayrshire resort with red paint and slogans saying 'Gaza is not 4 sale'.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/2026-06-15T113604Z_477271582_RC2BULA0QSXO_RTRMADP_3_ISRAEL-PALESTINIANS-BRITAIN-PALESTINE-ACTION-1787911360.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/28/pa-activists-face-terror-charges-over-trump-golf-resort-protest-report?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/28/pa-activists-face-terror-charges-over-trump-golf-resort-protest-report?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "15e38febe1",
+ "score": 49.81,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinian activists charged with terrorism over Trump resort protest"
+}
