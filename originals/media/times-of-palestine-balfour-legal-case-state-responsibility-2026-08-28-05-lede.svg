@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Britain leaves Palestinian Balfour petition unanswered</title>
+<desc id="dsc">Illustration of the 424-page legal petition delivered to Downing Street on 8 September 2025, stamped "no reply", beside a timeline running from delivery through ten months of government silence to the petitioners' September deadline for going to the High Court. Data chips note seven requests made of the government, fourteen Palestinian petitioners and the 1917 to 1948 period of British conduct in Palestine.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#f2eee8"/>
+<stop offset="1" stop-color="#ded9d1"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="88" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="4" fill="#c7a86b">TIMES OF PALESTINE  ·  LEGAL DESK</text>
+<text x="90" y="152" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">Britain leaves Balfour petition unanswered</text>
+<text x="90" y="196" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" fill="#aaa9a5">A 424-page demand for apology and reparations, 1917&#8211;1948</text>
+<text x="90" y="242" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d">&#1576;&#1585;&#1610;&#1591;&#1575;&#1606;&#1610;&#1575; &#1578;&#1578;&#1585;&#1603; &#1593;&#1585;&#1610;&#1590;&#1577; &#1576;&#1604;&#1601;&#1608;&#1585; &#1583;&#1608;&#1606; &#1585;&#1583;</text>
+<rect x="90" y="272" width="1450" height="2" fill="#3a3b3e"/>
+
+<!-- petition document stack -->
+<rect x="202" y="312" width="290" height="430" rx="4" fill="#c7a86b" opacity="0.22"/>
+<rect x="186" y="326" width="290" height="430" rx="4" fill="#f2eee8" opacity="0.28"/>
+<rect x="170" y="340" width="290" height="430" rx="4" fill="url(#paper)"/>
+<rect x="170" y="340" width="290" height="52" rx="4" fill="#8a1f2d"/>
+<rect x="170" y="380" width="290" height="12" fill="#8a1f2d"/>
+<text x="190" y="373" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" letter-spacing="1.6" fill="#f2eee8">PETITION TO THE PRIME MINISTER</text>
+
+<rect x="190" y="418" width="250" height="6" fill="#aaa9a5" opacity="0.55"/>
+<rect x="190" y="436" width="228" height="6" fill="#aaa9a5" opacity="0.55"/>
+<rect x="190" y="454" width="196" height="6" fill="#aaa9a5" opacity="0.55"/>
+
+<text x="315" y="566" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="92" fill="#1d1e21">424</text>
+<text x="315" y="600" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="6" fill="#8a1f2d">PAGES</text>
+
+<g transform="rotate(-9 315 655)">
+<rect x="196" y="618" width="238" height="74" rx="6" fill="none" stroke="#C8102E" stroke-width="4"/>
+<text x="315" y="650" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="27" letter-spacing="3" fill="#C8102E">NO REPLY</text>
+<text x="315" y="680" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#C8102E">&#1604;&#1575; &#1585;&#1583;</text>
+</g>
+
+<rect x="190" y="720" width="200" height="5" fill="#aaa9a5" opacity="0.45"/>
+<rect x="190" y="736" width="150" height="5" fill="#aaa9a5" opacity="0.45"/>
+
+<text x="170" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">Campaign: Britain Owes Palestine</text>
+<text x="170" y="830" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">&#1576;&#1585;&#1610;&#1591;&#1575;&#1606;&#1610;&#1575; &#1605;&#1583;&#1610;&#1606;&#1577; &#1604;&#1601;&#1604;&#1587;&#1591;&#1610;&#1606;</text>
+
+<!-- timeline -->
+<line x1="640" y1="560" x2="900" y2="560" stroke="#59a97d" stroke-width="6"/>
+<line x1="900" y1="560" x2="1380" y2="560" stroke="#6d6c69" stroke-width="6" stroke-dasharray="14 14"/>
+<line x1="1380" y1="560" x2="1478" y2="560" stroke="#C8102E" stroke-width="6"/>
+<polygon points="1478,542 1520,560 1478,578" fill="#C8102E"/>
+
+<circle cx="660" cy="560" r="15" fill="#59a97d"/>
+<circle cx="1400" cy="560" r="15" fill="#C8102E"/>
+
+<text x="622" y="470" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="3" fill="#c7a86b">8 SEPTEMBER 2025</text>
+<text x="622" y="506" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">Petition delivered to Downing Street</text>
+<text x="622" y="534" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">&#1578;&#1587;&#1604;&#1610;&#1605; &#1575;&#1604;&#1593;&#1585;&#1610;&#1590;&#1577; &#1573;&#1604;&#1609; &#1583;&#1575;&#1608;&#1606;&#1610;&#1606;&#1594; &#1587;&#1578;&#1585;&#1610;&#1578;</text>
+
+<text x="912" y="624" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" letter-spacing="2" fill="#aaa9a5">TEN MONTHS &#183; NO GOVERNMENT RESPONSE</text>
+<text x="912" y="656" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#6d6c69">&#1593;&#1588;&#1585;&#1577; &#1571;&#1588;&#1607;&#1585; &#1583;&#1608;&#1606; &#1585;&#1583; &#1581;&#1603;&#1608;&#1605;&#1610;</text>
+
+<text x="1188" y="470" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="3" fill="#c7a86b">SEPTEMBER</text>
+<text x="1188" y="506" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8" textLength="396" lengthAdjust="spacingAndGlyphs">Petitioners go to the High Court</text>
+<text x="1188" y="534" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">&#1575;&#1604;&#1604;&#1580;&#1608;&#1569; &#1573;&#1604;&#1609; &#1575;&#1604;&#1605;&#1581;&#1603;&#1605;&#1577; &#1575;&#1604;&#1593;&#1604;&#1610;&#1575;</text>
+
+<!-- data chips -->
+<rect x="620" y="700" width="286" height="118" rx="6" fill="#f2eee8" opacity="0.05" stroke="#3a3b3e" stroke-width="2"/>
+<text x="644" y="756" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">7</text>
+<text x="700" y="742" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">requests made of</text>
+<text x="700" y="766" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">the government</text>
+<text x="644" y="798" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">&#1587;&#1576;&#1593;&#1577; &#1605;&#1591;&#1575;&#1604;&#1576;</text>
+
+<rect x="930" y="700" width="286" height="118" rx="6" fill="#f2eee8" opacity="0.05" stroke="#3a3b3e" stroke-width="2"/>
+<text x="954" y="756" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">14</text>
+<text x="1030" y="742" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">Palestinian</text>
+<text x="1030" y="766" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">petitioners</text>
+<text x="954" y="798" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">&#1571;&#1585;&#1576;&#1593;&#1577; &#1593;&#1588;&#1585; &#1605;&#1602;&#1583;&#1605;&#1611;&#1575;</text>
+
+<rect x="1240" y="700" width="300" height="118" rx="6" fill="#f2eee8" opacity="0.05" stroke="#3a3b3e" stroke-width="2"/>
+<text x="1264" y="752" font-family="'Source Serif 4',Georgia,serif" font-size="38" fill="#c7a86b">1917&#8211;1948</text>
+<text x="1264" y="780" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">British conduct in Palestine</text>
+<text x="1264" y="806" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">&#1587;&#1604;&#1608;&#1603; &#1576;&#1585;&#1610;&#1591;&#1575;&#1606;&#1610;&#1575; &#1601;&#1610; &#1601;&#1604;&#1587;&#1591;&#1610;&#1606;</text>
+
+<!-- archival note -->
+<text x="620" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="3" fill="#59a97d">THE ARCHIVAL POINT</text>
+<text x="620" y="392" font-family="'Source Serif 4',Georgia,serif" font-size="24" fill="#f2eee8">League of Nations Council, 29 September 1923:</text>
+<text x="620" y="424" font-family="'Source Serif 4',Georgia,serif" font-size="24" fill="#c7a86b">the minutes record that it &#8220;noted&#8221; the mandates.</text>
+</svg>

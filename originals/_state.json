@@ -1,5 +1,5 @@
 {
- "last_hour": "2026-08-27T19",
+ "last_hour": "2026-08-28T05",
  "done": {
   "pa-budget-line-by-line": "2026-07-29T17:06:23.973916+00:00",
   "donor-aid-what-reaches-the-treasury": "2026-07-29T18:04:08.801907+00:00",
@@ -69,8 +69,8 @@
   "israelipress-hebrew-annexation-debate": "2026-08-24T05:05:27.367819+00:00",
   "bitcoin-remittance-costs-palestine": "2026-08-24T12:39:59.819281+00:00",
   "pal48-crime-wave-2026": "2026-08-24T19:23:09.610229+00:00",
-  "palestinian-womens-football-2026": "2026-08-25T05:02:13.040307+00:00"
+  "palestinian-womens-football-2026": "2026-08-25T05:02:13.040307+00:00",
+  "balfour-legal-case-state-responsibility": "2026-08-28T05:01:08.161905+00:00"
  },
- "last_attempt": "2026-08-27T19:18:28.723001+00:00",
- "error": "stage failed (RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': \"You have reached your API usage limits: your organization has crossed its monthly API usage threshold, set based on your organization's API tier. You will regain access on 2026-09-01 at 00:00 UTC.\", 'details': {'error_code': 'enforced_spend_limit_reached'}}, 'request_id': 'req_011CeTnurkd4UJNWBXHojSW3'})"
+ "last_attempt": "2026-08-28T05:01:08.161905+00:00"
 }
