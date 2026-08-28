@@ -15,46 +15,16 @@
    "verified": true
   },
   {
-   "article": "https://www.pbc.ps/%d8%a3%d9%86%d8%a8%d8%a7%d8%a1-%d8%b9%d9%86-%d8%b4%d9%87%d8%af%d8%a7%d8%a1-%d8%a5%d8%ab%d8%b1-%d9%82%d8%b5%d9%81-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%85%d9%86%d8%b2%d9%84%d8%a7-%d9%81",
-   "name": "تلفزيون فلسطين",
-   "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://felesteen.news/post/185470/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%B9%D9%84%D9%86-%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84-%D9%82%D9%8A%D8%A7%D8%AF%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%B3%D8%A7%D9%85-%D9%88%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D9%8A%D9%87-%D9%81%D9%8A-%D8%AC%D9%86%D9%8A%D9%86",
-   "name": "صحيفة فلسطين",
-   "url": "https://felesteen.news/",
-   "verified": true
-  },
-  {
-   "article": "https://qudsn.co/post?id=217273&slug=%D8%A8%D8%B1%D9%88%D9%81%D8%A7%D9%8A%D9%84-%D9%85%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%B4%D9%87%D9%8A%D8%AF-%D9%82%D9%8A%D8%B3-%D8%A7%D9%84%D8%A8%D9%8A%D8%B7%D8%A7%D9%88%D9%8A%D8%9F",
-   "name": "شبكة قدس الإخبارية",
-   "url": "https://qudsn.co/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/AlQastalps/392036",
-   "name": "القسطل · تيليغرام",
-   "url": "https://t.me/AlQastalps",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/82458",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": true
-  },
-  {
    "article": "https://t.me/QudsN/732436",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.net/news/2026/8/28/%d8%b9%d8%a7%d8%ac%d9%84-%d9%83%d8%a7%d8%aa%d8%b3-%d8%b9%d9%85%d9%84%d9%8a%d8%a9-%d9%86%d8%a7%d8%ac%d8%ad%d8%a9-%d9%84%d8%a7%d8%ba%d8%aa%d9%8a%d8%a7%d9%84-%d9%82%d8%a7%d8%a6%d8%af?traffic_source=rss",
-   "name": "الجزيرة نت",
-   "url": "https://www.aljazeera.net/",
-   "verified": true
+   "article": "https://t.me/AlQastalps/392033",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": false
   },
   {
    "article": "https://t.me/Arabi21News/428544",
@@ -78,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "50f3c7c67c",
- "score": 62.48,
+ "score": 62.23,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",

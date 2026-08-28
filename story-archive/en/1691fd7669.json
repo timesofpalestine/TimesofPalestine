@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli restrictions and war damage have crippled Gaza's banking system, forcing residents and businesses into a liquidity crisis that pushes transactions toward unreliable online payment methods, Al Jazeera English reported. Banks remain largely shuttered across the territory, and the physical currency shortage has made routine commerce nearly impossible for civilians and merchants alike.\n\nThe cash famine has disrupted essential economic activity, from purchasing food to paying salaries and settling debts. Gazans now resort to digital payment platforms of questionable reliability as traditional banking infrastructure collapses under the combined weight of Israeli measures and destruction wrought by conflict. Informal and unverified financial channels have become the primary means through which the economy continues to function.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/28/gaza-forced-to-use-unreliable-online-payments-amid-cash-famine?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-28T16:44:24+00:00",
+ "dek": "Israeli restrictions and war damage have created a liquidity crisis, crippling Gaza's banking system and daily commerce.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/IMG_6721-1787688539.jpeg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/28/gaza-forced-to-use-unreliable-online-payments-amid-cash-famine?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/28/gaza-forced-to-use-unreliable-online-payments-amid-cash-famine?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1691fd7669",
+ "score": 49.65,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli curbs and war damage trigger cash crisis in Gaza"
+}
