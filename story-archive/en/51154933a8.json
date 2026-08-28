@@ -1,0 +1,44 @@
+{
+ "brief": "The Israeli military carried out a concentrated strike targeting armed fighters in Jenin city, the Ma'an news agency reported. The operation took place in the afternoon hours in the densely populated West Bank city, a frequent site of armed clashes and military incursions.\n\nThe military did not immediately release casualty figures or details about the number of fighters targeted in the strike. Such operations in Jenin have intensified in recent months as armed groups maintain a presence in the city's refugee camp and surrounding areas.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/36447",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-air-strike-occupied-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-colonizers-escalate-violations-across-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-28T13:46:51+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/J6RaV5MnxaIXGKBhI8OIMmYqfHBOSGj3S98_M7OnL9njsVDHWxgl5U1cupMMAJOc0NtkCB4mgRVUM7Kpb0Em_KK7ISWAb91dk3tk-d77bAUZbMircgqZxwBdESNDsitTIPCiLl36WpdSq95rj4Xsqo5umI3c95uRajXRhgxG7FvN_OToGvzRqPPf9dALmS7fHng9TrXWRvThom2vTrfN4--KTsx0x6Cyhmbn9-pnnIRf1crMkEq4HieAbBX5UhaQeoal-afJtPffD5SVkRGFTxVM5QNIHPAI2NkdSHYDQwcDtoost3c-zKAb1GIR56DxiXSml_NVFG1jWTl0DB8GGw",
+ "lang": "en",
+ "link": "https://t.me/maannews/36447",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/36447"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "51154933a8",
+ "score": 63.84,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli military launches concentrated strike on armed fighters in Jenin"
+}
