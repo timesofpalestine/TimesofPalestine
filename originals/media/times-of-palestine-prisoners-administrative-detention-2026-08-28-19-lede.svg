@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Israel holds 3,198 Palestinians in administrative detention</title>
+<desc id="d">Bar chart of Palestinian "security" prisoners held in prisons inside Israel according to Israel Prison Service data compiled by HaMoked and updated on 2 August: 3,198 administrative detainees, 3,293 remand detainees, 1,474 sentenced prisoners and 1,358 people held as unlawful combatants, out of a total of 7,965.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="92" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="4.5" fill="#c7a86b">ADMINISTRATIVE DETENTION</text>
+
+<text x="90" y="156" font-family="'Source Serif 4',Georgia,serif" font-size="54" font-weight="700" fill="#f2eee8">Held without charge or trial</text>
+<text x="90" y="208" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#aaa9a5" text-anchor="start" direction="rtl">محتجزون دون تهمة أو محاكمة</text>
+
+<line x1="90" y1="244" x2="1540" y2="244" stroke="#3a3b3e" stroke-width="2"/>
+
+<!-- left figure block -->
+<text x="90" y="330" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#C8102E">AT THE START OF AUGUST</text>
+<text x="90" y="450" font-family="'Source Serif 4',Georgia,serif" font-size="118" font-weight="700" fill="#f2eee8">3,198</text>
+<text x="90" y="496" font-family="'Libre Franklin',Arial,sans-serif" font-size="29" font-weight="600" fill="#f2eee8">administrative detainees</text>
+<text x="90" y="540" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d" text-anchor="start" direction="rtl">معتقلون إداريون</text>
+
+<line x1="90" y1="578" x2="440" y2="578" stroke="#8a1f2d" stroke-width="4"/>
+<text x="90" y="618" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">More than a third of all Palestinian</text>
+<text x="90" y="648" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">“security” prisoners in Israeli jails.</text>
+<text x="90" y="700" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">Detention is renewable in six-month</text>
+<text x="90" y="730" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">periods; the evidence is not disclosed.</text>
+
+<line x1="505" y1="290" x2="505" y2="800" stroke="#333437" stroke-width="2"/>
+
+<!-- chart heading -->
+<text x="560" y="292" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="2.5" fill="#c7a86b">7,965 “SECURITY” INMATES — HAMOKED, 2 AUGUST</text>
+
+<!-- row 1: administrative -->
+<text x="560" y="344" font-family="'Libre Franklin',Arial,sans-serif" font-size="27" font-weight="600" fill="#f2eee8">Administrative detainees</text>
+<text x="560" y="374" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="start" direction="rtl">معتقلون إداريون</text>
+<rect x="560" y="386" width="952" height="46" fill="#C8102E"/>
+<text x="1494" y="419" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#f2eee8" text-anchor="end">3,198</text>
+
+<!-- row 2: remand -->
+<text x="560" y="474" font-family="'Libre Franklin',Arial,sans-serif" font-size="27" font-weight="600" fill="#f2eee8">Remand detainees</text>
+<text x="560" y="504" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="start" direction="rtl">موقوفون رهن التحقيق</text>
+<rect x="560" y="516" width="980" height="46" fill="#c7a86b"/>
+<text x="1522" y="549" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#1d1e21" text-anchor="end">3,293</text>
+
+<!-- row 3: sentenced -->
+<text x="560" y="604" font-family="'Libre Franklin',Arial,sans-serif" font-size="27" font-weight="600" fill="#f2eee8">Sentenced prisoners</text>
+<text x="560" y="634" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="start" direction="rtl">محكومون</text>
+<rect x="560" y="646" width="439" height="46" fill="#286344"/>
+<text x="981" y="679" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#f2eee8" text-anchor="end">1,474</text>
+
+<!-- row 4: unlawful combatants -->
+<text x="560" y="734" font-family="'Libre Franklin',Arial,sans-serif" font-size="27" font-weight="600" fill="#f2eee8">Held as “unlawful combatants”</text>
+<text x="560" y="764" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="start" direction="rtl">محتجزون كـ«مقاتلين غير شرعيين»</text>
+<rect x="560" y="776" width="404" height="46" fill="#4a4b4e"/>
+<text x="946" y="809" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#f2eee8" text-anchor="end">1,358</text>
+
+<line x1="90" y1="846" x2="1540" y2="846" stroke="#3a3b3e" stroke-width="2"/>
+<text x="90" y="878" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Source: Israel Prison Service data supplied to HaMoked, updated 2 August; reported by Haaretz, 13 August.</text>
+</svg>
