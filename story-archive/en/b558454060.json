@@ -6,25 +6,7 @@
    "article": "https://dawnmena.org/the-ceasefire-was-a-ruse-israels-genocide-in-gaza-continues",
    "name": "DAWN",
    "url": "https://dawnmena.org/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-attacks-continue-across-the-gaza-strip",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/eyesonpal/53778",
-   "name": "Eye on Palestine",
-   "url": "https://t.me/eyesonpal",
-   "verified": true
-  },
-  {
-   "article": "https://mondoweiss.net/2026/08/gaza-isnt-able-to-recover-from-famine-as-acute-malnutrition-continues-to-soar-across-the-strip-new-report-finds",
-   "name": "Mondoweiss",
-   "url": "https://mondoweiss.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-27T18:22:38+00:00",
@@ -42,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "b558454060",
- "score": 85.72,
+ "score": 85.7,
  "source": "DAWN",
  "source_id": "dawn",
  "source_url": "https://dawnmena.org/",
