@@ -25,6 +25,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/i-am-an-american-citizen-under-siege",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-28T14:45:00+00:00",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "50f3c7c67c",
- "score": 63.75,
+ "score": 63.5,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

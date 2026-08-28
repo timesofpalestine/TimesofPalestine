@@ -6,12 +6,24 @@
    "article": "https://www.alquds.co.uk/%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d9%8a%d8%ae%d8%b1%d8%a8%d9%88%d9%86-%d9%85%d8%b2%d8%b1%d8%b9%d8%a9-%d9%88%d9%8a%d9%85%d9%86%d8%b9%d9%88%d9%86-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217272&slug=3-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D8%A8%D9%82%D8%B5%D9%81-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%81%D9%8A-%D8%AC%D9%86%D9%8A%D9%86-%D8%A8%D9%8A%D9%86%D9%87%D9%85-%D9%82%D9%8A%D8%A7%D8%AF%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%B3%D8%A7%D9%85",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/share/217272",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
- "date": "2026-08-28T13:45:35+00:00",
- "dek": "رام الله: شنت طائرة مسيّرة تابعة للجيش الإسرائيلي، مساء الجمعة، غارة استهدفت منزلا في منطقة حرش السعادة غرب مدينة جنين بشمال الضفة الغربية. ونقلت وكالة الأنباء والمعلومات الفلسطينية (وفا) عن مصادر محلية قولها إن “طائرة مسيرة استهدفت منزلا قيد الإنشاء في…",
- "image": "https://www.alquds.co.uk/wp-content/uploads/2026/08/h-37.jpg",
+ "date": "2026-08-28T15:18:35+00:00",
+ "dek": "“القدس العربي”: استشهد 3 فلسطينيين، الجمعة، في غارة جوية إسرائيلية استهدفت منزلا قيد الإنشاء في منطقة حرش السعادة غرب مدينة جنين شمالي الضفة الغربية المحتلة. وأفادت وكالة الأنباء والمعلومات الفلسطينية (وفا)، نقلاً عن مصادر محلية، بأن طائرة مسيّرة إسرائيلية…",
+ "image": "https://www.alquds.co.uk/wp-content/uploads/2026/08/1-119.jpg",
  "lang": "ar",
  "link": "https://www.alquds.co.uk/%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d9%8a%d8%ae%d8%b1%d8%a8%d9%88%d9%86-%d9%85%d8%b2%d8%b1%d8%b9%d8%a9-%d9%88%d9%8a%d9%85%d9%86%d8%b9%d9%88%d9%86-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86",
  "max_age_hours": 72,
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "b6a839cfaf",
- "score": 63.8,
+ "score": 63.85,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",
