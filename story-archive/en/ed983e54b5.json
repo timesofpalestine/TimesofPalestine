@@ -1,0 +1,32 @@
+{
+ "brief": "The United States has restricted access to satellite imagery covering Iran and Gaza, constraining journalists' ability to independently document conflict developments in the region, Middle East Eye reported. The tightened controls raise concerns that escalating tensions and military activity may occur beyond public scrutiny and accountability.\n\nJournalists and analysts have long relied on commercially available satellite data to verify military movements, assess infrastructure damage, and report on events when official sources remained unreliable or inaccessible. The imagery restrictions effectively narrow independent oversight of conflicts in two strategically significant areas where transparency and accurate reporting have remained persistently contested and difficult to secure through traditional channels.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/news/us-satellite-imagery-restrictions-leave-journalists-dark-iran-and-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-28T08:20:35+00:00",
+ "dek": "US satellite imagery restrictions leave journalists in the dark on Iran and Gaza Submitted by Gaspard Rouffin on Thu, 08/27/2026 - 08:52 Tightened satellite‑imagery access over the Middle East raises fears conflicts are slipping out of view and pushes…",
+ "image": "https://www.middleeasteye.net/sites/default/files/styles/crop_16_9/public/images-story/hormuz-satellite-afp-2026.jpg.jpg?itok=KrlDGdEw",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/news/us-satellite-imagery-restrictions-leave-journalists-dark-iran-and-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/news/us-satellite-imagery-restrictions-leave-journalists-dark-iran-and-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ed983e54b5",
+ "score": 49.86,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "US tightens satellite imagery access over Middle East, limiting journalist coverage."
+}
