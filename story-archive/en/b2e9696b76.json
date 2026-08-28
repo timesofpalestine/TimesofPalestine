@@ -12,7 +12,13 @@
    "article": "https://dawnmena.org/the-ceasefire-was-a-ruse-israels-genocide-in-gaza-continues",
    "name": "DAWN",
    "url": "https://dawnmena.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-kills-four-in-ongoing-violations-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-28T06:30:00+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "b2e9696b76",
- "score": 63.35,
+ "score": 63.09,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
