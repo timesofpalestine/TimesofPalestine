@@ -49,6 +49,12 @@
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://palinfo.com/news/2026/08/28/1116434",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-08-28T17:40:00+00:00",
@@ -66,7 +72,7 @@
  "modified": null,
  "original": true,
  "pid": "48dff75e43",
- "score": 101.36,
+ "score": 101.31,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
