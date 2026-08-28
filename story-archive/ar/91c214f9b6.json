@@ -1,0 +1,38 @@
+{
+ "brief": "أفادت اليونيسف بمقتل 4 أطفال على الأقل وإصابة آخرين جراء الهجمات الإسرائيلية على قطاع غزة خلال الأيام الخمسة الماضية. لم تحدّد منظمة الأمم المتحدة للطفولة في بيانها عدد الأطفال الجرحى أو تفاصيل محددة عن طبيعة الهجمات وأماكن وقوعها.\n\nيأتي التوثيق الذي نشرته المنظمة الأممية في سياق التصعيد المستمر بين إسرائيل وفصائل المقاومة في القطاع، حيث يعاني السكان المدنيون بشكل متكرر من العمليات العسكرية. تركز اليونيسف عادة في تقاريرها على الخسائر البشرية بين الأطفال والنساء كفئات الأكثر عرضة للأذى في النزاعات المسلحة.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82467",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/732481",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-28T20:15:32+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82467",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "91c214f9b6",
+ "score": 63.87,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "اليونيسف تُوثّق مقتل 4 أطفال بالهجمات الإسرائيلية على غزة"
+}
