@@ -39,6 +39,18 @@
    "verified": true
   },
   {
+   "article": "https://t.me/AlQastalps/392033",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/8/28/%d8%b9%d8%a7%d8%ac%d9%84-%d9%83%d8%a7%d8%aa%d8%b3-%d8%b9%d9%85%d9%84%d9%8a%d8%a9-%d9%86%d8%a7%d8%ac%d8%ad%d8%a9-%d9%84%d8%a7%d8%ba%d8%aa%d9%8a%d8%a7%d9%84-%d9%82%d8%a7%d8%a6%d8%af?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
+  },
+  {
    "article": "https://t.me/Arabi21News/428544",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
@@ -60,7 +72,7 @@
  "modified": null,
  "original": false,
  "pid": "50f3c7c67c",
- "score": 63.2,
+ "score": 62.97,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
