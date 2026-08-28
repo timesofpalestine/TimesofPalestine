@@ -1,0 +1,44 @@
+{
+ "brief": "أعلن الجيش الإسرائيلي شن غارة جوية استهدفت فلسطينيين في مدينة جنين بالضفة الغربية، بحسب القدس العربي. ولم تحدد القوات الإسرائيلية تفاصيل العملية أو طبيعة الأهداف المستهدفة في الغارة.\n\nوتأتي هذه العملية في سياق التصعيد الأمني المستمر في الضفة الغربية، حيث تشن إسرائيل بانتظام عمليات عسكرية في مدن فلسطينية مختلفة. تستهدف هذه الغارات، حسب الرواية الإسرائيلية، مسلحين وتنظيمات مسلحة، غير أن العمليات غالباً ما تسفر عن إصابة مدنيين.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d9%84%d8%ac%d9%8a%d8%b4-%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d9%8a%d8%b9%d9%84%d9%86-%d8%b4%d9%86-%d8%ba%d8%a7%d8%b1%d8%a9-%d8%ac%d9%88%d9%8a",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
+  },
+  {
+   "article": "https://t.me/AlQastalps/392032",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/732372",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-28T13:29:17+00:00",
+ "dek": "",
+ "image": "https://www.alquds.co.uk/wp-content/uploads/2024/08/br-20082024.jpg",
+ "lang": "ar",
+ "link": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d9%84%d8%ac%d9%8a%d8%b4-%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d9%8a%d8%b9%d9%84%d9%86-%d8%b4%d9%86-%d8%ba%d8%a7%d8%b1%d8%a9-%d8%ac%d9%88%d9%8a",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "القدس العربي",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d9%84%d8%ac%d9%8a%d8%b4-%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d9%8a%d8%b9%d9%84%d9%86-%d8%b4%d9%86-%d8%ba%d8%a7%d8%b1%d8%a9-%d8%ac%d9%88%d9%8a"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2936bbd829",
+ "score": 63.87,
+ "source": "القدس العربي",
+ "source_id": "alqudsuk",
+ "source_url": "https://www.alquds.co.uk/",
+ "title": "الجيش الإسرائيلي يشن غارة جوية على جنين"
+}

@@ -1,0 +1,38 @@
+{
+ "brief": "Israel launched an air strike on the city of Jenin in the occupied West Bank, Middle East Eye reported. The Israeli military said the operation targeted \"terrorists\" in the Palestinian city, though it provided no immediate details about the scope or specific nature of the targets.\n\nThe strike marks the latest in a series of Israeli military operations in the West Bank. No immediate reports of casualties or structural damage from the air strike were available at the time of reporting.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-air-strike-occupied-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-colonizers-escalate-violations-across-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-28T13:30:01+00:00",
+ "dek": "Israel launches air strike on occupied West Bank Israel has launched an air strike on the occupied West Bank. The attack targeted the city of Jenin, where the Israeli army said it was targeting \"terrorists.\".",
+ "image": "https://www.middleeasteye.net/sites/default/files/2026-08/000_C6GC4QQ_0.jpg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-air-strike-occupied-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-air-strike-occupied-west-bank"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "436b5aa9d9",
+ "score": 63.91,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israel strikes Jenin with air attack in occupied West Bank"
+}
