@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.net/news/2026/8/28/%d8%a3%d8%b3%d8%b1%d9%89-%d8%a3%d8%b3%d9%8a%d8%b1-%d8%a5%d8%a8%d8%a7%d8%af%d8%a9-%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d8%ba%d8%b2%d8%a9-%d8%a7%d9%84%d8%b6%d9%81%d8%a9?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/732260",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-27T18:32:47+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "12596c60f3",
- "score": 43.4,
+ "score": 43.18,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
