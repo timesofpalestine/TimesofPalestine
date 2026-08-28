@@ -6,6 +6,18 @@
    "article": "https://www.dropsitenews.com/p/us-sanctions-palestine-action-ice-texas-russia-uk-ukraine",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/uk-news/2026/aug/26/us-issues-sanctions-uk-based-palestine-action",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/un-rights-office-condemns-us-designation-palestine-action-terrorist-group",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
    "verified": false
   }
  ],
@@ -24,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "c0a4afe4cc",
- "score": 58.48,
+ "score": 58.19,
  "source": "Drop Site News",
  "source_id": "dropsite",
  "source_url": "https://www.dropsitenews.com/",
