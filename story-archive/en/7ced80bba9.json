@@ -9,9 +9,15 @@
    "verified": true
   },
   {
-   "article": "https://imemc.org/article/israeli-attacks-continue-across-gaza-amid-ongoing-violations",
+   "article": "https://imemc.org/article/three-killed-as-israeli-strikes-continue-in-gaza",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-three-palestinians-near-khan-younis-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": true
   },
   {
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "7ced80bba9",
- "score": 84.42,
+ "score": 84.41,
  "source": "Quincy Institute",
  "source_id": "quincy",
  "source_url": "https://quincyinst.org/",
