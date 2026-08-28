@@ -57,6 +57,12 @@ land in a specific window.
   desk; in this window verify it is live, current, and cross-linked with
   the scholarship guide, and file a school-year-start news update pegged to
   September 1 (UNICEF/PCHR numbers re-verified at writing).
+  - Half done, 2026-08-28: verified that the desk piece is live —
+    `education-under-fire-2026-08-16-19.*`, both editions, published
+    16 August. The September-1 news update is NOT yet filed and stays
+    open in this window; the next cycle takes it, pegged to the school
+    year opening, with UNICEF/PCHR numbers re-verified at writing and a
+    cross-link to the scholarship guide.
 - **Sep 15 – Sep 30 — Recognition, one year on (UNGA week).** The audit's
   rec. E audit piece: what recognition by the UK, France, Canada and the
   rest changed in law, trade and embassies — promised vs delivered,

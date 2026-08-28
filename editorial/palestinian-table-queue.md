@@ -25,11 +25,19 @@ the food's Palestinian roots.
    `originals/palestinian-table-reems-california-2026.*` — Reem Assil's
    Arab street-corner bakery, freshly reopened 26 June 2026 as a
    worker-owned flagship at Jack London Square.
+3. **Akub — London, UK** (2026-08-28):
+   `originals/palestinian-table-akub-london-2026.*` — Fadi Kattan's
+   Notting Hill room at 27 Uxbridge Street, open since December 2022;
+   the gundelia thistle the restaurant is named for, the Bethlehem
+   family record since 1738, the Jaffa groves confiscated in 1948,
+   Fawda in Bethlehem, the Hardie Grant cookbook that won the 2025
+   Guild of Food Writers award, and Louf in Toronto. Recipes carried:
+   musakhan and Gazan shatta, written fresh as common heritage.
+   Note: the franchise had missed the Fridays of 14 and 21 August;
+   this entry restarts the weekly cadence.
 
 ## Up next (rotate regions, verify before writing)
 
-3. **Akub — London, UK.** Fadi Kattan's Notting Hill restaurant; the
-   Bethlehem chef of "Bethlehem: A Celebration of Palestinian Food".
 4. **Habibah — Amman, Jordan.** The Nabulsi family knafeh institution
    since 1951; downtown Amman's knafeh alley.
 5. **Al Janiah — São Paulo, Brazil.** Palestinian refugee-run
@@ -48,3 +56,8 @@ the food's Palestinian roots.
 10. **Sufra — Amman, Jordan.** Romero group's heritage-house restaurant on
    Rainbow Street; musakhan and maqluba in a restored 1940s villa; a
    window on Ammani-Palestinian family cooking.
+11. **Louf — Toronto, Canada** (added 2026-08-28). Fadi Kattan's 2025
+   Toronto opening, and with it the question the London entry left
+   open: what a second-city Palestinian dining room does differently
+   from the first. Rotate it in only after at least two non-Kattan
+   entries so the franchise does not read as one chef's tour.
