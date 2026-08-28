@@ -6,12 +6,18 @@
    "article": "https://shehabnews.com/post/163023/%D8%AD%D9%85%D8%A7%D8%B3-%D8%AA%D9%86%D8%B9%D9%89-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%82%D8%B5%D9%81-%D8%AD%D8%B1%D8%B4-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9-%D8%A8%D8%AC%D9%86%D9%8A%D9%86-%D9%88%D8%AA%D8%AD%D9%85%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
   },
   {
-   "article": "https://t.me/maannews/36447",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-strike-kills-three-west-bank-israel-says-it-targeted-hamas-operative",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48272",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
    "verified": true
   },
   {
@@ -31,6 +37,12 @@
    "name": "Zeteo",
    "url": "https://zeteo.com/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/36447",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-28T14:45:00+00:00",
@@ -48,7 +60,7 @@
  "modified": null,
  "original": false,
  "pid": "50f3c7c67c",
- "score": 63.5,
+ "score": 63.23,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
