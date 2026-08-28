@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/36439",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israel-orders-gaza-expulsions-over-kites-flown-children",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-27T14:55:08+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "80d1d504fb",
- "score": 49.24,
+ "score": 48.97,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
