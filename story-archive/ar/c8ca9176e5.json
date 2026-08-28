@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://t.me/Arabi21News/428545",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  },
+  {
    "article": "https://t.me/Palinfo/317998",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
@@ -33,15 +39,15 @@
    "verified": true
   },
   {
-   "article": "https://t.me/gazaalannet/82458",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
+   "article": "https://qudsn.co/post?id=217273&slug=%D8%A8%D8%B1%D9%88%D9%81%D8%A7%D9%8A%D9%84-%D9%85%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%B4%D9%87%D9%8A%D8%AF-%D9%82%D9%8A%D8%B3-%D8%A7%D9%84%D8%A8%D9%8A%D8%B7%D8%A7%D9%88%D9%8A%D8%9F",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
    "verified": true
   },
   {
-   "article": "https://t.me/Arabi21News/428540",
-   "name": "عربي21",
-   "url": "https://t.me/arabi21news",
+   "article": "https://t.me/gazaalannet/82458",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
    "verified": true
   },
   {
@@ -66,7 +72,7 @@
  "modified": null,
  "original": false,
  "pid": "c8ca9176e5",
- "score": 63.7,
+ "score": 63.47,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
