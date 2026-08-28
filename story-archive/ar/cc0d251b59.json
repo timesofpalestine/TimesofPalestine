@@ -6,25 +6,31 @@
    "article": "https://t.me/QudsN/732391",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428540",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
   }
  ],
  "date": "2026-08-28T13:59:31+00:00",
  "dek": "",
- "image": "https://cdn4.telesco.pe/file/D9iCXr62ftz-2DGSFlFEC_TPzXhT8e4_F3PaEE7vduS166v1DdEK2fP5u7UHaNYStb61RUSijRuxXzwrIJ2BC8dIHWgTPIpl_hyufRgZa4O7hpPWhE9KJvW8ynmfB2U2SvCDouvAYD1Xs8xAVt1FJ7x93Vx7ugk_JBcfNm9CDid2HEAm9pCMviAYvr9qQ0VPLOdlBMmk-DH8dSrXFkbe60JkcrvGNnXJ3SIqJeIzy7A4ms4N6y4z5w5x0toWhRWeXqJRNs_MgOb5Zrp5Mxvb-VDAhdlGkFOFmS7Wk0jMTFvyDYtO95TDR5lK-tXUf0DXEYLFj-UtZzxkq2LTFft47g.jpg",
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
  "lang": "ar",
  "link": "https://t.me/QudsN/732391",
  "max_age_hours": 72,
  "media": {
-  "credit": "شبكة قدس · تيليغرام",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://t.me/QudsN/732391"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "cc0d251b59",
- "score": 63.96,
+ "score": 63.71,
  "source": "شبكة قدس · تيليغرام",
  "source_id": "tg-qudsn",
  "source_url": "https://t.me/QudsN",
