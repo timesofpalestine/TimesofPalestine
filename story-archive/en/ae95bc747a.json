@@ -1,0 +1,32 @@
+{
+ "brief": "The United States has imposed restrictions on satellite imagery that limit journalists' ability to document developments in Iran and Gaza, Middle East Eye reported. The restrictions took effect as the US and Israel launched joint strikes on Iran on 28 February, with Tehran subsequently retaliating against targets across the Gulf region.\n\nThe imagery limitations prevent independent verification of military operations and other significant events unfolding in both territories. Journalists covering the escalating situation face substantial obstacles in corroborating accounts from the ground without access to satellite data. The restrictions effectively narrow the window for external oversight of military activities at a moment when documentation of such events carries particular weight.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-satellite-imagery-restrictions-leave-journalists-dark-iran-and-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-28T09:25:06+00:00",
+ "dek": "US satellite imagery restrictions leave journalists in the dark on Iran and Gaza As the US and Israel launched joint strikes on Iran on 28 February and Tehran retaliated on targets across the Gulf, a quieter contest was taking shape over who could access…",
+ "image": "https://www.middleeasteye.net/sites/default/files/images-story/hormuz-satellite-afp-2026.jpg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/us-satellite-imagery-restrictions-leave-journalists-dark-iran-and-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/us-satellite-imagery-restrictions-leave-journalists-dark-iran-and-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ae95bc747a",
+ "score": 63.92,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "US restricts satellite imagery access for Iran and Gaza coverage"
+}

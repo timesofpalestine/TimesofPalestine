@@ -1,0 +1,32 @@
+{
+ "brief": "Video footage released by Al Jazeera English shows children in Gaza ducking behind a shopping cart as an Israeli drone conducted a reported gun attack in the area. The clip documents civilians, including minors, exposed to aerial operations during the incident.\n\nThe specific location and timing of the drone fire remain unclear from available reports. No information on potential casualties or the circumstances surrounding the attack has been provided. The video adds to a growing record of civilian encounters with Israeli military operations in Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/28/children-take-cover-behind-shopping-cart-during-israeli-drone-fire?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-28T09:01:51+00:00",
+ "dek": "Video shows children in Gaza taking cover behind a shopping cart during a reported gun attack by an Israeli drone.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/wide-thumb-gaza-2808-1787907654.png?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/28/children-take-cover-behind-shopping-cart-during-israeli-drone-fire?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/28/children-take-cover-behind-shopping-cart-during-israeli-drone-fire?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "12f297737e",
+ "score": 49.64,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza children take cover during Israeli drone attack"
+}
