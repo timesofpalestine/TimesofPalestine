@@ -1,0 +1,50 @@
+{
+ "brief": "Israeli airstrikes killed five people in Gaza, including three members of a single family, Al Jazeera English reported. The strikes represent the latest in a series of military operations conducted in the densely populated territory, where civilians remain caught in the crossfire of the ongoing conflict.\n\nThe deaths underscore the toll on civilian populations as Palestinians across Gaza continue to grapple with severe food insecurity. Humanitarian conditions in the strip have deteriorated significantly, with residents facing acute shortages of food and other essential supplies amid the sustained military campaign.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/28/israeli-strikes-kill-five-people-including-three-from-one-family-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-five-gaza-0",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/three-killed-as-israeli-strikes-continue-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163018/5-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%88%D8%B5%D9%84%D9%88%D8%A7-%D8%A5%D9%84%D9%89-%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%8A%D8%A7%D8%AA-%D8%BA%D8%B2%D8%A9-%D8%AC%D8%B1%D8%A7%D8%A1-%D8%AE%D8%B1%D9%88%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%A7%D8%B5%D9%84%D8%A9-%D9%85%D9%86%D8%B0-%D9%81%D8%AC%D8%B1-%D8%A7%D9%84%D9%8A%D9%88%D9%85",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-28T16:38:41+00:00",
+ "dek": "The latest round of attacks comes as Palestinians across the strip continue to face severe food insecurity.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/ap-9240908175984a11915fe8c1d2125efb-1787930641.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/28/israeli-strikes-kill-five-people-including-three-from-one-family-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/28/israeli-strikes-kill-five-people-including-three-from-one-family-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "eaa7fa36c0",
+ "score": 63.81,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strikes kill five in Gaza, including three from one family"
+}

@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://www.dropsitenews.com/p/israel-west-bank-jenin-trump-mail-ballots-nepal-flood",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/08/israeli-strike-kills-three-west-bank-israel-says-it-targeted-hamas-operative",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -37,12 +43,6 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
-  },
-  {
-   "article": "https://zeteo.com/p/i-am-an-american-citizen-under-siege",
-   "name": "Zeteo",
-   "url": "https://zeteo.com/",
-   "verified": true
   }
  ],
  "date": "2026-08-28T16:21:01+00:00",
@@ -60,7 +60,7 @@
  "modified": null,
  "original": false,
  "pid": "50c0554bd0",
- "score": 63.87,
+ "score": 63.61,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://imemc.org/article/three-killed-as-israeli-strikes-continue-in-gaza",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
    "article": "https://news.un.org/feed/view/en/story/2026/08/1168204",
    "name": "UN News",
    "url": "https://news.un.org/",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "7ced80bba9",
- "score": 84.07,
+ "score": 84.05,
  "source": "Quincy Institute",
  "source_id": "quincy",
  "source_url": "https://quincyinst.org/",
