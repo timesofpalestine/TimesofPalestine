@@ -19,6 +19,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/08/1168229",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-29T15:25:43+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "96ebede2c5",
- "score": 61.2,
+ "score": 60.98,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
