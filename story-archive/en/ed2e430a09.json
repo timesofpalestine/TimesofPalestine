@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli forces raided an UNRWA vocational centre in the occupied West Bank and ordered it to close, Al Jazeera English reported. The facility had provided vocational training and skills development programmes for Palestinian refugees in the territory, serving as a key resource for workforce preparation and economic opportunity in the region.\n\nThe closure marks another disruption to UNRWA operations in the West Bank. The UN agency, which serves millions of Palestinian refugees across the Middle East, has faced mounting operational challenges as Israeli military actions continue to target and restrict its facilities and activities throughout occupied Palestinian territories.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israel-raids-shutters-unrwa-lifeline-for-palestinian-refugees?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-29T13:10:04+00:00",
+ "dek": "An UNRWA vocational centre in the occupied West Bank has been raided by Israeli forces and ordered to close.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1788008995.jpg?resize=1918%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israel-raids-shutters-unrwa-lifeline-for-palestinian-refugees?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israel-raids-shutters-unrwa-lifeline-for-palestinian-refugees?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ed2e430a09",
+ "score": 63.35,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces raid and shut down UNRWA vocational centre in West Bank"
+}
