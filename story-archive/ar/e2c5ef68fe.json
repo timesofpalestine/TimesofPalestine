@@ -1,0 +1,44 @@
+{
+ "brief": "سجّلت خدمات الإسعاف والطوارئ في غزة إصابات في غارة شنتها مسيّرة إسرائيلية استهدفت فلسطينيين غربي مدينة خان يونس. بحسب المركز الفلسطيني للإعلام، لم تُحدّد الجهات الطبية بعد عدد المصابين أو حالاتهم الصحية.\n\nيندرج الاستهداف ضمن سلسلة عمليات عسكرية إسرائيلية متواصلة في القطاع، إذ تشهد المنطقة تصعيداً في المواجهات والغارات الجوية منذ فترة.\n\nوتشير التقارير إلى استمرار الأنشطة العسكرية الإسرائيلية في مناطق متفرقة من غزة، مع تركيز على المحاور الجنوبية والغربية من القطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/318194",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/732660",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82510",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-29T17:35:04+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/mkLLgeQP64tbaQlJyzRqGu3_A44LBUwlUsRV3QrQVXpKzvyM-fLEz2jff6l_aKryZkDt2OfQe_VaiD46URV8age3Wr1eloX--01rdHTgsSt8gUhGxo_hl3ynYrMox1MFI7Lj6IUXUp_aZpg9-nOA2Eb8dih_HXsaoqQ_lP-QYCtJneUbucbZbkzwfxFmxecbtrxsFttLcSUFSblLtb1cHVqM8VOs0eJgv1zLzyjp6bK0maTSr9JB8_ND6ecWuLNrS7LjSgeHRyIu2BnogyFeVpVYpB2fbupxcUMU-w6tKvidliEgV5IowmHe-JSPNhq-9O6o0Qss9q5omJ0YBIvdoA.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/318194",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/318194"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e2c5ef68fe",
+ "score": 63.92,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "مسيّرة إسرائيلية تستهدف غرب خان يونس وتخلّف إصابات"
+}

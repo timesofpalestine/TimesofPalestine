@@ -1,0 +1,50 @@
+{
+ "brief": "Israeli forces arrested six Palestinians in Qusra following a raid by Israeli settlers on the occupied West Bank community, Al Jazeera English reported. The settlers stormed the village, attacking Palestinian residents and destroying property during the incursion.\n\nThe timing of the arrests—coming after the settler violence—raised questions about the circumstances surrounding the detentions. Israeli military officials did not immediately clarify the charges against those taken into custody or provide details on their alleged involvement in events that preceded or followed the attack on homes in the village.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israeli-army-arrests-six-palestinians-after-settler-violence-in-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-continue-qusra-siege-21st-day-forces-prevent-medical",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-settlers-stage-new-attack-home-west-banks-qusra-witnesses-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-shoot-two-palestinians-abduct-five-in-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-29T17:09:10+00:00",
+ "dek": "Israeli settlers stormed Qusra in the occupied West Bank, attacking Palestinian residents and damaging homes.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/wide-thumb-2808qusra-1788023283.png?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israeli-army-arrests-six-palestinians-after-settler-violence-in-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israeli-army-arrests-six-palestinians-after-settler-violence-in-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "12e55109c3",
+ "score": 63.64,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli army arrests six Palestinians after settlers attack West Bank village"
+}
