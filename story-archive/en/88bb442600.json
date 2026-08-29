@@ -15,15 +15,21 @@
    "verified": true
   },
   {
-   "article": "https://www.dropsitenews.com/p/israel-west-bank-jenin-trump-mail-ballots-nepal-flood",
-   "name": "Drop Site News",
-   "url": "https://www.dropsitenews.com/",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-army-continue-attacks-west-bank-towns",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/08/israel-kills-hamas-operative-rare-west-bank-air-strike-military-says",
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-settlers-stage-new-attack-home-west-banks-qusra-witnesses-say",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/israel-west-bank-jenin-trump-mail-ballots-nepal-flood",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
    "verified": true
   },
   {
@@ -48,7 +54,7 @@
  "modified": null,
  "original": true,
  "pid": "88bb442600",
- "score": 98.34,
+ "score": 98.29,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
