@@ -7,6 +7,12 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-surround-another-palestinian-home-qusra-attack",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-08-29T12:23:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "c6b89aca69",
- "score": 49.95,
+ "score": 49.69,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
