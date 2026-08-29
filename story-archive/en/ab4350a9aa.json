@@ -1,0 +1,38 @@
+{
+ "brief": "Officials at Al-Aqsa Martyrs Hospital in Gaza said the facility has completely depleted its stock of cancer medicines, according to Al Jazeera English. The shortage coincides with ongoing Israeli strikes that have disrupted supply chains and hindered medical resupply efforts across the territory.\n\nCancer patients at the hospital now face treatment delays or suspension as physicians struggle to source alternatives. The collapse of pharmaceutical inventory underscores the cascading effects of the conflict on Gaza's healthcare system, which was already strained before the current operations. Hospital officials did not announce when new supplies might arrive.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-gaza-hospitals-targetting-fm?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/five-palestinians-killed-in-israeli-attacks-on-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-29T20:07:47+00:00",
+ "dek": "Officials at Gaza’s Al-Aqsa Martyrs Hospital say cancer medicines have completely run out, as Israeli strikes continue.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1788034023.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-gaza-hospitals-targetting-fm?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-gaza-hospitals-targetting-fm?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ab4350a9aa",
+ "score": 63.8,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza hospital exhausts cancer drug supplies during Israeli operations"
+}
