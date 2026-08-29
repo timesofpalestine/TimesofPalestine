@@ -6,24 +6,12 @@
    "article": "original:westbank-airstrike-jenin-bitawi-2026-08-28.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://t.me/maannews/36448",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinians-injured-settler-attack-al-mughayyir",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://shehabnews.com/post/163025/%D9%83%D8%AA%D8%A7%D8%A6%D8%A8-%D8%A7%D9%84%D9%82%D8%B3%D8%A7%D9%85-%D8%AA%D9%86%D8%B9%D9%89-%D8%A7%D9%84%D9%82%D8%A7%D8%A6%D8%AF-%D9%82%D9%8A%D8%B3-%D8%A7%D9%84%D8%A8%D9%8A%D8%B7%D8%A7%D9%88%D9%8A-%D9%88%D8%B4%D9%87%D9%8A%D8%AF%D9%8A%D9%86-%D9%81%D9%8A-%D8%AC%D9%86%D9%8A%D9%86",
-   "name": "Shehab Wire (EN)",
-   "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
@@ -42,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "88bb442600",
- "score": 100.32,
+ "score": 100.26,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
