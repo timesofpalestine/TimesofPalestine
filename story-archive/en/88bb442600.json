@@ -25,6 +25,24 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israel-kills-hamas-operative-rare-west-bank-air-strike-military-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-colonizers-escalate-violations-across-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/i-am-an-american-citizen-under-siege",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-28T17:40:00+00:00",
@@ -42,7 +60,7 @@
  "modified": null,
  "original": true,
  "pid": "88bb442600",
- "score": 100.92,
+ "score": 100.87,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
