@@ -15,9 +15,15 @@
    "verified": true
   },
   {
-   "article": "https://imemc.org/article/israeli-army-executes-three-palestinians-in-jenin",
+   "article": "https://imemc.org/article/west-bank-israeli-soldiers-colonizers-attack-injure-palestinians",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settler-attacks-continue-father-son-injured-bethlehem",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": true
   },
   {
@@ -27,16 +33,22 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/08/israel-kills-hamas-operative-rare-west-bank-air-strike-military-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://english.pnn.ps/news/48272",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/08/netanyahu-party-uproar-far-right-refuses-pleas-unite",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": false
+   "article": "https://zeteo.com/p/i-am-an-american-citizen-under-siege",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   }
  ],
  "date": "2026-08-28T18:05:00+00:00",
@@ -54,7 +66,7 @@
  "modified": null,
  "original": true,
  "pid": "ebe28aeddc",
- "score": 100.65,
+ "score": 100.59,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
