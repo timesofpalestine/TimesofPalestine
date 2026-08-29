@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Gaza cash brokers' commission on converting digital transfers into banknotes</title>
+<desc id="d">Bar chart of commission rates reported by OCHA and the Associated Press: about 40 per cent in July 2025, 23 per cent after the October 2025 ceasefire, 17 to 20 per cent in December, 12 per cent on 4 to 7 December, and 11 per cent at the end of May. A side panel shows that an 11 per cent fee on a 1,250 shekel household grant, about 378 dollars, costs roughly 138 shekels.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#C8102E"/><stop offset="1" stop-color="#8a1f2d"/>
+</linearGradient>
+<linearGradient id="barLast" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#c7a86b"/><stop offset="1" stop-color="#8a7343"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- headline -->
+<text x="90" y="106" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Gaza cash brokers take a tenth of families' transfers</text>
+<text x="90" y="152" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#c7a86b" direction="rtl" text-anchor="start">سماسرة النقد في غزة يقتطعون عُشر تحويلات الأسر</text>
+<rect x="90" y="180" width="180" height="4" fill="#8a1f2d"/>
+
+<!-- chart caption -->
+<text x="150" y="230" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Commission to turn a digital transfer into banknotes</text>
+<text x="150" y="262" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl" text-anchor="start">نسبة عمولة تحويل الرصيد الرقمي إلى أوراق نقدية</text>
+
+<!-- gridlines -->
+<g stroke="#3a3b3f" stroke-width="1">
+<line x1="150" y1="640" x2="1010" y2="640"/>
+<line x1="150" y1="550" x2="1010" y2="550"/>
+<line x1="150" y1="460" x2="1010" y2="460"/>
+<line x1="150" y1="370" x2="1010" y2="370"/>
+</g>
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="end">
+<text x="138" y="645">10%</text>
+<text x="138" y="555">20%</text>
+<text x="138" y="465">30%</text>
+<text x="138" y="375">40%</text>
+</g>
+<line x1="150" y1="730" x2="1010" y2="730" stroke="#f2eee8" stroke-width="2"/>
+
+<!-- bars -->
+<rect x="150" y="370" width="110" height="360" fill="url(#bar)"/>
+<rect x="320" y="523" width="110" height="207" fill="url(#bar)"/>
+<rect x="490" y="577" width="110" height="153" fill="url(#bar)"/>
+<rect x="490" y="550" width="110" height="27" fill="#8a1f2d" opacity="0.5"/>
+<rect x="660" y="622" width="110" height="108" fill="url(#bar)"/>
+<rect x="830" y="631" width="110" height="99" fill="url(#barLast)"/>
+
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="26" fill="#f2eee8" text-anchor="middle">
+<text x="205" y="350">40%</text>
+<text x="375" y="503">23%</text>
+<text x="545" y="530">17–20%</text>
+<text x="715" y="602">12%</text>
+<text x="885" y="611" fill="#c7a86b">11%</text>
+</g>
+
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8" text-anchor="middle">
+<text x="205" y="762">July 2025</text>
+<text x="375" y="762">After ceasefire</text>
+<text x="545" y="762">December</text>
+<text x="715" y="762">4–7 December</text>
+<text x="885" y="762">End of May</text>
+</g>
+<g font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#aaa9a5" text-anchor="middle">
+<text x="205" y="786">Associated Press</text>
+<text x="375" y="786">October 2025</text>
+<text x="545" y="786">Sit Rep No. 60</text>
+<text x="715" y="786">OCHA update</text>
+<text x="885" y="786">OCHA, 5 June</text>
+</g>
+
+<!-- side panel -->
+<rect x="1090" y="300" width="430" height="380" fill="#161719" stroke="#3a3b3f"/>
+<rect x="1090" y="300" width="430" height="5" fill="#286344"/>
+
+<text x="1120" y="345" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">ONE HOUSEHOLD GRANT, LATE FEBRUARY</text>
+<text x="1120" y="374" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#59a97d" direction="rtl" text-anchor="start">منحة نقدية لأسرة واحدة</text>
+
+<text x="1120" y="432" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">1,250 shekels</text>
+<text x="1120" y="462" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">about $378, sent digitally</text>
+
+<line x1="1140" y1="490" x2="1140" y2="546" stroke="#c7a86b" stroke-width="3"/>
+<path d="M1130 542 L1140 560 L1150 542 Z" fill="#c7a86b"/>
+<text x="1172" y="527" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">11% cash-out commission</text>
+<text x="1172" y="553" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#c7a86b" direction="rtl" text-anchor="start">عمولة الصرف ١١٪</text>
+
+<text x="1120" y="626" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#C8102E">− 138 shekels</text>
+<text x="1120" y="656" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">taken to make the grant spendable</text>
+
+<!-- stats strip -->
+<rect x="90" y="808" width="6" height="30" fill="#286344"/>
+<text x="112" y="831" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">133,462 households — nearly 750,000 people — reached in January alone</text>
+<text x="112" y="864" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: OCHA situation reports, 27 February and 5 June; OCHA Sit Rep No. 60; Associated Press, July 2025</text>
+</svg>

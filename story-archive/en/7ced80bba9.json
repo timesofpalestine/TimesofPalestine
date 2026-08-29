@@ -6,13 +6,7 @@
    "article": "https://video.snapstream.net/Play/39kP8J7GA1HDZDZD1vwNqN?accessToken=cxfmk5qpkgbpx",
    "name": "Quincy Institute",
    "url": "https://quincyinst.org/",
-   "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/08/1168204",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-26T22:46:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "7ced80bba9",
- "score": 83.18,
+ "score": 83.16,
  "source": "Quincy Institute",
  "source_id": "quincy",
  "source_url": "https://quincyinst.org/",
