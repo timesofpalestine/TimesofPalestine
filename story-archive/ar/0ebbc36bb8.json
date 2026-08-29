@@ -6,13 +6,7 @@
    "article": "https://www.pbc.ps/8785-140",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/318136",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-29T11:35:45+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "0ebbc36bb8",
- "score": 48.89,
+ "score": 47.42,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
