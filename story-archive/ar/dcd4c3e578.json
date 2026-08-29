@@ -1,0 +1,38 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، نفّذ جيش الاحتلال الإسرائيلي تفجيراً في منطقة تقع بين بلدتي المنصوري وبيوت السياد في جنوب لبنان. وتندرج العملية ضمن سلسلة استهدافات إسرائيلية متكررة للأراضي اللبنانية.\n\nلم يُكشف حتى الآن عن تفاصيل بشأن الأهداف المستهدفة أو حجم الأضرار الناجمة عن التفجير، إذ لم يرد في البلاغات الأولية معلومات عن أعداد الضحايا أو الخسائر المادية.\n\nيأتي هذا التفجير في سياق التصعيد الأمني المتواصل على الحدود اللبنانية الإسرائيلية، حيث شهدت المنطقة عمليات عسكرية متبادلة خلال الفترة الماضية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/318183",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/732659",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-29T16:21:53+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/E1VAyGYtkJQcSUNe1Kcyg7yDkmzWhdfZQGd2c28nPcFDV5wfSA5RKaPCtJQSsIAY_x0t3G8JmliqOQJ05iiw2B-caTlEKtZYbYQG3Z4eChHtgPwktp2_Qy3ilvrSfSGD08j19D51EhoxbE4stCQ5U1mYXJiC6-sCx-20uY7kTv7eooMGXbnOZ8PQDGoDCKrsobh9qSRXaMPZZIpgstwfw6jor2GBVIjQDW4O1y8nVDuYXiyrB2oWXFlNoJg6LiOL2xZNMFZ0M_XTAXtf8DtU3XtaAxBzZpGPyHO97p2SNcoz-VC_T_3__g66Y_KG1w_AETiu37ngWIvHkSiXIApK_g.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/318183",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/318183"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dcd4c3e578",
+ "score": 63.83,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "جيش الاحتلال ينفّذ تفجيراً في جنوب لبنان"
+}
