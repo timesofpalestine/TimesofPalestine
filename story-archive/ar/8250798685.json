@@ -6,13 +6,13 @@
    "article": "https://www.aljazeera.net/news/2026/8/29/%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d9%8a%d9%87%d8%a7%d8%ac%d9%85%d9%88%d9%86-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-3?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": true
+   "verified": false
   },
   {
-   "article": "https://t.me/QudsN/732576",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "article": "https://t.me/AlQastalps/392099",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": false
   }
  ],
  "date": "2026-08-29T08:13:16+00:00",
@@ -30,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "8250798685",
- "score": 61.29,
+ "score": 61.03,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
