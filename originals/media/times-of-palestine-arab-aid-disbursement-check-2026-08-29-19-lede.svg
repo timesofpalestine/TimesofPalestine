@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Arab bilateral aid reaches Gaza while pledged reconstruction billions await disbursement</title>
+<desc id="d">Two panels compare aid that has been delivered through bilateral Arab channels — US$3.12 billion of Emirati assistance under Operation Chivalrous Knight 3, a field hospital in Gaza and a floating hospital at Al Arish, 7,600 tonnes of Saudi KSrelief supplies, and a US$20 million Qatar–UNRWA agreement — with pledges awaiting disbursement: US$7 billion from nine countries plus US$10 billion from the United States, held by a World Bank fund that has published no schedule of deposits, against reconstruction needs above US$67 billion. A bar below shows OCHA's 2026 Flash Appeal of US$4.06 billion less than 25 per cent covered.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="92" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Arab donors keep Gaza hospitals running</text>
+<text x="90" y="146" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">while billions await disbursement</text>
+<text x="90" y="196" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#c7a86b" direction="rtl">مانحون عرب يشغّلون مستشفيات غزة ومليارات الإعمار تنتظر الصرف</text>
+<rect x="90" y="216" width="180" height="4" fill="#8a1f2d"/>
+
+<!-- PANEL A -->
+<rect x="90" y="260" width="670" height="470" fill="#16181a" stroke="#286344" stroke-width="2" rx="6"/>
+<circle cx="132" cy="308" r="18" fill="none" stroke="#59a97d" stroke-width="3"/>
+<rect x="129" y="297" width="6" height="22" fill="#59a97d"/>
+<rect x="121" y="305" width="22" height="6" fill="#59a97d"/>
+<text x="166" y="304" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" font-weight="700" fill="#59a97d" letter-spacing="1.5">DELIVERED — BILATERAL CHANNELS</text>
+<text x="166" y="332" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl">مساعدات وصلت عبر قنوات ثنائية</text>
+<line x1="120" y1="356" x2="730" y2="356" stroke="#2c2e31" stroke-width="2"/>
+
+<text x="120" y="404" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#f2eee8">US$3.12 billion</text>
+<text x="120" y="432" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">UAE aid to Gaza, Operation Chivalrous Knight 3</text>
+
+<text x="120" y="494" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#f2eee8">Field hospital + floating hospital</text>
+<text x="120" y="522" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Inside Gaza and at Al Arish, Egypt; 21 prosthetics fitted</text>
+
+<text x="120" y="584" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#f2eee8">7,600 tons · 67 planes · 8 ships</text>
+<text x="120" y="612" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">KSrelief supplies reported, early October 2025</text>
+
+<text x="120" y="674" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#f2eee8">US$20 million</text>
+<text x="120" y="702" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Qatar–UNRWA agreement signed June 2025</text>
+
+<!-- FLOW ARROW -->
+<path d="M772 495 L806 495" stroke="#286344" stroke-width="4"/>
+<path d="M806 487 L818 495 L806 503 Z" fill="#286344"/>
+
+<!-- PANEL B -->
+<rect x="820" y="260" width="700" height="470" fill="#16181a" stroke="#8a1f2d" stroke-width="2" stroke-dasharray="10 8" rx="6"/>
+<rect x="852" y="298" width="34" height="24" fill="none" stroke="#C8102E" stroke-width="3"/>
+<path d="M859 298 v-8 a10 10 0 0 1 20 0 v8" fill="none" stroke="#C8102E" stroke-width="3"/>
+<text x="906" y="304" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" font-weight="700" fill="#C8102E" letter-spacing="1.5">PLEDGED — AWAITING DISBURSEMENT</text>
+<text x="906" y="332" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl">تعهدات بانتظار الصرف</text>
+<line x1="850" y1="356" x2="1490" y2="356" stroke="#2c2e31" stroke-width="2"/>
+
+<text x="850" y="404" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#c7a86b">US$7bn + US$10bn</text>
+<text x="850" y="432" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Nine countries and the United States, pledged February</text>
+
+<text x="850" y="494" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#c7a86b">No schedule of deposits</text>
+<text x="850" y="522" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">World Bank fund for Gaza, established November 2025</text>
+
+<text x="850" y="584" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="700" fill="#c7a86b">More than US$67 billion</text>
+<text x="850" y="612" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Reconstruction and recovery needs assessed</text>
+
+<text x="850" y="676" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Cairo pledging conference not held on schedule</text>
+<text x="850" y="704" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5" direction="rtl">مؤتمر القاهرة لم يُعقد في موعده</text>
+
+<!-- GAUGE -->
+<text x="90" y="786" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">OCHA 2026 Flash Appeal: US$4.06 billion for 3 million people — less than 25% covered</text>
+<rect x="90" y="800" width="1420" height="26" fill="#0f1012" stroke="#3a3b3f" stroke-width="2"/>
+<rect x="90" y="800" width="355" height="26" fill="#286344"/>
+<line x1="445" y1="794" x2="445" y2="832" stroke="#c7a86b" stroke-width="2"/>
+
+<text x="90" y="866" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl">نداء الطوارئ 2026: أقل من 25٪ من التمويل المطلوب</text>
+<text x="1510" y="866" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Sources: OCHA · Gulf News · Sharjah24 · KSrelief/SPA · World Bank</text>
+</svg>

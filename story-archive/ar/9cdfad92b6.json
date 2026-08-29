@@ -1,0 +1,38 @@
+{
+ "brief": "قصفت طائرات الاحتلال مرتفعات \"علي الطاهر\" في جنوب لبنان بقذائف فسفورية، بحسب المركز الفلسطيني للإعلام. واستهدفت الغارات المنطقة الجبلية في منطقة حدودية حساسة، وسط غياب معلومات فورية عن حجم الخسائر البشرية أو الأضرار المادية.\n\nيأتي القصف في سياق تصعيد متواصل على طول الحدود اللبنانية الإسرائيلية منذ بدء الحرب على قطاع غزة في أكتوبر 2023. وشهدت المنطقة الحدودية تبادلاً للقصف بشكل متكرر بين الجانبين، ما أدى إلى نزوح آلاف المدنيين من القرى الحدودية اللبنانية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/318207",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/732708",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-29T19:15:44+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/318207",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9cdfad92b6",
+ "score": 63.84,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يقصف مرتفعات علي الطاهر برقائق فسفورية جنوب لبنان"
+}
