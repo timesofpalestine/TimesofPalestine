@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Two clearing lines: the dollar Washington closed and the shekel closing on Palestinians</title>
+  <desc id="desc">A bilingual comparison of the US Treasury action of 28 August 2026 severing Banque Misr's UAE branches from dollar correspondent accounts, and the 1 September and 1 October dates on which Israel Discount Bank and Bank Hapoalim end correspondent banking with Palestinian banks.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:16px}
+      .small{font-size:19px}
+      .body{font-size:22px}
+      .label{font-size:17px;font-weight:800;letter-spacing:1.3px}
+      .fig{font-size:44px;font-weight:800}
+      .head{font-size:29px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="76" class="serif ivory" font-size="46" font-weight="800">Two clearing lines, one week</text>
+  <text x="90" y="118" class="sans muted body">The account a bank holds at another bank is how money crosses a border. Both were cut this week.</text>
+  <text x="1520" y="76" class="arabic ivory" font-size="35" font-weight="800" text-anchor="end">خطّا مقاصّة في أسبوع واحد</text>
+  <text x="1520" y="114" class="arabic muted small" text-anchor="end">الحساب المراسل هو طريق عبور المال بين الدول، وقد قُطع الخطّان معا هذا الأسبوع</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="168" width="710" height="620" rx="18" fill="#26272b" stroke="#c7a86b" stroke-width="2"/>
+    <text x="104" y="212" class="sans gold label">THE LINE WASHINGTON CLOSED</text>
+    <text x="746" y="212" class="arabic gold small" text-anchor="end" font-weight="800">الخط الذي أغلقته واشنطن</text>
+    <text x="104" y="256" class="sans ivory head">Banque Misr — UAE branches</text>
+    <text x="104" y="288" class="arabic muted small">بنك مصر ــ فروع الإمارات</text>
+    <line x1="104" y1="312" x2="746" y2="312" stroke="#3a3b40" stroke-width="2"/>
+
+    <text x="104" y="372" class="sans gold fig">$1.8bn</text>
+    <text x="104" y="402" class="sans muted small">traced through the branches, Jan 2024 – Jun 2026</text>
+    <text x="104" y="430" class="arabic muted small">تتبعتها الخزانة عبر الفروع بين يناير 2024 ويونيو 2026</text>
+
+    <text x="104" y="500" class="sans gold fig">103</text>
+    <text x="104" y="530" class="sans muted small">companies Treasury calls possible Iranian shadow-bank fronts</text>
+    <text x="104" y="558" class="arabic muted small">شركات تصفها الخزانة بواجهات مصرفية إيرانية محتملة</text>
+
+    <text x="104" y="628" class="sans gold fig">30 days</text>
+    <text x="104" y="658" class="sans muted small">public comment before the FinCEN rule takes effect</text>
+    <text x="104" y="686" class="arabic muted small">مهلة تعليق عام قبل نفاذ القاعدة</text>
+
+    <rect x="104" y="710" width="642" height="56" rx="10" fill="#1b1c1f" stroke="#3a3b40"/>
+    <text x="120" y="734" class="sans green tiny">UNTOUCHED: Cairo head office, Paris, Frankfurt, Riyadh, Beirut, Djibouti</text>
+    <text x="120" y="756" class="arabic muted tiny">لم تُمسّ: القاهرة وباريس وفرانكفورت والرياض وبيروت وجيبوتي</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="820" y="168" width="710" height="620" rx="18" fill="#26272b" stroke="#dc6572" stroke-width="3"/>
+    <text x="854" y="212" class="sans red label">THE LINE CLOSING ON PALESTINIANS</text>
+    <text x="1496" y="212" class="arabic red small" text-anchor="end" font-weight="800">الخط الذي يُغلق على الفلسطينيين</text>
+    <text x="854" y="256" class="sans ivory head">Palestinian banks — shekel access</text>
+    <text x="854" y="288" class="arabic muted small">المصارف الفلسطينية ــ الوصول إلى الشيكل</text>
+    <line x1="854" y1="312" x2="1496" y2="312" stroke="#3a3b40" stroke-width="2"/>
+
+    <text x="854" y="372" class="sans red fig">1 Sept</text>
+    <text x="854" y="402" class="sans muted small">Israel Discount Bank ends correspondent banking</text>
+    <text x="854" y="430" class="arabic muted small">بنك ديسكونت ينهي العلاقة المراسلة</text>
+
+    <text x="854" y="500" class="sans red fig">1 Oct</text>
+    <text x="854" y="530" class="sans muted small">Bank Hapoalim follows</text>
+    <text x="854" y="558" class="arabic muted small">بنك هبوعليم يتبعه</text>
+
+    <text x="854" y="628" class="sans red fig">51bn ₪</text>
+    <text x="854" y="658" class="sans muted small">a year moved for the Authority through those two banks</text>
+    <text x="854" y="686" class="arabic muted small">سنويا تمر لحساب السلطة عبر المصرفين</text>
+
+    <rect x="854" y="710" width="642" height="56" rx="10" fill="#1b1c1f" stroke="#3a3b40"/>
+    <text x="870" y="734" class="sans muted tiny">18bn ₪ idle in Palestinian vaults · 90% of exports go to Israel · all imports pass through it</text>
+    <text x="870" y="756" class="arabic muted tiny">18 مليار شيكل عالقة في الخزائن · 90% من الصادرات إلى إسرائيل · كل الواردات تمر عبرها</text>
+  </g>
+
+  <rect x="70" y="812" width="1460" height="52" rx="10" fill="#1b1c1f" stroke="#3a3b40"/>
+  <text x="104" y="835" class="sans ivory tiny" font-weight="800">AMERICAN INSTRUMENT USED ON THE DOLLAR LINE: a proposed rule, one day. ON THE SHEKEL LINE: none this month.</text>
+  <text x="104" y="856" class="arabic muted tiny">الأداة الأميركية على خط الدولار: قاعدة مقترحة في يوم واحد. وعلى خط الشيكل: لا شيء هذا الشهر.</text>
+
+  <text x="1520" y="886" class="sans muted tiny" text-anchor="end">Figures: US Treasury · Palestinian Monetary Authority · Reuters — August 2026 · Times of Palestine</text>
+</svg>
