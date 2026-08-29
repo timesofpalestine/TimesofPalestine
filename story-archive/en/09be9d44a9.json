@@ -1,0 +1,38 @@
+{
+ "brief": "Medical sources reported that two Palestinians were killed Saturday in separate Israeli strikes in central and southern Gaza, according to IMEMC News. The deaths occurred amid ongoing gunfire, artillery shelling, and military incursions continuing across the coastal enclave throughout the day.\n\nThe incidents marked the latest casualties as hostilities persisted across multiple Gaza locations. Residents in both central and southern areas reported hearing sustained fire and explosions. Local sources documented the separate attacks, though full details of each incident remained under investigation as medical personnel attended to the wounded and confirmed the fatalities.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/two-palestinians-killed-in-israeli-attacks-in-central-and-southern-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-increase-gaza-death-toll",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-29T11:08:47+00:00",
+ "dek": "Medical sources reported that two Palestinians were killed on Saturday in separate Israeli attacks in central and southern Gaza, as gunfire, artillery shelling, and military incursions continued across the coastal enclave. In central Gaza, local sources said…",
+ "image": "https://imemc.org/wp-content/uploads/2026/08/bombingGaza-1-e1788001519366.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/two-palestinians-killed-in-israeli-attacks-in-central-and-southern-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/two-palestinians-killed-in-israeli-attacks-in-central-and-southern-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "09be9d44a9",
+ "score": 63.63,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli attacks kill two Palestinians in Gaza"
+}
