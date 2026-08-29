@@ -15,15 +15,21 @@
    "verified": true
   },
   {
-   "article": "https://t.me/QudsN/732605",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
    "article": "https://www.pbc.ps/8785-138",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82488",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/732624",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
    "verified": true
   }
  ],
@@ -42,7 +48,7 @@
  "modified": null,
  "original": false,
  "pid": "0bc73eecf0",
- "score": 62.36,
+ "score": 61.98,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
