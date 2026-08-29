@@ -617,6 +617,41 @@
       "source": "https://commons.wikimedia.org/wiki/File:Ugandan_AMISOM_Guard_of_Honour_for_Burundi_Defence_Minister_(6243505602).jpg",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "note": "Cover for washington-brief-2026-08-24; falls back to the report's own ISF recruits SVG if the remote file dies"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sliman%20Mansour.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 photograph served from Wikimedia Commons, verified at build time",
+      "credit": "Sliman Mansour at the Palestine International Book Fair, 2023 — Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sliman_Mansour.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yair%20Golan%202020.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Yair Golan, February 2020 — Laliv g / Wikimedia Commons, CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Yair_Golan_2020.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yoram-Cohen-0003.jpg?width=640",
+      "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 portrait served from Wikimedia Commons, verified at build time",
+      "credit": "Yoram Cohen — Amos Ben Gershom, Israeli Government Press Office / Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Yoram-Cohen-0003.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Itamar%20Ben%20Gvir%203%20(cropped).jpg?width=640",
+      "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 photograph served from Wikimedia Commons, verified at build time",
+      "credit": "Itamar Ben Gvir, 2022 — Alon Nuriel / Wikimedia Commons, CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Itamar_Ben_Gvir_3_(cropped).jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruben%20Gallego%20official%20photo.jpg?width=640",
+      "rightsBasis": "public-domain — official US House photograph, public domain, served from Wikimedia Commons and verified at build time",
+      "credit": "Senator Ruben Gallego — US House Office of Photography / Wikimedia Commons, public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Ruben_Gallego_official_photo.jpg",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ruben_Gallego_official_photo.jpg"
     }
   ]
 }
