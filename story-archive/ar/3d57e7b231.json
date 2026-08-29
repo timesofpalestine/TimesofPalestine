@@ -6,13 +6,7 @@
    "article": "https://www.alquds.co.uk/%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-6-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-%d8%a8%d8%a7%d9%84%d8%a7%d8%ae%d8%aa%d9%86%d8%a7%d9%82-%d8%ae%d9%84%d8%a7%d9%84-%d8%a7%d9%82%d8%aa%d8%ad%d8%a7",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/732723",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-29T21:24:31+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "3d57e7b231",
- "score": 63.79,
+ "score": 63.42,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",
