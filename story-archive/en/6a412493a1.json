@@ -1,0 +1,32 @@
+{
+ "brief": "Palestine Bank committed $1 million to support construction of a cancer center at An-Najah National University Hospital, Ma'an Wire reported. The donation targets expansion of oncology services and treatment capacity within the Palestinian healthcare system.\n\nThe bank's contribution follows efforts to strengthen medical infrastructure across Palestinian territories. An-Najah National University Hospital, one of the region's major medical facilities, will use the funds to establish dedicated cancer treatment services. The center is intended to serve patients from across the West Bank and provide specialized care previously requiring referrals to hospitals outside Palestinian areas.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167767.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-29T17:00:50+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-health.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2167767.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6a412493a1",
+ "score": 49.81,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Palestine Bank donates $1m to build cancer center at An-Najah hospital"
+}
