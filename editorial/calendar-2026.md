@@ -52,6 +52,19 @@ land in a specific window.
     Algeria hosting Palestine's home fixtures, and the players who cannot
     reach camps. **Target met with six weeks to spare** — the delegation
     list and cup-draw follow-ups remain open for September.
+  - ✅ **September follow-up filed 2026-08-29** —
+    `football-restart-thousand-martyrs-cup-2026-08-29.*`, both editions.
+    The restart now has a date: 4 September, announced by Jibril Rajoub
+    (reported by Monte Carlo Doualiya), with the Thousand Martyrs Cup
+    named for the 1,014 athletes killed, entries open to the northern
+    governorates, Jerusalem, the southern governorates and the diaspora,
+    squad rules (30 players 19+, up to 10 under-18 with 4 in a match),
+    and Rajoub's own framing that this is exhibition play with no table,
+    promotion or relegation, the eighth professional season to be dated
+    next year. Carries the national team's September friendly tournament
+    in China ahead of the Asian Cup in Saudi Arabia in January. Still
+    open for September: the cup draw and fixture list when published,
+    and the Nagoya delegation list.
 - **Aug 25 – Sep 1 — Third-lost-school-year package.** The queued
   `education-under-fire` topic should have published by ~Aug 13 via the
   desk; in this window verify it is live, current, and cross-linked with
@@ -63,6 +76,17 @@ land in a specific window.
     open in this window; the next cycle takes it, pegged to the school
     year opening, with UNICEF/PCHR numbers re-verified at writing and a
     cross-link to the scholarship guide.
+  - ✅ **Closed 2026-08-29** — `school-year-2026-27-opening-2026-08-29.*`,
+    both editions, category social. The ministry's published calendar:
+    6 September in the West Bank and Jerusalem (staff 1 September),
+    16 September for Gaza's staff and 19 September for its pupils, with
+    the ministry's own reason for the gap. UNICEF's 2026 State of
+    Palestine appeal re-verified at writing (97.5% of schools damaged or
+    destroyed, ≥92% needing full reconstruction or major rehabilitation,
+    637,000+ children out of school, ~60% with no in-person learning,
+    135,400 children in 100+ learning spaces, Back to Learning targeting
+    336,000 by end-2026 and all children in 2027). Cross-linked in prose
+    to the standing scholarships guide in both editions.
 - **Sep 15 – Sep 30 — Recognition, one year on (UNGA week).** The audit's
   rec. E audit piece: what recognition by the UK, France, Canada and the
   rest changed in law, trade and embassies — promised vs delivered,
