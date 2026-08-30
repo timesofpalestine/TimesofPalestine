@@ -1,0 +1,32 @@
+{
+ "brief": "أفادت وسائل إعلام لبنانية بأن مدفعية الاحتلال الإسرائيلي قصفت مجرى النهر في بلدة زوطر الشرقية بمنطقة جنوب لبنان. ولم توضح التقارير الأولية ما إذا كان هناك إصابات أو أضرار مادية من القصف، كما لم تحدد الأهداف المقصودة بشكل دقيق.\n\nيندرج القصف ضمن سياق التصعيد الأمني المستمر على الحدود الإسرائيلية اللبنانية، إذ تشهد المناطق الحدودية توترات متكررة وتبادل قصف بين الجانبين. وتقع بلدة زوطر الشرقية في الجنوب اللبناني بالقرب من الحدود مع الأراضي المحتلة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/318286",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-30T06:56:56+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/318286",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a9e013db64",
+ "score": 49.87,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "مدفعية إسرائيلية تقصف مجرى نهر في زوطر الشرقية جنوب لبنان"
+}
