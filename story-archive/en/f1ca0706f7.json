@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-strike-kills-two-people-including-3-year-old-boy-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-year-old-among-two-killed-israeli-strike-gaza",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "f1ca0706f7",
- "score": 62.68,
+ "score": 62.42,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
