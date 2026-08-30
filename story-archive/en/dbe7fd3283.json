@@ -7,12 +7,6 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
-  },
-  {
-   "article": "https://pchrgaza.org/palestinian-child-killed-by-settler-gunfire-in-hebron-attack",
-   "name": "Palestinian Centre for Human Rights",
-   "url": "https://pchrgaza.org/",
-   "verified": false
   }
  ],
  "date": "2026-08-22T05:45:00+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": true,
  "pid": "dbe7fd3283",
- "score": 71.49000000000001,
+ "score": 71.38,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

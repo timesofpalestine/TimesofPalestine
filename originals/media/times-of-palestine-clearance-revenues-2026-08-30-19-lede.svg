@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Israel withholds $6 billion in clearance revenue collected for the Palestinian Authority</title>
+<desc id="dsc">Diagram: Israel collects customs duties and VAT on the Palestinian Authority's behalf under the 1994 Paris Protocol, but the monthly clearance transfer is blocked, halted since May 2025. A bar chart compares estimates of the withheld balance: 6.0 billion dollars (UN, 26 August), 4.5 billion (PA Economy Ministry, December 2025), 4.4 billion (PA Finance Ministry, February). A second chart compares monthly deductions: about NIS 200 million before October 2023 against more than NIS 460 million in the first half of 2025, with public salaries paid at 50 to 60 percent, minimum NIS 2,000.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="pipe" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#c7a86b"/>
+<stop offset="1" stop-color="#8a7443"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="66" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="3" fill="#c7a86b">CLEARANCE REVENUE</text>
+<text x="382" y="66" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b">أموال المقاصة</text>
+
+<text x="90" y="126" font-family="'Source Serif 4',Georgia,serif" font-size="48" fill="#f2eee8">Israel withholds $6 billion</text>
+<text x="90" y="180" font-family="'Source Serif 4',Georgia,serif" font-size="48" fill="#f2eee8">it collects for Palestinians</text>
+<text x="90" y="222" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#aaa9a5">إسرائيل تحتجز 6 مليارات دولار من أموال الفلسطينيين</text>
+<text x="90" y="256" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">UN Security Council briefing, 26 August &#183; Paris Protocol, 1994</text>
+
+<!-- flow schematic -->
+<rect x="110" y="300" width="340" height="140" rx="6" fill="#1a1b1e" stroke="#3a3b40"/>
+<rect x="110" y="300" width="6" height="140" fill="#8a1f2d"/>
+<text x="136" y="342" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="2" fill="#f2eee8">ISRAEL</text>
+<text x="136" y="372" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#c7a86b">إسرائيل</text>
+<text x="136" y="402" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">collects customs duties and VAT</text>
+<text x="136" y="424" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">on the PA&#8217;s behalf &#183; &#8776;3% commission</text>
+
+<rect x="450" y="345" width="250" height="50" fill="url(#pipe)"/>
+<text x="456" y="332" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">monthly transfer, net of offsets</text>
+<text x="456" y="424" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">&#8776;65% of total PA revenue</text>
+
+<rect x="700" y="306" width="64" height="128" rx="4" fill="#8a1f2d"/>
+<path d="M714 326 L750 414 M750 326 L714 414" stroke="#f2eee8" stroke-width="7" stroke-linecap="round"/>
+
+<rect x="764" y="345" width="246" height="50" fill="#232427" stroke="#3a3b40" stroke-dasharray="10 8"/>
+<text x="776" y="332" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#C8102E">HALTED SINCE MAY 2025</text>
+<text x="776" y="424" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">May&#8211;September 2025 untransferred</text>
+
+<rect x="1010" y="300" width="340" height="140" rx="6" fill="#1a1b1e" stroke="#3a3b40"/>
+<rect x="1010" y="300" width="6" height="140" fill="#286344"/>
+<text x="1036" y="342" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="1" fill="#f2eee8">PALESTINIAN AUTHORITY</text>
+<text x="1036" y="372" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d">السلطة الفلسطينية</text>
+<text x="1036" y="402" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">salaries, health, schools, water</text>
+<text x="1036" y="424" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">and electricity bills</text>
+
+<!-- panel 1 -->
+<rect x="110" y="500" width="650" height="320" rx="6" fill="#17181b" stroke="#2e2f33"/>
+<text x="140" y="544" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Estimates of the withheld balance</text>
+<text x="140" y="572" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">تقديرات المبالغ المحتجزة</text>
+
+<text x="140" y="614" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">UN Special Coordinator, 26 August</text>
+<rect x="140" y="622" width="460" height="32" fill="#C8102E"/>
+<text x="612" y="646" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">$6.0bn</text>
+
+<text x="140" y="694" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">PA Economy Ministry, December 2025</text>
+<rect x="140" y="702" width="345" height="32" fill="#8a1f2d"/>
+<text x="497" y="726" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">$4.5bn</text>
+
+<text x="140" y="774" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">PA Finance Ministry, February</text>
+<rect x="140" y="782" width="337" height="32" fill="#8a1f2d"/>
+<text x="489" y="806" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">$4.4bn</text>
+
+<!-- panel 2 -->
+<rect x="800" y="500" width="700" height="320" rx="6" fill="#17181b" stroke="#2e2f33"/>
+<text x="830" y="544" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Monthly deductions, NIS millions</text>
+<text x="830" y="572" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">الاقتطاعات الشهرية</text>
+
+<line x1="830" y1="790" x2="1470" y2="790" stroke="#3a3b40" stroke-width="2"/>
+
+<rect x="856" y="712" width="104" height="78" fill="#286344"/>
+<text x="856" y="700" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">200</text>
+<text x="836" y="812" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">before Oct 2023</text>
+
+<rect x="1010" y="610" width="104" height="180" fill="#C8102E"/>
+<text x="1010" y="598" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">460+</text>
+<text x="1016" y="812" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">H1 2025</text>
+
+<line x1="1170" y1="600" x2="1170" y2="790" stroke="#2e2f33" stroke-width="2"/>
+<text x="1196" y="632" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#c7a86b">Public salaries paid at</text>
+<text x="1196" y="662" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#c7a86b">50&#8211;60%, minimum NIS 2,000</text>
+<text x="1196" y="702" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Gaza-share deductions of</text>
+<text x="1196" y="726" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">about $845 million in 2024</text>
+<text x="1196" y="768" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">رواتب جزئية وأزمة مالية</text>
+
+<text x="110" y="864" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#7d7c79">Sources: UN, World Bank, IMF, US State Department, Al Jazeera, Times of Israel &#183; Times of Palestine</text>
+</svg>
