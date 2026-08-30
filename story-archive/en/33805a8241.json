@@ -6,31 +6,13 @@
    "article": "original:mughayyir-settlers-livefire-2026-08-29.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
-   "article": "https://shehabnews.com/post/163163/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D9%81%D9%8A-%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D9%84%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D9%88%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%84%D9%87-%D9%88%D9%86%D8%A7%D8%A8%D9%84%D8%B3",
-   "name": "Shehab Wire (EN)",
-   "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-shoot-two-palestinians-during-settler-attacks-near",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/colonizers-attack-communities-injure-palestinians-across-west-bank",
+   "article": "https://imemc.org/article/israeli-colonizers-seize-palestinian-park-near-ramallah",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/aug/29/nbc-news-team-attacked-west-bank",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-29T12:55:00+00:00",
@@ -48,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "33805a8241",
- "score": 97.61,
+ "score": 97.56,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

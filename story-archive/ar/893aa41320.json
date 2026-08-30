@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://t.me/QudsN/732888",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
    "article": "https://qudsn.co/post?id=217289&slug=%D8%A5%D8%AC%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%8A%D8%AA%D8%B5%D8%A7%D8%B9%D8%AF-%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D9%88%D8%AA%D9%87%D8%AF%D9%8A%D8%AF%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD%C2%A0",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
@@ -24,12 +30,6 @@
    "article": "https://t.me/maannews/36501",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.alquds.co.uk/%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-4-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-%d8%a8%d8%b1%d8%b5%d8%a7%d8%b5-%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%8a%d9%86-%d9%81%d9%8a-%d8%a7%d9%84%d9%85",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
    "verified": true
   },
   {
@@ -60,7 +60,7 @@
  "modified": null,
  "original": true,
  "pid": "893aa41320",
- "score": 83.6,
+ "score": 83.55,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
