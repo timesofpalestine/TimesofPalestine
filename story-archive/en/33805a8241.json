@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/30/palestinian-mother-in-agony-as-israeli-attack-kills-her-son?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-shoot-two-palestinians-during-settler-attacks-near",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -30,12 +24,6 @@
    "article": "https://imemc.org/article/colonizers-attack-communities-injure-palestinians-across-west-bank",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/israeli-strike-kills-two-people-including-3-year-old-boy-gaza-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
    "verified": true
   },
   {
@@ -60,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "33805a8241",
- "score": 97.66,
+ "score": 97.61,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
