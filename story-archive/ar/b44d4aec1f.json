@@ -1,0 +1,32 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، يعاني قطاع غزة من أزمة كهربائية حادة في ظل استمرار الحصار، الأمر الذي دفع السكان إلى الاعتماد على الألواح الشمسية كمصدر بديل لتأمين احتياجاتهم من الطاقة الكهربائية.\n\nوتعكس هذه الظاهرة الواقع المعيشي الصعب الذي يشهده القطاع، إذ تقيّد الأزمة الكهربائية إمكانية الوصول إلى الخدمات الأساسية التي يعتمد عليها السكان في حياتهم اليومية.\n\nويثير انتشار الاعتماد على الطاقة الشمسية تساؤلات جدية حول إمكانية استمرار الحياة الطبيعية في غزة في ظل تفاقم الأزمات الناجمة عن الحصار والعمليات العسكرية المستمرة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/08/30/1116535",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-30T20:22:45+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/08/30/1116535",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b44d4aec1f",
+ "score": 49.45,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "غزة تعتمد على الطاقة الشمسية وسط أزمة كهربائية حادة"
+}
