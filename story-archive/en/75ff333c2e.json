@@ -6,49 +6,7 @@
    "article": "original:ynet-zamir-warned-netanyahu-settler-crime-2026-08-28.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/29/israeli-settlers-attack-international-news-team-in-occupied-west-bank?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/colonizers-attack-communities-injure-palestinians-across-west-bank",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/aug/29/nbc-news-team-attacked-west-bank",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/nbc-journalists-attacked-settler-violence-continues-across-occupied-west",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/netanyahu-condemns-settler-attack-flashpoint-west-bank-village",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48272",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://zeteo.com/p/i-am-an-american-citizen-under-siege",
-   "name": "Zeteo",
-   "url": "https://zeteo.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-28T13:30:00+00:00",
@@ -66,7 +24,7 @@
  "modified": null,
  "original": true,
  "pid": "75ff333c2e",
- "score": 111.48,
+ "score": 111.42,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

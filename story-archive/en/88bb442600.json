@@ -21,6 +21,18 @@
    "verified": true
   },
   {
+   "article": "https://imemc.org/article/israeli-forces-invade-west-bank-communities-2",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-close-entrance-west-bank-village-while-settlers-steal",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.dropsitenews.com/p/israel-west-bank-jenin-trump-mail-ballots-nepal-flood",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
@@ -42,7 +54,7 @@
  "modified": null,
  "original": true,
  "pid": "88bb442600",
- "score": 96.1,
+ "score": 96.04,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
