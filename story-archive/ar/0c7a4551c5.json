@@ -12,7 +12,19 @@
    "article": "https://www.aljazeera.net/news/2026/8/30/%d9%82%d8%a7%d8%b6%d9%8a%d8%a9-%d8%a3%d9%85%d8%b1%d9%8a%d9%83%d9%8a%d8%a9-%d8%aa%d8%ad%d9%83%d9%85-%d8%a8%d8%b9%d8%af%d9%85-%d8%af%d8%b3%d8%aa%d9%88%d8%b1%d9%8a%d8%a9-%d8%aa%d8%b1%d8%ad%d9%8a%d9%84?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217293&slug=%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D8%AA%D9%82%D8%B6%D9%8A-%D8%A8%D8%B9%D8%AF%D9%85-%D8%AF%D8%B3%D8%AA%D9%88%D8%B1%D9%8A%D8%A9-%D8%AA%D8%B1%D8%AD%D9%8A%D9%84-%D8%B7%D9%84%D8%A7%D8%A8-%D8%A3%D8%AC%D8%A7%D9%86%D8%A8-%D9%84%D8%AF%D8%B9%D9%85%D9%87%D9%85-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/share/217293",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-29T08:30:00+00:00",
@@ -30,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "0c7a4551c5",
- "score": 84.8,
+ "score": 84.74000000000001,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
