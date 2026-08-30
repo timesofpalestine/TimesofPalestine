@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/two-palestinians-killed-in-israeli-attacks-in-central-and-southern-gaza",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-increase-gaza-death-toll",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-29T11:08:47+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "09be9d44a9",
- "score": 62.35,
+ "score": 48.85,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
