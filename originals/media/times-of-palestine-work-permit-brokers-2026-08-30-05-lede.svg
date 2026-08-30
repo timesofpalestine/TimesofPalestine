@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Permit brokers take a third of Palestinian workers' wages</title>
+  <desc id="dsc">A single horizontal bar representing one month's wage for a Palestinian permit holder is split: the left third, in red hatching, is the broker's cut, described by the International Labour Organization's 2024 report as averaging a third of monthly wages; the remaining two thirds, in green, is what the worker keeps. Below, three figures from the report: about NIS 2,000 a month as the price of a bought permit and about NIS 480 million a year in total revenue from the trade, both from the Bank of Israel study by Haggay Etkes and Wifag Adnan based on a June 2018 survey, and 187 to 292 million US dollars a year drained from Palestinian wages, from the ILO in 2024.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <pattern id="hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#8a1f2d"/>
+      <rect width="5" height="14" fill="#C8102E" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- kicker -->
+  <text x="90" y="86" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="4.5" fill="#c7a86b">WAGES &#183; THE PERMIT TRADE</text>
+
+  <!-- headline -->
+  <text x="90" y="152" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">Permit brokers take a third</text>
+  <text x="90" y="212" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">of Palestinian workers&#8217; wages</text>
+  <text x="90" y="262" font-family="Cairo,Arial,sans-serif" font-size="31" fill="#59a97d">&#1587;&#1605;&#1575;&#1587;&#1585;&#1577; &#1575;&#1604;&#1578;&#1589;&#1575;&#1585;&#1610;&#1581; &#1610;&#1602;&#1578;&#1591;&#1593;&#1608;&#1606; &#1579;&#1604;&#1579; &#1571;&#1580;&#1608;&#1585; &#1575;&#1604;&#1593;&#1605;&#1575;&#1604;</text>
+
+  <line x1="90" y1="298" x2="1510" y2="298" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- bar caption -->
+  <text x="90" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="3" fill="#aaa9a5">ONE MONTH&#8217;S WAGE OF A PALESTINIAN PERMIT HOLDER</text>
+
+  <!-- the bar -->
+  <rect x="90" y="378" width="1200" height="132" fill="#25262a"/>
+  <rect x="90" y="378" width="400" height="132" fill="url(#hatch)"/>
+  <rect x="490" y="378" width="800" height="132" fill="#286344"/>
+  <rect x="486" y="378" width="8" height="132" fill="#c7a86b"/>
+  <rect x="90" y="378" width="1200" height="132" fill="none" stroke="#4a4b50" stroke-width="2"/>
+
+  <text x="290" y="432" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="34" font-weight="700" fill="#f2eee8">ONE THIRD</text>
+  <text x="290" y="470" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="2" fill="#f2eee8">TO THE BROKER</text>
+
+  <text x="890" y="440" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" letter-spacing="2" fill="#f2eee8">WHAT THE WORKER KEEPS</text>
+
+  <!-- pointers under bar -->
+  <line x1="90" y1="528" x2="490" y2="528" stroke="#C8102E" stroke-width="3"/>
+  <line x1="90" y1="520" x2="90" y2="536" stroke="#C8102E" stroke-width="3"/>
+  <line x1="490" y1="520" x2="490" y2="536" stroke="#C8102E" stroke-width="3"/>
+
+  <text x="90" y="566" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Average broker&#8217;s cut &#8212; a third of monthly wages (ILO, 2024)</text>
+  <text x="90" y="600" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#59a97d">&#1579;&#1604;&#1579; &#1575;&#1604;&#1571;&#1580;&#1585; &#1575;&#1604;&#1588;&#1607;&#1585;&#1610; &#1610;&#1584;&#1607;&#1576; &#1573;&#1604;&#1609; &#1575;&#1604;&#1587;&#1605;&#1587;&#1575;&#1585;</text>
+
+  <line x1="90" y1="644" x2="1510" y2="644" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- stats -->
+  <rect x="90" y="668" width="6" height="112" fill="#c7a86b"/>
+  <text x="116" y="716" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">NIS 2,000</text>
+  <text x="116" y="750" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">a month &#8212; the price of a bought permit</text>
+  <text x="116" y="774" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">(Bank of Israel, 2018 survey)</text>
+
+  <rect x="570" y="668" width="6" height="112" fill="#c7a86b"/>
+  <text x="596" y="716" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">$187&#8211;292m</text>
+  <text x="596" y="750" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">a year drained from Palestinian wages</text>
+  <text x="596" y="774" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">earned in Israel (ILO, 2024)</text>
+
+  <rect x="1050" y="668" width="6" height="112" fill="#c7a86b"/>
+  <text x="1076" y="716" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">NIS 480m</text>
+  <text x="1076" y="750" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">a year &#8212; total revenue from the trade</text>
+  <text x="1076" y="774" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">(Bank of Israel estimate)</text>
+
+  <line x1="90" y1="812" x2="1510" y2="812" stroke="#3a3b3f" stroke-width="2"/>
+  <text x="90" y="848" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Sources: Bank of Israel (Etkes and Adnan, June 2018 survey of about 1,200 workers); ILO, 2024</text>
+  <text x="90" y="876" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">About 8,000 Palestinians now hold permits for work inside the Green Line &#8212; Knesset Research Centre, 8 June 2026</text>
+</svg>
