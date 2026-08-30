@@ -1,7 +1,17 @@
 {
-  "287efd3ca4": {
-    "image": "cover",
-    "note": "Owner order 2026-08-03: kill the face-cut funeral frame; branded Gaza cover runs until a better photo is chosen",
-    "at": "2026-08-03"
-  }
+ "287efd3ca4": {
+  "image": "cover",
+  "note": "Owner order 2026-08-03: kill the face-cut funeral frame; branded Gaza cover runs until a better photo is chosen",
+  "at": "2026-08-03"
+ },
+ "18802f9530": {
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gregory%20Meeks,%20official%20portrait,%20115th%20congress%20(cropped).jpg?width=640",
+  "note": "Photo-led conversion, daily editor 2026-08-30: the Meeks/Moskowitz Middle East subcommittee story ran on a branded category cover. Replaced with the congressman's official House portrait (public domain, manifest entry added).",
+  "at": "2026-08-30"
+ },
+ "2907ad7e7c": {
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%2C%20February%202023.jpg?width=640",
+  "note": "Photo-led conversion, daily editor 2026-08-30: the Likud election-billboard story ran on a branded category cover. Replaced with the Netanyahu portrait already carried in media-rights.json — Likud is the actor in the story.",
+  "at": "2026-08-30"
+ }
 }
