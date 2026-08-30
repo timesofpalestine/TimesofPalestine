@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-shoot-girl-two-young-men-gaza",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/two-palestinians-killed-in-israeli-attacks-in-central-and-southern-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-29T23:32:23+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "b8e7340b6b",
- "score": 58.01,
+ "score": 57.72,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",

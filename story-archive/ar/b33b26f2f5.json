@@ -13,6 +13,18 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/318307",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82521",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-08-30T05:48:00+00:00",
@@ -30,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "b33b26f2f5",
- "score": 62.32,
+ "score": 62.04,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
