@@ -65,6 +65,19 @@ land in a specific window.
     in China ahead of the Asian Cup in Saudi Arabia in January. Still
     open for September: the cup draw and fixture list when published,
     and the Nagoya delegation list.
+  - ✅ **Fifth sports original filed 2026-08-30** —
+    `palestino-chile-season-2026-08-30.*`, both editions, filed to clear a
+    stale en/sports section: Club Deportivo Palestino of Santiago, founded
+    by Palestinian immigrants at Osorno in August 1920 — the two Chilean
+    championships (1955, 1978), three Copa Chile trophies (1975, 1977,
+    2018), the 2019 Copa Libertadores run, the 2026 campaign across four
+    competitions with the league record placing it eleventh, Guillermo
+    Farre taking over on 26 April from Cristian Munoz, Nelson Da Silva
+    top-scoring with seven, and the January 2014 shirt whose number 1 was
+    drawn as historic Palestine, banned and fined by the Chilean
+    federation. Celebratory register per the features order. Two new sports
+    topics appended to topics.json the same day (the Nagoya delegation
+    piece and the women's club-league restart).
 - **Aug 25 – Sep 1 — Third-lost-school-year package.** The queued
   `education-under-fire` topic should have published by ~Aug 13 via the
   desk; in this window verify it is live, current, and cross-linked with
@@ -159,6 +172,18 @@ land in a specific window.
     twice, Burroughs twice, Richard Wright's 817 haiku, the African
     American poetry anthology) and her own three collections. Filed the
     same day the humans section went stale at 25 hours.
+    A second Real Lives original ran on 2026-08-30 to clear the humans
+    section again in both editions: `west-bank-ambulance-crews-2026-08-30.*`
+    — a trade profile of the Palestine Red Crescent and civil-defence crews
+    who now plan every run in alternates around the 930-plus gates and
+    obstacles the UN counts. Carries the WHO surveillance record (37 attacks
+    on health care in the West Bank in July against eight in June, a
+    year-to-date total of 98, 83 health transport vehicles and 11 facilities
+    touched, 33 injured and four killed, 50 documented care delays in the
+    first half-year), Human Rights Watch's 5 August finding, the 7 and
+    17 August ambulance attacks at Khalayel al-Louz and Tel Rumeida, and the
+    ambulance held at Qusra on 29 August. Written as craft, not as grief.
+  - **week of Aug 31 - Sep 6 - open.**
 - **Arabic-first commissioning:** 2–3 originals per month reported for the
   Arabic reader first (Arab Support and Her Story are the natural homes),
   then rendered into English.
