@@ -6,19 +6,13 @@
    "article": "original:ben-gvir-damon-women-prisoners-2026-08-30.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://imemc.org/article/ben-gvir-defends-harsh-prison-conditions",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/far-right-israeli-minister-boasts-worsening-conditions-palestinian",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-30T11:40:00+00:00",
@@ -36,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "e79f97888f",
- "score": 86.47,
+ "score": 86.37,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
