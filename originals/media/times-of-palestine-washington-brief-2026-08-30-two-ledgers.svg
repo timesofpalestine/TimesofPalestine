@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Two ledgers: the Iran war's consumption and the Gaza plan's shortfall</title>
+  <desc id="desc">A bilingual comparison. Left: what six months of the American campaign against Iran has consumed, as recorded in the 14 August 2026 Secretary of Defense Orders Book reported by the Washington Post — a quarter of the navy's destroyers ready, a quarter of the Reaper fleet lost, 50,000 troops on alert, 2,000 paratroopers extended, four commands filing non-concur. Right: what the Gaza stabilization plan still lacks — 20,000 soldiers and 12,000 police targeted against 200 personnel approved by Israel, American coordination staff cut from 190 to 40, and $206 million notified to Congress for equipment.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7e1e2b"/>
+      <stop offset=".5" stop-color="#286344"/>
+      <stop offset="1" stop-color="#bd9854"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:17px}
+      .small{font-size:20px}
+      .body{font-size:23px}
+      .label{font-size:18px;font-weight:800;letter-spacing:1.2px}
+      .fig{font-size:44px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="74" class="serif ivory" font-size="48" font-weight="800">Two ledgers, one budget of American force</text>
+  <text x="90" y="118" class="sans muted body">The Iran campaign at six months, and the Gaza plan that waits on the same reserve.</text>
+  <text x="1510" y="160" class="arabic ivory" font-size="35" font-weight="800" text-anchor="end">دفتران وميزانية واحدة للقوة الأميركية</text>
+  <text x="1510" y="194" class="arabic muted small" text-anchor="end">الحرب على إيران بعد ستة أشهر، وخطة غزة التي تنتظر الرصيد نفسه</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="222" width="710" height="530" rx="18" fill="#25262a" stroke="#8a1f2d" stroke-width="3"/>
+    <text x="102" y="266" class="sans red label">WHAT THE IRAN WAR CONSUMED</text>
+    <text x="102" y="294" class="arabic muted small">ما استهلكته الحرب على إيران</text>
+
+    <text x="102" y="360" class="sans red fig">1 in 4</text>
+    <text x="290" y="348" class="sans ivory small">Navy destroyers ready to deploy</text>
+    <text x="290" y="376" class="arabic muted tiny">ربع أسطول المدمرات جاهز للإبحار</text>
+
+    <text x="102" y="440" class="sans red fig">25%</text>
+    <text x="290" y="428" class="sans ivory small">of the Reaper drone fleet lost</text>
+    <text x="290" y="456" class="arabic muted tiny">من أسطول «ريبر» المسيّر خُسر</text>
+
+    <text x="102" y="520" class="sans red fig">50,000</text>
+    <text x="290" y="508" class="sans ivory small">troops held on alert for more operations</text>
+    <text x="290" y="536" class="arabic muted tiny">جندي في حال تأهب لعمليات إضافية</text>
+
+    <text x="102" y="600" class="sans red fig">2,000</text>
+    <text x="290" y="588" class="sans ivory small">82nd Airborne soldiers extended, maybe to 2027</text>
+    <text x="290" y="616" class="arabic muted tiny">جندي من الفرقة 82 مُدّد بقاؤهم</text>
+
+    <text x="102" y="680" class="sans red fig">4</text>
+    <text x="290" y="668" class="sans ivory small">commands filed "non-concur": Europe, Pacific, South, Navy</text>
+    <text x="290" y="696" class="arabic muted tiny">قيادات سجّلت «عدم موافقة» على إطالة الحرب</text>
+
+    <text x="102" y="730" class="sans muted tiny">Source: Secretary of Defense Orders Book, 14 August 2026, reported by the Washington Post, 30 August</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="820" y="222" width="710" height="530" rx="18" fill="#25262a" stroke="#286344" stroke-width="3"/>
+    <text x="852" y="266" class="sans green label">WHAT THE GAZA PLAN STILL LACKS</text>
+    <text x="852" y="294" class="arabic muted small">ما ينقص خطة غزة</text>
+
+    <text x="852" y="360" class="sans green fig">20,000</text>
+    <text x="1090" y="348" class="sans ivory small">soldiers the stabilization force targets</text>
+    <text x="1090" y="376" class="arabic muted tiny">جندي هو هدف قوة الاستقرار الدولية</text>
+
+    <text x="852" y="440" class="sans green fig">12,000</text>
+    <text x="1090" y="428" class="sans ivory small">Palestinian police to be trained alongside it</text>
+    <text x="1090" y="456" class="arabic muted tiny">شرطي فلسطيني يُفترض تدريبهم</text>
+
+    <text x="852" y="520" class="sans gold fig">200</text>
+    <text x="1090" y="508" class="sans ivory small">personnel Israel approved for the first entry, 26 July</text>
+    <text x="1090" y="536" class="arabic muted tiny">عنصراً وافقت إسرائيل على دخولهم في 26 تموز/يوليو</text>
+
+    <text x="852" y="600" class="sans gold fig">190 → 40</text>
+    <text x="1090" y="588" class="sans ivory small">American coordination-centre staff, after the cut</text>
+    <text x="1090" y="616" class="arabic muted tiny">موظفون أميركيون في مركز التنسيق بعد التخفيض</text>
+
+    <text x="852" y="680" class="sans gold fig">$206m</text>
+    <text x="1090" y="668" class="sans ivory small">notified to Congress — equipment, not housing</text>
+    <text x="1090" y="696" class="arabic muted tiny">مليون دولار أُبلغ بها الكونغرس: معدات لا مساكن</text>
+
+    <text x="852" y="730" class="sans muted tiny">Sources: Board of Peace briefing 19 Feb 2026; Israeli cabinet 26 July; Defense News 1 May; Haaretz 20 August</text>
+  </g>
+
+  <rect x="70" y="782" width="1460" height="76" rx="15" fill="url(#band)"/>
+  <text x="102" y="815" class="sans ivory" font-size="23" font-weight="800">The infantry for Gaza is being sought in Kampala and Gitega, not Fort Bragg.</text>
+  <text x="102" y="845" class="sans ivory small">Uganda's parliament voted to deploy on 6 August; Burundian officers visited Israel this month.</text>
+  <text x="1498" y="815" class="arabic ivory" font-size="23" font-weight="800" text-anchor="end">مشاة غزة يُبحث عنهم في كمبالا وغيتيغا لا في فورت براغ</text>
+  <text x="1498" y="845" class="arabic ivory small" text-anchor="end">صوّت برلمان أوغندا على الإرسال في 6 آب/أغسطس، وزار ضباط بورونديون إسرائيل هذا الشهر</text>
+
+  <text x="90" y="884" class="sans muted tiny">Graphic: Times of Palestine.</text>
+</svg>

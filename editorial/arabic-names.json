@@ -527,6 +527,31 @@
    "ar": "طارق كيني-الشوّا",
    "wrong": [],
    "verified": "al-shabaka.org Arabic team page, 2026-08-28"
+  },
+  {
+   "latin": "Pete Hegseth (US war secretary)",
+   "ar": "بيت هيغسيث",
+   "wrong": [
+    "بيت هيجسيث",
+    "بيت هيغسث"
+   ],
+   "verified": "aljazeera.net news + politics files and Al Jazeera Arabic channel posts, 2026-08-30"
+  },
+  {
+   "latin": "Daryl Caudle (US chief of naval operations)",
+   "ar": "داريل كودل",
+   "wrong": [
+    "داريل كاودل"
+   ],
+   "verified": "asharq.com defense file, 2026-08-30"
+  },
+  {
+   "latin": "Dan Caine (chairman, US Joint Chiefs of Staff)",
+   "ar": "دان كين",
+   "wrong": [
+    "دان كاين"
+   ],
+   "verified": "aljazeera.net encyclopedia entry + asharq.com + aawsat.com, 2026-08-30"
   }
  ]
 }
