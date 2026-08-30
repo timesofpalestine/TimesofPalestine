@@ -1,0 +1,32 @@
+{
+ "brief": "أفاد المركز الفلسطيني للإعلام بأن أكثر من 80% من شبكات المياه والصرف الصحي في قطاع غزة دمّرت جراء القتال. يترتب على هذا التدمير الواسع انقطاع الخدمات الأساسية عن السكان، وتفاقم الأزمة الصحية والإنسانية في القطاع الذي يعاني من نقص حاد في المياه النظيفة والمرافق الصحية.\n\nيشكل تدمير البنية التحتية للمياه والصرف تهديداً مباشراً لصحة السكان المدنيين، إذ يزيد من مخاطر انتشار الأمراض المائية والأوبئة في ظل الأوضاع الإنسانية الصعبة التي يشهدها القطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/08/30/1116594",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-30T14:23:22+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/08/30/1116594",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8297dbf137",
+ "score": 49.91,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "تدمير أكثر من 80% من شبكات المياه والصرف بغزة"
+}
