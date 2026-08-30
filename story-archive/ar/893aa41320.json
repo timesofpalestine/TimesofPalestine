@@ -21,15 +21,21 @@
    "verified": true
   },
   {
+   "article": "https://t.me/Palinfo/318386",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
    "article": "https://t.me/maannews/36501",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/318389",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
+   "article": "https://www.pbc.ps/a-4",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
    "verified": true
   },
   {
@@ -37,17 +43,11 @@
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
    "verified": true
-  },
-  {
-   "article": "https://shehabnews.com/post/163163/3-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A8%D8%B1%D8%B5%D8%A7%D8%B5-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AE%D9%84%D8%A7%D9%84-%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85-%D9%82%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%BA%D9%8A%D8%B1-%D8%B4%D9%85%D8%A7%D9%84-%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%84%D9%87",
-   "name": "وكالة شهاب (حصري)",
-   "url": "https://shehabnews.com/",
-   "verified": true
   }
  ],
  "date": "2026-08-29T12:55:00+00:00",
  "dek": "اقتحم جنود إسرائيليون قرية المغيّر شمال شرقي رام الله السبت يرافقهم مستوطنون يحمل بعضهم البنادق، فأصيب ثلاثة فلسطينيين، وفق ما أعلنته جمعية الهلال الأحمر الفلسطيني.",
- "image": "/media/times-of-palestine-cover-westbank-ar.svg",
+ "image": "/media/times-of-palestine-cover-westbank-b-ar.svg",
  "lang": "ar",
  "link": "original:mughayyir-settlers-livefire-2026-08-29.ar",
  "max_age_hours": 336.0,
@@ -60,7 +60,7 @@
  "modified": null,
  "original": true,
  "pid": "893aa41320",
- "score": 83.77000000000001,
+ "score": 83.72999999999999,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
