@@ -1,0 +1,32 @@
+{
+ "brief": "أطلقت قوات الاحتلال الإسرائيلي النار بكثافة على مناطق جنوبي مدينة خانيونس في جنوب قطاع غزة، بحسب المركز الفلسطيني للإعلام. واستهدفت آليات عسكرية عدة مواقع في المنطقة خلال الساعات الأخيرة، وسط استمرار التصعيد العسكري في القطاع.\n\nولم تتوفر حتى الآن معلومات دقيقة بشأن حجم الإصابات أو الأضرار المادية الناجمة عن العملية العسكرية، في حين أفادت مصادر محلية بتواصل القصف على عدة مناطق سكنية مجاورة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/318278",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-30T06:18:32+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/318278",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "29eabb6c92",
+ "score": 49.69,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "آليات الاحتلال تطلق النار جنوبي خانيونس"
+}
