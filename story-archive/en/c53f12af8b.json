@@ -1,0 +1,38 @@
+{
+ "brief": "Israel urgently evacuated Prime Minister Benjamin Netanyahu's son Yair from the United States following a reported threat, Al Jazeera English reported. The right-wing activist and podcaster had maintained residence in the US for several years before his sudden departure this week.\n\nIsraeli officials described the evacuation as a matter of pressing security concern requiring immediate action, though they did not publicly disclose details of the specific threat that prompted the move. The hasty nature of Yair Netanyahu's departure underscored what authorities characterized as an urgent risk assessment.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/30/israel-says-netanyahus-son-urgently-evacuated-from-the-us-after-threat?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/shin-bet-confirms-netanyahus-son-brought-back-after-significant-threat",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-30T09:47:56+00:00",
+ "dek": "Right-wing activist and podcaster Yair Netanyahu lived in the US for several years before his hasty departure.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/13090453-1788077532.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/30/israel-says-netanyahus-son-urgently-evacuated-from-the-us-after-threat?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/30/israel-says-netanyahus-son-urgently-evacuated-from-the-us-after-threat?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c53f12af8b",
+ "score": 63.6,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel evacuates Netanyahu's son from US over security threat"
+}
