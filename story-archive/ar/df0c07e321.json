@@ -6,31 +6,25 @@
    "article": "https://qudsn.co/share/217298",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
-   "article": "https://qudsn.co/post?id=217298&slug=%D8%A3%D8%AB%D8%B1-%D9%85%D9%86%D8%B9-%D8%AF%D8%AE%D9%88%D9%84-%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%AA%D9%81-%D8%A7%D9%84%D8%B0%D9%83%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9-%D9%81%D9%8A-%D9%82%D8%B7%D8%A7%D8%B9-%D8%BA%D8%B2%D8%A9",
-   "name": "شبكة قدس الإخبارية",
-   "url": "https://qudsn.co/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-30T10:01:20+00:00",
  "dek": "",
- "image": "https://qudsn.co/og/1051f6a0fe085f41be82186f959828faecf8b257.jpg",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
  "lang": "ar",
  "link": "https://qudsn.co/share/217298",
  "max_age_hours": 72,
  "media": {
-  "credit": "شبكة قدس · تيليغرام",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://qudsn.co/share/217298"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "df0c07e321",
- "score": 49.54,
+ "score": 49.29,
  "source": "شبكة قدس · تيليغرام",
  "source_id": "tg-qudsn",
  "source_url": "https://t.me/QudsN",
