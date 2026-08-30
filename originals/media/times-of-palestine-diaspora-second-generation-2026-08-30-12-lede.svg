@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Rania Sansur: from Santiago to Palestine's midfield</title>
+<desc id="d">Illustration of a football shirt with the number five, a career timeline of Rania Verena Sansur Osorio (Audax Italiano youth 2019–2024, senior 2024, Palestino 2025, Palestine call-ups from 2024), and a route line marking her family's departure from Bethlehem and Beit Jala to Chile in 1920 or 1921.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<clipPath id="shirt">
+<path d="M310,352 L380,318 L400,342 Q420,356 440,342 L460,318 L530,352 L562,432 L500,458 L508,652 L332,652 L340,458 L278,432 Z"/>
+</clipPath>
+<marker id="arw" markerWidth="10" markerHeight="10" refX="7" refY="4" orient="auto">
+<path d="M0,0 L8,4 L0,8 Z" fill="#c7a86b"/>
+</marker>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="1540" y="72" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="3" fill="#c7a86b">TIMES OF PALESTINE</text>
+
+<text x="90" y="112" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Chile&#8217;s Rania Sansur plays her way</text>
+<text x="90" y="164" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">into Palestine&#8217;s team</text>
+<text x="90" y="212" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d" text-anchor="start">رانيا سنسور: من تشيلي إلى منتخب فلسطين</text>
+<text x="90" y="248" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">Born 24 April 2006 in Santiago &#183; Midfielder &#183; Number 5</text>
+
+<line x1="90" y1="272" x2="1540" y2="272" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- shirt -->
+<g>
+<path d="M310,352 L380,318 L400,342 Q420,356 440,342 L460,318 L530,352 L562,432 L500,458 L508,652 L332,652 L340,458 L278,432 Z" fill="#f2eee8"/>
+<g clip-path="url(#shirt)">
+<rect x="338" y="300" width="52" height="380" fill="#286344"/>
+<rect x="300" y="628" width="260" height="26" fill="#8a1f2d"/>
+</g>
+<path d="M310,352 L380,318 L400,342 Q420,356 440,342 L460,318 L530,352 L562,432 L500,458 L508,652 L332,652 L340,458 L278,432 Z" fill="none" stroke="#c7a86b" stroke-width="3"/>
+<text x="452" y="592" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="170" font-weight="700" fill="#8a1f2d">5</text>
+</g>
+
+<text x="420" y="704" text-anchor="middle" font-family="'Source Serif 4',Georgia,serif" font-size="28" fill="#f2eee8">Rania Verena Sansur Osorio</text>
+<text x="420" y="734" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#c7a86b">Midfielder &#183; Club Deportivo Palestino</text>
+<text x="216" y="764" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="start">لاعبة وسط في نادي بالستينو التشيلي</text>
+
+<!-- timeline -->
+<text x="900" y="300" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="3" fill="#c7a86b">CAREER RECORD</text>
+<text x="1130" y="302" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#59a97d" text-anchor="start">سجل المسيرة</text>
+<line x1="904" y1="330" x2="904" y2="648" stroke="#3a3b3f" stroke-width="3"/>
+
+<circle cx="904" cy="348" r="9" fill="#59a97d"/>
+<text x="936" y="342" font-family="'Source Serif 4',Georgia,serif" font-size="27" fill="#f2eee8">2019&#8211;2024</text>
+<text x="936" y="372" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">Audax Italiano youth system</text>
+
+<circle cx="904" cy="438" r="9" fill="#59a97d"/>
+<text x="936" y="432" font-family="'Source Serif 4',Georgia,serif" font-size="27" fill="#f2eee8">2024</text>
+<text x="936" y="462" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">Senior season, Audax Italiano</text>
+
+<circle cx="904" cy="528" r="9" fill="#C8102E"/>
+<text x="936" y="522" font-family="'Source Serif 4',Georgia,serif" font-size="27" fill="#f2eee8">2024</text>
+<text x="936" y="552" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">First Palestine call-up, under-18s</text>
+
+<circle cx="904" cy="618" r="9" fill="#C8102E"/>
+<text x="936" y="612" font-family="'Source Serif 4',Georgia,serif" font-size="27" fill="#f2eee8">2025</text>
+<text x="936" y="642" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">Palestino; under-20s and senior team</text>
+<text x="936" y="674" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d" text-anchor="start">أول مباراة دولية مع منتخب فلسطين</text>
+
+<line x1="90" y1="784" x2="1540" y2="784" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- departure route -->
+<path d="M112,850 Q368,792 616,850" fill="none" stroke="#c7a86b" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#arw)"/>
+<circle cx="112" cy="850" r="8" fill="#8a1f2d" stroke="#f2eee8" stroke-width="2"/>
+<circle cx="616" cy="850" r="8" fill="#286344" stroke="#f2eee8" stroke-width="2"/>
+<text x="364" y="812" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#c7a86b">1920 (The National) &#183; 1921 (Doha News)</text>
+<text x="90" y="880" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Bethlehem &amp; Beit Jala</text>
+<text x="560" y="880" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Chile</text>
+
+<text x="900" y="822" font-family="'Source Serif 4',Georgia,serif" font-size="24" font-style="italic" fill="#f2eee8">&#8220;A Palestine filled with happiness and love&#8221;</text>
+<text x="900" y="856" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#59a97d" text-anchor="start">فلسطين مليئة بالسعادة والحب</text>
+<text x="900" y="884" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sansur, speaking in Santiago, October 2025</text>
+</svg>
