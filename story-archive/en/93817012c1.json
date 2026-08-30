@@ -1,0 +1,44 @@
+{
+ "brief": "An Israeli military strike on Deir el-Balah killed a 3-year-old child and another Palestinian, Al Jazeera English reported. The attack struck the central Gaza town, marking another casualty among civilians in the enclave's ongoing conflict.\n\nThe circumstances surrounding the strike remained unclear Tuesday, with limited details emerging about the operation or the identities of those killed. The deaths add to a mounting toll of civilian casualties in Gaza amid sustained military operations in the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/30/israeli-strike-kills-3-year-old-child-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-strike-kills-two-people-including-3-year-old-boy-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-year-old-among-two-killed-israeli-strike-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-30T21:02:45+00:00",
+ "dek": "A deadly Israeli strike on Deir el-Balah killed two Palestinians including a 3-year-old child.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1788123714.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/30/israeli-strike-kills-3-year-old-child-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/30/israeli-strike-kills-3-year-old-child-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "93817012c1",
+ "score": 63.67,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike kills 3-year-old in Gaza"
+}
