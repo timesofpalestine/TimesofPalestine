@@ -1,0 +1,38 @@
+{
+ "brief": "A Palestinian mother is grieving after her son was killed in an Israeli attack, Al Jazeera English reported. The death adds to the toll of casualties in the ongoing conflict between Israeli forces and Palestinians.\n\nThe incident underscores the human cost of the violence that has claimed numerous lives across the territory. Families continue to lose relatives in military operations and armed clashes, leaving communities to grapple with loss and displacement as hostilities persist in the region.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/30/palestinian-mother-in-agony-as-israeli-attack-kills-her-son?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-year-old-among-two-killed-israeli-strike-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-30T12:33:56+00:00",
+ "dek": "Palestinian mother in agony as Israeli attack kills her son.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/pal-mom-Horizontal-thumb-1788093124.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/30/palestinian-mother-in-agony-as-israeli-attack-kills-her-son?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/30/palestinian-mother-in-agony-as-israeli-attack-kills-her-son?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f1ca0706f7",
+ "score": 63.61,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli attack kills Palestinian mother's son"
+}

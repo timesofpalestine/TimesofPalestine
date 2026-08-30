@@ -6,19 +6,7 @@
    "article": "https://t.me/gazaalannet/82520",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/318305",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/732800",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-30T08:20:25+00:00",
@@ -36,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "51bfcfcd2a",
- "score": 49.31,
+ "score": 46.64,
  "source": "غزة الآن · تيليغرام",
  "source_id": "tg-gazanow",
  "source_url": "https://t.me/gazaalannet",
