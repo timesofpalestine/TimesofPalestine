@@ -6,7 +6,19 @@
    "article": "original:mughayyir-settlers-livefire-2026-08-29.ar",
    "name": "تايمز أوف فلسطين",
    "url": "",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/318381",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/732881",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-29T12:55:00+00:00",
@@ -24,7 +36,7 @@
  "modified": null,
  "original": true,
  "pid": "893aa41320",
- "score": 83.94,
+ "score": 83.88,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",

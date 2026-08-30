@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/08/netanyahu-condemns-settler-attack-flashpoint-west-bank-village",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://imemc.org/article/colonizers-attack-communities-injure-palestinians-across-west-bank",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
@@ -54,7 +60,7 @@
  "modified": null,
  "original": true,
  "pid": "a38228f1f2",
- "score": 87.31,
+ "score": 87.25,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
