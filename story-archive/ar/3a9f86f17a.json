@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.net/gallery/2026/8/30/5051?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/732867",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-08-30T09:17:55+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "3a9f86f17a",
- "score": 60.9,
+ "score": 60.65,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
