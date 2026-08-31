@@ -6,13 +6,7 @@
    "article": "https://qudsn.co/post?id=217314&slug=%D8%AC%D9%86%D9%88%D8%A8-%D8%A3%D9%81%D8%B1%D9%8A%D9%82%D9%8A%D8%A7-%D8%AA%D9%82%D8%AF%D9%85-%D9%85%D9%84%D9%81%D8%A7-%D8%A8%D8%B4%D8%A3%D9%86-%D8%B9%D8%AF%D9%85-%D8%A7%D9%85%D8%AA%D8%AB%D8%A7%D9%84-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D9%84%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%AF%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
-   "verified": true
-  },
-  {
-   "article": "https://felesteen.news/post/185516/%D8%AC%D9%86%D9%88%D8%A8-%D8%A5%D9%81%D8%B1%D9%8A%D9%82%D9%8A%D8%A7-%D8%AA%D9%82%D8%AF%D9%85-%D9%85%D9%84%D9%81%D8%A7-%D8%A8%D8%B4%D8%A3%D9%86-%D8%B9%D8%AF%D9%85-%D8%A7%D9%85%D8%AA%D8%AB%D8%A7%D9%84-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D9%84%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%AF%D9%84-%D8%A7%D9%84%D8%AF%D9%88",
-   "name": "صحيفة فلسطين",
-   "url": "https://felesteen.news/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-31T09:59:17+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "4cb1002bc5",
- "score": 47.56,
+ "score": 47.15,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
