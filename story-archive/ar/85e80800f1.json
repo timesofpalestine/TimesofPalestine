@@ -1,0 +1,38 @@
+{
+ "brief": "شنّت إسرائيل تفجيراً كبيراً استهدف بلدة حولا في جنوب لبنان، بحسب المركز الفلسطيني للإعلام. تقع البلدة على مقربة من الحدود الإسرائيلية اللبنانية المشتركة، في منطقة شهدت توترات متكررة بين الجانبين.\n\nلم تتضح حتى الآن تفاصيل دقيقة عن نطاق العملية ومداها، أو الدوافع المباشرة وراء هذا الاستهداف. كما لم تصدر معلومات فورية بشأن حجم الأضرار المترتبة على التفجير أو وقوع إصابات.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/318568",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/733125",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-31T14:57:11+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/XjygMuIZq3nfDWcCPZZmvUn4b6uZ_vb9jHuZzHGfYWTE3oIyyQ5pDcQ5Ps6MvLirTlL4YbITrwmsWms6sPstzNEwmpiBQasLDHCez83luPCIcTaxjn-T5e1IhsDYgJcrTxD1RaUBgx4pLgdqDSBRIYptkwNN8emEXcXdPg-RsWsA_q25ZT0fbOPwrcZC4wM2oJwwp2MTaocJOoHN4hdvQ-6tJsTvVjW0ma7SawNx0N1h0PrVnPUfMIyoXvJYtskiiXh-544kbnSVJqla84_yUQq76HNagqdWw5zR01pvELoFSiR1fMmEABl1Q0bXd40w5QSxXWVM8nvtT6ukLJZmbQ.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/318568",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/318568"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "85e80800f1",
+ "score": 63.56,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "إسرائيل تنفذ تفجيراً كبيراً في حولا جنوب لبنان"
+}
