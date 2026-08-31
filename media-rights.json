@@ -678,6 +678,19 @@
       "rightsBasis": "owned",
       "credit": "Graphic: Times of Palestine",
       "source": "Times of Palestine"
+    },
+    {
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20sun%20rises%20over%20Azraq%20Air%20Base.JPG?width=640",
+      "rightsBasis": "public-domain — a work of a US Air Force airman made in the course of official duties",
+      "credit": "Sunrise over Muwaffaq Salti Air Base, Jordan — Eric Harris, U.S. Air Force / Air Forces Central, via Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:The_sun_rises_over_Azraq_Air_Base.JPG",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_sun_rises_over_Azraq_Air_Base.JPG"
+    },
+    {
+      "asset": "originals/media/times-of-palestine-washington-brief-2026-08-31-war-reaches-arab-soil.svg",
+      "rightsBasis": "owned",
+      "credit": "Graphic: Times of Palestine",
+      "source": "Times of Palestine"
     }
   ]
 }
