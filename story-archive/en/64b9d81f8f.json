@@ -13,6 +13,18 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-fire-kills-five-people-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-gaza-city-kills-two-wounds-many-others",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-08-30T18:45:24+00:00",
@@ -30,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "64b9d81f8f",
- "score": 84.76,
+ "score": 84.73,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
