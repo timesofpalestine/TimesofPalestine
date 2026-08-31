@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli forces demolished Palestinian homes in Nablus while settlers in Hebron cleared land for a new outpost, according to Al Jazeera English. The dual operations underscore accelerating Israeli settlement activity across the occupied West Bank, where Palestinian residents face ongoing displacement pressures.\n\nThe demolitions in Nablus destroyed residential structures housing Palestinian families, adding to a pattern of home destruction in the territory. In Hebron, settlers prepared ground for construction of an additional outpost, part of a broader expansion effort by Israeli settlers in areas under varying degrees of Israeli control.\n\nThe concurrent actions occurred amid persistent Israeli settlement building in occupied Palestinian territory. International bodies have consistently opposed such settlement expansion, which most countries regard as illegal under international law, though Israel disputes this characterization.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/31/israeli-outposts-expand-as-palestinian-homes-are-demolished?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-demolishes-two-palestinian-homes-in-nablus",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-31T20:48:36+00:00",
+ "dek": "Israeli forces demolish Palestinian homes in Nablus, while in Hebron settlers cleared land for a new outpost.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1788209213.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/31/israeli-outposts-expand-as-palestinian-homes-are-demolished?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/31/israeli-outposts-expand-as-palestinian-homes-are-demolished?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "56bcb1283a",
+ "score": 48.27,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces demolish Palestinian homes as settlers expand outposts"
+}
