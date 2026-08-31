@@ -55,6 +55,41 @@ class WorkflowCharterTest(unittest.TestCase):
             self.assertIn("vars.SELF_REARM", text, name)
 
 
+class WeeklyMaintenanceTest(unittest.TestCase):
+    """Owner directive 2026-08-31: a standing weekly engineering sweep.
+
+    Ordered after an overflowing SVG pushed straight to main froze 25
+    consecutive builds for four hours; the cycle audits workflow-run
+    health, the test/build gate, the media library and the archive every
+    week. No agent removes the workflow or its schedule.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.text = (ROOT / ".github" / "workflows" /
+                    "weekly-maintenance.yml").read_text(encoding="utf-8")
+
+    def test_workflow_runs_weekly(self):
+        self.assertRegex(self.text, r'cron:\s*"[^"]* \* 1"',
+                         "the maintenance sweep is weekly (Mondays)")
+
+    def test_core_checks_named_in_prompt(self):
+        for marker in ("WORKFLOW-RUN HEALTH", "svg_text_overflows",
+                       "STORY-ARCHIVE INTEGRITY", "help:"):
+            self.assertIn(marker, self.text)
+
+    def test_no_workflow_pins_node20_actions(self):
+        # GitHub force-runs Node-20 actions on Node 24 with warnings since
+        # 2026-08; the bumped majors (checkout@v5+, setup-python@v6+,
+        # cache@v5+) are the supported runtimes. Don't regress a pin.
+        for wf in (ROOT / ".github" / "workflows").glob("*.yml"):
+            text = wf.read_text(encoding="utf-8")
+            for stale in ("actions/checkout@v4", "actions/setup-python@v5",
+                          "actions/cache/restore@v4", "actions/cache/save@v4",
+                          "actions/cache@v4"):
+                self.assertNotIn(stale, text, f"{wf.name} pins {stale}")
+
+
 class FeedConfigTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
