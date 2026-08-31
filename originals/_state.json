@@ -1,5 +1,5 @@
 {
- "last_hour": "2026-08-30T19",
+ "last_hour": "2026-08-31T05",
  "done": {
   "pa-budget-line-by-line": "2026-07-29T17:06:23.973916+00:00",
   "donor-aid-what-reaches-the-treasury": "2026-07-29T18:04:08.801907+00:00",
@@ -80,5 +80,6 @@
   "diaspora-second-generation": "2026-08-30T12:05:54.916580+00:00",
   "clearance-revenues": "2026-08-30T19:19:50.271191+00:00"
  },
- "last_attempt": "2026-08-30T19:19:50.271191+00:00"
+ "last_attempt": "2026-08-31T05:13:49.900859+00:00",
+ "error": "English parse failed (missing TITLE line); stop_reason='end_turn'"
 }
