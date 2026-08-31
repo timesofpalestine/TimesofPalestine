@@ -33,21 +33,15 @@
    "verified": true
   },
   {
-   "article": "https://qudsn.co/post?id=217311&slug=%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%87%D8%AF%D9%85-%D9%88%D8%A7%D8%B3%D8%B9%D8%A9-%D9%81%D9%8A-%D8%A8%D9%8A%D8%B1%D8%B2%D9%8A%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%AD%D9%88%D9%84-%D8%A8%D9%86%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A5%D9%84%D9%89-%D8%B1%D9%83%D8%A7%D9%85",
-   "name": "شبكة قدس الإخبارية",
-   "url": "https://qudsn.co/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/733004",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
    "article": "https://www.pbc.ps/%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%8a%d9%87%d8%af%d9%85-%d8%a8%d9%86%d8%a7%d9%8a%d8%aa%d9%8a%d9%86-%d8%b3%d9%83%d9%86%d9%8a%d8%aa%d9%8a%d9%86-%d9%81%d9%8a-%d8%a8%d9%8a%d8%b1%d8%b2",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/733010",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
    "verified": true
   }
  ],
@@ -66,7 +60,7 @@
  "modified": null,
  "original": false,
  "pid": "c54645f5f7",
- "score": 49.43,
+ "score": 49.15,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",

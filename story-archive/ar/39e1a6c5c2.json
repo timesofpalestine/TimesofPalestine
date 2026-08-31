@@ -1,0 +1,32 @@
+{
+ "brief": "نفّذ جيش الاحتلال الإسرائيلي عمليات نسف لعدة مبانٍ في المناطق الشرقية من مدينة دير البلح وسط قطاع غزة، بحسب المركز الفلسطيني للإعلام. وتأتي هذه العمليات ضمن سياق العمليات العسكرية المستمرة للاحتلال في القطاع.\n\nلم تُوضّح المصادر المتاحة حتى الآن تفاصيل العمليات، بما فيها عدد المبانى المستهدفة أو حجم الأضرار والخسائر الناجمة عنها أو أسباب استهداف تلك المباني تحديداً. وتشهد منطقة دير البلح، التي تقع وسط قطاع غزة، تصعيداً عسكرياً متواصلاً منذ فترة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/318495",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-31T08:17:40+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/318495",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "39e1a6c5c2",
+ "score": 63.51,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يفجّر مبانٍ شرق دير البلح بقطاع غزة"
+}
