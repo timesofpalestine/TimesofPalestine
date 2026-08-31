@@ -6,13 +6,7 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-gaza-city-kills-two-wounds-many-others",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/israeli-strike-kills-two-people-including-3-year-old-boy-gaza-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-31T09:40:53+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "fce5763a85",
- "score": 62.59,
+ "score": 62.22,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",

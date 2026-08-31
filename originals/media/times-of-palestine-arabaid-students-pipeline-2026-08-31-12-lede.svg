@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Israel's exit rules keep admitted Gaza students from their universities</title>
+<desc id="dsc">Diagram: a box marked Gaza with 1,200-plus students registered with Gaza40+ leads to a barred exit-permit gate; the onward route through Israel and Jordan transit to universities abroad is blocked. A bar chart shows 1,983 students registered to exit Gaza via Rafah for study in 2023 against 1,145 who passed, per Gisha. Four figures: 229 evacuated to Italy before May 2026 with about 40 more in June; 88,000 Gaza university students enrolled in 2022-23; 6,000 Palestinian students in Egypt; 74,340 undergraduate applications in Jordan for 2026-27.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="barA" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#8a1f2d"/>
+<stop offset="1" stop-color="#C8102E"/>
+</linearGradient>
+<linearGradient id="barB" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#286344"/>
+<stop offset="1" stop-color="#59a97d"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="62" font-family="'Libre Franklin',Arial" font-size="17" letter-spacing="4" fill="#c7a86b">GAZA · HIGHER EDUCATION</text>
+<text x="1268" y="62" font-family="'Libre Franklin',Arial" font-size="15" letter-spacing="2.5" fill="#aaa9a5">TIMES OF PALESTINE</text>
+
+<text x="90" y="118" font-family="'Source Serif 4',Georgia" font-size="46" fill="#f2eee8">Israel's exit rules keep admitted Gaza</text>
+<text x="90" y="170" font-family="'Source Serif 4',Georgia" font-size="46" fill="#f2eee8">students from their universities</text>
+<text x="90" y="208" font-family="Cairo,Arial" font-size="30" fill="#c7a86b">قواعد الخروج الإسرائيلية تمنع طلبة غزة المقبولين من جامعاتهم</text>
+
+<line x1="90" y1="230" x2="1510" y2="230" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- FLOW -->
+<g>
+  <rect x="90" y="290" width="300" height="160" rx="6" fill="#191a1d" stroke="#59a97d" stroke-width="2.5"/>
+  <text x="110" y="334" font-family="'Libre Franklin',Arial" font-size="26" letter-spacing="2" fill="#c7a86b">GAZA</text>
+  <text x="110" y="364" font-family="Cairo,Arial" font-size="20" fill="#aaa9a5">غزة</text>
+  <text x="110" y="400" font-family="'Libre Franklin',Arial" font-size="19" fill="#f2eee8">1,200+ students registered</text>
+  <text x="110" y="426" font-family="'Libre Franklin',Arial" font-size="19" fill="#f2eee8">with Gaza40+</text>
+
+  <line x1="396" y1="370" x2="452" y2="370" stroke="#59a97d" stroke-width="4"/>
+  <polygon points="452,358 470,370 452,382" fill="#59a97d"/>
+
+  <!-- gate -->
+  <text x="458" y="262" font-family="'Libre Franklin',Arial" font-size="20" letter-spacing="1" fill="#C8102E">EXIT PERMIT</text>
+  <rect x="470" y="272" width="122" height="190" rx="4" fill="#1a1214" stroke="#C8102E" stroke-width="3"/>
+  <g stroke="#C8102E" stroke-width="7">
+    <line x1="494" y1="282" x2="494" y2="452"/>
+    <line x1="522" y1="282" x2="522" y2="452"/>
+    <line x1="550" y1="282" x2="550" y2="452"/>
+    <line x1="578" y1="282" x2="578" y2="452"/>
+  </g>
+  <rect x="470" y="356" width="122" height="28" fill="#8a1f2d"/>
+  <text x="456" y="490" font-family="Cairo,Arial" font-size="20" fill="#C8102E">تصريح خروج</text>
+
+  <line x1="596" y1="370" x2="666" y2="370" stroke="#6a6b6e" stroke-width="4" stroke-dasharray="10 9"/>
+  <circle cx="631" cy="370" r="21" fill="#111214" stroke="#C8102E" stroke-width="3.5"/>
+  <g stroke="#C8102E" stroke-width="4">
+    <line x1="622" y1="361" x2="640" y2="379"/>
+    <line x1="640" y1="361" x2="622" y2="379"/>
+  </g>
+
+  <g opacity="0.55">
+    <rect x="680" y="290" width="350" height="160" rx="6" fill="#191a1d" stroke="#6a6b6e" stroke-width="2"/>
+    <text x="700" y="336" font-family="'Libre Franklin',Arial" font-size="22" letter-spacing="1" fill="#f2eee8">TRANSIT: ISRAEL &amp; JORDAN</text>
+    <text x="700" y="370" font-family="Cairo,Arial" font-size="19" fill="#aaa9a5">العبور عبر إسرائيل والأردن</text>
+    <text x="700" y="410" font-family="'Libre Franklin',Arial" font-size="17" fill="#aaa9a5">required in many cases</text>
+
+    <line x1="1036" y1="370" x2="1092" y2="370" stroke="#6a6b6e" stroke-width="4" stroke-dasharray="10 9"/>
+    <polygon points="1092,358 1110,370 1092,382" fill="#6a6b6e"/>
+
+    <rect x="1120" y="290" width="390" height="160" rx="6" fill="#191a1d" stroke="#6a6b6e" stroke-width="2"/>
+    <text x="1140" y="336" font-family="'Libre Franklin',Arial" font-size="22" letter-spacing="1" fill="#f2eee8">UNIVERSITY ABROAD</text>
+    <text x="1140" y="370" font-family="Cairo,Arial" font-size="19" fill="#aaa9a5">جامعات في الخارج</text>
+    <text x="1140" y="410" font-family="'Libre Franklin',Arial" font-size="17" fill="#aaa9a5">Italy · Egypt · Jordan · UK</text>
+  </g>
+</g>
+
+<line x1="90" y1="528" x2="1510" y2="528" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- CHART -->
+<text x="90" y="562" font-family="'Libre Franklin',Arial" font-size="24" fill="#f2eee8">Registered to exit Gaza via Rafah for study, 2023</text>
+<text x="90" y="592" font-family="Cairo,Arial" font-size="20" fill="#c7a86b">مسجّلون للخروج من غزة عبر رفح للدراسة، 2023</text>
+
+<text x="90" y="636" font-family="'Libre Franklin',Arial" font-size="19" fill="#aaa9a5">Registered</text>
+<rect x="330" y="608" width="991" height="40" rx="3" fill="url(#barA)"/>
+<text x="1335" y="637" font-family="'Libre Franklin',Arial" font-size="22" fill="#f2eee8">1,983</text>
+
+<text x="90" y="692" font-family="'Libre Franklin',Arial" font-size="19" fill="#aaa9a5">Passed through</text>
+<rect x="330" y="664" width="572" height="40" rx="3" fill="url(#barB)"/>
+<text x="916" y="693" font-family="'Libre Franklin',Arial" font-size="22" fill="#f2eee8">1,145</text>
+
+<text x="90" y="732" font-family="'Libre Franklin',Arial" font-size="16" fill="#aaa9a5">Source: Gisha, citing Palestinian interior ministry figures</text>
+
+<!-- STAT CARDS -->
+<g>
+  <rect x="90" y="760" width="330" height="108" rx="5" fill="#191a1d" stroke="#3a3b3f" stroke-width="1.5"/>
+  <rect x="90" y="760" width="4" height="108" fill="#8a1f2d"/>
+  <text x="110" y="802" font-family="'Source Serif 4',Georgia" font-size="32" fill="#c7a86b">229</text>
+  <text x="110" y="830" font-family="'Libre Franklin',Arial" font-size="16" fill="#f2eee8">evacuated to Italy before May 2026</text>
+  <text x="110" y="852" font-family="'Libre Franklin',Arial" font-size="16" fill="#aaa9a5">about 40 more followed in June</text>
+
+  <rect x="450" y="760" width="330" height="108" rx="5" fill="#191a1d" stroke="#3a3b3f" stroke-width="1.5"/>
+  <rect x="450" y="760" width="4" height="108" fill="#286344"/>
+  <text x="470" y="802" font-family="'Source Serif 4',Georgia" font-size="32" fill="#c7a86b">88,000</text>
+  <text x="470" y="830" font-family="'Libre Franklin',Arial" font-size="16" fill="#f2eee8">Gaza university students enrolled</text>
+  <text x="470" y="852" font-family="'Libre Franklin',Arial" font-size="16" fill="#aaa9a5">in 2022-23; most cut off (DW)</text>
+
+  <rect x="810" y="760" width="330" height="108" rx="5" fill="#191a1d" stroke="#3a3b3f" stroke-width="1.5"/>
+  <rect x="810" y="760" width="4" height="108" fill="#8a1f2d"/>
+  <text x="830" y="802" font-family="'Source Serif 4',Georgia" font-size="32" fill="#c7a86b">6,000</text>
+  <text x="830" y="830" font-family="'Libre Franklin',Arial" font-size="16" fill="#f2eee8">Palestinian students in Egypt</text>
+  <text x="830" y="852" font-family="'Libre Franklin',Arial" font-size="16" fill="#aaa9a5">Egypt's higher education ministry</text>
+
+  <rect x="1170" y="760" width="340" height="108" rx="5" fill="#191a1d" stroke="#3a3b3f" stroke-width="1.5"/>
+  <rect x="1170" y="760" width="4" height="108" fill="#286344"/>
+  <text x="1190" y="802" font-family="'Source Serif 4',Georgia" font-size="32" fill="#c7a86b">74,340</text>
+  <text x="1190" y="830" font-family="'Libre Franklin',Arial" font-size="16" fill="#f2eee8">applications for undergraduate</text>
+  <text x="1190" y="852" font-family="'Libre Franklin',Arial" font-size="16" fill="#aaa9a5">places in Jordan, 2026-27</text>
+</g>
+</svg>
