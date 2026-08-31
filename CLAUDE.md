@@ -168,6 +168,22 @@ everything it builds:
    agents: expect a daily PR with this prefix; don't revert its layers —
    disagreements go to issue #6. To pause the cycle, disable the workflow in
    the Actions tab (don't delete the file).
+11. **Weekly maintenance cycle (owner directive 2026-08-31):** Claude runs
+   `.github/workflows/weekly-maintenance.yml` every Monday (03:30 UTC) — a
+   standing engineering sweep ordered after an overflowing SVG pushed
+   straight to main froze 25 consecutive builds for four hours. The cycle
+   audits the last week's workflow runs for failure clusters, re-runs the
+   test/build/validate gate on clean main, scans `originals/media/` with
+   `svg_text_overflows`, checks feed health, story-archive integrity and
+   runner deprecations, and ships safe fixes via a
+   `claude/weekly-maintenance-<date>` PR merged on green — anything in
+   Codex's or Copilot's lane routes to them via a `help:` issue or #6
+   instead of a force-fix. A quiet week still posts its checklist to #6.
+   To pause, disable the workflow in the Actions tab (don't delete the
+   file); `tests/test_charter_guards.py` guards its existence and weekly
+   schedule. Corollary rule, binding on every agent: media SVGs never go
+   to main without the test suite run locally first — that is the exact
+   path that caused the freeze.
 
 ## Division of labor (suggested, not exclusive)
 

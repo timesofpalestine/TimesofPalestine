@@ -1,0 +1,123 @@
+# Weekly maintenance cycle — owner directive 2026-08-31, ordered after a
+# 4-hour publication freeze (an overflowing SVG pushed straight to main
+# failed the test gate on 25 consecutive builds) showed the paper needs a
+# standing engineering sweep, not just editorial ones. Every Monday Claude
+# audits the platform end to end, fixes what is safely fixable via a PR
+# merged on green, and routes everything in another agent's lane to Codex
+# or Copilot per the charter (Codex is the standing first call).
+# Manual runs: Actions → "Weekly maintenance cycle" → Run workflow.
+name: Weekly maintenance cycle
+
+on:
+  schedule:
+    - cron: "30 3 * * 1" # Mondays 03:30 UTC — quiet hour, before the daily editor
+  workflow_dispatch: {}
+
+concurrency:
+  group: weekly-maintenance
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write # claude-code-action exchanges an OIDC token for its GitHub credentials
+
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Run the weekly maintenance cycle
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Same model pin + full output as daily-editor.yml (2026-08-07):
+          # the action's fast-mode default errored against this key, and
+          # full output keeps API-side failures diagnosable from the log.
+          show_full_output: true
+          claude_args: '--model claude-opus-5 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"'
+          prompt: |
+            You are Claude, running the WEEKLY MAINTENANCE cycle for Times of
+            Palestine (owner directive 2026-08-31). This is an engineering
+            sweep, not an editorial one: the daily editor keeps the paper
+            fresh; you keep the machine that prints it healthy. START by
+            reading CLAUDE.md — the charter is binding, especially the
+            division of labor (Telegram delivery, workflow reliability and
+            tests are Codex's layer; renderer/validator hardening is
+            Copilot's; asking Codex for help is never optional when stuck).
+
+            Run EVERY check below and record its result. Fix what is safe
+            and in Claude's lane in one PR; route the rest.
+
+            1. WORKFLOW-RUN HEALTH (the check that would have caught the
+               2026-08-31 freeze in one hour instead of four): with
+               `gh run list --workflow=<file> --limit 40 --json
+               conclusion,createdAt,event` review the last 7 days of
+               build.yml, daily-editor.yml, bitcoin-dispatch.yml,
+               washington-brief.yml, diaspora-dispatch.yml, x-fetch.yml,
+               rearm.yml and heartbeat.yml. Any failure CLUSTER (2+
+               consecutive failures of one workflow) gets root-caused from
+               its logs (`gh run view <id> --log-failed`) — distinguish
+               repo bugs (fix now), transient API errors like 529/overload
+               (note, no action), and spend-cap 429s (flag to the owner in
+               the report). A currently-red build.yml is a production
+               outage: fix it FIRST, before everything else.
+            2. TEST + BUILD GATE on clean main: `python3 -m unittest
+               discover -s tests` and `rm -rf dist && TOP_FEEDS_FILE=
+               tests/fixtures/feeds.json TOP_OFFLINE=1
+               TOP_ALLOW_RAW_SUMMARIES=1 python3 build.py && python3
+               validate_build.py dist`. Failures on untouched main are
+               exactly the freeze pattern — root-cause and fix. Restore
+               originals/_state.json afterwards (`git checkout --
+               originals/_state.json`).
+            3. MEDIA LIBRARY SCAN: run build.svg_text_overflows over every
+               originals/media/*.svg and fix any finding (shrink the text,
+               keep the layout) — an overflowing SVG on main freezes every
+               build. Also verify every raster in originals/media/ has its
+               media-rights.json entry and every `image:` header that
+               points to a local /media/ file points to a file that exists.
+            4. FEED HEALTH: run the wire fetchers offline-safe (`python3
+               israeli_press_fetch.py --hours 36` and the same with
+               --feeds editorial/us-press-feeds.json) and note feeds that
+               return errors or zero items two weeks running. Dead feeds in
+               feeds.json are Codex-lane wiring — flag, don't rip out.
+            5. STORY-ARCHIVE INTEGRITY: every story-archive/*/*.json must
+               parse and carry pid/title/cat/date (the archive is the
+               permalink-permanence ledger; a corrupt entry breaks an old
+               link silently). Fix corrupt entries from git history where
+               possible.
+            6. DEPRECATION + DEPENDENCY SCAN: read a recent build.yml run
+               log for runner deprecation warnings (Node runtime forcing,
+               deprecated action versions, apt package changes in the
+               rasterize step). Bump pinned action versions ONLY to majors
+               you can verify exist (git ls-remote --tags) and note the
+               bump prominently in the PR body.
+            7. STATE + CACHE SANITY: originals/_state.json on main carries
+               no stale multi-day-old `error`; briefs-cache.json is not
+               growing without bound; dist/section-freshness.json from your
+               local build shows no section stale ≥3 days (that is a
+               starving-section signal the daily editor may be missing —
+               report it, editorial filing is the editor's job, not yours).
+
+            COORDINATION (charter: never force-fix another agent's layer):
+            anything in Codex's lane (Telegram delivery, workflow
+            reliability internals, delivery caches, tests it owns) or
+            Copilot's (renderer/validator) becomes a `help:` issue or a
+            comment on issue #6 addressed to that agent, with symptom,
+            repro and what you tried. Two failed attempts at any fix means
+            a help issue, not a third attempt.
+
+            SHIP: branch claude/weekly-maintenance-<YYYYMMDD> from main,
+            commit, push, open a PR titled "Weekly maintenance: <date> —
+            <short summary>" listing every check with its result (✓ / fixed
+            / routed / flagged). Watch checks with `gh pr checks --watch`;
+            merge with `gh pr merge --merge` when green. If NOTHING needed
+            fixing, still post the checklist as a comment on issue #6 so
+            the owner sees the sweep ran — a quiet week is a result, not a
+            skipped run. Never commit secrets, caches, dist/ or
+            __pycache__; never weaken a test to get green.
