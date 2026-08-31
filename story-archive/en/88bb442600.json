@@ -6,25 +6,13 @@
    "article": "original:westbank-airstrike-jenin-bitawi-2026-08-28.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/killing-palestinian-children-and-teens-israel-surges-west-bank",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://zeteo.com/p/this-week-in-palestine-israel-kills-children-kites",
-   "name": "Zeteo",
-   "url": "https://zeteo.com/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.dropsitenews.com/p/israel-west-bank-jenin-trump-mail-ballots-nepal-flood",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-28T17:40:00+00:00",
@@ -42,7 +30,7 @@
  "modified": null,
  "original": true,
  "pid": "88bb442600",
- "score": 92.33,
+ "score": 92.28,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
