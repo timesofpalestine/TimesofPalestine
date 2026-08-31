@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli forces conducted a military operation in Nablus on Tuesday, killing two Palestinians, according to Al Jazeera English. Footage showed Israeli military vehicles and armed personnel deployed across multiple streets in the occupied West Bank city during the incursion.\n\nThe circumstances leading to the deaths remained unclear in initial reports. Israeli forces regularly conduct raids in Palestinian cities and towns across the West Bank, citing security operations against militant groups. The deaths marked another incident in an escalating pattern of military operations in the territory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/31/two-palestinians-reported-dead-as-israeli-forces-raid-nablus?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-31T03:08:35+00:00",
+ "dek": "Footage shows Israeli military vehicles and personnel deployed across Nablus city in the occupied West Bank.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1788145682.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/31/two-palestinians-reported-dead-as-israeli-forces-raid-nablus?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/31/two-palestinians-reported-dead-as-israeli-forces-raid-nablus?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c44136aa79",
+ "score": 63.61,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces kill two Palestinians in Nablus raid"
+}
