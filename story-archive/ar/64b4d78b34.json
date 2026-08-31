@@ -1,0 +1,44 @@
+{
+ "brief": "أصيب أحد المواطنين برصاص دبابات الاحتلال التي أطلقت ناراً مكثفة على منطقة أبراج في مدينة حمد، شمال غربي خان يونس بجنوب قطاع غزة، بحسب المركز الفلسطيني للإعلام.\n\nوقصفت القوات الإسرائيلية المنطقة المأهولة بالسكان بشكل مباشر من الدبابات. ولم يتضح ما إذا كانت هناك إصابات أخرى أو أضرار إضافية في المنطقة جراء القصف.\n\nوتشهد مناطق عديدة في قطاع غزة استهدافات متكررة من القوات الإسرائيلية خلال الأسابيع الأخيرة، إذ تتعرض مدن وقرى لقصف مباشر يستهدف المناطق السكنية.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/318462",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/732945",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/3694",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-30T23:49:40+00:00",
+ "dek": "متابعة | إصابة أحد المواطنين إثر إطلاق النار المكثف من دبابات الاحتلال صوب منطقة أبراج مدينة حمد شمال غربي مدينة خان يونس جنوبي قطاع غزة",
+ "image": "https://cdn4.telesco.pe/file/iKBaE39Hv31392X67Kd_vW2W3chwnZI3PzzlIUbnD2ePOnDvnKs0J8qdG8L31N1Yln7TOM4Mqy7H6WhN3LHyz91Vxbpb6zdnk3gDBjboLHXVHFp7YDslAv2KpNj1rSL96ebLxARarcPchORXq_5cbEbWZGlyuPRXz4_sE_dx0pVTpH9VTUyluy5O6VrbFBRPgQDcDgApIR9s-X-57RCbtcYv6wbJaY525T9UUzDhKthO6QPlfrb1_8DVFdENAxv6iX0-T80pWzcZBuOl0vvwAQVYJC3a4kE8uHqgpXnIAJdMU2p4tP7aQYCr9lLSyns3QAdtmObnURp4dC5X2HJUow.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/318462",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/318462"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "64b4d78b34",
+ "score": 63.25,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "دبابات الاحتلال تطلق النار على حمد جنوب غزة"
+}
