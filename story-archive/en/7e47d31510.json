@@ -1,0 +1,32 @@
+{
+ "brief": "OUTLET: The Guardian reported that the war in Gaza and violence in the West Bank are reverberating through Toledo, Ohio, where the Arab American community has established deep roots. Residents of the city are following events in the occupied territories through direct family connections and livestreamed accounts of incidents abroad.\n\nThe situation has brought distant conflicts into the daily lives of Toledo's Arab Americans, creating a direct connection between Midwestern neighborhoods and the ongoing crisis thousands of miles away. Community members are tracking developments through personal networks and digital broadcasts of events unfolding in the region, making the occupation and its violence a lived reality rather than distant news.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/us-news/2026/aug/31/ohio-fallout-israeli-settler-violence-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-31T11:00:24+00:00",
+ "dek": "War on Gaza and violence in West Bank is playing out in the streets of Toledo, Ohio, where the Arab American community has flourished From his office outside Toledo, Ohio, Thamin Tim Ridi opens his phone to livestream the scene outside the besieged house of…",
+ "image": "https://i.guim.co.uk/img/media/c2083917994d838496779704c35b2ada0dcf001f/580_0_4561_3648/master/4561.jpg?width=140&quality=85&auto=format&fit=max&s=92a959a0c8796c5678bd08eca8208669",
+ "lang": "en",
+ "link": "https://www.theguardian.com/us-news/2026/aug/31/ohio-fallout-israeli-settler-violence-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/us-news/2026/aug/31/ohio-fallout-israeli-settler-violence-west-bank"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7e47d31510",
+ "score": 49.76,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Toledo Arabs witness West Bank violence through family ties"
+}
