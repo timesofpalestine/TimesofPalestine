@@ -1,0 +1,38 @@
+{
+ "brief": "An Israeli attack on a residential building in Gaza City killed at least two Palestinians and wounded multiple others, Middle East Eye reported. The strike targeted a structure in the densely populated urban area, though specific details about the building's location and the nature of the operation remained unclear from initial reports.\n\nThe toll of casualties and injuries was expected to rise as rescue workers assessed the damage from the strike. Such attacks on residential areas in Gaza have repeatedly drawn criticism from international observers and humanitarian organizations concerned about civilian harm in the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-gaza-city-kills-two-wounds-many-others",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-strike-kills-two-people-including-3-year-old-boy-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-31T09:40:53+00:00",
+ "dek": "Israeli attack on Gaza City kills two, wounds many others An Israeli attack on a residential building in Gaza City has killed at least two Palestinians and wounded many others, Al Jazeera reports. According to the report, the attack struck a building near…",
+ "image": "https://www.middleeasteye.net/sites/default/files/2026-08/Vessels%20in%20the%20Strait%20of%20Hormuz%20are%20visible%20near%20the%20beach%20of%20Bandar%20Abbas%20Iran%2028%20august%202026%20retuers.jpg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-gaza-city-kills-two-wounds-many-others",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-gaza-city-kills-two-wounds-many-others"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fce5763a85",
+ "score": 63.95,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli strike on Gaza City kills two Palestinians"
+}

@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/8/31/two-palestinians-reported-dead-as-israeli-forces-raid-nablus?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-demolishes-two-palestinian-homes-in-nablus",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-08-31T03:08:35+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "c44136aa79",
- "score": 61.58,
+ "score": 59.41,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
