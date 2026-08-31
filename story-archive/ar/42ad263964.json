@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://t.me/Palinfo/318488",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
    "article": "https://t.me/AlQastalps/392326",
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
@@ -24,12 +30,6 @@
    "article": "https://www.pbc.ps/%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%8a%d9%87%d8%af%d9%85-%d8%a8%d9%86%d8%a7%d9%8a%d8%aa%d9%8a%d9%86-%d8%b3%d9%83%d9%86%d9%8a%d8%aa%d9%8a%d9%86-%d9%81%d9%8a-%d8%a8%d9%8a%d8%b1%d8%b2",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/318472",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
    "verified": true
   },
   {
@@ -54,7 +54,7 @@
  "modified": null,
  "original": false,
  "pid": "42ad263964",
- "score": 49.96,
+ "score": 49.71,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
