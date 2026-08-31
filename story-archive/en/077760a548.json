@@ -1,0 +1,56 @@
+{
+ "brief": "Israeli airstrikes killed at least five people across the Gaza Strip in recent days, Al Jazeera English reported. The strikes represent a significant escalation of military operations in the territory following a US-brokered ceasefire agreement that was intended to halt hostilities between Israeli forces and Palestinian armed groups.\n\nThe deaths occurred despite the ceasefire arrangement, which has failed to prevent continued Israeli bombing campaigns. Residents across multiple areas of Gaza faced renewed attacks as military operations intensified rather than subsided following the diplomatic agreement.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/8/31/israeli-air-strikes-on-gaza-kill-at-least-five-people?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/08/israeli-fire-kills-five-people-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/gaza-death-toll-rises-as-israeli-attacks-continue",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-continues-to-kill-civilians-and-destroy-homes-and-civilian-objects-in-gaza-as-part-of-its-ongoing-genocide",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/08/gazas-archaeological-heritage-was-destroyed-in-israels-genocide-these-volunteers-are-trying-to-salvage-it-from-the-rubble",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-08-31T15:56:28+00:00",
+ "dek": "Israel escalates its attacks across the Gaza Strip in recent days despite a US-brokered 'ceasefire'.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/afp_6a9594534722-1788187731.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/8/31/israeli-air-strikes-on-gaza-kill-at-least-five-people?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/8/31/israeli-air-strikes-on-gaza-kill-at-least-five-people?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "077760a548",
+ "score": 62.16,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli airstrikes kill at least five across Gaza strip"
+}
