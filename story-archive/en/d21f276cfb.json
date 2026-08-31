@@ -1,0 +1,32 @@
+{
+ "brief": "The Palestinian Red Crescent Society has converted a damaged ambulance in Gaza into the \"Dream Bus,\" a mobile facility designed to serve children affected by conflict, Al Jazeera English reported. The vehicle, no longer suitable for medical transport, has been repurposed to provide resources and support to displaced and traumatized youth across the territory.\n\nThe initiative represents an effort by aid organizations to maximize limited resources while addressing the humanitarian needs of Gaza's civilian population. Operating as a mobile space for children, the Dream Bus responds to immediate demands created by the territory's deteriorating conditions and ongoing instability.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/8/31/damaged-gaza-ambulance-becomes-dream-bus-for-children?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-08-31T18:36:29+00:00",
+ "dek": "A damaged ambulance in Gaza has been converted by the Palestinian Red Crescent Society into the ‘Dream Bus’.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/image-1788201341.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/8/31/damaged-gaza-ambulance-becomes-dream-bus-for-children?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/8/31/damaged-gaza-ambulance-becomes-dream-bus-for-children?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d21f276cfb",
+ "score": 49.73,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinian Red Crescent converts damaged ambulance into children's mobile shelter"
+}
