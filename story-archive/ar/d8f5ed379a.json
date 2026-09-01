@@ -1,0 +1,38 @@
+{
+ "brief": "قال مسؤولون أمنيون إسرائيليون، وفقاً للإعلام العبري، إن الهجمات على قطاع غزة استهدفت إزالة تهديدات أمنية. واستخدم المسؤولون هذا التبرير للدفاع عن العمليات العسكرية في القطاع، من دون تحديد طبيعة التهديدات المقصودة أو نطاق الضربات التي شنتها القوات الإسرائيلية.\n\nيأتي هذا التصريح في خضم استمرار الحملة العسكرية على غزة لعدة أشهر، في حين يشهد القطاع دماراً واسعاً وأزمة إنسانية حادة. وتسعى إسرائيل من خلال هذه الرواية إلى تبرير العمليات أمام المجتمع الدولي والرأي العام المحلي.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/318718",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/733282",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-01T08:49:58+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/318718",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d8f5ed379a",
+ "score": 63.69,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "مسؤولون إسرائيليون يبررون الهجمات على غزة بإزالة التهديدات"
+}
