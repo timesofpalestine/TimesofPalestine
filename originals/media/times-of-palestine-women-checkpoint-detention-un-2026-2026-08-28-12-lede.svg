@@ -33,7 +33,7 @@
 <!-- headline -->
 <text x="90" y="142" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">UN verifies Israeli sexual violence</text>
 <text x="90" y="194" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">against Palestinian detainees</text>
-<text x="90" y="244" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#59a97d" text-anchor="start" direction="rtl">الأمم المتحدة توثّق عنفاً جنسياً بحق محتجزين فلسطينيين</text>
+<text x="90" y="244" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#59a97d" text-anchor="end" direction="rtl">الأمم المتحدة توثّق عنفاً جنسياً بحق محتجزين فلسطينيين</text>
 
 <line x1="90" y1="286" x2="1520" y2="286" stroke="#c7a86b" stroke-opacity="0.35" stroke-width="2"/>
 
@@ -41,7 +41,7 @@
 <text x="90" y="374" font-family="'Source Serif 4',Georgia,serif" font-size="64" font-weight="700" fill="#c7a86b">31</text>
 <text x="180" y="348" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">verified cases of conflict-related sexual violence,</text>
 <text x="180" y="372" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Gaza and the West Bank — 13 in 2025, 18 in 2023–2024</text>
-<text x="180" y="398" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5" text-anchor="start" direction="rtl">حالات موثّقة من العنف الجنسي المرتبط بالنزاع</text>
+<text x="180" y="398" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5" text-anchor="end" direction="rtl">حالات موثّقة من العنف الجنسي المرتبط بالنزاع</text>
 
 <line x1="210" y1="428" x2="210" y2="672" stroke="#aaa9a5" stroke-opacity="0.35" stroke-width="2"/>
 
@@ -94,5 +94,5 @@
 <text x="118" y="742" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Detention and interrogation sites recorded: Sde Teiman · Etzion · Majnunah camp · Gush Etzion police station</text>
 <text x="118" y="770" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Israel Prison Service: Megiddo · Ofer · Ramla · Hasharon · Shatta · Nafha · Damon, where Palestinian women are held</text>
 <text x="118" y="806" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#c7a86b">Indicative, not comprehensive: Israel denies UN bodies access to detention facilities and to Gaza.</text>
-<text x="118" y="836" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5" text-anchor="start" direction="rtl">إسرائيل تمنع وصول الأمم المتحدة إلى مرافق الاحتجاز وإلى غزة</text>
+<text x="118" y="836" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5" text-anchor="end" direction="rtl">إسرائيل تمنع وصول الأمم المتحدة إلى مرافق الاحتجاز وإلى غزة</text>
 </svg>

@@ -16,7 +16,7 @@
 <text x="90" y="92" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="4.5" fill="#c7a86b">ADMINISTRATIVE DETENTION</text>
 
 <text x="90" y="156" font-family="'Source Serif 4',Georgia,serif" font-size="54" font-weight="700" fill="#f2eee8">Held without charge or trial</text>
-<text x="90" y="208" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#aaa9a5" text-anchor="start" direction="rtl">محتجزون دون تهمة أو محاكمة</text>
+<text x="90" y="208" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#aaa9a5" text-anchor="end" direction="rtl">محتجزون دون تهمة أو محاكمة</text>
 
 <line x1="90" y1="244" x2="1540" y2="244" stroke="#3a3b3e" stroke-width="2"/>
 
@@ -24,7 +24,7 @@
 <text x="90" y="330" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#C8102E">AT THE START OF AUGUST</text>
 <text x="90" y="450" font-family="'Source Serif 4',Georgia,serif" font-size="118" font-weight="700" fill="#f2eee8">3,198</text>
 <text x="90" y="496" font-family="'Libre Franklin',Arial,sans-serif" font-size="29" font-weight="600" fill="#f2eee8">administrative detainees</text>
-<text x="90" y="540" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d" text-anchor="start" direction="rtl">معتقلون إداريون</text>
+<text x="90" y="540" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d" text-anchor="end" direction="rtl">معتقلون إداريون</text>
 
 <line x1="90" y1="578" x2="440" y2="578" stroke="#8a1f2d" stroke-width="4"/>
 <text x="90" y="618" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">More than a third of all Palestinian</text>

@@ -21,7 +21,7 @@
 <!-- header -->
 <text x="90" y="70" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="5" fill="#c7a86b">GAZA · WATER SUPPLY</text>
 <text x="90" y="126" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Nine in ten Gaza households short of water</text>
-<text x="90" y="172" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d" text-anchor="start" direction="rtl">تسع من كل عشر أسر في غزة تعاني نقص المياه</text>
+<text x="90" y="172" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d" text-anchor="end" direction="rtl">تسع من كل عشر أسر في غزة تعاني نقص المياه</text>
 <line x1="90" y1="200" x2="1510" y2="200" stroke="#2f3034" stroke-width="2"/>
 
 <!-- divider -->
@@ -29,7 +29,7 @@
 
 <!-- PANEL A -->
 <text x="90" y="278" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" letter-spacing="3" fill="#c7a86b">WATER-INSECURE PEOPLE</text>
-<text x="90" y="312" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="start" direction="rtl">من يعانون انعدام الأمن المائي</text>
+<text x="90" y="312" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" text-anchor="end" direction="rtl">من يعانون انعدام الأمن المائي</text>
 
 <g fill="#C8102E">
 <use href="#drop" x="0" y="0" transform="translate(160,420)"/>
@@ -79,5 +79,5 @@
 <line x1="90" y1="790" x2="1510" y2="790" stroke="#2f3034" stroke-width="2"/>
 <text x="90" y="826" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#59a97d">About 80% of the population relies on water trucking for drinking water — WASH Cluster, cited by UNRWA</text>
 <text x="90" y="858" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Source: OCHA Humanitarian Situation Report, 14 August 2026; OCHA, 27 March 2026; UNICEF, 21 July 2026</text>
-<text x="90" y="884" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" text-anchor="start" direction="rtl">المصدر: أوتشا، 14 أغسطس 2026</text>
+<text x="90" y="884" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" text-anchor="end" direction="rtl">المصدر: أوتشا، 14 أغسطس 2026</text>
 </svg>

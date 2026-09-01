@@ -22,7 +22,7 @@
 <text x="90" y="72" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#c7a86b">GAZA · COMMUNICATIONS BLACKOUTS</text>
 <text x="90" y="136" font-family="'Source Serif 4',Georgia,serif" font-size="54" font-weight="700" fill="#f2eee8">Palestinians test Bluetooth mesh</text>
 <text x="90" y="192" font-family="'Source Serif 4',Georgia,serif" font-size="54" font-weight="700" fill="#f2eee8">messaging as blackouts cut Gaza</text>
-<text x="90" y="238" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#aaa9a5" direction="rtl">رسائل عبر شبكة بلوتوث مع انقطاع الاتصالات في غزة</text>
+<text x="90" y="238" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#aaa9a5" direction="rtl" text-anchor="end">رسائل عبر شبكة بلوتوث مع انقطاع الاتصالات في غزة</text>
 
 <rect x="1252" y="46" width="258" height="58" rx="6" fill="#8a1f2d" fill-opacity=".22" stroke="#8a1f2d" stroke-width="2"/>
 <text x="1381" y="83" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" font-weight="700" fill="#f2eee8">bitchat mesh v1.7.1</text>
@@ -90,7 +90,7 @@
 
 <text x="90" y="578" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">dashed ring = Bluetooth Low Energy range of one phone · Wi-Fi Direct support is planned, not shipped</text>
 <text x="90" y="616" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#f2eee8">Density, not distance: every relay must be a phone with bitchat installed, awake, Bluetooth on.</text>
-<text x="90" y="648" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" direction="rtl">الكثافة لا المسافة: كل هاتف في السلسلة يجب أن يكون فعّالاً والبلوتوث مفتوحاً</text>
+<text x="90" y="648" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5" direction="rtl" text-anchor="end">الكثافة لا المسافة: كل هاتف في السلسلة يجب أن يكون فعّالاً والبلوتوث مفتوحاً</text>
 
 <!-- stats -->
 <g>

@@ -20,7 +20,7 @@
 <!-- header -->
 <text x="90" y="86" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4.5" fill="#c7a86b">PALESTINIAN FOOTBALL ASSOCIATION</text>
 <text x="90" y="150" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#f2eee8">The domestic season restarts in September</text>
-<text x="90" y="200" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#59a97d" direction="rtl">استئناف المنافسات المحلية في سبتمبر</text>
+<text x="90" y="200" font-family="Cairo,Arial,sans-serif" font-size="34" fill="#59a97d" direction="rtl" text-anchor="end">استئناف المنافسات المحلية في سبتمبر</text>
 <text x="90" y="240" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">First phase “activational only” — no promotion or relegation. Opening competition: the Cup of the Thousand Martyrs <tspan fill="#c7a86b">كأس الألف شهيد</tspan></text>
 <rect x="90" y="266" width="1420" height="2" fill="#8a1f2d" opacity="0.75"/>
 
@@ -57,7 +57,7 @@
 </g>
 
 <text x="110" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">Palestine Pitch, Tal al-Hawa, Gaza City — half-sized field, rubble cleared</text>
-<text x="110" y="832" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#c7a86b" direction="rtl">ملعب فلسطين – تل الهوا، مدينة غزة</text>
+<text x="110" y="832" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#c7a86b" direction="rtl" text-anchor="end">ملعب فلسطين – تل الهوا، مدينة غزة</text>
 <text x="110" y="864" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Football in the Gaza Strip has been suspended since October 2023.</text>
 
 <line x1="870" y1="300" x2="870" y2="864" stroke="#3a3b3f" stroke-width="2"/>
