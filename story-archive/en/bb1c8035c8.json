@@ -1,0 +1,38 @@
+{
+ "brief": "The World Health Organization has warned that Gaza faces a mounting public health emergency as the rainy season approaches, citing already-poor water quality that flooding will worsen, Al Jazeera English reported. The UN agency cautioned that deteriorating sanitation conditions in the Palestinian enclave threaten disease outbreaks and widespread illness among the population.\n\nInadequate water infrastructure and ongoing damage to facilities have left residents vulnerable to contamination. Heavy rains are expected to compound these dangers by flooding areas where sewage and other hazards accumulate, creating conditions for rapid spread of waterborne illnesses.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/1/health-crisis-looming-as-gaza-heads-towards-rainy-season-warns-who?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/who-raises-concern-over-deteriorating-water-quality-water-contamination",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-01T18:22:17+00:00",
+ "dek": "Water quality in embattled Palestinian enclave already poor; flooding will exacerbate threat to health, says UN agency.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6a96de09b1e2-1788272137.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/1/health-crisis-looming-as-gaza-heads-towards-rainy-season-warns-who?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/1/health-crisis-looming-as-gaza-heads-towards-rainy-season-warns-who?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bb1c8035c8",
+ "score": 49.65,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "WHO warns of health crisis as Gaza enters rainy season"
+}

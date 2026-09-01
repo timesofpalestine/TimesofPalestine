@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://www.theguardian.com/politics/2026/sep/01/ed-miliband-promises-reset-of-uk-policy-toward-israel",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-foreign-secretary-pledges-comprehensive-reset-uk-policy-israel",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "989bacf07b",
- "score": 48.45,
+ "score": 48.18,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
