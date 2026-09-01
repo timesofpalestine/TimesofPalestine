@@ -1,0 +1,44 @@
+{
+ "brief": "Britain's Foreign Secretary has condemned Israeli settlements in the occupied West Bank, Al Jazeera English reported. The rebuke reflects longstanding British opposition to settlement construction and expansion, which successive UK governments have characterized as an impediment to peace negotiations between Israelis and Palestinians.\n\nThe condemnation aligns with the international legal consensus that Israeli settlements in occupied Palestinian territory violate international law, though Israel has consistently rejected this assessment. Settlement expansion has remained a flashpoint throughout decades of failed peace efforts, with construction continuing across the West Bank despite international pressure and diplomatic objections from numerous governments including the United States and European Union members.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/1/uk-foreign-secretary-condemns-israeli-settlements-in-the-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/uk-unveil-comprehensive-response-israeli-west-bank-settlement-plans-coming-weeks",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-foreign-secretary-pledges-comprehensive-reset-uk-policy-israel",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-01T16:15:01+00:00",
+ "dek": "UK Foreign Secretary condemns Israeli settlements in the occupied West Bank.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/UK-fs-Ed-miliband-horizontal-thumb-1788279133.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/1/uk-foreign-secretary-condemns-israeli-settlements-in-the-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/1/uk-foreign-secretary-condemns-israeli-settlements-in-the-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "989bacf07b",
+ "score": 49.6,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UK Foreign Secretary condemns Israeli settlements in occupied West Bank"
+}

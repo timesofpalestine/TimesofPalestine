@@ -1,0 +1,32 @@
+{
+ "brief": "Drop Site News reported that Israeli forces carried out 2,030 attacks in the West Bank during August, underscoring the intensity of military operations across the territory. The attacks spanned the month and affected multiple locations throughout the occupied region.\n\nIn a separate development, a postal service plan could disenfranchise millions of people, though the scope and mechanics of the proposal were not detailed in available reporting. Meanwhile, Nepal faced a mounting humanitarian catastrophe as the death toll from an unspecified disaster surpassed 1,000, marking one of the deadliest incidents to strike the South Asian nation in recent memory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.dropsitenews.com/p/israel-west-bank-attacks-postal-service-nepal-deaths",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-01T15:43:23+00:00",
+ "dek": "Drop Site Daily: September 1, 2026.",
+ "image": "https://substackcdn.com/image/fetch/$s_!Cde-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fad75c634-66bd-4a38-87db-7423c36ed1aa_6760x4509.jpeg",
+ "lang": "en",
+ "link": "https://www.dropsitenews.com/p/israel-west-bank-attacks-postal-service-nepal-deaths",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Drop Site News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.dropsitenews.com/p/israel-west-bank-attacks-postal-service-nepal-deaths"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4f934c6165",
+ "score": 63.23,
+ "source": "Drop Site News",
+ "source_id": "dropsite",
+ "source_url": "https://www.dropsitenews.com/",
+ "title": "Israeli forces conduct 2,030 attacks across West Bank in August"
+}

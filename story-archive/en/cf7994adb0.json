@@ -13,6 +13,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-demolish-residential-and-livestock-structures-tubas",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-01T14:55:56+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "cf7994adb0",
- "score": 49.24,
+ "score": 48.68,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
