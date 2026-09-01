@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/deaths-injuries-in-serious-israeli-escalation-in-gaza",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-children-intensifying-attacks-gaza-over-past-day",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-01T10:42:34+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "235a7ec269",
- "score": 58.8,
+ "score": 58.6,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
