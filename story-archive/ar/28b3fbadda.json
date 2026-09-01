@@ -6,7 +6,13 @@
    "article": "https://felesteen.news/post/185660/%D9%84%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%8470-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%85%D9%86%D8%B9-%D8%A7%D9%84%D8%A3%D8%B0%D8%A7%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF-%D8%A7%D9%84%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%D9%8A",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/733359",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-09-01T09:13:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "28b3fbadda",
- "score": 46.75,
+ "score": 46.47,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
