@@ -1,0 +1,38 @@
+{
+ "brief": "Palestinian farmers inspected agricultural land in the West Bank after Israeli forces bulldozed their olive trees, Al Jazeera English reported. The destruction damaged property belonging to Palestinians across a section of the territory, leaving farmers to assess the extent of losses to their orchards.\n\nThe incident underscores recurring disputes over land access and use in the occupied West Bank. Palestinian farmers have regularly documented damage to crops, trees, and agricultural infrastructure in recent years, citing military operations and settlement-related activities as sources of destruction to their livelihoods.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/1/palestinian-farmers-inspect-olive-trees-bulldozed-by-israeli-forces?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-soldiers-uproot-dozens-of-olive-trees-near-jenin",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-01T14:55:56+00:00",
+ "dek": "Palestinian farmers inspect olive trees bulldozed by Israeli forces.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788274534.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/1/palestinian-farmers-inspect-olive-trees-bulldozed-by-israeli-forces?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/1/palestinian-farmers-inspect-olive-trees-bulldozed-by-israeli-forces?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cf7994adb0",
+ "score": 49.52,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces bulldoze Palestinian olive trees in West Bank"
+}
