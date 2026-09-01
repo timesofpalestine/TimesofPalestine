@@ -123,7 +123,17 @@ everything it builds:
    Verdicts cache per story-pair in briefs-cache.json (each pair costs one
    small call ever, ≤40/build); fail-open on every route. Layer:
    `adjudicate_duplicates` in `build.py`. Don't replace it with another
-   word-matching net — that approach is the documented root cause. Markdown-residue in an original skips that article with a
+   word-matching net — that approach is the documented root cause.
+   **Duplicate canon across builds (owner sweep 2026-09-01):** the cluster
+   representative is stable — our copy first, then the partner wire, then
+   the ALREADY-ARCHIVED permalink, then score, with a pid tie-break — so
+   equal twins can never alternate between builds and archive both copies;
+   and `mark_archived_duplicates` flags archived stories whose headline
+   near-identically repeats a live or earlier-archived one, keeping their
+   permalink pages rendering (permanence untouched) while dropping them
+   from search, the topic hubs and archive-filled section listings.
+   `tests/test_duplicate_canon.py` pins both. No agent weakens either
+   layer to make a twin publish. Markdown-residue in an original skips that article with a
    loud warning; schema and missing-media errors fail the build. Editorial
    gating must default to publish — never to holding coverage behind
    per-story manual approval, and NEVER with reader-facing labels
