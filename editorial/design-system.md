@@ -50,6 +50,37 @@ first.
   slate `#3d4f6b`, gold `#c7a86b`, ivory `#f2eee8`, muted `#aaa9a5`, dark
   gradient `#111214`→`#1d1e21`.
 
+### Section accents (owner-approved 2026-09-01)
+
+A restrained per-section identity. The flagship sections and standing desks
+carry their own muted newspaper tone; every other section keeps the house
+green — do not invent accents for the remaining sections without an owner
+order. Single source of truth: `SECTION_ACCENTS` in `build.py` (each entry
+is `(light, dark)`; the dark value lifts lightness for chip text on the
+charcoal theme). The generated CSS exposes `--sa-<cat>` tokens plus
+`.sa-<cat>` scope classes that set `--sa`; surfaces consume
+`var(--sa, <house fallback>)` so an un-accented section falls back cleanly.
+
+| Section | Light | Dark |
+|---|---|---|
+| gaza | `#8a1f2d` | `#e0808c` |
+| westbank | `#566229` | `#aebf6e` |
+| pal48 | `#00602f` | `#5fbf8f` |
+| prisoners | `#474252` | `#a9a3ba` |
+| politics | `#3d4f6b` | `#93a9cc` |
+| israelipress | `#274a63` | `#7fa8c7` |
+| uspress | `#58426e` | `#b39ecc` |
+| women | `#7d3457` | `#d189ad` |
+| economy | `#8a6d2f` | `#cdb272` |
+| arabaid | `#1f6e63` | `#6fbdb1` |
+| health | `#2c6e8a` | `#7fbcd6` |
+| accountability | `#703a12` | `#c98d5c` |
+
+Where the accent shows: card/rowcard/sub-item kickers and the Latest rail's
+section label (text color), the `.sec-head` accent bar on front bands and
+section archive pages, the small-thumb tiles (ground), and the split hero's
+panel rule. Accents never restyle body text, links, or the flag palette.
+
 ### Dark mode
 
 Dark rules are written ONCE (`_DARK_RULES` in `build.py`) and emitted twice:
@@ -102,6 +133,35 @@ load-bearing statistic — one or two per story, never as decoration.
   `newpulse` (NEW mark, countdown chip dot), `tick`/`tick-rtl` (ticker).
 
 ## 3. Component grammar
+
+- **Split hero** (`.hero-imgwrap.split`, owner-approved 2026-09-01,
+  replacing the dim-and-scrim `.graphic` treatment): when the hero story's
+  art is a house SVG (`/media/*.svg`), the hero renders as a grid — the art
+  full and undimmed on one side, an ink (`--black`) panel on the other
+  carrying kicker → serif headline (ivory `#f2eee8`) → meta, with a 4px
+  `var(--sa, --red)` rule on the panel's inline-start edge. House covers
+  carry their own display type; overlaying the page headline stacked three
+  layers of text (worst on /ar/ when the art is English-first). Photo-led
+  heroes KEEP the cinematic text-over-image overlay — that contrast is the
+  point. Stacks to one column where the hero zone stacks (≤960px); in lite
+  mode the art hides and the panel flattens to plain text.
+- **Small-thumb tiles** (`.lt-thumb.tile`, `.sub-thumb.tile`, 2026-09-01):
+  a 1600×900 art board shrunk to 52–82px reads as a dark blob, so rail and
+  sub-item thumbnails of house-SVG art render as a flat tile — the section
+  accent as ground (deep light-theme value in BOTH schemes, so the serif
+  ivory initial always sits on a dark ground), the section name's first
+  letter as the mark. Photographs keep photo thumbs; big card tops (16:9)
+  keep the full art. Hidden in lite mode like all imagery.
+- **Running-files strip** (`.files-strip`, owner-approved 2026-09-01): a
+  slim `--black` band directly under the hero zone on both fronts — gold
+  uppercase label (RUNNING FILES / «ملفات متابعة»), then one bordered chip
+  per topic hub that shipped this build (ivory name + gold mono counter).
+  Counters come from optional `since`/`until` dates in
+  `editorial/topic-files.json`: `since` → live DAY N (day 1 is the date
+  itself, matching the coverage's own counting), `until` → N DAYS to go.
+  Recomputed every build — the strip is an "alive" surface per the charter.
+  On phones the chips become one horizontally swipeable row. Chips are
+  chrome (same face both themes).
 
 - **Masthead** (`.masthead`, newsweekly register — owner orders
   2026-08-06): a stacked wordmark, FRAMELESS on the site the way the

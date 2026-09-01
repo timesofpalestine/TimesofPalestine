@@ -3351,8 +3351,6 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
 .hero-imgwrap>a>img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;background:#141419;transition:transform .55s ease}
 .hero-imgwrap:hover>a>img{transform:scale(1.03)}
 .hero-overlay{position:absolute;bottom:0;inset-inline:0;padding:3.5rem 1.5rem 1.5rem;background:linear-gradient(to top,rgba(4,4,6,.96) 0%,rgba(4,4,6,.82) 42%,rgba(4,4,6,.42) 74%,transparent 100%)}
-.hero-imgwrap.graphic>a>img{filter:brightness(.52) saturate(.85)}
-.hero-imgwrap.graphic .hero-overlay{background:linear-gradient(to top,rgba(4,4,6,.97) 0%,rgba(4,4,6,.9) 45%,rgba(4,4,6,.62) 78%,rgba(4,4,6,.32) 100%)}
 .dupvar1{filter:hue-rotate(12deg) brightness(1.05)}
 .dupvar2{filter:hue-rotate(-12deg) saturate(1.1)}
 .hero-overlay .label{color:#ff606d;font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.45rem;display:block}
@@ -3381,7 +3379,7 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
 .sub-thumb{flex-shrink:0}
 .sub-thumb img{width:82px;aspect-ratio:3/2;object-fit:cover;object-position:50% 22%;background:#e8e6df;border-radius:2px;transition:opacity var(--tr)}
 .sub-item:hover .sub-thumb img{opacity:.82}
-.sub-body .chip{font-size:.62rem;font-weight:800;color:var(--green-deep);text-transform:uppercase;letter-spacing:.06em;display:block}
+.sub-body .chip{font-size:.62rem;font-weight:800;color:var(--sa,var(--green-deep));text-transform:uppercase;letter-spacing:.06em;display:block}
 [lang=ar] .sub-body .chip{letter-spacing:0;font-size:.72rem}
 .sub-body h3{font-family:var(--serif);font-weight:700;font-size:.93rem;line-height:1.28;margin-top:.18rem}
 [lang=ar] .sub-body h3{line-height:1.6}
@@ -3412,13 +3410,57 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
 .latest h3{font-size:.9rem;font-weight:600;line-height:1.35}
 [lang=ar] .latest h3{line-height:1.65;font-size:.96rem}
 .latest h3 a:hover{color:var(--red)}
-.latest .s{font-size:.7rem;color:var(--muted);font-weight:600;text-transform:uppercase;margin-top:.18rem;display:block}
+.latest .s{font-size:.7rem;color:var(--sa,var(--muted));font-weight:600;text-transform:uppercase;margin-top:.18rem;display:block}
 [lang=ar] .latest .s{text-transform:none;font-size:.72rem}
+/* ── section-accent surfaces (owner-approved design pass 2026-09-01) ──
+   Tokens + .sa-* scopes are generated from SECTION_ACCENTS and appended to
+   this sheet at import time; dark variants ride _DARK_RULES the same way. */
+.lt-thumb.tile,.sub-thumb.tile{display:flex;align-items:center;justify-content:center;background:var(--black);color:#f2eee8;font-family:var(--serif);font-weight:900;text-decoration:none;transition:filter var(--tr)}
+.lt-thumb.tile{width:52px;height:52px;border-radius:3px;font-size:1.3rem}
+.sub-thumb.tile{width:82px;aspect-ratio:3/2;border-radius:2px;font-size:1.45rem}
+.lt-thumb.tile span,.sub-thumb.tile span{opacity:.94}
+.latest li:hover .lt-thumb.tile,.sub-item:hover .sub-thumb.tile{filter:brightness(1.15)}
+/* ── split hero: house-SVG art beside an ink headline panel ── */
+.hero-imgwrap.split{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);background:var(--black);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+.hero-imgwrap.split .hs-art{display:block;height:100%}
+.hero-imgwrap.split .hs-art img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.hero-imgwrap.split:hover .hs-art img{transform:scale(1.03)}
+.hs-panel{padding:1.9rem 1.6rem;display:flex;flex-direction:column;justify-content:center;gap:.7rem;border-inline-start:4px solid var(--sa,var(--red))}
+.hs-panel .label{color:#ff606d;font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;display:block}
+[lang=ar] .hs-panel .label{letter-spacing:.04em;font-size:.78rem}
+.hs-panel h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.35rem,2.4vw,2.1rem);line-height:1.16;color:#f2eee8}
+[lang=ar] .hs-panel h2{line-height:1.5;font-weight:800}
+.hs-panel h2 a{color:#f2eee8}
+.hs-panel h2 a:hover{color:#fff}
+.hs-panel .meta{display:flex;align-items:center;gap:.6rem;font-size:.74rem;color:rgba(255,255,255,.62)}
+.hs-panel .meta .t{font-weight:600;color:rgba(255,255,255,.7)}
+[lang=ar] .hs-panel .meta .src{letter-spacing:0}
+/* ── running-files strip: the standing files, alive on the front ── */
+.files-strip{background:var(--black)}
+.files-strip .wrap{display:flex;align-items:center;gap:.5rem;padding-block:.6rem;flex-wrap:wrap}
+.fs-label{font-size:.64rem;font-weight:800;letter-spacing:.16em;color:#c7a86b;text-transform:uppercase;white-space:nowrap;margin-inline-end:.35rem}
+[lang=ar] .fs-label{letter-spacing:.02em;font-size:.78rem}
+.fs-chip{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .7rem;border:1px solid rgba(199,168,107,.38);border-radius:var(--r);white-space:nowrap;transition:border-color var(--tr),background var(--tr)}
+.fs-chip b{color:#f2eee8;font-size:.76rem;font-weight:700}
+[lang=ar] .fs-chip b{font-size:.86rem}
+.fs-chip .d{font-family:ui-monospace,Menlo,monospace;font-size:.66rem;font-weight:700;color:#c7a86b}
+.fs-chip:hover{border-color:#c7a86b;background:rgba(199,168,107,.1)}
+@media(max-width:740px){
+  .files-strip .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .files-strip .wrap::-webkit-scrollbar{display:none}
+  .fs-chip{padding-block:.55rem}
+}
+[data-lite] .hs-art{display:none!important}
+[data-lite] .hero-imgwrap.split{display:block;background:none;border-radius:0;box-shadow:none}
+[data-lite] .hs-panel{padding:0;border:0}
+[data-lite] .hs-panel .label{color:var(--red)}
+[data-lite] .hs-panel h2,[data-lite] .hs-panel h2 a{color:var(--ink)}
+[data-lite] .lt-thumb.tile,[data-lite] .sub-thumb.tile{display:none!important}
 /* ── section headers ── */
 section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .sec-head{display:flex;align-items:center;gap:.8rem;margin-bottom:1.3rem}
-.sec-head::before{content:"";width:4px;height:1.55rem;background:var(--green);border-radius:2px;flex-shrink:0;align-self:center}
-.sec-head.focus::before{background:var(--red)}
+.sec-head::before{content:"";width:4px;height:1.55rem;background:var(--sa,var(--green));border-radius:2px;flex-shrink:0;align-self:center}
+.sec-head.focus::before{background:var(--sa,var(--red))}
 .sec-head h2{font-family:var(--serif);font-weight:900;font-size:1.45rem;color:var(--black);letter-spacing:-.01em}
 [lang=ar] .sec-head h2{font-weight:700;letter-spacing:0}
 .sec-head .rule{flex:1;height:1px;background:var(--line-dark)}
@@ -3463,8 +3505,6 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 [data-lite] .hero-imgwrap>a,[data-lite] .sub-thumb,[data-lite] .lt-thumb,[data-lite] .card>a:first-child,[data-lite] .card .ph,[data-lite] .rowcard img,[data-lite] .rowcard .ph,[data-lite] .research-feat img,[data-lite] .research-feat .noimg,[data-lite] .fr-card img,[data-lite] .livedock,[data-lite] .story img.lede,[data-lite] .story div.lede,[data-lite] .photocredit,[data-lite] .embed,[data-lite] .qrbox,[data-lite] .livewrap,[data-lite] .story figure.lf{display:none!important}
 [data-lite] .hero-imgwrap{background:none;border-radius:0}
 [data-lite] .hero-overlay{position:static;padding:0;background:none}
-[data-lite] .hero-imgwrap.graphic .hero-overlay{background:none}
-[data-lite] .hero-imgwrap.graphic>a>img{filter:none}
 [data-lite] .hero-imgwrap>a>img{height:auto}
 [data-lite] .hero-overlay .label{color:var(--red)}
 [data-lite] .hero-overlay h2,[data-lite] .hero-overlay h2 a{color:var(--ink);text-shadow:none}
@@ -3506,7 +3546,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .card .ph{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
 .card .ph svg{width:44px;height:44px;opacity:.9}
 .card-body{padding:.75rem .9rem .95rem}
-.card .chip{font-size:.62rem;font-weight:800;color:var(--green-deep);text-transform:uppercase;letter-spacing:.07em;display:block}
+.card .chip{font-size:.62rem;font-weight:800;color:var(--sa,var(--green-deep));text-transform:uppercase;letter-spacing:.07em;display:block}
 [lang=ar] .card .chip{letter-spacing:0;font-size:.72rem}
 .card h3{font-family:var(--serif);font-weight:700;font-size:1.02rem;line-height:1.36;margin-top:.3rem}
 [lang=ar] .card h3{line-height:1.6}
@@ -3526,7 +3566,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .rowcard h3{font-family:var(--serif);font-weight:700;font-size:1.08rem;line-height:1.36;margin-top:.2rem}
 [lang=ar] .rowcard h3{line-height:1.6}
 .rowcard h3 a:hover{color:var(--red)}
-.rowcard .chip{font-size:.63rem;font-weight:800;color:var(--green-deep);text-transform:uppercase;letter-spacing:.07em;display:block}
+.rowcard .chip{font-size:.63rem;font-weight:800;color:var(--sa,var(--green-deep));text-transform:uppercase;letter-spacing:.07em;display:block}
 [lang=ar] .rowcard .chip{letter-spacing:0;font-size:.72rem}
 .rowcard .t{font-size:.72rem;color:var(--muted);font-weight:600;margin-top:.32rem;display:block}
 /* solo band: one story carries the section — bigger art, headline and dek */
@@ -3739,6 +3779,8 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .research-feat img,.research-feat .noimg{min-height:180px;order:-1}
   .hero-zone{grid-template-columns:1fr}
   .hero{border-inline-end:none;padding-inline-end:0}
+  .hero-imgwrap.split{grid-template-columns:1fr}
+  .hs-panel{padding:1.15rem 1rem;border-inline-start:0;border-block-start:4px solid var(--sa,var(--red))}
   .latest{position:static;top:auto}
   .grid,.grid.g3{grid-template-columns:repeat(2,minmax(0,1fr))}
   .rowcard img,.rowcard .ph{width:150px}
@@ -3787,11 +3829,11 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .hero-imgwrap>a{background:#141419;border-radius:var(--r);overflow:hidden}
   .hero-overlay{position:static;padding:.85rem 0 0;background:none}
   /* Static hero MUST neutralize every overlay skin at higher specificity
-     (owner report 2026-08-12: the .graphic gradient bled into the static
+     (owner report 2026-08-12: a hero-overlay gradient bled into the static
      headline and faded it). Any future .hero-overlay skin needs its
-     neutralizer added here AND in the [data-lite] block. */
-  .hero-imgwrap.graphic .hero-overlay{background:none}
-  .hero-imgwrap.graphic>a>img{filter:none}
+     neutralizer added here AND in the [data-lite] block. The split hero
+     (.hero-imgwrap.split, 2026-09-01) keeps its own stacked ink panel on
+     phones — it never uses .hero-overlay, so nothing to neutralize. */
   .hero-imgwrap>a>img{height:auto}
   .hero-overlay .label{color:var(--red)}
   .hero-overlay h2,.hero-overlay h2 a{color:var(--ink);text-shadow:none}
@@ -3811,6 +3853,46 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 # Dark rules, written once. They apply under the system's dark scheme unless
 # the reader forced light, AND whenever the reader forced dark — the theme
 # toggle stores its choice as html[data-theme] (owner request 2026-08-03).
+# ── Section accent system (owner-approved design pass 2026-09-01) ──
+# A restrained per-section identity: the flagship sections and standing desks
+# carry their own muted newspaper tone on kickers, section-head bars and the
+# small-thumb tiles; every other section keeps the house green. Values are
+# (light, dark): dark variants lift lightness so chip text stays readable on
+# the charcoal theme. The palette is recorded in editorial/design-system.md
+# §2 (charter rule: no new hex family without a doc entry).
+SECTION_ACCENTS = {
+    "gaza":           ("#8a1f2d", "#e0808c"),
+    "westbank":       ("#566229", "#aebf6e"),
+    "pal48":          ("#00602f", "#5fbf8f"),
+    "prisoners":      ("#474252", "#a9a3ba"),
+    "politics":       ("#3d4f6b", "#93a9cc"),
+    "israelipress":   ("#274a63", "#7fa8c7"),
+    "uspress":        ("#58426e", "#b39ecc"),
+    "women":          ("#7d3457", "#d189ad"),
+    "economy":        ("#8a6d2f", "#cdb272"),
+    "arabaid":        ("#1f6e63", "#6fbdb1"),
+    "health":         ("#2c6e8a", "#7fbcd6"),
+    "accountability": ("#703a12", "#c98d5c"),
+}
+
+
+def accent_class(cat):
+    return f" sa-{cat}" if cat in SECTION_ACCENTS else ""
+
+
+def accent_css():
+    """Light-theme tokens + the per-section scope classes."""
+    root = "".join(f"--sa-{c}:{lv};" for c, (lv, _) in SECTION_ACCENTS.items())
+    scopes = "".join(f".sa-{c}{{--sa:var(--sa-{c})}}" for c in SECTION_ACCENTS)
+    return f":root{{{root}}}\n{scopes}"
+
+
+def accent_dark_css():
+    """Dark-theme overrides — added to _DARK_RULES so the 🌙 toggle sees them."""
+    return "".join(f".sa-{c}{{--sa:{dv}}}"
+                   for c, (_, dv) in SECTION_ACCENTS.items())
+
+
 _DARK_RULES = """
 :root{--paper:#121417;--card:#1a1d22;--ink:#e8eaed;--muted:#a3a8b2;--line:#2a2e35;--line-dark:#3f454e;--red:#d43049}
 .masthead h1,.masthead .wordmark,.sec-head h2,.latest h2,.story h1,.card h3,.rowcard h3,.sub-body h3,.research-feat h3,.op-card h3{color:var(--ink)}
@@ -3849,6 +3931,19 @@ def _scope_dark(scope):
         out.append(f"{scoped}{{{body}}}")
     return "".join(out)
 
+
+# Attach the generated accent rules BEFORE the dark wrap below, so the
+# variants ride both emissions of _DARK_RULES (media query + the 🌙
+# toggle's [data-theme=dark]). Tile grounds keep the deep light-theme
+# value in both schemes so the ivory initial always sits on a dark
+# ground; [class*=sa-] out-specifies the flat dark-mode chip mint.
+CSS += ("\n" + accent_css()
+        + "".join(f".tile.sa-{c}{{background:{lv}}}"
+                  for c, (lv, _) in SECTION_ACCENTS.items()))
+_DARK_RULES += (accent_dark_css()
+                + ".card .chip[class*=sa-],.rowcard .chip[class*=sa-],"
+                  ".sub-body .chip[class*=sa-],.latest .s[class*=sa-]"
+                  "{color:var(--sa)}")
 
 CSS = CSS.replace("%%DARK%%",
                   "@media(prefers-color-scheme:dark){"
@@ -4163,6 +4258,74 @@ def lede_fallback_attrs(it):
             "this.classList.add('boxy')\""
             f" onerror=\"this.onerror=null;this.src='/media/{cover}'\"")
 
+
+
+def _is_house_svg(image):
+    s = str(image or "")
+    return s.startswith("/media/") and s.endswith(".svg")
+
+
+def file_day_label(tf, lang, today):
+    """A running file's live counter (design pass 2026-09-01): DAY N since a
+    dated event (`since`), or N-days-to-go before one (`until`). Recomputed
+    every build — the strip is alive by construction. ASCII digits in the
+    house mono, per the numerals convention. Empty string when the file has
+    no date or the date fails to parse (fail-open: the chip still renders,
+    just without a counter)."""
+    try:
+        if tf.get("since"):
+            d = (today - datetime.fromisoformat(tf["since"]).date()).days + 1
+            if d >= 1:
+                return f"اليوم {d}" if lang == "ar" else f"DAY {d}"
+        if tf.get("until"):
+            d = (datetime.fromisoformat(tf["until"]).date() - today).days
+            if d >= 0:
+                return (f"بعد {d} أيام" if d <= 10 else f"بعد {d} يوماً") \
+                    if lang == "ar" else f"{d} DAYS"
+    except Exception:
+        pass
+    return ""
+
+
+def files_strip_html(lang, built_at):
+    """RUNNING FILES band (owner-approved design pass 2026-09-01): the
+    paper's standing files — the Barakat case, Qusra, The Hague — surfaced
+    on the front as chips with live day counters, instead of living only in
+    the footer. Renders only hubs that actually shipped this build."""
+    hubs = TOPIC_HUBS_LIVE.get(lang) or []
+    if not hubs:
+        return ""
+    label = "ملفات متابعة" if lang == "ar" else "RUNNING FILES"
+    chips = []
+    for tf, _hits in hubs:
+        day = file_day_label(tf, lang, built_at.date())
+        daytag = f'<span class="d">{day}</span>' if day else ""
+        chips.append(f'<a class="fs-chip" href="topic-{tf["slug"]}.html">'
+                     f'<b>{esc(tf[lang]["name"])}</b>{daytag}</a>')
+    return (f'<section class="files-strip" aria-label="{esc(label)}">'
+            f'<div class="wrap"><span class="fs-label">{label}</span>'
+            f'{"".join(chips)}</div></section>')
+
+
+def thumb_tile(it, lang, pfx, cls):
+    """Small-thumb stand-in for house SVG covers (design pass 2026-09-01):
+    a 1600×900 art board shrunk to rail size reads as a dark blob, so rails
+    show a flat section tile — accent ground, the section's initial letter —
+    while photographs keep their photo thumbs."""
+    sections = STR[lang]["sections"]
+    name = sections.get(it["cat"], sections["news"]).strip()
+    if lang == "ar" and name.startswith("ال") and len(name) > 3:
+        # skip the definite article so tiles show the distinctive letter
+        # (الصحافة → ص, الثقافة → ث) instead of a wall of alefs
+        name = name[2:]
+    letter = name[0] if name else "•"
+    return (f'<a class="{cls} tile{accent_class(it["cat"])}" '
+            f'href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
+            f'<span>{esc(letter)}</span></a>')
+
+
+
+
 def card_media(it, pfx):
     """Image if we have one; otherwise a branded flag panel — never an empty column."""
     if it["image"]:
@@ -4176,7 +4339,7 @@ def card(it, lang, pfx):
     # featured report, and the story pages — mixed previews in a grid look broken.
     return (f'<article class="card">{card_media(it, pfx)}'
             f'<div class="card-body">'
-            f'<span class="chip">{esc(card_kicker(it, lang))}</span>'
+            f'<span class="chip{accent_class(it["cat"])}">{esc(card_kicker(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'{time_tag(it["date"], lang, "t", fresh=True)}'
             f'</div></article>')
@@ -4189,7 +4352,7 @@ def rowcard(it, lang, pfx, solo=False):
            if solo and it.get("dek") else "")
     cls = "rowcard solo" if solo else "rowcard"
     return (f'<article class="{cls}">{card_media(it, pfx)}'
-            f'<div><span class="chip">{esc(card_kicker(it, lang))}</span>'
+            f'<div><span class="chip{accent_class(it["cat"])}">{esc(card_kicker(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>{dek}'
             f'{time_tag(it["date"], lang, "t", fresh=True)}</div></article>')
 
@@ -4200,13 +4363,17 @@ def op_card(it, lang, pfx):
             f'{meta_line(it, lang)}</article>')
 
 def sub_item(it, lang, pfx):
-    thumb = (f'<a class="sub-thumb" href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
-             f'<img src="{esc(it["image"])}" alt="" loading="lazy" decoding="async"{lede_fallback_attrs(it)}></a>'
-             if it["image"] else '')
+    if it["image"] and _is_house_svg(it["image"]):
+        thumb = thumb_tile(it, lang, pfx, "sub-thumb")
+    elif it["image"]:
+        thumb = (f'<a class="sub-thumb" href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
+                 f'<img src="{esc(it["image"])}" alt="" loading="lazy" decoding="async"{lede_fallback_attrs(it)}></a>')
+    else:
+        thumb = ''
     return (f'<article class="sub-item">'
             f'{thumb}'
             f'<div class="sub-body">'
-            f'<span class="chip">{esc(card_kicker(it, lang))}</span>'
+            f'<span class="chip{accent_class(it["cat"])}">{esc(card_kicker(it, lang))}</span>'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
             f'{time_tag(it["date"], lang, "t", fresh=True)}'
             f'</div></article>')
@@ -4215,16 +4382,24 @@ def latest_item(it, lang, pfx):
     """Live-wire timeline entry: a marker dot on a vertical rule (pulsing while
     the story is under 90 minutes old), a thumbnail when the story has art, and
     a relative timestamp that _CLOCK_JS keeps ticking between rebuilds."""
-    mark = '<span class="orig">TOP</span>' if it.get("original") else ""
+    # The TOP badge marks our own reporting, but a rail where every row says
+    # TOP says nothing (owner design review 2026-09-01): only the first
+    # original in the rail carries it — the .s section label does the rest.
+    mark = ('<span class="orig">TOP</span>'
+            if it.get("original") and it.get("_first_orig") else "")
     cls = ' class="fresh"' if is_fresh(it["date"]) else ""
-    thumb = (f'<a class="lt-thumb" href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
-             f'<img src="{esc(it["image"])}" alt="" loading="lazy" decoding="async" '
-             f'referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>'
-             if it["image"] else "")
+    if it["image"] and _is_house_svg(it["image"]):
+        thumb = thumb_tile(it, lang, pfx, "lt-thumb")
+    elif it["image"]:
+        thumb = (f'<a class="lt-thumb" href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
+                 f'<img src="{esc(it["image"])}" alt="" loading="lazy" decoding="async" '
+                 f'referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>')
+    else:
+        thumb = ""
     return (f'<li{cls}><div class="lt-body">'
             f'{time_tag(it["date"], lang, "t", fresh=True)}{mark}'
             f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
-            f'<span class="s">{esc(card_kicker(it, lang))}</span></div>'
+            f'<span class="s{accent_class(it["cat"])}">{esc(card_kicker(it, lang))}</span></div>'
             f'{thumb}</li>')
 
 # ---------- page ----------
@@ -4918,7 +5093,7 @@ def render_page(lang, items, built_at):
         viewall = (f'<a class="viewall" href="section-{k}.html">{t["view_all"]}</a>'
                    if k in cats_present else "")
         section_blocks += (f'<section class="block" id="{k}"><div class="wrap">'
-                           f'<div class="sec-copy"><div class="sec-head{focus_cls}"><h2>{esc(t["sections"][k])}</h2><span class="rule"></span>{viewall}</div>{section_meta(sections[k], lang)}</div>'
+                           f'<div class="sec-copy"><div class="sec-head{focus_cls}{accent_class(k)}"><h2>{esc(t["sections"][k])}</h2><span class="rule"></span>{viewall}</div>{section_meta(sections[k], lang)}</div>'
                            + (('<p class="social-note">' + ("تقارير عامة من صحفيين مواطنين وشهود على الأرض. لا يُنشر أي تقرير حساس قبل موافقة محرر بشري على نسخته المحددة. " if lang == "ar" else "Public dispatches from citizen journalists and witnesses. Sensitive reports publish only after a human editor approves the exact version. ") + '<a href="#tips">' + ("أرسل تقريرك عبر خط «سيغنال» الآمن ←" if lang == "ar" else "Send yours via the secure Signal line →") + "</a></p>") if k == "social" else "") + f'{featured}{grid}</div></section>')
 
     opinion_block = ""
@@ -4931,14 +5106,6 @@ def render_page(lang, items, built_at):
     hero_html = ""
     if hero:
         hero_dek = f'<p class="dek">{summary_html(hero["dek"])}</p>' if hero["dek"] else ""
-        # House graphics carry their own internal titles; at hero size that
-        # text fights the page headline (and on /ar/ the artwork's English
-        # reads first). The .graphic treatment dims the image to a texture
-        # and deepens the scrim so the overlay headline owns the frame
-        # (owner visual sweep 2026-08-11).
-        _hero_graphic = (" graphic"
-                         if str(hero.get("image", "")).startswith("/media/")
-                         and str(hero.get("image", "")).endswith(".svg") else "")
         # When category art does lead (no photo-led candidate), the hero uses
         # the TEXT-FREE plate of the same cover — the art's big section word
         # otherwise repeats the kicker right above the headline (visual audit
@@ -4946,19 +5113,42 @@ def render_page(lang, items, built_at):
         _hsrc = str(hero.get("image") or "")
         if re.match(r"^/media/times-of-palestine-cover-[a-z-]+\.svg$", _hsrc):
             _hsrc = _hsrc[:-4] + "-hero.svg"
-        hero_html = (
-            f'<div class="hero-imgwrap{_hero_graphic}">'
-            f'<a href="{href(hero, P)}"><img src="{esc(_hsrc)}" alt="{esc(hero["title"])}" width="1200" height="675" loading="eager" fetchpriority="high"{lede_fallback_attrs(hero)}></a>'
-            f'<div class="hero-overlay">'
-            f'<p class="label">{t["hero_label"]}</p>'
-            f'<h2><a href="{href(hero, P)}">{esc(hero["title"])}</a></h2>'
-            f'{meta_line(hero, lang)}'
-            f'</div></div>'
-            f'{media_credit(hero, lang)}'
-            f'{hero_dek}'
-        )
+        if _is_house_svg(hero.get("image")):
+            # SPLIT hero for house-SVG art (owner-approved design pass
+            # 2026-09-01, replacing the dim-and-scrim .graphic treatment):
+            # the covers carry their own display type, so overlaying the
+            # page headline stacked three layers of text. The art now sits
+            # beside an ink panel that owns the headline — no collision,
+            # and photo-led heroes keep the cinematic overlay below.
+            hero_html = (
+                f'<div class="hero-imgwrap split{accent_class(hero["cat"])}">'
+                f'<a class="hs-art" href="{href(hero, P)}"><img src="{esc(_hsrc)}" alt="{esc(hero["title"])}" width="1200" height="675" loading="eager" fetchpriority="high"{lede_fallback_attrs(hero)}></a>'
+                f'<div class="hs-panel">'
+                f'<p class="label">{t["hero_label"]}</p>'
+                f'<h2><a href="{href(hero, P)}">{esc(hero["title"])}</a></h2>'
+                f'{meta_line(hero, lang)}'
+                f'</div></div>'
+                f'{media_credit(hero, lang)}'
+                f'{hero_dek}'
+            )
+        else:
+            hero_html = (
+                f'<div class="hero-imgwrap">'
+                f'<a href="{href(hero, P)}"><img src="{esc(_hsrc)}" alt="{esc(hero["title"])}" width="1200" height="675" loading="eager" fetchpriority="high"{lede_fallback_attrs(hero)}></a>'
+                f'<div class="hero-overlay">'
+                f'<p class="label">{t["hero_label"]}</p>'
+                f'<h2><a href="{href(hero, P)}">{esc(hero["title"])}</a></h2>'
+                f'{meta_line(hero, lang)}'
+                f'</div></div>'
+                f'{media_credit(hero, lang)}'
+                f'{hero_dek}'
+            )
 
     hero_subs_html = "".join(sub_item(it, lang, P) for it in hero_subs)
+    for _it in latest:  # only the rail's first original carries the TOP badge
+        if _it.get("original"):
+            _it["_first_orig"] = True
+            break
     latest_html = "".join(latest_item(it, lang, P) for it in latest)
     # Machine-readable front page (audit 2026-08-07 P2; owner-forwarded review
     # 2026-08-10): an ItemList of the top stories exactly as the page ranks
@@ -5052,6 +5242,7 @@ def render_page(lang, items, built_at):
       <ol>{latest_html}</ol>
     </aside>
   </div>
+  {files_strip_html(lang, built_at)}
   {specials_band}{gaza_panel}
   {on_this_day_html(lang, built_at)}
   {opinion_block}
@@ -5579,7 +5770,7 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 </div></header>
 {interior_nav_html(lang)}
 <main class="wrap sectionpage" id="top">
-  <div class="sec-head focus"><h2>{esc(name)}</h2><span class="rule"></span><span class="count">{count_label}</span></div>
+  <div class="sec-head focus{accent_class(cat)}"><h2>{esc(name)}</h2><span class="rule"></span><span class="count">{count_label}</span></div>
   <div class="grid g4">{cards}</div>
   {more_html}
 </main>
