@@ -6,6 +6,24 @@
    "article": "https://www.aljazeera.net/news/2026/9/1/%d8%a3%d8%ad%d8%b1%d9%82%d9%88%d8%a7-%d9%85%d8%af%d8%ae%d9%84%d9%87-%d9%88%d9%87%d8%af%d8%af%d9%88%d8%a7-%d8%a8%d9%82%d8%aa%d9%84-%d8%a7%d9%84%d8%b9%d8%b1%d8%a8?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428627",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/%d9%85%d8%b3%d8%aa%d9%88%d8%b7%d9%86%d9%88%d9%86-%d9%8a%d8%ad%d8%a7%d9%88%d9%84%d9%88%d9%86-%d8%a5%d8%ad%d8%b1%d8%a7%d9%82-%d9%85%d8%b3%d8%ac%d8%af-%d9%81%d9%8a-%d8%a8%d8%b2%d8%a7%d8%b1%d9%8a%d8%a7",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/733314",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
    "verified": false
   }
  ],
@@ -24,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "d958352d11",
- "score": 60.37,
+ "score": 59.93,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
