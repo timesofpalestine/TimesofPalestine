@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/israel-continues-to-kill-civilians-and-destroy-homes-and-civilian-objects-in-gaza-as-part-of-its-ongoing-genocide",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-army-kills-five-palestinians-in-gaza-2",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-30T18:45:24+00:00",
@@ -30,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "64b9d81f8f",
- "score": 83.33,
+ "score": 83.3,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",

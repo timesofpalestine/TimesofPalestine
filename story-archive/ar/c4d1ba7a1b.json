@@ -1,0 +1,32 @@
+{
+ "brief": "أفادت قناة غزة الآن عبر تيليغرام بوصول عدد إضافي من المصابين إلى مجمع الشفاء الطبي في غزة. ولم تتضمن التحديثات الإعلامية تفاصيل عن أعداد الوافدين أو الإصابات التي يعانون منها أو الظروف المحيطة بنقلهم للمجمع.\n\nيعتبر مجمع الشفاء أكبر منشأة طبية في قطاع غزة ويستقبل أعداداً كبيرة من الجرحى والمصابين بشكل مستمر في ظل الأوضاع الإنسانية الحرجة التي يشهدها القطاع.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82564",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-01T08:01:36+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82564",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c4d1ba7a1b",
+ "score": 47.85,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "مصابون جدد يصلون مجمع الشفاء الطبي بغزة"
+}
