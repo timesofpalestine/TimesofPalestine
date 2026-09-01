@@ -1328,9 +1328,12 @@ class StandingFlagTests(unittest.TestCase):
             "image": "/media/y.svg", "score": 60,
             "max_age_hours": 999999, "standing": True})
         homepage = build.render_page("en", [fresh_news, guide], built_at)
-        overlay = homepage.split('hero-overlay', 1)[1][:400]
-        self.assertIn("Israeli forces raid a Gaza district", overlay)
-        self.assertNotIn("maps scholarships", overlay)
+        # SVG-led fixture art renders the split hero (design pass
+        # 2026-09-01); photo art keeps the overlay — bound the hero block
+        # by structure, not by which skin rendered.
+        hero_zone = homepage.split('hero-imgwrap', 1)[1].split('hero-sub', 1)[0]
+        self.assertIn("Israeli forces raid a Gaza district", hero_zone)
+        self.assertNotIn("maps scholarships", hero_zone)
 
 
 class LatestRailTests(unittest.TestCase):

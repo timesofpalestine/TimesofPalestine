@@ -56,11 +56,18 @@ class HeroStaticNeutralizerTest(unittest.TestCase):
             "reset the hero image to height:auto so dimension attributes "
             "never dictate layout there")
 
-    def test_the_graphic_skin_exists(self):
-        # Guard the guard: if the skin is renamed, the variant scan above
-        # must still see it — this catches a rename that would silently
-        # empty _skin_variants and turn the suite green by vacuity.
-        self.assertIn("graphic", self._skin_variants())
+    def test_graphic_skin_stays_retired_and_split_hero_stays_static_safe(self):
+        # The .graphic dim-and-scrim skin was retired by the split hero
+        # (owner-approved design pass 2026-09-01) — house-SVG art now sits
+        # BESIDE an ink panel instead of under a dimmed overlay, so there
+        # is no overlay skin left to neutralize. Guard the replacement the
+        # same way: the split hero must never route through .hero-overlay
+        # (that would re-enter the bleed-prone path this file polices), and
+        # lite mode must hide its art and flatten its panel.
+        self.assertNotIn("graphic", self._skin_variants())
+        self.assertNotIn(".hero-imgwrap.split .hero-overlay", build.CSS)
+        self.assertIn("[data-lite] .hs-art{display:none!important}", build.CSS)
+        self.assertIn("[data-lite] .hs-panel{padding:0;border:0}", build.CSS)
 
 
 if __name__ == "__main__":
