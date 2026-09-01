@@ -19,6 +19,12 @@
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/392428",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": false
   }
  ],
  "date": "2026-09-01T06:16:00+00:00",
@@ -36,7 +42,7 @@
  "modified": null,
  "original": false,
  "pid": "6043a349ca",
- "score": 49.76,
+ "score": 49.5,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
