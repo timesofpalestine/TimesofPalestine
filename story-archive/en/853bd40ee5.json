@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli airstrikes struck the al-Kateeba district west of Gaza City, killing at least four people including children and wounding several others, Al Jazeera English reported. The residential neighborhood came under fire in what marked another round of violence in the enclave.\n\nThe attack left multiple casualties in the al-Kateeba area, a populated zone west of Gaza City. Rescue teams responded to the strike as details of the incident emerged from the affected district.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/1/israeli-attacks-on-gaza-kill-at-least-four-including-children?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/least-three-killed-israeli-attacks-gaza-including-children-and-woman",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-01T09:48:07+00:00",
+ "dek": "At least three killed and several wounded in an Israeli air attack in the al-Kateeba district west of Gaza City.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-08-31T123126Z_30926163_RC2O9NAYONHQ_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-1788252205.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/1/israeli-attacks-on-gaza-kill-at-least-four-including-children?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/1/israeli-attacks-on-gaza-kill-at-least-four-including-children?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "853bd40ee5",
+ "score": 63.56,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli airstrikes kill at least four in Gaza, including children"
+}

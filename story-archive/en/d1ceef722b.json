@@ -1,0 +1,44 @@
+{
+ "brief": "Israeli-backed militias attempted to carry out an operation in western Gaza, according to Maan Wire. The reported activity involved forces supported by the Israeli military conducting operations in the region west of the coastal enclave.\n\nThe circumstances surrounding the attempted operation, including its specific objectives, duration, and outcome, remained unclear. Maan Wire's report included photographic documentation of the incident, though additional details about the nature of the military activity were not immediately disclosed.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167948.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163273/%D9%85%D9%87%D9%85%D8%A9-%D8%A3%D9%85%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D9%86%D9%83%D8%B4%D9%81-%D8%BA%D8%B1%D8%A8%D9%8A-%D8%BA%D8%B2%D8%A9-4%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D8%A8%D9%8A%D9%86%D9%87%D9%85-%D8%B7%D9%81%D9%84%D8%A7%D9%86-%D9%88%D8%B3%D9%8A%D8%AF%D8%A9-%D9%888-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-kills-five-palestinians-in-gaza-2",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-01T10:03:47+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/h8On08SlExx1-acMJsym42G7BCvnQa1ETOvL292H6OBWt3upmEU6MRnuZoyomnbbV9gpdEc1pVijZ8tKBlExwi-yBfZq6Pxkn4taEldNqy8bVSdDOUN4js7_S7r-L994dCnbfn29BHzCnOSWGjTcdYLuUG3pGbsCUDI_Ejd_vc1XG4u7TsMr9-KnTBzQyFT98ADihsBCyjI-HV7nI1ji6RQseteD4Uh14K9WzxZCOm6o0bXkkLiSyPOeBsiqLNreQTUOc1gAdfv3IkhptTAv4_lpitmLzi2CzX4POjVWj5R0l4ic8lGuxcd1d_bFlP1nMPvbxvpKcbdvRZ32Xv52fg.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2167948.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167948.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d1ceef722b",
+ "score": 49.74,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli-backed militias attempt operation west of Gaza"
+}
