@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Two directions of American pressure, 1 September 2026</title>
+  <desc id="desc">A bilingual comparison board. On Iran, Washington acts: a naval blockade since 13 April 2026, the strike on Larak Island on 30 August, and President Trump's public threat against the Kharg Island oil terminal. On Israeli settlements, Washington watches: Israel's 18 August tender for 1,234 homes in E1, the January 2025 revocation of American settler sanctions, and the Trump administration's close tracking of Britain's planned settlement goods ban. Four figures follow: Brent crude at 91.28 dollars a barrel on 1 September, Kharg's 94 percent share of Iranian crude exports, 3.3 billion dollars in military grants for Israel in the House FY26 bill, and no funds earmarked for the West Bank and Gaza in the same bill.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="split" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a1f2d"/>
+      <stop offset=".5" stop-color="#c7a86b"/>
+      <stop offset="1" stop-color="#286344"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:16px}
+      .small{font-size:19px}
+      .body{font-size:22px}
+      .label{font-size:17px;font-weight:800;letter-spacing:1.2px}
+      .figure{font-size:44px;font-weight:800}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="80" y="76" class="serif ivory" font-size="46" font-weight="800">Two directions of American pressure</text>
+  <text x="80" y="120" class="sans muted body">1 September 2026. What Washington is willing to act on, and what it only watches.</text>
+  <text x="1520" y="164" class="arabic ivory" font-size="36" font-weight="800" text-anchor="end">اتجاهان للضغط الأميركي</text>
+  <text x="1520" y="197" class="arabic muted small" text-anchor="end">1 أيلول/سبتمبر 2026: ما تتحرك فيه واشنطن.. وما تكتفي بمتابعته</text>
+
+  <line x1="80" y1="232" x2="1520" y2="232" stroke="url(#split)" stroke-width="5" stroke-linecap="round"/>
+
+  <g filter="url(#shadow)">
+    <rect x="80" y="262" width="700" height="346" rx="18" fill="#27282c" stroke="#8a1f2d" stroke-width="3"/>
+    <text x="108" y="302" class="sans red label">ON IRAN — WASHINGTON ACTS</text>
+    <text x="756" y="302" class="arabic red label" text-anchor="end">في الملف الإيراني.. واشنطن تتحرك</text>
+
+    <text x="108" y="348" class="sans ivory small" font-weight="700">13 April — the blockade</text>
+    <text x="108" y="374" class="sans muted tiny">The US Navy closes Iran's ports after the Islamabad talks fail.</text>
+    <text x="756" y="400" class="arabic muted tiny" text-anchor="end">حصار بحري أميركي على الموانئ الإيرانية منذ 13 نيسان/أبريل</text>
+
+    <text x="108" y="444" class="sans ivory small" font-weight="700">30 August — the strike</text>
+    <text x="108" y="470" class="sans muted tiny">CENTCOM hits two Revolutionary Guard launchers on Larak Island.</text>
+    <text x="756" y="496" class="arabic muted tiny" text-anchor="end">القيادة المركزية تقصف منصتي إطلاق في جزيرة لارك</text>
+
+    <text x="108" y="540" class="sans ivory small" font-weight="700">30–31 August — the threat</text>
+    <text x="108" y="566" class="sans muted tiny">Trump posts a video of Kharg burning; Vance calls it a message.</text>
+    <text x="756" y="592" class="arabic muted tiny" text-anchor="end">ترامب ينشر مقطعا لقصف جزيرة خرج.. وفانس: إنها رسالة</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="820" y="262" width="700" height="346" rx="18" fill="#27282c" stroke="#286344" stroke-width="3"/>
+    <text x="848" y="302" class="sans green label">ON SETTLEMENTS — WASHINGTON WATCHES</text>
+    <text x="1496" y="302" class="arabic green label" text-anchor="end">في ملف الاستيطان.. واشنطن تتابع</text>
+
+    <text x="848" y="348" class="sans ivory small" font-weight="700">18 August — the tender</text>
+    <text x="848" y="374" class="sans muted tiny">Israel opens bidding for 1,234 homes in E1, east of Jerusalem.</text>
+    <text x="1496" y="400" class="arabic muted tiny" text-anchor="end">إسرائيل تطرح عطاء 1234 وحدة استيطانية في E1 شرقي القدس</text>
+
+    <text x="848" y="444" class="sans ivory small" font-weight="700">January 2025 — the tool withdrawn</text>
+    <text x="848" y="470" class="sans muted tiny">Trump revokes the settler sanctions; 17 people, 9 entities delisted.</text>
+    <text x="1496" y="496" class="arabic muted tiny" text-anchor="end">ترامب يلغي عقوبات المستوطنين وتشطب الخزانة 17 اسما و9 كيانات</text>
+
+    <text x="848" y="540" class="sans ivory small" font-weight="700">31 August — the watching brief</text>
+    <text x="848" y="566" class="sans muted tiny">Britain prepares a settlement goods ban; Washington tracks it closely.</text>
+    <text x="1496" y="592" class="arabic muted tiny" text-anchor="end">بريطانيا تُعدّ حظرا لبضائع المستوطنات وواشنطن تتابع عن كثب</text>
+  </g>
+
+  <text x="80" y="648" class="sans gold label">THE FIGURES UNDER BOTH FILES</text>
+  <text x="1520" y="648" class="arabic gold label" text-anchor="end">الأرقام تحت الملفين</text>
+
+  <g filter="url(#shadow)">
+    <rect x="80" y="666" width="300" height="170" rx="16" fill="#232427" stroke="#3a3b3f" stroke-width="2"/>
+    <text x="104" y="726" class="serif ivory figure">$91.28</text>
+    <text x="104" y="760" class="sans muted tiny">Brent crude a barrel on</text>
+    <text x="104" y="782" class="sans muted tiny">1 September, up 9% in a month</text>
+    <text x="356" y="816" class="arabic muted tiny" text-anchor="end">سعر برميل برنت في 1 أيلول/سبتمبر</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="460" y="666" width="300" height="170" rx="16" fill="#232427" stroke="#3a3b3f" stroke-width="2"/>
+    <text x="484" y="726" class="serif ivory figure">94%</text>
+    <text x="484" y="760" class="sans muted tiny">of Iran's crude exports ship</text>
+    <text x="484" y="782" class="sans muted tiny">from Kharg, Kpler estimates</text>
+    <text x="736" y="816" class="arabic muted tiny" text-anchor="end">حصة جزيرة خرج من صادرات النفط الإيراني</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="840" y="666" width="300" height="170" rx="16" fill="#232427" stroke="#3a3b3f" stroke-width="2"/>
+    <text x="864" y="726" class="serif ivory figure">$3.3bn</text>
+    <text x="864" y="760" class="sans muted tiny">military grants for Israel in</text>
+    <text x="864" y="782" class="sans muted tiny">the House FY26 spending bill</text>
+    <text x="1116" y="816" class="arabic muted tiny" text-anchor="end">منح عسكرية لإسرائيل في موازنة مجلس النواب</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1220" y="666" width="300" height="170" rx="16" fill="#232427" stroke="#3a3b3f" stroke-width="2"/>
+    <text x="1244" y="726" class="serif ivory figure">Nothing</text>
+    <text x="1244" y="760" class="sans muted tiny">earmarked for the West Bank</text>
+    <text x="1244" y="782" class="sans muted tiny">or Gaza; UNRWA barred outright</text>
+    <text x="1496" y="816" class="arabic muted tiny" text-anchor="end">لا مخصصات للضفة وغزة.. وحظر تام على الأونروا</text>
+  </g>
+
+  <text x="80" y="872" class="sans muted tiny">Times of Palestine · Washington Brief, 1 September 2026 · CENTCOM, the State Department, OFAC, Peace Now, Kpler, the Foundation for Middle East Peace</text>
+  <text x="1520" y="872" class="arabic muted tiny" text-anchor="end">تايمز أوف فلسطين · موجز واشنطن</text>
+</svg>
