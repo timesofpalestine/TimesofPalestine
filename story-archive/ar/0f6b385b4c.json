@@ -6,19 +6,7 @@
    "article": "https://www.maannews.net/news/2167901.html",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://qudsn.co/post?id=217319&slug=%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-2026-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%AF%D8%B4%D9%86-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%81%D9%8A-%D8%AC%D9%86%D9%8A%D9%86",
-   "name": "شبكة قدس الإخبارية",
-   "url": "https://qudsn.co/",
-   "verified": true
-  },
-  {
-   "article": "https://www.pbc.ps/878-169",
-   "name": "تلفزيون فلسطين",
-   "url": "https://www.pbc.ps/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-08-31T10:46:58+00:00",
@@ -36,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "0f6b385b4c",
- "score": 37.86,
+ "score": 37.63,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
