@@ -1,0 +1,44 @@
+{
+ "brief": "بحسب وكالة معاً، حاولت ميليشيات مدعومة من جيش الاحتلال تنفيذ عملية عسكرية في المناطق الغربية من قطاع غزة. ووثّقت الوكالة المهمة عبر صور التقطتها من موقع العملية، إذ أظهرت الصور تحركات الميليشيات في المنطقة المستهدفة.\n\nلا تتوفر في الوقت الراهن تفاصيل شاملة عن نطاق العملية وأهدافها المباشرة، في حين لم يُعلن حتى الآن عن أي إصابات بين السكان المدنيين أو خسائر عسكرية على الطرفين.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2167948.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  },
+  {
+   "article": "https://t.me/Palinfo/318725",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/733288",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-01T10:03:47+00:00",
+ "dek": "",
+ "image": "https://cdn4.telesco.pe/file/h8On08SlExx1-acMJsym42G7BCvnQa1ETOvL292H6OBWt3upmEU6MRnuZoyomnbbV9gpdEc1pVijZ8tKBlExwi-yBfZq6Pxkn4taEldNqy8bVSdDOUN4js7_S7r-L994dCnbfn29BHzCnOSWGjTcdYLuUG3pGbsCUDI_Ejd_vc1XG4u7TsMr9-KnTBzQyFT98ADihsBCyjI-HV7nI1ji6RQseteD4Uh14K9WzxZCOm6o0bXkkLiSyPOeBsiqLNreQTUOc1gAdfv3IkhptTAv4_lpitmLzi2CzX4POjVWj5R0l4ic8lGuxcd1d_bFlP1nMPvbxvpKcbdvRZ32Xv52fg.jpg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2167948.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "وكالة معا (حصري)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2167948.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d1ceef722b",
+ "score": 49.99,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "ميليشيات مدعومة من الاحتلال تشن عملية غرب غزة"
+}
