@@ -1,0 +1,38 @@
+{
+ "brief": "Israeli forces demolished homes in the occupied West Bank, according to Al Jazeera English, as the European Union weighed imposing restrictions on goods produced in Israeli settlements. The demolitions continued a pattern of house destruction that has accelerated in recent months, displacing Palestinian families and destroying property across multiple communities.\n\nThe EU's potential ban on settlement products coincides with escalating violence by Israeli settlers against Palestinian residents. Military operations by Israeli forces and coordinated attacks by settlers have created conditions of instability throughout the territory, with residents facing both forced displacement through demolitions and direct assault from settlers operating in contested areas.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/1/israeli-forces-raze-west-bank-homes-as-eu-weighs-ban-on-settlement-goods?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-escalation-continues-across-occupied-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-01T05:27:17+00:00",
+ "dek": "Pogroms in the occupied West Bank continue, with Israeli forces demolishing homes and settlers attacking residents.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/AP26243386449258-1788242602.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/1/israeli-forces-raze-west-bank-homes-as-eu-weighs-ban-on-settlement-goods?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/1/israeli-forces-raze-west-bank-homes-as-eu-weighs-ban-on-settlement-goods?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2d91b0f1c7",
+ "score": 49.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces demolish West Bank homes as EU considers settlement goods ban"
+}
