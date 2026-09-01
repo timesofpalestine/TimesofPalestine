@@ -125,7 +125,14 @@ land in a specific window.
 - **Displacement ledger refresh** (`west-bank-displacement-ledger` after
   its launch): new OCHA/OHCHR month numbers, villages added by name.
   Launched 2026-08-08 as `west-bank-displacement-ledger-2026-08-08-05.*`;
-  first monthly refresh due in the first week of September.
+  first monthly refresh due in the first week of September — **open as of
+  2026-09-01**, and it now has a peg: the New York Times of 31 August put
+  retired Israeli generals, Mossad and Shin Bet directors and two former
+  prime ministers on the record calling the same displacement ethnic
+  cleansing (covered today as `nyt-israeli-generals-ethnic-cleansing-2026-09-01.*`),
+  with 3,200+ Palestinians driven out in 2024 on the Times's figures. The
+  refresh takes the September OCHA/OHCHR numbers and names the villages
+  added since 8 August.
 - **Reconstruction-money tracker refresh** (`gaza-reconstruction-money`
   after its launch): pledges vs transfers vs rubble, dashboard updated.
 
@@ -183,7 +190,18 @@ land in a specific window.
     first half-year), Human Rights Watch's 5 August finding, the 7 and
     17 August ambulance attacks at Khalayel al-Louz and Tel Rumeida, and the
     ambulance held at Qusra on 29 August. Written as craft, not as grief.
-  - **week of Aug 31 - Sep 6 - open.**
+  - ✅ week of Aug 31 – Sep 6 — `sarah-aziza-hollow-half-2026-09-01.*`
+    (2026-09-01): the Palestinian-American writer named a 2026 United States
+    Artists Fellow in Writing ($50,000, unrestricted), the fourth honour for
+    "The Hollow Half: A Memoir of Bodies and Borders" (Catapult, April 2025;
+    paperback April 2026, 400 pages) after the Palestine Book Awards memoir
+    prize (2025), the Anisfield-Wolf Book Award for memoir (2026) and the
+    Lambda Literary nonfiction shortlist. Written in the celebratory register
+    the features order requires, around the book's own subject — three
+    generations out of 'Ibdis and Deir al-Balah, and the grandmother who
+    returns after the author's near-fatal hospitalisation in October 2019.
+    Filed the same day the humans section went stale at 52 hours in both
+    editions.
 - **Arabic-first commissioning:** 2–3 originals per month reported for the
   Arabic reader first (Arab Support and Her Story are the natural homes),
   then rendered into English.
@@ -301,6 +319,24 @@ land in a specific window.
     Real Lives profile shipped on category covers, so the share moved two
     points despite six conversions — the standing note holds, checking
     `media-rights.json` while writing is what lands a story photo-led.
+  - 2026-09-01: 165 cover-led of 400 originals at the start of the cycle
+    (photo-led share 0.588). Two already published reports converted to the
+    manifest-cleared Commons portrait of Ben Gvir, each keeping its category
+    cover as `imageFallback:` — `ben-gvir-damon-women-prisoners-2026-08-30`
+    and `ben-gvir-makassed-maternity-wing-2026-08-13`. Six of today's thirteen
+    originals shipped photo-led from the first build: the Gaza City raid
+    (Israel Katz), the Segalovitz–Ra'am item (Mansour Abbas), the Ben Gvir
+    schoolbook item (Ben Gvir), the NYT generals piece (Turmus Ayya), the
+    Qusra warrants report (Qusra village) and the Al-Quds index report (the
+    Palestine Trade Tower). One new manifest entry was needed: Mansour Abbas,
+    3 April 2025, David Shay / Wikimedia Commons, CC BY-SA 4.0 — now cleared
+    for the whole Ra'am and pal48 beat. Closing position 187 cover-led of 400
+    (share 0.532): seven of today's items — the two roundups, the Real Lives
+    profile, the schools strike, the women's file, the sports piece and the
+    diaspora file — had no cleared photograph of their subject and shipped on
+    category covers, so the share fell despite the conversions. The standing
+    note holds and is the only thing that keeps pace with the desks' daily
+    volume: check `media-rights.json` for a cleared portrait while writing.
 - ✅ **US-press wire feeds repaired 2026-08-11.** Four of the desk's
   think-tank feeds were dying on every sweep. CSIS and CFR now point at
   working endpoints, `israeli_press_fetch.py` resolves the HTML entities
