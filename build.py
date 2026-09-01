@@ -1928,6 +1928,11 @@ def write_brief(client, item):
             system=system,
             messages=convo,
         )
+        try:  # budget governor (owner order 2026-09-01) — never blocks the wire
+            import budget_ledger
+            budget_ledger.record("briefs", BRIEFS_MODEL, response.usage)
+        except Exception:
+            pass
         raw = "".join(b.text for b in response.content if b.type == "text").strip()
         text, new_title = raw, None
         if text.startswith("HEADLINE:"):
@@ -2287,6 +2292,11 @@ def _duplicate_verdict(client, a, b):
             model=BRIEFS_MODEL, max_tokens=8, system=DEDUPE_JUDGE_SYSTEM,
             messages=[{"role": "user",
                        "content": f"ITEM ONE\n{block(a)}\n\nITEM TWO\n{block(b)}"}])
+        try:  # budget governor — the judge rides the briefs allocation
+            import budget_ledger
+            budget_ledger.record("briefs", BRIEFS_MODEL, response.usage)
+        except Exception:
+            pass
         word = "".join(
             bk.text for bk in response.content if bk.type == "text").strip().upper()
     except Exception as exc:  # provider outage: the lexical verdict stands
@@ -6268,6 +6278,14 @@ def main():
                       "48h recycle fallback; queue new topics")
     except Exception as e:
         print(f"  ⚠ section freshness ledger failed open: {type(e).__name__}: {e}")
+    try:  # budget governor status (owner order 2026-09-01) — fail-open
+        import budget_ledger
+        _bline = budget_ledger.status_line()
+        print(f"  {_bline}")
+        if "⚠" in _bline:
+            print(f"::warning::{_bline}")
+    except Exception as e:
+        print(f"  ⚠ budget status failed open: {type(e).__name__}")
     print(f"\nBuilt dist/ — EN {len(en_items)} stories, AR {len(ar_items)} stories.")
     if not en_items and not ar_items:
         print("No items fetched from any feed — failing so the last good deploy stays live.")

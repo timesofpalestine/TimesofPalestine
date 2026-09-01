@@ -28,7 +28,26 @@ jobs:
         with:
           fetch-depth: 0
 
+      # Budget governor (owner order 2026-09-01): skip the cycle when the
+      # editor's allocation is ahead of its monthly pace — a skipped cycle
+      # costs a day of polish; a blown budget froze the whole paper for six
+      # days in August. The gate fails OPEN on script errors (exit != 3).
+      - name: Budget gate
+        id: budget
+        run: |
+          set +e
+          python3 budget_ledger.py --check editor
+          code=$?
+          set -e
+          if [ "$code" -eq 3 ]; then
+            echo "run=no" >> "$GITHUB_OUTPUT"
+            echo "::warning::daily editor paced out by the monthly API budget — skipping this cycle (see budget_ledger.py --status)"
+          else
+            echo "run=yes" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Run the editor-in-chief cycle
+        if: steps.budget.outputs.run == 'yes'
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -36,7 +55,7 @@ jobs:
           # errored instantly against this key on 2026-08-07. Full output stays on so
           # the next API-side failure is diagnosable from the run log.
           show_full_output: true
-          claude_args: '--model claude-opus-5 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"'
+          claude_args: '--model claude-opus-5 --max-turns 300 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"'
           prompt: |
             You are Claude, editor-in-chief of Times of Palestine
             (timesofpalestine.com), running your daily improvement cycle in this
@@ -227,3 +246,25 @@ jobs:
             and leave that part out of the merge. Finish by posting a short
             cadence note to issue #6: what shipped today and any story ideas
             for the other desks.
+
+      # Budget governor: record the run's actual cost (the action writes it
+      # to RUNNER_TEMP/claude-execution-output.json) into the committed
+      # ledger so the next gate paces against it. Fail-open — a recording
+      # failure never fails the cycle that already ran.
+      - name: Record API spend in the ledger
+        if: always() && steps.budget.outputs.run == 'yes'
+        run: |
+          COST=$(python3 -c "import json,os;p=os.path.join(os.environ.get('RUNNER_TEMP','/home/runner/work/_temp'),'claude-execution-output.json');d=json.load(open(p));evs=d if isinstance(d,list) else [d];print(round(max([float(e.get('total_cost_usd') or 0) for e in evs if isinstance(e,dict)]+[0.0]),4))" 2>/dev/null || echo 0)
+          echo "run cost: \$$COST"
+          if python3 -c "import sys; sys.exit(0 if float('$COST' or 0) > 0 else 1)"; then
+            git config user.name "Times of Palestine Newsdesk"
+            git config user.email "newsdesk@timesofpalestine.com"
+            for i in 1 2 3; do
+              git fetch origin main && git reset --hard origin/main
+              python3 budget_ledger.py --record-usd editor "$COST"
+              git add originals/_ledger.json
+              git commit -m "Record daily-editor API spend [skip ci]" || break
+              if git push origin HEAD:main; then break; fi
+              sleep $((i * 5))
+            done
+          fi

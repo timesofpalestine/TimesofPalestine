@@ -184,6 +184,24 @@ everything it builds:
    schedule. Corollary rule, binding on every agent: media SVGs never go
    to main without the test suite run locally first — that is the exact
    path that caused the freeze.
+12. **Budget governor (owner order 2026-09-01): the newsroom never goes over
+   its monthly API budget.** August's lesson: the org spend cap is a cliff —
+   hitting it froze EVERYTHING, wire included, for six days. The governor
+   (`budget_ledger.py` + `editorial/budget.json` + `originals/_ledger.json`)
+   replaces the cliff with pacing: every desk's estimated spend (list price
+   +10% safety) is recorded in the committed ledger, and the discretionary
+   desks — investigations, daily editor, Washington Brief, weekly
+   maintenance — SKIP a run when ahead of their allocation's linear monthly
+   pace. The briefs desk (the wire IS the paper) is never paced and stops
+   only at the hard ceiling (`hard_stop_fraction`, default 92%), which sits
+   below the real cap so the wire keeps last-resort headroom. THE OWNER'S
+   KNOB is `monthly_budget_usd` in `editorial/budget.json` — set at or just
+   below the org's actual Anthropic monthly limit. Degradation order when
+   money runs short: franchises and cycles skip days first, investigations
+   windows next, the wire last and only at the ceiling. No agent removes a
+   gate, records fake spend, or raises the budget number — that is the
+   owner's decision alone. `tests/test_budget_governor.py` pins the math
+   and the wiring.
 
 ## Division of labor (suggested, not exclusive)
 

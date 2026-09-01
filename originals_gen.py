@@ -330,6 +330,19 @@ def _call(client, system, messages, tools=None, max_tokens=32000):
         try:
             with client.messages.stream(**kwargs) as stream:
                 resp = stream.get_final_message()
+            try:  # budget governor — record the pass's estimated spend
+                import budget_ledger
+                _searches = 0
+                try:
+                    _searches = int(getattr(
+                        getattr(resp.usage, "server_tool_use", None),
+                        "web_search_requests", 0) or 0)
+                except Exception:
+                    pass
+                budget_ledger.record("investigations", MODEL, resp.usage,
+                                     web_searches=_searches)
+            except Exception:
+                pass
             break
         except Exception as e:
             last = e
@@ -495,6 +508,14 @@ def _run():
 
     if os.environ.get("INVESTIGATIONS", "").lower() in ("off", "0", "false"):
         return "investigations: paused by INVESTIGATIONS env"
+    try:  # budget governor (owner order 2026-09-01): skip the window rather
+        # than spend past the desk's monthly pace — the wire keeps the money.
+        import budget_ledger
+        _allowed, _reason = budget_ledger.pace_allows("investigations")
+    except Exception:
+        _allowed, _reason = True, "budget check failed open"
+    if not _allowed:
+        return f"investigations: budget pacing — window skipped ({_reason})"
     if now.hour not in DESK_HOURS:
         return f"investigations: outside desk hours {DESK_HOURS} — next at {min((h for h in DESK_HOURS if h > now.hour), default=DESK_HOURS[0]):02d}:00 UTC"
     if not os.environ.get("ANTHROPIC_API_KEY"):

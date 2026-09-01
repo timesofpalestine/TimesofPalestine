@@ -22,7 +22,24 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - uses: anthropics/claude-code-action@v1
+      # Budget governor (owner order 2026-09-01): skip today's brief when the
+      # franchise is ahead of its monthly allocation's pace. Fails OPEN on
+      # script errors (only exit 3 skips).
+      - name: Budget gate
+        id: budget
+        run: |
+          set +e
+          python3 budget_ledger.py --check washington
+          code=$?
+          set -e
+          if [ "$code" -eq 3 ]; then
+            echo "run=no" >> "$GITHUB_OUTPUT"
+            echo "::warning::Washington Brief paced out by the monthly API budget — skipping today's brief"
+          else
+            echo "run=yes" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.budget.outputs.run == 'yes'
+        uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -153,3 +170,23 @@ jobs:
 
             If research finds nothing new AND no thread merits a deep dive
             (rare), exit WITHOUT committing and say why in your final message.
+
+      # Budget governor: record the run's actual cost into the committed
+      # ledger. Fail-open — recording never fails a brief that already filed.
+      - name: Record API spend in the ledger
+        if: always() && steps.budget.outputs.run == 'yes'
+        run: |
+          COST=$(python3 -c "import json,os;p=os.path.join(os.environ.get('RUNNER_TEMP','/home/runner/work/_temp'),'claude-execution-output.json');d=json.load(open(p));evs=d if isinstance(d,list) else [d];print(round(max([float(e.get('total_cost_usd') or 0) for e in evs if isinstance(e,dict)]+[0.0]),4))" 2>/dev/null || echo 0)
+          echo "run cost: \$$COST"
+          if python3 -c "import sys; sys.exit(0 if float('$COST' or 0) > 0 else 1)"; then
+            git config user.name "Times of Palestine Newsdesk"
+            git config user.email "newsdesk@timesofpalestine.com"
+            for i in 1 2 3; do
+              git fetch origin main && git reset --hard origin/main
+              python3 budget_ledger.py --record-usd washington "$COST"
+              git add originals/_ledger.json
+              git commit -m "Record Washington Brief API spend [skip ci]" || break
+              if git push origin HEAD:main; then break; fi
+              sleep $((i * 5))
+            done
+          fi
