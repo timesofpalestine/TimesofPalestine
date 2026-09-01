@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2167948.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163291/%D8%AA%D8%AE%D8%A8%D8%B7-%D8%B5%D9%87%D9%8A%D9%88%D9%86%D9%8A-%D9%88-%D8%A5%D9%86%D8%AC%D8%A7%D8%B2-%D9%88%D8%B7%D9%86%D9%8A",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-01T10:03:47+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "d1ceef722b",
- "score": 46.14,
+ "score": 45.86,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

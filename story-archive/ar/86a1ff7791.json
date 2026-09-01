@@ -13,6 +13,12 @@
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
    "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/8785-144",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-09-01T15:10:00+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "86a1ff7791",
- "score": 49.64,
+ "score": 49.37,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
