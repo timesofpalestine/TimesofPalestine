@@ -1,0 +1,32 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام نقلاً عن القناة 12 الإسرائيلية، أفاد سكان مدينة إيلات الإسرائيلية بإطلاق صواريخ اعتراضية في منطقة العقبة المجاورة. ووصل الخبر إلى وسائل إعلام إسرائيلية عقب مراقبة السكان لعمليات الاعتراض في المنطقة.\n\nلم تتضح حتى الآن تفاصيل الحادثة الكاملة أو الأسباب المباشرة وراء تفعيل منظومة الدفاع الجوي في العقبة، إذ لم تصدر تصريحات رسمية تشرح ملابسات الحادثة أو ما إذا كانت هناك تهديدات معينة استدعت هذا الإجراء.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/318843",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-01T19:56:49+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/318843",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4e99baf1f4",
+ "score": 48.01,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "سكان إيلات يشهدون إطلاق صواريخ اعتراضية في العقبة"
+}
