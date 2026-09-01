@@ -2162,9 +2162,96 @@ def dedupe(items):
 # dedupe misses them. The similarity logic lives in event_dedupe.py, shared with
 # telegram_publish.py so the channel never re-receives the same news either.
 from event_dedupe import (
-    event_tokens, near_identical, place_or_count_veto, same_coverage,
-    same_event, same_story,
+    _title_key, event_tokens, near_identical, place_or_count_veto,
+    same_coverage, same_event, same_story,
 )
+
+def _already_archived(it):
+    """True when this pid already has a permalink in the story archive.
+
+    Duplicate-canon rule (owner sweep 2026-09-01): when a cluster holds two
+    copies of one event, the copy readers already hold the link to IS the
+    article — a fresher twin folds into it as corroboration instead of
+    swapping in, because a swap archives BOTH copies over successive builds
+    (the flip-flop that filled search and the hubs with doubles)."""
+    try:
+        base = story_archive.archive_dir()
+        return bool(base and (base / it.get("lang", "") /
+                              f"{it.get('pid', '')}.json").is_file())
+    except Exception:
+        return False
+
+
+def _dedupe_rank_key(it):
+    """Shared rank for cluster representatives: our own copy first, then the
+    partner wire, then the already-published permalink, then score — with the
+    pid as a deterministic final tie-break so equal twins cannot alternate
+    between builds."""
+    return (it["source_id"] == "top-original", bool(it.get("partner")),
+            _already_archived(it), it["score"], it.get("pid", ""))
+
+
+def mark_archived_duplicates(live_items, arch_pool, now=None):
+    """Flag archived stories that duplicate a live story, or an earlier
+    archived one, under the owner's near-identical rule (2026-08-02: a
+    repeated headline never publishes twice — exact keys match at any
+    age). Flagged records KEEP their permalink pages — permalink
+    permanence is untouched — but leave the discovery surfaces (search
+    index, topic hubs, archive-filled sections). Conservative by design:
+    only the same-words-modulo-numbers net; paraphrase pairs stay for the
+    live AI judge.
+
+    Bounded for the 10-minute build cadence: exact title keys use set
+    lookups over the whole archive; the fuzzy ratio runs only for records
+    from the last 30 days, only against candidates within 72 hours (the
+    flip-flop that creates these twins happens inside the live window),
+    and only after a cheap word-overlap gate — SequenceMatcher never sees
+    a pair the words already rule out."""
+    import difflib
+    now = now or datetime.now(timezone.utc)
+
+    def _fuzzy(ka, wa, kb, wb):
+        if ka == kb:
+            return True
+        if 2 * min(len(ka), len(kb)) < 0.9 * (len(ka) + len(kb)):
+            return False
+        if len(wa & wb) < 0.75 * min(len(wa) or 1, len(wb) or 1):
+            return False
+        return difflib.SequenceMatcher(None, ka, kb).ratio() >= 0.9
+
+    live = [(_title_key(i["title"]),) for i in live_items]
+    live = [(k, frozenset(k.split())) for (k,) in live]
+    live_exact = {k for k, _ in live}
+    flagged = 0
+    kept = []        # (date, key, words) of unsuppressed archived, oldest first
+    kept_exact = set()
+    for a in sorted(arch_pool, key=lambda r: str(r.get("date") or "")):
+        key = _title_key(a["title"])
+        words = frozenset(key.split())
+        date = a.get("date")
+        recent = bool(
+            isinstance(date, datetime)
+            and (now - date).total_seconds() <= 30 * 86400)
+        dup = key in live_exact or key in kept_exact
+        if not dup and recent:
+            dup = any(_fuzzy(key, words, lk, lw) for lk, lw in live)
+            if not dup:
+                for kd, kk, kw in reversed(kept):
+                    if (isinstance(date, datetime)
+                            and isinstance(kd, datetime)
+                            and (date - kd).total_seconds() > 72 * 3600):
+                        break  # kept is date-ordered — older can't be closer
+                    if _fuzzy(key, words, kk, kw):
+                        dup = True
+                        break
+        if dup:
+            a["dup_suppressed"] = True
+            flagged += 1
+        else:
+            kept.append((date, key, words))
+            kept_exact.add(key)
+    return flagged
+
 
 def dedupe_events(items):
     """One incident, one article. When a cluster forms, our own copy (original,
@@ -2189,9 +2276,7 @@ def dedupe_events(items):
          Jerusalem tensions" ran beside "Arab ministers meet in Amman…").
     Originals never fold into each other — the desk curates those."""
     clusters = []  # [representative, [titles], [tokens], [title+dek tokens], [dates]]
-    ranked = sorted(items, key=lambda i: (
-        i["source_id"] == "top-original", bool(i.get("partner")), i["score"]
-    ), reverse=True)
+    ranked = sorted(items, key=_dedupe_rank_key, reverse=True)
     for it in ranked:
         toks = event_tokens(it["title"])
         # The house brief, once written, is the richest same-language account
@@ -2326,9 +2411,7 @@ def adjudicate_duplicates(en_items, ar_items, client=None):
     budget = MAX_DEDUPE_VERDICTS_PER_RUN
     dirty, dropped_total, out = False, 0, {}
     for lang, items in (("en", en_items), ("ar", ar_items)):
-        ranked = sorted(items, key=lambda i: (
-            i["source_id"] == "top-original", bool(i.get("partner")), i["score"]
-        ), reverse=True)
+        ranked = sorted(items, key=_dedupe_rank_key, reverse=True)
         ext = {id(i): event_tokens(
             f"{i['title']} {(i.get('brief') or i.get('dek') or '')[:240]}")
             for i in items}
@@ -6177,6 +6260,14 @@ def main():
         archived = []
         _arch_pool = list(story_archive.load(
             lang, exclude={i["pid"] for i in items} | RETRACTED_PIDS))
+        # One incident, one article — on the archive layer too (owner sweep
+        # 2026-09-01): the permalink layer must not resurrect dedupe losers
+        # into search, the hubs and archive-filled sections. Pages keep
+        # rendering; only the discovery listings skip the twins.
+        _dups = mark_archived_duplicates(list(items), _arch_pool)
+        if _dups:
+            print(f"  ⊘ archive: {_dups} duplicate {lang} permalink(s) kept "
+                  "resolving but left out of search/hub listings")
         # Every section that will get an archive page this build — the shared
         # nav and footer index on interior pages link only these (owner order
         # 2026-08-11), so no bar ever links a section that didn't render.
@@ -6200,8 +6291,9 @@ def main():
             try:
                 _rx = re.compile(_tf["pattern"], re.I)
                 _hits = [h for h in list(items) + _arch_pool
-                         if _rx.search(f"{h.get('title', '')} "
-                                       f"{h.get('link', '') or ''}")]
+                         if not h.get("dup_suppressed")
+                         and _rx.search(f"{h.get('title', '')} "
+                                        f"{h.get('link', '') or ''}")]
                 if len(_hits) >= int(_tf.get("min", 2)):
                     try:
                         _hits.sort(key=lambda r: r.get("date"), reverse=True)
@@ -6262,7 +6354,9 @@ def main():
         # Archived stories breadcrumb to their section page; a section that no
         # longer has live coverage still renders, filled from the archive.
         for cat in sorted({a["cat"] for a in archived} - live_cats):
-            cat_items = [a for a in archived if a["cat"] == cat]
+            cat_items = ([a for a in archived if a["cat"] == cat
+                          and not a.get("dup_suppressed")]
+                         or [a for a in archived if a["cat"] == cat])
             more_items = sorted(items, key=lambda r: r["date"], reverse=True)[:8]
             (dist / lang / f"section-{cat}.html").write_text(
                 render_section_page(lang, cat, cat_items, built_at,
@@ -6292,7 +6386,8 @@ def main():
                                    str(it.get("brief") or ""))
                             .replace("\n", " "), 400),
               "c": STR[lang]["sections"].get(it["cat"], it["cat"])}
-             for it in items + archived],
+             for it in items + [a for a in archived
+                                if not a.get("dup_suppressed")]],
             ensure_ascii=False), encoding="utf-8")
         for it in items:
             same_cat = [r for r in items if r is not it and r["cat"] == it["cat"]]
