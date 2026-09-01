@@ -1,0 +1,24 @@
+{
+ "_readme": [
+  "Monthly API budget for the AI newsroom (owner order 2026-09-01: never go",
+  "over budget again). budget_ledger.py records every desk's estimated spend",
+  "in originals/_ledger.json and paces the discretionary desks against their",
+  "allocation — a desk ahead of its linear monthly pace skips runs until the",
+  "pace catches up, instead of the whole paper hitting the provider cap and",
+  "freezing like August. The briefs desk (the wire) is never paced; it stops",
+  "only at hard_stop_fraction of the budget, keeping last-resort headroom",
+  "under the real cap. Estimates run 10% hot at list price on purpose.",
+  "THE OWNER'S KNOB is monthly_budget_usd — set it at or slightly below the",
+  "org's actual Anthropic monthly limit. Allocations are fractions of the",
+  "budget; they may sum to less than 1 (the remainder is reserve headroom)."
+ ],
+ "monthly_budget_usd": 150,
+ "hard_stop_fraction": 0.92,
+ "allocations": {
+  "briefs": 0.12,
+  "investigations": 0.22,
+  "editor": 0.30,
+  "washington": 0.24,
+  "maintenance": 0.04
+ }
+}
