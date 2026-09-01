@@ -37,18 +37,6 @@
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
    "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/318851",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": false
-  },
-  {
-   "article": "https://www.aljazeera.net/video/2026/9/1/%d8%aa%d8%b5%d8%b9%d9%8a%d8%af-%d8%b9%d8%b3%d9%83%d8%b1%d9%8a-%d9%88%d8%ba%d8%a7%d8%b1%d8%a7%d8%aa-%d9%85%d9%83%d8%ab%d9%81%d8%a9-%d8%aa%d8%b7%d9%88%d9%84-%d8%ae%d9%8a%d8%a7%d9%85?traffic_source=rss",
-   "name": "الجزيرة نت",
-   "url": "https://www.aljazeera.net/",
-   "verified": false
   }
  ],
  "date": "2026-09-01T11:10:00+00:00",
@@ -66,7 +54,7 @@
  "modified": null,
  "original": true,
  "pid": "27973a7cd6",
- "score": 100.43,
+ "score": 100.37,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
