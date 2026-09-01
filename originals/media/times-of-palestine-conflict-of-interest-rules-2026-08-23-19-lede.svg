@@ -20,7 +20,7 @@
   <text x="90" y="102" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="2.6" fill="#c7a86b">PALESTINIAN ANTI-CORRUPTION COMMISSION — 2024 ANNUAL REPORT</text>
   <text x="90" y="176" font-family="'Source Serif 4',Georgia,serif" font-size="58" fill="#f2eee8">Four asset declarations examined</text>
   <text x="90" y="240" font-family="'Source Serif 4',Georgia,serif" font-size="58" fill="#f2eee8">out of 2,542 filed in 2024</text>
-  <text x="90" y="288" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#c7a86b" text-anchor="start" direction="rtl">فُحصت أربعة إقرارات ذمة مالية فقط من إجمالي ما استلمته الهيئة</text>
+  <text x="90" y="288" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#c7a86b" text-anchor="end" direction="rtl">فُحصت أربعة إقرارات ذمة مالية فقط من إجمالي ما استلمته الهيئة</text>
 
   <!-- Grid panel -->
   <rect x="874" y="300" width="672" height="562" rx="6" fill="#17181b" stroke="#2a2c30" stroke-width="1"/>
@@ -51,7 +51,7 @@
   <text x="90" y="372" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="2.4" fill="#59a97d">EXAMINED IN 2024</text>
   <text x="90" y="512" font-family="'Source Serif 4',Georgia,serif" font-size="168" fill="#c7a86b">4</text>
   <text x="236" y="432" font-family="'Libre Franklin',Arial,sans-serif" font-size="27" fill="#f2eee8">declarations, belonging to three people</text>
-  <text x="236" y="470" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#c7a86b" text-anchor="start" direction="rtl">أربعة إقرارات تعود لثلاثة أشخاص</text>
+  <text x="236" y="470" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#c7a86b" text-anchor="end" direction="rtl">أربعة إقرارات تعود لثلاثة أشخاص</text>
   <text x="236" y="508" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">checked because they were tied to complaints</text>
   <text x="236" y="534" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">and investigations already open</text>
 

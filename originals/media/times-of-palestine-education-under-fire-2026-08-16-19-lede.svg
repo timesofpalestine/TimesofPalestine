@@ -21,7 +21,7 @@
 
 <text x="90" y="162" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">Gaza's fourth school year opens</text>
 <text x="90" y="222" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">mostly in tents</text>
-<text x="90" y="274" font-family="Cairo,Arial,sans-serif" font-size="31" fill="#59a97d" text-anchor="start" direction="rtl">العام الدراسي الرابع في غزة يبدأ في الخيام</text>
+<text x="90" y="274" font-family="Cairo,Arial,sans-serif" font-size="31" fill="#59a97d" text-anchor="end" direction="rtl">العام الدراسي الرابع في غزة يبدأ في الخيام</text>
 
 <rect x="90" y="304" width="1450" height="2" fill="#3a3b3f"/>
 
@@ -47,7 +47,7 @@
 <text x="90" y="742" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">Tents and prefab rooms without windows; cardboard</text>
 <text x="90" y="768" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">boxes and planks for desks; rotating shifts three days</text>
 <text x="90" y="794" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">a week; three subjects: maths, reading and writing.</text>
-<text x="90" y="824" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d" text-anchor="start" direction="rtl">دروس في الخيام: ثلاثة أيام أسبوعياً وثلاث مواد</text>
+<text x="90" y="824" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d" text-anchor="end" direction="rtl">دروس في الخيام: ثلاثة أيام أسبوعياً وثلاث مواد</text>
 
 <!-- RIGHT: figures -->
 <line x1="740" y1="330" x2="740" y2="800" stroke="#3a3b3f" stroke-width="2"/>

@@ -21,12 +21,12 @@
   <text x="90" y="92" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="3.5" fill="#c7a86b">GAZA · EDUCATION · TENT SCHOOLS</text>
   <text x="90" y="160" font-family="'Source Serif 4',Georgia,serif" font-size="48" fill="#f2eee8">Women teachers run Gaza's tent</text>
   <text x="90" y="214" font-family="'Source Serif 4',Georgia,serif" font-size="48" fill="#f2eee8">classrooms through a third year</text>
-  <text x="90" y="266" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#59a97d" direction="rtl">معلمات يدرن مدارس الخيام في غزة للعام الثالث</text>
+  <text x="90" y="266" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#59a97d" direction="rtl" text-anchor="end">معلمات يدرن مدارس الخيام في غزة للعام الثالث</text>
   <line x1="90" y1="308" x2="1540" y2="308" stroke="#2c2e31" stroke-width="2"/>
 
   <!-- LEFT: tent classroom -->
   <text x="140" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Self-made tent classrooms</text>
-  <text x="140" y="382" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl">فصول من صنع المعلمات في الخيام</text>
+  <text x="140" y="382" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl" text-anchor="end">فصول من صنع المعلمات في الخيام</text>
 
   <line x1="90" y1="800" x2="770" y2="800" stroke="#3a3c40" stroke-width="3"/>
   <polygon points="420,430 720,800 120,800" fill="url(#tent)" stroke="#f2eee8" stroke-width="4" stroke-linejoin="round"/>

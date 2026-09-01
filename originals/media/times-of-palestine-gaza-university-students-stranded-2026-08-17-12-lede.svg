@@ -19,12 +19,12 @@
 <text x="90" y="64" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="3" fill="#c7a86b">HIGHER EDUCATION · GAZA</text>
 <text x="90" y="116" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">Gaza universities restart degrees online</text>
 <text x="90" y="164" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">as Israel blocks student travel</text>
-<text x="90" y="206" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#aaa9a5" direction="rtl">جامعات غزة تستأنف الدراسة عبر الإنترنت والسفر ما زال ممنوعاً</text>
+<text x="90" y="206" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#aaa9a5" direction="rtl" text-anchor="end">جامعات غزة تستأنف الدراسة عبر الإنترنت والسفر ما زال ممنوعاً</text>
 
 <!-- LEFT PANEL: virtual campus -->
 <rect x="90" y="250" width="740" height="450" rx="12" fill="#17181b" stroke="#2c2e32"/>
 <text x="120" y="288" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="2" fill="#c7a86b">GAZA VIRTUAL CAMPUS</text>
-<text x="120" y="316" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" direction="rtl">الحرم الجامعي الافتراضي في غزة</text>
+<text x="120" y="316" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" direction="rtl" text-anchor="end">الحرم الجامعي الافتراضي في غزة</text>
 
 <rect x="250" y="340" width="420" height="220" rx="8" fill="url(#scr)" stroke="#c7a86b" stroke-width="2"/>
 <line x1="250" y1="366" x2="670" y2="366" stroke="#2c2e32" stroke-width="2"/>

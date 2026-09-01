@@ -95,9 +95,21 @@ jobs:
             3. MEDIA LIBRARY SCAN: run build.svg_text_overflows over every
                originals/media/*.svg and fix any finding (shrink the text,
                keep the layout) — an overflowing SVG on main freezes every
-               build. Also verify every raster in originals/media/ has its
-               media-rights.json entry and every `image:` header that
-               points to a local /media/ file points to a file that exists.
+               build. The estimator CANNOT see RTL overflows (issue #260),
+               so also run the BROWSER sweep: install Chromium
+               (`npx playwright install --with-deps chromium` + a tiny
+               playwright-core script), load each SVG, and compare every
+               text node's getBoundingClientRect against the viewBox.
+               The proven mechanical fix (2026-09-01 sweep, 18 files):
+               an Arabic run with direction="rtl" anchored at a LEFT-edge
+               x with text-anchor start/absent flows leftward off the
+               canvas — set text-anchor="end" on exactly the overflowing
+               node, re-measure, keep only if the file goes clean. Files
+               that stay dirty go to issue #260's manual-redraw list,
+               never force-shrunk. Also verify every raster in
+               originals/media/ has its media-rights.json entry and every
+               `image:` header that points to a local /media/ file points
+               to a file that exists.
             4. FEED HEALTH: run the wire fetchers offline-safe (`python3
                israeli_press_fetch.py --hours 36` and the same with
                --feeds editorial/us-press-feeds.json) and note feeds that
