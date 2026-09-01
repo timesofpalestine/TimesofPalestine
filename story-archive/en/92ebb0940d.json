@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli government ministers are escalating campaign rhetoric with artificial intelligence-generated advertisements as the country heads toward a closely contested October election, Al Jazeera English reported. The rightwing politicians have intensified their messaging surrounding operations in Gaza, with the AI ads amplifying their positions to voters ahead of polling day.\n\nThe development comes as Israeli military strikes in Gaza continue to expand in scope and frequency. The timing of the heightened campaign activity coincides with the widened operations, reflecting the political dynamics surrounding the upcoming election. Israeli leadership remains divided over strategy and priorities as voters prepare to cast ballots in what polls suggest will be a tight race.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/1/palestine-weekly-israels-rightwing-campaigns-on-anti-palestinian-abuses?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-01T07:02:25+00:00",
+ "dek": "Israeli ministers escalate campaign rhetoric with AI ads as Gaza strikes widen ahead of tight October election.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/epa_6a8f3a98ccd8-1787771544.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/1/palestine-weekly-israels-rightwing-campaigns-on-anti-palestinian-abuses?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/1/palestine-weekly-israels-rightwing-campaigns-on-anti-palestinian-abuses?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "92ebb0940d",
+ "score": 63.81,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli ministers deploy AI ads amid Gaza campaign push"
+}
