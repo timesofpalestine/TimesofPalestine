@@ -21,6 +21,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-issues-gentle-condemnation-israeli-settlers-attack-nbc-news-crew",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.theguardian.com/world/2026/aug/29/nbc-news-team-attacked-west-bank",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -42,7 +48,7 @@
  "modified": null,
  "original": true,
  "pid": "a38228f1f2",
- "score": 82.66,
+ "score": 82.57,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
