@@ -13,6 +13,12 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-colonizers-attempt-to-burn-mosque-near-nablus",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
   }
  ],
  "date": "2026-09-01T06:55:00+00:00",
@@ -30,7 +36,7 @@
  "modified": null,
  "original": false,
  "pid": "b9b635f4c6",
- "score": 62.91,
+ "score": 62.66,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
