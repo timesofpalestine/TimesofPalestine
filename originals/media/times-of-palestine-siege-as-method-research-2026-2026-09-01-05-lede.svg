@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Settlers pitch tents at Palestinian doors to empty communities</title>
+  <desc id="dsc">Illustration of three Palestinian houses on a hillside with a red settler tent pitched against their doorways and the doors marked closed, beside a data column: 107 communities and 5,900 people displaced since January 2023 per Human Rights Watch citing OCHA; 117 communities and 5,910 people per Amnesty International citing OCHA for January 2023 to April 2026; 363 outposts counted by Peace Now with 212 created since 2023; and 93.6 per cent of Yesh Din monitored police files closed without indictment.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="tentg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8102E"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- headline block -->
+  <text x="90" y="96" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="4" fill="#c7a86b">WEST BANK · DISPLACEMENT</text>
+  <text x="90" y="160" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">Settlers pitch tents at Palestinian doors</text>
+  <text x="90" y="212" font-family="'Source Serif 4',Georgia,serif" font-size="46" font-weight="700" fill="#f2eee8">to empty communities</text>
+  <text x="90" y="262" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d" text-anchor="start">مستوطنون ينصبون خياماً أمام بيوت الفلسطينيين لتفريغها</text>
+
+  <line x1="90" y1="292" x2="1560" y2="292" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- ILLUSTRATION: three homes, tent at the door -->
+  <g>
+    <!-- hill / ground -->
+    <path d="M70 752 L780 752" stroke="#c7a86b" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <path d="M70 752 L780 752 L780 790 L70 790 Z" fill="#26272a"/>
+
+    <!-- house A -->
+    <g>
+      <rect x="110" y="600" width="170" height="152" fill="#2a2b2f" stroke="#f2eee8" stroke-width="4"/>
+      <path d="M95 600 L195 528 L295 600" fill="none" stroke="#f2eee8" stroke-width="4" stroke-linejoin="round"/>
+      <rect x="172" y="672" width="46" height="80" fill="#1a1b1e" stroke="#c7a86b" stroke-width="3"/>
+      <path d="M166 666 L224 758 M224 666 L166 758" stroke="#C8102E" stroke-width="5" stroke-linecap="round"/>
+      <rect x="126" y="626" width="34" height="30" fill="#1a1b1e" stroke="#aaa9a5" stroke-width="3"/>
+    </g>
+
+    <!-- house B -->
+    <g>
+      <rect x="320" y="600" width="170" height="152" fill="#2a2b2f" stroke="#f2eee8" stroke-width="4"/>
+      <path d="M305 600 L405 528 L505 600" fill="none" stroke="#f2eee8" stroke-width="4" stroke-linejoin="round"/>
+      <rect x="382" y="672" width="46" height="80" fill="#1a1b1e" stroke="#c7a86b" stroke-width="3"/>
+      <rect x="336" y="626" width="34" height="30" fill="#1a1b1e" stroke="#aaa9a5" stroke-width="3"/>
+    </g>
+
+    <!-- house C -->
+    <g>
+      <rect x="530" y="600" width="170" height="152" fill="#2a2b2f" stroke="#f2eee8" stroke-width="4"/>
+      <path d="M515 600 L615 528 L715 600" fill="none" stroke="#f2eee8" stroke-width="4" stroke-linejoin="round"/>
+      <rect x="592" y="672" width="46" height="80" fill="#1a1b1e" stroke="#c7a86b" stroke-width="3"/>
+      <path d="M586 666 L644 758 M644 666 L586 758" stroke="#C8102E" stroke-width="5" stroke-linecap="round"/>
+      <rect x="546" y="626" width="34" height="30" fill="#1a1b1e" stroke="#aaa9a5" stroke-width="3"/>
+    </g>
+
+    <!-- the tent, pitched between the houses at the doorway -->
+    <g>
+      <path d="M470 566 L378 752 L562 752 Z" fill="url(#tentg)" stroke="#f2eee8" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M470 566 L470 752" stroke="#f2eee8" stroke-width="3" opacity="0.75"/>
+      <path d="M470 566 L470 546" stroke="#f2eee8" stroke-width="4"/>
+      <path d="M562 752 L610 752 M378 752 L330 752" stroke="#f2eee8" stroke-width="3" opacity="0.5"/>
+    </g>
+
+    <!-- annotation -->
+    <path d="M470 528 L470 500 L700 500" fill="none" stroke="#c7a86b" stroke-width="2"/>
+    <circle cx="470" cy="500" r="5" fill="#c7a86b"/>
+    <text x="712" y="494" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" fill="#c7a86b">Tent pitched 9 August, Ras al-Ein, Qusra</text>
+    <text x="712" y="520" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5" text-anchor="start">خيمة نُصبت في 9 آب – رأس العين، قصرة</text>
+
+    <!-- closed zone band -->
+    <path d="M70 812 L780 812" stroke="#8a1f2d" stroke-width="6" stroke-dasharray="22 14"/>
+    <text x="90" y="848" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" font-weight="700" fill="#f2eee8">Closed military zone declared 13 August; families still confined</text>
+    <text x="90" y="876" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5" text-anchor="start">منطقة عسكرية مغلقة – 15 شخصاً محاصرين في ثلاثة بيوت</text>
+  </g>
+
+  <!-- DATA COLUMN -->
+  <line x1="840" y1="330" x2="840" y2="790" stroke="#3a3b3f" stroke-width="2"/>
+
+  <text x="880" y="336" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#59a97d">THE COUNTS DO NOT LINE UP</text>
+
+  <g>
+    <text x="880" y="404" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#c7a86b">107</text>
+    <text x="1010" y="392" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">communities, 5,900 people displaced</text>
+    <text x="1010" y="418" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Human Rights Watch, 20 Aug, citing OCHA — since Jan 2023</text>
+  </g>
+
+  <g>
+    <text x="880" y="494" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#c7a86b">117</text>
+    <text x="1010" y="482" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">communities, 5,910 people displaced</text>
+    <text x="1010" y="508" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5" textLength="574" lengthAdjust="spacingAndGlyphs">Amnesty International, 10 June, citing OCHA — Jan 2023 to Apr 2026</text>
+  </g>
+
+  <line x1="880" y1="546" x2="1560" y2="546" stroke="#3a3b3f" stroke-width="2"/>
+
+  <g>
+    <text x="880" y="616" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#f2eee8">363</text>
+    <text x="1010" y="604" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">outposts, 212 of them created since 2023</text>
+    <text x="1010" y="630" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Peace Now count to end of April 2026, cited by Amnesty</text>
+  </g>
+
+  <g>
+    <text x="880" y="706" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#C8102E">93.6%</text>
+    <text x="1080" y="694" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">of monitored police files closed</text>
+    <text x="1080" y="720" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5" textLength="504" lengthAdjust="spacingAndGlyphs">without indictment; 3% ended in conviction — Yesh Din, February</text>
+  </g>
+
+  <text x="880" y="782" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#59a97d" text-anchor="start">أرقام أوتشا وهيومن رايتس ووتش والعفو الدولية ويش دين</text>
+
+  <text x="880" y="862" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Times of Palestine · sources: OCHA, HRW, Amnesty, B'Tselem, Yesh Din, Peace Now</text>
+</svg>
