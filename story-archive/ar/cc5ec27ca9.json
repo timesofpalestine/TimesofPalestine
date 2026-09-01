@@ -1,0 +1,50 @@
+{
+ "brief": "أعلن مستشفى شهداء الأقصى استشهاد طفلة جراء إطلاق نار إسرائيلي في مدينة دير البلح وسط قطاع غزة. وفقاً للمستشفى، وقعت الحادثة في منطقة وسط القطاع، غير أن تفاصيل الظروف المحيطة بالحادثة لم تُحدّد من قبل المصادر المتاحة.\n\nيندرج الحادث ضمن سياق العمليات العسكرية الإسرائيلية المستمرة في قطاع غزة، إذ يطال القصف المدنيين بينهم أطفال في مناطق مختلفة من القطاع. وتشهد غزة منذ فترة موجة عنف متصاعدة أسفرت عن سقوط عدد من الضحايا بين المدنيين.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d9%85%d8%b3%d8%aa%d8%b4%d9%81%d9%89-%d8%b4%d9%87%d8%af%d8%a7%d8%a1-%d8%a7%d9%84%d8%a3%d9%82%d8%b5%d9%89-%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d8%b7%d9%81%d9%84",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/318701",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/733274",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82567",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-01T08:08:34+00:00",
+ "dek": "",
+ "image": "https://www.alquds.co.uk/wp-content/uploads/2024/08/br-20082024.jpg",
+ "lang": "ar",
+ "link": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d9%85%d8%b3%d8%aa%d8%b4%d9%81%d9%89-%d8%b4%d9%87%d8%af%d8%a7%d8%a1-%d8%a7%d9%84%d8%a3%d9%82%d8%b5%d9%89-%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d8%b7%d9%81%d9%84",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "القدس العربي",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d9%85%d8%b3%d8%aa%d8%b4%d9%81%d9%89-%d8%b4%d9%87%d8%af%d8%a7%d8%a1-%d8%a7%d9%84%d8%a3%d9%82%d8%b5%d9%89-%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d8%b7%d9%81%d9%84"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cc5ec27ca9",
+ "score": 63.74,
+ "source": "القدس العربي",
+ "source_id": "alqudsuk",
+ "source_url": "https://www.alquds.co.uk/",
+ "title": "استشهاد طفلة برصاص إسرائيلي في دير البلح"
+}
