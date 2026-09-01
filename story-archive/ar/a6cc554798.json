@@ -6,12 +6,18 @@
    "article": "https://t.me/QudsN/733225",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/318665",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-09-01T03:42:09+00:00",
  "dek": "",
- "image": "/media/times-of-palestine-cover-social-b-ar.svg",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
  "lang": "ar",
  "link": "https://t.me/QudsN/733225",
  "max_age_hours": 72,
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "a6cc554798",
- "score": 62.9,
+ "score": 62.68,
  "source": "شبكة قدس · تيليغرام",
  "source_id": "tg-qudsn",
  "source_url": "https://t.me/QudsN",

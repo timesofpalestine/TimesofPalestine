@@ -9,21 +9,9 @@
    "verified": true
   },
   {
-   "article": "https://imemc.org/article/gaza-death-toll-rises-as-israeli-attacks-continue",
+   "article": "https://imemc.org/article/israeli-army-kills-five-palestinians-in-gaza-2",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/08/israeli-fire-kills-five-people-gaza-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-gaza-city-kills-two-wounds-many-others",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
    "verified": true
   }
  ],
@@ -42,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "64b9d81f8f",
- "score": 84.56,
+ "score": 83.59,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
