@@ -1,28 +1,22 @@
 {
- "brief": "Israeli forces conducted widespread military operations across southern Lebanon on Tuesday, launching artillery strikes and airstrikes while demolishing residential buildings in multiple areas, Shehab Wire reported. The operations included detonations targeting homes and movements of military vehicles throughout the region.\n\nThe Lebanese news agency documented the assaults targeting several zones in the south. The attacks combined aerial bombardment with ground-based artillery fire and systematic destruction of civilian structures, though specific locations, casualty figures, and the stated objectives of the operations were not immediately detailed in available reports.",
+ "brief": "شنّ الاحتلال، الثلاثاء، هجمات موسعة على مناطق عدة في جنوب لبنان تضمنت غارات جوية وقصفاً مدفعياً وتفجيرات للمنازل، بحسب وكالة شهاب. رافقت العمليات تحركات لآليات عسكرية في المنطقة، فيما أسفرت التفجيرات عن تدمير منازل بالكامل.\n\nوأفادت وكالة الأنباء اللبنانية بأن الاعتداءات طالت عدداً من المواقع في الجنوب، غير أنها لم تحدد بدقة الخسائر البشرية أو نطاق الدمار الناجم عن القصف والنسف.\n\nيأتي هذا في سياق التصعيد المتواصل على الحدود اللبنانية-الإسرائيلية منذ أشهر.",
  "cat": "news",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/163312/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%88%D8%B3-%D8%B9-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA%D9%87-%D9%81%D9%8A-%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%88%D9%8A%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%84%D9%82%D8%B5%D9%81-%D9%88%D9%86-%D8%B3%D9%81-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D9%84",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-escalation-continues-across-occupied-west-bank",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-01T21:44:00+00:00",
- "dek": "Israeli forces conducted widespread military operations across southern Lebanon on Tuesday, launching artillery strikes and airstrikes while demolishing residential buildings in multiple areas, Shehab Wire reported. The…",
+ "dek": "شهدت مناطق عدة في جنوب لبنان، الثلاثاء، قصفًا مدفعيًّا وغارات جوية وتفجيرات ينفذها الاحتلال، إضافة إلى تحركات للآليات العسكرية وتدمير للمنازل. وأفادت وكالة الأنباء اللبنانية بأن الاعتداءات استهدفت.",
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/pjcoN.webp?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/163312/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%88%D8%B3-%D8%B9-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA%D9%87-%D9%81%D9%8A-%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%88%D9%8A%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%84%D9%82%D8%B5%D9%81-%D9%88%D9%86-%D8%B3%D9%81-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D9%84",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/163312/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%88%D8%B3-%D8%B9-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA%D9%87-%D9%81%D9%8A-%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%88%D9%8A%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%84%D9%82%D8%B5%D9%81-%D9%88%D9%86-%D8%B3%D9%81-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D9%84"
@@ -30,9 +24,9 @@
  "modified": null,
  "original": false,
  "pid": "9bca46d9fa",
- "score": 63.54,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 63.51,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Israeli forces expand attacks across southern Lebanon with airstrikes and demolitions"
+ "title": "الاحتلال يقصف جنوب لبنان ويفجّر منازل"
 }
