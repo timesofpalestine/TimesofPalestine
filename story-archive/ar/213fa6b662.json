@@ -6,7 +6,13 @@
    "article": "https://shehabnews.com/post/163360/8346-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D8%A7-%D9%8A%D9%82%D8%AA%D8%AD%D9%85%D9%88%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89-%D8%AE%D9%84%D8%A7%D9%84-%D8%B4%D9%87%D8%B1-%D8%A3%D8%BA%D8%B3%D8%B7%D8%B3-%D8%A7%D9%84%D9%85%D8%A7%D8%B6%D9%8A",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185735/%D8%AE%D9%84%D8%A7%D9%84-%D8%A3%D8%BA%D8%B3%D8%B7%D8%B3-8346-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D8%A7-%D9%8A%D9%82%D8%AA%D8%AD%D9%85%D9%88%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-09-02T11:59:00+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "213fa6b662",
- "score": 63.86,
+ "score": 63.37,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",

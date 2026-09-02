@@ -7,6 +7,12 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/2/palestinian-landowners-confront-bulldozers-using-their-hands?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
   }
  ],
  "date": "2026-09-02T09:43:24+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "b32f5d9956",
- "score": 62.33,
+ "score": 61.83,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
