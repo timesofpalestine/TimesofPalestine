@@ -124,6 +124,18 @@ everything it builds:
    small call ever, ≤40/build); fail-open on every route. Layer:
    `adjudicate_duplicates` in `build.py`. Don't replace it with another
    word-matching net — that approach is the documented root cause.
+   **Judge standard v2 (owner report 2026-09-02):** five relays of one
+   disclosure (Dr Abu Safiya's account of being beaten — Al Jazeera, two
+   Telegram wires, Euro-Med, Shehab) ran the same afternoon because the
+   v1 prompt called every relay "a separate announcement" and defaulted
+   to SEPARATE when unsure. The standard is now the reader's: the same
+   news about the same subject is ONE article whichever outlet, agency,
+   rights group or lawyer relayed it; SEPARATE only for a genuinely
+   distinct development. The prompt version rides the verdict cache key
+   (`DEDUPE_JUDGE_VERSION`), so a changed standard re-asks old verdicts
+   once, and a judged loser that had already published keeps its page
+   but carries `dup_of` in its archive record and leaves search, the
+   hubs and the archive listings for good.
    **Duplicate canon across builds (owner sweep 2026-09-01):** the cluster
    representative is stable — our copy first, then the partner wire, then
    the ALREADY-ARCHIVED permalink, then score, with a pid tie-break — so

@@ -2291,7 +2291,7 @@ class AIDedupeJudgeTests(unittest.TestCase):
         self.assertEqual(dropped, 1)
         self.assertEqual([i["pid"] for i in en], ["jdecocuts1"])  # higher score survives
         self.assertEqual(len(client.calls), 1)
-        key = "dupe:en:" + ":".join(sorted(("jdecocuts1", "jdecomaint")))
+        key = build._judge_pair_key("en", "jdecocuts1", "jdecomaint")
         self.assertTrue(cache[key]["same"])
 
     def test_separate_verdict_keeps_both_stories(self):
@@ -2312,13 +2312,55 @@ class AIDedupeJudgeTests(unittest.TestCase):
     def test_cached_verdict_never_asks_the_model_again(self):
         a, b = self._jdeco_pair()
         client = _FakeBriefsClient([])  # any call would raise IndexError
-        key = "dupe:en:" + ":".join(sorted(("jdecocuts1", "jdecomaint")))
+        key = build._judge_pair_key("en", "jdecocuts1", "jdecomaint")
         with tempfile.TemporaryDirectory() as td:
             (Path(td) / "briefs-cache.json").write_text(
                 json.dumps({key: {"same": True, "ts": 0}}))
             en, ar, dropped = self._run([a, b], [], client, td)
         self.assertEqual(dropped, 1)
         self.assertEqual(len(client.calls), 0)
+
+    def test_standard_is_the_readers_and_versioned(self):
+        # Owner report 2026-09-02: five relays of Dr Abu Safiya's account of
+        # being beaten ran the same afternoon because v1 called every relay
+        # "a separate announcement" and defaulted to SEPARATE when unsure.
+        self.assertIn("reading the same news twice", build.DEDUPE_JUDGE_SYSTEM)
+        self.assertIn("whichever outlet, agency, rights group, lawyer",
+                      build.DEDUPE_JUDGE_SYSTEM)
+        self.assertNotIn("When uncertain, answer SEPARATE", build.DEDUPE_JUDGE_SYSTEM)
+        key = build._judge_pair_key("ar", "b", "a")
+        self.assertTrue(key.startswith(f"dupe:{build.DEDUPE_JUDGE_VERSION}:ar:a:b"))
+        self.assertNotEqual(build.DEDUPE_JUDGE_VERSION, "v1",
+                            "a changed standard must re-ask the old verdicts")
+
+    def test_judged_loser_with_a_permalink_is_flagged_in_the_archive(self):
+        import story_archive
+        a, b = self._jdeco_pair()
+        client = _FakeBriefsClient(["DUPLICATE"])
+        with tempfile.TemporaryDirectory() as td, \
+                mock.patch.dict(os.environ, {"STORY_ARCHIVE_DIR": td}):
+            story_archive.save(a)  # both published before the verdict —
+            story_archive.save(b)  # the Abu Safiya case; score decides
+            en, ar, dropped = self._run([a, b], [], client, td)
+            loser = json.loads((Path(td) / "en" / "jdecomaint.json").read_text(
+                encoding="utf-8"))
+            winner = json.loads((Path(td) / "en" / "jdecocuts1.json").read_text(
+                encoding="utf-8"))
+            self.assertEqual(loser["dup_of"], "jdecocuts1")
+            self.assertIsNone(winner.get("dup_of"))
+            loaded = {r["pid"]: r for r in story_archive.load("en")}
+            self.assertEqual(loaded["jdecomaint"]["dup_of"], "jdecocuts1")
+            self.assertNotIn("dup_of", loaded["jdecocuts1"])
+        self.assertEqual(dropped, 1)
+        self.assertEqual([i["pid"] for i in en], ["jdecocuts1"])
+
+    def test_judged_loser_without_a_permalink_gains_none(self):
+        a, b = self._jdeco_pair()
+        client = _FakeBriefsClient(["DUPLICATE"])
+        with tempfile.TemporaryDirectory() as td, \
+                mock.patch.dict(os.environ, {"STORY_ARCHIVE_DIR": td}):
+            self._run([a, b], [], client, td)
+            self.assertFalse((Path(td) / "en").exists())
 
     def test_contradicting_places_are_never_even_asked_about(self):
         base = datetime(2026, 8, 9, 12, tzinfo=timezone.utc)
