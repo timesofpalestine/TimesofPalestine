@@ -132,7 +132,11 @@ land in a specific window.
   cleansing (covered today as `nyt-israeli-generals-ethnic-cleansing-2026-09-01.*`),
   with 3,200+ Palestinians driven out in 2024 on the Times's figures. The
   refresh takes the September OCHA/OHCHR numbers and names the villages
-  added since 8 August.
+  added since 8 August. **Still open as of 2026-09-02** — this cycle went to
+  four stale sections and did not have research time for a fresh OCHA
+  village-by-village pull; the next cycle takes it first. Partial material
+  is now on file: the fire ledger and the six-attacks-a-day OCHA average
+  gathered for `west-bank-fire-crews-arson-2026-09-02.*` carry over.
 - **Reconstruction-money tracker refresh** (`gaza-reconstruction-money`
   after its launch): pledges vs transfers vs rubble, dashboard updated.
 
@@ -202,6 +206,19 @@ land in a specific window.
     returns after the author's near-fatal hospitalisation in October 2019.
     Filed the same day the humans section went stale at 52 hours in both
     editions.
+    A second Real Lives original ran on 2026-09-02 to clear the humans
+    section again in both editions: `west-bank-fire-crews-arson-2026-09-02.*`
+    — a trade profile of the Palestinian Civil Defence crews who fight
+    settler arson in the West Bank, written in the same craft register as
+    the ambulance-crews report of 30 August. Carries the Commission Against
+    the Wall and Settlements' fire ledger (900 fires between January 2023
+    and 10 July 2026, 799 of them — 88.8 per cent — set by settlers and 101
+    by the army; 217 in 2023, 264 in 2024, 307 in 2025, 112 to 10 July this
+    year), the Area C clearance and water arithmetic a station actually
+    works with, the Taybeh fire of 10 June (Father Bashar Fawadleh and the
+    civil defence spokesman Nael al-Azza both attributed), the Ein Siniya
+    burn of roughly fifty dunams, and OCHA's average of six settler attacks
+    a day. Filed as the October olive-harvest burn window opens.
 - **Arabic-first commissioning:** 2–3 originals per month reported for the
   Arabic reader first (Arab Support and Her Story are the natural homes),
   then rendered into English.

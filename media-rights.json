@@ -1,716 +1,723 @@
 {
-  "version": 1,
-  "assets": [
-    {
-      "asset": "originals/media/times-of-palestine-2026-election-succession-timeline.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-2026-succession-power-map.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-france-pause-gaza-timeline.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-chile-palestinian-friendship-day-timeline.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-madrid-palestinian-culture-pact-accountability.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-washington-brief-2026-07-30-gaza-money.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-east-asia-palestine-projects-2026.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "CEAPAD Project List, Japan Ministry of Foreign Affairs, 22 July 2026"
-    },
-    {
-      "asset": "og-banner.png",
-      "rightsBasis": "owned",
-      "credit": "Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "icon-512.png",
-      "rightsBasis": "owned",
-      "credit": "Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "signal-qr.png",
-      "rightsBasis": "operational",
-      "credit": "Times of Palestine Signal contact code",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "suha-arafat/media/gaza-airport-1998-arafat-clinton.jpg",
-      "rightsBasis": "public-domain",
-      "credit": "White House photograph, public domain",
-      "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
-      "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
-      "note": "Yasser Arafat and Bill Clinton at the Gaza International Airport ribbon-cutting, 14 Dec 1998, Suha Arafat behind them"
-    },
-    {
-      "asset": "suha-arafat/media/suha-arafat-hillary-clinton-gaza-1998.jpg",
-      "rightsBasis": "public-domain",
-      "credit": "White House photograph, public domain",
-      "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
-      "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
-      "note": "Suha Arafat with First Lady Hillary Clinton at a women's event in Gaza, 14 Dec 1998"
-    },
-    {
-      "asset": "suha-arafat/media/zahwa-silla-malta-arrival.jpg",
-      "rightsBasis": "courtesy",
-      "credit": "Photograph obtained by Times of Palestine",
-      "source": "Supplied to Times of Palestine by the publisher, July 2026",
-      "licenseUrl": null,
-      "note": "Zahwa Arafat receiving Silla, a wounded Gaza child, on arrival in Malta"
-    },
-    {
-      "asset": "suha-arafat/media/zahwa-silla-malta.jpg",
-      "rightsBasis": "courtesy",
-      "credit": "Photograph obtained by Times of Palestine",
-      "source": "Supplied to Times of Palestine by the publisher, July 2026",
-      "licenseUrl": null,
-      "note": "Zahwa Arafat with Silla in Malta"
-    },
-    {
-      "asset": "suha-arafat/media/zahwa-graduation-malta-2017.jpg",
-      "rightsBasis": "courtesy",
-      "credit": "Photograph obtained by Times of Palestine",
-      "source": "Supplied to Times of Palestine by the publisher, August 2026",
-      "licenseUrl": null,
-      "note": "Zahwa Arafat's University of Malta graduation, November 2017"
-    },
-    {
-      "asset": "suha-arafat/media/zahwa-diploma-university-of-malta.jpg",
-      "rightsBasis": "courtesy",
-      "credit": "Photograph obtained by Times of Palestine",
-      "source": "Supplied to Times of Palestine by the publisher, August 2026",
-      "licenseUrl": null,
-      "note": "University of Malta diploma of Zahwa El Kodwa (al-Qudwa), 13 Nov 2017"
-    },
-    {
-      "asset": "suha-arafat/media/zahwa-gaza-child-malta.jpg",
-      "rightsBasis": "courtesy",
-      "credit": "Photograph obtained by Times of Palestine",
-      "source": "Supplied to Times of Palestine by the publisher, August 2026",
-      "licenseUrl": null,
-      "note": "Zahwa Arafat playing with a Gaza child under treatment in Malta"
-    },
-    {
-      "asset": "originals/media/mohammad-dahlan-facebook-post-2026-08-01.jpg",
-      "rightsBasis": "news-reporting screenshot",
-      "credit": "Photo: Mohammad Dahlan's verified Facebook page (screenshot)",
-      "source": "Public statement posted on Mohammad Dahlan's verified Facebook account, 1 Aug 2026; supplied to the newsroom by the owner",
-      "note": "The post is the subject of the article (Kushner halt confirmation); reproduced for news reporting and quotation of a public figure's public statement"
-    },
-    {
-      "asset": "originals/media/haya-washington-life-school-2026.mp4",
-      "rightsBasis": "publisher-supplied — the organization's own published video, provided to the newsroom by the owner for news reporting",
-      "credit": "Video: Haya Washington",
-      "source": "Haya Washington"
-    },
-    {
-      "asset": "originals/media/haya-washington-life-school-triptych-2026.jpg",
-      "rightsBasis": "publisher-supplied — stills from the organization's own published video, provided to the newsroom by the owner for news reporting",
-      "credit": "Photo triptych: stills from Haya Washington's video",
-      "source": "Haya Washington"
-    },
-    {
-      "asset": "originals/media/haya-washington-life-school-entrance-2026.jpg",
-      "rightsBasis": "publisher-supplied — stills from the organization's own published video, provided to the newsroom by the owner for news reporting",
-      "credit": "Photo: still from Haya Washington's video",
-      "source": "Haya Washington"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eizenkot,%20November%202020%20(GPOMN1%209040)%20(cropped).jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Gadi Eisenkot — Wikimedia Commons / Spokesperson unit, President of Israel",
-      "source": "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot,_November_2020_(GPOMN1_9040)_(cropped).jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot,_November_2020_(GPOMN1_9040)_(cropped).jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jibril%20Rajoub.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Jibril Rajoub — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Jibril_Rajoub.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Jibril_Rajoub.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Saifedean-ammous-portrait.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Saifedean Ammous — Nadezhda Hope Boginya / Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Saifedean-ammous-portrait.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "note": "Portrait dated 18 July 2020; permission confirmed through Wikimedia Commons VRT"
-    },
-    {
-      "asset": "https://img.youtube.com/vi/MqNDO0FjZxs/hqdefault.jpg",
-      "rightsBasis": "news-reporting thumbnail — still of Palestine TV's own published report, used to identify the report this feature covers and embeds",
-      "credit": "Photo: Palestine TV report (thumbnail)",
-      "source": "https://youtu.be/MqNDO0FjZxs"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Admiral%20Brad%20Cooper%20(Charles%20B.%20Cooper%20II),%20Commander%20of%20United%20States%20Central%20Command%20on%20August%208,%202025%20(cropped).jpg?width=640",
-      "rightsBasis": "public domain — official US Department of Defense photograph, served from Wikimedia Commons and verified at build time",
-      "credit": "Adm. Brad Cooper — US Department of Defense photo via Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Admiral_Brad_Cooper_(Charles_B._Cooper_II),_Commander_of_United_States_Central_Command_on_August_8,_2025_(cropped).jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Admiral_Brad_Cooper_(Charles_B._Cooper_II),_Commander_of_United_States_Central_Command_on_August_8,_2025_(cropped).jpg"
-    },
-    {
-      "asset": "originals/media/mohammad-dahlan-facebook-post-2026-08-02.jpg",
-      "rightsBasis": "news-reporting screenshot — the public statement this story reports, as posted on the subject's verified page",
-      "credit": "Photo: Mohammad Dahlan's verified Facebook page (screenshot)",
-      "source": "https://www.facebook.com"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ahmed%20al-Sharaa,%20President%20of%20Syria,%20in%20March%202026.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed official portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Ahmed al-Sharaa — Wikimedia Commons / Syrian Presidency",
-      "source": "https://commons.wikimedia.org/wiki/File:Ahmed_al-Sharaa,_President_of_Syria,_in_March_2026.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ahmed_al-Sharaa,_President_of_Syria,_in_March_2026.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%2C%20February%202023.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Benjamin Netanyahu — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu,_February_2023.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu,_February_2023.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahmoud%20Abbas.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Mahmoud Abbas — Wikimedia Commons / Palestinian Authority press office",
-      "source": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Institute%20of%20Peace%20Washington%20DC%202025-04-05%2012-25-39%201.jpg?width=800",
-      "rightsBasis": "wikimedia-cc — CC BY 4.0 photograph served from Wikimedia Commons, verified at build time",
-      "credit": "United States Institute of Peace, Washington — G. Edward Johnson / Wikimedia Commons, CC BY 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:United_States_Institute_of_Peace_Washington_DC_2025-04-05_12-25-39_1.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Capitol%20west%20front%20edit2.jpg?width=800",
-      "rightsBasis": "wikimedia-cc — free-licensed featured picture served from Wikimedia Commons, verified at build time",
-      "credit": "US Capitol — Martin Falbisoner / Wikimedia Commons, CC BY-SA 3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_west_front_edit2.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20portrait%20of%20Treasury%20Secretary%20Scott%20Bessent.jpg?width=640",
-      "rightsBasis": "public-domain — official portrait produced by the US Department of the Treasury, a work of the US federal government, served from Wikimedia Commons and verified at build time",
-      "credit": "Treasury Secretary Scott Bessent — US Department of the Treasury / Wikimedia Commons, public domain",
-      "source": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Treasury_Secretary_Scott_Bessent.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-washington-brief-2026-08-15-treasury-two-files.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/us-treasury-building-2026.jpg",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph from Wikimedia Commons, saved locally under the licence's attribution and share-alike terms",
-      "credit": "The US Treasury Building and the Albert Gallatin statue, Washington DC, 2 September 2017 — Sealy j / Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:U.S._Treasury_Building_and_Albert_Gallatin_Statue.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-washington-brief-2026-08-28-designation-machinery.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/ali-al-thawadi-un-2026.jpg",
-      "rightsBasis": "owner-supplied — cover art provided directly by the publisher for this story (2026-08-03)",
-      "credit": "Photo: Times of Palestine",
-      "source": "Publisher upload, 2026-08-03"
-    },
-    {
-      "asset": "originals/media/mohammed-assaf-2026.jpg",
-      "rightsBasis": "owner-supplied — cover art provided directly by the publisher for this story (2026-08-04)",
-      "credit": "Photo: Times of Palestine",
-      "source": "Publisher upload, 2026-08-04"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Kiriakou%20cropped.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "John Kiriakou — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:John_Kiriakou_cropped.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:John_Kiriakou_cropped.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mo%20Amer.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Mo Amer — Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Mo_Amer.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/EPP%20Political%20Assembly%2C%20Nickolay%20Mladenov%20%28cropped%29.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Nickolay Mladenov — European People's Party / Wikimedia Commons, CC BY 2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:EPP_Political_Assembly,_Nickolay_Mladenov_(cropped).jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-washington-brief-2026-08-04-disarmament-clocks.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Khalaf%20Ahmad%20Al%20Habtoor.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Khalaf Al Habtoor — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Khalaf_Ahmad_Al_Habtoor.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Khalaf_Ahmad_Al_Habtoor.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Musakhan.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed dish photograph served from Wikimedia Commons, verified at build time",
-      "credit": "Musakhan — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Musakhan.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Musakhan.jpg"
-    },
-    {
-      "asset": "originals/media/nizar-banat-protest-2026.jpg",
-      "rightsBasis": "owner-supplied — cover photograph provided directly by the publisher for this story (2026-08-04)",
-      "credit": "Photo: Times of Palestine",
-      "source": "Publisher upload, 2026-08-04"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenneth%20Roth%20at%2044th%20Munich%20Security%20Conference.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Kenneth Roth at the 44th Munich Security Conference — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Kenneth_Roth_at_44th_Munich_Security_Conference.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Kenneth_Roth_at_44th_Munich_Security_Conference.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Strait%20of%20Hormuz%20and%20Musandam%20Peninsula%20%28MODIS%202018-12-10%29.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — NASA MODIS satellite image (public domain as a US government work), served from Wikimedia Commons and verified at build time",
-      "credit": "NASA Terra/MODIS — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Strait_of_Hormuz_and_Musandam_Peninsula_(MODIS_2018-12-10).jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Strait_of_Hormuz_and_Musandam_Peninsula_(MODIS_2018-12-10).jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/10%20Downing%20Street.%20MOD%2045155532.jpg?width=640",
-      "rightsBasis": "open-government-licence — official UK Ministry of Defence photograph of the door of 10 Downing Street (OGL), served from Wikimedia Commons and verified at build time",
-      "credit": "The door of 10 Downing Street — Sergeant Tom Robinson RLC / UK Ministry of Defence, via Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:10_Downing_Street._MOD_45155532.jpg",
-      "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Bashar%20Masry.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Bashar Masri — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Bashar_Masry.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bashar_Masry.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sabih%20Al%20Masry.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Sabih al-Masri — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Sabih_Al_Masry.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sabih_Al_Masry.jpg"
-    },
-    {
-      "asset": "originals/media/tamim-barghouti-family-2026.jpg",
-      "rightsBasis": "owner-supplied — cover photo provided directly by the publisher for this story (2026-08-08)",
-      "credit": "Tamim al-Barghouti with his parents, Radwa Ashour and Mourid Barghouti — photo supplied by the publisher",
-      "source": "Publisher upload, 2026-08-08"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Shireen%20Abu%20Akleh.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Shireen Abu Akleh — Al Jazeera Media Network / Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Shireen_Abu_Akleh.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Wael%20Al-Dahdouh%202024.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Wael Al-Dahdouh — Nawaat / Wikimedia Commons, CC BY 3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Wael_Al-Dahdouh_2024.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Motaz%20Azaiza%20close-up%20(cropped).jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Motaz Azaiza — FeaturingDallas / Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Motaz_Azaiza_close-up_(cropped).jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Bisan%20Owda%20gives%20update%20from%20Al%20Mawasi%20for%20Save%20the%20Children.png?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Bisan Owda — Bisan Owda / Save the Children, via Wikimedia Commons, CC BY 3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Bisan_Owda_gives_update_from_Al_Mawasi_for_Save_the_Children.png",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahahussaini%201.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Maha Hussaini — Euro-Med Human Rights Monitor / Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Mahahussaini_1.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Fatima%20Hassouna.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Fatma Hassona — Andrea Ebert / Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Fatima_Hassouna.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Rula%20Jebreal%20(cropped).jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Rula Jebreal — GrosvenorMetro / Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Rula_Jebreal_(cropped).jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-emirates-loves-palestine-2026.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-emirates-loves-palestine-details-2026.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "https://img.youtube.com/vi/WBmrT3uqmeM/hqdefault.jpg",
-      "rightsBasis": "news-reporting thumbnail — still of the official Comfortably Numb Re-Imagined music video this feature covers and embeds",
-      "credit": "Photo: Roger Waters & Mona Miari — Comfortably Numb Re-Imagined (official video thumbnail)",
-      "source": "https://www.youtube.com/watch?v=WBmrT3uqmeM"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-mona-miari-2026.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "originals/media/mahmoud-darwish-memorial-2026.jpg",
-      "rightsBasis": "owner-supplied — commemorative artwork provided directly by the publisher for the Darwish anniversary report",
-      "credit": "Artwork: supplied by the publisher, Times of Palestine",
-      "source": "Times of Palestine (owner upload, 2026-08-10)"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Embroidery%20from%20Beersheba%20Dress%20(Palestinian%20Thobe).jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed photograph of Palestinian tatreez (embroidery from a Beersheba-area dress) served from Wikimedia Commons, verified at build time",
-      "credit": "Photo: Ma'moun Othman / Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Embroidery_from_Beersheba_Dress_(Palestinian_Thobe).jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-diaspora-dispatch-2026-08-14-madison-hebron-tatreez.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Qusra7466.JPG?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 village view of Qusra served from Wikimedia Commons, verified at build time",
-      "credit": "Qusra, Nablus governorate — Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Qusra7466.JPG",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Qusra7466.JPG"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Palestinians%20live%20in%20an%20area%20destroyed%20by%20Israeli%20airstrike%20in%20Rafah%2C%20Gaza%20Strip%203.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed news photograph served from Wikimedia Commons, verified at build time",
-      "credit": "Destroyed quarter of Rafah — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Palestinians_live_in_an_area_destroyed_by_Israeli_airstrike_in_Rafah,_Gaza_Strip_3.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palestinians_live_in_an_area_destroyed_by_Israeli_airstrike_in_Rafah,_Gaza_Strip_3.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Beit%20sohar%20Offer.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed photograph of the Ofer military prison served from Wikimedia Commons, verified at build time",
-      "credit": "Ofer military prison, occupied West Bank — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Beit_sohar_Offer.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Beit_sohar_Offer.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jared%20Kushner%202025.jpg?width=640",
-      "rightsBasis": "public-domain — official White House photograph by Andrea Hanks, a work of an employee of the Executive Office of the President of the United States, served from Wikimedia Commons and verified at build time",
-      "credit": "Jared Kushner — Andrea Hanks / The White House, via Wikimedia Commons, public domain",
-      "source": "https://commons.wikimedia.org/wiki/File:Jared_Kushner_2025.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-POTUS"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mansaf%2C%20the%20traditional%20dish%20of%20Jordan.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed photograph of mansaf served from Wikimedia Commons, verified at build time",
-      "credit": "Mansaf, the shared table of the Levant — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Mansaf,_the_traditional_dish_of_Jordan.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mansaf,_the_traditional_dish_of_Jordan.jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jared%20Kushner%20June%202019.jpg?width=640",
-      "rightsBasis": "public-domain — work of a US Department of State employee in the course of official duties (17 U.S.C. §105), served from Wikimedia Commons and verified at build time",
-      "credit": "Jared Kushner — US Mission to the European Union / Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Jared_Kushner_June_2019.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-DOS",
-      "note": "Photograph dated 4 June 2019; verified on Commons 2026-08-17"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Senator%20Ruben%20Gallego%20Official%20Portrait.jpg?width=640",
-      "rightsBasis": "public-domain — US Senate Photographic Studio portrait, PD-USGov-Congress, served from Wikimedia Commons and verified at build time",
-      "credit": "Senator Ruben Gallego — US Senate Photographic Studio / Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Senator_Ruben_Gallego_Official_Portrait.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Congress",
-      "note": "Official portrait, February 2025; verified on Commons 2026-08-17"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Avraham%20Burg%20by%20David%20Shankbone.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 / GFDL portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Avraham Burg — David Shankbone / Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Avraham_Burg_by_David_Shankbone.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "note": "Portrait dated April 2008; licence verified on Commons 2026-08-17"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/U%20S%20Congress%20Members%20Visit%20the%20Civil-Military%20Coordination%20Center%20%289499802%29.jpg?width=640",
-      "rightsBasis": "public-domain — work of a US Army soldier made in the course of official duties, PD-USGov-Military-Army, served from Wikimedia Commons and verified at build time",
-      "credit": "Members of the US House Armed Services Committee at the Civil-Military Coordination Center, Kiryat Gat — Sgt. Kathryn Skonning, 207th Public Affairs Detachment / US Army via DVIDS",
-      "source": "https://commons.wikimedia.org/wiki/File:U_S_Congress_Members_Visit_the_Civil-Military_Coordination_Center_(9499802).jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Army",
-      "note": "Photograph dated 26 January 2026, DVIDS VIRIN 260127-A-GH673-1096; licence verified on Commons 2026-08-17"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nir%20Barkat%202023.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY 4.0 portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Nir Barkat — Nizzan Cohen / Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Nir_Barkat_2023.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "note": "Portrait dated 10 January 2023; licence verified on Commons 2026-08-17"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/BG%20Jasper%20Jeffers%20III%20%284%29.jpg?width=640",
-      "rightsBasis": "public-domain — official US Army portrait made in the course of official duties, PD-USGov-Military-Army, served from Wikimedia Commons and verified at build time",
-      "credit": "Maj. Gen. Jasper Jeffers III, commander of US Special Operations Command Central — William J. Seifert / US Army via SOCCENT",
-      "source": "https://commons.wikimedia.org/wiki/File:BG_Jasper_Jeffers_III_(4).jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Army",
-      "note": "Official portrait dated 5 June 2024, from his SOCCENT biography PDF; licence verified on Commons 2026-08-18"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Israeli%20Foreign%20Minister%20Eli%20Cohen%20visit%20to%20Greece%2C%20July%202023%2002.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 2.0 photograph (Greek Ministry of Foreign Affairs) served from Wikimedia Commons, verified at build time",
-      "credit": "Eli Cohen — Hellenic Ministry of Foreign Affairs via Wikimedia Commons (CC BY-SA 2.0)",
-      "source": "https://commons.wikimedia.org/wiki/File:Israeli_Foreign_Minister_Eli_Cohen_visit_to_Greece,_July_2023_02.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Israel%20Katz%20%28IMG%209196%29.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph (Itzhak Harari) served from Wikimedia Commons, verified at build time",
-      "credit": "Israel Katz — Itzhak Harari via Wikimedia Commons (CC BY-SA 4.0)",
-      "source": "https://commons.wikimedia.org/wiki/File:Israel_Katz_(IMG_9196).jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Khirbet%20Ibziq%206.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph of a northern Jordan Valley herding community (Aref Daraghmeh / B'Tselem) served from Wikimedia Commons, verified at build time",
-      "credit": "Khirbet Ibziq, northern Jordan Valley — Aref Daraghmeh / B'Tselem via Wikimedia Commons (CC BY-SA 4.0)",
-      "source": "https://commons.wikimedia.org/wiki/File:Khirbet_Ibziq_6.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Bezalel%20Smotrich%20%28cropped%29.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 portrait (Eitan Fold) served from Wikimedia Commons, verified at build time",
-      "credit": "Bezalel Smotrich — Eitan Fold via Wikimedia Commons (CC BY-SA 3.0)",
-      "source": "https://commons.wikimedia.org/wiki/File:Bezalel_Smotrich_(cropped).jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ofer%20prison%20entrance.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — free-licensed photo served from Wikimedia Commons (Category:Ofer Prison), verified live at build time with house-SVG fallback",
-      "credit": "The entrance of Ofer military prison — Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Ofer_prison_entrance.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ofer_prison_entrance.jpg",
-      "note": "Cover for the Dima Barakat file; Commons hosts only free-licensed media and the build verifies the URL live, falling back to the campaign SVG if it dies"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Ambassador%20to%20Turkey%20Thomas%20Joseph%20Barrack%20Jr%20%28cropped%29.jpg?width=640",
-      "rightsBasis": "public-domain — official US State Department portrait (a work of the United States federal government), served from Wikimedia Commons and verified live at build time",
-      "credit": "Tom Barrack, US ambassador to Turkey and special envoy for Syria — US State Department via Wikimedia Commons (public domain)",
-      "source": "https://commons.wikimedia.org/wiki/File:United_States_Ambassador_to_Turkey_Thomas_Joseph_Barrack_Jr_(cropped).jpg",
-      "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-      "note": "Lede for the Washington Brief of 2026-08-19; falls back to the brief's house SVG if the remote file dies"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/International%20Criminal%20Court%20Headquarters%2C%20Netherlands.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph served from Wikimedia Commons, verified at build time",
-      "credit": "International Criminal Court headquarters, The Hague — Wikimedia Commons / Hypergio, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:International_Criminal_Court_Headquarters,_Netherlands.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Fishermen%20in%20Gaza.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY 2.0 photograph served from Wikimedia Commons, verified at build time",
-      "credit": "Fishermen at Gaza's port — Wikimedia Commons / Trócaire, CC BY 2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Fishermen_in_Gaza.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "note": "Cover for gaza-fishermen-return-to-sea-2026; falls back to the humans category cover if the remote file dies"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Skyline%20Turmus%20Ayya%202023.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph served from Wikimedia Commons, verified at build time",
-      "credit": "Turmus Ayya, occupied West Bank — Wikimedia Commons / Amerhaddad, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Skyline_Turmus_Ayya_2023.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "note": "Cover for turmus-ayya-flag-home-seizure-2026-08-12; falls back to the West Bank category cover if the remote file dies"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20United%20States%20State%20Department%20Headquarters%20Building.jpg?width=640",
-      "rightsBasis": "public-domain — official US Department of State photograph, PD-USGov, served from Wikimedia Commons and verified at build time",
-      "credit": "The Harry S. Truman Building, State Department headquarters, Washington — Wikimedia Commons / US Department of State, public domain",
-      "source": "https://commons.wikimedia.org/wiki/File:The_United_States_State_Department_Headquarters_Building.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
-      "note": "Cover for washington-brief-2026-08-20; falls back to the report's own ledger SVG if the remote file dies"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mike%20Huckabee,%20official%20portrait%20(2025)%20(cropped).jpg?width=640",
-      "rightsBasis": "public-domain — official US Department of State portrait, PD-USGov, served from Wikimedia Commons and verified at build time",
-      "credit": "Mike Huckabee, US ambassador to Israel, official portrait 2025 — Wikimedia Commons / US Embassy Jerusalem, public domain",
-      "source": "https://commons.wikimedia.org/wiki/File:Mike_Huckabee,_official_portrait_(2025)_(cropped).jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
-      "note": "Cover for washington-brief-2026-08-22; falls back to the report's own settler-sanctions SVG if the remote file dies"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Palestine%20Trade%20Tower.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph served from Wikimedia Commons, verified at build time",
-      "credit": "Palestine Trade Tower, Ramallah — Mohammad Hijjawi / Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Palestine_Trade_Tower.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "note": "Cover for alquds-index-august-run-2026-08-24 and the markets-watch beat; falls back to the economy category cover if the remote file dies"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ugandan%20AMISOM%20Guard%20of%20Honour%20for%20Burundi%20Defence%20Minister%20(6243505602).jpg?width=640",
-      "rightsBasis": "public-domain — CC0 1.0 Universal dedication by AMISOM Public Information, served from Wikimedia Commons and verified at build time",
-      "credit": "Ugandan AMISOM contingent guard of honour, Mogadishu, 10 October 2011 — Wikimedia Commons / AMISOM Public Information (AU-UN IST, John Rose), CC0 1.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Ugandan_AMISOM_Guard_of_Honour_for_Burundi_Defence_Minister_(6243505602).jpg",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "note": "Cover for washington-brief-2026-08-24; falls back to the report's own ISF recruits SVG if the remote file dies"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sliman%20Mansour.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 photograph served from Wikimedia Commons, verified at build time",
-      "credit": "Sliman Mansour at the Palestine International Book Fair, 2023 — Wikimedia Commons, CC BY-SA 3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Sliman_Mansour.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yair%20Golan%202020.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Yair Golan, February 2020 — Laliv g / Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Yair_Golan_2020.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yoram-Cohen-0003.jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 portrait served from Wikimedia Commons, verified at build time",
-      "credit": "Yoram Cohen — Amos Ben Gershom, Israeli Government Press Office / Wikimedia Commons, CC BY-SA 3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Yoram-Cohen-0003.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Itamar%20Ben%20Gvir%203%20(cropped).jpg?width=640",
-      "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 photograph served from Wikimedia Commons, verified at build time",
-      "credit": "Itamar Ben Gvir, 2022 — Alon Nuriel / Wikimedia Commons, CC BY-SA 3.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Itamar_Ben_Gvir_3_(cropped).jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruben%20Gallego%20official%20photo.jpg?width=640",
-      "rightsBasis": "public-domain — official US House photograph, public domain, served from Wikimedia Commons and verified at build time",
-      "credit": "Senator Ruben Gallego — US House Office of Photography / Wikimedia Commons, public domain",
-      "source": "https://commons.wikimedia.org/wiki/File:Ruben_Gallego_official_photo.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ruben_Gallego_official_photo.jpg"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-washington-brief-2026-08-29-two-clearing-lines.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gregory%20Meeks,%20official%20portrait,%20115th%20congress%20(cropped).jpg?width=640",
-      "rightsBasis": "public-domain — official U.S. House of Representatives portrait, a work of a US Congress employee made in the course of official duties",
-      "credit": "Gregory Meeks — Kristie Boyd, U.S. House Office of Photography, via Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Gregory_Meeks,_official_portrait,_115th_congress_(cropped).jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gregory_Meeks,_official_portrait,_115th_congress_(cropped).jpg"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Pete%20Hegseth%20Official%20Portrait.jpg?width=640",
-      "rightsBasis": "public-domain — official US Department of Defense portrait, a work of a US federal government employee made in the course of official duties",
-      "credit": "Pete Hegseth — Chad J. McNeeley, U.S. Department of Defense, via Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Pete_Hegseth_Official_Portrait.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Pete_Hegseth_Official_Portrait.jpg"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-washington-brief-2026-08-30-two-ledgers.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20sun%20rises%20over%20Azraq%20Air%20Base.JPG?width=640",
-      "rightsBasis": "public-domain — a work of a US Air Force airman made in the course of official duties",
-      "credit": "Sunrise over Muwaffaq Salti Air Base, Jordan — Eric Harris, U.S. Air Force / Air Forces Central, via Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:The_sun_rises_over_Azraq_Air_Base.JPG",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_sun_rises_over_Azraq_Air_Base.JPG"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-washington-brief-2026-08-31-war-reaches-arab-soil.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mansour%20Abbas%202025.jpg?width=640",
-      "rightsBasis": "wikimedia-cc \u2014 CC BY-SA 4.0 photograph served from Wikimedia Commons, verified at build time",
-      "credit": "Mansour Abbas, 3 April 2025 \u2014 David Shay / Wikimedia Commons, CC BY-SA 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Mansour_Abbas_2025.jpg",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    {
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Kharg%20island.jpg?width=640",
-      "rightsBasis": "public-domain — a NASA work (PD-USGov-NASA), created solely by the US space agency",
-      "credit": "Kharg Island, Iran, photographed from Space Shuttle mission STS-055, April 1993 — NASA, via Wikimedia Commons",
-      "source": "https://commons.wikimedia.org/wiki/File:Kharg_island.jpg",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Kharg_island.jpg"
-    },
-    {
-      "asset": "originals/media/times-of-palestine-washington-brief-2026-09-01-two-directions.svg",
-      "rightsBasis": "owned",
-      "credit": "Graphic: Times of Palestine",
-      "source": "Times of Palestine"
-    }
-  ]
+ "version": 1,
+ "assets": [
+  {
+   "asset": "originals/media/times-of-palestine-2026-election-succession-timeline.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-2026-succession-power-map.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-france-pause-gaza-timeline.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-chile-palestinian-friendship-day-timeline.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-madrid-palestinian-culture-pact-accountability.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-washington-brief-2026-07-30-gaza-money.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-east-asia-palestine-projects-2026.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "CEAPAD Project List, Japan Ministry of Foreign Affairs, 22 July 2026"
+  },
+  {
+   "asset": "og-banner.png",
+   "rightsBasis": "owned",
+   "credit": "Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "icon-512.png",
+   "rightsBasis": "owned",
+   "credit": "Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "signal-qr.png",
+   "rightsBasis": "operational",
+   "credit": "Times of Palestine Signal contact code",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "suha-arafat/media/gaza-airport-1998-arafat-clinton.jpg",
+   "rightsBasis": "public-domain",
+   "credit": "White House photograph, public domain",
+   "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
+   "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
+   "note": "Yasser Arafat and Bill Clinton at the Gaza International Airport ribbon-cutting, 14 Dec 1998, Suha Arafat behind them"
+  },
+  {
+   "asset": "suha-arafat/media/suha-arafat-hillary-clinton-gaza-1998.jpg",
+   "rightsBasis": "public-domain",
+   "credit": "White House photograph, public domain",
+   "source": "Clinton White House archive (clintonwhitehouse3.archives.gov, December 1998 Middle East trip)",
+   "licenseUrl": "https://clintonwhitehouse3.archives.gov/WH/New/mideast/photos-1214.html",
+   "note": "Suha Arafat with First Lady Hillary Clinton at a women's event in Gaza, 14 Dec 1998"
+  },
+  {
+   "asset": "suha-arafat/media/zahwa-silla-malta-arrival.jpg",
+   "rightsBasis": "courtesy",
+   "credit": "Photograph obtained by Times of Palestine",
+   "source": "Supplied to Times of Palestine by the publisher, July 2026",
+   "licenseUrl": null,
+   "note": "Zahwa Arafat receiving Silla, a wounded Gaza child, on arrival in Malta"
+  },
+  {
+   "asset": "suha-arafat/media/zahwa-silla-malta.jpg",
+   "rightsBasis": "courtesy",
+   "credit": "Photograph obtained by Times of Palestine",
+   "source": "Supplied to Times of Palestine by the publisher, July 2026",
+   "licenseUrl": null,
+   "note": "Zahwa Arafat with Silla in Malta"
+  },
+  {
+   "asset": "suha-arafat/media/zahwa-graduation-malta-2017.jpg",
+   "rightsBasis": "courtesy",
+   "credit": "Photograph obtained by Times of Palestine",
+   "source": "Supplied to Times of Palestine by the publisher, August 2026",
+   "licenseUrl": null,
+   "note": "Zahwa Arafat's University of Malta graduation, November 2017"
+  },
+  {
+   "asset": "suha-arafat/media/zahwa-diploma-university-of-malta.jpg",
+   "rightsBasis": "courtesy",
+   "credit": "Photograph obtained by Times of Palestine",
+   "source": "Supplied to Times of Palestine by the publisher, August 2026",
+   "licenseUrl": null,
+   "note": "University of Malta diploma of Zahwa El Kodwa (al-Qudwa), 13 Nov 2017"
+  },
+  {
+   "asset": "suha-arafat/media/zahwa-gaza-child-malta.jpg",
+   "rightsBasis": "courtesy",
+   "credit": "Photograph obtained by Times of Palestine",
+   "source": "Supplied to Times of Palestine by the publisher, August 2026",
+   "licenseUrl": null,
+   "note": "Zahwa Arafat playing with a Gaza child under treatment in Malta"
+  },
+  {
+   "asset": "originals/media/mohammad-dahlan-facebook-post-2026-08-01.jpg",
+   "rightsBasis": "news-reporting screenshot",
+   "credit": "Photo: Mohammad Dahlan's verified Facebook page (screenshot)",
+   "source": "Public statement posted on Mohammad Dahlan's verified Facebook account, 1 Aug 2026; supplied to the newsroom by the owner",
+   "note": "The post is the subject of the article (Kushner halt confirmation); reproduced for news reporting and quotation of a public figure's public statement"
+  },
+  {
+   "asset": "originals/media/haya-washington-life-school-2026.mp4",
+   "rightsBasis": "publisher-supplied — the organization's own published video, provided to the newsroom by the owner for news reporting",
+   "credit": "Video: Haya Washington",
+   "source": "Haya Washington"
+  },
+  {
+   "asset": "originals/media/haya-washington-life-school-triptych-2026.jpg",
+   "rightsBasis": "publisher-supplied — stills from the organization's own published video, provided to the newsroom by the owner for news reporting",
+   "credit": "Photo triptych: stills from Haya Washington's video",
+   "source": "Haya Washington"
+  },
+  {
+   "asset": "originals/media/haya-washington-life-school-entrance-2026.jpg",
+   "rightsBasis": "publisher-supplied — stills from the organization's own published video, provided to the newsroom by the owner for news reporting",
+   "credit": "Photo: still from Haya Washington's video",
+   "source": "Haya Washington"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gadi%20Eizenkot,%20November%202020%20(GPOMN1%209040)%20(cropped).jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Gadi Eisenkot — Wikimedia Commons / Spokesperson unit, President of Israel",
+   "source": "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot,_November_2020_(GPOMN1_9040)_(cropped).jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gadi_Eizenkot,_November_2020_(GPOMN1_9040)_(cropped).jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jibril%20Rajoub.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Jibril Rajoub — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Jibril_Rajoub.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Jibril_Rajoub.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Saifedean-ammous-portrait.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Saifedean Ammous — Nadezhda Hope Boginya / Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Saifedean-ammous-portrait.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "note": "Portrait dated 18 July 2020; permission confirmed through Wikimedia Commons VRT"
+  },
+  {
+   "asset": "https://img.youtube.com/vi/MqNDO0FjZxs/hqdefault.jpg",
+   "rightsBasis": "news-reporting thumbnail — still of Palestine TV's own published report, used to identify the report this feature covers and embeds",
+   "credit": "Photo: Palestine TV report (thumbnail)",
+   "source": "https://youtu.be/MqNDO0FjZxs"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Admiral%20Brad%20Cooper%20(Charles%20B.%20Cooper%20II),%20Commander%20of%20United%20States%20Central%20Command%20on%20August%208,%202025%20(cropped).jpg?width=640",
+   "rightsBasis": "public domain — official US Department of Defense photograph, served from Wikimedia Commons and verified at build time",
+   "credit": "Adm. Brad Cooper — US Department of Defense photo via Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Admiral_Brad_Cooper_(Charles_B._Cooper_II),_Commander_of_United_States_Central_Command_on_August_8,_2025_(cropped).jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Admiral_Brad_Cooper_(Charles_B._Cooper_II),_Commander_of_United_States_Central_Command_on_August_8,_2025_(cropped).jpg"
+  },
+  {
+   "asset": "originals/media/mohammad-dahlan-facebook-post-2026-08-02.jpg",
+   "rightsBasis": "news-reporting screenshot — the public statement this story reports, as posted on the subject's verified page",
+   "credit": "Photo: Mohammad Dahlan's verified Facebook page (screenshot)",
+   "source": "https://www.facebook.com"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ahmed%20al-Sharaa,%20President%20of%20Syria,%20in%20March%202026.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed official portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Ahmed al-Sharaa — Wikimedia Commons / Syrian Presidency",
+   "source": "https://commons.wikimedia.org/wiki/File:Ahmed_al-Sharaa,_President_of_Syria,_in_March_2026.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ahmed_al-Sharaa,_President_of_Syria,_in_March_2026.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%2C%20February%202023.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Benjamin Netanyahu — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu,_February_2023.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu,_February_2023.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahmoud%20Abbas.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Mahmoud Abbas — Wikimedia Commons / Palestinian Authority press office",
+   "source": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mahmoud_Abbas.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Institute%20of%20Peace%20Washington%20DC%202025-04-05%2012-25-39%201.jpg?width=800",
+   "rightsBasis": "wikimedia-cc — CC BY 4.0 photograph served from Wikimedia Commons, verified at build time",
+   "credit": "United States Institute of Peace, Washington — G. Edward Johnson / Wikimedia Commons, CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:United_States_Institute_of_Peace_Washington_DC_2025-04-05_12-25-39_1.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Capitol%20west%20front%20edit2.jpg?width=800",
+   "rightsBasis": "wikimedia-cc — free-licensed featured picture served from Wikimedia Commons, verified at build time",
+   "credit": "US Capitol — Martin Falbisoner / Wikimedia Commons, CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_west_front_edit2.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20portrait%20of%20Treasury%20Secretary%20Scott%20Bessent.jpg?width=640",
+   "rightsBasis": "public-domain — official portrait produced by the US Department of the Treasury, a work of the US federal government, served from Wikimedia Commons and verified at build time",
+   "credit": "Treasury Secretary Scott Bessent — US Department of the Treasury / Wikimedia Commons, public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Treasury_Secretary_Scott_Bessent.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-washington-brief-2026-08-15-treasury-two-files.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/us-treasury-building-2026.jpg",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph from Wikimedia Commons, saved locally under the licence's attribution and share-alike terms",
+   "credit": "The US Treasury Building and the Albert Gallatin statue, Washington DC, 2 September 2017 — Sealy j / Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:U.S._Treasury_Building_and_Albert_Gallatin_Statue.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-washington-brief-2026-08-28-designation-machinery.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/ali-al-thawadi-un-2026.jpg",
+   "rightsBasis": "owner-supplied — cover art provided directly by the publisher for this story (2026-08-03)",
+   "credit": "Photo: Times of Palestine",
+   "source": "Publisher upload, 2026-08-03"
+  },
+  {
+   "asset": "originals/media/mohammed-assaf-2026.jpg",
+   "rightsBasis": "owner-supplied — cover art provided directly by the publisher for this story (2026-08-04)",
+   "credit": "Photo: Times of Palestine",
+   "source": "Publisher upload, 2026-08-04"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Kiriakou%20cropped.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "John Kiriakou — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:John_Kiriakou_cropped.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:John_Kiriakou_cropped.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mo%20Amer.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Mo Amer — Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Mo_Amer.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/EPP%20Political%20Assembly%2C%20Nickolay%20Mladenov%20%28cropped%29.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Nickolay Mladenov — European People's Party / Wikimedia Commons, CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:EPP_Political_Assembly,_Nickolay_Mladenov_(cropped).jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-washington-brief-2026-08-04-disarmament-clocks.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Khalaf%20Ahmad%20Al%20Habtoor.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Khalaf Al Habtoor — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Khalaf_Ahmad_Al_Habtoor.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Khalaf_Ahmad_Al_Habtoor.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Musakhan.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed dish photograph served from Wikimedia Commons, verified at build time",
+   "credit": "Musakhan — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Musakhan.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Musakhan.jpg"
+  },
+  {
+   "asset": "originals/media/nizar-banat-protest-2026.jpg",
+   "rightsBasis": "owner-supplied — cover photograph provided directly by the publisher for this story (2026-08-04)",
+   "credit": "Photo: Times of Palestine",
+   "source": "Publisher upload, 2026-08-04"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenneth%20Roth%20at%2044th%20Munich%20Security%20Conference.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Kenneth Roth at the 44th Munich Security Conference — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kenneth_Roth_at_44th_Munich_Security_Conference.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Kenneth_Roth_at_44th_Munich_Security_Conference.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Strait%20of%20Hormuz%20and%20Musandam%20Peninsula%20%28MODIS%202018-12-10%29.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — NASA MODIS satellite image (public domain as a US government work), served from Wikimedia Commons and verified at build time",
+   "credit": "NASA Terra/MODIS — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Strait_of_Hormuz_and_Musandam_Peninsula_(MODIS_2018-12-10).jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Strait_of_Hormuz_and_Musandam_Peninsula_(MODIS_2018-12-10).jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/10%20Downing%20Street.%20MOD%2045155532.jpg?width=640",
+   "rightsBasis": "open-government-licence — official UK Ministry of Defence photograph of the door of 10 Downing Street (OGL), served from Wikimedia Commons and verified at build time",
+   "credit": "The door of 10 Downing Street — Sergeant Tom Robinson RLC / UK Ministry of Defence, via Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:10_Downing_Street._MOD_45155532.jpg",
+   "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Bashar%20Masry.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Bashar Masri — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Bashar_Masry.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bashar_Masry.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sabih%20Al%20Masry.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Sabih al-Masri — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sabih_Al_Masry.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sabih_Al_Masry.jpg"
+  },
+  {
+   "asset": "originals/media/tamim-barghouti-family-2026.jpg",
+   "rightsBasis": "owner-supplied — cover photo provided directly by the publisher for this story (2026-08-08)",
+   "credit": "Tamim al-Barghouti with his parents, Radwa Ashour and Mourid Barghouti — photo supplied by the publisher",
+   "source": "Publisher upload, 2026-08-08"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Shireen%20Abu%20Akleh.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Shireen Abu Akleh — Al Jazeera Media Network / Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Shireen_Abu_Akleh.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Wael%20Al-Dahdouh%202024.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Wael Al-Dahdouh — Nawaat / Wikimedia Commons, CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Wael_Al-Dahdouh_2024.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Motaz%20Azaiza%20close-up%20(cropped).jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Motaz Azaiza — FeaturingDallas / Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Motaz_Azaiza_close-up_(cropped).jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Bisan%20Owda%20gives%20update%20from%20Al%20Mawasi%20for%20Save%20the%20Children.png?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Bisan Owda — Bisan Owda / Save the Children, via Wikimedia Commons, CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bisan_Owda_gives_update_from_Al_Mawasi_for_Save_the_Children.png",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahahussaini%201.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Maha Hussaini — Euro-Med Human Rights Monitor / Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Mahahussaini_1.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Fatima%20Hassouna.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Fatma Hassona — Andrea Ebert / Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fatima_Hassouna.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Rula%20Jebreal%20(cropped).jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Rula Jebreal — GrosvenorMetro / Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Rula_Jebreal_(cropped).jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-emirates-loves-palestine-2026.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-emirates-loves-palestine-details-2026.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "https://img.youtube.com/vi/WBmrT3uqmeM/hqdefault.jpg",
+   "rightsBasis": "news-reporting thumbnail — still of the official Comfortably Numb Re-Imagined music video this feature covers and embeds",
+   "credit": "Photo: Roger Waters & Mona Miari — Comfortably Numb Re-Imagined (official video thumbnail)",
+   "source": "https://www.youtube.com/watch?v=WBmrT3uqmeM"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-mona-miari-2026.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "originals/media/mahmoud-darwish-memorial-2026.jpg",
+   "rightsBasis": "owner-supplied — commemorative artwork provided directly by the publisher for the Darwish anniversary report",
+   "credit": "Artwork: supplied by the publisher, Times of Palestine",
+   "source": "Times of Palestine (owner upload, 2026-08-10)"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Embroidery%20from%20Beersheba%20Dress%20(Palestinian%20Thobe).jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed photograph of Palestinian tatreez (embroidery from a Beersheba-area dress) served from Wikimedia Commons, verified at build time",
+   "credit": "Photo: Ma'moun Othman / Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Embroidery_from_Beersheba_Dress_(Palestinian_Thobe).jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-diaspora-dispatch-2026-08-14-madison-hebron-tatreez.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Qusra7466.JPG?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 village view of Qusra served from Wikimedia Commons, verified at build time",
+   "credit": "Qusra, Nablus governorate — Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Qusra7466.JPG",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Qusra7466.JPG"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Palestinians%20live%20in%20an%20area%20destroyed%20by%20Israeli%20airstrike%20in%20Rafah%2C%20Gaza%20Strip%203.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed news photograph served from Wikimedia Commons, verified at build time",
+   "credit": "Destroyed quarter of Rafah — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Palestinians_live_in_an_area_destroyed_by_Israeli_airstrike_in_Rafah,_Gaza_Strip_3.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palestinians_live_in_an_area_destroyed_by_Israeli_airstrike_in_Rafah,_Gaza_Strip_3.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Beit%20sohar%20Offer.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed photograph of the Ofer military prison served from Wikimedia Commons, verified at build time",
+   "credit": "Ofer military prison, occupied West Bank — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Beit_sohar_Offer.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Beit_sohar_Offer.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jared%20Kushner%202025.jpg?width=640",
+   "rightsBasis": "public-domain — official White House photograph by Andrea Hanks, a work of an employee of the Executive Office of the President of the United States, served from Wikimedia Commons and verified at build time",
+   "credit": "Jared Kushner — Andrea Hanks / The White House, via Wikimedia Commons, public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Jared_Kushner_2025.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-POTUS"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mansaf%2C%20the%20traditional%20dish%20of%20Jordan.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed photograph of mansaf served from Wikimedia Commons, verified at build time",
+   "credit": "Mansaf, the shared table of the Levant — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Mansaf,_the_traditional_dish_of_Jordan.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mansaf,_the_traditional_dish_of_Jordan.jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jared%20Kushner%20June%202019.jpg?width=640",
+   "rightsBasis": "public-domain — work of a US Department of State employee in the course of official duties (17 U.S.C. §105), served from Wikimedia Commons and verified at build time",
+   "credit": "Jared Kushner — US Mission to the European Union / Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Jared_Kushner_June_2019.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-DOS",
+   "note": "Photograph dated 4 June 2019; verified on Commons 2026-08-17"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Senator%20Ruben%20Gallego%20Official%20Portrait.jpg?width=640",
+   "rightsBasis": "public-domain — US Senate Photographic Studio portrait, PD-USGov-Congress, served from Wikimedia Commons and verified at build time",
+   "credit": "Senator Ruben Gallego — US Senate Photographic Studio / Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Senator_Ruben_Gallego_Official_Portrait.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Congress",
+   "note": "Official portrait, February 2025; verified on Commons 2026-08-17"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Avraham%20Burg%20by%20David%20Shankbone.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 / GFDL portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Avraham Burg — David Shankbone / Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Avraham_Burg_by_David_Shankbone.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "note": "Portrait dated April 2008; licence verified on Commons 2026-08-17"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/U%20S%20Congress%20Members%20Visit%20the%20Civil-Military%20Coordination%20Center%20%289499802%29.jpg?width=640",
+   "rightsBasis": "public-domain — work of a US Army soldier made in the course of official duties, PD-USGov-Military-Army, served from Wikimedia Commons and verified at build time",
+   "credit": "Members of the US House Armed Services Committee at the Civil-Military Coordination Center, Kiryat Gat — Sgt. Kathryn Skonning, 207th Public Affairs Detachment / US Army via DVIDS",
+   "source": "https://commons.wikimedia.org/wiki/File:U_S_Congress_Members_Visit_the_Civil-Military_Coordination_Center_(9499802).jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Army",
+   "note": "Photograph dated 26 January 2026, DVIDS VIRIN 260127-A-GH673-1096; licence verified on Commons 2026-08-17"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nir%20Barkat%202023.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY 4.0 portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Nir Barkat — Nizzan Cohen / Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Nir_Barkat_2023.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "note": "Portrait dated 10 January 2023; licence verified on Commons 2026-08-17"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/BG%20Jasper%20Jeffers%20III%20%284%29.jpg?width=640",
+   "rightsBasis": "public-domain — official US Army portrait made in the course of official duties, PD-USGov-Military-Army, served from Wikimedia Commons and verified at build time",
+   "credit": "Maj. Gen. Jasper Jeffers III, commander of US Special Operations Command Central — William J. Seifert / US Army via SOCCENT",
+   "source": "https://commons.wikimedia.org/wiki/File:BG_Jasper_Jeffers_III_(4).jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Army",
+   "note": "Official portrait dated 5 June 2024, from his SOCCENT biography PDF; licence verified on Commons 2026-08-18"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Israeli%20Foreign%20Minister%20Eli%20Cohen%20visit%20to%20Greece%2C%20July%202023%2002.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 2.0 photograph (Greek Ministry of Foreign Affairs) served from Wikimedia Commons, verified at build time",
+   "credit": "Eli Cohen — Hellenic Ministry of Foreign Affairs via Wikimedia Commons (CC BY-SA 2.0)",
+   "source": "https://commons.wikimedia.org/wiki/File:Israeli_Foreign_Minister_Eli_Cohen_visit_to_Greece,_July_2023_02.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Israel%20Katz%20%28IMG%209196%29.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph (Itzhak Harari) served from Wikimedia Commons, verified at build time",
+   "credit": "Israel Katz — Itzhak Harari via Wikimedia Commons (CC BY-SA 4.0)",
+   "source": "https://commons.wikimedia.org/wiki/File:Israel_Katz_(IMG_9196).jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Khirbet%20Ibziq%206.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph of a northern Jordan Valley herding community (Aref Daraghmeh / B'Tselem) served from Wikimedia Commons, verified at build time",
+   "credit": "Khirbet Ibziq, northern Jordan Valley — Aref Daraghmeh / B'Tselem via Wikimedia Commons (CC BY-SA 4.0)",
+   "source": "https://commons.wikimedia.org/wiki/File:Khirbet_Ibziq_6.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Bezalel%20Smotrich%20%28cropped%29.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 portrait (Eitan Fold) served from Wikimedia Commons, verified at build time",
+   "credit": "Bezalel Smotrich — Eitan Fold via Wikimedia Commons (CC BY-SA 3.0)",
+   "source": "https://commons.wikimedia.org/wiki/File:Bezalel_Smotrich_(cropped).jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ofer%20prison%20entrance.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — free-licensed photo served from Wikimedia Commons (Category:Ofer Prison), verified live at build time with house-SVG fallback",
+   "credit": "The entrance of Ofer military prison — Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ofer_prison_entrance.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ofer_prison_entrance.jpg",
+   "note": "Cover for the Dima Barakat file; Commons hosts only free-licensed media and the build verifies the URL live, falling back to the campaign SVG if it dies"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Ambassador%20to%20Turkey%20Thomas%20Joseph%20Barrack%20Jr%20%28cropped%29.jpg?width=640",
+   "rightsBasis": "public-domain — official US State Department portrait (a work of the United States federal government), served from Wikimedia Commons and verified live at build time",
+   "credit": "Tom Barrack, US ambassador to Turkey and special envoy for Syria — US State Department via Wikimedia Commons (public domain)",
+   "source": "https://commons.wikimedia.org/wiki/File:United_States_Ambassador_to_Turkey_Thomas_Joseph_Barrack_Jr_(cropped).jpg",
+   "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
+   "note": "Lede for the Washington Brief of 2026-08-19; falls back to the brief's house SVG if the remote file dies"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/International%20Criminal%20Court%20Headquarters%2C%20Netherlands.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph served from Wikimedia Commons, verified at build time",
+   "credit": "International Criminal Court headquarters, The Hague — Wikimedia Commons / Hypergio, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:International_Criminal_Court_Headquarters,_Netherlands.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Fishermen%20in%20Gaza.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY 2.0 photograph served from Wikimedia Commons, verified at build time",
+   "credit": "Fishermen at Gaza's port — Wikimedia Commons / Trócaire, CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fishermen_in_Gaza.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "note": "Cover for gaza-fishermen-return-to-sea-2026; falls back to the humans category cover if the remote file dies"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Skyline%20Turmus%20Ayya%202023.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph served from Wikimedia Commons, verified at build time",
+   "credit": "Turmus Ayya, occupied West Bank — Wikimedia Commons / Amerhaddad, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Skyline_Turmus_Ayya_2023.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "note": "Cover for turmus-ayya-flag-home-seizure-2026-08-12; falls back to the West Bank category cover if the remote file dies"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20United%20States%20State%20Department%20Headquarters%20Building.jpg?width=640",
+   "rightsBasis": "public-domain — official US Department of State photograph, PD-USGov, served from Wikimedia Commons and verified at build time",
+   "credit": "The Harry S. Truman Building, State Department headquarters, Washington — Wikimedia Commons / US Department of State, public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:The_United_States_State_Department_Headquarters_Building.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+   "note": "Cover for washington-brief-2026-08-20; falls back to the report's own ledger SVG if the remote file dies"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mike%20Huckabee,%20official%20portrait%20(2025)%20(cropped).jpg?width=640",
+   "rightsBasis": "public-domain — official US Department of State portrait, PD-USGov, served from Wikimedia Commons and verified at build time",
+   "credit": "Mike Huckabee, US ambassador to Israel, official portrait 2025 — Wikimedia Commons / US Embassy Jerusalem, public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Mike_Huckabee,_official_portrait_(2025)_(cropped).jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+   "note": "Cover for washington-brief-2026-08-22; falls back to the report's own settler-sanctions SVG if the remote file dies"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Palestine%20Trade%20Tower.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph served from Wikimedia Commons, verified at build time",
+   "credit": "Palestine Trade Tower, Ramallah — Mohammad Hijjawi / Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Palestine_Trade_Tower.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "note": "Cover for alquds-index-august-run-2026-08-24 and the markets-watch beat; falls back to the economy category cover if the remote file dies"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ugandan%20AMISOM%20Guard%20of%20Honour%20for%20Burundi%20Defence%20Minister%20(6243505602).jpg?width=640",
+   "rightsBasis": "public-domain — CC0 1.0 Universal dedication by AMISOM Public Information, served from Wikimedia Commons and verified at build time",
+   "credit": "Ugandan AMISOM contingent guard of honour, Mogadishu, 10 October 2011 — Wikimedia Commons / AMISOM Public Information (AU-UN IST, John Rose), CC0 1.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Ugandan_AMISOM_Guard_of_Honour_for_Burundi_Defence_Minister_(6243505602).jpg",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "note": "Cover for washington-brief-2026-08-24; falls back to the report's own ISF recruits SVG if the remote file dies"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sliman%20Mansour.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 photograph served from Wikimedia Commons, verified at build time",
+   "credit": "Sliman Mansour at the Palestine International Book Fair, 2023 — Wikimedia Commons, CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sliman_Mansour.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yair%20Golan%202020.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Yair Golan, February 2020 — Laliv g / Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Yair_Golan_2020.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yoram-Cohen-0003.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 portrait served from Wikimedia Commons, verified at build time",
+   "credit": "Yoram Cohen — Amos Ben Gershom, Israeli Government Press Office / Wikimedia Commons, CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Yoram-Cohen-0003.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Itamar%20Ben%20Gvir%203%20(cropped).jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 3.0 photograph served from Wikimedia Commons, verified at build time",
+   "credit": "Itamar Ben Gvir, 2022 — Alon Nuriel / Wikimedia Commons, CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Itamar_Ben_Gvir_3_(cropped).jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruben%20Gallego%20official%20photo.jpg?width=640",
+   "rightsBasis": "public-domain — official US House photograph, public domain, served from Wikimedia Commons and verified at build time",
+   "credit": "Senator Ruben Gallego — US House Office of Photography / Wikimedia Commons, public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Ruben_Gallego_official_photo.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ruben_Gallego_official_photo.jpg"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-washington-brief-2026-08-29-two-clearing-lines.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gregory%20Meeks,%20official%20portrait,%20115th%20congress%20(cropped).jpg?width=640",
+   "rightsBasis": "public-domain — official U.S. House of Representatives portrait, a work of a US Congress employee made in the course of official duties",
+   "credit": "Gregory Meeks — Kristie Boyd, U.S. House Office of Photography, via Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Gregory_Meeks,_official_portrait,_115th_congress_(cropped).jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gregory_Meeks,_official_portrait,_115th_congress_(cropped).jpg"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Pete%20Hegseth%20Official%20Portrait.jpg?width=640",
+   "rightsBasis": "public-domain — official US Department of Defense portrait, a work of a US federal government employee made in the course of official duties",
+   "credit": "Pete Hegseth — Chad J. McNeeley, U.S. Department of Defense, via Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Pete_Hegseth_Official_Portrait.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Pete_Hegseth_Official_Portrait.jpg"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-washington-brief-2026-08-30-two-ledgers.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20sun%20rises%20over%20Azraq%20Air%20Base.JPG?width=640",
+   "rightsBasis": "public-domain — a work of a US Air Force airman made in the course of official duties",
+   "credit": "Sunrise over Muwaffaq Salti Air Base, Jordan — Eric Harris, U.S. Air Force / Air Forces Central, via Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:The_sun_rises_over_Azraq_Air_Base.JPG",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_sun_rises_over_Azraq_Air_Base.JPG"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-washington-brief-2026-08-31-war-reaches-arab-soil.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mansour%20Abbas%202025.jpg?width=640",
+   "rightsBasis": "wikimedia-cc — CC BY-SA 4.0 photograph served from Wikimedia Commons, verified at build time",
+   "credit": "Mansour Abbas, 3 April 2025 — David Shay / Wikimedia Commons, CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Mansour_Abbas_2025.jpg",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Kharg%20island.jpg?width=640",
+   "rightsBasis": "public-domain — a NASA work (PD-USGov-NASA), created solely by the US space agency",
+   "credit": "Kharg Island, Iran, photographed from Space Shuttle mission STS-055, April 1993 — NASA, via Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kharg_island.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Kharg_island.jpg"
+  },
+  {
+   "asset": "originals/media/times-of-palestine-washington-brief-2026-09-01-two-directions.svg",
+   "rightsBasis": "owned",
+   "credit": "Graphic: Times of Palestine",
+   "source": "Times of Palestine"
+  },
+  {
+   "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/March%202026%20Official%20Vice%20Presidential%20Portrait%20of%20JD%20Vance.jpg?width=640",
+   "rightsBasis": "public-domain — official portrait produced by the Executive Office of the Vice President of the United States, a US federal government work, served from Wikimedia Commons and verified at build time",
+   "credit": "Official Vice Presidential portrait of JD Vance, March 2026 — Executive Office of the Vice President via Wikimedia Commons (public domain)",
+   "source": "https://commons.wikimedia.org/wiki/File:March_2026_Official_Vice_Presidential_Portrait_of_JD_Vance.jpg",
+   "licenseUrl": "https://commons.wikimedia.org/wiki/File:March_2026_Official_Vice_Presidential_Portrait_of_JD_Vance.jpg"
+  }
+ ]
 }
