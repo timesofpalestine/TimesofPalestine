@@ -8,3 +8,9 @@ telegram-delivery.json
 webhook-delivery.json
 telegram-outbox.json
 .editorial-drafts/
+
+# Budget governor scratch (site scan 2026-09-02): the advisory lock and the
+# atomic-write temp file beside originals/_ledger.json never ride the
+# persist commit.
+originals/._ledger.json.lock
+originals/._ledger.json.*.tmp

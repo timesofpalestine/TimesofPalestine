@@ -175,12 +175,19 @@ jobs:
       # ledger. Fail-open — recording never fails a brief that already filed.
       - name: Record API spend in the ledger
         if: always() && steps.budget.outputs.run == 'yes'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           COST=$(python3 -c "import json,os;p=os.path.join(os.environ.get('RUNNER_TEMP','/home/runner/work/_temp'),'claude-execution-output.json');d=json.load(open(p));evs=d if isinstance(d,list) else [d];print(round(max([float(e.get('total_cost_usd') or 0) for e in evs if isinstance(e,dict)]+[0.0]),4))" 2>/dev/null || echo 0)
           echo "run cost: \$$COST"
           if python3 -c "import sys; sys.exit(0 if float('$COST' or 0) > 0 else 1)"; then
             git config user.name "Times of Palestine Newsdesk"
             git config user.email "newsdesk@timesofpalestine.com"
+            # Explicit re-authentication (site scan 2026-09-02) — the same
+            # step in the editor cycle lost its credential to the action's
+            # cleanup; this desk passes github_token and was fine, but the
+            # record must not depend on that.
+            git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
             for i in 1 2 3; do
               git fetch origin main && git reset --hard origin/main
               python3 budget_ledger.py --record-usd washington "$COST"

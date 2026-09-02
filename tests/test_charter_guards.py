@@ -43,10 +43,25 @@ class WorkflowCharterTest(unittest.TestCase):
 
     def test_investigations_push_has_rebase_and_retry(self):
         # A silently lost push here loses a finished, deployed investigation.
-        self.assertIn("git pull --rebase", self.text)
         persist = self.text.split("Persist generated investigations", 1)[1]
         persist = persist.split("- name:", 1)[0]
+        self.assertIn("git rebase --autostash origin/main", persist)
+        self.assertIn("for i in 1 2 3", persist)
+        self.assertIn("git push origin HEAD:main", persist)
         self.assertNotIn("continue-on-error", persist)
+
+    def test_persist_resolves_conflicts_instead_of_ignoring_them(self):
+        # Site scan 2026-09-02: `pull --rebase || true` swallowed conflicts
+        # and pushed bare origin/main, silently dropping the run's archive
+        # entries and budget ledger. Conflicts are merged or the rebase is
+        # aborted and retried — never ignored.
+        persist = self.text.split("Persist generated investigations", 1)[1]
+        persist = persist.split("- name:", 1)[0]
+        self.assertNotIn("pull --rebase", persist)
+        self.assertNotRegex(persist, r"rebase --autostash[^\n]*\|\|\s*true")
+        self.assertIn("budget_ledger.py --resolve-conflict", persist)
+        self.assertIn("git rebase --abort", persist)
+        self.assertIn("story-archive/*", persist)
 
     def test_rearm_pause_switch_is_a_variable(self):
         for name in ("rearm.yml", "heartbeat.yml"):

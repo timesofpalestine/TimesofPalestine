@@ -18,17 +18,38 @@ Design rules:
   build) but a read failure is LOUD, and the pacing gates keep working from
   an empty ledger — which under-counts, so the hard ceiling and the provider
   cap still bound the damage.
+- WRITING never wipes history (site scan 2026-09-02). The first day in
+  production the ledger lost every desk's month-to-date three times: the
+  briefs desk records from a thread pool, and a reader that caught a
+  half-written file "failed open" to an empty ledger and saved it over the
+  month. So: one process-wide lock plus an advisory file lock around every
+  record, atomic temp-file-then-rename writes so no reader ever sees a
+  partial file, and a ledger that exists but cannot be parsed is NEVER
+  overwritten by a record — that call's spend goes unrecorded with a loud
+  warning instead of the whole month vanishing.
 - The ledger lives at originals/_ledger.json so the build workflow's
   existing persist step commits it with no new wiring; the action-based
-  workflows commit their own entries.
+  workflows commit their own entries. Concurrent builds both change the
+  file, so the persist step resolves a rebase conflict on it with
+  `--resolve-conflict` (upstream + this run's delta) rather than dropping
+  the run's commit.
 
 Stdlib only (charter rule 6).
 """
 import calendar
 import json
+import os
+import subprocess
 import sys
+import threading
+import time
 from datetime import datetime, timezone
 from pathlib import Path
+
+try:  # advisory cross-process lock; absent on Windows → in-process lock only
+    import fcntl
+except ImportError:  # pragma: no cover
+    fcntl = None
 
 ROOT = Path(__file__).resolve().parent
 CONFIG_FILE = ROOT / "editorial" / "budget.json"
@@ -103,50 +124,194 @@ def load_config():
                                 "maintenance": 0.04}}
 
 
-def load_ledger(now=None):
-    month = _month_key(now)
-    try:
-        data = json.loads(LEDGER_FILE.read_text(encoding="utf-8"))
-        if data.get("month") == month and isinstance(data.get("desks"), dict):
-            data["desks"] = {k: float(v) for k, v in data["desks"].items()}
-            return data
-    except FileNotFoundError:
-        pass
-    except Exception as exc:
-        print(f"  ⚠ budget: ledger unreadable ({type(exc).__name__}) — "
-              "restarting month-to-date estimate (under-counts; hard ceiling "
-              "and the provider cap still apply)", file=sys.stderr)
+_LOCK = threading.RLock()          # in-process: the briefs desk records from a thread pool
+_READ_RETRIES = 6                  # a transient partial read is retried before it counts
+_READ_RETRY_DELAY = 0.05
+
+
+def _parse_ledger(text):
+    data = json.loads(text)
+    if not isinstance(data, dict) or not isinstance(data.get("desks"), dict):
+        raise ValueError("ledger shape")
+    data["desks"] = {k: float(v) for k, v in data["desks"].items()}
+    return data
+
+
+def _read_ledger():
+    """(ledger_or_None, state) with state in ok / missing / unreadable.
+
+    Reads are retried briefly: writes are atomic renames now, but a ledger
+    being rewritten by another process is still worth a second look before
+    it is declared corrupt."""
+    last = None
+    for attempt in range(_READ_RETRIES):
+        try:
+            return _parse_ledger(LEDGER_FILE.read_text(encoding="utf-8")), "ok"
+        except FileNotFoundError:
+            return None, "missing"
+        except Exception as exc:
+            last = exc
+            time.sleep(_READ_RETRY_DELAY * (attempt + 1))
+    print(f"  ⚠ budget: ledger unreadable ({type(last).__name__})", file=sys.stderr)
+    return None, "unreadable"
+
+
+def _fresh(month):
     return {"month": month, "desks": {}, "updated": None}
 
 
+def load_ledger(now=None):
+    """Reader view: fail-open to an empty month-to-date. Loud on corruption."""
+    month = _month_key(now)
+    with _LOCK:
+        data, state = _read_ledger()
+    if state == "ok" and data.get("month") == month:
+        return data
+    if state == "unreadable":
+        print("  ⚠ budget: pacing from an EMPTY estimate this run (under-counts; "
+              "hard ceiling and the provider cap still apply) — the corrupt "
+              "ledger is left untouched for repair", file=sys.stderr)
+    return _fresh(month)
+
+
 def _save_ledger(ledger, now=None):
+    """Atomic: temp file in the same directory, then rename — no reader can
+    ever see a truncated or half-written ledger."""
+    tmp = None
     try:
         ledger["updated"] = (now or datetime.now(timezone.utc)).isoformat()
         LEDGER_FILE.parent.mkdir(exist_ok=True)
-        LEDGER_FILE.write_text(
-            json.dumps(ledger, ensure_ascii=False, indent=1) + "\n",
-            encoding="utf-8")
+        tmp = LEDGER_FILE.with_name(f".{LEDGER_FILE.name}.{os.getpid()}.tmp")
+        tmp.write_text(json.dumps(ledger, ensure_ascii=False, indent=1) + "\n",
+                       encoding="utf-8")
+        os.replace(tmp, LEDGER_FILE)
+        tmp = None
     except OSError as exc:
         print(f"  ⚠ budget: ledger write failed ({exc}) — spend not recorded",
               file=sys.stderr)
+    finally:
+        if tmp is not None:
+            try:
+                tmp.unlink()
+            except OSError:
+                pass
+
+
+class _FileLock:
+    """Advisory lock beside the ledger (fcntl where available, else no-op)."""
+
+    def __init__(self):
+        self.path = LEDGER_FILE.with_name(f".{LEDGER_FILE.name}.lock")
+        self.fh = None
+
+    def __enter__(self):
+        if fcntl is not None:
+            try:
+                self.path.parent.mkdir(exist_ok=True)
+                self.fh = open(self.path, "a+")
+                fcntl.flock(self.fh, fcntl.LOCK_EX)
+            except OSError:
+                self.fh = None
+        return self
+
+    def __exit__(self, *exc):
+        if self.fh is not None:
+            try:
+                fcntl.flock(self.fh, fcntl.LOCK_UN)
+            finally:
+                self.fh.close()
+                self.fh = None
+        return False
 
 
 def record(desk, model=None, usage=None, web_searches=0, usd=None, now=None):
-    """Add one call's (or one run's) estimated spend. Never raises."""
+    """Add one call's (or one run's) estimated spend. Never raises, and
+    never replaces a ledger it could not read — losing one call's estimate
+    is a rounding error; losing the month un-gates every desk."""
     try:
         amount = float(usd) if usd is not None else estimate_usd(
             model, usage, web_searches)
         amount *= SAFETY_FACTOR
         if amount <= 0:
             return 0.0
-        ledger = load_ledger(now)
-        ledger["desks"][desk] = round(ledger["desks"].get(desk, 0.0) + amount, 6)
-        _save_ledger(ledger, now)
+        month = _month_key(now)
+        with _LOCK, _FileLock():
+            ledger, state = _read_ledger()
+            if state == "unreadable":
+                print(f"  ⚠ budget: ${amount:.4f} for {desk} NOT recorded — the "
+                      "ledger exists but cannot be parsed and is never overwritten",
+                      file=sys.stderr)
+                return 0.0
+            if state == "missing" or ledger.get("month") != month:
+                ledger = _fresh(month)  # first run, or the month rolled over
+            ledger["desks"][desk] = round(ledger["desks"].get(desk, 0.0) + amount, 6)
+            _save_ledger(ledger, now)
         return amount
     except Exception as exc:
         print(f"  ⚠ budget: record failed ({type(exc).__name__}) — "
               "spend not recorded", file=sys.stderr)
         return 0.0
+
+
+def merge_ledgers(base, upstream, ours):
+    """Three-way merge for the persist step: upstream + (ours − base) per desk.
+
+    Two builds can start from the same commit and both record spend; a plain
+    rebase then conflicts on the file. The right answer is never "pick a
+    side" — it is the other run's ledger PLUS this run's own increments.
+    A newer month wins outright (the month rolled over on one side); a
+    missing/corrupt version counts as empty."""
+    def _m(ledger):
+        return (ledger or {}).get("month") or ""
+    if _m(ours) > _m(upstream):
+        return ours
+    if _m(upstream) > _m(ours):
+        return upstream
+    month = _m(upstream)
+    base_desks = (base or {}).get("desks", {}) if _m(base) == month else {}
+    up_desks = dict((upstream or {}).get("desks", {}))
+    for desk, value in ((ours or {}).get("desks", {}) or {}).items():
+        base_value = float(base_desks.get(desk, 0.0))
+        # Spend only grows inside a month: an upstream entry below (or
+        # missing against) the common base means upstream lost it — take
+        # the base as the floor rather than propagating the loss.
+        floor = max(float(up_desks.get(desk, 0.0)), base_value)
+        delta = float(value) - base_value
+        up_desks[desk] = round(floor + max(delta, 0.0), 6)
+    updated = max((ours or {}).get("updated") or "", (upstream or {}).get("updated") or "")
+    return {"month": month, "desks": up_desks, "updated": updated or None}
+
+
+def _git_stage(stage):
+    """Read one index stage of the ledger during a stopped rebase (None if
+    absent or unparseable)."""
+    rel = LEDGER_FILE.relative_to(ROOT).as_posix()
+    try:
+        out = subprocess.run(["git", "show", f":{stage}:{rel}"], cwd=ROOT,
+                             capture_output=True, text=True, timeout=30)
+        if out.returncode != 0:
+            return None
+        return _parse_ledger(out.stdout)
+    except Exception:
+        return None
+
+
+def resolve_conflict():
+    """CLI: in a stopped `git rebase origin/main`, stage 1 is the common
+    base, stage 2 the upstream (origin/main) version and stage 3 this run's
+    replayed commit. Writes the merged ledger; falls back to upstream so a
+    resolution failure can only lose this run's delta, never the month."""
+    base, upstream, ours = _git_stage(1), _git_stage(2), _git_stage(3)
+    if upstream is None and ours is None:
+        print("  ⚠ budget: no ledger stages to merge — leaving file as is",
+              file=sys.stderr)
+        return 1
+    merged = merge_ledgers(base, upstream, ours)
+    with _LOCK, _FileLock():
+        _save_ledger(merged)
+    desks = " ".join(f"{d}=${v:.2f}" for d, v in sorted(merged["desks"].items()))
+    print(f"budget: ledger conflict merged → {merged['month']} {desks}")
+    return 0
 
 
 def month_total(ledger):
@@ -210,7 +375,10 @@ def main(argv):
         recorded = record(desk, usd=usd)
         print(f"budget: recorded ${recorded:.2f} for {desk}")
         return 0
-    print("usage: budget_ledger.py --status | --check DESK | --record-usd DESK USD")
+    if "--resolve-conflict" in argv:
+        return resolve_conflict()
+    print("usage: budget_ledger.py --status | --check DESK | --record-usd DESK USD"
+          " | --resolve-conflict")
     return 2
 
 
