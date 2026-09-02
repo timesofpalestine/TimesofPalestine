@@ -18,6 +18,7 @@ import gzip
 import hashlib
 import html
 import json
+import math
 import os
 import re
 import sys
@@ -2422,6 +2423,43 @@ def _duplicate_verdict(client, a, b):
     return None  # unparseable — not cached, so the next build asks again
 
 
+def _pair_token_weights(token_sets):
+    """Rarity weight per token across one language's live set (IDF): the
+    tokens that make a pair suspicious are the ones few stories share."""
+    token_sets = list(token_sets)
+    df = {}
+    for toks in token_sets:
+        for t in toks:
+            df[t] = df.get(t, 0) + 1
+    n = len(token_sets) + 1
+    return {t: math.log(n / (c + 1)) + 0.1 for t, c in df.items()}
+
+
+def pair_suspicion(shared, weight):
+    """How much a pair deserves a verdict. Owner report 2026-09-02: ranking
+    the judge's queue by the COUNT of shared tokens buried the Abu Safiya
+    doubles (one man's name, one beating) at rank 159-14,000 beneath tens
+    of thousands of Arabic pairs that share nothing but إسرائيل, غزة and
+    احتلال — with a 40-verdict budget the judge never reached them. A
+    shared rare name now outweighs any number of shared stock words."""
+    return round(sum(weight.get(t, 0.0) for t in shared), 4)
+
+
+MIN_POOL_FOR_SUSPICION_FLOOR = 40
+
+
+def suspicion_floor(pool_size):
+    """Below this a pair is not worth a verdict: the weight of about four
+    shared tokens each seen in only a few stories — a name and what
+    happened to its bearer. Scales with the pool because rarity does; a
+    small pool (tests, a thin feed) judges every candidate as before. On a
+    live Arabic pool of ~450 the floor sits near 20: the Abu Safiya pairs
+    score 30-52, pairs sharing only stock words 1-10."""
+    if pool_size < MIN_POOL_FOR_SUSPICION_FLOOR:
+        return 0.0
+    return 4 * (math.log((pool_size + 1) / 3) + 0.1)
+
+
 def adjudicate_duplicates(en_items, ar_items, client=None):
     """Fold paraphrase-level duplicates the lexical nets cannot see.
 
@@ -2436,13 +2474,18 @@ def adjudicate_duplicates(en_items, ar_items, client=None):
             if BRIEFS_CACHE.exists() else {}
     except (OSError, json.JSONDecodeError):
         cache = {}
-    budget = MAX_DEDUPE_VERDICTS_PER_RUN
     dirty, dropped_total, out = False, 0, {}
     for lang, items in (("en", en_items), ("ar", ar_items)):
+        # Each language gets its own verdict budget (2026-09-02): one shared
+        # budget was spent on English first, and the Arabic queue — where the
+        # doubles actually run — never got a call.
+        budget = MAX_DEDUPE_VERDICTS_PER_RUN
         ranked = sorted(items, key=_dedupe_rank_key, reverse=True)
         ext = {id(i): event_tokens(
             f"{i['title']} {(i.get('brief') or i.get('dek') or '')[:240]}")
             for i in items}
+        weight = _pair_token_weights(ext.values())
+        floor = suspicion_floor(len(items))
         pairs = []
         for x in range(len(ranked)):
             for y in range(x + 1, len(ranked)):
@@ -2456,7 +2499,10 @@ def adjudicate_duplicates(en_items, ar_items, client=None):
                     continue
                 if place_or_count_veto(ext[id(a)], ext[id(b)]):
                     continue
-                pairs.append((len(shared), x, y))
+                suspicion = pair_suspicion(shared, weight)
+                if suspicion < floor:
+                    continue  # stock words only — not worth a verdict
+                pairs.append((suspicion, x, y))
         pairs.sort(reverse=True)  # judge the most suspicious pairs first
         drop = set()
         for _, x, y in pairs:

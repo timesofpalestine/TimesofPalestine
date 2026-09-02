@@ -2362,6 +2362,74 @@ class AIDedupeJudgeTests(unittest.TestCase):
             self._run([a, b], [], client, td)
             self.assertFalse((Path(td) / "en").exists())
 
+    def test_rare_shared_name_outranks_stock_words_in_the_queue(self):
+        # Owner report 2026-09-02: ranking by shared-token COUNT buried the
+        # Abu Safiya doubles under thousands of pairs sharing only stock words.
+        stock = {"israel", "gaza", "forces", "occupation", "strike"}
+        sets = [stock | {f"x{i}"} for i in range(30)]          # 30 stock stories
+        sets += [stock | {"abu", "safiya", "beating"}, {"abu", "safiya", "lawyer"}]
+        weight = build._pair_token_weights(sets)
+        stock_pair = build.pair_suspicion(stock, weight)                 # 5 shared
+        name_pair = build.pair_suspicion({"abu", "safiya"}, weight)      # 2 shared
+        self.assertGreater(name_pair, stock_pair)
+
+    def test_stock_word_pairs_in_a_live_pool_get_no_verdict(self):
+        # In a real-sized pool, pairs that share only the stock words of the
+        # beat never spend a verdict; the pair sharing a rare name does.
+        base = datetime(2026, 9, 2, 12, tzinfo=timezone.utc)
+        ar = []
+        for n in range(build.MIN_POOL_FOR_SUSPICION_FLOOR + 5):
+            it = item()
+            it.update({"title": f"قوات الاحتلال تقتحم بلدة {'ب' * (n + 2)} شمال الضفة",
+                       "dek": "اقتحمت قوات الاحتلال الإسرائيلي البلدة فجراً بحسب مصادر محلية",
+                       "cat": "westbank", "lang": "ar", "score": 30 - n * 0.1,
+                       "pid": f"arstock{n:03d}", "date": base})
+            ar.append(it)
+        a, b = item(), item()
+        a.update({"title": "أبو صفية يكشف اعتداءات مستمرة عليه في السجن",
+                  "dek": "كشف الطبيب حسام أبو صفية عن تعرضه لاعتداءات داخل السجن بحسب محاميه",
+                  "cat": "prisoners", "lang": "ar", "score": 40, "pid": "arabusafa",
+                  "date": base})
+        b.update({"title": "الأورومتوسطي يوثّق تعرض أبو صفية للضرب في سجون الاحتلال",
+                  "dek": "قال المرصد الأورومتوسطي إن الطبيب حسام أبو صفية يتعرض للضرب في السجن",
+                  "cat": "prisoners", "lang": "ar", "score": 30, "pid": "arabusafb",
+                  "date": base})
+        client = _FakeBriefsClient(["DUPLICATE"])  # a second call would raise
+        with tempfile.TemporaryDirectory() as td:
+            en_out, ar_out, dropped = self._run([], ar + [a, b], client, td)
+        self.assertEqual(len(client.calls), 1)
+        self.assertEqual(dropped, 1)
+        self.assertNotIn("arabusafb", [i["pid"] for i in ar_out])
+        self.assertGreater(build.suspicion_floor(450), 15)
+        self.assertEqual(build.suspicion_floor(2), 0.0)
+
+    def test_each_language_has_its_own_verdict_budget(self):
+        # A shared budget was spent on English first; Arabic never got a call.
+        base = datetime(2026, 9, 2, 12, tzinfo=timezone.utc)
+        en = []
+        for n in range(12):  # 66 pairs exhaust the 40-verdict budget; pool < floor size
+            it = item()  # distinct by a word, not a digit (digits trip the count veto)
+            it.update({"title": f"Israeli forces raid a village near Ramallah {'x' * (n + 2)}",
+                       "dek": "Soldiers entered the village at dawn, residents said.",
+                       "cat": "westbank", "lang": "en", "score": 30 - n * 0.1,
+                       "pid": f"enpair{n:04d}", "date": base})
+            en.append(it)
+        a, b = item(), item()
+        a.update({"title": "أبو صفية يكشف اعتداءات مستمرة عليه في السجن",
+                  "dek": "كشف الطبيب حسام أبو صفية عن تعرضه لاعتداءات داخل السجن",
+                  "cat": "prisoners", "lang": "ar", "score": 40, "pid": "arabusafa",
+                  "date": base})
+        b.update({"title": "الأورومتوسطي يوثّق تعرض أبو صفية للضرب في سجون الاحتلال",
+                  "dek": "قال المرصد الأورومتوسطي إن الطبيب حسام أبو صفية يتعرض للضرب",
+                  "cat": "prisoners", "lang": "ar", "score": 30, "pid": "arabusafb",
+                  "date": base})
+        answers = ["SEPARATE"] * build.MAX_DEDUPE_VERDICTS_PER_RUN + ["DUPLICATE"]
+        client = _FakeBriefsClient(answers)
+        with tempfile.TemporaryDirectory() as td:
+            en_out, ar_out, dropped = self._run(en, [a, b], client, td)
+        self.assertEqual(dropped, 1, "the Arabic pair still got its verdict")
+        self.assertEqual([i["pid"] for i in ar_out], ["arabusafa"])
+
     def test_contradicting_places_are_never_even_asked_about(self):
         base = datetime(2026, 8, 9, 12, tzinfo=timezone.utc)
         a, b = item(), item()
