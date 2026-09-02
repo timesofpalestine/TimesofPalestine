@@ -10,12 +10,19 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest import mock
 
+import budget_ledger
 import build
 import distribute
 import longform
 import originals_gen
 import seo_extras
 import telegram_publish
+
+# The briefs-desk tests below drive write_brief with fake clients whose
+# usage objects carry token counts; the governor would faithfully record
+# that fake spend into the COMMITTED ledger (site scan 2026-09-02). Point
+# the ledger at a throwaway file for this process.
+budget_ledger.LEDGER_FILE = Path(tempfile.mkdtemp(prefix="top-ledger-")) / "_ledger.json"
 
 
 def item():

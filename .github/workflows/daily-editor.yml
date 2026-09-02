@@ -28,40 +28,62 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Budget governor (owner order 2026-09-01): skip the cycle when the
-      # editor's allocation is ahead of its monthly pace — a skipped cycle
-      # costs a day of polish; a blown budget froze the whole paper for six
-      # days in August. The gate fails OPEN on script errors (exit != 3).
+      # Budget governor (owner order 2026-09-01; the purse, 2026-09-02): the
+      # editor runs the best EDITION its purse can pay for today — the FULL
+      # Opus edition on its big days, the LIGHT Sonnet edition otherwise —
+      # and skips only when the purse cannot pay even the light one. A
+      # skipped cycle costs a day of polish; a blown budget froze the whole
+      # paper for six days in August. Fails OPEN to the full edition on
+      # script errors (any exit other than 0/3).
       - name: Budget gate
         id: budget
         run: |
           set +e
-          python3 budget_ledger.py --check editor
+          python3 budget_ledger.py --tier editor > "$RUNNER_TEMP/tier.out"
           code=$?
           set -e
-          if [ "$code" -eq 3 ]; then
-            echo "run=no" >> "$GITHUB_OUTPUT"
-            echo "::warning::daily editor paced out by the monthly API budget — skipping this cycle (see budget_ledger.py --status)"
+          if [ "$code" -eq 0 ] || [ "$code" -eq 3 ]; then
+            cat "$RUNNER_TEMP/tier.out" >> "$GITHUB_OUTPUT"
           else
-            echo "run=yes" >> "$GITHUB_OUTPUT"
+            printf 'run=yes\ntier=full\n' >> "$GITHUB_OUTPUT"
           fi
+          if [ "$code" -eq 3 ]; then
+            echo "::warning::daily editor paced out by the monthly API budget — skipping this cycle (see budget_ledger.py --forecast)"
+          fi
+          python3 budget_ledger.py --forecast || true
 
       - name: Run the editor-in-chief cycle
         if: steps.budget.outputs.run == 'yes'
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          # Pin the plain model id: the action's fast-mode default (claude-opus-5[1m])
-          # errored instantly against this key on 2026-08-07. Full output stays on so
-          # the next API-side failure is diagnosable from the run log.
+          # Model and turn cap come from the governor's tier (editorial/
+          # budget.json). Pin plain model ids: the action's fast-mode default
+          # (claude-opus-5[1m]) errored instantly against this key on
+          # 2026-08-07. Full output stays on so the next API-side failure is
+          # diagnosable from the run log.
           show_full_output: true
-          claude_args: '--model claude-opus-5 --max-turns 300 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"'
+          claude_args: '--model ${{ steps.budget.outputs.model || ''claude-opus-5'' }} --max-turns ${{ steps.budget.outputs.max_turns || ''300'' }} --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"'
           prompt: |
             You are Claude, editor-in-chief of Times of Palestine
             (timesofpalestine.com), running your daily improvement cycle in this
             repository (owner directive 2026-08-01: decide on new items daily and
             execute them automatically — tweaks, code, layout, story ideas and
             coverage that keep the site dynamic).
+
+            TODAY'S EDITION TIER: ${{ steps.budget.outputs.tier }}. The budget
+            governor (editorial/budget.json, owner order 2026-09-01) chose it.
+            FULL = the whole mandate below. LIGHT = the non-negotiables ONLY:
+            the BREAKING SWEEP, the SECTION FRESHNESS CHECK (every STALE
+            section filed), MARKETS WATCH, RUNNING FILES deks, the ISRAELI
+            and US PRESS REVIEWS (both, at their normal volume, Arabic composed
+            fresh), the editorial calendar's due items, and the cadence note on
+            #6 — skip the optional three-to-five improvements, all product/
+            design/platform work, the photo-led conversions and the queue-depth
+            research, and keep your turn budget for filing copy: read only what
+            you need, never run the full test suite more than once, and ship
+            in ONE PR. A light edition is a daily newspaper, not a smaller
+            version of a magazine.
 
             START by reading CLAUDE.md — the newsroom charter is binding. Then
             run the BREAKING SWEEP: read editorial/x-watchlist.md and check
@@ -269,7 +291,7 @@ jobs:
             git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
             for i in 1 2 3; do
               git fetch origin main && git reset --hard origin/main
-              python3 budget_ledger.py --record-usd editor "$COST"
+              python3 budget_ledger.py --record-usd editor "$COST" --tier "${{ steps.budget.outputs.tier || 'full' }}"
               git add originals/_ledger.json
               git commit -m "Record daily-editor API spend [skip ci]" || break
               if git push origin HEAD:main; then break; fi
