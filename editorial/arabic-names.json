@@ -1,576 +1,603 @@
 {
-  "_readme": [
-    "Canonical Arabic spellings of transliterated names (owner order 2026-08-11,",
-    "after «الهدالين» reached the Arabic edition for الهذالين). RULE, binding on",
-    "every agent and desk: before an Arabic edition uses a personal name that",
-    "arrived through English or Hebrew, VERIFY the spelling against Arabic-language",
-    "sources covering the same story (الجزيرة نت، وفا، معا، عرب 48، العربي الجديد،",
-    "CNN بالعربية…) and record the verified form here with its source. build.py",
-    "loads this file and flags any listed wrong variant in briefs and originals",
-    "exactly like machine diction. Fail-open: a broken lexicon disables the net,",
-    "never the build.",
-    "Entry fields: latin (as the wires spell it), ar (verified Arabic form),",
-    "wrong (DISTINCTIVE strings matched as substrings — never list a string that",
-    "is also an ordinary Arabic word on its own), verified (source + date).",
-    "Grow this file with every name the desks verify; never delete an entry —",
-    "supersede it by editing in place."
-  ],
-  "names": [
-    {
-      "latin": "Scott Bessent",
-      "ar": "سكوت بيسنت",
-      "wrong": [
-        "بيسينت",
-        "بسنت"
-      ],
-      "verified": "arabic.cnn + alquds.co.uk + emaratalyoum, 2026-08-15"
-    },
-    {
-      "latin": "Awdah Hathaleen",
-      "ar": "عودة الهذالين",
-      "wrong": [
-        "هدالين",
-        "الحذالين"
-      ],
-      "verified": "ar.wikipedia + wafa.ps + maannews + alaraby, 2026-08-11"
-    },
-    {
-      "latin": "Sayfollah (Saif) Musallet",
-      "ar": "سيف الله مصلط",
-      "wrong": [
-        "سيف الله مسلت",
-        "سيف الله مسلّت",
-        "سيف الله مصلت",
-        "سيف مسلت"
-      ],
-      "verified": "aljazeera.net + arabic.cnn + al-watan.com, 2026-08-11"
-    },
-    {
-      "latin": "Yinon Levy",
-      "ar": "يانون ليفي",
-      "wrong": [
-        "ينون ليفي"
-      ],
-      "verified": "alaraby.co.uk (usage also split in Arabic press; house form fixed for consistency), 2026-08-11"
-    },
-    {
-      "latin": "Nasrallah Abu Siyam",
-      "ar": "نصر الله أبو صيام",
-      "wrong": [
-        "نصرالله أبو صيام"
-      ],
-      "verified": "house usage consistent since 2026-02; recheck against wafa on next story",
-      "note": "«نصر الله» separated, matching Arabic press convention for the given name"
-    },
-    {
-      "latin": "Khamis Ayyad",
-      "ar": "خميس عياد",
-      "wrong": [
-        "خميس عياض"
-      ],
-      "verified": "Arabic wire coverage of the Silwad fire, 2026-08; shadda form عيّاد acceptable"
-    },
-    {
-      "latin": "Awdah Hathaleen village – Umm al-Khair",
-      "ar": "أم الخير",
-      "wrong": [
-        "أم الخيّر"
-      ],
-      "verified": "wafa.ps, 2026-08-11"
-    },
-    {
-      "latin": "Taghreed El-Khodary",
-      "ar": "تغريد الخضري",
-      "wrong": [
-        "تغريد الخضيري",
-        "تغريد خضري"
-      ],
-      "verified": "ar.wikipedia (مقالة باسمها), 2026-08-11"
-    },
-    {
-      "latin": "Daoud Kuttab",
-      "ar": "داود كتّاب",
-      "wrong": [
-        "داود كتاب",
-        "داوود كتاب"
-      ],
-      "verified": "his own Arabic byline/account rendering داود كتّاب, 2026-08-11"
-    },
-    {
-      "latin": "Hala Alqadi (karate, Asian Games bronze)",
-      "ar": "حلا القاضي",
-      "wrong": [
-        "هالة القاضي",
-        "حلا القاضى"
-      ],
-      "verified": "wafa.ps + alquds.com + almamlakatv + ar.wikipedia (مقالة باسمها), 2026-08-13 — الإنجليزية تكتبها Hala فتُقرأ «هالة» خطأً",
-      "note": "من دير استيا؛ أول فلسطينية تحرز ميدالية في دورة الألعاب الآسيوية"
-    },
-    {
-      "latin": "Laila Hasan (Women in Hebron cooperative)",
-      "ar": "ليلى حسن",
-      "wrong": [
-        "ليلا حسن",
-        "ليلى حسان"
-      ],
-      "verified": "لم تُعثر تغطية عربية للتعاونية حتى 2026-08-14؛ «ليلى حسن» هي الصيغة العربية المعيارية لعنصري الاسم — يُعاد التحقق من وفا/معا عند ورود تغطية عربية",
-      "note": "فنانة نسيج من الخليل، مؤسسة ومصممة في تعاونية «نساء في الخليل»"
-    },
-    {
-      "latin": "Idhna",
-      "ar": "إذنا",
-      "wrong": [
-        "ادنا"
-      ],
-      "verified": "wafa.ps (خبر «الاحتلال يعتقل مواطنا من إذنا ويقتحم دورا»), 2026-08-14",
-      "note": "بلدة جنوب غرب الخليل؛ مقر جمعية إذنا التعاونية للتطريز والصناعات اليدوية"
-    },
-    {
-      "latin": "Erika Guevara Rosas (Amnesty International)",
-      "ar": "إريكا غيفارا روساس",
-      "wrong": [
-        "إيريكا غيفارا روساس",
-        "إريكا جيفارا روساس",
-        "إريكا غيفارا روزاس"
-      ],
-      "verified": "aljazeera.net + hala.jo (تغطية بيانَي الاستيطان شباط/فبراير 2026), 2026-08-15",
-      "note": "المديرة العليا للأبحاث والمناصرة والسياسات والحملات في منظمة العفو الدولية"
-    },
-    {
-      "latin": "Abdul Azim Wadi (mayor of Qusra)",
-      "ar": "عبد العظيم وادي",
-      "wrong": [
-        "عبد العظيم وادى",
-        "عبدالعظيم الوادى"
-      ],
-      "verified": "raya.ps + shfanews.net + elwatannews (تغطية حصار قصرة), 2026-08-16",
-      "note": "رئيس بلدية قصرة جنوب شرق نابلس؛ تَرِد أيضاً «عبد العظيم الوادي» في بعض المصادر — الصيغة البيتية «عبد العظيم وادي»"
-    },
-    {
-      "latin": "Michael Milstein",
-      "ar": "ميخائيل ميلشتاين",
-      "wrong": [
-        "ميخائيل ميلشتين",
-        "مايكل ميلشتاين"
-      ],
-      "verified": "aljazeera.net + bokra.net + sawaleif, 2026-08-16",
-      "note": "رئيس منتدى الدراسات الفلسطينية في مركز موشيه ديان بجامعة تل أبيب؛ ترأس الساحة الفلسطينية في «أمان» برتبة عقيد"
-    },
-    {
-      "latin": "Kazem Gharibabadi",
-      "ar": "كاظم غريب آبادي",
-      "wrong": [
-        "كاظم غريب أبادي",
-        "كاظم غريبابادي"
-      ],
-      "verified": "alalam.ir + alahednews + marefa + العربي الجديد (تغطية المفاوضات النووية), 2026-08-16",
-      "note": "نائب وزير الخارجية الإيراني للشؤون القانونية والدولية منذ أيلول 2024"
-    },
-    {
-      "latin": "Mohammed Rashid / Khaled Salam (Arafat's economic adviser)",
-      "ar": "خالد سلام",
-      "wrong": [
-        "خالد إسلام",
-        "خالد سلامة"
-      ],
-      "verified": "aljazeera.net (موسوعة: محمد رشيد) + arabi21 + wattan, 2026-08-16 — الاسم الحركي «خالد سلام»؛ «إسلام» تصحيف شائع في التفريغ الآلي",
-      "note": "الاسم الكامل محمد برهان رشيد؛ أول مدير عام لصندوق الاستثمار الفلسطيني"
-    },
-    {
-      "latin": "Azmi Shuaibi",
-      "ar": "عزمي الشعيبي",
-      "wrong": [
-        "عزمي شعيبي",
-        "عزمي الشعيبى"
-      ],
-      "verified": "aman-palestine.org + aljazeera.net usage, 2026-08-16",
-      "note": "مستشار مجلس إدارة ائتلاف أمان لشؤون مكافحة الفساد"
-    },
-    {
-      "latin": "Ahmad al-Beqawi (Taqarob podcast)",
-      "ar": "أحمد البيقاوي",
-      "wrong": [
-        "أحمد البقاوي",
-        "أحمد بيقاوي"
-      ],
-      "verified": "حسابات البرنامج الرسمية (facebook.com/Biqawi، تقارب بودكاست), 2026-08-16"
-    },
-    {
-      "latin": "Yasmin Abu Hassan (chef)",
-      "ar": "ياسمين أبو حسان",
-      "wrong": [
-        "ياسمين أبو حسين",
-        "ياسمين ابو حسون"
-      ],
-      "verified": "حسابها الرسمي + سيدتي + زاد الأردن (أبو حسّان), 2026-08-16"
-    },
-    {
-      "latin": "Saher Alghorra (Pulitzer photographer)",
-      "ar": "ساهر الغرة",
-      "wrong": [
-        "ساهر الغرا",
-        "صاهر الغرة"
-      ],
-      "verified": "aljazeera.net + alquds.com + palinfo, 2026-08-17"
-    },
-    {
-      "latin": "Hana Tahayneh (administrative detainee, Jenin)",
-      "ar": "هناء طحاينة",
-      "wrong": [
-        "هناء طحاينه",
-        "هناء طحاينا"
-      ],
-      "verified": "raya.ps + pnn.ps coverage of the Commission of Detainees' statement, 2026-08-17"
-    },
-    {
-      "latin": "Khalil al-Hayya",
-      "ar": "خليل الحية",
-      "wrong": [
-        "خليل الحيا",
-        "خليل حية"
-      ],
-      "verified": "aljazeera.net + wafa.ps, 2026-08-17"
-    },
-    {
-      "latin": "Bashar Alhroub (Palestinian artist)",
-      "ar": "بشار الحروب",
-      "wrong": [
-        "بشار الهروب",
-        "بشار الخروب"
-      ],
-      "verified": "rommanmag.com feature on his 'Land of Salt' + aajqa.com culture report on the London 'Resurrection' show, 2026-08-23. The English romanisation 'Alhroub' invites الهروب; the family name is الحروب."
-    },
-    {
-      "latin": "Mtanes Shihadeh (Mada al-Carmel, former Balad MK)",
-      "ar": "إمطانس شحادة",
-      "wrong": [
-        "متانس شحادة",
-        "متنس شحادة",
-        "ميتانس شحادة"
-      ],
-      "verified": "ar.wikipedia.org entry + alaraby.co.uk author page for the same scholar, 2026-08-23. The English 'Mtanes' invites متانس; the Arabic form is إمطانس (also written امطانس)."
-    },
-    {
-      "latin": "Mohammed Samhouri (Palestinian economist)",
-      "ar": "محمد السمهوري",
-      "wrong": [
-        "محمد سمحوري",
-        "محمد السمحوري"
-      ],
-      "verified": "washingtoninstitute.org Arabic expert page for the same economist, 2026-08-17"
-    },
-    {
-      "latin": "Jasper Jeffers (ISF commander)",
-      "ar": "جاسبر جيفرز",
-      "wrong": [
-        "جاسبر جفرز",
-        "جاسبر جيفرس"
-      ],
-      "verified": "aljazeera.net encyclopedia entry + samanews.ps, 2026-08-17"
-    },
-    {
-      "latin": "Kiryat Gat",
-      "ar": "كريات غات",
-      "wrong": [
-        "كريات جات"
-      ],
-      "verified": "aljazeera.net encyclopedia entry on the CMCC + ultrapal, 2026-08-17"
-    },
-    {
-      "latin": "Donald Trump",
-      "ar": "ترامب",
-      "wrong": [
-        "ترامป",
-        "ترامپ"
-      ],
-      "verified": "الإملاء المعتمد في البيت «ترامب» (استخدام الجزيرة نت)؛ الخاطئان محرفان دخيلان: ป تايلاندية (U+0E1B) وپ فارسية — ضبط 2026-08-17 بعد عنوان منشور حمل الحرف التايلاندي",
-      "note": "net catches homoglyph leaks; the foreign-script net below it catches every other script"
-    },
-    {
-      "latin": "Gisha (Israeli rights group)",
-      "ar": "جيشاه",
-      "wrong": [
-        "چيشاه"
-      ],
-      "verified": "موسوعة مدار للمصطلحات (جيشا/جيشاه), 2026-08-17"
-    },
-    {
-      "latin": "Abbas Araghchi (Iran FM)",
-      "ar": "عباس عراقجي",
-      "wrong": [
-        "عراقچي",
-        "عراقتشي"
-      ],
-      "verified": "aljazeera.net + aawsat usage «عراقجي», 2026-08-17 — الصيغة الفارسية عراقچی لا تُنشر"
-    },
-    {
-      "latin": "Jasper Jeffers",
-      "ar": "جاسبر جيفرز",
-      "wrong": [
-        "جيفيرز",
-        "جيفرس"
-      ],
-      "verified": "aljazeera.net encyclopedia + alqaheranews + ultrapal, checked 2026-08-18"
-    },
-    {
-      "latin": "Carol Daniel-Kasbari",
-      "ar": "كارول دانيال كسبري",
-      "wrong": [
-        "كارول دانيال قصبري",
-        "كارول دانييل كسبري"
-      ],
-      "verified": "alquds.co.uk byline + palestineforum.net tag pages, checked 2026-08-18"
-    },
-    {
-      "latin": "Loui Ridi / Louay Abu Rida",
-      "ar": "لؤي أبو ريدة",
-      "wrong": [
-        "لوي ريدي",
-        "أبو ريده"
-      ],
-      "verified": "aljazeera.net + mc-doualiya + rtarabic + skynewsarabia, 2026-08-18"
-    },
-    {
-      "latin": "Ras al-Ahmar (northern Jordan Valley)",
-      "ar": "الرأس الأحمر",
-      "wrong": [
-        "راس الاحمر"
-      ],
-      "verified": "alquds.co.uk + qudspress + akhbarna, 2026-08"
-    },
-    {
-      "latin": "at-Tha'ala (northern Jordan Valley)",
-      "ar": "الثعلة",
-      "wrong": [
-        "الثعالة"
-      ],
-      "verified": "alquds.co.uk + msad.ps, 2026-08"
-    },
-    {
-      "latin": "Eli Cohen",
-      "ar": "إيلي كوهين",
-      "wrong": [
-        "إيلي كوهن"
-      ],
-      "verified": "alaraby.co.uk + alquds.co.uk + arabic.euronews Likud primary coverage, 2026-08-18"
-    },
-    {
-      "latin": "Oren Dobronsky",
-      "ar": "أورين دوفرونسكي",
-      "wrong": [
-        "دوبرونسكي"
-      ],
-      "verified": "arabic.euronews + alquds.co.uk Likud list coverage, 2026-08-18"
-    },
-    {
-      "latin": "Dima Barakat",
-      "ar": "ديما بركات",
-      "wrong": [
-        "ديمة بركات"
-      ],
-      "verified": "palinfo.com + alwatanvoice.com + samanews.ps arrest coverage all write ديما محمد أمين بركات, checked 2026-08-19"
-    },
-    {
-      "latin": "Tomoko Akane",
-      "ar": "توموكو أكاني",
-      "wrong": [
-        "توموكو أكانه",
-        "توموكو أكانى"
-      ],
-      "verified": "aljazeera.net + arabic.cnn + mc-doualiya sanctions coverage all write توموكو أكاني, checked 2026-08-20"
-    },
-    {
-      "latin": "Abdoulaye Seye",
-      "ar": "عبد الله سي",
-      "wrong": [
-        "عبد الله سيي",
-        "عبدالله سايي"
-      ],
-      "verified": "aljazeera.net + arabic.cnn ICC sanctions coverage write عبد الله سي, checked 2026-08-20"
-    },
-    {
-      "latin": "Tommy Piggott (State Department spokesman)",
-      "ar": "تومي بيغوت",
-      "wrong": [
-        "تومي بيغوث",
-        "تومي بيجوت"
-      ],
-      "verified": "state.gov Arabic translations page + skynewsarabia + nidaalwatan, 2026-08-20"
-    },
-    {
-      "latin": "Jared Kushner",
-      "ar": "جاريد كوشنر",
-      "wrong": [
-        "جارد كوشنير",
-        "جاريد كوشنير"
-      ],
-      "verified": "arabic.cnn + alquds.co.uk + skynewsarabia + arabic.euronews, 2026-08-20"
-    },
-    {
-      "latin": "Nickolay Mladenov (Board of Peace CEO)",
-      "ar": "نيكولاي ملادينوف",
-      "wrong": [
-        "ملادينوفتش",
-        "نقولاي ملادينوف"
-      ],
-      "verified": "arabic.cnn + alquds.co.uk + dostor.org, 2026-08-20"
-    },
-    {
-      "latin": "Zaha Hassan (Carnegie Endowment)",
-      "ar": "زها حسن",
-      "wrong": [
-        "زاها حسن",
-        "ضحى حسن"
-      ],
-      "verified": "ar.wikipedia entry + carnegie-mec.org, 2026-08-20"
-    },
-    {
-      "latin": "Zohran Mamdani",
-      "ar": "زهران ممداني",
-      "wrong": [
-        "زهران مملداني",
-        "زوهران ممداني"
-      ],
-      "verified": "aljazeera.net + alarabiya coverage of the NYC mayoralty, checked 2026-08-22"
-    },
-    {
-      "latin": "Abdul El-Sayed (Michigan Senate nominee)",
-      "ar": "عبد الرحمن السيد",
-      "wrong": [
-        "عبدل السيد",
-        "عبد السايد"
-      ],
-      "verified": "aljazeera.net + ajnet encyclopedia entry + almodon + arabic.euronews, 2026-08-24"
-    },
-    {
-      "latin": "Mike Huckabee (US ambassador to Israel)",
-      "ar": "مايك هاكابي",
-      "wrong": [
-        "هاكابى",
-        "مايك هكابي"
-      ],
-      "verified": "aljazeera.net + asharq.com + il.usembassy.gov Arabic page, 2026-08-24"
-    },
-    {
-      "latin": "Gadi Eisenkot (Yashar leader)",
-      "ar": "غادي آيزنكوت",
-      "wrong": [
-        "آيزنكوط",
-        "إيزنكوط"
-      ],
-      "verified": "arab48 + raya.ps + sonara.net election polling coverage, 2026-08-24"
-    },
-    {
-      "latin": "Ofer Winter (new right-wing party)",
-      "ar": "عوفر فينتر",
-      "wrong": [
-        "عوفير فينتر",
-        "عوفر وينتر"
-      ],
-      "verified": "raya.ps + arab48 coverage of the Channel 12 poll scenarios, 2026-08-24"
-    },
-    {
-      "latin": "Carol Daniel Kasbari",
-      "ar": "كارول دانيال كسبري",
-      "wrong": [
-        "كارول قصباري",
-        "كارول دانيال قصباري"
-      ],
-      "verified": "palestineforum.net (الملتقى الفلسطيني), 2026-08-24"
-    },
-    {
-      "latin": "Qais al-Bitawi",
-      "ar": "قيس البيطاوي",
-      "wrong": [
-        "قيس البيتاوي"
-      ],
-      "verified": "الجزيرة نت والمركز الفلسطيني للإعلام، 28 آب/أغسطس 2026"
-    },
-    {
-      "latin": "Eyal Zamir",
-      "ar": "إيال زامير",
-      "wrong": [
-        "إيال زمير"
-      ],
-      "verified": "الجزيرة نت وتغطيات عربية للجيش الإسرائيلي، آب/أغسطس 2026"
-    },
-    {
-      "latin": "Hussein Shuja'iya",
-      "ar": "حسين شجاعية",
-      "wrong": [
-        "حسين الشجاعية"
-      ],
-      "verified": "الحملة الوطنية لاسترداد جثامين الشهداء، بيانات آب/أغسطس 2026"
-    },
-    {
-      "latin": "Jared Moskowitz",
-      "ar": "جاريد موسكوفيتز",
-      "wrong": [
-        "موسكوفيتش"
-      ],
-      "verified": "الميادين وعربي21، آب/أغسطس 2026"
-    },
-    {
-      "latin": "Huda Ammori",
-      "ar": "هدى عموري",
-      "wrong": [],
-      "verified": "france24 arabic + euronews arabic + qudsn, 2026-08-28"
-    },
-    {
-      "latin": "Rawa Alsagheer",
-      "ar": "رواء الصغير",
-      "wrong": [],
-      "verified": "masarbadil.org, the movement's own Arabic site, 2026-08-28"
-    },
-    {
-      "latin": "Tariq Kenney-Shawa",
-      "ar": "طارق كيني-الشوّا",
-      "wrong": [],
-      "verified": "al-shabaka.org Arabic team page, 2026-08-28"
-    },
-    {
-      "latin": "Pete Hegseth (US war secretary)",
-      "ar": "بيت هيغسيث",
-      "wrong": [
-        "بيت هيجسيث",
-        "بيت هيغسث"
-      ],
-      "verified": "aljazeera.net news + politics files and Al Jazeera Arabic channel posts, 2026-08-30"
-    },
-    {
-      "latin": "Daryl Caudle (US chief of naval operations)",
-      "ar": "داريل كودل",
-      "wrong": [
-        "داريل كاودل"
-      ],
-      "verified": "asharq.com defense file, 2026-08-30"
-    },
-    {
-      "latin": "Dan Caine (chairman, US Joint Chiefs of Staff)",
-      "ar": "دان كين",
-      "wrong": [
-        "دان كاين"
-      ],
-      "verified": "aljazeera.net encyclopedia entry + asharq.com + aawsat.com, 2026-08-30"
-    },
-    {
-      "latin": "Abdel-Razzaq Natsheh",
-      "ar": "عبد الرزاق النتشة",
-      "wrong": [
-        "عبد الرازق النتشة",
-        "عبد الرزاق نتشه",
-        "عبدالرزاق نتشه"
-      ],
-      "verified": "mtde.gov.ps + MTDEPalestine facebook, 2026-09-01"
-    },
-    {
-      "latin": "Deemah AlYahya",
-      "ar": "ديمة اليحيى",
-      "wrong": [
-        "ديما اليحيى",
-        "ديمة الياحي"
-      ],
-      "verified": "spa.gov.sa + ar.wikipedia, 2026-09-01"
-    }
-  ]
+ "_readme": [
+  "Canonical Arabic spellings of transliterated names (owner order 2026-08-11,",
+  "after «الهدالين» reached the Arabic edition for الهذالين). RULE, binding on",
+  "every agent and desk: before an Arabic edition uses a personal name that",
+  "arrived through English or Hebrew, VERIFY the spelling against Arabic-language",
+  "sources covering the same story (الجزيرة نت، وفا، معا، عرب 48، العربي الجديد،",
+  "CNN بالعربية…) and record the verified form here with its source. build.py",
+  "loads this file and flags any listed wrong variant in briefs and originals",
+  "exactly like machine diction. Fail-open: a broken lexicon disables the net,",
+  "never the build.",
+  "Entry fields: latin (as the wires spell it), ar (verified Arabic form),",
+  "wrong (DISTINCTIVE strings matched as substrings — never list a string that",
+  "is also an ordinary Arabic word on its own), verified (source + date).",
+  "Grow this file with every name the desks verify; never delete an entry —",
+  "supersede it by editing in place."
+ ],
+ "names": [
+  {
+   "latin": "Scott Bessent",
+   "ar": "سكوت بيسنت",
+   "wrong": [
+    "بيسينت",
+    "بسنت"
+   ],
+   "verified": "arabic.cnn + alquds.co.uk + emaratalyoum, 2026-08-15"
+  },
+  {
+   "latin": "Awdah Hathaleen",
+   "ar": "عودة الهذالين",
+   "wrong": [
+    "هدالين",
+    "الحذالين"
+   ],
+   "verified": "ar.wikipedia + wafa.ps + maannews + alaraby, 2026-08-11"
+  },
+  {
+   "latin": "Sayfollah (Saif) Musallet",
+   "ar": "سيف الله مصلط",
+   "wrong": [
+    "سيف الله مسلت",
+    "سيف الله مسلّت",
+    "سيف الله مصلت",
+    "سيف مسلت"
+   ],
+   "verified": "aljazeera.net + arabic.cnn + al-watan.com, 2026-08-11"
+  },
+  {
+   "latin": "Yinon Levy",
+   "ar": "يانون ليفي",
+   "wrong": [
+    "ينون ليفي"
+   ],
+   "verified": "alaraby.co.uk (usage also split in Arabic press; house form fixed for consistency), 2026-08-11"
+  },
+  {
+   "latin": "Nasrallah Abu Siyam",
+   "ar": "نصر الله أبو صيام",
+   "wrong": [
+    "نصرالله أبو صيام"
+   ],
+   "verified": "house usage consistent since 2026-02; recheck against wafa on next story",
+   "note": "«نصر الله» separated, matching Arabic press convention for the given name"
+  },
+  {
+   "latin": "Khamis Ayyad",
+   "ar": "خميس عياد",
+   "wrong": [
+    "خميس عياض"
+   ],
+   "verified": "Arabic wire coverage of the Silwad fire, 2026-08; shadda form عيّاد acceptable"
+  },
+  {
+   "latin": "Awdah Hathaleen village – Umm al-Khair",
+   "ar": "أم الخير",
+   "wrong": [
+    "أم الخيّر"
+   ],
+   "verified": "wafa.ps, 2026-08-11"
+  },
+  {
+   "latin": "Taghreed El-Khodary",
+   "ar": "تغريد الخضري",
+   "wrong": [
+    "تغريد الخضيري",
+    "تغريد خضري"
+   ],
+   "verified": "ar.wikipedia (مقالة باسمها), 2026-08-11"
+  },
+  {
+   "latin": "Daoud Kuttab",
+   "ar": "داود كتّاب",
+   "wrong": [
+    "داود كتاب",
+    "داوود كتاب"
+   ],
+   "verified": "his own Arabic byline/account rendering داود كتّاب, 2026-08-11"
+  },
+  {
+   "latin": "Hala Alqadi (karate, Asian Games bronze)",
+   "ar": "حلا القاضي",
+   "wrong": [
+    "هالة القاضي",
+    "حلا القاضى"
+   ],
+   "verified": "wafa.ps + alquds.com + almamlakatv + ar.wikipedia (مقالة باسمها), 2026-08-13 — الإنجليزية تكتبها Hala فتُقرأ «هالة» خطأً",
+   "note": "من دير استيا؛ أول فلسطينية تحرز ميدالية في دورة الألعاب الآسيوية"
+  },
+  {
+   "latin": "Laila Hasan (Women in Hebron cooperative)",
+   "ar": "ليلى حسن",
+   "wrong": [
+    "ليلا حسن",
+    "ليلى حسان"
+   ],
+   "verified": "لم تُعثر تغطية عربية للتعاونية حتى 2026-08-14؛ «ليلى حسن» هي الصيغة العربية المعيارية لعنصري الاسم — يُعاد التحقق من وفا/معا عند ورود تغطية عربية",
+   "note": "فنانة نسيج من الخليل، مؤسسة ومصممة في تعاونية «نساء في الخليل»"
+  },
+  {
+   "latin": "Idhna",
+   "ar": "إذنا",
+   "wrong": [
+    "ادنا"
+   ],
+   "verified": "wafa.ps (خبر «الاحتلال يعتقل مواطنا من إذنا ويقتحم دورا»), 2026-08-14",
+   "note": "بلدة جنوب غرب الخليل؛ مقر جمعية إذنا التعاونية للتطريز والصناعات اليدوية"
+  },
+  {
+   "latin": "Erika Guevara Rosas (Amnesty International)",
+   "ar": "إريكا غيفارا روساس",
+   "wrong": [
+    "إيريكا غيفارا روساس",
+    "إريكا جيفارا روساس",
+    "إريكا غيفارا روزاس"
+   ],
+   "verified": "aljazeera.net + hala.jo (تغطية بيانَي الاستيطان شباط/فبراير 2026), 2026-08-15",
+   "note": "المديرة العليا للأبحاث والمناصرة والسياسات والحملات في منظمة العفو الدولية"
+  },
+  {
+   "latin": "Abdul Azim Wadi (mayor of Qusra)",
+   "ar": "عبد العظيم وادي",
+   "wrong": [
+    "عبد العظيم وادى",
+    "عبدالعظيم الوادى"
+   ],
+   "verified": "raya.ps + shfanews.net + elwatannews (تغطية حصار قصرة), 2026-08-16",
+   "note": "رئيس بلدية قصرة جنوب شرق نابلس؛ تَرِد أيضاً «عبد العظيم الوادي» في بعض المصادر — الصيغة البيتية «عبد العظيم وادي»"
+  },
+  {
+   "latin": "Michael Milstein",
+   "ar": "ميخائيل ميلشتاين",
+   "wrong": [
+    "ميخائيل ميلشتين",
+    "مايكل ميلشتاين"
+   ],
+   "verified": "aljazeera.net + bokra.net + sawaleif, 2026-08-16",
+   "note": "رئيس منتدى الدراسات الفلسطينية في مركز موشيه ديان بجامعة تل أبيب؛ ترأس الساحة الفلسطينية في «أمان» برتبة عقيد"
+  },
+  {
+   "latin": "Kazem Gharibabadi",
+   "ar": "كاظم غريب آبادي",
+   "wrong": [
+    "كاظم غريب أبادي",
+    "كاظم غريبابادي"
+   ],
+   "verified": "alalam.ir + alahednews + marefa + العربي الجديد (تغطية المفاوضات النووية), 2026-08-16",
+   "note": "نائب وزير الخارجية الإيراني للشؤون القانونية والدولية منذ أيلول 2024"
+  },
+  {
+   "latin": "Mohammed Rashid / Khaled Salam (Arafat's economic adviser)",
+   "ar": "خالد سلام",
+   "wrong": [
+    "خالد إسلام",
+    "خالد سلامة"
+   ],
+   "verified": "aljazeera.net (موسوعة: محمد رشيد) + arabi21 + wattan, 2026-08-16 — الاسم الحركي «خالد سلام»؛ «إسلام» تصحيف شائع في التفريغ الآلي",
+   "note": "الاسم الكامل محمد برهان رشيد؛ أول مدير عام لصندوق الاستثمار الفلسطيني"
+  },
+  {
+   "latin": "Azmi Shuaibi",
+   "ar": "عزمي الشعيبي",
+   "wrong": [
+    "عزمي شعيبي",
+    "عزمي الشعيبى"
+   ],
+   "verified": "aman-palestine.org + aljazeera.net usage, 2026-08-16",
+   "note": "مستشار مجلس إدارة ائتلاف أمان لشؤون مكافحة الفساد"
+  },
+  {
+   "latin": "Ahmad al-Beqawi (Taqarob podcast)",
+   "ar": "أحمد البيقاوي",
+   "wrong": [
+    "أحمد البقاوي",
+    "أحمد بيقاوي"
+   ],
+   "verified": "حسابات البرنامج الرسمية (facebook.com/Biqawi، تقارب بودكاست), 2026-08-16"
+  },
+  {
+   "latin": "Yasmin Abu Hassan (chef)",
+   "ar": "ياسمين أبو حسان",
+   "wrong": [
+    "ياسمين أبو حسين",
+    "ياسمين ابو حسون"
+   ],
+   "verified": "حسابها الرسمي + سيدتي + زاد الأردن (أبو حسّان), 2026-08-16"
+  },
+  {
+   "latin": "Saher Alghorra (Pulitzer photographer)",
+   "ar": "ساهر الغرة",
+   "wrong": [
+    "ساهر الغرا",
+    "صاهر الغرة"
+   ],
+   "verified": "aljazeera.net + alquds.com + palinfo, 2026-08-17"
+  },
+  {
+   "latin": "Hana Tahayneh (administrative detainee, Jenin)",
+   "ar": "هناء طحاينة",
+   "wrong": [
+    "هناء طحاينه",
+    "هناء طحاينا"
+   ],
+   "verified": "raya.ps + pnn.ps coverage of the Commission of Detainees' statement, 2026-08-17"
+  },
+  {
+   "latin": "Khalil al-Hayya",
+   "ar": "خليل الحية",
+   "wrong": [
+    "خليل الحيا",
+    "خليل حية"
+   ],
+   "verified": "aljazeera.net + wafa.ps, 2026-08-17"
+  },
+  {
+   "latin": "Bashar Alhroub (Palestinian artist)",
+   "ar": "بشار الحروب",
+   "wrong": [
+    "بشار الهروب",
+    "بشار الخروب"
+   ],
+   "verified": "rommanmag.com feature on his 'Land of Salt' + aajqa.com culture report on the London 'Resurrection' show, 2026-08-23. The English romanisation 'Alhroub' invites الهروب; the family name is الحروب."
+  },
+  {
+   "latin": "Mtanes Shihadeh (Mada al-Carmel, former Balad MK)",
+   "ar": "إمطانس شحادة",
+   "wrong": [
+    "متانس شحادة",
+    "متنس شحادة",
+    "ميتانس شحادة"
+   ],
+   "verified": "ar.wikipedia.org entry + alaraby.co.uk author page for the same scholar, 2026-08-23. The English 'Mtanes' invites متانس; the Arabic form is إمطانس (also written امطانس)."
+  },
+  {
+   "latin": "Mohammed Samhouri (Palestinian economist)",
+   "ar": "محمد السمهوري",
+   "wrong": [
+    "محمد سمحوري",
+    "محمد السمحوري"
+   ],
+   "verified": "washingtoninstitute.org Arabic expert page for the same economist, 2026-08-17"
+  },
+  {
+   "latin": "Jasper Jeffers (ISF commander)",
+   "ar": "جاسبر جيفرز",
+   "wrong": [
+    "جاسبر جفرز",
+    "جاسبر جيفرس"
+   ],
+   "verified": "aljazeera.net encyclopedia entry + samanews.ps, 2026-08-17"
+  },
+  {
+   "latin": "Kiryat Gat",
+   "ar": "كريات غات",
+   "wrong": [
+    "كريات جات"
+   ],
+   "verified": "aljazeera.net encyclopedia entry on the CMCC + ultrapal, 2026-08-17"
+  },
+  {
+   "latin": "Donald Trump",
+   "ar": "ترامب",
+   "wrong": [
+    "ترامป",
+    "ترامپ"
+   ],
+   "verified": "الإملاء المعتمد في البيت «ترامب» (استخدام الجزيرة نت)؛ الخاطئان محرفان دخيلان: ป تايلاندية (U+0E1B) وپ فارسية — ضبط 2026-08-17 بعد عنوان منشور حمل الحرف التايلاندي",
+   "note": "net catches homoglyph leaks; the foreign-script net below it catches every other script"
+  },
+  {
+   "latin": "Gisha (Israeli rights group)",
+   "ar": "جيشاه",
+   "wrong": [
+    "چيشاه"
+   ],
+   "verified": "موسوعة مدار للمصطلحات (جيشا/جيشاه), 2026-08-17"
+  },
+  {
+   "latin": "Abbas Araghchi (Iran FM)",
+   "ar": "عباس عراقجي",
+   "wrong": [
+    "عراقچي",
+    "عراقتشي"
+   ],
+   "verified": "aljazeera.net + aawsat usage «عراقجي», 2026-08-17 — الصيغة الفارسية عراقچی لا تُنشر"
+  },
+  {
+   "latin": "Jasper Jeffers",
+   "ar": "جاسبر جيفرز",
+   "wrong": [
+    "جيفيرز",
+    "جيفرس"
+   ],
+   "verified": "aljazeera.net encyclopedia + alqaheranews + ultrapal, checked 2026-08-18"
+  },
+  {
+   "latin": "Carol Daniel-Kasbari",
+   "ar": "كارول دانيال كسبري",
+   "wrong": [
+    "كارول دانيال قصبري",
+    "كارول دانييل كسبري"
+   ],
+   "verified": "alquds.co.uk byline + palestineforum.net tag pages, checked 2026-08-18"
+  },
+  {
+   "latin": "Loui Ridi / Louay Abu Rida",
+   "ar": "لؤي أبو ريدة",
+   "wrong": [
+    "لوي ريدي",
+    "أبو ريده"
+   ],
+   "verified": "aljazeera.net + mc-doualiya + rtarabic + skynewsarabia, 2026-08-18"
+  },
+  {
+   "latin": "Ras al-Ahmar (northern Jordan Valley)",
+   "ar": "الرأس الأحمر",
+   "wrong": [
+    "راس الاحمر"
+   ],
+   "verified": "alquds.co.uk + qudspress + akhbarna, 2026-08"
+  },
+  {
+   "latin": "at-Tha'ala (northern Jordan Valley)",
+   "ar": "الثعلة",
+   "wrong": [
+    "الثعالة"
+   ],
+   "verified": "alquds.co.uk + msad.ps, 2026-08"
+  },
+  {
+   "latin": "Eli Cohen",
+   "ar": "إيلي كوهين",
+   "wrong": [
+    "إيلي كوهن"
+   ],
+   "verified": "alaraby.co.uk + alquds.co.uk + arabic.euronews Likud primary coverage, 2026-08-18"
+  },
+  {
+   "latin": "Oren Dobronsky",
+   "ar": "أورين دوفرونسكي",
+   "wrong": [
+    "دوبرونسكي"
+   ],
+   "verified": "arabic.euronews + alquds.co.uk Likud list coverage, 2026-08-18"
+  },
+  {
+   "latin": "Dima Barakat",
+   "ar": "ديما بركات",
+   "wrong": [
+    "ديمة بركات"
+   ],
+   "verified": "palinfo.com + alwatanvoice.com + samanews.ps arrest coverage all write ديما محمد أمين بركات, checked 2026-08-19"
+  },
+  {
+   "latin": "Tomoko Akane",
+   "ar": "توموكو أكاني",
+   "wrong": [
+    "توموكو أكانه",
+    "توموكو أكانى"
+   ],
+   "verified": "aljazeera.net + arabic.cnn + mc-doualiya sanctions coverage all write توموكو أكاني, checked 2026-08-20"
+  },
+  {
+   "latin": "Abdoulaye Seye",
+   "ar": "عبد الله سي",
+   "wrong": [
+    "عبد الله سيي",
+    "عبدالله سايي"
+   ],
+   "verified": "aljazeera.net + arabic.cnn ICC sanctions coverage write عبد الله سي, checked 2026-08-20"
+  },
+  {
+   "latin": "Tommy Piggott (State Department spokesman)",
+   "ar": "تومي بيغوت",
+   "wrong": [
+    "تومي بيغوث",
+    "تومي بيجوت"
+   ],
+   "verified": "state.gov Arabic translations page + skynewsarabia + nidaalwatan, 2026-08-20"
+  },
+  {
+   "latin": "Jared Kushner",
+   "ar": "جاريد كوشنر",
+   "wrong": [
+    "جارد كوشنير",
+    "جاريد كوشنير"
+   ],
+   "verified": "arabic.cnn + alquds.co.uk + skynewsarabia + arabic.euronews, 2026-08-20"
+  },
+  {
+   "latin": "Nickolay Mladenov (Board of Peace CEO)",
+   "ar": "نيكولاي ملادينوف",
+   "wrong": [
+    "ملادينوفتش",
+    "نقولاي ملادينوف"
+   ],
+   "verified": "arabic.cnn + alquds.co.uk + dostor.org, 2026-08-20"
+  },
+  {
+   "latin": "Zaha Hassan (Carnegie Endowment)",
+   "ar": "زها حسن",
+   "wrong": [
+    "زاها حسن",
+    "ضحى حسن"
+   ],
+   "verified": "ar.wikipedia entry + carnegie-mec.org, 2026-08-20"
+  },
+  {
+   "latin": "Zohran Mamdani",
+   "ar": "زهران ممداني",
+   "wrong": [
+    "زهران مملداني",
+    "زوهران ممداني"
+   ],
+   "verified": "aljazeera.net + alarabiya coverage of the NYC mayoralty, checked 2026-08-22"
+  },
+  {
+   "latin": "Abdul El-Sayed (Michigan Senate nominee)",
+   "ar": "عبد الرحمن السيد",
+   "wrong": [
+    "عبدل السيد",
+    "عبد السايد"
+   ],
+   "verified": "aljazeera.net + ajnet encyclopedia entry + almodon + arabic.euronews, 2026-08-24"
+  },
+  {
+   "latin": "Mike Huckabee (US ambassador to Israel)",
+   "ar": "مايك هاكابي",
+   "wrong": [
+    "هاكابى",
+    "مايك هكابي"
+   ],
+   "verified": "aljazeera.net + asharq.com + il.usembassy.gov Arabic page, 2026-08-24"
+  },
+  {
+   "latin": "Gadi Eisenkot (Yashar leader)",
+   "ar": "غادي آيزنكوت",
+   "wrong": [
+    "آيزنكوط",
+    "إيزنكوط"
+   ],
+   "verified": "arab48 + raya.ps + sonara.net election polling coverage, 2026-08-24"
+  },
+  {
+   "latin": "Ofer Winter (new right-wing party)",
+   "ar": "عوفر فينتر",
+   "wrong": [
+    "عوفير فينتر",
+    "عوفر وينتر"
+   ],
+   "verified": "raya.ps + arab48 coverage of the Channel 12 poll scenarios, 2026-08-24"
+  },
+  {
+   "latin": "Carol Daniel Kasbari",
+   "ar": "كارول دانيال كسبري",
+   "wrong": [
+    "كارول قصباري",
+    "كارول دانيال قصباري"
+   ],
+   "verified": "palestineforum.net (الملتقى الفلسطيني), 2026-08-24"
+  },
+  {
+   "latin": "Qais al-Bitawi",
+   "ar": "قيس البيطاوي",
+   "wrong": [
+    "قيس البيتاوي"
+   ],
+   "verified": "الجزيرة نت والمركز الفلسطيني للإعلام، 28 آب/أغسطس 2026"
+  },
+  {
+   "latin": "Eyal Zamir",
+   "ar": "إيال زامير",
+   "wrong": [
+    "إيال زمير"
+   ],
+   "verified": "الجزيرة نت وتغطيات عربية للجيش الإسرائيلي، آب/أغسطس 2026"
+  },
+  {
+   "latin": "Hussein Shuja'iya",
+   "ar": "حسين شجاعية",
+   "wrong": [
+    "حسين الشجاعية"
+   ],
+   "verified": "الحملة الوطنية لاسترداد جثامين الشهداء، بيانات آب/أغسطس 2026"
+  },
+  {
+   "latin": "Jared Moskowitz",
+   "ar": "جاريد موسكوفيتز",
+   "wrong": [
+    "موسكوفيتش"
+   ],
+   "verified": "الميادين وعربي21، آب/أغسطس 2026"
+  },
+  {
+   "latin": "Huda Ammori",
+   "ar": "هدى عموري",
+   "wrong": [],
+   "verified": "france24 arabic + euronews arabic + qudsn, 2026-08-28"
+  },
+  {
+   "latin": "Rawa Alsagheer",
+   "ar": "رواء الصغير",
+   "wrong": [],
+   "verified": "masarbadil.org, the movement's own Arabic site, 2026-08-28"
+  },
+  {
+   "latin": "Tariq Kenney-Shawa",
+   "ar": "طارق كيني-الشوّا",
+   "wrong": [],
+   "verified": "al-shabaka.org Arabic team page, 2026-08-28"
+  },
+  {
+   "latin": "Pete Hegseth (US war secretary)",
+   "ar": "بيت هيغسيث",
+   "wrong": [
+    "بيت هيجسيث",
+    "بيت هيغسث"
+   ],
+   "verified": "aljazeera.net news + politics files and Al Jazeera Arabic channel posts, 2026-08-30"
+  },
+  {
+   "latin": "Daryl Caudle (US chief of naval operations)",
+   "ar": "داريل كودل",
+   "wrong": [
+    "داريل كاودل"
+   ],
+   "verified": "asharq.com defense file, 2026-08-30"
+  },
+  {
+   "latin": "Dan Caine (chairman, US Joint Chiefs of Staff)",
+   "ar": "دان كين",
+   "wrong": [
+    "دان كاين"
+   ],
+   "verified": "aljazeera.net encyclopedia entry + asharq.com + aawsat.com, 2026-08-30"
+  },
+  {
+   "latin": "Abdel-Razzaq Natsheh",
+   "ar": "عبد الرزاق النتشة",
+   "wrong": [
+    "عبد الرازق النتشة",
+    "عبد الرزاق نتشه",
+    "عبدالرزاق نتشه"
+   ],
+   "verified": "mtde.gov.ps + MTDEPalestine facebook, 2026-09-01"
+  },
+  {
+   "latin": "Deemah AlYahya",
+   "ar": "ديمة اليحيى",
+   "wrong": [
+    "ديما اليحيى",
+    "ديمة الياحي"
+   ],
+   "verified": "spa.gov.sa + ar.wikipedia, 2026-09-01"
+  },
+  {
+   "latin": "Thaer Abu Asab",
+   "ar": "ثائر أبو عصب",
+   "wrong": [
+    "أبو عساب",
+    "ثائر ابو عصب"
+   ],
+   "verified": "wafa.ps + wattan.net + mawteni48 + alghad, 2026-09-02"
+  },
+  {
+   "latin": "Bashar Fawadleh",
+   "ar": "بشار فواضلة",
+   "wrong": [
+    "فوادلة",
+    "فواضله"
+   ],
+   "verified": "vaticannews.va (Arabic) + lpj.org, 2026-09-02"
+  },
+  {
+   "latin": "Ketziot (prison)",
+   "ar": "كتسيعوت",
+   "wrong": [
+    "كتسعوت",
+    "كيتسيوت"
+   ],
+   "verified": "mawteni48 + samanews + alghad, 2026-09-02"
+  }
+ ]
 }
