@@ -1921,6 +1921,7 @@ def write_brief(client, item):
         system += " The source material is in Arabic; write the headline and brief in English."
     convo = [{"role": "user", "content": material}]
     text = new_title = None
+    retry_kind = "retry"  # refined below from what the editor pass was asked to fix
     for attempt in (0, 1):
         response = client.messages.create(
             model=BRIEFS_MODEL,
@@ -1929,9 +1930,12 @@ def write_brief(client, item):
             messages=convo,
         )
         try:  # budget governor (owner order 2026-09-01) — never blocks the wire
+            # The first live breakdown (2026-09-02) showed the editor pass
+            # costing MORE than first drafts; the tag names what it was
+            # asked to fix so the wire's money can be attacked with evidence.
             import budget_ledger
             budget_ledger.record("briefs", BRIEFS_MODEL, response.usage,
-                                 tag="rewrite" if attempt == 0 else "retry")
+                                 tag="rewrite" if attempt == 0 else retry_kind)
         except Exception:
             pass
         raw = "".join(b.text for b in response.content if b.type == "text").strip()
@@ -1961,6 +1965,13 @@ def write_brief(client, item):
         if not issues:
             break
         if attempt == 0:
+            _structural = structure_issues(text, item["lang"])
+            if any(s.startswith(("too short", "الموجز قصير")) for s in _structural):
+                retry_kind = "retry-short"
+            elif _structural:
+                retry_kind = "retry-paragraphs"
+            else:
+                retry_kind = "retry-diction"
             convo += [{"role": "assistant", "content": raw},
                       {"role": "user", "content": _diction_retry_note(issues, item["lang"])}]
         else:
