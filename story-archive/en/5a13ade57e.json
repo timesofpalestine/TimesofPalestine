@@ -1,6 +1,6 @@
 {
  "brief": "Israeli forces violated the ceasefire agreement in the Gaza Strip on Wednesday while maintaining and tightening a blockade on the coastal enclave, IMEMC News reported. The breaches marked the 328th consecutive day of violations since the ceasefire took effect, with no sign of abatement in military operations across the territory.\n\nThe intensified siege has severely restricted the movement of humanitarian aid and essential supplies into Gaza, compounding an acute shortage of food, medicine, and fuel. Aid organizations have warned that the combined effect of ceasefire violations and blockade enforcement is deepening a humanitarian catastrophe affecting hundreds of thousands of Palestinians trapped in the enclave with limited access to basic necessities.",
- "cat": "gaza",
+ "cat": "health",
  "corroborating_sources": [
   {
    "article": "https://imemc.org/article/gaza-israeli-forces-continue-ceasefire-violations-amid-ongoing-siege",
@@ -9,8 +9,8 @@
    "verified": false
   }
  ],
- "date": "2026-09-02T08:14:02+00:00",
- "dek": "For the 328th consecutive day, Israeli forces continued to violate the ceasefire agreement in the Gaza Strip on Wednesday while maintaining and tightening the blockade on the coastal enclave, further exacerbating the humanitarian crisis facing hundreds of…",
+ "date": "2026-09-02T09:39:02+00:00",
+ "dek": "For the 328th consecutive day, Israeli forces continued violating the ceasefire agreement in the Gaza Strip on Wednesday, killing two Palestinians, including a child, while a woman succumbed to serious wounds sustained a day earlier. Medical sources said an…",
  "image": "https://imemc.org/wp-content/uploads/2026/09/GazaDestruction121-e1788336331391.jpg",
  "lang": "en",
  "link": "https://imemc.org/article/gaza-israeli-forces-continue-ceasefire-violations-amid-ongoing-siege",
@@ -24,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "5a13ade57e",
- "score": 63.35,
+ "score": 63.81,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
