@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/gaza-israeli-forces-continue-ceasefire-violations-amid-ongoing-siege",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-killed-israeli-attacks-northern-and-central-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-02T09:39:02+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "5a13ade57e",
- "score": 60.06,
+ "score": 59.77,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
