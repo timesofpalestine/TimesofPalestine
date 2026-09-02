@@ -1,0 +1,44 @@
+{
+ "brief": "Palestinian witnesses have described simultaneous attacks by Israeli army units and settlers on multiple mosques across the occupied West Bank, according to Al Jazeera English. The raids, characterized as coordinated operations, have targeted Islamic houses of worship throughout the territory and prompted widespread fear among Palestinian communities in the region.\n\nAccounts from those present during the incidents detail the assault on religious sites. Witnesses recounted the involvement of both military forces and armed settlers in the operations, which unfolded across separate locations in the West Bank at the same time.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/2/palestinians-in-fear-as-israeli-forces-mount-pogroms-on-west-bank-mosques?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/soldiers-colonizers-continue-west-bank-attacks",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/israel-west-bank-attacks-postal-service-nepal-deaths",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-02T14:14:34+00:00",
+ "dek": "Palestinian witnesses recount the coordinated Israeli army and settler attacks on mosques in the occupied West Bank.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/ap_6a979ffc1f380-1788321788.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/2/palestinians-in-fear-as-israeli-forces-mount-pogroms-on-west-bank-mosques?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/2/palestinians-in-fear-as-israeli-forces-mount-pogroms-on-west-bank-mosques?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "405d4deb09",
+ "score": 49.95,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces attack West Bank mosques in coordinated raids"
+}

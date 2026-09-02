@@ -1,0 +1,32 @@
+{
+ "brief": "أصاب قصف إسرائيلي خيمة في منطقة مواصي بخانيونس جنوب غزة، فأسفر عن إصابة خمسة أشخاص، بحسب غزة الآن. نُقل المصابون إلى المستشفيات للعلاج، من بينهم شخص في حالة حرجة.\n\nوتشهد خانيونس، التي تقع في الجزء الجنوبي من القطاع، قصفاً متواصلاً منذ بدء العملية العسكرية الإسرائيلية على غزة قبل أكثر من ستة أشهر. وتعاني المحافظة من نقص حاد في الخدمات الطبية والمواد الغذائية وسط تنقل السكان بحثاً عن الأمان والمأوى.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82577",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-02T12:55:53+00:00",
+ "dek": "",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82577",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c8b93e38fc",
+ "score": 34.02,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "قصف إسرائيلي يصيب خمسة أشخاص في خانيونس"
+}
