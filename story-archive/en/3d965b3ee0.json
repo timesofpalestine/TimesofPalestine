@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli Prime Minister Benjamin Netanyahu said on Wednesday that his country is working to overthrow Iran's government, according to Al Jazeera English. The statement represented a rare public acknowledgment of such strategic ambitions toward the Iranian leadership.\n\nNetanyahu provided no specifics about the methods, resources, or timeline involved in any such efforts. His remarks came as Israel and Iran have engaged in escalating military confrontations over recent months, including direct strikes and operations carried out through allied forces across the Middle East region.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/2/israeli-pm-says-israel-is-working-to-overthrow-irans-government?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-israels-mission-iran-not-yet-finished",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-02T21:23:55+00:00",
+ "dek": "Israeli Prime Minister Benjamin Netanyahu said on Wednesday that his country is working to overthrow Iran’s government.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788384205.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/israeli-pm-says-israel-is-working-to-overthrow-irans-government?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/2/israeli-pm-says-israel-is-working-to-overthrow-irans-government?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3d965b3ee0",
+ "score": 49.8,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu says Israel works to overthrow Iran's government"
+}

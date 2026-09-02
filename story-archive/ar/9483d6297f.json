@@ -6,17 +6,12 @@
    "article": "https://www.pbc.ps/3654-14",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/733721",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-02T07:36:07+00:00",
  "dek": "استولت قوات الاحتلال الإسرائيلي اليوم الأربعاء، على جرار تابع لمجلس قروي الساوية جنوب نابلس وافادت مصادر محلية، بأن قوات الاحتلال ظهرت المقالة الاحتلال يستولي على جرار في بلدة الساوية جنوب نابلس أولاً على تلفزيون فلسطين.",
+ "dup_of": null,
  "image": "/media/times-of-palestine-cover-westbank-ar.svg",
  "lang": "ar",
  "link": "https://www.pbc.ps/3654-14",
@@ -30,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "9483d6297f",
- "score": 40.43,
+ "score": 40.19,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",

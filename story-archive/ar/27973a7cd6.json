@@ -7,16 +7,11 @@
    "name": "تايمز أوف فلسطين",
    "url": "",
    "verified": false
-  },
-  {
-   "article": "https://t.me/maannews/36560",
-   "name": "وكالة معا (حصري)",
-   "url": "https://www.maannews.net/",
-   "verified": false
   }
  ],
  "date": "2026-09-01T11:10:00+00:00",
  "dek": "اقتحمت قوة إسرائيلية صباح الثلاثاء غرب مدينة غزة واقتادت رجلاً وصفه وزير الأمن الإسرائيلي يسرائيل كاتس بأنه قيادي بارز في حماس، في عملية رافقتها أكثر من ثماني عشرة غارة جوية بحسب سكان ومصادر طبية فلسطينية.",
+ "dup_of": null,
  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Israel%20Katz%20%28IMG%209196%29.jpg?width=640",
  "lang": "ar",
  "link": "original:gaza-city-raid-security-chief-2026-09-01.ar",
@@ -30,7 +25,7 @@
  "modified": null,
  "original": true,
  "pid": "27973a7cd6",
- "score": 96.91,
+ "score": 96.86,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
