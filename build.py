@@ -1930,7 +1930,8 @@ def write_brief(client, item):
         )
         try:  # budget governor (owner order 2026-09-01) — never blocks the wire
             import budget_ledger
-            budget_ledger.record("briefs", BRIEFS_MODEL, response.usage)
+            budget_ledger.record("briefs", BRIEFS_MODEL, response.usage,
+                                 tag="rewrite" if attempt == 0 else "retry")
         except Exception:
             pass
         raw = "".join(b.text for b in response.content if b.type == "text").strip()
@@ -2379,7 +2380,7 @@ def _duplicate_verdict(client, a, b):
                        "content": f"ITEM ONE\n{block(a)}\n\nITEM TWO\n{block(b)}"}])
         try:  # budget governor — the judge rides the briefs allocation
             import budget_ledger
-            budget_ledger.record("briefs", BRIEFS_MODEL, response.usage)
+            budget_ledger.record("briefs", BRIEFS_MODEL, response.usage, tag="judge")
         except Exception:
             pass
         word = "".join(

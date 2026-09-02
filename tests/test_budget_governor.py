@@ -90,7 +90,7 @@ class PacingTests(unittest.TestCase):
             budget_ledger.record("editor", usd=20.0, now=now)
             allowed, reason = budget_ledger.pace_allows("editor", now=now)
             self.assertFalse(allowed)
-            self.assertIn("ahead of pace", reason)
+            self.assertIn("purse empty", reason)
 
     def test_briefs_protected_until_hard_ceiling(self):
         with TempPaths(budget=100.0, hard_stop=0.92):
@@ -279,6 +279,165 @@ class LedgerNeverWipesTests(unittest.TestCase):
         self.assertIn("budget_ledger.py --resolve-conflict", wf)
 
 
+class PurseTests(unittest.TestCase):
+    """The purse (owner question 2026-09-02): silos became weights over what
+    the wire leaves, each desk saves up in a purse, and the editor runs in
+    editions the purse can pay for. These pin the pool math, the tier
+    choice, the learned prices and the forecast's honesty."""
+
+    TIERS = {"editor": {
+        "full": {"model": "claude-opus-5", "max_turns": 300, "usd": 18,
+                 "days": ["mon", "thu"]},
+        "light": {"model": "claude-sonnet-5", "max_turns": 90, "usd": 4}}}
+
+    def _cfg(self, tp, tiers=None):
+        cfg = json.loads(tp.config.read_text(encoding="utf-8"))
+        cfg["tiers"] = tiers or self.TIERS
+        tp.config.write_text(json.dumps(cfg), encoding="utf-8")
+
+    def test_wire_projection_reserves_the_wire_first(self):
+        with TempPaths(budget=100.0) as tp:
+            now = _iso(10)  # ~32% of September elapsed
+            budget_ledger.record("briefs", usd=9.0, now=now)  # ×1.1 = 9.9
+            cfg = budget_ledger.load_config()
+            ledger = budget_ledger.load_ledger(now)
+            wire = budget_ledger.wire_projection(cfg, ledger, now)
+            self.assertAlmostEqual(
+                wire, 9.9 / budget_ledger._elapsed_fraction(now), places=4)
+            caps, pool = budget_ledger.desk_caps(cfg, ledger, now)
+            self.assertAlmostEqual(pool, 92.0 - wire, places=6)
+            # weights: editor .30 of the .80 non-wire total
+            self.assertAlmostEqual(caps["editor"], pool * 0.30 / 0.80, places=6)
+
+    def test_pool_empties_when_the_wire_eats_the_budget(self):
+        with TempPaths(budget=100.0):
+            now = _iso(10)
+            budget_ledger.record("briefs", usd=40.0, now=now)  # projects ~146
+            allowed, reason = budget_ledger.pace_allows("editor", now=now)
+            self.assertFalse(allowed)
+            self.assertIn("pool $0.00", reason)
+
+    def test_light_edition_when_the_full_purse_is_short(self):
+        with TempPaths(budget=300.0) as tp:
+            self._cfg(tp)
+            now = datetime(2026, 9, 8, 6, 30, tzinfo=timezone.utc)  # a Tuesday
+            name, spec, reason = budget_ledger.choose_tier("editor", now=now)
+            self.assertEqual(name, "light", reason)
+            self.assertEqual(spec["model"], "claude-sonnet-5")
+
+    def test_full_edition_only_on_its_days_and_when_saved_up(self):
+        with TempPaths(budget=600.0) as tp:
+            self._cfg(tp)
+            tuesday = datetime(2026, 9, 15, 6, 30, tzinfo=timezone.utc)
+            name, _, _ = budget_ledger.choose_tier("editor", now=tuesday)
+            self.assertEqual(name, "light", "full is a Monday/Thursday edition")
+            monday = datetime(2026, 9, 14, 6, 30, tzinfo=timezone.utc)
+            name, spec, _ = budget_ledger.choose_tier("editor", now=monday)
+            self.assertEqual(name, "full")
+            self.assertEqual(spec["max_turns"], 300)
+
+    def test_skip_when_no_purse_can_pay(self):
+        with TempPaths(budget=100.0) as tp:
+            self._cfg(tp)
+            now = _iso(2)
+            budget_ledger.record("editor", usd=30.0, now=now)
+            name, _, reason = budget_ledger.choose_tier("editor", now=now)
+            self.assertIsNone(name)
+            self.assertIn("cannot pay any edition", reason)
+
+    def test_tier_price_is_learned_from_recorded_runs(self):
+        with TempPaths(budget=300.0) as tp:
+            self._cfg(tp)
+            now = _iso(3)
+            for usd in (2.0, 3.0, 2.5):
+                budget_ledger.record("editor", usd=usd, now=now, tier="light")
+            cfg = budget_ledger.load_config()
+            ledger = budget_ledger.load_ledger(now)
+            prices = budget_ledger.tier_prices(cfg, ledger, "editor")
+            self.assertAlmostEqual(prices["light"], 2.5 * 1.1, places=4)
+            self.assertEqual(prices["full"], 18.0, "no runs yet → configured price")
+            self.assertEqual(len(ledger["runs"]["editor"]), 3)
+
+    def test_untracked_spend_charges_the_full_edition_not_the_light(self):
+        with TempPaths(budget=300.0) as tp:
+            self._cfg(tp)
+            now = _iso(5)
+            budget_ledger.record("editor", usd=40.0, now=now)  # no tier: restored history
+            cfg = budget_ledger.load_config()
+            ledger = budget_ledger.load_ledger(now)
+            balances = budget_ledger.tier_balances(cfg, ledger, "editor", now)
+            self.assertLess(balances["full"], 0)
+            self.assertGreater(balances["light"], 0)
+
+    def test_simulation_and_forecast_are_honest(self):
+        with TempPaths(budget=150.0) as tp:
+            self._cfg(tp)
+            now = _iso(2)
+            budget_ledger.record("briefs", usd=7.0, now=now)  # a wire-sized wire
+            cfg = budget_ledger.load_config()
+            ledger = budget_ledger.load_ledger(now)
+            counts, cap = budget_ledger.simulate_month(cfg, ledger, "editor", now)
+            self.assertEqual(sum(counts.values()), 0, "the wire leaves nothing")
+            normal, cap400 = budget_ledger.simulate_month(
+                cfg, ledger, "editor", now, budget=400, fresh=True)
+            self.assertGreater(normal["light"], 5)
+            self.assertGreaterEqual(normal["full"], 1)
+            text = budget_ledger.forecast(now=now)
+            self.assertIn("discretionary pool", text)
+            self.assertIn("$400:", text)
+            self.assertIn("editor", text)
+
+    def test_tags_and_runs_survive_the_three_way_merge(self):
+        base = {"month": "2026-09", "desks": {"briefs": 1.0}, "tags": {"briefs:judge": 0.4},
+                "runs": {}}
+        upstream = {"month": "2026-09", "desks": {"briefs": 1.2}, "tags": {"briefs:judge": 0.5},
+                    "runs": {"editor": [{"ts": "a", "usd": 3.0, "tier": "light"}]}}
+        ours = {"month": "2026-09", "desks": {"briefs": 1.3}, "tags": {"briefs:judge": 0.7},
+                "runs": {"editor": [{"ts": "b", "usd": 18.0, "tier": "full"}]}}
+        merged = budget_ledger.merge_ledgers(base, upstream, ours)
+        self.assertAlmostEqual(merged["tags"]["briefs:judge"], 0.8, places=6)
+        self.assertEqual(len(merged["runs"]["editor"]), 2)
+
+    def test_tier_cli_emits_workflow_outputs(self):
+        with TempPaths(budget=600.0) as tp:
+            self._cfg(tp)
+            import io
+            from contextlib import redirect_stdout
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                code = budget_ledger.main(["--tier", "editor"])
+            self.assertEqual(code, 0)
+            out = buf.getvalue()
+            self.assertIn("run=yes", out)
+            self.assertRegex(out, r"tier=(full|light)")
+            self.assertIn("model=claude-", out)
+            self.assertIn("max_turns=", out)
+
+    def test_editor_workflow_is_tier_driven(self):
+        text = (ROOT / ".github" / "workflows" / "daily-editor.yml").read_text(
+            encoding="utf-8")
+        self.assertIn("budget_ledger.py --tier editor", text)
+        self.assertIn("steps.budget.outputs.model", text)
+        self.assertIn("steps.budget.outputs.max_turns", text)
+        self.assertIn("TODAY'S EDITION TIER", text)
+        self.assertIn('--tier "${{ steps.budget.outputs.tier', text)
+
+    def test_wire_calls_are_tagged(self):
+        src = (ROOT / "build.py").read_text(encoding="utf-8")
+        self.assertIn('tag="judge"', src)
+        self.assertIn('tag="rewrite"', src)
+
+    def test_repo_tiers_are_sane(self):
+        cfg = json.loads((ROOT / "editorial" / "budget.json").read_text(
+            encoding="utf-8"))
+        editor = cfg["tiers"]["editor"]
+        self.assertEqual(list(editor), ["full", "light"], "highest tier first")
+        for spec in editor.values():
+            self.assertIn(spec["model"], budget_ledger.PRICES)
+            self.assertGreater(spec["usd"], 0)
+            self.assertGreater(spec["max_turns"], 0)
+
+
 class WiringTests(unittest.TestCase):
     """The gates stay wired into the desks and workflows."""
 
@@ -293,12 +452,12 @@ class WiringTests(unittest.TestCase):
             self.assertIn(desk, cfg["allocations"])
 
     def test_workflows_gate_and_record(self):
-        for wf, desk in (("daily-editor.yml", "editor"),
-                         ("washington-brief.yml", "washington"),
-                         ("weekly-maintenance.yml", "maintenance")):
+        for wf, desk, gate in (("daily-editor.yml", "editor", "--tier"),
+                               ("washington-brief.yml", "washington", "--check"),
+                               ("weekly-maintenance.yml", "maintenance", "--check")):
             text = (ROOT / ".github" / "workflows" / wf).read_text(
                 encoding="utf-8")
-            self.assertIn(f"budget_ledger.py --check {desk}", text, wf)
+            self.assertIn(f"budget_ledger.py {gate} {desk}", text, wf)
             self.assertIn(f"--record-usd {desk}", text, wf)
             # Site scan 2026-09-02: the Claude action strips git credentials
             # on exit and the editor's record pushes all failed auth — the
@@ -319,8 +478,10 @@ class WiringTests(unittest.TestCase):
     def test_ledger_rides_the_persist_commit(self):
         # originals/_ledger.json must be inside the persist step's `git add
         # originals/` path and must not be gitignored.
-        self.assertTrue(str(budget_ledger.LEDGER_FILE).endswith(
-            "originals/_ledger.json"))
+        # (the module attribute may be redirected to a temp file by other
+        # test modules in this process — pin the shipped default instead)
+        src = (ROOT / "budget_ledger.py").read_text(encoding="utf-8")
+        self.assertIn('LEDGER_FILE = ROOT / "originals" / "_ledger.json"', src)
         wf = (ROOT / ".github" / "workflows" / "build.yml").read_text(
             encoding="utf-8")
         self.assertIn("git add originals/ story-archive/", wf)

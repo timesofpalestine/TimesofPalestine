@@ -220,6 +220,22 @@ everything it builds:
    persist step merges a rebase conflict on the ledger as upstream plus
    this run's delta (`--resolve-conflict`) instead of dropping the run's
    commit. No agent reintroduces a plain read-modify-write of the file.
+   **The purse (owner question 2026-09-02, "come up with a creative
+   solution"):** fixed silos broke on day two — the wire alone runs near
+   the whole budget and the editor's silo bought two Opus runs then went
+   dark for four weeks. Now the allocations are WEIGHTS: the wire's
+   projected month (trailing rate) is reserved first, the ceiling's
+   remainder is the discretionary pool shared by weight, and every desk
+   saves up in a purse that refills daily — a big run is followed by
+   saving, never a blackout. The editor runs in EDITIONS
+   (`editorial/budget.json` "tiers"): the FULL edition (Opus, whole
+   mandate) on its big days, the LIGHT edition (Sonnet, the non-negotiables:
+   breaking sweep, stale sections, both press reviews, markets, running
+   files) on the others, each edition saving from its own share; the
+   governor learns each edition's real price from the runs it records.
+   `python3 budget_ledger.py --forecast` says what the month buys and what
+   each bigger budget would — the owner turns the one knob with that in
+   hand, and no agent turns it for them.
 
 ## Division of labor (suggested, not exclusive)
 
