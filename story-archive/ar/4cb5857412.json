@@ -6,19 +6,7 @@
    "article": "https://shehabnews.com/post/163372/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%86%D8%A7%D9%82-%D8%AE%D9%84%D8%A7%D9%84-%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%82%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%BA%D9%8A%D8%B1-%D8%B4%D9%85%D8%A7%D9%84-%D8%B4%D8%B1%D9%82-%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%84%D9%87",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/AlQastalps/392631",
-   "name": "القسطل · تيليغرام",
-   "url": "https://t.me/AlQastalps",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/318975",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-02T15:41:00+00:00",
@@ -36,7 +24,7 @@
  "modified": null,
  "original": false,
  "pid": "4cb5857412",
- "score": 62.44,
+ "score": 62.24,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
