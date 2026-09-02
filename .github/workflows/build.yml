@@ -125,13 +125,47 @@ jobs:
           # already shared on Telegram keep resolving on every future build.
           git add originals/ story-archive/
           if ! git diff --cached --quiet; then
+            # The governor's month-to-date, printed here so it sits at the
+            # END of the job log where the log API can reach it (the build
+            # step's copy is buried under the dist listing).
+            python3 budget_ledger.py --status || true
             git commit -m "Persist investigations and published-story archive [skip ci]"
             # Fetch/rebase/retry (charter publishing contract): this repo
             # receives frequent commits, and a silently lost push here loses
             # a finished, already-deployed investigation from the repo.
+            # Conflicts are RESOLVED, not ignored (site scan 2026-09-02): the
+            # old ignore-errors rebase left a conflicted rebase in place
+            # and then pushed HEAD — which was plain origin/main — so the
+            # push "succeeded" while this run's archive entries and budget
+            # ledger were dropped on the floor. Known conflict classes:
+            # the budget ledger merges as upstream + this run's delta; an
+            # archive record or the desk state file takes this run's newer
+            # copy; anything else aborts the rebase and retries.
             ok=0
             for i in 1 2 3; do
-              git pull --rebase --autostash origin main || true
+              git fetch origin main
+              if ! git rebase --autostash origin/main; then
+                resolved=1
+                for path in $(git diff --name-only --diff-filter=U); do
+                  case "$path" in
+                    originals/_ledger.json)
+                      python3 budget_ledger.py --resolve-conflict && git add "$path" || resolved=0 ;;
+                    story-archive/*|originals/_state.json)
+                      git checkout --theirs -- "$path" && git add "$path" || resolved=0 ;;
+                    *)
+                      echo "::warning::persist: unexpected conflict on $path"; resolved=0 ;;
+                  esac
+                done
+                if [ "$resolved" = 1 ] && ! git diff --cached --quiet; then
+                  GIT_EDITOR=true git rebase --continue || resolved=0
+                elif [ "$resolved" = 1 ]; then
+                  git rebase --skip || resolved=0   # nothing left to persist after the merge
+                fi
+                if [ "$resolved" != 1 ]; then
+                  git rebase --abort || true
+                  sleep $((i * 5)); continue
+                fi
+              fi
               if git push origin HEAD:main; then ok=1; break; fi
               sleep $((i * 5))
             done

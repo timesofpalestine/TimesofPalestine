@@ -211,7 +211,15 @@ everything it builds:
    windows next, the wire last and only at the ceiling. No agent removes a
    gate, records fake spend, or raises the budget number — that is the
    owner's decision alone. `tests/test_budget_governor.py` pins the math
-   and the wiring.
+   and the wiring. **The ledger never wipes (site scan 2026-09-02):** on
+   its first day the month-to-date vanished three times — the briefs desk
+   records from a thread pool and a reader that caught a half-written file
+   "failed open" to an empty ledger and saved it over the month. Records
+   are now locked and written atomically, an unreadable ledger is never
+   overwritten (that call goes unrecorded, loudly), and the build's
+   persist step merges a rebase conflict on the ledger as upstream plus
+   this run's delta (`--resolve-conflict`) instead of dropping the run's
+   commit. No agent reintroduces a plain read-modify-write of the file.
 
 ## Division of labor (suggested, not exclusive)
 
