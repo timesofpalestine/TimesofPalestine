@@ -37,6 +37,12 @@
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/two-palestinian-teens-killed-west-bank-raid-israeli-settlers-and-army",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-02T20:50:00+00:00",
@@ -55,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "c2664a8917",
- "score": 62.81,
+ "score": 62.55,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
