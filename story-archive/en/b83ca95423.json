@@ -21,28 +21,10 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/1/palestinians-mourn-children-killed-in-israeli-airstrikes-on-gaza-city?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/deaths-injuries-in-serious-israeli-escalation-in-gaza",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
    "article": "https://zeteo.com/p/israeli-bombing-raid-gaza-city-kindergarten",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": true
-  },
-  {
-   "article": "https://shehabnews.com/post/163307/%D8%A7%D9%84%D9%85%D8%AC%D8%A7%D9%87%D8%AF%D9%8A%D9%86-%D8%AA%D8%AF%D9%8A%D9%86-%D8%AC%D8%B1%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D8%A7%D9%84%D9%83%D8%AA%D9%8A%D8%A8%D8%A9-%D9%88%D8%AA%D8%A4%D9%83%D8%AF-%D8%A3%D9%86%D9%87%D8%A7-%D9%85%D8%AD%D8%A7%D9%88%D9%84%D8%A9-%D9%84%D8%A5%D9%81%D8%B4%D8%A7%D9%84-%D8%AC%D9%87%D9%88%D8%AF-%D8%AA%D8%AB%D8%A8%D9%8A%D8%AA-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1",
-   "name": "Shehab Wire (EN)",
-   "url": "https://shehabnews.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-01T11:10:00+00:00",
@@ -60,7 +42,7 @@
  "modified": null,
  "original": true,
  "pid": "b83ca95423",
- "score": 99.35,
+ "score": 99.26,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
