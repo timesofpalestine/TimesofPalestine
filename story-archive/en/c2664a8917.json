@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-killed-israeli-bombing-khan-yunis",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://imemc.org/article/gaza-israeli-forces-continue-ceasefire-violations-amid-ongoing-siege",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
@@ -43,6 +37,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinian-teenagers-killed-israeli-forces-occupied-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-02T20:50:00+00:00",
@@ -61,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "c2664a8917",
- "score": 62.55,
+ "score": 62.3,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
