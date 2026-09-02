@@ -27,6 +27,12 @@
    "verified": true
   },
   {
+   "article": "https://imemc.org/article/deaths-injuries-in-serious-israeli-escalation-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
    "article": "https://zeteo.com/p/israeli-bombing-raid-gaza-city-kindergarten",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
@@ -54,7 +60,7 @@
  "modified": null,
  "original": true,
  "pid": "b83ca95423",
- "score": 100.18,
+ "score": 100.08,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
