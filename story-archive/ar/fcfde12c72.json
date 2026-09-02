@@ -1,0 +1,39 @@
+{
+ "brief": "شنّت طائرات الاحتلال الإسرائيلي غارات عنيفة على مرتفعات علي الطاهر في جنوب لبنان، وفقاً للمركز الفلسطيني للإعلام. ولم تشر المصادر المتاحة إلى تفاصيل محددة بشأن الأهداف المستهدفة أو حجم الأضرار الناجمة عن العملية.\n\nيندرج القصف ضمن سلسلة من الغارات الجوية الإسرائيلية على الأراضي اللبنانية، إذ تشهد المنطقة الحدودية تصعيداً متكرراً منذ بدء الحرب على غزة في تشرين الأول الماضي. وتستهدف هذه العمليات مناطق متفرقة في جنوب لبنان يُعتقد أن لديها وجود لحزب الله.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319011",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/733730",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-02T21:33:22+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319011",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fcfde12c72",
+ "score": 63.73,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "طائرات إسرائيلية تقصف مرتفعات علي الطاهر جنوب لبنان"
+}
