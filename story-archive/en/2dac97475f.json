@@ -1,0 +1,32 @@
+{
+ "brief": "Israeli protesters gathered in Jerusalem on Wednesday to condemn violence by Jewish settlers in the occupied West Bank, according to Al Jazeera English. The demonstration represented a rare public call from within Israel for action against settler attacks on Palestinians and their property.\n\nThe protest reflected mounting concerns among segments of Israeli society over the conduct of residents in Jewish settlements and their pattern of violent incidents across Palestinian territories. Organizers and participants have increasingly voiced alarm at what they describe as unchecked aggression by settlers operating in the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/2/israeli-protesters-call-for-an-end-to-settler-violence?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-02T20:07:41+00:00",
+ "dek": "Israeli protesters gathered in Jerusalem on Wednesday to condemn violence by Jewish settlers in the occupied West Bank.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788379651.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/israeli-protesters-call-for-an-end-to-settler-violence?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/2/israeli-protesters-call-for-an-end-to-settler-violence?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2dac97475f",
+ "score": 49.88,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli protesters demand end to settler violence in West Bank"
+}
