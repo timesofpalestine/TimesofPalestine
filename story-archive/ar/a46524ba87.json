@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/36567",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/share/217350",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-09-02T16:37:18+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "a46524ba87",
- "score": 49.9,
+ "score": 49.64,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
