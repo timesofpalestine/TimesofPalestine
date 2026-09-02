@@ -135,7 +135,14 @@ everything it builds:
    (`DEDUPE_JUDGE_VERSION`), so a changed standard re-asks old verdicts
    once, and a judged loser that had already published keeps its page
    but carries `dup_of` in its archive record and leaves search, the
-   hubs and the archive listings for good.
+   hubs and the archive listings for good. The judge's QUEUE was the
+   second half of the failure: ranked by the count of shared tokens, the
+   Abu Safiya pairs sat at rank 159-14,000 under tens of thousands of
+   Arabic pairs sharing only إسرائيل/غزة/احتلال, and one 40-verdict budget
+   spent on English first never reached them. Pairs are now ranked by
+   the RARITY of what they share (`pair_suspicion`), pairs below a
+   pool-scaled floor never spend a verdict, and each language has its
+   own budget.
    **Duplicate canon across builds (owner sweep 2026-09-01):** the cluster
    representative is stable — our copy first, then the partner wire, then
    the ALREADY-ARCHIVED permalink, then score, with a pid tie-break — so
