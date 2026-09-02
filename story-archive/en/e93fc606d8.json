@@ -1,0 +1,44 @@
+{
+ "brief": "Israeli forces deployed tear gas inside a mosque while settlers set fire to and vandalized a second mosque across the West Bank, Al Jazeera English reported. The dual attacks struck two separate religious sites within hours of each other, marking an escalation in violence targeting Palestinian worship spaces in the occupied territory.\n\nThe assault on one mosque involved arson and property damage by settlers, while military personnel responded to activity at the other site by deploying chemical irritants against those inside. Residents reported significant damage from the fire, though the full extent of destruction remained unclear. The incidents underscored deepening friction between Palestinian communities and Israeli military operations alongside settler actions in the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/2/israeli-forces-settlers-attack-two-west-bank-mosques?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/israel-west-bank-attacks-postal-service-nepal-deaths",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-colonizers-attack-west-bank-communities",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-02T07:40:20+00:00",
+ "dek": "Israeli forces fire tear gas into one mosque after settlers set fire to and vandalise another.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6a97a37b5f2e-1788322683.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/2/israeli-forces-settlers-attack-two-west-bank-mosques?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/2/israeli-forces-settlers-attack-two-west-bank-mosques?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e93fc606d8",
+ "score": 49.77,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces fire tear gas into mosque as settlers torch another"
+}
