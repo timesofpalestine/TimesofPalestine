@@ -2357,26 +2357,42 @@ def dedupe_events(items):
 # so each pair costs one small call EVER, and the judge is fail-open: no
 # key, no package, or a provider outage simply leaves the lexical verdict
 # standing.
+# v2 (owner report 2026-09-02): five Arabic stories on Dr Abu Safiya's
+# account of being beaten in detention ran the same afternoon — Al Jazeera's
+# report, the lawyers' account via two Telegram wires, Euro-Med's
+# documentation, Shehab's interview — and two sat side by side in the
+# prisoners section. The v1 standard told the judge that "two separate
+# announcements involving the same actor" are SEPARATE and to answer
+# SEPARATE when uncertain, so every relay of one disclosure counted as its
+# own announcement. The standard is now the reader's: the same news about
+# the same subject is ONE article whoever relayed it.
+DEDUPE_JUDGE_VERSION = "v2"
 DEDUPE_JUDGE_SYSTEM = (
     "You are the duplicate desk of a serious newspaper. You are shown two "
     "published news items, each as a headline and summary. Decide whether a "
     "careful newspaper would run them as ONE article or TWO. Answer DUPLICATE "
-    "only when both items report the same underlying event, announcement or "
-    "development — the same actor taking the same action on the same occasion, "
-    "even under different framing (a utility announcing maintenance work and "
-    "the outages that work causes is ONE announcement; an updated casualty "
-    "toll of the same incident is ONE story). Answer SEPARATE when they are "
-    "distinct events, even if related, on the same topic, or involving the "
-    "same actor: two different strikes, a statement and a later vote, two "
-    "separate announcements. When uncertain, answer SEPARATE. Reply with "
-    "exactly one word: DUPLICATE or SEPARATE."
+    "when both items carry the same news: the same development about the same "
+    "subject — the same disclosure, incident, decision, statement or finding — "
+    "whichever outlet, agency, rights group, lawyer or spokesperson relayed it, "
+    "and however differently it is framed or headlined. A detainee's account of "
+    "being beaten and a monitor's report documenting that same beating on the "
+    "same day are ONE story; a utility announcing works and the outages those "
+    "works cause are ONE announcement; an updated toll of the same incident is "
+    "ONE story; a reaction quoted inside a report of the same development does "
+    "not make a second story. Answer SEPARATE only for genuinely distinct "
+    "developments: a different incident, a later and separate decision, vote "
+    "or ruling, a new event that the other item does not report. The test is "
+    "the reader: if reading both would feel like reading the same news twice, "
+    "answer DUPLICATE. Reply with exactly one word: DUPLICATE or SEPARATE."
 )
 MAX_DEDUPE_VERDICTS_PER_RUN = 40   # per build; the pair cache carries the rest
 DEDUPE_PAIR_WINDOW_H = 36          # matches the lexical nets' window
 
 
 def _judge_pair_key(lang, pid_a, pid_b):
-    return f"dupe:{lang}:" + ":".join(sorted((pid_a, pid_b)))
+    # The version is part of the key: a changed standard re-asks every pair
+    # once instead of trusting verdicts given under the old one.
+    return f"dupe:{DEDUPE_JUDGE_VERSION}:{lang}:" + ":".join(sorted((pid_a, pid_b)))
 
 
 def _duplicate_verdict(client, a, b):
@@ -2472,10 +2488,41 @@ def adjudicate_duplicates(en_items, ar_items, client=None):
                 dropped_total += 1
                 print(f"  ⊘ duplicate event dropped (AI judge): "
                       f"{b['source']}: {b['title'][:70]}")
+                # A loser that already has a permalink (it published before
+                # the verdict) keeps its page but must leave search, the
+                # hubs and the archive listings — for good, not for the 14
+                # days the verdict cache lives: the archived record itself
+                # carries the winner's pid.
+                b["dup_of"] = a["pid"]
+                mark_archived_loser(b)
         out[lang] = [i for i in items if id(i) not in drop]
     if dirty:
         save_brief_cache(cache)
     return out["en"], out["ar"], dropped_total
+
+
+def mark_archived_loser(item):
+    """Persist `dup_of` into an already-archived record (no-op for a story
+    that never published — the archive must never gain a page for it)."""
+    try:
+        import story_archive
+        base = story_archive.archive_dir()
+        if base is None:
+            return False
+        path = base / item["lang"] / f"{item['pid']}.json"
+        if not path.is_file():
+            return False
+        record = json.loads(path.read_text(encoding="utf-8"))
+        if record.get("dup_of") == item["dup_of"]:
+            return True
+        record["dup_of"] = item["dup_of"]
+        path.write_text(json.dumps(record, ensure_ascii=False, indent=1,
+                                   sort_keys=True), encoding="utf-8")
+        return True
+    except Exception as exc:  # never blocks the paper
+        print(f"  ⚠ archive: could not flag duplicate {item.get('pid')} "
+              f"({type(exc).__name__})")
+        return False
 
 
 def diversify(items):
@@ -6277,6 +6324,10 @@ def main():
         # into search, the hubs and archive-filled sections. Pages keep
         # rendering; only the discovery listings skip the twins.
         _dups = mark_archived_duplicates(list(items), _arch_pool)
+        for _a in _arch_pool:  # judged losers carry the verdict in the record
+            if _a.get("dup_of") and not _a.get("dup_suppressed"):
+                _a["dup_suppressed"] = True
+                _dups += 1
         if _dups:
             print(f"  ⊘ archive: {_dups} duplicate {lang} permalink(s) kept "
                   "resolving but left out of search/hub listings")

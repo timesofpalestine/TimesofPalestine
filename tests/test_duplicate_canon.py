@@ -123,6 +123,10 @@ class WiringTests(unittest.TestCase):
         self.assertGreaterEqual(src.count('dup_suppressed'), 4,
                                 "the setter plus the hub, search and section "
                                 "listing gates must all be present")
+        # A judged loser's permalink record carries the winner's pid and
+        # is suppressed from the listings on every future build.
+        self.assertIn('if _a.get("dup_of") and not _a.get("dup_suppressed")', src)
+        self.assertIn('"dup_of"', (ROOT / "story_archive.py").read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

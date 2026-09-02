@@ -42,6 +42,10 @@ FIELDS = (
     "pid", "lang", "title", "dek", "brief", "image", "media", "link",
     "source", "source_url", "source_id", "cat", "date", "modified",
     "original", "corroborating_sources", "max_age_hours", "score",
+    # dup_of (2026-09-02): the winner's pid when the AI duplicate judge folded
+    # this story after it had already published — the page keeps resolving,
+    # the discovery listings skip it, for good.
+    "dup_of",
 )
 _DATE_FIELDS = ("date", "modified")
 
