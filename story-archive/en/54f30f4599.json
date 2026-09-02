@@ -6,37 +6,37 @@
    "article": "https://shehabnews.com/post/163302/%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A%D8%A7-%D8%B3%D9%86%D8%B9%D9%84%D9%86-%D8%A5%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-%D8%A3%D8%B3%D8%A7%D8%A8%D9%8A%D8%B9",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/uk-unveil-comprehensive-response-israeli-west-bank-settlement-plans-coming-weeks",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.theguardian.com/politics/2026/sep/01/ed-miliband-promises-reset-of-uk-policy-toward-israel",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/uk-vows-anti-settler-measures-israel-warns-retaliation",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-09-01T19:59:00+00:00",
  "dek": "British Foreign Secretary Ed Miliband announced Tuesday that the United Kingdom will introduce a \"comprehensive\" package of measures regarding Israeli settlements in the occupied West Bank over the coming weeks, Shehab…",
- "image": "/media/times-of-palestine-cover-westbank.svg",
+ "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/08/2OyDG.jpg?v=1",
  "lang": "en",
  "link": "https://shehabnews.com/post/163302/%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A%D8%A7-%D8%B3%D9%86%D8%B9%D9%84%D9%86-%D8%A5%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-%D8%A3%D8%B3%D8%A7%D8%A8%D9%8A%D8%B9",
  "max_age_hours": 72,
  "media": {
-  "credit": "Graphic: Times of Palestine",
+  "credit": "Shehab Wire (EN)",
   "licenseUrl": null,
-  "rightsBasis": "owned",
-  "source": "Times of Palestine"
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.com/post/163302/%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A%D8%A7-%D8%B3%D9%86%D8%B9%D9%84%D9%86-%D8%A5%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-%D8%A3%D8%B3%D8%A7%D8%A8%D9%8A%D8%B9"
  },
  "modified": null,
  "original": false,
  "pid": "54f30f4599",
- "score": 45.41,
+ "score": 45.15,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
