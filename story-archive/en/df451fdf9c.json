@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2167999.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-ready-expel-gaza-population-says-defence-minister",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-02T08:25:33+00:00",
@@ -24,7 +30,7 @@
  "modified": null,
  "original": false,
  "pid": "df451fdf9c",
- "score": 46.92,
+ "score": 46.67,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
