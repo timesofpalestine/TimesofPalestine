@@ -1,0 +1,38 @@
+{
+ "brief": "The United Nations has reduced food assistance for residents of the occupied West Bank and Gaza Strip, citing a critical shortfall in funding, Al Jazeera English reported. The cutback comes as international aid organisations struggle with depleted budgets amid a sharp downturn in Western financial contributions to humanitarian operations in the territories.\n\nThe funding crisis has forced UN agencies to curtail their food distribution programmes at a time when humanitarian conditions remain dire in both the West Bank and Gaza. The decline in donations, led by a reduction in United States contributions, has left aid groups unable to maintain previous levels of assistance to vulnerable populations across the occupied territories.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/1/un-slashes-food-aid-for-occupied-west-bank-and-gaza-amid-funding-shortfall?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/09/1168237",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-01T20:40:55+00:00",
+ "dek": "International aid organisations are struggling for money as the United States has led a sharp cut in Western donations.",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6a9721fa9f-1788289530.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/1/un-slashes-food-aid-for-occupied-west-bank-and-gaza-amid-funding-shortfall?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/1/un-slashes-food-aid-for-occupied-west-bank-and-gaza-amid-funding-shortfall?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "730c85e23b",
+ "score": 46.42,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN cuts food aid to West Bank and Gaza as donations plummet"
+}
