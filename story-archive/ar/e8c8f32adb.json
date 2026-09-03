@@ -13,6 +13,18 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/36570",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/76578-29",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-09-03T07:42:00+00:00",
@@ -31,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "e8c8f32adb",
- "score": 63.43,
+ "score": 63.17,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
