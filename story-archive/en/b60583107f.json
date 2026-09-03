@@ -6,7 +6,25 @@
    "article": "https://www.maannews.net/news/2168007.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163406/%D8%AE%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%A8%D8%A7%D9%86-%D8%AA%D9%86%D8%B6%D9%85-%D9%84%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%AA%D9%87%D8%AC%D9%8A%D8%B1-%D8%A7%D9%84%D9%82%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D9%8066-%D9%85%D9%86%D8%B0-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1-2023",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-demolish-four-water-wells-greenhouses-hebron",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-bulldozers-continue-land-destruction-near-salfit",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-02T10:39:58+00:00",
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "b60583107f",
- "score": 36.61,
+ "score": 36.33,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
