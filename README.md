@@ -1,10 +1,12 @@
 # Times of Palestine — تايمز أوف فلسطين
 
-An independent, bilingual (English/Arabic) static digital news front page for Palestine.
-It aggregates live reporting from outlets across Palestine and the region, links every story back
-to its original publisher, and rebuilds itself every 10 minutes. Sensitive claims publish with a visible
-developing-report label and an opaque exact-version review queue; deployments can opt into a strict
-human-approval hold when editorial staffing is available.
+An independent, bilingual (English/Arabic) digital newspaper for Palestine.
+It gathers live reporting from outlets across Palestine and the region, rewrites every wire item
+in-house before publication (naming the source outlet once, inline, in the prose), files its own
+researched reports through an AI investigations desk, and rebuilds itself every 10 minutes.
+Editorial gating defaults to publish: risky third-party items are tracked in an internal review
+queue (`dist/review-queue.json`), never labelled on reader-facing pages; a strict human-approval
+hold (`TOP_REVIEW_GATE=hold`) is an opt-in for deployments with editorial staffing.
 
 - **English edition:** `/en/` (LTR) · **Arabic edition:** `/ar/` (RTL, natively mirrored)
 - The root `/` auto-redirects visitors based on their browser language.
@@ -21,8 +23,9 @@ human-approval hold when editorial staffing is available.
 3. Validates source attribution, canonical links, UTC dates, media rights and editorial eligibility.
 4. Clusters near-identical reports, records independent corroborating publishers, and caps any
    single outlet at 14 stories so no source dominates.
-5. Auto-categorizes into Gaza · West Bank & Jerusalem · Politics & Diplomacy · Economy & Aid ·
-   Culture & Society · Opinion & Analysis.
+5. Auto-categorizes into the paper's sections — Gaza, West Bank & Jerusalem, Palestinians in
+   Israel, Prisoners & Detainees, the Israeli and US press reviews, Her Story, Arab Support and the
+   rest of the list in `CLAUDE.md` — and rewrites each wire item as a house brief.
 6. Renders bilingual pages, RSS, JSON Feed, web/news sitemaps, structured data, PWA assets and
    sanitized health output into `dist/`.
 7. After GitHub Pages confirms the deployment, posts every new live story to
@@ -62,7 +65,7 @@ gh repo create times-of-palestine --public --source . --push
 
 Then in the GitHub repo: **Settings → Pages → Source: "GitHub Actions"**. Done.
 The first run starts immediately (or trigger it from the Actions tab); after that fully-attributed
-aggregation refreshes every 10 minutes. Flagged content is visibly labeled while awaiting review.
+aggregation refreshes every 10 minutes. Review tracking stays internal (`dist/review-queue.json`).
 
 ## Publishing safety contract
 
@@ -79,8 +82,9 @@ structured data emit UTC ISO-8601. Reader-facing dates remain localized to `Asia
 
 The deterministic EN/AR gate flags casualty claims, serious accusations, named security or
 military subjects, public Telegram/citizen reports, and breaking claims without at least two
-independent publishers. Flagged stories publish with a developing-report label by default.
-Set `TOP_REVIEW_GATE=hold` to require exact-version human approval before they publish.
+independent publishers. Flagged stories publish by default and are tracked in the internal review
+queue only — no label ever reaches the reader. Set `TOP_REVIEW_GATE=hold` to require exact-version
+human approval before they publish.
 
 ```bash
 # Fetch and display full pending stories only in this terminal:

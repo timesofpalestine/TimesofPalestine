@@ -1,12 +1,13 @@
 {
   "_comment": "Prisoners ledger for Palestine by the Numbers. Addameer publishes no machine-readable API, so the newsroom maintains this file from Addameer's periodic updates (with the Detainees Commission and the Prisoners' Society); the daily editor cycle refreshes it when new figures publish. Keys must match PR_KEYS in gaza_panel.py.",
-  "asOf": "2026-04-14",
-  "url": "https://addameer.ps/news/5721",
+  "asOf": "2026-08-17",
+  "url": "https://www.addameer.org/statistics",
   "figures": {
-    "pr_total": 9600,
-    "pr_admin": 3532,
-    "pr_gaza": 1251,
-    "pr_women": 86,
-    "pr_children": 350
-  }
+    "pr_total": 9400,
+    "pr_admin": 3198,
+    "pr_gaza": 1358,
+    "pr_women": 92,
+    "pr_children": 370
+  },
+  "_note": "Site review 2026-09-03: refreshed from Addameer's statistics page (figures dated 17 August 2026: 9,400 political prisoners, 3,198 administrative detainees, 1,358 Gaza detainees held as 'unlawful combatants', 92 women, 370 children). The previous ledger (14 April 2026) had gone unrefreshed for twenty weeks."
 }

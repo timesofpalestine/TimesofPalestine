@@ -93,7 +93,10 @@ them. The flag palette stays true in light mode. Dark mode (design pass
 2026-08-06) is charcoal-slate, not near-black: `--paper:#121417`,
 `--card:#1a1d22`, `--ink:#e8eaed`, `--muted:#a3a8b2`, `--line:#2a2e35`,
 `--line-dark:#3f454e`, and `--red` lifts/warms to `#d43049` on dark
-surfaces (small red text may lift further to `#f93549` for contrast). Every new surface must be checked in both schemes — if you
+surfaces. Small red TEXT (kickers, View-all links, the story-guide title,
+search chips, the NEW mark) lifts further to `#f93549`: `#d43049` on the
+dark paper measures 3.8:1, under the 4.5:1 AA floor for small type (site
+review 2026-09-03). Every new surface must be checked in both schemes — if you
 only style the light theme, you have not finished the change.
 
 ### Pull quotes & data callouts
@@ -129,6 +132,12 @@ load-bearing statistic — one or two per story, never as decoration.
   square-ish — do not introduce big rounded corners); shadows `--sh`
   (rest) / `--sh-h` (hover); transitions `--tr:.18s ease`.
 - Hover idiom for cards: `translateY(-2px)` + `--sh-h`.
+- Card, row and hero images carry `width`/`height` attributes as layout
+  (CLS) hints only; the CSS keeps `height:auto` so `aspect-ratio:16/9`
+  governs the box. Never let an attribute or a fixed height win — a fixed
+  360px attribute rendered near-square cards and letterboxed covers (site
+  review 2026-09-03). Phones stack the solo section row (`.rowcard.solo`)
+  under 560px; its side-by-side art overflowed the viewport.
 - Existing keyframes — reuse, don't duplicate: `pulse` (latest-rail dot),
   `newpulse` (NEW mark, countdown chip dot), `tick`/`tick-rtl` (ticker).
 
