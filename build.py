@@ -3179,7 +3179,7 @@ STR = {
         "kind_original": "تقرير أصلي", "kind_brief": "موجز تايمز أوف فلسطين",
         "kind_curated": "ملخص محرَّر", "based_on": "استناداً إلى تقرير",
         "keep_reading": "تابع القراءة",
-        "toc": "دليل القصة",
+        "toc": "في هذا التقرير",
         "back_home": "كل الأخبار ←",
         "breadcrumbs_home": "الرئيسية",
         "section_latest": "آخر تحديث",
