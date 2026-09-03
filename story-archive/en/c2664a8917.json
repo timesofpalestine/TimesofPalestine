@@ -27,6 +27,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/09/two-palestinian-teens-killed-west-bank-raid-israeli-settlers-and-army",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinian-teenagers-killed-israeli-forces-occupied-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -55,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "c2664a8917",
- "score": 58.88,
+ "score": 58.64,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
