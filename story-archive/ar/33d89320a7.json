@@ -7,12 +7,18 @@
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/gazaalannet/82589",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
   }
  ],
  "date": "2026-09-03T07:42:37+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
  "lang": "ar",
  "link": "https://www.maannews.net/news/2168055.html",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "33d89320a7",
- "score": 62.97,
+ "score": 62.82,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
