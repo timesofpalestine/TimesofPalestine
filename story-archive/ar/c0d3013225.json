@@ -1,0 +1,33 @@
+{
+ "brief": "شنت قوات الاحتلال فجر الخميس حملات دهم واعتقال في عدة مناطق بالضفة الغربية، بحسب مكتب إعلام الأسرى. أسفرت العمليات عن اعتقال 21 فلسطينياً من بينهم صحفي وأب برفقة ابنيه.\n\nلم تُفصح المصادر المتاحة عن أسماء المعتقلين أو المحافظات التي طالتها حملات الدهم. وتكرر قوات الاحتلال عمليات الاعتقال في الضفة الغربية بشكل متواصل، إذ تستهدف عادة ناشطين ومثقفين وعاملين في الإعلام.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319078",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-03T07:38:15+00:00",
+ "dek": "مكتب إعلام الأسرى: شنت قوات الاحتلال فجر اليوم الخميس، حملات دهم واعتقال في عدة مناطق بالضفة الغربية، أسفرت عن اعتقال 21 فلسطينيًا، بينهم صحفي وأب ونجلاه",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-prisoners-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319078",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c0d3013225",
+ "score": 49.84,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يعتقل 21 فلسطينياً بينهم صحفي في الضفة"
+}

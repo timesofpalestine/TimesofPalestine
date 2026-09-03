@@ -1,0 +1,33 @@
+{
+ "brief": "Over 540,000 children are enrolled in schools operated by the United Nations Relief and Works Agency for Palestine Refugees, the Ma'an news agency reported. The enrollment figure encompasses Palestinian students across UNRWA's educational network in the region, representing a substantial portion of the refugee population accessing formal schooling through the agency's programs.\n\nUNRWA operates the schools to serve Palestinian refugee communities in areas under its mandate. The agency maintains classroom infrastructure and teaching staff to provide education despite resource constraints and the challenging conditions affecting populations in its areas of operation.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168048.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-03T07:30:04+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168048.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e6edf6b423",
+ "score": 49.78,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "540,000 children attend UNRWA schools"
+}
