@@ -1,0 +1,51 @@
+{
+ "brief": "Two Palestinians were killed by Israeli forces and settlers in al-Mughayyir, a village north of Ramallah, the Ma'an news agency reported. The deaths occurred amid escalating violence in the occupied West Bank, where clashes between Palestinians and Israeli military personnel have intensified in recent months. Al-Mughayyir has been a flashpoint for confrontations between residents and settlers.\n\nThe incident added to a mounting toll of Palestinian casualties in the territory. Israeli forces and armed settlers have conducted regular operations in West Bank communities, drawing accusations from Palestinian officials and international rights groups of excessive force and unlawful killings. Ramallah and surrounding areas have experienced repeated cycles of violence and military incursions.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/36570",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/education-ministry-condemns-killing-of-two-students-in-al-mughayyir",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/two-palestinian-teens-killed-west-bank-raid-israeli-settlers-and-army",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-12-palestinians-in-gaza-including-three-children-a-woman-and-an-elderly-man",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-02T19:42:41+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/AFhu741p9r8524ZrGhBeI8kJiFC2ZpdY_XuEaLI9wIwZLn8_ggepFtvqjsc48crTdDHXs1RsGjzRE111ApDlyojRwZh35m2B45uA3H5wWllFBeoKS0hPVqPPz_glAKoKdUM-aHQ43rOpYedO4aMXHLML_FOnqzOSGm24AL_cfF3YRf_jLhWiFvN4Qz1dxv4fox9EaHqPYhRD-lEaU8uJXUKT71k6nzrDfY7qj5LuOLr_jzzkRfsdwiU6RryL1v-4379-uXrN3zTkzbOLJ1zd_NdvvunU_seb4GyOcZ-xup_ni-6hn1QwTkFLnYWvS5gHDfumyBbrbNDEZIEiUda7fg",
+ "lang": "en",
+ "link": "https://t.me/maannews/36570",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/36570"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "eaae429975",
+ "score": 54.25,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces and settlers kill two Palestinians in al-Mughayyir"
+}
