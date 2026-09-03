@@ -9,15 +9,21 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/319116",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
+   "article": "https://www.pbc.ps/er-2",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
    "verified": true
   },
   {
-   "article": "https://t.me/QudsN/733838",
+   "article": "https://t.me/QudsN/733849",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/319116",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
    "verified": true
   }
  ],
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "6b82d1e4a7",
- "score": 63.89,
+ "score": 63.6,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
