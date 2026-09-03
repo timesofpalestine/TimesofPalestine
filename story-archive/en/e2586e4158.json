@@ -1,0 +1,33 @@
+{
+ "brief": "Farmers in Gaza are reconstructing a seed bank that was destroyed during Israel's military operations, according to Al Jazeera English. The restoration project seeks to preserve indigenous crop varieties and restore agricultural resources decimated by the conflict.\n\nThe seed bank holds strains of plants cultivated locally over generations, selected for their ability to thrive in Gaza's soil and climate. Loss of these varieties threatens food security and the region's agricultural independence. Rebuilding the collection requires farmers to locate surviving seeds, document their characteristics, and establish storage facilities capable of protecting them from future damage.\n\nThe effort underscores the broader challenge facing Gaza's agricultural sector as farmers attempt to revive production and livelihoods in the aftermath of large-scale destruction.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/3/gaza-farmers-restore-seed-bank-to-preserve-local-crops?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-03T17:50:48+00:00",
+ "dek": "Farmers are rebuilding a seed bank destroyed during Israel’s war on Gaza to preserve local crop varieties.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788457836.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/3/gaza-farmers-restore-seed-bank-to-preserve-local-crops?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/3/gaza-farmers-restore-seed-bank-to-preserve-local-crops?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e2586e4158",
+ "score": 49.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza farmers rebuild seed bank destroyed in war"
+}
