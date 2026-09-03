@@ -6,12 +6,18 @@
    "article": "https://felesteen.news/post/185754/%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D9%8A-%D8%A3%D8%A8%D9%88-%D8%B5%D9%81%D9%8A%D8%A9-%D9%8A%D8%AA%D8%B9%D8%B1%D8%B6-%D9%84%D9%84%D8%B6%D8%B1%D8%A8-%D9%88%D8%A7%D9%84%D8%AA%D9%87%D8%AF%D9%8A%D8%AF-%D8%AF%D8%A7%D8%AE%D9%84-%D8%B3%D8%AC%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/319049",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-09-02T17:52:00+00:00",
  "dek": "قال رئيس المرصد الأورومتوسطي لحقوق الإنسان، د. رامي عبده، إن تحديثًا صادرًا عن منظمة أطباء من أجل حقوق الإنسان أفاد باستمرار تعرض الطبيب الفلسطيني حسام أبو صفية للضرب المبرح أثناء احتجازه لدى سلطات ال.",
- "dup_of": "a8588aac9c",
+ "dup_of": null,
  "image": "https://felesteen.news/thumb/830x506/uploads/images/2026/07/SMt8R.jpg",
  "lang": "ar",
  "link": "https://felesteen.news/post/185754/%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D9%8A-%D8%A3%D8%A8%D9%88-%D8%B5%D9%81%D9%8A%D8%A9-%D9%8A%D8%AA%D8%B9%D8%B1%D8%B6-%D9%84%D9%84%D8%B6%D8%B1%D8%A8-%D9%88%D8%A7%D9%84%D8%AA%D9%87%D8%AF%D9%8A%D8%AF-%D8%AF%D8%A7%D8%AE%D9%84-%D8%B3%D8%AC%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "2725f0e333",
- "score": 47.17,
+ "score": 41.81,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
