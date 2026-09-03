@@ -13,6 +13,18 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/09/israel-opt-israel-steps-up-annexation-measures-with-unlawful-land-seizure-orders-in-the-occupied-west-bank",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/army-abducts-palestinian-as-colonizers-assault-residents-near-hebron",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-03T15:32:33+00:00",
@@ -31,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "6fc7a10baa",
- "score": 63.93,
+ "score": 63.62,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

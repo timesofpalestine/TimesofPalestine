@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/9/3/four-imprisoned-palestine-action-activists-appeal-terrorism-sentences?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/palestine-action-activists-appeal-terror-sentencing",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-03T15:09:38+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "53cb901931",
- "score": 63.66,
+ "score": 63.35,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
