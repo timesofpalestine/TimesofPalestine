@@ -1,0 +1,39 @@
+{
+ "brief": "Two Palestinian teenagers were killed in the occupied West Bank as Israeli settlers and snipers surrounded a village, Al Jazeera English reported. The incident represents the latest deadly confrontation in an area experiencing a recent surge in settler violence and military operations.\n\nThe deaths occurred during escalating tensions between Palestinian residents and Israeli settlers in the territory. Local witnesses described a heavy presence of Israeli military personnel and settlers in the vicinity at the time of the killings. Authorities have not yet released a detailed account of the circumstances that led to the teenagers' deaths, though investigations into the incident are ongoing.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/3/jerusalem-daily-students-sing-erase?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-hike-through-my-west-bank-village-next-violent-land",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-03T15:32:33+00:00",
+ "dek": "Two Palestinian teens were killed in the occupied West Bank as Israeli settlers and snipers surround a village.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788449446.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/3/jerusalem-daily-students-sing-erase?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/3/jerusalem-daily-students-sing-erase?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6fc7a10baa",
+ "score": 63.93,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers and snipers kill two Palestinian teens in West Bank village"
+}
