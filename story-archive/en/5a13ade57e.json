@@ -6,23 +6,12 @@
    "article": "https://imemc.org/article/gaza-israeli-forces-continue-ceasefire-violations-amid-ongoing-siege",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://pchrgaza.org/israel-kills-12-palestinians-in-gaza-including-three-children-a-woman-and-an-elderly-man",
-   "name": "Palestinian Centre for Human Rights",
-   "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinian-teenagers-killed-israeli-forces-occupied-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
- "date": "2026-09-02T09:39:02+00:00",
- "dek": "For the 328th consecutive day, Israeli forces continued violating the ceasefire agreement in the Gaza Strip on Wednesday, killing two Palestinians, including a child, while a woman succumbed to serious wounds sustained a day earlier. Medical sources said an…",
+ "date": "2026-09-02T23:45:02+00:00",
+ "dek": "Gaza’s Health Ministry reported Wednesday that hospitals received the bodies of eight Palestinians during the preceding 24 hours—seven newly killed in Israeli attacks and one who succumbed to earlier wounds—and received 31 wounded Palestinians. Israeli…",
+ "dup_of": null,
  "image": "https://imemc.org/wp-content/uploads/2026/09/GazaDestruction121-e1788336331391.jpg",
  "lang": "en",
  "link": "https://imemc.org/article/gaza-israeli-forces-continue-ceasefire-violations-amid-ongoing-siege",
@@ -36,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "5a13ade57e",
- "score": 55.89,
+ "score": 63.65,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",

@@ -19,6 +19,12 @@
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
    "verified": true
+  },
+  {
+   "article": "https://palinfo.com/news/2026/09/02/1116949",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-09-02T17:55:00+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "abe4f10dd1",
- "score": 45.72,
+ "score": 45.56,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
