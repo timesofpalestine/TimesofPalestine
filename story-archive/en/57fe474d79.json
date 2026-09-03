@@ -1,0 +1,33 @@
+{
+ "brief": "Drop Site News reported that U.S. Immigration and Customs Enforcement plans to build a national voter database as part of its enforcement operations. The database would track voting records, according to the outlet, marking an expansion of the agency's data collection capabilities.\n\nNew York City schools have banned artificial intelligence tools through eighth grade, citing concerns about student development and classroom learning. The policy restricts AI use in early education settings as districts nationwide grapple with how to regulate the technology in schools.\n\nIn separate comments, New York City Mayor Katz characterized ethnic cleansing in Gaza as the \"only solution\" to the ongoing conflict. The statement drew immediate attention amid continuing humanitarian concerns in the region.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.dropsitenews.com/p/ice-voter-database-new-york-schools-ai-israel-gaza-katz",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-03T16:23:52+00:00",
+ "dek": "Drop Site Daily: September 3, 2026.",
+ "dup_of": null,
+ "image": "https://substackcdn.com/image/fetch/$s_!hPo7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbd1eb559-ee18-4dfa-8ad8-dfb5b01dd9b2_3936x2624.heic",
+ "lang": "en",
+ "link": "https://www.dropsitenews.com/p/ice-voter-database-new-york-schools-ai-israel-gaza-katz",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Drop Site News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.dropsitenews.com/p/ice-voter-database-new-york-schools-ai-israel-gaza-katz"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "57fe474d79",
+ "score": 49.63,
+ "source": "Drop Site News",
+ "source_id": "dropsite",
+ "source_url": "https://www.dropsitenews.com/",
+ "title": "ICE plans national voter database as part of enforcement push"
+}
