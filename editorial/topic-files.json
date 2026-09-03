@@ -40,7 +40,7 @@
   },
   {
    "slug": "israeli-election",
-   "pattern": "knesset|israeli election|likud primar|إسرائيل.*انتخابات|انتخابات.*إسرائيل|الكنيست|الليكود",
+   "pattern": "knesset|israeli election|israel votes|\\blikud\\b|\\byashar\\b|eisenkot|election poll|إسرائيل.*انتخابات|انتخابات.*إسرائيل|الكنيست|الليكود|آيزنكوت",
    "min": 2,
    "en": {
     "name": "Israel Votes 2026",

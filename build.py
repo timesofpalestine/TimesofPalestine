@@ -2978,6 +2978,25 @@ def break_cover_twins(seq):
     return seq
 
 
+# Originals that must never age out of the live set by cap: standing
+# reference pages (`standing: yes`), every SPECIALS-required report (the
+# campaign pin, the annual list, the scholarship map) and the election
+# tracker the vote card links to. Per-source caps bound the wire; these are
+# the paper's furniture.
+PINNED_ORIGINAL_SLUGS = {"israel-election-2026-tracker"}
+
+
+def pinned_original(it, lang):
+    if it.get("source_id") != "top-original":
+        return False
+    if it.get("standing"):
+        return True
+    link = str(it.get("link") or "")
+    slugs = PINNED_ORIGINAL_SLUGS | {
+        s["requires_original"] for s in SPECIALS if s.get("requires_original")}
+    return any(link == f"original:{slug}.{lang}" for slug in slugs)
+
+
 def build_lang(lang):
     print(f"\nFetching {lang.upper()} feeds…")
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
@@ -2992,6 +3011,13 @@ def build_lang(lang):
     caps = {f["id"]: f.get("cap", PER_SOURCE_CAP) for f in FEEDS[lang]}; caps["top-original"] = 200
     per_source, capped = {}, []
     for it in items:
+        # Pinned originals ride outside the cap (site review 2026-09-03: at
+        # exactly 200 live originals the newest-first cap silently dropped
+        # the two OLDEST — the TOP 100 and the scholarship map — and with
+        # them their SPECIALS cards, nav links and ticker entries).
+        if pinned_original(it, lang):
+            capped.append(it)
+            continue
         per_source[it["source_id"]] = per_source.get(it["source_id"], 0) + 1
         if per_source[it["source_id"]] <= caps.get(it["source_id"], PER_SOURCE_CAP):
             capped.append(it)
@@ -3536,7 +3562,7 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
 .hero{border-inline-end:1px solid var(--line);padding-inline-end:1.6rem}
 .hero-imgwrap{position:relative;overflow:hidden;border-radius:var(--r);background:#141419}
 .hero-imgwrap>a{display:block}
-.hero-imgwrap>a>img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;background:#141419;transition:transform .55s ease}
+.hero-imgwrap>a>img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;height:auto;background:#141419;transition:transform .55s ease}
 .hero-imgwrap:hover>a>img{transform:scale(1.03)}
 .hero-overlay{position:absolute;bottom:0;inset-inline:0;padding:3.5rem 1.5rem 1.5rem;background:linear-gradient(to top,rgba(4,4,6,.96) 0%,rgba(4,4,6,.82) 42%,rgba(4,4,6,.42) 74%,transparent 100%)}
 .dupvar1{filter:hue-rotate(12deg) brightness(1.05)}
@@ -3722,7 +3748,10 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .card{background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);border:1px solid var(--line);transition:box-shadow var(--tr),transform var(--tr)}
 .card:hover{box-shadow:var(--sh-h);transform:translateY(-2px)}
 .card>a:first-child{display:block;overflow:hidden}
-.card img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;background:#e8e6df;transition:transform .45s ease}
+/* width/height attributes on card art are CLS hints only: height:auto keeps
+   aspect-ratio in charge (a fixed 360px attribute was rendering near-square
+   cards and letterboxed covers — site review 2026-09-03). */
+.card img{aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;width:100%;height:auto;background:#e8e6df;transition:transform .45s ease}
 .card img[src$=".svg"],.rowcard img[src$=".svg"],.research-feat img[src$=".svg"]{object-fit:contain;background:#101013}
 @media(hover:none){h3 a:hover,.card h3 a:hover,.hero-overlay h2 a:hover{color:inherit}}
 /* Portrait wire images (tagged onload): cards keep a face-friendly upper
@@ -3747,7 +3776,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .rowcard:hover{transform:translateY(-2px)}
 .rowcard:last-child{border-bottom:none}
 .rowcard>a:first-child,.rowcard>.ph{flex-shrink:0}
-.rowcard img,.rowcard .ph{width:clamp(152px,23vw,220px);aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;background:#e8e6df;margin:0;display:flex;align-items:center;justify-content:center;border-radius:2px;transition:opacity var(--tr)}
+.rowcard img,.rowcard .ph{width:clamp(152px,23vw,220px);height:auto;aspect-ratio:16/9;object-fit:cover;object-position:50% 22%;background:#e8e6df;margin:0;display:flex;align-items:center;justify-content:center;border-radius:2px;transition:opacity var(--tr)}
 .rowcard:hover img{opacity:.87}
 .rowcard .ph{background:linear-gradient(120deg,#101013 0 55%,rgba(0,122,61,.28) 55% 72%,rgba(206,17,38,.24) 72% 86%,#101013 86%)}
 .rowcard .ph svg{width:40px;height:40px;opacity:.9}
@@ -3819,7 +3848,7 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .tipband .qrbox{background:#fff;padding:.45rem .45rem .35rem;border-radius:8px;display:inline-block;margin-top:.7rem}
 .tipband .qrbox img{width:84px;height:84px;display:block;image-rendering:pixelated}
 .tipband .qrbox span{display:block;font-size:.7rem;font-weight:800;color:#111;margin-top:.25rem;text-align:center;direction:ltr}
-.tipband .safety{flex-basis:100%;font-size:.7rem;color:#77777f;border-top:1px solid #26262c;padding-top:.7rem}
+.tipband .safety{flex-basis:100%;font-size:.7rem;color:#8a8a92;border-top:1px solid #26262c;padding-top:.7rem}
 /* Newsletter band (owner order 2026-08-10): a quiet inline signup above the
    footer — never a pop-up (owner rule 2026-08-02). All tokens, so both
    themes come for free. */
@@ -4034,6 +4063,11 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .latest{padding:.9rem .8rem}
   .sub-thumb img{width:72px}
   .rowcard img,.rowcard .ph{width:110px}
+  /* The solo row stacks on phones: its clamp(220px…) art beside the
+     headline overflowed the viewport (site review 2026-09-03). */
+  .rowcard.solo{flex-direction:column;gap:.6rem}
+  .rowcard.solo img,.rowcard.solo .ph{width:100%}
+  .rowcard.solo h3{font-size:1.15rem}
   footer ul{columns:1}
 }
 """
@@ -4094,7 +4128,7 @@ section.opinion{background:#17171c;border-top-color:var(--red)}
 .latest li:hover{background:rgba(255,255,255,.04)}
 .card img,.hero-imgwrap>a>img,.rowcard img,.story img.lede,.sub-thumb img,.latest .lt-thumb img{opacity:.9}
 .card img,.hero-imgwrap>a>img,.rowcard img,.rowcard .ph,.story img.lede,.sub-thumb img,.latest .lt-thumb img,.research-feat img{background:#232328}
-.hero-overlay .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q{color:#f93549}
+.hero-overlay .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q,.sec-head .viewall,.searchres .c,.story-toc .toc-title,.newmark,.hs-panel .label{color:#f93549}
 .hero-overlay h2 a:hover{color:#ffb8be}
 .card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.sub-body h3 a:hover{color:#f93549}
 .meta .src,.card .chip,.rowcard .chip,.sub-body .chip,.gi-src a,.gi-dl a,.gi-method summary,.story .desk-note a,.social-note a,.about-telegram a{color:#3fd07c}
@@ -5117,6 +5151,22 @@ def render_page(lang, items, built_at):
               or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in ("social", "research", "israelipress", "uspress")
                       and not evergreen(i)
                       and within_hours(i, HERO_MAX_AGE_H), 1))
+    if not heroes:
+        # A newspaper always has a lead (site review 2026-09-03: an 18-hour
+        # quiet stretch left the hero slot empty and the top block a column
+        # of thumbnails). Last resort, in order: the freshest hard-news
+        # Palestine story with art, any age; then the freshest story with
+        # art outside the desks that never lead. Features and standing
+        # pages still never take the slot.
+        _hard = ("gaza", "westbank", "pal48", "prisoners", "politics", "news",
+                 "accountability", "economy", "health", "women", "arabaid")
+        _never = ("social", "research", "opinion", "israelipress", "uspress", "arts")
+        heroes = (take(by_latest, lambda i: bool(i["image"]) and i["cat"] in _hard
+                       and not evergreen(i)
+                       and PALESTINE_RX.search(f"{i['title']} {i['dek']}")
+                       and not ROUTINE_NOTICE_RX.search(f"{i['title']} {i['dek']}"), 1)
+                  or take(by_latest, lambda i: bool(i["image"]) and i["cat"] not in _never
+                          and not evergreen(i), 1))
     hero = heroes[0] if heroes else None
     # Eight items (2×4) under the hero: four left the column trailing dead
     # space beside the taller Latest rail (owner decision 2026-08-03).
@@ -5282,7 +5332,7 @@ def render_page(lang, items, built_at):
                    if k in cats_present else "")
         section_blocks += (f'<section class="block" id="{k}"><div class="wrap">'
                            f'<div class="sec-copy"><div class="sec-head{focus_cls}{accent_class(k)}"><h2>{esc(t["sections"][k])}</h2><span class="rule"></span>{viewall}</div>{section_meta(sections[k], lang)}</div>'
-                           + (('<p class="social-note">' + ("تقارير عامة من صحفيين مواطنين وشهود على الأرض. لا يُنشر أي تقرير حساس قبل موافقة محرر بشري على نسخته المحددة. " if lang == "ar" else "Public dispatches from citizen journalists and witnesses. Sensitive reports publish only after a human editor approves the exact version. ") + '<a href="#tips">' + ("أرسل تقريرك عبر خط «سيغنال» الآمن ←" if lang == "ar" else "Send yours via the secure Signal line →") + "</a></p>") if k == "social" else "") + f'{featured}{grid}</div></section>')
+                           + (('<p class="social-note">' + ("تقارير عامة من صحفيين مواطنين وشهود على الأرض، تمرّ عبر بوابات التحرير الآلية قبل النشر وتُنشر بوصفها تقارير ميدانية منسوبة إلى مصدرها. " if lang == "ar" else "Public dispatches from citizen journalists and witnesses, screened by the newsroom's editorial gates before publication and labelled as field reports with their source. ") + '<a href="#tips">' + ("أرسل تقريرك عبر خط «سيغنال» الآمن ←" if lang == "ar" else "Send yours via the secure Signal line →") + "</a></p>") if k == "social" else "") + f'{featured}{grid}</div></section>')
 
     opinion_block = ""
     if len(sections["opinion"]) >= 2:
@@ -5941,7 +5991,7 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 <link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/section-{cat}.html">
 <link rel="alternate" hreflang="x-default" href="{BASE_URL}/en/section-{cat}.html">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="{'ar_PS' if lang == 'ar' else 'en_US'}">
+<meta property="og:locale" content="{'ar_AR' if lang == 'ar' else 'en_US'}">
 <meta property="og:site_name" content="{t['site_name']}">
 <meta property="og:title" content="{esc(name)} — {t['site_name']}">
 <meta property="og:description" content="{esc(desc)}">
@@ -6123,7 +6173,7 @@ def render_topic_page(lang, tf, items, built_at, more_items=()):
 <link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/topic-{slug}.html">
 <link rel="alternate" hreflang="x-default" href="{BASE_URL}/en/topic-{slug}.html">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="{'ar_PS' if lang == 'ar' else 'en_US'}">
+<meta property="og:locale" content="{'ar_AR' if lang == 'ar' else 'en_US'}">
 <meta property="og:site_name" content="{t['site_name']}">
 <meta property="og:title" content="{esc(name)} — {t['site_name']}">
 <meta property="og:description" content="{esc(dek)}">
