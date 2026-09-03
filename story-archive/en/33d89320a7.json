@@ -1,0 +1,33 @@
+{
+ "brief": "Funeral proceedings took place in Khan Younis for a fighter identified as \"al-Qadi,\" the Ma'an news agency reported. The ceremony marked another casualty in the ongoing conflict affecting the Gaza Strip, where armed clashes have persisted across multiple locations.\n\nInjuries were reported in the Biet Lahia area in northern Gaza as military operations continued throughout the region. The scale of casualties in Biet Lahia remained unclear from available reports, though the incidents underscored the intensity of combat operations affecting civilian and combat zones alike across Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168055.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-03T07:42:37+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168055.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "33d89320a7",
+ "score": 63.66,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Funeral held for slain fighter as Gaza clashes continue"
+}
