@@ -6,19 +6,7 @@
    "article": "https://imemc.org/article/education-ministry-condemns-killing-of-two-students-in-al-mughayyir",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/two-palestinian-teens-killed-west-bank-raid-israeli-settlers-and-army",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-hike-through-my-west-bank-village-next-violent-land",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-03T08:32:05+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "f47d881291",
- "score": 59.86,
+ "score": 59.57,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
