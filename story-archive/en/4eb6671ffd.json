@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces arrested 22 Palestinians across the West Bank during an operation, the Ma'an news agency reported. The military sweep included the demolition of a facility in Nablus, a city in the northern West Bank that has seen repeated Israeli military incursions.\n\nThe arrests marked the latest in a series of detention operations by Israeli forces targeting Palestinians throughout the occupied territory. The facility destroyed in Nablus was not immediately identified, nor were details provided on the circumstances surrounding its demolition or the identities and charges related to those detained.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168049.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-03T07:00:46+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168049.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4eb6671ffd",
+ "score": 49.95,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces arrest 22 Palestinians, demolish Nablus facility"
+}
