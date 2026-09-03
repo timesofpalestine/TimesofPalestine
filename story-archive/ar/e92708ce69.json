@@ -1,0 +1,33 @@
+{
+ "brief": "أفادت شبكة قدس بوصول أربعة شهداء إلى مستشفيات قطاع غزة منذ ساعات الصباح الباكر. توزعت الحصيلة على مناطق متعددة في القطاع، فيما سقط ثلاثة منهم في الشمال وآخر في الوسط.\n\nلم توضح الشبكة الظروف المحيطة بسقوط الشهداء أو الأسباب المباشرة، في حين لم تُحدّد جهات معينة مسؤولة عن الحادثة. وكانت مستشفيات غزة تستقبل في الأيام الماضية أعداداً متواصلة من الإصابات والوفيات.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/QudsN/733956",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-03T17:15:08+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/QudsN/733956",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e92708ce69",
+ "score": 63.35,
+ "source": "شبكة قدس · تيليغرام",
+ "source_id": "tg-qudsn",
+ "source_url": "https://t.me/QudsN",
+ "title": "غزة تسجل أربعة شهداء منذ صباح اليوم"
+}

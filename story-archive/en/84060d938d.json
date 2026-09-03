@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/far-right-israeli-minister-sets-out-plan-forcibly-displace-palestinians",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-03T17:00:30+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "84060d938d",
- "score": 49.45,
+ "score": 49.21,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
