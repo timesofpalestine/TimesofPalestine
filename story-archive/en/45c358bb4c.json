@@ -6,19 +6,7 @@
    "article": "https://www.dropsitenews.com/p/us-iran-wedding-netanyahu-gaza-israel-un-global-warming",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://pchrgaza.org/israel-kills-12-palestinians-in-gaza-including-three-children-a-woman-and-an-elderly-man",
-   "name": "Palestinian Centre for Human Rights",
-   "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israel-kills-child-and-another-palestinian-in-gaza",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-02T16:14:23+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "45c358bb4c",
- "score": 45.13,
+ "score": 44.86,
  "source": "Drop Site News",
  "source_id": "dropsite",
  "source_url": "https://www.dropsitenews.com/",

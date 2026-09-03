@@ -6,13 +6,25 @@
    "article": "https://t.me/AlQastalps/392774",
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82580",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/733993",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-09-03T18:18:53+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
  "lang": "ar",
  "link": "https://t.me/AlQastalps/392774",
  "max_age_hours": 72,
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "f6b930284d",
- "score": 49.5,
+ "score": 48.93,
  "source": "القسطل · تيليغرام",
  "source_id": "tg-qastal",
  "source_url": "https://t.me/AlQastalps",
