@@ -3143,18 +3143,25 @@ STR = {
                      "pal48": "فلسطينيو الداخل",
                      "israelipress": "الصحافة الإسرائيلية",
                      "uspress": "الصحافة الأميركية",
-                     "humans": "حكايات فلسطينية", "health": "الصحة والتعافي",
+                     # Section bar review (owner request 2026-09-03): every
+                     # name is a native Arabic section title with the definite
+                     # article, as the great Arabic fronts run them; the
+                     # bitcoin desk's tab now matches its own cover art and the
+                     # About page («الحرية المالية», never the calque «الوصول»),
+                     # and the human-interest desk uses the standard newsroom
+                     # label instead of a second «حكايات» beside «حكايتها».
+                     "humans": "قصص إنسانية", "health": "الصحة والتعافي",
                      "women": "حكايتها",
                      "arabaid": "الإسناد العربي",
                      "archive": "من الأرشيف",
                      "diaspora": "الشتات الفلسطيني",
-                     "arts": "الثقافة والفنون", "sports": "رياضة",
-                     "accountability": "شفافية ومساءلة",
-                     "research": "أبحاث وتحقيقات",
-                     "bitcoin": "المال والوصول",
-                     "politics": "سياسة ودبلوماسية", "economy": "اقتصاد وإغاثة",
+                     "arts": "الثقافة والفنون", "sports": "الرياضة",
+                     "accountability": "الشفافية والمساءلة",
+                     "research": "الأبحاث والتحقيقات",
+                     "bitcoin": "الحرية المالية",
+                     "politics": "السياسة والدبلوماسية", "economy": "الاقتصاد والإغاثة",
                      "social": "من الميدان",
-                     "opinion": "رأي وتحليل", "news": "المزيد من الأخبار"},
+                     "opinion": "الرأي والتحليل", "news": "المزيد من الأخبار"},
         "mission_title": "الميثاق التحريري",
         "mission": ("«تايمز أوف فلسطين» غرفة أخبار رقمية مستقلة. نجمع الأخبار وننقلها من داخل فلسطين "
                     "ومن حول العالم — باستمرار، بلا رقابة وبلا محاباة. نحاسب السلطة أينما كانت: "
@@ -4898,8 +4905,8 @@ NAV_SHORT = {
            "women": "Her Story", "economy": "Economy"},
     "ar": {"gaza": "غزة", "westbank": "الضفة",
            "israelipress": "الصحافة الإسرائيلية",
-           "uspress": "الصحافة الأميركية", "politics": "سياسة",
-           "women": "حكايتها", "economy": "اقتصاد"},
+           "uspress": "الصحافة الأميركية", "politics": "السياسة",
+           "women": "حكايتها", "economy": "الاقتصاد"},
 }
 NAV_PRIORITY = ["gaza", "westbank", "israelipress", "uspress", "politics", "women", "economy"]
 NAV_GBTN_JS = (

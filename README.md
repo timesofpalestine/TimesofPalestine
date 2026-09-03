@@ -219,14 +219,14 @@ Placement is decided by a score, not just the clock:
 - **Research & investigations** — +22 points for think-tank papers and OSINT investigations
   (Quincy Institute, Bellingcat, MERIP, DAWN, Crisis Group, HRW, Al Jazeera Studies), which also
   decay over their own 30–45-day shelf life instead of the 72-hour news cycle. The top report
-  leads a dedicated **Research & Investigations / أبحاث وتحقيقات** section — placed first on the
+  leads a dedicated **Research & Investigations / الأبحاث والتحقيقات** section — placed first on the
   page — as a full-width featured card with an extended summary: news before it becomes news.
   Mark any feed with `"research": true` to route it here.
 
 The hero and second tier are picked by score, so a strong focus story outranks a merely newer
 one. The breaking ticker and "The Latest" rail stay strictly chronological. Focus topics also get
 dedicated high-placed sections (red markers) that appear whenever even one story qualifies:
-*Palestinian Christians* / *مسيحيو فلسطين* and *Transparency & Accountability* / *شفافية ومساءلة*.
+*Palestinian Christians* / *مسيحيو فلسطين* and *Transparency & Accountability* / *الشفافية والمساءلة*.
 Tune the keyword lists (`CHRISTIANS_RX`, `ACCOUNTABILITY_RX`) and weights (`FOCUS_BOOST`) at the
 top of [build.py](build.py).
 
