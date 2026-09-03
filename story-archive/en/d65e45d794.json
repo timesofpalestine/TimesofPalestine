@@ -1,0 +1,45 @@
+{
+ "brief": "Four imprisoned activists from Palestine Action are appealing convictions for criminal damage that courts linked to terrorism, Al Jazeera English reported. The group has faced legal charges connected to direct-action campaigns against companies it says support Israeli military operations. The appeals represent a continued legal battle over how British courts classify protest-related property damage.\n\nPalestine Action has conducted disruptive demonstrations at factory sites and corporate offices in the United Kingdom. The convictions have drawn scrutiny over the application of terrorism-related charges to protest activities, raising questions about the scope of Britain's counterterrorism framework.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/3/four-imprisoned-palestine-action-activists-appeal-terrorism-sentences-2?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/uk-news/2026/sep/03/pro-palestine-activists-who-were-sentenced-as-terrorists-launch-appeal",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/palestine-action-activists-appeal-terror-sentencing",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-03T18:46:14+00:00",
+ "dek": "Palestine Action activists convicted of criminal damage “with a terrorist connection” are appealing their convictions.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/Screenshot-2026-09-03-at-19.38.50-1788460928.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/3/four-imprisoned-palestine-action-activists-appeal-terrorism-sentences-2?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/3/four-imprisoned-palestine-action-activists-appeal-terrorism-sentences-2?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d65e45d794",
+ "score": 49.85,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Four Palestine Action activists appeal terrorism-linked convictions"
+}
