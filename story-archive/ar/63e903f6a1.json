@@ -6,13 +6,7 @@
    "article": "https://t.me/Arabi21News/428715",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/733986",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-03T19:21:24+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "63e903f6a1",
- "score": 48.93,
+ "score": 48.74,
  "source": "عربي21",
  "source_id": "tg-arabi21",
  "source_url": "https://t.me/arabi21news",

@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، تشهد فرع مايكروسوفت في إسرائيل هزة إدارية. والتقرير الأولي لم يفصّل طبيعة هذه التغييرات أو نطاقها الدقيق، لكنها تشير إلى حراك على مستوى قيادة العمليات أو الهيكل التنظيمي للشركة.\n\nوتعمل مايكروسوفت في إسرائيل عبر أقسام متعددة منذ سنوات، حيث تشغّل مشاريع تقنية وخوادم بيانات متنوعة. وتشهد عمليات الشركة تطورات دورية على الصعيد الإداري والتنظيمي، في حين لم يُعلن عن تفاصيل محددة حول الأسباب الكامنة وراء الهزة الإدارية الحالية أو نتائجها المتوقعة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/09/03/1117012",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-03T20:59:50+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/09/03/1117012",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2a4e7338b9",
+ "score": 34.88,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "مايكروسوفت إسرائيل تواجه تغييرات إدارية"
+}

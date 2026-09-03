@@ -1,0 +1,57 @@
+{
+ "brief": "An Israeli drone strike and gunfire killed three people across the Gaza Strip, Al Jazeera English reported. The strikes occurred despite an ongoing ceasefire arrangement, with casualties and injuries reported in multiple locations throughout the territory. The military operations represent a continuation of hostilities even as a formal ceasefire nominally remains in effect.\n\nA far-right Israeli minister is advancing plans for Palestinian removals, according to the outlet. The official's initiatives signal intensifying pressure on Palestinian populations amid the broader security situation. The developments underscore the volatile conditions persisting in Gaza despite diplomatic efforts to halt the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/far-right-israeli-minister-sets-out-plan-forcibly-displace-palestinians",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-12-palestinians-in-gaza-including-three-children-a-woman-and-an-elderly-man",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israel-kills-child-and-another-palestinian-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-03T20:31:08+00:00",
+ "dek": "Israeli drone strike and gunfire kills and injures people across the Gaza Strip despite 'ceasefire'.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/GettyImages-2292752802-1788465848.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2306bc451d",
+ "score": 63.59,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel kills three in Gaza amid ceasefire violations"
+}

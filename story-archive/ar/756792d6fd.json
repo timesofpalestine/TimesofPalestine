@@ -1,0 +1,33 @@
+{
+ "brief": "شنت إسرائيل عملية تفجير في بلدة صربين بمنطقة ياطر جنوب لبنان، وفقاً لمصادر لبنانية. ولم تصدر السلطات الإسرائيلية تعليقاً فوري على العملية.\n\nتقع بلدة صربين في الجنوب اللبناني، وهي منطقة شهدت توترات أمنية متكررة على خلفية الصراع الإقليمي. وتندرج العملية ضمن سلسلة من الحوادث الأمنية التي تشهدها المنطقة الحدودية بين لبنان وإسرائيل.\n\nلم تتوفر معلومات فورية عن حجم الأضرار أو عدد الضحايا المحتملين جراء التفجير.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319195",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-03T20:44:53+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319195",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "756792d6fd",
+ "score": 49.71,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "إسرائيل تنفذ تفجيراً في بلدة جنوب لبنان"
+}
