@@ -13,6 +13,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/settler-attacks-west-bank-take-dangerous-turn",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-03T07:00:46+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "4eb6671ffd",
- "score": 44.51,
+ "score": 44.26,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
