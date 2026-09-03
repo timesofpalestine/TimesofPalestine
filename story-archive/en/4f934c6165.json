@@ -6,11 +6,24 @@
    "article": "https://www.dropsitenews.com/p/israel-west-bank-attacks-postal-service-nepal-deaths",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/two-palestinian-teens-killed-west-bank-raid-israeli-settlers-and-army",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinian-teenagers-killed-israeli-forces-occupied-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-01T15:43:23+00:00",
  "dek": "Drop Site Daily: September 1, 2026.",
+ "dup_of": null,
  "image": "https://substackcdn.com/image/fetch/$s_!Cde-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fad75c634-66bd-4a38-87db-7423c36ed1aa_6760x4509.jpeg",
  "lang": "en",
  "link": "https://www.dropsitenews.com/p/israel-west-bank-attacks-postal-service-nepal-deaths",
@@ -24,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "4f934c6165",
- "score": 43.44,
+ "score": 37.94,
  "source": "Drop Site News",
  "source_id": "dropsite",
  "source_url": "https://www.dropsitenews.com/",

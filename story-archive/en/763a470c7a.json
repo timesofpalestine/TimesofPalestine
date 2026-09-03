@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-demolish-four-water-wells-greenhouses-hebron",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-bulldozers-continue-land-destruction-near-salfit",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-02T22:12:13+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "763a470c7a",
- "score": 45.35,
+ "score": 45.11,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",

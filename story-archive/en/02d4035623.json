@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2167997.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-12-palestinians-in-gaza-including-three-children-a-woman-and-an-elderly-man",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-02T09:09:41+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "02d4035623",
- "score": 50.29,
+ "score": 50.05,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
