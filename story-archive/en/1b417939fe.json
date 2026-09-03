@@ -1,0 +1,33 @@
+{
+ "brief": "Israel's blockade of Gaza has left dentists operating in streets and makeshift spaces due to severe shortages of supplies and office facilities, Al Jazeera English reported. The siege has made dental care a luxury accessible to few Palestinians, with practitioners unable to maintain proper clinics or obtain necessary equipment and materials.\n\nThe conditions reflect broader infrastructure collapse across Gaza under the prolonged blockade, which has restricted the flow of goods and resources into the territory. Dental work, once confined to dedicated offices, has shifted to informal outdoor settings as medical professionals adapt to scarcity.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/3/gaza-housing-dentists?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-03T16:45:21+00:00",
+ "dek": "Scarce resources and office space mean that dental work is a luxury for most people in Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/IMG_6666-1788447943.jpeg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/3/gaza-housing-dentists?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/3/gaza-housing-dentists?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1b417939fe",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza's siege forces dentists to work in streets"
+}
