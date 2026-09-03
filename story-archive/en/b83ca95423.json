@@ -6,19 +6,7 @@
    "article": "original:gaza-city-raid-security-chief-2026-09-01.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/news/2026/9/2/israel-still-wants-to-remove-palestinians-from-gaza-defence-minister-says?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/sep/02/israel-seeking-trumps-support-for-plan-to-expel-palestinians-from-gaza",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-01T11:10:00+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": true,
  "pid": "b83ca95423",
- "score": 95.68,
+ "score": 95.63,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
