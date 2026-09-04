@@ -687,6 +687,38 @@ pure enhancement (no-JS pages read exactly as before):
 - **End slug** — every story closes with a small red ■ (`.closer::after`),
   the classic magazine end mark, both editions.
 
+## The living story page (owner order 2026-09-04)
+
+"When you click on an article you should have better visuals, not enter a
+dull page." Four automatic layers on every story page, each drawn only
+from the story's own copy or the newsroom's live data — nothing invented:
+
+- **Story rail** (`aside.story-rail`, ≥1100px a sticky 320px column beside
+  the text inside `.story-layout`; below that it stacks under the article):
+  *More from ‹Section›* — four section stories as thumb rows (`.rail-list`,
+  74×56 thumbs, photo or house tile), a View-all link; *Live figures*
+  (`.rail-live`, ink card) — two or three ledger figures the section
+  counts (`_RAIL_FIGS`), the same numbers as the front strip, linked to
+  the full ledger; *The Latest* — five wire rows (wide screens only, the
+  bottom rail serves phones). Keep Reading skips the rail's four stories.
+- **By the numbers** (`aside.story-figs`, briefs only): up to three tiles
+  after the second paragraph — a figure in section-accent serif and the
+  verbatim sentence it lives in. `story_figures` takes real quantities
+  only: percentages first, then the largest; never years, dates, times,
+  ordinals or single digits. Skipped for opinion, arts and human stories,
+  and for any copy that already carries a figure, quote or table.
+- **Lifted pull quote** (`blockquote.pull.lifted`, briefs only): the first
+  quotation of 8–45 words, verbatim, after the fourth paragraph of a
+  seven-paragraph-plus story; accent rule above, no invented attribution.
+- **Section accent on the furniture:** `article.story` carries `.sa-<cat>`,
+  so the kicker (with a 3.2rem accent rule above it), drop cap, end mark,
+  pull-quote rule, figure numbers and rail heads take the section's
+  colour instead of house red.
+- **Cover plate:** a house category cover renders as its text-free
+  `-hero.svg` plate in a 21:9 band (`.lede-plate`) with the section name
+  set small in the corner — a picture frame, not a billboard repeating the
+  kicker. Photographs are untouched.
+
 ## Visual polish queue (running; daily editor may pick from here)
 
 - Photo-conversion queue for house-SVG covers stays the top lever

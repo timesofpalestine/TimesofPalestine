@@ -256,6 +256,80 @@ class WireCopyHygieneTest(unittest.TestCase):
         self.assertFalse(build.svg_text_overflows(svg))
 
 
+class LivingStoryPageTest(unittest.TestCase):
+    """Owner order 2026-09-04: a story page must not be a dull column. The
+    layers are automatic and drawn only from the copy and the live ledger."""
+
+    TEXT = ("Two months before Israel votes, the Maariv analysis puts the Zionist "
+            "opposition at 59 seats, two short of a governing majority. Turnout in "
+            "Arab towns reached 53% in the last election, the pollster said on 28 "
+            "August 2026. The list won 10 seats in 2022. “The community is deciding "
+            "whether it is worth voting at all, and that decision decides the next "
+            "government,” one organiser told the paper. It was 09:30 when polls opened.")
+
+    def test_figures_are_quantities_not_dates(self):
+        figs = build.story_figures(self.TEXT, "en")
+        self.assertEqual([f[0] for f in figs], ["53%", "59", "10"])
+        self.assertTrue(all("28" not in f[0] and "2026" not in f[0] for f in figs))
+
+    def test_markdown_furniture_never_reaches_a_tile(self):
+        text = ("## The count\n\n> More than 140 Arab citizens were killed by mid-year, "
+                "the **Abraham Initiatives** said.\n\n- Last year ended with 250 killed.")
+        figs = build.story_figures(text, "en")
+        self.assertEqual([f[0] for f in figs], ["250", "140"])
+        self.assertTrue(all(not sent.startswith(">") and "**" not in sent for _, sent in figs))
+
+    def test_arabic_figures_and_percent(self):
+        text = ("أعلنت الوزارة أن 92 في المئة من المدارس تحتاج إلى إعادة بناء. "
+                "وتوقفت 12 مستشفى عن العمل منذ تشرين الأول/أكتوبر 2023. "
+                "وأحصت الأونروا 637000 طفل خارج المدرسة.")
+        figs = build.story_figures(text, "ar")
+        self.assertEqual(figs[0][0], "92 في المئة")
+        self.assertIn("637000", [f[0] for f in figs])
+        self.assertNotIn("2023", [f[0] for f in figs])
+
+    def test_pull_quote_is_verbatim_and_sized(self):
+        q = build.story_pull_quote(self.TEXT, "en")
+        self.assertIn("decides the next government", q)
+        self.assertEqual(build.story_pull_quote("He said “no”. Then “yes, twice”.", "en"), "")
+
+    def test_story_page_carries_rail_figures_and_plate(self):
+        built_at = datetime(2026, 9, 4, 9, tzinfo=timezone.utc)
+        paras = " ".join(f"Sentence number {i} of the report continues the account of the raid." for i in range(3))
+        brief = "\n\n".join([self.TEXT] + [paras] * 7)
+        story = _item(title="Palestinian citizens of Israel raise their turnout and unsettle both blocs",
+                      cat="pal48", brief=brief, image="/media/times-of-palestine-cover-pal48.svg",
+                      pid="pal4800001", link="https://example.com/turnout")
+        related = [_item(title=f"Nazareth council counts killing number {i} this year", cat="pal48",
+                         pid=f"pal48000{i}", link=f"https://example.com/n{i}",
+                         date=built_at - timedelta(hours=i + 1)) for i in range(2, 12)]
+        html = build.render_story(story, "en", related, related, built_at)
+        self.assertIn('class="story-rail"', html)
+        self.assertIn("More from Palestinians in Israel", html)
+        self.assertIn('class="story-figs"', html)
+        self.assertIn('class="pull lifted"', html)
+        self.assertIn("cover-pal48-hero.svg", html)
+        self.assertIn('<article class="story sa-pal48">', html)
+        # the rail's four section stories do not repeat in Keep Reading
+        keep = html.split('class="keep"', 1)[1].split('class="wrap latest"', 1)[0]
+        self.assertNotIn("killing number 2 ", keep)
+        self.assertIn("killing number 6 ", keep)
+
+    def test_originals_and_short_briefs_are_left_alone(self):
+        paras = '<p class="summary">one</p><p class="summary">two</p><p class="summary">three</p>'
+        self.assertEqual(build.weave_story_visuals(paras, self.TEXT, "en", "gaza"), paras)
+        # a body with its own figure gets no tiles; the lifted quote may still ride
+        with_fig = paras * 3 + "<figure class=\"lf\"></figure>"
+        woven = build.weave_story_visuals(with_fig, self.TEXT, "en", "gaza")
+        self.assertNotIn("story-figs", woven)
+        self.assertIn("pull lifted", woven)
+        # a writer's own pull quote keeps its place; the figures still ride
+        with_quote = paras * 3 + "<blockquote class=\"pull\"><p>x</p></blockquote>"
+        woven = build.weave_story_visuals(with_quote, self.TEXT, "en", "gaza")
+        self.assertIn("story-figs", woven)
+        self.assertNotIn("pull lifted", woven)
+
+
 class RunningFileChipTest(unittest.TestCase):
     def test_story_in_a_live_hub_carries_the_chip(self):
         built_at = datetime(2026, 9, 4, 9, tzinfo=timezone.utc)
