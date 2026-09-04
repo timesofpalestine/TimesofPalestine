@@ -27,6 +27,18 @@
    "verified": true
   },
   {
+   "article": "https://www.alquds.co.uk/%d8%b3%d8%b1%d8%a7%d9%8a%d8%a7-%d8%a7%d9%84%d9%82%d8%af%d8%b3-%d8%aa%d8%b9%d9%84%d9%86-%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d8%a3%d8%ad%d8%af-%d9%85%d9%82%d8%a7%d8%aa%d9%84%d9%8a%d9%87",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185822/%D8%B3%D8%B1%D8%A7%D9%8A%D8%A7-%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%A7%D8%AF-%D9%85%D9%82%D8%A7%D9%88%D9%85-%D8%AE%D9%84%D8%A7%D9%84-%D9%85%D8%AD%D8%A7%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D9%8A%D9%84%D8%B4%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%8A%D9%84%D8%A9-%D8%A7%D8%AE%D8%AA%D8%B7%D8%A7%D9%81%D9%87-%D8%B4",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/gazaalannet/82612",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
@@ -36,7 +48,7 @@
  "date": "2026-09-04T03:49:06+00:00",
  "dek": "التفاصيل بعد قليل.",
  "dup_of": null,
- "image": "https://www.aljazeera.net/wp-content/uploads/2020/05/Al-Jazeera-Breaking-News.jpg?resize=1200%2C630",
+ "image": "https://www.aljazeera.net/wp-content/uploads/2009/07/262a6857-4717-40e8-9c11-efdbd2ceb5ba.jpeg?resize=1200%2C675",
  "lang": "ar",
  "link": "https://www.aljazeera.net/news/2026/9/4/%d8%b9%d8%a7%d8%ac%d9%84-%d8%b3%d8%b1%d8%a7%d9%8a%d8%a7-%d8%a7%d9%84%d9%82%d8%af%d8%b3-%d8%a7%d8%b4%d8%aa%d8%a8%d9%83%d9%86%d8%a7-%d9%85%d8%b9-%d9%82%d9%88%d8%a9?traffic_source=rss",
  "max_age_hours": 72,
@@ -49,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "5517983ca1",
- "score": 61.57,
+ "score": 61.29,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
