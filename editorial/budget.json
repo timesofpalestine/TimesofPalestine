@@ -24,7 +24,7 @@
   "sweep, stale sections, both press reviews, markets, running files) on",
   "Sonnet. Change the days or prices here; never the budget without deciding."
  ],
- "monthly_budget_usd": 300,
+ "monthly_budget_usd": 400,
  "hard_stop_fraction": 0.92,
  "allocations": {
   "briefs": 0.12,
@@ -36,9 +36,9 @@
  "tiers": {
   "editor": {
    "full": {
-    "model": "claude-opus-5",
+    "model": "claude-fable-5-1",
     "max_turns": 300,
-    "usd": 18,
+    "usd": 36,
     "days": ["mon", "thu"]
    },
    "light": {

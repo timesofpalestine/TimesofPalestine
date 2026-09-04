@@ -247,8 +247,8 @@ everything it builds:
    remainder is the discretionary pool shared by weight, and every desk
    saves up in a purse that refills daily — a big run is followed by
    saving, never a blackout. The editor runs in EDITIONS
-   (`editorial/budget.json` "tiers"): the FULL edition (Opus, whole
-   mandate) on its big days, the LIGHT edition (Sonnet, the non-negotiables:
+   (`editorial/budget.json` "tiers"): the FULL edition (Claude Fable 5.1 since the owner's order of
+   2026-09-04, Opus before; whole mandate) on its big days, the LIGHT edition (Sonnet, the non-negotiables:
    breaking sweep, stale sections, both press reviews, markets, running
    files) on the others, each edition saving from its own share; the
    governor learns each edition's real price from the runs it records.
