@@ -18,7 +18,7 @@
   <rect width="800" height="350" fill="url(#bg)"/>
   <rect width="800" height="350" fill="url(#glow)"/>
 
-  <g>
+  <g transform="translate(400 0) scale(0.78) translate(-400 0)">
         <circle cx="102.4" cy="307.4" r="12.5" fill="#3d4f6b"/>
     <circle cx="139.4" cy="307.4" r="12.5" fill="#3d4f6b"/>
     <circle cx="176.5" cy="307.3" r="12.5" fill="#3d4f6b"/>
@@ -141,12 +141,12 @@
     <circle cx="697.6" cy="307.4" r="12.5" fill="#8a1f2d"/>
   </g>
 
-  <path d="M400.0 194.0 L400.0 4.0" stroke="#c7a86b" stroke-width="4" stroke-dasharray="9 7" stroke-linecap="round"/>
+  <path d="M400.0 152.0 L400.0 4.0" stroke="#c7a86b" stroke-width="4" stroke-dasharray="9 7" stroke-linecap="round"/>
 
-  <text x="400" y="286" class="mono" fill="#c7a86b" font-size="64" font-weight="700" text-anchor="middle">61</text>
-  <text x="400" y="316" class="sans" fill="#aab4c6" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="2">TO GOVERN · للحكم</text>
+  <text x="400" y="234" class="mono" fill="#c7a86b" font-size="54" font-weight="700" text-anchor="middle">61</text>
+  <text x="400" y="258" class="sans" fill="#aab4c6" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="2">TO GOVERN · للحكم</text>
 
-  <text x="18" y="338" class="sans" fill="#8fa8cf" font-size="25" font-weight="800">ANTI-NETANYAHU ≈58</text>
-  <text x="782" y="338" class="sans" fill="#c98a95" font-size="25" font-weight="800" text-anchor="end">NETANYAHU BLOC ≈52</text>
-  <text x="400" y="345" class="sans" fill="#5fae83" font-size="23" font-weight="700" text-anchor="middle">ARAB PARTIES · الأحزاب العربية 10</text>
+  <text x="18" y="292" class="sans" fill="#8fa8cf" font-size="21" font-weight="800">ANTI-NETANYAHU ≈58</text>
+  <text x="782" y="292" class="sans" fill="#c98a95" font-size="21" font-weight="800" text-anchor="end">NETANYAHU BLOC ≈52</text>
+  <text x="400" y="318" class="sans" fill="#5fae83" font-size="20" font-weight="700" text-anchor="middle">ARAB PARTIES · الأحزاب العربية 10</text>
 </svg>

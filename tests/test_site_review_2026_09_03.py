@@ -235,6 +235,27 @@ class FrontWindowTest(unittest.TestCase):
         self.assertEqual(build.FRONT_WINDOW_MAX_H, 150)
 
 
+class WireCopyHygieneTest(unittest.TestCase):
+    """Front render 2026-09-04: headlines carried full stops and Arabic
+    deks ended on a cut-off word — both fixed at the source."""
+
+    def test_dek_never_ends_in_a_fragment(self):
+        cut = "أعلنت الوزارة الرقم الجديد للشهداء في القطاع. وقال الباح"
+        self.assertEqual(build.clean_dek(cut), "أعلنت الوزارة الرقم الجديد للشهداء في القطاع.")
+        whole = "The ministry announced the new figure for the Strip."
+        self.assertEqual(build.clean_dek(whole), whole)
+        single = "The ministry announced the new figure for the Strip and the min"
+        self.assertTrue(build.clean_dek(single).endswith("…"))
+        self.assertEqual(build.clean_dek("Is the crossing open?"), "Is the crossing open?")
+
+    def test_card_legend_sits_inside_the_desktop_crop(self):
+        svg = (Path(build.__file__).parent / "originals" / "media"
+               / "times-of-palestine-israel-votes-card.svg").read_text(encoding="utf-8")
+        ys = [float(y) for y in re.findall(r'<text[^>]* y="([\d.]+)"', svg)]
+        self.assertTrue(ys and max(ys) <= 320, ys)  # 16:6 crop shows y 25–325
+        self.assertFalse(build.svg_text_overflows(svg))
+
+
 class RunningFileChipTest(unittest.TestCase):
     def test_story_in_a_live_hub_carries_the_chip(self):
         built_at = datetime(2026, 9, 4, 9, tzinfo=timezone.utc)
