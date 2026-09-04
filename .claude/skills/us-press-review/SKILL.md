@@ -7,8 +7,11 @@ description: Daily US press and think-tank review for Times of Palestine — swe
 
 Times of Palestine reads the American press and Washington's think tanks so
 its readers don't have to. Every run produces standalone news items — one
-story per source article or paper — in BOTH editions, plus one roundup of
-what Washington is reading. Owner directive 2026-08-11; sibling desk to the
+story per source article or paper — in BOTH editions, plus one roundup
+under the franchise line "The American front pages, read from Palestine"
+(«الصفحات الأولى الأميركية، مقروءة من فلسطين»), headlined "Washington wakes
+up to …" / «واشنطن تصحو على …» (owner order 2026-09-04, replacing the plain
+"Washington reads …"). Owner directive 2026-08-11; sibling desk to the
 Israeli press review (2026-08-06), same discipline throughout.
 
 ## Sources to sweep
@@ -91,9 +94,20 @@ funds and shields the occupation?
 5. **Bodies**: 120–250 words per language, paragraphs of 1–3 sentences,
    no memo headings, no sources section, end on a reported fact. Banned
    diction lists apply («قام بـ», «تم»+مصدر, "delve", "underscores"…).
-6. **The roundup**: one extra item, "what Washington is reading" — the
-   day's American front pages and the loudest think-tank argument, two
-   or three sentences each.
+6. **The roundup**: one extra item — the day's American front pages and
+   the loudest think-tank argument, two or three sentences each. Its
+   franchise voice (owner order 2026-09-04, "Washington reads …" was too
+   plain): the HEADLINE names what the capital woke up to — "Washington
+   wakes up to a prison indictment and its own fight over Israel" /
+   «واشنطن تصحو على لائحة اتهام في السجون ومعركتها حول إسرائيل» — and
+   the FIRST LINE is the franchise dek, fixed: "The American front pages,
+   read from Palestine." / «الصفحات الأولى الأميركية، مقروءة من فلسطين.»
+   followed by the day and the one-sentence take. Vary the verb when a
+   day is not a morning-after story — "Washington argues over …",
+   "Washington's papers turn to …" / «واشنطن تتجادل حول …», «صحف واشنطن
+   تلتفت إلى …» — but never fall back to "reads". Slug prefix for new
+   roundups: `washington-wakes-<date>`; the older `washington-reading-*`
+   files keep their titles as published.
 7. **Verify before pushing**: run
    `TOP_FEEDS_FILE=tests/fixtures/feeds.json TOP_OFFLINE=1 TOP_ALLOW_RAW_SUMMARIES=1 python3 build.py`
    and confirm every new file passes render checks with no `⚠` diction
