@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli police shot and killed a Palestinian in Jerusalem, Al Jazeera English reported. The fatal shooting marked the latest lethal use of force by Israeli security forces in the disputed territory, where tensions between Israeli and Palestinian communities remain acute.\n\nSimultaneously, the Israeli military imposed a blockade preventing aid from reaching the village of Qusra, stopping Israeli and Palestinian activists from delivering food and medicine to homes surrounded by settlers. Residents trapped in the besieged area face severe shortages of essential supplies, with no access to humanitarian assistance as the restrictions remain in place.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/4/israeli-police-kill-palestinian-in-jerusalem-as-army-blocks-aid-for-qusra?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-police-kill-palestinian-in-jerusalem",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-04T21:58:47+00:00",
+ "dek": "Israeli forces bar Israeli and Palestinian activists from delivering food and medicine to homes besieged by settlers.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6a9ad8d20e81-1788532946.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/4/israeli-police-kill-palestinian-in-jerusalem-as-army-blocks-aid-for-qusra?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/4/israeli-police-kill-palestinian-in-jerusalem-as-army-blocks-aid-for-qusra?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6f88fe13d1",
+ "score": 63.43,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli police kill Palestinian in Jerusalem"
+}
