@@ -1,0 +1,39 @@
+{
+ "brief": "قصفت طائرات الاحتلال الإسرائيلي دراجة نارية في محيط نقابة المهندسين بمدينة النبطية جنوب لبنان، ما أسفر عن مقتل شهيدين، بحسب المركز الفلسطيني للإعلام.\n\nوقع الاستهداف في منطقة سكنية قريبة من مؤسسات مدنية، إذ استهدفت الطائرات الإسرائيلية الدراجة النارية مباشرة في المنطقة المكتظة بالسكان.\n\nلم تعلن السلطات اللبنانية حتى الآن بيانات رسمية تؤكد الحادثة أو توضح هويات القتلى والظروف الكاملة للقصف.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319396",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/734182",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-04T16:57:41+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319396",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8d0d1381dd",
+ "score": 62.91,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يقصف دراجة نارية في النبطية ويقتل شهيدين"
+}
