@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/katz-statements-on-immigration-of-gaza-residents-further-confirm-israels-systematic-policy-of-ethnic-cleansing-and-genocide",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-rights-group-condemns-israeli-ministers-gaza-forced",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-04T07:07:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "acc1f17791",
- "score": 71.36,
+ "score": 71.33,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
