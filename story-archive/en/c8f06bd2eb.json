@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/uk-news/2026/sep/03/pro-palestine-activists-who-were-sentenced-as-terrorists-launch-appeal",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/palestine-action-activists-appeal-terror-sentencing",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-03T17:10:21+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "c8f06bd2eb",
- "score": 43.68,
+ "score": 43.43,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
