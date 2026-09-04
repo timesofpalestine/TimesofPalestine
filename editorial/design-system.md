@@ -294,9 +294,14 @@ load-bearing statistic — one or two per story, never as decoration.
   Telegram is a single quiet inline line (`.alt`) under the sub text, the
   QR sits small (84px) beside the button, and the safety note keeps its
   full-width hairline row (condensed 2026-08-06 — no competing buttons).
-- **Palestine by the Numbers cells** (`.gi-cell`): bordered stat cards —
-  `--paper` ground on the `--card` block, 1px `--line` border, 6px radius,
-  the 3px red inline-start rule kept as the accent (2026-08-06).
+- **Palestine by the Numbers cells** (`.gi-cell`, redrawn 2026-09-03 on
+  the owner's order to make the ledger easier to read and shorter): no
+  boxes. A cell is a numeral over its label, cells separated by 1px
+  `--line` hairlines in one flex line per region; the first cell of every
+  row is the KEY figure (`.gi-key`: 2.3rem numeral, a 1.6rem × 3px flag-red
+  rule beneath it, ink label), the rest 1.5rem with muted labels. Cells
+  size to content (`flex:0 1 auto`, 7.4–12.5rem) so a row reads as a table
+  line, never stretched across the page.
 - **Breaking ticker**: red band, black BREAKING label, 80s linear loop,
   pauses on hover and keyboard focus, `tick-rtl` mirror for Arabic. The
   seamless-loop duplicate of the track is decorative: it carries
@@ -307,9 +312,21 @@ load-bearing statistic — one or two per story, never as decoration.
   pulsing gold dot, big mono numeral, recomputed every build. If you build a
   new "alive" element, follow this chip's anatomy.
 - **Palestine by the Numbers = live ledger** (`section.gaza-index`,
-  `gaza_panel.py`): bordered region cards (`.gi-block`), each a kicker with
-  a 4px red bar (`.gi-region`), a big-numeral grid, an optional composition
-  strip, and its own attribution + as-of line — GAZA (Ministry of Health
+  `gaza_panel.py`; ruled-table redraw 2026-09-03 — desktop height 1260px →
+  600px, phone 2130px → 1200px): ONE table (`.gi-ledger`, 2px ink rules top
+  and bottom, 1px `--line` between rows). Each region is a row (`.gi-row`,
+  grid: a 150–185px stub + the figure line): the stub carries the region
+  name in serif (`.gi-region`) with its attribution and as-of stamp
+  (`.gi-src`) beneath it; the figures follow as one line of cells; the
+  optional composition strip rides one line under the figures with its
+  legend inline (`.gi-comp-line`). The cumulative Gaza curve is a
+  SPARKLINE CELL at the end of the Gaza row (`.gi-spark`, 2.3rem tall, no
+  axis, labelled "Cumulative since 2023-10-07", full aria-label) — never a
+  full-width chart repeating the Killed figure. Methodology `<details>` and
+  the open-data links share one footer line (`.gi-foot`). Phones stack the
+  stub above a three-column figure grid with the key figure as a headline
+  line (numeral + label side by side) and the sparkline spanning the grid.
+  Rows: GAZA (Ministry of Health
   toll), WEST BANK (UN OCHA killed/children/wounded + settler attacks),
   PRISONERS (Addameer by age and gender: total `+`-suffixed, administrative,
   Gaza-uncharged, women, children — figures live in
@@ -343,8 +360,8 @@ load-bearing statistic — one or two per story, never as decoration.
   `payload_csv` beside the JSON every build) plus a cite-the-primary-sources
   note — the ledger is a research surface, readers may take the data.
   **Inline methodology** (`.gi-method`, owner-forwarded review 2026-08-10):
-  a collapsed `<details>` directly under the ledger's section head — "How
-  these figures are compiled" — naming each row's source, the refresh
+  a collapsed `<details>` on the ledger's footer line beside the open-data
+  links — "How these figures are compiled" — naming each row's source, the refresh
   cadence, and what the `+` and `?` marks mean. It renders only when live
   rows do, bilingual, prose not bullets; the per-term `.gi-help` tooltips
   stay as the figure-level layer.
