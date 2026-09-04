@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/katz-statements-on-immigration-of-gaza-residents-further-confirm-israels-systematic-policy-of-ethnic-cleansing-and-genocide",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-04T07:07:00+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "acc1f17791",
- "score": 71.58,
+ "score": 71.55,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
