@@ -4114,7 +4114,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
    Without JS it stays hidden and the inline row carries sharing. */
 .share-rail{display:none}
 @media(min-width:1200px){
-.share-rail{display:flex;flex-direction:column;gap:.5rem;position:fixed;top:42vh;inset-inline-start:calc(50vw - min(590px,50vw - 20px) - 3.4rem);z-index:40;opacity:0;visibility:hidden;transition:opacity var(--tr),visibility var(--tr)}
+.share-rail{display:flex;flex-direction:column;gap:.5rem;position:fixed;top:42vh;inset-inline-start:max(8px,calc(50vw - min(590px,50vw - 20px) - 3.4rem));z-index:40;opacity:0;visibility:hidden;transition:opacity var(--tr),visibility var(--tr)}
 .share-rail.on{opacity:1;visibility:visible}
 .share-rail a{width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;border:1px solid var(--line-dark);border-radius:50%;background:var(--card);font-weight:800;font-size:.78rem;box-shadow:var(--sh);transition:background var(--tr),color var(--tr),border-color var(--tr)}
 .share-rail a:hover{background:var(--red);color:#fff;border-color:var(--red)}
