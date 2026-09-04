@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">209 journalists killed, no soldier charged</title>
+<desc id="dsc">Dark editorial graphic. Large figure 209 — journalists and media workers killed by Israel in Gaza and in Israeli detention since 7 October 2023, according to the Committee to Protect Journalists as of 25 June — set beside a large red zero for soldiers charged over the killing of a journalist. A bar chart at right compares recorded tolls: Palestinian Journalists Syndicate 265, Gaza government media office 262, International Federation of Journalists 240, Committee to Protect Journalists 209.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- kicker -->
+<text x="90" y="82" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="4" fill="#c7a86b">GAZA · PRESS FREEDOM</text>
+<text x="90" y="112" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">غزة · حرية الصحافة</text>
+
+<!-- headline -->
+<text x="90" y="176" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Israel has killed 209 journalists</text>
+<text x="90" y="228" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">and charged no soldier</text>
+<text x="90" y="272" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d">إسرائيل قتلت 209 صحفيين ولم تُقدّم أي جندي للمحاكمة</text>
+
+<line x1="90" y1="300" x2="1510" y2="300" stroke="#3a3b3e" stroke-width="2"/>
+<line x1="726" y1="320" x2="726" y2="820" stroke="#3a3b3e" stroke-width="2"/>
+
+<!-- LEFT: the two figures -->
+<text x="90" y="452" font-family="'Libre Franklin',Arial,sans-serif" font-size="170" font-weight="700" fill="#f2eee8">209</text>
+<rect x="90" y="470" width="120" height="5" fill="#c7a86b"/>
+<text x="90" y="512" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">journalists and media workers killed</text>
+<text x="90" y="542" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#aaa9a5">in Gaza and in Israeli detention since</text>
+<text x="90" y="572" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#aaa9a5">7 October 2023 — CPJ, as of 25 June</text>
+<text x="90" y="606" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#59a97d">صحفياً وعاملاً في الإعلام قُتلوا</text>
+
+<!-- press card icon -->
+<g>
+<rect x="470" y="330" width="212" height="140" rx="10" fill="none" stroke="#c7a86b" stroke-width="3"/>
+<rect x="470" y="330" width="212" height="34" rx="10" fill="#8a1f2d"/>
+<rect x="470" y="352" width="212" height="12" fill="#8a1f2d"/>
+<text x="486" y="356" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="6" fill="#f2eee8">PRESS</text>
+<rect x="492" y="386" width="58" height="64" fill="#2a2b2e" stroke="#55565a" stroke-width="2"/>
+<rect x="570" y="392" width="92" height="9" fill="#55565a"/>
+<rect x="570" y="414" width="92" height="9" fill="#55565a"/>
+<rect x="570" y="436" width="66" height="9" fill="#55565a"/>
+</g>
+
+<text x="90" y="740" font-family="'Libre Franklin',Arial,sans-serif" font-size="170" font-weight="700" fill="#C8102E">0</text>
+<rect x="90" y="758" width="120" height="5" fill="#8a1f2d"/>
+<text x="200" y="700" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">Israeli soldiers charged over the</text>
+<text x="200" y="730" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8">killing of a journalist</text>
+<text x="200" y="762" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#59a97d">لا جندي واحد قُدّم للمحاكمة</text>
+<text x="90" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">No journalist's killing was on the military's 19 August list</text>
+
+<!-- RIGHT: tolls chart -->
+<text x="800" y="352" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="2" fill="#c7a86b">RECORDED TOLLS, BY SOURCE</text>
+<text x="800" y="382" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">حصيلة القتلى بحسب المصدر</text>
+
+<g font-family="'Libre Franklin',Arial,sans-serif">
+  <text x="800" y="438" font-size="21" fill="#f2eee8">Palestinian Journalists Syndicate</text>
+  <rect x="800" y="450" width="530" height="26" fill="#8a1f2d"/>
+  <text x="1346" y="471" font-size="24" font-weight="700" fill="#f2eee8">265</text>
+
+  <text x="800" y="528" font-size="21" fill="#f2eee8">Gaza government media office</text>
+  <rect x="800" y="540" width="524" height="26" fill="#8a1f2d"/>
+  <text x="1340" y="561" font-size="24" font-weight="700" fill="#f2eee8">262</text>
+
+  <text x="800" y="618" font-size="21" fill="#f2eee8">International Federation of Journalists</text>
+  <rect x="800" y="630" width="480" height="26" fill="#286344"/>
+  <text x="1296" y="651" font-size="24" font-weight="700" fill="#f2eee8">240</text>
+
+  <text x="800" y="708" font-size="21" fill="#f2eee8">Committee to Protect Journalists</text>
+  <rect x="800" y="720" width="418" height="26" fill="#c7a86b"/>
+  <text x="1234" y="741" font-size="24" font-weight="700" fill="#c7a86b">209</text>
+</g>
+
+<text x="800" y="790" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">RSF ties 29 killings conclusively to a journalist's work,</text>
+<text x="800" y="816" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">December 2024 to December 2025</text>
+
+<line x1="90" y1="842" x2="1510" y2="842" stroke="#3a3b3e" stroke-width="2"/>
+<text x="90" y="872" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Sources: CPJ, IFJ, RSF, Palestinian Journalists Syndicate, Gaza government media office</text>
+</svg>
