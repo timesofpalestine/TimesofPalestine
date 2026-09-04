@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli forces abducted 19 Palestinians across the occupied West Bank on Thursday, including several municipal employees, IMEMC News reported. The arrests occurred amid a broader sweep of military operations across the territory.\n\nSoldiers shot and injured two children in Bethlehem during the day's operations. In the northern West Bank, the military issued demolition notices in Jenin and conducted invasions of multiple communities throughout the region.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/thursday-invasions-violations-and-abductions-in-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-injures-two-palestinian-children-occupied-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-04T01:33:06+00:00",
+ "dek": "Israeli forces abducted 19 Palestinians across the occupied West Bank on Thursday, including municipal employees. Soldiers also shot and injured two children in Bethlehem, issued demolition notices in Jenin in the northern West Bank, and invaded communities…",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/invadee-e1788485424686.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/thursday-invasions-violations-and-abductions-in-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/thursday-invasions-violations-and-abductions-in-west-bank"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f595f71165",
+ "score": 63.96,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces abduct 19 Palestinians, wound children in West Bank"
+}
