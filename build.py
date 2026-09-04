@@ -70,11 +70,10 @@ GOATCOUNTER_CODE = os.environ.get("ANALYTICS_GOATCOUNTER", "").strip()
 NEWSLETTER_URL = os.environ.get("NEWSLETTER_URL", "").strip()
 SUPPORT_URL = os.environ.get("SUPPORT_URL", "").strip()
 BASE_URL = "https://www.timesofpalestine.com"
-# Public corrections-ledger page (owner decision 2026-08-06): the page goes
-# live only once a READER-REQUESTED correction is on the record — none has
-# been yet, so it stays down. Flip to True to publish /{lang}/corrections.html
-# and restore every link to it (footers, story stamps, sitemap, schema).
-CORRECTIONS_PAGE_LIVE = True  # public corrections log, both editions (owner order 2026-08-16)
+# No public corrections page and no publishing-status page (owner order
+# 2026-09-04: "it has no value, I want it gone"). Per-story revision notes
+# still print on a corrected article from editorial/corrections.json; the
+# policy itself lives on the About page, which the schema points to.
 
 TOP_SOURCE = {"en": "Times of Palestine", "ar": "تايمز أوف فلسطين"}
 ARABIC_CHARS_RX = re.compile(r"[؀-ۿ]")
@@ -4462,9 +4461,7 @@ def org_jsonld(lang):
         "logo": {"@type": "ImageObject", "url": f"{BASE_URL}/icon-512.png"},
         "sameAs": [f"{BASE_URL}/en/", f"{BASE_URL}/ar/", TELEGRAM_CHANNEL_URL],
         "publishingPrinciples": f"{BASE_URL}/{lang}/about.html",
-        "correctionsPolicy": (f"{BASE_URL}/{lang}/corrections.html"
-                              if CORRECTIONS_PAGE_LIVE else
-                              f"{BASE_URL}/{lang}/about.html"),
+        "correctionsPolicy": f"{BASE_URL}/{lang}/about.html",
         "ownershipFundingInfo": f"{BASE_URL}/{lang}/about.html",
         "actionableFeedbackPolicy": f"{BASE_URL}/{lang}/about.html",
     })
@@ -5613,7 +5610,7 @@ def render_page(lang, items, built_at):
   </div>
   {foot_sections_html(lang)}
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>{('<a href="corrections.html">' + ('التصويبات' if lang == 'ar' else 'Corrections') + '</a>') if CORRECTIONS_PAGE_LIVE else ''} <a href="status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a> <a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>{f'<a href="{NEWSLETTER_URL}" target="_blank" rel="noopener">' + ('النشرة البريدية' if lang == 'ar' else 'Email newsletter') + '</a>' if NEWSLETTER_URL else ''}{f'<a href="{SUPPORT_URL}" target="_blank" rel="noopener">' + ('ادعمنا' if lang == 'ar' else 'Support us') + '</a>' if SUPPORT_URL else ''}
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a><a href="{TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener">{t['follow_tg']}</a> <a href="rss.xml">RSS</a>{f'<a href="{NEWSLETTER_URL}" target="_blank" rel="noopener">' + ('النشرة البريدية' if lang == 'ar' else 'Email newsletter') + '</a>' if NEWSLETTER_URL else ''}{f'<a href="{SUPPORT_URL}" target="_blank" rel="noopener">' + ('ادعمنا' if lang == 'ar' else 'Support us') + '</a>' if SUPPORT_URL else ''}
     <span>{t['attribution']}</span>
     <a href="{t['switch_href']}">{t['footer_lang']}</a>
   </div>
@@ -5772,16 +5769,10 @@ def render_story(it, lang, related, rail, built_at):
             f'<li><time datetime="{esc(row["at"])}">{esc(row["at"][:10])}</time> '
             f'<strong>{"تصويب" if lang == "ar" and row["type"] == "correction" else "تحديث" if lang == "ar" else row["type"].title()}:</strong> '
             f'{esc(row["note"])}</li>' for row in it["corrections"])
-        ledger_link = ""
-        if CORRECTIONS_PAGE_LIVE:
-            ledger_label = ("سجل التصويبات الكامل ←" if lang == "ar"
-                            else "Full corrections ledger →")
-            ledger_link = (f'<p class="ledgerlink">'
-                           f'<a href="../corrections.html">{ledger_label}</a></p>')
         corrections = (
             f'<section class="revisions" aria-labelledby="revision-title">'
             f'<h2 id="revision-title">{esc(heading)}</h2><ol>{rows}</ol>'
-            f'{ledger_link}</section>')
+            f'</section>')
     related_primary = [r for r in related if r is not it and r["cat"] == it["cat"]]
     related_secondary = [r for r in related if r is not it and r["cat"] != it["cat"]]
     related_cards = "".join(card(r, lang, "") for r in (related_primary + related_secondary)[:8])
@@ -5977,7 +5968,7 @@ def render_story(it, lang, related, rail, built_at):
   <div class="flagline"></div>
   {foot_sections_html(lang, "../")}
   <div class="legal">
-    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>{('<a href="../corrections.html">' + ('التصويبات' if lang == 'ar' else 'Corrections') + '</a>') if CORRECTIONS_PAGE_LIVE else ''} <a href="../status.html">{'حالة النشر' if lang == 'ar' else 'Publishing status'}</a>
+    <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span> <a href="../about.html">{'من نحن — اتصل بنا' if lang == 'ar' else 'About & Contact'}</a>
     <a href="../">{t['back_home']}</a>
   </div>
 </div></footer>
@@ -6148,101 +6139,6 @@ def render_section_page(lang, cat, items, built_at, more_items=()):
 </div></footer>
 <script>{_CLOCK_JS}</script>
 {totop_html(lang)}
-</body></html>"""
-
-
-def render_corrections_page(lang, items, built_at, archived_pids=frozenset()):
-    """Public corrections & updates ledger — every dated revision note from
-    editorial/corrections.json on one page, newest first. The per-story
-    stamps already run on the articles themselves; this page is the standing
-    trust signal (NewsGuard/JTI checklist) that the practice is systematic.
-    Entries whose story has rotated off the live site keep their note and
-    reference id — the record does not expire with the page."""
-    t = STR[lang]
-    title = "التصويبات والتحديثات" if lang == "ar" else "Corrections & updates"
-    intro = (
-        "حين نخطئ نصحّح فوراً ونثبّت التعديل بتاريخه على المادة نفسها. "
-        "هذه الصفحة تجمع سجل التصويبات والتحديثات التحريرية كاملاً. "
-        "لطلب تصويب راسل غرفة الأخبار عبر صفحة «من نحن» مع رابط المادة وبيان الخطأ."
-        if lang == "ar" else
-        "When we get something wrong we correct it promptly and note the change, "
-        "dated, on the story itself. This page carries the full ledger of those "
-        "corrections and editorial updates. To request a correction, contact the "
-        "newsroom via the About page with the story link and the error.")
-    live = {it["pid"]: it for it in items}
-    # One editorial event, one entry: the ledger stores the same note under
-    # each edition's story id, so identical (date, note) pairs collapse —
-    # keeping the id that is live in THIS edition when there is one.
-    by_event = {}
-    for pid, raw in CORRECTIONS["stories"].items():
-        for note in validate_corrections(raw, pid, lang):
-            key = (note["at"], note["type"], note["note"])
-            if key not in by_event or (pid in live and by_event[key] not in live):
-                by_event[key] = pid
-    rows = sorted(((at, kind, note, pid) for (at, kind, note), pid
-                   in by_event.items()), reverse=True)
-    if rows:
-        entries = []
-        for at, kind, note, pid in rows:
-            kind_label = (("تصويب" if kind == "correction" else "تحديث")
-                          if lang == "ar" else kind.title())
-            it = live.get(pid)
-            if it:
-                story_ref = (f'<a href="story/{quote(story_file_name(it["title"], it["pid"]))}">'
-                             f'{esc(it["title"])}</a>')
-            else:
-                # Permalinks never die (owner order 2026-08-09): when this
-                # build re-renders the story from the archive, its bare-pid
-                # stub resolves — link the ref. Pre-archive-era pids (no
-                # stored record, no stub) keep the plain reference.
-                if pid in archived_pids:
-                    label = ("المادة في الأرشيف الدائم · مرجع "
-                             if lang == "ar" else "Story in the permanent archive · ref ")
-                    story_ref = (f'<span class="ref">{label}'
-                                 f'<a href="story/{esc(pid)}.html">{esc(pid)}</a></span>')
-                else:
-                    label = ("المادة خرجت من الموقع الحي · مرجع "
-                             if lang == "ar" else "Story rotated off the live site · ref ")
-                    story_ref = f'<span class="ref">{label}{esc(pid)}</span>'
-            entries.append(
-                f'<li><time datetime="{esc(at)}">{esc(at[:10])}</time> '
-                f'<strong>{kind_label}:</strong> {esc(note)}<br>{story_ref}</li>')
-        body = f'<ol class="corrections-log">{"".join(entries)}</ol>'
-    else:
-        body = ('<p class="summary">' + (
-            "لا توجد تصويبات مسجّلة حالياً." if lang == "ar"
-            else "No corrections are currently on the record.") + "</p>")
-    return f"""<!DOCTYPE html>
-<html lang="{t['lang']}" dir="{t['dir']}">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48">
-<title>{esc(title)} — {t['site_name']}</title>
-<meta name="description" content="{esc(meta_desc(intro))}">
-<link rel="canonical" href="{BASE_URL}/{lang}/corrections.html">
-<link rel="alternate" hreflang="en" href="{BASE_URL}/en/corrections.html">
-<link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/corrections.html">
-{'<link rel="preload" href="/fonts/NotoKufiArabic-var.woff2" as="font" type="font/woff2" crossorigin>' if lang == "ar" else ""}<link href="/assets/site.css" rel="stylesheet">
-{_THEME_JS}{analytics_tag()}
-</head>
-<body>
-<a class="skiplink" href="#top">{"تخطَّ إلى المحتوى" if lang == "ar" else "Skip to content"}</a><div class="backbar static"><a href="./">{t['back_home']}</a><span class="bb-tools">{theme_btn(lang)}{lite_btn(lang)}<a href="../{'en' if lang == 'ar' else 'ar'}/corrections.html">{t['switch_lang']}</a></span></div>
-<header class="masthead compact"><div class="wrap">
-  <a class="logotype" href="./"><p class="wordmark"><span class="l1">{t['masthead_top']}</span> <span class="l2">{t['masthead_bottom']}</span></p></a>
-</div></header>
-{interior_nav_html(lang)}
-<main id="top">
-  <article class="story">
-    <p class="kick">{t['site_name']}</p>
-    <h1>{esc(title)}</h1>
-    <p class="summary">{intro}</p>
-    <section class="revisions">{body}</section>
-  </article>
-</main>
-<footer><div class="wrap"><div class="flagline"></div>
-  <div class="legal"><span>© {built_at.year} {t['site_name']}</span> <a href="./">{t['back_home']}</a> <a href="about.html">{'من نحن' if lang == 'ar' else 'About'}</a></div>
-</div></footer>
-<script>{_CLOCK_JS}</script>
 </body></html>"""
 
 
@@ -6660,11 +6556,6 @@ def main():
         (dist / lang / "search.html").write_text(
             render_search_page(lang, built_at,
                                cats=sorted({it["cat"] for it in items})), encoding="utf-8")
-        if CORRECTIONS_PAGE_LIVE:
-            (dist / lang / "corrections.html").write_text(
-                render_corrections_page(
-                    lang, items, built_at,
-                    archived_pids={a["pid"] for a in archived}), encoding="utf-8")
         (dist / lang / "search-index.json").write_text(json.dumps(
             [{"t": it["title"], "u": story_url_path(it["title"], it["pid"], lang),
               "d": truncate(it.get("dek") or "", 160),

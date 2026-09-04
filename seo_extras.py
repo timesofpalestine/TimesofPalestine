@@ -307,7 +307,6 @@ def render_about(lang, built_at):
   <div class="flagline"></div>
   <div class="legal">
     <span>© {built_at.year} {t['site_name']} · timesofpalestine.com</span>
-    <a href="status.html">{"حالة النشر" if lang == "ar" else "Publishing status"}</a>
     <a href="./">{a['back']}</a>
   </div>
 </div></footer>
@@ -564,37 +563,6 @@ def post_webhook(dist, langs_items, base_url):
     return "ok"
 
 
-def render_status(lang):
-    b = __import__("build")
-    title = "حالة النشر" if lang == "ar" else "Publishing status"
-    desc = ("حالة النشر الآلي لغرفة أخبار «تايمز أوف فلسطين»: آخر بناء وعدد القصص المنشورة."
-            if lang == "ar" else
-            "Live publishing health for the Times of Palestine newsroom: last build time and story counts.")
-    loading = "جارٍ تحميل حالة آخر بناء…" if lang == "ar" else "Loading latest build health…"
-    return f"""<!DOCTYPE html><html lang="{lang}" dir="{'rtl' if lang == 'ar' else 'ltr'}">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0b0c"><link rel="icon" href="/favicon.ico" sizes="48x48">
-<title>{title} — {SITE_NAMES[lang]}</title>
-<meta name="description" content="{desc}">
-<link rel="canonical" href="{b.BASE_URL}/{lang}/status.html">
-<link rel="alternate" hreflang="en" href="{b.BASE_URL}/en/status.html">
-<link rel="alternate" hreflang="ar" href="{b.BASE_URL}/ar/status.html">
-<link rel="stylesheet" href="/assets/site.css">
-{b._THEME_JS}{b.analytics_tag()}
-</head>
-<body><div class="backbar"><a href="./">{"العودة إلى الأخبار" if lang == "ar" else "Back to the news"}</a><span class="bb-tools">{b.theme_btn(lang)}{b.lite_btn(lang)}</span></div>
-<header class="masthead compact"><div class="wrap">
-  <a class="logotype" href="./"><p class="wordmark"><span class="l1">{b.STR[lang]['masthead_top']}</span> <span class="l2">{b.STR[lang]['masthead_bottom']}</span></p></a>
-</div></header>
-<main><article class="story"><p class="kick">{SITE_NAMES[lang]}</p><h1>{title}</h1>
-<p id="health" class="summary">{loading}</p><p><a href="./">{"العودة إلى الأخبار" if lang == "ar" else "Back to the news"}</a></p>
-</article></main><script>
-fetch("/health.json",{{cache:"no-store"}}).then(r=>{{if(!r.ok)throw Error(r.status);return r.json()}})
-.then(h=>{{const L={{"operational":{'"النشر منتظم"' if lang == "ar" else '"PUBLISHING NORMALLY"'},"degraded":{'"تدفق آلي مخفّض"' if lang == "ar" else '"REDUCED AUTOMATED FLOW"'},"down":{'"متوقف مؤقتاً"' if lang == "ar" else '"PAUSED"'}}};document.getElementById("health").textContent=`${{L[h.status]||h.status.toUpperCase()}} · ${{h.builtAt}} · EN ${{h.stories.en}} · AR ${{h.stories.ar}} · held ${{h.reviewHeld}}`;}})
-.catch(()=>{{document.getElementById("health").textContent="Status unavailable";}});
-</script></body></html>"""
-
-
 def write_extras(dist, langs_items, built_at, base_url, health):
     """Hook called from build.py main() after the standard sitemap/robots write."""
     (dist / "news-sitemap.xml").write_text(
@@ -613,7 +581,6 @@ def write_extras(dist, langs_items, built_at, base_url, health):
     for lang, items in langs_items:
         (dist / lang / "about.html").write_text(
             render_about(lang, built_at), encoding="utf-8")
-        (dist / lang / "status.html").write_text(render_status(lang), encoding="utf-8")
         (dist / lang / "feed.json").write_text(
             json.dumps(render_json_feed(lang, items, base_url), ensure_ascii=False, indent=2),
             encoding="utf-8",
@@ -632,9 +599,7 @@ def write_extras(dist, langs_items, built_at, base_url, health):
     extra_urls = "".join(
         f"<url><loc>{base_url}/{lang}/{page}</loc></url>"
         for lang, _ in langs_items
-        for page in (("about.html", "corrections.html", "status.html")
-                     if __import__("build").CORRECTIONS_PAGE_LIVE
-                     else ("about.html", "status.html")))
+        for page in ("about.html",))
     sm.write_text(sm.read_text(encoding="utf-8")
                   .replace("</urlset>", extra_urls + "</urlset>"), encoding="utf-8")
     health.checks["discovery_files"] = "ok"

@@ -83,7 +83,7 @@ def validate(root):
         "en/feed.json", "ar/feed.json", "sitemap.xml", "news-sitemap.xml",
         "health.json", "review-queue.json", "distribution-outbox.json",
         "manifest.json", "sw.js",
-        "assets/site.css", "en/status.html", "ar/status.html",
+        "assets/site.css",
     ]
     for name in required:
         if not (root / name).is_file():
