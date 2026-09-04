@@ -6,19 +6,13 @@
    "article": "original:taybeh-us-lawsuit-diaspora-2026-09-04.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-says-israel-must-withdraw-occupied-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/army-abducts-palestinian-as-colonizers-assault-residents-near-hebron",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-04T01:09:00+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": true,
  "pid": "8c539b4c17",
- "score": 116.96,
+ "score": 116.9,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
