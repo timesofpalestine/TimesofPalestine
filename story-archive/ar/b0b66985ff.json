@@ -6,7 +6,25 @@
    "article": "https://www.pbc.ps/%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%8a%d8%b9%d8%aa%d9%82%d9%84-6-%d9%85%d9%88%d8%a7%d8%b7%d9%86%d9%8a%d9%86-%d9%85%d9%86-%d9%82%d8%a8%d8%a7%d8%b7%d9%8a%d8%a9-%d8%ac%d9%86%d9%88%d8%a8",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/319425",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/734220",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82629",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-09-04T15:23:41+00:00",
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "b0b66985ff",
- "score": 60.04,
+ "score": 59.81,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",

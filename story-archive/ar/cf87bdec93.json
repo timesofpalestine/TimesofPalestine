@@ -7,12 +7,24 @@
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
    "verified": false
+  },
+  {
+   "article": "https://t.me/Palinfo/319417",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82616",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-09-04T20:11:46+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
  "lang": "ar",
  "link": "https://t.me/QudsN/734209",
  "max_age_hours": 72,
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "cf87bdec93",
- "score": 63.37,
+ "score": 63.14,
  "source": "شبكة قدس · تيليغرام",
  "source_id": "tg-qudsn",
  "source_url": "https://t.me/QudsN",
