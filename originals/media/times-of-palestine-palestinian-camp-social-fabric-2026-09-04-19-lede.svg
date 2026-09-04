@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Popular committees carry Lebanon's camps as UNRWA cuts service hours</title>
+  <desc id="dsc">Chart comparing UNRWA's 2025 requirements of $3.3 billion with $829 million received (27 per cent) and roughly $500 million projected programme budget income for 2026, beside a panel on Lebanon's twelve camps and the local bodies absorbing the lost service hours.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="need" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a1f2d" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8a1f2d" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- masthead / kicker -->
+  <text x="90" y="70" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" letter-spacing="4" fill="#C8102E">LEBANON &#183; UNRWA &#183; FUNDING</text>
+
+  <!-- title -->
+  <text x="90" y="140" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#f2eee8">Popular committees carry Lebanon&#8217;s camps</text>
+  <text x="90" y="198" font-family="'Source Serif 4',Georgia,serif" font-size="52" font-weight="700" fill="#c7a86b">as UNRWA cuts hours by 20 per cent</text>
+  <text x="90" y="246" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#aaa9a5" text-anchor="start">&#1575;&#1604;&#1604;&#1580;&#1575;&#1606; &#1575;&#1604;&#1588;&#1593;&#1576;&#1610;&#1577; &#1578;&#1587;&#1583;&#1617; &#1601;&#1585;&#1575;&#1594; &#1575;&#1604;&#1571;&#1608;&#1606;&#1585;&#1608;&#1575; &#1601;&#1610; &#1605;&#1582;&#1610;&#1605;&#1575;&#1578; &#1604;&#1576;&#1606;&#1575;&#1606;</text>
+
+  <line x1="90" y1="282" x2="1510" y2="282" stroke="#ffffff" stroke-opacity="0.14"/>
+
+  <!-- LEFT: funding chart -->
+  <text x="90" y="330" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#c7a86b">UNRWA funding, agency-wide</text>
+  <text x="90" y="358" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" text-anchor="start">&#1578;&#1605;&#1608;&#1610;&#1604; &#1575;&#1604;&#1571;&#1608;&#1606;&#1585;&#1608;&#1575;</text>
+
+  <text x="110" y="402" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Requirements, 2025</text>
+  <rect x="110" y="414" width="560" height="40" fill="url(#need)" stroke="#8a1f2d" stroke-width="1.5"/>
+  <text x="682" y="441" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#f2eee8">$3.3bn</text>
+
+  <text x="110" y="492" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Contributions received, 2025</text>
+  <rect x="110" y="504" width="141" height="40" fill="#59a97d"/>
+  <text x="263" y="531" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#59a97d">$829m &#8212; 27%</text>
+
+  <text x="110" y="582" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Projected programme budget income, 2026</text>
+  <rect x="110" y="594" width="85" height="40" fill="#c7a86b"/>
+  <text x="207" y="621" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="700" fill="#c7a86b">about $500m</text>
+
+  <line x1="110" y1="660" x2="670" y2="660" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="110" y="690" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Includes $76m from the UN regular budget. Recent budgets: $700m&#8211;$800m.</text>
+  <text x="110" y="716" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Q4 2025&#8211;Q1 2026 gap put at about $200m by Philippe Lazzarini.</text>
+
+  <!-- RIGHT: camps panel -->
+  <rect x="880" y="300" width="630" height="420" rx="10" fill="#ffffff" fill-opacity="0.04" stroke="#c7a86b" stroke-opacity="0.30"/>
+  <text x="910" y="344" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" font-weight="700" fill="#f2eee8">Who fills the hours in the camps</text>
+  <text x="910" y="374" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5" text-anchor="start">&#1605;&#1606; &#1610;&#1605;&#1604;&#1571; &#1575;&#1604;&#1601;&#1585;&#1575;&#1594; &#1601;&#1610; &#1575;&#1604;&#1605;&#1582;&#1610;&#1605;&#1575;&#1578;</text>
+
+  <g stroke="#c7a86b" stroke-opacity="0.45" stroke-width="1.2">
+    <g transform="translate(910,400)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(962,400)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(1014,400)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(1066,400)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(1118,400)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(1170,400)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(910,452)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(962,452)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(1014,452)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(1066,452)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(1118,452)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+    <g transform="translate(1170,452)">
+      <polygon points="-3,12 18,-2 39,12" fill="#8a1f2d" stroke="none"/><rect x="0" y="12" width="36" height="26" fill="#ffffff" fill-opacity="0.06"/>
+    </g>
+  </g>
+  <text x="1240" y="437" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#c7a86b">Twelve camps</text>
+  <text x="1240" y="462" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">about 230,000</text>
+  <text x="1240" y="484" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">residents</text>
+
+  <text x="910" y="524" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">UNRWA says it &#8220;does not administer or police the camps&#8221;.</text>
+
+  <g font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">
+    <circle cx="918" cy="556" r="5" fill="#59a97d"/>
+    <text x="936" y="562">Popular committees and faction maintenance crews</text>
+    <circle cx="918" cy="588" r="5" fill="#59a97d"/>
+    <text x="936" y="594">SHEILD &#8212; hot meals, Siblin shelter</text>
+    <circle cx="918" cy="620" r="5" fill="#59a97d"/>
+    <text x="936" y="626">Women&#8217;s Programme Association &#8212; Battir shelter</text>
+    <circle cx="918" cy="652" r="5" fill="#59a97d"/>
+    <text x="936" y="658">INITIATE &#8212; on-site kitchens, with UN Women</text>
+    <circle cx="918" cy="684" r="5" fill="#59a97d"/>
+    <text x="936" y="690">Palestine Red Crescent Society &#8212; medical transport</text>
+  </g>
+
+  <!-- bottom stat chips -->
+  <g>
+    <rect x="90" y="762" width="460" height="82" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#8a1f2d" stroke-opacity="0.6"/>
+    <text x="112" y="800" font-family="'Source Serif 4',Georgia,serif" font-size="32" font-weight="700" fill="#C8102E">20%</text>
+    <text x="112" y="826" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">cut to service delivery hours, January 2026</text>
+
+    <rect x="575" y="762" width="460" height="82" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#c7a86b" stroke-opacity="0.5"/>
+    <text x="597" y="800" font-family="'Source Serif 4',Georgia,serif" font-size="32" font-weight="700" fill="#c7a86b">$100m</text>
+    <text x="597" y="826" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">cashflow deficit still open for the year</text>
+
+    <rect x="1060" y="762" width="460" height="82" rx="8" fill="#ffffff" fill-opacity="0.04" stroke="#286344" stroke-opacity="0.8"/>
+    <text x="1082" y="800" font-family="'Source Serif 4',Georgia,serif" font-size="32" font-weight="700" fill="#59a97d">201,049</text>
+    <text x="1082" y="826" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">consultations at clinics still operating in Lebanon</text>
+  </g>
+
+  <text x="90" y="874" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#aaa9a5">Sources: UNRWA; UN pledging conference, 30 June &#38; 1 July; ACABQ, November 2025; Peoples Dispatch. Graphic: Times of Palestine</text>
+</svg>
