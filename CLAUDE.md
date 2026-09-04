@@ -561,8 +561,11 @@ Palestine reads the American papers (NYT, Washington Post, WSJ, Politico,
 The Hill, Axios, Foreign Policy, The Atlantic, Foreign Affairs) and
 Washington's think tanks (Brookings, Carnegie, CSIS, WINEP, Quincy, CFR,
 FDD, MEI, the Arab Center DC) and publishes what matters to Palestinian
-readers — each source piece as its own bilingual original, plus a
-"what Washington is reading" roundup, all in the dedicated section
+readers — each source piece as its own bilingual original, plus the
+daily roundup headlined "Washington wakes up to …" / «واشنطن تصحو على …»
+under the franchise line "The American front pages, read from Palestine"
+(owner order 2026-09-04: the earlier "Washington reads …" was too plain),
+all in the dedicated section
 `uspress` ("US Press" / «الصحافة الأميركية»). The workflow, source list
 (`editorial/us-press-feeds.json`), selection test and binding rules live
 in `.claude/skills/us-press-review/SKILL.md`; the daily editor cycle runs
