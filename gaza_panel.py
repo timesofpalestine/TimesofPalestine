@@ -37,8 +37,8 @@ GAZA_INDEX_URL = "https://www.gazaindex.org/api/v1/public/indicators"
 # English and Arabic labels.
 MOH_KEYS = [
     ("killed", ("gaza.killed.total",), "Killed", "شهداء"),
-    ("children", ("gaza.killed.children",), "Children killed", "شهداء أطفال"),
-    ("women", ("gaza.killed.women",), "Women killed", "شهيدة"),
+    ("children", ("gaza.killed.children",), "Children killed", "أطفال شهداء"),
+    ("women", ("gaza.killed.women",), "Women killed", "نساء شهيدات"),
     ("injured", ("gaza.injured.total",), "Wounded", "جرحى"),
     ("press", ("gaza.killed.press", "known_press_killed_in_gaza.records"),
      "Journalists killed", "صحفيون شهداء"),
@@ -52,7 +52,7 @@ MOH_KEYS = [
 # attack record alongside the Gaza MoH reports.
 WB_KEYS = [
     ("wb_killed", ("west_bank.killed.total",), "Killed", "شهداء"),
-    ("wb_children", ("west_bank.killed.children",), "Children killed", "شهداء أطفال"),
+    ("wb_children", ("west_bank.killed.children",), "Children killed", "أطفال شهداء"),
     ("wb_injured", ("west_bank.injured.total",), "Wounded", "جرحى"),
     ("wb_attacks", ("west_bank.settler_attacks", "west_bank.settler_attacks.total"),
      "Settler attacks", "اعتداءات المستوطنين"),
@@ -64,11 +64,11 @@ WB_KEYS = [
 # periodic updates and refreshed by the daily editor cycle. The pr_total cell
 # renders with a trailing "+" — Addameer reports "more than".
 PR_KEYS = [
-    ("pr_total", "Total held", "الإجمالي"),
-    ("pr_admin", "Administrative detention", "اعتقال إداري"),
-    ("pr_gaza", "From Gaza, uncharged", "من غزة دون تهمة"),
+    ("pr_total", "Total held", "إجمالي الأسرى"),
+    ("pr_admin", "Administrative detention", "معتقلون إداريون"),
+    ("pr_gaza", "From Gaza, uncharged", "معتقلون من غزة بلا تهمة"),
     ("pr_women", "Women", "أسيرات"),
-    ("pr_children", "Children under 18", "أطفال دون ١٨"),
+    ("pr_children", "Children under 18", "أطفال أسرى دون ١٨ عاماً"),
 ]
 PR_PLUS = {"pr_total"}
 PRISONERS_PATH = None  # resolved lazily so tests can inject via _pr_cache
@@ -93,7 +93,7 @@ TERM_NOTES = {
         "Deaths from malnutrition and dehydration recorded by Gaza's "
         "Ministry of Health since October 2023.",
         "وفيات سوء التغذية والجفاف التي سجّلتها وزارة الصحة في غزة "
-        "منذ أكتوبر/تشرين الأول 2023."),
+        "منذ تشرين الأول/أكتوبر 2023."),
     "wb_attacks": (
         "Settler incidents recorded by UN OCHA that caused Palestinian "
         "casualties or property damage.",
@@ -106,10 +106,10 @@ TERM_NOTES = {
 GAZA_INDEX_KEYS = [
     ("children.orphaned_cumulative", "Children orphaned", "أطفال فقدوا ذويهم"),
     ("children.injured_cumulative", "Children injured", "أطفال جرحى"),
-    ("referral.awaiting_total", "Awaiting medical referral abroad", "بانتظار تحويل طبي للخارج"),
+    ("referral.awaiting_total", "Awaiting medical referral abroad", "مرضى بانتظار تحويل طبي إلى الخارج"),
     ("education.students_out_of_school", "Children out of school", "أطفال خارج المدارس"),
     ("health.hospitals_damaged_pct", "Hospitals damaged or out of service", "مستشفيات متضررة أو خارج الخدمة"),
-    ("maternal.unassisted_births_per_day", "Daily births without skilled care", "ولادات يومياً دون رعاية مؤهلة"),
+    ("maternal.unassisted_births_per_day", "Daily births without skilled care", "ولادات يومية دون رعاية طبية مؤهلة"),
 ]
 
 # Styles travel with the panel. The figures declare no colour of their own so
@@ -388,6 +388,21 @@ def _live_row(lang, cells_def, figs, region, src, asof, asof_key,
             f'<div class="gi-cells">{"".join(cells)}{extra_cell}</div>{comp}</div>')
 
 
+_MONTHS_AR = ["كانون الثاني/يناير", "شباط/فبراير", "آذار/مارس", "نيسان/أبريل", "أيار/مايو",
+              "حزيران/يونيو", "تموز/يوليو", "آب/أغسطس", "أيلول/سبتمبر", "تشرين الأول/أكتوبر",
+              "تشرين الثاني/نوفمبر", "كانون الأول/ديسمبر"]
+
+
+def _ar_long_date(iso_day):
+    """«٧ تشرين الأول/أكتوبر ٢٠٢٣» — the house month pair, Arabic digits;
+    falls back to the ISO stamp if the day does not parse."""
+    try:
+        y, m, d = (int(x) for x in str(iso_day)[:10].split("-"))
+        return _num(d, "ar") + " " + _MONTHS_AR[m - 1] + " " + _num(y, "ar").replace("،", "")
+    except Exception:
+        return _fmt_date(iso_day, "ar")
+
+
 def _fmt_date(iso_day, lang):
     return iso_day.translate(str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")) if lang == "ar" else iso_day
 
@@ -458,7 +473,7 @@ def _toll_chart(lang):
     first_day, last_day = pts[0][0], pts[-1][0]
     last_val = pts[-1][1]
     head = "الشهداء في غزة تراكمياً" if ar else "Gaza deaths, cumulative"
-    label = (f"تراكمياً منذ {_fmt_date(first_day, lang)}" if ar
+    label = (f"الحصيلة التراكمية منذ {_ar_long_date(first_day)}" if ar
              else f"Cumulative since {first_day}")
     note = (f"من {_fmt_date(first_day, lang)} إلى {_fmt_date(last_day, lang)}" if ar
             else f"{first_day} to {last_day}")
@@ -504,8 +519,18 @@ def _gazaindex_rows(lang):
     for pr in providers:
         if pr not in seen:
             seen.add(pr)
-            srcs.append(pr)
+            srcs.append(_AGENCY_AR.get(pr.strip().upper(), pr) if lang == "ar" else pr)
     return cells, srcs, latest
+
+
+# Arabic names of the agencies GazaIndex relays (the Arabic edition names its
+# sources in Arabic; unknown providers pass through unchanged).
+_AGENCY_AR = {
+    "UNICEF": "يونيسف", "WHO": "منظمة الصحة العالمية", "UNESCO": "يونسكو",
+    "UNFPA": "صندوق الأمم المتحدة للسكان", "OCHA": "أوتشا", "UN OCHA": "أوتشا",
+    "UNRWA": "الأونروا", "WFP": "برنامج الأغذية العالمي", "UNDP": "برنامج الأمم المتحدة الإنمائي",
+    "IPC": "التصنيف المرحلي المتكامل للأمن الغذائي", "MOH": "وزارة الصحة في غزة",
+}
 
 
 def panel(lang):
@@ -538,8 +563,8 @@ def panel(lang):
                + ("مؤسسة الضمير" if ar else "Addameer Prisoner Support") + "</a>")
     pr_comp = _comp_strip(
         lang, pr_figs.get("pr_total"),
-        [("Administrative detention", "اعتقال إداري", pr_figs.get("pr_admin"), _COMP_SLATE),
-         ("From Gaza, uncharged", "من غزة دون تهمة", pr_figs.get("pr_gaza"), _COMP_GOLD)],
+        [("Administrative detention", "معتقلون إداريون", pr_figs.get("pr_admin"), _COMP_SLATE),
+         ("From Gaza, uncharged", "من غزة بلا تهمة", pr_figs.get("pr_gaza"), _COMP_GOLD)],
         "Held without charge or trial", "محتجزون دون تهمة أو محاكمة")
     pr_html = _live_row(
         lang, PR_KEYS, pr_figs,
@@ -552,7 +577,7 @@ def panel(lang):
         return ""
     gi_html = ""
     if gi_cells:
-        head = "مؤشرات إنسانية" if ar else "Humanitarian indicators"
+        head = "المؤشرات الإنسانية" if ar else "Humanitarian indicators"
         note = ("المصادر: " if ar else "Sources: ") + " · ".join(gi_srcs[:5])
         via = ("عبر " if ar else "via ")
         asof = f' — {_fmt_date(gi_latest, lang)}' if gi_latest else ""
