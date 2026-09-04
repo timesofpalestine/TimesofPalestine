@@ -294,6 +294,27 @@ load-bearing statistic — one or two per story, never as decoration.
   Telegram is a single quiet inline line (`.alt`) under the sub text, the
   QR sits small (84px) beside the button, and the safety note keeps its
   full-width hairline row (condensed 2026-08-06 — no competing buttons).
+- **Lead-and-list section** (`.grid.lead`, design pass 2026-09-04): a
+  front-page section with four stories renders its newest as a LEAD card
+  (art, 1.45rem serif headline, its dek) spanning three rows on the
+  inline-start, and the next three as compact rows on the inline-end —
+  118px 4:3 thumb, headline, time, hairline-separated, no box. The four
+  flagships (gaza, westbank, pal48, prisoners) always lead; the press desks
+  and research keep grids; every other section alternates by position
+  (`lead_list_section` in `build.py`) so the page has a newspaper's rhythm
+  instead of seventeen identical card walls.
+- **Phone front and section pages** (≤560px, same pass): the first card of
+  every grid stays a full card, the rest collapse to 104px-thumb rows with a
+  hairline between — the stacked-card front (44,000px) roughly halves and
+  becomes a list a thumb can scan. CSS-only; the markup is one `.card`.
+- **Running-file chip** (`.file-chip`, story pages, same pass): a story that
+  belongs to a running file carries a gold-hairline chip under its stamp —
+  "RUNNING FILE · The Qusra File · DAY 24 →" — linking to the file's hub;
+  gold text lifts to `#c7a86b` on dark. Rendered only for hubs that shipped
+  this build.
+- **Print** (`@media print`, same pass): chrome, sharing, rails and bands
+  hide; the article prints as plain black-on-white with its lede image
+  capped at 60vh.
 - **Palestine by the Numbers cells** (`.gi-cell`, redrawn 2026-09-03 on
   the owner's order to make the ledger easier to read and shorter): no
   boxes. A cell is a numeral over its label, cells separated by 1px

@@ -3697,6 +3697,11 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .browse a{border:1px solid var(--line-dark);border-radius:2rem;padding:.35rem .85rem;font-size:.82rem;font-weight:700;color:var(--ink);transition:color var(--tr),border-color var(--tr)}
 .browse a:hover{border-color:var(--red);color:var(--red)}
 .sectionpage .morehead{margin-top:2.4rem}
+.file-chip{display:inline-flex;align-items:center;gap:.45rem;margin-block:.65rem .1rem;margin-inline-end:.6rem;padding:.4rem .75rem;border:1px solid rgba(199,168,107,.55);border-radius:var(--r);background:var(--card);font-size:.78rem;font-weight:700;color:var(--ink);transition:border-color var(--tr)}
+.file-chip:hover{border-color:#c7a86b}
+.file-chip .fc-k{font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#8a6d2f}
+[lang=ar] .file-chip .fc-k{letter-spacing:0;font-size:.74rem}
+.file-chip .d{font-family:ui-monospace,Menlo,monospace;font-size:.68rem;font-weight:700;color:#8a6d2f}
 .listenbtn{display:inline-flex;align-items:center;gap:.4rem;margin-block:.5rem .2rem;border:1px solid var(--line-dark);border-radius:2rem;background:transparent;color:var(--ink);font:700 .82rem/1 var(--sans);padding:.45rem 1rem;cursor:pointer;transition:color var(--tr),border-color var(--tr)}
 .listenbtn:hover{border-color:var(--red);color:var(--red)}
 [lang=ar] .listenbtn{font-size:.9rem}
@@ -3752,6 +3757,24 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.65rem}
 .grid.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+/* Lead-and-list section (design pass 2026-09-04): the newest story leads
+   with art and dek, the next three stack beside it as headline rows with a
+   small thumb — a newspaper page's rhythm instead of a wall of card grids. */
+.grid.lead{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);grid-template-rows:min-content min-content min-content 1fr;gap:0 1.8rem}
+.grid.lead .card:first-child{grid-row:1/5}
+.grid.lead .card:first-child h3{font-size:1.45rem;line-height:1.24}
+[lang=ar] .grid.lead .card:first-child h3{line-height:1.55}
+.grid.lead .card:first-child .dek{margin-top:.55rem;font-family:var(--serif);font-size:.95rem;line-height:1.55;color:var(--muted);max-width:60ch}
+[lang=ar] .grid.lead .card:first-child .dek{line-height:1.8;font-size:1rem}
+.grid.lead .card:first-child .card-body{padding:.9rem 1rem 1.05rem}
+.grid.lead .card:not(:first-child){display:grid;grid-template-columns:118px minmax(0,1fr);gap:.8rem;align-items:start;background:transparent;border:0;border-radius:0;box-shadow:none;padding:.85rem 0;border-bottom:1px solid var(--line)}
+.grid.lead .card:nth-child(2){padding-top:.15rem}
+.grid.lead .card:last-child{border-bottom:0;padding-bottom:0}
+.grid.lead .card:not(:first-child):hover{box-shadow:none;transform:none}
+.grid.lead .card:not(:first-child)>a:first-child{border-radius:2px;overflow:hidden}
+.grid.lead .card:not(:first-child) img,.grid.lead .card:not(:first-child) .ph{aspect-ratio:4/3}
+.grid.lead .card:not(:first-child) .card-body{padding:0}
+.grid.lead .card:not(:first-child) h3{font-size:1rem;line-height:1.32;margin-top:.15rem}
 .card{background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);border:1px solid var(--line);transition:box-shadow var(--tr),transform var(--tr)}
 .card:hover{box-shadow:var(--sh-h);transform:translateY(-2px)}
 .card>a:first-child{display:block;overflow:hidden}
@@ -3959,6 +3982,14 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 [dir=rtl] footer .flagline{background:linear-gradient(-90deg,var(--black) 0 33%,#fff 33% 66%,var(--green) 66% 100%)}
 /* ── dark mode ── */
 %%DARK%%
+/* ── print (design pass 2026-09-04): a story prints as a clean article ── */
+@media print{
+  .topbar,.ticker,nav.sections,.backbar,.share,.share-rail,.listenbtn,.keep,.newsband,.tipband,.totop,.livewrap,.readbar,footer .foot-sections,.story-toc,.desk-note,.file-chip{display:none!important}
+  body{background:#fff;color:#000}
+  .story{max-width:none;padding:0}
+  .story img.lede{max-height:60vh;object-fit:contain}
+  a{color:inherit;text-decoration:none}
+}
 /* ── reduced motion ── */
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker .rail{overflow-x:auto}.ticker .track{animation:none;white-space:normal;flex-wrap:wrap}.topbar .dot,.latest h2::before{animation:none}.latest li,.latest li.fresh::before{animation:none}.hero-imgwrap>a>img,.card img{transition:none}}
 .skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}
@@ -4022,7 +4053,10 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 .fr-card .ttl{display:block;font-family:var(--serif);font-weight:800;font-size:1rem;line-height:1.3;margin-top:.3rem}
 [lang=ar] .fr-card .ttl{line-height:1.55;font-weight:700}
 .fr-card .go{display:block;color:#c7a86b;font-size:.78rem;font-weight:700;margin-top:.5rem}
-@media(max-width:960px){.fr-grid{grid-template-columns:1fr}.fr-card img{aspect-ratio:16/5}}
+/* Phones and tablets (design pass 2026-09-04): the specials row becomes a
+   swipeable snap strip like the running-files band — five stacked dark
+   cards were a screen and a half of the phone front. */
+@media(max-width:960px){.fr-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:.8rem;padding-bottom:.35rem;scrollbar-width:none}.fr-grid::-webkit-scrollbar{display:none}.fr-card{flex:0 0 min(78%,320px);scroll-snap-align:start}.fr-card img{aspect-ratio:16/7}}
 .fr-card.vote{position:relative;isolation:isolate;background:linear-gradient(145deg,#0d121a,#141c28);border-color:rgba(101,130,175,.7)}
 .fr-card.vote::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 110% at 90% 0%,rgba(143,168,207,.24),transparent 48%);pointer-events:none;z-index:0}
 .fr-card.vote:hover{border-color:rgba(143,168,207,.95);box-shadow:0 10px 30px rgba(20,35,60,.55)}
@@ -4066,7 +4100,20 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   .hero-overlay .meta .t{color:var(--muted)}
   .hero-overlay .meta .src{color:var(--green)}
   .hero-sub{grid-template-columns:1fr}
-  .grid,.grid.g2,.grid.g3{grid-template-columns:1fr}
+  .grid,.grid.g2,.grid.g3,.grid.lead{grid-template-columns:1fr;gap:0}
+  /* Phones (design pass 2026-09-04): one full card leads each block, the
+     rest are compact thumb-and-headline rows — the 44,000px stacked-card
+     front becomes a front a thumb can scan. Section pages the same. */
+  .grid.lead .card:first-child{grid-row:auto}
+  .grid .card:first-child{margin-bottom:.9rem}
+  .grid .card:not(:first-child){display:grid;grid-template-columns:104px minmax(0,1fr);gap:.7rem;align-items:start;background:transparent;border:0;border-radius:0;box-shadow:none;padding:.7rem 0;border-bottom:1px solid var(--line)}
+  .grid .card:not(:first-child):hover{box-shadow:none;transform:none}
+  .grid .card:not(:first-child)>a:first-child{border-radius:2px;overflow:hidden}
+  .grid .card:not(:first-child) img,.grid .card:not(:first-child) .ph{aspect-ratio:4/3}
+  .grid .card:not(:first-child) .card-body{padding:0}
+  .grid .card:not(:first-child) h3{font-size:.98rem;line-height:1.32;margin-top:.1rem}
+  .grid .card:last-child{border-bottom:0}
+  .grid.lead .card:first-child h3{font-size:1.25rem}
   .latest{padding:.9rem .8rem}
   .sub-thumb img{width:72px}
   .rowcard img,.rowcard .ph{width:110px}
@@ -4143,6 +4190,7 @@ section.opinion{background:#17171c;border-top-color:var(--red)}
 .story code{background:rgba(255,255,255,.12)}
 .story table.lf th{background:rgba(255,255,255,.06)}
 .tc-area{fill:rgba(249,53,73,.16)}
+.file-chip .fc-k,.file-chip .d{color:#c7a86b}
 """
 
 
@@ -4563,13 +4611,17 @@ def card_media(it, pfx):
     return (f'<a href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
             f'<div class="ph">{FLAG_SVG}</div></a>')
 
-def card(it, lang, pfx):
+def card(it, lang, pfx, dek=False):
     # Uniform card: headline, source, time. Summaries belong to the hero, the
-    # featured report, and the story pages — mixed previews in a grid look broken.
+    # featured report, and the story pages — mixed previews in a grid look
+    # broken. The one exception is the LEAD card of a lead-and-list section
+    # (design pass 2026-09-04), which carries its dek like a front-page lead.
+    dek_html = (f'<p class="dek">{summary_html(truncate(it["dek"], 200))}</p>'
+                if dek and it.get("dek") else "")
     return (f'<article class="card">{card_media(it, pfx)}'
             f'<div class="card-body">'
             f'<span class="chip{accent_class(it["cat"])}">{esc(card_kicker(it, lang))}</span>'
-            f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
+            f'<h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>{dek_html}'
             f'{time_tag(it["date"], lang, "t", fresh=True)}'
             f'</div></article>')
 
@@ -5065,6 +5117,22 @@ def totop_html(lang):
             f'<script>{_TOTOP_JS}{_DETWIN_JS}</script>')
 
 
+# Sections whose front-page block is a lead-and-list (design pass 2026-09-04):
+# the four flagships always lead; the press desks and research keep their
+# grids (the press review is a batch, the research block has its own
+# featured treatment); every other section alternates so the page breathes.
+LEAD_LIST_ALWAYS = ("gaza", "westbank", "pal48", "prisoners")
+LEAD_LIST_NEVER = ("israelipress", "uspress", "research")
+
+
+def lead_list_section(cat, position, n):
+    if n < 4 or cat in LEAD_LIST_NEVER:
+        return False
+    if cat in LEAD_LIST_ALWAYS:
+        return True
+    return position % 2 == 0
+
+
 def render_page(lang, items, built_at):
     t = STR[lang]
     order = SECTION_ORDER[lang]
@@ -5321,6 +5389,7 @@ def render_page(lang, items, built_at):
 
     section_blocks = ""
     cats_present = {it["cat"] for it in items}  # archive pages exist only for real cats
+    _shown = 0
     for k in order:
         if k == "opinion" or not visible(k):
             continue
@@ -5332,8 +5401,16 @@ def render_page(lang, items, built_at):
             grid = ""
         elif len(pool) == 1:  # a lone story reads better full width than as an orphan card
             grid = f'<div class="rowlist">{rowcard(pool[0], lang, P, solo=True)}</div>'
+        elif lead_list_section(k, _shown, len(pool)):
+            # LEAD AND LIST (design pass 2026-09-04): the newest story leads
+            # with its art and dek, the next three stack as headline rows —
+            # the rhythm of a newspaper page instead of a wall of identical
+            # card grids. Flagship sections always; the rest alternate.
+            grid = (f'<div class="grid lead">{card(pool[0], lang, P, dek=True)}'
+                    + "".join(card(it, lang, P) for it in pool[1:]) + '</div>')
         else:
             cols = f" g{min(len(pool), 4)}"; grid = f'<div class="grid{cols}">{"".join(card(it, lang, P) for it in pool)}</div>'
+        _shown += 1
         focus_cls = " focus" if k in FOCUS_SECTIONS else ""
         viewall = (f'<a class="viewall" href="section-{k}.html">{t["view_all"]}</a>'
                    if k in cats_present else "")
@@ -5713,6 +5790,21 @@ def render_story(it, lang, related, rail, built_at):
         + "</p>"
     )
     section_name = t["sections"].get(it["cat"], t["sections"]["news"])
+    # Running-file chip (design pass 2026-09-04): a story that belongs to one
+    # of the paper's standing files says so under its stamp and links to the
+    # file's living page with its day counter — the files are the paper's
+    # spine, and every story in one should lead the reader along it.
+    file_chip = ""
+    for _tf, _hits in TOPIC_HUBS_LIVE.get(lang) or []:
+        if any(h.get("pid") == it.get("pid") for h in _hits):
+            _day = file_day_label(_tf, lang, built_at.date())
+            _daytag = f' <span class="d">{esc(_day)}</span>' if _day else ""
+            _k = "ملف متابعة" if lang == "ar" else "Running file"
+            _arrow = "←" if lang == "ar" else "→"
+            file_chip = (f'<a class="file-chip" href="../topic-{esc(_tf["slug"])}.html">'
+                         f'<span class="fc-k">{_k}</span> {esc(_tf[lang]["name"])}'
+                         f'{_daytag} {_arrow}</a>')
+            break
     # Breadcrumbs land on the real section archive, not a homepage anchor —
     # the archive is the crawlable, linkable landing page for the section.
     section_href = f"section-{it['cat']}.html"
@@ -5831,7 +5923,7 @@ def render_story(it, lang, related, rail, built_at):
     <h1>{esc(it['title'])}</h1>
     {meta_line(it, lang)}
     {story_stamp}
-    {listen_btn}
+    {file_chip}{listen_btn}
     {review_note}
     {lede}
     {summary}
