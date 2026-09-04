@@ -3989,6 +3989,58 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
 .story .cta a:hover{background:#a50d1e}
 .story .note{margin-top:.8rem;font-size:.72rem;color:var(--muted)}
 .keep{padding-block:1.8rem}
+/* The living story page (owner order 2026-09-04) */
+.story .kick::before{content:"";display:block;inline-size:3.2rem;block-size:4px;background:var(--sa,var(--red));margin-bottom:.8rem}
+.story .kick{color:var(--sa,var(--red))}
+.story .opener::first-letter{color:var(--sa,var(--red))}
+.story .closer::after{color:var(--sa,var(--red))}
+.story blockquote.pull{border-inline-start-color:var(--sa,#c7a86b)}
+.story blockquote.pull.lifted{margin:1.9rem 0;padding-block:.2rem;font-size:1.42rem;line-height:1.42}
+.story blockquote.pull.lifted p::before{content:"";display:block;inline-size:2.4rem;block-size:3px;background:var(--sa,var(--red));margin-bottom:.7rem}
+[lang=ar] .story blockquote.pull.lifted{line-height:1.7}
+.lede-plate{position:relative;margin-top:1.5rem;border-radius:var(--r);overflow:hidden}
+.story img.lede.plate{aspect-ratio:21/9;height:auto;object-position:50% 50%;margin-top:0;border-radius:0}
+.lede-plate .plate-label{position:absolute;inset-block-end:.8rem;inset-inline-start:1rem;font-size:.66rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#f2eee8;background:rgba(11,11,12,.55);padding:.3rem .6rem;border-radius:2px;border-inline-start:3px solid var(--sa,var(--red))}
+[lang=ar] .lede-plate .plate-label{letter-spacing:0;font-size:.78rem}
+.story-figs{margin:1.7rem 0;padding:1.1rem 0 1rem;border-block:1px solid var(--line)}
+.story-figs .figs-kick{font-size:.66rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--sa,var(--red));margin-bottom:.8rem}
+[lang=ar] .story-figs .figs-kick{letter-spacing:0;font-size:.78rem}
+.story-figs .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem 1.4rem}
+.story-figs .fig b{display:block;font-family:var(--serif);font-weight:900;font-size:2.2rem;line-height:1;color:var(--sa,var(--red));font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.story-figs .fig span{display:block;margin-top:.45rem;font-size:.8rem;line-height:1.5;color:var(--muted)}
+[lang=ar] .story-figs .fig span{font-size:.88rem;line-height:1.7}
+.story-layout{max-width:820px;margin-inline:auto}
+.story-rail{padding:0 20px 1rem}
+.story-rail .rail-kick{display:flex;align-items:center;gap:.45rem;font-size:.68rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--sa,var(--red));padding-bottom:.5rem;border-bottom:2px solid var(--ink);margin-bottom:.2rem}
+[lang=ar] .story-rail .rail-kick{letter-spacing:0;font-size:.8rem}
+.story-rail .rail-kick .dot{width:8px;height:8px;border-radius:50%;background:var(--red);animation:pulse 2s infinite}
+.story-rail .rail-sec,.story-rail .rail-live,.story-rail .rail-latest{margin-bottom:1.6rem}
+.rail-list{list-style:none;margin:0;padding:0}
+.rail-list li{display:flex;gap:.7rem;align-items:flex-start;padding-block:.7rem;border-bottom:1px solid var(--line)}
+.rail-list li:last-child{border-bottom:0}
+.rr-thumb{flex:0 0 74px}
+.rr-thumb img{width:74px;height:56px;object-fit:cover;border-radius:2px;display:block}
+.rr-thumb.tile{width:74px;height:56px;border-radius:2px;font-size:1.3rem}
+.rail-list h3{font-family:var(--serif);font-weight:700;font-size:.97rem;line-height:1.3;margin:0}
+[lang=ar] .rail-list h3{line-height:1.6}
+.rail-list h3 a:hover{color:var(--sa,var(--red))}
+.rail-list .t{display:block;margin-top:.25rem;font-size:.7rem;font-weight:700;color:var(--muted)}
+.rail-more{display:inline-block;margin-top:.6rem;font-size:.76rem;font-weight:800;color:var(--sa,var(--red))}
+.rail-live{background:var(--black);color:#f2eee8;padding:.9rem 1rem 1rem;border-radius:var(--r)}
+.rail-live .rail-kick{color:#f93549;border-bottom-color:#33343a}
+.rail-live .lf-cells{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;margin-top:.6rem}
+.rail-live .lf-cell b{display:block;font-family:var(--serif);font-weight:900;font-size:1.25rem;line-height:1.05;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rail-live .lf-cell span{display:block;margin-top:.25rem;font-size:.66rem;font-weight:600;line-height:1.3;color:#a3a8b2}
+[lang=ar] .rail-live .lf-cell span{font-size:.76rem}
+.rail-live .rail-more{color:#3fd07c}
+@media(min-width:1100px){
+  .story-layout{max-width:1180px;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:2.6rem;align-items:start;padding-inline:20px}
+  .story-layout .story{max-width:none;margin-inline:0;padding-inline:0}
+  .story-rail{position:sticky;top:64px;padding:2.6rem 0 1rem;max-height:calc(100vh - 64px);overflow:auto;scrollbar-width:none}
+  .story-rail::-webkit-scrollbar{display:none}
+  .story-rail .rail-latest{display:block}
+}
+@media(max-width:1099px){.story-rail .rail-latest{display:none}}
 .keep .latest{position:static;top:auto}
 .backbar{background:var(--black);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:55}
 /* Pages that carry the shared section bar (2026-08-11 UX study) let IT be
@@ -4062,7 +4114,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
    Without JS it stays hidden and the inline row carries sharing. */
 .share-rail{display:none}
 @media(min-width:1200px){
-.share-rail{display:flex;flex-direction:column;gap:.5rem;position:fixed;top:42vh;inset-inline-start:calc(50vw - 410px - 4.6rem);z-index:40;opacity:0;visibility:hidden;transition:opacity var(--tr),visibility var(--tr)}
+.share-rail{display:flex;flex-direction:column;gap:.5rem;position:fixed;top:42vh;inset-inline-start:calc(50vw - min(590px,50vw - 20px) - 3.4rem);z-index:40;opacity:0;visibility:hidden;transition:opacity var(--tr),visibility var(--tr)}
 .share-rail.on{opacity:1;visibility:visible}
 .share-rail a{width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;border:1px solid var(--line-dark);border-radius:50%;background:var(--card);font-weight:800;font-size:.78rem;box-shadow:var(--sh);transition:background var(--tr),color var(--tr),border-color var(--tr)}
 .share-rail a:hover{background:var(--red);color:#fff;border-color:var(--red)}
@@ -4241,6 +4293,8 @@ section.opinion{background:#17171c;border-top-color:var(--red)}
 .card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.sub-body h3 a:hover{color:#f93549}
 .meta .src,.card .chip,.rowcard .chip,.sub-body .chip,.gi-src a,.gi-dl a,.gi-method summary,.story .desk-note a,.social-note a,.about-telegram a{color:#3fd07c}
 .story ul.lf,.story ol.lf{color:#d6d6de}
+.story-figs .fig span,.rail-list .t{color:#a3a8b2}
+.rail-live{background:#0b0b0c}
 .story code{background:rgba(255,255,255,.12)}
 .story table.lf th{background:rgba(255,255,255,.06)}
 .tc-area{fill:rgba(249,53,73,.16)}
@@ -4438,6 +4492,232 @@ SIGNAL_GLYPH = ('<svg class="signal-glyph" width="15" height="15" viewBox="0 0 1
 # story. The opener/closer paragraphs are tagged here because briefs
 # (p.summary) and originals (longform .lf) shape their bodies differently.
 # Pure enhancement: without JS the story reads exactly as before.
+# ---------- the living story page (owner order 2026-09-04) ----------
+# "When you click on an article you should have better visuals, not enter a
+# dull page." Four layers, every one automatic and every one drawn from the
+# story's OWN words or the newsroom's live data — nothing invented:
+#   1. BY THE NUMBERS tiles lifted from the copy (a figure + the sentence it
+#      lives in, verbatim), placed after the second paragraph.
+#   2. A PULL QUOTE lifted verbatim from the first substantial quotation.
+#   3. A STORY RAIL beside the text on wide screens: more from the section,
+#      the live figures the section counts, the latest wire.
+#   4. Section accent on the page furniture; house covers as a 21:9 plate.
+_MONTHS_RX = re.compile(
+    r"\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\b|"
+    r"كانون|شباط|آذار|نيسان|أيار|حزيران|تموز|\bآب\b|أيلول|تشرين|يناير|فبراير|مارس|"
+    r"أبريل|إبريل|مايو|يونيو|يوليو|أغسطس|سبتمبر|أكتوبر|نوفمبر|ديسمبر", re.I)
+_FIG_RX = re.compile(
+    r"(?<![\w/:.,\-])(\d{1,3}(?:[,٬]\d{3})+|\d+(?:\.\d+)?|[٠-٩]+(?:[٬,][٠-٩]{3})*)"
+    r"(\s?(?:%|٪|percent|per cent|بالمئة|في المئة|بالمائة))?(?![\w:/.\-])")
+_SENT_SPLIT_RX = re.compile(r"(?<=[.!?؟])\s+")
+_QUOTE_RX = re.compile(r"[“\"«]([^“”\"«»]{40,320})[”\"»]")
+
+
+def _fig_value(token):
+    t = token.translate(str.maketrans("٠١٢٣٤٥٦٧٨٩", "0123456789")).replace("٬", ",")
+    try:
+        return float(t.replace(",", ""))
+    except ValueError:
+        return None
+
+
+def _plain_copy(text):
+    """The copy as prose: Markdown furniture (quote marks, heads, bullets,
+    emphasis, links, image lines) stripped so a tile never shows a '>'."""
+    out = []
+    for line in (text or "").splitlines():
+        line = line.strip()
+        if not line or line.startswith("![") or line.startswith("!video[") or line.startswith("|"):
+            continue
+        line = re.sub(r"^(?:#{1,6}\s+|>\s?|[-*]\s+|\d+\.\s+)", "", line)
+        line = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", line)
+        line = re.sub(r"[*_`]{1,3}", "", line)
+        out.append(line)
+    return " ".join(out)
+
+
+def story_figures(text, lang, limit=3):
+    """Up to three (figure, sentence) pairs from the copy: real quantities,
+    never years, dates, times or ordinals; percentages first, then the
+    largest. The sentence is the story's own, verbatim."""
+    found, seen = [], set()
+    for sent in _SENT_SPLIT_RX.split(re.sub(r"\s+", " ", _plain_copy(text))):
+        sent = sent.strip()
+        if len(sent) < 30 or len(sent) > 260:
+            continue
+        for m in _FIG_RX.finditer(sent):
+            num, pct = m.group(1), m.group(2)
+            val = _fig_value(num)
+            if val is None:
+                continue
+            after = sent[m.end():m.end() + 14].lstrip()
+            before = sent[max(0, m.start() - 12):m.start()]
+            if not pct:
+                if val < 10 or val != val:
+                    continue
+                if 1900 <= val <= 2100 and "," not in num:   # a year
+                    continue
+                if re.match(r"(?:st|nd|rd|th)\b", after):     # ordinal
+                    continue
+                if _MONTHS_RX.search(after[:12]) or _MONTHS_RX.search(before):
+                    continue                                   # a date
+                if re.match(r"(?:a\.?m|p\.?m|o'clock|صباح|مساء)", after, re.I):
+                    continue
+            key = (val, bool(pct))
+            if key in seen:
+                continue
+            seen.add(key)
+            shown = num + (("%" if pct.strip() in ("%", "٪") else " " + pct.strip()) if pct else "")
+            found.append((bool(pct), val, shown, sent))
+            break  # one figure per sentence
+    found.sort(key=lambda f: (not f[0], -f[1]))
+    return [(f[2], f[3]) for f in found[:limit]]
+
+
+def story_figures_html(text, lang, limit=3):
+    figs = story_figures(text, lang, limit)
+    if len(figs) < 2:
+        return ""
+    label = "بالأرقام" if lang == "ar" else "By the numbers"
+    tiles = "".join(
+        f'<div class="fig"><b>{esc(num)}</b><span>{esc(truncate(sent, 170))}</span></div>'
+        for num, sent in figs)
+    return (f'<aside class="story-figs" aria-label="{label}">'
+            f'<p class="figs-kick">{label}</p><div class="figs">{tiles}</div></aside>')
+
+
+def story_pull_quote(text, lang):
+    """The first substantial quotation in the copy, verbatim, as a pull
+    quote — 8 to 45 words, so a two-word attribution never becomes one."""
+    for m in _QUOTE_RX.finditer(_plain_copy(text)):
+        q = re.sub(r"\s+", " ", m.group(1)).strip(" ,;:.")
+        n = len(q.split())
+        if 8 <= n <= 45:
+            open_q, close_q = ("«", "»") if lang == "ar" else ("“", "”")
+            return f'<blockquote class="pull lifted"><p>{open_q}{esc(q)}{close_q}</p></blockquote>'
+    return ""
+
+
+_PARA_RX = re.compile(r'<p class="summary">.*?</p>', re.S)
+
+
+def weave_story_visuals(paras, brief, lang, cat):
+    """Insert the figures tiles after the 2nd paragraph and the pull quote
+    after the 4th — only when the copy is long enough to carry them and
+    carries no visual of its own."""
+    if not paras or "story-figs" in paras:
+        return paras
+    ends = [m.end() for m in _PARA_RX.finditer(paras)]
+    if len(ends) < 5:
+        return paras
+    has_quote = "<blockquote" in paras          # the writer's own pull quote wins
+    has_visual = "<figure" in paras or "<table" in paras
+    quote = "" if has_quote or cat == "opinion" else story_pull_quote(brief, lang)
+    figs = ("" if has_visual or cat in ("opinion", "arts", "humans")
+            else story_figures_html(brief, lang))
+    out = paras
+    if quote and len(ends) >= 7:
+        out = out[:ends[3]] + quote + out[ends[3]:]
+    if figs:
+        out = out[:ends[1]] + figs + out[ends[1]:]
+    return out
+
+
+def rail_row(it, lang, pfx):
+    if it["image"] and _is_house_svg(it["image"]):
+        thumb = thumb_tile(it, lang, pfx, "rr-thumb")
+    elif it["image"]:
+        thumb = (f'<a class="rr-thumb" href="{href(it, pfx)}" tabindex="-1" aria-hidden="true">'
+                 f'<img src="{esc(it["image"])}" alt="" loading="lazy" decoding="async" '
+                 f'referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>')
+    else:
+        thumb = ""
+    return (f'<li>{thumb}<div class="rr-body"><h3><a href="{href(it, pfx)}">{esc(it["title"])}</a></h3>'
+            f'{time_tag(it["date"], lang, "t", fresh=True)}</div></li>')
+
+
+_RAIL_FIGS = {  # what each section counts — the live ledger's keys
+    "gaza": ("killed", "injured", "children"), "health": ("killed", "injured", "famine"),
+    "women": ("women", "pr_women", "killed"), "westbank": ("wb_killed", "wb_attacks", "wb_injured"),
+    "pal48": ("wb_killed", "pr_total", "killed"), "prisoners": ("pr_total", "pr_admin", "pr_children"),
+    "politics": ("killed", "wb_killed", "pr_total"), "accountability": ("killed", "press", "pr_total"),
+    "news": ("killed", "wb_killed", "pr_total"), "economy": ("killed", "injured", "wb_attacks"),
+    "arabaid": ("killed", "injured", "famine"), "israelipress": ("killed", "wb_killed", "pr_total"),
+    "uspress": ("killed", "wb_killed", "pr_total"),
+}
+
+
+_RAIL_LABELS = {  # the rail mixes regions, so every label names its region
+    "killed": ("Killed in Gaza", "شهداء غزة"), "injured": ("Wounded in Gaza", "جرحى غزة"),
+    "children": ("Children killed in Gaza", "أطفال شهداء في غزة"),
+    "women": ("Women killed in Gaza", "نساء شهيدات في غزة"),
+    "press": ("Journalists killed", "صحفيون شهداء"), "famine": ("Killed by starvation", "شهداء التجويع"),
+    "wb_killed": ("Killed in the West Bank", "شهداء الضفة"),
+    "wb_injured": ("Wounded in the West Bank", "جرحى الضفة"),
+    "wb_attacks": ("Settler attacks", "اعتداءات المستوطنين"),
+    "wb_children": ("Children killed in the West Bank", "أطفال شهداء في الضفة"),
+    "pr_total": ("Prisoners held", "الأسرى في السجون"),
+    "pr_admin": ("In administrative detention", "معتقلون إداريون"),
+    "pr_children": ("Child prisoners", "أطفال أسرى"), "pr_women": ("Women prisoners", "أسيرات"),
+    "pr_gaza": ("Gaza detainees, uncharged", "معتقلو غزة بلا تهمة"),
+}
+
+
+def story_live_figures_html(lang, cat):
+    """Two or three live ledger figures for the story's section — the same
+    numbers the front-page strip carries, linked to the full ledger.
+    Fail-open: no data, no card."""
+    keys = _RAIL_FIGS.get(cat)
+    if not keys or os.environ.get("TOP_OFFLINE") == "1":
+        return ""
+    try:
+        gp = __import__("gaza_panel")
+        gaza_figs, _ga, wb_figs, _wba = gp.live_figures()
+        pr_figs, _pra = gp.prisoner_figures()
+    except Exception:  # noqa: BLE001 — the rail is decoration, the story is not
+        return ""
+    labels = _RAIL_LABELS
+    pool = {}
+    pool.update(gaza_figs or {}); pool.update(wb_figs or {}); pool.update(pr_figs or {})
+    cells = []
+    for k in keys:
+        val = pool.get(k)
+        if not val or k not in labels:
+            continue
+        shown = gp._fmt(val, None, lang) + ("+" if k in gp.PR_PLUS else "")
+        cells.append(f'<div class="lf-cell"><b data-gi-key="{k}" data-gi-val="{val}">{shown}</b>'
+                     f'<span>{labels[k][1] if lang == "ar" else labels[k][0]}</span></div>')
+    if len(cells) < 2:
+        return ""
+    kick = "أرقام حيّة" if lang == "ar" else "Live figures"
+    more = "السجل الكامل ←" if lang == "ar" else "The full ledger →"
+    return (f'<div class="rail-live"><p class="rail-kick"><span class="dot"></span>{kick}</p>'
+            f'<div class="lf-cells">{"".join(cells)}</div>'
+            f'<a class="rail-more" href="../#numbers">{more}</a></div>')
+
+
+def story_rail_html(it, lang, related, rail_items, built_at):
+    t = STR[lang]
+    section_name = t["sections"].get(it["cat"], t["sections"]["news"])
+    same = [r for r in related if r is not it and r["cat"] == it["cat"]][:4]
+    blocks = []
+    if same:
+        head = f"المزيد من {section_name}" if lang == "ar" else f"More from {section_name}"
+        blocks.append(f'<div class="rail-sec{accent_class(it["cat"])}"><p class="rail-kick">{esc(head)}</p>'
+                      f'<ol class="rail-list">{"".join(rail_row(r, lang, "") for r in same)}</ol>'
+                      f'<a class="rail-more" href="../section-{it["cat"]}.html">{t["view_all"]}</a></div>')
+    live = story_live_figures_html(lang, it["cat"])
+    if live:
+        blocks.append(live)
+    latest = [r for r in rail_items if r is not it and r not in same][:5]
+    if latest:
+        blocks.append(f'<div class="rail-latest"><p class="rail-kick"><span class="dot"></span>{t["latest"]}</p>'
+                      f'<ol class="rail-list">{"".join(rail_row(r, lang, "") for r in latest)}</ol></div>')
+    if not blocks:
+        return ""
+    return f'<aside class="story-rail" aria-label="{"حول هذا الخبر" if lang == "ar" else "Around this story"}">{"".join(blocks)}</aside>'
+
+
 STORY_POLISH_JS = (
     '(function(){var a=document.querySelector("article.story");if(!a)return;'
     'var ps=a.querySelectorAll("p.summary,.lf p");'
@@ -5526,7 +5806,7 @@ def render_page(lang, items, built_at):
         # otherwise repeats the kicker right above the headline (visual audit
         # 2026-08-16). Plates are generated for every cover at deploy time.
         _hsrc = str(hero.get("image") or "")
-        if re.match(r"^/media/times-of-palestine-cover-[a-z-]+\.svg$", _hsrc):
+        if re.match(r"^/media/times-of-palestine-cover-[a-z0-9-]+\.svg$", _hsrc):
             _hsrc = _hsrc[:-4] + "-hero.svg"
         if _is_house_svg(hero.get("image")):
             # SPLIT hero for house-SVG art (owner-approved design pass
@@ -5738,9 +6018,21 @@ def render_story(it, lang, related, rail, built_at):
                   f'data-resume="{esc(_l_resume)}" '
                   f'aria-label="{"استمع إلى هذا التقرير" if lang == "ar" else "Listen to this story"}">'
                   f'{esc(_l_play)}</button>')
+    # A house category cover is a poster, not a picture: on the story page
+    # it renders as its TEXT-FREE plate, a slim 21:9 band with the section
+    # name set small on top — the reader lands on the headline, not on a
+    # billboard repeating the kicker (owner order 2026-09-04).
+    _lsrc = str(it["image"] or "")
+    _plate = bool(re.match(r"^/media/times-of-palestine-cover-[a-z0-9-]+\.svg$", _lsrc))
+    if _plate:
+        _lsrc = _lsrc[:-4] + "-hero.svg"
     lede = (
-        f'<img class="lede" src="{esc(it["image"])}" alt="{esc(it["title"])}"{lede_fallback_attrs(it)}>'
-        f'{media_credit(it, lang)}'
+        (f'<div class="lede-plate{accent_class(it["cat"])}">'
+         f'<img class="lede plate" src="{esc(_lsrc)}" alt="" width="1200" height="514">'
+         f'<span class="plate-label">{esc(STR[lang]["sections"].get(it["cat"], STR[lang]["sections"]["news"]))}</span></div>'
+         if _plate else
+         f'<img class="lede" src="{esc(_lsrc)}" alt="{esc(it["title"])}"{lede_fallback_attrs(it)}>')
+        + f'{media_credit(it, lang)}'
     ) if it["image"] else f'<div class="lede">{FLAG_SVG}</div>'
     brief = it.get("brief")
     # Hard stop: AI-refusal text must never render. Originals are exempt here —
@@ -5754,6 +6046,10 @@ def render_story(it, lang, related, rail, built_at):
             brief = reflow_paragraphs(brief)
         paras = __import__("longform").body_html(brief)
         paras, story_toc = add_story_outline(paras, lang)
+        # The living story page: figures and a quote lifted from the copy —
+        # for any story whose body carries no visual of its own (the weave
+        # leaves a body with a figure, quote or table untouched).
+        paras = weave_story_visuals(paras, brief, lang, it["cat"])
         # Owner decision 2026-07-30, wire protocol: a rewritten story is OUR
         # copy. The source is credited once, inline, in the prose ("…, Ma'an
         # reported") — no byline credit-link and no read-at-source button.
@@ -5833,7 +6129,12 @@ def render_story(it, lang, related, rail, built_at):
             f'</section>')
     related_primary = [r for r in related if r is not it and r["cat"] == it["cat"]]
     related_secondary = [r for r in related if r is not it and r["cat"] != it["cat"]]
-    related_cards = "".join(card(r, lang, "") for r in (related_primary + related_secondary)[:8])
+    # The rail takes the first four of the section; Keep Reading carries on
+    # from there so no story appears twice on one page.
+    _keep = related_primary[4:] + related_secondary
+    if len(_keep) < 4:  # a thin section: the rail's four may repeat rather than run short
+        _keep += related_primary[:4]
+    related_cards = "".join(card(r, lang, "") for r in _keep[:8])
     page_url = story_url(it, lang)
     # What readers copy and send is the SHORT link (owner call 2026-08-05):
     # an Arabic slug percent-encodes to hundreds of characters, while the
@@ -5997,7 +6298,8 @@ def render_story(it, lang, related, rail, built_at):
 </div></header>
 {interior_nav_html(lang, "../")}
 <main id="top">
-  <article class="story">
+  <div class="story-layout">
+  <article class="story{accent_class(it['cat'])}">
     {breadcrumb_nav}
     <p class="kick">{t['sections'].get(it['cat'], t['sections']['news'])}</p>
     <h1>{esc(it['title'])}</h1>
@@ -6009,6 +6311,8 @@ def render_story(it, lang, related, rail, built_at):
     {summary}
     {cta}{corrections}{share_row}
   </article>
+  {story_rail_html(it, lang, related, rail_items, built_at)}
+  </div>
   <script>{STORY_POLISH_JS}</script>
   {share_rail}
   <section class="keep"><div class="wrap">
