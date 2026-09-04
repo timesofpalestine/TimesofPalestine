@@ -6,32 +6,26 @@
    "article": "https://t.me/Palinfo/319372",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/734156",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-04T14:02:55+00:00",
  "dek": "",
  "dup_of": null,
- "image": "https://cdn4.telesco.pe/file/oJQY9eN7dlGgsQjt6yptkvEAWl8YzUqfcT4ZF9j-A1iju3gOtP8hAe__UK_hR-RjSzEbT0ldc_bmjB06W6d5kvompRAyhHCJbmjQEL1PSvXwEfjDnD0WLZvFrbalKRLdJQA3M_22aZzV9DxUaMZpECIsRBcHTzSk-BmSStsmJO8p0gqVDMIarsxeUVX8m71x7nJJF0e-anFoD5gXeUFFzpxwcmfdooYXkMrzt4STnvrlumLOwW0F9yJQyUAprv9ludcKJ47ps05W-9LD0MZvLgkHlWDM-YOpPaR9YvIBjN-tP3WoLwf2MkM98hX3k90xlQelMFdmx4vXAJRceIZdnw.jpg",
+ "image": "/media/times-of-palestine-cover-westbank-b-ar.svg",
  "lang": "ar",
  "link": "https://t.me/Palinfo/319372",
  "max_age_hours": 72,
  "media": {
-  "credit": "المركز الفلسطيني للإعلام",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://t.me/Palinfo/319372"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "48229fa7d8",
- "score": 63.39,
+ "score": 63.2,
  "source": "المركز الفلسطيني للإعلام",
  "source_id": "tg-palinfo",
  "source_url": "https://t.me/palinfo",
