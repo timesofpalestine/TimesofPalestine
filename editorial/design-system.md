@@ -312,6 +312,11 @@ load-bearing statistic — one or two per story, never as decoration.
   strips; Opinion never rides above the news; `SECTION_ORDER` is derived
   from the same list so the All-Sections panel, the footer index, the
   search chips and the section pages all read in the paper's order.
+- **Front-page window (owner order 2026-09-04):** every section block on
+  the front draws only from the last three days (a quiet section reaches
+  back six days to keep two stories; nothing older takes a slot; From the
+  Archive exempt). Time labels on the front therefore never read past
+  "6d ago" / «قبل 6 أيام». The section pages remain the full file.
 - **Lead-and-list section** (`.grid.lead`, design pass 2026-09-04): a
   front-page section with four stories renders its newest as a LEAD card
   (art, 1.45rem serif headline, its dek) on the inline-start, and the

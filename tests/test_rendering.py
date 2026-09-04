@@ -729,7 +729,10 @@ class PrisonersSectionTests(unittest.TestCase):
     def test_prisoners_section_renders_on_the_front(self):
         built_at = datetime(2026, 8, 11, 12, tzinfo=timezone.utc)
         base = item()
-        base.update({"image": "/media/x.svg"})
+        # Front-page window (owner order 2026-09-04): a section slot is a
+        # story from the last three days — the fixture dates inside it.
+        base.update({"image": "/media/x.svg",
+                     "date": built_at - timedelta(hours=5)})
         subjects = [
             "Red Cross visits Palestinian prisoners in Gaza jails",
             "Prisoners' Club counts the detainees taken from Jenin",
