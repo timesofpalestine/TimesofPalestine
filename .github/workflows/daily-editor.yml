@@ -7,7 +7,17 @@ name: Daily editor-in-chief cycle
 on:
   schedule:
     - cron: "30 6 * * *" # 06:30 UTC daily, before the day's news cycle
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      edition:
+        # Owner override (owner order 2026-09-04, given while raising the
+        # budget to $300): a MANUAL run may name its edition and skip the
+        # purse check for that run only. Scheduled runs stay governed, and
+        # the run still records its spend to the ledger like any other.
+        description: "Edition for this manual run (auto = let the budget governor decide)"
+        type: choice
+        options: [auto, light, full]
+        default: auto
 
 concurrency:
   group: daily-editor
@@ -37,10 +47,27 @@ jobs:
       # script errors (any exit other than 0/3).
       - name: Budget gate
         id: budget
+        env:
+          EDITION_OVERRIDE: ${{ github.event.inputs.edition || 'auto' }}
         run: |
           set +e
-          python3 budget_ledger.py --tier editor > "$RUNNER_TEMP/tier.out"
-          code=$?
+          if [ "$EDITION_OVERRIDE" = "full" ] || [ "$EDITION_OVERRIDE" = "light" ]; then
+            # Owner override on a manual run: the named edition, its model
+            # and turn cap from editorial/budget.json, no purse check.
+            python3 - "$EDITION_OVERRIDE" > "$RUNNER_TEMP/tier.out" <<'PY'
+          import json, sys
+          name = sys.argv[1]
+          spec = json.load(open("editorial/budget.json"))["tiers"]["editor"][name]
+          print("run=yes"); print(f"tier={name}")
+          for k in ("model", "max_turns"):
+              if spec.get(k) is not None: print(f"{k}={spec[k]}")
+          PY
+            code=$?
+            echo "::warning::owner override — running the $EDITION_OVERRIDE edition regardless of the purse"
+          else
+            python3 budget_ledger.py --tier editor > "$RUNNER_TEMP/tier.out"
+            code=$?
+          fi
           set -e
           if [ "$code" -eq 0 ] || [ "$code" -eq 3 ]; then
             cat "$RUNNER_TEMP/tier.out" >> "$GITHUB_OUTPUT"
