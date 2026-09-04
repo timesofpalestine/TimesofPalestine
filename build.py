@@ -3257,11 +3257,34 @@ def live_fab_html(lang):
             f'<span>✕</span></button></div>'
             f'<script>{_LIVE_JS}</script>')
 
+# FRONT-PAGE FLOW (owner order 2026-09-04, "rearrange the layout and
+# sections based on priority and on what makes sense for the flow"): the
+# front reads like a great newspaper's — the news of the ground first, the
+# numbers behind it, then power and money, then depth and what others are
+# saying, then comment, then society, culture and sport, then service.
+# Before this pass the reader crossed the full numbers ledger, On This Day
+# and the whole Opinion block before the first Gaza story, and Politics,
+# Economy and Accountability sat below Sports. The "@" tokens place the
+# standing bands (the numbers ledger, On This Day) between sections;
+# SECTION_ORDER is derived from this list and still drives the nav panel,
+# the footer index, the search chips and the section pages.
+FRONT_FLOW = [
+    # I. On the ground — the four flagship desks and Her Story
+    "gaza", "westbank", "pal48", "prisoners", "women",
+    "@numbers",               # the ledger: the numbers behind the block above
+    # II. Power and money
+    "politics", "economy", "arabaid", "accountability",
+    # III. Depth and what others are saying, then comment
+    "research", "israelipress", "uspress", "opinion",
+    # IV. Society, culture, sport
+    "health", "humans", "diaspora", "arts", "sports",
+    # V. Community, service, memory, the rest of the wire, the archive
+    "social", "bitcoin", "@onthisday", "news", "archive",
+]
+FRONT_BANDS = ("@numbers", "@onthisday")
 SECTION_ORDER = {
-    "en": ["gaza", "westbank", "pal48", "prisoners", "israelipress", "uspress", "women", "arabaid", "research", "health", "humans", "social", "bitcoin", "diaspora", "arts", "sports",
-           "accountability", "politics", "economy", "opinion", "news", "archive"],
-    "ar": ["gaza", "westbank", "pal48", "prisoners", "israelipress", "uspress", "women", "arabaid", "research", "health", "humans", "social", "bitcoin", "diaspora", "arts", "sports",
-           "accountability", "politics", "economy", "opinion", "news", "archive"],
+    "en": [k for k in FRONT_FLOW if not k.startswith("@")],
+    "ar": [k for k in FRONT_FLOW if not k.startswith("@")],
 }
 FOCUS_SECTIONS = {"pal48", "prisoners", "israelipress", "uspress", "research", "diaspora", "arts", "sports", "accountability", "bitcoin", "social", "health", "archive", "arabaid", "women"}  # shown even with one story
 
@@ -5387,11 +5410,33 @@ def render_page(lang, items, built_at):
                 f'<p class="dek">{summary_html(it["dek"])}</p>{meta_line(it, lang)}'
                 f'</div>{media}</article>')
 
+    opinion_block = ""
+    if len(sections["opinion"]) >= 2:
+        ops = "".join(op_card(it, lang, P) for it in sections["opinion"][:6])
+        opinion_block = (f'<section class="opinion" id="opinion"><div class="wrap">'
+                         f'<div class="sec-head"><h2>{t["sections"]["opinion"]}</h2><span class="rule"></span></div>'
+                         f'<div class="op-grid">{ops}</div></div></section>')
+
+    _gp = __import__("gaza_panel")
+    gaza_panel = _gp.panel(lang)
+    # Key figures surfaced before the first scroll (owner-forwarded review,
+    # 2026-08-10) — the strip and the full ledger revise together (PANEL_JS).
+    gaza_strip = _gp.strip(lang) if gaza_panel else ""
+    # Standing bands ride between the section blocks at the positions
+    # FRONT_FLOW names (owner order 2026-09-04): the ledger after the
+    # on-the-ground block whose tolls it counts, On This Day down among the
+    # service bands, Opinion after the press desks — never above the news.
+    bands = {"@numbers": gaza_panel, "@onthisday": on_this_day_html(lang, built_at),
+             "opinion": opinion_block}
+
     section_blocks = ""
     cats_present = {it["cat"] for it in items}  # archive pages exist only for real cats
     _shown = 0
-    for k in order:
-        if k == "opinion" or not visible(k):
+    for k in FRONT_FLOW:
+        if k in bands:
+            section_blocks += bands[k]
+            continue
+        if not visible(k):
             continue
         pool = break_cover_twins(sections[k][:4])
         featured = ""
@@ -5417,13 +5462,6 @@ def render_page(lang, items, built_at):
         section_blocks += (f'<section class="block" id="{k}"><div class="wrap">'
                            f'<div class="sec-copy"><div class="sec-head{focus_cls}{accent_class(k)}"><h2>{esc(t["sections"][k])}</h2><span class="rule"></span>{viewall}</div>{section_meta(sections[k], lang)}</div>'
                            + (('<p class="social-note">' + ("تقارير عامة من صحفيين مواطنين وشهود على الأرض، تمرّ عبر بوابات التحرير الآلية قبل النشر وتُنشر بوصفها تقارير ميدانية منسوبة إلى مصدرها. " if lang == "ar" else "Public dispatches from citizen journalists and witnesses, screened by the newsroom's editorial gates before publication and labelled as field reports with their source. ") + '<a href="#tips">' + ("أرسل تقريرك عبر خط «سيغنال» الآمن ←" if lang == "ar" else "Send yours via the secure Signal line →") + "</a></p>") if k == "social" else "") + f'{featured}{grid}</div></section>')
-
-    opinion_block = ""
-    if len(sections["opinion"]) >= 2:
-        ops = "".join(op_card(it, lang, P) for it in sections["opinion"][:6])
-        opinion_block = (f'<section class="opinion" id="opinion"><div class="wrap">'
-                         f'<div class="sec-head"><h2>{t["sections"]["opinion"]}</h2><span class="rule"></span></div>'
-                         f'<div class="op-grid">{ops}</div></div></section>')
 
     hero_html = ""
     if hero:
@@ -5494,11 +5532,6 @@ def render_page(lang, items, built_at):
                      else "Times of Palestine — top stories"),
             "itemListOrder": "https://schema.org/ItemListOrderAscending",
             "itemListElement": _li}) + "</script>")
-    _gp = __import__("gaza_panel")
-    gaza_panel = _gp.panel(lang)
-    # Key figures surfaced before the first scroll (owner-forwarded review,
-    # 2026-08-10) — the strip and the full ledger revise together (PANEL_JS).
-    gaza_strip = _gp.strip(lang) if gaza_panel else ""
     tips_band = (
         f'<section class="tipband" id="tips"><div class="wrap">{LOCK_SVG}'
         f'<div class="txt"><p class="kick">{t["tips_kicker"]}</p>'
@@ -5565,9 +5598,7 @@ def render_page(lang, items, built_at):
     </aside>
   </div>
   {files_strip_html(lang, built_at)}
-  {specials_band}{gaza_panel}
-  {on_this_day_html(lang, built_at)}
-  {opinion_block}
+  {specials_band}
   {section_blocks}
   {tips_band}{newsletter_band(lang)}
 </main>

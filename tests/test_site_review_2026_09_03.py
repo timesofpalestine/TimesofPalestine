@@ -195,5 +195,55 @@ class RunningFileChipTest(unittest.TestCase):
         self.assertNotIn("file-chip", html)
 
 
+class FrontFlowTest(unittest.TestCase):
+    """Owner order 2026-09-04: sections and bands in priority order. The
+    news of the ground leads, the numbers ledger follows the block it
+    counts, power and money come next, then depth and comment, then
+    society, culture and sport, then service — never a ledger, a memory
+    line or an opinion block between the hero and the first Gaza story."""
+
+    def test_every_section_once_and_bands_between(self):
+        keys = [k for k in build.FRONT_FLOW if not k.startswith("@")]
+        self.assertEqual(sorted(keys), sorted(set(build.STR["en"]["sections"])))
+        self.assertEqual(len(keys), len(set(keys)))
+        for lang in ("en", "ar"):
+            self.assertEqual(build.SECTION_ORDER[lang], keys)
+        self.assertEqual(keys[:4], ["gaza", "westbank", "pal48", "prisoners"])
+        self.assertLess(keys.index("politics"), keys.index("health"))
+        self.assertLess(keys.index("economy"), keys.index("sports"))
+        self.assertLess(keys.index("research"), keys.index("israelipress"))
+        self.assertLess(keys.index("uspress"), keys.index("opinion"))
+        self.assertEqual(keys[-2:], ["news", "archive"])
+        flow = build.FRONT_FLOW
+        self.assertLess(flow.index("prisoners"), flow.index("@numbers"))
+        self.assertLess(flow.index("@numbers"), flow.index("politics"))
+        self.assertLess(flow.index("bitcoin"), flow.index("@onthisday"))
+
+    def test_rendered_front_puts_news_before_opinion_and_memory(self):
+        built_at = datetime(2026, 5, 15, 12, tzinfo=timezone.utc)  # a dated day
+        items = []  # hero + eight sub-items consume nine before the blocks
+        for i in range(13):
+            items.append(_item(title=f"Israeli forces raid village number {i} in the northern West Bank",
+                               pid=f"wb000000{i:02d}", link=f"https://example.com/wb{i}", cat="gaza",
+                               date=built_at - timedelta(hours=i + 1)))
+        for i in range(2):
+            items.append(_item(title=f"Why the Gaza ceasefire talks stall again this week, take {i}",
+                               pid=f"op0000000{i}", link=f"https://example.com/op{i}", cat="opinion",
+                               date=built_at - timedelta(hours=i + 1)))
+        for i in range(2):
+            items.append(_item(title=f"Palestinian Authority names a new finance minister in Ramallah {i}",
+                               pid=f"po0000000{i}", link=f"https://example.com/po{i}", cat="politics",
+                               date=built_at - timedelta(hours=i + 20)))
+        page = build.render_page("en", items, built_at)
+        main = page.split('<main id="top">', 1)[1]
+        gaza = main.index('id="gaza"')
+        self.assertLess(main.index('class="franchise"') if 'class="franchise"' in main else 0, gaza)
+        self.assertLess(gaza, main.index('id="politics"'))
+        self.assertLess(main.index('id="politics"'), main.index('id="opinion"'))
+        self.assertLess(main.index('id="opinion"'), main.index('class="otd"'))
+        self.assertNotIn('class="otd"', main[:gaza])
+        self.assertNotIn('id="opinion"', main[:gaza])
+
+
 if __name__ == "__main__":
     unittest.main()
