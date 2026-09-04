@@ -6,7 +6,13 @@
    "article": "https://t.me/QudsN/734087",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/319300",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-09-04T08:23:21+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "69024f86ac",
- "score": 49.9,
+ "score": 49.62,
  "source": "شبكة قدس · تيليغرام",
  "source_id": "tg-qudsn",
  "source_url": "https://t.me/QudsN",
