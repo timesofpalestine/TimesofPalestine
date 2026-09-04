@@ -7,16 +7,10 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
   }
  ],
  "date": "2026-09-04T15:24:13+00:00",
- "dek": "US State Department tells Al Jazeera Washington 'does not support any plan' for the expulsion of Palestinians.",
+ "dek": "US State Department tells Al Jazeera that Washington 'does not support any plan' for expulsion of Palestinians.",
  "dup_of": null,
  "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/AP26229640996307-1788535049.jpg?resize=1200%2C675",
  "lang": "en",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "b2e3610791",
- "score": 48.82,
+ "score": 48.64,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
