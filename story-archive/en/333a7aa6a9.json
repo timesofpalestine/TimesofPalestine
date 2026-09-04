@@ -31,12 +31,6 @@
    "name": "Amnesty International",
    "url": "https://www.amnesty.org/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/israeli-settler-attacks-mount-trump-avoids-public-pressure-netanyahu",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-09-02T10:35:00+00:00",
@@ -55,7 +49,7 @@
  "modified": null,
  "original": true,
  "pid": "333a7aa6a9",
- "score": 82.47999999999999,
+ "score": 82.43,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
