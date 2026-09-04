@@ -3782,14 +3782,16 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 /* Lead-and-list section (design pass 2026-09-04): the newest story leads
    with art and dek, the next three stack beside it as headline rows with a
    small thumb — a newspaper page's rhythm instead of a wall of card grids. */
-.grid.lead{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);grid-template-rows:min-content min-content min-content 1fr;gap:0 1.8rem}
-.grid.lead .card:first-child{grid-row:1/5}
+.grid.lead{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);grid-template-rows:repeat(var(--rows,3),minmax(0,1fr));gap:0 1.8rem}
+.grid.lead .card:first-child{grid-row:1/span var(--rows,3)}
 .grid.lead .card:first-child h3{font-size:1.45rem;line-height:1.24}
 [lang=ar] .grid.lead .card:first-child h3{line-height:1.55}
 .grid.lead .card:first-child .dek{margin-top:.55rem;font-family:var(--serif);font-size:.95rem;line-height:1.55;color:var(--muted);max-width:60ch}
 [lang=ar] .grid.lead .card:first-child .dek{line-height:1.8;font-size:1rem}
 .grid.lead .card:first-child .card-body{padding:.9rem 1rem 1.05rem}
-.grid.lead .card:not(:first-child){display:grid;grid-template-columns:118px minmax(0,1fr);gap:.8rem;align-items:start;background:transparent;border:0;border-radius:0;box-shadow:none;padding:.85rem 0;border-bottom:1px solid var(--line)}
+.grid.lead .card:not(:first-child){display:grid;grid-template-columns:118px minmax(0,1fr);gap:.8rem;align-items:start;align-content:center;background:transparent;border:0;border-radius:0;box-shadow:none;padding:.85rem 0;border-bottom:1px solid var(--line);min-height:0}
+.grid.lead .card:not(:first-child) .dek{margin:.3rem 0 0;font-size:.82rem;line-height:1.45;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+[lang=ar] .grid.lead .card:not(:first-child) .dek{font-size:.9rem;line-height:1.7}
 .grid.lead .card:nth-child(2){padding-top:.15rem}
 .grid.lead .card:last-child{border-bottom:0;padding-bottom:0}
 .grid.lead .card:not(:first-child):hover{box-shadow:none;transform:none}
@@ -4126,7 +4128,9 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
   /* Phones (design pass 2026-09-04): one full card leads each block, the
      rest are compact thumb-and-headline rows — the 44,000px stacked-card
      front becomes a front a thumb can scan. Section pages the same. */
+  .grid.lead{grid-template-rows:none}
   .grid.lead .card:first-child{grid-row:auto}
+  .grid.lead .card:not(:first-child) .dek{display:none}
   .grid .card:first-child{margin-bottom:.9rem}
   .grid .card:not(:first-child){display:grid;grid-template-columns:104px minmax(0,1fr);gap:.7rem;align-items:start;background:transparent;border:0;border-radius:0;box-shadow:none;padding:.7rem 0;border-bottom:1px solid var(--line)}
   .grid .card:not(:first-child):hover{box-shadow:none;transform:none}
@@ -5142,6 +5146,7 @@ def totop_html(lang):
 # grids (the press review is a batch, the research block has its own
 # featured treatment); every other section alternates so the page breathes.
 LEAD_LIST_ALWAYS = ("gaza", "westbank", "pal48", "prisoners")
+LEAD_LIST_MAX = 7  # the lead plus up to six list rows (owner order 2026-09-04)
 LEAD_LIST_NEVER = ("israelipress", "uspress", "research")
 
 
@@ -5445,11 +5450,21 @@ def render_page(lang, items, built_at):
             grid = f'<div class="rowlist">{rowcard(pool[0], lang, P, solo=True)}</div>'
         elif lead_list_section(k, _shown, len(pool)):
             # LEAD AND LIST (design pass 2026-09-04): the newest story leads
-            # with its art and dek, the next three stack as headline rows —
-            # the rhythm of a newspaper page instead of a wall of identical
-            # card grids. Flagship sections always; the rest alternate.
-            grid = (f'<div class="grid lead">{card(pool[0], lang, P, dek=True)}'
-                    + "".join(card(it, lang, P) for it in pool[1:]) + '</div>')
+            # with its art and dek, the next stack as headline rows — the
+            # rhythm of a newspaper page instead of a wall of identical card
+            # grids. Flagship sections always; the rest alternate.
+            # The list FILLS the lead's height (owner report 2026-09-04:
+            # three rows left ~300px of dead white under them): up to six
+            # more stories from the same section ride the list, the grid's
+            # rows share the lead's height evenly, and when the section has
+            # four rows or fewer each row also carries its dek so the column
+            # is filled with copy, never with air.
+            pool = break_cover_twins(sections[k][:LEAD_LIST_MAX])
+            rows = pool[1:]
+            row_dek = len(rows) <= 4
+            grid = (f'<div class="grid lead" style="--rows:{len(rows)}">'
+                    f'{card(pool[0], lang, P, dek=True)}'
+                    + "".join(card(it, lang, P, dek=row_dek) for it in rows) + '</div>')
         else:
             cols = f" g{min(len(pool), 4)}"; grid = f'<div class="grid{cols}">{"".join(card(it, lang, P) for it in pool)}</div>'
         _shown += 1
