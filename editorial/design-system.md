@@ -314,9 +314,15 @@ load-bearing statistic — one or two per story, never as decoration.
   search chips and the section pages all read in the paper's order.
 - **Lead-and-list section** (`.grid.lead`, design pass 2026-09-04): a
   front-page section with four stories renders its newest as a LEAD card
-  (art, 1.45rem serif headline, its dek) spanning three rows on the
-  inline-start, and the next three as compact rows on the inline-end —
-  118px 4:3 thumb, headline, time, hairline-separated, no box. The four
+  (art, 1.45rem serif headline, its dek) on the inline-start, and the
+  next stories as compact rows on the inline-end — 118px 4:3 thumb,
+  headline, time, hairline-separated, no box. **The list fills the lead's
+  height (owner order 2026-09-04):** up to six rows ride beside the lead
+  (`LEAD_LIST_MAX`), the grid's rows share the lead's height evenly
+  (`--rows` on the grid, `repeat(var(--rows),minmax(0,1fr))`, the lead
+  spanning them all), and a section with four rows or fewer prints each
+  row's dek (two-line clamp) so the column is filled with copy rather than
+  air. Phones drop the equal-height rows and the row deks. The four
   flagships (gaza, westbank, pal48, prisoners) always lead; the press desks
   and research keep grids; every other section alternates by position
   (`lead_list_section` in `build.py`) so the page has a newspaper's rhythm

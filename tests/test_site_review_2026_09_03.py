@@ -159,6 +159,32 @@ class LeadAndListTest(unittest.TestCase):
         self.assertIn('class="dek"', block)
         self.assertIn("Sourced summary of raid", block)
 
+    def test_list_fills_the_lead_height(self):
+        """Owner report 2026-09-04: three rows beside a 620px lead left
+        ~300px of dead white. Up to six rows now ride the list, the grid
+        shares the lead's height across them, and a short list prints deks."""
+        built_at = datetime(2026, 9, 4, 9, tzinfo=timezone.utc)
+        items = [_item(title=f"Israeli forces raid village number {i} in the northern West Bank",
+                       dek=f"Sourced summary of raid {i}.", pid=f"wb0000000{i}",
+                       link=f"https://example.com/wb{i}",
+                       date=built_at - timedelta(hours=i + 1)) for i in range(17)]
+        homepage = build.render_page("en", items, built_at)
+        block = homepage.split('id="westbank"', 1)[1].split("</section>", 1)[0]
+        self.assertIn('class="grid lead" style="--rows:6"', block)
+        self.assertEqual(block.count('<article class="card">'), 7)
+        self.assertEqual(block.count('class="dek"'), 1)  # six rows: headlines only
+        short = [_item(title=f"Israeli forces raid village number {i} in the northern West Bank",
+                       dek=f"Sourced summary of raid {i}.", pid=f"wb0000000{i}",
+                       link=f"https://example.com/wb{i}",
+                       date=built_at - timedelta(hours=i + 1)) for i in range(13)]
+        homepage = build.render_page("en", short, built_at)
+        block = homepage.split('id="westbank"', 1)[1].split("</section>", 1)[0]
+        self.assertIn('style="--rows:3"', block)
+        self.assertEqual(block.count('class="dek"'), 4)  # lead + three rows with deks
+        self.assertIn("grid-template-rows:repeat(var(--rows,3),minmax(0,1fr))", build.CSS)
+        phone = build.CSS.split("@media(max-width:560px){", 1)[1]
+        self.assertIn(".grid.lead{grid-template-rows:none}", phone)
+
     def test_css_carries_lead_and_phone_rows_and_print(self):
         self.assertIn(".grid.lead{grid-template-columns:", build.CSS)
         phone = build.CSS.split("@media(max-width:560px){", 1)[1]
