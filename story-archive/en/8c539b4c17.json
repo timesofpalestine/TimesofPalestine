@@ -6,19 +6,13 @@
    "article": "original:taybeh-us-lawsuit-diaspora-2026-09-04.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/christian-village-taybeh-plans-us-lawsuit-over-israeli-settler-attacks",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.amnesty.org/en/latest/news/2026/09/israel-opt-israel-steps-up-annexation-measures-with-unlawful-land-seizure-orders-in-the-occupied-west-bank",
-   "name": "Amnesty International",
-   "url": "https://www.amnesty.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-04T01:09:00+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": true,
  "pid": "8c539b4c17",
- "score": 117.29,
+ "score": 117.23,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

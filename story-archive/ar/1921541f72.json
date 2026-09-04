@@ -6,7 +6,7 @@
    "article": "https://www.aljazeera.net/news/2026/9/4/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d9%84%d9%82%d9%86%d8%a7%d8%a9-%d9%a1%d9%a2-%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d8%a9-%d9%85%d9%82%d8%aa%d9%84-%d8%b4%d8%ae%d8%b5?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
   },
   {
    "article": "https://shehabnews.com/post/163464/%D8%B4%D9%87%D9%8A%D8%AF-%D8%A8%D8%B1%D8%B5%D8%A7%D8%B5-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%AF%D8%B3",
@@ -34,7 +34,7 @@
   }
  ],
  "date": "2026-09-03T22:38:28+00:00",
- "dek": "التفاصيل بعد قليل.",
+ "dek": "اغتالت شرطة الاحتلال الإسرائيلي، فجر الجمعة، شابا فلسطينيا بالرصاص قرب باب العمود في مدينة القدس المحتلة بزعم محاولته تنفيذ عملية طعن.",
  "dup_of": null,
  "image": "https://www.aljazeera.net/wp-content/uploads/2026/09/2-1788500371.jpg?resize=1920%2C1280&quality=80",
  "lang": "ar",
@@ -49,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "1921541f72",
- "score": 58.93,
+ "score": 58.67,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
