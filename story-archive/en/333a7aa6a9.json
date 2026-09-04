@@ -6,19 +6,7 @@
    "article": "original:golan-ben-gvir-smotrich-settler-impunity-2026-09-02.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-says-israel-must-withdraw-occupied-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.amnesty.org/en/latest/news/2026/09/israel-opt-israel-steps-up-annexation-measures-with-unlawful-land-seizure-orders-in-the-occupied-west-bank",
-   "name": "Amnesty International",
-   "url": "https://www.amnesty.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-02T10:35:00+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": true,
  "pid": "333a7aa6a9",
- "score": 82.15,
+ "score": 82.09,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
