@@ -422,6 +422,25 @@ class PurseTests(unittest.TestCase):
         self.assertIn("TODAY'S EDITION TIER", text)
         self.assertIn('--tier "${{ steps.budget.outputs.tier', text)
 
+    def test_editor_workflow_rescues_unshipped_work(self):
+        """Owner-reported loss 2026-09-04: the Opus edition ended its turn
+        with fifteen stories uncommitted (waiting on a background build the
+        action never re-invokes for) and the ledger step's hard reset wiped
+        them. The rescue step runs before that reset, pushes what the editor
+        left behind, and the prompt bans background builds."""
+        text = (ROOT / ".github" / "workflows" / "daily-editor.yml").read_text(
+            encoding="utf-8")
+        rescue = text.index("Rescue unshipped editorial work")
+        self.assertLess(rescue, text.index("Record API spend in the ledger"))
+        step = text[rescue:text.index("Record API spend in the ledger")]
+        self.assertIn("if: always() && steps.budget.outputs.run == 'yes'", step)
+        self.assertIn("gh pr create --draft", step)
+        self.assertIn("':!originals/_ledger.json'", step)
+        self.assertIn("x-access-token:${GH_TOKEN}@github.com", step)
+        prompt = text[:rescue]
+        self.assertIn("FOREGROUND", prompt)
+        self.assertIn("never end your turn", prompt)
+
     def test_wire_calls_are_tagged(self):
         src = (ROOT / "build.py").read_text(encoding="utf-8")
         self.assertIn('tag="judge"', src)

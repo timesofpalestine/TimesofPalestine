@@ -285,16 +285,75 @@ jobs:
             tests` must stay green. The `anthropic` package may be installed
             with pip if the briefs desk is needed locally, but editorial copy
             you write yourself is preferred for originals.
+            RUN EVERY BUILD AND TEST IN THE FOREGROUND — never as a background
+            task, and never end your turn to "wait" for anything: this action
+            does NOT re-invoke you when a background command finishes. The
+            2026-09-04 Opus edition ended its turn with fifteen finished
+            stories uncommitted while a background build ran, and the whole
+            edition was lost. A turn that ends before the PR is pushed loses
+            the day's work.
 
-            SHIP: create branch claude/daily-editor-<YYYYMMDD> from main, commit
-            with clear messages, push, then use `gh` to open a PR titled
-            "Daily editor: <date> — <short summary>" describing each item.
-            Watch its checks with `gh pr checks --watch`; when green, merge it
-            with `gh pr merge --merge`. If an item is risky, ambiguous or
-            crosses another agent's layer, open an issue for the owner instead
-            and leave that part out of the merge. Finish by posting a short
-            cadence note to issue #6: what shipped today and any story ideas
-            for the other desks.
+            SHIP: create branch claude/daily-editor-<YYYYMMDD> from main FIRST,
+            and commit and push it as soon as the first story validates — then
+            keep committing and pushing as each item lands, so nothing is ever
+            only on this runner. When the edition is complete, use `gh` to
+            open a PR titled "Daily editor: <date> — <short summary>"
+            describing each item. Watch its checks with `gh pr checks --watch`;
+            when green, merge it with `gh pr merge --merge`. If an item is
+            risky, ambiguous or crosses another agent's layer, open an issue
+            for the owner instead and leave that part out of the merge. Finish
+            by posting a short cadence note to issue #6: what shipped today and
+            any story ideas for the other desks.
+
+      # Rescue net (owner-reported loss 2026-09-04): the editor's turn can
+      # end with finished stories still uncommitted on the runner — the
+      # 2026-09-04 Opus edition wrote fifteen and shipped none — and the
+      # ledger step below hard-resets the checkout. Whatever the editor left
+      # unpushed is committed to the day's branch, pushed, and opened as a
+      # draft PR for the owner. Fail-open: no rescue ever fails the cycle,
+      # and a run that shipped and merged on its own leaves nothing to do.
+      - name: Rescue unshipped editorial work
+        if: always() && steps.budget.outputs.run == 'yes'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          git config user.name "Times of Palestine Newsdesk"
+          git config user.email "newsdesk@timesofpalestine.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch origin main >/dev/null 2>&1
+          DAY=$(date -u +%Y%m%d)
+          BR="claude/daily-editor-${DAY}"
+          CUR=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+          case "$CUR" in claude/daily-editor-*) BR="$CUR";; esac
+          DIRTY=$(git status --porcelain -- . ':!originals/_ledger.json' | wc -l)
+          AHEAD=$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)
+          echo "rescue: branch=$CUR dirty=$DIRTY ahead-of-main=$AHEAD"
+          if [ "$DIRTY" -eq 0 ] && [ "$AHEAD" -eq 0 ]; then
+            echo "rescue: nothing unshipped"; exit 0
+          fi
+          [ "$CUR" = "$BR" ] || git checkout -B "$BR"
+          if [ "$DIRTY" -gt 0 ]; then
+            git add -A -- . ':!originals/_ledger.json'
+            git commit -q -m "Daily editor ${DAY}: work rescued from the runner
+
+          The editor's turn ended before this work was pushed; the workflow's
+          rescue step committed it so the edition is not lost. Review before
+          merging." || true
+          fi
+          if git ls-remote --exit-code --heads origin "$BR" >/dev/null 2>&1 \
+             && ! git merge-base --is-ancestor "origin/$BR" HEAD 2>/dev/null; then
+            BR="${BR}-rescue-$(date -u +%H%M)"
+            git checkout -B "$BR"
+          fi
+          git push -u origin "HEAD:$BR" || { echo "::warning::rescue push failed"; exit 0; }
+          if ! gh pr list --head "$BR" --state open --json number --jq 'length' 2>/dev/null | grep -q '^[1-9]'; then
+            gh pr create --draft --base main --head "$BR" \
+              --title "Daily editor: ${DAY} — unshipped work rescued from the runner" \
+              --body "The editor's run ended before this work was committed and pushed. The workflow's rescue step saved it here for review. Check the build (\`python3 build.py\`) and the tests before merging." \
+              || echo "::warning::rescue PR not opened"
+          fi
+          echo "::warning::rescued unshipped editorial work to $BR"
 
       # Budget governor: record the run's actual cost (the action writes it
       # to RUNNER_TEMP/claude-execution-output.json) into the committed
