@@ -131,5 +131,69 @@ class ReaderCopyTest(unittest.TestCase):
         self.assertGreaterEqual(len(re.findall(r"ar_AR", src)), 3)
 
 
+
+class LeadAndListTest(unittest.TestCase):
+    """Design pass 2026-09-04: flagship sections lead-and-list, press desks
+    keep grids, the rest alternate; only four-story blocks qualify."""
+
+    def test_flagships_always_lead_and_press_never(self):
+        self.assertTrue(build.lead_list_section("gaza", 5, 4))
+        self.assertTrue(build.lead_list_section("prisoners", 1, 4))
+        self.assertFalse(build.lead_list_section("israelipress", 0, 4))
+        self.assertFalse(build.lead_list_section("uspress", 2, 4))
+        self.assertFalse(build.lead_list_section("gaza", 0, 3))  # needs four
+
+    def test_other_sections_alternate(self):
+        self.assertTrue(build.lead_list_section("women", 4, 4))
+        self.assertFalse(build.lead_list_section("women", 5, 4))
+
+    def test_front_renders_lead_grid_with_dek(self):
+        built_at = datetime(2026, 9, 4, 9, tzinfo=timezone.utc)
+        items = [_item(title=f"Israeli forces raid village number {i} in the northern West Bank",
+                       dek=f"Sourced summary of raid {i}.", pid=f"wb0000000{i}",
+                       link=f"https://example.com/wb{i}",
+                       date=built_at - timedelta(hours=i + 1)) for i in range(13)]
+        homepage = build.render_page("en", items, built_at)
+        block = homepage.split('id="westbank"', 1)[1].split("</section>", 1)[0]
+        self.assertIn('class="grid lead"', block)
+        self.assertIn('class="dek"', block)
+        self.assertIn("Sourced summary of raid", block)
+
+    def test_css_carries_lead_and_phone_rows_and_print(self):
+        self.assertIn(".grid.lead{grid-template-columns:", build.CSS)
+        phone = build.CSS.split("@media(max-width:560px){", 1)[1]
+        self.assertIn(".grid .card:not(:first-child){display:grid", phone)
+        self.assertIn("@media print{", build.CSS)
+
+
+class RunningFileChipTest(unittest.TestCase):
+    def test_story_in_a_live_hub_carries_the_chip(self):
+        built_at = datetime(2026, 9, 4, 9, tzinfo=timezone.utc)
+        story = _item(title="Settlers attack Qusra again as the siege enters its fourth week",
+                      pid="qusra00001", link="https://example.com/qusra")
+        tf = {"slug": "qusra", "pattern": "qusra", "since": "2026-08-11",
+              "en": {"name": "The Qusra File", "dek": "d"},
+              "ar": {"name": "ملف قصرة", "dek": "d"}}
+        old = dict(build.TOPIC_HUBS_LIVE)
+        build.TOPIC_HUBS_LIVE["en"] = [(tf, [story])]
+        try:
+            html = build.render_story(story, "en", [], [], built_at)
+        finally:
+            build.TOPIC_HUBS_LIVE.clear(); build.TOPIC_HUBS_LIVE.update(old)
+        self.assertIn('class="file-chip" href="../topic-qusra.html"', html)
+        self.assertIn("The Qusra File", html)
+        self.assertIn("DAY 25", html)
+
+    def test_story_outside_every_file_has_no_chip(self):
+        built_at = datetime(2026, 9, 4, 9, tzinfo=timezone.utc)
+        old = dict(build.TOPIC_HUBS_LIVE)
+        build.TOPIC_HUBS_LIVE["en"] = []
+        try:
+            html = build.render_story(_item(), "en", [], [], built_at)
+        finally:
+            build.TOPIC_HUBS_LIVE.clear(); build.TOPIC_HUBS_LIVE.update(old)
+        self.assertNotIn("file-chip", html)
+
+
 if __name__ == "__main__":
     unittest.main()
