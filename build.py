@@ -415,6 +415,17 @@ BREAKING_BOOST = 14   # hard-news urgency: casualties, strikes, raids, ceasefire
 IMAGE_BOOST = 8
 RECENCY_MAX = 50      # points for a just-published story, linear decay over MAX_AGE_HOURS
 HERO_MAX_AGE_H = 18   # the top story must be actual news, not a feature from days ago
+# FRONT-PAGE FRESHNESS WINDOW (owner order 2026-09-04: "some stories show
+# they are from 16 days ago — I want a fresh day of news on the front
+# page"). A front-page section slot goes to a story from the last three
+# days; a quiet section may reach back six days to keep two stories on
+# the front, and NOTHING older takes a front-page slot (150h, so a front
+# time label never reads "7d ago"). Older stories keep their pages,
+# section listings, hubs and search — the front is the day's paper, the
+# section page is the file.
+FRONT_WINDOW_H = 72
+FRONT_WINDOW_MAX_H = 150
+FRONT_MIN_STORIES = 2
 HERO_WINDOWS_H = (6, 12, HERO_MAX_AGE_H)  # prefer the freshest qualifying window
 # The page is alive (owner order 2026-08-09): the lead ROTATES with the build
 # clock instead of squatting for hours. Every 10-minute deploy advances the
@@ -5329,11 +5340,26 @@ def render_page(lang, items, built_at):
     # days-old cards while fresher coverage hides behind View-all reads as
     # dead — "the page is alive". Editorial score still ranks the hero tier;
     # the section blocks are the day's paper, in the order the day happened.
-    sections = {k: diversify(take(by_latest,
-                                  lambda i, k=k: i["cat"] == k
-                                  and (k in ("research", "bitcoin", "news") or palestine(i)), 8))
+    # FRESH DAY OF NEWS (owner order 2026-09-04): a section block carries
+    # the last three days; a quiet section reaches back six days to keep
+    # two stories on the front; nothing older takes a slot. The
+    # window is applied per section BEFORE the pool is cut, so a stale
+    # story never displaces a fresher one and a section that has gone
+    # quiet shows what it has rather than the archive.
+    def front_pool(pred, n=8, windowed=True):
+        if not windowed:  # From the Archive carries its ORIGINAL 2006-07 dates
+            return take(by_latest, pred, n)
+        cand = take(by_latest, lambda i: pred(i) and within_hours(i, FRONT_WINDOW_MAX_H), n)
+        fresh = [i for i in cand if within_hours(i, FRONT_WINDOW_H)]
+        if len(fresh) >= FRONT_MIN_STORIES:
+            return fresh
+        return cand[:max(FRONT_MIN_STORIES, len(fresh))]
+    sections = {k: diversify(front_pool(
+                    lambda i, k=k: i["cat"] == k
+                    and (k in ("research", "bitcoin", "news") or palestine(i)),
+                    windowed=(k != "archive")))
                 for k in order}
-    sections["news"] += take(by_latest, lambda i: True, max(0, 8 - len(sections["news"])))
+    sections["news"] += front_pool(lambda i: True, max(0, 8 - len(sections["news"])))
     P = "story/"  # homepage → story pages live one level down
 
     date_str = full_date(built_at, lang)

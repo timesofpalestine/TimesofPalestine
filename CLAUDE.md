@@ -15,6 +15,16 @@ everything it builds:
 
 - The top story follows the news cycle (freshest-window hero selection) and
   is never a multi-day-old feature. Nothing reader-facing may "squat".
+- **The front page is the day's paper (owner order 2026-09-04, after
+  16-day-old stories surfaced in section blocks):** a front-page section
+  slot goes to a story from the last three days; a quiet section may
+  reach back six days to keep two stories on the front, and nothing older
+  takes a slot (`FRONT_WINDOW_H` / `FRONT_WINDOW_MAX_H` in
+  `build.py`; From the Archive is exempt — it carries its original dates).
+  Older stories keep their pages, section listings, hubs and search. A
+  section with nothing inside six days leaves the front until it is fed —
+  that is the signal to feed it (topics, feeds, the daily editor's STALE
+  assignments), never to widen the window.
 - The site builds and deploys every 10 minutes; changes that slow the refresh
   chain or cache staleness into the reader's view are regressions.
 - Fresh stories carry the pulsing NEW/جديد mark (under 90 minutes);

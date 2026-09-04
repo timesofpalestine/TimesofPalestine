@@ -134,7 +134,12 @@ jobs:
             topic in topics.json — until no section is stale. A section
             with no coverable news gets a researched evergreen-with-a-news-
             peg, not silence. Note the before/after freshness state in the
-            PR body.
+            PR body. The FRONT PAGE IS THE DAY'S PAPER (owner order
+            2026-09-04): a section block draws only from the last three
+            days (six at most for a quiet section) and a section with
+            nothing inside that window drops off the front until fed — so
+            a STALE line is a front-page hole, and the fix is a fresh
+            story, never a wider window.
 
             QUEUE DEPTH (owner order 2026-08-16, permanent): the desk can
             only steer to a stale section while topics.json holds an

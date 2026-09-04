@@ -192,6 +192,49 @@ class LeadAndListTest(unittest.TestCase):
         self.assertIn("@media print{", build.CSS)
 
 
+class FrontWindowTest(unittest.TestCase):
+    """Owner order 2026-09-04: "some stories show they are from 16 days
+    ago — I want a fresh day of news on the front page." A section slot
+    is a story from the last three days; a quiet section may reach back a
+    week to keep two stories; nothing older takes a slot."""
+
+    def _wb(self, i, hours, built_at):
+        return _item(title=f"Israeli forces raid village number {i} in the northern West Bank",
+                     dek=f"Sourced summary of raid {i}.", pid=f"wb0000{i:04d}",
+                     link=f"https://example.com/wb{i}",
+                     date=built_at - timedelta(hours=hours))
+
+    def test_old_stories_never_take_a_front_slot(self):
+        built_at = datetime(2026, 9, 4, 9, tzinfo=timezone.utc)
+        # hero + 8 subs consume nine of the fresh ones; the rest form the block
+        fresh = [self._wb(i, 2 + i, built_at) for i in range(12)]
+        old = [self._wb(90 + i, 24 * 16 + i, built_at) for i in range(4)]  # 16 days
+        homepage = build.render_page("en", fresh + old, built_at)
+        block = homepage.split('id="westbank"', 1)[1].split("</section>", 1)[0]
+        self.assertIn("village number 11", block)
+        self.assertNotIn("village number 9", block.replace("village number 9 ", "x"))  # no 90-93
+        for i in range(90, 94):
+            self.assertNotIn(f"village number {i} ", block)
+
+    def test_quiet_section_reaches_back_six_days_but_no_further(self):
+        built_at = datetime(2026, 9, 4, 9, tzinfo=timezone.utc)
+        gaza = [_item(title=f"Israeli strikes hit Gaza City block number {i} overnight",
+                      cat="gaza", pid=f"gz0000{i:04d}", link=f"https://example.com/gz{i}",
+                      date=built_at - timedelta(hours=1 + i)) for i in range(10)]
+        wb = [self._wb(1, 100, built_at),            # four days old
+              self._wb(2, 150, built_at),            # six days old
+              self._wb(3, 24 * 20, built_at)]        # twenty days old
+        homepage = build.render_page("en", gaza + wb, built_at)
+        block = homepage.split('id="westbank"', 1)[1].split("</section>", 1)[0]
+        self.assertIn("village number 1 ", block)
+        self.assertIn("village number 2 ", block)
+        self.assertNotIn("village number 3 ", block)
+
+    def test_window_constants(self):
+        self.assertEqual(build.FRONT_WINDOW_H, 72)
+        self.assertEqual(build.FRONT_WINDOW_MAX_H, 150)
+
+
 class RunningFileChipTest(unittest.TestCase):
     def test_story_in_a_live_hub_carries_the_chip(self):
         built_at = datetime(2026, 9, 4, 9, tzinfo=timezone.utc)
