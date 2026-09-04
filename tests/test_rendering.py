@@ -1396,38 +1396,6 @@ class StaticFeatureTests(unittest.TestCase):
                     self.assertNotIn("fonts.gstatic.com", text, asset)
 
 
-class CorrectionsPageTests(unittest.TestCase):
-    """The public ledger: one editorial event renders once, live stories are
-    linked, and expired stories keep their note with a reference id."""
-
-    FAKE = {"version": 1, "stories": {
-        "aaaaaaaaaa": [{"at": "2026-08-01T10:00:00Z", "type": "update",
-                        "en": "The figure was revised.", "ar": "عُدّل الرقم."}],
-        "bbbbbbbbbb": [{"at": "2026-08-01T10:00:00Z", "type": "update",
-                        "en": "The figure was revised.", "ar": "عُدّل الرقم."}],
-        "cccccccccc": [{"at": "2026-07-30T09:00:00Z", "type": "correction",
-                        "en": "A name was corrected.", "ar": "صُحّح اسم."}],
-    }}
-
-    def test_bilingual_twin_entries_collapse_and_live_story_links(self):
-        record = item()
-        record["pid"] = "aaaaaaaaaa"
-        with mock.patch.object(build, "CORRECTIONS", self.FAKE):
-            html = build.render_corrections_page(
-                "en", [record], datetime(2026, 8, 5, tzinfo=timezone.utc))
-        self.assertEqual(html.count("The figure was revised."), 1)
-        self.assertIn("story/", html)               # live pid links its story
-        self.assertIn("ref cccccccccc", html)       # expired pid keeps its ref
-        self.assertIn('lang="en"', html)
-
-    def test_arabic_ledger_renders_arabic_notes(self):
-        with mock.patch.object(build, "CORRECTIONS", self.FAKE):
-            html = build.render_corrections_page(
-                "ar", [], datetime(2026, 8, 5, tzinfo=timezone.utc))
-        self.assertEqual(html.count("عُدّل الرقم."), 1)
-        self.assertIn('dir="rtl"', html)
-
-
 class GazaNumbersTests(unittest.TestCase):
     """Gaza by the Numbers leads with the Ministry of Health's live toll and
     ships the poll file + in-place update script (owner directive 2026-08-03)."""
@@ -2494,7 +2462,6 @@ class ReaderGrowthHooksTests(unittest.TestCase):
         self.assertIn(tag, build.render_section_page("en", "arts", [item()], built_at))
         self.assertIn(tag, build.render_search_page("en", built_at))
         self.assertIn(tag, seo_extras.render_about("en", built_at))
-        self.assertIn(tag, seo_extras.render_status("en"))
 
 
 class RefusalScreenTest(unittest.TestCase):

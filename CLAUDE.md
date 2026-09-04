@@ -276,6 +276,15 @@ and updates the design system in the same PR.
    governed and every run still records its spend. Only the owner dispatches
    an override; no agent triggers one on its own initiative.
 
+13. **No corrections page, no publishing-status page (owner order
+   2026-09-04: "it has no value, I want it gone").** `/{lang}/corrections.html`
+   and `/{lang}/status.html` no longer render, and no footer, story stamp,
+   sitemap or schema entry links them. A corrected story still prints its
+   dated revision note from `editorial/corrections.json`, and the corrections
+   policy lives on the About page (the schema's `correctionsPolicy` points
+   there). `/health.json` stays as a machine-readable file only. No agent
+   re-adds either page as a "trust signal".
+
 ## Division of labor (suggested, not exclusive)
 
 - **Codex/ChatGPT:** Telegram delivery, workflow reliability, tests.

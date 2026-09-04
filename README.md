@@ -155,8 +155,8 @@ The history is visible on the story page. Its latest timestamp controls `dateMod
 
 ### Monitoring and distribution
 
-- `/health.json` and bilingual `/en/status.html` / `/ar/status.html` expose sanitized feed,
-  validation, review, media and connector health.
+- `/health.json` exposes sanitized feed, validation, review, media and connector health
+  (machine-readable only — there is no reader-facing status page, owner order 2026-09-04).
 - `validate_build.py` checks internal links, HTML/JSON-LD, RSS and sitemap XML, UTC timestamps,
   approved images, review-data privacy and PWA assets.
 - `/en/feed.json` and `/ar/feed.json` are credential-free JSON Feed connector surfaces.
