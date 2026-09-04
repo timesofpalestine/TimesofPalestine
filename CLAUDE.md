@@ -35,6 +35,21 @@ everything it builds:
   removes these hooks; a starving section means "add feeds and topics",
   never "hide the section".
 
+## Front-page flow (owner order 2026-09-04)
+
+The front page reads in the order of a great newspaper, fixed in
+`FRONT_FLOW` (`build.py`) and recorded in `editorial/design-system.md`:
+hero zone and the two slim strips, then the news of the ground (Gaza, West
+Bank, Palestinians in Israel, Prisoners, Her Story), the numbers ledger
+right after the block it counts, then power and money (Politics, Economy,
+Arab Support, Accountability), then depth and the press desks, then
+Opinion, then society, culture and sport, then service and memory (Field
+Reports, Financial Freedom, On This Day, More News, Archive). Nothing but
+those strips sits between the hero and the first Gaza story; Opinion never
+rides above the news; `SECTION_ORDER` derives from the same list. Any
+agent adding a section or band places it in `FRONT_FLOW` by this logic
+and updates the design system in the same PR.
+
 ## Owner decisions currently in force (2026-07-29)
 
 1. **The AI newsroom is ON — deliberately.** The build uses the Anthropic API

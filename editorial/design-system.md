@@ -294,6 +294,24 @@ load-bearing statistic — one or two per story, never as decoration.
   Telegram is a single quiet inline line (`.alt`) under the sub text, the
   QR sits small (84px) beside the button, and the safety note keeps its
   full-width hairline row (condensed 2026-08-06 — no competing buttons).
+- **Front-page flow** (`FRONT_FLOW` in `build.py`, owner order 2026-09-04):
+  the front runs in five movements, and every band has an assigned place.
+  Chrome: ticker → masthead → sections bar → numbers strip → hero zone →
+  running-files strip → specials band (the gold franchise row keeps its
+  place directly under the news zone so the pinned campaign, TOP 100 and
+  scholarship cards stay in the first two screens). Then: I. on the ground
+  (Gaza, West Bank, Palestinians in Israel, Prisoners, Her Story) →
+  the Palestine by the Numbers ledger, placed right after the block whose
+  tolls it counts → II. power and money (Politics, Economy, Arab Support,
+  Accountability) → III. depth and what others are saying (Investigations,
+  Israeli Press, US Press), then Opinion → IV. society, culture, sport
+  (Health, Human Stories, Diaspora, Arts, Sports) → V. service and memory
+  (Field Reports, Financial Freedom, On This Day, More News, Archive) →
+  tip band → newsletter. Rule: nothing that is not the day's news sits
+  between the hero zone and the first Gaza story except the two slim
+  strips; Opinion never rides above the news; `SECTION_ORDER` is derived
+  from the same list so the All-Sections panel, the footer index, the
+  search chips and the section pages all read in the paper's order.
 - **Lead-and-list section** (`.grid.lead`, design pass 2026-09-04): a
   front-page section with four stories renders its newest as a LEAD card
   (art, 1.45rem serif headline, its dek) spanning three rows on the
