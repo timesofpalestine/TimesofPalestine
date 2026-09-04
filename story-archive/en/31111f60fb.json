@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://imemc.org/article/israeli-police-kill-palestinian-in-jerusalem",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-police-kill-palestinian-east-jerusalem-another-shot-dead-south",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "31111f60fb",
- "score": 63.44,
+ "score": 63.18,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
