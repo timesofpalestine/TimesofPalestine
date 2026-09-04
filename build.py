@@ -242,8 +242,22 @@ def clean_dek(text):
     t = re.sub(r"https?://\S+", "", t)                  # bare links
     t = re.sub(r"(?:#[\w؀-ۿ]+\s*){2,}", "", t)  # hashtag runs
     t = re.sub(r"watch more here:?\s*", "", t, flags=re.I)
-    t = re.sub(r"\s+", " ", t).strip(" .·|-—")
-    return t + "." if t else ""
+    t = re.sub(r"\s+", " ", t).strip()
+    # Feeds cut their summaries at a byte count, mid-word («وقال الباح»),
+    # and the old rule then stamped a full stop on the fragment (front
+    # render 2026-09-04: 24 Arabic deks in three days ended that way). A
+    # summary that does not end on punctuation loses its trailing fragment
+    # when a sentence end precedes it, and otherwise ends with an ellipsis.
+    ended = bool(re.search(r"[.!?؟…»\"”)]\s*$", t))
+    t = t.strip(" .·|-—")
+    if not t:
+        return ""
+    if ended:
+        return t if re.search(r"[!?؟…»\"”)]$", t) else t + "."
+    m = re.search(r"[.!?؟…]\s+[^.!?؟…]*$", t)
+    if m and len(t[m.start() + 1:].split()) <= 4:
+        return t[:m.start() + 1]
+    return t + "…"
 
 # Arabic outlets often string several stories into one headline separated by "..",
 # which renders as five or six lines. Keep at most two sentences and always end on a
@@ -1998,7 +2012,10 @@ def write_brief(client, item):
               "the retry — refused, will regenerate next build")
         item["brief_refused"] = True
         return None
-    item["title"] = truncate(new_title, 120)
+    # A headline never ends with a full stop (front render 2026-09-04: 35 of
+    # 291 English wire headlines in three days carried one). Question marks,
+    # exclamations and an honest ellipsis stay; an abbreviation dot stays.
+    item["title"] = truncate(re.sub(r"(?<![A-Z])\.+$", "", new_title.strip()).rstrip(), 120)
     return text
 
 
