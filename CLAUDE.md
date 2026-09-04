@@ -254,7 +254,12 @@ everything it builds:
    governor learns each edition's real price from the runs it records.
    `python3 budget_ledger.py --forecast` says what the month buys and what
    each bigger budget would — the owner turns the one knob with that in
-   hand, and no agent turns it for them.
+   hand, and no agent turns it for them. **Owner override (owner order
+   2026-09-04, given while raising the knob to $300):** a MANUAL run of the
+   daily editor (Actions → Run workflow → edition: light/full) names its
+   edition and skips the purse check for that run only; scheduled runs stay
+   governed and every run still records its spend. Only the owner dispatches
+   an override; no agent triggers one on its own initiative.
 
 ## Division of labor (suggested, not exclusive)
 
