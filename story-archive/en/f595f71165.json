@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/thursday-invasions-violations-and-abductions-in-west-bank",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-injures-two-palestinian-children-occupied-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-04T01:33:06+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "f595f71165",
- "score": 61.23,
+ "score": 58.39,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
