@@ -6,7 +6,19 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-israeli-forces-open-fire-elderly-palestinian-gazas-beit-lahia",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-12-palestinians-in-gaza-including-three-children-a-woman-and-an-elderly-man",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israel-kills-child-and-another-palestinian-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-03T23:58:02+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "7a9dfd41bf",
- "score": 46.14,
+ "score": 45.89,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
