@@ -132,11 +132,18 @@ land in a specific window.
   cleansing (covered today as `nyt-israeli-generals-ethnic-cleansing-2026-09-01.*`),
   with 3,200+ Palestinians driven out in 2024 on the Times's figures. The
   refresh takes the September OCHA/OHCHR numbers and names the villages
-  added since 8 August. **Still open as of 2026-09-02** — this cycle went to
-  four stale sections and did not have research time for a fresh OCHA
-  village-by-village pull; the next cycle takes it first. Partial material
-  is now on file: the fire ledger and the six-attacks-a-day OCHA average
-  gathered for `west-bank-fire-crews-arson-2026-09-02.*` carry over.
+  added since 8 August. Still open as of 2026-09-02 (that cycle went to
+  four stale sections). ✅ **September refresh filed 2026-09-04** —
+  `west-bank-displacement-ledger-2026-09-04.*`: OCHA's 29 August count (79
+  killed incl. 19 children, ~1,870 injured, 23 killed and 1,040+ injured by
+  settlers, 80 attacks in the fortnight to 24 August), HRW's 20 August
+  report (107 communities, ~5,900 people, 6.6 attacks a day), the
+  Commission's August ledger (2,030 attacks: 1,402 by forces, 628 by
+  settlers), B'Tselem's count of Khirbet al-Tabban as the 66th community
+  emptied since 7 October 2023, and the new entries by name — Qusra,
+  al-Mughayyir, al-Tabban, the Area A seizure orders in Jenin (Amnesty,
+  3 Sept), Deir Shams and Hamrush. Next refresh: first week of October, at
+  the olive-harvest opening.
 - **Reconstruction-money tracker refresh** (`gaza-reconstruction-money`
   after its launch): pledges vs transfers vs rubble, dashboard updated.
 
@@ -219,6 +226,15 @@ land in a specific window.
     civil defence spokesman Nael al-Azza both attributed), the Ein Siniya
     burn of roughly fifty dunams, and OCHA's average of six settler attacks
     a day. Filed as the October olive-harvest burn window opens.
+    A third Real Lives original ran on 2026-09-04 to clear the humans
+    section again in both editions (36h/38h stale at the start of the
+    cycle): `gaza-dentist-tent-clinic-abo-halima-2026-09-04.*` — a trade
+    profile of Rizq Sufyan Abo Halima, 31, who has opened a dental practice
+    three times in three years and now works from a tent in al-Nasr, Gaza
+    City, pricing extractions at 50 shekels against the 1,000-dollar
+    apartment rents that priced the surviving clinics out of reach. Written
+    as craft and economics, not as grief; Al Jazeera's Nour Abo Aisha
+    attributed once inline.
 - **Arabic-first commissioning:** 2–3 originals per month reported for the
   Arabic reader first (Arab Support and Her Story are the natural homes),
   then rendered into English.
@@ -354,6 +370,22 @@ land in a specific window.
     category covers, so the share fell despite the conversions. The standing
     note holds and is the only thing that keeps pace with the desks' daily
     volume: check `media-rights.json` for a cleared portrait while writing.
+  - 2026-09-04: 167 cover-led of 414 originals at the start of the cycle
+    (photo-led share 0.597, per the offline fixture build). Two already
+    published reports converted to Commons photographs of their subjects,
+    each keeping a category cover as `imageFallback:` —
+    `turkey-interpol-netanyahu-red-notice-2026-08-22` onto Interpol's Lyon
+    headquarters (Jean-Marc Brivet, CC BY-SA 3.0) and
+    `uk-settlement-trade-ban-2026-08-26` onto the Foreign and Commonwealth
+    Office courtyard on King Charles Street (Christine Matthews / Geograph,
+    CC BY-SA 2.0); both are new manifest entries and clear the Interpol and
+    Whitehall beats for future items. Nine of today's nineteen originals
+    shipped photo-led from the first build on already-cleared assets (Qusra
+    village ×2, Ben Gvir ×2, the Palestine Trade Tower, Israel Katz, 10
+    Downing Street, the US Capitol, Netanyahu, Turmus Ayya). The roundups,
+    the Nazareth item, the dentist profile, the Taybeh file, the Amnesty
+    statement and the two think-tank pieces had no cleared photograph of
+    their subject and shipped on category covers.
 - ✅ **US-press wire feeds repaired 2026-08-11.** Four of the desk's
   think-tank feeds were dying on every sweep. CSIS and CFR now point at
   working endpoints, `israeli_press_fetch.py` resolves the HTML entities
