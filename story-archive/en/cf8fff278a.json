@@ -7,12 +7,6 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
-  },
-  {
-   "article": "https://www.amnesty.org/en/latest/news/2026/09/israel-opt-israel-steps-up-annexation-measures-with-unlawful-land-seizure-orders-in-the-occupied-west-bank",
-   "name": "Amnesty International",
-   "url": "https://www.amnesty.org/",
-   "verified": false
   }
  ],
  "date": "2026-09-04T01:06:00+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": true,
  "pid": "cf8fff278a",
- "score": 86.52000000000001,
+ "score": 86.41,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
