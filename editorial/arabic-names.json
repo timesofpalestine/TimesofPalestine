@@ -598,6 +598,51 @@
     "كيتسيوت"
    ],
    "verified": "mawteni48 + samanews + alghad, 2026-09-02"
+  },
+  {
+   "latin": "Heba Morayef (Amnesty MENA regional director)",
+   "ar": "هبة مرايف",
+   "wrong": [
+    "هبة مرايوف",
+    "هبة مورايف"
+   ],
+   "verified": "alaraby.co.uk + sana.sy coverage of the Area A seizure-orders statement, 2026-09-04"
+  },
+  {
+   "latin": "Tally Gotliv (Likud MK moving to Otzma Yehudit)",
+   "ar": "تالي غوتليف",
+   "wrong": [
+    "طالي غوتليب",
+    "تالي غوتليب"
+   ],
+   "verified": "ar.wikipedia + ar.timesofisrael topic page + felesteen.news, 2026-09-04"
+  },
+  {
+   "latin": "Rizq Sufyan Abo Halima (Gaza City dentist)",
+   "ar": "رزق أبو حليمة",
+   "wrong": [
+    "رزق أبو حليمه",
+    "رزق ابو حليمة"
+   ],
+   "verified": "aawsat.com + alkhaleej.ae features on his tent clinic, 2026-09-04"
+  },
+  {
+   "latin": "Mahmoud Biatra (Nazareth, killed 2026-09-03)",
+   "ar": "محمود بياطرة",
+   "wrong": [
+    "محمود بياترا",
+    "محمود بياطره"
+   ],
+   "verified": "arab48 breaking report 2026-09-03 + bokra.net, 2026-09-04"
+  },
+  {
+   "latin": "Jonathan Kuttab (Palestinian-American lawyer)",
+   "ar": "جوناثان كتّاب",
+   "wrong": [
+    "جوناثان كتاب",
+    "جوناثان قطّاب"
+   ],
+   "verified": "surname per this lexicon's verified entry for داود كتّاب (his brother's own Arabic byline); first name standard rendering — no Arabic coverage of the Taybeh suit found 2026-09-04, re-verify when one appears"
   }
  ]
 }
