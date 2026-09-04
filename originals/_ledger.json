@@ -4,7 +4,7 @@
   "briefs": 14.755083,
   "investigations": 5.559131,
   "washington": 14.2065,
-  "editor": 41.71398
+  "editor": 61.04659
  },
  "tags": {
   "briefs:rewrite": 2.815847,
@@ -13,6 +13,14 @@
   "briefs:retry-short": 3.132222,
   "briefs:retry-diction": 0.001867
  },
- "runs": {},
- "updated": "2026-09-04T01:05:17.699614+00:00"
+ "runs": {
+  "editor": [
+   {
+    "ts": "2026-09-04T01:09:03.410709+00:00",
+    "usd": 19.3326,
+    "tier": "full"
+   }
+  ]
+ },
+ "updated": "2026-09-04T01:09:03.410719+00:00"
 }
