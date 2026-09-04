@@ -1,0 +1,45 @@
+{
+ "brief": "قوات الاحتلال أطلقت النار من آلياتها تجاه المناطق الشرقية لمخيم البريج وسط قطاع غزة، وفقاً لقناة غزة الآن على تيليغرام. وجاء الإطلاق النار في سياق التوترات المستمرة في المخيم الذي يشهد تحركات عسكرية متكررة للقوات الإسرائيلية.\n\nلم تفصح القناة عن تفاصيل إضافية بشأن عدد الإصابات أو حجم الأضرار الناجمة عن العملية. وتشهد المناطق الشرقية للمخيم، الذي يضم آلاف النازحين، حالة من عدم الاستقرار الأمني المتواصل منذ بدء العدوان على القطاع.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82624",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/734212",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/319415",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-04T20:38:59+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82624",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "07a08bc7c9",
+ "score": 63.87,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "الاحتلال يطلق النار على مخيم البريج وسط غزة"
+}
