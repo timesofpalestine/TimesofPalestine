@@ -211,7 +211,15 @@ and updates the design system in the same PR.
    franchises, via a `claude/daily-editor-<date>` PR merged on green CI. Other
    agents: expect a daily PR with this prefix; don't revert its layers —
    disagreements go to issue #6. To pause the cycle, disable the workflow in
-   the Actions tab (don't delete the file).
+   the Actions tab (don't delete the file). **Nothing stays only on the
+   runner (loss of 2026-09-04):** the Opus edition ended its turn with
+   fifteen finished stories uncommitted, waiting on a background build the
+   action never re-invokes for, and the whole $17.58 edition was lost. The
+   editor now runs every build and test in the foreground, pushes its
+   branch after the first story and keeps pushing, and the workflow's
+   rescue step commits and pushes whatever a run leaves behind as a draft
+   PR before the ledger step resets the checkout. No agent removes that
+   step or reintroduces background waits in the editor's prompt.
 11. **Weekly maintenance cycle (owner directive 2026-08-31):** Claude runs
    `.github/workflows/weekly-maintenance.yml` every Monday (03:30 UTC) — a
    standing engineering sweep ordered after an overflowing SVG pushed
