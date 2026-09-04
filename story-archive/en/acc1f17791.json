@@ -1,0 +1,39 @@
+{
+ "brief": "The Palestinian Centre for Human Rights condemned statements by Israeli Defense Minister Israel Katz outlining a plan to forcibly displace large numbers of Palestinians from Gaza by sea, land, and air, the organization reported. PCHR characterized the displacement scheme as evidence of a systematic policy of ethnic cleansing and genocide.\n\nKatz had reiterated that the forced displacement plan has been prioritized within Israel's current strategy, according to PCHR. The defense minister's remarks represent official Israeli intent to remove Palestinian populations from the territory, the rights group said. PCHR's statement framed the minister's public statements as confirmation of what the organization views as longstanding Israeli policy toward Gaza residents.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://pchrgaza.org/katz-statements-on-immigration-of-gaza-residents-further-confirm-israels-systematic-policy-of-ethnic-cleansing-and-genocide",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-04T07:07:00+00:00",
+ "dek": "The Palestinian Centre for Human Rights (PCHR) strongly condemns the latest statements by Israeli Defense Minister Israel Katz, in which he reiterated that a plan is ready to forcibly displace large numbers of Palestinians from the Gaza Strip “by sea, land and air,” and that this course of action has been prioritized within Israel’s current.",
+ "dup_of": null,
+ "image": "https://pchrgaza.org/wp-content/uploads/2026/09/020826_Gaza_BO_0233-1.jpg",
+ "lang": "en",
+ "link": "https://pchrgaza.org/katz-statements-on-immigration-of-gaza-residents-further-confirm-israels-systematic-policy-of-ethnic-cleansing-and-genocide",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "Palestinian Centre for Human Rights",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://pchrgaza.org/katz-statements-on-immigration-of-gaza-residents-further-confirm-israels-systematic-policy-of-ethnic-cleansing-and-genocide"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "acc1f17791",
+ "score": 71.77,
+ "source": "Palestinian Centre for Human Rights",
+ "source_id": "pchr",
+ "source_url": "https://pchrgaza.org/",
+ "title": "Israeli defense minister's displacement plan condemned as ethnic cleansing"
+}
