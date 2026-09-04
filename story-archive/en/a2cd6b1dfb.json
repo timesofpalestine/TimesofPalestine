@@ -7,18 +7,6 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
-  },
-  {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/4/jerusalem-daily-israels-plan-to-expel-gazas-population?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
   }
  ],
  "date": "2026-09-04T01:11:00+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": true,
  "pid": "a2cd6b1dfb",
- "score": 87.0,
+ "score": 86.97,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
