@@ -19,6 +19,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-03T19:44:00+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "bec9591423",
- "score": 44.4,
+ "score": 44.15,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
