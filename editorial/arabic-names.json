@@ -643,6 +643,46 @@
     "جوناثان قطّاب"
    ],
    "verified": "surname per this lexicon's verified entry for داود كتّاب (his brother's own Arabic byline); first name standard rendering — no Arabic coverage of the Taybeh suit found 2026-09-04, re-verify when one appears"
+  },
+  {
+   "latin": "Ahmed Sardah",
+   "ar": "أحمد سرداح",
+   "wrong": [
+    "سردح",
+    "سرداه"
+   ],
+   "verified": "daraj.media + alresalah.news + felesteen.news, 2026-09-05"
+  },
+  {
+   "latin": "Taghreed al-Daya",
+   "ar": "تغريد الداية",
+   "wrong": [
+    "الدايا"
+   ],
+   "verified": "felesteen.news + palinfo.com + qudsn.co, 2026-09-05"
+  },
+  {
+   "latin": "Raghad Banat",
+   "ar": "رغد بنات",
+   "wrong": [
+    "بانات"
+   ],
+   "verified": "felesteen.news, 2026-09-05"
+  },
+  {
+   "latin": "Ahmad Abu Qimr",
+   "ar": "أحمد أبو قمر",
+   "wrong": [
+    "أبو قمار",
+    "أبو قمير"
+   ],
+   "verified": "aljazeera.net + noonpost.com, 2026-09-05"
+  },
+  {
+   "latin": "Rami Abdu",
+   "ar": "رامي عبده",
+   "wrong": [],
+   "verified": "alresalah.news + daraj.media + euromedmonitor.org/ar, 2026-09-05"
   }
  ]
 }
