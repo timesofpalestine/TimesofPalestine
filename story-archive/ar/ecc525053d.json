@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/319537",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
    "article": "https://felesteen.news/post/185884/%D8%BA%D8%A7%D8%B1%D8%A7%D8%AA-%D9%88%D8%AA%D9%81%D8%AC%D9%8A%D8%B1%D8%A7%D8%AA-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D9%81%D9%8A-%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D8%A8%D9%86%D8%A7%D9%86",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
@@ -46,7 +40,7 @@
   }
  ],
  "date": "2026-09-05T07:40:47+00:00",
- "dek": "قال مراسل الجزيرة إن طائرة مسيرة إسرائيلية شنت غارة على بلدة النبطية الفوقا جنوبي لبنان، بينما أعلن جيش الاحتلال عن تنفيذ سلسلة هجمات على مواقع قال إنها تابعة لحزب الله.",
+ "dek": "قال مراسل الجزيرة إن طائرة مسيرة إسرائيلية شنت غارة على بلدة النبطية الفوقا جنوبي لبنان، بينما أعلن جيش الاحتلال تنفيذ سلسلة هجمات على مواقع قال إنها تابعة لحزب الله.",
  "dup_of": null,
  "image": "https://www.aljazeera.net/wp-content/uploads/2026/09/lbnan-1-1788599627.jpg?resize=1920%2C1440",
  "lang": "ar",
@@ -61,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "ecc525053d",
- "score": 60.49,
+ "score": 60.24,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",

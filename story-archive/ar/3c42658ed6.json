@@ -1,0 +1,39 @@
+{
+ "brief": "نفذ جيش الاحتلال الإسرائيلي عملية تفجير في بلدة بني حيان بجنوب لبنان، بحسب المركز الفلسطيني للإعلام. ولم تتضح حتى الآن تفاصيل العملية الكاملة أو الأهداف المعلنة منها، في وقت لم يصدر أي تعليق رسمي من السلطات الإسرائيلية حول طبيعة التفجيرات أو الأسباب التي دفعتها إلى تنفيذها.\n\nجاءت العملية في سياق التصعيد الأمني المستمر في المنطقة الحدودية بين لبنان وإسرائيل، حيث شهدت المنطقة توترات متكررة على مدى فترة من الوقت. ويأتي هذا الحادث إضافة إلى سلسلة من الحوادث الأمنية التي طالت المناطق الحدودية اللبنانية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319555",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/734336",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-05T12:39:04+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/TIK1jk8CpL4YW008_fyqi9gi9QkrE5RKIrNYkQDGY3lsvgCS1i-BHP7MA-FgfPGfIhF8eLm6z-NrtKOhZSDpE6jlg8QQmJ0vnaCQr9vncU6I1edVHKJN0dq6DEV_P1AlZR7gbyOWRdoOjqpuzzTZdfJlLsTCeVT0QF_f2lDdQls3SI2pzXK0BbCziQRJzsfU6_7U0N0QCKIBbutiIA_3CO-rOiOhrkoKA3v1MqYDOLx_6gFsFtk5Ri1eLgeyv5ITq2rvj7HsrVHH0XAM16URppm4TQ_KP0hG336gf2AKk3Z9BbeCtbXTSUYyrETqFvXfmN5_Ga57bJg-4AFNZ6bfuw.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319555",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/319555"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3c42658ed6",
+ "score": 63.69,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "إسرائيل تنفذ عملية تفجير في بني حيان اللبنانية"
+}
