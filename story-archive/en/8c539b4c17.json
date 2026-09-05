@@ -9,15 +9,39 @@
    "verified": true
   },
   {
-   "article": "https://imemc.org/article/israeli-forces-colonizers-escalate-attacks-in-the-west-bank",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-ambassador-to-israel-meets-palestinian-americans-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-violence-israeli-forces-open-fire-during-raid-settlers",
+   "article": "https://www.al-monitor.com/originals/2026/09/us-ambassador-visits-palestinian-town-amid-rise-west-bank-settler-violence",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-ambassador-calls-severe-consequences-stop-west-bank-violence",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48278",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/film/2026/sep/04/israel-director-amos-gitai-gaza-the-road-to-jericho-venice",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-colonizers-escalate-attacks-in-the-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
    "verified": true
   }
  ],
@@ -37,7 +61,7 @@
  "modified": null,
  "original": true,
  "pid": "8c539b4c17",
- "score": 113.08,
+ "score": 113.02,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
