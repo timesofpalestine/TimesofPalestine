@@ -460,10 +460,10 @@ def _toll_chart(lang, latest_total=None):
             return ""
         ar = lang == "ar"
         head = "الشهداء في غزة تراكمياً" if ar else "Gaza deaths, cumulative"
-        label = ("يعود المنحنى فور عودة السلسلة اليومية"
-                 if ar else "Trend returns when the daily series does")
         note = ("السلسلة اليومية غير متاحة الآن"
                 if ar else "Daily series temporarily unavailable")
+        label = ((note + " — يعود المنحنى فور عودة السلسلة اليومية") if ar
+                 else (note + " — trend returns when the daily series does"))
         return (
             f'<div class="gi-cell gi-spark"><figure class="toll-chart toll-chart-fallback" dir="ltr">'
             f'<svg viewBox="0 0 720 60" role="img" preserveAspectRatio="none" '
