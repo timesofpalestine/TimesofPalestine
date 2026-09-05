@@ -1,0 +1,33 @@
+{
+ "brief": "A man living in Glasgow has blamed the Home Office for his sister-in-law's death from cancer in Gaza, saying she would have survived had officials approved her visa application. Anwar said the denial prevented Maryam from receiving treatment in the UK, according to The Guardian. He believes she would still be alive had the Home Office granted her entry.\n\nThe case highlights ongoing disputes over visa decisions affecting Palestinians seeking medical care abroad. Maryam's application was rejected despite her cancer diagnosis, leaving her unable to access treatment outside Gaza's healthcare system.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/uk-news/2026/sep/05/gaza-refugee-visa-refusal-home-office",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-05T10:00:33+00:00",
+ "dek": "Anwar, who lives in Glasgow, says Home Office refused visa application despite Maryam having cancer A man living in the UK has said he believes his sister-in-law who died from cancer in Gaza would still be alive today if the Home Office had agreed to bring…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/9ac708749be218885612be0edce28f76ab14d983/223_0_6815_5452/master/6815.jpg?width=140&quality=85&auto=format&fit=max&s=52bef96c04ddd9414eac954b45f631a9",
+ "lang": "en",
+ "link": "https://www.theguardian.com/uk-news/2026/sep/05/gaza-refugee-visa-refusal-home-office",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/uk-news/2026/sep/05/gaza-refugee-visa-refusal-home-office"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2b08e045f3",
+ "score": 49.88,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "UK resident blames Home Office denial for sister-in-law's Gaza death"
+}
