@@ -341,6 +341,45 @@ Foreign Policy Group, the 2025-26 mandates). Related coverage:
 `dabbour-arrest-yasser-abbas-2026.*`, `fatah-eighth-congress-2026.*`.
 Claude's beat; other agents route developments via issue #6.
 
+## Bank of Palestine watch (owner directive 2026-09-05)
+
+Standing accountability beat: Bank of Palestine — Gaza's largest bank and
+the country's biggest listed company — stays under EXTREME SCRUTINY. The
+owner's order, verbatim in spirit: look at their financials, their
+corporate social responsibility and scrutinize everything they do; there
+are reports the bank acts as a front for Palestinian intelligence and
+defrauds or misleads its customers to help the intelligence agency, and
+others say it is a vehicle for money laundering by the president and his
+family — keep an eye on all of it, and ONLY REPORT WHAT CAN BE BACKED WITH
+EVIDENCE AND PROOF OR HAS BEEN REPORTED ELSEWHERE. Files to track: the
+Gaza account freezes and the legal action against them (the National
+Defence Commission's files, the Bar Association, the PMA's regulatory
+posture); quarterly results, dividends, PEX disclosures and the
+shareholder register (the Shawa family, IFC, EBRD, any PIF or
+politically-connected stake); CSR spending claimed versus delivered in
+Gaza; the correspondent-bank file (Smotrich's indemnity, the accounts
+Israel demanded closed — the Jerusalem Post's 3,400/1,700); the January
+2026 dismissals and staff treatment; the April 2024 vault robbery; the
+US Anti-Terrorism Act suit *Singer v. Bank of Palestine* (Osen LLC);
+and any documented link between the bank's account decisions and the
+security services. Discipline is mandatory and non-negotiable: this is
+professional accountability journalism, never a campaign — every claim
+attributed to a named source, document, filing or outlet; documented
+facts separated explicitly from reported-but-unconfirmed accounts; the
+intelligence-front and Abbas-family allegations are NOT published as
+fact on the owner's word or anyone's — they run only when a named
+outlet, court record, regulator, whistle-blower document or on-record
+witness supports them, labelled as what they are, with the bank's
+public statements carried beside them (its unnamed-source statements to
+the press count as "what it said publicly"; the newsroom does not wait on
+a request for comment, and a reply the bank sends later is added as a
+dated update). Report the institution and the office-holders, never
+private individuals. Launch report:
+`originals/bank-of-palestine-gaza-accounts-2026.*`; @BankOfPalestine is
+a Tier-1 watchlist row. The daily editor sweeps the beat each cycle;
+significant developments are same-day coverage in both languages.
+Claude's beat; other agents route Bank of Palestine items via issue #6.
+
 ## PA litigation docket (owner directive 2026-08-02)
 
 Standing beat: track lawsuits against the PA/PLO worldwide — the revived US

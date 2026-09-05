@@ -40,6 +40,7 @@ Rules of use:
 | Mohammad Dahlan — Facebook (verified page) | Exiled Fatah leader | Kushner channel; Gaza governance file |
 | @joekent16jan19 | Joe Kent, ex-NCTC director | Owner-flagged 2026-08-07: important voice on Israel's role in American policy — resigned over the Iran war blaming Israeli pressure, now campaigns against deeper US-Israel military integration (NDAA Section 219). Track what he says on Israel and its role in America; significant statements are same-day coverage in both languages, always as attributed claims with the counter-voices (McConnell, mainstream pushback) carried beside them. |
 | @amnesty / @amnestyusa | Amnesty International (global + US section) | Owner-flagged 2026-08-15: reliable source and standing rights-wire. Statements, findings and reports on Israel/OPT are same-day coverage in both languages, always attributed to the named official with title and date; its documented findings (apartheid, Qusra state-backing) may be cited as the organization's findings, never adopted unattributed as the paper's voice. RSS feeds (`amnesty`, `amnesty-ar` in feeds.json) carry the items into the wire desk. |
+| @BankOfPalestine | Bank of Palestine, official channel | Bank of Palestine watch (owner directive 2026-09-05): results, dividends, branch reopenings, statements on the Gaza account freezes — its public word is what the paper carries, beside the depositors' complaints |
 
 ## Tier 2 — journalists and witnesses on the ground
 
