@@ -1,0 +1,33 @@
+{
+ "brief": "The Israeli army had coordinated the planning of a humanitarian food delivery in Gaza on April 1, 2024, yet the operation collapsed into tragedy when an airstrike killed seven international aid workers from World Central Kitchen, The Guardian reported. The convoy was traveling toward Rafah when the incident occurred, with complications emerging from the operation's outset.\n\nThe strike represented a major loss for the aid organization operating within the active conflict zone. The workers were part of a coordinated relief effort, making their deaths a significant blow to humanitarian operations in Gaza. The circumstances that led from the jointly planned delivery to the fatal airstrike remain under investigation.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/05/gaza-aid-workers-world-central-kitchen-idf-israel",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-05T00:00:21+00:00",
+ "dek": "The Israeli army had helped plan the delivery of food aid on 1 April 2024, but things went wrong from the beginning and ended in seven deaths • Exclusive: why seven international aid workers were killed in Israeli airstrike On the evening of 1 April 2024, a…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/1a1e763a577b220d5526ca99a23cd8aaf1c1cda4/214_0_4320_3456/master/4320.jpg?width=140&quality=85&auto=format&fit=max&s=8a7a7948a25529bdcbceee5f4804ba5f",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/sep/05/gaza-aid-workers-world-central-kitchen-idf-israel",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/sep/05/gaza-aid-workers-world-central-kitchen-idf-israel"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4bab33c956",
+ "score": 63.87,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli airstrike kills seven World Central Kitchen workers in Gaza aid convoy"
+}
