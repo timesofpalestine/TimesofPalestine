@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/9/5/gaza-teams-recover-remains-of-55-people-nearly-3-years-after-israeli-strike?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/55-bodies-remains-malka-family-recovered-rubble-gazas-zeytoun",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-05T16:17:47+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "fc6d93acc1",
- "score": 63.4,
+ "score": 63.2,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
