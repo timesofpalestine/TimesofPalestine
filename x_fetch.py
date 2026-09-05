@@ -94,8 +94,18 @@ BROWSER_UA = {"User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb
               "Accept-Language": "en-US,en;q=0.8,ar;q=0.6"}
 
 
-def page_text(url, timeout=25):
-    req = urllib.request.Request(url, headers=BROWSER_UA)
+CRAWLER_UA = {"User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+              "Accept-Language": "en-US,en;q=0.8,ar;q=0.6"}
+_LOGIN_WALL_RX = re.compile(r"log ?in or sign ?up|/login\.php|/login/\?|not available on this browser", re.I)
+
+
+def _is_wall(got):
+    return bool(_LOGIN_WALL_RX.search(got["final_url"] + " " + got["title"] + " "
+                                      + got["meta"].get("og:title", "") + " " + got["text"][:300]))
+
+
+def page_text(url, timeout=25, headers=None):
+    req = urllib.request.Request(url, headers=headers or BROWSER_UA)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         raw = r.read(1_500_000)
         final = r.geturl()
@@ -117,19 +127,24 @@ def page_text(url, timeout=25):
 
 
 def _page_variants(url):
-    yield url
-    m = re.match(r"https?://(?:www\.|web\.)?facebook\.com/(.*)$", url)
+    m = re.match(r"https?://(?:www\.|web\.|m\.|mbasic\.)?facebook\.com/(.*)$", url)
     if m:
         path = m.group(1)
         ev = re.search(r"/(\d{10,20})/?", "/" + path)
         if ev and "/events/" in "/" + path:
             path_ev = f"events/{ev.group(1)}/"
-            yield f"https://m.facebook.com/{path_ev}"
-            yield f"https://mbasic.facebook.com/{path_ev}"
-            yield f"https://www.facebook.com/{path_ev}"
+            # Facebook serves the Open Graph card of an event to crawlers
+            # without a session; browsers get a login wall. Crawler first.
+            yield f"https://www.facebook.com/{path_ev}", CRAWLER_UA
+            yield f"https://m.facebook.com/{path_ev}", CRAWLER_UA
+            yield f"https://mbasic.facebook.com/{path_ev}", BROWSER_UA
+            yield f"https://www.facebook.com/{path_ev}", BROWSER_UA
         else:
-            yield f"https://m.facebook.com/{path}"
-            yield f"https://mbasic.facebook.com/{path}"
+            yield f"https://www.facebook.com/{path}", CRAWLER_UA
+            yield f"https://m.facebook.com/{path}", CRAWLER_UA
+            yield f"https://mbasic.facebook.com/{path}", BROWSER_UA
+    yield url, BROWSER_UA
+    yield url, CRAWLER_UA
 
 
 def fetch_pages(urls):
@@ -138,18 +153,28 @@ def fetch_pages(urls):
         print(f"\n=== PAGE {url} ===")
         got = None
         errors = []
-        for variant in _page_variants(url):
+        best = None
+        for variant, ua in _page_variants(url):
             try:
-                got = page_text(variant)
+                attempt = page_text(variant, headers=ua)
             except Exception as exc:   # noqa: BLE001 — try the next host
                 errors.append(f"{variant}: {type(exc).__name__}: {exc}")
                 continue
+            if _is_wall(attempt):
+                errors.append(f"{variant} ({ua['User-Agent'][:20]}…): login wall")
+                best = best or attempt
+                continue
+            got = attempt
             if got["meta"].get("og:description") or len(got["text"]) > 400:
                 break
+        if not got and best:
+            got = best  # every host walled: print the wall so the log says so
         if not got:
             print("ERROR: could not fetch: " + " | ".join(errors))
             continue
-        ok += 1
+        ok += 0 if _is_wall(got) else 1
+        if _is_wall(got):
+            print("WARNING: every host returned a login wall — " + " | ".join(errors))
         print(f"final:  {got['final_url']}")
         print(f"title:  {got['title']}")
         for k in ("og:title", "og:description", "description", "twitter:title", "twitter:description"):
