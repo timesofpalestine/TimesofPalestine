@@ -1533,6 +1533,17 @@ class GazaNumbersTests(unittest.TestCase):
         # the note reaches screen readers via the marker's aria-label
         self.assertIn('aria-label="اعتقال بأمر عسكري إسرائيلي', ar)
 
+    def test_panel_keeps_a_chart_slot_when_daily_series_is_down(self):
+        old = self.gp._get_json
+        self.gp._get_json = lambda url: (_ for _ in ()).throw(OSError()) if url == self.gp.DAILY_URL else old(url)
+        try:
+            html = self.gp.panel("en")
+        finally:
+            self.gp._get_json = old
+        self.assertIn('class="toll-chart toll-chart-fallback"', html)
+        self.assertIn("Daily series temporarily unavailable", html)
+        self.assertIn('aria-label="Gaza deaths, cumulative: 68,643', html)
+
     def test_csv_export_mirrors_the_payload_with_bilingual_labels(self):
         import csv as _csv
         import io as _io
