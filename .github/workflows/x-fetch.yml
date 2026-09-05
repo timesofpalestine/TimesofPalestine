@@ -4,12 +4,12 @@
 # sends Claude a post link, Claude dispatches this workflow with it, and
 # reads the post's author, date and full text back from the job log —
 # no screenshots needed. Fetches public posts only, no secrets involved.
-name: Fetch X post text
+name: Fetch X post text or a public page
 on:
   workflow_dispatch:
     inputs:
       url:
-        description: "X/Twitter post URL(s) or status ID(s) — space/comma separated"
+        description: "X/Twitter post URL(s) or status ID(s), or any public page URL (e.g. a Facebook event) — space/comma separated"
         required: true
         type: string
 permissions: {}
