@@ -7,6 +7,12 @@
    "name": "Times of Palestine",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-colonizers-escalate-attacks-in-the-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
   }
  ],
  "date": "2026-09-04T01:09:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": true,
  "pid": "8c539b4c17",
- "score": 114.66,
+ "score": 114.6,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
