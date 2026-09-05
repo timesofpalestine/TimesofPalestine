@@ -6,25 +6,13 @@
    "article": "https://t.me/Palinfo/319592",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/AlQastalps/393018",
-   "name": "القسطل · تيليغرام",
-   "url": "https://t.me/AlQastalps",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/734393",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-05T17:58:39+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
  "lang": "ar",
  "link": "https://t.me/Palinfo/319592",
  "max_age_hours": 72,
@@ -37,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "907ea53ef5",
- "score": 63.1,
+ "score": 62.54,
  "source": "المركز الفلسطيني للإعلام",
  "source_id": "tg-palinfo",
  "source_url": "https://t.me/palinfo",

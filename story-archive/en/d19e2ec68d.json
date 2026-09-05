@@ -1,0 +1,45 @@
+{
+ "brief": "Mike Huckabee visited Jerusalem while settlers attacked Palestinians and Israeli forces conducted raids and arrests across the territory, according to Al Jazeera English. The former U.S. presidential candidate's trip to the city coincided with a sharp escalation in confrontations in the occupied West Bank.\n\nThe incidents included multiple settler assaults on Palestinian communities, overnight operations by Israeli security forces targeting homes and individuals, and temporary movement restrictions affecting Palestinian towns and villages. Arrests were made during the raids, though specific numbers and locations were not immediately clear.\n\nThe violence and security operations reflected the broader cycle of tension between Israeli settlers, Palestinians, and Israeli military and police forces in disputed areas of the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/5/jerusalem-daily-raids-settlers-sieges?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/us-ambassador-visits-palestinian-town-amid-rise-west-bank-settler-violence",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-ambassador-calls-severe-consequences-stop-west-bank-violence",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-05T19:37:10+00:00",
+ "dek": "Mike Huckabee visits as settlers attack Palestinians, Israeli forces carry out raids and arrests.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788637003.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/5/jerusalem-daily-raids-settlers-sieges?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/5/jerusalem-daily-raids-settlers-sieges?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d19e2ec68d",
+ "score": 63.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Settlers attack Palestinians as Huckabee visits Jerusalem"
+}
