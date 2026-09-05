@@ -440,6 +440,15 @@ class PurseTests(unittest.TestCase):
         prompt = text[:rescue]
         self.assertIn("FOREGROUND", prompt)
         self.assertIn("never end your turn", prompt)
+        # Run #42 (2026-09-05): the light edition died at its 90-turn cap
+        # with fourteen stories written and no PR. The prompt names the cap
+        # and the pacing; the rescue never sweeps story-archive/ and falls
+        # back to an issue when GITHUB_TOKEN may not open a PR.
+        self.assertIn("TURN BUDGET: this run has ${{ steps.budget.outputs.max_turns }}", prompt)
+        self.assertIn("':!story-archive'", step)
+        self.assertIn("gh issue create", step)
+        cfg = json.loads((ROOT / "editorial" / "budget.json").read_text(encoding="utf-8"))
+        self.assertGreaterEqual(cfg["tiers"]["editor"]["light"]["max_turns"], 180)
 
     def test_wire_calls_are_tagged(self):
         src = (ROOT / "build.py").read_text(encoding="utf-8")

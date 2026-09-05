@@ -100,6 +100,13 @@ jobs:
 
             TODAY'S EDITION TIER: ${{ steps.budget.outputs.tier }}. The budget
             governor (editorial/budget.json, owner order 2026-09-01) chose it.
+            TURN BUDGET: this run has ${{ steps.budget.outputs.max_turns }}
+            tool turns in total and FAILS at the cap (run #42, 2026-09-05,
+            died at turn 90 with fourteen stories written and no PR). Pace
+            the edition to the cap: push the branch after the first story,
+            open the PR by two-thirds of the turns, and spend the last third
+            on checks and the merge — a smaller edition that ships beats a
+            larger one that dies on the runner.
             FULL = the whole mandate below. LIGHT = the non-negotiables ONLY:
             the BREAKING SWEEP, the SECTION FRESHNESS CHECK (every STALE
             section filed), MARKETS WATCH, RUNNING FILES deks, the ISRAELI
@@ -333,7 +340,10 @@ jobs:
           BR="claude/daily-editor-${DAY}"
           CUR=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
           case "$CUR" in claude/daily-editor-*) BR="$CUR";; esac
-          DIRTY=$(git status --porcelain -- . ':!originals/_ledger.json' | wc -l)
+          # story-archive/ is the persist step's to write — a local build.py run
+          # leaves hundreds of archive records dirty and they never belong in a
+          # rescue commit (run #42 carried 410 of them).
+          DIRTY=$(git status --porcelain -- . ':!originals/_ledger.json' ':!story-archive' | wc -l)
           AHEAD=$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)
           echo "rescue: branch=$CUR dirty=$DIRTY ahead-of-main=$AHEAD"
           if [ "$DIRTY" -eq 0 ] && [ "$AHEAD" -eq 0 ]; then
@@ -341,7 +351,7 @@ jobs:
           fi
           [ "$CUR" = "$BR" ] || git checkout -B "$BR"
           if [ "$DIRTY" -gt 0 ]; then
-            git add -A -- . ':!originals/_ledger.json'
+            git add -A -- . ':!originals/_ledger.json' ':!story-archive'
             git commit -q -m "Daily editor ${DAY}: work rescued from the runner
 
           The editor's turn ended before this work was pushed; the workflow's
@@ -355,10 +365,19 @@ jobs:
           fi
           git push -u origin "HEAD:$BR" || { echo "::warning::rescue push failed"; exit 0; }
           if ! gh pr list --head "$BR" --state open --json number --jq 'length' 2>/dev/null | grep -q '^[1-9]'; then
-            gh pr create --draft --base main --head "$BR" \
+            # GITHUB_TOKEN may not create PRs (repo setting "Allow GitHub Actions
+            # to create and approve pull requests", off by default — run #42's
+            # rescue hit exactly that). Then an issue carries the branch to the
+            # owner instead, so the rescued edition is never silent.
+            if ! gh pr create --draft --base main --head "$BR" \
               --title "Daily editor: ${DAY} — unshipped work rescued from the runner" \
-              --body "The editor's run ended before this work was committed and pushed. The workflow's rescue step saved it here for review. Check the build (\`python3 build.py\`) and the tests before merging." \
-              || echo "::warning::rescue PR not opened"
+              --body "The editor's run ended before this work was committed and pushed. The workflow's rescue step saved it here for review. Check the build (\`python3 build.py\`) and the tests before merging."; then
+              echo "::warning::rescue PR not opened — opening an issue instead"
+              gh issue create \
+                --title "Rescued edition ${DAY}: open a PR for branch ${BR}" \
+                --body "The daily editor's run ended before it shipped (see the run log). The rescue step pushed its work to \`${BR}\`, but GITHUB_TOKEN may not open pull requests here. Owner: open the PR from that branch (compare: https://github.com/${GITHUB_REPOSITORY}/compare/main...${BR}?expand=1), or enable Settings → Actions → General → 'Allow GitHub Actions to create and approve pull requests' so the next rescue opens it itself." \
+                || echo "::warning::rescue issue not opened either"
+            fi
           fi
           echo "::warning::rescued unshipped editorial work to $BR"
 
