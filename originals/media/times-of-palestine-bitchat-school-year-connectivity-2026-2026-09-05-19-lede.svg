@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Gaza teachers plan offline lessons for a broken network</title>
+  <desc id="dsc">Illustration showing a broken mobile phone tower with a no-signal symbol on the left, and a row of tent learning points on the right linked by dashed offline mesh connections, one link severed. Figures shown: 64 per cent of mobile towers out of service and Paltel losing 80 per cent of its 500-plus towers; 541,000 students, about 700 in-person learning points, 25 temporary schools, and school year start dates of 16 and 19 September.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- masthead -->
+  <text x="1540" y="70" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="3" fill="#c7a86b">TIMES OF PALESTINE</text>
+
+  <!-- title -->
+  <text x="90" y="110" font-family="'Source Serif 4',Georgia,serif" font-size="48" fill="#f2eee8">Gaza teachers plan offline lessons</text>
+  <text x="90" y="166" font-family="'Source Serif 4',Georgia,serif" font-size="48" fill="#f2eee8">for a broken network</text>
+  <text x="90" y="216" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d">معلمو غزة يخططون لدروس دون إنترنت</text>
+  <text x="90" y="250" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#aaa9a5">Sources: Ministry of Education and Higher Education; PCBS via Middle East Monitor; bitchat project</text>
+
+  <!-- ground -->
+  <line x1="120" y1="652" x2="1520" y2="652" stroke="#3a3b3f" stroke-width="2"/>
+
+  <!-- broken tower: lower section -->
+  <g stroke="#aaa9a5" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M250,650 L293,470"/>
+    <path d="M350,650 L307,470"/>
+    <path d="M262,610 L338,610"/>
+    <path d="M274,555 L326,555"/>
+    <path d="M286,500 L314,500"/>
+  </g>
+  <g stroke="#6d6c69" stroke-width="2.5" fill="none">
+    <path d="M250,650 L338,610 M350,650 L262,610"/>
+    <path d="M262,610 L326,555 M338,610 L274,555"/>
+    <path d="M274,555 L314,500 M326,555 L286,500"/>
+  </g>
+
+  <!-- broken tower: snapped upper section -->
+  <g transform="rotate(-28 300 462)">
+    <g stroke="#6d6c69" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M293,455 L296,352"/>
+      <path d="M307,455 L304,352"/>
+      <path d="M294,430 L306,430 M295,405 L305,405 M295,380 L305,380"/>
+    </g>
+    <rect x="293" y="334" width="14" height="18" fill="#8a1f2d"/>
+    <g stroke="#C8102E" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M284,330 A 18,18 0 0 1 316,330"/>
+      <path d="M272,320 A 32,32 0 0 1 328,320"/>
+    </g>
+    <line x1="268" y1="306" x2="332" y2="346" stroke="#C8102E" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- break -->
+  <polyline points="281,468 292,456 300,468 308,456 319,468" fill="none" stroke="#C8102E" stroke-width="5" stroke-linejoin="round"/>
+
+  <text x="110" y="702" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">64% of mobile towers out of service</text>
+  <text x="110" y="724" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Paltel: 80% of its 500+ towers lost</text>
+  <text x="110" y="750" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#59a97d">٦٤٪ من أبراج الاتصالات خارج الخدمة</text>
+
+  <!-- mesh caption -->
+  <text x="660" y="322" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#c7a86b">Offline mesh between learning points</text>
+  <text x="660" y="356" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#59a97d">شبكة بديلة بين نقاط التعلّم دون إنترنت</text>
+
+  <!-- mesh links -->
+  <g fill="none" stroke="#59a97d" stroke-width="3.5" stroke-dasharray="10 9" stroke-linecap="round">
+    <path d="M760,540 Q830,478 900,540"/>
+    <path d="M940,540 Q1010,478 1080,540"/>
+    <path d="M1300,540 Q1370,478 1440,540"/>
+  </g>
+  <path d="M1120,540 Q1190,478 1260,540" fill="none" stroke="#8a1f2d" stroke-width="3.5" stroke-dasharray="10 9" stroke-linecap="round"/>
+  <g stroke="#C8102E" stroke-width="5" stroke-linecap="round">
+    <line x1="1176" y1="482" x2="1204" y2="510"/>
+    <line x1="1204" y1="482" x2="1176" y2="510"/>
+  </g>
+  <text x="1190" y="462" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="14" fill="#C8102E">out of range</text>
+
+  <!-- tents -->
+  <g>
+    <g fill="#26282c" stroke="#f2eee8" stroke-width="3.5" stroke-linejoin="round">
+      <path d="M678,650 L740,548 L802,650 Z"/>
+      <path d="M858,650 L920,548 L982,650 Z"/>
+      <path d="M1038,650 L1100,548 L1162,650 Z"/>
+      <path d="M1218,650 L1280,548 L1342,650 Z"/>
+      <path d="M1378,650 L1440,548 L1502,650 Z"/>
+    </g>
+    <g fill="#8a1f2d">
+      <path d="M732,650 L740,600 L748,650 Z"/>
+      <path d="M912,650 L920,600 L928,650 Z"/>
+      <path d="M1092,650 L1100,600 L1108,650 Z"/>
+      <path d="M1272,650 L1280,600 L1288,650 Z"/>
+      <path d="M1432,650 L1440,600 L1448,650 Z"/>
+    </g>
+    <g fill="#c7a86b">
+      <circle cx="740" cy="545" r="6"/>
+      <circle cx="920" cy="545" r="6"/>
+      <circle cx="1100" cy="545" r="6"/>
+      <circle cx="1280" cy="545" r="6"/>
+      <circle cx="1440" cy="545" r="6"/>
+    </g>
+  </g>
+
+  <text x="660" y="702" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Bluetooth LE mesh: 10–30 m range, up to 7 hops, no internet needed</text>
+  <text x="660" y="726" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5">بلوتوث: من ١٠ إلى ٣٠ مترًا، حتى سبع قفزات</text>
+
+  <!-- stat band -->
+  <line x1="90" y1="772" x2="1540" y2="772" stroke="#c7a86b" stroke-width="2" opacity="0.6"/>
+  <g stroke="#3a3b3f" stroke-width="2">
+    <line x1="440" y1="790" x2="440" y2="880"/>
+    <line x1="800" y1="790" x2="800" y2="880"/>
+    <line x1="1160" y1="790" x2="1160" y2="880"/>
+  </g>
+
+  <g font-family="'Libre Franklin',Arial,sans-serif">
+    <text x="110" y="826" font-size="36" fill="#c7a86b">541,000</text>
+    <text x="110" y="852" font-size="15" fill="#f2eee8">students to keep studying in Gaza</text>
+    <text x="110" y="876" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">طالب وطالبة في غزة</text>
+
+    <text x="470" y="826" font-size="36" fill="#c7a86b">700</text>
+    <text x="470" y="852" font-size="15" fill="#f2eee8">in-person learning points</text>
+    <text x="470" y="876" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">نقطة تعلّم حضوري</text>
+
+    <text x="830" y="826" font-size="36" fill="#c7a86b">25</text>
+    <text x="830" y="852" font-size="15" fill="#f2eee8">temporary schools</text>
+    <text x="830" y="876" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">مدرسة مؤقتة</text>
+
+    <text x="1190" y="826" font-size="36" fill="#c7a86b">16 &amp; 19 Sept</text>
+    <text x="1190" y="852" font-size="15" fill="#f2eee8">staff, then students, return</text>
+    <text x="1190" y="876" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5">عودة الكوادر ثم الطلبة</text>
+  </g>
+</svg>

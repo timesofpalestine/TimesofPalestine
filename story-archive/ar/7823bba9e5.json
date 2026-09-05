@@ -7,6 +7,18 @@
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/Palinfo/319590",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428767",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
   }
  ],
  "date": "2026-09-05T18:41:00+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "7823bba9e5",
- "score": 63.82,
+ "score": 63.59,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
