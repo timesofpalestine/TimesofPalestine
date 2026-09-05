@@ -6,7 +6,13 @@
    "article": "https://felesteen.news/post/185882/%D8%A8%D8%AF%D8%A1-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D8%AC%D8%AB%D8%A7%D9%85%D9%8A%D9%86-150-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7-%D8%A3%D8%B3%D9%81%D9%84-%D8%A3%D9%86%D9%82%D8%A7%D8%B6-%D8%A8%D8%B1%D8%AC-%D8%A7%D9%84%D9%85%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D9%86",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82642",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-09-05T09:54:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "6a34caa980",
- "score": 60.56,
+ "score": 60.32,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
