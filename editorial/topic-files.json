@@ -106,6 +106,19 @@
    }
   },
   {
+   "slug": "britain-owes-palestine",
+   "pattern": "balfour|بلفور",
+   "min": 3,
+   "en": {
+    "name": "Britain Owes Palestine",
+    "dek": "The 400-page reparations petition delivered to Downing Street in September 2025 (al-Masri, Shlaim, Kattan, drafted by Emmerson and Friedman KC): the September 2026 government deadline, the case for an apology and reparations over the 1917-1948 occupation, and the judicial review to come if it goes unanswered."
+   },
+   "ar": {
+    "name": "بريطانيا مدينة لفلسطين",
+    "dek": "عريضة التعويضات من 400 صفحة التي سُلّمت إلى داونينغ ستريت في أيلول/سبتمبر 2025 (المصري وشلايم وكاتان، بصياغة إيمرسون وفريدمان): مهلة الحكومة في أيلول/سبتمبر 2026، ودعوى الاعتذار والتعويضات عن احتلال 1917-1948، والمراجعة القضائية المرتقبة إذا مرّت المهلة من دون رد."
+   }
+  },
+  {
    "slug": "palestine-votes",
    "pattern": "palestinian election|election commission|legislative council|palestinian-elections|election-machinery|pnc-diaspora-vote|east-jerusalem-vote|لجنة الانتخابات|الانتخابات الفلسطينية|الانتخابات التشريعية|المجلس التشريعي",
    "min": 3,

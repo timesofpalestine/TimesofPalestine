@@ -1,0 +1,39 @@
+{
+ "brief": "Five of Israel's six desalination plants went offline this week after microscopic algae clogged their seawater intake pipes, cutting roughly 80 percent of the country's desalinated water supply, the Washington Post reported.\n\nIsraeli environmental experts told the Post the algae bloom likely originated in the Nile River delta, and warned that untreated sewage discharged from Gaza — where Israel's own military campaign has damaged or destroyed all six wastewater-treatment plants — provides nutrients that probably intensified the bloom's growth.\n\n## The consequence inside Gaza\n\nIsrael's national water company, Mekorot, halted its water flow into Gaza amid the crisis, the Post reported, leaving close to a million people in the territory facing water shortages on top of the sewage collapse already driving the algae the Israeli side blames in part for its own plants' shutdown. A desalination plant in Gaza City's Sheikh Radwan neighborhood was struck by Israeli forces on 24 August, further reducing what capacity Gaza itself retained.\n\n## A closed loop, not two separate crises\n\nThe Post's reporting describes a single hydrological system rather than two unconnected emergencies: the same sea takes Gaza's untreated waste and feeds Israel's desalination intakes, so damage to one side's water infrastructure works back onto the other's, regardless of which side controls the crossing points and the funding to fix it.",
+ "cat": "uspress",
+ "corroborating_sources": [
+  {
+   "article": "original:wapo-israel-water-crisis-gaza-sewage-2026-09-05.en",
+   "name": "Times of Palestine",
+   "url": "",
+   "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/5/did-israels-destruction-of-gaza-worsen-its-water-crisis?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-05T10:10:00+00:00",
+ "dek": "Five of Israel's six desalination plants went offline this week after microscopic algae clogged their seawater intake pipes, cutting roughly 80 percent of the country's desalinated water supply, the Washington Post reported.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-uspress-b.svg",
+ "lang": "en",
+ "link": "original:wapo-israel-water-crisis-gaza-sewage-2026-09-05.en",
+ "max_age_hours": 336.0,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": true,
+ "pid": "24eefd3f41",
+ "score": 87.84,
+ "source": "Times of Palestine",
+ "source_id": "top-original",
+ "source_url": "",
+ "title": "Gaza's broken sewage plants may deepen Israel's water crisis"
+}

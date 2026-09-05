@@ -6,19 +6,13 @@
    "article": "original:amnesty-area-a-seizure-orders-jenin-2026-09-04.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://imemc.org/article/israeli-army-orders-seizure-of-palestinian-land-in-qabatia",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.amnesty.org/en/latest/news/2026/09/israel-opt-israel-steps-up-annexation-measures-with-unlawful-land-seizure-orders-in-the-occupied-west-bank",
-   "name": "Amnesty International",
-   "url": "https://www.amnesty.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-04T01:06:00+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": true,
  "pid": "cf8fff278a",
- "score": 83.02000000000001,
+ "score": 82.92,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

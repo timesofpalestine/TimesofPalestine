@@ -37,18 +37,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-forces-colonizers-escalate-attacks-in-the-west-bank",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
   }
  ],
  "date": "2026-09-04T01:09:00+00:00",
  "dek": "The municipality of Taybeh, the last entirely Christian town in the occupied West Bank, has asked residents who hold United States passports or green cards to register the attacks and property losses they have suffered from Israeli settlers, ahead of a civil…",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-diaspora.svg",
+ "image": "/media/times-of-palestine-cover-diaspora-b.svg",
  "lang": "en",
  "link": "original:taybeh-us-lawsuit-diaspora-2026-09-04.en",
  "max_age_hours": 336.0,
@@ -61,7 +55,7 @@
  "modified": null,
  "original": true,
  "pid": "8c539b4c17",
- "score": 113.02,
+ "score": 112.92,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
