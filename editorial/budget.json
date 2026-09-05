@@ -1,51 +1,54 @@
 {
- "_readme": [
-  "Monthly API budget for the AI newsroom (owner order 2026-09-01: never go",
-  "over budget again). budget_ledger.py records every desk's estimated spend",
-  "in originals/_ledger.json and paces the discretionary desks so the paper",
-  "never hits the provider cap and freezes like August. The briefs desk (the",
-  "wire) is never paced; it stops only at hard_stop_fraction of the budget,",
-  "keeping last-resort headroom under the real cap. Estimates run 10% hot at",
-  "list price on purpose.",
-  "THE OWNER'S KNOB is monthly_budget_usd — set it at or slightly below the",
-  "org's actual Anthropic monthly limit. Run `python3 budget_ledger.py",
-  "--forecast` before turning it: it says what the rest of the month buys at",
-  "this number and at the what-if levels.",
-  "THE PURSE (2026-09-02): allocations are WEIGHTS, not silos. The wire's",
-  "projected month is reserved first; the ceiling's remainder is the",
-  "discretionary pool, shared by weight. Each desk's cap accrues daily into a",
-  "purse; a run is allowed when the purse can pay for it, so a big run is",
-  "followed by saving up, never by a month-long blackout.",
-  "TIERS: a desk may list editions, highest first, each with the model, the",
-  "turn cap, a starting price (replaced by the learned median of its own",
-  "runs) and optionally the weekdays it may run. The governor picks the best",
-  "tier the purse can pay for that day. The editor's FULL edition is the",
-  "whole mandate on Opus; the LIGHT edition is the non-negotiables (breaking",
-  "sweep, stale sections, both press reviews, markets, running files) on",
-  "Sonnet. Change the days or prices here; never the budget without deciding."
- ],
- "monthly_budget_usd": 400,
- "hard_stop_fraction": 0.92,
- "allocations": {
-  "briefs": 0.12,
-  "investigations": 0.22,
-  "editor": 0.30,
-  "washington": 0.24,
-  "maintenance": 0.04
- },
- "tiers": {
-  "editor": {
-   "full": {
-    "model": "claude-fable-5-1",
-    "max_turns": 300,
-    "usd": 36,
-    "days": ["mon", "thu"]
-   },
-   "light": {
-    "model": "claude-sonnet-5",
-    "max_turns": 90,
-    "usd": 4
-   }
+  "_readme": [
+    "Monthly API budget for the AI newsroom (owner order 2026-09-01: never go",
+    "over budget again). budget_ledger.py records every desk's estimated spend",
+    "in originals/_ledger.json and paces the discretionary desks so the paper",
+    "never hits the provider cap and freezes like August. The briefs desk (the",
+    "wire) is never paced; it stops only at hard_stop_fraction of the budget,",
+    "keeping last-resort headroom under the real cap. Estimates run 10% hot at",
+    "list price on purpose.",
+    "THE OWNER'S KNOB is monthly_budget_usd — set it at or slightly below the",
+    "org's actual Anthropic monthly limit. Run `python3 budget_ledger.py",
+    "--forecast` before turning it: it says what the rest of the month buys at",
+    "this number and at the what-if levels.",
+    "THE PURSE (2026-09-02): allocations are WEIGHTS, not silos. The wire's",
+    "projected month is reserved first; the ceiling's remainder is the",
+    "discretionary pool, shared by weight. Each desk's cap accrues daily into a",
+    "purse; a run is allowed when the purse can pay for it, so a big run is",
+    "followed by saving up, never by a month-long blackout.",
+    "TIERS: a desk may list editions, highest first, each with the model, the",
+    "turn cap, a starting price (replaced by the learned median of its own",
+    "runs) and optionally the weekdays it may run. The governor picks the best",
+    "tier the purse can pay for that day. The editor's FULL edition is the",
+    "whole mandate on Opus; the LIGHT edition is the non-negotiables (breaking",
+    "sweep, stale sections, both press reviews, markets, running files) on",
+    "Sonnet. Change the days or prices here; never the budget without deciding."
+  ],
+  "monthly_budget_usd": 400,
+  "hard_stop_fraction": 0.92,
+  "allocations": {
+    "briefs": 0.12,
+    "investigations": 0.22,
+    "editor": 0.3,
+    "washington": 0.24,
+    "maintenance": 0.04
+  },
+  "tiers": {
+    "editor": {
+      "full": {
+        "model": "claude-fable-5-1",
+        "max_turns": 300,
+        "usd": 36,
+        "days": [
+          "mon",
+          "thu"
+        ]
+      },
+      "light": {
+        "model": "claude-sonnet-5",
+        "max_turns": 200,
+        "usd": 10
+      }
+    }
   }
- }
 }
