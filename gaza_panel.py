@@ -434,7 +434,7 @@ def _daily_series():
         if not _chart_warned:
             _chart_warned = True
             print(f"  → toll chart: daily series unavailable ({type(e).__name__}) — curve omitted")
-        return []
+        return None
     out = []
     for r in rows if isinstance(rows, list) else []:
         day, cum = r.get("report_date"), r.get("killed_cum")
@@ -455,7 +455,7 @@ def _toll_chart(lang, latest_total=None):
     SVG, no library, no client JS; colours follow the theme through the
     site's own vars."""
     pts = _daily_series()
-    if len(pts) < 30:
+    if pts is None:
         if latest_total is None:
             return ""
         ar = lang == "ar"
@@ -471,6 +471,8 @@ def _toll_chart(lang, latest_total=None):
             f'<path d="M0,40 C120,34 240,44 360,30 S600,22 720,18" class="tc-fallback"/>'
             f'</svg><figcaption class="gi-lab" dir="{"rtl" if ar else "ltr"}">{label}</figcaption>'
             f'</figure></div>')
+    if len(pts) < 30:
+        return ""
     ar = lang == "ar"
     step = max(1, len(pts) // 150)
     pts = pts[::step] + [pts[-1]]

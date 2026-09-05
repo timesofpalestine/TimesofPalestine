@@ -1544,6 +1544,16 @@ class GazaNumbersTests(unittest.TestCase):
         self.assertIn("Daily series temporarily unavailable", html)
         self.assertIn('aria-label="Gaza deaths, cumulative: 68,643', html)
 
+    def test_panel_keeps_short_loaded_series_on_the_existing_non_render_path(self):
+        old = self.gp._get_json
+        self.gp._get_json = lambda url: [{"report_date": "2026-08-01", "killed_cum": 10}] if url == self.gp.DAILY_URL else old(url)
+        try:
+            html = self.gp.panel("en")
+        finally:
+            self.gp._get_json = old
+        self.assertNotIn("Daily series temporarily unavailable", html)
+        self.assertNotIn("toll-chart toll-chart-fallback", html)
+
     def test_csv_export_mirrors_the_payload_with_bilingual_labels(self):
         import csv as _csv
         import io as _io
