@@ -13,6 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/319473",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
   }
  ],
  "date": "2026-09-04T15:13:56+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "a2acb0fc1b",
- "score": 53.4,
+ "score": 53.17,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
