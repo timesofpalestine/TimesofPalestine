@@ -1,0 +1,45 @@
+{
+ "brief": "أطلق الجيش الإسرائيلي صاروخاً اعتراضياً في أجواء مستوطنات غلاف غزة، بعد أن رصدت أنظمته الدفاعية ما اعتبرته تهديداً، غير أن الرصد تبيّن لاحقاً أنه كان خاطئاً، وفقاً للمركز الفلسطيني للإعلام. ولم تُسفر الحادثة عن إصابات أو أضرار مبلّغ عنها.\n\nيعكس الحادث حالة التأهب الأمني المستمرة في منطقة الاحتكاك بين الأراضي المحتلة وقطاع غزة، حيث تعمل الأنظمة الدفاعية الإسرائيلية بنظام إنذار مبكّر يهدف لاعتراض ما تصنّفه كتهديدات محتملة قبل وصولها للأهداف المدنية.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319592",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393018",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/734393",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-05T17:58:39+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319592",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "907ea53ef5",
+ "score": 63.52,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الجيش الإسرائيلي يطلق صاروخاً اعتراضياً برصد خاطئ غرب غزة"
+}
