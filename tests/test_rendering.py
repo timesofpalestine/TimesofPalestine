@@ -1542,6 +1542,7 @@ class GazaNumbersTests(unittest.TestCase):
             self.gp._get_json = old
         self.assertIn('class="toll-chart toll-chart-fallback"', html)
         self.assertIn("Daily series temporarily unavailable", html)
+        self.assertIn("68,643 total", html)
         self.assertIn('aria-label="Gaza deaths, cumulative: 68,643', html)
 
     def test_panel_keeps_short_loaded_series_on_the_existing_non_render_path(self):
