@@ -6,13 +6,19 @@
    "article": "original:taybeh-us-lawsuit-diaspora-2026-09-04.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": false
+   "verified": true
   },
   {
    "article": "https://imemc.org/article/israeli-forces-colonizers-escalate-attacks-in-the-west-bank",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-violence-israeli-forces-open-fire-during-raid-settlers",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-04T01:09:00+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": true,
  "pid": "8c539b4c17",
- "score": 113.76,
+ "score": 113.7,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
