@@ -1,0 +1,33 @@
+{
+ "brief": "The US envoy to the Middle East labeled some West Bank settlers committing violence as \"terrorists\" and called on Israel to protect Palestinians from what he described as pogroms, Al Jazeera English reported. The statement represented rare public criticism of settler attacks that have intensified across the occupied territory in recent months, with violence targeting Palestinian communities and property.\n\nAnalysts characterized the envoy's visit as largely symbolic, suggesting it fell short of triggering concrete measures to halt the violence. Settler attacks on Palestinian communities in the West Bank have accelerated, with Israeli security forces accused of failing to intervene effectively during many incidents. Rights groups have documented patterns of violence by settlers against Palestinians with minimal accountability or enforcement action.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/5/israel-must-guarantee-safety-of-west-bank-population-ambassador?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-05T12:04:52+00:00",
+ "dek": "Huckabee labels some of the settlers committing violence as 'terrorists' though analysts say his visit is 'symbolic'.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6a9bd3772e52-1788597111.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/5/israel-must-guarantee-safety-of-west-bank-population-ambassador?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/5/israel-must-guarantee-safety-of-west-bank-population-ambassador?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fcddbb1b2b",
+ "score": 49.57,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "US envoy urges Israel to shield Palestinians from settler violence"
+}
