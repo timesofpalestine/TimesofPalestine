@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/world/2026/sep/03/israelis-shoot-dead-two-palestinian-teenagers-after-settlers-encircle-village",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/soldiers-invade-west-bank-communities-across-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-04T15:12:53+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "f96c2e5ddf",
- "score": 52.58,
+ "score": 52.32,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
