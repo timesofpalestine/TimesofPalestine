@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces violated the ceasefire in the Gaza Strip on Saturday, conducting artillery strikes and small-arms fire across multiple locations in the coastal territory, IMEMC News reported. The violations marked a continuation of military activity despite the agreement meant to halt hostilities.\n\nA medical source at Al-Shifa Hospital, one of Gaza's main medical facilities, confirmed that a child was brought in with moderate injuries sustained during the shelling. The hospital has served as a focal point for treating casualties throughout the conflict in the densely populated enclave, where years of fighting have left widespread destruction across residential areas, infrastructure, and public services.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israeli-forces-continue-ceasefire-violations-across-the-gaza-strip",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-05T09:04:28+00:00",
+ "dek": "On Saturday, Israeli forces continued to violate the ceasefire agreement in the Gaza Strip, shelling several areas and opening fire across the devastated coastal enclave. A medical source at Al-Shifa Hospital said a child sustained moderate injuries after…",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/Gaza-e1788598432632.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israeli-forces-continue-ceasefire-violations-across-the-gaza-strip",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/israeli-forces-continue-ceasefire-violations-across-the-gaza-strip"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "77a1e7cc66",
+ "score": 63.76,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces shell Gaza areas despite ceasefire agreement"
+}
