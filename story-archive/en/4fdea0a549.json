@@ -6,7 +6,19 @@
    "article": "https://imemc.org/article/israeli-offensive-on-jenin-tulkarem-camps-continues",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israel-emptying-west-bank-refugee-camps-could-be-crime-against-humanity-un",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/09/1168282",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-04T08:48:21+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "4fdea0a549",
- "score": 38.75,
+ "score": 38.58,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",

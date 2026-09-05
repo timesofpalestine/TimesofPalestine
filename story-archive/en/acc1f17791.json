@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-rights-group-condemns-israeli-ministers-gaza-forced",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/world/2026/sep/03/israel-far-right-minister-itamar-ben-gvir-plan-removal-palestinians-gaza",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "acc1f17791",
- "score": 70.76,
+ "score": 70.74,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
