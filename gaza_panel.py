@@ -456,7 +456,7 @@ def _toll_chart(lang, latest_total=None):
     site's own vars."""
     pts = _daily_series()
     if len(pts) < 30:
-        if not latest_total:
+        if latest_total is None:
             return ""
         ar = lang == "ar"
         head = "الشهداء في غزة تراكمياً" if ar else "Gaza deaths, cumulative"
