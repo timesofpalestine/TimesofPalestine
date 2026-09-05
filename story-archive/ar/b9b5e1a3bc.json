@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.net/news/2026/9/5/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d9%84%d8%b3%d9%81%d9%8a%d8%b1-%d8%a7%d9%84%d8%a3%d9%85%d8%b1%d9%8a%d9%83%d9%8a-%d9%84%d8%af%d9%89-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d8%b9%d9%84%d9%89?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428753",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
   },
   {
    "article": "https://www.alquds.co.uk/%d9%87%d8%a7%d9%83%d8%a7%d8%a8%d9%8a-%d9%8a%d8%ad%d8%b0%d8%b1-%d9%85%d9%86-%d8%b9%d9%88%d8%a7%d9%82%d8%a8-%d9%88%d8%ae%d9%8a%d9%85%d8%a9-%d9%84%d8%b9%d9%86%d9%81-%d8%a7%d9%84%d9%85%d8%b3%d8%aa",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "b9b5e1a3bc",
- "score": 45.97,
+ "score": 45.71,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
