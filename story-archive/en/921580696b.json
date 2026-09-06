@@ -1,0 +1,33 @@
+{
+ "brief": "The Ma'an news agency reported that Britain has received shocking testimonies from Gaza, while Israel dismissed the accusations presented against it. The testimonies were described as damning, though specific details of the allegations and evidence presented were not immediately available.\n\nIsrael's rejection of the accusations comes as international bodies continue to examine conduct during military operations in Gaza. British officials received the testimonies as part of ongoing efforts to investigate claims of wrongdoing, according to the report.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168233.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-06T09:29:57+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168233.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "921580696b",
+ "score": 49.82,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Britain hears damning Gaza testimony as Israel rejects allegations"
+}

@@ -15,9 +15,15 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-child-50-year-old-man-injured-israeli-gunfire",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-step-raids-across-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
    "verified": true
   }
  ],
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "de3246d0ab",
- "score": 62.81,
+ "score": 62.52,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
