@@ -15,21 +15,21 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-and-wound-palestinians-gaza-and-occupied-west-bank",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-kill-palestinian-man-occupied-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
-   "name": "Zeteo",
-   "url": "https://zeteo.com/",
    "verified": true
   },
   {
    "article": "https://imemc.org/article/sunday-invasions-abductions-and-injuries-across-west-bank",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
    "verified": true
   }
  ],
@@ -49,7 +49,7 @@
  "modified": null,
  "original": true,
  "pid": "218707f5c5",
- "score": 87.85,
+ "score": 87.82,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
