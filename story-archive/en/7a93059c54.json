@@ -1,0 +1,33 @@
+{
+ "brief": "Families across Gaza are rationing food to unprecedented levels as the territory's humanitarian crisis worsens, Al Jazeera English reported. With seven or more family members often sharing a single meal, households have adopted extreme coping strategies to survive. Community kitchens, which provide meals to displaced and vulnerable residents, operate sporadically due to fuel and supply shortages, leaving many without reliable access to adequate nutrition.\n\nFood prices have surged dramatically across Gaza, forcing families to stretch meager resources across multiple members. The combination of irregular community kitchen operations and inflation has created acute food insecurity that affects households across all segments of the population. Residents report days passing with minimal food intake as suppliers struggle to maintain distribution networks.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/6/seven-mouths-one-meal-feeding-a-family-through-gazas-food-crisis?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-06T13:15:46+00:00",
+ "dek": "Families across Gaza struggle to secure food as community kitchens operate irregularly and prices rise.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/873A1475-copy-1788692036.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/6/seven-mouths-one-meal-feeding-a-family-through-gazas-food-crisis?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/6/seven-mouths-one-meal-feeding-a-family-through-gazas-food-crisis?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7a93059c54",
+ "score": 49.61,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza families share single meals as food crisis deepens"
+}
