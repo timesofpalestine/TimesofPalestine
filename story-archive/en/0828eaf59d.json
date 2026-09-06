@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli report has revealed the pricing structure for weapons circulating within Palestinian communities in Israel and the occupied West Bank, according to Maan Wire. The investigation documents how arms are bought and sold across both territories, detailing the economic dimensions of an illegal weapons market and the rates at which firearms and other weapons change hands.\n\nThe report identifies connections between weapon trafficking networks operating inside Israel's Palestinian communities and those active in the West Bank. The documentation suggests an integrated supply chain linking arms dealers and buyers across the two areas, with weapons flowing from one territory to the other through established distribution channels.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168235.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-06T10:34:31+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168235.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0828eaf59d",
+ "score": 34.85,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli report exposes weapons prices in Palestinian communities"
+}
