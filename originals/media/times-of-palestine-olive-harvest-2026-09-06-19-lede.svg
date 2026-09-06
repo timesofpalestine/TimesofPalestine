@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="'Libre Franklin',Arial,sans-serif">
+  <title>Israeli army uprooting of Palestinian olive groves before the 2026 harvest</title>
+  <desc>Illustration of an olive tree tipped over with its roots torn from the ground beside a bar chart of settler attacks causing casualties or property damage recorded by OCHA: 1,291 in 2023, 1,449 in 2024, 1,835 in 2025 and more than 1,200 by early July 2026. Boxes note 820 dunams covered by 16 uprooting orders in March 2026, 3,000 trees uprooted in the northern West Bank in May 2026, and more than 6,000 trees and saplings vandalised in 2025.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="bar25" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8102E"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- header -->
+  <text x="90" y="64" fill="#c7a86b" font-size="18" letter-spacing="3">OCCUPIED WEST BANK &#183; OLIVE HARVEST 2026</text>
+  <text x="90" y="120" fill="#f2eee8" font-size="46" font-family="'Source Serif 4',Georgia,serif">Israel's army uproots olive groves</text>
+  <text x="90" y="170" fill="#f2eee8" font-size="46" font-family="'Source Serif 4',Georgia,serif">as the Palestinian harvest nears</text>
+  <text x="90" y="216" fill="#aaa9a5" font-size="28" font-family="Cairo,Arial,sans-serif" text-anchor="start">جيش الاحتلال يقتلع بساتين الزيتون قبيل موسم القطاف</text>
+  <line x1="90" y1="248" x2="1510" y2="248" stroke="#3a3b3e" stroke-width="2"/>
+
+  <line x1="700" y1="296" x2="700" y2="690" stroke="#2c2d30" stroke-width="2"/>
+
+  <!-- LEFT PANEL: uprooted tree -->
+  <text x="130" y="312" fill="#f2eee8" font-size="24">Uprooted by military order</text>
+  <text x="130" y="346" fill="#59a97d" font-size="20" font-family="Cairo,Arial,sans-serif" text-anchor="start">اقتلاع بأوامر عسكرية</text>
+
+  <!-- ground and pit -->
+  <line x1="130" y1="674" x2="660" y2="674" stroke="#3a3b3e" stroke-width="3"/>
+  <ellipse cx="585" cy="674" rx="74" ry="16" fill="#0e0f11"/>
+  <ellipse cx="585" cy="670" rx="52" ry="9" fill="#141517"/>
+  <circle cx="486" cy="672" r="4" fill="#3a3b3e"/>
+  <circle cx="666" cy="670" r="3" fill="#3a3b3e"/>
+  <circle cx="450" cy="670" r="3" fill="#3a3b3e"/>
+
+  <g transform="translate(500,600) rotate(-42)">
+    <!-- torn roots -->
+    <g fill="none" stroke="#c7a86b" stroke-linecap="round" opacity="0.9">
+      <path d="M-6,8 C -34,44 -76,52 -104,86" stroke-width="8"/>
+      <path d="M0,10 C -8,52 -26,74 -18,112" stroke-width="8"/>
+      <path d="M8,8 C 30,46 66,58 94,84" stroke-width="8"/>
+      <path d="M14,4 C 52,22 84,20 122,4" stroke-width="6"/>
+      <path d="M-14,4 C -54,16 -84,8 -116,-8" stroke-width="6"/>
+      <path d="M-40,44 C -52,66 -74,74 -86,96" stroke-width="4"/>
+      <path d="M42,46 C 56,66 60,84 78,100" stroke-width="4"/>
+      <path d="M-2,66 C 18,86 22,104 16,124" stroke-width="4"/>
+    </g>
+    <!-- soil clod -->
+    <path d="M-58,-4 C -70,26 -38,44 -6,42 C 34,44 66,24 54,-6 C 30,-16 -26,-18 -58,-4 Z" fill="#26272a"/>
+    <!-- trunk -->
+    <path d="M-26,10 L-15,-160 L15,-160 L26,10 Z" fill="#8a6f47"/>
+    <path d="M-8,8 L-4,-158 L4,-158 L8,8 Z" fill="#6f5836" opacity="0.7"/>
+    <g stroke="#8a6f47" stroke-width="11" stroke-linecap="round" fill="none">
+      <path d="M-2,-120 L-62,-186"/>
+      <path d="M2,-136 L54,-196"/>
+    </g>
+    <!-- canopy -->
+    <g>
+      <ellipse cx="0" cy="-168" rx="72" ry="54" fill="#286344"/>
+      <ellipse cx="-58" cy="-202" rx="48" ry="38" fill="#286344"/>
+      <ellipse cx="50" cy="-206" rx="45" ry="36" fill="#286344"/>
+      <ellipse cx="-20" cy="-186" rx="34" ry="22" fill="#59a97d" opacity="0.55"/>
+      <ellipse cx="46" cy="-214" rx="20" ry="13" fill="#59a97d" opacity="0.5"/>
+      <ellipse cx="-66" cy="-214" rx="18" ry="12" fill="#59a97d" opacity="0.45"/>
+    </g>
+    <!-- fallen leaves -->
+    <ellipse cx="96" cy="-96" rx="16" ry="7" fill="#286344" opacity="0.8" transform="rotate(25 96 -96)"/>
+    <ellipse cx="128" cy="-40" rx="14" ry="6" fill="#286344" opacity="0.6" transform="rotate(-15 128 -40)"/>
+  </g>
+
+  <text x="130" y="706" fill="#aaa9a5" font-size="15">al-Mughayyir, August 2025: thousands of trees cleared over about 300 dunams</text>
+
+  <!-- RIGHT PANEL: chart -->
+  <text x="780" y="312" fill="#f2eee8" font-size="22">Settler attacks causing casualties or property damage</text>
+  <text x="780" y="346" fill="#aaa9a5" font-size="19" font-family="Cairo,Arial,sans-serif" text-anchor="start">اعتداءات المستوطنين الموثّقة سنويًا</text>
+
+  <line x1="780" y1="660" x2="1450" y2="660" stroke="#3a3b3e" stroke-width="2"/>
+
+  <!-- 2023 -->
+  <rect x="800" y="491" width="110" height="169" fill="#8a1f2d"/>
+  <text x="855" y="478" fill="#c7a86b" font-size="22" text-anchor="middle">1,291</text>
+  <text x="855" y="690" fill="#f2eee8" font-size="20" text-anchor="middle">2023</text>
+  <!-- 2024 -->
+  <rect x="970" y="470" width="110" height="190" fill="#8a1f2d"/>
+  <text x="1025" y="457" fill="#c7a86b" font-size="22" text-anchor="middle">1,449</text>
+  <text x="1025" y="690" fill="#f2eee8" font-size="20" text-anchor="middle">2024</text>
+  <!-- 2025 -->
+  <rect x="1140" y="420" width="110" height="240" fill="url(#bar25)"/>
+  <text x="1195" y="407" fill="#c7a86b" font-size="22" text-anchor="middle">1,835</text>
+  <text x="1195" y="690" fill="#f2eee8" font-size="20" text-anchor="middle">2025</text>
+  <!-- 2026 partial -->
+  <rect x="1310" y="503" width="110" height="157" fill="#2a2b2e" stroke="#C8102E" stroke-width="2"/>
+  <text x="1365" y="490" fill="#c7a86b" font-size="22" text-anchor="middle">1,200+</text>
+  <text x="1365" y="690" fill="#f2eee8" font-size="20" text-anchor="middle">2026</text>
+  <text x="1365" y="710" fill="#aaa9a5" font-size="14" text-anchor="middle">to early July</text>
+
+  <!-- stat boxes -->
+  <g>
+    <rect x="90" y="726" width="460" height="106" fill="#17181b" stroke="#3a3b3e"/>
+    <rect x="90" y="726" width="6" height="106" fill="#c7a86b"/>
+    <text x="116" y="772" fill="#c7a86b" font-size="36" font-family="'Source Serif 4',Georgia,serif">820 dunams</text>
+    <text x="116" y="798" fill="#f2eee8" font-size="16">16 uprooting orders in March 2026 (Yesh Din)</text>
+    <text x="116" y="820" fill="#aaa9a5" font-size="15" font-family="Cairo,Arial,sans-serif" text-anchor="start">١٦ أمر اقتلاع، آذار ٢٠٢٦</text>
+  </g>
+  <g>
+    <rect x="570" y="726" width="460" height="106" fill="#17181b" stroke="#3a3b3e"/>
+    <rect x="570" y="726" width="6" height="106" fill="#c7a86b"/>
+    <text x="596" y="772" fill="#c7a86b" font-size="36" font-family="'Source Serif 4',Georgia,serif">3,000 trees</text>
+    <text x="596" y="798" fill="#f2eee8" font-size="16">uprooted in the northern West Bank, May 2026</text>
+    <text x="596" y="820" fill="#aaa9a5" font-size="15" font-family="Cairo,Arial,sans-serif" text-anchor="start">اقتُلعت في شمال الضفة الغربية، أيار ٢٠٢٦</text>
+  </g>
+  <g>
+    <rect x="1050" y="726" width="460" height="106" fill="#17181b" stroke="#3a3b3e"/>
+    <rect x="1050" y="726" width="6" height="106" fill="#c7a86b"/>
+    <text x="1076" y="772" fill="#c7a86b" font-size="36" font-family="'Source Serif 4',Georgia,serif">6,000+</text>
+    <text x="1076" y="798" fill="#f2eee8" font-size="16">trees and saplings vandalised in 2025</text>
+    <text x="1076" y="820" fill="#aaa9a5" font-size="15" font-family="Cairo,Arial,sans-serif" text-anchor="start">أشجار وشتلات أُتلفت عام ٢٠٢٥</text>
+  </g>
+
+  <text x="90" y="868" fill="#aaa9a5" font-size="16">Sources: OCHA; Yesh Din; Al Jazeera; Times of Israel</text>
+  <text x="1510" y="868" fill="#286344" font-size="16" text-anchor="end">Times of Palestine</text>
+</svg>
