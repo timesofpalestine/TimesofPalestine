@@ -7,6 +7,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-dismisses-all-controversy-around-qatar-big-hoax",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-09-06T01:02:08+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "dbaed99745",
- "score": 63.4,
+ "score": 63.12,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
