@@ -1,0 +1,33 @@
+{
+ "brief": "Recent opinion polls indicate Israel's opposition coalition holds a meaningful advantage over Prime Minister Benjamin Netanyahu's political bloc ahead of upcoming elections, Al Jazeera English reported. The surveys suggest a potential shift in voter sentiment as the country prepares for the electoral contest, with multiple polling organizations measuring public preferences across the political spectrum.\n\nNetanyahu's coalition has faced mounting challenges in recent months, with the opposition consolidating support among key voter demographics. The polling data reflects broader currents of discontent across Israeli society that could reshape the country's political landscape if current trends hold through election day. Observers are monitoring whether the opposition's polling lead will translate into actual electoral gains.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/inside-story/2026/9/6/will-israelis-re-elect-benjamin-netanyahu?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-06T20:20:47+00:00",
+ "dek": "Recent opinion polls suggest opposition bloc is ahead of PM's coalition.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788725027.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/inside-story/2026/9/6/will-israelis-re-elect-benjamin-netanyahu?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/inside-story/2026/9/6/will-israelis-re-elect-benjamin-netanyahu?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "218a8f9fa9",
+ "score": 49.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Opposition bloc leads Netanyahu in Israeli election polls"
+}
