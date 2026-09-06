@@ -9,16 +9,10 @@
    "verified": false
   },
   {
-   "article": "https://t.me/QudsN/734473",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
    "article": "https://t.me/Palinfo/319640",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-06T05:33:00+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "c2d141291d",
- "score": 49.95,
+ "score": 49.77,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
