@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-step-raids-across-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://pchrgaza.org/two-palestinians-killed-in-joint-attack-by-israeli-occupation-forces-and-settlers-in-ramallah",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
@@ -30,12 +24,6 @@
    "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/us-envoy-west-bank-visit-says-israel-has-responsibility-palestinians",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
    "verified": true
   }
  ],
@@ -55,7 +43,7 @@
  "modified": null,
  "original": true,
  "pid": "218707f5c5",
- "score": 87.99000000000001,
+ "score": 87.96000000000001,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
