@@ -19,6 +19,18 @@
    "name": "Zeteo",
    "url": "https://zeteo.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/us-envoy-west-bank-visit-says-israel-has-responsibility-palestinians",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48285",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-09-06T09:32:41+00:00",
@@ -37,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "b44bf66070",
- "score": 62.66,
+ "score": 62.36,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
