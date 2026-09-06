@@ -683,6 +683,82 @@
    "ar": "رامي عبده",
    "wrong": [],
    "verified": "alresalah.news + daraj.media + euromedmonitor.org/ar, 2026-09-05"
+  },
+  {
+   "latin": "Faiz Abu Rmeleh",
+   "ar": "فايز أبو رميلة",
+   "wrong": [
+    "أبو رميله",
+    "أبو رمالة",
+    "أبو رميلى"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html + alquds.com (Ahmad Jalajel, 2026-07-16), 2026-09-06"
+  },
+  {
+   "latin": "Keren Manor",
+   "ar": "كيرن مانور",
+   "wrong": [
+    "ماينور",
+    "كيرين مانور"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html (the organisation's own Arabic credits), 2026-09-06; alquds.com wrote «كيرين ماينور» — house form follows B'Tselem"
+  },
+  {
+   "latin": "'Alya Mleihat",
+   "ar": "علياء مليحات",
+   "wrong": [
+    "عليا مليحات",
+    "المليحات"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html, 2026-09-06"
+  },
+  {
+   "latin": "Jaber 'Ali Dababseh",
+   "ar": "جابر علي دبابسة",
+   "wrong": [
+    "دبابسه",
+    "الدبابسة"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html, 2026-09-06"
+  },
+  {
+   "latin": "Hreizat family (Jamal Hreizat)",
+   "ar": "حريزات",
+   "wrong": [
+    "هريزات",
+    "حرزات"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html, 2026-09-06"
+  },
+  {
+   "latin": "Yuli Novak",
+   "ar": "يولي نوفاك",
+   "wrong": [
+    "يولي نوفاق",
+    "جولي نوفاك"
+   ],
+   "verified": "btselem.org/arabic usage (executive director), 2026-09-06 — recheck against an Arabic wire on her next statement"
+  },
+  {
+   "latin": "Ehab Tarabieh",
+   "ar": "إيهاب طربيه",
+   "wrong": [
+    "طرابية",
+    "طرابيه"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html, 2026-09-06"
+  },
+  {
+   "latin": "Luke Buckmaster",
+   "ar": "لوك باكماستر",
+   "wrong": [],
+   "verified": "unverified — recheck"
+  },
+  {
+   "latin": "Paul Raphaël",
+   "ar": "بول رافاييل",
+   "wrong": [],
+   "verified": "unverified — recheck"
   }
  ]
 }

@@ -674,6 +674,36 @@ languages until the story resolves, and the daily editor checks the file's
 freshness each cycle. Claude's beat; other agents route Qusra/Amnesty items
 via issue #6.
 
+## B'Tselem rights-wire (owner directive 2026-09-06)
+
+B'Tselem — the Israeli Information Center for Human Rights in the Occupied
+Territories — is a RELIABLE SOURCE and standing wire service for this
+newsroom, beside Amnesty: its reports, statements, video documentation,
+demolition and displacement ledgers and films are covered as news, each
+significant item same-day in both languages ("Keep B'Tselem as a wire and
+write articles from their coverage and reports"). Route: the Tier-1
+watchlist row (@btselem) carries the sweep every editorial run; the
+organisation's site rate-limits the CI runners (HTTP 429 on 2026-09-06)
+and its advertised feed path (`/rss/eng.xml`) returns 404, so the RSS
+feeds `btselem` / `btselem-ar` are wired into feeds.json the day a working
+feed URL is confirmed from CI — until then the watchlist row IS the wire
+and the weekly maintenance cycle rechecks the feed. Discipline: every
+finding is attributed to B'Tselem by document and date and to the named
+official where one speaks (executive director Yuli Novak); its
+characterizations (ethnic cleansing, forcible transfer, settler militias)
+are carried as the organization's documented findings — quoted precisely,
+never adopted unattributed as the paper's voice, and never softened
+either; Israel's answer to a specific finding is carried beside it when
+one exists; its displacement counts are always DATED, because they move
+by the week (65 fully emptied communities in the 6 September post, 66 in
+the 2 September Khirbet a-Taban statement). Arabic house forms: «بتسيلم»
+and the names in `editorial/arabic-names.json`, verified against
+B'Tselem's own Arabic pages. Launch pieces:
+`btselem-jordan-valley-water-2026-08-19.*` and
+`btselem-rajin-venice-immersive-2026-09-06.*` (the Raj'in VR documentary
+in competition at Venice Immersive). Claude's beat; other agents route
+B'Tselem items via issue #6.
+
 ## Dima Barakat release campaign (owner order 2026-08-19)
 
 Times of Palestine campaigns for the release of Dr. Dima Muhammad Amin
