@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/israeli-forces-shoot-2-palestinians-in-qalqilia-and-jenin",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-child-50-year-old-man-injured-israeli-gunfire",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-06T04:52:38+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "f57ee7e980",
- "score": 63.33,
+ "score": 63.05,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
