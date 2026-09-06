@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli military operations continued across the Gaza Strip following a ceasefire that took effect October 10, 2025, IMEMC News reported. Gaza's Health Ministry documented a rising death toll and additional casualties despite the truce agreement, while medical sources confirmed ongoing Israeli military violations in the territory.\n\nThe humanitarian situation in Gaza has deteriorated significantly amid the reported violations. Health officials pointed to mounting casualties as a central concern, even as the ceasefire remained officially in place. The continuing operations underscored tensions surrounding the implementation of the agreement and raised questions about adherence to the truce terms.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israeli-attacks-continue-across-gaza-as-humanitarian-crisis-deepens",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-06T00:02:37+00:00",
+ "dek": "In the Gaza Strip, Israeli military violations continued amid escalating humanitarian concerns, while Gaza’s Health Ministry reported a rising death toll and additional casualties despite the ceasefire that took effect on October 10, 2025. Medical sources…",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/KilledGaza11212-e1788652473268.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israeli-attacks-continue-across-gaza-as-humanitarian-crisis-deepens",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/israeli-attacks-continue-across-gaza-as-humanitarian-crisis-deepens"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8bad225605",
+ "score": 58.68,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli attacks persist in Gaza as death toll climbs after ceasefire"
+}
