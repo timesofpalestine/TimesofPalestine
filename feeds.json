@@ -597,7 +597,8 @@
    "type": "telegram",
    "channel": "AlQastalps",
    "site": "https://t.me/AlQastalps",
-   "cap": 5
+   "cap": 5,
+   "wire": true
   },
   {
    "id": "tg-qudsn",
@@ -605,7 +606,8 @@
    "type": "telegram",
    "channel": "QudsN",
    "site": "https://t.me/QudsN",
-   "cap": 6
+   "cap": 6,
+   "wire": true
   },
   {
    "id": "ajstudies",

@@ -67,6 +67,50 @@ rides above the news; `SECTION_ORDER` derives from the same list. Any
 agent adding a section or band places it in `FRONT_FLOW` by this logic
 and updates the design system in the same PR.
 
+## Section relevance — every section carries its own beat (owner order 2026-09-06)
+
+After Health & Healing was found full of hospital strikes, the owner ordered
+every section checked: "make sure that every section actually carries
+articles and items that are related to that section, and make sure the
+website is organized in a way that is reflective of the different divisions
+and sections". The audit ran today's routing rules over fourteen days of
+archived wire stories and found the same failure in most sections — a word
+that merely passed through the summary decided the section («معبراً» put a
+profile of Abu Ubaida in Economy, World Central Kitchen put an airstrike in
+Arts, the foreign ministry's «والمغتربين» put Ramallah briefings in
+Diaspora, «علامات الفساد» on spoiled food put a police seizure in
+Accountability, UNRWA's Arabic name put an Egyptian condemnation in Arab
+Support, «المنتخبين» put a municipal delegation in Sport, Jenin's Arraba put
+olive trees in Palestinians in Israel, and «بينهم نساء» put arrest tallies
+in Her Story). The rules (`CATEGORY_RULES` in `build.py`) now weigh the
+HEADLINE — the story's subject — above the summary: each section is a
+rule object with its own relevance test, strong signals count anywhere,
+weak ones only in the headline, and attack headlines never enter Health,
+Sport or Economy. Binding on every agent:
+
+- **A section is its beat.** Economy is money, prices, banks, work and the
+  exchanges — never "humanitarian" or a crossing. Arts is the work of
+  artists. Diaspora is the diaspora as subject. Accountability is
+  corruption and its institutions. Arab Support is an Arab actor leading
+  the headline with help for Palestinians. Sport is Palestinian sport (the
+  outlet boilerplate «فلسطين أون لاين» and «بتوقيت فلسطين» no longer make
+  Real Madrid Palestinian). Palestinians in Israel is the community; the
+  Arab lists route only from a headline. Her Story names her in the
+  headline. The prisoners' file starts at the prison door — a raid-and-
+  arrest headline is West Bank news, another country's detainees and a
+  court abroad are not the أسرى file.
+- **Field Reports is for field dispatches.** A Telegram channel that is a
+  news network (شبكة قدس، القسطل) is a wire (`wire: true` in feeds.json)
+  and routes by section like every outlet; only witness and citizen
+  channels feed Field Reports.
+- **The archive follows the rules.** `refile_archived` moves an archived
+  wire story whose section no longer accepts it to the section that does —
+  page and permalink untouched, only the listing; originals, desk sections,
+  pinned feeds and stories no rule claims never move.
+- **A new leak gets a new case, never a wider rule.** The real headlines
+  that leaked are the tests (`tests/test_section_relevance.py`); a quiet
+  section is fed with feeds and topics, never by loosening its test.
+
 ## Owner decisions currently in force (2026-07-29)
 
 1. **The AI newsroom is ON — deliberately.** The build uses the Anthropic API

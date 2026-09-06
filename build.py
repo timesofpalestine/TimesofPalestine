@@ -341,20 +341,46 @@ CHRISTIANS_RX = re.compile(
     r"الأرثوذكس|الكاثوليك|اللاتينية|عيد الميلاد|كنيسة المهد|الطيبة", re.I)
 
 # The Palestinian diaspora — communities, refugees and second generations worldwide.
-DIASPORA_RX = re.compile(
-    r"diaspora|palestinian[- ](?:american|british|canadian|australian|european)s?|"
+# Section relevance (owner order 2026-09-06, after the health audit): the
+# diaspora is the SUBJECT of a diaspora story. «وزارة الخارجية والمغتربين» is
+# the foreign ministry's name, «في الوطن والشتات» is a statement's boilerplate,
+# and neither makes a Ramallah story a diaspora story — the weak signals
+# count only in the headline, the strong ones anywhere.
+_DIASPORA_STRONG = (
+    r"diaspora|palestinian[- ](?:american|british|canadian|australian|european|"
+    r"chilean|brazilian|german|swedish|danish)s?\b|"
     r"palestinians abroad|palestinian expat|refugees? in (?:lebanon|jordan|syria|europe|chile|"
-    r"the us|america)|"
-    r"الشتات|الجالية الفلسطينية|جاليات|مغترب|فلسطينيو الخارج|فلسطينيي الخارج|"
-    r"مخيمات لبنان|مخيمات الأردن|مخيمات سوريا|اللاجئون الفلسطينيون في", re.I)
+    r"the us|america)|refugee camps? in (?:lebanon|jordan|syria)|"
+    r"الجالية الفلسطينية|الجاليات الفلسطينية|فلسطينيو الخارج|فلسطينيي الخارج|"
+    r"مغترب(?:ون|ين|ة|ات)? فلسطيني|الشتات الفلسطيني|أبناء الشتات|أجيال الشتات|"
+    r"مخيمات لبنان|مخيمات الأردن|مخيمات سوريا|اللاجئون الفلسطينيون في|اللاجئين الفلسطينيين في")
+_DIASPORA_WEAK = r"الشتات|جاليات|الجالية|مغترب"
+DIASPORA_RX = None  # set below, once the rule helpers exist
 
 # Palestinian culture & arts — identity and testimony, from tatreez to cinema.
 ARTS_RX = re.compile(
     r"artist|painter|sculpt|exhibit|gallery|mural|filmmaker|documentary|"
     r"\bpoet\b|poetry|novelist|musician|singer|\bdabke\b|embroidery|tatreez|"
     r"heritage|museum|cuisine|cinema|\bfilm\b|culture|"
-    r"فنان|فنانة|تشكيلي|معرض|لوحة|جدارية|مخرج(?!ات)|وثائقي|شاعر|شاعرة|روائي|"
-    r"موسيقي|مغني|مغنية|دبكة|تطريز|تراث|متحف|مطبخ|سينما|فيلم|ثقافة", re.I); SPORTS_RX = re.compile(r"football|soccer|\bfifa\b|\buefa\b|olympic|paralympic|stadium|league match|world cup|tournament|championship|athlete|footballer|\bcoach\b|national team|كرة القدم|كرة السلة|مباراة|منتخب|نادي رياضي|الدوري|ملعب|أولمبي|فيفا|بطولة|تصفيات|كأس العالم|لاعب|رياضي|رياضة", re.I)
+    r"فنان|فنانة|تشكيلي|معرض|لوحة|جدارية|مخرج(?!ات)|وثائقي|(?<!م)شاعر|روائي|"
+    r"موسيقي|مغني|مغنية|دبكة|تطريز|تراث|متحف|المطبخ الفلسطيني|مطبخ فلسطيني|"
+    r"سينما|فيلم|ثقافة", re.I)
+# Words that LOOK like culture and are not (owner audit 2026-09-06): World
+# Central Kitchen's aid workers, an oil trader called Heritage Petroleum, the
+# Cinema roundabout in Jenin. An item carrying one of these never enters the
+# arts section on that word alone.
+ARTS_FALSE_RX = re.compile(
+    r"world central kitchen|central kitchen|heritage petroleum|heritage foundation|"
+    r"المطبخ (?:المركزي|العالمي)|دوار السينما|شارع السينما", re.I)
+_SPORTS_TERMS = re.compile(
+    r"football|soccer|\bfifa\b|\buefa\b|olympic|paralympic|stadium|league match|"
+    r"world cup|tournament|championship|athlete|footballer|\bcoach\b|national team|"
+    r"swimm|marathon|boxing|basketball|handball|volleyball|"
+    r"كرة القدم|كرة السلة|كرة اليد|كرة الطائرة|مباراة|منتخب(?!ين|ون|ة|ات)|نادي رياضي|"
+    r"(?:ال|لل|بال)دوري(?!ة|ات)|ملعب|أولمبي|فيفا|بطولة|تصفيات (?:كأس|آسيا|أفريقيا|أوروبا|العالم|المونديال)|"
+    r"التصفيات (?:الآسيوية|المؤهلة|الأولمبية)|كأس العالم|(?<!ت)لاعب|رياضي(?!ات)|"
+    r"رياضة|سباح|ماراثون|ملاكم", re.I)
+SPORTS_RX = None  # set below
 
 # Real lives — the human stories behind the headlines: profiles, testimony, memory.
 REAL_LIVES_RX = re.compile(
@@ -362,10 +388,23 @@ REAL_LIVES_RX = re.compile(
     r"قصة|حكاية|يروي|تروي|شهادة|ناجٍ|ناجية|شاهد على|صرخة", re.I)
 
 # Corruption, transparency & democratic accountability — wherever it sits, incl. the PA.
-ACCOUNTABILITY_RX = re.compile(
-    r"corrupt|nepotis|briber|embezzl|cronyis|\bgraft\b|kleptocra|"
-    r"فساد|الفساد|محسوبية|رشوة|رشاوى|اختلاس|نزاهة|مساءلة|شفافية|مكافحة الفساد|"
-    r"اعتقال سياسي|معتقل سياسي|معتقلي الرأي|تكميم|استبداد", re.I)
+# Section relevance (owner order 2026-09-06): "corrupt propaganda" and
+# «علامات الفساد» on spoiled food are not corruption stories, and نزاهة /
+# مساءلة / شفافية appear in every NGO statement — those three count only in
+# the headline; the corruption vocabulary counts anywhere.
+_ACCOUNTABILITY_STRONG = (
+    r"corruption|corrupt (?:officials?|practices?|deals?|regime|networks?|contracts?|"
+    r"elites?|system)|anti-corruption|nepotis|briber|embezzl|cronyis|\bgraft\b|"
+    r"kleptocra|whistle-?blower|misuse of (?:public )?funds|political (?:detention|prisoners?)|"
+    r"(?<!علامات ال)(?<!آثار ال)فساد(?! الأغذية| الغذائ| المواد)|محسوبية|رشوة|رشاوى|اختلاس|"
+    r"مكافحة الفساد|هيئة مكافحة|النزاهة والمساءلة|ائتلاف أمان|"
+    r"اعتقال سياسي|معتقل سياسي|معتقلي الرأي|تكميم|استبداد")
+_ACCOUNTABILITY_WEAK = r"نزاهة|شفافية"
+_ACCOUNTABILITY_INSTITUTIONS = (
+    r"anti-corruption commission|state audit|transparency international|"
+    r"هيئة مكافحة الفساد|النزاهة والمساءلة|ائتلاف أمان|ديوان الرقابة|"
+    r"محكمة جرائم الفساد|نيابة مكافحة الفساد")
+ACCOUNTABILITY_RX = None  # set below
 
 ISRAEL_CONTEXT_RX = re.compile(r"israel|settler|idf|zionis|إسرائيل|مستوطن", re.I); ARAB_LEADERS_RX = re.compile(r"(?:king|emir|sultan|crown prince|president|prime minister)\s+\w+.{0,40}(?:palestin|gaza|west bank|jerusalem)|(?:abdullah ii|mohammed bin salman|\bmbs\b|el-?sisi|sheikh tamim|bin zayed|\bmbz\b|salman bin|king abdullah|king mohammed vi|tebboune|saied)|(?:jordan|egypt|saudi|emirat|qatar|kuwait|oman|bahrain|morocc|algeri|tunisia|iraqi|lebanes)\w*\s+(?:king|president|monarch|leader|premier|emir)|(?:الملك|الأمير|الشيخ|الرئيس|ولي العهد|العاهل|السلطان)\s*\S*.{0,40}(?:فلسطين|غزة|الضفة|القدس)|(?:عبدالله الثاني|عبد الله الثاني|محمد بن سلمان|بن زايد|السيسي|تميم بن حمد|محمد السادس|تبون|قيس سعيد)", re.I)
 
@@ -518,7 +557,8 @@ HEALTH_CARE_RX = re.compile(
     r"scabies|\blice\b|skin (?:disease|infection|condition)|rash|impetigo|"
     r"chickenpox|respiratory infection|malnutrition|malnourish|vaccin|"
     r"immuni[sz]|dialysis|insulin|prosthetic|amputee|rehabilitat|"
-    r"telemedicine|tele-?health|oncolog|chemotherap|cancer (?:patient|treatment|care|ward)|"
+    r"telemedicine|tele-?health|oncolog|chemotherap|cancer (?:patient|treatment|care|ward|drug|medic)|"
+    r"(?:drug|medicine|medical) (?:shortage|supplies|supply|stock)|"
     r"maternal|newborn|midwi|neonatal|mental health|psycholog|ptsd|"
     r"medical evacuation|medevac|patient(?:s)? (?:referr|evacuat|treat|transfer)|"
     r"field hospital|medicine shortage|drug shortage|medical supplies|oxygen|"
@@ -531,9 +571,9 @@ HEALTH_CARE_RX = re.compile(
     r"أكسجين|بنك الدم|تلوث المياه|مياه الصرف", re.I)
 HEALTH_ATTACK_RX = re.compile(
     r"air ?strike|strikes?\b|bomb|shell|raid|storm|killed|kills?\b|assassinat|"
-    r"besieg|arrest|detain|abduct|demoli|massacre|"
-    r"قصف|غارة|استهدف|اقتحام|اقتحم|قتل|استشهاد|شهيد|شهداء|اعتقال|اعتقل|"
-    r"اختطاف|هدم|مجزرة", re.I)
+    r"besieg|arrest|detain|abduct|demoli|massacre|shoot|open(?:s|ed)? fire|"
+    r"قصف|غارة|استهدف|اقتحام|اقتحم|تقتحم|يقتحم|قتل|استشهاد|شهيد|شهداء|اعتقال|اعتقل|"
+    r"اختطاف|هدم|مجزرة|يطلق النار|تطلق النار|إطلاق نار|إطلاق النار", re.I)
 
 
 class _HealthRule:
@@ -554,17 +594,28 @@ HEALTH_RX = _HealthRule()
 _ARAB_ACTORS = (
     r"egypt|jordan|saudi|\buae\b|emirat|qatar|kuwait|bahrain|\boman\b|morocc|"
     r"algeria|tunisia|iraq|leban|arab league|\bgcc\b|gulf cooperation|"
-    r"مصر|المصري|الأردن|السعودية|الإمارات|قطر|الكويت|البحرين|سلطنة عمان|عُمان|"
+    r"مصر(?!ف)|المصري|الأردن|السعودية|الإمارات|قطر|الكويت|البحرين|سلطنة عمان|عُمان|"
     r"المغرب|الجزائر|تونس|العراق|لبنان|الجامعة العربية|مجلس التعاون")
 _ARAB_SUPPORT = (
     r"\baid\b|convoy|field hospital|reconstruct|rebuild|pledge|grant|scholarship|"
     r"donat|fund|treat|evacuat|(?:aid|medical|humanitarian) corridor|airlift|"
     r"air ?drop|relief|rehabilitat|"
-    r"solidarit|twinn|cultural exchange|"
+    r"twinn|cultural exchange|"
     r"مساعدات|قافلة|قوافل|مستشفى ميداني|إعمار|منحة|منح دراسية|تبرع|تمويل|علاج|"
-    r"إجلاء|ممر طبي|إنزال جوي|إغاثة|إسناد|تضامن|كفالة|توأمة")
-ARAB_AID_RX = re.compile(
-    rf"(?s)^(?=.*(?:{_ARAB_ACTORS}))(?=.*(?:{_ARAB_SUPPORT}))", re.I)
+    r"إجلاء|ممر طبي|إنزال جوي|إغاثة|إسناد|كفالة|توأمة")
+_ARAB_SOLIDARITY = re.compile(r"solidarit|تضامن", re.I)
+_ARAB_ACTORS_RX = re.compile(_ARAB_ACTORS, re.I)
+_ARAB_SUPPORT_RX = re.compile(_ARAB_SUPPORT, re.I)
+# UNRWA's Arabic name carries «إغاثة» and the ministry's carries «المغتربين»:
+# strip institutional names before the support test (owner audit 2026-09-06,
+# after «مصر تدين استيلاء إسرائيل على مركز قلنديا» filed as Arab support).
+_ARAB_AID_NOISE = re.compile(
+    r"وكالة (?:الأمم المتحدة )?(?:ل)?إغاثة وتشغيل[^،.]{0,30}|لإغاثة وتشغيل|"
+    r"relief and works agency", re.I)
+_ARAB_AID_NEXUS = re.compile(
+    r"palestin|gaza|west bank|jerusalem|unrwa|rafah crossing|"
+    r"فلسطين|غزة|غزّة|الضفة|القدس|الأونروا|أونروا|اللاجئين الفلسطينيين|فلسطيني", re.I)
+ARAB_AID_RX = None  # set below
 
 # HER STORY (owner directive 2026-08-03): a story enters the section when a
 # woman or girl is its SUBJECT and the reporting is about what she lived —
@@ -592,9 +643,24 @@ _WOMEN_SOLO = (
     r"women'?s rights|violence against women|female detainee|"
     r"أسيرة|أسيرات|معتقلة|معتقلات|قابلة قانونية|قابلات|"
     r"العنف ضد النساء|قتل النساء|حقوق المرأة")
-WOMEN_RX = re.compile(
-    rf"(?s)^(?:(?=.*(?:{_WOMEN_SUBJECT}))(?=.*(?:{_WOMEN_CONTEXT}))|(?=.*(?:{_WOMEN_SOLO})))",
-    re.I)
+# Female subjects a headline names by role (owner audit 2026-09-06): a
+# doctor seized from her home, a journalist moved to isolation, a mother
+# released — the headline says who she is, not "a woman".
+_WOMEN_ROLE = (
+    r"طبيبة|صحفية|صحافية|محامية|ممرضة|معلمة|(?<![مب])طالبة|ناشطة|مواطنة|شابة|طفلة|مسنة|"
+    r"والدة|زوجة|زوجته|شقيقته|أسيرة|أسيرات|معتقلة|معتقلات|محررة|"
+    r"\bher\b|\bshe\b|\bwife\b|\bnurse\b|schoolgirl|"
+    r"woman (?:doctor|journalist|lawyer|surgeon|teacher|activist)")
+# A tally that lists women among others is prisoners or West Bank news, not
+# her story: «500 اعتقال بينهم قاصرون ونساء», "arrests, including women".
+_WOMEN_TALLY = re.compile(
+    r"بينهم[^.]{0,30}نساء|بينهم[^.]{0,30}امرأة|بينهن|"
+    r"including (?:\d+ )?(?:women|girls|minors and women)|among them women|"
+    r"women and children|children and women|نساء وأطفال|أطفال ونساء", re.I)
+_WOMEN_SUBJECT_RX = re.compile(rf"{_WOMEN_SUBJECT}|{_WOMEN_ROLE}", re.I)
+_WOMEN_CONTEXT_RX = re.compile(_WOMEN_CONTEXT, re.I)
+_WOMEN_SOLO_RX = re.compile(_WOMEN_SOLO, re.I)
+WOMEN_RX = None  # set below
 
 # Prisoners & Detainees (owner directive 2026-08-11): the أسرى file is a
 # first-class standing section of the Palestinian press — prisoner counts,
@@ -602,12 +668,47 @@ WOMEN_RX = re.compile(
 # conditions, the prisoners' institutions (نادي الأسير, هيئة شؤون الأسرى).
 # Routed AFTER Her Story: a female prisoner's account (أسيرة/معتقلة) stays
 # a Her Story lead per that section's charter rules.
-PRISONERS_RX = re.compile(
-    r"prisoner|detainee|administrative detention|hunger strike|"
+_PRISONERS_TERMS = re.compile(
+    r"prisoner|detainee|(?:administrative |arbitrary )?detention\b|hunger strike|\barrest(?:s|ed)?\b|"
     r"prison(?:er)?s'? (?:club|society|affairs)|prisoner (?:swap|exchange|release)|"
+    r"\bprisons?\b|\bjails?\b|forced disappearance|forcibly disappear|"
     r"أسير|أسرى|الأسير|الأسرى|معتقل|نادي الأسير|هيئة شؤون الأسرى|"
     r"الاعتقال الإداري|اعتقال إداري|إضراب عن الطعام|"
-    r"سجون الاحتلال|السجون الإسرائيلية|تبادل أسرى|صفقة تبادل", re.I)
+    r"سجون الاحتلال|السجون الإسرائيلية|تبادل أسرى|صفقة تبادل|الإخفاء القسري|الاختفاء القسري|"
+    r"سجن|السجون|المفقودين|الإفراج عن|إفراج عن|اعتقال", re.I)
+# A raid-and-arrest headline is West Bank news (owner audit 2026-09-06):
+# "Israeli forces arrest youth in Tulkarem" belongs with the raids it came
+# from; the prisoners file starts at the prison door — the count, the
+# conditions, the order, the release, the institutions, the families.
+_PRISONERS_FIELD = re.compile(
+    r"^(?:israeli )?(?:occupation )?(?:forces|troops|soldiers|army|military|police)\b[^.]{0,60}\b"
+    r"(?:arrest|detain|round(?:s|ed)? up|seize|abduct)|"
+    r"^(?:قوات|جيش|جنود|شرطة)[^.]{0,40}(?:تعتقل|يعتقل|اعتقلت|اعتقل|تحتجز|يحتجز|تداهم|يداهم|تقتحم|يقتحم)|"
+    r"^الاحتلال (?:يعتقل|يحتجز|يداهم|يقتحم|يشن)|^سلطات الاحتلال تعتقل|"
+    r"اقتحام|اقتحم|تقتحم|يقتحم|مداهم|يداهم|تداهم|حملة اعتقالات|\braids?\b|\bstorm|incursion", re.I)
+_PRISONERS_INSTITUTIONS = re.compile(
+    r"prisoners'? (?:club|society|affairs|studies)|administrative detention|hunger strike|"
+    r"detainees'? (?:committee|center|centre)|"
+    r"نادي الأسير|هيئة شؤون الأسرى|مركز فلسطين لدراسات الأسرى|مؤسسات الأسرى|"
+    r"الاعتقال الإداري|اعتقال إداري|إضراب عن الطعام|لجنة أهالي المعتقلين|"
+    r"مكتب إعلام الأسرى|وزارة الأسرى", re.I)
+_PRISONERS_FILE = re.compile(
+    r"prisoner|detainee|detention|hunger strike|prison|jail|releas|free[sd]?\b|"
+    r"disappear|أسير|أسرى|الأسير|الأسرى|سجن|سجون|إداري|إضراب|إفراج|تفرج|يفرج|أفرجت|تحرر|محرر|"
+    r"الإخفاء|اختف|مفقود", re.I)
+# Lebanese and Syrian detainees are not the Palestinian prisoners' file.
+_PRISONERS_FOREIGN = re.compile(
+    r"lebanese|syrian|lebanon|syria|hezbollah|لبناني|لبنان|سوري|حزب الله", re.I)
+# Activists jailed by a court abroad are news, not the أسرى file; the file's
+# jailers are Israel and the Palestinian Authority.
+_PRISONERS_ABROAD = re.compile(
+    r"بريطاني|أمريك|أميرك|فرنس|ألماني|إيطالي|إسباني|british|britain|\buk\b|american|"
+    r"\bu\.?s\.?\b|german|french|italian|spanish|san francisco|new york|london|berlin|paris", re.I)
+_PRISONERS_JAILER = re.compile(
+    r"israel|occupation|palestinian authority|\bpa\b|إسرائيل|الاحتلال|السلطة|أجهزة", re.I)
+_PRISONERS_PAL = re.compile(
+    r"palestin|gaza|west bank|jerusalem|فلسطين|غزة|الضفة|القدس|الفلسطيني", re.I)
+PRISONERS_RX = None  # set below
 
 # Palestinians in Israel (owner directive 2026-08-21): the فلسطينيو الداخل
 # file as a first-class daily section — the two million Palestinian
@@ -617,21 +718,196 @@ PRISONERS_RX = re.compile(
 # care) treated as an internal threat. Routed AFTER Her Story and the
 # prisoners file so those charters keep their leads. «الطيرة» is excluded
 # deliberately — it is also Ramallah's neighborhood (the Barakat file).
-PAL48_RX = re.compile(
+_PAL48_STRONG = re.compile(
     r"palestinian (?:citizens?|community|communities|minority) (?:of|in) israel|"
     r"arab (?:citizens?|society|communities|towns) (?:of|in) israel|"
     r"'?48 palestinians?|palestinians? inside israel|"
     r"umm al-?fahm|sakhnin|kafr qasi?m|shefa-?'?amr|shfaram|"
-    r"rahat\b|tayibe|kafr kanna|arraba\b|"
+    r"rahat\b|tayibe|kafr kanna|arraba(?:t)? al-?batt?ouf|"
     r"(?:naqab|negev) bedouin|unrecogni[sz]ed villages?|"
     r"higher (?:arab )?follow-?up committee|"
     r"فلسطيني[وي] الداخل|عرب الداخل|أهل الداخل|الداخل الفلسطيني|"
     r"عرب 48|فلسطيني[وي] 48|أراضي (?:ال)?48|الجماهير العربية|"
     r"المجتمع العربي في إسرائيل|الجريمة في المجتمع العربي|"
-    r"لجنة المتابعة العليا|القائمة العربية الموحدة|"
+    r"لجنة المتابعة العليا|"
     r"أم الفحم|سخنين|كفر قاسم|كفر كنا|شفاعمرو|عرابة البطوف|"
     r"رهط|اللقية|حورة|تل السبع|بدو النقب|قرى النقب|"
     r"القرى غير المعترف بها|مسلوب[ةي] الاعتراف", re.I)
+# The Arab lists are the beat when they are the story, not when Netanyahu
+# names Ra'am in a warning about the left (owner audit 2026-09-06): party
+# names route only from the headline.
+_PAL48_TITLE = re.compile(
+    r"القائمة العربية الموحدة|القائمة الموحدة|القائمة المشتركة|الجبهة والتغيير|"
+    r"\bra'?am\b|joint list|hadash|\bta'?al\b|balad party|arab (?:party|list)s?\b|"
+    r"mansour abbas|ayman odeh|ahmad tibi|منصور عباس|أيمن عودة|أحمد الطيبي", re.I)
+PAL48_RX = None  # set below
+
+# ---- section rules (owner order 2026-09-06: every section carries its own
+# beat). categorize() hands each rule the headline and the summary as ONE
+# string with a newline between them, so a rule can weigh the headline —
+# the story's subject — above a word that merely passed through the
+# summary. Every rule keeps the plain `.search(text)` interface; given a
+# bare headline (no newline) it treats the whole text as the headline.
+def _split_hay(text):
+    title, _, dek = text.partition("\n")
+    return title, dek
+
+
+class _Rule:
+    """A section's relevance test: subclasses implement hit(title, dek)."""
+
+    def search(self, text):
+        title, dek = _split_hay(text)
+        return self.hit(title, dek)
+
+
+class _StrongOrTitleRule(_Rule):
+    """Strong terms count anywhere; weak terms only in the headline."""
+
+    def __init__(self, strong, weak, false=None):
+        self.strong = re.compile(strong, re.I) if isinstance(strong, str) else strong
+        self.weak = re.compile(weak, re.I) if isinstance(weak, str) else weak
+        self.false = false
+
+    def hit(self, title, dek):
+        if self.false is not None and self.false.search(f"{title} {dek}"):
+            return None
+        return self.strong.search(f"{title} {dek}") or self.weak.search(title)
+
+
+class _WomenRule(_Rule):
+    """Her Story: she is the SUBJECT — named in the headline — and the
+    reporting is her account; a solo signal (a female detainee, a midwife,
+    femicide) in the headline is enough; a tally that lists women among
+    others is not."""
+
+    def hit(self, title, dek):
+        if _WOMEN_TALLY.search(title):
+            return None
+        solo = _WOMEN_SOLO_RX.search(title)
+        if solo:
+            return solo
+        subj = _WOMEN_SUBJECT_RX.search(title)
+        if subj and _WOMEN_CONTEXT_RX.search(f"{title} {dek}"):
+            return subj
+        return None
+
+
+class _PrisonersRule(_Rule):
+    """The prisoners' file — named in the headline (a summary that mentions
+    prisoners in passing does not move a Berlin demonstration here), not the
+    field arrest it began with, and not another country's detainees. The
+    prisoners' institutions carry a story in from anywhere in the text."""
+
+    def hit(self, title, dek):
+        m = _PRISONERS_TERMS.search(title) or _PRISONERS_INSTITUTIONS.search(f"{title} {dek}")
+        if not m:
+            return None
+        if _PRISONERS_FOREIGN.search(title) and not _PRISONERS_PAL.search(title):
+            return None
+        if _PRISONERS_ABROAD.search(title) and not _PRISONERS_JAILER.search(title):
+            return None
+        if _PRISONERS_FIELD.search(title) and not _PRISONERS_FILE.search(title):
+            return None
+        return m
+
+
+class _Pal48Rule(_Rule):
+    def hit(self, title, dek):
+        return _PAL48_STRONG.search(f"{title} {dek}") or _PAL48_TITLE.search(title)
+
+
+class _ArabAidRule(_Rule):
+    """An Arab actor leads the headline, an act of support appears, and the
+    help is for Palestinians — so a Lebanon-war item that mentions relief,
+    or solidarity with Algeria's fire victims, stays out."""
+
+    def hit(self, title, dek):
+        actor = _ARAB_ACTORS_RX.search(title)
+        if not actor or actor.start() > max(24, len(title) // 2):
+            return None  # the actor is the story's subject, not its setting
+        hay = _ARAB_AID_NOISE.sub(" ", f"{title} {dek}")
+        if not (_ARAB_SUPPORT_RX.search(hay) or _ARAB_SOLIDARITY.search(title)):
+            return None
+        if not _ARAB_AID_NEXUS.search(hay):
+            return None
+        return actor
+
+
+class _SportsRule(_Rule):
+    """Palestinian sport — and a raid past a stadium is a raid."""
+
+    def hit(self, title, dek):
+        if HEALTH_ATTACK_RX.search(title):
+            return None
+        return _SPORTS_TERMS.search(f"{title} {dek}")
+
+
+WOMEN_RX = _WomenRule()
+PRISONERS_RX = _PrisonersRule()
+PAL48_RX = _Pal48Rule()
+ARAB_AID_RX = _ArabAidRule()
+ACCOUNTABILITY_RX = _StrongOrTitleRule(_ACCOUNTABILITY_INSTITUTIONS,
+                                       f"{_ACCOUNTABILITY_STRONG}|{_ACCOUNTABILITY_WEAK}")
+DIASPORA_RX = _StrongOrTitleRule(_DIASPORA_STRONG, _DIASPORA_WEAK,
+                                 false=re.compile(r"الخارجية والمغتربين|وزارة المغتربين", re.I))
+ARTS_RX = _StrongOrTitleRule(ARTS_RX, r"(?!x)x", false=ARTS_FALSE_RX)
+SPORTS_RX = _SportsRule()
+# The Sport section is Palestinian sport (owner call 2026-08-02). Outlet
+# boilerplate («متابعة/ فلسطين أون لاين») satisfied the old gate for every
+# Real Madrid transfer note; the test now runs on the story text with the
+# outlet's name removed, and knows the national team by its name.
+_SPORTS_BOILERPLATE = re.compile(
+    r"فلسطين أون لاين|فلسطين اون لاين|palestine online|shehab wire|وكالة شهاب|"
+    r"the ma'an news agency|وكالة معا|بتوقيت فلسطين|بتوقيت القدس|palestine time|"
+    r"تلفزيون فلسطين", re.I)
+_SPORTS_PAL = re.compile(
+    PALESTINE_RX.pattern + r"|الفدائي|منتخبنا|المنتخب الوطني|الاتحاد الفلسطيني|"
+    r"هلال القدس|جبل المكبر|شباب الخليل|أهلي الخليل|شباب الظاهرية|ثقافي طولكرم|"
+    r"مركز بلاطة|شهداء جباليا|خدمات رفح|اتحاد الشجاعية|غزة الرياضي", re.I)
+
+
+def sports_is_palestinian(item):
+    text = _SPORTS_BOILERPLATE.sub(" ", f"{item['title']} {item['dek']}")
+    return bool(_SPORTS_PAL.search(text))
+
+
+# Economy is the economy (owner audit 2026-09-06): money, prices, banks,
+# trade, work, the clearance revenues, the exchanges — never "humanitarian"
+# (which is in every Gaza dispatch), never a border crossing, never a word
+# like «معبراً» ("expressing") that happens to contain «معبر». Weak terms
+# count in the headline only.
+_ECONOMY_STRONG = (
+    r"econom|shekel|currenc|exchange rate|inflation|unemploy|reconstruction fund|"
+    r"clearance revenue|tax revenue|gasoline price|fuel price|food price|"
+    r"stock exchange|\bpex\b|tase\b|ta-?35|ta-?125|al-?quds index|"
+    r"\bgdp\b|salar|wages?\b|remittance|monetary authority|central bank|"
+    r"اقتصاد|الشيكل|شيكل|الدولار|سعر الصرف|أسعار الصرف|العملات|التضخم|بطالة|"
+    r"المقاصة|أموال المقاصة|الإيرادات|الضرائب|ضريبة|الموازنة|رواتب|الرواتب|أجور|"
+    r"بورصة فلسطين|البورصة|مؤشر القدس|سلطة النقد|البنوك المراسلة|"
+    r"أسعار (?:الوقود|المحروقات|الغذاء|السلع|الخضار|الدجاج|اللحوم)|"
+    r"الناتج المحلي|التنمية الاقتصادية|القطاع الخاص|"
+    r"إعمار غزة|إعادة إعمار غزة|إعمار القطاع|صندوق إعمار")
+_ECONOMY_WEAK = (
+    r"\bbank(?:s|ing)?\b|\btrade\b|\bmarkets?\b|\bprices?\b|\bfuel\b|"
+    r"\bbudget\b|\btax(?:es)?\b|\bcompan(?:y|ies)\b|\bworkers?\b|\blabou?r\b|"
+    r"\bbusiness(?:es)?\b|reconstruction|donor conference|\bfunds?\b|"
+    r"بنك|البنوك|مصرف|المصارف|تجارة|التجاري|الأسواق|السوق|أسعار|الوقود|المحروقات|"
+    r"الموازنة|(?<![أا])عمال|العمال|شركة|شركات|الإعمار|إعادة الإعمار|مانح|المانحين|تمويل|"
+    r"الاستثمار|استثمار")
+_ECONOMY_TERMS = _StrongOrTitleRule(_ECONOMY_STRONG, _ECONOMY_WEAK)
+
+
+class _EconomyRule(_Rule):
+    """The economy — and a demolition or strike headline is never it."""
+
+    def hit(self, title, dek):
+        if HEALTH_ATTACK_RX.search(title):
+            return None
+        return _ECONOMY_TERMS.hit(title, dek)
+
+
+ECONOMY_RX = _EconomyRule()
 
 CATEGORY_RULES = [
     ("women", WOMEN_RX),
@@ -641,8 +917,8 @@ CATEGORY_RULES = [
     ("accountability", ACCOUNTABILITY_RX),
     ("health", HEALTH_RX),
     ("bitcoin", BTC_SECTION_RX),
-    ("diaspora", DIASPORA_RX),
     ("arts", ARTS_RX), ("sports", SPORTS_RX),
+    ("diaspora", DIASPORA_RX),
  
     ("gaza", re.compile(
         r"gaza|rafah|khan younis|deir al[- ]balah|beit lahia|jabalia|"
@@ -655,13 +931,16 @@ CATEGORY_RULES = [
         r"\bun\b|united nations|\bicc\b|\bicj\b|ceasefire|truce|negotiat|talks|election|"
         r"congress|white house|\beu\b|resolution|sanction|diplomac|recogni[sz]|statehood|"
         r"hamas|fatah|\bplo\b|palestinian authority|"
+        r"\btrump\b|\bbiden\b|knesset|coalition|cabinet|prime minister|foreign minist|"
+        r"parliament|legislat|\bpoll\b|netanyahu|bennett|lapid|gantz|eisenkot|smotrich|"
+        r"ben[- ]?gvir|lieberman|liberman|"
         r"الأمم المتحدة|مجلس الأمن|الجنائية الدولية|العدل الدولية|وقف إطلاق النار|هدنة|"
         r"مفاوضات|محادثات|انتخابات|البيت الأبيض|عقوبات|اعتراف|دولة فلسطين|السلطة الفلسطينية|"
-        r"حماس|فتح|منظمة التحرير", re.I)),
-    ("economy", re.compile(
-        r"econom|humanitarian aid|\baid\b|reconstruction|unemploy|trade|funding|donor|"
-        r"shekel|bank|crossing|"
-        r"اقتصاد|مساعدات|إنساني|إعمار|بطالة|تجارة|تمويل|مانح|معبر|بنك", re.I)),
+        r"حماس|فتح|منظمة التحرير|"
+        r"ترامب|ترمب|بايدن|الكنيست|ائتلاف|رئيس الوزراء|وزير الخارجية|البرلمان|"
+        r"تشريعي|استطلاع|نتنياهو|بينيت|بينت|لابيد|غانتس|آيزنكوت|أيزنكوت|سموتريتش|"
+        r"بن غفير|ليبرمان", re.I)),
+    ("economy", ECONOMY_RX),
 ]
 
 JUNK_TITLE_RX = re.compile(r"#\d+\s*$"); CATEGORY_RX = dict(CATEGORY_RULES)  # section key → its own relevance test
@@ -672,11 +951,47 @@ OPINION_CAT_RX = re.compile(r"opinion|analysis|commentary|رأي|تحليل|مق
 def categorize(item):
     if OPINION_URL_RX.search(item["link"]) or OPINION_CAT_RX.search(" ".join(item["categories"])):
         return "opinion"
-    hay = f"{item['title']} {item['dek']}"
+    hay = f"{item['title']}\n{item['dek']}"  # rules may weigh the headline
     for key, rx in CATEGORY_RULES:
         if rx.search(hay):
             return key
     return "news"
+
+
+# Section relevance reaches the archive (owner order 2026-09-06): archived
+# wire stories are re-rendered into section listings by their recorded
+# section, so a rule fixed today would still show yesterday's hospital
+# strike under Health & Healing. refile_archived() moves an archived wire
+# story whose own section no longer accepts it to the section that does —
+# the permalink and page are untouched, only the listing it appears in.
+# Conservative on purpose: originals, desk sections and category-pinned
+# feeds never move, and a story no rule claims keeps its recorded section
+# rather than falling to More News on a summary the archive never kept.
+_RULE_SECTIONS = {k for k, _ in CATEGORY_RULES}
+_PINNED_SOURCES = {
+    f["id"] for lst in FEEDS.values() for f in lst
+    if f.get("category") or f.get("research")
+    or (f.get("type") == "telegram" and not f.get("wire") and not f.get("exclusive"))}
+
+
+def refile_archived(records):
+    moved = 0
+    for rec in records:
+        if rec.get("original") or rec.get("cat") not in _RULE_SECTIONS:
+            continue
+        if rec.get("source_id") in _PINNED_SOURCES:
+            continue
+        rule = CATEGORY_RX.get(rec["cat"])
+        title, dek = rec.get("title") or "", rec.get("dek") or ""
+        if rule is None or rule.search(f"{title}\n{dek}"):
+            continue  # its section still claims it
+        new = categorize({"title": title, "dek": dek, "link": rec.get("link") or "",
+                          "categories": []})
+        if new in ("news", rec["cat"]):
+            continue
+        rec["cat"] = new
+        moved += 1
+    return moved
 # ---------- fetch & parse ----------
 
 def local(tag):
@@ -1495,7 +1810,7 @@ def finish_item(item, feed):
         cat = feed["category"]
         if feed.get("type") == "gnews":  # search results must pass the section's own test
             rx = CATEGORY_RX.get(cat)
-            if not (rx and rx.search(f"{item['title']} {item['dek']}")):
+            if not (rx and rx.search(f"{item['title']}\n{item['dek']}")):
                 cat = categorize(item)
         item["cat"] = cat
     else:
@@ -1510,7 +1825,7 @@ def finish_item(item, feed):
     # its place only when the story text itself has Palestine context: the
     # national team, Palestinian players and clubs, the game under occupation
     # (owner call 2026-08-02, after a Zamalek transfer round-up published).
-    if item["cat"] == "sports" and not PALESTINE_RX.search(f"{item['title']} {item['dek']}"):
+    if item["cat"] == "sports" and not sports_is_palestinian(item):
         return None
     item["date"] = min(item["date"], datetime.now(timezone.utc))
     item["max_age_hours"] = feed.get("maxAgeHours", MAX_AGE_HOURS)
@@ -6835,6 +7150,9 @@ def main():
         archived = []
         _arch_pool = list(story_archive.load(
             lang, exclude={i["pid"] for i in items} | RETRACTED_PIDS))
+        _refiled = refile_archived(_arch_pool)  # today's section rules, yesterday's stories
+        if _refiled:
+            print(f"  ↳ archive: {_refiled} {lang} permalink(s) refiled under today's section rules")
         # One incident, one article — on the archive layer too (owner sweep
         # 2026-09-01): the permalink layer must not resurrect dedupe losers
         # into search, the hubs and archive-filled sections. Pages keep
