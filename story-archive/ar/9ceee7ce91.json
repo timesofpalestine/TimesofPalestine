@@ -9,39 +9,39 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.net/news/2026/9/6/%d8%ad%d8%aa%d9%89-%d9%85%d9%88%d8%a7%d8%b1%d8%a7%d8%a9-%d8%a7%d9%84%d8%ab%d8%b1%d9%89-%d8%aa%d8%ad%d8%aa%d8%a7%d8%ac-%d8%a5%d9%84%d9%89-%d8%a3%d8%b9%d9%88%d8%a7%d9%85-%d8%ba%d8%b2%d8%a9?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/734510",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82663",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/319671",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
    "article": "https://felesteen.news/post/185931/%D8%BA%D8%B2%D8%A9-%D8%AA%D8%B4%D9%8A%D8%B9-%D8%AC%D8%AB%D8%A7%D9%85%D9%8A%D9%86-100-%D8%B4%D9%87%D9%8A%D8%AF-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D9%84%D9%87%D9%85-%D9%85%D9%86-%D8%AA%D8%AD%D8%AA-%D8%A7%D9%84%D8%A3%D9%86%D9%82%D8%A7%D8%B6",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
   },
   {
-   "article": "https://t.me/QudsN/734516",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
    "article": "https://t.me/AlQastalps/393074",
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/319660",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/82680",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.net/news/2026/9/6/%d8%ad%d8%aa%d9%89-%d9%85%d9%88%d8%a7%d8%b1%d8%a7%d8%a9-%d8%a7%d9%84%d8%ab%d8%b1%d9%89-%d8%aa%d8%ad%d8%aa%d8%a7%d8%ac-%d8%a5%d9%84%d9%89-%d8%a3%d8%b9%d9%88%d8%a7%d9%85-%d8%ba%d8%b2%d8%a9?traffic_source=rss",
-   "name": "الجزيرة نت",
-   "url": "https://www.aljazeera.net/",
    "verified": true
   }
  ],
@@ -61,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "9ceee7ce91",
- "score": 63.54,
+ "score": 63.25,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",

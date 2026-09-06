@@ -6,13 +6,19 @@
    "article": "https://t.me/eyesonpal/53790",
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-05T12:57:45+00:00",
  "dek": "Settlers attacked five Palestinians, including elderly residents and young men, near the western entrance to Mughayyir village in the West Bank, Eye on Palestine reported. More than ten assailants beat the victims as…",
  "dup_of": null,
- "image": "https://cdn5.telesco.pe/file/UniqWuYX1qqDn1p3M2B2m-7_cGZA0YUKyeAtOd1fzgVAEkegFtEydD7ZeJMtpRBaiVKxPV2tMHGFhNF5ziKI442TGHxDVnItYO22CdPkcuSivsLzR8h8Bvn5fGmC1BuXJbLguD-j5WXyALUsfqBOFgBEcy9o3-J553WFdy7NMiioVmVT0vRuo5XDZr7_jGfMiYPlyL2W4Dp_avOj9xviTWEFGQJceCrpLuYA-ejUDc_mVSl-igGVyViQyaQHa5ULDpjUGjSQXKmzYvcQDwLkUOJOS2zfW84MsDBrqQAI7r9NXVEZWQ75us5SoqPadXJAwPORsU8AwiuH9V-fCbk-TA.jpg",
+ "image": "https://cdn5.telesco.pe/file/kR9QgerOlt0dEL8sKDGTAX5snxL3PvipQ4RktbYQpgaDlSD6CG6sl-Q7Dl2WasHpB6qSzYof0VoGjgO6L1yUSAjuaCTGdS71geRLt6zV8_ha3hIwi1Y9OlQrYSxLGE37fT30_kgh211K52M1XJIp7i-68TP5IoAJ26GhpXXfIcudS4gklMqpdZzxS14qU1vTeD_MBQG8ynOq8Gs6xM1VWjvMWcZuhwGsRKD1t0RGOKj6EpPtUhelR2zTOSIlnJaZLyJpTW-KHZ5CJIj4nz9Eb0yr1MuhUZbXtm6DJbUqTk0lUqif_NEGiE9jbhfWp_gytMXSstMyBpT0FeoSZOvuhw.jpg",
  "lang": "en",
  "link": "https://t.me/eyesonpal/53790",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "cb250138dd",
- "score": 50.72,
+ "score": 50.43,
  "source": "Eye on Palestine",
  "source_id": "tg-eyes",
  "source_url": "https://t.me/eyesonpal",
