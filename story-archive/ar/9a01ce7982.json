@@ -13,6 +13,12 @@
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82670",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-09-05T06:32:34+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "9a01ce7982",
- "score": 48.37,
+ "score": 48.11,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
