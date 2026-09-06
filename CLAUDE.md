@@ -6,6 +6,13 @@ undo another agent's layer to make your own change** — graft your change onto
 what is there, and when two approaches conflict, open a PR and let the owner
 decide rather than force-replacing files.
 
+**One charter, two file names (owner order 2026-09-06, "everyone on the same
+page"):** Claude's desks read `CLAUDE.md`; Codex and the Washington Brief and
+Diaspora Dispatch prompts read `AGENTS.md`. They are the same text. Every
+charter edit lands in BOTH files in the same commit (copy the edited file
+over the other); `tests/test_charter_guards.py` fails the build on drift,
+after the AGENTS.md copy was found five days and four owner orders behind.
+
 ## GUIDING PRINCIPLE — the page is alive (owner directive 2026-07-30)
 
 Times of Palestine is a DYNAMIC news site: every visit, every refresh should
