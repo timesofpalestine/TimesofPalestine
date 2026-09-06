@@ -1,0 +1,63 @@
+{
+ "brief": "Palestinian farmers in Hebron are battling daily assaults from settlers determined to drive them from their land, according to Al Jazeera English. The attacks include sabotage of crops and livestock theft, compounded by military restrictions that limit farmers' access to their own fields. Despite these obstacles, the farmers continue working to maintain their agricultural operations and livelihoods.\n\nConfrontations between Palestinian farmers and Israeli settlers occur regularly across the West Bank, with agricultural areas a frequent target. Farmers face both direct violence and administrative barriers that constrain their ability to tend their land effectively. The incidents reflect ongoing disputes over land and resource access in the region.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/6/palestinian-farmers-battle-settler-sabotage-to-save-hebron-crops-livestock?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-step-raids-across-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-colonizers-escalate-west-bank-attacks",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/us-envoy-west-bank-visit-says-israel-has-responsibility-palestinians",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48285",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-06T17:03:20+00:00",
+ "dek": "West Bank farmers defy daily settler attacks, sheep theft, and military restrictions to protect their land.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/Screenshot-2026-09-06-at-1.10.04-PM-1788689661.png?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/6/palestinian-farmers-battle-settler-sabotage-to-save-hebron-crops-livestock?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/6/palestinian-farmers-battle-settler-sabotage-to-save-hebron-crops-livestock?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d13e960941",
+ "score": 49.79,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "West Bank farmers fight settler attacks to protect Hebron crops"
+}
