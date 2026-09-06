@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.alquds.co.uk/%d8%b9%d8%a7%d9%85-%d8%af%d8%b1%d8%a7%d8%b3%d9%8a-%d8%aa%d8%ad%d8%aa-%d8%a7%d9%84%d8%aa%d8%ad%d8%af%d9%8a-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86-%d8%aa%d8%aa%d9%85%d8%b3%d9%83-%d8%a8%d8%a7%d9%84%d8%aa",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
    "article": "https://www.pbc.ps/%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%8a%d9%82%d8%aa%d8%ad%d9%85-%d8%b3%d8%a7%d8%ad%d8%aa%d9%8a-%d9%85%d8%af%d8%b1%d8%b3%d8%aa%d9%8a-%d8%ad%d9%88%d8%a7%d8%b1%d8%a9-%d9%88%d8%a8%d8%b1",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "fb2d30121f",
- "score": 45.55,
+ "score": 45.15,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
