@@ -6,7 +6,13 @@
    "article": "https://t.me/eyesonpal/53801",
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-throw-palestinian-out-vehicle-after-detention-beating",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-05T12:57:56+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "c6def1b9ac",
- "score": 41.74,
+ "score": 41.46,
  "source": "Eye on Palestine",
  "source_id": "tg-eyes",
  "source_url": "https://t.me/eyesonpal",
