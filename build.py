@@ -507,13 +507,45 @@ def score_item(item):
 # NOTE: Palestinian Christians deliberately have no section of their own — that
 # coverage runs through the general report (with a ranking boost) because it IS
 # the story of Palestine and Jerusalem, not a sidebar.
-HEALTH_RX = re.compile(
-    r"hospital|clinic|medic|health|doctor|nurse|surger|patient|cancer|oncolog|"
-    r"prosthetic|amputat|rehabilitat|dialysis|vaccin|polio|epidemi|malnutrit|"
-    r"telemedicine|tele-?health|trauma|ptsd|mental health|maternity|maternal|"
-    r"مستشفى|مستشفيات|عيادة|صحة|صحية|طبيب|أطباء|تمريض|جراحة|مريض|مرضى|سرطان|"
-    r"أطراف صناعية|بتر|تأهيل|غسيل الكلى|تطعيم|لقاح|شلل الأطفال|وباء|سوء التغذية|"
-    r"الطب عن بعد|صدمة نفسية|صحة نفسية|ولادة|أمومة", re.I)
+# Health & Healing is a RESPONSE desk (owner order 2026-09-06, after the
+# section filled with strikes on hospitals and clinic raids): a story lands
+# here only when its SUBJECT is disease, an outbreak, or medical care — what
+# is spreading, what is short, what treats it — and never when the headline
+# is the attack itself. An airstrike on a hospital is Gaza news; a raid on a
+# clinic is West Bank news; the diarrhoea count doubling is Health.
+HEALTH_CARE_RX = re.compile(
+    r"outbreak|epidemi|diarrh|cholera|hepatitis|meningitis|measles|polio|"
+    r"scabies|\blice\b|skin (?:disease|infection|condition)|rash|impetigo|"
+    r"chickenpox|respiratory infection|malnutrition|malnourish|vaccin|"
+    r"immuni[sz]|dialysis|insulin|prosthetic|amputee|rehabilitat|"
+    r"telemedicine|tele-?health|oncolog|chemotherap|cancer (?:patient|treatment|care|ward)|"
+    r"maternal|newborn|midwi|neonatal|mental health|psycholog|ptsd|"
+    r"medical evacuation|medevac|patient(?:s)? (?:referr|evacuat|treat|transfer)|"
+    r"field hospital|medicine shortage|drug shortage|medical supplies|oxygen|"
+    r"blood bank|water contamination|sewage|"
+    r"تفشّ?ي|وباء|إسهال|كوليرا|التهاب الكبد|السحايا|الحصبة|شلل الأطفال|الجرب|"
+    r"القمل|أمراض جلدية|طفح|سوء التغذية|تطعيم|لقاح|غسيل الكلى|الغسيل الكلوي|"
+    r"الأنسولين|أطراف صناعية|مبتور|تأهيل|الطب عن بعد|أورام|علاج كيميائي|"
+    r"مرضى السرطان|صحة الأم|حديثي الولادة|قابلات|الصحة النفسية|صدمة نفسية|"
+    r"إخلاء طبي|تحويلات طبية|مستشفى ميداني|نقص الأدوية|مستلزمات طبية|"
+    r"أكسجين|بنك الدم|تلوث المياه|مياه الصرف", re.I)
+HEALTH_ATTACK_RX = re.compile(
+    r"air ?strike|strikes?\b|bomb|shell|raid|storm|killed|kills?\b|assassinat|"
+    r"besieg|arrest|detain|abduct|demoli|massacre|"
+    r"قصف|غارة|استهدف|اقتحام|اقتحم|قتل|استشهاد|شهيد|شهداء|اعتقال|اعتقل|"
+    r"اختطاف|هدم|مجزرة", re.I)
+
+
+class _HealthRule:
+    """The section's relevance test: a care/disease subject, not an attack."""
+
+    def search(self, text):
+        if HEALTH_ATTACK_RX.search(text):
+            return None
+        return HEALTH_CARE_RX.search(text)
+
+
+HEALTH_RX = _HealthRule()
 
 # What Arab states and institutions are doing FOR Palestinians — politically,
 # economically, in aid, education and culture (owner directive 2026-08-02).
@@ -7012,16 +7044,38 @@ def main():
         if feature.is_dir() and (feature / ".static-feature").is_file():
             shutil.copytree(feature, dist / feature.name, dirs_exist_ok=True,
                             ignore=shutil.ignore_patterns(".static-feature"))
-    # SANAD outbreak watch (owner directive 2026-08-04): the newsroom's
-    # disease monitor over this build's wire items, published as ready-made
-    # case events the SANAD page pulls and the mesh then carries offline.
+    # Outbreak watch (owner directive 2026-08-04; owner order 2026-09-06:
+    # Health & Healing answers the outbreaks actually recorded in Palestinian
+    # areas). The disease monitor scans this build's wire items in both
+    # languages; every signal is written to dist/health-outbreaks.json with
+    # whether a Health & Healing RESPONSE article (an original in the section
+    # naming the disease, within ten days) exists, and an unanswered signal is
+    # announced loudly like a stale section — it is the daily editor's next
+    # health assignment. The SANAD board still receives the same events when
+    # it deploys. Fail-open: the watch never breaks the news build.
     try:
-        _watch = __import__("outbreak_watch").watch_events(en_items + ar_items)
+        _ow = __import__("outbreak_watch")
+        # Signals come from the WIRE (and partner wires) only — the section's
+        # own response pieces name the disease too and must never raise the
+        # signal they answer.
+        _wire = [i for i in en_items + ar_items if i.get("source_id") != "top-original"]
+        _watch = _ow.watch_events(_wire)
+        _ledger = _ow.response_ledger(_watch, en_items + ar_items, now=built_at)
+        (dist / "health-outbreaks.json").write_text(
+            json.dumps(_ledger, ensure_ascii=False, indent=2), encoding="utf-8")
+        for _sig in _ledger["unanswered"]:
+            print(f"  ⚠ outbreak without response: {_sig['disease']} "
+                  f"({_sig['zone']}, {_sig['week']}, {_sig['urgency']}) — "
+                  "file a Health & Healing response in both editions")
+            print(f"::warning::outbreak without response: {_sig['disease']} "
+                  f"({_sig['zone']}, {_sig['week']}) — file a Health & Healing "
+                  "response in both editions")
         if (dist / "sanad").is_dir():
             (dist / "sanad" / "watch.json").write_text(
                 json.dumps({"events": _watch}, ensure_ascii=False),
                 encoding="utf-8")
-            print(f"  → SANAD outbreak watch: {len(_watch)} alert(s)")
+        print(f"  → outbreak watch: {len(_watch)} signal(s), "
+              f"{len(_ledger['unanswered'])} without a response")
     except Exception as e:   # the watch must never break the news build
         print(f"  ⚠ outbreak watch failed open: {type(e).__name__}: {e}")
     (dist / "data.json").write_text(json.dumps(

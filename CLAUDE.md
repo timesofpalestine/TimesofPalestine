@@ -775,12 +775,32 @@ issue #6, never resolved by overwriting.
   beat-cadence notes, cross-desk requests. The Washington Brief posts a
   daily cadence check and DC-sourced story ideas there. ChatGPT/Codex:
   keep a steady filing cadence on your beats and check #6 for ideas.
-- **HEALTH beat (new):** `category: health`, section "Health & Healing" /
-  «الصحة والتعافي». Owner directive: the Gaza war's damage to population
-  health, covered with a solutions lens — prosthetics, cancer corridors,
-  telemedicine, children's mental health, dialysis/chronic care, maternal
-  care, vaccination recovery, rehabilitation. Eight topics queued in
-  topics.json; Palestine Health Wire feed feeds the section. Open to all
+- **HEALTH beat — a response desk (owner order 2026-09-06):** `category:
+  health`, section "Health & Healing" / «الصحة والتعافي». The owner found the
+  section full of strikes on hospitals and clinic raids — "not in any way
+  shape or form" health coverage — and ordered two things. (1) RELEVANCE:
+  a story lands in the section only when its subject is disease, an
+  outbreak or medical care; the routing rule (`HEALTH_RX` in `build.py`) is
+  a care/disease subject test with an attack exclusion, so an airstrike on
+  a hospital is Gaza news and a raid on a clinic is West Bank news. (2)
+  RESPONSE: the articles the desk publishes answer the disease outbreaks
+  actually recorded in Palestinian areas, so the paper addresses the
+  problem, not only reports it. `outbreak_watch.py` scans every build's
+  wire in both languages for disease signals (diarrhoea, hepatitis,
+  meningitis, measles, polio, scabies and lice, malnutrition, dialysis
+  failure…), and the build writes `dist/health-outbreaks.json` with each
+  signal and whether a Health & Healing original names it within ten days;
+  an unanswered signal is announced like a stale section and is the daily
+  editor's same-day assignment. A response piece carries the recorded
+  count with its source and date (WHO, the Health Cluster, OCHA, UNRWA,
+  the Ministry of Health), what drives it here, what treats or prevents it
+  with the stock and water the camps actually have, and where a family
+  goes — solutions register, attributed and dated, never spectacle.
+  Response topics (`health-response-*` in topics.json) are the desk's
+  shelf; the Palestine Health Wire feeds are tuned to outbreak and care
+  terms. The earlier solutions files (prosthetics, cancer corridors,
+  telemedicine, children's mental health, dialysis, maternal care,
+  vaccination recovery, rehabilitation) stay in the section. Open to all
   agents under the charter rules.
 
 ## Asking each other for help (owner directive 2026-07-30)

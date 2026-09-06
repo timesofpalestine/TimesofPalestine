@@ -1,4 +1,5 @@
-"""Outbreak watch — the newsroom's disease monitor feeding SANAD.
+"""Outbreak watch — the newsroom's disease monitor: the Health & Healing
+response ledger, and the SANAD board when it deploys.
 
 Owner directive 2026-08-04: keep an eye on the diseases spreading in Gaza
 and the West Bank and post them to SANAD automatically, so the specialist
@@ -131,3 +132,68 @@ def watch_events(items, now=None):
                 continue   # one bad item never kills the watch
     out.sort(key=lambda e: e["ts"], reverse=True)
     return out[:24]   # a board, not a firehose
+
+
+# ---------- Health & Healing response ledger (owner order 2026-09-06) ----------
+# "Make sure that the articles that you publish are in a way a response to
+# what disease outbreaks happen within the Palestinian areas." Every outbreak
+# signal the watch detects is matched against the Health & Healing section's
+# own originals: a RESPONSE is an original in that section, within
+# RESPONSE_WINDOW_DAYS of the signal, that names the disease. Signals without
+# one are the desk's next assignments, announced at build like stale sections.
+RESPONSE_WINDOW_DAYS = 10
+
+_DISEASE_BY_KEY = {d[0]: d for d in DISEASES}
+
+
+def _item_text(it):
+    return " ".join(str(it.get(f) or "") for f in
+                    ("title", "dek", "brief", "body", "text", "html"))
+
+
+def response_ledger(events, items, now=None):
+    """events: watch_events() output; items: this build's wire+originals.
+
+    Returns {"builtAt", "signals": [...], "unanswered": [...]} where each
+    signal carries the disease, zone, ISO week, urgency, the wire headline
+    that raised it, and the Health & Healing original that answers it (or
+    None)."""
+    now = now or datetime.now(timezone.utc)
+    responses = []
+    for it in items:
+        if it.get("source_id") != "top-original" or it.get("cat") != "health":
+            continue
+        d = it.get("date")
+        try:
+            age_days = (now - d).total_seconds() / 86400 if d else None
+        except Exception:
+            age_days = None
+        if age_days is not None and age_days > RESPONSE_WINDOW_DAYS:
+            continue
+        responses.append(it)
+    signals, unanswered = [], []
+    for ev in events:
+        ref = str(ev.get("ref") or "")           # EPI-<week>-<KEY6>
+        key6 = ref.rsplit("-", 1)[-1].lower() if ref else ""
+        key = next((k for k in _DISEASE_BY_KEY if k.upper()[:6].lower() == key6), None)
+        if not key:
+            continue
+        _, en, ar, specialty, urgency, pat = _DISEASE_BY_KEY[key]
+        rx = re.compile(pat, re.I)
+        c = ev.get("c") or {}
+        answer = None
+        for it in responses:
+            if rx.search(_item_text(it)):
+                answer = {"title": it.get("title"), "lang": it.get("lang"),
+                          "pid": it.get("pid")}
+                break
+        sig = {"disease": en, "diseaseAr": ar, "key": key,
+               "zone": c.get("zone"), "week": ref.split("-", 2)[1] + "-" + ref.split("-", 2)[2].rsplit("-", 1)[0] if ref.count("-") >= 3 else ref,
+               "urgency": urgency, "specialty": specialty,
+               "signal": (c.get("presentation") or "")[:300],
+               "response": answer}
+        signals.append(sig)
+        if not answer:
+            unanswered.append(sig)
+    return {"builtAt": now.isoformat(), "responseWindowDays": RESPONSE_WINDOW_DAYS,
+            "signals": signals, "unanswered": unanswered}
