@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli settlers carried out a series of attacks and provocations across the occupied West Bank overnight into Sunday morning, operating under heavy protection from Israeli forces, according to Palestinian media reports cited by Middle East Eye. The coordinated raids struck multiple locations throughout the territory, marking an escalation in settler activity in the region.\n\nPalestinian sources documented the overnight operations as settlers moved across different areas of the West Bank. The exact scope of damage and any resulting casualties remained unclear from initial reports. Israeli military forces accompanied the settlers during the raids, a pattern that Palestinian officials have repeatedly documented in recent months.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-step-raids-across-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-colonizers-escalate-west-bank-attacks",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-06T09:32:41+00:00",
+ "dek": "Israeli settlers step up raids across the West Bank Israeli settlers carried out a series of attacks and provocations across the occupied West Bank overnight into Sunday morning, under heavy protection from Israeli forces, according to Palestinian media. In…",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-step-raids-across-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b44bf66070",
+ "score": 62.87,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli settlers intensify West Bank raids under military cover"
+}
