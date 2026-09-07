@@ -31,6 +31,12 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/45743-17",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": false
   }
  ],
  "date": "2026-09-07T08:15:12+00:00",
@@ -49,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "4998fe0227",
- "score": 61.16,
+ "score": 60.96,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
