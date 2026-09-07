@@ -4,7 +4,8 @@
   "briefs": 28.981387,
   "investigations": 14.450525,
   "washington": 14.2065,
-  "editor": 86.95973
+  "editor": 86.95973,
+  "maintenance": 12.00925
  },
  "tags": {
   "briefs:rewrite": 9.328374,
@@ -35,7 +36,14 @@
     "usd": 6.0151,
     "tier": "light"
    }
+  ],
+  "maintenance": [
+   {
+    "ts": "2026-09-07T09:13:21.241912+00:00",
+    "usd": 12.0093,
+    "tier": "full"
+   }
   ]
  },
- "updated": "2026-09-07T09:00:40.532165+00:00"
+ "updated": "2026-09-07T09:13:21.241923+00:00"
 }
