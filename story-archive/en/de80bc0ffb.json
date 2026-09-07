@@ -13,6 +13,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israeli-strike-kills-man-and-his-daughter-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-07T11:27:33+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "de80bc0ffb",
- "score": 63.42,
+ "score": 62.95,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
