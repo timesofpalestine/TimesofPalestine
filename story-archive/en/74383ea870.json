@@ -1,0 +1,39 @@
+{
+ "brief": "A settler was seriously wounded in a stabbing attack east of Nablus, the Ma'an news agency reported. The incident took place in an area of the northern West Bank where Israeli settlers and Palestinian residents have faced recurring clashes and security tensions.\n\nDetails about how the attack unfolded and the circumstances surrounding the stabbing remained unclear. Medical personnel treated the wounded settler, though specifics about the extent of his injuries were not immediately disclosed. The attack marks another incident of violence in a region where confrontations between the two communities have persisted.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168289.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163638/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86-%D8%A8%D8%AC%D8%B1%D9%88%D8%AD-%D8%AE%D8%B7%D9%8A%D8%B1%D8%A9-%D9%81%D9%8A-%D8%B9%D9%85%D9%84%D9%8A%D8%A9-%D8%B7%D8%B9%D9%86-%D9%82%D8%B1%D8%A8-%D8%B9%D9%88%D8%B1%D8%AA%D8%A7-%D8%AC%D9%86%D9%88%D8%A8-%D8%B4%D8%B1%D9%82-%D9%86%D8%A7%D8%A8%D9%84%D8%B3",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-07T08:02:30+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168289.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "74383ea870",
+ "score": 63.9,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settler seriously wounded in stabbing east of Nablus"
+}

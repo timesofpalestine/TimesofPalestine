@@ -1,0 +1,57 @@
+{
+ "brief": "أصيب مستوطن بجروح خطيرة جراء عملية طعن وإطلاق نار شرق نابلس، بحسب وكالة معاً. ولم تفصح الوكالة عن تفاصيل الحادث أو هوية منفذي العملية حتى الآن.\n\nويتزامن الحادث مع موجة من التصعيد الأمني في الضفة الغربية، إذ شهدت المنطقة في الآونة الأخيرة عمليات متكررة استهدفت المستوطنين والقوات الإسرائيلية. وتشير تقارير إلى استمرار حالة من التوتر في المناطق المأهولة بالمستوطنين، في ظل تنامي الاشتباكات والعمليات الأمنية.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168289.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163638/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86-%D8%A8%D8%AC%D8%B1%D9%88%D8%AD-%D8%AE%D8%B7%D9%8A%D8%B1%D8%A9-%D9%81%D9%8A-%D8%B9%D9%85%D9%84%D9%8A%D8%A9-%D8%B7%D8%B9%D9%86-%D9%82%D8%B1%D8%A8-%D8%B9%D9%88%D8%B1%D8%AA%D8%A7-%D8%AC%D9%86%D9%88%D8%A8-%D8%B4%D8%B1%D9%82-%D9%86%D8%A7%D8%A8%D9%84%D8%B3",
+   "name": "وكالة شهاب (حصري)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/734802",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/319868",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428824",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-07T08:02:30+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2168289.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "74383ea870",
+ "score": 63.87,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "مستوطن يُصاب برصاص وطعنات شرق نابلس"
+}
