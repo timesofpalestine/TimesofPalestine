@@ -683,6 +683,35 @@
    "ar": "رامي عبده",
    "wrong": [],
    "verified": "alresalah.news + daraj.media + euromedmonitor.org/ar, 2026-09-05"
+  },
+  {
+   "latin": "Jeffrey Gedmin",
+   "ar": "جيفري غدمن",
+   "wrong": [
+    "غيدمين",
+    "جيدمين",
+    "جدمين",
+    "غيدمن"
+   ],
+   "verified": "alhurra.com Arabic (own byline «الدكتور جيفري غدمن») + ajnet.me 2025-03-20 + sudanile, 2026-09-07"
+  },
+  {
+   "latin": "Kari Lake",
+   "ar": "كاري ليك",
+   "wrong": [
+    "كاري لايك",
+    "كارى ليك"
+   ],
+   "verified": "ajnet.me 2025-03-20 + alaraby.co.uk, 2026-09-07"
+  },
+  {
+   "latin": "Royce Lamberth",
+   "ar": "رويس لامبرث",
+   "wrong": [
+    "رويس لامبيرث",
+    "رويس لامبرت"
+   ],
+   "verified": "ajnet.me 2025-04-23 + alaraby.co.uk (Arabic usage split with «لامبيرث»; house form fixed for consistency), 2026-09-07"
   }
  ]
 }

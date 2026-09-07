@@ -65,6 +65,7 @@ opportunistically:
 
 | Story | What's needed |
 | --- | --- |
+| alhurra-mbn-lean-newsroom-2026-09-07 | rights-cleared photo of Alhurra's Springfield, Virginia newsroom or its former Dubai studios (USAGM press material is US-government work, public domain — check the specific frame), with manifest entry; the before/after ledger SVG then moves in-body |
 | shabjdeed-kufr-aqab-arab-rap-2026-08-07 | rights-cleared performance photo (BLTNM press kit / Commons) |
 | washington-brief franchise | rotate per-edition subject portraits from Commons as briefs change subject (Mladenov Commons portrait currently healthy) |
 | tomorrows-youth-organization-nablus-2026 | rights-cleared photo of the TYO centre or a program session — ask the organization's press contact, or Commons; manifest entry required |
