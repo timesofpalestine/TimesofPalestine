@@ -1,0 +1,33 @@
+{
+ "brief": "A new book investigates how media outlets shaped public understanding of Israel's military campaign in Gaza, according to Al Jazeera English. The work focuses on the role journalism played in framing the conflict and examines whether reporting served to normalize the offensive to audiences worldwide.\n\nThe book argues that media coverage whitewashed the nature of Israel's operations in Gaza, presenting the military campaign through language and framing that obscured its scale and character. It documents how outlets across different regions reported on the war to domestic and international audiences during the conflict, tracing patterns in how journalists and news organizations characterized events on the ground.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/the-listening-post/2026/9/7/how-the-media-manufactured-consent-for-genocide?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-07T14:59:37+00:00",
+ "dek": "A new book uncovers the role the media played in whitewashing Israel's genocidal war on Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788792386.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/the-listening-post/2026/9/7/how-the-media-manufactured-consent-for-genocide?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/the-listening-post/2026/9/7/how-the-media-manufactured-consent-for-genocide?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "aaf2524105",
+ "score": 49.68,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Book examines media coverage of Israel's Gaza war"
+}
