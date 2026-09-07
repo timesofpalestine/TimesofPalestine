@@ -1,0 +1,33 @@
+{
+ "brief": "B'Tselem, an Israeli human rights organization, has characterized Israel's military operations in Gaza as genocide occurring in real-time, according to Al Jazeera English. The organization's executive director made the assertion as the conflict continues and civilian death tolls mount across the Palestinian territory.\n\nThe designation marks a stark position from one of Israel's most prominent civil society monitors of state conduct. B'Tselem has long documented alleged violations by Israeli forces and has frequently issued critical assessments of military campaigns. The group's use of the term \"genocide\" underscores the severity of its evaluation regarding the scope and nature of operations in Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/aljazeerauntangles/2026/9/7/gaza-genocide-in-real-time?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-07T17:23:01+00:00",
+ "dek": "B'Tselem Executive Directo…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788801768.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/aljazeerauntangles/2026/9/7/gaza-genocide-in-real-time?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/aljazeerauntangles/2026/9/7/gaza-genocide-in-real-time?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "af6a62ea65",
+ "score": 49.85,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli rights group calls Gaza assault genocide in real time"
+}
