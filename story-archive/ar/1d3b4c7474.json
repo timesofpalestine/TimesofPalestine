@@ -15,18 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%ac%d9%8a%d8%b4-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d9%8a%d9%82%d8%aa%d8%ad%d9%85-%d9%85%d8%ae",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/AlQastalps/393297",
-   "name": "القسطل · تيليغرام",
-   "url": "https://t.me/AlQastalps",
-   "verified": true
-  },
-  {
    "article": "https://t.me/Palinfo/319993",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
@@ -36,6 +24,12 @@
    "article": "https://t.me/Arabi21News/428855",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393286",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
    "verified": true
   },
   {
@@ -67,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "1d3b4c7474",
- "score": 49.25,
+ "score": 48.95,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
