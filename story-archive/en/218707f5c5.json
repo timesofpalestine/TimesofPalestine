@@ -33,18 +33,6 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/news/2026/9/7/israeli-wounded-in-stabbing-in-occupied-west-bank?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/israeli-defence-minister-threatens-all-out-war-occupied-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
@@ -67,7 +55,7 @@
  "modified": null,
  "original": true,
  "pid": "218707f5c5",
- "score": 86.72999999999999,
+ "score": 86.7,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
