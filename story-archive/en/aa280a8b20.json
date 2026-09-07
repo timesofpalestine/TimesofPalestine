@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/sports/2026/9/6/adidas-faces-boycott-calls-over-campaign-featuring-former-israeli-soldier?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163630/%D8%A3%D8%AF%D9%8A%D8%AF%D8%A7%D8%B3-%D8%AA%D8%AD%D8%AA%D9%81%D9%8A-%D8%A8%D9%85%D8%B1%D8%AA%D9%83%D8%A8%D9%8A-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-%D9%88%D8%AA%D8%AA%D8%AC%D8%A7%D9%87%D9%84-%D8%A2%D9%84%D8%A7%D9%81-%D9%85%D8%A8%D8%AA%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D8%A3%D8%B7%D8%B1%D8%A7%D9%81-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-06T18:56:25+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "aa280a8b20",
- "score": 42.83,
+ "score": 42.54,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

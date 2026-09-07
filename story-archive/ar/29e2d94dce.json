@@ -6,7 +6,19 @@
    "article": "https://www.aljazeera.net/news/2026/9/7/%d8%b4%d9%87%d9%8a%d8%af-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a-%d9%883-%d9%85%d8%b5%d8%a7%d8%a8%d9%8a%d9%86-%d8%a5%d8%ab%d8%b1-%d8%a7%d8%b9%d8%aa%d8%af%d8%a7%d8%a1%d8%a7%d8%aa?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163629/%D8%B4%D9%87%D9%8A%D8%AF-%D8%A8%D8%B1%D8%B5%D8%A7%D8%B5-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D8%AE%D9%84%D8%A7%D9%84-%D9%87%D8%AC%D9%88%D9%85-%D8%B9%D9%84%D9%89-%D9%82%D8%B1%D9%8A%D8%A9-%D8%AD%D8%AC%D8%A9-%D9%88%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85%D8%A7%D8%AA-%D9%88%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D9%88%D8%A7%D8%B3%D8%B9%D8%A9-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
+   "name": "وكالة شهاب (حصري)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393170",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
   }
  ],
  "date": "2026-09-06T21:34:27+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "29e2d94dce",
- "score": 58.63,
+ "score": 58.35,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
