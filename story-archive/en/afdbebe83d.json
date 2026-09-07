@@ -13,12 +13,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-drone-strike-kills-6-year-old-on-her-first-day-of-school",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
   }
  ],
  "date": "2026-09-07T02:17:17+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "afdbebe83d",
- "score": 59.6,
+ "score": 59.38,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
