@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strikes-kills-two-gaza-including-child",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/palestinian-killed-two-die-from-wounds-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-07T00:19:08+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "e62fc2be21",
- "score": 57.18,
+ "score": 56.87,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
