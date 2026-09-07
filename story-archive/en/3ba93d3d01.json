@@ -1,0 +1,45 @@
+{
+ "brief": "Israel's removal of rubble from Gaza risks destroying evidence of potential war crimes, according to the United Nations. The International Court of Justice ordered Israel in 2024 to prevent the destruction of evidence related to alleged violations of international humanitarian law. Al Jazeera English reported the UN's concerns that debris clearance operations could eliminate material needed for future investigations and accountability proceedings.\n\nThe ICJ directive followed cases filed against Israel regarding military conduct in Gaza. Preserving physical evidence at destruction sites remains essential for documenting alleged violations, supporting witness testimony, and enabling potential prosecutions at international courts. Investigators and monitors have warned that large-scale rubble removal without prior forensic examination could impede efforts to establish facts about alleged abuses.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/7/israels-removal-of-gaza-rubble-risk-to-war-crimes-evidence-un?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israeli-rubble-clearing-gaza-could-erase-atrocity-crimes-evidence-un-expert",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-clearance-gaza-rubble-could-destroy-evidence-says-un-expert",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-07T21:00:58+00:00",
+ "dek": "International Court of Justice ordered Israel in 2024 to prevent the destruction of evidence related to war crimes.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6a9c7bd1044a-1788640209.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/7/israels-removal-of-gaza-rubble-risk-to-war-crimes-evidence-un?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/7/israels-removal-of-gaza-rubble-risk-to-war-crimes-evidence-un?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3ba93d3d01",
+ "score": 49.74,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN warns Israel's Gaza rubble removal destroys war crimes evidence"
+}
