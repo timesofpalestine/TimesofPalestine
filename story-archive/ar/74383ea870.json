@@ -15,18 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.net/news/2026/9/7/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a5%d8%b0%d8%a7%d8%b9%d8%a9-%d8%a7%d9%84%d8%ac%d9%8a%d8%b4-%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-14?traffic_source=rss",
-   "name": "الجزيرة نت",
-   "url": "https://www.aljazeera.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Arabi21News/428827",
-   "name": "عربي21",
-   "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
    "article": "https://t.me/Palinfo/319899",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
@@ -57,6 +45,12 @@
    "verified": true
   },
   {
+   "article": "https://t.me/Arabi21News/428824",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  },
+  {
    "article": "https://t.me/gazaalannet/82732",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
@@ -66,7 +60,7 @@
  "date": "2026-09-07T09:25:37+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-westbank-ar.svg",
+ "image": "/media/times-of-palestine-cover-westbank-b-ar.svg",
  "lang": "ar",
  "link": "https://www.maannews.net/news/2168289.html",
  "max_age_hours": 72,
@@ -79,7 +73,7 @@
  "modified": null,
  "original": false,
  "pid": "74383ea870",
- "score": 62.85,
+ "score": 62.59,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
