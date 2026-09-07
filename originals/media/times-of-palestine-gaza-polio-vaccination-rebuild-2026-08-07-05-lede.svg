@@ -24,13 +24,13 @@
   <!-- header -->
   <text x="70" y="76" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="4.5" fill="#c7a86b">GAZA · PUBLIC HEALTH</text>
   <text x="70" y="134" font-family="'Source Serif 4',Georgia,serif" font-size="43" fill="#f2eee8" textLength="1514" lengthAdjust="spacingAndGlyphs">UN agencies restart Gaza immunisation as coverage falls below 70%</text>
-  <text x="70" y="180" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#c7a86b" direction="rtl">وكالات أممية تستأنف حملات التطعيم في غزة مع تراجع التغطية دون 70٪</text>
+  <text x="70" y="180" font-family="Cairo,Arial,sans-serif" font-size="29" fill="#c7a86b" direction="rtl" text-anchor="end">وكالات أممية تستأنف حملات التطعيم في غزة مع تراجع التغطية دون 70٪</text>
   <line x1="70" y1="212" x2="1540" y2="212" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2"/>
 
   <!-- PANEL A -->
   <rect x="70" y="242" width="430" height="562" rx="10" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/>
   <text x="100" y="292" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8" font-weight="600">Routine childhood coverage</text>
-  <text x="100" y="324" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" direction="rtl">تغطية التطعيم الروتيني للأطفال</text>
+  <text x="100" y="324" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" direction="rtl" text-anchor="end">تغطية التطعيم الروتيني للأطفال</text>
 
   <line x1="100" y1="750" x2="470" y2="750" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
   <rect x="140" y="400" width="110" height="350" fill="url(#barOld)"/>
@@ -46,7 +46,7 @@
   <!-- PANEL B -->
   <rect x="530" y="242" width="470" height="562" rx="10" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/>
   <text x="560" y="292" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8" font-weight="600">Immunisation facilities</text>
-  <text x="560" y="324" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" direction="rtl">مراكز التطعيم في القطاع</text>
+  <text x="560" y="324" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" direction="rtl" text-anchor="end">مراكز التطعيم في القطاع</text>
 
   <g>
     <!-- 54 units: first 31 damaged/destroyed (red outline), remaining 23 functioning (green) -->
@@ -75,7 +75,7 @@
   <!-- PANEL C -->
   <rect x="1030" y="242" width="510" height="562" rx="10" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.10"/>
   <text x="1060" y="292" font-family="'Libre Franklin',Arial,sans-serif" font-size="23" fill="#f2eee8" font-weight="600">Catch-up campaign, children under three</text>
-  <text x="1060" y="324" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" direction="rtl">جولات حملة التطعيم التعويضية</text>
+  <text x="1060" y="324" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5" direction="rtl" text-anchor="end">جولات حملة التطعيم التعويضية</text>
 
   <text x="1060" y="378" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Target across three rounds</text>
   <rect x="1060" y="392" width="450" height="28" rx="6" fill="#ffffff" fill-opacity="0.08"/>
@@ -103,5 +103,5 @@
   <!-- footer -->
   <line x1="70" y1="836" x2="1540" y2="836" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
   <text x="70" y="868" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Sources: UNICEF, WHO, Palestinian Ministry of Health via WAFA</text>
-  <text x="1540" y="868" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#c7a86b" direction="rtl">تايمز أوف فلسطين</text>
+  <text x="1540" y="868" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#c7a86b" direction="rtl">تايمز أوف فلسطين</text>
 </svg>
