@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/9/7/uk-relationship-with-israel?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/politics/2026/sep/07/ed-miliband-reset-uk-relations-israel-palestine",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-07T16:38:44+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1dc544eb69",
- "score": 48.77,
+ "score": 48.5,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
