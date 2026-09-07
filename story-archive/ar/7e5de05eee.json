@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، نفّذ جيش الاحتلال عملية تفجير في بلدة المنصوري بجنوب لبنان. وتندرج العملية ضمن سياق التصعيد العسكري المتواصل بين إسرائيل والفصائل المسلحة اللبنانية في المناطق الحدودية بين البلدين.\n\nتقع المنصوري بالقرب من الخط الفاصل بين إسرائيل ولبنان، وتشهد المنطقة توترات أمنية متكررة منذ فترة. وتتسم العمليات العسكرية الإسرائيلية في جنوب لبنان بالتكرار خلال الأشهر الأخيرة، إذ تستهدف مواقع يقول الجانب الإسرائيلي إنها معاقل لفصائل مسلحة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319878",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-07T09:10:34+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/oVaSEVjrN-zglVSzR7Mw1wKLdUcukW_hGU6UG4AnJQkXdVloYtcI6cXwUAujhsODlEVoiZfbftyinHCF35C-Q7IBg1jcZP8BKfuu8Du4Ne-ZKU4HVbbzYEdn5EvJ5YeqhghdplUHgvt8u_20JCSxQcnL4YdVKSQOyzTki0lnOTUB4Cm85WWsoatmVUkORVhIKGirs2-m7HESkaNnczUURkvoqGpDDapqajCLcY3B4AvN2RKrwPB_uwL5K--1ZEOXO_GQgNzKxYrqR40U62w7dCWpnlg4sUg334Iz1fnvfaN65MzgPrQCjROaXO8vvBQuZKwrxJ0Ct3qcZmTas0X7Pw.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319878",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/319878"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7e5de05eee",
+ "score": 49.58,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "جيش الاحتلال ينفذ عملية تفجير في المنصوري جنوب لبنان"
+}

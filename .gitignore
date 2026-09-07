@@ -14,3 +14,7 @@ telegram-outbox.json
 # persist commit.
 originals/._ledger.json.lock
 originals/._ledger.json.*.tmp
+
+# dev-only: tools/svg_rtl_sweep.mjs needs playwright-core (never in the build path)
+node_modules/
+package-lock.json

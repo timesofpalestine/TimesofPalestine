@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli occupation bulldozers demolished a home belonging to the Abu Miala family in the Jerusalem neighborhood of Beit Hanina, the Ma'an news agency reported. Video footage documented the demolition as heavy machinery tore through the residential structure.\n\nThe destruction follows a pattern of house demolitions carried out by Israeli authorities in Beit Hanina and surrounding areas of occupied Jerusalem. Residents and rights groups have documented dozens of such operations over recent years, with Israeli officials typically citing the absence of building permits as justification for the removals. The demolished home housed members of the Abu Miala family in the contested neighborhood.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168285.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-authorities-demolish-palestinian-home-in-beit-hanina",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-07T08:25:42+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/gHI-XgaB5pwuM2w2-8JPBXoneMcGb1Av4O2sj3J-HW65F2m-B0CxBdpMkbbijlmGphjSZ-zP5KfAvQ4Hx3pnPtbPTzYg4gMjd-jfyw_lN9pAfwnmcdNN9oJneyZhrB9k3wscplPJ340WhO1KUy3A3IBW9ueVXTRUT-4QRaVbZS26GjFstREy8lo4UCNZaNb4qRWs1RghYkSUg8Nv1k6Bxn00dRKkKDeoEwlZfa4JTVXubBB9TO2_MZgn6JwnWv-0bdCXTQOrwBDPU7BH-kYio4KF4K9HnFV9N5G7YsQqMAloOr0SsMU-Q1f4OxYl2PYn2-PE0JAafHnEJrn620h7Mg.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168285.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2168285.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f0d952dc6d",
+ "score": 47.62,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli bulldozers demolish Abu Miala family home in Beit Hanina"
+}

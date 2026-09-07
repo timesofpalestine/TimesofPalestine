@@ -1,0 +1,45 @@
+{
+ "brief": "An Al Jazeera reporter confronted US Ambassador to Israel Mike Huckabee over his characterization of violent Israeli settlers as a minority, according to Al Jazeera English. The exchange took place as Huckabee sought to minimize the scope and impact of settler attacks in the occupied territories.\n\nThe reporter pressed Huckabee on the distinction between isolated incidents and what critics describe as systematic violence by settlers against Palestinians. Huckabee's framing of the issue as involving only a small faction of Israelis stood in contrast to documented accounts of repeated attacks on Palestinian communities and property.\n\nThe encounter reflects sharper scrutiny from international media of how US officials discuss Israeli settler actions and their characterization in diplomatic statements.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/5/al-jazeera-reporter-challenges-huckabee-over-israeli-settler-pogroms?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/us-ambassador-visits-palestinian-town-amid-rise-west-bank-settler-violence",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-05T20:00:05+00:00",
+ "dek": "Al Jazeera reporter challenged US Ambassador to Israel Mike Huckabee after he called violent Israeli settlers a minority…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788638339.jpg?resize=1911%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/5/al-jazeera-reporter-challenges-huckabee-over-israeli-settler-pogroms?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/5/al-jazeera-reporter-challenges-huckabee-over-israeli-settler-pogroms?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "194eb22353",
+ "score": 41.61,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Al Jazeera reporter challenges Huckabee on Israeli settler violence"
+}

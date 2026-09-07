@@ -1,0 +1,39 @@
+{
+ "brief": "An eight-year-old girl and her father were killed when an Israeli strike struck their vehicle as she prepared to attend school for the first time, Al Jazeera English reported. The child had been heading to classes when the strike occurred, according to the outlet's account of the incident.\n\nThe deaths marked a violent beginning to the school year in Gaza. The strike targeted the family's vehicle, resulting in casualties on what was meant to be a significant day for the young student's education. Circumstances surrounding the Israeli operation remain under investigation.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/7/eight-year-old-gaza-girl-killed-by-israel-on-first-day-of-school?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israeli-strike-kills-man-and-his-daughter-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-07T02:17:17+00:00",
+ "dek": "An eight-year-old girl and her father were killed when an Israeli strike hit their vehicle on her first day of school.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788750134.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/7/eight-year-old-gaza-girl-killed-by-israel-on-first-day-of-school?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/7/eight-year-old-gaza-girl-killed-by-israel-on-first-day-of-school?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "afdbebe83d",
+ "score": 57.05,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike kills eight-year-old girl on Gaza school's opening day"
+}

@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب وكالة معاً، استقبلت بريطانيا شهادات موصوفة بأنها صادمة قادمة من غزة، فيما رفضت إسرائيل الاتهامات المرتبطة بها. وتعكس الشهادات روايات من السكان المحليين حول أحداث في القطاع، غير أن تفاصيل محتواها لم تُفصح عنها بالكامل.\n\nمن جانبها، أنكرت إسرائيل الوقائع المنسوبة إليها في تلك الشهادات، معتبرة الاتهامات غير دقيقة. ولم يُعلن عن الخطوات التي قد تتخذها السلطات البريطانية إزاء هذه الشهادات أو كيفية التعامل معها في المراحل القادمة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168233.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-06T09:29:57+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2168233.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "921580696b",
+ "score": 34.22,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "بريطانيا تستقبل شهادات من غزة وإسرائيل تنفي الاتهامات"
+}

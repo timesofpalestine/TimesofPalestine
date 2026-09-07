@@ -19,7 +19,7 @@
 <!-- Titles -->
 <text x="90" y="86" font-family="'Source Serif 4',Georgia,serif" font-size="45" fill="#f2eee8">Israel bars Gaza’s cancer patients from West Bank hospitals</text>
 <text x="90" y="124" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" letter-spacing="2" fill="#c7a86b">WHO MEDICAL EVACUATION FACT SHEET · 23 FEBRUARY 2026</text>
-<text x="1560" y="124" direction="rtl" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#aaa9a5">إسرائيل تمنع مرضى السرطان في غزة من مستشفيات الضفة الغربية</text>
+<text x="1560" y="124" direction="rtl" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#aaa9a5">إسرائيل تمنع مرضى السرطان في غزة من مستشفيات الضفة الغربية</text>
 <line x1="90" y1="148" x2="1560" y2="148" stroke="#3a3b3f" stroke-width="2"/>
 
 <!-- Corridor band -->
@@ -37,7 +37,7 @@
 <rect x="1110" y="292" width="450" height="172" fill="#16171a" stroke="#286344" stroke-width="3"/>
 <text x="1138" y="336" font-family="'Libre Franklin',Arial,sans-serif" font-size="25" letter-spacing="2" fill="#f2eee8">WEST BANK &amp;</text>
 <text x="1138" y="366" font-family="'Libre Franklin',Arial,sans-serif" font-size="25" letter-spacing="2" fill="#f2eee8">EAST JERUSALEM</text>
-<text x="1532" y="336" direction="rtl" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#c7a86b">الضفة والقدس</text>
+<text x="1532" y="336" direction="rtl" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#c7a86b">الضفة والقدس</text>
 <text x="1138" y="406" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Augusta Victoria Hospital can take</text>
 <text x="1138" y="434" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#59a97d">50 new oncology patients a day</text>
 
@@ -79,28 +79,28 @@
 <text x="126" y="700" font-family="'Source Serif 4',Georgia,serif" font-size="50" fill="#c7a86b">11,000+</text>
 <text x="126" y="734" font-size="17" fill="#f2eee8">cancer patients in Gaza</text>
 <text x="126" y="758" font-size="15" fill="#aaa9a5">Gaza health ministry, via OCHA</text>
-<text x="414" y="790" direction="rtl" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">مرضى سرطان في القطاع</text>
+<text x="414" y="790" direction="rtl" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">مرضى سرطان في القطاع</text>
 
 <rect x="470" y="626" width="340" height="182" fill="#16171a" stroke="#3a3b3f"/>
 <text x="496" y="700" font-family="'Source Serif 4',Georgia,serif" font-size="50" fill="#c7a86b">564</text>
 <text x="496" y="734" font-size="17" fill="#f2eee8">cancer patients evacuated</text>
 <text x="496" y="758" font-size="15" fill="#aaa9a5">since Jan 2025: 215 men, 207</text>
 <text x="496" y="778" font-size="15" fill="#aaa9a5">women, 142 children (WHO)</text>
-<text x="784" y="790" direction="rtl" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">أُجلوا للخارج</text>
+<text x="784" y="790" direction="rtl" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">أُجلوا للخارج</text>
 
 <rect x="840" y="626" width="340" height="182" fill="#16171a" stroke="#3a3b3f"/>
 <text x="866" y="700" font-family="'Source Serif 4',Georgia,serif" font-size="50" fill="#c7a86b">75%</text>
 <text x="866" y="734" font-size="17" fill="#f2eee8">of chemotherapy drugs</text>
 <text x="866" y="756" font-size="17" fill="#f2eee8">unavailable in Gaza</text>
 <text x="866" y="780" font-size="15" fill="#aaa9a5">High Court petition, Nov 2025</text>
-<text x="1154" y="790" direction="rtl" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">أدوية كيماوي مفقودة</text>
+<text x="1154" y="790" direction="rtl" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">أدوية كيماوي مفقودة</text>
 
 <rect x="1210" y="626" width="350" height="182" fill="#16171a" stroke="#3a3b3f"/>
 <text x="1236" y="700" font-family="'Source Serif 4',Georgia,serif" font-size="50" fill="#C8102E">16,500</text>
 <text x="1236" y="734" font-size="17" fill="#f2eee8">Gaza residents at risk of</text>
 <text x="1236" y="756" font-size="17" fill="#f2eee8">death, petitioners say</text>
 <text x="1236" y="780" font-size="15" fill="#aaa9a5">Five Israeli rights groups, 20 Nov 2025</text>
-<text x="1534" y="790" direction="rtl" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">مهددون بالموت</text>
+<text x="1534" y="790" direction="rtl" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#59a97d">مهددون بالموت</text>
 </g>
 
 <text x="90" y="852" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Sources: WHO medical evacuation fact sheet (23 Feb 2026); OCHA; Gisha; Haaretz; Ha-Makom; The Lancet Global Health</text>

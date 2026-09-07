@@ -1,0 +1,33 @@
+{
+ "brief": "نفذت قوات الاحتلال تفجيراً في جنوب لبنان، بحسب المركز الفلسطيني للإعلام. ولم تحدد المركز موقع التفجير بدقة أو تفاصيل الحادثة الأخرى، إذ اقتصرت على الإشارة إلى العملية دون بيانات إضافية حول حجم الأضرار أو الخسائر.\n\nيأتي هذا في سياق التصعيد المتكرر على الحدود اللبنانية الإسرائيلية منذ اندلاع حرب غزة في أكتوبر 2023، فيما شهدت المنطقة تبادلاً مستمراً للقصف بين القوات الإسرائيلية وحزب الله. وتزامنت العملية مع حالة من التوتر الأمني الذي يميز الأشهر الأخيرة على هذه الجبهة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319761",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-06T17:23:07+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319761",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "12ac0b9ea5",
+ "score": 62.71,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قوات الاحتلال تنفذ تفجيراً جنوبي لبنان"
+}

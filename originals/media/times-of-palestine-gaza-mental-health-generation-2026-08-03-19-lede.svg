@@ -26,8 +26,8 @@
 <text class="dp ivory" x="100" y="112" font-size="40">1.1 million children need support.</text>
 <text class="dp" x="100" y="160" font-size="40" fill="#c7a86b">About 30,000 are reached each month.</text>
 
-<text class="ar ivory" x="1520" y="118" font-size="23" text-anchor="end" direction="rtl">1.1 مليون طفل في غزة بحاجة إلى دعم نفسي واجتماعي</text>
-<text class="ar mut" x="1520" y="152" font-size="20" text-anchor="end" direction="rtl">والخدمات تصل إلى نحو 30,000 طفل فقط شهرياً</text>
+<text class="ar ivory" x="1520" y="118" font-size="23" direction="rtl">1.1 مليون طفل في غزة بحاجة إلى دعم نفسي واجتماعي</text>
+<text class="ar mut" x="1520" y="152" font-size="20" direction="rtl">والخدمات تصل إلى نحو 30,000 طفل فقط شهرياً</text>
 
 <line x1="100" y1="192" x2="1520" y2="192" stroke="#3a3b40" stroke-width="1"/>
 

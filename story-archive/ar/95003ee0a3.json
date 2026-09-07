@@ -1,0 +1,39 @@
+{
+ "brief": "قتل شخصان وأصيب آخر جراء غارة إسرائيلية استهدفت سيارة في بلدة كفر رمان بجنوب لبنان، وفقاً لوسائل إعلام لبنانية. كانت السيارة تقل مسعفين من جمعية كشافة الرسالة الإسلامية في الوقت الذي شنت فيه إسرائيل عمليات قصف متكررة على مناطق لبنانية متفرقة.\n\nيأتي الحادث في سياق التصعيد العسكري المستمر بين الجانبين، حيث استهدفت القوات الإسرائيلية عدداً من البلدات والقرى اللبنانية خلال الأسابيع الماضية. لم تُصدر الحكومة اللبنانية بياناً رسمياً بشأن الحادثة حتى الآن.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319821",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/734710",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-06T22:54:09+00:00",
+ "dek": "وسائل إعلام لبنانية: شهيدان ومصاب جراء استهداف الاحتلال لسيارة في بلدة كفر رمان جنوب لبنان - السيارة كانت تقل مسعفين من جمعية كشافة الرسالة الإسلامية",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319821",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "95003ee0a3",
+ "score": 63.83,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "استهداف إسرائيلي لسيارة إسعاف في كفر رمان اللبنانية يوقع قتيلين"
+}

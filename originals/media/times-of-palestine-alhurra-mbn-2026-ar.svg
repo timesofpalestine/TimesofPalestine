@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">«الحرة» قبل وبعد: من قناة فضائية بمئة مليون دولار إلى غرفة أخبار رقمية بتسعة وستين مليوناً</title>
+<desc id="dsc">رسم بياني على شكل دفتر حساب. العمود الأيمن، قبل: نحو مئة مليون دولار سنوياً في السنة المالية 2024، قناة فضائية وراديو سوا ومكاتب من دبي إلى بغداد. العمود الأيسر، بعد: 69 مليون دولار في موازنة 2026، موقع وأربع نشرات بريدية وبودكاست وتطبيق، وتسريح نحو تسعين في المئة من الموظفين في نيسان/أبريل 2025 مع إبقاء ثلاثين.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<style>.serif{font-family:"Source Serif 4",Georgia,serif}.arabic{font-family:Cairo,Arial,sans-serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}.mono{font-family:"IBM Plex Mono",Menlo,monospace}</style>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="1578" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="1570" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header, Arabic first -->
+<text x="1510" y="72" class="arabic" font-size="20" letter-spacing="1" fill="#c7a86b" direction="rtl" text-anchor="start">الإعلام العربي — تايمز أوف بالستين</text>
+<text x="1510" y="140" class="arabic" font-size="54" font-weight="700" fill="#f2eee8" direction="rtl" text-anchor="start">«الحرة» قبل وبعد</text>
+<text x="1510" y="192" class="serif" font-size="28" fill="#aaa9a5" text-anchor="end">From a satellite dish to a digital newsroom</text>
+<line x1="60" y1="222" x2="1510" y2="222" stroke="#3a3b40" stroke-width="2"/>
+
+<!-- before column (right) -->
+<text x="1510" y="272" class="arabic" font-size="22" fill="#aaa9a5" direction="rtl" text-anchor="start">قبل · BEFORE</text>
+<rect x="870" y="292" width="640" height="150" rx="6" fill="#16171a" stroke="#2b2c30" stroke-width="2"/>
+<rect x="1504" y="292" width="6" height="150" fill="#8a1f2d"/>
+<text x="1480" y="372" class="mono" font-size="60" font-weight="700" fill="#f2eee8" text-anchor="end">$100M</text>
+<text x="1240" y="340" class="arabic" font-size="22" fill="#f2eee8" direction="rtl" text-anchor="start">سنوياً في السنة المالية 2024</text>
+<text x="1240" y="374" class="arabic" font-size="19" fill="#aaa9a5" direction="rtl" text-anchor="start">الوكالة الأميركية للإعلام العالمي</text>
+<text x="1240" y="410" class="sans" font-size="18" fill="#aaa9a5" text-anchor="end">$100 million a year, fiscal 2024</text>
+
+<rect x="870" y="462" width="640" height="150" rx="6" fill="#16171a" stroke="#2b2c30" stroke-width="2"/>
+<rect x="1504" y="462" width="6" height="150" fill="#8a1f2d"/>
+<!-- dish icon (mirrored) -->
+<path d="M1450 570 A70 70 0 0 0 1350 500" fill="none" stroke="#c7a86b" stroke-width="10" stroke-linecap="round"/>
+<line x1="1400" y1="535" x2="1345" y2="490" stroke="#c7a86b" stroke-width="6"/>
+<circle cx="1342" cy="487" r="8" fill="#c7a86b"/>
+<line x1="1420" y1="575" x2="1420" y2="600" stroke="#c7a86b" stroke-width="8"/>
+<text x="1300" y="510" class="arabic" font-size="22" fill="#f2eee8" direction="rtl" text-anchor="start">قناة فضائية وراديو سوا</text>
+<text x="1300" y="544" class="arabic" font-size="19" fill="#aaa9a5" direction="rtl" text-anchor="start">مكاتب في دبي وبغداد وبيروت وعمّان</text>
+<text x="1300" y="580" class="sans" font-size="18" fill="#aaa9a5" text-anchor="end">Satellite channel, radio, four bureaus</text>
+
+<!-- arrow (pointing left) -->
+<polygon points="840,440 770,440 770,415 720,452 770,489 770,464 840,464" fill="#c7a86b"/>
+
+<!-- after column (left) -->
+<text x="690" y="272" class="arabic" font-size="22" fill="#aaa9a5" direction="rtl" text-anchor="start">بعد · AFTER</text>
+<rect x="60" y="292" width="630" height="150" rx="6" fill="#16171a" stroke="#c7a86b" stroke-width="2"/>
+<rect x="684" y="292" width="6" height="150" fill="#286344"/>
+<text x="660" y="372" class="mono" font-size="60" font-weight="700" fill="#c7a86b" text-anchor="end">$69M</text>
+<text x="450" y="340" class="arabic" font-size="22" fill="#f2eee8" direction="rtl" text-anchor="start">في موازنة 2026</text>
+<text x="450" y="374" class="arabic" font-size="19" fill="#aaa9a5" direction="rtl" text-anchor="start">الكونغرس، بحسب مؤسسة كارنيغي</text>
+<text x="450" y="410" class="sans" font-size="18" fill="#aaa9a5" text-anchor="end">$69 million, 2026 appropriation</text>
+
+<rect x="60" y="462" width="630" height="150" rx="6" fill="#16171a" stroke="#c7a86b" stroke-width="2"/>
+<rect x="684" y="462" width="6" height="150" fill="#286344"/>
+<!-- phone icon -->
+<rect x="600" y="482" width="60" height="110" rx="10" fill="none" stroke="#c7a86b" stroke-width="8"/>
+<line x1="618" y1="576" x2="642" y2="576" stroke="#c7a86b" stroke-width="6"/>
+<text x="560" y="510" class="arabic" font-size="22" fill="#f2eee8" direction="rtl" text-anchor="start">موقع وأربع نشرات وبودكاست وتطبيق</text>
+<text x="560" y="544" class="arabic" font-size="19" fill="#aaa9a5" direction="rtl" text-anchor="start">تسريح نحو 90% من الموظفين في نيسان 2025، وبقاء 30</text>
+<text x="560" y="580" class="sans" font-size="18" fill="#aaa9a5" text-anchor="end">Website, newsletters, podcast, app; 30 staff</text>
+
+<!-- bottom line -->
+<rect x="60" y="650" width="1450" height="120" rx="6" fill="#16171a" stroke="#2b2c30" stroke-width="2"/>
+<text x="1480" y="702" class="arabic" font-size="32" font-weight="700" fill="#f2eee8" direction="rtl" text-anchor="start">كل عاصمة عربية تدفع ثمن الصحن نفسه، ولم تطفئه واحدة</text>
+<text x="1480" y="746" class="serif" font-size="24" fill="#c7a86b" text-anchor="end">Every Arab capital pays for the same dish. None has switched it off.</text>
+
+<text x="1510" y="850" class="arabic" font-size="16" fill="#6f6f6f" direction="rtl" text-anchor="start">رسم: تايمز أوف بالستين · الأرقام: الوكالة الأميركية للإعلام العالمي، كارنيغي، العربي الجديد، فرانس برس</text>
+<text x="60" y="850" class="sans" font-size="16" fill="#6f6f6f">Graphic: Times of Palestine</text>
+</svg>

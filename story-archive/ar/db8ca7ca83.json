@@ -1,0 +1,39 @@
+{
+ "brief": "أسفر قصف إسرائيلي استهدف محيط مبنى المدرسة الأمريكية غرب مفترق الاتصالات بمدينة غزة عن مقتل شهيد وإصابة عدد من الجرحى بينهم حالات في حالة حرجة، وفقاً للمركز الفلسطيني للإعلام. الغارة طالت منطقة مأهولة بالسكان في الجزء الغربي من المدينة.\n\nلم تُفصح مصادر فلسطينية حتى الآن عن الحصيلة الدقيقة للإصابات أو تفاصيل إضافية بشأن الحادثة التي وثّقتها عدسات مراسلي الوسط الإعلامي.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319787",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  },
+  {
+   "article": "https://t.me/gazaalannet/82702",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-06T20:33:10+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/ZgaZY1QJNUohYI5jctf4pq5ae33clB--vN9CVJgCtsNw70Tq10a6vG1pPYxhZ9ofiPxB3bp-BZXKJJtMbmmdJ5eoRTFM3BUCqW1hPeoc2JFm6Kjlbk7ypZC5Vp00ihUNT2Ywk7tUYQHyjPAZP7F8cBK5arcOnyVGQyRbIrWqFLNtOf2Fw1UGwmP6xZQE7fIUC1v50Y0vk8pFlwtDVv2Jq8JsSFbTI05m1tCYrrXG1Uup2aKUvAYWjingBk2-KF4bLhrcc4eZ5oYPgRp7XzlK-R2w2aLNHwVIZgdWMfHCflHpwlt9Gi1aYSGoBsnNwiSp1I6juRdkuU31OnGFKPEqzQ",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319787",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/319787"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "db8ca7ca83",
+ "score": 63.41,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قصف إسرائيلي يقتل فلسطينياً ويصيب آخرين غرب غزة"
+}

@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli quadcopters maintain a constant presence over Gaza, their steady buzz forming an inescapable backdrop to civilian life, We Are Not Numbers reported. The unmanned aircraft circle overhead throughout the day and night, their engines producing a sound residents have come to associate with danger and surveillance. The acoustic intrusion has become so routine that it shapes daily routines and psychological states across the territory.\n\nThe drones' operations form part of the broader military and security apparatus affecting Gaza's population. Residents describe the relentless drone presence as a tangible source of anxiety, the sound itself functioning as a reminder of vulnerability and lack of control over their airspace and safety.",
+ "cat": "humans",
+ "corroborating_sources": [
+  {
+   "article": "https://wearenotnumbers.org/the-sound-of-fear",
+   "name": "We Are Not Numbers",
+   "url": "https://wearenotnumbers.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-07T13:00:07+00:00",
+ "dek": "The constant buzz of Israeli quadcopters is a sinister and threatening background to life in Gaza.",
+ "dup_of": null,
+ "image": "https://wearenotnumbers.org/wp-content/uploads/2026/08/@tiril.valeur-3.jpg",
+ "lang": "en",
+ "link": "https://wearenotnumbers.org/the-sound-of-fear",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "We Are Not Numbers",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://wearenotnumbers.org/the-sound-of-fear"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6d0c2024de",
+ "score": 49.92,
+ "source": "We Are Not Numbers",
+ "source_id": "wann",
+ "source_url": "https://wearenotnumbers.org/",
+ "title": "Israeli drones create persistent climate of fear in Gaza"
+}

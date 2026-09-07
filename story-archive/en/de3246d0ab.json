@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli forces shot two Palestinians in separate incidents across the occupied West Bank, the Ma'an news agency reported. One shooting took place in Qalqiliya and another in Jenin on the same day, according to the agency's account of the incidents.\n\nThe circumstances surrounding each shooting remained unclear from initial reports. Details about the condition of the two wounded Palestinians and what prompted the Israeli military response were not immediately disclosed. The incidents occurred amid ongoing tensions in the West Bank, where confrontations between Palestinian civilians and Israeli forces continue to occur regularly across multiple locations.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168216.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-shoot-2-palestinians-in-qalqilia-and-jenin",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-step-raids-across-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-06T07:37:49+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168216.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "de3246d0ab",
+ "score": 61.81,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces shoot two Palestinians in West Bank cities"
+}

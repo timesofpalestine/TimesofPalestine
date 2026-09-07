@@ -1,0 +1,39 @@
+{
+ "brief": "استشهد صبحي البطريخي متأثراً بجراح أصيب بها جراء قصف استهدف مفترق الاتصالات غرب غزة الليلة الماضية، وفق المركز الفلسطيني للإعلام.\n\nوأسفر القصف عن إصابة عدد من الأشخاص في المنطقة، إذ يعتبر مفترق الاتصالات موقعاً حيوياً يقطعه الكثير من سكان غرب قطاع غزة يومياً. وقع الحادث في ساعات الليل المتأخرة، ما أدى إلى تعطل الخدمات في المنطقة وفق شهود عيان.\n\nتأتي هذه الحادثة في سياق التصعيد المستمر في قطاع غزة والغارات المتكررة على مناطق سكنية وحيوية.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319859",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%ba%d8%b2%d8%a9-%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-%d9%85%d8%aa%d8%a3%d8%ab%d8%b1%d9%8a%d9%86-%d8%a8%d8%a5%d8%b5%d8%a7%d8%a8%d8%aa",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-07T07:28:56+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319859",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "345f40fa57",
+ "score": 63.17,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "استشهاد صبحي البطريخي متأثراً بإصابته في قصف غرب غزة"
+}

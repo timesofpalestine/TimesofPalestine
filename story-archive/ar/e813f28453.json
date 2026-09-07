@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، شنّت طائرة إسرائيلية مسيّرة من نوع \"كواد كوبتر\" هجوماً على منازل في منطقة التابعين بحي الدرج وسط مدينة غزة، حيث أطلقت النار باتجاه المباني السكنية في المنطقة.\n\nوتأتي هذه العملية ضمن سلسلة الغارات الجوية المتكررة على قطاع غزة، إذ تعتمد الطائرات المسيّرة على نطاق واسع في العمليات العسكرية. لم يتضح حتى الآن عدد الإصابات أو حجم الأضرار الناجمة عن القصف في المنطقة السكنية.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/319750",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-06T16:14:43+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-health-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/319750",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e813f28453",
+ "score": 63.44,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "طائرة إسرائيلية مسيّرة تقصف منازل في حي الدرج وسط غزة"
+}
