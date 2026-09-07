@@ -9,6 +9,18 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.com/news/2026/9/7/israeli-wounded-in-stabbing-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/colonizers-kill-a-palestinian-injure-two-others-near-qalqilia",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
    "article": "https://pchrgaza.org/two-palestinians-killed-in-joint-attack-by-israeli-occupation-forces-and-settlers-in-ramallah",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
@@ -21,21 +33,15 @@
    "verified": true
   },
   {
-   "article": "https://imemc.org/article/israeli-forces-abduct-palestinians-across-west-bank-4",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
+   "article": "https://english.pnn.ps/news/48285",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
    "verified": true
   },
   {
    "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/news/2026/9/7/israeli-wounded-in-stabbing-in-occupied-west-bank?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
    "verified": true
   }
  ],
@@ -55,7 +61,7 @@
  "modified": null,
  "original": true,
  "pid": "218707f5c5",
- "score": 87.06,
+ "score": 87.03999999999999,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",

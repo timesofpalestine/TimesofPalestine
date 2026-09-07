@@ -7,6 +7,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": false
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d9%84%d9%85%d8%aa%d8%b7%d8%b1%d9%81%d9%88%d9%86-%d9%81%d9%8a-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d9%8a%d8%b9%d9%84%d9%86%d9%88%d9%86-%d8%a8%d9%88%d8%b6%d9%88%d8%ad-%d8%b9%d9%86-%d8%ae",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
   }
  ],
  "date": "2026-09-07T08:06:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "97d9055bbf",
- "score": 49.09,
+ "score": 48.83,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",

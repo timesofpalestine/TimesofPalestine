@@ -13,12 +13,18 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-colonizer-seriously-wounded-in-stabbing-near-nablus",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
- "date": "2026-09-07T08:02:30+00:00",
+ "date": "2026-09-07T09:25:37+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "image": "/media/times-of-palestine-cover-westbank.svg",
  "lang": "en",
  "link": "https://www.maannews.net/news/2168289.html",
  "max_age_hours": 72,
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "74383ea870",
- "score": 63.07,
+ "score": 63.78,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

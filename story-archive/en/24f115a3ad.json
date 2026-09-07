@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces shot a young man and affected several others with tear gas during a military operation in the town of Qabalan, near Nablus, the Ma'an news agency reported. The incursion left at least one person with a gunshot wound while multiple residents suffered inhalation injuries from gas exposure.\n\nThe raid marks another instance of armed Israeli operations in the northern West Bank town. Video documentation of the incident circulated as the military presence withdrew from the area. Specifics regarding the condition of the wounded and the stated objective of the operation remained unclear.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168295.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-07T09:41:28+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168295.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "24f115a3ad",
+ "score": 63.97,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces shoot youth, injure others with gas in Nablus raid"
+}
