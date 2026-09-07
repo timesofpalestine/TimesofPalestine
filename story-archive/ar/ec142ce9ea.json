@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، تحول الخطاب الإسرائيلي حول \"الهجرة الطوعية\" إلى مشروع منهجي لإفراغ قطاع غزة من سكانه. تقدّم السلطات الإسرائيلية التهجير بصيغة اختيارية، مستغلةً الضغوط الإنسانية الشديدة في القطاع لدفع الفلسطينيين نحو مغادرة أراضيهم.\n\nيعكس هذا المسار تطبيقاً منظماً لسياسة تهجير طويلة الأمد، إذ تُغطي إجراءاتها بلغة قانونية وإنسانية تخفي الأهداف الحقيقية. يترتب على هذا المشروع تغيير الواقع الديموغرافي للقطاع بشكل دائم وحرمان اللاجئين من حقهم في العودة، ما يعمّق الانتهاكات الممنهجة ضد السكان الفلسطينيين.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/09/07/1117285",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-07T16:35:52+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/09/07/1117285",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ec142ce9ea",
+ "score": 49.89,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "إسرائيل تتحول من \"الهجرة الطوعية\" إلى تهجير منظم لغزة"
+}

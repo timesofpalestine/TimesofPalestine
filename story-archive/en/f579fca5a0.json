@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/09/israeli-rubble-clearing-gaza-could-erase-atrocity-crimes-evidence-un-expert",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-clearance-gaza-rubble-could-destroy-evidence-says-un-expert",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-07T13:30:25+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "f579fca5a0",
- "score": 48.11,
+ "score": 47.78,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
