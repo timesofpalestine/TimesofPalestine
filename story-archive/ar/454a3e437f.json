@@ -1,0 +1,51 @@
+{
+ "brief": "أعلن جيش الاحتلال إصابة جنديين من لواء غولاني، بحسب عربي21، إثر اشتباك مع عنصر من حزب الله في منطقة الشقيف بجنوب لبنان. وذكر البيان العسكري أن عنصراً من الحزب أطلق الرصاص من مبنى باتجاه القوات الإسرائيلية في المنطقة، فردت عليه وأردته قتيلاً.\n\nرد جيش الاحتلال على الحادثة بقصف مخازن في الموقع، دون أن يوضح البيان طبيعة الإصابات التي لحقت بالجنديين أو ما إذا كانت خطيرة. ولم يتضمن البيان تفاصيل إضافية عن سياق الاشتباك أو أي خسائر أخرى في الجانب الآخر.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Arabi21News/428837",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393221",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/734899",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/319933",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-07T13:56:07+00:00",
+ "dek": "أعلن جيش الاحتلال إصابة جنديين من لواء غولاني خلال اشتباك مع عنصر من حزب الله في منطقة الشقيف جنوبي لبنان، وقال الاحتلال في بيان له: \"عنصر من حزب الله أطلق النار اليوم من مبنى باتجاه قواتنا بمنطقة الشقيف قبل أن ترد عليه وتقتله، وردا على ذلك استهدفنا مخازن…",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/d4JjlcbIMx6mFAfign0qFfXOjts7gs7XwMba5XpqwhEfKm5791qxjwUxxCo16nEuxg7bX5-Fefga59kT_4FfsjJiOEEr_Lw9IxLnwBq2Kcb5c4KXMF5J1jEhahBAsvqKImDt4KM9knKwoV7pv6zGOpk9DVa2J8IexFyRZPt_k3A0Sj8HXm1QOhx5D7vlkrDVzMfTmuA0GIL6Fmyv1hWxJJOyGsuySOzax1QAh5J-oe80bu4vkEn11HHGVUO1cQmG73QJRjPRqLQJ_jb94qvKijOBpWZruUgBt49BpTzXci7m_OoRh3OrvKDACSkz5byC6dTVOJndHW6pSGCOtuuVsA.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Arabi21News/428837",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "عربي21",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Arabi21News/428837"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "454a3e437f",
+ "score": 63.79,
+ "source": "عربي21",
+ "source_id": "tg-arabi21",
+ "source_url": "https://t.me/arabi21news",
+ "title": "جيش الاحتلال يعلن إصابة جنديين في اشتباك بجنوب لبنان"
+}

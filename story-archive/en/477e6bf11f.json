@@ -6,19 +6,7 @@
    "article": "https://www.al-monitor.com/originals/2026/09/israeli-strike-kills-man-and-his-daughter-gaza-medics-say",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-reaches-73658-israeli-attacks-continue",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/palestinian-killed-two-die-from-wounds-in-gaza",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-06T17:46:30+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "477e6bf11f",
- "score": 50.93,
+ "score": 49.82,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
