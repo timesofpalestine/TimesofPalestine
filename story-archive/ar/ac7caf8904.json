@@ -6,26 +6,32 @@
    "article": "https://t.me/Palinfo/319858",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82729",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-09-07T07:21:56+00:00",
  "dek": "متابعة | إصابة الصيادين أسعد محمد أبو ريالة (16 عامًا) وإبراهيم عزام بكر (22 عامًا)، جراء استهدافهما بنيران زوارق الاحتلال في بحر مدينة غزة",
  "dup_of": null,
- "image": "https://cdn4.telesco.pe/file/g9elm4eehk4Pw2viotEgphAKiJcGUHz48syTt6oM_-0cIL9FxlzehHdEnXfg3kSet-c0gnyROX-gl4IV6rmhOaMMMGxTX_pjEExJc_IOpWoP2UOMXEigR30oAjfbl7BXCDFT6PMIPrPuVF-ianiq-y4SChZahBG2u8NY5ZtoGOfS0o5fRsXklESg5WQj_8JlKHFROTe-jOk3h-pos2Q3zIT6zNS1pv70UKyyatA_scl8euJ3WMLr5wVYNrXBzZkW193vVGmMRGG5D02Utm32mjZtfOD3fkIoLOOKxCtMAmoXDbuIuNoZPoynVuGScTbtp22_uWSsPdQVh6TtUpB21A.jpg",
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
  "lang": "ar",
  "link": "https://t.me/Palinfo/319858",
  "max_age_hours": 72,
  "media": {
-  "credit": "المركز الفلسطيني للإعلام",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://t.me/Palinfo/319858"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "ac7caf8904",
- "score": 63.99,
+ "score": 63.69,
  "source": "المركز الفلسطيني للإعلام",
  "source_id": "tg-palinfo",
  "source_url": "https://t.me/palinfo",

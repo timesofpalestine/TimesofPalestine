@@ -21,6 +21,12 @@
    "verified": true
   },
   {
+   "article": "https://imemc.org/article/israeli-forces-abduct-palestinians-across-west-bank-4",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
    "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-ee3",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
@@ -43,7 +49,7 @@
  "modified": null,
  "original": true,
  "pid": "218707f5c5",
- "score": 87.21000000000001,
+ "score": 87.18,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
