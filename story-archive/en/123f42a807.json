@@ -12,7 +12,13 @@
    "article": "https://www.aljazeera.com/news/2026/9/7/why-has-nicaragua-taken-germany-to-the-icj-over-gaza-genocide?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/germany-asks-icj-dismiss-nicaragua-genocide-case-over-arms-supplies-israel",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   },
   {
    "article": "https://www.al-monitor.com/originals/2026/09/germany-asks-un-top-court-throw-out-israel-arms-export-case",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "123f42a807",
- "score": 47.1,
+ "score": 46.83,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
