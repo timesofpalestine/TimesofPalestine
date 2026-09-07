@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli strikes killed at least eight Palestinians and wounded 30 others in the Gaza Strip over the past 24 hours, the Palestinian news agency Wafa reported. Two additional deaths resulted from wounds sustained in previous attacks, according to the agency's count.\n\nThe reported casualties bring the total death toll in Gaza to 73,658 since the intensity of hostilities escalated, Middle East Eye reported. The strikes continued as Israeli military operations persisted across the territory, with medical personnel and rescue workers operating under severe constraints amid the ongoing violence.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-reaches-73658-israeli-attacks-continue",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/palestinian-killed-two-die-from-wounds-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-07T11:27:33+00:00",
+ "dek": "Gaza death toll reaches 73,658 as Israeli attacks continue Palestinian news agency Wafa reported that at least eight Palestinians were killed and 30 were wounded in Israeli strikes in the Gaza Strip in the past 24 hours. Two others were killed from wounds…",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/A%20rescuer%20searches%20for%20survivors%20amid%20rubble%20following%20an%20overnight%20Israeli%20airstrike%20on%20Kfar%20Roummane%2C%20southern%20Lebanon%2C%207%20September%202026%20%28Mahmoud%20Zayyat%20AFP%29.jpg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-reaches-73658-israeli-attacks-continue",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-reaches-73658-israeli-attacks-continue"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "de80bc0ffb",
+ "score": 63.42,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Gaza death toll rises to 73,658 amid ongoing Israeli strikes"
+}

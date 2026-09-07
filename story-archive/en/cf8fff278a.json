@@ -6,19 +6,13 @@
    "article": "original:amnesty-area-a-seizure-orders-jenin-2026-09-04.en",
    "name": "Times of Palestine",
    "url": "",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.amnesty.org/en/latest/news/2026/09/israel-opt-israel-steps-up-annexation-measures-with-unlawful-land-seizure-orders-in-the-occupied-west-bank",
    "name": "Amnesty International",
    "url": "https://www.amnesty.org/",
-   "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/09/1168282",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-04T01:06:00+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": true,
  "pid": "cf8fff278a",
- "score": 75.68,
+ "score": 75.61,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
