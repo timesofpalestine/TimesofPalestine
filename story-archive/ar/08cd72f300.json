@@ -6,7 +6,13 @@
    "article": "https://t.me/Palinfo/319963",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%ac%d9%86%d9%88%d8%a8-%d9%84%d8%a8%d9%86%d8%a7%d9%86-11-%d8%b4%d9%87%d9%8a%d8%af%d8%a7%d9%8b-%d8%a8%d9%8a%d9%86%d9%87%d9%85-9-%d9%81%d9%8a-%d9%85%d8%ac%d8%b2%d8%b1%d8%a9-%d9%83%d9%81%d8%b1%d8%b1",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
   }
  ],
  "date": "2026-09-07T16:14:49+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "08cd72f300",
- "score": 63.64,
+ "score": 63.33,
  "source": "المركز الفلسطيني للإعلام",
  "source_id": "tg-palinfo",
  "source_url": "https://t.me/palinfo",
