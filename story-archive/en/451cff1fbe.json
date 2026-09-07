@@ -6,7 +6,19 @@
    "article": "https://www.middleeasteye.net/trending/palestinian-child-killed-first-day-back-school-gaza-aged-eight",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/ongoing-genocide-israel-kills-eight-palestinians-and-injures-dozens-more-in-gaza",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/palestinian-killed-two-die-from-wounds-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-07T18:40:44+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "451cff1fbe",
- "score": 63.62,
+ "score": 63.32,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
