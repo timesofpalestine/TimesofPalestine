@@ -6,12 +6,6 @@
    "article": "https://www.maannews.net/news/2168305.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
-  },
-  {
-   "article": "https://www.aljazeera.com/news/2026/9/7/why-has-nicaragua-taken-germany-to-the-icj-over-gaza-genocide?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
    "verified": true
   },
   {
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "123f42a807",
- "score": 45.41,
+ "score": 45.25,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
