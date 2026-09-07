@@ -1,0 +1,33 @@
+{
+ "brief": "قصفت قوات الاحتلال شارع مشتهى في حي الشجاعية بنيران آلياتها والطائرات المسيرة، بحسب المركز الفلسطيني للإعلام. استهدف القصف المنطقة السكنية المأهولة بالسكان وسط تقارير عن إصابات في المباني والممتلكات المدنية.\n\nوتشهد منطقة الشجاعية منذ فترة موجات متكررة من القصف تطال أحياء سكنية متعددة، فيما تعاني المناطق المستهدفة من أضرار بنية تحتية وخسائر في الأرواح والممتلكات.\n\nلم تتضح حتى الآن حصيلة دقيقة للأضرار الناجمة عن الغارات على الشارع.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/320006",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-07T22:18:59+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/320006",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bdcffdb032",
+ "score": 49.7,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قوات الاحتلال تقصف شارع مشتهى بالشجاعية بالمدفعية والطائرات"
+}
