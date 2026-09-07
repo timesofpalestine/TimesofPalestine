@@ -15,7 +15,7 @@
 
 <!-- headline -->
 <text x="90" y="96" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Allenby crossing: the new working day</text>
-<text x="90" y="140" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#c7a86b" direction="rtl">معبر الكرامة (اللنبي) — ساعات العمل الجديدة</text>
+<text x="90" y="140" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#c7a86b" direction="rtl" text-anchor="end">معبر الكرامة (اللنبي) — ساعات العمل الجديدة</text>
 <text x="90" y="182" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">The only route out of the occupied West Bank for Palestinians · in effect from Thursday 30 July</text>
 
 <line x1="90" y1="212" x2="1540" y2="212" stroke="#3a3b3f" stroke-width="2"/>
@@ -83,20 +83,20 @@
 <rect x="1230" y="290" width="310" height="128" fill="#191a1d" stroke="#3a3b3f"/>
 <text x="1255" y="352" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#c7a86b">1 Nov</text>
 <text x="1255" y="380" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">deadline for the authority's report</text>
-<text x="1515" y="404" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" direction="rtl">موعد تقديم التقرير للمحكمة</text>
+<text x="1515" y="404" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" direction="rtl">موعد تقديم التقرير للمحكمة</text>
 
 <rect x="1230" y="438" width="310" height="128" fill="#191a1d" stroke="#3a3b3f"/>
 <text x="1255" y="500" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">1.5m</text>
 <text x="1255" y="528" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">travellers through Allenby in 2025</text>
-<text x="1515" y="552" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" direction="rtl">مسافر عبر الجسر في 2025</text>
+<text x="1515" y="552" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" direction="rtl">مسافر عبر الجسر في 2025</text>
 
 <rect x="1230" y="586" width="310" height="128" fill="#191a1d" stroke="#3a3b3f"/>
 <text x="1255" y="648" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#c7a86b">+90 min</text>
 <text x="1255" y="676" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#f2eee8">on two days a week</text>
-<text x="1515" y="700" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" direction="rtl">يومان في الأسبوع</text>
+<text x="1515" y="700" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" direction="rtl">يومان في الأسبوع</text>
 
 <line x1="90" y1="800" x2="1540" y2="800" stroke="#3a3b3f" stroke-width="2"/>
 <text x="90" y="836" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5" textLength="1494" lengthAdjust="spacingAndGlyphs">Court told the Israel Airports Authority to report by 1 November on hiring staff and lengthening the working day. Petition by the coordinating council of Palestinian private-sector institutions.</text>
 <text x="90" y="866" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#7d7c79">Sources: Raya, Sawaleif, Haaretz, Srugim, Sada News, Al-Quds · Times of Palestine</text>
-<text x="1540" y="866" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#7d7c79" direction="rtl">تايمز أوف فلسطين</text>
+<text x="1540" y="866" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#7d7c79" direction="rtl">تايمز أوف فلسطين</text>
 </svg>

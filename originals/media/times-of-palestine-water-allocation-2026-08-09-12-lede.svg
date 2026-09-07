@@ -25,14 +25,14 @@
 <text x="100" y="98" font-family="'Source Serif 4',Georgia,serif" font-size="54" fill="#f2eee8">Three times the water</text>
 <text x="100" y="140" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">Daily water use per person — Israelis including settlers vs Palestinians in the West Bank</text>
 
-<text x="1540" y="96" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="42" fill="#c7a86b" direction="rtl">ثلاثة أضعاف المياه</text>
-<text x="1540" y="138" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl">استهلاك المياه للفرد يومياً: الإسرائيليون مقابل الفلسطينيين في الضفة الغربية</text>
+<text x="1540" y="96" font-family="Cairo,Arial,sans-serif" font-size="42" fill="#c7a86b" direction="rtl">ثلاثة أضعاف المياه</text>
+<text x="1540" y="138" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5" direction="rtl">استهلاك المياه للفرد يومياً: الإسرائيليون مقابل الفلسطينيين في الضفة الغربية</text>
 
 <line x1="100" y1="172" x2="1540" y2="172" stroke="#33353a" stroke-width="2"/>
 
 <!-- chart -->
 <text x="100" y="222" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="2" fill="#59a97d">LITRES PER PERSON PER DAY</text>
-<text x="100" y="252" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5" direction="rtl">لتر للفرد في اليوم</text>
+<text x="100" y="252" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5" direction="rtl" text-anchor="end">لتر للفرد في اليوم</text>
 
 <g stroke="#2c2e32" stroke-width="1">
 <line x1="140" y1="760" x2="830" y2="760"/>

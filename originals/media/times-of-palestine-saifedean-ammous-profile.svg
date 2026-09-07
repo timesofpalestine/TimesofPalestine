@@ -25,17 +25,17 @@
   <g transform="translate(835 190)">
     <text x="0" y="0" class="serif ivory" font-size="58" font-weight="800">From Nablus to a global</text>
     <text x="0" y="68" class="serif ivory" font-size="58" font-weight="800">argument about money</text>
-    <text x="660" y="132" text-anchor="end" direction="rtl" class="arabic gold" font-size="42" font-weight="700">من نابلس إلى نقاش عالمي حول المال</text>
+    <text x="660" y="132" direction="rtl" class="arabic gold" font-size="42" font-weight="700">من نابلس إلى نقاش عالمي حول المال</text>
     <path d="M10 218 C150 130 260 330 400 240 S620 290 690 185" fill="none" stroke="#c7a86b" stroke-width="5" stroke-dasharray="12 12"/>
     <g fill="#f2eee8" stroke="#286344" stroke-width="8"><circle cx="10" cy="218" r="17"/><circle cx="225" cy="257" r="17"/><circle cx="444" cy="225" r="17"/><circle cx="690" cy="185" r="17"/></g>
     <g class="sans muted" font-size="22"><text x="0" y="280">NABLUS</text><text x="180" y="325">BEIRUT</text><text x="408" y="292">NEW YORK</text><text x="606" y="246">39 LANGUAGES*</text></g>
     <g transform="translate(0 390)">
       <rect width="690" height="152" rx="3" fill="#222328" stroke="#3d4f6b" stroke-width="2"/>
       <text x="34" y="54" class="sans gold" font-size="24" font-weight="800">SCARCITY • TIME • POLITICAL CONTROL</text>
-      <text x="650" y="102" text-anchor="end" direction="rtl" class="arabic ivory" font-size="31">الندرة • الزمن • السلطة السياسية</text>
+      <text x="650" y="102" direction="rtl" class="arabic ivory" font-size="31">الندرة • الزمن • السلطة السياسية</text>
     </g>
   </g>
 
   <text x="70" y="856" class="sans muted" font-size="19">Editorial illustration: Times of Palestine • *Translation count reported by the author</text>
-  <text x="1530" y="856" text-anchor="end" direction="rtl" class="arabic muted" font-size="19">رسم تحريري: تايمز أوف فلسطين</text>
+  <text x="1530" y="856" direction="rtl" class="arabic muted" font-size="19">رسم تحريري: تايمز أوف فلسطين</text>
 </svg>
