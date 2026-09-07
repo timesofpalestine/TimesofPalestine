@@ -19,12 +19,6 @@
    "name": "UN News",
    "url": "https://news.un.org/",
    "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/film/2026/sep/04/israel-director-amos-gitai-gaza-the-road-to-jericho-venice",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
   }
  ],
  "date": "2026-09-04T01:06:00+00:00",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": true,
  "pid": "cf8fff278a",
- "score": 76.88,
+ "score": 76.82,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
