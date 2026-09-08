@@ -1,0 +1,51 @@
+{
+ "brief": "Britain's Foreign Minister Ed Miliband announced a ban on importing goods produced in Israeli West Bank settlements, characterizing the move as a \"comprehensive reset\" of UK policy toward Israel, Al Jazeera English reported. The ban applies to products manufactured in settlements, which international law considers illegal under occupation.\n\nMiliband framed the policy shift as part of Britain's broader reorientation on the Israeli-Palestinian conflict. The announcement represents a departure from previous UK positions on settlement goods, following sustained pressure from lawmakers and rights groups over trade with occupied territories.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/8/uk-bans-goods-from-israeli-west-bank-settlements-what-that-really-means?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israel-lashes-out-uk-sanctions-and-announces-consulate-closure",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/france-ban-products-israeli-settlements-west-bank-foreign-minister-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-08T14:52:00+00:00",
+ "dek": "Foreign Minister Ed Miliband said the ban represents a 'comprehensive reset' of UK's policy on Israel.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6a608aca7713-1784711882-1788874893.jpg?resize=1200%2C630&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/8/uk-bans-goods-from-israeli-west-bank-settlements-what-that-really-means?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/8/uk-bans-goods-from-israeli-west-bank-settlements-what-that-really-means?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "11523ab1f9",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UK bans goods from Israeli West Bank settlements"
+}
