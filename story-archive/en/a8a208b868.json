@@ -1,0 +1,45 @@
+{
+ "brief": "Israel announced the closure of the UK Consulate in occupied East Jerusalem in response to Britain's new ban on goods produced in illegal Israeli settlements, Al Jazeera English reported. The measure represents an escalation in tensions between the two countries over settlement trade policies.\n\nBritain's ban targets products manufactured in Israeli settlements across the occupied West Bank, which the United Nations and most countries regard as illegal under international law. The UK had previously labelled such goods and now has moved to prohibit their import entirely.\n\nThe consulate closure is Israel's direct retaliation against London's trade restrictions. The diplomatic move follows the implementation of Britain's settlement goods ban.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/08/will-uk-sanctions-have-any-impact-on-israel-settler-terrorists-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/uk-france-canada-ban-imports-israeli-settlements",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-08T21:35:36+00:00",
+ "dek": "Israel has announced that it’s shutting down the UK Consulate in occupied East Jerusalem after a new ban on its goods.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788903325.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a8a208b868",
+ "score": 49.54,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel shuts UK Consulate in East Jerusalem over settlement goods ban"
+}
