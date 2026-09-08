@@ -6,7 +6,25 @@
    "article": "https://t.me/gazaalannet/82753",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393349",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735072",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d9%82%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d8%aa%d9%81%d8%b1%d8%b6-%d9%85%d9%86%d8%b0-%d8%a7%d9%84%d9%81%d8%ac%d8%b1-%d8%ad%d8%b5%d8%a7%d8%b1%d8%a7-%d8%b9%d9%84%d9%89",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
   }
  ],
  "date": "2026-09-07T21:41:44+00:00",
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "6d5f3d9785",
- "score": 55.74,
+ "score": 55.45,
  "source": "غزة الآن · تيليغرام",
  "source_id": "tg-gazanow",
  "source_url": "https://t.me/gazaalannet",

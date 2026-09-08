@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2168357.html",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d9%85%d8%ad%d9%83%d9%85%d8%a9-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d8%a9-%d8%aa%d8%b1%d9%81%d8%b6-%d8%b7%d9%84%d8%a8%d8%a7-%d9%84%d8%aa%d8%ac%d9%85%d9%8a%d8%af-%d8%b9%d8%b7%d8%a7%d8%a1",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
   }
  ],
  "date": "2026-09-08T08:48:08+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "ccd996f8bf",
- "score": 34.45,
+ "score": 34.17,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
