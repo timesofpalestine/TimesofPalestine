@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Arabi21News/428855",
-   "name": "عربي21",
-   "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
    "article": "https://t.me/gazaalannet/82753",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
@@ -33,9 +27,21 @@
    "verified": true
   },
   {
+   "article": "https://t.me/Arabi21News/428869",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  },
+  {
    "article": "https://www.pbc.ps/878-176",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735095",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
    "verified": true
   }
  ],
@@ -55,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "8ced5e29c1",
- "score": 47.8,
+ "score": 47.65,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
