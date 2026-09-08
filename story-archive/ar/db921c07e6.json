@@ -1,0 +1,51 @@
+{
+ "brief": "رحبت وزارة الخارجية الأردنية ببيان أصدرته 12 دولة يستهدف تقييد التجارة بمنتجات المستوطنات الإسرائيلية، وفقاً لما أفادت به القدس العربي. وعكس الموقف الأردني التزام المملكة بالقضايا المتعلقة بالصراع الإسرائيلي الفلسطيني على الصعيد الدولي.\n\nيندرج الترحيب الأردني ضمن جهود دبلوماسية متواصلة لفرض ضغوط على المستوطنات، حيث تلعب الأردن دوراً نشطاً في المحافل الدولية بشأن القضايا الفلسطينية. ولم تحدد المصادر بعد أسماء الدول الموقعة على البيان أو التفاصيل الدقيقة للتقييدات المقترحة على التجارة بتلك المنتجات.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d9%84%d8%ae%d8%a7%d8%b1%d8%ac%d9%8a%d8%a9-%d8%a7%d9%84%d8%a3%d8%b1%d8%af%d9%86%d9%8a%d8%a9-%d8%aa%d8%b1%d8%ad%d8%a8-%d8%a8%d8%a8%d9%8a%d8%a7%d9%86-12-%d8%af%d9%88",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
+  },
+  {
+   "article": "https://t.me/QudsN/735125",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217451&slug=12-%D8%AF%D9%88%D9%84%D8%A9-%D8%A8%D9%8A%D9%86%D9%87%D8%A7-%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A%D8%A7-%D9%88%D9%81%D8%B1%D9%86%D8%B3%D8%A7-%D8%AA%D8%B9%D9%84%D9%86-%D8%AD%D8%B8%D8%B1-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D8%A7%D8%AA",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/878-178",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-08T14:47:53+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-ar.svg",
+ "lang": "ar",
+ "link": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d9%84%d8%ae%d8%a7%d8%b1%d8%ac%d9%8a%d8%a9-%d8%a7%d9%84%d8%a3%d8%b1%d8%af%d9%86%d9%8a%d8%a9-%d8%aa%d8%b1%d8%ad%d8%a8-%d8%a8%d8%a8%d9%8a%d8%a7%d9%86-12-%d8%af%d9%88",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "db921c07e6",
+ "score": 63.91,
+ "source": "القدس العربي",
+ "source_id": "alqudsuk",
+ "source_url": "https://www.alquds.co.uk/",
+ "title": "الأردن يرحب ببيان دولي ضد منتجات المستوطنات"
+}
