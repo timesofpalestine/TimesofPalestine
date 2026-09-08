@@ -13,12 +13,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/uk-announce-trade-ban-israeli-west-bank-goods",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-09-08T07:00:00+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "928032d85a",
- "score": 49.44,
+ "score": 49.15,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
