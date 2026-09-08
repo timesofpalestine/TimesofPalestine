@@ -6,7 +6,19 @@
    "article": "https://t.me/Palinfo/320071",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-%d8%a8%d9%8a%d9%86%d9%87%d9%85%d8%a7-%d9%85%d8%b3%d9%86-%d9%85%d8%aa%d8%a3%d8%ab%d8%b1%d9%8a%d9%86",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/185984/%D8%AA%D9%88%D8%B1%D9%83-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%82%D8%AA%D9%84-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-1300-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A-%D8%A8%D8%BA%D8%B2%D8%A9-%D8%B1%D8%BA%D9%85-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-09-08T06:59:53+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "d3c5cbb1b5",
- "score": 63.99,
+ "score": 63.67,
  "source": "المركز الفلسطيني للإعلام",
  "source_id": "tg-palinfo",
  "source_url": "https://t.me/palinfo",

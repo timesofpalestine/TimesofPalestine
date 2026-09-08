@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://imemc.org/article/israeli-forces-colonizers-escalate-west-bank-attacks-2",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
    "article": "https://www.al-monitor.com/originals/2026/09/two-palestinians-killed-israeli-stabbed-west-bank-settler-violence-flares",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -36,6 +30,12 @@
    "article": "https://t.me/maannews/36639",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/west-bank-invasions-and-abductions-on-tuesday",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
    "verified": true
   },
   {
@@ -61,7 +61,7 @@
  "modified": null,
  "original": true,
  "pid": "218707f5c5",
- "score": 85.57,
+ "score": 85.53,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
