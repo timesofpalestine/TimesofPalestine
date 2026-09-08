@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli meteorological authorities are predicting an exceptional autumn season characterized by record-breaking rainfall and anticipated flooding across the country, the Ma'an news agency reported. Officials expect precipitation levels to exceed historical averages substantially during the coming months, posing potential risks to infrastructure and public safety.\n\nThe forecast underscores the need for emergency preparedness as communities brace for heightened water flows and potential inundation in vulnerable areas. Authorities have not yet specified which regions face the greatest risk or outlined formal response measures, though the warning signals the onset of potentially disruptive weather patterns ahead of the winter season.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168356.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-08T08:34:42+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168356.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b3257f6bf6",
+ "score": 34.9,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel's weather service forecasts record rainfall and flooding this autumn"
+}

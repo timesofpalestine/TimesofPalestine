@@ -1,0 +1,39 @@
+{
+ "brief": "Two Palestinians were killed in Khan Younis in an Israeli military strike, the Ma'an news agency reported. One of the victims was a former detainee who had been released from Israeli custody. The strike added to the mounting toll in the Gaza Strip's southern region.\n\nDetails about the circumstances of the strike and the identity of the second victim were not immediately available. The killing of a freed prisoner underscores the continued vulnerability of Palestinians in conflict-affected areas of Gaza.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168350.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163685/%D9%85%D8%AD%D8%AF%D8%AB-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7%D9%86-%D9%81%D9%8A-%D8%AE%D8%A7%D9%86-%D9%8A%D9%88%D9%86%D8%B3-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%88%D8%A7%D8%B5%D9%84-%D8%AE%D8%B1%D9%88%D9%82%D8%A7%D8%AA-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-08T08:19:01+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-prisoners.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168350.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "82df9e3ff3",
+ "score": 63.72,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli strike kills two in Khan Younis, including freed detainee"
+}

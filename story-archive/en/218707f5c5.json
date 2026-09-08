@@ -27,12 +27,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/maannews/36639",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
    "article": "https://imemc.org/article/west-bank-invasions-and-abductions-on-tuesday",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
@@ -61,7 +55,7 @@
  "modified": null,
  "original": true,
  "pid": "218707f5c5",
- "score": 85.47999999999999,
+ "score": 85.44,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
