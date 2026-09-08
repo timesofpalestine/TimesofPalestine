@@ -6,13 +6,7 @@
    "article": "https://www.maannews.net/news/2168305.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/germany-asks-icj-dismiss-gaza-genocide-case-brought-nicaragua",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-07T11:16:14+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "123f42a807",
- "score": 40.1,
+ "score": 39.79,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
