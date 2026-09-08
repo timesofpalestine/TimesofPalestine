@@ -1,0 +1,45 @@
+{
+ "brief": "قصفت طائرات الاحتلال الإسرائيلي منزلاً في مخيم البريج بوسط قطاع غزة، بحسب المركز الفلسطيني للإعلام. لم تحدّد المصادر الأولية أعداد الضحايا أو الإصابات جراء الغارة، غير أن القصف أحدث أضراراً مباشرة في المبنى المستهدف.\n\nيندرج الاستهداف ضمن سلسلة قصف متواصل تشنه الطائرات الحربية الإسرائيلية على مناطق مختلفة داخل القطاع، حيث يتعرض السكان والمباني المدنية لغارات منتظمة منذ فترة طويلة. مخيم البريج، أحد أكبر التجمعات السكانية في وسط غزة، شهد عمليات قصف متكررة خلال الأشهر الماضية.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/320144",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735103",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82761",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-08T12:12:01+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/aCuGSujk0X6CAeZbT0vVZe5R4n426N0H7OCqHsGWiOz96_tjoQIZIgAz19SuPgV_HRgLmJSlF_K-uXInlzrSw38AoikTPKLNCdqEKxilq7ei57yj6xRj1vL8V6TwQI19a1wHF5moQDypt4OhYzW8sb8Y3j-5i_we0narQ28ysHVn5GZTjgLIMGgvq_RTO1CbVzPja7cpMMm2JZtlbHefOP70oW8yQhegkcQ39FIvO2x92MCqrsxdWjA4XHcvsJis6nao962CNf27djaYexILBdAiaLqLN9aP0Ayd32t85BA7tMK2cdgx8SEDBroZe_0yTa0VRZJh_hcC9QIIqhbY3w.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/320144",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/320144"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2e68a667b2",
+ "score": 63.43,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يقصف منزلاً في مخيم البريج بوسط غزة"
+}
