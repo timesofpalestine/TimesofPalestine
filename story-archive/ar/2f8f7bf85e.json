@@ -6,7 +6,31 @@
    "article": "https://t.me/Palinfo/320091",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393332",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735072",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d9%82%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d8%aa%d9%81%d8%b1%d8%b6-%d9%85%d9%86%d8%b0-%d8%a7%d9%84%d9%81%d8%ac%d8%b1-%d8%ad%d8%b5%d8%a7%d8%b1%d8%a7-%d8%b9%d9%84%d9%89",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82752",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-09-08T08:48:22+00:00",
@@ -25,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "2f8f7bf85e",
- "score": 63.81,
+ "score": 63.45,
  "source": "المركز الفلسطيني للإعلام",
  "source_id": "tg-palinfo",
  "source_url": "https://t.me/palinfo",
