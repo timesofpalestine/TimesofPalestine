@@ -12,12 +12,18 @@
    "article": "https://t.me/Arabi21News/428888",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
+   "verified": false
+  },
+  {
+   "article": "https://t.me/QudsN/735144",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/320171",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
+   "article": "https://www.pbc.ps/87-126",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
    "verified": true
   }
  ],
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "cb71bfa1c5",
- "score": 47.85,
+ "score": 47.54,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",

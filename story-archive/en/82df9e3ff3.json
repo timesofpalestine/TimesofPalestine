@@ -19,6 +19,12 @@
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-palestinian-injure-15-others-across-gaza-strip",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-08T08:19:01+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "82df9e3ff3",
- "score": 58.32,
+ "score": 58.02,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
