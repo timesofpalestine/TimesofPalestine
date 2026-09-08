@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/world/2026/sep/07/un-francesca-albanese-miliband-israel-palestine-settlements-trade",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/uk-announce-trade-ban-israeli-west-bank-goods",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   },
   {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-sanctions-should-target-activity-supporting-or-maintaining",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "e66d704eda",
- "score": 16.57,
+ "score": 16.27,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

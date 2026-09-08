@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli military vehicles advanced into territory east of Deir al-Balah in central Gaza, the Ma'an news agency reported. The operation occurred as casualties were reported across Gaza and in Khan Younis, though specific tolls and details of the incidents remained unclear at the time of reporting.\n\nThe incursion represents the latest in a series of military operations concentrated in the central Gaza Strip. Israeli forces have maintained sustained activity in the region in recent weeks, with operations frequently concentrated around populated areas and civilian infrastructure.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168338.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-08T06:47:42+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168338.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "903c6689de",
+ "score": 49.88,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces push into areas east of Deir al-Balah amid Gaza casualties"
+}
