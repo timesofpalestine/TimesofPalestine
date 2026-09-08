@@ -1,0 +1,51 @@
+{
+ "brief": "Britain will announce a ban on importing goods produced in illegal Israeli settlements in the occupied West Bank, Al Jazeera English reported. The measure targets products manufactured in settlements that international law considers unlawful under occupation, effectively closing British markets to settlement-made exports.\n\nThe trade restriction represents a significant policy shift in how the UK addresses Israeli settlement activity in Palestinian territories. The announcement comes as international pressure mounts over the expansion of settlements, which the Palestinian Authority and most countries view as obstacles to peace. Implementation details and enforcement mechanisms for the ban have not yet been disclosed by British authorities.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/8/uk-to-announce-trade-ban-on-goods-from-illegal-israeli-settlements?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-sanctions-should-target-activity-supporting-or-maintaining",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/uk-sanction-israeli-west-bank-settlements-support-two-state-solution",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-08T09:31:28+00:00",
+ "dek": "UK to announce trade ban on goods from illegal Israeli settlements in the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-09-08T075323Z_1822650518_RC2VENAKVDYF_RTRMADP_3_ISRAEL-PALESTINIANS-SETTLERS-BRITAIN-1788856280.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/8/uk-to-announce-trade-ban-on-goods-from-illegal-israeli-settlements?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/8/uk-to-announce-trade-ban-on-goods-from-illegal-israeli-settlements?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "46d79bc4b0",
+ "score": 49.44,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UK announces trade ban on Israeli settlement goods"
+}

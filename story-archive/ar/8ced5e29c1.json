@@ -19,6 +19,30 @@
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
    "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735072",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d9%82%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d8%aa%d9%81%d8%b1%d8%b6-%d9%85%d9%86%d8%b0-%d8%a7%d9%84%d9%81%d8%ac%d8%b1-%d8%ad%d8%b5%d8%a7%d8%b1%d8%a7-%d8%b9%d9%84%d9%89",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82752",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393349",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
   }
  ],
  "date": "2026-09-08T08:25:00+00:00",
@@ -37,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "8ced5e29c1",
- "score": 48.9,
+ "score": 48.64,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
