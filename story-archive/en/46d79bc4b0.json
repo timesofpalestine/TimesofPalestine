@@ -15,15 +15,15 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-sanctions-should-target-activity-supporting-or-maintaining",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://www.al-monitor.com/originals/2026/09/uk-sanction-israeli-west-bank-settlements-support-two-state-solution",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/france-and-canada-ban-products-israeli-settlements-today-haaretz",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": true
   }
  ],
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "46d79bc4b0",
- "score": 49.13,
+ "score": 48.82,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
