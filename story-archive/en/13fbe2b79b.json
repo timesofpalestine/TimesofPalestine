@@ -13,6 +13,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-palestinian-injure-15-others-across-gaza-strip",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-07T17:12:26+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "13fbe2b79b",
- "score": 84.35,
+ "score": 84.32,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",

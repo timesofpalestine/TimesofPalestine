@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli military strikes hit multiple locations across Gaza, destroying residential homes in Khan Younis and sending thick plumes of smoke over the Bureij camp, Al Jazeera English reported. The attacks forced families to abandon their residences as buildings sustained direct damage.\n\nThe strikes targeted Khan Younis in the southern part of the territory and the Bureij camp in the central region. Witnesses reported heavy smoke billowing from the Bureij area following the bombardment. The extent of casualties and the total number of displaced families remained unclear as rescue efforts continued in the affected zones.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/8/israeli-strikes-devastate-homes-displace-families-across-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-08T17:04:28+00:00",
+ "dek": "Israeli strikes hit several areas across Gaza, destroying homes in Khan Younis and sending thick smoke over Bureij camp.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788886992.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/israeli-strikes-devastate-homes-displace-families-across-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/8/israeli-strikes-devastate-homes-displace-families-across-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "000315e658",
+ "score": 63.77,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strikes destroy homes, displace families across Gaza"
+}
