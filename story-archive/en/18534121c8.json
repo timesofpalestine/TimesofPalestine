@@ -1,0 +1,51 @@
+{
+ "brief": "Britain has announced a ban on importing goods produced by Israeli settlements in the occupied West Bank, Al Jazeera English reported. The move makes the UK the latest country to restrict settlement products, which the British government designates as manufactured on illegally occupied territory under international law.\n\nThe import prohibition covers all goods manufactured in the settlements and will be enforced through existing trade regulations and customs procedures. The restriction applies regardless of product type or destination within British territory. The UK joins several other nations that have imposed similar trade measures on settlement-made items over recent years, as international pressure mounts on Israel over its settlement expansion.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/8/a-bit-too-late-but-important-uk-bans-goods-from-israeli-settlements?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/08/uk-accuses-israeli-terrorists-ethnic-cleansing-west-bank-government-backing",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/uk-france-canada-ban-imports-israeli-settlements",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/france-uk-canada-release-joint-statement-condemning-israeli-settlements",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-08T17:11:16+00:00",
+ "dek": "The UK has announced a ban on the import of all goods produced by illegal Israeli settlements in the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788887461.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/8/a-bit-too-late-but-important-uk-bans-goods-from-israeli-settlements?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/8/a-bit-too-late-but-important-uk-bans-goods-from-israeli-settlements?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "18534121c8",
+ "score": 47.96,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UK bans imports of goods from Israeli settlements in West Bank"
+}
