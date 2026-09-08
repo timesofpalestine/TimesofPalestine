@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2168366.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-court-rejects-petition-halt-key-west-bank-settlement-project",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-08T11:02:52+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "af1a532fe1",
- "score": 49.23,
+ "score": 48.92,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

@@ -15,10 +15,16 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/320132",
+   "article": "https://t.me/Palinfo/320144",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82761",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
  "date": "2026-09-08T11:52:00+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "9c1acadf6e",
- "score": 63.78,
+ "score": 63.45,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
