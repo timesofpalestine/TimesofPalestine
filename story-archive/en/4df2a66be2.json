@@ -6,13 +6,19 @@
    "article": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/icjp-welcomes-uk-settlement-sanctions-warns-should-not-be-left-symbolic",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
- "date": "2026-09-08T14:30:05+00:00",
- "dek": "Ehud Olmert backs announcement saying ‘sanctions are directed against the terrorists not against Israel’ as Palestinian presidency also welcomes move UK accuses Israeli ‘terrorists’ of ethnic cleansing in West Bank with government backing The Liberal…",
+ "date": "2026-09-08T18:35:15+00:00",
+ "dek": "Israel’s foreign minister, Gideon Saar, earlier claimed that the UK was ‘systemically working against the state of Israel’ UK accuses Israeli ‘terrorists’ of ethnic cleansing in West Bank with government backing The Liberal Democrats say they have been…",
  "dup_of": null,
- "image": "https://i.guim.co.uk/img/media/72511061c7679c0d11237294a7e3584153591763/386_0_4646_3716/master/4646.jpg?width=140&quality=85&auto=format&fit=max&s=ce88db6dbba6d0b8eb4d1aa6db15e3ce",
+ "image": "https://i.guim.co.uk/img/media/f8146bd977e6ffc6e30c7088acbecc0b9c97b379/1000_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=710556a5a514868ee2009e3920da962b",
  "lang": "en",
  "link": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4df2a66be2",
- "score": 49.99,
+ "score": 50.0,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

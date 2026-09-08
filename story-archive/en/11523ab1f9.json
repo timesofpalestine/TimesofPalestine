@@ -9,15 +9,15 @@
    "verified": true
   },
   {
-   "article": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-will-not-follow-uk-israeli-settlement-sanctions-says-rubio",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/07/un-francesca-albanese-miliband-israel-palestine-settlements-trade",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
    "verified": true
   },
   {
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "11523ab1f9",
- "score": 47.73,
+ "score": 47.41,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
