@@ -1,0 +1,33 @@
+{
+ "brief": "A legal report accuses Israeli academia of operating systemic apartheid through discriminatory practices, Al Jazeera English reported. The findings expose how Israeli universities employ a dual-track disciplinary system that targets Palestinian students more severely than their Israeli Jewish counterparts, subjecting them to harsher penalties for similar infractions.\n\nThe investigation documents how Palestinian students face unequal treatment within institutional frameworks designed to suppress dissent and limit academic freedom on campuses. Disciplinary proceedings demonstrate a pattern in which Palestinian activists and organizers receive disproportionate punishments compared to Jewish Israeli students engaged in comparable conduct. The report characterizes these practices as part of broader apartheid structures affecting Palestinians throughout Israeli society.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/8/israeli-academia-accused-of-systemic-apartheid-against-palestinians?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-08T16:04:42+00:00",
+ "dek": "A legal report exposes how Israeli universities use a dual-track disciplinary system to target Palestinian students.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/AP18135487411057-1788857467.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/8/israeli-academia-accused-of-systemic-apartheid-against-palestinians?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/8/israeli-academia-accused-of-systemic-apartheid-against-palestinians?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6dd9a92011",
+ "score": 49.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli universities use dual disciplinary systems against Palestinian students"
+}
