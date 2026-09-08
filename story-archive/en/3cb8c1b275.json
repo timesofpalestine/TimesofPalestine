@@ -1,0 +1,33 @@
+{
+ "brief": "The Guardian's investigation reveals that an Israeli airstrike killing seven international aid workers from World Central Kitchen was the result of a widely used military tactic, the outlet reported. The attack targeted a humanitarian convoy traveling toward Rafah in Gaza. The investigation suggests the workers were identified through what analysts describe as \"guilt by association,\" a targeting methodology.\n\nThe airstrike struck the clearly marked World Central Kitchen convoy as it operated in Gaza during the humanitarian crisis. The incident killed aid workers from multiple countries working to deliver food assistance. The Guardian's reporting indicates the targeting reflected broader Israeli military practices in the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/05/aid-workers-gaza-killed-in-israel-airstrike-investigation",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-05T11:08:31+00:00",
+ "dek": "Exclusive: Guardian investigation reveals targeting of World Central Kitchen convoy was result of widely used military tactic Death on the road to Rafah: the night the IDF targeted WCK aid workers Seven aid workers killed in an airstrike in Gaza were marked…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/07dcae18edb859f43f16e9b15b3db1e8ebbaabf5/0_0_4560_3648/master/4560.jpg?width=140&quality=85&auto=format&fit=max&s=65e34f1baa351a9478025d380637f41f",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/sep/05/aid-workers-gaza-killed-in-israel-airstrike-investigation",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/sep/05/aid-workers-gaza-killed-in-israel-airstrike-investigation"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3cb8c1b275",
+ "score": 21.73,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Guardian investigation links Israeli airstrike to military targeting tactic"
+}
