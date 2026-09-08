@@ -9,18 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/QudsN/735112",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
-   "article": "https://www.alquds.co.uk/12-%d8%af%d9%88%d9%84%d8%a9-%d8%ba%d8%b1%d8%a8%d9%8a%d8%a9-%d8%aa%d8%b9%d9%84%d9%86-%d9%81%d8%b1%d8%b6-%d9%82%d9%8a%d9%88%d8%af-%d8%b9%d9%84%d9%89-%d8%aa%d8%ac%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%b3",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
    "article": "https://www.pbc.ps/12-50",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
@@ -43,6 +31,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/428882",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": false
   }
  ],
  "date": "2026-09-08T12:47:00+00:00",
@@ -61,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "5e53bb7b19",
- "score": 49.02,
+ "score": 48.77,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
