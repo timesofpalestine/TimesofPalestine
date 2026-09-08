@@ -15,18 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/09/two-palestinians-killed-israeli-stabbed-west-bank-settler-violence-flares",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48285",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
-  },
-  {
    "article": "https://imemc.org/article/west-bank-invasions-and-abductions-on-tuesday",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
@@ -55,7 +43,7 @@
  "modified": null,
  "original": true,
  "pid": "218707f5c5",
- "score": 85.27000000000001,
+ "score": 85.25,
  "source": "Times of Palestine",
  "source_id": "top-original",
  "source_url": "",
