@@ -19,6 +19,18 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/ongoing-genocide-israel-kills-eight-palestinians-and-injures-dozens-more-in-gaza",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/12-countries-say-they-will-sanction-trade-israeli-settlements",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-08T11:29:35+00:00",
@@ -37,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "b1519954ba",
- "score": 62.45,
+ "score": 62.16,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

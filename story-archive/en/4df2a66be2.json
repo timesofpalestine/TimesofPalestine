@@ -1,6 +1,6 @@
 {
  "brief": "The United States ambassador to Britain has cautioned that UK-US trade could be harmed if Britain imposes sanctions against illegal Israeli settlements, according to The Guardian. The warning comes as the Labour government signals plans to reassert support for Palestinian rights and a two-state solution, a shift that has drawn criticism from both Washington and Israel.\n\nThe threatened trade implications reflect rising tensions over British policy toward the Israeli-Palestinian conflict under Prime Minister Keir Starmer's administration. The diplomatic dispute highlights competing priorities between the UK's stated commitment to Palestinian rights and pressure from its closest ally to avoid measures the US views as hostile to Israeli interests.",
- "cat": "gaza",
+ "cat": "westbank",
  "corroborating_sources": [
   {
    "article": "https://www.theguardian.com/politics/live/2026/sep/08/uk-us-trade-israel-sanctions-labour-ed-miliband-farage-latest-news-updates",
@@ -9,8 +9,8 @@
    "verified": false
   }
  ],
- "date": "2026-09-08T13:35:03+00:00",
- "dek": "UK reasserts support for Palestinian rights and a two-state solution, describing Israeli settler terror attacks as perpetrating ethnic cleansing in West Bank UK accuses Israeli ‘terrorists’ of ethnic cleansing in West Bank with government backing The Liberal…",
+ "date": "2026-09-08T14:05:12+00:00",
+ "dek": "Ehud Olmert backs Ed Miliband’s announcement saying ‘sanctions are directed against the terrorists not against Israel’ UK accuses Israeli ‘terrorists’ of ethnic cleansing in West Bank with government backing The Liberal Democrats say they have been granted a…",
  "dup_of": null,
  "image": "https://i.guim.co.uk/img/media/72511061c7679c0d11237294a7e3584153591763/386_0_4646_3716/master/4646.jpg?width=140&quality=85&auto=format&fit=max&s=ce88db6dbba6d0b8eb4d1aa6db15e3ce",
  "lang": "en",
@@ -25,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "4df2a66be2",
- "score": 49.9,
+ "score": 49.96,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
