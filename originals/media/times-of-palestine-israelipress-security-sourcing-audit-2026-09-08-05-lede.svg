@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Ynet audit: 15 threat reports on Israeli broadcast media, 8 built on the same template</title>
+<desc id="d">A grid of 15 screen shapes represents the threat stories Ynet counted on Israeli national television and radio between 12 July and 12 August. Eight are filled dark red and marked with a question mark, standing for items built on the same template: an unnamed security source, a highly threatening scenario, almost no data on scale and no qualifying voice. A side panel lists the template elements and the survey scope of seven national television channels and six national radio stations.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="66" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="4" fill="#c7a86b">MEDIA AUDIT — ISRAEL</text>
+
+<text x="90" y="126" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Ynet audit finds unnamed security sources</text>
+<text x="90" y="178" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">drove 15 threat reports in one month</text>
+<text x="90" y="228" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#59a97d">مراجعة: 15 تقريراً عن تهديدات، 8 منها بالقالب نفسه</text>
+
+<line x1="90" y1="262" x2="1510" y2="262" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- GRID OF 15 -->
+<text x="90" y="312" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="3" fill="#aaa9a5">THREAT STORIES COUNTED, 12 JULY – 12 AUGUST</text>
+
+<g>
+<!-- row 1 -->
+<rect x="90" y="342" width="120" height="120" rx="10" fill="#8a1f2d"/>
+<text x="150" y="420" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="48" fill="#f2eee8">?</text>
+<rect x="234" y="342" width="120" height="120" rx="10" fill="#8a1f2d"/>
+<text x="294" y="420" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="48" fill="#f2eee8">?</text>
+<rect x="378" y="342" width="120" height="120" rx="10" fill="#8a1f2d"/>
+<text x="438" y="420" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="48" fill="#f2eee8">?</text>
+<rect x="522" y="342" width="120" height="120" rx="10" fill="#8a1f2d"/>
+<text x="582" y="420" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="48" fill="#f2eee8">?</text>
+<rect x="666" y="342" width="120" height="120" rx="10" fill="#8a1f2d"/>
+<text x="726" y="420" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="48" fill="#f2eee8">?</text>
+<!-- row 2 -->
+<rect x="90" y="486" width="120" height="120" rx="10" fill="#8a1f2d"/>
+<text x="150" y="564" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="48" fill="#f2eee8">?</text>
+<rect x="234" y="486" width="120" height="120" rx="10" fill="#8a1f2d"/>
+<text x="294" y="564" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="48" fill="#f2eee8">?</text>
+<rect x="378" y="486" width="120" height="120" rx="10" fill="#8a1f2d"/>
+<text x="438" y="564" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="48" fill="#f2eee8">?</text>
+<rect x="522" y="486" width="120" height="120" rx="10" fill="none" stroke="#4a4b4f" stroke-width="3"/>
+<line x1="552" y1="546" x2="612" y2="546" stroke="#aaa9a5" stroke-width="4"/>
+<rect x="666" y="486" width="120" height="120" rx="10" fill="none" stroke="#4a4b4f" stroke-width="3"/>
+<line x1="696" y1="546" x2="756" y2="546" stroke="#aaa9a5" stroke-width="4"/>
+<!-- row 3 -->
+<rect x="90" y="630" width="120" height="120" rx="10" fill="none" stroke="#4a4b4f" stroke-width="3"/>
+<line x1="120" y1="690" x2="180" y2="690" stroke="#aaa9a5" stroke-width="4"/>
+<rect x="234" y="630" width="120" height="120" rx="10" fill="none" stroke="#4a4b4f" stroke-width="3"/>
+<line x1="264" y1="690" x2="324" y2="690" stroke="#aaa9a5" stroke-width="4"/>
+<rect x="378" y="630" width="120" height="120" rx="10" fill="none" stroke="#4a4b4f" stroke-width="3"/>
+<line x1="408" y1="690" x2="468" y2="690" stroke="#aaa9a5" stroke-width="4"/>
+<rect x="522" y="630" width="120" height="120" rx="10" fill="none" stroke="#4a4b4f" stroke-width="3"/>
+<line x1="552" y1="690" x2="612" y2="690" stroke="#aaa9a5" stroke-width="4"/>
+<rect x="666" y="630" width="120" height="120" rx="10" fill="none" stroke="#4a4b4f" stroke-width="3"/>
+<line x1="696" y1="690" x2="756" y2="690" stroke="#aaa9a5" stroke-width="4"/>
+</g>
+
+<rect x="90" y="786" width="26" height="26" rx="5" fill="#8a1f2d"/>
+<text x="128" y="807" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">8 built on the same template</text>
+<rect x="470" y="786" width="26" height="26" rx="5" fill="none" stroke="#4a4b4f" stroke-width="3"/>
+<text x="508" y="807" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">7 other threat reports</text>
+
+<text x="90" y="852" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Source: Ynet review of 7 national TV channels and 6 national radio stations, 12 July – 12 August</text>
+
+<!-- PANEL -->
+<line x1="880" y1="300" x2="880" y2="760" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="920" y="318" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="3" fill="#c7a86b">THE REPEATED TEMPLATE</text>
+<text x="920" y="356" font-family="Cairo,Arial,sans-serif" font-size="26" fill="#59a97d">القالب المتكرر في التقارير</text>
+
+<circle cx="932" cy="404" r="6" fill="#8a1f2d"/>
+<text x="956" y="412" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">An unnamed security source</text>
+<circle cx="932" cy="452" r="6" fill="#8a1f2d"/>
+<text x="956" y="460" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">A highly threatening scenario</text>
+<circle cx="932" cy="500" r="6" fill="#8a1f2d"/>
+<text x="956" y="508" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">Almost no data to judge the scale</text>
+<circle cx="932" cy="548" r="6" fill="#8a1f2d"/>
+<text x="956" y="556" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" fill="#f2eee8">Usually no qualifying voice</text>
+
+<line x1="920" y1="596" x2="1510" y2="596" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="920" y="682" font-family="'Source Serif 4',Georgia,serif" font-size="72" fill="#c7a86b">7</text>
+<text x="980" y="662" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">national television</text>
+<text x="980" y="690" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">channels surveyed</text>
+
+<text x="1210" y="682" font-family="'Source Serif 4',Georgia,serif" font-size="72" fill="#c7a86b">6</text>
+<text x="1270" y="662" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">national radio</text>
+<text x="1270" y="690" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">stations surveyed</text>
+
+<text x="920" y="748" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#59a97d">7 قنوات تلفزيونية و6 محطات إذاعية خلال شهر</text>
+</svg>
