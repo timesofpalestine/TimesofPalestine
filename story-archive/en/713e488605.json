@@ -1,0 +1,33 @@
+{
+ "brief": "Students in Gaza have returned to classes despite the destruction of 90 percent of schools across the territory, the Ma'an news agency reported. The resumption of education continues even as the humanitarian crisis deepens and educational infrastructure lies in ruins.\n\nThe scale of damage has forced schools to adopt alternative arrangements to keep instruction running. Classes now share facilities, and schedules have been extended to accommodate larger numbers of students in limited spaces. Officials have described education as a priority despite severe resource constraints, ongoing shortages of materials, and the difficult conditions affecting both teachers and pupils.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168425.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-09T09:45:18+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168425.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "713e488605",
+ "score": 49.73,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gaza students resume classes amid widespread school destruction"
+}

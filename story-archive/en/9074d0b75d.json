@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/australia-news/2026/sep/09/australia-considers-new-israel-sanctions-but-wont-join-uk-in-banning-trade-with-settler-terrorists-ntwnfb",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/uk-france-canada-ban-imports-israeli-settlements",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-09T01:38:02+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "9074d0b75d",
- "score": 44.36,
+ "score": 44.08,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
