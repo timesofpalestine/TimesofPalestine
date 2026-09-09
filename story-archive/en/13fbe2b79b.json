@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/ongoing-genocide-israel-kills-eight-palestinians-and-injures-dozens-more-in-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/three-palestinians-killed-several-injured-in-israeli-attacks-across-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-07T17:12:26+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "13fbe2b79b",
- "score": 83.47,
+ "score": 83.44,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
