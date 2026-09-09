@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">House keeps $3.3 billion for Israel, bars UNRWA funding</title>
+<desc id="d">Bar chart of money in the two bills passed by the US House: $3.3 billion in Foreign Military Financing for Israel, $750 million authorised for US-Israel cooperative programmes, $206 million for a Gaza stabilization force that has not deployed, and zero dollars for UNRWA, whose funding is prohibited. Side panel lists the recorded votes and UN funding gaps.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="barA" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#C8102E"/>
+<stop offset="1" stop-color="#8a1f2d"/>
+</linearGradient>
+<linearGradient id="barB" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#8a1f2d"/>
+<stop offset="1" stop-color="#5e1620"/>
+</linearGradient>
+<linearGradient id="barC" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#c7a86b"/>
+<stop offset="1" stop-color="#907745"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="96" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">House keeps $3.3 billion for Israel,</text>
+<text x="90" y="152" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">bars UNRWA funding</text>
+<text x="90" y="200" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#c7a86b" text-anchor="start">مجلس النواب يبقي 3.3 مليار دولار لإسرائيل ويحظر تمويل الأونروا</text>
+<line x1="90" y1="226" x2="1520" y2="226" stroke="#3a3b3f" stroke-width="2"/>
+<text x="90" y="262" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Two bills passed this summer — H.R. 8595 (FY2027 State-Foreign Ops) and the FY2027 NDAA</text>
+
+<!-- chart -->
+<line x1="150" y1="700" x2="1010" y2="700" stroke="#5b5c60" stroke-width="3"/>
+
+<!-- bar 1: 3.3bn -->
+<rect x="185" y="320" width="130" height="380" fill="url(#barA)"/>
+<text x="250" y="302" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="28" font-weight="bold" fill="#f2eee8">$3.3bn</text>
+<text x="250" y="732" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Israel military aid</text>
+<text x="250" y="754" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">(FMF), H.R. 8595</text>
+<text x="250" y="782" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">تمويل عسكري لإسرائيل</text>
+
+<!-- bar 2: 750m -->
+<rect x="405" y="614" width="130" height="86" fill="url(#barB)"/>
+<text x="470" y="596" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#f2eee8">$750m</text>
+<text x="470" y="732" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">US–Israel cooperative</text>
+<text x="470" y="754" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">programmes (NDAA)</text>
+<text x="470" y="782" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">برامج تعاون مشتركة</text>
+
+<!-- bar 3: 206m -->
+<rect x="625" y="676" width="130" height="24" fill="url(#barC)"/>
+<text x="690" y="658" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#c7a86b">$206m</text>
+<text x="690" y="732" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Gaza stabilization</text>
+<text x="690" y="754" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">force — not deployed</text>
+<text x="690" y="782" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">قوة استقرار لم تُنشر</text>
+
+<!-- bar 4: zero -->
+<rect x="845" y="694" width="130" height="6" fill="#C8102E"/>
+<text x="910" y="672" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="bold" fill="#C8102E">$0</text>
+<circle cx="910" cy="620" r="22" fill="none" stroke="#C8102E" stroke-width="5"/>
+<line x1="895" y1="605" x2="925" y2="635" stroke="#C8102E" stroke-width="5"/>
+<text x="910" y="732" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">UNRWA — funding</text>
+<text x="910" y="754" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">prohibited</text>
+<text x="910" y="782" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="16" fill="#aaa9a5">الأونروا — محظورة</text>
+
+<text x="150" y="826" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Bars to scale. No earmark for Palestinians in either bill.</text>
+
+<!-- side panel -->
+<rect x="1058" y="292" width="466" height="496" rx="10" fill="#17181b" stroke="#3a3b3f" stroke-width="2"/>
+<rect x="1058" y="292" width="466" height="6" rx="3" fill="#286344"/>
+<text x="1088" y="344" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="bold" fill="#f2eee8">THE RECORDED VOTES</text>
+<text x="1088" y="374" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#c7a86b" text-anchor="start">أرقام التصويت والفجوات التمويلية</text>
+
+<line x1="1088" y1="394" x2="1494" y2="394" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="1088" y="430" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">H.R. 8595 passed, 15 July</text>
+<text x="1088" y="460" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#f2eee8">217 – 209</text>
+
+<text x="1088" y="504" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">Massie amendment to strike</text>
+<text x="1088" y="528" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">the $3.3bn — failed</text>
+<text x="1088" y="562" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#C8102E">104 – 314</text>
+
+<text x="1088" y="606" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">FY2027 NDAA passed, 22 July</text>
+<text x="1088" y="636" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="bold" fill="#f2eee8">216 – 212</text>
+
+<line x1="1088" y1="664" x2="1494" y2="664" stroke="#3a3b3f" stroke-width="2"/>
+
+<text x="1088" y="698" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">UNRWA serves 5.9 million</text>
+<text x="1088" y="722" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#aaa9a5">registered refugees, and faces a</text>
+<text x="1088" y="750" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" font-weight="bold" fill="#c7a86b">$100 million shortfall</text>
+<text x="1088" y="774" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">WFP needs $386m over six months</text>
+
+<!-- footer -->
+<line x1="90" y1="848" x2="1520" y2="848" stroke="#3a3b3f" stroke-width="2"/>
+<text x="90" y="878" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">Sources: Congress.gov, House Appropriations Committee, AIPAC, UN News, Reuters</text>
+<text x="1520" y="878" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#c7a86b">Times of Palestine</text>
+</svg>
