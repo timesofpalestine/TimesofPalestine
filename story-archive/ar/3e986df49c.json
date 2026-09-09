@@ -1,0 +1,39 @@
+{
+ "brief": "أصيب شاب بجروح خطيرة جراء استهداف طيران الاحتلال له قرب مفترق عبد العال في شارع الجلاء بمدينة غزة، وفقاً لمصادر محلية.\n\nوأسفر القصف عن إلحاق إصابات بالشاب، لكن المصادر لم تُفصّل عن ظروف الاستهداف أو حالته الصحية الراهنة أو ما إذا كان هناك اشتباه بأنه كان هدفاً عسكرياً محدداً أم أنه وقع ضحية استهداف عشوائي.\n\nوتشهد قطاع غزة منذ فترة موجات متكررة من الغارات الجوية للاحتلال الإسرائيلي على مناطق متفرقة من المدينة.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/QudsN/735290",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/320285",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-09T09:31:26+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/QudsN/735290",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3e986df49c",
+ "score": 63.81,
+ "source": "شبكة قدس · تيليغرام",
+ "source_id": "tg-qudsn",
+ "source_url": "https://t.me/QudsN",
+ "title": "طيران الاحتلال يستهدف شاباً بغزة ويُصيبه بجروح خطيرة"
+}
