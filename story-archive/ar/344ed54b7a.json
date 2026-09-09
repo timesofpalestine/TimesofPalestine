@@ -1,0 +1,45 @@
+{
+ "brief": "طائرات مروحية إسرائيلية استهدفت المناطق الشرقية لمخيم جباليا شمال قطاع غزة برشقات من نيران الأسلحة الرشاشة، وفقاً للمركز الفلسطيني للإعلام. جاء القصف في سياق التصعيد المستمر الذي يشهده القطاع منذ بدء العمليات العسكرية الإسرائيلية.\n\nوتشكل منطقة جباليا، الواقعة في شمال غزة، إحدى المناطق الكثيفة السكان التي تشهد تصادمات متكررة بين القوات الإسرائيلية والفصائل الفلسطينية. ولم تُعلن فوراً بيانات رسمية عن حجم الأضرار أو الإصابات الناجمة عن القصف الجوي.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/320388",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735466",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82816",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-09T21:40:55+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/320388",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "344ed54b7a",
+ "score": 63.54,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "طيران الاحتلال يقصف مخيم جباليا بنيران رشاشة"
+}

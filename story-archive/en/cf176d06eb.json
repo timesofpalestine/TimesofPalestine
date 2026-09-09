@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/west-bank-invasions-abductions-and-demolitions",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-injured-israeli-forces-south-nablus",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T09:20:21+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "cf176d06eb",
- "score": 43.71,
+ "score": 40.99,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
