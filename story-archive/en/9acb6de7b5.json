@@ -15,16 +15,16 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/miliband-condemns-israels-closure-uk-consulate-jerusalem",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://imemc.org/article/israel-orders-closure-of-british-consulate-in-east-jerusalem",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/explainers/sanctions-israeli-settlements-what-europe-does-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-09-09T10:09:06+00:00",
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "9acb6de7b5",
- "score": 46.54,
+ "score": 46.22,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
