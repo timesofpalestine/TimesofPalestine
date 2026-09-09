@@ -1,0 +1,33 @@
+{
+ "brief": "Israel's population has surpassed 10 million people, according to the Ma'an news agency. The country's Arab citizens account for approximately 2 million of the total population, representing roughly one-fifth of Israel's demographic composition.\n\nThe updated population figures underscore the ethnic and religious diversity within Israel's borders. Arabs remain a significant minority within the state, though their proportion of the overall population has fluctuated over decades. The 10 million threshold marks a notable demographic milestone for the country, reflecting patterns of natural increase and immigration that have shaped its population growth since its establishment.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168428.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-09T10:23:07+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168428.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "92f7f1a79d",
+ "score": 34.82,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel's population exceeds 10 million, including 2 million Arabs"
+}

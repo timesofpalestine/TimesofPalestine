@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب وكالة معاً، تجاوز عدد سكان إسرائيل حاجز 10 ملايين نسمة، بحسب ما أعلنه مكتب الإحصاء الإسرائيلي. يشمل هذا الرقم مختلف الفئات السكانية في الدولة، إذ لم تحدد الوكالة موعداً محدداً للإحصاء.\n\nوفي السياق ذاته، أشارت الوكالة إلى أن حوالي مليوني نسمة من العرب يعيشون داخل إسرائيل، ما يمثل نسبة من إجمالي السكان. يأتي هذا الإعلان كمؤشر ديموغرافي على نمو سكاني في الدولة عبر السنوات الماضية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168428.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-09T10:23:07+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2168428.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "92f7f1a79d",
+ "score": 34.8,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "مكتب الإحصاء الإسرائيلي: السكان يتجاوزون 10 ملايين نسمة"
+}

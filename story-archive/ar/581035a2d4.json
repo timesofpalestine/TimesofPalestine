@@ -31,18 +31,12 @@
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
    "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.net/news/2026/9/9/%d8%a3%d9%83%d8%b3%d9%8a%d9%88%d8%b3-%d8%aa%d8%b1%d9%85%d8%a8-%d9%84%d9%85-%d9%8a%d8%b9%d8%a7%d8%b1%d8%b6-%d8%a7%d9%84%d8%b9%d9%82%d9%88%d8%a8%d8%a7%d8%aa?traffic_source=rss",
-   "name": "الجزيرة نت",
-   "url": "https://www.aljazeera.net/",
-   "verified": true
   }
  ],
  "date": "2026-09-09T06:48:15+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-westbank-b-ar.svg",
+ "image": "/media/times-of-palestine-cover-westbank-ar.svg",
  "lang": "ar",
  "link": "https://www.maannews.net/news/2168407.html",
  "max_age_hours": 72,
@@ -55,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "581035a2d4",
- "score": 47.64,
+ "score": 47.31,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
