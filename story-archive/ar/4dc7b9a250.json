@@ -6,7 +6,13 @@
    "article": "https://qudsn.co/post?id=217469&slug=%D8%AA%D8%B3%D8%B1%D9%8A%D8%A8%D8%A7%D8%AA-%D9%87%D8%A2%D8%B1%D8%AA%D8%B3-%D9%88%D8%A7%D9%84%D8%AE%D9%8A%D8%B7-%D8%A7%D9%84%D9%81%D8%A7%D8%B5%D9%84-%D8%A8%D9%8A%D9%86-%D8%AC%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1-%D9%88%D9%86%D8%AC%D8%A7%D8%AD-%D8%A7%D9%84%D8%B6%D8%B1%D8%A8%D8%A9",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d9%84%d9%84%d9%8a%d9%83%d9%88%d8%af-%d9%8a%d8%aa%d9%87%d9%85-%d8%af%d8%ad%d9%84%d8%a7%d9%86-%d8%a8%d8%aa%d8%af%d8%a8%d9%8a%d8%b1-%d8%aa%d9%82%d8%b1%d9%8a%d8%b1-%d9%87%d8%a2%d8%b1%d8%aa%d8%b3",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T12:18:08+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4dc7b9a250",
- "score": 45.74,
+ "score": 45.45,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",

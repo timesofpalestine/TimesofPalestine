@@ -1,0 +1,45 @@
+{
+ "brief": "The European Union announced fresh sanctions targeting illegal Israeli settlements in occupied Palestinian territory, according to Al Jazeera English. The move represents an escalation in Brussels' diplomatic response to Israeli settlement expansion and reflects growing international pressure over settlement policies, which the EU has long deemed obstacles to peace efforts and violations of international law.\n\nThe sanctions follow intensifying accusations that Israeli policies amount to ethnic cleansing of Palestinians. The EU has previously condemned settlement construction as illegal under international law and fundamentally incompatible with efforts to resolve the Israeli-Palestinian conflict. European officials have signaled that continued settlement expansion will face additional diplomatic and economic consequences.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/inside-story/2026/9/9/how-significant-are-new-european-sanctions-on-illegal-israeli-settlements?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/explainers/sanctions-israeli-settlements-what-europe-does-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/news/video/2026/sep/09/why-is-trump-silent-on-uk-sanctions-against-israeli-west-bank-settlements-the-latest",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-09T18:23:27+00:00",
+ "dek": "Israel is accused of the ethnic cleansing of Palestinians.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/epa_6aa1a0f02ede-1788977392.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/inside-story/2026/9/9/how-significant-are-new-european-sanctions-on-illegal-israeli-settlements?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/inside-story/2026/9/9/how-significant-are-new-european-sanctions-on-illegal-israeli-settlements?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "878ec643b1",
+ "score": 49.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "European Union imposes new sanctions on Israeli settlements"
+}
