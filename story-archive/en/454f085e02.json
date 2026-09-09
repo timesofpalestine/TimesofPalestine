@@ -1,0 +1,33 @@
+{
+ "brief": "Only 12 of Gaza's 34 oxygen-generation stations remain operational, Al Jazeera English reported, leaving the besieged enclave facing a critical shortage of medical oxygen. The loss of 22 stations has forced hospitals and clinics to depend entirely on oxygen cylinders, a temporary measure that strains resources already depleted by months of conflict and blockade.\n\nThe oxygen shortage poses an immediate threat to patients across Gaza's healthcare system. Hospitals treating trauma victims, respiratory cases, and newborns require steady oxygen supply to keep patients alive. With generation capacity crippled, medical facilities now scramble to secure and ration cylinder supplies, unable to sustain normal operations or respond to sudden surges in demand.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/9/breathing-depends-on-a-cylinder-gaza-faces-medical-oxygen-crisis?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-09T18:40:38+00:00",
+ "dek": "Only 12 of Gaza's 34 oxygen-generation stations remain operational, worsening the health crisis in the besieged enclave.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/Untitled-document-4-1788975922.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/9/breathing-depends-on-a-cylinder-gaza-faces-medical-oxygen-crisis?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/9/breathing-depends-on-a-cylinder-gaza-faces-medical-oxygen-crisis?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "454f085e02",
+ "score": 49.53,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza loses oxygen-generation capacity as medical crisis deepens"
+}

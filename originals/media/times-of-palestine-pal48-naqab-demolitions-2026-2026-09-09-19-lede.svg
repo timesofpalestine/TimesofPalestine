@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Demolitions of structures in the Naqab, 2022–2026</title>
+<desc id="dsc">Bar chart of Israeli demolitions and demolition orders of structures in the Naqab: 2,850 in 2022; 3,282 in 2023; 5,231 in 2024; 5,742 in 2025; about 5,690 projected for 2026 from first-half data. Side panel notes 40 families received relocation plots in 2025, 71 percent of enforcement was self-demolition, and 320 of 350 homes destroyed in the village of a-Sir.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="barA" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#6d1824"/>
+<stop offset="1" stop-color="#8a1f2d"/>
+</linearGradient>
+<linearGradient id="barB" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#8a1f2d"/>
+<stop offset="1" stop-color="#C8102E"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- Header -->
+<text x="90" y="92" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="3.5" fill="#c7a86b">THE NAQAB / AL-NAQAB &#183; DEMOLITION RECORD</text>
+
+<text x="90" y="152" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Israel demolished 5,742 Naqab structures in 2025,</text>
+<text x="90" y="204" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">resettling 40 families</text>
+<text x="90" y="252" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#aaa9a5">هدمت إسرائيل 5,742 مبنى في النقب عام 2025 وأسكنت 40 عائلة</text>
+
+<line x1="90" y1="282" x2="1510" y2="282" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- Chart area -->
+<text x="200" y="322" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="2" fill="#aaa9a5">DEMOLITIONS AND ORDERS, PER YEAR</text>
+
+<!-- baseline -->
+<line x1="200" y1="731" x2="1010" y2="731" stroke="#54555a" stroke-width="2"/>
+
+<!-- 2022 -->
+<rect x="220" y="532" width="110" height="199" fill="url(#barA)"/>
+<text x="275" y="516" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" fill="#f2eee8">2,850</text>
+<text x="275" y="762" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">2022</text>
+
+<!-- 2023 -->
+<rect x="380" y="502" width="110" height="229" fill="url(#barA)"/>
+<text x="435" y="486" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" fill="#f2eee8">3,282</text>
+<text x="435" y="762" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">2023</text>
+
+<!-- 2024 -->
+<rect x="540" y="366" width="110" height="365" fill="url(#barA)"/>
+<text x="595" y="350" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" fill="#f2eee8">5,231</text>
+<text x="595" y="762" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">2024</text>
+
+<!-- 2025 -->
+<rect x="700" y="331" width="110" height="400" fill="url(#barB)"/>
+<text x="755" y="315" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="bold" fill="#f2eee8">5,742</text>
+<text x="755" y="762" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#f2eee8">2025</text>
+
+<!-- 2026 projected -->
+<rect x="860" y="334" width="110" height="397" fill="none" stroke="#c7a86b" stroke-width="2.5" stroke-dasharray="9 7"/>
+<text x="915" y="318" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" fill="#c7a86b">~5,690</text>
+<text x="915" y="762" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#c7a86b">2026</text>
+
+<text x="200" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#aaa9a5">2026 figure projected by the ministry from first-half data</text>
+<text x="200" y="830" font-family="Cairo,Arial,sans-serif" font-size="18" fill="#aaa9a5">رقم 2026 تقدير وزاري استناداً إلى النصف الأول من العام</text>
+
+<!-- divider -->
+<line x1="1075" y1="300" x2="1075" y2="770" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- Side panel -->
+<text x="1120" y="322" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" letter-spacing="2" fill="#aaa9a5">WHAT THE FIGURES SHOW</text>
+
+<rect x="1120" y="346" width="6" height="86" fill="#286344"/>
+<text x="1148" y="392" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#59a97d">40</text>
+<text x="1216" y="380" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">families given plots</text>
+<text x="1216" y="406" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">for relocation in 2025</text>
+<text x="1148" y="428" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">40 عائلة حصلت على قسائم سكنية</text>
+
+<rect x="1120" y="468" width="6" height="86" fill="#C8102E"/>
+<text x="1148" y="514" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#C8102E">71%</text>
+<text x="1250" y="502" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">of enforcement was</text>
+<text x="1250" y="528" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">self-demolition</text>
+<text x="1148" y="550" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">71% من عمليات الهدم نفّذها الأهالي</text>
+
+<rect x="1120" y="590" width="6" height="86" fill="#c7a86b"/>
+<text x="1148" y="636" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#c7a86b">320</text>
+<text x="1248" y="624" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">of 350 homes razed</text>
+<text x="1248" y="650" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">in a-Sir village</text>
+<text x="1148" y="672" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5">320 من 350 منزلاً في قرية السّر</text>
+
+<text x="1120" y="726" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">More than 1,000 of the 2025</text>
+<text x="1120" y="752" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" fill="#f2eee8">structures razed were homes.</text>
+
+<!-- footer -->
+<line x1="90" y1="852" x2="1510" y2="852" stroke="#3a3b3f" stroke-width="2"/>
+<text x="90" y="880" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Source: National Security Ministry figures cited by +972 Magazine, Arutz Sheva and Maariv; Arab48. Graphic: Times of Palestine</text>
+</svg>
