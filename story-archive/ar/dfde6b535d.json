@@ -1,0 +1,33 @@
+{
+ "brief": "ذكرت شبكة قدس أن جيش الاحتلال الإسرائيلي نفذ تفجيراً في بلدة القنطرة الواقعة في جنوب لبنان. وأوردت الشبكة الخبر دون الإفصاح عن معلومات تفصيلية بشأن طبيعة العملية أو حجم الأضرار المترتبة عليها.\n\nتأتي العملية في سياق التوترات الأمنية المستمرة على الحدود اللبنانية الإسرائيلية، حيث شهدت المنطقة تصعيداً متكرراً خلال الفترة الأخيرة. ويأتي هذا التفجير وسط حالة من عدم الاستقرار تشهدها الحدود الجنوبية للبنان منذ فترة.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/QudsN/735375",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-09T15:04:02+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/QudsN/735375",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dfde6b535d",
+ "score": 63.27,
+ "source": "شبكة قدس · تيليغرام",
+ "source_id": "tg-qudsn",
+ "source_url": "https://t.me/QudsN",
+ "title": "إسرائيل تنفذ تفجيراً في القنطرة جنوب لبنان"
+}

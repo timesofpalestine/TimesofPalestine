@@ -1,0 +1,45 @@
+{
+ "brief": "Israel announced four countermeasures against the United Kingdom and other countries that have imposed sanctions, according to Al Jazeera English. The measures include shuttering the British consulate in East Jerusalem, one of the most visible diplomatic presences in the occupied territory.\n\nThe closure marks a sharp escalation in tensions between Israel and Britain over the sanctions regime. Israel's government has signaled its willingness to retaliate against countries imposing economic or diplomatic penalties. Three additional countermeasures were announced alongside the consulate closure, though their specific nature remained unclear from the available information.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/9/how-has-israel-hit-back-against-sanctions-by-the-uk-others?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/08/israel-close-british-consulate-jerusalem-sanctions",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israel-orders-closure-of-british-consulate-in-east-jerusalem",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-09T12:17:50+00:00",
+ "dek": "Israel announced four countermeasures including the closure of the British consulate in East Jerusalem.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6aa134723de6-1788949618_882ed5-1788956246.jpg?resize=1200%2C630&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/9/how-has-israel-hit-back-against-sanctions-by-the-uk-others?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/9/how-has-israel-hit-back-against-sanctions-by-the-uk-others?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4fa2242e23",
+ "score": 47.37,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel closes British consulate in East Jerusalem over UK sanctions"
+}
