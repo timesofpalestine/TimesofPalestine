@@ -1,0 +1,39 @@
+{
+ "brief": "Britain imported £6 million in goods officially recorded as Palestinian over the past year, according to Al Jazeera English, despite a ban on products from Israeli settlements that took effect in 2024. The figure suggests significant gaps in how the restriction is being monitored and enforced at the border.\n\nThe low recorded volume of Palestinian goods raises questions about whether settlement products are being properly identified and classified, or if they are entering the country under different labeling. Enforcement challenges have plagued similar import restrictions in other countries, where products manufactured in settlements are often labeled with Israeli origin to obscure their true source.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/9/what-are-the-holes-in-the-uks-ban-on-imports-from-israeli-settlements?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/video/2026/sep/09/australia-to-impose-targeted-measures-to-stop-israeli-settler-violence-but-no-import-ban-video",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-09T11:27:57+00:00",
+ "dek": "Over a year, the UK imported just £6m ($8.1m) in goods recorded as Palestinian, including Israeli settlement goods.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-09-08T160646Z_444821237_RC21FNARJHY5_RTRMADP_3_ISRAEL-PALESTINIANS-SETTLERS-BRITAIN-1788953989.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/9/what-are-the-holes-in-the-uks-ban-on-imports-from-israeli-settlements?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/9/what-are-the-holes-in-the-uks-ban-on-imports-from-israeli-settlements?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "12a6da1dd1",
+ "score": 49.7,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UK settlement import ban leaves loopholes in enforcement"
+}
