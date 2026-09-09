@@ -6,7 +6,13 @@
    "article": "https://english.pnn.ps/news/48291",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/report-84-israeli-violations-against-palestinian-journalists",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-08T19:28:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "85e43f519c",
- "score": 59.42,
+ "score": 59.11,
  "source": "Palestine News Network",
  "source_id": "pnn",
  "source_url": "https://english.pnn.ps/",
