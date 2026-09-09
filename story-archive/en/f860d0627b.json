@@ -1,0 +1,45 @@
+{
+ "brief": "Prime Minister Andy Burnham defended the UK government's ban on trade with Israeli settlements in the occupied West Bank, according to Al Jazeera English. The policy prohibits commercial activity involving goods produced in the settlements, which international law classifies as illegal under the Geneva Conventions and UN resolutions.\n\nBurnham's remarks underscored the government's commitment to restricting economic engagement with settlement enterprises. The UK has positioned the trade restrictions as consistent with its foreign policy stance on Israeli settlements and Palestinian rights. The ban covers products manufactured in West Bank settlements and prevents their import into British markets, aligning the country with positions held by the European Union and other nations that view settlements as obstacles to peace negotiations.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/9/burnham-defends-uk-ban-on-israeli-settlement-trade?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/news/audio/2026/sep/09/uk-defends-sanctions-on-israeli-west-bank-settlements-after-backlash-the-latest",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israeli-settlement-winemaker-defiant-after-uk-led-trade-sanctions",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-09T20:32:24+00:00",
+ "dek": "UK Prime Minister Andy Burnham defended a ban on trade with Israeli settlements in the occupied West Bank…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1788985935.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/9/burnham-defends-uk-ban-on-israeli-settlement-trade?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/9/burnham-defends-uk-ban-on-israeli-settlement-trade?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f860d0627b",
+ "score": 49.65,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UK Prime Minister Burnham defends Israeli settlement trade ban"
+}
