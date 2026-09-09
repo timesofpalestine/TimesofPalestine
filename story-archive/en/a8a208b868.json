@@ -6,7 +6,19 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/video/2026/sep/09/australia-to-impose-targeted-measures-to-stop-israeli-settler-violence-but-no-import-ban-video",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/uk-france-canada-ban-imports-israeli-settlements",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-08T21:35:36+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "a8a208b868",
- "score": 47.2,
+ "score": 46.9,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
