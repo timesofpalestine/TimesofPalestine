@@ -15,6 +15,18 @@
    "verified": true
   },
   {
+   "article": "https://felesteen.news/post/186045/%D8%AD%D9%85%D8%A7%D8%B3-%D8%AA%D9%86%D8%B9%D9%89-%D8%A7%D9%84%D8%B4%D9%87%D9%8A%D8%AF-%D8%A8%D9%86%D9%8A-%D8%AC%D8%A7%D8%A8%D8%B1-%D9%88%D8%AA%D8%A4%D9%83%D8%AF-%D8%A7%D8%B3%D8%AA%D9%85%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%85%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82818",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
    "article": "https://t.me/AlQastalps/393567",
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
@@ -28,7 +40,7 @@
   }
  ],
  "date": "2026-09-09T21:06:00+00:00",
- "dek": "زفّت كتائب الشهيد عز الدين القسام الشهيد القائد المجاهد فرح أحمد عبد المجيد حامد، عضو المجلس العسكري لكتائب القسام في الضفة الغربية، الذي ارتقى الأربعاء، إثر عملية اغتيال استهدفته غربي مدينة غزة.",
+ "dek": "زفّت كتائب الشهيد عز الدين القسام الجناح العسكري لحركة حماس الشهيد القائد المجاهد فرح أحمد عبد المجيد حامد، عضو المجلس العسكري لكتائب القسام في الضفة الغربية، الذي ارتقى الأربعاء، إثر عملية اغتيال استهدفته غربي مدينة غزة.",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/9E6Yg.jpg?v=1",
  "lang": "ar",
@@ -43,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "09abd21532",
- "score": 63.71,
+ "score": 63.4,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
