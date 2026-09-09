@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/politics/2026/sep/09/ed-miliband-rejects-chief-rabbi-claim-west-bank-sanctions-british-jews-less-safe",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israeli-settlement-winemaker-defiant-after-uk-led-trade-sanctions",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T09:15:28+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "d10b200c32",
- "score": 42.44,
+ "score": 42.14,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

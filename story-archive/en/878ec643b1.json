@@ -6,19 +6,7 @@
    "article": "https://www.aljazeera.com/video/inside-story/2026/9/9/how-significant-are-new-european-sanctions-on-illegal-israeli-settlements?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/explainers/sanctions-israeli-settlements-what-europe-does-says",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/news/video/2026/sep/09/why-is-trump-silent-on-uk-sanctions-against-israeli-west-bank-settlements-the-latest",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-09T18:23:27+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "878ec643b1",
- "score": 48.79,
+ "score": 48.49,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
