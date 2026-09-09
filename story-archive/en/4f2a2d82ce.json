@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli occupation forces carried out airstrikes on residential areas in Shati and Gaza over the past 24 hours, the Ma'an news agency reported. The strikes destroyed or damaged multiple homes in both locations. Four Palestinians were killed in the bombardment, with additional residents suffering injuries from the strikes.\n\nThe exact number of wounded and the scale of damage to the residential structures remained unclear. Israeli military operations in Gaza have intensified in recent months, with frequent airstrikes targeting populated areas across the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168402.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/palestinian-killed-and-five-others-injured-by-settler-fire-in-qalqiliya",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-09T06:31:05+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/l4ASH4MDVS5hHRSfI6kd6MHEvAGCcrS18Rw_5M_bSz-RLbW97Fcj4VN6jWsEZWFy06OqwDXYDAhyrkP5UhyBUsIKQoGkmzL1U2YeP74T9DlENLNSP9t3KDz3Fy7w75nn0V6doOisEaZm-SQDnk8eiRFAJJfWRybW6E4-XulN-F65FASayxjcaoPuJAP7k_DiqRnGZT_TfBPVko7yeyA3hX6Iwss-epwMDBDxph6UlwDvkaaVFHpBaKuLb9jDMkjq8rQEcKArAjpkVzioz8wXcAhWgULnbGBY5TXkW7SbAN6nShQqrIyh59I8GeoLXvMIRdQRp30cmuuVVz1SDERGFA.jpg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168402.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.maannews.net/news/2168402.html"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4f2a2d82ce",
+ "score": 63.95,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces bomb homes in Shati and Gaza, killing four"
+}

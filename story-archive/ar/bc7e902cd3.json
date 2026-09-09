@@ -1,0 +1,45 @@
+{
+ "brief": "أفادت وكالة معا بأن مصدراً إماراتياً كشف عن تحذير أصدره محمد بن زايد آل نهيان لرئيس الوزراء الإسرائيلي بنيامين نتنياهو قبل أيام من شن حركة حماس هجومها في السابع من أكتوبر. ولم يورد المصدر تفاصيل محددة عن محتوى التحذير أو ظروف التواصل بين الجانبين الإماراتي والإسرائيلي.\n\nوتعكس هذه الواقعة — إن صحت — حجم التنسيق الأمني والاستخباراتي بين الإمارات وإسرائيل، في ظل العلاقات الدبلوماسية المتطورة بينهما منذ توقيع اتفاق التطبيع عام 2020.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168406.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163706/%D9%85%D9%83%D8%A7%D9%84%D9%85%D8%A9-%D8%A7%D9%84%D9%8045-%D8%AF%D9%82%D9%8A%D9%82%D8%A9-%D8%A8%D9%8A%D9%86-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%B2%D8%A7%D9%8A%D8%AF-%D9%88-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%82%D8%A8%D9%84-%D8%B7%D9%88%D9%81%D8%A7%D9%86-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89-%D8%A7%D9%84%D9%82%D8%B5%D8%A9-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84%D8%A9",
+   "name": "وكالة شهاب (حصري)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/186028/%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1-%D8%A8%D9%86-%D8%B2%D8%A7%D9%8A%D8%AF-%D9%8A%D9%81%D8%AA%D8%AD-%D9%85%D9%84%D9%81-7-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1-%D9%87%D9%84-%D8%AA%D8%AC%D8%A7%D9%87%D9%84-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D8%A5%D9%86%D8%B0%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%87%D8%AC%D9%88%D9%85",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-09T06:35:16+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%202018.jpg?width=640",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2168406.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Benjamin Netanyahu — Wikimedia Commons / US State Department (public domain)",
+  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg",
+  "rightsBasis": "wikimedia-cc",
+  "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bc7e902cd3",
+ "score": 79.97,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "مصدر إماراتي: بن زايد حذر نتنياهو قبل هجوم أكتوبر"
+}
