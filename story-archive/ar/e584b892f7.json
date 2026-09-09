@@ -7,6 +7,18 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.maannews.net/news/2168416.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  },
+  {
+   "article": "https://t.me/Arabi21News/428905",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": false
   }
  ],
  "date": "2026-09-08T19:18:38+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "e584b892f7",
- "score": 41.55,
+ "score": 41.29,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",

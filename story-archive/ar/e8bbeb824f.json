@@ -6,7 +6,13 @@
    "article": "https://t.me/Arabi21News/428903",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393475",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
   }
  ],
  "date": "2026-09-09T05:46:31+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "e8bbeb824f",
- "score": 48.82,
+ "score": 48.56,
  "source": "عربي21",
  "source_id": "tg-arabi21",
  "source_url": "https://t.me/arabi21news",

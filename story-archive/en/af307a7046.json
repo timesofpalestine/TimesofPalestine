@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli political divisions now revolve primarily around attitudes toward Palestinian statehood and occupation rather than traditional economic policy, Al Jazeera English reported. The country's left-right spectrum has undergone a fundamental realignment, moving away from the conventional ideological markers—taxation levels, welfare provision, labor rights—that typically distinguish conservative and progressive movements in other democracies.\n\nThe shift reflects decades of conflict and competing visions for Israeli-Palestinian relations. Parties across the economic spectrum find common ground on social welfare and tax policy while diverging sharply on security concerns, settlement expansion, and the future status of Palestinian territories under Israeli control. Security hawks and doves now define the political landscape more decisively than traditional left-right economic positions.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/9/what-right-and-left-mean-in-israel-today?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-09T07:22:27+00:00",
+ "dek": "In Israel, the left-right divide is shaped less by economics than by positions on Palestinian statehood and occupation.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2025/11/afp_690fb59f9361-1762637215.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/9/what-right-and-left-mean-in-israel-today?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/9/what-right-and-left-mean-in-israel-today?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "af307a7046",
+ "score": 49.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli politics splits over Palestinian statehood, not economics"
+}

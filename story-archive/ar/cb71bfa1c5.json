@@ -7,6 +7,18 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/Arabi21News/428888",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82797",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
   }
  ],
  "date": "2026-09-08T13:26:45+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "cb71bfa1c5",
- "score": 37.48,
+ "score": 37.22,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
