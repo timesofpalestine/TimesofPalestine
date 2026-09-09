@@ -1,0 +1,39 @@
+{
+ "brief": "شنّ جيش الاحتلال الإسرائيلي عملية استهداف طالت خيام ومنازل مدنيين في غزة، أسفرت عن مقتل شخص واحد وإصابة 14 آخرين بحسب الجزيرة نت. دمّرت الضربات عدداً من المنازل وأرغمت عشرات العائلات على مغادرة مساكنهم في القطاع الذي يشهد دماراً واسعاً منذ بدء الحرب.\n\nوفي تطور متصل، أنكر وزير الخارجية الإسرائيلي وجود خطط لتهجير قسري لسكان غزة، الذين يتجاوز عددهم مليوني فلسطيني. الإنكار جاء في الوقت الذي تواصل فيه القوات الإسرائيلية عملياتها العسكرية في القطاع المأهول بالسكان والمتضرر بشدة من تداعيات النزاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.net/news/2026/9/9/%d8%b4%d9%87%d9%8a%d8%af-%d9%88%d8%ac%d8%b1%d8%ad%d9%89-%d8%a8%d9%86%d9%8a%d8%b1%d8%a7%d9%86-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%81%d9%8a-%d8%ba%d8%b2%d8%a9?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
+  },
+  {
+   "article": "https://t.me/gazaalannet/82813",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-09T14:03:05+00:00",
+ "dek": "تواصل إسرائيل انتهاكاتها في غزة موقعة شهيدا و14 مصابا في استهداف خيام ومنازل مدنيين، في وقت ينفي فيه وزير خارجيتها وجود خطط لتهجير قسري لأكثر من مليوني فلسطيني بالقطاع المدمر بسبب الحرب.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.net/wp-content/uploads/2026/09/reuters_6aa1845a-1788970074.jpg?resize=1200%2C675",
+ "lang": "ar",
+ "link": "https://www.aljazeera.net/news/2026/9/9/%d8%b4%d9%87%d9%8a%d8%af-%d9%88%d8%ac%d8%b1%d8%ad%d9%89-%d8%a8%d9%86%d9%8a%d8%b1%d8%a7%d9%86-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%81%d9%8a-%d8%ba%d8%b2%d8%a9?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "الجزيرة نت",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.net/news/2026/9/9/%d8%b4%d9%87%d9%8a%d8%af-%d9%88%d8%ac%d8%b1%d8%ad%d9%89-%d8%a8%d9%86%d9%8a%d8%b1%d8%a7%d9%86-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%81%d9%8a-%d8%ba%d8%b2%d8%a9?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5fc9edeb66",
+ "score": 61.26,
+ "source": "الجزيرة نت",
+ "source_id": "aja",
+ "source_url": "https://www.aljazeera.net/",
+ "title": "استهداف إسرائيلي في غزة يوقع قتيلاً و14 مصاباً"
+}
