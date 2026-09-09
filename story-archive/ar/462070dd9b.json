@@ -1,0 +1,33 @@
+{
+ "brief": "أعلنت منصة غزة الآن على تيليغرام أن حصيلة القتلى في قطاع غزة بلغت 73,669 شهيداً. ولم تحدد المنصة في إعلانها تاريخ تحديث هذا الرقم أو المصدر المباشر الذي استندت إليه في نشر هذه الإحصائية.\n\nوتعتمد وسائل إعلام فلسطينية وعربية عديدة على بيانات وزارة الصحة في غزة في تتبع ومتابعة حصيلة الضحايا، فيما تتفاوت الأرقام المعلنة تبعاً لتوقيت التحديث وقدرة الجهات المسؤولة على الوصول إلى المعلومات من مختلف المناطق بالقطاع.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82801",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-09T11:13:32+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82801",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "462070dd9b",
+ "score": 63.72,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "غزة الآن تعلن ارتفاع عدد القتلى إلى 73,669 شهيداً"
+}
