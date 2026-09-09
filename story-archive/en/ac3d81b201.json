@@ -1,0 +1,39 @@
+{
+ "brief": "Britain's Foreign Secretary stated he strongly believes the government made the right decision in imposing measures against Israeli settlements, the Ma'an news agency reported. He offered no specifics on the scope or timing of the sanctions in the reported remarks.\n\nThe assertion comes as Britain has maintained a position critical of settlement expansion in Palestinian territories. Settlement policy remains a contentious international issue, with various governments adopting differing stances on how to respond to their establishment and growth. The Foreign Secretary's public backing of the sanctions measure signals continued British engagement with the question of Israeli settlement activity.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168416.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/08/ed-miliband-overturned-decades-foreign-office-inertia-illegal-israeli-settlements",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-09T07:44:27+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168416.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ac3d81b201",
+ "score": 49.16,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "British foreign secretary backs sanctions against Israeli settlements"
+}
