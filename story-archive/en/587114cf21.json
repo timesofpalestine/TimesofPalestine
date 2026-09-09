@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/explainers/sanctions-israeli-settlements-what-europe-does-says",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/news/audio/2026/sep/09/uk-defends-sanctions-on-israeli-west-bank-settlements-after-backlash-the-latest",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T15:11:24+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "587114cf21",
- "score": 49.09,
+ "score": 48.8,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
