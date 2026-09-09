@@ -13,6 +13,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/britain-must-stand-against-injustice-over-west-bank-settlements-pm-burnham-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T11:27:57+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "12a6da1dd1",
- "score": 48.41,
+ "score": 48.1,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
