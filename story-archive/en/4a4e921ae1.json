@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/all-eu-member-states-back-trade-sanctions-against-israeli-settlements",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/politics/video/2026/sep/08/uk-foreign-secretary-sanctions-trade-israeli-west-bank-settlements-video",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T04:47:10+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4a4e921ae1",
- "score": 49.69,
+ "score": 49.36,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
