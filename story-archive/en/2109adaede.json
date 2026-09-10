@@ -13,6 +13,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/trending/naza-film-exposing-systematic-killing-gaza-gets-record-24-minute-ovation-venice",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-09-10T13:42:20+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "2109adaede",
- "score": 60.16,
+ "score": 59.86,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

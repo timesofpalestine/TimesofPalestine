@@ -13,6 +13,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-uk-settlement-trade-ban-offers-lifeline-palestine-and-israel",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T09:33:00+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "b63eb7ebff",
- "score": 26.61,
+ "score": 26.31,
  "source": "Palestine News Network",
  "source_id": "pnn",
  "source_url": "https://english.pnn.ps/",
