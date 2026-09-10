@@ -19,18 +19,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/12-nations-back-restrictions-on-products-from-israeli-colonies",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": false
-  },
-  {
-   "article": "https://www.amnesty.org/en/latest/news/2026/09/israel-opt-settlement-trade-restrictions-must-be-followed-by-further-concrete-measures-to-end-israels-unlawful-occupation-and-apartheid",
-   "name": "Amnesty International",
-   "url": "https://www.amnesty.org/",
-   "verified": false
   }
  ],
  "date": "2026-09-09T20:32:24+00:00",
@@ -49,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "f860d0627b",
- "score": 47.18,
+ "score": 47.0,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
