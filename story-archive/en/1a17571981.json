@@ -6,32 +6,26 @@
    "article": "https://www.al-monitor.com/originals/2026/09/will-israels-right-exploit-sanctions-run-vote",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/politics/2026/sep/09/senior-uk-rabbis-come-out-in-support-of-sanctions-on-israeli-settlements",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-10T11:30:33+00:00",
  "dek": "British-led sanctions over settlement expansion in the West Bank may have the unintended effect of emboldening the Israeli right ahead of elections, analysts and a diplomati…",
  "dup_of": null,
- "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-09/000_b9ay3ge.jpg?h=69f2b9d0&itok=PCJoNuue",
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
  "lang": "en",
  "link": "https://www.al-monitor.com/originals/2026/09/will-israels-right-exploit-sanctions-run-vote",
  "max_age_hours": 72,
  "media": {
-  "credit": "Al-Monitor",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://www.al-monitor.com/originals/2026/09/will-israels-right-exploit-sanctions-run-vote"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "1a17571981",
- "score": 46.38,
+ "score": 46.13,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
