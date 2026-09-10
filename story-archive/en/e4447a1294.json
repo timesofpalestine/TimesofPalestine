@@ -1,0 +1,33 @@
+{
+ "brief": "Israel detained 100 Palestinians over seven days as unrest persists across the occupied West Bank, the Palestinian Prisoner's Society said. Those arrested include children, journalists, and a former prisoner released under a recent hostage and detainee exchange agreement, Al Jazeera English reported. The organization did not disclose specific charges or arrest locations.\n\nThe detentions represent a significant increase in enforcement operations amid escalating confrontations in the territory. Palestinian officials have characterized the arrests as part of broader security sweeps targeting activists and civilians. The inclusion of a freed exchange detainee among those rearrested underscores ongoing tensions surrounding prisoner releases and subsequent security measures implemented by Israeli authorities.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/10/israel-arrests-100-palestinians-in-a-week-as-west-bank-pogroms-continue?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T17:00:17+00:00",
+ "dek": "Palestinian Prisoner’s Society says detained include children, journalists and ex-prisoner freed in recent exchange deal…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/reuters_6aa2c225-1789051429.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/10/israel-arrests-100-palestinians-in-a-week-as-west-bank-pogroms-continue?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/10/israel-arrests-100-palestinians-in-a-week-as-west-bank-pogroms-continue?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e4447a1294",
+ "score": 48.87,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel arrests 100 Palestinians in West Bank week"
+}
