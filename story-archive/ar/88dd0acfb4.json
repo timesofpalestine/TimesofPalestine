@@ -6,26 +6,32 @@
    "article": "https://t.me/Palinfo/320432",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735520",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-09-10T05:54:46+00:00",
  "dek": "",
  "dup_of": null,
- "image": "https://cdn4.telesco.pe/file/oBpazFtkrkFCoznMk1H_m8a5nILFJnQJU7Hf_XCBhhx0_6o6Yg2h_C9VC99x04SqcXzJFL6-BnHeOp0RhIsL8lFukwiX4lwuVjpHFji6otuCKn5BDPHLG-h9JcBVHPjZi94pRJ4OEJ-Xe2TFbar3DYjwHx3kErbWm7JSilyzxJ-p9gPXAZWcBGYYsll-rDOni3fFWKxRLFZUztNC5lYXraA3_zRDw0C-xDttzsxQrItpUuuk8w6pT4wO_4pWr7FkAk4Dkr5rlNY0Wq5b6jrgBeSXfrma__E4LErnf4BgwHlK518GYQaU2aqTlbIxr9qDUEzNjI__-Mcl-YRhC92KGg.jpg",
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
  "lang": "ar",
  "link": "https://t.me/Palinfo/320432",
  "max_age_hours": 72,
  "media": {
-  "credit": "المركز الفلسطيني للإعلام",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://t.me/Palinfo/320432"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "88dd0acfb4",
- "score": 63.98,
+ "score": 63.67,
  "source": "المركز الفلسطيني للإعلام",
  "source_id": "tg-palinfo",
  "source_url": "https://t.me/palinfo",

@@ -6,7 +6,13 @@
    "article": "https://english.pnn.ps/news/48292",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/australia-news/2026/sep/10/labor-palestine-criticise-australias-decision-sanctions-israeli-settlements-in-west-bank-ntwnfb",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T09:33:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b63eb7ebff",
- "score": 35.87,
+ "score": 35.55,
  "source": "Palestine News Network",
  "source_id": "pnn",
  "source_url": "https://english.pnn.ps/",
