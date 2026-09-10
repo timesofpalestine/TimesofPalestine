@@ -1,0 +1,33 @@
+{
+ "brief": "An international document has verified that Israel deployed white phosphorus munitions in southern Lebanon, the Ma'an news agency reported. The finding adds to mounting scrutiny of the military's use of the substance in areas with civilian populations, raising fresh questions about compliance with international humanitarian standards.\n\nWhite phosphorus, commonly used for generating smoke screens and illumination in military operations, has long drawn scrutiny from human rights organizations. Critics contend that deployment in populated regions poses substantial risks to civilians, while Israeli officials maintain the practice adheres to international law and serves legitimate defensive purposes during combat operations.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168478.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T09:43:00+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168478.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "16d58ea3f9",
+ "score": 34.95,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "International document confirms Israeli use of white phosphorus in south Lebanon"
+}

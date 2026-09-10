@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces arrested more than 100 Palestinians during the past week, the Ma'an news agency reported. The detentions took place across multiple locations throughout the occupied territories, continuing a pattern of mass arrests that has marked recent weeks.\n\nThe circumstances surrounding individual arrests and the specific charges against detainees remain unclear. Families of those held have expressed concern over their legal status and access to legal representation, though no formal statements have been issued by Israeli authorities regarding the operation.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168476.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T09:20:26+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168476.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "623835bb80",
+ "score": 49.69,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces arrest over 100 Palestinians in past week"
+}
