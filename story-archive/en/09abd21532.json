@@ -6,7 +6,13 @@
    "article": "https://shehabnews.com/post/163817/%D8%A7%D9%84%D9%82%D8%B3%D8%A7%D9%85-%D8%AA%D9%86%D8%B9%D9%89-%D8%A7%D9%84%D9%82%D8%A7%D8%A6%D8%AF-%D9%81%D8%B1%D8%AD-%D8%AD%D8%A7%D9%85%D8%AF-%D9%88%D8%AA%D8%A4%D9%83%D8%AF-%D9%85%D9%88%D8%A7%D8%B5%D9%84%D8%A9-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%85%D8%A9",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-member-released-exchange-israeli-soldier-killed-gaza-strike",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T21:06:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "09abd21532",
- "score": 62.33,
+ "score": 62.02,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
