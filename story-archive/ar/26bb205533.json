@@ -1,0 +1,39 @@
+{
+ "brief": "أفادت مصادر طبية بمقتل 7 فلسطينيين جراء غارات شنتها طائرات الاحتلال الإسرائيلي على مختلف مناطق قطاع غزة منذ صباح اليوم. ولم تحدد المصادر الطبية حتى الآن تفاصيل دقيقة بشأن مواقع الغارات المحددة أو عدد الجرحى الذين أسفرت عنها العمليات العسكرية.\n\nيأتي هذا التصعيد في سياق تواصل الغارات الإسرائيلية على القطاع، إذ تشهد المنطقة منذ فترة موجة من الاشتباكات والعمليات العسكرية. وبحسب الإفادات الطبية، فإن الضحايا الفلسطينيين توزعوا على عدة مناطق من قطاع غزة خلال ساعات الصباح الأولى من اليوم الحالي.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82866",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393695",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-10T19:56:12+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82866",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "26bb205533",
+ "score": 63.33,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "غارات إسرائيلية تودي بحياة 7 فلسطينيين في غزة"
+}
