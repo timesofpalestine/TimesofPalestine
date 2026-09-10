@@ -788,6 +788,51 @@
     "رويس لامبرت"
    ],
    "verified": "ajnet.me 2025-04-23 + alaraby.co.uk (Arabic usage split with «لامبيرث»; house form fixed for consistency), 2026-09-07"
+  },
+  {
+   "latin": "Shlomi Eldar (Haaretz journalist)",
+   "ar": "شلومي إلدار",
+   "wrong": [
+    "شلومي الدار",
+    "شلومي إلدر"
+   ],
+   "verified": "arabi21 + alquds.co.uk + almodon Haaretz UAE-warning coverage, 2026-09-10"
+  },
+  {
+   "latin": "Ruth Yuval (Haaretz journalist)",
+   "ar": "روث يوفال",
+   "wrong": [
+    "روت يوفال",
+    "روث يوبال"
+   ],
+   "verified": "shehabnews Likud criminal-probe coverage, 2026-09-10"
+  },
+  {
+   "latin": "Uri Misgav (Haaretz columnist)",
+   "ar": "أوري مسغاف",
+   "wrong": [
+    "أوري ميسغاف",
+    "أوري مسجاف"
+   ],
+   "verified": "aljazeera.net + alquds.com + qudsn.co, 2026-09-10"
+  },
+  {
+   "latin": "Noam Sohlberg (Central Elections Committee chair)",
+   "ar": "نوعام سولبرغ",
+   "wrong": [
+    "نوعم سولبرغ",
+    "نوعام سولبرج"
+   ],
+   "verified": "masrawy + sonara.net + rtarabic elections-committee coverage, 2026-09-10"
+  },
+  {
+   "latin": "Dimitri Diliani (Democratic Reform Current spokesman)",
+   "ar": "ديمتري دلياني",
+   "wrong": [
+    "دمتري دلياني",
+    "ديميتري دلياني"
+   ],
+   "verified": "fatehgaza.com + alkofiya + msdrnews, 2026-09-10"
   }
  ]
 }
