@@ -1,6 +1,6 @@
 {
  "brief": "Pediatricians at Nasser Hospital in Gaza are documenting a sharp rise in stunted growth among children, according to Mondoweiss. The condition may cause permanent damage to cognition, hormone development, and long-term health, with doctors warning that the effects could affect an entire generation.\n\nMedical staff attribute the cases to severe food shortages resulting from Israel's policies in the territory. Doctors expressed concern that malnutrition during critical developmental years could prove irreversible, leaving lasting consequences throughout affected children's lives. The surge in cases at the pediatrics department reflects broader health concerns across Gaza's population amid the ongoing crisis.",
- "cat": "health",
+ "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://mondoweiss.net/2026/09/israel-starved-gaza-now-doctors-fear-it-has-permanently-damaged-a-generation",
@@ -25,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "9188ccad5f",
- "score": 19.61,
+ "score": 19.28,
  "source": "Mondoweiss",
  "source_id": "mondoweiss",
  "source_url": "https://mondoweiss.net/",
