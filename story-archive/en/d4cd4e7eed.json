@@ -6,13 +6,19 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-four-north-gaza-detain-15-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-strike-kills-gaza-family-of-four",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-10T05:53:38+00:00",
- "dek": "Israeli forces kill four in north Gaza, detain 15 in West Bank Four Palestinians have been killed and several others wounded by Israeli gunfire north of Gaza, Al Jazeera reported, citing a medical source. Meanwhile, Israeli forces detained 15 Palestinians…",
+ "dek": "Israeli forces kill four in north Gaza, detain 15 in West Bank Four Palestinians have been killed and several others wounded by Israeli gunfire in northern Gaza, Al Jazeera reported, citing a medical source. Meanwhile, Israeli forces detained 15 Palestinians…",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-health.svg",
+ "image": "/media/times-of-palestine-cover-health-b.svg",
  "lang": "en",
  "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-four-north-gaza-detain-15-west-bank",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "d4cd4e7eed",
- "score": 62.74,
+ "score": 58.37,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
