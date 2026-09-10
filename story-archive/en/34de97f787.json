@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli attacks killed at least four Palestinians in northern Gaza, Al Jazeera English reported. The strikes occurred as military operations continued across the occupied territory despite a ceasefire agreement brokered in October.\n\nThe violence represents a resumption of hostilities weeks after the truce was established. Previous agreements to halt fighting have frequently broken down, with both sides accusing each other of violations. The latest deaths add to the toll of casualties in the territory since conflict intensified in recent months.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/10/israeli-attacks-kill-at-least-four-palestinians-in-northern-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-four-north-gaza-detain-15-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-occupation-forces-continue-attacks-across-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53811",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-10T07:45:21+00:00",
+ "dek": "Israeli attacks on the occupied Palestinian territory continue despite a 'ceasefire' brokered in October.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6aa2547b1a0a-1789023355.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/10/israeli-attacks-kill-at-least-four-palestinians-in-northern-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/10/israeli-attacks-kill-at-least-four-palestinians-in-northern-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "34de97f787",
+ "score": 63.72,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strikes kill four Palestinians in northern Gaza"
+}
