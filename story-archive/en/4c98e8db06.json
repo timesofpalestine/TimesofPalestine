@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/09/netanyahu-threatens-sue-haaretz-reporting-uae-warned-israel-oct-7-attack",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-7-oct-warning-netanyahu-dismisses-report-sinister-libel-will-sue",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T15:26:28+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4c98e8db06",
- "score": 72.89,
+ "score": 72.58,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
