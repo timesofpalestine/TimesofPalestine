@@ -6,7 +6,19 @@
    "article": "https://pchrgaza.org/ghazal-al-torok-israeli-bombardment-took-everything-from-her-except-her-heartbeat",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strikes-injure-several-people-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53811",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
   }
  ],
  "date": "2026-09-10T07:57:19+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "965a06504e",
- "score": 85.42,
+ "score": 85.03,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",

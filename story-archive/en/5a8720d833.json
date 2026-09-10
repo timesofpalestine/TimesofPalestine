@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli forces struck a Gaza residence, killing four members of a Palestinian family as they slept, Al Jazeera English reported. The dead included two girls aged 8 and 12. The attack occurred without warning on the civilian home.\n\nThe incident marks the latest in a series of strikes affecting Gaza's civilian population. Families across the territory have faced repeated nighttime attacks on residential areas. No additional details regarding the specific location, timing, or stated military justification for the strike were immediately available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/10/family-of-four-killed-as-they-slept-in-israeli-strike-on-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-gaza-kills-family-four-including-children",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-strike-kills-gaza-family-of-four",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-10T17:32:28+00:00",
+ "dek": "Four members of a Palestinian family, including girls aged 8 and 12, were killed in an Israeli air attack as they slept…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789061538.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/10/family-of-four-killed-as-they-slept-in-israeli-strike-on-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/10/family-of-four-killed-as-they-slept-in-israeli-strike-on-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5a8720d833",
+ "score": 60.93,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike kills Palestinian family of four in Gaza"
+}
