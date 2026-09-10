@@ -6,19 +6,7 @@
    "article": "https://www.aljazeera.com/economy/2026/9/10/israeli-checkpoints-in-the-west-bank-are-choking-the-palestinian-economy?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.maannews.net/news/2168473.html",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-army-demolishes-home-in-battir",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-10T09:48:03+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "66ee98b383",
- "score": 79.38,
+ "score": 78.72,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

@@ -9,16 +9,16 @@
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/09/israeli-settlement-winemaker-defiant-after-uk-led-trade-sanctions",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/world/2026/sep/09/wednesday-briefing-inside-sweeping-uk-sanctions-on-trade-with-israeli-settlements",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/09/israel-opt-settlement-trade-restrictions-must-be-followed-by-further-concrete-measures-to-end-israels-unlawful-occupation-and-apartheid",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": false
   }
  ],
  "date": "2026-09-09T17:08:21+00:00",
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "a395868c82",
- "score": 41.14,
+ "score": 37.15,
  "source": "Mondoweiss",
  "source_id": "mondoweiss",
  "source_url": "https://mondoweiss.net/",

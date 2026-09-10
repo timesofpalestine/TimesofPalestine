@@ -1,0 +1,33 @@
+{
+ "brief": "Ma'an Wire reported that 47 patients and 45 companions were evacuated from Gaza for medical treatment outside the territory. The move underscores persistent gaps in healthcare capacity within the enclave.\n\nThe evacuations reflect ongoing efforts to address medical needs that cannot be met locally. Specific details regarding the patients' destinations, medical conditions, and the timing of the transfers were not disclosed in the initial report.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168481.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T10:42:55+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-health.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168481.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d3d13f0f59",
+ "score": 49.36,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gaza evacuates 92 patients and companions for treatment abroad"
+}

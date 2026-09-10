@@ -1,0 +1,33 @@
+{
+ "brief": "Amnesty International USA has called for the United States to end all political, financial, and military support to Israel, according to Ma'an Wire. The human rights organization made the demand public as part of its broader advocacy campaign concerning American foreign policy toward the Israeli government and its actions.\n\nThe call encompasses the full range of U.S. assistance mechanisms, including diplomatic recognition and engagement, economic aid packages, and weapons sales or military aid transfers. Amnesty International has long positioned itself as a monitor of government conduct worldwide and regularly issues statements pressing policymakers to alter course on issues it identifies as human rights concerns.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168461.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T11:15:59+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168461.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b99ab38e31",
+ "score": 34.74,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Amnesty International USA calls for halting all support to Israel"
+}

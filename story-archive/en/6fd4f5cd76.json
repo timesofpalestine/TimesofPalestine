@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/9/10/netanyahu-to-sue-haaretz-over-claims-uae-warned-him-before-october-7-attack?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-7-oct-warning-netanyahu-dismisses-report-sinister-libel-will-sue",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-10T03:14:52+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "6fd4f5cd76",
- "score": 44.83,
+ "score": 44.17,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
