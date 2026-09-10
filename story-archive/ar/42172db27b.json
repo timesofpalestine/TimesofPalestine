@@ -7,6 +7,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/QudsN/735500",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
   }
  ],
  "date": "2026-09-09T17:56:42+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "42172db27b",
- "score": 43.43,
+ "score": 43.17,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
