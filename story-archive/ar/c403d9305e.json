@@ -6,13 +6,31 @@
    "article": "https://t.me/QudsN/735562",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/186174/%D9%85%D8%AD%D8%A7%D9%81%D8%B8-%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D9%8A%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%AE%D8%B7%D9%88%D8%B1%D8%A9-%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D8%B9%D9%8A%D8%A7%D8%AF-%D8%A7%D9%84%D8%B9%D8%A8%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%82%D8%A8%D9%84-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF-",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/5369-2",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.maannews.net/news/2168479.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-10T09:49:37+00:00",
  "dek": "محافظة القدس: - نحذر من خطورة موسم الأعياد العبرية القادم، وما قد يشهده من تصعيد خطير في المسجد الأقصى المبارك والقدس، ضمن مسار متدرج وممنهج يستهدف تغيير هوية المسجد الأقصى ومكانته الدينية والتاريخية والقانونية. - خطورة الموسم الحالي تتضاعف في ظل تصاعد وتيرة…",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-social-b-ar.svg",
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
  "lang": "ar",
  "link": "https://t.me/QudsN/735562",
  "max_age_hours": 72,
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "c403d9305e",
- "score": 63.8,
+ "score": 63.53,
  "source": "شبكة قدس · تيليغرام",
  "source_id": "tg-qudsn",
  "source_url": "https://t.me/QudsN",

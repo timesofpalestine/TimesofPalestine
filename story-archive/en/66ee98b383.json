@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli military checkpoints throughout the West Bank are severely constraining the Palestinian economy, according to Al Jazeera English. The checkpoints impede the movement of goods and workers, forcing businesses to operate under chronic inefficiencies and raising transaction costs across sectors. Traders report lengthy delays at crossing points, eroding profit margins and discouraging commercial activity.\n\nThe checkpoints disrupt daily life for Palestinians, limiting access to markets, employment, and essential services. Local businesses face reduced customer bases and supply chain delays, compounding economic hardship across the territory. The restrictions have cascading effects: reduced commerce means fewer jobs, lower tax revenue for Palestinian authorities, and diminished purchasing power among residents already facing economic strain.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/economy/2026/9/10/israeli-checkpoints-in-the-west-bank-are-choking-the-palestinian-economy?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.maannews.net/news/2168473.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-demolishes-home-in-battir",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-10T09:48:03+00:00",
+ "dek": "Israeli military checkpoints are choking the West Bank economy, devastating local businesses and daily life.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2025/01/AFP__20250122__36VG9H9__v1__HighRes__PalestinianIsraelConflict-1737621124.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/economy/2026/9/10/israeli-checkpoints-in-the-west-bank-are-choking-the-palestinian-economy?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/economy/2026/9/10/israeli-checkpoints-in-the-west-bank-are-choking-the-palestinian-economy?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "66ee98b383",
+ "score": 79.53,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli checkpoints strangle West Bank Palestinian commerce"
+}
