@@ -13,6 +13,12 @@
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
    "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a8%d9%8a%d9%86%d9%87%d9%85-%d8%b5%d8%ad%d8%a7%d9%81%d9%8a%d8%a7%d9%86-%d9%88%d9%82%d8%a7%d8%b5%d8%b1%d8%a7%d9%86-%d8%ac%d9%8a%d8%b4-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%8a%d8%b9",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
   }
  ],
  "date": "2026-09-10T09:20:26+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "623835bb80",
- "score": 49.66,
+ "score": 49.46,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",

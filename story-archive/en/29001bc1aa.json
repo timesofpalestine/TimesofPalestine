@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli military forces launched a raid into two towns in the northern Jenin area on Wednesday, the Ma'an news agency reported, as part of an ongoing search operation for a missing settler. The incursion involved multiple locations and included ground operations across both municipalities.\n\nVideo documentation of the military presence circulated following the operation, though immediate details on the scale of the raid and specific actions taken remained limited. Israeli authorities have intensified search efforts in the West Bank region following the settler's disappearance, deploying forces to multiple areas to locate the missing individual. The operation underscored renewed security operations linked to the case.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168474.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T09:57:53+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168474.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "29001bc1aa",
+ "score": 49.92,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces raid two northern Jenin towns searching for missing settler"
+}
