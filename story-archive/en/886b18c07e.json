@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/israeli-occupation-forces-continue-attacks-across-gaza",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-helicopters-open-fire-near-gaza-camp-forces-raid-west-bank-town",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T09:55:06+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "886b18c07e",
- "score": 54.08,
+ "score": 53.8,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
