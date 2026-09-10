@@ -1,0 +1,33 @@
+{
+ "brief": "Gaza's hospitals are rationing electricity due to deepening fuel and engine oil shortages, according to Al Jazeera English. The crisis is forcing medical facilities to curtail power consumption as supplies needed to operate generators dwindle. Hospital administrators have begun implementing rolling blackouts and restrictions on non-essential electrical use to extend available fuel reserves.\n\nThe power rationing is hampering routine hospital operations and complicating care delivery across Gaza's healthcare system at a moment when medical infrastructure already faces mounting strain. Facilities have not announced concrete timelines for when fuel supplies might be restored, leaving administrators and staff uncertain about the duration of the crisis.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/10/gaza-hospitals-ration-power-as-fuel-shortages-deepen?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T21:17:09+00:00",
+ "dek": "Fuel and engine oil shortages are forcing Gaza’s hospitals to ration electricity…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/Sequence-86.00_00_06_04.Still002-1789075016.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/10/gaza-hospitals-ration-power-as-fuel-shortages-deepen?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/10/gaza-hospitals-ration-power-as-fuel-shortages-deepen?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0fc0bc0759",
+ "score": 49.81,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza hospitals ration power as fuel runs short"
+}
