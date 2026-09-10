@@ -6,7 +6,13 @@
    "article": "https://shehabnews.com/post/163832/%D8%BA%D8%B2%D8%A9-%D8%AA%D8%AF%D8%AE%D9%84-%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%AE%D8%B7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D9%86%D9%82%D8%B5-%D8%A7-%D8%AD%D8%A7%D8%AF-%D8%A7-%D9%81%D9%8A-%D8%A7%D9%84%D8%A5%D9%85%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217482&slug=%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D8%AA%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D9%86%D9%82%D8%B5-%D8%A7%D9%84%D8%A5%D9%85%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
   }
  ],
  "date": "2026-09-10T05:48:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "39a514f2b3",
- "score": 49.59,
+ "score": 49.27,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
