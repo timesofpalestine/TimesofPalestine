@@ -6,7 +6,19 @@
    "article": "https://mondoweiss.net/2026/09/the-uk-was-right-to-sanction-israeli-settlements-now-it-must-do-more-to-protect-palestinians-under-occupation",
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israeli-settlement-winemaker-defiant-after-uk-led-trade-sanctions",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/09/wednesday-briefing-inside-sweeping-uk-sanctions-on-trade-with-israeli-settlements",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-09T17:08:21+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "a395868c82",
- "score": 43.46,
+ "score": 42.9,
  "source": "Mondoweiss",
  "source_id": "mondoweiss",
  "source_url": "https://mondoweiss.net/",
