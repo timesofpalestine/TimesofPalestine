@@ -1,0 +1,45 @@
+{
+ "brief": "استهدفت الطائرات الإسرائيلية منزلاً في بيت لاهيا شمال قطاع غزة، ما أسفر عن مقتل أربعة فلسطينيين، بحسب وكالة معا. وأسفر القصف عن دمار في المنزل وإصابات بين السكان في الحي السكني.\n\nوفي عملية عسكرية منفصلة، شنت الطائرات الإسرائيلية غارة جوية على منطقة في خان يونس جنوب قطاع غزة، وأسفرت عن إصابة عدد من الفلسطينيين. ولم تتضح بعد الحصيلة الكاملة للإصابات في الغارة الثانية.\n\nوتواصل إسرائيل عملياتها العسكرية في قطاع غزة منذ أشهر، مستهدفة مناطق سكنية مختلفة في شمال وجنوب القطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168458.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-5-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-%d8%a8%d9%8a%d9%86%d9%87%d9%85-4-%d9%85%d9%86-%d8%b9%d8%a7%d8%a6%d9%84%d8%a9-%d9%88%d8%a7%d8%ad",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/82825",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-10T07:01:56+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2168458.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e319d3e57b",
+ "score": 63.84,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "قصف إسرائيلي يقتل أربعة فلسطينيين ببيت لاهيا"
+}

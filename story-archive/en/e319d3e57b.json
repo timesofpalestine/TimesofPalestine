@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli airstrike struck a residential building in Beit Lahiya on Monday, killing four people, according to Maan Wire. Rescue teams arrived at the scene to find the structure heavily damaged, with initial reports indicating multiple fatalities among those inside the home at the time of the attack.\n\nIn a separate operation, Israeli warplanes launched another raid targeting Khan Younis, leaving a number of civilians wounded, the agency reported. Emergency services responded to the incident as strikes continued across the Gaza Strip.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168458.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T07:01:56+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168458.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e319d3e57b",
+ "score": 63.87,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli strikes kill four in Beit Lahiya, wound others in Khan Younis"
+}
