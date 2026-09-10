@@ -1,0 +1,33 @@
+{
+ "brief": "تفاقمت مشكلة الصرف الصحي في قطاع غزة لتصبح أزمة بيئية حادة تؤثر على مياه البحر المحاذية للساحل. بحسب المركز الفلسطيني للإعلام، يعاني القطاع من ضعف شديد في البنية التحتية المسؤولة عن معالجة المياه العادمة، الأمر الذي أسفر عن تسرب كميات كبيرة منها مباشرة إلى البحر الأبيض المتوسط.\n\nيشكل التلوث الناجم عن الصرف خطراً على صحة السكان والثروة السمكية والقطاع السياحي في غزة. وتعكس الأزمة تردي البنية التحتية والموارد المائية في القطاع وسط الحصار والقيود المفروضة على دخول المواد والمعدات اللازمة لبناء محطات معالجة حديثة تتسع لاحتياجات السكان المتزايدة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/09/10/1117622",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T22:50:11+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/09/10/1117622",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4b87af5c97",
+ "score": 49.74,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "أزمة الصرف الصحي تلوّث مياه بحر غزة"
+}
