@@ -1,0 +1,39 @@
+{
+ "brief": "A settler attacked a Palestinian man with an amputated leg, the Ma'an news agency reported. The assault took place in the West Bank, where such incidents have become commonplace despite international condemnation of settler violence against Palestinian civilians.\n\nThe specific circumstances of the attack and its exact location were not immediately clear. Settler violence has escalated significantly over recent years, with Palestinians routinely subjected to confrontations and physical assaults across occupied West Bank communities. The incident underscores the vulnerability of disabled Palestinians navigating areas with limited protection from Israeli security forces.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/36705",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/west-bank-invasions-abductions-and-demolitions",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-10T07:17:05+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/cZuGdScVaJHnuLYTGkxqME7qwawzC-msctULv1Ofvu14Z_XPfKDrq7vvgjzVf3zdW3Y9JgC2Jjeog3J_2mYzt331-kQgWrwqPBmd0KiTfmlELq0nfDAifyBOTMfTgADtc6eOC0VShwbUDHVv2bKveYPQAs4k_HufIhL-xITmilhGqyW5Q-lTPl-UBlVj3ef0SAVqprQ4cCrC7VAqjV4u0HHmqxY6ejKif4b8Jjq5ENUlqzPCGhPYHFR5kKx0IgB860WwB_VmwQq-TrnfTm8mkoMd_iNKJcxrWJ_MUIp_UwSNbEe97-sq-vcE4HyPN8JqClKxHGYI1ZMl3B9gQtY9Eg",
+ "lang": "en",
+ "link": "https://t.me/maannews/36705",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/36705"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0ffbc434cc",
+ "score": 49.7,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settler attacks Palestinian amputee in West Bank"
+}

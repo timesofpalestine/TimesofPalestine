@@ -1,0 +1,33 @@
+{
+ "brief": "شنّت قوات الاحتلال الإسرائيلي حملة مداهمات وتفتيش طالت عدة منازل في بلدة قيرة بمحافظة سلفيت شمال الضفة الغربية، وفقاً للمركز الفلسطيني للإعلام. لم تُعلن السلطات الإسرائيلية حتى الآن عن تفاصيل العملية أو الأسباب الكامنة وراءها.\n\nتندرج هذه العملية ضمن سياق أوسع من المداهمات الأمنية المتكررة التي تنفذها قوات الاحتلال في مناطق متفرقة من الضفة الغربية، إذ تشهد المحافظات الشمالية، خاصة سلفيت، تكراراً ملحوظاً لمثل هذه الحملات. وتترافق هذه العمليات عادة مع عمليات بحث وتفتيش في منازل المواطنين.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/320462",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T07:37:14+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/320462",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f22dc21fce",
+ "score": 49.9,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قوات الاحتلال تداهم منازل في قيرة شمال سلفيت"
+}
