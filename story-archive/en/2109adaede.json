@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/world/2026/sep/10/secret-systems-used-by-israel-in-mass-killings-of-gaza-civilians-revealed-in-new-film",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/their-words-israeli-forces-describe-ai-backed-gaza-killing-new-film",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-10T13:42:20+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "2109adaede",
- "score": 61.18,
+ "score": 61.03,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
