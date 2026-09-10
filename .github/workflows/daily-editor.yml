@@ -148,6 +148,24 @@ jobs:
             a STALE line is a front-page hole, and the fix is a fresh
             story, never a wider window.
 
+            OUTBREAK RESPONSE (owner order 2026-09-06: Health & Healing is a
+            response desk — its articles answer the disease outbreaks actually
+            recorded in Palestinian areas). The build writes
+            dist/health-outbreaks.json: every outbreak signal the wire raised
+            (disease, zone, week, urgency) and whether a Health & Healing
+            original names it within ten days. EVERY signal listed under
+            "unanswered" is a same-day assignment ranked with the STALE
+            sections: file a bilingual RESPONSE piece — the recorded count
+            with its source and date (WHO, the Health Cluster, OCHA, UNRWA,
+            the Ministry of Health), what is driving it here, what treats or
+            prevents it with the stock and water the camps actually have, and
+            where a family goes — in the solutions register, attributed and
+            dated, never spectacle. A quiet watch is not a day off: check the
+            latest WHO oPt and OCHA situation reports for a rising disease the
+            wire missed. The response topics in topics.json
+            (health-response-*) are the desk's shelf; queue a new one per
+            disease as the record moves.
+
             QUEUE DEPTH (owner order 2026-08-16, permanent): the desk can
             only steer to a stale section while topics.json holds an
             unwritten topic for it — a dry queue is how a section starves.

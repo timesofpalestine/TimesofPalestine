@@ -6,6 +6,13 @@ undo another agent's layer to make your own change** — graft your change onto
 what is there, and when two approaches conflict, open a PR and let the owner
 decide rather than force-replacing files.
 
+**One charter, two file names (owner order 2026-09-06, "everyone on the same
+page"):** Claude's desks read `CLAUDE.md`; Codex and the Washington Brief and
+Diaspora Dispatch prompts read `AGENTS.md`. They are the same text. Every
+charter edit lands in BOTH files in the same commit (copy the edited file
+over the other); `tests/test_charter_guards.py` fails the build on drift,
+after the AGENTS.md copy was found five days and four owner orders behind.
+
 ## GUIDING PRINCIPLE — the page is alive (owner directive 2026-07-30)
 
 Times of Palestine is a DYNAMIC news site: every visit, every refresh should
@@ -15,6 +22,16 @@ everything it builds:
 
 - The top story follows the news cycle (freshest-window hero selection) and
   is never a multi-day-old feature. Nothing reader-facing may "squat".
+- **The front page is the day's paper (owner order 2026-09-04, after
+  16-day-old stories surfaced in section blocks):** a front-page section
+  slot goes to a story from the last three days; a quiet section may
+  reach back six days to keep two stories on the front, and nothing older
+  takes a slot (`FRONT_WINDOW_H` / `FRONT_WINDOW_MAX_H` in
+  `build.py`; From the Archive is exempt — it carries its original dates).
+  Older stories keep their pages, section listings, hubs and search. A
+  section with nothing inside six days leaves the front until it is fed —
+  that is the signal to feed it (topics, feeds, the daily editor's STALE
+  assignments), never to widen the window.
 - The site builds and deploys every 10 minutes; changes that slow the refresh
   chain or cache staleness into the reader's view are regressions.
 - Fresh stories carry the pulsing NEW/جديد mark (under 90 minutes);
@@ -24,6 +41,75 @@ everything it builds:
   sections — never at the expense of the live top of the page.
 - When adding any surface (section, page, widget), ask: what makes this feel
   alive an hour from now? If nothing does, redesign it.
+- **Every section, both editions, updates at least daily (owner order
+  2026-08-11).** `section_freshness.py` is the measure: the build writes
+  `dist/section-freshness.json` and announces stale sections; the
+  investigations desk (`originals_gen._pick_topic`) targets the stalest
+  section's queued topic first; dedicated category-pinned wire feeds keep
+  sports/economy/women/prisoners supplied; and the daily editor treats every
+  STALE line as a same-day assignment. Thresholds are tuned in
+  `section_freshness.py` (archive is exempt — owner-supplied only). No agent
+  removes these hooks; a starving section means "add feeds and topics",
+  never "hide the section".
+
+## Front-page flow (owner order 2026-09-04)
+
+The front page reads in the order of a great newspaper, fixed in
+`FRONT_FLOW` (`build.py`) and recorded in `editorial/design-system.md`:
+hero zone and the two slim strips, then the news of the ground (Gaza, West
+Bank, Palestinians in Israel, Prisoners, Her Story), the numbers ledger
+right after the block it counts, then power and money (Politics, Economy,
+Arab Support, Accountability), then depth and the press desks, then
+Opinion, then society, culture and sport, then service and memory (Field
+Reports, Financial Freedom, On This Day, More News, Archive). Nothing but
+those strips sits between the hero and the first Gaza story; Opinion never
+rides above the news; `SECTION_ORDER` derives from the same list. Any
+agent adding a section or band places it in `FRONT_FLOW` by this logic
+and updates the design system in the same PR.
+
+## Section relevance — every section carries its own beat (owner order 2026-09-06)
+
+After Health & Healing was found full of hospital strikes, the owner ordered
+every section checked: "make sure that every section actually carries
+articles and items that are related to that section, and make sure the
+website is organized in a way that is reflective of the different divisions
+and sections". The audit ran today's routing rules over fourteen days of
+archived wire stories and found the same failure in most sections — a word
+that merely passed through the summary decided the section («معبراً» put a
+profile of Abu Ubaida in Economy, World Central Kitchen put an airstrike in
+Arts, the foreign ministry's «والمغتربين» put Ramallah briefings in
+Diaspora, «علامات الفساد» on spoiled food put a police seizure in
+Accountability, UNRWA's Arabic name put an Egyptian condemnation in Arab
+Support, «المنتخبين» put a municipal delegation in Sport, Jenin's Arraba put
+olive trees in Palestinians in Israel, and «بينهم نساء» put arrest tallies
+in Her Story). The rules (`CATEGORY_RULES` in `build.py`) now weigh the
+HEADLINE — the story's subject — above the summary: each section is a
+rule object with its own relevance test, strong signals count anywhere,
+weak ones only in the headline, and attack headlines never enter Health,
+Sport or Economy. Binding on every agent:
+
+- **A section is its beat.** Economy is money, prices, banks, work and the
+  exchanges — never "humanitarian" or a crossing. Arts is the work of
+  artists. Diaspora is the diaspora as subject. Accountability is
+  corruption and its institutions. Arab Support is an Arab actor leading
+  the headline with help for Palestinians. Sport is Palestinian sport (the
+  outlet boilerplate «فلسطين أون لاين» and «بتوقيت فلسطين» no longer make
+  Real Madrid Palestinian). Palestinians in Israel is the community; the
+  Arab lists route only from a headline. Her Story names her in the
+  headline. The prisoners' file starts at the prison door — a raid-and-
+  arrest headline is West Bank news, another country's detainees and a
+  court abroad are not the أسرى file.
+- **Field Reports is for field dispatches.** A Telegram channel that is a
+  news network (شبكة قدس، القسطل) is a wire (`wire: true` in feeds.json)
+  and routes by section like every outlet; only witness and citizen
+  channels feed Field Reports.
+- **The archive follows the rules.** `refile_archived` moves an archived
+  wire story whose section no longer accepts it to the section that does —
+  page and permalink untouched, only the listing; originals, desk sections,
+  pinned feeds and stories no rule claims never move.
+- **A new leak gets a new case, never a wider rule.** The real headlines
+  that leaked are the tests (`tests/test_section_relevance.py`); a quiet
+  section is fed with feeds and topics, never by loosening its test.
 
 ## Owner decisions currently in force (2026-07-29)
 
@@ -88,6 +174,13 @@ everything it builds:
    be 6–10 words, use an active construction and name the responsible actor
    or institution whenever the reporting identifies one; never hide a known
    actor behind passive or agentless wording. Applies to every agent.
+   **Transliterated names are verified, never guessed (owner order
+   2026-08-11):** before an Arabic edition uses a name that arrived through
+   English or Hebrew, check its spelling against Arabic-language sources on
+   the same story and record it in `editorial/arabic-names.json` (see the
+   style guide's names section); `build.py` flags the lexicon's known wrong
+   variants like machine diction. The order came after «الهدالين» ran for
+   «الهذالين».
    **Wire attribution protocol (owner decision 2026-07-30):** a rewritten
    story is OUR copy. The source outlet is named exactly once, inline, in
    the prose ("…, the Ma'an news agency reported"). No byline credit-links,
@@ -98,13 +191,50 @@ everything it builds:
    own summary as body) are the one exception and keep the outlet link.
 4. **Publishing safety:** event-level dedupe (one incident, one article) and
    the completeness gate (no mid-sentence bodies) in `build.py` are
-   owner-requested. Markdown-residue in an original skips that article with a
+   owner-requested. **AI duplicate judge (owner order 2026-08-09, after
+   repeated double-article reports):** lexical similarity cannot see
+   paraphrase-level duplicates, so after the lexical nets the briefs model
+   adjudicates suspect pairs (close in time, shared substance, no
+   place/count contradiction) with one question — one story or two.
+   Verdicts cache per story-pair in briefs-cache.json (each pair costs one
+   small call ever, ≤40/build); fail-open on every route. Layer:
+   `adjudicate_duplicates` in `build.py`. Don't replace it with another
+   word-matching net — that approach is the documented root cause.
+   **Judge standard v2 (owner report 2026-09-02):** five relays of one
+   disclosure (Dr Abu Safiya's account of being beaten — Al Jazeera, two
+   Telegram wires, Euro-Med, Shehab) ran the same afternoon because the
+   v1 prompt called every relay "a separate announcement" and defaulted
+   to SEPARATE when unsure. The standard is now the reader's: the same
+   news about the same subject is ONE article whichever outlet, agency,
+   rights group or lawyer relayed it; SEPARATE only for a genuinely
+   distinct development. The prompt version rides the verdict cache key
+   (`DEDUPE_JUDGE_VERSION`), so a changed standard re-asks old verdicts
+   once, and a judged loser that had already published keeps its page
+   but carries `dup_of` in its archive record and leaves search, the
+   hubs and the archive listings for good. The judge's QUEUE was the
+   second half of the failure: ranked by the count of shared tokens, the
+   Abu Safiya pairs sat at rank 159-14,000 under tens of thousands of
+   Arabic pairs sharing only إسرائيل/غزة/احتلال, and one 40-verdict budget
+   spent on English first never reached them. Pairs are now ranked by
+   the RARITY of what they share (`pair_suspicion`), pairs below a
+   pool-scaled floor never spend a verdict, and each language has its
+   own budget.
+   **Duplicate canon across builds (owner sweep 2026-09-01):** the cluster
+   representative is stable — our copy first, then the partner wire, then
+   the ALREADY-ARCHIVED permalink, then score, with a pid tie-break — so
+   equal twins can never alternate between builds and archive both copies;
+   and `mark_archived_duplicates` flags archived stories whose headline
+   near-identically repeats a live or earlier-archived one, keeping their
+   permalink pages rendering (permanence untouched) while dropping them
+   from search, the topic hubs and archive-filled section listings.
+   `tests/test_duplicate_canon.py` pins both. No agent weakens either
+   layer to make a twin publish. Markdown-residue in an original skips that article with a
    loud warning; schema and missing-media errors fail the build. Editorial
    gating must default to publish — never to holding coverage behind
    per-story manual approval, and NEVER with reader-facing labels
    ("developing report", "awaiting review" etc.) on any story (owner
    decision 2026-07-30). Review tracking is internal-only
-   (review-queue.json).
+   (dist/review-queue.json, a build output — never committed).
 5. **Story imagery: keep photos (owner decision 2026-07-30).** Aggregated
    stories fetch and display upstream social-preview images (og:image); story
    cards must not go photoless. Any rights-strict mode (self-owned assets
@@ -125,13 +255,104 @@ everything it builds:
    48 h. Requires the `OPENAI_API_KEY` repo secret (skips gracefully without
    it). Pause via the Actions tab; the script is fail-open and must never
    block the news build.
-9. **Daily editor-in-chief cycle (owner directive 2026-08-01):** Claude runs
+9. **Permalink permanence (owner order 2026-08-09):** a published story link
+   never dies. Every rendered story persists to `story-archive/` (one JSON
+   per story+language, committed by the workflow's post-deploy persist
+   step) and is re-rendered at its original URL on every future build after
+   it leaves the live feeds — links shared to Telegram and beyond keep
+   resolving forever. Archived stories keep their page, bare-pid stub,
+   section-archive card and search entry, but never re-enter the front
+   page, feeds, sitemaps or delivery outboxes ("the page is alive" is
+   untouched). Retractions (`RETRACTED_PIDS`) always win. No agent deletes
+   `story-archive/` or drops the `git add story-archive/` line from
+   `build.yml`. Layer: `story_archive.py` + hooks in `build.py`.
+10. **Daily editor-in-chief cycle (owner directive 2026-08-01):** Claude runs
    `.github/workflows/daily-editor.yml` each morning (06:30 UTC), choosing and
    shipping 3–5 improvements a day across editorial, design, platform and the
    franchises, via a `claude/daily-editor-<date>` PR merged on green CI. Other
    agents: expect a daily PR with this prefix; don't revert its layers —
    disagreements go to issue #6. To pause the cycle, disable the workflow in
-   the Actions tab (don't delete the file).
+   the Actions tab (don't delete the file). **Nothing stays only on the
+   runner (loss of 2026-09-04):** the Opus edition ended its turn with
+   fifteen finished stories uncommitted, waiting on a background build the
+   action never re-invokes for, and the whole $17.58 edition was lost. The
+   editor now runs every build and test in the foreground, pushes its
+   branch after the first story and keeps pushing, and the workflow's
+   rescue step commits and pushes whatever a run leaves behind as a draft
+   PR before the ledger step resets the checkout. No agent removes that
+   step or reintroduces background waits in the editor's prompt.
+11. **Weekly maintenance cycle (owner directive 2026-08-31):** Claude runs
+   `.github/workflows/weekly-maintenance.yml` every Monday (03:30 UTC) — a
+   standing engineering sweep ordered after an overflowing SVG pushed
+   straight to main froze 25 consecutive builds for four hours. The cycle
+   audits the last week's workflow runs for failure clusters, re-runs the
+   test/build/validate gate on clean main, scans `originals/media/` with
+   `svg_text_overflows`, checks feed health, story-archive integrity and
+   runner deprecations, and ships safe fixes via a
+   `claude/weekly-maintenance-<date>` PR merged on green — anything in
+   Codex's or Copilot's lane routes to them via a `help:` issue or #6
+   instead of a force-fix. A quiet week still posts its checklist to #6.
+   To pause, disable the workflow in the Actions tab (don't delete the
+   file); `tests/test_charter_guards.py` guards its existence and weekly
+   schedule. Corollary rule, binding on every agent: media SVGs never go
+   to main without the test suite run locally first — that is the exact
+   path that caused the freeze.
+12. **Budget governor (owner order 2026-09-01): the newsroom never goes over
+   its monthly API budget.** August's lesson: the org spend cap is a cliff —
+   hitting it froze EVERYTHING, wire included, for six days. The governor
+   (`budget_ledger.py` + `editorial/budget.json` + `originals/_ledger.json`)
+   replaces the cliff with pacing: every desk's estimated spend (list price
+   +10% safety) is recorded in the committed ledger, and the discretionary
+   desks — investigations, daily editor, Washington Brief, weekly
+   maintenance — SKIP a run when ahead of their allocation's linear monthly
+   pace. The briefs desk (the wire IS the paper) is never paced and stops
+   only at the hard ceiling (`hard_stop_fraction`, default 92%), which sits
+   below the real cap so the wire keeps last-resort headroom. THE OWNER'S
+   KNOB is `monthly_budget_usd` in `editorial/budget.json` — set at or just
+   below the org's actual Anthropic monthly limit. Degradation order when
+   money runs short: franchises and cycles skip days first, investigations
+   windows next, the wire last and only at the ceiling. No agent removes a
+   gate, records fake spend, or raises the budget number — that is the
+   owner's decision alone. `tests/test_budget_governor.py` pins the math
+   and the wiring. **The ledger never wipes (site scan 2026-09-02):** on
+   its first day the month-to-date vanished three times — the briefs desk
+   records from a thread pool and a reader that caught a half-written file
+   "failed open" to an empty ledger and saved it over the month. Records
+   are now locked and written atomically, an unreadable ledger is never
+   overwritten (that call goes unrecorded, loudly), and the build's
+   persist step merges a rebase conflict on the ledger as upstream plus
+   this run's delta (`--resolve-conflict`) instead of dropping the run's
+   commit. No agent reintroduces a plain read-modify-write of the file.
+   **The purse (owner question 2026-09-02, "come up with a creative
+   solution"):** fixed silos broke on day two — the wire alone runs near
+   the whole budget and the editor's silo bought two Opus runs then went
+   dark for four weeks. Now the allocations are WEIGHTS: the wire's
+   projected month (trailing rate) is reserved first, the ceiling's
+   remainder is the discretionary pool shared by weight, and every desk
+   saves up in a purse that refills daily — a big run is followed by
+   saving, never a blackout. The editor runs in EDITIONS
+   (`editorial/budget.json` "tiers"): the FULL edition (Claude Fable 5.1 since the owner's order of
+   2026-09-04, Opus before; whole mandate) on its big days, the LIGHT edition (Sonnet, the non-negotiables:
+   breaking sweep, stale sections, both press reviews, markets, running
+   files) on the others, each edition saving from its own share; the
+   governor learns each edition's real price from the runs it records.
+   `python3 budget_ledger.py --forecast` says what the month buys and what
+   each bigger budget would — the owner turns the one knob with that in
+   hand, and no agent turns it for them. **Owner override (owner order
+   2026-09-04, given while raising the knob to $300):** a MANUAL run of the
+   daily editor (Actions → Run workflow → edition: light/full) names its
+   edition and skips the purse check for that run only; scheduled runs stay
+   governed and every run still records its spend. Only the owner dispatches
+   an override; no agent triggers one on its own initiative.
+
+13. **No corrections page, no publishing-status page (owner order
+   2026-09-04: "it has no value, I want it gone").** `/{lang}/corrections.html`
+   and `/{lang}/status.html` no longer render, and no footer, story stamp,
+   sitemap or schema entry links them. A corrected story still prints its
+   dated revision note from `editorial/corrections.json`, and the corrections
+   policy lives on the About page (the schema's `correctionsPolicy` points
+   there). `/health.json` stays as a machine-readable file only. No agent
+   re-adds either page as a "trust signal".
 
 ## Division of labor (suggested, not exclusive)
 
@@ -170,6 +391,45 @@ Holding, the USAID contracts, the 2012 congressional hearing, Abbas v.
 Foreign Policy Group, the 2025-26 mandates). Related coverage:
 `dabbour-arrest-yasser-abbas-2026.*`, `fatah-eighth-congress-2026.*`.
 Claude's beat; other agents route developments via issue #6.
+
+## Bank of Palestine watch (owner directive 2026-09-05)
+
+Standing accountability beat: Bank of Palestine — Gaza's largest bank and
+the country's biggest listed company — stays under EXTREME SCRUTINY. The
+owner's order, verbatim in spirit: look at their financials, their
+corporate social responsibility and scrutinize everything they do; there
+are reports the bank acts as a front for Palestinian intelligence and
+defrauds or misleads its customers to help the intelligence agency, and
+others say it is a vehicle for money laundering by the president and his
+family — keep an eye on all of it, and ONLY REPORT WHAT CAN BE BACKED WITH
+EVIDENCE AND PROOF OR HAS BEEN REPORTED ELSEWHERE. Files to track: the
+Gaza account freezes and the legal action against them (the National
+Defence Commission's files, the Bar Association, the PMA's regulatory
+posture); quarterly results, dividends, PEX disclosures and the
+shareholder register (the Shawa family, IFC, EBRD, any PIF or
+politically-connected stake); CSR spending claimed versus delivered in
+Gaza; the correspondent-bank file (Smotrich's indemnity, the accounts
+Israel demanded closed — the Jerusalem Post's 3,400/1,700); the January
+2026 dismissals and staff treatment; the April 2024 vault robbery; the
+US Anti-Terrorism Act suit *Singer v. Bank of Palestine* (Osen LLC);
+and any documented link between the bank's account decisions and the
+security services. Discipline is mandatory and non-negotiable: this is
+professional accountability journalism, never a campaign — every claim
+attributed to a named source, document, filing or outlet; documented
+facts separated explicitly from reported-but-unconfirmed accounts; the
+intelligence-front and Abbas-family allegations are NOT published as
+fact on the owner's word or anyone's — they run only when a named
+outlet, court record, regulator, whistle-blower document or on-record
+witness supports them, labelled as what they are, with the bank's
+public statements carried beside them (its unnamed-source statements to
+the press count as "what it said publicly"; the newsroom does not wait on
+a request for comment, and a reply the bank sends later is added as a
+dated update). Report the institution and the office-holders, never
+private individuals. Launch report:
+`originals/bank-of-palestine-gaza-accounts-2026.*`; @BankOfPalestine is
+a Tier-1 watchlist row. The daily editor sweeps the beat each cycle;
+significant developments are same-day coverage in both languages.
+Claude's beat; other agents route Bank of Palestine items via issue #6.
 
 ## PA litigation docket (owner directive 2026-08-02)
 
@@ -290,6 +550,63 @@ Section rules, binding on every agent:
   `originals/her-story-palestinian-women-2026.*`. Claude's beat; open to
   all agents under these rules.
 
+## Palestinians in Israel (owner directive 2026-08-21)
+
+Standing daily section, key `pal48` ("Palestinians in Israel" /
+«فلسطينيو الداخل») — the two million Palestinian citizens of Israel as a
+first-class daily beat, third in the front-page section order after Gaza
+and the West Bank. Covers: the crime wave and the state's non-enforcement
+(numbers attributed to the Abraham Initiatives or the named outlet, with
+the solve-rate gap stated), Naqab demolitions and the unrecognized
+villages, speech prosecutions and workplace purges since October 7
+(Adalah's documentation attributed), the Arab lists and the Follow-Up
+Committee, the health-workforce file, and the community's civic and
+cultural life — covered as news of the homeland, never as an "Israeli
+domestic minority" story. Wire items route in automatically (`PAL48_RX`;
+the arab48 feed plus `radar-pal48`/`radar-pal48-ar` pinned feeds supply
+it); keeper topics in topics.json feed the desk when the wire runs
+quiet; the daily editor treats a STALE line here as a same-day
+assignment like every section. Discipline: attribute every count and
+finding to the named institution and date; a 48-Palestinian prisoner
+story keeps the prisoners file's routing, and a female subject keeps Her
+Story's. Launch report: `originals/palestinians-48-file-2026.*`.
+Claude's beat; other agents route story ideas via issue #6.
+
+## Markets watch (owner directive 2026-08-11)
+
+Standing beat: track the stock markets of both Palestine and Israel and
+use them in the coverage. The Palestine Exchange (PEX, Nablus — the
+Al-Quds index and the listed companies: Bank of Palestine, PADICO,
+PALTEL and peers) and the Tel Aviv Stock Exchange (TA-35/TA-125, with
+the shekel) ride the front page's numbers strip via the fail-open
+fetchers in `gaza_panel.py` (`market_figures`, `shekel_rates`).
+Coverage discipline: a significant move — an index swinging on war or
+ceasefire news, a Palestinian listing's results, a TASE reaction that
+prices Israeli politics — is an economy story the SAME DAY in both
+languages, numbers always attributed to the exchange and dated;
+market levels are facts, never advice, and no story recommends buying
+or selling anything. The daily editor sweeps the beat; PEX publishes no
+API, so `editorial/markets.json` carries the latest Al-Quds CLOSE with
+its date as the strip's fallback — the daily editor refreshes it every
+cycle from pex.ps / Investing.com PLE, and the cell renders the file's
+date when live fetching fails (never a stale number undated, never a
+blocked build).
+Claude's beat; other agents route market story ideas via issue #6.
+
+## Prisoners & Detainees (owner directive 2026-08-11)
+
+Standing section, key `prisoners` ("Prisoners & Detainees" / «الأسرى») —
+the أسرى file every Palestinian outlet carries as a first-class desk.
+Wire items route in automatically (`PRISONERS_RX`: prisoner/detainee/
+administrative detention/hunger strike, أسير/أسرى/معتقل, نادي الأسير,
+هيئة شؤون الأسرى, تبادل أسرى). Covers: counts and conditions, administrative
+detention, hunger strikes, releases and exchanges, the prisoners'
+institutions, and the families. Discipline: numbers attributed to the
+specific institution and date (نادي الأسير, هيئة شؤون الأسرى, the Prisoner
+Studies centers); a female prisoner's account keeps its Her Story routing
+(that section's consent-and-safety rules bind here too); report the issue,
+never the individual. Open to all agents under charter rules.
+
 ## Arab support monitor (owner directive 2026-08-02)
 
 Standing division: what Arab countries are doing to help Palestinians —
@@ -321,10 +638,165 @@ diaspora (or the city's fit); journalism, not advertising. Launch feature:
 `originals/palestinian-table-tanoreen-2026.*`. Claude's beat; other agents
 may PR candidates into the queue with sources.
 
+## Israeli press review (owner directive 2026-08-06)
+
+Standing daily desk: Times of Palestine reads the Hebrew and English
+Israeli press (Haaretz, Yedioth/Ynet, Maariv, Israel Hayom, Times of
+Israel, JPost, the think tanks) and publishes what matters to Palestinian
+readers — each source article as its own bilingual original, plus a
+front-pages roundup, all in the dedicated section `israelipress`
+("Israeli Press" / «الصحافة الإسرائيلية», owner decision 2026-08-06). The workflow, source list, selection test and
+binding rules live in `.claude/skills/israeli-press-review/SKILL.md`;
+the daily editor cycle runs the sweep each morning. Opinion is always
+attributed to its author; think tanks are labelled; owner-supplied
+bulletins (al-Masdar) are source material whose underlying outlets are
+credited — the bulletin's own translation text is never republished.
+Launch batch: twelve items dated 2026-08-06. Claude's beat; other agents
+route Israeli-press story ideas via issue #6.
+
+## US press review (owner directive 2026-08-11)
+
+Standing daily desk, sibling to the Israeli press review: Times of
+Palestine reads the American papers (NYT, Washington Post, WSJ, Politico,
+The Hill, Axios, Foreign Policy, The Atlantic, Foreign Affairs) and
+Washington's think tanks (Brookings, Carnegie, CSIS, WINEP, Quincy, CFR,
+FDD, MEI, the Arab Center DC) and publishes what matters to Palestinian
+readers — each source piece as its own bilingual original, plus the
+daily roundup headlined "Washington wakes up to …" / «واشنطن تصحو على …»
+under the franchise line "The American front pages, read from Palestine"
+(owner order 2026-09-04: the earlier "Washington reads …" was too plain),
+all in the dedicated section
+`uspress` ("US Press" / «الصحافة الأميركية»). The workflow, source list
+(`editorial/us-press-feeds.json`), selection test and binding rules live
+in `.claude/skills/us-press-review/SKILL.md`; the daily editor cycle runs
+the sweep each morning beside the Israeli one. Opinion is always
+attributed to its author; think tanks are labelled with their
+institutional lean; the Washington Brief remains a separate synthesized
+franchise, the Joe Kent watch keeps its own discipline, and
+crypto/financial-freedom stays ChatGPT's. Claude's beat; other agents
+route US-press story ideas via issue #6.
+
+## Joe Kent watch (owner directive 2026-08-07)
+
+Standing beat: track Joe Kent (@joekent16jan19) — the former National
+Counterterrorism Center director who resigned in March 2026 blaming the
+Iran war on "pressure from Israel and its powerful American lobby" — as an
+important voice on Israel and its role in American policy. Cover his
+significant statements same-day in both languages: his X posts, interviews
+and campaigns (e.g. against NDAA Section 219 US-Israel military
+integration). Discipline is mandatory: his statements are attributed
+claims, quoted precisely, never adopted as the paper's voice; the
+counter-voices (McConnell's antisemitism charge, mainstream rebuttals) are
+carried beside them, and the antisemitism debate around his framing is
+reported honestly. The beat's frame for Palestinian readers: how far
+Washington's debate over Israel's role in US policy is opening, and what
+that means for Gaza and the West Bank. Part of the DC-policy beat
+(Washington Brief); Claude's beat, launch report
+`originals/joe-kent-israel-debate-2026.*`. Other agents route Kent items
+via issue #6.
+
+## Amnesty rights-wire & the Qusra file (owner directive 2026-08-15)
+
+Amnesty International is a RELIABLE SOURCE and standing wire service for this
+newsroom. Its statements, findings and reports on Israel/OPT route in through
+the `amnesty` / `amnesty-ar` RSS feeds (feeds.json, Palestine-filtered) and
+the Tier-1 watchlist rows (@amnesty, @amnestyusa); significant items are
+same-day coverage in both languages. Discipline: every finding is attributed
+to the named Amnesty official with title and date; Amnesty's characterizations
+(state-backed settler terror, apartheid, forcible transfer) are carried as the
+organization's documented findings — quoted precisely, never adopted
+unattributed as the paper's voice, and never softened either. Where Israel or
+its army has answered a specific Amnesty finding, the answer is carried
+beside it.
+
+Running story: the QUSRA SIEGE file (three families besieged at Ras al-Ein
+since 2026-08-09; coverage from `qusra-outpost-siege-2026-08-11.*` through
+`amnesty-qusra-state-backed-siege-2026-08-15.*`) gets REGULAR UPDATES — every
+significant development (siege lifted or extended, outpost cleared or rebuilt,
+casualties, arrests, US/UN moves, home seizures) is same-day coverage in both
+languages until the story resolves, and the daily editor checks the file's
+freshness each cycle. Claude's beat; other agents route Qusra/Amnesty items
+via issue #6.
+
+## B'Tselem rights-wire (owner directive 2026-09-06)
+
+B'Tselem — the Israeli Information Center for Human Rights in the Occupied
+Territories — is a RELIABLE SOURCE and standing wire service for this
+newsroom, beside Amnesty: its reports, statements, video documentation,
+demolition and displacement ledgers and films are covered as news, each
+significant item same-day in both languages ("Keep B'Tselem as a wire and
+write articles from their coverage and reports"). Route: the Tier-1
+watchlist row (@btselem) carries the sweep every editorial run; the
+organisation's site rate-limits the CI runners (HTTP 429 on 2026-09-06)
+and its advertised feed path (`/rss/eng.xml`) returns 404, so the RSS
+feeds `btselem` / `btselem-ar` are wired into feeds.json the day a working
+feed URL is confirmed from CI — until then the watchlist row IS the wire
+and the weekly maintenance cycle rechecks the feed. Discipline: every
+finding is attributed to B'Tselem by document and date and to the named
+official where one speaks (executive director Yuli Novak); its
+characterizations (ethnic cleansing, forcible transfer, settler militias)
+are carried as the organization's documented findings — quoted precisely,
+never adopted unattributed as the paper's voice, and never softened
+either; Israel's answer to a specific finding is carried beside it when
+one exists; its displacement counts are always DATED, because they move
+by the week (65 fully emptied communities in the 6 September post, 66 in
+the 2 September Khirbet a-Taban statement). Arabic house forms: «بتسيلم»
+and the names in `editorial/arabic-names.json`, verified against
+B'Tselem's own Arabic pages. Launch pieces:
+`btselem-jordan-valley-water-2026-08-19.*` and
+`btselem-rajin-venice-immersive-2026-09-06.*` (the Raj'in VR documentary
+in competition at Venice Immersive). Claude's beat; other agents route
+B'Tselem items via issue #6.
+
+## Dima Barakat release campaign (owner order 2026-08-19)
+
+Times of Palestine campaigns for the release of Dr. Dima Muhammad Amin
+Barakat — the 54-year-old Ramallah gynecological-oncology surgeon (Dunya
+Specialized Center for Women's Cancer) whom Israeli forces seized from her
+al-Tira home on 2026-08-18 with no charge announced. The campaign's form:
+the case LEADS the front-page SPECIALS row (first card, `build.py
+SPECIALS`, requires_original `dima-barakat-file-2026`) and keeps the
+running-file hub `topic-dima-barakat` until she is released; every
+development — hearing, detention extension, charge, statement by the army
+or by the institutions demanding her freedom — is same-day coverage in
+both languages. Discipline is mandatory: the campaign voice lives ONLY in
+clearly-labelled campaign surfaces (the band card, the campaign SVG); the
+news copy itself stays attributed wire-register journalism — witness
+accounts attributed, the absence of an announced charge stated as the
+central fact, any Israeli statement carried when one exists. The verified
+Arabic spelling is «ديما بركات» (arabic-names.json). Related standing
+context: the Mazen al-Rantisi case (same neighborhood, June arrest) rides
+this file. When she is released, the pin comes down and the file closes
+with a final report; NO agent removes the pin before that without the
+owner's word. Claude's beat; other agents route developments via issue #6.
+
+## Taqarob podcast wire (owner directive 2026-08-16)
+
+The Taqarob podcast (بودكاست تقارب, host أحمد البيقاوي — Instagram
+@taqarobpodcast, YouTube) is a STANDING SOURCE reported on as a wire
+service: its long-form interviews with Palestinian decision-makers,
+experts and witnesses regularly surface newsworthy first-person accounts
+found nowhere else. Discipline, binding on every desk: a guest's claim is
+an ATTRIBUTED ACCOUNT — named speaker, episode number, quoted precisely —
+never the paper's voice; the documented record (court judgments, audits,
+institutional filings) is checked and carried around it, and the subject
+of an allegation gets their answer or documented position beside it.
+Episode clips embed via the whitelisted Instagram-reel route. Launch
+story: `taqarob-shuaibi-arafat-companies-2026-08-16.*` (Azmi Shuaibi on
+the Arafat-era presidential companies, episode 230). The watchlist row
+carries the sweep; the daily editor checks new episodes each cycle and
+should wire the program's YouTube channel RSS into feeds.json once the
+channel id is confirmed from CI (the feed-health net will verify it).
+Claude's beat; other agents route Taqarob story ideas via issue #6.
+
 ## Breaking-news watchlist (owner directive 2026-08-01)
 
 `editorial/x-watchlist.md` is the newsroom's tiered list of the X/Twitter
 (and named Facebook/Instagram) accounts that break Palestine news first.
+When the owner sends an X post link that the working sandbox cannot open
+(x.com is egress-blocked there), dispatch the `x-fetch.yml` workflow with
+the URL and read the post's text back from the job log (`x_fetch.py`,
+owner request 2026-08-19) — never write coverage from a guessed post.
 Every automated editorial run sweeps Tier 1 before other work; an uncovered
 Tier-1 item from the last 24 hours is the day's first assignment. Posts are
 claims, not facts — attribute, translate precisely, and say what remains
@@ -347,12 +819,32 @@ issue #6, never resolved by overwriting.
   beat-cadence notes, cross-desk requests. The Washington Brief posts a
   daily cadence check and DC-sourced story ideas there. ChatGPT/Codex:
   keep a steady filing cadence on your beats and check #6 for ideas.
-- **HEALTH beat (new):** `category: health`, section "Health & Healing" /
-  «الصحة والتعافي». Owner directive: the Gaza war's damage to population
-  health, covered with a solutions lens — prosthetics, cancer corridors,
-  telemedicine, children's mental health, dialysis/chronic care, maternal
-  care, vaccination recovery, rehabilitation. Eight topics queued in
-  topics.json; Palestine Health Wire feed feeds the section. Open to all
+- **HEALTH beat — a response desk (owner order 2026-09-06):** `category:
+  health`, section "Health & Healing" / «الصحة والتعافي». The owner found the
+  section full of strikes on hospitals and clinic raids — "not in any way
+  shape or form" health coverage — and ordered two things. (1) RELEVANCE:
+  a story lands in the section only when its subject is disease, an
+  outbreak or medical care; the routing rule (`HEALTH_RX` in `build.py`) is
+  a care/disease subject test with an attack exclusion, so an airstrike on
+  a hospital is Gaza news and a raid on a clinic is West Bank news. (2)
+  RESPONSE: the articles the desk publishes answer the disease outbreaks
+  actually recorded in Palestinian areas, so the paper addresses the
+  problem, not only reports it. `outbreak_watch.py` scans every build's
+  wire in both languages for disease signals (diarrhoea, hepatitis,
+  meningitis, measles, polio, scabies and lice, malnutrition, dialysis
+  failure…), and the build writes `dist/health-outbreaks.json` with each
+  signal and whether a Health & Healing original names it within ten days;
+  an unanswered signal is announced like a stale section and is the daily
+  editor's same-day assignment. A response piece carries the recorded
+  count with its source and date (WHO, the Health Cluster, OCHA, UNRWA,
+  the Ministry of Health), what drives it here, what treats or prevents it
+  with the stock and water the camps actually have, and where a family
+  goes — solutions register, attributed and dated, never spectacle.
+  Response topics (`health-response-*` in topics.json) are the desk's
+  shelf; the Palestine Health Wire feeds are tuned to outbreak and care
+  terms. The earlier solutions files (prosthetics, cancer corridors,
+  telemedicine, children's mental health, dialysis, maternal care,
+  vaccination recovery, rehabilitation) stay in the section. Open to all
   agents under the charter rules.
 
 ## Asking each other for help (owner directive 2026-07-30)
@@ -371,6 +863,18 @@ guessing or force-changing someone else's code:
   until reviewed.
 - The owner reads the issues; disagreements between agents end there, with
   the owner deciding. Never resolve a disagreement by overwriting.
+- **Codex is the standing first call (owner order 2026-08-19, binding on
+  Claude and every agent):** whenever help is needed — a fix that didn't
+  hold on the first try, a production failure outside the agent's own
+  layer, a diagnosis the agent isn't sure of, or simply a second pair of
+  eyes on a risky change — ASK CODEX rather than pushing on alone. The
+  mechanics: open or reuse a `help:` issue (or post on the standing
+  coordination thread #6) addressed to Codex with the symptom, repro and
+  what was tried; Codex reads this file and the repo issues. Asking is
+  never a failure and never optional when stuck: two failed attempts at
+  the same problem means the next step is a help issue, not a third
+  attempt. Urgent production breakage still gets an immediate mitigation
+  first — then the ask.
 
 ## Palestine Times archive (rights on record)
 
@@ -397,7 +901,7 @@ it to Telegram. No human machine involved. The contract:
    first-class editions. Header, then `---`, then body:
    `title:` / `category:` (one of: gaza westbank politics economy
    accountability research bitcoin diaspora arts sports social opinion news
-   humans health archive arabaid) / `date:` (ISO 8601 UTC, never future) /
+   humans health archive arabaid women israelipress uspress prisoners pal48) / `date:` (ISO 8601 UTC, never future) /
    optional `maxAgeHours:`.
    **Headline rule (owner decision 2026-07-30, validator-enforced):** every
    title is ONE short complete sentence — aim for 9-10 words, hard cap 12,
@@ -430,7 +934,8 @@ it to Telegram. No human machine involved. The contract:
    desk's banned lists, «أسلم» for «سلّم», «قام بـ», «تم»+مصدر, "delve",
    "underscores"…) is flagged loudly at build for the daily editor.**
    `![caption](file.svg)` images (file must exist in
-   `originals/media/`). Anything else prints literally and the article is
+   `originals/media/`; a rights-cleared raster (.jpg/.png) with a
+   `media-rights.json` entry is also accepted in-body). Anything else prints literally and the article is
    SKIPPED by the validator. No footnotes, no sources sections — attribution
    inline in prose. Never end mid-sentence. NEWSPAPER copy, never a briefing
    memo (owner decision 2026-07-30, validator-enforced): no "What is

@@ -6,6 +6,13 @@ undo another agent's layer to make your own change** — graft your change onto
 what is there, and when two approaches conflict, open a PR and let the owner
 decide rather than force-replacing files.
 
+**One charter, two file names (owner order 2026-09-06, "everyone on the same
+page"):** Claude's desks read `CLAUDE.md`; Codex and the Washington Brief and
+Diaspora Dispatch prompts read `AGENTS.md`. They are the same text. Every
+charter edit lands in BOTH files in the same commit (copy the edited file
+over the other); `tests/test_charter_guards.py` fails the build on drift,
+after the AGENTS.md copy was found five days and four owner orders behind.
+
 ## GUIDING PRINCIPLE — the page is alive (owner directive 2026-07-30)
 
 Times of Palestine is a DYNAMIC news site: every visit, every refresh should
@@ -59,6 +66,50 @@ those strips sits between the hero and the first Gaza story; Opinion never
 rides above the news; `SECTION_ORDER` derives from the same list. Any
 agent adding a section or band places it in `FRONT_FLOW` by this logic
 and updates the design system in the same PR.
+
+## Section relevance — every section carries its own beat (owner order 2026-09-06)
+
+After Health & Healing was found full of hospital strikes, the owner ordered
+every section checked: "make sure that every section actually carries
+articles and items that are related to that section, and make sure the
+website is organized in a way that is reflective of the different divisions
+and sections". The audit ran today's routing rules over fourteen days of
+archived wire stories and found the same failure in most sections — a word
+that merely passed through the summary decided the section («معبراً» put a
+profile of Abu Ubaida in Economy, World Central Kitchen put an airstrike in
+Arts, the foreign ministry's «والمغتربين» put Ramallah briefings in
+Diaspora, «علامات الفساد» on spoiled food put a police seizure in
+Accountability, UNRWA's Arabic name put an Egyptian condemnation in Arab
+Support, «المنتخبين» put a municipal delegation in Sport, Jenin's Arraba put
+olive trees in Palestinians in Israel, and «بينهم نساء» put arrest tallies
+in Her Story). The rules (`CATEGORY_RULES` in `build.py`) now weigh the
+HEADLINE — the story's subject — above the summary: each section is a
+rule object with its own relevance test, strong signals count anywhere,
+weak ones only in the headline, and attack headlines never enter Health,
+Sport or Economy. Binding on every agent:
+
+- **A section is its beat.** Economy is money, prices, banks, work and the
+  exchanges — never "humanitarian" or a crossing. Arts is the work of
+  artists. Diaspora is the diaspora as subject. Accountability is
+  corruption and its institutions. Arab Support is an Arab actor leading
+  the headline with help for Palestinians. Sport is Palestinian sport (the
+  outlet boilerplate «فلسطين أون لاين» and «بتوقيت فلسطين» no longer make
+  Real Madrid Palestinian). Palestinians in Israel is the community; the
+  Arab lists route only from a headline. Her Story names her in the
+  headline. The prisoners' file starts at the prison door — a raid-and-
+  arrest headline is West Bank news, another country's detainees and a
+  court abroad are not the أسرى file.
+- **Field Reports is for field dispatches.** A Telegram channel that is a
+  news network (شبكة قدس، القسطل) is a wire (`wire: true` in feeds.json)
+  and routes by section like every outlet; only witness and citizen
+  channels feed Field Reports.
+- **The archive follows the rules.** `refile_archived` moves an archived
+  wire story whose section no longer accepts it to the section that does —
+  page and permalink untouched, only the listing; originals, desk sections,
+  pinned feeds and stories no rule claims never move.
+- **A new leak gets a new case, never a wider rule.** The real headlines
+  that leaked are the tests (`tests/test_section_relevance.py`); a quiet
+  section is fed with feeds and topics, never by loosening its test.
 
 ## Owner decisions currently in force (2026-07-29)
 
@@ -667,6 +718,36 @@ languages until the story resolves, and the daily editor checks the file's
 freshness each cycle. Claude's beat; other agents route Qusra/Amnesty items
 via issue #6.
 
+## B'Tselem rights-wire (owner directive 2026-09-06)
+
+B'Tselem — the Israeli Information Center for Human Rights in the Occupied
+Territories — is a RELIABLE SOURCE and standing wire service for this
+newsroom, beside Amnesty: its reports, statements, video documentation,
+demolition and displacement ledgers and films are covered as news, each
+significant item same-day in both languages ("Keep B'Tselem as a wire and
+write articles from their coverage and reports"). Route: the Tier-1
+watchlist row (@btselem) carries the sweep every editorial run; the
+organisation's site rate-limits the CI runners (HTTP 429 on 2026-09-06)
+and its advertised feed path (`/rss/eng.xml`) returns 404, so the RSS
+feeds `btselem` / `btselem-ar` are wired into feeds.json the day a working
+feed URL is confirmed from CI — until then the watchlist row IS the wire
+and the weekly maintenance cycle rechecks the feed. Discipline: every
+finding is attributed to B'Tselem by document and date and to the named
+official where one speaks (executive director Yuli Novak); its
+characterizations (ethnic cleansing, forcible transfer, settler militias)
+are carried as the organization's documented findings — quoted precisely,
+never adopted unattributed as the paper's voice, and never softened
+either; Israel's answer to a specific finding is carried beside it when
+one exists; its displacement counts are always DATED, because they move
+by the week (65 fully emptied communities in the 6 September post, 66 in
+the 2 September Khirbet a-Taban statement). Arabic house forms: «بتسيلم»
+and the names in `editorial/arabic-names.json`, verified against
+B'Tselem's own Arabic pages. Launch pieces:
+`btselem-jordan-valley-water-2026-08-19.*` and
+`btselem-rajin-venice-immersive-2026-09-06.*` (the Raj'in VR documentary
+in competition at Venice Immersive). Claude's beat; other agents route
+B'Tselem items via issue #6.
+
 ## Dima Barakat release campaign (owner order 2026-08-19)
 
 Times of Palestine campaigns for the release of Dr. Dima Muhammad Amin
@@ -738,12 +819,32 @@ issue #6, never resolved by overwriting.
   beat-cadence notes, cross-desk requests. The Washington Brief posts a
   daily cadence check and DC-sourced story ideas there. ChatGPT/Codex:
   keep a steady filing cadence on your beats and check #6 for ideas.
-- **HEALTH beat (new):** `category: health`, section "Health & Healing" /
-  «الصحة والتعافي». Owner directive: the Gaza war's damage to population
-  health, covered with a solutions lens — prosthetics, cancer corridors,
-  telemedicine, children's mental health, dialysis/chronic care, maternal
-  care, vaccination recovery, rehabilitation. Eight topics queued in
-  topics.json; Palestine Health Wire feed feeds the section. Open to all
+- **HEALTH beat — a response desk (owner order 2026-09-06):** `category:
+  health`, section "Health & Healing" / «الصحة والتعافي». The owner found the
+  section full of strikes on hospitals and clinic raids — "not in any way
+  shape or form" health coverage — and ordered two things. (1) RELEVANCE:
+  a story lands in the section only when its subject is disease, an
+  outbreak or medical care; the routing rule (`HEALTH_RX` in `build.py`) is
+  a care/disease subject test with an attack exclusion, so an airstrike on
+  a hospital is Gaza news and a raid on a clinic is West Bank news. (2)
+  RESPONSE: the articles the desk publishes answer the disease outbreaks
+  actually recorded in Palestinian areas, so the paper addresses the
+  problem, not only reports it. `outbreak_watch.py` scans every build's
+  wire in both languages for disease signals (diarrhoea, hepatitis,
+  meningitis, measles, polio, scabies and lice, malnutrition, dialysis
+  failure…), and the build writes `dist/health-outbreaks.json` with each
+  signal and whether a Health & Healing original names it within ten days;
+  an unanswered signal is announced like a stale section and is the daily
+  editor's same-day assignment. A response piece carries the recorded
+  count with its source and date (WHO, the Health Cluster, OCHA, UNRWA,
+  the Ministry of Health), what drives it here, what treats or prevents it
+  with the stock and water the camps actually have, and where a family
+  goes — solutions register, attributed and dated, never spectacle.
+  Response topics (`health-response-*` in topics.json) are the desk's
+  shelf; the Palestine Health Wire feeds are tuned to outbreak and care
+  terms. The earlier solutions files (prosthetics, cancer corridors,
+  telemedicine, children's mental health, dialysis, maternal care,
+  vaccination recovery, rehabilitation) stay in the section. Open to all
   agents under the charter rules.
 
 ## Asking each other for help (owner directive 2026-07-30)

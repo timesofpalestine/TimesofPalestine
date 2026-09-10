@@ -143,5 +143,26 @@ class FeedConfigTest(unittest.TestCase):
                 seen.add(feed["id"])
 
 
+class CharterMirrorTest(unittest.TestCase):
+    """The charter has two file names and one text.
+
+    Claude's desks read CLAUDE.md; Codex reads AGENTS.md, and the Washington
+    Brief and Diaspora Dispatch prompts tell their desks to read AGENTS.md.
+    On 2026-09-06 the AGENTS.md copy was found five days and four owner
+    orders behind (the front-page window, the purse editions, the
+    corrections-page removal, the Bank of Palestine watch) — the agents were
+    literally not on the same page. Every charter edit lands in both files
+    in the same commit; this guard turns drift into a red build.
+    """
+
+    def test_agents_md_mirrors_claude_md(self):
+        claude = (ROOT / "CLAUDE.md").read_text(encoding="utf-8")
+        agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
+        self.assertEqual(
+            agents, claude,
+            "AGENTS.md and CLAUDE.md differ — the charter is one text under "
+            "two names; copy the edited file over the other in the same PR")
+
+
 if __name__ == "__main__":
     unittest.main()

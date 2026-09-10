@@ -685,6 +685,82 @@
    "verified": "alresalah.news + daraj.media + euromedmonitor.org/ar, 2026-09-05"
   },
   {
+   "latin": "Faiz Abu Rmeleh",
+   "ar": "فايز أبو رميلة",
+   "wrong": [
+    "أبو رميله",
+    "أبو رمالة",
+    "أبو رميلى"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html + alquds.com (Ahmad Jalajel, 2026-07-16), 2026-09-06"
+  },
+  {
+   "latin": "Keren Manor",
+   "ar": "كيرن مانور",
+   "wrong": [
+    "ماينور",
+    "كيرين مانور"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html (the organisation's own Arabic credits), 2026-09-06; alquds.com wrote «كيرين ماينور» — house form follows B'Tselem"
+  },
+  {
+   "latin": "'Alya Mleihat",
+   "ar": "علياء مليحات",
+   "wrong": [
+    "عليا مليحات",
+    "المليحات"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html, 2026-09-06"
+  },
+  {
+   "latin": "Jaber 'Ali Dababseh",
+   "ar": "جابر علي دبابسة",
+   "wrong": [
+    "دبابسه",
+    "الدبابسة"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html, 2026-09-06"
+  },
+  {
+   "latin": "Hreizat family (Jamal Hreizat)",
+   "ar": "حريزات",
+   "wrong": [
+    "هريزات",
+    "حرزات"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html, 2026-09-06"
+  },
+  {
+   "latin": "Yuli Novak",
+   "ar": "يولي نوفاك",
+   "wrong": [
+    "يولي نوفاق",
+    "جولي نوفاك"
+   ],
+   "verified": "btselem.org/arabic usage (executive director), 2026-09-06 — recheck against an Arabic wire on her next statement"
+  },
+  {
+   "latin": "Ehab Tarabieh",
+   "ar": "إيهاب طربيه",
+   "wrong": [
+    "طرابية",
+    "طرابيه"
+   ],
+   "verified": "btselem.org/we-shall-return/ar.html, 2026-09-06"
+  },
+  {
+   "latin": "Luke Buckmaster",
+   "ar": "لوك باكماستر",
+   "wrong": [],
+   "verified": "unverified — recheck"
+  },
+  {
+   "latin": "Paul Raphaël",
+   "ar": "بول رافاييل",
+   "wrong": [],
+   "verified": "unverified — recheck"
+  },
+  {
    "latin": "Jeffrey Gedmin",
    "ar": "جيفري غدمن",
    "wrong": [
@@ -712,6 +788,51 @@
     "رويس لامبرت"
    ],
    "verified": "ajnet.me 2025-04-23 + alaraby.co.uk (Arabic usage split with «لامبيرث»; house form fixed for consistency), 2026-09-07"
+  },
+  {
+   "latin": "Shlomi Eldar (Haaretz journalist)",
+   "ar": "شلومي إلدار",
+   "wrong": [
+    "شلومي الدار",
+    "شلومي إلدر"
+   ],
+   "verified": "arabi21 + alquds.co.uk + almodon Haaretz UAE-warning coverage, 2026-09-10"
+  },
+  {
+   "latin": "Ruth Yuval (Haaretz journalist)",
+   "ar": "روث يوفال",
+   "wrong": [
+    "روت يوفال",
+    "روث يوبال"
+   ],
+   "verified": "shehabnews Likud criminal-probe coverage, 2026-09-10"
+  },
+  {
+   "latin": "Uri Misgav (Haaretz columnist)",
+   "ar": "أوري مسغاف",
+   "wrong": [
+    "أوري ميسغاف",
+    "أوري مسجاف"
+   ],
+   "verified": "aljazeera.net + alquds.com + qudsn.co, 2026-09-10"
+  },
+  {
+   "latin": "Noam Sohlberg (Central Elections Committee chair)",
+   "ar": "نوعام سولبرغ",
+   "wrong": [
+    "نوعم سولبرغ",
+    "نوعام سولبرج"
+   ],
+   "verified": "masrawy + sonara.net + rtarabic elections-committee coverage, 2026-09-10"
+  },
+  {
+   "latin": "Dimitri Diliani (Democratic Reform Current spokesman)",
+   "ar": "ديمتري دلياني",
+   "wrong": [
+    "دمتري دلياني",
+    "ديميتري دلياني"
+   ],
+   "verified": "fatehgaza.com + alkofiya + msdrnews, 2026-09-10"
   }
  ]
 }

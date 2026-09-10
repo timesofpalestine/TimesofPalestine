@@ -726,6 +726,32 @@ class PrisonersSectionTests(unittest.TestCase):
                    "dek": "شهادة من داخل سجن الدامون."})
         self.assertEqual(build.categorize(it), "women")
 
+    def test_health_section_takes_disease_and_care_not_attacks(self):
+        """Owner order 2026-09-06: Health & Healing is a response desk. A
+        strike on a hospital is Gaza news; a doubling diarrhoea count is
+        Health, in both languages."""
+        strike = item()
+        strike.update({"title": "Israeli airstrike hits Nasser hospital in Khan Younis",
+                       "dek": "Doctors say patients were killed in the ward.",
+                       "categories": []})
+        self.assertNotEqual(build.categorize(strike), "health")
+        self.assertEqual(build.categorize(strike), "gaza")
+        raid = item()
+        raid.update({"lang": "ar", "categories": [],
+                     "title": "قوات الاحتلال تقتحم مستشفى في جنين وتعتقل طبيباً",
+                     "dek": "اقتحام جديد لمستشفى في الضفة."})
+        self.assertNotEqual(build.categorize(raid), "health")
+        outbreak = item()
+        outbreak.update({"title": "WHO says acute watery diarrhoea cases in Gaza nearly doubled",
+                         "dek": "Water contamination rose from 6 to 18 percent.",
+                         "categories": []})
+        self.assertEqual(build.categorize(outbreak), "health")
+        care = item()
+        care.update({"lang": "ar", "categories": [],
+                     "title": "وزارة الصحة تطلق حملة تطعيم ضد شلل الأطفال في غزة",
+                     "dek": "الحملة تستهدف الأطفال دون العاشرة."})
+        self.assertEqual(build.categorize(care), "health")
+
     def test_prisoners_section_renders_on_the_front(self):
         built_at = datetime(2026, 8, 11, 12, tzinfo=timezone.utc)
         base = item()
