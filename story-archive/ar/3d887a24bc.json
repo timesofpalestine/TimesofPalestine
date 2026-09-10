@@ -1,0 +1,39 @@
+{
+ "brief": "أطلقت آليات إسرائيلية النار في محيط دوار بني سهيلا باتجاه وسط مدينة خان يونس جنوبي قطاع غزة. وأفادت مصادر محلية بالحادثة التي وقعت في المنطقة.\n\nولم تتضح فوراً تفاصيل الحادث أو ما إذا أسفرت عن إصابات أو خسائر في الأرواح. كما لم تصدر أي تصريحات رسمية من الجانب الإسرائيلي حول الحادثة أو أسبابها حتى لحظة الإبلاغ عنها.\n\nوتشهد منطقة خان يونس منذ أسابيع توتراً أمنياً متواصلاً مع استمرار العمليات العسكرية في القطاع.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/82841",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735645",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-10T18:03:57+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/82841",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3d887a24bc",
+ "score": 63.87,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "قوات إسرائيلية تطلق النار على وسط خان يونس"
+}
