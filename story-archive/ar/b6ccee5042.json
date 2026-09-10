@@ -6,7 +6,13 @@
    "article": "https://www.pbc.ps/45423-2",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/share/217479",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-09-09T15:54:02+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b6ccee5042",
- "score": 41.45,
+ "score": 41.24,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
