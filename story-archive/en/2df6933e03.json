@@ -1,0 +1,39 @@
+{
+ "brief": "Haaretz reported this week that Mohamed bin Zayed, the president of the United Arab Emirates, personally warned Prime Minister Benjamin Netanyahu roughly ten days before the 7 October 2023 attack that Yahya Sinwar was preparing a \"surprise\" Hamas operation against Israel. The paper wrote that the warning reached Netanyahu's office through Palestinian intermediaries and Abu Dhabi, and was delivered on an encrypted device a UAE representative carried into the prime minister's office, meant to be destroyed afterward.\n\nBin Zayed cautioned that an attack would cause bloodshed and endanger the Abraham Accords, Haaretz reported. Netanyahu is reported to have replied that Israel was prepared and that the greater danger lay in the West Bank.\n\nNetanyahu's office rejected the report outright, telling reporters \"he lied, it's a left-wing newspaper,\" and said security logs showed no record of any Emirati visitor entering the office for such a meeting.\n\nKnesset Speaker Amir Ohana went further, telling the Israeli daily Maariv that the leak traces back to Mohammed Dahlan, the exiled former Fatah security chief. Dahlan's Democratic Reform Current rejected the accusation in a statement to Maariv, saying he \"has never been a party to internal Israeli struggles\" and that \"Gaza's future will not be determined by Netanyahu or Likud, nor will it be a bargaining chip in Israeli elections.\" The current said the real question was what Israeli governments have done to Palestinian rights and lives, not Israel's own domestic disputes.",
+ "cat": "israelipress",
+ "corroborating_sources": [
+  {
+   "article": "original:haaretz-uae-warning-netanyahu-dahlan-2026-09-10.en",
+   "name": "Times of Palestine",
+   "url": "",
+   "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/10/netanyahu-to-sue-haaretz-over-claims-uae-warned-him-before-october-7-attack?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T11:00:00+00:00",
+ "dek": "Haaretz reported this week that Mohamed bin Zayed, the president of the United Arab Emirates, personally warned Prime Minister Benjamin Netanyahu roughly ten days before the 7 October 2023 attack that Yahya Sinwar was preparing a \"surprise\" Hamas operation…",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-israeli-press.svg",
+ "lang": "en",
+ "link": "original:haaretz-uae-warning-netanyahu-dahlan-2026-09-10.en",
+ "max_age_hours": 336.0,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": true,
+ "pid": "2df6933e03",
+ "score": 117.84,
+ "source": "Times of Palestine",
+ "source_id": "top-original",
+ "source_url": "",
+ "title": "Haaretz says UAE leader warned Netanyahu of looming Hamas attack"
+}

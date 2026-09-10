@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/09/will-israels-right-exploit-sanctions-run-vote",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/politics/2026/sep/09/senior-uk-rabbis-come-out-in-support-of-sanctions-on-israeli-settlements",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-10T11:30:33+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1a17571981",
- "score": 49.91,
+ "score": 49.65,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
