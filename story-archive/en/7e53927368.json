@@ -6,7 +6,19 @@
    "article": "https://www.theguardian.com/commentisfree/2026/sep/10/uk-sanctions-israel-settlements-activists-palestine-movement",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/opinion/uk-settlement-trade-ban-offers-lifeline-palestine-and-israel-on-brink",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/09/israel-opt-settlement-trade-restrictions-must-be-followed-by-further-concrete-measures-to-end-israels-unlawful-occupation-and-apartheid",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-10T10:00:23+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "7e53927368",
- "score": 47.76,
+ "score": 47.54,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
