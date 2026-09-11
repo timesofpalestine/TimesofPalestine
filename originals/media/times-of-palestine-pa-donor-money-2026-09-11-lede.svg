@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Audits trace 2026 donor money only to Palestinian Authority salaries</title>
+<desc id="dsc">Ledger graphic. Left: the headline in English and Arabic. Right: a bar chart of Palestinian Authority external support by donor for January to October 2025 from Ministry of Finance data reported by Sada News, in millions of shekels: European Union via PEGASE 795.3, World Bank 631.3, Saudi Arabia 101.3, Norway 67.6, France 31.3. Below: the 2026 disbursements on the record (EU 310 million euros for 2026-27, member states 41.7 million euros, Norway 100 million kroner, Japan about 12 million dollars, Australia 10 million Australian dollars, World Bank 103.3 million dollars) and the salary line: public salaries paid at 50 to 60 percent with a 2,000 shekel floor, May salaries paid on 23 August.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#8a7443"/>
+<stop offset="1" stop-color="#c7a86b"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- header -->
+<text x="90" y="66" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="3" fill="#c7a86b">PALESTINIAN PUBLIC LEDGER</text>
+<text x="470" y="66" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b">سجل المال العام الفلسطيني</text>
+
+<text x="90" y="130" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">Audits trace 2026 donor money</text>
+<text x="90" y="184" font-family="'Source Serif 4',Georgia,serif" font-size="46" fill="#f2eee8">only to the Authority’s payroll</text>
+<text x="90" y="228" font-family="Cairo,Arial,sans-serif" font-size="27" fill="#aaa9a5">أموال المانحين للسلطة في 2026.. التدقيق يصل إلى الرواتب ويتوقف عندها</text>
+<text x="90" y="262" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Ministry of Finance data via Sada News · World Bank · European Commission · 11 September 2026</text>
+
+<!-- left panel: what 2026 brought -->
+<rect x="90" y="300" width="560" height="330" rx="6" fill="#1a1b1e" stroke="#3a3b40"/>
+<rect x="90" y="300" width="6" height="330" fill="#286344"/>
+<text x="118" y="340" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="2" fill="#f2eee8">ON THE RECORD IN 2026</text>
+<text x="118" y="368" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b">ما أُعلن في 2026</text>
+<text x="118" y="406" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">European Commission · €310m (2026–27, PEGASE)</text>
+<text x="118" y="436" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">EU + 11 states · €41.7m (13 July, Brussels)</text>
+<text x="118" y="466" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Norway · NOK 100m (20 April)</text>
+<text x="118" y="496" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Japan · about $12m via World Bank fund (11 May)</text>
+<text x="118" y="526" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Australia · A$10m to the same fund (21 July)</text>
+<text x="118" y="556" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">World Bank · $103.3m, salaries in education and health</text>
+<text x="118" y="598" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">Stated uses: salaries, pensions, social allowances, hospital referrals</text>
+
+<!-- right panel: bar chart 2025 by donor -->
+<rect x="690" y="300" width="820" height="330" rx="6" fill="#1a1b1e" stroke="#3a3b40"/>
+<rect x="690" y="300" width="6" height="330" fill="#8a1f2d"/>
+<text x="718" y="340" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="2" fill="#f2eee8">WHO PAID IN 2025 · NIS MILLION, JAN–OCT</text>
+<text x="718" y="368" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b">من دفع في 2025 · بملايين الشواكل، كانون الثاني–تشرين الأول</text>
+
+<!-- scale: 795.3 -> 520px ; factor 0.654 -->
+<text x="718" y="412" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">EU · PEGASE</text>
+<rect x="880" y="396" width="520" height="22" rx="3" fill="url(#bar)"/>
+<text x="1410" y="413" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">795.3</text>
+
+<text x="718" y="454" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">World Bank</text>
+<rect x="880" y="438" width="413" height="22" rx="3" fill="url(#bar)"/>
+<text x="1303" y="455" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">631.3</text>
+
+<text x="718" y="496" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Saudi Arabia</text>
+<rect x="880" y="480" width="66" height="22" rx="3" fill="url(#bar)"/>
+<text x="956" y="497" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">101.3</text>
+
+<text x="718" y="538" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Norway</text>
+<rect x="880" y="522" width="44" height="22" rx="3" fill="url(#bar)"/>
+<text x="934" y="539" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">67.6</text>
+
+<text x="718" y="580" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">France</text>
+<rect x="880" y="564" width="20" height="22" rx="3" fill="url(#bar)"/>
+<text x="910" y="581" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">31.3</text>
+
+<text x="718" y="614" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Total external support NIS 2,016m, of which NIS 1,626m budget support · Saudi $90m tranche arrived 1 December</text>
+
+<!-- bottom strip: the salary line -->
+<rect x="90" y="668" width="1420" height="150" rx="6" fill="#1a1b1e" stroke="#3a3b40"/>
+<rect x="90" y="668" width="6" height="150" fill="#c7a86b"/>
+<text x="118" y="708" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" letter-spacing="2" fill="#f2eee8">WHERE IT CAN BE TRACED</text>
+<text x="118" y="736" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#c7a86b">إلى أين يمكن تتبّعه</text>
+<text x="118" y="772" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#f2eee8">Payroll only: public salaries paid at 50–60% with a NIS 2,000 floor · May salaries paid on 23 August · wage bill about NIS 1.05bn a month</text>
+<text x="118" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" fill="#aaa9a5">EU screens every recipient against sanctions lists; a World Bank audit firm gave clean payroll opinions on 6 Aug 2025 and 30 Mar 2026</text>
+
+<text x="1510" y="860" text-anchor="end" font-family="'Libre Franklin',Arial,sans-serif" font-size="16" letter-spacing="2" fill="#c7a86b">TIMES OF PALESTINE · تايمز أوف فلسطين</text>
+</svg>
