@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/news/you-have-two-million-targets-gaza-israeli-soldier-describes-mass-killings-palestinians",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/friday-in-gaza-israeli-forces-kill-2-palestinians-wound-10",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-11T13:46:01+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "43a876e152",
- "score": 61.53,
+ "score": 61.26,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
