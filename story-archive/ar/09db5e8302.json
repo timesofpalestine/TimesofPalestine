@@ -1,0 +1,33 @@
+{
+ "brief": "توغلت قوات جيش الاحتلال بآليات عسكرية في بلدة الرفيد جنوبي القنيطرة بسوريا، بحسب المركز الفلسطيني للإعلام. شنّت القوات حملة مداهمات على عدد من المنازل في البلدة، في إطار ما بدا عملية تمشيط أمنية في المنطقة.\n\nأسفرت المداهمات عن اعتقال شخصين، فيما لم تُفصح السلطات العسكرية عن تفاصيل بشأن هويتهما أو الأسباب المحتملة لاعتقالهما. وتشهد المناطق الحدودية السورية توترات متكررة منذ السيطرة على الجولان المحتل.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/320584",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T23:11:13+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/320584",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "09db5e8302",
+ "score": 49.5,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "جيش الاحتلال يعتقل شخصين في الرفيد السورية"
+}
