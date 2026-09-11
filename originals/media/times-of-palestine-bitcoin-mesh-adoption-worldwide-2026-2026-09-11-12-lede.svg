@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+<title id="t">Gaza held at 2G while mesh messaging spreads elsewhere</title>
+<desc id="d">Dark editorial graphic. Left panel: bar chart of licensed mobile generations — Gaza 2G, West Bank 3G, and a dashed outline for the West Bank 4G upgrade ratified 6 January 2026 that does not extend to Gaza. Right panel: a schematic of phones linked phone-to-phone over Bluetooth with no towers and no servers. Bottom strip: 313 or more internet shutdowns in 52 countries in 2025; 37 days of Iran's national blackout from 8 January 2026; 48,781 Bitchat downloads in Nepal on 8 September 2025.</desc>
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="barred" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#8a1f2d"/>
+<stop offset="1" stop-color="#C8102E"/>
+</linearGradient>
+<linearGradient id="bargold" x1="0" y1="1" x2="0" y2="0">
+<stop offset="0" stop-color="#8a7643"/>
+<stop offset="1" stop-color="#c7a86b"/>
+</linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<!-- headline -->
+<text x="90" y="112" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">Israel keeps Gaza on <tspan fill="#C8102E" font-weight="700">2G</tspan></text>
+<text x="90" y="166" font-family="'Source Serif 4',Georgia,serif" font-size="52" fill="#f2eee8">as mesh messaging spreads elsewhere</text>
+<text x="90" y="216" font-family="Cairo,Arial,sans-serif" font-size="27" fill="#c7a86b" text-anchor="start">إسرائيل تُبقي غزة على الجيل الثاني بينما تنتشر شبكات الرسائل المتداخلة</text>
+<rect x="90" y="243" width="150" height="4" fill="#286344"/>
+
+<!-- PANEL A -->
+<rect x="90" y="300" width="570" height="426" rx="10" fill="#17181b" stroke="#2a2b2f" stroke-width="2"/>
+<text x="120" y="344" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="2" fill="#c7a86b">LICENSED MOBILE GENERATIONS</text>
+<text x="120" y="372" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" text-anchor="start">أجيال شبكات الهاتف المرخّصة</text>
+
+<line x1="120" y1="641" x2="630" y2="641" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- bar 1 Gaza 2G -->
+<rect x="150" y="586" width="100" height="55" fill="url(#barred)"/>
+<text x="200" y="572" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="700" fill="#C8102E" text-anchor="middle">2G</text>
+<text x="200" y="667" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8" text-anchor="middle">Gaza</text>
+<text x="200" y="689" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="middle">غزة</text>
+
+<!-- bar 2 West Bank 3G -->
+<rect x="300" y="521" width="100" height="120" fill="url(#bargold)"/>
+<text x="350" y="507" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="700" fill="#c7a86b" text-anchor="middle">3G</text>
+<text x="350" y="667" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8" text-anchor="middle">West Bank</text>
+<text x="350" y="689" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="middle">الضفة الغربية</text>
+
+<!-- bar 3 West Bank 4G planned -->
+<rect x="450" y="451" width="100" height="190" fill="#1c2a23" stroke="#59a97d" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="500" y="437" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" font-weight="700" fill="#59a97d" text-anchor="middle">4G</text>
+<text x="500" y="667" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8" text-anchor="middle">West Bank 2026</text>
+<text x="500" y="689" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="middle">الضفة 2026</text>
+
+<text x="120" y="714" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#C8102E">4G upgrade ratified 6 Jan 2026 does not extend to Gaza</text>
+
+<!-- PANEL B -->
+<rect x="700" y="300" width="820" height="426" rx="10" fill="#17181b" stroke="#2a2b2f" stroke-width="2"/>
+<text x="732" y="344" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="2" fill="#c7a86b">MESH MESSAGING: PHONE TO PHONE</text>
+<text x="732" y="372" font-family="Cairo,Arial,sans-serif" font-size="17" fill="#aaa9a5" text-anchor="start">الرسائل المتداخلة: من هاتف إلى هاتف</text>
+
+<!-- struck-out tower: no towers -->
+<g stroke="#55565a" stroke-width="3" fill="none">
+<path d="M1430 430 L1455 355 L1480 430"/>
+<line x1="1440" y1="400" x2="1470" y2="400"/>
+<line x1="1455" y1="355" x2="1455" y2="430"/>
+</g>
+<line x1="1418" y1="348" x2="1492" y2="438" stroke="#C8102E" stroke-width="5"/>
+
+<!-- mesh links -->
+<g stroke="#59a97d" stroke-width="2" stroke-dasharray="5 7" opacity="0.85">
+<line x1="820" y1="470" x2="950" y2="418"/>
+<line x1="950" y1="418" x2="1080" y2="472"/>
+<line x1="820" y1="470" x2="892" y2="578"/>
+<line x1="892" y1="578" x2="1032" y2="592"/>
+<line x1="1032" y1="592" x2="1080" y2="472"/>
+<line x1="1080" y1="472" x2="1206" y2="424"/>
+<line x1="1206" y1="424" x2="1250" y2="556"/>
+<line x1="1250" y1="556" x2="1032" y2="592"/>
+<line x1="1206" y1="424" x2="1340" y2="500"/>
+<line x1="1250" y1="556" x2="1340" y2="500"/>
+<line x1="950" y1="418" x2="1206" y2="424"/>
+</g>
+
+<!-- phones -->
+<g fill="#1b2a22" stroke="#59a97d" stroke-width="2">
+<rect x="806" y="447" width="28" height="46" rx="6"/>
+<rect x="936" y="395" width="28" height="46" rx="6"/>
+<rect x="1066" y="449" width="28" height="46" rx="6"/>
+<rect x="878" y="555" width="28" height="46" rx="6"/>
+<rect x="1018" y="569" width="28" height="46" rx="6"/>
+<rect x="1192" y="401" width="28" height="46" rx="6"/>
+<rect x="1236" y="533" width="28" height="46" rx="6"/>
+<rect x="1326" y="477" width="28" height="46" rx="6"/>
+</g>
+<g fill="#f2eee8">
+<circle cx="820" cy="456" r="2.5"/><circle cx="950" cy="404" r="2.5"/>
+<circle cx="1080" cy="458" r="2.5"/><circle cx="892" cy="564" r="2.5"/>
+<circle cx="1032" cy="578" r="2.5"/><circle cx="1206" cy="410" r="2.5"/>
+<circle cx="1250" cy="542" r="2.5"/><circle cx="1340" cy="486" r="2.5"/>
+</g>
+
+<text x="732" y="676" font-family="'Libre Franklin',Arial,sans-serif" font-size="17" fill="#f2eee8">Bluetooth relay between nearby handsets — no towers, no servers</text>
+<text x="732" y="702" font-family="Cairo,Arial,sans-serif" font-size="15" fill="#aaa9a5" text-anchor="start">ترحيل عبر البلوتوث بين الأجهزة القريبة — بلا أبراج ولا خوادم</text>
+
+<!-- STATS STRIP -->
+<line x1="90" y1="752" x2="1520" y2="752" stroke="#2a2b2f" stroke-width="2"/>
+<rect x="90" y="762" width="4" height="76" fill="#8a1f2d"/>
+<rect x="600" y="762" width="4" height="76" fill="#c7a86b"/>
+<rect x="1090" y="762" width="4" height="76" fill="#286344"/>
+
+<text x="112" y="796" font-family="'Source Serif 4',Georgia,serif" font-size="32" font-weight="700" fill="#f2eee8">313+</text>
+<text x="112" y="820" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">internet shutdowns in 52 countries, 2025</text>
+<text x="112" y="842" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5" text-anchor="start">إغلاقًا للإنترنت في 52 دولة خلال 2025</text>
+
+<text x="622" y="796" font-family="'Source Serif 4',Georgia,serif" font-size="32" font-weight="700" fill="#f2eee8">37 days</text>
+<text x="622" y="820" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Iran national blackout, from 8 Jan 2026</text>
+<text x="622" y="842" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5" text-anchor="start">انقطاع الإنترنت في إيران منذ 8 يناير 2026</text>
+
+<text x="1112" y="796" font-family="'Source Serif 4',Georgia,serif" font-size="32" font-weight="700" fill="#f2eee8">48,781</text>
+<text x="1112" y="820" font-family="'Libre Franklin',Arial,sans-serif" font-size="15" fill="#aaa9a5">Bitchat downloads in Nepal, 8 Sep 2025</text>
+<text x="1112" y="842" font-family="Cairo,Arial,sans-serif" font-size="14" fill="#aaa9a5" text-anchor="start">تنزيل لتطبيق بِتشات في نيبال</text>
+
+<text x="90" y="876" font-family="'Libre Franklin',Arial,sans-serif" font-size="13" fill="#7a7976">Sources: MAS study, March 2025 · World Bank · Times of Israel, 6 Jan 2026 · Access Now #KeepItOn · 7amleh · BeInCrypto</text>
+</svg>
