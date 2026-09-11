@@ -1,0 +1,39 @@
+{
+ "brief": "شن طيران الاحتلال الإسرائيلي ثلاث غارات على بلدة القنطرة ومنطقة دوحة كفر رمان جنوب لبنان، بحسب المركز الفلسطيني للإعلام. وطالت الغارات المناطق السكنية في البلدة والمنطقة المذكورة في عملية قصف متتالية.\n\nجاءت الغارات في سياق تصعيد عسكري متواصل في المنطقة الحدودية، إذ يشهد الجنوب اللبناني استهدافات متكررة من قبل الطيران الإسرائيلي منذ فترة. وترتبط هذه العمليات بحالة التوتر المستمرة على الحدود الشمالية للأراضي المحتلة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/320709",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735857",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-11T19:03:50+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/320709",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1e65e94bf9",
+ "score": 62.73,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "طيران الاحتلال يقصف مناطق جنوب لبنان"
+}
