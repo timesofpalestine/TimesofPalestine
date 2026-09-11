@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/36721",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735707",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   },
   {
    "article": "https://www.aljazeera.net/politics/2026/9/11/%d8%b9%d9%84%d9%8a-%d8%a7%d9%84%d8%b7%d8%a7%d9%87%d8%b1-%d9%84%d8%a8%d9%86%d8%a7%d9%86-%d9%86%d8%b3%d9%81-%d8%aa%d8%ad%d9%84%d9%8a%d9%84-%d8%b9%d8%b3%d9%83%d8%b1%d9%8a?traffic_source=rss",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "766657902d",
- "score": 28.3,
+ "score": 28.0,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
