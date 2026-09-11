@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/israel-kills-10-palestinians-including-a-couple-and-their-two-children-and-injures-dozens-in-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/friday-in-gaza-israeli-forces-kill-2-palestinians-wound-10",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-10T16:21:47+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "0e48cb6029",
- "score": 84.24,
+ "score": 84.21,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
