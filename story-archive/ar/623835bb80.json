@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.pbc.ps/3432-13",
-   "name": "تلفزيون فلسطين",
-   "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
    "article": "https://shehabnews.com/post/163884/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85%D8%A7%D8%AA%D9%87-%D9%88%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84%D8%A7%D8%AA%D9%87-%D9%81%D9%8A-%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D9%85%D8%AA%D9%81%D8%B1%D9%82%D8%A9-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D9%85%D8%AD%D8%AA%D9%84%D8%A9",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
@@ -25,12 +19,18 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://palinfo.com/news/2026/09/11/1117728",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
   }
  ],
  "date": "2026-09-10T09:20:26+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "image": "/media/times-of-palestine-cover-news-b-ar.svg",
  "lang": "ar",
  "link": "https://www.maannews.net/news/2168476.html",
  "max_age_hours": 72,
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "623835bb80",
- "score": 32.16,
+ "score": 31.93,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
