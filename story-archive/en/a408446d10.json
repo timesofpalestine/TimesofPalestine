@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/film/video/2026/sep/11/documentary-naza-gets-25-minute-standing-ovation-at-venice-film-festival-premiere-video-ntwnfb",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/israeli-made-film-about-gaza-gets-25-minute-ovation-venice-premiere",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-11T01:02:34+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "a408446d10",
- "score": 53.23,
+ "score": 52.96,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
