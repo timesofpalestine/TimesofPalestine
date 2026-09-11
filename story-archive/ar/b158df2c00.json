@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، حوّل الاحتلال الإسرائيلي آلية تقديم المساعدات الإنسانية إلى ساحة صراع جديدة، حيث يوظفها لتشديد الحصار على قطاع غزة والضغط على السكان المدنيين. يعكس هذا النهج ربط وصول الإمدادات الغذائية والطبية بشروط سياسية، بما يحرم الآلاف من السكان احتياجاتهم الأساسية.\n\nوتندرج هذه الممارسات ضمن سياسة أوسع تستهدف استنزاف الموارد والخدمات في القطاع المحاصر منذ سنوات. يأتي توظيف المساعدات كرافعة ضغط على خلفية الأزمة الإنسانية المتفاقمة في غزة، حيث تواجه السكان نقصاً حاداً في الغذاء والدواء والوقود.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/09/10/1117664",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-11T00:07:14+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/09/10/1117664",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b158df2c00",
+ "score": 49.9,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يستخدم المساعدات أداة لحصار غزة وابتزاز السكان"
+}
