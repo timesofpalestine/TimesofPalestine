@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.net/news/2026/9/11/%d8%a7%d9%84%d9%82%d8%b3%d8%a7%d9%85-7?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/gazaalannet/82872",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
@@ -19,12 +25,6 @@
    "name": "القسطل · تيليغرام",
    "url": "https://t.me/AlQastalps",
    "verified": true
-  },
-  {
-   "article": "https://www.alquds.co.uk/%d8%a7%d9%84%d8%ac%d9%8a%d8%b4-%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d9%8a%d8%b9%d9%84%d9%86-%d8%a7%d8%ba%d8%aa%d9%8a%d8%a7%d9%84-%d9%82%d8%a7%d8%a6%d8%af%d9%8a%d9%86-%d9%85",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
-   "verified": false
   }
  ],
  "date": "2026-09-11T13:32:00+00:00",
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "0bcd79a169",
- "score": 48.52,
+ "score": 48.18,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",

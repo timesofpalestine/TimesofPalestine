@@ -1,0 +1,33 @@
+{
+ "brief": "President Donald Trump landed in Ireland on Tuesday amid widespread public opposition to his visit, with demonstrations planned across the country over US policy in Gaza, Al Jazeera English reported. The protests reflect deep discontent with American military and diplomatic engagement in the Middle East, particularly Washington's approach to the Israeli-Palestinian conflict.\n\nPresident Connolly has long regarded the United States with suspicion, a stance rooted in historical tensions and differing foreign policy priorities. Organizers expect significant protest activity throughout Trump's stay in the country. The visit underscores broader friction between the two nations over America's role in global conflicts and its alignment with Israeli interests in the region.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/11/majority-do-not-welcome-him-trump-heads-to-ireland-amid-fury-over-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-11T14:09:52+00:00",
+ "dek": "Protests set to erupt across Ireland, where President Connolly has long regarded the US as an untrustworthy power.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-02-21T152805Z_980001013_RC2EQJAAWJ5P_RTRMADP_3_ISRAEL-PALESTINIANS-IRELAND-PROTEST-1789135558.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/11/majority-do-not-welcome-him-trump-heads-to-ireland-amid-fury-over-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/11/majority-do-not-welcome-him-trump-heads-to-ireland-amid-fury-over-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "97844de4d2",
+ "score": 49.64,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Trump arrives in Ireland as protests erupt over Gaza"
+}

@@ -1,0 +1,33 @@
+{
+ "brief": "The Guardian reported that Itamar Ben-Gvir, Israel's minister of national security, released an AI-generated video last week showing Palestinians on a conveyor belt. The specific intent and full context of the video's imagery remained unclear from initial reporting on the incident.\n\nThe publication contextualized the release within escalating concerns about ideologies of supremacy and domination in the region. According to the account, Palestinians have experienced widespread killings and displacement in Gaza, raising questions about whether patterns of violence there could establish precedent for similar practices elsewhere. The video's circulation reflected deepening anxieties about rhetoric and visual messaging from Israeli officials during the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/commentisfree/2026/sep/11/gaza-horror-global-powers-support-blueprint-palestinians-israel",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-11T14:29:23+00:00",
+ "dek": "For now, it is Palestinians who are being killed and displaced. But ideologies of supremacy and domination threaten us all Last week, Itamar Ben-Gvir, Israel’s minister of national security, put out an AI-generated video that showed a conveyor belt of…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/4da385c8080f1d6690bb5221e77ffca001cddf4f/0_0_4456_3565/master/4456.jpg?width=140&quality=85&auto=format&fit=max&s=0c49b8161470c57978d6fcf741781ed3",
+ "lang": "en",
+ "link": "https://www.theguardian.com/commentisfree/2026/sep/11/gaza-horror-global-powers-support-blueprint-palestinians-israel",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/commentisfree/2026/sep/11/gaza-horror-global-powers-support-blueprint-palestinians-israel"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "48ec8044a9",
+ "score": 63.86,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli security minister releases AI-generated video depicting Palestinians"
+}
