@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli settlers dressed in military uniforms are seizing Palestinian land and attacking communities across the West Bank, Al Jazeera English reported. The violence occurs with minimal legal consequences, reflecting a pattern in which Israeli authorities pursue few prosecutions against settlers involved in attacks on Palestinians.\n\nThe settlers operate across occupied territory in areas where Israeli military forces maintain a substantial presence. Armed groups have adopted military-style uniforms and coordinated tactics in their land seizures and assaults on Palestinian communities. Palestinian residents face repeated threats from these operations, which continue despite the visibility of Israeli military personnel in the same zones.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/11/settlers-soldiers-and-israeli-impunity-in-the-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-army-demolishes-home-in-battir",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-11T07:36:43+00:00",
+ "dek": "Armed settlers in military uniforms are seizing land and attacking Palestinian communities with near-total impunity.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/AFP__20260428__A99L2AK__v3__HighRes__TopshotPalestinianIsraelConflictSettlements-1789035859.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/11/settlers-soldiers-and-israeli-impunity-in-the-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/11/settlers-soldiers-and-israeli-impunity-in-the-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0f7ead3399",
+ "score": 47.63,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Armed settlers in military uniforms attack Palestinians with impunity"
+}
