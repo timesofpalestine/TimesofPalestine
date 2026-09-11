@@ -1,0 +1,39 @@
+{
+ "brief": "أصيب فلسطيني برصاص قوات الاحتلال الإسرائيلي في مواصي خانيونس جنوب قطاع غزة، بحسب المركز الفلسطيني للإعلام. نُقل المصاب إلى مجمع ناصر الطبي في المدينة لتلقي العلاج الطبي.\n\nوتأتي الحادثة وسط استمرار التصعيد الأمني في المناطق الجنوبية من القطاع. وعادة ما يستهدف جنود الاحتلال الفلسطينيين في مناطق متفرقة من غزة بذريعة الأمن، فيما ينفي الفلسطينيون تلك المزاعم.\n\nلم تُفصح القوات الإسرائيلية حتى الآن عن تعليق رسمي بشأن الحادثة، في حين لم تتوفر معلومات إضافية عن حالة المصاب الصحية وظروف إطلاق النار عليه.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/320612",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735719",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-11T06:23:15+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/J9dTDpjYJHoX_6zUlv6o_wZmTJjtkWpVHP2Fuk9InTNRZTMkuXrQaLNaG_dfFRfaUqjJHt1Y5XyrSprULER5lfWdQOBO3jZOgeEtYQMTEs2MJs6XjKwWXkVrWXOIqpsH5g3-CAmElQk_Y-HTixNjziRb9XF1IymgN0s6vhtrVTdiKZp_0f5bVXPnc2VFwD0-cNUzN80yOo0M8urBpk5L5SdLxmvU3JJRforpLpR-Pi11YpU6y36zNSlAj7cssbLE7C7foyD5EGfoEVU5PHMX5zt9oJqqaqMRbKtbSDLAGzD3wrX8XrFXnZ4SA0YAeiN-diziqv_YfnKM2XBsd55IEw.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/320612",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/320612"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1582694e7c",
+ "score": 63.92,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قوات الاحتلال تطلق النار على فلسطيني في خانيونس"
+}
