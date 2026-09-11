@@ -1,0 +1,33 @@
+{
+ "brief": "A Palestinian writer contributed to a book about Gaza that was published in Spain, yet has been unable to obtain a copy due to the Israeli blockade, We Are Not Numbers reported. The author remains unable to physically access the work despite its successful publication abroad, a consequence of restrictions on movement and commerce that limit Palestinians' ability to receive materials crossing in and out of the territory.\n\nThe book, titled \"El Libro de Gaza,\" represents a rare instance of Palestinian voices reaching international audiences through foreign publication channels. The author has not yet touched a copy of their own contribution.",
+ "cat": "humans",
+ "corroborating_sources": [
+  {
+   "article": "https://wearenotnumbers.org/el-libro-de-gaza-the-book-that-crossed-the-blockade",
+   "name": "We Are Not Numbers",
+   "url": "https://wearenotnumbers.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-11T13:00:18+00:00",
+ "dek": "I wrote part of a book about Gaza published in Spain. I still haven’t touched a copy.",
+ "dup_of": null,
+ "image": "https://wearenotnumbers.org/wp-content/uploads/2026/09/Ojood-working-e1788453770285.jpeg",
+ "lang": "en",
+ "link": "https://wearenotnumbers.org/el-libro-de-gaza-the-book-that-crossed-the-blockade",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "We Are Not Numbers",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://wearenotnumbers.org/el-libro-de-gaza-the-book-that-crossed-the-blockade"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1a42bdfb1b",
+ "score": 49.97,
+ "source": "We Are Not Numbers",
+ "source_id": "wann",
+ "source_url": "https://wearenotnumbers.org/",
+ "title": "Gaza author's book reaches Spain despite Israeli blockade"
+}

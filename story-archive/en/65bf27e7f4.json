@@ -1,0 +1,33 @@
+{
+ "brief": "US and Israeli officials are citing a decline in acute malnutrition cases among Palestinian children in Gaza to argue the enclave faces no hunger problem, according to Al Jazeera English. The officials have leveraged United Nations data showing drops in severe malnutrition to counter claims of a humanitarian crisis linked to the Israeli military campaign.\n\nAid organizations and UN agencies have contested this framing, cautioning that malnutrition statistics alone do not capture the full scope of food insecurity affecting Gaza's population. Experts note that reduced acute malnutrition figures can reflect dietary shifts or measurement variations rather than improved overall food availability.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/11/from-hunger-crisis-to-obesity-how-gazas-un-data-is-being-twisted?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-11T12:30:02+00:00",
+ "dek": "US and Israeli officials are using a drop in acute malnutrition cases to claim Gaza has no hunger.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789129793.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/11/from-hunger-crisis-to-obesity-how-gazas-un-data-is-being-twisted?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/11/from-hunger-crisis-to-obesity-how-gazas-un-data-is-being-twisted?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "65bf27e7f4",
+ "score": 49.3,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "US and Israeli officials misrepresent Gaza malnutrition data to deny hunger crisis"
+}
