@@ -1,0 +1,39 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، قصفت مدفعية الاحتلال بلدة النبطية الفوقا في جنوب لبنان. وأطلقت النيران على البلدة مباشرة، في تطور يضاف إلى سلسلة الاشتباكات التي تشهدها المنطقة الحدودية.\n\nتقع النبطية الفوقا على مقربة من الحدود اللبنانية الإسرائيلية، وتعرّضت المنطقة الجنوبية من لبنان لقصف متكرر خلال الفترة الأخيرة. لم تذكر المادة معلومات تفصيلية حول حجم الأضرار الناجمة عن القصف أو عدد الضحايا إن وجدوا.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/320606",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735714",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-11T05:49:44+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/QcVo2owSGoyB8WYxDhfyceGAnPVr21es3lYd_3gna6n5fnDMx1QrljBgVmRVsZbt8N4mPsRvZV5r4dxluymqFek8pvqwz6avtqdobWaNMuBPBf2sT0_LRm_aCzeoEaq8GheeJ7IpgwiGvCzYU0yfBMOMKhbz39mn5wxt7Kb8ucXKxKoSrz51yi8fnVNgT0nm3y9pj-iu_tlzRgFr2w1zZBu57ueLoI8UBcPTxNegU3hZX0x73uSHPYnJ1ohRCoZoDlQ5iaU9t6kw2fhCawoEK6xFZGDOZrcHztH0JwSaaXArtL8hDMYhdq0BXlDU0bPYtGCM_JWkI0yA1E5v2pkiag.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/320606",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/320606"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f249050b27",
+ "score": 63.91,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "مدفعية الاحتلال تقصف بلدة النبطية الفوقا جنوب لبنان"
+}

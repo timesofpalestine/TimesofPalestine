@@ -1,0 +1,33 @@
+{
+ "brief": "The main generator at Al-Ahli Arab Hospital in Gaza City has stopped operating due to insufficient oil and spare parts, the Wafa news agency reported. The facility now relies solely on backup power systems to maintain operations. Hospital officials said the shutdown occurred as fuel shortages persist across the Gaza Strip, limiting the availability of diesel needed to run the primary generator.\n\nThe breakdown forces the hospital to operate under reduced capacity. Backup generators typically provide limited power compared to main systems, affecting the facility's ability to run multiple departments simultaneously and maintain consistent electricity for medical equipment and lighting. The hospital serves as a major healthcare facility in Gaza City and treats thousands of patients monthly.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-shortage-shuts-main-generator-gazas-al-ahli-arab-hospital",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-10T23:26:45+00:00",
+ "dek": "Oil shortage shuts main generator at Gaza’s Al-Ahli Arab Hospital The main generator at Gaza City’s Al-Ahli Arab Hospital has stopped operating due to a shortage of oil and spare parts, Wafa news agency reported. Citing sources, Wafa said the shutdown forced…",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-shortage-shuts-main-generator-gazas-al-ahli-arab-hospital",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d0672f8b5d",
+ "score": 45.51,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Oil shortage halts main generator at Gaza's Al-Ahli Arab Hospital"
+}
