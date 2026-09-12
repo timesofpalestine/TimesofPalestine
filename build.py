@@ -291,6 +291,37 @@ def truncate(text, n):
     sp = cut.rfind(" ")
     return (cut[:sp] if sp > n - 30 else cut) + "…"
 
+_DEK_END_RX = re.compile(r"[.!?؟…]['\"”»)]?(?=\s|$)")
+
+
+def truncate_dek(text, n):
+    """Cut a summary at the last sentence end that fits, so a card or hero
+    dek never trails off mid-phrase ("…in remarks carried by…", site review
+    2026-09-12). Falls back to the word cut with an ellipsis when no
+    sentence end lands past a third of the budget."""
+    if len(text) <= n:
+        return text
+    cut = text[:n]
+    ends = [m.end() for m in _DEK_END_RX.finditer(cut)]
+    if ends and ends[-1] >= n // 3:
+        return cut[:ends[-1]].rstrip()
+    return truncate(text, n)
+
+
+def truncate_clause(text, n):
+    """A figure caption keeps whole clauses: cut at the last comma, semicolon
+    or dash that fits when the sentence itself is too long for the tile."""
+    if len(text) <= n:
+        return text
+    cut = text[:n]
+    m = None
+    for m in re.finditer(r"[,;،؛]\s|\s[—–-]\s", cut):
+        pass
+    if m and m.start() >= n // 2:
+        return cut[:m.start()].rstrip() + "…"
+    return truncate(text, n)
+
+
 def norm_title(t):
     return re.sub(r"[\W_]+", " ", strip_html(t).lower(), flags=re.UNICODE).strip()
 
@@ -361,7 +392,7 @@ DIASPORA_RX = None  # set below, once the rule helpers exist
 ARTS_RX = re.compile(
     r"artist|painter|sculpt|exhibit|gallery|mural|filmmaker|documentary|"
     r"\bpoet\b|poetry|novelist|musician|singer|\bdabke\b|embroidery|tatreez|"
-    r"heritage|museum|cuisine|cinema|\bfilm\b|culture|"
+    r"heritage|museum|cuisine|cinema|\bfilm\b|\bculture|"
     r"فنان|فنانة|تشكيلي|معرض|لوحة|جدارية|مخرج(?!ات)|وثائقي|(?<!م)شاعر|روائي|"
     r"موسيقي|مغني|مغنية|دبكة|تطريز|تراث|متحف|المطبخ الفلسطيني|مطبخ فلسطيني|"
     r"سينما|فيلم|ثقافة", re.I)
@@ -554,7 +585,7 @@ def score_item(item):
 # clinic is West Bank news; the diarrhoea count doubling is Health.
 HEALTH_CARE_RX = re.compile(
     r"outbreak|epidemi|diarrh|cholera|hepatitis|meningitis|measles|polio|"
-    r"scabies|\blice\b|skin (?:disease|infection|condition)|rash|impetigo|"
+    r"scabies|\blice\b|skin (?:disease|infection|condition)|\brash(?:es)?\b|impetigo|"
     r"chickenpox|respiratory infection|malnutrition|malnourish|vaccin|"
     r"immuni[sz]|dialysis|insulin|prosthetic|amputee|rehabilitat|"
     r"telemedicine|tele-?health|oncolog|chemotherap|cancer (?:patient|treatment|care|ward|drug|medic)|"
@@ -812,9 +843,26 @@ class _PrisonersRule(_Rule):
         return m
 
 
+# A town inside the Green Line named only in the summary does not move a
+# story whose headline is set in Gaza or the West Bank (site review
+# 2026-09-12: a Gaza school called Kafr Qasim put a Gaza innovation prize
+# under Palestinians in Israel).
+_PAL48_ELSEWHERE_TITLE = re.compile(
+    r"\bgaza|\bgazan|west bank|\bjenin\b|\bnablus\b|\bhebron\b|\bramallah\b|"
+    r"\btulkarem\b|\bqalqilya\b|\bbethlehem\b|khan younis|\brafah\b|"
+    r"غز[ةيّ]|الضفة|جنين|نابلس|الخليل|رام الله|طولكرم|قلقيلية|بيت لحم|خان يونس|رفح|"
+    r"دير البلح|جباليا", re.I)
+
+
 class _Pal48Rule(_Rule):
     def hit(self, title, dek):
-        return _PAL48_STRONG.search(f"{title} {dek}") or _PAL48_TITLE.search(title)
+        m = _PAL48_STRONG.search(title) or _PAL48_TITLE.search(title)
+        if m:
+            return m
+        m = _PAL48_STRONG.search(dek)
+        if m and _PAL48_ELSEWHERE_TITLE.search(title):
+            return None
+        return m
 
 
 class _ArabAidRule(_Rule):
@@ -1879,7 +1927,7 @@ def fetch_rss(feed, lang, now, max_age):
         if feed.get("type") == "gnews":  # gnews descriptions are just related-link clusters
             dek = ""
         else:
-            dek = truncate(clean_dek(strip_html(item_field(el, {"description", "summary", "encoded", "content"},
+            dek = truncate_dek(clean_dek(strip_html(item_field(el, {"description", "summary", "encoded", "content"},
                                                            nested=feed.get("type") == "youtube"))),
                            420 if feed.get("research") else 260)
         if dek == title:
@@ -2016,7 +2064,13 @@ REFUSAL_RX = re.compile(
     r"source material|provided material|news brief|full article|complete article|would be required|"
     r"not available in the|available in the (?:provided|source|material)|"
     r"encouraged to visit|visit the .{0,50}website|access to the (?:article|complete|full)|"
-    r"i (?:cannot|can.?t|am unable to)|unable to (?:produce|write|provide|generate|create|summari[sz]e)|"
+    r"i (?:cannot|can.?t|am unable to)|"
+    # "unable to produce" is ordinary news prose in the third person ("leaving
+    # bakeries unable to produce what is needed" cost the Gaza night-workers
+    # report its English edition, site review 2026-09-12). Only the refusal
+    # shape counts: the phrase opening the copy or a sentence, or in the
+    # first person.
+    r"(?:^|[.!?]\s+|\b(?:i|we)(?:'m|'re| am| are)\s+)unable to (?:produce|write|provide|generate|create|summari[sz]e)|"
     r"لا (?:أستطيع|يمكنني|نستطيع|يمكن(?:نا)?)\s*(?:إنتاج|كتابة|تقديم|صياغة|إعداد)|"
     # «يتعذر» alone is an ordinary Arabic verb ("cannot be done") that belongs in
     # news prose — it once cost the PNC diaspora report its whole Arabic edition
@@ -3166,7 +3220,7 @@ def load_originals(lang):
             continue
         item = {
             "title": truncate(meta["title"], 200),
-            "dek": truncate(re.sub(r"\s+", " ", body.split("\n\n")[0]), 260),
+            "dek": truncate_dek(re.sub(r"\s+", " ", body.split("\n\n")[0]), 260),
             "link": f"original:{path.stem}", "source_url": "",
             "date": date, "modified": modified,
             "source": TOP_SOURCE[lang], "source_id": "top-original",
@@ -4033,7 +4087,7 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
 /* ── section-accent surfaces (owner-approved design pass 2026-09-01) ──
    Tokens + .sa-* scopes are generated from SECTION_ACCENTS and appended to
    this sheet at import time; dark variants ride _DARK_RULES the same way. */
-.lt-thumb.tile,.sub-thumb.tile{display:flex;align-items:center;justify-content:center;background:var(--black);color:#f2eee8;font-family:var(--serif);font-weight:900;text-decoration:none;transition:filter var(--tr)}
+.lt-thumb.tile,.sub-thumb.tile,.rr-thumb.tile{display:flex;align-items:center;justify-content:center;background:var(--black);color:#f2eee8;font-family:var(--serif);font-weight:900;text-decoration:none;transition:filter var(--tr)}
 .lt-thumb.tile{width:52px;height:52px;border-radius:3px;font-size:1.3rem}
 .sub-thumb.tile{width:82px;aspect-ratio:3/2;border-radius:2px;font-size:1.45rem}
 .lt-thumb.tile span,.sub-thumb.tile span{opacity:.94}
@@ -4043,6 +4097,9 @@ nav.sections .nav-search button:hover{filter:brightness(1.12)}
 .hero-imgwrap.split .hs-art{display:block;height:100%}
 .hero-imgwrap.split .hs-art img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
 .hero-imgwrap.split:hover .hs-art img{transform:scale(1.03)}
+/* Infographic art keeps its edges in the split hero (site review 2026-09-12:
+   cover crops cut the first digits off a WHO figures board). */
+.hero-imgwrap.split .hs-art img[src$=".svg"]{object-fit:contain;background:var(--black)}
 .hs-panel{padding:1.9rem 1.6rem;display:flex;flex-direction:column;justify-content:center;gap:.7rem;border-inline-start:4px solid var(--sa,var(--red))}
 .hs-panel .label{color:#ff606d;font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;display:block}
 [lang=ar] .hs-panel .label{letter-spacing:.04em;font-size:.78rem}
@@ -4125,7 +4182,7 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .litetoggle{background:none;border:1px solid rgba(128,128,128,.55);border-radius:3px;cursor:pointer;font-family:var(--sans);font-size:.74rem;font-weight:800;line-height:1;padding:.24rem .4rem;color:inherit;opacity:1}
 .litetoggle:hover{opacity:1}
 [data-lite] .litetoggle{color:#3fd07c;border-color:#3fd07c;opacity:1}
-[data-lite] .hero-imgwrap>a,[data-lite] .sub-thumb,[data-lite] .lt-thumb,[data-lite] .card>a:first-child,[data-lite] .card .ph,[data-lite] .rowcard img,[data-lite] .rowcard .ph,[data-lite] .research-feat img,[data-lite] .research-feat .noimg,[data-lite] .fr-card img,[data-lite] .livedock,[data-lite] .story img.lede,[data-lite] .story div.lede,[data-lite] .photocredit,[data-lite] .embed,[data-lite] .qrbox,[data-lite] .livewrap,[data-lite] .story figure.lf{display:none!important}
+[data-lite] .hero-imgwrap>a,[data-lite] .sub-thumb,[data-lite] .lt-thumb,[data-lite] .card>a:first-child,[data-lite] .card .ph,[data-lite] .rowcard img,[data-lite] .rowcard .ph,[data-lite] .research-feat>a,[data-lite] .research-feat img,[data-lite] .research-feat .noimg,[data-lite] .fr-card img,[data-lite] .livedock,[data-lite] .story img.lede,[data-lite] .story div.lede,[data-lite] .photocredit,[data-lite] .embed,[data-lite] .qrbox,[data-lite] .livewrap,[data-lite] .story figure.lf{display:none!important}
 [data-lite] .hero-imgwrap{background:none;border-radius:0}
 [data-lite] .hero-overlay{position:static;padding:0;background:none}
 [data-lite] .hero-imgwrap>a>img{height:auto}
@@ -4158,7 +4215,13 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
    with art and dek, the next three stack beside it as headline rows with a
    small thumb — a newspaper page's rhythm instead of a wall of card grids. */
 .grid.lead{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);grid-template-rows:repeat(var(--rows,3),minmax(0,1fr));gap:0 1.8rem}
-.grid.lead .card:first-child{grid-row:1/span var(--rows,3)}
+.grid.lead .card:first-child{grid-row:1/span var(--rows,3);display:flex;flex-direction:column}
+/* The lead's art grows to fill whatever height the list beside it needs
+   (site review 2026-09-12: six or seven list rows left a 150px white void
+   inside the lead card under its dek). 16/9 is the floor, never the cap. */
+.grid.lead .card:first-child>a:first-child{position:relative;flex:1 1 auto;min-height:0;aspect-ratio:16/9}
+.grid.lead .card:first-child>a:first-child img,.grid.lead .card:first-child>a:first-child .ph{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto}
+.grid.lead .card:first-child .card-body{flex:0 0 auto}
 .grid.lead .card:first-child h3{font-size:1.45rem;line-height:1.24}
 [lang=ar] .grid.lead .card:first-child h3{line-height:1.55}
 .grid.lead .card:first-child .dek{margin-top:.55rem;font-family:var(--serif);font-size:.95rem;line-height:1.55;color:var(--muted);max-width:60ch}
@@ -4231,13 +4294,14 @@ section.block{padding-block:1.8rem;border-top:1px solid var(--line-dark)}
 .research-feat h3 a:hover{color:var(--red)}
 .research-feat .dek{margin-top:.8rem;font-family:var(--serif);font-size:.97rem;line-height:1.6;color:#33333b}
 [lang=ar] .research-feat .dek{line-height:1.85}
-.research-feat img{width:100%;height:100%;object-fit:cover;background:#e8e6df;min-height:240px}
+.research-feat>a{position:relative;display:block;min-height:240px}
+.research-feat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#e8e6df}
 .research-feat .noimg{background:linear-gradient(135deg,#0b0b0c 0 55%,#14241b 55% 100%);display:flex;align-items:center;justify-content:center;min-height:240px}
 .research-feat .noimg span{font-family:var(--serif);color:#3fd07c;font-size:3.2rem;font-weight:900}
 /* ── opinion ── */
 section.opinion{background:#f1efe8;border-top:4px solid var(--black);padding-block:1.8rem;margin-block:1.2rem}
 section.opinion .sec-head::before{background:var(--red)}
-.op-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.6rem}
+.op-grid{display:grid;grid-template-columns:repeat(var(--opcols,3),minmax(0,1fr));gap:1.6rem}
 .op-card{border-inline-start:3px solid var(--red);padding-inline-start:1rem}
 .op-card .q{font-family:var(--serif);font-size:2.2rem;color:var(--red);line-height:.6;display:block;margin-bottom:.4rem}
 .op-card h3{font-family:var(--serif);font-style:italic;font-weight:700;font-size:1.12rem;line-height:1.35}
@@ -4395,6 +4459,10 @@ section.tipband::after{content:"";position:absolute;inset-block:0;inset-inline-e
    top:0 fought for the same pixel row and hid the nav. */
 .backbar.static{position:static}
 .backbar a{display:block;max-width:800px;padding:.6rem 20px;color:#fff;font-size:.8rem;font-weight:700}
+/* The bar's controls inherit the page ink otherwise — the Aa lite toggle was
+   invisible on black on every story, section and search page in light mode
+   (site review 2026-09-12). */
+.backbar .themetoggle,.backbar .litetoggle{color:#f2eee8}
 .backbar a:hover{color:#f93549}
 /* ── footer ── */
 footer{background:var(--black);color:#b9b9c2;margin-top:2.5rem;padding-block:2.5rem;font-size:.84rem}
@@ -4443,6 +4511,13 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 }
 /* ── reduced motion ── */
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker .rail{overflow-x:auto}.ticker .track{animation:none;white-space:normal;flex-wrap:wrap}.topbar .dot,.latest h2::before{animation:none}.latest li,.latest li.fresh::before{animation:none}.hero-imgwrap>a>img,.card img{transition:none}}
+/* House tap targets on any touch pointer, not only narrow viewports —
+   a tablet at 1024px was getting 22px chrome controls. */
+@media(hover:none){
+  .themetoggle,.litetoggle,.tick-pause{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}
+  .topbar .lang{display:inline-flex;align-items:center;min-height:38px;padding-inline:.9rem}
+  .breadcrumbs a{display:inline-block;padding-block:.45rem}
+}
 .skiplink{position:absolute;inset-inline-start:-999px;top:0;background:var(--red);color:#fff;padding:.6rem 1rem;z-index:99;font-weight:800}
 .skiplink:focus{inset-inline-start:0}
 .share{margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap}
@@ -4482,7 +4557,8 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
 /* ── responsive ── */
 @media(max-width:960px){
   .research-feat{grid-template-columns:1fr}
-  .research-feat img,.research-feat .noimg{min-height:180px;order:-1}
+  .research-feat>a,.research-feat .noimg{min-height:180px;order:-1}
+  .research-feat>a{aspect-ratio:16/9;min-height:0}
   .hero-zone{grid-template-columns:1fr}
   .hero{border-inline-end:none;padding-inline-end:0}
   .hero-imgwrap.split{grid-template-columns:1fr}
@@ -4508,7 +4584,7 @@ footer .flagline{height:4px;background:linear-gradient(90deg,var(--black) 0 33%,
    swipeable snap strip like the running-files band — five stacked dark
    cards were a screen and a half of the phone front. */
 @media(max-width:960px){.fr-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:.8rem;padding-bottom:.35rem;scrollbar-width:none}.fr-grid::-webkit-scrollbar{display:none}.fr-card{flex:0 0 min(78%,320px);scroll-snap-align:start}.fr-card img{aspect-ratio:16/7}}
-.fr-card.vote{position:relative;isolation:isolate;background:linear-gradient(145deg,#0d121a,#141c28);border-color:rgba(101,130,175,.7)}
+.fr-card.vote{position:relative;isolation:isolate;background:#0d121a linear-gradient(145deg,#0d121a,#141c28);border-color:rgba(101,130,175,.7)}
 .fr-card.vote::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 110% at 90% 0%,rgba(143,168,207,.24),transparent 48%);pointer-events:none;z-index:0}
 .fr-card.vote:hover{border-color:rgba(143,168,207,.95);box-shadow:0 10px 30px rgba(20,35,60,.55)}
 .fr-card.vote img{aspect-ratio:16/7;opacity:1}
@@ -4638,7 +4714,8 @@ section.opinion{background:#17171c;border-top-color:var(--red)}
 .hero-overlay .label,.latest .t,.research-feat .kick,.story .kick,.op-card .q,.sec-head .viewall,.searchres .c,.story-toc .toc-title,.newmark,.hs-panel .label{color:#f93549}
 .hero-overlay h2 a:hover{color:#ffb8be}
 .card h3 a:hover,.rowcard h3 a:hover,.latest h3 a:hover,.op-card h3 a:hover,.research-feat h3 a:hover,.sub-body h3 a:hover{color:#f93549}
-.meta .src,.card .chip,.rowcard .chip,.sub-body .chip,.gi-src a,.gi-dl a,.gi-method summary,.story .desk-note a,.social-note a,.about-telegram a{color:#3fd07c}
+.meta .src,.card .chip,.rowcard .chip,.sub-body .chip,.gi-src a,.gi-dl a,.gi-method summary,.story .desk-note a,.social-note a,.about-telegram a,.story .byline{color:#3fd07c}
+.story .cta a{color:#fff}
 .story ul.lf,.story ol.lf{color:#d6d6de}
 .story-figs .fig span,.rail-list .t{color:#a3a8b2}
 .rail-live{background:#0b0b0c}
@@ -4927,7 +5004,7 @@ def story_figures_html(text, lang, limit=3):
         return ""
     label = "بالأرقام" if lang == "ar" else "By the numbers"
     tiles = "".join(
-        f'<div class="fig"><b>{esc(num)}</b><span>{esc(truncate(sent, 170))}</span></div>'
+        f'<div class="fig"><b>{esc(num)}</b><span>{esc(truncate_clause(sent, 190))}</span></div>'
         for num, sent in figs)
     return (f'<aside class="story-figs" aria-label="{label}">'
             f'<p class="figs-kick">{label}</p><div class="figs">{tiles}</div></aside>')
@@ -5038,7 +5115,7 @@ def story_live_figures_html(lang, cat):
         return ""
     kick = "أرقام حيّة" if lang == "ar" else "Live figures"
     more = "السجل الكامل ←" if lang == "ar" else "The full ledger →"
-    return (f'<div class="rail-live"><p class="rail-kick"><span class="dot"></span>{kick}</p>'
+    return (f'<div class="rail-live"><h2 class="rail-kick"><span class="dot"></span>{kick}</h2>'
             f'<div class="lf-cells">{"".join(cells)}</div>'
             f'<a class="rail-more" href="../#numbers">{more}</a></div>')
 
@@ -5050,7 +5127,7 @@ def story_rail_html(it, lang, related, rail_items, built_at):
     blocks = []
     if same:
         head = f"المزيد من {section_name}" if lang == "ar" else f"More from {section_name}"
-        blocks.append(f'<div class="rail-sec{accent_class(it["cat"])}"><p class="rail-kick">{esc(head)}</p>'
+        blocks.append(f'<div class="rail-sec{accent_class(it["cat"])}"><h2 class="rail-kick">{esc(head)}</h2>'
                       f'<ol class="rail-list">{"".join(rail_row(r, lang, "") for r in same)}</ol>'
                       f'<a class="rail-more" href="../section-{it["cat"]}.html">{t["view_all"]}</a></div>')
     live = story_live_figures_html(lang, it["cat"])
@@ -5058,7 +5135,7 @@ def story_rail_html(it, lang, related, rail_items, built_at):
         blocks.append(live)
     latest = [r for r in rail_items if r is not it and r not in same][:5]
     if latest:
-        blocks.append(f'<div class="rail-latest"><p class="rail-kick"><span class="dot"></span>{t["latest"]}</p>'
+        blocks.append(f'<div class="rail-latest"><h2 class="rail-kick"><span class="dot"></span>{t["latest"]}</h2>'
                       f'<ol class="rail-list">{"".join(rail_row(r, lang, "") for r in latest)}</ol></div>')
     if not blocks:
         return ""
@@ -5295,7 +5372,7 @@ def card(it, lang, pfx, dek=False):
     # featured report, and the story pages — mixed previews in a grid look
     # broken. The one exception is the LEAD card of a lead-and-list section
     # (design pass 2026-09-04), which carries its dek like a front-page lead.
-    dek_html = (f'<p class="dek">{summary_html(truncate(it["dek"], 200))}</p>'
+    dek_html = (f'<p class="dek">{summary_html(truncate_dek(it["dek"], 200))}</p>'
                 if dek and it.get("dek") else "")
     return (f'<article class="card">{card_media(it, pfx)}'
             f'<div class="card-body">'
@@ -5308,7 +5385,7 @@ def rowcard(it, lang, pfx, solo=False):
     # A lone story carrying a whole section band gets the full treatment —
     # bigger art, bigger headline, and its dek — so the band never reads as
     # an orphan card floating in empty space.
-    dek = (f'<p class="dek">{summary_html(truncate(it["dek"], 220))}</p>'
+    dek = (f'<p class="dek">{summary_html(truncate_dek(it["dek"], 220))}</p>'
            if solo and it.get("dek") else "")
     cls = "rowcard solo" if solo else "rowcard"
     return (f'<article class="{cls}">{card_media(it, pfx)}'
@@ -5622,7 +5699,7 @@ def on_this_day_html(lang, built_at):
 NAV_GROUPS_DEF = [
     ("regions", {"en": "News & Regions", "ar": "الأخبار والمناطق"},
      ["gaza", "westbank", "pal48", "prisoners", "politics", "diaspora", "news"]),
-    ("economy", {"en": "Economy & Aid", "ar": "الاقتصاد والإسناد"},
+    ("economy", {"en": "Economy & Aid", "ar": "الاقتصاد والإغاثة"},
      ["economy", "arabaid", "bitcoin"]),
     ("depth", {"en": "In-Depth", "ar": "في العمق"},
      ["accountability", "research", "israelipress", "uspress", "social", "opinion", "archive"]),
@@ -6018,7 +6095,7 @@ def render_page(lang, items, built_at):
     _eday = datetime(2026, 10, 27, tzinfo=timezone.utc)
     if now < _eday and any(
             it.get("link") == f"original:israel-election-2026-tracker.{lang}" for it in items):
-        _days = (_eday - now).days
+        _days = (_eday.date() - now.date()).days  # calendar days, as the files strip counts
         _vhref = _original_story_href("israel-election-2026-tracker")[lang]
         if lang == "ar":
             _vkick = "🗳 إسرائيل تنتخب · ٢٧ أكتوبر"
@@ -6084,10 +6161,14 @@ def render_page(lang, items, built_at):
 
     opinion_block = ""
     if len(sections["opinion"]) >= 2:
-        ops = "".join(op_card(it, lang, P) for it in sections["opinion"][:6])
+        picks = sections["opinion"][:6]
+        ops = "".join(op_card(it, lang, P) for it in picks)
+        # Two comment pieces fill the row rather than leaving an empty third
+        # column (site review 2026-09-12); three or more keep the house rhythm.
+        cols = min(len(picks), 3)
         opinion_block = (f'<section class="opinion" id="opinion"><div class="wrap">'
                          f'<div class="sec-head"><h2>{t["sections"]["opinion"]}</h2><span class="rule"></span></div>'
-                         f'<div class="op-grid">{ops}</div></div></section>')
+                         f'<div class="op-grid" style="--opcols:{cols}">{ops}</div></div></section>')
 
     _gp = __import__("gaza_panel")
     gaza_panel = _gp.panel(lang)
@@ -6118,6 +6199,11 @@ def render_page(lang, items, built_at):
             grid = ""
         elif len(pool) == 1:  # a lone story reads better full width than as an orphan card
             grid = f'<div class="rowlist">{rowcard(pool[0], lang, P, solo=True)}</div>'
+        elif len(pool) == 2:
+            # Two stories run as two rows (site review 2026-09-12): two
+            # 600px cards side by side read as a poster wall, and when both
+            # lacked photos the same category cover stood twice.
+            grid = f'<div class="rowlist">{"".join(rowcard(it, lang, P) for it in pool)}</div>'
         elif lead_list_section(k, _shown, len(pool)):
             # LEAD AND LIST (design pass 2026-09-04): the newest story leads
             # with its art and dek, the next stack as headline rows — the
@@ -7008,13 +7094,17 @@ Allow: /
 Sitemap: {BASE_URL}/sitemap.xml
 """
 
-REDIRECT_HTML = """<!DOCTYPE html>
+# The bare domain is where a shared link most often lands, so its canonical
+# and hreflang must name the SAME host as every other page (site review
+# 2026-09-12: this stub advertised the apex while the whole site canonicalises
+# to www, splitting the ranking signals in two).
+REDIRECT_HTML = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Times of Palestine</title>
 <meta name="description" content="Independent Palestine news, in English and Arabic — updated continuously.">
-<link rel="canonical" href="https://timesofpalestine.com/en/">
-<link rel="alternate" hreflang="en" href="https://timesofpalestine.com/en/">
-<link rel="alternate" hreflang="ar" href="https://timesofpalestine.com/ar/">
-<link rel="alternate" hreflang="x-default" href="https://timesofpalestine.com/en/">
+<link rel="canonical" href="{BASE_URL}/en/">
+<link rel="alternate" hreflang="en" href="{BASE_URL}/en/">
+<link rel="alternate" hreflang="ar" href="{BASE_URL}/ar/">
+<link rel="alternate" hreflang="x-default" href="{BASE_URL}/en/">
 <script>location.replace((navigator.language||"").toLowerCase().indexOf("ar")===0?"ar/":"en/");</script>
 <meta http-equiv="refresh" content="1;url=en/">
 </head><body><p><a href="en/">English</a> · <a href="ar/">العربية</a></p></body></html>"""

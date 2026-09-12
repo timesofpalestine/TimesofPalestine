@@ -719,6 +719,38 @@ from the story's own copy or the newsroom's live data — nothing invented:
   set small in the corner — a picture frame, not a billboard repeating the
   kicker. Photographs are untouched.
 
+## Site review 2026-09-12 (layout corrections)
+
+Recorded so the rules stay put; `tests/test_site_review_2026_09_12.py` pins
+each one.
+
+- **Split hero, infographic art:** `.hero-imgwrap.split .hs-art img[src$=".svg"]`
+  is `object-fit:contain` on the house black. A figures board is read, not
+  cropped — `cover` was cutting the first digits off the WHO evacuation
+  count.
+- **Lead-and-list, the lead's art grows:** the lead card is a flex column;
+  its art link is `flex:1` with `aspect-ratio:16/9` as the FLOOR and the
+  image fills it absolutely. Six or seven list rows beside a 16/9 lead had
+  left a 150px white void inside the card under the dek; the photo now
+  takes that height. Phones are untouched (one column, natural height).
+- **Featured report plate:** `.research-feat>a` is a relative block
+  (`min-height:240px`) and the image fills it. The row's height comes from
+  the body copy — a portrait og:image had been inflating the row to its
+  own intrinsic height.
+- **Two-story sections are two rows:** a block with exactly two stories
+  renders `.rowlist` rows (`rowcard`), not `.grid.g2`. Two 600px cards
+  read as a poster wall, and when neither story had a photo the same
+  category cover stood twice side by side. Three stories still take the
+  g3 grid; one story keeps the solo row.
+- **Backbar controls:** `.backbar .themetoggle,.backbar .litetoggle` are
+  ivory (`#f2eee8`). They inherited the page ink, so the Aa toggle was
+  invisible on black on every story, section and search page in light
+  mode.
+- **Deks end on a sentence:** card, row and original deks are cut with
+  `truncate_dek` (last sentence end that fits, no ellipsis); figure-tile
+  captions with `truncate_clause`. "…in remarks carried by…" is the banned
+  shape.
+
 ## Visual polish queue (running; daily editor may pick from here)
 
 - Photo-conversion queue for house-SVG covers stays the top lever
