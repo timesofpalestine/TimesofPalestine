@@ -42,6 +42,8 @@ body and the cover must be a photo. Convert first. Identified slugs:
 No `image:` header at all; these run on the branded category covers.
 Each needs a rights-cleared photo (or, failing that, a house subject SVG
 as interim). Slugs (non-israelipress): agora-palestine-bitcoin-aid-fund,
+palestinian-ngos-designation (added by the site review 2026-09-12 — the
+build warns on it every run),
 dedevelopment-to-depopulation, donor-aid-what-reaches-the-treasury,
 financial-freedom, gaza-clay-house-model-rebuild-2026-08-07,
 gaza-dialysis-chronic-care-2026-08-04-12, gaza-money-toll,

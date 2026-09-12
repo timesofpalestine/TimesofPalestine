@@ -5,8 +5,10 @@
 // the network response still wins whenever it arrives and refreshes the cache.
 const CACHE = "top-v4";
 const SHELL = [
+  // The publishing-status page was removed on the owner's order (2026-09-04);
+  // the search page is what a reader actually reaches for offline.
   "/", "/en/", "/ar/", "/en/about.html", "/ar/about.html",
-  "/en/status.html", "/ar/status.html", "/assets/site.css", "/manifest.json",
+  "/en/search.html", "/ar/search.html", "/assets/site.css", "/manifest.json",
   "/fonts/NotoKufiArabic-var.woff2"
 ];
 const MAX_PAGES = 120; // cap the runtime cache so dead story pages don't pile up
