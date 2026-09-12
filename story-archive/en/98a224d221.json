@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/woman-child-killed-13-wounded-by-israeli-attacks-in-gaza-including-children",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strike-kills-palestinian-southern-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-12T16:41:14+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "98a224d221",
- "score": 60.16,
+ "score": 59.93,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
