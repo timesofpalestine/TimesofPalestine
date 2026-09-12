@@ -6,7 +6,13 @@
    "article": "https://shehabnews.com/post/163948/%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A9-%D8%BA%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/12/idf-soldier-filmed-shooting-palestinian-in-leg-amid-west-bank-settler-standoff",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-12T15:40:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "35f6d1da7a",
- "score": 49.96,
+ "score": 49.71,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
