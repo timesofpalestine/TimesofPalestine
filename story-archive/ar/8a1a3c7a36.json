@@ -6,26 +6,32 @@
    "article": "https://t.me/gazaalannet/82907",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/735983",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-09-12T12:15:27+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-social-b-ar.svg",
+ "image": "https://cdn4.telesco.pe/file/KY-MDeqMNrFOnSSJPhqlm3ipSdYpObKPOScM7y6_CcaMUElzp3kpQ9afjWB_jR-4q2y8K3TPCW8nJaNbxWVwg0AB6EpYVrgRpaySDPMc72LmHlW08k59t51QaNAnp0ye0fxzx5VRqeGPe19FakjIhnLta70cgk6Zw2vvq_J7A4xRiK1jXtpVclRr8t4FH1iInC8-aXvlxeWiLNJmGvAvDVK9J5sDXWaznk7zZ3HSyIAgz7ybo9hTH8G3oY1xY_5_YZ213VGYTgiqahiKG-jpxRJBUDOQ6mpfLXK8Ej7TNWGJasDZKGFFI5yj1N_cIU0yPA4X7vqvKIFeC3kzuRthjQ",
  "lang": "ar",
  "link": "https://t.me/gazaalannet/82907",
  "max_age_hours": 72,
  "media": {
-  "credit": "Graphic: Times of Palestine",
+  "credit": "غزة الآن · تيليغرام",
   "licenseUrl": null,
-  "rightsBasis": "owned",
-  "source": "Times of Palestine"
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/gazaalannet/82907"
  },
  "modified": null,
  "original": false,
  "pid": "8a1a3c7a36",
- "score": 49.95,
+ "score": 49.39,
  "source": "غزة الآن · تيليغرام",
  "source_id": "tg-gazanow",
  "source_url": "https://t.me/gazaalannet",
