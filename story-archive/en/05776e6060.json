@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/west-bank-on-friday-israeli-colonizers-shoot-at-palestinian-farmers-troops-establish-new-military-outpost",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-attempting-target-west-bank-farm-open-fire-palestinians-wafa",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-11T17:43:57+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "05776e6060",
- "score": 44.18,
+ "score": 43.9,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
