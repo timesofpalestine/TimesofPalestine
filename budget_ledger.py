@@ -62,9 +62,14 @@ PRICES = {
     "claude-haiku-4-5": {"in": 1.00, "out": 5.00, "cache_read": 0.10, "cache_write": 1.25},
     "claude-fable-5-1": {"in": 10.00, "out": 50.00, "cache_read": 0.25, "cache_write": 12.50},
     "claude-opus-5": {"in": 5.00, "out": 25.00, "cache_read": 0.50, "cache_write": 6.25},
-    "claude-sonnet-5": {"in": 3.00, "out": 15.00, "cache_read": 0.30, "cache_write": 3.75},
+    # Sonnet 5 is $2/$10 — the $3/$15 row carried here until 2026-09-12 was
+    # Sonnet 4.6's, so every light edition was costed 50% high and the
+    # governor paced the editor harder than the money required.
+    "claude-sonnet-5": {"in": 2.00, "out": 10.00, "cache_read": 0.20, "cache_write": 2.50},
 }
-_FALLBACK_PRICE = PRICES["claude-opus-5"]
+# The most expensive row, computed — the old hardcoded Opus row under-counted
+# an unpriced Fable run by half, the opposite of what this fallback promises.
+_FALLBACK_PRICE = max(PRICES.values(), key=lambda row: row["in"])
 WEB_SEARCH_USD = 0.01           # $10 per 1,000 searches
 SAFETY_FACTOR = 1.10            # recorded estimates run 10% hot on purpose
 
@@ -271,8 +276,11 @@ def record(desk, model=None, usage=None, web_searches=0, usd=None, now=None,
                     ledger["tags"].get(key, 0.0) + amount, 6)
             if usd is not None:
                 runs = ledger.setdefault("runs", {}).setdefault(desk, [])
-                runs.append({"ts": (now or datetime.now(timezone.utc)).isoformat(),
-                             "usd": round(amount, 4), "tier": tier or "full"})
+                entry = {"ts": (now or datetime.now(timezone.utc)).isoformat(),
+                         "usd": round(amount, 4), "tier": tier or "full"}
+                if model:
+                    entry["model"] = model
+                runs.append(entry)
                 del runs[:-RUN_HISTORY]
             _save_ledger(ledger, now)
         return amount
@@ -459,11 +467,23 @@ _WEEKDAYS = ("mon", "tue", "wed", "thu", "fri", "sat", "sun")
 
 def tier_prices(cfg, ledger, desk):
     """Configured price per tier, replaced by the median of the last five
-    recorded runs of that tier once two or more exist."""
+    recorded runs of that tier ON ITS CURRENT MODEL once two or more exist.
+
+    A learned price belongs to a model, not to a tier name (cost review
+    2026-09-12). The editor's purse reached -$57.75 this month because the
+    full edition's estimate — $18.51, the median of two runs on Opus — kept
+    authorising runs after the edition moved to a model priced at twice the
+    tokens: the governor could not see that its own yardstick had expired.
+    A run recorded before this field existed carries no model and is not
+    counted, so a switch falls back to the configured seed until the new
+    model has a track record of its own."""
     prices = {}
     history = ledger.get("runs", {}).get(desk, [])
     for name, spec in (cfg.get("tiers", {}).get(desk) or {}).items():
-        seen = [float(r.get("usd") or 0) for r in history if r.get("tier") == name]
+        model = spec.get("model")
+        seen = [float(r.get("usd") or 0) for r in history
+                if r.get("tier") == name
+                and (not model or r.get("model") == model)]
         seen = [v for v in seen if v > 0][-5:]
         if len(seen) >= 2:
             prices[name] = statistics.median(seen)
@@ -590,7 +610,7 @@ def _cadence(counts):
     return ", ".join(f"{n} {name}" for name, n in counts.items()) or "nothing"
 
 
-def forecast(now=None, what_if=(200, 250, 300, 400)):
+def forecast(now=None, what_if=(200, 250, 300, 400, 500, 600)):
     """Owner-facing: where the month is going, what the purse buys, and
     what each bigger budget would buy — so the one knob is turned with
     eyes open, never guessed."""
@@ -627,12 +647,14 @@ def forecast(now=None, what_if=(200, 250, 300, 400)):
             lines.append(f"  {desk}: ${spent:.2f} spent, cap ${cap:.2f}, purse "
                          f"${balance:.2f} (refills ${cap / days:.2f}/day)")
     tiered = [d for d in DESKS if cfg.get("tiers", {}).get(d)]
-    if tiered and what_if:
+    # Only the levels ABOVE today's knob are worth showing, and the heading
+    # only when at least one of them is (it printed over an empty table once
+    # the knob passed the top what-if level — cost review 2026-09-12).
+    higher = [b for b in (what_if or ()) if b > cfg["budget"]]
+    if tiered and higher:
         lines.append("  what the knob buys (a normal month at today's wire rate, "
                      "then the rest of this one):")
-        for budget in what_if:
-            if budget <= cfg["budget"]:
-                continue
+        for budget in higher:
             parts = []
             for desk in tiered:
                 normal, cap = simulate_month(cfg, ledger, desk, now, budget, fresh=True)
@@ -672,7 +694,14 @@ def main(argv):
         i = argv.index("--record-usd")
         desk, usd = argv[i + 1], float(argv[i + 2])
         tier = argv[argv.index("--tier") + 1] if "--tier" in argv else None
-        recorded = record(desk, usd=usd, tier=tier)
+        # Stamp the run with the model its tier was configured to use, so the
+        # learned price expires when the model changes (cost review
+        # 2026-09-12). --model wins when the caller knows better.
+        model = argv[argv.index("--model") + 1] if "--model" in argv else None
+        if not model and tier:
+            spec = (load_config().get("tiers", {}).get(desk) or {}).get(tier) or {}
+            model = spec.get("model")
+        recorded = record(desk, usd=usd, tier=tier, model=model)
         print(f"budget: recorded ${recorded:.2f} for {desk}"
               + (f" ({tier} tier)" if tier else ""))
         return 0

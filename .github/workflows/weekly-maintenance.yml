@@ -57,7 +57,10 @@ jobs:
           # the action's fast-mode default errored against this key, and
           # full output keeps API-side failures diagnosable from the log.
           show_full_output: true
-          claude_args: '--model claude-opus-5 --max-turns 150 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"'
+          # Sonnet 5 (owner order 2026-09-12, cheapest model that can do the
+          # job): this cycle reads workflow logs, runs the test/build gate and
+          # ships small safe fixes — an engineering sweep, not research.
+          claude_args: '--model claude-sonnet-5 --max-turns 150 --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"'
           prompt: |
             You are Claude, running the WEEKLY MAINTENANCE cycle for Times of
             Palestine (owner directive 2026-08-31). This is an engineering
