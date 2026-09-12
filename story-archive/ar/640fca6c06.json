@@ -1,0 +1,33 @@
+{
+ "brief": "شنّت إسرائيل غارة مدفعية على عدد من المناطق في جنوب لبنان، بحسب وسائل إعلام لبنانية. استهدف القصف وادي السلوقي وبلدة النبطية الفوقا ووادي الحجير، وهي مناطق تقع في الشريط الحدودي الجنوبي للبلاد.\n\nوتأتي الغارة في سياق التصعيد العسكري المستمر على الحدود اللبنانية الإسرائيلية، إذ تشهد المنطقة الجنوبية توترات متكررة منذ أشهر.\n\nولم تترافق الضربات بإعلانات فورية عن خسائر بشرية أو أضرار على الأرض، غير أنّ القصف المدفعي عادة ما يخلف دماراً كبيراً في المناطق المأهولة بالسكان.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/320747",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-12T06:06:18+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/320747",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "640fca6c06",
+ "score": 48.6,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "إسرائيل تقصف مناطق جنوبي لبنان بنيران مدفعية"
+}
