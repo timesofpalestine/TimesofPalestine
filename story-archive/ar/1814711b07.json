@@ -13,6 +13,12 @@
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
    "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/9785-7",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": false
   }
  ],
  "date": "2026-09-12T07:20:53+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "1814711b07",
- "score": 62.83,
+ "score": 62.51,
  "source": "غزة الآن · تيليغرام",
  "source_id": "tg-gazanow",
  "source_url": "https://t.me/gazaalannet",

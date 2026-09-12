@@ -1,0 +1,33 @@
+{
+ "brief": "يعمل الصحفيون في غزة في ظروف قاسية جداً، إذ يفتقرون إلى أبسط الموارد اللازمة لممارسة عملهم. تعتمد أجهزتهم على بطاريات نادرة وكاميرات متهالكة يثبتونها بالصخور، فيما يخضع القطاع لحصار شامل يزيد من معاناتهم اليومية.\n\nرغم هذه المحدودية الشديدة، يصر الصحفيون على البث الإعلامي والإمساك بخيط التغطية الإخبارية. يقابلون بعملهم هذا ما يعتبرونه جهوداً لإسكات أصواتهم والتعتيم على المعلومات الخارجة من القطاع.\n\nيعكس إصرار هؤلاء الصحفيين على الاستمرار قيمتهم الاحترافية وتضحياتهم للحفاظ على حق المعرفة وسط ظروف تهدد بقاءهم ذاته.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.net/politics/2026/9/12/%d8%ad%d8%aa%d9%89-%d8%a7%d9%84%d9%83%d8%a7%d9%85%d9%8a%d8%b1%d8%a7%d8%aa-%d8%a3%d9%88%d8%b4%d9%83%d8%aa-%d8%b9%d9%84%d9%89-%d8%a7%d9%84%d8%a7%d9%86%d8%b7%d9%81%d8%a7%d8%a1-%d8%a7%d9%84%d8%a8%d8%ab?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-12T05:55:08+00:00",
+ "dek": "تحت الموت والحصار، يخوض صحفيو غزة معركة للبقاء ونقل الحقيقة. ببطاريات مفقودة وكاميرات متهالكة مسنودة بالصخر، يقاوم البث الإعلامي محاولات الاحتلال لإطفاء شعلة الأمل والتعتيم على العدسة.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.net/wp-content/uploads/2026/09/image-1789200952.jpg?resize=1920%2C1080&quality=80",
+ "lang": "ar",
+ "link": "https://www.aljazeera.net/politics/2026/9/12/%d8%ad%d8%aa%d9%89-%d8%a7%d9%84%d9%83%d8%a7%d9%85%d9%8a%d8%b1%d8%a7%d8%aa-%d8%a3%d9%88%d8%b4%d9%83%d8%aa-%d8%b9%d9%84%d9%89-%d8%a7%d9%84%d8%a7%d9%86%d8%b7%d9%81%d8%a7%d8%a1-%d8%a7%d9%84%d8%a8%d8%ab?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "الجزيرة نت",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.net/politics/2026/9/12/%d8%ad%d8%aa%d9%89-%d8%a7%d9%84%d9%83%d8%a7%d9%85%d9%8a%d8%b1%d8%a7%d8%aa-%d8%a3%d9%88%d8%b4%d9%83%d8%aa-%d8%b9%d9%84%d9%89-%d8%a7%d9%84%d8%a7%d9%86%d8%b7%d9%81%d8%a7%d8%a1-%d8%a7%d9%84%d8%a8%d8%ab?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c9d6aea4da",
+ "score": 47.52,
+ "source": "الجزيرة نت",
+ "source_id": "aja",
+ "source_url": "https://www.aljazeera.net/",
+ "title": "صحفيو غزة يواصلون التغطية رغم انقطاع الكهرباء والحصار"
+}
