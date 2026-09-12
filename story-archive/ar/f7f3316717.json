@@ -1,0 +1,33 @@
+{
+ "brief": "قوات الاحتلال الإسرائيلي اقتحمت مدينة البيرة في الضفة الغربية، وفقاً لشبكة قدس. ولم توضح المصادر تفاصيل العملية أو نطاقها الجغرافي بشكل دقيق في الساعات الأولى من الاقتحام.\n\nويأتي الاقتحام ضمن سياق التصعيد الأمني المستمر الذي تشهده مناطق السلطة الفلسطينية، إذ تشن قوات الاحتلال بشكل منتظم عمليات في مدن وبلدات الضفة الغربية. ولم ترد معلومات فورية عن عدد القوات المنتشرة أو الأهداف المحددة للعملية حتى لحظة نشر الخبر.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/QudsN/736008",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-12T15:13:10+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/QudsN/736008",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f7f3316717",
+ "score": 63.1,
+ "source": "شبكة قدس · تيليغرام",
+ "source_id": "tg-qudsn",
+ "source_url": "https://t.me/QudsN",
+ "title": "قوات الاحتلال تقتحم مدينة البيرة"
+}
