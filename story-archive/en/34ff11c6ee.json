@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli military operations in Gaza have killed 73,783 Palestinians and wounded 174,738 others since October 7, 2023, Palestinian medical sources reported. The accumulated toll includes 1,369 Palestinians killed since a ceasefire took effect, according to the sources cited by Palestine News Network.\n\nGaza hospitals have continued to receive casualties from ongoing fighting. Medical sources documented the arrival of at least 10 Palestinian bodies at medical facilities during the period following the ceasefire announcement. The figures represent a significant portion of the overall death and injury count documented by Palestinian health authorities tracking casualties throughout the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://english.pnn.ps/news/48298",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-12T11:12:00+00:00",
+ "dek": "GAZA/ PNN/ The death toll from Israel’s war in the Gaza Strip has risen to 73,783 Palestinians, with 174,738 others wounded since Oct. 7, 2023, according to Palestinian medical sources. The sources said Gaza hospitals received the bodies of 10 Palestinians…",
+ "dup_of": null,
+ "image": "https://media.pnn.ps/english/storage/images/news/2026/1789211678-1847652987.JPG",
+ "lang": "en",
+ "link": "https://english.pnn.ps/news/48298",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Palestine News Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://english.pnn.ps/news/48298"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "34ff11c6ee",
+ "score": 63.88,
+ "source": "Palestine News Network",
+ "source_id": "pnn",
+ "source_url": "https://english.pnn.ps/",
+ "title": "Gaza death toll reaches 73,783 since war began October 2023"
+}
