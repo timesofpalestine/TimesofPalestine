@@ -6,7 +6,13 @@
    "article": "https://felesteen.news/post/186225/%D8%AE%D8%B7%D9%8A%D8%A8-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89-%D9%8A%D8%AF%D8%B9%D9%88-%D8%A5%D9%84%D9%89-%D8%B4%D8%AF-%D8%A7%D9%84%D8%B1%D8%AD%D8%A7%D9%84-%D9%84%D9%84%D9%85%D8%B3%D8%AC%D8%AF-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%83",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393791",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
   }
  ],
  "date": "2026-09-11T13:49:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "f6c49ae15b",
- "score": 38.29,
+ "score": 38.04,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
