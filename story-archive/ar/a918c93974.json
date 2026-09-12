@@ -7,6 +7,18 @@
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.pbc.ps/34633-43",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/163888/%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-%D9%8A%D8%B3%D8%B1%D9%82%D9%88%D9%86-%D8%A3%D8%BA%D9%86%D8%A7%D9%85%D8%A7-%D9%85%D9%86-%D8%A8%D9%8A%D8%AA%D8%A7-%D8%AC%D9%86%D9%88%D8%A8-%D9%86%D8%A7%D8%A8%D9%84%D8%B3",
+   "name": "وكالة شهاب (حصري)",
+   "url": "https://shehabnews.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-11T17:52:15+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "a918c93974",
- "score": 40.06,
+ "score": 39.79,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
