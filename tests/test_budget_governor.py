@@ -356,7 +356,10 @@ class PurseTests(unittest.TestCase):
             self._cfg(tp)
             now = _iso(3)
             for usd in (2.0, 3.0, 2.5):
-                budget_ledger.record("editor", usd=usd, now=now, tier="light")
+                # Runs carry the model their tier ran on (2026-09-12): a
+                # learned price must not survive a model switch.
+                budget_ledger.record("editor", usd=usd, now=now, tier="light",
+                                     model="claude-sonnet-5")
             cfg = budget_ledger.load_config()
             ledger = budget_ledger.load_ledger(now)
             prices = budget_ledger.tier_prices(cfg, ledger, "editor")

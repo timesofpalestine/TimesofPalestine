@@ -276,8 +276,11 @@ def record(desk, model=None, usage=None, web_searches=0, usd=None, now=None,
                     ledger["tags"].get(key, 0.0) + amount, 6)
             if usd is not None:
                 runs = ledger.setdefault("runs", {}).setdefault(desk, [])
-                runs.append({"ts": (now or datetime.now(timezone.utc)).isoformat(),
-                             "usd": round(amount, 4), "tier": tier or "full"})
+                entry = {"ts": (now or datetime.now(timezone.utc)).isoformat(),
+                         "usd": round(amount, 4), "tier": tier or "full"}
+                if model:
+                    entry["model"] = model
+                runs.append(entry)
                 del runs[:-RUN_HISTORY]
             _save_ledger(ledger, now)
         return amount
@@ -464,11 +467,23 @@ _WEEKDAYS = ("mon", "tue", "wed", "thu", "fri", "sat", "sun")
 
 def tier_prices(cfg, ledger, desk):
     """Configured price per tier, replaced by the median of the last five
-    recorded runs of that tier once two or more exist."""
+    recorded runs of that tier ON ITS CURRENT MODEL once two or more exist.
+
+    A learned price belongs to a model, not to a tier name (cost review
+    2026-09-12). The editor's purse reached -$57.75 this month because the
+    full edition's estimate — $18.51, the median of two runs on Opus — kept
+    authorising runs after the edition moved to a model priced at twice the
+    tokens: the governor could not see that its own yardstick had expired.
+    A run recorded before this field existed carries no model and is not
+    counted, so a switch falls back to the configured seed until the new
+    model has a track record of its own."""
     prices = {}
     history = ledger.get("runs", {}).get(desk, [])
     for name, spec in (cfg.get("tiers", {}).get(desk) or {}).items():
-        seen = [float(r.get("usd") or 0) for r in history if r.get("tier") == name]
+        model = spec.get("model")
+        seen = [float(r.get("usd") or 0) for r in history
+                if r.get("tier") == name
+                and (not model or r.get("model") == model)]
         seen = [v for v in seen if v > 0][-5:]
         if len(seen) >= 2:
             prices[name] = statistics.median(seen)
@@ -679,7 +694,14 @@ def main(argv):
         i = argv.index("--record-usd")
         desk, usd = argv[i + 1], float(argv[i + 2])
         tier = argv[argv.index("--tier") + 1] if "--tier" in argv else None
-        recorded = record(desk, usd=usd, tier=tier)
+        # Stamp the run with the model its tier was configured to use, so the
+        # learned price expires when the model changes (cost review
+        # 2026-09-12). --model wins when the caller knows better.
+        model = argv[argv.index("--model") + 1] if "--model" in argv else None
+        if not model and tier:
+            spec = (load_config().get("tiers", {}).get(desk) or {}).get(tier) or {}
+            model = spec.get("model")
+        recorded = record(desk, usd=usd, tier=tier, model=model)
         print(f"budget: recorded ${recorded:.2f} for {desk}"
               + (f" ({tier} tier)" if tier else ""))
         return 0

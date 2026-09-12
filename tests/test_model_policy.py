@@ -81,6 +81,49 @@ class LedgerPriceTests(unittest.TestCase):
                          "an unpriced model must over-count, never under-count")
 
 
+class LearnedPriceTests(unittest.TestCase):
+    """A learned price belongs to a model, not to a tier name."""
+
+    CFG = {"tiers": {"editor": {
+        "full": {"model": "claude-opus-5", "usd": 18, "max_turns": 300},
+        "light": {"model": ROUTINE, "usd": 6, "max_turns": 200}}}}
+
+    def test_runs_on_the_current_model_set_the_price(self):
+        ledger = {"runs": {"editor": [
+            {"usd": 20.0, "tier": "full", "model": "claude-opus-5"},
+            {"usd": 22.0, "tier": "full", "model": "claude-opus-5"}]}}
+        prices = budget_ledger.tier_prices(self.CFG, ledger, "editor")
+        self.assertAlmostEqual(prices["full"], 21.0)
+
+    def test_a_model_switch_falls_back_to_the_seed(self):
+        # The editor's purse reached -$57.75 in September because the full
+        # edition's $18.51 estimate — learned from two Opus runs — kept
+        # authorising runs after the edition moved to a model priced at twice
+        # the tokens. The yardstick must expire with the model.
+        ledger = {"runs": {"editor": [
+            {"usd": 35.0, "tier": "full", "model": BY_HAND_ONLY},
+            {"usd": 37.0, "tier": "full", "model": BY_HAND_ONLY}]}}
+        prices = budget_ledger.tier_prices(self.CFG, ledger, "editor")
+        self.assertEqual(prices["full"], 18.0, "another model's runs must not price this one")
+
+    def test_legacy_records_without_a_model_are_not_counted(self):
+        ledger = {"runs": {"editor": [
+            {"usd": 30.0, "tier": "full"}, {"usd": 32.0, "tier": "full"}]}}
+        prices = budget_ledger.tier_prices(self.CFG, ledger, "editor")
+        self.assertEqual(prices["full"], 18.0)
+
+    def test_a_recorded_run_carries_its_model(self):
+        src = (ROOT / "budget_ledger.py").read_text(encoding="utf-8")
+        block = src.split('runs = ledger.setdefault("runs"', 1)[1][:600]
+        self.assertIn('entry["model"] = model', block)
+
+    def test_the_light_seed_matches_what_light_runs_cost(self):
+        # Dropping the model-less history must not change today's pacing:
+        # the recorded Sonnet runs ran 2.21, 6.02 and 5.82.
+        cfg = json.loads((ROOT / "editorial" / "budget.json").read_text(encoding="utf-8"))
+        self.assertLessEqual(cfg["tiers"]["editor"]["light"]["usd"], 7)
+
+
 class ScheduleTests(unittest.TestCase):
     def test_no_scheduled_workflow_pins_fable(self):
         for wf in sorted(WORKFLOWS.glob("*.yml")):

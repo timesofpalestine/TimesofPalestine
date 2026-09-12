@@ -53,7 +53,7 @@
       "light": {
         "model": "claude-sonnet-5",
         "max_turns": 200,
-        "usd": 10
+        "usd": 6
       }
     }
   }
