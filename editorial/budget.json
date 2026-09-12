@@ -28,16 +28,24 @@
     "routine cycles (editor LIGHT, weekly maintenance) run on Sonnet 5; research",
     "and the editor's FULL mandate run on Opus 5. Claude Fable 5.1 is reserved",
     "for extensive research the owner dispatches by hand — no scheduled desk may",
-    "pin it, and this file may not name it in a tier."
+    "pin it, and this file may not name it in a tier.",
+    "ORIGINALS FIRST (cost review 2026-09-12): the paper was aggregating because",
+    "the desks that write could not afford to run. Measured over September: a",
+    "LIGHT edition produced 29 originals for $11.84 — $0.41 a bilingual story —",
+    "against $2.07 for an investigations report and $1.76 for a full edition.",
+    "The light edition is the cheapest originals engine by five times, so the",
+    "weights fund it first and the FULL edition drops to weekly (Monday). Days",
+    "with no editor run average 1.8 originals; days with a light edition, 11-18.",
+    "`--forecast` reports what each budget level buys in originals per day."
   ],
   "monthly_budget_usd": 400,
   "hard_stop_fraction": 0.92,
   "allocations": {
     "briefs": 0.12,
-    "investigations": 0.22,
-    "editor": 0.3,
-    "washington": 0.24,
-    "maintenance": 0.04
+    "investigations": 0.18,
+    "editor": 0.49,
+    "washington": 0.16,
+    "maintenance": 0.05
   },
   "tiers": {
     "editor": {
@@ -46,8 +54,7 @@
         "max_turns": 300,
         "usd": 18,
         "days": [
-          "mon",
-          "thu"
+          "mon"
         ]
       },
       "light": {

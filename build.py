@@ -27,7 +27,7 @@ import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from html.entities import name2codepoint
 from pathlib import Path
 from urllib.parse import quote, urljoin, urlsplit
@@ -7081,6 +7081,50 @@ def render_search_page(lang, built_at, cats=()):
 </body></html>"""
 
 
+# Hand-maintained reference data ages silently (site review 2026-09-12: the
+# prisoners ledger ran 26 days old and nothing on the site or in the build
+# said so). These files have no API behind them — the newsroom copies the
+# figures from the institution that publishes them — so the build announces
+# a stale one exactly like a stale section, and it becomes the daily
+# editor's same-day assignment. Days, not hours: these move on their own
+# cadence, not the news cycle's.
+REFERENCE_DATA = (
+    ("editorial/prisoners.json", "asOf", 14,
+     "prisoners ledger (Addameer / هيئة شؤون الأسرى)"),
+    ("editorial/markets.json", "lastChecked", 4,
+     "Al-Quds index close (pex.ps / Investing.com PLE)"),
+)
+
+
+def reference_data_age(built_at, entries=REFERENCE_DATA):
+    """[(label, age_days, limit_days, as_of)] for each file, stalest first.
+    Fail-open: a file we cannot read or date is skipped, never fatal."""
+    out = []
+    for rel, key, limit, label in entries:
+        try:
+            data = json.loads((ROOT / rel).read_text(encoding="utf-8"))
+            stamp = str(data.get(key) or "")[:10]
+            age = (built_at.date() - date.fromisoformat(stamp)).days
+        except Exception:
+            continue
+        out.append((label, age, limit, stamp))
+    return sorted(out, key=lambda row: row[1] - row[2], reverse=True)
+
+
+def check_reference_data(built_at):
+    try:
+        for label, age, limit, stamp in reference_data_age(built_at):
+            if age <= limit:
+                continue
+            print(f"  ⚠ stale reference data: {label} is {age} days old "
+                  f"(as of {stamp}, target {limit}d) — refresh at source")
+            print(f"::warning::stale reference data: {label} {age} days old "
+                  f"(as of {stamp}) — the daily editor refreshes it from the "
+                  "publishing institution")
+    except Exception as exc:
+        print(f"  ⚠ reference-data check failed open: {type(exc).__name__}")
+
+
 def render_sitemap(langs_items, built_at):
     day = built_at.strftime("%Y-%m-%d")
     urls = []
@@ -7579,6 +7623,7 @@ def main():
                       "48h recycle fallback; queue new topics")
     except Exception as e:
         print(f"  ⚠ section freshness ledger failed open: {type(e).__name__}: {e}")
+    check_reference_data(built_at)
     try:  # budget governor status (owner order 2026-09-01) — fail-open
         import budget_ledger
         _bline = budget_ledger.status_line()
