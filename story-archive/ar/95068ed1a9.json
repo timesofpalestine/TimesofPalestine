@@ -1,0 +1,33 @@
+{
+ "brief": "استهدفت قوات إسرائيلية بالقصف المدفعي بلدة ميس الجبل جنوبي لبنان، وفق تقارير وسائل إعلام لبنانية. تقع البلدة في المنطقة الحدودية الجنوبية التي شهدت تصعيداً متكرراً بين الجانبين خلال الأشهر الماضية.\n\nلم تتضح حتى الآن حصيلة الخسائر المادية أو البشرية من القصف. كما لم تصدر بيانات رسمية من السلطات اللبنانية بشأن ملابسات الحادثة أو ردود الفعل عليها.\n\nتشهد الحدود اللبنانية الإسرائيلية توترات أمنية دورية، مع تبادل متكرر للقصف بين الجانبين في السنوات الأخيرة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/320754",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-12T06:42:17+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/320754",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "95068ed1a9",
+ "score": 48.48,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قصف إسرائيلي يستهدف بلدة جنوب لبنان"
+}
