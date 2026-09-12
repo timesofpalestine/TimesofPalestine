@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="t d">
+  <title id="t">WHO counts 12,913 Gaza patients medically evacuated since October 2023</title>
+  <desc id="d">Dark editorial graphic. Large figure 12,913 patients medically evacuated from Gaza since October 2023, including 6,186 children and about 16,000 companions, with about 18,000 still waiting. A bar chart shows the last public WHO country breakdown as of 21 October 2025: Egypt 3,995 patients, United Arab Emirates 1,499, Qatar 970. Bilingual English and Arabic labels.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111214"/>
+      <stop offset="1" stop-color="#1d1e21"/>
+    </linearGradient>
+    <linearGradient id="barGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c7a86b"/>
+      <stop offset="1" stop-color="#9d8449"/>
+    </linearGradient>
+    <linearGradient id="barGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#59a97d"/>
+      <stop offset="1" stop-color="#286344"/>
+    </linearGradient>
+    <linearGradient id="barRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C8102E"/>
+      <stop offset="1" stop-color="#8a1f2d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+  <!-- kicker -->
+  <text x="90" y="86" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="3" fill="#c7a86b">WORLD HEALTH ORGANIZATION · 11 AUGUST</text>
+
+  <!-- headline -->
+  <text x="90" y="164" font-family="'Source Serif 4',Georgia,serif" font-size="56" fill="#f2eee8">12,913 patients medically evacuated</text>
+  <text x="90" y="228" font-family="'Source Serif 4',Georgia,serif" font-size="56" fill="#f2eee8">from Gaza since October 2023</text>
+  <text x="90" y="284" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#aaa9a5">12,913 مريضاً جرى إجلاؤهم من غزة منذ تشرين الأول 2023</text>
+
+  <line x1="90" y1="320" x2="1510" y2="320" stroke="#3a3c40" stroke-width="2"/>
+
+  <!-- LEFT: headline figure -->
+  <text x="90" y="466" font-family="'Source Serif 4',Georgia,serif" font-size="132" fill="#c7a86b">12,913</text>
+  <text x="90" y="508" font-family="'Libre Franklin',Arial,sans-serif" font-size="26" letter-spacing="1" fill="#f2eee8">patients evacuated, WHO count</text>
+  <text x="90" y="546" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#aaa9a5">مرضى تم إجلاؤهم طبياً</text>
+
+  <!-- stat rows -->
+  <rect x="90" y="600" width="6" height="62" fill="#59a97d"/>
+  <text x="116" y="634" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#f2eee8">6,186</text>
+  <text x="260" y="626" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">of them children</text>
+  <text x="260" y="656" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">منهم من الأطفال</text>
+
+  <rect x="90" y="682" width="6" height="62" fill="#c7a86b"/>
+  <text x="116" y="716" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#f2eee8">~16,000</text>
+  <text x="260" y="708" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">companions travelling with them</text>
+  <text x="260" y="738" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">مرافقون للمرضى</text>
+
+  <rect x="90" y="764" width="6" height="62" fill="#C8102E"/>
+  <text x="116" y="798" font-family="'Source Serif 4',Georgia,serif" font-size="40" fill="#f2eee8">~18,000</text>
+  <text x="260" y="790" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">still waiting, OCHA March 2026</text>
+  <text x="260" y="820" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">ما زالوا بانتظار الإجلاء</text>
+
+  <!-- divider -->
+  <line x1="830" y1="360" x2="830" y2="840" stroke="#3a3c40" stroke-width="2"/>
+
+  <!-- RIGHT: country breakdown -->
+  <text x="890" y="400" font-family="'Libre Franklin',Arial,sans-serif" font-size="24" letter-spacing="1" fill="#f2eee8">Last public WHO breakdown, to 21 October 2025</text>
+  <text x="890" y="434" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5">آخر توزيع معلن للدول المضيفة</text>
+
+  <!-- Egypt -->
+  <text x="890" y="492" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Egypt</text>
+  <text x="1010" y="492" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">مصر</text>
+  <rect x="890" y="504" width="460" height="36" rx="4" fill="url(#barGold)"/>
+  <text x="1366" y="532" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#c7a86b">3,995</text>
+
+  <!-- UAE -->
+  <text x="890" y="596" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">United Arab Emirates</text>
+  <text x="1132" y="596" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">الإمارات</text>
+  <rect x="890" y="608" width="173" height="36" rx="4" fill="url(#barGreen)"/>
+  <text x="1079" y="636" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#59a97d">1,499</text>
+
+  <!-- Qatar -->
+  <text x="890" y="700" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Qatar</text>
+  <text x="1010" y="700" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">قطر</text>
+  <rect x="890" y="712" width="112" height="36" rx="4" fill="url(#barRed)"/>
+  <text x="1018" y="740" font-family="'Source Serif 4',Georgia,serif" font-size="30" fill="#C8102E">970</text>
+
+  <text x="890" y="800" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5" textLength="694" lengthAdjust="spacingAndGlyphs">Rafah is the sole exit; Kerem Shalom stays closed to medical cases</text>
+  <text x="890" y="830" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">معبر رفح هو المنفذ الوحيد للحالات الطبية</text>
+
+  <line x1="90" y1="862" x2="1510" y2="862" stroke="#3a3c40" stroke-width="2"/>
+  <text x="90" y="888" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">Sources: WHO, MSF, OCHA · المصادر: منظمة الصحة العالمية، أطباء بلا حدود، أوتشا</text>
+</svg>

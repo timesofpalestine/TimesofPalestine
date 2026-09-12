@@ -1,0 +1,33 @@
+{
+ "brief": "Israel's destruction of homes and infrastructure across Gaza has forced Palestinians to rent generators on an hourly basis to power essential appliances, Al Jazeera English reported. With widespread damage to the electrical grid and fuel shortages, residents lack access to reliable electricity for basic needs like food preservation and phone charging.\n\nThe generator rental system has emerged as Palestinians navigate a severe humanitarian crisis. Those unable to afford ownership or secure fuel supplies depend on hourly rentals to operate refrigerators, medical equipment, and other devices necessary for survival. The practice underscores the scale of destruction to civilian infrastructure and the daily struggle residents face to maintain basic living conditions amid ongoing instability in the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/12/left-with-nothing-people-in-gaza-are-forced-to-rent-generators-by-the-hour?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-12T11:43:28+00:00",
+ "dek": "Israel's destruction of homes and infrastructure in Gaza has forced Palestinians to rent generators by the hour.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/873A2268-copy-3-1789209822.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/12/left-with-nothing-people-in-gaza-are-forced-to-rent-generators-by-the-hour?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/12/left-with-nothing-people-in-gaza-are-forced-to-rent-generators-by-the-hour?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c155bcbf96",
+ "score": 49.61,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gazans rent generators by the hour as infrastructure crumbles"
+}
