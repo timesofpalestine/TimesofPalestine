@@ -103,8 +103,8 @@ BRIEF_SYSTEM = {
         "You are the newsdesk of Times of Palestine, an independent digital newsroom. "
         "Write an original news brief in English based ONLY on the source material provided: "
         "2-3 short paragraphs separated by blank lines — 2-4 sentences and at most 70 words "
-        "per paragraph, 100-170 words total; never a single-block reply and never a "
-        "two-sentence stub. Straight news style: lead with the most "
+        "per paragraph, about 90-150 words where the source carries that much; never pad to "
+        "reach a length, never a single-block reply and never a two-sentence stub. Straight news style: lead with the most "
         "important fact, then key details and context. Neutral, precise, professional; no "
         "personal attacks, no editorializing, no first person. "
         "Write like a seasoned wire editor, not a language model: vary sentence rhythm, "
@@ -137,7 +137,8 @@ BRIEF_SYSTEM = {
         "أنت غرفة أخبار «تايمز أوف فلسطين»، منصة إخبارية رقمية مستقلة. اكتب موجزاً إخبارياً "
         "أصلياً باللغة العربية بالاعتماد حصراً على المواد المصدرية المرفقة: فقرتان إلى ثلاث فقرات "
         "قصيرة يفصل بينها سطر فارغ — من جملتين إلى أربع ولا تتجاوز الفقرة 70 كلمة، "
-        "و100-170 كلمة إجمالاً؛ لا ترد أبداً بكتلة نصية واحدة ولا بموجز من جملتين. "
+        "ونحو 90-150 كلمة إجمالاً متى حملت المادة ذلك؛ لا تُطِل حشواً لبلوغ عدد كلمات، "
+        "ولا ترد أبداً بكتلة نصية واحدة ولا بموجز من جملتين. "
         "أسلوب خبري مباشر: ابدأ بأهم معلومة ثم التفاصيل والسياق. "
         "اكتب عربيةً صحفيةً أصيلة بسجلّ الجزيرة نت وعرب 48: افتتاحات فعلية، وروابط عربية "
         "(فيما، إذ، في حين، غير أنّ) لا ترجمة حرفية لتراكيب إنجليزية، وعلامتا الاقتباس «»، "
@@ -2218,7 +2219,7 @@ _DANGLING = ("…", "...", ",", "،", ";", "؛", ":", "-", "—", "–")
 # Pacing rules (owner order 2026-08-03): neither wall-of-text paragraphs nor
 # two-line stub articles publish. A brief must clear MIN_BRIEF_WORDS to run at
 # all; anything beyond MAX_PARA_WORDS in one block is reflowed at render time.
-MIN_BRIEF_WORDS = 60     # hard publish floor (the desk aims for 100-170)
+MIN_BRIEF_WORDS = 60     # hard publish floor, and the editor-pass trigger
 MAX_PARA_WORDS = 70      # longest acceptable single paragraph
 _SENT_SPLIT_RX = re.compile(r"(?<=[.!?؟…])\s+")
 
@@ -2256,11 +2257,21 @@ def structure_issues(text, lang):
     issues = []
     words = len(text.split())
     paras = [p for p in re.split(r"\n\s*\n", text) if p.strip()]
-    if words < 90:
+    # The short-copy gate sits at the PUBLISH FLOOR, not at the house target
+    # (cost review 2026-09-12). Measured over 14,406 published briefs: the
+    # median runs 76 words and 81% land between 60 and 89 — so a 90-word gate
+    # fired on nearly every wire story, bought a second full model call, and
+    # the rewrite came back the same length. The editor pass cost MORE than
+    # the first drafts it corrected ($22.14 against $19.60 in September) and
+    # changed nothing a reader could see. A retry is worth paying for when the
+    # copy is genuinely below the floor and would otherwise be withheld — that
+    # is a rescue. Padding a three-sentence wire item to a word count is not
+    # journalism anyway.
+    if words < MIN_BRIEF_WORDS:
         issues.append(
-            f"الموجز قصير جداً ({words} كلمة) — الموجز الصالح للنشر 100-170 كلمة"
+            f"الموجز أقصر من حدّ النشر ({words} كلمة) — اكتب فقرتين أو ثلاث فقرات قصيرة"
             if lang == "ar" else
-            f"too short ({words} words) — a publishable brief runs 100-170 words")
+            f"below the publish floor ({words} words) — write 2-3 short paragraphs")
     if len(paras) < 2:
         issues.append(
             "النص كتلة واحدة — قسّمه إلى فقرتين أو ثلاث قصيرة يفصل بينها سطر فارغ"

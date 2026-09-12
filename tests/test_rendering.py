@@ -1709,7 +1709,9 @@ class PacingTests(unittest.TestCase):
     def test_structure_issues_flag_stub_and_single_block(self):
         stub = "Israeli forces raided the camp at dawn. Residents counted twelve vehicles."
         issues = build.structure_issues(stub, "en")
-        self.assertTrue(any("too short" in i for i in issues))
+        # The short-copy message names the publish floor since the cost review
+        # of 2026-09-12 moved the gate off the house word target.
+        self.assertTrue(any("publish floor" in i for i in issues))
         self.assertTrue(any("single-block" in i for i in issues))
         good = (self.LONG_SENT * 3).strip() + "\n\n" + (self.LONG_SENT * 3).strip()
         self.assertEqual(build.structure_issues(good, "en"), [])

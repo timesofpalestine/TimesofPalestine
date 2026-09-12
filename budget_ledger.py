@@ -62,9 +62,14 @@ PRICES = {
     "claude-haiku-4-5": {"in": 1.00, "out": 5.00, "cache_read": 0.10, "cache_write": 1.25},
     "claude-fable-5-1": {"in": 10.00, "out": 50.00, "cache_read": 0.25, "cache_write": 12.50},
     "claude-opus-5": {"in": 5.00, "out": 25.00, "cache_read": 0.50, "cache_write": 6.25},
-    "claude-sonnet-5": {"in": 3.00, "out": 15.00, "cache_read": 0.30, "cache_write": 3.75},
+    # Sonnet 5 is $2/$10 — the $3/$15 row carried here until 2026-09-12 was
+    # Sonnet 4.6's, so every light edition was costed 50% high and the
+    # governor paced the editor harder than the money required.
+    "claude-sonnet-5": {"in": 2.00, "out": 10.00, "cache_read": 0.20, "cache_write": 2.50},
 }
-_FALLBACK_PRICE = PRICES["claude-opus-5"]
+# The most expensive row, computed — the old hardcoded Opus row under-counted
+# an unpriced Fable run by half, the opposite of what this fallback promises.
+_FALLBACK_PRICE = max(PRICES.values(), key=lambda row: row["in"])
 WEB_SEARCH_USD = 0.01           # $10 per 1,000 searches
 SAFETY_FACTOR = 1.10            # recorded estimates run 10% hot on purpose
 
@@ -590,7 +595,7 @@ def _cadence(counts):
     return ", ".join(f"{n} {name}" for name, n in counts.items()) or "nothing"
 
 
-def forecast(now=None, what_if=(200, 250, 300, 400)):
+def forecast(now=None, what_if=(200, 250, 300, 400, 500, 600)):
     """Owner-facing: where the month is going, what the purse buys, and
     what each bigger budget would buy — so the one knob is turned with
     eyes open, never guessed."""
@@ -627,12 +632,14 @@ def forecast(now=None, what_if=(200, 250, 300, 400)):
             lines.append(f"  {desk}: ${spent:.2f} spent, cap ${cap:.2f}, purse "
                          f"${balance:.2f} (refills ${cap / days:.2f}/day)")
     tiered = [d for d in DESKS if cfg.get("tiers", {}).get(d)]
-    if tiered and what_if:
+    # Only the levels ABOVE today's knob are worth showing, and the heading
+    # only when at least one of them is (it printed over an empty table once
+    # the knob passed the top what-if level — cost review 2026-09-12).
+    higher = [b for b in (what_if or ()) if b > cfg["budget"]]
+    if tiered and higher:
         lines.append("  what the knob buys (a normal month at today's wire rate, "
                      "then the rest of this one):")
-        for budget in what_if:
-            if budget <= cfg["budget"]:
-                continue
+        for budget in higher:
             parts = []
             for desk in tiered:
                 normal, cap = simulate_month(cfg, ledger, desk, now, budget, fresh=True)

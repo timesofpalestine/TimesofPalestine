@@ -331,8 +331,9 @@ Sport or Economy. Binding on every agent:
    remainder is the discretionary pool shared by weight, and every desk
    saves up in a purse that refills daily — a big run is followed by
    saving, never a blackout. The editor runs in EDITIONS
-   (`editorial/budget.json` "tiers"): the FULL edition (Claude Fable 5.1 since the owner's order of
-   2026-09-04, Opus before; whole mandate) on its big days, the LIGHT edition (Sonnet, the non-negotiables:
+   (`editorial/budget.json` "tiers"): the FULL edition (Opus 5 — the owner's
+   model-policy order of 2026-09-12 supersedes the 2026-09-04 order that put
+   it on Fable 5.1; whole mandate) on its big days, the LIGHT edition (Sonnet 5, the non-negotiables:
    breaking sweep, stale sections, both press reviews, markets, running
    files) on the others, each edition saving from its own share; the
    governor learns each edition's real price from the runs it records.
@@ -345,7 +346,37 @@ Sport or Economy. Binding on every agent:
    governed and every run still records its spend. Only the owner dispatches
    an override; no agent triggers one on its own initiative.
 
-13. **No corrections page, no publishing-status page (owner order
+13. **MODEL POLICY — the cheapest model that can do the job (owner order
+   2026-09-12).** The owner's words: the story rewriting runs on a cheaper
+   Claude model to save money and credits, and Fable 5.1 is only for
+   something that requires extensive research — "be smart about how we do
+   this". The tiers, binding on every agent and every workflow:
+   - **The wire's rewriting desk runs on the cheapest model there is.**
+     `BRIEFS_MODEL` is `claude-haiku-4-5` ($1/$5 per MTok) and stays there;
+     the AI duplicate judge rides the same model. No agent upgrades the wire
+     for quality — the answer to a weak brief is the prompt, not a bigger
+     model. (Prompt caching cannot help this desk: Haiku 4.5 will not cache a
+     prefix under 4,096 tokens and the briefs system prompt is ~650, so a
+     `cache_control` marker here would silently do nothing.)
+   - **Routine cycles run on Sonnet 5** ($2/$10): the daily editor's LIGHT
+     edition and the weekly maintenance sweep. Reading logs, running the test
+     gate and shipping small fixes is not research.
+   - **Research and the full editorial mandate run on Opus 5** ($5/$25): the
+     investigations desk, the Washington Brief, the Diaspora Dispatch and the
+     daily editor's FULL edition.
+   - **Claude Fable 5.1 ($10/$50) is reserved for extensive research the
+     owner dispatches by hand.** No scheduled workflow and no tier in
+     `editorial/budget.json` may pin it; an agent that thinks a run needs
+     Fable asks the owner first.
+   - **A retry is not free.** The briefs desk's editor pass costs about what
+     a first draft costs, so it fires only to rescue copy below the publish
+     floor or to fix a real structural defect — never to chase a house word
+     count. The September evidence: a 90-word gate fired on 81% of briefs,
+     cost $22.14 against $19.60 of first drafts, and returned copy the same
+     length. Measure before adding a second call anywhere.
+   `tests/test_model_policy.py` pins all of it.
+
+14. **No corrections page, no publishing-status page (owner order
    2026-09-04: "it has no value, I want it gone").** `/{lang}/corrections.html`
    and `/{lang}/status.html` no longer render, and no footer, story stamp,
    sitemap or schema entry links them. A corrected story still prints its

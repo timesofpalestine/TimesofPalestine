@@ -60,10 +60,16 @@ class PricingTests(unittest.TestCase):
             1.00 + 0.2 * 5.00, places=6)
 
     def test_unknown_model_uses_most_expensive_rates(self):
+        # The fallback is the dearest row, computed — it was pinned to Opus 5
+        # until 2026-09-12, which under-counted an unpriced Fable run by half,
+        # the opposite of what this test's name promises.
         usage = {"input_tokens": 1_000_000, "output_tokens": 0}
+        dearest = max(budget_ledger.PRICES.values(), key=lambda row: row["in"])
         self.assertAlmostEqual(
             budget_ledger.estimate_usd("claude-mystery-9", usage),
-            budget_ledger.PRICES["claude-opus-5"]["in"], places=6)
+            dearest["in"], places=6)
+        self.assertGreaterEqual(
+            dearest["in"], budget_ledger.PRICES["claude-opus-5"]["in"])
 
     def test_web_searches_are_billed(self):
         self.assertAlmostEqual(
