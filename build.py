@@ -2005,7 +2005,7 @@ def fetch_telegram(feed, lang, now, max_age):
         m_photo = TG_PHOTO_RX.search(block)
         candidate_image = m_photo.group(1) if m_photo else None
         item = {
-            "title": headline(text), "dek": truncate(text, 260) if len(text) > 130 else "",
+            "title": headline(text), "dek": truncate_dek(text, 260) if len(text) > 130 else "",
             "link": canonicalize_url(link), "source_url": canonicalize_url(feed["site"]),
             "date": date, "modified": None,
             "source": feed["name"], "source_id": feed["id"],
@@ -2567,7 +2567,7 @@ def select_publishable_copy(en_items, ar_items):
         if item.get("original") or _dek_fits(item):
             continue
         brief = item.get("brief") or ""
-        item["dek"] = (truncate(brief.split("\n")[0].strip(), 220)
+        item["dek"] = (truncate_dek(brief.split("\n")[0].strip(), 220)
                        if brief and not REFUSAL_RX.search(brief) else "")
 
     allow_raw = os.environ.get("TOP_ALLOW_RAW_SUMMARIES") == "1"
