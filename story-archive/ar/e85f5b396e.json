@@ -13,6 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/320965",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
   }
  ],
  "date": "2026-09-13T09:00:07+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "e85f5b396e",
- "score": 43.05,
+ "score": 42.81,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
