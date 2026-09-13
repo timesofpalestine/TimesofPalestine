@@ -119,6 +119,27 @@ jobs:
             in ONE PR. A light edition is a daily newspaper, not a smaller
             version of a magazine.
 
+            THE LIGHT EDITION IS THE PAPER'S ORIGINALS ENGINE (owner order
+            2026-09-12, "we are not producing enough new content"). Measured
+            over September: a light edition files 11-18 bilingual originals
+            for about $6 — $0.41 a story, five times cheaper than any other
+            desk — while a day with no editor run averages 1.8. That is why
+            the budget now funds light editions first and the full edition
+            runs weekly. So a light edition that files few stories has missed
+            its purpose: FILE COPY. Every STALE section, every unanswered
+            outbreak signal and every stale reference-data line is a story,
+            and the press reviews are stories. Volume through the wire is not
+            the paper's voice — these are.
+
+            REFERENCE DATA the build marks stale ("⚠ stale reference data")
+            is a same-day assignment like a STALE section: read the figures
+            from the institution that publishes them (Addameer and هيئة شؤون
+            الأسرى for editorial/prisoners.json; pex.ps or Investing.com PLE
+            for the Al-Quds close in editorial/markets.json), update the file
+            with its date and a sourcing note, and cover the change as an
+            economy or prisoners story when the numbers moved enough to be
+            news. Never invent a figure to clear the warning.
+
             START by reading CLAUDE.md — the newsroom charter is binding. Then
             run the BREAKING SWEEP: read editorial/x-watchlist.md and check
             every Tier-1 account's last 24 hours via live web search; a

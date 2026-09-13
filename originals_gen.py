@@ -32,6 +32,14 @@ DRAFTS = ROOT / ".editorial-drafts"
 STATE_FILE = ORIGINALS / "_state.json"
 
 MODEL = "claude-opus-5"
+# Drawing the lede graphic to a fixed house spec is mechanical work, not
+# research: it moves to the routine tier at low effort (charter §13, cost
+# review 2026-09-12). The research and Arabic passes stay on MODEL — writing
+# a sourced report and composing native Arabic journalism are exactly the
+# intelligence-sensitive work the research tier exists for, and their effort
+# stays at the model default until a run with network measures a change.
+ILLUSTRATION_MODEL = "claude-sonnet-5"
+ILLUSTRATION_EFFORT = "low"
 # Server-side search. The tool identifier has changed before, and a wrong one is a
 # 400 that would leave the desk silently doing nothing, so try the current one
 # first and fall back to the older identifier rather than failing shut.
@@ -302,9 +310,13 @@ def _desk_time_left():
             else _DESK_DEADLINE - time.monotonic())
 
 
-def _call(client, system, messages, tools=None, max_tokens=32000):
-    kwargs = dict(model=MODEL, max_tokens=max_tokens, system=system,
+def _call(client, system, messages, tools=None, max_tokens=32000,
+          model=None, effort=None, desk="investigations"):
+    model = model or MODEL
+    kwargs = dict(model=model, max_tokens=max_tokens, system=system,
                   messages=messages, thinking={"type": "adaptive"})
+    if effort:
+        kwargs["output_config"] = {"effort": effort}
     if tools:
         kwargs["tools"] = tools
     # Must stream. A research pass with adaptive thinking and a large max_tokens can
@@ -339,7 +351,7 @@ def _call(client, system, messages, tools=None, max_tokens=32000):
                         "web_search_requests", 0) or 0)
                 except Exception:
                     pass
-                budget_ledger.record("investigations", MODEL, resp.usage,
+                budget_ledger.record(desk, model, resp.usage,
                                      web_searches=_searches)
             except Exception:
                 pass
@@ -435,7 +447,8 @@ def _make_illustration(client, parsed_en, topic, now):
     try:
         report = f"TITLE: {parsed_en['title']}\n\n{parsed_en['body'][:6000]}"
         raw, _stop = _call(client, ILLUSTRATION_SYSTEM,
-                           [{"role": "user", "content": report}], max_tokens=12000)
+                           [{"role": "user", "content": report}], max_tokens=12000,
+                           model=ILLUSTRATION_MODEL, effort=ILLUSTRATION_EFFORT)
         svg = _clean_svg(raw)
         if not svg:
             print("investigations: illustration pass produced unusable SVG — using category cover")

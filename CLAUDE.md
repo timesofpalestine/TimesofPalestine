@@ -333,7 +333,7 @@ Sport or Economy. Binding on every agent:
    saving, never a blackout. The editor runs in EDITIONS
    (`editorial/budget.json` "tiers"): the FULL edition (Opus 5 — the owner's
    model-policy order of 2026-09-12 supersedes the 2026-09-04 order that put
-   it on Fable 5.1; whole mandate) on its big days, the LIGHT edition (Sonnet 5, the non-negotiables:
+   it on Fable 5.1; whole mandate) WEEKLY on Monday, the LIGHT edition (Sonnet 5, the non-negotiables:
    breaking sweep, stale sections, both press reviews, markets, running
    files) on the others, each edition saving from its own share; the
    governor learns each edition's real price from the runs it records.
@@ -376,7 +376,41 @@ Sport or Economy. Binding on every agent:
      length. Measure before adding a second call anywhere.
    `tests/test_model_policy.py` pins all of it.
 
-14. **No corrections page, no publishing-status page (owner order
+14. **ORIGINALS FIRST — the light edition is the paper's writing desk
+   (owner order 2026-09-12: "we are not producing enough new content. We're
+   just aggregating, and I don't think that's enough").** The diagnosis was
+   arithmetic, not editorial: output ran 16-20 originals a day through
+   August and collapsed to 1-3 in September, on the day the budget purse
+   ran dry. The desks that WRITE could not afford to run, so only the wire
+   was left — and the wire aggregates other people's reporting.
+   The measurement that settles where the money goes (September, from
+   `originals/_ledger.json` against the originals actually filed):
+   - a LIGHT edition files 11-18 bilingual originals for about $6 —
+     **$0.41 a story**;
+   - an investigations report costs **$2.07**; a FULL edition about $1.76
+     a story; a day with no editor run averages **1.8 originals**.
+   The light edition is therefore the cheapest originals engine by five
+   times, and the allocations fund it first (editor 0.49 of the pool) with
+   the FULL edition weekly. Binding on every agent:
+   - **A light edition exists to file copy.** Every STALE section, every
+     unanswered outbreak signal and every stale reference-data line is a
+     story, and both press reviews are stories. An edition that ships few
+     originals has missed its purpose.
+   - **Never buy volume with padding.** More originals means more reported
+     stories, never longer ones or thinner ones; the publish floor and the
+     completeness gate are untouched.
+   - **The knob stays the owner's.** `python3 budget_ledger.py --forecast`
+     now prices the month in ORIGINALS PER DAY at each budget level, so the
+     owner turns one number knowing what it buys. No agent turns it, and no
+     agent widens a desk's allocation to beat the pacing.
+   - **Hand-maintained reference data is announced when it ages**
+     (`REFERENCE_DATA` in `build.py`): the prisoners ledger at 14 days, the
+     Al-Quds close at 4. A warning is a same-day assignment — refresh from
+     the publishing institution, never invent a figure to clear it.
+   `tests/test_originals_engine.py` pins the weights, the cadence, the
+   forecast and the alarm.
+
+15. **No corrections page, no publishing-status page (owner order
    2026-09-04: "it has no value, I want it gone").** `/{lang}/corrections.html`
    and `/{lang}/status.html` no longer render, and no footer, story stamp,
    sitemap or schema entry links them. A corrected story still prints its

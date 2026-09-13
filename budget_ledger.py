@@ -39,6 +39,7 @@ Stdlib only (charter rule 6).
 import calendar
 import json
 import os
+import re
 import statistics
 import subprocess
 import sys
@@ -610,6 +611,50 @@ def _cadence(counts):
     return ", ".join(f"{n} {name}" for name, n in counts.items()) or "nothing"
 
 
+ORIGINALS_DIR = ROOT / "originals"
+_DATE_HDR = re.compile(r"^date:\s*(\d{4}-\d{2})", re.M)
+
+
+def originals_filed(month):
+    """Bilingual originals whose dateline falls in `month` (YYYY-MM).
+
+    Counted from the English files on disk: one per story, both editions.
+    The paper's output is the point of the budget, so the forecast measures
+    it directly rather than inferring it from runs."""
+    filed = 0
+    try:
+        for path in ORIGINALS_DIR.glob("*.en.txt"):
+            head = path.read_text(encoding="utf-8", errors="ignore")[:400]
+            match = _DATE_HDR.search(head)
+            if match and match.group(1) == month:
+                filed += 1
+    except Exception:
+        pass
+    return filed
+
+
+def cost_per_original(cfg, ledger, now):
+    """What one bilingual original has actually cost this month, from the
+    desks that write them (the wire rewrites other people's reporting; it
+    is not an original). None until the month has enough to divide."""
+    filed = originals_filed(ledger.get("month") or _month_key(now))
+    spent = sum(v for d, v in ledger.get("desks", {}).items() if d != PROTECTED_DESK)
+    if filed < 5 or spent <= 0:
+        return None
+    return spent / filed
+
+
+def originals_forecast(cfg, ledger, now, budget=None):
+    """(per_month, per_day) the discretionary pool buys at `budget`, priced
+    from what this month's originals actually cost."""
+    unit = cost_per_original(cfg, ledger, now)
+    if not unit:
+        return None
+    _caps, pool = desk_caps(cfg, ledger, now, budget)
+    per_month = pool / unit
+    return per_month, per_month / _days_in_month(now)
+
+
 def forecast(now=None, what_if=(200, 250, 300, 400, 500, 600)):
     """Owner-facing: where the month is going, what the purse buys, and
     what each bigger budget would buy — so the one knob is turned with
@@ -655,7 +700,8 @@ def forecast(now=None, what_if=(200, 250, 300, 400, 500, 600)):
         lines.append("  what the knob buys (a normal month at today's wire rate, "
                      "then the rest of this one):")
         for budget in higher:
-            parts = []
+            got = originals_forecast(cfg, ledger, now, budget)
+            parts = [f"~{got[1]:.0f} originals/day"] if got else []
             for desk in tiered:
                 normal, cap = simulate_month(cfg, ledger, desk, now, budget, fresh=True)
                 rest, _ = simulate_month(cfg, ledger, desk, now, budget)
