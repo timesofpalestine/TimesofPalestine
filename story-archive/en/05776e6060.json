@@ -6,7 +6,19 @@
    "article": "https://imemc.org/article/west-bank-on-friday-israeli-colonizers-shoot-at-palestinian-farmers-troops-establish-new-military-outpost",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-man-brutally-assaulted-settlers-west-bank-village",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/12/idf-soldier-filmed-shooting-palestinian-in-leg-amid-west-bank-settler-standoff",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-11T17:43:57+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "05776e6060",
- "score": 23.07,
+ "score": 22.71,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
