@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces closed a gate in Abu Dis for the third time, the Ma'an news agency reported. The closure compounds existing restrictions on movement and access for residents of the East Jerusalem neighborhood.\n\nThe repeated gate closures have drawn criticism for deepening humanitarian strain on Abu Dis's population. Previous closures have severely limited passage and commercial activity in the area.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168625.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-13T08:58:26+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168625.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2ec1a95155",
+ "score": 49.46,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel closes Abu Dis gate for third time, intensifying resident hardship"
+}
