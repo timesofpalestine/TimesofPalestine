@@ -1,0 +1,33 @@
+{
+ "brief": "The Guardian reported on the profound personal toll Israel's war on Gaza has taken on Palestinian men, a dimension of the conflict largely absent from public discourse. Four civilians described how the fighting has dismantled their lives—erasing employment, housing, and family bonds that once anchored their daily existence. Ahmed, 39, exemplified the scale of loss, his previously occupied life now fundamentally altered by the conflict's reach into civilian households.\n\nMen who once worked and supported families now navigate displacement and economic collapse, their psychological and relational worlds fractured alongside physical infrastructure. The accounts reveal how warfare extends beyond immediate combat casualties to reshape the social landscape of surviving male populations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/global-development/2026/sep/13/palestinian-men-war-gaza-israel-war",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-13T10:00:05+00:00",
+ "dek": "The impact of the conflict on Palestinian men is a largely undiscussed topic. Four civilians talk about their lives and relationships Before the war, Ahmed, 39, had a busy life.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/b9a6dc9c0e7dd3f9384649a40012163aa2921aeb/217_0_5100_4080/master/5100.jpg?width=140&quality=85&auto=format&fit=max&s=96b55bb6bc0bc9c7c9653b3d15269035",
+ "lang": "en",
+ "link": "https://www.theguardian.com/global-development/2026/sep/13/palestinian-men-war-gaza-israel-war",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/global-development/2026/sep/13/palestinian-men-war-gaza-israel-war"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f556eeadc4",
+ "score": 49.86,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Gaza war leaves Palestinian men stripped of livelihood and family"
+}

@@ -1,0 +1,39 @@
+{
+ "brief": "أغلقت قوات الاحتلال بوابة في بلدة أبو ديس جنوب شرق القدس المحتلة. بحسب وكالة معا، يشكل الإجراء تكراراً للممارسة ذاتها التي طبقتها القوات سابقاً على نفس الموقع.\n\nيترتب على الإغلاق تفاقم معاناة السكان، إذ يعرقل تنقلهم بين أجزاء البلدة ويزيد الضغط على الحياة اليومية. وتندرج هذه الخطوة ضمن سياسة الاحتلال المستمرة في فرض قيود على الحركة والتنقل في مناطق الضفة الغربية خاصة بالقرب من القدس والمستوطنات الإسرائيلية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168625.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/393935",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-13T08:58:26+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2168625.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2ec1a95155",
+ "score": 49.13,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "الاحتلال يغلق بوابة في أبو ديس للمرة الثالثة"
+}

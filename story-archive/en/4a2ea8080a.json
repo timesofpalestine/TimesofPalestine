@@ -1,0 +1,33 @@
+{
+ "brief": "Ma'an Wire reported that surveys by Israeli media outlet Haaretz and Israeli television channels indicate the governing coalition would lose support if elections were held today. The polls suggest a shift in voter preference away from Prime Minister Benjamin Netanyahu's bloc, though specific seat projections were not detailed in the report.\n\nThe surveys reflect ongoing political volatility in Israel amid continued military operations and domestic tensions. Results of hypothetical elections often fluctuate based on current events and public sentiment regarding government performance.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168627.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-13T09:49:42+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-politics.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168627.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4a2ea8080a",
+ "score": 34.74,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli polls show Netanyahu coalition weakens in hypothetical election"
+}
