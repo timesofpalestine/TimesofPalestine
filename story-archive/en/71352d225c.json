@@ -7,6 +7,12 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://imemc.org/article/sunday-west-bank-invasions-and-abductions",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
   }
  ],
  "date": "2026-09-13T19:41:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "71352d225c",
- "score": 61.7,
+ "score": 61.47,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
