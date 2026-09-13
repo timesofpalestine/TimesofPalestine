@@ -6,13 +6,19 @@
    "article": "https://shehabnews.com/post/164002/70-%D9%85%D9%86-%D8%AD%D8%A7%D9%81%D9%84%D8%A7%D8%AA-%D8%BA%D8%B2%D8%A9-%D8%AA%D9%88%D9%82%D9%81%D8%AA-%D8%B9%D9%86-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A8%D8%B3%D8%A8%D8%A8-%D9%86%D9%82%D8%B5-%D9%82%D8%B7%D8%B9-%D8%A7%D9%84%D8%BA%D9%8A%D8%A7%D8%B1-%D9%88%D8%A7%D9%84%D8%B2%D9%8A%D9%88%D8%AA",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
   },
   {
-   "article": "https://felesteen.news/post/186328/%D9%86%D9%82%D8%A7%D8%A8%D8%A9-%D8%A7%D9%84%D8%A8%D8%A7%D8%B5%D8%A7%D8%AA-%D8%AA%D9%86%D8%B0%D8%B1-%D8%A8%D8%AA%D9%88%D9%82%D9%81-%D9%86%D9%82%D9%84-%D8%A7%D9%84%D9%83%D9%88%D8%A7%D8%AF%D8%B1-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "article": "https://www.pbc.ps/u",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/186359/%D8%AA%D9%88%D9%82%D9%81-70-%D9%85%D9%86-%D8%AD%D8%A7%D9%81%D9%84%D8%A7%D8%AA-%D8%BA%D8%B2%D8%A9-%D8%AC%D8%B1%D8%A7%D8%A1-%D9%86%D9%82%D8%B5-%D9%82%D8%B7%D8%B9-%D8%A7%D9%84%D8%BA%D9%8A%D8%A7%D8%B1-%D9%88%D8%A7%D9%84%D8%B2%D9%8A%D9%88%D8%AA-%D9%88%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1%D8%A7%D8%AA",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
-   "verified": false
+   "verified": true
   }
  ],
  "date": "2026-09-13T14:33:00+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "d3c2ec752d",
- "score": 49.67,
+ "score": 49.39,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
