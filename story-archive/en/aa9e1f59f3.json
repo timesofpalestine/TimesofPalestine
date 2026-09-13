@@ -1,0 +1,33 @@
+{
+ "brief": "The Israeli military is preparing for an escalation in the West Bank and the occupation of new refugee camps, following operations in Lebanon, the Ma'an news agency reported. The preparation signals an expansion of military operations beyond recent cross-border activities into Palestinian territory.\n\nDetails of the planned operations and their timing remain unclear. The announcement comes as Israel maintains active military engagement across multiple fronts in the region.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168628.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-13T10:14:44+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168628.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "aa9e1f59f3",
+ "score": 62.39,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli army prepares West Bank escalation and new camp occupations after Lebanon"
+}
