@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces prevented worshippers from entering Al-Aqsa Mosque during Fajr prayers, the Ma'an news agency reported. The restrictions limited Palestinian access to the sacred site during one of the five daily Islamic prayer times.\n\nThe incident is part of ongoing tensions over access to Al-Aqsa Mosque, which sits atop the Temple Mount in occupied East Jerusalem and remains a flashpoint between Israelis and Palestinians.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168622.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-13T08:10:09+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168622.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2c769eb599",
+ "score": 47.78,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces block Palestinians from Al-Aqsa mosque during dawn prayers"
+}
