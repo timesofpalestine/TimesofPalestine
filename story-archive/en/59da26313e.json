@@ -1,0 +1,57 @@
+{
+ "brief": "An Israeli attack on Gaza killed two Palestinians, Al Jazeera English reported, as military operations continue despite a U.S.-brokered ceasefire agreement. The strike occurred as violence persists in the territory where a formal truce has been in place.\n\nDetails of the attack's location and circumstances were not immediately available. The deaths add to casualties sustained since the ceasefire arrangement took effect.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/13/israeli-attack-on-gaza-kills-two-palestinians?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-detained-two-injured-during-raids-israeli-forces",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/friday-in-gaza-israeli-forces-kill-2-palestinians-wound-10",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israeli-made-gaza-documentary-wins-venice-special-jury-prize",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israel-kills-dae",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-13T10:22:01+00:00",
+ "dek": "Israeli strikes on Palestinian territory persist despite a 'ceasefire' brokered by the United States.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/AA-20260913-42456398-42456377-2_PALESTINIANS_KILLED_13_INJURED_IN_ISRAELI_DRONE_STRIKE_ON_VEHICLE_IN_GAZA-1789292609.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/13/israeli-attack-on-gaza-kills-two-palestinians?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/13/israeli-attack-on-gaza-kills-two-palestinians?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "59da26313e",
+ "score": 62.68,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike kills two Palestinians in Gaza"
+}
