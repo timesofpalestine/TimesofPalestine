@@ -6,7 +6,19 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-detained-two-injured-during-raids-israeli-forces",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-invasions-throughout-the-west-bank-on-saturday-3-wounded",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/12/idf-soldier-filmed-shooting-palestinian-in-leg-amid-west-bank-settler-standoff",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-13T06:45:33+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "27469ec428",
- "score": 62.43,
+ "score": 62.13,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
