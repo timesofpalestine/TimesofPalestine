@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces closed the Rafah and Kerem Shalom crossings, the main entry points for humanitarian aid into Gaza, citing holiday security measures, the Ma'an news agency reported. The closures cut off supplies at a time when the enclave faces acute shortages of fuel, medicine, and food.\n\nCivil defense teams recovered 13 bodies from rubble across Gaza as operations continued. The crossing closures compound the humanitarian crisis in the territory, already under severe restrictions on movement of goods and people.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168608.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-13T06:44:29+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168608.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "62fa1204c7",
+ "score": 63.38,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel closes Rafah and Kerem Shalom crossings citing holidays"
+}
