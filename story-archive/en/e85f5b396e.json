@@ -1,0 +1,33 @@
+{
+ "brief": "Generator fuel shortages are forcing hospitals across Gaza to cut services, the Ma'an news agency reported. Medical facilities have depleted fuel reserves and cannot reliably power operating rooms, intensive care units, and other essential departments.\n\nThe fuel crisis deepens Gaza's healthcare collapse amid ongoing conflict and damage to infrastructure. Hospitals already operating at reduced capacity now face the prospect of halting treatment altogether.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168624.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-13T09:00:07+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168624.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e85f5b396e",
+ "score": 48.05,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Generator fuel shortage threatens Gaza hospitals with closure"
+}

@@ -1,0 +1,33 @@
+{
+ "brief": "تواجه المشافي في غزة أزمة حادة بسبب نقص زيوت المولدات الكهربائية، ما قد يرغمها على إيقاف خدماتها. تعتمد المستشفيات على هذه المولدات اعتماداً كاملاً نظراً لانقطاعات التيار الكهربائي المتكررة في القطاع.\n\nالأزمة تضرب أقسام الرعاية المكثفة والعمليات الجراحية بشكل مباشر، إذ تتطلب هذه الأقسام كهرباء مستقرة ومتواصلة لضمان سلامة المرضى والعاملين الصحيين. بدون توفير زيوت المولدات، قد تعجز المستشفيات عن الاستمرار في تقديم خدماتها الحيوية.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168624.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-13T09:00:07+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2168624.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e85f5b396e",
+ "score": 48.03,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "نقص زيوت المولدات يهدد مشافي غزة بالإغلاق"
+}
