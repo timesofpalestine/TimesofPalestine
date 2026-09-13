@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2168608.html",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/186299/%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D9%8A%D9%86%D8%AA%D8%B4%D9%84-%D8%B1%D9%81%D8%A7%D8%AA-13-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-09-13T06:44:29+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "62fa1204c7",
- "score": 63.04,
+ "score": 62.75,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
