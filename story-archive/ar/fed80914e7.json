@@ -1,0 +1,45 @@
+{
+ "brief": "كشفت هيئة شؤون الأسرى والمحررين الفلسطينية عن تدهور الحالة الصحية لثلاثة أسرى في سجن عوفر الإسرائيلي، إذ يعانون من حرمان متكرر من الطعام وافتقار للرعاية الطبية.\n\nوأضافت الهيئة أن الأسرى في السجن يتعرضون لاعتداءات جسدية منتظمة تفاقم من وضعهم الصحي المتردي، وسط ظروف احتجاز تفتقر لأدنى معايير الإنسانية.\n\nأما في سجن جانوت، فأفادت بتصاعد الاعتداءات الإسرائيلية على النزلاء الفلسطينيين، فيما توثّق الهيئة هذه الانتهاكات بشكل مستمر.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.net/news/2026/9/13/%d8%aa%d8%af%d9%87%d9%88%d8%b1-%d8%b5%d8%ad%d8%a9-3-%d8%a3%d8%b3%d8%b1%d9%89-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/1366-2",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/186326/%D9%85%D8%A4%D8%B3%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%B3%D8%B1%D9%89-%D8%AA%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%AA%D8%AF%D9%87%D9%88%D8%B1-%D8%B5%D8%AD%D8%A9-3-%D8%A3%D8%B3%D8%B1%D9%89-%D9%81%D9%8A-%D8%B9%D9%88%D9%81%D8%B1",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-13T17:07:01+00:00",
+ "dek": "قالت هيئة شؤون الأسرى والمحررين الفلسطينية إن 3 أسرى في سجن عوفر الإسرائيلي يعانون من تدهور حالتهم الصحية، وإن الأسرى في سجن جانوت يواجهون تصاعدا في الاعتداءات الإسرائيلية.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.net/wp-content/uploads/2026/07/56767y-1784303818.jpg?resize=1920%2C1280&quality=80",
+ "lang": "ar",
+ "link": "https://www.aljazeera.net/news/2026/9/13/%d8%aa%d8%af%d9%87%d9%88%d8%b1-%d8%b5%d8%ad%d8%a9-3-%d8%a3%d8%b3%d8%b1%d9%89-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "الجزيرة نت",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.net/news/2026/9/13/%d8%aa%d8%af%d9%87%d9%88%d8%b1-%d8%b5%d8%ad%d8%a9-3-%d8%a3%d8%b3%d8%b1%d9%89-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fed80914e7",
+ "score": 47.46,
+ "source": "الجزيرة نت",
+ "source_id": "aja",
+ "source_url": "https://www.aljazeera.net/",
+ "title": "هيئة الأسرى تفصّل معاناة السجناء الفلسطينيين بسجون الاحتلال"
+}
