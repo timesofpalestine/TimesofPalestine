@@ -7,6 +7,12 @@
    "name": "تايمز أوف فلسطين",
    "url": "",
    "verified": false
+  },
+  {
+   "article": "https://t.me/Palinfo/321064",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
   }
  ],
  "date": "2026-09-13T11:50:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": true,
  "pid": "7f67d06809",
- "score": 83.3,
+ "score": 83.27000000000001,
  "source": "تايمز أوف فلسطين",
  "source_id": "top-original",
  "source_url": "",
