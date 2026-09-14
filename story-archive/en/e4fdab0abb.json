@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/09/rights-group-accuses-israel-dismantling-palestinian-existence-west-bank",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.theguardian.com/world/ng-interactive/2026/sep/14/israel-palestinian-living-conditions-eliminated-west-bank-human-rights-report",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "e4fdab0abb",
- "score": 77.67,
+ "score": 77.35,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
