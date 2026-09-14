@@ -1,0 +1,51 @@
+{
+ "brief": "Israel is investigating a film called Naza for potential treason and incitement to antisemitism, according to Al Jazeera English. The documentary alleges that mass civilian deaths are routinely incorporated into military decision-making during Israel's war on Gaza.\n\nThe film's allegations center on claims that Israeli forces systematically factor civilian casualties into operational planning. The investigation marks an escalation in official responses to documentaries documenting the conflict's toll on Palestinian civilians.",
+ "cat": "arts",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/14/israel-probing-naza-film-on-gaza-for-inciting-antisemitism?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/netanyahu-says-gaza-documentary-naza-shocking-incitement",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/film/2026/sep/14/gaza-documentary-makers-naza-israel-citizenship-ntwnfb",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/9/14/naza_film",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-14T21:12:07+00:00",
+ "dek": "Film alleges mass ⁠civilian deaths routinely built into military decisions amid Israel's genocidal war on Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6aa851881c6d-1789415816.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/14/israel-probing-naza-film-on-gaza-for-inciting-antisemitism?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/14/israel-probing-naza-film-on-gaza-for-inciting-antisemitism?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6088a337e6",
+ "score": 49.81,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel opens treason probe into Naza Gaza film"
+}
