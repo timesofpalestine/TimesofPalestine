@@ -1,0 +1,39 @@
+{
+ "brief": "Israel is employing five deliberate mechanisms to eliminate Palestinian presence from the West Bank, according to B'Tselem, an Israeli human rights organization, Al Jazeera English reported. The group detailed how policies dismantle Palestinian collective life through documented systematic practices.\n\nB'Tselem identified the mechanisms as part of what it describes as a coordinated strategy targeting Palestinian communities across the occupied territory. The documentation comes amid ongoing disputes over settlement expansion, movement restrictions, and administrative measures affecting Palestinians in the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/14/israel-working-to-eliminate-palestinian-presence-from-west-bank-ngo-warns?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/ng-interactive/2026/sep/14/israel-palestinian-living-conditions-eliminated-west-bank-human-rights-report",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-14T12:58:12+00:00",
+ "dek": "Israeli human rights group B’Tselem details five mechanisms used by Israel to dismantle Palestinian collective life.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/AP26251388616112-1789379970.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/14/israel-working-to-eliminate-palestinian-presence-from-west-bank-ngo-warns?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/14/israel-working-to-eliminate-palestinian-presence-from-west-bank-ngo-warns?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e4fdab0abb",
+ "score": 79.57,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli human rights group documents systematic Palestinian displacement in West Bank"
+}
