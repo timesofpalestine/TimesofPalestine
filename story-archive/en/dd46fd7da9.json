@@ -1,0 +1,39 @@
+{
+ "brief": "Occupation forces assaulted young men while holding them in the village of Yamoun west of Jenin, the Ma'an news agency reported. Details of the incident, including the number of detainees and the extent of injuries sustained, were not immediately available.\n\nThe village of Yamoun has faced repeated military operations and detention sweeps in recent months as part of broader Israeli security operations in the northern West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/36756",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-invasions-throughout-the-west-bank-on-saturday-3-wounded",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-13T17:49:46+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/aiZNkEnOp735534W21Yx5CESfT6ha8TNt_kF3dt3oRWKxhhIFUfajEvCyeBB4Ewoh_DA5lKBxH_8z4dyKDDCfOTXHp3IMX-uVVeQ2Ug2HDbl9anjnTN3hDHS3US1Bru_eyT9VgBnKDEah4u9gjqjp5wVCfpYDVG3Zwoy7qchZO6FzvVw2lnwUCu_YogZg2cF-wV4yjx4pmGZjET2GzVAXNb3EcdGVquJfL4IdxUWvnmjDDhZA5alfFjkLqVWEZAUeDYLXv4eFC_vIw1geUlw26v2Qus1g7Hfdda4eKVfrZkWvvwfnKBuFLsFEgAdfivArEz6Fi-nBcCF0-gO8C3dww",
+ "lang": "en",
+ "link": "https://t.me/maannews/36756",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/36756"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dd46fd7da9",
+ "score": 44.76,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces beat detainees in Yamoun village west of Jenin"
+}
