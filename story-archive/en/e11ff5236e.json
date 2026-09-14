@@ -1,0 +1,33 @@
+{
+ "brief": "An animated map released by Al Jazeera English documents the expansion of illegal Israeli settlements across Palestinian territory, showing how more than 500 settlements and outposts have grown over time. Approximately 750,000 settlers now live in these communities, which are considered illegal under international law.\n\nThe visualization comes as Israeli pogroms have reached record levels, according to the report. The map illustrates the territorial spread of settlements that have proliferated across the West Bank and other Palestinian areas.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/14/animated-map-shows-spread-of-illegal-israeli-settlements-across-palestine?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-14T05:56:36+00:00",
+ "dek": "Some 750,000 settlers live across more than 500 illegal settlements and outposts, as Israeli pogroms hit record highs.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/INTERACTIVE-Latest-Animated-Map-Israeli-settlements-poster-1789313597.gif?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/14/animated-map-shows-spread-of-illegal-israeli-settlements-across-palestine?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/14/animated-map-shows-spread-of-illegal-israeli-settlements-across-palestine?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e11ff5236e",
+ "score": 49.78,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Animated map traces growth of 750,000 Israeli settlers across Palestine"
+}
