@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces conducted widespread operations across the occupied West Bank on Sunday, abducting several Palestinians during home invasions, IMEMC News reported. The military tightened restrictions at checkpoints throughout the territory during the incursions.\n\nSoldiers opened fire on workers during the operations, wounding an unspecified number. The forces broke into homes as part of the coordinated Sunday raids across Palestinian communities.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/sunday-west-bank-invasions-and-abductions",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-13T22:29:52+00:00",
+ "dek": "Israeli forces invaded Palestinian communities across the occupied West Bank on Sunday, abducting several Palestinians, wounding workers with live fire, breaking into homes, and tightening restrictions at military roadblocks.",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/abductHebron-e1789338527604.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/sunday-west-bank-invasions-and-abductions",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/sunday-west-bank-invasions-and-abductions"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0393431957",
+ "score": 59.16,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces invade West Bank, abduct Palestinians and wound workers"
+}
