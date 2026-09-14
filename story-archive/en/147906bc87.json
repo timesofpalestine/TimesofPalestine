@@ -1,0 +1,33 @@
+{
+ "brief": "A new report details the systematic erosion of Palestinian life, according to Al Jazeera English. The findings point to deteriorating conditions across Palestinian territories, though specific metrics and the report's source remain unspecified in available summaries.\n\nIsrael has threatened film directors associated with NAZA, the report indicates. The nature of the threat and the specific content drawing Israeli objection were not detailed in the available account.",
+ "cat": "arts",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/14/jerusalem-daily-a-new-report-on-the-erosion-of-palestinian-life?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-14T18:02:44+00:00",
+ "dek": "Palestinian life is being systematically eroded, according to a new report and Israel threatens NAZA film directors.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789408941.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/14/jerusalem-daily-a-new-report-on-the-erosion-of-palestinian-life?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/14/jerusalem-daily-a-new-report-on-the-erosion-of-palestinian-life?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "147906bc87",
+ "score": 49.1,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Report documents systematic erosion of Palestinian life"
+}
