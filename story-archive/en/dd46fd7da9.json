@@ -6,13 +6,7 @@
    "article": "https://t.me/maannews/36756",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-invasions-throughout-the-west-bank-on-saturday-3-wounded",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-13T17:49:46+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "dd46fd7da9",
- "score": 44.45,
+ "score": 44.13,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
