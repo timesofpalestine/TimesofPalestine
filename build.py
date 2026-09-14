@@ -5500,6 +5500,27 @@ SPECIALS = [
         "nav": {"en": "Dr. Barakat", "ar": "قضية د. بركات"},
     },
     {
+        # An open file (owner request 2026-09-14): a US citizen who raises
+        # money to feed Gaza, flagged at every stage of a family flight, with
+        # no agency willing to say under what authority. Pinned while the
+        # question is live and gated on `requires_original`, so it retires
+        # with the story rather than squatting; re-pinned on any development.
+        "requires_original": "hani-almadhoun-airport-screening-2026",
+        "href": _original_story_href("hani-almadhoun-airport-screening-2026"),
+        "kicker": {"en": "The file we are following", "ar": "ملف نتابعه"},
+        "title": {"en": "Flagged at every step",
+                  "ar": "التدقيق الأمني يوقفه عند كل خطوة"},
+        "dek": {"en": "Hani Almadhoun raises money in Washington to feed Gaza. He carries a federal redress number, and US screening still stopped him \u2014 and his children \u2014 at every stage. No agency will say under what authority.",
+                "ar": "يجمع هاني المدهون التبرعات في واشنطن ليطعم غزة. يحمل رقم تظلّم فيدرالياً، ومع ذلك أوقفه التدقيق الأمني الأميركي وأولاده عند كل مرحلة. ولا جهة تقول بأي سند."},
+        "cta": {"en": "Read the file \u2192", "ar": "اقرأ الملف \u2190"},
+        "img": "/media/times-of-palestine-almadhoun-screening-2026.svg",
+        "img_alt": {"en": "Flagged at every step \u2014 Hani Almadhoun and US airport screening",
+                    "ar": "أوقفه التدقيق الأمني عند كل خطوة \u2014 هاني المدهون والفرز الأمني في المطارات الأميركية"},
+        "ticker": {"en": "Flagged at every step: Hani Almadhoun and the watchlist nobody will explain",
+                   "ar": "عند كل خطوة: هاني المدهون وقائمة مراقبة لا تفسّرها جهة"},
+        "nav": {"en": "Almadhoun file", "ar": "ملف المدهون"},
+    },
+    {
         # A Palestinian journalist's book, pinned while it is news (owner
         # request 2026-09-14). Self-retiring: `requires_original` means the
         # card lives exactly as long as the story stays in the live set (the
