@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces shot a young man, set his vehicle ablaze, and detained two others during an operation in Hebron, the Ma'an news agency reported. The circumstances surrounding the incident and the conditions of those arrested were not immediately clear.\n\nThe operation marks the latest in a series of military actions across the West Bank, where Israeli forces maintain regular presence and conduct frequent raids.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168681.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-14T06:58:01+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168681.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "97ad4451e7",
+ "score": 49.42,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces shoot youth, burn vehicle, arrest two in Hebron"
+}

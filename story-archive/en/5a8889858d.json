@@ -1,0 +1,33 @@
+{
+ "brief": "Betselem, an Israeli human rights organization, has accused Israel of executing an \"erasure project\" in the West Bank, the Ma'an news agency reported. The group's characterization points to systematic Israeli actions targeting Palestinian presence and property in the occupied territory.\n\nBetselem has previously documented Israeli policies including settlement expansion, home demolitions, and restrictions on Palestinian movement and construction in the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168682.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-14T07:18:44+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168682.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5a8889858d",
+ "score": 49.65,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel implements 'erasure project' in West Bank, Btselem says"
+}

@@ -6,7 +6,13 @@
    "article": "https://zeteo.com/p/this-week-in-palestine-israel-kills-dae",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-colonizers-continue-west-bank-violations",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-12T17:02:04+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "e3dff5b755",
- "score": 37.4,
+ "score": 37.07,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
