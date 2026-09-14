@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="t">
+  <title id="t">محطات الرحلة: غزة، جنوب شرق آسيا، أفريقيا، جنوب أفريقيا، بغداد، واشنطن</title>
+  <defs><style>.arabic{font-family:Cairo,Arial,sans-serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}</style></defs>
+  <rect width="1600" height="520" fill="#111214"/>
+  <rect x="1390" y="52" width="90" height="6" fill="#c7a86b"/>
+  <text x="1480" y="122" class="arabic" fill="#f2eee8" font-size="42" font-weight="700" text-anchor="end">مسيرة واحدة وأربع قارات</text>
+  <text x="1480" y="166" class="arabic" fill="#aaa9a5" font-size="24" text-anchor="end">المحطات التي تسميها ناديا البلبيسي في روايتها لرحلتها</text>
+
+  <line x1="130" y1="300" x2="1470" y2="300" stroke="#3d4f6b" stroke-width="4"/>
+  <g fill="#c7a86b">
+    <circle cx="398" cy="300" r="10"/><circle cx="666" cy="300" r="10"/>
+    <circle cx="934" cy="300" r="10"/><circle cx="1202" cy="300" r="10"/>
+  </g>
+  <circle cx="1470" cy="300" r="15" fill="#8a1f2d"/>
+  <circle cx="130" cy="300" r="15" fill="#286344"/>
+
+  <g text-anchor="middle" class="arabic">
+    <text x="1470" y="256" fill="#f2eee8" font-size="28" font-weight="700">غزة ١٩٨٧</text>
+    <text x="1470" y="356" fill="#aaa9a5" font-size="22">وكالة الصحافة الفرنسية</text>
+    <text x="1202" y="256" fill="#f2eee8" font-size="28" font-weight="700">جنوب شرق آسيا</text>
+    <text x="1202" y="356" fill="#aaa9a5" font-size="22">أولى المهمات في الخارج</text>
+    <text x="934" y="256" fill="#f2eee8" font-size="28" font-weight="700">أفريقيا</text>
+    <text x="934" y="356" fill="#aaa9a5" font-size="22">السودان · إريتريا · رواندا</text>
+    <text x="666" y="256" fill="#f2eee8" font-size="28" font-weight="700">جنوب أفريقيا</text>
+    <text x="666" y="356" fill="#aaa9a5" font-size="22">لقاء نيلسون مانديلا</text>
+    <text x="398" y="256" fill="#f2eee8" font-size="28" font-weight="700">العراق</text>
+    <text x="398" y="356" fill="#aaa9a5" font-size="22">حرب ٢٠٠٣</text>
+    <text x="130" y="256" fill="#f2eee8" font-size="28" font-weight="700">واشنطن</text>
+    <text x="130" y="356" fill="#aaa9a5" font-size="22">البيت الأبيض</text>
+  </g>
+  <text x="1480" y="460" class="arabic" fill="#aaa9a5" font-size="22" text-anchor="end">الفصول الأربعة الأخيرة من الكتاب تدور في البيت الأبيض.</text>
+  <text x="120" y="460" class="sans" fill="#aaa9a5" font-size="22" letter-spacing="4">TIMES OF PALESTINE</text>
+</svg>

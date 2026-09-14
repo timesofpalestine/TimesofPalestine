@@ -5500,6 +5500,28 @@ SPECIALS = [
         "nav": {"en": "Dr. Barakat", "ar": "قضية د. بركات"},
     },
     {
+        # A Palestinian journalist's book, pinned while it is news (owner
+        # request 2026-09-14). Self-retiring: `requires_original` means the
+        # card lives exactly as long as the story stays in the live set (the
+        # default 14-day shelf life), so a January publication date can never
+        # squat the row for four months. The desk re-pins when pre-orders
+        # open and again on publication day.
+        "requires_original": "nadia-bilbassy-memoir-2026",
+        "href": _original_story_href("nadia-bilbassy-memoir-2026"),
+        "kicker": {"en": "A Palestinian memoir", "ar": "مذكرات فلسطينية"},
+        "title": {"en": "From Gaza to the White House",
+                  "ar": "من غزة إلى البيت الأبيض"},
+        "dek": {"en": "Nadia Bilbassy started at a news agency in Gaza and runs Al Arabiya's Washington bureau. HarperCollins publishes her memoir at the start of January.",
+                "ar": "بدأت ناديا البلبيسي مع وكالة أنباء في غزة، وتدير اليوم مكتب «العربية» في واشنطن. تصدر مذكراتها عن «هاربر كولينز» مطلع كانون الثاني/يناير."},
+        "cta": {"en": "Read her journey \u2192", "ar": "اقرأ رحلتها \u2190"},
+        "img": "/media/times-of-palestine-bilbassy-memoir-2026.svg",
+        "img_alt": {"en": "From Gaza to the White House \u2014 the memoir of Nadia Bilbassy",
+                    "ar": "من غزة إلى البيت الأبيض \u2014 مذكرات ناديا البلبيسي"},
+        "ticker": {"en": "From Gaza to the White House: Nadia Bilbassy's memoir arrives in January",
+                   "ar": "من غزة إلى البيت الأبيض: مذكرات ناديا البلبيسي مطلع يناير"},
+        "nav": {"en": "Bilbassy memoir", "ar": "مذكرات البلبيسي"},
+    },
+    {
         # Story-page special: renders only when this original is in the build,
         # so offline/skip-originals runs never emit broken band links.
         "requires_original": "palestine-top100-2026",
