@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t">
+  <title id="t">Times of Palestine — From Gaza to the White House, the memoir of Nadia Bilbassy / من غزة إلى البيت الأبيض، مذكرات ناديا البلبيسي</title>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/></linearGradient>
+  <linearGradient id="jacket" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#18251d"/><stop offset="1" stop-color="#0f1713"/></linearGradient>
+  <style>.serif{font-family:"Source Serif 4",Georgia,serif}.arabic{font-family:Cairo,Arial,sans-serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}</style></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- the route the book travels: one line, four ports of call, ending at the last dot -->
+  <g opacity=".5">
+    <path d="M150 760 C 480 700, 760 820, 1080 720" fill="none" stroke="#3d4f6b" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 22"/>
+    <circle cx="150" cy="760" r="11" fill="#8a1f2d"/>
+    <circle cx="460" cy="716" r="8" fill="#c7a86b"/>
+    <circle cx="770" cy="768" r="8" fill="#c7a86b"/>
+    <circle cx="1080" cy="720" r="13" fill="#286344"/>
+  </g>
+
+  <!-- the jacket, standing at the end of the route -->
+  <g>
+    <rect x="1152" y="248" width="286" height="452" rx="6" fill="url(#jacket)" stroke="#c7a86b" stroke-width="3"/>
+    <rect x="1152" y="248" width="26" height="452" rx="6" fill="#286344"/>
+    <rect x="1214" y="318" width="66" height="5" fill="#c7a86b"/>
+    <text x="1214" y="392" class="arabic" fill="#f2eee8" font-size="34" font-weight="700">من غزة</text>
+    <text x="1214" y="436" class="arabic" fill="#f2eee8" font-size="34" font-weight="700">إلى البيت الأبيض</text>
+    <text x="1214" y="512" class="serif" fill="#c7a86b" font-size="26" font-weight="700">FROM GAZA</text>
+    <text x="1214" y="546" class="serif" fill="#c7a86b" font-size="26" font-weight="700">TO THE</text>
+    <text x="1214" y="580" class="serif" fill="#c7a86b" font-size="26" font-weight="700">WHITE HOUSE</text>
+    <text x="1214" y="648" class="sans" fill="#aaa9a5" font-size="20" letter-spacing="2">NADIA BILBASSY</text>
+  </g>
+
+  <rect x="120" y="268" width="120" height="7" fill="#c7a86b"/>
+  <text x="120" y="368" class="arabic" fill="#f2eee8" font-size="74" font-weight="700">من غزة إلى البيت الأبيض</text>
+  <text x="120" y="452" class="serif" fill="#c7a86b" font-size="50" font-weight="700">From Gaza to the White House</text>
+  <text x="120" y="524" class="sans" fill="#f2eee8" font-size="30">Nadia Bilbassy · HarperCollins · January 2027</text>
+  <text x="120" y="572" class="arabic" fill="#f2eee8" font-size="30">ناديا البلبيسي · هاربر كولينز · مطلع 2027</text>
+  <text x="120" y="638" class="sans" fill="#aaa9a5" font-size="26">A war correspondent's memoir, from a Gaza news desk to the briefing room</text>
+  <text x="120" y="682" class="arabic" fill="#aaa9a5" font-size="26">مذكرات مراسلة حرب، من مكتب أخبار في غزة إلى قاعة البيت الأبيض</text>
+  <text x="120" y="812" class="sans" fill="#aaa9a5" font-size="26" letter-spacing="4">TIMES OF PALESTINE</text>
+</svg>

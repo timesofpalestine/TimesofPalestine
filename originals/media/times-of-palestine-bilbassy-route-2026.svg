@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="t">
+  <title id="t">The route of a career: Gaza, Southeast Asia, Africa, South Africa, Baghdad, Washington</title>
+  <defs><style>.serif{font-family:"Source Serif 4",Georgia,serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}</style></defs>
+  <rect width="1600" height="520" fill="#111214"/>
+  <rect x="120" y="52" width="90" height="6" fill="#c7a86b"/>
+  <text x="120" y="122" class="serif" fill="#f2eee8" font-size="42" font-weight="700">One career, four continents</text>
+  <text x="120" y="166" class="sans" fill="#aaa9a5" font-size="24">The stops Nadia Bilbassy names in her own account of the journey</text>
+
+  <line x1="130" y1="300" x2="1470" y2="300" stroke="#3d4f6b" stroke-width="4"/>
+  <g fill="#c7a86b">
+    <circle cx="398" cy="300" r="10"/><circle cx="666" cy="300" r="10"/>
+    <circle cx="934" cy="300" r="10"/><circle cx="1202" cy="300" r="10"/>
+  </g>
+  <circle cx="130" cy="300" r="15" fill="#8a1f2d"/>
+  <circle cx="1470" cy="300" r="15" fill="#286344"/>
+
+  <g class="sans">
+    <text text-anchor="middle" x="130" y="256" fill="#f2eee8" font-size="26" font-weight="700">Gaza, 1987</text>
+    <text text-anchor="middle" x="130" y="352" fill="#aaa9a5" font-size="20">Agence France-Presse</text>
+    <text text-anchor="middle" x="398" y="256" fill="#f2eee8" font-size="26" font-weight="700">Southeast Asia</text>
+    <text text-anchor="middle" x="398" y="352" fill="#aaa9a5" font-size="20">first postings abroad</text>
+    <text text-anchor="middle" x="666" y="256" fill="#f2eee8" font-size="26" font-weight="700">Africa</text>
+    <text text-anchor="middle" x="666" y="352" fill="#aaa9a5" font-size="20">Sudan · Eritrea · Rwanda</text>
+    <text text-anchor="middle" x="934" y="256" fill="#f2eee8" font-size="26" font-weight="700">South Africa</text>
+    <text text-anchor="middle" x="934" y="352" fill="#aaa9a5" font-size="20">meeting Mandela</text>
+    <text text-anchor="middle" x="1202" y="256" fill="#f2eee8" font-size="26" font-weight="700">Iraq</text>
+    <text text-anchor="middle" x="1202" y="352" fill="#aaa9a5" font-size="20">the 2003 war</text>
+    <text text-anchor="middle" x="1470" y="256" fill="#f2eee8" font-size="26" font-weight="700">Washington</text>
+    <text text-anchor="middle" x="1470" y="352" fill="#aaa9a5" font-size="20">the White House</text>
+  </g>
+  <text x="120" y="460" class="sans" fill="#aaa9a5" font-size="22">The last four chapters of the memoir are set at the White House.</text>
+  <text x="1480" y="460" class="sans" fill="#aaa9a5" font-size="22" text-anchor="end" letter-spacing="4">TIMES OF PALESTINE</text>
+</svg>
