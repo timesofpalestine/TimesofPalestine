@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli special forces detained Amin Sirri, the secretary of the Fatah movement, during an operation in Tulkarem refugee camp, the Ma'an news agency reported. The circumstances surrounding the arrest and Sirri's current whereabouts were not immediately disclosed.\n\nThe abduction marks another instance of Israeli military operations targeting Palestinian political figures and activists in refugee camps across the occupied West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168693.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-14T10:37:22+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168693.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2814eac555",
+ "score": 43.17,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces abduct Fatah movement secretary in Tulkarem camp"
+}
