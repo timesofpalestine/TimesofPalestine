@@ -1,0 +1,51 @@
+{
+ "brief": "An Israeli government official threatened to revoke the citizenship of filmmakers behind a documentary recording alleged massacres in Gaza, the Ma'an news agency reported. The threat marked an escalation in efforts to suppress documentation of military operations in the territory.\n\nDetails of the specific documentary or the minister's identity were not disclosed in the initial report. Israeli officials have previously moved to restrict coverage and documentation of the Gaza conflict.",
+ "cat": "arts",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168684.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/164048/%D9%88%D8%B2%D9%8A%D8%B1-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D9%8A%D9%87%D8%AF%D8%AF-%D8%A8%D8%B3%D8%AD%D8%A8-%D8%AC%D9%86%D8%B3%D9%8A%D8%A9-%D9%85%D8%AE%D8%B1%D8%AC%D9%8A-%D9%81%D9%8A%D9%84%D9%85-%D9%8A%D9%88%D8%AB%D9%82-%D8%AC%D8%B1%D8%A7%D8%A6%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/9/14/naza_film",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/film/2026/sep/14/gaza-documentary-makers-naza-israel-citizenship-ntwnfb",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-14T08:31:13+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-arts.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168684.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6d08d1dfc5",
+ "score": 45.78,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli minister threatens to strip citizenship from Gaza documentary filmmakers"
+}
