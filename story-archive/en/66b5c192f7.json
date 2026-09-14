@@ -9,15 +9,15 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-minister-threatens-strip-gaza-film-directors-citizenship",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/film/2026/sep/14/gaza-documentary-makers-naza-israel-citizenship-ntwnfb",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/164048/%D9%88%D8%B2%D9%8A%D8%B1-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D9%8A%D9%87%D8%AF%D8%AF-%D8%A8%D8%B3%D8%AD%D8%A8-%D8%AC%D9%86%D8%B3%D9%8A%D8%A9-%D9%85%D8%AE%D8%B1%D8%AC%D9%8A-%D9%81%D9%8A%D9%84%D9%85-%D9%8A%D9%88%D8%AB%D9%82-%D8%AC%D8%B1%D8%A7%D8%A6%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
    "verified": true
   },
   {
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "66b5c192f7",
- "score": 47.24,
+ "score": 46.98,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
