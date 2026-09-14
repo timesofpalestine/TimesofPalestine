@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/321018",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
    "article": "https://felesteen.news/post/186383/%D8%AD%D9%85%D8%A7%D8%B3-%D8%AA%D8%AD%D9%85%D9%84-%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
@@ -31,12 +25,6 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
-  },
-  {
-   "article": "https://t.me/Arabi21News/429062",
-   "name": "عربي21",
-   "url": "https://t.me/arabi21news",
-   "verified": false
   }
  ],
  "date": "2026-09-14T09:25:00+00:00",
@@ -55,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "023177a798",
- "score": 62.57,
+ "score": 62.27,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
