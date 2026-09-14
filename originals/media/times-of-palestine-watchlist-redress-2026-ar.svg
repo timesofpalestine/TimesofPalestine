@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="t">
+  <title id="t">قائمة المراقبة الأميركية وما لا يفعله رقم التظلّم</title>
+  <defs><style>.arabic{font-family:Cairo,Arial,sans-serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}</style></defs>
+  <rect width="1600" height="720" fill="#111214"/>
+  <rect x="1400" y="48" width="90" height="6" fill="#c7a86b"/>
+  <text x="1490" y="116" class="arabic" text-anchor="end" fill="#f2eee8" font-size="40" font-weight="700">القائمة، والورقة التي لا ترفعها</text>
+  <text x="1490" y="158" class="arabic" text-anchor="end" fill="#aaa9a5" font-size="22">الأرقام: مجلس الرقابة على الخصوصية والحريات المدنية الأميركي، كانون الثاني/يناير 2025</text>
+
+  <g>
+    <rect x="1070" y="200" width="420" height="330" rx="8" fill="#17181b" stroke="#3d4f6b" stroke-width="2"/>
+    <text x="1460" y="248" class="arabic" text-anchor="end" fill="#c7a86b" font-size="22" font-weight="700">قاعدة البيانات</text>
+    <text x="1460" y="306" class="arabic" text-anchor="end" fill="#f2eee8" font-size="30" font-weight="700">أكثر من مليون شخص</text>
+    <text x="1460" y="348" class="arabic" text-anchor="end" fill="#aaa9a5" font-size="22">على قاعدة بيانات الفرز الأمني</text>
+    <text x="1460" y="378" class="arabic" text-anchor="end" fill="#aaa9a5" font-size="22">بينهم نحو ستة آلاف مواطن</text>
+    <text x="1460" y="408" class="arabic" text-anchor="end" fill="#aaa9a5" font-size="22">أميركي</text>
+    <text x="1460" y="462" class="arabic" text-anchor="end" fill="#f2eee8" font-size="22">معيار الإدراج: «اشتباه معقول»</text>
+    <text x="1460" y="494" class="arabic" text-anchor="end" fill="#f2eee8" font-size="22">لا تهمة ولا إدانة</text>
+  </g>
+
+  <g>
+    <rect x="590" y="200" width="420" height="330" rx="8" fill="#17181b" stroke="#3d4f6b" stroke-width="2"/>
+    <text x="980" y="248" class="arabic" text-anchor="end" fill="#c7a86b" font-size="22" font-weight="700">القوائم داخلها</text>
+    <circle cx="966" cy="300" r="9" fill="#8a1f2d"/>
+    <text x="938" y="308" class="arabic" text-anchor="end" fill="#f2eee8" font-size="24" font-weight="700">حظر الطيران</text>
+    <text x="938" y="338" class="arabic" text-anchor="end" fill="#aaa9a5" font-size="20">يُمنع صاحبها من الصعود</text>
+    <circle cx="966" cy="392" r="9" fill="#c7a86b"/>
+    <text x="938" y="400" class="arabic" text-anchor="end" fill="#f2eee8" font-size="24" font-weight="700">المنتقون</text>
+    <text x="938" y="430" class="arabic" text-anchor="end" fill="#aaa9a5" font-size="20">تفتيش إلزامي قبل كل رحلة</text>
+    <circle cx="966" cy="470" r="9" fill="#c7a86b"/>
+    <text x="938" y="478" class="arabic" text-anchor="end" fill="#f2eee8" font-size="24" font-weight="700">المنتقون الموسّعة</text>
+    <text x="938" y="508" class="arabic" text-anchor="end" fill="#aaa9a5" font-size="20">المعيار نفسه بنطاق أوسع</text>
+  </g>
+
+  <g>
+    <rect x="110" y="200" width="420" height="330" rx="8" fill="#17181b" stroke="#8a1f2d" stroke-width="2"/>
+    <text x="500" y="248" class="arabic" text-anchor="end" fill="#c7a86b" font-size="22" font-weight="700">رقم التظلّم</text>
+    <text x="500" y="300" class="arabic" text-anchor="end" fill="#f2eee8" font-size="22">تصدره وزارة الأمن الداخلي</text>
+    <text x="500" y="330" class="arabic" text-anchor="end" fill="#f2eee8" font-size="22">لتمييز المسافر عمّن يحمل</text>
+    <text x="500" y="360" class="arabic" text-anchor="end" fill="#f2eee8" font-size="22">اسماً مشابهاً على القائمة</text>
+    <text x="500" y="414" class="arabic" text-anchor="end" fill="#f2eee8" font-size="24" font-weight="700">لا يرفع اسم المدرَج</text>
+    <text x="500" y="446" class="arabic" text-anchor="end" fill="#f2eee8" font-size="24" font-weight="700">عن القائمة</text>
+    <text x="500" y="494" class="arabic" text-anchor="end" fill="#aaa9a5" font-size="20">والوزارة لا تؤكد ولا تنفي الإدراج</text>
+  </g>
+
+  <rect x="110" y="578" width="1380" height="86" rx="8" fill="#17181b" stroke="#286344" stroke-width="2"/>
+  <text x="1460" y="618" class="arabic" text-anchor="end" fill="#f2eee8" font-size="24">من 268 أميركياً مدرجين على القاعدة قدّموا تظلمات في عامي 2022 و2023</text>
+  <text x="1460" y="650" class="arabic" text-anchor="end" fill="#f2eee8" font-size="24">رُفع نحو الثلث عن قائمة المراقبة</text>
+  <text x="140" y="650" class="sans" fill="#aaa9a5" font-size="20" letter-spacing="3">TIMES OF PALESTINE</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="t">
+  <title id="t">The watchlist, its lists, and what a redress number does not do</title>
+  <defs><style>.serif{font-family:"Source Serif 4",Georgia,serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}</style></defs>
+  <rect width="1600" height="720" fill="#111214"/>
+  <rect x="110" y="48" width="90" height="6" fill="#c7a86b"/>
+  <text x="110" y="116" class="serif" fill="#f2eee8" font-size="40" font-weight="700">The list, and the paper that does not lift it</text>
+  <text x="110" y="158" class="sans" fill="#aaa9a5" font-size="22">Figures: US Privacy and Civil Liberties Oversight Board, January 2025</text>
+
+  <g>
+    <rect x="110" y="200" width="420" height="330" rx="8" fill="#17181b" stroke="#3d4f6b" stroke-width="2"/>
+    <text x="140" y="248" class="sans" fill="#c7a86b" font-size="22" font-weight="700" letter-spacing="2">THE DATASET</text>
+    <text x="140" y="306" class="sans" fill="#f2eee8" font-size="30" font-weight="700">Over 1,000,000 people</text>
+    <text x="140" y="348" class="sans" fill="#aaa9a5" font-size="22">on the Terrorist Screening</text>
+    <text x="140" y="378" class="sans" fill="#aaa9a5" font-size="22">Dataset, about 6,000 of</text>
+    <text x="140" y="408" class="sans" fill="#aaa9a5" font-size="22">them US citizens.</text>
+    <text x="140" y="462" class="sans" fill="#f2eee8" font-size="22">Standard to add a name:</text>
+    <text x="140" y="494" class="sans" fill="#f2eee8" font-size="22">reasonable suspicion.</text>
+  </g>
+
+  <g>
+    <rect x="590" y="200" width="420" height="330" rx="8" fill="#17181b" stroke="#3d4f6b" stroke-width="2"/>
+    <text x="620" y="248" class="sans" fill="#c7a86b" font-size="22" font-weight="700" letter-spacing="2">THE LISTS INSIDE IT</text>
+    <circle cx="634" cy="300" r="9" fill="#8a1f2d"/>
+    <text x="662" y="308" class="sans" fill="#f2eee8" font-size="24" font-weight="700">No Fly</text>
+    <text x="662" y="338" class="sans" fill="#aaa9a5" font-size="20">barred from the aircraft</text>
+    <circle cx="634" cy="392" r="9" fill="#c7a86b"/>
+    <text x="662" y="400" class="sans" fill="#f2eee8" font-size="24" font-weight="700">Selectee</text>
+    <text x="662" y="430" class="sans" fill="#aaa9a5" font-size="20">searched before every flight</text>
+    <circle cx="634" cy="470" r="9" fill="#c7a86b"/>
+    <text x="662" y="478" class="sans" fill="#f2eee8" font-size="24" font-weight="700">Expanded Selectee</text>
+    <text x="662" y="508" class="sans" fill="#aaa9a5" font-size="20">the same, drawn more widely</text>
+  </g>
+
+  <g>
+    <rect x="1070" y="200" width="420" height="330" rx="8" fill="#17181b" stroke="#8a1f2d" stroke-width="2"/>
+    <text x="1100" y="248" class="sans" fill="#c7a86b" font-size="22" font-weight="700" letter-spacing="2">THE REDRESS NUMBER</text>
+    <text x="1100" y="300" class="sans" fill="#f2eee8" font-size="22">Issued by the Department of</text>
+    <text x="1100" y="330" class="sans" fill="#f2eee8" font-size="22">Homeland Security to tell a</text>
+    <text x="1100" y="360" class="sans" fill="#f2eee8" font-size="22">traveller apart from someone</text>
+    <text x="1100" y="390" class="sans" fill="#f2eee8" font-size="22">on a list who shares a name.</text>
+    <text x="1100" y="444" class="sans" fill="#f2eee8" font-size="24" font-weight="700">It does not take a listed</text>
+    <text x="1100" y="476" class="sans" fill="#f2eee8" font-size="24" font-weight="700">person off the list.</text>
+    <text x="1100" y="508" class="sans" fill="#aaa9a5" font-size="20">DHS neither confirms nor denies.</text>
+  </g>
+
+  <rect x="110" y="578" width="1380" height="86" rx="8" fill="#17181b" stroke="#286344" stroke-width="2"/>
+  <text x="140" y="618" class="sans" fill="#f2eee8" font-size="24">Of 268 Americans on the dataset who filed redress complaints in 2022 and 2023,</text>
+  <text x="140" y="650" class="sans" fill="#f2eee8" font-size="24">about a third were taken off the watchlist.</text>
+  <text x="1460" y="650" class="sans" text-anchor="end" fill="#aaa9a5" font-size="20" letter-spacing="3">TIMES OF PALESTINE</text>
+</svg>

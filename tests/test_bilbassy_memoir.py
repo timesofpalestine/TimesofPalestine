@@ -98,9 +98,13 @@ class PinTests(unittest.TestCase):
 
     def test_the_campaign_pin_still_leads_the_row(self):
         # Owner order 2026-08-19: the Dima Barakat case is the first card.
-        self.assertEqual(build.SPECIALS[0].get("requires_original"),
-                         "dima-barakat-file-2026")
-        self.assertEqual(build.SPECIALS[1].get("requires_original"), SLUG)
+        # Everything after it is news order, so a later news pin may sit
+        # above this one; what is fixed is that the memoir stays ahead of
+        # the standing franchises rather than sinking behind them.
+        slugs = [s.get("requires_original") for s in build.SPECIALS]
+        self.assertEqual(slugs[0], "dima-barakat-file-2026")
+        self.assertIn(SLUG, slugs)
+        self.assertLess(slugs.index(SLUG), slugs.index("palestine-top100-2026"))
 
     def test_the_pin_retires_with_the_story_and_cannot_squat(self):
         # No `standing:` header and no oversized maxAgeHours: the card is
