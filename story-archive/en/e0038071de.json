@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces continued artillery and gunfire attacks across Gaza on Monday, IMEMC News reported, marking the 340th consecutive day of military operations since the start of the conflict. The shelling and live fire persisted despite a ceasefire agreement, according to the report.\n\nThe ongoing bombardment has left the coastal enclave devastated by sustained military operations throughout the extended conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israeli-shelling-gunfire-continue-across-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-14T07:56:16+00:00",
+ "dek": "Israeli occupation forces continued violating the “ceasefire” agreement in the Gaza Strip on Monday, marking the 340th consecutive day of artillery shelling, live fire, and military attacks across the devastated coastal enclave.",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/GazaBombing-e1789371985910.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israeli-shelling-gunfire-continue-across-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/israeli-shelling-gunfire-continue-across-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e0038071de",
+ "score": 63.23,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israel maintains shelling across Gaza on 340th day of war"
+}
