@@ -15,15 +15,15 @@
    "verified": true
   },
   {
-   "article": "http://www.democracynow.org/2026/9/14/naza_film",
-   "name": "Democracy Now!",
-   "url": "https://www.democracynow.org/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/film/2026/sep/14/gaza-documentary-makers-naza-israel-citizenship-ntwnfb",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/9/14/naza_film",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
    "verified": true
   }
  ],
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "6d08d1dfc5",
- "score": 45.18,
+ "score": 44.9,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
