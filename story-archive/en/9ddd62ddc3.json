@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/world/2026/sep/13/pregnant-woman-killed-israeli-attacks-gaza",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attack-wounds-10-palestinians-gaza-city-displacement-camp",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-13T15:51:33+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "9ddd62ddc3",
- "score": 46.69,
+ "score": 46.43,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
