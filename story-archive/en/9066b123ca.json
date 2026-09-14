@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli attack struck a displacement camp in Gaza, according to Al Jazeera English. The strike targeted an area sheltering displaced Palestinians. Details on casualties and the extent of damage were not immediately available.\n\nThe displacement camp represents one of several makeshift settlements established across Gaza to house people fleeing combat operations in other parts of the territory. Israel has conducted extensive military operations in Gaza in recent months.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/14/israeli-attack-targets-gaza-displacement-camp?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-14T21:37:04+00:00",
+ "dek": "Israeli attack targets Gaza displacement camp…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/gaza-displacement-camp-horizontal-thumb-1789421722.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/14/israeli-attack-targets-gaza-displacement-camp?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/14/israeli-attack-targets-gaza-displacement-camp?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9066b123ca",
+ "score": 49.24,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike hits Gaza displacement camp"
+}
