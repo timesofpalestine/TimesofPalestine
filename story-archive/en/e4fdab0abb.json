@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/rights-group-accuses-israel-dismantling-palestinian-existence-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/09/rights-group-accuses-israel-dismantling-palestinian-existence-west-bank",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "e4fdab0abb",
- "score": 76.76,
+ "score": 76.46,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
