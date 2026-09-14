@@ -1,0 +1,39 @@
+{
+ "brief": "Video footage shows an Israeli quadcopter maneuvering at low altitude between residential buildings in eastern Gaza City, Al Jazeera English reported. The drone's close proximity to homes raised concerns about surveillance and intimidation in the densely populated area.\n\nThe incident highlights the persistent presence of Israeli aerial operations over Gaza's civilian zones, where such drone activity has become routine despite international scrutiny over their impact on residents' safety and psychological well-being.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/13/aje-onl-nf_israeli-quadcopter-terrorises-homes-in-gaza-city-130926?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/09/1168320",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-13T23:33:23+00:00",
+ "dek": "Video shows a low-flying Israeli quadcopter maneuvering between residential buildings in eastern Gaza City.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789342332.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/13/aje-onl-nf_israeli-quadcopter-terrorises-homes-in-gaza-city-130926?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/13/aje-onl-nf_israeli-quadcopter-terrorises-homes-in-gaza-city-130926?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6ed3451a28",
+ "score": 48.43,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli drone flies low over Gaza City residential area"
+}
