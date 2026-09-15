@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces escalated military operations across the northern West Bank on Monday evening, converting a Palestinian home into a military post in the Tubas and Tulkarem governorates, IMEMC News reported. Forces invaded several towns and a refugee camp during the operations.\n\nAn Israeli military incursion resulted in the abduction of a Palestinian father and son in Tubas. The specific locations targeted and the identities of those detained were not immediately detailed in initial reports of the escalation.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israeli-army-escalates-violations-in-tulkarem-and-tubas",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-15T02:29:05+00:00",
+ "dek": "Israeli occupation forces escalated military operations across the northern West Bank on Monday evening, converting a Palestinian home into a military post, invading several towns and a refugee camp, and abducting a Palestinian father and son in the Tubas…",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/invade-6.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israeli-army-escalates-violations-in-tulkarem-and-tubas",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/israeli-army-escalates-violations-in-tulkarem-and-tubas"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9ec539c464",
+ "score": 63.75,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces escalate operations in northern West Bank towns"
+}
