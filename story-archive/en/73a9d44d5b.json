@@ -1,0 +1,45 @@
+{
+ "brief": "The Israeli human rights organization B'Tselem has characterized settler violence as part of a systematic effort to eliminate Palestinian existence in the occupied territories, Al Jazeera English reported. The group contends that attacks by Israeli settlers follow a deliberate pattern designed to drive Palestinians from their land.\n\nB'Tselem's assessment frames the violence not as isolated incidents but as coordinated actions serving a broader territorial objective. The organization documents such incidents as part of its monitoring of rights violations in occupied Palestinian areas.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/15/15-09-reported-west-bank-report-btselem-ps?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/rights-group-accuses-israel-dismantling-palestinian-existence-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/ng-interactive/2026/sep/14/israel-palestinian-living-conditions-eliminated-west-bank-human-rights-report",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-15T01:23:53+00:00",
+ "dek": "Israeli rights group B’Tselem says Israeli settler violence aims to eliminate Palestinian existence.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789434878.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/15/15-09-reported-west-bank-report-btselem-ps?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/15/15-09-reported-west-bank-report-btselem-ps?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "73a9d44d5b",
+ "score": 49.59,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers wage campaign to erase Palestinian presence, B'Tselem says"
+}
