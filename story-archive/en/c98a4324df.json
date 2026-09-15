@@ -6,7 +6,13 @@
    "article": "https://t.me/eyesonpal/53826",
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-tents-gaza-kills-two-including-child",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-14T14:25:57+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "c98a4324df",
- "score": 41.89,
+ "score": 41.57,
  "source": "Eye on Palestine",
  "source_id": "tg-eyes",
  "source_url": "https://t.me/eyesonpal",
