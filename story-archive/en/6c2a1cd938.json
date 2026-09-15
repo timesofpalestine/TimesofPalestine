@@ -13,6 +13,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/9/14/naza_film",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-14T17:46:28+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "6c2a1cd938",
- "score": 69.44,
+ "score": 69.15,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
