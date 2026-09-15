@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinian medical sources reported that Israeli attacks killed three Palestinians on Monday, two in a drone strike near Yarmouk Stadium and another near the \"Yellow Cubes\" area in Al-Mawasi in Rafah, IMEMC News reported.\n\nThe strikes targeted different areas of the enclave, with the deadliest hitting the stadium vicinity in what appeared to be a concentrated operation. The remaining casualty occurred in the southern Rafah district.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israeli-attacks-kill-three-palestinians-in-gaza-2",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-15T01:42:34+00:00",
+ "dek": "Palestinian medical sources reported that three Palestinians were killed in Monday’s attacks: two in a drone strike near Yarmouk Stadium and another near the “Yellow Cubes” area in Al-Mawasi in Rafah.",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/Screenshot-2026-09-14-184120-e1789436503459.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israeli-attacks-kill-three-palestinians-in-gaza-2",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/israeli-attacks-kill-three-palestinians-in-gaza-2"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "93ed24e4e7",
+ "score": 61.12,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli drone strike kills three Palestinians in Gaza"
+}
