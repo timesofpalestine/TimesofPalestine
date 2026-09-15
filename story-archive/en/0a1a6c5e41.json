@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/news/mahmoud-khalil-sues-columbia-university-allowing-harassment-led-his-ice-arrest",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/mahmoud-khalil-sues-columbia-alleged-failure-protect-pro-palestinian-students",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-14T21:10:06+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "0a1a6c5e41",
- "score": 48.43,
+ "score": 48.16,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
