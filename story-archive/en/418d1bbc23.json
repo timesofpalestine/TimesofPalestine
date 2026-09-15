@@ -19,18 +19,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-palestinian-gazas-khan-younis",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/eyesonpal/53826",
-   "name": "Eye on Palestine",
-   "url": "https://t.me/eyesonpal",
-   "verified": true
   }
  ],
  "date": "2026-09-14T09:52:54+00:00",
@@ -49,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "418d1bbc23",
- "score": 39.52,
+ "score": 39.33,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

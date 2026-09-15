@@ -15,9 +15,21 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-kills-least-two-palestinians-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.theguardian.com/film/2026/sep/14/gaza-documentary-makers-naza-israel-citizenship-ntwnfb",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53826",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
    "verified": true
   },
   {
@@ -43,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "6088a337e6",
- "score": 47.38,
+ "score": 47.19,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
