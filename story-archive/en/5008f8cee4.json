@@ -13,6 +13,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/ed-sheeran-isnt-staying-out-of-politics",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-15T15:24:12+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "5008f8cee4",
- "score": 49.78,
+ "score": 49.54,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
