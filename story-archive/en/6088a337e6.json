@@ -31,6 +31,12 @@
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
    "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/9/14/naza_film",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-14T21:12:07+00:00",
@@ -49,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "6088a337e6",
- "score": 42.77,
+ "score": 42.48,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
