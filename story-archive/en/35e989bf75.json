@@ -1,0 +1,33 @@
+{
+ "brief": "A new report by B'Tselem, an Israeli human rights organization, characterizes Israeli actions on the ground as a \"project of elimination\" of Palestinians, according to Al Jazeera English. The assessment comes as settlement-related sanctions spark a broader diplomatic crisis in the region.\n\nThe report's framing represents a significant escalation in rhetoric from Israeli civil society regarding the occupation and settlement expansion policies.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/15/palestine-weekly-settlement-sanctions-spark-diplomatic-crisis?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-15T06:53:50+00:00",
+ "dek": "New B'Tselem report frames events on ground as Israel's 'project of elimination' of Palestinians.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/epa_6aa858f3b419-1789417715.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/15/palestine-weekly-settlement-sanctions-spark-diplomatic-crisis?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/15/palestine-weekly-settlement-sanctions-spark-diplomatic-crisis?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "35e989bf75",
+ "score": 46.21,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel settlement sanctions trigger diplomatic tensions"
+}
