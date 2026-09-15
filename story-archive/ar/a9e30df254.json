@@ -1,0 +1,33 @@
+{
+ "brief": "الاقتصار على العنوان المرسل دون معلومات إضافية في المصدر يحول دون كتابة موجز يفي بمعايير الدقة المهنية. العنوان المصدري يحمل معلومة واحدة (تسلسل عددي وإطار زمني) لا تفاصيل تسمح ببناء سياق إخباري متكامل — لا أسماء أو تواريخ محددة أو ظروف أو مصدر مباشر للمعلومة.\n\nلكتابة موجز موثوق، يلزم نص المادة الكامل أو بيان صحفي يتضمن تفاصيل إضافية: هويات الضحايا أو تواريخ الحوادث أو جهات أصدرت الإحصاء أو سياق الأزمة التي يعكسها هذا المعدل.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/09/14/1118030",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-15T00:28:03+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/09/14/1118030",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a9e30df254",
+ "score": 47.72,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "سادس جندي إسرائيلي ينتحر في عشرة أيام"
+}
