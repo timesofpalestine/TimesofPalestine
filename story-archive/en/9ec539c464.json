@@ -6,25 +6,7 @@
    "article": "https://imemc.org/article/israeli-army-escalates-violations-in-tulkarem-and-tubas",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-man-during-raid-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/eyesonpal/53825",
-   "name": "Eye on Palestine",
-   "url": "https://t.me/eyesonpal",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/ng-interactive/2026/sep/14/israel-palestinian-living-conditions-eliminated-west-bank-human-rights-report",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-15T02:29:05+00:00",
@@ -43,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "9ec539c464",
- "score": 58.17,
+ "score": 56.55,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
