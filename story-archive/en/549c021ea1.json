@@ -1,0 +1,33 @@
+{
+ "brief": "The United Nations has called on Israel to permit international investigators to enter Gaza, the Ma'an news agency reported. The demand comes as accountability concerns mount over conduct during the conflict in the territory.\n\nIsrael has restricted access to Gaza for independent monitors and fact-finding missions, hampering efforts to document allegations of violations and assess humanitarian conditions on the ground.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168747.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-15T09:42:57+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168747.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "549c021ea1",
+ "score": 46.35,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "UN demands Israel allow investigators access to Gaza"
+}
