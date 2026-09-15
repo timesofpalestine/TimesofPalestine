@@ -1,0 +1,39 @@
+{
+ "brief": "The UN human rights chief has reiterated concerns over potential war crimes evidence as remains of entire families are unearthed from Gaza rubble, Al Jazeera English reported. The official expressed alarm that Israel is not showing adequate respect for the dead discovered in mass burial sites across the territory.\n\nThe statement follows documented cases of family groups recovered from collapsed buildings and other sites where Palestinians have been killed during the conflict. The human rights office has emphasized the need for proper handling and identification of remains as part of accountability processes.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/15/israel-lacking-respect-for-dead-buried-in-gaza-rubble-un?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/09/1168335",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-15T19:26:55+00:00",
+ "dek": "Human rights chief reiterates concern over war crimes evidence as remains from entire families are unearthed.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/AFP__20260825__C6GG3DE__v3__HighRes__TopshotPalestinianIsraelConflictGaza-1788083396.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/15/israel-lacking-respect-for-dead-buried-in-gaza-rubble-un?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/15/israel-lacking-respect-for-dead-buried-in-gaza-rubble-un?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "85ac1b5bc7",
+ "score": 93.66,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN accuses Israel of disrespecting Gaza dead buried in rubble"
+}
