@@ -1,0 +1,57 @@
+{
+ "brief": "An Israeli double-tap strike killed a 15-year-old boy and a paramedic in Gaza, according to Al Jazeera English. The teenager died as he rushed to assist the paramedic, who had been wounded in an initial strike.\n\nDouble-tap strikes, in which a second attack follows shortly after an initial one, are often designed to target first responders and complicate rescue efforts.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/16/09-16-sv-gaza-double-tap-strike?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-attacks-kill-palestinians-across-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/16/building-gaza-city-damaged-israeli-strikes-collapses-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/least-50-children-among-100-trapped-collapsed-gaza-city-building",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/09/1168335",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-16T10:21:49+00:00",
+ "dek": "A child has been killed in an Israeli double-tap strike as he rushed to help a paramedic wounded in an earlier attack.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789553954.jpg?resize=1920%2C1077&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/16/09-16-sv-gaza-double-tap-strike?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/16/09-16-sv-gaza-double-tap-strike?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "589d862b8a",
+ "score": 63.77,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike kills teenager and paramedic in Gaza"
+}
