@@ -7,6 +7,18 @@
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/9/16/%d8%a7%d9%86%d9%87%d9%8a%d8%a7%d8%b1-%d9%85%d8%a8%d9%86%d9%89-%d9%81%d9%8a-%d8%ba%d8%b2%d8%a9-%d9%85%d8%a7%d8%b0%d8%a7-%d9%86%d8%b9%d8%b1%d9%81-%d8%b9%d9%86?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217587&slug=%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D9%85%D8%A8%D9%86%D9%89-%D9%85%D8%AA%D8%B6%D8%B1%D8%B1-%D9%8A%D8%A3%D9%88%D9%8A-%D9%86%D8%A7%D8%B2%D8%AD%D9%8A%D9%86-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D8%AC%D8%B1%D8%AD%D9%89-%D9%88%D8%A7%D9%84%D9%85%D9%81%D9%82%D9%88%D8%AF%D9%8A%D9%86",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
   }
  ],
  "date": "2026-09-16T10:40:00+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "ecc88ecfe9",
- "score": 63.13,
+ "score": 62.82,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
