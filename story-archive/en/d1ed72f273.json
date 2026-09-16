@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/israeli-colonizers-establish-new-outpost-on-beit-iksa-land",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/09/israel-merges-two-settler-outposts-near-jerusalem-furthering-the-fragmentation-of-the-west-bank",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-15T11:17:08+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "d1ed72f273",
- "score": 36.54,
+ "score": 36.29,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
