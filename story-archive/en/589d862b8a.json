@@ -33,21 +33,15 @@
    "verified": true
   },
   {
+   "article": "https://news.un.org/feed/view/en/story/2026/09/1168346",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  },
+  {
    "article": "https://www.maannews.net/news/2168794.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://shehabnews.com/post/164192/%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A3%D8%AD%D8%B1%D8%A7%D8%B1-%D8%AA-%D8%AD%D9%85-%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D9%86%D9%8A-%D8%BA%D8%B2%D8%A9-%D9%88%D8%AA%D8%B7%D8%A7%D9%84%D8%A8-%D8%A8%D8%B6%D8%BA%D8%B7-%D8%AF%D9%88%D9%84%D9%8A-%D9%84%D8%A5%D8%AF%D8%AE%D8%A7%D9%84-%D9%85%D8%B9%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D9%86%D9%82%D8%A7%D8%B0",
-   "name": "Shehab Wire (EN)",
-   "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/09/1168335",
-   "name": "UN News",
-   "url": "https://news.un.org/",
    "verified": true
   }
  ],
@@ -67,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "589d862b8a",
- "score": 61.9,
+ "score": 61.55,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
