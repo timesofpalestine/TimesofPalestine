@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli airstrikes and drone attacks killed several Palestinians and wounded others across Gaza on Tuesday, IMEMC News reported. The strikes struck multiple locations throughout the territory as health authorities documented mounting casualties from what they characterized as ceasefire violations.\n\nThe attacks added to the rising toll in Gaza, where health officials said Israeli military operations continued to inflict civilian casualties despite ceasefire agreements.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israeli-attacks-kill-palestinians-across-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-tents-gaza-kills-two-including-child",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-16T03:16:26+00:00",
+ "dek": "On Tuesday, several Palestinians were killed and others injured in a series of Israeli airstrikes and drone attacks across the devastated Gaza Strip, while health authorities reported that casualties from Israeli ceasefire violations continued to rise.",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/GAzaB-e1789528479846.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israeli-attacks-kill-palestinians-across-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/israeli-attacks-kill-palestinians-across-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "45bf1b0e7b",
+ "score": 63.85,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli airstrikes kill Palestinians across Gaza strip"
+}
