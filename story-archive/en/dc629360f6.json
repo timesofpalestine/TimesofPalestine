@@ -1,0 +1,33 @@
+{
+ "brief": "The United States is set to deliver $2.8 billion worth of military equipment to Israel, according to Al Jazeera English. The shipment represents a major arms transfer at a time of heightened regional tensions.\n\nA 15-year-old boy was killed in a double-tap strike while attempting to rescue a paramedic, the outlet reported. Double-tap strikes—successive attacks on the same location—are a documented tactic that targets first responders and civilians gathering at impact sites.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/16/jerusalem-daily-us-to-send-2-8bn-worth-of-weapons-to-israel?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T19:14:28+00:00",
+ "dek": "A 15-year-old boy was killed in a double-tap strike while trying to save a paramedic.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789586038.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/16/jerusalem-daily-us-to-send-2-8bn-worth-of-weapons-to-israel?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/16/jerusalem-daily-us-to-send-2-8bn-worth-of-weapons-to-israel?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dc629360f6",
+ "score": 63.88,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "US approves $2.8 billion weapons shipment to Israel"
+}
