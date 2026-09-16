@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/israeli-attacks-kill-palestinians-across-gaza",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-tents-gaza-kills-two-including-child",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-16T03:16:26+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "45bf1b0e7b",
- "score": 61.21,
+ "score": 60.93,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",

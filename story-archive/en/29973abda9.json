@@ -6,18 +6,18 @@
    "article": "https://www.aljazeera.com/news/2026/9/16/gaza-residential-building-collapses-six-families-reportedly-trapped?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/gaza-scores-trapped-under-rubble-after-israeli-hit-building-collapses",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   },
   {
    "article": "https://imemc.org/article/eleven-displaced-palestinians-killed-in-gaza-building-collapse",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/least-10-killed-building-collapse-gaza-city-dozens-remain-missing",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
    "verified": true
   }
  ],
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "29973abda9",
- "score": 62.08,
+ "score": 61.8,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
