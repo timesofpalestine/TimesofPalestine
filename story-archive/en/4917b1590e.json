@@ -1,0 +1,39 @@
+{
+ "brief": "A building damaged during fighting in Gaza City collapsed, killing at least 21 Palestinians, Al Jazeera English reported. The collapse has heightened concerns about the safety risks posed by structures destroyed or severely damaged throughout the territory during the conflict.\n\nThousands of buildings across Gaza have been damaged or destroyed, leaving many Palestinians without secure shelter. Residents face acute danger from unstable ruins as they attempt to access their homes or salvage belongings, with limited options for relocation or repair.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/16/nowhere-to-go-gazas-damaged-buildings-turn-deadly?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://shehabnews.com/post/164208/%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D8%A9-%D8%A8%D8%BA%D8%B2%D8%A9-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%A8%D9%86%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9-%D9%8A%D8%AF%D9%82-%D9%86%D8%A7%D9%82%D9%88%D8%B3-%D8%A7%D9%84%D8%AE%D8%B7%D8%B1-%D9%84%D9%85%D8%A6%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A2%D9%8A%D9%84%D8%A9-%D9%84%D9%84%D8%B3%D9%82%D9%88%D8%B7",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T17:07:50+00:00",
+ "dek": "A war-damaged building collapses in Gaza City, killing at least 21 Palestinians and exposing fears of unsafe ruins.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/873A1207-copy-1789575795.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/16/nowhere-to-go-gazas-damaged-buildings-turn-deadly?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/16/nowhere-to-go-gazas-damaged-buildings-turn-deadly?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4917b1590e",
+ "score": 63.9,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "War-damaged Gaza building collapses, killing at least 21"
+}
