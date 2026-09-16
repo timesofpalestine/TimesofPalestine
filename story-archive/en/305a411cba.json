@@ -1,0 +1,33 @@
+{
+ "brief": "Thirteen students in Gaza have been left unable to pursue university scholarships in Belgium after the country's government failed to agree on an evacuation plan, The Guardian reported. The students said they were devastated by the decision, which prevents them from leaving Gaza to take up their places at Belgian universities.\n\nThe Belgian government's inability to reach consensus on the evacuation has stranded the scholarship recipients. No details were provided on the specific obstacles preventing the government from authorizing the students' departure or timeline for potential resolution.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/16/gaza-students-devastated-belgium-university-scholarships",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T04:00:11+00:00",
+ "dek": "Belgian government unable to agree on evacuation of 13 students to take up scholarships at universities Students who are unable to leave Gaza and take up scholarships at Belgian universities have said they are devastated after Belgium’s government hit…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/aad9be426415c15305cc1f41cd9faefe75d00ca9/67_286_781_625/master/781.jpg?width=140&quality=85&auto=format&fit=max&s=065a0981ba8b0b705d402f2106d37d54",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/sep/16/gaza-students-devastated-belgium-university-scholarships",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/sep/16/gaza-students-devastated-belgium-university-scholarships"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "305a411cba",
+ "score": 63.83,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Belgian government blocks scholarship evacuation for Gaza students"
+}
