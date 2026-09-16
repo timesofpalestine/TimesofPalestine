@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/16/rescue-workers-search-for-survivors-after-gaza-building-collapse?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
    "article": "https://news.un.org/feed/view/en/story/2026/09/1168346",
    "name": "UN News",
    "url": "https://news.un.org/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "3cd02cea87",
- "score": 57.82,
+ "score": 57.46,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
