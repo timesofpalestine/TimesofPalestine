@@ -1,0 +1,39 @@
+{
+ "brief": "A six-story residential building collapsed Wednesday morning in the Sana'a Street area west of Gaza City, Shehab Wire reported. The structure, which housed displaced residents, killed at least nine people and wounded 14 others, with dozens more trapped beneath the rubble.\n\nThe collapse also damaged adjacent tents housing displaced families. Search and rescue operations were underway at the site as authorities worked to locate those missing in the debris.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.com/post/164157/%D9%85%D8%AD%D8%AF%D8%AB-9%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%8814-%D9%85%D8%B5%D8%A7%D8%A8-%D8%A7-%D9%88%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D9%82%D9%88%D8%AF%D9%8A%D9%86-%D8%AA%D8%AD%D8%AA-%D8%A7%D9%84%D8%A3%D9%86%D9%82%D8%A7%D8%B6-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B3%D9%83%D8%A7%D9%86%D9%87%D8%A7-%D8%BA%D8%B1%D8%A8%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%BA%D8%B2%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/16/gaza-residential-building-collapses-six-families-reportedly-trapped?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-16T04:25:00+00:00",
+ "dek": "A six-story residential building collapsed Wednesday morning in the Sana'a Street area west of Gaza City, Shehab Wire reported.",
+ "dup_of": null,
+ "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/Ead8s.jpg?v=1",
+ "lang": "en",
+ "link": "https://shehabnews.com/post/164157/%D9%85%D8%AD%D8%AF%D8%AB-9%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%8814-%D9%85%D8%B5%D8%A7%D8%A8-%D8%A7-%D9%88%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D9%82%D9%88%D8%AF%D9%8A%D9%86-%D8%AA%D8%AD%D8%AA-%D8%A7%D9%84%D8%A3%D9%86%D9%82%D8%A7%D8%B6-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B3%D9%83%D8%A7%D9%86%D9%87%D8%A7-%D8%BA%D8%B1%D8%A8%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%BA%D8%B2%D8%A9",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Shehab Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.com/post/164157/%D9%85%D8%AD%D8%AF%D8%AB-9%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%8814-%D9%85%D8%B5%D8%A7%D8%A8-%D8%A7-%D9%88%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%81%D9%82%D9%88%D8%AF%D9%8A%D9%86-%D8%AA%D8%AD%D8%AA-%D8%A7%D9%84%D8%A3%D9%86%D9%82%D8%A7%D8%B6-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B3%D9%83%D8%A7%D9%86%D9%87%D8%A7-%D8%BA%D8%B1%D8%A8%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%BA%D8%B2%D8%A9"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c8c1d463a7",
+ "score": 63.26,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "Six-story residential building collapses in western Gaza City"
+}
