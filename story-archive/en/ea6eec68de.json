@@ -1,0 +1,33 @@
+{
+ "brief": "At least five pupils have been killed over the past year at a village school in the West Bank, The Guardian reported. The deaths resulted from actions by both Israeli settlers and soldiers in the area surrounding the school.\n\nThe school has effectively come under siege, with the repeated killings creating an environment of danger for students attending classes in the village.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/news/audio/2026/sep/16/palestinian-school-al-mughayyir-under-siege-podcast",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T02:00:06+00:00",
+ "dek": "At least five pupils at a village school in the West Bank have been killed in the last year by settlers and soldiers.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/2ef2a14fa792e6d8cd6878de6ee6d251c9f64f2a/341_0_6495_5196/master/6495.jpg?width=140&quality=85&auto=format&fit=max&s=ee4fe39dafe83f35895a0bae5603d64d",
+ "lang": "en",
+ "link": "https://www.theguardian.com/news/audio/2026/sep/16/palestinian-school-al-mughayyir-under-siege-podcast",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/news/audio/2026/sep/16/palestinian-school-al-mughayyir-under-siege-podcast"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ea6eec68de",
+ "score": 63.85,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Settlers and soldiers kill five pupils at West Bank village school"
+}
