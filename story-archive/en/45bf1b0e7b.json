@@ -6,7 +6,25 @@
    "article": "https://imemc.org/article/israeli-attacks-kill-palestinians-across-gaza",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-continues-to-kill-displaced-palestinians-as-nowhere-is-safe-in-gaza",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/21-including-five-children-killed-gaza-building-collapse",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/video/2026/sep/16/emergency-crews-gaza-building-collapse-israeli-strike-video",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-16T03:16:26+00:00",
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "45bf1b0e7b",
- "score": 59.19,
+ "score": 51.54,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
