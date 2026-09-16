@@ -21,6 +21,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/09/gaza-apartment-block-collapse-leaves-21-dead",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-killed-israeli-shelling-gaza-city",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -67,7 +73,7 @@
  "modified": null,
  "original": false,
  "pid": "b696b0c5c9",
- "score": 63.28,
+ "score": 62.95,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
