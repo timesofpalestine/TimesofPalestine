@@ -1,0 +1,33 @@
+{
+ "brief": "Rescue crews in Gaza pulled survivors from a collapsed residential building as cries for help continued from beneath the rubble, Al Jazeera English reported. Witnesses described ongoing rescue efforts at the scene as emergency responders worked to reach those trapped inside.\n\nSix families were reported trapped in the structure. The exact cause of the collapse and the number of casualties remained unclear as rescue operations continued.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/16/gaza-residential-building-collapses-six-families-reportedly-trapped?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T04:30:52+00:00",
+ "dek": "Rescue crews in Gaza pull survivors from a collapsed building as cries for help echo beneath the rubble, witnesses say.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/reuters_6aaa0b5b-1789528923.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/16/gaza-residential-building-collapses-six-families-reportedly-trapped?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/16/gaza-residential-building-collapses-six-families-reportedly-trapped?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "29973abda9",
+ "score": 48.99,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Building collapses in Gaza, traps six families under rubble"
+}

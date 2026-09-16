@@ -1,0 +1,33 @@
+{
+ "brief": "At least 10 Palestinians died and up to 70 more were believed missing after a building collapsed in Gaza City, Al Jazeera English reported. The scale of casualties remained unclear as rescue efforts continued at the site.\n\nThe collapse added to the humanitarian toll in Gaza, where infrastructure damage from months of conflict has left many structures unstable and rescue capabilities severely limited.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/16/at-least-10-dead-dozens-missing-in-gaza-building-collapse?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T05:06:52+00:00",
+ "dek": "At least 10 Palestinians are dead and up to 70 more are believed missing after a building collapsed in Gaza City.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789535165.jpg?resize=1916%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/16/at-least-10-dead-dozens-missing-in-gaza-building-collapse?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/16/at-least-10-dead-dozens-missing-in-gaza-building-collapse?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "65629744bb",
+ "score": 63.4,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Building collapse kills at least 10 in Gaza City"
+}
