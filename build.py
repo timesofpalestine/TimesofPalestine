@@ -2284,6 +2284,15 @@ def structure_issues(text, lang):
             f"a paragraph runs past {MAX_PARA_WORDS} words — split it at sentence boundaries")
     return issues
 
+# Stable classifiers for the structure gate's messages. The prose changes with
+# the style guide — it did on 2026-09-12, when "too short" became "below the
+# publish floor" and silently retired the `retry-short` ledger tag, filing
+# every short-copy retry under `retry-paragraphs` instead. The codes do not.
+_ISSUE_SHORT_RX = re.compile(r"below the publish floor|أقصر من حدّ النشر")
+_ISSUE_BLOCK_RX = re.compile(r"single-block body|النص كتلة واحدة")
+_ISSUE_PARA_RX = re.compile(r"runs past \d+ words|فقرة تتجاوز \d+ كلمة")
+
+
 def is_complete_text(s, floor):
     s = (s or "").strip()
     if len(s) < floor:
@@ -2399,16 +2408,26 @@ def write_brief(client, item):
         # style alone never holds coverage).
         issues = (language_quality_issues(f"{new_title}\n{text}", item["lang"])
                   + structure_issues(text, item["lang"]))
-        if not issues:
+        # An oversized paragraph is ALREADY split at sentence boundaries by the
+        # render-time reflow, on every surface — so a second model call to do
+        # the same work buys a reader nothing, and it is not free (charter §13).
+        # September's ledger: the structure retries ran $45.18 against $43.67 of
+        # first drafts, and that money came out of the discretionary pool the
+        # desks that write originals draw on. A merely-long paragraph now
+        # publishes and reflows. Short copy is still rescued, a single block is
+        # still broken up, and machine diction is still corrected.
+        retryable = [i for i in issues if not _ISSUE_PARA_RX.search(i)]
+        if not retryable:
             break
         if attempt == 0:
-            _structural = structure_issues(text, item["lang"])
-            if any(s.startswith(("too short", "الموجز قصير")) for s in _structural):
+            if any(_ISSUE_SHORT_RX.search(i) for i in retryable):
                 retry_kind = "retry-short"
-            elif _structural:
-                retry_kind = "retry-paragraphs"
+            elif any(_ISSUE_BLOCK_RX.search(i) for i in retryable):
+                retry_kind = "retry-block"
             else:
                 retry_kind = "retry-diction"
+            # The pass is bought already, so it is asked to fix everything it
+            # found, pacing included.
             convo += [{"role": "assistant", "content": raw},
                       {"role": "user", "content": _diction_retry_note(issues, item["lang"])}]
         else:

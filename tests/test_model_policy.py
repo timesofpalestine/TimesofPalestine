@@ -180,6 +180,39 @@ class RetryEconomyTests(unittest.TestCase):
         wall = " ".join(["word"] * 100) + ".\n\n" + " ".join(["word"] * 90) + "."
         self.assertTrue(any("runs past" in i for i in build.structure_issues(wall, "en")))
 
+    def test_a_long_paragraph_never_buys_a_model_call(self):
+        # The render-time reflow already splits it at sentence boundaries on
+        # every surface, so the retry bought nothing a reader could see. It
+        # was not free: September's ledger ran $45.18 of structure retries
+        # against $43.67 of first drafts, and the pool that money came from
+        # is the one the originals desks draw on.
+        wall = " ".join(["word"] * 100) + ".\n\n" + " ".join(["word"] * 90) + "."
+        issues = build.structure_issues(wall, "en")
+        self.assertTrue(any("runs past" in i for i in issues), "gate still reports it")
+        self.assertEqual([i for i in issues if not build._ISSUE_PARA_RX.search(i)], [],
+                         "a merely-long paragraph must not trigger the editor pass")
+
+    def test_short_copy_and_single_blocks_still_buy_the_rescue(self):
+        for text in (" ".join(["word"] * 5) + ".",
+                     " ".join(["word"] * 120) + "."):
+            issues = build.structure_issues(text, "en")
+            self.assertTrue([i for i in issues if not build._ISSUE_PARA_RX.search(i)],
+                            f"still retryable: {text[:20]}")
+
+    def test_the_ledger_tag_survives_a_reworded_gate(self):
+        # The 2026-09-12 rewording ("too short" -> "below the publish floor")
+        # silently retired the retry-short tag: the classifier matched the
+        # prose, so every short-copy retry was filed under retry-paragraphs
+        # and the breakdown stopped saying where the money went.
+        for lang in ("en", "ar"):
+            short = build.structure_issues(" ".join(["word"] * 3) + ".", lang)
+            self.assertTrue(any(build._ISSUE_SHORT_RX.search(i) for i in short), lang)
+        src = (ROOT / "build.py").read_text(encoding="utf-8")
+        desk = src.split("def write_brief", 1)[1].split("\ndef ", 1)[0]
+        self.assertNotIn('startswith(("too short"', desk,
+                         "classifier must not key on the gate's prose")
+        self.assertIn("_ISSUE_SHORT_RX", desk)
+
     def test_both_editions_ask_for_the_same_length(self):
         self.assertIn("90-150", build.BRIEF_SYSTEM["en"])
         self.assertIn("90-150", build.BRIEF_SYSTEM["ar"])
