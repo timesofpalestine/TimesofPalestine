@@ -1,0 +1,33 @@
+{
+ "brief": "The Trump administration plans to deliver 2,000-pound bombs to Israel as part of an upcoming arms deal, The Guardian reported. The U.S. had halted shipments of the weapons two years ago due to concerns over mass casualties from Israel's bombing campaign in Gaza.\n\nThe resumption of deliveries marks a shift in policy following the previous administration's restrictions on the largest conventional munitions used in the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/us-news/2026/sep/15/trump-administration-bomb-supply-israel-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T00:05:06+00:00",
+ "dek": "Delivery of the weapons had been halted two years ago over mass casualty concerns amid Israel’s bombing of Gaza The Trump administration is planning to deliver powerful 2,000-lb bombs to Israel as part of an upcoming arms deal, weapons that prompted such…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/0decf4c8c30eb7a60669a859ea336cf50a916f0e/683_0_6827_5464/master/6827.jpg?width=140&quality=85&auto=format&fit=max&s=f7d6481b814963e6e9778c362de2880a",
+ "lang": "en",
+ "link": "https://www.theguardian.com/us-news/2026/sep/15/trump-administration-bomb-supply-israel-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/us-news/2026/sep/15/trump-administration-bomb-supply-israel-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5b58ef10e1",
+ "score": 63.96,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Trump administration to resume 2,000-lb bomb deliveries to Israel"
+}
