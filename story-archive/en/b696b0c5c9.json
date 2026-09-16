@@ -21,27 +21,27 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/21-including-five-children-killed-gaza-building-collapse",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/16/building-gaza-city-damaged-israeli-strikes-collapses-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/09/gaza-apartment-block-collapse-leaves-21-dead",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-killed-israeli-shelling-gaza-city",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/video/2026/sep/16/emergency-crews-gaza-building-collapse-israeli-strike-video",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/09/1168346",
-   "name": "UN News",
-   "url": "https://news.un.org/",
+   "article": "https://www.dropsitenews.com/p/trump-arms-deal-israel-gaza-building-collapse-us-diesel",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
    "verified": true
   },
   {
@@ -54,6 +54,12 @@
    "article": "https://shehabnews.com/post/164203/%D8%AE%D8%A7%D8%B5-%D9%81%D8%A7%D8%AC%D8%B9%D8%A9-%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AA-%D8%B4%D8%B9%D9%84-%D9%85%D8%AE%D8%A7%D9%88%D9%81-%D9%88%D8%A7%D8%B3%D8%B9%D8%A9-%D9%85%D9%86-%D9%83%D8%A7%D8%B1%D8%AB%D8%A9-%D8%A2%D9%84%D8%A7%D9%81-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D9%86%D9%8A-%D8%A7%D9%84%D8%A2%D9%8A%D9%84%D8%A9-%D9%84%D9%84%D8%B3%D9%82%D9%88%D8%B7",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/09/1168346",
+   "name": "UN News",
+   "url": "https://news.un.org/",
    "verified": true
   }
  ],
@@ -73,7 +79,7 @@
  "modified": null,
  "original": false,
  "pid": "b696b0c5c9",
- "score": 62.95,
+ "score": 62.62,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
