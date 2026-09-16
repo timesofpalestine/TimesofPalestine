@@ -6,7 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/9/16/gaza-residential-building-collapses-six-families-reportedly-trapped?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://imemc.org/article/eleven-displaced-palestinians-killed-in-gaza-building-collapse",
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "29973abda9",
- "score": 62.25,
+ "score": 62.08,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
