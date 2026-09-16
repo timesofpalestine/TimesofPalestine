@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/us-news/2026/sep/15/trump-administration-bomb-supply-israel-gaza",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/trump-arms-deal-israel-gaza-building-collapse-us-diesel",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-16T01:13:01+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "5b58ef10e1",
- "score": 53.97,
+ "score": 53.7,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
