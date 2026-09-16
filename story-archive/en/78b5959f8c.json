@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli soldiers descended from a helicopter onto a residential building in Yatta, in the occupied West Bank, Al Jazeera English reported. The operation involved troops rappelling onto the roof of the structure in what appeared to be a raid or arrest operation.\n\nDetails of the specific purpose of the military maneuver and whether there were casualties or detentions remained unclear.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/16/israeli-soldiers-rappel-from-helicopter-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-shoot-couple-in-jenin-as-colonizers-torch-property",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-16T00:42:33+00:00",
+ "dek": "Israeli forces rappelled from a helicopter onto the roof of a residential building in Yatta, in the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789519337.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/16/israeli-soldiers-rappel-from-helicopter-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/16/israeli-soldiers-rappel-from-helicopter-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "78b5959f8c",
+ "score": 46.92,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces rappel onto West Bank residential building"
+}

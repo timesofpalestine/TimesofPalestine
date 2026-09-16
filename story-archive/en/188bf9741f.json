@@ -7,6 +7,12 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/16/gaza-residential-building-collapses-six-families-reportedly-trapped?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
   }
  ],
  "date": "2026-09-16T04:25:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "188bf9741f",
- "score": 63.83,
+ "score": 63.5,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
