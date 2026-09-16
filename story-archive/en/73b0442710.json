@@ -12,7 +12,13 @@
    "article": "https://www.theguardian.com/world/2026/sep/16/threats-against-israeli-directors-gaza-documentary-naza",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/netanyahu-steps-threats-against-directors-gaza-documentary-naza",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-16T20:21:00+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "73b0442710",
- "score": 63.97,
+ "score": 63.63,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
