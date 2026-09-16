@@ -1,0 +1,33 @@
+{
+ "brief": "استشهد صياد وسط قطاع غزة، بحسب وكالة معا. جاءت الحادثة وسط تصعيد مستمر في القطاع يطال المدنيين من مختلف الفئات العمرية والمهن.\n\nشيّعت عائلته في الوقت ذاته جنازة طفلة أطلقت عليها القوات الإسرائيلية الرصاص في خان يونس جنوب القطاع، ما أسفر عن مقتلها. حضر المئات من أهالي المنطقة مراسم التشييع تضامناً مع الأسرة الثكلى.\n\nوثّقت وسائل إعلامية محلية الحادثتين بصور نُشرت على وسائل التواصل الاجتماعي.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168800.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T07:04:25+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2168800.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0be7a30fac",
+ "score": 60.9,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "استشهاد صياد وتشييع طفلة في غزة"
+}
