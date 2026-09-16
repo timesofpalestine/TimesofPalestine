@@ -9,9 +9,21 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/09/war-damaged-gaza-building-collapses-killing-12-people-seeking-shelter-inside",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://imemc.org/article/eleven-displaced-palestinians-killed-in-gaza-building-collapse",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/gaza-scores-trapped-under-rubble-after-israeli-hit-building-collapses",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": true
   }
  ],
@@ -31,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "29973abda9",
- "score": 60.85,
+ "score": 60.55,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
