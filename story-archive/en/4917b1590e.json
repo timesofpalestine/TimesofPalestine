@@ -6,7 +6,31 @@
    "article": "https://www.aljazeera.com/news/2026/9/16/nowhere-to-go-gazas-damaged-buildings-turn-deadly?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/16/building-gaza-city-damaged-israeli-strikes-collapses-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/gaza-apartment-block-collapse-kills-21-including-12-children",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/trump-arms-deal-israel-gaza-building-collapse-us-diesel",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/eleven-displaced-palestinians-killed-in-gaza-building-collapse",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   },
   {
    "article": "https://shehabnews.com/post/164208/%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D8%A9-%D8%A8%D8%BA%D8%B2%D8%A9-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%A8%D9%86%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9-%D9%8A%D8%AF%D9%82-%D9%86%D8%A7%D9%82%D9%88%D8%B3-%D8%A7%D9%84%D8%AE%D8%B7%D8%B1-%D9%84%D9%85%D8%A6%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A2%D9%8A%D9%84%D8%A9-%D9%84%D9%84%D8%B3%D9%82%D9%88%D8%B7",
@@ -31,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "4917b1590e",
- "score": 63.72,
+ "score": 63.4,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

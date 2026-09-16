@@ -6,13 +6,7 @@
    "article": "https://felesteen.news/post/186526/%D9%86%D8%A7%D8%B2%D8%A7-%D8%AD%D9%8A%D9%86-%D8%AA%D8%AA%D9%87%D8%A7%D9%88%D9%89-%D8%A7%D9%84%D8%B3%D8%B1%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%A8%D8%B4%D9%87%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D9%82%D8%AA%D9%84%D8%A9-%D8%A3%D9%86%D9%81%D8%B3%D9%87%D9%85",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/321299",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-16T11:07:00+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "306dbb3f2c",
- "score": 59.51,
+ "score": 59.19,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
