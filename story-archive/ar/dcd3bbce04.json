@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، تشهد قطاع غزة تراكماً متسارعاً للأزمات الإنسانية والاقتصادية والصحية، إذ يعمّق كل منها تأثير الآخر وينسحب عليه. وتؤدي هذه الديناميكية إلى تفاقم الوضع العام في القطاع بوتيرة متسارعة تصعّب التعامل مع كل أزمة على حدة.\n\nيأتي هذا في سياق استمرار الحصار والقيود التي تفاقم الأوضاع الاقتصادية والصحية والخدمية، مما يزيد من معاناة السكان وقدرتهم على الصمود في مواجهة هذه التحديات المتعددة الأوجه.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/09/17/1118289",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-17T18:56:36+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/09/17/1118289",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dcd3bbce04",
+ "score": 49.86,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "أزمات غزة تتفاقم وتزيد بعضها حدة بعضاً"
+}
