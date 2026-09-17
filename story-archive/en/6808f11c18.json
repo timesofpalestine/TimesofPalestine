@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces and illegal paramilitary colonizers carried out widespread attacks across the occupied West Bank on Wednesday, according to IMEMC News. The operations included abductions, lethal assaults, home demolitions, land seizures, and repeated attacks on civilians, the outlet reported.\n\nThe raids marked an intensification of military activity in the territory, though specific casualty figures, locations, and names of those affected were not detailed in available accounts.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israeli-army-escalates-abductions-killings-and-demolitions",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T23:03:41+00:00",
+ "dek": "Israeli occupation forces and illegal paramilitary colonizers carried out widespread attacks across the occupied West Bank on Wednesday, including abductions, lethal assaults, home demolitions, land seizures, and repeated attacks on civilians.",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/Screenshot-2026-09-16-160010-e1789599646659.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israeli-army-escalates-abductions-killings-and-demolitions",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/israeli-army-escalates-abductions-killings-and-demolitions"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6808f11c18",
+ "score": 59.34,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces escalate raids, demolitions across West Bank"
+}
