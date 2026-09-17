@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinians use local radio stations to communicate about and navigate the realities of Israeli occupation and settler attacks, according to Al Jazeera English. The broadcast medium serves as a critical information source for communities facing restrictions on movement and periodic violence from settlers.\n\nRadio allows Palestinians to share real-time updates on security threats, checkpoint locations, and conditions across occupied territories, providing a communication channel that reaches communities with varying access to internet and mobile networks. The stations also document settler violence and occupation-related developments for local audiences.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/17/09-17-reported-nida-ibrahim-owb-violence-mp4?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-17T08:46:17+00:00",
+ "dek": "Al Jazeera’s Nida Ibrahim explains how Palestinians use local radio to navigate Israel's occupation and settler pogroms.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789634692.jpg?resize=1620%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/17/09-17-reported-nida-ibrahim-owb-violence-mp4?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/17/09-17-reported-nida-ibrahim-owb-violence-mp4?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3ed73b9b27",
+ "score": 49.54,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians rely on radio to navigate occupation and settler violence"
+}

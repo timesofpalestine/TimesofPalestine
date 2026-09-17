@@ -1,0 +1,33 @@
+{
+ "brief": "أفادت وسائل إعلام عبرية بأن جيش الاحتلال الإسرائيلي يقلص عدد جنوده المتمركزين في سوريا بسبب نقص الميزانيات المخصصة للعملية، وسط احتجاجات من قادة عسكريين ميدانيين على هذا القرار.\n\nيأتي التقليص في الوقت الذي يعتبر فيه الوجود العسكري الإسرائيلي في سوريا جزءاً من استراتيجية احتلالية أوسع تجاه المنطقة، وقد أثار القرار غضب عناصر قيادية في الميدان تشكك في تأثيره على العمليات الأمنية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/321360",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-17T07:31:11+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/321360",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b70b9155f7",
+ "score": 33.64,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "جيش الاحتلال يقلص وجوده العسكري في سوريا لأسباب مالية"
+}
