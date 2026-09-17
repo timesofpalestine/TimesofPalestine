@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/israel-continues-to-kill-displaced-palestinians-as-nowhere-is-safe-in-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israel-navy-fire-kills-fisherman-in-gaza-as-violations-continue",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-16T14:13:37+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "0e01372a9e",
- "score": 84.72,
+ "score": 84.69,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
