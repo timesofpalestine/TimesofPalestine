@@ -6,11 +6,17 @@
    "article": "https://www.al-monitor.com/originals/2026/09/us-again-denies-palestinian-leader-abbas-visa-attend-un-assembly",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/us-bans-palestinian-president-speaking-un-again-over-icc-icj-action-against-israel",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-17T03:30:24+00:00",
- "dek": "The United States has denied Palestinian President Mahmoud Abbas an entry visa to attend the UN General Assembly in New York next week, a source familiar with the case said Wednesday.",
+ "dek": "The Palestinian Authority on Thursday slammed a decision by the United States to refuse visas for its officials to attend the UN General Assembly in New York next week, a move which includes president Mahmoud Abbas according to a source familiar with the case.",
  "dup_of": null,
  "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-09/000_c7rp7eg.jpg?h=69f2b9d0&itok=AQk3BcY2",
  "lang": "en",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "7236b8a541",
- "score": 49.57,
+ "score": 44.34,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
