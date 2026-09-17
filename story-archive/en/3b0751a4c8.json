@@ -6,7 +6,19 @@
    "article": "https://imemc.org/article/thursday-israeli-forces-bomb-school-shelter-in-gaza",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/09/the-new-school-year-in-gaza-begins-in-tents",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48301",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-09-17T07:15:55+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "3b0751a4c8",
- "score": 58.41,
+ "score": 58.08,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
