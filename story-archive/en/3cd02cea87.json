@@ -15,15 +15,33 @@
    "verified": true
   },
   {
+   "article": "https://www.theguardian.com/world/2026/sep/16/building-gaza-city-damaged-israeli-strikes-collapses-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/gaza-apartment-block-collapse-kills-21-including-12-children",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/trump-arms-deal-israel-gaza-building-collapse-us-diesel",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
    "article": "https://news.un.org/feed/view/en/story/2026/09/1168346",
    "name": "UN News",
    "url": "https://news.un.org/",
    "verified": true
   },
   {
-   "article": "https://www.theguardian.com/world/video/2026/sep/16/emergency-crews-gaza-building-collapse-israeli-strike-video",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
+   "article": "https://imemc.org/article/eleven-displaced-palestinians-killed-in-gaza-building-collapse",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
    "verified": true
   }
  ],
@@ -43,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "3cd02cea87",
- "score": 55.88,
+ "score": 55.6,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
