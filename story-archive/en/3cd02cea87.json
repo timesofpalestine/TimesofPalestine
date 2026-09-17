@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/casualty-toll-following-building-collapse-gaza-city-rises-66",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.theguardian.com/world/2026/sep/16/building-gaza-city-damaged-israeli-strikes-collapses-killed",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -55,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "3cd02cea87",
- "score": 51.29,
+ "score": 51.01,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
