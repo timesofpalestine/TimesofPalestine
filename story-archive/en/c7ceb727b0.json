@@ -1,0 +1,51 @@
+{
+ "brief": "Ireland's public broadcaster will not participate in this year's Eurovision Song Contest, citing the \"appalling and ongoing loss of lives in Gaza\" as justification for the boycott, Al Jazeera English reported. The decision marks the second consecutive year the country has sat out the competition in protest of Israel's inclusion.\n\nThe broadcaster said the country's participation could not be justified given the humanitarian toll of the conflict. Ireland previously withdrew from Eurovision in 2023 on similar grounds.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/17/ireland-boycotts-eurovision-for-second-year-over-israels-inclusion?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/tv-and-radio/2026/sep/17/ireland-to-boycott-eurovision-again-over-ongoing-deaths-in-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/ireland-will-boycott-eurovision-2027-rte-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/164262/%D8%A5%D9%8A%D8%B1%D9%84%D9%86%D8%AF%D8%A7-%D8%AA%D9%82%D8%A7%D8%B7%D8%B9-%D9%8A%D9%88%D8%B1%D9%88%D9%81%D9%8A%D8%AC%D9%86-%D9%84%D9%84%D8%B3%D9%86%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D8%AA%D9%88%D8%A7%D9%84%D9%8A%D8%A7-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7-%D8%B9%D9%84%D9%89-%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-17T15:40:48+00:00",
+ "dek": "Public broadcaster says country's participation cannot be justified amid 'appalling and ongoing loss of lives in Gaza'.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6aabf9650f-1789655397.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/17/ireland-boycotts-eurovision-for-second-year-over-israels-inclusion?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/17/ireland-boycotts-eurovision-for-second-year-over-israels-inclusion?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c7ceb727b0",
+ "score": 49.62,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Ireland withdraws from Eurovision over Israel's Gaza war"
+}

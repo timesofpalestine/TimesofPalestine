@@ -6,7 +6,19 @@
    "article": "https://www.middleeasteye.net/trending/tommy-robinson-backs-ed-sheeran-ms-rachel-paloma-faith-and-bernie-sanders-criticise",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/sport/2026/sep/16/colin-kaepernick-nfl-owners-ed-sheeran-macklemore-tour",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/ed-sheeran-isnt-staying-out-of-politics",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-17T12:29:31+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "f7d1820be4",
- "score": 77.71,
+ "score": 77.4,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
