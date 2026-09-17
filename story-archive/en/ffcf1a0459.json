@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2168886.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israel-adds-tender-2167-housing-units-settlement-expansion-plan-rights-groups-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-17T10:04:25+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "ffcf1a0459",
- "score": 49.58,
+ "score": 49.24,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
