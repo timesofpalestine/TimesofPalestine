@@ -6,13 +6,7 @@
    "article": "https://www.dropsitenews.com/p/palestinian-american-journalist-naqaa-hamed-arrested",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-journalist-arrested-israeli-forces-ramallah",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-16T15:04:45+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "e2d82de6be",
- "score": 32.19,
+ "score": 31.86,
  "source": "Drop Site News",
  "source_id": "dropsite",
  "source_url": "https://www.dropsitenews.com/",
