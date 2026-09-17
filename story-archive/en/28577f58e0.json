@@ -6,7 +6,13 @@
    "article": "https://www.amnesty.org/en/latest/news/2026/09/us-state-department-must-reverse-decision-to-ban-palestine-delegation-from-attending-unga-session-in-new-york",
    "name": "Amnesty International",
    "url": "https://www.amnesty.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/152-countries-reject-us-decision-bar-palestinian-delegation-un-meeting",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   },
   {
    "article": "https://www.al-monitor.com/originals/2026/09/un-allows-palestinian-president-again-speak-video-after-us-denies-visa",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "28577f58e0",
- "score": 49.3,
+ "score": 49.16,
  "source": "Amnesty International",
  "source_id": "amnesty",
  "source_url": "https://www.amnesty.org/",
