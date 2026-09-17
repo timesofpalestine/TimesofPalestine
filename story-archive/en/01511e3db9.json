@@ -1,0 +1,39 @@
+{
+ "brief": "The United States has extended its visa ban on Palestinian officials for a second consecutive year, preventing them from entering American territory, Al Jazeera English reported. Palestinian President Mahmoud Abbas remains among those barred from travel to the US, the restrictions taking effect as the UN General Assembly convenes.\n\nThe ban, first imposed last year, blocks Palestinian leaders from attending meetings and events in New York during the assembly session. The move follows escalating tensions and diplomatic disputes between Washington and Palestinian leadership.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/17/us-extends-visa-ban-on-palestinian-officials-before-un-general-assembly?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/us-again-denies-palestinian-leader-abbas-visa-attend-un-assembly",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-17T03:44:13+00:00",
+ "dek": "Palestinian President Mahmoud Abbas is among those barred for the second year in a row.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6aab3e7ccd-1789607548.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/17/us-extends-visa-ban-on-palestinian-officials-before-un-general-assembly?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/17/us-extends-visa-ban-on-palestinian-officials-before-un-general-assembly?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "01511e3db9",
+ "score": 49.42,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "US extends visa ban on Palestinian officials ahead of UN session"
+}
