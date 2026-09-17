@@ -1,0 +1,33 @@
+{
+ "brief": "A documentary screening revealed how artificial intelligence systems may determine who lives and dies in Gaza, according to The Guardian. Mahmoud Mushtaha, a survivor who lost family and friends in the territory, described watching the film as glimpsing \"the machinery of killing\" — the algorithmic processes underlying military targeting decisions. He said the experience answered long-standing questions about survival, suggesting the difference between life and death often came down to computational selection rather than chance.\n\nThe account raises questions about the role of automated systems in military operations in Gaza and their opacity to those affected by their outcomes.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/commentisfree/2026/sep/17/naza-film-documentary-killing-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-17T12:30:49+00:00",
+ "dek": "For so long I wondered why I survived while family and friends were killed. Now I know the only difference between life and death may have been an AI algorithm The lights go down, and for a moment I forget I’m watching a screen.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/fea179ca4370b289ddaa4593dbad723ca235287f/1053_0_5600_4480/master/5600.jpg?width=140&quality=85&auto=format&fit=max&s=ea1e19ab1ce16b1f27567f79816d8f38",
+ "lang": "en",
+ "link": "https://www.theguardian.com/commentisfree/2026/sep/17/naza-film-documentary-killing-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/commentisfree/2026/sep/17/naza-film-documentary-killing-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "82dc597b2d",
+ "score": 63.53,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Survivor describes AI algorithms selecting Gaza victims"
+}
