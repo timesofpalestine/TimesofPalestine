@@ -7,6 +7,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://felesteen.news/post/186523/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%BA%D9%84%D9%82-%D8%A7%D9%84%D8%AD%D8%B1%D9%85-%D8%A7%D9%84%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85%D9%8A-%D9%8A%D9%88%D9%85%D9%8A%D9%86-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D9%84%D9%8A%D9%86",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": false
   }
  ],
  "date": "2026-09-16T17:54:43+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "3ff76cb769",
- "score": 43.71,
+ "score": 43.37,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
