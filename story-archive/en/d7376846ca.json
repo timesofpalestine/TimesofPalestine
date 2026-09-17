@@ -1,0 +1,33 @@
+{
+ "brief": "B'Tselem, an Israeli human rights organization, released a report titled \"The Elimination Project\" accusing Israel of dramatically intensifying attacks on every aspect of Palestinian life in the West Bank, Democracy Now! reported. The group documented what it characterized as systematic dismantling across multiple dimensions of Palestinian existence in the territory.\n\nThe report details intensified Israeli actions affecting Palestinian communities, though specific findings and scope remain to be detailed in full documentation.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "http://www.democracynow.org/2026/9/16/btselem",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T12:26:46+00:00",
+ "dek": "A major new report by the Israeli human rights group B’Tselem titled “The Elimination Project” accuses Israel of “dramatically intensifying its attacks on every aspect of Palestinian life in the West Bank.”",
+ "dup_of": null,
+ "image": "https://www.democracynow.org/images/story/86/83586/w320/Seg2-Settler-terrorism-splits.jpg",
+ "lang": "en",
+ "link": "http://www.democracynow.org/2026/9/16/btselem",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Democracy Now!",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "http://www.democracynow.org/2026/9/16/btselem"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d7376846ca",
+ "score": 38.46,
+ "source": "Democracy Now!",
+ "source_id": "democracynow",
+ "source_url": "https://www.democracynow.org/",
+ "title": "Israeli rights group B'Tselem documents systematic dismantling of Palestinian West Bank life"
+}
