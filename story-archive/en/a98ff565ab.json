@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces conducted a raid on Ein refugee camp west of the city of Nablus, the Ma'an news agency reported. Details of the operation, including the purpose, duration, and any resulting casualties or arrests, were not immediately available.\n\nThe camp has faced repeated incursions by Israeli forces in recent months as military operations continue across the occupied West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/36822",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-17T04:41:58+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/vsdyODNmwQe2RVe-CLzOsx5HirG7B2DCUFHEMZ2qNirBFDGz0xw0xb3N-L-QtABVaSc8hqkzJcTvaWn3NFjSTeEGGh_bDUDnNYCbqyrBLJob1oDlN50DKOTaVyyRjjR0k2-aqTjqNLujJSOc2BFD_KcOb9eO0yxJvjbUfXZEtElKmMoM0GHxHuAjiZ4JKuXwJYspAEyZ2xEkfXmd1bPWP19wQidQ5lzlNfcCkvt19hwRL7s-46smWWNHwFSNgc5RY8kQHxVAWyK9fMqFrbFic-z3Of44hv9luOw_9Hn5AQ7hdQeJb9mQeWgYfU4BpI6s6ghGMqrQbepbFUk6NWh1Ag",
+ "lang": "en",
+ "link": "https://t.me/maannews/36822",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/36822"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a98ff565ab",
+ "score": 61.85,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces raid Ein camp west of Nablus"
+}
