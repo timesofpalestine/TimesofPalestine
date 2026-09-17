@@ -1,0 +1,57 @@
+{
+ "brief": "At least 21 people were killed and 45 others wounded after a building collapsed in western Gaza City early Wednesday, Middle East Eye reported, citing Gaza's civil defence. The casualty toll represents the latest update from emergency officials responding to the incident.\n\nThe collapse occurred in the densely populated western section of Gaza City, a recurrent site of structural failures amid the territory's ongoing humanitarian crisis and infrastructure strain.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/casualty-toll-following-building-collapse-gaza-city-rises-66",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/16/building-gaza-city-damaged-israeli-strikes-collapses-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/gaza-apartment-block-collapse-kills-21-including-12-children",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/trump-arms-deal-israel-gaza-building-collapse-us-diesel",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/eleven-displaced-palestinians-killed-in-gaza-building-collapse",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-17T06:45:32+00:00",
+ "dek": "Casualty toll following building collapse in Gaza City rises to 66 At least 21 people have been killed and 45 others were wounded after a building in western Gaza City collapsed early on Wednesday, according to the latest update by Gaza's civil defence.",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/2026-09/us%20tump%20billboard%20tehran%20iran%2016%20sep%20reuters%20wana.jpg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/casualty-toll-following-building-collapse-gaza-city-rises-66",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/casualty-toll-following-building-collapse-gaza-city-rises-66"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "674a1ddb4a",
+ "score": 63.47,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Building collapse in Gaza City kills 21, wounds 45"
+}

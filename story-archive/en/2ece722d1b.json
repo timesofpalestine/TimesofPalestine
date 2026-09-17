@@ -1,0 +1,39 @@
+{
+ "brief": "Emergency crews rushed to excavate rubble in Gaza City on Wednesday after a building that had sustained previous Israeli strikes collapsed, killing at least 20 people, The Guardian reported. Gaza's civil defence said at least 100 people, including 50 children, were believed trapped beneath the debris.\n\nThe collapse occurred as rescue operations continued in the densely populated territory, where damaged structures pose ongoing hazards to residents.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/video/2026/sep/16/emergency-crews-gaza-building-collapse-israeli-strike-video",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/09/1168346",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-16T12:49:30+00:00",
+ "dek": "At least 20 people were killed after a building that had previously been hit by an Israeli strike collapsed on Wednesday in Gaza City. Gaza's civil defence reported that at least 100 people, including 50 children, were believed to be trapped under the rubble.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/062a3c5e0bcfc991b4edc8fa356ba206cccfc6ac/973_217_946_757/master/946.jpg?width=140&quality=85&auto=format&fit=max&s=b42d6eddde5da5d67b35c62703111fc3",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/video/2026/sep/16/emergency-crews-gaza-building-collapse-israeli-strike-video",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/video/2026/sep/16/emergency-crews-gaza-building-collapse-israeli-strike-video"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2ece722d1b",
+ "score": 51.01,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Building collapse kills 20, traps 100 in Gaza City"
+}
