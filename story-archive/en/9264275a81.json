@@ -1,0 +1,33 @@
+{
+ "brief": "Settlers stormed the West Bank village of Burqa, assaulting residents and setting fire to agricultural land, the Ma'an news agency reported. The incidents occurred in the Ramallah area as part of escalating settler violence in Palestinian communities.\n\nThe attacks included damage to homes and deliberate arson targeting farmland in the village. Such incidents have intensified tensions in areas surrounding Israeli settlements throughout the occupied territory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2168877.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-17T07:38:07+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2168877.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9264275a81",
+ "score": 49.31,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settlers attack homes, torch land in West Bank village"
+}
