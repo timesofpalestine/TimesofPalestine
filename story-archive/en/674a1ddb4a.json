@@ -15,15 +15,15 @@
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/09/gaza-apartment-block-collapse-kills-21-including-12-children",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.dropsitenews.com/p/trump-arms-deal-israel-gaza-building-collapse-us-diesel",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/rescue-efforts-end-after-21-die-collapse-bomb-damaged-building-gaza-45-saved",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
    "verified": true
   }
  ],
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "674a1ddb4a",
- "score": 60.6,
+ "score": 60.34,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
