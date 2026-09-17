@@ -1,0 +1,33 @@
+{
+ "brief": "A Palestinian prisoner died Wednesday in an Israeli detention facility, the Wafa news agency reported. The circumstances of the death were not immediately detailed in available reports.\n\nIn a separate incident, a youth was injured by Israeli gunfire during a raid in the West Bank. The details of the shooting and the extent of injuries remain unclear from current reporting.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-prisoner-dies-israeli-detention-youth-injured-israeli",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T22:02:51+00:00",
+ "dek": "Palestinian prisoner dies in Israeli detention, youth injured by Israeli gunfire in West Bank raid A Palestinian prisoner died on Wednesday in an Israeli detention facility, Wafa news reported on Wednesday.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-prisoners.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-prisoner-dies-israeli-detention-youth-injured-israeli",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "edce133a39",
+ "score": 58.34,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Palestinian prisoner dies in Israeli detention facility"
+}

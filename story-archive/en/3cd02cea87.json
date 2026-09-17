@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/16/rescue-workers-search-for-survivors-after-gaza-building-collapse?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/world/2026/sep/16/building-gaza-city-damaged-israeli-strikes-collapses-killed",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -33,15 +27,15 @@
    "verified": true
   },
   {
-   "article": "https://news.un.org/feed/view/en/story/2026/09/1168346",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
-  },
-  {
    "article": "https://imemc.org/article/eleven-displaced-palestinians-killed-in-gaza-building-collapse",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/09/1168346",
+   "name": "UN News",
+   "url": "https://news.un.org/",
    "verified": true
   }
  ],
@@ -61,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "3cd02cea87",
- "score": 51.88,
+ "score": 51.58,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
