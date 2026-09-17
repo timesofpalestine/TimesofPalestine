@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinians in the West Bank are using a local radio station to stay informed about Israeli checkpoints and settler attacks, according to Al Jazeera English. The station provides real-time information that helps residents navigate road closures and plan their movements through the territory.\n\nThe reliance on radio reflects the security challenges Palestinians face daily, from Israeli military checkpoints that restrict movement to attacks by settlers. Local broadcasting has become an essential tool for community safety and coordination across the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/16/for-checkpoint-and-settler-attack-news-palestinians-tune-into-the-radio?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-16T22:30:34+00:00",
+ "dek": "Palestinians in the West Bank navigate Israeli road closures and attacks with help from a local radio station.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image0-1789595104.jpeg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/16/for-checkpoint-and-settler-attack-news-palestinians-tune-into-the-radio?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/16/for-checkpoint-and-settler-attack-news-palestinians-tune-into-the-radio?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dd350b5ccf",
+ "score": 46.41,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "West Bank Palestinians rely on radio for checkpoint and attack alerts"
+}
