@@ -1,0 +1,33 @@
+{
+ "brief": "The U.S. Treasury has sanctioned BitBank, an Iranian cryptocurrency exchange, over its role in facilitating bitcoin transfers to Iran's Islamic Revolutionary Guard Corps, according to Bitcoin Magazine. The action represents Washington's effort to disrupt Tehran's use of digital assets for financial activity involving the military organization.\n\nThe sanctions target BitBank's operations as the Treasury continues to focus on cryptocurrency as a channel through which Iran circumvents traditional financial restrictions tied to the IRGC, designated a terrorist organization by the United States.",
+ "cat": "bitcoin",
+ "corroborating_sources": [
+  {
+   "article": "https://bitcoinmagazine.com/news/treasury-sanctions-iran-bitcoin-exchange",
+   "name": "Bitcoin Magazine",
+   "url": "https://bitcoinmagazine.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-17T21:48:51+00:00",
+ "dek": "Bitcoin Magazine Treasury Sanctions Iranian Crypto Exchange BitBank Over Bitcoin Transfers to IRGC The U.S. is targeting Iran's use of crypto — specifically bitcoin.",
+ "dup_of": null,
+ "image": "https://bitcoinmagazine.com/wp-content/uploads/2026/09/Pics-1-8.jpg",
+ "lang": "en",
+ "link": "https://bitcoinmagazine.com/news/treasury-sanctions-iran-bitcoin-exchange",
+ "max_age_hours": 336,
+ "media": {
+  "credit": "Bitcoin Magazine",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://bitcoinmagazine.com/news/treasury-sanctions-iran-bitcoin-exchange"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1291bd5dda",
+ "score": 80.0,
+ "source": "Bitcoin Magazine",
+ "source_id": "btcmag",
+ "source_url": "https://bitcoinmagazine.com/",
+ "title": "U.S. Treasury sanctions Iranian crypto exchange for IRGC bitcoin transfers"
+}
