@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.net/news/2026/9/18/%d9%85%d9%86-%d8%ad%d9%82%d9%87-%d8%a3%d9%86-%d9%8a%d8%aa%d8%ad%d8%af%d8%ab-%d8%aa%d8%a7%d9%83%d8%b1-%d9%83%d8%a7%d8%b1%d9%84%d8%b3%d9%88%d9%86-%d9%8a%d8%af%d8%a7%d9%81%d8%b9-%d8%b9%d9%86?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d9%83%d9%8a%d9%81-%d9%81%d9%83%d9%91%d9%83-%d9%85%d8%ba%d9%86%d9%91-%d8%a3%d9%85%d8%b1%d9%8a%d9%83%d9%8a-%d8%a7%d8%af%d8%b9%d8%a7%d8%a1-%d8%a7%d9%84%d8%ad%d9%8a%d8%a7%d8%af-%d8%ad%d9%88%d9%84-%d9%81",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
   }
  ],
  "date": "2026-09-18T16:28:49+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "059d531c6f",
- "score": 47.52,
+ "score": 47.23,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
