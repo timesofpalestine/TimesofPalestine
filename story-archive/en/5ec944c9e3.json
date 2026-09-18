@@ -13,6 +13,12 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/un-chief-deeply-regrets-us-visa-refusal-abbas-annual-meeting",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-18T17:22:25+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "5ec944c9e3",
- "score": 48.67,
+ "score": 48.42,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
