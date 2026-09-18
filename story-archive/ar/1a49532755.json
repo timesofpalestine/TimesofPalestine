@@ -1,23 +1,23 @@
 {
- "brief": "Lebanon's Health Ministry reported 8,953 deaths and 30,643 wounded from Israeli military operations, Shehab Wire reported. The toll reflects months of cross-border strikes that intensified following the October 7 attack on Israel and subsequent operations in Gaza.\n\nThe casualty figures represent one of the highest death counts Lebanon has recorded during the conflict, with wounded far exceeding fatalities across hospitals and medical facilities nationwide.",
+ "brief": "وصلت حصيلة القتلى في لبنان جراء العدوان الإسرائيلي إلى 8953 شهيداً، فيما بلغ عدد الجرحى 30643 شخصاً، بحسب وزارة الصحة اللبنانية. وتعكس الأرقام تصعيداً حاداً في الخسائر البشرية خلال الهجمات المتكررة.\n\nلم تحدد الجهات الصحية اللبنانية زمناً معيناً للإحصاء أو ظروف التوثيق، إذ عادة ما تُحدّث السلطات الصحية الحصيلات بناءً على التقارير الواردة من المستشفيات والمراكز الطبية في مناطق النزاع.",
  "cat": "news",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/164269/%D9%84%D8%A8%D9%86%D8%A7%D9%86-8953-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7-%D9%8830643-%D8%AC%D8%B1%D9%8A%D8%AD%D8%A7-%D8%AD%D8%B5%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%B9%D8%AF%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-09-17T16:19:00+00:00",
- "dek": "Lebanon's Health Ministry reported 8,953 deaths and 30,643 wounded from Israeli military operations, Shehab Wire reported.",
+ "dek": "الصحة اللبنانية 8953 شهيداً و30643 جريحاً حصيلة العدوان الإسرائيلي…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/05/DLDc6.webp?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/164269/%D9%84%D8%A8%D9%86%D8%A7%D9%86-8953-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7-%D9%8830643-%D8%AC%D8%B1%D9%8A%D8%AD%D8%A7-%D8%AD%D8%B5%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%B9%D8%AF%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/164269/%D9%84%D8%A8%D9%86%D8%A7%D9%86-8953-%D8%B4%D9%87%D9%8A%D8%AF%D8%A7-%D9%8830643-%D8%AC%D8%B1%D9%8A%D8%AD%D8%A7-%D8%AD%D8%B5%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%B9%D8%AF%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "1a49532755",
- "score": 43.66,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 43.63,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Lebanon counts 8,953 dead, 30,643 wounded from Israeli assault"
+ "title": "لبنان يسجل 8953 شهيداً و30643 جريحاً في العدوان الإسرائيلي"
 }
