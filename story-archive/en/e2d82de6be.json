@@ -6,7 +6,13 @@
    "article": "https://www.dropsitenews.com/p/palestinian-american-journalist-naqaa-hamed-arrested",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israel-abducts-journalist-behind-debt-forgiveness-initiative",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-16T15:04:45+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "e2d82de6be",
- "score": 22.31,
+ "score": 21.98,
  "source": "Drop Site News",
  "source_id": "dropsite",
  "source_url": "https://www.dropsitenews.com/",

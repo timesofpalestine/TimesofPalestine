@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces killed two Palestinians and wounded several others in the Gaza Strip on Thursday, according to IMEMC News. The deaths occurred as Israeli military operations continued across the coastal enclave despite a ceasefire agreement.\n\nThe incident marked a continuing pattern of violence in Gaza, where the territory remains under Israeli siege and blockade. Details on the circumstances of the deaths and the identities of those killed were not immediately provided.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israeli-fire-kills-two-palestinians-wounds-several-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-17T23:01:55+00:00",
+ "dek": "Israeli attacks killed two Palestinians and wounded several others in the Gaza Strip on Thursday as Israeli forces continued to violate the “ceasefire” agreement across the devastated and besieged coastal enclave, amid continuing violence in the occupied West…",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/Screenshot-2026-09-17-155217.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israeli-fire-kills-two-palestinians-wounds-several-in-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/israeli-fire-kills-two-palestinians-wounds-several-in-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7f7871f74f",
+ "score": 58.16,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli fire kills two Palestinians in Gaza"
+}
