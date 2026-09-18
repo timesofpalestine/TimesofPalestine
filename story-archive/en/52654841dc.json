@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/culture/2026/sep/17/ms-rachel-macklemore-palestine-donation",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/trending/ms-rachel-matches-macklemore-1m-donation-palestinian-children",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-18T01:00:45+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "52654841dc",
- "score": 43.13,
+ "score": 42.79,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
