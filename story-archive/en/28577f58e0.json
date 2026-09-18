@@ -6,19 +6,7 @@
    "article": "https://www.amnesty.org/en/latest/news/2026/09/us-state-department-must-reverse-decision-to-ban-palestine-delegation-from-attending-unga-session-in-new-york",
    "name": "Amnesty International",
    "url": "https://www.amnesty.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/us-news/2026/sep/17/trump-denies-visas-palestine-un",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/152-countries-reject-us-decision-bar-palestinian-delegation-un-meeting",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://imemc.org/article/un-approves-remote-palestinian-participation-after-u-s-visa-denial",
@@ -49,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "28577f58e0",
- "score": 45.64,
+ "score": 45.51,
  "source": "Amnesty International",
  "source_id": "amnesty",
  "source_url": "https://www.amnesty.org/",
