@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces killed a Palestinian in central Gaza on Friday, IMEMC News reported. The killing marked another violation of the ceasefire agreement, which occupation forces have now breached for 344 consecutive days.\n\nThe attacks continued across Gaza as the coastal enclave remains devastated from ongoing military operations. Israeli forces have sustained a pattern of violations throughout the ceasefire period.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/forces-kill-palestinian-in-gaza-amid-ceasefire-violations",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-18T09:07:23+00:00",
+ "dek": "On Friday, Israeli occupation forces killed a Palestinian in central Gaza and continued to violate the “ceasefire” agreement for the 344th consecutive day, carrying out attacks across the devastated coastal enclave.",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/Gazaa-e1789722325846.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/forces-kill-palestinian-in-gaza-amid-ceasefire-violations",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/forces-kill-palestinian-in-gaza-amid-ceasefire-violations"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c2d046e62c",
+ "score": 62.76,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces kill Palestinian in Gaza during ceasefire violations"
+}
