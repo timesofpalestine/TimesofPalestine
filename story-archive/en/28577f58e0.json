@@ -12,13 +12,7 @@
    "article": "https://imemc.org/article/un-approves-remote-palestinian-participation-after-u-s-visa-denial",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/un-allows-palestinian-president-again-speak-video-after-us-denies-visa",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-officials-barred-un-gathering-us-extends-visa-curbs",
@@ -49,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "28577f58e0",
- "score": 43.43,
+ "score": 43.31,
  "source": "Amnesty International",
  "source_id": "amnesty",
  "source_url": "https://www.amnesty.org/",
