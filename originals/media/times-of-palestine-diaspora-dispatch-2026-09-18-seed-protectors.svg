@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Where Palestine's seeds are kept</title>
+  <desc id="desc">A bilingual map of the Palestinian seed archive: the four institutions holding baladi seeds inside Palestine, the loss at al-Qarara and Hebron, and the diaspora farms in the United States stewarding heirloom varieties until they can be returned home.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101114"/>
+      <stop offset="1" stop-color="#1c1d21"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7e1e2b"/>
+      <stop offset=".5" stop-color="#286344"/>
+      <stop offset="1" stop-color="#bd9854"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f3efe8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#d4b36e}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:16px}
+      .small{font-size:19px}
+      .body{font-size:22px}
+      .label{font-size:17px;font-weight:800;letter-spacing:1.2px}
+      .stat{font-size:44px;font-weight:800}
+      .name{font-size:22px;font-weight:700}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="76" class="serif ivory" font-size="50" font-weight="800">Where Palestine's seeds are kept</text>
+  <text x="90" y="120" class="sans muted body">Baladi varieties now live in two places at once: at home, and on farms abroad.</text>
+  <text x="1530" y="164" class="arabic ivory" font-size="35" font-weight="800" text-anchor="end">أين تُحفظ بذور فلسطين؟</text>
+  <text x="1530" y="196" class="arabic muted small" text-anchor="end">البذور البلدية محفوظة في مكانين: في الأرض، وفي مزارع المهجر</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="228" width="347" height="118" rx="14" fill="#27282c" stroke="#d4b36e" stroke-width="2"/>
+    <text x="94" y="286" class="sans gold stat">37</text>
+    <text x="94" y="312" class="sans ivory tiny">US farms growing them</text>
+    <text x="94" y="334" class="arabic muted tiny">مزرعة أميركية تزرعها</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="441" y="228" width="347" height="118" rx="14" fill="#27282c" stroke="#d4b36e" stroke-width="2"/>
+    <text x="465" y="286" class="sans gold stat">35</text>
+    <text x="465" y="312" class="sans ivory tiny">heirloom varieties abroad</text>
+    <text x="465" y="334" class="arabic muted tiny">صنفاً تراثياً في الخارج</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="812" y="228" width="347" height="118" rx="14" fill="#27282c" stroke="#dc6572" stroke-width="2"/>
+    <text x="836" y="286" class="sans red stat">70 t</text>
+    <text x="836" y="312" class="sans ivory tiny">seed lost at al-Qarara</text>
+    <text x="836" y="334" class="arabic muted tiny">طناً من البذور فُقدت في القرارة</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1183" y="228" width="347" height="118" rx="14" fill="#27282c" stroke="#61aa80" stroke-width="2"/>
+    <text x="1207" y="286" class="sans green stat">2.5 t</text>
+    <text x="1207" y="312" class="sans ivory tiny">regathered in a tent</text>
+    <text x="1207" y="334" class="arabic muted tiny">طناً أُعيد جمعها في خيمة</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="386" width="700" height="372" rx="18" fill="#25262a" stroke="#3a3b40" stroke-width="2"/>
+    <text x="96" y="424" class="sans gold label">INSIDE PALESTINE</text>
+    <text x="744" y="424" class="arabic gold small" text-anchor="end">داخل فلسطين</text>
+
+    <rect x="96" y="444" width="4" height="62" fill="#61aa80"/>
+    <text x="116" y="470" class="sans ivory name">Battir — Heirloom Seed Library</text>
+    <text x="116" y="497" class="arabic muted small">بتير — مكتبة البذور البلدية، تأسست 2014</text>
+
+    <rect x="96" y="520" width="4" height="62" fill="#dc6572"/>
+    <text x="116" y="546" class="sans ivory name">Hebron — UAWC multiplication unit</text>
+    <text x="116" y="573" class="arabic muted small">الخليل — وحدة الإكثار، هدمها الاحتلال 31 تموز 2025</text>
+
+    <rect x="96" y="596" width="4" height="62" fill="#61aa80"/>
+    <text x="116" y="622" class="sans ivory name">Bethlehem — seed and gene bank</text>
+    <text x="116" y="649" class="arabic muted small">بيت لحم — معهد التنوع الحيوي والاستدامة</text>
+
+    <rect x="96" y="672" width="4" height="62" fill="#d4b36e"/>
+    <text x="116" y="698" class="sans ivory name">Deir al-Balah — al-Qarara, rebuilt</text>
+    <text x="116" y="725" class="arabic muted small">دير البلح — بنك القرارة في خيمة 16 متراً</text>
+  </g>
+
+  <rect x="790" y="560" width="20" height="24" fill="url(#flow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="830" y="386" width="700" height="372" rx="18" fill="#25262a" stroke="#3a3b40" stroke-width="2"/>
+    <text x="856" y="424" class="sans gold label">IN THE DIASPORA</text>
+    <text x="1504" y="424" class="arabic gold small" text-anchor="end">في المهجر</text>
+
+    <rect x="856" y="444" width="4" height="52" fill="#d4b36e"/>
+    <text x="876" y="468" class="sans ivory name">Truelove Seeds — Philadelphia</text>
+    <text x="876" y="492" class="arabic muted small">ترو لوف سيدز — فيلادلفيا</text>
+
+    <rect x="856" y="510" width="4" height="52" fill="#d4b36e"/>
+    <text x="876" y="534" class="sans ivory name">Experimental Farm Network</text>
+    <text x="876" y="558" class="arabic muted small">شبكة المزارع التجريبية — فيلادلفيا</text>
+
+    <rect x="856" y="576" width="4" height="52" fill="#d4b36e"/>
+    <text x="876" y="600" class="sans ivory name">Hudson Valley Seed Company</text>
+    <text x="876" y="624" class="arabic muted small">شركة بذور هدسون فالي — نيويورك</text>
+
+    <rect x="856" y="642" width="4" height="52" fill="#d4b36e"/>
+    <text x="876" y="666" class="sans ivory name">Ujamaa Cooperative Farming</text>
+    <text x="876" y="690" class="arabic muted small">تحالف أوجاما التعاوني الزراعي</text>
+
+    <rect x="856" y="708" width="4" height="30" fill="#d4b36e"/>
+    <text x="876" y="730" class="sans muted small">Wild Dreams Farm — Washington state</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="786" width="1460" height="76" rx="14" fill="#27282c" stroke="#286344" stroke-width="2"/>
+    <text x="96" y="820" class="sans ivory small">The farms abroad hold the seeds with one stated purpose: returning them home.</text>
+    <text x="1504" y="848" class="arabic muted small" text-anchor="end">مزارع المهجر تحفظ البذور لغاية واحدة معلنة: إعادتها إلى أرضها</text>
+  </g>
+</svg>

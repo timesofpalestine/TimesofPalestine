@@ -917,6 +917,25 @@
    ],
    "verified": "aljazeera.net + arab48.com + france24 Arabic coverage of the 2026-04-26 merger, 2026-09-16",
    "note": "«بيחד» تسرّبت بحرفين عبريين إلى نسختين عربيتين؛ المعنى «معاً»"
+  },
+  {
+   "latin": "Vivien Sansour (Palestine Heirloom Seed Library)",
+   "ar": "فيفيان صنصور",
+   "wrong": [
+    "سنسور",
+    "سانسور"
+   ],
+   "verified": "ar.wikipedia + darjacir.com + mc-doualiya.com, 2026-09-18",
+   "note": "العائلة الفلسطينية «صنصور» كما في «لاريسا صنصور»؛ «سنسور» نقل صوتي من الإنجليزية ورد في ترجمة غلوبال فويسز العربية"
+  },
+  {
+   "latin": "Mazin Qumsiyeh (Palestine Institute for Biodiversity and Sustainability)",
+   "ar": "مازن قمصية",
+   "wrong": [
+    "قمسية",
+    "قومصية"
+   ],
+   "verified": "ar.wikipedia + alquds.co.uk + aljazeera.net, 2026-09-18"
   }
  ]
 }
