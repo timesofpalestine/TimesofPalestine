@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t">
+  <title id="t">Palestinian Minds — a weekly portrait of Palestinian scholarship / عقول فلسطينية</title>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/></linearGradient>
+  <style>.serif{font-family:"Source Serif 4",Georgia,serif}.arabic{font-family:Cairo,Arial,sans-serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}</style></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- a constellation: one idea, and everything it connects to -->
+  <g stroke="#3d4f6b" stroke-width="2.5" opacity=".85">
+    <line x1="1270" y1="450" x2="1120" y2="320"/><line x1="1270" y1="450" x2="1430" y2="300"/>
+    <line x1="1270" y1="450" x2="1110" y2="590"/><line x1="1270" y1="450" x2="1450" y2="560"/>
+    <line x1="1270" y1="450" x2="1300" y2="250"/><line x1="1270" y1="450" x2="1250" y2="670"/>
+    <line x1="1120" y1="320" x2="1300" y2="250"/><line x1="1450" y1="560" x2="1430" y2="300"/>
+  </g>
+  <g fill="#c7a86b">
+    <circle cx="1120" cy="320" r="11"/><circle cx="1430" cy="300" r="9"/>
+    <circle cx="1110" cy="590" r="9"/><circle cx="1450" cy="560" r="11"/>
+    <circle cx="1300" cy="250" r="8"/><circle cx="1250" cy="670" r="8"/>
+  </g>
+  <circle cx="1270" cy="450" r="26" fill="#286344" stroke="#c7a86b" stroke-width="4"/>
+
+  <rect x="120" y="268" width="120" height="7" fill="#c7a86b"/>
+  <text x="120" y="372" class="arabic" fill="#f2eee8" font-size="78" font-weight="700">عقول فلسطينية</text>
+  <text x="120" y="452" class="serif" fill="#c7a86b" font-size="54" font-weight="700" letter-spacing="3">PALESTINIAN MINDS</text>
+  <text x="120" y="528" class="sans" fill="#f2eee8" font-size="29">A weekly portrait of Palestinian scholarship</text>
+  <text x="120" y="574" class="arabic" fill="#f2eee8" font-size="29">بورتريه أسبوعي لباحث فلسطيني وعمله</text>
+  <text x="120" y="640" class="sans" fill="#aaa9a5" font-size="25">The work, explained — every finding named to its journal and year</text>
+  <text x="120" y="812" class="sans" fill="#aaa9a5" font-size="26" letter-spacing="4">TIMES OF PALESTINE</text>
+</svg>
