@@ -6,26 +6,32 @@
    "article": "https://qudsn.co/share/217650",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=217650&slug=%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%88%D8%BA%D8%B2%D8%A9-%D9%88%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D8%B1%D8%A8-%D9%81%D9%8A-%D9%82%D9%84%D8%A8-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A8%D8%B9%D8%AF-7-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
   }
  ],
  "date": "2026-09-19T08:01:30+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "image": "https://qudsn.co/og/1fb767100fb05181092a9439291153e10d9bed44.jpg",
  "lang": "ar",
  "link": "https://qudsn.co/share/217650",
  "max_age_hours": 72,
  "media": {
-  "credit": "Graphic: Times of Palestine",
+  "credit": "شبكة قدس · تيليغرام",
   "licenseUrl": null,
-  "rightsBasis": "owned",
-  "source": "Times of Palestine"
+  "rightsBasis": "source-hosted",
+  "source": "https://qudsn.co/share/217650"
  },
  "modified": null,
  "original": false,
  "pid": "51f4e90831",
- "score": 49.35,
+ "score": 49.04,
  "source": "شبكة قدس · تيليغرام",
  "source_id": "tg-qudsn",
  "source_url": "https://t.me/QudsN",
