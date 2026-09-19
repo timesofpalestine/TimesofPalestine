@@ -6,13 +6,19 @@
    "article": "https://imemc.org/article/forces-kill-palestinian-in-gaza-amid-ceasefire-violations",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinians-killed-israeli-attacks-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
- "date": "2026-09-18T09:07:23+00:00",
- "dek": "On Friday, Israeli occupation forces killed a Palestinian in central Gaza and continued to violate the “ceasefire” agreement for the 344th consecutive day, carrying out attacks across the devastated coastal enclave.",
+ "date": "2026-09-19T02:44:23+00:00",
+ "dek": "On Friday, Israeli occupation forces killed two Palestinians in the Gaza Strip amid ongoing violations of the ceasefire agreement, as the army carried out attacks across the devastated coastal enclave.",
  "dup_of": null,
- "image": "https://imemc.org/wp-content/uploads/2026/09/Gazaa-e1789722325846.jpg",
+ "image": "https://imemc.org/wp-content/uploads/2026/09/2killedFriday-e1789792512653.jpg",
  "lang": "en",
  "link": "https://imemc.org/article/forces-kill-palestinian-in-gaza-amid-ceasefire-violations",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "c2d046e62c",
- "score": 53.66,
+ "score": 58.66,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
