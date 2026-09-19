@@ -1,0 +1,33 @@
+{
+ "brief": "Gaza's information technology sector has suffered severe damage over three years of intensive bombing, leaving aspiring engineers and programmers without basic tools to continue their studies. Students across the enclave are attempting to maintain their technical education despite the destruction of labs, internet infrastructure, and computing equipment that has crippled the region's capacity to train a new generation of tech professionals, Al Jazeera English reported.\n\nThe educational collapse threatens to disrupt Gaza's already fragile tech industry and workforce development at a critical moment when rebuilding will require skilled engineers and developers. Young people continue pursuing IT education through improvised means, competing against circumstances that have stripped away institutional resources and digital connectivity.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/19/lacking-equipment-but-not-ambition-gaza-students-try-to-keep-up-with-tech?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-19T20:30:01+00:00",
+ "dek": "Gaza's IT industry has been devastated from three-years of bombing and destruction.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/4-1-1789814430.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/19/lacking-equipment-but-not-ambition-gaza-students-try-to-keep-up-with-tech?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/19/lacking-equipment-but-not-ambition-gaza-students-try-to-keep-up-with-tech?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6350cc993c",
+ "score": 93.53,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza students pursue tech education despite chronic equipment shortages"
+}

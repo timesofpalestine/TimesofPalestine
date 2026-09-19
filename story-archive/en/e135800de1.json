@@ -1,0 +1,39 @@
+{
+ "brief": "Israel's president has pardoned Elor Azaria, a soldier convicted of manslaughter for shooting a wounded Palestinian man in 2016, Al Jazeera English reported. Azaria fired at the incapacitated Palestinian after Israeli troops had already subdued him during a raid in the occupied West Bank, in a case that drew international scrutiny.\n\nThe shooting took place in Hebron during a period of heightened tensions. Azaria had been sentenced to 14 months in prison following his conviction, a verdict that sparked debate within Israel over the treatment of security personnel.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/19/israels-president-pardons-soldier-who-killed-wounded-palestinian-in-2016?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-president-pardons-soldier-who-killed-wounded-palestinian-2016",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-19T20:40:09+00:00",
+ "dek": "Elor Azaria had shot a Palestinian who had already been incapacitated by Israeli troops, in controversial case.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/6506872-1-1789847990.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/19/israels-president-pardons-soldier-who-killed-wounded-palestinian-in-2016?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/19/israels-president-pardons-soldier-who-killed-wounded-palestinian-in-2016?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e135800de1",
+ "score": 93.65,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel's president pardons soldier who shot incapacitated Palestinian"
+}
