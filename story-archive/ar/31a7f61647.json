@@ -1,0 +1,33 @@
+{
+ "brief": "أفاد المركز الفلسطيني للإعلام أن آلاف الأشخاص في غزة فقدوا أطرافهم، ويخوضون معركة يومية للتأقلم مع واقعهم الجديد واستعادة حياتهم الطبيعية. يعاني هؤلاء الناجون من التحديات الجسدية والنفسية الناجمة عن بتر الأطراف، في ظل غياب الخدمات الطبية والتأهيلية الكافية.\n\nتفاقمت الأزمة الإنسانية في القطاع مع تدهور البنية التحتية والموارد الطبية، مما يحول دون توفير الرعاية المتخصصة والأطراف الاصطناعية للمبتورين. يسعى الناجون إلى استعادة استقلاليتهم رغم الظروف الصعبة والدعم المحدود المتاح لهم.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/09/19/1118412",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-19T18:59:55+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-health-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/09/19/1118412",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "31a7f61647",
+ "score": 49.79,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "آلاف مبتوري الأطراف في غزة يواجهون تحديات استعادة الحياة"
+}
