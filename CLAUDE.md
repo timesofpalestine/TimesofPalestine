@@ -703,6 +703,45 @@ diaspora (or the city's fit); journalism, not advertising. Launch feature:
 `originals/palestinian-table-tanoreen-2026.*`. Claude's beat; other agents
 may PR candidates into the queue with sources.
 
+## Palestinian Minds — weekly scholar feature (owner directive 2026-09-19)
+
+Standing weekly franchise: every WEDNESDAY the daily editor cycle features
+one Palestinian researcher or professor and EXPLAINS THEIR WORK — from the
+researched queue in `editorial/palestinian-minds-queue.md` (write the next
+entry, move it to Published, add a new candidate). Rotate fields (sciences,
+medicine, engineering, social sciences, humanities) and places (historic
+Palestine, the Arab world, Europe, the Americas), and keep women and men
+both in the rotation. Both languages, category `humans`, slug
+`originals/palestinian-minds-<surname>-<year>.*`.
+
+Binding on every agent:
+
+- **The work is the story, not the CV.** Explain at least one real finding
+  so a reader with no background can follow it, and name every finding to
+  its journal, book or institution and its year. A piece that lists titles
+  and prizes without explaining an idea has missed the point.
+- **Celebrate the subject** — the features order of 2026-08-05 applies in
+  full: the achievement is the story, the register is the culture pages of
+  a great newspaper, never an audit.
+- **Affiliations are stated, never insinuated.** Palestinian scholars work
+  in Palestinian, Israeli, Arab, European and American institutions. Say
+  plainly where someone works; a workplace is never an accusation and never
+  the angle.
+- **Nothing beyond the record.** Never assert a birthplace, origin, politics
+  or identity the sources do not carry; where the record is thin, print what
+  is documented and stop. Citation metrics are attributed to the profile
+  they came from and dated at the time of writing.
+- Living scholars preferred; a historic figure runs when the work still
+  shapes a field today.
+- Cover: the franchise art `/media/times-of-palestine-palestinian-minds.svg`
+  by default, replaced by a rights-cleared portrait whenever one can be
+  obtained (with a `media-rights.json` entry).
+
+Launch feature: `originals/palestinian-minds-abu-rabia-2026.*` (Salim Abu-Rabia,
+University of Haifa — Cognitive Retroactive Transfer, the diglossia gap, and
+second-language acquisition). Claude's beat; other agents may PR candidates
+into the queue with sources.
+
 ## Israeli press review (owner directive 2026-08-06)
 
 Standing daily desk: Times of Palestine reads the Hebrew and English
