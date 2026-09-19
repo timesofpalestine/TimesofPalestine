@@ -7,6 +7,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": false
+  },
+  {
+   "article": "https://english.pnn.ps/news/48305",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": false
   }
  ],
  "date": "2026-09-19T05:00:37+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1e0fd01126",
- "score": 47.91,
+ "score": 47.59,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
