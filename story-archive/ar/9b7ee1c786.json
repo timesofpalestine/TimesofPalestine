@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.net/politics/2026/9/19/%d9%85%d9%82%d8%a7%d9%84-%d8%a8%d8%a7%d9%84%d8%ba%d8%a7%d8%b1%d8%af%d9%8a%d8%a7%d9%86-%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8%d8%a7%d8%aa-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/186662/%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%82%D8%A8%D9%84%D8%A9-%D9%82%D8%AF-%D8%AA%D9%83%D9%88%D9%86-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-09-18T22:03:02+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "9b7ee1c786",
- "score": 43.96,
+ "score": 43.64,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
