@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli airstrikes across Gaza killed three Palestinians, including the young son of the Health Ministry's director general, according to Al Jazeera English. The child was identified as the son of Munir al-Bursh, who heads Gaza's Health Ministry.\n\nThe deaths mark the latest casualties in the ongoing conflict, though details of the specific locations and circumstances of the attacks were not immediately available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/19/three-palestinians-killed-in-israeli-strikes-across-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israeli-strikes-kill-three-people-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/if-youre-just-tuning",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-strike-kills-palestinian-as-israeli-violations-continue-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-19T12:59:31+00:00",
+ "dek": "Gaza’s Health Ministry says the son of its director general, Munir al-Bursh, is among those killed.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-09-16T124137Z_1739314588_RC26KNAQN15M_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-1789819405.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/19/three-palestinians-killed-in-israeli-strikes-across-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/19/three-palestinians-killed-in-israeli-strikes-across-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e8096eb8b1",
+ "score": 61.84,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli attacks kill three Palestinians including child in Gaza"
+}
