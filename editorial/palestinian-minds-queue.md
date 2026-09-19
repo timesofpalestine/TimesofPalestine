@@ -46,6 +46,20 @@ Rules, from the charter section of the same name:
    in Arabic (Dyslexia, 2024); Arabic-to-English transfer intervention
    (Int. J. Bilingualism, 2025, with Laila Haddad-Najjar).
 
+2. **Khalil Shikaki — Palestinian Center for Policy and Survey Research,
+   Ramallah** (2026-09-19, owner request, written outside the Wednesday
+   rotation): political science and survey methodology. Founded the centre
+   in Nablus in 1993 and moved it to Ramallah; 200-plus polls of the West
+   Bank and Gaza. The July 2003 refugee survey and the ransacking of his
+   office; polling Gaza from shelters and tents among the rubble
+   (1,200-1,580 respondents, Gaza sample nearly doubled, reweighted, margin
+   3-3.5%); the Gaza/West Bank divergence on 7 October; the
+   Palestinian-Israeli Pulse with Tel Aviv University and Dahlia Scheindlin.
+   Editorial note: his brother's identity is widely used against him and is
+   not his work — the piece leaves it out under the "nothing beyond the
+   record" and "celebrate the subject" rules. Revisit only if he addresses
+   it on the record and it bears on the research.
+
 ## Up next (rotate field and place, verify before writing)
 
 2. **Omar Yaghi — chemistry, UC Berkeley.** Reticular chemistry and
@@ -81,6 +95,12 @@ Rules, from the charter section of the same name:
     Genetics of Circassian and Chechen populations, and the "We Love
     Reading" programme. Verify the Palestinian family origin from a named
     source before writing; drop the entry if it does not hold.
+11. **Sari Nusseibeh — philosophy, Al-Quds University.** Former president
+    of the university; work on Islamic philosophy and Avicenna alongside a
+    public life in Jerusalem. The humanities entry with a Jerusalem address.
+12. **Noura Erakat — law, Rutgers University.** *Justice for Some: Law and
+    the Question of Palestine*; how international law has been argued,
+    bent and used around Palestine. Verify current post before writing.
 
 Adjacent candidates (not researchers — consider for other franchises):
 Hanan Al-Hroub, the Ramallah teacher who won the 2016 Global Teacher

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="780" viewBox="0 0 1600 780" role="img" aria-labelledby="t">
+  <title id="t">PSR polling: approval of the 7 October attack over time, and the Gaza-West Bank split</title>
+  <defs><style>.serif{font-family:"Source Serif 4",Georgia,serif}.sans{font-family:"Libre Franklin",Arial,sans-serif}</style></defs>
+  <rect width="1600" height="780" fill="#111214"/>
+  <rect x="110" y="44" width="90" height="6" fill="#c7a86b"/>
+  <text x="110" y="108" class="serif" fill="#f2eee8" font-size="38" font-weight="700">Thirty-three years of asking, and what it caught</text>
+  <text x="110" y="150" class="sans" fill="#aaa9a5" font-size="22">"Was the 7 October attack the right decision?" — PSR quarterly polls, share saying yes</text>
+
+  <!-- axis -->
+  <line x1="150" y1="500" x2="960" y2="500" stroke="#3d4f6b" stroke-width="2"/>
+  <line x1="150" y1="200" x2="150" y2="500" stroke="#3d4f6b" stroke-width="2"/>
+  <text x="130" y="238" text-anchor="end" class="sans" fill="#aaa9a5" font-size="19">80%</text>
+  <text x="130" y="374" text-anchor="end" class="sans" fill="#aaa9a5" font-size="19">40%</text>
+  <text x="130" y="506" text-anchor="end" class="sans" fill="#aaa9a5" font-size="19">0</text>
+
+  <polyline points="190,260 370,274 550,318 730,331 900,321" fill="none" stroke="#c7a86b" stroke-width="5" stroke-linejoin="round"/>
+  <g fill="#c7a86b">
+    <circle cx="190" cy="260" r="9"/><circle cx="370" cy="274" r="9"/>
+    <circle cx="550" cy="318" r="9"/><circle cx="730" cy="331" r="9"/><circle cx="900" cy="321" r="9"/>
+  </g>
+  <g class="sans" text-anchor="middle" fill="#f2eee8" font-size="25" font-weight="700">
+    <text x="190" y="238">71</text><text x="370" y="252">67</text>
+    <text x="550" y="296">54</text><text x="730" y="309">50</text><text x="900" y="299">53</text>
+  </g>
+  <g class="sans" text-anchor="middle" fill="#aaa9a5" font-size="19">
+    <text x="190" y="532">Mar 2024</text><text x="370" y="532">Jun 2024</text>
+    <text x="550" y="532">Sep 2024</text><text x="730" y="532">May 2025</text><text x="900" y="532">Oct 2025</text>
+  </g>
+
+  <!-- the split -->
+  <line x1="1010" y1="190" x2="1010" y2="540" stroke="#3d4f6b" stroke-width="2" stroke-dasharray="6 8"/>
+  <text x="1060" y="212" class="sans" fill="#c7a86b" font-size="22" font-weight="700" letter-spacing="2">OCTOBER 2025</text>
+  <line x1="1060" y1="500" x2="1490" y2="500" stroke="#3d4f6b" stroke-width="2"/>
+  <rect x="1110" y="352" width="110" height="148" fill="#c7a86b"/>
+  <rect x="1310" y="301" width="110" height="199" fill="#c7a86b"/>
+  <text x="1165" y="336" text-anchor="middle" class="sans" fill="#f2eee8" font-size="30" font-weight="700">44%</text>
+  <text x="1365" y="285" text-anchor="middle" class="sans" fill="#f2eee8" font-size="30" font-weight="700">59%</text>
+  <text x="1165" y="532" text-anchor="middle" class="sans" fill="#aaa9a5" font-size="21">in Gaza</text>
+  <text x="1365" y="532" text-anchor="middle" class="sans" fill="#aaa9a5" font-size="21">in the West Bank</text>
+  <text x="1060" y="580" class="sans" fill="#f2eee8" font-size="22">The people living the war judged it</text>
+  <text x="1060" y="610" class="sans" fill="#f2eee8" font-size="22">differently from those watching it.</text>
+
+  <rect x="110" y="660" width="1380" height="72" rx="8" fill="#17181b" stroke="#286344" stroke-width="2"/>
+  <text x="140" y="700" class="sans" fill="#f2eee8" font-size="22">1,200 to 1,580 adults per poll, interviewed face to face — in Gaza, in shelters and in tents among the rubble.</text>
+  <text x="140" y="726" class="sans" fill="#aaa9a5" font-size="20">Margin of error 3 to 3.5 per cent. Source: Palestinian Center for Policy and Survey Research, polls 91-97.</text>
+</svg>

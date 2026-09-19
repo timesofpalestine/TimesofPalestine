@@ -953,6 +953,31 @@
     "وائل شكور"
    ],
    "verified": "kul-alarab.com report on the CRT studies, 2026-09-19"
+  },
+  {
+   "latin": "Khalil Shikaki (PSR, Ramallah)",
+   "ar": "خليل الشقاقي",
+   "wrong": [
+    "خليل شقاقي",
+    "خليل الشيقاقي"
+   ],
+   "verified": "pcpsr.org Arabic pages (the centre's own byline for its director) + ar.wikipedia entry for the centre, 2026-09-19"
+  },
+  {
+   "latin": "Dahlia Scheindlin",
+   "ar": "داليا شايندلين",
+   "wrong": [
+    "داليا شيندلين"
+   ],
+   "verified": "pcpsr.org Arabic joint-poll pages, 2026-09-19"
+  },
+  {
+   "latin": "Zarnuqa (village depopulated 1948)",
+   "ar": "زرنوقة",
+   "wrong": [
+    "زرنوقه"
+   ],
+   "verified": "standard Arabic form of the Ramle-district village; encyclopedia.com biography of Shikaki names it as the family's village, 2026-09-19"
   }
  ]
 }

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="780" viewBox="0 0 1600 780" role="img" aria-labelledby="t">
+  <title id="t">استطلاعات المركز الفلسطيني: تأييد هجوم السابع من أكتوبر عبر الزمن، والفارق بين غزة والضفة</title>
+  <defs><style>.sans{font-family:"Libre Franklin",Arial,sans-serif}.arabic{font-family:Cairo,Arial,sans-serif}</style></defs>
+  <rect width="1600" height="780" fill="#111214"/>
+  <rect x="1400" y="44" width="90" height="6" fill="#c7a86b"/>
+  <text x="1490" y="108" text-anchor="end" class="arabic" fill="#f2eee8" font-size="38" font-weight="700">ثلاثة وثلاثون عاماً من السؤال، وما التقطته</text>
+  <text x="1490" y="152" text-anchor="end" class="arabic" fill="#aaa9a5" font-size="22">«هل كان هجوم السابع من أكتوبر قراراً صائباً؟» — استطلاعات المركز الفصلية، نسبة من أجابوا بنعم</text>
+
+  <line x1="640" y1="500" x2="1450" y2="500" stroke="#3d4f6b" stroke-width="2"/>
+  <line x1="1450" y1="200" x2="1450" y2="500" stroke="#3d4f6b" stroke-width="2"/>
+  <text x="1470" y="238" class="arabic" fill="#aaa9a5" font-size="19">٨٠٪</text>
+  <text x="1470" y="374" class="arabic" fill="#aaa9a5" font-size="19">٤٠٪</text>
+  <text x="1470" y="506" class="arabic" fill="#aaa9a5" font-size="19">٠</text>
+
+  <polyline points="1410,260 1230,274 1050,318 870,331 700,321" fill="none" stroke="#c7a86b" stroke-width="5" stroke-linejoin="round"/>
+  <g fill="#c7a86b">
+    <circle cx="1410" cy="260" r="9"/><circle cx="1230" cy="274" r="9"/>
+    <circle cx="1050" cy="318" r="9"/><circle cx="870" cy="331" r="9"/><circle cx="700" cy="321" r="9"/>
+  </g>
+  <g class="arabic" text-anchor="middle" fill="#f2eee8" font-size="25" font-weight="700">
+    <text x="1410" y="238">٧١</text><text x="1230" y="252">٦٧</text>
+    <text x="1050" y="296">٥٤</text><text x="870" y="309">٥٠</text><text x="700" y="299">٥٣</text>
+  </g>
+  <g class="arabic" text-anchor="middle" fill="#aaa9a5" font-size="19">
+    <text x="1410" y="534">آذار ٢٠٢٤</text><text x="1230" y="534">حزيران ٢٠٢٤</text>
+    <text x="1050" y="534">أيلول ٢٠٢٤</text><text x="870" y="534">أيار ٢٠٢٥</text><text x="700" y="534">تشرين الأول ٢٠٢٥</text>
+  </g>
+
+  <line x1="590" y1="190" x2="590" y2="540" stroke="#3d4f6b" stroke-width="2" stroke-dasharray="6 8"/>
+  <text x="540" y="212" text-anchor="end" class="arabic" fill="#c7a86b" font-size="22" font-weight="700">تشرين الأول ٢٠٢٥</text>
+  <line x1="110" y1="500" x2="540" y2="500" stroke="#3d4f6b" stroke-width="2"/>
+  <rect x="380" y="352" width="110" height="148" fill="#c7a86b"/>
+  <rect x="180" y="301" width="110" height="199" fill="#c7a86b"/>
+  <text x="435" y="336" text-anchor="middle" class="arabic" fill="#f2eee8" font-size="30" font-weight="700">٤٤٪</text>
+  <text x="235" y="285" text-anchor="middle" class="arabic" fill="#f2eee8" font-size="30" font-weight="700">٥٩٪</text>
+  <text x="435" y="534" text-anchor="middle" class="arabic" fill="#aaa9a5" font-size="21">في غزة</text>
+  <text x="235" y="534" text-anchor="middle" class="arabic" fill="#aaa9a5" font-size="21">في الضفة الغربية</text>
+  <text x="540" y="582" text-anchor="end" class="arabic" fill="#f2eee8" font-size="22">من يعيشون الحرب حكموا عليها</text>
+  <text x="540" y="614" text-anchor="end" class="arabic" fill="#f2eee8" font-size="22">حكماً غير حكم من يشاهدونها</text>
+
+  <rect x="110" y="660" width="1380" height="72" rx="8" fill="#17181b" stroke="#286344" stroke-width="2"/>
+  <text x="1460" y="700" text-anchor="end" class="arabic" fill="#f2eee8" font-size="22">من ١٢٠٠ إلى ١٥٨٠ بالغاً في الاستطلاع الواحد، بمقابلات وجهاً لوجه — وفي غزة داخل مراكز الإيواء وفي خيام بين الركام</text>
+  <text x="1460" y="726" text-anchor="end" class="arabic" fill="#aaa9a5" font-size="20">هامش الخطأ بين ٣ و٣٫٥ بالمئة. المصدر: المركز الفلسطيني للبحوث السياسية والمسحية، الاستطلاعات ٩١-٩٧</text>
+</svg>
