@@ -7,6 +7,12 @@
    "name": "Amnesty International",
    "url": "https://www.amnesty.org/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/un-chief-deeply-regrets-us-visa-refusal-abbas-annual-meeting",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-09-17T18:41:24+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "28577f58e0",
- "score": 37.21,
+ "score": 37.11,
  "source": "Amnesty International",
  "source_id": "amnesty",
  "source_url": "https://www.amnesty.org/",
