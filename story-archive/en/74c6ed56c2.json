@@ -6,13 +6,7 @@
    "article": "https://www.middleeasteye.net/news/eu-presses-washington-reverse-visa-ban-palestinian-un-delegation",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/us-news/2026/sep/17/trump-denies-visas-palestine-un",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-19T13:39:43+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "74c6ed56c2",
- "score": 44.78,
+ "score": 44.46,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
