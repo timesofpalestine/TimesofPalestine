@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli occupation forces shot and killed a Palestinian man and injured another on Sunday after opening fire on their vehicle near Haddad Resort, east of Jenin in the northern occupied West Bank, IMEMC News reported.\n\nThe incident occurred as the two Palestinians traveled through the area. No further details about the circumstances of the shooting or the identities of those killed and injured were immediately available.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israeli-forces-kill-palestinian-injure-another-near-jenin",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/palestinian-gunman-shoots-dead-israeli-west-bank-soldiers-kill-motorist",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-20T19:02:50+00:00",
+ "dek": "On Sunday, Israeli occupation forces killed a Palestinian man and injured another after opening fire on their vehicle near Haddad Resort, east of Jenin in the northern occupied West Bank.",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/SamiHasanZawaida-e1789930872547.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israeli-forces-kill-palestinian-injure-another-near-jenin",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/israeli-forces-kill-palestinian-injure-another-near-jenin"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c2c86e8b95",
+ "score": 63.08,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces kill Palestinian, wound another near Jenin"
+}

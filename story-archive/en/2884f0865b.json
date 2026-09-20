@@ -6,7 +6,19 @@
    "article": "https://shehabnews.com/post/164434/%D8%AE%D8%A7%D8%B5-%D9%86%D8%B4%D8%B7%D8%A7%D8%A1-%D9%8A%D8%AA%D8%B3%D8%A7%D8%A1%D9%84%D9%88%D9%86-%D9%87%D9%84-%D8%B3%D9%84%D9%85%D8%AA-%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A9-%D9%85%D9%86%D9%81%D8%B0-%D8%B9%D9%85%D9%84%D9%8A%D8%A9-%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%84%D9%87-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.maannews.net/news/2169050.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-west-bank-shooting-suspects-hometown-besiege-mosque",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-20T18:55:00+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "2884f0865b",
- "score": 63.29,
+ "score": 62.99,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
