@@ -1,0 +1,33 @@
+{
+ "brief": "أغلقت قوات الاحتلال الإسرائيلي معابر قطاع غزة، بحسب وكالة معا، مما يشدّد الحصار على السكان المدنيين والحركة الإنسانية داخل القطاع. جاء الإجراء متزامناً مع تصعيد عسكري جديد في المحافظات الجنوبية والوسطى.\n\nنفذت قوات الاحتلال عمليات نسف واسعة في منطقتي خان يونس والبريج، وأسفرت العمليات عن دمار في المباني والبنية التحتية. ولم تعلن السلطات الإسرائيلية عن أسباب واضحة لإغلاق المعابر في هذا التوقيت بالذات.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169035.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-20T07:21:06+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2169035.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e470d026f5",
+ "score": 40.57,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "الاحتلال يغلق معابر غزة ويشن عمليات نسف بخان يونس"
+}
