@@ -6,25 +6,7 @@
    "article": "https://www.aljazeera.net/news/2026/9/20/%d8%b3%d9%86%d8%a8%d9%82%d9%89-%d9%87%d9%86%d8%a7-%d9%84%d9%84%d8%a3%d8%a8%d8%af-%d8%ac%d9%88%d9%84%d8%a9-%d9%84%d9%86%d8%aa%d9%86%d9%8a%d8%a7%d9%87%d9%88-%d9%88%d8%b3%d8%a7%d8%b1%d8%a9?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/AlQastalps/394780",
-   "name": "القسطل · تيليغرام",
-   "url": "https://t.me/AlQastalps",
-   "verified": true
-  },
-  {
-   "article": "https://felesteen.news/post/186732/%D9%84%D8%AC%D9%86%D8%A9-%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D8%AA%D8%AF%D8%B9%D9%88-%D9%84%D8%AA%D8%AD%D8%B1%D9%83-%D8%B4%D8%B9%D8%A8%D9%8A-%D9%88%D8%A7%D8%B3%D8%B9-%D8%B1%D9%81%D8%B6%D8%A7-%D9%84%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D8%A3%D9%86%D9%81%D8%A7%D9%82-%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D9%82",
-   "name": "صحيفة فلسطين",
-   "url": "https://felesteen.news/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/321734",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://t.me/Arabi21News/429205",
@@ -49,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "8669f00bb9",
- "score": 60.71,
+ "score": 60.43,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
