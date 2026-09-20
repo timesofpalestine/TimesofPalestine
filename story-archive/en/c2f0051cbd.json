@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/ed-sheeran-says-what-happening-gaza-catastrophic-unjustifiable",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.theguardian.com/news/ng-interactive/2026/sep/19/ed-sheeran-loop-tour-culture-war-israel-palestine",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -18,12 +24,6 @@
    "article": "https://www.al-monitor.com/originals/2026/09/singer-ed-sheeran-says-gaza-situation-unjustifiable-following-controversy",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/ed-sheeran-says-what-happening-gaza-catastrophic-unjustifiable",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
    "verified": true
   }
  ],
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "c2f0051cbd",
- "score": 42.88,
+ "score": 42.61,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
