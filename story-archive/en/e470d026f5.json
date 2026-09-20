@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces shut down all crossing points into Gaza and demolished buildings in Khan Younis and the Shati refugee camp, the Ma'an news agency reported. The crossing closures further tighten movement into the territory amid ongoing military operations.\n\nThe demolition operations targeted structures in both locations, though specifics on the buildings and their extent were not detailed in the report.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169035.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-20T07:21:06+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169035.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e470d026f5",
+ "score": 45.82,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel closes Gaza crossings, demolishes buildings in Khan Younis and Shati"
+}
