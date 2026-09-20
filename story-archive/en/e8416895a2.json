@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli forces killed a Palestinian man near Jenin in the occupied West Bank, Al Jazeera English reported. The incident occurred as tensions remain high in the area, where military operations have intensified in recent months.\n\nIn a separate incident, an Israeli settler was fatally shot. The two deaths occurred amid escalating violence affecting both Palestinian and Israeli communities in the region.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/20/israeli-forces-kill-palestinian-near-jenin-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-colonizers-attack-communities-across-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/palestinian-gunman-shoots-dead-israeli-west-bank-soldiers-kill-motorist",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-27-palestinians-raid-west-bank-village-wafa",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-20T12:11:22+00:00",
+ "dek": "Israeli forces killed a Palestinian man near Jenin and an Israeli settler was fatally shot in separate incident.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/GettyImages-2295195941-1789897432.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/20/israeli-forces-kill-palestinian-near-jenin-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/20/israeli-forces-kill-palestinian-near-jenin-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e8416895a2",
+ "score": 62.85,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces kill Palestinian near Jenin; settler shot dead separately"
+}

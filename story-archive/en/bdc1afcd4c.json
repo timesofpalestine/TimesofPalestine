@@ -1,0 +1,39 @@
+{
+ "brief": "Pro-Palestine demonstrators gathered outside Ed Sheeran's solo concert in Philadelphia, Al Jazeera English reported. The protest marked the latest in a series of activist actions targeting cultural events amid escalating tensions over the Gaza conflict.\n\nDetails of the protest size, duration, and specific demands were not immediately available. Pro-Palestine groups have staged demonstrations at multiple high-profile events in recent weeks.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/20/pro-palestine-protesters-demonstrate-outside-ed-sheeran-concert?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/zionismracism-protest-held-outside-ed-sheerans-philadelphia-concert",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-20T12:00:16+00:00",
+ "dek": "Pro-Palestine protesters rallied outside Ed Sheeran’s solo concert in Philadelphia.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789905599.jpg?resize=1918%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/20/pro-palestine-protesters-demonstrate-outside-ed-sheeran-concert?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/20/pro-palestine-protesters-demonstrate-outside-ed-sheeran-concert?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bdc1afcd4c",
+ "score": 48.72,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Pro-Palestine protesters rally outside Ed Sheeran concert in Philadelphia"
+}
