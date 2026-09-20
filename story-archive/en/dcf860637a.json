@@ -1,0 +1,39 @@
+{
+ "brief": "Palestinian students in Gaza resumed classes in makeshift learning spaces after Israeli military operations destroyed much of the enclave's school infrastructure, according to Al Jazeera English. The return marks an attempt to restore education amid widespread destruction that left thousands of children without proper facilities.\n\nThe resumption of classes follows years of conflict that severely damaged Gaza's educational system. Children are now studying in temporary venues as reconstruction efforts remain limited.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/20/gazas-children-return-to-classrooms-after-years-of-israeli-attacks?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48304",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-20T12:38:21+00:00",
+ "dek": "Palestinian children have returned to classrooms after Israel destroyed Gaza’s schools.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1789907662.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/20/gazas-children-return-to-classrooms-after-years-of-israeli-attacks?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/20/gazas-children-return-to-classrooms-after-years-of-israeli-attacks?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dcf860637a",
+ "score": 46.1,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza children return to classrooms after Israeli forces destroy schools"
+}
