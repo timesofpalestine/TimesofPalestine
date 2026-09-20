@@ -6,13 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/9/20/israeli-settlers-storm-al-aqsa-in-latest-targeting-of-east-jerusalem-sites?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
+   "verified": false
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-media-thousands-israeli-settlers-storm-al-buraq-wall-plaza",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-enters-western-wall-plaza-thousands-israelis-including",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-20T11:54:24+00:00",
@@ -31,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "15574e5e57",
- "score": 62.43,
+ "score": 62.2,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
