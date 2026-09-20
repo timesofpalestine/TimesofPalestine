@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces prevented dozens of teachers from accessing their schools in the Northern Jordan Valley, the Ma'an news agency reported. The blockade disrupted education services across multiple schools in the area.\n\nThe incident reflects ongoing restrictions on Palestinian movement and access to services in the occupied territory, particularly in the Jordan Valley, where Israeli military control limits Palestinian administrative and educational operations.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169042.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-20T08:12:40+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169042.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "27661c1890",
+ "score": 48.88,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Occupation blocks dozens of teachers from reaching Northern Valley schools"
+}
