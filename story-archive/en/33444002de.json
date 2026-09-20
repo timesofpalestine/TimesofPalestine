@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/israeli-forces-colonizers-attack-communities-across-west-bank",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-eight-palestinians-detained-settlers-cut-guava-trees-cut",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-19T09:27:02+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "33444002de",
- "score": 83.08,
+ "score": 82.82,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
