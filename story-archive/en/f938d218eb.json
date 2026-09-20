@@ -15,9 +15,21 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.com/news/2026/9/20/israeli-forces-kill-palestinian-near-jenin-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
    "article": "https://imemc.org/article/israeli-forces-colonizers-attack-communities-across-west-bank",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/palestinian-gunman-shoots-dead-israeli-west-bank-soldiers-kill-motorist",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
    "verified": true
   },
   {
@@ -43,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "f938d218eb",
- "score": 62.54,
+ "score": 62.26,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

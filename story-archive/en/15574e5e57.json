@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli settlers stormed Al-Aqsa Mosque in occupied East Jerusalem during Yom Kippur, according to Al Jazeera English. Prime Minister Benjamin Netanyahu also entered Western Wall tunnels adjacent to the sacred site. The incursions mark the latest in a pattern of visits to the compound that Palestinians and regional governments have condemned as provocative.\n\nAl-Aqsa is one of Islam's holiest sites and lies atop the Temple Mount, a location sacred to Jews as well. The compound remains a flashpoint for Israeli-Palestinian tensions, with previous settler visits triggering confrontations and broader conflict.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/20/israeli-settlers-storm-al-aqsa-in-latest-targeting-of-east-jerusalem-sites?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-media-thousands-israeli-settlers-storm-al-buraq-wall-plaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-20T11:54:24+00:00",
+ "dek": "Netanyahu storms Western Wall tunnels amid Yom Kippur settler incursions, drawing fierce condemnation.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6aafb967b7-1789901159.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/20/israeli-settlers-storm-al-aqsa-in-latest-targeting-of-east-jerusalem-sites?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/20/israeli-settlers-storm-al-aqsa-in-latest-targeting-of-east-jerusalem-sites?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "15574e5e57",
+ "score": 63.3,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers and Netanyahu storm Al-Aqsa complex during Yom Kippur"
+}
