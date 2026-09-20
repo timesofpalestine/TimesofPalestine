@@ -13,6 +13,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/ed-sheeran-says-what-happening-gaza-catastrophic-unjustifiable",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-20T03:14:26+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "20d66d7927",
- "score": 48.96,
+ "score": 48.72,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
