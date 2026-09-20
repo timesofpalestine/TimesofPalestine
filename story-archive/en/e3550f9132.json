@@ -6,19 +6,19 @@
    "article": "https://www.theguardian.com/news/ng-interactive/2026/sep/19/ed-sheeran-loop-tour-culture-war-israel-palestine",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/zionismracism-protest-held-outside-ed-sheerans-philadelphia-concert",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.al-monitor.com/originals/2026/09/singer-ed-sheeran-says-gaza-situation-unjustifiable-following-controversy",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/im-so-so-sorry-ed-sheeran-addresses-gaza-stage-after-losing-every-opening-act",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-09-19T05:00:37+00:00",
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "e3550f9132",
- "score": 23.56,
+ "score": 23.21,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

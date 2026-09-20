@@ -9,9 +9,15 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-27-palestinians-raid-west-bank-village-wafa",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-west-bank-shooting-suspects-hometown-besiege-mosque",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/palestinian-gunman-shoots-dead-israeli-west-bank-soldiers-kill-motorist",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
    "verified": true
   }
  ],
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "33444002de",
- "score": 76.88,
+ "score": 70.3,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
