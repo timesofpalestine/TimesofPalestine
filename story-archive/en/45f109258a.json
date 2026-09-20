@@ -1,0 +1,33 @@
+{
+ "brief": "Visibility of Palestinian narratives has emerged as a central battleground in the Gaza conflict, with platforms and algorithms determining which accounts of events reach global audiences. The Al Jazeera English investigation examines how information control shapes perceptions of the war, as competing forces work to amplify certain voices while suppressing others through digital means.\n\nThe struggle reflects broader patterns in modern conflicts where control over narrative infrastructure — not just physical territory — determines whose version of events survives in public memory. Journalists, activists, and ordinary Palestinians report increasing difficulty in documenting and sharing accounts from Gaza as digital platforms face pressure from various actors seeking to control the information landscape.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news-analysis/2026/9/20/echoicide-who-decides-which-truths-survive-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-20T08:32:45+00:00",
+ "dek": "From Gaza to the digital age, visibility has become one of the central political struggles of modern conflicts.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2022/09/1-1.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news-analysis/2026/9/20/echoicide-who-decides-which-truths-survive-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news-analysis/2026/9/20/echoicide-who-decides-which-truths-survive-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "45f109258a",
+ "score": 49.56,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Digital erasure becomes weapon in Gaza conflict, experts warn"
+}
