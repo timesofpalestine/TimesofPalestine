@@ -1,0 +1,45 @@
+{
+ "brief": "After nearly three years of educational disruption, children in Gaza have returned to school in makeshift tent facilities with limited resources, according to Al Jazeera English. Students now study in temporary structures as formal school buildings remain damaged or inaccessible.\n\nThe resumption of classes represents an effort to restore learning for a generation whose schooling has been repeatedly interrupted by prolonged conflict and displacement.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/20/back-to-school-in-gaza-learning-in-tents-after-years-of-disruption?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/learning-resumes-in-tents-amid-gazas-ruins",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48304",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-20T11:26:20+00:00",
+ "dek": "After nearly three years of disruption, children return to school in Gaza in makeshift spaces with scarce resources.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/873A0689-copy-1789885506.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/20/back-to-school-in-gaza-learning-in-tents-after-years-of-disruption?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/20/back-to-school-in-gaza-learning-in-tents-after-years-of-disruption?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ffcfb1a47f",
+ "score": 49.73,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza children resume classes in tent schools after three-year disruption"
+}
