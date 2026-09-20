@@ -6,7 +6,19 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/9/20/netanyahu-tours-tunnels-underneath-al-aqsa-mosque-compound?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/164433/%D9%84%D8%AC%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%85%D8%A9-%D9%81%D9%8A-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86-%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%84%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D9%82-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1-%D8%B3%D8%A7%D9%81%D8%B1-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%85%D8%A9-%D9%85%D9%82%D8%AF%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%D9%8A%D9%86",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-minister-ben-gvir-enters-al-aqsa-courtyard-again-amid-tensions",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-20T13:31:25+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "c7a396c5ea",
- "score": 45.79,
+ "score": 45.55,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
