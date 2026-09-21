@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2169098.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/least-53-palestinians-detained-israeli-forces-raid-town-near-jerusalem",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-21T07:55:12+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "71f3474b0a",
- "score": 48.9,
+ "score": 48.51,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

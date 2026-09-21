@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/israeli-attacks-kill-three-palestinians-injure-21-in-gaza-over-24-hours",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/israeli-strikes-kill-three-people-gaza-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-20T21:21:40+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "2af48e78a9",
- "score": 55.57,
+ "score": 55.18,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
