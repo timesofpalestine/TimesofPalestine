@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/israeli-attacks-kill-three-palestinians-injure-21-in-gaza-over-24-hours",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/global-development/ng-interactive/2026/sep/21/alaa-gaza-day-in-life-pregnant-woman-alaa",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-20T21:21:40+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "2af48e78a9",
- "score": 54.59,
+ "score": 54.37,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
