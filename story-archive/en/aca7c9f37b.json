@@ -13,12 +13,6 @@
    "name": "IMEMC News",
    "url": "https://imemc.org/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/palestinian-gunman-shoots-dead-israeli-west-bank-soldiers-kill-motorist",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-09-21T12:31:10+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "aca7c9f37b",
- "score": 61.8,
+ "score": 61.43,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

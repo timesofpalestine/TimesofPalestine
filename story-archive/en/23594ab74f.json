@@ -13,6 +13,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/colonizers-injure-four-palestinians-as-israeli-attacks-escalate",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-21T12:32:43+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "23594ab74f",
- "score": 61.82,
+ "score": 61.44,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
