@@ -1,0 +1,45 @@
+{
+ "brief": "The government media office in Gaza held Israeli forces responsible for the deaths of at least 21 Palestinians in the recent collapse of the \"Happiness Building,\" Shehab Wire reported. The office said the structure had sustained direct bombardment from the Israeli military during the first half of the year.\n\nThe collapse killed more than 21 people and wounded dozens of civilians, according to the statement.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.com/post/164450/%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A-%D9%8A%D8%AD%D9%85-%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D8%A7%D9%84%D8%A3%D8%AF%D9%84%D8%A9-%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9-%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%A7%D8%AF-21-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A-%D8%A7-%D9%81%D9%8A-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-attacks-kill-three-palestinians-injure-21-in-gaza-over-24-hours",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israeli-strikes-kill-three-people-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-21T06:45:00+00:00",
+ "dek": "The government media office in Gaza held Israeli forces responsible for the deaths of at least 21 Palestinians in the recent collapse of the \"Happiness Building,\" Shehab Wire reported.",
+ "dup_of": null,
+ "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/aGKUh.jpg?v=1",
+ "lang": "en",
+ "link": "https://shehabnews.com/post/164450/%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A-%D9%8A%D8%AD%D9%85-%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D8%A7%D9%84%D8%A3%D8%AF%D9%84%D8%A9-%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9-%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%A7%D8%AF-21-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A-%D8%A7-%D9%81%D9%8A-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Shehab Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.com/post/164450/%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A-%D9%8A%D8%AD%D9%85-%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D8%A7%D9%84%D8%A3%D8%AF%D9%84%D8%A9-%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9-%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%A7%D8%AF-21-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A-%D8%A7-%D9%81%D9%8A-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D8%A7%D8%AF%D8%A9"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e52c9db310",
+ "score": 63.95,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "Gaza government blames occupation for deaths in building collapse"
+}
