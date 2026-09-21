@@ -13,12 +13,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-west-bank-shooting-suspects-hometown-besiege-mosque",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-09-20T19:02:50+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "c2c86e8b95",
- "score": 59.5,
+ "score": 59.35,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
