@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces imposed a comprehensive closure and strict restrictions on Jerusalem's Old City, blocking access to the al-Aqsa Mosque compound and preventing media coverage of events unfolding at the sacred site, Maan Wire reported.\n\nThe measure restricted movement throughout the area and cut off information flows about activities taking place inside the mosque compound. The timing and stated rationale for the restrictions were not immediately disclosed.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169108.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-21T09:02:22+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169108.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cc31af58ed",
+ "score": 48.96,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel imposes lockdown and blackout on al-Aqsa Mosque compound in Jerusalem"
+}
