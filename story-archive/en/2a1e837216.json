@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces fired gunshots in displacement camps in southern Gaza, the Ma'an news agency reported. The incident wounded several people sheltering in the makeshift settlements as fighting continues across the territory.\n\nCrossings into and out of Gaza remained closed, compounding the humanitarian crisis facing the displaced population. The closure prevents the delivery of aid and restricts movement for civilians seeking shelter or medical care.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169089.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-21T08:03:20+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169089.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2a1e837216",
+ "score": 49.28,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gunfire wounds displace people in southern Gaza camps"
+}

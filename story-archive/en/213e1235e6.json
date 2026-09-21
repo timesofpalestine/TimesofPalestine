@@ -1,0 +1,33 @@
+{
+ "brief": "Turkey has referred 211 suspects to the judiciary in connection with a fraud case tied to Israel, the Ma'an news agency reported. Details of the allegations and the nature of the suspected fraudulent activity were not immediately disclosed.\n\nThe referrals represent one of the largest fraud cases Turkey has pursued involving such a large defendant pool connected to Israel-related matters.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169107.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-21T08:56:37+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169107.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "213e1235e6",
+ "score": 34.9,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Turkey refers 211 suspects to court in Israel-linked fraud case"
+}
