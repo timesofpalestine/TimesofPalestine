@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces raided the village of Kafr Al-Dik in Salfit on Wednesday, the Ma'an news agency reported. Troops arrested two young men during the operation and conducted searches of multiple homes.\n\nDetails of the arrests and the scope of the raids were not immediately clarified. The incursion was part of ongoing Israeli military operations across the occupied West Bank.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169118.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-21T11:51:50+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169118.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5738955361",
+ "score": 48.59,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces raid Kafr Al-Dik, arrest two Palestinians"
+}
