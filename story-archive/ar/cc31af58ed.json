@@ -7,12 +7,18 @@
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/AlQastalps/395047",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": false
   }
  ],
  "date": "2026-09-21T09:02:22+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-westbank-b-ar.svg",
+ "image": "/media/times-of-palestine-cover-westbank-ar.svg",
  "lang": "ar",
  "link": "https://www.maannews.net/news/2169108.html",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "cc31af58ed",
- "score": 44.15,
+ "score": 43.84,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
