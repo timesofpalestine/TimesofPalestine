@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-climbs-73914-four-more-palestinians-killed-israeli",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.theguardian.com/global-development/ng-interactive/2026/sep/21/alaa-gaza-day-in-life-pregnant-woman-alaa",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "2af48e78a9",
- "score": 54.37,
+ "score": 54.02,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
