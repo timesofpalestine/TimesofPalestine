@@ -1,23 +1,23 @@
 {
- "brief": "Israeli occupation forces installed metal gates at entrances to several villages, towns and intersections in Jenin governorate on Monday, Shehab Wire reported. Local sources told the Wafa news agency that the barriers were placed at access points including al-Jalmeh and other locations across the northern West Bank district.\n\nThe installation appears part of ongoing Israeli military operations restricting movement in Palestinian areas. Details of the full scope and stated purpose of the gate placements were not immediately available.",
+ "brief": "ثبّتت قوات الاحتلال الإسرائيلي بوابات حديدية عند مداخل عدد من القرى والبلدات والمفترقات في محافظة جنين، اليوم الاثنين، بحسب وكالة شهاب. وأفادت مصادر محلية أن البوابات وُضعت على مداخل قرية الجلمة وعدد من المناطق الأخرى بالمحافظة.\n\nيندرج الإجراء ضمن السياسات الأمنية التي تفرضها قوات الاحتلال على حركة الفلسطينيين في الضفة الغربية، إذ تزيد من القيود المفروضة على التنقل بين المناطق المختلفة.",
  "cat": "westbank",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/164473/%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D8%B6%D8%B9-%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA-%D8%AD%D8%AF%D9%8A%D8%AF%D9%8A%D8%A9-%D8%B9%D9%86%D8%AF-%D9%85%D8%AF%D8%A7%D8%AE%D9%84-%D9%82%D8%B1%D9%89-%D9%88%D8%A8%D9%84%D8%AF%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%AC%D9%86%D9%8A%D9%86",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-09-21T15:44:00+00:00",
- "dek": "Israeli occupation forces installed metal gates at entrances to several villages, towns and intersections in Jenin governorate on Monday, Shehab Wire reported.",
+ "dek": "قوات الاحتلال الإسرائيلي، اليوم الاثنين، بتركيب بوابات حديدية عند مداخل عدد من القرى والبلدات والمفترقات في محافظة جنين. وأفادت مصادر محلية لـ\"وفا\"، بأن قوات الاحتلال تضع بوابات عند مداخل الجلمة،…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/e2SMv.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/164473/%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D8%B6%D8%B9-%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA-%D8%AD%D8%AF%D9%8A%D8%AF%D9%8A%D8%A9-%D8%B9%D9%86%D8%AF-%D9%85%D8%AF%D8%A7%D8%AE%D9%84-%D9%82%D8%B1%D9%89-%D9%88%D8%A8%D9%84%D8%AF%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%AC%D9%86%D9%8A%D9%86",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/164473/%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D8%B6%D8%B9-%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA-%D8%AD%D8%AF%D9%8A%D8%AF%D9%8A%D8%A9-%D8%B9%D9%86%D8%AF-%D9%85%D8%AF%D8%A7%D8%AE%D9%84-%D9%82%D8%B1%D9%89-%D9%88%D8%A8%D9%84%D8%AF%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%AC%D9%86%D9%8A%D9%86"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "ca73fbfaf2",
- "score": 47.66,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 47.63,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Israeli forces install metal gates at entrances to Jenin villages"
+ "title": "الاحتلال يثبت بوابات حديدية على مداخل قرى جنين"
 }
