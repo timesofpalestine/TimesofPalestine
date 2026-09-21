@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli forces arrested at least 53 young men during raids in the occupied West Bank town of Biddu, Al Jazeera English reported. The arrests left the town under lockdown, with schools and businesses forced to shut their doors.\n\nThe detained Palestinians remain held in Biddu following the military operation. No further details were provided about the charges or stated reasons for the arrests.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/21/israeli-forces-arrest-dozens-of-palestinians-in-occupied-west-bank-raid?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/least-53-palestinians-detained-israeli-forces-raid-town-near-jerusalem",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-forces-kill-palestinian-injure-another-near-jenin",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/palestinian-gunman-shoots-dead-israeli-west-bank-soldiers-kill-motorist",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-21T12:31:10+00:00",
+ "dek": "At least 53 young men are being held in Biddu after raids left the town in lockdown, with schools and businesses shut.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-09-21T095158Z_873103297_RC2LNNAS8024_RTRMADP_3_ISRAEL-PALESTINIANS-WEST-BANK-RAID-1789984975.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/21/israeli-forces-arrest-dozens-of-palestinians-in-occupied-west-bank-raid?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/21/israeli-forces-arrest-dozens-of-palestinians-in-occupied-west-bank-raid?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "aca7c9f37b",
+ "score": 62.53,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces arrest 53 Palestinians in West Bank town raid"
+}
