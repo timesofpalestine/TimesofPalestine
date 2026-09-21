@@ -1,23 +1,23 @@
 {
- "brief": "A secret internal investigation has been opened at the \"Peace Council\" following complaints of embezzlement, financial misconduct, and misallocation of funds designated for Gaza, Shehab Wire reported. The probe was initiated after receiving reports alleging improper handling of resources linked to administration of the Gaza sector.\n\nDetails of the investigation's scope and timeline remain unclear. The allegations encompass suspected theft, financial malfeasance, and diversion of allocated funds.",
+ "brief": "كشفت شبكة EuroBrief News عن فتح تحقيق داخلي سري في \"مجلس السلام\" على خلفية بلاغات بشأن اختلاس وسوء تصرف مالي. يستهدف التحقيق أموالاً مخصصة لإدارة قطاع غزة، وفقاً لما أفادت المصادر.\n\nيجري التحقيق بسرية تامة دون الكشف عن تفاصيله أو أسماء المتورطين فيه حتى الآن. تشير البلاغات الموجهة للجهات المختصة إلى شبهات في إساءة تخصيص الموارد المالية المرصودة للعمليات في القطاع.",
  "cat": "accountability",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/164479/%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%AF%D8%A7%D8%AE%D9%84%D9%8A-%D8%B3%D8%B1%D9%8A-%D9%81%D9%8A-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D8%A8%D8%B4%D8%A3%D9%86-%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D9%81%D8%B3%D8%A7%D8%AF-%D9%88%D9%87%D8%AF%D8%B1-%D8%A3%D9%85%D9%88%D8%A7%D9%84-%D9%85%D8%AE%D8%B5%D8%B5%D8%A9-%D9%84%D8%BA%D8%B2%D8%A9",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-09-21T19:20:00+00:00",
- "dek": "A secret internal investigation has been opened at the \"Peace Council\" following complaints of embezzlement, financial misconduct, and misallocation of funds designated for Gaza, Shehab Wire reported.",
+ "dek": "كشفت شبكة (EuroBrief News) الإعلامية عن فتح تحقيق داخلي سري داخل \"مجلس السلام\"، على خلفية تلقي بلاغات تفيد بوجود شبهات اختلاس، وسوء سلوك مالي، وإساءة تخصيص للأموال المرتبطة بإدارة قطاع غزة.",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/Y7Teq.webp?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/164479/%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%AF%D8%A7%D8%AE%D9%84%D9%8A-%D8%B3%D8%B1%D9%8A-%D9%81%D9%8A-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D8%A8%D8%B4%D8%A3%D9%86-%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D9%81%D8%B3%D8%A7%D8%AF-%D9%88%D9%87%D8%AF%D8%B1-%D8%A3%D9%85%D9%88%D8%A7%D9%84-%D9%85%D8%AE%D8%B5%D8%B5%D8%A9-%D9%84%D8%BA%D8%B2%D8%A9",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/164479/%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D8%AA%D8%AD%D9%82%D9%8A%D9%82-%D8%AF%D8%A7%D8%AE%D9%84%D9%8A-%D8%B3%D8%B1%D9%8A-%D9%81%D9%8A-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D8%A8%D8%B4%D8%A3%D9%86-%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D9%81%D8%B3%D8%A7%D8%AF-%D9%88%D9%87%D8%AF%D8%B1-%D8%A3%D9%85%D9%88%D8%A7%D9%84-%D9%85%D8%AE%D8%B5%D8%B5%D8%A9-%D9%84%D8%BA%D8%B2%D8%A9"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "0d25f34b3f",
- "score": 78.71,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 78.68,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Peace Council opens secret inquiry into Gaza fund misuse allegations"
+ "title": "تحقيق سري في \"مجلس السلام\" حول اختلاس أموال غزة"
 }
