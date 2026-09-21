@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation authorities are intensifying restrictions on towns in and around Jerusalem, according to the Ma'an news agency. The measures include heightened checkpoints, increased inspections, and movement controls affecting Palestinian residents and access to the city.\n\nThe escalation comes amid ongoing tensions in the occupied territories, with Palestinian communities reporting disruptions to daily life and commerce as a result of the tightened security measures.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169098.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-21T07:55:12+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169098.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "71f3474b0a",
+ "score": 49.49,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces tighten restrictions on Jerusalem towns"
+}
