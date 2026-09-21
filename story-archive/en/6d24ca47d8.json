@@ -19,12 +19,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-set-palestinian-vehicle-alight-try-seize-child-west",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-09-21T06:09:00+00:00",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "6d24ca47d8",
- "score": 63.53,
+ "score": 63.28,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
