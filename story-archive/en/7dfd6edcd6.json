@@ -6,13 +6,7 @@
    "article": "https://shehabnews.com/post/164480/%D8%AE%D8%A7%D8%B5-%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D9%85%D9%82%D8%AA%D8%AD%D9%85%D9%8A%D9%86-%D9%84%D9%84%D8%A3%D9%82%D8%B5%D9%89-%D9%81%D9%8A-%D8%B9%D8%AF%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D8%BA%D9%81%D8%B1%D8%A7%D9%86-%D8%AA%D9%83%D8%B4%D9%81-%D8%A3%D8%B6%D8%AE%D9%85-%D9%87%D8%AC%D9%88%D9%85-%D9%85%D9%86%D8%B0-%D8%B9%D8%A7%D9%85-1967",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-tours-tunnels-beneath-al-aqsa-ben-gvir-raids-jerusalem-holy",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-21T18:48:00+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "7dfd6edcd6",
- "score": 49.54,
+ "score": 49.23,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
