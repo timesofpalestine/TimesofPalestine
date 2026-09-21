@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/israeli-forces-kill-palestinian-injure-another-near-jenin",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/palestinian-gunman-shoots-dead-israeli-west-bank-soldiers-kill-motorist",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-20T19:02:50+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "c2c86e8b95",
- "score": 51.83,
+ "score": 47.89,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
