@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/global-development/ng-interactive/2026/sep/21/alaa-gaza-day-in-life-pregnant-woman-alaa",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-attacks-kill-three-palestinians-injure-21-in-gaza-over-24-hours",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-21T11:00:23+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "66f7edcd00",
- "score": 53.86,
+ "score": 53.5,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

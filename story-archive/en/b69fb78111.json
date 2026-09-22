@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/world/2026/sep/21/inquest-british-aid-workers-killed-gaza-call-on-israeli-uk-military-chiefs",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/woman-and-child-among-three-killed-by-israeli-forces-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-21T18:49:55+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b69fb78111",
- "score": 59.29,
+ "score": 58.94,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
