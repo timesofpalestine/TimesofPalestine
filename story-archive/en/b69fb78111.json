@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/world/2026/sep/21/inquest-british-aid-workers-killed-gaza-call-on-israeli-uk-military-chiefs",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israeli-and-uk-military-chiefs-may-take-part-inquest-murdering-british-aid-workers-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-21T18:49:55+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b69fb78111",
- "score": 52.02,
+ "score": 51.8,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
