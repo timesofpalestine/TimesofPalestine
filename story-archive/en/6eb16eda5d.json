@@ -1,0 +1,51 @@
+{
+ "brief": "Jason Eaton was found guilty of attempted second-degree murder for shooting three Palestinian college students in Vermont, Al Jazeera English reported. The conviction carries a potential sentence of up to 20 years in prison.\n\nThe shooting occurred in November 2023 and wounded all three students. The case generated significant public attention as authorities investigated it as a hate crime targeting the Palestinian community.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/22/aje-onl-nf_us-man-who-shot-three-palestinians-guilty-220926?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/man-convicted-attempted-murder-shooting-three-palestinian-students-vermont",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/vermont-man-found-guilty-shooting-three-palestinian-students-2023",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/us-news/2026/sep/21/vermont-man-guilty-attempted-murder-palestinian-students",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-22T06:16:54+00:00",
+ "dek": "Jason Eaton was found guilty of attempted second-degree murder for the shooting of three Palestinian college students.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790057808.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/22/aje-onl-nf_us-man-who-shot-three-palestinians-guilty-220926?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/22/aje-onl-nf_us-man-who-shot-three-palestinians-guilty-220926?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6eb16eda5d",
+ "score": 48.68,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Vermont man convicted of attempted murder in Palestinian students' shooting"
+}
