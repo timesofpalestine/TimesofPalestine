@@ -6,13 +6,7 @@
    "article": "https://zeteo.com/p/this-week-in-palestine-gaza-building",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": true
-  },
-  {
-   "article": "https://pchrgaza.org/21-killed-including-12-children-and-5-women-as-war-damaged-residential-building-collapses-in-gaza-around-2000-damaged-inhabited-buildings-at-imminent-risk-of-similar-collapse",
-   "name": "Palestinian Centre for Human Rights",
-   "url": "https://pchrgaza.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-19T17:01:03+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "0ce2f09dda",
- "score": 24.34,
+ "score": 24.0,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
