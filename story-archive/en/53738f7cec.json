@@ -1,0 +1,33 @@
+{
+ "brief": "Speaking at the UN General Assembly, US President Donald Trump claimed he helped end the war in Gaza, Al Jazeera English reported. Trump stated it was his \"honour to settle eight wars,\" listing Gaza among them without providing specifics about his role or timeline.\n\nThe assertion comes as fighting continues in Gaza, where an Israeli military campaign began after Hamas's October 7, 2023 attack. Hundreds of thousands of Palestinians remain displaced, and aid organisations describe severe humanitarian conditions across the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/22/trump-my-honour-to-settle-eight-wars-including-war-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-22T16:18:48+00:00",
+ "dek": "Speaking at the UN General Assembly, US President Donald Trump claimed he helped end the war in Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/Screenshot-2026-09-22-at-17.16.58-1790093871.png?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/22/trump-my-honour-to-settle-eight-wars-including-war-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/22/trump-my-honour-to-settle-eight-wars-including-war-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "53738f7cec",
+ "score": 79.65,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Trump claims credit for ending Gaza war at UN"
+}
