@@ -1,0 +1,33 @@
+{
+ "brief": "Al Jazeera surveyed public opinion in Bangladesh, Gaza and Nigeria on whether the United Nations can stop wars, ahead of the UN General Assembly meeting in 2026. The interviews sought views on the organization's effectiveness in resolving global conflicts amid ongoing crises in those regions.\n\nThe reporting captured perspectives from residents of countries experiencing active conflict or instability, reflecting broader skepticism about international institutions' capacity to prevent or end wars.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/22/unga-2026-can-the-un-stop-wars?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-22T15:49:12+00:00",
+ "dek": "Al Jazeera asked people in Bangladesh, Gaza and Nigeria what they think of the UN’s role in resolving conflicts.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790092028.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/22/unga-2026-can-the-un-stop-wars?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/22/unga-2026-can-the-un-stop-wars?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "17ee3df76d",
+ "score": 49.89,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN's conflict role questioned in Gaza, Bangladesh, Nigeria"
+}
