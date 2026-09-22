@@ -1,0 +1,33 @@
+{
+ "brief": "A 12-year-old boy working in Gaza expressed fear that airstrikes could target the café where he is employed or strike him directly, The Guardian reported. The account forms part of a series following ordinary Palestinians through their daily lives as the war enters its fourth year.\n\nThe Guardian's reporting documents the cumulative strain of prolonged conflict on civilians across Gaza, with five individuals sharing how the threat of violence shapes their routines and decisions during ordinary activities.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/global-development/ng-interactive/2026/sep/22/im-afraid-theyll-bomb-the-cafe-where-i-work-or-bomb-me-a-day-in-the-life-of-a-12-year-old-boy-in-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-22T11:00:53+00:00",
+ "dek": "This week, as the war in Gaza approaches its fourth year, the Guardian follows five ordinary Palestinians as they go about their lives. Each tells the story of their day, revealing the terrible toll of the conflict.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/5b0c45132c64179a6f8607d0af21b3b569983f97/0_306_1440_1152/master/1440.png?width=140&quality=85&auto=format&fit=max&s=2db94be6ac19dce6750ac14cd7ef1168",
+ "lang": "en",
+ "link": "https://www.theguardian.com/global-development/ng-interactive/2026/sep/22/im-afraid-theyll-bomb-the-cafe-where-i-work-or-bomb-me-a-day-in-the-life-of-a-12-year-old-boy-in-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/global-development/ng-interactive/2026/sep/22/im-afraid-theyll-bomb-the-cafe-where-i-work-or-bomb-me-a-day-in-the-life-of-a-12-year-old-boy-in-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a3439072af",
+ "score": 63.82,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Twelve-year-old Gaza boy fears bombing at his workplace"
+}
