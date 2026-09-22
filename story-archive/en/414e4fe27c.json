@@ -1,0 +1,33 @@
+{
+ "brief": "Federal authorities are investigating whether Binance, the world's largest cryptocurrency exchange, violated US sanctions imposed on Iran, Bitcoin Magazine reported. The probe centers on whether the exchange facilitated Bitcoin transactions involving Iranian entities or individuals subject to American sanctions restrictions.\n\nDetails of the investigation's scope and timeline remain unclear. Binance has faced previous regulatory scrutiny from US authorities over anti-money laundering compliance and sanctions enforcement across its platform.",
+ "cat": "bitcoin",
+ "corroborating_sources": [
+  {
+   "article": "https://bitcoinmagazine.com/news/feds-probing-iran-use-of-binance",
+   "name": "Bitcoin Magazine",
+   "url": "https://bitcoinmagazine.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-22T16:52:26+00:00",
+ "dek": "Bitcoin Magazine Feds Probing Binance Over Iran’s Bitcoin Use: Report Feds are trying to work out whether Binance violated US sanctions on Iran.",
+ "dup_of": null,
+ "image": "https://bitcoinmagazine.com/wp-content/uploads/2026/09/Pics-1-10.jpg",
+ "lang": "en",
+ "link": "https://bitcoinmagazine.com/news/feds-probing-iran-use-of-binance",
+ "max_age_hours": 336,
+ "media": {
+  "credit": "Bitcoin Magazine",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://bitcoinmagazine.com/news/feds-probing-iran-use-of-binance"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "414e4fe27c",
+ "score": 79.96,
+ "source": "Bitcoin Magazine",
+ "source_id": "btcmag",
+ "source_url": "https://bitcoinmagazine.com/",
+ "title": "Federal authorities investigate Binance over Iran sanctions violations"
+}
