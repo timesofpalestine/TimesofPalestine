@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces raided the town of Kafr Haris north of Salfit, the Ma'an news agency reported. Details of the operation, including the scale of the incursion and any casualties or arrests, were not immediately available.\n\nThe raid marks the latest military operation in the northern West Bank locality, an area that has seen repeated Israeli military activity in recent months.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/36913",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-21T18:26:38+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/UeZMegHmDkwcbO4E6K_inLWtuAnfy5cJumZWy0HjTkI80KWhF40qVOpJIuEpPVKCLXIurcX6zfg0P2E-Wg1B1nFWfhqMyc5zmqb3ZcUl0DiZxzNHlel9vZTfVij8zKJUGgdx89dv4naozM26NytijLDOtmds24rJpSTytPvOlSHSd1Tjl30yeMjDBd2dDdA3nog2ZZJozlBbj6QTgdU9fWGg5znWxui-94OjNftMULkaj7N4usWs1WWr0ZkHQWxePuDQq9Ljggq-GGmQGcADL1rMnBzbV6z9LgSFEV_E37plzL2Dc442jn-fV1lmtHSwuaBIDXWqCN7NZLBJyD_9ug",
+ "lang": "en",
+ "link": "https://t.me/maannews/36913",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/36913"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1a5e27693f",
+ "score": 38.64,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces raid Kafr Haris town north of Salfit"
+}
