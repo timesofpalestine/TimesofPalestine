@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces carried out violations of the ceasefire agreement in Gaza on Tuesday, IMEMC News reported. The military conducted airstrikes, artillery shelling, and gunfire across the territory while demolishing homes and residential buildings.\n\nThe reported violations occurred as the ceasefire remained in effect, though details on specific locations, casualty figures, and the scale of the demolitions were not immediately available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israel-carries-out-new-ceasefire-violations-across-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-22T09:17:20+00:00",
+ "dek": "Israeli occupation forces carried out new violations of the “ceasefire” agreement in the Gaza Strip on Tuesday, including airstrikes, artillery shelling, gunfire, and the demolition of homes and residential buildings.",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/bombingaza-e1790066798954.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israel-carries-out-new-ceasefire-violations-across-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/israel-carries-out-new-ceasefire-violations-across-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f98450dc2d",
+ "score": 62.3,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israel strikes Gaza despite ceasefire agreement"
+}
