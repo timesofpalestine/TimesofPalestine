@@ -12,13 +12,7 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/jordans-king-tells-un-israels-expansionist-appetite-regional-threat",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/netanyahu-says-will-tell-truth-israels-actions-united-nations",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-22T16:35:14+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "c35c2bdf58",
- "score": 78.66,
+ "score": 78.43,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
