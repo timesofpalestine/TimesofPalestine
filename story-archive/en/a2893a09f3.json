@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli soldiers invaded multiple communities across the occupied West Bank on Tuesday, breaking into homes and abducting several Palestinians, IMEMC News reported. The military operations included the imposition of roadblocks and the confiscation of water tankers from residents.\n\nThe raids occurred across multiple locations in the territory, though specific communities and the number of those detained were not detailed in initial reports.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/soldiers-invade-west-bank-communities-abduct-palestinians",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-22T06:36:00+00:00",
+ "dek": "Israeli forces invaded communities across the occupied West Bank on Tuesday, breaking into homes, abducting several Palestinians, imposing military roadblocks, and confiscating water tankers.",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/damagedoors.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/soldiers-invade-west-bank-communities-abduct-palestinians",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/soldiers-invade-west-bank-communities-abduct-palestinians"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a2893a09f3",
+ "score": 69.79,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli forces abduct Palestinians during West Bank raids"
+}
