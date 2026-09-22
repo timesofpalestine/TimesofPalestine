@@ -1,0 +1,33 @@
+{
+ "brief": "UN Secretary-General António Guterres condemned the killing in Gaza during his final address to the General Assembly, Al Jazeera English reported. Speaking before the body, Guterres criticized the destruction wrought by the conflict and called out Israeli settlement expansion in the West Bank.\n\nThe remarks marked a notable moment in Guterres's tenure as he prepares to leave office. His condemnation addressed two longstanding points of contention in Israeli-Palestinian relations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/22/un-chief-condemns-gaza-destruction-west-bank-settlements?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-22T14:37:24+00:00",
+ "dek": "In his final UN General Assembly address as secretary-general, Antonio Guterres condemned the killing in Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/Screenshot-2026-09-22-at-15.31.15-1790087597.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/22/un-chief-condemns-gaza-destruction-west-bank-settlements?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/22/un-chief-condemns-gaza-destruction-west-bank-settlements?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1bcd001785",
+ "score": 63.64,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN chief condemns Gaza destruction and West Bank settlements"
+}
