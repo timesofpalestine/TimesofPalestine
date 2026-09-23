@@ -1,0 +1,33 @@
+{
+ "brief": "The Palestinian president stressed during a high-level video meeting in New York that next year must mark the end of the occupation, the Ma'an wire agency reported. He made the remarks via Zoom as part of elevated-level discussions held in the American city.\n\nThe demand reflects Palestinian leadership's push for statehood and territorial sovereignty as talks and international engagement continue.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169219.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-23T09:45:34+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169219.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "675c05c88a",
+ "score": 49.91,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Palestinian president demands end to occupation within year"
+}
