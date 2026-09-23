@@ -1,0 +1,39 @@
+{
+ "brief": "UK Prime Minister Andy Burnham condemned Israel's military campaign in Gaza and reaffirmed Britain's position against illegal Israeli settlements, Al Jazeera English reported. Burnham said the UK would not \"stand by\" while Palestinians suffered, citing this rationale for the government's sanctions against settlements deemed illegal under international law.\n\nThe Prime Minister's comments represent a hardening of the UK's public stance toward Israeli military operations and settlement expansion in occupied Palestinian territory. Britain has previously imposed sanctions targeting individuals and entities connected to settlement activity in the West Bank.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/23/uk-prime-minister-vows-not-to-stand-by-as-palestinians-suffer?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/burnham-gaza-violence-settlements-pushing-two-state-solution-point-no",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-23T02:24:01+00:00",
+ "dek": "UK PM Burnham condemned Israel’s war on Gaza, and explains why the UK sanctioned illegal Israeli settlements.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790130216.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/uk-prime-minister-vows-not-to-stand-by-as-palestinians-suffer?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/23/uk-prime-minister-vows-not-to-stand-by-as-palestinians-suffer?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b8544ea6a5",
+ "score": 79.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UK Prime Minister condemns Israel's Gaza war, sanctions settlements"
+}
