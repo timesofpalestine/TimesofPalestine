@@ -1,0 +1,33 @@
+{
+ "brief": "World leaders condemned Israel at the United Nations, according to Al Jazeera English, as Palestinians protested restrictions on prison visits while settler attacks continued across the occupied West Bank.\n\nPalestinians demonstrated against Israel's ban on prison visits, which prevented families from accessing detained relatives. The protests coincided with a surge in violence by Israeli settlers targeting Palestinian communities in the territory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/23/jerusalem-daily-world-leaders-condemn-israel-at-un?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-23T17:35:55+00:00",
+ "dek": "Palestinians protest Israel’s prison visit bans as settler pogroms continue across the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/clean-1790184760.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/jerusalem-daily-world-leaders-condemn-israel-at-un?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/23/jerusalem-daily-world-leaders-condemn-israel-at-un?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2bd6b0b2cf",
+ "score": 49.41,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "World leaders condemn Israel at UN over West Bank violence"
+}
