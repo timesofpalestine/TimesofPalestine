@@ -1,0 +1,39 @@
+{
+ "brief": "An Israeli drone attacked residents in the Tuffah neighborhood northeast of Gaza City on Tuesday evening, killing three Palestinians and injuring several others, IMEMC News reported. The strike occurred amid what the outlet described as ongoing Israeli violations of the ceasefire agreement.\n\nThe incident marked another casualty event during the fragile pause in hostilities between Israel and Gaza-based armed groups.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/amid-ceasefire-violations-israel-kills-three-palestinians-in-gaza",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinians-killed-others-injured-israeli-airstrikes-gaza-city",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-22T22:11:24+00:00",
+ "dek": "Three Palestinians were killed and several others injured on Tuesday evening when an Israeli drone attacked residents in the Tuffah neighborhood, northeast of Gaza City, amid ongoing Israeli violations of the “ceasefire” agreement.",
+ "dup_of": null,
+ "image": "https://imemc.org/wp-content/uploads/2026/09/Screenshot-2026-09-22-150309-e1790114735908.jpg",
+ "lang": "en",
+ "link": "https://imemc.org/article/amid-ceasefire-violations-israel-kills-three-palestinians-in-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "IMEMC News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://imemc.org/article/amid-ceasefire-violations-israel-kills-three-palestinians-in-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bc3be8a28c",
+ "score": 62.93,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli drone strike kills three Palestinians in Gaza City neighborhood"
+}
