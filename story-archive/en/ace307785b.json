@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli settlers are planning to obstruct the Palestinian olive harvest season, according to Ma'an news agency. The disruption campaign targets a critical period for Palestinian farmers, particularly in the occupied West Bank where olive cultivation represents a major agricultural and economic activity.\n\nPalestinian communities have faced repeated settler interference during harvest seasons in past years, ranging from tree cutting to blocking access to groves and harassment of farmers conducting seasonal work on their land.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169204.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/colonizers-attack-west-bank-towns-steal-livestock",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-23T06:18:52+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169204.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ace307785b",
+ "score": 49.84,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settlers plan disruption of Palestinian olive harvest season"
+}
