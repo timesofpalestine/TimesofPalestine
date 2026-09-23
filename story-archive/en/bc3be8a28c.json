@@ -6,13 +6,7 @@
    "article": "https://imemc.org/article/amid-ceasefire-violations-israel-kills-three-palestinians-in-gaza",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinians-killed-gaza-settlers-raze-olive-trees-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-22T22:11:24+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "bc3be8a28c",
- "score": 53.72,
+ "score": 53.4,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
