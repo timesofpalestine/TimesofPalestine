@@ -6,7 +6,13 @@
    "article": "https://imemc.org/article/west-bank-invasions-and-violations-on-tuesday",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-shoot-dead-palestinian-west-ramallah",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-22T23:05:21+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4063580dac",
- "score": 36.22,
+ "score": 36.05,
  "source": "IMEMC News",
  "source_id": "imemc",
  "source_url": "https://imemc.org/",
