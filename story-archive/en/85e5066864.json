@@ -1,0 +1,39 @@
+{
+ "brief": "A group of US lawmakers is seeking sanctions against Israel over its E1 settlement project in the West Bank, Al Jazeera English reported. The initiative has drawn widespread international condemnation, with critics warning it would effectively divide Palestinian territory into two separate zones.\n\nThe E1 plan encompasses a large area of Israeli-controlled territory between Jerusalem and the Jordan Valley. Proponents of the sanctions argue the project would severely restrict Palestinian movement and territorial contiguity, undermining prospects for a two-state solution.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/23/us-lawmakers-seek-sanctions-for-israels-e1-west-bank-settlement-plan?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/politics/2026/sep/22/mps-uk-banks-investment-israeli-settlement-trade-ban",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-23T18:48:26+00:00",
+ "dek": "Project would effectively cleave Palestinian territory in half and has prompted widespread international condemnation.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2021/04/2021-04-07T152357Z_826449213_RC23RM9EP635_RTRMADP_3_USA-BIDEN-INFRASTRUCTURE-COONS.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/23/us-lawmakers-seek-sanctions-for-israels-e1-west-bank-settlement-plan?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/23/us-lawmakers-seek-sanctions-for-israels-e1-west-bank-settlement-plan?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "85e5066864",
+ "score": 49.38,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "US lawmakers push sanctions over Israel's E1 settlement plan"
+}
