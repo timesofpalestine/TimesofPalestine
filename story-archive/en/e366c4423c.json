@@ -13,6 +13,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/jared-kushner-admits-delays-245bn-starter-plan-gaza-unveiled",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-23T09:51:24+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "e366c4423c",
- "score": 42.56,
+ "score": 42.19,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
