@@ -6,13 +6,7 @@
    "article": "https://www.maannews.net/news/2169231.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/news/2026/9/23/board-of-peace-plans-2-4bn-gaza-reconstruction-as-israel-kills-seven?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-23T09:51:24+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "e366c4423c",
- "score": 40.73,
+ "score": 40.48,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
