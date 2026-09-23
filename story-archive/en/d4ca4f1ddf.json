@@ -1,0 +1,33 @@
+{
+ "brief": "Nasser Nasser announced that Jordan has authorized Jordanian trucks to load Palestinian merchandise, the Ma'an news agency reported. The move expands transport capacity for goods moving across the border.\n\nThe decision comes as part of ongoing efforts to facilitate trade and commercial movement between Palestine and Jordan, allowing vehicles registered in the kingdom to carry Palestinian products in addition to their existing operations.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169239.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-23T11:45:21+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169239.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d4ca4f1ddf",
+ "score": 47.83,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Jordan permits Jordanian trucks to carry Palestinian goods"
+}
