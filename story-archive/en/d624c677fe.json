@@ -1,0 +1,39 @@
+{
+ "brief": "Israel conducted an airstrike in Gaza on Wednesday that killed at least two Palestinians, according to local health officials, Al-Monitor reported. The Israeli military said the strike targeted a Hamas finance chief.\n\nThe airstrike struck the Gaza Strip as tensions remain high between Israel and Hamas. Details of the targeted individual and the precise location of the strike were not immediately disclosed.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/two-killed-gaza-strike-israel-says-targeted-hamas-finance-chief",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-fire-kills-two-people-gaza-medics-say",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-23T09:46:35+00:00",
+ "dek": "CAIRO, Sept 23 (Reuters) - An Israeli airstrike killed at least two Palestinians in the Gaza Strip on Wednesday, local health officials said, and Israel said the strike targeted a Hamas finance chief.",
+ "dup_of": null,
+ "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-09/2026-09-23T094252Z_1_LYNXMPEM8M0NU_RTROPTP_3_ISRAEL-PALESTINIANS-GAZA.JPG?h=c4842d71&itok=uRiXiDaw",
+ "lang": "en",
+ "link": "https://www.al-monitor.com/originals/2026/09/two-killed-gaza-strike-israel-says-targeted-hamas-finance-chief",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al-Monitor",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.al-monitor.com/originals/2026/09/two-killed-gaza-strike-israel-says-targeted-hamas-finance-chief"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d624c677fe",
+ "score": 62.62,
+ "source": "Al-Monitor",
+ "source_id": "almonitor",
+ "source_url": "https://www.al-monitor.com/",
+ "title": "Israeli airstrike kills two in Gaza targeting Hamas finance chief"
+}
