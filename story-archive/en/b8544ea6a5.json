@@ -12,7 +12,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/burnham-gaza-violence-settlements-pushing-two-state-solution-point-no",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/09/1168401",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-23T02:24:01+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "b8544ea6a5",
- "score": 78.91,
+ "score": 78.57,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
