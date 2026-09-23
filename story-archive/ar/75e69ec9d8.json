@@ -1,23 +1,23 @@
 {
- "brief": "An Israeli military court postponed proceedings in the case of journalist Samia Jawabra from Nablus until 23 February 2027, Shehab Wire reported. The decision came as Jawabra continues under house arrest, a restriction imposed on her for more than three years.\n\nJawabra has appeared before the court in previous hearings as her case remains pending within the Israeli military justice system.",
+ "brief": "أجلت محكمة الاحتلال العسكرية، اليوم، النظر في قضية الصحفية سمية جوابرة من نابلس إلى 23 فبراير 2027، بحسب وكالة شهاب. تستمر السلطات الإسرائيلية في فرض الحبس المنزلي على جوابرة منذ أكثر من ثلاثة أعوام.\n\nلم تُفصح المحكمة عن أسباب التأجيل أو عن مدى قرب البت في الاتهامات الموجهة للصحفية، فيما تعيش جوابرة تحت قيود أمنية مشددة طوال هذه الفترة الممتدة.",
  "cat": "westbank",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/164554/%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D8%A4%D8%AC%D9%84-%D9%82%D8%B6%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%81%D9%8A%D8%A9-%D8%AC%D9%88%D8%A7%D8%A8%D8%B1%D8%A9-%D8%AD%D8%AA%D9%89-%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1-2027",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-09-22T21:38:00+00:00",
- "dek": "An Israeli military court postponed proceedings in the case of journalist Samia Jawabra from Nablus until 23 February 2027, Shehab Wire reported.",
+ "dek": "أجلت محكمة الاحتلال العسكرية، اليوم، البت في قضية الصحفية سمية جوابرة من نابلس حتى تاريخ 23-2-2027، في ظل استمرار الحبس المنزلي المفروض عليها منذ أكثر من ثلاثة أعوام. وكانت جوابرة قد مثلت قبل نحو ش…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/oksfR.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/164554/%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D8%A4%D8%AC%D9%84-%D9%82%D8%B6%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%81%D9%8A%D8%A9-%D8%AC%D9%88%D8%A7%D8%A8%D8%B1%D8%A9-%D8%AD%D8%AA%D9%89-%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1-2027",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/164554/%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA%D8%A4%D8%AC%D9%84-%D9%82%D8%B6%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%81%D9%8A%D8%A9-%D8%AC%D9%88%D8%A7%D8%A8%D8%B1%D8%A9-%D8%AD%D8%AA%D9%89-%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1-2027"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "75e69ec9d8",
- "score": 44.72,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 44.7,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Israeli military court postpones journalist Jawabra case to February 2027"
+ "title": "محكمة الاحتلال تؤجل محاكمة الصحفية جوابرة لفبراير 2027"
 }
