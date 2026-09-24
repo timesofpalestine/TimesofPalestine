@@ -7,9 +7,15 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/do-not-allow-another-nakba-mahmoud-abbas-warns-unga-speech",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
- "date": "2026-09-24T16:07:14+00:00",
+ "date": "2026-09-24T16:43:44+00:00",
  "dek": "Longtime president of Palestinian Authority gave his speech via a pre-recorded video for the second year in a row The Russian foreign minister Sergei ⁠Lavrov has been spotted speaking to officials on the sidelines of the general assembly.",
  "dup_of": null,
  "image": "https://i.guim.co.uk/img/media/fb2119961a2dbac73d5689707620ff675b6bfb73/474_0_4743_3794/master/4743.jpg?width=140&quality=85&auto=format&fit=max&s=315fa5ff2189c6223d151305c309aba1",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "30bb0ea847",
- "score": 79.85,
+ "score": 79.92,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
