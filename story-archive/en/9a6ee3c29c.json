@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/9/24/they-uprooted-it-all-israel-bulldozes-palestinian-owned-olive-groves?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/israeli-bulldozers-smash-palestinian-olive-trees-ahead-annual-harvest",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-24T03:32:28+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "9a6ee3c29c",
- "score": 47.93,
+ "score": 47.68,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

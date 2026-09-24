@@ -1,0 +1,39 @@
+{
+ "brief": "The United Nations has unveiled a $2.45 billion reconstruction plan for Gaza covering housing, healthcare, and telecommunications infrastructure, Al Jazeera English reported. The proposal addresses immediate recovery needs across multiple sectors following the territory's devastation.\n\nThe plan's implementation remains contingent on unresolved political questions, including the timeline for Israeli withdrawal from Gaza and the status of Hamas's armed wing. Without clarity on these core issues, the viability of the reconstruction effort remains uncertain.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/24/gaza-2-45-billion-reconstruction-plan-who-decides-its-future?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/jared-kushner-admits-delays-scant-245bn-starter-plan-gaza-unveiled-0",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-24T06:09:05+00:00",
+ "dek": "Gaza’s $2.45bn recovery plan spans housing, health and 4G, but Israeli pullout and Hamas’s disarmament remain unclear.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/Jared-1790230129.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/24/gaza-2-45-billion-reconstruction-plan-who-decides-its-future?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/24/gaza-2-45-billion-reconstruction-plan-who-decides-its-future?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6941630553",
+ "score": 49.49,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN presents $2.45 billion plan to rebuild Gaza"
+}
