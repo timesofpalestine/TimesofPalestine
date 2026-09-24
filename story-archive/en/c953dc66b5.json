@@ -1,0 +1,33 @@
+{
+ "brief": "The Ma'an news agency reported that pollution in Gaza's waters has reached dangerous levels, with the ongoing conflict preventing authorities from implementing cleanup and treatment measures. Raw sewage and industrial waste have accumulated in the marine environment, creating severe public health risks for coastal communities and fishermen who depend on the sea.\n\nThe inability to address the contamination reflects broader infrastructure collapse across the territory, where fighting has disrupted water treatment facilities and sanitation systems. Environmental officials warn that the pollution poses immediate threats to fishing stocks and drinking water supplies already strained by the humanitarian crisis.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/36982",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-24T09:56:58+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/PW4tkTAFtTL4e8rdwsvHHcWZNCo8jkzwbfNISnNRrZVDT4qA0ct1ATteNPZ01v6Mt_cuZEVNtNT-NJbrwwUngRgXn7c32s5kHGFxLUltTJ7YZUOpn1BfYdmTKvYs2imQWDIFtnR83qYEUrqO_WMCN_eNgEyfWjv2BC0BhMmAmFvLO8ZwDkNBkOS5QXmZS3k8dR9DjRsRG3ppZgar6t4cYuAdkHbd46E9CljZP4-fN_BVQRRv0TXaUYcmMr1hIMXn1RL59XKewsLLufwOwzg4w5AGIngkLMgE_uSpCadOQVBig5JYl-J1GEya3V2nAWDKkYNP7k84dwkO18he6qwZDg",
+ "lang": "en",
+ "link": "https://t.me/maannews/36982",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/36982"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c953dc66b5",
+ "score": 49.89,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gaza's contaminated sea poses health crisis as war halts treatment"
+}
