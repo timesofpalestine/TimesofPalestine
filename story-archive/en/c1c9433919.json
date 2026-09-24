@@ -7,12 +7,6 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/israels-netanyahu-expected-denounce-enemies-allies-un-spotlight",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": false
   }
  ],
  "date": "2026-09-24T13:35:45+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "c1c9433919",
- "score": 48.4,
+ "score": 48.1,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
