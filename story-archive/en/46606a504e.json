@@ -1,0 +1,33 @@
+{
+ "brief": "A demonstrator was arrested while protesting Israeli Prime Minister Benjamin Netanyahu's visit to New York, according to reporting on the incident. The protester said they refused to \"play host to a man who has overseen the slaughter or injury of more than 64,000 children in Gaza with American taxpayer dollars.\"\n\nThe arrest occurred as Netanyahu traveled to the United States, drawing opposition from activists opposed to Israel's military operations in Gaza. Demonstrations against the Israeli leader's presence in New York reflect ongoing tensions over civilian casualties in the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/commentisfree/2026/sep/24/protester-netanyahu-gaza-new-york-arrested",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-24T21:20:55+00:00",
+ "dek": "I refuse to play host to a man who has overseen the slaughter or injury of more than 64,000 children in Gaza with American taxpayer dollars.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/887c3239cff713f0ab04a4318b740f0c00794474/681_0_6830_5464/master/6830.jpg?width=140&quality=85&auto=format&fit=max&s=0998875f597f6e483ac5d87cc48e6f59",
+ "lang": "en",
+ "link": "https://www.theguardian.com/commentisfree/2026/sep/24/protester-netanyahu-gaza-new-york-arrested",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/commentisfree/2026/sep/24/protester-netanyahu-gaza-new-york-arrested"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "46606a504e",
+ "score": 63.72,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Protester arrested at Netanyahu's New York visit"
+}
