@@ -1,0 +1,33 @@
+{
+ "brief": "لم تتوفر تفاصيل كافية في المصدر المرفق لكتابة موجز إخباري شامل. العنوان المرسل «انسحاب إسرائيل أولاً» يشير إلى عملية انسحاب إسرائيلية من موقع أو منطقة ما، غير أن الموجز الإخباري لم يتضمن معلومات حول الموقع المحدد أو التاريخ أو السياق العسكري أو السياسي للانسحاب.\n\nلتقديم موجز إخباري دقيق ومهني، يتطلب الأمر تفاصيل إضافية تشمل: موقع الانسحاب، التطورات المحيطة به، والتصريحات الرسمية ذات الصلة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169287.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-24T09:09:04+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2169287.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e0671b80a4",
+ "score": 34.59,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "إسرائيل تنسحب من موقع عسكري"
+}

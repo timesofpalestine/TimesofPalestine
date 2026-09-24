@@ -1,0 +1,33 @@
+{
+ "brief": "The Israeli military has begun withdrawing its forces from Gaza, the Ma'an news agency reported. The pullback marks a shift in Israel's operational posture in the territory following months of intensive military operations.\n\nDetails regarding the scope and timeline of the withdrawal remain limited. The move comes as international pressure for a ceasefire continues to mount amid the ongoing humanitarian crisis in Gaza.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169287.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-24T09:09:04+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169287.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e0671b80a4",
+ "score": 34.63,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel withdraws forces from Gaza strip"
+}
