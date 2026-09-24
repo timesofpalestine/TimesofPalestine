@@ -1,0 +1,33 @@
+{
+ "brief": "An exceptional algae bloom has shut down five desalination plants for days, leaving Israel facing weeks of water shortages, The Guardian reported. Scientists attributed the crisis partly to destruction of Gaza's water treatment plants, which would normally help regulate water quality in the region.\n\nGaza remains gripped by a severe water and sanitation crisis as the bloom has degraded desalination capacity across Israel's supply network. The environmental event has compounded existing pressures on water resources in the region.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/24/israel-water-shortages-destruction-gaza-treatment-plants-pollution-sanitation-crisis",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-24T05:00:08+00:00",
+ "dek": "Five desalination plants shut down for days, while Gaza remains in grip of severe water and sanitation crisis Israel is facing weeks of water shortages after an exceptional algae bloom crippled much of its desalination capacity, in a crisis scientists say was…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/6967079caa25fed26eddc59a77b0a56695226817/0_0_6880_5504/master/6880.jpg?width=140&quality=85&auto=format&fit=max&s=9521a029e787a4094b66719ccd108976",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/sep/24/israel-water-shortages-destruction-gaza-treatment-plants-pollution-sanitation-crisis",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/sep/24/israel-water-shortages-destruction-gaza-treatment-plants-pollution-sanitation-crisis"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "48468982d0",
+ "score": 49.58,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Algae bloom cripples Israeli desalination plants amid Gaza crisis"
+}
