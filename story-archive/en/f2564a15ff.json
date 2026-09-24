@@ -1,0 +1,39 @@
+{
+ "brief": "An Israeli soldier was wounded in a suspected car-ramming attack near the illegal settlement of Beit Horon in the occupied West Bank, Al Jazeera English reported. The soldier, identified as Neria Leiter, sustained injuries in the incident.\n\nThe attack occurred in an area where Israeli settlements operate in the Palestinian territories under international law prohibitions on civilian settlements in occupied land.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/23/23-09-sv-israeli-solider-injured-leiter-il?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/soldiers-injure-two-palestinians-amid-west-bank-violations",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-23T19:29:49+00:00",
+ "dek": "Israeli soldier Neria Leiter wounded in a suspected car-ramming attack near the illegal settlement of Beit Horon.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790191752.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/23/23-09-sv-israeli-solider-injured-leiter-il?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/23/23-09-sv-israeli-solider-injured-leiter-il?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f2564a15ff",
+ "score": 58.54,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Car ramming wounds Israeli soldier in occupied West Bank"
+}
