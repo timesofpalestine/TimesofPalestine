@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Ground resolution of the imagery available over northern Gaza</title>
+<desc id="dsc">Dark chart. Three bars on a logarithmic scale compare ground resolution over northern Gaza: govmap's 2025 aerial layer at 13 centimetres a pixel, the 40-centimetre ceiling United States firms may sell over Israel and Palestine since July 2020, and Sentinel-2's ten metres. A footer notes that one Sentinel-2 pixel covers the ground of about 5,900 govmap pixels, and one 40-centimetre pixel about nine.</desc>
+
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#c7a86b"/><stop offset="1" stop-color="#9c8348"/></linearGradient></defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="110" y="44" width="90" height="6" fill="#c7a86b"/>
+
+<text x="110" y="110" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" letter-spacing="5" fill="#c7a86b">WHAT ONE PIXEL COVERS</text>
+<text x="110" y="178" font-family="'Source Serif 4',Georgia,serif" font-size="44" fill="#f2eee8">Ground resolution over northern Gaza</text>
+<text x="110" y="222" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#aaa9a5">Bar length on a logarithmic scale &#8212; smaller is sharper</text>
+
+<text x="110" y="344" font-family="'Libre Franklin',Arial,sans-serif" font-size="40" font-weight="700" fill="#c7a86b">13 cm</text>
+<rect x="300" y="308" width="379" height="34" fill="url(#gold)"/>
+<text x="300" y="378" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">govmap's 2025 aerial layer over the northern Strip</text>
+<text x="300" y="406" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">A soldier's tent, a vehicle revetment, a bulldozer track</text>
+
+<text x="110" y="504" font-family="'Libre Franklin',Arial,sans-serif" font-size="40" font-weight="700" fill="#c7a86b">40 cm</text>
+<rect x="300" y="468" width="545" height="34" fill="url(#gold)"/>
+<text x="300" y="538" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">The finest US firms may sell over Israel and Palestine since July 2020</text>
+<text x="300" y="566" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">A car, a roof, a crater</text>
+
+<text x="110" y="664" font-family="'Libre Franklin',Arial,sans-serif" font-size="40" font-weight="700" fill="#c7a86b">10 m</text>
+<rect x="300" y="628" width="1020" height="34" fill="#55565b"/>
+<text x="300" y="698" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#f2eee8">Sentinel-2, the free European satellite the researchers fall back on</text>
+<text x="300" y="726" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" fill="#aaa9a5">A city block, at best</text>
+
+<rect x="110" y="778" width="1380" height="88" rx="8" fill="#17181b" stroke="#286344" stroke-width="2"/>
+<text x="140" y="820" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">One Sentinel-2 pixel covers the ground of about 5,900 govmap pixels; one 40 cm pixel, about nine.</text>
+<text x="140" y="850" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">Sources: Nathan Ruser on the govmap layer; NOAA's July 2020 Kyl-Bingaman finding; Sentinel-2 specification.</text>
+</svg>
