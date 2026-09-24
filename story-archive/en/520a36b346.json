@@ -1,0 +1,45 @@
+{
+ "brief": "Spain's Prime Minister characterized Israel's military operations in Gaza as genocide, according to Maan Wire. The statement represents an escalation in international criticism of Israel's conduct in the territory, where fighting has intensified in recent months.\n\nThe accusation comes amid growing international scrutiny of civilian casualties and humanitarian conditions in Gaza. Spain has previously signaled its willingness to take stronger diplomatic stances on the Israeli-Palestinian conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169286.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/164553/%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%B2%D9%8A%D9%84%D9%8A-%D8%A3%D8%AC%D9%8A%D8%A7%D9%84-%D9%85%D9%86-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86-%D8%B3%D8%AA%D8%AD%D9%85%D9%84-%D8%A2%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/spains-prime-minister-slams-israels-genocide-gaza-during-un-speech",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-24T08:57:12+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%202018.jpg?width=640",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169286.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Benjamin Netanyahu — Wikimedia Commons / US State Department (public domain)",
+  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg",
+  "rightsBasis": "wikimedia-cc",
+  "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "520a36b346",
+ "score": 63.84,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Spain's PM accuses Netanyahu of committing genocide in Gaza"
+}

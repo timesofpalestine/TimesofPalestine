@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-least-seven-palestinians-across-gaza-despite",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://imemc.org/article/israeli-attacks-wound-palestinians-across-gaza",
    "name": "IMEMC News",
    "url": "https://imemc.org/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "418fac4311",
- "score": 84.85,
+ "score": 84.82,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
