@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/09/netanyahus-fleeting-visit-new-york-mirrors-strained-us-ties",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-not-expected-meet-trump-new-york",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-24T11:46:33+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b469309d07",
- "score": 49.27,
+ "score": 48.95,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
