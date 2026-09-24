@@ -9,6 +9,12 @@
    "verified": false
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/09/israel-policies-threaten-life-and-existence-palestinians-abbas-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-general-assembly-2026-do-not-allow-another-nakba-mahmoud-abbas-warns",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "0540ef8bcf",
- "score": 48.44,
+ "score": 48.08,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
