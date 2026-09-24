@@ -7,6 +7,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-general-assembly-2026-do-not-allow-another-nakba-mahmoud-abbas-warns",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-09-24T16:35:16+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "0540ef8bcf",
- "score": 49.83,
+ "score": 49.57,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
