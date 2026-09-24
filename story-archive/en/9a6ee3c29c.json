@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli bulldozers uprooted Palestinian-owned olive groves near Ramallah in the occupied West Bank, Al Jazeera English reported. The demolition occurred weeks before the annual harvest season, destroying crops ready for collection.\n\nThe timing of the operation left Palestinian farmers unable to gather their olives, a major source of livelihood and cultural significance in the region. Olive harvesting typically represents a crucial income period for West Bank communities.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/24/they-uprooted-it-all-israel-bulldozes-palestinian-owned-olive-groves?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/israeli-bulldozers-smash-palestinian-olive-trees-ahead-annual-harvest",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-24T03:32:28+00:00",
+ "dek": "Israeli bulldozers uprooted olive groves near Ramallah in the occupied West Bank weeks before the annual harvest.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-09-23T082909Z_1627711264_RC2VONA8IMW1_RTRMADP_3_ISRAEL-PALESTINIANS-WEST-BANK-OLIVE-TREES-1790215211.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/24/they-uprooted-it-all-israel-bulldozes-palestinian-owned-olive-groves?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/24/they-uprooted-it-all-israel-bulldozes-palestinian-owned-olive-groves?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9a6ee3c29c",
+ "score": 49.79,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel bulldozes Palestinian olive groves before harvest"
+}
