@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli Prime Minister Benjamin Netanyahu characterized violence in the occupied West Bank as the work of \"juvenile delinquents,\" downplaying the issue as he addressed the United Nations, according to Al Jazeera English. His remarks came amid ongoing tensions and incidents attributed to Israeli settlers in Palestinian areas.\n\nThe description marked Netanyahu's attempt to separate state actions from settler conduct during his UN appearance, framing the violence as criminal behavior by individuals rather than a systemic problem requiring policy intervention.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/24/netanyahu-blames-juvenile-delinquents-for-violence-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-24T20:54:28+00:00",
+ "dek": "As spoke at the UN, Israeli Prime Minister Benjamin Netanyahu downplayed settler violence in the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790283257.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/24/netanyahu-blames-juvenile-delinquents-for-violence-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/24/netanyahu-blames-juvenile-delinquents-for-violence-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "25f06681b7",
+ "score": 49.78,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu dismisses West Bank settler violence as juvenile delinquency"
+}
