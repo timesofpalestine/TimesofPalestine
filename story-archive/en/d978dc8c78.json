@@ -1,0 +1,45 @@
+{
+ "brief": "US rapper Macklemore announced a \"Free Palestine\" tour, stating that \"being apolitical during a genocide doesn't work,\" Al Jazeera English reported. The artist promised to donate tour proceeds to Palestinian causes, marking a shift in his public stance on the Israeli-Palestinian conflict.\n\nThe announcement follows a reported fallout with British singer Ed Sheeran, though details of their disagreement were not disclosed. Macklemore's commitment signals growing artist activism around Palestinian rights within the music industry.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/24/us-rapper-macklemore-announces-free-palestine-tour-after-ed-sheeran-fallout?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/09/what-you-need-to-know-about-robert-kraft-the-pro-israel-billionaire-who-pressured-ed-sheeran-to-drop-macklemore",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/music/2026/sep/24/macklemore-free-palestine-tour-ed-sheeran",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-24T19:22:27+00:00",
+ "dek": "Macklemore says 'being apolitical during a genocide doesn’t work', promises to donate proceeds to Palestinian causes.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6ab5562fbe-1790268975.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/24/us-rapper-macklemore-announces-free-palestine-tour-after-ed-sheeran-fallout?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/24/us-rapper-macklemore-announces-free-palestine-tour-after-ed-sheeran-fallout?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d978dc8c78",
+ "score": 49.6,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Macklemore plans Free Palestine tour, pledges proceeds to Palestinian causes"
+}

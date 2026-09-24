@@ -1,0 +1,33 @@
+{
+ "brief": "A new analysis tested six major chatbots to assess whether Israeli efforts to influence their responses on the Israeli-Palestinian conflict have succeeded, the Quincy Institute reported. The study examined how artificial intelligence systems handle questions about the conflict and whether their answers reflect attempted pressure from Israeli government and advocacy groups.\n\nThe findings highlight the broader challenge of ensuring AI systems remain neutral on politically contested issues. The research raises questions about the accessibility and transparency of chatbot training and how external pressure campaigns can shape algorithmic responses to sensitive geopolitical topics.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://www.wired.me/story/israel-is-trying-to-shape-what-chatbots-say-we-tested-six",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-24T19:38:38+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://media.wired.me/photos/6ab3d56c37ef4e8046a458cd/191:100/w_1280,c_limit/Chatbot.jpg",
+ "lang": "en",
+ "link": "https://www.wired.me/story/israel-is-trying-to-shape-what-chatbots-say-we-tested-six",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Quincy Institute",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.wired.me/story/israel-is-trying-to-shape-what-chatbots-say-we-tested-six"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "91377dbc60",
+ "score": 71.99,
+ "source": "Quincy Institute",
+ "source_id": "quincy",
+ "source_url": "https://quincyinst.org/",
+ "title": "Israel pushes chatbots to shape their output on Palestinian conflict"
+}
