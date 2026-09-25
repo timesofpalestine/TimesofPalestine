@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، يثار السؤال عن مصير الإنسان في غزة رغم أن القطاع يظهر يومياً في وسائل الإعلام العالمية. يعكس التساؤل التوتر بين الرؤية الإخبارية المستمرة للأحداث والغياب الملحوظ للبعد الإنساني في التغطية الإعلامية.\n\nيشير المركز إلى أن تركيز الروايات الإخبارية على الأرقام والإحصائيات والتطورات العسكرية قد يُطغي على قصص الأفراد وتجاربهم. الطرح ينبه إلى ضرورة توازن بين توثيق الأحداث والتركيز على الجوانب الإنسانية والقصص الفردية التي تعكس واقع السكان.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/09/25/1119056",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-25T18:34:04+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/09/25/1119056",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "421974a5ab",
+ "score": 49.86,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "المركز الفلسطيني للإعلام يطرح سؤالاً عن الإنسان في غزة"
+}
