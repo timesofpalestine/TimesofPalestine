@@ -7,6 +7,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://zeteo.com/p/netanyahu-slams-mamdani-and-piker",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": false
   }
  ],
  "date": "2026-09-25T06:28:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "6b754a5413",
- "score": 45.86,
+ "score": 45.49,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
