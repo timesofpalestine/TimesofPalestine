@@ -1,0 +1,39 @@
+{
+ "brief": "Ed Sheeran cancelled performances scheduled at stadiums owned by Robert Kraft, citing weather conditions as the reason, according to Al Jazeera English. The cancellations mark the latest disruption to the singer's tour, which has experienced multiple setbacks in recent weeks.\n\nThe tour faced significant backlash after rapper Macklemore's removal from the bill, which drew criticism over his statements expressing support for Palestine. The series of cancellations and withdrawals has cast uncertainty over the remainder of Sheeran's scheduled dates.",
+ "cat": "arts",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/25/ed-sheeran-concerts-at-robert-kraft-stadiums-cancelled-over-weather?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/music/2026/sep/25/ed-sheeran-gillette-stadium-concert-canceled",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-25T17:18:35+00:00",
+ "dek": "Singer's tour has faced numerous setbacks after expulsion of rapper Macklemore over support for Palestine drew backlash.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/reuters_6ab69f41-1790353217.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/25/ed-sheeran-concerts-at-robert-kraft-stadiums-cancelled-over-weather?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/25/ed-sheeran-concerts-at-robert-kraft-stadiums-cancelled-over-weather?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3d6203e243",
+ "score": 49.78,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Ed Sheeran cancels concerts at Kraft stadiums due to weather"
+}
