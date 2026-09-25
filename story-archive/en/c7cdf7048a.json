@@ -1,0 +1,33 @@
+{
+ "brief": "Israel and the United States have already deployed artificial intelligence systems to conduct lethal operations in Gaza and Iran, The Guardian reported. The use marks a shift from theoretical concerns about AI's dangers to documented applications in active conflict zones and military targeting.\n\nLaw enforcement agencies have simultaneously expanded AI use for surveillance and arrests, according to the report. AI technologies are now operationalized across military and domestic security systems rather than remaining confined to research discussions or future scenarios.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/commentisfree/2026/sep/25/ai-israel-gaza-iran-police-surveillance",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-25T12:00:50+00:00",
+ "dek": "Israel and the US have used AI to kill in Gaza and Iran, while law enforcement uses it in surveillance and arrests. The future is here In recent weeks, concerns about AI have forged unlikely alliances in the tech and policy worlds.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/c8fc012608d01246af3b99671db20d50612a9447/600_0_6000_4800/master/6000.jpg?width=140&quality=85&auto=format&fit=max&s=e2b2220dd29b789f4d588b99b673525c",
+ "lang": "en",
+ "link": "https://www.theguardian.com/commentisfree/2026/sep/25/ai-israel-gaza-iran-police-surveillance",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/commentisfree/2026/sep/25/ai-israel-gaza-iran-police-surveillance"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c7cdf7048a",
+ "score": 63.71,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israel and US deploy AI for lethal operations in Gaza and Iran"
+}
