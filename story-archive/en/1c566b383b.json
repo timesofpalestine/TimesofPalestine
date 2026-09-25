@@ -9,22 +9,10 @@
    "verified": false
   },
   {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/25/contrasting-treatment-of-israel-and-palestine-on-display-at-the-un?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": false
-  },
-  {
-   "article": "https://www.theguardian.com/us-news/2026/sep/24/netanyahu-un-speech-mahmoud-abbas",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/un-general-assembly-2026-walkout-israel-speech-war-middle-east-war-spotlight",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-denounces-netanyahus-speech-rife-lies",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-24T21:06:00+00:00",
@@ -43,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1c566b383b",
- "score": 43.42,
+ "score": 43.09,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
