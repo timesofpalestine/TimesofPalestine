@@ -1,0 +1,33 @@
+{
+ "brief": "New York City Mayor Zohran Mamdani posted a video showing himself planting an olive tree alongside Palestinian families from Gaza, according to Al Jazeera English. The footage documented the act as a gesture of solidarity with those affected by the conflict.\n\nDetails about the families' identities, the location of the planting, or the broader context of Mamdani's visit remain unclear from available reporting.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/25/mamdani-plants-olive-tree-with-gaza-families?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-25T07:55:41+00:00",
+ "dek": "New York Mayor Zohran Mamdani posted a video of himself planting an olive tree alongside Palestinian families from Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/Screenshot-2026-09-25-at-08.51.54-1790322856.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/25/mamdani-plants-olive-tree-with-gaza-families?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/25/mamdani-plants-olive-tree-with-gaza-families?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6e4909dbb8",
+ "score": 49.38,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "NYC official plants olive tree with Gaza families"
+}
