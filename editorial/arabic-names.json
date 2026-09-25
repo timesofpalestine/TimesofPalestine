@@ -1002,6 +1002,33 @@
    "ar": "بيت لاهيا",
    "wrong": [],
    "verified": "aljazeera.net Arabic coverage of the govmap imagery, 21 September 2026"
+  },
+  {
+   "latin": "Nour Elassy",
+   "ar": "نور العاصي",
+   "wrong": [
+    "نور الآسي",
+    "نور الأسي"
+   ],
+   "verified": "الشرق الأوسط + الجزيرة نت + العربية فلسطين، 2026-09-25"
+  },
+  {
+   "latin": "Ruba Khoury",
+   "ar": "ربى خوري",
+   "wrong": [],
+   "verified": "مجلة لها + النهار (فوزها بالموسم التاسع من توب شيف)، 2026-09-25"
+  },
+  {
+   "latin": "Annie Ernaux",
+   "ar": "آني إرنو",
+   "wrong": [],
+   "verified": "الجزيرة نت + القدس العربي + العربي الجديد، 2026-09-25"
+  },
+  {
+   "latin": "Camélia Jordana",
+   "ar": "كاميليا جوردانا",
+   "wrong": [],
+   "verified": "فرانس 24 بالعربية + الشرق الأوسط + ويكيبيديا العربية، 2026-09-25"
   }
  ]
 }
