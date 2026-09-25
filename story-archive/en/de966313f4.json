@@ -1,0 +1,33 @@
+{
+ "brief": "An obscure Israeli team called \"Blue Line\" is systematically altering land demarcation in the West Bank to facilitate settlement expansion, according to Al Jazeera English. The unit operates with minimal public scrutiny while Palestinians contend with accelerating illegal colony construction on their territory. The practice involves redrawing official boundaries to reclassify Palestinian land as available for Israeli development.\n\nThe mapping initiative compounds existing pressures on Palestinian communities already facing dispossession through settlement growth. Officials tasked with boundary designation wield substantial influence over which areas Israel designates for Jewish settlement versus Palestinian use, reshaping the territorial landscape without formal international oversight.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/25/how-israels-blue-line-team-seizes-palestinian-land-in-the-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-25T19:24:46+00:00",
+ "dek": "Little-known Israeli map team is redrawing land boundaries as Palestinians face growing illegal settlement expansion.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/Bilal-Abu-Alia-is-standing-in-his-balcony-looking-at-his-confiscated-land-photo-by-Mutasim-Abu-Alia-1790357704.jpg?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/25/how-israels-blue-line-team-seizes-palestinian-land-in-the-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/25/how-israels-blue-line-team-seizes-palestinian-land-in-the-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "de966313f4",
+ "score": 49.55,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli mapping team redraws West Bank land boundaries for settlements"
+}
