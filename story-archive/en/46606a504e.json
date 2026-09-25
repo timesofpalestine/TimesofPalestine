@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/commentisfree/2026/sep/24/protester-netanyahu-gaza-new-york-arrested",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/no-netanyahu-wasnt-arrested-during-ny-visit-against-netanyahus-un-appearance",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-24T21:20:55+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "46606a504e",
- "score": 47.11,
+ "score": 46.8,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

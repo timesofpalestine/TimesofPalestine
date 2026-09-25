@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli Prime Minister Benjamin Netanyahu described Al Jazeera as a \"toxic media outlet,\" according to Al Jazeera English. The remark underscores the contentious relationship between the Israeli government and the network over its reporting on Israeli-Palestinian matters.\n\nNetanyahu has repeatedly attacked international news organizations, characterizing their coverage of Israel's operations in Gaza and the West Bank as slanted against the country.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/25/netanyahu-calls-al-jazeera-a-toxic-media?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-25T21:37:35+00:00",
+ "dek": "Israeli Prime Minister Benjamin Netanyahu called Al Jazeera a “toxic media outlet.”",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790372222.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/25/netanyahu-calls-al-jazeera-a-toxic-media?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/25/netanyahu-calls-al-jazeera-a-toxic-media?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4240311b96",
+ "score": 49.67,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu calls Al Jazeera toxic media outlet"
+}
