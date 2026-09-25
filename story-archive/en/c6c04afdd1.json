@@ -9,22 +9,28 @@
    "verified": true
   },
   {
-   "article": "http://www.democracynow.org/2026/9/25/netanyahu_at_unga",
-   "name": "Democracy Now!",
-   "url": "https://www.democracynow.org/",
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/25/which-countries-walked-out-of-netanyahus-unga-speech?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/news/2026/9/25/al-jazeera-rejects-netanyahus-attack-on-journalists-in-un-speech?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": false
+   "article": "https://www.theguardian.com/us-news/2026/sep/24/netanyahu-un-protests",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   },
   {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/emirati-influencers-celebrate-uae-sitting-netanyahus-speech-un-amid",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/9/25/netanyahu_at_unga",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
   },
   {
    "article": "https://zeteo.com/p/netanyahu-slams-mamdani-and-piker",
@@ -49,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "c6c04afdd1",
- "score": 45.8,
+ "score": 45.54,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

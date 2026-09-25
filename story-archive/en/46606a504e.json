@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/commentisfree/2026/sep/24/protester-netanyahu-gaza-new-york-arrested",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "http://www.democracynow.org/2026/9/25/jewish_voice_for_peace_protests_netanyahu",
-   "name": "Democracy Now!",
-   "url": "https://www.democracynow.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-24T21:20:55+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "46606a504e",
- "score": 48.22,
+ "score": 47.97,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
