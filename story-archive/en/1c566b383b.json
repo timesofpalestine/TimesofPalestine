@@ -15,15 +15,15 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/mamdani-says-netanyahu-used-un-speech-sanitise-his-genocide-palestinians",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/us-news/2026/sep/24/netanyahu-un-speech-mahmoud-abbas",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/un-general-assembly-2026-walkout-israel-speech-war-middle-east-war-spotlight",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": true
   }
  ],
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "1c566b383b",
- "score": 44.98,
+ "score": 44.64,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
