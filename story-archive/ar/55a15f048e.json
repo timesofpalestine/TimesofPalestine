@@ -13,6 +13,12 @@
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
    "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/187014/%D8%A3%D9%88%D9%86%D8%B1%D9%88%D8%A7-94-%D9%85%D9%86-%D8%B3%D9%83%D8%A7%D9%86-%D8%BA%D8%B2%D8%A9-%D9%8A%D9%81%D9%82%D8%AA%D8%AF%D9%88%D9%86-%D8%A7%D9%84%D9%85%D8%A3%D9%88%D9%89-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%A6%D9%85",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-09-25T11:55:00+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "55a15f048e",
- "score": 48.38,
+ "score": 48.02,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
