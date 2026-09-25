@@ -1,0 +1,33 @@
+{
+ "brief": "Israel's official mapping service published high-resolution satellite imagery of Gaza showing military bases and widespread destruction before removing and blurring the images, Middle East Eye reported. The Israeli service had accidentally made the detailed photographs publicly accessible for a limited period.\n\nThe incident revealed the extent of damage across Gaza through official Israeli sources, though the images were later obscured from public view.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/news/israel-accidentally-exposes-gaza-military-bases-and-widespread-destruction-official-map",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-25T13:03:24+00:00",
+ "dek": "Israel accidentally exposes Gaza military bases and widespread destruction on official map Submitted by Elis Gjevori on Fri, 09/25/2026 - 10:59 Israel’s mapping service briefly publishes high-resolution satellite imagery of Gaza before blurring it again An…",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/styles/crop_16_9/public/images-story/6a5fd394-530b-4778-904b-9c1588f7feb7.png.jpg?itok=_FmKHwe3",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/news/israel-accidentally-exposes-gaza-military-bases-and-widespread-destruction-official-map",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/news/israel-accidentally-exposes-gaza-military-bases-and-widespread-destruction-official-map"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b9d8defd6e",
+ "score": 49.87,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israel's mapping service briefly exposes Gaza bases and destruction"
+}
