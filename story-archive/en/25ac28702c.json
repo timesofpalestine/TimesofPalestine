@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/israeli-occupation-destroys-janba-village-in-hebron-and-forcibly-displaces-176-civilians-in-pursuit-of-west-bank-annexation",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-forces-invade-west-bank-communities-abduct-palestinians",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-24T18:07:06+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "25ac28702c",
- "score": 69.91,
+ "score": 69.88,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
