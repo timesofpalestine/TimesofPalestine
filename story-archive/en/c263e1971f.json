@@ -1,0 +1,33 @@
+{
+ "brief": "The UN General Assembly has entered its fifth day with world leaders denouncing Israeli violence against Palestinians, according to Al Jazeera English. The session coincides with ongoing violence in the region as the international body convenes to address the conflict.\n\nMultiple nations have raised the issue during assembly proceedings, bringing international attention to military operations affecting Palestinian civilians and territory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/26/jerusalem-daily-violence-continues-as-the-world-watches-the-unga?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-26T16:14:35+00:00",
+ "dek": "As the UN General Assembly enters its fifth day, with world leaders denouncing Israeli violence against Palestinians.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/clean-6-1790439237.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/26/jerusalem-daily-violence-continues-as-the-world-watches-the-unga?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/26/jerusalem-daily-violence-continues-as-the-world-watches-the-unga?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c263e1971f",
+ "score": 49.64,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Violence persists as UN General Assembly opens debate on Israel-Palestine"
+}
