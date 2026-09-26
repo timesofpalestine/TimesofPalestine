@@ -1,0 +1,39 @@
+{
+ "brief": "Police arrested more than 100 demonstrators outside United Nations headquarters in New York City on Thursday as Prime Minister Benjamin Netanyahu addressed the General Assembly, The Guardian reported. Among those detained were actor Susan Sarandon, whistleblower Chelsea Manning, and comedian Caleb Hearon.\n\nProtesters gathered outside the building chanting demands that Gaza be permitted to survive while Netanyahu spoke to delegates inside.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/us-news/2026/sep/24/netanyahu-un-protests",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/9/25/jewish_voice_for_peace_protests_netanyahu",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-24T23:28:26+00:00",
+ "dek": "Actor Susan Sarandon, whistleblower Chelsea Manning and comedian Caleb Hearon are detained by NYPD More than 100 people were arrested outside the United Nations’ headquarters in New York City on Thursday as Benjamin Netanyahu addressed the general assembly, a…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/76ecd88784b846d7ab3939c6ac73f339e97f17a8/342_0_3411_2729/master/3411.jpg?width=140&quality=85&auto=format&fit=max&s=771baa517eb79b8e6ce16c9778fb4cef",
+ "lang": "en",
+ "link": "https://www.theguardian.com/us-news/2026/sep/24/netanyahu-un-protests",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/us-news/2026/sep/24/netanyahu-un-protests"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "382921e6b1",
+ "score": 59.59,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "NYPD detains over 100 protesters outside Netanyahu's UN speech"
+}

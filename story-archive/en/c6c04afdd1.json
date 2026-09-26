@@ -9,18 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/25/which-countries-walked-out-of-netanyahus-unga-speech?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/us-news/2026/sep/24/netanyahu-un-protests",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
    "article": "http://www.democracynow.org/2026/9/25/netanyahu_at_unga",
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
@@ -30,6 +18,12 @@
    "article": "https://english.pnn.ps/news/48309",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/video/2026/sep/24/un-delegates-walkout-netanyahu-speech",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
    "verified": true
   },
   {
@@ -55,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "c6c04afdd1",
- "score": 39.88,
+ "score": 39.69,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
