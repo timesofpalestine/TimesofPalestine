@@ -1,0 +1,33 @@
+{
+ "brief": "The Guardian traced the daily lives of five people in Gaza from morning to evening, documenting the ordinary hardships that rarely surface in headlines dominated by attacks and casualty counts. The reporting examined what it takes to accomplish basic tasks like making tea, revealing the sustained strain of living under siege beyond the visible crises of bombardment.\n\nThe account details a quieter tragedy: the cumulative toll of restricted movement, scarce resources, and constant uncertainty that shapes Palestinian existence in Gaza day after day.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/global-development/ng-interactive/2026/sep/26/we-followed-five-people-in-gaza-from-dawn-to-dusk-this-is-what-the-headlines-dont-tell-us",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-26T11:00:34+00:00",
+ "dek": "Behind the stories of bombings and mass deaths, the everyday challenges facing Palestinians living under siege portray a quieter tragedy we rarely hear What does it take to make a morning cup of tea in Gaza?",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/b5e9c0f57b790973858bb94154dabe47981423d7/0_0_3839_3072/master/3839.jpg?width=140&quality=85&auto=format&fit=max&s=2da1a550c08aa4056d630122bb261597",
+ "lang": "en",
+ "link": "https://www.theguardian.com/global-development/ng-interactive/2026/sep/26/we-followed-five-people-in-gaza-from-dawn-to-dusk-this-is-what-the-headlines-dont-tell-us",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/global-development/ng-interactive/2026/sep/26/we-followed-five-people-in-gaza-from-dawn-to-dusk-this-is-what-the-headlines-dont-tell-us"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "34a2931d1c",
+ "score": 63.97,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Guardian follows five Palestinians through a day under siege in Gaza"
+}
