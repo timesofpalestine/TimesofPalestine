@@ -6,13 +6,7 @@
    "article": "https://t.me/Arabi21News/429400",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
-   "article": "https://www.alquds.co.uk/%d9%82%d8%b7%d8%b1-%d8%aa%d8%af%d8%b9%d9%88-%d9%84%d8%ad%d9%85%d9%84%d8%a9-%d8%af%d8%a8%d9%84%d9%88%d9%85%d8%a7%d8%b3%d9%8a%d8%a9-%d9%88%d8%a5%d8%b9%d9%84%d8%a7%d9%85%d9%8a%d8%a9-%d9%84%d9%83%d8%b4",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-26T12:30:14+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "9a47774187",
- "score": 47.51,
+ "score": 47.17,
  "source": "عربي21",
  "source_id": "tg-arabi21",
  "source_url": "https://t.me/arabi21news",
