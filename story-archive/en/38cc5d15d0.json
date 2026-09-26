@@ -6,13 +6,7 @@
    "article": "https://zeteo.com/p/in-gaza-whoever-survives-the-bombing",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": true
-  },
-  {
-   "article": "https://imemc.org/article/israeli-attacks-kill-palestinians-across-gaza-2",
-   "name": "IMEMC News",
-   "url": "https://imemc.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-24T23:01:20+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "38cc5d15d0",
- "score": 44.7,
+ "score": 44.38,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
