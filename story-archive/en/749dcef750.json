@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli Prime Minister Benjamin Netanyahu delivered his speech to the United Nations General Assembly on Thursday before a significantly depleted audience, Democracy Now! reported. Dozens of country delegations departed in protest as his address began, leaving visible empty seats in the chamber.\n\nThe walkout reflected international opposition to Israeli policies, particularly regarding the ongoing conflict in Gaza and Palestinian territories. Netanyahu's appearance came amid mounting global criticism of Israel's military operations and treatment of civilians.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "http://www.democracynow.org/2026/9/25/netanyahu_at_unga",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48309",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/video/2026/sep/24/un-delegates-walkout-netanyahu-speech",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/netanyahu-slams-mamdani-and-piker",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-25T12:18:21+00:00",
+ "dek": "Israeli Prime Minister Benjamin Netanyahu addressed a half-empty chamber at the United Nations General Assembly on Thursday, after dozens of delegations walked out in protest at the start of his speech.",
+ "dup_of": null,
+ "image": "https://www.democracynow.org/images/story/92/83692/w320/SEG1-guest-split3.jpg",
+ "lang": "en",
+ "link": "http://www.democracynow.org/2026/9/25/netanyahu_at_unga",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Democracy Now!",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "http://www.democracynow.org/2026/9/25/netanyahu_at_unga"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "749dcef750",
+ "score": 37.98,
+ "source": "Democracy Now!",
+ "source_id": "democracynow",
+ "source_url": "https://www.democracynow.org/",
+ "title": "Netanyahu addresses half-empty UN chamber as delegations walk out"
+}
