@@ -33,6 +33,12 @@
    "verified": true
   },
   {
+   "article": "https://english.pnn.ps/news/48309",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
    "article": "https://zeteo.com/p/netanyahu-slams-mamdani-and-piker",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
@@ -55,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "c6c04afdd1",
- "score": 43.12,
+ "score": 42.9,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
