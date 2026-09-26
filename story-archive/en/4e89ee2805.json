@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/israeli-occupation-kills-10-palestinians-in-widespread-attacks-across-the-gaza-strip",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-attacks-kill-palestinians-across-gaza-2",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-09-25T16:48:24+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4e89ee2805",
- "score": 84.73,
+ "score": 84.7,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
