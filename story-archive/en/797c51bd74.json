@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces stormed the Qalandia refugee camp in the occupied West Bank and deployed stun grenades at the al-Am'ari refugee camp, Middle East Eye reported. No immediate arrests were documented following the incursions into the two settlements.\n\nThe raids targeted populated civilian areas housing Palestinian refugees. Israeli military operations in West Bank refugee camps have intensified in recent months amid ongoing tensions in the territory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-storm-west-bank-towns-fire-stun-grenades-al-amari-refugee",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-26T06:12:40+00:00",
+ "dek": "Israeli forces storm West Bank towns, fire stun grenades at al-Am’ari refugee camp Israeli forces stormed the Qalandia refugee camp in the occupied West Bank, but there were no reports of immediate arrests, Wafa reported.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-storm-west-bank-towns-fire-stun-grenades-al-amari-refugee",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "797c51bd74",
+ "score": 63.04,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli forces raid West Bank camps with stun grenades"
+}
