@@ -1,0 +1,33 @@
+{
+ "brief": "Hamas said it stands ready to implement a peace roadmap agreed with the Palestinian Authority's peace council regarding Gaza, the Ma'an news agency reported. The movement did not specify details of the proposed plan or a timeline for implementation.\n\nThe statement comes amid ongoing mediation efforts aimed at resolving the conflict in Gaza and establishing a framework for Palestinian governance.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169295.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-24T10:46:36+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169295.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "aa9ff74d1c",
+ "score": 16.75,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Hamas declares readiness to implement agreed Gaza peace roadmap"
+}
