@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli military road closures have become routine for Palestinians navigating the occupied West Bank, according to Al Jazeera English. The checkpoints restrict movement between communities and create daily hardship for residents attempting to access work, medical care, and other essential services.\n\nThe closures form part of Israel's broader system of military control across the territory, fragmenting Palestinian communities and limiting their ability to move freely within areas under their own nominal administration.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/27/stuck-between-israeli-military-checkpoints?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-27T19:04:21+00:00",
+ "dek": "Israeli road closures have become a part of daily life for Palestinians in the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790535772.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/27/stuck-between-israeli-military-checkpoints?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/27/stuck-between-israeli-military-checkpoints?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "570430caef",
+ "score": 49.02,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli checkpoints trap Palestinians between closed roads in West Bank"
+}
