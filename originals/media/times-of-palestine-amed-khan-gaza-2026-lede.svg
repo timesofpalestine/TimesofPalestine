@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Amed Khan's foundation buys and delivers food and medicine for Gaza's children</title>
+<desc id="dsc">Dark house illustration. A stack of aid crates and a pallet of sacks stands beside a route line running from a warehouse marker to a crossing gate and on to a tent. A small dial marks four hours, for the bag of flour the foundation delivered to Hind Rajab's mother within four hours of being asked. Bilingual English and Arabic titles.</desc>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#111214"/><stop offset="1" stop-color="#1d1e21"/>
+  </linearGradient>
+  <linearGradient id="crate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#c7a86b"/><stop offset="1" stop-color="#8d7640"/>
+  </linearGradient>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="110" y="108" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" letter-spacing="5" fill="#c7a86b">THE PEOPLE WHO SHOW UP</text>
+
+<text x="110" y="182" font-family="'Source Serif 4',Georgia,serif" font-size="50" fill="#f2eee8">Amed Khan feeds Gaza's children</text>
+<text x="110" y="238" font-family="'Source Serif 4',Georgia,serif" font-size="50" fill="#f2eee8">and got Hind Rajab's family out</text>
+<text x="110" y="292" font-family="Cairo,Arial,sans-serif" font-size="30" fill="#aaa9a5">أطعم آمد خان أطفال غزة وأخرج عائلة هند رجب</text>
+
+<line x1="110" y1="336" x2="1470" y2="336" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- crates -->
+<g>
+  <rect x="140" y="560" width="200" height="130" rx="6" fill="url(#crate)"/>
+  <rect x="140" y="612" width="200" height="12" fill="#6d5a33" opacity="0.65"/>
+  <rect x="356" y="600" width="150" height="90" rx="6" fill="#55565b"/>
+  <rect x="356" y="636" width="150" height="10" fill="#3a3b3f"/>
+  <rect x="196" y="440" width="150" height="110" rx="6" fill="#55565b"/>
+  <rect x="196" y="486" width="150" height="10" fill="#3a3b3f"/>
+  <rect x="140" y="700" width="366" height="18" rx="4" fill="#3a3b3f"/>
+</g>
+
+<!-- route -->
+<path d="M540 640 C 720 640, 760 470, 950 470 S 1220 470, 1360 470" fill="none" stroke="#c7a86b" stroke-width="5" stroke-dasharray="14 12" stroke-linecap="round"/>
+<circle cx="540" cy="640" r="12" fill="#c7a86b"/>
+<text x="540" y="694" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">Warehouse</text>
+<text x="540" y="722" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">المستودع</text>
+
+<rect x="932" y="418" width="14" height="104" fill="#8a1f2d"/>
+<rect x="962" y="418" width="14" height="104" fill="#8a1f2d"/>
+<text x="954" y="562" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">The crossing</text>
+<text x="954" y="590" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">المعبر</text>
+
+<path d="M1290 500 L 1370 400 L 1450 500 Z" fill="none" stroke="#59a97d" stroke-width="5" stroke-linejoin="round"/>
+<line x1="1270" y1="500" x2="1470" y2="500" stroke="#59a97d" stroke-width="5" stroke-linecap="round"/>
+<text x="1370" y="546" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">A tent in Gaza</text>
+<text x="1370" y="574" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">خيمة في غزة</text>
+
+<!-- four hours dial -->
+<circle cx="760" cy="392" r="44" fill="none" stroke="#c7a86b" stroke-width="5"/>
+<line x1="760" y1="392" x2="760" y2="360" stroke="#c7a86b" stroke-width="5" stroke-linecap="round"/>
+<line x1="760" y1="392" x2="788" y2="404" stroke="#c7a86b" stroke-width="5" stroke-linecap="round"/>
+<text x="760" y="316" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="21" letter-spacing="2" fill="#c7a86b">FOUR HOURS</text>
+
+<rect x="110" y="778" width="1360" height="86" rx="8" fill="#17181b" stroke="#286344" stroke-width="2"/>
+<text x="140" y="818" font-family="'Libre Franklin',Arial,sans-serif" font-size="22" fill="#f2eee8">Hind Rajab's mother asked for help finding food. A bag of flour reached her within four hours.</text>
+<text x="140" y="848" font-family="Cairo,Arial,sans-serif" font-size="22" fill="#aaa9a5">طلبت والدة هند رجب المساعدة في تأمين طعام، فوصلها كيس طحين خلال أربع ساعات</text>
+</svg>

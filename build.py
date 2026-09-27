@@ -5519,6 +5519,27 @@ SPECIALS = [
         "nav": {"en": "Dr. Barakat", "ar": "قضية د. بركات"},
     },
     {
+        # Owner request 2026-09-27: "highlight it and prominently feature it."
+        # A private American donor who has spent since October 2023 buying
+        # food and medicine for Gaza and moving patients out. Gated on
+        # `requires_original`, so the card retires with the story instead of
+        # squatting the row; re-pinned on the next development in his file.
+        "requires_original": "amed-khan-foundation-gaza-2026",
+        "href": _original_story_href("amed-khan-foundation-gaza-2026"),
+        "kicker": {"en": "The people who show up", "ar": "الذين يحضرون"},
+        "title": {"en": "A bag of flour in four hours",
+                  "ar": "كيس طحين خلال أربع ساعات"},
+        "dek": {"en": "Amed Khan pays from his own pocket to feed Gaza's children and move its patients out. He got Hind Rajab's mother flour within four hours \u2014 then her whole family out of Gaza.",
+                "ar": "ينفق آمد خان من ماله الخاص ليطعم أطفال غزة ويُخرج مرضاها. أوصل الطحين إلى والدة هند رجب خلال أربع ساعات، ثم أخرج عائلتها كلها من القطاع."},
+        "cta": {"en": "Read his file \u2192", "ar": "اقرأ ملفه \u2190"},
+        "img": "/media/times-of-palestine-amed-khan-gaza-2026-lede.svg",
+        "img_alt": {"en": "A bag of flour in four hours \u2014 the Amed Khan Foundation in Gaza",
+                    "ar": "كيس طحين خلال أربع ساعات \u2014 مؤسسة آمد خان في غزة"},
+        "ticker": {"en": "A bag of flour in four hours: the American paying to feed Gaza's children",
+                   "ar": "كيس طحين خلال أربع ساعات: الأميركي الذي يدفع ليطعم أطفال غزة"},
+        "nav": {"en": "Amed Khan", "ar": "آمد خان"},
+    },
+    {
         # An open file (owner request 2026-09-14): a US citizen who raises
         # money to feed Gaza, flagged at every stage of a family flight, with
         # no agency willing to say under what authority. Pinned while the
@@ -5667,6 +5688,18 @@ def specials_band_html(lang, items=(), extra=""):
 # repo issues, never auto-mutated.
 _SVG_TEXT_TAG_RX = re.compile(r"<text\b([^>]*)>(.*?)</text>", re.S)
 _SVG_ARABIC_RX = re.compile(r"[؀-ۿ]")
+
+# An Arabic <text> that also carries ASCII digits (a year, a count, a
+# measurement) needs direction="rtl". Without it the base direction is LTR:
+# each Arabic word shapes correctly but the runs around the number lay out
+# left to right, so «طبقة 2025 الجوية» reaches the reader scrambled. The
+# same attribute INVERTS text-anchor — "start" becomes the right edge and
+# "end" the left — so a node that gains it must have its anchor flipped to
+# keep its alignment. svg_text_overflows skips Arabic nodes, so only a
+# screenshot or this net catches either half. (Found 2026-09-27, in art
+# shipped three days earlier.)
+RTL_MIXED_TEXT_RX = re.compile(
+    r"<text\b([^>]*)>((?=[^<]*[؀-ۿ])(?=[^<]*[0-9])[^<]*)</text>")
 
 
 def _svg_text_nodes(svg_src):

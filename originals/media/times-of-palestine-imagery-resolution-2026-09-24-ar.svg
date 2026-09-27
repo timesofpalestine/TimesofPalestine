@@ -10,26 +10,26 @@
 <rect width="1600" height="900" fill="url(#bg)"/>
 <rect x="1400" y="44" width="90" height="6" fill="#c7a86b"/>
 
-<text x="1490" y="110" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#c7a86b">ماذا يغطي البكسل الواحد</text>
-<text x="1490" y="180" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="44" fill="#f2eee8">الدقة الأرضية فوق شمال غزة</text>
-<text x="1490" y="226" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#aaa9a5">طول الشريط بمقياس لوغاريتمي، والأصغر أدقّ</text>
+<text x="1490" y="110" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#c7a86b">ماذا يغطي البكسل الواحد</text>
+<text x="1490" y="180" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="44" fill="#f2eee8">الدقة الأرضية فوق شمال غزة</text>
+<text x="1490" y="226" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="24" fill="#aaa9a5">طول الشريط بمقياس لوغاريتمي، والأصغر أدقّ</text>
 
-<text x="1490" y="344" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="40" font-weight="700" fill="#c7a86b">13 سم</text>
+<text x="1490" y="344" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="40" font-weight="700" fill="#c7a86b">13 سم</text>
 <rect x="921" y="308" width="379" height="34" fill="url(#gold)"/>
-<text x="1300" y="378" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#f2eee8">طبقة غوف ماب الجوية لعام 2025 فوق شمال القطاع</text>
-<text x="1300" y="408" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#aaa9a5">خيمة جندي، وساتر آلية، ومسار جرافة</text>
+<text x="1300" y="378" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#f2eee8">طبقة غوف ماب الجوية لعام 2025 فوق شمال القطاع</text>
+<text x="1300" y="408" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#aaa9a5">خيمة جندي، وساتر آلية، ومسار جرافة</text>
 
-<text x="1490" y="504" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="40" font-weight="700" fill="#c7a86b">40 سم</text>
+<text x="1490" y="504" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="40" font-weight="700" fill="#c7a86b">40 سم</text>
 <rect x="755" y="468" width="545" height="34" fill="url(#gold)"/>
-<text x="1300" y="538" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#f2eee8">أدقّ ما تبيعه الشركات الأميركية فوق إسرائيل وفلسطين منذ يوليو 2020</text>
-<text x="1300" y="568" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#aaa9a5">سيارة، وسطح منزل، وحفرة قصف</text>
+<text x="1300" y="538" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#f2eee8">أدقّ ما تبيعه الشركات الأميركية فوق إسرائيل وفلسطين منذ يوليو 2020</text>
+<text x="1300" y="568" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#aaa9a5">سيارة، وسطح منزل، وحفرة قصف</text>
 
-<text x="1490" y="664" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="40" font-weight="700" fill="#c7a86b">10 أمتار</text>
+<text x="1490" y="664" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="40" font-weight="700" fill="#c7a86b">10 أمتار</text>
 <rect x="280" y="628" width="1020" height="34" fill="#55565b"/>
-<text x="1300" y="698" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#f2eee8">سنتينل-2، القمر الأوروبي المجاني الذي يلجأ إليه الباحثون</text>
-<text x="1300" y="728" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#aaa9a5">مربع سكني كامل في أحسن الأحوال</text>
+<text x="1300" y="698" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#f2eee8">سنتينل-2، القمر الأوروبي المجاني الذي يلجأ إليه الباحثون</text>
+<text x="1300" y="728" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#aaa9a5">مربع سكني كامل في أحسن الأحوال</text>
 
 <rect x="110" y="778" width="1380" height="88" rx="8" fill="#17181b" stroke="#286344" stroke-width="2"/>
-<text x="1462" y="820" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#f2eee8">بكسل واحد من سنتينل-2 يغطي أرضًا توازي نحو 5900 بكسل من غوف ماب، والبكسل بدقة 40 سم يوازي تسعة</text>
-<text x="1462" y="852" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">المصادر: ناثان روزر عن طبقة غوف ماب، وقرار الإدارة الأميركية للمحيطات في يوليو 2020، ومواصفات سنتينل-2</text>
+<text x="1462" y="820" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="23" fill="#f2eee8">بكسل واحد من سنتينل-2 يغطي أرضًا توازي نحو 5900 بكسل من غوف ماب، والبكسل بدقة 40 سم يوازي تسعة</text>
+<text x="1462" y="852" direction="rtl" text-anchor="start" font-family="Cairo,Arial,sans-serif" font-size="21" fill="#aaa9a5">المصادر: ناثان روزر عن طبقة غوف ماب، وقرار الإدارة الأميركية للمحيطات في يوليو 2020، ومواصفات سنتينل-2</text>
 </svg>
