@@ -1,0 +1,33 @@
+{
+ "brief": "Tucker Carlson Network aired a segment examining what it described as Israel's \"most deadly order,\" though the network's post provided no details about the specific directive or its consequences.\n\nThe segment referenced a \"full conversation\" available elsewhere, suggesting the outlet explored the topic at greater length in video format. No additional context about the order, its timing, or its humanitarian impact was included in the available material.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.youtube.com/watch?v=Oadu2JMBpLA",
+   "name": "Tucker Carlson Network",
+   "url": "https://www.youtube.com/@TuckerCarlson",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-26T23:00:13+00:00",
+ "dek": "Watch the full conversation here: @thegrayzone7996…",
+ "dup_of": null,
+ "image": "https://i4.ytimg.com/vi/Oadu2JMBpLA/hqdefault.jpg",
+ "lang": "en",
+ "link": "https://www.youtube.com/watch?v=Oadu2JMBpLA",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "Tucker Carlson Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.youtube.com/watch?v=Oadu2JMBpLA"
+ },
+ "modified": "2026-09-26T23:30:21+00:00",
+ "original": false,
+ "pid": "b3c8619ae5",
+ "score": 48.91,
+ "source": "Tucker Carlson Network",
+ "source_id": "tucker",
+ "source_url": "https://www.youtube.com/@TuckerCarlson",
+ "title": "Israel's deadliest order draws scrutiny in televised segment"
+}
