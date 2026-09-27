@@ -1,0 +1,33 @@
+{
+ "brief": "Merseyside Police arrested protesters at a Palestine Action demonstration in Liverpool ahead of the Labour Party conference, Al Jazeera English reported. The arrests occurred as the activist group staged demonstrations in the city.\n\nPalestine Action has organized multiple protests targeting what it describes as Israeli arms manufacturing and shipping operations in Britain. The group has previously staged demonstrations at sites it links to weapons production.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/27/aje-onl-nf_palestine-action-protesters-arrested-in-liverpool-270926?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-27T18:56:27+00:00",
+ "dek": "Police have arrested protesters at a Palestine Action demonstration in Liverpool, ahead of the Labour Party conference.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790535377.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/27/aje-onl-nf_palestine-action-protesters-arrested-in-liverpool-270926?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/27/aje-onl-nf_palestine-action-protesters-arrested-in-liverpool-270926?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9ecd576f27",
+ "score": 49.23,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Police arrest Palestine Action protesters at Liverpool demonstration"
+}

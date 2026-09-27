@@ -1,0 +1,33 @@
+{
+ "brief": "يشهد قطاع غزة انهياراً اقتصادياً يفرض على الأطفال الالتحاق بسوق العمل برواتب زهيدة، بحسب المركز الفلسطيني للإعلام. يعكس الوضع تردياً حاداً في الأوضاع الاقتصادية للقطاع، ما يضطر العائلات الفقيرة لاستنزاف أطفالها في جهود البقاء.\n\nتفاقمت ظاهرة عمالة الأطفال برواتب متدنية جداً، ما يحرمهم من فرص التعليم والحياة الكريمة. يعكس هذا الواقع الظروف الإنسانية القاسية التي يعيشها السكان وسط الأزمة الاقتصادية الخانقة في القطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/09/27/1119252",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-27T19:07:20+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/09/27/1119252",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dcdb9187f4",
+ "score": 49.28,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "انهيار اقتصادي يدفع أطفال غزة للعمل برواتب متدنية"
+}
