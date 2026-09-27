@@ -1,0 +1,33 @@
+{
+ "brief": "الموقع الجغرافي الواحد في غزة قد يظهر بأشكال متباينة على خرائط غوغل وآبل، تبعاً لتواريخ الصور الجوية المحفوظة لدى كل منصة ومستويات الدقة المتاحة فيها. هذا الاختلاف يعكس فجوات في تحديث البيانات الجغرافية وتقنيات التصوير بين الخدمتين.\n\nتؤثر هذه الفروقات على دقة المعلومات الجغرافية المتاحة للمستخدمين، إذ قد تعرض إحدى المنصات صوراً أقدم للمناطق بينما تحتفظ الأخرى ببيانات أحدث. اختلاف دقة التصوير يضيف طبقة أخرى من التعقيد حول كيفية تمثيل الواقع الجغرافي رقمياً.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.net/news/2026/9/27/%d9%85%d9%83%d8%a7%d9%86-%d9%88%d8%a7%d8%ad%d8%af-%d9%88%d8%b5%d9%88%d8%b1-%d9%85%d8%ae%d8%aa%d9%84%d9%81%d8%a9-%d9%83%d9%8a%d9%81-%d8%aa%d8%a8%d8%af%d9%88-%d8%ba%d8%b2%d8%a9-%d8%b9%d9%84%d9%89?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-27T13:01:06+00:00",
+ "dek": "يمكن للموقع الجغرافي نفسه في غزة أن يظهر بصورة مختلفة تماما تبعا للمنصة المستخدمة، وتاريخ الصور الجوية المعروضة، ومستوى الدقة الذي تتيحه كل خدمة.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.net/wp-content/uploads/2026/09/ap_6ab927b1dd8fa-1790519217.jpg?resize=1920%2C1440",
+ "lang": "ar",
+ "link": "https://www.aljazeera.net/news/2026/9/27/%d9%85%d9%83%d8%a7%d9%86-%d9%88%d8%a7%d8%ad%d8%af-%d9%88%d8%b5%d9%88%d8%b1-%d9%85%d8%ae%d8%aa%d9%84%d9%81%d8%a9-%d9%83%d9%8a%d9%81-%d8%aa%d8%a8%d8%af%d9%88-%d8%ba%d8%b2%d8%a9-%d8%b9%d9%84%d9%89?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "الجزيرة نت",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.net/news/2026/9/27/%d9%85%d9%83%d8%a7%d9%86-%d9%88%d8%a7%d8%ad%d8%af-%d9%88%d8%b5%d9%88%d8%b1-%d9%85%d8%ae%d8%aa%d9%84%d9%81%d8%a9-%d9%83%d9%8a%d9%81-%d8%aa%d8%a8%d8%af%d9%88-%d8%ba%d8%b2%d8%a9-%d8%b9%d9%84%d9%89?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cf5a6a0884",
+ "score": 47.19,
+ "source": "الجزيرة نت",
+ "source_id": "aja",
+ "source_url": "https://www.aljazeera.net/",
+ "title": "خرائط غوغل وآبل تعرض صوراً مختلفة لغزة"
+}
