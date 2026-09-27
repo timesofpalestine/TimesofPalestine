@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces fired on a woman with a disability at Qalandia checkpoint in Jerusalem governorate, the Ma'an news agency reported. Her condition following the shooting was unclear.\n\nThe incident took place at one of the West Bank's main crossing points. Qalandia checkpoint, which connects Israeli-controlled and Palestinian-administered areas, has repeatedly been the site of armed clashes between Palestinians and Israeli military forces.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169484.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-27T08:20:22+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169484.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6984875eb3",
+ "score": 46.8,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Woman with disability shot at Qalandia checkpoint"
+}
