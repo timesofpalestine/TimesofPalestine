@@ -8,12 +8,15 @@ Both are in the copy, each attributed and timed, because a story about an
 official record being withdrawn cannot itself be loose about who said what.
 That, and the govmap and army statements, is what these tests hold.
 
-The SVG rule pinned at the bottom is the one that broke here in preview:
-`direction="rtl"` on an SVG <text> INVERTS text-anchor, so a "start"-anchored
-Arabic run walks off the left edge of the canvas and an "end"-anchored one
-walks off the right. Arabic text nodes are skipped by svg_text_overflows, so
-nothing but a screenshot catches it. Leave the attribute off and let the
-bidi algorithm place the run.
+The SVG rule pinned at the bottom took two screenshots to get right. An
+Arabic <text> that mixes words with ASCII digits NEEDS `direction="rtl"`:
+without it the base direction is LTR, so each Arabic word is shaped
+correctly but the runs are laid out left to right and «طبقة 2025 الجوية»
+comes out scrambled. The catch is that `direction="rtl"` also INVERTS
+text-anchor — "start" becomes the right edge and "end" the left — so every
+such node's anchor has to be flipped to match its intended alignment.
+Arabic text nodes are skipped by svg_text_overflows, so nothing but a
+screenshot catches either half of this.
 """
 import re
 import unittest
@@ -147,11 +150,13 @@ class ArtTests(unittest.TestCase):
             self.assertTrue(path.exists(), name)
             self.assertEqual([], build.svg_text_overflows(str(path)), name)
 
-    def test_no_svg_text_sets_direction_rtl(self):
-        # It inverts text-anchor and walks Arabic runs off the canvas, and the
-        # overflow checker skips Arabic nodes, so only a screenshot sees it.
+    def test_arabic_runs_carrying_digits_declare_rtl(self):
+        # Without direction="rtl" the base direction is LTR and the Arabic
+        # runs around a number lay out left to right, scrambling the line.
         for name, path in self._svgs():
-            self.assertNotIn('direction="rtl"', path.read_text(encoding="utf-8"), name)
+            for node in build.RTL_MIXED_TEXT_RX.finditer(path.read_text(encoding="utf-8")):
+                self.assertIn('direction="rtl"', node.group(0),
+                              f"{name}: {node.group(2)[:50]}")
 
     def test_each_edition_embeds_its_own_language_chart(self):
         self.assertIn(CHART, _body("en"))

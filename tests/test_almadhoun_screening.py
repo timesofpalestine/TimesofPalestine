@@ -122,9 +122,13 @@ class PinTests(unittest.TestCase):
                 self.assertTrue(card[field][lang].strip(), f"{field}/{lang}")
 
     def test_it_sits_behind_the_campaign_pin(self):
-        self.assertEqual(build.SPECIALS[0].get("requires_original"),
-                         "dima-barakat-file-2026")
-        self.assertEqual(build.SPECIALS[1].get("requires_original"), SLUG)
+        # The invariant is the campaign pin's lead, not this card's exact
+        # slot: later news pins land above it as they arrive, and the row
+        # is ordered news-first with the standing franchises at the end.
+        slugs = [c.get("requires_original") for c in build.SPECIALS]
+        self.assertEqual(slugs[0], "dima-barakat-file-2026")
+        self.assertIn(SLUG, slugs)
+        self.assertLess(slugs.index(SLUG), slugs.index("palestine-top100-2026"))
 
     def test_the_pin_retires_with_the_story(self):
         for lang in ("en", "ar"):
