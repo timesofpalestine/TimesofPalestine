@@ -1,0 +1,33 @@
+{
+ "brief": "Aid workers in Gaza confront an unprecedented debris removal operation, The Guardian reported, with an estimated 61 million tonnes of rubble concealing up to 10,000 bodies across the territory. The clearance effort ranks among the largest in modern history, complicated by the presence of unexploded ordnance buried beneath the ruins alongside human remains and displaced residents' possessions.\n\nIn Tel al-Hawa, a Gaza City neighbourhood, workers required a full day to clear a single road section, illustrating the scale and complexity of the task ahead. The operation demands careful excavation to preserve evidence, recover remains, and identify hazards before debris can be safely removed or recycled.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/sep/27/rubble-gaza-un-aid-workers-ruins-dead-bodies",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-27T07:00:58+00:00",
+ "dek": "Removal of war debris, in which lives, memories and unexploded Israeli bombs lie buried, is one of largest clearance operations in modern history It took all day to clear a section of road in the Tel al-Hawa neighbourhood in Gaza City.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/08b7ea559964b7e98f1d42a60096a1dad9cd1b16/256_0_3840_3072/master/3840.jpg?width=140&quality=85&auto=format&fit=max&s=588f21d0ab6b1955c869883f10b71f24",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/sep/27/rubble-gaza-un-aid-workers-ruins-dead-bodies",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/sep/27/rubble-gaza-un-aid-workers-ruins-dead-bodies"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "47fca52263",
+ "score": 63.46,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Gaza faces massive rubble clearance hiding thousands of bodies"
+}
