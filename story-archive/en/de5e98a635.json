@@ -1,0 +1,39 @@
+{
+ "brief": "A man sustained serious injuries in a drone strike by Israeli forces in the Sheikh Radwan neighborhood of northern Gaza City, Shehab Wire reported. The strike targeted the residential area, leaving the civilian with what witnesses described as critical wounds.\n\nDetails of the incident remain limited, though video and photographic evidence documented the strike and its aftermath in the densely populated district.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.com/post/164795/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%88%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%AE%D8%B7%D9%8A%D8%B1%D8%A9-%D9%81%D9%8A-%D9%82%D8%B5%D9%81-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%A8%D8%AD%D9%8A-%D8%A7%D9%84%D8%B4%D9%8A%D8%AE-%D8%B1%D8%B6%D9%88%D8%A7%D9%86-%D8%B4%D9%85%D8%A7%D9%84-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%BA%D8%B2%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-injures-several-displaced-people-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-26T21:30:00+00:00",
+ "dek": "A man sustained serious injuries in a drone strike by Israeli forces in the Sheikh Radwan neighborhood of northern Gaza City, Shehab Wire reported.",
+ "dup_of": null,
+ "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/aXJ2p.jpg?v=1",
+ "lang": "en",
+ "link": "https://shehabnews.com/post/164795/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%88%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%AE%D8%B7%D9%8A%D8%B1%D8%A9-%D9%81%D9%8A-%D9%82%D8%B5%D9%81-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%A8%D8%AD%D9%8A-%D8%A7%D9%84%D8%B4%D9%8A%D8%AE-%D8%B1%D8%B6%D9%88%D8%A7%D9%86-%D8%B4%D9%85%D8%A7%D9%84-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%BA%D8%B2%D8%A9",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Shehab Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.com/post/164795/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%88%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%AE%D8%B7%D9%8A%D8%B1%D8%A9-%D9%81%D9%8A-%D9%82%D8%B5%D9%81-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%A8%D8%AD%D9%8A-%D8%A7%D9%84%D8%B4%D9%8A%D8%AE-%D8%B1%D8%B6%D9%88%D8%A7%D9%86-%D8%B4%D9%85%D8%A7%D9%84-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%BA%D8%B2%D8%A9"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "de5e98a635",
+ "score": 91.31,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "Israeli drone strike wounds man in northern Gaza neighborhood"
+}
