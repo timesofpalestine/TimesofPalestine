@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli troops opened fire on a Palestinian woman at the Qalandia checkpoint north of Jerusalem, the Ma'an news agency reported. The incident occurred at one of the occupied West Bank's most heavily trafficked military checkpoints, where Palestinian civilians face daily searches and restrictions on movement.\n\nNo immediate details were provided regarding the woman's condition or the circumstances that prompted the shooting.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169470.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-27T07:35:05+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169470.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "06eecabc8a",
+ "score": 49.7,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces shoot Palestinian woman at Qalandia checkpoint north of Jerusalem"
+}
