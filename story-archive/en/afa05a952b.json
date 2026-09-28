@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/politics/2026/sep/28/israel-no-right-close-jerusalem-uk-consulate-foreign-office-advised",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/could-britain-defy-israels-order-shut-down-its-east-jerusalem-consulate",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-28T11:28:12+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "afa05a952b",
- "score": 49.1,
+ "score": 48.81,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
