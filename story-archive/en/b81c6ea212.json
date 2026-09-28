@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/09/israels-netanyahu-visited-abu-dhabi-sunday-israeli-official-says",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-asks-uae-president-deny-warning-7-october-attack",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-27T20:46:28+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b81c6ea212",
- "score": 68.22,
+ "score": 67.96,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
