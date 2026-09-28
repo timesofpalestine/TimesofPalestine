@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli attacks killed at least four Palestinians and wounded 12 others across Gaza since dawn, Al Jazeera reported citing medical sources. The strikes occurred throughout the Gaza Strip, though specific locations and circumstances of the attacks were not detailed in initial reports.\n\nMedical officials did not immediately specify the nature of the Israeli operations or whether they targeted particular infrastructure or militant positions in the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-least-four-across-gaza-report-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-27T20:16:38+00:00",
+ "dek": "Israeli attacks kill at least four across Gaza, report says Israeli attacks have killed at least four Palestinians and wounded 12 others across the Gaza Strip since dawn, Al Jazeera reported, citing medical sources.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-least-four-across-gaza-report-says",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "220a1d05bd",
+ "score": 61.32,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli attacks kill four Palestinians across Gaza"
+}
