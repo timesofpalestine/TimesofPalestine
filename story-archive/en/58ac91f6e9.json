@@ -1,0 +1,39 @@
+{
+ "brief": "Police arrested demonstrators outside the UK Labour Party conference who were protesting the government's designation of Palestine Action as a \"terrorist\" organisation, Al Jazeera English reported. The protesters gathered to oppose the proscription, which classifies the group as a banned entity under UK law.\n\nPalestine Action has faced increased scrutiny from British authorities in recent months. The group's members have staged various demonstrations and direct actions related to Palestinian causes, leading to the formal designation that protesters say infringes on their right to political expression.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/28/palestine-action-protesters-arrested-outside-uk-labour-party-conference?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/i-oppose-genocide-hundreds-risk-arrest-outside-labour-conference-over-palestine-action-ban",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-28T02:23:30+00:00",
+ "dek": "Demonstrators protest against UK government's proscription of Palestine Action as a 'terrorist' organisation.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/AFP__20260927__C9GQ7RP__v1__HighRes__BritainPoliticsLabourConferencePalestineConflic-1790556488.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/28/palestine-action-protesters-arrested-outside-uk-labour-party-conference?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/28/palestine-action-protesters-arrested-outside-uk-labour-party-conference?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "58ac91f6e9",
+ "score": 43.56,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UK police arrest Palestine Action protesters at Labour conference"
+}
