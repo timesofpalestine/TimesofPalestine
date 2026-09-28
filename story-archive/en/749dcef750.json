@@ -6,13 +6,7 @@
    "article": "http://www.democracynow.org/2026/9/25/netanyahu_at_unga",
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
-   "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48309",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://zeteo.com/p/netanyahu-slams-mamdani-and-piker",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "749dcef750",
- "score": 3.37,
+ "score": 3.04,
  "source": "Democracy Now!",
  "source_id": "democracynow",
  "source_url": "https://www.democracynow.org/",
