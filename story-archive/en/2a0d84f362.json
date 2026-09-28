@@ -1,0 +1,33 @@
+{
+ "brief": "Young inventors in Gaza City are designing and constructing robots despite severe material constraints, Al Jazeera English reported. Participants at a youth hackathon are repurposing available components to create functioning machines, demonstrating ingenuity under limited circumstances.\n\nThe initiative reflects efforts to foster innovation and technical skills among Gaza's youth despite the territory's economic and infrastructure challenges. The hackathon provides a platform for emerging engineers and programmers to collaborate on robotics projects.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/28/gazas-young-inventors-build-robots-with-what-they-have?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-28T20:34:22+00:00",
+ "dek": "At a youth hackathon in Gaza City, young inventors are developing robots.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790627349.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/28/gazas-young-inventors-build-robots-with-what-they-have?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/28/gazas-young-inventors-build-robots-with-what-they-have?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2a0d84f362",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza youth build robots amid resource scarcity"
+}
