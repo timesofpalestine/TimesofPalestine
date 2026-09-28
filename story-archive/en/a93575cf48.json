@@ -7,6 +7,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/i-oppose-genocide-hundreds-risk-arrest-outside-labour-conference-over-palestine-action-ban",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-28T01:37:27+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "a93575cf48",
- "score": 43.7,
+ "score": 43.4,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
