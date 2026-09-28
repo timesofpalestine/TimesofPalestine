@@ -6,19 +6,7 @@
    "article": "https://t.me/Arabi21News/429449",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
-   "article": "https://qudsn.co/post?id=217829&slug=%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AA%D8%B3%D8%AD%D8%A8-%D8%A7%D9%84%D8%B5%D9%81%D8%A9-%D8%A7%D9%84%D8%AF%D8%A8%D9%84%D9%88%D9%85%D8%A7%D8%B3%D9%8A%D8%A9-%D9%85%D9%86-%D8%A8%D8%B9%D8%AB%D8%A9-%D9%87%D9%88%D9%84%D9%86%D8%AF%D8%A7-%D9%81%D9%8A-%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%84%D9%87",
-   "name": "شبكة قدس الإخبارية",
-   "url": "https://qudsn.co/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/83367",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-27T22:17:17+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "a7bace02f3",
- "score": 37.86,
+ "score": 37.5,
  "source": "عربي21",
  "source_id": "tg-arabi21",
  "source_url": "https://t.me/arabi21news",
