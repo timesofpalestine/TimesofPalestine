@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/37057",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/9/28/%d8%b9%d8%a7%d8%ac%d9%84-%d9%88%d9%83%d8%a7%d9%84%d8%a9-%d8%a3%d9%86%d8%a8%d8%a7%d8%a1-%d8%a7%d9%84%d8%a5%d9%85%d8%a7%d8%b1%d8%a7%d8%aa-%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3-%d9%85%d8%ad%d9%85%d8%af?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-28T11:08:02+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "5c41691fdf",
- "score": 43.8,
+ "score": 43.4,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",

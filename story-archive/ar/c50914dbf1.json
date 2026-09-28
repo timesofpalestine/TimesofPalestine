@@ -1,0 +1,33 @@
+{
+ "brief": "كشف تقرير حقوقي عن تدمير واسع طال القطاع الصناعي في قطاع غزة جرّاء الحرب الجارية، مما أثّر بشكل مباشر على مقومات الاقتصاد المحلي. ولم يحدّد التقرير تفاصيل محددة عن نسب الخسائر أو عدد المنشآت المتضررة.\n\nيأتي التقرير في سياق استمرار العمليات العسكرية بالقطاع منذ أشهر، والتي أحدثت دماراً واسعاً في البنية التحتية والمرافق الاقتصادية. يركّز التقرير على الآثار الاقتصادية للحرب وتأثيرها على القدرة الإنتاجية للقطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/09/28/1119370",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-28T20:22:03+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/09/28/1119370",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c50914dbf1",
+ "score": 49.81,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "تقرير يوثّق تدمير الحرب للقطاع الصناعي بغزة"
+}
