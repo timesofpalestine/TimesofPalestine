@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/politics/2026/sep/28/ed-miliband-labour-former-stance-palestine-fell-short",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/we-hear-you-you-were-right-ed-miliband-addresses-critics-labour-policy",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-28T04:00:24+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "51766a7638",
- "score": 40.59,
+ "score": 40.21,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
