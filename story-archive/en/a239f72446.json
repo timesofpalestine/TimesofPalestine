@@ -6,26 +6,32 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-asks-uae-president-deny-warning-7-october-attack",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/secret-uae-visit-netanyahu-asked-mbz-deny-pre-oct-7-warnings",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-28T13:48:19+00:00",
  "dek": "Netanyahu asks UAE president to deny warning before 7 October attack During a meeting in Abu Dhabi on Sunday, Israeli Prime Minister Benjamin Netanyahu asked UAE President Sheikh Mohamed bin Zayed Al Nahyan to refute a report that he had warned Israel of an…",
  "dup_of": null,
- "image": "https://www.middleeasteye.net/sites/default/files/2026-09/000_C997839.jpg",
+ "image": "/media/times-of-palestine-cover-politics.svg",
  "lang": "en",
  "link": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-asks-uae-president-deny-warning-7-october-attack",
  "max_age_hours": 72,
  "media": {
-  "credit": "Middle East Eye",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-asks-uae-president-deny-warning-7-october-attack"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "a239f72446",
- "score": 79.05,
+ "score": 78.68,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
