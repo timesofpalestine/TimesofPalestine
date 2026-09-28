@@ -6,13 +6,7 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-asks-uae-president-deny-warning-7-october-attack",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/09/secret-uae-visit-netanyahu-asked-mbz-deny-pre-oct-7-warnings",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-28T13:48:19+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "a239f72446",
- "score": 78.32,
+ "score": 77.95,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
