@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/9/28/palestinians-denounce-israeli-minister-ben-gvirs-threats-against-prisoner?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-condemns-ben-gvirs-threat-kill-palestinian-prisoner-hassan-salameh",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-09-28T10:11:28+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "84c55ff4a2",
- "score": 47.28,
+ "score": 46.9,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
