@@ -1,0 +1,33 @@
+{
+ "brief": "UK Foreign Secretary Ed Miliband was accosted by demonstrators at a restaurant over the government's decision to proscribe Palestine Action, Al Jazeera English reported. The group, which staged disruptive protests at weapons factories and military sites, was designated a terrorist organization by the UK government.\n\nThe proscription made it illegal to support, fund, or be a member of Palestine Action.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/28/uk-foreign-secretary-confronted-by-activists-over-palestine-action-ban?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-28T01:37:27+00:00",
+ "dek": "UK Foreign Secretary Ed Miliband was confronted by activists at a restaurant over the proscription of Palestine Action.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790559251.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/28/uk-foreign-secretary-confronted-by-activists-over-palestine-action-ban?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/28/uk-foreign-secretary-confronted-by-activists-over-palestine-action-ban?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a93575cf48",
+ "score": 49.44,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Activists confront UK Foreign Secretary over Palestine Action ban"
+}
