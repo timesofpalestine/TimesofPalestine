@@ -1,0 +1,33 @@
+{
+ "brief": "Israel has shut occupied West Bank crossings for a week, further restricting Palestinian movement and access to holy sites, Al Jazeera English reported. The closure compounds existing restrictions on Palestinian transit in the territory, where Israeli checkpoints control movement between towns and population centers.\n\nIsrael maintains approximately 300 checkpoints throughout the occupied West Bank, according to the reporting. These installations regulate Palestinian travel and access to essential services, employment, and religious sites.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/28/mapping-israels-300-checkpoints-where-they-are-and-how-they-work?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-28T08:50:37+00:00",
+ "dek": "Israel has shut occupied West Bank crossings for a week, further restricting Palestinian movement and holy site access.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2017/11/5aa8a67ab2524c3b9908968c6bfe36ed_18.jpeg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/28/mapping-israels-300-checkpoints-where-they-are-and-how-they-work?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/28/mapping-israels-300-checkpoints-where-they-are-and-how-they-work?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1ebdd3c23b",
+ "score": 49.72,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel closes West Bank crossings, restricting Palestinian movement"
+}
