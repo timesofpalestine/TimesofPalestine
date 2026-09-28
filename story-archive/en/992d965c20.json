@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces have intensified violations in Jerusalem and the Al-Aqsa Mosque compound, transforming the city into a military installation, the Ma'an news agency reported. The escalation marks a deepening of security measures in the occupied Palestinian territory's most sensitive religious and political site.\n\nThe heightened military presence reflects ongoing tensions surrounding Al-Aqsa, where restrictions on Palestinian access and worship have intensified in recent months. Israeli security operations in Jerusalem's Old City have expanded alongside the deployment of additional forces throughout the occupied Palestinian capital.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169549.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-28T07:34:22+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169549.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "992d965c20",
+ "score": 49.51,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel escalates violations in Jerusalem, converting city to military barracks"
+}
