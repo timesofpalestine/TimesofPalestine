@@ -13,6 +13,12 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-police-guard-1500-jewish-settlers-storming-al-aqsa-mosque",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-28T08:15:45+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "497b4c93d3",
- "score": 63.32,
+ "score": 62.99,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
