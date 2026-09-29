@@ -1,0 +1,39 @@
+{
+ "brief": "Qatar's prime minister has accused Israeli Prime Minister Benjamin Netanyahu of committing war crimes in Gaza, Al Jazeera English reported. The accusation came during an interview with British broadcaster Piers Morgan, in which Netanyahu targeted Qatar's role in the conflict.\n\nThe exchange reflects deepening tensions over Israel's military operations in Gaza and Qatar's diplomatic involvement in regional affairs. Qatar has maintained an active mediating role in Israeli-Palestinian disputes and served as a hub for international negotiations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/29/netanyahu-targets-qatar-to-deflect-from-gaza-war?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://shehabnews.com/post/165016/%D8%B1%D8%A6%D9%8A%D8%B3-%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D9%82%D8%B7%D8%B1-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%85%D8%AC%D8%B1%D9%85-%D8%AD%D8%B1%D8%A8-%D9%88%D8%A7%D9%84%D8%AF%D9%88%D8%AD%D8%A9-%D9%85%D8%B3%D8%AA%D9%85%D8%B1%D8%A9-%D9%81%D9%8A-%D8%AC%D9%87%D9%88%D8%AF-%D8%A7%D9%84%D9%88%D8%B3%D8%A7%D8%B7%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-29T21:24:07+00:00",
+ "dek": "In an interview with British broadcaster Piers Morgan, Qatar’s prime minister accused Israeli’s Netanyahu of war crimes…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/image-1790717036.jpg?resize=1920%2C969&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/29/netanyahu-targets-qatar-to-deflect-from-gaza-war?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/29/netanyahu-targets-qatar-to-deflect-from-gaza-war?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "006bbed412",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu blames Qatar for Gaza conflict, PM counters with war crimes accusation"
+}
