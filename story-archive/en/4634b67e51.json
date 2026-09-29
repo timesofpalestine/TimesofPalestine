@@ -1,0 +1,33 @@
+{
+ "brief": "Satellite imagery shows extensive destruction across Gaza following more than three years of Israeli military operations, Al Jazeera English reported. Google Earth images document the scale of physical devastation in the territory, where more than 74,000 Palestinians have been killed according to health authorities.\n\nThe photographs provide visual documentation of damage to residential areas, infrastructure, and civilian spaces across the Gaza Strip. The images form part of ongoing assessments of the conflict's humanitarian toll on the Palestinian population.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/29/satellite-images-show-gaza-in-ruins-three-years-into-israels-genocidal-war?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-29T07:41:59+00:00",
+ "dek": "Google Earth images show scale of Israel's destruction of Gaza, where more than 74,000 Palestinians have been killed.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/INTERACTIVE-Gaza-gif-1790661543.gif?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/29/satellite-images-show-gaza-in-ruins-three-years-into-israels-genocidal-war?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/29/satellite-images-show-gaza-in-ruins-three-years-into-israels-genocidal-war?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4634b67e51",
+ "score": 63.78,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Satellite images reveal widespread destruction across Gaza after three years of war"
+}

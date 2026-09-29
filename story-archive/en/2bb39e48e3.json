@@ -1,0 +1,33 @@
+{
+ "brief": "Doctors in Gaza face mounting pressure to prioritize which patients receive diagnostic testing as shortages of medical equipment force them to delay care for many, Al Jazeera English reported. Medical staff must make difficult decisions about who undergoes testing first, leaving some patients waiting indefinitely for diagnoses while treatable conditions risk progression.\n\nThe shortage of testing equipment has created a bottleneck in Gaza's already strained healthcare system, compounding difficulties faced by medical professionals trying to serve a population with limited resources.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/9/29/gaza-doctors-face-tough-decisions-as-patients-face-long-waits-for-diagnoses?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-29T07:26:37+00:00",
+ "dek": "Medical staff in Gaza struggle to treat patients with shortages in testing equipment.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2-1-1790594753.jpg?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/9/29/gaza-doctors-face-tough-decisions-as-patients-face-long-waits-for-diagnoses?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/9/29/gaza-doctors-face-tough-decisions-as-patients-face-long-waits-for-diagnoses?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2bb39e48e3",
+ "score": 49.6,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza doctors ration scarce testing equipment amid patient backlogs"
+}
