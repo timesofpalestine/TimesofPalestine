@@ -1,0 +1,33 @@
+{
+ "brief": "Britain has frozen more than 80 licenses for exporting weapons to Israel, the Ma'an news agency reported. The move comes as the government reassesses arms sales policy amid ongoing military operations in Gaza.\n\nThe frozen licenses cover various categories of military equipment and munitions. The decision reflects growing international scrutiny over weapons transfers to Israel during its campaign in Palestinian territories.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169624.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-29T09:57:46+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169624.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d4988ab7e0",
+ "score": 34.65,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Britain freezes over 80 arms export licenses to Israel"
+}
