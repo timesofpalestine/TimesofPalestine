@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli settlers attacked the northern West Bank village of Jalud, setting fire to two homes belonging to the Al-Tubasi family, Al Jazeera English reported. The assault marked another incident of settler violence in occupied Palestinian territory.\n\nDetails of casualties, injuries, or the extent of damage were not immediately available. Settler attacks on Palestinian communities have escalated in recent years, often targeting homes and agricultural land in the occupied West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/29/israeli-settlers-attack-jalud-village-in-occupied-west-bank-torch-homes?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.maannews.net/news/2169606.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-29T08:01:14+00:00",
+ "dek": "A group of settlers attacked two homes belonging to the Al-Tubasi family in northern West Bank village.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-09-29T063320Z_849883368_RC2TSNA3J3V8_RTRMADP_3_ISRAEL-PALESTINIANS-SETTLERS-VIOLENCE-1790668507.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/29/israeli-settlers-attack-jalud-village-in-occupied-west-bank-torch-homes?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/29/israeli-settlers-attack-jalud-village-in-occupied-west-bank-torch-homes?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8baf0b33f2",
+ "score": 49.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers torch homes in West Bank village of Jalud"
+}

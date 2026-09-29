@@ -1,0 +1,33 @@
+{
+ "brief": "Israel has tightened movement restrictions across the West Bank, turning routine journeys into extended ordeals for Palestinians, Al Jazeera English reported. Road closures have disrupted access to essential services, with Palestinians facing significant delays in reaching medical facilities and other destinations.\n\nThe restrictions have compounded existing challenges for Palestinians navigating the fragmented territory. Movement barriers have lengthened travel times for basic activities, affecting civilians' ability to access healthcare and conduct daily activities across the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/29/israels-west-bank-road-closures-turn-routine-journeys-into-long-ordeals?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-29T07:44:06+00:00",
+ "dek": "Palestinians face delayed medical care and long journeys as Israel tightens movement restrictions across the West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6abac6e197de-1790625505.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/29/israels-west-bank-road-closures-turn-routine-journeys-into-long-ordeals?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/29/israels-west-bank-road-closures-turn-routine-journeys-into-long-ordeals?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "69bb225a28",
+ "score": 49.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel's West Bank road closures delay Palestinian medical care, long journeys"
+}
