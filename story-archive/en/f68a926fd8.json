@@ -1,0 +1,45 @@
+{
+ "brief": "The Ma'an news agency reported that Palestinian communities face attacks by Israeli settlers operating under the watch of occupation forces. Settler violence has escalated across the West Bank, often occurring in areas where Israeli military presence is documented.\n\nSettler assaults on Palestinians and their property have intensified in recent months, particularly in rural areas where Palestinian farmers tend land near Jewish settlements. Attacks frequently occur with little apparent intervention from Israeli forces stationed in the vicinity.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169606.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/settler-attack-west-bank-village-injures-israeli-forces-drawing-rare-rebuke",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/over-100-israeli-settlers-raid-palestinian-village-torch-homes",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-29T07:45:27+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169606.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f68a926fd8",
+ "score": 45.75,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli military watches as settlers attack Palestinians"
+}
