@@ -7,11 +7,17 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/uae-confirms-netanyahu-visit-first-time-no-mention-regional-wars",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-09-28T21:46:30+00:00",
  "dek": "CAIRO, Sept 28 (Reuters) - UAE President Sheikh Mohamed bin Zayed Al Nahyan discussed bilateral relations during a visit on Sunday by Israeli Prime Minister Benjamin Netanyahu to the Gulf country, the Emirati state news agency WAM reported on Monday.",
- "dup_of": "5c41691fdf",
+ "dup_of": null,
  "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-09/2026-09-28T210347Z_1_LYNXMPEM8R1MP_RTROPTP_3_EMIRATES-ISRAEL.JPG?h=c9f93661&itok=aoDn7jPN",
  "lang": "en",
  "link": "https://www.al-monitor.com/originals/2026/09/uae-president-discussed-bilateral-relations-israels-netanyahu-state-news-agency",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1d80d17558",
- "score": 73.1,
+ "score": 70.25,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
