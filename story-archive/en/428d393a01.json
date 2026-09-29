@@ -1,0 +1,33 @@
+{
+ "brief": "The 81st United Nations General Assembly concluded its general debate with artificial intelligence, the Israeli-Palestinian conflict, and ongoing wars emerging as dominant themes across member state speeches, Al Jazeera English reported.\n\nDelegates addressed concerns about AI's rapid development and its implications for global governance, alongside persistent calls for action on the Palestine question. The assembly's proceedings reflected deepening international divisions over regional conflicts and the need for coordinated responses to technological disruption.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/29/unga-81-five-key-takeaways-from-general-debate?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-29T08:30:40+00:00",
+ "dek": "The 81st United Nations General Assembly ends with AI, Palestine and wars dominating speeches.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/epa_6abb4a5563e2-1790659157.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/29/unga-81-five-key-takeaways-from-general-debate?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/29/unga-81-five-key-takeaways-from-general-debate?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "428d393a01",
+ "score": 49.58,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "AI, Palestine, wars dominate UN General Assembly debate"
+}
