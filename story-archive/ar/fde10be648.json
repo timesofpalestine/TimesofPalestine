@@ -1,23 +1,23 @@
 {
- "brief": "Thousands of ultra-Orthodox Jewish protesters demonstrated Tuesday evening in occupied Jerusalem against mandatory military service in the Israeli army, Shehab Wire reported. The demonstrators, known as Haredi Jews, explicitly rejected conscription orders and characterized the military as an \"enemy army.\"\n\nThe protest reflects ongoing tensions between Israel's religious communities and state military policy. Ultra-Orthodox groups have historically sought exemptions from military service on religious grounds.",
+ "brief": "تظاهر آلاف اليهود المتدينين من الحريديم مساء الثلاثاء في القدس المحتلة، رافضين قرارات فرض التجنيد الإلزامي في جيش الاحتلال الإسرائيلي، بحسب وكالة شهاب. رفع المتظاهرون شعار \"لن نخدم في جيش العدو\" معبّرين عن موقفهم من الجيش.\n\nيأتي الاحتجاج وسط توتر متصاعد بين الحكومة الإسرائيلية والجماعات الدينية حول فرض الخدمة العسكرية على الحريديم، الذين ظلوا معفيين تاريخياً من التجنيد الإلزامي بموجب اتفاقات سابقة.",
  "cat": "westbank",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165017/%D9%84%D9%86-%D9%86%D8%AE%D8%AF%D9%85-%D9%81%D9%8A-%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%B9%D8%AF%D9%88-%D8%A2%D9%84%D8%A7%D9%81-%D8%A7%D9%84%D8%AD%D8%B1%D9%8A%D8%AF%D9%8A%D9%85-%D9%8A%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D8%A7%D9%84%D9%85%D8%AD%D8%AA%D9%84%D8%A9-%D8%B1%D9%81%D8%B6%D8%A7-%D9%84%D9%84%D8%AA%D8%AC%D9%86%D9%8A%D8%AF-%D8%A7%D9%84%D8%A5%D8%AC%D8%A8%D8%A7%D8%B1%D9%8A",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-09-29T20:45:00+00:00",
- "dek": "Thousands of ultra-Orthodox Jewish protesters demonstrated Tuesday evening in occupied Jerusalem against mandatory military service in the Israeli army, Shehab Wire reported.",
+ "dek": "تظاهر آلاف اليهود المتدينين \"الحريديم\"، مساء الثلاثاء، في مدينة القدس المحتلة، رفضاً لقرارات إجبارهم على التجنيد في جيش الاحتلال الإسرائيلي، الذي وصفوه صراحة بـ \"جيش العدو\".",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/6WbSs.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165017/%D9%84%D9%86-%D9%86%D8%AE%D8%AF%D9%85-%D9%81%D9%8A-%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%B9%D8%AF%D9%88-%D8%A2%D9%84%D8%A7%D9%81-%D8%A7%D9%84%D8%AD%D8%B1%D9%8A%D8%AF%D9%8A%D9%85-%D9%8A%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D8%A7%D9%84%D9%85%D8%AD%D8%AA%D9%84%D8%A9-%D8%B1%D9%81%D8%B6%D8%A7-%D9%84%D9%84%D8%AA%D8%AC%D9%86%D9%8A%D8%AF-%D8%A7%D9%84%D8%A5%D8%AC%D8%A8%D8%A7%D8%B1%D9%8A",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165017/%D9%84%D9%86-%D9%86%D8%AE%D8%AF%D9%85-%D9%81%D9%8A-%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%B9%D8%AF%D9%88-%D8%A2%D9%84%D8%A7%D9%81-%D8%A7%D9%84%D8%AD%D8%B1%D9%8A%D8%AF%D9%8A%D9%85-%D9%8A%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D8%A7%D9%84%D9%85%D8%AD%D8%AA%D9%84%D8%A9-%D8%B1%D9%81%D8%B6%D8%A7-%D9%84%D9%84%D8%AA%D8%AC%D9%86%D9%8A%D8%AF-%D8%A7%D9%84%D8%A5%D8%AC%D8%A8%D8%A7%D8%B1%D9%8A"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "fde10be648",
- "score": 48.36,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 48.33,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Thousands of ultra-Orthodox Jews protest military conscription in Jerusalem"
+ "title": "آلاف الحريديم يتظاهرون رفضاً لتجنيدهم في جيش الاحتلال"
 }
