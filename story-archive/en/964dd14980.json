@@ -1,0 +1,33 @@
+{
+ "brief": "The Quincy Institute alleges that Israeli intelligence possessed advance knowledge of the October 7th attack before it occurred. The specific details of what warnings were received, when they were communicated, and to whom remain unclear from the available reporting.\n\nThe claim conflicts with Israeli officials' public statements immediately following the assault, in which they described the attack as a surprise. Questions about intelligence failures and early warnings have become a focal point in subsequent investigations and political debate within Israel.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://www.youtube.com/watch?v=H03tIHgSeeU&t=2s",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-28T23:04:00+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-research.svg",
+ "lang": "en",
+ "link": "https://www.youtube.com/watch?v=H03tIHgSeeU&t=2s",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "964dd14980",
+ "score": 71.23,
+ "source": "Quincy Institute",
+ "source_id": "quincy",
+ "source_url": "https://quincyinst.org/",
+ "title": "Report claims Israel had prior warning of October 7th attack"
+}
