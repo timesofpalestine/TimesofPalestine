@@ -6,7 +6,13 @@
    "article": "https://www.youtube.com/watch?v=H03tIHgSeeU&t=2s",
    "name": "Quincy Institute",
    "url": "https://quincyinst.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-he-filed-libel-lawsuits-over-october-7-warning",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-28T23:04:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "964dd14980",
- "score": 71.08,
+ "score": 71.06,
  "source": "Quincy Institute",
  "source_id": "quincy",
  "source_url": "https://quincyinst.org/",
