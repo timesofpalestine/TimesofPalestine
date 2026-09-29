@@ -7,6 +7,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.pbc.ps/51-51",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": false
   }
  ],
  "date": "2026-09-29T16:51:07+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4ab4769d0f",
- "score": 60.04,
+ "score": 59.79,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
