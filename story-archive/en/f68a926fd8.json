@@ -13,6 +13,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-boy-shot-israeli-gunfire-during-raid-al-faraa-refugee-camp",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-29T07:45:27+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "f68a926fd8",
- "score": 39.34,
+ "score": 39.15,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
