@@ -6,13 +6,19 @@
    "article": "https://www.alquds.co.uk/%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d8%b3%d9%8a%d8%af%d8%a9-%d9%88%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-5-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-%d8%a8%d9%87%d8%ac%d9%85%d8%a7%d8%aa",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/83432",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
   }
  ],
- "date": "2026-09-30T07:42:54+00:00",
- "dek": "غزة: استشهدت سيدة وأصيب 5 فلسطينيين، فجر الأربعاء، في غارات جوية وإطلاق نار إسرائيلي استهدفا مناطق متفرقة من قطاع غزة. يأتي ذلك ضمن الخروقات الإسرائيلية المستمرة لاتفاق وقف إطلاق النار الساري في القطاع منذ 10 تشرين الأول/ أكتوبر 2025.",
+ "date": "2026-09-30T15:07:54+00:00",
+ "dek": "“القدس العربي”: استشهد 8 فلسطينيين وأصيب 23 آخرون على الأقل، الأربعاء، جراء هجمات إسرائيلية على قطاع غزة، بينهم 5 استشهدوا في قصف مركبة بحي تل الهوى جنوب مدينة غزة.",
  "dup_of": null,
- "image": "https://www.alquds.co.uk/wp-content/uploads/2026/09/2ipj-25.jpg",
+ "image": "https://www.alquds.co.uk/wp-content/uploads/2026/09/9ipj-23.jpg",
  "lang": "ar",
  "link": "https://www.alquds.co.uk/%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-%d8%b3%d9%8a%d8%af%d8%a9-%d9%88%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-5-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d9%8a%d9%86-%d8%a8%d9%87%d8%ac%d9%85%d8%a7%d8%aa",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "56cb9efe04",
- "score": 62.79,
+ "score": 63.2,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",
