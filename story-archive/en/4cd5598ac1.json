@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/us-news/2026/sep/29/senate-resolution-west-bank-israel-violence",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/us-senate-blocks-measure-demanding-report-rights-violations-west-bank",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-30T00:16:17+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4cd5598ac1",
- "score": 63.68,
+ "score": 63.43,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
