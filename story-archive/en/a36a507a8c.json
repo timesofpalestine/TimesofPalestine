@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/37099",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/30/netanyahu-praises-indian-pilot-for-saving-lives-on-flydubai-flight?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-30T09:15:39+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "a36a507a8c",
- "score": 27.45,
+ "score": 27.18,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
