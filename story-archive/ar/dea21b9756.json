@@ -1,29 +1,35 @@
 {
- "brief": "The Palestinian Ahrar movement denounced Israeli occupation forces for what it called daily war crimes in Gaza, including airstrikes targeting civilian vehicles and infrastructure, Shehab Wire reported. The movement characterized the attacks as part of a systematic effort to eliminate all means of livelihood in the enclave.\n\nAhrar called the recent aerial bombardment of civilian transport vehicles an escalation of crimes against Palestinian civilians and accused Israel of pursuing a strategy to destroy Gaza's basic services and economic capacity.",
+ "brief": "أدانت حركة الأحرار الفلسطينية بأشد العبارات استمرار جرائم الاحتلال الإسرائيلي اليومية واستهدافه المدنيين وسبل الحياة في قطاع غزة. واعتبرت الحركة القصف الجوي الذي استهدف مركبات نقل المواطنين جريمة حرب، داعية إلى وقف الانتهاكات الممنهجة.\n\nذكرت حركة الأحرار أن استهداف المدنيين ومختلف البنى التحتية يؤكد سعي الاحتلال لقتل كل سبل الحياة في القطاع، متهمة إسرائيل بمواصلة استراتيجية تصعيد يومية ضد السكان العزل.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165048/%D8%A7%D9%84%D8%A3%D8%AD%D8%B1%D8%A7%D8%B1-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D8%AC%D8%B1%D9%8A%D9%85%D8%A9-%D8%AD%D8%B1%D8%A8-%D9%88%D8%AA%D8%A3%D9%83%D9%8A%D8%AF-%D8%B9%D9%84%D9%89-%D8%B3%D8%B9%D9%8A-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%84%D9%82%D8%AA%D9%84-%D9%83%D9%84-%D8%B3%D8%A8%D9%84-%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A8%D8%BA%D8%B2%D8%A9",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": true
   },
   {
-   "article": "https://pchrgaza.org/israeli-occupation-forces-kill-16-palestinians-including-two-children-a-girl-and-a-pregnant-woman-in-gaza-amid-ongoing-genocide",
-   "name": "Palestinian Centre for Human Rights",
-   "url": "https://pchrgaza.org/",
+   "article": "https://t.me/Palinfo/322813",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/740151",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
    "verified": true
   }
  ],
  "date": "2026-09-30T11:48:00+00:00",
- "dek": "The Palestinian Ahrar movement denounced Israeli occupation forces for what it called daily war crimes in Gaza, including airstrikes targeting civilian vehicles and infrastructure, Shehab Wire reported.",
+ "dek": "أدانت حركة الأحرار الفلسطينية بأشد العبارات استمرار جرائم الاحتلال الإسرائيلي اليومية وإمعانه في استهداف المدنيين ومختلف سبل الحياة في قطاع غزة، والتي كان آخرها القصف الجوي الذي طال مركبات لنقل المواط…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/SOB7I.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165048/%D8%A7%D9%84%D8%A3%D8%AD%D8%B1%D8%A7%D8%B1-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D8%AC%D8%B1%D9%8A%D9%85%D8%A9-%D8%AD%D8%B1%D8%A8-%D9%88%D8%AA%D8%A3%D9%83%D9%8A%D8%AF-%D8%B9%D9%84%D9%89-%D8%B3%D8%B9%D9%8A-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%84%D9%82%D8%AA%D9%84-%D9%83%D9%84-%D8%B3%D8%A8%D9%84-%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A8%D8%BA%D8%B2%D8%A9",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165048/%D8%A7%D9%84%D8%A3%D8%AD%D8%B1%D8%A7%D8%B1-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D8%AC%D8%B1%D9%8A%D9%85%D8%A9-%D8%AD%D8%B1%D8%A8-%D9%88%D8%AA%D8%A3%D9%83%D9%8A%D8%AF-%D8%B9%D9%84%D9%89-%D8%B3%D8%B9%D9%8A-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%84%D9%82%D8%AA%D9%84-%D9%83%D9%84-%D8%B3%D8%A8%D9%84-%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A8%D8%BA%D8%B2%D8%A9"
@@ -31,9 +37,9 @@
  "modified": null,
  "original": false,
  "pid": "dea21b9756",
- "score": 63.26,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 63.23,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Palestinian Ahrar movement condemns targeting of civilian vehicles as war crime"
+ "title": "حركة الأحرار تدين استهداف الاحتلال مركبات المدنيين في غزة"
 }
