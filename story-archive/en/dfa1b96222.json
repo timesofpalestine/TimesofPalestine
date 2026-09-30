@@ -1,0 +1,33 @@
+{
+ "brief": "Hundreds of Israelis entered the Al-Aqsa Mosque compound, Al Jazeera English reported. The incursion occurred during the Jewish holiday season, part of an intensifying pattern of raids on the site.\n\nThe compound, located in occupied East Jerusalem, is one of Islam's holiest places and a flashpoint for Israeli-Palestinian tensions. Such breaches have increased in frequency during Jewish holidays in recent years.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/30/over-1300-settlers-raid-al-aqsa-mosque-alongside-israeli-forces?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-30T17:13:05+00:00",
+ "dek": "Israeli raids at Al-Aqsa Mosque compound have intensified during the Jewish holiday season.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/afp_6abce5b86be6-1790764472.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/30/over-1300-settlers-raid-al-aqsa-mosque-alongside-israeli-forces?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/30/over-1300-settlers-raid-al-aqsa-mosque-alongside-israeli-forces?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dfa1b96222",
+ "score": 63.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Hundreds of Israelis storm Al-Aqsa Mosque compound"
+}
