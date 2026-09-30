@@ -1,0 +1,33 @@
+{
+ "brief": "The US Senate rejected a Democratic resolution Tuesday that would have required the state department to report on Israeli violence in the occupied West Bank, The Guardian reported. Nine American citizens have been killed by Israeli settlers or security forces in the territory since 2022. The vote broke largely along party lines.\n\nThe resolution sought official accountability measures over deaths and injuries of US nationals in the West Bank. Republicans largely opposed the measure while Democrats supported it.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/us-news/2026/sep/29/senate-resolution-west-bank-israel-violence",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-30T00:16:17+00:00",
+ "dek": "Nine American citizens have been killed by Israeli settlers or security forces in occupied West Bank since 2022 The US Senate on Tuesday evening rejected along mostly party lines a Democratic resolution that would have forced the state department to report to…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/bfba616079d8505a1e4d7f05b980cf6bad30de18/250_0_2500_2000/master/2500.jpg?width=140&quality=85&auto=format&fit=max&s=bc45e1ad005c6068c4aa9ceae0c0d69b",
+ "lang": "en",
+ "link": "https://www.theguardian.com/us-news/2026/sep/29/senate-resolution-west-bank-israel-violence",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/us-news/2026/sep/29/senate-resolution-west-bank-israel-violence"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4cd5598ac1",
+ "score": 63.68,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "US Senate blocks resolution demanding West Bank violence accountability"
+}
