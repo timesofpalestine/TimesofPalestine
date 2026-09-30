@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli settlers are encroaching on areas surrounding Ramallah, the de facto capital of the occupied West Bank, according to Al Jazeera English. The movement marks an escalation in settlement expansion near one of the Palestinians' primary administrative centers.\n\nThe encroachment has raised concerns among Palestinian officials and residents about the proximity of settler activity to the city's boundaries and the potential implications for Palestinian governance and security in the region.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/9/30/settlers-closing-in-on-ramallah?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/us-news/2026/sep/29/senate-resolution-west-bank-israel-violence",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/us-senate-blocks-measure-demanding-report-rights-violations-west-bank",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-30T12:43:27+00:00",
+ "dek": "Israeli settlers are encroaching ever closer to Ramallah, the de facto capital of the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/clean-Thumbnail-1-1790772160.png?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/9/30/settlers-closing-in-on-ramallah?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/9/30/settlers-closing-in-on-ramallah?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e40b3eb39a",
+ "score": 49.72,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers advance toward Ramallah in occupied West Bank"
+}
