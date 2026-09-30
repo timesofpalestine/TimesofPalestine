@@ -13,6 +13,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.maannews.net/news/2169660.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
   }
  ],
  "date": "2026-09-30T04:51:01+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "fb4d609064",
- "score": 47.99,
+ "score": 47.76,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
