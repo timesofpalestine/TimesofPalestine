@@ -6,7 +6,19 @@
    "article": "https://shehabnews.com/post/165034/%D9%87%D9%84-%D9%82%D8%A7%D9%84-%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%B2%D8%A7%D9%8A%D8%AF-%D9%84%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%84%D9%86-%D8%A3%D9%83%D8%B0%D8%A8-%D9%85%D9%86-%D8%A3%D8%AC%D9%84%D9%83",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.maannews.net/news/2169665.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-israels-presence-creating-dangerous-situation-condemns",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-30T06:12:00+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "23d164d182",
- "score": 79.65,
+ "score": 79.4,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
