@@ -1,23 +1,23 @@
 {
- "brief": "Economic researcher Ahmad Abu Qamr said the approaching winter season adds new financial strain on displaced families across Gaza, as their purchasing power declines and regular income sources disappear, Shehab Wire reported. Abu Qamr pointed to the difficulty of securing adequate shelter amid the economic pressures facing the displaced population.\n\nThe researcher emphasized that families lack consistent income sources needed to cover winter expenses, compounding an already severe economic crisis in the territory.",
+ "brief": "الباحث الاقتصادي أحمد أبو قمر حذّر من أن اقتراب فصل الشتاء سيفرض عبئاً اقتصادياً إضافياً على الأسر النازحة في قطاع غزة، بحسب وكالة شهاب. وأرجع الباحث التحديات إلى تراجع القدرة الشرائية للنازحين وانقطاع مصادر دخلهم المنتظمة.\n\nأشار أبو قمر إلى أن توفير مأوى قادر على التصدي لظروف الفصل البارد يتطلب نفقات إضافية لا تملكها الأسر النازحة حالياً، الأمر الذي سيزيد من استنزاف موارد الأسر المحدودة.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165045/%D8%A8%D8%A7%D8%AD%D8%AB-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D8%B4%D8%AA%D8%A7%D8%A1-%D8%BA%D8%B2%D8%A9-2026-%D9%8A%D8%B6%D8%A7%D8%B9%D9%81-%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D9%86%D8%B2%D9%88%D8%AD-%D9%88%D9%8A%D8%B3%D8%AA%D9%86%D8%B2%D9%81-%D8%AC%D9%8A%D9%88%D8%A8-%D8%A7%D9%84%D8%A3%D8%B3%D8%B1",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-09-30T10:45:00+00:00",
- "dek": "Economic researcher Ahmad Abu Qamr said the approaching winter season adds new financial strain on displaced families across Gaza, as their purchasing power declines and regular income sources disappear, Shehab Wire…",
+ "dek": "قال الباحث الاقتصادي أحمد أبو قمر إن اقتراب فصل الشتاء يضيف عبئًا اقتصاديًا جديدًا على الأسر النازحة في قطاع غزة، في ظل تراجع قدرتها الشرائية وغياب مصادر الدخل المنتظمة، مشيرًا إلى أن تأمين مأوى قادر…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/09/M8FCN.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165045/%D8%A8%D8%A7%D8%AD%D8%AB-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D8%B4%D8%AA%D8%A7%D8%A1-%D8%BA%D8%B2%D8%A9-2026-%D9%8A%D8%B6%D8%A7%D8%B9%D9%81-%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D9%86%D8%B2%D9%88%D8%AD-%D9%88%D9%8A%D8%B3%D8%AA%D9%86%D8%B2%D9%81-%D8%AC%D9%8A%D9%88%D8%A8-%D8%A7%D9%84%D8%A3%D8%B3%D8%B1",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165045/%D8%A8%D8%A7%D8%AD%D8%AB-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D8%B4%D8%AA%D8%A7%D8%A1-%D8%BA%D8%B2%D8%A9-2026-%D9%8A%D8%B6%D8%A7%D8%B9%D9%81-%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D9%86%D8%B2%D9%88%D8%AD-%D9%88%D9%8A%D8%B3%D8%AA%D9%86%D8%B2%D9%81-%D8%AC%D9%8A%D9%88%D8%A8-%D8%A7%D9%84%D8%A3%D8%B3%D8%B1"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "ac51ba3f0f",
- "score": 49.59,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 49.56,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Winter 2026 doubles displacement costs for Gaza families, economist warns"
+ "title": "باحث: شتاء غزة المقبل يضاعف تكاليف النزوح على الأسر"
 }
