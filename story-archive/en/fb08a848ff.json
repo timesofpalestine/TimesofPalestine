@@ -7,6 +7,18 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-boy-shot-israeli-gunfire-during-raid-al-faraa-refugee-camp",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/west-banks-violent-settlers-part-new-generation-fuelled-ideology",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-29T15:32:54+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "fb08a848ff",
- "score": 42.34,
+ "score": 42.18,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

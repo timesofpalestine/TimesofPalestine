@@ -1,0 +1,45 @@
+{
+ "brief": "The US Senate rejected a resolution demanding a report on Americans killed in the West Bank, Al Jazeera English reported. The measure, which did not advance, called for accountability over Israeli government actions and cited the failure of US efforts to secure justice for the victims.\n\nThe resolution pointed to deaths of American citizens in the occupied territory and the absence of consequences for those responsible. It stated that the US had been unable to secure justice for the killings.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/30/us-senate-blocks-resolution-seeking-report-on-americans-killed-in-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/us-news/2026/sep/29/senate-resolution-west-bank-israel-violence",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/us-senate-blocks-measure-demanding-report-rights-violations-west-bank",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-30T02:26:20+00:00",
+ "dek": "The resolution cites a 'lack of accountability' by Israel's government and an 'inability to secure justice' by the US.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2024/04/10750468-1712114140.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/30/us-senate-blocks-resolution-seeking-report-on-americans-killed-in-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/30/us-senate-blocks-resolution-seeking-report-on-americans-killed-in-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "980cc2fbd5",
+ "score": 93.74,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Senate Republicans block resolution on Americans killed in West Bank"
+}
