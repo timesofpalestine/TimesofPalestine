@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/us-news/2026/sep/29/senate-resolution-west-bank-israel-violence",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/resolution-demanding-accountability-americans-killed-israel-fails-us-senate",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-30T00:16:17+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4cd5598ac1",
- "score": 50.68,
+ "score": 50.42,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
