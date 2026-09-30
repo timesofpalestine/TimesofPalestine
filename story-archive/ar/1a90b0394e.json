@@ -19,6 +19,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/740088",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
   }
  ],
  "date": "2026-09-30T06:40:00+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "1a90b0394e",
- "score": 49.47,
+ "score": 49.21,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
