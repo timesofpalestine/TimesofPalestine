@@ -13,6 +13,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/west-banks-violent-settlers-part-new-generation-fuelled-ideology",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-29T07:45:27+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "f68a926fd8",
- "score": 37.16,
+ "score": 36.93,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
