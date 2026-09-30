@@ -6,7 +6,13 @@
    "article": "http://www.democracynow.org/2026/9/29/muhammad_shehada",
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/least-one-palestinian-killed-israeli-attacks-across-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-29T12:30:12+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "7e2649ee12",
- "score": 51.1,
+ "score": 50.89,
  "source": "Democracy Now!",
  "source_id": "democracynow",
  "source_url": "https://www.democracynow.org/",
