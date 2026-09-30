@@ -6,13 +6,13 @@
    "article": "https://www.aljazeera.net/news/2026/9/30/%d8%a3%d8%b3%d9%84%d8%ad%d8%a9-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d8%a9-%d9%88%d8%a3%d9%85%d9%88%d8%a7%d9%84-%d8%ae%d8%a7%d8%b1%d8%ac%d9%8a%d8%a9-%d9%85%d9%86-%d9%8a%d9%85%d9%88%d9%84?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
   },
   {
    "article": "https://qudsn.co/post?id=217865&slug=%D8%A5%D8%B1%D9%87%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D8%B1%D9%8A%D9%86-%D9%8A%D8%AA%D8%B5%D8%A7%D8%B9%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D9%88%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85%D8%A7%D8%AA-%D9%88%D8%AD%D8%B1%D9%82-%D9%85%D9%85%D8%AA%D9%84%D9%83%D8%A7%D8%AA",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
-   "verified": false
+   "verified": true
   }
  ],
  "date": "2026-09-30T06:24:39+00:00",
@@ -31,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "11eb86d924",
- "score": 46.54,
+ "score": 46.39,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",

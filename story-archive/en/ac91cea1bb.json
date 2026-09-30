@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli Prime Minister Benjamin Netanyahu faces mounting questions over alleged intelligence warnings before the October 7, 2023 Hamas attack, as the country prepares for elections on October 27, Al Jazeera English reported. The controversy centers on whether Netanyahu or his government received advance notice of the assault and failed to act on it—a charge that could significantly damage his political standing during the campaign.\n\nThe allegations have become a focal point for Israeli opposition parties and critics seeking to hold Netanyahu accountable ahead of voting. The timing of the election coincides with the anniversary of the attack and ongoing scrutiny of the government's preparedness and response in the weeks leading up to October 7.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/30/the-october-7-warnings-threatening-netanyahus-israel-election-campaign?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.youtube.com/watch?v=H03tIHgSeeU&t=2s",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-30T11:03:01+00:00",
+ "dek": "Netanyahu faces continued pressure over alleged warnings before the 2023 Hamas attack as October 27 elections draw near.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/GettyImages-2239251560-1788482890.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/30/the-october-7-warnings-threatening-netanyahus-israel-election-campaign?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/30/the-october-7-warnings-threatening-netanyahus-israel-election-campaign?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ac91cea1bb",
+ "score": 49.64,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu's pre-attack warnings shadow Israeli election campaign"
+}
