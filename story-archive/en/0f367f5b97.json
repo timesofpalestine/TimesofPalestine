@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli forces killed at least seven people in Gaza, Al Jazeera English reported, with six deaths in a drone strike on a passenger van and one in an attack on a residential apartment. The strikes continued amid ongoing ceasefire violations in the territory.\n\nThe incidents occurred as military operations persisted in Gaza despite ceasefire arrangements. No further details were provided on the timing, location, or circumstances of the strikes.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/9/30/israeli-attacks-on-gaza-kill-several-as-ceasefire-violations-continue?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-journalist-killed-israeli-drone-strike",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-09-30T12:49:04+00:00",
+ "dek": "At least six people killed in drone attack on passenger van and one person killed in strike on residential apartment.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/AA-20260930-42610428-42610409-ISRAELI_ATTACKS_ON_GAZA_CONTINUE-1790772924.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/9/30/israeli-attacks-on-gaza-kill-several-as-ceasefire-violations-continue?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/9/30/israeli-attacks-on-gaza-kill-several-as-ceasefire-violations-continue?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0f367f5b97",
+ "score": 63.29,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli attacks kill seven in Gaza as ceasefire violations persist"
+}
