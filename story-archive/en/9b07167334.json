@@ -1,0 +1,33 @@
+{
+ "brief": "The Guardian reported that Israeli authorities have sought to restrict circulation of NAZA, a Palestinian film that premiered at the Venice Film Festival earlier this month. The documentary's release triggered significant international attention and concern among Israeli officials, who view its content as threatening.\n\nDetails of the specific grounds for the restriction bid remain unclear from available reporting. The film's Venice debut generated global discussion about its subject matter and the Israeli response to its distribution.",
+ "cat": "arts",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/us-news/video/2026/sep/29/naza-israel-film-stateside-kai-and-carter",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-29T09:45:47+00:00",
+ "dek": "When NAZA premiered at Venice earlier this month, it sent shockwaves across the globe.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/18791a64ff847280d320c5a675238bf56d1fc80a/0_0_1350_1080/master/1350.jpg?width=140&quality=85&auto=format&fit=max&s=ee875964b93fc268828d4e4750061dc5",
+ "lang": "en",
+ "link": "https://www.theguardian.com/us-news/video/2026/sep/29/naza-israel-film-stateside-kai-and-carter",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/us-news/video/2026/sep/29/naza-israel-film-stateside-kai-and-carter"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9b07167334",
+ "score": 35.87,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli officials move to ban Palestinian film NAZA after Venice premiere"
+}
