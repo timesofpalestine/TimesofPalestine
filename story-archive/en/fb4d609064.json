@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/9/30/israels-lapid-accuses-netanyahu-of-fear-mongering-over-attack-warning?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-opposition-leader-accuses-netanyahu-fearmongering-ahead",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-09-30T04:51:01+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "fb4d609064",
- "score": 49.44,
+ "score": 49.2,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
