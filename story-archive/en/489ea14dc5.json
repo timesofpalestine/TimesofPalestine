@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/10/1/palestinians-to-bury-remains-of-105-people-killed-in-israeli-attack-on-gaza?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/mass-funerals-held-over-100-palestinains-unearthed-rubble-gaza-city",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-01T07:23:18+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "489ea14dc5",
- "score": 61.13,
+ "score": 60.9,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
