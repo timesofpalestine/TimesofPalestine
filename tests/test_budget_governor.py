@@ -24,6 +24,31 @@ def _iso(day, hour=12):
     return datetime(2026, 9, day, hour, 0, tzinfo=timezone.utc)
 
 
+class FrozenClock:
+    """Pin budget_ledger's clock for the CLI tests. main() reads the real
+    clock, so a test that records September spend and then asks the CLI
+    broke the build the moment the month rolled over (2026-10-01)."""
+
+    def __init__(self, now):
+        self.now = now
+
+    def __enter__(self):
+        frozen = self.now
+
+        class _Clock(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return frozen if tz else frozen.replace(tzinfo=None)
+
+        self._saved = budget_ledger.datetime
+        budget_ledger.datetime = _Clock
+        return self
+
+    def __exit__(self, *exc):
+        budget_ledger.datetime = self._saved
+        return False
+
+
 class TempPaths:
     """Point the module at throwaway config/ledger files."""
 
@@ -146,7 +171,7 @@ class LedgerRobustnessTests(unittest.TestCase):
             self.assertEqual(cfg["budget"], 150.0)
 
     def test_check_cli_exit_codes(self):
-        with TempPaths(budget=100.0):
+        with TempPaths(budget=100.0), FrozenClock(_iso(2)):
             self.assertEqual(budget_ledger.main(["--check", "editor"]), 0)
             budget_ledger.record("editor", usd=95.0, now=_iso(2))
             self.assertEqual(budget_ledger.main(["--check", "editor"]), 3)
@@ -408,7 +433,7 @@ class PurseTests(unittest.TestCase):
         self.assertEqual(len(merged["runs"]["editor"]), 2)
 
     def test_tier_cli_emits_workflow_outputs(self):
-        with TempPaths(budget=600.0) as tp:
+        with TempPaths(budget=600.0) as tp, FrozenClock(_iso(15)):
             self._cfg(tp)
             import io
             from contextlib import redirect_stdout
