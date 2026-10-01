@@ -1,0 +1,33 @@
+{
+ "brief": "Newly updated satellite imagery on Google Maps shows extensive destruction of homes, businesses, and places of worship across Gaza following the three-year war, The Guardian reported. The images reveal the scale of devastation that persists even after a fragile ceasefire took effect.\n\nThe satellite data documents ongoing damage to civilian infrastructure throughout the territory, measuring the humanitarian toll of the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/01/new-google-maps-images-reveal-massive-scale-of-devastation-in-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-01T04:00:28+00:00",
+ "dek": "Satellite imagery shows further destruction of homes, businesses and places of worship since fragile ceasefire An update to Google Maps has revealed the extent of devastation during the three-year Gaza war and the severity of the continuing humanitarian…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/81273432abf8c05689eb694989b893b4ec991c30/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=ff341b2c84e1382c31fcd95ba054a755",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/oct/01/new-google-maps-images-reveal-massive-scale-of-devastation-in-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/oct/01/new-google-maps-images-reveal-massive-scale-of-devastation-in-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fa2eaab0f1",
+ "score": 59.63,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Google Maps satellite imagery documents Gaza's mass destruction"
+}
