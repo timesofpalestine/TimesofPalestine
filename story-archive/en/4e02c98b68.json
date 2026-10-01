@@ -1,0 +1,33 @@
+{
+ "brief": "Indian police raided the home of a pro-Palestinian activist in Mumbai who participated in a kite-flying event organized for Gaza, according to Al Jazeera English. The action prompted immediate protests from activists in the city.\n\nDetails of the raid's justification and any formal charges remain unclear. The incident reflects heightened tensions surrounding Palestine solidarity activities in India, where such demonstrations have drawn both official scrutiny and grassroots support.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/1/30-09-sv-india-palestine-protesters-mumbai-in?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-01T13:04:34+00:00",
+ "dek": "Pro-Palestinian activists protested in Mumbai after police raided the home of a volunteer who took part in Gaza event.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1790859825.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/1/30-09-sv-india-palestine-protesters-mumbai-in?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/1/30-09-sv-india-palestine-protesters-mumbai-in?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4e02c98b68",
+ "score": 63.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Police raid Mumbai activist over Gaza kite-flying event"
+}
