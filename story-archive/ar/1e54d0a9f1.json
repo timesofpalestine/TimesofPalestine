@@ -7,6 +7,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://qudsn.co/post?id=217914&slug=27-%D8%A3%D9%84%D9%81-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89-%D8%AE%D9%84%D8%A7%D9%84-3-%D8%A3%D8%B4%D9%87%D8%B1-%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D9%84%D9%84%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%B7%D9%82%D9%88%D8%B3",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": false
   }
  ],
  "date": "2026-10-01T14:24:45+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1e54d0a9f1",
- "score": 60.22,
+ "score": 59.98,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
