@@ -1,69 +1,14 @@
 {
- "month": "2026-09",
+ "month": "2026-10",
  "desks": {
-  "briefs": 275.412659,
-  "investigations": 26.884155,
-  "washington": 27.71263,
-  "editor": 101.79499,
-  "maintenance": 12.00925
+  "briefs": 0.207269
  },
  "tags": {
-  "briefs:rewrite": 133.19415,
-  "briefs:retry": 0.099716,
-  "briefs:judge": 3.44681,
-  "briefs:retry-short": 104.372306,
-  "briefs:retry-diction": 0.346374,
-  "briefs:retry-paragraphs": 25.869097,
-  "briefs:retry-block": 0.01262
+  "briefs:rewrite": 0.110511,
+  "briefs:retry-short": 0.093083,
+  "briefs:retry-diction": 0.00163,
+  "briefs:judge": 0.002043
  },
- "runs": {
-  "editor": [
-   {
-    "ts": "2026-09-04T01:09:03.410709+00:00",
-    "usd": 19.3326,
-    "tier": "full"
-   },
-   {
-    "ts": "2026-09-04T01:46:41.009399+00:00",
-    "usd": 17.6929,
-    "tier": "full"
-   },
-   {
-    "ts": "2026-09-04T11:51:59.558790+00:00",
-    "usd": 2.2051,
-    "tier": "light"
-   },
-   {
-    "ts": "2026-09-05T11:18:31.498940+00:00",
-    "usd": 6.0151,
-    "tier": "light"
-   },
-   {
-    "ts": "2026-09-10T12:00:28.453841+00:00",
-    "usd": 5.823,
-    "tier": "light"
-   },
-   {
-    "ts": "2026-09-13T12:41:15.544276+00:00",
-    "usd": 9.0123,
-    "tier": "light",
-    "model": "claude-sonnet-5"
-   }
-  ],
-  "maintenance": [
-   {
-    "ts": "2026-09-07T09:13:21.241912+00:00",
-    "usd": 12.0093,
-    "tier": "full"
-   }
-  ],
-  "washington": [
-   {
-    "ts": "2026-09-07T17:34:55.395462+00:00",
-    "usd": 13.5061,
-    "tier": "full"
-   }
-  ]
- },
- "updated": "2026-10-01T00:07:35.636073+00:00"
+ "runs": {},
+ "updated": "2026-10-01T09:02:35.946208+00:00"
 }
