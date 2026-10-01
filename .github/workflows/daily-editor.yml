@@ -91,7 +91,7 @@ jobs:
           # 2026-08-07. Full output stays on so the next API-side failure is
           # diagnosable from the run log.
           show_full_output: true
-          claude_args: '--model ${{ steps.budget.outputs.model || ''claude-opus-5'' }} --max-turns ${{ steps.budget.outputs.max_turns || ''300'' }} --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"'
+          claude_args: '--model ${{ steps.budget.outputs.model || ''claude-opus-5'' }} --max-turns ${{ steps.budget.outputs.max_turns || ''300'' }} --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,TodoWrite"'
           prompt: |
             You are Claude, editor-in-chief of Times of Palestine
             (timesofpalestine.com), running your daily improvement cycle in this
