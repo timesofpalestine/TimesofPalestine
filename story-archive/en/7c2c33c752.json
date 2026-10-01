@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli Prime Minister Benjamin Netanyahu is framing an attack on a Flydubai aircraft within his campaign messaging about threats to Israelis ahead of voting, Al Jazeera English reported. The motive behind the incident remains unclear, but Netanyahu has seized on the event to amplify his warnings of security dangers facing the country.\n\nThe timing allows Netanyahu to return attention to security concerns as a central election issue, a traditional strength for his political positioning ahead of the vote.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/1/flydubai-attack-gives-netanyahu-new-security-message-ahead-of-israel-vote?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-says-flydubai-co-pilot-underwent-islamist-radical-indoctrination",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-01T15:47:23+00:00",
+ "dek": "Motive behind Flydubai incident still unclear, but Israeli PM is framing it within his warnings of threats to Israelis.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6abe70da-1790865626.jpg?resize=1920%2C1412",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/1/flydubai-attack-gives-netanyahu-new-security-message-ahead-of-israel-vote?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/1/flydubai-attack-gives-netanyahu-new-security-message-ahead-of-israel-vote?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7c2c33c752",
+ "score": 49.83,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu uses Flydubai incident to reinforce election security warnings"
+}
