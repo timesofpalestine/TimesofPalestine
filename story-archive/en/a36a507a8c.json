@@ -13,6 +13,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/09/netanyahu-hails-stabbed-indian-pilot-flydubai-plane",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-09-30T09:15:39+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "a36a507a8c",
- "score": 25.0,
+ "score": 24.85,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
