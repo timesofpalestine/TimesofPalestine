@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli Prime Minister Benjamin Netanyahu characterized a Flydubai plane incident as a \"terror attack\" and compared it to the September 11 attacks, according to Al Jazeera English. Israeli officials have claimed the incident constitutes a terrorist act, though the airline's investigation into the event remains ongoing.\n\nThe comparison marked an escalation in Israeli statements about the incident, which has not yet been conclusively determined to be an attack of any kind. Flydubai has not released findings confirming the terrorism allegation.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/1/jerusalem-daily-netanyahu-calls-flight-incident-another-9?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-01T16:19:35+00:00",
+ "dek": "Israeli officials claimed the Flydubai incident as a \"terror attack\", despite the airline’s ongoing investigation.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/clean-2-2-1790871513.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/1/jerusalem-daily-netanyahu-calls-flight-incident-another-9?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/1/jerusalem-daily-netanyahu-calls-flight-incident-another-9?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a7ca339a5c",
+ "score": 46.67,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu compares Dubai airline incident to 9/11 attacks"
+}
