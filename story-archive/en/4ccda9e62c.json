@@ -1,0 +1,33 @@
+{
+ "brief": "Tucker Carlson Network claimed that Israel exerts dominant control over American military and diplomatic decisions, according to the outlet's reporting. The network did not provide specific evidence or examples to support the assertion in its headline statement.\n\nThe claim appears part of broader commentary on U.S.-Israel relations but lacks detailed sourcing or documented instances of alleged Israeli influence over U.S. policy decisions.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.youtube.com/shorts/DXtVygVy4_g",
+   "name": "Tucker Carlson Network",
+   "url": "https://www.youtube.com/@TuckerCarlson",
+   "verified": false
+  }
+ ],
+ "date": "2026-09-30T21:30:38+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://i1.ytimg.com/vi/DXtVygVy4_g/hqdefault.jpg",
+ "lang": "en",
+ "link": "https://www.youtube.com/shorts/DXtVygVy4_g",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "Tucker Carlson Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.youtube.com/shorts/DXtVygVy4_g"
+ },
+ "modified": "2026-09-30T21:30:38+00:00",
+ "original": false,
+ "pid": "4ccda9e62c",
+ "score": 33.97,
+ "source": "Tucker Carlson Network",
+ "source_id": "tucker",
+ "source_url": "https://www.youtube.com/@TuckerCarlson",
+ "title": "Israel directs U.S. military and diplomatic policy, Carlson claims"
+}
