@@ -1,0 +1,33 @@
+{
+ "brief": "Gaza's Health Ministry reported that eight Palestinians were killed and 26 others wounded in Israeli attacks across the Strip on Wednesday, according to Middle East Eye. The strikes added to the cumulative Palestinian death toll in Gaza, though the ministry did not specify the total figure in the available summary.\n\nThe attacks occurred across multiple locations throughout the territory. No further details about the specific sites or circumstances of the strikes were provided.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-after-eight-killed-israeli-attacks-wednesday",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-01T10:47:41+00:00",
+ "dek": "Gaza death toll rises after eight killed in Israeli attacks on Wednesday Gaza's Health Ministry reports that the toll of Palestinians killed by Israel in Gaza has risen after eight people were killed and 26 others wounded in attacks across the Strip on…",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-b.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-after-eight-killed-israeli-attacks-wednesday",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "77a6d63d1d",
+ "score": 58.79,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Eight Palestinians killed in Israeli strikes across Gaza Strip"
+}

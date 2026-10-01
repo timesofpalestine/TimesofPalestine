@@ -1,0 +1,39 @@
+{
+ "brief": "More than 100 Palestinians were laid to rest in a mass funeral at Sheikh Radwan cemetery, northwest of Gaza City, according to Al Jazeera English. The remains of 105 people were interred in the single ceremony as families mourned their losses.\n\nThe burial reflects the scale of casualties in Gaza, where such mass funerals have become recurring events amid the ongoing conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/gallery/2026/10/1/photos-palestinians-mourn-more-than-100-loved-ones-in-mass-gaza-funeral?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/mass-funerals-held-over-100-palestinains-unearthed-rubble-gaza-city",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-01T16:50:41+00:00",
+ "dek": "The remains of 105 people were buried in the Sheikh Radwan cemetery, northwest of Gaza City.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261001__C9WD3G6__v1__HighRes__PalestinianIsraelConflictGaza-1790849884.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/gallery/2026/10/1/photos-palestinians-mourn-more-than-100-loved-ones-in-mass-gaza-funeral?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/gallery/2026/10/1/photos-palestinians-mourn-more-than-100-loved-ones-in-mass-gaza-funeral?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a58370f658",
+ "score": 48.99,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians bury 105 dead in mass Gaza funeral"
+}

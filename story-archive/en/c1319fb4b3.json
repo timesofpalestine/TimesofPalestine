@@ -1,0 +1,39 @@
+{
+ "brief": "Palestinian children remain in Israeli military detention, according to Al Jazeera English. The report documents the practice of minors being held within the Israeli military justice system, raising concerns about their treatment and legal proceedings.\n\nDetails regarding the specific number of children detained, their ages, and the charges they face were not elaborated in the available material. The issue has drawn international attention regarding protections afforded to minors in conflict situations.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/1/palestinian-children-in-israeli-military-detention?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israeli-occupation-forces-kill-16-palestinians-including-two-children-a-girl-and-a-pregnant-woman-in-gaza-amid-ongoing-genocide",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-01T17:44:51+00:00",
+ "dek": "Palestinian children in Israeli military detention…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1790876664.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/1/palestinian-children-in-israeli-military-detention?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/1/palestinian-children-in-israeli-military-detention?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c1319fb4b3",
+ "score": 49.61,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli military holds Palestinian children in detention"
+}
