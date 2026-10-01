@@ -53,6 +53,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           # Same model pin + full output as daily-editor.yml (2026-08-07):
           # the action's fast-mode default errored against this key, and
           # full output keeps API-side failures diagnosable from the log.

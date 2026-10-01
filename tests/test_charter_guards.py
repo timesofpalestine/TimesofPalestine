@@ -69,6 +69,28 @@ class WorkflowCharterTest(unittest.TestCase):
                 encoding="utf-8")
             self.assertIn("vars.SELF_REARM", text, name)
 
+    def test_claude_workflows_wire_github_token(self):
+        """Claude must be able to use the permissions granted to its job."""
+        workflows = (
+            "daily-editor.yml",
+            "weekly-maintenance.yml",
+            "washington-brief.yml",
+            "diaspora-dispatch.yml",
+        )
+        for name in workflows:
+            text = (ROOT / ".github" / "workflows" / name).read_text(
+                encoding="utf-8")
+            self.assertIn("uses: anthropics/claude-code-action@v1", text, name)
+            self.assertIn("github_token: ${{ secrets.GITHUB_TOKEN }}", text, name)
+
+    def test_washington_brief_can_comment_on_coordination_issue(self):
+        text = (ROOT / ".github" / "workflows" /
+                "washington-brief.yml").read_text(encoding="utf-8")
+        self.assertRegex(
+            text,
+            r"permissions:\s*\n(?:\s+\w+:\s+\w+\n)*\s+issues:\s+write",
+        )
+
 
 class WeeklyMaintenanceTest(unittest.TestCase):
     """Owner directive 2026-08-31: a standing weekly engineering sweep.

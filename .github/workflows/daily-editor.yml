@@ -84,6 +84,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           # Model and turn cap come from the governor's tier (editorial/
           # budget.json). Pin plain model ids: the action's fast-mode default
           # (claude-opus-5[1m]) errored instantly against this key on

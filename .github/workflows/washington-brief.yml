@@ -12,6 +12,7 @@ concurrency:
   cancel-in-progress: false
 permissions:
   contents: write
+  issues: write
   id-token: write
 jobs:
   file-the-brief:
