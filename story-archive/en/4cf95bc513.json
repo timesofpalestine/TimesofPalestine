@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli drone killed a Palestinian in Gaza, Al Jazeera English reported. The incident occurred amid ongoing violence in the territory, where 1,439 Palestinians have been killed and 5,052 injured since a ceasefire began in October 2025.\n\nIsraeli settlers killed another Palestinian in the West Bank in a separate incident. Both deaths occurred within the same reporting period during which thousands have been killed and wounded across the occupied territories.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/1/israeli-drone-kills-palestinian-in-gaza-settlers-kill-another-in-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-01T23:44:39+00:00",
+ "dek": "1,439 Palestinians have been killed in Gaza and 5,052 injured since the 'ceasefire' began in October 2025.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6abed743-1790891843.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/1/israeli-drone-kills-palestinian-in-gaza-settlers-kill-another-in-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/1/israeli-drone-kills-palestinian-in-gaza-settlers-kill-another-in-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4cf95bc513",
+ "score": 62.91,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Drone strike and settler attack kill two Palestinians in separate incidents"
+}
