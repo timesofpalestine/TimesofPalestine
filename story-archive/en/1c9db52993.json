@@ -1,0 +1,39 @@
+{
+ "brief": "The Palestinian Red Crescent Society reported that a Palestinian was injured after settlers attacked him in Beita, a village near Nablus in the occupied West Bank, Maan Wire reported. The nature and extent of the injuries were not detailed.\n\nBeita has been a flashpoint for settler violence in recent months, with residents frequently reporting incidents of assault and property damage by Israeli settlers from nearby outposts.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37121",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/10/israeli-settlers-target-a-ramallah-road-and-the-citys-future-with-it",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-02T09:53:23+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/DbpU5BCVr_MQTh4bs_fNsCFUkuFigCQjo5CwpqbZR70FBZ7C5FvPAeHwPUrsqXLebXUE8iQNikc99Lz_-QD3h3bIf6TzQhqzs7U9ErmNrhInS_g641jKXuu9kRYNovGv8snmdqi2ar6CyrpnPvP2m2hT-MpPki7pUhza-lQZfeUwIOhHs0mIzBkB02V0qfpGiELiDgIGQ-J58b506QnNqE8DCZDZ8vC43Ji40KuqP8rm-XDfbq7VScETcSWCZOjFgmXTF-0-NGryFUrpyKVfTKo_f3qsucVdpa2wCMy8uy_1IWXYkAZOBwBacYyydez1GnikO2z1RMX9X-iCaxX89w",
+ "lang": "en",
+ "link": "https://t.me/maannews/37121",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37121"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1c9db52993",
+ "score": 62.29,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settlers beat Palestinian in West Bank village"
+}
