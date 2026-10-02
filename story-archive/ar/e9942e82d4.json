@@ -13,6 +13,12 @@
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
    "verified": true
+  },
+  {
+   "article": "https://palinfo.com/news/2026/10/02/1119729",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
   }
  ],
  "date": "2026-10-02T09:14:00+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "e9942e82d4",
- "score": 46.56,
+ "score": 46.35,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
