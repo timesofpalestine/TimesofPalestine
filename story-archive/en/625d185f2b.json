@@ -1,0 +1,33 @@
+{
+ "brief": "A Food and Agriculture Organization official said his contract was not renewed because he breached the agency's impartiality rules by criticizing Israeli policies in Gaza, Al Jazeera English reported. The official attributed his dismissal to public statements he made regarding the conflict.\n\nThe FAO maintained that the decision followed standard procedures related to alleged violations of the organization's impartiality standards. The case reflects tensions within UN agencies over how staff members can speak publicly about the Gaza conflict without compromising their neutrality.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/2/fao-official-says-he-lost-his-job-for-criticising-israeli-policies-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-02T04:02:44+00:00",
+ "dek": "The FAO official said he was told his contract would not be renewed over an alleged breach of impartiality on Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6abf09b25bb18-1790904754_19057d-1790907538.jpg?resize=1200%2C630&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/2/fao-official-says-he-lost-his-job-for-criticising-israeli-policies-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/2/fao-official-says-he-lost-his-job-for-criticising-israeli-policies-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "625d185f2b",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "FAO fires official for criticizing Israeli policies in Gaza"
+}
