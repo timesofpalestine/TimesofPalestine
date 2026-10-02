@@ -1,23 +1,23 @@
 {
- "brief": "Israeli occupation forces prevented residents of Bita village south of Nablus from picking olives in the Jabal al-Arma area on Friday, threatening them with weapons and firing sound bombs, Shehab Wire reported. Local sources said occupation soldiers assaulted residents who attempted to harvest in the area.\n\nThe incident occurred as Palestinians prepare for the annual olive season, a critical economic activity in the occupied West Bank.",
+ "brief": "قوات الاحتلال منعت أهالي بلدة بيتا جنوب نابلس، اليوم الجمعة، من قطف ثمار الزيتون في منطقة جبل العرمة، وأطلقت قنابل صوتية وهددتهم بالسلاح. وأفادت مصادر محلية بأن الجنود اعتدوا على عدد من المزارعين أثناء محاولتهم الوصول إلى أراضيهم.\n\nتأتي هذه الحادثة في سياق الاعتداءات المتكررة على المزارعين الفلسطينيين خلال موسم قطاف الزيتون، إذ يواجه السكان منعاً متعاقداً من الوصول إلى أراضيهم الزراعية في مناطق متفرقة من الضفة الغربية.",
  "cat": "westbank",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165145/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AA%D8%AD%D8%AA-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%85%D9%86%D8%B9-%D8%A3%D9%87%D8%A7%D9%84%D9%8A-%D8%A8%D9%8A%D8%AA%D8%A7-%D9%85%D9%86-%D9%82%D8%B7%D9%81-%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-02T07:52:00+00:00",
- "dek": "Israeli occupation forces prevented residents of Bita village south of Nablus from picking olives in the Jabal al-Arma area on Friday, threatening them with weapons and firing sound bombs, Shehab Wire reported.",
+ "dek": "منعت قوات الاحتلال، اليوم الجمعة، أهالي بلدة بيتا جنوب مدينة نابلس، من قطف ثمار الزيتون في منطقة جبل العرمة، تحت تهديد السلاح وإطلاق قنابل الصوت. وأفادت مصادر محلية بأن جنود الاحتلال اعتدوا على الأ…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/wurTl.png?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165145/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AA%D8%AD%D8%AA-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%85%D9%86%D8%B9-%D8%A3%D9%87%D8%A7%D9%84%D9%8A-%D8%A8%D9%8A%D8%AA%D8%A7-%D9%85%D9%86-%D9%82%D8%B7%D9%81-%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165145/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AA%D8%AD%D8%AA-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%85%D9%86%D8%B9-%D8%A3%D9%87%D8%A7%D9%84%D9%8A-%D8%A8%D9%8A%D8%AA%D8%A7-%D9%85%D9%86-%D9%82%D8%B7%D9%81-%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "26c1f2e291",
- "score": 46.56,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 46.54,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Israeli forces block Palestinians from olive harvest at gunpoint"
+ "title": "قوات الاحتلال تمنع أهالي بيتا من قطف الزيتون بالقوة"
 }
