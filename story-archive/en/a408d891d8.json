@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/society/2026/oct/02/royal-college-of-nursing-cuts-ties-with-israeli-drug-company",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/worlds-largest-nursing-union-cuts-ties-israeli-drugmaker-teva",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-02T06:00:13+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "a408d891d8",
- "score": 24.58,
+ "score": 24.32,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
