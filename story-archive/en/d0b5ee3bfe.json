@@ -1,0 +1,33 @@
+{
+ "brief": "Residents of Ras al-Ahmar in the West Bank say Israeli restrictions have severed their access to water, animal feed, and healthcare, according to Al Jazeera English. The community sits in an area where Israeli authorities have imposed barriers that effectively isolate the population from essential services ahead of upcoming elections.\n\nThe restrictions have compounded existing hardships for residents who depend on livestock and agriculture. Ras al-Ahmar lies in a contested zone where Israeli military control has intensified access limitations in recent months.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/2/israeli-barrier-cuts-off-water-to-west-bank-palestinians-before-elections?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-02T18:18:42+00:00",
+ "dek": "Residents of Ras al-Ahmar say Israeli restrictions have cut access to water, animal feed, healthcare.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Residents-of-Ras-al-Ahmar-were-forced-to-transport-milk-at-night-on-donkeys-away-from-the-eyes-of-soldiers-and-settlers.-Photo-by-Moath-Ghannam.-1790960307.jpg?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/2/israeli-barrier-cuts-off-water-to-west-bank-palestinians-before-elections?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/2/israeli-barrier-cuts-off-water-to-west-bank-palestinians-before-elections?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d0b5ee3bfe",
+ "score": 49.76,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli barrier cuts water access for West Bank Palestinians"
+}
