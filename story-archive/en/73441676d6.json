@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/opinions/2026/10/2/how-can-jordan-respond-to-israels-escalation-across-the-west-bank?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48326",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-02T10:17:23+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "73441676d6",
- "score": 63.45,
+ "score": 63.26,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
