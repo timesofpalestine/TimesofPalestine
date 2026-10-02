@@ -1,0 +1,39 @@
+{
+ "brief": "Sami Abu Shehadeh, leader of the Arab Democratic Party, withdrew his faction from upcoming Knesset elections, Al Jazeera English reported. The withdrawal further reduces Palestinian participation in the vote. Details surrounding the circumstances that forced his withdrawal were not specified in the report.\n\nThe Arab Democratic Party's exit marks another step in the declining engagement of Arab representatives in Israeli electoral politics ahead of the forthcoming Knesset vote.",
+ "cat": "pal48",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/2/arab-party-leader-forced-to-withdraw-from-israeli-elections?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israels-top-court-backs-barring-palestinian-politician-election-over-article",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-02T09:25:23+00:00",
+ "dek": "Palestinian participation in upcoming Knesset vote continues to shrink with withdrawal of Sami Abu Shehadeh.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6abf09742cf6a-1790904692.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/2/arab-party-leader-forced-to-withdraw-from-israeli-elections?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/2/arab-party-leader-forced-to-withdraw-from-israeli-elections?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "826a621510",
+ "score": 49.5,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Arab party leader forced to withdraw from Israeli elections"
+}
