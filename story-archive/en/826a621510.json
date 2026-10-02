@@ -6,12 +6,12 @@
    "article": "https://www.aljazeera.com/news/2026/10/2/arab-party-leader-forced-to-withdraw-from-israeli-elections?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-top-court-backs-barring-palestinian-politician-election-over",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-court-pressure-pushes-israeli-arab-leader-quit-election-race",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
    "verified": true
   }
  ],
@@ -31,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "826a621510",
- "score": 47.16,
+ "score": 46.91,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
