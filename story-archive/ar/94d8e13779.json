@@ -1,0 +1,33 @@
+{
+ "brief": "لا أملك مادة إخبارية تفصيلية توثّق وقائع محددة يمكنني على أساسها كتابة موجز إخباري دقيق. المصدر المرسل عبارة عن منشور بيان إدانة عام على منصة تيليغرام، من دون تفاصيل حول حوادث معينة أو أرقام أو أسماء أو سياق زمني محدد.\n\nلكتابة خبر موثوق وفقاً للمعايير الصحفية المهنية، أحتاج إلى مصادر أولية توثّق: تاريخ الحادثة، موقعها، أسماء الضحايا، شهادات شهود عيان أو بيانات رسمية، وأرقام محققة من جهات مختصة.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/83546",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-02T23:28:07+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/SomMdCmTVxTYh1HyxYGEl6KlF280QcaiUOW2nhQ3YSiL3Hj3HpVbmxOudjTulkD5JpTiJTgyYFrXo7hKh_DKunuQMaUy7emAUGr97cuXLRm5Ew_esYnGkByzM_FHm4ZkscmvwHoEQGgSOaKsS1-iXcVbL_4L5NtBaECn6ssEoS8WkkK5PeofW7xEEIZOqirQOt5VkwkJ_MKXuUg71W_L3F2MmBxNue-1b3JMbZFBVfcH1p3OFQwo2xrQARXRV6GSjCOKXCQPLDZLZBZ_7C3pivm04IcuOauywhgJ92RYzvhiyuM8_X-N1mDdP96l3II7JIj4o6KU1EEaE4PZliRwQQ.jpg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/83546",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "غزة الآن · تيليغرام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/gazaalannet/83546"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "94d8e13779",
+ "score": 42.04,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "إسرائيل تشن حملة قتل ضد أطفال غزة"
+}
