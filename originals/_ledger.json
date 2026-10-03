@@ -1,16 +1,16 @@
 {
  "month": "2026-10",
  "desks": {
-  "briefs": 35.976199,
+  "briefs": 36.178764,
   "investigations": 1.828883
  },
  "tags": {
-  "briefs:rewrite": 18.16631,
-  "briefs:retry-short": 17.669208,
+  "briefs:rewrite": 18.267982,
+  "briefs:retry-short": 17.770101,
   "briefs:retry-diction": 0.048404,
   "briefs:judge": 0.090644,
   "briefs:retry-block": 0.001641
  },
  "runs": {},
- "updated": "2026-10-03T13:00:48.289206+00:00"
+ "updated": "2026-10-03T13:24:48.725541+00:00"
 }
