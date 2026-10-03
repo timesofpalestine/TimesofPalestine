@@ -13,6 +13,12 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-strike-kills-five-including-four-women-gaza-health-officials-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-03T11:46:00+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "6c787c9057",
- "score": 92.89,
+ "score": 92.64,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
