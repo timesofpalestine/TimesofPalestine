@@ -1,0 +1,45 @@
+{
+ "brief": "The World Health Organization's representative in Palestine has warned of \"devastating consequences\" from delays in aid entering Gaza, calling on Israeli authorities to ease restrictions on medical supplies entering the territory, Al Jazeera English reported. The WHO official emphasized the urgency of allowing humanitarian assistance through, particularly medicines and equipment needed for health operations.\n\nThe warning reflects mounting concern among international health bodies over access constraints affecting Gaza's medical system and patient care amid the ongoing crisis.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/3/who-warns-of-devastating-consequences-due-to-delayed-aid-entry-into-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168508",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-aid-delay-causes-chronic-shortage-medical-supplies-who-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-03T04:54:20+00:00",
+ "dek": "The WHO's representative in Palestine calls on Israeli authorities to 'release the pressure on medical supplies'.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2025/10/AFP__20251012__78GN4WX__v1__HighRes__EgyptPalestinianIsraelConflictAid-1760258692.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/3/who-warns-of-devastating-consequences-due-to-delayed-aid-entry-into-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/3/who-warns-of-devastating-consequences-due-to-delayed-aid-entry-into-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5299d590f5",
+ "score": 49.36,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "WHO warns Israel blocking medical supplies will devastate Gaza"
+}
