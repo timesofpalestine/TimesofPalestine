@@ -1,0 +1,33 @@
+{
+ "brief": "Social media posts and news articles circulated this week claiming Google had updated satellite imagery of Gaza, according to Bellingcat. The images, which show areas including the southern city of Rafah, depict extensive destruction with entire neighbourhoods appearing flattened.\n\nThe viral posts did not specify when the satellite imagery was captured or provide details about the timing of Google's update.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://www.bellingcat.com/news/middle-east/2026/10/01/viral-google-maps-images-shared-widely-this-week-show-gaza-ruins-we-obtained-more-recent-satellite-imagery",
+   "name": "Bellingcat",
+   "url": "https://www.bellingcat.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-01T13:46:03+00:00",
+ "dek": "Earlier this week, several viral social media posts and news articles stated that Google had updated satellite imagery over Gaza. The imagery shared in these posts and articles shows several areas, including the southern city of Rafah. Huge destruction is detailed in the images, including what appears to be entire neighbourhoods flattened But the imagery…",
+ "dup_of": null,
+ "image": "https://www.bellingcat.com/app/uploads/2026/09/Google-Earth-Rafah-February-25-2026-scaled.jpg",
+ "lang": "en",
+ "link": "https://www.bellingcat.com/news/middle-east/2026/10/01/viral-google-maps-images-shared-widely-this-week-show-gaza-ruins-we-obtained-more-recent-satellite-imagery",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Bellingcat",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.bellingcat.com/news/middle-east/2026/10/01/viral-google-maps-images-shared-widely-this-week-show-gaza-ruins-we-obtained-more-recent-satellite-imagery"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "079073a87f",
+ "score": 70.13,
+ "source": "Bellingcat",
+ "source_id": "bellingcat",
+ "source_url": "https://www.bellingcat.com/",
+ "title": "Google satellite images show widespread destruction across Gaza"
+}
