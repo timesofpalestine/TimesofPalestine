@@ -15,9 +15,9 @@
    "verified": true
   },
   {
-   "article": "https://mondoweiss.net/2026/10/israeli-settlers-target-a-ramallah-road-and-the-citys-future-with-it",
-   "name": "Mondoweiss",
-   "url": "https://mondoweiss.net/",
+   "article": "https://www.aljazeera.com/news/2026/10/3/israeli-settlers-attack-palestinian-olive-pickers-in-the-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
    "verified": true
   },
   {
@@ -27,9 +27,15 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-steal-goal-post-palestinian-childrens-field",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-dozens-settlers-target-olive-harvesters-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/10/israeli-settlers-target-a-ramallah-road-and-the-citys-future-with-it",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
    "verified": true
   },
   {
@@ -55,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "1c9db52993",
- "score": 45.49,
+ "score": 45.21,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

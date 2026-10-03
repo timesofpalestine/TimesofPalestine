@@ -7,12 +7,6 @@
    "name": "UN News",
    "url": "https://news.un.org/",
    "verified": false
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-aid-delay-causes-chronic-shortage-medical-supplies-who-says",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": false
   }
  ],
  "date": "2026-10-02T12:00:00+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "f1c3e39f4c",
- "score": 32.95,
+ "score": 32.67,
  "source": "UN News",
  "source_id": "unnews",
  "source_url": "https://news.un.org/",
