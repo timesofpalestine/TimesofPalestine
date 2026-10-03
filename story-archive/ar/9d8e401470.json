@@ -1,0 +1,33 @@
+{
+ "brief": "عاد سكان في مخيم اليرموك إلى منازلهم التي تضررت وأنفقوا أموالهم على ترميمها، لكن سلطات الاحتلال هدمت ما أعادوا بناءه، بحسب المركز الفلسطيني للإعلام.\n\nيعاني السكان من خسائر اقتصادية متكررة جراء هدم منازلهم بعد ترميمهم لها، ما يترتب عليه خسارة مالية مباشرة إضافة إلى عدم الاستقرار السكني.\n\nيشكل هدم المنازل في المخيم نمطاً متواصلاً يزيد من معاناة السكان وعدم قدرتهم على الاستقرار في مساكنهم.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/03/1119848",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-03T16:19:28+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/03/1119848",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9d8e401470",
+ "score": 49.76,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "سلطات الاحتلال تهدم منازل أعاد سكانها بناءها في اليرموك"
+}
