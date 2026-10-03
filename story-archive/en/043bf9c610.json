@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli air strike killed one civilian and wounded several others in a gathering of residents west of Gaza City, the Ma'an news agency reported. The attack struck an assembly of Palestinians in the western area of the coastal enclave.\n\nNo further details were immediately available about the circumstances of the strike or the identities of those killed and injured.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37122",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-02T10:21:44+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/orMx87QipuqVwNsNP63hRiH3RhzkbD4OSthnf9ICsREBHbeRBmNKgXUmr_KLJJIW_6rle7GKBeKVCyzVV0fbLondiFTjBwaolztT2M2SFm5zfJjqKpDaxDIBjXeqmvzgI0dNLx2-SF3f1xMKW5XUrIbtYeKA5I1LqaWjs3KDu9rgH_I-oXAcrPfdqqfUsAPT7QNTPrtfEaTqt5STrBqj9Dp0i0-eqNiA3zUVYBDPaXINEwnInxf9cqQcL_uH_P7fj0_XGp3Ecn7-pgg3MiTWFF31pc-aM17Mpcd3D76uZFjG8oJHxlRFC8_6V-yosUJTuTPz18JMykmx8jJFxpuYnA",
+ "lang": "en",
+ "link": "https://t.me/maannews/37122",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37122"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "043bf9c610",
+ "score": 47.34,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli strike kills civilian, wounds others west of Gaza City"
+}
