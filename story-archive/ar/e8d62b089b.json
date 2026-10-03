@@ -1,23 +1,23 @@
 {
- "brief": "Israeli settlers carried out a record number of incursions into Al-Aqsa Mosque's courtyards during the Jewish holiday known as Sukkot, Shehab Wire reported. Nearly 9,123 settlers entered the compound under heavy protection from Israeli police and military forces, marking the highest total documented to date.\n\nThe incursions occurred across multiple days during the holiday period, with Israeli security forces providing reinforced escort throughout the visits to the mosque's grounds.",
+ "brief": "اقتحم 9123 مستوطناً المسجد الأقصى المبارك خلال أيام ما تُسمى \"عيد العرش\" اليهودي، بحسب وكالة شهاب، في أعلى حصيلة اقتحامات منذ بدء تسجيل هذه الأرقام. جرت الاقتحامات تحت حماية أمنية مشددة من قوات الاحتلال الإسرائيلي والجيش.\n\nيعكس الرقم تصعيداً جديداً في الاعتداءات على المسجد الأقصى، أحد أقدس المواقع في الإسلام، إذ تتواصل محاولات الاحتلال لتغيير الواقع الراهن في الموقع الديني المحتل.",
  "cat": "westbank",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165192/%D8%B1%D9%82%D9%85-%D9%82%D9%8A%D8%A7%D8%B3%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89-9123-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86-%D8%A7-%D9%8A%D9%82%D8%AA%D8%AD%D9%85%D9%88%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%B9%D8%B1%D8%B4",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-03T08:20:00+00:00",
- "dek": "Israeli settlers carried out a record number of incursions into Al-Aqsa Mosque's courtyards during the Jewish holiday known as Sukkot, Shehab Wire reported.",
+ "dek": "سجّلت باحات المسجد الأقصى المبارك، خلال أيام ما يسمى \"عيد العرش\" اليهودي، اقتحامات واسعة وغير مسبوقة، بعدما أقدم 9123 مستوطنًا على اقتحام المسجد بحماية مشددة من شرطة وجيش الاحتلال، في حصيلة هي الأعلى…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/njws7.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165192/%D8%B1%D9%82%D9%85-%D9%82%D9%8A%D8%A7%D8%B3%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89-9123-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86-%D8%A7-%D9%8A%D9%82%D8%AA%D8%AD%D9%85%D9%88%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%B9%D8%B1%D8%B4",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165192/%D8%B1%D9%82%D9%85-%D9%82%D9%8A%D8%A7%D8%B3%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89-9123-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86-%D8%A7-%D9%8A%D9%82%D8%AA%D8%AD%D9%85%D9%88%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D8%AF-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%B9%D8%B1%D8%B4"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "e8d62b089b",
- "score": 63.24,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 63.21,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "9,123 Israeli settlers storm Al-Aqsa Mosque in record incursion"
+ "title": "مستوطنون إسرائيليون يحطمون رقماً قياسياً باقتحام الأقصى"
 }
