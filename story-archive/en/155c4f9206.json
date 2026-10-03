@@ -1,0 +1,33 @@
+{
+ "brief": "Al Jazeera has interviewed a Palestinian schoolboy who became the subject of a viral photograph showing him concealing himself from Israeli forces in the occupied West Bank, the outlet reported. The image captured the boy on his way home from class as soldiers passed nearby.\n\nDetails of the boy's account and the circumstances surrounding the photograph were not specified in available reporting.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/3/al-jazeera-speaks-to-palestinian-schoolboy-from-viral-photograph?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-03T18:49:03+00:00",
+ "dek": "A photo went viral of a Palestinian boy hiding from Israeli forces on his way home from class in the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Screenshot-2026-10-03-at-19.44.06-1791053147.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/3/al-jazeera-speaks-to-palestinian-schoolboy-from-viral-photograph?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/3/al-jazeera-speaks-to-palestinian-schoolboy-from-viral-photograph?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "155c4f9206",
+ "score": 49.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinian boy photographed hiding from Israeli forces speaks out"
+}
