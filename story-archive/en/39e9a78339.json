@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinian politician Sami Abu Shehadeh, who leads an Arab party, withdrew from Israel's upcoming elections, Al Jazeera English reported. The decision removes a significant Arab voice from the electoral contest.\n\nDetails of Abu Shehadeh's reasoning and the timing of his withdrawal were not immediately available. Arab parties have historically played a contested role in Israeli politics, with their participation and boycotts becoming recurring points of political debate.",
+ "cat": "pal48",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/2/arab-party-leader-withdraws-from-israeli-elections?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-02T19:10:23+00:00",
+ "dek": "Palestinian politician Sami Abu Shehadeh withdrew from Israel’s upcoming election.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1790967266.jpg?resize=1620%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/2/arab-party-leader-withdraws-from-israeli-elections?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/2/arab-party-leader-withdraws-from-israeli-elections?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "39e9a78339",
+ "score": 44.47,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinian politician withdraws from Israeli election race"
+}
