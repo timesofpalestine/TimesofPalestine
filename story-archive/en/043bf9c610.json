@@ -6,7 +6,19 @@
    "article": "https://t.me/maannews/37122",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-e73",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-settlers-continue-campaign-detentions-and-attacks-west",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-02T10:21:44+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "043bf9c610",
- "score": 33.19,
+ "score": 32.84,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
