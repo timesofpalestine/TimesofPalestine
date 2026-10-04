@@ -1,0 +1,33 @@
+{
+ "brief": "لا تتوفر تفاصيل كافية في المصدر المرفق لكتابة موجز إخباري متكامل. العنوان الوارد من المركز الفلسطيني للإعلام يشير إلى توسع استيطاني في الأراضي الفلسطينية، غير أنه يفتقد إلى معلومات محددة عن مناطق معنية أو أرقام أو تطورات حديثة يمكن الاستناد إليها.\n\nلتحرير خبر كامل، يلزم توفير مصادر تفصيلية تتضمن بيانات إحصائية أو تصريحات رسمية أو وقائع محددة زمانياً ومكانياً بشأن توسع المستوطنات.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/04/1119920",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-04T12:16:04+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/04/1119920",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "84522e4ef3",
+ "score": 48.25,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاستيطان يتوسع في الضفة الغربية"
+}
