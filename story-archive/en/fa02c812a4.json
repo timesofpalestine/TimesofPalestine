@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/israeli-occupation-forces-kill-16-palestinians-including-six-women-and-a-child-amid-ongoing-genocide-in-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/six-year-old-killed-israeli-attacks-central-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-03T13:11:06+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "fa02c812a4",
- "score": 84.63,
+ "score": 84.6,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
