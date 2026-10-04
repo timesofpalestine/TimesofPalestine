@@ -6,13 +6,7 @@
    "article": "https://t.me/maannews/37134",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/83580",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-04T07:57:26+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "42d029b500",
- "score": 42.17,
+ "score": 41.99,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
