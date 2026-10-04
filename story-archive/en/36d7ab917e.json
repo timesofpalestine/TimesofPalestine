@@ -6,7 +6,13 @@
    "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-e73",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/one-killed-over-15-wounded-israeli-forces-and-settlers-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-03T17:00:46+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "36d7ab917e",
- "score": 44.9,
+ "score": 44.63,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
