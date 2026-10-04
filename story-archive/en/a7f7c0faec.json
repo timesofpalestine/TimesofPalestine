@@ -6,7 +6,19 @@
    "article": "https://shehabnews.com/post/165241/%D8%A8%D9%8A%D9%86%D9%87%D9%85-%D8%B5%D8%AD%D9%81%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%B9%D8%AA%D9%82%D9%84-12-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A7-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-e73",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-settlers-continue-campaign-detentions-and-attacks-west",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-04T04:57:00+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "a7f7c0faec",
- "score": 63.8,
+ "score": 63.44,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
