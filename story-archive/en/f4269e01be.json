@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli soldiers shot and killed a Palestinian man at a checkpoint east of Tulkarm in the occupied West Bank, according to Al Jazeera. The identity of the victim and circumstances surrounding the shooting remained unclear.\n\nThe incident occurred amid ongoing military operations across the West Bank, where clashes between Israeli forces and Palestinian armed groups have persisted in recent months.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/more-death-palestinian-man-tulkarm-checkpoint",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-04T10:32:40+00:00",
+ "dek": "More on death of Palestinian man at Tulkarm checkpoint Al Jazeera reported earlier that a Palestinian man had been killed by Israeli soldiers at a checkpoint east of Tulkarm in the occupied West Bank.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/more-death-palestinian-man-tulkarm-checkpoint",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f4269e01be",
+ "score": 62.76,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli soldiers kill Palestinian man at Tulkarm checkpoint"
+}
