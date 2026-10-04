@@ -1,23 +1,23 @@
 {
- "brief": "وثّقت وكالة شهاب إقرار السلطات الإسرائيلية لـ 89 مخطّطاً استعماريّاً يضم 19,221 وحدة استيطانية على مساحة 23 ألف دونم في الضفة الغربية منذ أكتوبر 2023. يشكّل هذا التوسع جزءاً من مسار منظّم يبدأ بالتخطيط والإيداع والمصادقة، وينتهي بطرح العطاءات وتهيئة الأراضي والبنية التحتية.\n\nتحوّل التوسع الاستعماري خلال السنوات الثلاث الماضية إلى نظام متكامل وممنهج تتابعه السلطات الإسرائيلية بخطوات متتالية ومرتبة، بحسب المعطيات الموثّقة.",
+ "brief": "Israeli authorities have approved 89 colonial plans encompassing 19,221 housing units on 23,000 dunams of West Bank land since October 2023, according to Shehab Wire. The expansion follows a systematic process spanning planning, submission, and authorization phases that extends to tender announcements and infrastructure preparation for implementation.\n\nThe colonial expansion in the West Bank over the past three years has evolved into an integrated pathway, moving from initial planning through official approval and advancing to land preparation and infrastructure development for construction.",
  "cat": "westbank",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165273/89-%D9%85%D8%AE%D8%B7%D8%B7-%D8%A7-%D8%A7%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D8%B1%D9%8A-%D8%A7-%D9%8A%D8%B6%D9%85-19-221-%D9%88%D8%AD%D8%AF%D8%A9-%D8%B9%D9%84%D9%89-23-%D8%A3%D9%84%D9%81-%D8%AF%D9%88%D9%86%D9%85-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%85%D9%86%D8%B0-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1-2023",
-   "name": "وكالة شهاب (حصري)",
+   "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-04T10:54:00+00:00",
- "dek": "تحوّل التوسع الاستعماري في الضفة الغربية خلال السنوات الثلاث الماضية إلى مسار متكامل يبدأ من التخطيط والإيداع والمصادقة، وينتهي بطرح العطاءات وتهيئة الأرض والبنية التحتية للتنفيذ، وفق معطيات وثقتها ه…",
+ "dek": "Israeli authorities have approved 89 colonial plans encompassing 19,221 housing units on 23,000 dunams of West Bank land since October 2023, according to Shehab Wire.",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/wS6k4.jpg?v=1",
- "lang": "ar",
+ "lang": "en",
  "link": "https://shehabnews.com/post/165273/89-%D9%85%D8%AE%D8%B7%D8%B7-%D8%A7-%D8%A7%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D8%B1%D9%8A-%D8%A7-%D9%8A%D8%B6%D9%85-19-221-%D9%88%D8%AD%D8%AF%D8%A9-%D8%B9%D9%84%D9%89-23-%D8%A3%D9%84%D9%81-%D8%AF%D9%88%D9%86%D9%85-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%85%D9%86%D8%B0-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1-2023",
  "max_age_hours": 72,
  "media": {
-  "credit": "وكالة شهاب (حصري)",
+  "credit": "Shehab Wire (EN)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165273/89-%D9%85%D8%AE%D8%B7%D8%B7-%D8%A7-%D8%A7%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D8%B1%D9%8A-%D8%A7-%D9%8A%D8%B6%D9%85-19-221-%D9%88%D8%AD%D8%AF%D8%A9-%D8%B9%D9%84%D9%89-23-%D8%A3%D9%84%D9%81-%D8%AF%D9%88%D9%86%D9%85-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%85%D9%86%D8%B0-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1-2023"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "748aa4c8e7",
- "score": 49.32,
- "source": "وكالة شهاب (حصري)",
- "source_id": "shehab",
+ "score": 49.36,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
- "title": "الاحتلال يصادق على 89 مخططاً استعماريّاً بالضفة منذ أكتوبر 2023"
+ "title": "Israel approves 89 colonial plans for 19,221 units across West Bank"
 }
