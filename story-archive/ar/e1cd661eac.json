@@ -1,23 +1,23 @@
 {
- "brief": "Data from the Palestinian Central Bureau of Statistics shows the ongoing Israeli military operation has damaged approximately 201,290 buildings in Gaza since October 7, 2023 through June 16, 2026, Shehab Wire reported. The figure represents roughly 82 percent of the strip's total building stock.\n\nThe damage toll encompasses structures across residential, commercial, and infrastructure sectors throughout the enclave over the nearly three-year period of conflict.",
+ "brief": "الجهاز المركزي للإحصاء الفلسطيني أظهر أن العدوان الإسرائيلي على قطاع غزة ألحق أضراراً بحوالي 201,290 مبنى منذ السابع من أكتوبر 2023 وحتى 16 يونيو 2024، بما يعادل 82% من إجمالي المباني في القطاع. تشمل الأضرار مبانٍ مدمّرة بالكامل وأخرى متوسطة الضرر وثالثة طفيفة التضرر.\n\nيأتي هذا التقييم الإحصائي كأحد المؤشرات على الحجم الهائل للدمار الذي لحق بالبنية التحتية والمساكن في غزة جراء الحملة العسكرية المستمرة.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165322/82-%D9%85%D9%86-%D9%85%D8%A8%D8%A7%D9%86%D9%8A-%D8%BA%D8%B2%D8%A9-%D9%85%D8%AA%D8%B6%D8%B1%D8%B1%D8%A9-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D8%B1-%D8%AD%D9%88-%D9%84-%D8%A7%D9%84%D8%B3%D9%83%D9%86-%D8%A5%D9%84%D9%89-%D8%A3%D8%B2%D9%85%D8%A9-%D9%85%D9%85%D8%AA%D8%AF%D8%A9-%D9%84%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-05T06:34:00+00:00",
- "dek": "Data from the Palestinian Central Bureau of Statistics shows the ongoing Israeli military operation has damaged approximately 201,290 buildings in Gaza since October 7, 2023 through June 16, 2026, Shehab Wire reported.",
+ "dek": "أظهرت بيانات الجهاز المركزي للإحصاء الفلسطيني أن العدوان الإسرائيلي المتواصل على قطاع غزة ألحق أضرارًا بنحو 201,290 مبنى منذ السابع من أكتوبر/تشرين الأول 2023 وحتى 16 يونيو/حزيران 2026، بما يعادل نحو…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/zueKg.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165322/82-%D9%85%D9%86-%D9%85%D8%A8%D8%A7%D9%86%D9%8A-%D8%BA%D8%B2%D8%A9-%D9%85%D8%AA%D8%B6%D8%B1%D8%B1%D8%A9-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D8%B1-%D8%AD%D9%88-%D9%84-%D8%A7%D9%84%D8%B3%D9%83%D9%86-%D8%A5%D9%84%D9%89-%D8%A3%D8%B2%D9%85%D8%A9-%D9%85%D9%85%D8%AA%D8%AF%D8%A9-%D9%84%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165322/82-%D9%85%D9%86-%D9%85%D8%A8%D8%A7%D9%86%D9%8A-%D8%BA%D8%B2%D8%A9-%D9%85%D8%AA%D8%B6%D8%B1%D8%B1%D8%A9-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D8%B1-%D8%AD%D9%88-%D9%84-%D8%A7%D9%84%D8%B3%D9%83%D9%86-%D8%A5%D9%84%D9%89-%D8%A3%D8%B2%D9%85%D8%A9-%D9%85%D9%85%D8%AA%D8%AF%D8%A9-%D9%84%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "e1cd661eac",
- "score": 49.11,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 49.07,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Israeli assault damages 82 percent of Gaza's buildings"
+ "title": "الجهاز الإحصائي: 82% من مباني غزة متضررة"
 }
