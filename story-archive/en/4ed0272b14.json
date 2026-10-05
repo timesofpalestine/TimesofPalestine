@@ -1,0 +1,33 @@
+{
+ "brief": "Israel is developing a reservoir known as \"Herod's Pool\" in the occupied West Bank, Al Jazeera English reported. The project involves siphoning water from Palestinian water sources to fill the facility.\n\nThe development raises questions about water allocation in the territory, where Palestinians have long faced restrictions on water access and usage. Israel controls most of the West Bank's water resources through agreements established decades ago.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/5/what-is-herods-pool-and-why-is-israel-developing-it-in-the-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-05T18:24:06+00:00",
+ "dek": "Israel is developing a reservoir on land in the occupied West Bank, with water syphoned off from Palestinians.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/653OXBPKHZK33KWOG6JMFBM7AA-1791208430.jpg?resize=1920%2C1280&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/5/what-is-herods-pool-and-why-is-israel-developing-it-in-the-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/5/what-is-herods-pool-and-why-is-israel-developing-it-in-the-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4ed0272b14",
+ "score": 49.87,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel builds West Bank reservoir, diverts Palestinian water supplies"
+}
