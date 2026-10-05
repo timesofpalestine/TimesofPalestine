@@ -6,7 +6,19 @@
    "article": "https://shehabnews.com/post/165342/%D8%AD%D9%85%D8%A7%D8%B3-%D8%A7%D9%84%D8%A5%D8%B9%D8%AF%D8%A7%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%8A%D8%AF%D8%A7%D9%86%D9%8A%D8%A9-%D9%88%D8%AC%D8%B1%D8%A7%D8%A6%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%84%D9%86-%D8%AA%D8%B1%D9%87%D8%A8-%D8%B4%D8%B9%D8%A8%D9%86%D8%A7-%D9%88%D9%84%D9%86-%D8%AA%D8%B2%D9%8A%D8%AF%D9%87-%D8%A5%D9%84%D8%A7-%D8%AB%D8%A8%D8%A7%D8%AA%D8%A7-%D9%88%D9%85%D9%82%D8%A7%D9%88%D9%85%D8%A9",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/396758",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/187590/%D8%AD%D9%85%D8%A7%D8%B3-%D8%A5%D8%B9%D8%AF%D8%A7%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D9%8A%D8%AF%D8%A7%D9%86%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%84%D8%A7-%D8%AA%D8%B1%D9%87%D8%A8-%D8%B4%D8%B9%D8%A8%D9%86%D8%A7-%D9%88%D9%84%D9%86-%D8%AA%D8%B2%D9%8A%D8%AF%D9%87-%D8%A5%D9%84",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-10-05T12:23:00+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "c744b06be9",
- "score": 49.1,
+ "score": 48.85,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
