@@ -1,0 +1,33 @@
+{
+ "brief": "A drive through the West Bank reveals the physical reality confronting Palestinians as they ask world leaders where a future state is meant to be located, Al Jazeera English reported. The territory is fragmented by Israeli settlements, military checkpoints, and restricted roads that divide Palestinian population centers and limit movement across the land.\n\nThe geographic constraints raise fundamental questions about the viability of Palestinian statehood under current conditions. Palestinians point to the checkered landscape of settlements and security barriers as evidence that establishing a contiguous, functioning state has become increasingly difficult within the West Bank's boundaries.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/5/a-drive-through-the-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-05T15:22:10+00:00",
+ "dek": "Palestinians in the occupied West Bank are left asking world leaders: where exactly is our state meant to go?",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791213629.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/5/a-drive-through-the-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/5/a-drive-through-the-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b6d9fcc536",
+ "score": 49.67,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians question where future state will fit in occupied territory"
+}
