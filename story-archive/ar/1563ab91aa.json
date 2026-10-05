@@ -1,0 +1,33 @@
+{
+ "brief": "يعاني السكان في قطاع غزة من دمار واسع ونزوح قسري جراء الحملات العسكرية، بينما يواجه سكان الضفة الغربية هدماً منتظماً لمنازلهم وتهجيراً من قراهم ومدنهم.\n\nتشهد فلسطين أزمة إسكان حادة تفاقمت بفعل السياسات الإسرائيلية الموجهة ضد المدنيين، إذ تستمر الحملات الموسعة على المناطق المأهولة بالسكان في كلا الإقليمين.\n\nوأسفرت هذه الحملات عن تشريد أعداد كبيرة من العائلات وفقدان آلاف المساكن، مما عمّق معاناة الفلسطينيين وزاد من الضغط على الخدمات والموارد المتاحة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/05/1119974",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-05T12:39:02+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/05/1119974",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1563ab91aa",
+ "score": 49.55,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يسعّر أزمة الإسكان بهدم وتهجير في الضفة والدمار في غزة"
+}
