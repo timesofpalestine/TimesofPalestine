@@ -1,23 +1,23 @@
 {
- "brief": "Israel's demolition campaigns are transforming residential patterns across the West Bank, forcing families into overcrowded camps, Shehab Wire reported. Data from the Palestinian Central Bureau of Statistics reveal significant shifts in where families live, particularly within refugee camps experiencing mounting pressure from displacement operations and settler attacks.\n\nThe housing crisis reflects broader displacement patterns driven by demolitions, forced transfers, and violence against Palestinian communities. Camp populations are swelling as families lose homes to Israeli military and settlement expansion.",
+ "brief": "عمليات هدم واعتداءات إسرائيلية متكررة تغيّر واقع السكن في الضفة الغربية، بما يدفع أسراً فلسطينية نحو المخيمات التي تشهد ازدحاماً متزايداً. ويكشف الجهاز المركزي للإحصاء الفلسطيني عن تحولات جوهرية في أنماط إقامة السكان، وفقاً لوكالة شهاب.\n\nالبيانات الإحصائية الفلسطينية توثّق تراجعاً في المساكن المستقلة وارتفاعاً متوازياً في الكثافة السكانية داخل المخيمات، إذ يُفاقم الهدم المنهجي للمنازل من أزمة الإسكان الحادة، بينما تشكل حملات التهجير ضغوطاً إضافية على البنية السكنية الفلسطينية.",
  "cat": "westbank",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165323/%D9%85%D9%86-%D9%87%D8%AF%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%83%D9%86-%D8%A5%D9%84%D9%89-%D8%A7%D8%B2%D8%AF%D8%AD%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AE%D9%8A%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%BA%D9%8A-%D8%B1-%D8%A7%D9%84%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-05T06:38:00+00:00",
- "dek": "Israel's demolition campaigns are transforming residential patterns across the West Bank, forcing families into overcrowded camps, Shehab Wire reported.",
+ "dek": "تتغير خريطة السكن في الضفة الغربية تحت وطأة عمليات الهدم والتهجير والاعتداءات، بينما تكشف بيانات الجهاز المركزي للإحصاء الفلسطيني عن تحولات واضحة في أنماط إقامة الأسر، ولا سيما داخل المخيمات التي تعرض…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/GqMyF.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165323/%D9%85%D9%86-%D9%87%D8%AF%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%83%D9%86-%D8%A5%D9%84%D9%89-%D8%A7%D8%B2%D8%AF%D8%AD%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AE%D9%8A%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%BA%D9%8A-%D8%B1-%D8%A7%D9%84%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165323/%D9%85%D9%86-%D9%87%D8%AF%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%83%D9%86-%D8%A5%D9%84%D9%89-%D8%A7%D8%B2%D8%AF%D8%AD%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AE%D9%8A%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%BA%D9%8A-%D8%B1-%D8%A7%D9%84%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D8%B3%D9%83%D9%86%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "9c84396cbc",
- "score": 48.98,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 48.95,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Israeli demolitions reshape Palestinian housing across West Bank"
+ "title": "الاحتلال يعيد تشكيل خريطة السكن بالضفة عبر الهدم والتهجير"
 }
