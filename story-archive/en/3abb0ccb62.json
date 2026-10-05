@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces destroyed the Martyrs' Monument at Birzeit University, the Ma'an news agency reported. The structure stood on the campus in the occupied West Bank during the demolition by Israeli military personnel.\n\nThe monument functioned as a memorial site for students and visitors to the university grounds. Israeli military operations have repeatedly targeted Palestinian educational institutions across the West Bank.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169933.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-05T08:11:47+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169933.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3abb0ccb62",
+ "score": 63.37,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces destroy martyrs' monument at Birzeit University"
+}
