@@ -1,0 +1,39 @@
+{
+ "brief": "هاجم مستوطنون قاطفي الزيتون في منطقة برقة بحسب وكالة معاً، واستولوا على جرار زراعي تابع لهم. لم تسفر العملية عن إصابات مباشرة، غير أن الحادثة تكرر نمطاً متكرراً من الاعتداءات على المزارعين الفلسطينيين خلال موسم القطاف.\n\nتأتي الواقعة في سياق تصعيد الاعتداءات على الفلسطينيين والمستوطنات اليهودية في الضفة الغربية، خاصة خلال مواسم الحصاد حيث يستهدف المستوطنون المزارعين والعمال الفلسطينيين بهدف منعهم من الوصول لأراضيهم.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169943.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/3695-3",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-05T08:14:52+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2169943.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "86cb6b4e0a",
+ "score": 45.34,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "مستوطنون يهاجمون قاطفي الزيتون ويسرقون جراراً زراعياً في برقة"
+}
