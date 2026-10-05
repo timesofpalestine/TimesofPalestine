@@ -7,12 +7,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": false
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/green-party-recognises-zionism-form-racism-and-backs-single-palestinian",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-10-03T06:00:51+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "2c8c537ff0",
- "score": 3.21,
+ "score": 2.97,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
