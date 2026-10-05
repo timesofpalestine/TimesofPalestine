@@ -1,0 +1,33 @@
+{
+ "brief": "An investigative report reveals the extensive network of Israeli checkpoints controlling Palestinian movement, the Ma'an news agency reported. The checkpoints impose severe restrictions on Palestinian life, forcing residents to endure lengthy wait times that significantly impact access to work, education, and healthcare services.\n\nThe investigation documents the financial and human costs imposed by the checkpoint system on Palestinians navigating daily life. Residents face substantial delays and expenses as they move between areas, with the barriers creating systematic obstacles to economic opportunity and essential services.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169958.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-05T10:06:15+00:00",
+ "dek": "An investigative report reveals the extensive network of Israeli checkpoints controlling Palestinian movement, the Ma'an news agency reported.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169958.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f9aa1ee35f",
+ "score": 49.99,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Investigative report documents over 900 Israeli checkpoints across Palestinian territories"
+}
