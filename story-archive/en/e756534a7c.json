@@ -1,0 +1,39 @@
+{
+ "brief": "Britain has threatened to expel 27 Israeli diplomats in response to Israel's order closing the UK's East Jerusalem consulate, Al Jazeera English reported. The closure follows British sanctions against Israeli settlements in the occupied West Bank. The threatened expulsions represent an escalation in tensions between the two countries over the diplomatic facility.\n\nIsrael's decision to shut the consulate came after Britain imposed sanctions targeting settlement activity. The East Jerusalem consulate has served as Britain's diplomatic presence in the Palestinian territories. Relations between London and Tel Aviv have grown strained over West Bank policy and Palestinian representation.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/5/uk-threatens-to-expel-27-israeli-diplomats-over-jerusalem-consulate?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/labour-mp-emily-thornberry-urges-uk-defy-israeli-order-close-jerusalem",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-05T18:42:36+00:00",
+ "dek": "Israel ordered East Jerusalem consulate to be closed after Britain sanctioned settlements in the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20260908__C7P283A__v2__HighRes__IsraelPalestinianBritainDiplomacy-1791222848.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/5/uk-threatens-to-expel-27-israeli-diplomats-over-jerusalem-consulate?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/5/uk-threatens-to-expel-27-israeli-diplomats-over-jerusalem-consulate?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e756534a7c",
+ "score": 49.82,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Britain threatens to expel Israeli diplomats over Jerusalem consulate closure"
+}
