@@ -1,23 +1,23 @@
 {
- "brief": "The Hebrew-language website Walla reported Sunday that approximately 3,000 American soldiers are currently deployed throughout Israel as part of U.S. preparations for a potential military escalation in the Middle East, Shehab Wire reported.\n\nThe deployment represents a significant American military presence in the region, though the report provided no details on the specific locations of the troops or the duration of their deployment.",
+ "brief": "أفاد موقع \"واللا\" العبري بأن نحو 3 آلاف جندي أميركي ينتشرون حالياً في إسرائيل، ضمن استعدادات واشنطن لاحتمال تصعيد عسكري جديد في الشرق الأوسط.\n\nوأوضح الموقع أن القوات الأميركية تحتل مواقع استراتيجية متعددة داخل الأراضي الإسرائيلية، إذ تعكس النشر الحالي دعماً عسكرياً مباشراً من الإدارة الأميركية للاحتلال الإسرائيلي.\n\nوتأتي هذه الخطوة في سياق التوترات المتصاعدة بالمنطقة، حيث يشير الانتشار الأميركي إلى استعداد واشنطن للتدخل العسكري المباشر إذا لزم الأمر.",
  "cat": "news",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165318/%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%AD%D8%B4%D8%AF-%D8%AE%D9%84%D9%81-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-3-%D8%A2%D9%84%D8%A7%D9%81-%D8%AC%D9%86%D8%AF%D9%8A-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AA%D8%AD%D8%B3%D8%A8-%D8%A7-%D9%84%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-05T05:08:00+00:00",
- "dek": "The Hebrew-language website Walla reported Sunday that approximately 3,000 American soldiers are currently deployed throughout Israel as part of U.S.",
+ "dek": "أفاد موقع \"واللا\" العبري، اليوم الأحد، بأن نحو 3 آلاف جندي أميركي ينتشرون حاليًا في \"إسرائيل\"، في إطار استعدادات أميركية لاحتمال تصعيد عسكري جديد في منطقة الشرق الأوسط. وأوضح الموقع أن القوات الأمي…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/cqNTj.webp?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165318/%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%AD%D8%B4%D8%AF-%D8%AE%D9%84%D9%81-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-3-%D8%A2%D9%84%D8%A7%D9%81-%D8%AC%D9%86%D8%AF%D9%8A-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AA%D8%AD%D8%B3%D8%A8-%D8%A7-%D9%84%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165318/%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%AD%D8%B4%D8%AF-%D8%AE%D9%84%D9%81-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-3-%D8%A2%D9%84%D8%A7%D9%81-%D8%AC%D9%86%D8%AF%D9%8A-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AA%D8%AD%D8%B3%D8%A8-%D8%A7-%D9%84%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "e97ae7553b",
- "score": 61.66,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 61.62,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "United States deploys 3,000 troops to Israel amid regional tensions"
+ "title": "واشنطن تنتشر بـ 3 آلاف جندي في إسرائيل"
 }

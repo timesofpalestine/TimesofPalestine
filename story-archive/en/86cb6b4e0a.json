@@ -1,0 +1,33 @@
+{
+ "brief": "Settlers assaulted Palestinian olive pickers and seized an agricultural tractor in Burqa, the Ma'an news agency reported. The incident occurred during the harvest season, when Palestinians typically gather olives from their groves across the West Bank.\n\nThe attack is part of a broader pattern of settler violence that often intensifies during harvest periods, when Palestinians access agricultural land that borders or is near Israeli settlements.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169943.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-05T08:14:52+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169943.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "86cb6b4e0a",
+ "score": 49.83,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settlers attack olive harvesters, seize tractor in Burqa"
+}
