@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/10/5/what-is-herods-pool-and-why-is-israel-developing-it-in-the-west-bank?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-wound-least-one-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-05T18:24:06+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4ed0272b14",
- "score": 47.5,
+ "score": 47.25,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
