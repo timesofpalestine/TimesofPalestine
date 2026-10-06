@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli forces killed one Palestinian and injured several others in the occupied West Bank, Al Jazeera English reported. The incident marks the latest in a pattern of armed confrontations in the territory.\n\nPalestinians in the West Bank face escalating Israeli military operations and security measures, according to the report. The extent of injuries and the circumstances surrounding the fatality were not detailed in the initial account.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/5/israeli-forces-kill-one-injure-several-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-qalqilyah-occupied-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-05T20:49:35+00:00",
+ "dek": "Palestinians in West Bank are suffering increasing Israeli violence and repression.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ac3d4c61276-1791218886.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/5/israeli-forces-kill-one-injure-several-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/5/israeli-forces-kill-one-injure-several-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "58402d9b47",
+ "score": 61.34,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces kill Palestinian in occupied West Bank"
+}
