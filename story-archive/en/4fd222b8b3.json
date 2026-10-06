@@ -1,23 +1,29 @@
 {
- "brief": "كشف موقع \"دروب سايت نيوز\" عن تقييم استخباري سري أعدته وكالة الاستخبارات المركزية الأميركية \"CIA\" يحذر من احتمال دخول إسرائيل في مسار يقود إلى حرب أهلية أو انهيار مؤسسات الدولة، على خلفية تراكم أزمات داخلية.\n\nينطوي التقييم على تقديرات حول تأثير حرب غزة المستمرة على الاستقرار السياسي والأمني والاجتماعي في إسرائيل، وسط انقسامات حادة بين الفئات المختلفة من السكان والنخب السياسية بشأن مسار الحرب والمفاوضات.",
+ "brief": "Shehab Wire reported that a classified intelligence assessment by the U.S. Central Intelligence Agency warns of the possibility that Israel could enter a path leading to civil war or state institutional collapse, citing accumulating crises stemming from the Gaza war. The assessment was revealed by the Drob Site News website.\n\nDetails of the specific crises cited in the CIA evaluation were not specified in available reports.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165390/%D8%AD%D8%B1%D8%A8-%D8%BA%D8%B2%D8%A9-%D8%AA%D8%B6%D8%B1%D8%A8-%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%AA%D9%82%D9%8A%D9%8A%D9%85-%D8%B3%D8%B1%D9%8A-%D9%84%D9%80%D9%80-CIA-%D9%8A%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%B5%D8%B1%D8%A7%D8%B9-%D8%A3%D9%87%D9%84%D9%8A",
-   "name": "وكالة شهاب (حصري)",
+   "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/alternative-cia-report-warns-civil-conflict-israel-report",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-06T06:38:00+00:00",
- "dek": "كشف موقع \"دروب سايت نيوز\" عن تقييم استخباري سري أعدته وكالة الاستخبارات المركزية الأميركية \"CIA\" يحذر من احتمال دخول \"إسرائيل\" في مسار يقود إلى حرب أهلية أو انهيار مؤسسات الدولة، على خلفية تراكم أزمات…",
+ "dek": "Shehab Wire reported that a classified intelligence assessment by the U.S.",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/KallW.jpg?v=1",
- "lang": "ar",
+ "lang": "en",
  "link": "https://shehabnews.com/post/165390/%D8%AD%D8%B1%D8%A8-%D8%BA%D8%B2%D8%A9-%D8%AA%D8%B6%D8%B1%D8%A8-%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%AA%D9%82%D9%8A%D9%8A%D9%85-%D8%B3%D8%B1%D9%8A-%D9%84%D9%80%D9%80-CIA-%D9%8A%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%B5%D8%B1%D8%A7%D8%B9-%D8%A3%D9%87%D9%84%D9%8A",
  "max_age_hours": 72,
  "media": {
-  "credit": "وكالة شهاب (حصري)",
+  "credit": "Shehab Wire (EN)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165390/%D8%AD%D8%B1%D8%A8-%D8%BA%D8%B2%D8%A9-%D8%AA%D8%B6%D8%B1%D8%A8-%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%AA%D9%82%D9%8A%D9%8A%D9%85-%D8%B3%D8%B1%D9%8A-%D9%84%D9%80%D9%80-CIA-%D9%8A%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%B5%D8%B1%D8%A7%D8%B9-%D8%A3%D9%87%D9%84%D9%8A"
@@ -25,9 +31,9 @@
  "modified": null,
  "original": false,
  "pid": "4fd222b8b3",
- "score": 49.35,
- "source": "وكالة شهاب (حصري)",
- "source_id": "shehab",
+ "score": 49.38,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
- "title": "استخبارات أميركية تحذر من حرب أهلية محتملة بإسرائيل"
+ "title": "CIA assessment warns Israel faces civil war risk amid Gaza conflict"
 }
