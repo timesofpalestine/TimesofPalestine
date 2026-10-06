@@ -13,12 +13,6 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/uk-security-adviser-visited-israel-bid-keep-jerusalem-consulate-open-sources-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-10-06T05:59:00+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "5c7ac7b614",
- "score": 63.46,
+ "score": 63.2,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
