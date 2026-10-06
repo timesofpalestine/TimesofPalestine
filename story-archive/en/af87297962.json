@@ -13,6 +13,18 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israels-ben-gvir-rides-bulldozer-palestinian-homes-demolished-east-jerusalem-0",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48334",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-06T06:48:37+00:00",
@@ -31,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "af87297962",
- "score": 44.18,
+ "score": 43.89,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
