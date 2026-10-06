@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinian journalists have continued reporting from Gaza throughout the conflict, working under dangerous conditions that have drawn international attention to their role in documenting events on the ground, Al Jazeera English reported. Their coverage has sparked broader scrutiny of how Western media outlets have handled the conflict narrative and their responsibility toward journalists operating in conflict zones.\n\nPalestinian journalists have faced criticism that Western media has framed the story in ways that favor Israeli perspectives while failing to support vulnerable reporters working in Gaza. The situation reflects ongoing tension between international media standards and the operational realities facing local news organizations in active conflict areas.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/6/how-palestinian-reporters-defied-israels-genocide-to-redefine-journalism?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-06T11:47:03+00:00",
+ "dek": "Western media under scrutiny for promoting Israeli narrative rather than standing up for vulnerable journalists in Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/GettyImages-1978427240-1791280769.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/6/how-palestinian-reporters-defied-israels-genocide-to-redefine-journalism?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/6/how-palestinian-reporters-defied-israels-genocide-to-redefine-journalism?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4dda2b51cc",
+ "score": 49.57,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinian reporters cover Gaza war despite Israeli military operations"
+}
