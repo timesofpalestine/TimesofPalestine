@@ -6,13 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-threatens-expel-27-israeli-diplomats-over-jerusalem-consulate-closure",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/10/uk-security-adviser-visited-israel-bid-keep-jerusalem-consulate-open-sources-say",
+   "article": "https://www.al-monitor.com/originals/2026/10/britain-likely-expel-israeli-diplomats-if-jerusalem-consulate-closes-sources-say",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
   }
  ],
  "date": "2026-10-06T02:20:00+00:00",
@@ -31,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "8af06f748d",
- "score": 47.57,
+ "score": 45.7,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
