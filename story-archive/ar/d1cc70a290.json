@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب وكالة معا، يستعد الجيش الإسرائيلي لعملية جديدة محتملة في إيران، وفقاً لتقرير متخصص. غير أن التفاصيل المتوفرة حول طبيعة العملية وتوقيتها وأهدافها المحددة لم تُحدَّد بشكل دقيق في التقرير.\n\nيندرج الاستعداد في سياق التصعيد الأمني المتكرر بين إسرائيل وإيران، إذ شهدت المنطقة توترات متعددة بين الجانبين خلال الأشهر الماضية، مما يعكس استمرار حالة من الاستنفار العسكري والاستعدادات الأمنية على كلا الجانبين.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169959.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-05T11:21:43+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2169959.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d1cc70a290",
+ "score": 23.41,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "الجيش الإسرائيلي يستعد لعملية محتملة في إيران"
+}
