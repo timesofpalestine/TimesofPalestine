@@ -6,13 +6,7 @@
    "article": "https://www.maannews.net/news/2170010.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/6/jerusalem-daily-tension-high-in-israel-ahead-of-october-7?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-06T09:27:14+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "5f72051192",
- "score": 25.57,
+ "score": 25.29,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
