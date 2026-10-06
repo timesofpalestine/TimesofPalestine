@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli forces demolished a residential building in the al-Tur neighborhood of East Jerusalem, the Ma'an news agency reported. The operation resulted in the destruction of the structure, with video documentation of the demolition circulating among media outlets.\n\nAl-Tur is a Palestinian neighborhood in occupied East Jerusalem. The Israeli military regularly conducts demolitions in Palestinian areas, citing lack of building permits issued by Israeli authorities.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2169992.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/165389/%D8%A8%D9%86-%D8%BA%D9%81%D9%8A%D8%B1-%D9%8A%D8%AA%D8%A7%D8%A8%D8%B9-%D9%87%D8%AF%D9%85-%D8%A8%D9%86%D8%A7%D9%8A%D8%A9-%D9%85%D9%86-5-%D8%B7%D9%88%D8%A7%D8%A8%D9%82-%D9%88%D8%AA%D8%B4%D8%B1%D9%8A%D8%AF-70-%D9%85%D9%82%D8%AF%D8%B3%D9%8A%D8%A7-%D9%81%D9%8A-%D8%A7%D9%84%D8%B7%D9%88%D8%B1",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-06T06:48:37+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2169992.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "af87297962",
+ "score": 48.55,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli army demolishes residential building in Jerusalem's al-Tur neighborhood"
+}
