@@ -1,0 +1,33 @@
+{
+ "brief": "An armed settler stormed a Bedouin gathering and ordered residents to leave the area, according to Ma'an Wire. The incident marked an escalation in tensions over land occupation in Palestinian territories where Bedouin communities face recurring pressure from Israeli settlers.\n\nDetails of the specific location and number of residents affected were not immediately clear. Such incursions by armed settlers have become increasingly common in areas where Bedouin Palestinians maintain traditional settlements.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170015.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-06T10:25:12+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170015.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2c11f0d706",
+ "score": 49.87,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Armed settler demands Bedouin community evacuate settlement"
+}
