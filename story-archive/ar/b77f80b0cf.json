@@ -6,7 +6,13 @@
    "article": "https://qudsn.co/post?id=218006&slug=%D9%82%D9%88%D8%A7%D8%B1%D8%A8-%D8%AA%D8%AD%D8%AA-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%A7%D8%AF-235-%D8%B5%D9%8A%D8%A7%D8%AF%D9%8B%D8%A7-%D9%88%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84-130-%D8%AE%D9%84%D8%A7%D9%84-%D8%AD%D8%B1%D8%A8-%D8%BA%D8%B2%D8%A9",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://palinfo.com/news/2026/10/06/1120093",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-10-05T08:23:28+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b77f80b0cf",
- "score": 45.5,
+ "score": 45.31,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
