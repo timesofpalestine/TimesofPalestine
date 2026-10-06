@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli soldiers destroyed a memorial at Birzeit University dedicated to students and alumni killed by Israel, Al Jazeera English reported. The soldiers removed the monument and replaced it with a fig sapling.\n\nThe destruction targeted a structure commemorating Palestinians who died in connection with Israeli military operations. University officials characterized the action as an attempt to erase Palestinian historical memory.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/10/6/birzeit-university-memorial-destruction-aims-to-crush-palestinian-memory?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-06T15:14:28+00:00",
+ "dek": "Israeli soldiers removed the monument to students and alumni killed by Israel and replaced it with a fig sapling.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Rania-Washaha-is-holding-her-brothers-photo-near-the-memorial-in-BZU-Photo-by-Mohamad-Turkman-1791289238.jpeg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/10/6/birzeit-university-memorial-destruction-aims-to-crush-palestinian-memory?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/10/6/birzeit-university-memorial-destruction-aims-to-crush-palestinian-memory?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ba766b4543",
+ "score": 63.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli soldiers remove Birzeit memorial, plant fig sapling in its place"
+}
