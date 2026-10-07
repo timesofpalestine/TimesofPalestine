@@ -6,7 +6,13 @@
    "article": "https://zeteo.com/p/israel-is-more-isolated-than-ever",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/three-years-of-genocide-in-gaza-end-genocide-occupation-and-impunity",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-07T01:01:31+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "df11ce095f",
- "score": 37.25,
+ "score": 37.04,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
