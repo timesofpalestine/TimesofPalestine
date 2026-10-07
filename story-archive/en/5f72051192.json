@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2170010.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/mourning-war-and-elections-israel-marks-october-7",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-06T09:27:14+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "5f72051192",
- "score": 20.43,
+ "score": 20.24,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
