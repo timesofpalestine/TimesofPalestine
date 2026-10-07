@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/10/7/how-us-military-aid-to-israel-continues-three-years-into-gaza-genocide?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://zeteo.com/p/israel-is-more-isolated-than-ever",
-   "name": "Zeteo",
-   "url": "https://zeteo.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-07T11:23:48+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "75527620f0",
- "score": 48.47,
+ "score": 48.24,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

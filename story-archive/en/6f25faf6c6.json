@@ -1,0 +1,33 @@
+{
+ "brief": "Israel has deployed chatbots across social media platforms to defend government policies and counter criticism during the Gaza conflict, the Quincy Institute reported. The automated accounts flood comment sections and replies with pro-Israel messaging, attempting to shape online discourse and drown out opposing viewpoints.\n\nThe chatbot campaign reflects efforts by Israeli authorities to control narrative around the war. Critics describe the operation as ineffective and transparent, with users easily identifying the automated nature of the posts through repetitive language and coordinated timing patterns.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://www.972mag.com/israel-ai-chatbots-influence",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-06T19:42:00+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-research.svg",
+ "lang": "en",
+ "link": "https://www.972mag.com/israel-ai-chatbots-influence",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6f25faf6c6",
+ "score": 71.16,
+ "source": "Quincy Institute",
+ "source_id": "quincy",
+ "source_url": "https://quincyinst.org/",
+ "title": "Israel deploys social media chatbots to counter online criticism"
+}
