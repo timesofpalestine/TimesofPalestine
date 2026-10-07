@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/video/by-the-numbers-3/2026/10/7/what-does-a-year-long-ceasefire-in-gaza-look-like?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/big-story/gaza-all-we-do-is-try-to-survive",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-07T08:55:12+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "2e7b7906d2",
- "score": 63.34,
+ "score": 63.11,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
