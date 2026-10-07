@@ -1,0 +1,51 @@
+{
+ "brief": "Three years of Israeli military operations in Gaza have killed tens of thousands of people, according to Al Jazeera English. The sustained attacks have devastated the territory, destroying homes and collapsing basic services including water, electricity, and healthcare systems that residents depend on.\n\nThe scale of destruction has left Gaza's population facing acute humanitarian need, with widespread displacement and shortages of food and medical supplies compounding the toll of the violence.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-killed-263-journalists-over-three-years-gaza-media-official-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/israel-is-more-isolated-than-ever",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/06/trauma-of-7-october-israel-survivors-three-years-hamas-after-attacks",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-07T05:02:04+00:00",
+ "dek": "Three years of attacks has devastated Gaza, killing tens of thousands, destroying homes, and collapsing basic services.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/interactive-3-years-of-Gaza-cover-oct6-2026-1791287215.png?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5c23dc0951",
+ "score": 63.75,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel's three-year Gaza offensive kills tens of thousands, destroys infrastructure"
+}
