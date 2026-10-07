@@ -1,0 +1,33 @@
+{
+ "brief": "العنوان الوارد في المصدر يطرح سؤالاً حول الدور الذي لعبته عملية طوفان الأقصى في إعادة الربط بين أراضي فلسطينية منفصلة جغرافياً، إذ يشير إلى أن العملية العسكرية التي شنتها المقاومة الفلسطينية قد أسهمت في توحيد الساحة الفلسطينية بشقيها الجنوبي والشمالي.\n\nيعكس هذا الطرح الرؤية التي تربط بين الحدث العسكري وتأثيراته على الواقع السياسي والاجتماعي الفلسطيني، حيث يُفهم أن العملية أعادت فتح نقاشات وتحركات موحدة بين سكان غزة والضفة الغربية رغم الانقسام الإداري والجغرافي الذي فصل بينهم سنوات.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/07/1120168",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-07T21:02:32+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/07/1120168",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "05ea99d928",
+ "score": 49.74,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "طوفان الأقصى يعيد ربط الجغرافيا الفلسطينية بين غزة والضفة"
+}
