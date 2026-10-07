@@ -1,29 +1,23 @@
 {
- "brief": "Fakhri Abu Diyab, a trustee of Al-Aqsa Mosque's board, warned of \"a dangerous and accelerating Israeli escalation targeting Palestinian presence in occupied Jerusalem,\" Shehab Wire reported. He cited expanding house demolition operations and family displacement as part of the campaign.\n\nAbu Diyab's warning comes as demolition and displacement activities intensify in the occupied city, according to the Jerusalem-based Islamic body he represents.",
+ "brief": "حذّر فخري أبو دياب، عضو مجلس أمناء المسجد الأقصى المبارك، من \"تصعيد إسرائيلي خطير ومتسارع\" يستهدف الوجود الفلسطيني في القدس المحتلة، عبر توسيع عمليات هدم المنازل وتشريد العائلات. وربط أبو دياب بحسب وكالة شهاب هذا التصعيد بقرب تنفيذ خطط الاحتلال.\n\nوصف أبو دياب الإجراءات بأنها \"عقاب جماعي\" موجه ضد المقدسيين، في إطار ما أسماه سياسة احتلالية منسقة لفرض الواقع الديموغرافي الجديد في المدينة المحتلة.",
  "cat": "westbank",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165474/%D9%87%D9%8A%D8%A6%D8%A9-%D9%85%D9%82%D8%AF%D8%B3%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%B5%D8%B9-%D8%AF-%D8%A7%D9%84%D9%87%D8%AF%D9%85-%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%A8-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B9%D9%8A-%D8%A8%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%82%D8%AF%D8%B3%D9%8A%D9%8A%D9%86",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/maannews/37183",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-07T08:22:00+00:00",
- "dek": "Fakhri Abu Diyab, a trustee of Al-Aqsa Mosque's board, warned of \"a dangerous and accelerating Israeli escalation targeting Palestinian presence in occupied Jerusalem,\" Shehab Wire reported.",
+ "dek": "حذر عضو مجلس أمناء المسجد الأقصى المبارك، فخري أبو دياب، من \"تصعيد إسرائيلي خطير ومتسارع يستهدف الوجود الفلسطيني في القدس المحتلة\"، عبر توسيع عمليات هدم المنازل وتشريد العائلات، بالتزامن مع اقتراب تنف…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2023/05/56xGt.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165474/%D9%87%D9%8A%D8%A6%D8%A9-%D9%85%D9%82%D8%AF%D8%B3%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%B5%D8%B9-%D8%AF-%D8%A7%D9%84%D9%87%D8%AF%D9%85-%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%A8-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B9%D9%8A-%D8%A8%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%82%D8%AF%D8%B3%D9%8A%D9%8A%D9%86",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165474/%D9%87%D9%8A%D8%A6%D8%A9-%D9%85%D9%82%D8%AF%D8%B3%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%B5%D8%B9-%D8%AF-%D8%A7%D9%84%D9%87%D8%AF%D9%85-%D9%88%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%A8-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B9%D9%8A-%D8%A8%D8%AD%D9%82-%D8%A7%D9%84%D9%85%D9%82%D8%AF%D8%B3%D9%8A%D9%8A%D9%86"
@@ -31,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "9347979b91",
- "score": 63.12,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 63.09,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Israeli occupation escalates home demolitions and collective punishment in Jerusalem"
+ "title": "أبو دياب يحذّر من تصعيد إسرائيلي في الهدم والتشريد بالقدس"
 }

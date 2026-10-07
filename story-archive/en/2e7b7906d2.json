@@ -1,0 +1,33 @@
+{
+ "brief": "Israel launched attacks on Gaza during nine of every ten days throughout what was described as a ceasefire period, according to Al Jazeera English. The strikes contradicted the stated terms of the truce arrangement and raised questions about the agreement's actual implementation and enforcement.\n\nThe pattern of near-daily bombardment occurred during the purported year-long ceasefire. Details about what triggered the individual strikes and how each side characterized the violations remained unclear.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/by-the-numbers-3/2026/10/7/what-does-a-year-long-ceasefire-in-gaza-look-like?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-07T08:55:12+00:00",
+ "dek": "Israel attacked Gaza nine days out of 10 during a so-called ceasefire.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/BTN_Thumbnail_Landscape_V07-1791363279.png?resize=1920%2C1008&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/by-the-numbers-3/2026/10/7/what-does-a-year-long-ceasefire-in-gaza-look-like?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/by-the-numbers-3/2026/10/7/what-does-a-year-long-ceasefire-in-gaza-look-like?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2e7b7906d2",
+ "score": 63.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel struck Gaza nine days out of ten during supposed ceasefire"
+}
