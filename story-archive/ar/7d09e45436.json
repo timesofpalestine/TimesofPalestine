@@ -1,0 +1,33 @@
+{
+ "brief": "لا أملك مادة مصدرية كافية لكتابة موجز إخباري. العنوان الوارد سؤال استنكاري من قناة «غزة الآن» على تيليغرام حول تفاعل المتابعين، لكن لا يتضمن معلومات واقعية محددة — لا تاريخ، لا أرقام نهائية، لا سياق واضح عن أي منشور أو حدث بعينه.\n\nلأكتب خبراً موثوقاً، أحتاج إلى مادة تتضمن: ماذا حدث بالضبط؟ متى؟ كم شخصاً علّق فعلاً؟ على أي منشور أو استفتاء؟ ما السياق؟\n\nالرجاء إرسال المادة الكاملة أو مصدر بتفاصيل أكثر.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/83695",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-06T16:49:04+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/83695",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7d09e45436",
+ "score": 43.8,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "قناة تيليغرام تستقصي اهتمام متابعيها بغزة"
+}
