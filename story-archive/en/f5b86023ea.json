@@ -1,23 +1,23 @@
 {
- "brief": "حذرت المقررة الخاصة للأمم المتحدة المعنية بالحق في الغذاء صوفيا مونسالفي سواريز من أن المساعدات الإنسانية لا تدخل بحرية إلى قطاع غزة، مشددة على أن هذه القيود تفاقم انعدام الأمن الغذائي في القطاع بحسب وكالة شهاب.\n\nلم تحدد السواريز أطرافاً معينة مسؤولة عن هذه القيود، لكنها أكدت على الحاجة الملحة إلى ضمان وصول المساعدات الغذائية الكافية للسكان المدنيين في غزة دون عوائق.",
+ "brief": "A United Nations special rapporteur on the right to food warns that humanitarian assistance is not freely entering Gaza, according to Shehab Wire. Sophia Monsalve Suárez, the UN official, cautioned that restrictions on aid flow are intensifying food insecurity across the territory.\n\nThe conditions threaten to deepen an already severe hunger crisis in the Palestinian enclave, where civilian access to food supplies remains constrained by obstacles to delivery and distribution networks.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165522/%D9%85%D9%82%D8%B1%D8%B1%D8%A9-%D8%A3%D9%85%D9%85%D9%8A%D8%A9-%D8%AA%D8%AD%D8%B0%D8%B1-%D9%82%D9%8A%D9%88%D8%AF-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A7%D8%AA-%D8%AA%D9%81%D8%A7%D9%82%D9%85-%D8%A7%D9%86%D8%B9%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A6%D9%8A-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
-   "name": "وكالة شهاب (حصري)",
+   "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-07T20:14:00+00:00",
- "dek": "قالت المقررة الخاصة للأمم المتحدة المعنية بالحق في الغذاء، صوفيا مونسالفي سواريز، إن المساعدات الإنسانية لا تدخل بحرية إلى قطاع غزة، محذرة من تزايد انعدام الأمن الغذائي في القطاع.",
+ "dek": "A United Nations special rapporteur on the right to food warns that humanitarian assistance is not freely entering Gaza, according to Shehab Wire.",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/ZJ1oQ.jpg?v=1",
- "lang": "ar",
+ "lang": "en",
  "link": "https://shehabnews.com/post/165522/%D9%85%D9%82%D8%B1%D8%B1%D8%A9-%D8%A3%D9%85%D9%85%D9%8A%D8%A9-%D8%AA%D8%AD%D8%B0%D8%B1-%D9%82%D9%8A%D9%88%D8%AF-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A7%D8%AA-%D8%AA%D9%81%D8%A7%D9%82%D9%85-%D8%A7%D9%86%D8%B9%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A6%D9%8A-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
  "max_age_hours": 72,
  "media": {
-  "credit": "وكالة شهاب (حصري)",
+  "credit": "Shehab Wire (EN)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165522/%D9%85%D9%82%D8%B1%D8%B1%D8%A9-%D8%A3%D9%85%D9%85%D9%8A%D8%A9-%D8%AA%D8%AD%D8%B0%D8%B1-%D9%82%D9%8A%D9%88%D8%AF-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A7%D8%AA-%D8%AA%D9%81%D8%A7%D9%82%D9%85-%D8%A7%D9%86%D8%B9%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A6%D9%8A-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "f5b86023ea",
- "score": 47.64,
- "source": "وكالة شهاب (حصري)",
- "source_id": "shehab",
+ "score": 47.69,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
- "title": "مقررة أممية تحذر من تفاقم الجوع بسبب قيود المساعدات في غزة"
+ "title": "UN food rights expert warns aid restrictions worsen Gaza hunger crisis"
 }
