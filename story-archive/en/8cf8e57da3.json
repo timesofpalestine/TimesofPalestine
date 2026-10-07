@@ -1,0 +1,39 @@
+{
+ "brief": "Gaza City's port, once a center of fishing and tourism, has been severely damaged during the conflict, Al Jazeera reported. The facility served as a vital economic hub for the enclave before the war began.\n\nCorrespondent Maram Humaid documented the destruction at the port, showing the extent of infrastructure damage across Gaza City. The war has displaced thousands and devastated civilian livelihoods tied to maritime industries.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/7/how-has-israels-genocide-changed-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-killed-263-journalists-over-three-years-gaza-media-official-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-07T06:27:18+00:00",
+ "dek": "Gaza City’s port was a hub for fishing and tourism before the genocide. Al Jazeera’s Maram Humaid shows what’s left.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791354430.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/7/how-has-israels-genocide-changed-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/7/how-has-israels-genocide-changed-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8cf8e57da3",
+ "score": 46.35,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel's war devastates Gaza City's port infrastructure and economy"
+}

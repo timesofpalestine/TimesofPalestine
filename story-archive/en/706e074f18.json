@@ -1,0 +1,33 @@
+{
+ "brief": "Al Jazeera English reported that tent cities are spreading across Gaza as families displaced by three years of war struggle with ongoing casualties and injuries. The encampments reflect the scale of internal displacement throughout the territory, with thousands living in temporary shelters amid the ruins of destroyed infrastructure.\n\nFamilies continue to mourn the dead and provide care for the wounded while confronting repeated cycles of forced migration from one location to another. Tent settlements now cover large areas of Gaza as the displaced population grows.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/gallery/2026/10/7/photos-three-years-of-israels-war-on-gaza-as-tent-cities-spread-amid-ruin?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-07T09:55:26+00:00",
+ "dek": "Tent cities in Gaza grow as families mourn the dead, care for the injured, and endure relentless displacement.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP26279588205214-1791362324.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/gallery/2026/10/7/photos-three-years-of-israels-war-on-gaza-as-tent-cities-spread-amid-ruin?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/gallery/2026/10/7/photos-three-years-of-israels-war-on-gaza-as-tent-cities-spread-amid-ruin?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "706e074f18",
+ "score": 62.76,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Tent cities expand across Gaza as three-year Israeli war deepens displacement"
+}

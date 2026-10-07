@@ -6,7 +6,13 @@
    "article": "https://zeteo.com/p/where-does-hamas-stand-three-years",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/06/trauma-of-7-october-israel-survivors-three-years-hamas-after-attacks",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-05T17:22:20+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1f5607cd1f",
- "score": 20.86,
+ "score": 20.6,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
