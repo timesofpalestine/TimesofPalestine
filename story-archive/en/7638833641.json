@@ -13,6 +13,24 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/7/israeli-troops-seen-smashing-memorial-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48338",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-soldiers-and-settlers-kill-palestinian-during-olive-harvest-near",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-07T08:57:00+00:00",
@@ -31,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "7638833641",
- "score": 63.36,
+ "score": 62.85,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
