@@ -1,0 +1,51 @@
+{
+ "brief": "Three years after the October 7 attacks, more than 74,000 people have been killed in Gaza, according to Al Jazeera English. The figure reflects the scale of devastation across the enclave since the conflict intensified following the initial assault.\n\nThe toll encompasses casualties from sustained military operations, airstrikes, and ongoing humanitarian crises that have affected the Palestinian territory throughout the three-year period.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/7/jerusalem-daily-gazas-devastation-three-years-after-october-7?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/06/trauma-of-7-october-israel-survivors-three-years-hamas-after-attacks",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/10/7/israel_gaza_genocide",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/opinion/why-hamas-believed-status-quo-was-more-dangerous-its-7-october-gamble",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-07T18:03:14+00:00",
+ "dek": "Three years after the October 7 attacks, more than 74,000 people have been killed in Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791396130.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/7/jerusalem-daily-gazas-devastation-three-years-after-october-7?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/7/jerusalem-daily-gazas-devastation-three-years-after-october-7?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d3256e3790",
+ "score": 63.07,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza death toll exceeds 74,000 three years after October 7"
+}

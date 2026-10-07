@@ -1,0 +1,33 @@
+{
+ "brief": "Al Jazeera English examined parallels between Israel's war on Gaza and the Srebrenica genocide in Bosnia and Herzegovina, noting patterns that have recurred three years into the conflict. The analysis draws comparisons between mass atrocities separated by three decades and different regions, identifying structural similarities in how violence escalated in each case.\n\nThe report does not detail the specific patterns identified but frames the comparison as relevant to understanding the current situation in Gaza through the lens of a widely documented historical atrocity.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/7/how-genocide-in-gaza-followed-bosnias-painful-pattern?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-07T18:16:20+00:00",
+ "dek": "Three years into Israel’s war on Gaza, we examine patterns that echo the Srebrenica genocide in Bosnia and Herzegovina.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791396969.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/7/how-genocide-in-gaza-followed-bosnias-painful-pattern?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/7/how-genocide-in-gaza-followed-bosnias-painful-pattern?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5727b6eaba",
+ "score": 49.22,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza war mirrors Srebrenica genocide pattern, analysis finds"
+}

@@ -1,0 +1,33 @@
+{
+ "brief": "اعتقلت السلطات الإسرائيلية آلاف الفلسطينيين منذ السابع من أكتوبر 2023، في حملة اعتقالات واسعة طالت مختلف المحافظات الفلسطينية. يُحتجز معظم هؤلاء الأسرى بدون توجيه تهم أو محاكمة، وفقاً لما أفاد به المركز الفلسطيني للإعلام.\n\nتشير التقارير إلى تدهور الأوضاع الصحية للأسرى الفلسطينيين في السجون الإسرائيلية، وتعرضهم لممارسات يشتكي منها المنظمات الحقوقية. تواجه عائلات الأسرى ضغوطاً نفسية واقتصادية جراء احتجاز أحبائهم.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/07/1120253",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-07T18:27:41+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-prisoners-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/07/1120253",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "eca8e139a9",
+ "score": 49.29,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "آلاف الفلسطينيين في السجون الإسرائيلية بعد السابع من أكتوبر"
+}
