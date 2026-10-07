@@ -6,7 +6,19 @@
    "article": "https://t.me/maannews/37188",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48338",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-soldiers-and-settlers-kill-palestinian-during-olive-harvest-near",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-07T11:21:43+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "ece92e43a0",
- "score": 63.47,
+ "score": 63.23,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
