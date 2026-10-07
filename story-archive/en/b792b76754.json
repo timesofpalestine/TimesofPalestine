@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli soldier smashed a memorial to Palestinians during military operations in the occupied West Bank, Al Jazeera English reported. The incident was documented as troops conducted raids in the territory.\n\nThe destruction of the memorial occurred amid ongoing Israeli military activity in the West Bank. Such actions have drawn criticism from Palestinian rights advocates and international observers monitoring the situation in occupied Palestinian areas.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/7/israeli-troops-seen-smashing-memorial-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-07T08:16:17+00:00",
+ "dek": "An Israeli soldier was spotted smashing a memorial to Palestinians during raids in the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791360969.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/7/israeli-troops-seen-smashing-memorial-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/7/israeli-troops-seen-smashing-memorial-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b792b76754",
+ "score": 61.87,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli soldier destroys Palestinian memorial in West Bank raid"
+}
