@@ -1,0 +1,45 @@
+{
+ "brief": "تترك ثلاث سنوات من الحرب الإسرائيلية على غزة خسائر بشرية وحضارية فادحة، بحسب الجزيرة نت. وثّق التقرير حجم الخسائر في أرواح السكان والدمار الواسع الذي طال القطاعات الحيوية، خاصة الصحة والتعليم والمياه، إضافة إلى استهداف متكرر للصحفيين العاملين بالقطاع.\n\nيشمل الدمار المنهجي البنية التحتية الأساسية للحياة المدنية، حيث تضررت المرافق الصحية والمدارس والشبكات المائية بشكل كبير، ما أفقد السكان الخدمات الأساسية.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.net/news/2026/10/7/%d8%a8%d8%a7%d9%84%d8%a3%d8%b1%d9%82%d8%a7%d9%85-%d8%a7%d9%84%d8%b5%d8%a7%d8%af%d9%85%d8%a9-%d8%ab%d9%84%d8%a7%d8%ab-%d8%b3%d9%86%d9%88%d8%a7%d8%aa-%d9%85%d9%86?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%ab%d9%84%d8%a7%d8%ab%d8%a9-%d8%a3%d8%b9%d9%88%d8%a7%d9%85-%d8%b9%d9%84%d9%89-%d8%a5%d8%b9%d9%84%d8%a7%d9%86-%d8%ad%d8%b2%d8%a8-%d8%a7%d9%84%d9%84%d9%87-%d8%ad%d8%b1%d8%a8-%d9%85",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/187710/%D8%AB%D9%84%D8%A7%D8%AB-%D8%B3%D9%86%D9%88%D8%A7%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%AD%D8%B1%D8%A8-%D8%BA%D8%B2%D8%A9-%D8%AA%D8%B3%D8%AA%D8%B0%D9%83%D8%B1-%D9%88%D8%AC%D8%B9-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-07T12:00:15+00:00",
+ "dek": "يستعرض التقرير بالأرقام التداعيات الكارثية لثلاث سنوات من الحرب الإسرائيلية على غزة. ويوثق حجم الخسائر البشرية، والدمار الشامل في قطاعات الصحة والتعليم والمياه، واستهداف الصحفيين.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.net/wp-content/uploads/2026/10/GettyImages-2294189708-1791382239.jpg?resize=1920%2C1440",
+ "lang": "ar",
+ "link": "https://www.aljazeera.net/news/2026/10/7/%d8%a8%d8%a7%d9%84%d8%a3%d8%b1%d9%82%d8%a7%d9%85-%d8%a7%d9%84%d8%b5%d8%a7%d8%af%d9%85%d8%a9-%d8%ab%d9%84%d8%a7%d8%ab-%d8%b3%d9%86%d9%88%d8%a7%d8%aa-%d9%85%d9%86?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "الجزيرة نت",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.net/news/2026/10/7/%d8%a8%d8%a7%d9%84%d8%a3%d8%b1%d9%82%d8%a7%d9%85-%d8%a7%d9%84%d8%b5%d8%a7%d8%af%d9%85%d8%a9-%d8%ab%d9%84%d8%a7%d8%ab-%d8%b3%d9%86%d9%88%d8%a7%d8%aa-%d9%85%d9%86?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5fe76e6b96",
+ "score": 46.61,
+ "source": "الجزيرة نت",
+ "source_id": "aja",
+ "source_url": "https://www.aljazeera.net/",
+ "title": "ثلاث سنوات من الحرب تخلّف دماراً شاملاً في غزة"
+}
