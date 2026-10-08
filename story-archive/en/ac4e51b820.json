@@ -6,7 +6,13 @@
    "article": "https://www.dropsitenews.com/p/gaza-palestine-israel-us-trade-deficit-kenya-ebola",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/10/7/maoz_inon_oct_7_anniv",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-07T14:29:31+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "ac4e51b820",
- "score": 50.41,
+ "score": 50.19,
  "source": "Drop Site News",
  "source_id": "dropsite",
  "source_url": "https://www.dropsitenews.com/",
