@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/three-years-into-the-gaza-genocide-inaction-is-complicity",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/10/7/israel_gaza_genocide",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-08T15:48:14+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "c58c1f8077",
- "score": 85.98,
+ "score": 85.95,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
