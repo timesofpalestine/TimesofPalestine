@@ -1,0 +1,39 @@
+{
+ "brief": "Drop Site News reported that 74,250 Palestinians have been killed in Gaza since October 7, marking three years since the start of the conflict. The figure represents a continuation of casualties documented throughout the ongoing war.\n\nThe Gaza territory has experienced sustained casualties over the three-year period. No additional details on the source of the casualty count were provided in the report.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.dropsitenews.com/p/gaza-palestine-israel-us-trade-deficit-kenya-ebola",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/10/7/maoz_inon_oct_7_anniv",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-07T14:29:31+00:00",
+ "dek": "Drop Site Daily: October 7, 2026…",
+ "dup_of": null,
+ "image": "https://substackcdn.com/image/fetch/$s_!a4xp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4197a99c-ee7c-4416-b689-a052ad3884ac_5575x3717.heic",
+ "lang": "en",
+ "link": "https://www.dropsitenews.com/p/gaza-palestine-israel-us-trade-deficit-kenya-ebola",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Drop Site News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.dropsitenews.com/p/gaza-palestine-israel-us-trade-deficit-kenya-ebola"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ac4e51b820",
+ "score": 56.31,
+ "source": "Drop Site News",
+ "source_id": "dropsite",
+ "source_url": "https://www.dropsitenews.com/",
+ "title": "Gaza death toll reaches 74,250 Palestinians since October 2023"
+}
