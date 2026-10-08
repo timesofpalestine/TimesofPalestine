@@ -1,0 +1,33 @@
+{
+ "brief": "Settlers launched an assault on Palestinian olive pickers in Salfit, wounding six farmers and destroying vehicles, the Ma'an wire reported. The attack occurred as Palestinians harvested olives in the area.\n\nDetails of the settlers' motivations and the specific locations targeted were not immediately disclosed. No information was provided on the condition of the injured farmers or the extent of vehicle damage.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170108.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-08T08:19:12+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170108.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "88071e1f72",
+ "score": 63.79,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settlers attack olive pickers in Salfit, injure six farmers and damage vehicles"
+}
