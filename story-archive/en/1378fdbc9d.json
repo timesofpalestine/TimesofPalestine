@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces have killed or wounded a Palestinian every 90 minutes in Gaza since the ceasefire began, according to Al Jazeera English. Islamic Relief, a humanitarian organization, has issued the stark assessment as Israeli military operations continue across the enclave despite the nominal halt in hostilities.\n\nThe charity called for global action as Israeli attacks persist and humanitarian conditions worsen in Gaza. The casualty rate reflects sustained violence in the territory even as a ceasefire framework remains nominally in place.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/8/israel-kills-or-wounds-palestinian-every-90-minutes-in-gaza-since-ceasefire?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-08T22:54:23+00:00",
+ "dek": "Islamic Relief calls for global action as deadly Israeli attacks in Gaza continue and humanitarian conditions worsen.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ac81410b2e8b-1791497232.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/8/israel-kills-or-wounds-palestinian-every-90-minutes-in-gaza-since-ceasefire?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/8/israel-kills-or-wounds-palestinian-every-90-minutes-in-gaza-since-ceasefire?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1378fdbc9d",
+ "score": 63.57,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel kills or wounds Palestinian every 90 minutes in post-ceasefire Gaza"
+}

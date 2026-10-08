@@ -1,0 +1,39 @@
+{
+ "brief": "أكثر من 1.4 مليون مواطن في قطاع غزة، يشكلون 67% من السكان، يعانون من انعدام أمن غذائي حاد، بحسب المركز الفلسطيني للإعلام. يعكس الرقم تفاقماً متسارعاً للأزمة الإنسانية والصحية في القطاع.\n\nعلى الصعيد الطبي، اختفى 44% من الأدوية الأساسية من الأسواق، بينما أدى النقص إلى غياب 54% من المستهلكات الطبية. يترجم ذلك انهياراً متدرجاً في قدرة القطاع على توفير الخدمات الصحية الأساسية للسكان.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/323749",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/a-34",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-08T22:59:49+00:00",
+ "dek": "متابعة | أرقام تكشف تفاقم الكارثة الإنسانية والصحية في قطاع غزة: - أكثر من 1.4 مليون مواطن، يشكّلون 67% من سكان القطاع، يواجهون انعدام الأمن الغذائي الحاد. - نفاد 44% من أصناف الأدوية الأساسية، ونقص 54% من المستهلكات الطبية.",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/dCKVGql3T2tM_Nqr5tM_o99lxftUCpXzJCJQwbMXPITsmQeK-RKGwGBMNIUfvTNj39UofBEoqij9c0gIlyMJowJzJu3HN155VeqmcDizWGRrB4Tj-Kwd-qwMGYGEy0Y_M8BeyLCna-o95MNf0Rt2QW7QkhzyRWgHd9RbWSaKOLJGJBTZHh-2Sw-jkztrIV7Opcu9hE6eix1_vj87T1NyQkAYrMPI4jZVYVxoyDsyZv_onrsx35fr0bEVCfA54p9X8ETeCIooVP5Ue2AJRtJjYM05DFVrnESCH9tWVIEyHniYt3UVU-AOfc4U74JJ_PPKiqBAf1nRHBVFUwjW67OAwA.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/323749",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/323749"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fcc4371bcd",
+ "score": 49.58,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "انعدام الأمن الغذائي يطال أكثر من 67% من سكان غزة"
+}
