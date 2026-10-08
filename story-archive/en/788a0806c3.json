@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinians in Gaza are living in conditions of profound hardship three years after Hamas's October 7 attack and the subsequent Israeli offensive, The Guardian reported. Residents describe existences defined by disease, despair, and physical destruction, with lives transformed beyond recognition since the conflict began.\n\nAhmed Ishtaiwi owns six chairs. The detail reflects the material losses and constrained conditions facing Gaza's population as they navigate prolonged conflict and its toll on civilian life.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/07/palestinians-gaza-existing-amid-disease-despair-ruins",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-07T21:00:01+00:00",
+ "dek": "People tell of lives changed beyond recognition after the 7 October attacks by Hamas three years ago and the subsequent Israeli offensive Ahmed Ishtaiwi has six chairs.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/0d0f5ae6a7f02c5a92bea298f0d96f41be8a5762/385_0_4402_3521/master/4402.jpg?width=140&quality=85&auto=format&fit=max&s=ee01540be756909131070bbcfb3a1c37",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/oct/07/palestinians-gaza-existing-amid-disease-despair-ruins",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/oct/07/palestinians-gaza-existing-amid-disease-despair-ruins"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "788a0806c3",
+ "score": 44.64,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Gazans describe lives of disease and despair three years after October 7"
+}
