@@ -1,0 +1,39 @@
+{
+ "brief": "Israel's Foreign Minister announced that Colombia will establish an embassy in Jerusalem, Al Jazeera English reported. The move follows campaign promises by Colombian President Abelardo De la Espriella to strengthen ties with Israel.\n\nThe decision marks a diplomatic shift for Colombia and adds to the growing number of countries maintaining diplomatic missions in Jerusalem, a city whose status remains contested in Israeli-Palestinian peace negotiations.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/8/colombian-embassy-to-open-in-jerusalem-israeli-fm-says?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/colombia-open-embassy-jerusalem-next-wednesday",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-08T18:07:06+00:00",
+ "dek": "Colombian President Abelardo De la Espriella had promised closer ties with Israel on the campaign trail.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ac7cff275edd-1791479794.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/8/colombian-embassy-to-open-in-jerusalem-israeli-fm-says?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/8/colombian-embassy-to-open-in-jerusalem-israeli-fm-says?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "035f85a20c",
+ "score": 49.4,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Colombia to open embassy in Jerusalem, Israeli FM announces"
+}
