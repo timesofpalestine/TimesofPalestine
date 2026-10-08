@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces have killed at least four Palestinians in Gaza over the past 24 hours, the territory's health ministry reported. The deaths mark the latest casualties in the strip as military operations continue.\n\nNo additional details about the circumstances of the deaths or the locations of the attacks were provided in the health ministry's statement, according to Middle East Eye.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-four-palestinians-gaza-over-past-day",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-08T11:35:01+00:00",
+ "dek": "Israeli attacks kill four Palestinians in Gaza over past day Israeli forces have killed at least four Palestinians in Gaza over the past 24 hours, the territory’s health ministry reports.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-attacks-kill-four-palestinians-gaza-over-past-day",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4553af0523",
+ "score": 60.83,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli attacks kill four Palestinians in Gaza"
+}
