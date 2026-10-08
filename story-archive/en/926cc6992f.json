@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli prosecutors charged a Jerusalem student with planning attacks using explosives and toxic materials, according to Ma'an Wire. Details of the charges and the student's identity were not disclosed in the initial report.\n\nThe case marks another instance of Israeli security forces moving against Palestinians accused of planning armed operations. No further information about the alleged plot or the student's background was immediately available.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170115.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-08T10:31:13+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170115.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "926cc6992f",
+ "score": 33.9,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli prosecutors charge Jerusalem student with planning bombings"
+}
