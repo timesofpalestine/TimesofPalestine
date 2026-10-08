@@ -1,0 +1,39 @@
+{
+ "brief": "Israel closed the British consulate in occupied East Jerusalem, the consulate's host country announced. The move marks an escalation in tensions between the Israeli government and Britain over diplomatic operations in the territory.\n\nBritain said it will maintain its presence in occupied East Jerusalem despite the closure. The British government did not immediately specify how it would conduct diplomatic operations in the territory following the shutdown.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/8/israel-shuts-down-british-consulate-in-occupied-east-jerusalem?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/07/uk-consulate-east-jerusalem-prepares-close-israel",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-08T20:34:00+00:00",
+ "dek": "The British government says it will retain its presence in occupied East Jerusalem after Israel removed its consulate.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/wide_thumb-1791491620.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/8/israel-shuts-down-british-consulate-in-occupied-east-jerusalem?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/8/israel-shuts-down-british-consulate-in-occupied-east-jerusalem?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e80c60fc31",
+ "score": 49.45,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel shuts down British consulate in occupied East Jerusalem"
+}
