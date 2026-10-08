@@ -1,0 +1,45 @@
+{
+ "brief": "Israel removed signage from the British consulate in occupied East Jerusalem on Thursday, one month after Foreign Minister Israel Ben-Zvi ordered its closure, Al Jazeera English reported. The deadline set by Israel's government has now passed without the UK complying with the order to shut the facility.\n\nBritain has not announced closure of the consulate, maintaining its diplomatic presence in the territory despite Israel's demand. The confrontation reflects escalating tensions between London and Jerusalem over the UK's stance on Palestinian rights and Israel's military operations.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/8/signage-at-uk-consulate-in-east-jerusalem-removed-as-israels-deadline-over?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/07/uk-consulate-east-jerusalem-prepares-close-israel",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/britain-removes-east-jerusalem-consulate-signage-israeli-shutdown-order-expires",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-08T05:06:25+00:00",
+ "dek": "Thursday marks 30 days since Israel's foreign minister ordered the closure of the UK consulate in occupied East Jerusalem.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ac71dfa-1791434234.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/8/signage-at-uk-consulate-in-east-jerusalem-removed-as-israels-deadline-over?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/8/signage-at-uk-consulate-in-east-jerusalem-removed-as-israels-deadline-over?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bd70b5e54d",
+ "score": 63.79,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel removes UK consulate signage in East Jerusalem after deadline"
+}
