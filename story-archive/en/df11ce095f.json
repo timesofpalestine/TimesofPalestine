@@ -19,12 +19,6 @@
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinians-reflect-they-mark-three-years-beginning-israels-genocide",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-10-07T01:01:31+00:00",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "df11ce095f",
- "score": 26.36,
+ "score": 26.15,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",

@@ -1,0 +1,33 @@
+{
+ "brief": "Hundreds of demonstrators rallied in Bogota to protest Colombia's relations with Israel and the ongoing conflict in Gaza, Al Jazeera English reported. The protesters took to the streets to voice opposition to what they characterize as genocide in the Palestinian territory.\n\nThe demonstration reflects growing activism across Latin America regarding the Israel-Gaza conflict, with civil society groups mobilizing against their governments' diplomatic and economic connections to Israel.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/8/protesters-in-colombia-rally-against-ties-with-israel?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-08T05:09:13+00:00",
+ "dek": "Hundreds took to the streets of Bogota to protest against the ongoing genocide in Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ac71e247ba8-1791434276.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/8/protesters-in-colombia-rally-against-ties-with-israel?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/8/protesters-in-colombia-rally-against-ties-with-israel?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ffdf5f2c39",
+ "score": 45.68,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Colombian protesters march against Gaza genocide, Israeli ties"
+}
