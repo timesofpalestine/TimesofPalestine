@@ -1,0 +1,33 @@
+{
+ "brief": "حذّرت حماس، بحسب المركز الفلسطيني للإعلام، من حملة تحريض إسرائيلية ضد مستشفيات قطاع غزة، واعتبرتها تمهيداً لاستهداف جديد لتلك المنشآت الطبية.\n\nلم تفصّل الحركة طبيعة التحريض أو أشكاله، غير أنّها أطلقت التحذير في خضمّ استمرار الحرب على غزة.\n\nتعرّضت عشرات المستشفيات والمرافق الصحية في القطاع للقصف خلال الأشهر الماضية من القتال، ما أدى إلى تدمير بنيتها التحتية وإصابة طاقمها الطبي.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/08/1120369",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-08T20:15:05+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/08/1120369",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "35a576c3f7",
+ "score": 48.89,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "حماس تحذّر من تحريض إسرائيلي على مستشفيات غزة"
+}
