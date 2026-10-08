@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "http://www.democracynow.org/2026/10/7/israel_gaza_genocide",
-   "name": "Democracy Now!",
-   "url": "https://www.democracynow.org/",
-   "verified": true
-  },
-  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinians-reflect-they-mark-three-years-beginning-israels-genocide",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "df11ce095f",
- "score": 27.32,
+ "score": 27.05,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",

@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces raided the home of al-Eizariya's deputy mayor and assaulted him, the Ma'an news agency reported. Details of the incident, including the timing and extent of injuries, were not immediately available.\n\nThe raid is part of ongoing military operations in Palestinian communities near Jerusalem. Al-Eizariya, located east of the city, has experienced repeated Israeli incursions in recent months.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170101.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-08T07:42:17+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170101.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c8ef7930b3",
+ "score": 48.36,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces raid deputy mayor's home, beat him in al-Eizariya"
+}
