@@ -9,15 +9,15 @@
    "verified": true
   },
   {
-   "article": "https://www.theguardian.com/world/2026/oct/07/uk-consulate-east-jerusalem-prepares-close-israel",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.al-monitor.com/originals/2026/10/britain-removes-east-jerusalem-consulate-signage-israeli-shutdown-order-expires",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/07/uk-consulate-east-jerusalem-prepares-close-israel",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
    "verified": true
   }
  ],
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "bd70b5e54d",
- "score": 63.79,
+ "score": 63.55,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

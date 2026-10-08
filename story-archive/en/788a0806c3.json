@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/world/2026/oct/07/palestinians-gaza-existing-amid-disease-despair-ruins",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/where-does-hamas-stand-three-years",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-07T21:00:01+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "788a0806c3",
- "score": 44.16,
+ "score": 43.91,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
