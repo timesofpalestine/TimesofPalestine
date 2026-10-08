@@ -1,23 +1,23 @@
 {
- "brief": "The Gaza lands authority has temporarily suspended property sales transactions in areas designated as the \"yellow line,\" Shehab Wire reported. The move comes as the authority warned against informal contracts in those zones.\n\nThe yellow line refers to a buffer zone where sales restrictions have been imposed. The temporary halt aims to regulate transactions and prevent unregistered dealings in the affected areas.",
+ "brief": "أوقفت دائرة الأراضي في غزة مؤقتاً معاملات البيع في المناطق المصنفة بـ«الخط الأصفر»، بحسب وكالة شهاب. وحذرت الدائرة من العقود العرفية المبرمة في تلك المناطق، دون تحديد مدة التوقف أو الأسباب الرسمية وراء هذا الإجراء.\n\nيأتي القرار في سياق تعقيدات إدارية وقانونية متعلقة بالملكيات العقارية في قطاع غزة، وسط مخاوف من المواطنين بشأن الحقوق العقارية والمعاملات الموثقة في تلك الأراضي.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165591/%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D8%A8%D8%BA%D8%B2%D8%A9-%D8%AA%D9%88%D9%82%D9%81-%D9%85%D8%A4%D9%82%D8%AA%D8%A7-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%B9-%D9%81%D9%8A-%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D8%A7%D9%84%D8%AE%D8%B7-%D8%A7%D9%84%D8%A3%D8%B5%D9%81%D8%B1",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-08T18:37:00+00:00",
- "dek": "The Gaza lands authority has temporarily suspended property sales transactions in areas designated as the \"yellow line,\" Shehab Wire reported.",
+ "dek": "حذرت من العقود العرفية \"الأراضي\" بغزة توقف مؤقتاً معاملات البيع في مناطق \"الخط الأصفر\"",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/ywIgP.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165591/%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D8%A8%D8%BA%D8%B2%D8%A9-%D8%AA%D9%88%D9%82%D9%81-%D9%85%D8%A4%D9%82%D8%AA%D8%A7-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%B9-%D9%81%D9%8A-%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D8%A7%D9%84%D8%AE%D8%B7-%D8%A7%D9%84%D8%A3%D8%B5%D9%81%D8%B1",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165591/%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D8%A8%D8%BA%D8%B2%D8%A9-%D8%AA%D9%88%D9%82%D9%81-%D9%85%D8%A4%D9%82%D8%AA%D8%A7-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%B9-%D9%81%D9%8A-%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D8%A7%D9%84%D8%AE%D8%B7-%D8%A7%D9%84%D8%A3%D8%B5%D9%81%D8%B1"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "7fdc4d34c8",
- "score": 48.4,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 48.32,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Gaza land authority halts sales in buffer zone areas"
+ "title": "دائرة الأراضي بغزة توقف معاملات البيع في مناطق الخط الأصفر"
 }
