@@ -1,23 +1,23 @@
 {
- "brief": "وكالة شهاب توثّق اعتماد النازحين في غزة على الترقيع كحل يومي للتعامل مع تدهور أحوالهم المعيشية. لم تعد الرقعة مجرد قطعة قماش تُخاط فوق ثقب في ملبس، بل باتت جزءاً من واقع الحياة الذي يعيشه السكان؛ إذ تظهر على الملابس والخيام وأدوات تجميع المياه.\n\nالحاجة الملحة للموارد الأساسية دفعت النازحين إلى إصلاح ما تبقى لديهم من ممتلكات بأي وسيلة متاحة، في ظروف إنسانية صعبة تفتقر للبدائل الكافية.",
+ "brief": "Patching has become a daily survival practice for displaced Palestinians in Gaza, Shehab Wire reported. Residents mend clothes, tents, water containers, and storage tanks with scraps of fabric as repeated damage and material scarcity leave few alternatives.\n\nThe practice reflects broader deprivation among the displaced population, who lack access to replacement goods and must extend the life of degraded possessions through repeated repairs.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165554/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D8%A7%D9%84%D8%AA%D8%B1%D9%82%D9%8A%D8%B9-%D9%81%D9%8A-%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A7%D9%84%D9%86%D8%A7%D8%B2%D8%AD%D9%8A%D9%86-%D9%81%D9%84%D8%B3%D9%81%D8%A9-%D8%BA%D8%B2%D9%8A%D8%A9-%D8%A7%D8%B3%D8%AA%D9%87%D9%84%D8%A7%D9%83%D9%8A%D8%A9-%D9%81%D8%B1%D8%B6%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9",
-   "name": "وكالة شهاب (حصري)",
+   "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-08T10:10:00+00:00",
- "dek": "خاص / شهاب في غزة، لم تعد الرقعة مجرد قطعة قماش تُخاط فوق ثقب في ثوب، بل صارت جزءًا من الحياة اليومية؛ رقعة فوق ثوب، وأخرى فوق خيمة، وثالثة على جالون الماء، ورابعة على خزان المياه، حتى بات الغزي يح…",
+ "dek": "Patching has become a daily survival practice for displaced Palestinians in Gaza, Shehab Wire reported.",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/Q1KFt.jpg?v=1",
- "lang": "ar",
+ "lang": "en",
  "link": "https://shehabnews.com/post/165554/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D8%A7%D9%84%D8%AA%D8%B1%D9%82%D9%8A%D8%B9-%D9%81%D9%8A-%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A7%D9%84%D9%86%D8%A7%D8%B2%D8%AD%D9%8A%D9%86-%D9%81%D9%84%D8%B3%D9%81%D8%A9-%D8%BA%D8%B2%D9%8A%D8%A9-%D8%A7%D8%B3%D8%AA%D9%87%D9%84%D8%A7%D9%83%D9%8A%D8%A9-%D9%81%D8%B1%D8%B6%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9",
  "max_age_hours": 72,
  "media": {
-  "credit": "وكالة شهاب (حصري)",
+  "credit": "Shehab Wire (EN)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165554/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D8%A7%D9%84%D8%AA%D8%B1%D9%82%D9%8A%D8%B9-%D9%81%D9%8A-%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A7%D9%84%D9%86%D8%A7%D8%B2%D8%AD%D9%8A%D9%86-%D9%81%D9%84%D8%B3%D9%81%D8%A9-%D8%BA%D8%B2%D9%8A%D8%A9-%D8%A7%D8%B3%D8%AA%D9%87%D9%84%D8%A7%D9%83%D9%8A%D8%A9-%D9%81%D8%B1%D8%B6%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "972c2ba676",
- "score": 49.34,
- "source": "وكالة شهاب (حصري)",
- "source_id": "shehab",
+ "score": 49.38,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
- "title": "الترقيع يصير روتين الحياة اليومية لنازحي غزة"
+ "title": "Gazans patch makeshift shelters as supplies dwindle"
 }
