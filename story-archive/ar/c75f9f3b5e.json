@@ -6,11 +6,35 @@
    "article": "https://www.aljazeera.net/news/2026/10/8/%d8%a8%d8%b1%d9%8a%d8%b7%d8%a7%d9%86%d9%8a%d8%a7-%d8%aa%d8%b2%d9%8a%d9%84-%d9%84%d8%a7%d9%81%d8%aa%d8%a7%d8%aa-%d9%82%d9%86%d8%b5%d9%84%d9%8a%d8%aa%d9%87%d8%a7-%d8%a8%d8%a7%d9%84%d9%82%d8%af%d8%b3?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/a-35",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=218082&slug=%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%BA%D9%84%D9%82-%D8%A7%D9%84%D9%82%D9%86%D8%B5%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D9%88%D9%84%D9%86%D8%AF%D9%86-%D8%AA%D8%A4%D9%83%D8%AF-%D9%85%D9%88%D8%A7%D8%B5%D9%84%D8%A9-%D8%B9%D9%85%D9%84%D9%87%D8%A7",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/323652",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/397095",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
   }
  ],
  "date": "2026-10-08T03:10:21+00:00",
- "dek": "تتصاعد الأزمة الدبلوماسية بين لندن وتل أبيب، في ظل إصرار إسرائيل على إغلاق القنصلية البريطانية في القدس الشرقية، ردا على عقوبات بريطانية تستهدف المستوطنات الإسرائيلية في الضفة الغربية المحتلة.",
+ "dek": "أكدت الخارجية الإسرائيلية إغلاق القنصلية البريطانية العامة في القدس الشرقية المحتلة، فيما أعلنت لندن تغيير اسمها إلى \"البعثة البريطانية في القدس\" مع استمرار عملها، وتراجعت عن طرد دبلوماسيين إسرائيليين…",
  "dup_of": null,
  "image": "https://www.aljazeera.net/wp-content/uploads/2026/10/reuters_6ac3fa73-1791228531.jpg?resize=1920%2C1440",
  "lang": "ar",
@@ -25,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "c75f9f3b5e",
- "score": 46.18,
+ "score": 46.0,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
