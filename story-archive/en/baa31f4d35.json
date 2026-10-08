@@ -1,0 +1,33 @@
+{
+ "brief": "Demonstrators rallied across the globe to mark the October 7 attack, according to Al Jazeera English, calling for an end to Israeli operations in Gaza and the West Bank. Streets filled with protesters demanding a ceasefire as the one-year anniversary of the attack drew international attention to the ongoing conflict.\n\nThe demonstrations reflected growing pressure for diplomatic resolution to the violence that has gripped the region since October 7.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/8/global-protests-mark-october-7-attack-with-calls-for-gaza-ceasefire?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-08T03:25:47+00:00",
+ "dek": "Demonstrators have taken to streets across the world to demand an end to Israeli attacks on Gaza and the West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791429924.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/8/global-protests-mark-october-7-attack-with-calls-for-gaza-ceasefire?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/8/global-protests-mark-october-7-attack-with-calls-for-gaza-ceasefire?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "baa31f4d35",
+ "score": 63.63,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Protesters worldwide demand Gaza ceasefire on October 7 anniversary"
+}
