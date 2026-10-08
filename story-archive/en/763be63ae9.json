@@ -1,0 +1,33 @@
+{
+ "brief": "The Quincy Institute reported that a U.S. diplomat suppressed and altered internal reports that were critical of Israel's conduct. The allegations center on the handling of sensitive assessments within the State Department regarding Israeli actions.\n\nDetails of which specific reports were altered, when the suppression occurred, or the diplomat's identity were not disclosed in the initial account. The report did not specify what aspects of Israeli policy the altered documents addressed.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://www.nytimes.com/2026/10/08/world/middleeast/israel-embassy-milstein-huckabee.html",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-08T11:47:00+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-research.svg",
+ "lang": "en",
+ "link": "https://www.nytimes.com/2026/10/08/world/middleeast/israel-embassy-milstein-huckabee.html",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "763be63ae9",
+ "score": 71.87,
+ "source": "Quincy Institute",
+ "source_id": "quincy",
+ "source_url": "https://quincyinst.org/",
+ "title": "U.S. Diplomat Suppressed Reports Critical of Israel"
+}
