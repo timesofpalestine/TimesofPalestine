@@ -9,7 +9,13 @@
    "verified": true
   },
   {
-   "article": "https://www.theguardian.com/world/2026/oct/07/uk-consulate-east-jerusalem-prepares-close-israel",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-says-consulate-jerusalem-remain-open-its-mission",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/politics/2026/oct/08/uk-consulate-east-jerusalem-remain-open-uk-mission-ed-miliband",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
@@ -22,7 +28,7 @@
   }
  ],
  "date": "2026-10-08T05:06:25+00:00",
- "dek": "Thursday marks 30 days since Israel's foreign minister ordered the closure of the UK consulate in occupied East Jerusalem.",
+ "dek": "UK Foreign ⁠Minister ⁠Ed Miliband says consulate building in occupied East Jerusalem would not be closing.",
  "dup_of": null,
  "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ac71dfa-1791434234.jpg?resize=1920%2C1440",
  "lang": "en",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "bd70b5e54d",
- "score": 62.82,
+ "score": 48.62,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

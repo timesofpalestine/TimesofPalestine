@@ -1,23 +1,23 @@
 {
- "brief": "أعلن المكتب الإعلامي الحكومي في قطاع غزة أن 97% من المدارس تعرضت لأضرار مادية جراء القصف الإسرائيلي المباشر وغير المباشر خلال ثلاث سنوات من الحرب على القطاع. وأشار المكتب إلى أن الاستهداف طال البنية التحتية التعليمية بشكل واسع، مما أثّر بشدة على العملية التعليمية.\n\nوفي سياق متصل، حُرم عدد كبير من الطلاب في غزة من مواصلة تعليمهم جراء الدمار الذي لحق بالمؤسسات التعليمية، الأمر الذي فاقم الأزمة الإنسانية في القطاع.",
+ "brief": "The government media office in Gaza reported that 97 percent of schools across the enclave sustained damage from Israeli bombardment—both direct and indirect strikes—over three years of conflict, Shehab Wire reported. The assessment encompasses destruction from what Palestinian officials characterize as a war of genocide.\n\nSchools in Gaza have been repurposed as shelters, medical facilities, and community centers throughout the conflict, making the damage to educational infrastructure a significant constraint on civilian life.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165539/%D8%AB%D9%84%D8%A7%D8%AB-%D8%B3%D9%86%D9%88%D8%A7%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-650-%D8%A3%D9%84%D9%81-%D8%B7%D8%A7%D9%84%D8%A8-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AE%D8%A7%D8%B1%D8%AC-%D9%85%D9%82%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9",
-   "name": "وكالة شهاب (حصري)",
+   "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-08T06:28:00+00:00",
- "dek": "أعلن المكتب الإعلامي الحكومي في قطاع غزة أن 97% من المدارس في القطاع تعرضت لأضرار مادية جراء القصف والاستهداف الإسرائيلي المباشر وغير المباشر خلال ثلاث سنوات من حرب الإبادة على غزة، فيما حُرم أكثر من…",
+ "dek": "The government media office in Gaza reported that 97 percent of schools across the enclave sustained damage from Israeli bombardment—both direct and indirect strikes—over three years of conflict, Shehab Wire reported.",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/dQvkb.jpg?v=1",
- "lang": "ar",
+ "lang": "en",
  "link": "https://shehabnews.com/post/165539/%D8%AB%D9%84%D8%A7%D8%AB-%D8%B3%D9%86%D9%88%D8%A7%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-650-%D8%A3%D9%84%D9%81-%D8%B7%D8%A7%D9%84%D8%A8-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AE%D8%A7%D8%B1%D8%AC-%D9%85%D9%82%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9",
  "max_age_hours": 72,
  "media": {
-  "credit": "وكالة شهاب (حصري)",
+  "credit": "Shehab Wire (EN)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165539/%D8%AB%D9%84%D8%A7%D8%AB-%D8%B3%D9%86%D9%88%D8%A7%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-650-%D8%A3%D9%84%D9%81-%D8%B7%D8%A7%D9%84%D8%A8-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AE%D8%A7%D8%B1%D8%AC-%D9%85%D9%82%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "3d2e54bc8c",
- "score": 63.53,
- "source": "وكالة شهاب (حصري)",
- "source_id": "shehab",
+ "score": 63.57,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
- "title": "97% من مدارس غزة تضررت في ثلاث سنوات من الحرب"
+ "title": "Gaza says 97% of schools damaged in three years of war"
 }
