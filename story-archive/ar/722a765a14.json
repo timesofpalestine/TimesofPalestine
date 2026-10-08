@@ -1,23 +1,23 @@
 {
- "brief": "Gaza's government media office said the Israeli military campaign has destroyed 227,703 buildings and affected 510,000 housing units across the territory's residential areas, according to Shehab Wire. Hundreds of thousands of additional units have been rendered uninhabitable, the office reported.\n\nThe destruction has displaced vast numbers of civilians throughout Gaza's neighborhoods, compounding a humanitarian crisis as residents lack adequate shelter amid ongoing conflict.",
+ "brief": "كشف المكتب الإعلامي الحكومي في قطاع غزة أن الحرب الإسرائيلية خلّفت دماراً واسعاً طال 227,703 مبانٍ و510 آلاف وحدة سكنية في مختلف مناطق القطاع. وأشار المكتب إلى أن مئات آلاف الوحدات تحولت إلى مساكن غير صالحة للعيش، مما أسهم في تفاقم الأزمة الإنسانية والسكنية.\n\nيعكس الرقم المعلن حجم الدمار الذي لحق بالبنية التحتية السكنية، إذ يشمل التدمير مناطق متعددة من القطاع، مع استمرار تأثير الحرب على واقع السكان ومعيشتهم.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165542/%D9%85%D9%86%D8%B2%D9%84-%D9%85%D9%87%D8%AF-%D9%85-%D9%88%D8%AE%D9%8A%D9%85%D8%A9-%D9%85%D9%86%D9%87%D9%83%D8%A9-410-%D8%A2%D9%84%D8%A7%D9%81-%D9%88%D8%AD%D8%AF%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AE%D8%A7%D8%B1%D8%AC-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
    "verified": false
   }
  ],
  "date": "2026-10-08T06:53:00+00:00",
- "dek": "Gaza's government media office said the Israeli military campaign has destroyed 227,703 buildings and affected 510,000 housing units across the territory's residential areas, according to Shehab Wire.",
+ "dek": "كشف المكتب الإعلامي الحكومي في قطاع غزة أن حرب الإبادة الإسرائيلية خلفت دمارًا واسعًا في القطاع السكني، طال 227,703 مبانٍ و510 آلاف وحدة سكنية في مختلف مناطق غزة، فيما تحولت مئات آلاف الوحدات إلى مساك…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/NSOAM.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165542/%D9%85%D9%86%D8%B2%D9%84-%D9%85%D9%87%D8%AF-%D9%85-%D9%88%D8%AE%D9%8A%D9%85%D8%A9-%D9%85%D9%86%D9%87%D9%83%D8%A9-410-%D8%A2%D9%84%D8%A7%D9%81-%D9%88%D8%AD%D8%AF%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AE%D8%A7%D8%B1%D8%AC-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165542/%D9%85%D9%86%D8%B2%D9%84-%D9%85%D9%87%D8%AF-%D9%85-%D9%88%D8%AE%D9%8A%D9%85%D8%A9-%D9%85%D9%86%D9%87%D9%83%D8%A9-410-%D8%A2%D9%84%D8%A7%D9%81-%D9%88%D8%AD%D8%AF%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AE%D8%A7%D8%B1%D8%AC-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9"
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "722a765a14",
- "score": 49.42,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 49.38,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Israeli war destroys over 227,000 buildings across Gaza"
+ "title": "المكتب الحكومي بغزة: 227 ألف مبنى دمّرت والحرب الإسرائيلية"
 }
