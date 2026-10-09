@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، تواصل الاستهدافات المباشرة للمنشآت الطبية في قطاع غزة منذ ثلاث سنوات. يصف المركز هذه الممارسات بـ«الإبادة الطبية»، مؤكداً أنها تشكل انتهاكات متكررة للقانون الدولي الإنساني وحقوق المدنيين.\n\nيطرح المركز تساؤلات حول استمرار هذا الاستهداف رغم التوثيق المكثف له على المستويات المحلية والدولية، مشيراً إلى الأثر المباشر على الخدمات الطبية وقدرة المستشفيات على تقديم الرعاية الصحية للسكان.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/09/1120409",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-09T18:51:56+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/09/1120409",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f860a65b16",
+ "score": 49.32,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "المركز الفلسطيني للإعلام يوثّق استهدافاً مستمراً للمستشفيات في غزة"
+}
