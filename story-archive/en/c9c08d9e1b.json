@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2170117.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48341",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-08T10:50:11+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "c9c08d9e1b",
- "score": 36.79,
+ "score": 36.57,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
