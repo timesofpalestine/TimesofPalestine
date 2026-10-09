@@ -1,0 +1,33 @@
+{
+ "brief": "A US charity announced plans to use artificial intelligence software to monitor classrooms in Gaza for instances of antisemitism and hate speech, Al Jazeera English reported. The initiative aims to track classroom content and student materials across the territory's schools.\n\nThe deployment of AI monitoring systems in educational settings raises questions about surveillance practices and oversight mechanisms in conflict-affected areas. Details on the scope of the program, timeline for implementation, and specific metrics for identifying flagged content were not immediately available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/9/jerusalem-daily-us-charity-to-use-ai-to-monitor-gaza-classrooms?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-09T17:37:05+00:00",
+ "dek": "A US charity announced it will use an AI-software to monitor Gaza classrooms for ‘anti-Semitism’ and ‘hate speech’.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/clean-3-1-1791567386.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/9/jerusalem-daily-us-charity-to-use-ai-to-monitor-gaza-classrooms?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/9/jerusalem-daily-us-charity-to-use-ai-to-monitor-gaza-classrooms?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7fbacc175d",
+ "score": 49.67,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "US charity to deploy AI monitoring in Gaza classrooms"
+}
