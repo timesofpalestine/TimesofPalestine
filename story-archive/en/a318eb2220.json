@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/37227",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/west-bank-nearly-20-israeli-settler-attacks-target-palestinians-day-mass-violence",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-09T11:13:42+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "a318eb2220",
- "score": 47.95,
+ "score": 47.75,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
