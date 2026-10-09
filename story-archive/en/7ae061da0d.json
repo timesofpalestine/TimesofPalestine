@@ -6,7 +6,25 @@
    "article": "https://zeteo.com/p/the-good-the-bad-and-the-ugly-ranking-af9",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/noura-erakat-three-years-of-genocide-board-peace-gaza",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/10/7/israel_gaza_genocide",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/live/2026/oct/07/israel-october-7-anniversary-hamas-gaza-netanyahu-iran-latest-news-updates",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-09T15:06:53+00:00",
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "7ae061da0d",
- "score": 79.51,
+ "score": 79.32,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
