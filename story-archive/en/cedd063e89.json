@@ -1,0 +1,33 @@
+{
+ "brief": "Eye on Palestine reported that children were among those injured in heavy Israeli bombardment of the Gaza Strip. The report did not specify the number of casualties or the locations targeted in the strikes.\n\nThe incident is the latest in ongoing military operations in the territory. Details regarding the severity of injuries and the circumstances of the bombardment were not immediately available.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/eyesonpal/53844",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-09T07:26:13+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/W11e_6dcnTwzWcVvaUhuBGaggGAg9Ih2bcpiJLpVaQ3diHNsKOViQiHajcqQYGCiLQlx0xoezCRTxceZASSggJmZ-6Ur65awPX1BUwS11qUMyqD0QiV-ttqWSyZ8TPT18lHkuN-ehcXUihXELXQcxG6QBzS0JUmEmz9CNuW4GW616RVj_47pxnysZP331bON_nSFHwW2ajF9N-vzNOG2KIMljVxjVk3NB61L8sJwWfD9W5OWwcB6HAsynRw_9AEH71IsBpiu5icmxBYtHTtk7vC4EwTHVpPxdnxz4xaxErndpbIXqm-cOpIZTR4UHXyT9BPXYO_Y5i-RF6NwIF3HdQ",
+ "lang": "en",
+ "link": "https://t.me/eyesonpal/53844",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Eye on Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/eyesonpal/53844"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cedd063e89",
+ "score": 62.54,
+ "source": "Eye on Palestine",
+ "source_id": "tg-eyes",
+ "source_url": "https://t.me/eyesonpal",
+ "title": "Israeli bombardment injures children in Gaza Strip"
+}
