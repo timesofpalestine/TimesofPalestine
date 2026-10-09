@@ -1,0 +1,33 @@
+{
+ "brief": "More than 100 organizations, including Amnesty International, say the Gaza ceasefire exists in name only, citing ongoing Israeli military operations one year after the agreement. The groups point to 1,400 people killed by Israeli forces since the ceasefire, according to their assessment, alongside a humanitarian crisis affecting nearly every sector of life.\n\nNearly two million Palestinians remain without adequate shelter, not a single hospital operates at full capacity, and 1.4 million face crisis-level hunger, the organizations reported. The assessment suggests the ceasefire has failed to halt violence or address the scale of destruction across the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-08T23:01:00+00:00",
+ "dek": "One year since the ceasefire agreement, more than 1,400 people have been killed by Israeli forces in Gaza, nearly two million still need shelter, not a single hospital is fully functioning, and 1.4 million face crisis-level hunger.",
+ "dup_of": null,
+ "image": "https://www.amnesty.org/en/wp-content/uploads/2026/10/319571-1024x433.jpg",
+ "lang": "en",
+ "link": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
+ "max_age_hours": 168,
+ "media": {
+  "credit": "Amnesty International",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "571030d888",
+ "score": 60.24,
+ "source": "Amnesty International",
+ "source_id": "amnesty",
+ "source_url": "https://www.amnesty.org/",
+ "title": "Over 100 organizations say Gaza ceasefire exists in name only"
+}
