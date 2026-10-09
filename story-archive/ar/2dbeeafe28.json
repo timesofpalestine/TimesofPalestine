@@ -19,6 +19,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/429772",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": false
   }
  ],
  "date": "2026-10-09T17:52:00+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "2dbeeafe28",
- "score": 48.18,
+ "score": 47.98,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
