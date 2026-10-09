@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/37229",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/9/child-flees-as-israeli-settlers-hijack-car-during-pogrom?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-09T11:59:09+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "e8985745df",
- "score": 49.0,
+ "score": 48.74,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
