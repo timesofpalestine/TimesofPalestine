@@ -6,19 +6,7 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/10/9/palestinians-seek-protection-from-violent-settlers-during-olive-harvest?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://dawnmena.org/u-s-end-complicity-in-israeli-state-backed-settler-violence",
-   "name": "DAWN",
-   "url": "https://dawnmena.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-and-troops-target-olive-harvesters-wedding-convoy-west",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-09T17:05:25+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "6f7d87854e",
- "score": 46.89,
+ "score": 46.67,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
