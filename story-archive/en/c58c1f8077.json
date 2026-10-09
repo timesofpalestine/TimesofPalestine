@@ -6,7 +6,31 @@
    "article": "https://pchrgaza.org/three-years-into-the-gaza-genocide-inaction-is-complicity",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/3-years-of-israels-genocide-in-gaza",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/noura-erakat-three-years-of-genocide-board-peace-gaza",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/10/7/israel_gaza_genocide",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/live/2026/oct/07/israel-october-7-anniversary-hamas-gaza-netanyahu-iran-latest-news-updates",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-08T15:48:14+00:00",
@@ -25,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "c58c1f8077",
- "score": 84.36,
+ "score": 84.33,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
