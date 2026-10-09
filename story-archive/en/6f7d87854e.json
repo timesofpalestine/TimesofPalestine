@@ -1,0 +1,45 @@
+{
+ "brief": "Palestinian farmers harvesting olives in the occupied West Bank are calling on international activists to shield them from violent settlers, Al Jazeera English reported. Tensions spike during the seasonal harvest, when Palestinians working their groves face threats from Israeli settlers.\n\nThe request for international presence reflects Palestinian hopes that foreign observers may deter attacks on harvesters. Olive harvesting remains a critical economic activity for West Bank Palestinians, though the season has increasingly become a flashpoint for settler violence.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/9/palestinians-seek-protection-from-violent-settlers-during-olive-harvest?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://dawnmena.org/u-s-end-complicity-in-israeli-state-backed-settler-violence",
+   "name": "DAWN",
+   "url": "https://dawnmena.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/west-bank-nearly-20-israeli-settler-attacks-target-palestinians-day-mass-violence",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-09T17:05:25+00:00",
+ "dek": "Palestinian farmers harvesting olives in the occupied West Bank are calling on international activists to protect them.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Screenshot-2026-10-09-at-17.57.46-1791565243.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/9/palestinians-seek-protection-from-violent-settlers-during-olive-harvest?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/9/palestinians-seek-protection-from-violent-settlers-during-olive-harvest?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6f7d87854e",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians seek activist protection from violent settlers during harvest"
+}

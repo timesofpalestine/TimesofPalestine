@@ -6,31 +6,7 @@
    "article": "https://t.me/maannews/37231",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/news/2026/10/9/israeli-settler-attacks-target-palestinian-olive-harvest-in-west-bank?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://dawnmena.org/u-s-end-complicity-in-israeli-state-backed-settler-violence",
-   "name": "DAWN",
-   "url": "https://dawnmena.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/west-bank-nearly-20-israeli-settler-attacks-target-palestinians-day-mass-violence",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-flank-palestinian-cafe-dozens-israeli-flags",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-09T13:51:59+00:00",
@@ -49,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "8465555f56",
- "score": 47.72,
+ "score": 47.45,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
