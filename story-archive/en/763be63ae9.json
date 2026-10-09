@@ -6,13 +6,7 @@
    "article": "https://www.nytimes.com/2026/10/08/world/middleeast/israel-embassy-milstein-huckabee.html",
    "name": "Quincy Institute",
    "url": "https://quincyinst.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/huckabee-top-aide-modified-embassy-reporting-critical-israel-report",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-08T11:47:00+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "763be63ae9",
- "score": 71.13,
+ "score": 71.11,
  "source": "Quincy Institute",
  "source_id": "quincy",
  "source_url": "https://quincyinst.org/",
