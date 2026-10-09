@@ -1,0 +1,33 @@
+{
+ "brief": "حذّر المركز الفلسطيني للإعلام من تدهور الوضع الصحي لمرضى الكلى الفلسطينيين في لبنان، بسبب نقص الأدوية والعلاجات الضرورية. يعجز المرضى عن متابعة جلسات الغسيل الكلوي بانتظام، في ظل الأزمة الاقتصادية والصحية التي يشهدها لبنان.\n\nيؤدي انقطاع الأدوية الأساسية إلى تفاقم حالات المرضى، مما ينذر بمضاعفات صحية خطيرة. يطالب المركز الجهات الدولية والإنسانية بالتدخل العاجل لإنقاذ حياة هذه الفئة من المرضى الفلسطينيين.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/09/1120348",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-09T19:44:49+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/09/1120348",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e762d9b8a0",
+ "score": 49.49,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "مرضى الكلى الفلسطينيون في لبنان يواجهون أزمة علاجية حادة"
+}
