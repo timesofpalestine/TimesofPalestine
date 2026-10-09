@@ -1,29 +1,23 @@
 {
- "brief": "More than 100 humanitarian and human rights organizations challenged the Gaza ceasefire accord, according to Shehab Wire, saying it amounts to words without effect on the ground.\n\nThe groups documented more than 1,400 Palestinian deaths in the year since the agreement took hold, with at least 327 of the dead identified as children. Israeli forces carried out the killings, the organizations said.",
+ "brief": "أكدت أكثر من 100 منظمة إنسانية وحقوقية، بحسب وكالة شهاب، أن وقف إطلاق النار في قطاع غزة لا يعدو أن يكون «حبراً على ورق»، لا سيما أن قوات الاحتلال الإسرائيلي واصلت عملياتها القتالية خلال العام الماضي.\n\nقالت المنظمات إن عدد الفلسطينيين الذين قتلتهم قوات الاحتلال منذ بدء الاتفاق تجاوز 1400 شخص، في حين بلغ عدد الأطفال القتلى 327 على الأقل.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165611/100-%D9%85%D9%86%D8%B8%D9%85%D8%A9-%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AD%D8%A8%D8%B1-%D8%B9%D9%84%D9%89-%D9%88%D8%B1%D9%82-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-1400-%D8%B4%D9%87%D9%8A%D8%AF-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D8%A8%D8%BA%D8%B2%D8%A9",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
-   "name": "Amnesty International",
-   "url": "https://www.amnesty.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-09T08:12:00+00:00",
- "dek": "More than 100 humanitarian and human rights organizations challenged the Gaza ceasefire accord, according to Shehab Wire, saying it amounts to words without effect on the ground.",
+ "dek": "أكدت أكثر من 100 منظمة إنسانية وحقوقية أن وقف إطلاق النار في قطاع غزة لا وجود له إلا على الورق، مبينة أن قوات الاحتلال قتلت أكثر من 1400 فلسطيني، بينهم 327 طفلاً على الأقل، منذ بدء الاتفاق قبل عام.",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/06/xtceQ.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165611/100-%D9%85%D9%86%D8%B8%D9%85%D8%A9-%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AD%D8%A8%D8%B1-%D8%B9%D9%84%D9%89-%D9%88%D8%B1%D9%82-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-1400-%D8%B4%D9%87%D9%8A%D8%AF-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D8%A8%D8%BA%D8%B2%D8%A9",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165611/100-%D9%85%D9%86%D8%B8%D9%85%D8%A9-%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AD%D8%A8%D8%B1-%D8%B9%D9%84%D9%89-%D9%88%D8%B1%D9%82-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-1400-%D8%B4%D9%87%D9%8A%D8%AF-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D8%A8%D8%BA%D8%B2%D8%A9"
@@ -31,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "f83d9e1e60",
- "score": 62.12,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 62.09,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Over 100 groups say Gaza ceasefire is only on paper"
+ "title": "منظمات دولية: وقف إطلاق النار بغزة لم ينقذ حياة"
 }
