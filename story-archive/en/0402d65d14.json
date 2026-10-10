@@ -1,0 +1,39 @@
+{
+ "brief": "More than 100 humanitarian and human rights organizations have declared that the Gaza ceasefire exists \"in name only,\" according to Al Jazeera English. The groups pointed to Israel's continued killings and restrictions across the enclave as evidence that the agreement is not being observed in practice.\n\nThe NGOs' statement reflects broader concerns among aid organizations about conditions in Gaza despite the announced ceasefire. The groups did not specify the timeframe of their assessment or provide a detailed accounting of alleged violations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/9/gaza-ceasefire-exists-in-name-only-more-than-100-ngos-say?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-09T18:15:06+00:00",
+ "dek": "Humanitarian and human rights groups call out Israel's continued killings and restrictions across the enclave.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ac91583844d-1791563139.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/9/gaza-ceasefire-exists-in-name-only-more-than-100-ngos-say?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/9/gaza-ceasefire-exists-in-name-only-more-than-100-ngos-say?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0402d65d14",
+ "score": 60.07,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Over 100 NGOs say Gaza ceasefire exists only nominally"
+}
