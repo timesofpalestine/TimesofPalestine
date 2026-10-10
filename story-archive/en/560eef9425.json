@@ -1,0 +1,39 @@
+{
+ "brief": "Al Jazeera English reports that Gaza's medical infrastructure continues to deteriorate more than a year after a ceasefire agreement, with persistent attacks, restrictions on medical aid, and delayed patient evacuations ongoing drivers of Palestinian deaths.\n\nHealthcare facilities across the territory remain severely damaged and understaffed, unable to handle the scale of medical emergencies. Ongoing military operations and logistical constraints have prevented the delivery of essential medicines and equipment needed to restore basic services.\n\nThe combination of physical destruction and administrative barriers has left hospitals unable to treat patients requiring advanced care, forcing many to seek treatment outside Gaza while evacuation processes remain delayed and unpredictable.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/opinions/2026/10/10/a-year-after-the-ceasefire-gazas-healthcare-is-still-collapsing?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-10T09:30:14+00:00",
+ "dek": "Continuing attacks, restrictions on medical aid and delayed evacuations are still killing Palestinians.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/07/AFP__20260707__B9HU7TQ__v1__MidRes__PalestinianIsraelConflictGaza-1784444712.jpg?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/opinions/2026/10/10/a-year-after-the-ceasefire-gazas-healthcare-is-still-collapsing?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/opinions/2026/10/10/a-year-after-the-ceasefire-gazas-healthcare-is-still-collapsing?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "560eef9425",
+ "score": 63.78,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza's healthcare system remains devastated a year after ceasefire began"
+}

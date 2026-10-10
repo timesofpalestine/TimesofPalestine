@@ -1,0 +1,33 @@
+{
+ "brief": "Human Rights Watch said Israeli forces have continued to kill and wound civilians and deny sufficient food, aid, and water to Palestinians in Gaza one year after a ceasefire agreement took effect on October 10, 2025. The rights group alleged that Israel's acts of genocide and crimes against humanity, including forced displacement and extermination, have persisted throughout the ceasefire period.\n\nHuman Rights Watch did not provide specific casualty figures or details of incidents in the summary provided.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://www.hrw.org/news/2026/10/10/gaza-ceasefire-anniversary-marks-year-of-failed-promises",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-10T04:00:00+00:00",
+ "dek": "Israeli forces continue to kill and wound civilians and deny sufficient food, aid, and water to Palestinians in Gaza one year after a ceasefire agreement took effect on October 10, 2025, Human Rights Watch said today. Israel’s acts of genocide and crimes against humanity, including forced displacement and extermination, have persisted throughout the ceasefire.",
+ "dup_of": null,
+ "image": "https://www.hrw.org/sites/default/files/styles/opengraph/public/media_2026/10/202610mena_palestine_gaza_destruction.jpg?h=c7ae325c&itok=UMYzYVaj",
+ "lang": "en",
+ "link": "https://www.hrw.org/news/2026/10/10/gaza-ceasefire-anniversary-marks-year-of-failed-promises",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "Human Rights Watch",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.hrw.org/news/2026/10/10/gaza-ceasefire-anniversary-marks-year-of-failed-promises"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "171433334a",
+ "score": 85.6,
+ "source": "Human Rights Watch",
+ "source_id": "hrw",
+ "source_url": "https://www.hrw.org/",
+ "title": "Israeli forces continue killing Gaza civilians one year after ceasefire"
+}
