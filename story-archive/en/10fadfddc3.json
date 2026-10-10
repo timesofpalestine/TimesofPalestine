@@ -1,0 +1,39 @@
+{
+ "brief": "Thousands gathered in central London to express support for Palestinians, according to The Guardian, in the first major march since Ed Miliband declared the UK's position that Israel's occupation of the West Bank was unlawful. Twenty people were arrested during the demonstration.\n\nThe protest came three years into the conflict, with participants using the term \"genocide\" to describe the situation facing Palestinians.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/10/thousands-in-london-express-support-for-palestinians-after-three-years-genocide",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/protestors-gather-palestine-march-central-london",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-10T16:52:15+00:00",
+ "dek": "Twenty arrested in first march since Ed Miliband declared UK’s position was that Israel’s occupation of West Bank was unlawful Thousands of people have gathered in central London to express their support for Palestinians after three years of “genocide”…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/e5a2f40ef00aec94530693a8d9665f6adf36c14c/763_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=4d4ea45720dcf9baac0da795c06c9f62",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/oct/10/thousands-in-london-express-support-for-palestinians-after-three-years-genocide",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/oct/10/thousands-in-london-express-support-for-palestinians-after-three-years-genocide"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "10fadfddc3",
+ "score": 49.28,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Thousands march in London demanding Palestinian rights after three years of conflict"
+}
