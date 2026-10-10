@@ -1,0 +1,33 @@
+{
+ "brief": "Al Jazeera English suggests that the future of Gaza will not be fundamentally altered by Hamas's political fortunes, whether the organization remains in power or loses control. The analysis indicates that underlying structural factors affecting the territory's trajectory extend beyond any single political actor's role.\n\nThe assessment reflects ongoing debate over Hamas's governance record and future in Palestinian politics, particularly as the organization faces sustained pressure from multiple quarters.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/opinions/2026/10/10/with-or-without-hamas?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-10T15:19:41+00:00",
+ "dek": "Hamas’s fate will not profoundly shape Gaza’s future.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20250222__36YD7HW__v1__MidRes__PalestinianIsraelConflictHostages-1791645381.jpg?resize=1799%2C1080",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/opinions/2026/10/10/with-or-without-hamas?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/opinions/2026/10/10/with-or-without-hamas?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b48f80accf",
+ "score": 49.47,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Hamas's political fate unlikely to reshape Gaza's trajectory"
+}
