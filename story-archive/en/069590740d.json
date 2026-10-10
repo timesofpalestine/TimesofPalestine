@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://zeteo.com/p/this-week-in-palestine-revealed-israel",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/10/thousands-pro-palestinian-demonstrators-rally-london",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "069590740d",
- "score": 60.96,
+ "score": 60.7,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
