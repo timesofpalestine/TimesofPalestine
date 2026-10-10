@@ -1,0 +1,33 @@
+{
+ "brief": "شهدت قطاع غزة دماراً واسعاً على مدى ثلاث سنوات، طالت الحرب البنية التحتية والمرافق الحيوية والمنازل، وأسفرت عن خسائر بشرية وإنسانية فادحة، بحسب المركز الفلسطيني للإعلام. ترتب على الدمار النزوح القسري لعشرات آلاف السكان وتدهور الأوضاع الاقتصادية والصحية بشكل حاد.\n\nأثّر استمرار الحرب على قطاع السكان والخدمات، إذ تضررت المستشفيات والمدارس والمؤسسات التعليمية، وانقطع التيار الكهربائي والمياه الصالحة عن مناطق واسعة، فيما تفاقمت أزمة نقص الغذاء والدواء والمستلزمات الطبية الأساسية.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/10/1120517",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-10T12:44:45+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/10/1120517",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a28dab5f8e",
+ "score": 49.98,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "غزة تواجه دماراً شاملاً بعد ثلاث سنوات من الحرب"
+}
