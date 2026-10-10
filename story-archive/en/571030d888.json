@@ -6,12 +6,18 @@
    "article": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
    "name": "Amnesty International",
    "url": "https://www.amnesty.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/10/10/gaza-ceasefire-anniversary-marks-year-of-failed-promises",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-08T23:01:00+00:00",
  "dek": "One year since the ceasefire agreement, more than 1,400 people have been killed by Israeli forces in Gaza, nearly two million still need shelter, not a single hospital is fully functioning, and 1.4 million face crisis-level hunger.",
- "dup_of": "28d17a6312",
+ "dup_of": null,
  "image": "https://www.amnesty.org/en/wp-content/uploads/2026/10/319571-1024x433.jpg",
  "lang": "en",
  "link": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "571030d888",
- "score": 59.21,
+ "score": 54.96,
  "source": "Amnesty International",
  "source_id": "amnesty",
  "source_url": "https://www.amnesty.org/",
