@@ -1,0 +1,33 @@
+{
+ "brief": "Israel killed seven Palestinians, including a child, in Gaza on the anniversary of last year's ceasefire, Al Jazeera English reported. The strikes occurred as Gaza's Health Ministry documented at least 1,481 Palestinian deaths in Israeli attacks since the previous year's truce began.\n\nThe deaths came one year after the ceasefire agreement took effect, a period during which military operations have continued throughout the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/10/israeli-forces-kill-six-in-gaza-including-a-child?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-10T12:40:57+00:00",
+ "dek": "At least 1,481 Palestinians killed in Israeli attacks since last year's 'ceasefire', Gaza's Health Ministry says.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6aca2ad5-1791634133.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/10/israeli-forces-kill-six-in-gaza-including-a-child?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/10/israeli-forces-kill-six-in-gaza-including-a-child?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "069590740d",
+ "score": 63.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strikes kill seven Palestinians in Gaza on ceasefire anniversary"
+}
