@@ -1,0 +1,33 @@
+{
+ "brief": "Jerusalem Electric Company announced a power cut to Bethlehem governorate, according to Maan Wire, citing the need to improve service quality, ensure stable electricity supply, and develop infrastructure. The company expressed regret over the necessity of the outage.\n\nThe announcement specified the cut would occur on Sunday, though complete details of the timing and affected areas were not fully provided in the initial notice.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37233",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-10T08:02:59+00:00",
+ "dek": "Jerusalem Electric Company announced a power cut to Bethlehem governorate, according to Maan Wire, citing the need to improve service quality, ensure stable electricity supply, and develop infrastructure.",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/CvQqr1vHpauC3pz1V-BiT1npPQgOVWaOz0D07rO0Xl-Ii9DNonKlwZ-0bDe0rrRNXuBr1IKWHyuxxJ8y0CPWZYQJ1VZBqLZjLRixJaBWQGEHWuq-ixcdqTv4Wny3kW3l66E9eE2ZLJyCtTQ1Cdix8f6d5MfTm1AXZB9mAyQOdrdaKhp_UhmSom94TBbg1Orr3Hvo3CmY-_5VcA_aW_KKlG4nn4ExRq43Dnkxyrz9nlMHZ_bFVFKYo2-PCdL2lr7vpcoybUaVlQDOyKlVRpwEm41EVKfUWmeRk1UZr3vVgrk6qDywa6g1ixkSYWRfVpydavyK8VEKXuktVNq5SkC3pA.jpg",
+ "lang": "en",
+ "link": "https://t.me/maannews/37233",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37233"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bee949fd2e",
+ "score": 24.84,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Jerusalem Electric Company cuts power to Bethlehem for infrastructure work"
+}
