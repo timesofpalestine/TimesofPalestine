@@ -19,6 +19,12 @@
    "name": "Zeteo",
    "url": "https://zeteo.com/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53846",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
   }
  ],
  "date": "2026-10-10T12:40:57+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "069590740d",
- "score": 60.15,
+ "score": 59.95,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

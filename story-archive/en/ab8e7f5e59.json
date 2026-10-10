@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://english.pnn.ps/news/48343",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/10/abbas-postpones-palestinian-elections-sets-presidential-poll-september-2027",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "ab8e7f5e59",
- "score": 47.28,
+ "score": 47.08,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
