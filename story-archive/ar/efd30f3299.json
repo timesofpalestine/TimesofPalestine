@@ -1,23 +1,29 @@
 {
- "brief": "The Palestinian Journalists Forum stated Saturday that verifying Israeli claims about hospitals and healthcare facilities in Gaza requires immediate access for international journalists and media outlets, Shehab Wire reported. The forum emphasized that allowing foreign press into the enclave is necessary to independently assess allegations made by Israeli officials regarding medical institutions.\n\nDisputes over conditions inside Gaza's healthcare system and the role of international media in documenting developments during the conflict remain unresolved.",
+ "brief": "أكد منتدى الإعلاميين الفلسطينيين، بحسب وكالة شهاب، ضرورة السماح الفوري للصحفيين ووسائل الإعلام الدولية بدخول قطاع غزة للتحقق من المزاعم الإسرائيلية المتواصلة بشأن المستشفيات والمؤسسات الصحية في القطاع.\n\nورأى المنتدى أن منع الصحافة الدولية من الوصول إلى غزة يعيق التثبت من الادعاءات الإسرائيلية ويحول دون توثيق الأوضاع الحقيقية على الأرض، مؤكداً أن هذا الحصار الإعلامي يسهم في تضليل الرأي العام العالمي.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165641/%D9%85%D9%86%D8%AA%D8%AF%D9%89-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%D9%8A%D9%8A%D9%86-%D8%A5%D8%AF%D8%AE%D8%A7%D9%84-%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A5%D9%84%D9%89-%D8%BA%D8%B2%D8%A9-%D8%B6%D8%B1%D9%88%D8%B1%D8%A9-%D9%84%D9%84%D8%AA%D8%AD%D9%82%D9%82-%D9%85%D9%86-%D9%85%D8%B2%D8%A7%D8%B9%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%8A%D8%A7%D8%AA",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/187841/%D9%85%D9%86%D8%AA%D8%AF%D9%89-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%D9%8A%D9%8A%D9%86-%D9%8A%D8%B7%D8%A7%D9%84%D8%A8-%D8%A8%D9%81%D8%AA%D8%AD-%D8%BA%D8%B2%D8%A9-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%84%D9%83%D8%B4%D9%81-%D9%85%D8%B2%D8%A7%D8%B9%D9%85-%D8%A7",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-10-10T08:14:00+00:00",
- "dek": "The Palestinian Journalists Forum stated Saturday that verifying Israeli claims about hospitals and healthcare facilities in Gaza requires immediate access for international journalists and media outlets, Shehab Wire…",
+ "dek": "أكد منتدى الإعلاميين الفلسطينيين، اليوم السبت، أن التحقق من المزاعم الإسرائيلية المتواصلة بشأن المستشفيات والمؤسسات الصحية في قطاع غزة يتطلب السماح الفوري للصحفيين ووسائل الإعلام الدولية بالدخول المست…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/FeTrm.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165641/%D9%85%D9%86%D8%AA%D8%AF%D9%89-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%D9%8A%D9%8A%D9%86-%D8%A5%D8%AF%D8%AE%D8%A7%D9%84-%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A5%D9%84%D9%89-%D8%BA%D8%B2%D8%A9-%D8%B6%D8%B1%D9%88%D8%B1%D8%A9-%D9%84%D9%84%D8%AA%D8%AD%D9%82%D9%82-%D9%85%D9%86-%D9%85%D8%B2%D8%A7%D8%B9%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%8A%D8%A7%D8%AA",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165641/%D9%85%D9%86%D8%AA%D8%AF%D9%89-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%D9%8A%D9%8A%D9%86-%D8%A5%D8%AF%D8%AE%D8%A7%D9%84-%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A5%D9%84%D9%89-%D8%BA%D8%B2%D8%A9-%D8%B6%D8%B1%D9%88%D8%B1%D8%A9-%D9%84%D9%84%D8%AA%D8%AD%D9%82%D9%82-%D9%85%D9%86-%D9%85%D8%B2%D8%A7%D8%B9%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%8A%D8%A7%D8%AA"
@@ -25,9 +31,9 @@
  "modified": null,
  "original": false,
  "pid": "efd30f3299",
- "score": 49.3,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 49.28,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Palestinian journalists demand international press access to Gaza"
+ "title": "منتدى إعلاميين فلسطيني يطالب بدخول صحفيين دوليين لغزة"
 }
