@@ -1,23 +1,29 @@
 {
- "brief": "وثّق مركز غزة لحقوق الإنسان استشهاد 1481 فلسطينياً في قطاع غزة خلال عام واحد من وقف إطلاق النار، بحسب وكالة شهاب. لم تحدّ الهدنة من عمليات قوات الاحتلال الإسرائيلي العسكرية في القطاع منذ 10 أكتوبر 2025.\n\nأسفرت الاستهدافات الإسرائيلية المستمرة عن خسائر فادحة في الأرواح الفلسطينية رغم الاتفاق على وقف الأعمال العدائية، إذ لم تتوقف العمليات طوال السنة الماضية من فترة الهدنة.",
+ "brief": "Gaza's Human Rights Centre documented 1,481 Palestinian deaths over a year of ceasefire, from October 10, 2025 onward, according to Shehab Wire. The centre asserted that Israeli occupation forces continued killing Palestinians in Gaza despite the announced ceasefire.\n\nThe documentation challenges official characterizations of the truce period, presenting a stark contrast between the stated suspension of hostilities and reported casualties on the ground.",
  "cat": "gaza",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165646/%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D9%87%D8%AF%D9%86%D8%A9-%D8%B9%D8%A7%D9%85-%D9%85%D9%86-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-1481-%D8%B4%D9%87%D9%8A%D8%AF-%D8%A7-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D9%85%D9%86-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1",
-   "name": "وكالة شهاب (حصري)",
+   "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/10/10/gaza-ceasefire-anniversary-marks-year-of-failed-promises",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-10T09:42:00+00:00",
- "dek": "أكد مركز غزة لحقوق الإنسان أن قوات الاحتلال الإسرائيلي واصلت قتل الفلسطينيين في قطاع غزة رغم الإعلان عن وقف إطلاق النار، موثقًا استشهاد 1481 فلسطينيًا خلال عام واحد، من 10 أكتوبر/تشرين الأول 2025 حتى…",
+ "dek": "Gaza's Human Rights Centre documented 1,481 Palestinian deaths over a year of ceasefire, from October 10, 2025 onward, according to Shehab Wire.",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/ARxLz.jpg?v=1",
- "lang": "ar",
+ "lang": "en",
  "link": "https://shehabnews.com/post/165646/%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D9%87%D8%AF%D9%86%D8%A9-%D8%B9%D8%A7%D9%85-%D9%85%D9%86-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-1481-%D8%B4%D9%87%D9%8A%D8%AF-%D8%A7-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D9%85%D9%86-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1",
  "max_age_hours": 72,
  "media": {
-  "credit": "وكالة شهاب (حصري)",
+  "credit": "Shehab Wire (EN)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165646/%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D9%87%D8%AF%D9%86%D8%A9-%D8%B9%D8%A7%D9%85-%D9%85%D9%86-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-1481-%D8%B4%D9%87%D9%8A%D8%AF-%D8%A7-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D9%85%D9%86-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1"
@@ -25,9 +31,9 @@
  "modified": null,
  "original": false,
  "pid": "a5bb37edfb",
- "score": 63.74,
- "source": "وكالة شهاب (حصري)",
- "source_id": "shehab",
+ "score": 63.76,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
- "title": "الاحتلال يقتل 1481 فلسطينياً في غزة خلال عام الهدنة"
+ "title": "Gaza records 1,481 deaths during year of ceasefire, rights center says"
 }

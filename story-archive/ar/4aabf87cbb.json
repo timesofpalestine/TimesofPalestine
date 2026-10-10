@@ -13,6 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=218128&slug=%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-4-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%8A%D9%88%D9%85%D9%8A%D9%8B%D8%A7-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D8%B9%D9%84%D9%89-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
   }
  ],
  "date": "2026-10-10T04:54:51+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "4aabf87cbb",
- "score": 46.57,
+ "score": 46.42,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
