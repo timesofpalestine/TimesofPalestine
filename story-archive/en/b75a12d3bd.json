@@ -6,13 +6,7 @@
    "article": "https://t.me/eyesonpal/53841",
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/eight-palestinians-killed-israeli-attacks-gaza-during-anniversary-us",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-09T07:26:12+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "b75a12d3bd",
- "score": 39.43,
+ "score": 39.18,
  "source": "Eye on Palestine",
  "source_id": "tg-eyes",
  "source_url": "https://t.me/eyesonpal",
