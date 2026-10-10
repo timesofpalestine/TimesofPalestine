@@ -1,23 +1,47 @@
 {
- "brief": "أكد الباحث والخبير السياسي الفلسطيني، في تصريح حصري لوكالة شهاب، أن قرار رئيس السلطة محمود عباس بتأجيل الانتخابات لا يرتبط بملف القدس كما يروّج البعض. وأوضح أن الحديث عن تزامن القرار مع ذريعة عرقلة إجراء الانتخابات في العاصمة المحتلة لا يعكس الخلفيات الحقيقية للتأجيل.\n\nورأى الخبير أن العلاقة بين الملفين أعقد من الروايات الشائعة، ولا يمكن اختزال قرار التأجيل في متغير واحد يتعلق بالقدس.",
+ "brief": "A Palestinian political researcher told Shehab Wire that President Mahmoud Abbas's decision to postpone elections has no connection to widely circulated claims that the delay stems from concerns about holding them in Jerusalem or using the city as a pretext to obstruct the vote.\n\nThe expert rejected suggestions that Jerusalem figured into Abbas's rationale for the postponement, dismissing speculation about the timing and alleged obstacles to conducting elections in the city.",
  "cat": "westbank",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165695/%D8%AE%D8%A7%D8%B5-%D9%85%D8%B5%D9%84%D8%AD-%D9%84%D9%80-%D8%B4%D9%87%D8%A7%D8%A8-%D8%AA%D8%A3%D8%AC%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D9%84%D8%A7-%D8%B9%D9%84%D8%A7%D9%82%D8%A9-%D9%84%D9%87-%D8%A8%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D9%88%D8%B9%D8%A8%D8%A7%D8%B3-%D9%8A%D9%86%D8%A7%D9%88%D8%B1-%D9%84%D8%AA%D8%B1%D9%82%D8%A8-%D9%86%D8%AA%D8%A7%D8%A6%D8%AD-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84",
-   "name": "وكالة شهاب (حصري)",
+   "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-president-postpones-legislative-elections-until-2027",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/abbas-postpones-palestinian-legislative-elections-september-2027",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48343",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-10T19:42:00+00:00",
- "dek": "أكد الباحث والخبير السياسي الفلسطيني أن قرار رئيس السلطة محمود عباس (أبو مازن) بشأن تأجيل الانتخابات لا تعود خلفيته الحقيقية لما يُشاع حول التزامن أو ذريعة عرقلة إجرائها في القدس…",
+ "dek": "A Palestinian political researcher told Shehab Wire that President Mahmoud Abbas's decision to postpone elections has no connection to widely circulated claims that the delay stems from concerns about holding them in…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/G2kzA.png?v=1",
- "lang": "ar",
+ "lang": "en",
  "link": "https://shehabnews.com/post/165695/%D8%AE%D8%A7%D8%B5-%D9%85%D8%B5%D9%84%D8%AD-%D9%84%D9%80-%D8%B4%D9%87%D8%A7%D8%A8-%D8%AA%D8%A3%D8%AC%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D9%84%D8%A7-%D8%B9%D9%84%D8%A7%D9%82%D8%A9-%D9%84%D9%87-%D8%A8%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D9%88%D8%B9%D8%A8%D8%A7%D8%B3-%D9%8A%D9%86%D8%A7%D9%88%D8%B1-%D9%84%D8%AA%D8%B1%D9%82%D8%A8-%D9%86%D8%AA%D8%A7%D8%A6%D8%AD-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84",
  "max_age_hours": 72,
  "media": {
-  "credit": "وكالة شهاب (حصري)",
+  "credit": "Shehab Wire (EN)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165695/%D8%AE%D8%A7%D8%B5-%D9%85%D8%B5%D9%84%D8%AD-%D9%84%D9%80-%D8%B4%D9%87%D8%A7%D8%A8-%D8%AA%D8%A3%D8%AC%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D9%84%D8%A7-%D8%B9%D9%84%D8%A7%D9%82%D8%A9-%D9%84%D9%87-%D8%A8%D8%A7%D9%84%D9%82%D8%AF%D8%B3-%D9%88%D8%B9%D8%A8%D8%A7%D8%B3-%D9%8A%D9%86%D8%A7%D9%88%D8%B1-%D9%84%D8%AA%D8%B1%D9%82%D8%A8-%D9%86%D8%AA%D8%A7%D8%A6%D8%AD-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84"
@@ -25,9 +49,9 @@
  "modified": null,
  "original": false,
  "pid": "218da8ae2e",
- "score": 49.73,
- "source": "وكالة شهاب (حصري)",
- "source_id": "shehab",
+ "score": 49.77,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
- "title": "خبير فلسطيني: تأجيل الانتخابات منفصل عن ملف القدس"
+ "title": "Palestinian expert says Abbas election delay unrelated to Jerusalem"
 }
