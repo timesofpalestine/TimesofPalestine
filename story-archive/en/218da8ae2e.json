@@ -21,12 +21,6 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
    "article": "https://english.pnn.ps/news/48343",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
@@ -49,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "218da8ae2e",
- "score": 49.77,
+ "score": 49.5,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

@@ -9,9 +9,27 @@
    "verified": true
   },
   {
+   "article": "https://www.hrw.org/news/2026/10/10/gaza-ceasefire-anniversary-marks-year-of-failed-promises",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
+  },
+  {
    "article": "https://zeteo.com/p/this-week-in-palestine-revealed-israel",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/37243",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53847",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
    "verified": true
   },
   {
@@ -43,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "7d192afd35",
- "score": 63.03,
+ "score": 62.76,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
