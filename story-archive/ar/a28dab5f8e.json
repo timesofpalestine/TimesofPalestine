@@ -7,9 +7,15 @@
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
    "verified": false
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%ad%d8%b5%d9%8a%d9%84%d8%a9-%d8%a7%d9%84%d8%a5%d8%a8%d8%a7%d8%af%d8%a9-%d8%a7%d9%84%d8%aa%d9%88%d8%ad%d8%b4-%d8%a3%d9%85-%d8%a7%d9%84%d9%82%d9%81%d8%a7%d8%b2-%d8%a7%d9%84%d8%a3%d8%a8%d9%8a",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
   }
  ],
- "date": "2026-10-10T12:44:45+00:00",
+ "date": "2026-10-10T19:40:26+00:00",
  "dek": "",
  "dup_of": null,
  "image": "/media/times-of-palestine-cover-gaza-ar.svg",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "a28dab5f8e",
- "score": 48.95,
+ "score": 49.88,
  "source": "المركز الفلسطيني للإعلام",
  "source_id": "tg-palinfo",
  "source_url": "https://t.me/palinfo",

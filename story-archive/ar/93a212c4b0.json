@@ -1,23 +1,29 @@
 {
- "brief": "Human rights activist Hind Rajab has filed a complaint with the International Criminal Court against the Israeli Medical Association, alleging involvement in the torture of Palestinian prisoners, Shehab Wire reported. The complaint centers on the association's alleged role in systematic abuse of detainees.\n\nRajab's filing represents an effort to hold professional medical bodies accountable for practices related to prisoner treatment in Israeli custody. The submission comes amid ongoing documentation of alleged abuse allegations involving Palestinian detainees.",
+ "brief": "قدّمت منظمة حقوقية شكوى للمحكمة الجنائية الدولية ضد نقابة الأطباء الإسرائيلية، متهمة إياها بالتورط في تعذيب أسرى فلسطينيين. وجاءت الشكوى بحسب وكالة شهاب وسط اتهامات متكررة لسلطات الاحتلال بممارسة التعذيب ضد معتقلين فلسطينيين.\n\nتركز الشكوى على دور نقابة الأطباء في الإجراءات المتعلقة بالاحتجاز والاستجواب، إذ تزعم المنظمة تواطؤ مهنيين طبيين في انتهاكات بحق الأسرى. وتسعى الشكوى إلى فتح تحقيق في الممارسات المنسوبة للنقابة وأعضائها.",
  "cat": "prisoners",
  "corroborating_sources": [
   {
    "article": "https://shehabnews.com/post/165694/%D8%B4%D9%83%D9%88%D9%89-%D8%B6%D8%AF-%D9%86%D9%82%D8%A7%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%AC%D9%86%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%B9%D8%B0%D9%8A%D8%A8-%D8%A3%D8%B3%D8%B1%D9%89-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86",
-   "name": "Shehab Wire (EN)",
+   "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/429801",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
   }
  ],
  "date": "2026-10-10T19:30:00+00:00",
- "dek": "Human rights activist Hind Rajab has filed a complaint with the International Criminal Court against the Israeli Medical Association, alleging involvement in the torture of Palestinian prisoners, Shehab Wire reported.",
+ "dek": "\"هند رجب\" تشكو نقابة الأطباء \"الإسرائيلية\" للجنائية الدولية بشأن تعذيب أسرى…",
  "dup_of": null,
  "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2025/08/J33yT.jpg?v=1",
- "lang": "en",
+ "lang": "ar",
  "link": "https://shehabnews.com/post/165694/%D8%B4%D9%83%D9%88%D9%89-%D8%B6%D8%AF-%D9%86%D9%82%D8%A7%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%AC%D9%86%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%B9%D8%B0%D9%8A%D8%A8-%D8%A3%D8%B3%D8%B1%D9%89-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86",
  "max_age_hours": 72,
  "media": {
-  "credit": "Shehab Wire (EN)",
+  "credit": "وكالة شهاب (حصري)",
   "licenseUrl": null,
   "rightsBasis": "source-hosted",
   "source": "https://shehabnews.com/post/165694/%D8%B4%D9%83%D9%88%D9%89-%D8%B6%D8%AF-%D9%86%D9%82%D8%A7%D8%A8%D8%A9-%D8%A7%D9%84%D8%A3%D8%B7%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%AC%D9%86%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%B9%D8%B0%D9%8A%D8%A8-%D8%A3%D8%B3%D8%B1%D9%89-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86"
@@ -25,9 +31,9 @@
  "modified": null,
  "original": false,
  "pid": "93a212c4b0",
- "score": 49.79,
- "source": "Shehab Wire (EN)",
- "source_id": "shehab-en",
+ "score": 49.76,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
- "title": "Palestinian activist files ICC complaint against Israeli medical association over prisoner torture"
+ "title": "منظمة حقوقية تشكو نقابة الأطباء الإسرائيلية للجنائية الدولية"
 }
