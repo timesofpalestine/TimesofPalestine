@@ -6,7 +6,13 @@
    "article": "https://www.hrw.org/news/2026/10/10/gaza-ceasefire-anniversary-marks-year-of-failed-promises",
    "name": "Human Rights Watch",
    "url": "https://www.hrw.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-10T04:00:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "171433334a",
- "score": 85.21,
+ "score": 85.19,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",
