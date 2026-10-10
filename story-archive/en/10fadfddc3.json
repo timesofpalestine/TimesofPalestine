@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/world/2026/oct/10/thousands-in-london-express-support-for-palestinians-after-three-years-genocide",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/protestors-gather-palestine-march-central-london",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-10T16:52:15+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "10fadfddc3",
- "score": 46.83,
+ "score": 46.59,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
