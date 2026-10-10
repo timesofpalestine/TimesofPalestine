@@ -6,13 +6,19 @@
    "article": "https://t.me/eyesonpal/53841",
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/eight-palestinians-killed-israeli-attacks-gaza-during-anniversary-us",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-09T07:26:12+00:00",
  "dek": "The Palestinian Ministry of Health in Gaza reported on October 8, 2026, that 4 new martyrs and 28 injuries arrived at Gaza Strip hospitals in the past 24 hours; since the ceasefire on October 11, 2025, the totals stand at 1,471 martyrs, 5,189 injuries, and…",
  "dup_of": null,
- "image": "https://cdn5.telesco.pe/file/X3K1m4z9fZV_sKkhMG-X4dJq-sB2qVnioGh9GK-m33hSoVfQsN1bXHcnTJGM7Kc9UNHk9qfoIV6d6duIsuagiU-k84y70aQF1K6cGkJ0SqK3ff1EtgaYe4j57Y8qDMd9_ngw3QuSuEm5NeubBvsYjyXj32nvSaFOUXAsPK23nzqsbSAS3loDEY9DQYHGmAS7OzyekWLcqRA9CnY2rKU7Ch4yfbX55OE8ToiDd6EX0Um9PdlCufmKMBGpMXT-YXGlzfKlMM0mhGIwWoJjaT2B2JR-OvQZ9kRpwoD6wD5_uxNOBSv18UPUpbYQ8Lj_jj-BQ1u4XP9424EfINhOlGR33g.jpg",
+ "image": "https://cdn5.telesco.pe/file/ZCDVYAWzK4oTsGvRc2M9mX4eBNQ8ZjPREy_6zqSA_aqhvZDTpwsETV76SnHh_1bn3nKC3hyw3ohEcQYCtsJHD7Ra4JvKSU_aRqxiko4jugyHiCHXazQBwzFeTJAIty62i1iMZG9DdV8AyAo_2QdTUkSZwMf1TH3S00_m4X2rG2V__tU3RjQsCJJe7b7N6-xAcJSgwaWxEtm5gfXkCeBFsn1gNrOGcpRdrT-I9fQ3aFPR1o2AFNmmkt55J1P6QWXseHpt4G-QjOmcgSnntFdOPZK1_8NQBPT1CbEY97lV_rvkCFN1bULu196oVifkziYxuOCGoENK9UwgfWFiwtL0wg.jpg",
  "lang": "en",
  "link": "https://t.me/eyesonpal/53841",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b75a12d3bd",
- "score": 39.64,
+ "score": 39.43,
  "source": "Eye on Palestine",
  "source_id": "tg-eyes",
  "source_url": "https://t.me/eyesonpal",

@@ -6,7 +6,25 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-president-postpones-legislative-elections-until-2027",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/abbas-postpones-palestinian-legislative-elections-september-2027",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48343",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-10T11:54:37+00:00",
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "c1ffcaaafc",
- "score": 79.18,
+ "score": 75.21,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",

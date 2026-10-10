@@ -6,13 +6,7 @@
    "article": "https://t.me/eyesonpal/53844",
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/israeli-strikes-kill-five-people-gaza-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-09T07:26:13+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "cedd063e89",
- "score": 39.84,
+ "score": 39.43,
  "source": "Eye on Palestine",
  "source_id": "tg-eyes",
  "source_url": "https://t.me/eyesonpal",

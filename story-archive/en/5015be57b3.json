@@ -1,0 +1,51 @@
+{
+ "brief": "Demonstrators in London, Berlin, and Rome took to the streets to protest Israel's military campaign in Gaza, Al Jazeera English reported. The marches coincided with an anniversary of ceasefire demands, with protesters calling for an end to ongoing Israeli attacks on the enclave.\n\nThe coordinated actions across multiple European capitals reflected sustained international opposition to the conflict and pressure on governments to intervene diplomatically.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/gallery/2026/10/10/photos-thousands-march-across-europe-to-demand-end-to-israels-war-on-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48344",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/global-protests-demand-end-israels-genocide-and-apartheid",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/thousands-join-pro-palestinian-marches-several-european-cities",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-10T18:26:13+00:00",
+ "dek": "Demonstrations in London, Berlin, and Rome denounce ongoing Israeli attacks on Gaza 'ceasefire' anniversary.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261010__D2UR3ZF__v1__HighRes__776575094-1791652497.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/gallery/2026/10/10/photos-thousands-march-across-europe-to-demand-end-to-israels-war-on-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/gallery/2026/10/10/photos-thousands-march-across-europe-to-demand-end-to-israels-war-on-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5015be57b3",
+ "score": 63.74,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Thousands march across European cities against Gaza war"
+}
