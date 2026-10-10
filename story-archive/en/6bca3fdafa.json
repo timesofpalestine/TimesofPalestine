@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/the-final-fatal-blow-to-international-criminal-justice-the-united-states-sanctions-the-international-criminal-court",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.hrw.org/news/2026/10/09/us-sanctions-on-icc-put-global-justice-at-risk",
-   "name": "Human Rights Watch",
-   "url": "https://www.hrw.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-09T16:04:14+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "6bca3fdafa",
- "score": 70.03,
+ "score": 70.02,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
