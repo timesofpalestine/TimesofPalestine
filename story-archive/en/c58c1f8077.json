@@ -19,12 +19,6 @@
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/live/2026/oct/07/israel-october-7-anniversary-hamas-gaza-netanyahu-iran-latest-news-updates",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
   }
  ],
  "date": "2026-10-08T15:48:14+00:00",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "c58c1f8077",
- "score": 82.65,
+ "score": 82.63,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",

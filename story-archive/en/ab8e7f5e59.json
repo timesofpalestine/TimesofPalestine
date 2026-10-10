@@ -1,0 +1,45 @@
+{
+ "brief": "Palestinian Authority President Mahmoud Abbas postponed legislative elections scheduled for November 2026 to September 2027, Al Jazeera English reported. Abbas announced the delay through a presidential decree without providing a public explanation for the decision.\n\nThe postponement affects joint presidential and legislative elections planned for next year, according to the announcement. The Palestinian Authority had not held legislative elections since 2006, when Hamas won a majority that fractured Palestinian politics.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-president-postpones-legislative-elections-until-2027",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/abbas-postpones-palestinian-elections-sets-presidential-poll-september-2027",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-10T14:18:09+00:00",
+ "dek": "November 2026 vote delayed; joint presidential and legislative elections set for next year, president says in decree.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2023/01/2022-12-09T154155Z_2108035194_RC2F2Y9HJ3FQ_RTRMADP_3_CHINA-SAUDI-ARABS.jpg?resize=1920%2C1421",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ab8e7f5e59",
+ "score": 48.55,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Abbas delays Palestinian legislative elections to September 2027"
+}
