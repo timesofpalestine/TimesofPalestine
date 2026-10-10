@@ -1,0 +1,33 @@
+{
+ "brief": "A real estate crisis in Gaza has forced lawyers, doctors, and other professionals to operate out of tents, Al Jazeera English reported. The shortage of functional buildings has left workers without conventional workspace, pushing them to improvise with temporary structures as they attempt to maintain their practices.\n\nThe conversion of tents into surgeries and offices reflects the broader infrastructure collapse affecting Gaza's economy and services. Professionals have adapted to working in these conditions to continue serving their communities despite severe displacement and property damage.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/10/10/when-streets-become-a-workplace-gaza-workers-convert-tents-into-offices?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-10T13:50:05+00:00",
+ "dek": "A real estate crisis in Gaza has forced professionals to use tents as surgeries and offices.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/3-1791623005.jpeg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/10/10/when-streets-become-a-workplace-gaza-workers-convert-tents-into-offices?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/10/10/when-streets-become-a-workplace-gaza-workers-convert-tents-into-offices?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9126448232",
+ "score": 49.74,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza professionals convert tents into makeshift offices and surgeries"
+}

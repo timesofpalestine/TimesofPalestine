@@ -6,13 +6,31 @@
    "article": "https://t.me/maannews/37231",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=218132&slug=%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-%D9%8A%D8%B9%D8%AA%D8%AF%D9%88%D9%86-%D8%B9%D9%84%D9%89-%D9%82%D8%A7%D8%B7%D9%81%D9%8A-%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86-%D8%BA%D8%B1%D8%A8-%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%84%D9%87-%D9%88%D8%AF%D9%8A%D8%B1-%D8%A8%D9%84%D9%88%D8%B7-%D9%88%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%B9%D8%AA%D9%82%D9%84-4-%D9%81%D9%8A-%D8%AF%D9%8A%D8%B1-%D8%A7%D8%B3%D8%AA%D9%8A%D8%A7",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/share/218132",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/785-25",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-09T13:51:59+00:00",
  "dek": "",
  "dup_of": null,
- "image": "https://cdn4.telesco.pe/file/fuPNx-6vGp2G8drFUq9A6cyEoOo9uXtR0eyhFtK60upU3gE0-yOCoyVBNShACxZb8DyHvF3rygw2hcNa-3eWOXcinQlKW-yfqOKt3wCMH1R7fFZQR3T1ZEZO6ud0_a4yZWR3IM1rJdHliMYqvrOe97FfHhelqPofbRO4URkFglsA8flS8BYE_bC6_GyRJmO85-hanVoOR4A-sujQPQnpQqaFsNjDWb9zqP3DLgF6pzq9efJXHNZF3D_sSYXvBvt7rHwvHcnYbW9dFwrKIYjreoNGCfiJTI0fVrtsTFFBiYx61hxKoIsRB4bQNr3cn-QwoJSFvhATSCqwZV02Gk2PjA",
+ "image": "https://cdn4.telesco.pe/file/pPODeTh0tu4turNnGpRIh-9Brl4iysjuAkk54qABJKgyxbNReGfCI7oTK0AUN_Jxl8UKILWUCz0Db-LbNBGeivxgJKgZ4QIW5yDTiAzxS4_mHWHM9mDZBl1PHJt01Clvl26ku42N88SYhhbkym8X2-0h3zNP0Yy008oWt_QfyKxUN2TCoh9A4U66vNdvqsYKx4ViHZR65OnDP1gbZ3uC9iXH_qtF8xE03EPlQqpxB0unC4zJCyeERRIQWU0gP8dWKSOGJnVjngrAWf9nvbje6sYRigpvihSlbDZNkpp4lfsx9J0gB8Lngau91gD5NXAJMZb7UpjnXz2-Li4J15BH0A",
  "lang": "ar",
  "link": "https://t.me/maannews/37231",
  "max_age_hours": 72,
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "8465555f56",
- "score": 33.33,
+ "score": 33.06,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
