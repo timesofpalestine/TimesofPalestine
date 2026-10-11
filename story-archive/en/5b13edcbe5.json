@@ -1,0 +1,39 @@
+{
+ "brief": "Dozens of Israeli settlers stormed al-Aqsa Mosque, the Ma'an news agency reported. The incursion marked another breach of the compound, a site sacred to Muslims and a flashpoint for Israeli-Palestinian tensions.\n\nDetails of the timing and scale of the intrusion were not immediately specified, though such raids by settlers have occurred repeatedly in recent years, often drawing Palestinian condemnation and international concern.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170303.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-storm-al-aqsa-mosque-under-police-protection-4",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-11T09:04:11+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170303.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5b13edcbe5",
+ "score": 48.2,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Dozens of settlers storm al-Aqsa Mosque"
+}
