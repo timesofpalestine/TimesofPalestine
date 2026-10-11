@@ -6,7 +6,13 @@
    "article": "https://t.me/gazaalannet/83851",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/742801",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-10-10T17:55:54+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "e0173239bc",
- "score": 52.86,
+ "score": 52.59,
  "source": "غزة الآن · تيليغرام",
  "source_id": "tg-gazanow",
  "source_url": "https://t.me/gazaalannet",

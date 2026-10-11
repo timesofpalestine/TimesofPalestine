@@ -6,19 +6,13 @@
    "article": "https://t.me/eyesonpal/53847",
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/israeli-strikes-kill-five-people-gaza-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-09T07:26:18+00:00",
  "dek": "An injured elderly Palestinian man crawls along the ground after an Israeli airstrike targeted a house in the Al-Sabra neighborhood of Gaza City. A journalist documenting the aftermath of the attack discovered him struggling to move amid the destruction.",
  "dup_of": null,
- "image": "https://cdn4.telesco.pe/file/RtEqTnKFGqTQHloWpN9a_YP5qiuarfKe6pTjyOkAKQD4x5MmGKWPOaSZAiU-T4iBIFMGak7JPhyA3hjcbbg7Lf0tMMpPhc0UvI0VqNBJlBG3S9sxBNSDv--RTQ7J9py4d_SJ0POHWA-gE2y6S2QFhs-DKcvqW7Bh8EGTPSdTiDMwtFZthPphu_tFiRv71YCQDeJyIipQOMcez6mDtDKpArhcq-ztiNbkJuLxCGXJ-wiWza-X_XRKkgWQZl12hGKPb1HEsjiGPdykrEacyiKWzbxwF5OAFYQg1iZp0QRxIt1_scICg6buxboLhT2n0eTzleRiLxBKHHZyRl7JdOPWow",
+ "image": "https://cdn4.telesco.pe/file/aoZopOPCbjEAAA1WV_EYrb6fcRir17CjJJyzQGezr4l6kGaJPYNgmxgGpjN0k4ROc8Xd5tJk46Xw4XNVRLM_n3vHtjkeIA2jUzhZ90O6d6rmadHBATixaFwODKY6UHaXATMlIubJtGYwTjcK58Hc30h67Bhx4kJr9KC93l0Fi5ZwT8CC2gODXWmMgtPYEMMWj9lhnfuqBqIjGpQfJ73Oi242T44g1WTtmucGGn4dSc9cKwE12a1TcOgt9MpDYT-Dp-miKbvcKSG9UwoccP3w3CIIU0K3TipxdhvrY6_s-6N2ppjvbcfwXn-65aJKKVyCrUN-tQTIlwEty1v_u8pXwA",
  "lang": "en",
  "link": "https://t.me/eyesonpal/53847",
  "max_age_hours": 72,
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "0ca5841ce0",
- "score": 39.65,
+ "score": 28.68,
  "source": "Eye on Palestine",
  "source_id": "tg-eyes",
  "source_url": "https://t.me/eyesonpal",
