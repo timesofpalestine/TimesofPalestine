@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces shot six Palestinians in Khan Younis, the Nasser Medical Complex reported, according to Al Jazeera. The injuries occurred as Israeli forces blocked access to a West Bank village, though details on the circumstances remained limited.\n\nThe incident added to escalating tensions in both Gaza and the occupied West Bank, where restrictions on Palestinian movement have intensified in recent weeks.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-injured-gaza-israeli-forces-cut-access-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-11T05:55:52+00:00",
+ "dek": "Six Palestinians injured in Gaza as Israeli forces block access to West Bank village At least six people have been injured by Israeli gunfire in Khan Younis, according to the Nasser Medical Complex in Gaza, Al Jazeera reported.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-injured-gaza-israeli-forces-cut-access-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c2c677d765",
+ "score": 62.57,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli forces injure six Palestinians in Gaza, block West Bank village"
+}
