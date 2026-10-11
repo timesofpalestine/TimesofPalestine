@@ -6,7 +6,13 @@
    "article": "https://t.me/eyesonpal/53844",
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-25-palestinians-including-five-children-and-two-women-and-continues-to-destroy-homes-across-the-gaza-strip",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-09T07:26:13+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "cedd063e89",
- "score": 30.79,
+ "score": 30.53,
  "source": "Eye on Palestine",
  "source_id": "tg-eyes",
  "source_url": "https://t.me/eyesonpal",
