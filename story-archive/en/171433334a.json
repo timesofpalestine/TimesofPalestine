@@ -9,15 +9,15 @@
    "verified": true
   },
   {
-   "article": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
-   "name": "Amnesty International",
-   "url": "https://www.amnesty.org/",
-   "verified": true
-  },
-  {
    "article": "https://zeteo.com/p/this-week-in-palestine-revealed-israel",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
    "verified": true
   }
  ],
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "171433334a",
- "score": 83.45,
+ "score": 83.42,
  "source": "Human Rights Watch",
  "source_id": "hrw",
  "source_url": "https://www.hrw.org/",
