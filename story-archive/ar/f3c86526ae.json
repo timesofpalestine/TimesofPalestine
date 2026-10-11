@@ -1,0 +1,33 @@
+{
+ "brief": "لا توجر معلومات تفصيلية كافية في المصدر المرفق لكتابة موجز إخباري متكامل. العنوان المرفق يشير إلى وجود فيديو يوثّق استهدافات وقصفاً على قطاع غزة، لكن لا يتضمن المصدر تفاصيل حول الوقت أو المكان المحدد أو الجهات المسؤولة أو عدد الضحايا أو أي سياق إضافي.\n\nلتحرير موجز إخباري كامل، نحتاج إلى معلومات إضافية من المصدر الأصلي تتعلق بتاريخ التوثيق ومحتوى الفيديو والظروف المحيطة به.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/gazaalannet/83855",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-10T19:02:23+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/Zt3MN1LswQNrDMkA_8emg6sgp2j5QQBnllZ3S323DSn3ugjK-ecN2zDuomieMDiRK2nFsnfVHMIyo5zc4sRBawlhcZlcjtNE7HtG8LJwVwkaOsxVJV0IsynaAtzw0qWBtbsYEOXpSMSavTw9WYOus67GAD499g5yjEqW5XFRBCYp4EpGE28eeqgznelziUMu66h_XVthiNEgI9X8S_cLtmbutg8WTO0fegHONWL4tyOgmKkxc5wsQ9qHsX36ZKDMUQf9IfFAVTAkVj9B6sF7InI53ohL0Y8nxu01c_Igfc2hz8qRwaSfT1enrXn38Px1sVcMAzGP8IzUW5_6mEM7gA",
+ "lang": "ar",
+ "link": "https://t.me/gazaalannet/83855",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "غزة الآن · تيليغرام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/gazaalannet/83855"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f3c86526ae",
+ "score": 59.64,
+ "source": "غزة الآن · تيليغرام",
+ "source_id": "tg-gazanow",
+ "source_url": "https://t.me/gazaalannet",
+ "title": "فيديو يوثّق استهدافات وقصف على غزة"
+}
