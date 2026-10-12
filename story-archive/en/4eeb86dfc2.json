@@ -1,0 +1,39 @@
+{
+ "brief": "An Israeli settler was filmed abusing and reportedly poisoning livestock in the village of Al-Mughayyir, Al Jazeera English reported. The incident marks the latest in a series of attacks on Palestinian property and animals in the occupied West Bank.\n\nDetails of the settler's actions and the condition of the animals were not immediately available. The village of Al-Mughayyir has faced repeated incidents of settler violence targeting residents and their livelihoods.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/12/israeli-settlers-abuse-and-reportedly-poison-goats-in-palestinian-village?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48348",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-12T13:31:25+00:00",
+ "dek": "An Israeli settler was filmed abusing and reportedly poisoning livestock in the village of Al-Mughayyir.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791812006.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/12/israeli-settlers-abuse-and-reportedly-poison-goats-in-palestinian-village?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/12/israeli-settlers-abuse-and-reportedly-poison-goats-in-palestinian-village?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4eeb86dfc2",
+ "score": 49.32,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settler abuses and poisons goats in Palestinian village"
+}
