@@ -6,7 +6,13 @@
    "article": "https://shehabnews.com/post/165820/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%82%D8%AA%D8%AD%D9%85-%D8%A8%D9%84%D8%AF%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%88%D9%8A%D8%B5%D8%A7%D8%AF%D8%B1-%D9%85%D8%B1%D9%83%D8%A8%D8%A7%D8%AA-%D9%88%D9%8A%D9%87%D8%AF%D9%85-%D8%AF%D9%88%D8%A7%D8%B1%D8%A7-%D9%88%D8%B3%D8%B7-%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%84%D9%87",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-qalqilyah-occupied-west-bank-local-sources-report",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-12T19:46:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "2df3a5e86c",
- "score": 48.08,
+ "score": 47.82,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
