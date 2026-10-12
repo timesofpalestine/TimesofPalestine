@@ -1,0 +1,33 @@
+{
+ "brief": "The health system in Gaza faces an acute crisis as medical facilities deteriorate and disease spreads amid ongoing conflict, according to Ma'an Wire. Shortages of fuel, medicine, and clean water have crippled hospitals and clinics, leaving civilians without access to basic treatment.\n\nThe humanitarian situation has reached a critical threshold, with sanitation conditions deteriorating rapidly and infectious diseases posing an escalating threat to the population. Aid organizations warn that without immediate intervention, the health crisis will worsen significantly.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170379.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-12T10:51:59+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170379.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b11c47b812",
+ "score": 49.22,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gaza faces imminent health catastrophe, aid group warns"
+}
