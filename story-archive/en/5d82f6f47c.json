@@ -6,7 +6,13 @@
    "article": "https://english.pnn.ps/news/48348",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-three-palestinians-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-11T09:46:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "5d82f6f47c",
- "score": 40.59,
+ "score": 40.32,
  "source": "Palestine News Network",
  "source_id": "pnn",
  "source_url": "https://english.pnn.ps/",
