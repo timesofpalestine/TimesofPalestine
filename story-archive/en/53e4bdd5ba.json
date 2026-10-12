@@ -1,0 +1,33 @@
+{
+ "brief": "Hunger has reached critical levels across Gaza, with over 1.4 million people facing acute food shortages, Al Jazeera English reported. Mothers queue for extended periods in search of basic provisions as the humanitarian situation deteriorates, with available aid insufficient to meet the population's fundamental needs.\n\nThe deepening food crisis reflects ongoing challenges in delivering assistance to civilians across the territory. Widespread malnutrition and famine conditions have become a defining feature of daily life for Gaza's residents.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/gallery/2026/10/12/photos-gaza-mothers-endure-endless-lines-as-famine-fears-persist?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-12T08:46:41+00:00",
+ "dek": "Hunger grips Gaza, with over 1.4 million people acutely short of food as aid remains insufficient to meet basic needs.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261007__D2DH9FX__v3__HighRes__PalestinianIsraelConflictGazaHunger-1791786132.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/gallery/2026/10/12/photos-gaza-mothers-endure-endless-lines-as-famine-fears-persist?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/gallery/2026/10/12/photos-gaza-mothers-endure-endless-lines-as-famine-fears-persist?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "53e4bdd5ba",
+ "score": 49.4,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Famine threatens 1.4 million Gazans as aid falls short"
+}
