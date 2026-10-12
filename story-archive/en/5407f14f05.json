@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli Prime Minister Benjamin Netanyahu has called for an investigation into the sources behind an award-winning documentary that features 24 anonymous Israeli testimonies accusing the military of killing Palestinians in Gaza through artificial intelligence systems, Al Jazeera English reported. The film, titled NAZA, has garnered international recognition for its investigation into the use of automated targeting technology during the conflict.\n\nNetanyahu's demand for a probe follows the documentary's release and comes as the accounts within it raise questions about Israeli military practices and civilian casualties in Gaza. The anonymous nature of the Israeli sources cited in the film has not been disclosed publicly.",
+ "cat": "arts",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/12/netanyahu-demands-probe-into-sources-for-award-winning-gaza-film-naza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-12T04:24:18+00:00",
+ "dek": "Documentary draws on 24 anonymous Israeli sources accusing military of killing Palestinians in Gaza using AI systems.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP26258555752392-1791774825.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/12/netanyahu-demands-probe-into-sources-for-award-winning-gaza-film-naza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/12/netanyahu-demands-probe-into-sources-for-award-winning-gaza-film-naza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5407f14f05",
+ "score": 62.56,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu demands inquiry into Gaza documentary's Israeli military sources"
+}
