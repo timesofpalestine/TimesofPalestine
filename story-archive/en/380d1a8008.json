@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/israel-kills-25-palestinians-including-five-children-and-two-women-and-continues-to-destroy-homes-across-the-gaza-strip",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/israeli-strikes-kill-five-people-gaza-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-10T19:25:00+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "380d1a8008",
- "score": 83.5,
+ "score": 83.47,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
