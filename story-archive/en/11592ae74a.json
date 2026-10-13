@@ -6,13 +6,7 @@
    "article": "https://t.me/maannews/37309",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/likely-unexploded-ordnance-kills-teenager-northern-israel",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-13T10:16:10+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "11592ae74a",
- "score": 61.55,
+ "score": 61.27,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
