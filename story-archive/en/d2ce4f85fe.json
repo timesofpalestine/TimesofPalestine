@@ -1,0 +1,33 @@
+{
+ "brief": "Israel has maintained military operations in Gaza throughout the past year despite a ceasefire agreement, according to Al Jazeera English. The Palestinian territory marked the anniversary amid ongoing Israeli strikes that have prolonged the conflict and prevented full reconstruction efforts.\n\nIn the West Bank, settler violence has escalated during the olive harvest season, disrupting Palestinian agricultural activities. The incidents coincide with broader security tensions across Palestinian territories as ceasefire terms remain contested and largely unimplemented.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-13T07:45:07+00:00",
+ "dek": "A year after Gaza's ceasefire, Israeli attacks persist as settler violence disrupts West Bank's oil harvest.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6acd4d86074e-1791839622.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d2ce4f85fe",
+ "score": 63.41,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli attacks continue in Gaza a year after ceasefire agreement"
+}
