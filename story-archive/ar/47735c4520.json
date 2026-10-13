@@ -6,18 +6,12 @@
    "article": "https://www.pbc.ps/a-45",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://felesteen.news/post/188038/14-%D9%88%D8%A7%D9%82%D8%B9%D8%A9-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D8%B1%D8%B9%D9%8A%D9%86-%D9%81%D9%8A-%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86",
-   "name": "صحيفة فلسطين",
-   "url": "https://felesteen.news/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-12T17:27:35+00:00",
  "dek": "أفادت هيئة مقاومة الجدار والاستيطان بتسجيل 14 واقعة اعتداء طالت المزارعين وأراضيهم ومحاصيلهم، اليوم الاثنين، بين السادسة صباحا والسادسة مساء، ظهرت المقالة 14 واقعة اعتداء على المزارعين وموسم الزيتون خلال يوم واحد في أربع محافظات أولاً على تلفزيون فلسطين.",
- "dup_of": "ff6fdc288b",
+ "dup_of": null,
  "image": "https://www.pbc.ps/wp-content/uploads/2026/10/IMG_2257.webp",
  "lang": "ar",
  "link": "https://www.pbc.ps/a-45",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "47735c4520",
- "score": 39.45,
+ "score": 38.43,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
