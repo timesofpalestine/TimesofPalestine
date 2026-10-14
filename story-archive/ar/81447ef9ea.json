@@ -15,16 +15,10 @@
    "verified": true
   },
   {
-   "article": "https://t.me/gazaalannet/83924",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": true
-  },
-  {
    "article": "https://t.me/Arabi21News/429870",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-13T23:35:12+00:00",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "81447ef9ea",
- "score": 45.1,
+ "score": 44.83,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
