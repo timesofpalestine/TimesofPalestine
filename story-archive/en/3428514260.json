@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/10/14/palestinian-collective-uses-art-to-connect-gaza-and-the-west-bank?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48353",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-14T17:11:20+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "3428514260",
- "score": 49.51,
+ "score": 49.23,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
