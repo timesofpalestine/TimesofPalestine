@@ -13,6 +13,12 @@
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
    "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/10/14/israel_raids_west_bank_ngos",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-14T19:44:00+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "e0c899ef4a",
- "score": 63.61,
+ "score": 63.42,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
