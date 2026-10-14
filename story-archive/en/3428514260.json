@@ -1,0 +1,39 @@
+{
+ "brief": "A Palestinian art collective is opening an exhibition at the same time in Bethlehem and Gaza, according to Al Jazeera English, challenging movement restrictions that typically prevent such coordinated cultural events between the territories. The simultaneous openings occur across the geographic divide imposed by Israeli controls separating Palestinians in the occupied West Bank from those in Gaza.\n\nThe exhibition uses art to connect fragmented Palestinian communities across the restricted territories. Such synchronized displays remain rare given the constraints on movement and coordination between Gaza and the West Bank.",
+ "cat": "arts",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/14/palestinian-collective-uses-art-to-connect-gaza-and-the-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48353",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-14T17:11:20+00:00",
+ "dek": "A Palestinian exhibition opening simultaneously in Bethlehem and Gaza is challenging Israeli restrictions.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Screenshot-2026-10-14-at-17.55.29-1791997059.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/14/palestinian-collective-uses-art-to-connect-gaza-and-the-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/14/palestinian-collective-uses-art-to-connect-gaza-and-the-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3428514260",
+ "score": 49.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinian artists mount simultaneous Gaza-West Bank exhibition defying Israeli restrictions"
+}
