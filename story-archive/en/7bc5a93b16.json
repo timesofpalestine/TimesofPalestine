@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/10/14/israels-former-security-chief-sues-netanyahu-for-october-7-defamation?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/former-shin-bet-chief-ronen-bar-sues-netanyahu-nearly-1m-over-oct-7-claims",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-14T18:39:03+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "7bc5a93b16",
- "score": 49.15,
+ "score": 48.86,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
