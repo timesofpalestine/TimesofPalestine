@@ -1,0 +1,33 @@
+{
+ "brief": "We Are Not Numbers reported that the genocide in Gaza has displaced Alaa from her homeland. She was forced to leave the territory and remains determined to return despite the devastation that drove her away.\n\nAlaa's account reflects the broader displacement of Palestinians across the territory, with many maintaining ties to homes they have abandoned under the pressure of sustained conflict.",
+ "cat": "humans",
+ "corroborating_sources": [
+  {
+   "article": "https://wearenotnumbers.org/no-place-like-home",
+   "name": "We Are Not Numbers",
+   "url": "https://wearenotnumbers.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-14T08:51:56+00:00",
+ "dek": "The genocide forced my friend Alaa to leave Gaza. She is determined to return to her homeland.",
+ "dup_of": null,
+ "image": "https://wearenotnumbers.org/wp-content/uploads/2026/10/displaced-girl-next-to-tent.webp",
+ "lang": "en",
+ "link": "https://wearenotnumbers.org/no-place-like-home",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "We Are Not Numbers",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://wearenotnumbers.org/no-place-like-home"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4c65b175e5",
+ "score": 49.99,
+ "source": "We Are Not Numbers",
+ "source_id": "wann",
+ "source_url": "https://wearenotnumbers.org/",
+ "title": "Gaza genocide forces Alaa into exile, strengthens resolve to return"
+}
