@@ -13,12 +13,6 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/colombia-opens-embassy-jerusalem-restores-free-trade-deal-israel",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-10-14T12:28:06+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "0d3979d5cb",
- "score": 47.39,
+ "score": 47.09,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
