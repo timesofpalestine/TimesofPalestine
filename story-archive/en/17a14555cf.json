@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/colombia-opens-embassy-jerusalem-shift-israel",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/colombia-opens-embassy-jerusalem-restores-free-trade-deal-israel",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-14T09:18:13+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "17a14555cf",
- "score": 49.22,
+ "score": 48.93,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
