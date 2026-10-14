@@ -1,0 +1,45 @@
+{
+ "brief": "Pro-Palestinian demonstrations took place globally to commemorate one year since the Gaza ceasefire began, Al Jazeera English reported. The protests marked the anniversary of a halt to fighting that had drawn international attention and sparked sustained activism across multiple continents.\n\nThe commemorative events were held in cities worldwide as activist communities marked the passage of a year since the ceasefire agreement took effect.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-sv-global-protests-for-gaza-solidarity-uk?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/10/10/gaza-ceasefire-anniversary-marks-year-of-failed-promises",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-revealed-israel",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-11T01:11:10+00:00",
+ "dek": "Pro-Palestinian demonstrations have been held worldwide to mark one year since the so-called Gaza ‘ceasefire'.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791680952.jpg?resize=1618%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-sv-global-protests-for-gaza-solidarity-uk?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-sv-global-protests-for-gaza-solidarity-uk?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ab2c2c4c3e",
+ "score": 57.24,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Pro-Palestinian protesters worldwide mark year since Gaza truce"
+}

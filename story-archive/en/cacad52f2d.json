@@ -1,0 +1,39 @@
+{
+ "brief": "Colombia inaugurated an embassy to Israel in Jerusalem, marking a significant diplomatic reversal for the South American nation, Al Jazeera English reported. Palestinian officials condemned the move, which represents a major shift in policy following the previous administration's decision to sever ties with Israel.\n\nThe embassy opening signals Colombia's renewed engagement with Israel under its current government, a departure from its predecessor's stance toward the Israeli state.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/14/colombia-inaugurates-embassy-to-israel-in-jerusalem?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/colombia-opens-embassy-jerusalem-shift-israel",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-14T14:08:45+00:00",
+ "dek": "Palestinian officials slam move by Colombian government that marked major shift after ex-president had cut Israel ties.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6acf782f-1791981615.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/14/colombia-inaugurates-embassy-to-israel-in-jerusalem?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/14/colombia-inaugurates-embassy-to-israel-in-jerusalem?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cacad52f2d",
+ "score": 47.11,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Colombia opens Jerusalem embassy, drawing Palestinian condemnation"
+}

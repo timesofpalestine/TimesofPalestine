@@ -1,0 +1,33 @@
+{
+ "brief": "Israel has expanded what it calls the \"Yellow Line\" and taken complete control of the Shajaia neighborhood east of Gaza City, the Ma'an news agency reported. The buffer zone expansion represents a further consolidation of Israeli military presence in the densely populated area.\n\nThe Shajaia district, one of Gaza's most densely inhabited neighborhoods, has been a focal point of intense fighting since the escalation of hostilities. Israeli forces now hold the entire neighborhood.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170308.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-11T10:01:50+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170308.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "44f514830e",
+ "score": 35.49,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel expands buffer zone, takes full control of Gaza City's Shajaia district"
+}

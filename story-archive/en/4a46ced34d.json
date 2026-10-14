@@ -1,0 +1,33 @@
+{
+ "brief": "Al Jazeera English examined the positions of Israeli candidates on Palestinian statehood ahead of elections, finding minimal support for an independent Palestinian state among major contenders. The analysis surveyed where leading candidates stand on core issues including a two-state solution, settlements, and negotiations with Palestinian leadership.\n\nMost prominent candidates either oppose Palestinian statehood outright or avoid committing to it as a negotiating objective, the outlet found. Support for a Palestinian state remains marginal among Israel's mainstream political spectrum, reflecting deeper divisions over settlement expansion and the terms of any potential peace agreement.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/14/do-any-of-these-israeli-candidates-support-a-palestinian-state?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-14T11:43:29+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Israeli-1791978199.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/14/do-any-of-these-israeli-candidates-support-a-palestinian-state?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/14/do-any-of-these-israeli-candidates-support-a-palestinian-state?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4a46ced34d",
+ "score": 46.87,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli election candidates show limited backing for Palestinian statehood"
+}

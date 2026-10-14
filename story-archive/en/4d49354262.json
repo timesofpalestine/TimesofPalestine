@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli strike killed a Palestinian woman in an apartment near Al-Shifa Medical Complex in Gaza, according to Al Jazeera's reporters on the ground. The strike targeted the residential building adjacent to the major medical facility in Gaza City.\n\nDetails of the circumstances surrounding the strike remain limited. Al-Shifa, Gaza's largest hospital, has been the site of repeated military operations and bombardment throughout the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-palestinian-woman-near-al-shifa-medical-complex",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-14T03:25:19+00:00",
+ "dek": "Israeli strike kills Palestinian woman near al-Shifa Medical Complex in Gaza A Palestinian woman has been killed in an Israeli strike targeting an apartment near al-Shifa Medical Complex in Gaza City, according to Al Jazeera's reporters on the ground.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-palestinian-woman-near-al-shifa-medical-complex",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4d49354262",
+ "score": 59.13,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli strike kills Palestinian woman near Gaza hospital"
+}

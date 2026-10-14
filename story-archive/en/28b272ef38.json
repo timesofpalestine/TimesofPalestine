@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli occupation forces delivered an eviction order to a family in the village of Qalandia, the Ma'an news agency reported. The order mandates the family leave their residential building, though details on the timeframe for evacuation were not specified.\n\nThe village of Qalandia, located north of Jerusalem in the occupied West Bank, has faced repeated Israeli military operations and settlement pressures. The eviction follows a pattern of forced displacement orders issued to Palestinian families in occupied territories.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170310.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/165730/%D8%B3%D9%84%D8%B7%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AA-%D8%AE%D8%B7%D8%B1-%D8%A8%D8%A5%D8%AE%D9%84%D8%A7%D8%A1-%D8%A8%D9%86%D8%A7%D9%8A%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D9%82%D9%84%D9%86%D8%AF%D9%8A%D8%A7-%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%AF%D8%B3",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-11T10:22:44+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170310.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "28b272ef38",
+ "score": 62.77,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli occupation forces order family in Qalandia to vacate residential building"
+}

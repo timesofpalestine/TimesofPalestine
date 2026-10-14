@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli settlers stole olives and attacked Palestinian farmers during this year's harvest season, Al Jazeera English reported. The incidents occurred as Palestinians worked to gather crops from their groves. Olive harvesting is a critical annual event for Palestinian agricultural communities and the broader economy.\n\nThe attacks are part of a pattern of settler violence that has intensified in recent years. Palestinian farmers frequently face harassment and obstruction during the harvest period, which typically runs through late autumn.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/10/jerusalem-daily-israeli-settlers-attack-olive-farmers?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/165693/%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-%D9%8A%D8%B9%D8%AA%D8%AF%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D8%B6%D8%B1%D8%A8-%D8%A7%D9%84%D9%85%D8%A8%D8%B1%D8%AD-%D8%B9%D9%84%D9%89-%D8%A3%D8%B1%D8%A8%D8%B9%D8%A9-%D9%85%D8%B2%D8%A7%D8%B1%D8%B9%D9%8A%D9%86-%D8%AC%D9%86%D9%88%D8%A8-%D8%A8%D9%8A%D8%AA-%D9%84%D8%AD%D9%85",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-10T14:39:53+00:00",
+ "dek": "Israeli settlers steal olives and attack Palestinian farmers during this year’s harvest.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791643182.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/10/jerusalem-daily-israeli-settlers-attack-olive-farmers?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/10/jerusalem-daily-israeli-settlers-attack-olive-farmers?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0230cb5a9b",
+ "score": 45.85,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers attack Palestinian olive farmers during harvest"
+}

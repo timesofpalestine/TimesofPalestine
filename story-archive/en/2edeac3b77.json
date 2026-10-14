@@ -1,0 +1,33 @@
+{
+ "brief": "The United Nations has called on Israel to do more to prevent and prosecute settler violence, according to Al Jazeera English. The demand comes amid ongoing tensions over unauthorized outposts and attacks on Palestinian communities in the West Bank.\n\nPrime Minister Benjamin Netanyahu warned of threats from Israel's \"enemies\" ahead of elections, framing security concerns as a central campaign issue.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/14/jerusalem-daily-un-demands-israel-do-more-to-stop-settler-violence?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-14T15:49:54+00:00",
+ "dek": "Netanyahu warns again of Israel’s ‘enemies’ planning an attack before elections.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791992926.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/14/jerusalem-daily-un-demands-israel-do-more-to-stop-settler-violence?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/14/jerusalem-daily-un-demands-israel-do-more-to-stop-settler-violence?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2edeac3b77",
+ "score": 46.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN demands Israel take stronger action against settler violence"
+}

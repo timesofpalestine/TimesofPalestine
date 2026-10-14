@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب وكالة معاً، تشهد غزة وضعاً صحياً حرجاً يهدد السكان بكارثة صحية متنامية. تتفاقم الأزمة مع تدهور البنية التحتية الطبية والخدمات الصحية بسبب النقص الحاد في الموارد والإمدادات الطبية.\n\nيواجه السكان معدلات عالية من الأمراض المعدية والمزمنة، فيما عجزت المنشآت الطبية عن توفير العلاج الكافي في ظل نقص الأدوية والمعدات الضرورية.\n\nتزيد الأوضاع الصحية سوءاً مع استمرار النقص في الموارد الطبية، ما يرفع من مخاطر انتشار الأمراض بين السكان المدنيين.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170379.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-12T10:51:59+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2170379.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b11c47b812",
+ "score": 33.28,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "غزة تواجه أزمة صحية حادة"
+}

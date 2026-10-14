@@ -1,0 +1,33 @@
+{
+ "brief": "Five Palestinian women, including an elderly resident, suffered choking injuries when Israeli forces deployed tear gas during olive harvesting in Nablus, the Ma'an news agency reported. The incident occurred as the women were picking olives in the area.\n\nThe women were treated for the effects of the tear gas exposure. The incident is part of a broader pattern of confrontations between Israeli forces and Palestinian civilians engaged in agricultural activities.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170316.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-11T10:54:57+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170316.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e9462e9ca4",
+ "score": 49.72,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces fire tear gas at olive-picking women in Nablus"
+}

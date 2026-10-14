@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli settlers set fire to a mosque in the West Bank as Israeli forces conducted raids in multiple villages, Al Jazeera English reported. The incident was part of a broader surge in settler violence in the occupied territory.\n\nIn a separate incident in the town of Beita, south of Nablus, settlers attacked a boy. The attacks coincided with military operations by Israeli forces across West Bank communities.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/14/settlers-set-fire-to-mosque-in-west-bank-as-israeli-forces-raid-villages?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-set-fire-mosque-occupied-west-bank",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-14T10:57:35+00:00",
+ "dek": "Settlers also attacked a boy in a separate incident in the town of Beita, south of Nablus.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6acf4ef2e64f-1791971058.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/14/settlers-set-fire-to-mosque-in-west-bank-as-israeli-forces-raid-villages?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/14/settlers-set-fire-to-mosque-in-west-bank-as-israeli-forces-raid-villages?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8b06910190",
+ "score": 60.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Settlers torch mosque, attack boy during West Bank raids"
+}

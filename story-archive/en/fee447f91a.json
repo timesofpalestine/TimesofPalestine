@@ -1,0 +1,45 @@
+{
+ "brief": "An Israeli drone strike killed a Palestinian near Abdin Hall on Salah al-Din Street in central Gaza, the Ma'an news agency reported. The attack struck the area in Gaza City, a densely populated district that has faced repeated Israeli bombardment since October 2023.\n\nNo additional details were immediately available regarding the circumstances of the strike or whether other casualties resulted from the attack.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37243",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53847",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-strikes-kill-five-people-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-10T15:11:21+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/IXyZppgQ1--vTluShSbXaVbFce-uzf0wWptEJ98gOp3HRtD8JskG80wsopoXlNcI4nsDKjLfd1_kGKuA5WeRpwp5m50SPoinbKxLGIQ17VUvJfraDI9wAG_6awke2RQ35XqSh6u1G8SYHpXxfRpbI7eIKfabRPymDFLE_BCMuoDo-UH2z7nEZhQENpTGMBIj8dkvofLTqxASFE549Ogg-h4fOHjhK2D09XtFkF1zCyHG_pLFH0TJPo-XEPyV-ZnYgNzXBlBxM90i_Z8C1XbqL99_RrAgmXAV38p5jtOWoaIYYiqAYBaQNwvxOSJBYxD07D1_I1mbqPA_dTRzyjiSQw",
+ "lang": "en",
+ "link": "https://t.me/maannews/37243",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37243"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fee447f91a",
+ "score": 50.99,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli drone strike kills Palestinian in Gaza City"
+}

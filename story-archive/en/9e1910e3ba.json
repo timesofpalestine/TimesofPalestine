@@ -1,0 +1,33 @@
+{
+ "brief": "Der Spiegel has published accounts from ten Israeli soldiers describing extrajudicial killings of Palestinian civilians in Gaza, according to Middle East Eye. The soldiers recounted how troops killed unarmed men and falsely classified them as \"terrorists\" in official records.\n\nOne soldier quoted in the German publication stated: \"My unit killed many unarmed men.\" The accounts suggest a pattern of misreporting civilian deaths as militant casualties during the ongoing conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/my-unit-killed-many-unarmed-men-israeli-soldiers-recount-gaza-war-crimes",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-13T18:50:18+00:00",
+ "dek": "‘My unit killed many unarmed men’: Israeli soldiers recount Gaza war crimes Der Spiegel has published accounts from ten Israeli soldiers describing how troops killed Palestinian civilians in Gaza and recorded them as “terrorists”.",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/images-story/000_D33Y2DX.jpg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/my-unit-killed-many-unarmed-men-israeli-soldiers-recount-gaza-war-crimes",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/my-unit-killed-many-unarmed-men-israeli-soldiers-recount-gaza-war-crimes"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9e1910e3ba",
+ "score": 59.3,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli soldiers describe killing unarmed Palestinians as terrorists"
+}

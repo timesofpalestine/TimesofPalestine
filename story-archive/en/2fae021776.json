@@ -1,0 +1,33 @@
+{
+ "brief": "Palestine News Network joined six other independent Palestinian media organizations in launching a joint survey to identify issues the public considers most important, PNN reported. The participating outlets operate across the occupied West Bank, Gaza Strip, and Palestinian communities inside Israel.\n\nThe survey aims to inform editorial decisions and ensure media coverage reflects audience concerns. The participating organizations represent a coalition of independent newsrooms working across Palestinian territories.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://english.pnn.ps/news/48349",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-11T16:22:00+00:00",
+ "dek": "RAMALLAH, Palestine / PNN / Seven independent Palestinian media organizations from the occupied West Bank, Gaza Strip and Palestinian communities inside Israel have launched a joint public survey aimed at identifying the issues people consider most important…",
+ "dup_of": null,
+ "image": "https://media.pnn.ps/english/storage/images/news/2026/1791736984-1696355911.jpeg",
+ "lang": "en",
+ "link": "https://english.pnn.ps/news/48349",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Palestine News Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://english.pnn.ps/news/48349"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2fae021776",
+ "score": 0.09,
+ "source": "Palestine News Network",
+ "source_id": "pnn",
+ "source_url": "https://english.pnn.ps/",
+ "title": "Seven Palestinian outlets launch public priorities survey"
+}

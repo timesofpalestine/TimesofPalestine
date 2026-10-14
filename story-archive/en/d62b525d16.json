@@ -1,0 +1,57 @@
+{
+ "brief": "Gaza's government media office said Israeli forces committed 5,474 breaches of a ceasefire agreement over one year, resulting in 1,488 deaths and 5,280 injuries, according to Shehab Wire. The office released the figures on Sunday without specifying which ceasefire agreement or the exact timeframe covered.\n\nThe casualty toll includes Palestinians killed and wounded during the reported violations, though the statement did not detail the nature or circumstances of individual breaches.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.com/post/165725/%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A-5-474-%D8%AE%D8%B1%D9%82-%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%A7-%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D8%AE%D9%84-%D9%81%D8%AA-1-488-%D8%B4%D9%87%D9%8A%D8%AF-%D8%A7",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/10/10/gaza-ceasefire-anniversary-marks-year-of-failed-promises",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-revealed-israel",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-strikes-kill-five-people-gaza-medics-say",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-11T09:30:00+00:00",
+ "dek": "Gaza's government media office said Israeli forces committed 5,474 breaches of a ceasefire agreement over one year, resulting in 1,488 deaths and 5,280 injuries, according to Shehab Wire.",
+ "dup_of": null,
+ "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/ahQ3X.jpg?v=1",
+ "lang": "en",
+ "link": "https://shehabnews.com/post/165725/%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A-5-474-%D8%AE%D8%B1%D9%82-%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%A7-%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D8%AE%D9%84-%D9%81%D8%AA-1-488-%D8%B4%D9%87%D9%8A%D8%AF-%D8%A7",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Shehab Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.com/post/165725/%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A-5-474-%D8%AE%D8%B1%D9%82-%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%A7-%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D8%AE%D9%84-%D9%81%D8%AA-1-488-%D8%B4%D9%87%D9%8A%D8%AF-%D8%A7"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d62b525d16",
+ "score": 61.11,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "Gaza reports 5,474 Israeli ceasefire violations killing 1,488 in year"
+}

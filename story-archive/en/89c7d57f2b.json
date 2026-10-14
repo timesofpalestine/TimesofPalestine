@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli settlers attacked a Palestinian mosque in the area near occupied East Jerusalem, Al Jazeera English reported. The incident marks the latest in a series of attacks on Palestinian religious sites and communities in the region.\n\nDetails about the extent of damage, number of attackers, or any injuries were not immediately available. Palestinian officials have repeatedly condemned such attacks as part of a broader pattern of settler violence against Palestinian civilians and property.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/14/settlers-attack-palestinian-mosque-near-occupied-east-jerusalem?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-14T17:05:01+00:00",
+ "dek": "Settlers attack Palestinian mosque near occupied East Jerusalem…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791997485.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/14/settlers-attack-palestinian-mosque-near-occupied-east-jerusalem?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/14/settlers-attack-palestinian-mosque-near-occupied-east-jerusalem?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "89c7d57f2b",
+ "score": 46.83,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers attack Palestinian mosque near East Jerusalem"
+}

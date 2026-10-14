@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli military forces raided several non-governmental organization offices in Ramallah, the de facto capital of the Palestinian Authority in the occupied West Bank, Al Jazeera English reported. The specifics of which organizations were targeted and the stated reason for the operations were not immediately detailed.\n\nThe raids are part of a broader pattern of Israeli military activity in Palestinian civilian areas. Al Jazeera's Nida Ibrahim reported from the scene in Ramallah as the operations unfolded.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/13/israels-military-raids-ngo-offices-in-ramallah?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-raids-wound-child-and-two-journalists-ramallah",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-13T10:53:16+00:00",
+ "dek": "Al Jazeera’s Nida Ibrahim reports from Ramallah in the occupied West Bank where Israeli forces raided several NGOs.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791888768.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/13/israels-military-raids-ngo-offices-in-ramallah?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/13/israels-military-raids-ngo-offices-in-ramallah?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5b2dab493d",
+ "score": 60.5,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces raid NGO offices in Ramallah"
+}

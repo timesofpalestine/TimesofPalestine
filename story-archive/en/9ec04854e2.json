@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli soldier shot and killed a Palestinian citizen inside a displacement camp in Jabalia, the Ma'an news agency reported. The incident occurred as the camp continues to shelter Palestinians displaced by ongoing military operations in the Gaza Strip.\n\nDetails of the circumstances surrounding the shooting were not immediately available. The death adds to the toll of Palestinians killed during Israel's military operations in Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37232",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-09T18:49:43+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/m4sC39GaYmP81653UwP6v3L7BUCLxUDM33nMyXSXmoOYZO8PyKGc8zYJRRid_sxUhxPItW462iY70CfNyCkYW4fcnjQpUTPFNgdUeV2FBdKDs_nU25uxeDKFtJwUVXuabaqiN_8YFDZyvVKd1yWnK4Fm80iTahkIITjCrRy0otYCX5mGCcgoT0LkY_7ptCO9zk-DG459X2eE8Sb5acxrktUJP5yH0HhaQ6NczfGxVGrSZOwWnr-B26X3Sy-wBMvAuJo4JkeOrgR0ghJ8OnooGALpWYj5hDWk2XF6uUzXwlBcks1K0C65VoVV1aPVXkJZZlaltitcX__OoAqZRTgxhw.jpg",
+ "lang": "en",
+ "link": "https://t.me/maannews/37232",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37232"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9ec04854e2",
+ "score": 36.02,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces shoot Palestinian dead in Jabalia displacement camp"
+}

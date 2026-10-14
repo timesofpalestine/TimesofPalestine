@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli attack killed one person in Gaza, Al Jazeera English reported, as violence continued in the enclave a year into a ceasefire agreement. The strike came as nearly two-thirds of Gaza remains under Israeli control.\n\nIsraeli forces also wounded journalists in the occupied West Bank during separate operations. Prime Minister Benjamin Netanyahu has vowed to maintain Israeli control over the territory, signaling no near-term change in military posture across Palestinian areas.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/14/israeli-attacks-kill-one-in-gaza-wound-journalists-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-14T00:45:16+00:00",
+ "dek": "A year into the ceasefire, nearly two-thirds of Gaza is in Israeli hands and Netanyahu vows control of the West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6acea8b9cb942-1791928505.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/14/israeli-attacks-kill-one-in-gaza-wound-journalists-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/14/israeli-attacks-kill-one-in-gaza-wound-journalists-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b2b3440bc4",
+ "score": 59.04,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strikes kill one in Gaza, injure West Bank journalists"
+}

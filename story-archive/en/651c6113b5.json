@@ -1,0 +1,51 @@
+{
+ "brief": "Panicked Palestinians are fleeing Israeli military operations across Gaza, according to Al Jazeera English. The displacement is occurring as Israeli attacks continue in the territory, forcing residents to abandon their homes and seek shelter elsewhere.\n\nThe scale and specific locations of the displacement remain unclear from available reports. Israeli military operations have prompted mass movement of civilians within Gaza, compounding the humanitarian situation in the densely populated enclave.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/11/jerusalem-daily-panicked-palestinians-flee-israeli-attacks-on-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-25-palestinians-including-five-children-and-two-women-and-continues-to-destroy-homes-across-the-gaza-strip",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/thousands-join-pro-palestinian-marches-several-european-cities",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48344",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-11T18:25:42+00:00",
+ "dek": "Jerusalem Daily: Panicked Palestinians flee Israeli attacks on Gaza…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791743118.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/11/jerusalem-daily-panicked-palestinians-flee-israeli-attacks-on-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/11/jerusalem-daily-panicked-palestinians-flee-israeli-attacks-on-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "651c6113b5",
+ "score": 43.8,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians flee Israeli attacks across Gaza"
+}

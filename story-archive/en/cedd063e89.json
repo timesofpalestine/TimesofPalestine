@@ -1,0 +1,39 @@
+{
+ "brief": "Eye on Palestine reported that children were among those injured in heavy Israeli bombardment of the Gaza Strip. The report did not specify the number of casualties or the locations targeted in the strikes.\n\nThe incident is the latest in ongoing military operations in the territory. Details regarding the severity of injuries and the circumstances of the bombardment were not immediately available.",
+ "cat": "social",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/eyesonpal/53844",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-25-palestinians-including-five-children-and-two-women-and-continues-to-destroy-homes-across-the-gaza-strip",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-09T07:26:13+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/SR8tnFPQ2tn3OYO-KeePdTpiQ7rp9en8hOKbDcUJa8bloHrUAuaOeSJTiizbTn79o5iWCnyW316hiDMDRcIGxommrkUF3hnj5yH3k0P8nk9FNjPPCC71F89bCwx1-nvd0ejMQknv0BnDKthv_P9jfsPRoKi67hwWAA0tktLlAx-KmZzER18r2Mes8sUSW00AaLqXGuf_DWz2QQrAoHmooG1nIWRgJkxW9pMYu1A7oHzDf_GSQp645sKT2h0gPDYXy4Fp0EkiIWZqK4vgcyABHU1TNRKw1vD-WsA_Pj5Jcc5OaoxzrnuHeYywsF6KFxPTGbQ_bTGlPBvgATl7ez5fTw",
+ "lang": "en",
+ "link": "https://t.me/eyesonpal/53844",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Eye on Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/eyesonpal/53844"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cedd063e89",
+ "score": 30.03,
+ "source": "Eye on Palestine",
+ "source_id": "tg-eyes",
+ "source_url": "https://t.me/eyesonpal",
+ "title": "Israeli bombardment injures children in Gaza Strip"
+}

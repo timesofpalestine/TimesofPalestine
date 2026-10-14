@@ -1,0 +1,39 @@
+{
+ "brief": "Thousands of demonstrators joined pro-Palestinian marches in London, Berlin and Dublin on Saturday, Al-Monitor reported. The protesters called for an end to Israeli strikes on Gaza, with the demonstrations reflecting ongoing pressure in European cities over the conflict.\n\nThe coordinated marches marked continuing mobilization across multiple countries around Gaza-related issues, drawing large crowds to central locations in three major European capitals.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/thousands-join-pro-palestinian-marches-several-european-cities",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48344",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-10T16:30:27+00:00",
+ "dek": "Thousands of people on Saturday joined pro-Palestinian marches in London, Berlin and Dublin calling for an end to Israeli strikes on Gaza, three years…",
+ "dup_of": null,
+ "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-10/v000_d2um4zq.jpg?h=c12e0b96&itok=kcUqfOdH",
+ "lang": "en",
+ "link": "https://www.al-monitor.com/originals/2026/10/thousands-join-pro-palestinian-marches-several-european-cities",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al-Monitor",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.al-monitor.com/originals/2026/10/thousands-join-pro-palestinian-marches-several-european-cities"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c19ceed6a3",
+ "score": 34.88,
+ "source": "Al-Monitor",
+ "source_id": "almonitor",
+ "source_url": "https://www.al-monitor.com/",
+ "title": "Thousands march for Palestinians across European capitals"
+}

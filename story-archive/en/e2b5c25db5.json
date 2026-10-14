@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces stormed Salfit city and raided the Palestinian Authority's Prisoners Affairs Commission office, according to Maan Wire. Soldiers ransacked the facility and its contents during the incursion.\n\nThe raid targeted one of the PA's key institutions responsible for detainee and prisoner matters. No further details on the scale of damage or purpose of the operation were immediately available.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170506.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-14T10:13:34+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-prisoners.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170506.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e2b5c25db5",
+ "score": 42.06,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces raid Salfit, ransack prisoners affairs office"
+}

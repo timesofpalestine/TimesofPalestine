@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">From Gaza to Dominion Road: the road to New Zealand's first Palestinian restaurant</title>
+  <desc id="desc">A bilingual graphic pairing the sixteen-year route that took Nehad Albattniji from a school kitchen in Gaza to a dining room at 353 Dominion Road in Auckland with the official record of New Zealand's Palestinian community: the 2023 census count and Immigration New Zealand's visa figures as at 4 October 2026.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101114"/>
+      <stop offset="1" stop-color="#1c1d21"/>
+    </linearGradient>
+    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7e1e2b"/>
+      <stop offset=".5" stop-color="#286344"/>
+      <stop offset="1" stop-color="#bd9854"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f3efe8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#d4b36e}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:17px}
+      .small{font-size:19px}
+      .body{font-size:22px}
+      .label{font-size:18px;font-weight:800;letter-spacing:1.2px}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="72" class="serif ivory" font-size="44" font-weight="800">From Gaza to Dominion Road</text>
+  <text x="90" y="112" class="sans muted body">Sixteen years, one school kitchen and a dining room in Auckland</text>
+  <text x="1540" y="152" class="arabic ivory" font-size="32" font-weight="800" text-anchor="end">من غزة إلى شارع دومينيون</text>
+  <text x="1540" y="184" class="arabic muted small" text-anchor="end">ستة عشر عاماً حتى أول مطعم فلسطيني في نيوزيلندا</text>
+
+  <line x1="130" y1="300" x2="1490" y2="300" stroke="url(#axis)" stroke-width="4"/>
+
+  <circle cx="150" cy="300" r="9" fill="#8a1f2d" stroke="#f3efe8" stroke-width="2"/>
+  <text x="150" y="272" class="sans gold" font-size="24" font-weight="800">2010</text>
+  <text x="150" y="338" class="sans ivory small">Third try out of Gaza</text>
+  <text x="150" y="362" class="arabic muted tiny">المحاولة الثالثة للخروج</text>
+
+  <circle cx="486" cy="300" r="9" fill="#8a1f2d" stroke="#f3efe8" stroke-width="2"/>
+  <text x="486" y="272" class="sans gold" font-size="24" font-weight="800">Auckland</text>
+  <text x="486" y="338" class="sans ivory small">Barber, then caterer</text>
+  <text x="486" y="362" class="arabic muted tiny">حلّاق ثم متعهّد ولائم</text>
+
+  <circle cx="822" cy="300" r="9" fill="#286344" stroke="#f3efe8" stroke-width="2"/>
+  <text x="822" y="272" class="sans gold" font-size="24" font-weight="800">2021</text>
+  <text x="822" y="338" class="sans ivory small">Sells the shop for a brother's house</text>
+  <text x="822" y="362" class="arabic muted tiny">باع محلّه ليعيد بناء بيت أخيه</text>
+
+  <circle cx="1158" cy="300" r="9" fill="#286344" stroke="#f3efe8" stroke-width="2"/>
+  <text x="1158" y="272" class="sans gold" font-size="24" font-weight="800">Manurewa</text>
+  <text x="1158" y="338" class="sans ivory small">A takeaway, then a search</text>
+  <text x="1158" y="362" class="arabic muted tiny">مطعم للطلبات ثم بحث عن صالة</text>
+
+  <circle cx="1480" cy="300" r="11" fill="#dc6572" stroke="#f3efe8" stroke-width="2"/>
+  <text x="1480" y="272" class="sans gold" font-size="24" font-weight="800" text-anchor="end">2026</text>
+  <text x="1480" y="338" class="sans ivory small" text-anchor="end">Zaitoon opens, 353 Dominion Rd</text>
+  <text x="1480" y="362" class="arabic muted tiny" text-anchor="end">افتتاح مطعم زيتون</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="408" width="700" height="430" rx="18" fill="#27282c" stroke="#d4b36e" stroke-width="2"/>
+    <text x="100" y="452" class="sans gold label">A COMMUNITY THE CENSUS BARELY SEES</text>
+    <text x="740" y="452" class="arabic muted small" text-anchor="end">جالية بالكاد يراها التعداد</text>
+
+    <text x="100" y="516" class="serif ivory" font-size="56" font-weight="800">390</text>
+    <text x="240" y="516" class="sans ivory body">people recorded in the Palestinian</text>
+    <text x="240" y="544" class="sans ivory body">ethnic group, 2023 census</text>
+    <text x="100" y="578" class="arabic muted tiny">نحو 390 شخصاً سجّلوا أنفسهم فلسطينيين في تعداد 2023</text>
+
+    <line x1="100" y1="606" x2="740" y2="606" stroke="#3a3b40" stroke-width="2"/>
+
+    <text x="100" y="648" class="sans ivory body">Counts are randomly rounded, and a person</text>
+    <text x="100" y="676" class="sans ivory body">may be counted in more than one group</text>
+    <text x="100" y="704" class="arabic muted tiny">الأرقام مدوّرة عشوائياً ويُحتسب الشخص في أكثر من أصل</text>
+
+    <text x="100" y="752" class="sans ivory body">No Palestinian restaurant existed in the</text>
+    <text x="100" y="780" class="sans ivory body">country before this one</text>
+    <text x="100" y="812" class="arabic muted tiny">لم يكن في البلاد مطعم فلسطيني قبله</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="830" y="408" width="700" height="430" rx="18" fill="#27282c" stroke="#61aa80" stroke-width="2"/>
+    <text x="860" y="452" class="sans green label">THE VISA FILE, AS AT 4 OCTOBER 2026</text>
+    <text x="1500" y="452" class="arabic muted small" text-anchor="end">ملف التأشيرات حتى 4 أكتوبر</text>
+
+    <text x="860" y="506" class="sans ivory body">Applications since 7 October 2023</text>
+    <text x="1500" y="506" class="sans gold body" font-weight="700" text-anchor="end">607</text>
+    <text x="860" y="532" class="arabic muted tiny">طلبات حاملي الجواز الفلسطيني منذ 7 أكتوبر 2023</text>
+
+    <text x="860" y="578" class="sans ivory body">Approved</text>
+    <text x="1500" y="578" class="sans green body" font-weight="700" text-anchor="end">426</text>
+    <text x="860" y="604" class="arabic muted tiny">موافقات</text>
+
+    <text x="860" y="650" class="sans ivory body">Declined</text>
+    <text x="1500" y="650" class="sans red body" font-weight="700" text-anchor="end">130</text>
+    <text x="860" y="676" class="arabic muted tiny">رفض</text>
+
+    <rect x="846" y="700" width="668" height="52" rx="8" fill="#1d3a2a"/>
+    <text x="860" y="734" class="sans green body" font-weight="700">Arrived in New Zealand</text>
+    <text x="1500" y="734" class="sans green body" font-weight="700" text-anchor="end">134</text>
+
+    <text x="860" y="786" class="sans ivory small">No conflict-specific visa pathway was created;</text>
+    <text x="860" y="810" class="sans ivory small">the 1,500-place refugee quota remains the route</text>
+    <text x="860" y="834" class="arabic muted tiny">لا مسار تأشيرة خاص بالحرب وحصة اللجوء 1500 مكان هي الطريق</text>
+  </g>
+
+  <text x="90" y="882" class="sans muted tiny">Times of Palestine · research: Stats NZ 2023 Census (released October 2024); Immigration New Zealand, figures as at 4 October 2026</text>
+</svg>

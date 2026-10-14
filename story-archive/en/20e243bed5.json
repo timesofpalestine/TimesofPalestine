@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli authorities demolished 80 structures in Al-Dahiya village in the Negev Desert, displacing approximately 400 Palestinians, Al Jazeera English reported. The demolitions targeted residential and other buildings in the community.\n\nThe operation marks the latest in a series of demolitions affecting Palestinian communities in the Negev region, where Israel's Bedouin population faces longstanding disputes over land rights and settlement designations.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/12/israel-demolitions-in-negev-displace-400-palestinians?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/165832/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%B4%D8%B1-%D8%AF-%D9%86%D8%AD%D9%88-400-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A-%D8%A8%D9%87%D8%AF%D9%85-80-%D9%85%D9%86%D8%B2%D9%84-%D8%A7-%D9%88%D9%85%D8%B3%D8%AC%D8%AF-%D8%A7-%D9%81%D9%8A-%D9%82%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%B8%D8%AD%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D9%86%D9%82%D8%A8",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-12T20:50:37+00:00",
+ "dek": "Israeli authorities have demolished 80 structures in Al-Dahiya village in Israel’s Negev Desert…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1791838227.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/12/israel-demolitions-in-negev-displace-400-palestinians?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/12/israel-demolitions-in-negev-displace-400-palestinians?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "20e243bed5",
+ "score": 43.17,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel demolishes 80 structures in Negev village, displacing 400 Palestinians"
+}

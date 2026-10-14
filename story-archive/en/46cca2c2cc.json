@@ -1,0 +1,33 @@
+{
+ "brief": "France on Sunday expressed regret over Palestinian President Mahmoud Abbas's decision to postpone legislative elections originally scheduled for November, the Palestine News Network reported. The French government called on Palestinian leadership to reverse the delay and hold the vote as soon as possible.\n\nThe postponement marked a setback for efforts to restore democratic processes in the Palestinian territories, where legislative elections had not been held since 2006.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://english.pnn.ps/news/48350",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-11T20:36:00+00:00",
+ "dek": "PARIS / PNN / France on Sunday expressed regret over the decision by Palestinian President Mahmoud Abbas to postpone legislative elections scheduled for Nov.",
+ "dup_of": null,
+ "image": "https://media.pnn.ps/english/storage/images/news/2026/1791751175-1640636801.jpeg",
+ "lang": "en",
+ "link": "https://english.pnn.ps/news/48350",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Palestine News Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://english.pnn.ps/news/48350"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "46cca2c2cc",
+ "score": 0.02,
+ "source": "Palestine News Network",
+ "source_id": "pnn",
+ "source_url": "https://english.pnn.ps/",
+ "title": "France urges Abbas to hold delayed Palestinian elections"
+}
