@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/israel-kills-18-palestinians-including-a-woman-and-a-child-and-continues-to-demolish-homes-and-forcibly-displace-palestinians-in-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "http://www.democracynow.org/2026/10/14/israel_raids_west_bank_ngos",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-14T18:18:01+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "5dc5aa4d3b",
- "score": 84.35,
+ "score": 84.33,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
