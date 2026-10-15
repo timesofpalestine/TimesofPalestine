@@ -1,5 +1,5 @@
 {
- "brief": "Social media posts and news articles circulated this week claiming Google had updated satellite imagery of Gaza, according to Bellingcat. The images, which show areas including the southern city of Rafah, depict extensive destruction with entire neighbourhoods appearing flattened.\n\nThe viral posts did not specify when the satellite imagery was captured or provide details about the timing of Google's update.",
+ "brief": "Google Maps satellite imagery showing extensive destruction across Gaza circulated widely on social media and in news articles this week. The images depict what appear to be entire neighbourhoods reduced to rubble, including areas in the southern city of Rafah, according to Bellingcat.\n\nClaims about a Google imagery update prompted the wide sharing of the photographs across social media platforms and in news reporting.",
  "cat": "research",
  "corroborating_sources": [
   {
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "079073a87f",
- "score": 56.41,
+ "score": 56.4,
  "source": "Bellingcat",
  "source_id": "bellingcat",
  "source_url": "https://www.bellingcat.com/",
- "title": "Google satellite images show widespread destruction across Gaza"
+ "title": "Google satellite images reveal Gaza destruction across multiple cities"
 }
