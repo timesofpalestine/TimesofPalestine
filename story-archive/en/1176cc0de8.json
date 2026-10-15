@@ -1,0 +1,33 @@
+{
+ "brief": "Israel has detained more than 2,000 Palestinian children since the beginning of 2023, Al Jazeera English reported. At least 350 children currently remain in Israeli custody, facing what advocates describe as harsh conditions.\n\nMore than 2,000 Palestinian children have passed through Israeli military and civilian prisons over the past two years, though details on charges, trial proceedings, and sentencing were not immediately specified in available reports.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/15/israel-has-detained-more-than-2000-palestinian-children-since-2023-report?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-15T04:43:15+00:00",
+ "dek": "At least 350 Palestinian children currently face 'harsh conditions' in Israeli prisons.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad03444-1792029764.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/15/israel-has-detained-more-than-2000-palestinian-children-since-2023-report?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/15/israel-has-detained-more-than-2000-palestinian-children-since-2023-report?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1176cc0de8",
+ "score": 49.75,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel detained over 2,000 Palestinian children since 2023"
+}
