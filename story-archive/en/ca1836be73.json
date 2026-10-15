@@ -6,7 +6,13 @@
    "article": "https://dawnmena.org/u-s-court-blocks-enforcement-of-icc-sanctions-against-groups-advocating-for-palestinian-rights",
    "name": "DAWN",
    "url": "https://dawnmena.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/us-news/2026/oct/14/judge-trump-icc-sanctions-gaza-war-crimes",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-13T21:01:50+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "ca1836be73",
- "score": 70.68,
+ "score": 70.67,
  "source": "DAWN",
  "source_id": "dawn",
  "source_url": "https://dawnmena.org/",
