@@ -1,0 +1,33 @@
+{
+ "brief": "The World Health Organization called for urgent action to promote, provide and protect health across the Eastern Mediterranean region, UN News reported. The appeal targets a zone encompassing some of the world's most severe humanitarian emergencies, including Sudan, Yemen, and the Occupied Palestinian Territory.\n\nThe WHO's emphasis on health interventions comes as the Eastern Mediterranean faces compounding crises that have strained medical systems and left millions without adequate healthcare access.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168590",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-14T12:00:00+00:00",
+ "dek": "The head of the World Health Organization (WHO) has called for promoting, providing and protecting health in the Eastern Mediterranean region, home to some of the world’s top humanitarian crises such as Sudan, Yemen and the Occupied Palestinian Territory.",
+ "dup_of": null,
+ "image": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/08/13-08-2026-UNICEF-Gaza-01.jpg/image560x340cropped.jpg",
+ "lang": "en",
+ "link": "https://news.un.org/feed/view/en/story/2026/10/1168590",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "UN News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://news.un.org/feed/view/en/story/2026/10/1168590"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "635571001f",
+ "score": 39.16,
+ "source": "UN News",
+ "source_id": "unnews",
+ "source_url": "https://news.un.org/",
+ "title": "WHO demands urgent health action in crisis-stricken Eastern Mediterranean"
+}
