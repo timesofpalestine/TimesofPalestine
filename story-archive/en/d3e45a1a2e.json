@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/us-news/2026/oct/14/israel-trump-peace-board-gaza-base",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/board-peace-plan-stalled-israel-blocks-gaza-outpost-construction-report",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-14T19:19:52+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "d3e45a1a2e",
- "score": 39.72,
+ "score": 39.45,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
