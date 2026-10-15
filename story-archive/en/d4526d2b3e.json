@@ -1,0 +1,45 @@
+{
+ "brief": "Faber and Faber has withdrawn Sally Rooney's books from sale in the UK, according to Al Jazeera English. The publisher cited \"circumstances where Faber cannot pass on UK earnings to Sally Rooney\" as the reason for the move.\n\nRooney, an Irish author of novels including \"Normal People\" and \"Intermezzo,\" has publicly supported Palestine Action, a direct-action group. The withdrawal affects her existing titles in the British market and comes as the publisher navigates the author's stated positions on the Israeli-Palestinian conflict.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/15/sally-rooney-withdraws-books-from-uk-over-palestine-action-support?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/trending/sally-rooneys-books-be-withdrawn-sale-uk-over-palestine-action-support",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/books/2026/oct/15/sally-rooneys-stand-on-palestine-is-brave-and-humane",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-15T12:53:49+00:00",
+ "dek": "Publisher Faber says withdrawal due to 'circumstances where Faber cannot pass on UK earnings to Sally Rooney'.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/GettyImages-689411168-1792043988.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/15/sally-rooney-withdraws-books-from-uk-over-palestine-action-support?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/15/sally-rooney-withdraws-books-from-uk-over-palestine-action-support?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d4526d2b3e",
+ "score": 49.76,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Publisher halts UK sales of Sally Rooney books over Palestine support"
+}
