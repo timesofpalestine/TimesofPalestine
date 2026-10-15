@@ -1,0 +1,39 @@
+{
+ "brief": "Israel has halted the entry of commercial shipments into Gaza, cutting off supplies including fruit and winter clothing that residents depend on, Al Jazeera reported. The blockade affects a significant revenue stream for the territory amid an ongoing humanitarian crisis.\n\nHamas denied claims that it collects taxes on goods entering Gaza. The movement's statements came as the commercial restrictions tightened constraints on the already-limited flow of essential items into the enclave.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/15/israel-halts-commercial-goods-from-entering-gaza-hamas-denies-tax-claims?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israel-says-commercial-goods-no-longer-entering-gaza-after-merchants-suspend",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-15T21:57:58+00:00",
+ "dek": "The halt to commercial shipments, including fruit and winter clothing, cuts off a key source of critical supplies.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ad134ad9b-1792095405.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/15/israel-halts-commercial-goods-from-entering-gaza-hamas-denies-tax-claims?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/15/israel-halts-commercial-goods-from-entering-gaza-hamas-denies-tax-claims?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9439bfa5a3",
+ "score": 49.53,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel blocks commercial goods entering Gaza"
+}

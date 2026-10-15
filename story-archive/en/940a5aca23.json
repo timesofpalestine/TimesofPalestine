@@ -19,12 +19,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "http://www.democracynow.org/2026/10/14/israel_raids_west_bank_ngos",
-   "name": "Democracy Now!",
-   "url": "https://www.democracynow.org/",
-   "verified": true
   }
  ],
  "date": "2026-10-15T20:50:00+00:00",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "940a5aca23",
- "score": 63.02,
+ "score": 62.75,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
