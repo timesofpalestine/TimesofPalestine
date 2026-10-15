@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/features/2026/10/15/our-works-are-next-to-each-other-art-bridges-gaza-and-west-bank?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48353",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-15T08:37:41+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "9b347d6e74",
- "score": 49.46,
+ "score": 49.24,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
