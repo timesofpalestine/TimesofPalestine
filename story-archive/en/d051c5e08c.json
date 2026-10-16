@@ -1,0 +1,33 @@
+{
+ "brief": "Drop Site News reported that Israeli attacks on Palestinian olive groves have reached record levels. The assaults have intensified amid ongoing tensions in the occupied territories, with damage to agricultural infrastructure affecting Palestinian farming communities.\n\nThe attacks come as regional violence continues across multiple fronts, with additional reports of an armed teen opening fire at an Oregon school, killing children, and Poland scrambling fighter jets in response to Russian strikes.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.dropsitenews.com/p/israel-settlers-west-bank-olive-oregon-school-shooting-poland-russia-jets",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-16T15:28:56+00:00",
+ "dek": "Drop Site Daily: October 16, 2026…",
+ "dup_of": null,
+ "image": "https://substackcdn.com/image/fetch/$s_!wHUs!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9370edd-1993-45a3-b3eb-3d0beb253801_8192x5464.heic",
+ "lang": "en",
+ "link": "https://www.dropsitenews.com/p/israel-settlers-west-bank-olive-oregon-school-shooting-poland-russia-jets",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Drop Site News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.dropsitenews.com/p/israel-settlers-west-bank-olive-oregon-school-shooting-poland-russia-jets"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d051c5e08c",
+ "score": 60.86,
+ "source": "Drop Site News",
+ "source_id": "dropsite",
+ "source_url": "https://www.dropsitenews.com/",
+ "title": "Israeli forces conduct record attacks on Palestinian olive groves"
+}
