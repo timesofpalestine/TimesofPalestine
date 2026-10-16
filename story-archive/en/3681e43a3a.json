@@ -9,19 +9,13 @@
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-burn-olive-trees-injure-journalist-west-bank-attack",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/news/palestinians-wounded-us-journalist-hospitalised-after-coordinated-attack-masked-israeli",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-attacks-injures-several-west-bank-including-washington-post",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
@@ -30,6 +24,12 @@
    "article": "https://english.pnn.ps/news/48355",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/washington-post-journalist-hospitalized-after-israeli-settler-attack-west-bank",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
    "verified": true
   },
   {
@@ -46,7 +46,7 @@
   }
  ],
  "date": "2026-10-16T13:04:32+00:00",
- "dek": "At least two people, including Washington Post journalist, injured as settlers armed with clubs and guns attack.",
+ "dek": "At least two people, including a Washington Post journalist, injured as settlers armed with clubs and guns attack.",
  "dup_of": null,
  "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad211548022-1792151892.jpg?resize=1920%2C1440",
  "lang": "en",
@@ -61,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "3681e43a3a",
- "score": 60.45,
+ "score": 60.18,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
