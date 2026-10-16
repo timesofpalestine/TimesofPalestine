@@ -1,0 +1,51 @@
+{
+ "brief": "An American photojournalist witnessed an assault by masked Israeli settlers on an olive grove in Abu Falah, the occupied West Bank, on Friday, The Guardian reported. At least six people were injured when the settlers descended on the site in a coordinated movement across the area.\n\nThe attackers burned cars and trees as part of what appeared to be a deliberate effort to disrupt the annual olive harvest, a critical economic activity for Palestinian communities in the region.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-condemns-criminal-violence-west-bank-after-settler-attack-washington",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/washington-post-journalist-hospitalized-after-israeli-settler-attack-west-bank",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48354",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-16T16:33:36+00:00",
+ "dek": "At least six people were injured when a group of masked Israeli settlers descended on an olive grove in Abu Falah, in the occupied West Bank, on Friday, in a coordinated movement across the area to disrupt the annual olive harvest by burning cars and trees.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/ecb359b3da333c567c87482816b22eae8e34793a/1011_0_909_727/master/909.jpg?width=140&quality=85&auto=format&fit=max&s=bf011d5f46450404659731ab76451576",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "be770ae19d",
+ "score": 61.87,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli settlers attack olive harvest in occupied West Bank"
+}

@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/news/wife-british-pms-top-adviser-backs-sally-rooney-after-books-withdrawn-over-palestine-action",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/books/2026/oct/15/sally-rooneys-stand-on-palestine-is-brave-and-humane",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -24,20 +18,20 @@
  "date": "2026-10-16T16:54:49+00:00",
  "dek": "We asked students what they think.",
  "dup_of": null,
- "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792169557.jpg?resize=1920%2C1080&quality=80",
+ "image": "/media/times-of-palestine-cover-news.svg",
  "lang": "en",
  "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/sally-rooney-cant-sell-her-books-in-uk-over-support-for-palestine-action?traffic_source=rss",
  "max_age_hours": 72,
  "media": {
-  "credit": "Al Jazeera English",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/16/sally-rooney-cant-sell-her-books-in-uk-over-support-for-palestine-action?traffic_source=rss"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "ef98e60e84",
- "score": 48.37,
+ "score": 48.11,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
