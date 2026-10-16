@@ -1,0 +1,51 @@
+{
+ "brief": "Palestinian farmers endured fresh attacks on their olive groves as Jewish settlers set trees and vehicles ablaze during the annual harvest, Al Jazeera English reported. The incidents mark an escalation in settler violence targeting Palestinians in the occupied West Bank, occurring as communities gathered crops that represent a vital source of income and cultural heritage.\n\nThe burnings coincided with the peak harvest period, when Palestinian families traditionally work together to gather olives before processing them into oil. Settlers have intensified pogroms against Palestinian communities in recent months, with attacks on agricultural land among the most damaging to livelihoods and food security.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/16/palestinian-olive-trees-torched-as-settler-pogroms-escalate-during-harvest?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/37354",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-burn-olive-trees-injure-journalist-west-bank-attack",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-set-vehicles-fire-during-attack-west-bank-report-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-16T10:27:20+00:00",
+ "dek": "It is Palestine’s olive harvest, but settlers have set their trees and vehicles on fire.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Screenshot-2026-10-16-at-11.19.25-1792146104.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/palestinian-olive-trees-torched-as-settler-pogroms-escalate-during-harvest?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/16/palestinian-olive-trees-torched-as-settler-pogroms-escalate-during-harvest?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b1ef1b0119",
+ "score": 63.73,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Settlers torch Palestinian olive trees during harvest season"
+}
