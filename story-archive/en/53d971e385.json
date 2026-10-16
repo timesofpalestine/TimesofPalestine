@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/10/china-says-israel-should-stop-its-forced-establishment-west-bank-settlements",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/china-says-israel-should-stop-forced-establishment-west-bank-settlements",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-16T01:46:27+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "53d971e385",
- "score": 49.94,
+ "score": 49.41,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
