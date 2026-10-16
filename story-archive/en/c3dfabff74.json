@@ -1,0 +1,45 @@
+{
+ "brief": "China's foreign minister called on Israel to stop the \"forced establishment\" of West Bank settlements, describing the Palestinian situation as \"the greatest historical injustice of this century,\" Al Jazeera English reported. The statement represents a sharp criticism of Israeli policy in the occupied territory.\n\nThe remarks place China among countries voicing opposition to Israeli settlement expansion in the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/16/china-tells-israel-to-stop-forced-establishment-of-west-bank-settlements?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/china-says-israel-should-stop-forced-establishment-west-bank-settlements",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/china-says-israel-should-stop-its-forced-establishment-west-bank-settlements",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-16T02:56:21+00:00",
+ "dek": "'The Palestinian question is the greatest historical injustice of this century,' China's foreign minister said.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/getty_6aaa7e7bce-1789558395.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/16/china-tells-israel-to-stop-forced-establishment-of-west-bank-settlements?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/16/china-tells-israel-to-stop-forced-establishment-of-west-bank-settlements?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c3dfabff74",
+ "score": 49.77,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "China demands Israel halt West Bank settlement expansion"
+}
