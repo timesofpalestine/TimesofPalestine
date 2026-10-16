@@ -13,6 +13,24 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-burn-olive-trees-injure-journalist-west-bank-attack",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settler-attacks-injures-several-west-bank-including-washington-post",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48354",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-16T10:27:20+00:00",
@@ -31,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "b1ef1b0119",
- "score": 61.68,
+ "score": 61.5,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

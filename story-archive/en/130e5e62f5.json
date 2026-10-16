@@ -1,0 +1,33 @@
+{
+ "brief": "Canadian cybersecurity monitor Citizen Lab disclosed that approximately 45 Windows devices belonging to Al Jazeera's network were compromised and subjected to surveillance using advanced Israeli spyware, Shehab Wire reported. The intrusions occurred between two unspecified years using sophisticated software tools.\n\nThe discovery adds to documented cases of targeted hacking against media outlets and journalists in the Middle East. Israeli surveillance technology has faced international scrutiny following revelations of its deployment against civil society organizations and press operations across the region.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.com/post/166040/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D9%8A%D9%83%D8%B4%D9%81-%D8%A7%D8%AE%D8%AA%D8%B1%D8%A7%D9%82%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A7-%D9%84%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-%D8%B5%D8%AD%D9%81%D9%8A%D9%8A%D9%86-%D9%81%D9%8A-%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-16T13:54:00+00:00",
+ "dek": "Canadian cybersecurity monitor Citizen Lab disclosed that approximately 45 Windows devices belonging to Al Jazeera's network were compromised and subjected to surveillance using advanced Israeli spyware, Shehab Wire…",
+ "dup_of": null,
+ "image": "https://shehabnews.com/thumb/1200x630/uploads/images/2026/10/EMXGl.jpg?v=1",
+ "lang": "en",
+ "link": "https://shehabnews.com/post/166040/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D9%8A%D9%83%D8%B4%D9%81-%D8%A7%D8%AE%D8%AA%D8%B1%D8%A7%D9%82%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A7-%D9%84%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-%D8%B5%D8%AD%D9%81%D9%8A%D9%8A%D9%86-%D9%81%D9%8A-%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Shehab Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.com/post/166040/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D9%8A%D9%83%D8%B4%D9%81-%D8%A7%D8%AE%D8%AA%D8%B1%D8%A7%D9%82%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A7-%D9%84%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-%D8%B5%D8%AD%D9%81%D9%8A%D9%8A%D9%86-%D9%81%D9%8A-%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "130e5e62f5",
+ "score": 34.89,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "Israeli spyware breaches 45 Al Jazeera journalist devices"
+}
