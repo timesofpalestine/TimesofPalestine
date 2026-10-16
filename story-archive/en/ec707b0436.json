@@ -1,0 +1,33 @@
+{
+ "brief": "Ma'an news agency reported that Israeli military vehicles stationed north of Rafah opened fire on the Bir 19 area south of Khan Younis, killing a woman. An Israeli airstrike on the al-Nasr neighborhood of Gaza City killed a man in a separate incident.\n\nThe deaths occurred as Israeli forces maintained a presence across southern Gaza following weeks of military operations in the strip.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37358",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-16T19:13:01+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/M-BEgR2oFvSXFdDUBPofzCDO8Cb7XQFDe6ozD8Szlsq_28gGKNGqC5g57wSagV2sdUsiHGoJpiJlBJTJ7E5oq1_Mn3dSY5jttZmfLw0EiK60VpQ8nFEEN17SgeTuj1DZj7vlfuzZ60L2UAXyeKoml1Y6ouAhGzwhnwb3NUPcP2FXi0fjlJbuauX72cj7gYQO_cgNoSZifhcc2vRtzaUzzOGJfNUJQXFwiJq1UE_EmSXfj9h3eMqCeUAZ55g9oAjQFCMSVAoCMiVn0wkRuq0rMfCcxOpHzKe4PnjANPrYQXe2r3hTLytJFpKa3YkTCYP79MifJ4Z-u6QUI5EddsLQ7g.jpg",
+ "lang": "en",
+ "link": "https://t.me/maannews/37358",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37358"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ec707b0436",
+ "score": 63.0,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli fire kills woman in Khan Younis, man in Gaza City"
+}
