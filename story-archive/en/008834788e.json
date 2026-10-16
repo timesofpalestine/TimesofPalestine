@@ -1,0 +1,33 @@
+{
+ "brief": "The United Nations is warning that nearly one million displaced Palestinians in Gaza face heightened flood risks as winter approaches, according to Al Jazeera English. Heavy rains during the winter months pose significant dangers to the displaced population, many of whom are sheltering in inadequate conditions.\n\nThe displaced residents already lack stable shelter and access to basic services. Winter weather could worsen living conditions and increase vulnerability to disease and other health emergencies among the vulnerable population.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/16/un-warns-nearly-1-million-in-gaza-face-flood-risks-as-winter-approaches?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-16T10:12:34+00:00",
+ "dek": "The UN is warning that nearly one million displaced Palestinians face flooding risks as winter approaches.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792145471.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/un-warns-nearly-1-million-in-gaza-face-flood-risks-as-winter-approaches?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/16/un-warns-nearly-1-million-in-gaza-face-flood-risks-as-winter-approaches?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "008834788e",
+ "score": 49.78,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN warns of flood risks to nearly 1 million displaced Palestinians"
+}
