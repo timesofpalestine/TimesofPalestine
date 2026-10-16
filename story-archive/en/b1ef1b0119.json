@@ -9,6 +9,24 @@
    "verified": true
   },
   {
+   "article": "https://english.pnn.ps/news/48355",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/166046/%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-200-%D9%87%D8%AC%D9%88%D9%85-%D9%84%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/israel-settlers-west-bank-olive-oregon-school-shooting-poland-russia-jets",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/maannews/37354",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
@@ -31,12 +49,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48354",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
   }
  ],
  "date": "2026-10-16T10:27:20+00:00",
@@ -55,7 +67,7 @@
  "modified": null,
  "original": false,
  "pid": "b1ef1b0119",
- "score": 60.59,
+ "score": 60.31,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
