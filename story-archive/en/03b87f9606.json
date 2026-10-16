@@ -1,0 +1,39 @@
+{
+ "brief": "Police are reviewing a social media post by Sarah Helm, a writer and wife of Jonathan Powell, the UK Prime Minister's National Security Adviser, Al Jazeera English reported. Helm expressed \"support\" for Palestine Action, an activist group that has targeted Israeli military suppliers in Britain.\n\nThe investigation centers on Helm's social media activity amid broader scrutiny of the group's tactics and their public backing by individuals in prominent positions.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/16/uk-pm-advisers-wife-expresses-support-for-palestine-action?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-police-assess-palestine-action-post-security-advisers-wife",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-16T18:26:08+00:00",
+ "dek": "Police reviewing social media post by writer Sarah Helm, wife of Burnham's National Security Adviser Jonathan Powell.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad2630f-1792172815.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/16/uk-pm-advisers-wife-expresses-support-for-palestine-action?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/16/uk-pm-advisers-wife-expresses-support-for-palestine-action?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "03b87f9606",
+ "score": 49.64,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UK national security adviser's wife voices support for Palestine Action"
+}
