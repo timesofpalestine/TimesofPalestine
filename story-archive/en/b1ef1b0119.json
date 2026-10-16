@@ -27,6 +27,12 @@
    "verified": true
   },
   {
+   "article": "https://www.theguardian.com/world/2026/oct/16/israeli-settlers-attack-olive-farmers-west-bank-washington-post-journalist-heidi-levine",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
    "article": "https://english.pnn.ps/news/48354",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
@@ -49,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "b1ef1b0119",
- "score": 61.5,
+ "score": 61.3,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
