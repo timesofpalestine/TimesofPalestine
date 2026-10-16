@@ -1,0 +1,33 @@
+{
+ "brief": "Al Jazeera English reported that Israel's upcoming election this month will shape the future of over 5.5 million Palestinians who cannot vote in the poll. The outcome is expected to influence policy toward Palestinian territories and populations under Israeli control or military administration.\n\nThe election results will carry consequences for Palestinians across the West Bank, Gaza Strip, and Palestinian communities within Israel, despite their exclusion from the electoral process.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/16/how-israels-elections-will-affect-palestinians?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-16T07:04:54+00:00",
+ "dek": "How Israel votes this month will shape the future of over 5.5 million Palestinians who have no say in the election.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Screenshot-2026-10-16-at-08.01.02-1792134179.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/16/how-israels-elections-will-affect-palestinians?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/16/how-israels-elections-will-affect-palestinians?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c274c7d6e7",
+ "score": 49.86,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli election will determine Palestinian futures, analysts say"
+}
