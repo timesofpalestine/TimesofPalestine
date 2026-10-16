@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/news/palestinians-wounded-us-journalist-hospitalised-after-coordinated-attack-masked-israeli",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -24,18 +30,6 @@
    "article": "https://english.pnn.ps/news/48355",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/oct/16/israeli-settlers-attack-olive-farmers-west-bank-washington-post-journalist-heidi-levine",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://shehabnews.com/post/166046/%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-200-%D9%87%D8%AC%D9%88%D9%85-%D9%84%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9",
-   "name": "Shehab Wire (EN)",
-   "url": "https://shehabnews.com/",
    "verified": true
   },
   {
@@ -67,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "3681e43a3a",
- "score": 61.69,
+ "score": 61.41,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
