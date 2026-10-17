@@ -6,13 +6,37 @@
    "article": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/west-bank-settlers-attack-palestinians-western-diplomats-belgium-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-attack-diplomatic-delegation-west-bank-including-french-consul",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48355",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-17T12:48:03+00:00",
- "dek": "Attacks follow a religious edict by a prominent far-right rabbi permitting the seizure of Palestinian olives.",
+ "dek": "Four Palestinian women and a child are among those injured in separate ongoing Israeli assaults and pogroms.",
  "dup_of": null,
- "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-16T094210Z_503381275_RC254OAOMY72_RTRMADP_3_ISRAEL-PALESTINIANS-SETTLERS-ATTACK-1792230965.jpg?resize=1920%2C1440",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ad3ac8c69-1792257164.jpg?resize=1920%2C1440",
  "lang": "en",
  "link": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom?traffic_source=rss",
  "max_age_hours": 72,
@@ -25,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "a69fbb06ca",
- "score": 60.95,
+ "score": 60.75,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
