@@ -13,6 +13,12 @@
    "name": "UN News",
    "url": "https://news.un.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-killed-israeli-strikes-across-gaza-day",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-17T18:26:59+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "7572c5519f",
- "score": 63.66,
+ "score": 63.49,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
