@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/10/16/uk-pm-advisers-wife-expresses-support-for-palestine-action?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-police-assess-palestine-action-post-security-advisers-wife",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-16T18:26:08+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "03b87f9606",
- "score": 46.16,
+ "score": 46.0,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
