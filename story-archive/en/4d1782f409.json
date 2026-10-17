@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli settlers attacked Palestinian farmers and journalists in the Jerusalem area, according to Al Jazeera English, with some farmers sustaining severe injuries in the incident. The violence marked the latest in an escalating pattern of settler attacks on Palestinians.\n\nThe assault targeted both agricultural workers tending their land and members of the press documenting activities in the region. Journalists and farmers operating in areas affected by settler activity face regular threats and physical danger.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/17/aje-onl-nf_yt-dnrbltn-261017-salehm-jerusalem_daily-171026?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-17T17:18:50+00:00",
+ "dek": "After Israeli settlers beat and severely wounded Palestinian farmers, settler violence continues.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792257489.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/17/aje-onl-nf_yt-dnrbltn-261017-salehm-jerusalem_daily-171026?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/17/aje-onl-nf_yt-dnrbltn-261017-salehm-jerusalem_daily-171026?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4d1782f409",
+ "score": 63.36,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers attack Palestinian farmers and journalists in Jerusalem"
+}
