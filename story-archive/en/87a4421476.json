@@ -6,13 +6,7 @@
    "article": "https://news.un.org/feed/view/en/story/2026/10/1168611",
    "name": "UN News",
    "url": "https://news.un.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/over-340-palestinian-children-killed-gaza-ceasefire-unicef",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-16T12:00:00+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "87a4421476",
- "score": 51.6,
+ "score": 51.42,
  "source": "UN News",
  "source_id": "unnews",
  "source_url": "https://news.un.org/",
