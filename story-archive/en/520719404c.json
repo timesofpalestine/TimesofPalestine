@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/10/italy-names-senior-israelis-katz-probe-over-gaza-flotilla-activists",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/italy-widens-flotilla-torture-probe-include-israeli-defence-minister",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-16T14:46:29+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "520719404c",
- "score": 43.46,
+ "score": 43.09,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
