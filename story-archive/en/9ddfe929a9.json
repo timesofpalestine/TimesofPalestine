@@ -15,9 +15,39 @@
    "verified": true
   },
   {
+   "article": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/west-bank-settlers-attack-palestinians-western-diplomats-belgium-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-attack-diplomatic-delegation-west-bank-including-french-consul",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48354",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
    "article": "https://www.dropsitenews.com/p/israel-settlers-west-bank-olive-oregon-school-shooting-poland-russia-jets",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168599",
+   "name": "UN News",
+   "url": "https://news.un.org/",
    "verified": true
   }
  ],
@@ -37,7 +67,7 @@
  "modified": null,
  "original": false,
  "pid": "9ddfe929a9",
- "score": 45.6,
+ "score": 45.34,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
