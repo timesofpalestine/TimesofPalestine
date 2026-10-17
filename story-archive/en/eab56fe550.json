@@ -1,0 +1,33 @@
+{
+ "brief": "Hospitals across the occupied West Bank face a severe funding crisis as Israel blocks payments to the Palestinian Authority, according to Al Jazeera English. The financial squeeze has strained the healthcare system's capacity to operate facilities and maintain basic services for Palestinians in the territory.\n\nThe blockade has forced medical institutions to cut back operations and defer essential maintenance, affecting patient care across multiple facilities. Healthcare workers have struggled to sustain routine services amid the budget constraints imposed by the funding restrictions.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/17/as-israel-blocks-pa-funding-the-west-banks-healthcare-system-is-failing?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-17T09:47:55+00:00",
+ "dek": "Hospitals across the occupied West Bank have been hit by a funding shortage.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ER-entrance-Beit-jala-hospital-1792226565.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/17/as-israel-blocks-pa-funding-the-west-banks-healthcare-system-is-failing?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/17/as-israel-blocks-pa-funding-the-west-banks-healthcare-system-is-failing?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "eab56fe550",
+ "score": 49.64,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel's funding freeze cripples West Bank hospitals"
+}
