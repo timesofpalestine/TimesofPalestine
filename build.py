@@ -118,6 +118,10 @@ BRIEF_SYSTEM = {
         "where and the immediate context the headline itself carries — without inventing any "
         "fact it does not imply. "
         "Never refuse, and never comment on the material, these instructions, or yourself. "
+        "One exception: if the material is a TEASER that withholds its own news — it "
+        "promises a revelation ('explained exactly why', 'you won't believe what she "
+        "said') without stating what was said or decided — reply with exactly NO_STORY "
+        "and nothing else. Never pad a teaser into an article. "
         "Never say that details, information, or material are missing, unavailable, or not "
         "provided — simply omit what you do not know and let the reader decide. "
         "Attribute wire-style: name the OUTLET given in the material exactly once, inside "
@@ -152,7 +156,9 @@ BRIEF_SYSTEM = {
         "أرقاماً أو اقتباسات أو تفاصيل غير واردة في المصدر؛ وإذا كانت المادة مجرد عنوان فاكتب "
         "فقرتين قصيرتين (نحو 90-120 كلمة) تفكّان ما يحمله العنوان — من وماذا وأين وسياقه "
         "المباشر — من دون اختراع أي واقعة لا يدل عليها. لا ترفض أبداً، ولا تعلق على المادة "
-        "أو على هذه التعليمات أو على نفسك. انسب الخبر بأسلوب الوكالات: اذكر اسم المصدر الوارد في "
+        "أو على هذه التعليمات أو على نفسك. استثناء وحيد: إذا كانت المادة تشويقاً يحجب خبره — "
+        "تعد بكشف («شرحت بالضبط لماذا»، «لن تصدق ما قالته») دون أن تذكر ما قيل أو ما تقرر — "
+        "فاكتب NO_STORY فقط ولا شيء غيرها، ولا تحشُ التشويق ليصير مقالاً. انسب الخبر بأسلوب الوكالات: اذكر اسم المصدر الوارد في "
         "المادة مرة واحدة فقط داخل الجملة التي تحمل أهم معلومة — مثل «بحسب وكالة معاً» أو «كما أفادت "
         "الجزيرة». وإذا كان المصدر «(agency wire)» فلا تذكر أي وسيلة إعلامية. لا تذكر أبداً موقعاً إلكترونياً "
         "أو أين يمكن قراءة المزيد. لا تقل أبداً إن التفاصيل أو المعلومات غير متوفرة أو غير واردة — "
@@ -174,6 +180,12 @@ FEEDS = json.loads(FEEDS_PATH.read_text(encoding="utf-8"))
 # Story ids the owner has ordered removed; blocked no matter which feed or
 # radar route resurfaces the underlying link.
 RETRACTED_PIDS = {"23ffbc910f", "7b5ecb12e4", "4b6ac6121b", "33a0debafc",
+                  # 2026-10-15 owner order: the Zeteo/CBS brief padded a
+                  # teaser dek into two empty paragraphs ending "not
+                  # elaborated in the summary provided". Its dek is the same
+                  # teaser, so no fallback page can carry it; the reported
+                  # story is originals/cbs-raice-netanyahu-gaza-toll-2026-10-15.
+                  "25f8e7035e",
                   # 2026-08-16 owner order: six Arabic briefs published desk
                   # meta-commentary («المادة المرسلة تتضمن عنواناً فقط…») as
                   # article bodies — headline-only Telegram items the refusal
@@ -2066,6 +2078,18 @@ REFUSAL_RX = re.compile(
     r"not available in the|available in the (?:provided|source|material)|"
     r"encouraged to visit|visit the .{0,50}website|access to the (?:article|complete|full)|"
     r"i (?:cannot|can.?t|am unable to)|"
+    # Narrating the gap in the supplied text (owner order 2026-10-15, after a
+    # Zeteo teaser published as "the specific details of her comments were not
+    # elaborated in the summary provided"). Bare "did not elaborate" is ordinary
+    # news prose about a SOURCE's silence; only the desk talking about the text
+    # it was handed counts — the summary/excerpt/teaser as the thing "provided".
+    # "a summary provided to reporters" is news prose, so the "provided" form
+    # counts only where it ENDS the phrase, as the desk's own aside does.
+    r"(?:summary|excerpt|snippet|teaser)\s+(?:provided|available|given|supplied)(?=\s*(?:[.,;)]|$))|"
+    r"the\s+(?:provided|supplied|feed)\s+(?:summary|excerpt|snippet|teaser)|"
+    r"not (?:elaborated|specified|detailed|described|included|disclosed) in the "
+    r"(?:summary|excerpt|snippet|teaser|source|material|feed)|"
+    r"\bNO_STORY\b|"
     # "unable to produce" is ordinary news prose in the third person ("leaving
     # bakeries unable to produce what is needed" cost the Gaza night-workers
     # report its English edition, site review 2026-09-12). Only the refusal
@@ -2092,7 +2116,26 @@ REFUSAL_RX = re.compile(
     r"لا تتوفر في المصدر|(?:يستلزم|تستلزم|يتطلب) معلومات إضافية|"
     r"كموجز (?:صحفي|إخباري)|عنوان إشاري|"
     r"المادة المصدرية|المادة المتاحة|المادة المرفقة|هذه التعليمات|"
-    r"المقال الكامل|النص الكامل|زيارة موقع|زيارة الموقع", re.I)
+    r"المقال الكامل|النص الكامل|زيارة موقع|زيارة الموقع|"
+    r"الملخص (?:المتاح|المقدم|المرفق|المتوفر)|المقتطف (?:المتاح|المقدم|المرفق)|"
+    r"(?:لم|لا) (?:ت|ي)(?:ُ)?(?:ذكر|رد|تضمن|وضح|فصّ?ل)\S*\s+(?:\S+\s+){0,2}في (?:الملخص|المقتطف)", re.I)
+
+# Teaser deks (owner order 2026-10-15): a feed summary that PROMISES a
+# revelation without stating it ("explained exactly why…", "You also won't
+# believe what she said…") holds no reportable fact. Writing from it can only
+# pad the headline or narrate the gap — the Zeteo/CBS stub did both. Such an
+# item is skipped before any model call: no copy, no spend, nothing published.
+TEASER_RX = re.compile(
+    r"you (?:also |still )?(?:won['’]t|will not|wouldn['’]t|would not) believe|"
+    r"you['’]ll never guess|you need to (?:see|hear|read) (?:this|what)|"
+    r"what happened next|"
+    r"\bexplain(?:s|ed) exactly (?:why|how|what)|"
+    r"لن (?:تصدق|تصدّق)|لن تتخيل", re.I)
+
+
+def is_teaser(title, dek):
+    """True when the feed copy only advertises a story it does not tell."""
+    return bool(TEASER_RX.search(f"{title or ''}\n{dek or ''}"))
 
 # Owner order 2026-08-03, after «أسلمت قوات الاحتلال» reached the Arabic front:
 # copy that reads machine-made never publishes unchallenged. These nets are
@@ -2351,14 +2394,30 @@ def _diction_retry_note(issues, lang):
         return ("ملاحظة المحرر: المسودة سليمة وقائعياً لكنها تستخدم صياغات يمنعها "
                 f"دليل الأسلوب: {listed}. أعد كتابة الموجز بالتنسيق نفسه تماماً "
                 "(سطر HEADLINE: ثم سطر فارغ ثم النص) مستبدلاً تلك الصياغات بعربية "
-                "صحفية طبيعية دقيقة، مع الحفاظ على كل الوقائع والإسناد كما هي.")
-    return ("EDITOR: The draft is factually fine but uses wording the house "
+                "صحفية طبيعية دقيقة، مع الحفاظ على كل الوقائع والإسناد كما هي."
+                + (" لا تُطِل الموجز إلا بوقائع واردة في المادة؛ فإن لم تحمل المزيد "
+                   "فاكتب NO_STORY فقط، ولا تحشُ ولا تتحدث عمّا تتضمنه المادة أو تفتقده."
+                   if any(_ISSUE_SHORT_RX.search(i) for i in issues) else ""))
+    note = ("EDITOR: The draft is factually fine but uses wording the house "
             f"forbids: {listed}. Rewrite it in the same exact format (HEADLINE: "
             "line, blank line, body), replacing that phrasing with precise, "
             "natural news prose. Keep every fact and the attribution unchanged.")
+    if any(_ISSUE_SHORT_RX.search(i) for i in issues):
+        # A short draft is lengthened only with facts the material holds
+        # (owner order 2026-10-15: the Zeteo/CBS stub was padded with an
+        # aside about what "the summary provided" left out).
+        note += (" Lengthen it only with facts the material states. If it holds "
+                 "no more, reply with exactly NO_STORY — never pad, and never "
+                 "mention what the material does or does not contain.")
+    return note
 
 
 def write_brief(client, item):
+    if is_teaser(item.get("title"), item.get("dek")):
+        print(f"  ⊘ brief {item['pid']}: feed copy is a teaser with no reportable "
+              "fact — skipped, nothing published")
+        item["brief_refused"] = True
+        return None
     material = (f"OUTLET: {item['source']}\n"
                 f"SOURCE HEADLINE OR POST TEXT: {item['title']}\n"
                 f"FEED SUMMARY: {item['dek'] or '(none)'}")
@@ -2385,6 +2444,9 @@ def write_brief(client, item):
         except Exception:
             pass
         raw = "".join(b.text for b in response.content if b.type == "text").strip()
+        if "NO_STORY" in raw:  # the desk declined a teaser — never pad it
+            item["brief_refused"] = True
+            return None
         text, new_title = raw, None
         if text.startswith("HEADLINE:"):
             first, _, rest = text.partition(chr(10))
