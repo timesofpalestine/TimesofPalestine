@@ -21,6 +21,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-attack-diplomatic-delegation-west-bank-including-french-consul",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://english.pnn.ps/news/48354",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
@@ -30,12 +36,6 @@
    "article": "https://www.dropsitenews.com/p/israel-settlers-west-bank-olive-oregon-school-shooting-poland-russia-jets",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-arrest-two-palestinians-settlers-open-fire-farmers-west",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
    "verified": true
   },
   {
@@ -61,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "9ddfe929a9",
- "score": 47.82,
+ "score": 47.54,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
