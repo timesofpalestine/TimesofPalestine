@@ -1,0 +1,33 @@
+{
+ "brief": "عائلات فلسطينية في غزة تعاني من التشتت والفراق، بحسب المركز الفلسطيني للإعلام. أدى النزوح القسري المستمر إلى فصل أفراد العائلة الواحدة عن بعضهم، وحرمانهم من إعادة لمّ شملهم في ظل الظروف الإنسانية الحرجة.\n\nيُرجع المركز تفكك الروابط العائلية إلى موجات النزوح المتكررة والقيود المفروضة على الحركة، ما أثّر بشكل مباشر على البنية الاجتماعية للأسر الغزية، خاصة الأطفال والعاجزين عن الانتقال.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/17/1121127",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-17T16:35:50+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/17/1121127",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b12b9de49c",
+ "score": 49.1,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "غزة تشهد تفكك العائلات بسبب النزوح القسري"
+}
