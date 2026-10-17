@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://shehabnews.com/post/166071/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-3-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86-%D8%A8%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D8%B9%D9%84%D9%89-%D9%82%D8%A7%D8%B7%D9%81%D9%8A-%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86-%D9%81%D9%8A-%D9%86%D8%A7%D8%A8%D9%84%D8%B3-%D9%88%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D9%84%D9%87",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -24,12 +30,6 @@
    "article": "https://www.dropsitenews.com/p/israel-settlers-west-bank-olive-oregon-school-shooting-poland-russia-jets",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/my-son-has-always-feared-settlers-would-kill-me-photojournalist-recounts",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
    "verified": true
   },
   {
@@ -55,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "9ddfe929a9",
- "score": 49.36,
+ "score": 49.1,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
