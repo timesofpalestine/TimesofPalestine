@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/10/west-bank-settlers-attack-palestinians-western-diplomats-belgium-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-attack-diplomatic-delegation-west-bank-including-french-consul",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -49,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "b1c6785193",
- "score": 78.11,
+ "score": 77.85,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
