@@ -6,13 +6,7 @@
    "article": "https://www.alquds.co.uk/%d8%ba%d8%b2%d8%a9-%d8%b9%d8%a7%d8%a6%d9%84%d8%a7%d8%aa-%d8%aa%d9%88%d8%af%d9%91%d8%b9-%d8%ac%d8%ab%d8%a7%d9%85%d9%8a%d9%86-75-%d8%b4%d9%87%d9%8a%d8%af%d8%a7-%d8%a7%d9%86%d8%aa%d9%8f%d8%b4%d9%84",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/Palinfo/324666",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-17T19:39:47+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "a3664de690",
- "score": 61.69,
+ "score": 61.46,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",
