@@ -1,0 +1,39 @@
+{
+ "brief": "US President Donald Trump endorsed Benjamin Netanyahu for the upcoming Israeli parliamentary election, Al-Monitor reported. Trump, who has cultivated a close relationship with the Israeli prime minister, made the endorsement on Sunday.\n\nThe move aligns with Trump's pattern of backing allied leaders in foreign electoral contests. Netanyahu faces voters in the coming parliamentary poll, where his political future remains contested.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/trump-endorses-netanyahu-israeli-election",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-endorses-netanyahu-israels-upcoming-election",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-18T15:46:29+00:00",
+ "dek": "WASHINGTON, Oct 18 (Reuters) - US President Donald Trump endorsed his ally Benjamin Netanyahu on Sunday for the upcoming Israeli parliamentary election.",
+ "dup_of": null,
+ "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-10/2026-10-18T151238Z_1_LYNXMPEM9H0B2_RTROPTP_3_ISRAEL-ELECTION.JPG?h=c9f93661&itok=7ONs049q",
+ "lang": "en",
+ "link": "https://www.al-monitor.com/originals/2026/10/trump-endorses-netanyahu-israeli-election",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al-Monitor",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.al-monitor.com/originals/2026/10/trump-endorses-netanyahu-israeli-election"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "eb9e823df1",
+ "score": 49.86,
+ "source": "Al-Monitor",
+ "source_id": "almonitor",
+ "source_url": "https://www.al-monitor.com/",
+ "title": "Trump endorses Netanyahu ahead of Israeli election"
+}
