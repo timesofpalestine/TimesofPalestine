@@ -6,13 +6,7 @@
    "article": "https://www.al-monitor.com/originals/2026/10/trump-endorses-netanyahu-israeli-election",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-endorses-netanyahu-israels-upcoming-election",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-18T15:46:29+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "eb9e823df1",
- "score": 49.86,
+ "score": 49.69,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
