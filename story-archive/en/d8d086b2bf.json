@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli drone strike killed a young Palestinian man and wounded several others in the Jabalia refugee camp in northern Gaza on Saturday evening, Middle East Eye reported. The strike was among multiple incidents across the enclave that day.\n\nSix Palestinians were killed in the strikes overall, though additional details about the other incidents and casualties were not immediately available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-killed-israeli-strikes-across-gaza-day",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-17T19:04:22+00:00",
+ "dek": "Six Palestinians killed in Israeli strikes across Gaza in a day An Israeli drone strike killed a young Palestinian man and wounded several others in the Jabalia refugee camp in the northern Gaza Strip on Saturday evening, according to the Palestinian news…",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-killed-israeli-strikes-across-gaza-day",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d8d086b2bf",
+ "score": 57.05,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli strikes kill six Palestinians across Gaza in single day"
+}
