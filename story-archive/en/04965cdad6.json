@@ -1,0 +1,33 @@
+{
+ "brief": "A female prisoner held in Israeli custody faces severe conditions while in solitary confinement, according to Ma'an Wire. Details of her identity and the duration of her isolation remain unclear, though accounts indicate the confinement involves restricted access to basic amenities and limited contact with other detainees.\n\nThe prisoner's situation reflects broader concerns among human rights advocates regarding conditions in Israeli detention facilities, particularly for those held in isolation units.",
+ "cat": "women",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170726.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-18T10:01:17+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-women.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170726.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "04965cdad6",
+ "score": 49.22,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Female prisoner endures harsh isolation in Israeli detention"
+}
