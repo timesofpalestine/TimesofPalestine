@@ -9,21 +9,21 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-condemns-criminal-violence-west-bank-after-settler-attack-washington",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/washington-post-journalist-hospitalized-after-israeli-settler-attack-west-bank",
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-attack-palestinians-european-diplomats-west-bank-belgium-says",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
   },
   {
-   "article": "https://english.pnn.ps/news/48354",
+   "article": "https://english.pnn.ps/news/48358",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-644",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": true
   }
  ],
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "be770ae19d",
- "score": 58.85,
+ "score": 33.54,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
