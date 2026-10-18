@@ -6,37 +6,7 @@
    "article": "https://shehabnews.com/post/166101/%D9%85%D8%B5%D9%88%D8%B1%D8%A9-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%A8%D9%88%D8%B3%D8%AA-%D8%AA%D8%B1%D9%88%D9%8A-%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1-%D8%B9%D9%84%D9%8A%D9%87%D8%A7-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%88%D8%AA%D8%AA%D9%87%D9%85-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D8%A8%D8%AA%D8%B2%D9%8A%D9%8A%D9%81-%D8%A7%D9%84%D8%AD%D9%82%D9%8A%D9%82%D8%A9",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-attack-palestinians-european-diplomats-west-bank-belgium-says",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-attack-diplomatic-delegation-west-bank-including-french-consul",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48355",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/10/1168599",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-17T21:15:00+00:00",
@@ -55,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "4883a0d3c5",
- "score": 48.14,
+ "score": 47.88,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
