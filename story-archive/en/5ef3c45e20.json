@@ -13,12 +13,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-wants-israel-crack-down-settler-attacks-rubio-says",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-10-18T03:44:25+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "5ef3c45e20",
- "score": 45.69,
+ "score": 45.5,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
