@@ -21,9 +21,15 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-wants-israel-crack-down-settler-attacks-rubio-says",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-protesters-say-they-are-conducting-ethnic-cleansing-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48355",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
    "verified": true
   }
  ],
@@ -43,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "4d19a212ad",
- "score": 49.11,
+ "score": 48.86,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
