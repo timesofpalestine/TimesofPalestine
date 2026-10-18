@@ -6,11 +6,35 @@
    "article": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-protesters-say-they-are-conducting-ethnic-cleansing-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/video/2026/oct/16/american-photojournalist-israeli-settler-attack-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-attack-palestinians-european-diplomats-west-bank-belgium-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48355",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-18T00:00:11+00:00",
- "dek": "Fires reported on three tankers as masked settlers attack European politicians in the occupied West Bank.",
+ "dek": "Fires reported on three tankers, as masked settlers attack European politicians in the occupied West Bank.",
  "dup_of": null,
  "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-16T075903Z_490381858_RC264OAWKT14_RTRMADP_3_ISRAEL-PALESTINIANS-SETTLERS-ATTACK-1792284837.jpg?resize=1679%2C1080",
  "lang": "en",
@@ -25,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "a242c04ec3",
- "score": 49.34,
+ "score": 48.82,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
