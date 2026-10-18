@@ -19,12 +19,6 @@
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-smear-campaign-targeting-settlers-attack-french-mayor",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": false
   }
  ],
  "date": "2026-10-18T06:06:00+00:00",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "1fc823aea9",
- "score": 48.57,
+ "score": 48.31,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
