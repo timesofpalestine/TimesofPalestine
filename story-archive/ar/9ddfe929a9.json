@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/37366",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=218279&slug=%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-%D9%8A%D9%87%D8%A7%D8%AC%D9%85%D9%88%D9%86-%D9%82%D8%A7%D8%B7%D9%81%D9%8A-%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86-%D9%88%D9%8A%D8%B5%D9%8A%D8%A8%D9%88%D9%86-%D9%85%D8%B2%D8%A7%D8%B1%D8%B9%D9%8A%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
   }
  ],
  "date": "2026-10-17T10:29:24+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "9ddfe929a9",
- "score": 35.8,
+ "score": 35.64,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
