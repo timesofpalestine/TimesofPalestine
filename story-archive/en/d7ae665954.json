@@ -1,0 +1,39 @@
+{
+ "brief": "A European diplomat rejected Prime Minister Benjamin Netanyahu's skepticism about documentation of a settler attack, asserting that evidence of the incident is clear, the Maan news agency reported. Netanyahu had questioned accounts of the violence, prompting the diplomat's response.\n\nThe exchange reflects mounting international concern over settler violence in the West Bank and disputes over documentation and accountability for such incidents.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170709.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48356",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-18T06:24:34+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%202018.jpg?width=640",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170709.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Benjamin Netanyahu — Wikimedia Commons / US State Department (public domain)",
+  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg",
+  "rightsBasis": "wikimedia-cc",
+  "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d7ae665954",
+ "score": 48.26,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "European diplomat rebuts Netanyahu over settler attack facts"
+}
