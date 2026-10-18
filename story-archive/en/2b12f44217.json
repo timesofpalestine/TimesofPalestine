@@ -1,0 +1,33 @@
+{
+ "brief": "The U.S. ambassador characterized an assault on a Washington Post photographer by Israeli settlers as an act of terrorism committed by cowards, according to Maan Wire. The photographer was attacked while covering events in the occupied West Bank.\n\nThe ambassador's statement represents a rare direct condemnation of settler violence from a senior U.S. official, using language typically reserved for formal designations of militant activity.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170703.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-18T06:26:36+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170703.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2b12f44217",
+ "score": 49.95,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "U.S. envoy calls settler attack on Washington Post photographer terrorism"
+}

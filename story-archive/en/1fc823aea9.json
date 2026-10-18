@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.maannews.net/news/2170709.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
    "article": "https://english.pnn.ps/news/48356",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "1fc823aea9",
- "score": 49.96,
+ "score": 49.71,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
