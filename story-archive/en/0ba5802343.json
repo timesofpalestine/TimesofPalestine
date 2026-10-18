@@ -1,0 +1,45 @@
+{
+ "brief": "Former U.S. President Donald Trump endorsed Israeli Prime Minister Benjamin Netanyahu in a social media post ahead of legislative elections scheduled for October 27, calling him a \"Strong, Brave, and Brilliant\" leader, Al Jazeera English reported. The endorsement came as Israelis prepare to vote on their government's composition.\n\nNetanyahu has faced domestic political pressure and legal challenges, including ongoing corruption trials. Trump and the Israeli premier have maintained a close relationship since Trump's presidency.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/18/trump-endorses-netanyahu-in-israeli-legislative-elections?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/trump-endorses-netanyahu-israeli-election",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-endorses-netanyahu-israels-upcoming-election",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-18T16:36:26+00:00",
+ "dek": "In a social media post ahead of the October 27 election, Trump calls Netanyahu a 'Strong, Brave, and Brilliant' leader.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/afp_6a84a378d96a-1787077496.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/18/trump-endorses-netanyahu-in-israeli-legislative-elections?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/18/trump-endorses-netanyahu-in-israeli-legislative-elections?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0ba5802343",
+ "score": 49.66,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Trump endorses Netanyahu ahead of Israeli election"
+}
