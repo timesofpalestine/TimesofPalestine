@@ -1,0 +1,33 @@
+{
+ "brief": "Gaza residents reported rising food prices and growing scarcity as Israel blocked commercial shipments into the territory, Al Jazeera English reported. Families described difficulty affording supplies as the restrictions tightened conditions in the enclave.\n\nThe halt on commercial imports compounds existing shortages, with residents warning of potential food crises ahead. Prices have surged as families struggle to stock extra provisions before supplies dwindle further.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/18/gaza-families-fear-food-shortages-as-israel-halts-commercial-shipments?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-18T13:16:13+00:00",
+ "dek": "Residents report rising prices as the latest restrictions bite, leaving families unable to afford extra supplies.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/7K0A8053-copy-1792324954.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/18/gaza-families-fear-food-shortages-as-israel-halts-commercial-shipments?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/18/gaza-families-fear-food-shortages-as-israel-halts-commercial-shipments?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "62dd303802",
+ "score": 49.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel halts commercial food shipments to Gaza, raising family hardship fears"
+}
