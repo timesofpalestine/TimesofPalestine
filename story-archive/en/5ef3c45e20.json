@@ -6,7 +6,19 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/10/18/rubio-wants-crackdown-on-settler-violence-after-us-journalist-attack?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/us-wants-israel-crack-down-settler-violence-west-bank-rubio-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-wants-israel-crack-down-settler-attacks-rubio-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-18T03:44:25+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "5ef3c45e20",
- "score": 46.41,
+ "score": 46.14,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
