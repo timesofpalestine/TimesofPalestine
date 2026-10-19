@@ -1,0 +1,33 @@
+{
+ "brief": "Settlers assaulted Palestinian residents and attempted to set fire to two homes near Ramallah, Maan Wire reported. The incident marks the latest in a pattern of settler violence against Palestinian communities in the occupied West Bank.\n\nDetails of injuries or damage were not immediately available. Israeli settlers have intensified attacks on Palestinian civilians and property in recent months across multiple areas of the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170779.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-19T08:58:57+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170779.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c949fb2e9e",
+ "score": 49.11,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settlers attack Palestinians, attempt to torch homes near Ramallah"
+}

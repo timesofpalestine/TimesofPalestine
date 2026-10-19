@@ -6,13 +6,13 @@
    "article": "https://www.aljazeera.net/sport/2026/10/19/%d8%ba%d9%88%d8%a7%d8%b1%d8%af%d9%8a%d9%88%d9%84%d8%a7-%d9%8a%d9%87%d8%a7%d8%ac%d9%85-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
   },
   {
    "article": "https://t.me/Arabi21News/429999",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": false
+   "verified": true
   }
  ],
  "date": "2026-10-19T05:22:00+00:00",
@@ -31,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "22b63e9fb0",
- "score": 60.84,
+ "score": 60.56,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
