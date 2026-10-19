@@ -6,13 +6,19 @@
    "article": "https://t.me/maannews/37427",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/10/states-must-act-as-israeli-state-driven-settler-violence-escalates-at-start-of-palestine-olive-harvest",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-19T13:14:38+00:00",
  "dek": "Palestinian farmers in Kafr Qaddum village, east of Qalqiliya, organized a collective olive harvest in what residents called \"olive mobilization,\" the Ma'an Wire reported.",
  "dup_of": null,
- "image": "https://cdn4.telesco.pe/file/pgEgUAsefczkbwsOl4bnXoEBMrxazh44lcnGNm3dRQMygFP_fjfgU5HTID6jYSvJjI3JccEfa35mTwxABeWMolJ1mpLRGoTFOT0o4Rd_eaPxfnM4gbOAegHLGHymDdSxzAJWCiju_6ljSP3MaBt_XNjoC37iE4e5kTuasYe47GJN4YLXZDsoDMDCpnKg-tzB99rH0zDhvYZxo8PagX2fBNjXSWYsgS8KoOrvGkvGpeDIyva05arlFqPHS7dKQuS-9sUAGTzvBQkIiszLB8yOXWJBNwiYzBh-Llu6p7pnOB65XngX9ZtdSzldUZdn8wEsWC_6P3UOSYgKJ9_CrwUjYw",
+ "image": "https://cdn4.telesco.pe/file/Jw_VQfg_2KcA7iuj63xhF8zKS8TjwfyfjanRA1od1RxMoLwnKWKrN9KT3JToInTO2l8TegfVC_bfv6qTYtCYdDdKepkYuQVrT-xibPLNBDlDqHz8j10TpXF5nYmUNjxJUeFGkh_MWgHVg2yXpm4Hk7iRY32DBGirgWqZX8sTixxpdSHBPNKj_K2Fd6R2qrVOUtGuPt411ZaiXia1wdfIPJh-dMJkFjAoNoaMTgWVli6287A_iB4z7WbQVvHnyPOlz55R5JreL_0cr2CTZjl2kL8oSrT7N_jxPwQUTiG04uVxKebheWmC-_eVIqpw9zk2fw7NA-NVJnYXNwvFigM8ZA",
  "lang": "en",
  "link": "https://t.me/maannews/37427",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "6c8bdc7393",
- "score": 48.59,
+ "score": 47.51,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

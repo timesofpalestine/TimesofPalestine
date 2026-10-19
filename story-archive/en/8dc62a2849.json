@@ -1,0 +1,57 @@
+{
+ "brief": "An Al Jazeera investigation has challenged the Israeli military's account of an incident involving West Bank settler violence, using map coordinates and timeline analysis to raise doubts about the official narrative. The investigation examined the circumstances surrounding an attack attributed to settlers, comparing geographical data and temporal sequences against statements from Israeli authorities.\n\nThe analysis suggests discrepancies between the reported timeline and physical evidence from the location, though specific details of the alleged incident remain under scrutiny. The investigation contributes to broader scrutiny of Israeli accounts of violence in occupied Palestinian territories.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/10/19/al-jazeera-investigation-challenges-israeli-account-of-heidi-levine-attack?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israel-announces-arrests-after-west-bank-settler-attacks-westerners",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israel-arrest-settlers-attacks-us-journalist-european-officials-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/18/guardian-reporter-filmed-masked-militants-seconds-before-west-bank-attack-on-french-mayor",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48358",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-19T12:28:27+00:00",
+ "dek": "Analysis of map coordinates and timelines raises doubts over official Israeli accounts of West Bank settler pogrom.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad25f21c406-1792171809.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/10/19/al-jazeera-investigation-challenges-israeli-account-of-heidi-levine-attack?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/10/19/al-jazeera-investigation-challenges-israeli-account-of-heidi-levine-attack?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8dc62a2849",
+ "score": 46.98,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Al Jazeera investigation questions Israeli account of Heidi Levine attack"
+}
