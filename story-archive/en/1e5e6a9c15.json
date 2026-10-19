@@ -9,15 +9,21 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/news/israel-arrest-settlers-attacks-us-journalist-european-officials-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/10/israeli-police-arrest-suspects-over-settler-attacks-us-journalist-european",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-police-arrest-suspects-over-settler-attacks-us-journalist",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
+   "article": "https://www.theguardian.com/world/2026/oct/18/guardian-reporter-filmed-masked-militants-seconds-before-west-bank-attack-on-french-mayor",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
    "verified": true
   }
  ],
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "1e5e6a9c15",
- "score": 48.78,
+ "score": 48.5,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
