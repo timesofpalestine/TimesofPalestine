@@ -1,0 +1,33 @@
+{
+ "brief": "Yuval Abraham and Rachel Szor have produced a documentary examining artificial intelligence systems used by the Israeli military in Gaza, The Guardian reported. The film, titled NAZA, features interviews with Israeli military insiders discussing how these AI-assisted systems operate and their role in civilian casualties.\n\nThe filmmakers characterize the Israeli government's response to their work as suppressive, suggesting officials do not want the documentary widely viewed. The project centers on accounts from military sources about the scope and application of automated targeting systems in the conflict.",
+ "cat": "arts",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/australia-news/audio/2026/oct/19/naza-the-film-the-israeli-government-does-not-want-you-to-see-full-story-podcast",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-18T14:00:01+00:00",
+ "dek": "Yuval Abraham and Rachel Szor on their new film interviewing Israeli military insiders on the vast, AI-assisted systems their sources say are being used to kill civilians in Gaza.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/360968daad1ab4150888d2f88c934b0c938ccd8b/312_0_1875_1500/master/1875.jpg?width=140&quality=85&auto=format&fit=max&s=05449a3d0571e0332a20a0673654ab8c",
+ "lang": "en",
+ "link": "https://www.theguardian.com/australia-news/audio/2026/oct/19/naza-the-film-the-israeli-government-does-not-want-you-to-see-full-story-podcast",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/australia-news/audio/2026/oct/19/naza-the-film-the-israeli-government-does-not-want-you-to-see-full-story-podcast"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d877517fcb",
+ "score": 55.47,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli filmmakers document military AI systems targeting Gaza civilians"
+}
