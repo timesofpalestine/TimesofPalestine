@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli police detained 10 people in a rare raid against settlers in the occupied West Bank, The Guardian reported. The operation followed a weekend of extreme violence in which a US photojournalist and a group of European diplomats and Palestinians were assaulted in separate incidents.\n\nThe detentions mark an uncommon enforcement action by Israeli authorities against settler violence, which has intensified in recent months across the territory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/19/israeli-police-detain-10-people-in-rare-raid-against-west-bank-settlers",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israel-announces-arrests-after-west-bank-settler-attacks-westerners",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israel-arrest-settlers-attacks-us-journalist-european-officials-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48358",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-19T18:05:14+00:00",
+ "dek": "Move comes after US photojournalist and group of European diplomats and Palestinians were assaulted in separate attacks Israeli police have detained 10 people in a rare raid against settlers, after a weekend of extreme violence in the occupied West Bank…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/15fcf4a1bba332f1c67f10f5ab91edc8a1fabcaf/654_38_3128_2502/master/3128.jpg?width=140&quality=85&auto=format&fit=max&s=f98ed382a875326cb21e659d32b63fb0",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/oct/19/israeli-police-detain-10-people-in-rare-raid-against-west-bank-settlers",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/oct/19/israeli-police-detain-10-people-in-rare-raid-against-west-bank-settlers"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5fb68263fc",
+ "score": 64.0,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli police detain 10 West Bank settlers after assault spree"
+}
