@@ -6,7 +6,25 @@
    "article": "https://www.al-monitor.com/originals/2026/10/us-officials-visit-palestinian-village-after-settler-attacks-diplomats",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-police-arrest-suspects-over-settler-attacks-us-journalist",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48358",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-18T15:46:29+00:00",
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "cd6d4e6a45",
- "score": 67.7,
+ "score": 67.43,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",

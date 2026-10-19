@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.maannews.net/news/2170770.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/10/world-food-programme-cuts-aid-500000-palestinians-gaza-citing-funding-shortages",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "0aaf8bb3a3",
- "score": 49.21,
+ "score": 48.94,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
