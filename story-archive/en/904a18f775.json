@@ -1,0 +1,33 @@
+{
+ "brief": "At least five Palestinians were killed by Israeli attacks in Gaza over the last 24 hours, the territory's health ministry reported, according to Middle East Eye. The deaths add to the mounting toll in the enclave since fighting intensified.\n\nNo additional details about the circumstances of the deaths or locations of the strikes were provided in the health ministry's report.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-after-five-palestinians-killed-last-24-hours",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-19T10:43:03+00:00",
+ "dek": "Gaza death toll rises after five Palestinians killed in last 24 hours At least five people were killed by Israeli attacks in Gaza in the last 24 hours, the territory's health ministry reported.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-b.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-after-five-palestinians-killed-last-24-hours",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "904a18f775",
+ "score": 62.0,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli attacks kill five Palestinians in Gaza in 24 hours"
+}
