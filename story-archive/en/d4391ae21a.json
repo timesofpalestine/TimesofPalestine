@@ -1,0 +1,57 @@
+{
+ "brief": "Palestinians in the occupied West Bank have begun organizing night watches to defend their homes and communities from settler violence, according to Al Jazeera English. The patrols represent a grassroots security response to what residents describe as escalating attacks on Palestinian property and residents by Israeli settlers.\n\nThe initiative reflects growing concerns among Palestinians about their safety in areas where Israeli settlements are located, as residents take responsibility for their own protection during nighttime hours when attacks have reportedly occurred with frequency.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/10/19/the-night-watch-palestinians-protecting-their-homes-from-settler-pogroms?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/us-officials-visit-palestinian-village-after-settler-attacks-diplomats",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48358",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-israeli-forces-detain-palestinian-teachers-and-issue",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-19T12:30:22+00:00",
+ "dek": "Palestinians in the occupied West Bank are organising to protect themselves from settler attacks.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Palestinians-in-Sinjil-make-night-guard-shifts-to-protect-the-town-from-settlers-attacks-Photo-by-Shadi-Hatim-1792329882.jpg?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/10/19/the-night-watch-palestinians-protecting-their-homes-from-settler-pogroms?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/10/19/the-night-watch-palestinians-protecting-their-homes-from-settler-pogroms?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d4391ae21a",
+ "score": 49.42,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians organize night patrols against settler attacks in West Bank"
+}
