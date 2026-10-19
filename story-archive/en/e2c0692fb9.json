@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://news.un.org/feed/view/en/story/2026/10/1168622",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
-  },
-  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/world-food-programme-stops-provision-half-million-people-gaza-over-lack",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -55,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "e2c0692fb9",
- "score": 46.67,
+ "score": 46.43,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
