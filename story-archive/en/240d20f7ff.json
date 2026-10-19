@@ -7,6 +7,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-basks-trump-endorsement-week-election",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-19T15:54:25+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "240d20f7ff",
- "score": 47.4,
+ "score": 47.18,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
