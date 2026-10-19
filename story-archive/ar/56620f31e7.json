@@ -1,0 +1,33 @@
+{
+ "brief": "غزة تعاني من وضع غذائي حرج، إذ تتفاقم مؤشرات الجوع في القطاع وسط تدهور الأوضاع الإنسانية. يشير الوصف \"على حافة الجوع\" إلى تطور الأزمة إلى مستويات حرجة تهدد سكان المنطقة بنقص حاد في الغذاء والمواد الأساسية.\n\nتعكس الأزمة تفاقم الحصار والقيود على دخول المساعدات الإنسانية والمؤن الغذائية إلى القطاع، الأمر الذي يرفع مخاطر المجاعة بين السكان المدنيين. تشكل الأوضاع الراهنة تهديداً مباشراً للأمن الغذائي وصحة السكان في غزة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/19/1121335",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-19T12:56:00+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/19/1121335",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "56620f31e7",
+ "score": 49.32,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "غزة تواجه أزمة غذائية حادة"
+}
