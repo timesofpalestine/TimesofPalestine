@@ -9,7 +9,19 @@
    "verified": true
   },
   {
-   "article": "https://english.pnn.ps/news/48355",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-attack-palestinians-military-conducts-raid-occupied",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/eu-condemns-attacks-violent-settlers-including-diplomats-spokesperson-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48358",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
    "verified": true
@@ -31,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "be770ae19d",
- "score": 22.27,
+ "score": 21.98,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
