@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli authorities demolished homes in several Bedouin villages in the Negev region, the Ma'an news agency reported. The demolitions targeted residential structures in the area, where Palestinian Bedouin communities face ongoing disputes with Israeli authorities over land and settlement rights.\n\nThe Negev Bedouin have long contended with home demolitions and restrictions on building permits, claiming discriminatory treatment in access to land and municipal services compared to Jewish settlements in the same region.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170780.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-19T09:59:58+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170780.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2847c42793",
+ "score": 31.58,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli authorities demolish homes in Negev villages"
+}

@@ -1,0 +1,33 @@
+{
+ "brief": "Masked Israeli settlers nearly killed a Washington Post journalist covering an assault on Palestinian olive farmers in Abu Falah, a village northeast of Ramallah, on Friday, Democracy Now! reported. The settlers, backed by IDF soldiers, brutally attacked the Palestinians during the incident.\n\nThe assault occurred as violence by Israeli settlers against Palestinians has intensified in the occupied West Bank. The journalist's presence at the scene while documenting the attack on the farmers placed him in direct danger from the settlers.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "http://www.democracynow.org/2026/10/19/west_bank_journalists",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-19T12:35:34+00:00",
+ "dek": "Israeli settlers backed by IDF soldiers brutally assaulted Palestinian olive farmers in the village of Abu Falah, northeast of Ramallah, on Friday.",
+ "dup_of": null,
+ "image": "https://www.democracynow.org/images/story/68/83968/w320/Standard2.jpg",
+ "lang": "en",
+ "link": "http://www.democracynow.org/2026/10/19/west_bank_journalists",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Democracy Now!",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "http://www.democracynow.org/2026/10/19/west_bank_journalists"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "debcdcf58d",
+ "score": 62.38,
+ "source": "Democracy Now!",
+ "source_id": "democracynow",
+ "source_url": "https://www.democracynow.org/",
+ "title": "Israeli settlers attack Washington Post journalist covering Palestinian assault"
+}
