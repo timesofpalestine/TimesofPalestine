@@ -1,0 +1,51 @@
+{
+ "brief": "The World Food Programme has reduced assistance to half a million Palestinians in Gaza due to insufficient funding, the agency reported. The cuts threaten to reverse what the WFP described as \"modest and fragile\" progress in improving food security across the territory.\n\nFunding shortages have forced the UN agency to scale back operations at a time when Gaza faces acute humanitarian need. The reduction marks a setback in efforts to address widespread food insecurity among the population.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/19/wfp-cuts-aid-to-500000-palestinians-in-gaza-amid-funding-shortages?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/19/cuts-world-food-programme-end-support-palestinians-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/un-agency-slashes-gaza-food-aid-over-funding-warns-needs-persist",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.com/post/166213/%D8%A7%D9%84%D8%AA%D9%86%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9-%D8%AA%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%A5%D8%BA%D8%A7%D8%AB%D9%8A%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%B9%D9%82%D8%A8-%D9%88%D9%82%D9%81-%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A1-%D8%B9%D9%86-500-%D8%A3%D9%84%D9%81-%D9%85%D9%88%D8%A7%D8%B7%D9%86",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-19T10:08:06+00:00",
+ "dek": "The UN agency says funding shortages threaten to reverse 'modest and fragile' progress on food security.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad5d2c4-1792398020.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/19/wfp-cuts-aid-to-500000-palestinians-in-gaza-amid-funding-shortages?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/19/wfp-cuts-aid-to-500000-palestinians-in-gaza-amid-funding-shortages?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e2c0692fb9",
+ "score": 49.31,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN food agency cuts Gaza aid to 500,000 Palestinians"
+}

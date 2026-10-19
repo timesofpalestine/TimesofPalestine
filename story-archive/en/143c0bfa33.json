@@ -1,0 +1,33 @@
+{
+ "brief": "Israel's military said it uncovered a Hamas plan to plant explosive devices near civilian shelters in Gaza, according to Maan Wire. The military provided no further details about the alleged plot, its scope, or any evidence supporting the claim.\n\nThe assertion comes as fighting continues across Gaza following Israel's military operation in the territory. Hamas has not responded to the Israeli military's allegation.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170785.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-19T10:47:26+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170785.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "143c0bfa33",
+ "score": 49.76,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli military claims discovery of Hamas bomb plot near Gaza shelters"
+}
