@@ -6,13 +6,7 @@
    "article": "https://www.al-monitor.com/originals/2026/10/trump-backs-ally-netanyahu-ahead-israels-tight-election",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-gives-netanyahu-complete-and-total-endorsement-ahead-israeli",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-18T18:30:21+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "70e992f1ed",
- "score": 42.4,
+ "score": 37.52,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
