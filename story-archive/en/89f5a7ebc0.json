@@ -6,7 +6,13 @@
    "article": "https://english.pnn.ps/news/48365",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.amnesty.org/en/latest/news/2026/10/states-must-act-as-israeli-state-driven-settler-violence-escalates-at-start-of-palestine-olive-harvest",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-20T07:26:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "89f5a7ebc0",
- "score": 61.33,
+ "score": 61.03,
  "source": "Palestine News Network",
  "source_id": "pnn",
  "source_url": "https://english.pnn.ps/",
