@@ -13,18 +13,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/israel-announces-arrests-after-west-bank-settler-attacks-westerners",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48358",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
   }
  ],
  "date": "2026-10-20T06:22:33+00:00",
@@ -43,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "49803a5cef",
- "score": 48.98,
+ "score": 48.78,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
