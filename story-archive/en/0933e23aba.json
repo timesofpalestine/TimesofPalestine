@@ -7,6 +7,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-senator-bernie-sanders-slams-trumps-endorsement-netanyahu",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-10-19T19:30:24+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "0933e23aba",
- "score": 46.53,
+ "score": 46.27,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
