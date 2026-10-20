@@ -1,0 +1,33 @@
+{
+ "brief": "The Israeli military announced a maneuver in the West Bank beginning today involving intensive movements, live fire, and explosions through tomorrow, the Maan news agency reported. The exercise will span two days and include combined arms operations across the territory.\n\nThe announcement comes as the West Bank experiences ongoing military operations and settlement expansion. The military regularly conducts training exercises in the territory, which houses some 3 million Palestinians under varying degrees of Israeli control.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170831.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-20T06:34:31+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170831.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e611320a81",
+ "score": 63.12,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli military announces West Bank exercise with live fire"
+}
