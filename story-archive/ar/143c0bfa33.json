@@ -1,0 +1,33 @@
+{
+ "brief": "الجيش الإسرائيلي زعم، بحسب وكالة معاً، كشف خطة من حركة حماس لزرع عبوات ناسفة قرب مراكز إيواء في قطاع غزة. لم تقدم الجهات الإسرائيلية تفاصيل إضافية حول الخطة المزعومة أو مراحل كشفها.\n\nتأتي هذه الادعاءات في سياق الحرب المستمرة على غزة منذ أكثر من عام، والتي أسفرت عن نزوح مئات الآلاف من السكان واللجوء إلى مراكز إيواء متعددة في القطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170785.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-19T10:47:26+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2170785.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "143c0bfa33",
+ "score": 39.14,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "الجيش الإسرائيلي يدّعي اكتشاف خطة لحماس بنصب عبوات ناسفة"
+}
