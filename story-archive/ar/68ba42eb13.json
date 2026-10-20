@@ -7,12 +7,18 @@
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/10/20/%d8%b1%d8%b4%d9%89-%d9%88%d8%b3%d8%b1%d9%82%d8%a9-%d9%88%d9%82%d9%88%d8%af-%d9%88%d9%81%d9%88%d8%a7%d8%aa%d9%8a%d8%b1-%d9%88%d9%87%d9%85%d9%8a%d8%a9-%d8%b4%d8%a8%d9%87%d8%a7%d8%aa?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
   }
  ],
  "date": "2026-10-20T07:25:54+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
  "lang": "ar",
  "link": "https://www.maannews.net/news/2170838.html",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "68ba42eb13",
- "score": 48.4,
+ "score": 48.11,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
