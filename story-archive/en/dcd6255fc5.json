@@ -1,0 +1,45 @@
+{
+ "brief": "The United Nations has cut food aid to half a million Palestinians in Gaza, Drop Site News reported. The reduction affects a significant portion of the territory's population amid ongoing humanitarian concerns.\n\nThe agency did not specify the reasons for the reduction or when the cuts would take effect. The move comes as Gaza faces a severe humanitarian crisis with widespread shortages of basic supplies and services.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.dropsitenews.com/p/un-food-aid-palestine-gaza-ice-texas-detainee-france-arrests-protests",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168622",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/19/cuts-world-food-programme-end-support-palestinians-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-19T14:42:15+00:00",
+ "dek": "Drop Site Daily: October 19, 2026…",
+ "dup_of": null,
+ "image": "https://substackcdn.com/image/fetch/$s_!VH9d!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F996310fc-fee9-46ed-bb93-426a12a3a0c0_4785x3190.heic",
+ "lang": "en",
+ "link": "https://www.dropsitenews.com/p/un-food-aid-palestine-gaza-ice-texas-detainee-france-arrests-protests",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Drop Site News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.dropsitenews.com/p/un-food-aid-palestine-gaza-ice-texas-detainee-france-arrests-protests"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dcd6255fc5",
+ "score": 53.64,
+ "source": "Drop Site News",
+ "source_id": "dropsite",
+ "source_url": "https://www.dropsitenews.com/",
+ "title": "UN reduces food assistance to 500,000 Gaza Palestinians"
+}
