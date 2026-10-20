@@ -6,13 +6,7 @@
    "article": "https://t.me/maannews/37427",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.amnesty.org/en/latest/news/2026/10/states-must-act-as-israeli-state-driven-settler-violence-escalates-at-start-of-palestine-olive-harvest",
-   "name": "Amnesty International",
-   "url": "https://www.amnesty.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-19T13:14:38+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "6c8bdc7393",
- "score": 38.33,
+ "score": 38.09,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
