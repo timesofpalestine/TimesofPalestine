@@ -1,0 +1,51 @@
+{
+ "brief": "The World Food Programme says it is forced to cut aid for thousands in the Gaza enclave, according to Al Jazeera English. The scaling back of assistance comes amid mounting concerns over deteriorating conditions across the territory.\n\nThe cuts threaten to worsen an already dire situation for residents dependent on international humanitarian support. The WFP's decision signals deepening challenges in delivering relief to Gaza's population.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/inside-story/2026/10/20/can-a-humanitarian-crisis-in-gaza-be-averted?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/19/cuts-world-food-programme-end-support-palestinians-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168622",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/un-food-aid-palestine-gaza-ice-texas-detainee-france-arrests-protests",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-20T18:45:23+00:00",
+ "dek": "The World Food Programme says it is forced to cut aid for thousands in the enclave.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261007__D2DK9KK__v5__HighRes__PalestinianIsraelConflictGazaHunger-1791786136.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/inside-story/2026/10/20/can-a-humanitarian-crisis-in-gaza-be-averted?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/inside-story/2026/10/20/can-a-humanitarian-crisis-in-gaza-be-averted?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0356524adc",
+ "score": 46.63,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "World Food Programme cuts Gaza aid as humanitarian crisis looms"
+}
