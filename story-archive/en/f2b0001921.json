@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli settler militants attacked European diplomats, a French mayor, and the archbishop of Cambrai in Taybeh in the occupied West Bank, The Guardian reported. The assault occurred as Palestinians attempted to harvest olives, with the settlers using violence in an attempt to halt the agricultural work.\n\nThe incident left multiple members of the European delegation injured. Such attacks by settler groups against Palestinians and international observers occur regularly in the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48358",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-17T18:57:56+00:00",
+ "dek": "French mayor and archbishop also attacked during violent attempt to stop Palestinians harvesting olives Israeli settler militants have attacked European diplomats, a French mayor and the archbishop of Cambrai in Taybeh, in the occupied West Bank, injuring…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/b9a3e348f316f5f39a4ebd9844c51cbc810845c9/0_1020_1192_953/master/1192.jpg?width=140&quality=85&auto=format&fit=max&s=b63ff2e62279e8e2b14337cfb6803fc2",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f2b0001921",
+ "score": 45.64,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli settlers attack European diplomats in West Bank"
+}
