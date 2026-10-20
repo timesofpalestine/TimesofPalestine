@@ -1,0 +1,45 @@
+{
+ "brief": "Pete Hegseth, the newly confirmed US Defense Secretary, travelled to Israel in an unannounced visit to meet Prime Minister Benjamin Netanyahu, Axios reported. The trip came ahead of Israel's closely contested election, according to sources cited by the news outlet.\n\nDetails of the discussions between Hegseth and Netanyahu were not disclosed. The visit took place during a sensitive period in Israeli politics.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/hegseth-meets-netanyahu-unannounced-visit-israel-reports-axios",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hegseth-meets-netanyahu-during-unannounced-visit-israel-axios-reports",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-20T00:08:01+00:00",
+ "dek": "Hegseth has travelled to Israel to meet Netanyahu ahead of a closely contested election, Axios reported, citing sources.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-07-28T175706Z_848845793_RC25NMA8QQQU_RTRMADP_3_PEOPLE-LINDSEY-GRAHAM-1792452329.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0cf35667a8",
+ "score": 49.0,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Pentagon chief Hegseth visits Israel to meet Netanyahu before election"
+}
