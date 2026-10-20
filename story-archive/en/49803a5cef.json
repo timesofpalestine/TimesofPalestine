@@ -9,9 +9,21 @@
    "verified": true
   },
   {
-   "article": "https://www.theguardian.com/world/2026/oct/19/israeli-police-detain-10-people-in-rare-raid-against-west-bank-settlers",
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-election-eve-settler-violence-becomes-netanyahu-liability",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/18/guardian-reporter-filmed-masked-militants-seconds-before-west-bank-attack-on-french-mayor",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48358",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
    "verified": true
   }
  ],
@@ -31,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "49803a5cef",
- "score": 48.78,
+ "score": 48.5,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
