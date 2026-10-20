@@ -27,12 +27,6 @@
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/10/israeli-fire-kills-four-people-gaza-medics-say",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
    "article": "https://news.un.org/feed/view/en/story/2026/10/1168625",
    "name": "UN News",
    "url": "https://news.un.org/",
@@ -55,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "27cc158561",
- "score": 61.32,
+ "score": 61.03,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
