@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli settler was filmed assaulting a Palestinian child during an attack on a family east of Yatta, Al Jazeera English reported. The video documents the settler shouting at and physically attacking the child.\n\nThe incident occurred in an area where tensions between settlers and Palestinians remain high. Details about injuries sustained or circumstances preceding the assault were not immediately available.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/21/video-shows-israeli-settler-assaulting-palestinian-child-2?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-21T22:03:54+00:00",
+ "dek": "An Israeli settler was filmed shouting at and assaulting a Palestinian child during an attack on a family east of Yatta.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Screenshot-2026-10-21-at-21.30.46-1792620181.png?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/21/video-shows-israeli-settler-assaulting-palestinian-child-2?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/21/video-shows-israeli-settler-assaulting-palestinian-child-2?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6c9656e22d",
+ "score": 49.66,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settler assaults Palestinian child in video incident"
+}

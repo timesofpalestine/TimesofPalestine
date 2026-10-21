@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/world/2026/oct/21/heidi-levine-palestinians-israeli-settler-attack-west-bank",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-abductions-colonizer-attacks-across-west-bank",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-21T17:59:14+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "e58c15173b",
- "score": 61.09,
+ "score": 60.82,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
