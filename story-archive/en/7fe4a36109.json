@@ -1,0 +1,33 @@
+{
+ "brief": "Al Jazeera analysed voting patterns across the Knesset on consequential measures affecting Palestinians, according to Al Jazeera English. The analysis examined how every party in Israel's parliament voted on key legislative decisions with direct impact on Palestinian life and rights.\n\nThe investigation revealed alignment between Israel's mainstream political parties and far-right factions on votes concerning Palestinian policy, suggesting broader consensus on contested issues than public positioning might indicate.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/21/far-from-fringe-how-israels-mainstream-parties-vote-with-the-far-right?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-21T05:24:49+00:00",
+ "dek": "Al Jazeera analysed how every party in the Knesset voted on the most consequential measures affecting Palestinians.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/INTERACTIVE-Israel-far-right-poster-stance-1792514903.png?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/21/far-from-fringe-how-israels-mainstream-parties-vote-with-the-far-right?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/21/far-from-fringe-how-israels-mainstream-parties-vote-with-the-far-right?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7fe4a36109",
+ "score": 49.68,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli mainstream parties align with far-right on Palestinian policy votes"
+}
