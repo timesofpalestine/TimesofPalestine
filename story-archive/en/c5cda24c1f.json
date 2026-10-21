@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces arrested a patient and her companion at the Rafah crossing, the Ma'an news agency reported. No details emerged immediately about their identities or the reasons for their detention.\n\nThe arrests occurred as Israeli forces pressed assassination operations throughout Gaza. The Rafah crossing remains a critical exit point for Palestinians seeking medical treatment abroad and accessing humanitarian aid.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170885.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-21T06:03:05+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170885.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c5cda24c1f",
+ "score": 49.84,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces arrest patient and companion at Rafah crossing"
+}
