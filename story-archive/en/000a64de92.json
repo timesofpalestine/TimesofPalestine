@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces carried out demolition operations in the vicinity of Qalandia refugee camp, the Ma'an news agency reported. The specific structures targeted and the scale of the demolition were not detailed in initial reports.\n\nThe Qalandia camp, located north of Jerusalem in the West Bank, has been subject to repeated Israeli military operations and building restrictions over decades of occupation.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "http://maannews.net/news/2170891.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-21T07:15:35+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "http://maannews.net/news/2170891.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "000a64de92",
+ "score": 49.5,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces demolish structures near Qalandia refugee camp"
+}
