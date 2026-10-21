@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-killed-several-injured-israeli-drone-strike-gaza-city",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://imemc.org/article/israeli-fire-wounds-two-students-as-gaza-hospitals-face-power-crisis",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-21T20:46:13+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "c399a13311",
- "score": 63.61,
+ "score": 63.45,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
