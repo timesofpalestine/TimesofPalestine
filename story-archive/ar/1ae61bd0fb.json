@@ -6,7 +6,13 @@
    "article": "https://qudsn.co/post?id=218366&slug=%D8%BA%D8%B2%D8%A9-%D8%AD%D9%8A%D9%86-%D9%8A%D8%AA%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A1-%D8%A5%D9%84%D9%89-%D8%A3%D8%AF%D8%A7%D8%A9-%D9%84%D9%84%D8%AA%D8%AC%D9%88%D9%8A%D8%B9-%D9%88%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D8%B2%D8%A7%D8%B2",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://palinfo.com/news/2026/10/21/1121500",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-10-21T07:23:37+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1ae61bd0fb",
- "score": 42.2,
+ "score": 41.94,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
