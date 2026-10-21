@@ -13,6 +13,12 @@
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
    "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/84293",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
   }
  ],
  "date": "2026-10-21T07:23:37+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "1ae61bd0fb",
- "score": 39.21,
+ "score": 38.96,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
