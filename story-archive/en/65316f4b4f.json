@@ -6,13 +6,7 @@
    "article": "https://dawnmena.org/damaged-buildings-and-fragile-tents-face-a-coming-winter-test-in-gaza",
    "name": "DAWN",
    "url": "https://dawnmena.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-rescuers-hospitals-say-israeli-strikes-kill-seven",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-20T17:32:40+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "65316f4b4f",
- "score": 85.46,
+ "score": 85.44,
  "source": "DAWN",
  "source_id": "dawn",
  "source_url": "https://dawnmena.org/",
