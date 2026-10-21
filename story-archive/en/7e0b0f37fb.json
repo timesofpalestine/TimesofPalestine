@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli forces released Brad Lander, a US congressional candidate, following his detention in the West Bank while assisting Palestinian farmers with olive harvesting, Al Jazeera English reported. Lander said dozens of other people remain in Israeli custody after being arrested during the same operation.\n\nThe circumstances surrounding the detentions and the duration of Lander's custody were not specified in available reports.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/21/us-congressional-candidate-brad-lander-freed-after-west-bank-detention?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/us-democratic-congressional-candidate-lander-detained-israeli-authorities-west",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/21/israeli-military-detains-brad-lander-rabbis-west-bank-olive-harvest",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-21T14:12:15+00:00",
+ "dek": "Lander says dozens remain in Israeli custody after being detained while helping Palestinian farmers harvest olives.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad8c63755f4-1792591415.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/21/us-congressional-candidate-brad-lander-freed-after-west-bank-detention?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/21/us-congressional-candidate-brad-lander-freed-after-west-bank-detention?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7e0b0f37fb",
+ "score": 49.74,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces release US congressional candidate after West Bank detention"
+}
