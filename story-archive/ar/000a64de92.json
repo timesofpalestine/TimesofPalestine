@@ -1,0 +1,33 @@
+{
+ "brief": "قوات الاحتلال الإسرائيلي نفذت عمليات هدم في المناطق المحيطة بمخيم قلنديا شمال القدس، بحسب وكالة معا. ولم تتضمن المعلومات المتاحة تفاصيل عن عدد المنازل المستهدفة أو حجم الأضرار التي ألحقتها هذه العمليات.\n\nتندرج هذه العمليات ضمن سياق أوسع من عمليات الهدم المتكررة التي تنفذها قوات الاحتلال ضد المنشآت الفلسطينية في الضفة الغربية، حيث تذرع بقانون البناء غير المرخص في المناطق الخاضعة لسيطرتها.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "http://maannews.net/news/2170891.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-21T07:15:35+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "http://maannews.net/news/2170891.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "000a64de92",
+ "score": 43.63,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "الاحتلال يهدم منازل في محيط مخيم قلنديا"
+}
