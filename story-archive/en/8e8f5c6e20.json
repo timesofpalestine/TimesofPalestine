@@ -1,0 +1,33 @@
+{
+ "brief": "The Israeli army announced a military exercise involving gunfire and explosions in the occupied West Bank on October 20, according to IMEMC News. The drills are set to take place across the territory.\n\nThe announcement comes amid longstanding Palestinian concerns over Israeli military operations in the West Bank, where armed clashes and security incidents have resulted in civilian casualties in recent years.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://imemc.org/article/israeli-army-announces-west-bank-drills-despite-deadly-legacy",
+   "name": "IMEMC News",
+   "url": "https://imemc.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-21T06:28:26+00:00",
+ "dek": "On October 20, the Israeli occupation army announced a military exercise involving gunfire and explosions in the occupied West Bank.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://imemc.org/article/israeli-army-announces-west-bank-drills-despite-deadly-legacy",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8e8f5c6e20",
+ "score": 54.02,
+ "source": "IMEMC News",
+ "source_id": "imemc",
+ "source_url": "https://imemc.org/",
+ "title": "Israeli military announces West Bank gunfire drills"
+}
