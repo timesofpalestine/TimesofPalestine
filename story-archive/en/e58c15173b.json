@@ -1,0 +1,33 @@
+{
+ "brief": "US photojournalist Heidi Levine, who works for The Washington Post, was attacked and seriously injured by Israeli settlers on the West Bank on Friday, The Guardian reported. Levine described how Palestinian youths formed a \"protective shield\" around her during the assault, helping to save her life.\n\nLevine said she intends to return to her work documenting events in the West Bank. She also criticized comments made by Prime Minister Benjamin Netanyahu regarding the incident.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/21/heidi-levine-palestinians-israeli-settler-attack-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-21T17:59:14+00:00",
+ "dek": "US photojournalist describes ‘protective shield’, vows to return to work in West Bank and criticises Netanyahu comments on incident The Washington Post photojournalist who was attacked and seriously injured by Israeli settlers on the West Bank on Friday has…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/3c0f375b1348bd364968b1932c5016422336fce8/470_0_4683_3749/master/4683.jpg?width=140&quality=85&auto=format&fit=max&s=d7cae39e55221ca53c6c46cc362d541c",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/oct/21/heidi-levine-palestinians-israeli-settler-attack-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/oct/21/heidi-levine-palestinians-israeli-settler-attack-west-bank"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e58c15173b",
+ "score": 63.83,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Palestinian youths shield photojournalist from settler attack"
+}
