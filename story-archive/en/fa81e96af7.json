@@ -1,0 +1,33 @@
+{
+ "brief": "Settlers set fire to agricultural land in Burqa, northwest of Nablus, according to Maan Wire. The incident marked another attack on Palestinian property in the occupied West Bank, where settlement expansion and related violence have intensified in recent years.\n\nThe arson occurred in an area where Palestinian farmers have faced recurring threats to their livelihoods. Israeli settler attacks on Palestinian land, crops, and property are documented as part of a broader pattern of harassment accompanying settlement growth.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2170890.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-21T07:23:20+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2170890.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fa81e96af7",
+ "score": 49.08,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settlers torch farmland in Burqa north of Nablus"
+}
