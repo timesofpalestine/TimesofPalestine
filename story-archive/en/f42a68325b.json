@@ -1,0 +1,39 @@
+{
+ "brief": "An Israeli court freed nine settler suspects held in connection with two separate attacks in the West Bank, according to Al Jazeera English, as investigations into recent assaults continue. The releases occurred as violence attributed to settlers against Palestinians has intensified across the occupied territory.\n\nThe releases came amid a broader pattern of settler attacks on Palestinians in the West Bank. Israeli authorities have faced mounting pressure over their handling of violence by Jewish settlers against Palestinian communities and property.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/22/israel-frees-suspects-in-two-settler-attacks-as-west-bank-pogroms-intensify?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israel-frees-custody-almost-all-suspects-two-settler-attacks-puts-them-under",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-22T18:17:29+00:00",
+ "dek": "Israeli court releases nine settler suspects over West Bank attacks as investigations into recent assaults continue.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ada389b-1792686235.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/22/israel-frees-suspects-in-two-settler-attacks-as-west-bank-pogroms-intensify?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/22/israel-frees-suspects-in-two-settler-attacks-as-west-bank-pogroms-intensify?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f42a68325b",
+ "score": 49.73,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel releases nine settler suspects amid West Bank violence surge"
+}

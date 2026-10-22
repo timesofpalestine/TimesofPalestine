@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-four-palestinians-last-24-hours-including-teenage-girl",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://pchrgaza.org/israel-kills-15-palestinians-including-a-couple-and-four-children-in-gaza-as-restrictions-on-crossings-threaten-a-return-to-famine",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
@@ -24,6 +18,12 @@
    "article": "https://www.al-monitor.com/originals/2026/10/israeli-fire-kills-four-people-gaza-medics-say-0",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-four-palestinians-last-24-hours-including-teenage-girl",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": true
   }
  ],
@@ -43,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "45c2926d8f",
- "score": 62.48,
+ "score": 62.22,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
