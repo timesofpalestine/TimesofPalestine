@@ -13,6 +13,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-15-palestinians-including-a-couple-and-four-children-in-gaza-as-restrictions-on-crossings-threaten-a-return-to-famine",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-22T11:58:19+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "24f35beb44",
- "score": 63.4,
+ "score": 63.18,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
