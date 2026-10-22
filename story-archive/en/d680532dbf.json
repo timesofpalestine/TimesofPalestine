@@ -1,0 +1,33 @@
+{
+ "brief": "The Guardian's investigation found that Israel is using American-made electroshock weapons on Palestinian detainees, with evidence suggesting torture, the news outlet reported. Axon, the US company that manufactures Taser devices, continues supplying the weapons to Israel despite documented cases of their use against prisoners in detention facilities, including a section known as Hell's Wing.\n\nThe investigation documented soldiers using the electroshock weapons on Palestinians held in custody, raising questions about compliance with international prohibitions on torture and the responsibility of American manufacturers in arming practices flagged by human rights organizations.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/global-development/2026/oct/22/israel-us-made-electroshock-weapons-palestinian-detainees-axon-taser",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-22T04:00:05+00:00",
+ "dek": "Investigation suggests American company Axon still supplies Israel with Taser weapons despite evidence they have been used to torture prisoners The soldiers drag the man into a section of the prison known as Hell’s Wing, a metaphor for its notoriety for acts…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/1f5a1ed497ffe595e910cd9ad489f80db66d372d/336_508_2363_1891/master/2363.jpg?width=140&quality=85&auto=format&fit=max&s=6a38d261ee9dc7e6fbc892b7a8c5981b",
+ "lang": "en",
+ "link": "https://www.theguardian.com/global-development/2026/oct/22/israel-us-made-electroshock-weapons-palestinian-detainees-axon-taser",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/global-development/2026/oct/22/israel-us-made-electroshock-weapons-palestinian-detainees-axon-taser"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d680532dbf",
+ "score": 49.76,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israel uses US-made Tasers to torture Palestinian detainees, Guardian investigation finds"
+}
