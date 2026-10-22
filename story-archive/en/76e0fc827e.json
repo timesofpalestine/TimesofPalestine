@@ -1,0 +1,33 @@
+{
+ "brief": "Breast cancer patients in Gaza confront severe obstacles to diagnosis and treatment, including delayed test results, critical shortages of medications, and restricted access to imaging scans, Al Jazeera English reported. The deteriorating conditions have forced some patients to forego treatment entirely or seek care outside Gaza at considerable personal cost.\n\nMedical facilities across the territory lack essential equipment and supplies needed for timely cancer screening and management. Patients describe mounting anxiety as diagnostic delays extend, with some waiting months for test results that would typically arrive within weeks.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/10/22/longer-we-wait-worse-it-gets-struggle-of-gazas-breast-cancer-patients?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-22T17:40:24+00:00",
+ "dek": "Breast cancer patients in Gaza face delayed diagnoses, medicine shortages and limited access to scans and treatment.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/873A2406-copy-1792685885.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/10/22/longer-we-wait-worse-it-gets-struggle-of-gazas-breast-cancer-patients?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/10/22/longer-we-wait-worse-it-gets-struggle-of-gazas-breast-cancer-patients?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "76e0fc827e",
+ "score": 49.77,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza's breast cancer patients face delayed diagnoses amid supply crisis"
+}

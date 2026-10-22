@@ -1,0 +1,39 @@
+{
+ "brief": "The Gaza Health Ministry cautioned that power generators across the territory risk shutting down due to insufficient fuel supplies, the Ma'an news agency reported. The warning signals mounting pressure on medical facilities already struggling to maintain basic operations amid the ongoing crisis.\n\nHospitals and clinics depend heavily on generators to sustain essential services including surgery, dialysis, and patient care when grid electricity fails. A halt in generator operations would severely compromise the healthcare system's ability to treat patients.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37472",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/hospitals-gaza-shutdowns-us-polling-wedgewood-yemen-ansarallah-water-crisis",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-22T17:32:09+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/MHQM73xvOhVU1DlTxLnXlx-BWLrXBuFSTdxYG3g0Q1-ceS4exkEkKj9JzbXTrWtL29EwWkA3vFXOxVUYUzAwi3fLyEpndc3G3S0iDCB-x7uvoydOsNEyI9KLV9B0lvAKt3VCgw0hdEJ19jaKZnQyEyoxlQ3Gb9OBzabmoRak241vSo6CildXnbiZRjaNHWNLXoRLRzpfMfbnAlo6cBJhUETCO4aIdm0xc1eJ_9aRBwjapZ6xXzNAyu7La091Jm7uqXA4DfrlXeaYNR_M4RSxiOeciOua9dJiofbZDgExQqUTdOhQggBgNF5I901p6tqu89WfA2IQY_w-aRG4_YE_ug",
+ "lang": "en",
+ "link": "https://t.me/maannews/37472",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37472"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "60314c5eea",
+ "score": 49.68,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gaza Health Ministry warns of generator shutdowns amid fuel shortage"
+}
