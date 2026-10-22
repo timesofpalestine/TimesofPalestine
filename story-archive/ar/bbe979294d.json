@@ -7,6 +7,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/gazaalannet/84316",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
   }
  ],
  "date": "2026-10-22T15:34:56+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "bbe979294d",
- "score": 47.07,
+ "score": 46.8,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
