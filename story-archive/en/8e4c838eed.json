@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/10/22/qatar-france-call-for-opening-of-hormuz-and-gaza-ceasefire-implementation?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/qatar-france-issue-joint-statement-calling-implementation-gaza-ceasefire",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-22T01:45:48+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "8e4c838eed",
- "score": 59.27,
+ "score": 59.08,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
