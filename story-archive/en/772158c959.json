@@ -1,0 +1,33 @@
+{
+ "brief": "The United Nations has abandoned the Rafah crossing, Drop Site News reported, marking a significant shift in humanitarian access to Gaza. The crossing had served as a critical entry point for aid delivery to the enclave.\n\nThe closure follows developments including vulnerabilities in PHP that exposed multiple websites to security breaches, and the American Israel Public Affairs Committee's decision to end political endorsements.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.dropsitenews.com/p/un-rafah-gaza-israel-php-flaws-websites-aipac-end-endorsements",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-22T15:22:06+00:00",
+ "dek": "Drop Site Daily: October 22, 2026…",
+ "dup_of": null,
+ "image": "https://substackcdn.com/image/fetch/$s_!zviS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41892a8f-33e8-46df-996b-e199e0ff31d7_4032x3024.heic",
+ "lang": "en",
+ "link": "https://www.dropsitenews.com/p/un-rafah-gaza-israel-php-flaws-websites-aipac-end-endorsements",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Drop Site News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.dropsitenews.com/p/un-rafah-gaza-israel-php-flaws-websites-aipac-end-endorsements"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "772158c959",
+ "score": 49.72,
+ "source": "Drop Site News",
+ "source_id": "dropsite",
+ "source_url": "https://www.dropsitenews.com/",
+ "title": "UN closes Rafah crossing crossing to Gaza"
+}
