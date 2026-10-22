@@ -1,0 +1,45 @@
+{
+ "brief": "تتفاقم المعاناة الإنسانية في قطاع غزة وسط تقليص المساعدات الإنسانية، حيث يواجه آلاف النازحين صعوبات بالغة في الحصول على المواد الأساسية والغذائية. وتتسع الفجوة بين احتياجات السكان المتزايدة والمساعدات المتوفرة، ما يفاقم الأزمة الإنسانية في القطاع.\n\nيعاني النازحون في مختلف مناطق غزة من ظروف معيشية حرجة مع تراجع حجم الإمدادات الموجهة إليهم، فيما تزداد الضغوط على المنظمات الإنسانية لتلبية الاحتياجات الأساسية للسكان.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.net/video/2026/10/22/%d8%aa%d9%82%d9%84%d9%8a%d8%b5-%d8%a7%d9%84%d9%85%d8%b3%d8%a7%d8%b9%d8%af%d8%a7%d8%aa-%d9%8a%d9%81%d8%a7%d9%82%d9%85-%d8%a7%d9%84%d9%85%d8%b9%d8%a7%d9%86%d8%a7%d8%a9?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
+  },
+  {
+   "article": "https://qudsn.co/post?id=218390&slug=%D8%B4%D8%A8%D8%AD-%D8%A7%D9%84%D9%85%D8%AC%D8%A7%D8%B9%D8%A9-%D9%8A%D8%AE%D9%8A%D9%91%D9%85-%D8%B9%D9%84%D9%89-%D8%BA%D8%B2%D8%A9-%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%A8%D8%B2-%D9%85%D9%87%D8%AF%D8%AF%D8%A9-%D8%A8%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%81-%D9%88%D8%A7%D9%84%D9%82%D9%8A%D9%88%D8%AF-%D8%AA%D8%B9%D8%B1%D9%82%D9%84-%D8%AF%D8%AE%D9%88%D9%84-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A1",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/188704/%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1-%D9%85%D9%86-%D8%AA%D9%88%D9%82%D9%81-%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%A8%D8%B2-%D8%AE%D9%84%D8%A7%D9%84-48",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-22T09:24:25+00:00",
+ "dek": "تتفاقم المعاناة الإنسانية في قطاع غزة، إذ يواجه آلاف النازحين صعوبات بالغة وأزمة حادة في الحصول على المساعدات الغذائية والمواد الأساسية.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.net/wp-content/uploads/2026/10/image-1792670790.jpg?resize=1920%2C1080&quality=80",
+ "lang": "ar",
+ "link": "https://www.aljazeera.net/video/2026/10/22/%d8%aa%d9%82%d9%84%d9%8a%d8%b5-%d8%a7%d9%84%d9%85%d8%b3%d8%a7%d8%b9%d8%af%d8%a7%d8%aa-%d9%8a%d9%81%d8%a7%d9%82%d9%85-%d8%a7%d9%84%d9%85%d8%b9%d8%a7%d9%86%d8%a7%d8%a9?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "الجزيرة نت",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.net/video/2026/10/22/%d8%aa%d9%82%d9%84%d9%8a%d8%b5-%d8%a7%d9%84%d9%85%d8%b3%d8%a7%d8%b9%d8%af%d8%a7%d8%aa-%d9%8a%d9%81%d8%a7%d9%82%d9%85-%d8%a7%d9%84%d9%85%d8%b9%d8%a7%d9%86%d8%a7%d8%a9?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c7dad1228b",
+ "score": 45.83,
+ "source": "الجزيرة نت",
+ "source_id": "aja",
+ "source_url": "https://www.aljazeera.net/",
+ "title": "تقليص المساعدات يعمّق أزمة الجوع بغزة"
+}
