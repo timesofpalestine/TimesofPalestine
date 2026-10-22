@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli military attacks killed four Palestinians in Gaza, including a young girl, Al Jazeera English reported. The strikes occurred as the Israeli military expands its operations across the territory.\n\nThe attacks are part of a broader military campaign that has displaced millions of Palestinians and destroyed homes across Gaza. The exact locations and circumstances of the strikes were not specified in the initial report.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/22/israeli-attacks-in-gaza-kill-four-including-a-young-girl?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-four-palestinians-last-24-hours-including-teenage-girl",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-15-palestinians-including-a-couple-and-four-children-in-gaza-as-restrictions-on-crossings-threaten-a-return-to-famine",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-fire-kills-four-people-gaza-medics-say-0",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-22T16:06:55+00:00",
+ "dek": "Four Palestinians killed as Israeli military expands control across Gaza, displacing millions and destroying homes.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ada1510-1792677137.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/22/israeli-attacks-in-gaza-kill-four-including-a-young-girl?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/22/israeli-attacks-in-gaza-kill-four-including-a-young-girl?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "45c2926d8f",
+ "score": 63.42,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli military strikes kill four Palestinians in Gaza"
+}
