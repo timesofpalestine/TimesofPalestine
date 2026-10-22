@@ -6,13 +6,19 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-four-palestinians-last-24-hours-including-teenage-girl",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-fire-kills-four-people-gaza-medics-say-0",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-22T11:58:19+00:00",
  "dek": "Israel kills four Palestinians in last 24 hours, including teenage girl Two more Palestinians, including a teenage girl, were killed by Israeli fire in areas in northern and southern Gaza, Al Jazeera and Wafa news agency report, citing medical sources.",
  "dup_of": null,
- "image": "https://www.middleeasteye.net/sites/default/files/2026-10/000_D3ZD966.jpg",
+ "image": "https://www.middleeasteye.net/sites/default/files/2026-10/Untitled_2.jpg",
  "lang": "en",
  "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-four-palestinians-last-24-hours-including-teenage-girl",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "24f35beb44",
- "score": 63.56,
+ "score": 63.4,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
