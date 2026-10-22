@@ -1,0 +1,33 @@
+{
+ "brief": "A video showing an Israeli soldier throwing a cat over a fence has circulated widely on social media, Al Jazeera English reported. The incident drew widespread attention online, with users sharing and commenting on the footage across multiple platforms.\n\nThe video's viral spread prompted discussion about animal welfare and soldier conduct, though details about when or where the incident occurred were not specified in available reports.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/22/jerusalem-daily-israeli-soldier-abusing-cat-goes-viral?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-22T17:25:29+00:00",
+ "dek": "A video of an Israeli soldier throwing a cat over a fence has gone viral online.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792689770.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/22/jerusalem-daily-israeli-soldier-abusing-cat-goes-viral?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/22/jerusalem-daily-israeli-soldier-abusing-cat-goes-viral?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "976e6f362f",
+ "score": 48.35,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Video of Israeli soldier abusing cat spreads online"
+}
