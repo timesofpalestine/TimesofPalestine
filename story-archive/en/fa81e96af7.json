@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2170890.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168644",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-21T07:23:20+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "fa81e96af7",
- "score": 34.74,
+ "score": 34.58,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
