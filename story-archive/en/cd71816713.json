@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces detained approximately 80 American, British, and Israeli volunteers near Nahalin in the West Bank, The Guardian reported. The group had been helping Palestinians harvest olives in the area near Bethlehem when they were taken into custody and transported to a police station.\n\nThe detainees included Brad Lander, a Democratic politician from New York, according to the report. Israeli authorities did not immediately explain the basis for the detention.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/21/israeli-military-detains-brad-lander-rabbis-west-bank-olive-harvest",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-21T14:08:28+00:00",
+ "dek": "About 80 US, Israeli and British volunteers held near Nahalin in West Bank and taken to police station The Israeli military has detained about 80 US, Israeli and British volunteers helping Palestinians harvest olives near Bethlehem, including the New York…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/2dca90eeacb0f2b60bfb4a49e7c74a21dbfd1c3d/0_0_7202_5760/master/7202.jpg?width=140&quality=85&auto=format&fit=max&s=bdfcf014cc7fac442ec65d1a5d0cd972",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/oct/21/israeli-military-detains-brad-lander-rabbis-west-bank-olive-harvest",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/oct/21/israeli-military-detains-brad-lander-rabbis-west-bank-olive-harvest"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cd71816713",
+ "score": 38.94,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli military detains US and UK volunteers in West Bank"
+}
