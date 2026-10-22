@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli forces briefly detained a US congressional candidate on Wednesday as he participated in an olive harvest with Palestinian activists in the West Bank, Al-Monitor reported. The candidate joined supporters assisting Palestinians gathering olives amid reported threats from extremist settlers in the area.\n\nSettlers have repeatedly disrupted harvests and threatened farmers attempting to access their land during the seasonal olive picking season in the occupied territory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israel-detains-us-congressional-candidate-west-bank-olive-harvest",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/21/israeli-military-detains-brad-lander-rabbis-west-bank-olive-harvest",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168644",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-21T16:30:21+00:00",
+ "dek": "Israeli forces on Wednesday briefly detained a US congressional candidate as he joined activists supporting Palestinians harvesting olives in the face of threats by extremist settlers.",
+ "dup_of": null,
+ "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-10/000_d3y23hu.jpg?h=69f2b9d0&itok=iKSy3-6Q",
+ "lang": "en",
+ "link": "https://www.al-monitor.com/originals/2026/10/israel-detains-us-congressional-candidate-west-bank-olive-harvest",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al-Monitor",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.al-monitor.com/originals/2026/10/israel-detains-us-congressional-candidate-west-bank-olive-harvest"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d70c4a26b0",
+ "score": 44.35,
+ "source": "Al-Monitor",
+ "source_id": "almonitor",
+ "source_url": "https://www.al-monitor.com/",
+ "title": "Israeli forces detain US congressional candidate at West Bank olive harvest"
+}
