@@ -1,0 +1,39 @@
+{
+ "brief": "Qatar and France called for the opening of the Strait of Hormuz and implementation of a Gaza ceasefire, Al Jazeera English reported. The two countries' leaders stressed the need to restore freedom of navigation in the strategic waterway.\n\nThe statements reflect broader regional concerns over maritime security and the ongoing Palestinian-Israeli conflict. Both nations have engaged diplomatically in efforts to address these issues.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/22/qatar-france-call-for-opening-of-hormuz-and-gaza-ceasefire-implementation?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/qatar-france-issue-joint-statement-calling-implementation-gaza-ceasefire",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-22T01:45:48+00:00",
+ "dek": "Qatari and French leaders stress need to restore freedom of navigation in Strait of Hormuz.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad9506a-1792626794.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/22/qatar-france-call-for-opening-of-hormuz-and-gaza-ceasefire-implementation?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/22/qatar-france-call-for-opening-of-hormuz-and-gaza-ceasefire-implementation?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8e4c838eed",
+ "score": 63.54,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Qatar and France push for Hormuz shipping and Gaza truce"
+}
