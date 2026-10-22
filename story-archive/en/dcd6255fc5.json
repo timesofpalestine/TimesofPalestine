@@ -6,13 +6,7 @@
    "article": "https://www.dropsitenews.com/p/un-food-aid-palestine-gaza-ice-texas-detainee-france-arrests-protests",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/10/1168622",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-19T14:42:15+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "dcd6255fc5",
- "score": 16.04,
+ "score": 15.87,
  "source": "Drop Site News",
  "source_id": "dropsite",
  "source_url": "https://www.dropsitenews.com/",
