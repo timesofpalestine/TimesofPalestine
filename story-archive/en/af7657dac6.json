@@ -1,0 +1,33 @@
+{
+ "brief": "The Israeli military said it killed two suspected shooters near Hebron in the occupied West Bank, according to Middle East Eye. The military imposed a cordon in the area and conducted searches following the incident, a statement said.\n\nNo further details were provided about the circumstances of the attack the two were suspected of carrying out or when it occurred.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-says-forces-kill-suspected-shooters-near-hebron",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-23T05:15:21+00:00",
+ "dek": "Israeli military says forces kill suspected shooters near Hebron The Israeli military said that it killed two suspected of carrying out an attack near Hebron, occupied West Bank. A cordon had been imposed in the area alongside searches, it said in a statement.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-says-forces-kill-suspected-shooters-near-hebron",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "af7657dac6",
+ "score": 63.28,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli forces kill two suspected shooters near Hebron"
+}
