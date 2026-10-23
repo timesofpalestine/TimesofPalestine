@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/israel-kills-15-palestinians-including-a-couple-and-four-children-in-gaza-as-restrictions-on-crossings-threaten-a-return-to-famine",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinian-killed-israeli-strike-vehicle-gaza-city",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-22T12:48:50+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "fdeaa32c55",
- "score": 84.5,
+ "score": 84.48,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
