@@ -7,12 +7,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": false
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-says-forces-kill-suspected-shooters-near-hebron",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": false
   }
  ],
  "date": "2026-10-23T08:30:24+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "48a3538bb9",
- "score": 63.12,
+ "score": 62.94,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
