@@ -7,10 +7,16 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-says-forces-kill-suspected-shooters-near-hebron",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-10-23T08:30:24+00:00",
- "dek": "Suspected Palestinian militants wounded five Israelis on Friday before two gunmen died in a prolonged shootout, leading Prime Minister Benjamin Netanyahu to order the closure of the West Bank days before Israeli elections.",
+ "dek": "Palestinian militants wounded five Israelis in an attack on Friday before being killed in a prolonged shootout with soldiers, leading Prime Minister Benjamin Netanyahu to order a lockdown in the occupied West Bank days before Israeli elections.",
  "dup_of": null,
  "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-10/000_d4734h4.jpg?h=199d8c1f&itok=-YWXl6Ox",
  "lang": "en",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "48a3538bb9",
- "score": 93.38,
+ "score": 63.12,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
