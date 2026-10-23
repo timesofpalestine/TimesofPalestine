@@ -13,24 +13,6 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
-  },
-  {
-   "article": "https://t.me/AlQastalps/398895",
-   "name": "القسطل · تيليغرام",
-   "url": "https://t.me/AlQastalps",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/745920",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/84364",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": true
   }
  ],
  "date": "2026-10-23T08:32:32+00:00",
@@ -49,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "eabb3c721e",
- "score": 61.88,
+ "score": 61.62,
  "source": "المركز الفلسطيني للإعلام",
  "source_id": "tg-palinfo",
  "source_url": "https://t.me/palinfo",
