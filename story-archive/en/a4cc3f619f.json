@@ -1,0 +1,45 @@
+{
+ "brief": "An AFP photographer documented a deadly assault on Israeli soldiers in the occupied West Bank on Friday while traveling to an assignment, capturing images as crossfire erupted around him, Al-Monitor reported. The photographer found himself witnessing the attack firsthand and managed to record the scene despite the danger.\n\nDetails of the casualties and circumstances of the attack were not immediately available.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/afp-photographer-captures-striking-images-west-bank-attack",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-threatens-sweeping-military-offensive-occupied-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168660",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-23T17:30:26+00:00",
+ "dek": "An AFP photographer on Friday found himself witnessing a deadly attack on Israeli soldiers while on his way to an assignment in the occupied West Bank, managing to capture the grisly scene as the crossfire unfolded around him.",
+ "dup_of": null,
+ "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-10/000_d4792kf.jpg?h=69f2b9d0&itok=cPh_DiHD",
+ "lang": "en",
+ "link": "https://www.al-monitor.com/originals/2026/10/afp-photographer-captures-striking-images-west-bank-attack",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al-Monitor",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.al-monitor.com/originals/2026/10/afp-photographer-captures-striking-images-west-bank-attack"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a4cc3f619f",
+ "score": 93.53,
+ "source": "Al-Monitor",
+ "source_id": "almonitor",
+ "source_url": "https://www.al-monitor.com/",
+ "title": "AFP photographer documents West Bank attack on Israeli soldiers"
+}

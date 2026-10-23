@@ -13,6 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/10/23/%d9%85%d9%86-%d9%88%d9%8a%d9%86-%d8%a8%d8%af%d9%86%d8%a7-%d9%86%d8%b9%d9%8a%d8%b4-%d9%86%d8%a7%d8%b2%d8%ad%d9%88%d9%86-%d8%ba%d8%b2%d9%8a%d9%88%d9%86-%d9%8a%d8%ad%d8%b0%d8%b1%d9%88%d9%86?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
   }
  ],
  "date": "2026-10-23T10:21:41+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "977c02ab67",
- "score": 44.78,
+ "score": 44.56,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
