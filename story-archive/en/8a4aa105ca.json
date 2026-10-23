@@ -1,0 +1,51 @@
+{
+ "brief": "Prime Minister Benjamin Netanyahu said Israel will execute in the neighbourhood where the attackers originated the same operations it conducted in refugee camps in northern West Bank areas, Ma'an Wire reported. Netanyahu made the statement during a visit to Hebron, responding to a recent attack.\n\nThe remarks signal an expansion of Israel's military approach across occupied Palestinian territory, applying tactics used in the north to southern areas of the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37478",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-kills-two-palestinians-gaza-city-0",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/pm-warns-major-west-bank-military-operation-after-attack-kills-israeli-soldiers",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-23T11:40:07+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/LloFxBy2TPaEkMbt7Xw7uMvSaZqr1HILExIWiHKHUN2K29qrUohtk2Q1T91wzlxCCiWdwJYrw-gDUjWshYaWLh4c5y8aqKKGO2brsY565g-HZe3JCt7JflG4QJMa-MkP4Z1NnSldJh0PR532LaYlVx109dpLUSYaL-uF5PX5JVP3CPUbnWq6bpRPOfzCbDM7NR4J_65rEVtp61pHyWh8dRrdv1WXc3KpKRir-6vioHIH1eN0XvYIhwzCx1t01_lZU2jQDa5BUFTvS3mKDyzGEEDNOzLTqePbOYYktMLElzes97lxC5-rnUuRmcj8e3qEsRzYbyoKwYw3vhuWT5SWvg.jpg",
+ "lang": "en",
+ "link": "https://t.me/maannews/37478",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37478"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8a4aa105ca",
+ "score": 48.6,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Netanyahu vows to replicate northern West Bank operations in Hebron neighbourhood"
+}
