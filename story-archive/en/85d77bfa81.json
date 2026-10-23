@@ -13,6 +13,18 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-vows-large-scale-west-bank-operation-starting-expulsion",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-23T12:29:29+00:00",
@@ -31,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "85d77bfa81",
- "score": 61.07,
+ "score": 60.85,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
