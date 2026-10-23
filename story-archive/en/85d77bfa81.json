@@ -9,6 +9,36 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/23/israel-locks-down-occupied-west-bank-after-hebron-shooting?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168660",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-vows-large-scale-west-bank-operation-starting-expulsion",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/netanyahu-west-bank-hebron-kushner-slush-fund-brent-crude-iran-trump",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/10/palestinian-gunmen-kill-two-israeli-soldiers-israel-threatens-new-west-bank",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -31,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "85d77bfa81",
- "score": 59.53,
+ "score": 59.34,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
