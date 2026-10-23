@@ -6,17 +6,11 @@
    "article": "https://www.aljazeera.com/news/2026/10/23/israel-arrests-36-palestinians-in-the-west-bank-attacks-on-farmers-ramp-up?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-says-forces-kill-suspected-shooters-near-hebron",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-23T04:09:28+00:00",
- "dek": "Violence flares as Israeli pogroms heighten tension across Palestinian territory.",
+ "dek": "Clampdown comes as Israeli pogroms heighten tension and spread violence across Palestinian territory.",
  "dup_of": null,
  "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adb011175c4-1792737553.jpg?resize=1920%2C1440",
  "lang": "en",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "6548b2a100",
- "score": 60.87,
+ "score": 46.62,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

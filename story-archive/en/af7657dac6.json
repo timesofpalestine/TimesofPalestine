@@ -7,6 +7,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-orders-west-bank-closure-attack-wounds-israelis-election",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-23T05:15:21+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "af7657dac6",
- "score": 62.34,
+ "score": 61.38,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
