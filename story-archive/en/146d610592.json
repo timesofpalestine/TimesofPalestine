@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/disaster-zone-hebron-under-full-israeli-siege-mayor-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/10/putin-puts-trump-ahead-iran-bid-mediate-war",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -18,12 +24,6 @@
    "article": "https://www.dropsitenews.com/p/netanyahu-west-bank-hebron-kushner-slush-fund-brent-crude-iran-trump",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/after-deadly-shooting-israel-forcibly-evicts-hundreds-palestinian-families-homes-hebron",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
    "verified": true
   },
   {
@@ -67,7 +67,7 @@
  "modified": null,
  "original": false,
  "pid": "146d610592",
- "score": 44.33,
+ "score": 44.18,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
