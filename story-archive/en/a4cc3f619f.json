@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/10/afp-photographer-captures-striking-images-west-bank-attack",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-bethlehem-salfit-areas-west-bank-wafa-reports",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-23T17:30:26+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "a4cc3f619f",
- "score": 89.41,
+ "score": 89.26,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
