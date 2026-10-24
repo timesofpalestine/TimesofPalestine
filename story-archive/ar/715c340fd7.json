@@ -6,7 +6,13 @@
    "article": "https://qudsn.co/post?id=218438&slug=%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A9-%D8%AA%D8%AD%D8%AA-%D8%A7%D9%84%D9%82%D9%8A%D9%88%D8%AF-%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9-%D8%A5%D9%83%D8%B3-%D8%AA%D8%BA%D9%84%D9%82-%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A-%D8%B2%D9%8A%D8%A7%D8%AF-%D9%88%D8%B5%D8%A7%D9%81%D9%8A",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/share/218438",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-10-24T17:07:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "715c340fd7",
- "score": 49.75,
+ "score": 49.61,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
