@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli military vehicles stormed Hebron in the occupied West Bank as the army began a days-long lockdown of the city, Middle East Eye reported. Around 20 vehicles entered Hebron as part of the operation.\n\nThe lockdown restricts movement in and out of the Palestinian city, a frequent flashpoint in the West Bank where Israeli settlers and Palestinians live in close proximity.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/military-vehicles-storm-west-banks-hebron-israeli-army-starts-days-long",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-23T22:27:22+00:00",
+ "dek": "Military vehicles storm West Bank’s Hebron as Israeli army starts days-long lockdown Around 20 Israeli military vehicles stormed the city of Hebron in the occupied West Bank, Al Jazeera reported, citing its correspondents on the ground.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/military-vehicles-storm-west-banks-hebron-israeli-army-starts-days-long",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "35abd78707",
+ "score": 58.89,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli army locks down Hebron with military vehicles"
+}
