@@ -9,18 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/dozens-palestinians-detained-during-israeli-raids-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://news.un.org/feed/view/en/story/2026/10/1168660",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
-  },
-  {
    "article": "https://www.al-monitor.com/originals/2026/10/afp-photographer-captures-striking-images-west-bank-attack",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -36,6 +24,12 @@
    "article": "https://www.dropsitenews.com/p/netanyahu-west-bank-hebron-kushner-slush-fund-brent-crude-iran-trump",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168660",
+   "name": "UN News",
+   "url": "https://news.un.org/",
    "verified": true
   }
  ],
@@ -55,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "45b6a2fd9c",
- "score": 61.85,
+ "score": 61.6,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
