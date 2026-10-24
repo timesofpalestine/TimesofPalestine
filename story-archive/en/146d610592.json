@@ -37,6 +37,12 @@
    "name": "UN News",
    "url": "https://news.un.org/",
    "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israel-inflicts",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-24T14:24:19+00:00",
@@ -55,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "146d610592",
- "score": 48.03,
+ "score": 47.88,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
