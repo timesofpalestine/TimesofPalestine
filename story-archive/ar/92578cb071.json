@@ -13,6 +13,12 @@
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/gazaalannet/84408",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": false
   }
  ],
  "date": "2026-10-24T12:19:00+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "92578cb071",
- "score": 46.83,
+ "score": 46.57,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
