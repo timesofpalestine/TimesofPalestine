@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli forces have begun a days-long military operation across the occupied West Bank featuring raids and demolitions, according to Al Jazeera English. Prime Minister Benjamin Netanyahu said during the operation that \"we will destroy this place,\" signaling an intensified security crackdown in the territory.\n\nThe operation marks an escalation of Israeli military activity in the West Bank, where Israeli forces regularly conduct raids against Palestinian armed groups and individuals Israel says pose security threats.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/24/why-is-israel-launching-a-new-military-operation-in-the-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/afp-photographer-captures-striking-images-west-bank-attack",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/netanyahu-west-bank-hebron-kushner-slush-fund-brent-crude-iran-trump",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-24T09:14:40+00:00",
+ "dek": "Netanyahu says 'we will destroy this place' as Israeli forces begin days-long operation with raids and demolitions.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adc5fcbc7e5-1792827339.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/24/why-is-israel-launching-a-new-military-operation-in-the-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/24/why-is-israel-launching-a-new-military-operation-in-the-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "45b6a2fd9c",
+ "score": 63.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel launches major West Bank operation with raids and demolitions"
+}

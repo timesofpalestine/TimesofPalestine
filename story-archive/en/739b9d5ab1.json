@@ -6,7 +6,19 @@
    "article": "https://www.aljazeera.com/features/2026/10/24/displaced-west-bank-palestinians-face-growing-hunger-after-un-cuts-food-aid?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/dozens-palestinians-detained-during-israeli-raids-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168660",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-24T07:09:55+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "739b9d5ab1",
- "score": 48.31,
+ "score": 48.06,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
