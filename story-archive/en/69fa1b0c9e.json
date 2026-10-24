@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.dropsitenews.com/p/netanyahu-west-bank-hebron-kushner-slush-fund-brent-crude-iran-trump",
-   "name": "Drop Site News",
-   "url": "https://www.dropsitenews.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-23T17:22:11+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "69fa1b0c9e",
- "score": 49.23,
+ "score": 48.97,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
