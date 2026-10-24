@@ -7,6 +7,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/bring-down-netanyahu-arab-israeli-parties-ready-opposition-alliance",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-23T06:00:03+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "ae6b946091",
- "score": 31.78,
+ "score": 31.53,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

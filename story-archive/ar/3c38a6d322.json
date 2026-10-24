@@ -13,6 +13,18 @@
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
    "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/10/24/%d8%b9%d8%a7%d8%ac%d9%84-%d9%85%d8%ac%d9%85%d8%b9-%d8%a7%d9%84%d8%b4%d9%81%d8%a7%d8%a1-%d8%a7%d9%84%d8%b7%d8%a8%d9%8a-%d8%b4%d9%87%d9%8a%d8%af-%d9%88%d9%85%d8%b5%d8%a7%d8%a8%d9%88%d9%86?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/188718/3-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D9%81%D9%8A-%D8%BA%D8%A7%D8%B1%D8%A9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%BA%D8%B2%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-10-23T07:03:00+00:00",
@@ -31,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "3c38a6d322",
- "score": 46.5,
+ "score": 46.25,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
