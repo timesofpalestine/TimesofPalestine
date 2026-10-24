@@ -6,7 +6,19 @@
    "article": "https://www.theguardian.com/world/2026/oct/24/israel-soldiers-raze-west-bank-neighbourhood-hebron-families-from-homes",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-forces-displace-hebron-families-after-deadly-attack",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/after-deadly-shooting-israel-forcibly-evicts-hundreds-palestinian-families-homes-hebron",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-24T13:17:13+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "4ca44a5e96",
- "score": 49.37,
+ "score": 49.06,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
