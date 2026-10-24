@@ -19,18 +19,6 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
-  },
-  {
-   "article": "https://www.alquds.co.uk/%d8%ac%d9%8a%d8%b4-%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a-%d9%8a%d9%82%d8%aa%d8%ad%d9%85-%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d9%84",
-   "name": "القدس العربي",
-   "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
-   "article": "https://www.pbc.ps/785-26",
-   "name": "تلفزيون فلسطين",
-   "url": "https://www.pbc.ps/",
-   "verified": true
   }
  ],
  "date": "2026-10-24T06:38:59+00:00",
@@ -49,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "88a225fbfb",
- "score": 60.92,
+ "score": 60.66,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
