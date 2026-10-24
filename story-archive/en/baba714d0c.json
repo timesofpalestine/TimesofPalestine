@@ -1,0 +1,39 @@
+{
+ "brief": "Thousands of Israelis gathered in Tel Aviv to protest Prime Minister Benjamin Netanyahu's government days before elections, Al Jazeera English reported. Opposition figures joined the demonstration, with protesters calling for an independent inquiry into the October 7 attacks and their handling.\n\nThe protest occurred as anger persisted over Netanyahu's administration's response to the assault and the subsequent military campaign in Gaza. Voting takes place in the coming days.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/24/thousands-of-israelis-rally-against-netanyahu-govt-days-before-election?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/thousands-rally-tel-aviv-against-netanyahu-ahead-vote",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-24T19:11:48+00:00",
+ "dek": "Opposition figures join Tel Aviv protesters demanding an independent October 7 inquiry.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adceee49503-1792863972.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/24/thousands-of-israelis-rally-against-netanyahu-govt-days-before-election?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/24/thousands-of-israelis-rally-against-netanyahu-govt-days-before-election?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "baba714d0c",
+ "score": 49.63,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli opposition rallies against Netanyahu ahead of election vote"
+}
