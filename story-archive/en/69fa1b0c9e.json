@@ -1,0 +1,39 @@
+{
+ "brief": "Prime Minister Benjamin Netanyahu has ordered the army to prepare for a \"very extensive\" operation in the occupied West Bank, following the deaths of two Israeli soldiers, The Guardian reported. The military said it thwarted a \"terror attack\" by two armed Palestinians in connection with the incident.\n\nDetails of the operation and the circumstances surrounding the soldiers' deaths remain limited. The announcement marks an escalation in Israeli military activity in the West Bank amid ongoing tensions.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/netanyahu-west-bank-hebron-kushner-slush-fund-brent-crude-iran-trump",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-23T17:22:11+00:00",
+ "dek": "Benjamin Netanyahu and ministers promise demolitions and forced displacement after deadly gunfight Israel has launched a campaign of collective punishment against Palestinians in Hebron after gunmen killed two Israeli soldiers and injured three near a…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/15b08426d4d1d04bcd2303817e34d7f49ab08850/539_0_4583_3667/master/4583.jpg?width=140&quality=85&auto=format&fit=max&s=b792a1b3608b64f3b7a1426fc251544d",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "69fa1b0c9e",
+ "score": 49.53,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Netanyahu orders extensive West Bank operation after soldiers killed"
+}
