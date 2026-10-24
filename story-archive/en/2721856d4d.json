@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli military forces raided at least 15 towns across the northern West Bank, including Nablus and Jenin, Al Jazeera English reported. The operation resulted in the detention of dozens of Palestinians during the sweeping overnight incursion.\n\nThe raids targeted multiple population centers in the occupied territory, though the military's stated objective for the operation was not immediately detailed in initial reports.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/24/israel-raids-towns-detains-dozens-of-palestinians-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/afp-photographer-captures-striking-images-west-bank-attack",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/dozens-palestinians-detained-during-israeli-raids-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168660",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-24T03:47:14+00:00",
+ "dek": "Israeli military raid targets at least 15 towns in the northern West Bank, including Nablus and Jenin.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adb4ad09e91-1792756432.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/24/israel-raids-towns-detains-dozens-of-palestinians-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/24/israel-raids-towns-detains-dozens-of-palestinians-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2721856d4d",
+ "score": 63.76,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces raid 15 West Bank towns, detain dozens of Palestinians"
+}
