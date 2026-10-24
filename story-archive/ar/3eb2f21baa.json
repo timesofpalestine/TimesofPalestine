@@ -6,7 +6,13 @@
    "article": "https://www.pbc.ps/1500-2500",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/188803/%D8%AA%D9%87%D8%AC%D9%8A%D8%B1-%D9%88%D8%A5%D8%BA%D9%84%D8%A7%D9%82%D8%A7%D8%AA-%D9%88%D9%87%D8%AF%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%81%D8%B1%D8%B6-%D9%88%D8%A7%D9%82%D8%B9%D8%A7-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A7-%D9%81%D9%8A-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-10-24T10:41:59+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "3eb2f21baa",
- "score": 63.32,
+ "score": 63.09,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
