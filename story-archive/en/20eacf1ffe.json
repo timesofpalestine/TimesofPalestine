@@ -1,0 +1,33 @@
+{
+ "brief": "Bakeries across Gaza are shutting down due to severe flour shortages, Al Jazeera English reported. The closures are leaving residents without access to bread as the territory faces acute food insecurity. Bakery operators say they cannot source the flour needed to continue production.\n\nThe closure of bakeries compounds an existing hunger crisis in Gaza, where civilians are increasingly struggling to find food. Residents depend heavily on bread as a staple, and the loss of functioning bakeries removes a critical source of nutrition for desperate populations across the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/24/severe-hunger-stalks-people-in-gaza-as-bakeries-close-down?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-24T20:52:55+00:00",
+ "dek": "Bakeries across Gaza are struggling to find flour to make bread for people desperate for food.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792875168.jpg?resize=1333%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/24/severe-hunger-stalks-people-in-gaza-as-bakeries-close-down?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/24/severe-hunger-stalks-people-in-gaza-as-bakeries-close-down?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "20eacf1ffe",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza bakeries close as flour supplies collapse, deepening hunger crisis"
+}
