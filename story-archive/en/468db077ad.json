@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/10/strike-gaza-university-kills-three-staff-hospital",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-seven",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "468db077ad",
- "score": 45.61,
+ "score": 45.35,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
