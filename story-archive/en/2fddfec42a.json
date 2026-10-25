@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/37501",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-warns-second-holocaust-if-he-loses-israeli-elections",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-25T09:02:09+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "2fddfec42a",
- "score": 48.99,
+ "score": 48.73,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
