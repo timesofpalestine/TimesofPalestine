@@ -1,0 +1,33 @@
+{
+ "brief": "Prime Minister Benjamin Netanyahu has frozen large-scale military operations in Gaza and suspended police training initiatives, delaying both efforts until after upcoming elections, the Ma'an news agency reported. The decision reflects Netanyahu's prioritization of the electoral calendar over ongoing security operations in the territory.\n\nThe postponement affects both combat operations and institutional development programs, signaling a shift in Israeli security priorities ahead of the electoral vote.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171070.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-25T08:58:32+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%202018.jpg?width=640",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171070.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Benjamin Netanyahu — Wikimedia Commons / US State Department (public domain)",
+  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg",
+  "rightsBasis": "wikimedia-cc",
+  "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bcb474c7a6",
+ "score": 49.85,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Netanyahu postpones major Gaza operations until after elections"
+}
