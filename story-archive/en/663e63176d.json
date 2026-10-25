@@ -1,0 +1,33 @@
+{
+ "brief": "Settlers stole twelve sheep and established two new settlement outposts in Masafer Yatta, the Ma'an news agency reported. The theft and unauthorized construction represent escalating Israeli settler activity in the area south of Hebron in the occupied West Bank.\n\nMasafer Yatta has seen repeated settler incursions and land seizures. The new outposts add to a network of unauthorized structures in the region, where Palestinians face displacement and resource restrictions.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171074.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-25T11:40:43+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171074.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "663e63176d",
+ "score": 49.32,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settlers steal sheep, establish two outposts in Masafer Yatta"
+}
