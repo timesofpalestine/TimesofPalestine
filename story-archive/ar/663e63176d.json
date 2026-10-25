@@ -13,18 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
-  },
-  {
-   "article": "https://www.pbc.ps/4532-15",
-   "name": "تلفزيون فلسطين",
-   "url": "https://www.pbc.ps/",
-   "verified": true
   }
  ],
  "date": "2026-10-25T11:40:43+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-westbank-b-ar.svg",
+ "image": "/media/times-of-palestine-cover-westbank-ar.svg",
  "lang": "ar",
  "link": "https://www.maannews.net/news/2171074.html",
  "max_age_hours": 72,
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "663e63176d",
- "score": 43.03,
+ "score": 42.74,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
