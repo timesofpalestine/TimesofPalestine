@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli soldiers beat and injured Hijazi Shawer, a 70-year-old Palestinian shopkeeper and community leader, according to Al Jazeera English. The incident occurred in Hebron, where Shawer sustained injuries in the altercation with troops.\n\nShawer is known in his community as a shopkeeper and local leader. The circumstances surrounding the soldiers' actions and the extent of his injuries were not detailed in available reports.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/25/israeli-soldiers-beat-elderly-palestinian-in-hebron?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-forcibly-displaces-2500-palestinians-imposes-collective-punishment-and-conducts-widespread-retaliatory-acts-against-civilians-in-hebron",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-20-palestinians-during-searches-besieged-hebron",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-25T16:11:37+00:00",
+ "dek": "Israeli soldiers beat and injured Hijazi Shawer, a 70-year-old Palestinian shopkeeper and community leader.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1792944578.jpg?resize=1620%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/25/israeli-soldiers-beat-elderly-palestinian-in-hebron?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/25/israeli-soldiers-beat-elderly-palestinian-in-hebron?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4675f489e4",
+ "score": 63.57,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli soldiers beat elderly Palestinian shopkeeper in Hebron"
+}
