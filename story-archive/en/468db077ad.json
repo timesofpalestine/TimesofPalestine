@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces struck the Islamic University compound in Gaza City, Ma'an news agency reported. The attack caused injuries among those at the site, though specific casualty figures were not immediately available.\n\nThe Islamic University, one of Gaza's major educational institutions, has faced repeated targeting during the ongoing conflict. The latest strike adds to documented damage to civilian infrastructure across the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37509",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-25T11:08:23+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/iviTLmYMhrWe0ABlzmI8lWS4C97F7nM9a3vsRxTb8axvswhuSsHISY-ksNKE2YpMHemRfjNq2PzP_-VCW7gXcjv06Vhz4Ne56QpyNevBPmkhmXwK2j-JIsV_efWuRE-jetXujGRE0ZvDdo5232eAnonj1_9vO9W1TysdxgCR0Nko1F9HSjSuQTRBUCXPaIqgGYC5sValWm2d-NF4Lun5RLn_-qPAdNrQP_cHb17_lv_SUtsLCqdJ_baK8JeCSiRzBHO6MzGx2K42q520cYYP0RRk1X308bctKjjbLPbQARieFqmiuWiIFIc3XUjGaT19yIAu7PbjOMTihd-rstVaug",
+ "lang": "en",
+ "link": "https://t.me/maannews/37509",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37509"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "468db077ad",
+ "score": 48.75,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Strikes hit Islamic University campus in Gaza"
+}
