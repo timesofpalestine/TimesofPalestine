@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli occupation forces displaced 2,000 Palestinian residents and arrested 20 others in Hebron on the third consecutive day of operations, the Ma'an news agency reported. The military campaign has continued without interruption across the city.\n\nDetails of the displacement and arrests were not immediately clear. The operation marks an escalation of Israeli military activity in the occupied West Bank city.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171071.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-forcibly-displaces-2500-palestinians-imposes-collective-punishment-and-conducts-widespread-retaliatory-acts-against-civilians-in-hebron",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-20-palestinians-during-searches-besieged-hebron",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-25T08:17:52+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171071.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6edf14187d",
+ "score": 49.18,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces displace 2,000 residents, arrest 20 in Hebron"
+}
