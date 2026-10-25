@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/thousands-rally-against-netanyahu-ahead-elections",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/10/thousands-rally-tel-aviv-against-netanyahu-ahead-vote",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "baba714d0c",
- "score": 46.59,
+ "score": 46.34,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

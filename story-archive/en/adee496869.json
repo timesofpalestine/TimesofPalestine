@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli forces have displaced more than 2,000 Palestinians from their homes in Hebron during sweeping raids across the West Bank, Al Jazeera English reported. The city remains largely closed as residents live under heightened tension and fear amid the military operations.\n\nDozens of Palestinians have been arrested across the West Bank as part of the raids, which have intensified security operations in the territory.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/24/more-than-2000-forced-from-homes-in-hebron-amid-israels-west-bank-raids?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israeli-forces-displace-hebron-families-after-deadly-attack",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/37486",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinian-children-treated-tear-gas-suffocation-hebron",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-24T15:50:49+00:00",
+ "dek": "Palestinians in Hebron are 'living in fear' with the city closed, while Israeli forces arrest dozens across West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6adcbfd8d2020-1792851928.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/24/more-than-2000-forced-from-homes-in-hebron-amid-israels-west-bank-raids?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/24/more-than-2000-forced-from-homes-in-hebron-amid-israels-west-bank-raids?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "adee496869",
+ "score": 58.01,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli raids displace over 2,000 from Hebron homes"
+}
