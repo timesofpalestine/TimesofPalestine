@@ -1,0 +1,39 @@
+{
+ "brief": "Israelis will vote on October 27 in an election that threatens Prime Minister Benjamin Netanyahu's grip on power, according to Al Jazeera English. Coalition negotiations and leadership questions dominate the campaign as parties position themselves for potential government formation.\n\nThe election outcome will determine which political blocs gain seats in parliament and whether Netanyahu can assemble a governing coalition or if a new prime minister will take office. Results will reshape Israel's political landscape as voters weigh competing visions for the country's direction.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/25/israeli-elections-what-are-the-possible-outcomes?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/25/gaza-suffering-campaign-fodder-palestinians-fear-worst-israel-election",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-25T07:10:52+00:00",
+ "dek": "Israelis face a pivotal election on October 27, as Netanyahu's leadership hangs in the balance amid coalition debates.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP26294328761487-1792912698.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/25/israeli-elections-what-are-the-possible-outcomes?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/25/israeli-elections-what-are-the-possible-outcomes?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ef0b3229d1",
+ "score": 49.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli voters decide Netanyahu's political future in October election"
+}
