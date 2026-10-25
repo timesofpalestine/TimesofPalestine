@@ -13,12 +13,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-seven",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-10-25T18:12:13+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "46e53328bb",
- "score": 63.66,
+ "score": 63.4,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

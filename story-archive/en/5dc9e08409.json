@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/37517",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-ben-gvir-says-he-confiscated-improvised-cake-made-palestinian",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-25T15:56:26+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "5dc9e08409",
- "score": 48.09,
+ "score": 47.82,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
