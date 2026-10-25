@@ -1,0 +1,33 @@
+{
+ "brief": "Visually and hearing-impaired children in Gaza lack access to specialist education because of the conflict, Al Jazeera English reported. Schools equipped to serve students with these disabilities have largely ceased operations, leaving families without resources to support their children's learning needs.\n\nThe absence of accessible education compounds existing challenges for disabled students in Gaza, where infrastructure supporting disability services remains minimal. Children who require tailored instruction and assistive technology face particular hardship as the war disrupts what limited specialist provision existed before the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/10/25/gazas-visually-and-hearing-impaired-children-miss-school-due-to-israel-war?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-25T13:46:51+00:00",
+ "dek": "Children in Gaza with auditory and visual challenges often have no access to specialist education.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/WA_1792089112416-1792568917.jpeg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/10/25/gazas-visually-and-hearing-impaired-children-miss-school-due-to-israel-war?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/10/25/gazas-visually-and-hearing-impaired-children-miss-school-due-to-israel-war?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "942aafb0d5",
+ "score": 49.49,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza war cuts off schooling for blind and deaf children"
+}
