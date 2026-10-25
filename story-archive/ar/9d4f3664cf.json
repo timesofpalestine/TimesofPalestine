@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، يتحكم 8 تجار و4 شركات إسرائيلية في بوابة الاستيراد إلى قطاع غزة، ما يعكس تركزاً حاداً في السيطرة على التجارة الخارجية. تشير الهندسة التجارية الراهنة إلى احتكار فعلي للعمليات الاستيرادية عبر الممرات المسموحة.\n\nهذا التوزيع للسلطة التجارية يؤثر على تدفق السلع والمنتجات إلى السوق المحلية في القطاع، وينعكس على أسعار البضائع والخيارات المتاحة أمام المستهلكين المحليين.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/25/1121844",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-25T07:04:18+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/25/1121844",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9d4f3664cf",
+ "score": 49.84,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "12 كياناً إسرائيلياً يسيطر على واردات غزة التجارية"
+}

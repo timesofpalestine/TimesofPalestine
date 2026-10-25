@@ -13,6 +13,12 @@
    "name": "Zeteo",
    "url": "https://zeteo.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/netanyahu-west-bank-hebron-kushner-slush-fund-brent-crude-iran-trump",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-23T17:22:11+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "69fa1b0c9e",
- "score": 37.87,
+ "score": 37.66,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
