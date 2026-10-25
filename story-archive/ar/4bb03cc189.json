@@ -1,0 +1,39 @@
+{
+ "brief": "قصفت مدفعية الاحتلال الإسرائيلي شرق مخيم المغازي وسط قطاع غزة، بحسب شبكة قدس. وشمل القصف المنطقة الشرقية من المخيم الذي يضم آلاف النازحين.\n\nلم تتوفر في الوقت الراهن معلومات تفصيلية عن عدد القتلى أو الجرحى جراء القصف، أو مدى الأضرار المادية الناجمة عنه.\n\nيندرج القصف في سياق العمليات العسكرية المستمرة للاحتلال على غزة منذ أكثر من عام، والتي استهدفت مخيمات ومناطق مأهولة بالسكان في أرجاء القطاع.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/QudsN/746509",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/325541",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-25T19:34:39+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/QudsN/746509",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4bb03cc189",
+ "score": 62.78,
+ "source": "شبكة قدس · تيليغرام",
+ "source_id": "tg-qudsn",
+ "source_url": "https://t.me/QudsN",
+ "title": "مدفعية الاحتلال تقصف شرق مخيم المغازي وسط غزة"
+}
