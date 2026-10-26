@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/world/2026/oct/24/israel-soldiers-raze-west-bank-neighbourhood-hebron-families-from-homes",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/we-left-heavy-hearts-israels-assault-displaces-thousands-hebron",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-25T06:24:46+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "4ca44a5e96",
- "score": 23.76,
+ "score": 23.6,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
