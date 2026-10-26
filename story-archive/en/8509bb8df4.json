@@ -1,0 +1,33 @@
+{
+ "brief": "Women make up 49 percent of Palestine's population, according to Ma'an news agency. The demographic presence of Palestinian women spans across the territories as they contend with substantial social, economic, and security obstacles.\n\nPalestinian women face compounded hardships stemming from conflict, displacement, and systemic barriers to education and employment. Their representation in public life and decision-making remains limited despite their substantial numbers within Palestinian society.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171142.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-26T09:16:04+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171142.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8509bb8df4",
+ "score": 49.59,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Palestinian women comprise nearly half the population amid mounting challenges"
+}
