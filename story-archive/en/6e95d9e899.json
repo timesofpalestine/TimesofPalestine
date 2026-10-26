@@ -6,11 +6,17 @@
    "article": "https://www.al-monitor.com/originals/2026/10/israels-eisenkot-vows-unity-netanyahu-paints-him-soft-iran",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-reiterates-endorsement-netanyahu-israeli-elections",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-25T21:30:26+00:00",
- "dek": "Israeli election contender Gadi Eisenkot on Sunday vowed to unite the country as he held his final major rally before the vote, while Prime Minister Benjamin Netanyahu sought to tar his main rival as soft on Iran.",
+ "dek": "Israeli election contender Gadi Eisenkot on Sunday vowed to unite the country as he held his final major rally before the vote, while Prime Minister Benjamin Netanyahu received fresh backing from US President Donald Trump.",
  "dup_of": null,
  "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-10/000_d4dv4qf.jpg?h=69f2b9d0&itok=2vJfo60O",
  "lang": "en",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "6e95d9e899",
- "score": 48.14,
+ "score": 47.76,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",

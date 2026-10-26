@@ -1,0 +1,45 @@
+{
+ "brief": "Trump stated he would not authorize military strikes \"today,\" according to Al Jazeera English, as tensions escalated between Iran and the US-led coalition. Iran said any renewed American and Israeli attacks \"will achieve no different outcome,\" signaling defiance following recent military operations.\n\nIsraeli forces conducted raids in Hebron as part of ongoing operations in the occupied West Bank. The developments come amid broader regional instability and threats of potential escalation.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/liveblog/2026/10/26/iran-war-live-trump-rules-out-strikes-today-israeli-forces-raid-hebron?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/putin-puts-trump-ahead-iran-bid-mediate-war",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/trump-threatens-global-economy-iran",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-26T00:00:00+00:00",
+ "dek": "Trump's statement comes as Iran says renewed US-Israeli attacks 'will achieve no different outcome'.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261021__D3YC8TU__v1__HighRes__IranWarDailyLife-1792972215.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/liveblog/2026/10/26/iran-war-live-trump-rules-out-strikes-today-israeli-forces-raid-hebron?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/liveblog/2026/10/26/iran-war-live-trump-rules-out-strikes-today-israeli-forces-raid-hebron?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "906b0438ae",
+ "score": 63.49,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Trump rules out immediate strikes as Iran vows response to attacks"
+}
