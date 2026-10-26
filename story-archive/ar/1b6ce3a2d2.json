@@ -1,0 +1,33 @@
+{
+ "brief": "أشار المركز الفلسطيني للإعلام إلى معوّقات تواجه وسائل الإعلام في نقل الحقائق من غزة في ظل الأوضاع الراهنة. يعكس العنوان الذي اختاره المركز التحديات الجسيمة التي تعترض عمل الصحفيين والإعلاميين في تغطية الأحداث داخل القطاع.\n\nيسلط التقرير الضوء على صعوبة الوصول إلى المعلومات الدقيقة والموثوقة وسط ظروف أمنية واتصالات معطلة، مما يؤثر على قدرة وسائل الإعلام على أداء دورها في إيصال الحقائق للرأي العام.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/26/1122002",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-26T19:36:47+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/26/1122002",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1b6ce3a2d2",
+ "score": 49.15,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الإعلام الفلسطيني يواجه تحديات في تغطية الأحداث بغزة"
+}
