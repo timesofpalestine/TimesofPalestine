@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-death-toll-rises-seven",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/strike-gaza-university-kills-three-staff-hospital",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-25T16:21:11+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "a656c868d7",
- "score": 57.31,
+ "score": 57.06,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
