@@ -6,7 +6,13 @@
    "article": "https://zeteo.com/p/this-week-in-palestine-israel-inflicts",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://video.snapstream.net/Play/6oINBX5sF3qG92uzD0liNe?accessToken=4b3z3nx5gnam",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-24T17:02:35+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "94bb45e767",
- "score": 18.31,
+ "score": 18.16,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
