@@ -1,0 +1,39 @@
+{
+ "brief": "Palestinians in surrounding areas are opening their homes to residents displaced by an Israeli assault on the besieged West Bank city of Hebron, Al Jazeera English reported. Thousands have fled their homes as the operation intensifies.\n\nThe displacement has prompted a humanitarian response from communities neighboring Hebron, with residents providing shelter to those unable to remain in the city during the military campaign.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/26/palestinians-are-opening-their-doors-to-the-displaced-of-besieged-hebron?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/26/collective-punishment-palestinians-displaced-israeli-forces-take-over-hebron-homes",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-26T09:45:25+00:00",
+ "dek": "Israel's assault on the West Bank city has forced thousands of people to flee their homes.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6adf0552db-1793000786.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/26/palestinians-are-opening-their-doors-to-the-displaced-of-besieged-hebron?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/26/palestinians-are-opening-their-doors-to-the-displaced-of-besieged-hebron?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a2a5fe965c",
+ "score": 49.66,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians shelter thousands fleeing Israeli assault on Hebron"
+}
