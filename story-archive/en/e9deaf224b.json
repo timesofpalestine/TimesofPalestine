@@ -1,0 +1,39 @@
+{
+ "brief": "Benjamin Netanyahu seeks a new mandate in Israel's first election Tuesday, the first vote since the 7 October 2023 Hamas attacks that killed hundreds of Israelis and triggered an ongoing military campaign in Gaza, The Guardian reported. The election comes as the country remains deeply divided over the war's conduct and its toll on civilians.\n\nThe vote represents a significant moment for Israeli politics following the deadliest day in the country's history, which prompted a sweeping military response and humanitarian crisis in Gaza.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/26/what-you-need-to-know-about-the-most-consequential-election-in-israels-history",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-faces-reckoning-october-7-israels-first-vote-attack",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-26T12:17:58+00:00",
+ "dek": "Benjamin Netanyahu seeks a new mandate in Israel’s first election since the 7 October 2023 Hamas attacks On Tuesday Israel holds its first election since the 7 October 2023 Hamas attacks, the deadliest day in the country’s history, which resulted in the…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/208d6ffd3357e01a80d3d6ccc223189f5a690a92/727_0_5500_4400/master/5500.jpg?width=140&quality=85&auto=format&fit=max&s=f647fc412a72756bffbf28bde2a93485",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/oct/26/what-you-need-to-know-about-the-most-consequential-election-in-israels-history",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/oct/26/what-you-need-to-know-about-the-most-consequential-election-in-israels-history"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e9deaf224b",
+ "score": 63.89,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israel holds first election since October 7 Hamas attacks"
+}
