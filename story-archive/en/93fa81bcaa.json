@@ -1,0 +1,33 @@
+{
+ "brief": "Blink Wallet has begun charging a $1 monthly fee on custodial accounts that remain inactive for 12 months, according to Bitcoin Magazine. The first charges were processed by mid-October 2026.\n\nThe fee structure is intended to encourage users to migrate toward self-custody arrangements, where they hold their own private keys rather than relying on the wallet provider to manage their funds.",
+ "cat": "bitcoin",
+ "corroborating_sources": [
+  {
+   "article": "https://bitcoinmagazine.com/business/blink-wallet-adds-inactivity-fee-to-custodial-accounts-accelerating-migration-to-self-custody",
+   "name": "Bitcoin Magazine",
+   "url": "https://bitcoinmagazine.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-26T21:14:23+00:00",
+ "dek": "Bitcoin Magazine Blink Wallet Adds Inactivity Fee to Custodial Accounts, Accelerating Migration to Self Custody Blink Wallet began charging a $1 monthly fee on custodial accounts inactive for 12 months, with the first charges processed by mid-October 2026 and…",
+ "dup_of": null,
+ "image": "https://bitcoinmagazine.com/wp-content/uploads/2026/10/tn-5.webp",
+ "lang": "en",
+ "link": "https://bitcoinmagazine.com/business/blink-wallet-adds-inactivity-fee-to-custodial-accounts-accelerating-migration-to-self-custody",
+ "max_age_hours": 336,
+ "media": {
+  "credit": "Bitcoin Magazine",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://bitcoinmagazine.com/business/blink-wallet-adds-inactivity-fee-to-custodial-accounts-accelerating-migration-to-self-custody"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "93fa81bcaa",
+ "score": 79.99,
+ "source": "Bitcoin Magazine",
+ "source_id": "btcmag",
+ "source_url": "https://bitcoinmagazine.com/",
+ "title": "Blink Wallet charges monthly fee on dormant custodial accounts"
+}
