@@ -1,0 +1,33 @@
+{
+ "brief": "A United Nations report has accused Israel of committing crimes against humanity in the occupied West Bank, Al Jazeera English reported. The report identifies crimes including extermination, torture, rape and other forms of sexual violence.\n\nThe findings add to mounting international scrutiny of Israeli military and security operations in Palestinian territories. The UN investigation documents systematic violations alleged to constitute crimes under international law.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/26/israel-committing-crimes-against-humanity-in-occupied-west-bank-un?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-26T15:44:59+00:00",
+ "dek": "UN report highlights crimes including extermination, torture, rape and other forms of sexual violence.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ade0192c04a-1792934290.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/26/israel-committing-crimes-against-humanity-in-occupied-west-bank-un?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/26/israel-committing-crimes-against-humanity-in-occupied-west-bank-un?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a28859fbf1",
+ "score": 49.59,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN accuses Israel of crimes against humanity in West Bank"
+}
