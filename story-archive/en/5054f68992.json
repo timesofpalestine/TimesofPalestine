@@ -7,6 +7,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-rivals-trade-attacks-over-iran-clock-counts-down-israel-vote",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-26T13:40:45+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "5054f68992",
- "score": 60.83,
+ "score": 60.62,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
