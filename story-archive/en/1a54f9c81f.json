@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/israel-forcibly-displaces-2500-palestinians-imposes-collective-punishment-and-conducts-widespread-retaliatory-acts-against-civilians-in-hebron",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hebron-under-full-israeli-siege-mayor-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-25T07:41:24+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1a54f9c81f",
- "score": 70.59,
+ "score": 70.57,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
