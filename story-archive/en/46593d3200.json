@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinian factions told Ma'an that no meaningful difference exists between Israeli political parties, according to a statement carried by the Ma'an news agency. The factions appeared to reject any distinction in their approach to Palestinian issues based on which party holds power in Israel.\n\nThe statement reflects a unified Palestinian position dismissing the significance of Israeli electoral outcomes for Palestinian interests and rights.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171165.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-26T12:31:03+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171165.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "46593d3200",
+ "score": 34.65,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Palestinian factions say Israeli parties are indistinguishable"
+}
