@@ -6,13 +6,7 @@
    "article": "https://www.dropsitenews.com/p/trump-threatens-global-economy-iran",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-netanyahu-clashes-army-chief-over-iran-related-military-action",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-25T20:18:04+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "60e27be76d",
- "score": 49.39,
+ "score": 49.03,
  "source": "Drop Site News",
  "source_id": "dropsite",
  "source_url": "https://www.dropsitenews.com/",
