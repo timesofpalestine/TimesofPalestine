@@ -1,0 +1,45 @@
+{
+ "brief": "Al Jazeera English examined the profiles of Israeli political candidates positioning themselves as alternatives to Prime Minister Benjamin Netanyahu in forthcoming elections. The report profiles opposition figures from across the political spectrum who are mounting campaigns to unseat the long-serving premier.\n\nThe candidates represent different ideological camps within Israeli politics, each offering distinct policy platforms and visions for the country's direction. Their campaigns reflect divisions within Israeli society over security, economic, and governance issues that have dominated recent political discourse.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/26/who-are-the-israeli-candidates-trying-to-unseat-netanyahu?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/factbox-who-are-leading-candidates-israels-election",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/25/gaza-suffering-campaign-fodder-palestinians-fear-worst-israel-election",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-26T13:02:29+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-25T190127Z_1634526228_RC2IAOAKPNCJ_RTRMADP_3_ISRAEL-ELECTION-EISENKOT-1-1793019704.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/26/who-are-the-israeli-candidates-trying-to-unseat-netanyahu?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/26/who-are-the-israeli-candidates-trying-to-unseat-netanyahu?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "565a65eb47",
+ "score": 49.39,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli opposition candidates challenge Netanyahu ahead of elections"
+}
