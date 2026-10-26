@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/world/2026/oct/26/what-you-need-to-know-about-the-most-consequential-election-in-israels-history",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-faces-reckoning-october-7-israels-first-vote-attack",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-26T12:17:58+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "e9deaf224b",
- "score": 59.66,
+ "score": 59.39,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
