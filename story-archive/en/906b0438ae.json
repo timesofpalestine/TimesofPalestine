@@ -1,6 +1,6 @@
 {
  "brief": "Trump stated he would not authorize military strikes \"today,\" according to Al Jazeera English, as tensions escalated between Iran and the US-led coalition. Iran said any renewed American and Israeli attacks \"will achieve no different outcome,\" signaling defiance following recent military operations.\n\nIsraeli forces conducted raids in Hebron as part of ongoing operations in the occupied West Bank. The developments come amid broader regional instability and threats of potential escalation.",
- "cat": "news",
+ "cat": "politics",
  "corroborating_sources": [
   {
    "article": "https://www.aljazeera.com/news/liveblog/2026/10/26/iran-war-live-trump-rules-out-strikes-today-israeli-forces-raid-hebron?traffic_source=rss",
@@ -16,7 +16,7 @@
   }
  ],
  "date": "2026-10-26T00:00:00+00:00",
- "dek": "Iran's security chief to meet defence officials from the Mecca Defence Alliance in Tehran as fighting rages in Yemen.",
+ "dek": "Saudi-led coalition says missiles launchers and tunnels in Yemen destroyed after Houthis targeted Riyadh airport.",
  "dup_of": null,
  "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP26294590512305-1792993048.jpg?resize=1920%2C1440",
  "lang": "en",
@@ -31,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "906b0438ae",
- "score": 31.02,
+ "score": 30.85,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
