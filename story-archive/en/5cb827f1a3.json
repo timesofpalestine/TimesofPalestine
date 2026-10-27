@@ -1,0 +1,33 @@
+{
+ "brief": "Israel sealed the West Bank and tightened restrictions on Gaza as voting approached in its election campaign, Al Jazeera English reported. Israeli forces emptied parts of Hebron and intensified security measures across the occupied territory during the final days before polls opened.\n\nThe closures coincided with the conclusion of Israel's election campaign, marking an escalation in movement restrictions and military operations across Palestinian areas.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/27/palestine-weekly-west-bank-under-siege-as-israelis-go-to-the-polls?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-27T06:28:13+00:00",
+ "dek": "Israel sealed the West Bank, emptied parts of Hebron and tightened the squeeze on Gaza as its election campaign closed.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adfb62d79fb-1793046061.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/27/palestine-weekly-west-bank-under-siege-as-israelis-go-to-the-polls?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/27/palestine-weekly-west-bank-under-siege-as-israelis-go-to-the-polls?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5cb827f1a3",
+ "score": 49.29,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel seals West Bank as election campaign closes"
+}
