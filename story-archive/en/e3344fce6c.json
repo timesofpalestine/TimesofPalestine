@@ -13,6 +13,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/macklemore-kicks-free-palestine-tour-calls-shared-humanity",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-27T05:14:13+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "e3344fce6c",
- "score": 48.18,
+ "score": 47.99,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
