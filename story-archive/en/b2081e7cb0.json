@@ -7,6 +7,18 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-exit-polls-indicate-deadlock-tuesdays-election",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/27/israel-election-too-close-to-call-as-exit-polls-give-netanyahu-bloc-slightly-fewer-seats",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-27T19:28:12+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "b2081e7cb0",
- "score": 48.2,
+ "score": 47.94,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
