@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/polls-open-netanyahu-fights-retain-power",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/10/explainer-israel-election-what-happens-after-polls-close",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "e9deaf224b",
- "score": 49.51,
+ "score": 49.25,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
