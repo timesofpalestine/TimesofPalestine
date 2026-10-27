@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/world/2026/oct/26/what-you-need-to-know-about-the-most-consequential-election-in-israels-history",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/explainer-israel-election-what-happens-after-polls-close",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-26T12:17:58+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "e9deaf224b",
- "score": 55.69,
+ "score": 55.32,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
