@@ -1,0 +1,45 @@
+{
+ "brief": "Israelis began voting in a national election Tuesday, with Prime Minister Benjamin Netanyahu fighting to remain in power amid deepening divisions over military campaigns in Gaza and Iran, Al Jazeera English reported. The election pits Netanyahu against challenger Gadi Eisenkot, whose campaign has highlighted the prime minister's growing political isolation.\n\nThe vote reflects mounting public discord over Netanyahu's handling of the conflicts and their toll on the country. The outcome will determine whether Netanyahu can secure another term or whether Israeli voters will shift direction on key security and foreign policy questions.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/27/israelis-begin-voting-as-netanyahu-fights-for-political-survival?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/benjamin-netanyahu-israels-longest-serving-pm-fighting-survival-0",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live/live-israelis-head-polls-netanyahu-fights-political-life",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-27T08:38:44+00:00",
+ "dek": "Israelis vote as Netanyahu faces Gadi Eisenkot amid divisions over the wars in Gaza and Iran and growing isolation.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1793090257.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/27/israelis-begin-voting-as-netanyahu-fights-for-political-survival?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/27/israelis-begin-voting-as-netanyahu-fights-for-political-survival?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fee78cda0d",
+ "score": 48.92,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israelis vote as Netanyahu faces challenge over war strategy"
+}
