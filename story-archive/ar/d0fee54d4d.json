@@ -7,6 +7,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.maannews.net/news/2171226.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
   }
  ],
  "date": "2026-10-27T06:49:37+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "d0fee54d4d",
- "score": 47.11,
+ "score": 46.84,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",

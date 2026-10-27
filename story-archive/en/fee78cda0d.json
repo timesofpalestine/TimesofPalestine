@@ -13,6 +13,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israel-elections-polls-open-netanyahu-fights-retain-power",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-27T08:38:44+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "fee78cda0d",
- "score": 48.38,
+ "score": 48.11,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
