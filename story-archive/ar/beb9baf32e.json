@@ -1,0 +1,33 @@
+{
+ "brief": "وثّق المركز الفلسطيني للإعلام آلاف الحكايات الشخصية لسكان غزة الذين فقدوا أرواحهم، مستعيداً وجوههم وأحلامهم من وسط الركام. يحافظ الأرشيف على الذاكرة الإنسانية ويعيد الاعتبار لهويات الضحايا بعيداً عن الأرقام الإحصائية.\n\nيسجّل المشروع شهادات حية عن حياة الشهداء قبل الحرب، ويربط أسماءهم بقصص واقعية تعكس طموحاتهم وذكرياتهم العائلية وطبيعة حياتهم اليومية. بذلك يعيد الأرشيف الإنسانية لأفراد غابوا عن العالم برقم في إحصائية.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/27/1122099",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-27T20:30:04+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/27/1122099",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "beb9baf32e",
+ "score": 63.42,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "أرشيف فلسطيني يوثّق حياة الشهداء في غزة"
+}
