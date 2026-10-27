@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/world/2026/oct/26/british-politicians-among-international-delegates-barred-from-entering-west-bank",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/british-politicians-detained-israel-why-trying-access-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-26T21:39:42+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "0a61cac1cf",
- "score": 55.02,
+ "score": 54.75,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

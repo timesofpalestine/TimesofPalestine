@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-israeli-forces-detain-and-assault-palestinian-occupied-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://news.un.org/feed/view/en/story/2026/10/1168672",
    "name": "UN News",
    "url": "https://news.un.org/",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "50cafa6ce2",
- "score": 52.84,
+ "score": 52.57,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
