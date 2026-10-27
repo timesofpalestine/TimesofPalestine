@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/world/2026/oct/26/british-politicians-among-international-delegates-barred-from-entering-west-bank",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/palestinians-protest-against-military-demolitions-west-bank-israelis-vote",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-26T21:39:42+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "0a61cac1cf",
- "score": 47.56,
+ "score": 47.38,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

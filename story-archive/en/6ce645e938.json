@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli military operations in Hebron have disrupted Palestinian civilian life, forcing a groom to delay his wedding, Al Jazeera English reported. The lockdown has restricted movement and normal activities across the West Bank city.\n\nThe bride and groom were unable to proceed with their planned ceremony as the military operation confined residents to their homes and limited access throughout the area. The postponement reflects the broader impact of Israeli military restrictions on Palestinians' ability to conduct everyday life and mark significant personal occasions.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/27/dream-postponed-hebron-groom-caught-in-israeli-military-lockdown?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/palestinians-protest-against-military-demolitions-west-bank-israelis-vote",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/26/collective-punishment-palestinians-displaced-israeli-forces-take-over-hebron-homes",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-27T21:12:27+00:00",
+ "dek": "Israel's military operation in West Bank's Hebron has disrupted Palestinian life, including a postponed wedding.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/164A2328-1793132218.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/27/dream-postponed-hebron-groom-caught-in-israeli-military-lockdown?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/27/dream-postponed-hebron-groom-caught-in-israeli-military-lockdown?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6ce645e938",
+ "score": 49.73,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli military lockdown forces Hebron groom to postpone wedding"
+}
