@@ -1,0 +1,39 @@
+{
+ "brief": "Millions of Israelis cast ballots in an election widely billed as the most consequential in the country's history, according to Al Jazeera English. Prime Minister Benjamin Netanyahu faces a tough test at the polls as voters decide the political direction of the nation.\n\nThe contest comes amid ongoing regional tensions and domestic divisions over the government's conduct of military operations and policies.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-2026-live-netanyahu-faces-tough-test-in-high-stakes-polls?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/benjamin-netanyahu-israels-longest-serving-pm-fighting-survival-0",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-27T04:30:00+00:00",
+ "dek": "Millions to cast ballots in election widely billed as the most consequential in Israel's history.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ade09b1-1792936369.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-2026-live-netanyahu-faces-tough-test-in-high-stakes-polls?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-2026-live-netanyahu-faces-tough-test-in-high-stakes-polls?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5846cc25c4",
+ "score": 49.85,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israelis vote in high-stakes 2026 election widely seen as consequential"
+}
