@@ -1,0 +1,33 @@
+{
+ "brief": "Exit polls are expected soon after voting closes in an Israeli election marked by high turnout and described as among the most consequential in the country's history, Al Jazeera English reported. The vote comes amid ongoing tensions and political divisions within Israeli society.\n\nPrime Minister Benjamin Netanyahu faces a competitive race against other candidates in the ballot. The election's significance reflects deep divisions over key policy issues and the country's political direction.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-27T19:28:12+00:00",
+ "dek": "High turnout in vote widely described as the most consequential in Israel's history.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261027__D4KR288__v1__HighRes__IsraelPalestinianVote-1793129029.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b2081e7cb0",
+ "score": 49.63,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel votes in consequential election as Netanyahu faces tight race"
+}
