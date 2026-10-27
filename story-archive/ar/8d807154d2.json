@@ -1,0 +1,33 @@
+{
+ "brief": "لا توجر مادة إخبارية محددة تتضمن وقائع قابلة للتقرير في المصدر المرفق. العنوان وحده لا يحمل معلومات كافية عن حدث أو تطور محدد يمكن توثيقه وترجمته إلى خبر صحفي مهني.\n\nلتقديم موجز إخباري دقيق، أحتاج إلى مادة مصدرية تتضمن: تفاصيل الحدث (متى، أين، من المشاركون)، اقتباسات أو بيانات رسمية، أرقام أو معطيات، أو سياق محدد يستند إلى معلومات موثقة وليس مجرد عنوان عام.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/325704",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-27T10:28:13+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/DB0rahuf5ytnMhCRz0B6DsnOjv_WhhnZ4SPyApuQ2l3jEKyzPHsb8G59-Gjb1vBQFO2vNl8CZ2KK5Y61jGy2ZhEYKOojNjlZuyt7a0FEJqPjKpbPFMdKreKHwQruRtXUxmJ2uurhDrn8HxH0DEdDl0CMD1qCHWPWhtk3_JSb_jJnL8J23-Geb1-XJLBmIMEuyF_oPb_QLp2M1NuWvTAzU_ycT0GMJ94OLyA6jfhPxDLj2GjyGcCr_0SFeD3ns_wAJp03R1lWwjRI5TiLDsQTC2kUKV2-8gZbypZOuASzgcrtjRwmkGrtBHJCB5lqBQ8KvQ3DXkJfPBQCBKsK9yhpog.jpg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/325704",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "المركز الفلسطيني للإعلام",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/Palinfo/325704"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8d807154d2",
+ "score": 48.8,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الحياة اليومية في غزة تستمر وسط الأزمات"
+}

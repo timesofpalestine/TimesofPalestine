@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.theguardian.com/world/gallery/2026/oct/27/israel-goes-to-the-polls-in-pictures",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinians-are-voting-israel-ensure-their-very-survival",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "e66ad9dacf",
- "score": 43.52,
+ "score": 43.28,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
