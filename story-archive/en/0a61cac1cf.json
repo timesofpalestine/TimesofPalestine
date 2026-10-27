@@ -13,12 +13,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/israel-detains-british-mps-and-stops-them-entering-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-10-26T21:39:42+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "0a61cac1cf",
- "score": 49.4,
+ "score": 49.1,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
