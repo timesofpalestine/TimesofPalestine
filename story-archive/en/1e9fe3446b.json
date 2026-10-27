@@ -1,0 +1,33 @@
+{
+ "brief": "A deadly shooting incident occurred in the West Bank, according to the Quincy Institute. Details about the number of casualties, the location within the West Bank, and the circumstances surrounding the shooting were not specified in the available information.\n\nThe incident adds to ongoing tensions in the region. Jordan's involvement or connection to the event remains unclear from the reported information.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://video.snapstream.net/Play/6oINBX5sF3qG92uzD0liNe?accessToken=4b3z3nx5gnam",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-23T22:06:00+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://d2yaadn55dzbvm.cloudfront.net/d00e41d9-80a0-439b-baa8-864b61c341aa/43213054-ee54-429d-ae41-03de76579395.mp4.jpg",
+ "lang": "en",
+ "link": "https://video.snapstream.net/Play/6oINBX5sF3qG92uzD0liNe?accessToken=4b3z3nx5gnam",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Quincy Institute",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://video.snapstream.net/Play/6oINBX5sF3qG92uzD0liNe?accessToken=4b3z3nx5gnam"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1e9fe3446b",
+ "score": 81.77,
+ "source": "Quincy Institute",
+ "source_id": "quincy",
+ "source_url": "https://quincyinst.org/",
+ "title": "Shooting in West Bank kills multiple Palestinians"
+}
