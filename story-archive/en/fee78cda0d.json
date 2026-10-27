@@ -19,12 +19,6 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/gallery/2026/oct/27/israel-goes-to-the-polls-in-pictures",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
   }
  ],
  "date": "2026-10-27T08:38:44+00:00",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "fee78cda0d",
- "score": 46.76,
+ "score": 46.56,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

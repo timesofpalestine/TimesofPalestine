@@ -1,0 +1,33 @@
+{
+ "brief": "Voters headed to polling stations across Israel to elect 120 members of the Knesset in an election that will determine whether Benjamin Netanyahu's rightwing coalition can remain in power, The Guardian reported. The vote carries major implications for Israeli politics and the regional landscape.\n\nThe election centers on Netanyahu's ability to maintain his current governing coalition amid ongoing political divisions and disputes within the government.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/gallery/2026/oct/27/israel-goes-to-the-polls-in-pictures",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-27T12:04:19+00:00",
+ "dek": "Voters head to the polls to elect 120 members of the Knesset in an election that will determine whether Benjamin Netanyahu’s rightwing coalition can remain in power.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/93b84ad33ed08d35441f5d2aace30e3910713d07/364_0_5001_4000/master/5001.jpg?width=140&quality=85&auto=format&fit=max&s=3dade6cd6f5b0bae208f230d62c3c748",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/gallery/2026/oct/27/israel-goes-to-the-polls-in-pictures",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/gallery/2026/oct/27/israel-goes-to-the-polls-in-pictures"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "330e7d4649",
+ "score": 48.94,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israelis vote on Netanyahu coalition's future"
+}
