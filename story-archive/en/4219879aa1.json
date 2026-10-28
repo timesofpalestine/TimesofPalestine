@@ -6,13 +6,7 @@
    "article": "https://www.al-monitor.com/originals/2026/10/israels-high-turnout-vote-brushed-aside-rest-middle-east",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-election-deadlock-what-could-happen-next",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-28T16:46:37+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "4219879aa1",
- "score": 48.91,
+ "score": 48.63,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
