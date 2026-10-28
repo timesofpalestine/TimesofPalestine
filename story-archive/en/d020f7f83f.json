@@ -9,16 +9,16 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-and-opposition-blocs-fall-short-palestinian-parties-projected",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/world/2026/oct/27/palestinian-parties-knesset-election-exit-polls-redraw-israel-political-landscape",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/smotrich-says-he-wont-let-palestinian-citizens-celebrate-election-gains",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-10-28T00:43:56+00:00",
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "d020f7f83f",
- "score": 75.48,
+ "score": 75.28,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
