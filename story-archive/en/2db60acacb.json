@@ -1,0 +1,45 @@
+{
+ "brief": "Exit poll projections suggest that even if Gadi Eisenkot's political bloc allied with Arab parties, the combined votes might prove insufficient to unseat Prime Minister Benjamin Netanyahu, Al Jazeera English reported. The arithmetic that once positioned Arab lawmakers as potential kingmakers has shifted, limiting their leverage in post-election coalition negotiations.\n\nArab parties have historically played a crucial role in Israeli government formation when results are closely divided. However, changing political dynamics and voting patterns have narrowed their influence in this election cycle, complicating efforts to build an alternative coalition against Netanyahu.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/28/can-israeli-leader-eisenkot-ally-with-arab-parties-to-unseat-netanyahu?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/27/palestinian-parties-knesset-election-exit-polls-redraw-israel-political-landscape",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/netanyahu-collapsed-but-zionists",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-28T14:30:17+00:00",
+ "dek": "Exit poll projections show that if Eisenkot’s bloc teamed up with Arab parties, they could potentially unseat Bibi.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ae1ed4d520f4-1793191245.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/28/can-israeli-leader-eisenkot-ally-with-arab-parties-to-unseat-netanyahu?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/28/can-israeli-leader-eisenkot-ally-with-arab-parties-to-unseat-netanyahu?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2db60acacb",
+ "score": 33.94,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Arab parties lose sway as Israeli kingmakers despite election math"
+}
