@@ -25,6 +25,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/analysis-israels-election-gives-survivor-netanyahu-path-keep-power",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-28T14:30:17+00:00",
@@ -43,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "2db60acacb",
- "score": 32.76,
+ "score": 32.61,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
