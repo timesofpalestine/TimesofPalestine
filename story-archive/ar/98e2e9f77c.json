@@ -6,13 +6,7 @@
    "article": "https://t.me/Arabi21News/430216",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
-   "article": "https://qudsn.co/post?id=218492&slug=%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D9%86%D9%8A%D8%B3%D8%AA-%D8%A2%D9%8A%D8%B2%D9%86%D9%83%D9%88%D8%AA-%D9%8A%D8%AA%D9%82%D8%AF%D9%85-%D8%B9%D9%84%D9%89-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88",
-   "name": "شبكة قدس الإخبارية",
-   "url": "https://qudsn.co/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-28T00:24:48+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "98e2e9f77c",
- "score": 41.4,
+ "score": 41.13,
  "source": "عربي21",
  "source_id": "tg-arabi21",
  "source_url": "https://t.me/arabi21news",
