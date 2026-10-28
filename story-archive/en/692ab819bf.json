@@ -9,15 +9,21 @@
    "verified": true
   },
   {
-   "article": "https://www.theguardian.com/world/2026/oct/28/israel-election-results-what-we-know-so-far-ntwnfb",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/likud-says-israeli-election-stolen-arab-parties",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahus-bloc-short-majority-77-percent-votes-counted",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
+   "article": "https://zeteo.com/p/netanyahu-collapsed-but-zionists",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/28/israel-election-results-what-we-know-so-far-ntwnfb",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
    "verified": true
   },
   {
@@ -49,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "692ab819bf",
- "score": 47.3,
+ "score": 47.02,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
