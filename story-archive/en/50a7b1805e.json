@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli forces continued military operations across the West Bank as a lockdown in Hebron entered its sixth day, Al Jazeera English reported. A UN agency expressed \"grave concern\" over the situation in the southern Palestinian city and warned of parallels to a 2025 \"Iron Wall\" operation.\n\nThe lockdown has restricted Palestinian movement and access to basic services in Hebron, one of the largest cities in the occupied territory. The UN agency cautioned that the current operations risk repeating patterns of previous large-scale Israeli military campaigns in the region.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/28/israeli-forces-continue-west-bank-raids-as-hebron-lockdown-enters-sixth-day?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://english.pnn.ps/news/48370",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-28T10:41:07+00:00",
+ "dek": "UN agency expresses 'grave concern' in Hebron and warns of echoes of 2025 'Iron Wall' operation.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-27T110407Z_28644135_RC2MBOAYL2BO_RTRMADP_3_ISRAEL-PALESTINIANS-HEBRON-OPERATION-1-1793183797.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/28/israeli-forces-continue-west-bank-raids-as-hebron-lockdown-enters-sixth-day?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/28/israeli-forces-continue-west-bank-raids-as-hebron-lockdown-enters-sixth-day?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "50a7b1805e",
+ "score": 63.48,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces maintain West Bank raids as Hebron lockdown extends"
+}
