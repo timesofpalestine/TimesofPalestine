@@ -1,0 +1,39 @@
+{
+ "brief": "Families in Gaza's refugee camps face a fourth consecutive winter battling wind, rain, and flooding as the territory braces for harsh weather conditions. The humanitarian situation in the densely populated camps has deteriorated significantly over successive winters, compounding challenges already facing displaced Palestinians.\n\nAl Jazeera English reported that the impending season is likely to bring further devastation to an already vulnerable population. Winter weather compounds existing shortages of shelter, clean water, and sanitation facilities in the camps, where living conditions remain severely constrained.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/10/28/gaza-families-brace-for-a-fourth-winter-of-wind-rain-and-floods-in-camps?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168685",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-28T11:36:04+00:00",
+ "dek": "Gaza's impending winter is likely to lead to further devastation for Palestinians.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/873A4394-copy-1793098841.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/10/28/gaza-families-brace-for-a-fourth-winter-of-wind-rain-and-floods-in-camps?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/10/28/gaza-families-brace-for-a-fourth-winter-of-wind-rain-and-floods-in-camps?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9a389f3f3e",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Winter threatens Gaza's displaced families in refugee camps"
+}

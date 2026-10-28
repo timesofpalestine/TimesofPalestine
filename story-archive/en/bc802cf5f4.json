@@ -1,0 +1,45 @@
+{
+ "brief": "Arab voters in Israel turned out in record numbers in recent elections, positioning Palestinian citizens and their parties as potential kingmakers in coalition negotiations, according to Al Jazeera English. The unusually strong participation among this demographic could shift the balance against right-wing and far-right parties seeking to form a government.\n\nPalestinian-led parties have historically struggled with voter engagement, but the latest results suggest a mobilized electorate that may wield significant influence in determining which bloc can assemble a parliamentary majority. The outcome complicates efforts by Netanyahu's allies to secure a governing coalition without relying on Arab party support or votes.",
+ "cat": "pal48",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/28/high-voter-turnout-from-palestinian-citizens-of-israel-threatens-netanyahu?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/netanyahu-collapsed-but-zionists",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/video/2026/oct/28/record-number-of-voters-head-to-polls-in-high-stakes-israel-election-video",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-28T11:33:13+00:00",
+ "dek": "A historic turnout among Palestinian citizens of Israel positions Arab parties as kingmakers against the far right.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ae10a5446ad-1793133140.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/28/high-voter-turnout-from-palestinian-citizens-of-israel-threatens-netanyahu?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/28/high-voter-turnout-from-palestinian-citizens-of-israel-threatens-netanyahu?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bc802cf5f4",
+ "score": 49.66,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinian citizens' high turnout threatens Netanyahu's coalition"
+}
