@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-bloc-leads-after-half-israeli-votes-counted-no-majority",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-653",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "58fd76f8a3",
- "score": 46.21,
+ "score": 45.98,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
