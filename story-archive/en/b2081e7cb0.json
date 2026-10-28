@@ -9,22 +9,22 @@
    "verified": true
   },
   {
-   "article": "https://www.theguardian.com/world/2026/oct/27/israel-election-too-close-to-call-as-exit-polls-give-netanyahu-bloc-slightly-fewer-seats",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-exit-polls-indicate-deadlock-tuesdays-election",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/27/palestinian-parties-knesset-election-exit-polls-redraw-israel-political-landscape",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-27T19:28:12+00:00",
- "dek": "High turnout in vote widely described as the most consequential in Israel's history.",
+ "dek": "Exit polls show no outright winner, but suggest Netanyahu's coalition is tied with the main Jewish-led opposition bloc.",
  "dup_of": null,
- "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ae1145c18-1793135708.jpg?resize=1920%2C1440",
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ae156ab3266-1793152683.jpg?resize=1920%2C1440",
  "lang": "en",
  "link": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race?traffic_source=rss",
  "max_age_hours": 72,
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "b2081e7cb0",
- "score": 45.49,
+ "score": 45.22,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
