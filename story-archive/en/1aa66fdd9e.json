@@ -13,6 +13,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-eisenkot-stake-rival-claims-lead-israel-after-deadlocked-vote",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-28T00:43:02+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "1aa66fdd9e",
- "score": 47.77,
+ "score": 47.16,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
