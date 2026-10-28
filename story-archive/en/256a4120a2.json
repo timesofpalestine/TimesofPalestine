@@ -1,0 +1,39 @@
+{
+ "brief": "Prime Minister Benjamin Netanyahu said election results will be confirmed within one or two days, Al Jazeera English reported. He outlined his government's achievements and future plans as his Likud party maintains its polling lead ahead of the vote count completion.\n\nThe timeline for final results suggests ongoing vote processing, with Netanyahu positioning his party's performance as successful while detailed tallies remain pending.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/28/netanyahu-outlines-achievements-future-plans-as-likud-leads-polls?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-his-bloc-will-win-decisive-majority",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-28T06:02:00+00:00",
+ "dek": "Israel's Prime Minister Benjamin Netanyahu says 'true' election results due in one or two days.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP26301069753352-1793162999.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/28/netanyahu-outlines-achievements-future-plans-as-likud-leads-polls?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/28/netanyahu-outlines-achievements-future-plans-as-likud-leads-polls?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "256a4120a2",
+ "score": 47.89,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu outlines achievements as Likud leads polls"
+}
