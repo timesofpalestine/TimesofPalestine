@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/10/what-israels-election-could-mean-palestinians-gaza-west-bank",
    "name": "Quincy Institute",
    "url": "https://quincyinst.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/gaza-ramallah-palestinians-see-little-hope-israeli-vote",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-27T17:44:31+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "cbfff00f7a",
- "score": 70.9,
+ "score": 70.89,
  "source": "Quincy Institute",
  "source_id": "quincy",
  "source_url": "https://quincyinst.org/",

@@ -13,12 +13,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahus-bloc-short-majority-77-percent-votes-counted",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-10-27T21:56:00+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "963630846c",
- "score": 71.1,
+ "score": 71.08,
  "source": "Quincy Institute",
  "source_id": "quincy",
  "source_url": "https://quincyinst.org/",
