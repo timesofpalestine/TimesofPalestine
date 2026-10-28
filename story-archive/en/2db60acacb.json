@@ -6,7 +6,19 @@
    "article": "https://www.aljazeera.com/news/2026/10/28/can-israeli-leader-eisenkot-ally-with-arab-parties-to-unseat-netanyahu?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/likud-says-israeli-election-stolen-arab-parties",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/netanyahu-collapsed-but-zionists",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   },
   {
    "article": "https://www.theguardian.com/world/2026/oct/27/palestinian-parties-knesset-election-exit-polls-redraw-israel-political-landscape",
@@ -31,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "2db60acacb",
- "score": 33.21,
+ "score": 32.99,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
