@@ -13,6 +13,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/commentisfree/2026/oct/28/the-guardian-view-on-israels-elections-netanyahu-lost-his-mandate-if-opponents-unite-hell-lose-power-too",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-28T18:31:33+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "a5487bcf67",
- "score": 49.57,
+ "score": 49.3,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

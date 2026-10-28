@@ -1,0 +1,33 @@
+{
+ "brief": "An investigation by Dawn has found that Israel is using artificial intelligence systems to rewrite Palestinian history, according to reporting on digital manipulation of historical records and cultural narratives.\n\nThe case of Palestinian textile traditions illustrates the broader pattern. A Palestinian woman inherited two embroidered dresses from her grandmother, who was displaced from Asqalan—now called Ashkelon in occupied Palestine. The garments feature patterns named Jannah wa Nar (\"Heaven and Fire\") and Jiljileh (\"Little Bells\"), representing weaving traditions transmitted across generations of Palestinian families before displacement.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://dawnmena.org/how-israel-is-using-ai-to-rewrite-palestinian-history",
+   "name": "DAWN",
+   "url": "https://dawnmena.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-28T18:17:57+00:00",
+ "dek": "My mother inherited two dresses from her grandmother, who was displaced from Asqalan, now called Ashkelon, in occupied Palestine. The dresses feature patterns known as Jannah wa Nar (\"Heaven and Fire\") and Jiljileh (\"Little Bells\"), weaving traditions passed down through generations of Palestinians.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-research.svg",
+ "lang": "en",
+ "link": "https://dawnmena.org/how-israel-is-using-ai-to-rewrite-palestinian-history",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b2c669aed7",
+ "score": 71.94,
+ "source": "DAWN",
+ "source_id": "dawn",
+ "source_url": "https://dawnmena.org/",
+ "title": "Israel employs AI technology to alter Palestinian historical narratives"
+}
