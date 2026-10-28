@@ -7,6 +7,12 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/28/israeli-forces-continue-west-bank-raids-as-hebron-lockdown-enters-sixth-day?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-28T07:27:36+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "26fb23b31c",
- "score": 47.78,
+ "score": 47.52,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
