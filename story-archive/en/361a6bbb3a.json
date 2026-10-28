@@ -1,0 +1,33 @@
+{
+ "brief": "Trump is pressuring Israeli Prime Minister Benjamin Netanyahu to remove National Security Minister Itamar Ben-Gvir from his government, the Ma'an news agency reported. The pressure campaign signals U.S. efforts to reshape Israel's governing coalition at a moment of regional tension.\n\nTrump's move appears designed to pave the way for a national unity government, according to the report. The U.S. position reflects broader concerns about Ben-Gvir's role and influence within Netanyahu's administration.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171279.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-28T09:14:07+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-politics.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171279.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "361a6bbb3a",
+ "score": 49.54,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Trump pressures Netanyahu to remove Ben-Gvir from cabinet"
+}
