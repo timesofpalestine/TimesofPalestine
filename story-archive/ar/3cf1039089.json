@@ -6,13 +6,19 @@
    "article": "https://www.aljazeera.net/news/2026/10/28/%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8%d8%a7%d8%aa-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d9%83%d9%8a%d9%81-%d8%ae%d8%b3%d8%b1-%d9%86%d8%aa%d9%86%d9%8a%d8%a7%d9%87%d9%88?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
   },
   {
-   "article": "https://t.me/Arabi21News/430208",
+   "article": "https://qudsn.co/post?id=218506&slug=%D9%85%D8%A7-%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D9%86%D9%8A%D8%B3%D8%AA%C2%A0%D8%A8%D8%B9%D8%AF-%D9%81%D8%B1%D8%B2-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-%D9%86%D8%B5%D9%81-%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D8%A7%D8%AA%D8%9F",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/430207",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": false
+   "verified": true
   }
  ],
  "date": "2026-10-28T11:29:58+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "3cf1039089",
- "score": 47.54,
+ "score": 47.28,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",

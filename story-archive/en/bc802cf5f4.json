@@ -19,6 +19,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahus-bloc-short-majority-77-percent-votes-counted",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-28T11:33:13+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "bc802cf5f4",
- "score": 47.59,
+ "score": 47.32,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
