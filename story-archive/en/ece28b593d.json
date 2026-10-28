@@ -1,0 +1,45 @@
+{
+ "brief": "Israel's political system requires coalition governments to reach a 61-seat majority in the 120-seat Knesset. The country has never been governed by a single party, making coalition-building essential for forming any government, according to Al Jazeera English.\n\nThe puzzle involves assembling blocs of different parties around potential leaders such as Benjamin Netanyahu or Gadi Eisenkot. Success depends on which parties agree to join negotiations and which ideological or practical demands they place on potential partners in government formation.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/28/netanyahu-or-eisenkot-can-you-form-israels-next-coalition-government?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-bloc-leads-55-seats-short-majority-vote",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-bloc-leads-israeli-votes-counted-no-majority",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-28T10:00:11+00:00",
+ "dek": "Israel has only ever been governed by coalitions. Can you put one together that reaches 61 of the Knesset's 120 seats?",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/INTERACTIVE-Poster-Israel-coalition-1793178029.png?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/28/netanyahu-or-eisenkot-can-you-form-israels-next-coalition-government?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/28/netanyahu-or-eisenkot-can-you-form-israels-next-coalition-government?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ece28b593d",
+ "score": 49.85,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel's coalition calculator: 61 seats needed to govern"
+}

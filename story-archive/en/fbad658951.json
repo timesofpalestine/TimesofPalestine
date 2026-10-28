@@ -7,6 +7,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/27/palestinian-parties-knesset-election-exit-polls-redraw-israel-political-landscape",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-28T08:01:03+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "fbad658951",
- "score": 48.69,
+ "score": 48.47,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
