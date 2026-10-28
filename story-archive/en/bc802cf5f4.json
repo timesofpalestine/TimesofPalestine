@@ -19,12 +19,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/10/israeli-arab-parties-hold-key-netanyahu-falls-short-majority",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-10-28T11:33:13+00:00",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "bc802cf5f4",
- "score": 47.98,
+ "score": 47.74,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

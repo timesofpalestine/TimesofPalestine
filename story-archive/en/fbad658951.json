@@ -7,6 +7,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israels-deadlock-could-trump-broker-netanyahu-eisenkot-deal",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-28T08:01:03+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "fbad658951",
- "score": 45.52,
+ "score": 45.29,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
