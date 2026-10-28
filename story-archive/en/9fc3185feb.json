@@ -1,0 +1,45 @@
+{
+ "brief": "Exit polls from Israel's election show the country remains deadlocked, with neither Prime Minister Benjamin Netanyahu's bloc nor challenger Gadi Eisenkot's alliance on track to secure a parliamentary majority, Al Jazeera English reported. The results mark Israel's first election since the October 7 attack and subsequent war in Gaza.\n\nThe tight race suggests neither camp has achieved the 61 seats needed to form a government in the 120-seat Knesset. Final results and coalition negotiations are expected to determine the outcome in coming days.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/27/exit-polls-following-israeli-elections-indicate-no-clear-winner?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-exit-polls-indicate-deadlock-tuesdays-election",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/27/palestinian-parties-knesset-election-exit-polls-redraw-israel-political-landscape",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-27T20:18:18+00:00",
+ "dek": "Israel's first election since October 7 appears deadlocked, with neither Netanyahu nor Eisenkot on track for a majority.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261027__D4LX4B7__v1__HighRes__IsraelVote-1793138584.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/27/exit-polls-following-israeli-elections-indicate-no-clear-winner?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/27/exit-polls-following-israeli-elections-indicate-no-clear-winner?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9fc3185feb",
+ "score": 59.35,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli election produces no clear majority for Netanyahu or rivals"
+}

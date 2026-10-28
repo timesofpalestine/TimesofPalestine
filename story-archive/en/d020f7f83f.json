@@ -1,0 +1,39 @@
+{
+ "brief": "Exit polls suggest Arab parties could secure 18 seats in the Israeli parliament, according to Al Jazeera English. The result would represent a significant showing for the parties, which historically have held fewer legislative positions. Early indications show record-breaking voter turnout among Palestinian citizens of Israel, reaching approximately 80 percent.\n\nThe high turnout marks a notable shift in participation levels among Israel's Palestinian minority, suggesting heightened political engagement ahead of the final vote count.",
+ "cat": "pal48",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-and-opposition-blocs-fall-short-palestinian-parties-projected",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-28T00:43:56+00:00",
+ "dek": "Record-breaking voter turnout among Palestinian citizens of Israel hits around 80 percent, early indications show.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ae12bc3df-1793141699.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/28/arab-parties-could-win-18-seats-in-israeli-elections-exit-polls-suggest?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d020f7f83f",
+ "score": 78.42,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Arab parties gain record support in Israeli elections as Palestinians vote"
+}
