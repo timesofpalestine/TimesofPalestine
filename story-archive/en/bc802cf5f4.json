@@ -25,12 +25,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-653",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": false
   }
  ],
  "date": "2026-10-28T11:33:13+00:00",
@@ -49,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "bc802cf5f4",
- "score": 48.87,
+ "score": 48.58,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

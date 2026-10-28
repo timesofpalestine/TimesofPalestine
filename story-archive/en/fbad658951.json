@@ -7,17 +7,11 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": false
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/oct/27/palestinian-parties-knesset-election-exit-polls-redraw-israel-political-landscape",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": false
   }
  ],
  "date": "2026-10-28T08:01:03+00:00",
  "dek": "Morning update Good morning Middle East Eye readers, Here are the latest developments: Israeli Prime Minister Benjamin Netanyahu’s bloc and the opposition bloc are both projected to fall short of a parliamentary majority of 61 seats following a surge in…",
- "dup_of": "692ab819bf",
+ "dup_of": null,
  "image": "/media/times-of-palestine-cover-politics.svg",
  "lang": "en",
  "link": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-653",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "fbad658951",
- "score": 46.94,
+ "score": 46.13,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
