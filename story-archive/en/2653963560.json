@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/10/29/israeli-settler-take-over?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-14-palestinians-arrested-two-wounded-settler-attacks-and-homes",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-29T09:31:37+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "2653963560",
- "score": 48.78,
+ "score": 48.63,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
