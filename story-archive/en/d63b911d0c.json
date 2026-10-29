@@ -7,6 +7,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": false
+  },
+  {
+   "article": "https://zeteo.com/p/netanyahu-collapsed-but-zionists",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-28T17:34:35+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "d63b911d0c",
- "score": 45.34,
+ "score": 45.07,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
