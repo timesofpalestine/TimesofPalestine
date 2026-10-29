@@ -6,13 +6,7 @@
    "article": "https://www.washingtontimes.com/news/2026/oct/27/israeli-election-fractured-result-coalition-building-comes-next",
    "name": "Quincy Institute",
    "url": "https://quincyinst.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/oct/28/israel-election-results-what-we-know-so-far-ntwnfb",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-27T21:56:00+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "963630846c",
- "score": 69.9,
+ "score": 69.88,
  "source": "Quincy Institute",
  "source_id": "quincy",
  "source_url": "https://quincyinst.org/",

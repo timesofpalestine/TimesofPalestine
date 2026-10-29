@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، تُكثّف سلطات الاحتلال من ملاحقة خطباء المسجد الأقصى بالاعتقال والإبعاد عن المسجد. تأتي الحملة في سياق توتر أمني مستمر حول المسجد الأقصى، الذي يشهد مواجهات دورية.\n\nتستهدف السلطات الإسرائيلية الخطباء كجزء من جهود أوسع للسيطرة على النشاط بداخل المسجد ومحاولة صياغة الخطاب الديني بما يتماشى مع سياساتها. يشكل الأقصى منذ سنوات موقع صراع متكرر بين الفلسطينيين والسلطات الإسرائيلية.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/10/29/1122259",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-29T18:41:53+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-prisoners-b-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/10/29/1122259",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a123a55ec4",
+ "score": 49.35,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الاحتلال يعتقل ويبعد خطباء المسجد الأقصى"
+}
