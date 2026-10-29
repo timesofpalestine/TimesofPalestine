@@ -1,0 +1,33 @@
+{
+ "brief": "An AI engineer at Google's DeepMind has resigned in protest of the company's work with U.S. and Israeli militaries, according to Democracy Now!, citing what the engineer characterizes as Google's complicity in the Gaza genocide. The resignation is part of a broader wave of dissent among tech workers at the AI unit over military partnerships.\n\nSeveral DeepMind staff have now quit over the same concerns, signaling growing internal friction within Google's artificial intelligence division over defense contracts and their geopolitical implications.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "http://www.democracynow.org/2026/10/29/sofia_liguori_google_military_tech_ai",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-29T12:42:42+00:00",
+ "dek": "Several tech workers at Google’s AI unit DeepMind have resigned in protest over the tech giant’s work with the U.S. and Israeli militaries.",
+ "dup_of": null,
+ "image": "https://www.democracynow.org/images/story/00/84100/w320/seg-Sofia-2.jpg",
+ "lang": "en",
+ "link": "http://www.democracynow.org/2026/10/29/sofia_liguori_google_military_tech_ai",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Democracy Now!",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "http://www.democracynow.org/2026/10/29/sofia_liguori_google_military_tech_ai"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "09af01d34e",
+ "score": 48.2,
+ "source": "Democracy Now!",
+ "source_id": "democracynow",
+ "source_url": "https://www.democracynow.org/",
+ "title": "DeepMind AI engineer resigns over Google's military contracts"
+}
