@@ -1,0 +1,45 @@
+{
+ "brief": "With nearly 90 percent of votes counted, Netanyahu's right-wing alliance holds a narrow lead but has not secured the 61 seats required to form a governing coalition in Israel's parliament, Al Jazeera English reported. The results remain too close to call, with both the prime minister's bloc and opposition parties still calculating possible coalition combinations.\n\nNo single political group has achieved an outright majority, leaving multiple coalition scenarios possible as final counts continue. The outcome will determine whether Netanyahu can return to office or whether Israel must form a government around a different leader.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/29/no-clear-winner-in-israeli-election-with-nearly-90-percent-of-votes-counted?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/28/israel-election-results-what-we-know-so-far-ntwnfb",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.washingtontimes.com/news/2026/oct/27/israeli-election-fractured-result-coalition-building-comes-next",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-29T00:01:07+00:00",
+ "dek": "Netanyahu's right-wing bloc leads but is falling short of the votes needed to form a government.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ae25e75-1793220213.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/29/no-clear-winner-in-israeli-election-with-nearly-90-percent-of-votes-counted?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/29/no-clear-winner-in-israeli-election-with-nearly-90-percent-of-votes-counted?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "931e4aea75",
+ "score": 49.81,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu's bloc leads Israeli election but lacks majority to govern"
+}
