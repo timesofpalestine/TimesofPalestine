@@ -1,0 +1,33 @@
+{
+ "brief": "Gaza's health ministry reported that over 21,000 patients in the territory require urgent evacuation for medical treatment, according to Middle East Eye. The ministry did not specify the conditions affecting these patients or the timeframe for the evacuations.\n\nHealthcare facilities in Gaza have faced severe shortages of supplies, fuel, and staff amid the ongoing conflict, limiting treatment capacity within the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-health-ministry-over-21000-patients-urgent-need-evacuation",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-29T12:27:31+00:00",
+ "dek": "Gaza's health ministry: Over 21,000 patients in 'urgent' need of evacuation Gaza's health ministry has said that over 21,000 patients in the territory are in \"urgent\" need of evacuation for treatment.",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/2026-10/Untitled_3.jpg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-health-ministry-over-21000-patients-urgent-need-evacuation",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-health-ministry-over-21000-patients-urgent-need-evacuation"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7a19388fc0",
+ "score": 63.59,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Gaza health ministry says 21,000 patients need urgent evacuation"
+}
