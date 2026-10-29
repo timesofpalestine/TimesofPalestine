@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli forces conducted raids across the West Bank, injuring and arresting Palestinians, Al Jazeera English reported. The operations occurred as the military offensive intensified in the region, creating a widening humanitarian crisis.\n\nMore than 3,300 Palestinians have been forced from their homes in Hebron amid the ongoing Israeli military campaign. The displacement marks an escalation in the scale of forced relocations during the current offensive.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/29/palestinians-injured-arrested-in-israeli-raids-across-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48375",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-29T20:40:03+00:00",
+ "dek": "This comes as more than 3,300 Palestinians are forced from homes in Hebron as Israel's military offensive continues.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ae0af2d-1793109805.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/29/palestinians-injured-arrested-in-israeli-raids-across-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/29/palestinians-injured-arrested-in-israeli-raids-across-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a7db7fd275",
+ "score": 63.13,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli raids wound Palestinians, trigger mass displacement in Hebron"
+}
