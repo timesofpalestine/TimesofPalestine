@@ -1,0 +1,33 @@
+{
+ "brief": "The U.S. Treasury Department imposed sanctions on cryptocurrency launderers involved in North Korea's fake worker program, according to Bitcoin Magazine. The action targeted individuals facilitating the movement of illicit funds derived from Pyongyang's scheme to deploy workers abroad under false pretenses.\n\nNorth Korea has long relied on overseas worker programs to generate foreign currency while circumventing international labor standards. The use of cryptocurrency to launder proceeds from these operations represents an evolving threat to financial systems, prompting the Treasury's enforcement action against the networks enabling such transfers.",
+ "cat": "bitcoin",
+ "corroborating_sources": [
+  {
+   "article": "https://bitcoinmagazine.com/news/sanctions-crypto-behind-north-korea-worker",
+   "name": "Bitcoin Magazine",
+   "url": "https://bitcoinmagazine.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-29T14:37:46+00:00",
+ "dek": "Bitcoin Magazine U.S. Treasury Sanctions Crypto Launderers Behind North Korea’s Fake Workers The U.S.",
+ "dup_of": null,
+ "image": "https://bitcoinmagazine.com/wp-content/uploads/2026/10/U.S.-Treasury-Sanctions-Crypto-Launderers-Behind-North-Koreas-Fake-Workers.jpg",
+ "lang": "en",
+ "link": "https://bitcoinmagazine.com/news/sanctions-crypto-behind-north-korea-worker",
+ "max_age_hours": 336,
+ "media": {
+  "credit": "Bitcoin Magazine",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://bitcoinmagazine.com/news/sanctions-crypto-behind-north-korea-worker"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "80642431bf",
+ "score": 79.99,
+ "source": "Bitcoin Magazine",
+ "source_id": "btcmag",
+ "source_url": "https://bitcoinmagazine.com/",
+ "title": "Treasury sanctions crypto launderers aiding North Korea's fake worker scheme"
+}
