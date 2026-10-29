@@ -6,13 +6,7 @@
    "article": "https://www.al-monitor.com/originals/2026/10/israels-arabs-record-turnout-may-bring-political-clout",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/video/2026/oct/28/record-number-of-voters-head-to-polls-in-high-stakes-israel-election-video",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-28T16:46:37+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "d7acfbb802",
- "score": 43.82,
+ "score": 43.55,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
