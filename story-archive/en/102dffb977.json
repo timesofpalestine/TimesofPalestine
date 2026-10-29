@@ -1,0 +1,33 @@
+{
+ "brief": "The Israeli military mobilized in response to the theft of a military Humvee from one of its bases, according to Maan Wire. The vehicle was taken from an Israeli military camp.\n\nSecurity forces expressed concern that the theft could presage an infiltration attempt targeting military bases and training areas. No further details were immediately available about the circumstances of the theft or any suspects.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37621",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-29T18:52:21+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/gZiiW2jDHIEoeWEf-iWzVYu4iJF5ezuhv1TjWw36yGA0AwM6ifnme_ztRsArNdgAMJRq221chxdQjTI8KZP1VJ4KOBsQaU9ZLlGO5Wcda-pgrnBAG8rodZZ65whKnWLQkqBEKD2h09gzneFZzZRmw6YLDrSrGFJbYr4iOqtFROAzCzpfsxWksnZjHVQb-Kw-uXu0J3ErYo8FgQB1CCvRcWxmYU-rW3-DKQDvoo1J3U1sI0Pam2RdyrjGvNUZTfmUQECd50cRvg5sJ51chGwHJyQsjmg4dzKha6dOu0APDL-j289ypy4yCovxHXAKbp0iUqV96mobn6HXM2u5nq26jQ.jpg",
+ "lang": "en",
+ "link": "https://t.me/maannews/37621",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37621"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "102dffb977",
+ "score": 33.98,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli military mobilizes after Humvee stolen from base"
+}
