@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/israel-kills-22-palestinians-including-three-girls-and-a-woman-and-forcibly-displaces-families-by-setting-tents-on-fire-in-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/three-palestinians-killed-israeli-drone-strikes-southern-gaza",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-27T09:33:08+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "e72ba54dfe",
- "score": 83.13,
+ "score": 83.1,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",

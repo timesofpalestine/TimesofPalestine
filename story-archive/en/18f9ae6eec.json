@@ -1,0 +1,33 @@
+{
+ "brief": "Israel held its first election since the October 7 attacks and subsequent war in Gaza, with no party securing a decisive majority, Al Jazeera English reported. The inconclusive result leaves the country facing potential coalition negotiations and continued political uncertainty.\n\nThe election outcome reflects deep divisions within Israeli society over the war's conduct and direction. No single faction gained sufficient seats to govern alone, suggesting protracted talks ahead to form a governing coalition.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/inside-story/2026/10/28/what-are-the-implications-of-israels-elections?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-28T19:03:03+00:00",
+ "dek": "No clear winner in Israel's first election since the October 7 attacks and genocidal war in Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/image-1793214969.jpg?resize=1920%2C1061&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/inside-story/2026/10/28/what-are-the-implications-of-israels-elections?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/inside-story/2026/10/28/what-are-the-implications-of-israels-elections?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "18f9ae6eec",
+ "score": 44.31,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "No clear winner emerges in Israel's first post-October 7 election"
+}
