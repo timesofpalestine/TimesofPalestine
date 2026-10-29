@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli media reported that the cargo vessel Contech Jet sank in the Black Sea after being struck by drones. The ship had departed the port of Haifa bound for Romania when it was hit, according to the Ma'an news agency.\n\nNo further details on casualties, the drone operator's identity, or the circumstances of the attack were provided in the initial reports.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37613",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-29T11:53:26+00:00",
+ "dek": "Israeli media reported that the cargo vessel Contech Jet sank in the Black Sea after being struck by drones. The ship had departed the port of Haifa bound for Romania when it was hit, according to the Ma'an news agency.",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/Gy0urhB1bh4xNgEhTKIztgGjr8aTSLon8zd8woDA0s27qtNWkPaHkbrSiD_mClRbcQitvFZMIYNeO0tOpyifzfMNQW2Oe7fUz6PHkJ6W3bWR5inQ1R8FvyUJIKFX4_IIMz8awoUFsk3-B4j7pRkkfG1Znr2NN8FwzcWb1xCNO7Y2vSEU9f9mTFvNet0bufBC4Euiu9Sb5d9-FwrvvQDBloof_uTrPKbqVLd3dcDcMP5UTWUD8AUELklLMILtJMWwLdOQu3mCvEYi_Um8ZNZo8Dh3IGJF3sEmDyYL6PzBERroy_zz2DQwj7QtTuO_oA_N95RWRmgBjqIUr7rjlzqTTw",
+ "lang": "en",
+ "link": "https://t.me/maannews/37613",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37613"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fd0c747c47",
+ "score": 33.92,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli ship sinks after drone strike in Black Sea"
+}
