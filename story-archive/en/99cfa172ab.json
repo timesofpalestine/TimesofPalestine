@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli election rhetoric centered on security and attacks against Arab political parties has not delivered the decisive outcomes candidates promised, Al Jazeera English reported. Prime Minister Benjamin Netanyahu and far-right candidate Itamar Ben-Gvir made aggressive campaign boasts and targeted Arab parties in their messaging ahead of the vote.\n\nThe election has produced a deadlocked result, leaving major campaign pledges unfulfilled. The outcome reflects a fragmented political landscape that resists the clear mandates candidates sought through their rhetoric.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/29/israels-election-what-the-candidates-said-and-how-they-did?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/israel-piles-pressure-arab-parties-netanyahu-seeks-government",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-29T11:27:22+00:00",
+ "dek": "From Netanyahu to Ben-Gvir, campaign boasts and attacks on Arab parties have been met with a deadlocked result.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/getty_6ae3085f31-1793263711.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/29/israels-election-what-the-candidates-said-and-how-they-did?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/29/israels-election-what-the-candidates-said-and-how-they-did?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "99cfa172ab",
+ "score": 63.44,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli candidates' campaign promises fail to break electoral deadlock"
+}
