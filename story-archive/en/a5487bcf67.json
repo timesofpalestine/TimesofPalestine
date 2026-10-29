@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/10/28/jerusalem-daily-whats-next-after-israels-elections?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-election-deadlock-what-could-happen-next",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   },
   {
    "article": "https://www.theguardian.com/commentisfree/2026/oct/28/the-guardian-view-on-israels-elections-netanyahu-lost-his-mandate-if-opponents-unite-hell-lose-power-too",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "a5487bcf67",
- "score": 44.6,
+ "score": 44.43,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
