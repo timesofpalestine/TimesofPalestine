@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/world/2026/oct/27/palestinian-parties-knesset-election-exit-polls-redraw-israel-political-landscape",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://zeteo.com/p/netanyahu-collapsed-but-zionists",
-   "name": "Zeteo",
-   "url": "https://zeteo.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-27T23:57:50+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "c67e44cb23",
- "score": 22.68,
+ "score": 22.4,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

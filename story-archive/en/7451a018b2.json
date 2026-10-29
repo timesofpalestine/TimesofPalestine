@@ -6,26 +6,38 @@
    "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-risk-losing-power-steps-attacks-israels-arab-parties",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/netanyahu-collapsed-but-zionists",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahus-likud-claims-palestinians-stole-elections-qatar-denies",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": false
   }
  ],
  "date": "2026-10-29T14:48:23+00:00",
  "dek": "By Maayan Lubell JERUSALEM, Oct 29 (Reuters) - Benjamin Netanyahu alleged on Thursday, without providing evidence, that Arab parties' record gains in an election this week were driven in part by voter fraud, a charge rejected by Arab leaders who accused the…",
  "dup_of": null,
- "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%202018.jpg?width=640",
+ "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-10/000_d4qn9xr.jpg?h=199d8c1f&itok=YUbYWigq",
  "lang": "en",
  "link": "https://www.al-monitor.com/originals/2026/10/netanyahu-risk-losing-power-steps-attacks-israels-arab-parties",
  "max_age_hours": 72,
  "media": {
-  "credit": "Benjamin Netanyahu — Wikimedia Commons / US State Department (public domain)",
-  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg",
-  "rightsBasis": "wikimedia-cc",
-  "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg"
+  "credit": "Al-Monitor",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.al-monitor.com/originals/2026/10/netanyahu-risk-losing-power-steps-attacks-israels-arab-parties"
  },
  "modified": null,
  "original": false,
  "pid": "7451a018b2",
- "score": 49.65,
+ "score": 49.38,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
