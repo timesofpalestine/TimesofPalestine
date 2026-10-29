@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli troops detained 14 Palestinians across Nablus, Jenin and Bethlehem, Middle East Eye reported, amid ongoing military operations in the occupied West Bank. The arrests coincided with settler attacks that left two Palestinians wounded and resulted in the demolition of homes.\n\nThe incidents are part of a wider pattern of military raids and settler violence affecting communities throughout the West Bank.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-14-palestinians-arrested-two-wounded-settler-attacks-and-homes",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-29T11:03:53+00:00",
+ "dek": "West Bank: 14 Palestinians arrested, two wounded by settler attacks and homes demolished Israeli troops have detained 14 Palestinians across Nablus, Jenin and Bethlehem as military raids and settler attacks continue across the occupied West Bank.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-prisoners.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-14-palestinians-arrested-two-wounded-settler-attacks-and-homes",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a7b686feea",
+ "score": 62.13,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli troops arrest 14 Palestinians during West Bank raids"
+}
