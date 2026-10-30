@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-bloc-finishes-ahead-israel-vote-well-short-majority",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.theguardian.com/world/2026/oct/28/israel-election-results-what-we-know-so-far-ntwnfb",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "5a37607f36",
- "score": 45.09,
+ "score": 44.81,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
