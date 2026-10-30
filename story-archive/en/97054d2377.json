@@ -1,0 +1,45 @@
+{
+ "brief": "Prime Minister Benjamin Netanyahu attacked Israel's Arab political parties, accusing them of election fraud, as his coalition negotiations left him short of a parliamentary majority, Al Jazeera English reported. The accusations came amid coalition talks following elections in which no single bloc secured an outright majority.\n\nPalestinian-Israeli parties have historically played a significant role in Israeli politics, particularly in coalition-building scenarios. Netanyahu's public criticism of the Arab parties marked an escalation in his rhetoric surrounding the electoral process and coalition formation.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/30/netanyahu-attacks-israels-arab-parties-as-he-falls-short-of-majority?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-bloc-finishes-ahead-israel-vote-well-short-majority",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/oct/28/israel-election-results-what-we-know-so-far-ntwnfb",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-30T02:40:26+00:00",
+ "dek": "Israel’s Prime Minister accused Palestinian-Israeli parties of election fraud.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/Thumbnail_-H-Clean-1793327835.png?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/30/netanyahu-attacks-israels-arab-parties-as-he-falls-short-of-majority?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/30/netanyahu-attacks-israels-arab-parties-as-he-falls-short-of-majority?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "97054d2377",
+ "score": 79.8,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu accuses Arab parties of fraud as coalition falls short"
+}
