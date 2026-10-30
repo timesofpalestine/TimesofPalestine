@@ -1,0 +1,33 @@
+{
+ "brief": "A Palestinian child identified as Imad Salem Zahra survived after being shot in the head by Israeli soldiers, Al Jazeera English reported. The incident gained widespread attention after a photograph of the wounded child circulated on social media.\n\nNo further details about the circumstances of the shooting, the child's current condition, or the location and date of the incident were provided in the available information.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/30/palestinian-child-survives-israeli-gunshot-to-the-head?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-30T13:32:24+00:00",
+ "dek": "Imad Salem Zahra, the Palestinian child whose photo went viral after he was shot in the head by Israeli soldiers.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/clean-wide-1793367076.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/10/30/palestinian-child-survives-israeli-gunshot-to-the-head?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/10/30/palestinian-child-survives-israeli-gunshot-to-the-head?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "234eb46fd6",
+ "score": 49.77,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinian child survives Israeli gunshot to head"
+}
