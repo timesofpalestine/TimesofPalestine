@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/30/israeli-forces-blow-up-homes-of-palestinians-accused-of-killing-soldiers?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
    "article": "https://english.pnn.ps/news/48374",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "5dcf018289",
- "score": 31.82,
+ "score": 31.54,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
