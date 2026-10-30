@@ -13,6 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/84-34",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-10-30T07:24:46+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "996434f2dc",
- "score": 54.71,
+ "score": 54.51,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
