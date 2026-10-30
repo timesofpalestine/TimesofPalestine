@@ -15,7 +15,13 @@
    "verified": true
   },
   {
-   "article": "https://english.pnn.ps/news/48374",
+   "article": "https://www.al-monitor.com/originals/2026/10/israel-demolishes-gunmens-homes-west-bank-operation-has-displaced-thousands",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48375",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
    "verified": true
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "5dcf018289",
- "score": 31.54,
+ "score": 31.38,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

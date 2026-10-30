@@ -7,6 +7,18 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": false
+  },
+  {
+   "article": "https://www.pbc.ps/84-34",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/189146/%D9%84%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%88%D8%A7%D8%B5%D9%84-%D8%B9%D8%AF%D9%88%D8%A7%D9%86%D9%87-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84-%D9%88%D9%8A%D9%87%D8%AC%D8%B1-%D9%85%D8%B2%D9%8A%D8%AF%D8%A7-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D8%A7",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-10-29T20:25:00+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "2e6a40fb1e",
- "score": 50.58,
+ "score": 50.42,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
