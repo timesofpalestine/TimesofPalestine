@@ -7,6 +7,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/opinion/if-israel-regions-only-democracy-why-are-palestinian-voters-cast-criminals",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-10-30T11:43:17+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4d4a2391e5",
- "score": 49.36,
+ "score": 49.08,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
