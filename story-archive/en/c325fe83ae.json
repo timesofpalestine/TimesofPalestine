@@ -1,0 +1,39 @@
+{
+ "brief": "Israel's election has ended without a clear winner, leaving Prime Minister Benjamin Netanyahu unable to form a government, Middle East Eye reported. Netanyahu's bloc secured 53 seats while rival Gadi Eisenkot's bloc won 48—neither achieving the 61 seats required to govern.\n\nThe deadlock forces negotiations among smaller parties to determine which bloc can assemble a governing coalition. Netanyahu's ability to remain in power depends on convincing enough independent lawmakers or smaller parties to join his faction.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/can-netanyahu-cling-power-again",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/10/netanyahu-bloc-finishes-ahead-israel-vote-well-short-majority",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-30T03:32:57+00:00",
+ "dek": "Can Netanyahu cling onto power (again)? Israel's election has ended in deadlock. Benjamin Netanyahu's bloc has 53 seats, his rival Gadi Eisenkot's 48, and neither has the 61 needed to govern.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-politics.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/can-netanyahu-cling-power-again",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c325fe83ae",
+ "score": 59.6,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Netanyahu bloc falls short of majority in deadlocked Israeli election"
+}
