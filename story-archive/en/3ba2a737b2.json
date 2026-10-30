@@ -1,0 +1,39 @@
+{
+ "brief": "Israel is treating a military boundary line that steadily advances westward across Gaza as \"a kill zone,\" the UN Office of the High Commissioner for Human Rights reported, citing concerns over ethnic cleansing as the territory available to Palestinians contracts. The so-called Yellow Line marks the frontier of Israeli control and has progressively encroached on civilian areas, according to Al Jazeera English.\n\nThe OHCHR's characterization suggests Israeli forces are using the expanding boundary to enforce a lethal exclusion zone, potentially forcing Palestinians into ever-smaller pockets of territory. The warnings reflect mounting international alarm over displacement and the humanitarian consequences of territorial compression in the blockaded enclave.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/30/ethnic-cleansing-fears-rise-as-israel-squeezes-space-in-gaza-un?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/10/1168707",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-30T14:18:07+00:00",
+ "dek": "Israeli forces are treating the 'Yellow Line', which is encroaching westward, as 'a kill zone', the OHCHR says.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ae47fb94ccc-1793359801.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/30/ethnic-cleansing-fears-rise-as-israel-squeezes-space-in-gaza-un?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/30/ethnic-cleansing-fears-rise-as-israel-squeezes-space-in-gaza-un?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3ba2a737b2",
+ "score": 63.83,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN warns Israel weaponizes shrinking Gaza territory as ethnic cleansing risk"
+}
