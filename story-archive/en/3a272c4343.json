@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "https://english.pnn.ps/news/48375",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/maannews/37629",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "3a272c4343",
- "score": 62.49,
+ "score": 61.93,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
