@@ -25,6 +25,12 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-10-palestinians-including-a-girl-in-strikes-across-gaza",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
   }
  ],
  "date": "2026-10-30T15:06:00+00:00",
@@ -43,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "3a272c4343",
- "score": 60.9,
+ "score": 60.71,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
