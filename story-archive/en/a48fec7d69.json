@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli military operation in Hebron has displaced 537 Palestinian families, or 3,361 people, according to local officials cited by the Palestine News Network. The operation has also disrupted education for hundreds of thousands of students across the governorate.\n\nOfficials reported that the displacement has caused millions in daily losses, though a fuller accounting of the economic impact remains unclear as the operation continues.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://english.pnn.ps/news/48375",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-29T12:08:00+00:00",
+ "dek": "HEBRON, West Bank / PNN / An ongoing Israeli military operation in Hebron has displaced 537 Palestinian families, comprising 3,361 people, and disrupted education for hundreds of thousands of students across the governorate, local officials said Thursday, as…",
+ "dup_of": null,
+ "image": "https://media.pnn.ps/english/storage/images/media/2026/1793275792-1994679729.jpg",
+ "lang": "en",
+ "link": "https://english.pnn.ps/news/48375",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Palestine News Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://english.pnn.ps/news/48375"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a48fec7d69",
+ "score": 17.53,
+ "source": "Palestine News Network",
+ "source_id": "pnn",
+ "source_url": "https://english.pnn.ps/",
+ "title": "Israeli military operation displaces 537 families in Hebron"
+}
