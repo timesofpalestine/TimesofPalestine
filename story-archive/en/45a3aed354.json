@@ -7,6 +7,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": false
+  },
+  {
+   "article": "https://electronicintifada.net/blogs/ali-abunimah/israels-opposition-offers-genocide-better-pr",
+   "name": "Electronic Intifada",
+   "url": "https://electronicintifada.net/",
+   "verified": true
   }
  ],
  "date": "2026-10-28T19:01:16+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "45a3aed354",
- "score": 8.1,
+ "score": 7.83,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",

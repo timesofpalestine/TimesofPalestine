@@ -7,6 +7,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": false
+  },
+  {
+   "article": "https://electronicintifada.net/blogs/maureen-clare-murphy/genocidal-intent-behind-hebron-assault-rights-group-says",
+   "name": "Electronic Intifada",
+   "url": "https://electronicintifada.net/",
+   "verified": false
   }
  ],
  "date": "2026-10-30T23:10:01+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1fffa772f7",
- "score": 44.31,
+ "score": 44.05,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
