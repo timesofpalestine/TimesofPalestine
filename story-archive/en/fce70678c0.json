@@ -1,0 +1,33 @@
+{
+ "brief": "A Palestinian student offered a full scholarship to an Irish university remains unable to leave Gaza due to ongoing border restrictions, We Are Not Numbers reported. Despite securing admission and financial support for higher education abroad, the student faces barriers to departure that prevent pursuit of the academic opportunity.\n\nThe case reflects broader constraints on Palestinian mobility from Gaza, where border crossings remain heavily restricted. Students with international educational opportunities have repeatedly found themselves unable to access them due to closure policies affecting the territory.",
+ "cat": "humans",
+ "corroborating_sources": [
+  {
+   "article": "https://wearenotnumbers.org/the-black-duckling",
+   "name": "We Are Not Numbers",
+   "url": "https://wearenotnumbers.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-31T09:52:43+00:00",
+ "dek": "Despite a full scholarship to attend an Irish university, I am still trapped in Gaza.",
+ "dup_of": null,
+ "image": "https://wearenotnumbers.org/wp-content/uploads/2026/10/with-siblings-e1793047109823.webp",
+ "lang": "en",
+ "link": "https://wearenotnumbers.org/the-black-duckling",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "We Are Not Numbers",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://wearenotnumbers.org/the-black-duckling"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fce70678c0",
+ "score": 49.95,
+ "source": "We Are Not Numbers",
+ "source_id": "wann",
+ "source_url": "https://wearenotnumbers.org/",
+ "title": "Gaza student forfeits Irish scholarship amid border closure"
+}
