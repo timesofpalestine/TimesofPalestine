@@ -6,25 +6,7 @@
    "article": "https://t.me/maannews/37632",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/news/2026/10/30/israel-demolishes-homes-of-palestinians-blamed-for-attack-on-soldiers?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://pchrgaza.org/israel-kills-10-palestinians-including-a-girl-in-strikes-across-gaza",
-   "name": "Palestinian Centre for Human Rights",
-   "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-attack-olive-harvesters-build-new-outpost-hebron-siege",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-30T16:50:15+00:00",
@@ -43,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "78baf42e32",
- "score": 42.57,
+ "score": 42.38,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
