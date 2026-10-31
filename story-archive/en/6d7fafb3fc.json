@@ -1,0 +1,33 @@
+{
+ "brief": "Since Gaza's academic year resumed, children traveling to school have been killed by Israeli bombardment and sniper fire, Al Jazeera English reported. The violence has transformed the return to classes into a daily threat, with students facing attack during their commute.\n\nEducation infrastructure across Gaza has become a target zone as the conflict escalates. Parents now weigh the risk of sending children to resume their studies against the immediate danger of aerial and ground fire.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/10/31/education-under-fire-gazas-children-face-death-on-their-way-to-school?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-31T10:00:17+00:00",
+ "dek": "Children have faced Israeli bombs and sniper fire since the academic year resumed in Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/873A4536-copy-1793432674.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/10/31/education-under-fire-gazas-children-face-death-on-their-way-to-school?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/10/31/education-under-fire-gazas-children-face-death-on-their-way-to-school?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6d7fafb3fc",
+ "score": 63.76,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli fire kills students commuting to school in Gaza"
+}
