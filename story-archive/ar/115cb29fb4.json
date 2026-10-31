@@ -6,12 +6,30 @@
    "article": "https://www.pbc.ps/84-34",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/189201/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%88%D8%A7%D8%B5%D9%84-%D8%B9%D8%AF%D9%88%D8%A7%D9%86%D9%87-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84-%D9%88%D9%8A%D8%AF%D9%81%D8%B9-%D8%A8%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2%D8%A7%D8%AA-%D8%B9%D8%B3%D9%83%D8%B1%D9%8A%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%8a%d8%b4%d8%af%d8%af-%d8%a5%d8%ac%d8%b1%d8%a7%d8%a1%d8%a7%d8%aa%d9%87-%d8%a7%d9%84%d8%b9%d8%b3%d9%83%d8%b1%d9%8a%d8%a9-%d9%88%d9%8a%d8%af%d9%81",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/747956",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-10-30T07:31:57+00:00",
  "dek": "تواصل قوات الاحتلال الإسرائيلي، لليوم الثامن على التوالي، عدوانها على الخليل، وتدفع بتعزيزات عسكرية كبيرة نحو منطقة ودير بحة غرب ظهرت المقالة لليوم الثامن على التوالي: الاحتلال يواصل عدوانه على الخليل ويجبر عائلات جديدة على النزوح أولاً على تلفزيون فلسطين.",
- "dup_of": "996434f2dc",
+ "dup_of": null,
  "image": "https://www.pbc.ps/wp-content/uploads/2026/10/WafaImage-2026-10-30T084704.178.jpg-d67d4885-ae4f-476a-bfe0-2ceedacdd12e-1.webp",
  "lang": "ar",
  "link": "https://www.pbc.ps/84-34",
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "115cb29fb4",
- "score": 37.0,
+ "score": 31.51,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
