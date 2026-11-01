@@ -1,0 +1,45 @@
+{
+ "brief": "شهدت عدة مدن إسرائيلية مساء السبت مظاهرات تطالب بتشكيل حكومة جديدة تضم الأحزاب العربية، بحسب القدس العربي. وفي الوقت ذاته، نظّم ناشطون من اليمين احتجاجات مضادة رفضاً لإشراك تلك الأحزاب في السلطة التنفيذية.\n\nركّز المتظاهرون المؤيدون على ضرورة المشاركة العربية في تشكيل الائتلاف الحكومي الجديد، فيما دعا اليمينيون إلى إجراء انتخابات جديدة بدلاً من توسيع قاعدة الحكومة لتشمل الكتل العربية.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.alquds.co.uk/%d9%85%d8%b8%d8%a7%d9%87%d8%b1%d8%a7%d8%aa-%d9%81%d9%8a-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d9%84%d9%84%d9%85%d8%b7%d8%a7%d9%84%d8%a8%d8%a9-%d8%a8%d8%ad%d9%83%d9%88%d9%85%d8%a9-%d8%aa%d8%b6",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/189251/%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A9-%D9%81%D9%8A-%D8%AA%D9%84-%D8%A3%D8%A8%D9%8A%D8%A8-%D9%84%D9%84%D9%85%D8%B7%D8%A7%D9%84%D8%A8%D8%A9-%D8%A8%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%AA%D8%B6%D9%85-%D8%A7%D9%84%D8%A3%D8%AD%D8%B2%D8%A7%D8%A8-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/399887",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-31T20:44:24+00:00",
+ "dek": "القدس المحتلة: شهدت مدن إسرائيلية عدة، مساء السبت، مظاهرات تطالب بتشكيل حكومة إسرائيلية جديدة بمشاركة الأحزاب العربية، في مقابل احتجاجات نظمها ناشطون من اليمين رفضاً لإشراك تلك الأحزاب في الحكومة، ودعوا إلى إجراء انتخابات جديدة.",
+ "dup_of": null,
+ "image": "https://www.alquds.co.uk/wp-content/uploads/2026/10/10-24.jpg",
+ "lang": "ar",
+ "link": "https://www.alquds.co.uk/%d9%85%d8%b8%d8%a7%d9%87%d8%b1%d8%a7%d8%aa-%d9%81%d9%8a-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d9%84%d9%84%d9%85%d8%b7%d8%a7%d9%84%d8%a8%d8%a9-%d8%a8%d8%ad%d9%83%d9%88%d9%85%d8%a9-%d8%aa%d8%b6",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "القدس العربي",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.alquds.co.uk/%d9%85%d8%b8%d8%a7%d9%87%d8%b1%d8%a7%d8%aa-%d9%81%d9%8a-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d9%84%d9%84%d9%85%d8%b7%d8%a7%d9%84%d8%a8%d8%a9-%d8%a8%d8%ad%d9%83%d9%88%d9%85%d8%a9-%d8%aa%d8%b6"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "782a8ca26e",
+ "score": 46.62,
+ "source": "القدس العربي",
+ "source_id": "alqudsuk",
+ "source_url": "https://www.alquds.co.uk/",
+ "title": "متظاهرون إسرائيليون يطالبون بإدراج الأحزاب العربية بالحكومة"
+}
