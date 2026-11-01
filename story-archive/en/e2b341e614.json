@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli military operations in Hebron have displaced 537 families and inflicted economic losses worth millions of shekels per day, according to the Ma'an news agency. The ongoing offensive has forced residents from their homes while devastating local economic activity across the southern West Bank city.\n\nThe displacement has affected hundreds of households, with businesses shuttered by the military campaign across Hebron's commercial districts.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171497.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-01T09:09:54+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171497.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e2b341e614",
+ "score": 49.81,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli aggression displaces 537 families in Hebron, costs millions daily"
+}
