@@ -1,0 +1,33 @@
+{
+ "brief": "أفاد المركز الفلسطيني للإعلام أنّ جنود الاحتلال يمارسون التنكيل بالصحفيين الفلسطينيين ويوثّقون هذه الأعمال عبر صور وفيديوهات، مما يعكس ممارسات منهجية ضد الإعلاميين. يشير التقرير إلى أنّ هذه السلوكيات لا تقتصر على الاحتجازات العابرة بل تتسع لتشمل مستويات متعددة من الاستهداف.\n\nيأتي هذا في سياق متواصل من الانتهاكات بحق الصحفيين الفلسطينيين، الذين يعملون في ظروف أمنية حرجة ويتعرضون لضغوط متكررة من قوات الاحتلال خلال أدائهم عملهم الصحفي.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/01/1122578",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-01T18:13:21+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/01/1122578",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "130ccab068",
+ "score": 49.68,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "جنود الاحتلال يتنكّلون بصحفيي فلسطين ويوثّقون الحوادث"
+}
