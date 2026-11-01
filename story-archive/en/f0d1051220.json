@@ -7,6 +7,12 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": false
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-settlers-attack",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": false
   }
  ],
  "date": "2026-10-31T10:58:53+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "f0d1051220",
- "score": 40.48,
+ "score": 40.27,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
