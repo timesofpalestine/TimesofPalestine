@@ -7,6 +7,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": false
+  },
+  {
+   "article": "https://mondoweiss.net/2026/10/no-seat-at-the-table-israels-post-election-message-to-its-palestinian-citizens",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": false
   }
  ],
  "date": "2026-10-30T15:12:57+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "af8e7bc4cf",
- "score": 24.52,
+ "score": 24.34,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
