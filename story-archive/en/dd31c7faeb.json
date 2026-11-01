@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/10/uk-police-arrest-palestine-action-supporters-ahead-supreme-court-hearing",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/uk-news/2026/nov/01/police-detain-325-people-at-pro-palestine-action-protest-at-us-embassy-in-london",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-10-31T17:30:23+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "dd31c7faeb",
- "score": 33.53,
+ "score": 33.29,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
