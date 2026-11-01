@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli forces carried out multiple attacks across Gaza, including shelling that struck the Nuseirat refugee camp, according to Al Jazeera English. At least four Palestinians were killed in the strikes as military operations continued across the territory.\n\nThe Nuseirat camp, one of Gaza's eight refugee camps, was among the locations targeted during the assault. Further details on the specific circumstances of the attacks and the identities of those killed were not immediately available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/10/31/at-least-four-palestinians-killed-in-gaza-as-israeli-attacks-continue?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/least-four-palestinians-killed-israeli-strikes-and-shelling-across-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-10-31T17:49:23+00:00",
+ "dek": "Israel carried out several attacks in Gaza, including shelling the Nuseirat refugee camp.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ae613d18df9-1793463249.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/10/31/at-least-four-palestinians-killed-in-gaza-as-israeli-attacks-continue?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/10/31/at-least-four-palestinians-killed-in-gaza-as-israeli-attacks-continue?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dc83a7f364",
+ "score": 57.67,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli attacks kill at least four Palestinians in Gaza"
+}
