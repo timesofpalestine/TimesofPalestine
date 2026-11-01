@@ -2,7 +2,8 @@
  "month": "2026-11",
  "desks": {
   "briefs": 8.103354,
-  "investigations": 2.517037
+  "investigations": 2.517037,
+  "washington": 13.33343
  },
  "tags": {
   "briefs:rewrite": 4.11012,
@@ -10,6 +11,14 @@
   "briefs:judge": 0.035632,
   "briefs:retry-diction": 0.015742
  },
- "runs": {},
- "updated": "2026-11-01T12:38:16.704250+00:00"
+ "runs": {
+  "washington": [
+   {
+    "ts": "2026-11-01T12:41:48.614963+00:00",
+    "usd": 13.3334,
+    "tier": "full"
+   }
+  ]
+ },
+ "updated": "2026-11-01T12:41:48.614972+00:00"
 }
