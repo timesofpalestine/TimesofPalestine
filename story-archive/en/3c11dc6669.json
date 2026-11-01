@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces and settlers attacked Palestinians across the occupied West Bank on Saturday, injuring at least four people, Middle East Eye reported. The assaults targeted farmers during the olive harvest season, a critical period for Palestinian agricultural communities.\n\nThe incidents occurred amid ongoing tensions in the territory, where Palestinian farmers face regular disruptions during harvest operations. Details of the specific locations and circumstances of each injury were not immediately available.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-and-israeli-forces-injure-four-palestinians-west-bank-attacks",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-31T21:31:54+00:00",
+ "dek": "Israeli forces and settlers injure four Palestinians in West Bank attacks Israeli settlers and forces attacked Palestinians across the occupied West Bank on Saturday, injuring at least four people and targeting farmers during the olive harvest, Palestinian…",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-and-israeli-forces-injure-four-palestinians-west-bank-attacks",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3c11dc6669",
+ "score": 58.61,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli forces and settlers injure four Palestinians in West Bank attacks"
+}

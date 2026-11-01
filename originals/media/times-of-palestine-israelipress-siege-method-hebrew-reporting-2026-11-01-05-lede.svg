@@ -1,0 +1,64 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+<title>Israel's own press documents how outposts empty Palestinian villages</title>
+<desc>Illustration showing the documented pattern: an outpost appears on a hill above a Palestinian village, nightly attacks follow, access is cut, and families leave. Based on Hebrew-language press reporting (Ynet, Haaretz, Peace Now, Yesh Din).</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="90" y="80" fill="#f2eee8" font-family="Libre Franklin,Arial" font-size="40" font-weight="700">Israel's own press documents how</text>
+<text x="90" y="128" fill="#f2eee8" font-family="Libre Franklin,Arial" font-size="40" font-weight="700">outposts empty Palestinian villages</text>
+<text x="90" y="168" fill="#aaa9a5" font-family="Cairo,Arial" font-size="26">الصحافة الإسرائيلية توثق كيف تُفرغ البؤر الاستيطانية القرى الفلسطينية</text>
+
+<!-- hill with outpost -->
+<path d="M850,560 L1100,380 L1350,560 Z" fill="#2a2b2e" stroke="#59a97d" stroke-width="2"/>
+<rect x="1070" y="330" width="60" height="45" fill="#c7a86b" stroke="#111214" stroke-width="2"/>
+<polygon points="1070,330 1100,300 1130,330" fill="#8a1f2d"/>
+<rect x="1095" y="280" width="4" height="25" fill="#aaa9a5"/>
+<polygon points="1099,280 1130,290 1099,298" fill="#8a1f2d"/>
+<text x="1030" y="415" fill="#c7a86b" font-size="18" font-family="Libre Franklin,Arial">outpost</text>
+
+<!-- flame marks -->
+<circle cx="920" cy="470" r="6" fill="#8a1f2d"/>
+<circle cx="960" cy="490" r="5" fill="#8a1f2d"/>
+<circle cx="1000" cy="460" r="6" fill="#8a1f2d"/>
+
+<!-- village below -->
+<g>
+<rect x="250" y="600" width="80" height="60" fill="#3b3c3f" stroke="#59a97d" stroke-width="2"/>
+<polygon points="250,600 290,560 330,600" fill="#286344"/>
+<rect x="380" y="620" width="70" height="50" fill="#3b3c3f" stroke="#59a97d" stroke-width="2"/>
+<polygon points="380,620 415,585 450,620" fill="#286344"/>
+<rect x="500" y="600" width="80" height="60" fill="#3b3c3f" stroke="#8a1f2d" stroke-width="2" stroke-dasharray="4"/>
+<polygon points="500,600 540,560 580,600" fill="#8a1f2d" opacity="0.6"/>
+<text x="250" y="700" fill="#aaa9a5" font-size="20" font-family="Libre Franklin,Arial">Jalud village</text>
+</g>
+
+<!-- arrow sequence -->
+<text x="250" y="760" fill="#f2eee8" font-size="22" font-family="Libre Franklin,Arial">outpost → nightly attacks → access cut → family leaves</text>
+<path d="M250,780 L1150,780" stroke="#c7a86b" stroke-width="3" marker-end="url(#arrow)"/>
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+<path d="M0,0 L9,3 L0,6 Z" fill="#c7a86b"/>
+</marker>
+</defs>
+
+<!-- empty arrow from house to exit -->
+<path d="M560,630 Q700,700 230,650" fill="none" stroke="#8a1f2d" stroke-width="2" stroke-dasharray="6,5"/>
+
+<!-- stats box -->
+<rect x="1130" y="600" width="400" height="230" fill="#19191b" stroke="#286344" stroke-width="1.5"/>
+<text x="1155" y="635" fill="#c7a86b" font-size="22" font-family="Libre Franklin,Arial" font-weight="700">Qusra, since attacks began:</text>
+<text x="1155" y="670" fill="#f2eee8" font-size="20" font-family="Libre Franklin,Arial">40 young men jailed</text>
+<text x="1155" y="700" fill="#f2eee8" font-size="20" font-family="Libre Franklin,Arial">4 houses burned fully, 7 partially</text>
+<text x="1155" y="730" fill="#f2eee8" font-size="20" font-family="Libre Franklin,Arial">18 vehicles destroyed</text>
+<text x="1155" y="760" fill="#f2eee8" font-size="20" font-family="Libre Franklin,Arial">70% of farmland lost</text>
+<text x="1155" y="800" fill="#59a97d" font-size="18" font-family="Libre Franklin,Arial">Peace Now: 248 new outposts since 2023</text>
+
+<text x="90" y="860" fill="#aaa9a5" font-family="Cairo,Arial" font-size="20">بؤرة استيطانية على التل، ثم الهجمات الليلية، ثم إغلاق الطرق، ثم الرحيل</text>
+</svg>

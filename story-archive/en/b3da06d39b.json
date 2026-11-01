@@ -6,19 +6,7 @@
    "article": "https://t.me/maannews/37631",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/10/31/palestinians-stealing-their-own?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-and-israeli-forces-injure-four-palestinians-west-bank-attacks",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-10-30T16:34:47+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "b3da06d39b",
- "score": 24.83,
+ "score": 24.51,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
