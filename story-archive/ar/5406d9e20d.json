@@ -1,0 +1,33 @@
+{
+ "brief": "يناقش محللون عسكريون احتمال قيام إسرائيل بعملية في إيران تشابه تلك التي نفذتها في لبنان، والتي استهدفت أجهزة الاتصالات. يأتي هذا النقاش في سياق التصعيد الأمني المتواصل بين الجانبين.\n\nولا توجد حتى الآن إعلانات رسمية من إسرائيل بشأن نية لتنفيذ عملية مماثلة في إيران، إذ أن الحسابات العسكرية وحدها هي التي تشير إلى إمكانية توسيع الحملة الإسرائيلية بحسب وكالة معا.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171502.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-01T11:01:12+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2171502.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5406d9e20d",
+ "score": 34.23,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "خبراء يتوقعون توسع العمليات الإسرائيلية نحو إيران"
+}
