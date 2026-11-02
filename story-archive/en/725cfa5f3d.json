@@ -25,12 +25,6 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/11/displaced-palestinians-return-damaged-hebron-quarter-israeli-troops-withdraw",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-11-02T09:59:57+00:00",
@@ -49,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "725cfa5f3d",
- "score": 43.28,
+ "score": 43.01,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
