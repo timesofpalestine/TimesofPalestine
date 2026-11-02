@@ -1,0 +1,33 @@
+{
+ "brief": "The Quincy Institute examined statements by a Democratic political figure regarding Israel, drawing attention to a controversial advertisement and disagreement within party ranks over the candidate's positions on the Middle East.\n\nThe examination centered on what the candidate has publicly stated about Israel and related US policy matters, with the ad and resulting internal Democratic debate forming the core of the controversy.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://politifact.com/article/2026/oct/30/el-sayed-stevens-michigan-israel-midterms",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-30T19:07:00+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://politifact.com/wp-content/uploads/2026/10/AP26299030478416.jpg",
+ "lang": "en",
+ "link": "https://politifact.com/article/2026/oct/30/el-sayed-stevens-michigan-israel-midterms",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Quincy Institute",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://politifact.com/article/2026/oct/30/el-sayed-stevens-michigan-israel-midterms"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8469cf3dc6",
+ "score": 68.61,
+ "source": "Quincy Institute",
+ "source_id": "quincy",
+ "source_url": "https://quincyinst.org/",
+ "title": "El-Sayed's Israel remarks spark Democratic divisions"
+}
