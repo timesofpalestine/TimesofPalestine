@@ -1,0 +1,33 @@
+{
+ "brief": "Tucker Carlson Network posted commentary on a tweet from Israeli Prime Minister Benjamin Netanyahu, though the specific content of the post and Carlson's detailed response were not accessible through the feed summary provided.\n\nThe network indicated the full conversation was available through an external link, but the substance of Netanyahu's statement and Carlson's reaction remained unclear from the material given.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.youtube.com/watch?v=FV1cBhUUfp4",
+   "name": "Tucker Carlson Network",
+   "url": "https://www.youtube.com/@TuckerCarlson",
+   "verified": false
+  }
+ ],
+ "date": "2026-10-31T23:00:14+00:00",
+ "dek": "Watch the full conversation here:…",
+ "dup_of": null,
+ "image": "https://i3.ytimg.com/vi/FV1cBhUUfp4/hqdefault.jpg",
+ "lang": "en",
+ "link": "https://www.youtube.com/watch?v=FV1cBhUUfp4",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "Tucker Carlson Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.youtube.com/watch?v=FV1cBhUUfp4"
+ },
+ "modified": "2026-11-01T00:08:51+00:00",
+ "original": false,
+ "pid": "8cc0d7a318",
+ "score": 47.04,
+ "source": "Tucker Carlson Network",
+ "source_id": "tucker",
+ "source_url": "https://www.youtube.com/@TuckerCarlson",
+ "title": "Carlson criticizes Netanyahu's social media post"
+}

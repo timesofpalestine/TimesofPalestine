@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/11/israel-army-withdraws-after-hebron-operation",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
    "article": "https://english.pnn.ps/news/48377",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
@@ -30,6 +24,12 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-pulls-forces-out-occupied-west-bank-city-hebron",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/displaced-palestinians-return-damaged-hebron-quarter-israeli-troops-withdraw",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
    "verified": true
   }
  ],
@@ -49,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "725cfa5f3d",
- "score": 44.83,
+ "score": 44.67,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
