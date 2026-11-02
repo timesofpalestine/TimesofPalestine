@@ -19,6 +19,12 @@
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/37673",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
   }
  ],
  "date": "2026-11-02T06:27:01+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "b1d6563496",
- "score": 47.42,
+ "score": 47.13,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
