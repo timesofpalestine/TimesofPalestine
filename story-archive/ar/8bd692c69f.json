@@ -1,0 +1,33 @@
+{
+ "brief": "تعاني قطاع غزة من أزمة نقدية مركّبة تزيد الضغط على السكان وسط ظروف اقتصادية صعبة، بحسب المركز الفلسطيني للإعلام. الأزمة تشمل نقصاً في السيولة النقدية والتضخم المالي، مما يعقّد إمكانية الحصول على السلع الأساسية والخدمات.\n\nيترتب على هذه الأزمة تداعيات مباشرة على الحياة اليومية للمواطنين، إذ يواجهون صعوبات متزايدة في تلبية احتياجاتهم الأساسية في ظل تضاؤل قيمة العملات وارتفاع الأسعار.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/02/1122583",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-02T12:17:34+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/02/1122583",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8bd692c69f",
+ "score": 49.7,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "أزمة نقدية حادة تفاقم معاناة السكان في غزة"
+}
