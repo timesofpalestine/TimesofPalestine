@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces and settlers carried out 3,133 attacks during October, the Ma'an news agency reported. The figure represents an escalation in violence against Palestinians across the occupied West Bank and Gaza Strip during the month.\n\nThe attacks included assaults on civilians, property damage, and other incidents documented by Palestinian monitoring organizations tracking daily incidents of Israeli military and settler violence.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171559.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-02T09:12:23+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171559.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b4af430da3",
+ "score": 46.48,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Occupation forces and settlers committed 3,133 attacks in October"
+}
