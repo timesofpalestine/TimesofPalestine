@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces have withdrawn from Hebron following a 10-day siege of the city, according to Al Jazeera English. The Hebron governor confirmed the pullback, though details on the circumstances or timing of the withdrawal remain unclear.\n\nThe siege had confined residents and restricted movement throughout the southern West Bank city. No statement has been reported from Israeli military officials regarding the withdrawal.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/2/hebron-governor-says-israeli-forces-withdraw-from-city-after-10-day-siege?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-02T06:27:01+00:00",
+ "dek": "This is a breaking news story.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-10-27T110407Z_28644135_RC2MBOAYL2BO_RTRMADP_3_ISRAEL-PALESTINIANS-HEBRON-OPERATION-1793572352.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/2/hebron-governor-says-israeli-forces-withdraw-from-city-after-10-day-siege?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/2/hebron-governor-says-israeli-forces-withdraw-from-city-after-10-day-siege?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b1d6563496",
+ "score": 49.83,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces withdraw from Hebron after 10-day siege"
+}
