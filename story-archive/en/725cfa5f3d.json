@@ -13,12 +13,6 @@
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
    "verified": true
-  },
-  {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/2/jerusalem-daily-israels-lockdown-of-hebron-comes-to-an-end?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": false
   }
  ],
  "date": "2026-11-02T09:59:57+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "725cfa5f3d",
- "score": 40.74,
+ "score": 40.59,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
