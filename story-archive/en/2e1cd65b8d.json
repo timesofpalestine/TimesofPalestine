@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli election officials said Tuesday they would not alter results despite any potential foreign interference findings, according to Al Jazeera English. Prime Minister Benjamin Netanyahu claimed the election was \"stolen\" without presenting evidence, as the country faced a deadlocked outcome.\n\nThe election body's statement came amid Netanyahu's assertions of impropriety. Officials indicated that even if foreign interference allegations were substantiated, the results would remain final.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/2/israeli-officials-say-results-stand-as-netanyahu-claims-election-stolen?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-election-chief-says-results-valid-after-netanyahu-claims-vote",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-02T00:29:16+00:00",
+ "dek": "Election body says deadlocked result won't be undermined even if foreign interference claims are found to be true.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6ae72d243514-1793535268.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/2/israeli-officials-say-results-stand-as-netanyahu-claims-election-stolen?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/2/israeli-officials-say-results-stand-as-netanyahu-claims-election-stolen?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2e1cd65b8d",
+ "score": 63.63,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu claims stolen election as results stand unchanged"
+}
