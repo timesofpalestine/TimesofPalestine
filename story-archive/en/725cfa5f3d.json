@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.com/news/2026/11/2/displaced-in-hebron-picking-up-pieces-after-israeli-siege?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/11/israel-army-withdraws-after-hebron-operation",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -43,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "725cfa5f3d",
- "score": 46.11,
+ "score": 45.87,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
