@@ -1,0 +1,33 @@
+{
+ "brief": "The Israeli military announced completion of its operation in Hebron and said it would begin what it called \"Operation Sheba,\" the Ma'an news agency reported. The military gave no details on the scope or duration of the new campaign.\n\nThe announcement follows weeks of Israeli military activity in the West Bank city, where Israeli and Palestinian forces have clashed repeatedly.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171561.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-02T08:57:14+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171561.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "97260ea824",
+ "score": 49.98,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli military ends Hebron operation, announces new campaign phase"
+}
