@@ -1,0 +1,39 @@
+{
+ "brief": "Netanyahu is pressuring President Trump to launch a nuclear strike on Iran within days, according to Tucker Carlson, the Ma'an news agency reported. Carlson did not provide evidence for the assertion or elaborate on the claimed timeline or circumstances of such an attack.\n\nThe statement comes amid escalating regional tensions and follows Trump's return to office. Israel's Prime Minister has long sought a more aggressive U.S. stance toward Iran's nuclear program.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171553.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.youtube.com/shorts/JcAZWKVgexE",
+   "name": "Tucker Carlson Network",
+   "url": "https://www.youtube.com/@TuckerCarlson",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-02T09:05:38+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20Netanyahu%202018.jpg?width=640",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171553.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Benjamin Netanyahu — Wikimedia Commons / US State Department (public domain)",
+  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg",
+  "rightsBasis": "wikimedia-cc",
+  "source": "https://commons.wikimedia.org/wiki/File:Benjamin_Netanyahu_2018.jpg"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "75eed906ae",
+ "score": 49.81,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Netanyahu pressure pushes Trump toward nuclear strike on Iran, Carlson claims"
+}
