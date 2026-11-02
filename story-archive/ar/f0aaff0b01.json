@@ -7,6 +7,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/Arabi21News/430335",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": false
   }
  ],
  "date": "2026-11-01T20:39:18+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "f0aaff0b01",
- "score": 42.14,
+ "score": 41.99,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
