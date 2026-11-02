@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/11/2/israeli-officials-say-results-stand-as-netanyahu-claims-election-stolen?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-election-chief-says-results-valid-after-netanyahu-claims-vote",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-02T00:29:16+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "2e1cd65b8d",
- "score": 59.41,
+ "score": 59.14,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
