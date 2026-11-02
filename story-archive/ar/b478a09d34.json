@@ -1,0 +1,33 @@
+{
+ "brief": "المركز الفلسطيني للإعلام تناول في تقرير تاريخ الانسداد الانتخابي الإسرائيلي، الذي يعكس عجز الأحزاب الإسرائيلية عن تشكيل حكومات مستقرة. واجهت إسرائيل منذ سنوات أزمات سياسية متتالية، إذ فشلت جولات انتخابية متعددة في إنتاج ائتلافات حكومية قادرة على تمرير قوانين أساسية أو تشريعات ضرورية.\n\nتعكس هذه الأزمة الانقسامات العميقة بين الكتل السياسية الإسرائيلية المختلفة، وتعقيدات النظام الانتخابي النسبي الذي يصعّب من احتمالات وصول حزب واحد إلى أغلبية برلمانية مطلقة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/01/1122534",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-02T18:44:13+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/01/1122534",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b478a09d34",
+ "score": 34.74,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "إسرائيل تواجه أزمة انتخابية متكررة منذ سنوات"
+}
