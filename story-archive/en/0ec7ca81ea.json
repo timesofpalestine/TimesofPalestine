@@ -1,0 +1,33 @@
+{
+ "brief": "Riot police arrived at the University of Hamburg and arrested dozens of students staging a pro-Palestine demonstration, Al Jazeera English reported. The protest took place on the campus as officers moved in to disperse the gathering.\n\nDetails of the arrests and the scale of police deployment were not immediately specified. The incident reflects broader campus activism across Germany regarding the Israeli-Palestinian conflict.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/2/police-arrive-at-german-university-pro-palestine-protest?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-02T13:37:26+00:00",
+ "dek": "Dozens of Pro-Palestine students protested at the University of Hamburg in Germany. Riot police arrested students.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1793626547.jpg?resize=1639%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/2/police-arrive-at-german-university-pro-palestine-protest?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/2/police-arrive-at-german-university-pro-palestine-protest?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0ec7ca81ea",
+ "score": 49.31,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "German police arrest pro-Palestine protesters at Hamburg university"
+}
