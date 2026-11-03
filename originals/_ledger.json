@@ -1,13 +1,13 @@
 {
  "month": "2026-11",
  "desks": {
-  "briefs": 33.432248,
+  "briefs": 33.619895,
   "investigations": 2.517037,
   "washington": 13.33343
  },
  "tags": {
-  "briefs:rewrite": 16.965973,
-  "briefs:retry-short": 16.342498,
+  "briefs:rewrite": 17.065443,
+  "briefs:retry-short": 16.430674,
   "briefs:judge": 0.097723,
   "briefs:retry-diction": 0.026018
  },
@@ -20,5 +20,5 @@
    }
   ]
  },
- "updated": "2026-11-03T02:42:45.393251+00:00"
+ "updated": "2026-11-03T02:55:23.384842+00:00"
 }
