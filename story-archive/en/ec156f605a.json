@@ -1,0 +1,33 @@
+{
+ "brief": "Tucker Carlson Network reported that Tucker Carlson responded to statements from Israeli Prime Minister Benjamin Netanyahu, characterizing them as racist. The network's framing suggests Carlson took issue with specific claims made by Netanyahu, though the exact statements in question were not detailed in the available material.\n\nThe report appeared under a headline emphasizing civil rights concerns, indicating Carlson positioned his response as a defense against discriminatory rhetoric.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.youtube.com/shorts/mVETNv276EM",
+   "name": "Tucker Carlson Network",
+   "url": "https://www.youtube.com/@TuckerCarlson",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-02T22:30:04+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://i2.ytimg.com/vi/mVETNv276EM/hqdefault.jpg",
+ "lang": "en",
+ "link": "https://www.youtube.com/shorts/mVETNv276EM",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "Tucker Carlson Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.youtube.com/shorts/mVETNv276EM"
+ },
+ "modified": "2026-11-02T22:30:04+00:00",
+ "original": false,
+ "pid": "ec156f605a",
+ "score": 49.13,
+ "source": "Tucker Carlson Network",
+ "source_id": "tucker",
+ "source_url": "https://www.youtube.com/@TuckerCarlson",
+ "title": "Carlson challenges Netanyahu over racist rhetoric"
+}
