@@ -1,0 +1,33 @@
+{
+ "brief": "Drop Site News reported that the United States conducted airstrikes on an Iranian island, marking an escalation in regional tensions. The strikes occurred amid ongoing hostilities affecting the broader Middle East and surrounding waters.\n\nIsrael simultaneously blocked aid deliveries through the Rafah crossing into Gaza, tightening restrictions on humanitarian access to the territory. In a separate operation, Turkish forces conducted strikes against Al-Shabaab militants in Somalia.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.dropsitenews.com/p/us-iran-qeshm-gaza-israel-rafah-aid-turkey-somalia-shabaab",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-03T15:59:24+00:00",
+ "dek": "Drop Site Daily: November 3, 2026…",
+ "dup_of": null,
+ "image": "https://substackcdn.com/image/fetch/$s_!C-NM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa71330a2-628a-4beb-ba5d-b1198e059870_9429x5303.heic",
+ "lang": "en",
+ "link": "https://www.dropsitenews.com/p/us-iran-qeshm-gaza-israel-rafah-aid-turkey-somalia-shabaab",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Drop Site News",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.dropsitenews.com/p/us-iran-qeshm-gaza-israel-rafah-aid-turkey-somalia-shabaab"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d2ec5c22ae",
+ "score": 63.98,
+ "source": "Drop Site News",
+ "source_id": "dropsite",
+ "source_url": "https://www.dropsitenews.com/",
+ "title": "U.S. strikes Iranian island as Israel restricts Gaza aid flow"
+}
