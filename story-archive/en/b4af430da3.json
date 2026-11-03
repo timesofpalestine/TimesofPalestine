@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2171559.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-multiple-west-bank-towns-local-sources-report",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-02T09:12:23+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b4af430da3",
- "score": 34.66,
+ "score": 34.5,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
