@@ -1,0 +1,33 @@
+{
+ "brief": "Israel's inconclusive election results have created political uncertainty as Palestinian areas face intensified military operations, according to Al Jazeera English. The West Bank remains under closure while Gaza experiences ongoing killings, compounding the humanitarian toll on Palestinian civilians amid the electoral stalemate in Israel.\n\nThese developments occur simultaneously: Israeli politicians navigate coalition negotiations while Palestinians contend with restricted movement and military action across occupied territories.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-03T06:46:27+00:00",
+ "dek": "As Israel grapples with an inconclusive election, Palestinians face West Bank closures and Gaza killings.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261102__D64M7KK__v1__HighRes__PalestinianIsraelConflictWestBank-1793606854.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9316073a6d",
+ "score": 63.83,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel's election deadlock coincides with Palestinian casualties and restrictions"
+}
