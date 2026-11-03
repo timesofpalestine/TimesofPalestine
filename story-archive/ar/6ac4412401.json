@@ -31,6 +31,12 @@
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/430361",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": false
   }
  ],
  "date": "2026-11-03T17:01:03+00:00",
@@ -49,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "6ac4412401",
- "score": 46.97,
+ "score": 46.7,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
