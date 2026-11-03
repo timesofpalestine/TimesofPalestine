@@ -6,13 +6,7 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-indiscriminate-israeli-gunfire-kills-and-terrorises-displaced",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48378",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-03T10:59:26+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "70270fc2e3",
- "score": 62.72,
+ "score": 62.49,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
