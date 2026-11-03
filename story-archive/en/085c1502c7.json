@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces conducted raids across multiple West Bank towns late Monday, including Qabatiya south of Jenin and the city of Qalqilya, local sources reported to Middle East Eye. The operations swept through several municipalities in the occupied territory.\n\nNo immediate information emerged from local sources regarding the scope of the incursions, their stated purpose, or whether anyone was killed or wounded.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-multiple-west-bank-towns-local-sources-report",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-02T22:31:07+00:00",
+ "dek": "Israeli forces raid multiple West Bank towns, local sources report Israeli forces launched raids on several towns in the occupied West Bank late on Monday, local sources reported. Among them are the towns of Qabatiya, south of Jenin, and the city of Qalqilya.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-multiple-west-bank-towns-local-sources-report",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "085c1502c7",
+ "score": 57.01,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli forces conduct raids across West Bank towns"
+}

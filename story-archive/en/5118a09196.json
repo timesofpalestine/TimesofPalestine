@@ -1,0 +1,33 @@
+{
+ "brief": "Tucker Carlson Network reported that a Fox News host expressed strong criticism regarding Israeli elections, raising his voice while discussing the electoral process. The network's coverage focused on the host's heated commentary about dynamics within Israel's political system.\n\nDetails surrounding the specific election cycle, particular candidates, or substantive policy concerns addressed in the commentary were not specified in the available reporting.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.youtube.com/shorts/hKrLBB4gU38",
+   "name": "Tucker Carlson Network",
+   "url": "https://www.youtube.com/@TuckerCarlson",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-03T00:30:25+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://i1.ytimg.com/vi/hKrLBB4gU38/hqdefault.jpg",
+ "lang": "en",
+ "link": "https://www.youtube.com/shorts/hKrLBB4gU38",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "Tucker Carlson Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.youtube.com/shorts/hKrLBB4gU38"
+ },
+ "modified": "2026-11-03T00:30:26+00:00",
+ "original": false,
+ "pid": "5118a09196",
+ "score": 34.44,
+ "source": "Tucker Carlson Network",
+ "source_id": "tucker",
+ "source_url": "https://www.youtube.com/@TuckerCarlson",
+ "title": "Fox News host criticizes Israeli election dynamics"
+}
