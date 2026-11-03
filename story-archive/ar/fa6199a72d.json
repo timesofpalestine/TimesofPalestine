@@ -1,0 +1,39 @@
+{
+ "brief": "يواجه قطاع غزة صعوبات كبيرة في توفير العلاج الطبي المتخصص لمصابي الحرب، بحسب وكالة معاً. يُعزى النقص إلى الدمار الواسع في البنية التحتية الصحية والنزوح القسري للسكان، ما أدى إلى عجز القطاع الطبي عن توفير الخدمات الجراحية والتأهيلية اللازمة.\n\nيحتاج آلاف المصابين بتشوهات وإعاقات ناجمة عن الحرب إلى متابعة علاجية مستمرة، غير أن المستشفيات الباقية تعمل بموارد محدودة جداً وافتقار للمتخصصين والأدوية والمعدات الطبية الحديثة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37702",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  },
+  {
+   "article": "https://felesteen.news/post/189438/%D8%A7%D9%84%D8%A5%D8%BA%D8%A7%D8%AB%D8%A9-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9-%D8%AA%D8%AD%D8%B0%D8%B1-%D9%85%D9%86-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-03T12:13:17+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/Dg75kZa-qjKlh9AxDe61B8azqwgGY5m179Gz0uem8RsCagL0fUHdrIhvy1e5kOxlKdio2f67Le0MsqygnUTjPxmepbeD6XTIK13EKf398KkehTD3aQplCn9EcJxmu4bPCDLpZYCuslNwyW1BospvbCzbFTrn8zCPf8Sb352DEvC0pNQAUGcxhPiWSpWWa55WC01bRF8ihb5C-H6fz_yc3e-NRapx7pN4MDX5d7akUEuLgwpx8u7bWMXaPWnhTnNEy--tfXGFgXbzAd6Ya48vjRA2RWApYEFRoM5YeI9579oid2rTIZ4r3D0DIKWAeaKJwtcZyqyuIPkoegjsS2Dwng",
+ "lang": "ar",
+ "link": "https://t.me/maannews/37702",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "وكالة معا (حصري)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37702"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fa6199a72d",
+ "score": 49.73,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "غزة تعاني نقصاً حاداً في الخدمات الطبية لعلاج تشوهات الحرب"
+}
