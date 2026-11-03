@@ -6,7 +6,13 @@
    "article": "https://www.dropsitenews.com/p/israel-gaza-strikes-un-yemen-ansarallah-haley-stevens-mike-rogers",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48378",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-11-02T15:58:50+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "bb5c32ab7f",
- "score": 50.81,
+ "score": 50.57,
  "source": "Drop Site News",
  "source_id": "dropsite",
  "source_url": "https://www.dropsitenews.com/",
