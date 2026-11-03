@@ -1,0 +1,33 @@
+{
+ "brief": "تنتشر الأمراض المعدية بسرعة وسط الأطفال في قطاع غزة، في ظل تدهور الأوضاع الصحية وتراجع الخدمات الطبية، بحسب المركز الفلسطيني للإعلام. يعاني القطاع من نقص حاد في الموارد الطبية والأدوية اللازمة للوقاية والسيطرة على العدوى.\n\nيسرّع الاكتظاظ السكاني والنقص في مياه الشرب النظيفة والصرف الصحي من انتشار الأمراض بين الأطفال، الذين يواجهون مخاطر صحية أكبر من غيرهم نتيجة ضعف مناعتهم.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/03/1122771",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-03T12:50:00+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/03/1122771",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0c7ec1df87",
+ "score": 49.99,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الأمراض المعدية تنتشر بين أطفال غزة"
+}
