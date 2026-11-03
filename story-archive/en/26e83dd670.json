@@ -13,6 +13,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/show-courage-and-end-netanyahus-government-tibi-urges-israeli-opposition",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-11-02T06:00:32+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "26e83dd670",
- "score": 37.1,
+ "score": 36.9,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
