@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/israel-kills-23-palestinians-including-two-children-and-six-police-officers-in-attacks-across-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-interior-ministry-israeli-air-strike-kills-police-officers-near",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-02T18:12:35+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "ce5f6272e0",
- "score": 84.77,
+ "score": 84.74,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
