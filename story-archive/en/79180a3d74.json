@@ -6,13 +6,7 @@
    "article": "https://dawnmena.org/dawns-statement-on-trumps-announcement-on-end-to-u-s-aid-to-israel",
    "name": "DAWN",
    "url": "https://dawnmena.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/11/americans-vote-trump-says-us-will-stop-4-billion-aid-israel",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-03T17:48:39+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "79180a3d74",
- "score": 71.96,
+ "score": 71.95,
  "source": "DAWN",
  "source_id": "dawn",
  "source_url": "https://dawnmena.org/",
