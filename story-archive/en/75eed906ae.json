@@ -6,13 +6,7 @@
    "article": "https://www.maannews.net/news/2171553.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.youtube.com/shorts/JcAZWKVgexE",
-   "name": "Tucker Carlson Network",
-   "url": "https://www.youtube.com/@TuckerCarlson",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-02T09:05:38+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "75eed906ae",
- "score": 39.96,
+ "score": 39.72,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
