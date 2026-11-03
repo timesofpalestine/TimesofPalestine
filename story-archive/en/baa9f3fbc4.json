@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli occupation forces conducted a raid and search campaign in Dura, a town in the West Bank, detaining a number of residents, the Ma'an news agency reported. The operation involved systematic searches of homes and arrest procedures targeting the civilian population.\n\nDetails of the specific number of detainees and the stated reason for the military action were not immediately clear. Such raids remain a frequent occurrence across Palestinian towns and villages in the occupied West Bank.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171617.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-multiple-west-bank-towns-local-sources-report",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-03T07:52:47+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-prisoners.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171617.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "baa9f3fbc4",
+ "score": 49.09,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces raid Dura, detain residents in sweep operation"
+}
