@@ -1,0 +1,33 @@
+{
+ "brief": "The Democratic Socialists of America achieved their strongest electoral performance in a midterm election cycle, Al Jazeera English reported. The left-wing movement's candidates gained ground on platforms addressing the war in Gaza and universal healthcare.\n\nThe organization's expanded presence in elected office reflects growing voter receptiveness to socialist policies on healthcare access and Middle East foreign policy. Specific seat counts and state-by-state results were not detailed in available reporting.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/4/democratic-socialists-of-america-see-record-wins-in-us-midterm-elections?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-04T22:45:24+00:00",
+ "dek": "The left-wing movement has won support for its views on issues like the war in Gaza and universal healthcare.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/07/ap_6a68ebd1385dc-1785261009.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/4/democratic-socialists-of-america-see-record-wins-in-us-midterm-elections?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/4/democratic-socialists-of-america-see-record-wins-in-us-midterm-elections?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4cc586e873",
+ "score": 49.35,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Democratic Socialists win record midterm seats across United States"
+}
