@@ -7,6 +7,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/us-election-results-fuel-israeli-oppositions-push-remove-netanyahu",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-11-04T11:46:28+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "304d009df7",
- "score": 46.77,
+ "score": 46.59,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
