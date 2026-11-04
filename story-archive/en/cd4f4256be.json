@@ -1,0 +1,39 @@
+{
+ "brief": "Adam Hamawy, an Egyptian-American surgeon who volunteered in Gaza, won election to Congress representing New Jersey's 12th District, Al Jazeera English reported. The victory represents a new entry into the House of Representatives.\n\nHamawy's background in medicine and humanitarian work in Gaza distinguished his path to the seat, though further details of his campaign and the election results were not available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/4/gaza-volunteer-adam-hamawy-wins-historic-us-congress-seat?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-volunteer-surgeon-adam-hamawy-wins-us-house-seat-new-jersey",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-04T13:33:05+00:00",
+ "dek": "Egyptian-American surgeon Adam Hamawy has won New Jersey’s 12th Congressional District.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1793799143.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/4/gaza-volunteer-adam-hamawy-wins-historic-us-congress-seat?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/4/gaza-volunteer-adam-hamawy-wins-historic-us-congress-seat?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cd4f4256be",
+ "score": 48.5,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Surgeon and Gaza volunteer elected to U.S. House"
+}
