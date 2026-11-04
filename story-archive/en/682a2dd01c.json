@@ -1,0 +1,33 @@
+{
+ "brief": "Israel is restricting access to medical treatment for approximately 1,100 child amputees in Gaza through travel and evacuation limitations, Al Jazeera English reported. The conditions prevent children from receiving care abroad, according to the NGO's account.\n\nThe restrictions compound an existing humanitarian crisis in the enclave, where medical facilities have faced severe damage and resource shortages. Children requiring specialized prosthetics and rehabilitation services have been unable to leave for treatment in neighboring countries or further afield.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/4/israel-restricting-treatment-for-1100-child-amputees-in-gaza-ngo?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-04T21:13:56+00:00",
+ "dek": "Israeli restrictions on travel and medical evacuations prevent children in Gaza from being treated abroad.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2025/03/Gaza-1742898358.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/4/israel-restricting-treatment-for-1100-child-amputees-in-gaza-ngo?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/4/israel-restricting-treatment-for-1100-child-amputees-in-gaza-ngo?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "682a2dd01c",
+ "score": 63.83,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel blocks treatment for 1,100 child amputees in Gaza, NGO says"
+}
