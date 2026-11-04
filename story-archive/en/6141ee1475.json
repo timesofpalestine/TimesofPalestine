@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces stormed Ramallah on Friday, firing tear gas that caused suffocation injuries among residents and detainees, the Ma'an news agency reported. A teacher was among those held during the incursion into the city.\n\nThe raid resulted in multiple casualties from inhaled gas, though specific numbers were not immediately confirmed. The detention occurred as Israeli military operations continue across Palestinian population centers.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171674.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-04T07:46:10+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171674.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6141ee1475",
+ "score": 63.13,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces injure protesters, detain teacher in Ramallah raid"
+}
