@@ -7,6 +7,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israel-president-opens-talks-rivals-struggle-form-government",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-11-03T21:19:13+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "fa809830e2",
- "score": 46.42,
+ "score": 46.23,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
