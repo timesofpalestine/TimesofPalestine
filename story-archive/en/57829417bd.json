@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/11/4/uk-supreme-court-hears-appeal-against-palestine-actions-proscription?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/uk-ban-palestine-action-challenged-top-court-some-protesters-arrested",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-04T12:43:47+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "57829417bd",
- "score": 49.31,
+ "score": 49.02,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
