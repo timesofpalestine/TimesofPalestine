@@ -6,6 +6,18 @@
    "article": "https://felesteen.news/post/189587/%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D9%8A-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AA%D9%88%D8%B8%D9%81-%D8%A7%D9%84%D8%B4%D8%AA%D8%A7%D8%A1-%D8%B3%D9%84%D8%A7%D8%AD%D8%A7-%D8%B6%D8%AF-%D8%BA%D8%B2%D8%A9-%D9%84%D9%84%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/326804",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/84876",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
    "verified": false
   }
  ],
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "7cd016ab19",
- "score": 48.97,
+ "score": 48.7,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
