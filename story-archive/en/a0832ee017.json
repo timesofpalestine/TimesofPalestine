@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli strikes killed four people including a child in Gaza, according to officials in the enclave. The deaths occurred amid an ongoing toll of civilian casualties since a ceasefire agreement took effect, Al Jazeera English reported.\n\nGaza authorities say more than 1,600 Palestinians have been killed since the ceasefire began. The figure reflects the scale of violence in the territory despite the agreement aimed at halting hostilities.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/5/four-people-including-a-child-killed-in-israeli-attacks-on-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-05T13:04:52+00:00",
+ "dek": "Gaza officials say more than 1,600 Palestinians have been killed since the so-called 'ceasefire' took effect.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6aec6b82b881a-1793878914.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/5/four-people-including-a-child-killed-in-israeli-attacks-on-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/5/four-people-including-a-child-killed-in-israeli-attacks-on-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a0832ee017",
+ "score": 63.78,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli attacks kill four Palestinians including child in Gaza"
+}
