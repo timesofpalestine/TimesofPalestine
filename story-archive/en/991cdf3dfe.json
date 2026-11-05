@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/11/5/israel-extends-detention-of-palestinian-journalist-abed-abou-shhadeh?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-detains-palestinian-activist-without-charge",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-05T09:52:02+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "991cdf3dfe",
- "score": 49.09,
+ "score": 48.8,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
