@@ -6,7 +6,13 @@
    "article": "https://dawnmena.org/dawns-statement-on-trumps-announcement-on-end-to-u-s-aid-to-israel",
    "name": "DAWN",
    "url": "https://dawnmena.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://electronicintifada.net/blogs/michael-f-brown/will-trump-really-cut-military-aid-israel",
+   "name": "Electronic Intifada",
+   "url": "https://electronicintifada.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-03T17:48:39+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "79180a3d74",
- "score": 70.11,
+ "score": 70.1,
  "source": "DAWN",
  "source_id": "dawn",
  "source_url": "https://dawnmena.org/",
