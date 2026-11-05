@@ -1,0 +1,33 @@
+{
+ "brief": "Al Jazeera English examined how US midterm election results could affect conflicts in Iran, Gaza, and Ukraine, noting that despite Democratic gains, the party lacks the two-thirds majority required to override a presidential veto or pass legislation independently.\n\nThe outcome leaves Democrats with expanded congressional power but constrained ability to shape foreign policy unilaterally on these fronts without Republican support.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-05T11:32:40+00:00",
+ "dek": "Despite wins, Democrats lack the two-thirds majority needed to overturn a presidential veto and push through a law.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-04T210740Z_505848961_RC27HOAKD65K_RTRMADP_3_USA-ELECTION-CALIFORNIA-1793851381.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2fb3bdbad8",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Democrats gain seats but fall short of veto-proof majority in midterms"
+}
