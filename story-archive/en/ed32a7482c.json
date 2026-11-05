@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/arab-led-joint-list-says-it-will-back-eisenkot-form-israels-next",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/arab-parties-backing-gives-eisenkot-edge-over-netanyahu-pm-what-know",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-05T16:33:26+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "ed32a7482c",
- "score": 48.4,
+ "score": 47.85,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
