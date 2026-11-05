@@ -1,0 +1,39 @@
+{
+ "brief": "Israel has extended the detention of Palestinian journalist Abed Abou Shhadeh, according to Al Jazeera English. Rights groups say the arrest relates to an interview the journalist conducted with Azmi Bishara and constitutes an attempt to silence Palestinians.\n\nThe detention extension comes as concerns mount over press freedom and the targeting of media workers in the occupied Palestinian territories. Bishara, a former Israeli lawmaker, has been a vocal critic of Israeli policies.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/5/israel-extends-detention-of-palestinian-journalist-abed-abou-shhadeh?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-detains-palestinian-activist-without-charge",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-05T09:52:02+00:00",
+ "dek": "Rights group says the journalist's arrest over an interview with Azmi Bishara is an attempt to silence Palestinians.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/abedabu-1-1793867079.jpg?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/5/israel-extends-detention-of-palestinian-journalist-abed-abou-shhadeh?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/5/israel-extends-detention-of-palestinian-journalist-abed-abou-shhadeh?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "991cdf3dfe",
+ "score": 49.72,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel extends detention of Palestinian journalist Abou Shhadeh"
+}
