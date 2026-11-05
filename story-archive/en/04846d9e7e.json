@@ -7,6 +7,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/has-israel-ousted-netanyahu-good",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-11-05T01:53:30+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "04846d9e7e",
- "score": 47.32,
+ "score": 47.18,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
