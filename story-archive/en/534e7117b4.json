@@ -1,0 +1,33 @@
+{
+ "brief": "According to Al Jazeera English, Israeli settlers have carried out pogroms in Hebron. The incidents occur as the broader Israeli-Palestinian conflict intensifies, with military operations ongoing in Gaza.\n\nThe attacks reflect escalating tensions in the occupied West Bank, where settler violence against Palestinians has increased during periods of heightened conflict. Israel's president has begun consulting party leaders on government formation as security operations continue.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jerusalem-daily-settler-pogroms-in-hebron?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-05T15:10:42+00:00",
+ "dek": "Israel’s president consults party leaders on forming a government, as Israeli forces attack Palestinians in Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1793891425.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jerusalem-daily-settler-pogroms-in-hebron?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jerusalem-daily-settler-pogroms-in-hebron?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "534e7117b4",
+ "score": 49.8,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers conduct pogroms in Hebron amid Gaza conflict"
+}
