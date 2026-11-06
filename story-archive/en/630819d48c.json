@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinians in Gaza have constructed wind turbines using scrap materials salvaged from the territory's rubble, according to Al Jazeera English. The initiative addresses chronic electricity shortages affecting the enclave's 2.3 million residents.\n\nDetails of the turbines' capacity, the number constructed, and their impact on local power supply were not specified. The project reflects Palestinians' efforts to develop alternative energy solutions amid Gaza's ongoing infrastructure challenges.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/6/building-wind-turbines-out-of-parts-found-in-gazas-rubble?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-06T04:20:22+00:00",
+ "dek": "Palestinians in Gaza have made wind turbines to generate electricity, using scraps found in the rubble.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1793938807.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/6/building-wind-turbines-out-of-parts-found-in-gazas-rubble?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/6/building-wind-turbines-out-of-parts-found-in-gazas-rubble?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "630819d48c",
+ "score": 49.46,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians build wind turbines from Gaza rubble to generate power"
+}
