@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/11/5/aje-onl-nf_israeli-demolitions-displace-palestinians-in-biddu-051126?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-demolish-five-west-bank-buildings-and-displace-over-100",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-05T21:33:40+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "41f437952e",
- "score": 46.16,
+ "score": 45.89,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
