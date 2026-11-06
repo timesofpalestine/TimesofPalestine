@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli settlers set fire to an olive grove belonging to Palestinian farmers in the village of Burqa near Ramallah, Al Jazeera English reported. The blaze destroyed trees in what residents described as an act of harassment targeting their agricultural land.\n\nThe incident is part of a pattern of settler violence against Palestinian property in the occupied West Bank. Olive groves represent a primary livelihood for many Palestinian farming communities in the region.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/6/israeli-settlers-set-fire-to-palestinian-olive-grove-near-ramallah?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-06T00:19:57+00:00",
+ "dek": "Israeli settlers have set fire to olive trees belonging to Palestinian farmers in the village of Burqa, near Ramallah.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1793924390.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/6/israeli-settlers-set-fire-to-palestinian-olive-grove-near-ramallah?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/6/israeli-settlers-set-fire-to-palestinian-olive-grove-near-ramallah?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "146e7d5dc5",
+ "score": 49.82,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers torch Palestinian olive grove near Ramallah"
+}
