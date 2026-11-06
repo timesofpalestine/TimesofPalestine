@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli President Isaac Herzog will announce his choice for prime minister on Sunday, Al Jazeera English reported. The decision follows a vote among lawmakers in which a majority backed Gadi Eisenkot over Benjamin Netanyahu as their preferred candidate to lead the next government.\n\nThe announcement represents a significant moment in Israeli politics, as the endorsement by the parliamentary majority signals potential shifts in coalition negotiations ahead of formal government formation.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/6/israels-herzog-to-name-a-candidate-to-form-government-on-sunday?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-led-party-backs-eisenkot-form-israeli-government",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/arab-parties-backing-gives-eisenkot-edge-over-netanyahu-pm-what-know",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-06T07:09:42+00:00",
+ "dek": "Announcement comes after majority of Israeli lawmakers endorse Eisenkot over Netanyahu.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6aed512d29ac-1793937709.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/6/israels-herzog-to-name-a-candidate-to-form-government-on-sunday?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/6/israels-herzog-to-name-a-candidate-to-form-government-on-sunday?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e61d922300",
+ "score": 49.96,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Herzog to name coalition candidate after lawmakers reject Netanyahu"
+}
