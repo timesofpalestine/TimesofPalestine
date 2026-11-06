@@ -1,0 +1,33 @@
+{
+ "brief": "Gazans are converting discarded cooking pots into improvised seawalls ahead of winter rains, Al Jazeera English reported. The makeshift barriers reflect the population's adaptation to shortages of conventional building materials and infrastructure damage across the territory.\n\nAs winter approaches, residents have begun salvaging household items to protect homes and communities from flooding during the rainy months. Standard construction supplies remain in limited supply throughout Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/6/gaza-turns-discarded-cooking-pots-into-seawalls?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-06T02:03:47+00:00",
+ "dek": "As winter approaches, Palestinians in Gaza are turning damaged cooking pots into makeshift seawalls to avoid flooding.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1793930621.jpg?resize=1918%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/6/gaza-turns-discarded-cooking-pots-into-seawalls?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/6/gaza-turns-discarded-cooking-pots-into-seawalls?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2ed7cc91b3",
+ "score": 79.28,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians repurpose cooking pots as seawalls against Gaza flooding"
+}
