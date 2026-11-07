@@ -6,13 +6,7 @@
    "article": "https://www.al-monitor.com/originals/2026/11/macklemore-says-us-venues-rejected-his-free-palestine-tour",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/macklemore-says-us-venues-rejected-his-free-palestine-tour",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-06T22:46:26+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "e6d8b3f9dc",
- "score": 43.92,
+ "score": 43.65,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
