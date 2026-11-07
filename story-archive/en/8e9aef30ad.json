@@ -6,13 +6,7 @@
    "article": "https://www.amnesty.org/en/latest/news/2026/11/israel-opt-israel-must-immediately-release-palestinian-land-defender",
    "name": "Amnesty International",
    "url": "https://www.amnesty.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/attacks-raids-and-forced-demolitions-mark-another-day-israeli-violence",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-05T13:13:38+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "8e9aef30ad",
- "score": 51.59,
+ "score": 51.48,
  "source": "Amnesty International",
  "source_id": "amnesty",
  "source_url": "https://www.amnesty.org/",
