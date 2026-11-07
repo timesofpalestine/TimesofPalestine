@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://t.me/gazaalannet/84924",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
    "article": "https://t.me/Palinfo/327051",
    "name": "المركز الفلسطيني للإعلام",
    "url": "https://t.me/palinfo",
@@ -37,12 +43,6 @@
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
    "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/84916",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": false
   }
  ],
  "date": "2026-11-07T04:45:28+00:00",
@@ -61,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "cfedee45af",
- "score": 47.44,
+ "score": 47.21,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",

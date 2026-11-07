@@ -1,0 +1,33 @@
+{
+ "brief": "Maan Wire reported a stark characterization of Hebron's transformation, describing the West Bank city not as an urban center with checkpoints, but as checkpoints that have come to define the city itself. The description reflects how Israeli military barriers have altered the physical landscape and daily life of Palestinian residents.\n\nThe observation points to decades of Israeli security measures implemented across Hebron, one of the most restrictive environments in the occupied Palestinian territories. Movement through the city requires passage through multiple checkpoints that fragment neighborhoods and constrain commerce and civilian mobility.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171801.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-07T08:42:20+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171801.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fcdabd0f80",
+ "score": 49.96,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Hebron becomes city defined by Israeli checkpoints"
+}
