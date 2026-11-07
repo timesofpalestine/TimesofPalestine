@@ -1,0 +1,33 @@
+{
+ "brief": "Cisco intensified its business relationship with Israel's military intelligence community during the Gaza war despite internal worker protests against the company's role in the conflict, The Guardian reported. Leaked documents show the tech giant sought to shore up ties with Israeli defense officials a year into the fighting, when networks serving Israel's military intelligence apparatus were experiencing technical difficulties.\n\nThe company's efforts to deepen its military contracts occurred as Cisco faced employee activism opposing the firm's involvement in the war. Internal resistance to the company's Israeli defense business did not deter leadership from pursuing what one document characterized as a \"customer success story.\"",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/07/israel-intelligence-cisco-gaza-palestine",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-07T12:00:12+00:00",
+ "dek": "Tech giant leaped to shore up relationship even as company was roiled by worker protest over its role in the war A year into the war in Gaza , the networks of Israel ’s military intelligence community were plagued with technical problems.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/60a84798eb17356220e1eb8ab76f14087a8cd747/0_0_3000_2400/master/3000.jpg?width=140&quality=85&auto=format&fit=max&s=cea2e5100ec572f808c1994331acef93",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/nov/07/israel-intelligence-cisco-gaza-palestine",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/nov/07/israel-intelligence-cisco-gaza-palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fd23123612",
+ "score": 49.96,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Cisco doubled down on Israeli military deals during Gaza war"
+}

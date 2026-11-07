@@ -13,6 +13,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/rains-flood-gaza-displacement-camps-israeli-authorities-block-entry",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-07T08:53:52+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "22dfe0cd90",
- "score": 48.0,
+ "score": 47.81,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
