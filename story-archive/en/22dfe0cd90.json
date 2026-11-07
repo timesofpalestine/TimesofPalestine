@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/37727",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-07T08:53:52+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "22dfe0cd90",
- "score": 48.19,
+ "score": 48.0,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

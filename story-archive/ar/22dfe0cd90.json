@@ -39,7 +39,13 @@
    "verified": true
   },
   {
-   "article": "https://t.me/QudsN/749524",
+   "article": "https://t.me/Palinfo/327079",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/749541",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
    "verified": true
@@ -48,12 +54,6 @@
    "article": "https://www.alquds.co.uk/%d8%ba%d8%b2%d8%a9-%d8%a3%d9%85%d8%b7%d8%a7%d8%b1-%d8%ba%d8%b2%d9%8a%d8%b1%d8%a9-%d8%aa%d8%ba%d8%b1%d9%82-%d8%ae%d9%8a%d8%a7%d9%85-%d9%86%d8%a7%d8%b2%d8%ad%d9%8a%d9%86-%d9%88%d8%a5%d8%b5%d8%a7",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": false
-  },
-  {
-   "article": "https://t.me/Palinfo/327077",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
    "verified": false
   }
  ],
@@ -73,7 +73,7 @@
  "modified": null,
  "original": false,
  "pid": "22dfe0cd90",
- "score": 48.18,
+ "score": 47.99,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
