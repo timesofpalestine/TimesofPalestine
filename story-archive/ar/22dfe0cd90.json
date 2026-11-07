@@ -9,18 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Palinfo/327098",
-   "name": "المركز الفلسطيني للإعلام",
-   "url": "https://t.me/palinfo",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/84947",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": true
-  },
-  {
    "article": "https://www.pbc.ps/8785-184",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
@@ -36,6 +24,12 @@
    "article": "https://youtube.com/shorts/HIC647EmPNs",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/84957",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
    "verified": true
   },
   {
@@ -67,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "22dfe0cd90",
- "score": 44.54,
+ "score": 44.27,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
