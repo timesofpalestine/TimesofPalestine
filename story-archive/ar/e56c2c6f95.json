@@ -19,6 +19,18 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/430451",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/749571",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-11-07T11:39:00+00:00",
@@ -37,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "e56c2c6f95",
- "score": 48.05,
+ "score": 47.79,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
