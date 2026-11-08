@@ -63,6 +63,20 @@ class WorkflowCharterTest(unittest.TestCase):
         self.assertIn("git rebase --abort", persist)
         self.assertIn("story-archive/*", persist)
 
+    def test_pages_deploy_retries_and_persist_survives_a_stall(self):
+        # Outage of 2026-11-07/08: GitHub's Pages backend left deployments in
+        # syncing_files past deploy-pages' 10-minute cap for 14 hours. The
+        # deploy retries with short timeouts, and the persist step keys on a
+        # good BUILD, not a good deploy, so a stall never loses the run's
+        # investigations, archive records or ledger spend.
+        self.assertEqual(self.text.count("uses: actions/deploy-pages@"), 3)
+        self.assertIn("timeout: 240000", self.text)
+        self.assertIn("id: deployment", self.text)
+        persist_if = self.text.split("Persist generated investigations", 1)[1]
+        persist_if = persist_if.split("run: |", 1)[0]
+        self.assertIn("steps.validate.outcome == 'success'", persist_if)
+        self.assertNotIn("steps.deployment.outcome", persist_if)
+
     def test_rearm_pause_switch_is_a_variable(self):
         for name in ("rearm.yml", "heartbeat.yml"):
             text = (ROOT / ".github" / "workflows" / name).read_text(
