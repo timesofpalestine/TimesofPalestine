@@ -26,7 +26,9 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 40, not 30 (2026-11-08): the deploy below may take three short
+    # attempts while GitHub's Pages backend stalls in syncing_files.
+    timeout-minutes: 40
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -87,6 +89,7 @@ jobs:
           done
           ls dist/media/*.png 2>/dev/null | wc -l | xargs echo "social rasters written:"
       - name: Validate generated site
+        id: validate
         run: python validate_build.py dist
       - name: Publish sanitized health summary
         if: always()
@@ -101,11 +104,64 @@ jobs:
           # as the 2026-08-03 outage proved. Custom domain is a Pages setting
           # and may need re-entry after a flip.
           enablement: true
-      - uses: actions/upload-pages-artifact@v3
+      - id: upload
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-      - id: deployment
+      # Deploy with short timeouts and up to two retries (outage of
+      # 2026-11-07/08). GitHub's Pages backend began leaving deployments stuck
+      # in "syncing_files" — an unchanged 328 MB site that synced in under 30 s
+      # sat there past deploy-pages' 10-minute cap on every run from 18:33 UTC,
+      # and the site went 14 hours without a deploy. The same stall was
+      # reported across many unrelated repos that week. A healthy sync here
+      # takes under a minute, so 4 minutes is generous; on timeout deploy-pages
+      # cancels the stuck deployment, and a fresh attempt usually goes through.
+      - id: deploy_try1
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 240000
+      - name: Pause before deploy retry
+        if: ${{ !cancelled() && steps.deploy_try1.outcome == 'failure' }}
+        run: sleep 30
+      - id: deploy_try2
+        if: ${{ !cancelled() && steps.deploy_try1.outcome == 'failure' }}
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 240000
+      - name: Pause before final deploy retry
+        if: ${{ !cancelled() && steps.deploy_try2.outcome == 'failure' }}
+        run: sleep 60
+      - id: deploy_try3
+        if: ${{ !cancelled() && steps.deploy_try2.outcome == 'failure' }}
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 240000
+      # One verdict for every later step (they key on steps.deployment) and
+      # for the environment URL: success if any attempt landed, failure
+      # (red run) if all three timed out.
+      - id: deployment
+        if: ${{ !cancelled() && steps.upload.outcome == 'success' }}
+        env:
+          T1: ${{ steps.deploy_try1.outcome }}
+          T2: ${{ steps.deploy_try2.outcome }}
+          T3: ${{ steps.deploy_try3.outcome }}
+          U1: ${{ steps.deploy_try1.outputs.page_url }}
+          U2: ${{ steps.deploy_try2.outputs.page_url }}
+          U3: ${{ steps.deploy_try3.outputs.page_url }}
+        run: |
+          for n in 1 2 3; do
+            t="T$n"; u="U$n"
+            if [ "${!t}" = "success" ]; then
+              echo "page_url=${!u}" >> "$GITHUB_OUTPUT"
+              echo "Pages deploy landed on attempt $n."
+              exit 0
+            fi
+          done
+          echo "::error::Pages deploy failed on all three attempts (GitHub Pages syncing_files stall) — the build itself is good; its archive and ledger are still persisted below."
+          exit 1
       - name: Publish deployed stories to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -116,7 +172,12 @@ jobs:
           DISTRIBUTION_WEBHOOK_URL: ${{ secrets.DISTRIBUTION_WEBHOOK_URL }}
         run: python distribute.py dist --summary >> "$GITHUB_STEP_SUMMARY"
       - name: Persist generated investigations and story archive
-        if: ${{ always() && steps.deployment.outcome == 'success' && github.ref == 'refs/heads/main' }}
+        # Runs whenever the site BUILT and VALIDATED, deployed or not (outage
+        # of 2026-11-07/08). Tying it to deploy success meant every Pages
+        # stall also threw away the run's investigations, story-archive
+        # records and budget-ledger spend — and, with no new commit landing,
+        # every retry redeployed the same stuck commit SHA.
+        if: ${{ always() && steps.validate.outcome == 'success' && github.ref == 'refs/heads/main' }}
         run: |
           git config user.name "Times of Palestine Newsdesk"
           git config user.email "newsdesk@timesofpalestine.com"
