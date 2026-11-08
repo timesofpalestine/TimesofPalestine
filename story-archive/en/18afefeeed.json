@@ -19,6 +19,12 @@
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-footage-shows-palestinian-families-struggle-drain-rainwater-their",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-08T06:55:24+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "18afefeeed",
- "score": 47.6,
+ "score": 47.33,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
