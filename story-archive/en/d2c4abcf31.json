@@ -1,0 +1,45 @@
+{
+ "brief": "Israel's president has officially charged opposition leader Gadi Eisenkot with forming the country's next government, Al Jazeera English reported. Eisenkot signaled openness to Prime Minister Benjamin Netanyahu joining a coalition, a potential shift in post-election politics as negotiations begin.\n\nThe mandate follows elections that fragmented parliament across ideological lines. Eisenkot's willingness to include Netanyahu—who faces legal challenges—could reshape coalition dynamics and determine whether the longtime premier continues in office.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israeli-president-picks-gadi-eisenkot-netanyahu-rival-try-form-government",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/video/2026/nov/08/israelis-and-palestinians-react-as-eisenkot-given-mandate-to-form-government-video",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-08T18:12:27+00:00",
+ "dek": "Israel's president officially tasks the opposition leader with forming a new government.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af0a542e12b-1794155842.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d2c4abcf31",
+ "score": 49.65,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel's president tasks opposition leader with government formation"
+}
