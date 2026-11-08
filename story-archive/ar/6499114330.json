@@ -21,12 +21,6 @@
    "verified": true
   },
   {
-   "article": "https://t.me/Arabi21News/430470",
-   "name": "عربي21",
-   "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
    "article": "https://qudsn.co/post?id=218726&slug=%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%8A%D9%86%D8%A7%D9%88%D8%B1-%D8%A8%D9%88%D8%B1%D9%82%D8%A9-%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D9%84%D9%82%D8%B7%D8%B9-%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82-%D8%A3%D9%85%D8%A7%D9%85-%D8%A2%D9%8A%D8%B2%D9%86%D9%83%D9%88%D8%AA",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
@@ -37,10 +31,16 @@
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/430487",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
   }
  ],
  "date": "2026-11-08T12:14:55+00:00",
- "dek": "كلف الرئيس الإسرائيلي، غادي آيزنكوت بتشكيل الحكومة بعد حصوله على توصية 67 نائبا. وأكد رئيس القائمة العربية المشتركة استعداد قائمته لدعم حكومة أقلية تمنع عودة نتنياهو، شريطة تغيير السياسات تجاه العرب.",
+ "dek": "كلف الرئيسُ الإسرائيلي، غادي آيزنكوت بتشكيل الحكومة بعد حصوله على توصية 67 نائبا. وأكد رئيس القائمة العربية المشتركة استعداد قائمته لدعم حكومة أقلية تمنع عودة نتنياهو، شريطة تغيير السياسات تجاه العرب.",
  "dup_of": null,
  "image": "https://www.aljazeera.net/wp-content/uploads/2026/11/image-1794153394.jpg?resize=1620%2C1080&quality=80",
  "lang": "ar",
@@ -55,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "6499114330",
- "score": 46.79,
+ "score": 46.52,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
