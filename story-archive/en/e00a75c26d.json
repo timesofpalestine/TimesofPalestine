@@ -1,0 +1,33 @@
+{
+ "brief": "Artillery fire and gunshots continued near the Yellow Line in Gaza, the Ma'an news agency reported. The Yellow Line marks a buffer zone established during previous ceasefire agreements between Israeli forces and armed groups in the enclave.\n\nThe shelling follows a pattern of ongoing military operations in the territory despite periods of relative calm. No immediate reports of casualties were available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171861.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-08T08:52:46+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171861.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e00a75c26d",
+ "score": 63.44,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces shell Gaza near ceasefire line"
+}
