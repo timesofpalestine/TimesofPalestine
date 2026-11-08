@@ -21,10 +21,28 @@
    "verified": true
   },
   {
-   "article": "https://qudsn.co/post?id=218717&slug=%D8%B4%D8%AA%D8%A7%D8%A1-%D8%A8%D9%84%D8%A7-%D9%85%D8%A3%D9%88%D9%89-70-%D8%A3%D9%84%D9%81-%D8%AE%D9%8A%D9%85%D8%A9-%D9%85%D8%AA%D8%B6%D8%B1%D8%B1%D8%A9-%D9%88%D8%A2%D9%84%D8%A7%D9%81-%D8%A7%D9%84%D8%B9%D8%A7%D8%A6%D9%84%D8%A7%D8%AA-%D8%AA%D8%B3%D8%AA%D8%BA%D9%8A%D8%AB",
+   "article": "https://t.me/Palinfo/327262",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  },
+  {
+   "article": "https://t.me/QudsN/749751",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
+  },
+  {
+   "article": "https://www.aljazeera.net/news/2026/11/8/%d8%b3%d8%ae%d8%b1%d9%8a%d8%a9-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d8%a9-%d8%aa%d8%b5%d9%81-%d8%ba%d8%b1%d9%82-%d8%ae%d9%8a%d8%a7%d9%85-%d8%ba%d8%b2%d8%a9?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=218709&slug=%D8%BA%D8%B2%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-12-%D8%B3%D8%A7%D8%B9%D8%A9-%D8%BA%D8%B1%D9%82-70-%D8%A3%D9%84%D9%81-%D8%AE%D9%8A%D9%85%D8%A9-%D9%88%D8%AE%D8%B3%D8%A7%D8%A6%D8%B1-%D8%A3%D9%88%D9%84%D9%8A%D8%A9-%D8%A8%D9%803-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%AF%D9%88%D9%84%D8%A7%D8%B1%C2%A0",
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
-   "verified": false
+   "verified": true
   }
  ],
  "date": "2026-11-08T09:18:39+00:00",
@@ -43,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "147ef8f068",
- "score": 45.84,
+ "score": 45.65,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
