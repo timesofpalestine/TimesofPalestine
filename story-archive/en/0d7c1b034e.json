@@ -1,0 +1,51 @@
+{
+ "brief": "Heavy rains have destroyed thousands of tents and shelters across Gaza, leaving tens of thousands without adequate housing, Al Jazeera English reported. The Gaza Civil Defence received over 1,500 emergency calls as flooding swept through displacement camps and residential areas following the downpours.\n\nThe flooding struck a territory where hundreds of thousands already live in makeshift shelters after more than a year of conflict displaced the majority of Gaza's population. Aid organizations face mounting pressure to provide emergency assistance and temporary shelter as winter weather intensifies humanitarian needs across the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/heavy-rains-leave-tens-thousands-without-shelter-gaza-local-authorities",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/37747",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-footage-shows-palestinian-families-struggle-drain-rainwater-their",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-08T09:28:52+00:00",
+ "dek": "Civil Defence reports over 1,500 emergency calls as thousands of tents and shelters destroyed after heavy rains.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/GettyImages-2303444743-1794134060.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0d7c1b034e",
+ "score": 46.59,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Heavy rains destroy thousands of Gaza shelters, displace tens of thousands"
+}
