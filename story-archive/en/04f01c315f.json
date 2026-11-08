@@ -1,0 +1,33 @@
+{
+ "brief": "The Palestinian Ministry of Endowments reported that Israeli occupation forces persisted in committing violations against Al-Aqsa Mosque, the Ibrahimi Mosque, and other mosques throughout the West Bank during the previous month, the Ma'an news agency reported.\n\nThe ministry did not detail specific incidents but characterized the ongoing violations as part of a broader pattern of conduct at these religious sites. Both Al-Aqsa in Jerusalem and the Ibrahimi Mosque in Hebron have been flashpoints for Israeli-Palestinian tensions for years.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171889.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-08T11:30:38+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171889.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "04f01c315f",
+ "score": 49.96,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli occupation continues violations at Al-Aqsa, Ibrahimi mosques and West Bank sites"
+}
