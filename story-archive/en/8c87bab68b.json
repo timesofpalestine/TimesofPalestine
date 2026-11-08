@@ -13,12 +13,6 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://t.me/maannews/37737",
-   "name": "Maan Wire (EN)",
-   "url": "https://www.maannews.net/",
-   "verified": true
   }
  ],
  "date": "2026-11-08T08:47:36+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "8c87bab68b",
- "score": 49.82,
+ "score": 49.53,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

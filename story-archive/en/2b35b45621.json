@@ -1,0 +1,39 @@
+{
+ "brief": "Settlers backed by Israeli military forces continued their siege of a Palestinian family in Masafer Yatta for the 35th consecutive day, the Ma'an news agency reported. The blockade restricted access to the family's home and limited their movement in the area.\n\nThe siege is part of ongoing tensions in Masafer Yatta, a region in the southern West Bank where Palestinian communities face repeated settler incursions and military operations.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171879.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/jericho-israeli-settlers-palestinians-takeover-soldiers",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-08T09:21:33+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171879.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2b35b45621",
+ "score": 49.92,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli settlers besiege Palestinian family in Masafer Yatta under military protection"
+}

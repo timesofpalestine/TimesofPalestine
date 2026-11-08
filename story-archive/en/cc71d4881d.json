@@ -1,0 +1,39 @@
+{
+ "brief": "Former Palestinian detainees in the West Bank face cycles of re-arrest by Israeli forces, according to Al Jazeera English, a pattern that destabilizes their lives and strains their families. The repeated detentions occur without clear legal mechanisms for protection or recourse, leaving these individuals vulnerable to prolonged incarceration.\n\nThe practice creates economic hardship for families dependent on detainees' income and compounds psychological trauma among communities affected by the cycle. Former prisoners struggle to rebuild their lives while subject to potential arrest at any time.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/11/8/former-palestinian-detainees-at-mercy-of-israel-amid-perpetual-detention?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-injured-six-others-detained-during-raids-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-08T09:09:59+00:00",
+ "dek": "Former Palestinian detainees in the West Bank are being repeatedly detained by Israeli forces, affecting their families.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/Israeli-soldiers-drag-a-handcuffed-Palestinian-during-an-arrest-campaign-in-Qalqilyia-city.-Photo-by-Mohamad-Nazzal-1794039516.jpeg?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/11/8/former-palestinian-detainees-at-mercy-of-israel-amid-perpetual-detention?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/11/8/former-palestinian-detainees-at-mercy-of-israel-amid-perpetual-detention?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cc71d4881d",
+ "score": 49.79,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel repeatedly detains former Palestinian prisoners in West Bank"
+}
