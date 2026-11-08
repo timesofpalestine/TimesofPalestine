@@ -1,0 +1,39 @@
+{
+ "brief": "Heavy rains have inundated tent settlements housing tens of thousands of displaced Palestinians across Gaza, leaving residents without adequate shelter, Al Jazeera English reported. The flooding has compounded conditions already strained by displacement, with Israeli restrictions on aid entering the territory limiting the capacity for emergency response and relief operations.\n\nThe deluge has affected multiple camps sheltering internally displaced persons throughout Gaza. Aid organizations face obstacles in delivering materials and assistance necessary to address the humanitarian crisis triggered by the weather emergency.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/gallery/2026/11/8/photos-heavy-rains-leave-tens-of-thousands-without-shelter-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/heavy-rains-leave-tens-thousands-without-shelter-gaza-local-authorities",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-08T06:55:24+00:00",
+ "dek": "Heavy rain floods tents housing displaced Palestinians in Gaza as Israeli restrictions on aid hamper response.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261107__D6QP4T8__v1__HighRes__PalestinianIsraelConflictGaza-1794117615.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/gallery/2026/11/8/photos-heavy-rains-leave-tens-of-thousands-without-shelter-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/gallery/2026/11/8/photos-heavy-rains-leave-tens-of-thousands-without-shelter-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "18afefeeed",
+ "score": 48.53,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Heavy rains flood Gaza displacement camps amid aid restrictions"
+}
