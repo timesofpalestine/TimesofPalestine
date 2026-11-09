@@ -1,0 +1,33 @@
+{
+ "brief": "ينتظر مريض سرطان في قطاع غزة تصريحاً بالسفر لاستكمال علاجه في الخارج، بحسب وكالة معا. ولم تحدّد الوكالة تفاصيل حالته الصحية أو مراحل معالجته.\n\nيواجه المرضى في غزة عراقيل متعددة للحصول على تصاريح السفر، إذ تنقص القطاع الخدمات الطبية المتقدمة منذ سنوات. وينضطر آلاف المرضى سنوياً للسفر للعلاج في الخارج، غير أن الإجراءات الإدارية والأمنية تحول دون وصول كثيرين منهم إلى مقاصدهم العلاجية في الوقت المناسب.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171932.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-09T08:14:24+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2171932.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2c4ee64bae",
+ "score": 49.38,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "مريض سرطان ينتظر تصريح السفر لاستكمال علاجه خارج غزة"
+}

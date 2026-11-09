@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces demolished homes in the Shejaia neighborhood of Gaza City, the Ma'an news agency reported. The operation came as residents of Deir al-Balah held funerals for victims killed in a recent sandstorm-related collapse.\n\nThe demolitions marked a continuation of operations in densely populated areas of Gaza. Details on the number of structures destroyed and displacement resulting from the action were not immediately available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171922.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-09T06:45:55+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171922.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a09b50816b",
+ "score": 48.37,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces demolish homes in Shejaia as Deir al-Balah buries sandstorm victims"
+}
