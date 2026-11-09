@@ -6,13 +6,7 @@
    "article": "https://www.alquds.co.uk/%d8%ba%d8%b2%d8%a9-%d8%aa%d8%ad%d8%aa-%d9%82%d8%b5%d9%81-%d8%a7%d9%84%d9%85%d8%af%d8%a7%d9%81%d8%b9-%d9%88%d8%a3%d9%85%d8%b7%d8%a7%d8%b1-%d8%a7%d9%84%d8%b4%d8%aa%d8%a7%d8%a1-%d8%b6%d8%ad%d8%a7",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/gazaalannet/85014",
-   "name": "غزة الآن · تيليغرام",
-   "url": "https://t.me/gazaalannet",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-09T09:20:20+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "ed28ff0e53",
- "score": 49.39,
+ "score": 49.22,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",
