@@ -6,11 +6,23 @@
    "article": "https://www.aljazeera.net/news/2026/11/10/%d9%85%d8%ac%d9%84%d8%b3-%d8%a7%d9%84%d8%b3%d9%84%d8%a7%d9%85-%d9%82%d9%8a%d9%88%d8%af-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d8%aa%d9%81%d8%a7%d9%82%d9%85?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/189890/%D8%AD%D9%85%D8%A7%D8%B3-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%8A%D9%82%D8%AF%D9%85-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-%D9%85%D8%B4%D9%88%D9%87%D8%A9-%D9%84%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8-%D9%83%D8%A7%D8%B1%D8%AB%D8%A9-%D8%A7%D9%84%D9%81%D9%8A%D8%B6%D8%A7%D9%86%D8%A7%D8%AA-%D8%A8%D8%BA%D8%B2%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=218724&slug=%D8%AD%D9%85%D8%A7%D8%B3-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D9%8A%D9%88%D9%81%D8%B1-%D8%BA%D8%B7%D8%A7%D8%A1-%D9%84%D8%A7%D8%B3%D8%AA%D9%85%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D9%83%D8%A7%D8%B1%D8%AB%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%B3%D8%A7%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
   }
  ],
  "date": "2026-11-09T18:04:58+00:00",
- "dek": "قال مسؤول أممي إن الكارثة الإنسانية في قطاع غزة صنعتها إسرائيل بتدمير منازل الفلسطينيين وأحيائهم والبنية التحتية الأساسية، لافتا إلى أن 26 ألف أسرة تضررت مع تفاقم معاناة النازحين بحلول فصل الشتاء.",
+ "dek": "دعا مجلس السلام في غزة الأمم المتحدة والمانحين الدوليين إلى التحرك العاجل لتوفير الاحتياجات الشتوية لسكان القطاع. واتهمت حركة حماس المجلس بتقديم رواية مشوّهة لأسباب الكارثة الإنسانية في غزة.",
  "dup_of": null,
  "image": "https://www.aljazeera.net/wp-content/uploads/2026/11/reuters_6af21239-1794249273.jpg?resize=1920%2C1440",
  "lang": "ar",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "12e2e59493",
- "score": 47.46,
+ "score": 61.18,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
