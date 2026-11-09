@@ -39,12 +39,14 @@ class OgImageTests(unittest.TestCase):
 
     def test_no_rendered_story_page_carries_an_svg_og_image(self):
         # The render sites must use og_image_tags, not raw it["image"].
-        src = open("build.py", encoding="utf-8").read()
+        with open("build.py", encoding="utf-8") as f:
+            src = f.read()
         self.assertNotIn('og_img_url = (BASE_URL + it["image"])', src)
         self.assertEqual(len(re.findall(r"og_image, _og_card, og_img_url = og_image_tags\(it\)", src)), 2)
 
     def test_workflow_rasterizes_media_svgs(self):
-        wf = open(".github/workflows/build.yml", encoding="utf-8").read()
+        with open(".github/workflows/build.yml", encoding="utf-8") as f:
+            wf = f.read()
         self.assertIn("rsvg-convert", wf)
         self.assertIn("dist/media/*.svg", wf)
 

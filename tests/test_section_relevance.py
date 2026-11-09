@@ -240,7 +240,8 @@ class ArchiveRefileTests(unittest.TestCase):
 
 class FieldReportsTests(unittest.TestCase):
     def test_telegram_news_networks_are_wires_not_field_dispatches(self):
-        feeds = json.load(open("feeds.json", encoding="utf-8"))
+        with open("feeds.json", encoding="utf-8") as f:
+            feeds = json.load(f)
         by_id = {f["id"]: f for f in feeds["ar"]}
         for fid in ("tg-qudsn", "tg-qastal", "tg-palinfo", "tg-arabi21"):
             self.assertTrue(by_id[fid].get("wire"), fid)

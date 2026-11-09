@@ -29,11 +29,13 @@ class WiringTests(unittest.TestCase):
         self.assertNotIn("pal48", section_freshness.STALE_OVERRIDES)
 
     def test_supply_lines_exist(self):
-        feeds = json.load(open("feeds.json", encoding="utf-8"))
+        with open("feeds.json", encoding="utf-8") as f:
+            feeds = json.load(f)
         pinned = [e for lst in feeds.values() for e in lst
                   if e.get("category") == "pal48"]
         self.assertGreaterEqual(len(pinned), 2, "pal48 radar feeds missing")
-        topics = json.load(open("topics.json", encoding="utf-8"))
+        with open("topics.json", encoding="utf-8") as f:
+            topics = json.load(f)
         items = topics["topics"] if isinstance(topics, dict) else topics
         self.assertTrue(any(t.get("cat") == "pal48" for t in items),
                         "no pal48 keeper topics queued")

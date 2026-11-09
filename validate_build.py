@@ -322,8 +322,7 @@ def check_editorial_hygiene(path, html, errors):
 
 def check_body_starts_clean(path, html, errors):
     """Malformed head markup spills visible junk before the first element."""
-    import re as _re
-    m = _re.search(r"<body>\s*([^<\s][^<]*)", html)
+    m = re.search(r"<body>\s*([^<\s][^<]*)", html)
     if m:
         errors.append(f"{path}: stray text at body start: {m.group(1)[:40]!r}")
 
