@@ -1,0 +1,39 @@
+{
+ "brief": "A sandbank collapsed on a tent in Gaza after heavy rainfall, killing four children and a woman, Al Jazeera English reported. Gaza authorities criticized the international community's response to the disaster, characterizing global efforts as insufficient.\n\nThe collapse occurred during heavy rain that destabilized the sandbank where the tent was pitched, exposing residents to environmental hazards when weather intensifies across the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/gaza-five-palestinians-killed-sand-embankment-collapses-displacement-tents",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-09T10:50:49+00:00",
+ "dek": "Four children and a woman were killed after heavy rain caused a sandbank to collapse on their tent.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af1a39dc6406-1794220957.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "68ab4ae85d",
+ "score": 63.47,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Heavy rains trigger mudslide that kills five in Gaza"
+}
