@@ -1,0 +1,45 @@
+{
+ "brief": "Hundreds of thousands of Palestinians displaced by fighting in Gaza face severe flooding risks as heavy rains inundate makeshift tent camps, Al Jazeera English reported. The tents offer minimal protection against water accumulation, leaving families without adequate shelter as winter weather intensifies across the territory.\n\nIsrael has blocked entry of mobile homes and other prefabricated structures that could provide better protection, according to the report. The restrictions compound an existing humanitarian crisis, leaving the displaced population vulnerable to disease and exposure as humanitarian conditions deteriorate.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/11/9/tents-dont-protect-us-rains-flood-displaced-palestinians-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/gallery/2026/nov/08/heavy-rain-floods-displaced-families-tents-gaza-in-pictures",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-flooding-brings-gazas-civil-defence-declare-maximum-state",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-09T05:18:39+00:00",
+ "dek": "Hundreds of thousands of Palestinians are vulnerable to flooding as Israel continues to block entry of mobile homes.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/873A0709-copy-1794143945.jpeg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/11/9/tents-dont-protect-us-rains-flood-displaced-palestinians-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/11/9/tents-dont-protect-us-rains-flood-displaced-palestinians-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bcd763db22",
+ "score": 48.91,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Flooding threatens displaced Palestinians as Israel blocks shelter supplies"
+}
