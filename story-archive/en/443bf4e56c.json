@@ -1,0 +1,33 @@
+{
+ "brief": "Heavy rains in Gaza collapsed a sand embankment at a displacement camp, killing five Palestinians, Al Jazeera English reported. The incident occurred as severe weather swept through the territory, where displaced persons are sheltering in makeshift camps with minimal protection.\n\nThe deaths occurred amid deteriorating conditions in Gaza's displacement camps, where crowded encampments lack adequate infrastructure to withstand extreme weather events.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/9/jerusalem-daily-deadly-aftermath-of-gaza-rainstorm-continues?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-09T17:55:47+00:00",
+ "dek": "Five Palestinians were killed in Gaza when heavy rain collapsed a sand embankment on a displacement camp.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794246886.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/9/jerusalem-daily-deadly-aftermath-of-gaza-rainstorm-continues?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/9/jerusalem-daily-deadly-aftermath-of-gaza-rainstorm-continues?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "443bf4e56c",
+ "score": 63.45,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Heavy rains collapse sand embankment, kill five in Gaza camp"
+}

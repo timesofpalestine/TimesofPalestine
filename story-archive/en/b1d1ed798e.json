@@ -13,6 +13,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/11/gazas-displacement-camps-face-deadly-winter-storms-flooding-and-landslides",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-09T10:09:11+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "b1d1ed798e",
- "score": 85.45,
+ "score": 85.4,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
