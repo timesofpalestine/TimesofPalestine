@@ -1,0 +1,33 @@
+{
+ "brief": "A cancer patient in Gaza remains unable to leave the strip to pursue ongoing medical treatment abroad, the Ma'an news agency reported. The patient's case highlights the difficulty Palestinians face in obtaining travel authorization from Israeli authorities, a requirement that often delays or prevents access to specialized healthcare unavailable within Gaza's medical system.\n\nPatients requiring advanced oncological care have increasingly struggled to secure exit permits and coordinate medical appointments abroad amid restrictions on movement from the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171932.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-09T08:14:24+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171932.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2c4ee64bae",
+ "score": 49.82,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Cancer patient awaits travel permit to continue treatment outside Gaza"
+}
