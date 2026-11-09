@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/israel-kills-eight-palestinians-including-two-children-and-three-women-as-heavy-rain-floods-tens-of-thousands-of-tents-sheltering-displaced-persons-in-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/gallery/2026/nov/08/heavy-rain-floods-displaced-families-tents-gaza-in-pictures",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-09T10:09:11+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b1d1ed798e",
- "score": 85.81,
+ "score": 85.79,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
