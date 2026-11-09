@@ -6,13 +6,7 @@
    "article": "https://t.me/maannews/37782",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/gaza-five-palestinians-killed-sand-embankment-collapses-displacement-tents",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-09T12:19:01+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "aac2965365",
- "score": 46.75,
+ "score": 46.47,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
