@@ -1,0 +1,39 @@
+{
+ "brief": "Mourners gathered in Deir al-Balah in central Gaza to bury victims of a sand collapse, according to Maan Wire. The funeral took place amid ongoing conditions in the territory that have complicated rescue and recovery operations.\n\nDetails of the incident, including the number of casualties and circumstances of the collapse, were not immediately available. Deir al-Balah has faced repeated infrastructure challenges during the conflict affecting the Gaza Strip.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37782",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/gaza-five-palestinians-killed-sand-embankment-collapses-displacement-tents",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-09T12:19:01+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/SwGixQx2E6exZo9Xh-p1zyafu11vj8GK3zMhoSKftw3qV0Bue3Zc7-2V8VkLDKyg1tcv4IwlXsELNPw09zcg7BE1y0uF36KDLNa3VPIMyqC9PeFutB61t2dNJUvz6BeDMnFTMrX_4hRZ9rk80d_YRd5FC4MB_COMTQLdIppRgSrZCDc8ljbu5DkH8uJa3mX7oj2Ozi93WFMoQ2FuQFTGrXdP6Zvv9IH9dk1YoTDHVArzc1TbqLr0EWHF3GSWhY7e1k82Ah_PX2MIpvl_-bD4xadufSAIfrBm-LOKmjwRXbN8nI0Oha9-oMJxOTjxbPTaY6jO-WcMCM6MD88PPhl5EA",
+ "lang": "en",
+ "link": "https://t.me/maannews/37782",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37782"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "aac2965365",
+ "score": 48.83,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gaza buries victims of sand collapse in Deir al-Balah"
+}
