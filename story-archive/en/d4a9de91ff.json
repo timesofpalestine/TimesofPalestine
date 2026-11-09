@@ -1,0 +1,33 @@
+{
+ "brief": "Birzeit Solar Energy Station opened on Wednesday as a joint venture between the Palestinian Investment Fund, Birzeit University, and Jerusalem Electricity Company, the Ma'an news agency reported. The facility marks an expansion of renewable energy infrastructure in the West Bank amid ongoing efforts to reduce dependence on imported power.\n\nThe station's establishment reflects collaboration between government, academic, and private sector entities to develop sustainable energy capacity for Palestinian communities.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171945.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-09T10:17:15+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171945.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d4a9de91ff",
+ "score": 48.79,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Investment fund, Birzeit University, Jerusalem Electricity open solar power station"
+}
