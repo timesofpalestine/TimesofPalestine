@@ -1,0 +1,33 @@
+{
+ "brief": "Heavy rains from Gaza's first winter storm struck the territory on Saturday, inundating makeshift shelters where displaced families have sought refuge. The downpour intensified conditions already marked by overcrowding and inadequate sanitation in informal camps across the enclave, The Guardian reported.\n\nThousands of displaced Palestinians live in tent settlements lacking proper drainage and weatherproofing, leaving them vulnerable to seasonal flooding. Winter storms pose acute risks to populations with limited access to adequate shelter and basic services.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/gallery/2026/nov/08/heavy-rain-floods-displaced-families-tents-gaza-in-pictures",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-08T18:50:12+00:00",
+ "dek": "The first winter storm began affecting the people of Gaza this weekend with heavy rain hitting on Saturday.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/e4faa59d2c93000a6346637315c2b2fb755e5106/364_0_3072_2457/master/3072.jpg?width=140&quality=85&auto=format&fit=max&s=10b71c6e5393d0f9e85ea5f40e6f0e9a",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/gallery/2026/nov/08/heavy-rain-floods-displaced-families-tents-gaza-in-pictures",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/gallery/2026/nov/08/heavy-rain-floods-displaced-families-tents-gaza-in-pictures"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ac72684c86",
+ "score": 50.25,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Winter storm floods tents housing displaced Gaza families"
+}

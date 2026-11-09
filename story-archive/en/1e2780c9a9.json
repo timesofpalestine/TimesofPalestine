@@ -1,0 +1,33 @@
+{
+ "brief": "The Trump administration is conditioning military assistance to Israel on technology cooperation agreements, according to the Quincy Institute. The strategy represents a shift from unconditional aid provisions, using financial leverage to advance U.S. technological interests alongside security commitments.\n\nDetails of specific technologies or cooperation areas under negotiation remain unclear. The approach signals potential friction over how aid packages are structured, marking a departure from previous administrations' handling of Israel assistance.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://www.scmp.com/week-asia/politics/article/3373487/trumps-israel-aid-cut-reveals-push-trade-grants-tech-cooperation",
+   "name": "Quincy Institute",
+   "url": "https://quincyinst.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-06T23:22:00+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-research.svg",
+ "lang": "en",
+ "link": "https://www.scmp.com/week-asia/politics/article/3373487/trumps-israel-aid-cut-reveals-push-trade-grants-tech-cooperation",
+ "max_age_hours": 1080,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1e2780c9a9",
+ "score": 69.07,
+ "source": "Quincy Institute",
+ "source_id": "quincy",
+ "source_url": "https://quincyinst.org/",
+ "title": "Trump seeks to leverage Israel aid cuts into technology deals"
+}
