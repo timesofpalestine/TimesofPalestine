@@ -21,9 +21,21 @@
    "verified": true
   },
   {
-   "article": "https://t.me/gazaalannet/85009",
+   "article": "https://t.me/Palinfo/327335",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/85034",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=218747&slug=%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%A7%D8%AF-5-%D8%A8%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%B1%D9%85%D9%84%D9%8A-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1%D8%A7%D8%AA-%D9%85%D9%86-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D9%86%D9%8A-%D8%A7%D9%84%D9%85%D8%AA%D8%B5%D8%AF%D8%B9%D8%A9-%D9%81%D9%88%D9%82-%D8%B1%D8%A4%D9%88%D8%B3-%D8%B3%D8%A7%D9%83%D9%86%D9%8A%D9%87%D8%A7",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
    "verified": true
   },
   {
@@ -36,18 +48,6 @@
    "article": "https://www.alquds.co.uk/%d8%ba%d8%b2%d8%a9-%d9%83%d8%a7%d8%b1%d8%ab%d8%a9-%d8%a7%d9%84%d8%a7%d9%86%d9%87%d9%8a%d8%a7%d8%b1-%d8%a7%d9%84%d8%b1%d9%85%d9%84%d9%8a-%d9%86%d8%aa%d9%8a%d8%ac%d8%a9-%d8%ad%d8%aa%d9%85%d9%8a%d8%a9",
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
-   "verified": true
-  },
-  {
-   "article": "https://qudsn.co/post?id=218742&slug=%D9%85%D9%86-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D9%85-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D9%85%D9%84%D9%8A%D8%A9-%D9%85%D8%AE%D8%A7%D8%B7%D8%B1-%D8%A7%D9%84%D8%B4%D8%AA%D8%A7%D8%A1-%D8%AA%D8%AD%D8%A7%D8%B5%D8%B1-%D9%86%D8%A7%D8%B2%D8%AD%D9%8A-%D8%BA%D8%B2%D8%A9",
-   "name": "شبكة قدس الإخبارية",
-   "url": "https://qudsn.co/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/749891",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
    "verified": true
   }
  ],
@@ -67,7 +67,7 @@
  "modified": null,
  "original": false,
  "pid": "23605ac4a8",
- "score": 55.82,
+ "score": 55.55,
  "source": "عربي21",
  "source_id": "tg-arabi21",
  "source_url": "https://t.me/arabi21news",

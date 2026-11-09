@@ -1,0 +1,33 @@
+{
+ "brief": "Settlers forced Palestinian citizens to leave their land in Salwad, near Ramallah, the Ma'an news agency reported. The incident was documented in video footage showing the confrontation between the settlers and residents over property access.\n\nThe expulsion adds to a pattern of land disputes in the area, where Palestinian communities have faced repeated pressure from settler activity in the occupied West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171935.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-09T09:15:10+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171935.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b7aa771d4e",
+ "score": 49.82,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Settlers force Palestinians from land in Salwad"
+}
