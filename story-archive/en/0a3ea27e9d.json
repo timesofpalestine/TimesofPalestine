@@ -1,0 +1,39 @@
+{
+ "brief": "Gaza is bracing for harsh winter conditions as the territory grapples with an ongoing humanitarian emergency, Al Jazeera English reported. Residents face shortages of fuel, electricity, and basic supplies needed to survive cold weather, compounding existing hardships from conflict and displacement.\n\nThe winter poses acute risks to vulnerable populations including children, the elderly, and those living in makeshift shelters. Aid organizations have warned of potential disease outbreaks and increased mortality rates without urgent intervention to deliver heating fuel and emergency supplies.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/9/how-is-gaza-coping-with-another-severe-winter?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/gaza-floods-trump-immigration-saudi-strikes",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-09T19:47:46+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794253648.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/9/how-is-gaza-coping-with-another-severe-winter?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/9/how-is-gaza-coping-with-another-severe-winter?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0a3ea27e9d",
+ "score": 49.73,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza faces another severe winter amid humanitarian crisis"
+}
