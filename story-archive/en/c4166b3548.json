@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/world/video/2026/nov/08/israelis-and-palestinians-react-as-eisenkot-given-mandate-to-form-government-video",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/11/trump-officials-look-past-netanyahu-push-eisenkot-form-government-quickly",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-08T16:24:39+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "c4166b3548",
- "score": 46.43,
+ "score": 46.22,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
