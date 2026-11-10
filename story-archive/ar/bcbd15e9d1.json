@@ -1,0 +1,33 @@
+{
+ "brief": "أفاد المركز الفلسطيني للإعلام بأن قطاع غزة يعاني نقصاً حاداً في الأدوية والمستهلكات الطبية، ما يهدد استمرارية الخدمات الصحية. يشمل النقص الأدوية الأساسية والمستلزمات الضرورية للعمليات الطبية والرعاية اليومية للمرضى.\n\nتواجه المستشفيات والعيادات صعوبات متنامية في تلبية احتياجات السكان العلاجية وسط انقطاع أو تأخر وصول الإمدادات الطبية عبر المعابر الحدودية. الأزمة تعمّق الضغط على المنشآت الطبية المثقلة بالعدد الكبير من المرضى والمصابين.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/10/1123340",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-10T09:02:48+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-health-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/10/1123340",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bcbd15e9d1",
+ "score": 49.35,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "نقص حاد في الأدوية والمستهلكات الطبية بغزة"
+}
