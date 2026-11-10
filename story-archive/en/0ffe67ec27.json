@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli soldiers shot and killed a 14-year-old Palestinian boy in the occupied West Bank village of Burqa, Al Jazeera English reported. The military said its forces opened fire to prevent Palestinians from throwing stones at vehicles in the area.\n\nThe killing adds to mounting casualties in the West Bank, where tensions have escalated in recent months amid Israeli military operations and Palestinian resistance.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/10/israeli-forces-kill-14-year-old-palestinian-boy-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israel-kills-14-year-old-palestinian-boy-west-bank-wounds-two-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-10T05:23:57+00:00",
+ "dek": "Israel's military says its soldiers opened fire to prevent Palestinians from throwing stones at vehicles in Burqa.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6af29a44-1794284100.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/10/israeli-forces-kill-14-year-old-palestinian-boy-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/10/israeli-forces-kill-14-year-old-palestinian-boy-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0ffe67ec27",
+ "score": 59.63,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces kill Palestinian boy during West Bank stone-throwing incident"
+}
