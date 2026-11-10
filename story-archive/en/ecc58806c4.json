@@ -1,0 +1,33 @@
+{
+ "brief": "An Al Jazeera investigation found that Israeli soldiers serving in the West Bank simultaneously operate as settlers, blurring institutional lines and enabling systematic violence. The dual roles allow military personnel to participate in attacks on Palestinian communities while leveraging their armed status and access to military infrastructure, according to the probe.\n\nThe arrangement has facilitated mass displacement and land seizures across the occupied territory. Researchers documented cases where soldiers used their military positions to protect settler operations and suppress Palestinian resistance, creating a coordinated system that operates outside standard accountability mechanisms.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/10/israeli-soldiers-are-also-settlers-in-west-bank-al-jazeera-investigation?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-10T13:34:33+00:00",
+ "dek": "Blurred lines between Israeli soldiers and settlers fuel systematic West Bank violence and mass displacement.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/reuters_6a8519ae-1787107758.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/10/israeli-soldiers-are-also-settlers-in-west-bank-al-jazeera-investigation?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/10/israeli-soldiers-are-also-settlers-in-west-bank-al-jazeera-investigation?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ecc58806c4",
+ "score": 49.43,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli soldiers moonlight as settlers fueling West Bank violence"
+}
