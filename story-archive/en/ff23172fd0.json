@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/37792",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/10/israeli-forces-kill-14-year-old-palestinian-boy-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-09T21:49:09+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "ff23172fd0",
- "score": 44.44,
+ "score": 44.24,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
