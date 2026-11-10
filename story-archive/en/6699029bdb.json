@@ -6,13 +6,7 @@
    "article": "https://www.theguardian.com/world/video/2026/nov/09/four-killed-in-sand-embankment-collapse-in-gaza-video",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/we-woke-soaking-wet-gazas-displaced-face-another-winter-floods-and",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-09T19:38:08+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "6699029bdb",
- "score": 46.25,
+ "score": 45.96,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
