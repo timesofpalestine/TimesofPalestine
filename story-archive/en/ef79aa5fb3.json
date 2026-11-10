@@ -1,0 +1,33 @@
+{
+ "brief": "Israel is preparing to introduce dual-use equipment into Gaza, the Ma'an news agency reported. Dual-use goods are materials and technologies that can serve both civilian and military purposes, commonly subject to international export controls.\n\nDetails of the specific equipment and the timeline for its entry remain unclear. The move comes amid ongoing scrutiny of supplies and materials flowing into the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2171990.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-10T07:32:55+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2171990.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ef79aa5fb3",
+ "score": 49.19,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel prepares to send dual-use equipment into Gaza"
+}
