@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli forces shot and killed a 14-year-old Palestinian boy during a raid in Burqa, Al Jazeera English reported. The incident occurred as tensions remain high across the occupied West Bank.\n\nThe killing came amid a broader pattern of violence in the region. Separately, settlers assaulted a Palestinian woman near Hebron, adding to the mounting toll of civilian casualties and confrontations.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/10/jerusalem-daily-14-year-old-killed-in-west-bank-raid?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-fire-kills-seven-including-father-and-son-gaza-medics-say",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-10T18:58:05+00:00",
+ "dek": "Israeli forces kill a 14-year-old Palestinian boy in Burqa, as settlers assault a woman near Hebron.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794337066.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/10/jerusalem-daily-14-year-old-killed-in-west-bank-raid?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/10/jerusalem-daily-14-year-old-killed-in-west-bank-raid?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9a8933b514",
+ "score": 62.01,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces kill Palestinian boy in West Bank raid"
+}

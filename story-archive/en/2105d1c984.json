@@ -13,12 +13,6 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/11/israels-parliament-sworn-eisenkot-tries-forge-government",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-11-10T20:39:46+00:00",
@@ -37,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "2105d1c984",
- "score": 63.35,
+ "score": 63.18,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
