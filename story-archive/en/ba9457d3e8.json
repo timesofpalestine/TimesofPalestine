@@ -1,0 +1,45 @@
+{
+ "brief": "Formula One driver Lewis Hamilton visited the Rafah crossing to witness humanitarian aid efforts entering Gaza, Al Jazeera English reported. The crossing serves as a critical entry point for supplies reaching the territory amid ongoing needs.\n\nHamilton's visit drew international attention to the humanitarian situation in Gaza, where aid delivery remains a central concern for relief organizations and observers worldwide.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/10/lewis-hamilton-visits-rafah-crossing-to-witness-gaza-aid-efforts?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/motor-racing-hamilton-visits-rafah-crossing-see-gaza-aid-efforts",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/10/lewis-hamilton-egypt-rafah-crossing-gaza-aid-facilities",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-10T15:21:11+00:00",
+ "dek": "Lewis Hamilton visits Rafah crossing to witness Gaza aid efforts…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/Lewis-Hamilton-horizontal-thumb-1794323987.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/10/lewis-hamilton-visits-rafah-crossing-to-witness-gaza-aid-efforts?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/10/lewis-hamilton-visits-rafah-crossing-to-witness-gaza-aid-efforts?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ba9457d3e8",
+ "score": 49.17,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Lewis Hamilton visits Rafah crossing to observe Gaza aid operations"
+}
