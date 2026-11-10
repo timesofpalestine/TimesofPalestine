@@ -13,6 +13,12 @@
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/opinion/heavy-rains-swamp-gazas-tents-israel-must-face-sanctions",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-11-10T06:37:13+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "d73f31da14",
- "score": 48.13,
+ "score": 47.9,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
