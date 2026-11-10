@@ -6,19 +6,7 @@
    "article": "https://t.me/Arabi21News/430515",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/750129",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
-   "verified": true
-  },
-  {
-   "article": "https://www.pbc.ps/d-9",
-   "name": "تلفزيون فلسطين",
-   "url": "https://www.pbc.ps/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-09T17:28:18+00:00",
@@ -37,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "2d46d2903d",
- "score": 51.05,
+ "score": 50.78,
  "source": "عربي21",
  "source_id": "tg-arabi21",
  "source_url": "https://t.me/arabi21news",
