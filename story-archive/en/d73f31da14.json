@@ -6,18 +6,18 @@
    "article": "https://www.aljazeera.com/news/2026/11/10/palestine-weekly-west-bank-on-fire-and-gazas-tents-under?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/heavy-rains-swamp-gazas-tents-israel-must-face-sanctions",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   },
   {
    "article": "https://www.dropsitenews.com/p/gaza-floods-trump-immigration-saudi-strikes",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
-   "verified": false
-  },
-  {
-   "article": "https://www.middleeasteye.net/opinion/heavy-rains-swamp-gazas-tents-israel-must-face-sanctions",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
    "verified": false
   }
  ],
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "d73f31da14",
- "score": 47.68,
+ "score": 46.92,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
