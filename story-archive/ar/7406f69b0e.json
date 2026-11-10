@@ -7,6 +7,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d9%84%d8%ad%d8%b8%d8%a9-%d8%a7%d8%ae%d8%aa%d9%8a%d8%a7%d8%b1-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d8%a9-%d8%b5%d8%b9%d8%a8%d8%a9",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
   }
  ],
  "date": "2026-11-10T17:12:03+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "7406f69b0e",
- "score": 46.77,
+ "score": 46.62,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
