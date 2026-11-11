@@ -7,6 +7,12 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": false
+  },
+  {
+   "article": "https://t.me/QudsN/750497",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-11-10T20:32:54+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4306511c39",
- "score": 46.59,
+ "score": 46.31,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
