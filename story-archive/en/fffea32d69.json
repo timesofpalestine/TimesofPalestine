@@ -7,6 +7,12 @@
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/all-i-can-do-hug-my-children-and-cry-palestinians-gaza-face-deadly",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-11-09T16:09:17+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "fffea32d69",
- "score": 41.33,
+ "score": 41.06,
  "source": "Drop Site News",
  "source_id": "dropsite",
  "source_url": "https://www.dropsitenews.com/",
