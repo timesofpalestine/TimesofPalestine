@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/11/10/netanyahu-and-eisenkot-push-for-new-government-after-election-deadlock?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-parliament-sworn-eisenkot-tries-forge-government",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-10T20:39:46+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "2105d1c984",
- "score": 59.73,
+ "score": 59.54,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
