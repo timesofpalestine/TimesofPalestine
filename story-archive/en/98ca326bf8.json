@@ -1,0 +1,33 @@
+{
+ "brief": "The Palestinian Human Rights Information Centre raised alarm over the arbitrary detention of Dr Musaab Abu Safia, a Gaza physician held without charges, Al Jazeera English reported. PHRI said the internment violates individual rights and weakens healthcare delivery across the territory amid ongoing Israeli strikes.\n\nThe group also cited a pattern of detention affecting medical personnel in Gaza, where healthcare infrastructure has faced severe disruption. PHRI characterized Abu Safia's case as part of efforts that compromise both due process protections and the operational capacity of the territory's already strained health system.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/11/rights-group-raises-concerns-about-jailed-dr-abu-safia-amid-strikes-on-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-11T12:05:51+00:00",
+ "dek": "PHRI says the arbitrary detention of Gaza doctors violates individual rights and undermines healthcare system.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2025/10/Screenshot-2025-10-29-at-12.43.30-PM-1-1761731504.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/11/rights-group-raises-concerns-about-jailed-dr-abu-safia-amid-strikes-on-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/11/rights-group-raises-concerns-about-jailed-dr-abu-safia-amid-strikes-on-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "98ca326bf8",
+ "score": 63.75,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Rights group demands release of jailed Gaza doctor amid detention concerns"
+}
