@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli airstrikes hit a tent camp in Gaza, killing five people, Al Jazeera English reported. The attack occurred as the enclave faces severe weather conditions, with heavy rains adding to humanitarian challenges in the territory.\n\nThe UN has appealed for urgent aid to address the impact of the rains on Gaza's population, many of whom are sheltering in makeshift camps following months of conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-11T22:55:37+00:00",
+ "dek": "Tent camp attacked as UN appeals for urgent aid to deal with heavy rains in the enclave.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6af4e837431f-1794435127.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9da7f36b26",
+ "score": 63.72,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strikes kill five in Gaza tent camp"
+}

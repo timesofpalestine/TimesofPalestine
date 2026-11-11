@@ -6,7 +6,13 @@
    "article": "https://shehabnews.net/ar/post?id=168723&slug=%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D8%AA%D8%B9%D8%AA%D9%85%D8%AF-%D8%A8%D8%A3%D8%BA%D9%84%D8%A8%D9%8A%D8%A9-%D9%82%D8%B1%D8%A7%D8%B1%D9%8B%D8%A7-%D9%8A%D8%A4%D9%83%D8%AF-%D8%B3%D9%8A%D8%A7%D8%AF%D8%A9-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%A7%D8%B1%D8%AF%D9%87%D8%A7-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-second-committee-votes-resolution-palestinian-sovereignty-over",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-11T20:47:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "d6aec23073",
- "score": 48.52,
+ "score": 48.24,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
