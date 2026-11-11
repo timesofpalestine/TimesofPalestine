@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli settlers set fire to a Palestinian business in the village of Luban ash-Sharqiya near Nablus, Al Jazeera English reported. The incident destroyed the property in what marked another episode of settler violence against Palestinian civilians in the occupied West Bank.\n\nThe fire occurred in an area where tensions between settlers and Palestinians remain high. No further details about casualties or the extent of damage were immediately available.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/10/massive-fire-as-israeli-settlers-burn-down-business-near-nablus?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-10T23:33:43+00:00",
+ "dek": "Israeli settlers have set fire to Palestinian property in the village of Luban ash-Sharqiya, near Nablus.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794353598.jpg?resize=1916%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/10/massive-fire-as-israeli-settlers-burn-down-business-near-nablus?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/10/massive-fire-as-israeli-settlers-burn-down-business-near-nablus?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e98907e21e",
+ "score": 49.3,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers torch Palestinian business near Nablus"
+}
