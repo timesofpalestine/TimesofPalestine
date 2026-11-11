@@ -1,0 +1,39 @@
+{
+ "brief": "Formula One champion Lewis Hamilton called on Israel to open the Rafah border crossing during a visit to the Egypt-Gaza frontier, Al Jazeera English reported. The crossing, a key humanitarian lifeline, has faced restrictions affecting the flow of aid into Gaza.\n\nHamilton visited the border as conditions deteriorated for Palestinians in Gaza following heavy rains, which compounded existing humanitarian challenges in the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/11/f1-champion-lewis-hamilton-calls-on-israel-to-open-rafah-border?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/10/lewis-hamilton-egypt-rafah-crossing-gaza-aid-facilities",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-11T20:24:51+00:00",
+ "dek": "Hamilton visited the Egypt-Gaza border as conditions worsened for Palestinians in Gaza after heavy rains.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af4c95c75cda-1794427228.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/11/f1-champion-lewis-hamilton-calls-on-israel-to-open-rafah-border?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/11/f1-champion-lewis-hamilton-calls-on-israel-to-open-rafah-border?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ea9c9146c3",
+ "score": 49.54,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Hamilton urges Israel to open Rafah crossing to Gaza"
+}
