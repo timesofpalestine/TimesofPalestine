@@ -1,0 +1,33 @@
+{
+ "brief": "Ma'an Wire reported on the launch of Raqab, an application designed to serve journalists and human rights defenders. The tool was developed by Mada, the Palestinian Center for Media Development and Press Freedoms, according to an interview with Shireen Al-Khateeb, who heads the organization.\n\nThe application is available for download on Android devices. Mada described the app as a resource intended to support media professionals and human rights advocates in their work.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://play.google.com/store/apps/details",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-11T10:09:18+00:00",
+ "dek": "Ma'an Wire reported on the launch of Raqab, an application designed to serve journalists and human rights defenders.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://play.google.com/store/apps/details",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "07c79a198c",
+ "score": 49.92,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Palestinian media center launches monitoring app for journalists and rights defenders"
+}
