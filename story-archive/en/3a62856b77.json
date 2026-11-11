@@ -1,0 +1,33 @@
+{
+ "brief": "Winter weather has battered Gaza with flooding and strong winds, compounding a humanitarian crisis already defined by destroyed water systems and sewage networks. The territory's crumbling infrastructure—damaged during months of conflict—leaves residents unable to manage rainwater or prevent disease spread through contaminated water.\n\nAl Jazeera English reported that residents face worsening conditions as winter persists, with limited shelter, sanitation, and drainage capacity across the territory. The convergence of seasonal weather and infrastructure damage has created acute vulnerability to flooding in densely populated areas.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/11/gaza-infrastructure-collapse-leaves-residents-defenceless-against-floods?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-11T10:12:37+00:00",
+ "dek": "Winter weather has continued to wreak havoc in Gaza, with flooding and strong winds.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6aeefbdb59024-1794046939.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/11/gaza-infrastructure-collapse-leaves-residents-defenceless-against-floods?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/11/gaza-infrastructure-collapse-leaves-residents-defenceless-against-floods?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3a62856b77",
+ "score": 49.74,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Winter storms flood Gaza as infrastructure collapses"
+}
