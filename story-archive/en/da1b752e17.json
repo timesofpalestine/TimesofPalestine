@@ -1,0 +1,33 @@
+{
+ "brief": "A sandbank collapsed in Deir el-Balah, Gaza, burying families and triggering a deadly flooding disaster, Al Jazeera English reported. Survivors described desperate rescue attempts as people became trapped beneath debris and water. The incident killed multiple residents in the densely populated area.\n\nEyewitness accounts from those who escaped the collapse detailed the sudden nature of the disaster and the immediate loss of neighbors and community members. Rescue efforts faced challenges as families dug through rubble searching for missing relatives in the aftermath of the catastrophe.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/11/11/as-gaza-flood-waters-subside-palestinians-assess-human-and-material-damage?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-11T14:04:17+00:00",
+ "dek": "A deadly sandbank collapse buried families alive in Deir el-Balah, as survivors describe desperate rescue attempts.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/IMG_1392-1794387587.jpeg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/11/11/as-gaza-flood-waters-subside-palestinians-assess-human-and-material-damage?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/11/11/as-gaza-flood-waters-subside-palestinians-assess-human-and-material-damage?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "da1b752e17",
+ "score": 63.47,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Sandbank collapse buries families alive in Gaza flooding"
+}
