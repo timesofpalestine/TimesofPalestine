@@ -1,0 +1,33 @@
+{
+ "brief": "كشفت فترة الشتاء عن هشاشة بدائل الطاقة الكهربائية في غزة، في ظل اعتماد القطاع على مصادر محدودة جداً، بحسب المركز الفلسطيني للإعلام. يواجه السكان صعوبات متزايدة في الحصول على الكهرباء خلال الأشهر الباردة.\n\nيترتب على انقطاع الكهرباء المستمر تأثيرات مباشرة على الخدمات الصحية والتعليمية، فيما يعاني السكان من ظروف معيشية قاسية وسط عجز الجهات المسؤولة عن توفير بدائل كافية وموثوقة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/11/1123410",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-11T17:48:06+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/11/1123410",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fc82f684fc",
+ "score": 49.56,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الشتاء يفضح أزمة الطاقة الكهربائية في غزة"
+}
