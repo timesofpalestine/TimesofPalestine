@@ -6,7 +6,13 @@
    "article": "https://felesteen.news/post/190057/%D8%BA%D8%B2%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D9%8A%D9%82%D8%A9-%D9%88%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D9%85%D8%B1%D8%AA%D8%B2%D9%82%D8%A9",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d9%84%d8%a3%d9%85%d9%85-%d8%a7%d9%84%d9%85%d8%aa%d8%ad%d8%af%d8%a9-%d8%a3%d9%83%d8%ab%d8%b1-%d9%85%d9%86-150-%d8%a3%d9%84%d9%81-%d8%ae%d9%8a%d9%85%d8%a9-%d8%aa%d9%86%d8%aa%d8%b8%d8%b1-%d9%85",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
   }
  ],
  "date": "2026-11-12T07:48:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "3da48b908b",
- "score": 49.75,
+ "score": 49.47,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
