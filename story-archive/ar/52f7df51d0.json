@@ -1,0 +1,33 @@
+{
+ "brief": "المركز الفلسطيني للإعلام وثّق تدهوراً حاداً في المنظومة الصحية بغزة، حيث تعاني المرافق الطبية من نقص حاد في الأدوية والوقود والإمدادات الطبية الأساسية. توقفت عشرات المستشفيات عن تقديم خدماتها أو تقلصت عملياتها بشكل كبير وسط أزمة إنسانية متفاقمة.\n\nيؤثر انهيار القطاع الصحي على مئات آلاف السكان الذين يعتمدون على هذه الخدمات لتلقي العلاج والرعاية الطبية العاجلة، مما يعرّض حياتهم للخطر.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/12/1123510",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-12T10:35:14+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/12/1123510",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "52f7df51d0",
+ "score": 48.13,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "انهيار الخدمات الصحية في قطاع غزة"
+}
