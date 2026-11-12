@@ -6,13 +6,49 @@
    "article": "https://shehabnews.net/ar/post?id=168825&slug=%D8%A7%D9%84%D9%86%D9%82%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9-%D9%82%D8%B5%D9%81-%D9%85%D8%AC%D9%85%D8%B9-%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1-%D9%8A%D9%87%D8%AF%D8%AF-%D9%85%D8%A7-%D8%AA%D8%A8%D9%82%D9%89-%D9%85%D9%86-%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A-%D8%A8%D8%BA%D8%B2%D8%A9",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
   },
   {
-   "article": "https://felesteen.news/post/190091/%D8%AD%D9%85%D8%A7%D8%B3-%D8%AA%D8%AF%D8%B9%D9%88-%D9%84%D8%AA%D8%AD%D8%B1%D9%83-%D8%AF%D9%88%D9%84%D9%8A-%D8%B9%D8%A7%D8%AC%D9%84-%D9%84%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%8A%D8%A7%D8%AA-%D8%BA%D8%B2%D8%A9-%D9%88%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84",
+   "article": "https://www.aljazeera.net/video/2026/11/12/%d8%af%d9%85%d8%a7%d8%b1-%d9%87%d8%a7%d8%a6%d9%84-%d9%8a%d8%b5%d9%8a%d8%a8-%d9%85%d8%ac%d9%85%d8%b9-%d9%86%d8%a7%d8%b5%d8%b1-%d8%a7%d9%84%d8%b7%d8%a8%d9%8a-%d8%a8%d8%ba%d8%b2%d8%a9?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/327661",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/85178",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=218817&slug=%D8%AD%D8%B5%D9%8A%D9%84%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D8%AA%D8%B1%D8%AA%D9%81%D8%B9-%D8%A5%D9%84%D9%89-9-%D8%A8%D9%8A%D9%86%D9%87%D9%85-6-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%AC%D9%85%D8%B9-%D9%86%D8%A7%D8%B5%D8%B1",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/190072/%D8%A7%D9%84%D9%81%D8%B1%D8%A7-%D9%82%D8%B5%D9%81-%D9%85%D8%A8%D9%86%D9%89-%D8%A7%D9%84%D9%8A%D8%A7%D8%B3%D9%8A%D9%86-%D8%A8%D9%85%D8%AC%D9%85%D8%B9-%D9%86%D8%A7%D8%B5%D8%B1-%D8%AC%D8%B1%D9%8A%D9%85%D8%A9-%D8%AA%D8%B3%D8%AA%D9%87%D8%AF%D9%81-%D8%A7%D9%84%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9-%D9%81%D9%8A",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/w-18",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/430574",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
   }
  ],
  "date": "2026-11-12T10:07:26+00:00",
@@ -31,7 +67,7 @@
  "modified": null,
  "original": false,
  "pid": "c91231c8bd",
- "score": 61.4,
+ "score": 61.12,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
