@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/11/12/israel-strikes-intensive-care-at-gazas-nasser-hospital?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-south-gazas-nasser-hospital-kills-least-six-palestinians",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-12T01:20:55+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "90a2b629ca",
- "score": 63.1,
+ "score": 62.82,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
