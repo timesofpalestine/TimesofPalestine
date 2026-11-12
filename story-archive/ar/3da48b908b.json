@@ -13,6 +13,12 @@
    "name": "القدس العربي",
    "url": "https://www.alquds.co.uk/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/750598",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
   }
  ],
  "date": "2026-11-12T07:48:00+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "3da48b908b",
- "score": 49.47,
+ "score": 49.18,
  "source": "صحيفة فلسطين",
  "source_id": "felesteen",
  "source_url": "https://felesteen.news/",
