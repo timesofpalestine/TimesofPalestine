@@ -7,6 +7,12 @@
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/11-palestinians-killed-dawn",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
   }
  ],
  "date": "2026-11-12T14:23:01+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "eecd66240c",
- "score": 62.89,
+ "score": 62.68,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
