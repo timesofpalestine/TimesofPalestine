@@ -1,5 +1,5 @@
 {
- "brief": "Satellite imagery from the European Space Agency's freely available Sentinel-2 and Sentinel-1 satellites is being delayed by 24 hours over Gaza and parts of the West Bank, Bellingcat reported. The investigative outlet's analysis found the postponement affects data that would otherwise be publicly accessible.\n\nThe reason for the delay was not specified in available reporting. The Sentinel satellites typically provide open-source imagery used by researchers, journalists, and monitors tracking developments across conflict zones.",
+ "brief": "European Space Agency satellites show a 24-hour lag in releasing publicly available imagery of Gaza and parts of the West Bank, Bellingcat reported. The Sentinel-2 and Sentinel-1 satellites, whose data is normally distributed freely, appear subject to the processing delay over the disputed territories.\n\nThe analysis did not specify which authority imposed the hold or the stated reason for withholding near-real-time satellite data from the region.",
  "cat": "research",
  "corroborating_sources": [
   {
@@ -25,9 +25,9 @@
  "modified": null,
  "original": false,
  "pid": "f1569e5faa",
- "score": 56.42,
+ "score": 56.41,
  "source": "Bellingcat",
  "source_id": "bellingcat",
  "source_url": "https://www.bellingcat.com/",
- "title": "EU delays satellite imagery release over Gaza, West Bank by 24 hours"
+ "title": "EU delays satellite imagery release over Gaza and West Bank"
 }
