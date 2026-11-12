@@ -1,0 +1,39 @@
+{
+ "brief": "Israel has targeted Gaza's Nasser Hospital in an air strike for the seventh time, Al Jazeera English reported. The hospital, one of Gaza's largest medical facilities, has endured repeated bombardment throughout the conflict.\n\nThe repeated strikes have damaged medical capacity in the enclave. Healthcare workers at the facility have struggled to maintain operations amid the ongoing assault on Gaza's infrastructure.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/12/jerusalem-daily-gazas-nasser-hospital-hit-by-israeli-air-strike?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/video/2026/nov/12/israeli-strike-on-gaza-hospital-kills-surgeon-and-five-others-video",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-12T16:55:10+00:00",
+ "dek": "For the seventh time, Israel has targeted Gaza’s Nasser Hospital in an air strike.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/clean-Thumbnail-1794502473.png?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/12/jerusalem-daily-gazas-nasser-hospital-hit-by-israeli-air-strike?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/12/jerusalem-daily-gazas-nasser-hospital-hit-by-israeli-air-strike?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6da76d65f9",
+ "score": 63.32,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel strikes Nasser Hospital in Gaza for seventh time"
+}

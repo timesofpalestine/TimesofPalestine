@@ -1,0 +1,39 @@
+{
+ "brief": "Flooded tents and soaring fuel prices are leaving families in Gaza unable to adequately heat shelters as winter weather sets in, according to Al Jazeera English. With displacement camps offering minimal protection from cold and damp conditions, parents report difficulty maintaining body warmth for their children through the season ahead.\n\nThe crisis reflects broader shortages of heating fuel and basic supplies across the territory, compounding existing humanitarian challenges faced by displaced populations already living in temporary accommodation.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/features/2026/11/12/her-hands-are-as-cold-as-ice-gaza-families-struggle-to-keep-warm?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/nine-month-old-baby-dies-cold-gaza",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-12T17:18:13+00:00",
+ "dek": "Flooded tents and high prices leave Gaza families struggling to keep children warm as winter approaches.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/873A3697-copy-1794496426.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/features/2026/11/12/her-hands-are-as-cold-as-ice-gaza-families-struggle-to-keep-warm?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/features/2026/11/12/her-hands-are-as-cold-as-ice-gaza-families-struggle-to-keep-warm?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e054eda72c",
+ "score": 49.59,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza families struggle to keep children warm as winter approaches"
+}
