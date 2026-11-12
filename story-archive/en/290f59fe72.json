@@ -1,0 +1,33 @@
+{
+ "brief": "Ireland's data protection watchdog faces criticism for slow progress investigating complaints that Microsoft's Irish data centres host an application used by the Israeli military to track Palestinians, Middle East Eye reported. The oversight body has drawn fire from privacy advocates over the pace of its inquiry into the arrangement.\n\nThe complaint centres on Microsoft providing infrastructure in Ireland that supports the tracking tool, raising questions about data protection compliance and the company's role in Palestinian surveillance operations. No timeline for the investigation's completion has been disclosed.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/news/ireland-data-watchdog-accused-stalling-probe-microsofts-hosting-israeli-military-app",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-12T13:27:15+00:00",
+ "dek": "Ireland: Watchdog accused of stalling probe into Microsoft hosting Israeli military app Submitted by Areeb Ullah on Thu, 11/12/2026 - 11:10 Data monitor criticised over complaints that Ireland's Microsoft data centres host a tool to track Palestinians A…",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/styles/crop_16_9/public/images-story/ireland-data-centre-action-microsoft-eko-november-2026.jpg.jpg?itok=77SU40I6",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/news/ireland-data-watchdog-accused-stalling-probe-microsofts-hosting-israeli-military-app",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/news/ireland-data-watchdog-accused-stalling-probe-microsofts-hosting-israeli-military-app"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "290f59fe72",
+ "score": 49.93,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Ireland's data watchdog faces stalling accusations over Microsoft-Israeli military app probe"
+}
