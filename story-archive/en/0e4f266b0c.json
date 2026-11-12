@@ -1,0 +1,51 @@
+{
+ "brief": "Al Jazeera's Tareq Abu Azzoum reported from Nasser Hospital following an Israeli strike on the facility. The attack damaged the hospital, a major medical center in Gaza serving a large civilian population.\n\nThe strike adds to mounting concerns over the targeting of healthcare infrastructure during the conflict. Hospitals in Gaza have faced repeated bombardment, hampering efforts to treat wounded civilians and maintain medical operations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/12/al-jazeera-reports-from-gaza-hospital-attacked-by-israel?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/11-palestinians-killed-dawn",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-22-palestinians-in-the-gaza-strip-including-six-in-direct-attack-on-nasser-hospitals-surgery-building-among-them-a-doctor-and-a-child",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-12T18:03:02+00:00",
+ "dek": "Al Jazeera’s Tareq Abu Azzoum reports on the aftermath of an Israeli strike on Nasser Hospital…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794506574.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/12/al-jazeera-reports-from-gaza-hospital-attacked-by-israel?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/12/al-jazeera-reports-from-gaza-hospital-attacked-by-israel?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0e4f266b0c",
+ "score": 63.81,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike hits Nasser Hospital in Gaza"
+}
