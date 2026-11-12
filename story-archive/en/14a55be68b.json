@@ -1,0 +1,51 @@
+{
+ "brief": "Israeli forces killed 22 Palestinians across the Gaza Strip between November 8 and the early hours of November 12, including two children and a woman, the Palestinian Centre for Human Rights reported. Six of those killed died in a direct attack on the surgery building of Nasser Hospital, among them a doctor and a child, according to PCHR documentation.\n\nThe killings occurred across multiple locations in Gaza during the four-day period. Dozens of others were wounded in the series of attacks, PCHR field researchers documented.",
+ "cat": "research",
+ "corroborating_sources": [
+  {
+   "article": "https://pchrgaza.org/israel-kills-22-palestinians-in-the-gaza-strip-including-six-in-direct-attack-on-nasser-hospitals-surgery-building-among-them-a-doctor-and-a-child",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-10-palestinians-gaza-dawn-after-two-hospitals-struck",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israeli-strike-gaza-hospital-deadliest-election",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-12T13:26:06+00:00",
+ "dek": "Between 8 November and the early hours of 12 November 2026, Israeli Occupation Forces (IOF) killed 22 Palestinians, including two children and a woman, and wounded dozens more in a series of attacks across the Gaza Strip, according to documentation by Palestinian Centre for Human Rights (PCHR) field researchers. In a horrific crime, IOF directly…",
+ "dup_of": null,
+ "image": "https://pchrgaza.org/wp-content/uploads/2026/11/121126_Khan_Yunis_TM_005.jpg",
+ "lang": "en",
+ "link": "https://pchrgaza.org/israel-kills-22-palestinians-in-the-gaza-strip-including-six-in-direct-attack-on-nasser-hospitals-surgery-building-among-them-a-doctor-and-a-child",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "Palestinian Centre for Human Rights",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://pchrgaza.org/israel-kills-22-palestinians-in-the-gaza-strip-including-six-in-direct-attack-on-nasser-hospitals-surgery-building-among-them-a-doctor-and-a-child"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "14a55be68b",
+ "score": 85.82,
+ "source": "Palestinian Centre for Human Rights",
+ "source_id": "pchr",
+ "source_url": "https://pchrgaza.org/",
+ "title": "Israel kills 22 Palestinians in Gaza, including six at Nasser Hospital"
+}
