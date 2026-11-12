@@ -15,15 +15,21 @@
    "verified": true
   },
   {
-   "article": "https://qudsn.co/post?id=218808&slug=%D8%A8%D9%8A%D9%86%D9%87%D9%85-%D8%B7%D8%A7%D9%84%D8%A8-%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%AF-%D8%A8%D9%82%D8%B5%D9%81-%D9%85%D8%AC%D9%85%D8%B9-%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%82%D8%AA%D9%84-8-%D8%B7%D9%84%D8%A8%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D9%85%D9%86%D8%B0-%D9%85%D8%B7%D9%84%D8%B9-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1",
-   "name": "شبكة قدس الإخبارية",
-   "url": "https://qudsn.co/",
+   "article": "https://www.pbc.ps/a-88",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
    "verified": true
   },
   {
-   "article": "https://www.pbc.ps/w-18",
-   "name": "تلفزيون فلسطين",
-   "url": "https://www.pbc.ps/",
+   "article": "https://t.me/QudsN/750620",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=218808&slug=%D8%A8%D9%8A%D9%86%D9%87%D9%85-%D8%B7%D8%A7%D9%84%D8%A8-%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%AF-%D8%A8%D9%82%D8%B5%D9%81-%D9%85%D8%AC%D9%85%D8%B9-%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%82%D8%AA%D9%84-8-%D8%B7%D9%84%D8%A8%D8%A9-%D9%81%D9%8A-%D8%BA%D8%B2%D8%A9-%D9%85%D9%86%D8%B0-%D9%85%D8%B7%D9%84%D8%B9-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
    "verified": true
   },
   {
@@ -36,12 +42,6 @@
    "article": "https://t.me/Arabi21News/430574",
    "name": "عربي21",
    "url": "https://t.me/arabi21news",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/QudsN/750609",
-   "name": "شبكة قدس · تيليغرام",
-   "url": "https://t.me/QudsN",
    "verified": true
   }
  ],
@@ -61,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "683c62ae89",
- "score": 48.62,
+ "score": 48.46,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
