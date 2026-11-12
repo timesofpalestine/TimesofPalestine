@@ -1,0 +1,39 @@
+{
+ "brief": "An Israeli strike on Nasser Hospital in Khan Younis killed a surgeon, a child, and multiple patients, according to Middle East Eye. The attack struck the facility's intensive care and surgical wards, forcing hospital administrators to suspend operations.\n\nThe strike damaged critical sections of the hospital, which serves as a major medical facility in southern Gaza. Hospital staff accounts indicate the strike caused significant casualties among both patients receiving treatment and medical personnel on duty.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/news/israeli-strike-gaza-hospital-kills-surgeon-child-and-patients",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israeli-strike-southern-gaza-hospital-kills-six-gaza-civil-defence-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-12T08:04:48+00:00",
+ "dek": "Israeli strike on Gaza hospital kills surgeon, child and patients Submitted by MEE staff on Thu, 11/12/2026 - 07:53 Attack on Nasser Hospital in Khan Younis hits intensive care and surgical wards, forcing suspension of operations Hospital staff and others…",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/styles/crop_16_9/public/images-story/000_D78W844%20%281%29.jpg.jpg?itok=61d79VVj",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/news/israeli-strike-gaza-hospital-kills-surgeon-child-and-patients",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/news/israeli-strike-gaza-hospital-kills-surgeon-child-and-patients"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6558e2148b",
+ "score": 63.16,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli strike on Gaza hospital kills surgeon, patients and child"
+}

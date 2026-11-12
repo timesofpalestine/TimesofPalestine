@@ -1,0 +1,45 @@
+{
+ "brief": "غرقت خيام النازحين في غزة قبل نحو أسبوع، تاركة عائلات بلا مأوى وسط أمطار الشتاء. وبحسب وكالة شهاب، ما زالت هذه الأسر تسعى للعثور على سقف يحميها، في الوقت الذي يفاقم فيه الاحتلال معاناتهم بهدم منازلهم الأصلية.\n\nيشدّد التقرير على أن الأطفال النازحين لم يستقبلوا حتى الآن مستلزمات الحماية من البرد والرطوبة. وقبل وصول أي دعم صحيح إلى فراش طفل مشرّد، قيّد الاحتلال دخول ما يحمي من فصل الشتاء، مما يعمّق الأزمة الإنسانية في القطاع.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.net/ar/post?id=168803&slug=%D8%BA%D8%B2%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D9%8A%D9%82%D8%A9-%D9%88%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D9%85%D8%B1%D8%AA%D8%B2%D9%82%D8%A9",
+   "name": "وكالة شهاب (حصري)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/190057/%D8%BA%D8%B2%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D9%8A%D9%82%D8%A9-%D9%88%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D9%85%D8%B1%D8%AA%D8%B2%D9%82%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://www.alquds.co.uk/%d8%a7%d9%84%d8%a3%d9%85%d9%85-%d8%a7%d9%84%d9%85%d8%aa%d8%ad%d8%af%d8%a9-%d8%a3%d9%83%d8%ab%d8%b1-%d9%85%d9%86-150-%d8%a3%d9%84%d9%81-%d8%ae%d9%8a%d9%85%d8%a9-%d8%aa%d9%86%d8%aa%d8%b8%d8%b1-%d9%85",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-12T08:51:21+00:00",
+ "dek": "بعد نحو أسبوع على غرق الخيام، ما زالت عائلات في غزة تبحث عن سقف. وقبل أن تصل أول قطرة إلى فراش طفل نازح، كان الاحتلال قد هدم بيته وقيّد دخول ما يحميه من الشتاء.",
+ "dup_of": null,
+ "image": "https://fsn1.your-objectstorage.com/shehab/uploads/2026/10/cutout-writer-100.webp",
+ "lang": "ar",
+ "link": "https://shehabnews.net/ar/post?id=168803&slug=%D8%BA%D8%B2%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D9%8A%D9%82%D8%A9-%D9%88%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D9%85%D8%B1%D8%AA%D8%B2%D9%82%D8%A9",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "وكالة شهاب (حصري)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.net/ar/post?id=168803&slug=%D8%BA%D8%B2%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D9%8A%D9%82%D8%A9-%D9%88%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D9%85%D8%B1%D8%AA%D8%B2%D9%82%D8%A9"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "448decbf57",
+ "score": 49.69,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
+ "source_url": "https://shehabnews.com/",
+ "title": "عائلات غزية تبحث عن مأوى بعد الفيضانات والتدمير"
+}
