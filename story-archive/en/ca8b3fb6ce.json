@@ -1,0 +1,33 @@
+{
+ "brief": "A Gaza resident has constructed a makeshift shelter from clay as families increasingly abandon deteriorating tent encampments. The structure represents an adaptation to worsening humanitarian conditions, as displaced persons seek alternatives to damaged fabric tents that offer minimal protection from weather and living conditions.\n\nHundreds of thousands remain in makeshift camps across Gaza lacking adequate shelter and basic services. Clay construction, while rudimentary, offers greater durability than the fabric tents that dominate displacement sites throughout the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37832",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-12T11:30:16+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://t.me/maannews/37832",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ca8b3fb6ce",
+ "score": 49.55,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Gaza resident builds clay shelter to escape torn tents"
+}
