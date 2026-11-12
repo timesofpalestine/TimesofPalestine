@@ -15,12 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.al-monitor.com/originals/2026/11/israeli-strike-gaza-hospital-deadliest-election",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "14a55be68b",
- "score": 85.75,
+ "score": 85.73,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",

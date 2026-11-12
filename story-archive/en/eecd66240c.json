@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/11/12/horrific-crime-gaza-doctor-killed-as-israel-expands-war-on-healthcare?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/israel-bombs-gaza-hospital-killing",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
   },
   {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/11-palestinians-killed-dawn",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "eecd66240c",
- "score": 62.19,
+ "score": 61.97,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
