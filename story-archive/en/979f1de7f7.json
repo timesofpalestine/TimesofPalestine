@@ -6,13 +6,7 @@
    "article": "https://shehabnews.net/ar/post?id=168864&slug=%D8%B3%D9%84%D9%88%D8%A7%D8%AF-%D8%AA%D8%B4%D9%8A%D8%B9-%D8%A7%D9%84%D8%B4%D9%87%D9%8A%D8%AF-%D8%A7%D9%84%D8%B7%D9%81%D9%84-%D8%A7%D9%84%D8%A3%D8%B3%D9%8A%D8%B1-%D9%88%D9%84%D9%8A%D8%AF-%D8%A3%D8%AD%D9%85%D8%AF",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-hands-over-body-palestinian-teen-who-died-custody",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-12T18:16:00+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "979f1de7f7",
- "score": 62.16,
+ "score": 61.87,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
