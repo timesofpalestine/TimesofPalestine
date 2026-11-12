@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli strike hit the intensive care unit at Nasser Hospital in Gaza, killing at least six people, Gaza's Civil Defence reported. The facility is among the largest hospitals in the territory.\n\nThe attack occurred as fighting continues across Gaza following Israel's military operations. Nasser Hospital has sustained repeated damage during the conflict, with Israeli forces conducting multiple operations in and around the complex.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/12/israel-strikes-intensive-care-at-gazas-nasser-hospital?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-12T01:20:55+00:00",
+ "dek": "Gaza's Civil Defence says an Israeli strike on Nasser Hospital has killed at least six people.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794446435.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/12/israel-strikes-intensive-care-at-gazas-nasser-hospital?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/12/israel-strikes-intensive-care-at-gazas-nasser-hospital?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "90a2b629ca",
+ "score": 63.32,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike kills six at Gaza's Nasser Hospital ICU"
+}
