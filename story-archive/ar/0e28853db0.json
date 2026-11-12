@@ -13,6 +13,36 @@
    "name": "شبكة قدس الإخبارية",
    "url": "https://qudsn.co/",
    "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/a-88",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/190069/%D8%A7%D9%84%D9%82%D9%88%D9%89-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9-%D8%AA%D8%AF%D8%B9%D9%88-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D9%84%D9%84%D8%AA%D8%AD%D8%B1%D9%83-%D9%84%D9%88%D9%82%D9%81-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AF%D8%A9-%D8%A8%D8%B9%D8%AF-%D9%82%D8%B5%D9%81-",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/750620",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/gazaalannet/85167",
+   "name": "غزة الآن · تيليغرام",
+   "url": "https://t.me/gazaalannet",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/430574",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": true
   }
  ],
  "date": "2026-11-12T09:45:21+00:00",
@@ -31,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "0e28853db0",
- "score": 63.51,
+ "score": 63.31,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
