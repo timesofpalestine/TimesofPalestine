@@ -1,6 +1,6 @@
 {
  "brief": "Israel ordered its military to intensify preparations for a potential Iranian attack, according to Al Jazeera English, as Tehran signaled it would retaliate if struck. The escalation comes amid heightened regional tensions between the two countries.\n\nIran's warning of broader retaliation suggests potential for a widened conflict beyond direct Israeli-Iranian exchanges. Israeli military readiness preparations indicate officials are treating the Iranian threat as credible.",
- "cat": "gaza",
+ "cat": "politics",
  "corroborating_sources": [
   {
    "article": "https://www.aljazeera.com/news/liveblog/2026/11/12/iran-war-live-tehran-warns-of-wider-retaliation-israel-kills-in-gaza?traffic_source=rss",
@@ -16,7 +16,7 @@
   }
  ],
  "date": "2026-11-12T00:00:44+00:00",
- "dek": "Israel orders military to step up preparations for possible attack on Iran as Tehran says it will retaliate if attacked.",
+ "dek": "Israel orders military to step up preparations for possible attack on Iran as IRGC chief pledges missile development.",
  "dup_of": null,
  "image": "https://www.aljazeera.com/wp-content/uploads/2026/08/2026-07-05T114835Z_1681270251_RC2F7MA1ZKRB_RTRMADP_3_IRAN-CRISIS-KHAMENEI-1786449620.jpg?resize=1920%2C1440",
  "lang": "en",
@@ -31,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "113104f553",
- "score": 47.03,
+ "score": 31.76,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
