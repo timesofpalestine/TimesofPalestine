@@ -21,9 +21,21 @@
    "verified": true
   },
   {
+   "article": "https://shehabnews.net/ar/post?id=168866&slug=%D9%88%D8%B2%D9%8A%D8%B1-%D8%A8%D8%B1%D9%8A%D8%B7%D8%A7%D9%86%D9%8A-%D9%8A%D9%8F%D8%B9%D9%82%D8%A8-%D8%B9%D9%84%D9%89-%D9%82%D8%B5%D9%81-%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89-%D9%86%D8%A7%D8%B5%D8%B1-%D8%B1%D9%8F%D8%B9%D8%A8-%D8%B4%D8%AF%D9%8A%D8%AF",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
    "article": "https://pchrgaza.org/israel-kills-22-palestinians-in-the-gaza-strip-including-six-in-direct-attack-on-nasser-hospitals-surgery-building-among-them-a-doctor-and-a-child",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/israel-bombs-gaza-hospital-killing",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
    "verified": true
   }
  ],
@@ -43,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "0e4f266b0c",
- "score": 63.81,
+ "score": 63.3,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
