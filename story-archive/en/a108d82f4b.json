@@ -25,12 +25,6 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.dropsitenews.com/p/israel-bombs-gaza-hospital-killing",
-   "name": "Drop Site News",
-   "url": "https://www.dropsitenews.com/",
-   "verified": true
   }
  ],
  "date": "2026-11-13T03:11:43+00:00",
@@ -49,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "a108d82f4b",
- "score": 59.85,
+ "score": 59.61,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

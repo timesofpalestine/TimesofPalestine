@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/israel-kills-22-palestinians-in-the-gaza-strip-including-six-in-direct-attack-on-nasser-hospitals-surgery-building-among-them-a-doctor-and-a-child",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-gaza-raid-homes-occupied-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-12T13:26:06+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "14a55be68b",
- "score": 84.63,
+ "score": 84.61,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
