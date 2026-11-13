@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/11/13/france-slams-israels-demagogic-ban-on-left-wing-leader-melenchon?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/french-government-condemns-israel-entry-ban-jean-luc-melenchon",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-13T12:57:08+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "03d906de23",
- "score": 46.91,
+ "score": 46.63,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
