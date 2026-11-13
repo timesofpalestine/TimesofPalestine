@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">What one bazaar bought: Westchester, 7 November 2026</title>
+  <desc id="desc">A bilingual two-panel graphic. The left panel is the ledger of the Gather for Gaza bazaar held at the Upper Westchester Muslim Society in New York on 7 November 2026: more than 400 visitors, more than 20 vendor tables, close to 14,000 dollars raised, 10,000 of it to Taawon for Gaza orphan relief and the remainder funding one medical school scholarship. The right panel gives the scale of the two Palestinian programmes the money paid into: Taawon's Noor programme commitment to 20,000 orphaned children in Gaza until the age of 18, the 2,000 dollar annual cost of sponsoring one child, and the more than 150 Gazan medical and dental students the Leonard Education Organization supports at Egyptian universities.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101114"/>
+      <stop offset="1" stop-color="#1c1d21"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7e1e2b"/>
+      <stop offset=".48" stop-color="#286344"/>
+      <stop offset="1" stop-color="#bd9854"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+      .tiny{font-size:17px}
+      .small{font-size:19px}
+      .body{font-size:22px}
+      .label{font-size:18px;font-weight:800;letter-spacing:1.2px}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="90" y="76" class="serif ivory" font-size="48" font-weight="800">What one bazaar bought</text>
+  <text x="90" y="118" class="sans muted body">Westchester County, New York, 7 November 2026</text>
+  <text x="1510" y="162" class="arabic ivory" font-size="34" font-weight="800" text-anchor="end">ماذا اشترى بازار واحد</text>
+  <text x="1510" y="194" class="arabic muted small" text-anchor="end">مقاطعة ويستشستر في نيويورك.. 7 تشرين الثاني 2026</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="232" width="750" height="478" rx="18" fill="#27282c" stroke="#c7a86b" stroke-width="2"/>
+    <text x="108" y="278" class="sans gold label">THE DAY'S LEDGER</text>
+    <text x="108" y="304" class="arabic muted small">دفتر حساب اليوم</text>
+
+    <circle cx="118" cy="344" r="8" fill="#c7a86b"/>
+    <text x="148" y="352" class="sans ivory body">More than 400 visitors, from New York and Connecticut</text>
+    <text x="148" y="378" class="arabic muted small">أكثر من 400 زائر من نيويورك وكونيتيكت</text>
+
+    <circle cx="118" cy="420" r="8" fill="#c7a86b"/>
+    <text x="148" y="428" class="sans ivory body">More than 20 vendor tables, each with a Palestine tie</text>
+    <text x="148" y="454" class="arabic muted small">أكثر من 20 طاولة بائعين، لكل منها صلة بفلسطين</text>
+
+    <circle cx="118" cy="496" r="8" fill="#dc6572"/>
+    <text x="148" y="504" class="sans ivory body">Close to $14,000 in a single afternoon</text>
+    <text x="148" y="530" class="arabic muted small">نحو 14 ألف دولار في عصر يوم واحد</text>
+
+    <circle cx="118" cy="572" r="8" fill="#61aa80"/>
+    <text x="148" y="580" class="sans ivory body">$10,000 to Taawon, for Gaza orphan relief</text>
+    <text x="148" y="606" class="arabic muted small">عشرة آلاف دولار إلى التعاون لإغاثة أيتام غزة</text>
+
+    <circle cx="118" cy="648" r="8" fill="#61aa80"/>
+    <text x="148" y="656" class="sans ivory body">The remainder funds one medical school place</text>
+    <text x="148" y="682" class="arabic muted small">والباقي يموّل مقعداً واحداً في كلية الطب</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="852" y="232" width="658" height="478" rx="18" fill="#27282c" stroke="#72747a" stroke-width="2"/>
+    <text x="890" y="278" class="sans gold label">WHAT THE MONEY PAYS INTO</text>
+    <text x="890" y="304" class="arabic muted small">إلى أين يذهب المال</text>
+
+    <text x="890" y="382" class="sans gold" font-size="54" font-weight="800">20,000</text>
+    <text x="890" y="412" class="sans ivory small">orphans Noor keeps enrolled until age 18</text>
+    <text x="890" y="438" class="arabic muted small">يتيم في غزة يرعاهم «نور» حتى سن 18</text>
+
+    <text x="890" y="518" class="sans red" font-size="54" font-weight="800">$2,000</text>
+    <text x="890" y="548" class="sans ivory small">a year to sponsor one child, Taawon says</text>
+    <text x="890" y="574" class="arabic muted small">كلفة كفالة طفل واحد سنوياً، وفق التعاون</text>
+
+    <text x="890" y="634" class="sans green" font-size="54" font-weight="800">150+</text>
+    <text x="890" y="664" class="sans ivory small">Gaza medical students LE.O backs in Egypt</text>
+    <text x="890" y="690" class="arabic muted small">طالب طب من غزة يدرسون في مصر بدعم ليونارد</text>
+  </g>
+
+  <rect x="90" y="742" width="1420" height="104" rx="15" fill="url(#band)"/>
+  <text x="124" y="780" class="sans ivory" font-size="23" font-weight="800">THE MONEY MOVED IN BOTH DIRECTIONS</text>
+  <text x="124" y="812" class="sans ivory small">Wadi Fukin olive oil, Hebron ceramics, hand-stitched thobes.</text>
+  <text x="124" y="836" class="sans ivory small">Twenty tables buying from named Palestinian producers.</text>
+  <text x="1478" y="780" class="arabic ivory" font-size="23" font-weight="800" text-anchor="end">المال سار في الاتجاهين</text>
+  <text x="1478" y="812" class="arabic ivory small" text-anchor="end">زيت وادي فوكين، وخزف الخليل، وثياب مطرّزة باليد</text>
+  <text x="1478" y="836" class="arabic ivory small" text-anchor="end">عشرون طاولة تشتري من منتجين فلسطينيين بأسمائهم</text>
+
+  <text x="90" y="880" class="sans muted tiny">Figures: organisers' account via River Journal Online (12 November 2026); Taawon's Noor programme; Leonard Education Organization. Graphic: Times of Palestine.</text>
+</svg>
