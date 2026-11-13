@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-killed-israeli-fire-central-gaza-hospital-sources-say",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://mondoweiss.net/2026/11/israeli-strike-on-nasser-hospital-in-gaza-kills-six-disables-key-medical-departments",
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
@@ -18,12 +24,6 @@
    "article": "http://www.democracynow.org/2026/11/13/nasser_hospital_attack",
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-gaza-raid-homes-occupied-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
    "verified": true
   },
   {
@@ -61,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "14a55be68b",
- "score": 84.21,
+ "score": 84.18,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
