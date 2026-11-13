@@ -1,0 +1,33 @@
+{
+ "brief": "The US Central Command notified the Israeli military of preparations for a possible resumption of war with Iran in the near term, Shehab Wire reported. The alert comes amid American military reinforcements in the region and disagreement over diplomatic strategy.\n\nThe notification reflects heightened tensions between Washington and Tehran, though no imminent military action has been publicly announced. Details of the specific preparations or timeline were not disclosed.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.net/ar/post?id=168885&slug=%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%B3%D8%AA%D8%B9%D8%AF-%D9%84%D8%A7%D8%B3%D8%AA%D8%A6%D9%86%D8%A7%D9%81-%D8%A7%D9%84%D8%AD%D8%B1%D8%A8-%D8%B9%D9%84%D9%89-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%88%D8%AA%D8%A8%D9%84%D8%BA-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-12T22:56:07+00:00",
+ "dek": "The US Central Command notified the Israeli military of preparations for a possible resumption of war with Iran in the near term, Shehab Wire reported.",
+ "dup_of": null,
+ "image": "https://fsn1.your-objectstorage.com/shehab/uploads/2026/11/file_6af644bc515eb.webp",
+ "lang": "en",
+ "link": "https://shehabnews.net/ar/post?id=168885&slug=%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%B3%D8%AA%D8%B9%D8%AF-%D9%84%D8%A7%D8%B3%D8%AA%D8%A6%D9%86%D8%A7%D9%81-%D8%A7%D9%84%D8%AD%D8%B1%D8%A8-%D8%B9%D9%84%D9%89-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%88%D8%AA%D8%A8%D9%84%D8%BA-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Shehab Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.net/ar/post?id=168885&slug=%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%B3%D8%AA%D8%B9%D8%AF-%D9%84%D8%A7%D8%B3%D8%AA%D8%A6%D9%86%D8%A7%D9%81-%D8%A7%D9%84%D8%AD%D8%B1%D8%A8-%D8%B9%D9%84%D9%89-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%88%D8%AA%D8%A8%D9%84%D8%BA-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1e283fc334",
+ "score": 34.43,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "US Central Command alerts Israel to prepare for renewed Iran conflict"
+}
