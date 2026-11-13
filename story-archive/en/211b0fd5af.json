@@ -1,0 +1,33 @@
+{
+ "brief": "A baby died of hypothermia as temperatures dropped across Gaza, Middle East Eye reported, amid ongoing Israeli restrictions on aid delivery. The outlet did not specify the child's age or location within Gaza.\n\nAt least 11 people were killed in a series of Israeli attacks across Gaza during the period covered by the report. The surge in military operations coincided with winter weather conditions and limited access to humanitarian assistance.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/news/gaza-baby-dies-hypothermia-israeli-attacks-across-enclave-surge",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-13T15:59:44+00:00",
+ "dek": "Baby dies of hypothermia, as Israeli attacks across Gaza surge Submitted by MEE staff on Fri, 11/13/2026 - 14:15 As temperatures plummet amid ongoing Israeli restrictions on aid, the vulnerable suffer; while 11 people were killed in a series of attacks across…",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/styles/crop_16_9/public/images-story/Untitled%281%29_7.jpg.jpg?itok=UV0h9Fd4",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/news/gaza-baby-dies-hypothermia-israeli-attacks-across-enclave-surge",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/news/gaza-baby-dies-hypothermia-israeli-attacks-across-enclave-surge"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "211b0fd5af",
+ "score": 63.97,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Baby dies of hypothermia as Israeli attacks intensify across Gaza"
+}
