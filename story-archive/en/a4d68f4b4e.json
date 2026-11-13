@@ -7,6 +7,12 @@
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
    "verified": false
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/11/1168799",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": false
   }
  ],
  "date": "2026-11-12T15:36:00+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "a4d68f4b4e",
- "score": 42.2,
+ "score": 42.02,
  "source": "Palestine News Network",
  "source_id": "pnn",
  "source_url": "https://english.pnn.ps/",
