@@ -1,0 +1,45 @@
+{
+ "brief": "A baby died from exposure to freezing temperatures in Gaza, according to Al Jazeera English, amid winter conditions and restricted aid delivery. The death occurred as displaced Palestinians face harsh weather with limited access to shelter and basic resources.\n\nFifty-three countries have called on Israel to permit increased humanitarian aid into Gaza, addressing shortages of food, medicine, and protection from the cold. The joint appeal comes during months of conflict that have left the enclave's population without adequate shelter or warmth.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/13/jerusalem-daily-baby-dies-from-cold-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48393",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/gaza-baby-dies-hypothermia-israeli-attacks-across-enclave-surge",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-13T16:34:24+00:00",
+ "dek": "A baby dies from the cold in Gaza as 53 countries urge Israel to allow aid in.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/clean-2-1794587554.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/13/jerusalem-daily-baby-dies-from-cold-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/13/jerusalem-daily-baby-dies-from-cold-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "56194e48a2",
+ "score": 49.42,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Infant dies from cold in Gaza as nations demand aid access"
+}
