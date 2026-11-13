@@ -1,0 +1,33 @@
+{
+ "brief": "Heavy rains are flooding shelters across Gaza while damaging solar power systems that provide critical electricity to hospitals and clinics, Al Jazeera English reported. The flooding threatens the territory's already fragile healthcare infrastructure at a time when medical services face severe shortages of fuel and supplies.\n\nThe damage to solar installations compounds Gaza's energy crisis, leaving healthcare facilities dependent on backup generators that require diesel fuel in increasingly short supply. Each rainfall intensifies the humanitarian emergency by forcing displaced residents from shelter and cutting power to medical services already operating at minimal capacity.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/13/with-every-rainfall-gaza-risks-losing-access-to-power-and-healthcare?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-13T09:43:30+00:00",
+ "dek": "Heavy rains flood shelters, damage solar power systems and threat essential healthcare services.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/2-1794559552.jpg?resize=1500%2C1080",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/13/with-every-rainfall-gaza-risks-losing-access-to-power-and-healthcare?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/13/with-every-rainfall-gaza-risks-losing-access-to-power-and-healthcare?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3a5ac796b2",
+ "score": 49.58,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Rainfall floods Gaza shelters, cripples power and healthcare access"
+}
