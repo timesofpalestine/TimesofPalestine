@@ -1,0 +1,33 @@
+{
+ "brief": "أطفال قطاع غزة يواجهون معاناة صحية ونفسية حادة جراء الحرب المستمرة، بحسب المركز الفلسطيني للإعلام. يعاني جيل من الأطفال من صدمات عميقة وأمراض جسدية، إذ استمر الحصار والقصف والنزوح القسري عن منازلهم وفقدان أحبائهم.\n\nلا تتوفر خدمات صحية نفسية كافية لعلاج هذه الجراح، بينما تتسع آثارها يومياً. يعيش الأطفال ظروفاً إنسانية قاسية تحول طفولتهم إلى معاناة مستمرة وبلا فرصة للشفاء.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/13/1123427",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-13T09:09:35+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/13/1123427",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fb96782980",
+ "score": 49.98,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "أطفال غزة يعانون من آثار نفسية وصحية عميقة للحرب"
+}
