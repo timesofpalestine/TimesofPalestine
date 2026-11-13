@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/depletion-of-medicines-medical-consumables-and-laboratory-supplies-threatens-the-lives-of-thousands-of-patients-in-the-gaza-strip",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://english.pnn.ps/news/48389",
-   "name": "Palestine News Network",
-   "url": "https://english.pnn.ps/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-09T18:58:13+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "20a2ef8189",
- "score": 65.81,
+ "score": 65.79,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
