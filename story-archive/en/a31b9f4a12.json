@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli airstrike struck the Nasser hospital in Khan Younis early Thursday, killing a surgeon and five others, The Guardian reported. Doctors were on shift when the strike hit patient treatment rooms and sleeping quarters where staff were resting.\n\nThe attack occurred at one of Gaza's major medical facilities during active operations. Hospital staff were tending to patients at the time of the strike.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/video/2026/nov/12/israeli-strike-on-gaza-hospital-kills-surgeon-and-five-others-video",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-12T14:23:47+00:00",
+ "dek": "Doctors were on shift at Nasser hospital in Khan Younis early on Thursday when an Israeli airstrike hit rooms where they were tending to patients, as well as those used for sleeping.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/5fc9891c0883016b86ed53c1fc5030e3bffd5b94/285_0_1350_1080/master/1350.jpg?width=140&quality=85&auto=format&fit=max&s=a120f6b2b96a1f5d76de2f27b9e8d7ce",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/video/2026/nov/12/israeli-strike-on-gaza-hospital-kills-surgeon-and-five-others-video",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/video/2026/nov/12/israeli-strike-on-gaza-hospital-kills-surgeon-and-five-others-video"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a31b9f4a12",
+ "score": 55.19,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli airstrike kills surgeon and five others at Gaza hospital"
+}

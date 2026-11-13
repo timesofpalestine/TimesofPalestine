@@ -9,15 +9,21 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-10-palestinians-gaza-dawn-after-two-hospitals-struck",
+   "article": "https://news.un.org/feed/view/en/story/2026/11/1168796",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/how-western-media-framed-israeli-attack-nasser-hospital",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/11/israeli-strike-gaza-hospital-deadliest-election",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
+   "article": "https://www.dropsitenews.com/p/israel-bombs-gaza-hospital-killing",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
    "verified": true
   }
  ],
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "14a55be68b",
- "score": 85.69,
+ "score": 85.05,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
