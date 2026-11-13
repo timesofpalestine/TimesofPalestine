@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-53-nations-and-organisations-urge-israel-allow-aid-gaza",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48393",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
   }
  ],
  "date": "2026-11-13T07:35:06+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "fa84b1d61d",
- "score": 47.45,
+ "score": 47.17,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
