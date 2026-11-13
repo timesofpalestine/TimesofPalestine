@@ -15,6 +15,12 @@
    "verified": true
   },
   {
+   "article": "http://www.democracynow.org/2026/11/13/nasser_hospital_attack",
+   "name": "Democracy Now!",
+   "url": "https://www.democracynow.org/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-gaza-raid-homes-occupied-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -55,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "14a55be68b",
- "score": 84.23,
+ "score": 84.21,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
