@@ -1,0 +1,45 @@
+{
+ "brief": "أعلنت وزارة الصحة في غزة وفاة رضيع بسبب انخفاض درجة حرارة جسمه، في أول حالة وفيات تُنسب للبرد خلال موسم الشتاء الحالي. ولم تحدّد الوزارة تفاصيل إضافية عن الحالة أو ظروفها.\n\nيأتي الإعلان وسط معاناة السكان في القطاع من ظروف معيشية حادة وتدهور البنية التحتية، وهو ما يزيد من تعرض الفئات الضعيفة خاصة الرضّع والأطفال لمخاطر البرد والأمراض المرتبطة به.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%b5%d8%ad%d8%a9-%d8%ba%d8%b2%d8%a9-%d8%aa%d8%b9%d9%84%d9%86-%d9%88%d9%81%d8%a7%d8%a9-%d8%b1%d8%b6%d9%8a%d8%b9-%d9%86%d8%aa%d9%8a%d8%ac%d8%a9-%d8%a7%d9%86%d8%ae%d9%81",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/327773",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/750846",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-13T11:42:35+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://www.alquds.co.uk/wp-content/uploads/2024/08/br-20082024.jpg",
+ "lang": "ar",
+ "link": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%b5%d8%ad%d8%a9-%d8%ba%d8%b2%d8%a9-%d8%aa%d8%b9%d9%84%d9%86-%d9%88%d9%81%d8%a7%d8%a9-%d8%b1%d8%b6%d9%8a%d8%b9-%d9%86%d8%aa%d9%8a%d8%ac%d8%a9-%d8%a7%d9%86%d8%ae%d9%81",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "القدس العربي",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.alquds.co.uk/breaking_news/%d8%b9%d8%a7%d8%ac%d9%84-%d8%b5%d8%ad%d8%a9-%d8%ba%d8%b2%d8%a9-%d8%aa%d8%b9%d9%84%d9%86-%d9%88%d9%81%d8%a7%d8%a9-%d8%b1%d8%b6%d9%8a%d8%b9-%d9%86%d8%aa%d9%8a%d8%ac%d8%a9-%d8%a7%d9%86%d8%ae%d9%81"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "effddb205a",
+ "score": 63.83,
+ "source": "القدس العربي",
+ "source_id": "alqudsuk",
+ "source_url": "https://www.alquds.co.uk/",
+ "title": "وزارة الصحة بغزة تسجل أول وفيات بسبب البرد"
+}
