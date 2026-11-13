@@ -9,12 +9,6 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-killed-israeli-fire-central-gaza-hospital-sources-say",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://mondoweiss.net/2026/11/israeli-strike-on-nasser-hospital-in-gaza-kills-six-disables-key-medical-departments",
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
@@ -37,6 +31,12 @@
    "name": "UN News",
    "url": "https://news.un.org/",
    "verified": true
+  },
+  {
+   "article": "https://www.dropsitenews.com/p/israel-bombs-gaza-hospital-killing",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-12T13:26:06+00:00",
@@ -55,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "14a55be68b",
- "score": 83.8,
+ "score": 83.78,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
