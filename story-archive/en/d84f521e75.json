@@ -1,0 +1,33 @@
+{
+ "brief": "Palestine News Network reported that political restrictions, rather than technical deficiencies, are preventing Palestinians from accessing international funding for medium- and large-scale environmental projects. The disclosure came at a COP31 session in Antalya, where Palestinian officials noted that the country holds full membership in relevant international environmental conventions yet remains excluded from financing mechanisms.\n\nPalestinian representatives did not specify which funding sources or mechanisms were closed to them. The complaint signals broader constraints on Palestinian participation in global environmental initiatives despite their standing in international environmental agreements.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://english.pnn.ps/news/48396",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-14T20:06:00+00:00",
+ "dek": "ANTALYA / PNN / Palestine is being denied access to international funding for medium- and large-scale environmental projects for political rather than technical reasons, despite its full membership in relevant international environmental conventions, the head…",
+ "dup_of": null,
+ "image": "https://media.pnn.ps/english/storage/images/media/2026/1794686900-827502047.jpeg",
+ "lang": "en",
+ "link": "https://english.pnn.ps/news/48396",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Palestine News Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://english.pnn.ps/news/48396"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d84f521e75",
+ "score": 49.59,
+ "source": "Palestine News Network",
+ "source_id": "pnn",
+ "source_url": "https://english.pnn.ps/",
+ "title": "Political barriers block Palestinians from major environmental funding, COP31 hears"
+}
