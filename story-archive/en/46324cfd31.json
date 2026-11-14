@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.com/news/2026/11/14/eu-calls-for-immediate-humanitarian-access-to-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
    "article": "https://english.pnn.ps/news/48393",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "46324cfd31",
- "score": 48.58,
+ "score": 48.39,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
