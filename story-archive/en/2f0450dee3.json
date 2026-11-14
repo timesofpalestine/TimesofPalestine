@@ -1,0 +1,45 @@
+{
+ "brief": "The United Nations said Israeli policies worsened the deadly impact of a winter storm in Gaza, arguing that Israel could have prevented deaths and destruction had it permitted sufficient humanitarian aid into the territory, Al Jazeera reported.\n\nThe storm caused significant casualties and damage across Gaza. The UN's assessment suggests that restricted aid access left the population more vulnerable to the storm's effects, compounding an already dire humanitarian situation in the besieged enclave.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/14/aje-onl-nf_un-israeli-policies-worsened-gaza-storms-impact-131126?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-partners-urge-israel-lift-restrictions-aid-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/11/1168799",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-14T04:12:15+00:00",
+ "dek": "The UN says Israel could have prevented death and destruction caused by the storm in Gaza had it allowed sufficient aid.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794629522.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/14/aje-onl-nf_un-israeli-policies-worsened-gaza-storms-impact-131126?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/14/aje-onl-nf_un-israeli-policies-worsened-gaza-storms-impact-131126?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2f0450dee3",
+ "score": 63.48,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "UN blames Israeli aid restrictions for winter storm deaths in Gaza"
+}
