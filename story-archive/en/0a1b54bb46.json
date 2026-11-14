@@ -1,0 +1,33 @@
+{
+ "brief": "For four years running, a Palestinian family in Gaza has been unable to harvest their olives due to ongoing conflict, according to We Are Not Numbers. The repeated disruption has prevented them from gathering the crop that typically sustains their livelihood during the season.\n\nOlive farming has long been central to Palestinian life and income across Gaza, and the family's losses reflect the broader impact of prolonged warfare on the territory's agricultural sector.",
+ "cat": "humans",
+ "corroborating_sources": [
+  {
+   "article": "https://wearenotnumbers.org/mourning-gazas-olive-harvest",
+   "name": "We Are Not Numbers",
+   "url": "https://wearenotnumbers.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-13T23:00:33+00:00",
+ "dek": "For four years in a row, war has prevented my family from harvesting our olives.",
+ "dup_of": null,
+ "image": "https://wearenotnumbers.org/wp-content/uploads/2026/11/Olives.webp",
+ "lang": "en",
+ "link": "https://wearenotnumbers.org/mourning-gazas-olive-harvest",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "We Are Not Numbers",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://wearenotnumbers.org/mourning-gazas-olive-harvest"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0a1b54bb46",
+ "score": 49.74,
+ "source": "We Are Not Numbers",
+ "source_id": "wann",
+ "source_url": "https://wearenotnumbers.org/",
+ "title": "Gaza family loses fourth consecutive olive harvest to war"
+}
