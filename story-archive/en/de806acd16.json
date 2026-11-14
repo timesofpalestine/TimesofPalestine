@@ -1,0 +1,39 @@
+{
+ "brief": "Prime Minister Benjamin Netanyahu said only a unity government can guarantee Israel's security, according to Al Jazeera English. The appeal comes as Gadi Eisenkot, tasked with forming a government, dismissed Netanyahu's statement as \"tricks\" ahead of ongoing coalition talks and a Knesset speaker vote.\n\nEisenkot's rejection signals continued friction within Israeli political negotiations over the composition of the next administration.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/14/netanyahu-says-only-a-unity-government-can-guarantee-israels-security?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/netanyahu-calls-israeli-unity-government-eisenkot-dismisses-tricks",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-14T23:01:30+00:00",
+ "dek": "Eisenkot, in charge of forming a government, dismisses the appeal as ‘tricks’ as talks and a Knesset speaker vote loom.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af59859b365e-1794480217.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/14/netanyahu-says-only-a-unity-government-can-guarantee-israels-security?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/14/netanyahu-says-only-a-unity-government-can-guarantee-israels-security?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "de806acd16",
+ "score": 49.66,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Netanyahu calls for unity government to ensure Israeli security"
+}
