@@ -6,7 +6,13 @@
    "article": "https://dawnmena.org/dawns-statement-on-israel-banning-human-rights-defender-shawan-jabarin-from-traveling",
    "name": "DAWN",
    "url": "https://dawnmena.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/11/13/israel-bans-travel-for-prominent-palestinian-rights-defender",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
   }
  ],
  "date": "2026-11-13T21:54:15+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "de7dd58455",
- "score": 71.94,
+ "score": 71.91,
  "source": "DAWN",
  "source_id": "dawn",
  "source_url": "https://dawnmena.org/",
