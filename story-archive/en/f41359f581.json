@@ -6,7 +6,13 @@
    "article": "https://shehabnews.net/ar/post?id=168958&slug=%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%86%D8%A7%D9%82-%D9%88%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D8%AE%D9%84%D8%A7%D9%84-%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A8%D9%8A%D8%AA-%D8%A3%D9%85%D8%B1-%D8%A8%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-palestinian-injured-firing-israeli-forces",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-13T17:38:41+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "f41359f581",
- "score": 55.37,
+ "score": 54.9,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
