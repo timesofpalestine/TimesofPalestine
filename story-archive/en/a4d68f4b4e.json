@@ -6,12 +6,18 @@
    "article": "https://english.pnn.ps/news/48392",
    "name": "Palestine News Network",
    "url": "https://english.pnn.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-partners-urge-israel-lift-restrictions-aid-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-12T15:36:00+00:00",
  "dek": "Gaza / PNN / International organizations have warned that Palestinian children in the Gaza Strip face growing risks of death and disease as winter approaches, amid severe shortages of food, medicine and adequate shelter, and continued Israeli restrictions on…",
- "dup_of": "b1e1656139",
+ "dup_of": null,
  "image": "https://media.pnn.ps/english/storage/images/news/2026/1794497952-828283327.jpeg",
  "lang": "en",
  "link": "https://english.pnn.ps/news/48392",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "a4d68f4b4e",
- "score": 34.95,
+ "score": 33.5,
  "source": "Palestine News Network",
  "source_id": "pnn",
  "source_url": "https://english.pnn.ps/",
