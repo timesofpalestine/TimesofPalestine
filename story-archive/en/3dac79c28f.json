@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli forces occupied a Palestinian-American's home in the occupied West Bank for 17 days, Al Jazeera English reported. The occupation of the residence marks another instance of military use of civilian properties in the territory.\n\nDetails of the circumstances surrounding the occupation and the identity of the homeowner were not immediately available. Such takeovers of Palestinian properties by Israeli forces have been a recurring practice in the West Bank.",
+ "cat": "diaspora",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/14/jerusalem-daily-israeli-forces-occupy-palestinian-americans-home?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-palestinian-injured-firing-israeli-forces",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-14T15:36:37+00:00",
+ "dek": "Israeli forces occupied a Palestinian-American’s home in the occupied West Bank for 17 days.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794670515.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/14/jerusalem-daily-israeli-forces-occupy-palestinian-americans-home?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/14/jerusalem-daily-israeli-forces-occupy-palestinian-americans-home?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3dac79c28f",
+ "score": 49.8,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces occupy Palestinian-American's West Bank home for 17 days"
+}
