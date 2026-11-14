@@ -1,0 +1,33 @@
+{
+ "brief": "The European Union called for immediate humanitarian access to Gaza after Israeli authorities blocked UN agencies from entering the territory, Al Jazeera English reported. The bloc said Israel must enable the work of the UN and its agencies operating in the enclave.\n\nThe blockade has prevented aid organizations from delivering assistance to civilians in Gaza, compounding an already severe humanitarian crisis in the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/14/eu-calls-for-immediate-humanitarian-access-to-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-14T15:57:22+00:00",
+ "dek": "The EU said that “Israel must enable the work of the UN and its agencies\" after the group was blocked access into Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6af8704f4a9a8-1794666575.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/14/eu-calls-for-immediate-humanitarian-access-to-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/14/eu-calls-for-immediate-humanitarian-access-to-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8dc0c2ad95",
+ "score": 47.66,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "EU demands Israel allow humanitarian access to Gaza"
+}
