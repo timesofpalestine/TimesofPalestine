@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli drone strike on Jabalia in northern Gaza killed one person and wounded several others, the Ma'an news agency reported. The attack targeted the area in the early hours, leaving casualties among residents.\n\nDetails of the strike's specific target and the full extent of injuries remained unclear. Jabalia, the most densely populated refugee camp in Gaza, has faced repeated Israeli military operations throughout the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37846",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-14T10:18:58+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/Q_DNnrIf01aqNfuMqptVQcMjR50-kKt_wxQo1hBWEYUor1Z6_eGhtKMI89FaDKQj7mJ1krqPtivTTRZDjChgHZ1AYnkrMrAE0TjxNrjtexuMt7ndJ1YRIjpaObZ2Fld56qISd-eddMqvPgw53opylwrv-QMjUZCt9jkPRHtldVTjGXIC55doYdpXHTfLyHbABkfnCa5XPcUcqoMmNxeLepc_02Gl7B2wyREg4bcjtPptaljgMTQywQ7mWCe422FWy89HYXvh0QA9BHNnLkr_szIkv98quHyp1qRj3cz8G6XEjH7GlrG5JzZYYr2SR7V6wSuTjbZCjX1KqE-ryQfNxQ.jpg",
+ "lang": "en",
+ "link": "https://t.me/maannews/37846",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37846"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ac5c3aa3b7",
+ "score": 62.15,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli drone strike kills one, wounds others in northern Gaza"
+}
