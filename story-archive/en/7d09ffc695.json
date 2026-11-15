@@ -6,32 +6,26 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-palestinian-man-wounds-two-others-gaza",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://zeteo.com/p/this-week-in-palestine-israel-kills-5a6",
-   "name": "Zeteo",
-   "url": "https://zeteo.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-15T00:05:07+00:00",
  "dek": "Israeli strike kills Palestinian man, wounds two others in Gaza A Palestinian man has been killed and two others wounded after Israeli forces carried out a drone strike on the al-Mawasi area of Khan Younis in southern Gaza, Al Jazeera reported, citing sources…",
  "dup_of": null,
- "image": "https://www.middleeasteye.net/sites/default/files/2026-11/000_D7BB6XL%20%281%29.jpg",
+ "image": "/media/times-of-palestine-cover-gaza-b.svg",
  "lang": "en",
  "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-palestinian-man-wounds-two-others-gaza",
  "max_age_hours": 72,
  "media": {
-  "credit": "Middle East Eye",
+  "credit": "Graphic: Times of Palestine",
   "licenseUrl": null,
-  "rightsBasis": "source-hosted",
-  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-palestinian-man-wounds-two-others-gaza"
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
  },
  "modified": null,
  "original": false,
  "pid": "7d09ffc695",
- "score": 61.41,
+ "score": 56.82,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
