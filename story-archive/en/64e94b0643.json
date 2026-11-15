@@ -6,7 +6,13 @@
    "article": "https://www.al-monitor.com/originals/2026/11/netanyahu-calls-israeli-unity-government-eisenkot-dismisses-tricks",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/eisenkot-calls-netanyahus-unity-government-call-yet-another-spin-move",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-14T21:30:25+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "64e94b0643",
- "score": 48.9,
+ "score": 40.4,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
