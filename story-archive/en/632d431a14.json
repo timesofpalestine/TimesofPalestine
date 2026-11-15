@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/11/senior-hamas-commander-killed-israeli-strike-gaza",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-commander-samir-abu-younis-killed-israeli-strike-khan-younis",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "632d431a14",
- "score": 57.94,
+ "score": 57.66,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
