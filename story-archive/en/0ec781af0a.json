@@ -1,0 +1,33 @@
+{
+ "brief": "A mass funeral took place in Gaza for 70 Palestinians whose bodies were recovered from rubble, according to Al Jazeera English. The funeral reflected ongoing casualties in the territory as the conflict continues.\n\nPalestinian authorities have documented hundreds of deaths attributed to military operations in recent months. The recovery of the 70 bodies from debris sites added to the toll of casualties recorded since the escalation of violence.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/15/jerusalem-daily-mass-funeral-in-gaza-as-netanyahu-clings-to-power?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-15T15:01:54+00:00",
+ "dek": "A mass funeral was held in Gaza for 70 Palestinians whose bodies were trapped under the rubble.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794754850.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/15/jerusalem-daily-mass-funeral-in-gaza-as-netanyahu-clings-to-power?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/15/jerusalem-daily-mass-funeral-in-gaza-as-netanyahu-clings-to-power?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0ec781af0a",
+ "score": 49.62,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza holds mass funeral for 70 Palestinians recovered from rubble"
+}
