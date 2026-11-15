@@ -19,12 +19,6 @@
    "name": "Democracy Now!",
    "url": "https://www.democracynow.org/",
    "verified": true
-  },
-  {
-   "article": "https://www.dropsitenews.com/p/israel-bombs-gaza-hospital-killing",
-   "name": "Drop Site News",
-   "url": "https://www.dropsitenews.com/",
-   "verified": true
   }
  ],
  "date": "2026-11-12T13:26:06+00:00",
@@ -43,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "14a55be68b",
- "score": 80.81,
+ "score": 80.79,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
