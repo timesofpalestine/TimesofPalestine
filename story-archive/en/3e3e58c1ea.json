@@ -1,0 +1,33 @@
+{
+ "brief": "A report details how the Israeli military deployed artificial intelligence to monitor Palestinians, classify them, and identify bombing targets in Gaza, according to Shehab Wire. The investigation examines the role of technology companies in supplying tools for this targeting system and the risks of converting civilian lives into data for strikes.\n\nThe report highlights how the occupation transformed Palestinian existence into a target bank powered by machine learning algorithms, raising concerns about the automation of warfare against civilian populations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.net/ar/post?id=169112&slug=%D9%83%D9%8A%D9%81-%D8%AD%D9%88%D9%91%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86-%D8%A5%D9%84%D9%89-%D8%A8%D9%86%D9%83-%D8%A3%D9%87%D8%AF%D8%A7%D9%81-%D8%A8%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%D8%9F",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-15T06:04:00+00:00",
+ "dek": "A report details how the Israeli military deployed artificial intelligence to monitor Palestinians, classify them, and identify bombing targets in Gaza, according to Shehab Wire.",
+ "dup_of": null,
+ "image": "https://fsn1.your-objectstorage.com/shehab/uploads/2026/11/file_6af94e3576e7d.webp",
+ "lang": "en",
+ "link": "https://shehabnews.net/ar/post?id=169112&slug=%D9%83%D9%8A%D9%81-%D8%AD%D9%88%D9%91%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86-%D8%A5%D9%84%D9%89-%D8%A8%D9%86%D9%83-%D8%A3%D9%87%D8%AF%D8%A7%D9%81-%D8%A8%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%D8%9F",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Shehab Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.net/ar/post?id=169112&slug=%D9%83%D9%8A%D9%81-%D8%AD%D9%88%D9%91%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86-%D8%A5%D9%84%D9%89-%D8%A8%D9%86%D9%83-%D8%A3%D9%87%D8%AF%D8%A7%D9%81-%D8%A8%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%D8%9F"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "3e3e58c1ea",
+ "score": 63.48,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "Israeli military uses AI to target Palestinians in Gaza operations"
+}
