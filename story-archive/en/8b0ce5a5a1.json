@@ -6,13 +6,7 @@
    "article": "https://shehabnews.net/ar/post?id=169234&slug=%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-%D9%8A%D8%B9%D8%AA%D8%AF%D9%88%D9%86-%D8%B9%D9%84%D9%89-%D8%B4%D8%A7%D8%A8-%D9%88%D9%8A%D8%B5%D9%8A%D8%A8%D9%88%D9%86%D9%87-%D8%A8%D9%83%D8%B3%D8%B1-%D9%81%D9%8A-%D9%8A%D8%AF%D9%87-%D8%BA%D8%B1%D8%A8-%D9%86%D8%A7%D8%A8%D9%84%D8%B3",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-israeli-forces-detain-palestinian-journalist-conduct-raids",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-15T17:44:19+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "8b0ce5a5a1",
- "score": 63.38,
+ "score": 63.1,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
