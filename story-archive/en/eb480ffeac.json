@@ -1,0 +1,33 @@
+{
+ "brief": "Al Jazeera English reported that Israel is restricting the entry of aid into Gaza as severe storms batter the Palestinian territory. The weather conditions have compounded an already dire humanitarian situation in the enclave amid an ongoing conflict.\n\nThe aid restrictions come as Palestinians face mounting challenges from both weather and limited access to essential supplies and services needed for survival and recovery.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/inside-story/2026/11/15/who-can-force-israel-to-implement-gaza-ceasefire-deal?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-15T20:37:43+00:00",
+ "dek": "Storms batter Palestinian territory as Israel restricts entry of aid.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794772684.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/inside-story/2026/11/15/who-can-force-israel-to-implement-gaza-ceasefire-deal?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/inside-story/2026/11/15/who-can-force-israel-to-implement-gaza-ceasefire-deal?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "eb480ffeac",
+ "score": 63.82,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel restricts Gaza aid as storms worsen humanitarian crisis"
+}
