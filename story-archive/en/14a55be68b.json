@@ -27,12 +27,6 @@
    "verified": true
   },
   {
-   "article": "https://news.un.org/feed/view/en/story/2026/11/1168796",
-   "name": "UN News",
-   "url": "https://news.un.org/",
-   "verified": true
-  },
-  {
    "article": "https://www.dropsitenews.com/p/israel-bombs-gaza-hospital-killing",
    "name": "Drop Site News",
    "url": "https://www.dropsitenews.com/",
@@ -55,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "14a55be68b",
- "score": 81.1,
+ "score": 81.08,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
