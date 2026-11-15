@@ -1,0 +1,33 @@
+{
+ "brief": "Rescue workers have recovered 70 bodies from the rubble in Gaza, according to Al Jazeera English, as search and recovery operations continue across the territory. Thousands of people remain missing and feared dead beneath collapsed buildings and debris.\n\nThe recovery effort has been hampered by the scale of destruction across Gaza, making it difficult to locate and identify the dead.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/15/70-bodies-recovered-from-gaza-rubble-thousands-still-missing?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-15T15:32:43+00:00",
+ "dek": "70 bodies recovered from Gaza rubble, thousands still missing…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794756704.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/15/70-bodies-recovered-from-gaza-rubble-thousands-still-missing?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/15/70-bodies-recovered-from-gaza-rubble-thousands-still-missing?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e1eeb6d8bc",
+ "score": 45.1,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Rescue workers recover 70 bodies from Gaza rubble"
+}
