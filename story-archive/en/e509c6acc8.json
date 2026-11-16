@@ -1,0 +1,45 @@
+{
+ "brief": "An Israeli settler struck eight Palestinians with a vehicle near the town of Tekoa, southeast of Bethlehem, Maan Wire reported. The incident resulted in injuries to all eight individuals, though the severity of their conditions was not immediately detailed.\n\nThe attack occurred in the vicinity of Tekoa, a settlement located in the southern West Bank near the Palestinian town of Bethlehem. The circumstances surrounding the incident and the settler's current status were not specified in initial reports.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/37895",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://shehabnews.net/ar/post?id=169372&slug=%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D9%85%D9%88%D8%A7%D8%B7%D9%86%D9%8A%D9%86-%D8%AF%D9%87%D8%B3%D9%8B%D8%A7-%D8%A8%D9%85%D8%B1%D9%83%D8%A8%D8%A9-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86-%D8%AC%D9%86%D9%88%D8%A8-%D8%B4%D8%B1%D9%82-%D8%A8%D9%8A%D8%AA-%D9%84%D8%AD%D9%85",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settler-injures-eight-palestinians-ramming-incident-al-jazeera",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-16T17:31:21+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/SNBiZyULW124QMn2DdllxyNmaMaYmEiabt7cR2CPqsvDhA_aSQw3jyPRV_5FT-fNZG41po9aB5-kKbH83FHfXWkBYc39F6VcBG0oqT1Z05DaMuDZeU80kAbXDrv0xQzT10IKQbMSfKFK2xA7SRtqFz4DwPTIg07Qqi8Or9GnVE76JmrDO43CqBzW0wa3aHww71dnzQu9Eg3Fp6oDp6Ss032h4fNQAprmysgLBL9--QhPDmegh8wYPzQ0SsCf_JaOHKWqSMZWDHmwDgP7py7ngfCBk-91jSPehy_wkCwdUy1SBrDHebtAc8nuugDzHqb_LjhkROjXusRjkep7yQ6R0w",
+ "lang": "en",
+ "link": "https://t.me/maannews/37895",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/37895"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e509c6acc8",
+ "score": 62.62,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli settler runs down 8 Palestinians near Tekoa"
+}
