@@ -13,6 +13,12 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/16/is-israels-opposition-less-right-wing-than-netanyahu?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
   }
  ],
  "date": "2026-11-16T10:11:40+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "42f35e66f3",
- "score": 41.74,
+ "score": 41.35,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
