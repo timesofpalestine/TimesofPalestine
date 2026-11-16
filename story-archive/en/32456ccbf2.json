@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces have committed 6,233 ceasefire violations and killed 1,649 Palestinians since the start of the Gaza truce, the Ma'an news agency reported. The violations include attacks on civilian areas and military operations across the enclave.\n\nThe toll represents a significant loss of life during what was intended as a period of cessation in hostilities between Israel and Palestinian armed groups in Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172333.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-16T09:38:03+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172333.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "32456ccbf2",
+ "score": 62.89,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel breaches Gaza ceasefire 6,233 times, kills 1,649 Palestinians"
+}

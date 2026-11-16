@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli military uploaded 3.5 million photographs to Amazon's cloud platform to leverage the company's facial recognition technology for tracking Palestinians, The Guardian reported. The upload occurred as the Israeli armed forces expanded its reliance on Amazon's cloud infrastructure to support its military operations during the bombardment of Gaza.\n\nThe disclosure raises questions about the use of US technology companies' services by foreign militaries for mass surveillance and identification purposes in conflict zones.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-16T11:00:56+00:00",
+ "dek": "Upload came as the Israeli military was increasing its reliance on Amazon’s cloud platform to meet the technological demands of its bombardment of Gaza The Israeli military uploaded 3.5m photos to Amazon’s cloud platform in order to use the US company’s…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/bc01b369b562e3e2bf256cd5482bab9f368d5175/1_0_2999_2400/master/2999.jpg?width=140&quality=85&auto=format&fit=max&s=d4fd5266aa44369a3472db45234f5224",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b04ba141e8",
+ "score": 63.85,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli military uses Amazon facial recognition to track Palestinians"
+}
