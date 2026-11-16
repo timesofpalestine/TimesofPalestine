@@ -7,6 +7,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": false
+  },
+  {
+   "article": "https://shehabnews.net/ar/post?id=169301&slug=%D8%A2%D9%8A%D8%B2%D9%86%D9%83%D9%88%D8%AA-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D9%84%D9%86-%D8%AA%D9%83%D9%88%D9%86-%D9%86%D8%B2%D9%8A%D9%87%D8%A9-%D8%A8%D9%88%D8%AC%D9%88%D8%AF-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88",
+   "name": "وكالة شهاب (حصري)",
+   "url": "https://shehabnews.com/",
+   "verified": false
   }
  ],
  "date": "2026-11-16T04:06:01+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "693fc18823",
- "score": 46.84,
+ "score": 46.56,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
