@@ -1,0 +1,39 @@
+{
+ "brief": "بحسب وكالة معاً، ارتكبت إسرائيل 6,233 خرقاً لوقف إطلاق النار في غزة منذ دخوله حيز التنفيذ، أسفرت عن استشهاد 1,649 فلسطينياً. وتشمل الانتهاكات المسجلة قصفاً متكرراً للمناطق المأهولة بالسكان وقنص الفلسطينيين بالقرب من الحدود.\n\nوتُرجع جهات حقوقية فلسطينية الانتهاكات إلى عدم وجود آلية رقابة فاعلة على تطبيق شروط الهدنة، فيما طالبت بتدخل دولي لإنهاء الخروقات والضغط على إسرائيل لالتزام التزاماتها.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172333.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/190313/%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A-6233-%D8%AE%D8%B1%D9%82%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A7-%D9%88%D9%85%D9%86%D8%B9-%D8%AF%D8%AE%D9%88%D9%84-67-%D9%85%D9%86-%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A7%D8%AA-%D8%BA%D8%B2%D8%A9",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-16T09:38:03+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2172333.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "32456ccbf2",
+ "score": 62.72,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "إسرائيل تخرق وقف إطلاق النار بغزة 6 آلاف مرة وتقتل 1,649 فلسطينياً"
+}
