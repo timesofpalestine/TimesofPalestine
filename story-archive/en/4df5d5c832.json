@@ -13,6 +13,24 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/16/israeli-forces-demolish-the-homes-of-two-palestinian-prisoners?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-16-palestinians-including-two-women-and-a-child-and-continues-to-destroy-remaining-homes-in-gaza",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53858",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
   }
  ],
  "date": "2026-11-16T09:49:41+00:00",
@@ -31,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "4df5d5c832",
- "score": 58.98,
+ "score": 58.72,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
