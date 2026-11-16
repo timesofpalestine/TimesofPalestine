@@ -1,0 +1,39 @@
+{
+ "brief": "كشفت صحيفة الغارديان أن الجيش الإسرائيلي حمّل 3.5 ملايين صورة لفلسطينيين على خوادم أمازون، لاستخدام تقنيات الذكاء الاصطناعي في التعرّف على الوجوه.\n\nيستهدف هذا الاستخدام مراقبة السكان في غزة والضفة الغربية، في إطار عمليات أمنية وعسكرية موسعة تعتمد على التحليل البيوميتري للصور.\n\nتطرح الممارسة أسئلة حول دور شركات التكنولوجيا الكبرى في تقديم خدمات للأجهزة العسكرية والأمنية، وانعكاساتها على حقوق الخصوصية والحريات الشخصية للسكان المدنيين.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.net/news/2026/11/16/%d8%ac%d9%86%d9%88%d8%af-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d9%88%d9%86-%d8%af%d8%a7%d8%ae%d9%84-%d9%85%d9%83%d8%a7%d8%aa%d8%a8-%d8%a3%d9%85%d8%a7%d8%b2%d9%88%d9%86?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/190349/%D9%88%D8%AB%D8%A7%D8%A6%D9%82-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%B3%D8%AA%D8%B9%D9%8A%D9%86-%D8%A8%D8%B3%D8%AD%D8%A7%D8%A8%D8%A9-%D8%A3%D9%85%D8%A7%D8%B2%D9%88%D9%86-%D9%84%D8%AA%D8%AD%D9%84%D9%8A%D9%84-35-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%B5%D9%88%D8%B1%D8%A9-%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-16T14:38:12+00:00",
+ "dek": "كشفت \"الغارديان\" رفع الجيش الإسرائيلي 3.5 ملايين صورة لفلسطينيين إلى خوادم أمازون، لاستخدام تقنيتها للذكاء الاصطناعي في التعرّف على الوجوه ومراقبة سكان غزة والضفة.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.net/wp-content/uploads/2026/11/reuters_6afb2c32-1794845746.jpg?resize=1920%2C1440",
+ "lang": "ar",
+ "link": "https://www.aljazeera.net/news/2026/11/16/%d8%ac%d9%86%d9%88%d8%af-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d9%88%d9%86-%d8%af%d8%a7%d8%ae%d9%84-%d9%85%d9%83%d8%a7%d8%aa%d8%a8-%d8%a3%d9%85%d8%a7%d8%b2%d9%88%d9%86?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "الجزيرة نت",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.net/news/2026/11/16/%d8%ac%d9%86%d9%88%d8%af-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d9%88%d9%86-%d8%af%d8%a7%d8%ae%d9%84-%d9%85%d9%83%d8%a7%d8%aa%d8%a8-%d8%a3%d9%85%d8%a7%d8%b2%d9%88%d9%86?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8f40db1333",
+ "score": 46.81,
+ "source": "الجزيرة نت",
+ "source_id": "aja",
+ "source_url": "https://www.aljazeera.net/",
+ "title": "إسرائيل تستخدم خوادم أمازون لمراقبة الفلسطينيين"
+}
