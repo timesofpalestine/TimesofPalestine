@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli forces demolished the homes of two Palestinian prisoners, Al Jazeera English reported. The demolitions occurred as the news outlet's correspondent Nida Ibrahim was reporting on the operations in the field.\n\nThe Israeli military has long used home demolitions as a punitive measure against Palestinians, a practice the United Nations and international human rights organizations have condemned as collective punishment under international law.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/16/israeli-forces-demolish-the-homes-of-two-palestinian-prisoners?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israel-kills-16-palestinians-including-two-women-and-a-child-and-continues-to-destroy-remaining-homes-in-gaza",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53858",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-16T16:56:54+00:00",
+ "dek": "Israeli forces demolished the homes of two Palestinian prisoners as Al Jazeera’s Nida Ibrahim was reporting…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794848199.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/16/israeli-forces-demolish-the-homes-of-two-palestinian-prisoners?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/16/israeli-forces-demolish-the-homes-of-two-palestinian-prisoners?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c26d71c0fe",
+ "score": 49.38,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli forces demolish homes of two Palestinian prisoners"
+}
