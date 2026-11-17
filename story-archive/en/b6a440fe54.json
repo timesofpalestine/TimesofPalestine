@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli settlers opened fire in the village of al Duyuk near Jericho, al Jazeera English reported, killing one woman and injuring several others in the attack on the occupied West Bank.\n\nThe shooting occurred during what witnesses described as a settler assault on the Palestinian community. Circumstances surrounding the incident and the number of those wounded remain unclear from available reports.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/17/gunfire-erupts-in-occupied-west-bank-settler-attack?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/casualties-israeli-settler-attack-rises",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-17T04:00:08+00:00",
+ "dek": "Israeli settlers opened fire in the village of al Duyuk near Jericho killing one woman and injuring several others.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794888000.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/17/gunfire-erupts-in-occupied-west-bank-settler-attack?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/17/gunfire-erupts-in-occupied-west-bank-settler-attack?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b6a440fe54",
+ "score": 62.83,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers kill woman in West Bank village attack"
+}
