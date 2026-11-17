@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces killed at least five Palestinians in Gaza on Tuesday, including a six-year-old boy, according to medical sources cited by Middle East Eye. The deaths occurred as the conflict continues to claim civilian lives across the territory.\n\nThe casualties included the young child among those reported killed by Israeli operations during the day, though further details about the circumstances of the deaths were not immediately available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-kills-least-five-gaza-tuesday-including-six-year-old",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-17T13:59:14+00:00",
+ "dek": "Israeli kills at least five in Gaza on Tuesday, including six-year-old At least four Palestinians, including a six-year-old boy, have been killed by Israeli forces so far today, medical sources cited in Reuters and Al Jazeera report.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-kills-least-five-gaza-tuesday-including-six-year-old",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "41263d157a",
+ "score": 61.34,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli forces kill at least five Palestinians in Gaza, including child"
+}
