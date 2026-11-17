@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces demolished an inhabited house in Kafr al-Dik, a village west of Salfit in the northern West Bank, the Ma'an news agency reported. The demolition displaced the residents from their home.\n\nThe community of Kafr al-Dik has faced repeated demolitions of Palestinian-owned structures in recent years as Israeli authorities cite lack of building permits, a licensing process Palestinians say is nearly impossible to obtain in Area C, the zone under full Israeli control.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172405.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-17T09:53:39+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172405.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "247582bebc",
+ "score": 49.99,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces demolish inhabited home in Kafr al-Dik west of Salfit"
+}
