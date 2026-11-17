@@ -25,18 +25,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/news/uk-imposes-sanctions-eight-israeli-firms-and-group-blocking-gaza-aid",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
   }
  ],
  "date": "2026-11-17T10:51:11+00:00",
  "dek": "",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-westbank-b.svg",
+ "image": "/media/times-of-palestine-cover-westbank.svg",
  "lang": "en",
  "link": "https://www.maannews.net/news/2172409.html",
  "max_age_hours": 72,
@@ -49,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "4db5316d28",
- "score": 45.17,
+ "score": 44.87,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
