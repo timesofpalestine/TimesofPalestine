@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://english.pnn.ps/news/48397",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/casualties-israeli-settler-attack-rises",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "b6a440fe54",
- "score": 60.48,
+ "score": 60.19,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

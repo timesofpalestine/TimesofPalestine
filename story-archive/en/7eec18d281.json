@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces demolished an inhabited house and arrested a resident in the village of al-Walaja, near Bethlehem, the Ma'an news agency reported. The operation targeted a civilian home in the Palestinian community.\n\nThe demolition and arrest marked the latest in a series of such operations in the area. Al-Walaja, situated between Bethlehem and Jerusalem, has faced repeated Israeli military incursions and home demolitions.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172402.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-17T08:42:21+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172402.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7eec18d281",
+ "score": 49.46,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces demolish inhabited home, arrest resident in Bethlehem village"
+}
