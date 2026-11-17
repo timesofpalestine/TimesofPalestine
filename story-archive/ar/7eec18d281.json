@@ -6,7 +6,19 @@
    "article": "https://www.maannews.net/news/2172402.html",
    "name": "وكالة معا (حصري)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/190385/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%87%D8%AF%D9%85-%D9%85%D9%86%D8%B2%D9%84%D9%8A%D9%86-%D9%88%D8%A8%D8%A6%D8%B1-%D9%85%D9%8A%D8%A7%D9%87-%D9%81%D9%8A-%D8%A8%D9%8A%D8%AA-%D9%84%D8%AD%D9%85-%D9%88%D8%B3%D9%84%D9%81%D9%8A%D8%AA",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/%d8%a7%d9%84%d8%a7%d8%ad%d8%aa%d9%84%d8%a7%d9%84-%d9%8a%d8%b4%d8%b1%d8%b9-%d8%a8%d9%87%d8%af%d9%85-%d9%85%d9%86%d8%b2%d9%84-%d9%88%d8%a8%d8%a6%d8%b1-%d9%85%d9%8a%d8%a7%d9%87-%d9%81%d9%8a-%d9%83%d9%81",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-11-17T08:42:21+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "7eec18d281",
- "score": 48.39,
+ "score": 48.18,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
