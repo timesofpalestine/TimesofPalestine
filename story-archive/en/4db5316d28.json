@@ -13,18 +13,6 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-vows-retaliation-after-uk-sanctions-firms-west-bank-settlements",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/11/israel-vows-retaliation-after-uk-sanctions-firms-west-bank-settlements",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
   }
  ],
  "date": "2026-11-17T10:51:11+00:00",
@@ -43,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "4db5316d28",
- "score": 42.74,
+ "score": 42.5,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
