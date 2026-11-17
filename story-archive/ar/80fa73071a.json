@@ -1,0 +1,33 @@
+{
+ "brief": "أطفال غزة يعانون ظروفاً صعبة مع اقتراب فصل الشتاء، في ظل الأزمة الإنسانية المتفاقمة في القطاع. يفتقر آلاف الأطفال إلى الملابس الدافئة والمأوى الآمن والغذاء الكافي، ما يعرّضهم لأمراض ومضاعفات صحية خطيرة.\n\nتزداد معاناة الأطفال النازحين بشكل خاص، إذ يقضون الليالي الباردة في خيم مؤقتة أو ملاجئ مكتظة، بحسب المركز الفلسطيني للإعلام. يرفع هذا الوضع من احتمالات انتشار الأمراض المعدية والإسهال والالتهاب الرئوي وسط الفئة الأكثر ضعفاً من السكان.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/17/1124012",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-17T08:39:26+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/17/1124012",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "80fa73071a",
+ "score": 49.9,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "أطفال غزة يواجهون فصل الشتاء في ظروف حرجة"
+}
