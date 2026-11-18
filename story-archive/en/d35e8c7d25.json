@@ -1,0 +1,33 @@
+{
+ "brief": "Concerns are mounting that the United States may impose sanctions against International Court of Justice judges, including 2023 Nobel Peace Prize laureate Navi Pillay, the Guardian reported. The threatened action comes ahead of an expected ICJ ruling on genocide allegations against Myanmar, with observers warning that a decision against Myanmar could establish precedent for future judgments on Israel's conduct in Gaza.\n\nThe timing of potential US sanctions reflects broader tensions over the court's jurisdiction and independence as it prepares to rule on cases with significant geopolitical implications. Legal experts and human rights advocates have flagged the sanctions threat as an effort to influence judicial proceedings at the world's principal organ for settling disputes between nations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-18T09:58:28+00:00",
+ "dek": "A ruling against Myanmar could set precedent for court’s judgment on Israel’s actions in Gaza Fears are growing that the US could impose sanctions on judges at the international court of justice, including this year’s Nobel peace prize winner, Navi Pillay ,…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/a03f114d715bb74ab2b82e63a222dbf68b76637b/194_0_2161_1729/master/2161.jpg?width=140&quality=85&auto=format&fit=max&s=47f1524f7013cb8ff259c8847b637917",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d35e8c7d25",
+ "score": 49.92,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "US threatens sanctions on ICJ judges before Myanmar ruling"
+}
