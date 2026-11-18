@@ -1,0 +1,33 @@
+{
+ "brief": "A new assessment has found a sharp rise in cases where children are deliberately denied humanitarian assistance in conflict zones, The Guardian reported. The analysis identified a pattern of \"weaponisation\" of aid becoming normalised in active conflicts, with the majority of documented incidents occurring in Palestine.\n\nThe deliberate restrictions on aid delivery have left children facing acute shortages of food, water, and medical care in active fighting zones, transforming humanitarian access into a contested battlefield tactic rather than a civilian protection.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/global-development/2026/nov/18/aid-denial-humanitarian-children-save-the-children-un",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-18T05:00:32+00:00",
+ "dek": "New assessment shows large increase in cases where access to humanitarian help is deliberately restricted in conflict zones, with most incidents in Palestine The “weaponisation” of aid is becoming normalised, with new analysis revealing that deliberate…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/87eeb8a056efa2d64956581fc17c9ed471819f10/396_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=7ab71e6c8be44245107e7b6ddf1cbcd4",
+ "lang": "en",
+ "link": "https://www.theguardian.com/global-development/2026/nov/18/aid-denial-humanitarian-children-save-the-children-un",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/global-development/2026/nov/18/aid-denial-humanitarian-children-save-the-children-un"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "84ee705260",
+ "score": 49.99,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Aid denials to children in war zones soar, analysis shows"
+}

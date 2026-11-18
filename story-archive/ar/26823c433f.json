@@ -6,7 +6,13 @@
    "article": "https://www.pbc.ps/q-17",
    "name": "تلفزيون فلسطين",
    "url": "https://www.pbc.ps/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://qudsn.co/post?id=218916&slug=%D8%A8%D8%AD%D8%AC%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D8%AF%D9%88%D9%86-%D8%AA%D8%B1%D8%AE%D9%8A%D8%B5-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%AC%D8%A8%D8%B1-%D8%B9%D8%A7%D8%A6%D9%84%D8%A9-%D9%85%D9%82%D8%AF%D8%B3%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D9%87%D8%AF%D9%85-%D9%85%D9%86%D8%B2%D9%84%D9%87%D8%A7",
+   "name": "شبكة قدس الإخبارية",
+   "url": "https://qudsn.co/",
+   "verified": true
   }
  ],
  "date": "2026-11-17T18:29:38+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "26823c433f",
- "score": 42.96,
+ "score": 42.68,
  "source": "تلفزيون فلسطين",
  "source_id": "pbc",
  "source_url": "https://www.pbc.ps/",
