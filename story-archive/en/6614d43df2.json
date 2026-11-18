@@ -21,15 +21,21 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-kills-three-palestinians-including-child-attacks-across-gaza",
+   "article": "https://www.al-monitor.com/originals/2026/11/israel-launches-ground-operation-central-gaza-dozens-flee",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-assault-targeting-residential-areas-gaza-despite",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/11/israel-army-launches-ground-operation-hamas-controlled-area-gaza",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
+   "article": "https://www.dropsitenews.com/p/israel-gaza-operation-jeffries-speaker-nsa-comms-system",
+   "name": "Drop Site News",
+   "url": "https://www.dropsitenews.com/",
    "verified": true
   }
  ],
@@ -49,7 +55,7 @@
  "modified": null,
  "original": false,
  "pid": "6614d43df2",
- "score": 45.55,
+ "score": 45.35,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",

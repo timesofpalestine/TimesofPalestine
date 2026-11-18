@@ -1,0 +1,39 @@
+{
+ "brief": "Billions of dollars pledged for Gaza reconstruction since a 2025 ceasefire have not been disbursed, according to Al Jazeera English. The funds, including $18 billion committed to Trump's Board of Peace for Gaza, have stalled while rebuilding efforts have not commenced. Israeli military operations have continued despite the ceasefire agreement.\n\nThe delay in aid delivery has left Gaza's infrastructure largely unrepaired as the territory faces ongoing destruction. Donors committed substantial resources to post-conflict reconstruction, but administrative and logistical obstacles have prevented implementation of rebuilding programs across the enclave.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/18/what-has-happened-to-the-18bn-pledged-to-trumps-board-of-peace-for-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/trumps-board-peace-says-gaza-ceasefire-has-delivered-nothing-visible",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-18T17:45:09+00:00",
+ "dek": "Billions have been pledged for Gaza since a 2025 'ceasefire', but rebuilding hasn’t begun and Israeli attacks continue.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/Interactive_Baord-of-Peace_Members_Nov17_2026_Cover-1795003885.png?resize=1200%2C630",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/18/what-has-happened-to-the-18bn-pledged-to-trumps-board-of-peace-for-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/18/what-has-happened-to-the-18bn-pledged-to-trumps-board-of-peace-for-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "592014310f",
+ "score": 63.88,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Pledged Gaza reconstruction funds remain unspent as conflict continues"
+}
