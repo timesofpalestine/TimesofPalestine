@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces announced a military operation in central Gaza and closed sections of the Salah al-Din axis, the Ma'an news agency reported. The corridor, a major north-south route, serves as a critical supply line for displaced Palestinians and humanitarian aid movement across the territory.\n\nDetails of the operation's scope and duration were not immediately specified. The closure compounds existing restrictions on movement in Gaza amid ongoing conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172463.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-18T11:13:40+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172463.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6614d43df2",
+ "score": 49.77,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces launch military operation in central Gaza, close Salah al-Din corridor"
+}
