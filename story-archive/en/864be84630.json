@@ -6,13 +6,19 @@
    "article": "https://www.theguardian.com/world/2026/nov/17/ed-miliband-israel-west-bank-settlements-sanctions",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israel-vows-retaliation-after-uk-sanctions-firms-west-bank-settlements",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
- "date": "2026-11-17T10:47:18+00:00",
+ "date": "2026-11-17T12:18:08+00:00",
  "dek": "Move is designed to hinder building of more illegal settlements, which Foreign Office says Israel has ‘refused to clamp down on’ Ed Miliband has announced the first set of sanctions against Israeli companies planning to build illegal settlements in the West…",
  "dup_of": null,
- "image": "https://i.guim.co.uk/img/media/0c6c3abea16d477d745d8d4ce121385b428ce6a3/1393_0_7030_5624/master/7030.jpg?width=140&quality=85&auto=format&fit=max&s=a182de5f7254a578cc0222d205e6ba7c",
+ "image": "https://i.guim.co.uk/img/media/c9523ec5228a42aa647f50bbf3dbb4fc03f57ce3/28_0_3300_2640/master/3300.jpg?width=140&quality=85&auto=format&fit=max&s=021f9a4119628590d1131a080748867b",
  "lang": "en",
  "link": "https://www.theguardian.com/world/2026/nov/17/ed-miliband-israel-west-bank-settlements-sanctions",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "864be84630",
- "score": 79.84,
+ "score": 64.04,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
