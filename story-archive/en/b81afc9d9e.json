@@ -1,0 +1,57 @@
+{
+ "brief": "An Israeli settler killed a Palestinian grandmother in the occupied West Bank, Al Jazeera English reported. The incident marks another deadly confrontation in the territory amid ongoing tensions between Israeli settlers and Palestinian residents.\n\nDetails of the circumstances surrounding the killing were not immediately available. The death adds to a rising toll of Palestinian casualties in the West Bank in recent months.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/18/israeli-settler-kills-palestinian-grandmother-in-occupied-west-bank?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/17/palestinian-woman-shot-dead-israeli-settlers-near-jericho-witnesses-say",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israeli-settlers-establish-outpost-palestinian-controlled-area-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/11/five-minutes-from-home-and-an-hour-at-a-checkpoint-life-in-the-occupied-west-bank",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48397",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-18T19:27:42+00:00",
+ "dek": "A Palestinian grandmother was killed by an Israeli settler in the occupied West Bank.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795030045.jpg?resize=1542%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/israeli-settler-kills-palestinian-grandmother-in-occupied-west-bank?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/18/israeli-settler-kills-palestinian-grandmother-in-occupied-west-bank?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b81afc9d9e",
+ "score": 63.85,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settler kills Palestinian grandmother in West Bank"
+}
