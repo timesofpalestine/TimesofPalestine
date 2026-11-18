@@ -1,0 +1,33 @@
+{
+ "brief": "لم يتضمن المصدر المرفق تفاصيل محددة عن الموضوع المطروح. المادة التي وردت تحمل عنواناً فحسب دون معلومات إضافية حول الأوضاع التي يواجهها الشباب الفلسطيني في لبنان أو السياق المباشر لهذا الملف.\n\nللحصول على تحليل شامل أو خبر موثوق حول هذا الموضوع، يتطلب الأمر مصادر إضافية تتضمن بيانات وشهادات وأرقاماً فعلية عن الأوضاع الاقتصادية والاجتماعية والقانونية للشباب الفلسطيني في الأراضي اللبنانية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/18/1124078",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-18T19:56:46+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/18/1124078",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "68059a160d",
+ "score": 49.97,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "الشباب الفلسطيني في لبنان يواجهون تحديات متعددة"
+}
