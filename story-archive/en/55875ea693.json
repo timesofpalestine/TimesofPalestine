@@ -1,0 +1,39 @@
+{
+ "brief": "Australia imposed sanctions on three Israeli individuals and four organizations for illegal settlement expansion, Al Jazeera English reported. The measures target those involved in activities deemed to violate international law regarding occupied Palestinian territory.\n\nThe sanctions represent Australia's response to settlement construction in the West Bank, which the government considers unlawful under international law. Details on the specific penalties and organizations targeted were not immediately disclosed.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/18/australia-issues-sanctions-targeting-israeli-settlers?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/australia-sanctions-israeli-settlers-organisations-over-west-bank-expansion",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-18T04:12:03+00:00",
+ "dek": "Australia has imposed sanctions on three Israeli individuals and four organisations for illegal settlement expansion.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794975100.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/18/australia-issues-sanctions-targeting-israeli-settlers?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/18/australia-issues-sanctions-targeting-israeli-settlers?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "55875ea693",
+ "score": 49.71,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Australia sanctions three Israeli settlers and four organizations"
+}
