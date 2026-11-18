@@ -1,0 +1,39 @@
+{
+ "brief": "A 72-year-old Palestinian woman, Fadha Wadha, was shot dead in an overnight attack by Israeli settlers outside her home in al-Duyuk al-Tahta village near Jericho, according to residents and The Guardian. A bullet struck her in the head during the attack.\n\nThe incident occurred in an area where settlers have a history of confrontations with Palestinians. The killing adds to a pattern of violence in the West Bank village.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/17/palestinian-woman-shot-dead-israeli-settlers-near-jericho-witnesses-say",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48397",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-17T20:21:48+00:00",
+ "dek": "Bullet hit 72-year-old Fadha Wadha in head outside her home in al-Duyuk al-Tahta, in the West Bank, say residents A 72-year-old Palestinian woman has been shot dead in an overnight attack by Israeli settlers in a village near Jericho where settlers have…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/b7d5959fd9dbbbea50ccb8f11198cd72513b020c/971_535_2513_2011/master/2513.jpg?width=140&quality=85&auto=format&fit=max&s=920a9cba3e838b02498259fbaa396d37",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/nov/17/palestinian-woman-shot-dead-israeli-settlers-near-jericho-witnesses-say",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/nov/17/palestinian-woman-shot-dead-israeli-settlers-near-jericho-witnesses-say"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "56d7193e65",
+ "score": 61.52,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli settlers shoot Palestinian woman dead near Jericho"
+}
