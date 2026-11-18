@@ -1,0 +1,33 @@
+{
+ "brief": "كشف نادي الأسير شهادات صادمة عن ممارسات تجويع وتعذيب يتعرض لها الأسرى داخل سجون الاحتلال، بحسب وكالة معا. ولم يُحدّد النادي أسماء الأسرى أو عددهم أو السجون المعنية.\n\nوتسلّط الشهادات الضوء على معاملة قاسية يعانيها الأسرى الفلسطينيون في المرافق الإسرائيلية، من خلال سياسات الحرمان من الغذاء والممارسات المؤلمة.\n\nوتعكس هذه الكشوفات تدهوراً مستمراً في الأوضاع الصحية والإنسانية للأسرى، خاصة في أعقاب التصعيد العسكري الأخير.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172462.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-18T10:53:38+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-prisoners-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2172462.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ed4c1ca383",
+ "score": 48.65,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "نادي الأسير يوثّق شهادات عن تجويع وتعذيب في سجون الاحتلال"
+}
