@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli settlers have established an outpost in Area A of the West Bank, territory under Palestinian control, Middle East Eye reported. The Israeli military acknowledged that the settlers' presence in the area is illegal but has not moved to remove the outpost.\n\nArea A comprises Palestinian population centers and is administered by the Palestinian Authority under the Oslo Accords framework. Israeli military incursions and settler activity there violate the terms of the accord.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/news/israeli-settlers-establish-outpost-palestinian-controlled-area-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-18T14:46:15+00:00",
+ "dek": "Israeli settlers establish outpost in Palestinian-controlled Area A of West Bank Submitted by Nadav Rapaport on Wed, 11/18/2026 - 14:18 The Israeli military has yet to remove the outpost, despite acknowledging that its presence in Area A is illegal Israeli…",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/styles/crop_16_9/public/images-story/000_D3Y23HF%20%281%29.jpg.jpg?itok=JAinGL40",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/news/israeli-settlers-establish-outpost-palestinian-controlled-area-west-bank",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/news/israeli-settlers-establish-outpost-palestinian-controlled-area-west-bank"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "70b31005c6",
+ "score": 48.01,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli settlers establish illegal outpost in Palestinian-controlled West Bank area"
+}
