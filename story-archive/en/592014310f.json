@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/news/2026/11/18/what-has-happened-to-the-18bn-pledged-to-trumps-board-of-peace-for-gaza?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/trumps-board-peace-says-gaza-ceasefire-has-delivered-nothing-visible",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-18T17:45:09+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "592014310f",
- "score": 63.67,
+ "score": 63.36,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
