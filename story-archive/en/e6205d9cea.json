@@ -7,6 +7,12 @@
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
    "verified": false
+  },
+  {
+   "article": "https://news.un.org/feed/view/en/story/2026/11/1168821",
+   "name": "UN News",
+   "url": "https://news.un.org/",
+   "verified": false
   }
  ],
  "date": "2026-11-16T14:46:47+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "e6205d9cea",
- "score": 83.45,
+ "score": 83.42,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
