@@ -1,0 +1,33 @@
+{
+ "brief": "Prisoners' Club released testimony describing starvation and torture in Israeli detention facilities, the Ma'an news agency reported. The accounts detail systematic abuse of detainees held in occupation prisons.\n\nThe organization documented conditions faced by Palestinians in Israeli custody, adding to a record of allegations concerning treatment in the carceral system. Prisoners' Club has previously gathered accounts of abuse from detained Palestinians.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172462.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-18T10:53:38+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-prisoners.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172462.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ed4c1ca383",
+ "score": 49.91,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Prisoner Club documents starvation and torture in Israeli jails"
+}
