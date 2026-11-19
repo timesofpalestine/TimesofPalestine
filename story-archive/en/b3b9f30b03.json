@@ -1,0 +1,33 @@
+{
+ "brief": "Save the Children documented that one-third of all violations against children worldwide took place in occupied Palestinian territory, the aid group reported. The organization characterized the threats facing Gaza's children as \"unmatched dangers,\" citing the scale of documented abuses in the territory.\n\nThe finding comes as Gaza faces ongoing military operations and humanitarian constraints affecting millions of residents, including roughly half the territory's population who are children. Save the Children's data reflects conditions across the occupied Palestinian territory during the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/19/save-the-children-gazas-children-face-unmatched-dangers?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-19T19:23:45+00:00",
+ "dek": "Aid group says one third of violations against children worldwide were in occupied Palestinian territory.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6aff19443a-1795103044.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/19/save-the-children-gazas-children-face-unmatched-dangers?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/19/save-the-children-gazas-children-face-unmatched-dangers?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "b3b9f30b03",
+ "score": 49.55,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Save the Children reports third of global child violations occur in Gaza"
+}
