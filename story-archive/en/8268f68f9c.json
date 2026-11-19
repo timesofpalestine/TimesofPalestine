@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli tanks crossed the \"yellow line\" boundary into Hamas-controlled central Gaza on Wednesday, The Guardian reported, marking the military's first ground operation across the demarcation line since the ceasefire deal took effect. The incursion came as former military chief Gadi Eisenkot sought to form a government without Prime Minister Benjamin Netanyahu.\n\nThe yellow line had served as a de facto boundary during the conflict. The timing of the crossing coincided with political negotiations over Israel's governing coalition.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/18/israeli-tanks-cross-yellow-line-boundary-into-hamas-controlled-central-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-flee-gazas-nuseirat-israeli-army-launches-ground",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-18T23:25:25+00:00",
+ "dek": "First incursion across boundary since ceasefire deal comes as Eisenkot seeks to form government without Netanyahu The Israeli military crossed into Hamas-controlled central Gaza on Wednesday in its first ground operation across the “yellow line” boundary…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/d94406113e8bb1466134873bf0554edf8a0ac2a7/340_0_3588_2871/master/3588.jpg?width=140&quality=85&auto=format&fit=max&s=c4c5f88e63f04ff190d99622bcb62fac",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/nov/18/israeli-tanks-cross-yellow-line-boundary-into-hamas-controlled-central-gaza",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/nov/18/israeli-tanks-cross-yellow-line-boundary-into-hamas-controlled-central-gaza"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8268f68f9c",
+ "score": 60.16,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli tanks cross into central Gaza for first time since ceasefire"
+}
