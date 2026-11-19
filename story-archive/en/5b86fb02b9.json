@@ -1,0 +1,33 @@
+{
+ "brief": "A settler driver struck at least eight Palestinians across several locations in central Israel, with video evidence showing the vehicle hitting pedestrians, Al Jazeera English reported. The attacks took place at multiple points in the region.\n\nThe settler's identity and the full circumstances of the incidents remain unclear. Medical details on the injuries sustained by those struck have not been reported.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/19/settler-rams-into-palestinians-at-multiple-locations-in-central-israel?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-19T01:13:45+00:00",
+ "dek": "At least eight Palestinians were injured after a settler driver was caught on camera running them over.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795050806.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/19/settler-rams-into-palestinians-at-multiple-locations-in-central-israel?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/19/settler-rams-into-palestinians-at-multiple-locations-in-central-israel?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "5b86fb02b9",
+ "score": 63.85,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Settler rams vehicle into Palestinians at multiple central Israel sites"
+}
