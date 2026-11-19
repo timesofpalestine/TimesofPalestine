@@ -13,6 +13,24 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/18/israeli-tanks-cross-yellow-line-boundary-into-hamas-controlled-central-gaza",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israel-says-it-concludes-gaza-tank-raid",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-flee-gazas-nuseirat-israeli-army-launches-ground",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-18T11:13:40+00:00",
@@ -31,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "6614d43df2",
- "score": 32.52,
+ "score": 32.21,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
