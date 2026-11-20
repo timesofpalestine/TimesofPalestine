@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinians returning to their neighborhoods in Gaza discovered their residences reduced to rubble following Israel's ground offensive, Al Jazeera English reported. The scale of destruction has displaced families who had fled combat zones, leaving them without shelter as the fighting persists.\n\nAttacks on Gaza continue amid the humanitarian crisis unfolding across the territory, with residents confronting the loss of homes and infrastructure amid ongoing military operations.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/20/jerusalem-daily-palestinians-return-home-to-ruins?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-20T15:42:04+00:00",
+ "dek": "Palestinians return to find their homes reduced to rubble after Israel’s ground offensive, as attacks on Gaza continue.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795189286.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/20/jerusalem-daily-palestinians-return-home-to-ruins?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/20/jerusalem-daily-palestinians-return-home-to-ruins?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "47a8f9b933",
+ "score": 49.5,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians find homes destroyed after Israeli ground offensive"
+}
