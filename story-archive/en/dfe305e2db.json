@@ -1,0 +1,57 @@
+{
+ "brief": "The International Court of Justice's verdict against Myanmar over Rohingya genocide may influence proceedings against Israel for alleged genocide in Gaza, Al Jazeera English reported. The Myanmar case established legal standards for proving genocidal intent and state responsibility that could shape how the court evaluates evidence and arguments in the separate Gaza case.\n\nThe ruling applies genocide conventions across different conflicts. International courts use the same legal framework to assess military conduct, meaning standards set in the Myanmar proceedings may directly apply to how Israel's actions in Gaza are judged.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/inside-story/2026/11/20/what-are-the-implications-of-the-icj-rohingya-genocide-ruling?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/11/what-does-the-icj-ruling-on-myanmar-mean-for-gaza",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/myanmar-genocide-judgment-may-bolster-gaza-case-against-israel",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/israeli-experts-warn-myanmar-genocide-ruling-could-strengthen-gaza-case-icj",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/law/2026/nov/19/myanmar-ruling-new-relevance-genocide-convention-messages-israel",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-20T19:12:14+00:00",
+ "dek": "Verdict against Myanmar may have implications for Israel's genocide in Gaza.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795199268.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/inside-story/2026/11/20/what-are-the-implications-of-the-icj-rohingya-genocide-ruling?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/inside-story/2026/11/20/what-are-the-implications-of-the-icj-rohingya-genocide-ruling?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "dfe305e2db",
+ "score": 49.65,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "ICJ Rohingya ruling sets precedent for Gaza genocide case"
+}
