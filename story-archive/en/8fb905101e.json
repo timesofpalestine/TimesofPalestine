@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli drone strikes killed seven Palestinians in central Gaza, Al Jazeera English reported. The attacks occurred as Israel continues military operations in the territory despite a ceasefire agreement.\n\nThe drone strikes have intensified fear and panic among the Palestinian population across the Strip, according to reports. Palestinians have faced ongoing Israeli military operations amid what was described as a ceasefire period.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/20/israeli-drone-attacks-kill-seven-palestinians-in-central-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://electronicintifada.net/blogs/nora-barrows-friedman/what-ceasefire-israel-launches-new-ground-assault-gaza",
+   "name": "Electronic Intifada",
+   "url": "https://electronicintifada.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-20T20:14:56+00:00",
+ "dek": "Drones cause 'fear and panic' among Palestinians as Israel continues attacks on the Strip despite 'ceasefire'.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6afe4b7f56bb-1795050367.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/20/israeli-drone-attacks-kill-seven-palestinians-in-central-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/20/israeli-drone-attacks-kill-seven-palestinians-in-central-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8fb905101e",
+ "score": 63.59,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli drone attacks kill seven Palestinians in central Gaza"
+}
