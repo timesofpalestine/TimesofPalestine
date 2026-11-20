@@ -1,0 +1,45 @@
+{
+ "brief": "The International Court of Justice's ruling in the Rohingya genocide case establishes that a state's intent to commit genocide need not rely on explicit written orders, Al Jazeera English reported. The decision creates a legal framework that could apply to investigations and proceedings concerning alleged atrocities in Gaza.\n\nThe precedent allows courts to infer genocidal intent from a state's conduct, statements, and patterns of behavior rather than requiring documentary evidence of direct commands. This standard may shape how international bodies assess allegations of genocide in other conflicts, including the ongoing war in Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/20/what-does-the-icjs-rohingya-genocide-ruling-mean-for-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-podcast-winning-emmy-while-starving",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/law/2026/nov/19/myanmar-ruling-new-relevance-genocide-convention-messages-israel",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-20T12:20:29+00:00",
+ "dek": "The case sets a precedent for establishing a state's intent to commit genocide beyond explicitly written orders.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afec4e04cae-1795081440.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/20/what-does-the-icjs-rohingya-genocide-ruling-mean-for-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/20/what-does-the-icjs-rohingya-genocide-ruling-mean-for-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2b1c40e024",
+ "score": 49.79,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "ICJ Rohingya ruling sets genocide precedent for Gaza cases"
+}

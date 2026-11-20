@@ -19,6 +19,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/564-67",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
   }
  ],
  "date": "2026-11-20T11:06:10+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "2ba687bc4d",
- "score": 49.38,
+ "score": 48.93,
  "source": "القدس العربي",
  "source_id": "alqudsuk",
  "source_url": "https://www.alquds.co.uk/",
