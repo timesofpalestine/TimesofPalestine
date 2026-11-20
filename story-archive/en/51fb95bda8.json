@@ -13,6 +13,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/news/fergie-chambers-released-spain-us-admits-court-translation-errors",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-20T13:45:14+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "51fb95bda8",
- "score": 47.9,
+ "score": 47.73,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
