@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Borrowed bodies, then a visa: Gaza's dancers reach Limerick</title>
+  <desc id="desc">A bilingual timeline of Instant Dissidence's project Dancing With Strangers: From Palestine to Ireland, from the first remote duets made in Gaza in early 2024 to the Irish justice minister's grant of 48 study visas on 19 November 2026, beside the Palestinian study-visa refusal figures reported by The Irish Times and the evacuation terms reported by RTE.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101114"/>
+      <stop offset="1" stop-color="#1c1d21"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a1f2d"/>
+      <stop offset=".5" stop-color="#286344"/>
+      <stop offset="1" stop-color="#c7a86b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#a9a8a4}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="86" y="74" class="serif ivory" font-size="44" font-weight="800">Borrowed bodies, then a visa</text>
+  <text x="86" y="112" class="sans muted" font-size="20">Gaza's dancers reach Limerick after two years of Irish stand-ins</text>
+  <text x="1544" y="72" class="arabic ivory" font-size="32" font-weight="800" text-anchor="end">عامان من الأجساد البديلة.. ثم تأشيرة</text>
+  <text x="1544" y="110" class="arabic muted" font-size="19" text-anchor="end">راقصو غزة يصلون ليمريك بعد عامين من البدلاء الأيرلنديين</text>
+
+  <line x1="86" y1="140" x2="1544" y2="140" stroke="#33343a" stroke-width="2"/>
+
+  <!-- timeline column -->
+  <text x="86" y="178" class="sans gold" font-size="17" font-weight="800" letter-spacing="1.4">THE ROUTE OUT</text>
+  <text x="862" y="178" class="arabic gold" font-size="17" font-weight="800" text-anchor="end">طريق الخروج</text>
+  <rect x="92" y="196" width="4" height="612" fill="url(#spine)"/>
+
+  <g>
+    <circle cx="94" cy="222" r="9" fill="#dc6572"/>
+    <text x="124" y="214" class="sans gold" font-size="16" font-weight="800">EARLY 2024</text>
+    <text x="124" y="242" class="sans ivory" font-size="20">Dancers in Gaza build duets remotely with Instant Dissidence</text>
+    <text x="124" y="268" class="arabic muted" font-size="17">راقصون في غزة يبنون ثنائياتهم عن بُعد مع الفرقة الأيرلندية</text>
+  </g>
+  <g>
+    <circle cx="94" cy="310" r="9" fill="#dc6572"/>
+    <text x="124" y="302" class="sans gold" font-size="16" font-weight="800">SEPTEMBER 2024</text>
+    <text x="124" y="330" class="sans ivory" font-size="20">Culture Night premiere in Dublin; Irish dancers perform as avatars</text>
+    <text x="124" y="356" class="arabic muted" font-size="17">العرض الأول في «ليلة الثقافة» بدبلن بأجساد أيرلندية بديلة</text>
+  </g>
+  <g>
+    <circle cx="94" cy="398" r="9" fill="#c7a86b"/>
+    <text x="124" y="390" class="sans gold" font-size="16" font-weight="800">SUMMER 2026</text>
+    <text x="124" y="418" class="sans ivory" font-size="20">The dance company sponsors their study-visa applications</text>
+    <text x="124" y="444" class="arabic muted" font-size="17">الفرقة تكفل طلبات تأشيراتهم الدراسية</text>
+  </g>
+  <g>
+    <circle cx="94" cy="486" r="9" fill="#c7a86b"/>
+    <text x="124" y="478" class="sans gold" font-size="16" font-weight="800">SUMMER 2026</text>
+    <text x="124" y="506" class="sans ivory" font-size="20">Ireland refuses the visas, citing papers the embassy held</text>
+    <text x="124" y="532" class="arabic muted" font-size="17">أيرلندا ترفض الطلبات بحجة وثائق لدى السفارة نفسها</text>
+  </g>
+  <g>
+    <circle cx="94" cy="574" r="9" fill="#61aa80"/>
+    <text x="124" y="566" class="sans gold" font-size="16" font-weight="800">27 OCTOBER 2026</text>
+    <text x="124" y="594" class="sans ivory" font-size="20">The High Court overturns the lead refusal and orders a rethink</text>
+    <text x="124" y="620" class="arabic muted" font-size="17">المحكمة العليا تلغي القرار الاسترشادي وتأمر بإعادة النظر</text>
+  </g>
+  <g>
+    <circle cx="94" cy="662" r="9" fill="#61aa80"/>
+    <text x="124" y="654" class="sans gold" font-size="16" font-weight="800">19 NOVEMBER 2026</text>
+    <text x="124" y="682" class="sans ivory" font-size="20">The minister grants 48 visas; Limerick waives the dancers' fees</text>
+    <text x="124" y="708" class="arabic muted" font-size="17">الوزير يمنح 48 تأشيرة وليمريك تعفي الراقصين من الرسوم</text>
+  </g>
+  <g>
+    <circle cx="94" cy="750" r="9" fill="#61aa80"/>
+    <text x="124" y="742" class="sans gold" font-size="16" font-weight="800">23 NOVEMBER 2026</text>
+    <text x="124" y="770" class="sans ivory" font-size="20">Twenty of the 48 are cleared for the convoy out of Gaza</text>
+    <text x="124" y="796" class="arabic muted" font-size="17">عشرون من الـ48 يُسمح لهم بقافلة الخروج من غزة</text>
+  </g>
+
+  <!-- stats column -->
+  <text x="910" y="178" class="sans gold" font-size="17" font-weight="800" letter-spacing="1.4">THE DOOR, IN NUMBERS</text>
+  <text x="1544" y="178" class="arabic gold" font-size="17" font-weight="800" text-anchor="end">الباب بالأرقام</text>
+
+  <g filter="url(#shadow)">
+    <rect x="910" y="196" width="300" height="172" rx="16" fill="#26272b" stroke="#8a1f2d" stroke-width="2"/>
+    <text x="932" y="268" class="serif red" font-size="56" font-weight="800">83%</text>
+    <text x="932" y="302" class="sans ivory" font-size="17">refused in 2026</text>
+    <text x="932" y="324" class="sans muted" font-size="15">114 of 138 applications</text>
+    <text x="1188" y="350" class="arabic muted" font-size="16" text-anchor="end">نسبة الرفض هذا العام</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1230" y="196" width="300" height="172" rx="16" fill="#26272b" stroke="#286344" stroke-width="2"/>
+    <text x="1252" y="268" class="serif green" font-size="56" font-weight="800">13%</text>
+    <text x="1252" y="302" class="sans ivory" font-size="17">refused in 2025</text>
+    <text x="1252" y="324" class="sans muted" font-size="15">22 of 164 applications</text>
+    <text x="1508" y="350" class="arabic muted" font-size="16" text-anchor="end">نسبة الرفض العام الماضي</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="910" y="388" width="300" height="172" rx="16" fill="#26272b" stroke="#c7a86b" stroke-width="2"/>
+    <text x="932" y="460" class="serif gold" font-size="56" font-weight="800">64</text>
+    <text x="932" y="494" class="sans ivory" font-size="17">students sued in court</text>
+    <text x="932" y="516" class="sans muted" font-size="15">one refusal still stands</text>
+    <text x="1188" y="542" class="arabic muted" font-size="16" text-anchor="end">طالباً لجأوا إلى القضاء</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1230" y="388" width="300" height="172" rx="16" fill="#26272b" stroke="#c7a86b" stroke-width="2"/>
+    <text x="1252" y="460" class="serif ivory" font-size="52" font-weight="800">48 / 20</text>
+    <text x="1252" y="494" class="sans ivory" font-size="17">visas, then seats</text>
+    <text x="1252" y="516" class="sans muted" font-size="15">28 still wait for a convoy</text>
+    <text x="1508" y="542" class="arabic muted" font-size="16" text-anchor="end">تأشيرات ثم مقاعد سفر</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="910" y="580" width="620" height="228" rx="16" fill="#1f2125" stroke="#3a3b41" stroke-width="2"/>
+    <text x="936" y="618" class="sans gold" font-size="16" font-weight="800" letter-spacing="1.2">WHAT A SEAT ALLOWS</text>
+    <text x="1504" y="618" class="arabic gold" font-size="16" font-weight="800" text-anchor="end">ما يسمح به المقعد</text>
+    <text x="936" y="656" class="sans ivory" font-size="19">Deir al-Balah, then a dawn bus to Kerem Shalom</text>
+    <text x="936" y="684" class="sans ivory" font-size="19">Israeli screening, army escort, Jordan, a flight to Dublin</text>
+    <text x="936" y="712" class="sans ivory" font-size="19">One small soft bag each: no cases, no laptops</text>
+    <text x="936" y="740" class="sans muted" font-size="17">Next convoy after Monday: 21 December 2026</text>
+    <text x="1504" y="772" class="arabic muted" font-size="17" text-anchor="end">دير البلح ثم كرم أبو سالم، وحقيبة يد واحدة لكل مسافر</text>
+    <text x="1504" y="796" class="arabic muted" font-size="17" text-anchor="end">القافلة التالية في 21 كانون الأول/ديسمبر 2026</text>
+  </g>
+
+  <text x="86" y="856" class="sans muted" font-size="16">Sources: The Irish Times and RTE court reporting, 19 November 2026. Graphic: Times of Palestine.</text>
+  <text x="1544" y="856" class="arabic muted" font-size="16" text-anchor="end">المصدر: آيريش تايمز وآر تي إي، 19 تشرين الثاني/نوفمبر 2026</text>
+</svg>
