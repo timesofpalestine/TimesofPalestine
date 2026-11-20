@@ -1,6 +1,6 @@
 {
  "brief": "A Spanish court granted bail to pro-Palestinian activist James \"Fergie\" Chambers, Al Jazeera English reported. Chambers had faced detention in connection with his activism, though specific charges were not detailed in the available reporting.\n\nThe decision marks a development in a case involving the British-based activist known for pro-Palestinian advocacy work. Further details on bail conditions and the status of proceedings remain unclear.",
- "cat": "news",
+ "cat": "politics",
  "corroborating_sources": [
   {
    "article": "https://www.aljazeera.com/news/2026/11/20/spain-court-grants-bail-to-pro-palestinian-activist-james-fergie-chambers?traffic_source=rss",
@@ -16,7 +16,7 @@
   }
  ],
  "date": "2026-11-20T13:45:14+00:00",
- "dek": "This is a breaking news story.",
+ "dek": "The philanthropist is accused by US authorities of financially supporting Hamas.",
  "dup_of": null,
  "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/Fergie-Chambers1-1788295416.png?resize=1200%2C630",
  "lang": "en",
@@ -31,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "51fb95bda8",
- "score": 49.34,
+ "score": 49.06,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
