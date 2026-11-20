@@ -1,0 +1,33 @@
+{
+ "brief": "More than 85 percent of Gaza Civil Defence vehicles are out of service, Al Jazeera English reported, severely hampering rescue operations across the territory. The breakdown of the fleet has left crews unable to reach trapped people effectively, compounding the humanitarian crisis.\n\nThe civil defence has not provided detailed information on the causes of the widespread vehicle failures or timelines for repairs and replacements needed to restore operational capacity.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/20/gaza-civil-defence-struggles-to-rescue-lives-as-vehicles-fall-into-disrepair?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-20T05:01:40+00:00",
+ "dek": "More than 85 percent of Gaza Civil Defence vehicles are out of service as crews struggle to reach trapped people.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/873A8133-copy-1795121986.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/20/gaza-civil-defence-struggles-to-rescue-lives-as-vehicles-fall-into-disrepair?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/20/gaza-civil-defence-struggles-to-rescue-lives-as-vehicles-fall-into-disrepair?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cd2ee4c15c",
+ "score": 49.75,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza Civil Defence fleet crippled as rescue operations falter"
+}
