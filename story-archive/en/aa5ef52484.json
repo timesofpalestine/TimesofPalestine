@@ -6,13 +6,7 @@
    "article": "https://pchrgaza.org/israel-kills-11-palestinians-in-gaza-and-escalates-home-demolitions-and-forced-displacement-of-residents-in-northern-al-nuseirat",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-killed-several-injured-israeli-attacks-across-gaza",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-19T17:13:09+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "aa5ef52484",
- "score": 85.87,
+ "score": 85.55,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
