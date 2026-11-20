@@ -9,15 +9,21 @@
    "verified": true
   },
   {
-   "article": "https://www.pbc.ps/564-67",
-   "name": "تلفزيون فلسطين",
-   "url": "https://www.pbc.ps/",
+   "article": "https://www.alquds.co.uk/%d9%87%d9%8a%d8%a6%d8%aa%d8%a7%d9%86-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d8%aa%d8%a7%d9%86-%d9%86%d8%ad%d9%88-350-%d8%b7%d9%81%d9%84%d8%a7-%d8%a8%d8%b3%d8%ac%d9%88%d9%86-%d8%a5%d8%b3%d8%b1",
+   "name": "القدس العربي",
+   "url": "https://www.alquds.co.uk/",
    "verified": true
   },
   {
    "article": "https://felesteen.news/post/190586/%D8%AA%D8%B9%D8%B0%D9%8A%D8%A8-%D9%88%D8%AA%D8%AC%D9%88%D9%8A%D8%B9-350-%D8%B7%D9%81%D9%84%D8%A7-%D9%8A%D9%82%D8%A8%D8%B9%D9%88%D9%86-%D9%81%D9%8A-%D8%B3%D8%AC%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84",
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/564-67",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
    "verified": true
   }
  ],
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "6ffd14425b",
- "score": 49.37,
+ "score": 48.87,
  "source": "القسطل · تيليغرام",
  "source_id": "tg-qastal",
  "source_url": "https://t.me/AlQastalps",
