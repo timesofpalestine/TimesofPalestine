@@ -1,0 +1,45 @@
+{
+ "brief": "An Israeli air attack struck a vehicle carrying food aid in Gaza, killing three Palestinians, Al Jazeera English reported. The strike destroyed the humanitarian vehicle as it moved through the territory amid an ongoing Israeli military campaign.\n\nThe incident adds to a mounting toll of casualties in Gaza, where civilians have faced repeated strikes while attempting to distribute or receive food assistance. No further details were immediately available about the location of the strike or the identities of those killed.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/21/21-11-sv-israel-targets-gaza-food-truck?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israeli-strike-vehicle-gaza-kills-three-gaza-health-ministry-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/fresh-israeli-attack-gaza-kills-three",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-21T17:54:19+00:00",
+ "dek": "Three Palestinians were killed in an Israeli air attack on a vehicle carrying food.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795283560.jpg?resize=1620%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/21/21-11-sv-israel-targets-gaza-food-truck?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/21/21-11-sv-israel-targets-gaza-food-truck?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8a396261f1",
+ "score": 60.78,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strike kills three in Gaza food aid vehicle"
+}
