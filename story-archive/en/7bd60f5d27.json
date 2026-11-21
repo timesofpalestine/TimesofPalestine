@@ -1,0 +1,33 @@
+{
+ "brief": "Gaza faces mounting casualties from airstrikes alongside a spreading health emergency, Al Jazeera English reported. The territory contends with both direct military violence and deteriorating public health conditions that threaten civilians across the enclave.\n\nThe convergence of strikes and disease outbreak has strained Gaza's already fragile medical infrastructure, leaving hospitals overwhelmed and unable to meet population needs. Health authorities warn of compounding crises that endanger vulnerable populations throughout the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/21/jerusalem-daily-gaza-faces-deadly-strikes-and-health-crisis?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-21T14:06:06+00:00",
+ "dek": "Jerusalem Daily: Gaza faces deadly strikes and health crisis…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795269949.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/21/jerusalem-daily-gaza-faces-deadly-strikes-and-health-crisis?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/21/jerusalem-daily-gaza-faces-deadly-strikes-and-health-crisis?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7bd60f5d27",
+ "score": 63.53,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strikes and disease outbreak worsen Gaza health crisis"
+}
