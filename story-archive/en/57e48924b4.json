@@ -1,0 +1,33 @@
+{
+ "brief": "The death toll from Israel's military operations in Gaza has risen to 74,736, with 176,194 others wounded, since the conflict began on October 7, 2023, the Palestine News Network reported citing medical sources.\n\nThe figures represent casualties accumulated over more than a year of warfare across the Gaza Strip. Medical authorities continue documenting losses as fighting persists in the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://english.pnn.ps/news/48401",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-21T14:12:00+00:00",
+ "dek": "GAZA /PNN / The death toll from Israel's genocidal war on the Gaza Strip has risen to 74,736, with 176,194 others wounded, since October 7, 2023, according to medical sources.",
+ "dup_of": null,
+ "image": "https://media.pnn.ps/english/storage/images/news/2026/1795270509-761571046.jpeg",
+ "lang": "en",
+ "link": "https://english.pnn.ps/news/48401",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Palestine News Network",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://english.pnn.ps/news/48401"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "57e48924b4",
+ "score": 63.12,
+ "source": "Palestine News Network",
+ "source_id": "pnn",
+ "source_url": "https://english.pnn.ps/",
+ "title": "Gaza death toll reaches 74,736 as war continues"
+}
