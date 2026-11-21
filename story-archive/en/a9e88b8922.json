@@ -1,0 +1,39 @@
+{
+ "brief": "Spain's High Court granted conditional bail to James \"Fergie\" Chambers, a pro-Palestinian philanthropist, Al Jazeera English reported. Chambers had been detained in connection with unspecified charges. The court imposed conditions on his release, though details of those restrictions were not disclosed.\n\nChambers is known for his philanthropic work supporting Palestinian causes. His detention and subsequent bail hearing drew attention from activism circles focused on the Israeli-Palestinian conflict.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/21/spain-court-grants-bail-to-pro-palestinian-activist-james-fergie-chambers-2?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/pro-palestine-donor-and-us-media-heir-james-chambers-released-jail",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-21T08:26:22+00:00",
+ "dek": "Spain’s High Court granted conditional bail to James ‘Fergie’ Chambers, a pro-Palestinian philanthropist.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/Screenshot-2026-11-21-at-08.21.38-1795249439.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/21/spain-court-grants-bail-to-pro-palestinian-activist-james-fergie-chambers-2?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/21/spain-court-grants-bail-to-pro-palestinian-activist-james-fergie-chambers-2?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a9e88b8922",
+ "score": 49.06,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Spanish court grants bail to pro-Palestinian activist Chambers"
+}
