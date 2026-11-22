@@ -6,7 +6,13 @@
    "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-661",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-killed-israeli-fire-northern-and-central-gaza",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-21T18:01:22+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b14af03434",
- "score": 46.44,
+ "score": 46.19,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
