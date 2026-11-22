@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli settlers set fire to Palestinian vehicles in Jerusalem, according to Al Jazeera English. The incident is part of ongoing tensions between settlers and Palestinians in the contested city, where property damage and clashes have escalated in recent months.\n\nThe attack adds to a pattern of settler violence targeting Palestinian communities and their property across occupied territories. Palestinian residents have faced repeated incidents of vehicle fires, home vandalism, and physical confrontations by settlers operating in areas of Jerusalem.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/22/jerusalem-daily-israeli-settlers-set-palestinian-vehicles-ablaze?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-22T14:30:27+00:00",
+ "dek": "Jerusalem Daily: Israeli settlers set Palestinian vehicles ablaze…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795357771.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/22/jerusalem-daily-israeli-settlers-set-palestinian-vehicles-ablaze?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/22/jerusalem-daily-israeli-settlers-set-palestinian-vehicles-ablaze?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fa5b87c0cb",
+ "score": 49.75,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers torch Palestinian vehicles in Jerusalem"
+}
