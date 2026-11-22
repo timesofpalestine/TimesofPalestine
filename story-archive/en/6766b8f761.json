@@ -1,0 +1,33 @@
+{
+ "brief": "Displaced Palestinians have launched protests as Israeli airstrikes persist across Gaza, Al Jazeera English reported. A Gaza mayor accused Israeli forces of deliberately destroying residential buildings as part of a \"gradual displacement\" policy targeting the territory's population.\n\nThe destruction of homes has forced thousands from their neighborhoods, compounding an existing humanitarian crisis in the enclave. Israeli military operations have intensified pressure on civilian infrastructure across Gaza in recent weeks.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-22T02:14:18+00:00",
+ "dek": "Israeli forces continue to destroy residential buildings as part of a 'gradual displacement' policy, a Gaza mayor says.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b00990b1735-1795201291.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6766b8f761",
+ "score": 57.94,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Palestinians protest displacement as Israeli airstrikes continue in Gaza"
+}
