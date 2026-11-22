@@ -6,13 +6,7 @@
    "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-661",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": true
-  },
-  {
-   "article": "https://electronicintifada.net/blogs/nora-barrows-friedman/what-ceasefire-israel-launches-new-ground-assault-gaza",
-   "name": "Electronic Intifada",
-   "url": "https://electronicintifada.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-21T18:01:22+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "b14af03434",
- "score": 54.55,
+ "score": 54.35,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
