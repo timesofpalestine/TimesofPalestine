@@ -7,6 +7,18 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-eisenkot-parties-end-talks-without-deal-forming-government",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/netanyahu-eisenkot-parties-end-talks-without-deal-forming-israel-govt",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-22T16:48:51+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "2e8376a24d",
- "score": 48.01,
+ "score": 47.78,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
