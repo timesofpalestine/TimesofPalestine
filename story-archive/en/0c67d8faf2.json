@@ -37,6 +37,12 @@
    "name": "Zeteo",
    "url": "https://zeteo.com/",
    "verified": true
+  },
+  {
+   "article": "https://electronicintifada.net/blogs/nora-barrows-friedman/what-ceasefire-israel-launches-new-ground-assault-gaza",
+   "name": "Electronic Intifada",
+   "url": "https://electronicintifada.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-22T20:04:09+00:00",
@@ -55,7 +61,7 @@
  "modified": null,
  "original": false,
  "pid": "0c67d8faf2",
- "score": 48.67,
+ "score": 48.5,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
