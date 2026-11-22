@@ -6,7 +6,19 @@
    "article": "https://www.aljazeera.net/news/2026/11/22/%d8%a7%d9%84%d9%86%d9%82%d8%a8-%d8%a7%d9%84%d8%a3%d8%ba%d9%88%d8%a7%d8%b1-%d9%87%d8%af%d9%85-%d8%a7%d8%b3%d8%aa%d9%8a%d8%b7%d8%a7%d9%86-%d8%a7%d9%84%d8%b6%d9%81%d8%a9?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/q-19",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/190705/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D9%87%D8%AF%D9%85-%D9%85%D9%86%D8%B4%D8%A2%D8%AA-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D9%88%D8%AD%D8%B8%D8%A7%D8%A6%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D8%BA%D9%88%D8%A7%D8%B1-%D9%88%D9%8A%D9%87%D8%AF%D8%AF-%D8%A8%D8%A5%D8%B2%D8%A7%D9%84%D8%A9-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D8%B9-%D8%A8",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
   }
  ],
  "date": "2026-11-22T15:11:16+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "973c704c11",
- "score": 47.32,
+ "score": 47.12,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
