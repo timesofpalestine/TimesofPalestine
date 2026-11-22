@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli strikes killed six Palestinians in Gaza on Monday, bringing the total death count since the war began to 74,742, the Ma'an news agency reported. The latest casualties occurred across multiple locations in the territory amid ongoing military operations.\n\nThe mounting toll reflects the sustained violence that has characterized the conflict since its outbreak. Exact circumstances of Monday's deaths were not immediately detailed.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172636.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://english.pnn.ps/news/48401",
+   "name": "Palestine News Network",
+   "url": "https://english.pnn.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-22T09:42:12+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172636.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "04541349f3",
+ "score": 63.36,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Six killed in Gaza in single day as death toll reaches 74,742"
+}
