@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli politicians have called for an emergency parliamentary session following a series of settler attacks in the West Bank, the Ma'an news agency reported. The attacks prompted widespread criticism within Israel over security responses and settler conduct in Palestinian territories.\n\nDetails of the specific incidents and the identity of officials making the demands were not immediately available. The calls for an emergency session reflect ongoing tensions over settler violence in the occupied West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172638.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-22T09:53:59+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172638.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "4c4ed946bd",
+ "score": 49.79,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli officials demand emergency session after settler attacks in West Bank"
+}
