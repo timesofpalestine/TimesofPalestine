@@ -6,7 +6,13 @@
    "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-661",
    "name": "Zeteo",
    "url": "https://zeteo.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/11/23/australias-sanctions-on-west-bank-settlers-increase-pressure",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
   }
  ],
  "date": "2026-11-21T18:01:22+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "b14af03434",
- "score": 30.62,
+ "score": 30.29,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
