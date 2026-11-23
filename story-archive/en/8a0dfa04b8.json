@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli assaults on the health sector in the West Bank have increased by more than 350 percent since 2023, the Ma'an news agency reported. The sharp rise reflects an escalating pattern of attacks targeting medical facilities and personnel across the occupied territory.\n\nThe attacks have disrupted healthcare delivery in the West Bank, where patients and medical workers face mounting risks amid deteriorating security conditions.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172704.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-23T12:21:46+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172704.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "8a0dfa04b8",
+ "score": 48.47,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli attacks on West Bank healthcare surge over 350 percent since 2023"
+}

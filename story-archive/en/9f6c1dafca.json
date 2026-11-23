@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli restrictions have cut off supplies of hearing aid batteries to Gaza, leaving residents dependent on the devices without access to replacements, Al Jazeera English reported. The blockade has prevented shipments of the batteries needed to power hearing aids, creating a critical shortage for deaf and hard-of-hearing Palestinians.\n\nThe supply crisis affects a population already struggling under broader shortages of medical equipment and supplies. Hearing aid users face the prospect of their devices becoming inoperable without access to replacement batteries, compounding communication difficulties in the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/23/israeli-restrictions-cut-off-vital-hearing-aid-supplies-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-23T13:54:48+00:00",
+ "dek": "Israeli restrictions have left Gaza facing a severe shortage of hearing aid batteries.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/Screenshot-2026-11-23-at-13.46.25-1795441711.png?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/23/israeli-restrictions-cut-off-vital-hearing-aid-supplies-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/23/israeli-restrictions-cut-off-vital-hearing-aid-supplies-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9f6c1dafca",
+ "score": 49.55,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli restrictions create hearing aid battery shortage in Gaza"
+}
