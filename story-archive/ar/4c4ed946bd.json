@@ -25,6 +25,12 @@
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/752948",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": false
   }
  ],
  "date": "2026-11-22T09:53:59+00:00",
@@ -43,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "4c4ed946bd",
- "score": 33.37,
+ "score": 33.2,
  "source": "وكالة معا (حصري)",
  "source_id": "maan",
  "source_url": "https://www.maannews.net/",
