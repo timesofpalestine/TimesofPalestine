@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب المركز الفلسطيني للإعلام، تعمل إسرائيل على استهداف وكالة الأمم المتحدة لغوث وتشغيل اللاجئين الفلسطينيين (الأونروا) بهدف تقويض حق العودة المكفول للاجئين الفلسطينيين وإنهاء الوكالة ذاتها.\n\nتوفر الأونروا خدمات صحية وتعليمية وإغاثية لملايين اللاجئين الفلسطينيين الموزعين في الضفة الغربية وقطاع غزة والدول المضيفة كالأردن وسوريا ولبنان.\n\nيعكس الاستهداف الإسرائيلي للوكالة محاولة أوسع للقضاء على الآليات الدولية التي تعترف بحقوق اللاجئين الفلسطينيين وتدعم حقهم في العودة.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/23/1124531",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-23T08:32:07+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/23/1124531",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fdb3e65253",
+ "score": 49.79,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "إسرائيل تستهدف الأونروا لتقويض حق العودة الفلسطيني"
+}

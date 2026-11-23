@@ -6,7 +6,19 @@
    "article": "https://shehabnews.net/ar/post?id=170192&slug=%D9%88%D9%81%D9%8A%D8%A7%D8%AA-%D8%BA%D8%B2%D8%A9-%D8%AA%D9%82%D9%81%D8%B2-%D8%A5%D9%84%D9%89-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-24-%D8%A3%D9%84%D9%81%D8%A7%D9%8B-%D8%AE%D9%84%D8%A7%D9%84-2025",
    "name": "وكالة شهاب (حصري)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/AlQastalps/402662",
+   "name": "القسطل · تيليغرام",
+   "url": "https://t.me/AlQastalps",
+   "verified": true
+  },
+  {
+   "article": "https://t.me/QudsN/752924",
+   "name": "شبكة قدس · تيليغرام",
+   "url": "https://t.me/QudsN",
+   "verified": true
   }
  ],
  "date": "2026-11-23T07:14:14+00:00",
@@ -25,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "04191d2c76",
- "score": 49.18,
+ "score": 48.89,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
