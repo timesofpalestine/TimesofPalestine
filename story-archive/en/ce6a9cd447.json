@@ -1,0 +1,45 @@
+{
+ "brief": "An Israeli airstrike killed a Gaza man employed by the UN Palestinian refugee agency UNRWA on Monday, the relief agency and local health officials said. The strike marked another casualty among aid workers operating in the territory amid ongoing military operations.\n\nUNRWA, which provides humanitarian assistance to Palestinian refugees across the region, has reported multiple casualties among its staff since operations intensified in Gaza.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israeli-occupion-forces-kill-15-palestinians-in-gaza-and-intensify-incursions-and-destruction-in-the-central-gaza-strip",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-23T12:46:30+00:00",
+ "dek": "CAIRO, Nov 23 (Reuters) - An Israeli airstrike killed a Gaza man working for the UN Palestinian refugee agency UNRWA in the Gaza Strip on Monday, the relief agency and local health officials said.",
+ "dup_of": null,
+ "image": "https://www.al-monitor.com/sites/default/files/styles/social_media_share/public/2026-11/2026-11-23T120122Z_1_LYNXNPEMAM0T7_RTROPTP_3_ISRAEL-PALESTINIANS-GAZA-UNRWA.JPG?h=b82ee7a4&itok=hq5k89oA",
+ "lang": "en",
+ "link": "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al-Monitor",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ce6a9cd447",
+ "score": 92.1,
+ "source": "Al-Monitor",
+ "source_id": "almonitor",
+ "source_url": "https://www.al-monitor.com/",
+ "title": "Israeli strike kills UNRWA worker in Gaza"
+}
