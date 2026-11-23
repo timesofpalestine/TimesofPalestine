@@ -15,18 +15,6 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-describe-fear-after-israeli-settlers-attack-west-bank",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/11/israels-eisenkot-condemns-arson-attacks-jewish-settlers-west-bank",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
@@ -49,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "b14af03434",
- "score": 34.15,
+ "score": 33.85,
  "source": "Zeteo",
  "source_id": "zeteo",
  "source_url": "https://zeteo.com/",
