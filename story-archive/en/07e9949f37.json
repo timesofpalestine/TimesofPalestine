@@ -1,0 +1,39 @@
+{
+ "brief": "A new report describes Gaza as a \"toxic wasteland\" resulting from Israel's military operations, according to Al Jazeera English. The assessment points to widespread environmental degradation across the territory from the ongoing conflict.\n\nThe report documents pollution and contamination affecting air, water, and soil across Gaza. Details on the specific environmental hazards and their sources remain central to the report's conclusions.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/23/gaza-turned-into-toxic-wasteland-by-israels-war-says-new-report?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/23/israel-gaza-destruction-created-toxic-wasteland-oxfam-report",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-23T09:33:59+00:00",
+ "dek": "Gaza turned into ‘toxic wasteland’ by Israel’s war, says new report…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795426432.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/23/gaza-turned-into-toxic-wasteland-by-israels-war-says-new-report?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/23/gaza-turned-into-toxic-wasteland-by-israels-war-says-new-report?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "07e9949f37",
+ "score": 48.68,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israel's war transforms Gaza into toxic wasteland, report finds"
+}

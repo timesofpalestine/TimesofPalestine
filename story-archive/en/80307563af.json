@@ -1,0 +1,33 @@
+{
+ "brief": "A child has died from lead poisoning in Gaza, according to Maan Wire. The death marks a documented case of lead toxicity in the enclave, where contamination from munitions and degraded infrastructure has raised health concerns among medical professionals and aid organizations.\n\nLead exposure remains a persistent problem in Gaza's population, particularly among children exposed to pollutants from years of conflict and deteriorating sanitation systems.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172692.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-23T08:38:49+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172692.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "80307563af",
+ "score": 62.04,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Child dies from lead poisoning in Gaza Strip"
+}
