@@ -1,0 +1,33 @@
+{
+ "brief": "Israel warned of a dangerous escalation in the West Bank, the Ma'an news agency reported, as attacks by settlers continued to mount in the occupied territory. The warning came amid rising tensions between Israeli military and settler movements over operations in Palestinian areas.\n\nSettler violence has become an increasing flashpoint in the West Bank, with incidents ranging from property damage to confrontations with Palestinian residents and security forces.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172689.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-23T07:51:17+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172689.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "0d8ad54d74",
+ "score": 62.63,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel warns of escalation risk as settler attacks intensify in West Bank"
+}
