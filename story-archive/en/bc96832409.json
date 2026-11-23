@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli military strikes across Gaza have killed at least three people, including a United Nations Relief and Works Agency worker, Al Jazeera English reported. The attacks come as Israel continues operations throughout the enclave despite a ceasefire agreement reached in October 2025.\n\nThe strikes add to the mounting casualties in Gaza, where Israeli military action has persisted since the October ceasefire. The death of the UNRWA worker follows repeated disruptions to aid operations across the territory.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/23/israeli-drone-strike-kills-unrwa-worker-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israeli-strikes-kill-least-three-gaza-including-worker-un-palestinian-agency",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-23T16:36:22+00:00",
+ "dek": "Israel continues to launch attacks across the enclave, despite an October 2025 'ceasefire' deal.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/09/AP26267592693269-1790451525.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/23/israeli-drone-strike-kills-unrwa-worker-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/23/israeli-drone-strike-kills-unrwa-worker-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bc96832409",
+ "score": 63.73,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli strikes kill three in Gaza, including UN aid worker"
+}
