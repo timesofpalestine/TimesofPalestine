@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces demolished Khirbet Samra in the northern Jordan Valley, according to Ma'an news agency. The demolition was documented in photographs and video footage of the operation.\n\nThe community of Khirbet Samra is located in the northern Jordan Valley, an area under Israeli military control since 1967. Palestinian communities in the region have faced repeated demolitions of homes and structures.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172639.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-22T10:37:28+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172639.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f552a10f44",
+ "score": 35.54,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces demolish Khirbet Samra in northern Jordan Valley"
+}
