@@ -1,0 +1,63 @@
+{
+ "brief": "Israeli forces and settlers have escalated violence against Palestinian medical workers in the occupied West Bank by 350 percent, according to Physicians for Human Rights Israel. The rights group characterized the spike as a \"dangerous escalation\" in attacks targeting medics during their work, Al Jazeera English reported.\n\nThe organization documented cases in which soldiers and settlers targeted healthcare workers, impeding their ability to provide medical care. The surge reflects broader tensions in the West Bank amid ongoing Israeli military operations and settler violence against Palestinians.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/23/israeli-attacks-on-medics-in-occupied-west-bank-surge-by-350-rights-group?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-661",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.hrw.org/news/2026/11/23/australias-sanctions-on-west-bank-settlers-increase-pressure",
+   "name": "Human Rights Watch",
+   "url": "https://www.hrw.org/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-describe-fear-after-israeli-settlers-attack-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israels-eisenkot-condemns-arson-attacks-jewish-settlers-west-bank",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-23T05:38:01+00:00",
+ "dek": "Physicians for Human Rights Israel says medics face 'dangerous escalation' in violence from soldiers and settlers.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/GettyImages-2283862197-1-1795412914.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/23/israeli-attacks-on-medics-in-occupied-west-bank-surge-by-350-rights-group?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/23/israeli-attacks-on-medics-in-occupied-west-bank-surge-by-350-rights-group?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ce61722535",
+ "score": 63.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli attacks on West Bank medics surge 350 percent, rights group says"
+}
