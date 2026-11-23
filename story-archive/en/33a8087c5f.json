@@ -6,7 +6,25 @@
    "article": "https://shehabnews.net/ar/post?id=170131&slug=%D9%87%D9%84-%D8%B5%D8%A7%D8%B1%D8%AA-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D8%A9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9%D8%9F",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/eisenkot-condemns-jewish-terrorism-near-ramallah-us-congressman-calls",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israels-eisenkot-condemns-arson-attacks-jewish-settlers-west-bank",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-22T20:42:24+00:00",
@@ -25,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "33a8087c5f",
- "score": 47.53,
+ "score": 47.27,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",

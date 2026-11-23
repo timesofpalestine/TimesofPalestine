@@ -9,39 +9,9 @@
    "verified": true
   },
   {
-   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/22/israeli-settlers-attack-multiple-palestinian-villages-as-pogroms-surge?traffic_source=rss",
-   "name": "Al Jazeera English",
-   "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/workers-shot-villagers-trapped-israeli-forces-and-settlers-attack",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/11/israels-eisenkot-condemns-arson-attacks-jewish-settlers-west-bank",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://zeteo.com/p/this-week-in-palestine-israeli-settlers-661",
-   "name": "Zeteo",
-   "url": "https://zeteo.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.hrw.org/news/2026/11/23/australias-sanctions-on-west-bank-settlers-increase-pressure",
-   "name": "Human Rights Watch",
-   "url": "https://www.hrw.org/",
    "verified": true
   }
  ],
@@ -61,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "0c67d8faf2",
- "score": 47.08,
+ "score": 46.83,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
