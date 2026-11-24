@@ -1,0 +1,39 @@
+{
+ "brief": "Shehab Wire reported that Gaza residents face daily attacks from Israeli military positions along the eastern and northern border, resulting in deaths, injuries, and ongoing threats to displaced persons and civilians. The article calls for intensified coverage of the assaults occurring at the frontier positions.\n\nResidents in displacement camps near the border areas remain in direct line of cross-border fire from the military installations.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.net/ar/post?id=170339&slug=%D9%84%D9%81%D8%AA%D8%A9-%D8%A8%D8%AD%D8%A7%D8%AC%D8%A9-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%A7%D9%87%D8%AA%D9%85%D8%A7%D9%85",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israeli-occupion-forces-kill-15-palestinians-in-gaza-and-intensify-incursions-and-destruction-in-the-central-gaza-strip",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-24T08:38:40+00:00",
+ "dek": "Shehab Wire reported that Gaza residents face daily attacks from Israeli military positions along the eastern and northern border, resulting in deaths, injuries, and ongoing threats to displaced persons and civilians.",
+ "dup_of": null,
+ "image": "https://fsn1.your-objectstorage.com/shehab/uploads/2026/10/cutout-writer-95.webp",
+ "lang": "en",
+ "link": "https://shehabnews.net/ar/post?id=170339&slug=%D9%84%D9%81%D8%AA%D8%A9-%D8%A8%D8%AD%D8%A7%D8%AC%D8%A9-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%A7%D9%87%D8%AA%D9%85%D8%A7%D9%85",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Shehab Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.net/ar/post?id=170339&slug=%D9%84%D9%81%D8%AA%D8%A9-%D8%A8%D8%AD%D8%A7%D8%AC%D8%A9-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%A7%D9%87%D8%AA%D9%85%D8%A7%D9%85"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1bdfde790c",
+ "score": 63.57,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "Israeli military fire kills, wounds Gaza residents daily"
+}
