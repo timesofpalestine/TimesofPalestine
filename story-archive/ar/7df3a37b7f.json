@@ -1,0 +1,39 @@
+{
+ "brief": "أطلقت وزارة الصحة الفلسطينية إنذاراً وبائياً بشأن ارتفاع حالات الإصابة بالتهاب السحايا في قطاع غزة، وربطت الزيادة بتداعيات الانهيار البيئي الذي يشهده القطاع. لم تُورد الوزارة أرقاماً محددة للحالات المسجلة، غير أنها أشارت إلى خطورة الوضع الصحي الراهن.\n\nيأتي الإنذار في سياق تدهور الأوضاع الصحية والبيئية بغزة، حيث يواجه القطاع أزمة بيئية حادة تؤثر على الصحة العامة وتسهم في انتشار الأمراض المعدية.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172760.html",
+   "name": "وكالة معا (حصري)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/190883/%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D8%AA%D8%B9%D9%84%D9%86-%D8%A7%D9%84%D8%A5%D9%86%D8%B0%D8%A7%D8%B1-%D8%A7%D9%84%D9%88%D8%A8%D8%A7%D8%A6%D9%8A-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%87%D8%A7%D8%A8-%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D9%8A%D8%A7-%D9%81%D9%8A-%D8%BA%D8%B2",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-24T10:09:36+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-health-ar.svg",
+ "lang": "ar",
+ "link": "https://www.maannews.net/news/2172760.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "7df3a37b7f",
+ "score": 63.93,
+ "source": "وكالة معا (حصري)",
+ "source_id": "maan",
+ "source_url": "https://www.maannews.net/",
+ "title": "الصحة الفلسطينية تحذّر من تفشي التهاب السحايا في غزة"
+}

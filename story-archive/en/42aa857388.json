@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces raided several towns across the occupied West Bank in the early hours of Tuesday, Middle East Eye reported, citing local sources. The timing and specific locations of the operations were not immediately detailed by the outlet.\n\nThe raids were among ongoing military operations in the territory amid persistent tensions between Israeli forces and Palestinian communities in the West Bank.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-several-towns-west-bank-local-media-report",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-23T22:57:00+00:00",
+ "dek": "Israeli forces raid several towns in West Bank, local media report Israeli forces raided several towns in the occupied West Bank in the early hours of Tuesday, according to local sources.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-several-towns-west-bank-local-media-report",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "42aa857388",
+ "score": 56.16,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli forces raid multiple West Bank towns overnight"
+}
