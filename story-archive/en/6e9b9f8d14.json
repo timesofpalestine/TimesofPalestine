@@ -6,7 +6,13 @@
    "article": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strikes-in-gaza-kill-7-as-doctors-warn-of-meningitis-outbreak?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israel-kills-senior-hamas-security-official-airstrike-gaza",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-24T10:47:41+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "6e9b9f8d14",
- "score": 61.95,
+ "score": 61.65,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
