@@ -1,0 +1,33 @@
+{
+ "brief": "The UK Supreme Court heard arguments on 4 and 5 November in a judicial review of the government's proscription of Palestine Action, an activist group, according to Amnesty International. A ruling is expected in late 2026 or early 2027.\n\nThe proscription bans the group. Amnesty noted that more than 4,000 people have been arrested for peaceful protest in the UK.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.amnesty.org/en/documents/eur45/1701/2026/en",
+   "name": "Amnesty International",
+   "url": "https://www.amnesty.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-23T00:00:00+00:00",
+ "dek": "On 4 and 5 November, the UK Supreme Court heard the judicial review of the proscription of the action group, Palestine Action, with the outcome expected late 2026 or early 2027.",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.amnesty.org/en/documents/eur45/1701/2026/en",
+ "max_age_hours": 168,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1a4b30ce88",
+ "score": 41.55,
+ "source": "Amnesty International",
+ "source_id": "amnesty",
+ "source_url": "https://www.amnesty.org/",
+ "title": "UK Supreme Court hears challenge to Palestine Action proscription"
+}
