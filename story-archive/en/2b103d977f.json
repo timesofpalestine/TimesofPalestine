@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli weather services forecast rain across the region on Monday, with winter conditions expected to intensify significantly during the following week, Maan Wire reported. Temperature drops and stormy weather are anticipated as a cold front moves into the area.\n\nThe meteorological service did not specify which regions would be most affected or provide details on rainfall amounts and wind speeds expected during the forecasted period.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172764.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-24T10:16:23+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172764.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2b103d977f",
+ "score": 29.25,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli meteorology forecasts rain tomorrow, cold return next week"
+}
