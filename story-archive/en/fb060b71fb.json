@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces killed a senior Hamas security official in a series of drone strikes across Gaza, Al Jazeera English reported. The strikes targeted multiple locations in the territory as part of ongoing military operations.\n\nThe official's identity and the precise timing of the strikes were not specified in initial reports. No other details about casualties or damage were immediately available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/24/senior-hamas-security-official-killed-in-israeli-drone-strikes?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-24T18:20:00+00:00",
+ "dek": "A senior Hamas security official has been killed in a series of Israeli strikes across Gaza…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795544391.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/24/senior-hamas-security-official-killed-in-israeli-drone-strikes?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/24/senior-hamas-security-official-killed-in-israeli-drone-strikes?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "fb060b71fb",
+ "score": 63.2,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli drone strikes kill senior Hamas security official in Gaza"
+}
