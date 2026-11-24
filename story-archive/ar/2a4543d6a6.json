@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.net/news/2026/11/24/%d8%a7%d9%84%d8%af%d9%81%d8%a7%d8%b9-%d8%a7%d9%84%d9%85%d8%af%d9%86%d9%8a-%d8%a8%d8%ba%d8%b2%d8%a9-%d9%83%d8%a7%d8%b1%d8%ab%d8%a9-%d8%ad%d9%82%d9%8a%d9%82%d9%8a%d8%a9-%d8%aa%d9%86%d8%aa%d8%b8%d8%b1?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/QudsN/753323",
    "name": "شبكة قدس · تيليغرام",
    "url": "https://t.me/QudsN",
@@ -43,7 +49,7 @@
  "modified": null,
  "original": false,
  "pid": "2a4543d6a6",
- "score": 47.42,
+ "score": 47.2,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
