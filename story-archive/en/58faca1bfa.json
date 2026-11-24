@@ -1,0 +1,33 @@
+{
+ "brief": "Israel has approved the resumption of flights by Flydubai, the low-cost carrier based in the United Arab Emirates, to Tel Aviv, the Ma'an news agency reported. The decision marks a continuation of air links between the UAE and Israel following their normalization agreement in 2020.\n\nFlydubai had previously operated routes to Israel before suspending services. The carrier will now resume commercial operations between the two countries.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172758.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-24T08:54:17+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-b.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172758.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "58faca1bfa",
+ "score": 33.33,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israel approves Flydubai's return to Tel Aviv"
+}
