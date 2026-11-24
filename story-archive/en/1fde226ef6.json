@@ -1,0 +1,45 @@
+{
+ "brief": "Gaza's internal security director Naeem Abu Nahle was killed in an Israeli airstrike west of Gaza, the Ma'an news agency reported. The strike occurred in the western part of the enclave, according to initial reports.\n\nAbu Nahle held a senior security position overseeing internal security operations in the Palestinian territory. Further details on the circumstances of the strike were not immediately available.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/38019",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/gaza-confirms-death-hamas-internal-security-chief-after-israeli-strike",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israeli-airstrikes-gaza-kill-senior-hamas-security-official-and-six-others-medics",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-24T11:00:38+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/awD5uiOS5WJEfqDW6fAwirOHCJjnGxnsuXuYoAB8_VeTUqCzFAUvhriTICwDa_TDp9IH7VO92SrZ-dKyO4D7soCxDRzcZQO2noxM1K4ziohwIrFoLVIiS_5LqA8PHdKrRGep93HfrjhyDs6UEfjHaIoYh93DcqSB3G5y1dGndqPJIeMANolqLj1nwRsnpcLO96rICckVC_m6bT8tvANQuVyv4l8vnMv-tI9edRw9tS4t19xFYKlfGxWn_6Ls69GAfnbtPvPceLExQHNdd33p9hbVscTYaPB7JLKb_1Ae0kK75ETiGmxVNW0EvfoPAn00r7HKuj5b32NrLUAnPlL6bQ.jpg",
+ "lang": "en",
+ "link": "https://t.me/maannews/38019",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/38019"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1fde226ef6",
+ "score": 48.75,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli strike kills Gaza's internal security chief Naeem Abu Nahle"
+}
