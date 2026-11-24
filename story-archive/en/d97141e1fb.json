@@ -1,0 +1,39 @@
+{
+ "brief": "Israeli occupation forces raided Fawwar refugee camp in the southern West Bank city of Hebron, the Ma'an news agency reported. The incursion marked another military operation in the densely populated camp, which has experienced repeated Israeli raids in recent years.\n\nDetails of the operation, including the purpose of the raid and whether there were casualties or arrests, were not immediately available.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/38004",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-several-towns-west-bank-local-media-report",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-23T19:27:24+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/HwsiLaIIPTwkim5EvLiD6iHBJgs88c_9pHyjE1OkI2Zjr9EdNFwIzVqbsuzsh-zB3IPD7jIRHzET-XxE3BPQP85NCVlJHdShJ8HWjUACuKFo9yk8SblJ6C2-qXtrzUGI9ckpAqvOpRSWRH9WcFbekpYM0qwe6RMF_PCxVk22HRO30xRpAnawSH3oigGS5mY91cc-WSJElvXptfsHARm2njTmzaW8f5qow-avbaHjh_XHFEbFOgGSmRMqTWGPxFvazDCMgXEzAHIKOhOL9wjC1AuVyOekwREftU9CZlA0wzTUIahuQ8KLWLC7JIp6rRwLJPOY8hmBElWqqysa3V8EkQ.jpg",
+ "lang": "en",
+ "link": "https://t.me/maannews/38004",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/38004"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d97141e1fb",
+ "score": 46.9,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli forces raid Fawwar camp south of Hebron"
+}

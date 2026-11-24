@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/israeli-occupion-forces-kill-15-palestinians-in-gaza-and-intensify-incursions-and-destruction-in-the-central-gaza-strip",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-critically-wounded-israeli-fires-al-jazeera-reports",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-23T13:42:36+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "0077775564",
- "score": 85.83,
+ "score": 85.29,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",

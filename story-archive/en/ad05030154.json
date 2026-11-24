@@ -1,0 +1,33 @@
+{
+ "brief": "We Are Not Numbers reported that Palestinians displaced from destroyed homes in Gaza have been prevented from collecting even minimal personal items or debris from their former residences. The restriction extends to taking dust or fragments as mementos of their destroyed properties.\n\nThe constraint reflects broader limitations on access to damaged areas and raises questions about residents' ability to recover belongings or document losses from their homes.",
+ "cat": "humans",
+ "corroborating_sources": [
+  {
+   "article": "https://wearenotnumbers.org/my-voice-traveled-ahead-of-me",
+   "name": "We Are Not Numbers",
+   "url": "https://wearenotnumbers.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-23T23:00:44+00:00",
+ "dek": "We were not allowed to take even dust from our destroyed homes, not even a fragment to remember Gaza.",
+ "dup_of": null,
+ "image": "https://wearenotnumbers.org/wp-content/uploads/2026/11/Curt-festiva.webp",
+ "lang": "en",
+ "link": "https://wearenotnumbers.org/my-voice-traveled-ahead-of-me",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "We Are Not Numbers",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://wearenotnumbers.org/my-voice-traveled-ahead-of-me"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "ad05030154",
+ "score": 49.94,
+ "source": "We Are Not Numbers",
+ "source_id": "wann",
+ "source_url": "https://wearenotnumbers.org/",
+ "title": "Gaza residents barred from retrieving possessions from destroyed homes"
+}
