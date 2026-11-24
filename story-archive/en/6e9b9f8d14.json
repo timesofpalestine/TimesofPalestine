@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli air strikes in Gaza killed seven people, Al Jazeera English reported. The strikes occurred as health officials warned of a rapidly spreading meningitis outbreak in the territory.\n\nGaza health officials reported 272 meningitis cases in October, more than eight times the typical monthly rate. The spike in cases has raised concerns about disease transmission amid ongoing conflict and deteriorating health conditions in the enclave.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strikes-in-gaza-kill-7-as-doctors-warn-of-meningitis-outbreak?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-24T10:47:41+00:00",
+ "dek": "Gaza health officials say meningitis cases rose to 272 in October, more than eight times the typical monthly rate.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b055927c071-1795512615.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strikes-in-gaza-kill-7-as-doctors-warn-of-meningitis-outbreak?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strikes-in-gaza-kill-7-as-doctors-warn-of-meningitis-outbreak?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "6e9b9f8d14",
+ "score": 63.81,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli air strikes kill seven as meningitis cases surge in Gaza"
+}

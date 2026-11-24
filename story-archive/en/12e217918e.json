@@ -1,0 +1,33 @@
+{
+ "brief": "The Trump administration has expressed frustration over the lack of progress toward resolving the Gaza conflict, according to Ma'an Wire. Officials indicated dissatisfaction with the stalled situation and the absence of forward movement in efforts to address the crisis.\n\nThe administration's frustration signals mounting concerns about the persistence of the conflict and the challenges facing diplomatic initiatives aimed at a resolution.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172759.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-24T09:27:01+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172759.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "12e217918e",
+ "score": 48.88,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Trump administration expresses frustration over Gaza stalemate"
+}
