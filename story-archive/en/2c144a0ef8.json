@@ -1,0 +1,39 @@
+{
+ "brief": "An Israeli airstrike struck an apartment building in the Shati refugee camp in Gaza, killing at least four people, Al Jazeera English reported. The strike destroyed portions of the residential structure, with rescue efforts underway in the densely populated area.\n\nThe Shati camp, located near Gaza City, is home to tens of thousands of Palestinians displaced during earlier conflicts. Israeli military operations in the enclave have intensified in recent months, resulting in significant civilian casualties.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/25/israeli-strike-kills-four-people-in-gaza?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-hit-apartment-gaza-city-kills-four",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-25T04:13:58+00:00",
+ "dek": "An Israeli airstrike on an apartment building in the Shati refugee camp has killed at least four people.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795579972.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/25/israeli-strike-kills-four-people-in-gaza?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/25/israeli-strike-kills-four-people-in-gaza?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2c144a0ef8",
+ "score": 61.57,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli airstrike kills four in Gaza refugee camp"
+}
