@@ -6,10 +6,16 @@
    "article": "https://shehabnews.net/ar/post?id=170468&slug=%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D8%A9-%D8%AA%D9%86%D8%B9%D9%89-%D9%85%D8%AF%D9%8A%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A-%D8%B4%D9%85%D8%A7%D9%84-%D8%BA%D8%B2%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D9%8A%D8%AF-%D9%85%D8%AD%D9%85%D8%AF-%D8%A3%D8%A8%D9%88-%D8%A7%D9%84%D8%B9%D9%88%D9%81",
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-680",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
- "date": "2026-11-25T07:19:22+00:00",
+ "date": "2026-11-25T07:19:00+00:00",
  "dek": "The Palestinian Interior Ministry mourned Colonel Muhammad Majid Abu al-Awf, director of internal security in northern Gaza, who was killed along with his wife and two daughters in an Israeli airstrike, Shehab Wire…",
  "dup_of": null,
  "image": "https://fsn1.your-objectstorage.com/shehab/uploads/2026/11/file_6b068caea1ec6.webp",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "fe311388c2",
- "score": 63.41,
+ "score": 63.08,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
