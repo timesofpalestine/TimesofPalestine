@@ -13,6 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://www.aljazeera.net/politics/2026/11/25/%d9%85%d9%86-%d9%83%d8%b1%d9%8a%d8%a7%d8%aa-%d8%ba%d8%a7%d8%aa-%d8%a5%d9%84%d9%89-%d9%83%d9%88%d8%b4%d9%86%d8%b1-%d9%87%d9%84-%d9%86%d9%81%d8%af-%d8%b5%d8%a8%d8%b1?traffic_source=rss",
+   "name": "الجزيرة نت",
+   "url": "https://www.aljazeera.net/",
+   "verified": false
   }
  ],
  "date": "2026-11-25T08:21:49+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "85abe6c87c",
- "score": 49.79,
+ "score": 49.49,
  "source": "وكالة شهاب (حصري)",
  "source_id": "shehab",
  "source_url": "https://shehabnews.com/",
