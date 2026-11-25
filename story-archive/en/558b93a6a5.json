@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinian families in Gaza are waiting for relatives who have completed their prison sentences yet remain detained by Israeli authorities. The prisoners have finished their terms but have not been released, leaving families uncertain about when their loved ones will return home, Al Jazeera English reported.\n\nFamilies continue to seek clarity on the legal status and expected release dates of those still imprisoned after their sentences have expired.",
+ "cat": "prisoners",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/25/sentences-served-but-gaza-prisoners-remain-behind-israeli-bars?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-25T07:31:44+00:00",
+ "dek": "Palestinian families in Gaza wait for loved ones who remain in Israeli prisons despite completing their sentences.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/873A2836-copy-1795550539.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/25/sentences-served-but-gaza-prisoners-remain-behind-israeli-bars?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/25/sentences-served-but-gaza-prisoners-remain-behind-israeli-bars?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "558b93a6a5",
+ "score": 49.55,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Gaza prisoners serve sentences but remain in Israeli detention"
+}
