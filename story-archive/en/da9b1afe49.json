@@ -1,0 +1,33 @@
+{
+ "brief": "France's Senate rejected proposed amendments that would have required holders to declare self-custody cryptocurrency wallets valued at €100,000 or more, Bitcoin Magazine reported. The measure also would have applied to stablecoin holdings meeting the same threshold.\n\nThe rejected rule would have expanded financial disclosure requirements for French residents holding digital assets in personal wallets outside regulated exchanges or custodial services.",
+ "cat": "bitcoin",
+ "corroborating_sources": [
+  {
+   "article": "https://bitcoinmagazine.com/news/france-senate-rejects-self-custody",
+   "name": "Bitcoin Magazine",
+   "url": "https://bitcoinmagazine.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-25T14:51:04+00:00",
+ "dek": "Bitcoin Magazine France’s Senate Rejects Rule Forcing Bitcoin Holders to Declare Self-Custody Wallets France's Senate rejected amendments that would have forced holders to declare self-custody crypto wallets worth €100,000 or more, along with stablecoin and…",
+ "dup_of": null,
+ "image": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/Frances-Senate-Rejects-Rule-Forcing-Bitcoin-Holders-to-Declare-Self-Custody-Wallets.jpg",
+ "lang": "en",
+ "link": "https://bitcoinmagazine.com/news/france-senate-rejects-self-custody",
+ "max_age_hours": 336,
+ "media": {
+  "credit": "Bitcoin Magazine",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://bitcoinmagazine.com/news/france-senate-rejects-self-custody"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "da9b1afe49",
+ "score": 79.95,
+ "source": "Bitcoin Magazine",
+ "source_id": "btcmag",
+ "source_url": "https://bitcoinmagazine.com/",
+ "title": "France's Senate rejects Bitcoin self-custody wallet declaration rule"
+}

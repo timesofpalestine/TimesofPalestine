@@ -9,20 +9,20 @@
    "verified": true
   },
   {
-   "article": "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-hamas-official-his-wife-and-children",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-680",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-hamas-official-his-wife-and-children",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-25T11:24:37+00:00",
- "dek": "The air strike hit their Gaza apartment amid escalating Israeli attacks, the Interior Ministry says.",
+ "dek": "Gaza's internal security director and his family are among seven Palestinians killed by Israeli forces on Wednesday.",
  "dup_of": null,
  "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-25T092857Z_670670454_RC2WUOAYSQUZ_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-1-1795606726.jpg?resize=1920%2C1440",
  "lang": "en",
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "04869a1001",
- "score": 61.71,
+ "score": 61.4,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
