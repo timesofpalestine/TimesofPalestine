@@ -1,0 +1,39 @@
+{
+ "brief": "The Israeli Knesset voted to advance a proposed state inquiry into the October 7 attacks, Al Jazeera English reported, moving forward despite Prime Minister Benjamin Netanyahu's objections to the investigation.\n\nThe inquiry aims to examine Israel's response to and handling of the October 7 Hamas-led assault, which killed hundreds of Israelis and triggered the ongoing war in Gaza. Netanyahu has previously resisted calls for an independent probe into the events surrounding the attack.",
+ "cat": "politics",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/25/knesset-advances-october-7-probe-despite-netanyahus-objections?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israeli-opposition-advances-october-7-attack-probe-opposed-netanyahu",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-25T14:53:49+00:00",
+ "dek": "The Israeli Knesset has voted to advance a proposed state inquiry into the October 7 attacks…",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795618421.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/25/knesset-advances-october-7-probe-despite-netanyahus-objections?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/25/knesset-advances-october-7-probe-despite-netanyahus-objections?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "58625a7c6b",
+ "score": 49.59,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Knesset advances October 7 inquiry over Netanyahu opposition"
+}
