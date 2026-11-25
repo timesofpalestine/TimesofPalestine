@@ -1,0 +1,33 @@
+{
+ "brief": "A UN tribunal ruled that the organization wrongfully dismissed Palestinian staff members in 2024 based on unproven Israeli allegations, the Guardian reported. The judgment questioned the credibility of evidence linking the aid workers to Hamas and found that the sackings lacked proper justification.\n\nThe tribunal's decision casts doubt on the vetting process used by UN leadership and suggests that humanitarian operations in Gaza sustained damage from the dismissals. The ruling adds to international scrutiny over how the organization handled accusations against its workforce during the conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/25/un-sacked-palestinian-staff-on-back-of-unproven-israel-allegations",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-25T18:14:27+00:00",
+ "dek": "Judgment casts doubt on evidence linking aid workers to Hamas and says humanitarian efforts in Gaza were damaged A UN tribunal has cast doubt on the evidence used to justify the sacking of Palestinian UN aid workers in 2024, saying it was based “almost…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/65d32fbb43f0e7ee1a67c12068fb35f5cd6d3afb/780_0_6250_5000/master/6250.jpg?width=140&quality=85&auto=format&fit=max&s=b274c1d56c0497a8ae693e8ba87186da",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/nov/25/un-sacked-palestinian-staff-on-back-of-unproven-israel-allegations",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/nov/25/un-sacked-palestinian-staff-on-back-of-unproven-israel-allegations"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "41f704b05c",
+ "score": 79.91,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "UN tribunal rejects basis for firing Palestinian aid workers"
+}
