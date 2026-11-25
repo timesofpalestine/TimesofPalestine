@@ -1,0 +1,33 @@
+{
+ "brief": "The Human Rights Foundation announced funding for seven Bitcoin initiatives aimed at people living under authoritarian regimes, according to Bitcoin Magazine. The projects, supported through HRF's Bitcoin Development Fund, focus on self-custody, privacy and education tools adapted for conditions of repression. The initiatives range from mobile phone wallets to solar-powered mining operations.\n\nThe fund targets technological gaps that limit Bitcoin access in countries with restrictive governance. Projects address both practical barriers—such as limited electricity infrastructure—and security concerns facing users in surveillance-prone environments.",
+ "cat": "bitcoin",
+ "corroborating_sources": [
+  {
+   "article": "https://bitcoinmagazine.com/news/hrf-bitcoin-development-seven-projects",
+   "name": "Bitcoin Magazine",
+   "url": "https://bitcoinmagazine.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-25T17:22:30+00:00",
+ "dek": "Bitcoin Magazine HRF Announces Funding of Seven Bitcoin Projects for People Living Under Authoritarian Regimes HRF's Bitcoin Development Fund backed seven projects for self-custody, privacy and education under repression, from phone wallets to solar mining in…",
+ "dup_of": null,
+ "image": "https://bitcoinmagazine.com/wp-content/uploads/2026/11/Banner_7_Final-scaled.png",
+ "lang": "en",
+ "link": "https://bitcoinmagazine.com/news/hrf-bitcoin-development-seven-projects",
+ "max_age_hours": 336,
+ "media": {
+  "credit": "Bitcoin Magazine",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://bitcoinmagazine.com/news/hrf-bitcoin-development-seven-projects"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2575d0fa7c",
+ "score": 79.97,
+ "source": "Bitcoin Magazine",
+ "source_id": "btcmag",
+ "source_url": "https://bitcoinmagazine.com/",
+ "title": "HRF funds seven Bitcoin projects for people under authoritarian rule"
+}
