@@ -1,0 +1,33 @@
+{
+ "brief": "Middle East Eye reported that more than 1,680 complaints of torture during interrogation led to only five criminal investigations, all of which closed without indictments. The findings expose systematic abusive practices in Israeli interrogation procedures against Palestinians.\n\nThe investigation documented patterns of torture that resulted in forced confessions, yet accountability mechanisms failed to produce prosecutions despite the volume of complaints. The closure of all five investigations without charges suggests minimal consequences for interrogators accused of abuse.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/news/israeli-torture-produces-palestinian-confessions-courts-accept-report-finds",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-25T14:05:56+00:00",
+ "dek": "Tortured into confessing: Report exposes abusive Israeli interrogation of Palestinians Submitted by Elis Gjevori on Wed, 11/25/2026 - 13:09 More than 1,680 interrogation torture complaints led to five criminal investigations, all closed without indictments…",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/styles/crop_16_9/public/images-story/000_39U32G2.jpg.jpg?itok=VR3q_gUH",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/news/israeli-torture-produces-palestinian-confessions-courts-accept-report-finds",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/news/israeli-torture-produces-palestinian-confessions-courts-accept-report-finds"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "30dcfc842d",
+ "score": 49.79,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Report finds Israeli interrogators tortured Palestinians with impunity"
+}
