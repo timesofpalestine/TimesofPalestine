@@ -1,0 +1,33 @@
+{
+ "brief": "اللاجئون الفلسطينيون في غزة، الذين فرّوا من ديارهم عام 1948، يعيشون اليوم واقعاً مركباً من النزوح المتكرر. يحمل هؤلاء ذاكرة النكبة الأولى وخسارة أراضيهم الأصلية، فيما يواجهون اليوم موجة نزوح جديدة تضيف معاناة إلى معاناة تمتد سبعة عقود.\n\nيعكس وضع اللاجئ-النازح الحالي تعقيد الأزمة الفلسطينية؛ إذ يجد من فقد مرة أن يفقد مرة أخرى، حاملاً شعوراً بالاقتلاع المضاعف والحرمان من الاستقرار. تجسّد هذه الحالة استمرار الحالة الفلسطينية بين الشرود والبحث عن أرض آمنة لم تتحقق منذ قرابة ثلاثة أرباع القرن.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://palinfo.com/news/2026/11/25/1124787",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-25T21:11:52+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-ar.svg",
+ "lang": "ar",
+ "link": "https://palinfo.com/news/2026/11/25/1124787",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "61c9c0b546",
+ "score": 49.86,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "لاجئو غزة منذ 1948 يواجهون نزوحاً جديداً"
+}
