@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/38033",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53892",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
   }
  ],
  "date": "2026-11-25T08:09:49+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "5e4037a17a",
- "score": 43.96,
+ "score": 43.75,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
