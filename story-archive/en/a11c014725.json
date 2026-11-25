@@ -6,25 +6,7 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/11/25/jerusalem-daily-israel-kills-hamass-gaza-security-chief?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-hamas-official-his-wife-and-children",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-680",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
-   "article": "https://t.me/eyesonpal/53897",
-   "name": "Eye on Palestine",
-   "url": "https://t.me/eyesonpal",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-25T16:02:22+00:00",
@@ -43,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "a11c014725",
- "score": 61.97,
+ "score": 61.73,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
