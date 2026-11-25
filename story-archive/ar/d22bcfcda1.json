@@ -13,6 +13,12 @@
    "name": "صحيفة فلسطين",
    "url": "https://felesteen.news/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/Arabi21News/430899",
+   "name": "عربي21",
+   "url": "https://t.me/arabi21news",
+   "verified": false
   }
  ],
  "date": "2026-11-24T10:43:32+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "d22bcfcda1",
- "score": 39.3,
+ "score": 39.04,
  "source": "شبكة قدس الإخبارية",
  "source_id": "qudsn",
  "source_url": "https://qudsn.co/",
