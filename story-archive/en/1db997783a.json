@@ -1,0 +1,33 @@
+{
+ "brief": "Gaza's health ministry has issued an epidemic alert following a sharp rise in meningitis infections, the Guardian reported. The ministry recorded 272 new cases in October, more than eight times the normal monthly rate for the territory.\n\nThe October caseload far exceeded typical infection patterns, though the health ministry statement did not specify underlying causes or containment measures being implemented.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/24/gaza-meningitis-epidemic-alert",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-24T14:51:18+00:00",
+ "dek": "Health ministry records 272 new infections in October, more than eight times the normal monthly rate Gaza’s health ministry has issued an epidemic alert after a sharp rise in meningitis infections, with more than 270 new cases reported in October.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/f28b38c1e5902f250db5030c50559091c6afe4c3/0_0_4206_3365/master/4206.jpg?width=140&quality=85&auto=format&fit=max&s=6d163cc9e0d08484ca9c86a12364730d",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/nov/24/gaza-meningitis-epidemic-alert",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/nov/24/gaza-meningitis-epidemic-alert"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1db997783a",
+ "score": 32.37,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Gaza declares meningitis epidemic after cases spike eightfold"
+}
