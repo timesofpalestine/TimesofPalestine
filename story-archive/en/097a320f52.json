@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces killed a senior Hamas commander in Gaza, the Ma'an news agency reported. The military said the operation targeted a prominent leader within the organization, though additional details about the strike and its location were not immediately disclosed.\n\nThe announcement comes as Israel continues military operations in the enclave following the October 7 attacks. Hamas has not yet commented on the reported death of the commander.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172856.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-26T08:15:40+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172856.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "097a320f52",
+ "score": 48.76,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli military announces killing of Hamas senior commander in Gaza"
+}
