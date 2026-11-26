@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli settlers set fire to a Palestinian vehicle in Jerusalem, according to Al Jazeera English. The incident was reported by correspondent Ava Warriner in the outlet's Jerusalem Daily segment. No additional details about the location, timing, or circumstances of the incident were provided.\n\nThe arson attack is among recurring incidents of settler violence targeting Palestinian property in the occupied West Bank and East Jerusalem.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/26/jerusalem-daily-israeli-settlers-set-fire-to-a-palestinian-vehicle?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-26T15:23:25+00:00",
+ "dek": "Al Jazeera’s Ava Warriner has the latest in Jerusalem Daily.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795706590.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/26/jerusalem-daily-israeli-settlers-set-fire-to-a-palestinian-vehicle?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/26/jerusalem-daily-israeli-settlers-set-fire-to-a-palestinian-vehicle?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1292a9bffd",
+ "score": 48.46,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers torch Palestinian vehicle in Jerusalem"
+}
