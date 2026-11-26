@@ -7,6 +7,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": false
+  },
+  {
+   "article": "https://mondoweiss.net/2026/11/meningitis-cases-surge-in-gaza-as-deteriorating-living-conditions-put-children-at-risk",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": false
   }
  ],
  "date": "2026-11-24T14:51:18+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1db997783a",
- "score": 17.63,
+ "score": 17.43,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
