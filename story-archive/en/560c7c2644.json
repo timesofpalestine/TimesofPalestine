@@ -7,11 +7,17 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/clashes-besiktas-match-against-israeli-club-spark-diplomatic-row",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-11-26T21:18:55+00:00",
  "dek": "Georgian Police pepper-spray pro-Palestine Besiktas fans during match against Israeli club A Europa League match between Besiktas and Hapoel Beer-Sheva was suspended for 30 minutes on Thursday, after police used pepper spray on pro-Palestine Besiktas fans who…",
- "dup_of": "dae81bede3",
+ "dup_of": null,
  "image": "/media/times-of-palestine-cover-sports.svg",
  "lang": "en",
  "link": "https://www.middleeasteye.net/live-blog/live-blog-update/georgian-police-pepper-spray-pro-palestine-besiktas-fans-during-match",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "560c7c2644",
- "score": 49.57,
+ "score": 48.79,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
