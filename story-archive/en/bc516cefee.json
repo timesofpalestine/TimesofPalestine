@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli judges have recommended that prosecutors end their corruption case against Prime Minister Benjamin Netanyahu, ruling there is little prospect of conviction, Al Jazeera English reported. The recommendation came from a panel reviewing the charges, which include bribery, fraud, and breach of trust.\n\nNetanyahu has denied all allegations against him. The case has been ongoing for years and remains one of several legal challenges facing the Israeli leader.",
+ "cat": "accountability",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/26/judges-recommend-prosecutors-end-corruption-case-against-netanyahu?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/israeli-judges-recommend-prosecutors-drop-one-bribery-case-against-netanyahu",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-netanyahu-demands-immediate-end-corruption-trial-after-judges-cast",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-26T01:08:43+00:00",
+ "dek": "Israeli judges have ruled there is little prospect Benjamin Netanyahu will be convicted of corruption.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795655304.jpg?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/26/judges-recommend-prosecutors-end-corruption-case-against-netanyahu?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/26/judges-recommend-prosecutors-end-corruption-case-against-netanyahu?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "bc516cefee",
+ "score": 77.14,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli judges recommend dismissing Netanyahu corruption case"
+}
