@@ -1,0 +1,33 @@
+{
+ "brief": "An Israeli airstrike struck a residential apartment in Shati refugee camp west of Gaza City, the Ma'an news agency reported. Four people were killed in the strike.\n\nShati camp, located in the western part of Gaza City, is densely populated with Palestinian refugees. Details about the identities of those killed and the circumstances surrounding the strike were not immediately disclosed.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/maannews/38030",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-25T05:25:26+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "https://cdn4.telesco.pe/file/goOZqQVfXuzGUYtMYjjGDJEdheVuErw9Jww-MBgfeewxSXVkaIj4UHNZ5q_xF9-670-Iu8eSA4KdqHb3MMjhqxv2dJiFj5wuh2VXBxVU6fvHdYg8mUjYh6Ww9_yCRAIwGraynjVWChovz3GbANNXGWJYmWP4s7bm7lxlNdnpp8BU7XnYQDcdl1zZ7L42R7rG0WcXZumyS1HDMKyZy4G6hzFPrzykF9SQNHW2ryeBFt5V1uep2lpEu-EtYJmZpt0H4gMya-k5AWi8AAaxysJn1-t6_wJx4ATt8A21ItqS0SzngH8dBAmblx64Q5hHPMvX-DDCiE9gOxIYqDioluZRpA.jpg",
+ "lang": "en",
+ "link": "https://t.me/maannews/38030",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Maan Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://t.me/maannews/38030"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "110013c142",
+ "score": 45.78,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli strike kills 4 in Gaza refugee camp apartment"
+}
