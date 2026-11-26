@@ -13,6 +13,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/clashes-besiktas-match-against-israeli-club-spark-diplomatic-row",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
   }
  ],
  "date": "2026-11-26T21:00:48+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "dae81bede3",
- "score": 49.11,
+ "score": 48.91,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
