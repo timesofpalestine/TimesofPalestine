@@ -6,13 +6,7 @@
    "article": "https://www.al-monitor.com/originals/2026/11/palestinian-journalist-killed-israel-gaza-wins-prestigious-rory-peck-prize",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.theguardian.com/media/2026/nov/25/palestinian-journalist-killed-by-israel-in-gaza-wins-rory-peck-prize",
-   "name": "The Guardian",
-   "url": "https://www.theguardian.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-25T22:30:27+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "dbbbdf7939",
- "score": 63.09,
+ "score": 62.79,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",

@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strikes-kill-11-palestinians-including-two-girls-today-gaza",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/media/2026/nov/25/palestinian-journalist-killed-by-israel-in-gaza-wins-rory-peck-prize",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-25T23:11:06+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "bb968eead6",
- "score": 63.56,
+ "score": 63.26,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
