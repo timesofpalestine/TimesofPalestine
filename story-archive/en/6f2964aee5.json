@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.aljazeera.com/news/2026/11/26/israeli-attacks-on-gaza-kill-senior-education-official-seven-other-people?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-reportedly-kills-education-ministry-official-central-gaza",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "6f2964aee5",
- "score": 63.09,
+ "score": 62.66,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
