@@ -6,7 +6,13 @@
    "article": "https://www.maannews.net/news/2172856.html",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/hamas-weighs-response-after-israel-kills-10-people-gaza",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-26T08:15:40+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "097a320f52",
- "score": 44.97,
+ "score": 44.67,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
