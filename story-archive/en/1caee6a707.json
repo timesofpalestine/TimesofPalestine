@@ -1,0 +1,33 @@
+{
+ "brief": "A video documenting the experiences of children in Gaza shows them expressing despair about their future and trauma from aerial surveillance. One child said: \"I just wish that for one day I would not hear drones.\" The testimonies reflect the psychological toll of living under persistent military surveillance and conflict.\n\nThe Electronic Intifada report captures children describing their daily reality in the besieged territory. Their accounts highlight how constant overhead drone presence has become normalized in their lives, shaping their sense of safety and outlook.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://electronicintifada.net/content/video-gazas-children-have-no-hope-future/51720",
+   "name": "Electronic Intifada",
+   "url": "https://electronicintifada.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-25T19:18:00+00:00",
+ "dek": "“I just wish that for one day I would not hear drones.”",
+ "dup_of": null,
+ "image": "https://electronicintifada.net/sites/default/files/styles/mailchimp/public/2026-11/261125_-_ruwaida-children-video.png?itok=kHENafE8",
+ "lang": "en",
+ "link": "https://electronicintifada.net/content/video-gazas-children-have-no-hope-future/51720",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Electronic Intifada",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://electronicintifada.net/content/video-gazas-children-have-no-hope-future/51720"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "1caee6a707",
+ "score": 45.7,
+ "source": "Electronic Intifada",
+ "source_id": "ei",
+ "source_url": "https://electronicintifada.net/",
+ "title": "Gaza's children tell of living under constant drone surveillance"
+}
