@@ -1,0 +1,45 @@
+{
+ "brief": "Israeli settlers damaged homes belonging to the Tubasi family in the West Bank, Al Jazeera English reported. The family was forced from their property months earlier and remains barred from returning despite obtaining an Israeli court order permitting their return.\n\nThe settlers' action represents a continued obstruction of the family's efforts to reclaim their residence, undermining the judicial decision that had mandated their reinstatement.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/26/israeli-settlers-damage-palestinian-familys-homes-in-west-bank-attack?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/settlers-smash-foundations-palestinian-familys-homes-west-bank",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/settlers-smash-foundations-palestinian-familys-homes-west-bank",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-26T23:07:36+00:00",
+ "dek": "The Tubasi family was forced out months ago and has been denied a return by settlers despite an Israeli court order.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b08ac77-1795730551.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/26/israeli-settlers-damage-palestinian-familys-homes-in-west-bank-attack?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/26/israeli-settlers-damage-palestinian-familys-homes-in-west-bank-attack?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "363f7edcbe",
+ "score": 49.86,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Israeli settlers attack Palestinian homes despite court order"
+}
