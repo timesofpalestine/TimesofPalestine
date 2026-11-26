@@ -6,13 +6,19 @@
    "article": "https://t.me/gazaalannet/85502",
    "name": "غزة الآن · تيليغرام",
    "url": "https://t.me/gazaalannet",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/Palinfo/329292",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": true
   }
  ],
  "date": "2026-11-26T10:37:27+00:00",
  "dek": "عاجل | وزير جيش الاحتلال الإسرائيلي يسرائيل كاتس: إما أن تتخلى حماس عن سلاحها طوعاً، ويتم نزع سلاح قطاع غزة، أو أن يتولى الجيش الإسرائيلي تجريدها من السلاح، استكمالاً لعملية «عربات جدعون 2».",
  "dup_of": null,
- "image": "/media/times-of-palestine-cover-social-ar.svg",
+ "image": "/media/times-of-palestine-cover-social-b-ar.svg",
  "lang": "ar",
  "link": "https://t.me/gazaalannet/85502",
  "max_age_hours": 72,
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "1a1a57fab9",
- "score": 58.83,
+ "score": 58.52,
  "source": "غزة الآن · تيليغرام",
  "source_id": "tg-gazanow",
  "source_url": "https://t.me/gazaalannet",
