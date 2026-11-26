@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli restrictions on humanitarian aid, combined with damaged infrastructure and flooding in displacement camps, are forcing thousands of Palestinians in Gaza to leave their shelters as winter weather intensifies. Al Jazeera English reported that displaced families face deteriorating conditions in tent camps, where inadequate structures cannot withstand heavy rainfall. The situation compounds months of displacement caused by the ongoing conflict.\n\nAid organizations say Israeli limitations on humanitarian supplies have prevented proper camp maintenance and weatherproofing. Flooded tents and collapsed structures leave families without adequate shelter, forcing some to seek alternative locations or crowd into already overcrowded facilities. Humanitarian workers warn that winter conditions pose acute health risks to vulnerable populations, particularly children and the elderly.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/26/why-are-winter-rains-forcing-palestinians-in-gaza-to-flee-again?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-26T19:19:12+00:00",
+ "dek": "Israeli restrictions on humanitarian aid, damaged buildings and flooded tents leave displaced Palestinians vulnerable.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af08bf56851-1794149365.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/26/why-are-winter-rains-forcing-palestinians-in-gaza-to-flee-again?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/26/why-are-winter-rains-forcing-palestinians-in-gaza-to-flee-again?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "f35290bd9c",
+ "score": 49.69,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Winter rains push Gaza's displaced Palestinians into renewed flight"
+}
