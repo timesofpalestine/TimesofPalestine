@@ -19,6 +19,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://shehabnews.net/ar/post?id=170629&slug=%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A-%D8%A8%D8%BA%D8%B2%D8%A9-%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84-%D8%A3%D8%A8%D9%88-%D9%86%D8%AF%D9%89-%D9%85%D8%AD%D8%A7%D9%88%D9%84%D8%A9-%D9%84%D8%B6%D8%B1%D8%A8-%D8%A7%D9%84%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D9%8A%D8%A9-%D9%88%D8%A5%D8%AD%D8%AF%D8%A7%D8%AB-%D9%81%D8%B1%D8%A7%D8%BA-%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-26T09:00:06+00:00",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "e7ab9dbdff",
- "score": 61.15,
+ "score": 60.9,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",

@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli occupation forces issued an order to close a school in Jerusalem within 30 days, the Ma'an news agency reported. The closure directive was issued against the educational institution, though specific details regarding the school's name and the stated rationale for the closure order were not immediately available.\n\nThe move marks another instance of restrictions on Palestinian educational facilities in occupied East Jerusalem, where Israeli authorities have periodically issued closure orders and demolition notices against schools and other institutions.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.maannews.net/news/2172880.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-26T11:56:47+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-westbank.svg",
+ "lang": "en",
+ "link": "https://www.maannews.net/news/2172880.html",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "92aec4cb1e",
+ "score": 48.95,
+ "source": "Maan Wire (EN)",
+ "source_id": "maan-en",
+ "source_url": "https://www.maannews.net/",
+ "title": "Israeli authorities order Jerusalem school closed within 30 days"
+}
