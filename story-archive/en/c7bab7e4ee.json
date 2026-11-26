@@ -13,6 +13,12 @@
    "name": "Mondoweiss",
    "url": "https://mondoweiss.net/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/maannews/38044",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-26T06:14:15+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "c7bab7e4ee",
- "score": 46.78,
+ "score": 46.47,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
