@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli airstrikes have killed at least 16 schoolchildren in Gaza since the start of November, according to the Gaza ministry, The Guardian reported. The death toll follows an airstrike on a residential apartment in Gaza City that killed two sisters, aged 15 and 13.\n\nThe report comes as young people across the territory face intensifying attacks during the ongoing conflict.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/26/gaza-ministry-schoolchildren-killed-this-month-israel-strikes",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-26T17:59:44+00:00",
+ "dek": "Statement follows death of sisters, aged 15 and 13, in airstrike on residential apartment in Gaza City Israeli strikes have killed at least 16 schoolchildren in Gaza since the start of November, as young people across the territory face intensifying…",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/fb6f93363b44e1d9e8b27377c45da23d0f007ce4/215_0_5200_4160/master/5200.jpg?width=140&quality=85&auto=format&fit=max&s=c5008fad4f7aa165fff5115f0adb772f",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/nov/26/gaza-ministry-schoolchildren-killed-this-month-israel-strikes",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/nov/26/gaza-ministry-schoolchildren-killed-this-month-israel-strikes"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "71634d4c6e",
+ "score": 63.24,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli strikes kill 16 schoolchildren in Gaza this month"
+}
