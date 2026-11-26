@@ -13,6 +13,12 @@
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
    "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53893",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
   }
  ],
  "date": "2026-11-25T23:11:06+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "bb968eead6",
- "score": 61.59,
+ "score": 61.38,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
