@@ -6,17 +6,11 @@
    "article": "https://www.aljazeera.net/news/2026/11/26/%d8%a7%d8%b3%d8%aa%d8%b4%d9%87%d8%a7%d8%af-11-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86%d9%8a%d8%a7-%d8%a8%d9%8a%d9%86%d9%87%d9%85-%d9%85%d8%af%d9%8a%d8%b1-%d8%b9%d8%a7%d9%85-%d8%ac%d9%87%d8%a7%d8%b2?traffic_source=rss",
    "name": "الجزيرة نت",
    "url": "https://www.aljazeera.net/",
-   "verified": true
-  },
-  {
-   "article": "https://www.maannews.net/news/2172856.html",
-   "name": "وكالة معا (حصري)",
-   "url": "https://www.maannews.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-26T01:38:15+00:00",
- "dek": "صعّدت إسرائيل من هجماتها على قطاع غزة، إذ أعلن جيش الاحتلال اغتيال أحد قادة حركة حماس، بالتزامن مع توعد وزير الدفاع الإسرائيلي يسرائيل كاتس بملاحقة رئيس المكتب السياسي للحركة خليل الحية ورفاقه.",
+ "dek": "صعّدت إسرائيل من هجماتها على قطاع غزة، إذ أعلن جيش الاحتلال اغتيال الدكتور خالد أبو ندى، بالتزامن مع توعد وزير الدفاع الإسرائيلي يسرائيل كاتس بملاحقة رئيس المكتب السياسي للحركة خليل الحية ورفاقه.",
  "dup_of": null,
  "image": "https://www.aljazeera.net/wp-content/uploads/2026/11/sh46s8y4shsy-1795674967.jpg?resize=1200%2C630",
  "lang": "ar",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "c14f1eb168",
- "score": 44.99,
+ "score": 44.8,
  "source": "الجزيرة نت",
  "source_id": "aja",
  "source_url": "https://www.aljazeera.net/",
