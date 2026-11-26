@@ -1,0 +1,39 @@
+{
+ "brief": "Meningitis cases are rising sharply in Gaza as overcrowding and damaged sanitation systems create conditions for disease spread, Al Jazeera English reported. The bacterial infection poses particular risk to children in the territory, where water and sanitation infrastructure has deteriorated significantly during the ongoing conflict.\n\nHealth officials have warned that the combination of dense population centers, inadequate waste management, and limited access to clean water creates an environment where meningitis can proliferate. The situation reflects broader concerns about disease outbreaks as Gaza's health system struggles to function amid widespread destruction.",
+ "cat": "health",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/26/gaza-meningitis-cases-surge-as-collapsing-infrastructure-fuels-health-fears?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://mondoweiss.net/2026/11/meningitis-cases-surge-in-gaza-as-deteriorating-living-conditions-put-children-at-risk",
+   "name": "Mondoweiss",
+   "url": "https://mondoweiss.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-26T06:14:15+00:00",
+ "dek": "Meningitis is raising alarm in Gaza, where overcrowding, damaged sanitation are putting children at risk.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/873A3804-copy-1795641969.jpeg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/26/gaza-meningitis-cases-surge-as-collapsing-infrastructure-fuels-health-fears?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/26/gaza-meningitis-cases-surge-as-collapsing-infrastructure-fuels-health-fears?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "c7bab7e4ee",
+ "score": 49.33,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Meningitis cases surge in Gaza amid collapsing health infrastructure"
+}
