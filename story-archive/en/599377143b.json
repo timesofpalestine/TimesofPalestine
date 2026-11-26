@@ -7,6 +7,12 @@
    "name": "Shehab Wire (EN)",
    "url": "https://shehabnews.com/",
    "verified": false
+  },
+  {
+   "article": "https://www.maannews.net/news/2172861.html",
+   "name": "Maan Wire (EN)",
+   "url": "https://www.maannews.net/",
+   "verified": false
   }
  ],
  "date": "2026-11-26T06:10:24+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "599377143b",
- "score": 62.97,
+ "score": 62.66,
  "source": "Shehab Wire (EN)",
  "source_id": "shehab-en",
  "source_url": "https://shehabnews.com/",
