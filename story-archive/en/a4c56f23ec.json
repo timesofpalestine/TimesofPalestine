@@ -1,0 +1,33 @@
+{
+ "brief": "US technology companies have become integral to Israel's military infrastructure, supplying surveillance systems and artificial intelligence-powered targeting tools used in operations against Palestinians, Al Jazeera English reported. Silicon Valley firms have developed or provided systems that feed into Israel's warfare capabilities, from drone operations to data collection and analysis platforms.\n\nThe integration reflects broader defense contracts between American tech companies and Israeli military and intelligence agencies. These partnerships have expanded significantly in recent years, positioning major US technology firms as central suppliers to Israel's military apparatus.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/news/2026/11/26/how-silicon-valley-central-israel-war-palestinians?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-26T06:12:53+00:00",
+ "dek": "From surveillance systems to AI targeting, US tech giants are deeply embedded in Israel's war machine.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/07/2024-10-15T021535Z_123914133_RC2IKAA62WWQ_RTRMADP_3_USA-DEFENSE-ARMY-1784890221.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/news/2026/11/26/how-silicon-valley-central-israel-war-palestinians?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/news/2026/11/26/how-silicon-valley-central-israel-war-palestinians?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a4c56f23ec",
+ "score": 49.51,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "US tech giants embed surveillance and AI systems in Israeli war operations"
+}
