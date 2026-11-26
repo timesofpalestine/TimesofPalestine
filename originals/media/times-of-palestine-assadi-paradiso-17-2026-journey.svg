@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Sufien's road in Paradiso 17: Safad, Syria, Kuwait, Italy, New York, Arizona</title>
+<desc id="dsc">A route of six stations across the life of Sufien, the Palestinian refugee at the heart of Hannah Lillith Assadi's novel: Safad, emptied in the 1948 Nakba; Syria; Kuwait, which he leaves at seventeen; an Italian university town, where he becomes Frank Leone; New York; and the Arizona desert, where his daughter grows up. Labels in English and Arabic.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111214"/>
+<stop offset="1" stop-color="#1d1e21"/>
+</linearGradient>
+<linearGradient id="road" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#286344"/>
+<stop offset="0.5" stop-color="#c7a86b"/>
+<stop offset="1" stop-color="#8a1f2d"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="0" y="0" width="22" height="900" fill="#8a1f2d"/>
+<rect x="22" y="0" width="8" height="900" fill="#286344"/>
+
+<text x="110" y="80" font-family="'Libre Franklin',Arial,sans-serif" font-size="19" letter-spacing="5" fill="#c7a86b">PARADISO 17 · THE ROAD OF SUFIEN</text>
+<text x="110" y="150" font-family="'Source Serif 4',Georgia,serif" font-size="56" fill="#f2eee8">Seven decades, six stations, one way home</text>
+<text x="110" y="202" font-family="Cairo,Arial,sans-serif" font-size="32" fill="#c7a86b">سبعة عقود وست محطات وطريق واحد إلى البيت</text>
+<line x1="110" y1="240" x2="1520" y2="240" stroke="#3a3b3f" stroke-width="2"/>
+
+<!-- the road -->
+<path d="M190 520 C330 420 420 420 470 470 C540 540 640 560 750 480 C850 410 960 410 1030 470 C1110 540 1210 560 1290 480 C1350 420 1420 430 1460 470" fill="none" stroke="url(#road)" stroke-width="7" stroke-linecap="round"/>
+
+<!-- station 1: Safad -->
+<circle cx="190" cy="520" r="18" fill="#286344" stroke="#f2eee8" stroke-width="3"/>
+<text x="190" y="610" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">SAFAD</text>
+<text x="190" y="650" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#c7a86b">صفد</text>
+<text x="190" y="690" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">The Nakba, 1948</text>
+<text x="190" y="722" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">النكبة 1948</text>
+
+<!-- station 2: Syria -->
+<circle cx="470" cy="470" r="14" fill="#c7a86b"/>
+<text x="470" y="360" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">SYRIA</text>
+<text x="470" y="400" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#c7a86b">سوريا</text>
+
+<!-- station 3: Kuwait -->
+<circle cx="750" cy="480" r="14" fill="#c7a86b"/>
+<text x="750" y="580" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">KUWAIT</text>
+<text x="750" y="620" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#c7a86b">الكويت</text>
+<text x="750" y="660" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">He leaves at seventeen</text>
+<text x="750" y="692" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">يغادرها في السابعة عشرة</text>
+
+<!-- station 4: Italy -->
+<circle cx="1030" cy="470" r="14" fill="#c7a86b"/>
+<text x="1030" y="290" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">ITALY</text>
+<text x="1030" y="330" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#c7a86b">إيطاليا</text>
+<text x="1030" y="364" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">He becomes Frank Leone</text>
+<text x="1030" y="394" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">يصير فرانك ليوني</text>
+
+<!-- station 5: New York -->
+<circle cx="1290" cy="480" r="14" fill="#c7a86b"/>
+<text x="1290" y="580" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">NEW YORK</text>
+<text x="1290" y="620" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#c7a86b">نيويورك</text>
+
+<!-- station 6: Arizona -->
+<circle cx="1460" cy="470" r="18" fill="#8a1f2d" stroke="#f2eee8" stroke-width="3"/>
+<text x="1460" y="290" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" fill="#f2eee8">ARIZONA</text>
+<text x="1460" y="330" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="28" fill="#c7a86b">أريزونا</text>
+<text x="1460" y="364" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="18" fill="#aaa9a5">His daughter's desert</text>
+<text x="1460" y="394" text-anchor="middle" font-family="Cairo,Arial,sans-serif" font-size="19" fill="#aaa9a5">صحراء ابنته</text>
+
+<line x1="110" y1="780" x2="1520" y2="780" stroke="#3a3b3f" stroke-width="2"/>
+<text x="110" y="826" font-family="'Libre Franklin',Arial,sans-serif" font-size="20" fill="#aaa9a5">Drawn from the novel by Hannah Lillith Assadi (Knopf, 2026), inspired by the life of her father, Sami Abdul Fattah Assadi (1943–2022)</text>
+<text x="1520" y="866" text-anchor="end" font-family="Cairo,Arial,sans-serif" font-size="20" fill="#aaa9a5">من رواية هانا ليليث أسعدي المستوحاة من سيرة والدها سامي عبد الفتاح أسعدي</text>
+</svg>
