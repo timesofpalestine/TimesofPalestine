@@ -1,0 +1,33 @@
+{
+ "brief": "Palestinian journalists continued reporting from Gaza during the most perilous conditions, transmitting live coverage that brought the territory's situation directly to international audiences. Their reporting provided on-the-ground documentation of events as they occurred, We Are Not Numbers reported.\n\nPalestinian journalists maintained their presence and coverage throughout the crisis. Their dispatches offered perspectives from those witnessing developments firsthand, rather than relying solely on outside correspondents or secondhand accounts.",
+ "cat": "humans",
+ "corroborating_sources": [
+  {
+   "article": "https://wearenotnumbers.org/gaza-tells-its-own-story",
+   "name": "We Are Not Numbers",
+   "url": "https://wearenotnumbers.org/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-27T23:00:28+00:00",
+ "dek": "In the most dangerous moments, Palestinian journalists went live and showed the world what was happening.",
+ "dup_of": null,
+ "image": "https://wearenotnumbers.org/wp-content/uploads/2026/11/tribute-to-journalists.webp",
+ "lang": "en",
+ "link": "https://wearenotnumbers.org/gaza-tells-its-own-story",
+ "max_age_hours": 720,
+ "media": {
+  "credit": "We Are Not Numbers",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://wearenotnumbers.org/gaza-tells-its-own-story"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "a2de433636",
+ "score": 49.96,
+ "source": "We Are Not Numbers",
+ "source_id": "wann",
+ "source_url": "https://wearenotnumbers.org/",
+ "title": "Palestinian journalists broadcast Gaza's crisis as it unfolded"
+}
