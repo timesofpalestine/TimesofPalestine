@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces raided multiple locations across the occupied West Bank on Friday, detaining several Palestinians and injuring at least three others, Middle East Eye reported. The operations occurred amid ongoing tensions in the territory.\n\nDetails of specific locations and the identities of those detained were not immediately clear. Israeli settler attacks also accompanied the military raids, according to the report.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-beaten-and-detained-israeli-raids-across-occupied",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-27T22:10:15+00:00",
+ "dek": "Several Palestinians beaten and detained in Israeli raids across occupied West Bank Raids and attacks by Israeli forces and settlers across the occupied West Bank on Friday left at least three Palestinians injured and several detained.",
+ "dup_of": null,
+ "image": "https://www.middleeasteye.net/sites/default/files/west-bank-tear-gas-israel-palestine.jpg",
+ "lang": "en",
+ "link": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-beaten-and-detained-israeli-raids-across-occupied",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Middle East Eye",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.middleeasteye.net/live-blog/live-blog-update/several-palestinians-beaten-and-detained-israeli-raids-across-occupied"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "9d57bbbd06",
+ "score": 63.9,
+ "source": "Middle East Eye",
+ "source_id": "mee",
+ "source_url": "https://www.middleeasteye.net/",
+ "title": "Israeli forces detain Palestinians, beat residents in West Bank raids"
+}
