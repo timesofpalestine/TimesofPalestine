@@ -1,0 +1,45 @@
+{
+ "brief": "Costa Rica denied entry to UN special rapporteur on Palestine Francesca Albanese, according to Al Jazeera English. The country cited unfounded \"links to terrorist acts\" as grounds for the exclusion, though no evidence was presented.\n\nAlbanese has drawn international attention for her investigations into allegations of genocide in Gaza. The denial marks a rare instance of a UN human rights official being barred from entry by a country typically aligned with international norms on diplomatic access.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/27/un-gaza-rapporteur-francesca-albanese-denied-entry-into-costa-rica?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/costa-rica-bars-un-rapporteur-palestinian-territory-drawing-concern-rights-chief",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-rights-chief-voices-concern-costa-rica-bars-francesca-albanese",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-27T20:10:30+00:00",
+ "dek": "Costa Rica has barred UN special rapporteur Francesca Albanese, citing unfounded ‘links to terrorist acts’.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795810110.jpg?resize=1620%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/27/un-gaza-rapporteur-francesca-albanese-denied-entry-into-costa-rica?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/27/un-gaza-rapporteur-francesca-albanese-denied-entry-into-costa-rica?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "38f371ba95",
+ "score": 49.37,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Costa Rica bars UN Gaza rapporteur Albanese at border"
+}
