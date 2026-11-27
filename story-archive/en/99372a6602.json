@@ -1,0 +1,45 @@
+{
+ "brief": "Georgian police confronted Besiktas supporters during a match against Israeli team Hapoel Beer-Sheva in Tbilisi, Al Jazeera English reported. The clash erupted after fans displayed a Palestinian flag, prompting a 30-minute suspension of the game. Details of injuries or arrests were not immediately available.\n\nBesiktas, based in Istanbul, has a history of political activism among its fan base. The incident occurred as Israeli sports teams continue to participate in international competitions across various countries.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/sports/2026/11/26/georgian-police-clash-with-turkiyes-besiktas-fans-over-palestinian-flag?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/georgian-police-pepper-spray-pro-palestine-besiktas-fans-during-match",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/clashes-besiktas-match-against-israeli-club-spark-diplomatic-row",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-26T23:37:17+00:00",
+ "dek": "Match between Besiktas and Hapoel Beer-Sheva suspended for 30 minutes after confrontation between fans and police.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b08b161a8463-1795731809.jpg?resize=1920%2C1440",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/sports/2026/11/26/georgian-police-clash-with-turkiyes-besiktas-fans-over-palestinian-flag?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/sports/2026/11/26/georgian-police-clash-with-turkiyes-besiktas-fans-over-palestinian-flag?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "99372a6602",
+ "score": 49.02,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Turkish fans clash with Georgian police over Palestinian flag"
+}
