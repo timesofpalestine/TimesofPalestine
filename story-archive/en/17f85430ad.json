@@ -9,16 +9,16 @@
    "verified": true
   },
   {
+   "article": "https://www.al-monitor.com/originals/2026/11/costa-rica-bars-un-rapporteur-palestinian-territory-drawing-concern-rights-chief",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/un-rights-chief-voices-concern-costa-rica-bars-francesca-albanese",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": true
-  },
-  {
-   "article": "https://www.al-monitor.com/originals/2026/11/un-urges-costa-rica-let-palestinians-rapporteur",
-   "name": "Al-Monitor",
-   "url": "https://www.al-monitor.com/",
-   "verified": false
   }
  ],
  "date": "2026-11-27T14:17:25+00:00",
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "17f85430ad",
- "score": 45.99,
+ "score": 45.69,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
