@@ -1077,6 +1077,24 @@
    "ar": "عبد الرحمن الجندي",
    "wrong": ["عبدالرحمن الجندى"],
    "verified": "aajae.co + alquds.co.uk, 2026-11-26"
+  },
+  {
+   "latin": "Hatem al-Hafi (Popular Committee for Services of Old Askar Camp)",
+   "ar": "حاتم الحافي",
+   "wrong": ["حاتم الهافي", "حاتم الحافظ"],
+   "verified": "fromthecamp.com (منصة من المخيم، نابلس)، 2024-08-26"
+  },
+  {
+   "latin": "Ghassan Daghlas (governor of Nablus)",
+   "ar": "غسان دغلس",
+   "wrong": ["غسان دقلس", "غسان دغلسه"],
+   "verified": "fromthecamp.com + وكالات فلسطينية، 2025-11-26"
+  },
+  {
+   "latin": "Anan Atira (mayor of Nablus)",
+   "ar": "عنان الأتيرة",
+   "wrong": ["عنان عطيرة", "عنان العتيرة"],
+   "verified": "arn.ps + zmnfm.ps + موقع بلدية نابلس، 2026"
   }
  ]
 }

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">What Boulder sent to Askar camp, 2011-2026</title>
+  <desc id="desc">A bilingual ledger of the Boulder-Nablus Sister City Project: an incubator, an intensive-care ambulance for Askar refugee camp, the Askar Boulder Medical Center opened in November 2025, a narrow fire truck for the Nablus fire department, and the equipment and play-yard campaign now running, set beside UNRWA's figures for Askar camp.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101114"/>
+      <stop offset="1" stop-color="#1c1d21"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a1f2d"/>
+      <stop offset=".55" stop-color="#286344"/>
+      <stop offset="1" stop-color="#c7a86b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .sans{font-family:"Libre Franklin","Arial",sans-serif}
+      .serif{font-family:"Source Serif 4","Georgia",serif}
+      .arabic{font-family:"Cairo","Arial",sans-serif}
+      .ivory{fill:#f2eee8}
+      .muted{fill:#aaa9a5}
+      .gold{fill:#c7a86b}
+      .green{fill:#61aa80}
+      .red{fill:#dc6572}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="0" width="22" height="900" fill="#8a1f2d"/>
+  <rect x="22" width="8" height="900" fill="#286344"/>
+
+  <text x="86" y="78" class="serif ivory" font-size="50" font-weight="800">What Boulder sent to Askar camp</text>
+  <text x="86" y="122" class="sans muted" font-size="22">One Colorado town, one Nablus refugee camp, fifteen years of deliveries</text>
+  <text x="1544" y="78" class="arabic ivory" font-size="36" font-weight="800" text-anchor="end">ما أرسلته بولدر إلى مخيم عسكر</text>
+  <text x="1544" y="118" class="arabic muted" font-size="20" text-anchor="end">مدينة أميركية ومخيم في نابلس.. خمسة عشر عاماً من التسليم</text>
+
+  <g filter="url(#shadow)">
+    <rect x="86" y="178" width="420" height="612" rx="16" fill="#1f2125" stroke="#3a3b41" stroke-width="2"/>
+    <text x="114" y="222" class="sans gold" font-size="16" font-weight="800" letter-spacing="1.2">ASKAR CAMP, NABLUS</text>
+    <text x="478" y="222" class="arabic gold" font-size="16" font-weight="800" text-anchor="end">مخيم عسكر - نابلس</text>
+
+    <text x="114" y="286" class="serif ivory" font-size="46" font-weight="800">25,446</text>
+    <text x="114" y="316" class="sans muted" font-size="18">registered Palestine refugees</text>
+    <text x="478" y="344" class="arabic muted" font-size="17" text-anchor="end">لاجئ فلسطيني مسجل</text>
+
+    <text x="114" y="408" class="serif ivory" font-size="46" font-weight="800">0.119 km²</text>
+    <text x="114" y="438" class="sans muted" font-size="18">the whole camp, set up in 1950</text>
+    <text x="478" y="466" class="arabic muted" font-size="17" text-anchor="end">مساحة المخيم المقام عام 1950</text>
+
+    <text x="114" y="530" class="serif ivory" font-size="46" font-weight="800">6 / 2</text>
+    <text x="114" y="560" class="sans muted" font-size="18">UNRWA schools / health centres</text>
+    <text x="478" y="588" class="arabic muted" font-size="17" text-anchor="end">مدارس وعيادتان للأونروا</text>
+
+    <rect x="114" y="618" width="364" height="2" fill="#3a3b41"/>
+    <text x="114" y="658" class="sans ivory" font-size="19">Among the most densely populated</text>
+    <text x="114" y="684" class="sans ivory" font-size="19">camps in the occupied West Bank</text>
+    <text x="478" y="722" class="arabic ivory" font-size="18" text-anchor="end">من أكثر مخيمات الضفة اكتظاظاً</text>
+    <text x="114" y="762" class="sans muted" font-size="16">UNRWA camp profile, 2025 data</text>
+  </g>
+
+  <rect x="560" y="196" width="4" height="580" fill="url(#spine)"/>
+
+  <g>
+    <circle cx="562" cy="226" r="11" fill="#1c1d21" stroke="#c7a86b" stroke-width="4"/>
+    <text x="606" y="216" class="sans gold" font-size="17" font-weight="800" letter-spacing="1.1">2011</text>
+    <text x="606" y="248" class="sans ivory" font-size="23">Boulder neighbours found the sister city project</text>
+    <text x="1544" y="276" class="arabic muted" font-size="18" text-anchor="end">تأسيس جمعية التوأمة في بولدر</text>
+  </g>
+
+  <g>
+    <circle cx="562" cy="330" r="11" fill="#1c1d21" stroke="#c7a86b" stroke-width="4"/>
+    <text x="606" y="320" class="sans gold" font-size="17" font-weight="800" letter-spacing="1.1">MAY 2017</text>
+    <text x="606" y="352" class="sans ivory" font-size="23">The mayors of Nablus and Boulder sign the partnership</text>
+    <text x="1544" y="380" class="arabic muted" font-size="18" text-anchor="end">توقيع اتفاق الشراكة بين رئيسي البلديتين</text>
+  </g>
+
+  <g>
+    <circle cx="562" cy="434" r="11" fill="#1c1d21" stroke="#dc6572" stroke-width="4"/>
+    <text x="606" y="424" class="sans red" font-size="17" font-weight="800" letter-spacing="1.1">2024 — AMBULANCE</text>
+    <text x="606" y="456" class="sans ivory" font-size="23">$75,000 raised in nine months; intensive-care unit aboard</text>
+    <text x="1544" y="484" class="arabic muted" font-size="18" text-anchor="end">سيارة إسعاف بوحدة عناية مركزة لمخيم عسكر</text>
+  </g>
+
+  <g>
+    <circle cx="562" cy="538" r="11" fill="#1c1d21" stroke="#61aa80" stroke-width="4"/>
+    <text x="606" y="528" class="sans green" font-size="17" font-weight="800" letter-spacing="1.1">26 NOVEMBER 2025 — CLINIC</text>
+    <text x="606" y="560" class="sans ivory" font-size="23">$170,000 of equipment; Askar Boulder Medical Center opens</text>
+    <text x="1544" y="588" class="arabic muted" font-size="18" text-anchor="end">افتتاح مستوصف عسكر بولدر الطبي</text>
+  </g>
+
+  <g>
+    <circle cx="562" cy="642" r="11" fill="#1c1d21" stroke="#61aa80" stroke-width="4"/>
+    <text x="606" y="632" class="sans green" font-size="17" font-weight="800" letter-spacing="1.1">JUNE 2026 — FIRE TRUCK</text>
+    <text x="606" y="664" class="sans ivory" font-size="23">Built narrow for the Old City lanes and the camps</text>
+    <text x="1544" y="692" class="arabic muted" font-size="18" text-anchor="end">سيارة إطفاء ضيقة تدخل أزقة البلدة القديمة</text>
+  </g>
+
+  <g>
+    <circle cx="562" cy="746" r="11" fill="#1c1d21" stroke="#c7a86b" stroke-width="4"/>
+    <text x="606" y="736" class="sans gold" font-size="17" font-weight="800" letter-spacing="1.1">SEPTEMBER 2026 — THE WALK</text>
+    <text x="606" y="768" class="sans ivory" font-size="23">$100,000 sought for equipment, $50,000 for a play yard</text>
+  </g>
+
+  <text x="86" y="856" class="sans muted" font-size="16">Sources: UNRWA Askar camp profile (2025 data); KGNU, Denver7 and Rocky Mountain PBS reporting; the project's own published figures. Graphic: Times of Palestine.</text>
+  <text x="1544" y="856" class="arabic muted" font-size="16" text-anchor="end">المصادر: الأونروا، وتقارير KGNU ودنفر7 وروكي ماونتن بي بي إس</text>
+</svg>
