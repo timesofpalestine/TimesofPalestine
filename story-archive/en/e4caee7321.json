@@ -1,0 +1,45 @@
+{
+ "brief": "Georgian police clashed with Besiktas supporters during a UEFA match after Turkish football fans raised Palestinian flags, Al Jazeera English reported. The incident disrupted the game as tensions flared between law enforcement and the club's supporters.\n\nThe confrontation highlighted how geopolitical symbols continue to surface at major sporting events across Europe. Details of injuries or specific charges against those involved were not immediately available.",
+ "cat": "sports",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/27/clashes-halt-match-as-turkiye-football-fans-raise-palestinian-flags?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/clashes-besiktas-match-against-israeli-club-spark-diplomatic-row",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/georgian-police-pepper-spray-pro-palestine-besiktas-fans-during-match",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-27T01:36:23+00:00",
+ "dek": "Clashes broke out between Georgian police and Turkish club Besiktas supporters during a UEFA match.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/wide-thumb-UEFA-2611-1795743260.png?resize=1920%2C1080&quality=80",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/27/clashes-halt-match-as-turkiye-football-fans-raise-palestinian-flags?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/27/clashes-halt-match-as-turkiye-football-fans-raise-palestinian-flags?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "e4caee7321",
+ "score": 45.42,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Turkish fans wave Palestinian flags, sparking police clashes at UEFA match"
+}
