@@ -1,0 +1,33 @@
+{
+ "brief": "أصيب طفل برصاص قوات الاحتلال الإسرائيلي في مدينة خان يونس جنوبي قطاع غزة، في منطقة خارج نطاق السيطرة العسكرية المباشرة، وفقاً للمركز الفلسطيني للإعلام.\n\nلم تتضمن التقارير الأولية تفاصيل عن عمر الطفل أو درجة خطورة إصابته. وأفادت المصادر بنقله إلى المرافق الطبية للحصول على العلاج.\n\nوتأتي الحادثة وسط تصعيد أمني مستمر في قطاع غزة، حيث تتكرر حوادث إطلاق النار على المدنيين في مناطق متفرقة.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/329404",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-27T10:20:55+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-gaza-b-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/329404",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "cb5bbfce3d",
+ "score": 61.59,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "قوات الاحتلال تطلق النار على طفل في خان يونس"
+}
