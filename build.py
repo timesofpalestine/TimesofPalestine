@@ -5519,6 +5519,27 @@ SPECIALS = [
         "nav": {"en": "Dr. Barakat", "ar": "قضية د. بركات"},
     },
     {
+        # Owner request 2026-11-26: "make sure it's well featured on the site."
+        # Hannah Lillith Assadi's Paradiso 17 — her Safad-born father's exile
+        # — won the 2026 National Book Award for Fiction on 18 November.
+        # A feature that celebrates its subject (features order 2026-08-05).
+        # Gated on `requires_original`, so the card retires with the story.
+        "requires_original": "hannah-lillith-assadi-paradiso-17-national-book-award-2026",
+        "href": _original_story_href("hannah-lillith-assadi-paradiso-17-national-book-award-2026"),
+        "kicker": {"en": "National Book Award · Fiction", "ar": "جائزة الكتاب الوطني · الرواية"},
+        "title": {"en": "From Safad to America's top fiction prize",
+                  "ar": "من صفد إلى أرفع جوائز الرواية الأميركية"},
+        "dek": {"en": "Hannah Lillith Assadi's Paradiso 17 carries her Palestinian father's road — Safad, Kuwait, Italy, New York, Arizona — to the 2026 National Book Award.",
+                "ar": "تحمل «باراديسو 17» لهانا ليليث أسعدي طريق أبيها الفلسطيني — صفد والكويت وإيطاليا ونيويورك وأريزونا — إلى جائزة الكتاب الوطني لعام 2026."},
+        "cta": {"en": "Read the feature →", "ar": "اقرأ الحكاية ←"},
+        "img": "/media/times-of-palestine-assadi-paradiso-17-2026-lede.svg",
+        "img_alt": {"en": "Paradiso 17 by Hannah Lillith Assadi — National Book Award for Fiction 2026",
+                    "ar": "«باراديسو 17» لهانا ليليث أسعدي — جائزة الكتاب الوطني للرواية 2026"},
+        "ticker": {"en": "Hannah Lillith Assadi wins the National Book Award for Fiction with Paradiso 17",
+                   "ar": "هانا ليليث أسعدي تفوز بجائزة الكتاب الوطني الأميركية عن «باراديسو 17»"},
+        "nav": {"en": "Paradiso 17", "ar": "باراديسو 17"},
+    },
+    {
         # Owner request 2026-09-27: "highlight it and prominently feature it."
         # A private American donor who has spent since October 2023 buying
         # food and medicine for Gaza and moving patients out. Gated on
