@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-vehicle-kills-palestinian-man-northern-gaza",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://pchrgaza.org/israeli-forces-kill-35-palestinians-including-four-children-and-three-women-in-gaza-over-four-days",
+   "name": "Palestinian Centre for Human Rights",
+   "url": "https://pchrgaza.org/",
+   "verified": true
   }
  ],
  "date": "2026-11-27T16:51:10+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "87bd30e111",
- "score": 62.24,
+ "score": 62.02,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
