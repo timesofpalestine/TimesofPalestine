@@ -6,7 +6,13 @@
    "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-injure-palestinian-man-arrest-27-others-west-bank",
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/27/paramedics-blocked-attacked-by-settlers-west-bank",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-26T23:07:50+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "174a0c7806",
- "score": 58.21,
+ "score": 56.75,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
