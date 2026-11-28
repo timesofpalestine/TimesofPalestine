@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/israeli-forces-kill-35-palestinians-including-four-children-and-three-women-in-gaza-over-four-days",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53920",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
   }
  ],
  "date": "2026-11-27T19:38:20+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "c2b1944765",
- "score": 85.48,
+ "score": 85.45,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
