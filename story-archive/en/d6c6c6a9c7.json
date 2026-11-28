@@ -6,7 +6,13 @@
    "article": "https://www.theguardian.com/world/2026/nov/28/medecins-sans-frontieres-staff-killed-gaza-israeli-strike",
    "name": "The Guardian",
    "url": "https://www.theguardian.com/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/msf-charity-condemns-israeli-strike-killed-two-staff-outside-gaza-clinic",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-28T12:14:49+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "d6c6c6a9c7",
- "score": 63.67,
+ "score": 63.24,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
