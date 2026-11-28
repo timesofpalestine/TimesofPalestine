@@ -1,0 +1,33 @@
+{
+ "brief": "بحسب وسائل إعلام لبنانية، فجّر جيش الاحتلال الإسرائيلي منزلاً في بلدة بيت ياحون بجنوب لبنان. تقع البلدة في محافظة النبطية، وتُعتبر من المناطق القريبة من الحدود اللبنانية الإسرائيلية.\n\nلم تُفصح المصادر فوراً عن عدد الإصابات أو حجم الأضرار المباشرة الناجمة عن العملية.\n\nوتأتي هذه الضربة ضمن سلسلة استهدافات إسرائيلية متتالية لمناطق جنوب لبنان في السياق الأمني المتصاعد في الحدود الشمالية.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://t.me/Palinfo/329564",
+   "name": "المركز الفلسطيني للإعلام",
+   "url": "https://t.me/palinfo",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-28T14:57:29+00:00",
+ "dek": "",
+ "dup_of": null,
+ "image": "/media/times-of-palestine-cover-news-ar.svg",
+ "lang": "ar",
+ "link": "https://t.me/Palinfo/329564",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Graphic: Times of Palestine",
+  "licenseUrl": null,
+  "rightsBasis": "owned",
+  "source": "Times of Palestine"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2621e27bac",
+ "score": 48.99,
+ "source": "المركز الفلسطيني للإعلام",
+ "source_id": "tg-palinfo",
+ "source_url": "https://t.me/palinfo",
+ "title": "جيش الاحتلال يفجّر منزلاً في بيت ياحون جنوب لبنان"
+}
