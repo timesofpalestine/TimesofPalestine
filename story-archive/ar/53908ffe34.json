@@ -1,0 +1,45 @@
+{
+ "brief": "تحذيرات من تفاقم خطر الأوبئة في قطاع غزة، إذ يرتفع عدد الإصابات بالأمراض المعدية والتهاب السحايا وسط ظروف صحية حرجة. يعزو الخطر إلى الاكتظاظ الشديد داخل خيام النزوح وتلوث مياه الشرب وانهيار منظومة الصرف الصحي، بحسب وكالة شهاب.\n\nتؤثر هذه الأوضاع بشكل مباشر على النازحين والأطفال في المحافظات، في ظل نقص حاد في الأدوية والمستلزمات الطبية. تتجاوز تهديدات الأمراض المعدية، وفقاً للتحذيرات، خطورة القصف المباشر على الصحة العامة في القطاع.",
+ "cat": "opinion",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.net/ar/post?id=170841&slug=%D8%A7%D9%84%D9%88%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D8%A7%D9%85%D8%AA-%D9%8A%D9%82%D8%AA%D9%84-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D9%82%D8%B5%D9%81",
+   "name": "وكالة شهاب (حصري)",
+   "url": "https://shehabnews.com/",
+   "verified": true
+  },
+  {
+   "article": "https://felesteen.news/post/191138/%D8%A7%D9%84%D9%88%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D8%A7%D9%85%D8%AA-%D9%8A%D9%82%D8%AA%D9%84-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D9%82%D8%B5%D9%81",
+   "name": "صحيفة فلسطين",
+   "url": "https://felesteen.news/",
+   "verified": true
+  },
+  {
+   "article": "https://www.pbc.ps/67-22",
+   "name": "تلفزيون فلسطين",
+   "url": "https://www.pbc.ps/",
+   "verified": true
+  }
+ ],
+ "date": "2026-11-28T08:44:10+00:00",
+ "dek": "تحذيرات من تفاقم خطر الأوبئة في قطاع غزة جراء الاكتظاظ داخل خيام النزوح، وتلوث مياه الشرب، وانهيار منظومة الصرف الصحي، ونقص الأدوية والمستلزمات الطبية، وسط ارتفاع الإصابات بالأمراض المعدية والتهاب السحايا، ما يهدد حياة آلاف الأطفال والنازحين في ظل استمرار…",
+ "dup_of": null,
+ "image": "https://fsn1.your-objectstorage.com/shehab/uploads/2026/11/file_6b0a9541ac875.webp",
+ "lang": "ar",
+ "link": "https://shehabnews.net/ar/post?id=170841&slug=%D8%A7%D9%84%D9%88%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D8%A7%D9%85%D8%AA-%D9%8A%D9%82%D8%AA%D9%84-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D9%82%D8%B5%D9%81",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "وكالة شهاب (حصري)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.net/ar/post?id=170841&slug=%D8%A7%D9%84%D9%88%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D8%A7%D9%85%D8%AA-%D9%8A%D9%82%D8%AA%D9%84-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D9%82%D8%B5%D9%81"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "53908ffe34",
+ "score": 63.23,
+ "source": "وكالة شهاب (حصري)",
+ "source_id": "shehab",
+ "source_url": "https://shehabnews.com/",
+ "title": "الأوبئة تهدد آلاف النازحين في غزة وسط انهيار الخدمات الصحية"
+}
