@@ -6,7 +6,13 @@
    "article": "https://t.me/maannews/38071",
    "name": "Maan Wire (EN)",
    "url": "https://www.maannews.net/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/masked-men-beat-palestinian-workers-hired-israeli-army",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
   }
  ],
  "date": "2026-11-26T21:16:38+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "f8145813a3",
- "score": 22.18,
+ "score": 21.98,
  "source": "Maan Wire (EN)",
  "source_id": "maan-en",
  "source_url": "https://www.maannews.net/",
