@@ -1,0 +1,33 @@
+{
+ "brief": "Pro-Palestinian protesters demonstrated at Selfridges department store in central London on Black Friday, the busiest shopping day of the year. Security personnel attempted to remove a Palestinian flag raised by the demonstrators during the action.\n\nThe protest occurred as the store hosted crowds of shoppers during the annual sales event. Details of the demonstration's scale, duration, and any further confrontations remain unclear.",
+ "cat": "news",
+ "corroborating_sources": [
+  {
+   "article": "https://www.aljazeera.com/video/newsfeed/2026/11/28/security-tries-to-remove-palestinian-flag-at-selfridges-on-black-friday?traffic_source=rss",
+   "name": "Al Jazeera English",
+   "url": "https://www.aljazeera.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-28T11:30:07+00:00",
+ "dek": "Pro-Palestinian protesters demonstrated in a Selfridges department store in London on Black Friday.",
+ "dup_of": null,
+ "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795865381.jpg?resize=1200%2C675",
+ "lang": "en",
+ "link": "https://www.aljazeera.com/video/newsfeed/2026/11/28/security-tries-to-remove-palestinian-flag-at-selfridges-on-black-friday?traffic_source=rss",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Al Jazeera English",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.aljazeera.com/video/newsfeed/2026/11/28/security-tries-to-remove-palestinian-flag-at-selfridges-on-black-friday?traffic_source=rss"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "2651df96e1",
+ "score": 47.52,
+ "source": "Al Jazeera English",
+ "source_id": "aje",
+ "source_url": "https://www.aljazeera.com/",
+ "title": "Security removes Palestinian flag from London Selfridges on Black Friday"
+}
