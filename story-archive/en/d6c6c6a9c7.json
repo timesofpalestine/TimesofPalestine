@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/doctors-without-borders-condemns-israeli-drone-strike-killed-two-staff",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/11/msf-charity-condemns-israeli-drone-strike-killed-two-staff-outside-gaza-clinic",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -37,7 +43,7 @@
  "modified": null,
  "original": false,
  "pid": "d6c6c6a9c7",
- "score": 59.88,
+ "score": 59.68,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
