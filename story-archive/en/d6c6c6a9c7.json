@@ -13,6 +13,12 @@
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
    "verified": true
+  },
+  {
+   "article": "https://zeteo.com/p/this-week-in-palestine-israel-kills-c5f",
+   "name": "Zeteo",
+   "url": "https://zeteo.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-28T12:14:49+00:00",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "d6c6c6a9c7",
- "score": 60.05,
+ "score": 59.88,
  "source": "The Guardian",
  "source_id": "guardian",
  "source_url": "https://www.theguardian.com/",
