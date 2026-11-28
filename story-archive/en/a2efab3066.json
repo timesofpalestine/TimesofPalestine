@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.theguardian.com/world/2026/nov/28/costa-rica-bars-un-rapporteur-francesca-albanese-palestinian-territories",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": true
+  },
+  {
    "article": "https://www.al-monitor.com/originals/2026/11/un-rapporteur-leave-mexico-after-halted-costa-rica-airport",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "a2efab3066",
- "score": 48.68,
+ "score": 48.43,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
