@@ -6,7 +6,13 @@
    "article": "https://pchrgaza.org/israels-targeting-of-security-and-police-personnel-fuels-chaos-and-makes-life-uninhabitable-in-gaza",
    "name": "Palestinian Centre for Human Rights",
    "url": "https://pchrgaza.org/",
-   "verified": false
+   "verified": true
+  },
+  {
+   "article": "https://t.me/eyesonpal/53920",
+   "name": "Eye on Palestine",
+   "url": "https://t.me/eyesonpal",
+   "verified": true
   }
  ],
  "date": "2026-11-26T13:10:22+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "9fa664a127",
- "score": 83.55,
+ "score": 83.53,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
