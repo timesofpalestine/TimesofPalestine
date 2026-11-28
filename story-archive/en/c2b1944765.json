@@ -9,6 +9,12 @@
    "verified": true
   },
   {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-gunfire-kills-palestinian-child-gazas-khan-younis",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
+   "verified": true
+  },
+  {
    "article": "https://t.me/eyesonpal/53920",
    "name": "Eye on Palestine",
    "url": "https://t.me/eyesonpal",
@@ -31,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "c2b1944765",
- "score": 85.17,
+ "score": 85.16,
  "source": "Palestinian Centre for Human Rights",
  "source_id": "pchr",
  "source_url": "https://pchrgaza.org/",
