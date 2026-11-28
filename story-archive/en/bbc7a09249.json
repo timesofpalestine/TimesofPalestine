@@ -6,13 +6,7 @@
    "article": "https://www.aljazeera.com/video/newsfeed/2026/11/27/aje-onl-nf_-hamas-chiefs-son-escapes-israeli-strike-gaza-271126?traffic_source=rss",
    "name": "Al Jazeera English",
    "url": "https://www.aljazeera.com/",
-   "verified": true
-  },
-  {
-   "article": "https://shehabnews.net/ar/post?id=170772&slug=%D8%A3%D8%B1%D8%A8%D8%B9%D8%A9-%D8%A3%D8%A8%D9%86%D8%A7%D8%A1-%D9%88%D8%AE%D9%85%D8%B3%D8%A9-%D8%A3%D8%AD%D9%81%D8%A7%D8%AF-%D8%B3%D8%AC%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D9%84%D8%B9%D8%A7%D8%A6%D9%84%D8%A9-%D8%A7%D9%84%D9%82%D8%A7%D8%A6%D8%AF-%D8%AE%D9%84%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D9%8A%D8%A9",
-   "name": "Shehab Wire (EN)",
-   "url": "https://shehabnews.com/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-27T20:18:45+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "bbc7a09249",
- "score": 57.35,
+ "score": 57.04,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
