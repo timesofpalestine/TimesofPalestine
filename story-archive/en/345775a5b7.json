@@ -1,0 +1,33 @@
+{
+ "brief": "An investigation reveals that Google Maps systematically omits Palestinian cities and roads while prominently displaying Israeli settlements in the occupied West Bank, Shehab Wire reported. The mapping service renders vast areas of Palestinian territory as part of Israel, according to the probe.\n\nThe bias extends across the platform's representation of the territory, with Palestinian municipalities disappearing from view while settlement infrastructure appears fully integrated into Israeli geography. The discrepancy raises questions about how the platform shapes global understanding of the contested region's political boundaries.",
+ "cat": "westbank",
+ "corroborating_sources": [
+  {
+   "article": "https://shehabnews.net/ar/post?id=170823&slug=%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7-%D8%BA%D9%88%D8%BA%D9%84-%D8%AA%D9%8F%D8%BA%D9%8A%D9%91%D8%A8-%D8%A7%D9%84%D9%85%D8%AF%D9%86-%D9%88%D8%A7%D9%84%D8%B7%D8%B1%D9%82-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A9-%D9%88%D8%AA%D9%8F%D8%B8%D9%87%D8%B1-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%B2%D8%A1%D8%A7%D9%8B-%D9%85%D9%86-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84",
+   "name": "Shehab Wire (EN)",
+   "url": "https://shehabnews.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-28T07:55:00+00:00",
+ "dek": "An investigation reveals that Google Maps systematically omits Palestinian cities and roads while prominently displaying Israeli settlements in the occupied West Bank, Shehab Wire reported.",
+ "dup_of": null,
+ "image": "https://fsn1.your-objectstorage.com/shehab/uploads/2026/11/file_6b0a89ab642c4.webp",
+ "lang": "en",
+ "link": "https://shehabnews.net/ar/post?id=170823&slug=%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7-%D8%BA%D9%88%D8%BA%D9%84-%D8%AA%D9%8F%D8%BA%D9%8A%D9%91%D8%A8-%D8%A7%D9%84%D9%85%D8%AF%D9%86-%D9%88%D8%A7%D9%84%D8%B7%D8%B1%D9%82-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A9-%D9%88%D8%AA%D9%8F%D8%B8%D9%87%D8%B1-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%B2%D8%A1%D8%A7%D9%8B-%D9%85%D9%86-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "Shehab Wire (EN)",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://shehabnews.net/ar/post?id=170823&slug=%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7-%D8%BA%D9%88%D8%BA%D9%84-%D8%AA%D9%8F%D8%BA%D9%8A%D9%91%D8%A8-%D8%A7%D9%84%D9%85%D8%AF%D9%86-%D9%88%D8%A7%D9%84%D8%B7%D8%B1%D9%82-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A9-%D9%88%D8%AA%D9%8F%D8%B8%D9%87%D8%B1-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%B2%D8%A1%D8%A7%D9%8B-%D9%85%D9%86-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "345775a5b7",
+ "score": 49.4,
+ "source": "Shehab Wire (EN)",
+ "source_id": "shehab-en",
+ "source_url": "https://shehabnews.com/",
+ "title": "Google Maps erases Palestinian cities and roads from occupied West Bank"
+}
