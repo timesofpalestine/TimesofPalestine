@@ -1,0 +1,33 @@
+{
+ "brief": "Israeli forces bombed a clinic run by Médecins Sans Frontières in Gaza City, killing two staff members, the charity reported. The organization and the head of the World Health Organization denounced the attack on the facility.\n\nIsrael claimed the security guards at the clinic were members of Hamas. MSF did not immediately respond to the allegation regarding the identity of those killed.",
+ "cat": "gaza",
+ "corroborating_sources": [
+  {
+   "article": "https://www.theguardian.com/world/2026/nov/28/medecins-sans-frontieres-staff-killed-gaza-israeli-strike",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/",
+   "verified": false
+  }
+ ],
+ "date": "2026-11-28T12:14:49+00:00",
+ "dek": "MSF and head of WHO denounce attack on Gaza City clinic as Israel claims security guards were members of Hamas Israeli forces have bombed a clinic run by Médecins Sans Frontières in Gaza City, killing two of its staff members, the organisation has said.",
+ "dup_of": null,
+ "image": "https://i.guim.co.uk/img/media/2b407f70dc48284cb361ed01b3cabb77ccda0da2/516_0_6827_5464/master/6827.jpg?width=140&quality=85&auto=format&fit=max&s=951a3dcd4239d93beadf5c30d7e021fc",
+ "lang": "en",
+ "link": "https://www.theguardian.com/world/2026/nov/28/medecins-sans-frontieres-staff-killed-gaza-israeli-strike",
+ "max_age_hours": 72,
+ "media": {
+  "credit": "The Guardian",
+  "licenseUrl": null,
+  "rightsBasis": "source-hosted",
+  "source": "https://www.theguardian.com/world/2026/nov/28/medecins-sans-frontieres-staff-killed-gaza-israeli-strike"
+ },
+ "modified": null,
+ "original": false,
+ "pid": "d6c6c6a9c7",
+ "score": 63.67,
+ "source": "The Guardian",
+ "source_id": "guardian",
+ "source_url": "https://www.theguardian.com/",
+ "title": "Israeli strike kills two Médecins Sans Frontières staff in Gaza"
+}
