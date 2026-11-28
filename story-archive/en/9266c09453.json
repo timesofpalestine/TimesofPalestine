@@ -7,6 +7,12 @@
    "name": "Middle East Eye",
    "url": "https://www.middleeasteye.net/",
    "verified": false
+  },
+  {
+   "article": "https://www.al-monitor.com/originals/2026/11/un-rapporteur-leave-mexico-after-halted-costa-rica-airport",
+   "name": "Al-Monitor",
+   "url": "https://www.al-monitor.com/",
+   "verified": true
   }
  ],
  "date": "2026-11-28T04:48:27+00:00",
@@ -25,7 +31,7 @@
  "modified": null,
  "original": false,
  "pid": "9266c09453",
- "score": 44.5,
+ "score": 44.33,
  "source": "Middle East Eye",
  "source_id": "mee",
  "source_url": "https://www.middleeasteye.net/",
