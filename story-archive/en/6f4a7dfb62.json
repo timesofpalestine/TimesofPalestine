@@ -6,13 +6,7 @@
    "article": "https://www.al-monitor.com/originals/2026/11/un-urges-costa-rica-let-palestinians-rapporteur",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
-   "verified": true
-  },
-  {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/denied-entry-francesca-albanese-leave-costa-rica-after-second-night",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
+   "verified": false
   }
  ],
  "date": "2026-11-27T12:30:24+00:00",
@@ -31,7 +25,7 @@
  "modified": null,
  "original": false,
  "pid": "6f4a7dfb62",
- "score": 34.42,
+ "score": 34.24,
  "source": "Al-Monitor",
  "source_id": "almonitor",
  "source_url": "https://www.al-monitor.com/",
