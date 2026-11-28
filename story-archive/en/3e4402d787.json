@@ -9,15 +9,15 @@
    "verified": true
   },
   {
-   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/doctors-without-borders-says-two-staff-killed-israeli-direct-hit-gaza",
-   "name": "Middle East Eye",
-   "url": "https://www.middleeasteye.net/",
-   "verified": true
-  },
-  {
    "article": "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-two-doctors-without-borders-staff-gaza",
    "name": "Al-Monitor",
    "url": "https://www.al-monitor.com/",
+   "verified": true
+  },
+  {
+   "article": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-claims-msf-workers-killed-gaza-strike-were-hamas",
+   "name": "Middle East Eye",
+   "url": "https://www.middleeasteye.net/",
    "verified": true
   }
  ],
@@ -37,7 +37,7 @@
  "modified": null,
  "original": false,
  "pid": "3e4402d787",
- "score": 61.21,
+ "score": 61.03,
  "source": "Al Jazeera English",
  "source_id": "aje",
  "source_url": "https://www.aljazeera.com/",
